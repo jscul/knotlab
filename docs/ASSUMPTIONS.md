@@ -131,6 +131,7 @@ evidence: results and their status come from the records each entry links.
 | [A74](#a74--dimension-across-an-unlengthened-shift-is-read-by-across-counts) | Dimension across an unlengthened shift is read by across-counts | reading | Assumed |
 | [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Assumed |
 | [A76](#a76--global-influence-is-read-as-ties-or-travelling-along-a-shift) | Global influence is read as ties or travelling along a shift | reading | Assumed |
+| [A77](#a77--a-walk-around-one-cycle-is-a-state-that-repeats-along-a-short-step) | A walk around one cycle is a state that repeats along a short step | reading | Assumed |
 
 ## Entries
 
@@ -1999,3 +2000,24 @@ evidence: results and their status come from the records each entry links.
   number of steps rather than at unbounded steps.
 - **History.**
   - 2026-11-12 · Added by `COMMON-FOLD-20261112-001`.
+
+### A77 · A walk around one cycle is a state that repeats along a short step
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** For copies of a harmony arranged along two shifts, a state is read as "a walk around one cycle" (the coordinator's
+  question, from the owner's "globally influential") when moving every copy by some step of at most two copies along each copy shift
+  gives the same state up to one shift or flip of the harmony; a state that repeats along no short step is read as two-way, and one
+  that repeats along no step at all as genuinely two-way.
+- **Why.** A state that repeats along a step is a state of the one-shift arrangement obtained by folding along that step, with the
+  symmetry carried as a twist: a closed walk of a finite transfer. The bound of two keeps the folded knot within a window of three
+  copies, as for rings. Taken by default in `SHIFT-LOCK-20261112-001`
+  ([decision note](../research/SHIFT-LOCK-20261112-001/shift_lock.md)), with the advisor model's agreement before the freeze.
+- **Rests on it.** That epic's answer: the 78 cells that open only through two-way states, and "locks at every size still come from
+  cycles".
+- **Challenge.** Allow longer steps (on a finite repeat whose sizes are coprime every state is a function on one cycle of nm copies,
+  so without a bound every state would count as one cycle, and the bound is what makes the reading bite), or every permutation of the harmony's states keeping the stitch
+  instead of shifts and flips (done after the run for 50 of the 78 cells, with no change), or read "one cycle" as a finite transfer of
+  rows, under which strips count as cycles and two-way states never do.
+- **History.**
+  - 2026-11-12 · Added by `SHIFT-LOCK-20261112-001`.

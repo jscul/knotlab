@@ -2319,6 +2319,27 @@ that earlier records used in two senses.
   the law is kept, freed, its terminals forced equal, or the pattern ends.
 - **Tie extent.** Of a distinction, the most steps apart to a distinction
   tied to it: how far fixing it forces a value.
+- **Locked.** Copies are locked when they are equal, place by place, in every
+  allowed state: one copy then fixes all of them (which loops lock, 12
+  November 2026).
+- **Copy shifts; unmixed and mixed knots.** Copies of a harmony placed at the
+  pairs of whole numbers (r, c), repeated n × m; the two shifts of this
+  arrangement are the **copy shifts** e₁ and e₂, always told apart from the
+  harmony's own shift inside each copy. An **unmixed knot** holds three copies
+  one step apart along one copy shift, (x, x + e, x + 2e); the **mixed knot**
+  holds (x, x + e₂, x + e₁), one step along each (the literature's three-dot
+  shape of Ledrappier's law). The intuition: unmixed knots make rows and
+  columns that are rings and nothing more; the mixed knot is the smallest that
+  ties both shifts at once (locks across two shifts, 12 November 2026).
+- **Stepped state.** A state of copies along two shifts in which each step
+  along a copy shift applies one fixed symmetry of the harmony (a shift or a
+  flip of every value): X(r, c) = g^r h^c u, the literature's constant
+  voltage.
+- **Short step.** A step of the copy arrangement of at most two copies along
+  each copy shift. A state **repeats along** a step when moving every copy by
+  it gives the same state up to one symmetry of the harmony. A state that
+  repeats along a short step is read as a walk around one cycle (assumption
+  A77); one that repeats along no step at all is two-way.
 - **Shortcut.** A pair of distinctions whose bond distance is less than their
   steps apart plus one (lesson 4.7). The endless six-regular weave has none;
   some periodic bases that overlap have many.

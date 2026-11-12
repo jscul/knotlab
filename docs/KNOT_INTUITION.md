@@ -3243,6 +3243,18 @@ So holes come in two kinds:
      length (proved by the referee from the periods of the pair transfer's components): 4 of 45 harmonies lock rings of every length,
      21 every length outside a residue class (0011: not a multiple of 4; 14 harmonies: every odd length), 20 finitely many lengths
      ([decision note](../research/LOOP-LOCK-20261112-001/loop_lock.md)).
+
+   **2026-11-12: locks across two shifts** (`SHIFT-LOCK-20261112-001`; referee pending).
+   - **Straight ties add nothing (proved).** Copies of a harmony along two shifts, tied by knots three copies long along one shift,
+     lock exactly when both rings lock: rows and columns are rings, and a ring state laid along one shift is a state of the whole.
+   - **The mixed knot makes two-way states (exact; after the run, checked).** With the knot one step along each shift, the shape of
+     Ledrappier's law, 34 of 45 harmonies have states that repeat along no short step, and in 78 cells (10 harmonies) they are the only
+     way the arrangement stays open. For 0011 + 01 they are tilings, height functions with three cell types, and a slope polygon decides
+     every lock to 16 × 16.
+   - **But they carry no influence (after the run).** Where only two-way states exist, no copy fixes any other; whole arrangements lock
+     at every size only through cycles: thin strips and the arithmetic of short steps. Unbounded two-way influence would need increments
+     holding a whole line, as Ledrappier's law has; no harmony has them
+     ([decision note](../research/SHIFT-LOCK-20261112-001/shift_lock.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 90% at the last base, consistent with the

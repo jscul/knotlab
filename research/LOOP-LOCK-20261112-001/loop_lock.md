@@ -29,6 +29,25 @@ length.**
   next, whole rings lock even for harmonies whose simple loops never lock, and whether they do depends on the ring's length against
   the period: 0011 locks rings of 5, 6, 7, 9, 10, 11 and not of 4, 8, 12.
 
+## Bounded by the period, or at every size? (after the run; the coordinator's question)
+
+- **Single loops: bounded.** A loop locks only below the girth, and every girth is at most the period (a step that shifts the phase
+  winds back after at most P steps).
+- **Collective locks through two shared copies: bounded.** The crossed pair needs its paths shorter than the girth; the circulant locks
+  for one step offset exactly when ⌊n/2⌋ < g (the advisor's proof), so it stops before 2g ≤ 2P copies.
+- **Rings of overlapping knots: for some harmonies, at every size in a residue class.** A ring of n knots is a closed walk of length n
+  of the transfer on pairs of states, and it locks exactly when no such walk leaves the diagonal (descriptive, `after_run_rings.py`,
+  n to 60). Then: 0011 locks every ring whose length is not a multiple of 4; 00001111 every length not a multiple of 8; 00101101,
+  001010110101, 00100101101101 + 01 and 0010101011010101 every odd length; 0010011011, 00101101 + 0011 and the alternation every length
+  from 3 to 60. Others lock at finitely many lengths only (000111 at 4 and 7; 0011 + 01 at 5; 0000011111 at 3, 4, 6, 8, 11, 13). So
+  dense overlap gives locking that is not bounded by the period: it holds at every size the residue class allows.
+- **Known mathematics.** Ring states are the periodic points of a one-dimensional shift of finite type whose symbols are the
+  harmony's states; which lengths have a non-constant periodic point is fixed by the cyclic (Perron–Frobenius) periods of the
+  off-diagonal part of the transfer (Lind and Marcus). The residue classes are an instance of that, and novelty is not claimed for the
+  mechanism; the harmonies' own lists are new data. The same applies to single loops (closed walks of a reflexive transfer) and to the
+  overlap rules (homomorphisms into a reflexive digraph; tree networks globally consistent; cycle against cover), as the endless-blocks
+  referee found for its loops.
+
 ## What is proved and what is computed
 
 | Claim | Evidence class |
@@ -36,6 +55,7 @@ length.**
 | A loop of k knots locks iff k < girth; open chains free at every length; one-orbit girth is a zero-sum length | proved by hand (with the advisor model); exact on 495 + 495 cells |
 | Figure eights independent; through a shared knot, locks spread and are never created | proved (the advisor's); exact on 75 + 75 cells |
 | Collective locks through two shared copies; rings lock by the arithmetic of their length | exact on the range |
+| Which ring lengths lock, to 60: residue classes at every size for some harmonies, finitely many for others | descriptive, after the run |
 
 ## Against the pre-registration
 

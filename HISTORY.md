@@ -11,6 +11,16 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: meeting patterns weighted by short descriptions, narrowed by its referee
+
+- The census of patterns weighted by the length of their description (`SHORT-DESC-20261112-001`) was confirmed: every pattern
+  regenerates. Nested patterns dying less often than others of their size is largely the language's own property: a small random
+  definition seldom constrains what its three ends allow more than a knot does, and then it lives at every depth. The measured part
+  is the effect at 13 to 99 knots and the small contradictions. Two predictions had been seen before freezing and are replications;
+  most free limits are trivial; the uniform baseline's chain is not proved connected
+  ([decision note](research/SHORT-DESC-20261112-001/short_desc.md)).
+- Unchanged: every number.
+
 ## 12 November 2026: reading the end from the age profile, confirmed by its referee
 
 - The test of whether a growing pattern's end can be read from its age profile (`PREFIX-END-20261112-001`) was confirmed: every growth

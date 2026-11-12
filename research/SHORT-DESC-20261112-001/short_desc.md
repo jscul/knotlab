@@ -1,8 +1,9 @@
 # Meeting patterns weighted by short descriptions
 
 Epic `SHORT-DESC-20261112-001` (`PREFIX-END-20261112-001` direction 1; G17, with G7), 2026-11-12, at the coordinator's go-ahead.
-Pre-registered in commit f6f3ed975 before the registered run. The canonical K1–K3 test is unchanged. **Referee pending** (handed to
-the referee thread).
+Pre-registered in commit f6f3ed975 before the registered run. The canonical K1–K3 test is unchanged. Refereed by the referee thread
+(SHORT-DESC-R1, `referee-R1/report.md`, commit 79a55dacc): **confirmed with fixes**, folded in below; four corrections logged (one
+Narrowing, three Not a block).
 
 ## Words
 
@@ -32,20 +33,21 @@ and the satisfiability of iterated-substitution families at every depth and in t
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
 | 1 | **Typical: a few knots, alive.** 94% of patterns have fewer than seven knots (median one), which always allow a state (the Fano plane is the smallest dead pattern), and only 0.15% are dead. | computed, frozen; aliveness below seven knots is a classical theorem | reported |
-| 2 | **Large patterns are nested, and die far less often than others of their size.** Every pattern of 100 knots or more uses SELF. With seven knots or more, 2.4% are dead, against 5.7% of uniform patterns of the same size and 8.6% of patterns with the same degrees (paired differences −0.033, −0.036 to −0.030, and −0.061, −0.065 to −0.058); at 100 knots or more 13% against 33% and 55%. | computed, frozen | S1, S2 held |
+| 2 | **Large patterns are nested, and die far less often than others of their size.** Every pattern of 100 knots or more uses SELF. With seven knots or more, 2.4% are dead, against 5.7% of uniform patterns of the same size and 8.6% of patterns with the same degrees (paired differences −0.033, −0.036 to −0.030, and −0.061, −0.065 to −0.058); at 100 knots or more 13% against 33% and 55%. *After the referee: in 98.1% of nested families substituting the definition for its own knot allows at least what the knot allowed, which by monotonicity settles "forever" in 99.2% of the families that live forever, and every pattern of 100 knots or more is nested; so the large-pattern contrast is largely the self-similar language's own property (a random small gadget seldom constrains its ports more than a knot does). The measured part is the effect at 13 to 99 knots and the small dead cores.* | computed, frozen; in part settled by construction | S1, S2 replicated (seen on 405 pairs before freezing) |
 | 3 | **It is the nesting, not the reuse.** Reuse without SELF dies exactly as often as uniform patterns of its size (+0.001, −0.001 to +0.003); nested patterns alone, −0.045; the wider code, −0.028. | computed, frozen | S5 held; noself reported |
 | 4 | **They die by small contradictions.** The median minimal dead part holds 10 distinctions, against 25 for dead uniform patterns of the same size. | computed, frozen | reported |
 | 5 | **Living short descriptions are less tied, not more.** Their tie share is 0.030 below the uniform baseline's (−0.032 to −0.027) and 0.029 below the same-degree one's; 31% carry a tie, against 38%. | computed, frozen | S3 failed |
-| 6 | **Nested families: almost all live at every depth.** Weighted, 98.9% live at every depth, 1.05% live a while and then die (first at depth 2 to 9: 1,101 at 2, 971 at 3, 212 at 4, 38 at 5, ten deeper), and 0.04% die at once, below the registered 0.1%. After a first death all but 2 of 2,416 stay dead; the depths repeat with period 1 in all but 232 families. | exact per family, census frozen | S4 failed (at once) |
+| 6 | **Nested families: almost all live at every depth.** Weighted, 98.9% live at every depth, 1.05% live a while and then die (first at depth 2 to 9: 1,101 at 2, 971 at 3, 212 at 4, 38 at 5, ten deeper), and 0.04% die at once, below the registered 0.1%. *After the referee: "every depth" is settled after depth 1 by monotonicity in 99.2% of these families.* After a first death all but 2 of 2,416 stay dead; the depths repeat with period 1 in all but 232 families. | exact per family, census frozen | S4 failed (at once) |
 | 7 | **In the limit, 99.5% live, and some live only there.** 1,392 families (0.63%) die at a finite depth, and all but at most two stay dead at every depth after, yet their infinite limit allows a state: the contradiction sits in the knots at the bottom, which the limit never reaches. (The converse cannot happen: a family alive at every depth has a living limit, by construction.) | exact per family | reported |
-| 8 | **What a knot that holds itself becomes in the limit.** Of the limit relations on the three ports of self-holding definitions: free (nothing constrained; by construction every definition whose only calls are SELF) 66%, a knot again (K1–K3, three of the four complementary pairs) 33%, a contradiction 0.5%, ties 0.15%. | exact per family; the K1–K3 reading checked by the canonical checker on all 16 relations | reported |
-| 9 | **Checks.** The exact port evaluation and a SAT solver agree on all 895,264 expanded patterns (V0). Doubling the chains moves the uniform baseline's dead share by 0.0004 and the same-degree one's by 0.007 (main). | computed | gate passed |
+| 8 | **What a knot that holds itself becomes in the limit.** Of the limit relations on the three ports of self-holding definitions: free (nothing constrained) 66%, about three quarters of them definitions whose only calls are SELF, so that the non-trivially free are about 17% of limits (*the referee's count*), a knot again (K1–K3, three of the four complementary pairs) 33%, a contradiction 0.5%, ties 0.15%. | exact per family; the K1–K3 reading checked by the canonical checker on all 16 relations | reported |
+| 9 | **Checks.** The exact port evaluation and a SAT solver agree on all 895,264 expanded patterns (V0). Doubling the chains moves the uniform baseline's dead share by 0.0004 and the same-degree one's by 0.007 (main); the referee found no move at eight times the length (400 patterns of 25 knots or more). The replace-one-knot chain is symmetric, but its connectivity is not proved (it could be tight where n is near 2m). | computed | gate passed |
 
 ## Answer
 
 Under a weighting by short descriptions, the typical pattern is one knot, alive, and simplicity is common by definition. What the
 weighting changes is the rare, large patterns: almost all of them are nested, a knot holding the same pattern inside itself, and
-they die far less often than patterns of their size under the uniform weighting, when they die it is by a small contradiction, and
+they die far less often than patterns of their size under the uniform weighting (largely by the language's own structure, the
+referee found: a random small definition seldom constrains its ports more than a knot does, and then it lives at every depth), when they die it is by a small contradiction, and
 those that live are less tied. Reuse alone does nothing: only the nesting changes the outcome, so A71's challenge is answered here
 (the outcome at a given size depends on the weighting, and only through self-substitution). Nested families nearly always live at
 every depth; one in a hundred lives a while and dies, within nine levels; and a few die at every finite depth but live in the limit.
@@ -73,7 +75,10 @@ nested families; baselines for patterns of seven knots or more on at most 400 di
 
 ## Review
 
-Referee pending (the referee thread). The advisor model reviewed the design cold before freezing (`advisor_review_answer.md`): it
+**SHORT-DESC-R1** (the referee thread, confirmed with fixes): one worker of each variant regenerated with independent code, every
+pattern's knots, aliveness and port evaluation matching; the treewidth bound, the compactness argument and the cell of families
+that die at a finite depth while the limit lives are sound; how much the language settles (conclusion 2) is narrowed; S1 and S2
+are replications; the free limits are mostly trivial; the chains' connectivity is not proved. The advisor model reviewed the design cold before freezing (`advisor_review_answer.md`): it
 corrected two settled claims, foresaw S4's first fate below 1% (the threshold was lowered to 0.1%, still not met), and asked for the
 per-bin criteria, the effect-size floor, the mixing check and the same-degree baseline for ties.
 
@@ -96,7 +101,9 @@ Substantive: the census and the exact family fates. Administrative: the pre-regi
 
 ## Corrections
 
-None.
+Four, from the referee (`docs/CORRECTIONS.md`, 2026-11-12): **Narrowing**, the large-pattern contrast and "forever" are largely
+settled by the language's monotonicity at the knot; **Not a block**, S1 and S2 are replications; **Not a block**, free limits are
+mostly trivial; **Not a block**, the chains' connectivity is not proved.
 
 ## Data
 
@@ -106,7 +113,7 @@ The runs are kept compressed (`runs_*.jsonl.gz`, 11 MB); `census.py --summary` r
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — meeting patterns weighted by short descriptions | **Status:** Partially successful (referee pending) | S1, S2, S5 held; S3, S4 failed: nesting protects from death and leaves fewer ties |
+| This attempt — meeting patterns weighted by short descriptions | **Status:** Partially successful (refereed, confirmed with fixes) | S1, S2, S5 held; S3, S4 failed: nesting protects from death and leaves fewer ties |
 | Local direction — weightings by description | Continue | The limit-only survivors and what a self-holding knot becomes are exact and unread |
 | Broader exploration — G17 | Searching | One weighting changes the outcome at a given size; the readings (rulers, counts) of nested patterns are untried |
 | Long-term goal — G17 Typical and rare meeting patterns (with G7) | Capability gained | Under short descriptions the owner's three fates are measured exactly for logic fractals |
@@ -127,3 +134,11 @@ A79 added. **Basket:** `OLD-CORE-20261112-001#2`, `LIFE-JUMPS-20261112-001#2`, `
 2. Payoff 2: the exact form of "similar to limits". Concreteness 3: the relation maps are computed; only the rule is missing.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 18:10 UTC, in the project thread: short descriptions as a weighting, done (referee
+pending); the typical pattern is one living knot; large patterns are nested and die far less often (2.4% against 5.7% and 8.6% at
+seven knots or more), by small contradictions, and only through the nesting; the living ones are less tied (S3 failed); nested
+families 98.9% at every depth, 1.05% a while within nine levels, 0.04% at once, 0.63% alive only in the limit; next, whether the law
+counts depth along a living fractal. Corrections none; goals G17 checkpoint; A79 added; the advisor corrected two settled claims.

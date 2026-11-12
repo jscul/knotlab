@@ -71,3 +71,7 @@ some rules is in how it wanders, wherever it starts.
 **Goals:** G15 checkpoint (obstruction learned, with G16); sub-goal B168 taken; B169's cheap part done; B171 added.
 **Assumptions:** none new or changed.
 **Basket:** B169, B171, B166, B159, B162, B157, B154, B155, B156, B150, B151, B130 (the line paused).
+
+## Final report as sent
+
+Posted in the thread on 2026-11-12 (17:42 UTC), as the pause report: the clamped phase found the counting rule less often than without the examples (13 and 12 of 100 runs against 48), beating neither blind search nor blind search among rules consistent with the examples; the walk's bias is its own dynamics (taught nothing it could satisfy, it settles at the counting rule about a third as often as chance and at the swap target about twice as often, from random starts as much as from the usual one); five learners tried, none beats blind search, keeping a found rule works and being taught by examples is not shown; the B165 referee verdict folded in (Confirmed, two wording fixes logged); everything committed, LONG_RUNNING updated, the basket holding B169 and B171; the line stopped, nothing new started.

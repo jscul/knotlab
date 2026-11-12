@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "CLAMP-LEARN-20261112-001A-P001",
+  "canonical_id": "CLAMP-LEARN-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "CLAMP-LEARN-20261112-001A",
+  "proof": "CLAMP-LEARN-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "A clamped phase against honest baselines",
+  "status": "Proved",
+  "claim": "Computed, frozen, referee pending: on one copy of (2,0,4) with 64 laws at rest and random starts, a clamped phase and contrastive acceptance find the count in 13 and 12 of 100 runs (the unchanged learner 48) and beat neither the uniform nor the restricted blind median in steps; no steering. The unchanged walk's bias among laws at rest is the same from random starts as from the fixed start.",
+  "dependencies": [
+    "STEER-LEARN-20261112-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A baseline wrong; a run misread; a clamped rule passing on the count and on g."
+  ],
+  "lineage": {
+    "home_scope": "CLAMP-LEARN-20261112-001",
+    "epic_path": [
+      "CLAMP-LEARN-20261112-001"
+    ],
+    "parents": [
+      "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase/clamp_lib.py",
+      "research/CLAMP-LEARN-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase/clamp_lib.py": "9cee236cdfe21a386aa75e40c9e4135acf6eb11db13e4e50945dacfcd6421469",
+    "research/CLAMP-LEARN-20261112-001/preregistration.md": "f4c5d485f72d08f3733f4902d91dc5fe5778281c7e34bee3f215b9eb841e6c5c"
+  },
+  "paths": {
+    "manifest": "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase/manifest.json",
+    "identity": "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase/identity.json",
+    "proof": "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase/proof.md",
+    "result": "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase/result_summary.json",
+    "check": "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase/check.py",
+    "directory": "proofs/CLAMP-LEARN-20261112-001A/CLAMP-LEARN-20261112-001A-P001_a_clamped_phase"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "One copy of (2,0,4) with 64 laws at rest, random starts, three learners, two targets, 100 seeds; the walk from fixed and random starts in two settings.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 498f903cc).",
+    "status": "blind baselines exact; runs computed, frozen; referee pending",
+    "novelty": "known-with-delta"
+  }
+}

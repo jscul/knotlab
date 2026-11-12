@@ -920,11 +920,14 @@ level, and never ends (proved: every outer state lifts); only the alternation
 a drawn three-copy nesting forces nothing to level 7. Tested the other way
 (referee pending): replace each distinction by a block whose own knots bind
 the copies, and every distinction the block cannot spare is tied across the
-whole pattern (in 47 of 87 small blocks; one direction proved, the other
-exact), while nesting deeper adds nothing new. Open: a proof of the other
-direction, and which reading John meant.
+whole pattern (in 47 of 87 small blocks), while nesting deeper adds nothing
+new. Proved (referee pending): the pinned distinctions are exactly those no
+state of the block can flip alone, pinned by equality, the same value
+everywhere they reach; so for odd periods a harmony is exactly a block that,
+nested, pins everything. Open: pins that vary (a twisted binding), and which
+reading John meant.
 
-Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [nesting by substitution](research/SUBST-NEST-20261112-001/subst_nest.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
+Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [nesting by substitution](research/SUBST-NEST-20261112-001/subst_nest.md), [the pinning theorem](research/PIN-RULE-20261112-001/pin_rule.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
 
 ### The weak four-place kinds
 

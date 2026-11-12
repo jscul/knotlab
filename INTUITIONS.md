@@ -2305,8 +2305,9 @@ that earlier records used in two senses.
   distinctions (v, p), and it is **tied** when they lie in one tie class.
   The intuition: with the block's own knots between copies, a part is pinned
   across the whole pattern exactly when the block cannot spare its
-  distinction (proved one way, exact the other, on 387 blocks; nesting by
-  substitution, 12 November 2026).
+  distinction, that is, when no state of the block survives flipping it alone
+  (proved: the pinning theorem, 12 November 2026); the pin is always an
+  equality, carried one knot at a time.
 - **Knot substitution.** Each knot is replaced by a copy of a **gadget** (the
   complexity literature's word), a pattern glued to the knot at its three
   **terminals**, again and again (the literature's hierarchical lattice). A

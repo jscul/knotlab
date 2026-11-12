@@ -3184,6 +3184,17 @@ So holes come in two kinds:
      distinctions is decided at the first level (kept, freed, forced equal, or ended), and with every triple of distinct block
      distinctions bound, blocks of five or more end every pattern
      ([decision note](../research/SUBST-NEST-20261112-001/subst_nest.md)).
+
+   **2026-11-12: the pinning theorem** (`PIN-RULE-20261112-001`; referee pending).
+   - **Proved.** If two copies joined by a knot disagree at a block distinction, the third copy shows the block can spare it. So
+     nesting by substitution pins exactly the distinctions a block cannot spare, by equality, along every knot and so across each
+     connected part of the pattern; the census rule is a theorem.
+   - **Spare is "can flip unseen".** A distinction is spare exactly when some state of the block survives flipping it alone. So for
+     odd n a cyclic block makes a harmony exactly when nesting it pins all its distinctions: the odd harmonies of 61, 73 and 193 are
+     blocks that, nested, lock everything.
+   - **Pins never vary, and the reach is a wire.** With bindings that do not tell copies apart, a pin is always equality, the same
+     value everywhere it reaches; the reach is one equality per knot chained along the pattern. Pins that vary would need a binding
+     twisted by a symmetry of the block ([decision note](../research/PIN-RULE-20261112-001/pin_rule.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; stage 1 referee pending).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 89% at the last base, the same at every

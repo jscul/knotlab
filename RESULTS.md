@@ -1457,7 +1457,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | The pinning theorem, and pins that vary (`PIN-RULE-20261112-001`) | [closure](proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PIN-RULE-20261112-001/) |
 | 2026-11-12 | An end read from the prefix counts (`PREFIX-END-20261112-001`) | [closure](proofs/PREFIX-END-20261112-001Z/PREFIX-END-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PREFIX-END-20261112-001/) |
 | 2026-11-12 | Outcomes of random meeting patterns (`RANDOM-FATES-20261112-001`) | [closure](proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/RANDOM-FATES-20261112-001/) |
-| 2026-11-12 | Rows that grow by one (`ROW-NEST-20261112-001`) | — | [folder](research/ROW-NEST-20261112-001/) |
+| 2026-11-12 | Rows that grow by one (`ROW-NEST-20261112-001`) | [closure](proofs/ROW-NEST-20261112-001Z/ROW-NEST-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ROW-NEST-20261112-001/) |
 | 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | [closure](proofs/SEARCH-AUDIT-20261112-001Z/SEARCH-AUDIT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SEARCH-AUDIT-20261112-001/) |
 | 2026-11-12 | One unlengthened shift against two (`SHIFT-COUNT-20261112-001`) | [closure](proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SHIFT-COUNT-20261112-001/) |
 | 2026-11-12 | Locks across two shifts (`SHIFT-LOCK-20261112-001`) | [closure](proofs/SHIFT-LOCK-20261112-001Z/SHIFT-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SHIFT-LOCK-20261112-001/) |

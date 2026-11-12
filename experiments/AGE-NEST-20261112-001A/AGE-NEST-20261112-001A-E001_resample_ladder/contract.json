@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "AGE-NEST-20261112-001A-E001",
+ "ticket": "AGE-NEST-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which structure beyond degrees carries the end of growth with closings anywhere: degrees (SW), degrees with each knot's youngest distinction (R2), the youngest alone (R2p), or the growth's schedule (FULL)?",
+ "definitions": {
+  "endings": "OLD-CORE-20261112-001A-E001's X(0.25), X(0.3), X(0.35) endings regenerated from its seeds, its pilot's twelve held out.",
+  "rungs": "SW, R2 (switch chains, 20 x knots steps, rejections counted), R2p, FULL; 20 resamples each; shares ending and shares identical in pair counts.",
+  "fairness": "exact transition matrices of SW and R2 on every simple pattern of five degree sequences: symmetric, connected within preserved classes.",
+  "control": "Q0: one Pasch trade where one exists keeps pair counts and allows no state."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 1f08fb5c5da61e2e7afe91ed9ec111b2ffb9a8ee275135fa358d8d9283db9f1f) beside this file; OLD-CORE's census.py (sha256 ec68b970ab4eb1203eda55b27346d7a7dac126cd2f7b04d26170b72f3a1495b7) and fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35); pysat; numpy.",
+  "run": "census.py from the repository root, then census.py --summary; output artifacts/AGE-NEST-20261112-001A/AGE-NEST-20261112-001A-E001_resample_ladder/."
+ },
+ "forbidden_inputs": [
+  "Changing endings, rungs, steps, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Per setting: medians of the four shares, the share of cores where R2 exceeds SW, forced shares.",
+ "cheapest_meaningful_control": "Q0, the pair-count lemma; the fairness matrices.",
+ "predictions": {
+  "N1": "median P_SW <= 0.1 in X(0.3) and X(0.35)",
+  "N2": "median P_R2 >= 0.2 and R2 > SW in >= 70% of untied cores, both settings",
+  "N3": "reported",
+  "Q0": "control"
+ },
+ "decision_rules": {
+  "N1 and N2 hold": "the end is carried by how knots nest by age (the counts among the oldest j), not by degrees",
+  "N2 fails": "the nesting does not suffice; the schedule (FULL) or more is needed"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About fifteen minutes on eight workers; systemd-run --user -p MemoryMax=8G -p MemorySwapMax=0."
+}

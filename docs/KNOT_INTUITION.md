@@ -3076,6 +3076,16 @@ So holes come in two kinds:
    - **The mirror reads a power of 2 (proved).** Flipping every value pairs the offsets of two such harmonies exactly when
      their periods carry different powers of 2. No stitch reads whether one period divides the other
      ([decision note](../research/HARMONY-ARITH-20261112-001/harmony_arith.md)).
+
+   **2026-11-12: why the knot law's harmonies are even** (`EVEN-PERIOD-20261112-001`).
+   - **The question.** Every not-all-equal harmony found has even periods only. Is that the mirror? Flipping every value keeps
+     the law, but it only pairs a repeat of odd period with a second, mirrored one: it forbids nothing (proved).
+   - **What forbids them is an unseen flip (proved).** In 001 repeating, one 0 can be flipped without any knot kind that 001
+     satisfies noticing, so every base allowing 001 also allows a state that does not repeat. A word with such a flip (in itself
+     or in a word compatible with it) belongs to no harmony; and a word of odd period without one would itself make a harmony.
+   - **To period 29 (computer-assisted, refereed twice).** All 25,328,938 words of odd period 3 to 29 have such a flip, so no
+     not-all-equal harmony, at any span and with any number of knot kinds, has an odd period up to 29. Beyond that it is open
+     ([decision note](../research/EVEN-PERIOD-20261112-001/even_period.md)).
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
    clauses defines one.

@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RANDOM-FATES-20261112-001C-E001",
+ "ticket": "RANDOM-FATES-20261112-001C",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On newest-four growth, which never ends, does the not-all-equal law cut, count or fold the line: how does the least bond containing two distinctions behave as their distance along the line grows, at closing probabilities 0 to 0.9?",
+ "definitions": {
+  "bases": "fates.proc_band(w = 4) at q in {0, 0.1, 0.3, 0.5, 0.7, 0.9}, ten bases each, grown to 800 distinctions; seeds sha256 C:q:base:grow.",
+  "pairs": "eight nested sequences per base: i uniform in [40, 200]; j = i + g + r, g in {4, 8, 16, 32, 64, 128, 256, 512}, r uniform in {0..3}; seeds sha256 C:q:base:pairs.",
+  "least bond": "bonddp.least_bond, exact, members within [i - 8, j + 8], no size cap, blow-up past 20,000 states; undefined = no bond with members in that window.",
+  "open windows": "positions m in [i + 3, j] whose distinctions m - 3 .. m do not carry all four knots.",
+  "rechecks": "up to five undefined pairs at g >= 64 and four defined pairs per base with margin 32; bonds of at most ten members verified by SAT."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 54d62f8be665ae8b560c082b34938a99185bb8edfdf3a11509013dcd679ed9ba) and bonddp.py (sha256 8bc70ca09b96ed24689a828297671302dc3f8895617d764b1ea3823aea7eb608) beside this file; fates.py of RANDOM-FATES-20261112-001A-E001 (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35); pysat; 6 workers.",
+  "run": "census.py from the repository root, then census.py --summary; output artifacts/RANDOM-FATES-20261112-001C/RANDOM-FATES-20261112-001C-E001_newest_four_count/."
+ },
+ "forbidden_inputs": [
+  "Changing bases, pairs, margins, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Per (q, g): share of pairs with a bond, base medians of L, steps apart, open windows.",
+ "cheapest_meaningful_control": "The complete pattern (L = 2 at g = 0 mod 4, else 3), the chain {2k, 2k+1, 2k+2} (L = steps + 2), the programme against brute force on 300 small patterns, SAT verification of small bonds.",
+ "predictions": {
+  "Q1": "median over bases of g_half (least g with fewer than half of eight pairs defined) strictly rising over q = 0.1, 0.3, 0.5, and at most 128 at q = 0.1.",
+  "Q2": "q = 0.5: among bases with at least six of eight defined at g = 32, 64, 128, the ratio (L128 - L64)/(L64 - L32) of base medians in [1.5, 2.7] in at least 7 bases.",
+  "Q3": "g = 64: median of base medians of L strictly falling over q = 0.3, 0.5, 0.7, 0.9 (bases with at least four of eight defined).",
+  "Q4a": "q = 0.7 and 0.9, g = 256, defined pairs (at least 20): Spearman correlation of L with open windows above 0.5.",
+  "Q4b": "q = 0.9: base median L at g = 512 at least 3 above that at g = 128 in at least 8 of 10 bases.",
+  "Q5": "reported only: ties at g >= 32."
+ },
+ "decision_rules": {
+  "Q1 holds": "rare closings cut the line into pieces that lengthen with q",
+  "Q2 and Q3 hold": "the law counts linearly in a unit that shrinks with closings",
+  "Q4a holds": "it counts open windows",
+  "Q4b fails": "near the complete pattern the line folds",
+  "a control fails": "a bug; the run is not interpreted until fixed"
+ },
+ "stop_rule": "One run and its summary; one referee pass; report.",
+ "runtime": "About ten minutes on 6 workers; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

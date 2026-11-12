@@ -50,8 +50,8 @@
  "proof": "RANDOM-FATES-20261112-001B-P001",
  "authoritative_metadata": "manifest.json",
  "title": "Knots with no cycle, and growth among the newest four",
- "status": "Partial",
- "claim": "Under NAE: T1 every finite pattern of three-place knots with no cycle of knots (Berge-acyclic) allows a state, has no tie, has hollow triples exactly its knots (read faithfully), and the least bond containing two distinctions d steps apart has exactly d + 2 distinctions (the alternating chain), none for different components; T2 every pattern whose knots each lie within four consecutive distinctions of an integer interval allows a state, and from a least element every state of an initial segment extends; T3 the ten knots on five distinctions allow no state; T4 a knot with a distinction in no other knot never makes a contradiction (O global (0) and T never end), newest-four growth never ends, newest-w growth with w >= 5 and closing probability q > 0 ends with probability one with a geometric tail; C1 the last base ties the killing knot's three distinctions equal (by definition).",
+ "status": "Proved",
+ "claim": "Under NAE: T1 every finite pattern of three-place knots with no cycle of knots (Berge-acyclic) allows a state, has no tie, has hollow triples exactly its knots (read faithfully), and the least bond containing two distinctions d steps apart has exactly d + 2 distinctions (the alternating chain), none for different components; T2 every pattern whose knots each lie within four consecutive distinctions of an integer interval allows a state, and from a least element every state of an initial segment extends; T3 the ten knots on five distinctions allow no state; T4 a knot with a distinction in no other knot never makes a contradiction (O global (0) and T never end), newest-four growth never ends, newest-w growth with w >= 5 and closing probability 0 < q < 1 ends with probability one with a geometric tail (at q = 1 it never ends); C1 the last base ties the killing knot's three distinctions equal (by definition).",
  "dependencies": [
   "RULER-20261111-001A"
  ],
@@ -76,16 +76,14 @@
   "check": "proofs/RANDOM-FATES-20261112-001B/RANDOM-FATES-20261112-001B-P001_no_cycle_and_four_consecutive/check.py",
   "directory": "proofs/RANDOM-FATES-20261112-001B/RANDOM-FATES-20261112-001B-P001_no_cycle_and_four_consecutive"
  },
- "remaining_obligations": [
-  "Referee pass on T1 to T4."
- ],
+ "remaining_obligations": [],
  "foundation_claim_scope": "Finite patterns of three-place knots under NAE (T1, T3, T4); T2 also for patterns indexed by the natural numbers or the integers, with no source label claimed for infinite patterns.",
  "validation": {
   "level": "V1",
   "external_review": false,
   "trusted_kernel": false,
-  "independence": "Written by Claude in one session on 2026-11-12; referee pending.",
-  "status": "proved by hand; check.py K1 to K3 passed (result.json); referee pending",
+  "independence": "Written by Claude in one session on 2026-11-12; read by an independent referee (a fresh Claude agent with its own code), which found T1 proved with wording fixes (made), T2, T3, T4(a), T4(b) and C1 proved, and T4(c) false as first stated (q = 1, and histories of three or four distinctions); corrected to 0 < q < 1 with the bound counted from five distinctions.",
+  "status": "proved by hand; check.py K1 to K3 passed (result.json); refereed, with the referee's own exhaustive and random checks",
   "novelty": "known in substance (Berge-acyclic 2-colourability, greedy colouring, pigeonhole); the least-bond statement of T1 and the alternating chain not found stated (bounded search); T4 applies them to processes defined in this epic."
  }
 }

@@ -11,6 +11,13 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: can nested patterns count, one statement fixed before its proof
+
+- The pre-registration of the test of whether nested patterns can count (`NEST-COUNT-20261112-001`) described the infinite limit
+  with one wrong step (deleting the calls that pass a knot's ends to itself); they stay. Fixed before the proof was written
+  ([decision note](research/NEST-COUNT-20261112-001/nest_count.md)).
+- Unchanged: every result.
+
 ## 12 November 2026: what a living bottomless pattern looks like, narrowed by its referee
 
 - The test of whether one all-equal knot per depth can keep a bottomless pattern alive (`LIMIT-STATE-20261112-001`) was confirmed:

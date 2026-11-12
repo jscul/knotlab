@@ -13,7 +13,7 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## Picking the line up cold (updated 2026-11-12, after `WHICH-SEQUENCES-20261112-001`)
+## Picking the line up cold (updated 2026-11-12, after `STEER-LEARN-20261112-001`)
 
 The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere, resumed it on 2026-11-11, and paused new work
 again after `PARITY-FIVE-20261111-001` the same day; the owner restarted it the same evening with a new direction, bases where knots
@@ -63,8 +63,9 @@ then held: in none of 91 learned cases did the learner find its target faster th
   from pinned dissonance); `proofs/STURDY-PROBE-20261110-001A/.../probe_lib.py` (the sturdier probe; patch `io_lib.probe` to use it);
   `proofs/THREE-IN-20261110-001A/.../census_lib.py` and `proofs/THREE-IN-20261110-001B/.../io3_lib.py` (three held inputs).
 
-**Where to start again** (the basket, best first): a learner whose examples steer its search (sub-goal B165, 3/3 and 2/3, selected,
-awaiting a go-ahead; three steering rules and a frozen test drafted with the advisor model on its entry); rest at symmetric laws (B166); no
+**Where to start again** (the basket, best first): let the examples shape the dissonance the learner feels, a clamped phase (sub-goal
+B168, 3/3 and 2/3, selected, awaiting a go-ahead); why the walk prefers some laws (B169); three steering rules at the probe failed
+(`STEER-LEARN-20261112-001`, referee pending; learners in `proofs/STEER-LEARN-20261112-001A/.../steer_lib.py`); rest at symmetric laws (B166); no
 rest set by sequence length serves every base (`WHICH-SEQUENCES-20261112-001`, census in `proofs/WHICH-SEQUENCES-20261112-001A/.../census_lib.py`);
 the audit is `proofs/SEARCH-AUDIT-20261112-001A/.../audit.py`;
 rigidity from longer sequences (B162); the graded engine is `proofs/NATIVE-GRADE-20261112-001A/.../grade_lib.py`, the native rest-set one

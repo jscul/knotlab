@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SHIFT-COUNT-20261112-001C-E001",
+ "ticket": "SHIFT-COUNT-20261112-001C",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "For travelling-related patterns that no doubly periodic state up to period 8 carries (base 16 and FAR-BOUND's 29 unresolved bases), which period lattices up to 24 x 24 carry them, and does the harmony thread's tiling reading hold?",
+ "definitions": {
+  "test": "research/LINE-LOCK-20261112-001/preregistration.md, section 'A test proposed for the knots-alone thread' (sha256 4d219457e9e2dd7292831932dbacf02892626ea1f22afd6c97f56c511fd65f6e)",
+  "inputs": "FAR-BOUND recheck.jsonl (sha256 077ab07bc6c786cb6ded69a2d5b2cba0ff029024be1be1e98af8f36e08766932)"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 16ec84a6c01a3619c1858312cfbbdb2482776ebd0e41bc4e83645844bd415016) beside this file",
+  "run": "one run; output artifacts/SHIFT-COUNT-20261112-001C/SHIFT-COUNT-20261112-001C-E001_repeat_sizes/"
+ },
+ "forbidden_inputs": [
+  "Changing patterns, lattices or criteria after seeing results"
+ ],
+ "primary_observable": "Per pattern: C, the divisibility fit, the threshold, line counts, the rival",
+ "cheapest_meaningful_control": "Base 16's two patterns",
+ "predictions": {
+  "tiling reading (the harmony thread's)": "C non-empty, cut out by divisibility, no threshold, some line count equal on parallel lines"
+ },
+ "decision_rules": {
+  "refuted": "C empty to 24 x 24, or every size past a threshold, or no line count equal on parallel lines",
+  "rival": "C equals the lattices with no colliding images"
+ },
+ "stop_rule": "One run; report against the refutation criteria.",
+ "runtime": "Up to an hour on 4 workers; each item saved; 1,800 s cap."
+}

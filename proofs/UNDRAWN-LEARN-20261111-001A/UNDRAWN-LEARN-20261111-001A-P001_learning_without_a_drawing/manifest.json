@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "UNDRAWN-LEARN-20261111-001A-P001",
+  "canonical_id": "UNDRAWN-LEARN-20261111-001A-P001",
+  "kind": "proof",
+  "ticket": "UNDRAWN-LEARN-20261111-001A",
+  "proof": "UNDRAWN-LEARN-20261111-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Learning counts with dissonance at knots alone",
+  "status": "Proved",
+  "claim": "Exact: on one copy of the drawn knot pattern (2,0,4), 4 of 512 laws count three held distinctions; a 6-distinction, 8-knot base with 2 to 6 knots per distinction counts three in exactly 1 of its 2,048 laws. Computed, frozen: the credit learner with dissonance at violated knots alone (no faces) learned and held the count in 0 of 10 runs on one copy, 0 of 10 on two copies sharing a distinction and 0 of 10 on the undrawn base; its few stops at the count were lost after a disturbance, the law re-signed by the repair.",
+  "dependencies": [
+    "SHARED-COUNT-20261111-001A"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "V or R failing; L1, L2 or L3 below 8 of 10."
+  ],
+  "lineage": {
+    "home_scope": "UNDRAWN-LEARN-20261111-001",
+    "epic_path": [
+      "UNDRAWN-LEARN-20261111-001"
+    ],
+    "parents": [
+      "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing/undrawn_lib.py",
+      "research/UNDRAWN-LEARN-20261111-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing/undrawn_lib.py": "a252d2e415ad2d4329c4f22f52c03a4e60cc0cc20739ebf056bbd68b8d180dc1",
+    "research/UNDRAWN-LEARN-20261111-001/preregistration.md": "89eaeff80c898cae5fbf957cf6116371fa59a816ab3763bb64772d6cc7cf47b6"
+  },
+  "paths": {
+    "manifest": "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing/manifest.json",
+    "identity": "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing/identity.json",
+    "proof": "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing/proof.md",
+    "result": "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing/result_summary.json",
+    "check": "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing/check.py",
+    "directory": "proofs/UNDRAWN-LEARN-20261111-001A/UNDRAWN-LEARN-20261111-001A-P001_learning_without_a_drawing"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "Three bases (one copy of (2,0,4), two copies sharing a distinction, a 6-distinction base no drawing fits), ten runs each, one frozen drawing-free learner.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-11, pre-registered (commit 6be010d59).",
+    "status": "exhaustive law counts; learning computed (check.py, run once; harness and summary reproduce)",
+    "novelty": "known-with-delta"
+  }
+}

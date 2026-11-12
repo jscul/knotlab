@@ -138,4 +138,42 @@ of "die"); `MISSING-KNOTS-20261112-001#1` and `#2`.
 
 ## Final report as sent
 
-UPDATE
+Sent to the owner on 2026-11-12 at about 15:00 UTC, in the project thread, together with `MISSING-KNOTS-20261112-001`'s report:
+
+> **Over a whole life, and the count of gaps: both done (referee pending).** The patterns that go for a while and then end look different on the way, depending on the weighting.
+>
+> **Jumps over a whole life**: all 7 frozen predictions held, across 689 growths.
+> - **Uniform knots: no approach, one jump.** Nothing is tied for 90 to 95% of the life. Then most of the base ties in the last 20 knots.
+> - **Growth that keeps adding distinctions: closest to your limit.** Its largest tie class rises over the second half of life, from 8% at half-life to 33% at the end at X(0.3). It always sits in the oldest distinctions, and the end itself adds nothing.
+> - **The law forecasts the end.** Read 300 knots in, the size of that class separates growths that will end from those that won't (AUC 0.82). With rare closings the class stays near zero, and the growth lives on.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt: tie classes over whole lives | **Status:** Successful (referee pending) | J1 to J6 held on fresh seeds |
+> | Local direction: the course to the end | Continue | Why the share rises is not yet explained |
+> | Broader exploration: G17 | Searching | Other laws and weightings untried |
+> | Long-term goal: G17 Typical and rare meeting patterns (with G7) | Capability gained | "Similar to limits" has a measured form in one weighting and a jump in the other |
+>
+> **Next step:** Research directions. Selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | The old core's own end | 3/3 Major | 3/3 Ready | Read the oldest k distinctions as a pattern of their own → does the growth end when that core reaches the uniform end (2.1 per distinction)? | Selected · awaiting go-ahead |
+> | 2 | A calibrated forecast | 2/3 Substantial | 3/3 Ready | Sum the closing hazard still to come → it explains the ends, or later jumps add to it | Alternative · deferred |
+> | 3 | Larger uniform sizes | 1/3 Modest | 2/3 Testable | Ties only at 400 to 800 → the end's length fixed or growing | Alternative · deferred |
+>
+> **The count of missing knots**: partly confirmed. On the growth that never ends, the law's distance grows by about 0.11 members per missing knot, which replicated. On a second way of making the same kind of pattern, the cost falls as the knots get denser. Within one base with rare closings, the count stops predicting the distance. So it counts gaps, but not in a fixed unit.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt: a unit for the law's count | **Status:** Partially successful (referee pending) | M1 held. M2 and M3 failed. The rival held |
+> | Long-term goal: G17 (with G1) | Capability gained | The count is close to a count of gaps |
+>
+> **Next step:** Research directions. Selected: #1, the cost of a gap from its neighbours (2/3, 2/3), awaiting go-ahead.
+>
+> **Corrections:** the census referee's five are already logged (one Narrowing, four Not a block). None new here.
+> **Goals:** two G17 checkpoints, capability gained. No goal change.
+> **Assumptions:** A71 and A72 used, unchanged.
+> **Basket:** #1 is sub-goal B170.
+> **Advisor:** reviewed both designs cold before freezing; its fixes are listed in the pre-registrations.
+> **Pending:** one last uniform growth on 300 distinctions, which can move a share by at most 1/30. The five slow runs from the census were stopped unfinished, and nothing rests on them.

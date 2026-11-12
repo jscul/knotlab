@@ -3309,7 +3309,11 @@ So holes come in two kinds:
    - **Two causes.** Growth along co-knotted pairs ends through its degrees: patterns with its dying core's degrees always end, and
      peeled of loose distinctions the core sits at the known threshold. Growth with closings anywhere ends through correlations its
      degrees do not carry (degree-matched patterns never end), between closing rates 0.25 and 0.3. Age is a proxy for degree
-     ([decision note](../research/OLD-CORE-20261112-001/old_core.md))
+     ([decision note](../research/OLD-CORE-20261112-001/old_core.md)).
+   - **What those correlations are: the nesting by age** (`AGE-NEST-20261112-001`; referee pending). Redrawn cores that keep every
+     knot's youngest distinction, so every count of knots among the oldest j, end about half the time, with or without the degrees;
+     degree-matched ones never do. The old distinctions die from being knotted among themselves
+     ([decision note](../research/AGE-NEST-20261112-001/age_nest.md))
      ([decision note](../research/LIFE-JUMPS-20261112-001/life_jumps.md)). Closer to the owner's limit, but measured on ten whole lives per process only
      ([decision note](../research/RANDOM-FATES-20261112-001/random_fates.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The

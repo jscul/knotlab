@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**322 current results** and 5 superseded ones, from 332 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**323 current results** and 5 superseded ones, from 332 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -27,7 +27,7 @@ How to read an entry:
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
-- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 26 results
+- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 27 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
@@ -987,6 +987,9 @@ Patterns of patterns in three dimensions: when counting colourings of knots and 
 - **2026-11-12 · Nesting pins exactly what a block cannot flip alone** (`PIN-RULE-20261112-001-D001`).
   With the block's own knots between copies, nesting pins exactly the distinctions no state of the block can flip alone, by equality, uniformly on each connected part of the pattern (proved), so for odd n a cyclic block makes a harmony exactly when nesting pins all its distinctions.
   [proof P001](proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/proof.md), [epic closure](proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md)
+- **2026-11-12 · Two-way states that carry no influence** (`SHIFT-LOCK-20261112-001-D001`).
+  Along two shifts, unmixed knots lock iff both rings lock (proved); the mixed knot makes states repeating along no step, the only way open in 78 cells (exact), yet they tie nothing and locks at every size still come from cycles.
+  [proof P001](proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/proof.md), [epic closure](proofs/SHIFT-LOCK-20261112-001Z/SHIFT-LOCK-20261112-001Z-P001_epic_closure/proof.md)
 - **2026-11-12 · Nesting by substitution pins values across the whole pattern** (`SUBST-NEST-20261112-001-D001`).
   With the block's own knots between copies, a block distinction's part is tied across the whole pattern exactly when the block cannot spare it, in all 87 blocks tested (exact; spare ones never, proved), so 47 blocks pin values everywhere from patterns with no ties. Nesting by unlagged stitches pins nothing.
   [proof P001](proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/proof.md), [epic closure](proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/proof.md)
@@ -1431,7 +1434,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | The pinning theorem, and pins that vary (`PIN-RULE-20261112-001`) | [closure](proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PIN-RULE-20261112-001/) |
 | 2026-11-12 | Outcomes of random meeting patterns (`RANDOM-FATES-20261112-001`) | [closure](proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/RANDOM-FATES-20261112-001/) |
 | 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | [closure](proofs/SEARCH-AUDIT-20261112-001Z/SEARCH-AUDIT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SEARCH-AUDIT-20261112-001/) |
-| 2026-11-12 | Locks across two shifts (`SHIFT-LOCK-20261112-001`) | — | [folder](research/SHIFT-LOCK-20261112-001/) |
+| 2026-11-12 | Locks across two shifts (`SHIFT-LOCK-20261112-001`) | [closure](proofs/SHIFT-LOCK-20261112-001Z/SHIFT-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SHIFT-LOCK-20261112-001/) |
 | 2026-11-12 | A learner whose examples steer its search (`STEER-LEARN-20261112-001`) | [closure](proofs/STEER-LEARN-20261112-001Z/STEER-LEARN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/STEER-LEARN-20261112-001/) |
 | 2026-11-12 | Nesting by substitution (`SUBST-NEST-20261112-001`) | [closure](proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SUBST-NEST-20261112-001/) |
 | 2026-11-12 | What the law reads on travelling bases (`TRAVEL-READ-20261112-001`) | — | [folder](research/TRAVEL-READ-20261112-001/) |

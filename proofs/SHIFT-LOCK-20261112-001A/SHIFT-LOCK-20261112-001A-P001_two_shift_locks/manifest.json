@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SHIFT-LOCK-20261112-001A-P001",
+  "canonical_id": "SHIFT-LOCK-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "SHIFT-LOCK-20261112-001A",
+  "proof": "SHIFT-LOCK-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Unmixed and mixed knots across two shifts",
+  "status": "Proved",
+  "claim": "Proved by hand (with the advisor model): copies of a harmony along two shifts with unmixed knots lock exactly when both rings lock (945 of 945 cells), and stepped states are states. Exact on the range: with the mixed knot (Ledrappier's three-member shape), 2,880 cells n, m = 2..9 on 45 harmonies: in 78 cells (10 harmonies) the arrangement unlocks only through states repeating along no short step; such states occur in 34 harmonies; none on squares to 16 (675 of 675); no harmony's increments hold a line; the Ledrappier control unlocks at the advisor's sizes and at 31 has no short-step state; ring ties n, n/L or copy 0 alone (403 of 405). After the run: those states verified, repeat along no step, tie nothing; for 0011 + 01 they are tilings and a slope polygon decides every lock to 16 x 16. Referee pending.",
+  "dependencies": [
+    "LOOP-LOCK-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An unmixed-knot repeat whose locking disagrees with both rings locking.",
+    "A stepped state that is not a state.",
+    "A cell counted for H0 or H0' that a fresh run settles the other way."
+  ],
+  "lineage": {
+    "home_scope": "SHIFT-LOCK-20261112-001",
+    "epic_path": [
+      "SHIFT-LOCK-20261112-001"
+    ],
+    "parents": [
+      "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/manifest.json",
+      "research/LOOP-LOCK-20261112-001/referee-R1/result_rings.json",
+      "research/SHIFT-LOCK-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/manifest.json": "17741dcc18956cc6ce7111892345aab4534390e7e7a5d79603763eeb714017ec",
+    "research/LOOP-LOCK-20261112-001/referee-R1/result_rings.json": "96e3df3eaa1710245278fe491b3a539363ac52b9c7c551b3753badd16d75d79e",
+    "research/SHIFT-LOCK-20261112-001/preregistration.md": "182afe66a60723901035b15c4908ec9a6c8fcbe607dbec5ee5418415fe4cd548"
+  },
+  "paths": {
+    "manifest": "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/manifest.json",
+    "identity": "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/identity.json",
+    "proof": "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/proof.md",
+    "result": "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/result.json",
+    "check": "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/check.py",
+    "directory": "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; 45 harmonies of period <= 16 stitched in one order; copies along two shifts on n x m repeats (unmixed knots 3..8; the mixed knot 2..9 and squares to 16; after the run, lock shapes to 16 x 16); rings of 6 to 60 knots; Ledrappier's law to 32 as control.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 4a511977a); independent referee pending.",
+    "status": "G1, G2 by hand; exact census (check.py); after-run checks labelled; referee pending",
+    "novelty": "known-with-delta"
+  }
+}

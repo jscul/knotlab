@@ -1,0 +1,99 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "FOLD-20261112-001Z-P001",
+ "canonical_id": "FOLD-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "FOLD-20261112-001Z",
+ "proof": "FOLD-20261112-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure of a direction the knot law does not lengthen",
+ "status": "Proved",
+ "claim": "Ledger closing FOLD-20261112-001: ticket A, Theorem F proved and refereed (on base 16 a line through the origin at bond distance at most 3 both ways, every pair free); ticket B, 14 of 16 four-step shortcut classes fold to six steps, none of the other 22 (G held); one correction (Not a block); recommendation research directions with 'across the fold' selected. No new claim.",
+ "dependencies": [
+  "FOLD-20261112-001A",
+  "FOLD-20261112-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "FOLD-20261112-001",
+  "epic_path": [
+   "FOLD-20261112-001"
+  ],
+  "parents": [
+   "proofs/FOLD-20261112-001A/FOLD-20261112-001A-P001_folded_direction/manifest.json",
+   "proofs/FOLD-20261112-001A/FOLD-20261112-001A-P001_folded_direction/result.json",
+   "experiments/FOLD-20261112-001B/FOLD-20261112-001B-E001_which_fold/contract.json",
+   "artifacts/FOLD-20261112-001B/FOLD-20261112-001B-E001_which_fold/census.json"
+  ]
+ },
+ "parent_bindings": {
+  "proofs/FOLD-20261112-001A/FOLD-20261112-001A-P001_folded_direction/manifest.json": "29e55703b875dcfae92da51f119dd173b1145301406e5430d41d665865dc72b6",
+  "proofs/FOLD-20261112-001A/FOLD-20261112-001A-P001_folded_direction/result.json": "c0bc6de3f7ca5479103804c8355b53de6e2737a14a3c65ac7c592495a7429a36",
+  "experiments/FOLD-20261112-001B/FOLD-20261112-001B-E001_which_fold/contract.json": "3a235815bd6d60409b14497f0b086bdb3a8d7efbf26c5e3202bcf7d983d7d0d0",
+  "artifacts/FOLD-20261112-001B/FOLD-20261112-001B-E001_which_fold/census.json": "32eb6786babc2a15beaa2af777d9d00b45cff86569ec71a3f1d4e94aaec495e5"
+ },
+ "paths": {
+  "manifest": "proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/result.json",
+  "check": "proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-11; the census and the lemmas refereed by independent agents.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

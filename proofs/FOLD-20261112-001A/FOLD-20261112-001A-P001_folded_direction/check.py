@@ -7,11 +7,13 @@ column x + 1, and the triple T_x = {(x,0), (x,1), (x,2)} travels straight along 
 
   C1. The column rule: a pair of columns (c, d) satisfies every knot between them exactly when, for every y, c(y) = c(y+1) implies
       d(y) != c(y) and c(y) = c(y+2) implies d(y+2) != c(y) (checked on every pair of columns of period 3 to 8).
-  C2. Backward bonds, every k >= 3: each three-element part of {(-k,0), (-k,1), (-k,2), (0,0)} is free, by states periodic in y with
-      period 3 to 8 (exact transfer graphs; their Boolean powers are eventually periodic, so finitely many k cover every k).
+  C2. Every k >= 3: each three-element part of {(-k,0), (-k,1), (-k,2), (0,0)} (a translate of C3's set at j = 0; the proof's B_k is
+      the translate of C3's set at j = 2) is free, by states periodic in y with period 3 to 8 (exact transfer graphs; their Boolean
+      powers are eventually periodic, so finitely many k cover every k).
   C3. Forward bonds, every k >= 3: each three-element part of {(0,0), (0,1), (0,2), (k,j)} is free, for j = 0, 1, 2, likewise.
   C4. Pairs: {(0,0), (-k,i)} and {(0,0), (k,j)} take all four patterns for every k >= 3 (the faithful reading keeps them apart).
-  C5. Mutation: without the second knot kind the triple does not travel (C2's constraint fails): checked by brute force on a window.
+  C5. Mutation: without the second knot kind the triple does not travel: the set is not refuted in a window (by SAT), so the forcing
+      that refutes it with both kinds is gone.
 
 Usage: check.py [--write]   (the workspace .venv)
 """

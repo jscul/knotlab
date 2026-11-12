@@ -50,8 +50,8 @@
  "proof": "FOLD-20261112-001A-P001",
  "authoritative_metadata": "manifest.json",
  "title": "A direction the knot law does not lengthen",
- "status": "Partial",
- "claim": "On base 16, for every k >= 3 the travelling triple k columns back with the origin, and the origin's triple with any of the three distinctions k columns on, are bonds of four, and every pair of the origin with a far distinction is free; so the radius-3 bond ball contains a whole line in both directions though its distinctions are k steps away.",
+ "status": "Proved",
+ "claim": "On base 16, for every k >= 3 (and k = 2) the origin's column triple with any distinction k columns on, and its translates, are bonds of four, and every pair of the origin with such a far distinction is free; so the radius-3 bond ball contains ten distinctions k steps away for every k >= 3, on a line through the origin both ways.",
  "dependencies": [
   "BOND-BALLS-20261111-001A",
   "OVERLAP-READ-20261111-001B"
@@ -76,16 +76,14 @@
   "check": "proofs/FOLD-20261112-001A/FOLD-20261112-001A-P001_folded_direction/check.py",
   "directory": "proofs/FOLD-20261112-001A/FOLD-20261112-001A-P001_folded_direction"
  },
- "remaining_obligations": [
-  "Independent referee"
- ],
+ "remaining_obligations": [],
  "foundation_claim_scope": "One infinite periodic knot pattern under NAE (base 16); the radius-3 bond ball; no claim about larger radii.",
  "validation": {
   "level": "V1",
   "external_review": false,
   "trusted_kernel": false,
-  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12.",
-  "status": "proof written; check.py passed; referee pending",
-  "novelty": "known-with-delta (directional determinism is classical: Newman-Moore, expansive subdynamics); the bond-distance reading is the delta."
+  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12; read by an independent referee (its own code in the original frame), which found the theorem true and asked for fixes to the shear's image, the presentation argument and the ball (made).",
+  "status": "proved: hand proof of the forcing; exact finite check of freeness valid for every k (check.py passed); refereed",
+  "novelty": "known-with-delta: the nearest precedent is Ledrappier's three-dot shift (non-mixing shapes, Kitchens-Schmidt); the delta is NAE, four-element bonds at every k along a line, read as bond distance; folklore risk moderate to high."
  }
 }

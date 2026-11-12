@@ -1,0 +1,54 @@
+{
+ "schema_version": 3,
+ "artifact_id": "FOLD-20261112-001A-P001",
+ "kind": "proof",
+ "ticket": "FOLD-20261112-001A",
+ "proof": "FOLD-20261112-001A-P001",
+ "status": "passed",
+ "claim": "On base 16, for every k >= 3 the travelling triple k columns back with the origin, and the origin's triple with any of the three distinctions k columns on, are bonds of four, and every pair of the origin with a far distinction is free; so the radius-3 bond ball contains a whole line in both directions though its distinctions are k steps away.",
+ "C1": {
+  "violations": "0",
+  "holds": "True"
+ },
+ "C2-C4": {
+  "periods": {
+   "3": [
+    3,
+    2
+   ],
+   "4": [
+    4,
+    2
+   ],
+   "5": [
+    6,
+    2
+   ],
+   "6": [
+    4,
+    2
+   ],
+   "7": [
+    9,
+    2
+   ],
+   "8": [
+    6,
+    2
+   ]
+  },
+  "k checked": [
+   3,
+   11
+  ],
+  "triple free": true,
+  "uncovered": [],
+  "holds": true
+ },
+ "C5": {
+  "constrained with both kinds": true,
+  "constrained with the first kind only": false,
+  "holds": true
+ },
+ "failures": []
+}

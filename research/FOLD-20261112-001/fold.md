@@ -134,3 +134,10 @@ changed (recorded here, not a correction).
 3. **Fourteen proofs.** Payoff 1, concreteness 3.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 03:35 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: on one
+infinite base the knot law provably keeps a whole direction at bounded bond distance, at every distance and both ways, with every far
+pair free; it is the law's doing, along the pair class two knots share; 14 of 38 kinds of shortcut base fold to six steps; nearest
+precedent Ledrappier's shift. One correction, Not a block. Holding for a go-ahead on #1.

@@ -1489,9 +1489,27 @@ shifts dictate. Does bond distance follow them?
   14 keep bonds of four at five and six steps (computed). The nearest known
   case is a parity rule on the same pattern of knots whose constraints appear
   at doubling distances (literature: Ledrappier's shift).
+- **Across it, one more distinction for every two across (proved one way).**
+  Call the direction the law does not lengthen the **unlengthened shift**, and
+  count distinctions along it and across it. A **heddle**, three equal
+  distinctions at consecutive across-counts and then every second
+  across-count up to y, all at one along-count, travels along the
+  unlengthened shift intact, so with one distinction y across and far along
+  it forms a bond. Among bonds made of one along-count and one distinction
+  further along, the heddle bond is the smallest: the law passes a value on
+  only where it has an equal partner one more or two fewer across, and what
+  such a pattern forces far along is exactly its **self-keeping part**
+  (literature: the stable set of a constrained flip dynamics, as in bootstrap
+  percolation). Those bonds reach only one way across, but bonds over two
+  along-counts reach the other way at the same sizes (computed to ten
+  across). So the law's balls, read across the unlengthened shift, grow by
+  two across-counts each way for each step of bond distance: one dimension
+  across. No smaller bond of any shape turned up in the boxes searched; that
+  none exists is open.
 
 ([BOND-BALLS-20261111-001](research/BOND-BALLS-20261111-001/bond_balls.md);
-[FOLD-20261112-001](research/FOLD-20261112-001/fold.md))
+[FOLD-20261112-001](research/FOLD-20261112-001/fold.md);
+[ACROSS-FOLD-20261112-001](research/ACROSS-FOLD-20261112-001/across_fold.md))
 
 **Studying a base from inside.** Lesson 1.7 asked whether what emerges in a
 base can study the base. The record so far:
@@ -2264,6 +2282,26 @@ that earlier records used in two senses.
 - **Shortcut.** A pair of distinctions whose bond distance is less than their
   steps apart plus one (lesson 4.7). The endless six-regular weave has none;
   some periodic bases that overlap have many.
+- **Unlengthened shift.** A shift of a periodic base along which the law
+  keeps distinctions arbitrarily many shifts away within a bounded bond
+  distance (lesson 4.7); base 16 has one. Counting from one distinction, the
+  others have an **along-count**, how many of that shift, and an
+  **across-count**, how many of the other (literature: coordinates, drawn as
+  column and row). Earlier records called the direction the fold; the owner's
+  folded, compressed structure keeps his own word. The intuition: the law
+  reads the base as having no length along that shift.
+- **Self-keeping set.** Distinctions at one along-count, with values, in which
+  every member has an equal partner in the set one more or two fewer across
+  (lesson 4.7). The law then passes every member's value on, flipped, to the
+  next along-count, so the set travels along the unlengthened shift forever.
+  The largest self-keeping set in a pattern is its **self-keeping part**, and
+  far along a pattern forces exactly what its self-keeping part forces.
+- **Heddle.** Three distinctions at consecutive across-counts, then every
+  second across-count up to a given one, all at one along-count: the least
+  self-keeping set reaching that far across (lesson 4.7). With one far
+  distinction at its last across-count it is a **heddle bond**. The word is
+  the weaver's, for what lifts every other thread. Earlier text called it a
+  ladder, which the literature uses for another object.
 - **Chain.** Rules in a row, each sharing one distinction with the next: a
   chain of implications (lesson 1.4), of two-place ties, or of knots. Closed
   up, a chain of implications is a loop of the picture of lesson 1.4. Along an
@@ -2396,6 +2434,8 @@ that earlier records used in two senses.
   | drawn knot pattern | every knot holding three distinctions and every distinction in three knots, drawn as a two-coloured triangulation: knots one colour, distinctions the other, faces at its vertices | the record's knot space; its drawing a checkerboard triangulated surface |
   | three-regular contradiction | not-all-equal knots, every distinction in three, no allowed state | non-2-colourable 3-regular 3-uniform hypergraph |
   | Fano pattern; Fano piece | seven distinctions and seven knots, every two distinctions in one knot; that pattern less one element | Fano plane; Fano plane less a point or a line |
+  | unlengthened shift; along-count, across-count | a shift the law does not lengthen; how many of each shift separate two distinctions | (none for the shift); coordinates of the sheared frame, drawn as column and row |
+  | heddle | three consecutive across-counts and every second one after them, at one along-count | (none; drawn as a column of a grid) |
 - **One word, one meaning.** Earlier records used some words in two senses
   (lesson 1.1). The guide keeps one sense of each and gives the other its own
   word. The
@@ -2425,6 +2465,9 @@ that earlier records used in two senses.
   | balanced | (the doubling line's balanced stages, not used in the guide) | six knots at every distinction: six-regular |
   | two-sided | (none) | orientable |
   | thread | (a thread of work, not used in the guide) | an endless chain of atoms: chain |
+  | fold | (the owner's folded, compressed structure, in his words) | the direction the law does not lengthen: unlengthened shift |
+  | ladder | (the literature's only, such as the n × 2 ladder graph) | three consecutive distinctions and every second one after them (ACROSS-FOLD-20261112-001's pre-registration): heddle; its rungs: the heddle's members after the three |
+  | row, column | (a row: a sequence, as in steps apart and chain) | the indices of base 16's drawn frame: across-count, along-count |
 - **Older records.** Records written before 11 November 2026 use the older
   words, and a record whose checksum another record pins (a manifest, a result
   or a discovery) is never edited, so it keeps them. Read such a record with the

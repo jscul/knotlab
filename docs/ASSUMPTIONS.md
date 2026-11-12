@@ -128,6 +128,7 @@ evidence: results and their status come from the records each entry links.
 | [A71](#a71--each-random-process-is-one-weighting-of-many) | Each random process is one weighting of many | measure | Assumed |
 | [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Assumed |
 | [A73](#a73--the-owners-other-realities-are-other-knot-patterns) | The owner's other realities are other knot patterns | reading | Assumed |
+| [A74](#a74--dimension-across-an-unlengthened-shift-is-read-by-across-counts) | Dimension across an unlengthened shift is read by across-counts | reading | Assumed |
 
 ## Entries
 
@@ -1925,3 +1926,21 @@ evidence: results and their status come from the records each entry links.
   on the same samples; if they differ in kind, "one kind of logic" has to name its law in every claim.
 - **History.**
   - 2026-11-12 · Added from the owner's statements of 2026-11-11, recorded in lesson 7.3 of the Intuitions guide.
+
+### A74 · Dimension across an unlengthened shift is read by across-counts
+
+**Assumed** · 2026-11-12 · reading
+
+- **Statement.** Where a law's balls are infinite because it does not lengthen one shift of a periodic base, the program reads
+  dimension across that shift: by how many across-counts a ball of bond radius r reaches at far along-counts, as r grows. On base 16
+  this gives zero dimensions along the unlengthened shift and one across it.
+- **Why.** Dimension as how fast balls grow (lesson 4.6 of the Intuitions guide) is degenerate when a ball of bond radius 3 already
+  holds infinitely many distinctions; counting the across-counts reached at far along-counts is the growth that remains, and it uses
+  bond distance alone. Taken by default in `ACROSS-FOLD-20261112-001`
+  ([decision note](../research/ACROSS-FOLD-20261112-001/across_fold.md)).
+- **Rests on it.** That epic's answer, "one dimension across", and its reading for question 9.
+- **Challenge.** Read dimension another way that also uses bond distance alone, such as the growth of a ball's distinctions within a
+  bounded window of along-counts, or after identifying distinctions at bounded bond distance; or find bonds over several along-counts
+  that cross more cheaply than heddles, which would change the rate but not the reading.
+- **History.**
+  - 2026-11-12 · Added by `ACROSS-FOLD-20261112-001`.

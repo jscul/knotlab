@@ -6045,6 +6045,20 @@ So holes come in two kinds:
    - **Fourteen kinds of base fold (computed).** Of the 38 kinds of base with shortcuts, 14 keep bonds of four at five and six steps,
      all among those whose shortcuts reached four steps ([decision note](../research/FOLD-20261112-001/fold.md)).
 
+   **2026-11-12: across the direction the law does not lengthen** (`ACROSS-FOLD-20261112-001`).
+   - **The question.** On base 16 the law does not lengthen one shift. How does its bond distance grow across it, and does it read a
+     line there?
+   - **Heddles travel (proved, refereed).** Three equal distinctions at consecutive across-counts, then every second across-count up
+     to y, all at one along-count (a heddle), are passed on intact along the unlengthened shift, so with one far distinction y across
+     they form a bond of floor((y+1)/2) + 3, for every y.
+   - **What travels keeps itself (proved, with the advisor model).** The law passes a value on only where it has an equal partner one
+     more or two fewer across, and lets every other value flip; far along, a pattern at one along-count forces exactly its
+     self-keeping part. So the heddle is the least bond of one along-count, and such bonds never reach three or more fewer across.
+   - **Both ways at the same rate (computed).** A second along-count passes values two across back, and bonds reach the other way at
+     the heddle's sizes, to ten across. Balls grow by two across-counts each way per step of bond distance: no length along one shift,
+     one dimension across. That no smaller bond exists beyond one along-count is open; none turned up in the boxes searched
+     ([decision note](../research/ACROSS-FOLD-20261112-001/across_fold.md)).
+
    **2026-11-12: nothing chooses a meeting pattern** (owner's statements, 2026-11-11 Pacific; interpretation, with readings under test).
    - **His words.** "There is no choice. [...] It's just random", with some realities perhaps "statistically more likely than
      others"; other realities are "Different meeting patterns! [...] Both the underlying patterns and even possibly the binding

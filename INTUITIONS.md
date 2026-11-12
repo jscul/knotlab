@@ -1941,8 +1941,9 @@ nears, and not if they jump. Which happens is under test.
 two distinctions are as near as the smallest bond holding both, with nothing
 behind them to measure against (lesson 4.6). On some endless bases two such
 measures disagree: steps along the meeting pattern say far, and the law says
-near, and on one base a whole combination of the shifts has no length to the
-law (lesson 4.7). The coordinator calls the comparison with relativity an
+near, and on one base a whole direction has no length to the law, which is
+proved: three distinctions any number of steps away still form a bond of four
+with the starting one (lesson 4.7). The coordinator calls the comparison with relativity an
 analogy so far and nothing more, and nothing here is physics.
 
 **Harmonies and "fractals".** "I think of fractals and harmonies. Where
@@ -2034,7 +2035,7 @@ the distinctions within r steps, grow.
 | Typical and rare meeting patterns | theory under test | `RANDOM-FATES-20261112-001`, pre-registered |
 | Three outcomes | under test; the end of uniform patterns known | the same census, and its proof of which growth can end |
 | Limits near the end | under test | the same census, on the patterns just before their end |
-| Only relative | shortcuts computed; the direction of no length under proof | [FOLD-20261112-001](research/FOLD-20261112-001/preregistration.md) |
+| Only relative | shortcuts computed; the direction of no length proved; relativity an analogy only | [FOLD-20261112-001](research/FOLD-20261112-001/fold.md), closed |
 | Harmonies | owner's word; one reading (A70) | `HARMONY-ARITH-20261112-001`, closed: the law's harmonies are even (exact to span 12) |
 | Subtraction and division | stitching multiplies and counts shared divisors, nothing subtracts (proved); divisibility not read | `HARMONY-ARITH-20261112-001`, closed; A70's challenge open |
 | Bases within bases | untested | backlog B164 |

@@ -1798,8 +1798,19 @@ So holes come in two kinds:
    - **Reading.** How many short sequences share a sign sets how much it costs to rewrite it: rigidity is a property of how the knots
      overlap. Which sequences to ask about is still open, and the learner still finds the count no faster than by chance among the rules
      it may settle on.
-   - **Next.** Which cyclic sequences the knots should fix, on every pattern (B161), awaiting a go-ahead
+   - **Next (taken by `SEARCH-AUDIT-20261112-001` and B161, below).** Which cyclic sequences the knots should fix, on every pattern (B161)
      ([decision note](../research/NATIVE-GRADE-20261112-001/native_grade.md)).
+
+   **2026-11-12: the learner was never taught by its examples** (`SEARCH-AUDIT-20261112-001`).
+   - **The question.** Did the examples ever help the learner find what it learned faster than drawing rules at random among those it may
+     settle on?
+   - **Computed.** No, in any of the 91 cases the line called learned: parity, the count of five, gates, memories, written addresses. It
+     found its targets no faster than blind draws, and usually slower: in 10 runs of 100, where blind draws would manage 50. It wanders, it
+     tries each rule it settles on against the examples, and it stops at one that fits.
+   - **Reading.** Everything above that says "learned" means found by a search the examples stop, then kept. Keeping is real; being taught is
+     not shown. With a blind search, how many rules the learner may settle on per right rule is the whole cost.
+   - **Next.** Fewer rules to settle on, chosen by the knots (B161), and a learner its examples steer (B165)
+     ([decision note](../research/SEARCH-AUDIT-20261112-001/search_audit.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

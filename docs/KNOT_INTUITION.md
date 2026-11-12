@@ -3368,7 +3368,7 @@ So holes come in two kinds:
      need one by one in 88% of one-definition families, and in 87% of families no living state keeps every depth at its least:
      the copies constrain each other through the distinctions they share, and the deeper all-equal knots mostly sit in other
      branches ([decision note](../research/WITNESS-COUNT-20261112-001/witness_count.md)).
-   - **Can nested patterns count?** (`NEST-COUNT-20261112-001`; referee pending): no, from their ends: each self-holding knot
+   - **Can nested patterns count?** (`NEST-COUNT-20261112-001`; refereed, confirmed with fixes): no, from their ends: each self-holding knot
      meets its outside in three distinctions, so the fate in depth repeats with a period and life is always decidable (proved).
      The law is not the limit: NAE knots express every relation closed under complement, and on plane-like patterns, where parts
      meet along growing boundaries, life is undecidable and counters can be built (Berger; Freedman). Counting inside, by bonds

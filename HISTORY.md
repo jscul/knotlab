@@ -11,6 +11,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: can nested patterns count, narrowed by its referee
+
+- The proof that nested patterns of the description language are finite-state (`NEST-COUNT-20261112-001`) was confirmed. The note
+  said they "cannot count"; what is proved is that they cannot count from their ends, while counting inside stays open. One step of
+  the proof was worded too narrowly and is widened, and the note now says plainly that only its description of the infinite limit
+  is new; the rest is known mathematics ([decision note](research/NEST-COUNT-20261112-001/nest_count.md)).
+- Unchanged: every theorem.
+
 ## 12 November 2026: can nested patterns count, one statement fixed before its proof
 
 - The pre-registration of the test of whether nested patterns can count (`NEST-COUNT-20261112-001`) described the infinite limit

@@ -2,7 +2,8 @@
 
 Epic `NEST-COUNT-20261112-001` (`WITNESS-COUNT-20261112-001` direction 2; G17, with G1), 2026-11-12, agreed by the owner after he
 asked how Gödel's work relates to ours. Pre-registered in commit d008757c0; one statement amended before the proof. The canonical
-K1–K3 test is unchanged. **Referee pending** (handed to the referee thread).
+K1–K3 test is unchanged. Refereed by the referee thread (NEST-COUNT-R1, `referee-R1/report.md`, commit 5f90d98da): **confirmed with
+fixes**, folded in below; three corrections logged (one Narrowing, two Not a block).
 
 ## The question
 
@@ -26,15 +27,19 @@ NAE instances on Z².
 
 ## Answer
 
-Nested patterns of our language cannot count, and whether they live is always decidable: each self-holding knot's inside is seen
-from outside only through what it allows on its three ends, which can be one of 16 things, so the fate in depth repeats with a
-period, and the top of a pattern can tell depth only modulo that period. The law itself is not what stops counting: NAE knots can
-express every relation closed under complement, and on a plane-like pattern, where a part meets the rest along a boundary that grows
-with it, whether the pattern lives is undecidable and counters can be built. What separates the two is the size of the interface.
+Nested patterns of our language cannot count from their ends, and whether they live is always decidable: each self-holding knot's
+inside is seen from outside only through what it allows on its three ends, which can be one of 16 things, so the fate in depth
+repeats with a period, and the top of a pattern can tell depth only modulo that period. Whether they count inside (by bonds against
+depth) is not decided here. The law itself is not what stops counting from the ends: NAE knots can express every relation closed
+under complement, and on a pattern where a part meets the rest along a boundary that grows with it (the literature's plane), whether
+it lives is undecidable and counters can be built. *(Narrowed after the referee: "cannot count" was said without "from their
+ends".)*
 
 ## Reading
 
 **Interpretation, not a theorem.**
+- **The interface.** What separates the decidable nested patterns from the undecidable ones here is the size of the interface;
+  that is a reading of these two results, not a theorem that counting needs growing interfaces.
 - **The owner's Gödel question.** Gödel's compactness explains why the limit-only patterns live (`LIMIT-ONLY-20261112-001`).
   Incompleteness needs a system that can count; our nested patterns cannot, from their ends, because each nested knot meets its
   outside in three distinctions. A pattern can reach undecidable questions only when its parts meet along interfaces that grow, as
@@ -47,8 +52,10 @@ with it, whether the pattern lives is undecidable and counters can be built. Wha
 Known: compactness (Gödel 1930); bounded-interface hierarchical graphs (Lengauer and Wanke 1988), hyperedge-replacement grammars and
 MSO (Courcelle), MSO on infinite trees (Rabin 1969); Kleene iteration; the co-clone bases (Böhler, Reith, Schnoor and Vollmer 2005);
 the domino problem (Wang 1961, Berger 1966), k-SAT on groups (Freedman 1998); substitution tilings with local rules (Robinson 1971,
-Mozes 1989), as analogy. New in form: the statements for this language and the gadgets on distinct distinctions. Classification:
-known (the mathematics), with delta (its application here).
+Mozes 1989), as analogy. After the referee: everything here restates known mathematics except T1(c), the usual limit as the bottomless pattern with
+the knot added on the ports of pass-through definitions, which is the program's own (first argued in `LIMIT-ONLY-20261112-001`'s
+referee report); T1(a) and (b) are bottom-up port tables with compactness and Kleene iteration, T2 a corollary, P3a folklore, P3b
+the Böhler et al. base, P3c Freedman's (from Berger). Classification: known, except T1(c).
 
 ## Workspace assumptions
 
@@ -60,14 +67,15 @@ Substantive: the proofs and their finite checks. Administrative: the pre-registr
 
 ## Corrections
 
-One, to the pre-registration before the proof (`docs/CORRECTIONS.md`, Not a block): the usual-limit description keeps the
-pass-through calls.
+Four (`docs/CORRECTIONS.md`): one to the pre-registration before the proof (Not a block, the pass-through calls stay), and three from
+the referee: **Narrowing**, "cannot count" only from the ends; **Not a block**, T1(c)'s recurrence sentence too narrow; **Not a
+block**, only T1(c) is new.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — can nested patterns count? | **Status:** Successful (referee pending) | T1, T2, P3 proved: this language cannot count from its ends; growing interfaces can |
+| This attempt — can nested patterns count? | **Status:** Successful (refereed, confirmed with fixes) | T1, T2, P3 proved: this language cannot count from its ends; growing interfaces can |
 | Local direction — counting | Continue | Counting inside (bonds against depth) is the open half |
 | Broader exploration — G17 | Searching | Where the extra witnesses sit is in the basket |
 | Long-term goal — G1 Space from a law (with G17) | Capability gained | The interface size is what separates decidable nesting from undecidable, plane-like patterns |

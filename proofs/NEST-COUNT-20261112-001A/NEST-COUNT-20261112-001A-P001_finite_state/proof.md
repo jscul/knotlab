@@ -32,10 +32,12 @@ of the 16 complement-closed relations on three ports. A sequence of a determinis
 whose relations are Φ^t(TOP); by compactness the bottomless pattern lives iff every Φ^t(TOP)'s main relation is non-empty. Φ is
 monotone (a larger relation for a callee allows more), so Φ^t(TOP) decreases, and in the product of s lattices of height 4 it
 strictly decreases at most 4s times before reaching the greatest fixed point (Kleene iteration on a finite lattice). (c) A knot of
-the bottomless pattern (a K call in a copy at level j) is present at every depth past j + 1. A bottom knot at depth t lies on the
+the bottomless pattern (a K call in a copy at level j) is present at every depth from j + 1 on. A bottom knot at depth t lies on the
 arguments of a SELF call made from a copy at level t − 1; at depth t + 1 the same three distinctions carry a bottom knot only through a
-SELF call of the new copy on those arguments, which are the new copy's ports (its own distinctions are fresh), that is a pass-through
-call; any other knot on them at depth t + 1 is a K call on them, already a knot of the bottomless pattern. So a knot not in the
+SELF call on exactly those three distinctions made inside some copy whose own distinctions are fresh, so they are that copy's ports:
+whether it is the new copy itself, a copy reached from it through a call to another definition on the same three ports, or a second
+copy on the same triple, the call is a pass-through call of its own definition. *(Wording widened after the referee.)* Any other knot
+on them at depth t + 1 is a K call on them, already a knot of the bottomless pattern. So a knot not in the
 bottomless pattern is present at all depths from some depth on exactly when it lies on the ports of a copy of a definition with a
 pass-through call (then each later depth carries it, down the chain of pass-through copies), and present at only finitely many
 otherwise. Adding the knot on the ports of each such definition adds exactly these knots; the pass-through calls stay, since their

@@ -1,0 +1,40 @@
+[claude-code:unrecognized_model] {"model":"claude-fable-5-2","query_source":"sdk"}
+**Verdict: the proof is correct and complete.** I checked it by hand only; I ran nothing and did no literature search.
+
+## (i) The proof
+
+- **Step (1):** correct. With all |Z(q)| ≥ 2, Hall's condition can only fail on the full union, and that failure is exactly the copy w that violates e internally.
+- **Step (2):** correct. Singletons ≥ 1 (Z(p) is nonempty because p is non-constant on the triple), any two sets include Z(b) or Z(c) so ≥ 2, and all three = 3 or else a copy violates e internally.
+- **Conclusion:** u is defined only off p and meets the definition of spare exactly. Connectivity then spreads the equality.
+- **Edge cases:** a p in no knot of B is spare, and the proof handles that consistently. Satisfiability of B is not used.
+
+Two wording points, neither a gap in the claim:
+
+1. **The converse is overstated as phrased.** "Every (v, p) can be flipped freely" is false for arbitrary states. What holds: put u on every copy, and then every choice of the values (v, p) gives a state, for any P. That family is enough for "tied to nothing", because (v, p) varies while every (w, q) with q ≠ p is fixed and the (w, p) are independent.
+2. **σ(P) is always satisfiable, whatever P is.** Every diagonal state (all copies equal to one B-state s) satisfies all between-copy knots. So under this T, σ(P) never sees whether P is contradictory, and the claim is never vacuous. If anything downstream assumes σ carries P's contradiction, that fails.
+
+## (ii) Is it known?
+
+I know of no reference for this exact statement. The ingredients are standard:
+
+- **Majority of three solutions:** the proof shows that majority, applied to a template triple off p, lands in the 2-colourings of B with p removed from its knots. This is a polymorphism-style argument.
+- **Hall / Frobenius–König on a 3×3 0/1 array:** this is the "no constant row and no constant transversal" step.
+- **Spare:** "p spare" says the hypergraph obtained by deleting vertex p from each edge (keeping the shrunken 2-sets) is 2-colourable.
+- **σ(P) as a CSP:** σ(P) is the CSP on P with domain Sol(B) and one symmetric ternary relation R containing the diagonal. "Rigid" means R is equality.
+
+I would expect it to count as folklore-level in the CSP gadget literature. Treat novelty as unverified.
+
+## (iii) The corollaries
+
+All three hold for connected P with a knot.
+
+- **Rigid iff no distinction is spare:** correct. If nothing is spare, the theorem gives s_x = s_y = s_z. If p is spare, (u, p=0), (u, p=1), (u, p=0) is a non-constant triple, and both are B-states.
+- **Every pin is an equality:** correct, reading "pin" as a forced tie between (v, p) and (w, p). The dichotomy is equal (not spare) or independent (spare), so opposition never occurs. If "pin" means something else in your text, recheck against that definition.
+- **The tie formula:** correct. I checked the four cases:
+  - **v = w:** diagonal states show the projection onto one copy is all of Sol(B), so ties inside a copy are exactly B's ties.
+  - **v ≠ w, p = q:** this is the theorem plus the converse.
+  - **v ≠ w, p ≠ q tied in B:** if p is not spare, chain through (w, p). The spare case is vacuous, because a spare p is tied to nothing in B (u extends with both values of p while q stays fixed). This also makes the formula symmetric in p and q, which is worth stating explicitly.
+  - **v ≠ w, p and q not tied in B:** diagonal states on s with s(p) = s(q) and s' with s'(p) ≠ s'(q) break both equality and opposition.
+
+Scope: for disconnected P, add "v and w in the same component" to the formula, since components are independent. Variables of P in no knot are not covered at all, because σ as defined puts B's knots on every copy.
+exit 0

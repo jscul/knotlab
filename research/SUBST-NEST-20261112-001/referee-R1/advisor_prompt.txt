@@ -1,0 +1,30 @@
+Please check a short proof, as a skeptical colleague. Be concise; say plainly if any step is wrong or has a gap.
+
+Setting. Boolean variables; a "knot" on three variables means NAE (not all equal). A block B is a satisfiable set of knots on
+variables 1..m (B's states = its satisfying assignments). Distinction substitution with T = "B's knots in every order": given a
+pattern P (a set of knots on variables of P), sigma(P) has variables (v, p) for v in P, p in 1..m; inside each copy v, B's knots on
+(v, .); and for each knot (x, y, z) of P (x, y, z distinct) and each knot {a, b, c} of B and each bijection of {a, b, c} onto the
+three copies, the knot NAE((x, a'), (y, b'), (z, c')) where (a', b', c') is that ordering of a, b, c.
+Call p "spare" if there is an assignment u of B's other variables such that every knot of B has both values among its members
+other than p (knots not containing p are non-constant under u; for knots containing p, the other two members differ).
+
+Claim. If P is connected (its knots connect all its variables) and has a knot, then for every p that is not spare,
+(v, p) = (w, p) in every state of sigma(P), for all v, w. (Together with the easy converse: if p is spare, every (v, p) can be
+flipped freely, so it is tied to nothing.)
+
+Proof. A state gives each copy v a B-state s_v. Fix a P-knot (x, y, z) and suppose s_x(p), s_y(p), s_z(p) are not all equal. For
+q != p let u(q) be the majority of s_x(q), s_y(q), s_z(q). We show u witnesses that p is spare, a contradiction.
+(1) A B-knot e = {a, b, c} without p: suppose u is constant beta on e. Let Z(q) be the set of copies (among x, y, z) where q has value
+beta; |Z(q)| >= 2 for q in e. If some copy w is in no Z(q), then s_w is not-beta on all of e, violating e inside copy w. Otherwise the
+union is all three copies, and with |Z(q)| >= 2 Hall's condition holds, so there is a bijection e -> {x, y, z} with each member
+equal to beta in its copy: a between-copy knot that is constant, violated.
+(2) A B-knot e = {p, b, c}: suppose u(b) = u(c) = beta. Then |Z(b)|, |Z(c)| >= 2 and Z(p) is nonempty because p takes both values
+across the three copies. If the union of Z(p), Z(b), Z(c) misses a copy w, s_w is not-beta on p, b, c, violating e in copy w;
+otherwise Hall's condition holds (singletons >= 1, any two >= 2, all three = 3) and some between-copy knot is constant beta.
+So u(b) != u(c). Hence under u every knot of B has both values among its members other than p: p is spare. Contradiction. So
+s_x(p) = s_y(p) = s_z(p) for every P-knot, and by connectivity for all copies.
+
+Questions: (i) is the proof correct and complete? (ii) is this known (e.g., as a polymorphism/majority argument for the
+"template" relation, or in hypergraph product colouring literature)? (iii) any corollary you think is wrong: "the template is
+rigid (only constant triples) iff no distinction is spare"; "every pin is an equality, so pins never vary from copy to copy under
+this T"; "the tie relation of sigma(P) is exactly: (v,p) ~ (w,q) iff (p = q or p, q tied in B) and (v = w or p not spare)".

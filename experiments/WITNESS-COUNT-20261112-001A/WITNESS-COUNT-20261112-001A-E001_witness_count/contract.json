@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WITNESS-COUNT-20261112-001A-E001",
+ "ticket": "WITNESS-COUNT-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "The least number of all-equal calls per dead depth in living states of the usual limit, against the proved copy bounds; simultaneity; nesting.",
+ "definitions": {"families": "LIMIT-STATE's genuine families", "w": "least witnesses at depth t, SAT + incremental totalizer", "A, B": "disjoint dead copies; each weighted by its own least count (one-definition families)"},
+ "public_inputs": {"code": "census.py (sha256 49f5c6359189a8f9d2278c842d12acf8aa42fe2e264ecc734feef3a18e4e8675) beside this file; LIMIT-STATE census.py; SHORT-DESC dlang.py; pysat; numpy.", "run": "census.py --run W 16 for W in 0-15, then --summary, from the repository root; output artifacts/WITNESS-COUNT-20261112-001A/WITNESS-COUNT-20261112-001A-E001_witness_count/."},
+ "forbidden_inputs": ["Changing families, bounds, queries, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Share of one-definition families with w = B at T+1 and T+2; share with a jointly least state.",
+ "cheapest_meaningful_control": "The proved bounds A and B (a state below them is a gate failure).",
+ "validation_gate": "No bound violation.",
+ "predictions": {"P1": "w = B at T+1, T+2 in >= 90% of one-definition families", "P2": "joint least state in >= 90% of families read"},
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About ten minutes on 16 workers."
+}

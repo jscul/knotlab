@@ -6239,8 +6239,8 @@ So holes come in two kinds:
    - **What it suggests.** The law's own dimension may be set by how many shifts it leaves without length: none in a cone with two,
      a distance across that grows with one ([decision note](../research/FAR-BOUND-20261112-001/far_bound.md)).
 
-   **2026-11-12: one unlengthened shift against two** (`SHIFT-COUNT-20261112-001`; referee pending).
-   - **Two is the rule (computed, frozen).** 146 of the 169 travelling bases have two certified unlengthened shifts.
+   **2026-11-12: one unlengthened shift against two** (`SHIFT-COUNT-20261112-001`; refereed).
+   - **Two is the rule (computed, frozen).** 147 of the 169 travelling bases have two certified unlengthened shifts.
    - **Growth sits where no cone reaches.** Of the three bases that grow across near the origin, one has a second shift, but its cone
      lies on the other side; the slow creep on others stops at 6 between 23 and 27 across.
    - **Not a slope.** The patterns base 16 cannot certify with repeats are carried by no lattice up to 24 × 24, only by states that

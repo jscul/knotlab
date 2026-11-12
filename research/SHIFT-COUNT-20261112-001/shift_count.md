@@ -2,8 +2,7 @@
 
 Epic `SHIFT-COUNT-20261112-001` (`FAR-BOUND-20261112-001` direction 1; G1 with G17, question 9; program topology, group spacing),
 2026-11-12, at the coordinator's go-ahead. Ticket C frozen in commit e78a582f9 (the harmony thread's design), tickets A and B in
-0141e4230 after the advisor's critique; every run came after its freeze. The canonical K1–K3 test is unchanged. **Referee pending**
-(handed to the referee thread).
+0141e4230 after the advisor's critique; every run came after its freeze. The canonical K1–K3 test is unchanged. Refereed: confirmed with fixes (Review).
 
 ## Words
 
@@ -26,15 +25,15 @@ direction; and which period lattices carry the non-periodic patterns.
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **Two unlengthened shifts are the rule.** 146 of the 169 travelling bases (86%) have two independent certified travelling directions (A1: at least 140, held); only 1 base has a forced second direction without a certificate (A2 held); base 16 has exactly one (control). | computed, frozen | A |
+| 1 | **Two unlengthened shifts are the rule.** 146 of the 169 travelling bases (86%) have two independent certified travelling directions in this census (A1: at least 140, held), and the referee certified one more (137/4, by a certificate repeating both ways outside a finite box, which this census's strips lacked), so 147 of 169; only 1 base had a forced second direction without a certificate here (A2 held; its limit was the certificate family); base 16 has exactly one (control). | computed, frozen; refereed | A |
 | 2 | **Growing across does not exclude a second shift.** Of the three bases that grow across near the origin, two have one certified direction, but one (sample 97 at r = 3, base 16's profile 4, 4, 5, 5, 6, 6 upward) has a second, whose cone lies on the other side (where its one-cross-section bonds were absent). A3 failed: what goes with growth is a side of the base no unlengthened cone covers, not the count of shifts. | computed, frozen (A3 failed) | A |
-| 3 | **The creep stops at 6, so far.** On the four decided creeping bases the least certified bond at 27 across equals the one at 23 (6 on all four): no further rise (B3's "+1 on at least two" failed; the plateau is within the size cap). | computed, frozen (B3 failed) | B |
+| 3 | **The certified upper bound stops rising at 6, so far.** On the four decided creeping bases the least certified bond at 27 across equals the one at 23 (6 on all four; 17/4 and 17/5 are one law), an upper bound over one step with no lower bound; 109/3's window value at 27 is 5 (B3's "+1 on at least two" failed). | computed, frozen (B3 failed); refereed | B |
 | 4 | **The far bonds are neither relays nor clean pairs of clusters.** No least far bond is a relay (B1 failed for the creeping bases: 0 of 4 decided); three of five bounded bases have two clusters (B1 held for them); a translated far cluster gives a bond at three offsets on 1 of the 4 two-cluster bases (B2 failed). | computed, frozen | B |
-| 5 | **The tiling reading of the uncertified patterns is refuted on 13 of 21.** Of 21 patterns no doubly periodic state up to period 8 carries (base 16's two, and one on each of 19 unresolved bases; 10 more had none), no lattice up to 24 × 24, sheared included, carries 9 (base 16's two among them), and every lattice past a threshold carries 4 (a size effect). On 8 it survives the three criteria, but weakly: the divisibility fits cover 1 to 50% of the lattices they predict, and the line counts are equal on parallel lines in every state, which on sheared lattices with one line per direction is automatic. | computed, frozen (the harmony thread's test) | C |
+| 5 | **The tiling reading of the uncertified patterns is refuted on 13 of 21.** Of 21 patterns no doubly periodic state up to period 8 carries (base 16's two, and one on each of 19 unresolved bases; 10 more had none), no lattice up to 24 × 24, sheared included, carries 9 (base 16's two among them), and every lattice past a threshold carries 4 (a size effect). On 8 it survives the three criteria, but weakly: the divisibility fits cover 1 to 50% of the lattices they predict, and the line-count criterion is weak: equality on parallel lines is automatic with one line per direction and follows from any translation symmetry of a state up to the flip, so the 8 are weak survivals of a weak criterion. "C empty" does not exclude a slope that fits no repeat up to 24. | computed, frozen (the harmony thread's test); refereed | C |
 
 ## Answer
 
-Two unlengthened shifts are the rule (86% certified), so on most travelling bases the law reads no length in two directions. On the
+Two unlengthened shifts are the rule (147 of 169 certified, 87%), so on most travelling bases the law reads no length in two directions. On the
 few with one, growth across is not simply set by the count: one growing base has a second shift on its other side, and the creeping
 bases plateau at 6 between 23 and 27 across. Base 16's patterns that no doubly periodic state carries are carried by no lattice up to
 24 × 24 either: they need states that repeat along no step, not a slope that fits some lattice.
@@ -63,7 +62,11 @@ Ticket A's family strictly contains the referee's (which found 130); B3 is one s
 
 ## Review
 
-Referee pending: handed to the referee thread on 2026-11-12.
+The background referee thread (report `research/SHIFT-COUNT-20261112-001/referee-R1/report.md`, 1d96f7082) confirmed the epic with
+fixes, all Not a block: sample 97/3's two directions confirmed independently ((1, 0) by 00 on {(0,0),(1,1)}, (−1, −1) by 011 on
+{(0,0),(0,1),(1,1)}; a search covering one sense per shift misses the second, since forcing along t does not give forcing along −t);
+all 146 certified two-direction bases confirmed, and a 147th (137/4) certified with a certificate repeating both ways; the plateau at
+27 across read as certified upper bounds, with 109/3's window value 5; and the line-count criterion of ticket C weaker than stated.
 
 ## Literature and provenance
 
@@ -87,13 +90,14 @@ the relay/two-cluster discriminator.
 
 ## Corrections
 
-None. Two frozen predictions failed (A3, and parts of B1, B2, B3) and are reported as such.
+One entry in `docs/CORRECTIONS.md` (Not a block): the referee's fixes (147 of 169 with 137/4 certified; the plateau as upper bounds;
+the line-count criterion's weakness). Two frozen predictions failed (A3, and parts of B1, B2, B3) and are reported as such.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — one shift against two | **Status:** Successful in part, referee pending | Two shifts are the rule; growth sits where cones do not reach; the creep plateaus so far |
+| This attempt — one shift against two | **Status:** Successful in part, refereed | Two shifts are the rule; growth sits where cones do not reach; the creep plateaus so far |
 | Local direction — the uncovered sides | Continue | Where no cone of travel reaches, what is the law's distance, and how does it grow? |
 | Broader exploration — G1 with G17 | Pivot available | Other weightings (bigger boxes, three shifts) to see whether two-way folding stays the rule |
 | Long-term goal — G1 Space from a law (question 9) | Capability gained | The law's dimension follows the cones of its unlengthened shifts, under this weighting |

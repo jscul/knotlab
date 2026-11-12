@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: one shift against two, confirmed with fixes by its referee
+
+- `SHIFT-COUNT-20261112-001`: 147 of 169 travelling bases have two certified unlengthened shifts (one more than reported, certified by a
+  state repeating both ways outside a finite box); the plateau at 6 between 23 and 27 across is of certified upper bounds, with no
+  lower bound; the repeat-size test's line-count criterion was weak, so its 8 survivors are weak
+  ([decision note](research/SHIFT-COUNT-20261112-001/shift_count.md)).
+- Unchanged: two-way folding as the rule under that weighting, the growing base with a second shift on its other side, and the
+  refutation of the tiling reading for base 16's patterns.
+
 ## 12 November 2026: bounded at every distance, narrowed by its referee
 
 - Far away on one-direction bases (`FAR-BOUND-20261112-001`), the "creep" from 4 to 6 by 23 across is a rise of certified upper

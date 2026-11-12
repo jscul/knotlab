@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: the steering report's wording, corrected by its referee
+
+- The steering epic (`STEER-LEARN-20261112-001`) found that no steering rule lets the learner's examples speed its search. Its referee
+  confirmed every result and fixed two sentences. The fast swap target was put down to the walk's preference among the laws it can rest at;
+  the fixed start, where every run begins, is an equal candidate, and both are now named. "Every check was charged" now reads every
+  candidate check, since one rule's reweighting was uncharged as frozen
+  ([decision note](research/STEER-LEARN-20261112-001/steer_learn.md)).
+- Unchanged: every result, number and mark.
+
 ## 11 November 2026: three theory cards said knots build spaces that were drawn or given
 
 - [THEORY.md](THEORY.md)'s cards for the not-all-equal knot's contradictions

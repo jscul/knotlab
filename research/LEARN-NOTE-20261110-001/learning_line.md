@@ -65,7 +65,7 @@ then held: in none of 91 learned cases did the learner find its target faster th
 
 **Where to start again** (the basket, best first): let the examples shape the dissonance the learner feels, a clamped phase (sub-goal
 B168, 3/3 and 2/3, selected, awaiting a go-ahead); why the walk prefers some laws (B169); three steering rules at the probe failed
-(`STEER-LEARN-20261112-001`, referee pending; learners in `proofs/STEER-LEARN-20261112-001A/.../steer_lib.py`); rest at symmetric laws (B166); no
+(`STEER-LEARN-20261112-001`, refereed; learners in `proofs/STEER-LEARN-20261112-001A/.../steer_lib.py`); rest at symmetric laws (B166); no
 rest set by sequence length serves every base (`WHICH-SEQUENCES-20261112-001`, census in `proofs/WHICH-SEQUENCES-20261112-001A/.../census_lib.py`);
 the audit is `proofs/SEARCH-AUDIT-20261112-001A/.../audit.py`;
 rigidity from longer sequences (B162); the graded engine is `proofs/NATIVE-GRADE-20261112-001A/.../grade_lib.py`, the native rest-set one

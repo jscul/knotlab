@@ -1824,14 +1824,14 @@ So holes come in two kinds:
    - **Next (taken by `STEER-LEARN-20261112-001`, below).** A learner whose examples steer it (sub-goal B165)
      ([decision note](../research/WHICH-SEQUENCES-20261112-001/which_sequences.md)).
 
-   **2026-11-12: tips at the end of each test do not teach it either** (`STEER-LEARN-20261112-001`, referee pending).
+   **2026-11-12: tips at the end of each test do not teach it either** (`STEER-LEARN-20261112-001`, refereed).
    - **The question.** Sub-goal B165: after each failed test the learner knows which of its knots broke and where. If it uses that to choose
      which rule to rewrite, as the classic search tricks do, does it find the counting rule faster than drawing rules at random?
    - **Computed.** No, for three such tricks: none was faster than random draws among the rules it may settle on, and each tip it checked
      against what it remembered cost more than it saved. Even counting only its tests of the world, none beat the learner that ignores the
      tips.
    - **A bias it brings along.** Every version, the one that ignores the tips included, found one other rule faster than chance and the
-     counting rule slower: its own wandering leans toward some rules and away from others.
+     counting rule slower: its own wandering, or the place every run starts from, leans toward some rules and away from others.
    - **Reading.** Tips read off at the end of a test come too late or say too little. The next try lets each example act on the learner's
      tension while it wanders, as energy-based learners in the literature are taught.
    - **Next.** Examples felt during the walk (sub-goal B168), awaiting a go-ahead

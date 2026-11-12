@@ -1,6 +1,6 @@
 # Steering rules against blind search
 
-Status: Proved (blind baselines exact; runs computed, frozen). Referee pending. `check.py`, ticket A of
+Status: Proved (blind baselines exact; runs computed, frozen). Refereed: Confirmed (`referee-R1/report.md`). `check.py`, ticket A of
 `research/STEER-LEARN-20261112-001/preregistration.md`, frozen with the code in commit `a2cd50751` before any frozen run. The 1,600 runs are
 in `runs.jsonl` (2 hours 47 minutes on 20 processes); `result_summary.json` settles the marks.
 
@@ -29,7 +29,8 @@ Counting world probes only, M and A are no faster than B: on F the count's media
 
 **No rule shows steering in either setting.** No rule passes on the count. The one pass is the unchanged learner B on g in F, and every rule
 finds g there in about 5.5 to 6 world probes: the learner's own walk reaches g's law faster than blind draws whatever its rule, and reaches
-the count's law more slowly. That is a bias of the walk, not of the examples, since B uses none.
+the count's law more slowly. That is a bias of the walk, not of the examples, since B uses none; whether it comes from the dynamics' preference or from the fixed
+start (every run begins at the same law) is not separated (referee).
 
 ## What it says
 

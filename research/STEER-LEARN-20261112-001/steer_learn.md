@@ -2,7 +2,8 @@
 
 Epic `STEER-LEARN-20261112-001` (sub-goal B165, G15 with G16; program learning), 2026-11-12, at the coordinator's go-ahead.
 Pre-registered in [preregistration.md](preregistration.md), frozen in commit `a2cd50751` before any frozen run; the rules and the test were
-drafted with the advisor model. Proof family: `proofs/STEER-LEARN-20261112-001A/`. **Referee pending** (handed to the referee thread).
+drafted with the advisor model. Proof family: `proofs/STEER-LEARN-20261112-001A/`. **Refereed: Confirmed** with two wording fixes, both Not a block, made below
+([referee report](../../proofs/STEER-LEARN-20261112-001A/STEER-LEARN-20261112-001A-P001_steering_rules/referee-R1/report.md), commit `b017137a9`).
 
 ## The answer
 
@@ -17,8 +18,12 @@ charging its checks of stored states.**
 - **With 64 laws at rest:** blind median 22; every learner fails to find the count within its budget in half or more of its runs.
 - **The swap target shows a bias, not steering.** On one copy every learner, including the unchanged one, finds the swap target g in about 6
   world probes, against a blind median of 11. The unchanged learner uses no examples to steer, so the learner's own walk favours g's law and
-  disfavours the count's: a preference of the dynamics among the laws it can rest at.
-- **Every check was charged,** as the coordinator asked: candidate laws checked against stored states count as probes. Two-sided acceptance
+  disfavours the count's. Two causes are not separated: a preference of the dynamics among the laws it can rest at, and the fixed start
+  (every run begins at the same law, and stops come within a few probes). The referee measured it: in the swap runs the walk met the
+  count's laws in 15% to 19% of runs on one copy, where blind draws over as many probes would in 47% to 50%; with 64 laws at rest, 13% to
+  26% against 71% to 82%.
+- **Every candidate check was charged** (make and break, and two-sided acceptance), as the coordinator asked: candidate laws checked
+  against stored states count as probes. Persistence targeting reweights its proposals with stored states uncharged, as frozen. Two-sided acceptance
   checked over a thousand candidates per run; even counting world probes alone, no rule beats the unchanged learner.
 
 ## What is known, and what is proved and computed
@@ -60,7 +65,7 @@ tips cost more than they saved. What the learner finds quickly is what its own w
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: a learner whose examples steer (B165) | **Status:** Failed (referee pending) | no rule beats blind search on the count; the only fast target is one the walk itself favours |
+| This attempt: a learner whose examples steer (B165) | **Status:** Failed (refereed, Confirmed) | no rule beats blind search on the count; the only fast target is one the walk itself favours |
 | Local direction: steering at the probe (break counts, weighting, contrastive acceptance) | Retire | slower than blind search with checks charged, no faster than the unchanged learner without |
 | Broader exploration: learning program | Known alternatives | examples felt during the walk (B168), the walk's preferences (B169), symmetric laws (B166), two histories (B159) |
 | Long-term goal: G15 Learning: a point in a learned knot pattern | Obstruction learned | learning from examples still not shown; the dynamics' own bias decides what comes fast |
@@ -86,3 +91,12 @@ tips cost more than they saved. What the learner finds quickly is what its own w
 ## Final report as sent
 
 Posted in the thread on 2026-11-12 (09:21 UTC). Its findings, word for word in substance: none of three steering rules (WalkSAT-style break counts, clause weighting, two-sided contrastive acceptance) finds the count faster than blind search over the laws at rest, every check charged (blind median 6; learners 19 to 1,760); counting world probes alone none beat the unchanged learner; with 64 laws at rest most runs did not find the count; every learner found the swap target faster than chance (about 6 against 11), a bias of the walk; the rules are known heuristics, that none steers this learner is new as far as found; the pipe fix in track.py and directions.py (0d64f88ad); referee handed to the referee thread, the next step not depending on it; the two tables as above; Corrections: none; Goals: G15 checkpoint, sub-goal B165 taken, sub-goal B168 and backlog B169 added; Assumptions: none; Basket: B168 (selected), B169, B166, B159, B162, B157, B154, B155, B156, B150, B151, B130. Holding for a go-ahead on B168.
+
+## Referee (2026-11-12)
+
+Confirmed by the referee thread with independent code (`referee-R1/`): claim 1 rebuilt from the frozen maps at rest; claim 2 from its own
+tallies of all 1,600 runs (407 runs with 64 laws at rest dropped at the cap, counted as never), every median, share and mark matching; "no
+rule steers" holds on world probes alone. Two wording fixes, both Not a block, made above and logged in `docs/CORRECTIONS.md`: the fixed start
+named beside the walk's preference as a cause of the swap target's speed, with the referee's count-met numbers; "every check was charged"
+narrowed to every candidate check. The referee's note for what follows: test the walk's bias from the fixed start and from random starts,
+and use random starts in B168, so that start proximity cannot pass for steering.

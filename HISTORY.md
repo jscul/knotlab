@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: the count of missing knots, narrowed by its referee
+
+- The test of whether the law counts missing knots along growth that never ends (`MISSING-KNOTS-20261112-001`) was confirmed: every
+  base regenerates and every slope recomputes. Its rival prediction passed by 0.005 inside an interval that straddles the bound, so the
+  data do not decide it; the rival's registered gloss pointed the wrong way; within one setting the count rides on the distance, and
+  what it adds shows only across settings; and where closings are rare the within-base test cannot say anything. Such patterns are
+  one-dimensional transfer systems, for which a linearly growing least bond is expected; the counts are new
+  ([decision note](research/MISSING-KNOTS-20261112-001/missing_knots.md)).
+- Unchanged: every number and verdict.
+
 ## 12 November 2026: the whole-life census, narrowed by its referee
 
 - The census of tie classes over whole lives (`LIFE-JUMPS-20261112-001`) was confirmed: every number recomputes and every growth

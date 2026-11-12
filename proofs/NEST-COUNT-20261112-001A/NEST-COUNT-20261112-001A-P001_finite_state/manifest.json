@@ -1,0 +1,89 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "source_contribution": 0,
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "evidence_modes": [
+  "exact-proof",
+  "finite-validation"
+ ],
+ "epistemic_class": {
+  "primary": "theorem-with-finite-validation",
+  "secondary": []
+ },
+ "artifact_id": "NEST-COUNT-20261112-001A-P001",
+ "canonical_id": "NEST-COUNT-20261112-001A-P001",
+ "kind": "proof",
+ "ticket": "NEST-COUNT-20261112-001A",
+ "proof": "NEST-COUNT-20261112-001A-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Finite state, and what breaks it",
+ "status": "Proved",
+ "claim": "T1: in the A79 language the self-holding definitions' relations at depth t form a deterministic sequence in at most 16^s values, so every relation and whether the depth-t pattern lives are eventually periodic (preperiod plus period at most 16^s); the bottomless pattern lives iff the main relation is non-empty at the greatest fixed point (at most 4s strict decreases from nothing; compactness); the usual limit is the bottomless pattern with the knot added on the ports of each self-holding definition with a pass-through call. T2: the states a depth-t pattern allows on any fixed top window are a function of the relations b levels down, so a top window reads depth only modulo the period. P3a: an inequality gadget of four knots on distinct distinctions, equality by two. P3b: every complement-closed relation is NAE-definable (Boehler et al. 2005 with P3a). P3c: for translation-invariant meeting patterns on Z^2, life is undecidable (the domino problem; Berger 1966; Freedman 1998).",
+ "dependencies": [
+  "LIMIT-ONLY-20261112-001A"
+ ],
+ "failure_conditions": [
+  "A description whose relation sequence is not eventually periodic within 16^s, or whose usual limit differs from the modified bottomless pattern.",
+  "A top-window state set at depth t not determined by the relations b levels down.",
+  "A failure of the gadget, of one of the 16 three-place definitions, or of the tile encoding on a finite torus."
+ ],
+ "lineage": {
+  "home_scope": "NEST-COUNT-20261112-001",
+  "epic_path": [
+   "NEST-COUNT-20261112-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {},
+ "paths": {
+  "manifest": "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/manifest.json",
+  "identity": "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/identity.json",
+  "proof": "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/proof.md",
+  "result": "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/result.json",
+  "check": "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/check.py",
+  "directory": "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state"
+ },
+ "remaining_obligations": [],
+ "foundation_claim_scope": "Patterns of NAE knots on distinct distinctions: nested descriptions of the A79 language (T1, T2) and translation-invariant patterns on Z^2 (P3c); no source label claimed for infinite patterns.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-12; the advisor model reviewed the statements cold; referee pending (the referee thread).",
+  "status": "proof by argument; finite checks by check.py",
+  "novelty": "known in kind (Lengauer-Wanke, Courcelle, Rabin; Boehler et al.; Berger, Freedman); stated for this language"
+ }
+}

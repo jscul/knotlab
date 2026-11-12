@@ -22,7 +22,7 @@ knot; the usual limit keeps the knots present at all but finitely many depths.
   pattern lives iff the main relation is non-empty at the greatest fixed point reached from "nothing" by Kleene iteration, in at most
   4s strict decreases (compactness). The usual limit is the bottomless pattern of a modified description: in each self-holding
   definition with a SELF call on a permutation of its own ports, add the knot on its ports and delete those calls; so it is decided
-  the same way. Whether the depth-t patterns live and whether the limit lives can differ (`LIMIT-ONLY-20261112-001`).
+  the same way. *(Amended before the proof: keep those calls; see the amendment.)* Whether the depth-t patterns live and whether the limit lives can differ (`LIMIT-ONLY-20261112-001`).
 - **T2 (no counter in a top window).** For each fixed b, the states the depth-t pattern allows on the distinctions of levels below b
   are a function of X_{t−b}; so they take at most 16^s values and are eventually periodic in t. A bounded top window reads depth only
   modulo the period. Nothing is claimed about windows deep in the pattern, or about readings inside it such as least bonds.
@@ -59,3 +59,9 @@ Under the A79 weighting no description has a top-window counter beyond a period 
 ## Stop rule
 
 Proofs and check.py, one run of the checks, a hand-off to the referee thread, report.
+
+## Amendment (before the proof was written)
+
+2026-11-12. T1's usual-limit description came from the advisor's review and said to delete the pass-through calls. That is wrong:
+their copies, with fresh insides, are present at every later depth, so they stay; only the knot on the ports is added. This is how
+`LIMIT-ONLY-20261112-001`'s referee and `LIMIT-STATE-20261112-001` computed it (894 genuine families). Logged in `docs/CORRECTIONS.md`.

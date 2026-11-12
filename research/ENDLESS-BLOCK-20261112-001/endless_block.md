@@ -81,3 +81,30 @@ short loop does it.
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained, with G8; no goal change). **Assumptions:** A70 used, A75 unchanged.
 **Basket:** #1, #2 recorded. **Advisor:** consulted once before the freeze (E1, E2's corrections, the one-order frame and the
 universal-cover criterion).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 09:38 UTC, verbatim:
+
+> Done: endless blocks. Influence born of a whole loop exists. The write-up is research/ENDLESS-BLOCK-20261112-001/endless_block.md, and the referee is pending.
+>
+> • **Bound in every order, they lock completely (proved).** A harmony can't spare any position, so substituting one for every distinction puts all the copies in one shared state. With lags, the loops' net lags fold that down to the states whose period divides them. Here loop length plays no part.
+> • **Bound in one order, a loop locks (exact).** Tie the copies by the harmony's own rules taken one way round, which is the stitch reading. Then in 7 of 45 harmonies, a closed loop of knots puts every copy on it into one shared state, in step at every position. The same knots in an open line leave each copy free to drift, even unrolled nine times. So the value is decided by the loop as a whole, not passed along a chain.
+> • **Sometimes only a short loop locks.** For two harmonies, a loop of 3 knots locks and loops of 4 or 6 don't.
+> • **What's built in, plainly.** The stitch is the harmony's own rules, so the lock is a consistency condition around the loop, much like phase locking. It still only reaches the loop's own component. What isn't built in is that an open line of the same stitches stays free.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — endless blocks | **Status:** Successful, referee pending | the theorems' predictions held; loop-born locking found |
+> | Local direction — nesting | Continue | which harmonies lock, and why some only on short loops, is open |
+> | Broader exploration — G17's census | Known alternatives | random patterns' jumps; folding among random bases |
+> | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | a native case of influence born of a whole loop |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Which loops lock | 2/3 — Substantial | 2/3 — Testable | for the 7 harmonies, read how two stitched copies' offsets combine around a loop; test loops of 2 to 12 knots → a rule for which harmonies and lengths lock | Selected · awaiting go-ahead |
+> | 2 | Locking along two shifts | 2/3 — Substantial | 2/3 — Testable | classify one-order states on rings of 5 to 12 → sheared copies, walls, or something new | Alternative · deferred |
+>
+> **Corrections:** none this epic. **Goals:** G17 checkpoint (capability gained), no goal change. **Assumptions:** A75 unchanged; the one-order arm is the stitch reading. **Basket:** #1, #2 recorded. **Advisor:** consulted once before the freeze.

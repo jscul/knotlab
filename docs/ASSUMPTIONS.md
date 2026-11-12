@@ -122,7 +122,7 @@ evidence: results and their status come from the records each entry links.
 | [A65](#a65--a-held-reference-distinction-is-supplied-by-the-outside) | A held reference distinction is supplied by the outside | reading | Assumed |
 | [A66](#a66--copies-sharing-distinctions-keep-each-copys-own-drawn-faces) | Copies sharing distinctions keep each copy's own drawn faces | reading | Confirmed |
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
-| [A68](#a68--a-repair-flips-distinctions-only) | A repair flips distinctions only | reading | Assumed |
+| [A68](#a68--a-repair-flips-distinctions-only) | A repair flips distinctions only | reading | Under challenge |
 | [A69](#a69--the-value-of-the-shortest-sums-is-supplied-per-base) | The value of the shortest sums is supplied per base | reading | Under challenge |
 
 ## Entries
@@ -1785,7 +1785,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A68 · A repair flips distinctions only
 
-**Assumed** · 2026-11-12 · reading
+**Under challenge** · 2026-11-12 · reading
 
 - **Statement.** After the learner stops and the world disturbs it, the repair that brings it back to rest flips distinctions only and
   never changes a sign of the law. The learner still changes signs while it learns. This is a rule supplied by us, not a property of the
@@ -1800,6 +1800,8 @@ evidence: results and their status come from the records each entry links.
   change cost more than a flip near rest, or a learner whose signs change on a slower clock for a stated native reason; if it holds as well,
   this rule is unneeded.
 - **History.**
+  - 2026-11-12 · Under challenge by `NATIVE-GRADE-20261112-001` (sub-goal B160): a graded, value-free rule of the knots with the learner's
+    own repair free to re-sign.
   - 2026-11-12 · Used by `LAW-RIGIDITY-20261112-001`, status unchanged: with it, a native rest set let the learner learn and hold the count
     in 30 of 30 writes on the 6-distinction base no drawing fits; sub-goal B160 would challenge it
     ([what does the drawing's work](../research/LAW-RIGIDITY-20261112-001/law_rigidity.md)).

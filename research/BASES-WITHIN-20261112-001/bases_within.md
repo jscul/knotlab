@@ -39,9 +39,12 @@ as the nesting deepens?
 - **A drawn fractal nesting forces nothing (exact, to level 7).** Three copies sharing corners, again and again (the literature's
   Sierpinski gasket), lives at every level, and fixing a corner forces no other distinction, though the farthest distinction doubles
   each level, to 128 bonds at level 7. Influence stays local, at zero, at every depth: the negative the coordinator asked to report.
+  *Referee R1 (2026-11-12): "forces nothing" is computed to level 7 only (the referee found no tied pair anywhere at levels 0 to 7);
+  living at every level is proved (value each distinction by its first integer coordinate mod 2: every knot reads b, 1 − b, b).*
 - **Shifts are where the inner phases matter, and they mostly loosen (exact on 26,340 and on 60 sampled assignments per pair).** A
   shifted stitch ended a living outer base only on the tightest pattern, four distinctions with all four triples knotted, and for
-  17 of 45 harmonies; it brought the contradictory Fano plane back to life in 16,320 of the alternation's 16,384 sign patterns and in
+  17 of 45 harmonies (*the frozen sample; exhaustively, by referee R1: 37 of 45, still only on that pattern, and 8 harmonies never
+  end any living pattern of the range*); it brought the contradictory Fano plane back to life in 16,320 of the alternation's 16,384 sign patterns and in
   every sampled assignment of every other harmony.
 
 ## What is proved and what is computed
@@ -63,7 +66,7 @@ as the nesting deepens?
 | Checks of L4, L7 (seeds), L8, L9 and the control | all passed |
 | E1 (levels 2 and 3 of 45 harmonies) | **dropped**: reached its 1-hour cap (level-3 enumerations on up to 4,096 distinctions) |
 | P1, P2, P3 (the advisor's counts for 0011 and 000111; rigid only for the alternation) | not tested by the frozen run; all three hold in the follow-up after the run |
-| P4 every harmony has an ending assignment of shifts (the advisor's) | **failed**: 17 of 45 in the sample, all on one pattern |
+| P4 every harmony has an ending assignment of shifts (the advisor's) | **failed**: 17 of 45 in the sample, all on one pattern; exhaustively (referee R1) 37 of 45, so P4 fails by 8 harmonies, not 28 |
 | P5 the seeds, by L7 | held |
 | P6 the Fano seed's share falls as (3/7)^k | held (3/7, 9/49, 27/343, 81/2,401) |
 | P7 the three-copy nesting forces nothing, at every level (this epic's) | held to level 7 |
@@ -78,7 +81,22 @@ fast: for 0011 the states square at each level. The tie class of the origin was 
 All parts that ran stayed inside their caps except E1; the earlier epic's route measurement (ODD-SEARCH-A2) also reached its cap the
 same night and is recorded as dropped there.
 
-**Review.** Referee pending: the background referee thread has the hand-off (arrangement of 2026-11-12).
+**Review (referee R1, folded in 2026-11-12).** The background referee thread confirmed the epic with fixes
+([report](referee-R1/report.md)), from its own code (a C search for lagged stitches, Glucose for whole tie relations, level counts by
+backtracking). Every lemma holds; every computed number reproduces; E4 is stronger than stated (no tied pair at any level 0 to 7).
+- **What the lemmas are.** L2, L4, L5, L6 and L9 are one- or two-line consequences of the definitions and of two symmetries of
+  not-all-equal, flipping all three members and shifting a row. The headline "the level above is the level below" is L4: the mirror
+  symmetry of not-all-equal restated, true for any living inner base, harmony or not (the exactly-one control shows it needs the
+  mirror). L1 (what the outer level reads: disagreement counts), L3, L7 and L8 carry content.
+- **L4's other direction.** "Only if": every column of a state of O[I] is a state of O, because an unlagged stitch is O's knot read on
+  that column; with the mirror lift ("if") and induction, O[I] lives exactly when O does, at every level.
+- **Fixes, logged in `docs/CORRECTIONS.md` (all Not a block):** the lagged-stitch counts (exhaustive: 37 of 45 harmonies end the
+  four-point pattern under some lags, at shares of 0.03% to 5.5%; 8 never end any living pattern of the range); "at every depth" for
+  the three-copy nesting (computed to level 7; living at every level proved); and the owner report's "(proved)" on 0011's counts,
+  which are the descriptive follow-up's.
+- **Fano revival, exhaustively (harmonies of period at most 8; 10 and 12 running at the referee).** Every lagged stitch keeps the Fano
+  plane dead in a small share of assignments: 1 class in 256 for the alternation (its unsigned switching class), 0.07% or less for
+  the others, never none (the unlagged class stays dead). "Almost always", never always.
 
 ## What it changes
 

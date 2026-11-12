@@ -3161,7 +3161,8 @@ So holes come in two kinds:
    - **The law above is the law below (proved).** Every outer state lifts (the advisor's mirror lift: each inner series is one
      state or its mirror), so the nested base allows exactly the outer states, lives exactly when the outer base does, and keeps
      doing so at every level. The only series that is one yes-or-no exactly is the alternation 0101…; every other carries a hidden
-     phase that multiplies the states (0011: 4, 16, 256 at levels 1 to 3), never a new constraint.
+     phase that multiplies the states (0011: 4, 16, 256 at levels 1 to 3, computed), never a new constraint. *Referee R1: this is the
+     mirror symmetry of not-all-equal restated, true for any living inner base.*
    - **Nesting spreads no influence (proved; exact to level 7).** Forced values only multiply the seed's, so a seed that forces
      nothing forces nothing at any depth; a drawn fractal of three copies sharing corners forces nothing to level 7 while its far
      end doubles each level. A seed that forces (the Fano plane less a knot) reaches every depth, in a share that falls as (3/7)^k.

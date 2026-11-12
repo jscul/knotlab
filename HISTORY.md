@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: what the law reads on travelling bases, narrowed by its recheck and referee
+
+- Random periodic bases with a travelling pattern (`TRAVEL-READ-20261112-001`): "the law usually reads zero dimensions" holds at
+  window level and on the bases with two unlengthened shifts (at least 130 of 169, counting a second direction a wider search found),
+  not on certified bonds across: of the 66 with one direction found, 34 are bounded across within six across-counts on certified bonds
+  (56 at window level), half of them with a second fold; 3 grow across as base 16 does. Rank 1 was relative to the shifts searched
+  ([decision note](research/TRAVEL-READ-20261112-001/travel_read.md)).
+- Unchanged: every window-level number, base 16's line being rare, and most travelling bases having two unlengthened shifts.
+
 ## 12 November 2026: how common global influence is, confirmed with fixes by its referee
 
 - Random periodic bases (`COMMON-FOLD-20261112-001`): the referee rebuilt the census with its own code and agreed in all 1,600

@@ -2,8 +2,7 @@
 
 Epic `TRAVEL-READ-20261112-001` (`COMMON-FOLD-20261112-001` direction 1; G1 with G17, question 9; program topology, group spacing),
 2026-11-12, at the coordinator's go-ahead. Pre-registered in commit b0c33480e after the advisor model's critique of the design, with a
-pilot on unregistered bases disclosed; the census ran after. The canonical K1–K3 test is unchanged. **Referee pending** (handed to
-the referee thread).
+pilot on unregistered bases disclosed; the census ran after. The canonical K1–K3 test is unchanged. Refereed: confirmed with fixes, headline narrowed (Review).
 
 ## Words
 
@@ -27,10 +26,10 @@ vertex, against the transverse offset.
 
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
-| 1 | **Most travelling bases have two independent unlengthened shifts.** At r = 4 and 5, 70 of 108 (65%, Wilson 55–73%) travel along two independent directions, 65 of them by one common pattern (so bond distance is bounded on a whole cone and its mirror); 35 of the 169 travel along all ten shifts tried. Base 16 has one. | computed, frozen (T1 held) | A |
-| 2 | **Most of the rest read no growth across either.** Of the 66 bases with one direction found, 56 (85%, Wilson 74–92%) are bounded across: the least window bond to a distinction 10 along and up to 6 across stays within one of its value at 2 across, mostly 4 (bond distance 3) at every across-count. Two (3%) grow across as base 16 does: one with base 16's profile (4, 4, 5, 5, 6, 6 upward, nothing beyond 2 downward in one cross-section), one growing the other way (4 to 6 downward) and bounded at 4 upward. Eight are undecided: six have bonds of 4 or 5 only at some across-counts or only through two cross-sections, two have none in the families searched. | computed, frozen (T2 held) | A |
+| 1 | **Most travelling bases have two independent unlengthened shifts.** At r = 4 and 5, 70 of 108 (65%, Wilson 55–73%) travel along two independent directions, 65 of them by one common pattern (so bond distance is bounded on a whole cone and its mirror); 35 of the 169 travel along all ten shifts tried. Base 16 has one. Rank 1 is relative to the searched family: the referee's wider search found a second certified direction on 27 of the 66 rank-1 bases (shifts of length 3 or 4), so at least 130 of the 169 travel along two certified directions and T1 is a lower bound. | computed, frozen (T1 held, a lower bound); refereed | A |
+| 2 | **About half of the rest are bounded across on certified bonds.** Of the 66 bases with one direction found, 56 (85%) are bounded across at window level: the least window bond to a distinction 10 along and up to 6 across stays within one of its value at 2 across, mostly 4 (bond distance 3). On certified bonds the share is 34 of 66 (52%) with FAR-BOUND's eventually periodic certificates, 22 with doubly periodic ones alone, and half of the 34 (17) come with a second fold found by the referee's wider search; the 17 with no second direction found are the clean cases. Three grow across on certified bonds (base 16's profile, 4, 4, 5, 5, 6, 6, on one; the others growing the other way), none with a second direction. | computed, frozen (T2 held at window level; narrowed on certified bonds); refereed | A |
 | 3 | **Depth along does not matter.** The least window bond at 14 along equals that at 10 along in 99 of 104 cases. | computed, frozen (T3 held) | A |
-| 4 | **Bases with two directions read no length around the origin.** On 77 of 103 (75%, Wilson 66–82%), at least 80% of the targets on the ring of radius 6 are reached by a window bond of at most five from the 3 × 3 cells around the origin, none larger than on the ring of radius 3 (median 4 on both rings). | computed, frozen, exploratory (T4 held) | A |
+| 4 | **Bases with two directions read no length around the origin.** On 77 of 103 (75%, Wilson 66–82%), at least 80% of the targets on the ring of radius 6 are reached by a window bond of at most five from the 3 × 3 cells around the origin, none larger than on the ring of radius 3 (median 4 on both rings). | computed, frozen, exploratory, at window level (T4 held) | A |
 | 5 | **Certification.** 296 of the 650 window bonds found in one cross-section are certified by doubly periodic states; the rest are bonds up to the window. On base 16 the uncertified ones are exactly those the theorem proves, because doubly periodic states cannot carry two of the sixteen patterns of a heddle part. | computed | A |
 
 **Rank and class by number of kinds** (bases with a certified travelling pattern):
@@ -44,12 +43,13 @@ vertex, against the transverse offset.
 
 ## Answer
 
-No: base 16's reading is rare. On the typical travelling base the law reads zero dimensions in the measured range: a few
-distinctions at the origin decide distinctions far along and at every across-count measured, at bond distance about 3, and two thirds
-of the bases do so along two independent shifts. Only 2 of the 169 travelling bases grow across like base 16 (the rank-2 bases were read on rings: 26 of 103 have
-unreached or larger targets on the ring of radius 6, none a profile like base 16's), so under this weighting the law's one-dimensional
-reading of base 16 is about a one-in-eighty case among bases that travel at all. The measured range is across-counts to 6,
-along-counts to 14 and rings to radius 6; within it, most bases show no growth.
+Base 16's reading is rare, and what the others read is mostly the work of a second unlengthened shift. At least 130 of the 169
+travelling bases travel along two independent certified directions, so bond distance is bounded along both (and, for those sharing
+one pattern, on a whole cone and its mirror). Of the bases with one direction found in the census's family, about half (34 of 66) are
+bounded across within six across-counts on certified bonds, half of those with a second fold found in a wider search; 3 grow across
+as base 16 does. At window level the bounded share was 56 of 66, so "the law usually reads zero dimensions" holds at window level and
+on the bases with two directions, not on certified bonds across. The measured range is across-counts to 6, along-counts to 14 and
+rings to radius 6.
 
 ## Reading
 
@@ -61,9 +61,9 @@ along-counts to 14 and rings to radius 6; within it, most bases show no growth.
 - **Base 16 is the exception that shows a line.** It reads one dimension because its knots pass values on only through two partners
   (one more and two fewer across), so what travels must climb across one step in two. Random families of kinds typically give values
   more ways to be passed on, and the climb costs nothing.
-- **For question 9.** A space the law makes is a shape of its own reading, and here it is usually degenerate (zero dimensions);
-  lower-dimensional geometry like base 16's line exists but is rare under this weighting. Whether bounded stays bounded beyond the
-  measured range, or grows slowly, is the next question.
+- **For question 9.** A space the law makes is a shape of its own reading. Here it is degenerate wherever two shifts are
+  unlengthened, which is most travelling bases; lower-dimensional geometry like base 16's line exists but is rare under this
+  weighting. The clean comparison is the 17 bases bounded across with no second direction found against the 3 that grow and base 16.
 
 ## Lag cutoffs and census-only claims
 
@@ -77,7 +77,18 @@ One size past the range (across-counts beyond 6, rings beyond 6) is the first st
 
 ## Review
 
-Referee pending: handed to the referee thread on 2026-11-12.
+The background referee thread (report `research/TRAVEL-READ-20261112-001/referee-R1/report.md`, its own code built on its COMMON-FOLD
+referee code, importing neither census) confirmed the census with fixes and narrowed the headline:
+- **Reproduced:** T1 (70 of 108 at r = 4, 5; 65 by a common pattern; 103 of 169 rank 2 overall; 35 along all ten shifts) and T2 at
+  window level (56 / 2 / 8), with the frozen thresholds word for word; FAR-BOUND's recheck aggregated independently (34 / 3 / 29).
+- **Fix 1 (Narrowing):** the answer and conclusion 2 restated on certified bonds: 34 of 66 bounded across with eventually periodic
+  certificates, 22 with doubly periodic ones; at least 130 of 169 with two directions.
+- **Fix 2 (Narrowing):** rank 1 is relative to the searched family: a wider search (shifts with entries up to 4, sets of 2 or 3 in
+  [0, 2]², a 23 × 25 window, doubly periodic certificates) found a second certified direction on 27 of the 66, covering 26 of the 56
+  window-bounded and 17 of the 34 certified-bounded bases and none of the growing ones; T1 is a lower bound.
+- **Fix 3 (Not a block):** T4 is at window level, now labelled so.
+- **Soundness:** the eventually periodic certificate is sound; FAR-BOUND's one-base proof sound in logic (its finite checks belong to
+  that epic's referee).
 
 ## Literature and provenance
 
@@ -104,19 +115,19 @@ settled, and the per-base failure criteria. Not consulted on the reading.
 
 ## Corrections
 
-One, logged in `docs/CORRECTIONS.md` (**Not a block**): the pre-registration named its classes "flat", "line" and "open", words the
-glossary reserves for other senses; this note uses bounded across, growing across and undecided for the same classes.
+Two entries in `docs/CORRECTIONS.md`: the class names (Not a block), and the referee's three fixes (two Narrowings and one Not a
+block): the answer on certified bonds, rank 1 relative to the family, and T4 labelled window-level.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — what the law reads on travelling bases | **Status:** Successful, referee pending | T1 to T4 held; base 16's line is rare; most read zero dimensions in range |
+| This attempt — what the law reads on travelling bases | **Status:** Successful, refereed (narrowed) | T1 to T4 held; base 16's line is rare; bounded across on certified bonds in about half the rank-1 bases |
 | Local direction — the bounded bases | Continue | Bounded within 6 across: bounded at every distance, or slow growth? |
 | Broader exploration — G1 on overlapping bases | Known alternatives | Why base 16 grows; certificates that repeat along no step (the corner-knot line) |
 | Long-term goal — G1 Space from a law (question 9) | Obstruction learned | Under this weighting the law's own geometry is usually degenerate; lower-dimensional readings are rare |
 
-**Corrections:** one, Not a block (class names). **Goals:** a G1 checkpoint (obstruction learned, with G17); no goal change.
+**Corrections:** two entries: class names (Not a block); the referee's fixes (two Narrowings, one Not a block). **Goals:** a G1 checkpoint (obstruction learned, with G17); no goal change.
 **Assumptions:** none changed. **Basket:** `COMMON-FOLD-20261112-001#2` (why ties take over, 2/3, 2/3), `COMMON-FOLD-20261112-001#3` (other
 weightings, 2/3, 3/3), `ACROSS-FOLD-20261112-001#2` (all bonds across, 2/3, 2/3); taken: `COMMON-FOLD-20261112-001#1` by this epic.
 

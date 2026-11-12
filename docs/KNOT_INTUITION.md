@@ -6193,13 +6193,13 @@ So holes come in two kinds:
      the last base, by search rather than by propagation, mostly through ties
      ([decision note](../research/COMMON-FOLD-20261112-001/common_fold.md)).
 
-   **2026-11-12: what the law reads on travelling bases** (`TRAVEL-READ-20261112-001`; referee pending).
+   **2026-11-12: what the law reads on travelling bases** (`TRAVEL-READ-20261112-001`; refereed, narrowed).
    - **The question.** Base 16 reads no length along its shift and one dimension across. Do the other bases that travel?
-   - **Mostly not (computed, frozen).** Two thirds of the 169 travelling bases travel along two independent shifts, and 85% of the
-     rest keep the least bond to a far distinction at about four at every across-count measured: no growth across. Only 2 grow
-     across as base 16 does.
-   - **What it means.** Under this weighting the law usually compresses a travelling base in every direction measured, a reading of
-     zero dimensions; base 16's line is rare. Whether the bound holds at every distance is open
+   - **Mostly not (computed, frozen).** At least 130 of the 169 travelling bases travel along two independent shifts, so bond
+     distance is bounded along both. Of the rest, about half (34 of 66) keep the least bond to a far distinction at about four at
+     every across-count measured on certified bonds (56 at window level). Only 3 grow across as base 16 does.
+   - **What it means.** Where two shifts are unlengthened, the law reads the base as having no length in either; base 16's line is
+     rare. The clean comparison is between the bases bounded across with no second direction and the few that grow
      ([decision note](../research/TRAVEL-READ-20261112-001/travel_read.md)).
 
    **2026-11-12: nothing chooses a meeting pattern** (owner's statements, 2026-11-11 Pacific; interpretation, with readings under test).

@@ -129,7 +129,7 @@ evidence: results and their status come from the records each entry links.
 | [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Assumed |
 | [A73](#a73--the-owners-other-realities-are-other-knot-patterns) | The owner's other realities are other knot patterns | reading | Assumed |
 | [A74](#a74--dimension-across-an-unlengthened-shift-is-read-by-across-counts) | Dimension across an unlengthened shift is read by across-counts | reading | Assumed |
-| [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Assumed |
+| [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Under challenge |
 
 ## Entries
 
@@ -1956,7 +1956,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A75 · Bases within bases are stitched at one place
 
-**Assumed** · 2026-11-12 · reading
+**Under challenge** · 2026-11-12 · reading
 
 - **Statement.** The owner's "each boolean variable could be its own micro infinite series of logic, that's bound to others" is read
   as: each distinction of an outer base becomes a copy of an inner harmony (A70), and each outer knot becomes a stitch of the three
@@ -1975,3 +1975,4 @@ evidence: results and their status come from the records each entry links.
   or run the substitution reading on the same seeds.
 - **History.**
   - 2026-11-12 · Added with `BASES-WITHIN-20261112-001`'s pre-registration.
+  - 2026-11-12 · Under challenge: `SUBST-NEST-20261112-001` tests the substitution reading (blocks and motifs) on the same questions.

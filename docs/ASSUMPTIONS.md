@@ -133,6 +133,7 @@ evidence: results and their status come from the records each entry links.
 | [A76](#a76--global-influence-is-read-as-ties-or-travelling-along-a-shift) | Global influence is read as ties or travelling along a shift | reading | Assumed |
 | [A77](#a77--a-walk-around-one-cycle-is-a-state-that-repeats-along-a-short-step) | A walk around one cycle is a state that repeats along a short step | reading | Assumed |
 | [A78](#a78--a-parity-knot-among-copies-is-flip-blind-parity-built-from-our-knots) | A parity knot among copies is flip-blind parity, built from our knots | reading | Assumed |
+| [A79](#a79--a-patterns-weight-under-a-description-language-sums-its-descriptions) | A pattern's weight under a description language sums its descriptions | measure | Assumed |
 
 ## Entries
 
@@ -2064,3 +2065,19 @@ evidence: results and their status come from the records each entry links.
     place), built from bare not-all-equal knots on single distinctions; the advisor's NAE4 route builds 4-member not-all-equal, not
     parity. Scope noted: it is not buildable from one-order stitches between whole harmony copies, since every gadget of stitched copies
     allows all copies equal. Status unchanged.
+
+### A79 · A pattern's weight under a description language sums its descriptions
+
+**Assumed** · 2026-11-12 · measure
+
+- **Statement.** Under a description-length weighting, a meeting pattern's weight is the sum of 2^−length over every description
+  in the language that expands to it, so that sampling descriptions by fair coins samples patterns by that weight. The language,
+  its code and its caps are one weighting of many (A71).
+- **Why.** Sampling by fair coins is exact and needs no search; the other reading, weight 2^−(shortest length), needs the shortest
+  description of each pattern, which a sample does not give. For a universal language the two agree up to a constant factor (the
+  coding theorem); for this restricted language that is not shown
+  ([pre-registration](../research/SHORT-DESC-20261112-001/preregistration.md)).
+- **Rests on it.** The outcome shares and readings of `SHORT-DESC-20261112-001` under its description weighting.
+- **Challenge.** Weight by the shortest description found by search for a sample of patterns, and compare the outcome shares.
+- **History.**
+  - 2026-11-12 · Added by `SHORT-DESC-20261112-001`.

@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SHORT-DESC-20261112-001A-E001",
+ "ticket": "SHORT-DESC-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under a description-length weighting with reuse and self-substitution, how often do NAE patterns die against uniform and same-degree patterns of their size, how much does the law tie in the living ones, and how do nested families fare over depth and in the limit?",
+ "definitions": {
+  "language": "dlang.py: straight-line macros (K, earlier definitions, SELF in three-port definitions, depth t); Elias gamma counts, uniform callee and argument choices; weight 2^-bits summed over descriptions (A79); caps r<=6, k<=6 (wide 8), l<=6, c<=12, t<=6, 3,000 knots.",
+  "baselines": "patterns with >= 7 knots on <= 400 distinctions: uniform same n and m covering (replace-one-knot chain, 30 steps per knot); same degrees (switch chain, 20 steps per knot); mixing check at 60 and 40 on the first 300 per worker.",
+  "readings": "n <= 200: exact tie share of living patterns (first 1,500 per worker) and of living baseline draws; minimal dead cores.",
+  "families": "nested descriptions minus t: fate by first death over depth from SELF = NAE (at once, a while, forever), after-first-death cycle, the limit from SELF = TOP to the greatest fixed point, limit kinds by K1-K3.",
+  "seeds": "sha256 of SD:variant:worker (patterns) and SDb:variant:worker:try (baselines)."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 cbe79ead01f79c185ce137f02e308d52ac2e2533b60877f61f5d21ce1ded060f) and dlang.py (sha256 8cbd77ee6d857c7e110fb24f38be87ff80f76bd49a522f0d00e2b0166ae1bd76) beside this file; RANDOM-FATES fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35); pysat; numpy.",
+  "run": "census.py --run VARIANT WORKER 150000 for main workers 0-7, wide 0-3, noself 0-3, then --summary, from the repository root; output artifacts/SHORT-DESC-20261112-001A/SHORT-DESC-20261112-001A-E001_description_census/."
+ },
+ "forbidden_inputs": [
+  "Changing the language, code, caps, baselines, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Paired dead-share differences against both baselines, overall and by knot bin; paired tie-share differences; weighted shares of the nested fates.",
+ "cheapest_meaningful_control": "Uniform patterns of the same size (the uniform weighting at that size) and patterns with the same degrees.",
+ "validation_gate": "Port evaluation and SAT agree on every expanded pattern (0 mismatches), else the run is invalid.",
+ "predictions": {
+  "S1": "description minus uniform dead share <= -0.01, CI below 0, and CI below 0 in every knot bin with uniform dead share >= 0.05",
+  "S2": "the same against same degrees",
+  "S3": "tie share minus uniform >= 0.005 with CI above 0, and minus same degrees with CI above 0",
+  "S4": "nested fates weighted: at once >= 0.1%, a while >= 1%, forever >= 1%",
+  "S5": "S1's pooled criterion in wide and among nested patterns of main"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About twenty minutes on 16 workers; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

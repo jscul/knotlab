@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**326 current results** and 5 superseded ones, from 342 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**326 current results** and 5 superseded ones, from 343 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 342 epics with their closures
+- [Epics](#epics): all 343 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1453,6 +1453,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | [closure](proofs/SEARCH-AUDIT-20261112-001Z/SEARCH-AUDIT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SEARCH-AUDIT-20261112-001/) |
 | 2026-11-12 | One unlengthened shift against two (`SHIFT-COUNT-20261112-001`) | [closure](proofs/SHIFT-COUNT-20261112-001Z/SHIFT-COUNT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SHIFT-COUNT-20261112-001/) |
 | 2026-11-12 | Locks across two shifts (`SHIFT-LOCK-20261112-001`) | [closure](proofs/SHIFT-LOCK-20261112-001Z/SHIFT-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SHIFT-LOCK-20261112-001/) |
+| 2026-11-12 | Meeting patterns weighted by short descriptions (`SHORT-DESC-20261112-001`) | — | [folder](research/SHORT-DESC-20261112-001/) |
 | 2026-11-12 | A learner whose examples steer its search (`STEER-LEARN-20261112-001`) | [closure](proofs/STEER-LEARN-20261112-001Z/STEER-LEARN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/STEER-LEARN-20261112-001/) |
 | 2026-11-12 | Nesting by substitution (`SUBST-NEST-20261112-001`) | [closure](proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SUBST-NEST-20261112-001/) |
 | 2026-11-12 | What the law reads on travelling bases (`TRAVEL-READ-20261112-001`) | [closure](proofs/TRAVEL-READ-20261112-001Z/TRAVEL-READ-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/TRAVEL-READ-20261112-001/) |

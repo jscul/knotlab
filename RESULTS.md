@@ -1415,7 +1415,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Arithmetic of harmonies without a zero (`HARMONY-ARITH-20261112-001`) | [closure](proofs/HARMONY-ARITH-20261112-001Z/HARMONY-ARITH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/HARMONY-ARITH-20261112-001/) |
 | 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |
 | 2026-11-12 | Jumps over a whole life (`LIFE-JUMPS-20261112-001`) | — | [folder](research/LIFE-JUMPS-20261112-001/) |
-| 2026-11-12 | The law's count of missing knots (`MISSING-KNOTS-20261112-001`) | — | [folder](research/MISSING-KNOTS-20261112-001/) |
+| 2026-11-12 | The law's count of missing knots (`MISSING-KNOTS-20261112-001`) | [closure](proofs/MISSING-KNOTS-20261112-001Z/MISSING-KNOTS-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/MISSING-KNOTS-20261112-001/) |
 | 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | [closure](proofs/NATIVE-GRADE-20261112-001Z/NATIVE-GRADE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GRADE-20261112-001/) |
 | 2026-11-12 | Which odd periods the knot law makes, and why 61 (`ODD-FAMILY-20261112-001`) | [closure](proofs/ODD-FAMILY-20261112-001Z/ODD-FAMILY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-FAMILY-20261112-001/) |
 | 2026-11-12 | The first odd harmony, or none (`ODD-SEARCH-20261112-001`) | [closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-SEARCH-20261112-001/) |

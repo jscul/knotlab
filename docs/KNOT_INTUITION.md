@@ -3197,6 +3197,15 @@ So holes come in two kinds:
    - **Pins never vary, and the reach is a wire.** With the block's knots between copies, a pin is always equality, the same
      value everywhere it reaches; the reach is one equality per knot chained along the pattern. Pins that vary would need a binding
      twisted by a symmetry of the block ([decision note](../research/PIN-RULE-20261112-001/pin_rule.md)).
+
+   **2026-11-12: twisted pins** (`TWIST-PIN-20261112-001`; referee pending).
+   - **A fold is the block folded by a loop's symmetry (proved).** If the ties between copies pass through symmetries of the block, a
+     locked value that travels around a loop of the pattern can come back renamed; when no loop leaves a symmetry, the twist undoes
+     copy by copy. Otherwise the pins are the block's, folded by the loops' symmetries: a position tied to its image, unequal to it,
+     or an end.
+   - **Length does not matter; parity can (exact on the range).** Living was the same on loops of 2, 3 and 6 knots for all 60 pairs
+     of block and symmetry tested. On the one-shift ring, twisting each knot's middle by a swap undoes on 6 distinctions and folds on 7
+     ([decision note](../research/TWIST-PIN-20261112-001/twist_pin.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; stage 1 referee pending).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 89% at the last base, the same at every

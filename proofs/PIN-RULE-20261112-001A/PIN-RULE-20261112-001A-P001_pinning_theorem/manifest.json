@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PIN-RULE-20261112-001A-P001",
+  "canonical_id": "PIN-RULE-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "PIN-RULE-20261112-001A",
+  "proof": "PIN-RULE-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The pinning theorem",
+  "status": "Proved",
+  "claim": "Proved by hand: with the block's knots in every order between copies, in every state of the nested pattern, every distinction the block cannot spare is equal in the three copies at every knot, so constant on each component; spare ones are tied to nothing; so the tied parts are exactly those of the distinctions the block cannot spare. Spare = some state of the block survives flipping it alone; so for odd n a cyclic block makes a harmony exactly when nesting pins all its distinctions. With block triples closed under reordering, pins are equality, uniform on each component. Checked cold by the advisor model and on 387 blocks. Referee pending.",
+  "dependencies": [
+    "SUBST-NEST-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A state of a nested pattern with two knotted copies differing at a distinction the block cannot spare.",
+    "A block whose spare distinction is tied in some nested pattern."
+  ],
+  "lineage": {
+    "home_scope": "PIN-RULE-20261112-001",
+    "epic_path": [
+      "PIN-RULE-20261112-001"
+    ],
+    "parents": [
+      "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/manifest.json",
+      "research/PIN-RULE-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/manifest.json": "97a752875f183465576b174d322b150b2793c89a34b27e37fddca76611a51e0d",
+    "research/PIN-RULE-20261112-001/preregistration.md": "144c69923b18faa799c4c97e78914b606b93509b603dbb8d1759980b4537375a"
+  },
+  "paths": {
+    "manifest": "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/manifest.json",
+    "identity": "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/identity.json",
+    "proof": "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/proof.md",
+    "result": "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/result.json",
+    "check": "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/check.py",
+    "directory": "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; every block and every pattern with knots on three distinct distinctions (the theorem); 387 blocks of up to 7 distinctions (the check).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered with its proof and check (commit c768dcd09); checked cold by the advisor model; independent referee pending with the background referee thread.",
+    "status": "proof by hand; frozen check on 387 blocks passed; referee pending",
+    "novelty": "known-with-delta"
+  }
+}

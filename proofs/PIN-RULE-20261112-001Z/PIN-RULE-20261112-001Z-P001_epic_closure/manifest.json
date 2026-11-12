@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "PIN-RULE-20261112-001Z-P001",
+ "canonical_id": "PIN-RULE-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "PIN-RULE-20261112-001Z",
+ "proof": "PIN-RULE-20261112-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: the pinning theorem",
+ "status": "Proved",
+ "claim": "Ledger closing PIN-RULE-20261112-001: one line per conclusion with its status and evidence (ticket A), and the end-of-epic recommendation. No new claim.",
+ "dependencies": [
+  "PIN-RULE-20261112-001A"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest or result changes, or a proof is not Proved.",
+  "The decision note is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "PIN-RULE-20261112-001",
+  "epic_path": [
+   "PIN-RULE-20261112-001"
+  ],
+  "parents": [
+   "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/manifest.json",
+   "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/result.json"
+  ]
+ },
+ "parent_bindings": {
+  "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/manifest.json": "b9341310a28d63b1c68e562baf8df3637321dc4ffb7f3e83b7d0fdfa25ff007c",
+  "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/result.json": "7a3c3284336669390159e43f23e6ed52e7d8e696f52bae48029597eff99becaa"
+ },
+ "paths": {
+  "manifest": "proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/result.json",
+  "check": "proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "Ledger only.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-12.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

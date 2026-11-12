@@ -48,7 +48,10 @@ odd period, or is there a first odd harmony?
 S1 held (none at 31 or 37). **S2 failed**: the progression family at 61 has a counterexample, and it is a harmony. The frozen
 consequence followed: verified by enumerating the compatible words and checking that none differ in one place, refereed by fresh code
 and by an independent session (both passed), and the Narrowing logged. All parts ran inside their caps (the longest in under half an
-hour). The parity route is measured, but not yet folded in: row ODD-SEARCH-A2 is **pending**.
+hour). The parity route is measured, but not yet folded in: row ODD-SEARCH-A2 is **pending**. *Folded in 2026-11-12: the route
+measurement reached its frozen 2-hour cap (1 h 26 min of processor time) without finishing, so by the pre-registration it is
+dropped and the route of the 422 fully blocked words is unmeasured; section 4 of the proof, which says pending, is superseded by
+this note. No claim depended on it.*
 
 ## Review
 

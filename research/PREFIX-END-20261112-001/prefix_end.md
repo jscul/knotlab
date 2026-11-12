@@ -114,4 +114,30 @@ profile, and the forecast adds nothing beyond degrees. The next payoff lies in t
 
 ## Final report as sent
 
-(Appended after sending.)
+Sent to the owner on 2026-11-12 at about 17:30 UTC, in the project thread:
+
+> **Reading the end from the age profile: done (referee pending).** It works, but no better than simpler counts.
+>
+> - **No early part passes its own uniform end.** In none of 685 endings does any early part look like a dead uniform pattern of its own size.
+> - **The age profile reads the end, but only as well as the degrees.** Matched against growths at the same age, the profile's own end chance scores 0.75. Plain density scores 0.69. A degree statistic scores 0.74, essentially tied, and a model fitted on the profile doesn't beat it.
+> - **The law's own ties read it far better (0.95).** The age profile is what carries the end, as the earlier redraws showed. But as a forecast, counts of knots by age or by degree only see a shadow of what the ties show.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt: an end read from the prefix counts | **Status:** Partially successful (referee pending) | E0 to E2 held. E3 and E4 failed: the profile beats density but not the degrees |
+> | Local direction: why growths end | Practically exhausted | The law's ties read the end best, and counts add little beyond degrees |
+> | Broader exploration: G17 | Searching | Other weightings and laws are untried |
+> | Long-term goal: G17 Typical and rare meeting patterns (with G7) | Capability gained | What ends a growing pattern, and what forecasts it, are now separated |
+>
+> **Next step:** Research directions. Selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Other weightings | 2/3 Substantial | 2/3 Testable | Weight small patterns by how short their description is (your "simple realities more common"), then compare outcomes and readings → results change with the weighting, or don't | Selected · awaiting go-ahead |
+> | 2 | Where the expanding growth ends | 2/3 Substantial | 3/3 Ready | Hazard fit over closing rates 0.2 to 0.3 → a critical rate, or a slow onset | Alternative · deferred |
+> | 3 | The other meaning of "die" | 2/3 Substantial | 2/3 Testable | When new knots stop changing what the law reads, compared with the end → agree or part | Alternative · awaiting your answer |
+>
+> **Corrections:** none new. The three referee verdicts today were folded in (one Narrowing each).
+> **Goals:** G17 checkpoint, capability gained.
+> **Assumptions:** A71 and A72 used, unchanged.
+> **Advisor:** reviewed the design first. It replaced the 2.1 test with a fair null at each part's own size, and added risk-set negatives, the hazard ceiling and a kill condition.

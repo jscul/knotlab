@@ -2,7 +2,7 @@
 
 Epic `ROW-NEST-20261112-001` (`NEST-COUNT-20261112-001` direction 2; G17, with G1), 2026-11-12, at the coordinator's go-ahead.
 Pre-registered in commit 47e0312fe before the registered run. The canonical K1–K3 test is unchanged. Refereed by the referee thread
-(ROW-NEST-R1, `referee-R1/report.md`, commit 3d4c50d4c): **confirmed with fixes**, folded in below; three corrections logged (one
+(ROW-NEST-R1, `referee-R1/report.md`, commit ab8891a76): **confirmed with fixes**, folded in below; three corrections logged (one
 Narrowing, two Not a block).
 
 ## Words

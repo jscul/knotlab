@@ -81,7 +81,8 @@ every living outer pattern: the 31 connected ones and the Fano plane less one kn
 - **So P4 still fails, but by 8 harmonies, not 28.** The record's "for 28 harmonies none of 60 did" is true of the sample and should
   not be read as a property of those harmonies.
 - **Every lagged stitch keeps the Fano plane dead in only a small share of assignments.** I ran this exhaustively for every harmony of
-  period at most 8; periods 10 and 12 were still running when this report was written. The dead share is 1 class in 256 (0.4%) for
+  period at most 8; a run at periods 10 and 12 was stopped unfinished after 35 minutes to free the shared machine, since periods up to
+  8 already settle the sampled claim. The dead share is 1 class in 256 (0.4%) for
   the alternation, which is its unsigned switching class (the 64 of 16,384 assignments). It is 0.07% or less for every other harmony.
   It is never zero, since the unlagged class always stays dead (L4). "In every sampled assignment of every other harmony" is accurate
   as a sample; the exhaustive count makes "almost always, never always" plain.
@@ -127,7 +128,7 @@ tested by the frozen run". One slip is in the owner report (fix 3).
 ## Files
 
 `brief.md`; `ref_lib.py` (harmonies, patterns, slow cross-check); `shifts.c` and `ref_shifts.py` (lagged stitches); `run_shifts.py`
-(`result_sample.json`, `result_exhaustive.json`, `result_fano8.json`, `result_fano.json` when it finishes); `check_signs.py`
+(`result_sample.json`, `result_exhaustive.json`, `result_fano8.json`; `run_fano.log` is the stopped run at periods 10 and 12, which wrote nothing); `check_signs.py`
 (`result_signs.json`); `ref_ties.py` (`result_seeds.json`, `result_gasket.json`, `result_control.json`); `ref_levels.py`
 (`result_levels.json`). Before the exhaustive run, `shifts.c` was cross-checked against brute force on 1,760 random cases and on
 every assignment of the four-point pattern with the alternation, with no mismatch.

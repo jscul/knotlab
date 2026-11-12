@@ -116,6 +116,16 @@ None. Two frozen predictions failed (A3, and parts of B1, B2, B3) and are report
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
 
+## Later: the cone rule fails a pilot (2026-11-12)
+
+Before freezing direction 1, a pilot of its code (disclosed, not a registered run) contradicted the rule as stated. On the base proved
+bounded on two quadrants (sample 24 at r = 3), the side across that no common-pattern cone covers is still bounded at 16 across in one
+cross-section (least certified bond 5, against 4 at 6 across), and the cells forced by its certified travelling patterns reach only
+4 across on that side at along-count 10: small sets other than the certified travelling ones give bonds there. Sample 97 at r = 3
+has no common pattern (its two directions travel by different patterns), so no cone at all. So "bounded inside the cones of travel,
+growing outside" is false as framed; the bounded region is larger than the certified cones and the forced regions of the certified
+seeds. Direction 1 was not frozen or run; the next step is direction 2 (other weightings) unless a sharper rule is found.
+
 ## Final report as sent
 
 Sent to the owner on 2026-11-12 at about 15:42 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: under

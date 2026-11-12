@@ -1387,12 +1387,13 @@ have failed:
   contradiction
   ([GROW-COUNT-20261111-001](research/GROW-COUNT-20261111-001/grow_count.md)).
 
-So the law reads which knots there are and measures them exactly, but how they
-meet is still an input, static or grown, as the board was in lesson 4.6.
+So on six-regular weaves the law reads which knots there are and measures them
+exactly, but how they meet is still an input, static or grown, as the board was
+in lesson 4.6.
 
 **Knots that overlap freely.** Nothing in lesson 2.1 says that a pair lies in
-two knots. In a base where knots share distinctions in any pattern, what does
-not-all-equal force that no knot names?
+two knots. In a finite base where knots share distinctions in any pattern, what
+does not-all-equal force that no knot names?
 
 - **Only its own kind (proved).** Nothing is frozen, a tied pair is always
   equal or always unequal, and every hollow triple that no knot names is a
@@ -1428,6 +1429,65 @@ PYTHONPATH=tools python3 -m knotlab check --cnf "a b c; ~a ~b ~c; a y z; ~a ~y ~
 
 The command forgets a, b and c and reports that x, y and z form a knot.
 
+**Endless bases that overlap.** The bases so far are finite, or two-fold
+weaves. Lesson 2.1 allows more: infinitely many knots, overlapping in any
+pattern. The record's first such bases are **periodic**: one block of
+distinctions and knots repeated at every whole number, one shift, or at every
+pair of whole numbers, two shifts, with nothing limiting how many knots lie on
+a pair. The literature calls them periodic hypergraphs over ℤ and ℤ². A
+**finite repeat** of a periodic base identifies the blocks whose shifts differ
+by chosen amounts, the literature's periodic quotient. Put not-all-equal on
+every knot:
+
+- **Overlap at infinity is read faithfully (computed).** With one shift the
+  reading is exact: 73 of 181 patterns are read faithfully, 23 of them with a
+  pair in three or four knots. With two shifts, 134 of 627 are read faithfully,
+  36 with a pair in three or more knots and 2 with a pair in four, and 160 stay
+  unsettled by the bounds used. In both bases with a pair in four knots, that
+  pair, repeated at every shift, carries the four knots, and every other pair
+  one.
+- **An endless base is not its finite repeats (computed).** 25 of the two-shift
+  bases read faithfully have no finite repeat of 9 to 30 blocks read
+  faithfully, and over all of them only 7.7% of the finite repeats tried are.
+  Most verdicts need states that pass from one repeating pattern of values to
+  another (the literature's domain wall), which no finite repeat can hold.
+- **The ruler's first step survives (computed).** In every two-shift base read
+  faithfully, each pair of distinctions two steps apart lies in a bond of four.
+- **Two classes read alike (proved).** If the knots of a finite pattern split
+  into two classes that meet every co-knotted pair once each, the two classes
+  and their union allow the same states, as the pair-count lemma implies. It
+  explains most of the triples above that only a whole base forces: in 91 of
+  the 98 such bases made by knot swaps, those triples are knots the swaps
+  removed, still held by the knots that remain.
+
+([PERIODIC-READ-20261111-001](research/PERIODIC-READ-20261111-001/periodic_read.md))
+
+**Bond distance on these bases.** Steps apart on a two-shift base grow as the
+shifts dictate. Does bond distance follow them?
+
+- **No ball stops at three steps (computed, refereed).** On the 134 two-shift
+  bases read faithfully, every distinction three steps from a given one lies in
+  a bond of at most five with it.
+- **Shortcuts (computed, refereed).** On most of these bases bond distance is
+  steps apart plus one, as on the endless six-regular weave. On 42 of them (38
+  up to a change of the two shifts) some distinctions three or four steps apart
+  lie in a bond of four: a **shortcut**, a pair whose bond distance is less
+  than its steps apart plus one. On five heavily overlapping bases some "bond
+  of five" verdicts are only upper bounds. The endless six-regular weave, where
+  the ruler is proved, has no shortcut.
+- **A direction the law does not lengthen (computed, open).** On one base,
+  three equal distinctions force a matching three, one shift over, to the
+  opposite value, and those force the next three, and so on. So three
+  distinctions twelve steps away still form a bond of four with the starting
+  one: bond distance 3 at every distance checked, from 3 to 12 steps. On 14 of
+  the 16 kinds of base with shortcuts at four steps, bonds of four were also
+  found at five and six steps. Along such a combination of the shifts the
+  allowed states keep distinctions at a fixed bond distance while the meeting
+  pattern keeps them ever more steps apart. Whether this holds at every
+  distance is not proved.
+
+([BOND-BALLS-20261111-001](research/BOND-BALLS-20261111-001/bond_balls.md))
+
 **Studying a base from inside.** Lesson 1.7 asked whether what emerges in a
 base can study the base. The record so far:
 
@@ -1456,14 +1516,17 @@ base can study the base. The record so far:
 - **Open.** Whether a part of a base can find rules that make what it sees,
   with nothing designed in advance (lesson 1.7).
 
-**Reading.** On knots alone, with nothing named but the knot, not-all-equal
-gives its meeting pattern back and measures it exactly: on the endless
-six-regular weave, a ruler at every distance and dimension two. It does not
-make the meeting pattern, which is given, as the board was. For the owner's
-Cartesian plane, one axis grows from the rules with nothing drawn (lesson 4.6),
-and a second dimension is measured by the knot law, but on overlaps put in by
-us. A meeting pattern that comes out of rules, and endless bases in which knots
-overlap freely, are the open steps.
+**Reading.** On the endless six-regular weave, with nothing named but the knot,
+not-all-equal gives its meeting pattern back and measures it exactly: a ruler
+at every distance and dimension two. It does not make the meeting pattern,
+which is given, as the board was. On endless bases that overlap, the law still
+reads the first steps, but its distance can part from the meeting pattern's: on
+some bases it is shorter, and on one a whole combination of the shifts may have
+no length to the law at all (computed, open). So the space a law reads need not
+be the one its meeting pattern supplies. For the owner's Cartesian plane, one
+axis grows from the rules with nothing drawn (lesson 4.6), and a second
+dimension is measured by the knot law, but on overlaps put in by us. A meeting
+pattern that comes out of rules is the open step.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab space
@@ -1730,7 +1793,8 @@ remains open.
    distinctions no law that declares no cycle can. Lesson 4.7 takes the board
    away: on knots alone, with nothing named but the knot, the not-all-equal
    law reads the endless six-regular weave's dimension two exactly, but the
-   meeting pattern is still put in.
+   meeting pattern is still put in. On endless bases that overlap, the law's
+   distance can be shorter than the meeting pattern's.
 2. **Dynamics.** Are loops better modelled as processes whose outputs over
    time are the data, and does the static test survive that change?
 3. **Limits.** No set of finite clauses binds infinitely many loops into one
@@ -1926,6 +1990,14 @@ that earlier records used in two senses.
   pattern's own knots, so that the knots can be read back from the allowed
   states (lesson 4.7). A distinction is **frozen** when it takes one value in
   every allowed state.
+- **Periodic.** A base is periodic when one block of distinctions and knots
+  repeats at every whole number, one shift, or at every pair of whole numbers,
+  two shifts (lesson 4.7): the literature's periodic hypergraph over ℤ or ℤ².
+  A **finite repeat** identifies the blocks whose shifts differ by chosen
+  amounts, the literature's periodic quotient.
+- **Shortcut.** A pair of distinctions whose bond distance is less than their
+  steps apart plus one (lesson 4.7). The endless six-regular weave has none;
+  some periodic bases that overlap have many.
 - **Chain.** Rules in a row, each sharing one distinction with the next: a
   chain of implications (lesson 1.4), of two-place ties, or of knots. Closed
   up, a chain of implications is a loop of the picture of lesson 1.4. Along an
@@ -1999,6 +2071,7 @@ that earlier records used in two senses.
   | endless six-regular weave | infinite, connected, six-regular, every cycle filled | triangular lattice, drawn as the plane |
   | chain; endless chain of atoms | rules in a row, each sharing one distinction with the next; along atoms, bond distance grows by one per step | path; number line |
   | steps apart | the fewest co-knotted pairs in a row from one distinction to another | graph distance |
+  | periodic base; finite repeat | one block repeated at every whole number or pair of whole numbers; that base with blocks identified | periodic hypergraph over ℤ or ℤ²; periodic quotient |
   | ball | the distinctions within a bond distance of one of them | ball, disc |
   | dimension | how fast balls grow: like r^D gives D | dimension |
   | flip graph | states linked when they differ in one variable | cube (of states), hypercube |

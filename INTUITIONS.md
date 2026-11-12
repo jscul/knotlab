@@ -2360,6 +2360,19 @@ that earlier records used in two senses.
   those divided by the counts. Bounds on the mean steps, fixed by counting the
   copies of each step pair (the literature's slope polygon), decide which
   repeats it fits.
+- **Flip-blind parity knot; count r; fixed by count 0.** A **flip-blind
+  parity knot** on three copies requires their placewise sum to be all 0s or
+  all 1s, through one hidden reference distinction per knot (assumption A78:
+  built from not-all-equal knots, unlike plain parity, which needs a zero).
+  **Count r** is the set of copies whose count along the first copy shift is r
+  (the literature's row of an array). Up to flips, each copy may be flipped on
+  its own. Count r is **flip-frozen** when all states share it up to flips;
+  **fixed by count 0** when states agreeing on count 0 up to flips agree on
+  it; **reached by propagation** when knots with two known members whose
+  relation forces the third make all its copies known from count 0. **Fixed
+  but unreached**: fixed, not flip-frozen, not reached; **full fixing**: every
+  count fixed by count 0 and some count not flip-frozen (a parity knot among
+  stitched copies, 12 November 2026).
 - **Shortcut.** A pair of distinctions whose bond distance is less than their
   steps apart plus one (lesson 4.7). The endless six-regular weave has none;
   some periodic bases that overlap have many.

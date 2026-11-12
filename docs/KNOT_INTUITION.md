@@ -3268,6 +3268,15 @@ So holes come in two kinds:
      stitches of 20 of 68 harmonies hold free pairs, a route still open.
    - **What is not decided.** The stitch itself carries no additive law; whether arrangements of copies show Ledrappier-type influence
      another way, through hidden copies, is open ([decision note](../research/LINE-LOCK-20261112-001/line_lock.md)).
+
+   **2026-11-12: a parity knot among stitched copies** (`PARITY-MIX-20261112-001`; referee pending).
+   - **Rare (exact on small repeats, sampled beyond).** Only 8 of 45 harmonies can hold a flip-blind parity knot at all (a knot our
+     knots can build, A78). With some knots parity and the rest not-all-equal stitches, a state survives in 2.8% of the placements on
+     3 × 3, 0.16% on 4 × 4, and none of the 8 × 8 samples: a scattering of parity knots ends the arrangement. No flip-blind triple is
+     ever a stitch triple (after the run).
+   - **Beyond any one knot where it survives.** In most surviving placements one count of copies fixes counts that no local propagation
+     reaches; the survivors mostly have their parity knots surrounding whole copies. Global influence of the additive kind is rare
+     among stitched copies, not typical ([decision note](../research/PARITY-MIX-20261112-001/parity_mix.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 90% at the last base, consistent with the

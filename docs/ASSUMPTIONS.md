@@ -123,7 +123,7 @@ evidence: results and their status come from the records each entry links.
 | [A66](#a66--copies-sharing-distinctions-keep-each-copys-own-drawn-faces) | Copies sharing distinctions keep each copy's own drawn faces | reading | Confirmed |
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
 | [A68](#a68--a-repair-flips-distinctions-only) | A repair flips distinctions only | reading | Assumed |
-| [A69](#a69--the-value-of-the-shortest-sums-is-supplied-per-base) | The value of the shortest sums is supplied per base | reading | Under challenge |
+| [A69](#a69--the-value-of-the-shortest-sums-is-supplied-per-base) | The value of the shortest sums is supplied per base | reading | Overturned |
 
 ## Entries
 
@@ -1814,7 +1814,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A69 · The value of the shortest sums is supplied per base
 
-**Under challenge** · 2026-11-12 · reading
+**Overturned** · 2026-11-12 · reading
 
 - **Statement.** In `LAW-RIGIDITY-20261112-001`'s stage 2 the learner rested only where the law's sum around every shortest cyclic
   sequence of knots and distinctions takes one value, and that value was chosen by us for each base: 0 on the 6-distinction undrawn base,
@@ -1824,5 +1824,8 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** A value-free rule, the learner resting where all shortest sums are equal whatever the value
   (`NATIVE-GRADE-20261112-001`); it leaves a counting law at rest on both bases (exact).
 - **History.**
+  - 2026-11-12 · Overturned by `NATIVE-GRADE-20261112-001` for the two bases it was used on: resting where all shortest sums are equal,
+    whatever the value, leaves a counting law at rest on both (4 of 64 laws on one copy, 1 of 2 on the undrawn base, exact), so no value
+    need be chosen; on two further undrawn bases no shortest-sum rule leaves a counting law at rest at all ([a native grade for rigidity](../research/NATIVE-GRADE-20261112-001/native_grade.md)).
   - 2026-11-12 · Added, and put under challenge, by `NATIVE-GRADE-20261112-001` (recorded at the coordinator's request; the choice was
     made in `LAW-RIGIDITY-20261112-001`).

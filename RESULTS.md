@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**325 current results** and 5 superseded ones, from 335 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**325 current results** and 5 superseded ones, from 336 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 335 epics with their closures
+- [Epics](#epics): all 336 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1440,6 +1440,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Which odd periods the knot law makes, and why 61 (`ODD-FAMILY-20261112-001`) | [closure](proofs/ODD-FAMILY-20261112-001Z/ODD-FAMILY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-FAMILY-20261112-001/) |
 | 2026-11-12 | The first odd harmony, or none (`ODD-SEARCH-20261112-001`) | [closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-SEARCH-20261112-001/) |
 | 2026-11-12 | A parity knot among stitched copies (`PARITY-MIX-20261112-001`) | [closure](proofs/PARITY-MIX-20261112-001Z/PARITY-MIX-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-MIX-20261112-001/) |
+| 2026-11-12 | Which parity placements survive (`PARITY-SURVIVE-20261112-001`) | — | [folder](research/PARITY-SURVIVE-20261112-001/) |
 | 2026-11-12 | The pinning theorem, and pins that vary (`PIN-RULE-20261112-001`) | [closure](proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PIN-RULE-20261112-001/) |
 | 2026-11-12 | Outcomes of random meeting patterns (`RANDOM-FATES-20261112-001`) | [closure](proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/RANDOM-FATES-20261112-001/) |
 | 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | [closure](proofs/SEARCH-AUDIT-20261112-001Z/SEARCH-AUDIT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SEARCH-AUDIT-20261112-001/) |

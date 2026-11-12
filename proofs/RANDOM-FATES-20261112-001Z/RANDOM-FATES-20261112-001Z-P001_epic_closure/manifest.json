@@ -1,0 +1,96 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "RANDOM-FATES-20261112-001Z-P001",
+ "canonical_id": "RANDOM-FATES-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "RANDOM-FATES-20261112-001Z",
+ "proof": "RANDOM-FATES-20261112-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: outcomes of random meeting patterns",
+ "status": "Proved",
+ "claim": "Ledger closing RANDOM-FATES-20261112-001: ticket A, the frozen census (P2, P3, P4, P7 held; P1, P5b, P6 failed in part; five U300 runs pending as RANDOM-FATES-A2; referee pending); ticket B, four theorems, proved and refereed (one corrected); ticket C, stage 2, Q1 to Q4b held, refereed; one correction, Not a block; recommendation research directions, whole-life jumps selected. No new claim.",
+ "dependencies": [
+  "RANDOM-FATES-20261112-001A",
+  "RANDOM-FATES-20261112-001B",
+  "RANDOM-FATES-20261112-001C"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "RANDOM-FATES-20261112-001",
+  "epic_path": [
+   "RANDOM-FATES-20261112-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/RANDOM-FATES-20261112-001A/RANDOM-FATES-20261112-001A-E001_fates_census/contract.json": "38e9cd0b94be5afaac3d4ce20dd61f68cb86c30edd3a599bebef396174d3a201",
+  "experiments/RANDOM-FATES-20261112-001C/RANDOM-FATES-20261112-001C-E001_newest_four_count/contract.json": "4ed275b7cbc9853025db1b1a07dda4388d99a4b76119813b24f451dac945e155",
+  "artifacts/RANDOM-FATES-20261112-001C/RANDOM-FATES-20261112-001C-E001_newest_four_count/summary.json": "560d01a7dc53c642f8de45dc903b65c4db87d9589cd5e9c173cebf5e4a87e8d6",
+  "proofs/RANDOM-FATES-20261112-001B/RANDOM-FATES-20261112-001B-P001_no_cycle_and_four_consecutive/manifest.json": "a0a0428be3ade9432acffdc6357c16b3668d9846b7b58d90362e6bf193c4d1a7",
+  "proofs/RANDOM-FATES-20261112-001B/RANDOM-FATES-20261112-001B-P001_no_cycle_and_four_consecutive/result.json": "646ec2c74dd9b6d8652f29b92e8831293147a519c206da04c3b8ef9dcef88193"
+ },
+ "paths": {
+  "manifest": "proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/result.json",
+  "check": "proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-12; ticket B and stage 2 refereed by independent agents; stage 1 referee pending (the referee thread).",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

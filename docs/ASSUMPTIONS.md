@@ -1884,6 +1884,11 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Find a result that changes between two weightings that allow the same patterns (for example uniform knots
   against growth to the same number of knots), or a weighting under which the readings stop depending on the process.
 - **History.**
+  - 2026-11-12 · Used by `RANDOM-FATES-20261112-001`, status unchanged: outcomes and readings differ by weighting (uniform knots end in
+    a jump over a fixed number of knots; growth that keeps adding distinctions carries large tie classes long before its end; only
+    newest-four growth never ends), each stated for its process
+    ([outcomes of random meeting patterns](../research/RANDOM-FATES-20261112-001/random_fates.md)); a shortest-description weighting
+    is direction 3 there.
   - 2026-11-12 · Added by `RANDOM-FATES-20261112-001`.
 
 ### A72 · A growing pattern ends when it allows no state
@@ -1902,6 +1907,9 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read the same growths under the other ending: measure when new knots stop changing the tie classes or the
   bond distances, and compare those times with the times of no allowed state.
 - **History.**
+  - 2026-11-12 · Used by `RANDOM-FATES-20261112-001`, status unchanged: under this reading uniform patterns end in a jump, the last
+    base tying 87 to 89% of its distinctions into one class; the other reading is direction 5 there, awaiting the owner's answer
+    ([outcomes of random meeting patterns](../research/RANDOM-FATES-20261112-001/random_fates.md)).
   - 2026-11-12 · Added by `RANDOM-FATES-20261112-001`.
 
 ### A73 · The owner's other realities are other knot patterns

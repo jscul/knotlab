@@ -1,0 +1,33 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RANDOM-FATES-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "RANDOM-FATES-20261112-001Z",
+ "proof": "RANDOM-FATES-20261112-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing RANDOM-FATES-20261112-001: ticket A, the frozen census (P2, P3, P4, P7 held; P1, P5b, P6 failed in part; five U300 runs pending as RANDOM-FATES-A2; referee pending); ticket B, four theorems, proved and refereed (one corrected); ticket C, stage 2, Q1 to Q4b held, refereed; one correction, Not a block; recommendation research directions, whole-life jumps selected. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/RANDOM-FATES-20261112-001A/RANDOM-FATES-20261112-001A-E001_fates_census/contract.json": "Frozen",
+   "experiments/RANDOM-FATES-20261112-001C/RANDOM-FATES-20261112-001C-E001_newest_four_count/contract.json": "Frozen",
+   "artifacts/RANDOM-FATES-20261112-001C/RANDOM-FATES-20261112-001C-E001_newest_four_count/summary.json": "run output",
+   "proofs/RANDOM-FATES-20261112-001B/RANDOM-FATES-20261112-001B-P001_no_cycle_and_four_consecutive/manifest.json": "Proved",
+   "proofs/RANDOM-FATES-20261112-001B/RANDOM-FATES-20261112-001B-P001_no_cycle_and_four_consecutive/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved",
+   "C": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

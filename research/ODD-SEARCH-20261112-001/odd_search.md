@@ -29,7 +29,7 @@ odd period, or is there a first odd harmony?
   to 59 found none.
 - **What pins it.** The steps are {±1, ±11} (11² = −1 modulo 61, the four fourth roots of 1) and twice them, and the word is unchanged,
   up to a shift, when positions are multiplied by 11 or −1. Its defect number is 11, beyond the small-defect search: the advisor's
-  family of sets invariant under a multiplier subgroup found it, not the brute-force order.
+  family of sets invariant under a multiplier subgroup found it, not the brute-force order. *Narrowed 2026-11-12 (`ODD-FAMILY-20261112-001`; logged in `docs/CORRECTIONS.md`, Not a block): the symmetry is shown, not that it holds the word in place. The same steps make no harmony at 14 of the 16 primes 1 mod 4 from 41 to 197, and at 73 they make one whose states are mostly not symmetric.*
 - **The even rule narrowed.** "The law's numbers are even" (`HARMONY-ARITH-20261112-001`, `EVEN-PERIOD-20261112-001`) holds below 30
   and at 31 and 37, not in general. Logged as a Narrowing in `docs/CORRECTIONS.md`, as frozen.
 
@@ -61,7 +61,7 @@ two orbits, found the smallest distance between them to be 11, judged the window
 
 - **For the owner's harmonies.** The knot law's repeats are mostly even, and the small ones are all even, but not all: at period 61 a
   repeat of odd length is held in place by a symmetry of the arithmetic modulo 61 (the four fourth roots of 1). Whether harmonies are
-  even was a question about which symmetries a period allows, not a law of the knot.
+  even was a question about which symmetries a period allows, not a law of the knot. *Narrowed 2026-11-12 (`ODD-FAMILY-20261112-001`; logged in `docs/CORRECTIONS.md`, Not a block): the symmetry is shown, not that it holds the word in place. The same steps make no harmony at 14 of the 16 primes 1 mod 4 from 41 to 197, and at 73 they make one whose states are mostly not symmetric.*
 - **For the count line.** The mirror still pairs and still forbids nothing, as proved; what forbade small odd periods was the room for
   an unseen flip, and at 61 a structured base leaves none.
 
@@ -79,7 +79,8 @@ One, logged in `docs/CORRECTIONS.md`: **Narrowing**, "the knot law's harmonies a
 The knot law's repeating patterns are not all even after all. Up to length 29, and at 31 and 37, every one is; but at 61 there is a
 pattern of odd length that the law holds completely still: twelve kinds of knot, each forbidding three equal values at equal
 spacing, leave room for only one pattern and its mirror. What holds it is a symmetry of counting modulo 61, the four ways to take a
-fourth root of 1.
+fourth root of 1. *Narrowed 2026-11-12: what holds it is not known; the symmetry is in its steps, and the same steps fail at
+most other primes (`ODD-FAMILY-20261112-001`).*
 
 ## Position and next directions
 
@@ -97,6 +98,9 @@ fourth root of 1.
 | 1 | The least odd harmony, and why 61 | 2/3 — Substantial | 2/3 — Testable | search sets invariant under a multiplier subgroup at every odd period 33 to 59, then explain the period-61 base algebraically → the least odd period and a construction, or 61 | Selected · awaiting go-ahead |
 | 2 | Odd harmonies at other primes | 2/3 — Substantial | 2/3 — Testable | the same family (fourth roots of 1 and their doubles, and other subgroups) at primes p ≡ 1 mod 4 up to 200 → a family of odd harmonies, or 61 alone | Alternative · deferred |
 | 3 | Why unsplit harmonies are antiperiodic, where they are | 1/3 — Incremental | 1/3 — Stated | characterise the even harmonies that are antiperiodic → a lemma | Alternative · deferred |
+
+*The long-term row's "a symmetry of the period decides" is narrowed (2026-11-12, `ODD-FAMILY-20261112-001`): every odd harmony found
+has steps closed under a fourth root of 1, and what decides it is not known.*
 
 - **#1** settles "first" and asks what the arithmetic of 61 does; the targeted family found it in seconds.
 - **#2** asks whether 61 is the start of a family, which would make odd harmonies a feature of the law's arithmetic rather than a

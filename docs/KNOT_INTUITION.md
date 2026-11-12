@@ -3121,6 +3121,23 @@ So holes come in two kinds:
      to 59 are open. The steps are the four fourth roots of 1 modulo 61 and their doubles: the law's numbers are not all even,
      and where an odd one appears it is pinned by a symmetry of the arithmetic modulo 61
      ([decision note](../research/ODD-SEARCH-20261112-001/odd_search.md)).
+     *Narrowed 2026-11-12 (`ODD-FAMILY-20261112-001`, below): the symmetry is in the steps, but it is not shown to pin the word;
+     the same steps fail at most other primes.*
+
+   **2026-11-12: which odd periods the knot law makes** (`ODD-FAMILY-20261112-001`).
+   - **The question.** 61 was the first odd harmony found. Which numbers does the law make as periods of harmonies, and what
+     decides it? Searched in two structured families of steps (unions of cosets of a group of multipliers, and steps with their
+     doubles) at every odd period from 33 to 59 and every prime from 61 to 199.
+   - **Three numbers: 61, 73 and 193 (proved, refereed twice).** At 73 the steps 1, 2, 27 and 54 (27² = −1 modulo 73) allow 730
+     states, five repeating words with their shifts and mirrors; at 193 six steps allow 386, one word with its shifts and mirror.
+     No two states of either differ in one place, so each is a harmony, odd and unsplit. Nothing else in range, and nothing at all
+     below 61 in these families.
+   - **What they share, and what it does not explain.** In each, the steps are unchanged by multiplying by a fourth root of 1, so
+     every period found is a prime one more than a multiple of 4. But the steps of 61 and 73 (1, 2 and their multiples by the
+     fourth root) make no harmony at 14 of the 16 such primes from 41 to 197, and at 73 four of the five words are not themselves
+     symmetric: the symmetry is shared, not shown to be the cause. Neither frozen explanation (the symmetry, or a near-threshold
+     count) passed its test, and the counts jump from no state at 53 to over 200,000 at 89
+     ([decision note](../research/ODD-FAMILY-20261112-001/odd_family.md)).
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
    clauses defines one.

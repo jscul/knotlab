@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: reading the end from the age profile, confirmed by its referee
+
+- The test of whether a growing pattern's end can be read from its age profile (`PREFIX-END-20261112-001`) was confirmed: every growth
+  regenerates and every comparison recomputes. One finding, that the densest early part reads the end better than density by more than
+  0.03, rests on its point estimate only, since one growth was compared several times and intervals over growths are wider; the fit
+  was a pairwise objective, and the standard one gives the same result
+  ([decision note](research/PREFIX-END-20261112-001/prefix_end.md)).
+- The literature for the age-profile result (`AGE-NEST-20261112-001`) is narrowed: the known theory gives thresholds for the largest
+  connected part and the cores, not for when the law allows no state
+  ([decision note](research/AGE-NEST-20261112-001/age_nest.md)).
+- Unchanged: every verdict.
+
 ## 12 November 2026: what ends a growing pattern, narrowed by its referee
 
 - The resample ladder (`AGE-NEST-20261112-001`) was confirmed: its chains are fair and its shares reproduce. What ends growth with

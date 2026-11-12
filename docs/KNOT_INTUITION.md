@@ -3316,7 +3316,7 @@ So holes come in two kinds:
      keep every knot's youngest distinction, so every count of knots among the oldest j, end about half the time, with or without the
      degrees, which is what the growth's own law given that profile predicts for the first dead core; degree-matched ones never do.
      The old distinctions die from being knotted among themselves (age-dependent random patterns: Bollobás, Janson and Riordan).
-   - **Read as a forecast** (`PREFIX-END-20261112-001`; referee pending): the age profile reads the end better than density but no
+   - **Read as a forecast** (`PREFIX-END-20261112-001`; refereed, confirmed with fixes): the age profile reads the end better than density but no
      better than the degrees, and no early part is past its own uniform end; the law's own ties read it far better (concordance 0.95
      against 0.75) ([decision note](../research/PREFIX-END-20261112-001/prefix_end.md))
      ([decision note](../research/AGE-NEST-20261112-001/age_nest.md))

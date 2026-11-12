@@ -1,8 +1,9 @@
 # An end read from the prefix counts
 
 Epic `PREFIX-END-20261112-001` (`AGE-NEST-20261112-001` direction 1; G17, with G7), 2026-11-12, at the coordinator's go-ahead.
-Pre-registered in commit 22005bffb before the registered run. The canonical K1–K3 test is unchanged. **Referee pending** (handed to
-the referee thread).
+Pre-registered in commit 22005bffb before the registered run. The canonical K1–K3 test is unchanged. Refereed by the referee thread
+(PREFIX-END-R1, `referee-R1/report.md`, commit b0473ef84): **confirmed with fixes**, folded in below; two corrections logged (both
+Not a block).
 
 ## Words
 
@@ -27,8 +28,13 @@ discriminate the step just before 2-colourability is lost from steps of growths 
 | --- | --- | --- | --- |
 | 1 | **No early part is past its own uniform end.** In none of the 685 last bases, and none of their matched negatives, does any early part (the oldest j distinctions, j in {20, 40, 80, 160, 320} and the deciles) have a uniform resample with its own j and knots that allows no state more than half the time. The simplest reading fails outright, as `AGE-NEST-20261112-001`'s referee found for the dying cores. | computed, frozen | E1 held |
 | 2 | **Density alone reads some of it.** Knots per distinction has concordance 0.685 (0.661 to 0.710): endings select histories rich in closings. | computed, frozen | E0 held |
-| 3 | **The age profile reads more than density, but no more than the degrees.** The profile's own end share (100 redraws keeping each knot's youngest distinction) has concordance 0.747 (0.723 to 0.770), 0.062 above density (0.032 to 0.088), so the kill condition is not met; but the degrees' second moment, κ = Σd(d − 1)/Σd, has 0.744, and the difference is 0.003 (−0.019 to 0.025). The largest early density has 0.727, 0.042 above density (E3 failed). | computed, frozen | E2 held; E3 failed |
-| 4 | **A fit does not beat the degrees.** A conditional logistic regression on density, κ, the largest early density and nine profile densities, fit on even runs, has concordance 0.773 on odd runs, 0.009 above κ (−0.018 to 0.035). | computed, frozen | E4 failed |
+| 3 | **The age profile reads more than density, but no more than the degrees.** The profile's own end share (100 redraws keeping each knot's youngest distinction) has concordance 0.747 (0.723 to 0.770), 0.062 above density (0.032 to 0.088), so the kill condition is not met; but the degrees' second moment, κ = Σd(d − 1)/Σd, has 0.744, and the difference is 0.003 (−0.019 to 0.025). The largest early density has 0.727, 0.042 above density (E3 failed). *After the referee:
+one growth serves as a negative up to 14 times, so intervals from resampling growths are wider: profile minus density 0.021 to 0.108,
+profile minus κ −0.032 to 0.040, largest early density minus density −0.006 to 0.089. E2 holds either way; E3's failure rests on its
+point estimate only, since both intervals include the 0.03 bound.* | computed, frozen | E2 held; E3 failed |
+| 4 | **A fit does not beat the degrees.** A conditional logistic regression on density, κ, the largest early density and nine profile densities, fit on even runs, has concordance 0.773 on odd runs, 0.009 above κ (−0.018 to 0.035). *After the referee: the fit treated each matched set of one
+and three as three separate pairs; the proper conditional likelihood (the referee's, and statsmodels') gives 0.772, and over growths
+the difference from κ is −0.038 to 0.054, so E4 fails either way.* | computed, frozen | E4 failed |
 | 5 | **The ceiling is far higher.** The base's own closing hazard, the share of triples on one side of one tie class, has concordance 0.947 (0.936 to 0.957). What reads the end is the law's own ties, not any count of knots. | computed, frozen; the hazard is the end's chance by definition | reported |
 | 6 | **Young growths are easier to read.** In the youngest third of endings the profile's share reads 0.80 and density 0.75; in the oldest third 0.69 and 0.66. Against negatives that live at least 500 knots more, every feature reads a little better (density 0.72, κ 0.77, the fit 0.80 on odd runs). | computed, frozen | reported |
 
@@ -58,8 +64,12 @@ hazard uses exact tie classes; the profile's share 100 redraws; the uniform null
 
 ## Review
 
-Referee pending (the referee thread). The advisor model reviewed the design cold before freezing (changes listed in the
-pre-registration).
+**PREFIX-END-R1** (the referee thread, confirmed with fixes): all 800 growths regenerated with independent code and every cheap feature
+of the 4,750 bases matching exactly; every matched concordance recomputes (m/n 0.685, κ 0.744, largest early density 0.727, Uprefix
+0.546, the profile's share 0.747, hazard 0.947); the profile's share on 60 bases correlates 0.977 with its own redraws; E1 holds (0 of
+each); the risk set is fair nested case-control sampling. Its two fixes, the growth-level intervals and the fit's objective, are made
+above. "Beyond density, not beyond degrees" is fair, and κ and the profile's share are rank-correlated at 0.75. The advisor model
+reviewed the design cold before freezing (changes listed in the pre-registration).
 
 ## Literature and provenance
 
@@ -78,13 +88,15 @@ Substantive: the census of 800 growths and 4,750 bases. Administrative: the pre-
 
 ## Corrections
 
-None.
+Two, from the referee (`docs/CORRECTIONS.md`, 2026-11-12): **Not a block**, E3's failure rests on its point estimate, since intervals
+from resampling growths include the bound; **Not a block**, the fit was a pairwise objective, not the conditional likelihood, which
+gives the same held-out concordance.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — an end read from the prefix counts | **Status:** Partially successful (referee pending) | E0, E1, E2 held; E3, E4 failed: the profile reads beyond density but not beyond degrees |
+| This attempt — an end read from the prefix counts | **Status:** Partially successful (refereed, confirmed with fixes) | E0, E1, E2 held; E3, E4 failed: the profile reads beyond density but not beyond degrees |
 | Local direction — why growths end | Practically exhausted | The end is read best by the law's ties, by definition; counts add little beyond degrees |
 | Broader exploration — G17 | Searching | Other weightings and laws untried |
 | Long-term goal — G17 Typical and rare meeting patterns (with G7) | Capability gained | What ends a growing pattern and what reads it are now separated |
@@ -92,7 +104,7 @@ None.
 The local direction has reached diminishing returns: five epics have narrowed the end of growth with closings anywhere to its age
 profile, and the forecast adds nothing beyond degrees. The next payoff lies in the weighting itself.
 
-**Corrections:** none. **Goals:** a G17 checkpoint (capability gained, with G7); no goal change. **Assumptions:** A71 and A72 used.
+**Corrections:** none at close; two after the referee (both Not a block). **Goals:** a G17 checkpoint (capability gained, with G7); no goal change. **Assumptions:** A71 and A72 used.
 **Basket:** `OLD-CORE-20261112-001#2` (where X growth ends, over q from 0.2 to 0.3), `LIFE-JUMPS-20261112-001#2`,
 `MISSING-KNOTS-20261112-001#1`, `RANDOM-FATES-20261112-001#3` (other weightings) and `#5` (the other meaning of "die").
 

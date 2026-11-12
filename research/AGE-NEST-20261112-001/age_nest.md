@@ -74,7 +74,9 @@ paired per-core test, the forced-resample count and the held-out pilot.
 
 Known (the referee's): age-dependent random patterns are inhomogeneous random hypergraphs (Bollobás, Janson and Riordan 2007), and grown
 networks differ from their degree-matched versions (Callaway et al. 2001), so that an age profile, not degrees, carries a grown
-pattern's thresholds is known in kind; the rungs and their shares are new data. Also known: degree-preserving switch chains (Chodrow 2020 for hypergraphs with multi-edges; Dyer, Greenhill, Kleer, Ross and Stougie 2021
+pattern's thresholds is known in kind for the giant component and the cores (Riordan 2008), which are necessary for an end, not for
+2-colourability itself, where no threshold for age-dependent patterns is known (*narrowed after PREFIX-END-R1, which corrected the
+referee's own sentence*); the rungs and their shares are new data. Also known: degree-preserving switch chains (Chodrow 2020 for hypergraphs with multi-edges; Dyer, Greenhill, Kleer, Ross and Stougie 2021
 on sampling hypergraphs with given degrees); grown random networks differing from their degree-matched static versions (Callaway,
 Hopcroft, Kleinberg, Newman and Strogatz 2001; Bollobás, Janson and Riordan); the pair-count lemma's trades (Pasch; Hedayat and Li
 1979). Not found: which structure ends grown not-all-equal patterns. Classification: known-with-delta (the tools are known; the

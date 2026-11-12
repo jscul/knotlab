@@ -149,6 +149,25 @@ The mathematics is compatible with this reading but does not prove it.
 
 Evidence: [the thesis](docs/FOUNDATIONAL_THESIS.md#protected-modal-plurality-interpretation)
 
+### Nothing chooses a meeting pattern
+
+**Reading** · 2026-11-12
+
+John Cullen, on 11 November 2026 (Pacific time): "Yes, there is no choice. I
+feel like we keep going back to this being a choice. It isn't. It's just
+random." Of our reality: "It is indifferent. It's is purely coincidental."
+This is the co-reality reading applied to which knots share which
+distinctions: no meeting pattern is selected, so one the record writes down is
+one sample, not a gap to be closed, and the questions become which meeting
+patterns are typical and which rare, and what a law reads off each. Since no
+chances can be equal over infinitely many alternatives, typical and rare are
+always relative to a declared weighting. His other realities are read as other
+knot patterns of the same kind of logic, and bound realities as one larger
+knot pattern, never as contact across bases. Whether a law forces its own
+meeting pattern stays a separate question.
+
+Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen), [the register, A15, A71 and A73](docs/ASSUMPTIONS.md)
+
 ## 2. The first knot
 
 What a single binding is. The [intuition guide](INTUITIONS.md) explains each
@@ -869,6 +888,38 @@ witness report about a loop's interior, and which structures count as native
 loops?
 
 Evidence: [the knot intuition, questions 1, 2, 4 and 7](docs/KNOT_INTUITION.md#open-questions)
+
+### Typical and rare meeting patterns
+
+**Open** · 2026-11-12
+
+Grow a knot pattern one knot at a time under a declared random process. Its
+outcome, after John Cullen's three: it resolves to nothing, it ends (allows
+states for a while, then none), or it goes on forever. Under not-all-equal
+with knots placed uniformly at random, the end comes near 2.1 knots per
+distinction (known; the exact value for three-place knots is open), and the
+contradiction that ends a large pattern is never local (known). Open: what the
+law reads off the patterns that live (ties, faithfulness, bond distance
+against steps apart), what other growth processes do, and whether the law's
+own quantities approach a limit as a pattern nears its end, which John Cullen
+expects ("similar to limits", "relativity, but for logic"). A census is
+pre-registered.
+
+Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen), [the census's pre-registration](research/RANDOM-FATES-20261112-001/preregistration.md)
+
+### Bases within bases
+
+**Open** · 2026-11-12
+
+John Cullen: "each boolean variable could be its own micro infinite series of
+logic, that's bound to others". Can a whole base, read through a declared open
+bit, stand in for one distinction of a larger base with the same law at the
+level above, at every level? Untested. Known nearby: not-all-equal adds only
+knots of its own kind where knots overlap, drawn pieces nest to any depth in
+one family, and towers of named patterns from one three-place law keep only
+parity.
+
+Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
 
 ### The weak four-place kinds
 

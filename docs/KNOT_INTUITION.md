@@ -3079,6 +3079,17 @@ So holes come in two kinds:
 7. **Limits.** Does the program need a contact that binds infinitely many
    loops? That would need a declared limit rule, since no set of finite
    clauses defines one.
+
+   **2026-11-12: the owner's limits near the end** (owner's statement, 2026-11-11 Pacific; not tested).
+   - **His words.** Of combinations that "go for a while then die": "I get some inkling this is similar to limits. [...] the
+     calculus is hard because the results themselves will be "non-spatial" [...]. They are just relative to each other. It's like
+     relativity, but for logic."
+   - **The coordinator's reading.** A growing knot pattern ends at the first knot after which it allows no state (A72). Near the
+     end what the law forces reaches further, and the contradiction that ends a large uniform pattern holds a constant share of it
+     (known). It is a limit in the exact sense if the law's own quantities, such as the largest tie class, approach a value as the
+     end nears, and not if they jump; `RANDOM-FATES-20261112-001` measures this. "Relativity" is an analogy only: bond distance is
+     already relative, and shortcuts are where it parts from steps apart
+     ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose
@@ -5971,6 +5982,21 @@ So holes come in two kinds:
      knots whose constraints appear at doubling distances (literature: Ledrappier's shift).
    - **Fourteen kinds of base fold (computed).** Of the 38 kinds of base with shortcuts, 14 keep bonds of four at five and six steps,
      all among those whose shortcuts reached four steps ([decision note](../research/FOLD-20261112-001/fold.md)).
+
+   **2026-11-12: nothing chooses a meeting pattern** (owner's statements, 2026-11-11 Pacific; interpretation, with readings under test).
+   - **His words.** "There is no choice. [...] It's just random", with some realities perhaps "statistically more likely than
+     others"; other realities are "Different meeting patterns! [...] Both the underlying patterns and even possibly the binding
+     patterns"; ours "is indifferent. It's is purely coincidental"; and "some combinations should resolve to nothing, some can go
+     for a while then die. Others will go on forever and create sets like the natural numbers."
+   - **What it changes.** The entries above that say a meeting pattern is given or put in describe one sample, not a gap: none is
+     chosen (A15, applied). Whether a law forces its own meeting pattern (A62) stays a question of its own; beside it stands which
+     meeting patterns are typical and which rare, always under a declared weighting (A71), since no chances are equal over
+     infinitely many. Other realities are read as other knot patterns of one kind of logic, bound ones as one larger knot pattern
+     (A73).
+   - **Known.** Random not-all-equal patterns end near 2.1 knots per distinction (exact value for three places open). Not found:
+     what the law reads off the ones that live, and the outcomes of other growth processes. Tested by `RANDOM-FATES-20261112-001`;
+     the owner's recursion, a base standing in for one distinction, is backlog B164
+     ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
 
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all

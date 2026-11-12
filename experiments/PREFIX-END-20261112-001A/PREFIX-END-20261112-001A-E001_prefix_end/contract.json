@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PREFIX-END-20261112-001A-E001",
+ "ticket": "PREFIX-END-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Can the end of growth with closings anywhere be read from its prefix counts, better than from knots per distinction or degrees, and how close to its closing hazard?",
+ "definitions": {
+  "growths": "800 X(0.3) to 6,000 moves; seeds sha256 PE:X0.3:run.",
+  "positives": "each ending's last base at age M.",
+  "negatives": "3 risk-set growths of the same parity alive past M, read at M; 3 secondary with >= M + 500 knots.",
+  "features": "mn, kappa, maxD, Uprefix (20 uniform resamples per prefix), Pnest (100 nested resamples), hazard (exact tie classes), logit (conditional, paired differences, even runs fit, odd runs test).",
+  "metric": "matched concordance with growth-level bootstrap intervals."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 d6b893377016a41787a6f4c58c78e0c0439bfd51c09152d7fd4c64e1c55c32ce) beside this file; fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35); pysat; numpy.",
+  "run": "census.py --grow, then --features, then --summary, from the repository root; output artifacts/PREFIX-END-20261112-001A/PREFIX-END-20261112-001A-E001_prefix_end/."
+ },
+ "forbidden_inputs": [
+  "Changing growths, matching, features, resamples, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Matched concordances of each feature, their paired differences, E1's shares.",
+ "cheapest_meaningful_control": "Knots per distinction (E0) and degrees (kappa) as baselines; the hazard as a ceiling.",
+ "predictions": {
+  "E0": "mn concordance >= 0.55",
+  "E1": "< 10% of last bases have a prefix whose uniform resample ends > half the time",
+  "E2": "Pnest >= 0.65 and >= mn + 0.05 with CI above 0; kill within 0.05",
+  "E3": "maxD <= mn + 0.03",
+  "E4": "logit beats the best cheap feature on odd runs, CI above 0"
+ },
+ "decision_rules": {
+  "E2 holds": "the prefix counts read the end beyond density",
+  "E2 kill": "they add nothing beyond density"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About forty minutes on eight workers; systemd-run --user -p MemoryMax=12G -p MemorySwapMax=0."
+}

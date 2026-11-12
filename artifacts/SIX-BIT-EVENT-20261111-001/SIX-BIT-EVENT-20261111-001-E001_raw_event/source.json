@@ -1,0 +1,266 @@
+{
+  "original_source": {
+    "equal_words_reachable": [],
+    "hitting": {
+      "stored_bit_is_one": {
+        "hit_with_probability_one_from_all_starts": false,
+        "reachable_states_without_a_path_to_target": 108,
+        "reachable_target_states": 0
+      },
+      "upper_pair_is_00": {
+        "hit_with_probability_one_from_all_starts": false,
+        "reachable_states_without_a_path_to_target": 108,
+        "reachable_target_states": 0
+      }
+    },
+    "initial_states": 108,
+    "matched_source_traces": {},
+    "reachable_joint_states": 108,
+    "source_states": 18,
+    "upper_pairs_reachable": [
+      "01",
+      "10",
+      "11"
+    ],
+    "written_can_fall_back_to_zero": false
+  },
+  "proposal_order": [
+    "source.a",
+    "source.b",
+    "source.c",
+    "source.x",
+    "source.y",
+    "source.z",
+    "memory.a",
+    "memory.b",
+    "memory.c",
+    "memory.x",
+    "memory.y",
+    "memory.z",
+    "reader.p",
+    "reader.q"
+  ],
+  "source_and_witness_coupling": "The source evolves freely. Its xyz drive the three witness couplings. The reader NAE(y,p,q) stays attached and can veto a change. All 14 proposals are equiprobable.",
+  "source_without_abc": {
+    "equal_words_reachable": [
+      "000",
+      "111"
+    ],
+    "hitting": {
+      "stored_bit_is_one": {
+        "hit_with_probability_one_from_all_starts": true,
+        "reachable_states_without_a_path_to_target": 0,
+        "reachable_target_states": 702
+      },
+      "upper_pair_is_00": {
+        "hit_with_probability_one_from_all_starts": true,
+        "reachable_states_without_a_path_to_target": 0,
+        "reachable_target_states": 234
+      }
+    },
+    "initial_states": 156,
+    "matched_source_traces": {
+      "000": {
+        "common_probe_from": [
+          "001001",
+          "100110",
+          "01"
+        ],
+        "moves": [
+          {
+            "after": [
+              "101001",
+              "001101",
+              "01"
+            ],
+            "proposal_index": 0
+          },
+          {
+            "after": [
+              "111001",
+              "001101",
+              "01"
+            ],
+            "proposal_index": 1
+          },
+          {
+            "after": [
+              "111000",
+              "001101",
+              "01"
+            ],
+            "proposal_index": 5
+          },
+          {
+            "after": [
+              "111000",
+              "101101",
+              "01"
+            ],
+            "proposal_index": 6
+          },
+          {
+            "after": [
+              "111001",
+              "101101",
+              "01"
+            ],
+            "proposal_index": 5
+          },
+          {
+            "after": [
+              "011001",
+              "101101",
+              "01"
+            ],
+            "proposal_index": 0
+          },
+          {
+            "after": [
+              "001001",
+              "101101",
+              "01"
+            ],
+            "proposal_index": 1
+          },
+          {
+            "after": [
+              "001001",
+              "100101",
+              "01"
+            ],
+            "proposal_index": 8
+          },
+          {
+            "after": [
+              "001001",
+              "100100",
+              "01"
+            ],
+            "proposal_index": 11
+          },
+          {
+            "after": [
+              "001001",
+              "100110",
+              "01"
+            ],
+            "proposal_index": 10
+          }
+        ],
+        "probe_after_proposing_q": [
+          "001001",
+          "100110",
+          "00"
+        ],
+        "same_probe_from_clear_start": [
+          "001001",
+          "001101",
+          "01"
+        ],
+        "start": [
+          "001001",
+          "001101",
+          "01"
+        ]
+      },
+      "111": {
+        "common_probe_from": [
+          "001001",
+          "001011",
+          "01"
+        ],
+        "moves": [
+          {
+            "after": [
+              "001101",
+              "001101",
+              "01"
+            ],
+            "proposal_index": 3
+          },
+          {
+            "after": [
+              "000101",
+              "001101",
+              "01"
+            ],
+            "proposal_index": 2
+          },
+          {
+            "after": [
+              "000111",
+              "001101",
+              "01"
+            ],
+            "proposal_index": 4
+          },
+          {
+            "after": [
+              "000111",
+              "001001",
+              "01"
+            ],
+            "proposal_index": 9
+          },
+          {
+            "after": [
+              "000011",
+              "001001",
+              "01"
+            ],
+            "proposal_index": 3
+          },
+          {
+            "after": [
+              "001011",
+              "001001",
+              "01"
+            ],
+            "proposal_index": 2
+          },
+          {
+            "after": [
+              "001001",
+              "001001",
+              "01"
+            ],
+            "proposal_index": 4
+          },
+          {
+            "after": [
+              "001001",
+              "001011",
+              "01"
+            ],
+            "proposal_index": 10
+          }
+        ],
+        "probe_after_proposing_q": [
+          "001001",
+          "001011",
+          "00"
+        ],
+        "same_probe_from_clear_start": [
+          "001001",
+          "001101",
+          "01"
+        ],
+        "start": [
+          "001001",
+          "001101",
+          "01"
+        ]
+      }
+    },
+    "reachable_joint_states": 1404,
+    "source_states": 26,
+    "upper_pairs_reachable": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "written_can_fall_back_to_zero": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "Test both all-equal words and every mixed word under the same local dynamics, check timing and retention, and verify that the stored distinction changes the fresh upper response at a matched later input.",
+  "dependencies": [
+    "OVERLAP-READ-20261111-001B",
+    "SIX-BIT-MEMORY-20261111-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "autonomous_source_path": "artifacts/SIX-BIT-EVENT-20261111-001/SIX-BIT-EVENT-20261111-001-E001_raw_event/source.json",
+    "contract_path": "experiments/SIX-BIT-EVENT-20261111-001/SIX-BIT-EVENT-20261111-001-E001_raw_event/contract.json",
+    "evidence_stage": "exploratory",
+    "experiment_id": "SIX-BIT-EVENT-20261111-001-E001",
+    "polarity_path": "artifacts/SIX-BIT-EVENT-20261111-001/SIX-BIT-EVENT-20261111-001-E001_raw_event/polarity.json",
+    "program": "learning",
+    "report_path": "research/SIX-BIT-EVENT-20261111-001/raw_event.md",
+    "result_sha256": "126fbaca7d4a8a1b85b24e93e3d9e197a73d17856889cec5f55deb8f206dda27",
+    "terminal_artifact": "artifacts/SIX-BIT-EVENT-20261111-001/SIX-BIT-EVENT-20261111-001-E001_raw_event/result.json",
+    "verification_path": "artifacts/SIX-BIT-EVENT-20261111-001/SIX-BIT-EVENT-20261111-001-E001_raw_event/verification.json",
+    "verification_sha256": "1454a131cbc6e236db901fde1828e36923c2ba66651f2aae44054a3dde061050"
+  },
+  "id": "SIX-BIT-EVENT-20261111-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Test G16 on the original four not-all-equal knots. Present raw three-bit observations with no external write signal, require lasting experience-dependent behavior at a common later probe, and identify what the six distinctions and any added local rule supply.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SIX-BIT-EVENT-20261111-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Supported in the finite exploratory model. Three fixed input couplings let 000 or 111 trigger a lasting change in an original witness bit without a write command. In the autonomous system the upper pair 00 is impossible with the original source and is eventually reached with probability one when the source knot on abc is removed. An alternative internal preference stores the last sustained polarity. Finite events can be missed. Wiring and dynamics are supplied.",
+  "status_class": "supported",
+  "stop_rule": "Close after exact finite response, causal controls, autonomous source and separate checks. Record the supplied connections and rule of change and the possibility of finite misses.",
+  "title": "Can an observed three-bit word trigger the six-bit memory?"
+}

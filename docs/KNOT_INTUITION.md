@@ -3244,15 +3244,17 @@ So holes come in two kinds:
      21 every length outside a residue class (0011: not a multiple of 4; 14 harmonies: every odd length), 20 finitely many lengths
      ([decision note](../research/LOOP-LOCK-20261112-001/loop_lock.md)).
 
-   **2026-11-12: locks across two shifts** (`SHIFT-LOCK-20261112-001`; referee pending).
+   **2026-11-12: locks across two shifts** (`SHIFT-LOCK-20261112-001`; refereed, confirmed with fixes).
    - **Straight ties add nothing (proved).** Copies of a harmony along two shifts, tied by knots three copies long along one shift,
      lock exactly when both rings lock: rows and columns are rings, and a ring state laid along one shift is a state of the whole.
    - **The mixed knot makes two-way states (exact; after the run, checked).** With the knot one step along each shift, the shape of
      Ledrappier's law, 34 of 45 harmonies have states that repeat along no short step, and in 78 cells (10 harmonies) they are the only
-     way the arrangement stays open. For 0011 + 01 they are phases counted in whole numbers with three step pairs (the literature's
+     way the arrangement stays open at A77's cut (steps of at most two copies); 17 of them (5 × 7, 5 × 9, 7 × 9) stay so at any cut
+     (the referee). For 0011 + 01 they are phases counted in whole numbers with three step pairs (the literature's
      height functions of tilings), and bounds on the mean steps (the literature's slope polygon) decide every lock to 16 × 16.
-   - **But they carry no influence (after the run).** Where only two-way states exist, no copy fixes any other; whole arrangements lock
-     at every size only through cycles: thin strips and the arithmetic of short steps. Unbounded two-way influence would need stitch pairs
+   - **But they tie copy 0 to nothing (after the run; a range statement).** Where only two-way states exist, copy 0 is tied to no other
+     copy (78 of 78); to 16 × 16, whole arrangements lock at every size only through cycles: thin strips and the arithmetic of short
+     steps. Unbounded two-way influence would need stitch pairs
      forming a ratio subgroup, as Ledrappier's law has; no harmony has them
      ([decision note](../research/SHIFT-LOCK-20261112-001/shift_lock.md)).
 

@@ -2,8 +2,8 @@
 
 Epic `SHIFT-LOCK-20261112-001` (`LOOP-LOCK-20261112-001` direction 1, why rings lock by arithmetic, taken to copies along two shifts;
 G17 with G8; program mathematics, group arithmetic), 2026-11-12, at the coordinator's go-ahead. Pre-registered in
-[preregistration.md](preregistration.md), frozen in commit `4a511977a`. Proof family: `proofs/SHIFT-LOCK-20261112-001A/`. **Referee
-pending.**
+[preregistration.md](preregistration.md), frozen in commit `4a511977a`. Proof family: `proofs/SHIFT-LOCK-20261112-001A/`. **Refereed:
+confirmed with fixes** ([referee R1](referee-R1/report.md); the fixes are folded in below and logged in `docs/CORRECTIONS.md`).
 
 ## The question
 
@@ -16,8 +16,9 @@ behind it: meeting patterns that "fold in immensely complex ways and can be kind
 
 **Two-way states exist, but influence still travels around cycles.** Copies along two shifts tied by straight knots add nothing to the
 rings (proved). With the mixed knot, the three-member shape of Ledrappier's law, states that repeat along no step appear in 34 of the
-45 harmonies, and in 78 cells they are the only way the arrangement opens. But they tie no copy to any other, and every lock that holds
-at all sizes of a family comes from a walk around one cycle.
+45 harmonies, and in 78 cells, at A77's cut (steps of at most two copies), they are the only way the arrangement opens; at any cut,
+17 of those cells (5 × 7, 5 × 9, 7 × 9) still open only through states that repeat along no step at all (the referee). In all 78 they
+tie copy 0 to nothing, and on the range to 16 × 16 every lock that holds at all sizes of a family comes from a walk around one cycle.
 
 - **Unmixed knots reduce to rings (proved; 945 of 945).** With knots (x, x + e, x + 2e) along each shift, the n × m arrangement
   locks exactly when the ring of n and the ring of m both lock: rows and columns are rings, and a ring state laid along one shift is a
@@ -25,30 +26,38 @@ at all sizes of a family comes from a walk around one cycle.
 - **The mixed knot (exact, n, m = 2 to 9, 2,880 cells).** For the knot (x, x + e₂, x + e₁), 323 cells lock; in 1,303 every non-constant
   state repeats along a short step (at most two copies each way, up to the harmony's own shifts and flip), a walk around one cycle; in
   878 some state repeats along no short step; and in **78 cells, for 10 harmonies, no non-constant state repeats along a short step at
-  all**, so the arrangement opens only through two-way states (the frozen "yes", in its weaker form). On squares to 16 × 16 this never
-  happens (675 of 675), so the strongest form frozen did not appear.
-- **What the two-way states are (after the run).** Each of the 78 satisfies the law by direct evaluation and repeats along no step at
-  all; none is a short-step state under any other symmetry of the harmony's states where those could be listed (50 cells). For
+  all**, so at A77's cut the arrangement opens only through two-way states (the frozen "yes", in its weaker form). On squares to
+  16 × 16 this never happens (675 of 675), so the strongest form frozen did not appear. **The cut matters (the referee, by fresh
+  code):** in 42 of the 78 some non-constant state repeats along a step of 3 or 4 (often a smaller repeat's state laid twice: 7 × 6 of
+  `00001111 + 0011` opens through 7 × 3's state along (0, 3)); 21 have a side of 3 (a ring of three-copy rows with a finite transfer);
+  only **17 cells** keep both sides at least 4 with no non-constant state repeating along any step: 12 at 5 × 7 or 7 × 5, 3 at 7 × 9 or
+  9 × 7, 2 at 5 × 9 or 9 × 5. Those 17 are the robust core.
+- **What the two-way states are (after the run).** The state found in each of the 78 cells satisfies the law by direct evaluation and
+  repeats along no step at all; other states of 42 of those cells do repeat along a step of 3 or 4 (above), which is not in conflict:
+  my check read the found state only. No other symmetry of the harmony's states gives a short-step state where those could be listed:
+  50 cells by my check, and the largest harmony's 14 by the referee's (its symmetries are only its shifts and flip); the five-orbit
+  harmony of period 8, with more than 200 further symmetries, keeps its 14 cells unchecked. For
   `0011 + 01` they are mixed lifted phases: on the orbit of 0011 a knot's members are equal or three distinct phases in increasing
   order, which makes each state a phase counted in whole numbers with three step pairs (the literature's height function of a tiling),
   and the mean-step bounds (the total steps around a row and a column, divided by the sizes, must satisfy three inequalities fixed by
   counting the copies of each step pair; the literature's slope polygon of the dimer model) decide every lock to 16 × 16 (225 of 225).
   When no whole-number mean steps fit, every state mixes step pairs and repeats along no step.
-- **Influence (after the run).** In all 78 cells copy 0 is tied to nothing. Locks that hold at every size of a family come only from
+- **Influence (after the run; a range statement).** In all 78 cells copy 0 is tied to nothing. To 16 × 16, locks that hold at every
+  size of a family come only from
   strips (one count at most 7, a ring of short rows with a finite transfer) and from short-step arithmetic (`0011` locks exactly when
   4 ∤ m and gcd(n, m) ≤ 3, 225 of 225); other locks are sporadic (5 × 5 for `0011 + 01`; 6 × 6, 9 × 9, 9 × 11, 11 × 9 and 11 × 11 for
   `00001111 + 00101101 + 01`). On rings, one copy fixes exactly every L-th copy at every length, L the least common multiple of the
   periods in play (403 of 405 cells as predicted).
 - **No linear case, and the method would see one.** No harmony's increments hold a whole line {(a, λa)}, the condition for a
   Ledrappier-type automaton. Ledrappier's own law, run as the control, unlocks exactly at the advisor's sizes (3, 6, 7, 9, 12, 14, 15,
-  18, 21, 24, 27, 28, 30, 31 to 32), and at 31 none of its states repeats along a short step.
+  18, 21, 24, 27, 28, 30 and 31, for n up to 32; 32 does not unlock), and at 31 none of its states repeats along a short step.
 
 ## What is proved and what is computed
 
 | Claim | Evidence class |
 | --- | --- |
 | Unmixed knots on two shifts lock iff both rings lock; stepped states are states | proved by hand (with the advisor model); exact on 945 cells |
-| Mixed knot: 78 cells open only through states with no short step; 878 with some; none on squares to 16 | exact on the range (frozen) |
+| Mixed knot: 78 cells open only through states with no short step (at A77's cut; 17 at any cut, the referee); 878 with some; none on squares to 16 | exact on the range (frozen; refereed) |
 | Ring ties: n, n / L or copy 0 alone | exact on 405 cells (frozen; 2 exceptions at 6) |
 | Ledrappier control and the short-step discriminator | exact by rank to 32 (frozen) |
 | The 78 states verified, no step at all, tie nothing; no other symmetry gives a short state (50 cells) | after the run, descriptive |
@@ -78,9 +87,9 @@ for the two-way states (in this record: lifted phases, step pairs and the mean-s
 ## What it changes
 
 - **For the owner's "globally influential".** Folding in two directions does make genuinely two-way patterns, ones no walk around a
-  single cycle produces, and at some sizes they are the only way the arrangement stays open. But they are the patterns with the least
-  influence: in them no copy fixes any other. Influence that reaches across every size, a whole arrangement locked, still runs around
-  cycles: thin strips, and the arithmetic of short steps. A pattern whose influence is both unbounded and two-way would need increments
+  single cycle produces, and at some sizes they are the only way the arrangement stays open (17 cells at any cut). But where only they
+  exist, copy 0 is tied to nothing. On the range, influence that reaches across every size, a whole arrangement locked, still runs
+  around cycles: thin strips, and the arithmetic of short steps. A pattern whose influence is both unbounded and two-way would need increments
   that hold a whole line, as Ledrappier's law does; none of the 45 harmonies has them.
 - **For the knots-alone thread's window bonds** (`COMMON-FOLD-20261112-001`: travelling found on two-shift bases but not certified by
   doubly periodic states up to period 8). Related, not the same object: the states here are doubly periodic (states of a finite
@@ -99,14 +108,17 @@ as locking and ties, and is unchanged. Added: A77, a walk around one cycle read 
 None at the close. (A progress message in the thread said 11 harmonies for the 78 cells; it is 10, edited in place.) Later, from
 `LINE-LOCK-20261112-001`: words for a drawn space (tilings, cell types, slope polygon, slope rule) replaced in this note's prose by
 lifted phases, step pairs and the mean-step bounds, with the literature's names kept once; the direction table and the report as sent
-keep their words ("Prove the slope rule" is the mean-step rule). Logged in `docs/CORRECTIONS.md`; Not a block.
+keep their words ("Prove the slope rule" is the mean-step rule). Logged in `docs/CORRECTIONS.md`; Not a block. After the referee
+(R1), two more, logged there and in knotlab's HISTORY.md: the 78 cells hold at A77's cut, with a robust core of 17 (Narrowing); and,
+in one entry, the automorphism coverage, "tie copy 0 to nothing" for "carry no influence" with the cycle statement as one on the
+range, and the Ledrappier sizes' wording (Not a block).
 
 ## In the owner's words
 
 Tie copies of a pattern to each other across two directions with straight ties, and it behaves exactly like two separate rings. Tie
 them with a knot that reaches one step each way, and genuinely two-dimensional patterns appear, ones that never repeat along any
-step, and sometimes they are the only thing keeping the whole from locking. For one pattern they are like tilings, with each copy's
-phase counted up in whole numbers, and simple bounds on the average step decide when the whole locks. But these two-dimensional patterns carry no influence: where only they exist, no copy pins any other. The
+step, and sometimes they are the only thing keeping the whole from locking (robustly at a few sizes such as 5 by 7). For one pattern they are like tilings, with each copy's
+phase counted up in whole numbers, and simple bounds on the average step decide when the whole locks. But where only these two-dimensional patterns exist, no copy pins any other. In the sizes checked, the
 influence that reaches across every size still runs around cycles.
 
 ## Position and next directions

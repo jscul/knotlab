@@ -13,6 +13,16 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   pre-registration said ([decision note](research/COMMON-FOLD-20261112-001/common_fold.md)).
 - Unchanged: every number and every frozen verdict.
 
+## 12 November 2026: locks across two shifts, narrowed by its referee
+
+- Copies of a harmony along two shifts (`SHIFT-LOCK-20261112-001`): the referee reproduced every count with fresh code. The 78 cells
+  where the arrangement opens only through states that repeat along no step hold at the record's cut (steps of at most two copies,
+  assumption A77); in 42 of them other states repeat along a step of 3 or 4, 21 have a side of 3, and 17 cells (sizes 5 × 7, 5 × 9,
+  7 × 9) stay so at any cut. "Carry no influence" now reads "tie copy 0 to nothing", the cycle statement is one on the range, and the
+  symmetry check covers the largest harmony
+  ([decision note](research/SHIFT-LOCK-20261112-001/shift_lock.md)).
+- Unchanged: every count, the proof that straight ties add nothing to the rings, the Ledrappier control.
+
 ## 12 November 2026: words for a drawn space in the two-shift record
 
 - The record of copies along two shifts (`SHIFT-LOCK-20261112-001`) called its two-way states tilings with cell types decided by a

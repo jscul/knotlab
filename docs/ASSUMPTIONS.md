@@ -2021,3 +2021,5 @@ evidence: results and their status come from the records each entry links.
   rows, under which strips count as cycles and two-way states never do.
 - **History.**
   - 2026-11-12 · Added by `SHIFT-LOCK-20261112-001`.
+  - 2026-11-12 · Its referee (R1) moved the cut: at steps of 3 or 4, 42 of the 78 cells open through states that repeat, 21 have a side
+    of 3, and 17 stay two-way at any cut; the claim is now stated relative to this reading. Status unchanged.

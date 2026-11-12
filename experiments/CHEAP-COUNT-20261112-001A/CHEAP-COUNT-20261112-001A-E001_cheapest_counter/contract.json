@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CHEAP-COUNT-20261112-001A-E001",
+ "ticket": "CHEAP-COUNT-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "The fewest NAE knots with fresh distinctions defining a four-place parity, the counter built from it, its fragility and weight, and a hopping variant.",
+ "definitions": {"S1": "SAT synthesis m*(f), f = 0..6; all minimal gadgets at the least f (cap 20,000 / 10 min)", "S2": "rules 60, 90, 150, 102, hop; exact clauses and gadget; alive to 64", "S3": "single-knot deletions and replacements of the gadget; rule-60 growth with the mutant relation"},
+ "public_inputs": {"code": "census.py (sha256 1384f13ffd9f2b53e67880030190cc1c05a166f8db181a96fb80cbf8d5e55c16) beside this file; pysat.", "run": "census.py --s1, --s2, --s3 W 8 for W in 0-7, then --summary, from the repository root."},
+ "forbidden_inputs": ["Changing the synthesis, growth, mutations, predictions or decision rules after seeing registered results"],
+ "primary_observable": "m*(f); gadget-equals-direct; mutant counting share; the weight share.",
+ "cheapest_meaningful_control": "The exact-clause parity growth (the referee's construction).",
+ "validation_gate": "Gadget-built and exact-clause rule-60 lives equal to 64; rule 60 matches the referee within 40.",
+ "predictions": {"P1": "m*(5) = m*(6)", "P2": "< 10% of single-knot mutants count", "P3": "the hopping rule's life unexplained within 64"},
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "Under twenty minutes."
+}

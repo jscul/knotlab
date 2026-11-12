@@ -3377,10 +3377,11 @@ So holes come in two kinds:
      knots reaching one step, no fresh distinctions and free ends, none of the 1,024 rules counts or makes a harmony within depth
      40; with fresh distinctions (a parity) and ends read against a reference, rules 60, 90 and 150 count depth in binary (the
      referee's; known as additive automata) ([decision note](../research/ROW-NEST-20261112-001/row_nest.md)).
-   - **Two distinctions per position** (`TWO-BIT-ROWS-20261112-001`; referee pending): harmonies appear (life or the first
-     generation alternating with depth); with hopping reach, a new position's knots meeting the old one at half its index, two
-     knots suffice, with neighbouring reach ten, and hopping makes them ten times more common under short descriptions; five
-     hopping rules change late (depths 21 to 35) and hold, none shown to count
+   - **Two distinctions per position** (`TWO-BIT-ROWS-20261112-001`; refereed, confirmed with fixes): harmonies appear (life or
+     the first generation alternating with depth); hopping reach, a new position's knots meeting the old one at half its index,
+     needs six knots and neighbouring reach ten once the one position that reads itself through the hop is set aside (the two-knot
+     case first reported was that position); harmonies already exist with three-distinction ends. The five late hopping rules
+     settle by depth 47 and nothing to depth 200 counts (`LATE-HOP-20261112-001`)
      ([decision note](../research/TWO-BIT-ROWS-20261112-001/two_bit_rows.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,

@@ -11,6 +11,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: two distinctions per position, narrowed by its referee
+
+- The test of whether patterns growing by one position with two distinctions each can keep time (`TWO-BIT-ROWS-20261112-001`) was
+  confirmed: they make harmonies. But the cheapest one reported, with two knots, comes from the one position whose reach falls on
+  itself, not from reaching far; without it, far reach needs six knots against ten and helps about 2.5 times, not 11. One late rule
+  was misread (it dies at depth 41), and harmonies already appear in simpler nested patterns
+  ([decision note](research/TWO-BIT-ROWS-20261112-001/two_bit_rows.md)).
+- Unchanged: the counts.
+
 ## 12 November 2026: how many all-equal knots each depth needs, narrowed by its referee
 
 - The count of all-equal knots a living infinite pattern needs at each depth (`WITNESS-COUNT-20261112-001`) was confirmed by an exact

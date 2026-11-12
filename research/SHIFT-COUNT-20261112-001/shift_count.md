@@ -115,3 +115,11 @@ None. Two frozen predictions failed (A3, and parts of B1, B2, B3) and are report
 3. **The plateau.** Payoff 2, concreteness 2.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 15:42 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: under
+this weighting two unlengthened shifts are the rule (146 of 169 certified); where distance grows across it grows on a side no cone of
+travel reaches (one base like base 16 has a second shift covering its other side); the creep stops at 6 between 23 and 27 across; the
+harmony thread's tiling reading is refuted for base 16's uncertified patterns. No correction. Referee handed to the referee thread;
+holding for a go-ahead on #1.

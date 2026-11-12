@@ -5961,6 +5961,17 @@ So holes come in two kinds:
      direction does not lengthen, a base compressed along one of its shifts
      ([decision note](../research/BOND-BALLS-20261111-001/bond_balls.md)).
 
+   **2026-11-12: a direction the knot law does not lengthen** (`FOLD-20261112-001`).
+   - **The question.** Is the folded direction real at every distance, and is it the law's doing or the way the base was supplied?
+   - **Real at every distance (proved, refereed).** On that base three equal distinctions force the next three over to the other value,
+     column after column, so for every k the origin lies in a bond of four with distinctions k steps away, along a whole line both
+     ways. No single far distinction is tied to the origin: the law binds it only jointly with a whole triple.
+   - **The law's doing.** Steps apart and bond distance both belong to the base itself, and the step distance grows in two directions; the
+     fold runs along the one pair class that two knots share. Its nearest precedent is a known parity rule on the same pattern of
+     knots whose constraints appear at doubling distances (literature: Ledrappier's shift).
+   - **Fourteen kinds of base fold (computed).** Of the 38 kinds of base with shortcuts, 14 keep bonds of four at five and six steps,
+     all among those whose shortcuts reached four steps ([decision note](../research/FOLD-20261112-001/fold.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "OLD-CORE-20261112-001A-E001",
+ "ticket": "OLD-CORE-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does a growth that adds distinctions end when its oldest distinctions, read as a pattern by themselves, reach the end of uniform knots, or is its dying core explained by its degrees, or by neither?",
+ "definitions": {
+  "settings": "X(0.25), X(0.3) to 6,000 moves; X(0.35), O global (0.3), O local (0.3) to 2,000; 100 growths each; seeds sha256 OC:label:run.",
+  "readings": "k* least dead core by age (bisection), m*, D*, the floor, the peeled core (n2, m2), P_u (uniform, k* and m*), P_u2 (uniform, n2 and m2), P_d (degree-matched), 20 resamples each; k*_deg by final degree."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 ec68b970ab4eb1203eda55b27346d7a7dac126cd2f7b04d26170b72f3a1495b7) beside this file; fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35); pysat; numpy.",
+  "run": "census.py from the repository root, then census.py --summary; output artifacts/OLD-CORE-20261112-001A/OLD-CORE-20261112-001A-E001_old_core/."
+ },
+ "forbidden_inputs": [
+  "Changing settings, seeds, resamples, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Per process: medians of P_u, P_u2, P_d, the share with k*_deg <= k*, and k*, D*, the floor.",
+ "cheapest_meaningful_control": "The matched resamples: uniform (a uniform-end law), degree-matched (a degree law).",
+ "predictions": {
+  "L1": "median P_u >= 0.3 in each process with >= 10 endings",
+  "L1p": "median P_u2 >= 0.3",
+  "L2": "median P_d >= 0.3",
+  "L3": "k*_deg <= k* in >= 70% of endings"
+ },
+ "decision_rules": {
+  "L1 or L1p holds": "the dying core is near the uniform end: a uniform-end law",
+  "L2 holds, L1 fails": "its degrees explain its end",
+  "both fail": "growth correlations beyond degrees end it (the grown-graph analogy)"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About ten minutes on eight workers; systemd-run --user -p MemoryMax=8G -p MemorySwapMax=0."
+}

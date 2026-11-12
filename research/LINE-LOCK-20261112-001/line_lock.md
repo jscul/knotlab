@@ -2,7 +2,8 @@
 
 Epic `LINE-LOCK-20261112-001` (`SHIFT-LOCK-20261112-001` direction 1, influence beyond cycles; G17 with G8; program mathematics,
 group arithmetic), 2026-11-12, at the coordinator's go-ahead. Pre-registered in [preregistration.md](preregistration.md), frozen in
-commit `023a3da46`. Proof family: `proofs/LINE-LOCK-20261112-001A/`. **Referee pending.**
+commit `023a3da46`. Proof family: `proofs/LINE-LOCK-20261112-001A/`. **Refereed: confirmed with fixes, headline narrowed**
+([referee R1](referee-R1/report.md); the fixes are folded in below and logged in `docs/CORRECTIONS.md`).
 
 ## Words
 
@@ -20,8 +21,9 @@ inside the stitch. Does any harmony's stitch hold one? The coordinator named the
 
 ## The answer
 
-**No harmony's stitch holds one: proved for the unlagged stitch of every harmony, and checked for lagged stitches on all 105 harmonies
-in range.**
+**No additive automaton is carried by the stitch itself: proved for every harmony, and (the referee's sharpening) a not-all-equal
+stitch of any kind never holds an additive law exactly. Whether arrangements of copies show Ledrappier-type influence another way,
+through hidden copies, is open.**
 
 - **The theorem (proved).** A harmony's one-order stitch holds no permutive sub-stitch on a set of two or more states. Read the bits at
   the three members' places as three functions on the states: a permutive set of triples forces at most one of them to vary, and the
@@ -33,17 +35,28 @@ in range.**
   odd step sets: no free site anywhere (the theorem's premise), no ratio subgroup or other permutive block, 22 cyclic subgroups and 2
   cosets inside the stitch pairs, all degenerate (states constant along a direction), and **no coset with a ratio part**, so no lagged
   stitch holds an additive automaton either. On the odd harmonies' orbits the stitch pairs are {(0, 0)} alone: stitched in one order,
-  three copies in one orbit of an odd harmony that share a knot are equal.
+  three copies in one orbit of an odd harmony that share a knot are equal. The census holds one kind set per harmony; the referee
+  checked all 1,383 kind sets of the 66 harmonies and found the same zeros (the stitch pairs' sizes do depend on the kind set in 45).
+- **The referee's sharpening (proved).** The lemma's first two steps never use that the three entries range over one set of states, nor
+  the lag: in **any** not-all-equal stitch, a permutive set of triples puts the whole product of its three state sets inside the stitch
+  (every triple of S₁ × S₂ × S₃ holds each knot). So a not-all-equal stitch holds an additive law only inside a free product, never
+  exactly; a ratio subgroup or coset in the stitch pairs would have been such a free product. Read exactly, then, no lagged stitch holds
+  an additive law, by this lemma. Read by containment, as the census did, lagged stitches of **20 of 68 harmonies hold free pairs** over
+  two values (for example 0000011111, a state and its shift, at lag (2, 1)), and one holds free three-element sets: cases the census
+  did not search (it looked at odd primes and at free pairs of subgroups only). None is exactly additive.
 - **One size past (after the run).** The 32 further harmonies of span 9 (periods 12 to 252): the same.
-- **So** two-way influence of Ledrappier's kind cannot come from stitched harmonies in range. The obstruction the coordinator asked for
-  if everything reduced to cycles is now part proof, part census. Ledrappier's law itself is a parity law on the mixed shape, and parity
-  is permutive, so the program's own parity knots do carry it; not-all-equal on a harmony's states does not.
+- **So** no additive automaton of Ledrappier's kind is carried by the stitch of stitched harmonies. That Ledrappier-type influence
+  needs one in the stitch is a premise, not a result: hidden copies (not-all-equal knots with hidden members build flip-blind parity,
+  A78) and the arrangements' lock arithmetic are not decided here. Ledrappier's law itself is a parity law on the mixed shape, and
+  parity is permutive; not-all-equal in the stitch itself is not.
 
 ## What is proved and what is computed
 
 | Claim | Evidence class |
 | --- | --- |
-| No permutive sub-stitch on one set of states in a harmony's one-order stitch; so no ratio subgroup, Z₂ × Z₂ block or free pair in any orbit | proved by hand (the advisor model's lemma, rechecked) |
+| No permutive sub-stitch on one set of states in a harmony's one-order stitch; so no ratio subgroup, Z₂ × Z₂ block or free pair in any orbit | proved by hand (the advisor model's lemma, rechecked; refereed) |
+| Any permutive set of triples in any not-all-equal stitch puts the product of its state sets inside the stitch | proved (the referee's sharpening of the same lemma) |
+| Lagged stitches: free pairs in 20 of 68 harmonies, free three-sets in one, none exactly additive | computed by the referee |
 | No free site in 73 harmonies; no ratio subgroup, block or free pair; 22 + 2 degenerate subgroups and cosets; no coset with a ratio part | exact on the range (frozen) |
 | The same on the 32 harmonies of span 9 | after the run, exact |
 
@@ -58,14 +71,15 @@ after the freeze (above), meanings unchanged.
 Ledrappier's shift (1978); Markov subgroups and algebraic actions of ℤ² (Kitchens and Schmidt; Schmidt's book); permutive and
 additive automata (Hedlund; Ito, Osato and Nasu; Martin, Odlyzko and Wolfram); three-member permutive shapes, the totally extremally
 permutive subshifts with Ledrappier's as the prime example (Salo, "Cutting corners", 2022); not-all-equal has only trivial polymorphisms
-(Schaefer). The theorem, the advisor's two-constant-fibres lemma, is not one the advisor or I have seen stated; novelty is claimed for
-it only with that caveat, pending the referee's search.
+(Schaefer). The lemma, in the literature's terms "every proper 2-colouring of a transversal design TD(3, n) makes two classes
+constant and opposite", was not found in the referee's bounded search; it is elementary, in the spirit of not-all-equal's essentially
+unary polymorphisms (Post's lattice), and may be folklore. Novelty: not found, nothing more.
 
 ## What it changes
 
 - **For the owner's "globally influential".** Patterns that fold in two directions out of copies of a harmony can make two-way states,
-  but never an additive one, so their reach stays tied to cycles; reach of the kind Ledrappier's law has, a pattern's influence set by
-  the arithmetic of polynomials, needs a permutive knot, and the not-all-equal law on repeating patterns cannot supply one.
+  but never by an additive law in the stitch itself; whether the arrangements reach further another way (hidden copies, the lagged free
+  pairs) is open.
 - **What would be new next.** Mixing laws: a permutive (parity) knot among stitched not-all-equal copies. Whether the not-all-equal
   copies freeze its arithmetic or carry it is open.
 
@@ -75,14 +89,17 @@ A70 (the theorem's premise, every state repeats), A75 and A77 used; none added.
 
 ## Corrections
 
-One, logged in `docs/CORRECTIONS.md` and knotlab's HISTORY.md: words for a drawn space in `SHIFT-LOCK-20261112-001`'s record (tilings,
+After the referee (R1), two more, logged in `docs/CORRECTIONS.md` and knotlab's HISTORY.md: the headline read as a claim about
+arrangements (Narrowing), and, in one entry, the lagged claim in the exact reading with the free pairs noted, cosets as free products,
+one kind set per harmony, the open case narrowed to three different ranges, and novelty as "not found" (Not a block). Earlier, one,
+logged in `docs/CORRECTIONS.md` and knotlab's HISTORY.md: words for a drawn space in `SHIFT-LOCK-20261112-001`'s record (tilings,
 cell types, slope polygon, slope rule) and in this epic's pre-registration (line, linear), replaced by lifted phases, step pairs, the
 mean-step bounds, ratio subgroups and additive automata, with the literature's names given once. Not a block.
 
 ## In the owner's words
 
-Copies of a repeating pattern, tied across two directions, can make two-dimensional patterns, but never ones that behave like
-arithmetic on a grid of numbers, where one value spreads its influence by adding. That kind of influence needs a knot where any two
+Copies of a repeating pattern, tied across two directions, can make two-dimensional patterns, but never by an additive law in the
+stitch itself, the kind of rule where one value spreads its influence by adding. That kind of influence needs a knot where any two
 members decide the third, and the not-all-equal law on repeating patterns can't make one: if it could, some pattern would have a single
 place free to flip, and repeating patterns have none. Parity knots can, which is why Ledrappier's law does it.
 

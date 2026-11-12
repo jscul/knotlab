@@ -3258,14 +3258,16 @@ So holes come in two kinds:
      forming a ratio subgroup, as Ledrappier's law has; no harmony has them
      ([decision note](../research/SHIFT-LOCK-20261112-001/shift_lock.md)).
 
-   **2026-11-12: no additive automaton in a harmony's stitch** (`LINE-LOCK-20261112-001`; referee pending).
+   **2026-11-12: no additive automaton in a harmony's stitch** (`LINE-LOCK-20261112-001`; refereed, confirmed with fixes, headline narrowed).
    - **The theorem (proved).** A harmony's one-order stitch holds no permutive sub-stitch (a set of triples in which any two members
      fix the third) on a set of states: the three members' bits would be forced constant and opposite at some place, and that place
      could be flipped once on the integers, giving a state that does not repeat. So no orbit holds a ratio subgroup, the additive
      automaton that Ledrappier-type influence needs, at any period, the odd harmonies of 61, 73 and 193 included.
-   - **Lagged stitches too (exact).** All 187 orbits of 73 harmonies (and 32 more one size past) hold no coset with a ratio part.
-     Two-way influence of Ledrappier's kind needs a permutive knot, such as parity; the not-all-equal law on repeating patterns cannot
-     supply one ([decision note](../research/LINE-LOCK-20261112-001/line_lock.md)).
+   - **Any not-all-equal stitch (proved by the referee).** A permutive set of triples in any not-all-equal stitch, lagged or not, puts
+     the whole product of its state sets inside the stitch, so no such stitch holds an additive law exactly. Read by containment, lagged
+     stitches of 20 of 68 harmonies hold free pairs, a route still open.
+   - **What is not decided.** The stitch itself carries no additive law; whether arrangements of copies show Ledrappier-type influence
+     another way, through hidden copies, is open ([decision note](../research/LINE-LOCK-20261112-001/line_lock.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 90% at the last base, consistent with the

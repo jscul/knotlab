@@ -22,6 +22,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   pre-registration said ([decision note](research/COMMON-FOLD-20261112-001/common_fold.md)).
 - Unchanged: every number and every frozen verdict.
 
+## 12 November 2026: no additive automaton in a harmony's stitch, narrowed by its referee
+
+- `LINE-LOCK-20261112-001` proved that a harmony's stitch holds no permutive set of triples on one set of states. The referee confirmed
+  the proof and sharpened it: in any not-all-equal stitch a permutive set of triples puts the whole product of its state sets inside
+  the stitch, so no such stitch holds an additive law exactly. The headline is narrowed to the stitch itself: whether arrangements of
+  copies show Ledrappier-type influence another way, through hidden copies, is open, and lagged stitches of 20 of 68 harmonies hold free
+  pairs, a case the census did not search ([decision note](research/LINE-LOCK-20261112-001/line_lock.md)).
+- Unchanged: the theorem and every count.
+
 ## 12 November 2026: locks across two shifts, narrowed by its referee
 
 - Copies of a harmony along two shifts (`SHIFT-LOCK-20261112-001`): the referee reproduced every count with fresh code. The 78 cells

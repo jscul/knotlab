@@ -105,3 +105,31 @@ such spot, it would itself be a harmony; up to length 29 none does.
 
 **Corrections:** none. **Goals:** G8 checkpoint (capability gained, with G1; no goal change). **Assumptions:** A70 used, unchanged.
 **Basket:** #1 to #3 recorded. **Advisor:** consulted once on the general proof; its equivalence became lemma 4.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 04:41 UTC, verbatim:
+
+> Done. No knot-law harmony has an odd period up to 29, at any span and with any number of knot kinds. The reason isn't the mirror. The write-up is research/EVEN-PERIOD-20261112-001/even_period.md.
+>
+> • **The mirror alone forbids nothing (proved).** Flipping every value keeps the law, and it pairs each odd repeat with a second, mirrored one. That's all it does.
+> • **An unseen flip does (proved).** Take 001 repeating: one of its 0s can be flipped without any knot kind that 001 satisfies noticing. So every base that allows 001 also allows a state that never repeats, and no harmony contains 001. In general, a word with such a flip (in itself, or in a word compatible with it) belongs to no harmony.
+> • **Nothing else could (proved; the advisor's idea).** An odd word with no unseen flip would itself make a harmony, using only knot kinds shorter than its period. So the even rule holds at a period exactly when every word of that period has an unseen flip.
+> • **To period 29 (computer-assisted).** All 25,328,938 words of odd period 3 to 29 have one. The independent check agreed (fresh code, plus a separate fresh session that rechecked the four lemmas and redid the census to 21 itself). The words of known harmonies have none, as the lemma requires. Beyond 29 it's open; the advisor thinks counterexamples are possible somewhere in the 30s.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — why the knot law's harmonies are even | **Status:** Partially successful | proved to period 29 and reduced to words; not proved for every odd period |
+> | Local direction — flip certificates | Continue | the rest is now a precise question about words |
+> | Broader exploration — the count line | Known alternatives | antiperiodicity, two shifts, signed knots |
+> | Long-term goal — G8 From spacing to arithmetic and sets | Capability gained | the law's own repeats are even, for a reason other than the mirror |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Certificates for every odd period | 2/3 — Substantial | 2/3 — Testable | search pattern sets at periods 31 to 45 and seek a general construction → a proof, or the first odd harmony | Selected · awaiting go-ahead |
+> | 2 | Why unsplit harmonies are antiperiodic | 2/3 — Substantial | 1/3 — Stated | an analogue of certificates for even words → a lemma, or a counterexample | Alternative · deferred |
+> | 3 | Harmonies along two shifts | 2/3 — Substantial | 2/3 — Testable | as filed by the harmony epic | Alternative · deferred |
+>
+> **Corrections:** none. **Goals:** G8 checkpoint (capability gained), no goal change. **Assumptions:** A70 used, unchanged. **Basket:** #1 to #3 recorded. **Advisor:** consulted once on the general proof; its equivalence became lemma 4, which I proved and both referees checked.

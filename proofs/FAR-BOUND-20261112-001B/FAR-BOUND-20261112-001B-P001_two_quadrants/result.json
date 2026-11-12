@@ -1,0 +1,42 @@
+{
+ "schema_version": 3,
+ "artifact_id": "FAR-BOUND-20261112-001B-P001",
+ "kind": "proof",
+ "ticket": "FAR-BOUND-20261112-001B",
+ "proof": "FAR-BOUND-20261112-001B-P001",
+ "status": "passed",
+ "claim": "On the base selected by FAR-BOUND's frozen rule (COMMON-FOLD sample 24 at r = 3: edges the translates of {0,(0,1),(1,2)}, {0,(1,-4),(2,0)}, {0,(0,4),(2,2)}), in the frame t' = (1,2), u = (0,1), every vertex (alpha, y) with alpha >= 1, y >= 0 or alpha <= -1, y <= 0 lies in a bond of at most four with the origin: bond distance at most 3 on two opposite quadrants. Hand argument (two travels and translation) with exact finite checks C1 to C4.",
+ "C1": {
+  "travels along t'": true,
+  "travels along 4u": true,
+  "holds": true
+ },
+ "C2": {
+  "Q": 8,
+  "P": 4,
+  "holds": true
+ },
+ "C3": {
+  "strip": [
+   -2,
+   2,
+   -4,
+   4,
+   4,
+   8
+  ],
+  "representatives": [
+   5,
+   12
+  ],
+  "checks": 1620,
+  "representatives without a covering triple": [],
+  "n bad": 0,
+  "holds": true
+ },
+ "C4": {
+  "travels along 4u without the third kind": false,
+  "holds": true
+ },
+ "failures": []
+}

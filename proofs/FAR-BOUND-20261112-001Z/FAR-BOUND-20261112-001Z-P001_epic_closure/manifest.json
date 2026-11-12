@@ -1,0 +1,107 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "FAR-BOUND-20261112-001Z-P001",
+ "canonical_id": "FAR-BOUND-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "FAR-BOUND-20261112-001Z",
+ "proof": "FAR-BOUND-20261112-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure of bounded at every distance?",
+ "status": "Proved",
+ "claim": "Ledger closing FAR-BOUND-20261112-001: ticket A refuted as frozen (F1: 34 of 66 bounded on certified bonds against 40; F2: 16 of 26 decided bounded to 23 across, 5 rising by two, 8 of 34 dropped; F3 held, 77 of 102); ticket B proved (bond distance at most 3 on two quadrants of the rule-selected base); referee pending; recommendation research directions with 'one fold against two' selected. No new claim.",
+ "dependencies": [
+  "FAR-BOUND-20261112-001A",
+  "FAR-BOUND-20261112-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "FAR-BOUND-20261112-001",
+  "epic_path": [
+   "FAR-BOUND-20261112-001"
+  ],
+  "parents": [
+   "experiments/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/contract.json",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/control.json",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/recheck.jsonl",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/far.jsonl",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/rings.jsonl",
+   "research/FAR-BOUND-20261112-001/summary.json",
+   "proofs/FAR-BOUND-20261112-001B/FAR-BOUND-20261112-001B-P001_two_quadrants/manifest.json",
+   "proofs/FAR-BOUND-20261112-001B/FAR-BOUND-20261112-001B-P001_two_quadrants/result.json"
+  ]
+ },
+ "parent_bindings": {
+  "experiments/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/contract.json": "91d1fb6da1ebefa617d5013a73b1ba2c4edc3bb72c805540201e41a982919003",
+  "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/control.json": "1e39401af1f58974cb4fb5167edec0d6d0314fd821a3a8e4826a6305fb4b6f23",
+  "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/recheck.jsonl": "077ab07bc6c786cb6ded69a2d5b2cba0ff029024be1be1e98af8f36e08766932",
+  "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/far.jsonl": "33f0f4c46349fa50780124e94b2fb7ed44975ef32c6a6f488126bed271fd0ec6",
+  "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/rings.jsonl": "e0ab763aa8baa44ae97473ada3051956337f059f9f741b4c38be47577cfa18f4",
+  "research/FAR-BOUND-20261112-001/summary.json": "a92d32a199f822b80a05eb613396cc4a5f3a53062a15ace4022c6043cd8ff352",
+  "proofs/FAR-BOUND-20261112-001B/FAR-BOUND-20261112-001B-P001_two_quadrants/manifest.json": "5622e11c48b8a7d5fc7fa33f1e8a7dc0b04db76eb365d33a13d8d111448d08d6",
+  "proofs/FAR-BOUND-20261112-001B/FAR-BOUND-20261112-001B-P001_two_quadrants/result.json": "a53f09c3cc1c4b481525a4568e48a8e810cd1f93891bb2dbe68bb0ded22c6104"
+ },
+ "paths": {
+  "manifest": "proofs/FAR-BOUND-20261112-001Z/FAR-BOUND-20261112-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/FAR-BOUND-20261112-001Z/FAR-BOUND-20261112-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/FAR-BOUND-20261112-001Z/FAR-BOUND-20261112-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/FAR-BOUND-20261112-001Z/FAR-BOUND-20261112-001Z-P001_epic_closure/result.json",
+  "check": "proofs/FAR-BOUND-20261112-001Z/FAR-BOUND-20261112-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/FAR-BOUND-20261112-001Z/FAR-BOUND-20261112-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-12; referee pending (the referee thread).",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

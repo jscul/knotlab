@@ -1,0 +1,35 @@
+{
+ "schema_version": 3,
+ "artifact_id": "FAR-BOUND-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "FAR-BOUND-20261112-001Z",
+ "proof": "FAR-BOUND-20261112-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing FAR-BOUND-20261112-001: ticket A refuted as frozen (F1: 34 of 66 bounded on certified bonds against 40; F2: 16 of 26 decided bounded to 23 across, 5 rising by two, 8 of 34 dropped; F3 held, 77 of 102); ticket B proved (bond distance at most 3 on two quadrants of the rule-selected base); referee pending; recommendation research directions with 'one fold against two' selected. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/contract.json": "Frozen",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/control.json": "run output",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/recheck.jsonl": "run output",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/far.jsonl": "run output",
+   "artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/rings.jsonl": "run output",
+   "research/FAR-BOUND-20261112-001/summary.json": null,
+   "proofs/FAR-BOUND-20261112-001B/FAR-BOUND-20261112-001B-P001_two_quadrants/manifest.json": "Proved",
+   "proofs/FAR-BOUND-20261112-001B/FAR-BOUND-20261112-001B-P001_two_quadrants/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "refuted",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

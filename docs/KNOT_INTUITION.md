@@ -5905,6 +5905,18 @@ So holes come in two kinds:
      every co-knotted pair once each is read the same from either class; a knot removed from one class is still held by the other, through
      the whole weave. That accounts for 91 of the 98 global cases ([decision note](../research/PERIODIC-READ-20261111-001/periodic_read.md)).
 
+   **2026-11-11: bond balls on infinite overlapping bases** (`BOND-BALLS-20261111-001`).
+   - **The question.** On the 134 infinite bases with a repeating meeting pattern that not-all-equal reads faithfully, does bond
+     distance follow steps apart, as on the endless six-regular weave? Steps apart grow as the two shifts dictate; the law's own
+     distance need not.
+   - **It always reaches the next shell, but sometimes faster (computed, frozen).** Every distinction three steps away lies in a bond of
+     at most five with the origin. On 42 bases some lie in a bond of four, and some four steps away too: the law's distance is shorter
+     than the meeting pattern's. The six-regular weave, where the ruler is proved, has none.
+   - **A direction of no length (computed).** On one base three equal distinctions force the next three over to the other value,
+     column after column, so distinctions twelve steps away still share a bond of four with the origin: read by the law alone, that
+     direction does not lengthen, a base compressed along one of its shifts
+     ([decision note](../research/BOND-BALLS-20261111-001/bond_balls.md)).
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

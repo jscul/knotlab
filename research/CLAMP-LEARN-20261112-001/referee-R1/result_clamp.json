@@ -1,0 +1,146 @@
+{
+ "baselines": {
+  "F / 01101001": {
+   "p restricted recomputed": 0.5,
+   "matches": true,
+   "blind medians recomputed (uniform, restricted)": [
+    6,
+    1
+   ],
+   "census": [
+    6,
+    1
+   ]
+  },
+  "F / 0uu01uu1": {
+   "p restricted recomputed": 1.0,
+   "matches": true,
+   "blind medians recomputed (uniform, restricted)": [
+    11,
+    1
+   ],
+   "census": [
+    11,
+    1
+   ]
+  },
+  "GE / 01101001": {
+   "p restricted recomputed": 0.125,
+   "matches": true,
+   "blind medians recomputed (uniform, restricted)": [
+    22,
+    6
+   ],
+   "census": [
+    22,
+    6
+   ]
+  },
+  "GE / 00001111": {
+   "p restricted recomputed": 0.1,
+   "matches": true,
+   "blind medians recomputed (uniform, restricted)": [
+    45,
+    7
+   ],
+   "census": [
+    45,
+    7
+   ]
+  }
+ },
+ "runs": {
+  "B / 00001111": {
+   "runs": 100,
+   "found": 73,
+   "dropped at the 300 s cap": 27,
+   "unfound at the step budget": 0,
+   "found flag equals map == target": true,
+   "all steps = learning + wrong copy + probe walk": true,
+   "median steps per second (found runs)": 93360
+  },
+  "B / 01101001": {
+   "runs": 100,
+   "found": 48,
+   "dropped at the 300 s cap": 52,
+   "unfound at the step budget": 0,
+   "found flag equals map == target": true,
+   "all steps = learning + wrong copy + probe walk": true,
+   "median steps per second (found runs)": 95913
+  },
+  "C / 00001111": {
+   "runs": 100,
+   "found": 36,
+   "dropped at the 300 s cap": 64,
+   "unfound at the step budget": 0,
+   "found flag equals map == target": true,
+   "all steps = learning + wrong copy + probe walk": true,
+   "median steps per second (found runs)": 80894
+  },
+  "C / 01101001": {
+   "runs": 100,
+   "found": 13,
+   "dropped at the 300 s cap": 87,
+   "unfound at the step budget": 0,
+   "found flag equals map == target": true,
+   "all steps = learning + wrong copy + probe walk": true,
+   "median steps per second (found runs)": 99018
+  },
+  "CA / 00001111": {
+   "runs": 100,
+   "found": 55,
+   "dropped at the 300 s cap": 45,
+   "unfound at the step budget": 0,
+   "found flag equals map == target": true,
+   "all steps = learning + wrong copy + probe walk": true,
+   "median steps per second (found runs)": 142375
+  },
+  "CA / 01101001": {
+   "runs": 100,
+   "found": 12,
+   "dropped at the 300 s cap": 88,
+   "unfound at the step budget": 0,
+   "found flag equals map == target": true,
+   "all steps = learning + wrong copy + probe walk": true,
+   "median steps per second (found runs)": 135736
+  }
+ },
+ "walk": {
+  "F / fixed start": {
+   "probes": 1200,
+   "share computing the count": 0.034166666666666665,
+   "share computing g": 0.1525,
+   "first probe": {
+    "count": 0,
+    "g": 0
+   }
+  },
+  "F / random start": {
+   "probes": 1200,
+   "share computing the count": 0.0425,
+   "share computing g": 0.13166666666666665,
+   "first probe": {
+    "count": 5,
+    "g": 3
+   }
+  },
+  "GE / fixed start": {
+   "probes": 1200,
+   "share computing the count": 0.0016666666666666668,
+   "share computing g": 0.0033333333333333335,
+   "first probe": {
+    "count": 0,
+    "g": 0
+   }
+  },
+  "GE / random start": {
+   "probes": 1200,
+   "share computing the count": 0.0016666666666666668,
+   "share computing g": 0.005,
+   "first probe": {
+    "count": 1,
+    "g": 0
+   }
+  }
+ }
+}

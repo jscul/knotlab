@@ -68,6 +68,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   pre-registration said ([decision note](research/COMMON-FOLD-20261112-001/common_fold.md)).
 - Unchanged: every number and every frozen verdict.
 
+## 12 November 2026: which parity placements survive, confirmed by its referee with small fixes
+
+- `PARITY-SURVIVE-20261112-001` was confirmed: every survival count and the split of fixing reproduce. Without the arc-consistency cap,
+  37.7% of the fixed pairs (27.7% on samples) are beyond arc consistency; the pair totals are shares; the size decay suggested by an
+  annealed first moment is not proved; and the last sampled cell has no survivor, so none of 11,997 samples at 7 × 7 to 9 × 9 survives
+  ([decision note](research/PARITY-SURVIVE-20261112-001/parity_survive.md)).
+- Unchanged: every count.
+
 ## 12 November 2026: parity among stitched copies, narrowed by its referee
 
 - `PARITY-MIX-20261112-001` found parity knots and not-all-equal stitches almost never coexisting among harmony copies. Its referee

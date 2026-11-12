@@ -2,7 +2,8 @@
 
 Epic `PARITY-SURVIVE-20261112-001` (`PARITY-MIX-20261112-001` direction 1, reshaped by the coordinator; G17 with G8; program
 mathematics, group arithmetic), 2026-11-12. Pre-registered in [preregistration.md](preregistration.md), frozen in commit `d4d3c753b`.
-Proof family: `proofs/PARITY-SURVIVE-20261112-001A/`. **Referee pending.**
+Proof family: `proofs/PARITY-SURVIVE-20261112-001A/`. **Refereed: confirmed, three small fixes** ([referee R1](referee-R1/report.md);
+folded in below and logged in `docs/CORRECTIONS.md`).
 
 ## The question
 
@@ -22,10 +23,12 @@ through the not-all-equal stitches, not through parity's arithmetic. The rarity 
   stitch does allow flip-blind triples, and there survival is 21.8% on 3 × 3 and, for 0011 + 01 with kinds (1, 3) and (5, 6), 12.6% on
   4 × 4 at every k (PARITY-MIX's referee).
 - **Rare for one kind set (exact per sample).** With each cell parity independently with probability ρ, under 1% of placements survive
-  at every ρ from 1/8 to 7/8 for every n ≥ 6, and none of 11,497 samples at 7 × 7 to 9 × 9, for the census's kind set of each harmony.
+  at every ρ from 1/8 to 7/8 for every n ≥ 6, and none of 11,997 samples at 7 × 7 to 9 × 9 (the referee ran the cell cut by the cap: 0 of 500), for the census's kind set of
+  each harmony.
   A claim about the harmony would need the kind set drawn as part of the weighting (uniformly among the kind sets that present it);
-  with 12 of 96 such kind sets mixing freely, that claim is not established and may fail. Sizes divisible by 3 do best. The first-moment rate is
-  negative for almost every harmony and ρ, so survival falls at least like e^{λ n²}.
+  with 12 of 96 such kind sets mixing freely, that claim is not established and may fail. Sizes divisible by 3 do best. The annealed first-moment
+  rate (each cell's triple treated as independent) is negative for almost every harmony and ρ; it suggests survival falling like
+  e^{λ n²}, but that is unproved: the exact first moment is a sum over the repeat's states.
 - **No simple rule (exact on 3 × 3 and 4 × 4).** Neither frozen rule holds. Knowing only which class each copy is in is not enough: on
   705 placements the classes fit but no choice of states does. And one placement class survives with an isolated parity cell.
 - **Where the fixing comes from (the coordinator's question).** Over every surviving placement on 3 × 3 and 4 × 4, fixing from every
@@ -33,9 +36,10 @@ through the not-all-equal stitches, not through parity's arithmetic. The rarity 
   - 10% comes from the parity equations alone;
   - 14% needs the harmony's states as well;
   - 76% needs the not-all-equal stitches;
-  - 36% is beyond arc consistency.
+  - 37.7% is beyond arc consistency (the referee, with no cap on count-r₀ assignments; 36% with the cap of 30).
 
-  On the sampled survivors at larger sizes the split is 38%, 25% and 37%, with 25% beyond arc consistency. So the worry does not
+  On the sampled survivors at larger sizes the split is 38%, 25% and 37%, with 27.7% beyond arc consistency (25% with the cap). The
+  pair totals (9,598; 347) count each placement's pairs once per base count, n times, so they are shares, not placement counts. So the worry does not
   hold. "Fixed but unreached" was partly automatic in the earlier epic, but against the fair baseline a quarter to a third of the
   fixing is still non-local, and most of it passes through the stitches.
 
@@ -44,9 +48,9 @@ through the not-all-equal stitches, not through parity's arithmetic. The rarity 
 | Claim | Evidence class |
 | --- | --- |
 | Lemma A: no flip-blind triple is a stitch triple (8 of 8 harmonies) | exact census (frozen) |
-| Survival under 1% at every ρ for n ≥ 6; none in 11,497 samples at 7 × 7 to 9 × 9 | exact per sample (frozen; 55 of 56 cells, cap) |
+| Survival under 1% at every ρ for n ≥ 6; none in 11,997 samples at 7 × 7 to 9 × 9 | exact per sample (frozen; 55 of 56 cells, cap; the last cell by the referee) |
 | Class-level fit not enough (705 placements); one survivor with an isolated parity cell | exact on 3 × 3 and 4 × 4 (frozen) |
-| Fixing split: L 10%, P not L 14%, stitches 76%, beyond arc consistency 36% (small); 38 / 25 / 37 / 25% (samples) | exact (frozen) |
+| Fixing split: L 10%, P not L 14%, stitches 76%, beyond arc consistency 37.7% (small); 38 / 25 / 37 / 27.7% (samples) | exact (frozen; refereed, uncapped) |
 
 ## Against the pre-registration
 
@@ -81,7 +85,9 @@ A70, A75, A77, A78 used; none added.
 
 ## Corrections
 
-After PARITY-MIX's referee (R1), one here, logged in `docs/CORRECTIONS.md`: the rarity and lemma A hold for one kind set per harmony,
+After this epic's referee (R1), one entry, Not a block, logged in `docs/CORRECTIONS.md` and knotlab's HISTORY.md: the share beyond arc
+consistency without the cap (37.7% and 27.7%), the pair totals as shares counted per base count, and the first-moment decay marked
+unproved. After PARITY-MIX's referee (R1), one here, logged in `docs/CORRECTIONS.md`: the rarity and lemma A hold for one kind set per harmony,
 not for the harmony (Narrowing). Before it: none in this epic's claims. The word "star" for a copy's three knots, used in `PARITY-MIX-20261112-001`'s record, is the literature's
 word for a vertex's neighbourhood; replaced there by "a copy's three knots" and logged in `docs/CORRECTIONS.md` (Not a block).
 

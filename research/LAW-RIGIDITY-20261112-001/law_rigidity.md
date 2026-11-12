@@ -62,9 +62,9 @@ One, Not a block: A68's "Why" and the addendum said R held "5 of 10"; it held 4 
 ## In the owner's words
 
 Take the drawing away and the learner needs two things back: a short list of rules it may settle on, and a reason not to rewrite a rule
-once it has one. On the small pattern no drawing fits, asking the rule's signs to add up to nothing around every smallest round of knots
-gives it the list, and it learns to count every time, though for now we hand it the second thing. The catch: the same asking makes
-counting impossible on the drawn copy, where the count needs those rounds to add up to one.
+once it has one. On the small pattern no drawing fits, asking the rule's signs to add up to nothing around every shortest cyclic sequence of
+knots and distinctions gives it the list, and it learns to count every time, though for now we hand it the second thing. The catch: the same asking makes
+counting impossible on the drawn copy, where the count needs those sequences to add up to one.
 
 ## Position and next directions
 
@@ -96,3 +96,38 @@ counting impossible on the drawn copy, where the count needs those rounds to add
 **Goals:** G15 checkpoint (capability gained, with G16); sub-goal B158 taken; sub-goal B160 and backlog B161 added.
 **Assumptions:** A68 added (a repair flips distinctions only, supplied); B160 challenges it.
 **Basket:** B160 (selected, awaiting a go-ahead), B161, B157, B154, B159, B155, B156, B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-12 (02:31 UTC), exactly:
+
+**B158 is closed: the drawing's two jobs separate, and on a base no drawing fits, the knots alone can do the first.**
+
+- **Stage 1, one copy.** Letting the learner rest only at the 4 laws the faces allow, with no other face term, it found the count in 10 of 10 runs but held it in only 4 of 10. With repairs that flip only distinctions (a rule I supply, A68), it held all 30 writes. The rest set does the finding, and rigidity does the keeping.
+- **Stage 2, native.** A law's signs add up to a fixed value around each shortest cyclic sequence of knots and distinctions (here, two knots sharing two distinctions). That sum is read from the knots alone. On the 6-distinction base no drawing fits, "every shortest sum 0" leaves 2 laws to rest at, one of them counting. With the supplied rigid repair, the learner learned and held the count in 30 of 30 writes. That's the first learned and held map on a base no drawing fits.
+- **The catch (exact):** on the drawn copy, "every sum 0" leaves no counting law at rest, because counting needs sum 1 there. "Every sum 1" leaves the undrawn base nowhere to rest. No single value serves both bases.
+- **Known vs new:** that learned rules need a cost to change is the known stability-plasticity problem (consolidation, slow weights). The faces act like the plaquette term of a Z2 gauge theory; that framing is mine. I found no prior work on which of the two jobs a learner like this needs.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: what does the drawing's work (B158) | **Status:** Partially successful | jobs separated; a native rest set learns and holds on the undrawn base; no one rule serves both bases; rigidity still supplied |
+| Local direction: native rest sets with supplied rigidity | Continue | works on the undrawn base; native rigidity and a universal rule are open |
+| Broader exploration: learning program | Known alternatives | native grade for rigidity, which sequences to fix, the tie, seven, two histories |
+| Long-term goal: G15, a point in a learned knot pattern | Capability gained | first learned and held map on a base no drawing fits |
+
+**Next step:** Research directions, selected #1, awaiting a go-ahead.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A native grade for rigidity (B160; challenges A68) | 3/3 Major | 3/3 Ready | charge 2 per wrong shortest sum instead of 2 for any, with the free repair, on both bases → held without A68, or still drifts | Selected, awaiting go-ahead |
+| 2 | Which cyclic sequences to fix (B161) | 2/3 Substantial | 2/3 Testable | exact census of uniform rules over sequences up to three knots on both bases | Deferred |
+| 3 | A tie in place of the shared distinction (B157) | 2/3 Substantial | 3/3 Ready | as recorded | Deferred |
+| 4 | The count of seven (B154) | 2/3 Substantial | 3/3 Ready | as recorded | Deferred |
+| 5 | Two histories (B159) | 2/3 Substantial | 2/3 Testable | as recorded | Deferred |
+
+**Corrections:** one, Not a block. A68 and the addendum first said the rest-set learner held 5 of 10; it was 4 of 10. Fixed and logged; my earlier message is marked corrected.
+**Goals:** G15 checkpoint (capability gained, with G16); sub-goal B158 taken; sub-goal B160 and backlog B161 added.
+**Assumptions:** A68 added (a repair flips distinctions only; supplied by us), status Assumed; B160 would challenge it.
+**Basket:** B160 (selected), B161, B157, B154, B159, B155, B156, B150, B151, B130.
+
+Both stages' runs are registered in docs/LONG_RUNNING.md and folded in. Holding for a go-ahead.

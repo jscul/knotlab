@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: growing bases and their unlengthened shifts, narrowed
+
+- Bounded at every distance? (`FAR-BOUND-20261112-001`) read the bases that grow across as all having a single unlengthened shift,
+  from an uncertified search. A certified search (`SHIFT-COUNT-20261112-001`) found a second one on one of the three, with its cone on
+  the side where the base does not grow: what the growing bases share is a side no cone of travel reaches
+  ([decision note](research/FAR-BOUND-20261112-001/far_bound.md)).
+- Unchanged: every computed number, and the proof on one base.
+
 ## 12 November 2026: what the law reads on travelling bases, narrowed by its recheck and referee
 
 - Random periodic bases with a travelling pattern (`TRAVEL-READ-20261112-001`): "the law usually reads zero dimensions" holds at

@@ -47,6 +47,10 @@ established there: those bases may read a slowly growing distance across, betwee
   a second direction. So the law's reading looks set by how many shifts it leaves without length: two give no length in a cone (proved
   on one base), one gives a distance across that grows, linearly on base 16 and its like, more slowly on others. One direction is
   common to all the growing bases, but not sufficient: five one-direction bases stay bounded to 23 across.
+  *Corrected on 2026-11-12 (`SHIFT-COUNT-20261112-001`): the wider search here was uncertified and used sets in a 2 × 3 box; a
+  certified search with sets in [0, 2]² found that one of the three growing bases (sample 97 at r = 3) has a second direction, whose
+  cone lies on its other side. What the growing bases share is a side that no cone of travel reaches, not a single direction (logged
+  in `docs/CORRECTIONS.md`).*
 - **For the owner's "globally influential".** Global influence at bounded bond distance is real and provable where two shifts fold;
   with one fold, influence across is bounded only near the origin and spreads with cost farther out.
 - **For question 9.** The law's own dimension is zero on two-fold bases and, on one-fold bases, somewhere between zero and one; base
@@ -94,7 +98,8 @@ repeating across alone met an identification).
 
 ## Corrections
 
-None new here: TRAVEL-READ's headline narrowing from this recheck is logged with that epic's referee fixes (one entry, Narrowing).
+One, found later and logged in `docs/CORRECTIONS.md` (Narrowing): the Reading's "the growing bases travel in one direction only" (see the
+note there). Before that, none new here: TRAVEL-READ's headline narrowing from this recheck is logged with that epic's referee fixes (one entry, Narrowing).
 Deviations: none; the far part's validity bound (at most a fifth of bases dropped) failed (8 of 34 at the 30-minute cap), recorded with
 F2.
 

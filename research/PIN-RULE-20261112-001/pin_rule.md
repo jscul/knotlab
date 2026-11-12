@@ -17,7 +17,7 @@ owner's "fold in immensely complex ways", and say plainly how much of it the def
 
 ## The answer
 
-**Proved: nesting pins exactly what the block cannot spare, by equality; and with native bindings pins never vary.**
+**Proved: nesting pins exactly what the block cannot spare, by equality; and with the block's knots pins never vary.**
 
 - **The theorem (proved; checked).** If two copies joined by a knot disagree at a block distinction, the third copy's state shows the
   block can spare it. So every distinction the block cannot spare is equal in the three copies at every knot, hence constant on each
@@ -26,15 +26,20 @@ owner's "fold in immensely complex ways", and say plainly how much of it the def
 - **Spare means "can flip unseen".** A distinction is spare exactly when some state of the block survives flipping it alone, the
   advisor's restatement. So nesting pins exactly the distinctions that can never flip unseen in the block, the notion that decided
   `EVEN-PERIOD-20261112-001`'s periods.
-- **Harmonies pin everything (a corollary).** For odd n, a cyclic block makes a harmony exactly when nesting it pins every one of its
-  distinctions: the odd harmonies of 61, 73 and 193 are blocks that, nested, pin everything. The two lines of the night meet here.
+- **Harmonies pin everything (a corollary).** For odd n, a living cyclic block makes a harmony exactly when nesting it pins every one
+  of its distinctions: the odd harmonies of 61, 73 and 193 are blocks that, nested, pin everything. The two lines of the night meet here.
 - **Pins never vary (proved).** With any block triples closed under reordering, a pin is symmetric in the copies and in the mirror,
-  so it is equality: a pinned part takes one value on each component. No pattern of varying pins arises.
+  so it is equality: a pinned part takes one value on each component. No pattern of varying pins arises. *Narrowed by referee R1
+  (logged, Narrowing): the symmetry argument holds for a lone knot of the pattern, and the conclusion holds for the block's knots in
+  every order on any pattern (the theorem); it fails for the diagonal on a pattern with ties of its own (the Fano plane less {2, 4, 5}
+  plus the knot {2, 4, 7}, block all four knots on four: (2, p) and (7, p) are tied unequal for every p, carrying the pattern's own
+  tie).*
 - **What a sceptic would call built in.** The between-copy knots are the block's own knots spread over three copies in every order,
   so equal copies always fit, nothing tells copies apart, and the reach across the pattern is connectivity chaining one equality per
   knot, like a wire. Not built in: no between-copy knot ever holds two copies of the same distinction, so the equality is forced, not
   stated, and which distinctions it reaches is a property of the block alone. The argument is short, and it needs "in every order":
-  with the diagonal nothing is pinned.
+  with the diagonal nothing is pinned on a pattern with no ties of its own (the diagonal carries the pattern's own ties, which is not
+  pinning).
 
 ## What is proved and what is computed
 
@@ -43,7 +48,7 @@ owner's "fold in immensely complex ways", and say plainly how much of it the def
 | Nesting with the block's knots pins exactly the distinctions the block cannot spare, by equality, on each component | proved by hand (with N6 of `SUBST-NEST-20261112-001`); checked cold by the advisor model; frozen check on 387 blocks |
 | Spare is "survives a flip at that distinction alone" | proved (the advisor's restatement) |
 | For odd n, a cyclic block makes a harmony exactly when nesting pins all its distinctions | proved by combining definitions with `ODD-SEARCH` lemma 5 and `ODD-FAMILY` |
-| Pins under block triples closed under reordering are uniform | proved by hand (with the advisor's general form) |
+| Pins under the block's knots in every order are uniform, on any pattern | proved (the theorem); the wider claim for every block triple closed under reordering was false for the diagonal (narrowed) |
 | Varying pins under a binding twisted by a symmetry of the block | the advisor's sketch, checked locally only; not tested here |
 
 ## Against the pre-registration
@@ -53,8 +58,12 @@ The sceptic paragraph was revisited with the advisor's answer and kept, with its
 
 ## Review
 
-Referee pending: the background referee thread has the hand-off. The coordinator asked the referee to judge how much is built in; the
-answer above is this epic's.
+**Referee R1 (folded in 2026-11-12): confirmed with fixes** ([report](referee-R1/report.md)). The theorem holds line by line (a
+distinction in no knot of the block is spare, handled by N6; repeated distinctions in a knot of the pattern are excluded by
+definition); the restatement of spare holds both ways; the corollary needs "for a living block"; the account of what is built in is
+fair. One Narrowing, above (pins under the diagonal). Prior work: the rule's ingredients (majority over three solutions, Hall's
+theorem, single-flip freedom as in the frozen and free variables of random constraint problems) are standard, and novelty of the rule
+is not claimed.
 
 ## What it changes
 

@@ -36,8 +36,11 @@ not.**
   block's own knots laid between the copies. Then, in 47 of the 87 small blocks, some block distinction's part is tied across the entire
   pattern: fixing one distinction forces that block distinction in every copy, at every distance. On a chain of 16 knots the tie extent is 16 steps, the
   whole chain, and the same after a second substitution. The test patterns and most of these blocks hold no ties of their own, so the
-  ties are made by the substitution. The frozen criterion for influence growing with the pattern is met.
-- **Which block distinctions tie (proved one way; exact the other).** A spare distinction's part is never tied (proved: it can take any
+  ties are made by the substitution. The frozen criterion for influence growing with the pattern is met. *Referee R1: 30 of the 47
+  blocks hold no tie of their own; and once one knot pins, the reach across the whole pattern is the pattern's connectivity, so "16
+  steps on the chain of 16", "tie extent equals the farthest distinction" and the growth criterion add nothing beyond the local fact
+  (logged, Not a block).*
+- **Which block distinctions tie (now proved both ways: `PIN-RULE-20261112-001`, and independently by referee R1).** A spare distinction's part is never tied (proved: it can take any
   values while everything else holds). With the block's knots as block triples, every other part was tied across the whole pattern, in
   all 4,850 roots tested. So the rule found is: a nested pattern pins exactly the block distinctions its block cannot spare.
 - **One block pins everything.** All four knots on four distinctions has no spare distinction and six states: every copy must take the same
@@ -86,7 +89,21 @@ to 12 knots, 150 on 7 with 5 to 12, seeded), each substituted once into the chai
 distinction, and every pinned part reached the far end of the chain. The blocks ranged from none to all of their distinctions
 pinned. Still exact on its range, not proved.
 
-**Review.** Referee pending: the background referee thread has the hand-off (arrangement of 2026-11-12).
+**Review (referee R1, folded in 2026-11-12).** The background referee thread confirmed the epic with fixes
+([report](referee-R1/report.md)), from its own code (Glucose, the whole tie relation of every substituted pattern). Every census number
+reproduces. It found a closed form for the whole tie relation, checked on all 870 living tests with the block's knots: for a connected
+pattern with a knot, (v, p) and (w, q) are tied exactly when p = q or p and q are tied in the block, and v = w or p is not spare;
+ties between copies of one distinction are equalities, and 150 ties between different distinctions in different copies are
+inequalities, the block's own opposite ties carried across. It proved the pinning rule's converse independently (a majority over
+three copies with Hall's condition). Fixes, logged in `docs/CORRECTIONS.md` (all Not a block): the Fano gadget's level 4 has 1,039
+distinctions, not 1,051 (share 175/1,039, as computed; N3 and the proof's table carry 1,051); N2's "no distinction tied at any level"
+is computed (levels 0 to 5 here, 0 to 7 by `BASES-WITHIN-20261112-001`'s referee), not implied by all eight on the terminals; and the
+reach across the pattern is connectivity once one knot pins.
+
+**Prior work and novelty.** The rule's ingredients are standard: a majority over three solutions with Hall's theorem, and a freedom
+to flip one variable close to the free and frozen variables of the random-constraint literature ("whitening"; Achlioptas and
+Ricci-Tersenghi; Montanari and Semerjian). Novelty of the rule is not claimed; the record claims only that it holds and what it means
+for the owner's question.
 
 ## What it changes
 

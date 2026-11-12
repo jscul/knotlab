@@ -3177,8 +3177,9 @@ So holes come in two kinds:
      the block's own knots bind the copies to each other. Does influence then travel?
    - **Yes: a value can be pinned across everything (exact).** In 47 of 87 small blocks, some distinction of the block is tied in
      every copy across the whole pattern: on a chain of 16 knots, fixing it at one end fixes it at the other, 16 steps away, and so
-     after a second substitution. Neither the test patterns nor most of the blocks hold any tie of their own.
-   - **The block decides (proved one way, exact the other).** A distinction the block can spare (its other distinctions can satisfy
+     after a second substitution. Neither the test patterns nor most of the blocks (30 of 47) hold any tie of their own; once one knot
+     pins, the reach is the pattern's connectivity.
+   - **The block decides (proved both ways: the pinning theorem below, and the referee's own proof).** A distinction the block can spare (its other distinctions can satisfy
      every knot without it) is never pinned; every other one was pinned, in all 4,850 cases. All four knots on four distinctions
      spares none, so every copy must take the same state and the whole nested pattern has just six.
    - **Depth carries, it does not create.** Nothing new appeared after the second substitution. Replacing knots instead of
@@ -3193,7 +3194,7 @@ So holes come in two kinds:
    - **Spare is "can flip unseen".** A distinction is spare exactly when some state of the block survives flipping it alone. So for
      odd n a cyclic block makes a harmony exactly when nesting it pins all its distinctions: the odd harmonies of 61, 73 and 193 are
      blocks that, nested, lock everything.
-   - **Pins never vary, and the reach is a wire.** With bindings that do not tell copies apart, a pin is always equality, the same
+   - **Pins never vary, and the reach is a wire.** With the block's knots between copies, a pin is always equality, the same
      value everywhere it reaches; the reach is one equality per knot chained along the pattern. Pins that vary would need a binding
      twisted by a symmetry of the block ([decision note](../research/PIN-RULE-20261112-001/pin_rule.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; stage 1 referee pending).

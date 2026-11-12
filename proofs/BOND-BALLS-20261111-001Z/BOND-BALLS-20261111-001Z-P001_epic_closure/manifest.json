@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "BOND-BALLS-20261111-001Z-P001",
+ "canonical_id": "BOND-BALLS-20261111-001Z-P001",
+ "kind": "proof",
+ "ticket": "BOND-BALLS-20261111-001Z",
+ "proof": "BOND-BALLS-20261111-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure of bond balls on infinite overlapping bases",
+ "status": "Proved",
+ "claim": "Ledger closing BOND-BALLS-20261111-001: ticket A, the frozen census (B1 and B2 failed by shortcuts on 42 of 134 bases; no absences; a direction of bounded bond distance on base 16 after the run); no correction; recommendation research directions with the folded direction selected. No new claim.",
+ "dependencies": [
+  "BOND-BALLS-20261111-001A"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "BOND-BALLS-20261111-001",
+  "epic_path": [
+   "BOND-BALLS-20261111-001"
+  ],
+  "parents": [
+   "experiments/BOND-BALLS-20261111-001A/BOND-BALLS-20261111-001A-E001_bond_balls/contract.json",
+   "artifacts/BOND-BALLS-20261111-001A/BOND-BALLS-20261111-001A-E001_bond_balls/census.json"
+  ]
+ },
+ "parent_bindings": {
+  "experiments/BOND-BALLS-20261111-001A/BOND-BALLS-20261111-001A-E001_bond_balls/contract.json": "e9d921f604d6137a8093fa6b46bf1ad842572845ef611f8d8165dc4742cbc079",
+  "artifacts/BOND-BALLS-20261111-001A/BOND-BALLS-20261111-001A-E001_bond_balls/census.json": "48565ca2554fe6112a297a87e5a5b39f306971bd036c4b3c9ebef5e717b748cb"
+ },
+ "paths": {
+  "manifest": "proofs/BOND-BALLS-20261111-001Z/BOND-BALLS-20261111-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/BOND-BALLS-20261111-001Z/BOND-BALLS-20261111-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/BOND-BALLS-20261111-001Z/BOND-BALLS-20261111-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/BOND-BALLS-20261111-001Z/BOND-BALLS-20261111-001Z-P001_epic_closure/result.json",
+  "check": "proofs/BOND-BALLS-20261111-001Z/BOND-BALLS-20261111-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/BOND-BALLS-20261111-001Z/BOND-BALLS-20261111-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session at the owner's go-ahead on 2026-11-11; the census and the lemmas refereed by independent agents.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

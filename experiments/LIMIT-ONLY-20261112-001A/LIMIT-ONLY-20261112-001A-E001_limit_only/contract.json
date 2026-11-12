@@ -1,0 +1,26 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LIMIT-ONLY-20261112-001A-E001",
+ "ticket": "LIMIT-ONLY-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which nested NAE families have no allowed state at some finite depth while the bottomless pattern lives, how often, and does the largest self-consistent relation inside the knot decide life at every depth?",
+ "definitions": {
+  "E": "every one-definition family with 3 ports, 0-3 own distinctions, 1-3 distinct calls (knots unordered, SELF ordered, at least one SELF).",
+  "W": "families drawn by SHORT-DESC's code (main variant), 8 workers x 150,000 tries, seeds sha256 LO:worker.",
+  "limit": "greatest fixed point from 'nothing'; lives iff main relation non-empty there (compactness).",
+  "L2": "alive at every depth iff main(P) non-empty, P the largest tuple inside the knot with P inside Phi(P)."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 0d5328a27d2fd7429c4bcb80228d440bef2edd2cd526ef91aad5003405ee35bc) beside this file; SHORT-DESC dlang.py; numpy.",
+  "run": "census.py --exhaustive W 8 for W in 0-7 and --sample W 150000 for W in 0-7, then --summary, from the repository root; output artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/."
+ },
+ "forbidden_inputs": ["Changing the classes, criteria, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Counts by comparability, fate and limit; L2 failures; the share of 'down' among families alive only in the limit.",
+ "cheapest_meaningful_control": "The proved gates (L1; L2 where knot and image compare).",
+ "validation_gate": "G1: L1 no exception; L2 no failure where knot and image compare.",
+ "predictions": {"P2": "at least one L2 failure in W", "P3": "share down among limit-only >= 0.5 in E and in W", "P4": "W: share of finitely dying families alive in the limit >= 0.5"},
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "A few minutes on 16 workers."
+}

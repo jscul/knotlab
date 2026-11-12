@@ -3373,6 +3373,9 @@ So holes come in two kinds:
      The law is not the limit: NAE knots express every relation closed under complement, and on plane-like patterns, where parts
      meet along growing boundaries, life is undecidable and counters can be built (Berger; Freedman). Counting inside, by bonds
      against depth, is open ([decision note](../research/NEST-COUNT-20261112-001/nest_count.md)).
+   - **Rows that grow by one** (`ROW-NEST-20261112-001`; referee pending): passing one more distinction per depth is not enough:
+     with one NAE distinction per site and knots reaching one step, none of the 1,024 rules counts or makes a harmony within depth
+     40, and every one settles by depth 3 ([decision note](../research/ROW-NEST-20261112-001/row_nest.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

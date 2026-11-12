@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "SUBST-NEST-20261112-001A-P001",
+  "canonical_id": "SUBST-NEST-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "SUBST-NEST-20261112-001A",
+  "proof": "SUBST-NEST-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Blocks and gadgets substituted for distinctions and knots",
+  "status": "Proved",
+  "claim": "Proved by hand: knot substitution by a gadget that treats its terminals alike is decided at the first level (kept, freed, terminals forced equal, or ended); unlagged block triples keep the outer law; with the block's own knots between copies substitution never ends, a spare distinction's part is never tied, and a rigid template pins every part; with every distinct triple and 5 or more distinctions substitution ends every pattern with a knot (N5 narrowed). Exact on frozen ranges: with the block's own knots, 47 of 87 blocks tie a part across the whole of chains of 4, 8 and 16 knots and drawn nestings, after one and two substitutions, from patterns and mostly blocks with no ties; the tied parts were exactly those of the distinctions that are not spare (4,850 roots; 300 blocks one size past, descriptive). Referee pending.",
+  "dependencies": [
+    "BASES-WITHIN-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A spare distinction whose part is tied outside its copy.",
+    "A distinction that is not spare whose part is untied on a connected test pattern.",
+    "A pattern with a knot that lives under every distinct triple with a block of 5 or more distinctions."
+  ],
+  "lineage": {
+    "home_scope": "SUBST-NEST-20261112-001",
+    "epic_path": [
+      "SUBST-NEST-20261112-001"
+    ],
+    "parents": [
+      "proofs/BASES-WITHIN-20261112-001A/BASES-WITHIN-20261112-001A-P001_inner_series/manifest.json",
+      "research/SUBST-NEST-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/BASES-WITHIN-20261112-001A/BASES-WITHIN-20261112-001A-P001_inner_series/manifest.json": "b7a009dec8a093198fbf74de52c203475d6a8778fb4a2b2d977e066f37373cec",
+    "research/SUBST-NEST-20261112-001/preregistration.md": "13d5a6ed0da8b80baabd15d3a770f03bbb43eb35878b31ea96eb78b87d2431dc"
+  },
+  "paths": {
+    "manifest": "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/manifest.json",
+    "identity": "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/identity.json",
+    "proof": "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/proof.md",
+    "result": "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/result.json",
+    "check": "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/check.py",
+    "directory": "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; blocks of 3 to 6 distinctions (and 300 of 6 and 7 past the range); chains of up to 16 knots and drawn three-copy nestings to level 3, one or two substitutions; two gadgets to levels 4 and 5.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 456d7a49e); independent referee pending with the background referee thread.",
+    "status": "lemmas by hand; exact census on frozen ranges (check.py); descriptive checks after the run (after_run_locking.py, stress_one_size_past.py); referee pending",
+    "novelty": "known-with-delta"
+  }
+}

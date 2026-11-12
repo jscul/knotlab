@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "SUBST-NEST-20261112-001Z-P001",
+ "canonical_id": "SUBST-NEST-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "SUBST-NEST-20261112-001Z",
+ "proof": "SUBST-NEST-20261112-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: nesting by substitution",
+ "status": "Proved",
+ "claim": "Ledger closing SUBST-NEST-20261112-001: one line per conclusion with its status and evidence (ticket A), and the end-of-epic recommendation. No new claim.",
+ "dependencies": [
+  "SUBST-NEST-20261112-001A"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest or result changes, or a proof is not Proved.",
+  "The decision note is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "SUBST-NEST-20261112-001",
+  "epic_path": [
+   "SUBST-NEST-20261112-001"
+  ],
+  "parents": [
+   "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/manifest.json",
+   "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/result.json"
+  ]
+ },
+ "parent_bindings": {
+  "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/manifest.json": "97a752875f183465576b174d322b150b2793c89a34b27e37fddca76611a51e0d",
+  "proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/result.json": "489c2deea8086b3bd447460e85349a3dcd27282551ce82811265dddf5e9c67b8"
+ },
+ "paths": {
+  "manifest": "proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/result.json",
+  "check": "proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "Ledger only.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-12.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

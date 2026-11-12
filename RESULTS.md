@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**318 current results** and 5 superseded ones, from 323 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**319 current results** and 5 superseded ones, from 323 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -27,7 +27,7 @@ How to read an entry:
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
-- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 22 results
+- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 23 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
@@ -978,6 +978,9 @@ Patterns of patterns in three dimensions: when counting colourings of knots and 
 - **2026-11-12 · A knot-law repeat of odd length: period 61** (`ODD-SEARCH-20261112-001-D001`).
   Twelve not-all-equal knot kinds, forbidding three equal values at equal spacing with step 1, 2, 11 or 22 modulo 61, allow only states that repeat with period 61 (proved): an odd harmony. No such base has an odd period up to 29 or at 31 or 37, so the knot law's repeats are not all even.
   [proof P001](proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/proof.md), [epic closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md)
+- **2026-11-12 · Nesting by substitution pins values across the whole pattern** (`SUBST-NEST-20261112-001-D001`).
+  With the block's own knots between copies, a block distinction's part is tied across the whole pattern exactly when the block cannot spare it, in all 87 blocks tested (exact; spare ones never, proved), so 47 blocks pin values everywhere from patterns with no ties. Nesting by unlagged stitches pins nothing.
+  [proof P001](proofs/SUBST-NEST-20261112-001A/SUBST-NEST-20261112-001A-P001_block_substitution/proof.md), [epic closure](proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/proof.md)
 
 ## Res(⊕) follow-ups
 
@@ -1414,6 +1417,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Outcomes of random meeting patterns (`RANDOM-FATES-20261112-001`) | [closure](proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/RANDOM-FATES-20261112-001/) |
 | 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | [closure](proofs/SEARCH-AUDIT-20261112-001Z/SEARCH-AUDIT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SEARCH-AUDIT-20261112-001/) |
 | 2026-11-12 | A learner whose examples steer its search (`STEER-LEARN-20261112-001`) | — | [folder](research/STEER-LEARN-20261112-001/) |
-| 2026-11-12 | Nesting by substitution (`SUBST-NEST-20261112-001`) | — | [folder](research/SUBST-NEST-20261112-001/) |
+| 2026-11-12 | Nesting by substitution (`SUBST-NEST-20261112-001`) | [closure](proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SUBST-NEST-20261112-001/) |
 | 2026-11-12 | Which cyclic sequences to fix (`WHICH-SEQUENCES-20261112-001`) | [closure](proofs/WHICH-SEQUENCES-20261112-001Z/WHICH-SEQUENCES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WHICH-SEQUENCES-20261112-001/) |
 

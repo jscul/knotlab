@@ -129,7 +129,7 @@ evidence: results and their status come from the records each entry links.
 | [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Assumed |
 | [A73](#a73--the-owners-other-realities-are-other-knot-patterns) | The owner's other realities are other knot patterns | reading | Assumed |
 | [A74](#a74--dimension-across-an-unlengthened-shift-is-read-by-across-counts) | Dimension across an unlengthened shift is read by across-counts | reading | Assumed |
-| [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Under challenge |
+| [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Assumed |
 
 ## Entries
 
@@ -1956,12 +1956,12 @@ evidence: results and their status come from the records each entry links.
 
 ### A75 · Bases within bases are stitched at one place
 
-**Under challenge** · 2026-11-12 · reading
+**Assumed** · 2026-11-12 · reading
 
 - **Statement.** The owner's "each boolean variable could be its own micro infinite series of logic, that's bound to others" is read
   as: each distinction of an outer base becomes a copy of an inner harmony (A70), and each outer knot becomes a stitch of the three
-  inner harmonies at every place, all at the same place (a stitch at one place); stitches with offsets are the variant tested beside
-  it. Doing it again with the same harmony gives the base along k shifts whose every line is a state of it (the literature's axial
+  inner harmonies at every place, all at the same place (an unlagged stitch; the record first wrote "a stitch at one place"); lagged
+  stitches are the variant tested beside it. Doing it again with the same harmony gives the base along k shifts whose every line is a state of it (the literature's axial
   power). The canonical K1–K3 test is unchanged.
 - **Why.** Proposed by the coordinator on 2026-11-12, after the owner approved starting B164; the natural inner series is a harmony,
   and a stitch is how the line already binds harmonies (`HARMONY-ARITH-20261112-001`). The owner's later word on overlapping ("like
@@ -1976,3 +1976,6 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-12 · Added with `BASES-WITHIN-20261112-001`'s pre-registration.
   - 2026-11-12 · Under challenge: `SUBST-NEST-20261112-001` tests the substitution reading (blocks and motifs) on the same questions.
+  - 2026-11-12 · Challenge answered, status back to Assumed: the readings differ in kind. Under substitution (each distinction a block
+    whose own knots bind the copies) every distinction the block cannot spare is tied across the whole pattern, in 47 of 87 small
+    blocks; under this reading nothing is. Which one the owner meant is his to say ([nesting by substitution](../research/SUBST-NEST-20261112-001/subst_nest.md)).

@@ -66,8 +66,9 @@ line.
 
 **Checks.**
 - On all 87 templates, a template triple differs at a distinction exactly when that distinction is spare.
-- On 500 random living blocks of 6 to 10 distinctions (seed 20261113), the same holds by SAT on one substituted knot, and on the
-  chain of 8 knots for some of them. See `result_random.json` once it is written.
+- On 500 random living blocks of 6 to 10 distinctions (seed 20261113), the same holds with no exception (`result_random.json`). By
+  SAT on one substituted knot, a distinction can differ between two copies exactly when it is spare. On the chain of 8 knots,
+  checked for 40 of the blocks, the pinned parts are exactly the parts that are not spare.
 
 ## 3. The coordinator's points
 

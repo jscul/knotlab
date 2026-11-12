@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WEIGHTS-20261112-001A-E001",
+ "ticket": "WEIGHTS-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under W2(r, beta) (738 kinds in [0,3] x [-3,3], weights exp(-beta D), beta = 0, 1, 2, r = 3..5), what share of travelling bases with a new kind have two certified unlengthened shifts?",
+ "definitions": {
+  "pre-registration": "research/WEIGHTS-20261112-001/preregistration.md",
+  "inputs": "SHIFT-COUNT rows.jsonl (sha256 04224ddecc23c468a46b69b821b868533ccb9bf983ddcdefe71c99df35015796)"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 9184e1240fc5350573f85a16450995f3242d5347711a48a3251e54cde9adfaa1); imports SHIFT-COUNT's census.py (sha256 a833345b6dfed01691a667b2871b312ed430714cdcfa92c8953dcd8c9e33726b)",
+  "run": "--part census, --part calibration"
+ },
+ "forbidden_inputs": [
+  "Changing weightings, seeds, stopping rule, arms or criteria after seeing results"
+ ],
+ "primary_observable": "Per weighting and stratum: travelling rate; certified two-direction share; forced-uncertified; none found",
+ "cheapest_meaningful_control": "Old-box stratum under beta = 0 (replicates W(r)); calibration on the old census",
+ "predictions": {
+  "W1": "pass (Wilson lower >= 50%, point >= 70%) under all three weightings on the new-kinds stratum",
+  "W2": "old-box share within the old interval",
+  "W3": "enlarged arm adds <= 5 of 23 on the old census"
+ },
+ "decision_rules": {
+  "fail": "Wilson upper < 70% under some weighting: the rule does not hold beyond one box",
+  "inconclusive": "otherwise, or fewer than 40 travelling new-kind bases"
+ },
+ "stop_rule": "One run; hand-off to the referee thread.",
+ "runtime": "Hours; per-sample saves; 3,600 s cap; registered."
+}

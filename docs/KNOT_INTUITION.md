@@ -6158,14 +6158,14 @@ So holes come in two kinds:
      one dimension across. That no smaller bond exists beyond one along-count is open; none turned up in the boxes searched
      ([decision note](../research/ACROSS-FOLD-20261112-001/across_fold.md)).
 
-   **2026-11-12: how common global influence is** (`COMMON-FOLD-20261112-001`; referee pending).
+   **2026-11-12: how common global influence is** (`COMMON-FOLD-20261112-001`; refereed, confirmed with fixes).
    - **The question.** Base 16 is one sample nobody chose. Among random periodic bases, is a bounded set deciding distinctions
      arbitrarily far away typical or rare, and is base 16's kind of it, a pattern that travels without ties, typical?
    - **Typical once knots overlap (computed, frozen).** Under uniform sets of r knot kinds from a box, bases tied or travelling along
      a shift go from none with one kind to 81 to 87% with six to eight.
-   - **Three regimes.** Few kinds: free and local. Four and five kinds: travelling, the law's own unlengthened shift, in about a third
-     of bases (base 16, with two, is rare at 3.5%). Near contradiction: ties along a shift, one distinction deciding a whole line, in
-     up to 83%.
+   - **Three regimes.** Few kinds: free and local. Four and five kinds: travelling, the law's own unlengthened shift, in at least about a
+     third of bases (base 16, with two, is rare at 3.5%). Near contradiction: ties along a shift, one distinction deciding a whole line, in
+     up to 83%, as the bases run out of states (one and its mirror left).
    - **Finite samples meet the same edge.** On uniform growth a pair's value is local until the last knots, then decides four fifths of
      the last base, by search rather than by propagation, mostly through ties
      ([decision note](../research/COMMON-FOLD-20261112-001/common_fold.md)).

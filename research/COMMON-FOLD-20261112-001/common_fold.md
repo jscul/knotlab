@@ -2,7 +2,7 @@
 
 Epic `COMMON-FOLD-20261112-001` (`ACROSS-FOLD-20261112-001` direction 1; G17 with G1, question 9; program topology, group spacing),
 2026-11-12, at the owner's go-ahead. Pre-registered in commit 28c3a3f0d after the advisor model's critique of the design; both
-censuses ran after. The canonical K1–K3 test is unchanged. **Referee pending** (handed to the referee thread).
+censuses ran after. The canonical K1–K3 test is unchanged. Refereed: confirmed with three wording fixes (Review).
 
 ## Words
 
@@ -29,10 +29,10 @@ into the pair's own ties, unit propagation and search.
 | --- | --- | --- | --- |
 | 1 | **Global influence along a shift becomes typical as knots overlap more.** Under W(r) (the first r of one random order of the 171 kinds; each distinction in 3r knots), the share of bases tied or travelling along a shift is 0% at r = 1, 3.5% at 2, 18.5% at 3, 44% at 4, 68% at 5 and 81 to 87% at 6 to 8 (Wilson intervals in the table below). | computed, frozen (A1, A4 held) | A |
 | 2 | **Base 16's kind is a middle-density phenomenon.** Travelling bases (tied along no listed shift) are 0% at r = 1 and 3.5% at r = 2, where base 16 sits, rise to 28% and 30% at r = 4 and 5 (the peak), and fall to 21%, 9% and 4% at r = 6, 7, 8. Most travelling sets have three distinctions, as base 16's does. | computed, frozen (A2 held) | A |
-| 3 | **Near contradiction, ties take over.** Bases tied along a shift are 2% at r = 3, 16% at 4, 38% at 5 and 60%, 74%, 83% at 6, 7, 8, while contradictions rise from none at r ≤ 3 to 61% of the samples at r = 8: the bases left near the edge are rigid along a shift, one distinction deciding a whole line of others. | computed, frozen (A3, A5 held) | A |
+| 3 | **Near contradiction, ties take over.** Bases tied along a shift are 2% at r = 3, 16% at 4, 38% at 5 and 60%, 74%, 83% at 6, 7, 8, while contradictions rise from none at r ≤ 3 to 61% of the samples at r = 8: the bases left near the edge are rigid along a shift, one distinction deciding a whole line of others. This is mostly the loss of states, not a separate mechanism: tied bases have a median of two periodic states on the 6 × 6 and 8 × 8 tori, one state and its mirror, at every r (the referee's count). | computed, frozen (A3, A5 held); refereed | A |
 | 4 | **The rates are lower bounds within the searched family, and stable.** A larger family on 50 samples raised the travelling rate by 0, 8 and 6 points at r = 2, 3, 4 (frozen bound 10, A6 held); travelling found but not certified by doubly periodic states is a further 0.5 to 8% of the bases per r; certificates are not monotone along prefixes (86 travelling bases lost one when a kind was added). Rates on lattice index 1 alone are the same within a point. | computed, frozen | A |
 | 5 | **The lemma.** A certified travelling pattern on a free set A gives, for every k, a bond of at most \|A\| + 1 distinctions holding a + k t and a member of A, while steps apart grow linearly: an unlengthened shift. A tie along t gives bond distance 1 at every multiple of t. | proved (settled before the run) | A |
-| 6 | **In finite random samples influence is local until the end, then global, and found only by search.** On uniform growth with 100 and 200 distinctions, a co-knotted pair decides about 1% of the base at half and three quarters of the way (one distinction, by propagation); at the last base it decides 85% and 82% on average, almost evenly at every number of steps (88 to 91% at one step, 72 to 75% at three), with at most 0.4% by propagation. Mostly this is the pair's own ties: 4.1% and 6.1% lie beyond them on average, so the frozen bound of 5% (B4) failed at 200, while single pairs outside the large tie class decide up to 91% beyond their ties. The tree control decides only the third of the pair's own knot (B1). | computed, frozen (exploratory; B1, B2, B3 held at 100 and 200, B4 failed at 200; 400 undecided) | B |
+| 6 | **In finite random samples influence is local until the end, then global, and found only by search.** On uniform growth with 100 and 200 distinctions, a co-knotted pair decides about 1% of the base at half and three quarters of the way (one distinction, by propagation); at the last base it decides 85% and 82% on average, almost evenly at every number of steps (88 to 91% at one step, 72 to 75% at three), with at most 0.4% by propagation. Mostly this is the pair's own ties: it is the large tie class of the last base, `RANDOM-FATES-20261112-001`'s final jump, seen from a pair (run by run the two track each other, and 227 of 240 pairs have a member in that class; the referee's check), and 4.1% and 6.1% lie beyond the ties on average, so the frozen bound of 5% (B4) failed at 200, while single pairs outside the large tie class decide up to 91% beyond their ties. The tree control decides only the third of the pair's own knot (B1). | computed, frozen (exploratory; B1, B2, B3 held at 100 and 200, B4 failed at 200; 400 undecided); refereed | B |
 | 7 | **The samples with 400 distinctions did not finish.** All 20 needed more than 30 minutes each at the last base (solving at the edge of contradiction), in the registered run (stopped after 2 hours, nothing written) and in its rerun with a cap per run (all 20 dropped at the cap). B2 to B4 are undecided at 400. | deviation, recorded | B |
 
 **Ticket A in numbers** (200 samples per r; among bases; Wilson 95% intervals):
@@ -50,10 +50,11 @@ into the pair's own ties, unit propagation and search.
 
 ## Answer
 
-Typical, once knots overlap enough. Under a uniform weighting of small families of knot kinds, a random periodic base with one or two
+Typical under this weighting, once knots overlap enough. Under a uniform weighting of small families of knot kinds, a random periodic base with one or two
 kinds almost never lets a bounded set decide distinctions far away; with four or more it usually does, and near contradiction almost
 always. Base 16's own kind of influence, a pattern that travels without ties, so that the law makes a direction of no length, is
-rare where base 16 sits (two kinds, 3.5%) but common in the middle (about 30% at four and five kinds), and gives way to ties as
+rare where base 16 sits (two kinds, 3.5%) but common in the middle (at least about 30% at four and five kinds, since a certified travelling pattern is one sufficient form
+of the fold), and gives way to ties as
 contradiction nears. In finite random samples a pair's value stays local until the last knots before the end; at the last base it decides four
 fifths of the base at every distance, found only by search and mostly through its own ties, with a share beyond them that grew from
 4% to 6% between 100 and 200 distinctions.
@@ -65,8 +66,8 @@ fifths of the base at every distance, found only by search and mostly through it
   distinction joins more knots, a few values decide more and farther, first by patterns that travel (the law making its own
   unlengthened shift) and then, close to contradiction, by ties that bind whole lines. So "can be kind of globally influential" is
   the rule for dense overlap under this weighting, not the exception.
-- **Three regimes.** Few kinds: free, local. Middle: travelling, a geometry of the law's own (base 16's kind). Near the edge: tied,
-  rigid. The middle regime is where the law reads a dimension different from the meeting pattern's; the edge is where it reads almost
+- **Three regimes.** Few kinds: free, local. Middle: travelling, a geometry of the law's own (base 16's kind), while bases still
+  have many states. Near the edge: tied, rigid, with essentially one state and its mirror left. The middle regime is where the law reads a dimension different from the meeting pattern's; the edge is where it reads almost
   none.
 - **The same edge in finite samples.** Growing finite samples meet the edge from the other side: influence stays local until the
   last knots, then a pair decides most of the base, mostly through ties, as `RANDOM-FATES-20261112-001` found for ties alone. Near
@@ -87,7 +88,18 @@ could not go one size past (400 distinctions) within its caps.
 
 ## Review
 
-Referee pending: handed to the referee thread on 2026-11-12.
+The background referee thread (report `research/COMMON-FOLD-20261112-001/referee-R1/report.md`, its own code with Glucose against
+the census's Minisat, windows, tori, freeness and travelling search rebuilt from the pre-registration) confirmed the epic with three
+wording fixes, all Not a block:
+- **Ticket A reproduces in all 1,600 cells**, outcome and class; the base-16 control travels; every positive certificate is sound for
+  the infinite base; no base classed untied became tied in a window of 35 × 39; the lemma is correct.
+- **Ties near contradiction are the loss of states:** tied bases keep a median of one periodic state and its mirror on small tori at
+  every r, while untied bases with nothing found fall from 62 states on the 8 × 8 torus at r = 3 to none at r = 8 (fix 1, in
+  conclusion 3 and the Reading).
+- **Travelling is a certified, sufficient form of base 16's fold** (with |A| = 3 it gives bonds of at most four at every step, every
+  pair free); the converse is not shown, so the travelling rates are lower bounds for folding (fix 2, in the Answer).
+- **Ticket B reproduces exactly** from its seeds; the deviation changed no verdict at 100 or 200, and the summary bug touched nothing
+  kept; the last-base share is the large tie class of the final jump seen from a pair (fix 3, in conclusion 6).
 
 ## Literature and provenance
 
@@ -119,7 +131,7 @@ ties, propagation and search with a shell profile.
 
 ## Corrections
 
-One, logged in `docs/CORRECTIONS.md` (**Not a block**): the pre-registration (commit 28c3a3f0d) and this note's first version
+Two entries in `docs/CORRECTIONS.md`, both **Not a block**: the referee's three wording fixes (above), and the pre-registration (commit 28c3a3f0d) and this note's first version
 (80d5c66a3) named the new assumption A75 before reserving the number, and A75 is `BASES-WITHIN-20261112-001`'s; it is A76. Two
 deviations, recorded here and in `docs/LONG_RUNNING.md`: ticket B's registered run was stopped after 2 hours with nothing
 written (it writes only at the end, and its 400-distinction samples did not finish; its runtime estimate of 15 minutes was wrong),
@@ -133,12 +145,12 @@ stopped): write each run as it finishes.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — how common global influence is | **Status:** Successful, referee pending | Every frozen prediction of ticket A held; ticket B held at 100 and 200 distinctions except the bound beyond ties, undecided at 400 |
+| This attempt — how common global influence is | **Status:** Successful, refereed | Every frozen prediction of ticket A held; ticket B held at 100 and 200 distinctions except the bound beyond ties, undecided at 400 |
 | Local direction — the middle regime | Continue | A third of bases travel at four to five kinds: what the law reads there is the next measurement |
 | Broader exploration — G17 under other weightings | Known alternatives | Bigger boxes of kinds, three shifts, other growth processes |
-| Long-term goal — G17 with G1 | Capability gained | Global influence is typical under dense overlap, in three regimes; the law's own geometry is a middle-density regime, not one chosen sample |
+| Long-term goal — G17 with G1 | Capability gained | Global influence is typical under dense overlap (under this weighting), in three regimes; the law's own geometry is a middle-density regime, not one chosen sample |
 
-**Corrections:** one, Not a block (the new assumption's number; two deviations recorded besides). **Goals:** a G17 checkpoint (capability gained), served with G1; no goal change.
+**Corrections:** two entries, Not a block (the new assumption's number; the referee's three wording fixes), and two deviations recorded. **Goals:** a G17 checkpoint (capability gained), served with G1; no goal change.
 **Assumptions:** A76 added (the pre-registration called it A75, a number another thread had taken; one correction, Not a block). **Basket:** `ACROSS-FOLD-20261112-001#2` (all bonds across, 2/3, 2/3), `ACROSS-FOLD-20261112-001#3` (the other
 folding classes, 2/3, 3/3), `FOLD-20261112-001#2` (the other shortcuts, 2/3, 3/3); taken: `ACROSS-FOLD-20261112-001#1` by this epic.
 

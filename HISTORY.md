@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: how common global influence is, confirmed with fixes by its referee
+
+- Random periodic bases (`COMMON-FOLD-20261112-001`): the referee rebuilt the census with its own code and agreed in all 1,600
+  cells. Three fixes. The rise of ties near contradiction is mostly the bases running out of states (tied bases keep one periodic
+  state and its mirror); the share of bases where a pattern travels, base 16's kind, is a lower bound, at least about 30% at four and
+  five knot kinds, since a certified travelling pattern is one sufficient form of the fold; and at the last base of uniform growth, a
+  pair's 82 to 85% is the large tie class of the final jump seen from the pair. The assumption the epic added is A76, not A75 as the
+  pre-registration said ([decision note](research/COMMON-FOLD-20261112-001/common_fold.md)).
+- Unchanged: every number and every frozen verdict.
+
 ## 12 November 2026: which loops lock, narrowed by its referee
 
 - Harmonies stitched in one order (`LOOP-LOCK-20261112-001`): the loop rule (a loop locks iff shorter than the girth of the step

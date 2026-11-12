@@ -11,6 +11,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: what a living bottomless pattern looks like, narrowed by its referee
+
+- The test of whether one all-equal knot per depth can keep a bottomless pattern alive (`LIMIT-STATE-20261112-001`) was confirmed:
+  every count reproduces. That it almost never can follows mostly from the structure itself: each inner copy holds the whole dying
+  pattern again and needs its own all-equal knot, which forces two or more in 788 of the 800 patterns; the measured part is the 12
+  others and how far the counts exceed one per copy
+  ([decision note](research/LIMIT-STATE-20261112-001/limit_state.md)).
+- Unchanged: every count.
+
 ## 12 November 2026: patterns alive only in the limit, narrowed by its referee
 
 - The census of nested patterns that die at a finite depth while the limit lives (`LIMIT-ONLY-20261112-001`) was confirmed: every

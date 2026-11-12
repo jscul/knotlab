@@ -3359,9 +3359,10 @@ So holes come in two kinds:
      depth); every state of the bottomless pattern sets some self-holding copy's ends all equal, the one state the bottom knot
      forbids (proved), and in the limit the self-holding knot usually sets its ends free; no one-definition family with at most
      three calls ever dies ([decision note](../research/LIMIT-ONLY-20261112-001/limit_only.md)).
-   - **What its living states look like** (`LIMIT-STATE-20261112-001`; referee pending): in 797 of 800 branching families that
-     live only in the limit, every living state has to set two or more self-holding knots' ends all equal at some depth where the
-     finite versions die; one knot per depth, or one thread of them down the nesting, almost never works. The bottom comes loose
+   - **What its living states look like** (`LIMIT-STATE-20261112-001`; refereed, confirmed with fixes): in 797 of 800 branching
+     families that live only in the limit, every living state has to set two or more self-holding knots' ends all equal at some
+     depth where the finite versions die, by construction in 788 of them (each copy holds the whole dying pattern again and needs
+     its own); one knot per depth, or one thread of them down the nesting, almost never works. The bottom comes loose
      in 87% of them; the interior does not ([decision note](../research/LIMIT-STATE-20261112-001/limit_state.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,

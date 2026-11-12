@@ -1441,7 +1441,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Influence through hidden copies (`HIDDEN-COPY-20261112-001`) | [closure](proofs/HIDDEN-COPY-20261112-001Z/HIDDEN-COPY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/HIDDEN-COPY-20261112-001/) |
 | 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |
 | 2026-11-12 | Jumps over a whole life (`LIFE-JUMPS-20261112-001`) | [closure](proofs/LIFE-JUMPS-20261112-001Z/LIFE-JUMPS-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LIFE-JUMPS-20261112-001/) |
-| 2026-11-12 | Patterns alive only in the limit (`LIMIT-ONLY-20261112-001`) | — | [folder](research/LIMIT-ONLY-20261112-001/) |
+| 2026-11-12 | Patterns alive only in the limit (`LIMIT-ONLY-20261112-001`) | [closure](proofs/LIMIT-ONLY-20261112-001Z/LIMIT-ONLY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LIMIT-ONLY-20261112-001/) |
 | 2026-11-12 | Lines in the increments (`LINE-LOCK-20261112-001`) | [closure](proofs/LINE-LOCK-20261112-001Z/LINE-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LINE-LOCK-20261112-001/) |
 | 2026-11-12 | Which loops lock (`LOOP-LOCK-20261112-001`) | [closure](proofs/LOOP-LOCK-20261112-001Z/LOOP-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-LOCK-20261112-001/) |
 | 2026-11-12 | The law's count of missing knots (`MISSING-KNOTS-20261112-001`) | [closure](proofs/MISSING-KNOTS-20261112-001Z/MISSING-KNOTS-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/MISSING-KNOTS-20261112-001/) |

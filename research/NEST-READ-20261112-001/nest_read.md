@@ -1,8 +1,9 @@
 # What the law reads along a nested pattern's levels
 
 Epic `NEST-READ-20261112-001` (`SHORT-DESC-20261112-001` direction 1; G17, with G7), 2026-11-12, at the coordinator's go-ahead.
-Pre-registered in commit c3467c1df before the registered run. The canonical K1–K3 test is unchanged. **Referee pending** (handed to
-the referee thread).
+Pre-registered in commit c3467c1df before the registered run. The canonical K1–K3 test is unchanged. Refereed by the referee thread
+(NEST-READ-R1, `referee-R1/report.md`, commit abfdc007f): **confirmed with fixes**, folded in below; two corrections logged (both
+Not a block).
 
 ## Words
 
@@ -29,15 +30,16 @@ through a root vertex and a vertex created at replacement depth s, against hyper
 | --- | --- | --- | --- |
 | 1 | **Control.** No pair in a pattern without a cycle of knots breaks L = d + 2 within five. | computed | gate passed |
 | 2 | **Monotone families mostly follow the steps, but not entirely.** In monotone families with a cycle, 93% of pairs one to three steps apart are bonded within five, and 11.3% of pairs four or more apart, above the registered 10%. | computed, frozen | P2 failed (far share) |
-| 3 | **Constraining families reach beyond the steps twice as often.** Tie-free shortcuts: 20% of pairs against 10% in monotone families with a cycle (difference 0.100, 0.066 to 0.131). Through the knot, 45% of pairs four or more steps apart are bonded within five (46% at five steps and 37% at six), where uniform patterns of the same size have none at five or six. | computed, frozen | P3 held |
-| 4 | **Influence holds with level.** Against a uniform pattern at the same steps apart, the share of tie-free bonds within five neither grows nor dies with level in constraining families (mean slope −0.001 per level, −0.005 to 0.003). The raw share falls (from 0.70 at level 1 to 0.52 to 0.58 at levels 8 to 11, through the knot), because steps apart grow. Every level read, up to 11, keeps a top distinction bonded within five to about half or more of its sampled distinctions. | computed, frozen | P4 held (hold) |
+| 3 | **Constraining families reach beyond the steps twice as often.** Tie-free shortcuts: 20% of pairs against 10% in monotone families with a cycle (difference 0.100, 0.066 to 0.131). Through the knot, 45% of pairs four or more steps apart are bonded within five (46% at five steps and 37% at six), where uniform patterns of the same size have none at five or six. *After the referee: the difference is broad, not carried by a few families: 432 of 960 constraining families have a tie-free shortcut against 89 of 395 monotone ones with a cycle (45% against 23%); without each stratum's top tenth of families it is 0.084 (0.066 to 0.102); it holds in each variant (0.091 through the knot, 0.090 directly) and for untied (0.104) and tied (0.087) families; the monotone stratum's top tenth holds 77% of its shortcuts, the constraining one's 53%.* | computed, frozen | P3 held |
+| 4 | **Influence holds with level.** Against a uniform pattern at the same steps apart, the share of tie-free bonds within five neither grows nor dies with level in constraining families (mean slope −0.001 per level, −0.005 to 0.003). The raw share falls (from 0.70 at level 1 to 0.52 to 0.58 at levels 8 to 11, through the knot), because steps apart grow. Every level read, up to 11, keeps a top distinction bonded within five to about half or more of its sampled distinctions. *After the referee: a uniform pair at the same steps apart is often missing at large distances (32% of pairs at four steps, 59% at five, 73% at six, 86% at seven or more), so 1,850 of 15,894 constraining pairs drop out of the excess slope; "hold" covers the distances where a uniform pattern of the same size can be compared, not the far, deep pairs where dying would show, and the raw slope does fall.* | computed, frozen | P4 held (hold), narrowed |
 | 5 | **Through the knot, influence passes as ties; directly, it passes by nearness.** Through the knot, 35% of constraining families tie ports of their definition and 17% of pairs are tied, at every level read; directly, almost none (2 families). Sharing directly keeps deep distinctions within about two steps of the top, so at levels 4 and deeper 0.21 more pairs (0.15 to 0.26) are tie-free bonded within five than through the knot; at the same steps apart (four), through the knot more pairs are bonded within five (0.55 against 0.37). | computed, frozen | reported |
 | 6 | **Nested patterns are bonded less at short range than uniform ones.** One to three steps apart, 84 to 94% against 98 to 99%, as SHORT-DESC found them less tied. | computed, frozen | reported |
 
 ## Answer
 
 Yes: in a nested pattern a top distinction stays bonded through at most three others to distinctions at every level read, down to
-eleven, and this holds with level once distance is accounted for. Where the inside constrains its ends more than a knot does, the
+eleven, and this holds with level once distance is accounted for, at the distances where a uniform pattern can be compared (the far,
+deep pairs mostly cannot be, and there the raw share falls). Where the inside constrains its ends more than a knot does, the
 law reaches beyond what the steps allow twice as often as where it does not. Through the knot that reach is carried mostly by ties,
 which the self-holding definition repeats at every level. Sharing directly gives more bonds deep down, but by keeping deep
 distinctions near the top, not by reaching past the steps.
@@ -64,7 +66,10 @@ past level 11 or for fast-growing families.
 
 ## Review
 
-Referee pending (the referee thread). The advisor model reviewed the design cold before freezing (`advisor_review_answer.md`): it
+**NEST-READ-R1** (the referee thread, records only, confirmed with fixes): 1,440 families, the tied counts, the control, P2
+(0.932, 0.113), P3 (0.100, 0.067 to 0.132) and P4 (−0.001, −0.005 to 0.003) recompute; nothing is settled by construction; the
+mechanism is known in kind (one-dimensional transfer) and the contrast between strata is new data. Its two fixes, P4's scope and
+P3's breadth, are made above. The advisor model reviewed the design cold before freezing (`advisor_review_answer.md`): it
 showed that ties alone could pass the draft's tests, that the cap restated the control on patterns without cycles, and that level and
 steps apart are confounded; the tie-free shortcut, the cyclic-only P2, the excess slope and the band rule are its.
 
@@ -84,13 +89,14 @@ Substantive: the census of 1,440 families and 23,618 pairs. Administrative: the 
 
 ## Corrections
 
-None.
+Two, from the referee (`docs/CORRECTIONS.md`, 2026-11-12), both **Not a block**: P4's "hold" covers only the distances where a
+uniform pattern can be compared; P3's breadth figures added.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — what the law reads along a nested pattern's levels | **Status:** Partially successful (referee pending) | P3, P4 held; P2 failed narrowly (11.3% against 10%) |
+| This attempt — what the law reads along a nested pattern's levels | **Status:** Partially successful (refereed, confirmed with fixes) | P3, P4 held; P2 failed narrowly (11.3% against 10%) |
 | Local direction — influence across levels | Continue | Ties carry it through the knot; whether it holds at every depth is exact for tied definitions and open for the rest |
 | Broader exploration — G17 | Searching | Patterns alive only in the limit are in the basket |
 | Long-term goal — G17 Typical and rare meeting patterns (with G7) | Capability gained | Influence passes between levels of a logic fractal and holds with level |

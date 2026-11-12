@@ -11,6 +11,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: reading along a nested pattern's levels, narrowed by its referee
+
+- The test of what the law reads along the levels of nested patterns (`NEST-READ-20261112-001`) was confirmed: every figure
+  recomputes. That influence holds with level was checked only at the distances where a uniform pattern of the same size can be
+  compared, which leaves out most far, deep pairs; the contrast between families whose inside constrains more than a knot and the
+  others is broad, not carried by a few families
+  ([decision note](research/NEST-READ-20261112-001/nest_read.md)).
+- Unchanged: every verdict.
+
 ## 12 November 2026: meeting patterns weighted by short descriptions, narrowed by its referee
 
 - The census of patterns weighted by the length of their description (`SHORT-DESC-20261112-001`) was confirmed: every pattern

@@ -3347,9 +3347,10 @@ So holes come in two kinds:
      families nearly always live at every depth, one in a hundred lives a while and dies within nine levels, and 0.63% die at a
      finite depth yet live in the infinite limit
      ([decision note](../research/SHORT-DESC-20261112-001/short_desc.md)).
-   - **Along a nested pattern's levels** (`NEST-READ-20261112-001`; referee pending): a top distinction stays bonded through at
+   - **Along a nested pattern's levels** (`NEST-READ-20261112-001`; refereed, confirmed with fixes): a top distinction stays bonded through at
      most three others to distinctions at every level read (to 11), and against a uniform pattern at the same steps apart this
-     neither grows nor dies with level; where the inside constrains its ends more than a knot does, the law reaches past the steps
+     neither grows nor dies with level, at the distances where such a pattern can be compared (the far, deep pairs mostly cannot
+     be); where the inside constrains its ends more than a knot does, the law reaches past the steps
      twice as often (through the knot mostly by ties repeated at every level; directly, by keeping deep distinctions near)
      ([decision note](../research/NEST-READ-20261112-001/nest_read.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The

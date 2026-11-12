@@ -3295,6 +3295,13 @@ So holes come in two kinds:
    - **Through the stitches where they survive (exact on 3 × 3 and 4 × 4).** Of the counts one count fixes, 10% follow from the parity
      equations alone, 14% need the harmony's own states too, and 76% need the not-all-equal stitches; 38% are beyond checking knots
      one at a time ([decision note](../research/PARITY-SURVIVE-20261112-001/parity_survive.md)).
+
+   **2026-11-12: influence through hidden copies** (`HIDDEN-COPY-20261112-001`; referee pending).
+   - **Never parity; mod 3 in principle.** Copies of a harmony tied by not-all-equal stitches, some hidden, can never build a parity
+     tie (all copies equal always fits). By known algebra (Pálfy; the Galois correspondence), harmonies whose states split into three
+     symmetric classes can build "all equal or all different" on the classes, Ledrappier's law over Z₃ (102 of 318 cases reached), but
+     only with gadgets of impractical size; none of 486,000 small gadgets does
+     ([decision note](../research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 90% at the last base, consistent with the

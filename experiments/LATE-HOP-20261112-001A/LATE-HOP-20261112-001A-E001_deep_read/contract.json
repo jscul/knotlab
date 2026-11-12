@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LATE-HOP-20261112-001A-E001",
+ "ticket": "LATE-HOP-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the late hopping rules of TWO-BIT-ROWS settle, keep a period, or neither within depth 200, and are late changes tied to powers of two?",
+ "definitions": {"selection": "selection.json (sha256 e899b4bdc37ea84cf6b865131622c8fdc3d422d851bfa0762b2196eb61438ad5): 5 unexplained and 24 late hopping rules, 2 harmonies and 4 latest flat rules", "classes": "constant; eventually periodic p <= 50 from a <= 100; neither within 200"},
+ "public_inputs": {"code": "census.py (sha256 f936e227f3a55b585cbbef38f084a499c6bd19dc5719a752b098a3535154e57b) and selection.json beside this file; TWO-BIT-ROWS census.py; pysat.", "run": "census.py --run W 8 for W in 0-7, then --summary, from the repository root."},
+ "forbidden_inputs": ["Changing the selection, classes, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Classes of the five within 200; late changes against powers of two.",
+ "cheapest_meaningful_control": "Six flat rules read the same way.",
+ "predictions": {"L1": "the five eventually periodic within 200", "L2": "every change after 40 within 2 of a power-of-two length"},
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report; pause.",
+ "runtime": "Minutes on 8 workers."
+}

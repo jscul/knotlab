@@ -1,0 +1,405 @@
+{
+ "families_by_pt": {
+  "none": 85210,
+  "all": 133847,
+  "some": 4204
+ },
+ "dying_by_pt_and_bottomless_limit": {
+  "all|False": 269,
+  "all|True": 406,
+  "none|False": 690,
+  "none|True": 821,
+  "some|False": 81,
+  "some|True": 114
+ },
+ "limit_only_by_pt": {
+  "some": 114,
+  "all": 406,
+  "none": 821
+ },
+ "limit_only_by_pt_and_union_limit": {
+  "all|False": 406,
+  "none|True": 821,
+  "some|False": 41,
+  "some|True": 73
+ },
+ "limit_only_by_pt_and_comparability": {
+  "all|down": 403,
+  "all|equal": 2,
+  "all|incomparable": 1,
+  "none|down": 72,
+  "none|incomparable": 749,
+  "some|down": 33,
+  "some|incomparable": 81
+ },
+ "dying_by_pt_and_union_limit": {
+  "all|False": 675,
+  "none|False": 690,
+  "none|True": 821,
+  "some|False": 122,
+  "some|True": 73
+ },
+ "union_limit_only": 894,
+ "union_limit_only_by_comparability": {
+  "down": 81,
+  "incomparable": 813
+ },
+ "union_limit_only_first_dead": {
+  "1": 17,
+  "2": 281,
+  "3": 389,
+  "4": 158,
+  "5": 41,
+  "6": 6,
+  "7": 1,
+  "8": 1
+ },
+ "union_limit_only_limit_kinds": {
+  "free": 975,
+  "knot": 48,
+  "three tied": 1
+ },
+ "union_limit_only_no_K": 0,
+ "all_pt_dying_recurrent": 0,
+ "union_limit_sat_check": {
+  "some|computed True|SAT True": 62,
+  "all|computed False|SAT False": 406,
+  "none|computed True|SAT True": 737,
+  "none|computed True|SAT over cap": 84,
+  "some|computed False|SAT False": 41,
+  "some|computed True|SAT over cap": 11
+ },
+ "smallest_union_limit_only": [
+  {
+   "defs": [
+    [
+     3,
+     2,
+     [
+      [
+       "SELF",
+       [
+        1,
+        2,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        0,
+        4,
+        3
+       ]
+      ],
+      [
+       "K",
+       [
+        1,
+        2,
+        4
+       ]
+      ],
+      [
+       "K",
+       [
+        1,
+        3,
+        0
+       ]
+      ]
+     ]
+    ]
+   ],
+   "first_dead": 5,
+   "comparability": "incomparable"
+  },
+  {
+   "defs": [
+    [
+     3,
+     2,
+     [
+      [
+       "SELF",
+       [
+        2,
+        3,
+        1
+       ]
+      ],
+      [
+       "K",
+       [
+        4,
+        0,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        0,
+        3,
+        2
+       ]
+      ],
+      [
+       "SELF",
+       [
+        2,
+        4,
+        1
+       ]
+      ]
+     ]
+    ]
+   ],
+   "first_dead": 4,
+   "comparability": "incomparable"
+  },
+  {
+   "defs": [
+    [
+     3,
+     2,
+     [
+      [
+       "SELF",
+       [
+        3,
+        0,
+        2
+       ]
+      ],
+      [
+       "SELF",
+       [
+        4,
+        2,
+        1
+       ]
+      ],
+      [
+       "SELF",
+       [
+        1,
+        4,
+        3
+       ]
+      ],
+      [
+       "K",
+       [
+        0,
+        2,
+        4
+       ]
+      ]
+     ]
+    ]
+   ],
+   "first_dead": 4,
+   "comparability": "incomparable"
+  },
+  {
+   "defs": [
+    [
+     3,
+     2,
+     [
+      [
+       "SELF",
+       [
+        3,
+        4,
+        2
+       ]
+      ],
+      [
+       "SELF",
+       [
+        3,
+        0,
+        1
+       ]
+      ],
+      [
+       "K",
+       [
+        1,
+        3,
+        2
+       ]
+      ],
+      [
+       "SELF",
+       [
+        1,
+        0,
+        4
+       ]
+      ]
+     ]
+    ]
+   ],
+   "first_dead": 5,
+   "comparability": "incomparable"
+  }
+ ],
+ "smallest_pass_through_limit_only": [
+  {
+   "defs": [
+    [
+     3,
+     2,
+     [
+      [
+       "SELF",
+       [
+        4,
+        0,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        1,
+        2,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        0,
+        2,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        0,
+        2,
+        1
+       ]
+      ],
+      [
+       "SELF",
+       [
+        2,
+        1,
+        4
+       ]
+      ]
+     ]
+    ]
+   ],
+   "first_dead": 3
+  },
+  {
+   "defs": [
+    [
+     3,
+     2,
+     [
+      [
+       "SELF",
+       [
+        0,
+        2,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        2,
+        0,
+        4
+       ]
+      ],
+      [
+       "K",
+       [
+        2,
+        4,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        1,
+        2,
+        0
+       ]
+      ],
+      [
+       "K",
+       [
+        1,
+        3,
+        4
+       ]
+      ]
+     ]
+    ]
+   ],
+   "first_dead": 3
+  },
+  {
+   "defs": [
+    [
+     3,
+     2,
+     [
+      [
+       "SELF",
+       [
+        1,
+        2,
+        0
+       ]
+      ],
+      [
+       "SELF",
+       [
+        1,
+        3,
+        4
+       ]
+      ],
+      [
+       "K",
+       [
+        2,
+        0,
+        3
+       ]
+      ],
+      [
+       "SELF",
+       [
+        0,
+        4,
+        2
+       ]
+      ],
+      [
+       "SELF",
+       [
+        4,
+        0,
+        1
+       ]
+      ]
+     ]
+    ]
+   ],
+   "first_dead": 3
+  }
+ ]
+}

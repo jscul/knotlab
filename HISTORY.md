@@ -184,6 +184,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   ([decision note](research/RANDOM-FATES-20261112-001/random_fates.md)).
 - Unchanged: every result, number and prediction's verdict.
 
+## 12 November 2026: the clamped-phase counts, stated as counts within the time cap by their referee
+
+- The clamped-phase epic (`CLAMP-LEARN-20261112-001`) found that holding each example in front of the learner during its walk does not let
+  the examples steer it. Its referee confirmed every result and fixed one statement: the counts (13 and 12 runs of 100 found the count,
+  against 48 without the clamp) are counts within the frozen five-minute cap, which stopped every run that did not find, at about 25 to
+  42 million steps; none reached the 2,000,000-step budget, so the rule counting such runs at the budget never applied
+  ([decision note](research/CLAMP-LEARN-20261112-001/clamp_learn.md)).
+- Unchanged: every result, number and mark.
+
 ## 12 November 2026: the steering report's wording, corrected by its referee
 
 - The steering epic (`STEER-LEARN-20261112-001`) found that no steering rule lets the learner's examples speed its search. Its referee

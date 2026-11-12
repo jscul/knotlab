@@ -1837,11 +1837,11 @@ So holes come in two kinds:
    - **Next (taken by `CLAMP-LEARN-20261112-001`, below).** Examples felt during the walk (sub-goal B168)
      ([decision note](../research/STEER-LEARN-20261112-001/steer_learn.md)).
 
-   **2026-11-12: holding the examples in front of it does not teach it either** (`CLAMP-LEARN-20261112-001`, referee pending).
+   **2026-11-12: holding the examples in front of it does not teach it either** (`CLAMP-LEARN-20261112-001`, refereed).
    - **The question.** Sub-goal B168: if the world holds each example in front of the learner while it wanders, so that its tension depends on
      what it is being taught, does it find the counting rule faster than chance?
-   - **Computed.** No: held examples made it find the counting rule less often than without them, 13 times in 100 against 48, and no version
-     beat drawing rules at random, even among only the rules that fit every example.
+   - **Computed.** No: held examples made it find the counting rule less often than without them, 13 times in 100 against 48 (each run
+     given five minutes), and no version beat drawing rules at random, even among only the rules that fit every example.
    - **Its leaning is its own.** Taught nothing it could ever satisfy, it still settles on some rules more and others less than chance, and
      it does so from random starting points as much as from the usual one: the leaning is in how it wanders.
    - **Next.** The line is paused (owner, 2026-11-12); a test of drift under held examples against shuffled ones is recorded (B171)

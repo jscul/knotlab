@@ -65,7 +65,7 @@ then held: in none of 91 learned cases did the learner find its target faster th
 
 **Paused (owner, 2026-11-12).** The line stopped after `CLAMP-LEARN-20261112-001` (a clamped phase does not steer the learner; the walk's
 bias is its dynamics'). **Where to start again** (the basket, best first): why the dynamics prefers some laws (B169, the rest); the drift
-test under shuffled outputs (B171); the clamped learners are in `proofs/CLAMP-LEARN-20261112-001A/.../clamp_lib.py`; three steering rules at the probe failed
+test under shuffled outputs (B171); the clamped learners are in `proofs/CLAMP-LEARN-20261112-001A/.../clamp_lib.py` (refereed); three steering rules at the probe failed
 (`STEER-LEARN-20261112-001`, refereed; learners in `proofs/STEER-LEARN-20261112-001A/.../steer_lib.py`); rest at symmetric laws (B166); no
 rest set by sequence length serves every base (`WHICH-SEQUENCES-20261112-001`, census in `proofs/WHICH-SEQUENCES-20261112-001A/.../census_lib.py`);
 the audit is `proofs/SEARCH-AUDIT-20261112-001A/.../audit.py`;

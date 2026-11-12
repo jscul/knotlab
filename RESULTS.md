@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**323 current results** and 5 superseded ones, from 332 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**323 current results** and 5 superseded ones, from 333 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 332 epics with their closures
+- [Epics](#epics): all 333 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1422,6 +1422,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | How common folding is among random samples (`COMMON-FOLD-20261112-001`) | [closure](proofs/COMMON-FOLD-20261112-001Z/COMMON-FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/COMMON-FOLD-20261112-001/) |
 | 2026-11-12 | Endless blocks (`ENDLESS-BLOCK-20261112-001`) | [closure](proofs/ENDLESS-BLOCK-20261112-001Z/ENDLESS-BLOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ENDLESS-BLOCK-20261112-001/) |
 | 2026-11-12 | Why the knot law's harmonies are even (`EVEN-PERIOD-20261112-001`) | [closure](proofs/EVEN-PERIOD-20261112-001Z/EVEN-PERIOD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/EVEN-PERIOD-20261112-001/) |
+| 2026-11-12 | Bounded at every distance? (`FAR-BOUND-20261112-001`) | — | [folder](research/FAR-BOUND-20261112-001/) |
 | 2026-11-12 | A direction the knot law does not lengthen (`FOLD-20261112-001`) | [closure](proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/FOLD-20261112-001/) |
 | 2026-11-12 | Arithmetic of harmonies without a zero (`HARMONY-ARITH-20261112-001`) | [closure](proofs/HARMONY-ARITH-20261112-001Z/HARMONY-ARITH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/HARMONY-ARITH-20261112-001/) |
 | 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |

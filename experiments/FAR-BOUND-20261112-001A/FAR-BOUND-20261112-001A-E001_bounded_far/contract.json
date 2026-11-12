@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "FAR-BOUND-20261112-001A-E001",
+ "ticket": "FAR-BOUND-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Are TRAVEL-READ's one-cross-section window bonds real (certified by doubly periodic or eventually periodic states, minimal in a twice-larger window), and do the bounded bases stay bounded far away and around rank-2 bases?",
+ "definitions": {
+  "inputs": "TRAVEL-READ cross.jsonl (sha256 a64cf9596c5099ab5bf9b4fb96e7a526b6060183cc6e38c5b64f43f84917e70c), dirs.jsonl (sha256 6ec375b4c6a6d5e19256ba0ae3a412240749abf76e8db866896d74ddce660596), rings.jsonl (sha256 00723264b96d4e33c0e17ab8e2b40bdc36fdd3b145dd63c326a61780df4b75b9); its census.py (sha256 c59ca676b7b91cf923efcd1293d099de9bdf30841643f9323741505ef4f6b2ca)",
+  "certified bond": "refuted on the frame window, every proper part carried in every pattern by a doubly periodic or an eventually periodic state (P >= the kinds' largest along-span)",
+  "classes": "bounded across / growing across / unresolved on b_cert, as in census.py"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 aab7adc74a93d55c3331dfa885ab20798c1d60efe6d87587114b99f9dfccdc40) beside this file",
+  "run": "--part control, recheck, far, rings; outputs in artifacts/FAR-BOUND-20261112-001A/FAR-BOUND-20261112-001A-E001_bounded_far/"
+ },
+ "forbidden_inputs": [
+  "Changing targets, windows, certificates, caps or predictions after seeing results"
+ ],
+ "primary_observable": "Per base the class on certified bonds, near and far b_cert and b_win; ring statistics",
+ "cheapest_meaningful_control": "Base 16 (part control): its theorem's profile certified",
+ "predictions": {
+  "F1": ">= 40 of 66 rank-1 bases bounded across on certified bonds",
+  "F2": "on >= 2/3 of bounded bases, far b_cert <= max near b_cert + 1 wherever defined and >= 80% of far targets with a certified bond",
+  "F3": "on >= 2/3 of rank-2 bases, >= 80% of ring-15 targets with a bond <= 5 and max <= TRAVEL-READ ring-3 max + 1",
+  "validity": "control holds; <= 20% dropped"
+ },
+ "decision_rules": {
+  "headline": "TRAVEL-READ's 56 of 66 corrected (Narrowing) if fewer than 56 certified-bounded, overturned below 33",
+  "F2 or F3 fails": "boundedness a near-range effect"
+ },
+ "stop_rule": "One run of each part; hand-off to the referee thread.",
+ "runtime": "About 2 hours in all on 6 + 4 workers; each base saved as it finishes; 1,800 s cap per base."
+}

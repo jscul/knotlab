@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "TWIST-PIN-20261112-001A-P001",
+  "canonical_id": "TWIST-PIN-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "TWIST-PIN-20261112-001A",
+  "proof": "TWIST-PIN-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Twisted pins on cycles",
+  "status": "Proved",
+  "claim": "Proved by hand (the advisor model's form): with between-copy knots twisted by symmetries of the block, a twist undoes copy by copy exactly when every holonomy of the pattern's cycles is trivial, and otherwise the pinned values are those of the block folded by the holonomy group. Exact on 18 blocks: no dependence on cycle length (2, 3, 6 knots; descriptive after the run), the advisor's exact living condition in 240 of 240 cells, ring parity deciding a middle twist by an involution. Referee pending.",
+  "dependencies": [
+    "PIN-RULE-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A twist with trivial holonomy that changes a tie or ends a pattern.",
+    "A single twisted cycle whose living disagrees with the state-graph distance condition."
+  ],
+  "lineage": {
+    "home_scope": "TWIST-PIN-20261112-001",
+    "epic_path": [
+      "TWIST-PIN-20261112-001"
+    ],
+    "parents": [
+      "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/manifest.json",
+      "research/TWIST-PIN-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/manifest.json": "b9341310a28d63b1c68e562baf8df3637321dc4ffb7f3e83b7d0fdfa25ff007c",
+    "research/TWIST-PIN-20261112-001/preregistration.md": "f0e3f0adeebbf36b8dd9de266214ba0f967d1d12df039926454b8a2fca192c5f"
+  },
+  "paths": {
+    "manifest": "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins/manifest.json",
+    "identity": "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins/identity.json",
+    "proof": "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins/proof.md",
+    "result": "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins/result.json",
+    "check": "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins/check.py",
+    "directory": "proofs/TWIST-PIN-20261112-001A/TWIST-PIN-20261112-001A-P001_twisted_pins"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; 18 blocks with a symmetry moving a pinned distinction; chains, cycles of 2, 3, 6 knots, two cycles, rings of 6 and 7.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 1422c900f); independent referee pending.",
+    "status": "lemmas by hand; exact census (check.py); after-the-run placement on the cycle (after_run_on_cycle.py); referee pending",
+    "novelty": "known-with-delta"
+  }
+}

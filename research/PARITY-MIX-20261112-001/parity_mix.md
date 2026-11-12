@@ -108,3 +108,32 @@ line of copies decides lines that no single tie reaches. So that kind of global 
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained, with G8; no goal change). **Assumptions:** A78 added; A70, A75,
 A77 used. **Basket:** #1, #2 recorded. **Advisor:** consulted twice before the freeze (it found most of the first design settled by
 definition and proposed the reach test; then the words).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 13:35 UTC, verbatim:
+
+> Done: a parity knot among stitched copies. The write-up is research/PARITY-MIX-20261112-001/parity_mix.md. The referee is pending.
+>
+> • **What our knots can build.** A plain three-member parity knot needs a zero, which the not-all-equal law can't make. The flip-blind kind (sum all 0s or all 1s) can be built from our own knots. That's what I used, recorded as assumption A78.
+> • **Settled by definition.** A parity knot forbids all-equal copies. With parity everywhere, the arrangement is just Ledrappier's law.
+> • **Who can hold one (exact).** Only 8 of the 45 harmonies have a flip-blind triple. The other 37 end at their first parity knot.
+> • **Rare, not typical (exact on small repeats, sampled beyond).** With some knots parity and the rest not-all-equal, a state survives in 2.8% of placements on 3 × 3, 0.16% on 4 × 4, 0.34% of the 6 × 6 samples, and none of the 8 × 8 samples. A scattering of parity knots ends the pattern. After the run, I found that no parity triple is ever a not-all-equal stitch triple.
+> • **Beyond any single knot, where it survives.** In most surviving placements, one count of copies fixes counts that no local propagation reaches. So the whole does reach further than its knots one at a time. The survivors mostly have parity knots wrapped around whole copies.
+> • **The 3 × 3 surprise.** The referee's product lemma doesn't explain it by itself. In 3 of the 8 harmonies, the other eight knots force the ninth into a not-all-equal triple, which can't also be parity. For the other 5, the emptiness is computed, not explained.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — a parity knot among stitched copies | **Status:** Successful, referee pending | survival rare; influence beyond propagation where it survives |
+> | Local direction — mixed laws on stitched copies | Continue | the survivors' shape (parity around whole copies) not yet grown |
+> | Broader exploration — G17's census | Known alternatives | lagged free pairs (found by the referee); the travelling bases |
+> | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | additive influence among copies is rare, not typical |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Parity regions inside a not-all-equal arrangement | 2/3 — Substantial | 2/3 — Testable | blocks of b × b copies whose knots are all parity, b = 1 to 4, on repeats to 12 × 12 → survives at every size and one count fixes through it, or not | Selected · awaiting go-ahead |
+> | 2 | Why parity triples are never stitch triples | 1/3 — Incremental | 3/3 — Ready | a proof for every harmony, or one where they meet | Alternative · deferred |
+>
+> **Corrections:** none this epic. One progress-message slip (I wrote "4 of 220" where it is 6 of 1,760) is edited in place. Separately, I folded in both referee verdicts that came back: locks across two shifts (one Narrowing: the 78 cells hold at my step cut, 17 at any cut) and lines in the increments (one Narrowing: the theorem is about the stitch itself; influence in arrangements stays open). **Goals:** G17 checkpoint, no goal change. **Assumptions:** A78 added. **Basket:** #1 and #2 recorded, plus the lagged free pairs. **Advisor:** consulted twice. It found most of my first design was settled by definition and proposed the reach test; then it checked the new words.

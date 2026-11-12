@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PARITY-MIX-20261112-001A-P001",
+  "canonical_id": "PARITY-MIX-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "PARITY-MIX-20261112-001A",
+  "proof": "PARITY-MIX-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Parity knots among stitched copies",
+  "status": "Proved",
+  "claim": "Definitional facts proved by hand (with the advisor model): a flip-blind parity knot forbids all-equal copies; all-parity arrangements are Ledrappier's law on place differences. Exact: 8 of 45 harmonies (period <= 16) have a flip-blind triple, all of subspace dimension 2; with some but not all knots parity, states survive in 2.8% of placements on 3 x 3 and 0.16% on 4 x 4 (every placement), 0.34% of samples on 6 x 6 and none on 8 x 8; where they survive, count 0 fixes counts local propagation does not reach (69 of 114 and 806 of 850 survivors), full fixing in 24 and 646. After the run: no flip-blind triple is a stitch triple; survivors mostly surround whole copies with parity knots. Referee pending.",
+  "dependencies": [
+    "LINE-LOCK-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "No placement with 1 <= k < nm on 3 x 3 or 4 x 4 has a count fixed by count 0 but not reached by propagation.",
+    "A harness fails."
+  ],
+  "lineage": {
+    "home_scope": "PARITY-MIX-20261112-001",
+    "epic_path": [
+      "PARITY-MIX-20261112-001"
+    ],
+    "parents": [
+      "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/manifest.json",
+      "research/PARITY-MIX-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/manifest.json": "dc2d3b344909a581eacd026a87be79d52f7423558198d28975dcbe09a2ed0ad5",
+    "research/PARITY-MIX-20261112-001/preregistration.md": "13bdfb474a5aff14a9b8bb07abb528bde80ca0fa15ef1d4878134120dffe1cb1"
+  },
+  "paths": {
+    "manifest": "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/manifest.json",
+    "identity": "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/identity.json",
+    "proof": "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/proof.md",
+    "result": "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/result.json",
+    "check": "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/check.py",
+    "directory": "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law with flip-blind parity knots (A78); 45 harmonies of period <= 16; copies along two shifts on 3 x 3 and 4 x 4 (every placement) and 6 x 6 and 8 x 8 (uniform samples); the mixed knot shape.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit a29eb99c8); independent referee pending.",
+    "status": "definitional facts by hand; exact census and samples (check.py); after-run checks labelled; referee pending",
+    "novelty": "known-with-delta"
+  }
+}

@@ -1,0 +1,3347 @@
+{
+ "status": "passed",
+ "checks": {
+  "dependencies": {
+   "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/parity_lib.py": "b00126531d21e94a13d4304949d1dff370eff94b5d0f48bc2a3d492ad5d4fd07",
+   "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/check.py": "68a54a89f41a4fea4471dac812482f228a24e841d9109060a393e7eeea29d36b",
+   "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/shift_lib.py": "85eea7f134c1634be9d91a005bcb00ad9d5264471909766da5a9bd156a2f1ca8",
+   "proofs/LOOP-LOCK-20261112-001A/LOOP-LOCK-20261112-001A-P001_loop_locking/loop_lib.py": "379201e1572c8c76bcb94195ef14d804b515d5fd4362442459e4796d4e04570b",
+   "proofs/ENDLESS-BLOCK-20261112-001A/ENDLESS-BLOCK-20261112-001A-P001_endless_blocks/endless_lib.py": "9558c7316b88cf4639ba41f10997eda4d0aed410020ae806feac361f368fead1",
+   "research/PARITY-MIX-20261112-001/preregistration.md": "13bdfb474a5aff14a9b8bb07abb528bde80ca0fa15ef1d4878134120dffe1cb1"
+  },
+  "result": {
+   "harmonies": 45,
+   "with a flip-blind triple": [
+    [
+     "0011 + 01",
+     48,
+     2
+    ],
+    [
+     "00001111 + 0011",
+     96,
+     2
+    ],
+    [
+     "000111 + 0011 + 01",
+     48,
+     2
+    ],
+    [
+     "00101101 + 0011",
+     96,
+     2
+    ],
+    [
+     "000000111111 + 0011 + 01",
+     48,
+     2
+    ],
+    [
+     "00001111 + 00101101 + 01",
+     192,
+     2
+    ],
+    [
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011",
+     1152,
+     2
+    ],
+    [
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01",
+     768,
+     2
+    ]
+   ],
+   "without": 37,
+   "harness: one parity knot on 3 x 3 has a state only with a flip-blind triple": true,
+   "harness: all parity on 3 x 3 has a state exactly with a flip-blind triple": true,
+   "functional slots of the not-all-equal stitch": [
+    [
+     "01",
+     {
+      "0": true,
+      "1": true,
+      "2": true
+     }
+    ],
+    [
+     "00101101",
+     {
+      "0": true,
+      "1": false,
+      "2": false
+     }
+    ],
+    [
+     "001010110101",
+     {
+      "0": true,
+      "1": false,
+      "2": false
+     }
+    ],
+    [
+     "00100101101101 + 01",
+     {
+      "0": true,
+      "1": false,
+      "2": false
+     }
+    ],
+    [
+     "0010101011010101",
+     {
+      "0": true,
+      "1": false,
+      "2": false
+     }
+    ],
+    [
+     "0000110011110011 + 0001100011100111 + 0010010011011011 + 0010110011010011",
+     {
+      "0": true,
+      "1": false,
+      "2": false
+     }
+    ]
+   ],
+   "p3": {
+    "placements with a fixed but unreached count, k < nm": 72,
+    "harmonies with such a placement": [
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01",
+     "000000111111 + 0011 + 01",
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011",
+     "00001111 + 00101101 + 01",
+     "00001111 + 0011",
+     "000111 + 0011 + 01",
+     "00101101 + 0011",
+     "0011 + 01"
+    ],
+    "smallest k with full fixing, per harmony": {
+     "0011 + 01": 6,
+     "00001111 + 0011": 6,
+     "000111 + 0011 + 01": 0,
+     "00101101 + 0011": 0,
+     "000000111111 + 0011 + 01": 6,
+     "00001111 + 00101101 + 01": 0,
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": 6,
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": 6
+    },
+    "profile over all harmonies": {
+     "0": {
+      "placements": 8,
+      "with a state": 1.0,
+      "full fixing": 0.375,
+      "fixed but unreached": 0.375
+     },
+     "1": {
+      "placements": 72,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "2": {
+      "placements": 288,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "3": {
+      "placements": 672,
+      "with a state": 0.067,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.067
+     },
+     "4": {
+      "placements": 1008,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "5": {
+      "placements": 1008,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "6": {
+      "placements": 672,
+      "with a state": 0.1027,
+      "full fixing": 0.0357,
+      "fixed but unreached": 0.0357
+     },
+     "7": {
+      "placements": 288,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "8": {
+      "placements": 72,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "9": {
+      "placements": 8,
+      "with a state": 1.0,
+      "full fixing": 1.0,
+      "fixed but unreached": 0.0
+     }
+    },
+    "profile per harmony": {
+     "0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.1071,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.1071
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.1429,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 0011": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.1071,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.1071
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.1429,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000111 + 0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.0357,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00101101 + 0011": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.0357,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.1071,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.1071
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.1429,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00101101 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.0357,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.1071,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.1071
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.1429,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "1": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 84,
+       "with a state": 0.1071,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.1071
+      },
+      "4": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 126,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 84,
+       "with a state": 0.1429,
+       "full fixing": 0.0357,
+       "fixed but unreached": 0.0357
+      },
+      "7": {
+       "placements": 36,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 9,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     }
+    }
+   },
+   "p4": {
+    "placements with a fixed but unreached count, k < nm": 812,
+    "harmonies with such a placement": [
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01",
+     "000000111111 + 0011 + 01",
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011",
+     "00001111 + 00101101 + 01",
+     "00001111 + 0011",
+     "000111 + 0011 + 01",
+     "00101101 + 0011",
+     "0011 + 01"
+    ],
+    "smallest k with full fixing, per harmony": {
+     "0011 + 01": 6,
+     "00001111 + 0011": 3,
+     "000111 + 0011 + 01": 0,
+     "00101101 + 0011": 6,
+     "000000111111 + 0011 + 01": 6,
+     "00001111 + 00101101 + 01": 0,
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": 6,
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": 6
+    },
+    "profile over all harmonies": {
+     "0": {
+      "placements": 8,
+      "with a state": 1.0,
+      "full fixing": 0.25,
+      "fixed but unreached": 0.75
+     },
+     "1": {
+      "placements": 128,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "2": {
+      "placements": 960,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "3": {
+      "placements": 4480,
+      "with a state": 0.0036,
+      "full fixing": 0.0036,
+      "fixed but unreached": 0.0036
+     },
+     "4": {
+      "placements": 14560,
+      "with a state": 0.0003,
+      "full fixing": 0.0003,
+      "fixed but unreached": 0.0003
+     },
+     "5": {
+      "placements": 34944,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "6": {
+      "placements": 64064,
+      "with a state": 0.0029,
+      "full fixing": 0.0025,
+      "fixed but unreached": 0.0025
+     },
+     "7": {
+      "placements": 91520,
+      "with a state": 0.0007,
+      "full fixing": 0.0007,
+      "fixed but unreached": 0.0007
+     },
+     "8": {
+      "placements": 102960,
+      "with a state": 0.0007,
+      "full fixing": 0.0007,
+      "fixed but unreached": 0.0007
+     },
+     "9": {
+      "placements": 91520,
+      "with a state": 0.0047,
+      "full fixing": 0.003,
+      "fixed but unreached": 0.0047
+     },
+     "10": {
+      "placements": 64064,
+      "with a state": 0.0001,
+      "full fixing": 0.0001,
+      "fixed but unreached": 0.0001
+     },
+     "11": {
+      "placements": 34944,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "12": {
+      "placements": 14560,
+      "with a state": 0.0047,
+      "full fixing": 0.0033,
+      "fixed but unreached": 0.0033
+     },
+     "13": {
+      "placements": 4480,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "14": {
+      "placements": 960,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "15": {
+      "placements": 128,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "16": {
+      "placements": 8,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     }
+    },
+    "profile per harmony": {
+     "0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.002,
+       "full fixing": 0.002,
+       "fixed but unreached": 0.002
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.007,
+       "full fixing": 0.0042,
+       "fixed but unreached": 0.007
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0066,
+       "full fixing": 0.0044,
+       "fixed but unreached": 0.0044
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 0011": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0286,
+       "full fixing": 0.0286,
+       "fixed but unreached": 0.0286
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.003,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.007,
+       "full fixing": 0.0042,
+       "fixed but unreached": 0.007
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0066,
+       "full fixing": 0.0044,
+       "fixed but unreached": 0.0044
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000111 + 0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0022,
+       "full fixing": 0.0022,
+       "fixed but unreached": 0.0022
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.009,
+       "full fixing": 0.009,
+       "fixed but unreached": 0.009
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0056,
+       "full fixing": 0.0056,
+       "fixed but unreached": 0.0056
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0057,
+       "full fixing": 0.0057,
+       "fixed but unreached": 0.0057
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.0028,
+       "full fixing": 0.0028,
+       "fixed but unreached": 0.0028
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.001,
+       "full fixing": 0.001,
+       "fixed but unreached": 0.001
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0022,
+       "full fixing": 0.0022,
+       "fixed but unreached": 0.0022
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00101101 + 0011": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.003,
+       "full fixing": 0.003,
+       "fixed but unreached": 0.003
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0022,
+       "full fixing": 0.0022,
+       "fixed but unreached": 0.0022
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.002,
+       "full fixing": 0.002,
+       "fixed but unreached": 0.002
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.007,
+       "full fixing": 0.0042,
+       "fixed but unreached": 0.007
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0066,
+       "full fixing": 0.0044,
+       "fixed but unreached": 0.0044
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00101101 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.002,
+       "full fixing": 0.002,
+       "fixed but unreached": 0.002
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.007,
+       "full fixing": 0.0042,
+       "fixed but unreached": 0.007
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0066,
+       "full fixing": 0.0044,
+       "fixed but unreached": 0.0044
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": {
+      "0": {
+       "placements": 1,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 1.0
+      },
+      "1": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "2": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 1820,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "5": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 8008,
+       "with a state": 0.002,
+       "full fixing": 0.002,
+       "fixed but unreached": 0.002
+      },
+      "7": {
+       "placements": 11440,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 12870,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 11440,
+       "with a state": 0.007,
+       "full fixing": 0.0042,
+       "fixed but unreached": 0.007
+      },
+      "10": {
+       "placements": 8008,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "11": {
+       "placements": 4368,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 1820,
+       "with a state": 0.0066,
+       "full fixing": 0.0044,
+       "fixed but unreached": 0.0044
+      },
+      "13": {
+       "placements": 560,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "14": {
+       "placements": 120,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 16,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 1,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     }
+    }
+   },
+   "p6": {
+    "placements with a fixed but unreached count, k < nm": 40,
+    "harmonies with such a placement": [
+     "00001111 + 00101101 + 01",
+     "000111 + 0011 + 01"
+    ],
+    "smallest k with full fixing, per harmony": {
+     "0011 + 01": 36,
+     "00001111 + 0011": 36,
+     "000111 + 0011 + 01": 36,
+     "00101101 + 0011": 36,
+     "000000111111 + 0011 + 01": 36,
+     "00001111 + 00101101 + 01": 0,
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": 36,
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": 36
+    },
+    "profile over all harmonies": {
+     "0": {
+      "placements": 160,
+      "with a state": 1.0,
+      "full fixing": 0.125,
+      "fixed but unreached": 0.25
+     },
+     "3": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "6": {
+      "placements": 160,
+      "with a state": 0.0375,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "9": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "12": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "15": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "18": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "21": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "24": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "27": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "30": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "33": {
+      "placements": 160,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "36": {
+      "placements": 160,
+      "with a state": 1.0,
+      "full fixing": 1.0,
+      "fixed but unreached": 0.0
+     }
+    },
+    "profile per harmony": {
+     "0011 + 01": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.05,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 0011": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.05,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000111 + 0011 + 01": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 1.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00101101 + 0011": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.05,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 0011 + 01": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.05,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00101101 + 01": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 1.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.05,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": {
+      "0": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "3": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "6": {
+       "placements": 20,
+       "with a state": 0.05,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "9": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "15": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "18": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "21": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "27": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "30": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "33": {
+       "placements": 20,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 20,
+       "with a state": 1.0,
+       "full fixing": 1.0,
+       "fixed but unreached": 0.0
+      }
+     }
+    }
+   },
+   "p8": {
+    "placements with a fixed but unreached count, k < nm": 0,
+    "harmonies with such a placement": [],
+    "smallest k with full fixing, per harmony": {
+     "0011 + 01": null,
+     "00001111 + 0011": null,
+     "000111 + 0011 + 01": null,
+     "00101101 + 0011": null,
+     "000000111111 + 0011 + 01": null,
+     "00001111 + 00101101 + 01": null,
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": null,
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": null
+    },
+    "profile over all harmonies": {
+     "0": {
+      "placements": 80,
+      "with a state": 1.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "4": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "8": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "12": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "16": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "20": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "24": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "28": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "32": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "36": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "40": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "44": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "48": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "52": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "56": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "60": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     },
+     "64": {
+      "placements": 80,
+      "with a state": 0.0,
+      "full fixing": 0.0,
+      "fixed but unreached": 0.0
+     }
+    },
+    "profile per harmony": {
+     "0011 + 01": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 0011": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000111 + 0011 + 01": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00101101 + 0011": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 0011 + 01": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00101101 + 01": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "00001111 + 00011011 + 00100111 + 00101101 + 0011": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     },
+     "000000111111 + 000010111101 + 000100111011 + 000110111001 + 001010110101 + 0011 + 01": {
+      "0": {
+       "placements": 10,
+       "with a state": 1.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "4": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "8": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "12": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "16": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "20": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "24": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "28": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "32": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "36": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "40": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "44": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "48": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "52": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "56": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "60": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      },
+      "64": {
+       "placements": 10,
+       "with a state": 0.0,
+       "full fixing": 0.0,
+       "fixed but unreached": 0.0
+      }
+     }
+    }
+   }
+  },
+  "seconds": 0.0
+ }
+}

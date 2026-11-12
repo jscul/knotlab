@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**324 current results** and 5 superseded ones, from 335 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**325 current results** and 5 superseded ones, from 335 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -27,7 +27,7 @@ How to read an entry:
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
-- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 28 results
+- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 29 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
@@ -987,6 +987,9 @@ Patterns of patterns in three dimensions: when counting colourings of knots and 
 - **2026-11-12 · A knot-law repeat of odd length: period 61** (`ODD-SEARCH-20261112-001-D001`).
   Twelve not-all-equal knot kinds, forbidding three equal values at equal spacing with step 1, 2, 11 or 22 modulo 61, allow only states that repeat with period 61 (proved): an odd harmony. No such base has an odd period up to 29 or at 31 or 37, so the knot law's repeats are not all even.
   [proof P001](proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/proof.md), [epic closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md)
+- **2026-11-12 · Parity knots rarely mix with stitched copies** (`PARITY-MIX-20261112-001-D001`).
+  Parity knots and not-all-equal stitches almost never coexist among harmony copies (exact on small repeats, sampled beyond); where they do, one count of copies fixes others that local propagation does not reach.
+  [proof P001](proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/proof.md), [epic closure](proofs/PARITY-MIX-20261112-001Z/PARITY-MIX-20261112-001Z-P001_epic_closure/proof.md)
 - **2026-11-12 · Nesting pins exactly what a block cannot flip alone** (`PIN-RULE-20261112-001-D001`).
   With the block's own knots between copies, nesting pins exactly the distinctions no state of the block can flip alone, by equality, uniformly on each connected part of the pattern (proved), so for odd n a cyclic block makes a harmony exactly when nesting pins all its distinctions.
   [proof P001](proofs/PIN-RULE-20261112-001A/PIN-RULE-20261112-001A-P001_pinning_theorem/proof.md), [epic closure](proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md)
@@ -1436,7 +1439,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | [closure](proofs/NATIVE-GRADE-20261112-001Z/NATIVE-GRADE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GRADE-20261112-001/) |
 | 2026-11-12 | Which odd periods the knot law makes, and why 61 (`ODD-FAMILY-20261112-001`) | [closure](proofs/ODD-FAMILY-20261112-001Z/ODD-FAMILY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-FAMILY-20261112-001/) |
 | 2026-11-12 | The first odd harmony, or none (`ODD-SEARCH-20261112-001`) | [closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-SEARCH-20261112-001/) |
-| 2026-11-12 | A parity knot among stitched copies (`PARITY-MIX-20261112-001`) | — | [folder](research/PARITY-MIX-20261112-001/) |
+| 2026-11-12 | A parity knot among stitched copies (`PARITY-MIX-20261112-001`) | [closure](proofs/PARITY-MIX-20261112-001Z/PARITY-MIX-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PARITY-MIX-20261112-001/) |
 | 2026-11-12 | The pinning theorem, and pins that vary (`PIN-RULE-20261112-001`) | [closure](proofs/PIN-RULE-20261112-001Z/PIN-RULE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/PIN-RULE-20261112-001/) |
 | 2026-11-12 | Outcomes of random meeting patterns (`RANDOM-FATES-20261112-001`) | [closure](proofs/RANDOM-FATES-20261112-001Z/RANDOM-FATES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/RANDOM-FATES-20261112-001/) |
 | 2026-11-12 | Learning against blind search (`SEARCH-AUDIT-20261112-001`) | [closure](proofs/SEARCH-AUDIT-20261112-001Z/SEARCH-AUDIT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SEARCH-AUDIT-20261112-001/) |

@@ -96,3 +96,27 @@ theory, not something that shows up in practice.
 **Corrections:** none. **Goals:** G17 checkpoint (obstruction learned, with G8; no goal change). **Assumptions:** none added.
 **Basket:** #1, #2 recorded; the mean-step proof stays there. **Advisor:** consulted twice: before the freeze (the self-map test, the
 targets) and after the run (the mod-3 construction, the certificate for the unsettled cases).
+
+## Final report as sent
+
+**Influence through hidden copies is closed (referee pending), and with it this line stops, as you asked.** In principle yes for some harmonies, in practice not found; by the frozen criterion, no.
+
+- Copies tied by not-all-equal stitches can never build a parity tie, since all copies equal always fits.
+- By known algebra (Pálfy; the Galois correspondence), the 102 of 318 cases whose states split into three symmetric classes can build "all equal or all different", Ledrappier's law mod 3, but only with gadgets of impractical size (about 6^11 copies). None of 486,000 small gadgets gives an additive readout, while 2 of 54 random baselines do.
+- The self-map census stopped at its cap with 17 of the 40 harmonies; disclosed.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: influence through hidden copies | Successful, referee pending | frozen criterion met (no); mod 3 exists after the run |
+| Local direction: stitched harmonies | Stop (as asked) | cycles, rare parity mixtures, theoretical hidden copies |
+| Broader exploration: G17's census | Known alternatives | the travelling bases (the other thread) |
+| Long-term goal: G17 | Obstruction learned | additive influence from stitched harmonies is rare or only theoretical |
+
+**Next step:** none selected; both directions wait in the basket.
+
+| # | Direction | Payoff | Concreteness | Status |
+| --- | --- | --- | --- | --- |
+| 1 | A practical mod-3 gadget | 2/3 | 1/3 | Basket · deferred |
+| 2 | Finish the self-map classification | 1/3 | 3/3 | Basket · deferred |
+
+**Corrections:** none. **Goals:** G17 checkpoint, no goal change. **Assumptions:** none added. **Basket:** #1, #2. **Advisor:** consulted twice. Note: `research/HIDDEN-COPY-20261112-001/hidden_copy.md`.

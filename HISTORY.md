@@ -11,6 +11,13 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 12 November 2026: the late hopping rules, two wording fixes
+
+- The deep reading of the late hopping rules (`LATE-HOP-20261112-001`) was confirmed. One rule that was said to settle at depth 47 in
+  fact changed every three depths from 17 and died at 47, and another alternated at depths 35 to 40, not 35 to 37
+  ([decision note](research/LATE-HOP-20261112-001/late_hop.md)).
+- Unchanged: every verdict.
+
 ## 12 November 2026: two distinctions per position, narrowed by its referee
 
 - The test of whether patterns growing by one position with two distinctions each can keep time (`TWO-BIT-ROWS-20261112-001`) was

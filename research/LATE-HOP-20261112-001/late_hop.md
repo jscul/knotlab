@@ -1,8 +1,8 @@
 # The late hopping rules, read deeper
 
 Epic `LATE-HOP-20261112-001` (`TWO-BIT-ROWS-20261112-001` direction 1; G17, with G1), 2026-11-12, at the coordinator's go-ahead.
-Pre-registered in commit 935b83962 before the registered run. The canonical K1–K3 test is unchanged. **Referee pending** (handed to
-the referee thread). Read together with `TWO-BIT-ROWS-20261112-001`'s referee report (folded into that record the same day).
+Pre-registered in commit 935b83962 before the registered run. The canonical K1–K3 test is unchanged. Refereed by the referee thread
+(LATE-HOP-R1, `referee-R1/report.md`, commit 8b61b48d3): **confirmed with two wording fixes**, folded in below (both Not a block). Read together with `TWO-BIT-ROWS-20261112-001`'s referee report (folded into that record the same day).
 
 ## The question
 
@@ -18,9 +18,9 @@ onto the first generation up to depth 200.
 
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
-| 1 | **The five settle.** Three die at depth 21 or 31 and stay dead; one dies at 41 (after its first-generation relation alternates at depths 35 to 37) and stays dead; one's first-generation relation changes at 31 and then holds. | exact, depth ≤ 200, frozen | L1 held |
-| 2 | **Nothing keeps changing except by alternating.** All 35 rules are, by depth 200, constant, eventually constant (the latest from depth 47), or alternating with period 2 (20 hopping and 2 flat harmonies). No other period and no unexplained sequence occurs. | exact, depth ≤ 200, frozen | reported |
-| 3 | **L2 fails, for a reason built into it.** Its frozen statement asked every change after depth 40 to sit near a power-of-two length; the period-2 harmonies change at every depth, so it fails on them. Apart from the alternations, the only changes after 40 are rule 9's death at 41 and one rule's settling at 47, neither at a power-of-two length. | exact, frozen | L2 failed |
+| 1 | **The five settle.** Three die at depth 21 or 31 and stay dead; one dies at 41 (after its first-generation relation alternates at depths 35 to 40, *corrected after the referee*) and stays dead; one's first-generation relation changes at 31 and then holds. | exact, depth ≤ 200, frozen | L1 held |
+| 2 | **Nothing keeps changing except by alternating.** All 35 rules are, by depth 200, constant, eventually constant (the latest from depth 47, rule 28's death after changes every three depths), or alternating with period 2 (20 hopping and 2 flat harmonies). No other period and no unexplained sequence occurs. | exact, depth ≤ 200, frozen | reported |
+| 3 | **L2 fails, for a reason built into it.** Its frozen statement asked every change after depth 40 to sit near a power-of-two length; the period-2 harmonies change at every depth, so it fails on them. Apart from the alternations, the changes after 40 are rule 9's death at 41 and rule 28's: its first-generation relation changes in pairs every three depths from 17 (17, 18, 20, 21, …, 41, 42, 44, 45) until it dies at 47, none at a power-of-two length. *(Corrected after the referee: "one rule's settling at 47" was a death at 47 after a period-3 run of changes.)* | exact, frozen | L2 failed |
 
 ## Answer
 
@@ -42,7 +42,7 @@ constrained ends.
 
 ## Review
 
-Referee pending (the referee thread). No advisor review: the readings and classes are TWO-BIT-ROWS's, with longer bounds.
+**LATE-HOP-R1** (the referee thread, confirmed): two wording fixes, made above. No advisor review: the readings and classes are TWO-BIT-ROWS's, with longer bounds.
 
 ## Literature and provenance
 
@@ -58,13 +58,14 @@ Substantive: the deep read. Administrative: the pre-registration, this note, the
 
 ## Corrections
 
-None to earlier records here; `TWO-BIT-ROWS-20261112-001`'s referee corrections are logged with that record.
+Two from the referee (`docs/CORRECTIONS.md`, Not a block): rule 28's changes after 40 were undercounted, and rule 9 alternates at
+depths 35 to 40; the same "35 to 37" in `TWO-BIT-ROWS-20261112-001`'s note and its correction entry is fixed there.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the late hopping rules, deeper | **Status:** Partially successful (referee pending) | L1 held; L2 failed as stated, on the harmonies: long transients, not counters |
+| This attempt — the late hopping rules, deeper | **Status:** Partially successful (refereed, confirmed) | L1 held; L2 failed as stated, on the harmonies: long transients, not counters |
 | Local direction — keeping time and counting | Practically exhausted at this richness | Two distinctions per position add neither; counting needs fresh distinctions and constrained ends (known) |
 | Broader exploration — G17 | Paused | The coordinator will take stock with the owner |
 | Long-term goal — G1 Space from a law (with G17) | Capability gained | Where these growths can and cannot count is mapped |

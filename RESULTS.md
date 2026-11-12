@@ -1389,5 +1389,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-11 | Can a witness learn and reuse the six-bit constraint? (`SIX-BIT-REUSE-20261111-001`) | — | [folder](research/SIX-BIT-REUSE-20261111-001/) |
 | 2026-11-11 | Are maps of held points unate (`UNATE-20261111-001`) | [closure](proofs/UNATE-20261111-001Z/UNATE-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNATE-20261111-001/) |
 | 2026-11-11 | Learning without a drawing (`UNDRAWN-LEARN-20261111-001`) | [closure](proofs/UNDRAWN-LEARN-20261111-001Z/UNDRAWN-LEARN-20261111-001Z-P001_epic_closure/proof.md) | [folder](research/UNDRAWN-LEARN-20261111-001/) |
-| 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | — | [folder](research/LAW-RIGIDITY-20261112-001/) |
+| 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |
 

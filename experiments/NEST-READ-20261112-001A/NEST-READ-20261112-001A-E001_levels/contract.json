@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "experiment_id": "NEST-READ-20261112-001A-E001",
+ "ticket": "NEST-READ-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "In self-nested NAE patterns, is a top distinction bonded within five to distinctions many levels down, beyond what steps apart allow, and does that grow, hold or die with level, through the holding knot only or also directly?",
+ "definitions": {
+  "families": "SHORT-DESC's code by fair coins; variants knot (SELF in 3-port definitions) and direct (SELF in 4-6-port definitions, holding knot = first three arguments); strata constraining / monotone at the knot; tied flag.",
+  "selection": "largest depth t <= 12 with <= 60 distinctions; alive, n >= 8, a level-0 distinction, levels >= 4; quotas 60 constraining and 30 monotone per worker.",
+  "readings": "u random level-0, up to 2 v per level; steps apart; least bond exact up to 5 (RANDOM-FATES reader); uniform same n, m pair at the same steps apart.",
+  "seeds": "sha256 of NR:variant:worker and NRp:variant:worker:try."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 d94f2552af1dfad4abbc570f2633d455d2f4a8b4ca09811749adf16009143774) beside this file; SHORT-DESC dlang.py and census.py; RANDOM-FATES fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35); pysat; numpy.",
+  "run": "census.py --run VARIANT WORKER 60 30 for knot and direct, workers 0-7, then --summary, from the repository root; output artifacts/NEST-READ-20261112-001A/NEST-READ-20261112-001A-E001_levels/."
+ },
+ "forbidden_inputs": ["Changing selection, readings, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Tie-free shortcut shares by stratum; bonded shares by steps apart in monotone cyclic families; the excess slope over level in constraining families.",
+ "cheapest_meaningful_control": "Monotone families (settled by monotonicity) and a uniform pattern of the same size at the same steps apart; the acyclic code control.",
+ "validation_gate": "No pair in a pattern with no cycle of knots violates L = d + 2 within the cap.",
+ "predictions": {
+  "P2": "monotone cyclic: d<=3 bonded within five >= 0.85; d>=4 <= 0.10",
+  "P3": "tie-free shortcut share constraining minus monotone cyclic, interval above 0",
+  "P4": "constraining excess slope band is hold or grow"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "Under an hour on 16 workers; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

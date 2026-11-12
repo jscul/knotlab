@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**327 current results** and 5 superseded ones, from 343 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**327 current results** and 5 superseded ones, from 344 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 343 epics with their closures
+- [Epics](#epics): all 344 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1445,6 +1445,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Which loops lock (`LOOP-LOCK-20261112-001`) | [closure](proofs/LOOP-LOCK-20261112-001Z/LOOP-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LOOP-LOCK-20261112-001/) |
 | 2026-11-12 | The law's count of missing knots (`MISSING-KNOTS-20261112-001`) | [closure](proofs/MISSING-KNOTS-20261112-001Z/MISSING-KNOTS-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/MISSING-KNOTS-20261112-001/) |
 | 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | [closure](proofs/NATIVE-GRADE-20261112-001Z/NATIVE-GRADE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GRADE-20261112-001/) |
+| 2026-11-12 | What the law reads along a nested pattern's levels (`NEST-READ-20261112-001`) | — | [folder](research/NEST-READ-20261112-001/) |
 | 2026-11-12 | Which odd periods the knot law makes, and why 61 (`ODD-FAMILY-20261112-001`) | [closure](proofs/ODD-FAMILY-20261112-001Z/ODD-FAMILY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-FAMILY-20261112-001/) |
 | 2026-11-12 | The first odd harmony, or none (`ODD-SEARCH-20261112-001`) | [closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-SEARCH-20261112-001/) |
 | 2026-11-12 | The old core's own end (`OLD-CORE-20261112-001`) | [closure](proofs/OLD-CORE-20261112-001Z/OLD-CORE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/OLD-CORE-20261112-001/) |

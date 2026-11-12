@@ -142,3 +142,39 @@ in its history. **Basket:** #1 to #4 recorded; in the arithmetic line's basket O
 set aside by the coordinator, none ahead of #1 for the owner's goals. **Advisor:** consulted three times on this line before the
 freeze (the readings, the lemmas N1, N2, N5 to N7, the criteria) and once after it on the new words, whose proposals replaced six of
 the pre-registration's eight.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 08:29 UTC, verbatim:
+
+> Done. Nesting by substitution does make influence travel: it can pin a value across an entire pattern, using blocks that force nothing on their own. The write-up is research/SUBST-NEST-20261112-001/subst_nest.md. The referee is pending with the background referee thread.
+>
+> • **Global pins (exact).** Replace each distinction with a copy of a small block, and bind the copies to each other through the block's own knots. In 47 of 87 small blocks, some distinction of the block then gets tied in every copy, all the way across the pattern. On a chain of 16 knots, fixing it at one end fixes it 16 steps away at the other end. A second round of nesting keeps this. Neither the test patterns nor most of the blocks hold a tie of their own.
+> • **The block decides (one direction proved, the other exact).** If a block can spare a distinction (its knots hold whatever that distinction does), that distinction never gets pinned. Every other distinction did get pinned, in all 4,850 cases and in 300 blocks one size larger. Four distinctions with all four triples knotted spares none, so the whole nested pattern collapses to six states.
+> • **Depth carries the pins but adds none.** A second substitution created nothing new.
+> • **Your reading matters.** Bound side by side as endless series (the last epic), nothing gets pinned. Nested inside by substitution, values get pinned across everything.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — nesting by substitution | **Status:** Successful, referee pending | influence across the whole pattern found and characterised; one frozen lemma narrowed |
+> | Local direction — nesting | Continue | the pinning rule is one proof away from a theorem |
+> | Broader exploration — G17's census | Known alternatives | random patterns' jumps; folding among random periodic bases (knots alone) |
+> | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | "globally influential" now has a native mechanism: what a block can't spare gets pinned everywhere it is nested |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Prove the pinning rule | 2/3 — Substantial | 3/3 — Ready | show a non-spare distinction is tied between any two knotted copies → a theorem, or a counterexample block | Selected · awaiting go-ahead |
+> | 2 | Pins that vary across the pattern | 2/3 — Substantial | 2/3 — Testable | look for pinned relations that change from copy to copy, a structure rather than one repeated state → one, or a proof they're always uniform | Alternative · deferred |
+> | 3 | Endless blocks | 2/3 — Substantial | 2/3 — Testable | substitute a harmony bound by its own kinds, joining both readings → pins along both shifts, or none | Alternative · deferred |
+> | 4 | Which nesting you meant | 1/3 — Incremental | 3/3 — Ready | side by side (stitches) or inside (substitution)? → A75 confirmed or replaced | Alternative · deferred |
+>
+> **Corrections:** three, each logged in docs/CORRECTIONS.md.
+> • Narrowing: the last epic's "nesting spreads no influence" holds only for stitches.
+> • Narrowing: one of my frozen lemmas (N5) fails for blocks of 5 or more when every triple is bound.
+> • Not a block: I had written "bond distance" where I meant steps apart.
+>
+> **Goals:** G17 checkpoint (capability gained), no goal change. **Assumptions:** A75 was challenged and has now been answered both ways, so it stays Assumed. **Words:** the advisor checked the new terms, and the glossary now has spare distinction, block triples, gadget, terminals, tie extent, and unlagged/lagged stitches. **Basket:** #1 to #4 recorded.
+>
+> One question for you, whenever convenient: when you said each variable is its own infinite series "bound to others", did you picture the series side by side, or nested inside one another?

@@ -1437,7 +1437,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Locks across two shifts (`SHIFT-LOCK-20261112-001`) | [closure](proofs/SHIFT-LOCK-20261112-001Z/SHIFT-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SHIFT-LOCK-20261112-001/) |
 | 2026-11-12 | A learner whose examples steer its search (`STEER-LEARN-20261112-001`) | [closure](proofs/STEER-LEARN-20261112-001Z/STEER-LEARN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/STEER-LEARN-20261112-001/) |
 | 2026-11-12 | Nesting by substitution (`SUBST-NEST-20261112-001`) | [closure](proofs/SUBST-NEST-20261112-001Z/SUBST-NEST-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/SUBST-NEST-20261112-001/) |
-| 2026-11-12 | What the law reads on travelling bases (`TRAVEL-READ-20261112-001`) | — | [folder](research/TRAVEL-READ-20261112-001/) |
+| 2026-11-12 | What the law reads on travelling bases (`TRAVEL-READ-20261112-001`) | [closure](proofs/TRAVEL-READ-20261112-001Z/TRAVEL-READ-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/TRAVEL-READ-20261112-001/) |
 | 2026-11-12 | Twisted pins (`TWIST-PIN-20261112-001`) | [closure](proofs/TWIST-PIN-20261112-001Z/TWIST-PIN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/TWIST-PIN-20261112-001/) |
 | 2026-11-12 | Which cyclic sequences to fix (`WHICH-SEQUENCES-20261112-001`) | [closure](proofs/WHICH-SEQUENCES-20261112-001Z/WHICH-SEQUENCES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WHICH-SEQUENCES-20261112-001/) |
 

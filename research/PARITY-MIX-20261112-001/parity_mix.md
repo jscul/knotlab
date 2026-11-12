@@ -32,7 +32,7 @@ influence further than any knot does.**
 - **Not typical at any mixed density.** Full fixing reaches at most 3.6% of the placements at any mixed k, and none in the larger
   samples; only parity everywhere gives it as a rule, and there it is definitional.
 - **What survives (after the run).** On 3 × 3, three parity knots keep a state exactly when they are the three knots of one copy; over
-  3 × 3 and 4 × 4, 606 of the 964 survivors are such stars of copies joined, the parity knots surrounding whole copies.
+  3 × 3 and 4 × 4, 606 of the 964 survivors are such sets of a copy's three knots joined, the parity knots surrounding whole copies.
 
 ## What is proved and what is computed
 
@@ -41,7 +41,7 @@ influence further than any knot does.**
 | Parity forbids all-equal copies; all-parity arrangements are Ledrappier's; propagation is local | proved by hand (definitional; with the advisor model) |
 | 8 of 45 harmonies have a flip-blind triple, all of subspace dimension 2 | exact (frozen) |
 | Mixed placements: survival 2.8% (3 × 3), 0.16% (4 × 4), 0.34% (6 × 6 samples), 0 (8 × 8 samples); counts fixed but unreached in 69 and 806 survivors | exact on 3 × 3 and 4 × 4, sampled beyond (frozen) |
-| No flip-blind triple is a stitch triple; stars of copies as the usual survivors | after the run, descriptive |
+| No flip-blind triple is a stitch triple; copies' three knots as the usual survivors | after the run, descriptive |
 
 ## Against the pre-registration
 
@@ -85,7 +85,8 @@ A70, A75, A77 used; A78 added (a parity knot among copies read as flip-blind par
 
 None at the close. Later (logged in `docs/CORRECTIONS.md`, Not a block): the proof's "on 8 × 8 never" means none in the samples, since
 every 4 × 4 survivor repeated is an 8 × 8 one; and the 6 × 6 and 8 × 8 rates come from samples with equal numbers at each k, a weighting
-different from the exhaustive 3 × 3 and 4 × 4, so the four rates are not a decay with size. (A progress message said 4 of 220 placements survived on 6 × 6; it is 6 of 1,760 across the 8 harmonies, edited in place.)
+different from the exhaustive 3 × 3 and 4 × 4, so the four rates are not a decay with size. And (Not a block) "stars of copies"
+named a copy's three knots with the literature's word for a vertex's neighbourhood; it now reads "a copy's three knots". (A progress message said 4 of 220 placements survived on 6 × 6; it is 6 of 1,760 across the 8 harmonies, edited in place.)
 
 ## In the owner's words
 

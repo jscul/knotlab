@@ -3277,6 +3277,13 @@ So holes come in two kinds:
    - **Beyond any one knot where it survives.** In most surviving placements one count of copies fixes counts that no local propagation
      reaches; the survivors mostly have their parity knots surrounding whole copies. Global influence of the additive kind is rare
      among stitched copies, not typical ([decision note](../research/PARITY-MIX-20261112-001/parity_mix.md)).
+
+   **2026-11-12: which parity placements survive** (`PARITY-SURVIVE-20261112-001`; referee pending).
+   - **Rare, and rarer with size (exact per sample).** With each knot a parity knot with probability ρ, under 1% of the placements keep
+     a state for every n ≥ 6, and none of 11,497 samples at 7 × 7 to 9 × 9. No simple rule decides which survive.
+   - **Through the stitches where they survive (exact on 3 × 3 and 4 × 4).** Of the counts one count fixes, 10% follow from the parity
+     equations alone, 14% need the harmony's own states too, and 76% need the not-all-equal stitches; 36% are beyond checking knots
+     one at a time ([decision note](../research/PARITY-SURVIVE-20261112-001/parity_survive.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 90% at the last base, consistent with the

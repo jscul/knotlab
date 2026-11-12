@@ -96,7 +96,10 @@ for the two-way states (in this record: lifted phases, step pairs and the mean-s
   repeat) with no shorter repeat, while that thread's missing certificates are states of the endless base that no small doubly
   periodic state reproduces. The lifted-phase reading gives one cause for the latter: a lifted phase whose mean steps are not whole
   numbers repeats only on repeats whose sizes fit them, so small certificates can miss it. Whether base 16's window bonds are such
-  states is untested (a frozen test for that thread is in `LINE-LOCK-20261112-001`'s pre-registration).
+  states is untested (a frozen test for that thread is in `LINE-LOCK-20261112-001`'s pre-registration). **Outcome (2026-11-12, the
+  knots-alone thread, `SHIFT-COUNT-20261112-001` ticket C):** refuted for base 16's patterns. 9 of 21 uncertified travelling patterns,
+  base 16's two among them, have no certifying repeat up to 24 × 24; 4 are carried at every size past a threshold; 8 survive weakly. The
+  reading was proposed here, not asserted, so this is an outcome, not a correction.
 
 ## Assumptions
 

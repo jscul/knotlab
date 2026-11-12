@@ -111,3 +111,35 @@ Stage 1's reading and stage 2's candidates settled; or stage 2 stopping at its f
 step is the tie (B157).
 
 Assumptions in force: A20, A21, A46, A47, A49, A50, A52, A58, A66 (Confirmed).
+
+## Addendum: stage 1's result and stage 2's candidates (2026-11-12, before any stage-2 run)
+
+Stage 1 ran as frozen (`result_summary.json` of ticket A). R stopped at the count in 10 of 10 runs and held it in 4 of 10, so M1 failed;
+RS learned and held all 30 writes, so M2 passed. The frozen reading is **the rest set finds the count; holding it needs the supplied rigid
+repair**. My prediction ("neither") was wrong. The repair that flips distinctions only is kept for stage 2, and is registered as **A68**.
+
+Stage 2 therefore looks for a native rest set, with A68's repair. Frozen with the code in
+`proofs/LAW-RIGIDITY-20261112-001B/LAW-RIGIDITY-20261112-001B-P001_a_native_rest_set/` (`native_lib.py`, `check.py`).
+
+- **The objects.** A base's shortest cyclic sequences: distinct knots k1, ..., kn and distinct distinctions d1, ..., dn, each ki holding
+  di and d(i+1), of the least n the base has (the literature's shortest Berge cycles). A law's sum around one is the sum mod 2 of its signs
+  at those 2n places. It is unchanged by flipping a distinction or complementing a knot. On both bases the shortest have n = 2: two knots
+  sharing two distinctions. J1 has 4 of them and U has 14.
+- **Candidate N0:** the learner may rest only at laws whose every shortest sum is 0. **Candidate N1:** every shortest sum is 1. In both,
+  W = 2 × violated knots + 2 × [some shortest sum is wrong], a sign change is proposed at a violated knot or at a place on a wrong sequence,
+  the credit rule reads distinctions, and the repair flips distinctions only (A68).
+- **Native, point by point.** (1) Each is computed from the knots, the distinctions they hold and the signs; nothing from a drawing.
+  (2) One rule for every shortest sequence, defined by counts. (3) Neither reads the target or examples: 0 and 1 are the only two uniform
+  choices, and both are tested. (4) The supplied repair is A68.
+- **Exactly where each lets the learner rest (computed, not run; `check.py --part harness`).** J1: N0, 32 laws, none counting; N1, 32
+  laws, all 4 counting laws among them. U: N0, 2 laws (the plain law and the one counting law); N1, no law at all.
+- **So the frozen stage-2 mark (one candidate learned and held on both U and J1) fails by definition for both candidates:** N0 lets J1
+  rest at no counting law, and N1 lets U rest nowhere. No rule of this kind, the same for every shortest sequence, serves both bases.
+  This is an exact obstruction for this candidate family, stated before any run.
+- **What is still run, and why it can fail.** N0 on U and N1 on J1, ten runs each, seeds 9900 + k, the same targets, budgets and caps
+  (30 minutes per run). With A68 a stop at the count holds whenever the repair reaches rest, so each mark counts runs that stop exactly
+  at the count. On U under N0 the only other law at rest is the plain law, where the learner starts, so any stop at the count must cross
+  from one to the other; whether the learner gets there within the budget is not settled. On J1 under N1, 4 of 32 laws count.
+- **Marks.** N0 on U: learned in at least 8 of 10. N1 on J1: learned in at least 8 of 10. Reported: held, steps, dropped runs.
+- **Prediction.** Both pass: stage 1 showed that a small rest set lets the learner find the count.
+- **Caps.** 30 minutes per run, 40 per part, registered in `docs/LONG_RUNNING.md` before the runs.

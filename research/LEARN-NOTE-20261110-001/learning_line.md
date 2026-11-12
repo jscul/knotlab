@@ -13,7 +13,7 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## Picking the line up cold (updated 2026-11-12, after `LAW-RIGIDITY-20261112-001`)
+## Picking the line up cold (updated 2026-11-12, after `NATIVE-GRADE-20261112-001`)
 
 The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere, resumed it on 2026-11-11, and paused new work
 again after `PARITY-FIVE-20261111-001` the same day; the owner restarted it the same evening with a new direction, bases where knots
@@ -47,7 +47,9 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   copies not learned within two hours (SHARED-COUNT). With dissonance at knots alone and no faces, the learner held a count in 0 of 10
   runs on each of three bases: the memory has so far needed a drawing's faces (UNDRAWN-LEARN, A66 Confirmed). The faces' two jobs
   separate: a rest set finds, rigidity keeps; with a rest set read from the knots alone (every shortest sum of the law 0) and a supplied
-  rigid repair (A68), the count was learned and held in 30 of 30 writes on the 6-distinction base no drawing fits (LAW-RIGIDITY).
+  rigid repair (A68), the count was learned and held in 30 of 30 writes on the 6-distinction base no drawing fits (LAW-RIGIDITY), a
+  success specific to that base (on two more no shortest-sum rule holds a count). A graded value-free rule of the knots with a free repair
+  kept the count at the first target in 8 of 10 runs there and 6 of 10 on one copy (NATIVE-GRADE).
 
 **The tools** (all frozen, each with a `check.py` that reproduces its result):
 - `proofs/NATIVE-WRITE-20261110-001A/.../write_lib.py`: spaces S1 to S5 and the dev spaces (`Space`), the fast incremental dissonance
@@ -57,9 +59,9 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   from pinned dissonance); `proofs/STURDY-PROBE-20261110-001A/.../probe_lib.py` (the sturdier probe; patch `io_lib.probe` to use it);
   `proofs/THREE-IN-20261110-001A/.../census_lib.py` and `proofs/THREE-IN-20261110-001B/.../io3_lib.py` (three held inputs).
 
-**Where to start again** (the basket, best first): a native grade for rigidity (sub-goal B160, 3/3 and 3/3, selected, awaiting a
-go-ahead; the native rest-set engine is `proofs/LAW-RIGIDITY-20261112-001B/.../native_lib.py`, the drawing-free one
-`proofs/UNDRAWN-LEARN-20261111-001A/.../undrawn_lib.py`); which cyclic sequences to fix (B161); a tie in place of the
+**Where to start again** (the basket, best first): which cyclic sequences to fix (B161, 3/3 and 2/3, selected, awaiting a go-ahead);
+rigidity from longer sequences (B162); the graded engine is `proofs/NATIVE-GRADE-20261112-001A/.../grade_lib.py`, the native rest-set one
+`proofs/LAW-RIGIDITY-20261112-001B/.../native_lib.py`, the drawing-free one `proofs/UNDRAWN-LEARN-20261111-001A/.../undrawn_lib.py`; a tie in place of the
 shared distinction (B157); the count of seven, where the time goes (B154); the two-histories test (B159); learning which distinction to share (sub-goal B155); an
 endless chain of counting copies (B156); five-input parity on drawn knot patterns that are not lattice ones (B150); the lattice ones of 25
 to 32 distinctions (B151); a probe that is a theorem (B130); copies sharing distinctions are built in
@@ -162,7 +164,11 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
 - The drawing's two jobs separate (`LAW-RIGIDITY-20261112-001`; rest sets exact, learning frozen): on one copy, resting only where the
   faces allow, with no grade, finds the count 10 of 10 and holds 4 of 10; a repair that flips distinctions only (A68, supplied) holds 30 of
   30. On the undrawn base, resting only where the law sums to 0 around every shortest cyclic sequence, with that repair: 30 of 30 learned
-  and held. No single value of that rule serves both bases (exact).
+  and held. No single value of that rule serves both bases (exact). *Narrowed: on two more undrawn bases no shortest-sum rule leaves a
+  counting law at rest.*
+- A grade of the knots keeps a count where places are shared (`NATIVE-GRADE-20261112-001`; exact rest sets, learning frozen): resting
+  where all shortest sums are equal, charged per sequence that must change, free repair: held at the first target 8 of 10 on the undrawn
+  base (19 of 30 writes), 6 of 10 on one copy (17 of 30). A69 Overturned; A68 back to Assumed.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -179,7 +185,7 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
 writer's walk never errs when long enough (B130); writing with only the ones named (B131); how learning cost grows with atoms
 (B143); whether a drawn knot pattern that is not a lattice one counts five distinctions (B150); whether separately learned copies can
-be wired so that learned gates compose (B148, open after SHARED-COUNT learned the composite whole); whether the knot pattern can supply rigidity too (B160) and choose its rest set the same way on every base (B161), what it costs to count seven (B154), whether the learner can make its own overlaps (B155) and what an endless chain
+be wired so that learned gates compose (B148, open after SHARED-COUNT learned the composite whole); whether the knot pattern can choose its rest set on every base (B161) and give rigidity where its shortest sequences share few places (B162), what it costs to count seven (B154), whether the learner can make its own overlaps (B155) and what an endless chain
 of copies counts (B156); and whether
 learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132, B133,
 B134, B135, B136, B146, B147 and B149 are answered above, and B148 in part.

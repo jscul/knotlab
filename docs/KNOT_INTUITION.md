@@ -1783,8 +1783,23 @@ So holes come in two kinds:
      still ours (repairs change only the state).
    - **Exact.** The same request makes counting impossible on the drawn copy, where every counting rule adds up to 1 around those sequences;
      asking for 1 leaves the undrawn base nothing to settle on. The knots alone did not choose one request for both.
-   - **Next.** A reason to keep a rule that comes from the knots too: counting each sequence that adds up wrong (sub-goal B160), awaiting a
-     go-ahead ([decision note](../research/LAW-RIGIDITY-20261112-001/law_rigidity.md)).
+   - *Narrowed (`NATIVE-GRADE-20261112-001`).* On two more undrawn patterns from the same search, no request of this kind leaves a counting
+     rule to settle on; the success above belongs to the 6-distinction pattern.
+   - **Next (taken by `NATIVE-GRADE-20261112-001`, below).** A reason to keep a rule that comes from the knots too: counting each sequence
+     that adds up wrong (sub-goal B160) ([decision note](../research/LAW-RIGIDITY-20261112-001/law_rigidity.md)).
+
+   **2026-11-12: a grade of the knots keeps a count where the knots overlap enough** (`NATIVE-GRADE-20261112-001`).
+   - **The question.** Sub-goal B160: can the knots also give the reason to keep a rule? Ask only that the sums around all the shortest
+     cyclic sequences agree with one another, no value chosen, and charge for each sequence that would have to change.
+   - **Computed.** The learner found the count every time on both patterns. On the 6-distinction pattern, where most of a rule's signs sit
+     on two or more of those sequences, it kept it 8 times in 10 at the first count (19 writes of 30). On the drawn copy, where each sign
+     sits on one at most, it kept it 6 times in 10: there the grade costs nothing to undo.
+   - **Exact.** On two other undrawn patterns, no request of this kind leaves a counting rule to settle on.
+   - **Reading.** How many short sequences share a sign sets how much it costs to rewrite it: rigidity is a property of how the knots
+     overlap. Which sequences to ask about is still open, and the learner still finds the count no faster than by chance among the rules
+     it may settle on.
+   - **Next.** Which cyclic sequences the knots should fix, on every pattern (B161), awaiting a go-ahead
+     ([decision note](../research/NATIVE-GRADE-20261112-001/native_grade.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

@@ -1857,6 +1857,8 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Rerun the questions with a harmony read as a finite repeat of period p, or as a signed standing wave; if the
   arithmetic read (least common multiple, offsets, the mirror's power of 2) changes, the reading carries the result.
 - **History.**
+  - 2026-11-12 · Used by `EVEN-PERIOD-20261112-001`, status unchanged: under this reading no not-all-equal harmony has an odd period up
+    to 29 ([why the knot law's harmonies are even](../research/EVEN-PERIOD-20261112-001/even_period.md)).
   - 2026-11-12 · Used by `HARMONY-ARITH-20261112-001`, status unchanged: under this reading stitching gives least common multiples and
     offsets by definition, and the not-all-equal law's harmonies have even periods only to span 12
     ([arithmetic of harmonies](../research/HARMONY-ARITH-20261112-001/harmony_arith.md)).

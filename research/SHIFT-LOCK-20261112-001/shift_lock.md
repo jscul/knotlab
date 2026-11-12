@@ -29,10 +29,11 @@ at all sizes of a family comes from a walk around one cycle.
   happens (675 of 675), so the strongest form frozen did not appear.
 - **What the two-way states are (after the run).** Each of the 78 satisfies the law by direct evaluation and repeats along no step at
   all; none is a short-step state under any other symmetry of the harmony's states where those could be listed (50 cells). For
-  `0011 + 01` they are mixed tilings: on the orbit of 0011 a knot's members are equal or three distinct phases in increasing order,
-  which makes each state a height function with three cell types, the literature's height function of a tiling, and a slope rule
-  (the windings must give average slopes inside a small polygon, as for the dimer model) decides every lock to 16 × 16 (225 of 225).
-  When no whole-number slope fits, every state mixes cell types and repeats along no step.
+  `0011 + 01` they are mixed lifted phases: on the orbit of 0011 a knot's members are equal or three distinct phases in increasing
+  order, which makes each state a phase counted in whole numbers with three step pairs (the literature's height function of a tiling),
+  and the mean-step bounds (the total steps around a row and a column, divided by the sizes, must satisfy three inequalities fixed by
+  counting the copies of each step pair; the literature's slope polygon of the dimer model) decide every lock to 16 × 16 (225 of 225).
+  When no whole-number mean steps fit, every state mixes step pairs and repeats along no step.
 - **Influence (after the run).** In all 78 cells copy 0 is tied to nothing. Locks that hold at every size of a family come only from
   strips (one count at most 7, a ring of short rows with a finite transfer) and from short-step arithmetic (`0011` locks exactly when
   4 ∤ m and gcd(n, m) ≤ 3, 225 of 225); other locks are sporadic (5 × 5 for `0011 + 01`; 6 × 6, 9 × 9, 9 × 11, 11 × 9 and 11 × 11 for
@@ -51,7 +52,7 @@ at all sizes of a family comes from a walk around one cycle.
 | Ring ties: n, n / L or copy 0 alone | exact on 405 cells (frozen; 2 exceptions at 6) |
 | Ledrappier control and the short-step discriminator | exact by rank to 32 (frozen) |
 | The 78 states verified, no step at all, tie nothing; no other symmetry gives a short state (50 cells) | after the run, descriptive |
-| `0011 + 01`: states are tilings, locks follow the slope polygon (225 of 225); `0011`: 4 ∤ m and gcd ≤ 3 (225 of 225) | after the run, checked to 16 × 16; not proved for every size |
+| `0011 + 01`: states are lifted phases, locks follow the mean-step bounds (225 of 225); `0011`: 4 ∤ m and gcd ≤ 3 (225 of 225) | after the run, checked to 16 × 16; not proved for every size |
 
 ## Against the pre-registration
 
@@ -72,7 +73,7 @@ rows and columns (Markley and Paul, 1981) for unmixed knots; for the mixed knot,
 algebraic actions of ℤ² (Kitchens and Schmidt, 1988; Lind, Schmidt and Ward), cycle lengths of linear cellular automata on rings
 (Martin, Odlyzko and Wolfram, 1984), and periods of two-dimensional shifts of finite type, which can be any NE set (Jeandel and
 Vanier); height functions of tilings (Thurston, 1990) and the slope polygon of the dimer model (Kenyon, Okounkov and Sheffield, 2006)
-for the two-way states. Novelty is not claimed for any mechanism; the harmonies' data are new.
+for the two-way states (in this record: lifted phases, step pairs and the mean-step bounds). Novelty is not claimed for any mechanism; the harmonies' data are new.
 
 ## What it changes
 
@@ -84,9 +85,9 @@ for the two-way states. Novelty is not claimed for any mechanism; the harmonies'
 - **For the knots-alone thread's window bonds** (`COMMON-FOLD-20261112-001`: travelling found on two-shift bases but not certified by
   doubly periodic states up to period 8). Related, not the same object: the states here are doubly periodic (states of a finite
   repeat) with no shorter repeat, while that thread's missing certificates are states of the endless base that no small doubly
-  periodic state reproduces. The tiling reading gives one cause for the latter: a height function whose slope is not a whole number
-  repeats only on repeats whose sizes fit the slope, so small certificates can miss it. Whether base 16's window bonds are such
-  tilings is untested.
+  periodic state reproduces. The lifted-phase reading gives one cause for the latter: a lifted phase whose mean steps are not whole
+  numbers repeats only on repeats whose sizes fit them, so small certificates can miss it. Whether base 16's window bonds are such
+  states is untested (a frozen test for that thread is in `LINE-LOCK-20261112-001`'s pre-registration).
 
 ## Assumptions
 
@@ -95,14 +96,17 @@ as locking and ties, and is unchanged. Added: A77, a walk around one cycle read 
 
 ## Corrections
 
-None. (A progress message in the thread said 11 harmonies for the 78 cells; it is 10, edited in place.)
+None at the close. (A progress message in the thread said 11 harmonies for the 78 cells; it is 10, edited in place.) Later, from
+`LINE-LOCK-20261112-001`: words for a drawn space (tilings, cell types, slope polygon, slope rule) replaced in this note's prose by
+lifted phases, step pairs and the mean-step bounds, with the literature's names kept once; the direction table and the report as sent
+keep their words ("Prove the slope rule" is the mean-step rule). Logged in `docs/CORRECTIONS.md`; Not a block.
 
 ## In the owner's words
 
 Tie copies of a pattern to each other across two directions with straight ties, and it behaves exactly like two separate rings. Tie
 them with a knot that reaches one step each way, and genuinely two-dimensional patterns appear, ones that never repeat along any
-step, and sometimes they are the only thing keeping the whole from locking. For one pattern they are tilings, and a slope rule decides
-when the whole locks. But these two-dimensional patterns carry no influence: where only they exist, no copy pins any other. The
+step, and sometimes they are the only thing keeping the whole from locking. For one pattern they are like tilings, with each copy's
+phase counted up in whole numbers, and simple bounds on the average step decide when the whole locks. But these two-dimensional patterns carry no influence: where only they exist, no copy pins any other. The
 influence that reaches across every size still runs around cycles.
 
 ## Position and next directions

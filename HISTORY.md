@@ -13,6 +13,13 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   pre-registration said ([decision note](research/COMMON-FOLD-20261112-001/common_fold.md)).
 - Unchanged: every number and every frozen verdict.
 
+## 12 November 2026: words for a drawn space in the two-shift record
+
+- The record of copies along two shifts (`SHIFT-LOCK-20261112-001`) called its two-way states tilings with cell types decided by a
+  slope polygon. Those are words for a drawn space. They are now lifted phases with three step pairs and the mean-step bounds, with
+  the literature's names given once ([decision note](research/SHIFT-LOCK-20261112-001/shift_lock.md)).
+- Unchanged: every number and the reading.
+
 ## 12 November 2026: which loops lock, narrowed by its referee
 
 - Harmonies stitched in one order (`LOOP-LOCK-20261112-001`): the loop rule (a loop locks iff shorter than the girth of the step

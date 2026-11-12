@@ -3249,12 +3249,21 @@ So holes come in two kinds:
      lock exactly when both rings lock: rows and columns are rings, and a ring state laid along one shift is a state of the whole.
    - **The mixed knot makes two-way states (exact; after the run, checked).** With the knot one step along each shift, the shape of
      Ledrappier's law, 34 of 45 harmonies have states that repeat along no short step, and in 78 cells (10 harmonies) they are the only
-     way the arrangement stays open. For 0011 + 01 they are tilings, height functions with three cell types, and a slope polygon decides
-     every lock to 16 × 16.
+     way the arrangement stays open. For 0011 + 01 they are phases counted in whole numbers with three step pairs (the literature's
+     height functions of tilings), and bounds on the mean steps (the literature's slope polygon) decide every lock to 16 × 16.
    - **But they carry no influence (after the run).** Where only two-way states exist, no copy fixes any other; whole arrangements lock
-     at every size only through cycles: thin strips and the arithmetic of short steps. Unbounded two-way influence would need increments
-     holding a whole line, as Ledrappier's law has; no harmony has them
+     at every size only through cycles: thin strips and the arithmetic of short steps. Unbounded two-way influence would need stitch pairs
+     forming a ratio subgroup, as Ledrappier's law has; no harmony has them
      ([decision note](../research/SHIFT-LOCK-20261112-001/shift_lock.md)).
+
+   **2026-11-12: no additive automaton in a harmony's stitch** (`LINE-LOCK-20261112-001`; referee pending).
+   - **The theorem (proved).** A harmony's one-order stitch holds no permutive sub-stitch (a set of triples in which any two members
+     fix the third) on a set of states: the three members' bits would be forced constant and opposite at some place, and that place
+     could be flipped once on the integers, giving a state that does not repeat. So no orbit holds a ratio subgroup, the additive
+     automaton that Ledrappier-type influence needs, at any period, the odd harmonies of 61, 73 and 193 included.
+   - **Lagged stitches too (exact).** All 187 orbits of 73 harmonies (and 32 more one size past) hold no coset with a ratio part.
+     Two-way influence of Ledrappier's kind needs a permutive knot, such as parity; the not-all-equal law on repeating patterns cannot
+     supply one ([decision note](../research/LINE-LOCK-20261112-001/line_lock.md)).
    **2026-11-12: the end is a jump for uniform knots, not for growth** (`RANDOM-FATES-20261112-001`; refereed, confirmed with fixes).
    - **Uniform knots (computed, frozen).** On 50 to 300 distinctions the largest tie class holds about one distinction in n until
      about 20 knots before the end, then a quarter to a third ten knots before, and 87 to 90% at the last base, consistent with the

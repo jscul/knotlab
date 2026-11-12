@@ -2341,6 +2341,25 @@ that earlier records used in two senses.
   it gives the same state up to one symmetry of the harmony. A state that
   repeats along a short step is read as a walk around one cycle (assumption
   A77); one that repeats along no step at all is two-way.
+- **Stitch pairs; ratio subgroup; permutive sub-stitch.** For one orbit of a
+  harmony under its shifts and flip, the **stitch pairs** are the pairs of
+  symmetries (y, z) for which a state u, y·u, z·u stitched in one order is
+  allowed. A **ratio subgroup** is a cyclic group of stitch pairs (g, λg) with
+  ratio λ not 0 or 1 at an odd prime (the literature's line through the
+  origin); it gives an **additive** automaton, the kind behind Ledrappier's
+  law. A **permutive sub-stitch** is a set of allowed triples in which, for
+  every two members from its set of states, exactly one third completes a
+  triple (the literature's quasigroup or permutive law). A harmony's stitch
+  has none (lines in the increments, 12 November 2026).
+- **Lifted phase; step pairs; mean steps.** On copies of one orbit along two
+  copy shifts, a **lifted phase** counts each copy's shift from a fixed state
+  in whole numbers, so that the steps around any four mutually neighbouring
+  copies sum to zero (the literature's height function); its **step pairs**
+  are the pairs of phase steps along the two copy shifts; its **total steps**
+  are the sums around a row and a column of copies, and its **mean steps**
+  those divided by the counts. Bounds on the mean steps, fixed by counting the
+  copies of each step pair (the literature's slope polygon), decide which
+  repeats it fits.
 - **Shortcut.** A pair of distinctions whose bond distance is less than their
   steps apart plus one (lesson 4.7). The endless six-regular weave has none;
   some periodic bases that overlap have many.

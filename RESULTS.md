@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**326 current results** and 5 superseded ones, from 343 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**327 current results** and 5 superseded ones, from 343 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -27,7 +27,7 @@ How to read an entry:
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
-- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 30 results
+- [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
@@ -975,6 +975,9 @@ Patterns of patterns in three dimensions: when counting colourings of knots and 
 - **2026-11-12 · The knot law's repeats have no odd period up to 29** (`EVEN-PERIOD-20261112-001-D001`).
   No base of not-all-equal knots along one shift, at any span and with any number of knot kinds, whose allowed states all repeat has a state of odd period up to 29 (computer-assisted). The mirror alone does not forbid odd periods; what does is a value that can flip unseen, and a word of odd period without one would itself make such a base.
   [proof P001](proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/proof.md), [epic closure](proofs/EVEN-PERIOD-20261112-001Z/EVEN-PERIOD-20261112-001Z-P001_epic_closure/proof.md)
+- **2026-11-12 · Hidden copies: mod-3 influence in principle, not in practice** (`HIDDEN-COPY-20261112-001-D001`).
+  Gadgets of stitched harmony copies never give flip-blind parity, and no small one gives an additive readout (exact); by known theorems, harmonies with three symmetric classes admit a mod-3 one of impractical size.
+  [proof P001](proofs/HIDDEN-COPY-20261112-001A/HIDDEN-COPY-20261112-001A-P001_hidden_copies/proof.md), [epic closure](proofs/HIDDEN-COPY-20261112-001Z/HIDDEN-COPY-20261112-001Z-P001_epic_closure/proof.md)
 - **2026-11-12 · No additive automaton in a harmony's stitch** (`LINE-LOCK-20261112-001-D001`).
   A harmony's one-order stitch holds no permutive sub-stitch on a set of states, so no orbit holds the additive automaton behind Ledrappier-type influence (proved); lagged stitches hold none on 73 harmonies (exact).
   [proof P001](proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/proof.md), [epic closure](proofs/LINE-LOCK-20261112-001Z/LINE-LOCK-20261112-001Z-P001_epic_closure/proof.md)
@@ -1435,7 +1438,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Bounded at every distance? (`FAR-BOUND-20261112-001`) | [closure](proofs/FAR-BOUND-20261112-001Z/FAR-BOUND-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/FAR-BOUND-20261112-001/) |
 | 2026-11-12 | A direction the knot law does not lengthen (`FOLD-20261112-001`) | [closure](proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/FOLD-20261112-001/) |
 | 2026-11-12 | Arithmetic of harmonies without a zero (`HARMONY-ARITH-20261112-001`) | [closure](proofs/HARMONY-ARITH-20261112-001Z/HARMONY-ARITH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/HARMONY-ARITH-20261112-001/) |
-| 2026-11-12 | Influence through hidden copies (`HIDDEN-COPY-20261112-001`) | — | [folder](research/HIDDEN-COPY-20261112-001/) |
+| 2026-11-12 | Influence through hidden copies (`HIDDEN-COPY-20261112-001`) | [closure](proofs/HIDDEN-COPY-20261112-001Z/HIDDEN-COPY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/HIDDEN-COPY-20261112-001/) |
 | 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |
 | 2026-11-12 | Jumps over a whole life (`LIFE-JUMPS-20261112-001`) | [closure](proofs/LIFE-JUMPS-20261112-001Z/LIFE-JUMPS-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LIFE-JUMPS-20261112-001/) |
 | 2026-11-12 | Lines in the increments (`LINE-LOCK-20261112-001`) | [closure](proofs/LINE-LOCK-20261112-001Z/LINE-LOCK-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LINE-LOCK-20261112-001/) |

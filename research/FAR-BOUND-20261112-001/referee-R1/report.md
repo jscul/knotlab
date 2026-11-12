@@ -198,8 +198,8 @@ certify.
 3. **Ticket B's C3 wording.** Say 1,620 cases checked, 3 of them knots of the base at j's the proof does not use. Add the condition
    that the across period is a multiple of 8 (travel along 4u complements). Note that C4's census check is a window non-refutation;
    the referee's certificate certifies it, and also shows the travel along t′ needs the third kind. **Not a block.**
-4. **The dropped bases.** Say that the proved base 24/3 is among them, so dropping is not a sign of growth. The completion run is
-   pending. **Not a block.**
+4. **The dropped bases.** Say that the proved base 24/3 is among them, so dropping is not a sign of growth. The completion run found
+   no growing base among them (1 bounded, 6 with certificates missing, 1 dropped again). **Not a block.**
 
 ## Files
 

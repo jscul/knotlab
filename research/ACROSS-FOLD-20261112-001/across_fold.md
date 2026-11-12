@@ -163,3 +163,13 @@ merged into direction 3 below.
 3. **Other classes.** Payoff 2, concreteness 3: the flip form generalizes directly.
 
 **Recommendation.** Research directions, #1, owner-approved; it starts after this close, with the advisor consulted before freezing.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 06:52 UTC, summarized here (the tables are those above, directions 1 to 3, with 1 starting
+at once as the owner approved). Headline: on base 16 the law reads a line across the direction it does not lengthen, bond distance
+to a far distinction y across at most floor((|y|+1)/2) + 2, one more for every two across-counts both ways, so zero dimensions along
+one shift and one across it: the first dimension the law reads natively that differs from the meeting pattern's. The advisor model
+sketched the key lemma, checked and completed here; the referee found no gap, and found the two-along-count bonds downward that
+withdrew a draft "handedness" reading. One correction, Not a block; A74 added; new words heddle, unlengthened shift, along-count and
+across-count, self-keeping part.

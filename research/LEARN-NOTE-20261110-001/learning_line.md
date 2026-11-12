@@ -13,7 +13,7 @@ claim carries its evidence class:
 
 Every space here is an octahedral knot sphere K_k or a torus built from one, small (K_2 to K_8, 16 to 256 points).
 
-## Picking the line up cold (updated 2026-11-11, after `SHARED-COUNT-20261111-001`)
+## Picking the line up cold (updated 2026-11-12, after `UNDRAWN-LEARN-20261111-001`)
 
 The owner paused this line on 2026-11-10 while one harder direction is tried elsewhere, resumed it on 2026-11-11, and paused new work
 again after `PARITY-FIVE-20261111-001` the same day; the owner restarted it the same evening with a new direction, bases where knots
@@ -44,7 +44,8 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   where they were impossible; and the parity of three held points, learned and held in 20 of 20 runs on the torus (2, 0, 4) alone and
   grown inside a memory (LEARN-PARITY), the first learned non-unate map; and the count of five held distinctions on two counting copies
   sharing one distinction, 10 of 10 runs, the first learned map on a base that is not one drawn knot pattern; the count of seven on three
-  copies not learned within two hours (SHARED-COUNT).
+  copies not learned within two hours (SHARED-COUNT). With dissonance at knots alone and no faces, the learner held a count in 0 of 10
+  runs on each of three bases: the memory has so far needed a drawing's faces (UNDRAWN-LEARN, A66 Confirmed).
 
 **The tools** (all frozen, each with a `check.py` that reproduces its result):
 - `proofs/NATIVE-WRITE-20261110-001A/.../write_lib.py`: spaces S1 to S5 and the dev spaces (`Space`), the fast incremental dissonance
@@ -54,8 +55,9 @@ roles from stored classes is monotone (theorem M); reading held inputs is self-d
   from pinned dissonance); `proofs/STURDY-PROBE-20261110-001A/.../probe_lib.py` (the sturdier probe; patch `io_lib.probe` to use it);
   `proofs/THREE-IN-20261110-001A/.../census_lib.py` and `proofs/THREE-IN-20261110-001B/.../io3_lib.py` (three held inputs).
 
-**Where to start again** (the basket, best first): a learner whose dissonance needs no drawing (sub-goal B153, 3/3 and 2/3, selected and
-started; it challenges A66); the count of seven, where the time goes (B154); learning which distinction to share (sub-goal B155); an
+**Where to start again** (the basket, best first): what does the faces' work on a base with no drawing (sub-goal B158, 3/3 and 2/3,
+selected, awaiting a go-ahead; the drawing-free engine is `proofs/UNDRAWN-LEARN-20261111-001A/.../undrawn_lib.py`); a tie in place of the
+shared distinction (B157); the count of seven, where the time goes (B154); the two-histories test (B159); learning which distinction to share (sub-goal B155); an
 endless chain of counting copies (B156); five-input parity on drawn knot patterns that are not lattice ones (B150); the lattice ones of 25
 to 32 distinctions (B151); a probe that is a theorem (B130); copies sharing distinctions are built in
 `proofs/SHARED-COUNT-20261111-001A/.../join_lib.py`; how learning cost grows with atoms (B143); the parity spaces and
@@ -151,6 +153,9 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
   drawn knot pattern (2, 0, 4) sharing one distinction count five held distinctions, and the unchanged learner learned and held that count
   in 10 of 10 runs, 30 of 30 writes, at about fifteen times the steps of one copy; three copies (seven) 0 of 10 within the 120-minute cap.
   The shared distinction lies in six knots and the pair has no single drawing; the learner read each copy's own drawn faces (A66).
+- The memory lived partly in the drawing (`UNDRAWN-LEARN-20261111-001`; laws exact, learning frozen): with dissonance at violated knots
+  alone, 0 of 10 held on one copy, on two copies sharing a distinction and on a 6-distinction base no drawing fits (1 of its 2,048 laws
+  counts three); stops were lost when the repair re-signed knots. A66 Confirmed.
 - **Corrected (frame, not class).** The σ and parity readings of `CLASS-READ-20261110-001` and `GATES-20261110-001` were computed with
   one fixed signing per class; each of the 718 σ-reading networks has a satisfying state under another signing of σ
   (`NOT-INSIDE-20261110-001`, check F; `docs/CORRECTIONS.md`, Narrowing). What they read is the frame, the record of how a class was
@@ -167,8 +172,7 @@ Sections 1 to 8 are the note as written for B95. Fourteen epics since then chang
 **Open.** Whether every host is critical (B115); capacity (B98); the writing search's stopping rule (B113); whether the native
 writer's walk never errs when long enough (B130); writing with only the ones named (B131); how learning cost grows with atoms
 (B143); whether a drawn knot pattern that is not a lattice one counts five distinctions (B150); whether separately learned copies can
-be wired so that learned gates compose (B148, open after SHARED-COUNT learned the composite whole); whether learning needs the drawing's
-faces at all (B153), what it costs to count seven (B154), whether the learner can make its own overlaps (B155) and what an endless chain
+be wired so that learned gates compose (B148, open after SHARED-COUNT learned the composite whole); what does the faces' work on a base with no drawing (B158, after UNDRAWN-LEARN found the faces needed), what it costs to count seven (B154), whether the learner can make its own overlaps (B155) and what an endless chain
 of copies counts (B156); and whether
 learning could keep a fixed frame, which would make a frame-level NOT a reading of what was written (B126). B106, B119, B120, B132, B133,
 B134, B135, B136, B146, B147 and B149 are answered above, and B148 in part.

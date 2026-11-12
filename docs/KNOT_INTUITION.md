@@ -1755,8 +1755,21 @@ So holes come in two kinds:
    - **Reading.** Grown together on one drawing, the same two copies count nothing (the entry above). Sharing a distinction by identity
      leaves nothing to untie: the overlap computes, and is learned, where the drawing failed. The shared distinction lies in six knots, so
      the pair is no longer one drawn pattern; the learner still feels each copy's own drawn faces.
-   - **Next.** A learner whose tension needs no drawing at all (sub-goal B153), started
+   - **Next (taken by `UNDRAWN-LEARN-20261111-001`, below).** A learner whose tension needs no drawing at all (sub-goal B153)
      ([decision note](../research/SHARED-COUNT-20261111-001/shared_count.md)).
+
+   **2026-11-12: without the drawing, the learner forgets as fast as it learns** (`UNDRAWN-LEARN-20261111-001`).
+   - **The question.** Sub-goal B153: the learner felt part of its tension at the faces of a drawing. Feeling tension only at knots that
+     are broken, as a base with no drawing allows, does it still learn the counts?
+   - **Computed.** No: 0 runs of 10 kept the count, on one copy, on two copies sharing a distinction, and on a base of 6 distinctions and 8
+     knots that no drawing fits. When the learner did reach the count and was then shaken, it mended itself by rewriting its own rules as
+     readily as by changing its state, and the count washed out.
+   - **Exact.** On one copy, 4 of its 512 laws count; with faces the learner can only rest among 4 laws, 1 of which counts. The 6-distinction
+     base counts three held distinctions in exactly 1 of its 2,048 laws, with fewer distinctions than any drawn pattern found to count.
+   - **Reading.** The drawing did two jobs: it narrowed where the learner could rest, and it made rewriting a rule cost something. That
+     cost was the memory. A base in the owner's sense has no drawing, so learning there needs another reason for a rule to stay put.
+   - **Next.** Which of the two jobs learning needs, and a source for it on a base with no drawing (sub-goal B158), awaiting a go-ahead
+     ([decision note](../research/UNDRAWN-LEARN-20261111-001/undrawn_learn.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

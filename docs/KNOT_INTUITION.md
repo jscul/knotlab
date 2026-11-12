@@ -5973,7 +5973,7 @@ So holes come in two kinds:
      ([decision note](../research/BOND-BALLS-20261111-001/bond_balls.md)).
 
    **2026-11-12: a direction the knot law does not lengthen** (`FOLD-20261112-001`).
-   - **The question.** Is the folded direction real at every distance, and is it the law's doing or the way the base was supplied?
+   - **The question.** Is the folded direction real at every distance, and is it the law's doing or the meeting pattern's?
    - **Real at every distance (proved, refereed).** On that base three equal distinctions force the next three over to the other value,
      column after column, so for every k the origin lies in a bond of four with distinctions k steps away, along a whole line both
      ways. No single far distinction is tied to the origin: the law binds it only jointly with a whole triple.

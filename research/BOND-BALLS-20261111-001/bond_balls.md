@@ -36,7 +36,7 @@ shattered, containing two vertices at hypergraph distance d, of size d + 2 for d
 The knot law always reaches the next shell on these infinite bases: nothing stops it at three steps. On most of them it measures them
 as the shifts do, bond distance steps plus one. On 42 (38 up to change of basis) it measures them shorter, and on at least one it
 does not grow at all along one direction: distinctions twelve steps away still share a bond of four with the origin. There the law
-reads a geometry the meeting pattern does not supply: one in which a whole direction is at bounded distance.
+reads a geometry the meeting pattern does not have: one in which a whole direction is at bounded distance.
 
 ## Reading
 
@@ -47,7 +47,7 @@ reads a geometry the meeting pattern does not supply: one in which a whole direc
 - **The law folds a direction.** Where a triple of equal distinctions forces the next triple over, without end, the allowed states
   bind distinctions along that direction at bounded bond distance however many steps apart they are. Read by the law alone, that
   direction has no length: the two-shift base is compressed along it, in the owner's word, while the meeting pattern keeps it.
-- **For question 9.** Space read from a law can differ from the space its meeting pattern supplies, and the difference can be a whole
+- **For question 9.** Space read from a law can differ from the step distance of its meeting pattern, and the difference can be a whole
   direction, not just a constant. Whether those bases read as one-dimensional by the law's balls is the next measurement.
 
 ## Lag cutoffs and census-only claims
@@ -89,7 +89,7 @@ An independent referee (code sharing nothing with the census: steps by search on
 
 ## Workspace assumptions
 
-- **Relied on.** A64 (the shifts, like counts, are supplied), A67 (three-set reading for faithfulness). **Changed.** None.
+- **Relied on.** A64 (the shifts, like counts, belong to the meeting pattern), A67 (three-set reading for faithfulness). **Changed.** None.
 
 ## Ratio
 

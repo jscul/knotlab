@@ -1477,18 +1477,21 @@ shifts dictate. Does bond distance follow them?
   than its steps apart plus one. On five heavily overlapping bases some "bond
   of five" verdicts are only upper bounds. The endless six-regular weave, where
   the ruler is proved, has no shortcut.
-- **A direction the law does not lengthen (computed, open).** On one base,
-  three equal distinctions force a matching three, one shift over, to the
-  opposite value, and those force the next three, and so on. So three
-  distinctions twelve steps away still form a bond of four with the starting
-  one: bond distance 3 at every distance checked, from 3 to 12 steps. On 14 of
-  the 16 kinds of base with shortcuts at four steps, bonds of four were also
-  found at five and six steps. Along such a combination of the shifts the
-  allowed states keep distinctions at a fixed bond distance while the meeting
-  pattern keeps them ever more steps apart. Whether this holds at every
-  distance is not proved.
+- **A direction the law does not lengthen (proved).** On one base, three
+  equal distinctions force a matching three, one shift over, to the opposite
+  value, and those force the next three, and so on. So for every k, three
+  distinctions k steps away form a bond of four with the starting one: bond
+  distance at most 3 at every distance, along a whole line in both directions,
+  while every pair stays free, so no single far distinction is tied to the
+  starting one. Steps apart and bond distance both belong to the base itself,
+  so the gap is the law's doing, not the meeting pattern's; it runs along the
+  one pair class that two knots share. Of the 38 kinds of base with shortcuts,
+  14 keep bonds of four at five and six steps (computed). The nearest known
+  case is a parity rule on the same pattern of knots whose constraints appear
+  at doubling distances (literature: Ledrappier's shift).
 
-([BOND-BALLS-20261111-001](research/BOND-BALLS-20261111-001/bond_balls.md))
+([BOND-BALLS-20261111-001](research/BOND-BALLS-20261111-001/bond_balls.md);
+[FOLD-20261112-001](research/FOLD-20261112-001/fold.md))
 
 **Studying a base from inside.** Lesson 1.7 asked whether what emerges in a
 base can study the base. The record so far:

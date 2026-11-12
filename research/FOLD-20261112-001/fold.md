@@ -12,7 +12,7 @@ As in the guide's glossary, `BOND-BALLS-20261111-001` and the pre-registration: 
 ## The question
 
 On base 16 the not-all-equal law (NAE) kept distinctions twelve steps away at bond distance 3. Is that so at every distance, is it
-settled by how the base was supplied, how does it square with the faithful reading, what is the law's ball there, and which other
+due to the meeting pattern rather than the law, how does it square with the faithful reading, what is the law's ball there, and which other
 shortcut bases fold?
 
 ## The question in standard terms
@@ -26,7 +26,7 @@ hypergraphs have such four-sets at distances 5 and 6?
 | # | Conclusion | Kind | Ticket |
 | --- | --- | --- | --- |
 | 1 | **The fold holds at every distance (Theorem F).** For every k ≥ 3 (and k = 2) the origin's own triple with any distinction k columns on, and the triple k columns back with the origin (a translate), are bonds of four; every pair of the origin with one of those far distinctions is free. So the law keeps a whole line through the origin, in both directions, at bond distance at most 3 though it lies k steps away. | proved (a hand proof of the forcing; an exact finite check of the freeness, valid for every k); refereed | A |
-| 2 | **Not an artefact of the supply.** Steps apart depend only on which pairs are co-knotted, bond distance only on the states, and both are unchanged by any re-presentation of the base, so the gap between them is intrinsic; the step metric is genuinely two-dimensional (shells 10, 26, 40, 54) and the far distinctions are k steps away. The fold runs along the pair class that lies in two knots: it is the law's "two equal force the third opposite", iterated. | proved | A |
+| 2 | **The law's doing, not the meeting pattern's.** Steps apart depend only on which pairs are co-knotted, bond distance only on the states, and both are unchanged by any re-presentation of the base, so the gap between them is intrinsic; the step metric is genuinely two-dimensional (shells 10, 26, 40, 54) and the far distinctions are k steps away. The fold runs along the pair class that lies in two knots: it is the law's "two equal force the third opposite", iterated. | proved | A |
 | 3 | **The faithful reading stands.** The law ties the origin to no single far distinction; it binds the origin only jointly with a whole triple, and only when that triple is all equal. | proved | A |
 | 4 | **The law's radius-3 ball is infinite.** By translation it contains ten distinctions for every k ≥ 3, all exactly k steps away, on a line both ways: at least linear growth in steps at a fixed bond radius. Their bond distance is exactly 3 at k = 4 to 6 (computed). What else the ball contains, and the balls of larger radius, are not claimed. | proved (lower bound) | A |
 | 5 | **Which shortcut bases fold.** With the bond's two other distinctions within one step of the far one, 16 of BOND-BALLS's 42 shortcut bases fold to six steps, all among the 18 with a four-step shortcut (prediction G held); none of the 24 others does. Up to change of lattice basis that is 14 of 16 classes, none of the 22 others; the two four-step classes that do not fold (81, 88) showed no bond of four at five or six steps in the referee's broader search either. Only base 16 (≅ 40) is proved to fold at every distance. | computed, frozen; refereed | B |
@@ -35,7 +35,7 @@ hypergraphs have such four-sets at distances 5 and 6?
 
 Yes, at every distance: on base 16 a triple of equal distinctions forces the next triple over, column after column, so the law binds
 the origin to distinctions arbitrarily many steps away at bond distance 3, along a whole line in both directions. It is the law doing
-this, not the way the base was supplied: steps apart and bond distance are both intrinsic, the step metric is two-dimensional, and the
+this, not the meeting pattern: steps apart and bond distance are both intrinsic, the step metric is two-dimensional, and the
 line runs along the one pair class that two knots share. The faithful reading is untouched, since no single far distinction is tied to
 the origin. Of the 38 classes of bases with shortcuts, 14 fold this way to six steps, exactly among those whose shortcuts already
 reached four steps.

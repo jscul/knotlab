@@ -1768,8 +1768,23 @@ So holes come in two kinds:
      base counts three held distinctions in exactly 1 of its 2,048 laws, with fewer distinctions than any drawn pattern found to count.
    - **Reading.** The drawing did two jobs: it narrowed where the learner could rest, and it made rewriting a rule cost something. That
      cost was the memory. A base in the owner's sense has no drawing, so learning there needs another reason for a rule to stay put.
-   - **Next.** Which of the two jobs learning needs, and a source for it on a base with no drawing (sub-goal B158), awaiting a go-ahead
-     ([decision note](../research/UNDRAWN-LEARN-20261111-001/undrawn_learn.md)).
+   - **Next (taken by `LAW-RIGIDITY-20261112-001`, below).** Which of the two jobs learning needs, and a source for it on a base with no
+     drawing (sub-goal B158) ([decision note](../research/UNDRAWN-LEARN-20261111-001/undrawn_learn.md)).
+
+   **2026-11-12: a list of rules to settle on, and a reason to keep one** (`LAW-RIGIDITY-20261112-001`).
+   - **The question.** Sub-goal B158: the drawing did two jobs. It narrowed where the learner may settle, and it made rewriting a rule cost
+     something. Which does learning need, and can a base with no drawing supply it?
+   - **Computed, one copy.** Allowed to settle only where the drawing allows, but feeling no more of the drawing than that, the learner
+     found the count every time and kept it 4 times in 10. When its repairs could only change its state, never its rules, it kept every
+     write. Finding needs the list; keeping needs the reason.
+   - **Computed, a base no drawing fits.** A rule needs only the knots: a rule's signs add up to some value around every shortest cyclic
+     sequence of knots and distinctions, here two knots sharing two distinctions. Asking for 0 everywhere left the 6-distinction base two rules to
+     settle on, one of them counting, and the learner found and kept the count every time, 30 writes of 30. The reason to keep it was
+     still ours (repairs change only the state).
+   - **Exact.** The same request makes counting impossible on the drawn copy, where every counting rule adds up to 1 around those sequences;
+     asking for 1 leaves the undrawn base nothing to settle on. The knots alone did not choose one request for both.
+   - **Next.** A reason to keep a rule that comes from the knots too: counting each sequence that adds up wrong (sub-goal B160), awaiting a
+     go-ahead ([decision note](../research/LAW-RIGIDITY-20261112-001/law_rigidity.md)).
 
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?

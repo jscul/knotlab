@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TWO-BIT-ROWS-20261112-001A-E001",
+ "ticket": "TWO-BIT-ROWS-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "The fewest NAE knots that make a harmony or a counter with two distinctions per position, flat and hopping reach, and their weight under short descriptions.",
+ "definitions": {"variants": "flat (old i-1, i, i+1; new i-1, i) and hop (old i, old floor(i/2); new i-1, i), two distinctions per position", "rules": "all with 1-2 knots; 4,000 per variant with 3-30 knots drawn by the code", "classes": "constant; eventually constant; harmony (p 2-10 from a <= 20); unexplained"},
+ "public_inputs": {"code": "census.py (sha256 b8cc383676af0ccd876580b4f61a19b1a8e9d3228c831dedc75246f712b1e05b) beside this file; pysat.", "run": "census.py --all V W 8 for V in flat, hop and W in 0-7; --sample V W 500 for W in 0-7; then --summary, from the repository root."},
+ "forbidden_inputs": ["Changing the variants, rules, readings, classes, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Rules with a harmony or an unexplained sequence; fewest knots; weight shares.",
+ "cheapest_meaningful_control": "ROW-NEST's one-distinction rules (nothing keeps time).",
+ "predictions": {"P1": "at least one harmony", "P2": "no unexplained sequence"},
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report; pause.",
+ "runtime": "About six minutes on 16 workers."
+}

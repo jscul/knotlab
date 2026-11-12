@@ -19,8 +19,10 @@ undone, and then they are ordinary pins of the block folded by that symmetry; cy
   a distinction can become tied to its image, unequal to it, or the pattern ends.
 - **Exact on the range.** On 18 blocks whose symmetries move a pinned distinction: every N-twisted holonomy made pins vary or ended
   the pattern; balanced ones matched untwisted; the advisor's exact condition for living held in all 240 single-cycle cells, and living
-  did not depend on the cycle's length (2, 3 or 6 knots). One block's fold also tied two spare distinctions, a case the folded pins
-  do not predict.
+  did not depend on the cycle's length (2, 3 or 6 knots; this part is descriptive, from the follow-up after the run, because the
+  frozen twist sat off the cycle). **Unexplained:** one block's fold (knots (0,1,2), (0,1,3), (0,1,4), (2,3,4), (2,3,5), the symmetry
+  swapping 2 and 3) also ties its spare distinctions 4 and 5 in every copy, on every cycle. T3 speaks only of the distinctions the
+  block cannot spare, so this does not contradict it, but it shows the folded block does not give every tie, and no reason is known.
 - **Native folding on a ring.** On the one-shift ring, twisting every knot's middle member by an involution undoes on 6 distinctions
   and folds the pins on 7: whether the pins fold is decided by the ring's parity, a property of the whole pattern.
 - **A design flaw, disclosed.** The frozen placement put the twist on a member outside the cycle for the closed chains and the two
@@ -75,3 +77,32 @@ loop is, and what it locks is just the block folded onto itself.
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained, with G8; no goal change). **Assumptions:** A75 unchanged.
 **Basket:** #1, #2 recorded; endless blocks carried from `SUBST-NEST-20261112-001` (#3). **Advisor:** consulted once before the freeze
 (T1 to T3, the exact living condition, the ring parity, the classes).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 09:00 UTC (edited a minute later to correct its count of corrections:
+"seven corrections in all (one Narrowing, the rest Not a block)" became "seven fixes, logged as six corrections: one Narrowing and five
+Not a block"), verbatim as edited:
+
+> Done: twisted pins, a short result, as expected. The write-up is research/TWIST-PIN-20261112-001/twist_pin.md, and the referee is pending.
+>
+> • **A fold is the block folded by a loop's symmetry (proved).** Let the ties between copies pass through symmetries of the block. Then a locked value that travels around a loop of the pattern can come back renamed. If no loop leaves a symmetry, the twist undoes copy by copy. Otherwise the pins are the block's own, folded by the loops' symmetries: a position becomes tied to its image, or unequal to it, or the pattern ends.
+> • **Loop length doesn't matter; parity can (exact, 18 blocks).** Living came out the same on loops of 2, 3 and 6 knots for all 60 block-and-symmetry pairs. On a native one-shift ring, a swap twist undoes on 6 distinctions and folds on 7.
+> • **A flaw I'm disclosing.** My frozen design put the twist off the loop in some test patterns, so those cells only tested the null. I answered the length question after the run, with the twist placed on the loop.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — twisted pins | **Status:** Successful, referee pending | settled by definition; the one open piece (loop length) answered: no effect |
+> | Local direction — nesting | Continue | endless blocks join both readings of your question |
+> | Broader exploration — G17's census | Known alternatives | random patterns' jumps; folding among random bases |
+> | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | folds are the block folded by a loop's symmetry |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Endless blocks | 2/3 — Substantial | 2/3 — Testable | substitute a harmony for each distinction, bound by its own kinds → pins along both shifts, or none | Selected · awaiting go-ahead |
+> | 2 | Folds beyond the quotient | 1/3 — Incremental | 3/3 — Ready | find every block whose fold also ties spare positions (one found) → a rule, or that block alone | Alternative · deferred |
+>
+> **Corrections:** none this epic. Separately, I folded in the referee's verdicts on the last three epics: ~~seven corrections in all (one Narrowing, the rest Not a block)~~ [Edit: seven fixes, logged as six corrections: one Narrowing and five Not a block], each reported earlier. **Goals:** G17 checkpoint, no goal change. **Assumptions:** A75 unchanged. **Basket:** #1, #2 recorded. **Advisor:** consulted once before the freeze.
+

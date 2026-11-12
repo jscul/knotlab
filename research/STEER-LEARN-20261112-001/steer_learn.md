@@ -82,3 +82,7 @@ tips cost more than they saved. What the learner finds quickly is what its own w
 **Goals:** G15 checkpoint (obstruction learned, with G16); sub-goal B165 taken; sub-goal B168 and backlog B169 added.
 **Assumptions:** none new or changed.
 **Basket:** B168 (selected, awaiting a go-ahead), B169, B166, B159, B162, B157, B154, B155, B156, B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-12 (09:21 UTC). Its findings, word for word in substance: none of three steering rules (WalkSAT-style break counts, clause weighting, two-sided contrastive acceptance) finds the count faster than blind search over the laws at rest, every check charged (blind median 6; learners 19 to 1,760); counting world probes alone none beat the unchanged learner; with 64 laws at rest most runs did not find the count; every learner found the swap target faster than chance (about 6 against 11), a bias of the walk; the rules are known heuristics, that none steers this learner is new as far as found; the pipe fix in track.py and directions.py (0d64f88ad); referee handed to the referee thread, the next step not depending on it; the two tables as above; Corrections: none; Goals: G15 checkpoint, sub-goal B165 taken, sub-goal B168 and backlog B169 added; Assumptions: none; Basket: B168 (selected), B169, B166, B159, B162, B157, B154, B155, B156, B150, B151, B130. Holding for a go-ahead on B168.

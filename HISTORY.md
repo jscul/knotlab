@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: influence through hidden copies, confirmed by its referee
+
+- `HIDDEN-COPY-20261112-001` was confirmed: the certificate that every self-map-small case reached is essentially unary is sound, the
+  mod-3 construction follows from the Galois correspondence, and 102 of 318 is exact on the full lattice of invariant partitions. One
+  wording fix: that single-orbit harmonies have only symmetries and constants as self-maps, and most multi-orbit ones have more,
+  holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
+- Unchanged: every count and the frozen verdict.
+
 ## 12 November 2026: reading the end from the age profile, confirmed by its referee
 
 - The test of whether a growing pattern's end can be read from its age profile (`PREFIX-END-20261112-001`) was confirmed: every growth

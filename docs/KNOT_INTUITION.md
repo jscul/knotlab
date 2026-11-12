@@ -3296,7 +3296,7 @@ So holes come in two kinds:
      equations alone, 14% need the harmony's own states too, and 76% need the not-all-equal stitches; 38% are beyond checking knots
      one at a time ([decision note](../research/PARITY-SURVIVE-20261112-001/parity_survive.md)).
 
-   **2026-11-12: influence through hidden copies** (`HIDDEN-COPY-20261112-001`; referee pending).
+   **2026-11-12: influence through hidden copies** (`HIDDEN-COPY-20261112-001`; refereed, confirmed).
    - **Never parity; mod 3 in principle.** Copies of a harmony tied by not-all-equal stitches, some hidden, can never build a parity
      tie (all copies equal always fits). By known algebra (Pálfy; the Galois correspondence), harmonies whose states split into three
      symmetric classes can build "all equal or all different" on the classes, Ledrappier's law over Z₃ (102 of 318 cases reached), but

@@ -2,7 +2,8 @@
 
 Epic `HIDDEN-COPY-20261112-001` (the open route of `LINE-LOCK-R1`; G17 with G8; program mathematics, group arithmetic), 2026-11-12.
 Pre-registered in [preregistration.md](preregistration.md), frozen in commit `44e339263`. Proof family:
-`proofs/HIDDEN-COPY-20261112-001A/`. **Referee pending.** The last epic of this line for now: the owner asked to curb token use, and the
+`proofs/HIDDEN-COPY-20261112-001A/`. **Refereed: confirmed, one wording note** ([referee R1](referee-R1/report.md); folded in below
+and logged in `docs/CORRECTIONS.md`). The last epic of this line for now: the owner asked to curb token use, and the
 coordinator asked this thread to close and stop.
 
 ## The question
@@ -16,8 +17,9 @@ the kind of law behind Ledrappier-type influence, and how common is that?
 
 - **Settled by definition.** A gadget of stitched copies always allows all its copies equal, so it can never make flip-blind parity. A78's
   parity gadget is built from bare not-all-equal knots on single distinctions, which is a different object.
-- **Frozen census.** 17 of the 40 harmonies were reached before the cap, over 1,001 kind sets. For single-orbit harmonies, the only
-  self-maps of the states keeping the stitch are symmetries and constants (E-small); most multi-orbit harmonies have more (E-large).
+- **Frozen census.** The cap stopped it after 17 of the 40 harmonies, in the order run, over 1,001 kind sets; the other 23 are
+  unclassified. Among the 17 reached, for the single-orbit harmonies the only self-maps of the states keeping the stitch are
+  symmetries and constants (E-small); most multi-orbit ones have more (E-large).
   No E-small case has the three symmetry orbits the frozen construction needed. None of 486,000 small gadgets (at most two hidden
   copies, at most three stitches) gives an additive readout, while 2 of 54 random relations of the same size do. **The frozen failure
   criterion is met.**
@@ -35,9 +37,9 @@ the kind of law behind Ledrappier-type influence, and how common is that?
 | Claim | Evidence class |
 | --- | --- |
 | Stitched-copy gadgets never give flip-blind parity | proved (definitional) |
-| E-small for single-orbit harmonies, E-large mostly for multi-orbit ones (17 harmonies, 1,001 kind sets) | exact (frozen; capped) |
+| Among the 17 harmonies the cap reached (in run order; 1,001 kind sets), E-small for the single-orbit ones, E-large mostly for the multi-orbit ones | exact (frozen; capped) |
 | No factor-permutive relation among 486,000 small gadgets; 2 of 54 random baselines have one | exact (frozen) |
-| Every E-small case essentially unary; three invariant classes give a mod-3 factor-permutive gadget relation (102 of 318) | after the run, by known theorems (Pálfy; Geiger; Bodnarchuk and co-authors); referee to check |
+| Every E-small case essentially unary; three invariant classes give a mod-3 factor-permutive gadget relation (102 of 318) | after the run, by known theorems (Pálfy; Jablonskij; Geiger; Bodnarchuk and co-authors); confirmed by the referee (102 exact on the full lattice) |
 
 ## Against the pre-registration
 
@@ -50,7 +52,8 @@ down once after a run that was too slow; all disclosed in the proof.
 
 ## Known mathematics
 
-Pálfy (1984) on permutational algebras; Geiger (1968) and Bodnarchuk, Kaluzhnin, Kotov and Romov (1969) on the Galois correspondence;
+Pálfy (1984) on permutational algebras; Jablonskij's lemma (with constants, an essential operation of two or more variables gives
+an essential binary one), the referee's credit for the elementary step; Geiger (1968) and Bodnarchuk, Kaluzhnin, Kotov and Romov (1969) on the Galois correspondence;
 Ledrappier's three-dot law and its mod-3 analogue; Schaefer for bare not-all-equal. The algebra is not new; the classification of the
 harmonies and the census are new data.
 
@@ -68,7 +71,12 @@ A70 and A78 used (A78's scope is noted in its history); none added.
 
 ## Corrections
 
-None.
+After the referee (R1, confirmed), one entry, Not a block, logged in `docs/CORRECTIONS.md` and knotlab's HISTORY.md: "E-small is
+common for single-orbit harmonies and rare for multi-orbit ones" holds for the 17 harmonies the capped census reached, in the order
+run, not for the 40; the note now says so, and the same sentence in the proof's "What this establishes" (immutable) is read with
+that scope. The referee also confirmed that all 318 E-small pairs are certified without the binary search (145 by |W| not a prime
+power, 140 by a single |W|-cycle, 33 by an intransitive Aut), so the binary part's relaunch does not bear on the result. Before it:
+none.
 
 ## In the owner's words
 

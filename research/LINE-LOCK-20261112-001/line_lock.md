@@ -107,3 +107,31 @@ place free to flip, and repeating patterns have none. Parity knots can, which is
 **Assumptions:** A70, A75, A77 used; none added. **Basket:** #2, #3 recorded; #1 is `SHIFT-LOCK-20261112-001` #2. **Advisor:** consulted
 twice: before the freeze (it repaired the criterion, gave the two-constant-fibres lemma and designed the base-16 test) and on the new
 words.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 12:30 UTC, verbatim:
+
+> Done: lines in the increments. The write-up is research/LINE-LOCK-20261112-001/line_lock.md. The referee is pending.
+>
+> • **The theorem (proved).** A harmony's stitch can't contain a permutive sub-stitch, that is, triples where any two members decide the third. If it did, the members' bits would be forced constant and opposite at some place. That place could then be flipped once, giving a state that never repeats, and a harmony has none. So no harmony at any period carries the additive automaton that Ledrappier-type influence needs. The odd harmonies 61, 73 and 193 are covered by the proof without a run.
+> • **Lagged stitches too (exact).** I checked all 187 orbits of 73 harmonies (span up to 8 at every period, plus the 7 odd step sets). None holds a coset with a ratio part, so no lagged stitch carries one either. One size past, 32 more harmonies of span 9 show the same.
+> • **What it means.** The two-way patterns these harmonies make never spread influence the way Ledrappier's law does. That needs a permutive knot like parity, and the not-all-equal law on repeating patterns can't supply one. Prior work: Ledrappier, Kitchens–Schmidt, and Salo's three-point permutive subshifts. Neither the advisor nor I has seen the lemma stated before, so novelty is pending the referee's search.
+> • **Test for the knots-alone thread (frozen, theirs to run).** On base 16, for each travelling pattern not certified up to period 8, list the repeats up to 24 × 24 (sheared ones included) that certify it. My reading predicts the list is non-empty and fixed by a divisibility rule, the same for every pattern with the same travel vector. It also predicts that some local feature has an equal count on parallel rows. It's refuted if nothing certifies to 24 × 24, if every size past a threshold works, or if the counts vary. A wrap-around overlap check is the rival.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — lines in the increments | **Status:** Successful, referee pending | proved for unlagged stitches; none for lagged ones on 105 harmonies |
+> | Local direction — two-shift arrangements of harmonies | Exhausted for additive influence | the theorem closes it; the mean-step rule is still unproved |
+> | Broader exploration — G17's census | Known alternatives | a parity knot among not-all-equal copies; the travelling bases |
+> | Long-term goal — G17 Typical and rare meeting patterns | Obstruction learned | stitched harmonies' influence stays tied to cycles |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Prove the mean-step rule (last epic's #2) | 2/3 — Substantial | 3/3 — Ready | for 0011 + 01, every state is a lifted phase and every allowed pair of total steps is realised → its lock set at every size | Selected · awaiting go-ahead |
+> | 2 | A parity knot among stitched copies | 2/3 — Substantial | 2/3 — Testable | one parity knot shape in a two-shift arrangement of not-all-equal copies → Ledrappier's arithmetic, or frozen | Alternative · deferred |
+> | 3 | Permutive sub-stitches across orbits or after blocking | 1/3 — Incremental | 3/3 — Ready | extend the census → none, or one | Alternative · deferred |
+>
+> **Corrections:** one, Not a block. I replaced words for a drawn space in the last epic's record ("tilings", "slope polygon") with "lifted phases" and "mean-step bounds", and the literature's names are given once. **Goals:** G17 checkpoint (obstruction learned), no goal change. **Assumptions:** none added. **Basket:** #2 and #3 recorded; #1 is the last epic's #2. **Advisor:** consulted twice. Before the freeze it repaired my criterion, supplied the lemma, and designed the base-16 test. Then it checked the new words.

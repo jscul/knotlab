@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TRAVEL-READ-20261112-001A-E001",
+ "ticket": "TRAVEL-READ-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On the certified travelling bases of COMMON-FOLD-20261112-001A-E001 (r = 3 to 6), how many independent travelling directions does each have, and how does the least window bond to far distinctions grow across the shift (rank 1) or around the origin (rank 2)?",
+ "definitions": {
+  "samples": "every base classed travels at r = 3..6 in main.json (sha256 7efa22a616b0625323fbd13ac37bb1d17a76ca7bbb15cfabc8fccfbe2ab2a1f0)",
+  "dirs": "certified travelling along each of the ten census shifts (A of 2..4 cells in [0,1] x [0,2]); directions reduced to primitive; rank; common pattern",
+  "cross": "rank 1: b(alpha, y) least window bond with the origin and (alpha, y) in the frame, one cross-section (|S| <= 5; alpha = 10, y = +-2..+-6; alpha = 14, y = +-3) and two cross-sections (|S| <= 4; alpha = 10, y = +-2..+-4); certified when parts are carried by frame-aligned torus states",
+  "rings": "rank 2: least window bond (|S| <= 4 in the 3 x 3 box of frame cells) to targets m t1' + n t2' on the rings max(|m|,|n|) = 3 and 6",
+  "flat / line / open": "rank-1 base: flat when b(10,+-6) - b(10,+-2) <= 1 wherever both defined (one cross-section) and some direction defined to 6; line when >= 2 in some direction; else open"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 c59ca676b7b91cf923efcd1293d099de9bdf30841643f9323741505ef4f6b2ca) beside this file; it imports COMMON-FOLD-20261112-001A-E001's census.py (sha256 6ad9de8183fc51a3920dd40b93476c89c5f96fbc13dfaf8458ad345dcd981523); pysat; 6 workers",
+  "run": "--part control, then --part dirs, then --part cross and --part rings; outputs in artifacts/TRAVEL-READ-20261112-001A/TRAVEL-READ-20261112-001A-E001_law_reading/"
+ },
+ "forbidden_inputs": [
+  "Changing samples, families, windows, tori, targets or predictions after seeing results"
+ ],
+ "primary_observable": "Rank distribution; per rank-1 base the class flat / line / open and b values; per rank-2 base the ring statistics",
+ "cheapest_meaningful_control": "Base 16 (part control), whose profile is a theorem",
+ "predictions": {
+  "T1": "rank 2 >= 40% (Wilson lower bound >= 30%) at r = 4, 5 together; rank 1 >= 20%",
+  "T2": "among decided rank-1 bases, flat >= 50% and line <= 20%",
+  "T3": "b(14, +-3) = b(10, +-3) wherever both defined, in >= 90% of cases",
+  "T4": "for >= 2/3 of rank-2 bases, >= 80% of ring-6 targets reached and max ring-6 b <= max ring-3 b",
+  "validity": "control holds; <= 20% of bases dropped at the 1,200 s cap"
+ },
+ "decision_rules": {
+  "T1-T4 hold": "typical travelling bases read zero dimensions within the measured range; base 16's line is rare",
+  "T2 fails with many lines": "base 16's line is common among rank-1 bases"
+ },
+ "stop_rule": "One run of each part; hand-off to the referee thread.",
+ "runtime": "About 10 to 20 minutes on 6 workers; each base saved as it finishes; cap 1,200 s per base; registered in docs/LONG_RUNNING.md."
+}

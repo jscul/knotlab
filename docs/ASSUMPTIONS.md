@@ -1790,7 +1790,7 @@ evidence: results and their status come from the records each entry links.
   never changes a sign of the law. The learner still changes signs while it learns. This is a rule supplied by us, not a property of the
   base. The canonical K1–K3 test is unchanged.
 - **Why.** `LAW-RIGIDITY-20261112-001` found, on one copy of the drawn knot pattern (2, 0, 4), that a learner resting only where the faces
-  allow finds the count in 10 of 10 runs but holds it in only 5 of 10, because its repair re-signs knots; with this rule all 30 writes held.
+  allow finds the count in 10 of 10 runs but holds it in only 4 of 10, because its repair re-signs knots; with this rule all 30 writes held.
   On a base with no drawing nothing makes a sign change cost more than a flip, so the rule stands in for the drawing's rigidity until a
   native source is found. The alternative is a repair free to re-sign, as before.
 - **Rests on it.** `LAW-RIGIDITY-20261112-001`'s stage 2 (native rest sets on one copy and on a base with no drawing): with this rule a
@@ -1799,4 +1799,5 @@ evidence: results and their status come from the records each entry links.
   change cost more than a flip near rest, or a learner whose signs change on a slower clock for a stated native reason; if it holds as well,
   this rule is unneeded.
 - **History.**
+  - 2026-11-12 · "Why" corrected: R held the count in 4 of 10 runs, not 5 (a miscount when the entry was written; Not a block).
   - 2026-11-12 · Added by `LAW-RIGIDITY-20261112-001`.

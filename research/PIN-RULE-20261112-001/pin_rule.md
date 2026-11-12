@@ -105,3 +105,31 @@ from place to place, the ties would need a twist.
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained, with G8; no goal change). **Assumptions:** A75 unchanged.
 **Basket:** #1 to #3 recorded; SUBST-NEST #3 (endless blocks) carried as #2. **Advisor:** consulted once, cold, on the proof (correct;
 it supplied the restatement of spare, the general uniformity argument and the twisted binding).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 08:39 UTC, verbatim:
+
+> Done. The pinning rule is now a theorem, and it ties back to the harmonies. The write-up is research/PIN-RULE-20261112-001/pin_rule.md. The referee is pending with the background referee thread.
+>
+> • **The proof is four lines.** Suppose two knotted copies disagree at some distinction of the block. Then the third copy's state shows the block could spare that distinction. So nesting pins exactly what the block can't spare, and it pins it by equality across every connected part of the pattern. The advisor checked it cold, and a frozen check on all 387 blocks found no exception.
+> • **"Spare" means "can flip unseen."** A distinction is spare exactly when some state of the block survives flipping that distinction alone. That is the same idea that decided which periods harmonies can have. So for odd lengths, **a harmony is exactly a block that, nested, locks every position**: the 61, 73 and 193 harmonies are such blocks.
+> • **Pins never vary.** If the binding treats all copies alike, a pin is always an equality: the same value everywhere it reaches. The reach works like a wire, one equality per knot chained along the pattern.
+> • **What's built in, plainly.** The binding spreads the block's own knots across copies, so equal copies always fit and the reach is just connectivity. What isn't built in: no knot ever states the equality directly, and which positions get locked depends on the block alone.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — prove the pinning rule; pins that vary | **Status:** Successful, referee pending | rule proved; pins shown uniform under native bindings |
+> | Local direction — nesting | Continue | twisted bindings are the one place pins could vary |
+> | Broader exploration — G17's census | Known alternatives | random patterns' jumps; folding among random bases (knots alone) |
+> | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | nesting's influence characterised exactly, and joined to the harmonies |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Twisted pins | 2/3 — Substantial | 2/3 — Testable | bind one slot through a symmetry of the block; measure whether pins become twists that depend on the cycles they go around → pins that vary, or a proof they reduce to uniform ones | Selected · awaiting go-ahead |
+> | 2 | Endless blocks | 2/3 — Substantial | 2/3 — Testable | substitute a harmony for each distinction, bound by its own kinds → pins along both shifts, or none | Alternative · deferred |
+> | 3 | Harmonies as nested blocks | 1/3 — Incremental | 3/3 — Ready | nest the 61, 73 and 193 blocks into small patterns and count the states left → a count | Alternative · deferred |
+>
+> **Corrections:** none. **Goals:** G17 checkpoint (capability gained), no goal change. **Assumptions:** A75 unchanged (still waiting on your side-by-side or nested answer). **Basket:** #1 to #3 recorded. **Advisor:** consulted once, cold, on the proof. It found it correct and suggested the "flip alone" restatement and the twisted binding in #1.

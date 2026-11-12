@@ -127,3 +127,33 @@ A76 unchanged. **Basket:** #1 to #3 recorded. **Advisor:** consulted twice befor
 then the design, which it sent back: it widened the explained family to states repeating along a short step, gave the triple test and
 the Ledrappier control's sizes, and proposed "line knot / corner knot", which I replaced by unmixed and mixed knots because those are
 words for a drawn space).
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 12:20 UTC, verbatim:
+
+> Done: locks across two shifts. The write-up is research/SHIFT-LOCK-20261112-001/shift_lock.md. The referee is pending.
+>
+> • **The rings first.** The referee already proved the ring rule at every length, so I credited it and didn't redo it.
+> • **Straight ties add nothing (proved; 945 of 945).** Copies along two shifts, tied by knots three copies long in one direction, lock exactly when both rings lock.
+> • **The mixed knot makes two-way states (exact).** The mixed knot reaches one step each way, which is the shape of Ledrappier's law. 34 of the 45 harmonies then have states that repeat along no short step. In 78 cells, for 10 harmonies, those states are the only way the arrangement stays open. On squares up to 16 × 16 that never happens.
+> • **What those states are (after the run).** I checked them directly against the law, and none repeats along any step at all. For 0011 + 01 they are tilings, height functions with three cell types. A slope rule from the tiling literature decides every lock up to 16 × 16 (225 of 225).
+> • **They carry no influence (after the run).** Where only two-way states exist, no copy fixes any other copy. Locks that hold at every size still come from cycles: thin strips, and the arithmetic of short steps. Two-way influence at every size would need increments that hold a whole line, as Ledrappier's law has. None of the 45 harmonies has them, and the Ledrappier control shows the method would detect them.
+> • **Prior work.** Ledrappier (1978), Kitchens–Schmidt, Jeandel–Vanier, and tiling height functions with slope polygons (Thurston; Kenyon–Okounkov–Sheffield). I claim no novelty for any mechanism; only the harmonies' data are new.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — locks across two shifts | **Status:** Successful, referee pending | straight ties reduced to rings; two-way states found and checked; influence still cyclic |
+> | Local direction — two-shift arrangements | Continue | the slope rule is checked, not proved; no linear increments yet |
+> | Broader exploration — G17's census | Known alternatives | the knots-alone thread's travelling bases; random meeting patterns |
+> | Long-term goal — G17 Typical and rare meeting patterns | Capability gained | where two-way influence can and cannot come from |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | Influence beyond cycles | 3/3 — Major | 2/3 — Testable | compute the increments of the odd harmonies (61, 73, 193) and other knot shapes → a whole line inside, and Ledrappier-type lock sets, or none | Selected · awaiting go-ahead |
+> | 2 | Prove the slope rule | 2/3 — Substantial | 3/3 — Ready | every state of 0011 + 01 is a tiling and every polygon point is realised → its lock set at every size | Alternative · deferred |
+> | 3 | Window bonds as tilings | 2/3 — Substantial | 2/3 — Testable | test whether the knots-alone thread's window bonds are tilings with non-whole slopes | Alternative · deferred |
+>
+> **Corrections:** none. One slip in a progress message (I wrote 11 harmonies where it is 10) is edited in place. **Goals:** G17 checkpoint, no goal change. **Assumptions:** A77 added: a "walk around one cycle" is read as a state that repeats along a short step. **Basket:** #1 to #3 recorded. **Advisor:** consulted twice before the freeze. It widened the test family and supplied the Ledrappier sizes. It also proposed "line/corner knot"; I used "unmixed/mixed knot" instead, since the guide keeps words for a drawn space off our own objects.

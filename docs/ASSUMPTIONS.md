@@ -2042,3 +2042,7 @@ evidence: results and their status come from the records each entry links.
   build the gadget explicitly inside the harmony's format (its period and knot shape) and check it gives the same states.
 - **History.**
   - 2026-11-12 · Added by `PARITY-MIX-20261112-001`.
+  - 2026-11-12 · PARITY-MIX's referee (R1) confirmed the buildability with an explicit gadget (57 knots, 53 hidden distinctions per
+    place), built from bare not-all-equal knots on single distinctions; the advisor's NAE4 route builds 4-member not-all-equal, not
+    parity. Scope noted: it is not buildable from one-order stitches between whole harmony copies, since every gadget of stitched copies
+    allows all copies equal. Status unchanged.

@@ -30,6 +30,16 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   pre-registration said ([decision note](research/COMMON-FOLD-20261112-001/common_fold.md)).
 - Unchanged: every number and every frozen verdict.
 
+## 12 November 2026: parity among stitched copies, narrowed by its referee
+
+- `PARITY-MIX-20261112-001` found parity knots and not-all-equal stitches almost never coexisting among harmony copies. Its referee
+  reproduced every survival count and narrowed the headline. The rarity holds for the kind set used for each harmony: under 12 of the 96
+  kind sets presenting the same harmonies, the stitch holds parity triples and survival is 21.8% on 3 × 3. Fixing beyond local
+  propagation is restated against a fair baseline (both kinds of knot in 33 of 114 and 744 of 850 survivors), the fixing counts are
+  recounted on every placement, and A78's buildability is confirmed by an explicit gadget. The follow-up `PARITY-SURVIVE-20261112-001`
+  is narrowed the same way ([decision note](research/PARITY-MIX-20261112-001/parity_mix.md)).
+- Unchanged: the survival counts for the kind sets used.
+
 ## 12 November 2026: parity among stitched copies: "never on 8 × 8" narrowed
 
 - `PARITY-MIX-20261112-001` reported that mixed placements of parity knots keep no state "on 8 × 8". That is true of its samples only:

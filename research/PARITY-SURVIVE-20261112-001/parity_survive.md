@@ -13,13 +13,18 @@ when propagation can only use parity)?
 
 ## The answer
 
-**Survival is rare and decays with size; but where it happens, most of the influence goes through the not-all-equal stitches, not
-through parity's arithmetic.**
+**For one kind set per harmony (the census's), survival is rare and decays with size; where it happens, most of the influence goes
+through the not-all-equal stitches, not through parity's arithmetic. The rarity is a property of that kind set, not of the harmony
+(PARITY-MIX's referee, after this epic closed).**
 
-- **Lemma A (a census).** In all 8 harmonies that have flip-blind triples, the stitch allows none of them. No conceptual proof came
-  cheaply.
-- **Rare (exact per sample).** With each cell parity independently with probability ρ, under 1% of placements survive at every ρ from
-  1/8 to 7/8 for every n ≥ 6, and none of 11,497 samples at 7 × 7 to 9 × 9. Sizes divisible by 3 do best. The first-moment rate is
+- **Lemma A (a census, for the census's kind sets).** In all 8 harmonies that have flip-blind triples, the stitch allows none of them
+  under the kind set used. It is false in general: under 12 of the 96 kind sets of span at most 8 that present the 8 harmonies, the
+  stitch does allow flip-blind triples, and there survival is 21.8% on 3 × 3 and, for 0011 + 01 with kinds (1, 3) and (5, 6), 12.6% on
+  4 × 4 at every k (PARITY-MIX's referee).
+- **Rare for one kind set (exact per sample).** With each cell parity independently with probability ρ, under 1% of placements survive
+  at every ρ from 1/8 to 7/8 for every n ≥ 6, and none of 11,497 samples at 7 × 7 to 9 × 9, for the census's kind set of each harmony.
+  A claim about the harmony would need the kind set drawn as part of the weighting (uniformly among the kind sets that present it);
+  with 12 of 96 such kind sets mixing freely, that claim is not established and may fail. Sizes divisible by 3 do best. The first-moment rate is
   negative for almost every harmony and ρ, so survival falls at least like e^{λ n²}.
 - **No simple rule (exact on 3 × 3 and 4 × 4).** Neither frozen rule holds. Knowing only which class each copy is in is not enough: on
   705 placements the classes fit but no choice of states does. And one placement class survives with an isolated parity cell.
@@ -76,7 +81,8 @@ A70, A75, A77, A78 used; none added.
 
 ## Corrections
 
-None in this epic's claims. The word "star" for a copy's three knots, used in `PARITY-MIX-20261112-001`'s record, is the literature's
+After PARITY-MIX's referee (R1), one here, logged in `docs/CORRECTIONS.md`: the rarity and lemma A hold for one kind set per harmony,
+not for the harmony (Narrowing). Before it: none in this epic's claims. The word "star" for a copy's three knots, used in `PARITY-MIX-20261112-001`'s record, is the literature's
 word for a vertex's neighbourhood; replaced there by "a copy's three knots" and logged in `docs/CORRECTIONS.md` (Not a block).
 
 ## In the owner's words
@@ -99,7 +105,7 @@ not-all-equal ties, not through parity's own arithmetic. A third of it can't be 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Lagged free pairs (`LINE-LOCK-20261112-001` #R1) | 2/3 — Substantial | 2/3 — Testable | on the 20 harmonies whose lagged stitches hold free pairs, lagged mixed-knot arrangements at those lags: lock sets and copies tied to copy 0 against the unlagged ones → a new influence route, or none | Selected · awaiting go-ahead |
-| 2 | Why flip-blind triples are never stitch triples | 1/3 — Incremental | 3/3 — Ready | a proof for every harmony, or one where they meet | Alternative · deferred |
+| 2 | Why flip-blind triples are never stitch triples | 1/3 — Incremental | 3/3 — Ready | a proof for every harmony, or one where they meet | Dropped: false in general (12 of 96 kind sets) |
 
 **Corrections:** one word correction in `PARITY-MIX-20261112-001`'s record (Not a block). **Goals:** G17 checkpoint (obstruction
 learned, with G8; no goal change). **Assumptions:** A70, A75, A77, A78 used; none added. **Basket:** #2 recorded; #1 is

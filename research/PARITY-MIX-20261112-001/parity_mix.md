@@ -2,7 +2,8 @@
 
 Epic `PARITY-MIX-20261112-001` (`LINE-LOCK-20261112-001` direction 2, chosen by the coordinator; G17 with G8; program mathematics,
 group arithmetic), 2026-11-12. Pre-registered in [preregistration.md](preregistration.md), frozen in commit `a29eb99c8`. Proof family:
-`proofs/PARITY-MIX-20261112-001A/`. **Referee pending.**
+`proofs/PARITY-MIX-20261112-001A/`. **Refereed: confirmed with fixes, headline narrowed** ([referee R1](referee-R1/report.md); fixes folded
+in below and logged in `docs/CORRECTIONS.md`).
 
 ## The question
 
@@ -12,8 +13,9 @@ tried: make some of the mixed knots flip-blind parity knots (placewise sum all 0
 
 ## The answer
 
-**Parity knots and not-all-equal stitches almost never coexist, so the change is rare; where they do coexist, the whole passes
-influence further than any knot does.**
+**For the census's kind set of each harmony, parity knots and not-all-equal stitches almost never coexist, so the change is rare
+there; under other kind sets that present the same harmonies it is not rare (the referee). Where they coexist, the whole passes
+influence further than any knot does, mostly through both kinds of knot together.**
 
 - **Settled by definition (stated before the run).** A parity knot forbids its copies from being all equal; with parity everywhere,
   the arrangement is Ledrappier's law on the differences of places, with states only at Ledrappier's sizes; a parity knot with two known
@@ -24,12 +26,18 @@ influence further than any knot does.**
   the placements on 3 × 3, 0.16% on 4 × 4, 0.34% of the samples on 6 × 6 and none of the samples on 8 × 8 (survivors exist on 8 × 8:
   every 4 × 4 survivor repeated twice each way is one; and the 6 × 6 samples weight every k equally, unlike the exhaustive 3 × 3 and
   4 × 4, so the rates are not a decay with size). A scattering of parity knots ends the
-  arrangement. One reason, after the run: no flip-blind triple is ever a triple of the not-all-equal stitch, in all 8 harmonies.
-- **Beyond definition, where it survives (exact).** In 69 of the 114 surviving placements on 3 × 3 and 806 of the 850 on 4 × 4, count 0
-  fixes a count that local propagation from count 0 does not reach, and in 24 and 646 it fixes every count. So the frozen failure
-  criterion (nothing beyond propagation) is not met: the harmony's states and the knots together reach further than the knots one by
-  one.
-- **Not typical at any mixed density.** Full fixing reaches at most 3.6% of the placements at any mixed k, and none in the larger
+  arrangement. After the run: no flip-blind triple is a triple of the not-all-equal stitch, in all 8 harmonies, **for the census's
+  kind sets**; for 12 of the 96 kind sets of span at most 8 that present the 8 harmonies it fails (0011 + 01 with kinds (1, 3) and
+  (5, 6): the triple 1100, 1001, 0101), and under those survival is 21.8% on 3 × 3, and 12.6% on 4 × 4 at every k from 1 to 12 for the
+  example, one parity knot surviving (the referee). Rarity is a property of a presentation, not of the harmony.
+- **Beyond definition, where it survives (exact; recounted on every placement by the referee).** In 69 of the 114 surviving
+  placements on 3 × 3 and 832 of the 850 on 4 × 4, count 0 fixes a count that the frozen propagation does not reach; full fixing in 39
+  and 632. That propagation never passes a stitch for these harmonies, so against a fair baseline (the referee): the fixing needs both
+  kinds of knot in 33 of 114 and 744 of 850 survivors (parity's own linear algebra in 15 and 48, parity with the harmony's states in 21
+  and 40, stitches alone in none), and stays beyond arc consistency on classes in 15 and 454, all in the joint tier. So the frozen
+  failure criterion is not met, on fewer survivors than the first count said.
+- **Not typical at any mixed density.** Full fixing reaches at most 5.8% of the placements at any mixed k (the referee; 3.6% by the
+  class representatives), and none in the larger
   samples; only parity everywhere gives it as a rule, and there it is definitional.
 - **What survives (after the run).** On 3 × 3, three parity knots keep a state exactly when they are the three knots of one copy; over
   3 × 3 and 4 × 4, 606 of the 964 survivors are such sets of a copy's three knots joined, the parity knots surrounding whole copies.
@@ -40,8 +48,9 @@ influence further than any knot does.**
 | --- | --- |
 | Parity forbids all-equal copies; all-parity arrangements are Ledrappier's; propagation is local | proved by hand (definitional; with the advisor model) |
 | 8 of 45 harmonies have a flip-blind triple, all of subspace dimension 2 | exact (frozen) |
-| Mixed placements: survival 2.8% (3 × 3), 0.16% (4 × 4), 0.34% (6 × 6 samples), 0 (8 × 8 samples); counts fixed but unreached in 69 and 806 survivors | exact on 3 × 3 and 4 × 4, sampled beyond (frozen) |
-| No flip-blind triple is a stitch triple; copies' three knots as the usual survivors | after the run, descriptive |
+| Mixed placements: survival 2.8% (3 × 3), 0.16% (4 × 4), 0.34% (6 × 6 samples), 0 (8 × 8 samples), for one kind set per harmony; counts fixed but unreached in 69 and 832 survivors (every placement) | exact on 3 × 3 and 4 × 4, sampled beyond (frozen; refereed) |
+| Fixing against arc consistency: joint tier 33 and 744, beyond arc consistency 15 and 454 | computed by the referee |
+| No flip-blind triple is a stitch triple (census kind sets only; false for 12 of 96 kind sets); copies' three knots as the usual survivors | after the run, descriptive; refereed |
 
 ## Against the pre-registration
 
@@ -55,9 +64,10 @@ placements with k below nm, which also includes k = 0, where counts fixed but un
 ## The coordinator's question on the 3 × 3 surprise
 
 One parity knot among eight not-all-equal stitches on 3 × 3 leaves no state for any of the 8 harmonies. The referee's product lemma
-(`LINE-LOCK-R1`) does not explain it by itself, since one triple is not a permutive set. What does, in part (after the run): no
-flip-blind triple is a stitch triple, and in 3 of the 8 harmonies the eight stitches already force the ninth cell's triple into the
-stitch, so one parity knot is a contradiction; in the other 5 they do not, and the emptiness is computed, not explained.
+(`LINE-LOCK-R1`) does not explain it by itself, since one triple is not a permutive set. My after-run partial explanation (no
+flip-blind triple is a stitch triple, and in 3 harmonies the eight stitches force the ninth) is **not the reason**: one parity knot
+empties 3 × 3 under all 96 kind sets, including those whose stitch holds flip-blind triples (the referee). The emptiness stays
+computed, not explained.
 
 ## Known mathematics
 
@@ -73,7 +83,8 @@ counts fixed but unreached are new data; no mechanism is claimed new.
 - **For the owner's "globally influential".** A knot of the additive kind can pass influence through whole counts of copies, but it
   does not mix with the not-all-equal stitches of repeating patterns: scattered among them it ends the pattern. Where both survive,
   the whole reaches further than the knots one at a time, but only in rare placements in which the parity knots surround whole copies.
-  So globally influential folding of this kind is rare, not typical.
+  So globally influential folding of this kind is rare, not typical, for the kind set the census used; under some other kind sets
+  presenting the same harmonies, parity mixes far more often (the referee), so the rarity is not the harmony's.
 - **Next.** Whether a region of parity-bound copies inside a not-all-equal arrangement survives at every size and carries count 0's
   influence through it, the shape the survivors suggest.
 
@@ -83,7 +94,11 @@ A70, A75, A77 used; A78 added (a parity knot among copies read as flip-blind par
 
 ## Corrections
 
-None at the close. Later (logged in `docs/CORRECTIONS.md`, Not a block): the proof's "on 8 × 8 never" means none in the samples, since
+After the referee (R1), logged in `docs/CORRECTIONS.md` and knotlab's HISTORY.md: rarity holds for one kind set per harmony
+(Narrowing); "beyond local propagation" restated against a fair baseline (Narrowing); and, in one entry, the fixing counts on every
+placement, the 3 × 3 explanation not the reason, A78's route replaced by the referee's gadget (57 knots, 53 hidden distinctions per
+place, bare not-all-equal knots on single distinctions), the 8 × 8 samples as a bound on average survival only, and the failure
+criterion read at 1 ≤ k < nm (Not a block). Earlier: None at the close. Later (logged in `docs/CORRECTIONS.md`, Not a block): the proof's "on 8 × 8 never" means none in the samples, since
 every 4 × 4 survivor repeated is an 8 × 8 one; and the 6 × 6 and 8 × 8 rates come from samples with equal numbers at each k, a weighting
 different from the exhaustive 3 × 3 and 4 × 4, so the four rates are not a decay with size. And (Not a block) "stars of copies"
 named a copy's three knots with the literature's word for a vertex's neighbourhood; it now reads "a copy's three knots". (A progress message said 4 of 220 placements survived on 6 × 6; it is 6 of 1,760 across the 8 harmonies, edited in place.)
@@ -92,7 +107,8 @@ named a copy's three knots with the literature's word for a vertex's neighbourho
 
 Mixing a parity tie, the kind where any two copies decide the third, into a pattern of copies tied the not-all-equal way almost
 always breaks it: there is no state left. In the rare mixtures that survive, the parity ties wrap around whole copies, and then one
-line of copies decides lines that no single tie reaches. So that kind of global influence exists, but it is rare, not typical.
+line of copies decides lines that no single tie reaches. So that kind of global influence exists, but with the knot kinds used here
+it is rare; written with other knot kinds, the same patterns mix far more often.
 
 ## Position and next directions
 

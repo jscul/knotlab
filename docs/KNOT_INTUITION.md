@@ -3269,16 +3269,17 @@ So holes come in two kinds:
    - **What is not decided.** The stitch itself carries no additive law; whether arrangements of copies show Ledrappier-type influence
      another way, through hidden copies, is open ([decision note](../research/LINE-LOCK-20261112-001/line_lock.md)).
 
-   **2026-11-12: a parity knot among stitched copies** (`PARITY-MIX-20261112-001`; referee pending).
-   - **Rare (exact on small repeats, sampled beyond).** Only 8 of 45 harmonies can hold a flip-blind parity knot at all (a knot our
-     knots can build, A78). With some knots parity and the rest not-all-equal stitches, a state survives in 2.8% of the placements on
-     3 × 3, 0.16% on 4 × 4, and none of the 8 × 8 samples: a scattering of parity knots ends the arrangement. No flip-blind triple is
-     ever a stitch triple (after the run).
-   - **Beyond any one knot where it survives.** In most surviving placements one count of copies fixes counts that no local propagation
-     reaches; the survivors mostly have their parity knots surrounding whole copies. Global influence of the additive kind is rare
+   **2026-11-12: a parity knot among stitched copies** (`PARITY-MIX-20261112-001`; refereed, confirmed with fixes, headline narrowed).
+   - **Rare for one kind set per harmony (exact on small repeats, sampled beyond).** Only 8 of 45 harmonies can hold a flip-blind parity
+     knot at all (a knot our knots can build, A78, now with the referee's explicit gadget). With some knots parity and the rest not-all-equal stitches, a state survives in 2.8% of the placements on
+     3 × 3, 0.16% on 4 × 4, and none of the 8 × 8 samples: a scattering of parity knots ends the arrangement. Under other kind sets
+     presenting the same harmonies (12 of 96), stitch and parity share triples and survival is 21.8% on 3 × 3: the rarity belongs to
+     the presentation, not the harmony (the referee).
+   - **Beyond any one knot where it survives.** In survivors, one count of copies fixes counts that need both kinds of knot together
+     (33 of 114 survivors on 3 × 3, 744 of 850 on 4 × 4), beyond arc consistency in 15 and 454; the survivors mostly have their parity knots surrounding whole copies. Global influence of the additive kind is rare
      among stitched copies, not typical ([decision note](../research/PARITY-MIX-20261112-001/parity_mix.md)).
 
-   **2026-11-12: which parity placements survive** (`PARITY-SURVIVE-20261112-001`; referee pending).
+   **2026-11-12: which parity placements survive** (`PARITY-SURVIVE-20261112-001`; referee pending; rarity narrowed to one kind set per harmony).
    - **Rare, and rarer with size (exact per sample).** With each knot a parity knot with probability ρ, under 1% of the placements keep
      a state for every n ≥ 6, and none of 11,497 samples at 7 × 7 to 9 × 9. No simple rule decides which survive.
    - **Through the stitches where they survive (exact on 3 × 3 and 4 × 4).** Of the counts one count fixes, 10% follow from the parity

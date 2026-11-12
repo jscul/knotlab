@@ -21,7 +21,9 @@ influence further than any knot does.**
 - **Which harmonies can hold one (exact).** 8 of the 45 harmonies have a flip-blind triple; the other 37 end at their first parity knot.
   All 8 are made with the orbit of 0011 or 00101101 and another orbit, and in each the largest subspace of its classes has dimension 2.
 - **Survival (exact on 3 × 3 and 4 × 4; sampled on 6 × 6 and 8 × 8).** With some but not all knots parity, a state survives in 2.8% of
-  the placements on 3 × 3, 0.16% on 4 × 4, 0.34% of the samples on 6 × 6 and none on 8 × 8. A scattering of parity knots ends the
+  the placements on 3 × 3, 0.16% on 4 × 4, 0.34% of the samples on 6 × 6 and none of the samples on 8 × 8 (survivors exist on 8 × 8:
+  every 4 × 4 survivor repeated twice each way is one; and the 6 × 6 samples weight every k equally, unlike the exhaustive 3 × 3 and
+  4 × 4, so the rates are not a decay with size). A scattering of parity knots ends the
   arrangement. One reason, after the run: no flip-blind triple is ever a triple of the not-all-equal stitch, in all 8 harmonies.
 - **Beyond definition, where it survives (exact).** In 69 of the 114 surviving placements on 3 × 3 and 806 of the 850 on 4 × 4, count 0
   fixes a count that local propagation from count 0 does not reach, and in 24 and 646 it fixes every count. So the frozen failure
@@ -81,7 +83,9 @@ A70, A75, A77 used; A78 added (a parity knot among copies read as flip-blind par
 
 ## Corrections
 
-None. (A progress message said 4 of 220 placements survived on 6 × 6; it is 6 of 1,760 across the 8 harmonies, edited in place.)
+None at the close. Later (logged in `docs/CORRECTIONS.md`, Not a block): the proof's "on 8 × 8 never" means none in the samples, since
+every 4 × 4 survivor repeated is an 8 × 8 one; and the 6 × 6 and 8 × 8 rates come from samples with equal numbers at each k, a weighting
+different from the exhaustive 3 × 3 and 4 × 4, so the four rates are not a decay with size. (A progress message said 4 of 220 placements survived on 6 × 6; it is 6 of 1,760 across the 8 harmonies, edited in place.)
 
 ## In the owner's words
 

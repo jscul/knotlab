@@ -22,6 +22,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   pre-registration said ([decision note](research/COMMON-FOLD-20261112-001/common_fold.md)).
 - Unchanged: every number and every frozen verdict.
 
+## 12 November 2026: parity among stitched copies: "never on 8 × 8" narrowed
+
+- `PARITY-MIX-20261112-001` reported that mixed placements of parity knots keep no state "on 8 × 8". That is true of its samples only:
+  every 4 × 4 survivor repeated twice each way survives on 8 × 8. Its rates by size also used two weightings (every placement on 3 × 3
+  and 4 × 4, equal numbers per parity count on 6 × 6 and 8 × 8), so they are not a decay with size
+  ([decision note](research/PARITY-MIX-20261112-001/parity_mix.md)).
+- Unchanged: every count.
+
 ## 12 November 2026: no additive automaton in a harmony's stitch, narrowed by its referee
 
 - `LINE-LOCK-20261112-001` proved that a harmony's stitch holds no permutive set of triples on one set of states. The referee confirmed

@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "ACROSS-FOLD-20261112-001B-E001",
+ "ticket": "ACROSS-FOLD-20261112-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Across the fold of base 16, is the ladder the least column-0 bond at far columns, do downward targets have none, and is there any bond of size at most 4 to (5,3) or (5,4)?",
+ "definitions": {
+  "M": "k in {5,8,11}, y in 0..10, least column-0 bond A u {(k,y)}, A containing row 0, rows in [min(0,y)-3, max(0,y)+3]; predicted size 4 (y <= 1) or floor((y+1)/2)+3 where k >= floor((y+1)/2)+1.",
+  "D": "y in {-3,-4,-5}, k in {5,8,11}: no column-0 bond up to size 7.",
+  "N": "targets (5,3), (5,4): no bond of size <= 4 with the other members in columns -1..6, rows -3..7.",
+  "bonds": "constrained by window SAT; free by states periodic in the row coordinate with period from the row span + 3 to 12 (exact transfer walks)."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 988a6fd449bb49363c040ce891484a0707255806c3991d2d6154331b21f1062f) beside this file; pysat; 8 workers.",
+  "run": "census.py from the repository root; output artifacts/ACROSS-FOLD-20261112-001B/ACROSS-FOLD-20261112-001B-E001_lower_bounds/census.json and census_log.txt."
+ },
+ "forbidden_inputs": [
+  "Changing targets, families, boxes, sizes or predictions after seeing results"
+ ],
+ "primary_observable": "The least column-0 bond size by row and column; downward absences; small general bonds.",
+ "cheapest_meaningful_control": "Rows 0 to 2, where FOLD's theorem gives size 4; the pilot at k = 5 and 8, disclosed.",
+ "predictions": {
+  "M": "as defined",
+  "D": "as defined",
+  "N": "as defined"
+ },
+ "decision_rules": {
+  "M, N hold": "Across the fold upward the law's distance grows one per two rows at far columns.",
+  "M or N fails": "A shorter way across; the next object.",
+  "D holds": "Downward targets unreached by column-0 sets to size 7."
+ },
+ "stop_rule": "One run; report and hold.",
+ "runtime": "About half an hour on 8 workers; registered; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

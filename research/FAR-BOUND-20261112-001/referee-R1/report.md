@@ -1,7 +1,7 @@
 # Referee report FAR-BOUND-R1: bounded at every distance?
 
-**Verdict: Confirmed with fixes. Ticket B's proof is confirmed, and ticket A's far-range reading is narrowed.** One completion run
-for question (ii) is still going (stress test pending; see section 4).
+**Verdict: Confirmed with fixes. Ticket B's proof is confirmed, and ticket A's far-range reading is narrowed.** The completion run
+for question (ii) has finished and is folded into section 4: it finds no growing base among the 8 dropped.
 
 - **Ticket B: confirmed.** I reran it with my own code and two different certificates, the proof's parameters and my own.
   - C1, C2 and C4 hold, and the representative argument is sound.
@@ -166,8 +166,20 @@ way the pattern is exploratory and after the run, as the note says.
 (85%). The 16 of 21 decided (76%) is not biased in any direction the data show. Dropping depends on the cost of the search, not on
 the outcome, as 24/3 shows.
 
-**Completion run, pending.** The 8 dropped bases are rerunning with the census's own code and a 5,400-second cap
-(`ref_far_dropped.py`, registered as FAR-BOUND-R1-cap). The result will be folded in here when it finishes.
+**The completion run (folded in after the first commit).** I reran the 8 dropped bases with the census's own code and a
+5,400-second cap (`ref_far_dropped.py`, FAR-BOUND-R1-cap), classified as in section 2.
+
+| Outcome | Bases |
+| --- | --- |
+| bounded | 9/4 |
+| certificates missing | 55/3, 79/6, 88/5, 128/4, 155/3 and 159/3 (certified shares 0.02 to 0.75) |
+| dropped again | 24/3, the proved base |
+
+None grows by 2. On every one of the seven decided bases, the window bonds stay within near + 1.
+
+So, with them, the split over 34 is 17 bounded, 4 or 5 growing (by the ranking of missing certificates), 11 or 12 with
+certificates missing, and 1 dropped. The dropped bases did not hide growth: they are mostly bases whose far bonds the strips cannot
+certify.
 
 ## 5. Not recomputed
 
@@ -197,4 +209,4 @@ the outcome, as 24/3 shows.
 | --- | --- | --- |
 | `ref_quadrants.py` | `result_quadrants.json` | ticket B: C1 to C4 under two certificates |
 | `ref_far_recount.py` | `result_recount.json` | F2 recounted, with the window check |
-| `ref_far_dropped.py` | `far_dropped/` | the completion run, pending |
+| `ref_far_dropped.py` | `far_dropped/` | the completion run: 1 bounded, 6 with certificates missing, 1 dropped again, none growing |

@@ -2272,8 +2272,11 @@ that earlier records used in two senses.
   "something like natural numbers" (11 November 2026; lesson 7.3), so the
   reading is one assumption about his word, not its only sense.
 - **Stitch.** A knot of one fixed kind, at every shift, holding distinctions
-  of two harmonies, such as one on (a_{i+s}, a_{i+t}, b_{i+u}); harmonies with
-  stitches are **stitched**. (They overlap instead when a_i and b_{i+s} are one
+  of two or three harmonies, such as one on (a_{i+s}, a_{i+t}, b_{i+u});
+  harmonies with stitches are **stitched**. A stitch whose members all sit at
+  the same place, such as (a_i, b_i, c_i), is a **stitch at one place**; one
+  whose members are moved by **shifts** s, t, u is a **shifted stitch**
+  (bases within bases, 12 November 2026). (They overlap instead when a_i and b_{i+s} are one
   shared distinction.) The **offset** of two orbits of periods p and q is the
   shift between their states counted modulo gcd(p, q), the literature's
   relative phase; a stitch keeps or removes each offset whole. The intuition:

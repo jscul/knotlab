@@ -912,14 +912,15 @@ Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-c
 **Open** · 2026-11-12
 
 John Cullen: "each boolean variable could be its own micro infinite series of
-logic, that's bound to others". Can a whole base, read through a declared open
-bit, stand in for one distinction of a larger base with the same law at the
-level above, at every level? Untested. Known nearby: not-all-equal adds only
-knots of its own kind where knots overlap, drawn pieces nest to any depth in
-one family, and towers of named patterns from one three-place law keep only
-parity.
+logic, that's bound to others". Tested one way (referee pending): each
+distinction an inner harmony, each outer knot a stitch of the inner harmonies
+at every place. Then the level above allows exactly the outer states, at every
+level, and never ends (proved: every outer state lifts); only the alternation
+0101… is one distinction exactly; forced values only multiply the seed's, and
+a drawn three-copy nesting forces nothing to level 7. Open: nesting by
+substitution, and influence that does not shrink with depth.
 
-Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
+Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
 
 ### The weak four-place kinds
 

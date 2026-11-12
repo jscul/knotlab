@@ -3152,6 +3152,22 @@ So holes come in two kinds:
      end nears, and not if they jump; `RANDOM-FATES-20261112-001` measures this. "Relativity" is an analogy only: bond distance is
      already relative, and shortcuts are where it parts from steps apart
      ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
+
+   **2026-11-12: bases within bases** (`BASES-WITHIN-20261112-001`, backlog B164; referee pending).
+   - **The question.** The owner: "each boolean variable could be its own micro infinite series of logic, that's bound to others",
+     and of overlapping, "like fractal ... globally influential". Read with A75: each distinction of an outer base becomes a
+     harmony, and each outer knot a stitch of those harmonies at every place. What does the level above read, does repeating
+     change anything, and how far does fixing one distinction reach as the nesting deepens?
+   - **The law above is the law below (proved).** Every outer state lifts (the advisor's mirror lift: each inner series is one
+     state or its mirror), so the nested base allows exactly the outer states, lives exactly when the outer base does, and keeps
+     doing so at every level. The only series that is one yes-or-no exactly is the alternation 0101…; every other carries a hidden
+     phase that multiplies the states (0011: 4, 16, 256 at levels 1 to 3), never a new constraint.
+   - **Nesting spreads no influence (proved; exact to level 7).** Forced values only multiply the seed's, so a seed that forces
+     nothing forces nothing at any depth; a drawn fractal of three copies sharing corners forces nothing to level 7 while its far
+     end doubles each level. A seed that forces (the Fano plane less a knot) reaches every depth, in a share that falls as (3/7)^k.
+   - **Shifts are where the inner phase matters, and they mostly loosen.** Stitching with shifts ended a living pattern only where
+     all four triples of four distinctions are knotted, and brought the contradictory Fano plane back to life almost always
+     ([decision note](../research/BASES-WITHIN-20261112-001/bases_within.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

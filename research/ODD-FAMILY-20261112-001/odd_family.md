@@ -140,3 +140,32 @@ line's basket held six untaken rows at payoff 2 (OWN-RELATION #1, HARMONY-ARITH 
 EVEN-PERIOD #2), none ahead of #1; HARMONY-ARITH #2 (harmonies along two shifts) now has this epic's three examples. **Advisor:**
 consulted before the freeze (predictions F1 to F5 and F7, the doubled-step family and the reading along two shifts) and once after
 the run (the lemma along one shift, the hand forcing at 61, the fitted rule, the pointer to locked problems), each checked here.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 06:27 UTC, verbatim:
+
+> Done. In the families I searched, the knot law's odd harmony periods up to 199 are 61, 73 and 193. None of them is below 61. What decides which primes is still open. The write-up is research/ODD-FAMILY-20261112-001/odd_family.md.
+>
+> • **Two new odd harmonies (proved, refereed twice).** At 73, the steps 1, 2, 27 and 54 allow 730 states (five repeating words, with their shifts and mirrors). At 193, six steps allow 386 states (one word). In both, no two states differ in one place, so every state repeats. Neither splits.
+> • **Nothing else in range (exact).** I tested 88,336 step sets at every odd period from 33 to 59 and every prime up to 199. The fresh-code referee recomputed all of them independently and got the same answer.
+> • **What they share.** In all three, the steps are unchanged when every position is multiplied by a fourth root of 1. So each period is a prime that is 1 more than a multiple of 4.
+> • **That doesn't explain it.** The same steps fail at 14 of the 16 such primes from 41 to 197. At 73, four of the five words aren't symmetric themselves. Both explanations I froze before the run failed their tests. That includes the advisor's near-threshold count, which was far off: 0 states at 53, but over 200,000 at 89.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — which odd periods the knot law makes, and why 61 | **Status:** Partially successful | 73 and 193 found and proved, families searched to 199; the explanation failed both frozen tests |
+> | Local direction — odd harmonies | Continue | one cheap search decides whether the fourth roots are necessary |
+> | Broader exploration — the count line | Known alternatives | harmonies along two shifts (now with three examples), antiperiodicity |
+> | Long-term goal — G8 From spacing to arithmetic and sets | Capability gained | the law's odd periods found so far are primes 1 mod 4 carrying a fourth root of 1 |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | A harmony without the fourth roots | 2/3 — Substantial | 3/3 — Ready | every five-step set with no symmetry beyond ±1 at the primes 61 to 89, plus a sample of six-step sets → one, or the symmetry is necessary in range | Selected · awaiting go-ahead |
+> | 2 | Which primes, for H ∪ 2H | 2/3 — Substantial | 3/3 — Ready | test the advisor's rule (exactly two symmetric words) at every prime 1 mod 4 up to 1000 → a rule, or its first failure | Alternative · deferred |
+> | 3 | The least odd period | 2/3 — Substantial | 2/3 — Testable | complete word search at 33, 35 and 39 → a smaller odd harmony, or 61 stands | Alternative · deferred |
+> | 4 | A proof for 61 without enumeration | 1/3 — Incremental | 2/3 — Testable | the advisor's hand forcing, case by case → a checkable proof | Alternative · deferred |
+>
+> **Corrections:** one, Not a block. The last epic said the fourth-root symmetry "holds" the 61 harmony in place, which is more than the evidence shows. It's narrowed and logged in docs/CORRECTIONS.md. **Goals:** G8 checkpoint (capability gained), no goal change. **Assumptions:** A70 used, unchanged. **Basket:** #1 to #4 recorded; nothing in the line's basket ranks above #1. **Advisor:** consulted before the freeze (most of the predictions) and after the run, where it hand-derived the 61 word and fitted the rule in #2. I checked both. The route measurement from the last epic is still running, and I'll fold it in when it lands.

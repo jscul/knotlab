@@ -123,6 +123,7 @@ evidence: results and their status come from the records each entry links.
 | [A66](#a66--copies-sharing-distinctions-keep-each-copys-own-drawn-faces) | Copies sharing distinctions keep each copy's own drawn faces | reading | Confirmed |
 | [A67](#a67--a-base-is-read-on-sets-of-at-most-three-distinctions) | A base is read on sets of at most three distinctions | scope | Assumed |
 | [A68](#a68--a-repair-flips-distinctions-only) | A repair flips distinctions only | reading | Assumed |
+| [A69](#a69--the-value-of-the-shortest-sums-is-supplied-per-base) | The value of the shortest sums is supplied per base | reading | Under challenge |
 
 ## Entries
 
@@ -1804,3 +1805,18 @@ evidence: results and their status come from the records each entry links.
     ([what does the drawing's work](../research/LAW-RIGIDITY-20261112-001/law_rigidity.md)).
   - 2026-11-12 · "Why" corrected: R held the count in 4 of 10 runs, not 5 (a miscount when the entry was written; Not a block).
   - 2026-11-12 · Added by `LAW-RIGIDITY-20261112-001`.
+
+### A69 · The value of the shortest sums is supplied per base
+
+**Under challenge** · 2026-11-12 · reading
+
+- **Statement.** In `LAW-RIGIDITY-20261112-001`'s stage 2 the learner rested only where the law's sum around every shortest cyclic
+  sequence of knots and distinctions takes one value, and that value was chosen by us for each base: 0 on the 6-distinction undrawn base,
+  1 on one copy of (2, 0, 4). The canonical K1–K3 test is unchanged.
+- **Why.** Each value was the only one of the two that left a counting law at rest on that base (exact); neither serves both.
+- **Rests on it.** `LAW-RIGIDITY-20261112-001`'s stage-2 runs (30 of 30 on each base).
+- **Challenge.** A value-free rule, the learner resting where all shortest sums are equal whatever the value
+  (`NATIVE-GRADE-20261112-001`); it leaves a counting law at rest on both bases (exact).
+- **History.**
+  - 2026-11-12 · Added, and put under challenge, by `NATIVE-GRADE-20261112-001` (recorded at the coordinator's request; the choice was
+    made in `LAW-RIGIDITY-20261112-001`).

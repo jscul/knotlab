@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "experiment_id": "COMMON-FOLD-20261112-001A-E001",
+ "ticket": "COMMON-FOLD-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under the weighting W(r) (the first r kinds of one uniform random order of the 171 knot kinds in [0,2] x [-2,2]), how often is a random periodic not-all-equal base tied along a shift, travelling (a pattern forcing its own translate, tied along none), or neither, for r = 1 to 8?",
+ "definitions": {
+  "W(r)": "sample i = 0..199: random.Random(50000 + i).sample(KINDS, 8); base at r = first r kinds",
+  "outcome": "contradiction: no state on the 15 x 19 window; base: a doubly periodic state for periods (P,0),(s,Q) as in census.py; else unsettled",
+  "tied along t": "window SAT: the value at the origin forces the value at t, t in SHIFTS",
+  "travels": "A of 2..4 cells of [0,1] x [0,2] holding (0,0), p on A, t in SHIFTS, sigma: p forces sigma(p) on A + t (window SAT); certified when p with sigma(p) on A+t is carried by a doubly periodic state and A is free (every pattern carried)",
+  "classes": "contradiction; tied (tied along a listed shift); travels (certified, tied along none); travels, uncertified; none found",
+  "sensitivity": "samples 0..49 at r = 2, 3, 4 with A in [0,2] x [0,2], twelve shifts, window 21 x 25"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 6ad9de8183fc51a3920dd40b93476c89c5f96fbc13dfaf8458ad345dcd981523) beside this file; pysat; 8 workers.",
+  "run": "census.py from the repository root (--part control, --part main, --part sens); output in artifacts/COMMON-FOLD-20261112-001A/COMMON-FOLD-20261112-001A-E001_periodic_influence/."
+ },
+ "forbidden_inputs": [
+  "Changing seeds, weightings, families, windows, sets or predictions after seeing results"
+ ],
+ "primary_observable": "Per r: counts and Wilson intervals of contradiction, base, unsettled; among bases tied, travels, travels uncertified, none found",
+ "cheapest_meaningful_control": "Base 16 (part control); r = 1",
+ "predictions": {
+  "A1": "r = 1: no base tied or travelling (0 of 200); r = 2: travels/bases Wilson upper bound < 10%",
+  "A2": "travels/bases largest at r = 4 or 5, point estimate >= 20%, Wilson lower bound >= 10% there",
+  "A3": "tied/bases >= 50% for r >= 6 (Wilson lower bound >= 40% at r = 6); travels/bases <= 20% at r = 7, 8",
+  "A4": "(tied + travels)/bases >= 70% at every r >= 6",
+  "A5": "contradiction/samples >= 40% at r = 8; never decreasing along prefixes (check)",
+  "A6": "sensitivity: travels/bases rises by at most 10 points at each of r = 2, 3, 4",
+  "control": "base 16 travels and is tied along no listed shift (check)"
+ },
+ "decision_rules": {
+  "A1-A4 hold": "travelling bases rare with few kinds, common in the middle, ties near contradiction; global influence typical with many kinds",
+  "A2 fails": "travelling bases rare at every r under W(r)",
+  "A6 fails": "rates limited by the search family; reported as such",
+  "unsettled > 20% at some r": "that r uninterpretable"
+ },
+ "stop_rule": "One run; report and hand off to the referee thread.",
+ "runtime": "About 10 to 30 minutes on 8 workers; registered in docs/LONG_RUNNING.md; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

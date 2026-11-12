@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "COMMON-FOLD-20261112-001B-E001",
+ "ticket": "COMMON-FOLD-20261112-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "On uniform growth U(n) (n = 100, 200, 400) and the tree control, how much of a base does the value of a co-knotted pair or a knot decide, how much of it is ties of its members, local propagation or search, and how does it spread in steps, at half, three quarters and the last base?",
+ "definitions": {
+  "samples": "20 runs each (growth seed 50000 + run, reading seed 60000 + run) from fates.py pinned by sha256",
+  "readings": "as in census.py: forced fraction, beyond ties, by propagation, reach, shell profile, for 20 pairs and 20 knots per base, the pattern forcing the most"
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 d0faa2e92693391250bac8f72c31effa850c871968b6fdb1f4cb918244af4219) beside this file; pysat; 8 workers. fates.py of RANDOM-FATES-20261112-001A-E001, sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35, imported read-only.",
+  "run": "census.py from the repository root (one run); output in artifacts/COMMON-FOLD-20261112-001B/COMMON-FOLD-20261112-001B-E001_finite_influence/."
+ },
+ "forbidden_inputs": [
+  "Changing seeds, weightings, families, windows, sets or predictions after seeing results"
+ ],
+ "primary_observable": "Per process, n and stage: means of forced fraction, beyond ties, by propagation, reach, profile",
+ "cheapest_meaningful_control": "The tree control",
+ "predictions": {
+  "B1": "check: tree control pair reach <= 1 and knot patterns force nothing",
+  "B2": "half and three quarters: mean pair forced fraction <= 2% for every n",
+  "B3": "last base: mean pair forced fraction >= 50% for n = 100, 200, 400",
+  "B4": "last base: mean pair fraction beyond ties <= 5% and by propagation <= 5%"
+ },
+ "decision_rules": {
+  "B2-B4 hold": "influence local until the end, global at the last base, made of ties found by search",
+  "B3 fails at some n": "the last base's influence shrinks with size",
+  "B4 fails": "pairs decide beyond ties, or the influence propagates locally"
+ },
+ "stop_rule": "One run; report and hand off to the referee thread.",
+ "runtime": "About 10 to 30 minutes on 8 workers; registered in docs/LONG_RUNNING.md; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

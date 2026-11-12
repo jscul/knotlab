@@ -1799,5 +1799,8 @@ evidence: results and their status come from the records each entry links.
   change cost more than a flip near rest, or a learner whose signs change on a slower clock for a stated native reason; if it holds as well,
   this rule is unneeded.
 - **History.**
+  - 2026-11-12 · Used by `LAW-RIGIDITY-20261112-001`, status unchanged: with it, a native rest set let the learner learn and hold the count
+    in 30 of 30 writes on the 6-distinction base no drawing fits; sub-goal B160 would challenge it
+    ([what does the drawing's work](../research/LAW-RIGIDITY-20261112-001/law_rigidity.md)).
   - 2026-11-12 · "Why" corrected: R held the count in 4 of 10 runs, not 5 (a miscount when the entry was written; Not a block).
   - 2026-11-12 · Added by `LAW-RIGIDITY-20261112-001`.

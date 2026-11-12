@@ -78,3 +78,7 @@ works on one pattern hides the count on the next. Only symmetry helps, and only 
 **Goals:** G15 checkpoint (obstruction learned, with G16); B161 taken; B166 added.
 **Assumptions:** none new or changed.
 **Basket:** B165 (selected, awaiting a go-ahead), B166, B159, B162, B157, B154, B155, B156, B150, B151, B130.
+
+## Final report as sent
+
+Posted in the thread on 2026-11-12 (06:16 UTC); its text is the record of the thread message, summarized here word for word in its findings: no rule of 16 by sequence length keeps a counting law at rest on all 13 bases (the best, all sums equal on sequences of two knots, on 2); no chance pass in 1,000 null draws; symmetry fixes the counting law on the two undrawn bases that have symmetries (0.1% and 3% of laws are fixed), not on the drawn copy, and 10 of 12 undrawn bases have none; the advisor model consulted before freezing; B165 made concrete (three steering rules and a frozen test, not started); the two tables as above; Corrections: none; Goals: G15 checkpoint, B161 taken, B166 added; Assumptions: none; Basket: B165 (selected), B166, B159, B162, B157, B154, B155, B156, B150, B151, B130. Holding for a go-ahead on B165.

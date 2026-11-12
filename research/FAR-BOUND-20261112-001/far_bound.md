@@ -126,3 +126,12 @@ goal change. **Assumptions:** none changed. **Basket:** `TRAVEL-READ-20261112-00
 3. **Growth rate.** Payoff 2, concreteness 2.
 
 **Recommendation.** Research directions, #1, awaiting the go-ahead; #2 as the side ticket.
+
+## Final report as sent
+
+Sent to the owner on 2026-11-12 at about 13:55 UTC, summarized here (the tables are those above, directions 1 to 3). Headline: partly;
+where a base has two unlengthened shifts influence stays bounded, proved on one rule-selected base (every distinction in two opposite
+quadrants within bond distance 3 of the origin); with one, the bound often creeps up slowly far away. 34 of 66 one-direction bases
+bounded on certified bonds; to 23 across 16 of 26 decided stay bounded, 5 creep from 4 to 6; two-direction bases bounded to radius
+15. What the growing bases share with base 16: one travelling direction only, which is common to all of them but not sufficient.
+No new correction. Referee handed to the referee thread; holding for a go-ahead on #1, with the repeat-size test as the side ticket.

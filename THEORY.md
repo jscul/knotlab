@@ -163,8 +163,11 @@ patterns are typical and which rare, and what a law reads off each. Since no
 chances can be equal over infinitely many alternatives, typical and rare are
 always relative to a declared weighting. His other realities are read as other
 knot patterns of the same kind of logic, and bound realities as one larger
-knot pattern, never as contact across bases. Whether a law forces its own
-meeting pattern stays a separate question.
+knot pattern, never as contact across bases. What binds them, his "binding
+patterns", he leaves open: "This is what we're trying to discover" (12
+November), with two pictures, logic carried in each knot that binds whole knot
+patterns together, or recursion in which inner parts are placed by the larger
+ones. Whether a law forces its own meeting pattern stays a separate question.
 
 Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen), [the register, A15, A71 and A73](docs/ASSUMPTIONS.md)
 
@@ -925,7 +928,11 @@ new. Proved (referee pending): the pinned distinctions are exactly those no
 state of the block can flip alone, pinned by equality, the same value
 everywhere they reach; so for odd periods a harmony is exactly a block that,
 nested, pins everything. Open: pins that vary (a twisted binding), and which
-reading John meant.
+reading John meant. Asked whether the series are bound beside or inside one
+another, he said on 12 November: "We need to suss this out", adding that a
+loop's "side" is not a drawn edge: "there is no limit in what it's in contact
+with, so the "sides" can overlap where one side can touch many other sides,
+it's not a 1:1 thing."
 
 Evidence: [bases within bases](research/BASES-WITHIN-20261112-001/bases_within.md), [nesting by substitution](research/SUBST-NEST-20261112-001/subst_nest.md), [the pinning theorem](research/PIN-RULE-20261112-001/pin_rule.md), [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen)
 

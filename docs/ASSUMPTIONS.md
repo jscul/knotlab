@@ -126,7 +126,7 @@ evidence: results and their status come from the records each entry links.
 | [A69](#a69--the-value-of-the-shortest-sums-is-supplied-per-base) | The value of the shortest sums is supplied per base | reading | Overturned |
 | [A70](#a70--a-harmony-is-a-periodic-base-whose-allowed-states-all-repeat) | A harmony is a periodic base whose allowed states all repeat | reading | Assumed |
 | [A71](#a71--each-random-process-is-one-weighting-of-many) | Each random process is one weighting of many | measure | Assumed |
-| [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Assumed |
+| [A72](#a72--a-growing-pattern-ends-when-it-allows-no-state) | A growing pattern ends when it allows no state | reading | Confirmed |
 | [A73](#a73--the-owners-other-realities-are-other-knot-patterns) | The owner's other realities are other knot patterns | reading | Assumed |
 | [A74](#a74--dimension-across-an-unlengthened-shift-is-read-by-across-counts) | Dimension across an unlengthened shift is read by across-counts | reading | Assumed |
 | [A75](#a75--bases-within-bases-are-stitched-at-one-place) | Bases within bases are stitched at one place | reading | Assumed |
@@ -1896,7 +1896,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A72 · A growing pattern ends when it allows no state
 
-**Assumed** · 2026-11-12 · reading
+**Confirmed** · 2026-11-12 · reading
 
 - **Statement.** A growing knot pattern ends, the owner's "dies", at the first knot after which it allows no state: it is
   then a contradiction (lesson 5.1). Its last base is the pattern just before that knot. The canonical K1–K3 test is
@@ -1910,6 +1910,9 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read the same growths under the other ending: measure when new knots stop changing the tie classes or the
   bond distances, and compare those times with the times of no allowed state.
 - **History.**
+  - 2026-11-12 · Confirmed by the owner: asked whether "dies" means that no state is allowed or that nothing new is produced, he
+    said "This is fine. I don't know what the question is here." The other reading stays available as a measure, not as his
+    meaning ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
   - 2026-11-12 · Used by `RANDOM-FATES-20261112-001`, status unchanged: under this reading uniform patterns end in a jump, the last
     base tying 87 to 89% of its distinctions into one class; the other reading is direction 5 there, awaiting the owner's answer
     ([outcomes of random meeting patterns](../research/RANDOM-FATES-20261112-001/random_fates.md)).
@@ -1920,8 +1923,11 @@ evidence: results and their status come from the records each entry links.
 **Assumed** · 2026-11-12 · reading
 
 - **Statement.** The owner's "other realities" are read as other knot patterns of one kind of logic: distinctions and knots under
-  the canonical K1–K3 test, differing in which knots meet (the meeting pattern) and possibly in the rules the knots carry, which is
-  how his "binding patterns" are read. Where realities bind to each other, the binding is read as more meeting pattern: knots that
+  the canonical K1–K3 test, differing in which knots meet (the meeting pattern) and possibly in their "binding patterns". The owner has
+  said that what a binding pattern is "is what we're trying to discover", so it is an open definition with his two pictures: logic
+  carried in each knot that binds whole knot patterns together, perhaps spreading influence between them in a way that does not add
+  up part by part; or recursion, inner parts placed by the larger ones with no fixed number of dimensions. The working reading takes
+  the first picture as the rules the knots carry. Where realities bind to each other, the binding is read as more meeting pattern: knots that
   share distinctions of both make one larger knot pattern. Two bases that share no distinction share no contact (A15). The
   canonical K1–K3 test is unchanged.
 - **Why.** The owner, 2026-11-11 (Pacific; 12 November UTC), asked whether other realities have a different law or the same law on
@@ -1932,11 +1938,16 @@ evidence: results and their status come from the records each entry links.
   ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
 - **Rests on it.** Lesson 7.3's account of the owner's picture, and the reading that a census under one law (not-all-equal) studies
   one part of the owner's "everything", as `RANDOM-FATES-20261112-001` does.
-- **Challenge.** Two ways. Ask the owner which "binding patterns" means: if it names a relation between realities that keeps them
-  separate, this reading is wrong, and the foundation's rule that no contact is inferred across admissible bases would be the
-  owner's to reopen. And test whether the law matters: rerun the census's outcomes and readings under the other symmetric knot laws
+- **Challenge.** Two ways. Find a binding pattern in either of the owner's pictures that is not a knot pattern on the distinctions it
+  binds: a relation between realities that keeps them separate would make this reading wrong, and the foundation's rule that no
+  contact is inferred across admissible bases would be the owner's to reopen. And test whether the law matters: rerun the census's outcomes and readings under the other symmetric knot laws
   on the same samples; if they differ in kind, "one kind of logic" has to name its law in every claim.
 - **History.**
+  - 2026-11-12 · The owner on "binding patterns", status unchanged: "This is what we're trying to discover. To me, it's like injected
+    logic in each clause that binds a series of CNF together", possibly with influence "distributed between different CNFs in like a
+    non-linear way", or else "bindings are actually recursive structures", like a fractal whose "nested structures depend on the
+    larger structures to know where they are", but where logic "can hop around". Recorded as an open definition with two pictures
+    ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
   - 2026-11-12 · Added from the owner's statements of 2026-11-11, recorded in lesson 7.3 of the Intuitions guide.
 
 ### A74 · Dimension across an unlengthened shift is read by across-counts
@@ -1977,6 +1988,13 @@ evidence: results and their status come from the records each entry links.
   self-simulating tile sets). Under it the mirror lift need not apply, and nesting could create forcing. Ask the owner which he meant,
   or run the substitution reading on the same seeds.
 - **History.**
+  - 2026-11-12 · The owner's answer, status unchanged (still open). Asked whether nested series are bound beside one another or
+    inside one another: "We need to suss this out. Side might be misleading here [...] these are not sides in the typical "edge of a
+    triangle" sense. We're not even in spatial reality yet. The "side" is like the continuous edge of the loop, there is no limit in
+    what it's in contact with, so the "sides" can overlap where one side can touch many other sides, it's not a 1:1 thing." So
+    "side by side" is not used as a term; the stitched and substitution readings stay the two candidates, and his picture of
+    bindings as recursion, inner parts placed by the larger ones, is nearer to substitution without choosing it
+    ([Intuitions, lesson 7.3](../INTUITIONS.md#73-every-meeting-pattern-none-chosen)).
   - 2026-11-12 · Added with `BASES-WITHIN-20261112-001`'s pre-registration.
   - 2026-11-12 · Under challenge: `SUBST-NEST-20261112-001` tests the substitution reading (blocks and motifs) on the same questions.
   - 2026-11-12 · Challenge answered, status back to Assumed: the readings differ in kind. Under substitution (each distinction a block

@@ -1889,6 +1889,41 @@ distinction share no contact, since the program infers no contact across
 bases (lesson 7.1). The register records this reading as A73, with how to
 challenge it.
 
+**Binding patterns: an open definition.** Asked on 12 November what "binding
+patterns" means, the owner said: "This is what we're trying to discover. To
+me, it's like injected logic in each clause that binds a series of CNF
+together. And this injection could maybe even bind in ways that have influence
+distributed between different CNFs in like a non-linear way. It's possible
+that clauses themselves have infinite series of CNF that allows for the
+"non-linear" distribution." He gave a second picture beside it: "It's
+possible though that this isn't truly what bindings are and that bindings are
+actually recursive structures. So for example, with fractals, usually fractals
+are shown as animated where you can zoom in to reveal identical structures,
+but the nested structures depend on the larger structures to know where they
+are. It's always present. This is the kind of infinite sequence we're talking
+about. The problem too though, is that fractals are spatial. [...] but for
+logic, it can hop around. [...] A logic based fractal with emergence as the
+guiding principle." So the guide does not define a binding pattern. It is what
+the research is to find, with two candidate pictures:
+
+- **Logic carried in each knot.** Each knot binds whole knot patterns
+  together, perhaps with an influence spread between them that does not add up
+  part by part (his "non-linear"), and a knot may itself hold an endless
+  series of knot patterns. A73's working reading, the rules the knots carry
+  with bindings read as more meeting pattern, is one way into this picture.
+- **Recursion.** Bindings are structures nested without end, in which an
+  inner part depends on the larger parts for where it is, with no fixed number
+  of dimensions, since a logical structure "can hop around" where a drawn one
+  cannot.
+
+He tied both to his word "shape" (lesson 1.7): "humans are shapes like
+triangles are. Triangles are simply patterns that exist in some base reality,
+and humans are also patterns that exist in this current base reality. We are
+closer to triangles than to the limits of what is possible with emergence
+(which is very difficult to conceptualize because necessary for humans are
+bindings like "time", "space", and "physics")." Nothing here is a claim about
+humans or physics.
+
 **Odds over infinitely many (classical).** The owner's "maybe all the same
 likelihood" meets a fact of probability: infinitely many finite meeting
 patterns cannot all have the same chance. Chances add up to one, and equal
@@ -1917,8 +1952,8 @@ of three:
 - **It ends:** it allows states for a while and then none. It **ends** at the
   first knot after which it allows no state, and its **last base** is the
   pattern before that knot. Adding knots never brings a state back, so an end
-  is final. The record reads the owner's "die" as this (A72); his other
-  possible meaning, that it stops making anything new, waits on his answer.
+  is final. The record reads the owner's "die" as this (A72), and on 12
+  November he accepted the reading: "This is fine."
 - **It goes on forever:** it is a base at every stage. By the compactness
   theorem (lesson 7.2, question 3) that is the same as the endless pattern it
   grows into being a base. A computation can only report that a pattern is
@@ -1998,8 +2033,33 @@ again at every level? If so, that would be one reading of the owner's
 "harmony". A base has many states and a distinction one bit, so the test first
 needs a declared way to read one bit from a base's states, and that bit must
 be open, free on its own, not a value computed from distinctions fixed
-elsewhere, which would only classify them. Untested; the register's
-backlog holds it as B164.
+elsewhere, which would only classify them. Two ways of nesting have been
+tested (backlog B164):
+
+- **Stitched at one place (proved).** Each distinction of an outer base
+  becomes an endless harmony, and each outer knot stitches the three inner
+  harmonies at every place. The outer level then allows exactly the outer law's
+  states, at every level, nesting never ends, and nothing new is forced; it
+  adds only room. Only the alternation 0101… reads as one bit
+  ([BASES-WITHIN-20261112-001](research/BASES-WITHIN-20261112-001/bases_within.md)).
+- **By substitution (computed; one direction proved).** Each distinction
+  becomes a finite block whose own knots bind the copies. Then every
+  distinction the block cannot spare is tied across the whole pattern, in 47
+  of 87 small blocks, and deeper nesting keeps those ties without adding new
+  ones ([SUBST-NEST-20261112-001](research/SUBST-NEST-20261112-001/subst_nest.md)).
+
+The two readings differ in kind, so which one the owner means matters (A75 in
+the register). Asked whether nested series are bound to each other beside one
+another or inside one another, he said on 12 November: "We need to suss this
+out. Side might be misleading here, I guess it makes sense, but these are not
+sides in the typical "edge of a triangle" sense. We're not even in spatial
+reality yet. The "side" is like the continuous edge of the loop, there is no
+limit in what it's in contact with, so the "sides" can overlap where one side
+can touch many other sides, it's not a 1:1 thing." So the question stays open,
+and the guide does not say that bases or knots lie side by side: a loop's
+binding is open to any number of others at once, as overlap already is
+(lesson 2.1). His recursion picture above, inner parts placed by the larger
+ones, is nearer to substitution, but he has not chosen.
 
 **Operations on harmonies.** "We need to cover things like operations, what is
 subtraction of the logical harmonies, what is division? This is why I'm trying
@@ -2065,7 +2125,7 @@ is present it repeats with period four
 | Part | Standing | Tested by |
 | --- | --- | --- |
 | Nothing chooses; ours is coincidental | interpretation (A15); no proof or experiment can settle it | none |
-| Other realities are other knot patterns | reading (A73) | the owner's answer; the census under other laws |
+| Other realities are other knot patterns | reading (A73); "binding patterns" an open definition | the census under other laws |
 | Typical and rare meeting patterns | computed under four weightings: uniform and rare-closing patterns read as rulers away from an end | [RANDOM-FATES-20261112-001](research/RANDOM-FATES-20261112-001/random_fates.md), closed and refereed (confirmed with fixes) |
 | Global influence | computed under one weighting: typical once knots overlap, in three regimes (free, travelling, tied along a shift as states run out) | [COMMON-FOLD-20261112-001](research/COMMON-FOLD-20261112-001/common_fold.md), closed and refereed (confirmed with fixes) |
 | What dense overlap reads as | computed: most travelling bases have two unlengthened shifts (at least 130 of 169); base 16's line is rare (3 of 169 grow across); bounded across on certified bonds in about half the rest | [TRAVEL-READ-20261112-001](research/TRAVEL-READ-20261112-001/travel_read.md), closed; refereed, narrowed |
@@ -2076,7 +2136,8 @@ is present it repeats with period four
 | Only relative | shortcuts computed; the direction of no length proved; relativity an analogy only | [FOLD-20261112-001](research/FOLD-20261112-001/fold.md), closed |
 | Harmonies | owner's word; one reading (A70) | `HARMONY-ARITH-20261112-001`, closed: the law's harmonies are even (exact to span 12) |
 | Subtraction and division | stitching multiplies and counts shared divisors, nothing subtracts (proved); divisibility not read | `HARMONY-ARITH-20261112-001`, closed; A70's challenge open |
-| Bases within bases | untested | backlog B164 |
+| Bases within bases | two readings computed, differing in kind: stitched, nothing new is forced (proved); by substitution, what a block cannot spare is tied throughout | [BASES-WITHIN-20261112-001](research/BASES-WITHIN-20261112-001/bases_within.md), [SUBST-NEST-20261112-001](research/SUBST-NEST-20261112-001/subst_nest.md); which the owner means is open (A75) |
+| Binding patterns | open definition, the owner's two pictures (logic in each knot; recursion) | none yet |
 
 **Reading.** This lesson is the owner's picture and the coordinator's
 readings of it. It claims nothing about physics, matter or minds, and none of
@@ -2483,6 +2544,11 @@ that earlier records used in two senses.
 - **Step ball.** The distinctions within r steps of one distinction: a count
   on the meeting pattern (lesson 7.3). A ball, unqualified, is measured by
   bond distance.
+- **Binding pattern.** The owner's word, not yet defined: in his words, "This
+  is what we're trying to discover" (lesson 7.3). He offers two pictures,
+  logic carried in each knot that binds whole knot patterns together, and
+  recursion in which inner parts are placed by the larger ones. Until one is
+  chosen the guide uses it only in his words.
 - **Fractal.** The owner's word, kept in quotation only: "the fractals are
   consequences of rules", with "logic fractals to infinity for irrational
   numbers" (lesson 7.3). It is not the literature's self-similar set, and the
@@ -2561,6 +2627,7 @@ that earlier records used in two senses.
   | flat | (only in the owner's "flat structure") | six knots at every distinction: six-regular; drawable without crossings: planar, the literature's |
   | balanced | (the doubling line's balanced stages, not used in the guide) | six knots at every distinction: six-regular |
   | two-sided | (none) | orientable |
+  | side | (only in the owner's words: "the continuous edge of the loop", open to any number of others, lesson 7.3) | an edge of a drawn knot: the literature's; knots or bases "side by side": overlapping, or stitched (lesson 7.3), never side by side |
   | thread | (a thread of work, not used in the guide) | an endless chain of atoms: chain |
   | fold | (the owner's folded, compressed structure, in his words) | the direction the law does not lengthen: unlengthened shift |
   | ladder | (the literature's only, such as the n × 2 ladder graph) | three consecutive distinctions and every second one after them (ACROSS-FOLD-20261112-001's pre-registration): heddle; its rungs: the heddle's members after the three |

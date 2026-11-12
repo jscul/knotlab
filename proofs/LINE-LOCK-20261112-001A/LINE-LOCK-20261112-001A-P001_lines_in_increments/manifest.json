@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LINE-LOCK-20261112-001A-P001",
+  "canonical_id": "LINE-LOCK-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "LINE-LOCK-20261112-001A",
+  "proof": "LINE-LOCK-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "No permutive sub-stitch in a harmony's stitch, and the coset census",
+  "status": "Proved",
+  "claim": "Proved by hand (the advisor model's two-constant-fibres lemma, rechecked): a harmony's one-order stitch holds no permutive sub-stitch on a set of two or more states, so no orbit's stitch pairs hold a ratio subgroup (the additive automaton of Ledrappier-type influence), a Z2 x Z2 block or a free pair, at any period, for any two-way knot shape and slot order; the odd harmonies 61, 73, 193 included. Exact: 73 harmonies (span <= 8, every period; the 7 odd step sets), 187 orbits: no free site, no ratio subgroup, 22 + 2 degenerate subgroups and cosets, no coset with a ratio part, so lagged stitches hold none. After the run: the same on 32 harmonies of span 9. Referee pending.",
+  "dependencies": [
+    "SHIFT-LOCK-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A permutive sub-stitch on one set of states in a harmony's stitch.",
+    "A harmony in range with a free site.",
+    "A coset with a ratio part that a fresh census finds."
+  ],
+  "lineage": {
+    "home_scope": "LINE-LOCK-20261112-001",
+    "epic_path": [
+      "LINE-LOCK-20261112-001"
+    ],
+    "parents": [
+      "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/manifest.json",
+      "research/LINE-LOCK-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/SHIFT-LOCK-20261112-001A/SHIFT-LOCK-20261112-001A-P001_two_shift_locks/manifest.json": "48ec72369da55a43a9172ebf943028cc8d99e08f9928ff8d5c80eadb35eee4b6",
+    "research/LINE-LOCK-20261112-001/preregistration.md": "4d219457e9e2dd7292831932dbacf02892626ea1f22afd6c97f56c511fd65f6e"
+  },
+  "paths": {
+    "manifest": "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/manifest.json",
+    "identity": "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/identity.json",
+    "proof": "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/proof.md",
+    "result": "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/result.json",
+    "check": "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments/check.py",
+    "directory": "proofs/LINE-LOCK-20261112-001A/LINE-LOCK-20261112-001A-P001_lines_in_increments"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; every harmony for the theorem; for the census, the 66 harmonies of span <= 8 at every period and the 7 odd step sets of ODD-FAMILY (and 32 of span 9 after the run), stitched in one order, unlagged or lagged.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 023a3da46); the lemma is the advisor model's, rechecked here; independent referee pending.",
+    "status": "theorem by hand; exact census (check.py); stress test one size past labelled; referee pending",
+    "novelty": "novelty-unassessed; the lemma not seen stated, pending the referee's search"
+  }
+}

@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LIFE-JUMPS-20261112-001A-E001",
+ "ticket": "LIFE-JUMPS-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Over whole lives of growing knot patterns under not-all-equal, how does the largest tie class grow, does the end come with or without a jump, does the law signal the end long before, and does living growth with rare closings stay free of a large class?",
+ "definitions": {
+  "settings": "U(n) at n = 100 (100 runs), 200 (60), 300 (30) to the end; X(0.2), X(0.3) to 6,000 moves; X(0.35), O global (0.3), O local (0.3) to 2,000 moves, 100 runs each; seeds sha256 LJ:label:run.",
+  "readings": "exact tie classes (fates.Reader, 60 sampled states) at every 2% of life, at 1..20, 30, 40, 50 knots before an end, and after 300, 500, 1,000, 2,000, 3,000, 6,000 knots: distinctions, largest class and sides, tied distinctions, classes, closing hazard h, median arrival index of the largest class."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 0afb7b074a9fae6e2a96e2bb76bc6129f2e319477e75a29cdb8ba4a4d99b4565) beside this file; fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35); pysat; numpy.",
+  "run": "census.py from the repository root, then census.py --summary; output artifacts/LIFE-JUMPS-20261112-001A/LIFE-JUMPS-20261112-001A-E001_whole_lives/."
+ },
+ "forbidden_inputs": [
+  "Changing settings, seeds, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "See the predictions; each is evaluated by census.py --summary.",
+ "cheapest_meaningful_control": "Uniform knots (one late jump, J1) for LIFE-JUMPS; the newest-four replication (M1) for MISSING-KNOTS.",
+ "predictions": {
+  "J1": "U at n = 100, 200, 300: share <= 0.05 at k = 40 in >= 90%, >= 0.5 at the last base in >= 80%.",
+  "J1b": "median share at k = 10, n = 300 within a factor two of n = 100.",
+  "J2": "X(0.3), X(0.35), Og(0.3), Ol(0.3), endings after >= 200 knots: at half life largest class >= 10 members and share >= 0.05 in >= 60%, each process.",
+  "J3": "median share(k=20)/share(k=1) >= 0.7 in those four processes and <= 0.2 at each n of U.",
+  "J4": "X(0.3): AUC of the share after 300 and after 1,000 knots for an end before 6,000 >= 0.75 at both.",
+  "J5": "X(0.2): largest class after 6,000 knots <= 15 in >= 90%.",
+  "J6": "endings of the four processes: median arrival index of the largest class's members below half the distinctions in >= 80%, each process."
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in research/LIFE-JUMPS-20261112-001/preregistration.md"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About an hour on ten workers; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

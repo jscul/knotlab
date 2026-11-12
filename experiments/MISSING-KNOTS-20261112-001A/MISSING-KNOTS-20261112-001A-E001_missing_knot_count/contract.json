@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MISSING-KNOTS-20261112-001A-E001",
+ "ticket": "MISSING-KNOTS-20261112-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Is the least bond along patterns of knots within four consecutive distinctions a count of missing knots, with a unit that does not depend on the process that made the pattern?",
+ "definitions": {
+  "bases": "800 distinctions, 10 each, seeds sha256 MK:label:base: newest-four growth at q in {0, 0.1, 0.3, 0.5, 0.7, 0.9}; Bernoulli band (each knot within four consecutive present with probability p) at p in {0.5, 0.6, 0.7, 0.8, 0.9}.",
+  "pairs": "8 per gap g in {16, 32, 64, 128, 256} per base, jitter 0..3; and per base the eleven non-overlapping stretches of 64 from 40.",
+  "counts": "M (missing knots summed over windows), D (distinct missing knots), M3, M4 (by span), W2 (windows with >= 2 missing), gap; L exact (bonddp.least_bond, margin 8)."
+ },
+ "public_inputs": {
+  "code": "census.py (sha256 8b433f808c7821b81b26d09522ae5cda14028f29a98c4a3fb87f5b10f9872650) beside this file; fates.py (sha256 72d3571ed66dddaa6c517b3ce29ce14ae72c008c025669e2ef071b77b73eba35) and bonddp.py (sha256 8bc70ca09b96ed24689a828297671302dc3f8895617d764b1ea3823aea7eb608); pysat; numpy.",
+  "run": "census.py from the repository root, then census.py --summary; output artifacts/MISSING-KNOTS-20261112-001A/MISSING-KNOTS-20261112-001A-E001_missing_knot_count/."
+ },
+ "forbidden_inputs": [
+  "Changing settings, seeds, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "See the predictions; each is evaluated by census.py --summary.",
+ "cheapest_meaningful_control": "Uniform knots (one late jump, J1) for LIFE-JUMPS; the newest-four replication (M1) for MISSING-KNOTS.",
+ "predictions": {
+  "M1": "newest-four: slope of L on M in [0.09, 0.13] at every q, pooled R2 >= 0.95.",
+  "M2": "Bernoulli band: slope in [0.09, 0.13] at every p.",
+  "M2r": "rival: slope at p = 0.9 <= 0.8 x slope at p = 0.5.",
+  "M3": "every cell with >= 5 bases having >= 6 stretches with a bond: median within-base slope of L on M in [0.09, 0.13].",
+  "M4": "reported: the count with the steadiest slope."
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in research/MISSING-KNOTS-20261112-001/preregistration.md"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About fifteen minutes on six workers; systemd-run --user -p MemoryMax=16G -p MemorySwapMax=0."
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**319 current results** and 5 superseded ones, from 324 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**319 current results** and 5 superseded ones, from 326 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 324 epics with their closures
+- [Epics](#epics): all 326 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1411,6 +1411,8 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | A direction the knot law does not lengthen (`FOLD-20261112-001`) | [closure](proofs/FOLD-20261112-001Z/FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/FOLD-20261112-001/) |
 | 2026-11-12 | Arithmetic of harmonies without a zero (`HARMONY-ARITH-20261112-001`) | [closure](proofs/HARMONY-ARITH-20261112-001Z/HARMONY-ARITH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/HARMONY-ARITH-20261112-001/) |
 | 2026-11-12 | What does the drawing's work on a base with no drawing (`LAW-RIGIDITY-20261112-001`) | [closure](proofs/LAW-RIGIDITY-20261112-001Z/LAW-RIGIDITY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/LAW-RIGIDITY-20261112-001/) |
+| 2026-11-12 | Jumps over a whole life (`LIFE-JUMPS-20261112-001`) | — | [folder](research/LIFE-JUMPS-20261112-001/) |
+| 2026-11-12 | The law's count of missing knots (`MISSING-KNOTS-20261112-001`) | — | [folder](research/MISSING-KNOTS-20261112-001/) |
 | 2026-11-12 | A native grade for rigidity (`NATIVE-GRADE-20261112-001`) | [closure](proofs/NATIVE-GRADE-20261112-001Z/NATIVE-GRADE-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-GRADE-20261112-001/) |
 | 2026-11-12 | Which odd periods the knot law makes, and why 61 (`ODD-FAMILY-20261112-001`) | [closure](proofs/ODD-FAMILY-20261112-001Z/ODD-FAMILY-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-FAMILY-20261112-001/) |
 | 2026-11-12 | The first odd harmony, or none (`ODD-SEARCH-20261112-001`) | [closure](proofs/ODD-SEARCH-20261112-001Z/ODD-SEARCH-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/ODD-SEARCH-20261112-001/) |

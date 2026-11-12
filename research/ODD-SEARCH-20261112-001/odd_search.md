@@ -105,3 +105,31 @@ fourth root of 1.
 **Corrections:** one, Narrowing (the knot law's harmonies are not all even). **Goals:** G8 checkpoint (obstruction learned, with G1;
 no goal change; its Open line answered "no"). **Assumptions:** A70 used, unchanged. **Basket:** #1 to #3 recorded. **Advisor:**
 consulted twice before the freeze; it supplied lemmas 6 to 8 and the family that found the harmony.
+
+## Final report as sent
+
+Sent to the owner in the project thread on 2026-11-12 at about 05:53 UTC, verbatim:
+
+> Done: there is an odd harmony, at period 61. The rule that the knot law's harmonies are even holds below 30 and at 31 and 37, but not in general. I've logged that as a Narrowing in the corrections log. The write-up is research/ODD-SEARCH-20261112-001/odd_search.md.
+>
+> • **The harmony (proved, refereed twice).** Twelve knot kinds forbid three equal values at equal spacing with step 1, 2, 11 or 22 (counted mod 61). They allow exactly 122 states: one word of period 61, its shifts and its mirror. No two of those differ in one place (the nearest are 11 apart), so nothing can flip unseen, and every allowed state repeats with period 61. The base doesn't split into independent parts. A fresh session rebuilt all of this from scratch and found nothing breaking the 61-repeat on windows up to 1,000 distinctions.
+> • **What pins it.** The steps are the four fourth roots of 1 mod 61 (11 × 11 = −1) and their doubles. The word is unchanged, up to a shift, when positions are multiplied by 11. It came from the advisor's suggested family of symmetric step sets. The brute-force order wouldn't have reached it soon.
+> • **Nothing smaller where the search was complete.** No harmony of odd period up to 29 (proved earlier), and none at 31 or 37 (every word checked). Periods 33, 35 and 39 to 59 are still open.
+> • **What still stands.** Every count, lemma and theorem from the last two epics. The mirror still forbids nothing on its own.
+>
+> | Scope | Verdict | Why |
+> | --- | --- | --- |
+> | This attempt — the first odd harmony, or none | **Status:** Successful | an odd harmony of period 61 found and proved; none at 31 or 37 |
+> | Local direction — odd harmonies | Continue | the least odd period and why 61 are open |
+> | Broader exploration — the count line | Known alternatives | antiperiodicity, two shifts, signed knots |
+> | Long-term goal — G8 From spacing to arithmetic and sets | Obstruction learned | the law's numbers are not all even; a symmetry of the period decides |
+>
+> **Next step:** Research directions — selected: #1
+>
+> | # | Direction | Payoff | Concreteness | First step → stop when | Status |
+> | --- | --- | --- | --- | --- | --- |
+> | 1 | The least odd harmony, and why 61 | 2/3 — Substantial | 2/3 — Testable | symmetric step sets at every odd period 33 to 59, then explain the 61 base → the least odd period and a construction | Selected · awaiting go-ahead |
+> | 2 | Odd harmonies at other primes | 2/3 — Substantial | 2/3 — Testable | the same family at primes p ≡ 1 mod 4 up to 200 → a family, or 61 alone | Alternative · deferred |
+> | 3 | Why unsplit harmonies are antiperiodic, where they are | 1/3 — Incremental | 1/3 — Stated | characterise the even ones → a lemma | Alternative · deferred |
+>
+> **Corrections:** one, Narrowing: the knot law's harmonies are not all even, since one has period 61. **Goals:** G8 checkpoint (obstruction learned), no goal change; its open question is answered "no". **Assumptions:** A70 used, unchanged. **Basket:** #1 to #3 recorded. **Advisor:** consulted twice before freezing. It supplied three of the lemmas and the family that found the harmony. One descriptive measurement, of the advisor's parity route, is still running in the background and will be folded in.

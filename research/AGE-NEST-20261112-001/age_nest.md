@@ -1,8 +1,9 @@
 # What the expanding growth's degrees do not carry
 
 Epic `AGE-NEST-20261112-001` (`OLD-CORE-20261112-001` direction 1; G17, with G7), 2026-11-12, at the coordinator's go-ahead.
-Pre-registered in commit 283e418e9 before the registered run. The canonical K1–K3 test is unchanged. **Referee pending** (handed
-to the referee thread).
+Pre-registered in commit 283e418e9 before the registered run. The canonical K1–K3 test is unchanged. Refereed by the referee thread
+(AGE-NEST-R1, `referee-R1/report.md`, commit ed8bb044e): **confirmed with fixes**, folded in below; three corrections logged (one
+Narrowing, two Not a block).
 
 ## Words
 
@@ -26,16 +27,18 @@ history-preserving, which keep it non-2-colourable?
 | --- | --- | --- | --- |
 | 1 | **The resamplers are fair.** Both chains are symmetric, and on five degree sequences, one regular and four uneven (17 to 16,534 patterns each), their exact transition matrices are connected within the classes they must keep: the degree chain on all patterns with those degrees, the age-keeping chain on each assignment of youngest distinctions. | computed, exact | fair |
 | 2 | **Degrees miss it (replicated with a fair chain).** Patterns with the dying core's degrees, from a switch chain, end in a median of 0% of resamples at X(0.3) and X(0.35) (ninetieth percentile 5% and 30%), as `OLD-CORE-20261112-001`'s stub generator found. | computed, frozen | N1 held |
-| 3 | **The nesting by age carries it.** Keeping the degrees and every knot's youngest distinction, and so every prefix count, the resamples end in a median of 40% (X(0.3)) and 50% (X(0.35)), above the degree-only share in 95% and 92% of the cores where the two differ. | computed, frozen | N2 held |
-| 4 | **Degrees add nothing once the nesting is kept, and the schedule adds nothing to it.** Keeping only every knot's youngest distinction (degrees not kept) gives 40% and 55%; redrawing the whole core under the growth's own rule with its schedule gives 35% and 58%; each beats the nested-with-degrees rung in about half of the cores. No resample on any rung had the core's pair counts: every one is a different pattern from the law's point of view. | computed, frozen | N3 reported |
+| 3 | **The age profile carries it.** Keeping the degrees and every knot's youngest distinction, and so every prefix count, the resamples end in a median of 40% (X(0.3)) and 50% (X(0.35)), above the degree-only share in 95% and 92% of the cores where the two differ (as frozen, ties excluded; counting the 5 and 10 tied cores as losses, 89% and 82%). *After the referee: the carrier is the age profile itself, not the profile with degrees (conclusion 4).* | computed, frozen | N2 held |
+| 4 | **Degrees add nothing once the age profile is kept, and the schedule adds nothing to it** (*narrowed after the referee: R2p wins 38 and loses 35 against R2 at X(0.3), 37 and 42 at X(0.35). R2p is the growth's own law given that profile: a closing's uniform triple, given its youngest member, has two uniform older members. Since the core is the first dead prefix, selected for being dead, ending about half the time is the expected near-critical behaviour, not a separate finding*). Keeping only every knot's youngest distinction (degrees not kept) gives 40% and 55%; redrawing the whole core under the growth's own rule with its schedule gives 35% and 58%; each beats the nested-with-degrees rung in about half of the cores. No resample on any rung had the core's pair counts: every one is a different pattern from the law's point of view. | computed, frozen | N3 reported |
 | 5 | **Control.** In the 104 cores holding a Pasch configuration, the trade kept every pair count and allowed no state, as the pair-count lemma says. | computed | Q0 held |
 | 6 | **X(0.25)** (8 cores, reported only): the same order, weaker: degrees 0%, nested 15%, youngest only 12.5%, schedule 7.5%. | computed, frozen | reported |
 
 ## Answer
 
-What ends growth with closings anywhere is how its knots nest in the order of arrival: how many knots lie among the oldest j
-distinctions, for every j. Keep that, with or without the degrees, and about half of the redrawn cores still end, as many as when the
-whole core is redrawn by the growth's own rule; keep the degrees and lose it, and none do. Degrees spread an old distinction's knots
+What ends growth with closings anywhere is its age profile: how many knots lie among the oldest j distinctions, for every j. Keep
+that, with or without the degrees, and about half of the redrawn cores still end, as many as when the whole core is redrawn by the
+growth's own rule (which, given the profile, is the same law), and about half is what a core selected for being the first dead one
+should show; keep the degrees and lose the profile, and none end. No early part passes the uniform end on its own: the largest density
+among the oldest j (j ≥ 20) has median 1.68 and 1.79, and only 3% of X(0.35) cores reach 2.1 (the referee's). Degrees spread an old distinction's knots
 to young partners; the nesting keeps the old distinctions knotted among themselves, and that is what makes them contradict each other.
 
 ## Reading
@@ -50,18 +53,28 @@ to young partners; the nesting keeps the old distinctions knotted among themselv
 
 ## Lag cutoffs and census-only claims
 
+Mixing (the referee's check): on 40 cores of 155 to 616 knots the shares do not move with chains of 100 steps per knot or one long
+chain after 200 per knot of burn-in; the largest cores, up to about 5,000 knots, were not tested.
+
+
 Computed on 183 dying cores of OLD-CORE's X endings (81 at X(0.3), 94 at X(0.35), 8 at X(0.25); its pilot's twelve held out), 20
 resamples per rung. The fairness checks are exact for the five sequences enumerated, not for the cores' own sequences, where the
 chains start from the core and run 20 steps per knot.
 
 ## Review
 
-Referee pending (the referee thread). The advisor model reviewed the design cold before freezing: it proposed the nested rung, the
+**AGE-NEST-R1** (the referee thread, confirmed with fixes): fairness reproduced exactly by independent enumeration (both chains symmetric
+and stochastic; one component for the degree chain, one per youngest-assignment class for the age chain: 7, 3, 4, 4 and 30); the
+ladder reproduced on all 183 cores with independent chains (X(0.3): 0, 0.45, 0.40, 0.35; X(0.35): 0, 0.47, 0.53, 0.55, against the
+census's 0, 0.40, 0.40, 0.35 and 0, 0.50, 0.55, 0.575); R2's prefix counts, the schedule's reading and the hold-out confirmed; Q0
+follows from the pair-count lemma. Its fixes are made above. The advisor model reviewed the design cold before freezing: it proposed the nested rung, the
 paired per-core test, the forced-resample count and the held-out pilot.
 
 ## Literature and provenance
 
-Known: degree-preserving switch chains (Chodrow 2020 for hypergraphs with multi-edges; Dyer, Greenhill, Kleer, Ross and Stougie 2021
+Known (the referee's): age-dependent random patterns are inhomogeneous random hypergraphs (Bollobás, Janson and Riordan 2007), and grown
+networks differ from their degree-matched versions (Callaway et al. 2001), so that an age profile, not degrees, carries a grown
+pattern's thresholds is known in kind; the rungs and their shares are new data. Also known: degree-preserving switch chains (Chodrow 2020 for hypergraphs with multi-edges; Dyer, Greenhill, Kleer, Ross and Stougie 2021
 on sampling hypergraphs with given degrees); grown random networks differing from their degree-matched static versions (Callaway,
 Hopcroft, Kleinberg, Newman and Strogatz 2001; Bollobás, Janson and Riordan); the pair-count lemma's trades (Pasch; Hedayat and Li
 1979). Not found: which structure ends grown not-all-equal patterns. Classification: known-with-delta (the tools are known; the
@@ -77,18 +90,20 @@ Substantive: the census and the exact fairness checks. Administrative: the pre-r
 
 ## Corrections
 
-None.
+Three, from the referee (`docs/CORRECTIONS.md`, 2026-11-12): **Narrowing**, the carrier is the age profile, not the profile with
+degrees, and ending about half the time is what the growth's own law given that profile predicts for a selected dead core; **Not a
+block**, mixing tested on cores of up to 616 knots only; **Not a block**, ties counted both ways.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — what the expanding growth's degrees do not carry | **Status:** Successful (referee pending) | N1, N2 held: the nesting by age carries the end; degrees and schedule add nothing to it |
+| This attempt — what the expanding growth's degrees do not carry | **Status:** Successful (refereed, confirmed with fixes) | N1, N2 held: the age profile carries the end; degrees and schedule add nothing to it |
 | Local direction — why growths end | Continue | A criterion on the prefix counts alone is the next step |
 | Broader exploration — G17 | Searching | Other laws and weightings untried |
 | Long-term goal — G17 Typical and rare meeting patterns (with G7) | Capability gained | A growing pattern dies from its own past folding in on itself, under this weighting |
 
-**Corrections:** none. **Goals:** a G17 checkpoint (capability gained, with G7); no goal change. **Assumptions:** A71 and A72 used.
+**Corrections:** three after the referee (one Narrowing). **Goals:** a G17 checkpoint (capability gained, with G7); no goal change. **Assumptions:** A71 and A72 used.
 **Basket:** `OLD-CORE-20261112-001#2` (where X growth ends: the hazard fit over q from 0.2 to 0.3), `LIFE-JUMPS-20261112-001#2`
 (a calibrated forecast), `MISSING-KNOTS-20261112-001#1`.
 

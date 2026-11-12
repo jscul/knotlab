@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: what ends a growing pattern, narrowed by its referee
+
+- The resample ladder (`AGE-NEST-20261112-001`) was confirmed: its chains are fair and its shares reproduce. What ends growth with
+  closings anywhere is its age profile, how many knots lie among its oldest distinctions, not the profile together with the degrees;
+  and since redrawing by that profile is the growth's own law, ending about half the time is what a pattern selected as the first to
+  die should show. Age-dependent random patterns are known in the literature; the shares are new
+  ([decision note](research/AGE-NEST-20261112-001/age_nest.md)).
+- Unchanged: every verdict.
+
 ## 12 November 2026: the old core's end, narrowed by its referee
 
 - The test of whether growing patterns end when their oldest part reaches the uniform end (`OLD-CORE-20261112-001`) was confirmed:

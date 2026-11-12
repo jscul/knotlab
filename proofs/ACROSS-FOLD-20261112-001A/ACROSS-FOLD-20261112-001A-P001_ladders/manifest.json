@@ -50,14 +50,15 @@
  "proof": "ACROSS-FOLD-20261112-001A-P001",
  "authoritative_metadata": "manifest.json",
  "title": "Travelling ladders across the fold",
- "status": "Partial",
- "claim": "On base 16 (sheared), for y = 2..8 and every k >= max(3, floor((y+1)/2) + 1), the ladder L_y with (k, y) is a bond of size floor((y+1)/2) + 3, so bond distance across the fold is at most floor((y+1)/2) + 2 at those columns.",
+ "status": "Proved",
+ "claim": "On base 16 (sheared): (L) for every y >= 2 and every k >= floor((y+1)/2) + 1, the ladder L_y with (k, y) is a bond of size floor((y+1)/2) + 3; (C) a bond made of rows of column 0 containing the origin, at most k of them, with (k, y), y >= 2, has at least floor((y+1)/2) + 2 rows; (D) for y <= -3 there is none. Proof by the flip form and the core lemma; checks C1 to C4.",
  "dependencies": [
   "FOLD-20261112-001A"
  ],
  "failure_conditions": [
-  "A stated k and y where a proper part of L_y with (k, y) is not free.",
-  "A rung the forcing does not need."
+  "A k >= floor((y+1)/2) + 1 and y where a proper part of L_y with (k, y) is not free.",
+  "A pattern whose core row takes both values, or a non-core row that cannot flip by column |A|.",
+  "A smaller column-0 bond at k >= |A|, or a downward one."
  ],
  "lineage": {
   "home_scope": "ACROSS-FOLD-20261112-001",
@@ -75,16 +76,14 @@
   "check": "proofs/ACROSS-FOLD-20261112-001A/ACROSS-FOLD-20261112-001A-P001_ladders/check.py",
   "directory": "proofs/ACROSS-FOLD-20261112-001A/ACROSS-FOLD-20261112-001A-P001_ladders"
  },
- "remaining_obligations": [
-  "Independent referee"
- ],
- "foundation_claim_scope": "Base 16 only; rows 2 to 8 across the fold.",
+ "remaining_obligations": [],
+ "foundation_claim_scope": "Base 16 only; bonds of one column with one far distinction (C, D); every row (L).",
  "validation": {
   "level": "V1",
-  "external_review": false,
+  "external_review": true,
   "trusted_kernel": false,
-  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12.",
-  "status": "proof written; check.py passed; referee pending",
-  "novelty": "known-with-delta (FOLD's mechanism)."
+  "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12; the flip form and core lemma were sketched by the advisor model (Fable 5.2) and checked and completed here; an independent referee (a fresh agent with its own code) reviews it.",
+  "status": "proof written; check.py passed; refereed (no gap)",
+  "novelty": "known-with-delta for the mechanism (FOLD; Ledrappier); the core lemma was not found in a bounded search."
  }
 }

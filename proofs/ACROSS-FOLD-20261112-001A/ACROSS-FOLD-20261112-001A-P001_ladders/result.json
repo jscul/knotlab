@@ -1,0 +1,274 @@
+{
+ "schema_version": 3,
+ "artifact_id": "ACROSS-FOLD-20261112-001A-P001",
+ "kind": "proof",
+ "ticket": "ACROSS-FOLD-20261112-001A",
+ "proof": "ACROSS-FOLD-20261112-001A-P001",
+ "status": "passed",
+ "claim": "On base 16 (sheared): (L) for every y >= 2 and every k >= floor((y+1)/2) + 1, the ladder L_y with (k, y) is a bond of size floor((y+1)/2) + 3; (C) a bond made of rows of column 0 containing the origin, at most k of them, with (k, y), y >= 2, has at least floor((y+1)/2) + 2 rows; (D) for y <= -3 there is none. Proof by the flip form and the core lemma; checks C1 to C4.",
+ "C1": {
+  "violations": [],
+  "holds": true
+ },
+ "C2": {
+  "by y": {
+   "2": {
+    "size": 4,
+    "periods m": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "unrealized": 0,
+    "failing k": [],
+    "bond for every k >": 2
+   },
+   "3": {
+    "size": 5,
+    "periods m": [
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "unrealized": 0,
+    "failing k": [],
+    "bond for every k >": 2
+   },
+   "4": {
+    "size": 5,
+    "periods m": [
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "unrealized": 0,
+    "failing k": [],
+    "bond for every k >": 2
+   },
+   "5": {
+    "size": 6,
+    "periods m": [
+     9,
+     10,
+     11
+    ],
+    "unrealized": 2,
+    "failing k": [
+     3
+    ],
+    "bond for every k >": 3
+   },
+   "6": {
+    "size": 6,
+    "periods m": [
+     9,
+     10,
+     11
+    ],
+    "unrealized": 2,
+    "failing k": [
+     3
+    ],
+    "bond for every k >": 3
+   },
+   "7": {
+    "size": 7,
+    "periods m": [
+     11
+    ],
+    "unrealized": 10,
+    "failing k": [
+     3,
+     4
+    ],
+    "bond for every k >": 4
+   },
+   "8": {
+    "size": 7,
+    "periods m": [
+     11
+    ],
+    "unrealized": 10,
+    "failing k": [
+     3,
+     4
+    ],
+    "bond for every k >": 4
+   }
+  },
+  "first failures": [
+   [
+    5,
+    [
+     -1,
+     1,
+     3,
+     5
+    ],
+    true,
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    {
+     "failing k": [
+      3
+     ],
+     "recur beyond": false,
+     "K0": 11,
+     "L": 2
+    }
+   ],
+   [
+    5,
+    [
+     -1,
+     1,
+     3,
+     5
+    ],
+    true,
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    {
+     "failing k": [
+      3
+     ],
+     "recur beyond": false,
+     "K0": 11,
+     "L": 2
+    }
+   ],
+   [
+    6,
+    [
+     0,
+     2,
+     4,
+     6
+    ],
+    true,
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    {
+     "failing k": [
+      3
+     ],
+     "recur beyond": false,
+     "K0": 11,
+     "L": 2
+    }
+   ],
+   [
+    6,
+    [
+     0,
+     2,
+     4,
+     6
+    ],
+    true,
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    {
+     "failing k": [
+      3
+     ],
+     "recur beyond": false,
+     "K0": 11,
+     "L": 2
+    }
+   ],
+   [
+    7,
+    [
+     0,
+     1,
+     3,
+     5,
+     7
+    ],
+    true,
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    {
+     "failing k": [
+      3
+     ],
+     "recur beyond": false,
+     "K0": 11,
+     "L": 2
+    }
+   ]
+  ],
+  "holds": true
+ },
+ "C3": {
+  "without the rung below the top, at k = 3": {
+   "4": {
+    "refuted in a window": false,
+    "certified free": true
+   },
+   "5": {
+    "refuted in a window": false,
+    "certified free": true
+   },
+   "6": {
+    "refuted in a window": false,
+    "certified free": true
+   },
+   "7": {
+    "refuted in a window": false,
+    "certified free": true
+   },
+   "8": {
+    "refuted in a window": false,
+    "certified free": true
+   }
+  },
+  "holds": true
+ },
+ "C4": {
+  "tally": {
+   "core, opposite carried (bad)": 0,
+   "core, consistent": 3448,
+   "not core, both carried": 26600,
+   "not core, uncertified": 0
+  },
+  "first exceptions": [],
+  "holds": true
+ },
+ "failures": []
+}

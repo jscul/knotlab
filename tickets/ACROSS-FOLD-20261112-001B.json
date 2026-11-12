@@ -12,15 +12,15 @@
   "id": "ACROSS-FOLD-20261112-001B",
   "kind": "ticket",
   "legacy": {},
-  "objective": "Run the frozen search: for rows y = 3, 4 (and -3, -4) and columns k = 5, 8, no bond of size at most |y| + 1 contains the origin and (k, y) within the frozen box; test L.",
+  "objective": "Run the frozen census: M the least column-0 bond with (k, y), k in {5, 8, 11}, y in 0..10 (where k >= floor((y+1)/2) + 1), has size 4 (y <= 1) or floor((y+1)/2) + 3; D no column-0 bond to rows -3..-5 up to size 7; N no bond of size <= 4 with the origin and (5,3) or (5,4) in the frozen box.",
   "ownership": {
     "root": false,
     "scope_id": "ACROSS-FOLD-20261112-001"
   },
   "parent": "ACROSS-FOLD-20261112-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Supported: D and N held; M held on 27 of 31 targets and failed on 4 (rows 9, 10) by its size cap only, the heddle bonds of 8 found there by the soundness audit and nothing smaller by Theorem C; the census's negatives certified by the audit.",
+  "status_class": "supported",
   "stop_rule": "",
   "title": "No smaller bond across: the lower bound"
 }

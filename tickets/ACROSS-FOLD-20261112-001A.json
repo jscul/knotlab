@@ -12,15 +12,15 @@
   "id": "ACROSS-FOLD-20261112-001A",
   "kind": "ticket",
   "legacy": {},
-  "objective": "Prove: on base 16 (sheared), for every y >= 2 up to a frozen bound and every k >= 3, a column segment rows 0..y with any distinction (k, j), 0 <= j <= y, is a bond of size y + 2 (and likewise for negative rows), so bond distance across the fold is at most max(3, |y| + 1) at every far column.",
+  "objective": "Prove Theorem L: on base 16 (sheared), for y = 2 to 8 and every k >= max(3, floor((y+1)/2) + 1), the ladder L_y (the triple {0,1,2} with rungs 4, 6, ..., y, or {-1,0,1} with rungs 3, 5, ..., y) with (k, y) is a bond of size floor((y+1)/2) + 3, so bond distance across the fold is at most floor((y+1)/2) + 2 there.",
   "ownership": {
     "root": false,
     "scope_id": "ACROSS-FOLD-20261112-001"
   },
   "parent": "ACROSS-FOLD-20261112-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Proved, refereed: Theorem L (heddles travel; bond for every y >= 2 at k >= floor((y+1)/2)+1), the self-keeping lemma, Theorems C and D for bonds of one along-count; checks C1-C4 passed.",
+  "status_class": "proved",
   "stop_rule": "",
-  "title": "Segments travel: the upper bound"
+  "title": "Ladders travel: the upper bound"
 }

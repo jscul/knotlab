@@ -11,7 +11,11 @@ a knot.)
   C2. Freeness, every k >= 3, y = 2 .. 8: every proper part of L_y u {(k, y)} takes all its patterns, realized by states periodic in y
       with period m (exact: bi-infinite walks in the transfer graph of columns of period m; the reachable sets of columns are eventually
       periodic in k, so a finite run decides every k). Periods m from y + 3 to 11.
-  C3. Mutation: with the rung below the top removed (y >= 4), the set is not constrained at k = 3 (window SAT): the chain needs every rung.
+  C3. Mutation: with the rung below the top removed (y >= 4), the set is free at k = 3 (every pattern carried by a periodic state):
+      the chain needs every rung.
+  C4. The core lemma (proof, step 2), exhaustively on row sets A within rows -2 .. 5 of size 1 to 5, every pattern a, every y in A, at
+      k = |A| and |A| + 2: if y is in core(a), no periodic state carries the opposite value at (k, y) (consistency); if not, periodic
+      states carry both values (completeness, certified).
 
 Usage: check.py [--write]   (the workspace .venv)
 """
@@ -89,6 +93,22 @@ class Strip:
 
     def bit(self, c, r):
         return (c >> (r % self.m)) & 1
+
+    def carries(self, cells, p):
+        """cells (x, r) with values p: some bi-infinite state of period m carries them (exact for period m)."""
+        x0 = min(x for x, _ in cells)
+        by = {}
+        for (x, r), v in zip(cells, p):
+            by.setdefault(x - x0, []).append((r, v))
+        cur = {c for c in self.past if all(self.bit(c, r) == v for r, v in by.get(0, []))}
+        for step in range(1, max(by) + 1):
+            nxt = set()
+            for c in cur:
+                nxt.update(self.succ[c])
+            cur = {d for d in nxt if all(self.bit(d, r) == v for r, v in by.get(step, []))}
+            if not cur:
+                return False
+        return bool(cur & self.fut)
 
     def realized_for_all_k(self, near, far_row):
         """near: [(row, value)] in column 0; far_row: (row, value) in column k or None. Returns the set of k >= 1 (as 'all', or a
@@ -176,22 +196,64 @@ def c2():
 
 
 def c3():
+    """Without the rung below the top, the set is free at k = 3: every pattern carried by a periodic state (certified; a window that
+    refutes nothing would not show it). Window SAT is reported alongside."""
     res = {}
+    strips = [Strip(m) for m in range(3, 12)]
     for y in range(4, 9):
         L = ladder(y)
         L2 = [r for r in L if r != L[-2]]
         idx, cl = window(-1, 4, min(L) - 4, max(L) + 4)
+        S = [(0, r) for r in L2] + [(3, y)]
         with Minisat22(bootstrap_with=cl) as s:
-            S = [(0, r) for r in L2] + [(3, y)]
-            constrained = any(not s.solve(assumptions=[idx[c] * (1 if b else -1) for c, b in zip(S, p)])
-                              for p in itertools.product((0, 1), repeat=len(S)))
-        res[y] = constrained
-    return {"constrained without the rung below the top": res, "holds": not any(res.values())}
+            refuted = any(not s.solve(assumptions=[idx[c] * (1 if b else -1) for c, b in zip(S, p)])
+                          for p in itertools.product((0, 1), repeat=len(S)))
+        free = all(any(st.carries(S, list(p)) for st in strips) for p in itertools.product((0, 1), repeat=len(S)))
+        res[y] = {"refuted in a window": refuted, "certified free": free}
+    return {"without the rung below the top, at k = 3": res, "holds": all(v["certified free"] for v in res.values())}
+
+
+def core(rows, a):
+    """The largest T within rows whose every r has r + 1 or r - 2 in T with the same value."""
+    T = dict(zip(rows, a))
+    while True:
+        drop = [r for r, v in T.items() if T.get(r + 1) != v and T.get(r - 2) != v]
+        if not drop:
+            return set(T)
+        for r in drop:
+            del T[r]
+
+
+def c4():
+    strips = [Strip(m) for m in range(3, 12)]
+    tally = {"core, opposite carried (bad)": 0, "core, consistent": 0, "not core, both carried": 0, "not core, uncertified": 0}
+    bad = []
+    rows_all = range(-2, 6)
+    for size in range(1, 6):
+        for rows in itertools.combinations(rows_all, size):
+            for a in itertools.product((0, 1), repeat=size):
+                T = core(list(rows), a)
+                for y in rows:
+                    for k in (size, size + 2):
+                        cells = [(0, r) for r in rows] + [(k, y)]
+                        val = {}
+                        for b in (0, 1):
+                            val[b] = any(st.carries(cells, list(a) + [b]) for st in strips)
+                        if y in T:
+                            forced = (a[rows.index(y)] + k) % 2
+                            key = "core, consistent" if not val[1 - forced] else "core, opposite carried (bad)"
+                        else:
+                            key = "not core, both carried" if val[0] and val[1] else "not core, uncertified"
+                        tally[key] += 1
+                        if key in ("core, opposite carried (bad)", "not core, uncertified") and len(bad) < 5:
+                            bad.append((rows, a, y, k, key))
+    return {"tally": tally, "first exceptions": bad,
+            "holds": tally["core, opposite carried (bad)"] == 0 and tally["not core, uncertified"] == 0}
 
 
 def main():
-    out = {"C1": c1(), "C2": c2(), "C3": c3()}
-    out["failures"] = [k for k in ("C1", "C2", "C3") if not out[k]["holds"]]
+    out = {"C1": c1(), "C2": c2(), "C3": c3(), "C4": c4()}
+    out["failures"] = [k for k in ("C1", "C2", "C3", "C4") if not out[k]["holds"]]
     print(json.dumps(out, indent=1, default=str))
     if "--write" in sys.argv:
         manifest = json.loads((HERE / "manifest.json").read_text())

@@ -29,7 +29,9 @@ influence further than any knot does, mostly through both kinds of knot together
   arrangement. After the run: no flip-blind triple is a triple of the not-all-equal stitch, in all 8 harmonies, **for the census's
   kind sets**; for 12 of the 96 kind sets of span at most 8 that present the 8 harmonies it fails (0011 + 01 with kinds (1, 3) and
   (5, 6): the triple 1100, 1001, 0101), and under those survival is 21.8% on 3 × 3, and 12.6% on 4 × 4 at every k from 1 to 12 for the
-  example, one parity knot surviving (the referee). Rarity is a property of a presentation, not of the harmony.
+  example, one parity knot surviving (the referee). Rarity is a property of a presentation, not of the harmony. The referee's
+  addendum (commit 85e7972d6): a second alternative, 000000111111 + 0011 + 01 with kinds (1, 6), (2, 7), (6, 7), gives the same 12.6%
+  on every 4 × 4 placement at every k from 1 to 12 (8,242 of 65,534), with 6,898 survivors fixing a count unreached and 3,520 full fixing.
 - **Beyond definition, where it survives (exact; recounted on every placement by the referee).** In 69 of the 114 surviving
   placements on 3 × 3 and 832 of the 850 on 4 × 4, count 0 fixes a count that the frozen propagation does not reach; full fixing in 39
   and 632. That propagation never passes a stitch for these harmonies, so against a fair baseline (the referee): the fixing needs both

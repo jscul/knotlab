@@ -1,0 +1,258 @@
+{
+ "growths": 689,
+ "per setting": {
+  "U300": 29,
+  "U200": 60,
+  "Og0.3": 100,
+  "Ol0.3": 100,
+  "U100": 100,
+  "X0.2": 100,
+  "X0.3": 100,
+  "X0.35": 100
+ },
+ "J1": {
+  "U100": {
+   "share <= 0.05 at 40 before": 0.95,
+   "share >= 0.5 at the last base": 0.95,
+   "ended": 100
+  },
+  "U200": {
+   "share <= 0.05 at 40 before": 1.0,
+   "share >= 0.5 at the last base": 0.9333333333333333,
+   "ended": 60
+  },
+  "U300": {
+   "share <= 0.05 at 40 before": 0.9655172413793104,
+   "share >= 0.5 at the last base": 0.9310344827586207,
+   "ended": 29
+  }
+ },
+ "J1b": {
+  "U100": 0.28,
+  "U200": 0.20300251256281407,
+  "U300": 0.2
+ },
+ "J2": {
+  "X0.3": {
+   "ended after >= 200": 75,
+   "class >= 10 and share >= 0.05 at half": 0.6133333333333333
+  },
+  "X0.35": {
+   "ended after >= 200": 67,
+   "class >= 10 and share >= 0.05 at half": 0.746268656716418
+  },
+  "Og0.3": {
+   "ended after >= 200": 70,
+   "class >= 10 and share >= 0.05 at half": 0.6714285714285714
+  },
+  "Ol0.3": {
+   "ended after >= 200": 84,
+   "class >= 10 and share >= 0.05 at half": 0.6904761904761905
+  }
+ },
+ "J3": {
+  "U100": 0.03409531189461449,
+  "U200": 0.021735832993596965,
+  "U300": 0.015488215488215488,
+  "X0.3": 1.0053329032827198,
+  "X0.35": 1.001984126984127,
+  "Og0.3": 1.0093582746027077,
+  "Ol0.3": 1.0089206560283688
+ },
+ "J4": {
+  "300": {
+   "later end": 70,
+   "still a base at 6,000": 13,
+   "AUC share": 0.8181318681318681,
+   "censored concordance share": 0.7523322299127294,
+   "AUC hazard": 0.7692307692307693,
+   "censored concordance hazard": 0.7269034005416792,
+   "AUC density m / n": 0.7362637362637363,
+   "censored concordance density m / n": 0.6983147758049955,
+   "AUC largest class": 0.8082417582417583,
+   "censored concordance largest class": 0.7454107733975324,
+   "AUC tied distinctions": 0.8,
+   "censored concordance tied distinctions": 0.7494733674390611,
+   "AUC share, positives ending after 3,000 only": 0.6666666666666666,
+   "positives ending after 3,000": 21,
+   "AUC share within density terciles (pos, neg, AUC)": [
+    [
+     15,
+     8,
+     0.7625
+    ],
+    [
+     28,
+     3,
+     0.9047619047619048
+    ],
+    [
+     27,
+     2,
+     0.7407407407407407
+    ]
+   ]
+  },
+  "1000": {
+   "later end": 46,
+   "still a base at 6,000": 13,
+   "AUC share": 0.8361204013377926,
+   "censored concordance share": 0.7659313725490197,
+   "AUC hazard": 0.8494983277591973,
+   "censored concordance hazard": 0.7717524509803921,
+   "AUC density m / n": 0.7090301003344481,
+   "censored concordance density m / n": 0.6605392156862745,
+   "AUC largest class": 0.8344481605351171,
+   "censored concordance largest class": 0.7625612745098039,
+   "AUC tied distinctions": 0.830267558528428,
+   "censored concordance tied distinctions": 0.7797181372549019,
+   "AUC share, positives ending after 3,000 only": 0.7362637362637363,
+   "positives ending after 3,000": 21,
+   "AUC share within density terciles (pos, neg, AUC)": [
+    [
+     11,
+     9,
+     0.7474747474747475
+    ],
+    [
+     17,
+     2,
+     0.9705882352941176
+    ],
+    [
+     18,
+     2,
+     0.6666666666666666
+    ]
+   ]
+  }
+ },
+ "J5": {
+  "runs reaching 6,000 knots": 78,
+  "largest <= 15": 0.9615384615384616,
+  "max": 51,
+  "still a base after 6,000 moves": 99
+ },
+ "J6": {
+  "X0.3": 1.0,
+  "X0.35": 1.0,
+  "Og0.3": 1.0,
+  "Ol0.3": 1.0
+ },
+ "J6 median of (members' median index) / n_end": {
+  "X0.3": 0.21988918051910178,
+  "X0.35": 0.28258823529411764,
+  "Og0.3": 0.24270744831492497,
+  "Ol0.3": 0.2423076923076923
+ },
+ "census summary predictions": {
+  "J1": {
+   "detail": {
+    "U100": {
+     "share_ge_0.5_at_k1": 0.95,
+     "share_le_0.05_at_k40": 0.95
+    },
+    "U200": {
+     "share_ge_0.5_at_k1": 0.9333333333333333,
+     "share_le_0.05_at_k40": 1.0
+    },
+    "U300": {
+     "share_ge_0.5_at_k1": 0.9310344827586207,
+     "share_le_0.05_at_k40": 0.9655172413793104
+    }
+   },
+   "holds": true
+  },
+  "J1b": {
+   "holds": true,
+   "k10_U100": 0.28,
+   "k10_U300": 0.2
+  },
+  "J2": {
+   "detail": {
+    "Og0.3": {
+     "ended_ge200": 70,
+     "share_with_class_at_half_life": 0.6714285714285714,
+     "survivors": 12,
+     "survivors_with_class_at_half": 0.6666666666666666
+    },
+    "Ol0.3": {
+     "ended_ge200": 84,
+     "share_with_class_at_half_life": 0.6904761904761905,
+     "survivors": 1,
+     "survivors_with_class_at_half": 1.0
+    },
+    "X0.3": {
+     "ended_ge200": 75,
+     "share_with_class_at_half_life": 0.6133333333333333,
+     "survivors": 13,
+     "survivors_with_class_at_half": 0.15384615384615385
+    },
+    "X0.35": {
+     "ended_ge200": 67,
+     "share_with_class_at_half_life": 0.746268656716418,
+     "survivors": 0,
+     "survivors_with_class_at_half": null
+    }
+   },
+   "holds": true
+  },
+  "J3": {
+   "holds": true,
+   "median_ratio_k20_over_k1": {
+    "Og0.3": 1.0093582746027077,
+    "Ol0.3": 1.0089206560283688,
+    "U100": 0.03409531189461449,
+    "U200": 0.021735832993596965,
+    "U300": 0.015488215488215488,
+    "X0.3": 1.0053329032827198,
+    "X0.35": 1.001984126984127
+   }
+  },
+  "J4": {
+   "detail": {
+    "1000": {
+     "auc_hazard": 0.8494983277591973,
+     "auc_share": 0.8361204013377926,
+     "later_end": 46,
+     "survive": 13
+    },
+    "300": {
+     "auc_hazard": 0.7692307692307693,
+     "auc_share": 0.8181318681318681,
+     "later_end": 70,
+     "survive": 13
+    }
+   },
+   "holds": true
+  },
+  "J5": {
+   "holds": true,
+   "runs_reaching_6000": 78,
+   "share_le15": 0.9615384615384616
+  },
+  "J6": {
+   "holds": true,
+   "share_older_than_median": {
+    "Og0.3": 1.0,
+    "Ol0.3": 1.0,
+    "X0.3": 1.0,
+    "X0.35": 1.0
+   }
+  }
+ },
+ "deviations": {
+  "runs_xo.jsonl": {
+   "records": 500,
+   "identical to the merged record (seconds aside)": 500
+  },
+  "runs_u.jsonl": {
+   "records": 160,
+   "identical to the merged record (seconds aside)": 160
+  },
+  "runs_u300.jsonl": {
+   "records": 2,
+   "identical to the merged record (seconds aside)": 1
+  }
+ }
+}

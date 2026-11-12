@@ -3353,6 +3353,11 @@ So holes come in two kinds:
      be); where the inside constrains its ends more than a knot does, the law reaches past the steps
      twice as often (through the knot mostly by ties repeated at every level; directly, by keeping deep distinctions near)
      ([decision note](../research/NEST-READ-20261112-001/nest_read.md)).
+   - **Alive only in the limit** (`LIMIT-ONLY-20261112-001`; referee pending): nested families that die at a finite depth, with
+     knots at the bottom, while the bottomless pattern lives are 0.6% of families under the description code but 56% of those
+     that die; each has a self-holding definition whose limit allows its three ends all equal, the one state the bottom knot
+     forbids (proved), and in the limit the self-holding knot usually sets its ends free; no one-definition family with at most
+     three calls ever dies ([decision note](../research/LIMIT-ONLY-20261112-001/limit_only.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

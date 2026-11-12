@@ -39,8 +39,8 @@ satisfiability at every depth?
 
 Dying at a finite depth while the bottomless pattern lives is not rare among dying families: under the description code more than
 half of the families that die at some depth live in the limit. What decides it is exact and simple to state: the finite patterns
-end in knots, which forbid their three ends from being all equal, and the bottomless pattern needs exactly that state somewhere
-(proved); in the limit the self-holding knot usually sets its three ends entirely free. Small families (at most three calls) never
+end in knots, which forbid their three ends from being all equal, and every family alive only in the limit has a self-holding
+definition whose limit allows exactly that state (proved); in the limit the self-holding knot usually sets its three ends entirely free. Small families (at most three calls) never
 die at all. No single fixed-point criterion inside the knot decides life at every depth: it does when the knot and its image compare,
 and fails in about a seventh of the rest under the code.
 

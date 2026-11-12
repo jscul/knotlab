@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ODD-SEARCH-20261112-001A-P001",
+  "canonical_id": "ODD-SEARCH-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "ODD-SEARCH-20261112-001A",
+  "proof": "ODD-SEARCH-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Searching words of odd period for one without a certificate",
+  "status": "Proved",
+  "claim": "Proved, refereed by an independent session: the 12 not-all-equal knot kinds of span below 61 whose triples are translates of {0, s, 2s} mod 61, s in {1, 2, 11, 22} up to sign, allow exactly 122 repeating words (two orbits of period 61 swapped by the mirror, no two differing in one place), so every state they allow repeats with period 61 (lemma 4 of EVEN-PERIOD-20261112-001): an odd not-all-equal harmony, unsplit. Exact, complete: no word of period 31 or 37 lacks a certificate, so no harmony has period 31 or 37. Lemmas 5 to 8 (three from the advisor model) by hand. Targeted ranges found no other counterexample.",
+  "dependencies": [
+    "EVEN-PERIOD-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "Two of the 122 words differing in one place.",
+    "A state of the period-61 base on a long window breaking the 61-repeat.",
+    "A word of period 31 or 37 without a certificate."
+  ],
+  "lineage": {
+    "home_scope": "ODD-SEARCH-20261112-001",
+    "epic_path": [
+      "ODD-SEARCH-20261112-001"
+    ],
+    "parents": [
+      "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/manifest.json",
+      "research/ODD-SEARCH-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/manifest.json": "9e5ae57255e7a822a5b13bd5bf8e6a41d7c7172e8c6a0cbcb9494c9e91ecdbec",
+    "research/ODD-SEARCH-20261112-001/preregistration.md": "c9fb5afdda57f1f20f15d87ba2a31a73c730fec86ba79b5b6ce3bb6f44150b94"
+  },
+  "paths": {
+    "manifest": "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/manifest.json",
+    "identity": "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/identity.json",
+    "proof": "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/proof.md",
+    "result": "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/result.json",
+    "check": "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets/check.py",
+    "directory": "proofs/ODD-SEARCH-20261112-001A/ODD-SEARCH-20261112-001A-P001_pattern_sets"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law on bases along one shift; words of period 31 and 37 (complete), targeted ranges at 41, 43, 47 and the progression family at primes 31 to 61.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit be4f5a9d3); refereed by fresh code (odd_referee.py) and by an independent fresh model session (independent_referee/report.md).",
+    "status": "lemmas by hand; exhaustive search (check.py); both referees passed",
+    "novelty": "known-with-delta"
+  }
+}

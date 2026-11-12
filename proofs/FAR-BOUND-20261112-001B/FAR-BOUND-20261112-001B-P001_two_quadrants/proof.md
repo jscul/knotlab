@@ -1,6 +1,6 @@
 # No length on two quadrants of a typical travelling base
 
-Status: Proved (computer-assisted: a hand argument with exact finite checks), referee pending
+Status: Proved (computer-assisted: a hand argument with exact finite checks), refereed
 
 Ticket `FAR-BOUND-20261112-001B`, 2026-11-12. The base was selected by the pre-registration's frozen rule: the first base, in the
 order r ascending and then sample index, that ticket A's recheck classes bounded across. It is sample 24 of
@@ -37,20 +37,28 @@ same way in both directions. Its value at x = (α, y) equals its value at x's re
 mod 4; y itself for y < 4, else 4 + (y − 4) mod 8), and a representative never coincides with a cell of T_j. So whether a pattern on
 π ∪ {x} (π a pair of T_j) is carried depends only on x's representative: finitely many cases. Check C3 verifies, for every
 representative with α ≥ 1 and y ≥ 0, that some j ∈ {0, −1, −2} with (y − j) mod 4 in {0, 1, 2} has every pattern of every part
-π ∪ {x} carried (1,620 cases).
+π ∪ {x} carried (1,620 cases checked; three of them are knots of the base, never free, at values of j the proof does not use there).
+The across period must be a multiple of 8: travel along 4u complements the pattern at each step (a period of 12 fails).
 
 **The bond.** For x = (α, y) with α ≥ 1, y ≥ 0, choose j as in C3. Then T_j ∪ {x} is not shattered (T_j's pattern 000 forces x, C1),
 T_j is free (C2), and each π ∪ {x} is free (C3); its other proper subsets are subsets of these. So T_j ∪ {x} is a bond of four holding
 the origin (every T_j with j ∈ {0, −1, −2} holds (0,0)) and x. The second quadrant follows from d(0, v) = d(0, −v) and translation. ∎
 
 **Why the census called this base rank 1.** Its second travelling direction is 4u, longer than the census's shifts (entries at most
-2): rank ≥ 1 was a lower bound. Without the kind {0, (0,4), (2,2)} the travel along 4u disappears (C4).
+2): rank ≥ 1 was a lower bound. Without the kind {0, (0,4), (2,2)} the travel along 4u disappears (C4; the census check is a window
+non-refutation, which the referee certified, and the referee found that the travel along t′ needs that kind too).
 
 ## Nearest known result
 
 Directional determinism with two independent directions gives forced cones (Boyle and Lind; bootstrap percolation's stable directions,
 Bollobás, Smith and Uzzell). The statement for not-all-equal, read as bond distance, was not found. Classification: known-with-delta
 for the mechanism.
+
+## Review
+
+The background referee thread reran the checks with two parameter sets (60 representatives and 1,620 cases; 176 and 4,800) and
+found every representative covered, the certificate and the representative argument sound, and asked for the three wording points
+above.
 
 ## Checks
 

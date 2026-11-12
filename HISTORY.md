@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 12 November 2026: bounded at every distance, narrowed by its referee
+
+- Far away on one-direction bases (`FAR-BOUND-20261112-001`), the "creep" from 4 to 6 by 23 across is a rise of certified upper
+  bounds: no lower bound was computed, window values rise on only one law, and the data are compatible with a bound of 6. The
+  pattern linking a second direction with staying bounded is not significant on certified directions (8 of 9 against 4 of 12). The
+  proof on one base was confirmed by an independent rerun ([decision note](research/FAR-BOUND-20261112-001/far_bound.md)).
+- Unchanged: the certificate, the recheck, and the proof on one base.
+
 ## 12 November 2026: growing bases and their unlengthened shifts, narrowed
 
 - Bounded at every distance? (`FAR-BOUND-20261112-001`) read the bases that grow across as all having a single unlengthened shift,

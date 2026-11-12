@@ -2,8 +2,7 @@
 
 Epic `FAR-BOUND-20261112-001` (`TRAVEL-READ-20261112-001` direction 1; G1 with G17, question 9; program topology, group spacing),
 2026-11-12, at the coordinator's go-ahead and in its order: the recheck, then far away, then a proof on one base. Pre-registered in
-commit a0d2ee806 after the advisor model's critique; the runs came after. The canonical K1–K3 test is unchanged. **Referee pending**
-(handed to the referee thread).
+commit a0d2ee806 after the advisor model's critique; the runs came after. The canonical K1–K3 test is unchanged. Refereed: confirmed with fixes, far reading narrowed (Review).
 
 ## Words
 
@@ -27,17 +26,17 @@ transverse offset grows to 23 and on rings to radius 15?
 | --- | --- | --- | --- |
 | 1 | **A sound certificate for states that repeat along no step.** States periodic across and repeating along only outside a finite stretch (and the same in both directions) extend to states of the base by repetition. They carry exactly the patterns doubly periodic states miss on base 16, whose theorem is now certified in full (4, 5, 5, 6, 6). | proved (soundness); control held | A |
 | 2 | **About half the bounded bases are bounded on certified bonds.** Of TRAVEL-READ's 66 rank-1 bases, 34 are bounded across on certified bonds, 3 grow across, 29 unresolved; the window values did not change in a window twice as large. F1 (at least 40) failed; TRAVEL-READ's headline (56) narrows to 34 and is logged. | computed, frozen (F1 failed) | A |
-| 3 | **Far away, the bound holds on some bases and creeps up on others.** Of the 34, 26 were decided within the cap: 16 stay within one of their near value at every far target to 23 across (along 7, 10, 15), 5 rise by two (from 4 to 6, at 19 to 23 across), 5 lack certificates at more than a fifth of the far targets; 8 hit the 30-minute cap. The mean certified bond rises slowly with the across-count, from 4.08 at 7 to 4.59 at 23. F2 failed, and its validity bound (at most a fifth dropped) too. | computed, frozen (F2 failed) | A |
+| 3 | **Far away, certified upper bounds stay on some bases and rise on others.** Of the 34, 26 were decided within the cap: 16 stay within one of their near value at every far target to 23 across (along 7, 10, 15); on 4 the certified upper bound rises by two (4 to 6, at 19 to 23 across), and on 6 certificates are missing at more than a fifth of the far targets (the referee's recount; 183/4, whose window values are 4 everywhere, belongs here, not with the rises); 8 hit the 30-minute cap, among them the base proved bounded in ticket B, so dropping is no sign of growth. No lower bound on the least bond is computed: window values rise only on one law (17/4 and 17/5, the same base at two r), stay within one of the near value on 109/3 and 112/4, and the far data are compatible with a bound of 6. The mean certified bound rises from 4.08 at 7 across to 4.59 at 23. F2 failed, and its validity bound (at most a fifth dropped) too. | computed, frozen (F2 failed); refereed, narrowed | A |
 | 4 | **Around bases with two directions it stays bounded to radius 15.** On 77 of 102 rank-2 bases at least 80% of the ring-15 targets have a bond of at most 5, none larger than the ring-3 value + 1 (F3 held); 72.5% of the ring-15 bonds are certified. | computed, frozen (F3 held, window level) | A |
 | 5 | **A proof on the selected base: no length on two quadrants.** On sample 24 at r = 3 (chosen by the frozen rule), every distinction in two opposite quadrants of the frame is within bond distance 3 of the origin, at any distance. The mechanism is a second travelling direction (4 across) outside the census's shift list: a triple's pattern travels along both and forces a cone. | proved (computer-assisted: a hand argument with exact finite checks, 1,620 cases); referee pending | B |
-| 6 | **A second direction goes with staying bounded (exploratory).** With a wider, uncertified search for a second travelling direction (shifts up to 6): of the bases with a second direction whose far range was decided, 11 stay bounded and 1 grows (4 more lack certificates); of those with one direction, 5 stay bounded and 4 grow (1 lacks certificates). The three bases that grow across near the origin, like base 16, show one direction only. | computed, exploratory (designed after the recheck) | A |
+| 6 | **A second direction and staying bounded (exploratory, not significant).** With my uncertified search for a second direction: of the decided bases with one, 11 stay bounded and 1 rises; of those without, 5 and 4. With the referee's certified search: 8 of 9 and 4 of 12; Fisher's p = 0.34 (certified) and 0.12 (uncertified), neither significant. What survives: no base with a certified second direction rose by 2 at window level. | computed, exploratory; refereed | A |
 
 ## Answer
 
 Partly. The bounded bonds are real on about half the bases (34 of 66 on certified bonds), and where a base has two unlengthened
-shifts they stay bounded far away and can be proved bounded on whole quadrants (one base, proved). Where only one direction is found,
-the bound often creeps up slowly with distance across (to 6 at 23 across on 5 bases), so "bounded at every distance" is not
-established there: those bases may read a slowly growing distance across, between base 16's line and no length at all.
+shifts they stay bounded far away and can be proved bounded on whole quadrants (one base, proved). Elsewhere the certified upper
+bounds rise slowly on a few bases (to 6 at 23 across on 4), but no lower bound is computed and the data are compatible with a bound
+of 6: "bounded at every distance" is neither established nor refuted there.
 
 ## Reading
 
@@ -69,8 +68,14 @@ binary weight (the advisor's guard against Ledrappier-type growth). It found slo
 
 ## Review
 
-Referee pending: handed to the referee thread on 2026-11-12. TRAVEL-READ's referee (R1) already judged the eventually periodic
-certificate sound and this epic's one-base proof sound in logic; its finite checks are for this epic's referee.
+The background referee thread (report `research/FAR-BOUND-20261112-001/referee-R1/report.md`, 7d52e8e5c) confirmed the epic with
+fixes: ticket B confirmed (rerun with its own parameters, 176 representatives and 4,800 cases, every representative covered), the
+eventually periodic certificate and the representative argument sound; ticket A's far reading narrowed (fix 1, Narrowing: rises of
+certified upper bounds, no lower bound, compatible with a bound of 6; the recount 16 / 4 / 6 / 8); the second-direction pattern kept
+exploratory with the certified numbers (fix 2, Not a block); ticket B's wording (fix 3, Not a block: three of the 1,620 cases are
+knots of the base at values of j the proof does not use, the across period must be a multiple of 8, and C4's census check was a window
+non-refutation, certified by the referee, who also found that the travel along t′ needs the third kind); dropped bases not a sign of
+growth (fix 4, Not a block). A completion run on the 8 dropped bases is the referee's to fold in.
 
 ## Literature and provenance
 
@@ -107,7 +112,7 @@ F2.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — bounded at every distance? | **Status:** Partially successful, referee pending | Bounded and proved where two shifts fold; slow growth on some one-fold bases; F1, F2 failed, F3 held |
+| This attempt — bounded at every distance? | **Status:** Partially successful, refereed (narrowed) | Bounded and proved where two shifts fold; slow growth on some one-fold bases; F1, F2 failed, F3 held |
 | Local direction — one fold against two | Continue | The comparison the data now points to |
 | Broader exploration — G1 on overlapping bases | Known alternatives | The harmony thread's repeat-size test on the unresolved bases (agreed side ticket) |
 | Long-term goal — G1 Space from a law (question 9) | Capability gained | A proved zero-dimensional reading on a whole quadrant of a random base, and a certificate for states that repeat along no step |

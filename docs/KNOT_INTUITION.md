@@ -6230,11 +6230,11 @@ So holes come in two kinds:
      rare. The clean comparison is between the bases bounded across with no second direction and the few that grow
      ([decision note](../research/TRAVEL-READ-20261112-001/travel_read.md)).
 
-   **2026-11-12: bounded at every distance?** (`FAR-BOUND-20261112-001`; referee pending).
+   **2026-11-12: bounded at every distance?** (`FAR-BOUND-20261112-001`; refereed, narrowed).
    - **Real where two shifts fold (proved on one base).** On a random base chosen by a fixed rule, a triple's pattern travels along
      two independent shifts and forces a cone, so every distinction in two opposite quadrants is within bond distance 3 of the origin.
-   - **Creeping where one folds (computed).** On bases with one direction found, the least certified bond across stays near 4 on
-     some and rises slowly on others (to 6 by 23 across). A new certificate, states that repeat along no step, made these bonds
+   - **Unsettled where one folds (computed).** On bases with one direction found, the least certified bond across stays near 4 on
+     some; on a few its certified upper bound rises to 6 by 23 across, with no lower bound computed (compatible with a bound of 6). A new certificate, states that repeat along no step, made these bonds
      checkable; on certified bonds about half of those bases are bounded near the origin.
    - **What it suggests.** The law's own dimension may be set by how many shifts it leaves without length: none in a cone with two,
      a distance across that grows with one ([decision note](../research/FAR-BOUND-20261112-001/far_bound.md)).

@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "PARITY-SURVIVE-20261112-001A-P001",
+  "canonical_id": "PARITY-SURVIVE-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "PARITY-SURVIVE-20261112-001A",
+  "proof": "PARITY-SURVIVE-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Which parity placements survive",
+  "status": "Proved",
+  "claim": "Exact on the frozen range: in the 8 harmonies with flip-blind triples, the not-all-equal stitch allows none (lemma A, a census). With each cell parity with probability rho (1/8 to 7/8), under 1% of placements survive for every n >= 6 and none of 11,497 samples at 7 x 7 to 9 x 9 (55 of 56 cells; cap). Neither frozen rule holds: class-level fit is not enough (705 placements), and one survivor class has an isolated parity cell. Over every survivor on 3 x 3 and 4 x 4, fixing from every base count: 10% from the parity equations alone, 14% with the harmony's states, 76% needs the not-all-equal stitches, 36% beyond arc consistency (on samples 38 / 25 / 37 / 25%). Referee pending.",
+  "dependencies": [
+    "PARITY-MIX-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A fresh census that changes survival or the split of fixing.",
+    "Lemma A failing on one of the 8 harmonies."
+  ],
+  "lineage": {
+    "home_scope": "PARITY-SURVIVE-20261112-001",
+    "epic_path": [
+      "PARITY-SURVIVE-20261112-001"
+    ],
+    "parents": [
+      "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/manifest.json",
+      "research/PARITY-SURVIVE-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/PARITY-MIX-20261112-001A/PARITY-MIX-20261112-001A-P001_parity_among_copies/manifest.json": "84733bd013dc7c8548e1bb712fbdff70534e36e8eeb24cf611c3dcf8bc3a73fb",
+    "research/PARITY-SURVIVE-20261112-001/preregistration.md": "d0f8685355438874acf033ed50dd5bcd9b483cd1892d85a749b50346c83a4661"
+  },
+  "paths": {
+    "manifest": "proofs/PARITY-SURVIVE-20261112-001A/PARITY-SURVIVE-20261112-001A-P001_which_survive/manifest.json",
+    "identity": "proofs/PARITY-SURVIVE-20261112-001A/PARITY-SURVIVE-20261112-001A-P001_which_survive/identity.json",
+    "proof": "proofs/PARITY-SURVIVE-20261112-001A/PARITY-SURVIVE-20261112-001A-P001_which_survive/proof.md",
+    "result": "proofs/PARITY-SURVIVE-20261112-001A/PARITY-SURVIVE-20261112-001A-P001_which_survive/result.json",
+    "check": "proofs/PARITY-SURVIVE-20261112-001A/PARITY-SURVIVE-20261112-001A-P001_which_survive/check.py",
+    "directory": "proofs/PARITY-SURVIVE-20261112-001A/PARITY-SURVIVE-20261112-001A-P001_which_survive"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law with flip-blind parity knots (A78); the 8 harmonies of period <= 16 with flip-blind triples; copies along two shifts on 3 x 3 and 4 x 4 (every placement) and to 9 x 9 (100 Bernoulli placements per harmony, size and rho; one cell cut by the cap).",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit d4d3c753b); independent referee pending.",
+    "status": "exact census and samples (check.py); the scale part assembled from rows saved before its cap; referee pending",
+    "novelty": "known-with-delta"
+  }
+}

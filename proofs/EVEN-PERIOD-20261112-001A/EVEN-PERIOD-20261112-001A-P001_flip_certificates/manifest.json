@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "EVEN-PERIOD-20261112-001A-P001",
+  "canonical_id": "EVEN-PERIOD-20261112-001A-P001",
+  "kind": "proof",
+  "ticket": "EVEN-PERIOD-20261112-001A",
+  "proof": "EVEN-PERIOD-20261112-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Flip certificates for odd-period words",
+  "status": "Proved",
+  "claim": "Proved by hand: under the plain not-all-equal law along one shift, flipping every value never maps an odd orbit onto itself but forbids nothing (lemma 1); a word satisfies a knot kind through its residue pairs, which for odd periods have distinct residues (lemma 2); a compatible word with a flippable residue rules out every harmony allowing the word (lemma 3); a word of odd period p without such a certificate would make the base of its kinds of span less than p a harmony (lemma 4, suggested by the advisor model). Computer-assisted, refereed by fresh code and by an independent session: every one of the 25,328,938 Lyndon words of odd period 3 to 29 has a certificate, so no not-all-equal harmony at any span and with any number of knot kinds has a state of odd period at most 29. Not proved for every odd period.",
+  "dependencies": [
+    "HARMONY-ARITH-20261112-001Z"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A word of odd period without a certificate (by lemma 4, an odd-period harmony).",
+    "A certificate for a word of a known harmony (the control).",
+    "The referees disagreeing with the census."
+  ],
+  "lineage": {
+    "home_scope": "EVEN-PERIOD-20261112-001",
+    "epic_path": [
+      "EVEN-PERIOD-20261112-001"
+    ],
+    "parents": [
+      "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies/manifest.json",
+      "research/EVEN-PERIOD-20261112-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/HARMONY-ARITH-20261112-001A/HARMONY-ARITH-20261112-001A-P001_binding_and_harmonies/manifest.json": "31820c028acb3603ff8c23bf3289f224af482cf0e541f950a68c7618c4551e2f",
+    "research/EVEN-PERIOD-20261112-001/preregistration.md": "50a9f8ee262027dd256e2cff93f85960547168626095438490ee798ca6440988"
+  },
+  "paths": {
+    "manifest": "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/manifest.json",
+    "identity": "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/identity.json",
+    "proof": "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/proof.md",
+    "result": "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/result.json",
+    "check": "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates/check.py",
+    "directory": "proofs/EVEN-PERIOD-20261112-001A/EVEN-PERIOD-20261112-001A-P001_flip_certificates"
+  },
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law on bases along one shift with one distinction per shift; words of odd period 3 to 29.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-12, pre-registered (commit 8f4b693b8); refereed by fresh code (even_referee.py) and by an independent fresh model session (independent_referee/report.md).",
+    "status": "lemmas by hand; exhaustive census (check.py); both referees passed",
+    "novelty": "known-with-delta"
+  }
+}

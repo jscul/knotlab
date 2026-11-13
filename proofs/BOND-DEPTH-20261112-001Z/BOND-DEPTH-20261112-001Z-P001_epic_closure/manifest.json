@@ -1,0 +1,91 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "BOND-DEPTH-20261112-001Z-P001",
+ "canonical_id": "BOND-DEPTH-20261112-001Z-P001",
+ "kind": "proof",
+ "ticket": "BOND-DEPTH-20261112-001Z",
+ "proof": "BOND-DEPTH-20261112-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: counting inside, least bonds across depths",
+ "status": "Proved",
+ "claim": "Ledger closing BOND-DEPTH-20261112-001: ticket A, the frozen reading (method validated; P1 failed: 204 of 664 bounded exactly, 240 growing within depth 30); no correction; referee pending; recommendation research directions, proved rates. No new claim.",
+ "dependencies": [
+  "BOND-DEPTH-20261112-001A"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "BOND-DEPTH-20261112-001",
+  "epic_path": [
+   "BOND-DEPTH-20261112-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/BOND-DEPTH-20261112-001A/BOND-DEPTH-20261112-001A-E001_spine_bonds/contract.json": "f098fc6b152af8bb4eab75c66f1564e2491f50c5d9fd83dd6b11a4a548d9800d",
+  "artifacts/BOND-DEPTH-20261112-001A/BOND-DEPTH-20261112-001A-E001_spine_bonds/summary.json": "c14f67110ee2b4ef72db4ca6964619328893df3ae3106822fe95691738fee520"
+ },
+ "paths": {
+  "manifest": "proofs/BOND-DEPTH-20261112-001Z/BOND-DEPTH-20261112-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/BOND-DEPTH-20261112-001Z/BOND-DEPTH-20261112-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/BOND-DEPTH-20261112-001Z/BOND-DEPTH-20261112-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/BOND-DEPTH-20261112-001Z/BOND-DEPTH-20261112-001Z-P001_epic_closure/result.json",
+  "check": "proofs/BOND-DEPTH-20261112-001Z/BOND-DEPTH-20261112-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/BOND-DEPTH-20261112-001Z/BOND-DEPTH-20261112-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-12; referee pending (the referee thread).",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

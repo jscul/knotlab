@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 13 November 2026: growth along a ray, narrowed by the reach census
+
+- The proved growth of the law's reach along a ray (`PROVED-RATE-20261113-001`, and the reading of `BOND-DEPTH-20261112-001`) was
+  read as the reach measuring depth. It measures the distance to one chosen copy: along another ray, the last-call one, 131 of the
+  224 families are bounded at 3 to 5 members at every depth past an onset, so some copy at each depth stays close to the top
+  ([the reach census](research/REACH-CENSUS-20261113-001/reach_census.md)).
+- Unchanged: every proved rate and bound along the first ray.
+
 ## 12 November 2026: influence through hidden copies, confirmed by its referee
 
 - `HIDDEN-COPY-20261112-001` was confirmed: the certificate that every self-map-small case reached is essentially unary is sound, the

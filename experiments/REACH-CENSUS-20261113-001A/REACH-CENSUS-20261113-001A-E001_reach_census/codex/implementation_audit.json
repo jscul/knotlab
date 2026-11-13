@@ -1,0 +1,239 @@
+{
+  "ambiguities": [],
+  "audit_kind": "read-only implementation audit against the frozen spec",
+  "audited_source_hashes": {
+    "reach_dp.py": "9fff2b1cdc77ea85cb286cc1b82e71e5921f3561e7d2fa93ec796287da268a19",
+    "run_census.py": "ffe059ec3c7e5ab5a009b69a04bf50f85c8b1478851708b147d01199ec36313a"
+  },
+  "computation_performed": "One 0.181-second DP fault-injection check on a single small family; no gate replay, full census, class-share calculation, child process, or substantial allocation.",
+  "conformant_checks": [
+    {
+      "locations": [
+        "reach_dp.py:82-87"
+      ],
+      "observation": "Normalizes definitions, calls LS.usual, then uses exactly the specified TOP iteration and main relation.",
+      "subject": "Usual limit"
+    },
+    {
+      "locations": [
+        "reach_dp.py:91-105",
+        "reach_dp.py:108-142"
+      ],
+      "observation": "Own distinctions are allocated before each body; non-self-holding callees are expanded depth first in body order, while self-holding calls retain their identity.",
+      "subject": "Inlining"
+    },
+    {
+      "locations": [
+        "reach_dp.py:105",
+        "reach_dp.py:153-159"
+      ],
+      "observation": "S is selected from the first self-holding call, and entry/ray positions select the first or last corresponding calls as requested.",
+      "subject": "Ray selection"
+    },
+    {
+      "locations": [
+        "reach_dp.py:198-212",
+        "reach_dp.py:265-274"
+      ],
+      "observation": "The initial image unions all incoming columns, so no incoming condition is imposed; W may contain any main distinction and must contain one of all k main ports.",
+      "subject": "Start block with k greater than three"
+    },
+    {
+      "locations": [
+        "reach_dp.py:226-252",
+        "reach_dp.py:269-272"
+      ],
+      "observation": "Each forgotten table is compiled from W with that member removed, using its complete assignment table.",
+      "subject": "Full forgotten-member tables"
+    },
+    {
+      "locations": [
+        "reach_dp.py:276-290"
+      ],
+      "observation": "Middle operations admit the empty subset; closing operations require a nonempty subset and the stated F/Gf acceptance test.",
+      "subject": "Middle and closing subsets"
+    },
+    {
+      "locations": [
+        "reach_dp.py:162-168",
+        "reach_dp.py:427-438",
+        "reach_dp.py:474-506"
+      ],
+      "observation": "S1-S3 precede symbolic S4; S4 is evaluated before the block-size cap. Symbolic S4 follows the declared K/side/ray participation test.",
+      "subject": "Settled-class order"
+    },
+    {
+      "locations": [
+        "reach_dp.py:294-328",
+        "reach_dp.py:373-391"
+      ],
+      "observation": "Capped graphs omit unknown transitions and are marked incomplete. Classification accepts incomplete graphs only with bounded_all or eventually_bounded true; otherwise they remain unresolved.",
+      "subject": "Incomplete graph and positive certificates"
+    },
+    {
+      "locations": [
+        "reach_dp.py:26-29",
+        "reach_dp.py:407-408",
+        "reach_dp.py:423",
+        "reach_dp.py:436-438"
+      ],
+      "observation": "Default node, family time, and block-size limits match the frozen numbers. The memory exception is recorded separately above.",
+      "subject": "Declared graph and time caps"
+    },
+    {
+      "locations": [
+        "run_census.py:75-76",
+        "run_census.py:111-120",
+        "run_census.py:164-168"
+      ],
+      "observation": "The ordinary task path uses at most N-1 children plus the computing parent. The distinct G1 startup exception is recorded above.",
+      "subject": "Ordinary census process accounting"
+    },
+    {
+      "locations": [
+        "run_census.py:79-84",
+        "run_census.py:100-105"
+      ],
+      "observation": "One writer appends and fsyncs results and skips completed keys; duplicate existing keys are rejected. Interrupted-tail exceptions are recorded above.",
+      "subject": "Append ownership and duplicate keys"
+    }
+  ],
+  "core_findings": [
+    {
+      "evidence": {
+        "child_processes": 0,
+        "family_key": "[[3,1,[[\"K\",[0,1,3]],[\"SELF\",[1,2,3]]]]]",
+        "kind": "tiny one-process fault injection",
+        "memory_ceiling_bytes": 3000000000,
+        "method": "Wrap the original referee call, set a flag after it returns, and have rss_bytes report 3000000001 only after that flag.",
+        "nodes": 1562,
+        "observed_class": "bounded",
+        "observed_status": "done",
+        "real_large_allocation": false,
+        "reported_peak_rss_bytes": 3000000001,
+        "seconds": 0.181036
+      },
+      "file": "reach_dp.py",
+      "id": "A1",
+      "issue": "The per-worker 3 GB stop is checked only by checkpoint. productive_and_cycles and the referee exact test have no checkpoint calls, and no checkpoint runs after the referee returns. A family may therefore finish as done above the worker memory ceiling.",
+      "lines": [
+        404,
+        409,
+        412,
+        449,
+        450,
+        455,
+        469
+      ],
+      "severity": "high",
+      "status": "open at audited snapshot",
+      "suggested_fix": "Enforce per-worker RSS throughout every computed stage using an owned-process guard, and force a checkpoint after the referee calculation. Preserve the aggregate limit as a separate stop."
+    },
+    {
+      "evidence": {
+        "consumer_field": "passed",
+        "kind": "direct return-schema comparison",
+        "producer_field": "gate_ok"
+      },
+      "file": "run_census.py",
+      "id": "A2",
+      "issue": "The full runner reads gate[\"passed\"], but validation.run_gate1 returns gate_ok and no passed field. Both --only-gate664 and normal full-run startup raise KeyError after G1.",
+      "lines": [
+        201,
+        204,
+        205
+      ],
+      "related_file": "validation.py",
+      "related_lines": [
+        323,
+        324,
+        325,
+        343
+      ],
+      "severity": "high",
+      "status": "open at audited snapshot",
+      "suggested_fix": "Use gate_ok consistently, or adapt the validator result once before inspecting it."
+    },
+    {
+      "evidence": {
+        "gate_children": 4,
+        "kind": "static process accounting",
+        "requested_workers": 4,
+        "runner_parent": 1,
+        "total": 5
+      },
+      "file": "run_census.py",
+      "id": "A3",
+      "issue": "The pre-census G1 call passes workers=N to a validator that creates Pool(N), so N children run in addition to the runner parent. --workers 4 therefore has five processes despite the four-process ceiling and the runner parent-inclusive contract.",
+      "lines": [
+        201
+      ],
+      "related_file": "validation.py",
+      "related_lines": [
+        303,
+        306,
+        307
+      ],
+      "severity": "high",
+      "status": "open at audited snapshot",
+      "suggested_fix": "Make gate worker accounting parent-inclusive or use at most N-1 gate children when N>1. The single-worker path should remain in the parent."
+    },
+    {
+      "evidence": {
+        "existing_recovery_reference": "validation.py:_resume_rows, lines 236-262",
+        "kind": "static read/append inspection"
+      },
+      "file": "run_census.py",
+      "id": "A4",
+      "issue": "Normal resume rejects a malformed final row instead of recovering its valid prefix. A valid final JSON object without a trailing newline is accepted, then the next append concatenates two objects on one line.",
+      "lines": [
+        45,
+        48,
+        51,
+        79,
+        99,
+        102
+      ],
+      "severity": "medium",
+      "status": "open at audited snapshot",
+      "suggested_fix": "Preserve only the owned interrupted final tail and resume from the valid prefix. Add a newline before appending after a valid newline-less final object. Continue to reject malformed interior rows."
+    },
+    {
+      "evidence": {
+        "kind": "static signal-handler lifetime inspection",
+        "trigger": "aggregate threshold crossed while the selected process is between guarded family calculations"
+      },
+      "file": "run_census.py",
+      "id": "A5",
+      "issue": "The aggregate monitor can signal any alive child, including a child outside compute_family. It can also signal the parent after compute_family has restored the prior SIGUSR1 handler but before pending_parent is cleared. If that prior handler is SIG_DFL, the stop signal terminates the process instead of returning an unresolved family.",
+      "lines": [
+        144,
+        145,
+        149,
+        153,
+        165,
+        166,
+        167
+      ],
+      "related_file": "reach_dp.py",
+      "related_lines": [
+        422,
+        467
+      ],
+      "severity": "medium",
+      "status": "conditional signal race at audited snapshot",
+      "suggested_fix": "Install a persistent safe idle SIGUSR1 handler for the invocation and make computation guard lifetimes explicit; avoid sending a stop signal outside a guarded computation."
+    }
+  ],
+  "edits_applied": [],
+  "lead_notified": true,
+  "schema_version": 1,
+  "scope_ticket": "REACH-CENSUS-20261113-001A",
+  "source_changed_since_inspection": false,
+  "source_hashes_at_save": {
+    "reach_dp.py": "9fff2b1cdc77ea85cb286cc1b82e71e5921f3561e7d2fa93ec796287da268a19",
+    "run_census.py": "ffe059ec3c7e5ab5a009b69a04bf50f85c8b1478851708b147d01199ec36313a"
+  },
+  "spec_path": "research/REACH-CENSUS-20261113-001/codex_spec.md",
+  "spec_sha256": "5265cdd78a830f6737858aed36b36ef2e0c099414b4b1b405bdbf19fdd54e497"
+}

@@ -3396,13 +3396,20 @@ So holes come in two kinds:
    - **Proved rates along a ray** (`PROVED-RATE-20261113-001`; refereed, confirmed with fixes; computed by Codex from a frozen spec):
      along one ray of copies the least bond provably grows at least linearly in 226 of 664 one-definition limit-only families, at
      rates from 1/7 to 2 members per level, and is bounded at every depth in at least 361; growth of ray bonds says nothing yet about bonds through
-     side branches ([decision note](../research/PROVED-RATE-20261113-001/proved_rate.md)).
+     side branches; *narrowed 2026-11-13:* along the last-call ray 131 of the 224 are bounded at 3 to 5 members, so the growth is
+     the distance to one copy, not depth ([decision note](../research/PROVED-RATE-20261113-001/proved_rate.md)).
    - **With side branches** (`TRUE-BOND-20261113-001`; refereed, one Block; code by Codex): allowing members in side branches
      shortens the least bond in at least 62 of the 226 growing families, by one to three members; in four the true bond stays at 3
      to depth 7 while the ray bond rises to 6, candidate cases where side branches make the reach bounded
      ([decision note](../research/TRUE-BOND-20261113-001/true_bond.md)).
    - **Bonds in a side copy and a counter with shared helpers** (`BONDS-AND-COUNT-20261112-001`). At depth two one branch gives a least bond of four, even after comparing all six eligible pairs of ends. One distinction in a side copy gives a bond of three for the same comparison (exact example). Even with every side branch available, the least bond to a target on the first recursive branch grows linearly with depth (proved). A separate construction counts with three distinctions per position. The whole pattern can read the original reference and one helper of the seed. Counting with just the original reference readable everywhere remains open. [The three questions](../research/BONDS-AND-COUNT-20261112-001/three_questions.md)
    - **When nesting really costs more distinctions** (`BRANCH-DEPTH-20261112-001`). Fix the first recursive branch and let a bond use every side copy. If a run of unobserved levels forgets its incoming values, a bond has to include a distinction at least once per such run. A chain of knots can also guarantee that a bond reaches each depth. Together these tests certify linear growth in 69 of 664 recorded rules. In 393 others a three-member bond reaches every depth, and in 39 the least size eventually settles at four. A fixed size budget has an exact finite test even when its supporting distinctions can lie arbitrarily far away. [Results and remaining cases](../research/BRANCH-DEPTH-20261112-001/depth.md)
+   - **The reach census** (`REACH-CENSUS-20261113-001`; referee pending; code by Codex): across all 223,261 nested draws of the
+     description code, 58.4% of the weight has no depth to read (no copy, or no own distinctions below the top) and 79.8% no ray
+     bond at large depths; where a ray bond persists it is bounded in about 70% (mostly at 3 members) and grows in about 30%, alike
+     in families that live at every depth and in those alive only in the limit; the class changes with the ray read in a quarter of
+     the families with a second ray, and 131 of the 224 proved to grow along the first ray are bounded along the last-call ray
+     ([decision note](../research/REACH-CENSUS-20261113-001/reach_census.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

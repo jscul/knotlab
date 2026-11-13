@@ -134,6 +134,7 @@ evidence: results and their status come from the records each entry links.
 | [A77](#a77--a-walk-around-one-cycle-is-a-state-that-repeats-along-a-short-step) | A walk around one cycle is a state that repeats along a short step | reading | Assumed |
 | [A78](#a78--a-parity-knot-among-copies-is-flip-blind-parity-built-from-our-knots) | A parity knot among copies is flip-blind parity, built from our knots | reading | Assumed |
 | [A79](#a79--a-patterns-weight-under-a-description-language-sums-its-descriptions) | A pattern's weight under a description language sums its descriptions | measure | Assumed |
+| [A80](#a80--the-laws-reach-is-read-along-the-first-call-ray) | The law's reach is read along the first-call ray | reading | Under challenge |
 
 ## Entries
 
@@ -2081,3 +2082,22 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Weight by the shortest description found by search for a sample of patterns, and compare the outcome shares.
 - **History.**
   - 2026-11-12 · Added by `SHORT-DESC-20261112-001`.
+
+### A80 · The law's reach is read along the first-call ray
+
+**Under challenge** · 2026-11-13 · reading
+
+- **Statement.** The least bond from the top of a nested pattern to depth s is read along one ray of copies: main's first call to
+  the ray definition, then that definition's first SELF call at every level (after inlining the definitions that do not hold
+  themselves), with every other self-holding call entering only by its limit relation. Growth, boundedness and absence are
+  classified along that ray.
+- **Why.** One ray makes the least bond a fixed-length shortest path in a finite graph, so its long-run class is decided per family;
+  the first call was `BOND-DEPTH-20261112-001`'s convention, kept by the studies after it.
+- **Rests on it.** The ray-bond classes of `BOND-DEPTH-20261112-001`, `PROVED-RATE-20261113-001` and
+  `REACH-CENSUS-20261113-001`, and the target copy of `TRUE-BOND-20261113-001`.
+- **Challenge.** Read another ray, or the least bond to any copy at depth s (the least over every path of copies), and compare the
+  classes.
+- **History.**
+  - 2026-11-13 · Added, and put under challenge, by `REACH-CENSUS-20261113-001`: on 3,000 families with a second ray the last-call
+    ray gives the same class in 75.4%, and 131 of the 224 one-definition limit-only families proved to grow along the first ray are
+    bounded along the last-call ray, at 3 to 5 members ([the reach census](../research/REACH-CENSUS-20261113-001/reach_census.md)).

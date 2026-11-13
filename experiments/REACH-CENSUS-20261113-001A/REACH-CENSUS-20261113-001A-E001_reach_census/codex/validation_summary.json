@@ -1,0 +1,99 @@
+{
+  "G1": {
+    "completed": 618,
+    "gate": "G1",
+    "gate_ok": true,
+    "mismatches": [],
+    "newly_run": 618,
+    "path": "/home/jscul/p-vs-np-contact-first/experiments/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/codex/validation_g1.jsonl",
+    "requested": 618,
+    "seconds": 269.18616899696644
+  },
+  "G2": {
+    "completed": 618,
+    "gate": "G2",
+    "gate_ok": false,
+    "mismatches": [
+      {
+        "expected": "none at any depth",
+        "field": "class",
+        "idx": 580,
+        "key": "[[3,2,[[\"SELF\",[4,3,1]],[\"SELF\",[2,3,0]],[\"SELF\",[2,4,0]],[\"K\",[4,3,2]],[\"K\",[0,3,4]],[\"SELF\",[2,0,4]],[\"K\",[1,3,4]]]]]",
+        "observed": "lost at large depths",
+        "source": "G2 baseline"
+      },
+      {
+        "expected": "none at any depth",
+        "field": "class",
+        "idx": 762,
+        "key": "[[3,2,[[\"SELF\",[3,4,0]],[\"SELF\",[4,2,0]],[\"SELF\",[4,3,1]],[\"K\",[1,4,3]],[\"SELF\",[2,0,3]],[\"K\",[3,4,2]],[\"K\",[3,0,4]]]]]",
+        "observed": "lost at large depths",
+        "source": "G2 baseline"
+      }
+    ],
+    "newly_run": 618,
+    "path": "/home/jscul/p-vs-np-contact-first/experiments/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/codex/validation_g2.jsonl",
+    "requested": 618,
+    "seconds": 271.30392182804644
+  },
+  "G3": {
+    "depths": 0,
+    "families": 0,
+    "gate": "G3",
+    "gate_ok": null,
+    "mismatches": [],
+    "question": "The frozen spec does not define the eligible pool/cutoff or ranking for 'among the smallest-block families', or a unique allocation/selection procedure satisfying 150 total, at least 10 of each computed class where available, and at least 40 families with more than one definition. The full census is forbidden at this hand-off. Which explicitly supplied family keys and computed reference rows constitute the G3 panel?",
+    "status": "pending selection"
+  },
+  "run_resources": {
+    "g1": {
+      "BD_depth_comparisons": 13598,
+      "cases": 618,
+      "max_process_peak_rss_kib": 155724,
+      "max_sampled_peak_rss_bytes": 159690752,
+      "referee_families": 95
+    },
+    "g2": {
+      "cases": 618,
+      "max_process_peak_rss_kib": 163176,
+      "max_sampled_peak_rss_bytes": 167387136
+    }
+  },
+  "support_checks": {
+    "actual_process_count": {
+      "completed": 3,
+      "first_control_attempt": "dynamic test import lacked sys.modules registration; registered and reran",
+      "observed": {
+        "children": 3,
+        "live_children": 3,
+        "total_owned": 4
+      },
+      "output": "memory only; no scientific rows changed",
+      "resources": {
+        "aggregate_memory_limit_bytes": 7500000000,
+        "aggregate_memory_signals": 0,
+        "effective_computing_children": 3,
+        "effective_computing_processes": 3,
+        "peak_aggregate_rss_bytes": 41091072,
+        "requested_total_process_budget": 4
+      },
+      "seconds": 0.07676136505324394,
+      "status": "passed"
+    },
+    "ast_parse": true,
+    "brute_controls": {
+      "BD_control": true,
+      "command": ".venv/bin/python -B experiments/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/codex/brute_tests.py",
+      "inlining_and_unused": true,
+      "last_ray_selection": true,
+      "seconds": 0.012991021969355643,
+      "status": "passed",
+      "truth_tables": 3
+    },
+    "cap_adapter_tristate": true,
+    "owned_active_worker_only_signal": true,
+    "reach_dp_sha256": "fcd594567dca1ee19207b66f4d169dc83da80626c2f127574bfdb9efa0e79608",
+    "resource_stop_pending": true,
+    "validation_sha256": "537eeeaad182d467c101ca73623129cc4fc42432b9aeaa89241615f542cb2bf5"
+  }
+}

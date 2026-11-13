@@ -1,0 +1,330 @@
+{
+  "alternative_ambiguity": null,
+  "alternative_eligible": 275,
+  "alternative_families": 200,
+  "alternative_projection_limit": "uses all eligible smoke rows; full alternative sample is at most 3000",
+  "alternative_run_info": {
+    "aggregate_peak_rss_bytes": 810749952,
+    "memory_stops": [],
+    "processes_include_parent": true,
+    "requested": 200,
+    "resumed": 0,
+    "wall_seconds": 185.490306,
+    "workers": 2,
+    "written": 200
+  },
+  "alternative_timings": {
+    "families": 200,
+    "max_seconds": 183.771542,
+    "mean_seconds": 1.301408635,
+    "median_seconds": 0.02388,
+    "total_seconds": 260.281727
+  },
+  "alternative_timings_by_block_size": {
+    "10": {
+      "families": 2,
+      "max_seconds": 183.771542,
+      "mean_seconds": 91.967239,
+      "median_seconds": 183.771542,
+      "total_seconds": 183.934478
+    },
+    "12": {
+      "families": 1,
+      "max_seconds": 0.969105,
+      "mean_seconds": 0.969105,
+      "median_seconds": 0.969105,
+      "total_seconds": 0.969105
+    },
+    "19": {
+      "families": 1,
+      "max_seconds": 0.000794,
+      "mean_seconds": 0.000794,
+      "median_seconds": 0.000794,
+      "total_seconds": 0.000794
+    },
+    "4": {
+      "families": 56,
+      "max_seconds": 0.241307,
+      "mean_seconds": 0.018143160714285712,
+      "median_seconds": 0.009385,
+      "total_seconds": 1.016017
+    },
+    "5": {
+      "families": 52,
+      "max_seconds": 0.191598,
+      "mean_seconds": 0.02786353846153846,
+      "median_seconds": 0.018371,
+      "total_seconds": 1.448904
+    },
+    "6": {
+      "families": 29,
+      "max_seconds": 14.117037,
+      "mean_seconds": 0.5380153793103448,
+      "median_seconds": 0.038249,
+      "total_seconds": 15.602446
+    },
+    "7": {
+      "families": 19,
+      "max_seconds": 45.206788,
+      "mean_seconds": 2.4354457368421056,
+      "median_seconds": 0.062275,
+      "total_seconds": 46.273469000000006
+    },
+    "8": {
+      "families": 21,
+      "max_seconds": 2.738629,
+      "mean_seconds": 0.286916,
+      "median_seconds": 0.130814,
+      "total_seconds": 6.025236
+    },
+    "9": {
+      "families": 19,
+      "max_seconds": 0.392846,
+      "mean_seconds": 0.26375147368421054,
+      "median_seconds": 0.259031,
+      "total_seconds": 5.011278
+    }
+  },
+  "alternative_timings_by_class": {
+    "bounded": {
+      "families": 103,
+      "max_seconds": 183.771542,
+      "mean_seconds": 2.3011899805825244,
+      "median_seconds": 0.018346,
+      "total_seconds": 237.022568
+    },
+    "grows": {
+      "families": 46,
+      "max_seconds": 14.117037,
+      "mean_seconds": 0.42282906521739133,
+      "median_seconds": 0.07956,
+      "total_seconds": 19.450137
+    },
+    "lost at large depths": {
+      "families": 4,
+      "max_seconds": 0.284586,
+      "mean_seconds": 0.240866,
+      "median_seconds": 0.241869,
+      "total_seconds": 0.963464
+    },
+    "none at any depth": {
+      "families": 46,
+      "max_seconds": 0.283139,
+      "mean_seconds": 0.061842695652173915,
+      "median_seconds": 0.026699,
+      "total_seconds": 2.844764
+    },
+    "unresolved": {
+      "families": 1,
+      "max_seconds": 0.000794,
+      "mean_seconds": 0.000794,
+      "median_seconds": 0.000794,
+      "total_seconds": 0.000794
+    }
+  },
+  "block_size_definition": "max(main distinctions, S distinctions); S absent contributes zero",
+  "class_counts": {
+    "S1 limit dead": 15,
+    "S2 no copy": 119,
+    "S3 no own distinctions": 375,
+    "S4 free own distinctions": 13,
+    "bounded": 235,
+    "grows": 100,
+    "lost at large depths": 12,
+    "none at any depth": 126,
+    "unresolved": 5
+  },
+  "class_shares": {
+    "S1 limit dead": 0.015,
+    "S2 no copy": 0.119,
+    "S3 no own distinctions": 0.375,
+    "S4 free own distinctions": 0.013,
+    "bounded": 0.235,
+    "grows": 0.1,
+    "lost at large depths": 0.012,
+    "none at any depth": 0.126,
+    "unresolved": 0.005
+  },
+  "distinct_population": 124572,
+  "families": 1000,
+  "maximum_family_peak_rss_bytes": 1440931840,
+  "projected_full_alt_seconds_on_4_workers": 976.0564762500001,
+  "projected_full_first_ray_seconds_on_4_workers": 30245.277550026003,
+  "projection_method": "uniform family sample total family seconds / 1000 * population / 4; excludes G1 and alternative ray",
+  "run_info": {
+    "aggregate_peak_rss_bytes": 2011820032,
+    "memory_stops": [],
+    "processes_include_parent": true,
+    "requested": 1000,
+    "resumed": 0,
+    "wall_seconds": 496.917137,
+    "workers": 2,
+    "written": 1000
+  },
+  "seed": 1113,
+  "timings_by_block_size": {
+    "10": {
+      "families": 13,
+      "max_seconds": 91.702985,
+      "mean_seconds": 8.540905923076924,
+      "median_seconds": 0.000628,
+      "total_seconds": 111.031777
+    },
+    "11": {
+      "families": 7,
+      "max_seconds": 16.174813,
+      "mean_seconds": 2.5318587142857143,
+      "median_seconds": 0.000669,
+      "total_seconds": 17.723011
+    },
+    "12": {
+      "families": 1,
+      "max_seconds": 0.860049,
+      "mean_seconds": 0.860049,
+      "median_seconds": 0.860049,
+      "total_seconds": 0.860049
+    },
+    "13": {
+      "families": 3,
+      "max_seconds": 0.000958,
+      "mean_seconds": 0.0007363333333333333,
+      "median_seconds": 0.00065,
+      "total_seconds": 0.002209
+    },
+    "14": {
+      "families": 1,
+      "max_seconds": 0.000855,
+      "mean_seconds": 0.000855,
+      "median_seconds": 0.000855,
+      "total_seconds": 0.000855
+    },
+    "19": {
+      "families": 1,
+      "max_seconds": 0.000784,
+      "mean_seconds": 0.000784,
+      "median_seconds": 0.000784,
+      "total_seconds": 0.000784
+    },
+    "21": {
+      "families": 1,
+      "max_seconds": 0.000937,
+      "mean_seconds": 0.000937,
+      "median_seconds": 0.000937,
+      "total_seconds": 0.000937
+    },
+    "3": {
+      "families": 328,
+      "max_seconds": 0.002183,
+      "mean_seconds": 0.0005708567073170732,
+      "median_seconds": 0.000542,
+      "total_seconds": 0.187241
+    },
+    "4": {
+      "families": 174,
+      "max_seconds": 1.41738,
+      "mean_seconds": 0.02994592528735632,
+      "median_seconds": 0.007611,
+      "total_seconds": 5.210591
+    },
+    "5": {
+      "families": 205,
+      "max_seconds": 29.637379,
+      "mean_seconds": 0.21686246829268294,
+      "median_seconds": 0.014447,
+      "total_seconds": 44.456806
+    },
+    "6": {
+      "families": 80,
+      "max_seconds": 0.975385,
+      "mean_seconds": 0.044743675,
+      "median_seconds": 0.028852,
+      "total_seconds": 3.579494
+    },
+    "7": {
+      "families": 63,
+      "max_seconds": 99.311748,
+      "mean_seconds": 1.6725677936507937,
+      "median_seconds": 0.056272,
+      "total_seconds": 105.371771
+    },
+    "8": {
+      "families": 65,
+      "max_seconds": 300.172072,
+      "mean_seconds": 5.062126184615384,
+      "median_seconds": 0.109452,
+      "total_seconds": 329.038202
+    },
+    "9": {
+      "families": 58,
+      "max_seconds": 300.848761,
+      "mean_seconds": 6.098456120689655,
+      "median_seconds": 0.24557,
+      "total_seconds": 353.710455
+    }
+  },
+  "timings_by_class": {
+    "S1 limit dead": {
+      "families": 15,
+      "max_seconds": 0.00112,
+      "mean_seconds": 0.0008558,
+      "median_seconds": 0.000864,
+      "total_seconds": 0.012837
+    },
+    "S2 no copy": {
+      "families": 119,
+      "max_seconds": 0.001258,
+      "mean_seconds": 0.000573420168067227,
+      "median_seconds": 0.000549,
+      "total_seconds": 0.068237
+    },
+    "S3 no own distinctions": {
+      "families": 375,
+      "max_seconds": 0.005321,
+      "mean_seconds": 0.0005980533333333333,
+      "median_seconds": 0.000557,
+      "total_seconds": 0.22427
+    },
+    "S4 free own distinctions": {
+      "families": 13,
+      "max_seconds": 0.000722,
+      "mean_seconds": 0.0005286923076923077,
+      "median_seconds": 0.000507,
+      "total_seconds": 0.006873
+    },
+    "bounded": {
+      "families": 235,
+      "max_seconds": 99.311748,
+      "mean_seconds": 1.2669413063829786,
+      "median_seconds": 0.016305,
+      "total_seconds": 297.731207
+    },
+    "grows": {
+      "families": 100,
+      "max_seconds": 25.26669,
+      "mean_seconds": 0.6026838099999999,
+      "median_seconds": 0.042178,
+      "total_seconds": 60.268381
+    },
+    "lost at large depths": {
+      "families": 12,
+      "max_seconds": 0.274961,
+      "mean_seconds": 0.12869791666666666,
+      "median_seconds": 0.107835,
+      "total_seconds": 1.544375
+    },
+    "none at any depth": {
+      "families": 126,
+      "max_seconds": 1.077474,
+      "mean_seconds": 0.08170474603174603,
+      "median_seconds": 0.028797,
+      "total_seconds": 10.294798
+    },
+    "unresolved": {
+      "families": 5,
+      "max_seconds": 300.848761,
+      "mean_seconds": 120.20464080000002,
+      "median_seconds": 0.000937,
+      "total_seconds": 601.0232040000001
+    }
+  }
+}

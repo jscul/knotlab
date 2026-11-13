@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "block_cap": {
+      "main_block_size": 15,
+      "nodes": 0,
+      "s_block_size": 15,
+      "status": "block_size"
+    },
+    "during_exact_memory_stop": {
+      "actual_allocation": false,
+      "status": "memory_limit"
+    },
+    "family_alarm": "timeout",
+    "node_cap": {
+      "bounded_all": true,
+      "class": "bounded",
+      "complete": false,
+      "nodes": 30
+    },
+    "output_boundary": true,
+    "post_exact_memory_stop": {
+      "actual_allocation": false,
+      "status": "memory_limit"
+    },
+    "product_size_gate": {
+      "eventually_bounded": null,
+      "period": 1,
+      "reason": "product size resource gate"
+    },
+    "python_syntax": true,
+    "resume": {
+      "existing_key_skipped": true,
+      "invalid_tail_preserved": true,
+      "valid_no_newline_repaired": true
+    },
+    "small_graph_unchanged": {
+      "idx": 5,
+      "lambda": "0/1",
+      "nodes": 66
+    }
+  },
+  "code_sha256": {
+    "check_runtime.py": "465a81be41ed674e980bb9bf866e2e7f09e40834c807a56e8652c292eb28dc93",
+    "reach_dp.py": "fcd594567dca1ee19207b66f4d169dc83da80626c2f127574bfdb9efa0e79608",
+    "run_census.py": "03f6a859cd3675013a5f4e93fe0bd3d3051ee799fac6527be1b671a6804e547d"
+  },
+  "passed": true,
+  "prior_reach_dp_sha256": "9fff2b1cdc77ea85cb286cc1b82e71e5921f3561e7d2fa93ec796287da268a19",
+  "resource_guard_change": "RSS watchdog thread and forced post-referee checkpoint; block maps unchanged"
+}

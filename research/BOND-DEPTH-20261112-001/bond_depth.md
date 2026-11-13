@@ -39,13 +39,15 @@ by one member every level or two, the way it grows along a ruler, though the met
 quarter stay flat to depth 30 without proof. So, within depth 30, counting inside (the law's reach lengthening with depth) appears in more
 than a third of the families read; whether it lasts in them is not settled, and no share of the full weighting is claimed. *After the
 referee:* the bounded share lies between 194 and 632 of 664 (the certificates on samples suggest most of the flat families are
-bounded and the rising ones grow at rates of 1, 1/2 or 2), and growth along a ray is only an upper bound on the true bond's.
+bounded and the rising ones grow at rates of 1, 1/2 or 2), and growth along a ray is only an upper bound on the true bond's. *Narrowed on 2026-11-13
+(`REACH-CENSUS-20261113-001`):* growth along the first ray is not growth with depth; in 131 of the 224 families proved to grow along
+it, a copy at the same depth on the last-call ray is tied to the top by at most 5 members.
 
 ## Reading
 
 **Interpretation, not a theorem.**
 - **For the owner's nested parts.** Where the reach is bounded, the top is tied to every depth through two or three distinctions:
-  the larger pattern holds the smaller ones close. Where it grows, each level adds to the distance, as a count would.
+  the larger pattern holds the smaller ones close. Where it grows, each level adds to the distance, as a count would. *(Along the ray read; narrowed on 2026-11-13, above.)*
 - **What is not shown.** "Growing" here is within depth 30 and along one ray; side branches could shorten the true bond. "No class
   in between" holds per length residue, possibly with different rates per residue (*narrowed after the referee*).
 

@@ -1,0 +1,109 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "kind": "proof",
+  "canonical_id": "PAIR-CARRY-20261112-001-P001",
+  "artifact_id": "PAIR-CARRY-20261112-001-P001",
+  "proof": "PAIR-CARRY-20261112-001-P001",
+  "ticket": "PAIR-CARRY-20261112-001",
+  "title": "Can two input bits transmit a bond to every depth in sample 0, line 4710?",
+  "status": "Proved",
+  "claim": "In sample 0, line 4710, every positive first-child depth admits a bond to a fresh own distinction. A construction on pairs of bits gives size at most floor(s/2)+3, and a fixed top b can be used with at most ceil(s/2)+3. A second construction gives ceil(s/4)+3 at every s>=2. Together with the unrestricted lower bound 1+ceil(s/6) this proves linear growth. The exact unrestricted minima at depths 1 through 8 are 3,4,4,4,5,5,5,5.",
+  "dependencies": [
+    "BRANCH-DEPTH-20261112-001A",
+    "BRANCH-DEPTH-20261112-001C",
+    "BRANCH-DEPTH-20261112-001D",
+    "BRANCH-DEPTH-20261112-001Z",
+    "TWO-LEVEL-BOND-20261112-001"
+  ],
+  "source_contribution": 0,
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "remaining_obligations": [],
+  "failure_conditions": [
+    "A projected witness cannot be extended, a hidden spectator changes the claimed transition, or the stated support retains a constraint after one erasure."
+  ],
+  "validation": {
+    "level": "V1",
+    "status": "Symbolic backwards completion of an arbitrary chain; separate scalar rederivation and raw SAT for the exact four-level table through depth 32; all erasures and canonical knotlab controls. The full-tree fixed-budget computation excludes 3 from depth 2 and 4 from depth 5. Independent same-task readers checked the source, both parities, root choice and off-branch extension.",
+    "novelty": "candidate-local-delta",
+    "field_novelty": "unassessed; no claim of a new general automaton, NAE identity or general CSP theorem.",
+    "external_review": false
+  },
+  "foundation_claim_scope": "Finite supports in the allowed states of the specified branching system. Infinite finite-flip sources and frequencies are separate questions.",
+  "paths": {
+    "identity": "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/identity.json",
+    "manifest": "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/manifest.json",
+    "proof": "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/proof.md",
+    "four_level_proof": "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/period_four.md",
+    "result": "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/result.json",
+    "checks": [
+      "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/check.py",
+      "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/pair_tables.py",
+      "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/marked_support.py"
+    ]
+  },
+  "standard_statement": "Under existential completion of the full three-port branching relation in sample 0 line 4710, a finite minimally constrained support meeting the root and a fresh variable at every positive first-child depth exists with size linear in depth.",
+  "prior_work": "The one-input test at two levels excluded uniform links; the accepted arbitrary-support bound is 1+ceil(s/6). The fixed-size decision procedure applies independently to specific size budgets.",
+  "completion_gate": "Exact local transcription, existential extension on both parities, proof of every deletion, uniform four-level finite-table argument, independent finite checks and small-budget unrestricted exclusions.",
+  "open_questions": [
+    "Exact unrestricted minimum at general depth and its sharp asymptotic coefficient.",
+    "Existence at all positive depths in the remaining 153 conditional records."
+  ],
+  "owned_bindings": {
+    "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/identity.json": "099f34d343ccee27594d4de72c4a2a9e2e4cd8f3bbad424915e7b0ed88bd9d2d",
+    "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/proof.md": "3aa0d190be625e76e9e31d9232a74d5ab2ce716fd0de8650d56c740fb32608a6",
+    "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/period_four.md": "8ab4516325001e926f6369e1f9c8774f5a5cb144caa63968f2e2d3304bf2b704",
+    "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/result.json": "8abb559a667524122895b7d6153f03a99e895daff7d8b9c70fe0e6ad6617bfc7",
+    "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/check.py": "fef9ce962f37f6ae27fd5580710edf2b251c8a5d6cee51803173cfb27e24f7e8",
+    "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/pair_tables.py": "7afeb79cb3c89773c7162f2b30110b14f6c887a65aa67a28bc0c0a122207fe02",
+    "proofs/PAIR-CARRY-20261112-001/PAIR-CARRY-20261112-001-P001_pair_carry/marked_support.py": "14800f1af1f775ff2370adcd7eadabafd878a28fb8380787c916280708c7c63a"
+  },
+  "parent_bindings": {
+    "proofs/BRANCH-DEPTH-20261112-001A/BRANCH-DEPTH-20261112-001A-P001_forgetting/manifest.json": "6cc4e62a78bf4b0b69f7ee57b09e51f64106ff53d2b0a3c2bcefd2db73c8b551",
+    "experiments/BRANCH-DEPTH-20261112-001C/BRANCH-DEPTH-20261112-001C-E001_port_census/contract.json": "e7db9acac4cdda1c6532e845a79ff3783cd81fb0588075aa096b42b611baeeaa",
+    "proofs/BRANCH-DEPTH-20261112-001D/BRANCH-DEPTH-20261112-001D-P001_fixed_budget/manifest.json": "4b199dbd690b69796925ef321eddd62107895e32ff77e14f35d8038d77106230",
+    "proofs/BRANCH-DEPTH-20261112-001Z/BRANCH-DEPTH-20261112-001Z-P001_synthesis/manifest.json": "59705acc7a3709c9547fbd024301e8300a6c30917dc20b17147542187de9b178",
+    "experiments/TWO-LEVEL-BOND-20261112-001/TWO-LEVEL-BOND-20261112-001-E001_paired_levels/contract.json": "559318ec86b77bb01633549588a226adedf177869725376c515297e77be1518a"
+  }
+}

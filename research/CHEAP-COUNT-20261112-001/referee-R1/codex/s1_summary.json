@@ -1,0 +1,75 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "CHEAP-COUNT-20261112-001",
+  "scientific_role": "Independent referee recomputation; no lifecycle changes",
+  "encoding": "Full helper-assignment witness selections for even boundaries; covers for all odd extensions; complement representatives; totalizer and justified lex symmetry",
+  "table": {
+    "0": null,
+    "1": null,
+    "2": null,
+    "3": 12,
+    "4": 10,
+    "5": 10,
+    "6": 10
+  },
+  "original_table_equal": true,
+  "labelled_minima": 168,
+  "helper_orbits": 28,
+  "named_helper_orbits": 3,
+  "named_helper_orbit_sizes": [
+    24,
+    72,
+    72
+  ],
+  "helper_bound": {
+    "for_m_at_most": 9,
+    "useful_f_at_most": 11,
+    "proof": "Repeatedly delete degree-one helpers and their sole constraint, and discard degree-zero helpers. Existential projection is preserved. Four named variables must occur; remaining helpers have degree at least two. Thus 4+2f<=3m<=27.",
+    "extra_cases": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "extra_cases_unsatisfiable": true,
+    "global_minimum_knots": 10
+  },
+  "cross_solver_cases": [
+    "s1_f11_m9_reduced_glucose4.json",
+    "s1_f3_m11_glucose4.json",
+    "s1_f6_m9_glucose4.json"
+  ],
+  "original_first_gadget_in_independent_enumeration": true,
+  "case_files": [
+    "s1_f0_m0.json",
+    "s1_f10_m9_reduced.json",
+    "s1_f11_m9_reduced.json",
+    "s1_f11_m9_reduced_glucose4.json",
+    "s1_f1_m6.json",
+    "s1_f2_m16.json",
+    "s1_f3_m11.json",
+    "s1_f3_m11_glucose4.json",
+    "s1_f3_m12.json",
+    "s1_f4_m10.json",
+    "s1_f4_m9.json",
+    "s1_f5_m10.json",
+    "s1_f5_m9.json",
+    "s1_f6_m10.json",
+    "s1_f6_m9.json",
+    "s1_f6_m9_glucose4.json",
+    "s1_f7_m9.json",
+    "s1_f7_m9_reduced.json",
+    "s1_f8_m9_reduced.json",
+    "s1_f9_m9_reduced.json"
+  ],
+  "longest_case_seconds": 27.570272570999805,
+  "peak_case_rss_kib": 447244,
+  "limits": {
+    "external_timeout_seconds": 570,
+    "address_space_gib": 7
+  },
+  "original_s1_sha256": "6c33ee43383c16b39b055c9cc281bbd0547bd6ac21876d6fa1002693d37a7a73",
+  "script_sha256": "1f4a473a323bce3ed6a7eecd35c5acf3570c5478921595d3a1e6e3ad15c9f3b0",
+  "validation": "Independent implementation and two SAT solver engines on three selected UNSAT cases; no independently replayed UNSAT proof traces."
+}

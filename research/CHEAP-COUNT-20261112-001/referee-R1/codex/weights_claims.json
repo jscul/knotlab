@@ -1,0 +1,511 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "CHEAP-COUNT-20261112-001",
+  "audit_lane": "weights_claims",
+  "verdict": "Confirmed with fixes: arithmetic and formal template injectivity pass; rarity headline is unsupported.",
+  "evidence": "Independently authored standard-library recomputation inside the same AI task; no producer imports, no external replication.",
+  "interface": {
+    "question": "Does the reported description arithmetic and candidate count support the claimed rarity, and which conclusions are bounded data versus known/compositional?",
+    "branch": "code_analysis",
+    "inputs": "Original preregistration, note, read-only census.py, s1.json, s2.json, s3_*.jsonl and summary.json; accessible primary sources for background.",
+    "forbidden_inputs": "Importing or executing census.py; changing source data, scope or tickets; assuming finite 'unexplained' means nonperiodic.",
+    "outputs": "This script and sibling JSON only.",
+    "resource_budget": "Each calculation <10 minutes and <8 GB; recovered family has 168 gadgets over seven Boolean variables.",
+    "stop_rule": "Arithmetic, embeddings, boundary checks, existing-classifier reconciliation and prose classification complete; S1 and SAT growth/mutants remain other audit lanes.",
+    "nonclaims": "No unrestricted optimum gadget theorem, exact asymptotic counter theorem, global probability, intrinsic measure or external novelty certification."
+  },
+  "arithmetic": [
+    {
+      "h": 3,
+      "m": 12,
+      "relative_slots": 21,
+      "available_triples": 1330,
+      "m_subset_choices": "60851163546653265400428750300",
+      "gamma_h_bits": 3,
+      "gamma_m_plus_1_bits": 7,
+      "ideal_self_information_bits": 105.61927150609472,
+      "literal_fixed_width_code_bits": 106,
+      "known_template_count_for_arithmetic_only": 504,
+      "known_template_mass_fraction": "3/370902330189124665297851430400",
+      "known_template_mass": 8.088382724557938e-30,
+      "known_template_log2_mass": -96.6419915825948,
+      "conditional_template_fraction_at_this_h_m": 8.282503909947328e-27
+    },
+    {
+      "h": 4,
+      "m": 10,
+      "relative_slots": 26,
+      "available_triples": 2600,
+      "m_subset_choices": "3823355137979204229709747440",
+      "gamma_h_bits": 5,
+      "gamma_m_plus_1_bits": 7,
+      "ideal_self_information_bits": 103.62689777521145,
+      "literal_fixed_width_code_bits": 104,
+      "count_caveat": "Only length recomputed; no h=4 enumeration was performed in the original study."
+    }
+  ],
+  "template_check": {
+    "original_stored_gadgets": 50,
+    "recovered_by_named_S4_helper_S3_orbit": 168,
+    "is_exhaustive_synthesis": false,
+    "formal_embeddings_distinct": 504,
+    "used_slot_supports": {
+      "rule 60": [
+        0,
+        4,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "rule 90": [
+        0,
+        8,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "rule 150": [
+        0,
+        4,
+        8,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "injectivity_argument": "Each fixed slot embedding is injective on seven distinct formal variables. Every parity gadget must use all four named variables; rule60/90/150 have different named-main slot supports, so their image sets cannot coincide. Labels of helpers are already part of the subset choice; no extra rule-selector or helper-factorial charge is required.",
+    "description_identity": "Helper renamings may expand to isomorphic patterns, yet remain different labelled descriptions. A79 explicitly sums description weights, so quotienting by relabelling is a different weighting.",
+    "count_classification": "504 is the exact count of this Cartesian family of labelled local templates, conditional on the separately audited exhaustive count 168. The frozen census growth code already supplies a valid collision-repair decoder for these gadget embeddings. Conditional on a demonstrated counting property for all three growths, 504 is a lower bound on counting descriptions and mass under this chosen weighting, never an exhaustive counter count. Without the all-depth counting bridge for rule90/150 it is a count of decoded candidate descriptions rather than an unconditional lower bound on proven counters."
+  },
+  "boundary_checks": {
+    "rule 60": {
+      "depth": 64,
+      "position_updates": 2272,
+      "positions_with_collision": 128,
+      "tied_copies_inserted_by_census_policy": 128,
+      "added_nae_constraints": 1024,
+      "added_used_distinctions": 1024,
+      "total_used_distinctions_including_global_R": 10116,
+      "total_nae_constraints_including_last_generation_closure": 28353,
+      "scope": "Structural inventory of the disclosed always-copy policy; no SAT execution; excludes accidentally allocated unused IDs."
+    },
+    "rule 90": {
+      "depth": 64,
+      "position_updates": 2272,
+      "positions_with_collision": 192,
+      "tied_copies_inserted_by_census_policy": 192,
+      "added_nae_constraints": 1536,
+      "added_used_distinctions": 1536,
+      "total_used_distinctions_including_global_R": 10628,
+      "total_nae_constraints_including_last_generation_closure": 28865,
+      "scope": "Structural inventory of the disclosed always-copy policy; no SAT execution; excludes accidentally allocated unused IDs."
+    },
+    "rule 150": {
+      "depth": 64,
+      "position_updates": 2272,
+      "positions_with_collision": 64,
+      "tied_copies_inserted_by_census_policy": 64,
+      "added_nae_constraints": 512,
+      "added_used_distinctions": 512,
+      "total_used_distinctions_including_global_R": 9604,
+      "total_nae_constraints_including_last_generation_closure": 27841,
+      "scope": "Structural inventory of the disclosed always-copy policy; no SAT execution; excludes accidentally allocated unused IDs."
+    },
+    "rule 102": {
+      "depth": 64,
+      "position_updates": 2272,
+      "positions_with_collision": 128,
+      "tied_copies_inserted_by_census_policy": 192,
+      "added_nae_constraints": 1536,
+      "added_used_distinctions": 1536,
+      "total_used_distinctions_including_global_R": 10628,
+      "total_nae_constraints_including_last_generation_closure": 28865,
+      "scope": "Structural inventory of the disclosed always-copy policy; no SAT execution; excludes accidentally allocated unused IDs."
+    },
+    "hop": {
+      "depth": 64,
+      "position_updates": 2272,
+      "positions_with_collision": 128,
+      "tied_copies_inserted_by_census_policy": 128,
+      "added_nae_constraints": 1024,
+      "added_used_distinctions": 1024,
+      "total_used_distinctions_including_global_R": 10116,
+      "total_nae_constraints_including_last_generation_closure": 28353,
+      "scope": "Structural inventory of the disclosed always-copy policy; no SAT execution; excludes accidentally allocated unused IDs."
+    }
+  },
+  "description_critique": [
+    {
+      "severity": "Block",
+      "claim": "Astronomically rare / 10^-29 likely / among the rarest",
+      "finding": "Summing a found subset supplies a LOWER bound on total counting mass once descriptions and counting are valid. A tiny lower bound supplies no upper bound; all remaining descriptions could count. No exhaustion or bound on the unexamined counting descriptions is given."
+    },
+    {
+      "severity": "Narrowing",
+      "claim": "The formula is the counter's code length",
+      "finding": "It encodes h, m and an unordered m-subset of labelled local triples, conditional on a fixed growth decoder. The frozen preregistration and census.py ALREADY specify initial width3, growth+1, unrestricted initial mains, one global R, missing=R, terminal NAE closure and equality-copy repairs. Shared decoder conventions can legitimately have zero per-description charge in this chosen language. The required qualification is conditional ideal local-template length under that fixed decoder, not a missing-decoder Block or a shortest description over other languages."
+    },
+    {
+      "severity": "Narrowing",
+      "claim": "All 504 raw templates are valid strict NAE growth descriptions",
+      "finding": "Without copies, only 12 rule60, 12 rule90 and 48 rule150 templates avoid repeated identities within every NAE at the ends. This does NOT invalidate the other compiled descriptions: census.py already supplies the fixed equality-copy convention. A copy adds eight NAE constraints and eight used distinctions, including the copy, so h helpers and m knots per position describe the bulk gadget inventory rather than the full boundary inventory. These additions need not add per-description bits when built into the shared decoder."
+    },
+    {
+      "severity": "Narrowing",
+      "claim": "104-106 bits are literal binary codeword lengths",
+      "finding": "log2(binomial(...)) is generally fractional. These are exact ideal self-information values for uniform subset selection, not lengths of individual finite binary words. A simple fixed-width rank code uses 106 and 104 bits respectively. Exact uniform choices from fair coins can instead use variable-length rejection; the semantic object's probability is 1/M, but it aggregates multiple coin prefixes."
+    },
+    {
+      "severity": "Not a block",
+      "claim": "Rule150 needs a fifth parity argument/reference in the interior",
+      "finding": "It does not: the four named parity variables are new i and all three old mains. R remains needed only as the globally shared value for missing old positions; rule60 and rule90 also use R in every interior update. The declared slot set includes all four distinct main slots used by rule150."
+    },
+    {
+      "severity": "Narrowing",
+      "claim": "Cheapest counting description",
+      "finding": "The calculation compares two known parity constructions in this selected local-template language. Minimum knot number is not shortest code length across arbitrary descriptions or alternative counting constructions, and h=4 gadgets were not exhaustively counted. The 504 numerator includes h=3 only."
+    },
+    {
+      "severity": "Narrowing",
+      "claim": "Weight share / probability",
+      "finding": "Name the sampling and rejection convention and denominator. Gamma headers plus uniform subsets define a particular subprobability mass when out-of-range m is rejected. Conditioning on accepted descriptions changes shares; neither version is a probability over realities selected by the mathematics."
+    }
+  ],
+  "stored_finite_growth_classification": {
+    "rule 60": {
+      "stored_sequence": "1111110000111100000000000011110000000000000000000000000000111100",
+      "alive_depths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13,
+        14,
+        27,
+        28,
+        29,
+        30,
+        59,
+        60,
+        61,
+        62
+      ],
+      "class": "unexplained",
+      "period": null,
+      "tail_start_depth": null,
+      "independent_sat_recomputation": false
+    },
+    "rule 90": {
+      "stored_sequence": "1111110001011100000000000001110000000000000000000000000000011100",
+      "alive_depths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        12,
+        13,
+        14,
+        28,
+        29,
+        30,
+        60,
+        61,
+        62
+      ],
+      "class": "unexplained",
+      "period": null,
+      "tail_start_depth": null,
+      "independent_sat_recomputation": false
+    },
+    "rule 150": {
+      "stored_sequence": "1111111110010010000100000001011000000000000000000000000000010010",
+      "alive_depths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        15,
+        20,
+        28,
+        30,
+        31,
+        60,
+        63
+      ],
+      "class": "unexplained",
+      "period": null,
+      "tail_start_depth": null,
+      "independent_sat_recomputation": false
+    },
+    "rule 102": {
+      "stored_sequence": "1100000000000000000000000000000000000000000000000000000000000000",
+      "alive_depths": [
+        1,
+        2
+      ],
+      "class": "eventually constant",
+      "period": 1,
+      "tail_start_depth": 3,
+      "independent_sat_recomputation": false
+    },
+    "hop": {
+      "stored_sequence": "1111111010100000000000000000000000000000000000000000000000000000",
+      "alive_depths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ],
+      "class": "eventually constant",
+      "period": 1,
+      "tail_start_depth": 12,
+      "independent_sat_recomputation": false
+    }
+  },
+  "conclusion_classification": [
+    {
+      "number": 1,
+      "primary_class": "new bounded data",
+      "secondary_classes": [
+        "global bound supplied by separate parent audit"
+      ],
+      "finding": "The original S1 m*(f) table for f<=6 and the labelled f=3 family are bounded synthesis data. This lane verifies recovered gadget relations, not optimality. The parent audit reports a new extension proving the unrestricted 'at least 10': remove helpers of degree<=1, then 2f+4<=3m<=27 gives f<=11 for m<=9, and synthesize f=7..11 as UNSAT. This requires integration of that independent parent evidence; it was absent from the original argument. General pp-definability is standard; the exact minima are not supplied by that reference."
+    },
+    {
+      "number": 2,
+      "primary_class": "definitional/composition",
+      "secondary_classes": [
+        "known additive algebra",
+        "new bounded data",
+        "unsupported count-too extrapolation"
+      ],
+      "finding": "Replacing parity by an exact existential definition with disjoint fresh helpers, and faithful collision handling, preserves the named relation by composition. S2 checks wiring. Additive CA algebra is standard. Exact depth life strings are new bounded data for this boundary contract. The stored rule90 and rule150 classes are only 'unexplained' through 64; MOW does not by itself verify this expanding-seed/terminal-NAE satisfiability criterion or prove these growths count."
+    },
+    {
+      "number": 3,
+      "primary_class": "unsupported",
+      "secondary_classes": [
+        "definitional arithmetic"
+      ],
+      "finding": "The two ideal local-template lengths and -96.64199 arithmetic are reproducible conditional on the fixed growth decoder, which already states the growth and collision conventions. They do not establish a shortest description across constructions, total counting probability, rarity upper bound or comparison with other capabilities."
+    },
+    {
+      "number": 4,
+      "primary_class": "new bounded data",
+      "secondary_classes": [
+        "definitional mutation inventory",
+        "minimality implication"
+      ],
+      "finding": "240=12 deletions +12*(31-12) replacements in the declared one-gadget neighbourhood. Minimality alone prevents any deletion from preserving parity; the three parity-preserving replacements and other finite life classes are substantive bounded data, being checked by the other lane. A 1.25% local mutation survival rate is not a global rarity estimate; settling is finite-classifier terminology here."
+    },
+    {
+      "number": 5,
+      "primary_class": "new bounded data",
+      "secondary_classes": [
+        "honest registered failure",
+        "unsupported infinite extrapolation if read literally"
+      ],
+      "finding": "P3 failure is stated explicitly and honestly: the stored sequence lives at 1..7,9,11 and is dead throughout 12..64, so the registered small-period test fails. Finite data alone does not prove death at all later depths; keep the heading local to the tested construction/horizon unless an independent mechanism is supplied."
+    }
+  ],
+  "honesty_and_rhetoric": {
+    "P3": "Honest negative outcome and failed-prediction label; avoid turning a finite observed tail into an all-depth theorem.",
+    "rule90_rule150": "The words 'count too' outrun the actual 'unexplained within 64' classifier. A separate analytic bridge to the precise boundary/closure predicate is required, rather than citing general additive-CA algebra.",
+    "fragility": "The finite predeclared result is meaningful in its one-gadget mutation neighbourhood; it does not establish global fine tuning or probability of arithmetic-capable patterns."
+  },
+  "checks": {
+    "formula_arithmetic_matches_original_summary": true,
+    "recovered_168_relabelled_gadgets_each_project_to_even_parity": true,
+    "formal_local_embedding_is_injective_for_all_504": true,
+    "raw_strict_NAE_templates_without_collision_repair": {
+      "rule 60": 12,
+      "rule 90": 12,
+      "rule 150": 48
+    },
+    "equality_repair_truth_table": {
+      "relation": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "constraints": 8,
+      "internal_helpers": 7,
+      "helpers_including_new_tied_copy": 8,
+      "negative_control_removed_one_nae_relation": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "negative_control_rejected_as_equality": true
+    },
+    "stored_life_strings_match_original_finite_classifier": true,
+    "mutant_class_inventory_matches_summary_not_independent_SAT": {
+      "constant": 169,
+      "eventually constant": 68,
+      "same parity": 3
+    },
+    "negative_control_one_deleted_nae_rejected_as_parity": {
+      "relation_size": 10,
+      "rejected": true
+    }
+  },
+  "decoder_followup": {
+    "finding": "Growth decoder conventions already exist in the frozen study; withdraw the initial missing-decoder Block. A79 alone does not define a row language.",
+    "references": [
+      {
+        "path": "docs/ASSUMPTIONS.md",
+        "lines": [
+          2073,
+          2080
+        ],
+        "establishes": "A79's general sum-over-descriptions convention and its link to SHORT-DESC, not a row-growth decoder."
+      },
+      {
+        "path": "research/SHORT-DESC-20261112-001/preregistration.md",
+        "lines": [
+          34,
+          46
+        ],
+        "establishes": "The directly linked authoritative definition is the separate macro/SELF description language; its weighting is not CHEAP's row-template formula."
+      },
+      {
+        "path": "research/CHEAP-COUNT-20261112-001/preregistration.md",
+        "lines": [
+          31,
+          40
+        ],
+        "establishes": "Design explicitly frozen in census.py; initial width3, missing=R, terminal NAE closure and row-template formula stated."
+      },
+      {
+        "path": "experiments/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/census.py",
+        "lines": [
+          100,
+          105
+        ],
+        "establishes": "All widths are 3+r. Exactly one R is allocated before the generation and position loops; all mains are unconstrained until the stated transition and terminal constraints."
+      },
+      {
+        "path": "experiments/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/census.py",
+        "lines": [
+          123,
+          132
+        ],
+        "establishes": "Every explicit reference slot and every missing old position returns that one R identity, across all positions and generations."
+      },
+      {
+        "path": "experiments/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/census.py",
+        "lines": [
+          116,
+          121
+        ],
+        "establishes": "The inequality/equality gadget compiler used for copy ties is defined."
+      },
+      {
+        "path": "experiments/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/census.py",
+        "lines": [
+          145,
+          162
+        ],
+        "establishes": "Duplicate named occurrences receive fresh equal copies; helpers are mapped per-position; terminal consecutive mains receive NAE closure."
+      }
+    ],
+    "remaining_scope": "A global probability still requires an explicit whole-language sampling/rejection convention and a counting-property criterion; these growth conventions are already legitimate fixed interpreter data."
+  },
+  "primary_sources": [
+    {
+      "title": "Martin, Odlyzko and Wolfram, Algebraic Properties of Cellular Automata (1984), author-hosted reprint",
+      "url": "https://www-users.cse.umn.edu/~odlyzko/doc/arch/cellular.automata.pdf",
+      "verified_locations": "Sections 2, 3A, 4A and 4F; reprint pp. 75-77, 90-91, 99-101; PDF pages 5-7, 20, 29-31.",
+      "establishes": "Additive cellular automata have a polynomial representation; rule 90 uses x+x^-1 and rule 150 uses x+1+x^-1. The paper analyzes finite fixed-size systems, primarily periodic boundaries, and also certain twisted/fixed boundaries.",
+      "does_not_establish_in_this_audit": "No verified statement for a width-3 seed growing by one position per generation and NAE closure of every consecutive triple of the last generation. The study's exact life bands or nonperiodicity require an explicit transfer/derivation.",
+      "authority": "Primary paper, background only; not admitted as new proof lineage."
+    },
+    {
+      "title": "Elmar Boehler, Algebraic Closures in Complexity Theory (2005), doctoral dissertation",
+      "url": "https://d-nb.info/978707176/34",
+      "verified_locations": "Definition 3.11 / Proposition 3.12 (p. 37), complementive IN2 discussion (p. 39), Figure 3.5 IN2 row (p. 44; PDF page 44).",
+      "establishes": "The IN2 co-clone consists of complementive relations and has NAE3 as a base; the displayed alternative base includes EVEN4. The closure corresponds to existential conjunction with equality, allowing variable identification. Thus ordinary pp-definability of EVEN4 from NAE3 is standard.",
+      "does_not_establish_in_this_audit": "No optimum knot/helper count, enumeration of exact positive strict-distinct gadgets, custom growth boundary result or novelty claim.",
+      "authority": "Primary author source, background only; not admitted as new proof lineage."
+    },
+    {
+      "title": "Boehler, Reith, Schnoor and Vollmer, Bases for Boolean co-clones (2005), publisher record",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0020019005001614",
+      "doi": "10.1016/j.ipl.2005.06.003",
+      "verified_locations": "Search-visible publisher title, authors, date and abstract; full text open returned 403.",
+      "establishes": "Bibliographic identity and scope: finite simple bases for Boolean co-clones. The author's dissertation supplies the accessible table used above.",
+      "does_not_establish_in_this_audit": "The inaccessible publisher full text was not used to verify a particular gadget or size bound.",
+      "authority": "Primary publisher metadata; no precise-boundary theorem attributed to it."
+    }
+  ],
+  "unresolved_questions": [
+    "Integrate the parent's useful-helper bound and f=7..11 UNSAT evidence before promoting the unrestricted ten-knot lower bound; this lane does not recheck its SAT runs.",
+    "What full row-language sampling/rejection/normalization convention is intended beyond the known gadget embeddings? The frozen study already fixes their growth decoder, global-reference identity and collision policy.",
+    "What theorem maps the precise rule90/rule150 expanding growth with terminal NAE closure to an unbounded counting property?",
+    "Is any upper bound on total counting weight available? Current subset arithmetic provides none."
+  ],
+  "input_sha256": {
+    "research/CHEAP-COUNT-20261112-001/preregistration.md": "8988889372326e0b4567d45c72f87ad76663ceb2331efd3d51a6ea9721d065c3",
+    "research/CHEAP-COUNT-20261112-001/cheap_count.md": "29065c45cf16ec27f10e48cf677d7beafdcfbc9a9c1498424b493255df1a12fc",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s1.json": "6c33ee43383c16b39b055c9cc281bbd0547bd6ac21876d6fa1002693d37a7a73",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s2.json": "60547e4b2e763bd03b5427834584cf328f41bf72627a5966013850283950dd42",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/summary.json": "ff7b5272177b1b7dd1fe2824044136ede628be7ea3af08f9f6cff7833e8e1aee",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_0.jsonl": "b35dc2caf0579e9175b1664e00f5a1b92eedd42b20b9c7483079a17c855848b2",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_1.jsonl": "29d10cb981e6302269cd0ecbfbf20d594e082c79306272235f848159139de509",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_2.jsonl": "87d9e72b1237ab680864498a049c8c205a47439a37d809298ca8c51f04e8ca47",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_3.jsonl": "efd16b977657610c05a1dd6c658768af3bbf91c069f01cec0a3ad454f53e4f9e",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_4.jsonl": "029b0b532b3e690934cba2698241465f8fcf94760d1448df2948a7e1cf6da454",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_5.jsonl": "0a5a1dc42ee526ef010ea7b97458f61fa99e49ae52eeeee95563697862a038e2",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_6.jsonl": "a74e660a673e2e899bb3c86fb3ffd6eb386e1d314f46f98d150f6842c33f8b7a",
+    "artifacts/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/s3_7.jsonl": "404bc187e48b1af7dd4b9cd5a4a517279d7e03f897384adfa8be89d28252d555",
+    "experiments/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/census.py": "1384f13ffd9f2b53e67880030190cc1c05a166f8db181a96fb80cbf8d5e55c16"
+  },
+  "runtime": {
+    "seconds": 0.08614383201347664,
+    "max_rss_kib_linux": 19060,
+    "python": "/home/jscul/p-vs-np-contact-first/.venv/bin/python",
+    "codex_thread_id": "01a1d21e-085c-7672-96db-00c56e8aabc3",
+    "script_sha256": "96103c0c5c7946a2063b88feb2f241ac73b38ff943c08604d63476fb33c1a4a1"
+  }
+}

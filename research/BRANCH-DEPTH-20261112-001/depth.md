@@ -44,9 +44,11 @@ Finite relation powers and automata on trees are classical. The fixed-size proof
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Reach every depth in the rules with a linear lower bound | 2/3 — substantial | 2/3 — testable | Start with sample 0, line 4710, whose two successive copies introduce just four fresh distinctions. Test their 128 possible assignments for a step that repeats and reaches both even and odd depths. | Selected · candidate chosen |
+| 1 | Reach every depth in the rules with a linear lower bound | 2/3 — substantial | 2/3 — testable | Start with sample 0, line 4710, whose two successive copies introduce just four fresh distinctions. Test their 128 possible assignments for a step that repeats and reaches both even and odd depths. | Selected · tested in follow-up |
 | 2 | Find the exact slope in the original growing example | 2/3 — substantial | 2/3 — testable | Test whether every bond can be reduced to one of the known chains, or exhibit a shorter bond at a depth beyond six. | Alternative |
 | 3 | Decide boundedness without choosing a size in advance | 2/3 — substantial | 1/3 — conjectural | Identify a cost that composes across a recursive cut while preserving minimality. Stop at a preserving composition or a counterexample. | Alternative |
+
+The first two-level probe has since been completed as a separate ticket. Its 27 one-input choices all fail exact lifting, although five are knots after the remaining inputs are forgotten. [Follow-up test](../../experiments/TWO-LEVEL-BOND-20261112-001/TWO-LEVEL-BOND-20261112-001-E001_paired_levels/FINDINGS.md)
 
 The first direction addresses the largest group for which existence still changes the answer. It can use already checked local extension tables. The original example has exact small values and a constructive upper bound but no matching coefficient. The fixed-size theorem does not by itself give a terminating search over every size.
 
@@ -58,7 +60,9 @@ The first direction addresses the largest group for which existence still change
 
 ## Final report as sent
 
-2026-11-12T20:06-08:00
+2026-11-12T20:15-08:00
+
+:codex-annotation{index="1"}
 
 **Depth forces larger bonds in 69 of the 664 sampled rules. In 432 others, three or four distinctions suffice at every positive depth.** I fixed the target on the first recursive branch and let a bond use distinctions anywhere in the infinite pattern, including side branches beyond the target. A bond here has at least three members. They are constrained together, and forgetting any one leaves the rest free. [Census and individual results](https://github.com/jscul/knotlab/blob/main/experiments/BRANCH-DEPTH-20261112-001C/BRANCH-DEPTH-20261112-001C-E001_port_census/FINDINGS.md)
 
@@ -74,12 +78,14 @@ The growth proof turns on what an unobserved stretch can forget. Suppose that af
 
 We also proved that **for any fixed maximum bond size, the depths it reaches can be computed exactly**. After a finite beginning, the answer repeats. In the original growing example, the exact least sizes at depths one through six are **3, 3, 4, 4, 5, 5**. Its exact long-run growth rate remains open. [Fixed-size proof](https://github.com/jscul/knotlab/blob/main/proofs/BRANCH-DEPTH-20261112-001D/BRANCH-DEPTH-20261112-001D-P001_fixed_budget/proof.md)
 
-**I’d pursue the 154 next.** We already know how much any bond reaching a deep target must cost. What would change the answer is a construction that reaches every depth.
+I tested the simplest extension in one of the 154 open rules. Of 128 two-level assignments, 32 were allowed. Five of 27 choices looked like three-member knots after the other top inputs were forgotten, but all five lost an allowed extension when those inputs were restored. A step built on one input bit therefore cannot be repeated by this method. [Two-level test and a concrete counterexample](https://github.com/jscul/knotlab/blob/main/experiments/TWO-LEVEL-BOND-20261112-001/TWO-LEVEL-BOND-20261112-001-E001_paired_levels/FINDINGS.md)
+
+**I’d keep working on existence in the 154.** The failed test identifies exactly what the next construction has to retain.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Build a bond at every depth in one of the 154 rules | 2/3 | 2/3 | Test the 128 two-level assignments in sample 0, line 4710, for a repeatable step covering even and odd depths | Selected |
+| 1 | Reach every depth in a rule with a linear lower bound | 2/3 | 2/3 | Carry two input bits in sample 0, line 4710. Look for a repeatable step or two full inputs that defeat it | Selected |
 | 2 | Find the exact rate in the original rule | 2/3 | 2/3 | Prove the known construction is shortest or find a shorter bond beyond depth six | Alternative |
 | 3 | Decide whether some finite size suffices for all depths | 2/3 | 1/3 | Test whether minimum size can be tracked exactly across one recursive call | Alternative |
 
-The counts apply to these 664 archived records. The two general proofs and the remaining questions are in the [research note](https://github.com/jscul/knotlab/blob/main/research/BRANCH-DEPTH-20261112-001/depth.md).
+The counts apply to the 664 archived records. The two general proofs and the remaining questions are in the [research note](https://github.com/jscul/knotlab/blob/main/research/BRANCH-DEPTH-20261112-001/depth.md).

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "ticket": "TWO-LEVEL-BOND-20261112-001",
+  "canonical_id": "TWO-LEVEL-BOND-20261112-001-E001",
+  "artifact_id": "TWO-LEVEL-BOND-20261112-001-E001",
+  "kind": "experiment",
+  "branch": "code-analysis",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Do paired levels admit a uniformly liftable three-member step in sample 0 line 4710, and is there a cycle covering every positive depth?",
+  "observable": "For each incoming slot, outgoing slot and fresh helper distinct from the outgoing identity, compare the exact two-bit tables on all full allowed input words with the same chosen input bit. Count genuine knot links, neutral carries and cycles. Examine both target parities if such a cycle exists.",
+  "public_inputs": [
+    "BRANCH-DEPTH-20261112-001A",
+    "BRANCH-DEPTH-20261112-001C",
+    "BRANCH-DEPTH-20261112-001Z"
+  ],
+  "forbidden_inputs": [
+    "Using the root marginal alone in place of uniform lifting",
+    "Treating the absence of this kind of link as the absence of bonds"
+  ],
+  "first_signal": "The previous computation found a forgetting length of six and no upper certificate at one level. The first call uses (x,a,y) with fresh x and y.",
+  "control": "Run a constructed exact NAE chain and a free relation through the same criterion. Verify the concrete case independently with direct truth-table enumeration.",
+  "resource_ceiling": "One record, two successive levels and their four fresh variables. Total of 128 joint assignments before applying the preserved side-call restrictions.",
+  "stop_rule": "Exhaust every declared port, output and helper choice for this table and report the scope of any witness or exclusion."
+}

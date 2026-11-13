@@ -1,0 +1,773 @@
+{
+ "schema_version": 3,
+ "artifact_id": "BRANCH-DEPTH-20261112-001A-P001",
+ "kind": "proof",
+ "ticket": "BRANCH-DEPTH-20261112-001A",
+ "proof": "BRANCH-DEPTH-20261112-001A-P001",
+ "claim": "If the exact unobserved finite interface relation has a nonempty positive power equal to the product of its two actual projections, every finite bond from a group-0 variable to a group-s variable has at least 1+ceil(s/r) members, with arbitrary off-branch and later support. A uniform canonical-link cycle with identity carries gives a fresh own endpoint at every depth and a bond of size at most s+3. Genuine controls refute converses and endpoint existence from the bare relation alone. Free physical interfaces give a separate bounded cross-bond certificate.",
+ "status": "passed",
+ "validation_level": "V1: hand proofs and same-task independent finite encodings",
+ "uniform_claims": "argued-in-prose; finite checks are consistency checks",
+ "checks": {
+  "finite_relations": {
+   "relations_checked": 530,
+   "first_rectangular_histogram": {
+    "None": 217,
+    "1": 59,
+    "2": 176,
+    "3": 54,
+    "4": 18,
+    "5": 6
+   },
+   "nonfull_rectangular_control": {
+    "first_rectangular": 2,
+    "first_full": null,
+    "preperiod_start": 2,
+    "distinct_powers": 2
+   },
+   "accepted_shift_register": {
+    "first_rectangular": 3,
+    "first_full": 3,
+    "preperiod_start": 3,
+    "distinct_powers": 3
+   }
+  },
+  "occupancy": {
+   "admissible_occupancies": 34086,
+   "bound_attained": 221,
+   "scope": "s<=14,r<=5; all-size counting proved in prose"
+  },
+  "controls": {
+   "nae_chain_tables": [
+    {
+     "s": 0,
+     "size": 3,
+     "allowed": 6,
+     "excluded": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "s": 1,
+     "size": 4,
+     "allowed": 14,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "s": 2,
+     "size": 5,
+     "allowed": 30,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "s": 3,
+     "size": 6,
+     "allowed": 62,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       0,
+       1,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "s": 4,
+     "size": 7,
+     "allowed": 126,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0,
+       1,
+       0,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "s": 5,
+     "size": 8,
+     "allowed": 254,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "s": 6,
+     "size": 9,
+     "allowed": 510,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "s": 7,
+     "size": 10,
+     "allowed": 1022,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "s": 8,
+     "size": 11,
+     "allowed": 2046,
+     "excluded": [
+      [
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      [
+       1,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       1
+      ]
+     ]
+    }
+   ],
+   "canonical_reports": [
+    {
+     "s": 0,
+     "report": {
+      "loops": [
+       "z0",
+       "z1"
+      ],
+      "contact": "z2",
+      "erasure": "forgetting",
+      "binding": true,
+      "loss_on_erasure": true,
+      "coexistence": true,
+      "invisible_in_parts": true,
+      "pairwise_definable": false,
+      "minimum_width": 3,
+      "notes": [],
+      "is_knot": true
+     }
+    },
+    {
+     "s": 1,
+     "report": {
+      "loops": [
+       "z0",
+       "z1",
+       "z2"
+      ],
+      "contact": "z3",
+      "erasure": "forgetting",
+      "binding": true,
+      "loss_on_erasure": true,
+      "coexistence": true,
+      "invisible_in_parts": true,
+      "pairwise_definable": false,
+      "minimum_width": 4,
+      "notes": [],
+      "is_knot": true
+     }
+    },
+    {
+     "s": 3,
+     "report": {
+      "loops": [
+       "z0",
+       "z1",
+       "z2",
+       "z3",
+       "z4"
+      ],
+      "contact": "z5",
+      "erasure": "forgetting",
+      "binding": true,
+      "loss_on_erasure": true,
+      "coexistence": true,
+      "invisible_in_parts": true,
+      "pairwise_definable": false,
+      "minimum_width": 6,
+      "notes": [],
+      "is_knot": true
+     }
+    }
+   ],
+   "persistent_matrix": {
+    "first_rectangular": null,
+    "first_full": null,
+    "preperiod_start": 1,
+    "distinct_powers": 1
+   },
+   "physical_identity_union_patterns": 32,
+   "bounded_local_knot": {
+    "loops": [
+     "z0",
+     "z1"
+    ],
+    "contact": "z2",
+    "erasure": "forgetting",
+    "binding": true,
+    "loss_on_erasure": true,
+    "coexistence": true,
+    "invisible_in_parts": true,
+    "pairwise_definable": false,
+    "minimum_width": 3,
+    "notes": [],
+    "is_knot": true
+   },
+   "forgetting_without_endpoint": {
+    "product_bonds": [
+     [
+      1,
+      2,
+      3
+     ]
+    ],
+    "root_index": 0
+   },
+   "internally_constrained_counterexample": {
+    "allowed": [
+     [
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      1,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      0,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      1,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1,
+      0,
+      0
+     ],
+     [
+      1,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "bonds": [
+     [
+      0,
+      1,
+      2,
+      3
+     ]
+    ],
+    "internal_knot_report": {
+     "loops": [
+      "z0",
+      "z1",
+      "z2"
+     ],
+     "contact": "z3",
+     "erasure": "forgetting",
+     "binding": true,
+     "loss_on_erasure": true,
+     "coexistence": true,
+     "invisible_in_parts": true,
+     "pairwise_definable": false,
+     "minimum_width": 4,
+     "notes": [],
+     "is_knot": true
+    }
+   },
+   "positive_cross_certificates": {
+    "disjoint": {
+     "support": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "kind": "canonical-knot-candidate"
+    },
+    "overlapping": {
+     "support": [
+      0,
+      1,
+      2
+     ],
+     "kind": "canonical-knot-candidate"
+    }
+   },
+   "pair_control": {
+    "allowed": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "bonds": [
+     [
+      0,
+      1
+     ]
+    ],
+    "kind": "pair tie, not a canonical knot"
+   }
+  },
+  "composition": {
+   "source_knots": {
+    "3": 4,
+    "4": 30
+   },
+   "joins_checked": 1156,
+   "noncomplement_control_rejects_binding": true,
+   "atom_join_patterns": 16
+  },
+  "neutral_link_cycles": {
+   "rotated_cycles": [
+    {
+     "s": 0,
+     "start_slot": 0,
+     "links": 1,
+     "support_size": 3,
+     "allowed": 6
+    },
+    {
+     "s": 1,
+     "start_slot": 2,
+     "links": 1,
+     "support_size": 3,
+     "allowed": 6
+    },
+    {
+     "s": 2,
+     "start_slot": 0,
+     "links": 2,
+     "support_size": 4,
+     "allowed": 14
+    },
+    {
+     "s": 3,
+     "start_slot": 2,
+     "links": 2,
+     "support_size": 4,
+     "allowed": 14
+    },
+    {
+     "s": 4,
+     "start_slot": 0,
+     "links": 3,
+     "support_size": 5,
+     "allowed": 30
+    },
+    {
+     "s": 5,
+     "start_slot": 2,
+     "links": 3,
+     "support_size": 5,
+     "allowed": 30
+    },
+    {
+     "s": 6,
+     "start_slot": 0,
+     "links": 4,
+     "support_size": 6,
+     "allowed": 62
+    },
+    {
+     "s": 7,
+     "start_slot": 2,
+     "links": 4,
+     "support_size": 6,
+     "allowed": 62
+    },
+    {
+     "s": 8,
+     "start_slot": 0,
+     "links": 5,
+     "support_size": 7,
+     "allowed": 126
+    },
+    {
+     "s": 9,
+     "start_slot": 2,
+     "links": 5,
+     "support_size": 7,
+     "allowed": 126
+    },
+    {
+     "s": 10,
+     "start_slot": 0,
+     "links": 6,
+     "support_size": 8,
+     "allowed": 254
+    }
+   ],
+   "spectator_averaging_rejected": true
+  },
+  "knotlab_cli": {
+   "command": [
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python",
+    "-B",
+    "-m",
+    "knotlab",
+    "check",
+    "--cnf",
+    "q0 z0 ~z1 ~q2; ~q0 ~z0 z1 q2",
+    "--loops",
+    "q0",
+    "z0",
+    "z1",
+    "--contact",
+    "q2",
+    "--json"
+   ],
+   "report": {
+    "allowed": [
+     "0000",
+     "0001",
+     "0010",
+     "0100",
+     "0101",
+     "0110",
+     "0111",
+     "1000",
+     "1001",
+     "1010",
+     "1011",
+     "1101",
+     "1110",
+     "1111"
+    ],
+    "binding": true,
+    "coexistence": true,
+    "contact": "q2",
+    "erasure": "forgetting",
+    "invisible_in_parts": true,
+    "is_knot": true,
+    "loops": [
+     "q0",
+     "z0",
+     "z1"
+    ],
+    "loss_on_erasure": true,
+    "minimum_width": 4,
+    "notes": [],
+    "pairwise_definable": false,
+    "variables": [
+     "q0",
+     "z0",
+     "z1",
+     "q2"
+    ]
+   }
+  }
+ },
+ "failures": [],
+ "source_sha256": {
+  "proof.md": "a156dd0e090de9774bde56c6bfea3a3c241f25d76cf829f27f1d665c618c34b0",
+  "check.py": "b421328ec8ae7c77a52991f8f91f7e1646f0ae3985098583807ec217bb69ea5f",
+  "manifest.json": "6cc4e62a78bf4b0b69f7ee57b09e51f64106ff53d2b0a3c2bcefd2db73c8b551"
+ },
+ "dependency_sha256": {
+  "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/proof.md": "aff0e1c12d90f37b0d16a001e59481a1f028ee49b52c81d3930387931617c7d9",
+  "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/proof.md": "b0a1a4dcc3dd76ec2b7e5633fc8f365c547d6b1d44a4133b47329ff8e5fbb7b6"
+ }
+}

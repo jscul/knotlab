@@ -1,0 +1,1390 @@
+{
+  "artifact_id": "BRANCH-DEPTH-20261112-001D-P001",
+  "status": "Proved",
+  "theorem": "Effective ultimate periodicity for fixed support budget, exact profiles and a fixed regular first-child branch.",
+  "uniform_proof": "argued-in-prose",
+  "minimum_support": 3,
+  "validation": "V1-separate-algorithm-same-task",
+  "controls": [
+    {
+      "name": "persistent",
+      "budget": 3,
+      "greatest_port_relations": [
+        255
+      ],
+      "unmarked_rounds": 1,
+      "closure_rounds": 5,
+      "unrestricted_profiles": 11,
+      "orbit": {
+        "preperiod": 2,
+        "period": 1,
+        "answers": [
+          true,
+          true,
+          true
+        ],
+        "target_profile_counts": [
+          3,
+          4,
+          4
+        ],
+        "every_depth": true,
+        "any_depth": true,
+        "every_positive_depth": true,
+        "any_positive_depth": true
+      },
+      "seconds": 0.0013837270671501756
+    },
+    {
+      "name": "forgetting",
+      "budget": 3,
+      "greatest_port_relations": [
+        255
+      ],
+      "unmarked_rounds": 1,
+      "closure_rounds": 3,
+      "unrestricted_profiles": 9,
+      "orbit": {
+        "preperiod": 2,
+        "period": 1,
+        "answers": [
+          true,
+          true,
+          false
+        ],
+        "target_profile_counts": [
+          6,
+          4,
+          3
+        ],
+        "every_depth": false,
+        "any_depth": true,
+        "every_positive_depth": false,
+        "any_positive_depth": true
+      },
+      "seconds": 0.002526551950722933
+    },
+    {
+      "name": "alias",
+      "budget": 3,
+      "greatest_port_relations": [
+        255
+      ],
+      "unmarked_rounds": 1,
+      "closure_rounds": 5,
+      "unrestricted_profiles": 11,
+      "orbit": {
+        "preperiod": 2,
+        "period": 1,
+        "answers": [
+          true,
+          true,
+          true
+        ],
+        "target_profile_counts": [
+          3,
+          4,
+          4
+        ],
+        "every_depth": true,
+        "any_depth": true,
+        "every_positive_depth": true,
+        "any_positive_depth": true
+      },
+      "seconds": 0.0012730590533465147
+    },
+    {
+      "name": "empty",
+      "budget": 3,
+      "greatest_port_relations": [
+        0
+      ],
+      "unmarked_rounds": 2,
+      "closure_rounds": 2,
+      "unrestricted_profiles": 4,
+      "orbit": {
+        "preperiod": 0,
+        "period": 1,
+        "answers": [
+          false
+        ],
+        "target_profile_counts": [
+          2
+        ],
+        "every_depth": false,
+        "any_depth": false,
+        "every_positive_depth": false,
+        "any_positive_depth": false
+      },
+      "seconds": 0.0006333820056170225
+    },
+    {
+      "name": "finite_branch",
+      "budget": 3,
+      "greatest_port_relations": [
+        255
+      ],
+      "unmarked_rounds": 1,
+      "closure_rounds": 2,
+      "unrestricted_profiles": 4,
+      "orbit": {
+        "preperiod": 1,
+        "period": 1,
+        "answers": [
+          true,
+          false
+        ],
+        "target_profile_counts": [
+          2,
+          0
+        ],
+        "every_depth": false,
+        "any_depth": true,
+        "every_positive_depth": false,
+        "any_positive_depth": false
+      },
+      "seconds": 0.000319845974445343
+    },
+    {
+      "name": "no_own_at_root",
+      "budget": 3,
+      "greatest_port_relations": [
+        255,
+        255
+      ],
+      "unmarked_rounds": 1,
+      "closure_rounds": 6,
+      "unrestricted_profiles": 22,
+      "orbit": {
+        "preperiod": 3,
+        "period": 1,
+        "answers": [
+          false,
+          true,
+          true,
+          true
+        ],
+        "target_profile_counts": [
+          3,
+          7,
+          8,
+          8
+        ],
+        "every_depth": false,
+        "any_depth": true,
+        "every_positive_depth": true,
+        "any_positive_depth": true
+      },
+      "seconds": 0.001812431961297989
+    },
+    {
+      "name": "side",
+      "budget": 3,
+      "greatest_port_relations": [
+        255,
+        255
+      ],
+      "unmarked_rounds": 1,
+      "closure_rounds": 5,
+      "unrestricted_profiles": 10,
+      "orbit": {
+        "preperiod": 3,
+        "period": 1,
+        "answers": [
+          true,
+          true,
+          true,
+          false
+        ],
+        "target_profile_counts": [
+          4,
+          3,
+          3,
+          2
+        ],
+        "every_depth": false,
+        "any_depth": true,
+        "every_positive_depth": false,
+        "any_positive_depth": true
+      },
+      "seconds": 0.0021724390098825097
+    },
+    {
+      "name": "branching_depth",
+      "budget": 3,
+      "greatest_port_relations": [
+        255
+      ],
+      "unmarked_rounds": 1,
+      "closure_rounds": 5,
+      "unrestricted_profiles": 27,
+      "orbit": {
+        "preperiod": 3,
+        "period": 1,
+        "answers": [
+          true,
+          true,
+          true,
+          false
+        ],
+        "target_profile_counts": [
+          12,
+          8,
+          5,
+          4
+        ],
+        "every_depth": false,
+        "any_depth": true,
+        "every_positive_depth": false,
+        "any_positive_depth": true
+      },
+      "seconds": 0.03525669197551906
+    },
+    {
+      "name": "period_two",
+      "budget": 3,
+      "greatest_port_relations": [
+        126,
+        126
+      ],
+      "unmarked_rounds": 2,
+      "closure_rounds": 3,
+      "unrestricted_profiles": 10,
+      "orbit": {
+        "preperiod": 0,
+        "period": 2,
+        "answers": [
+          true,
+          false
+        ],
+        "target_profile_counts": [
+          5,
+          5
+        ],
+        "every_depth": false,
+        "any_depth": true,
+        "every_positive_depth": false,
+        "any_positive_depth": true
+      },
+      "seconds": 0.004182522068731487,
+      "all_root_ports_aliased": {
+        "preperiod": 0,
+        "period": 2,
+        "answers": [
+          false,
+          false
+        ],
+        "target_profile_counts": [
+          5,
+          5
+        ],
+        "every_depth": false,
+        "any_depth": false,
+        "every_positive_depth": false,
+        "any_positive_depth": false
+      }
+    }
+  ],
+  "benchmark_budget_4": {
+    "name": "branching_depth",
+    "budget": 4,
+    "greatest_port_relations": [
+      255
+    ],
+    "unmarked_rounds": 1,
+    "closure_rounds": 6,
+    "unrestricted_profiles": 389,
+    "orbit": {
+      "preperiod": 5,
+      "period": 1,
+      "answers": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "target_profile_counts": [
+        132,
+        110,
+        55,
+        36,
+        30,
+        28
+      ],
+      "every_depth": false,
+      "any_depth": true,
+      "every_positive_depth": false,
+      "any_positive_depth": true
+    },
+    "seconds": 1.354215919971466
+  },
+  "benchmark_least_bonds_derived": {
+    "3": 4,
+    "4": 4,
+    "5": 5,
+    "6": 5
+  },
+  "direct_finite_projection_controls": {
+    "persistent": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": true,
+        "supports_tested": 2,
+        "witness": {
+          "support": [
+            0,
+            2,
+            3
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": true,
+        "supports_tested": 3,
+        "witness": {
+          "support": [
+            0,
+            3,
+            4
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": true,
+        "supports_tested": 4,
+        "witness": {
+          "support": [
+            0,
+            4,
+            5
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": true,
+        "supports_tested": 5,
+        "witness": {
+          "support": [
+            0,
+            5,
+            6
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "forgetting": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": true,
+        "supports_tested": 4,
+        "witness": {
+          "support": [
+            0,
+            2,
+            4
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": true,
+        "supports_tested": 26,
+        "witness": {
+          "support": [
+            2,
+            3,
+            6
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": false,
+        "supports_tested": 45,
+        "witness": null
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": false,
+        "supports_tested": 57,
+        "witness": null
+      }
+    ],
+    "alias": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": true,
+        "supports_tested": 2,
+        "witness": {
+          "support": [
+            0,
+            2,
+            3
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": true,
+        "supports_tested": 3,
+        "witness": {
+          "support": [
+            0,
+            3,
+            4
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": true,
+        "supports_tested": 4,
+        "witness": {
+          "support": [
+            0,
+            4,
+            5
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": true,
+        "supports_tested": 5,
+        "witness": {
+          "support": [
+            0,
+            5,
+            6
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "empty": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": false,
+        "supports_tested": 21,
+        "witness": null
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": false,
+        "supports_tested": 33,
+        "witness": null
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": false,
+        "supports_tested": 45,
+        "witness": null
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": false,
+        "supports_tested": 57,
+        "witness": null
+      }
+    ],
+    "finite_branch": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": true,
+        "supports_tested": 5,
+        "witness": {
+          "support": [
+            0,
+            3,
+            4
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": false,
+        "supports_tested": 0,
+        "witness": null
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": false,
+        "supports_tested": 0,
+        "witness": null
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": false,
+        "supports_tested": 0,
+        "witness": null
+      }
+    ],
+    "no_own_at_root": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": false,
+        "supports_tested": 0,
+        "witness": null
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": true,
+        "supports_tested": 2,
+        "witness": {
+          "support": [
+            0,
+            2,
+            3
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": true,
+        "supports_tested": 3,
+        "witness": {
+          "support": [
+            0,
+            3,
+            4
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": true,
+        "supports_tested": 4,
+        "witness": {
+          "support": [
+            0,
+            4,
+            5
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "side": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": true,
+        "supports_tested": 4,
+        "witness": {
+          "support": [
+            0,
+            3,
+            5
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": true,
+        "supports_tested": 10,
+        "witness": {
+          "support": [
+            1,
+            4,
+            6
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": true,
+        "supports_tested": 19,
+        "witness": {
+          "support": [
+            2,
+            5,
+            7
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": false,
+        "supports_tested": 27,
+        "witness": null
+      }
+    ],
+    "period_two": [
+      {
+        "target_depth": 0,
+        "horizon": 1,
+        "found": true,
+        "supports_tested": 5,
+        "witness": {
+          "support": [
+            0,
+            3,
+            4
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 1,
+        "horizon": 2,
+        "found": false,
+        "supports_tested": 54,
+        "witness": null
+      },
+      {
+        "target_depth": 2,
+        "horizon": 3,
+        "found": true,
+        "supports_tested": 15,
+        "witness": {
+          "support": [
+            0,
+            8,
+            9
+          ],
+          "allowed": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "target_depth": 3,
+        "horizon": 4,
+        "found": false,
+        "supports_tested": 99,
+        "witness": null
+      }
+    ],
+    "incorrectly_omit_side_constraints": {
+      "target_depth": 0,
+      "horizon": 1,
+      "found": false,
+      "supports_tested": 9,
+      "witness": null
+    }
+  },
+  "canonical_knotlab_controls": {
+    "nae": true,
+    "empty": false,
+    "full": false
+  },
+  "usual_limit_control": {
+    "corrected": {
+      "status": "decided",
+      "budget": 3,
+      "branch": "repeated first SELF call",
+      "usual_limit_preprocessing": true,
+      "greatest_port_relations": [
+        126
+      ],
+      "closure_rounds": 3,
+      "unrestricted_profiles": 4,
+      "orbit": {
+        "preperiod": 0,
+        "period": 1,
+        "answers": [
+          false
+        ],
+        "target_profile_counts": [
+          2
+        ],
+        "every_depth": false,
+        "any_depth": false,
+        "every_positive_depth": false,
+        "any_positive_depth": false
+      },
+      "seconds": 0.0005746079841628671
+    },
+    "bottomless": {
+      "status": "decided",
+      "budget": 3,
+      "branch": "repeated first SELF call",
+      "usual_limit_preprocessing": false,
+      "greatest_port_relations": [
+        255
+      ],
+      "closure_rounds": 3,
+      "unrestricted_profiles": 4,
+      "orbit": {
+        "preperiod": 0,
+        "period": 1,
+        "answers": [
+          false
+        ],
+        "target_profile_counts": [
+          2
+        ],
+        "every_depth": false,
+        "any_depth": false,
+        "every_positive_depth": false,
+        "any_positive_depth": false
+      },
+      "seconds": 0.0005802430678158998
+    }
+  },
+  "resource_limit_control": "raised-without-verdict",
+  "state_resource_limit_control": "raised-without-verdict",
+  "budgets_below_three_rejected": true,
+  "coherent_tie_only_alias": {
+    "port_states": 2,
+    "orbit": {
+      "preperiod": 0,
+      "period": 1,
+      "answers": [
+        false
+      ],
+      "target_profile_counts": [
+        2
+      ],
+      "every_depth": false,
+      "any_depth": false,
+      "every_positive_depth": false,
+      "any_positive_depth": false
+    }
+  },
+  "unknown_budget_decidability_established": false,
+  "corpus_664_replayed": false,
+  "resource_note": "No practical runtime guarantee for all 664 rules follows from finite termination. The explicit cap raises ResourceLimit without returning a verdict.",
+  "dependency_bindings": {
+    "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/proof.md": "aff0e1c12d90f37b0d16a001e59481a1f028ee49b52c81d3930387931617c7d9",
+    "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/proof.md": "b0a1a4dcc3dd76ec2b7e5633fc8f365c547d6b1d44a4133b47329ff8e5fbb7b6"
+  },
+  "owned_bindings": {
+    "check.py": "93fcaa34751ee2e2e18ad69c75a9c175cf8681cfd37a55648e24bf80971670fd",
+    "proof.md": "9230786d4b22c33c2c5f0834c02fff667e02475bc6922b487a614a3be0d0e0da"
+  }
+}

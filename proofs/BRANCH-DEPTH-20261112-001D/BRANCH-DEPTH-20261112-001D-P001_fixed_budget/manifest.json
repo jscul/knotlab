@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "fixed_budget_depths_effectively_ultimately_periodic": true,
+    "fixed_budget_all_depth_existence_decidable": true,
+    "unknown_budget_decidability_established": false,
+    "benchmark_k3_and_k4_existence_exact": true,
+    "general_practical_corpus_feasibility_established": false
+  },
+  "kind": "proof",
+  "artifact_id": "BRANCH-DEPTH-20261112-001D-P001",
+  "canonical_id": "BRANCH-DEPTH-20261112-001D-P001",
+  "proof": "BRANCH-DEPTH-20261112-001D-P001",
+  "ticket": "BRANCH-DEPTH-20261112-001D",
+  "title": "Reachable depths for fixed bond size",
+  "status": "Proved",
+  "claim": "For every fixed support budget k, the depths admitting a K1-K3 bond of size 3 through k from a top port to an own variable on the repeated first-child branch form an effectively ultimately periodic set. Exact finite-profile saturation allows arbitrary finite auxiliary observations throughout the infinite pattern, including side branches and beyond the target; hence existence at every depth is decidable for fixed k.",
+  "standard_statement": "Construct the finite algebra of exact projected relations on ports and at most k-1 injectively placed observation labels; saturate arbitrary finite placements, then iterate a deterministic target-depth profile vector and apply the exact K1-K3 acceptance filter on distinct variable identities.",
+  "prior_work": "Regular tree types and unary finite automata are classical. Compare NEST-COUNT for a fixed top window and BONDS-AND-COUNT E for one concrete growth example. Give an elementary construction that handles finite marking at unbounded side depth and arbitrary supports beyond the target.",
+  "dependencies": [
+    "BONDS-AND-COUNT-20261112-001E",
+    "NEST-COUNT-20261112-001A"
+  ],
+  "source_contribution": 0,
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "finite-instance-classification"
+    ]
+  },
+  "validation": {
+    "level": "V1",
+    "classification": "V1-separate-algorithm-same-task",
+    "status": "Final replay passed for 9 primary controls, concrete SAT comparisons, K1\u2013K3, coherent and empty alias behavior, both budget orbits for the predecessor, and negative resource-limit tests.",
+    "independence": "Finite relation profile algebra versus a separate concrete SAT expansion/projection path, authored in the same task; uniform theorem argued in prose",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta"
+  },
+  "remaining_obligations": [],
+  "foundation_claim_scope": "Finite projected K1-K3 supports of size at least three in supplied recursive NAE systems, with exact identity and endpoint conventions. No finite-flip source or native contact-composition claim.",
+  "paths": {
+    "identity": "proofs/BRANCH-DEPTH-20261112-001D/BRANCH-DEPTH-20261112-001D-P001_fixed_budget/identity.json",
+    "manifest": "proofs/BRANCH-DEPTH-20261112-001D/BRANCH-DEPTH-20261112-001D-P001_fixed_budget/manifest.json",
+    "proof": "proofs/BRANCH-DEPTH-20261112-001D/BRANCH-DEPTH-20261112-001D-P001_fixed_budget/proof.md",
+    "result": "proofs/BRANCH-DEPTH-20261112-001D/BRANCH-DEPTH-20261112-001D-P001_fixed_budget/result.json",
+    "check": "proofs/BRANCH-DEPTH-20261112-001D/BRANCH-DEPTH-20261112-001D-P001_fixed_budget/check.py"
+  },
+  "scope_limits": [
+    "The unknown uniform support budget question exists k for all depths is not decided by this proof.",
+    "No practical runtime guarantee is given for the 664-rule corpus; this leaf does not repeat its census.",
+    "The canonical finite-projection knot-bond test does not settle finite-flip sources at an infinite solution."
+  ],
+  "parent_bindings": {
+    "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/proof.md": "aff0e1c12d90f37b0d16a001e59481a1f028ee49b52c81d3930387931617c7d9",
+    "proofs/NEST-COUNT-20261112-001A/NEST-COUNT-20261112-001A-P001_finite_state/proof.md": "b0a1a4dcc3dd76ec2b7e5633fc8f365c547d6b1d44a4133b47329ff8e5fbb7b6"
+  },
+  "failure_conditions": [
+    "Finite observations are replaced by a depth cutoff before exact profile closure.",
+    "The target-vector recurrence drops side branches or continuations beyond the target.",
+    "Repeated formal ports are counted as distinct actual variables or equal values are treated as identity.",
+    "An empty relation, full relation, or two-variable tie passes the bond filter.",
+    "A resource-limited or unrepeated target orbit is reported as a decision.",
+    "The branch convention or usual-limit preprocessing differs from the supplied presentation."
+  ]
+}

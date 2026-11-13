@@ -1,0 +1,83 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "kind": "proof",
+  "artifact_id": "BRANCH-DEPTH-20261112-001B-P001",
+  "canonical_id": "BRANCH-DEPTH-20261112-001B-P001",
+  "proof": "BRANCH-DEPTH-20261112-001B-P001",
+  "ticket": "BRANCH-DEPTH-20261112-001B",
+  "title": "A branching limit-only family with exact least bond size three at every depth",
+  "status": "Proved",
+  "claim": "For every s>=1, L(s)=3 in LIMIT-ONLY sample_2 line 25697, where L minimizes over all three top ports, both fresh own distinctions of the depth-s first-SELF copy, and arbitrary finite support throughout the infinite family. A second actual limit-only member retains a top port that belongs to no bond.",
+  "standard_statement": "In the specified infinite recursively presented positive NAE instance, the least cardinality of a finite inclusion-minimal nonshattered support containing a root port and an own variable of the first-branch depth-s copy is exactly three for every s>=1. Every eligible two-variable projection is full; an explicit three-variable projection is NAE. The ignored-port control is a free product factor.",
+  "prior_work": "The previous all-depth proof bounds size linearly for a fixed first branch in one rule. Permitting the target branch to vary gives constant size there; a different actual census member with a fixed target branch is sought.",
+  "dependencies": [
+    "BONDS-AND-COUNT-20261112-001E",
+    "LIMIT-ONLY-20261112-001A",
+    "NEST-COUNT-20261112-001A"
+  ],
+  "source_contribution": 1,
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel"
+    ]
+  },
+  "validation": {
+    "level": "V1-separate-algorithm-same-task",
+    "status": "Complete symbolic extension and pair-freedom proof. Exact source rows, both complete finite orbits and TOP summaries checked; scalar projections through depth four, SAT through twelve, knotlab at depths one, two, five and twelve, and ignored-port and finite-change controls pass.",
+    "trusted_kernel": false,
+    "external_review": false,
+    "novelty": "field-level novelty not assessed"
+  },
+  "remaining_obligations": [],
+  "scope_limits": [
+    "The exact aggregate minimum is proved; every individual endpoint-pair minimum is not classified.",
+    "There is no corpus frequency, arithmetic-counting or general family-classification claim.",
+    "The finite-change negative control excludes an automatic native verdict at one explicit infinite solution; no positive native-at-infinity claim is made."
+  ],
+  "foundation_claim_scope": "Minimal nonshattered supports in the allowed states of supplied nested relations. No finite-flip source or frequency assertion.",
+  "paths": {
+    "identity": "proofs/BRANCH-DEPTH-20261112-001B/BRANCH-DEPTH-20261112-001B-P001_bounded_depth/identity.json",
+    "manifest": "proofs/BRANCH-DEPTH-20261112-001B/BRANCH-DEPTH-20261112-001B-P001_bounded_depth/manifest.json",
+    "proof": "proofs/BRANCH-DEPTH-20261112-001B/BRANCH-DEPTH-20261112-001B-P001_bounded_depth/proof.md",
+    "result": "proofs/BRANCH-DEPTH-20261112-001B/BRANCH-DEPTH-20261112-001B-P001_bounded_depth/result.json",
+    "check": "proofs/BRANCH-DEPTH-20261112-001B/BRANCH-DEPTH-20261112-001B-P001_bounded_depth/check.py"
+  }
+}

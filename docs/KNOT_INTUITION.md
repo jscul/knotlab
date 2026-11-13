@@ -3388,6 +3388,7 @@ So holes come in two kinds:
      counter built from it counts depth in binary, its cheapest descriptions found take about 104 to 106 bits (which bounds how
      rare counting is from neither side), one changed knot almost always breaks it within depth 64, and the hopping version is
      dead from depth 12 to 64 ([decision note](../research/CHEAP-COUNT-20261112-001/cheap_count.md)).
+   - **Bonds in a side copy and a counter with shared helpers** (`BONDS-AND-COUNT-20261112-001`). At depth two one branch gives a least bond of four, even after comparing all six eligible pairs of ends. One distinction in a side copy gives a bond of three for the same comparison (exact example). Even with every side branch available, the least bond to a target on the first recursive branch grows linearly with depth (proved). A separate construction counts with three distinctions per position. The whole pattern can read the original reference and one helper of the seed. Counting with just the original reference readable everywhere remains open. [The three questions](../research/BONDS-AND-COUNT-20261112-001/three_questions.md)
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose
@@ -6294,6 +6295,7 @@ So holes come in two kinds:
      the heddle's sizes, to ten across. Balls grow by two across-counts each way per step of bond distance: no length along one shift,
      one dimension across. That no smaller bond exists beyond one along-count is open; none turned up in the boxes searched
      ([decision note](../research/ACROSS-FOLD-20261112-001/across_fold.md)).
+   - **Any fixed bond size reaches only finitely far across (proved).** On base 16 this holds for arbitrary along-counts of all members. For every n ≥ 3 and k ≥ 2 the downward construction also gives the explicit bond of size floor((n+1)/2) + 3. Whether arbitrarily placed distinctions can lower this size remains open. [Unrestricted bound and downward construction](../research/BONDS-AND-COUNT-20261112-001/three_questions.md)
 
    **2026-11-12: how common global influence is** (`COMMON-FOLD-20261112-001`; refereed, confirmed with fixes).
    - **The question.** Base 16 is one sample nobody chose. Among random periodic bases, is a bounded set deciding distinctions

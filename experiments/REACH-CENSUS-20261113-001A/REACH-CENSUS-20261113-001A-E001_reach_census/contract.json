@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "REACH-CENSUS-20261113-001A-E001",
+ "ticket": "REACH-CENSUS-20261113-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Across the 223,261 nested draws of the short-description code: the share by weight and among distinct sampled families whose least ray bond grows, is bounded or is absent, by fate.",
+ "definitions": {"spec": "research/REACH-CENSUS-20261113-001/codex_spec.md (sha256 5265cdd78a830f6737858aed36b36ef2e0c099414b4b1b405bdbf19fdd54e497), computed by Codex", "classes": "settled S1-S4; computed grows / bounded / mixed by residue / lost at large depths / none at any depth / unresolved, as in the spec"},
+ "public_inputs": {"code": "written by Codex in codex/ from the spec; LIMIT-ONLY sample rows, dlang.py, BD census.py, PR codex code and the PROVED-RATE referee's recompute.py read-only.", "run": "codex exec with the spec in one memory-capped unit; the full run launched by the thread from Codex's runner."},
+ "forbidden_inputs": ["Changing the spec, predictions or decision rules after seeing registered results"],
+ "primary_observable": "class per distinct family, joined to draws: weight shares with two-sided bands per cell.",
+ "cheapest_meaningful_control": "PR's and BOND-DEPTH's records on the 664 one-definition families (G1) and an independent brute force (G3).",
+ "validation_gate": "G0-G3 of the pre-registration; any failure invalidates the run.",
+ "predictions": {"P1": "bounded typical (lower end > 1/2) among computed forever draws with a persisting ray bond", "P2": "grows in [5%, 24%] among computed forever draws", "P3": "limit-only minus forever grows share >= 10 points, bootstrap 2.5% quantile > 0"},
+ "stop_rule": "One Codex hand-off, one full run by the thread, its summary; a hand-off to the referee thread; report.",
+ "runtime": "Unknown; registered as long-running."
+}

@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "EVERY-RAY-20261113-001A-E001",
+ "ticket": "EVERY-RAY-20261113-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "The least bond to depth s over all descending paths of copies: for how many families is it bounded along some path, and does any grow along every path?",
+ "definitions": {"spec": "research/EVERY-RAY-20261113-001/codex_spec.md (sha256 4ef9dbdb2dd1ae603e78d94673f581a7158acb9417248c9b96c545815c3e9dcc), computed by Codex", "object": "L_path, the census ray DP with the middle step a min over which SELF call continues; L_any <= L_path <= L_ray; L_any <= L_true"},
+ "public_inputs": {"code": "written by Codex in codex/ from the spec; the reach-census code, dlang.py and LIMIT-STATE read-only.", "run": "codex exec with the spec; the full run launched by the thread from Codex's runner."},
+ "forbidden_inputs": ["Changing the spec, predictions or decision rules after seeing registered results", "Reading the TRUE-BOND/TRUE-RATE experiment folders"],
+ "primary_observable": "the over-paths class per family and L_path(s), joined to draws: weight bands per cell.",
+ "cheapest_meaningful_control": "the reach census's L_ray (G-reg, G-last) and an independent flattened brute force (G-brute).",
+ "validation_gate": "G-last, G-brute, G-node of the pre-registration; any failure invalidates the run.",
+ "predictions": {"P1": "first-ray growth bounded over paths in >=75% by count (and a weight majority), excluding the 224", "P2": "some c>=2 symmetry-inequivalent family grows along every path (count reported)", "P3": "some family has a bond only off the first ray"},
+ "stop_rule": "One Codex hand-off, one full run by the thread, its summary; a hand-off to the referee thread; report.",
+ "runtime": "Unknown; registered as long-running."
+}

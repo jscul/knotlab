@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TRUE-RATE-20261113-001A-E001",
+ "ticket": "TRUE-RATE-20261113-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Proved true growth rates (side branches allowed) for the 226 families with growing ray bonds: uncapped least-fixed-point side table, depth-independent ray-summary graph, Karp.",
+ "definitions": {"spec": "research/TRUE-RATE-20261113-001/codex_spec.md (sha256 897f623fd47007c93c81e1322f0c8977558e6785e878d9c386d2d059010a56db)"},
+ "public_inputs": {"code": "written by Codex in codex/ from the spec; TRUE-BOND and PROVED-RATE code read-only.", "run": "codex/run_rate.py on the 226, launched by the thread."},
+ "forbidden_inputs": ["Changing the spec, predictions or decision rules after seeing registered results"],
+ "primary_observable": "lambda_true per closed family; zero cycles; the gate.",
+ "cheapest_meaningful_control": "TRUE-BOND's exact L(s) (the gate) and PROVED-RATE's lambda_ray.",
+ "validation_gate": "L(s) from the graph equals TRUE-BOND's exact values.",
+ "predictions": {"P1": "closed and complete >= 113", "P2": "no zero-weight trimmed cycle in a complete family", "P3": "4 deficit-growing: lambda_ray - lambda_true = 1/2; >= 80% of the rest lambda_true = lambda_ray"},
+ "stop_rule": "Code by Codex; one run by the thread; a hand-off to the referee thread; report.",
+ "runtime": "Unknown; registered as long-running."
+}

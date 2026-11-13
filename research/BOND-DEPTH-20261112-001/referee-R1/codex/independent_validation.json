@@ -1,0 +1,4603 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "BOND-DEPTH-20261112-001",
+  "kind": "independent finite referee computation",
+  "validation_independence": "V2",
+  "evidence_class": "exact finite computation; independent AI-subagent implementation within the same task",
+  "external_replication": false,
+  "producer_imports": [],
+  "dependencies_used": {
+    "raw_literal_definitions": true,
+    "recorded_validation": "comparison only",
+    "recorded_census": "comparison and supplementary case selection only",
+    "numpy": "truth-table operations",
+    "pysat_cadical153": "witness and deletion SAT checks; backend shared with producer"
+  },
+  "budget": {
+    "per_family_seconds": 90,
+    "total_seconds": 550,
+    "address_space_bytes": 8589934592,
+    "support_size_cap": null
+  },
+  "contract": {
+    "sample_rule": "selected fixed IDs from independently reconstructed random.Random(7).sample(genuine,40)",
+    "selected_ids": [
+      103,
+      156,
+      480,
+      311,
+      737,
+      124,
+      1307,
+      104
+    ],
+    "depths": [
+      1,
+      2,
+      3
+    ],
+    "chain_depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "selection_reason": "initial five small cases; then three supplementary small cases chosen to cover varied recorded prefixes",
+    "selection_history": [
+      {
+        "phase": "initial",
+        "ids": [
+          103,
+          156,
+          480,
+          311,
+          737
+        ],
+        "reason": "small cases and 737's nontrivial terminal relation"
+      },
+      {
+        "phase": "supplementary",
+        "ids": [
+          124,
+          1307,
+          104
+        ],
+        "reason": "initial cases all flat through depth 3; recorded prefixes add 3,4,4; 3,4,5; and 3,2,2"
+      }
+    ],
+    "exhaustive_rule": "all smaller supports covered; supersets of known bonds excluded by minimality",
+    "primary_observable": "least cardinality of a minimal non-shattered support meeting top and last locals"
+  },
+  "provenance": {
+    "command": ".venv/bin/python -B research/BOND-DEPTH-20261112-001/referee-R1/codex/independent_validation.py",
+    "python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+    "numpy": "2.3.2",
+    "thread_id": "01a1d2fc-6f69-7e80-8b7f-a6a4f287837b",
+    "producer_sha256": "bba5f4f187dec802ebb3f457d1183fe6ffb72d7517bcb11ba0f2eed2841c8ca2",
+    "script_sha256": "21dc9bddfc0723f0cb832e74faf710ca225363886477324a030d6259cf8a7392",
+    "validation_sha256": "033f34e49d2d3eaa882937b43beceb51ee1969d56bdcc707d388d018195b7675",
+    "merged_census_sha256": "1de0a40fcd29e0b40d92240651aed58f304236c9a607fb8542dac3204dc25075",
+    "raw_files": [
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_0.jsonl.gz",
+        "sha256": "8034d16f350f67461b8463584d2615cb74fa396595383800521b55a3536a97d0"
+      },
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_1.jsonl.gz",
+        "sha256": "7f4ff6f83e80b3f0653441887cf82a780782921dcd775399c727e6463ee11389"
+      },
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_2.jsonl.gz",
+        "sha256": "39f06326c30dc32ce6a21515180dbabeba0222c3a651c2ab9360e9342ffe860f"
+      },
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_3.jsonl.gz",
+        "sha256": "4623a27ae6eddd24288ab5dbabb55aed8ca4999f09f277778d930d3f4e6415a7"
+      },
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_4.jsonl.gz",
+        "sha256": "40ac43a2d3974f0075b17653a75a8f940db949895f8ab61dee4e312c56b2b507"
+      },
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_5.jsonl.gz",
+        "sha256": "42967e56d10f52a2138abac48a2e39a1489bfddf167dda9b7650018be884adaf"
+      },
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_6.jsonl.gz",
+        "sha256": "a821b24446924e1e1507b07844441efb5b9128daf71af61323bd788e4887d37a"
+      },
+      {
+        "path": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_7.jsonl.gz",
+        "sha256": "153894b5f5a2298b0dd4d03d86c300a569efb9837ea60589845afe51d17d9b17"
+      }
+    ]
+  },
+  "source_counts": {
+    "limit_only_families": 1341,
+    "one_definition_genuine": 664
+  },
+  "recorded_validation": {
+    "cases": 120,
+    "agree": 120,
+    "disagree": [],
+    "skipped": 0,
+    "chains": [
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    ]
+  },
+  "recorded_validation_limitation": "aggregate 120/120 and chains only; individual validation values were not retained",
+  "reconstructed_40_sample_ids": [
+    651,
+    311,
+    792,
+    103,
+    156,
+    1093,
+    204,
+    737,
+    1209,
+    124,
+    1030,
+    434,
+    78,
+    186,
+    872,
+    847,
+    153,
+    480,
+    193,
+    1139,
+    856,
+    127,
+    1168,
+    267,
+    445,
+    1307,
+    1303,
+    137,
+    1195,
+    1217,
+    795,
+    104,
+    443,
+    100,
+    1152,
+    277,
+    585,
+    849,
+    298,
+    1112
+  ],
+  "cases": [
+    {
+      "idx": 103,
+      "seeded_validation_sample_order": 3,
+      "definition": [
+        3,
+        2,
+        [
+          [
+            "SELF",
+            [
+              4,
+              1,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              1,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              4,
+              1
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              0,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              1,
+              2
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              0,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              0,
+              4,
+              1
+            ]
+          ],
+          [
+            "K",
+            [
+              4,
+              0,
+              2
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              1,
+              3
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 103,
+        "l": 2,
+        "seconds": 0.1,
+        "L": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "rate": {
+          "period": 1,
+          "gain": 0,
+          "from_s": 4
+        },
+        "states": 72
+      },
+      "cells": [
+        {
+          "nvariables": 7,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "ignored_free_variables": [
+            5
+          ],
+          "assignments_evaluated": 64,
+          "active_solutions": 24,
+          "clauses": 8,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 36,
+          "supports_evaluated": 36,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 6,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            1,
+            3,
+            6
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.005272,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "ignored_free_variables": [
+            7
+          ],
+          "assignments_evaluated": 256,
+          "active_solutions": 58,
+          "clauses": 12,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 71,
+          "supports_evaluated": 71,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 8,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            1,
+            5,
+            8
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 8,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 4,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000443,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 11,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "ignored_free_variables": [
+            9
+          ],
+          "assignments_evaluated": 1024,
+          "active_solutions": 140,
+          "clauses": 16,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 118,
+          "supports_evaluated": 118,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 10,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            1,
+            7,
+            10
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 5,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.000609,
+          "expected_L": 3,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.006394
+    },
+    {
+      "idx": 156,
+      "seeded_validation_sample_order": 4,
+      "definition": [
+        3,
+        2,
+        [
+          [
+            "SELF",
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              2,
+              4,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              4,
+              3,
+              1
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              0,
+              4
+            ]
+          ],
+          [
+            "K",
+            [
+              3,
+              4,
+              2
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              3,
+              1
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              0,
+              3
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 156,
+        "l": 2,
+        "seconds": 15.8,
+        "L": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "rate": null,
+        "states": 5354
+      },
+      "cells": [
+        {
+          "nvariables": 7,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 128,
+          "active_solutions": 18,
+          "clauses": 16,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 43,
+          "supports_evaluated": 43,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 7,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            0,
+            5,
+            6
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 17,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.000314,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 512,
+          "active_solutions": 26,
+          "clauses": 24,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 57,
+          "supports_evaluated": 57,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            0,
+            2,
+            7
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 15,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000588,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 11,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 2048,
+          "active_solutions": 36,
+          "clauses": 32,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 131,
+          "supports_evaluated": 131,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 11,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            1,
+            4,
+            9
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 15,
+            "accepted": true
+          },
+          "known_bonds_found": 11,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.000792,
+          "expected_L": 3,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.00173
+    },
+    {
+      "idx": 480,
+      "seeded_validation_sample_order": 17,
+      "definition": [
+        3,
+        2,
+        [
+          [
+            "SELF",
+            [
+              3,
+              0,
+              2
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              2,
+              1
+            ]
+          ],
+          [
+            "SELF",
+            [
+              1,
+              4,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              0,
+              2,
+              4
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 480,
+        "l": 2,
+        "seconds": 0.0,
+        "L": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "rate": {
+          "period": 1,
+          "gain": 0,
+          "from_s": 3
+        },
+        "states": 50
+      },
+      "cells": [
+        {
+          "nvariables": 7,
+          "active_variables": [
+            0,
+            2,
+            3,
+            4,
+            6
+          ],
+          "ignored_free_variables": [
+            1,
+            5
+          ],
+          "assignments_evaluated": 32,
+          "active_solutions": 18,
+          "clauses": 4,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 23,
+          "supports_evaluated": 23,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 5,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            2,
+            3,
+            6
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 2,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.000179,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "ignored_free_variables": [
+            1,
+            7
+          ],
+          "assignments_evaluated": 128,
+          "active_solutions": 54,
+          "clauses": 6,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 52,
+          "supports_evaluated": 52,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 7,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            2,
+            5,
+            8
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 8,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000258,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 11,
+          "active_variables": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "ignored_free_variables": [
+            1,
+            9
+          ],
+          "assignments_evaluated": 512,
+          "active_solutions": 162,
+          "clauses": 8,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 93,
+          "supports_evaluated": 93,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            2,
+            7,
+            10
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 4,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.00043,
+          "expected_L": 3,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.000898
+    },
+    {
+      "idx": 311,
+      "seeded_validation_sample_order": 1,
+      "definition": [
+        3,
+        3,
+        [
+          [
+            "SELF",
+            [
+              0,
+              3,
+              2
+            ]
+          ],
+          [
+            "K",
+            [
+              0,
+              2,
+              5
+            ]
+          ],
+          [
+            "SELF",
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              5,
+              0,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              3,
+              0,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              2,
+              5
+            ]
+          ],
+          [
+            "K",
+            [
+              1,
+              3,
+              4
+            ]
+          ],
+          [
+            "K",
+            [
+              5,
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 311,
+        "l": 3,
+        "seconds": 25.5,
+        "L": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "rate": null,
+        "states": 1269
+      },
+      "cells": [
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 512,
+          "active_solutions": 76,
+          "clauses": 16,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 58,
+          "supports_evaluated": 58,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            0,
+            2,
+            8
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 8,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 2,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.000349,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 12,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 4096,
+          "active_solutions": 264,
+          "clauses": 24,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 97,
+          "supports_evaluated": 97,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 12,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            0,
+            2,
+            11
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 11,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000747,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 15,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 32768,
+          "active_solutions": 948,
+          "clauses": 32,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 145,
+          "supports_evaluated": 145,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 15,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            0,
+            2,
+            14
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 14,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 4,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.008738,
+          "expected_L": 3,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.009876
+    },
+    {
+      "idx": 737,
+      "seeded_validation_sample_order": 7,
+      "definition": [
+        3,
+        3,
+        [
+          [
+            "SELF",
+            [
+              3,
+              1,
+              5
+            ]
+          ],
+          [
+            "K",
+            [
+              1,
+              3,
+              4
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              1,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              5,
+              0,
+              1
+            ]
+          ],
+          [
+            "K",
+            [
+              3,
+              2,
+              5
+            ]
+          ],
+          [
+            "SELF",
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              2,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              3,
+              2
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              4,
+              5
+            ]
+          ],
+          [
+            "K",
+            [
+              4,
+              3,
+              5
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 737,
+        "l": 3,
+        "seconds": 0.4,
+        "L": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "rate": {
+          "period": 2,
+          "gain": 0,
+          "from_s": 6
+        },
+        "states": 59
+      },
+      "cells": [
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 512,
+          "active_solutions": 12,
+          "clauses": 38,
+          "sizes_fully_completed": [
+            1
+          ],
+          "supports_seen": 29,
+          "supports_evaluated": 29,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 2,
+          "witness": [
+            2,
+            7
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 6,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.000451,
+          "expected_L": 2,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 12,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 4096,
+          "active_solutions": 16,
+          "clauses": 56,
+          "sizes_fully_completed": [
+            1
+          ],
+          "supports_seen": 41,
+          "supports_evaluated": 41,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 12,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 2,
+          "witness": [
+            2,
+            10
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 7,
+            "accepted": true
+          },
+          "known_bonds_found": 5,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000979,
+          "expected_L": 2,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 15,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 32768,
+          "active_solutions": 24,
+          "clauses": 74,
+          "sizes_fully_completed": [
+            1
+          ],
+          "supports_seen": 53,
+          "supports_evaluated": 53,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 15,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 2,
+          "witness": [
+            2,
+            13
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 2,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 13,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 6,
+            "accepted": true
+          },
+          "known_bonds_found": 7,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.01814,
+          "expected_L": 2,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.019619
+    },
+    {
+      "idx": 124,
+      "seeded_validation_sample_order": 9,
+      "definition": [
+        3,
+        2,
+        [
+          [
+            "K",
+            [
+              2,
+              4,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              4,
+              1,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              1,
+              4,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              3,
+              0,
+              2
+            ]
+          ],
+          [
+            "K",
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              1,
+              0
+            ]
+          ],
+          [
+            "K",
+            [
+              4,
+              0,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 124,
+        "l": 2,
+        "seconds": 0.1,
+        "L": [
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8,
+          9,
+          9,
+          10,
+          10,
+          11,
+          11,
+          12,
+          12,
+          13,
+          13,
+          14,
+          14,
+          15,
+          15,
+          16,
+          16,
+          17,
+          17,
+          18
+        ],
+        "rate": null,
+        "states": 44
+      },
+      "cells": [
+        {
+          "nvariables": 7,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 128,
+          "active_solutions": 16,
+          "clauses": 20,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 39,
+          "supports_evaluated": 39,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 7,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            0,
+            3,
+            5
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 15,
+            "accepted": true
+          },
+          "known_bonds_found": 5,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.000355,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 512,
+          "active_solutions": 26,
+          "clauses": 30,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3
+          ],
+          "supports_seen": 143,
+          "supports_evaluated": 121,
+          "supersets_of_known_bonds_skipped": 22,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 4,
+          "witness": [
+            0,
+            1,
+            4,
+            7
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 37,
+            "accepted": true
+          },
+          "known_bonds_found": 29,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000716,
+          "expected_L": 4,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 11,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 2048,
+          "active_solutions": 42,
+          "clauses": 40,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3
+          ],
+          "supports_seen": 312,
+          "supports_evaluated": 244,
+          "supersets_of_known_bonds_skipped": 68,
+          "search_max_support_size": 11,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 4,
+          "witness": [
+            0,
+            3,
+            7,
+            9
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 36,
+            "accepted": true
+          },
+          "known_bonds_found": 50,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.001376,
+          "expected_L": 4,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.002481
+    },
+    {
+      "idx": 1307,
+      "seeded_validation_sample_order": 25,
+      "definition": [
+        3,
+        2,
+        [
+          [
+            "SELF",
+            [
+              1,
+              3,
+              0
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              2,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              1,
+              4,
+              0
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              0,
+              2
+            ]
+          ],
+          [
+            "SELF",
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              3,
+              1
+            ]
+          ],
+          [
+            "SELF",
+            [
+              1,
+              4,
+              3
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 1307,
+        "l": 2,
+        "seconds": 0.2,
+        "L": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "rate": null,
+        "states": 51
+      },
+      "cells": [
+        {
+          "nvariables": 7,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "ignored_free_variables": [
+            2,
+            5
+          ],
+          "assignments_evaluated": 32,
+          "active_solutions": 18,
+          "clauses": 4,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 23,
+          "supports_evaluated": 23,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 5,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            1,
+            3,
+            6
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 2,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.00018,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "ignored_free_variables": [
+            2,
+            7
+          ],
+          "assignments_evaluated": 128,
+          "active_solutions": 54,
+          "clauses": 6,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3
+          ],
+          "supports_seen": 93,
+          "supports_evaluated": 83,
+          "supersets_of_known_bonds_skipped": 10,
+          "search_max_support_size": 7,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 4,
+          "witness": [
+            1,
+            5,
+            6,
+            8
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 8,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 39,
+            "accepted": true
+          },
+          "known_bonds_found": 5,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000404,
+          "expected_L": 4,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 11,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "ignored_free_variables": [
+            2,
+            9
+          ],
+          "assignments_evaluated": 512,
+          "active_solutions": 162,
+          "clauses": 8,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "supports_seen": 360,
+          "supports_evaluated": 280,
+          "supersets_of_known_bonds_skipped": 80,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 5,
+          "witness": [
+            1,
+            6,
+            7,
+            8,
+            10
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 8,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 84,
+            "accepted": true
+          },
+          "known_bonds_found": 9,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.001282,
+          "expected_L": 5,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.001897
+    },
+    {
+      "idx": 104,
+      "seeded_validation_sample_order": 31,
+      "definition": [
+        3,
+        2,
+        [
+          [
+            "K",
+            [
+              4,
+              0,
+              2
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              0,
+              1
+            ]
+          ],
+          [
+            "K",
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              2,
+              1
+            ]
+          ],
+          [
+            "SELF",
+            [
+              0,
+              3,
+              4
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              0,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              1,
+              4
+            ]
+          ],
+          [
+            "K",
+            [
+              4,
+              1,
+              0
+            ]
+          ],
+          [
+            "SELF",
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              2,
+              4,
+              3
+            ]
+          ],
+          [
+            "K",
+            [
+              2,
+              3,
+              1
+            ]
+          ],
+          [
+            "K",
+            [
+              0,
+              4,
+              2
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "usual_passthrough_added": false,
+      "recorded_census": {
+        "idx": 104,
+        "l": 2,
+        "seconds": 0.6,
+        "L": [
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        "rate": {
+          "period": 4,
+          "gain": 0,
+          "from_s": 11
+        },
+        "states": 424
+      },
+      "cells": [
+        {
+          "nvariables": 7,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 128,
+          "active_solutions": 14,
+          "clauses": 20,
+          "sizes_fully_completed": [
+            1,
+            2
+          ],
+          "supports_seen": 32,
+          "supports_evaluated": 32,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 7,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 3,
+          "witness": [
+            0,
+            1,
+            5
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 14,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.000297,
+          "expected_L": 3,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 512,
+          "active_solutions": 18,
+          "clauses": 30,
+          "sizes_fully_completed": [
+            1
+          ],
+          "supports_seen": 23,
+          "supports_evaluated": 23,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 2,
+          "witness": [
+            1,
+            7
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 7,
+            "accepted": true
+          },
+          "known_bonds_found": 1,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000353,
+          "expected_L": 2,
+          "matches_expected": true
+        },
+        {
+          "nvariables": 11,
+          "active_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "ignored_free_variables": [],
+          "assignments_evaluated": 2048,
+          "active_solutions": 26,
+          "clauses": 40,
+          "sizes_fully_completed": [
+            1
+          ],
+          "supports_seen": 20,
+          "supports_evaluated": 20,
+          "supersets_of_known_bonds_skipped": 0,
+          "search_max_support_size": 11,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 2,
+          "witness": [
+            0,
+            9
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 7,
+            "accepted": true
+          },
+          "known_bonds_found": 1,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.00055,
+          "expected_L": 2,
+          "matches_expected": true
+        }
+      ],
+      "seconds": 0.001229
+    }
+  ],
+  "controls": [
+    {
+      "nvariables": 4,
+      "active_variables": [],
+      "ignored_free_variables": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "assignments_evaluated": 1,
+      "active_solutions": 1,
+      "clauses": 0,
+      "sizes_fully_completed": [],
+      "supports_seen": 0,
+      "supports_evaluated": 0,
+      "supersets_of_known_bonds_skipped": 0,
+      "search_max_support_size": 0,
+      "support_size_cutoff": null,
+      "status": "exact_no_ray_bond",
+      "L": null,
+      "reason": "every eligible endpoint on at least one side is unconstrained",
+      "label": "unconstrained",
+      "expected_L": null,
+      "matches_expected": true
+    },
+    {
+      "nvariables": 3,
+      "active_variables": [
+        0,
+        1,
+        2
+      ],
+      "ignored_free_variables": [],
+      "assignments_evaluated": 8,
+      "active_solutions": 6,
+      "clauses": 2,
+      "sizes_fully_completed": [
+        1,
+        2
+      ],
+      "supports_seen": 7,
+      "supports_evaluated": 7,
+      "supersets_of_known_bonds_skipped": 0,
+      "search_max_support_size": 3,
+      "support_size_cutoff": null,
+      "status": "exact",
+      "L": 3,
+      "witness": [
+        0,
+        1,
+        2
+      ],
+      "certificate": {
+        "K1_constrained": true,
+        "K2_each_deletion_free": true,
+        "K3_nonempty": true,
+        "first_missing": [
+          0,
+          0,
+          0
+        ],
+        "deletions": [
+          {
+            "erased": 0,
+            "free": true,
+            "first_missing": null
+          },
+          {
+            "erased": 1,
+            "free": true,
+            "first_missing": null
+          },
+          {
+            "erased": 2,
+            "free": true,
+            "first_missing": null
+          }
+        ],
+        "sat_calls": 14,
+        "accepted": true
+      },
+      "known_bonds_found": 1,
+      "all_smaller_supports_covered": true,
+      "label": "direct_NAE",
+      "expected_L": 3,
+      "matches_expected": true
+    },
+    {
+      "nvariables": 7,
+      "active_variables": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "ignored_free_variables": [
+        3
+      ],
+      "assignments_evaluated": 64,
+      "active_solutions": 36,
+      "clauses": 4,
+      "sizes_fully_completed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "supports_seen": 63,
+      "supports_evaluated": 50,
+      "supersets_of_known_bonds_skipped": 13,
+      "search_max_support_size": 6,
+      "support_size_cutoff": null,
+      "status": "exact_no_ray_bond",
+      "L": null,
+      "known_bonds_found": 2,
+      "all_support_sizes_covered": true,
+      "label": "broken_chain_middle_rule_removed",
+      "expected_L": null,
+      "matches_expected": true
+    },
+    {
+      "label": "reject_nonminimal_NAE_superset",
+      "certificate": {
+        "K1_constrained": true,
+        "K2_each_deletion_free": false,
+        "K3_nonempty": true,
+        "first_missing": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "deletions": [
+          {
+            "erased": 0,
+            "free": true,
+            "first_missing": null
+          },
+          {
+            "erased": 1,
+            "free": true,
+            "first_missing": null
+          },
+          {
+            "erased": 2,
+            "free": true,
+            "first_missing": null
+          },
+          {
+            "erased": 3,
+            "free": false,
+            "first_missing": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "sat_calls": 27,
+        "accepted": false
+      },
+      "matches_expected": true
+    }
+  ],
+  "chains": [
+    {
+      "definition": [
+        3,
+        3,
+        [
+          [
+            "K",
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          [
+            "SELF",
+            [
+              3,
+              4,
+              5
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "cells": [
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "ignored_free_variables": [
+            2,
+            5,
+            7,
+            8
+          ],
+          "assignments_evaluated": 32,
+          "active_solutions": 18,
+          "clauses": 4,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3
+          ],
+          "supports_seen": 28,
+          "supports_evaluated": 26,
+          "supersets_of_known_bonds_skipped": 2,
+          "search_max_support_size": 5,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 4,
+          "witness": [
+            0,
+            1,
+            4,
+            6
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 37,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.000186,
+          "expected_L": 4,
+          "matches_expected": true,
+          "steps_apart": 2,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 12,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9
+          ],
+          "ignored_free_variables": [
+            2,
+            5,
+            8,
+            10,
+            11
+          ],
+          "assignments_evaluated": 128,
+          "active_solutions": 54,
+          "clauses": 6,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "supports_seen": 107,
+          "supports_evaluated": 87,
+          "supersets_of_known_bonds_skipped": 20,
+          "search_max_support_size": 7,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 5,
+          "witness": [
+            0,
+            1,
+            4,
+            7,
+            9
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 86,
+            "accepted": true
+          },
+          "known_bonds_found": 6,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000471,
+          "expected_L": 5,
+          "matches_expected": true,
+          "steps_apart": 3,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 15,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12
+          ],
+          "ignored_free_variables": [
+            2,
+            5,
+            8,
+            11,
+            13,
+            14
+          ],
+          "assignments_evaluated": 512,
+          "active_solutions": 162,
+          "clauses": 8,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supports_seen": 410,
+          "supports_evaluated": 289,
+          "supersets_of_known_bonds_skipped": 121,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 6,
+          "witness": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            12
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 12,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 205,
+            "accepted": true
+          },
+          "known_bonds_found": 10,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.001531,
+          "expected_L": 6,
+          "matches_expected": true,
+          "steps_apart": 4,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 18,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            15
+          ],
+          "ignored_free_variables": [
+            2,
+            5,
+            8,
+            11,
+            14,
+            16,
+            17
+          ],
+          "assignments_evaluated": 2048,
+          "active_solutions": 486,
+          "clauses": 10,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "supports_seen": 1584,
+          "supports_evaluated": 970,
+          "supersets_of_known_bonds_skipped": 614,
+          "search_max_support_size": 11,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 7,
+          "witness": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            13,
+            15
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 13,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 15,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 470,
+            "accepted": true
+          },
+          "known_bonds_found": 15,
+          "all_smaller_supports_covered": true,
+          "depth": 4,
+          "seconds": 0.006274,
+          "expected_L": 7,
+          "matches_expected": true,
+          "steps_apart": 5,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 21,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            15,
+            16,
+            18
+          ],
+          "ignored_free_variables": [
+            2,
+            5,
+            8,
+            11,
+            14,
+            17,
+            19,
+            20
+          ],
+          "assignments_evaluated": 8192,
+          "active_solutions": 1458,
+          "clauses": 12,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "supports_seen": 6162,
+          "supports_evaluated": 3284,
+          "supersets_of_known_bonds_skipped": 2878,
+          "search_max_support_size": 13,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 8,
+          "witness": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            13,
+            16,
+            18
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 13,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 16,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 18,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 1069,
+            "accepted": true
+          },
+          "known_bonds_found": 21,
+          "all_smaller_supports_covered": true,
+          "depth": 5,
+          "seconds": 0.034112,
+          "expected_L": 8,
+          "matches_expected": true,
+          "steps_apart": 6,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 24,
+          "active_variables": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            15,
+            16,
+            18,
+            19,
+            21
+          ],
+          "ignored_free_variables": [
+            2,
+            5,
+            8,
+            11,
+            14,
+            17,
+            20,
+            22,
+            23
+          ],
+          "assignments_evaluated": 32768,
+          "active_solutions": 4374,
+          "clauses": 14,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "supports_seen": 24093,
+          "supports_evaluated": 11171,
+          "supersets_of_known_bonds_skipped": 12922,
+          "search_max_support_size": 15,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 9,
+          "witness": [
+            0,
+            1,
+            4,
+            7,
+            10,
+            13,
+            16,
+            19,
+            21
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 1,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 4,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 13,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 16,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 19,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 21,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 2390,
+            "accepted": true
+          },
+          "known_bonds_found": 28,
+          "all_smaller_supports_covered": true,
+          "depth": 6,
+          "seconds": 0.242885,
+          "expected_L": 9,
+          "matches_expected": true,
+          "steps_apart": 7,
+          "matches_steps_plus_two": true
+        }
+      ],
+      "seconds": 0.285642
+    },
+    {
+      "definition": [
+        3,
+        2,
+        [
+          [
+            "K",
+            [
+              0,
+              3,
+              4
+            ]
+          ],
+          [
+            "SELF",
+            [
+              4,
+              1,
+              3
+            ]
+          ]
+        ]
+      ],
+      "terminal_relation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fixedpoint_history": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "cells": [
+        {
+          "nvariables": 7,
+          "active_variables": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ignored_free_variables": [
+            1,
+            2
+          ],
+          "assignments_evaluated": 32,
+          "active_solutions": 18,
+          "clauses": 4,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3
+          ],
+          "supports_seen": 28,
+          "supports_evaluated": 26,
+          "supersets_of_known_bonds_skipped": 2,
+          "search_max_support_size": 5,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 4,
+          "witness": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 6,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 37,
+            "accepted": true
+          },
+          "known_bonds_found": 3,
+          "all_smaller_supports_covered": true,
+          "depth": 1,
+          "seconds": 0.00029,
+          "expected_L": 4,
+          "matches_expected": true,
+          "steps_apart": 2,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 9,
+          "active_variables": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ignored_free_variables": [
+            1,
+            2
+          ],
+          "assignments_evaluated": 128,
+          "active_solutions": 54,
+          "clauses": 6,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "supports_seen": 107,
+          "supports_evaluated": 87,
+          "supersets_of_known_bonds_skipped": 20,
+          "search_max_support_size": 7,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 5,
+          "witness": [
+            0,
+            3,
+            5,
+            7,
+            8
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 8,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 86,
+            "accepted": true
+          },
+          "known_bonds_found": 6,
+          "all_smaller_supports_covered": true,
+          "depth": 2,
+          "seconds": 0.000486,
+          "expected_L": 5,
+          "matches_expected": true,
+          "steps_apart": 3,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 11,
+          "active_variables": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "ignored_free_variables": [
+            1,
+            2
+          ],
+          "assignments_evaluated": 512,
+          "active_solutions": 162,
+          "clauses": 8,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supports_seen": 410,
+          "supports_evaluated": 289,
+          "supersets_of_known_bonds_skipped": 121,
+          "search_max_support_size": 9,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 6,
+          "witness": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 10,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 205,
+            "accepted": true
+          },
+          "known_bonds_found": 10,
+          "all_smaller_supports_covered": true,
+          "depth": 3,
+          "seconds": 0.001527,
+          "expected_L": 6,
+          "matches_expected": true,
+          "steps_apart": 4,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 13,
+          "active_variables": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "ignored_free_variables": [
+            1,
+            2
+          ],
+          "assignments_evaluated": 2048,
+          "active_solutions": 486,
+          "clauses": 10,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "supports_seen": 1584,
+          "supports_evaluated": 970,
+          "supersets_of_known_bonds_skipped": 614,
+          "search_max_support_size": 11,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 7,
+          "witness": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            11,
+            12
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 11,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 12,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 470,
+            "accepted": true
+          },
+          "known_bonds_found": 15,
+          "all_smaller_supports_covered": true,
+          "depth": 4,
+          "seconds": 0.006244,
+          "expected_L": 7,
+          "matches_expected": true,
+          "steps_apart": 5,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 15,
+          "active_variables": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "ignored_free_variables": [
+            1,
+            2
+          ],
+          "assignments_evaluated": 8192,
+          "active_solutions": 1458,
+          "clauses": 12,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "supports_seen": 6162,
+          "supports_evaluated": 3284,
+          "supersets_of_known_bonds_skipped": 2878,
+          "search_max_support_size": 13,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 8,
+          "witness": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            14
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 11,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 13,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 14,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 1069,
+            "accepted": true
+          },
+          "known_bonds_found": 21,
+          "all_smaller_supports_covered": true,
+          "depth": 5,
+          "seconds": 0.033996,
+          "expected_L": 8,
+          "matches_expected": true,
+          "steps_apart": 6,
+          "matches_steps_plus_two": true
+        },
+        {
+          "nvariables": 17,
+          "active_variables": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "ignored_free_variables": [
+            1,
+            2
+          ],
+          "assignments_evaluated": 32768,
+          "active_solutions": 4374,
+          "clauses": 14,
+          "sizes_fully_completed": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "supports_seen": 24093,
+          "supports_evaluated": 11171,
+          "supersets_of_known_bonds_skipped": 12922,
+          "search_max_support_size": 15,
+          "support_size_cutoff": null,
+          "status": "exact",
+          "L": 9,
+          "witness": [
+            0,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            16
+          ],
+          "certificate": {
+            "K1_constrained": true,
+            "K2_each_deletion_free": true,
+            "K3_nonempty": true,
+            "first_missing": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "deletions": [
+              {
+                "erased": 0,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 3,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 5,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 7,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 9,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 11,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 13,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 15,
+                "free": true,
+                "first_missing": null
+              },
+              {
+                "erased": 16,
+                "free": true,
+                "first_missing": null
+              }
+            ],
+            "sat_calls": 2390,
+            "accepted": true
+          },
+          "known_bonds_found": 28,
+          "all_smaller_supports_covered": true,
+          "depth": 6,
+          "seconds": 0.241418,
+          "expected_L": 9,
+          "matches_expected": true,
+          "steps_apart": 7,
+          "matches_steps_plus_two": true
+        }
+      ],
+      "seconds": 0.284145
+    }
+  ],
+  "mismatches": [],
+  "incomplete": [],
+  "summary": {
+    "completed_finite_cells": 36,
+    "selected_family_cells": 24,
+    "chain_cells": 12,
+    "mismatches": 0,
+    "incomplete": 0,
+    "all_controls_pass": true,
+    "all_returned_witnesses_sat_verified": true,
+    "elapsed_seconds": 1.244928,
+    "peak_rss_kib": 47304,
+    "conclusion": "finite sampled validation only; no asymptotic or full-census conclusion"
+  }
+}

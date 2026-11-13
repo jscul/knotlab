@@ -1,0 +1,3 @@
+Completed [codex_report.md](/home/jscul/p-vs-np-contact-first/research/BOND-DEPTH-20261112-001/referee-R1/codex/codex_report.md), with scripts and JSON alongside.
+
+**Verdict: Refuted** for the asymptotic classification. Positive-gain detection is impossible, and ten “bounded” families become bondless. Independent certificates establish 20 growing and 20 bounded samples. Sampled validation and merge checks passed.

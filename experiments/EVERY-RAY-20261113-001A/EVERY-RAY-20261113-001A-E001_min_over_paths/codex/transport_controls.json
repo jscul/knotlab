@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "key": "[[3,1,[[\"K\",[0,1,3]],[\"SELF\",[0,1,2]],[\"SELF\",[3,1,2]]]]]",
+      "nodes": 227,
+      "complete": true,
+      "status": "done",
+      "first_ray_carried": true,
+      "fixed_index_status": "bounded_pair_found",
+      "seconds": 0.017607
+    },
+    {
+      "key": "[[3,1,[[\"K\",[0,1,3]],[\"SELF\",[3,1,2]],[\"SELF\",[0,1,2]]]]]",
+      "nodes": 227,
+      "complete": true,
+      "status": "done",
+      "first_ray_carried": true,
+      "fixed_index_status": "bounded_pair_found",
+      "seconds": 0.016351
+    }
+  ],
+  "checks": [
+    "all entry starts",
+    "all eight carried masks for each call",
+    "extended graph and censored accepting layers",
+    "fixed-pair diagnostic"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "cases": [
+    {
+      "all_256_input_relations_checked": true,
+      "case": "shared_argument",
+      "explicit_nodes_per_operation": 36,
+      "incoming_interface": [
+        0,
+        1,
+        2
+      ],
+      "key": "[[3,2,[[\"K\",[0,3,4]],[\"SELF\",[0,3,1]],[\"SELF\",[0,4,2]]]]]",
+      "operations": 8,
+      "outgoing_interfaces": [
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          2
+        ]
+      ],
+      "side_G_excludes_vs_TOP": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    {
+      "all_256_input_relations_checked": true,
+      "case": "repeated_argument",
+      "explicit_nodes_per_operation": 36,
+      "incoming_interface": [
+        0,
+        1,
+        2
+      ],
+      "key": "[[3,1,[[\"K\",[0,1,3]],[\"SELF\",[0,0,3]],[\"SELF\",[1,3,2]]]]]",
+      "operations": 4,
+      "outgoing_interfaces": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "side_G_excludes_vs_TOP": {
+        "0": 0,
+        "1": 0
+      }
+    },
+    {
+      "all_256_input_relations_checked": true,
+      "case": "nonchosen_limit_relation",
+      "explicit_nodes_per_operation": 36,
+      "incoming_interface": [
+        0,
+        1,
+        2
+      ],
+      "key": "[[3,1,[[\"K\",[0,1,3]],[\"SELF\",[0,1,2]],[\"SELF\",[0,3,2]]]]]",
+      "operations": 4,
+      "outgoing_interfaces": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "side_G_excludes_vs_TOP": {
+        "0": 2,
+        "1": 0
+      }
+    }
+  ],
+  "gate": "G-node",
+  "mismatches": [],
+  "passed": true,
+  "pending_comparisons": [],
+  "status": "checked"
+}

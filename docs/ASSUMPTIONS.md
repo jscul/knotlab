@@ -134,7 +134,7 @@ evidence: results and their status come from the records each entry links.
 | [A77](#a77--a-walk-around-one-cycle-is-a-state-that-repeats-along-a-short-step) | A walk around one cycle is a state that repeats along a short step | reading | Assumed |
 | [A78](#a78--a-parity-knot-among-copies-is-flip-blind-parity-built-from-our-knots) | A parity knot among copies is flip-blind parity, built from our knots | reading | Assumed |
 | [A79](#a79--a-patterns-weight-under-a-description-language-sums-its-descriptions) | A pattern's weight under a description language sums its descriptions | measure | Assumed |
-| [A80](#a80--the-laws-reach-is-read-along-the-first-call-ray) | The law's reach is read along the first-call ray | reading | Under challenge |
+| [A80](#a80--the-laws-reach-is-read-along-the-first-call-ray) | The law's reach is read along the first-call ray | reading | Overturned |
 | [A81](#a81--the-reach-may-start-from-a-top-port-carried-down-the-ray) | The reach may start from a top port carried down the ray | reading | Under challenge |
 | [A82](#a82--knots-placed-by-address-maps-read-the-owners-nested-parts-that-know-where-they-are) | Knots placed by address maps read the owner's nested parts that know where they are | reading | Assumed |
 
@@ -2087,7 +2087,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A80 · The law's reach is read along the first-call ray
 
-**Under challenge** · 2026-11-13 · reading
+**Overturned** · 2026-11-13 · reading
 
 - **Statement.** The least bond from the top of a nested pattern to depth s is read along one ray of copies: main's first call to
   the ray definition, then that definition's first SELF call at every level (after inlining the definitions that do not hold
@@ -2100,6 +2100,10 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read another ray, or the least bond to any copy at depth s (the least over every path of copies), and compare the
   classes.
 - **History.**
+  - 2026-11-13 · Overturned for growth by `EVERY-RAY-20261113-001`: over every descending path (the call chosen at each level, the
+    entry too), 69% to 78% of sampled first-ray growers with inequivalent SELF calls are bounded, almost all without a carried port,
+    and a quarter of those only by a mixed path; growth classified along the first ray is not growth with depth. Bounded verdicts
+    along the first ray still hold (L_path ≤ L_ray) ([every descending path](../research/EVERY-RAY-20261113-001/every_ray.md)).
   - 2026-11-13 · Challenge restated after `REACH-CENSUS-20261113-001`'s referee: of the 131 last-call-bounded growers, 99 carry a top
     port down that ray by identity, so their bounded bond is local (A81); the challenge rests on the 32 bounded without a carried
     port (14% of the 224), and on 31 of 645 sampled first-ray growers. `EVERY-RAY-20261113-001` reads every descending path, split

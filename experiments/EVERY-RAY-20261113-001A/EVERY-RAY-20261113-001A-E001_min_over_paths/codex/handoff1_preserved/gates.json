@@ -1,0 +1,30 @@
+{
+  "experiment_id": "EVERY-RAY-20261113-001A-E001",
+  "status": "pending_execution",
+  "full_run_launched": false,
+  "validation_passed": null,
+  "gates": {
+    "G-reg": {"kind": "regression", "required_families": 500, "status": "pending_execution", "mismatches": []},
+    "G-last": {"kind": "validation", "required_families": 224, "status": "pending_execution", "mismatches": []},
+    "G-node": {"kind": "validation", "required_cases": 3, "status": "pending_execution", "mismatches": []},
+    "G-brute": {
+      "kind": "independent_validation",
+      "required_families": 120,
+      "status": "skipped_ambiguity",
+      "mismatches": [],
+      "questions": [
+        "Which exact sequence defines the preperiod plus period of the Karp graph?",
+        "Which relation closes the full-tree frontier?",
+        "Are all main entries eligible or only the unchanged first start?",
+        "Must the main endpoint include a port, as the unchanged census start requires?"
+      ]
+    }
+  },
+  "initial_controls": {
+    "syntax_imports_paths_dp_and_runner": "passed",
+    "c1_graph_identity": {"passed": true, "nodes": 1562, "edges": 3124},
+    "branching_zero_cycle_controls": "passed",
+    "incomplete_graph_classification": "passed",
+    "summary_synthetic_checks": "passed"
+  }
+}

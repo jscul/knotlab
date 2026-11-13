@@ -1,0 +1,596 @@
+{
+  "actual_identity_carried_ports": [
+    [
+      0
+    ],
+    []
+  ],
+  "cases": [
+    {
+      "checks": {
+        "all_paths": true,
+        "complete": true,
+        "least_size": true
+      },
+      "control": "no_bond",
+      "paths": [
+        {
+          "build_seconds": 2.3504020646214485e-05,
+          "candidate_sets_checked": 0,
+          "carried_target_ports": [
+            0,
+            2
+          ],
+          "clauses": 0,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ]
+          ],
+          "enumeration_seconds": 1.557101495563984e-05,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 5,
+          "least_size": null,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 32,
+          "n": 5,
+          "path": [
+            0
+          ],
+          "path_index": 0,
+          "projection_checks": 0,
+          "s": 1,
+          "search_seconds": 5.626003257930279e-06,
+          "seconds": 5.176197737455368e-05,
+          "status": "none up to 7",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": null
+        },
+        {
+          "build_seconds": 1.0977033525705338e-05,
+          "candidate_sets_checked": 0,
+          "carried_target_ports": [
+            0,
+            2
+          ],
+          "clauses": 0,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ]
+          ],
+          "enumeration_seconds": 7.121008820831776e-06,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 5,
+          "least_size": null,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 32,
+          "n": 5,
+          "path": [
+            1
+          ],
+          "path_index": 1,
+          "projection_checks": 0,
+          "s": 1,
+          "search_seconds": 2.812943421304226e-06,
+          "seconds": 2.5419052690267563e-05,
+          "status": "none up to 7",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": null
+        }
+      ],
+      "result": {
+        "checked_paths": 2,
+        "complete": true,
+        "frontier": "usual-limit",
+        "least_size": null,
+        "least_size_uncarried": null,
+        "main_endpoint": "main-ports",
+        "max_size": 7,
+        "max_variables": 22,
+        "n": 5,
+        "root_entries": "all",
+        "s": 1,
+        "seconds": 0.00023466709535568953,
+        "skipped_paths": 0,
+        "status": "none up to 7",
+        "target_path": null,
+        "total_paths": 2,
+        "witness": null
+      }
+    },
+    {
+      "checks": {
+        "all_paths": true,
+        "complete": true,
+        "least_size": true
+      },
+      "control": "simple_bond",
+      "paths": [
+        {
+          "build_seconds": 1.2184958904981613e-05,
+          "candidate_sets_checked": 4,
+          "carried_target_ports": [
+            0,
+            2
+          ],
+          "clauses": 4,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ]
+          ],
+          "enumeration_seconds": 5.5119046010077e-05,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 1,
+          "least_size": 3,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 20,
+          "n": 5,
+          "path": [
+            1
+          ],
+          "path_index": 0,
+          "projection_cache": {
+            "currsize": 6,
+            "hits": 1,
+            "maxsize": 200000,
+            "misses": 6
+          },
+          "projection_checks": 6,
+          "s": 1,
+          "search_seconds": 0.00014756398741155863,
+          "seconds": 0.00022113893646746874,
+          "status": "found",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": [
+            0,
+            3,
+            4
+          ]
+        },
+        {
+          "build_seconds": 1.142395194619894e-05,
+          "candidate_sets_checked": 4,
+          "carried_target_ports": [
+            0,
+            2
+          ],
+          "clauses": 4,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ]
+          ],
+          "enumeration_seconds": 2.92179174721241e-05,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 1,
+          "least_size": 3,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 20,
+          "n": 5,
+          "path": [
+            2
+          ],
+          "path_index": 1,
+          "projection_cache": {
+            "currsize": 6,
+            "hits": 1,
+            "maxsize": 200000,
+            "misses": 6
+          },
+          "projection_checks": 6,
+          "s": 1,
+          "search_seconds": 7.508101407438517e-05,
+          "seconds": 0.00012004992458969355,
+          "status": "found",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": [
+            0,
+            3,
+            4
+          ]
+        }
+      ],
+      "result": {
+        "checked_paths": 2,
+        "complete": true,
+        "frontier": "usual-limit",
+        "least_size": 3,
+        "least_size_uncarried": null,
+        "main_endpoint": "main-ports",
+        "max_size": 7,
+        "max_variables": 22,
+        "n": 5,
+        "root_entries": "all",
+        "s": 1,
+        "seconds": 0.00042102800216525793,
+        "skipped_paths": 0,
+        "status": "found",
+        "target_path": [
+          1
+        ],
+        "total_paths": 2,
+        "witness": [
+          0,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "checks": {
+        "all_paths": true,
+        "complete": true,
+        "least_size": true,
+        "path_alternatives_3_and_2": true,
+        "repeated_port_identity": true
+      },
+      "control": "alternative_and_repeated_port",
+      "paths": [
+        {
+          "build_seconds": 1.1757947504520416e-05,
+          "candidate_sets_checked": 4,
+          "carried_target_ports": [
+            0,
+            2
+          ],
+          "clauses": 4,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ]
+          ],
+          "enumeration_seconds": 2.952897921204567e-05,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 1,
+          "least_size": 3,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 20,
+          "n": 5,
+          "path": [
+            1
+          ],
+          "path_index": 0,
+          "projection_cache": {
+            "currsize": 6,
+            "hits": 1,
+            "maxsize": 200000,
+            "misses": 6
+          },
+          "projection_checks": 6,
+          "s": 1,
+          "search_seconds": 6.899703294038773e-05,
+          "seconds": 0.00011517293751239777,
+          "status": "found",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": [
+            0,
+            3,
+            4
+          ]
+        },
+        {
+          "build_seconds": 9.653973393142223e-06,
+          "candidate_sets_checked": 1,
+          "carried_target_ports": [
+            0,
+            1
+          ],
+          "clauses": 4,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "enumeration_seconds": 2.7896021492779255e-05,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 1,
+          "least_size": 2,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 12,
+          "n": 5,
+          "path": [
+            2
+          ],
+          "path_index": 1,
+          "projection_cache": {
+            "currsize": 3,
+            "hits": 0,
+            "maxsize": 200000,
+            "misses": 3
+          },
+          "projection_checks": 3,
+          "s": 1,
+          "search_seconds": 3.856897819787264e-05,
+          "seconds": 7.962295785546303e-05,
+          "status": "found",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": [
+            0,
+            4
+          ]
+        }
+      ],
+      "result": {
+        "checked_paths": 2,
+        "complete": true,
+        "frontier": "usual-limit",
+        "least_size": 2,
+        "least_size_uncarried": null,
+        "main_endpoint": "main-ports",
+        "max_size": 7,
+        "max_variables": 22,
+        "n": 5,
+        "root_entries": "all",
+        "s": 1,
+        "seconds": 0.0002536160172894597,
+        "skipped_paths": 0,
+        "status": "found",
+        "target_path": [
+          2
+        ],
+        "total_paths": 2,
+        "witness": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "checks": {
+        "all_paths": true,
+        "complete": true,
+        "least_size": true,
+        "path_alternatives_3_and_2": true,
+        "repeated_port_identity": true
+      },
+      "control": "several_main_entries",
+      "paths": [
+        {
+          "build_seconds": 9.397976100444794e-06,
+          "candidate_sets_checked": 3,
+          "carried_target_ports": [
+            0,
+            1,
+            2
+          ],
+          "clauses": 2,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "enumeration_seconds": 1.768989022821188e-05,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 2,
+          "least_size": 3,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 24,
+          "n": 5,
+          "path": [
+            0
+          ],
+          "path_index": 0,
+          "projection_cache": {
+            "currsize": 4,
+            "hits": 2,
+            "maxsize": 200000,
+            "misses": 4
+          },
+          "projection_checks": 4,
+          "s": 1,
+          "search_seconds": 5.487108137458563e-05,
+          "seconds": 8.575094398111105e-05,
+          "status": "found",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "build_seconds": 9.697978384792805e-06,
+          "candidate_sets_checked": 1,
+          "carried_target_ports": [
+            0,
+            1
+          ],
+          "clauses": 2,
+          "complete": true,
+          "copy_ports": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              3
+            ]
+          ],
+          "enumeration_seconds": 1.6918056644499302e-05,
+          "frontier": "usual-limit",
+          "inactive_distinctions": 3,
+          "least_size": 2,
+          "main_endpoint": "main-ports",
+          "max_size": 7,
+          "max_variables": 22,
+          "model_count": 16,
+          "n": 5,
+          "path": [
+            1
+          ],
+          "path_index": 1,
+          "projection_cache": {
+            "currsize": 3,
+            "hits": 0,
+            "maxsize": 200000,
+            "misses": 3
+          },
+          "projection_checks": 3,
+          "s": 1,
+          "search_seconds": 3.582099452614784e-05,
+          "seconds": 6.602099165320396e-05,
+          "status": "found",
+          "target_own": [
+            4
+          ],
+          "uncarried": false,
+          "witness": [
+            0,
+            4
+          ]
+        }
+      ],
+      "result": {
+        "checked_paths": 2,
+        "complete": true,
+        "frontier": "usual-limit",
+        "least_size": 2,
+        "least_size_uncarried": null,
+        "main_endpoint": "main-ports",
+        "max_size": 7,
+        "max_variables": 22,
+        "n": 5,
+        "root_entries": "all",
+        "s": 1,
+        "seconds": 0.00023117498494684696,
+        "skipped_paths": 0,
+        "status": "found",
+        "target_path": [
+          1
+        ],
+        "total_paths": 2,
+        "witness": [
+          0,
+          4
+        ]
+      }
+    }
+  ],
+  "enumerated_depth_three_paths": 8,
+  "gate": "independent-brute-controls",
+  "mismatches": [],
+  "nonchosen_limit_models_checked": 32,
+  "nonchosen_limit_rejections": 24,
+  "passed": true,
+  "variable_cap_control": {
+    "checked_paths": 0,
+    "complete": false,
+    "frontier": "usual-limit",
+    "least_size": null,
+    "main_endpoint": "main-ports",
+    "max_size": 7,
+    "max_variables": 7,
+    "n": 8,
+    "reason": "every path has 8 distinctions, over 7",
+    "root_entries": "all",
+    "s": 4,
+    "seconds": 4.742003511637449e-05,
+    "skipped_path_ranges": [
+      [
+        0,
+        15
+      ]
+    ],
+    "skipped_paths": 16,
+    "status": "skipped_variable_cap",
+    "target_path": null,
+    "total_paths": 16,
+    "witness": null
+  }
+}

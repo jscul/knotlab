@@ -1,0 +1,1069 @@
+{
+  "cases": [
+    {
+      "case": {
+        "closes": [
+          1000000000,
+          3
+        ],
+        "eventual": true,
+        "graph": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "name": "branch_away_from_nonclosing_zero_loop",
+        "rate": "0/1",
+        "starts": {
+          "0": 1
+        }
+      },
+      "independently_replayed_depths_1_to_60": [
+        1000000001,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "result": {
+        "bounded_affected_starts": 0,
+        "bounded_all": true,
+        "bounded_bad_cycles": 1,
+        "bounded_bad_starts": 0,
+        "bounded_good_cycles": 1,
+        "bounded_good_starts": 2,
+        "bounded_missing_successors": 0,
+        "complete": true,
+        "cyclic_scc_edges": 2,
+        "cyclic_sccs": 2,
+        "eventually_bounded": true,
+        "exact_eventual_boundedness": {
+          "cycle_witnesses": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "depth_threshold": 2,
+          "eventually_bounded": true,
+          "missing_residues": [],
+          "period": 1,
+          "product_states": 2,
+          "representatives": {
+            "0": {
+              "depth": 2,
+              "final_node": 1,
+              "middle_length": 1,
+              "total_cost": 4
+            }
+          },
+          "residues_covered": [
+            0
+          ],
+          "uniform_cost_bound": 4,
+          "zero_cycle_lengths": [
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "lambda": "0/1",
+        "lambda_float": 0.0,
+        "lambda_status": "complete",
+        "max_cyclic_scc_nodes": 1,
+        "missing_residues": [],
+        "onset_depth": 2,
+        "pass_through_zero_cycle": null,
+        "period": 1,
+        "sccs": 2,
+        "trimmed_nodes": 2,
+        "uniform_cost_bound": 4,
+        "zero_cost_cycle_witnesses": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "zero_cost_cyclic_sccs": 2,
+        "zero_mean": true,
+        "zero_mean_cycle_uses_pass_through": null
+      }
+    },
+    {
+      "case": {
+        "closes": [
+          2,
+          1000000000
+        ],
+        "eventual": false,
+        "graph": [
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ]
+          ]
+        ],
+        "name": "only_odd_depths_accept",
+        "rate": "0/1",
+        "starts": {
+          "0": 1
+        }
+      },
+      "independently_replayed_depths_1_to_60": [
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001,
+        3,
+        1000000001
+      ],
+      "result": {
+        "bounded_affected_starts": 0,
+        "bounded_all": false,
+        "bounded_bad_cycles": 1,
+        "bounded_bad_starts": 2,
+        "bounded_good_cycles": 0,
+        "bounded_good_starts": 0,
+        "bounded_missing_successors": 0,
+        "complete": true,
+        "cyclic_scc_edges": 2,
+        "cyclic_sccs": 1,
+        "eventually_bounded": false,
+        "exact_eventual_boundedness": {
+          "cycle_witnesses": [
+            [
+              0,
+              1
+            ]
+          ],
+          "depth_threshold": null,
+          "eventually_bounded": false,
+          "missing_residues": [
+            1
+          ],
+          "period": 2,
+          "product_states": 2,
+          "representatives": {
+            "0": {
+              "depth": 1,
+              "final_node": 0,
+              "middle_length": 0,
+              "total_cost": 3
+            }
+          },
+          "residues_covered": [
+            0
+          ],
+          "uniform_cost_bound": null,
+          "zero_cycle_lengths": [
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "lambda": "0/1",
+        "lambda_float": 0.0,
+        "lambda_status": "complete",
+        "max_cyclic_scc_nodes": 2,
+        "missing_residues": [
+          1
+        ],
+        "onset_depth": null,
+        "pass_through_zero_cycle": null,
+        "period": 2,
+        "sccs": 1,
+        "trimmed_nodes": 2,
+        "uniform_cost_bound": null,
+        "zero_cost_cycle_witnesses": [
+          [
+            0,
+            1
+          ]
+        ],
+        "zero_cost_cyclic_sccs": 1,
+        "zero_mean": true,
+        "zero_mean_cycle_uses_pass_through": null
+      }
+    },
+    {
+      "case": {
+        "closes": [
+          2,
+          1000000000,
+          1000000000,
+          1000000000
+        ],
+        "eventual": true,
+        "graph": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              3,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ]
+          ]
+        ],
+        "name": "branching_two_and_three_cycles",
+        "rate": "0/1",
+        "starts": {
+          "0": 1
+        }
+      },
+      "independently_replayed_depths_1_to_60": [
+        3,
+        1000000001,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "result": {
+        "bounded_affected_starts": 0,
+        "bounded_all": false,
+        "bounded_bad_cycles": 1,
+        "bounded_bad_starts": 4,
+        "bounded_good_cycles": 0,
+        "bounded_good_starts": 0,
+        "bounded_missing_successors": 0,
+        "complete": true,
+        "cyclic_scc_edges": 5,
+        "cyclic_sccs": 1,
+        "eventually_bounded": true,
+        "exact_eventual_boundedness": {
+          "cycle_witnesses": [
+            [
+              0,
+              1
+            ]
+          ],
+          "depth_threshold": 4,
+          "eventually_bounded": true,
+          "missing_residues": [],
+          "period": 2,
+          "product_states": 8,
+          "representatives": {
+            "0": {
+              "depth": 1,
+              "final_node": 0,
+              "middle_length": 0,
+              "total_cost": 3
+            },
+            "1": {
+              "depth": 4,
+              "final_node": 0,
+              "middle_length": 3,
+              "total_cost": 3
+            }
+          },
+          "residues_covered": [
+            0,
+            1
+          ],
+          "uniform_cost_bound": 3,
+          "zero_cycle_lengths": [
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "lambda": "0/1",
+        "lambda_float": 0.0,
+        "lambda_status": "complete",
+        "max_cyclic_scc_nodes": 4,
+        "missing_residues": [],
+        "onset_depth": 4,
+        "pass_through_zero_cycle": null,
+        "period": 2,
+        "sccs": 1,
+        "trimmed_nodes": 4,
+        "uniform_cost_bound": 3,
+        "zero_cost_cycle_witnesses": [
+          [
+            0,
+            1
+          ]
+        ],
+        "zero_cost_cyclic_sccs": 1,
+        "zero_mean": true,
+        "zero_mean_cycle_uses_pass_through": null
+      }
+    },
+    {
+      "case": {
+        "closes": [
+          2
+        ],
+        "eventual": false,
+        "graph": [
+          [
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "name": "positive_cost_self_loop",
+        "rate": "1/1",
+        "starts": {
+          "0": 1
+        }
+      },
+      "independently_replayed_depths_1_to_60": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "result": {
+        "bounded_affected_starts": 0,
+        "bounded_all": false,
+        "bounded_bad_cycles": 0,
+        "bounded_bad_starts": 1,
+        "bounded_good_cycles": 0,
+        "bounded_good_starts": 0,
+        "bounded_missing_successors": 0,
+        "complete": true,
+        "cyclic_scc_edges": 1,
+        "cyclic_sccs": 1,
+        "eventually_bounded": false,
+        "exact_eventual_boundedness": {
+          "eventually_bounded": false,
+          "missing_residues": null,
+          "period": null,
+          "reason": "no productive zero cycle",
+          "zero_cycle_lengths": []
+        },
+        "lambda": "1/1",
+        "lambda_float": 1.0,
+        "lambda_status": "complete",
+        "max_cyclic_scc_nodes": 1,
+        "missing_residues": null,
+        "onset_depth": null,
+        "pass_through_zero_cycle": null,
+        "period": null,
+        "sccs": 1,
+        "trimmed_nodes": 1,
+        "uniform_cost_bound": null,
+        "zero_cost_cycle_witnesses": [],
+        "zero_cost_cyclic_sccs": 0,
+        "zero_mean": false,
+        "zero_mean_cycle_uses_pass_through": null
+      }
+    },
+    {
+      "case": {
+        "closes": [
+          1000000000,
+          1000000000,
+          4
+        ],
+        "eventual": true,
+        "graph": [
+          [
+            [
+              1,
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              7
+            ]
+          ],
+          []
+        ],
+        "name": "positive_entry_and_exit_retained",
+        "rate": "0/1",
+        "starts": {
+          "0": 3
+        }
+      },
+      "independently_replayed_depths_1_to_60": [
+        1000000003,
+        1000000008,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "result": {
+        "bounded_affected_starts": 0,
+        "bounded_all": false,
+        "bounded_bad_cycles": 1,
+        "bounded_bad_starts": 3,
+        "bounded_good_cycles": 0,
+        "bounded_good_starts": 0,
+        "bounded_missing_successors": 0,
+        "complete": true,
+        "cyclic_scc_edges": 1,
+        "cyclic_sccs": 1,
+        "eventually_bounded": true,
+        "exact_eventual_boundedness": {
+          "cycle_witnesses": [
+            [
+              1
+            ]
+          ],
+          "depth_threshold": 3,
+          "eventually_bounded": true,
+          "missing_residues": [],
+          "period": 1,
+          "product_states": 3,
+          "representatives": {
+            "0": {
+              "depth": 3,
+              "final_node": 2,
+              "middle_length": 2,
+              "total_cost": 19
+            }
+          },
+          "residues_covered": [
+            0
+          ],
+          "uniform_cost_bound": 19,
+          "zero_cycle_lengths": [
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "lambda": "0/1",
+        "lambda_float": 0.0,
+        "lambda_status": "complete",
+        "max_cyclic_scc_nodes": 1,
+        "missing_residues": [],
+        "onset_depth": 3,
+        "pass_through_zero_cycle": null,
+        "period": 1,
+        "sccs": 3,
+        "trimmed_nodes": 3,
+        "uniform_cost_bound": 19,
+        "zero_cost_cycle_witnesses": [
+          [
+            1
+          ]
+        ],
+        "zero_cost_cyclic_sccs": 1,
+        "zero_mean": true,
+        "zero_mean_cycle_uses_pass_through": null
+      }
+    },
+    {
+      "case": {
+        "closes": [
+          2,
+          1000000000
+        ],
+        "eventual": true,
+        "graph": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ]
+          ]
+        ],
+        "name": "positive_residue_connector",
+        "rate": "0/1",
+        "starts": {
+          "0": 1
+        }
+      },
+      "independently_replayed_depths_1_to_60": [
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4,
+        3,
+        4
+      ],
+      "result": {
+        "bounded_affected_starts": 0,
+        "bounded_all": false,
+        "bounded_bad_cycles": 1,
+        "bounded_bad_starts": 2,
+        "bounded_good_cycles": 0,
+        "bounded_good_starts": 0,
+        "bounded_missing_successors": 0,
+        "complete": true,
+        "cyclic_scc_edges": 3,
+        "cyclic_sccs": 1,
+        "eventually_bounded": true,
+        "exact_eventual_boundedness": {
+          "cycle_witnesses": [
+            [
+              0,
+              1
+            ]
+          ],
+          "depth_threshold": 2,
+          "eventually_bounded": true,
+          "missing_residues": [],
+          "period": 2,
+          "product_states": 4,
+          "representatives": {
+            "0": {
+              "depth": 1,
+              "final_node": 0,
+              "middle_length": 0,
+              "total_cost": 3
+            },
+            "1": {
+              "depth": 2,
+              "final_node": 0,
+              "middle_length": 1,
+              "total_cost": 4
+            }
+          },
+          "residues_covered": [
+            0,
+            1
+          ],
+          "uniform_cost_bound": 4,
+          "zero_cycle_lengths": [
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "lambda": "0/1",
+        "lambda_float": 0.0,
+        "lambda_status": "complete",
+        "max_cyclic_scc_nodes": 2,
+        "missing_residues": [],
+        "onset_depth": 2,
+        "pass_through_zero_cycle": null,
+        "period": 2,
+        "sccs": 1,
+        "trimmed_nodes": 2,
+        "uniform_cost_bound": 4,
+        "zero_cost_cycle_witnesses": [
+          [
+            0,
+            1
+          ]
+        ],
+        "zero_cost_cyclic_sccs": 1,
+        "zero_mean": true,
+        "zero_mean_cycle_uses_pass_through": null
+      }
+    },
+    {
+      "case": {
+        "closes": [
+          1000000000,
+          2
+        ],
+        "eventual": false,
+        "graph": [
+          [
+            [
+              1,
+              0
+            ]
+          ],
+          []
+        ],
+        "name": "finite_accepting_walks_only",
+        "rate": null,
+        "starts": {
+          "0": 1
+        }
+      },
+      "independently_replayed_depths_1_to_60": [
+        1000000001,
+        3,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "result": {
+        "bounded_affected_starts": 0,
+        "bounded_all": false,
+        "bounded_bad_cycles": 0,
+        "bounded_bad_starts": 2,
+        "bounded_good_cycles": 0,
+        "bounded_good_starts": 0,
+        "bounded_missing_successors": 0,
+        "complete": true,
+        "cyclic_scc_edges": 0,
+        "cyclic_sccs": 0,
+        "eventually_bounded": false,
+        "exact_eventual_boundedness": {
+          "eventually_bounded": false,
+          "missing_residues": null,
+          "period": null,
+          "reason": "no productive zero cycle",
+          "zero_cycle_lengths": []
+        },
+        "lambda": null,
+        "lambda_float": null,
+        "lambda_status": "complete",
+        "max_cyclic_scc_nodes": 0,
+        "missing_residues": null,
+        "onset_depth": null,
+        "pass_through_zero_cycle": null,
+        "period": null,
+        "sccs": 2,
+        "trimmed_nodes": 2,
+        "uniform_cost_bound": null,
+        "zero_cost_cycle_witnesses": [],
+        "zero_cost_cyclic_sccs": 0,
+        "zero_mean": false,
+        "zero_mean_cycle_uses_pass_through": null
+      }
+    }
+  ],
+  "gate": "branching-zero-controls",
+  "mismatches": [],
+  "passed": true,
+  "pending_comparisons": [],
+  "status": "checked"
+}

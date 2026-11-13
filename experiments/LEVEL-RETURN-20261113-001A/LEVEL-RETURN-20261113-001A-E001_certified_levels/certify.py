@@ -32,6 +32,28 @@ def pattern(key, n):
     return np.unique(np.concatenate(ks), axis=0) if ks else np.zeros((0, 3), dtype=np.int64)
 
 
+def stream_solve(cnf, workdir, timeout):
+    """Run CaDiCaL with its LRAT proof written into a FIFO that lrat_check reads as it is written, so no proof is stored. Returns
+    (solver exit code, solver stdout, checker output) or None on timeout (both processes are killed)."""
+    fifo = os.path.join(workdir, 'p.lrat')
+    if os.path.exists(fifo): os.remove(fifo)
+    os.mkfifo(fifo)
+    chk = subprocess.Popen([CHECKER, cnf, fifo], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    sol = subprocess.Popen([CADICAL, '--lrat=true', '--binary=false', '-q', cnf, fifo], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
+    try:
+        so, _ = sol.communicate(timeout=timeout)
+        co, _ = chk.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        for p in (sol, chk):
+            p.kill()
+        for p in (sol, chk):
+            p.communicate()
+        return None
+    finally:
+        if os.path.exists(fifo): os.remove(fifo)
+    return sol.returncode, so, co.strip()
+
+
 def certify(K, nvars, workdir, timeout):
     """K: knots (rows of three distinct variable indices, 0-based). Returns a dict with verdict alive/dead/undecided and evidence."""
     t0 = time.time()
@@ -44,32 +66,24 @@ def certify(K, nvars, workdir, timeout):
         for a, b, c in K.tolist():
             f.write(f'{a+1} {b+1} {c+1} 0\n{-a-1} {-b-1} {-c-1} 0\n')
         f.write(f'{m+1} 0\n')  # complement symmetry: every state's complement is a state
-    try:
-        r = subprocess.run([CADICAL, '--lrat=true', '--binary=false', '-q', cnf, prf], capture_output=True, text=True, timeout=timeout)
-    except subprocess.TimeoutExpired:
+    res = stream_solve(cnf, workdir, timeout)
+    if res is None:
         return dict(verdict='undecided', certificate='solver timeout', seconds=time.time() - t0)
-    out = dict(seconds=None, solver_exit=r.returncode)
-    if r.returncode == 10:
-        lits = [int(t) for line in r.stdout.splitlines() if line.startswith('v') for t in line[1:].split()]
+    rc, stdout, chk = res
+    out = dict(seconds=None, solver_exit=rc)
+    if rc == 10:
+        lits = [int(t) for line in stdout.splitlines() if line.startswith('v') for t in line[1:].split()]
         val = np.zeros(nvars + 1, dtype=np.int8)
         for l in lits:
             if l != 0 and abs(l) <= nvars: val[abs(l)] = 1 if l > 0 else 0
         V = val[K + 1]
         ok = bool(np.all(V.min(1) != V.max(1))) and val[m + 1] == 1
         out.update(verdict='alive' if ok else 'checker-rejected-model', certificate='model checked against every knot')
-    elif r.returncode == 20:
-        size = os.path.getsize(prf); h = hashlib.sha256()
-        with open(prf, 'rb') as f:
-            for chunk in iter(lambda: f.read(1 << 20), b''): h.update(chunk)
-        try:
-            c = subprocess.run([CHECKER, cnf, prf], capture_output=True, text=True, timeout=timeout)
-            ok = c.returncode == 0 and c.stdout.startswith('VERIFIED')
-            msg = c.stdout.strip()
-        except subprocess.TimeoutExpired:
-            ok, msg = False, 'checker timeout'
-        out.update(verdict='dead' if ok else 'unverified-refutation', certificate=f'LRAT {size} bytes sha256 {h.hexdigest()}: {msg}')
+    elif rc == 20:
+        ok = chk.startswith('VERIFIED')
+        out.update(verdict='dead' if ok else 'unverified-refutation', certificate=f'LRAT streamed to the checker: {chk}')
     else:
-        out.update(verdict='undecided', certificate=f'solver exit {r.returncode}')
+        out.update(verdict='undecided', certificate=f'solver exit {rc}')
     for p in (cnf, prf):
         if os.path.exists(p): os.remove(p)
     out['seconds'] = time.time() - t0
@@ -98,23 +112,21 @@ def certify_rigid(K, nvars, workdir, timeout):
     val = {abs(l): (l > 0) for l in lits if l != 0}
     diff = [(-u - 1) if val.get(u + 1, False) else (u + 1) for u in used]
     write([diff])
-    try:
-        r = subprocess.run([CADICAL, '--lrat=true', '--binary=false', '-q', cnf, prf], capture_output=True, text=True, timeout=timeout)
-    except subprocess.TimeoutExpired:
+    res = stream_solve(cnf, workdir, timeout)
+    if res is None:
         return dict(verdict='undecided', certificate='solver timeout (second state)', seconds=time.time() - t0)
-    if r.returncode == 10:
-        lits2 = [int(t) for line in r.stdout.splitlines() if line.startswith('v') for t in line[1:].split()]
+    rc, stdout, chk = res
+    if rc == 10:
+        lits2 = [int(t) for line in stdout.splitlines() if line.startswith('v') for t in line[1:].split()]
         v2 = np.zeros(nvars + 1, dtype=np.int8)
         for l in lits2:
             if l != 0 and abs(l) <= nvars: v2[abs(l)] = 1 if l > 0 else 0
         V = v2[K + 1]; ok = bool(np.all(V.min(1) != V.max(1))) and any(bool(v2[u + 1]) != val.get(u + 1, False) for u in used)
         out = dict(verdict='not rigid' if ok else 'checker-rejected-model', certificate='second state checked')
-    elif r.returncode == 20:
-        c = subprocess.run([CHECKER, cnf, prf], capture_output=True, text=True, timeout=timeout)
-        ok = c.returncode == 0 and c.stdout.startswith('VERIFIED')
-        out = dict(verdict='rigid' if ok else 'unverified-refutation', certificate=f'LRAT {os.path.getsize(prf)} bytes: {c.stdout.strip()}')
+    elif rc == 20:
+        out = dict(verdict='rigid' if chk.startswith('VERIFIED') else 'unverified-refutation', certificate=f'LRAT streamed to the checker: {chk}')
     else:
-        out = dict(verdict='undecided', certificate=f'solver exit {r.returncode}')
+        out = dict(verdict='undecided', certificate=f'solver exit {rc}')
     for p in (cnf, prf):
         if os.path.exists(p): os.remove(p)
     out['seconds'] = time.time() - t0

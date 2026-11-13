@@ -63,7 +63,11 @@ def run(case_id, payload):
         out['removed'] = [[format(int(a), f'0{n}b') for a in k] for k in K[~keep].tolist()]
         K = K[keep]
         out['knots_after_removal'] = int(len(K))
-    with tempfile.TemporaryDirectory() as d:
+    import shutil
+    d = os.path.join(HERE, 'work', case_id); shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
+    try:
         c = certify(K, 1 << n, d, TIMEOUT)
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
     out.update(verdict=c['verdict'], certificate=c['certificate'], seconds=c['seconds'], pattern_sha256=khash(K))
     return out

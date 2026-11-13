@@ -27,6 +27,10 @@ def run(case_id, payload):
     else:
         K = pattern(TWO, n); X = np.arange(1 << n)
         par = np.array([bin(int(t)).count('1') & 1 for t in X]); V = par[K]; K = K[V.min(1) != V.max(1)]; meta = {}
-    with tempfile.TemporaryDirectory() as d:
+    import shutil
+    d = os.path.join(HERE, 'work', case_id); shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
+    try:
         c = certify_rigid(K, 1 << n, d, 2400)
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
     return dict(case=case_id, n=n, kind=payload['kind'], knots=int(len(K)), **meta, **c)

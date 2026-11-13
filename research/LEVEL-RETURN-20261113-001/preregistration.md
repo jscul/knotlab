@@ -117,3 +117,14 @@ model and a checked LRAT refutation of any second state):
 | R5b | #2's reduced pattern is rigid at every even level 6 to 16, so with R4 its death there is certified by this reduction. | A certified second state. |
 
 `certify.py` gained the function `certify_rigid` while the main run was in progress; the functions the main run uses are unchanged.
+
+## Procedure fix (2026-11-13, before any registered result was used)
+
+The first registered run (`run/`, kept as evidence) finished 375 of 775 cases; the other 400 were killed (signal 9) once refutation
+proofs left in the memory-backed `/tmp` by cases stopped mid-proof had filled the run's memory allowance (23 GB of leaked proof
+files, removed). Its 375 verdicts agreed with the census at every level both decided and with the second generator at every case;
+they were tallied once to find the failure and are not used. The rigidity run (`run_rigid/`) was stopped for the same reason.
+Fix, with no change to any prediction or decision rule: CaDiCaL now writes its LRAT proof into a pipe that the checker reads as it is
+written, so no proof is stored (proof sizes are no longer kept; the checker reports its step count); the checker frees deleted
+clauses; each case works in its own directory on disk, removed at the case's start and end. Gates rerun and passed. Both runs restart
+from scratch in `run2/` and `run_rigid2/`.

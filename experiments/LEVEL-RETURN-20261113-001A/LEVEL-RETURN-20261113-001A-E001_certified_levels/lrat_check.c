@@ -5,20 +5,18 @@
 #include <stdlib.h>
 #include <string.h>
 typedef long long ll;
-static int *pool; static ll pool_n = 0, pool_cap = 0;
-static ll *off; static int *len; static ll ids_cap = 0;
+static int **cl; static int *len; static ll ids_cap = 0; static signed char *state; /* 0 never, 1 live, 2 deleted */
 static signed char *val; static int nvars = 0; static int *trail; static int tn = 0;
 static void fail(const char *w, ll id) { printf("FAILED: %s (clause %lld)\n", w, id); exit(1); }
 static void ensure_id(ll id) {
   if (id < ids_cap) return;
   ll nc = ids_cap ? ids_cap : 1024; while (nc <= id) nc *= 2;
-  off = realloc(off, nc * sizeof(ll)); len = realloc(len, nc * sizeof(int));
-  for (ll i = ids_cap; i < nc; i++) { off[i] = -1; len[i] = 0; }
+  cl = realloc(cl, nc * sizeof(int *)); len = realloc(len, nc * sizeof(int)); state = realloc(state, nc);
+  for (ll i = ids_cap; i < nc; i++) { cl[i] = NULL; len[i] = 0; state[i] = 0; }
   ids_cap = nc;
 }
-static ll push_clause(int *lits, int n) {
-  if (pool_n + n > pool_cap) { pool_cap = (pool_cap + n) * 2 + 1024; pool = realloc(pool, pool_cap * sizeof(int)); }
-  memcpy(pool + pool_n, lits, n * sizeof(int)); ll o = pool_n; pool_n += n; return o;
+static void store(ll id, int *lits, int n) {
+  ensure_id(id); cl[id] = malloc((n ? n : 1) * sizeof(int)); memcpy(cl[id], lits, n * sizeof(int)); len[id] = n; state[id] = 1;
 }
 static int litval(int l) { int v = val[abs(l)]; return l > 0 ? v : -v; } /* 1 true, -1 false, 0 unassigned */
 static void setlit(int l, int truth) { int v = abs(l); val[v] = (l > 0) == (truth > 0) ? 1 : -1; trail[tn++] = v; }
@@ -34,7 +32,7 @@ int main(int argc, char **argv) {
   val = calloc(nvars + 2, 1); trail = malloc((nvars + 2) * sizeof(int));
   int *tmp = malloc(sizeof(int) * (nvars + 2) * 2 + 64); int tl = 0; ll x;
   while (readint(f, &x)) {
-    if (x == 0) { id++; ensure_id(id); off[id] = push_clause(tmp, tl); len[id] = tl; tl = 0; }
+    if (x == 0) { id++; store(id, tmp, tl); tl = 0; }
     else { if (llabs(x) > nvars) fail("literal out of range", id + 1); tmp[tl++] = (int)x; }
   }
   fclose(f);
@@ -43,25 +41,25 @@ int main(int argc, char **argv) {
   ll cid; int empty_ok = 0; ll steps = 0;
   while (readint(p, &cid)) {
     int ch; do ch = fgetc(p); while (ch == ' ');
-    if (ch == 'd') { while (readint(p, &x) && x != 0) { if (x < ids_cap && off[x] >= 0) off[x] = -2; } continue; }
+    if (ch == 'd') { while (readint(p, &x) && x != 0) { if (x > 0 && x < ids_cap && state[x] == 1) { free(cl[x]); cl[x] = NULL; state[x] = 2; } } continue; }
     ungetc(ch, p);
     tl = 0; while (readint(p, &x) && x != 0) { if (llabs(x) > nvars) fail("literal out of range", cid); tmp[tl++] = (int)x; }
-    if (cid < ids_cap && off[cid] != -1) fail("clause id reused", cid);
+    if (cid < ids_cap && state[cid] != 0) fail("clause id reused", cid);
     int taut = 0;
     for (int i = 0; i < tl; i++) { int lv = litval(tmp[i]); if (lv == 1) taut = 1; else if (lv == 0) setlit(tmp[i], -1); }
     int conflict = taut;
     while (readint(p, &x) && x != 0) {
       if (conflict) continue;
       if (x < 0) fail("RAT hint not supported", cid);
-      if (x >= ids_cap || off[x] < 0) fail("hint to a missing clause", cid);
+      if (x >= ids_cap || state[x] != 1) fail("hint to a missing clause", cid);
       int unassigned = 0, ul = 0, sat = 0;
-      for (int i = 0; i < len[x]; i++) { int l = pool[off[x] + i], lv = litval(l); if (lv == 1) { sat = 1; break; } if (lv == 0) { unassigned++; ul = l; } }
+      for (int i = 0; i < len[x]; i++) { int l = cl[x][i], lv = litval(l); if (lv == 1) { sat = 1; break; } if (lv == 0) { unassigned++; ul = l; } }
       if (sat) fail("hint clause satisfied", cid);
       if (unassigned == 0) conflict = 1; else if (unassigned == 1) setlit(ul, 1); else fail("hint clause not unit", cid);
     }
     undo();
     if (!conflict) fail("no conflict after hints", cid);
-    ensure_id(cid); off[cid] = push_clause(tmp, tl); len[cid] = tl; steps++;
+    store(cid, tmp, tl); steps++;
     if (tl == 0) { empty_ok = 1; break; }
   }
   fclose(p);

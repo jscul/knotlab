@@ -3383,10 +3383,11 @@ So holes come in two kinds:
      case first reported was that position); harmonies already exist with three-distinction ends. The five late hopping rules
      settle by depth 47 and nothing to depth 200 counts (`LATE-HOP-20261112-001`)
      ([decision note](../research/TWO-BIT-ROWS-20261112-001/two_bit_rows.md)).
-   - **The cheapest counter** (`CHEAP-COUNT-20261112-001`; referee pending): a four-place parity, the piece of the known binary
-     counters, takes at least 10 NAE knots and at least 3 helper distinctions (exact); the counter built from it counts depth in
-     binary but weighs about 2^−97 under short descriptions, and one changed knot almost always breaks it; the hopping version
-     dies ([decision note](../research/CHEAP-COUNT-20261112-001/cheap_count.md)).
+   - **The cheapest counter** (`CHEAP-COUNT-20261112-001`; refereed, one Block): a four-place parity, the piece of the known
+     binary counters, takes at least 10 NAE knots and at least 3 helper distinctions (exact, for any number of helpers); the
+     counter built from it counts depth in binary, its cheapest descriptions found take about 104 to 106 bits (which bounds how
+     rare counting is from neither side), one changed knot almost always breaks it within depth 64, and the hopping version is
+     dead from depth 12 to 64 ([decision note](../research/CHEAP-COUNT-20261112-001/cheap_count.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

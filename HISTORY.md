@@ -11,6 +11,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 13 November 2026: the cheapest counter, a withdrawn claim
+
+- The study of the cheapest NAE counter (`CHEAP-COUNT-20261112-001`) was confirmed in every number, but one claim is withdrawn: that
+  counting is "astronomically rare" under short descriptions. The weight reported was that of the counting descriptions found, a
+  lower bound; it says nothing about how rare counting is. Also narrowed: the ten-knot parity bound is for counters built on a parity
+  gadget (it holds for any number of helpers); the readings of other rules and of the hopping version are to depth 64; the bits leave
+  out the decoder's conventions ([decision note](research/CHEAP-COUNT-20261112-001/cheap_count.md)).
+- Unchanged: every number.
+
 ## 12 November 2026: the late hopping rules, two wording fixes
 
 - The deep reading of the late hopping rules (`LATE-HOP-20261112-001`) was confirmed. One rule that was said to settle at depth 47 in

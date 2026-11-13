@@ -33,7 +33,7 @@ family by the minimum cycle mean and an exact residue test on a finite min-plus 
 
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
-| 1 | **The method is exact where checked.** The replayed draws match the stored ones (G0, 0 mismatches); on the one-definition families the new code reproduces the earlier graphs, rates, every-depth tests, ray bonds at 13,598 depths and the referee's 95 exact tests (G1, 0 mismatches; at the census caps 644 of 664 comparable, all agree); a family wrapped under a new main shifts by one depth (G2, 618 of 618 under the clarified long-run class); an independent brute force over the ray's states agrees at all 907 depths of 117 of the 150 panel families so far, 54 of them with several definitions, the rest still running (G3, *stress test pending*); every family that lives at every depth has a living usual limit (G4). | computed | gates passed (G3 pending) |
+| 1 | **The method is exact where checked.** The replayed draws match the stored ones (G0, 0 mismatches); on the one-definition families the new code reproduces the earlier graphs, rates, every-depth tests, ray bonds at 13,598 depths and the referee's 95 exact tests (G1, 0 mismatches; at the census caps 644 of 664 comparable, all agree); a family wrapped under a new main shifts by one depth (G2, 618 of 618 under the clarified long-run class); an independent brute force over the ray's states agrees at all 1,071 depths of 139 of the 150 panel families, 65 of them with several definitions, with no disagreement; the other 11, its largest cases, did not finish within its 5-hour cap (G3, folded in after the close); every family that lives at every depth has a living usual limit (G4). | computed | gates passed (G3 on 139 of 150) |
 | 2 | **Most nested weight has no depth to read: 58.4%.** Main reaches no copy (5.8%) or the ray definition has no own distinctions after inlining (52.6%), so every copy lives on the distinctions above it. Another 3.0% has no ray bond by construction (a dead limit 0.7%, own distinctions in no constraint 2.4%). These follow from the definitions and the code, not from the law. | proved (one-line arguments) | stated |
 | 3 | **Absence is typical by weight, bounded reach is typical where a bond persists.** Of all weight: no ray bond at large depths 79.8% (to 80.2%); bounded 13.9%; grows 5.9%; mixed by residue below 0.01%; unresolved 0.4%. Among the computed draws that live at every depth (38.2% of the weight), none at any depth 47.0%, bounded 35.7% [35.4, 36.9], grows 15.3% [15.0, 16.4], lost at large depths 1.1%, unresolved 0.9%. Where a ray bond persists, bounded is 68.8% to 70.6% [68.3, 71.0]. | exact per family, census | P1 held, P2 held |
 | 4 | **Families alive only in the limit grow about twice as often, but only because their bonds exist.** Among their computed draws (862): bounded 63.6% [60.3, 68.9], grows 32.1% [29.0, 37.5], none 0.8%, unresolved 2.1%; grows minus the forever cell's is 15.9 points (draws, unresolved against), bootstrap 2.5% quantile 12.8. *After the run (exploratory):* where a ray bond persists, growth is 29.4% to 31.2% in families that live at every depth and 32.9% to 35.0% in the limit-only cell, nearly the same; the gap is the 47% of forever families with no ray bond at any depth. | exact per family, census | P3 held |
@@ -74,7 +74,7 @@ about other rays, about bonds through side branches, or about other weightings.
   open. The class-only G2 mismatches it reported were exactly that flaw.
 - **Friction.** One timer race in its runner (an alarm firing as it was disarmed) killed the full run at 110,262 of 124,572 families
   after about 2.5 hours; I fixed it in place (marked in `reach_dp.py`, no result changed) and resumed. Its brute force is slow on
-  the largest panel families (up to 47 minutes each), so G3 is still finishing.
+  the largest panel families (up to 47 minutes each); G3 checked 139 of 150 within its 5-hour cap, all agreeing.
 - **Saved.** All algorithmic, validation and summary code was Codex's; my part was the design, the settled classes, the
   clarifications, the launch, the stress test and the reading.
 
@@ -120,7 +120,7 @@ The conditional growth shares and the unique-ray split in conclusions 4 and 6 we
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the reach census | **Status:** Successful (referee pending) | P1, P2, P3 held; G0–G2 and G4 passed, G3 117 of 150 so far with no disagreement |
+| This attempt — the reach census | **Status:** Successful (referee pending) | P1, P2, P3 held; G0–G2 and G4 passed, G3 on 139 of 150 with no disagreement |
 | Local direction — counting inside | Continue | Growth is bound to the ray read; the reach to a whole depth decides counting |
 | Broader exploration — G17 | Searching | Typical shares under one weighting are known; other weightings are untested |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | The typical reach of nested patterns under the description weighting is located, and mostly settled by construction |

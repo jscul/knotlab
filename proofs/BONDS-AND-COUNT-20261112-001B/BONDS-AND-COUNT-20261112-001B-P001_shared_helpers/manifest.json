@@ -1,0 +1,105 @@
+{
+  "schema_version": 3,
+  "artifact_id": "BONDS-AND-COUNT-20261112-001B-P001",
+  "canonical_id": "BONDS-AND-COUNT-20261112-001B-P001",
+  "proof": "BONDS-AND-COUNT-20261112-001B-P001",
+  "ticket": "BONDS-AND-COUNT-20261112-001B",
+  "kind": "proof",
+  "status": "Partial",
+  "title": "Does an NAE rule with one main and two helper distinctions per position realize the reference-relative additive rule with helpers reused by neighbours?",
+  "claim": "An exact arbitrary-width and arbitrary-depth NAE realization of rule 60 uses three distinctions per position plus R when a charged seed helper may also be broadcast. Strict R-only neighbouring access remains open; 784 adjacent-pair encodings and 256 local-complement-plus-three-input encodings are obstructed in the declared span-two class.",
+  "standard_statement": "Realize y_i=x_(i-1) XOR x_i XOR R, with missing old values R, using one main and two helper distinctions per position, with exact simultaneous extension, iteration and terminal NAE closure; distinguish distinction inventory from permitted global access.",
+  "prior_work": "Four-place even parity has a finite exact NAE definition and CHEAP-COUNT establishes private-helper minima. Sharing across neighbouring positions requires simultaneous extension.",
+  "dependencies": [
+    "CHEAP-COUNT-20261112-001A",
+    "ROW-NEST-20261112-001A",
+    "TWO-BIT-ROWS-20261112-001A"
+  ],
+  "completion_gate": "Give the exact projected relation on raw main variables and the reference; require soundness, every correct assignment extends coherently across overlaps and boundaries, and an arbitrary-width proof before claiming a counter. A bounded impossibility result must specify the allowed local template.",
+  "validation": {
+    "level": "V1",
+    "classification": "V1-separate-algorithm-same-task",
+    "status": "check.py passed; initial and bulk/end truth tables, 1040 direct countermodels, all width-2..7 one-step inputs, closed projections to depth 64, original census comparison to depth 8, polynomial replay to depth 8192",
+    "independence": "NAE/SAT construction versus integer-polynomial reference; same task authorship; no trusted kernel or external review",
+    "novelty": "candidate-local-delta"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "three_per_position_two_reference_rule60_realized": true,
+    "strict_single_reference_local_rule60_realized": false,
+    "non_eventually_periodic_closed_life_proved": true,
+    "general_shared_helper_impossibility": false
+  },
+  "source_contribution": 0,
+  "remaining_obligations": [
+    "Give the exact rule-60 transition with only the original global R and bounded neighbouring helper access, or an obstruction beyond the stated deterministic encoding classes.",
+    "Period-dependent, longer-support and nondeterministic helper encodings and inherited-helper overlapping blocks remain open."
+  ],
+  "paths": {
+    "manifest": "proofs/BONDS-AND-COUNT-20261112-001B/BONDS-AND-COUNT-20261112-001B-P001_shared_helpers/manifest.json",
+    "identity": "proofs/BONDS-AND-COUNT-20261112-001B/BONDS-AND-COUNT-20261112-001B-P001_shared_helpers/identity.json",
+    "proof": "proofs/BONDS-AND-COUNT-20261112-001B/BONDS-AND-COUNT-20261112-001B-P001_shared_helpers/proof.md",
+    "result": "proofs/BONDS-AND-COUNT-20261112-001B/BONDS-AND-COUNT-20261112-001B-P001_shared_helpers/result.json",
+    "check": "proofs/BONDS-AND-COUNT-20261112-001B/BONDS-AND-COUNT-20261112-001B-P001_shared_helpers/check.py"
+  },
+  "attained_result": {
+    "two_broadcast_reference_construction": "Proved symbolically with exact finite local tables and arbitrary-width/depth induction",
+    "strict_single_broadcast_reference_target": "Open",
+    "deterministic_local_encoding_classes": "1040 directly verified countermodels in the stated finite classes",
+    "two_output_private_block": "UNSAT from a complete finite synthesis encoding; no proof-trace replay"
+  },
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "exact-obstruction-or-countermodel",
+      "finite-instance-classification"
+    ]
+  },
+  "foundation_claim_scope": "Exact positive NAE constraint encoding and its depth predicate. The second broadcast identity is an explicit access convention; no native contact-composition claim is made.",
+  "blocker_class": "substantive-near-miss",
+  "failure_conditions": [
+    "Any truth-table mismatch in the seed, helper, uniform update or right-end relation.",
+    "A correct raw initial assignment has no extension, or an incorrect main history survives.",
+    "The additional broadcast access to the seed helper is omitted from the construction contract.",
+    "A local-class countermodel fails a maximally valid NAE triple or starts with an incorrectly encoded old generation.",
+    "The counting proof drops zero padding or changes the actual terminal main-triple closing protocol."
+  ],
+  "parent_bindings": {
+    "experiments/CHEAP-COUNT-20261112-001A/CHEAP-COUNT-20261112-001A-E001_cheapest_counter/census.py": "1384f13ffd9f2b53e67880030190cc1c05a166f8db181a96fb80cbf8d5e55c16",
+    "research/CHEAP-COUNT-20261112-001/referee-R1/codex/s1_enumeration.json": "43f636f664d0c621604256784c2d1d50286264c7a69cf7008b50d2989c1b27bf",
+    "research/CHEAP-COUNT-20261112-001/referee-R1/report.md": "34038e75e1c7767630cf6cfc58d109fdee26a07e0400fafcf88d3e16c3b27900",
+    "research/ROW-NEST-20261112-001/row_nest.md": "a39bb2f0e8295eb071791854041d174aefe5d14879ac0c4896c0de9278278d2a",
+    "research/TWO-BIT-ROWS-20261112-001/two_bit_rows.md": "628dea9a91233e9065c6fc5984ff042cf9959929976eabcc00b3383f08f3c64b"
+  },
+  "terminal_disposition": "Closed Partial for the original one-reference language. The exact counting theorem is accepted with the explicitly counted extra readable seed identity. The finite obstructions cover only the stated local classes."
+}

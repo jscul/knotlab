@@ -1,0 +1,76 @@
+{
+  "schema_version": 3,
+  "artifact_id": "BONDS-AND-COUNT-20261112-001C-P001",
+  "canonical_id": "BONDS-AND-COUNT-20261112-001C-P001",
+  "proof": "BONDS-AND-COUNT-20261112-001C-P001",
+  "ticket": "BONDS-AND-COUNT-20261112-001C",
+  "kind": "proof",
+  "status": "Partial",
+  "title": "Base 16: exact downward bonds at every across-count; sharp unrestricted bound partial",
+  "claim": "For every n >= 3 and k >= 2 the downward support of floor((n+1)/2)+3 distinctions is a bond of the infinite base, with exactly two complementary assignments excluded. Every induced rectangle with at least three across-counts extends exactly to the infinite base. The sharp unrestricted across-count lower bound is not established here.",
+  "standard_statement": "For every n >= 3 and k >= 2 the downward support of floor((n+1)/2)+3 distinctions is a bond of the infinite base, with exactly two complementary assignments excluded. Every induced rectangle with at least three across-counts extends exactly to the infinite base. The sharp unrestricted across-count lower bound is not established here.",
+  "prior_work": "ACROSS-FOLD proves upward heddles and a lower bound for one supporting along-count. Its downward family was finite at y=-3 through -10, k=5,8,11,20. This family proves the full downward projection for every n>=3,k>=2, by a two-update extension; mixed-support optimality is left open.",
+  "dependencies": [
+    "ACROSS-FOLD-20261112-001A",
+    "ACROSS-FOLD-20261112-001B",
+    "FOLD-20261112-001A"
+  ],
+  "completion_gate": "Prove the unrestricted lower bound for the claimed range, or verify a strict counterexample on the infinite base with allowed-state and deletion witnesses. If only a partial result is reached, establish a rigorous new subfamily or obstruction and present the exact missing step. Cover both signs where justified.",
+  "validation": {
+    "level": "V1",
+    "status": "hand proof with exact SAT projections, explicit infinite-extension constructors, two finite encodings, K1-K3 and matched rejected overstatements",
+    "novelty": "external novelty unassessed; candidate-local-delta",
+    "uniform_theorems": "argued-in-prose; finite replay is a consistency check"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": true,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "source_contribution": 0,
+  "remaining_obligations": [
+    "Prove the sharp across-count lower bound for arbitrary finite supports at arbitrary along-counts, or exhibit a strict smaller bond in the far-along-count regime. Do not infer that lower bound from finite negative boxes."
+  ],
+  "paths": {
+    "manifest": "proofs/BONDS-AND-COUNT-20261112-001C/BONDS-AND-COUNT-20261112-001C-P001_all_bonds/manifest.json",
+    "identity": "proofs/BONDS-AND-COUNT-20261112-001C/BONDS-AND-COUNT-20261112-001C-P001_all_bonds/identity.json",
+    "proof": "proofs/BONDS-AND-COUNT-20261112-001C/BONDS-AND-COUNT-20261112-001C-P001_all_bonds/proof.md",
+    "result": "proofs/BONDS-AND-COUNT-20261112-001C/BONDS-AND-COUNT-20261112-001C-P001_all_bonds/result.json",
+    "check": "proofs/BONDS-AND-COUNT-20261112-001C/BONDS-AND-COUNT-20261112-001C-P001_all_bonds/check.py"
+  },
+  "epistemic_classes": [
+    "uniform-family-theorem",
+    "finite-instance-classification"
+  ],
+  "primary_epistemic_class": "uniform-family-theorem",
+  "blocker_class": "substantive-near-miss",
+  "terminal_disposition": "Closed Partial for the sharp across-count lower bound. The exact downward upper construction and the finite-rectangle extension theorem are accepted. The coefficient for unrestricted supports remains open."
+}

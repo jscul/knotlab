@@ -1,0 +1,51 @@
+{
+  "command": [
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python",
+    "-B",
+    "-m",
+    "knotlab",
+    "check",
+    "--cnf",
+    "x0 x1 x2; ~x0 ~x1 ~x2",
+    "--loops",
+    "x0",
+    "x1",
+    "--contact",
+    "x2",
+    "--json"
+  ],
+  "variable_map": {
+    "x0": "a",
+    "x1": "0:x1",
+    "x2": "0.1:x1"
+  },
+  "report": {
+    "allowed": [
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110"
+    ],
+    "binding": true,
+    "coexistence": true,
+    "contact": "x2",
+    "erasure": "forgetting",
+    "invisible_in_parts": true,
+    "is_knot": true,
+    "loops": [
+      "x0",
+      "x1"
+    ],
+    "loss_on_erasure": true,
+    "minimum_width": 3,
+    "notes": [],
+    "pairwise_definable": false,
+    "variables": [
+      "x0",
+      "x1",
+      "x2"
+    ]
+  }
+}

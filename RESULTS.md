@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**327 current results** and 5 superseded ones, from 353 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**329 current results** and 5 superseded ones, from 354 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 20 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 80 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 82 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 353 epics with their closures
+- [Epics](#epics): all 354 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -725,6 +725,12 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-10 · Every infinite law on the tree of names has a solution that repeats nowhere** (`WEAK-APER-20261110-001-D001`).
   Every infinite shift of finite type on the free group F2, over any finite alphabet, has a solution with trivial stabilizer, so under Leibniz's rule the tree is a board exactly when a law with finite windows has infinitely many solutions, and no such law forces the plane. A level law on Z/3 with solutions has no finite board exactly when its solutions drift up or down.
   [proof P001](proofs/WEAK-APER-20261110-001A/WEAK-APER-20261110-001A-P001_free_solutions_without_finite_boards/proof.md), [epic closure](proofs/WEAK-APER-20261110-001Z/WEAK-APER-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-12 · One nested pattern reads its depth through bond size** (`BONDS-AND-COUNT-20261112-001-D001`).
+  In one branching limit-only family, the least size of a bond joining a top distinction to either own distinction on the first recursive branch at depth s lies between ceil(s/3)+1 and ceil(s/2)+2 for every positive s. Every finite support in the infinite pattern is eligible, including every side branch.
+  [proof P001](proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/proof.md), [epic closure](proofs/BONDS-AND-COUNT-20261112-001Z/BONDS-AND-COUNT-20261112-001Z-P001_synthesis/proof.md)
+- **2026-11-12 · Bonds of fixed size reach only a bounded distance across base 16** (`BONDS-AND-COUNT-20261112-001-D002`).
+  For any fixed number of distinctions, the across-span of every bond of that size on base 16 is uniformly bounded over all along-counts of all its members. Consequently the least bond size needed to connect two counts grows without bound as their across separation grows, wherever a connecting bond exists.
+  [proof P001](proofs/BONDS-AND-COUNT-20261112-001D/BONDS-AND-COUNT-20261112-001D-P001_across_span/proof.md), [epic closure](proofs/BONDS-AND-COUNT-20261112-001Z/BONDS-AND-COUNT-20261112-001Z-P001_synthesis/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -1432,6 +1438,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | What the expanding growth's degrees do not carry (`AGE-NEST-20261112-001`) | [closure](proofs/AGE-NEST-20261112-001Z/AGE-NEST-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/AGE-NEST-20261112-001/) |
 | 2026-11-12 | Bases within bases (`BASES-WITHIN-20261112-001`) | [closure](proofs/BASES-WITHIN-20261112-001Z/BASES-WITHIN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/BASES-WITHIN-20261112-001/) |
 | 2026-11-12 | Counting inside: least bonds across depths (`BOND-DEPTH-20261112-001`) | — | [folder](research/BOND-DEPTH-20261112-001/) |
+| 2026-11-12 | Bonds across nested depth and base 16, and counters with shared helpers (`BONDS-AND-COUNT-20261112-001`) | [closure](proofs/BONDS-AND-COUNT-20261112-001Z/BONDS-AND-COUNT-20261112-001Z-P001_synthesis/proof.md) | [folder](research/BONDS-AND-COUNT-20261112-001/) |
 | 2026-11-12 | The cheapest counter (`CHEAP-COUNT-20261112-001`) | [closure](proofs/CHEAP-COUNT-20261112-001Z/CHEAP-COUNT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/CHEAP-COUNT-20261112-001/) |
 | 2026-11-12 | Let the examples shape the dissonance (`CLAMP-LEARN-20261112-001`) | [closure](proofs/CLAMP-LEARN-20261112-001Z/CLAMP-LEARN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/CLAMP-LEARN-20261112-001/) |
 | 2026-11-12 | How common folding is among random samples (`COMMON-FOLD-20261112-001`) | [closure](proofs/COMMON-FOLD-20261112-001Z/COMMON-FOLD-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/COMMON-FOLD-20261112-001/) |

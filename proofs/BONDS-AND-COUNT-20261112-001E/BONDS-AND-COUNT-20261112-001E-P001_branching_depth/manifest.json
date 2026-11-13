@@ -1,0 +1,78 @@
+{
+  "schema_version": 3,
+  "kind": "proof",
+  "artifact_id": "BONDS-AND-COUNT-20261112-001E-P001",
+  "canonical_id": "BONDS-AND-COUNT-20261112-001E-P001",
+  "proof": "BONDS-AND-COUNT-20261112-001E-P001",
+  "ticket": "BONDS-AND-COUNT-20261112-001E",
+  "title": "Least bonds over every side branch grow in proportion to nesting depth",
+  "status": "Proved",
+  "claim": "For every s >= 1, ceil(s/3)+1 <= L(s) <= ceil(s/2)+2 in the specified branching limit-only family. Eligible targets are either own distinction in the depth-s copy on the first branch. The minimum allows all three top ports and arbitrary finite support throughout the infinite family.",
+  "standard_statement": "In the infinite ternarily recursive positive NAE instance of sample_5 line 11064, bound the minimum support size of a minimal non-shattered set connecting a root port and an own variable at ray depth s by positive linear functions of s.",
+  "prior_work": "The finite-state ends theorem concerns top windows. The earlier ray program restricts supports. Leaf A gives a same-family exact finite-depth aggregate discrepancy. Finite-state forgetting by relation composition and a loose NAE chain are standard ingredients; their joint implication for this branching family is the new local result.",
+  "dependencies": [
+    "BONDS-AND-COUNT-20261112-001A",
+    "NEST-COUNT-20261112-001A"
+  ],
+  "validation": {
+    "level": "V1",
+    "status": "Induction and extension proof read independently. Finite projections from the original recursive rule and the knotlab relation checks pass.",
+    "independence": "A separate mathematical reader checked the empty-group argument, supplied the shorter all-depth upper construction, and checked the freely chosen target control.",
+    "external_review": false,
+    "trusted_kernel": false
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "source_contribution": 1,
+  "paths": {
+    "identity": "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/identity.json",
+    "manifest": "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/manifest.json",
+    "proof": "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/proof.md",
+    "check": "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/check.py",
+    "result": "proofs/BONDS-AND-COUNT-20261112-001E/BONDS-AND-COUNT-20261112-001E-P001_branching_depth/result.json"
+  },
+  "remaining_obligations": [
+    "The exact least size at each depth and its asymptotic coefficient remain open.",
+    "Classification of other branching families and finite-flip sources at an infinite solution are separate questions."
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "foundation_claim_scope": "Proper supports in one specified branching limit-only family. No prevalence or native-at-a-solution assertion."
+}

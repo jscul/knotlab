@@ -1,0 +1,78 @@
+{
+  "schema_version": 3,
+  "kind": "proof",
+  "artifact_id": "BONDS-AND-COUNT-20261112-001D-P001",
+  "canonical_id": "BONDS-AND-COUNT-20261112-001D-P001",
+  "proof": "BONDS-AND-COUNT-20261112-001D-P001",
+  "ticket": "BONDS-AND-COUNT-20261112-001D",
+  "title": "Across-span of arbitrary finite bonds on base 16",
+  "status": "Proved",
+  "claim": "For every finite support size m, every bond of that size in base 16 has across-span bounded uniformly in the along-counts. The proof supplies an explicit recursive bound.",
+  "standard_statement": "For the two translated not-all-equal triples of base 16 on the integers squared, bound the across diameter of a minimal non-shattered finite set in terms of its cardinality, regardless of the longitudinal positions.",
+  "prior_work": "FOLD gives the constrained flip presentation. ACROSS-FOLD proves a sharp lower bound for one along-count and one target. No existing local proof located for arbitrary supports. Classical non-mixing shapes are a comparator; the argument here is direct. No field novelty claimed.",
+  "dependencies": [
+    "ACROSS-FOLD-20261112-001A",
+    "FOLD-20261112-001A"
+  ],
+  "validation": {
+    "level": "V1",
+    "status": "Proved by construction and induction; separate mathematical reading and finite checks passed.",
+    "independence": "Community peer review absent. The agent responsible for the separate base 16 construction reviewed the proof independently; the direct finite checker is by this proof’s author.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta for the unrestricted base 16 support quantifier; no field novelty claim"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "source_contribution": 1,
+  "paths": {
+    "manifest": "proofs/BONDS-AND-COUNT-20261112-001D/BONDS-AND-COUNT-20261112-001D-P001_across_span/manifest.json",
+    "proof": "proofs/BONDS-AND-COUNT-20261112-001D/BONDS-AND-COUNT-20261112-001D-P001_across_span/proof.md",
+    "identity": "proofs/BONDS-AND-COUNT-20261112-001D/BONDS-AND-COUNT-20261112-001D-P001_across_span/identity.json",
+    "check": "proofs/BONDS-AND-COUNT-20261112-001D/BONDS-AND-COUNT-20261112-001D-P001_across_span/check.py",
+    "result": "proofs/BONDS-AND-COUNT-20261112-001D/BONDS-AND-COUNT-20261112-001D-P001_across_span/result.json"
+  },
+  "remaining_obligations": [
+    "The sharp linear lower bound on unrestricted supports remains open."
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "foundation_claim_scope": "All finite bond supports of the supplied base 16. No native-source claim, dimensional classification or assertion of the sharp rate."
+}

@@ -1,0 +1,367 @@
+{
+  "summary": {
+    "eligible_families": 664,
+    "family_limit": 64,
+    "ray_cases": 18,
+    "ray_cap_omissions": 0,
+    "cheap_ray_bonds": 13,
+    "no_small_ray_bond": 5,
+    "side_cuts": 33,
+    "side_cap_omissions": 0,
+    "families_reached": 5,
+    "elapsed_seconds": 1.1287844179896638,
+    "peak_rss_kib": 523836,
+    "old_receipt_sha256": "b690b1604400fe54492929339d422a3721b06d2f04d3aa8a9dd1130bbd597e83",
+    "stop": "first strict aggregate shortcut"
+  },
+  "cases": [
+    {
+      "rank": 1,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_0.jsonl.gz",
+      "line": 7436,
+      "depth": 1,
+      "ray_variables": 7,
+      "ray_models": 42,
+      "gfp": 255,
+      "incidence": "has cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 10
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "b",
+        "c",
+        "0:x0"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 1,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_0.jsonl.gz",
+      "line": 7436,
+      "depth": 2,
+      "ray_variables": 9,
+      "ray_models": 92,
+      "gfp": 255,
+      "incidence": "has cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 25
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "r:x0",
+        "0.0:x0"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 1,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_0.jsonl.gz",
+      "line": 7436,
+      "depth": 3,
+      "ray_variables": 11,
+      "ray_models": 200,
+      "gfp": 255,
+      "incidence": "has cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 45
+      },
+      "status": "all eligible ray supports of size <=3 excluded"
+    },
+    {
+      "rank": 1,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_0.jsonl.gz",
+      "line": 7436,
+      "depth": 4,
+      "ray_variables": 13,
+      "ray_models": 428,
+      "gfp": 255,
+      "incidence": "has cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 57
+      },
+      "status": "all eligible ray supports of size <=3 excluded"
+    },
+    {
+      "rank": 2,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_1.jsonl.gz",
+      "line": 9241,
+      "depth": 1,
+      "ray_variables": 7,
+      "ray_models": 72,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 19
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "0:x0",
+        "0:x1"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 2,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_1.jsonl.gz",
+      "line": 9241,
+      "depth": 2,
+      "ray_variables": 9,
+      "ray_models": 216,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 19
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "b",
+        "0.0:x0",
+        "0.0:x1"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 2,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_1.jsonl.gz",
+      "line": 9241,
+      "depth": 3,
+      "ray_variables": 11,
+      "ray_models": 648,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 45
+      },
+      "status": "all eligible ray supports of size <=3 excluded"
+    },
+    {
+      "rank": 2,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_1.jsonl.gz",
+      "line": 9241,
+      "depth": 4,
+      "ray_variables": 13,
+      "ray_models": 1944,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 57
+      },
+      "status": "all eligible ray supports of size <=3 excluded"
+    },
+    {
+      "rank": 3,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_2.jsonl.gz",
+      "line": 25697,
+      "depth": 1,
+      "ray_variables": 7,
+      "ray_models": 72,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 20
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "r:x0",
+        "0:x1"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 3,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_2.jsonl.gz",
+      "line": 25697,
+      "depth": 2,
+      "ray_variables": 9,
+      "ray_models": 216,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 32
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "0:x0",
+        "0.0:x1"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 3,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_2.jsonl.gz",
+      "line": 25697,
+      "depth": 3,
+      "ray_variables": 11,
+      "ray_models": 648,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 44
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "0.0:x0",
+        "0.0.0:x1"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 3,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_2.jsonl.gz",
+      "line": 25697,
+      "depth": 4,
+      "ray_variables": 13,
+      "ray_models": 1944,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 56
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "0.0.0:x0",
+        "0.0.0.0:x1"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 4,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_3.jsonl.gz",
+      "line": 6592,
+      "depth": 1,
+      "ray_variables": 7,
+      "ray_models": 72,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 18
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "r:x1",
+        "0:x0"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 4,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_3.jsonl.gz",
+      "line": 6592,
+      "depth": 2,
+      "ray_variables": 9,
+      "ray_models": 216,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 28
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "0:x1",
+        "0.0:x0"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 4,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_3.jsonl.gz",
+      "line": 6592,
+      "depth": 3,
+      "ray_variables": 11,
+      "ray_models": 648,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 38
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "0.0:x1",
+        "0.0.0:x0"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 4,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_3.jsonl.gz",
+      "line": 6592,
+      "depth": 4,
+      "ray_variables": 13,
+      "ray_models": 1944,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 48
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "0.0.0:x1",
+        "0.0.0.0:x0"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 5,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_5.jsonl.gz",
+      "line": 11064,
+      "depth": 1,
+      "ray_variables": 7,
+      "ray_models": 72,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 20
+      },
+      "status": "ray aggregate at most three",
+      "ray_bond": [
+        "c",
+        "r:x0",
+        "0:x1"
+      ],
+      "direct_factor": true
+    },
+    {
+      "rank": 5,
+      "file": "artifacts/LIMIT-ONLY-20261112-001A/LIMIT-ONLY-20261112-001A-E001_limit_only/sample_5.jsonl.gz",
+      "line": 11064,
+      "depth": 2,
+      "ray_variables": 9,
+      "ray_models": 216,
+      "gfp": 255,
+      "incidence": "no cycle",
+      "support_checks": {
+        "2": 6,
+        "3": 33
+      },
+      "status": "strict aggregate shortcut found"
+    }
+  ]
+}

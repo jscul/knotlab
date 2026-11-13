@@ -1,0 +1,35 @@
+{
+  "proof": "BONDS-AND-COUNT-20261112-001E-P001",
+  "status": "proved",
+  "claim": "For every s >= 1, ceil(s/3)+1 <= L(s) <= ceil(s/2)+2 in the specified branching limit-only family. Eligible targets are either own distinction in the depth-s copy on the first branch. The minimum allows all three top ports and arbitrary finite support throughout the infinite family.",
+  "target_control": "Allowing the target copy itself to range over every branch gives a bond of size at most three at every depth.",
+  "checks": {
+    "interface_pairs_after_three": 64,
+    "side_bridges": 28,
+    "two_steps_nonfull": true,
+    "chain_allowed": [
+      6,
+      14,
+      30,
+      62,
+      126,
+      254,
+      510,
+      1022
+    ],
+    "canonical_knot_depths": [
+      1,
+      2,
+      5
+    ],
+    "occupied_patterns": 4095,
+    "mixed_chain_projection_sizes": [
+      6,
+      6,
+      14,
+      14,
+      30,
+      30
+    ]
+  }
+}

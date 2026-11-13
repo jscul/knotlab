@@ -3419,12 +3419,13 @@ So holes come in two kinds:
      into every copy (a local bond, as in `TRUE-RATE-20261113-001`); on uncarried bonds the first-ray bond grows in about two thirds (checked on one-definition families; no lower bound on the true bond), alike in
      families that live at every depth and in those alive only in the limit; another ray bounds 32 of the 224 proved growers
      without a carried port ([decision note](../research/REACH-CENSUS-20261113-001/reach_census.md)).
-   - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; referee pending; code by Codex): a copy that meets a growing
+   - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what
      separates decidable from undecidable nesting. With knots placed by a small automaton on addresses, so that a part's joining
      to the rest depends on where it is, under a description weighting: 94% of the weight with a knot lives to level 12, three
-     quarters by construction; of the rest a fifth end, never at once; death follows knot density; growing joining is typical and
-     late ends need it; and 48 patterns die and come back across levels, 7 alternating with the level's parity
+     quarters by construction; of the rest a fifth end, never at once; death rises with knot density; the activity class that lets
+     joining grow is the usual one and the only one with late ends within level 12 (associations); and 48 patterns die and come back
+     across levels (certified by the referee), 7 alternating with the level's parity
      ([decision note](../research/ADDR-KNOTS-20261113-001/addr_knots.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,

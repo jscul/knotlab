@@ -2133,8 +2133,9 @@ evidence: results and their status come from the records each entry links.
 - **Statement.** The owner's recursion picture ("the nested structures depend on the larger structures to know where they are ... for
   logic, it can hop around") is read, for a census, as not-all-equal knots placed by a small invertible automaton on binary
   addresses: level n is the addresses of length n, a placement (g₁, g₂, g₃) of words of length at most 2 in the automaton's maps puts
-  the knot {g₁x, g₂x, g₃x} on every address x where the three differ, and a tail class (the addresses sharing their last letters) has
-  the same inner knots everywhere and is joined to the rest by knots that depend on its tail. Descriptions are weighted by fair coins
+  the knot {g₁x, g₂x, g₃x} on every address x where the three differ, and each map acts on a tail class's free letters (the addresses
+  sharing their last letters) the same way whatever the tail, while which of the class's knots stay inside it and which join it to
+  the rest depend on the tail. Descriptions are weighted by fair coins
   over automata and placements (A79's kind, A71).
 - **Why.** A finite description must treat unboundedly many shared distinctions by a fixed rule: uniformly (shared lists, which stay
   finite-state, Lemma A), by a shift of position (flat rows, known), or by a finite automaton on addresses, which contains the shift
@@ -2145,4 +2146,7 @@ evidence: results and their status come from the records each entry links.
   a level), use longer words or more letters, or weight by shortest description, and compare the fates; or find a recursion reading
   outside the three ways that is not finite-state.
 - **History.**
+  - 2026-11-13 · Statement corrected after `ADDR-KNOTS-20261113-001`'s referee (Block for the sentence): a tail class's inner knots
+    can depend on the tail (counterexample in the [referee report](../research/ADDR-KNOTS-20261113-001/referee-R1/report.md)); the
+    old wording said they were the same everywhere. Status unchanged.
   - 2026-11-13 · Added by `ADDR-KNOTS-20261113-001` at its pre-registration.

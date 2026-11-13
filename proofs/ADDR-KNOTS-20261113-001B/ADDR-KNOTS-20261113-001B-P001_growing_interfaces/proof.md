@@ -44,7 +44,9 @@ to 3 (three distinct members of one combination are needed only by the third for
 lists known separately because a knot skips a member that coincides with one of its own places. That is the profile. (ii) A child
 copy's profile is computed from the parent's profile, the parent's values, the parent's newly enlisted distinctions, and the call's
 binding (which of the parent's distinctions become the child's ports, since a child's profile leaves its own ports out and records
-their lists): a function of finite data of the parent. (iii) Given the parent's values, two children's subpatterns share nothing
+their lists): a function of finite data of the parent. *(Clarified after the referee: a seen member that is not a port lies outside
+the copy's distinctions, so no call can bind it to a port or an own distinction of the copy; only ports can coincide with members.)*
+(iii) Given the parent's values, two children's subpatterns share nothing
 through the lists (each sees only its ancestors' members), so they are independent, exactly as SELF copies are in the A79 language.
 (iv) So the set of (port values, profile) under which a depth-t copy of D lives is computed from the same sets for the definitions
 it calls at depth t − 1 (and the knot at depth 1) by a fixed map. The domain is finite, so the sequence R_t is eventually periodic;
@@ -101,14 +103,18 @@ address, so with one placement only an exactly balanced dead part can occur; whe
 three letters with two state maps none to level 6, exploratory).
 
 **Where a tail class meets the rest.** The addresses sharing their last k letters v form a **tail class** (the literature's tile):
-g(uv) = g(u) · g|_u(v), so inside a tail class each map acts on the free first letters as at level n − k, and a knot **joins** the
-class to the rest when its three addresses do not all share the tail. That happens only where some relative map gⱼgᵢ⁻¹ changes the
+g(uv) = g(u) · g|_u(v), so each map acts on the free first letters as at level n − k whatever the tail, and a knot **joins** the
+class to the rest when its three addresses do not all share the tail. *(Corrected after the referee: the map's section at u decides
+the output tail, so which knots stay inside the class, as well as which join it, can depend on the tail.)* That happens only where some relative map gⱼgᵢ⁻¹ changes the
 tail, so the number of joining knots is bounded above by how many addresses of each length hand a relative map a non-identity one
 (the literature's activity, Sidki 2000): bounded activity of the relative maps gives classes joined by a bounded number of knots at
 every level (the literature's finitely ramified case), polynomial activity a number growing at most as a power of the level,
 exponential activity at most exponentially. These are upper bounds only: maps can cancel, and a description whose state maps are
-exponentially active can have no joining knot at all. A class's inner knots are the same for every tail; how it is joined to the
-rest depends on its tail. Bartholdi 2022 (Groups Geom. Dyn.) proved the domino problem decidable in the bounded case and undecidable
+exponentially active can have no joining knot at all. ~~A class's inner knots are the same for every tail; how it is joined to the
+rest depends on its tail.~~ *Withdrawn 2026-11-13 after the referee (Block for the sentence; logged in `docs/CORRECTIONS.md`): with
+sw = [1, 0], d0 = [1, 0], d1 = [1, 1] and the one placement of (1,), (0, 0), (1, 0), level 4 has 14 knots; the tail classes 00 and
+01 hold no inner knot, while 10 and 11 each hold two. A map's prefix action is independent of the tail; its section decides the
+output tail, so both a class's inner knots and its joining knots can depend on the tail.* Bartholdi 2022 (Groups Geom. Dyn.) proved the domino problem decidable in the bounded case and undecidable
 on a linear-activity example, and conjectured, for contracting groups, decidable exactly when finitely ramified. *Known.* Whether
 the not-all-equal law in the bounded case is finite-state by Bartholdi's construction, applied to knots instead of edges, is expected
 but not proved here.
@@ -119,7 +125,8 @@ Let definitions take definitions as arguments (the literature's higher-order rec
 number of ports. A ground definition denotes a relation on its ports; a definition of higher type denotes a function between finite
 sets of such denotations, again a finite set. If depth t is the number of unfoldings, each depth replacing every recursive call by
 the definition at depth t − 1, then the denotations at depth t are a fixed function of those at depth t − 1 on a finite set, so life
-is eventually periodic in t. *My argument, unchecked; flagged for the referee.* The advisor model held the opposite view (decidable
+is eventually periodic in t. *My argument, by hand; the referee found it sound for depth counted in unfoldings (narrowed: the
+statement is about that depth measure only).* The advisor model held the opposite view (decidable
 but not periodic in depth). It may be right if depth is measured instead as the longest chain of nested copies in the expanded
 pattern, which higher-order schemes can make grow like 2^t, so that a fate read along that measure need not repeat.
 

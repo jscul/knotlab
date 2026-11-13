@@ -6,7 +6,8 @@ with the prior work in the program added (f21c6f33e) and the summary's units fix
 [codex_spec_addendum.md](codex_spec_addendum.md)), all before any registered result was read. Code by Codex from
 [codex_spec.md](codex_spec.md), run by the thread (systemd unit ak-run, 8 workers, 18:00 to 21:38 UTC). Proof note
 `ADDR-KNOTS-20261113-001B`: [proof.md](../../proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md).
-The canonical K1–K3 test is unchanged. **Referee pending** (the background referee thread).
+The canonical K1–K3 test is unchanged. **Refereed** (ADDR-KNOTS-R1, `referee-R1/report.md`, commit 8c76eef9a): **confirmed with
+fixes**, folded in below; one Block (a sentence on tail classes, withdrawn) and six Narrowings, logged in `docs/CORRECTIONS.md`.
 
 ## Words
 
@@ -20,8 +21,9 @@ The fates: F1 **resolves to nothing** (dead at its first level with knots), F2 *
 ## The question
 
 Every nested study before this one let a copy meet the rest through a fixed number of distinctions. Here the knots are placed by a
-small automaton on addresses, so a tail class has the same inner knots wherever it sits, is joined to the rest by knots that depend on
-its tail, and the number of joining knots may grow with the level (the owner's "nested structures depend on the larger structures to
+small automaton on addresses, so each map acts on a tail class's free letters the same way whatever the tail, while which knots stay
+inside it and which join it to the rest depend on the tail (*corrected after the referee*), and the number of joining knots may grow
+with the level (the owner's "nested structures depend on the larger structures to
 know where they are ... it can hop around"). Under a description weighting of A79's kind: how common is each fate, and does how fast
 the joining can grow change the fates once knot density is matched?
 
@@ -38,22 +40,25 @@ s = 2 and 3 (E, 19,416 placement lists).
 | --- | --- | --- | --- |
 | 1 | **Shared lists stay finite-state.** A copy that meets every distinction its ancestors put on a shared list, a number growing without bound, still depends on them only through capped counts of values, so life is eventually periodic in depth and decided in the limit (Lemma A). Growing interfaces are not enough to escape finite state; the parts must tell the shared distinctions apart. | proved (known in kind) | the Narrowing of NEST-COUNT's reading |
 | 2 | **One placement on two letters always lives** (B0), and so does any description whose placements each mix root swaps (first-letter settled); one placement on seven letters can die at every level (the Fano difference set). | proved; checked | P1 held: 9,731 descriptions with a knot checked, none failed |
-| 3 | **Typical: alive at every level read, mostly by construction.** Of the 28,770 accepted W draws, 61.8% have one state map and place no knot, and 18.2% more place none within level 12. Of the 5,759 with a knot, 94.3% are alive at every level read, 5.5% end, 0.3% are undecided; 74.8% are settled by construction (B0 or first letter). Of the 1,452 unsettled, 21.6% end within level 12. | computed, frozen | descriptive |
+| 3 | **Typical: alive at every level read, mostly by construction.** Of the 28,770 accepted W draws, 61.8% have one state map and place no knot, and 18.2% more place none within level 12. Of the 5,759 with a knot, 94.3% are alive at every level read, 5.5% end, 0.3% are undecided; 74.8% are settled by construction (B0 or first letter) under each draw's own flags (79.9% under the addendum's inherited settlement, where a pattern is settled if any description forming it is; *narrowed after the referee: say which*). Of the 1,452 unsettled, 21.6% end within level 12. | computed, frozen | descriptive |
 | 4 | **Nothing resolves to nothing.** No pattern in either population is dead at its first level with knots; first deaths fall at levels 3 to 12. | computed, frozen | descriptive |
-| 5 | **Density decides most of it.** By knots per address (ρ_max, E's distinct patterns), the death share is 0 below 1.5, 0.24% in [1.5, 2.1), 7.4% in [2.1, 3), 23% in [3, 4.5) and 66% from 4.5 on, where a third still live through level 12. | computed, frozen | descriptive |
-| 6 | **Growing joining is typical; bounded joining is rare and sparse.** By the relative maps' activity, 92% of W's distinct patterns (3,669 of 3,997) and 94% of E's (8,444 of 8,952) are exponential; among W draws with a knot, 88% by weight are exponential, 7.9% bounded, 2.7% polynomial, 1.4% finitary. Bounded and polynomial patterns are sparse (mean ρ_max 1.1 and 1.2 in W, 1.5 and 2.0 in E). The measured joining count agrees with the exact class: about constant for bounded (about 7 to 9 knots at levels 10 to 12), growing by about 10 to 12 per level for polynomial, doubling per level for exponential. | exact class; computed joining | check |
-| 7 | **Late ends need growing joining.** Bounded patterns die only at level 3 (2 of E's 293); polynomial ones by level 6 (11 of 196); exponential ones first die at every level from 3 to 12 (15 of E's at levels 9 to 12). | computed, frozen | P4 held (21 qualifying descriptions) |
-| 8 | **Patterns can die and come back.** 48 descriptions (48 distinct patterns, all exponential, 2.6% of the 1,812 that die) are dead at a level and alive at a later one; 7 alternate with the parity of the level from level 5 on (one is alive at levels 1 to 3, 5, 7, 9 and 11 and dead at 4, 6, 8, 10 and 12). A level is not a growth: level n + 1 lies over level n two to one, and a two-fold lift of a dead pattern can live. | computed, frozen; rechecked by the thread with a second solver (Glucose) and its own pattern code: every one of the 48 confirmed (`recheck_returns.py`, `returns_recheck.json`) | **P2 failed** |
-| 9 | **The matched comparison is testable only where nothing dies.** With settled patterns excluded, one cell is eligible ([1.5, 2.1), bounded against exponential, 36 against 1,092 decided): Δ = −0.007 with undecided read as alive, −0.022 as dead, both "same". So H-dens shows no failure and H-bound fails by its frozen rule. But neither arm dies there (0 of 36; 8 of 1,092), and where deaths happen (ρ_max ≥ 2.1) no bounded or polynomial cell reaches 30 patterns. Descriptively, not tested: bounded patterns at ρ_max ≥ 2.1 end in 2 of 27, against about 9 expected at the exponential rates of the same bins; polynomial ones in 11 of 33, against about 12. | computed, frozen | H-dens: no failure observed; H-bound: fails (frozen rule); the question is open where deaths occur |
+| 5 | **Death rises with density (an association).** By knots per address (ρ_max, E's distinct patterns), the death share is 0 below 1.5, 0.24% in [1.5, 2.1), 7.4% in [2.1, 3), 23% in [3, 4.5) and 66% from 4.5 on, where a third still live through level 12. | computed, frozen | descriptive |
+| 6 | **Joining that can grow is the usual class; bounded joining is a minority and sparse.** By the relative maps' activity, 92% of W's (pattern, class) units (3,669 of 3,997 memberships over 3,990 patterns) and 94% of E's (8,444 of 8,952) are exponential; among W draws with a knot, 88% by weight are exponential, 7.9% bounded, 2.7% polynomial, 1.4% finitary. Bounded and polynomial patterns are sparse (mean ρ_max 1.1 and 1.2 in W, 1.5 and 2.0 in E). The measured joining averages by class at levels 10, 11, 12 (W): bounded 6.7, 6.7, 6.7; polynomial 58, 70, 83; exponential 1,169, 2,303, 4,558. Activity bounds joining only from above: one exponential-class pattern joins with a constant 4 knots. *(Narrowed after the referee from "rare", "doubling" and "typical".)* | exact class; computed joining | check |
+| 7 | **Late ends occurred only in the exponential class (an association within level 12).** Bounded patterns die only at level 3 (2 of E's 293); polynomial ones by level 6 (11 of 196); exponential ones first die at every level from 3 to 12 (15 of E's at levels 9 to 12). | computed, frozen | P4 held (21 qualifying descriptions) |
+| 8 | **Patterns can die and come back.** 48 descriptions (48 distinct patterns, all exponential, 2.6% of the 1,812 that die) are dead at a level and alive at a later one; 7 alternate with the parity of the level from level 5 on (one is alive at levels 1 to 3, 5, 7, 9 and 11 and dead at 4, 6, 8, 10 and 12). A level is not a growth: level n + 1 lies over level n two to one, and a two-fold lift of a dead pattern can live. | computed, frozen; **certified by the referee** (a checked refutation of a dead level and a verified state of a later live one, for all 48; all 84 levels of the seven, 53 live and 31 dead); the thread's Glucose recheck agreed but left 26 levels undecided. A return is an observed dead-then-live pair within level 12, not a permanent pattern (*narrowed after the referee*) | **P2 failed** |
+| 9 | **The matched comparison is testable only where nothing dies.** With settled patterns excluded, one cell is eligible ([1.5, 2.1), bounded against exponential, 36 against 1,092 decided): Δ = −0.007 with undecided read as alive, −0.022 as dead, both "same". So H-dens shows no failure and H-bound fails by its frozen rule. But few die there (0 of 36; 8 of 1,092), and where deaths happen (ρ_max ≥ 2.1) no bounded or polynomial cell reaches 30 patterns. Descriptively, not tested: bounded patterns at ρ_max ≥ 2.1 end in 2 of 27, against about 9 expected at the exponential rates of the same bins; polynomial ones in 11 of 33, against about 12. | computed, frozen | H-dens: no failure observed; H-bound: fails (frozen rule); the question is open where deaths occur |
 | 10 | **Checks.** Seven gates passed (V-act, V-rel, V-sat, V-B0, V-act-class, V-code, V-resume); the summary's units passed 37 checks; 287 level verdicts in 125 descriptions were undecided, 47 descriptions are FU; no two descriptions of one pattern gave conflicting decided verdicts. | computed | gates |
 
 ## Answer
 
-When nested parts know where they are through an automaton, growing joining is the typical case, not the exception: under a weighting
-by short descriptions almost every pattern's tail classes are joined to the rest by a number of knots that doubles with each level,
-and the bounded case, where every earlier nested result of the program lives, is a few percent. Most patterns live at every level
+When nested parts know where they are through an automaton, joining that can grow is the usual case: under a weighting by short
+descriptions most patterns are in the exponential activity class, whose tail classes were joined by about 1,169, 2,303 and 4,558
+knots on average at levels 10, 11 and 12 (W's patterns; activity bounds joining only from above), and the bounded class, where every
+earlier nested result of the program lives, is a minority (7.9% of the W draws with a knot, 3.7% of W's pattern-and-class units, 3.3%
+of E's). *(Narrowed after the referee from "almost every pattern ... doubles" and "a few percent".)* Most patterns live at every level
 read, three quarters of them for reasons settled by construction. Of the rest about one in five ends, never at once and sometimes
-late, and the late ends occur only where joining grows exponentially. Density explains most of who dies. Whether the growth of
+late, and within level 12 the late ends occurred only in the exponential class (an association). Death rises with density (an
+association). Whether the growth of
 joining matters once density is matched could be tested only where nothing dies, and there it changes nothing; where patterns do
 die, bounded ones are too few to test, though they died less often. A fourth fate appears that growth cannot have: a pattern can die
 at one level and live again at a later one, in seven cases alternating with the level's parity.
@@ -68,8 +73,8 @@ at one level and live again at a later one, in seven cases alternating with the 
 - **For the owner's harmonies.** The parity-alternating patterns are a harmony in the level: whether the pattern lives depends on
   the level's residue modulo 2, within level 12. They are not counters; whether they alternate at every level is open.
 - **For "parts that know where they are".** The automaton reading (A82) makes the owner's picture concrete and finitely described,
-  and under it the excluded case of the nested line, growing joining, is what is typical. The finitely ramified case that the program
-  studied before is rare under this weighting.
+  and under it the excluded case of the nested line, joining that can grow, is the usual class. The finitely ramified case that the
+  program studied before is a minority under this weighting (frequencies above).
 - **Growth of joining against density.** The frozen test could not separate them where it matters. The descriptive excess of bounded
   survival at high density fits the expected finite-state behaviour of bounded patterns (die early or never), but it is 27 patterns
   from few automata; it is not evidence that bounded patterns are typically more robust.
@@ -92,7 +97,7 @@ known-with-delta.
 
 ## Review
 
-Referee pending (the background referee thread). The advisor model was consulted twice before the freeze (design and spec,
+Refereed (ADDR-KNOTS-R1, confirmed with fixes; the referee thread with Codex, fresh code: fresh patterns, recomputed census cells, replayed certificates, relative classes recomputed on 80 units in agreement, a joining check; `referee-R1/`). The advisor model was consulted twice before the freeze (design and spec,
 `advisor_design_*.md`, `advisor_review_*.md`): B0's second proof, the rival prediction H-dens, the relative-map class, the settled
 exclusion and the expectation of returns are its; its view that higher-order recursion schemes give non-periodic fates is disputed in
 the proof note's §3 (unchecked).
@@ -119,7 +124,7 @@ not a correction.
 | This attempt — fates of knots placed by address maps | **Status:** Partially successful | Fates and classes read within level 12; returns found; the matched comparison testable only where nothing dies |
 | Local direction — address maps | Continue | Returns and late ends are new; bounded patterns too sparse in this language to test |
 | Broader exploration — G17 nested line | Known alternatives | Bartholdi's decidability side known; growing joining now read under a weighting |
-| Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | Growing joining is typical under this weighting, and fates can return across levels |
+| Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | Joining that can grow is the usual class under this weighting, and fates can return across levels |
 
 The attempt leaves open whether the growth of joining changes fates at matched density where patterns die, whether any return or
 alternation persists past level 12, and influence across levels, which this census did not read.
@@ -157,7 +162,7 @@ Folder: this one, the proof family `proofs/ADDR-KNOTS-20261113-001B/`, the code 
 `experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/`, the per-description records and
 draws in `artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/`. Proved: Lemma A, B0, first-letter
 settled, the Fano placement. Computed: everything in the census. Least sure: (a) Lemma A's profile for list knots whose members are
-also ports, and (b) the finite-types remark; (c) the relative-class computation through product automata with inverses (V-rel checks
+also ports, and (b) the finite-types remark; (c) the relative-class computation through product automata with inverses (*the referee: V-rel checks actions and V-act-class the letter maps, so neither gate validates the class computation; its own recomputation agreed on 80 units*; V-rel checks
 the action, not the class); (d) the returns rest on decided solver verdicts; the thread rechecked all 48 with Glucose and its own pattern code (knot
 counts equal at every level, every return confirmed), but a refutation is a solver's word, not a certificate;
 (e) the descriptive bounded excess in conclusion 9, from few automata.

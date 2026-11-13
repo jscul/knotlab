@@ -3,6 +3,19 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 13 November 2026: knots placed by address maps, confirmed by its referee, one sentence withdrawn
+
+- The census of knots placed by address maps (`ADDR-KNOTS-20261113-001`) was confirmed by its referee with fresh code: the fates, the
+  classes and the returns reproduce, and all 48 returns are now certified (a checked refutation of a dead level, then a checked state
+  of a later live one).
+- Withdrawn: the sentence that a tail class's inner knots are the same for every tail. A small automaton has tail classes with no inner
+  knot beside classes with two ([proof note](proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md)).
+- Narrowed: "rare" replaced by the frequencies (bounded joining is a minority, about 3 to 8% by the measure used); the exponential
+  activity class bounds joining only from above; density's link to death and the late ends' link to the exponential class are
+  associations; a return is an observed pair of levels, not a permanent pattern; and the finite-types remark holds for depth counted
+  in unfoldings ([decision note](research/ADDR-KNOTS-20261113-001/addr_knots.md)).
+- Unchanged: every count, B0 and Lemma A.
+
 ## 13 November 2026: a growing interface does not by itself escape finite state
 
 - The study of whether nested patterns can count (`NEST-COUNT-20261112-001`) read its results as "the size of the interface is what

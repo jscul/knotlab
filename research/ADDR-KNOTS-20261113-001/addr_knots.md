@@ -161,3 +161,15 @@ also ports, and (b) the finite-types remark; (c) the relative-class computation 
 the action, not the class); (d) the returns rest on decided solver verdicts; the thread rechecked all 48 with Glucose and its own pattern code (knot
 counts equal at every level, every return confirmed), but a refutation is a solver's word, not a certificate;
 (e) the descriptive bounded excess in conclusion 9, from few automata.
+
+## Final report as sent
+
+2026-11-13, about 22:25 UTC, to the owner in the project thread:
+
+> The census is done and published; the referee check is still pending. Under the short-description weighting, 94% of patterns
+> with a knot live through level 12, three quarters of them for reasons fixed by construction. Parts whose ties to the rest grow
+> every level are the typical case. One surprise: 48 patterns die at one level and come back at a later one, and seven of them
+> switch between alive and dead with the level's parity, a harmony in depth. I recommend chasing those next.
+
+The same hour, to the coordinator: the result list, both tables and the referee hand-off above, verbatim in substance (the
+coordinator's copy carries the five least-sure points of "Hand-off to the referee").

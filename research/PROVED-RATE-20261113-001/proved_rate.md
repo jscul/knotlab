@@ -2,7 +2,8 @@
 
 Epic `PROVED-RATE-20261113-001` (`BOND-DEPTH-20261112-001` direction 1; G17, with G1), 2026-11-13, at the coordinator's go-ahead;
 the first study computed by Codex from a frozen spec. Pre-registered with the spec in commit 43bc81620 before the run. The canonical
-K1–K3 test is unchanged. **Referee pending** (handed to the referee thread).
+K1–K3 test is unchanged. Refereed by the referee thread with Codex (PROVED-RATE-R1, `referee-R1/report.md`, commit 13515112d):
+**confirmed with fixes**, folded in below; three corrections logged (two Narrowing, one Not a block).
 
 ## Words
 
@@ -25,17 +26,17 @@ sufficient test for boundedness at every length.
 
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
-| 1 | **The graphs close and agree.** 655 of 664 graphs are complete (under two million nodes; 98.6% of the 653 with records), and the least ray bonds recomputed from them equal BOND-DEPTH's at every recorded depth (0 mismatches). | exact | G passed; P1 held |
-| 2 | **The ray bond provably grows linearly in 226 families (34%).** On a complete graph L_ray(s) ≥ λ(s − |V|) at every depth, with λ = 1/2 (91 + 4), 1 (62 + 2), 1/3 (36 + 4), 1/4, 1/6, 2 (4) and a few others per level. These are rates of ray bonds; the true least bond may be smaller through side branches. | proved per family | reported |
-| 3 | **Of the 240 that rose within depth 30, 214 grow (89%).** The other 26 have λ = 0: they rose early and then stopped, the same 26 that were constant between depths 20 and 30. | proved per family | P2 failed (90% registered) |
-| 4 | **The reach is bounded at every depth in 305 families (46%), and along a progression of depths in 112 more.** This transfers to the true least bond. Of the 163 flat within depth 30, 117 (72%) pass the every-depth test; the other 46 have λ = 0, so bounded along an arithmetic progression of depths, without the sufficient test. 12 families have no cycle that can still close: their ray bond vanishes. | proved per family | P3 failed (90% registered) |
+| 1 | **The graphs close and agree.** 655 of 664 graphs are complete (under two million nodes); of the 653 with records, 644 are complete (98.6%), and the least ray bonds recomputed from them equal BOND-DEPTH's at every recorded depth (0 mismatches). | exact | G passed; P1 held |
+| 2 | **The ray bond provably grows linearly in 226 families (34%).** On a complete graph L_ray(s) ≥ λ(s − t) at every depth, t the trimmed graph's size (the referee's sharpening), with λ the liminf of L_ray(s)/s: 1/2 (95), 1 (64), 1/3 (40), 1/4 (8), 1/6 (7), 2 (4) and others from 1/7 to 2. A linear lower bound with an additive constant, for ray bonds only; the true least bond may be smaller through side branches. | proved per family | reported |
+| 3 | **Of the 240 that rose within depth 30, 214 grow (89%).** The other 26 have λ = 0, the same 26 that were constant between depths 20 and 30; λ = 0 alone does not make them eventually constant (five were proved constant at 4 by BOND-DEPTH's referee). | proved per family | P2 failed (90% registered) |
+| 4 | **The reach is bounded in at least 361 families (54%).** 305 pass the every-depth test, which is sufficient only for every large enough depth and not necessary; the referee's exact test (residues modulo the least common multiple of the zero cycles' lengths, proved both ways, by Codex) certifies the 46 disputed flat families bounded at every depth from 1, by at most 4, and 10 more zero-mean families. This transfers to the true least bond. *"Bounded only along a progression" for the 46, first written here, is withdrawn.* 12 families have no ray bond at large depths (2 never have one, 10 lose it). | proved per family | P3 failed as frozen (it tested the predicate) |
 | 5 | **What is not reported: rates per length residue.** λ is the liminf over all lengths; the spec did not ask for a rate per residue, so a family could grow at different rates on different residues. | stated | — |
 
 ## Answer
 
-The law's reach inside these nested patterns now has proved long-run behaviour along a ray: in about a third of the 664 families it
-grows linearly at every depth, at one member per one to six levels (or two per level), and in about half it is bounded at every
-depth, which holds for the true bond too. Depth 30 had read the growth right in 214 of 240 rising families; 26 had only risen early.
+The law's reach inside these nested patterns now has proved long-run behaviour along a ray: in about a third of the 664 families
+the ray bond grows at least linearly (rates from 1/7 to 2 members per level, as a liminf, with an additive constant), and in at least
+361 it is bounded at every depth, which holds for the true bond too. Depth 30 had read the growth right in 214 of 240 rising families; 26 had only risen early.
 The growth is a property of ray-shaped bonds; whether side branches make the true bond shorter is open.
 
 ## Reading
@@ -63,7 +64,9 @@ other rays, rates per residue, or the full weighting.
 
 ## Review
 
-Referee pending (the referee thread). The advisor model reviewed the draft cold (`advisor_review_answer.md`): λ is a liminf and a
+**PROVED-RATE-R1** (the referee thread with Codex): the proofs are sound (L_ray(s) ≥ λ(s − t); λ the exact liminf; Karp on the
+trimmed graph; capped graphs prove no growth, positive witnesses transfer); a fresh-code recomputation of 95 families agrees on every
+field; the rates match the depth-512 sample; the batch history 508 + 92 + 64 is verified. Its fixes are made above. The advisor model reviewed the draft cold (`advisor_review_answer.md`): λ is a liminf and a
 lower-bound rate, λ = 0 alone shows boundedness only along a progression, a capped graph's λ is one-sided, and a ray rate says
 nothing about the true bond's growth.
 
@@ -82,13 +85,15 @@ Substantive: the proved rates for 655 families. Administrative: the spec, the pr
 
 ## Corrections
 
-None.
+Three, from the referee (`docs/CORRECTIONS.md`, 2026-11-13): **Narrowing**, boundedness (at least 361, not 305; the every-depth test is
+sufficient for large depths only); **Narrowing**, growth and absence worded as a ray-only liminf lower bound, rates 1/7 to 2;
+**Not a block**, 644 of 653 kept apart from 655 of 664.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — proved rates along a ray | **Status:** Partially successful (referee pending) | G, P1 held; P2 (89%) and P3 (72%) failed: growth proved in 226, boundedness at every depth in 305 |
+| This attempt — proved rates along a ray | **Status:** Partially successful (refereed, confirmed with fixes) | G, P1 held; P2 (89%) and P3 (as frozen) failed: growth proved in 226, boundedness in at least 361 |
 | Local direction — counting inside | Continue | The true bond's growth needs side branches |
 | Broader exploration — G17 | Searching | The full census waits on the side-branch method |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | The law's reach along a ray has proved long-run behaviour |

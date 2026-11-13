@@ -11,6 +11,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 13 November 2026: proved rates along a ray, narrowed by its referee
+
+- The proofs of the law's long-run reach along a ray (`PROVED-RATE-20261113-001`) were confirmed. More patterns are bounded than
+  first said: at least 361, not 305, since the test used was only sufficient; 46 called "bounded only along a progression" are
+  bounded at every depth. Growth is stated as what was proved: a lower bound along the ray, at rates from 1/7 to 2 per level
+  ([decision note](research/PROVED-RATE-20261113-001/proved_rate.md)).
+- Unchanged: every proved rate.
+
 ## 13 November 2026: counting inside, two claims withdrawn
 
 - The study of the law's reach inside nested patterns (`BOND-DEPTH-20261112-001`) was confirmed in its finite values but not in its

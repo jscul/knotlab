@@ -90,3 +90,18 @@ had seen the same case on the first branch. A bounded verdict is therefore split
 - **Reading.** P1 is reported as frozen, and next to it on uncarried boundedness. Only uncarried boundedness says the reach is
   genuinely short: a carried bond never crosses depth. Still open: one of main's own distinctions carried down by identity forever
   could also keep a bond local. It is not tested here and is stated as a limitation.
+
+## Second clarification, after Codex's first hand-off (2026-11-13; gate results seen, no class share)
+
+Codex's first hand-off (`handoff1_snapshot/`) built the DP and flagged eight ambiguities. Its G-last gate failed in 6 of 82 families,
+at depth 1 or 2: L_path exceeded the last-call ray. The cause was a flaw in my spec. "Start block unchanged" fixed the first step to
+main's first call, so the minimum did not run over every path. The fix and answers to all eight ambiguities are frozen in
+`codex_spec_addendum.md`:
+- the start chooses the entry too;
+- G-brute enumerates every path's ray CNF, with stated depths and endpoints;
+- fixed-index rays are (entry, call) pairs;
+- equivalent calls are duplicates or images under a port permutation that fixes the block's allowed states;
+- the population and its bootstrap over the whole archive are fixed;
+- the carried T-extension is to be built by Codex.
+
+The predictions and classes are unchanged. G-last's earlier failures are kept as evidence of the flaw.

@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "FREE-TARGET-20261114-001A-E001",
+ "ticket": "FREE-TARGET-20261114-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On the 66 every-path growers, does the least bond to any copy at depth s with members anywhere (L_any) grow, by forgetting certificates over every call, or stay bounded, by a fixed-size certificate along some path?",
+ "definitions": {"spec": "research/FREE-TARGET-20261114-001/codex_spec.md (sha256 5c58c1fc0ac75182525e1a2a70b3a92a08cc3e4821279e344081379e7fc38650), computed by Codex", "verdicts": "grows (forgetting test, exact on the finite semigroup) / bounded (fixed-size saturation with a choice per level, k <= 5) / unresolved"},
+ "public_inputs": {"code": "written by Codex in codex/ from the spec; EVERY-RAY's sample and code, BRANCH-DEPTH's proofs A and D and census code, TRUE-RATE's carried certificate read-only.", "run": "the shared runner (scripts/longrun.py), launched by the thread."},
+ "forbidden_inputs": ["Changing the spec, predictions or decision rules after seeing registered results"],
+ "primary_observable": "the verdict per family.",
+ "cheapest_meaningful_control": "independent re-derivation of the R_i and rectangularity; SAT witness checks; a mutant.",
+ "validation_gate": "G (a)-(d) of the pre-registration; any failure invalidates the run.",
+ "predictions": {"P1": "at least 22 of 66 forgetting-certified", "P2": "at least one bounded certificate"},
+ "stop_rule": "One Codex hand-off, one run by the thread on the shared runner, its summary; a hand-off to the referee thread; report.",
+ "runtime": "Unknown; registered as long-running."
+}

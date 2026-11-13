@@ -1,0 +1,8038 @@
+{
+  "all_required_pass": false,
+  "ambiguities": [
+    "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+    "For counts through least+1, may the validation-only multiplicity table use cost cap (least+1)-2, one above the production side cap if least=L_ray?",
+    "Which size ordering defines the smallest family: own count, description length, SELF count, or number of identities in the validation truncation?"
+  ],
+  "ambiguous_smallest_candidate": 914,
+  "brute_force": [
+    {
+      "h": 2,
+      "idx": 914,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 613,
+        "candidate_component_sizes": [
+          33
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 177,
+          "4": 2525
+        },
+        "candidates": 2708,
+        "candidates_pruned": 148,
+        "candidates_sat_tested": 2560,
+        "clauses": 90,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 15,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 234
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 33,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 234
+        },
+        "peak_mb": 43.453125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            4,
+            5,
+            11
+          ],
+          [
+            0,
+            4,
+            5,
+            12
+          ],
+          [
+            0,
+            4,
+            5,
+            17
+          ],
+          [
+            0,
+            4,
+            5,
+            18
+          ],
+          [
+            0,
+            4,
+            5,
+            19
+          ],
+          [
+            0,
+            4,
+            5,
+            20
+          ],
+          [
+            0,
+            4,
+            5,
+            21
+          ],
+          [
+            0,
+            4,
+            5,
+            22
+          ],
+          [
+            0,
+            4,
+            5,
+            23
+          ],
+          [
+            0,
+            4,
+            5,
+            24
+          ],
+          [
+            0,
+            5,
+            7,
+            9
+          ],
+          [
+            0,
+            5,
+            7,
+            10
+          ],
+          [
+            0,
+            5,
+            7,
+            11
+          ],
+          [
+            0,
+            5,
+            7,
+            12
+          ],
+          [
+            0,
+            5,
+            7,
+            13
+          ],
+          [
+            0,
+            5,
+            7,
+            14
+          ],
+          [
+            0,
+            5,
+            7,
+            21
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 20034,
+        "sat_seconds": 0.05758548399899155,
+        "seconds": 0.07325249898713082,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 914,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 13926,
+        "candidate_component_sizes": [
+          65
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 369,
+          "4": 11165,
+          "5": 221551
+        },
+        "candidates": 64584,
+        "candidates_pruned": 12000,
+        "candidates_sat_tested": 53043,
+        "clauses": 186,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 4,
+        "copies": 31,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 314
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 65,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 314,
+          "5": 3955
+        },
+        "peak_mb": 50.390625,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            4,
+            9
+          ],
+          [
+            0,
+            3,
+            7,
+            9
+          ],
+          [
+            0,
+            3,
+            8,
+            9
+          ],
+          [
+            0,
+            3,
+            9,
+            13
+          ],
+          [
+            0,
+            3,
+            9,
+            14
+          ],
+          [
+            0,
+            3,
+            9,
+            15
+          ],
+          [
+            0,
+            3,
+            9,
+            16
+          ],
+          [
+            0,
+            3,
+            9,
+            17
+          ],
+          [
+            0,
+            3,
+            9,
+            18
+          ],
+          [
+            0,
+            3,
+            9,
+            29
+          ],
+          [
+            0,
+            3,
+            9,
+            30
+          ],
+          [
+            0,
+            3,
+            9,
+            31
+          ],
+          [
+            0,
+            3,
+            9,
+            32
+          ],
+          [
+            0,
+            3,
+            9,
+            61
+          ],
+          [
+            0,
+            3,
+            9,
+            62
+          ],
+          [
+            0,
+            3,
+            9,
+            63
+          ],
+          [
+            0,
+            3,
+            9,
+            64
+          ],
+          [
+            0,
+            4,
+            6,
+            9
+          ],
+          [
+            0,
+            4,
+            9,
+            11
+          ],
+          [
+            0,
+            4,
+            9,
+            12
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 778884,
+        "sat_seconds": 4.382961761555634,
+        "seconds": 5.000179291004315,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          9,
+          10
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 914,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 2215,
+        "candidate_component_sizes": [
+          129
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 753,
+          "4": 46877,
+          "5": 1929999
+        },
+        "candidates": 60806,
+        "candidates_pruned": 2965,
+        "candidates_sat_tested": 58358,
+        "clauses": 378,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 4,
+        "copies": 63,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 166
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 129,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 166,
+          "5": 575
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            9,
+            17
+          ],
+          [
+            0,
+            4,
+            5,
+            17
+          ],
+          [
+            0,
+            4,
+            6,
+            17
+          ],
+          [
+            0,
+            4,
+            9,
+            17
+          ],
+          [
+            0,
+            4,
+            11,
+            17
+          ],
+          [
+            0,
+            4,
+            12,
+            17
+          ],
+          [
+            0,
+            4,
+            17,
+            21
+          ],
+          [
+            0,
+            4,
+            17,
+            22
+          ],
+          [
+            0,
+            4,
+            17,
+            23
+          ],
+          [
+            0,
+            4,
+            17,
+            24
+          ],
+          [
+            0,
+            4,
+            17,
+            45
+          ],
+          [
+            0,
+            4,
+            17,
+            46
+          ],
+          [
+            0,
+            4,
+            17,
+            47
+          ],
+          [
+            0,
+            4,
+            17,
+            48
+          ],
+          [
+            0,
+            4,
+            17,
+            93
+          ],
+          [
+            0,
+            4,
+            17,
+            94
+          ],
+          [
+            0,
+            4,
+            17,
+            95
+          ],
+          [
+            0,
+            4,
+            17,
+            96
+          ],
+          [
+            0,
+            5,
+            9,
+            17
+          ],
+          [
+            0,
+            5,
+            11,
+            17
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 550542,
+        "sat_seconds": 4.576796194654889,
+        "seconds": 5.000197452027351,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          17,
+          18
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 709,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 819,
+        "candidate_component_sizes": [
+          33
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 177,
+          "4": 2525
+        },
+        "candidates": 2708,
+        "candidates_pruned": 1050,
+        "candidates_sat_tested": 1770,
+        "clauses": 120,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 15,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 15,
+          "4": 305
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 33,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 15,
+          "4": 305
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            5,
+            7
+          ],
+          [
+            1,
+            5,
+            9
+          ],
+          [
+            1,
+            5,
+            19
+          ],
+          [
+            1,
+            5,
+            24
+          ],
+          [
+            1,
+            5,
+            31
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            1,
+            6,
+            19
+          ],
+          [
+            1,
+            6,
+            24
+          ],
+          [
+            1,
+            6,
+            31
+          ],
+          [
+            2,
+            5,
+            15
+          ],
+          [
+            2,
+            5,
+            27
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            0,
+            2,
+            5
+          ],
+          [
+            0,
+            3,
+            5,
+            8
+          ],
+          [
+            0,
+            3,
+            5,
+            13
+          ],
+          [
+            0,
+            3,
+            5,
+            14
+          ],
+          [
+            0,
+            3,
+            5,
+            24
+          ],
+          [
+            0,
+            3,
+            5,
+            25
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 13571,
+        "sat_seconds": 0.03556654800195247,
+        "seconds": 0.04967228800524026,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 709,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 1821,
+        "candidate_component_sizes": [
+          65
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 369,
+          "4": 11165
+        },
+        "candidates": 11540,
+        "candidates_pruned": 2874,
+        "candidates_sat_tested": 9161,
+        "clauses": 248,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 31,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 13,
+          "4": 694
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 65,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 13,
+          "4": 694
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 2,
+        "sample_bonds": [
+          [
+            1,
+            3,
+            9
+          ],
+          [
+            1,
+            4,
+            9
+          ],
+          [
+            1,
+            5,
+            9
+          ],
+          [
+            1,
+            9,
+            19
+          ],
+          [
+            1,
+            9,
+            24
+          ],
+          [
+            1,
+            9,
+            31
+          ],
+          [
+            1,
+            9,
+            35
+          ],
+          [
+            1,
+            9,
+            39
+          ],
+          [
+            1,
+            9,
+            40
+          ],
+          [
+            1,
+            9,
+            45
+          ],
+          [
+            1,
+            9,
+            46
+          ],
+          [
+            1,
+            9,
+            47
+          ],
+          [
+            1,
+            9,
+            59
+          ],
+          [
+            0,
+            3,
+            9,
+            24
+          ],
+          [
+            0,
+            3,
+            9,
+            45
+          ],
+          [
+            0,
+            3,
+            9,
+            46
+          ],
+          [
+            0,
+            4,
+            7,
+            9
+          ],
+          [
+            0,
+            4,
+            9,
+            16
+          ],
+          [
+            0,
+            4,
+            9,
+            29
+          ],
+          [
+            0,
+            4,
+            9,
+            30
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 70779,
+        "sat_seconds": 0.315484705963172,
+        "seconds": 0.3816334930015728,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          9,
+          10
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 709,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 4772,
+        "candidate_component_sizes": [
+          129
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 753,
+          "4": 46877,
+          "5": 1929999
+        },
+        "candidates": 79302,
+        "candidates_pruned": 26908,
+        "candidates_sat_tested": 53836,
+        "clauses": 504,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 4,
+        "copies": 63,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1501
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 129,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1501,
+          "5": 350
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            17,
+            24
+          ],
+          [
+            0,
+            3,
+            17,
+            45
+          ],
+          [
+            0,
+            3,
+            17,
+            46
+          ],
+          [
+            0,
+            3,
+            17,
+            89
+          ],
+          [
+            0,
+            4,
+            7,
+            17
+          ],
+          [
+            0,
+            4,
+            11,
+            17
+          ],
+          [
+            0,
+            4,
+            16,
+            17
+          ],
+          [
+            0,
+            4,
+            17,
+            23
+          ],
+          [
+            0,
+            4,
+            17,
+            24
+          ],
+          [
+            0,
+            4,
+            17,
+            29
+          ],
+          [
+            0,
+            4,
+            17,
+            30
+          ],
+          [
+            0,
+            4,
+            17,
+            43
+          ],
+          [
+            0,
+            4,
+            17,
+            45
+          ],
+          [
+            0,
+            4,
+            17,
+            46
+          ],
+          [
+            0,
+            4,
+            17,
+            51
+          ],
+          [
+            0,
+            4,
+            17,
+            57
+          ],
+          [
+            0,
+            4,
+            17,
+            63
+          ],
+          [
+            0,
+            4,
+            17,
+            83
+          ],
+          [
+            0,
+            4,
+            17,
+            87
+          ],
+          [
+            0,
+            4,
+            17,
+            89
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 520176,
+        "sat_seconds": 4.518445742432959,
+        "seconds": 5.0001802609767765,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          17,
+          18
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 212,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 2,
+        "candidate_component_sizes": [
+          25
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 2,
+          "3": 45,
+          "4": 484
+        },
+        "candidates": 531,
+        "candidates_pruned": 44,
+        "candidates_sat_tested": 487,
+        "clauses": 80,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            2,
+            5,
+            6
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 3704,
+        "sat_seconds": 0.009108501602895558,
+        "seconds": 0.012462184997275472,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 212,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 2,
+        "candidate_component_sizes": [
+          49
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 2,
+          "3": 93,
+          "4": 2116
+        },
+        "candidates": 2211,
+        "candidates_pruned": 92,
+        "candidates_sat_tested": 2119,
+        "clauses": 242,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 2,
+        "sample_bonds": [
+          [
+            1,
+            11,
+            12
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 16568,
+        "sat_seconds": 0.0857681492343545,
+        "seconds": 0.09856856195256114,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 212,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 0,
+        "candidate_component_sizes": [
+          253
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 2,
+          "3": 501,
+          "4": 62500
+        },
+        "candidates": 44157,
+        "candidates_pruned": 10,
+        "candidates_sat_tested": 44147,
+        "clauses": 728,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": null,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [],
+        "sat_call_limit": 2000000,
+        "sat_calls": 351154,
+        "sat_seconds": 4.739713353686966,
+        "seconds": 5.000216854037717,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 911,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 80,
+        "candidate_component_sizes": [
+          56
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 315,
+          "4": 8114
+        },
+        "candidates": 8435,
+        "candidates_pruned": 202,
+        "candidates_sat_tested": 8233,
+        "clauses": 80,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 34
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 34
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            6,
+            16
+          ],
+          [
+            2,
+            5,
+            14
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            0,
+            4,
+            5,
+            14
+          ],
+          [
+            0,
+            5,
+            8,
+            12
+          ],
+          [
+            0,
+            3,
+            4,
+            6
+          ],
+          [
+            0,
+            3,
+            6,
+            22
+          ],
+          [
+            0,
+            4,
+            6,
+            8
+          ],
+          [
+            0,
+            4,
+            6,
+            22
+          ],
+          [
+            0,
+            6,
+            8,
+            22
+          ],
+          [
+            0,
+            6,
+            42,
+            44
+          ],
+          [
+            2,
+            3,
+            5,
+            34
+          ],
+          [
+            2,
+            3,
+            5,
+            40
+          ],
+          [
+            2,
+            5,
+            12,
+            40
+          ],
+          [
+            2,
+            5,
+            36,
+            38
+          ],
+          [
+            2,
+            4,
+            6,
+            8
+          ],
+          [
+            2,
+            4,
+            6,
+            16
+          ],
+          [
+            2,
+            4,
+            6,
+            22
+          ],
+          [
+            2,
+            6,
+            7,
+            20
+          ],
+          [
+            2,
+            6,
+            8,
+            16
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 64712,
+        "sat_seconds": 0.24956946866586804,
+        "seconds": 0.2979810870019719,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 911,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 30,
+        "candidate_component_sizes": [
+          164
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 963,
+          "4": 76802
+        },
+        "candidates": 77771,
+        "candidates_pruned": 240,
+        "candidates_sat_tested": 77531,
+        "clauses": 242,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 14
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 14
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 2,
+        "sample_bonds": [
+          [
+            2,
+            12,
+            34
+          ],
+          [
+            0,
+            8,
+            11,
+            32
+          ],
+          [
+            0,
+            4,
+            12,
+            34
+          ],
+          [
+            0,
+            5,
+            8,
+            12
+          ],
+          [
+            2,
+            6,
+            11,
+            32
+          ],
+          [
+            2,
+            11,
+            14,
+            30
+          ],
+          [
+            2,
+            3,
+            12,
+            14
+          ],
+          [
+            2,
+            3,
+            12,
+            40
+          ],
+          [
+            2,
+            5,
+            6,
+            12
+          ],
+          [
+            2,
+            5,
+            12,
+            40
+          ],
+          [
+            2,
+            6,
+            12,
+            14
+          ],
+          [
+            2,
+            6,
+            12,
+            40
+          ],
+          [
+            2,
+            12,
+            14,
+            40
+          ],
+          [
+            2,
+            12,
+            96,
+            98
+          ],
+          [
+            2,
+            11,
+            12,
+            100
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 616438,
+        "sat_seconds": 4.1981046192813665,
+        "seconds": 4.632869182038121,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 911,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 0,
+        "candidate_component_sizes": [
+          488
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 2907,
+          "4": 702770
+        },
+        "candidates": 32766,
+        "candidates_pruned": 13,
+        "candidates_sat_tested": 32753,
+        "clauses": 728,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": null,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [],
+        "sat_call_limit": 2000000,
+        "sat_calls": 250360,
+        "sat_seconds": 4.808851002366282,
+        "seconds": 5.000195889966562,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 339,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 616,
+        "candidate_component_sizes": [
+          83
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 477,
+          "4": 18725
+        },
+        "candidates": 19208,
+        "candidates_pruned": 311,
+        "candidates_sat_tested": 18935,
+        "clauses": 160,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 2,
+          "4": 256
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 2,
+          "4": 256
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            0,
+            6,
+            9,
+            15
+          ],
+          [
+            0,
+            6,
+            9,
+            16
+          ],
+          [
+            0,
+            6,
+            9,
+            41
+          ],
+          [
+            0,
+            6,
+            9,
+            42
+          ],
+          [
+            0,
+            6,
+            9,
+            43
+          ],
+          [
+            0,
+            6,
+            9,
+            44
+          ],
+          [
+            0,
+            6,
+            10,
+            15
+          ],
+          [
+            0,
+            6,
+            10,
+            16
+          ],
+          [
+            0,
+            6,
+            10,
+            41
+          ],
+          [
+            0,
+            6,
+            10,
+            42
+          ],
+          [
+            0,
+            6,
+            10,
+            43
+          ],
+          [
+            0,
+            6,
+            10,
+            44
+          ],
+          [
+            0,
+            6,
+            15,
+            23
+          ],
+          [
+            0,
+            6,
+            15,
+            24
+          ],
+          [
+            0,
+            6,
+            15,
+            25
+          ],
+          [
+            0,
+            6,
+            15,
+            26
+          ],
+          [
+            0,
+            6,
+            15,
+            67
+          ],
+          [
+            0,
+            6,
+            15,
+            68
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 150063,
+        "sat_seconds": 0.5842139896703884,
+        "seconds": 0.6874897719826549,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 339,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 0,
+        "candidate_component_sizes": [
+          245
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 1449,
+          "4": 174245
+        },
+        "candidates": 56051,
+        "candidates_pruned": 100,
+        "candidates_sat_tested": 55991,
+        "clauses": 484,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": null,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [],
+        "sat_call_limit": 2000000,
+        "sat_calls": 441950,
+        "sat_seconds": 4.673752121045254,
+        "seconds": 5.000144361983985,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 339,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 0,
+        "candidate_component_sizes": [
+          731
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 4365,
+          "4": 1585589
+        },
+        "candidates": 21197,
+        "candidates_pruned": 57,
+        "candidates_sat_tested": 21192,
+        "clauses": 1456,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": null,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [],
+        "sat_call_limit": 2000000,
+        "sat_calls": 151762,
+        "sat_seconds": 4.875276491744444,
+        "seconds": 5.0005262980703264,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 475,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 140,
+        "candidate_component_sizes": [
+          83
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 477,
+          "4": 18725
+        },
+        "candidates": 19208,
+        "candidates_pruned": 382,
+        "candidates_sat_tested": 18826,
+        "clauses": 160,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 58
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 58
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            6,
+            42
+          ],
+          [
+            0,
+            6,
+            44
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            2,
+            6
+          ],
+          [
+            0,
+            3,
+            5,
+            36
+          ],
+          [
+            0,
+            3,
+            5,
+            38
+          ],
+          [
+            0,
+            5,
+            16,
+            42
+          ],
+          [
+            0,
+            5,
+            16,
+            44
+          ],
+          [
+            0,
+            5,
+            30,
+            36
+          ],
+          [
+            0,
+            5,
+            30,
+            38
+          ],
+          [
+            0,
+            5,
+            32,
+            36
+          ],
+          [
+            0,
+            5,
+            32,
+            38
+          ],
+          [
+            0,
+            5,
+            41,
+            42
+          ],
+          [
+            0,
+            5,
+            43,
+            44
+          ],
+          [
+            0,
+            3,
+            6,
+            12
+          ],
+          [
+            0,
+            3,
+            6,
+            14
+          ],
+          [
+            0,
+            3,
+            6,
+            30
+          ],
+          [
+            0,
+            3,
+            6,
+            32
+          ],
+          [
+            0,
+            4,
+            6,
+            18
+          ],
+          [
+            0,
+            4,
+            6,
+            20
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 148921,
+        "sat_seconds": 0.4738878768403083,
+        "seconds": 0.5809297719970345,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 475,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 33,
+        "candidate_component_sizes": [
+          245
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 1449,
+          "4": 174245
+        },
+        "candidates": 81523,
+        "candidates_pruned": 65,
+        "candidates_sat_tested": 81458,
+        "clauses": 484,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 4
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 14
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [
+          [
+            2,
+            3,
+            12
+          ],
+          [
+            2,
+            12,
+            96
+          ],
+          [
+            2,
+            12,
+            98
+          ],
+          [
+            2,
+            11,
+            12
+          ],
+          [
+            0,
+            6,
+            11,
+            84
+          ],
+          [
+            0,
+            6,
+            11,
+            86
+          ],
+          [
+            0,
+            3,
+            6,
+            12
+          ],
+          [
+            0,
+            3,
+            8,
+            12
+          ],
+          [
+            0,
+            3,
+            12,
+            36
+          ],
+          [
+            0,
+            3,
+            12,
+            38
+          ],
+          [
+            0,
+            6,
+            12,
+            36
+          ],
+          [
+            0,
+            6,
+            12,
+            38
+          ],
+          [
+            0,
+            6,
+            12,
+            90
+          ],
+          [
+            0,
+            6,
+            12,
+            92
+          ],
+          [
+            0,
+            6,
+            12,
+            96
+          ],
+          [
+            0,
+            6,
+            12,
+            98
+          ],
+          [
+            0,
+            8,
+            12,
+            96
+          ],
+          [
+            0,
+            8,
+            12,
+            98
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 645922,
+        "sat_seconds": 4.539257400203496,
+        "seconds": 5.000180504983291,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 475,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 0,
+        "candidate_component_sizes": [
+          731
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 4365,
+          "4": 1585589
+        },
+        "candidates": 32145,
+        "candidates_pruned": 16,
+        "candidates_sat_tested": 32129,
+        "clauses": 1456,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": null,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [],
+        "sat_call_limit": 2000000,
+        "sat_calls": 239537,
+        "sat_seconds": 4.81386145146098,
+        "seconds": 5.000197312911041,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 618,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 401,
+        "candidate_component_sizes": [
+          83
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 477,
+          "4": 18725
+        },
+        "candidates": 19208,
+        "candidates_pruned": 358,
+        "candidates_sat_tested": 18860,
+        "clauses": 160,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 174
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 174
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            0,
+            5,
+            15
+          ],
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            3,
+            5,
+            10
+          ],
+          [
+            0,
+            3,
+            5,
+            11
+          ],
+          [
+            0,
+            3,
+            5,
+            23
+          ],
+          [
+            0,
+            3,
+            5,
+            25
+          ],
+          [
+            0,
+            3,
+            5,
+            34
+          ],
+          [
+            0,
+            3,
+            5,
+            41
+          ],
+          [
+            0,
+            3,
+            5,
+            46
+          ],
+          [
+            0,
+            3,
+            5,
+            76
+          ],
+          [
+            0,
+            5,
+            7,
+            22
+          ],
+          [
+            0,
+            5,
+            7,
+            61
+          ],
+          [
+            0,
+            5,
+            8,
+            20
+          ],
+          [
+            0,
+            5,
+            8,
+            53
+          ],
+          [
+            0,
+            5,
+            8,
+            55
+          ],
+          [
+            0,
+            5,
+            10,
+            46
+          ],
+          [
+            0,
+            5,
+            11,
+            33
+          ],
+          [
+            0,
+            5,
+            11,
+            46
+          ],
+          [
+            0,
+            5,
+            13,
+            16
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 149659,
+        "sat_seconds": 0.5802650625118986,
+        "seconds": 0.6876747440546751,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 618,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 92,
+        "candidate_component_sizes": [
+          245
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 1449,
+          "4": 174245
+        },
+        "candidates": 65227,
+        "candidates_pruned": 69,
+        "candidates_sat_tested": 65165,
+        "clauses": 484,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 46
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            4,
+            11
+          ],
+          [
+            0,
+            3,
+            5,
+            11
+          ],
+          [
+            0,
+            3,
+            11,
+            30
+          ],
+          [
+            0,
+            3,
+            11,
+            34
+          ],
+          [
+            0,
+            3,
+            11,
+            85
+          ],
+          [
+            0,
+            3,
+            11,
+            95
+          ],
+          [
+            0,
+            3,
+            11,
+            97
+          ],
+          [
+            0,
+            4,
+            11,
+            34
+          ],
+          [
+            0,
+            4,
+            11,
+            95
+          ],
+          [
+            0,
+            4,
+            11,
+            97
+          ],
+          [
+            0,
+            4,
+            11,
+            100
+          ],
+          [
+            0,
+            5,
+            6,
+            11
+          ],
+          [
+            0,
+            5,
+            11,
+            33
+          ],
+          [
+            0,
+            5,
+            11,
+            46
+          ],
+          [
+            0,
+            5,
+            11,
+            95
+          ],
+          [
+            0,
+            5,
+            11,
+            100
+          ],
+          [
+            0,
+            5,
+            11,
+            131
+          ],
+          [
+            0,
+            5,
+            11,
+            133
+          ],
+          [
+            0,
+            6,
+            11,
+            34
+          ],
+          [
+            0,
+            6,
+            11,
+            95
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 515738,
+        "sat_seconds": 4.621547099086456,
+        "seconds": 5.000184118980542,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 618,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 4,
+        "candidate_component_sizes": [
+          731
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 4365,
+          "4": 1585589
+        },
+        "candidates": 26702,
+        "candidates_pruned": 23,
+        "candidates_sat_tested": 26685,
+        "clauses": 1456,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            12,
+            29
+          ],
+          [
+            0,
+            3,
+            29,
+            87
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 195971,
+        "sat_seconds": 4.842321130563505,
+        "seconds": 5.0001904249656945,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 769,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 142,
+        "candidate_component_sizes": [
+          83
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 477,
+          "4": 18725
+        },
+        "candidates": 19208,
+        "candidates_pruned": 505,
+        "candidates_sat_tested": 18724,
+        "clauses": 160,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 54
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 5,
+          "4": 54
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            0,
+            5,
+            15
+          ],
+          [
+            0,
+            5,
+            16
+          ],
+          [
+            0,
+            5,
+            46
+          ],
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            5,
+            7,
+            21
+          ],
+          [
+            0,
+            5,
+            7,
+            64
+          ],
+          [
+            0,
+            5,
+            21,
+            22
+          ],
+          [
+            0,
+            5,
+            21,
+            59
+          ],
+          [
+            0,
+            5,
+            21,
+            60
+          ],
+          [
+            0,
+            5,
+            21,
+            61
+          ],
+          [
+            0,
+            5,
+            21,
+            62
+          ],
+          [
+            0,
+            5,
+            22,
+            64
+          ],
+          [
+            0,
+            5,
+            27,
+            28
+          ],
+          [
+            0,
+            5,
+            27,
+            77
+          ],
+          [
+            0,
+            5,
+            27,
+            78
+          ],
+          [
+            0,
+            5,
+            27,
+            79
+          ],
+          [
+            0,
+            5,
+            27,
+            80
+          ],
+          [
+            0,
+            5,
+            41,
+            42
+          ],
+          [
+            0,
+            5,
+            43,
+            44
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 147920,
+        "sat_seconds": 0.654342454043217,
+        "seconds": 0.7588970909127966,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 769,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 48,
+        "candidate_component_sizes": [
+          245
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 1449,
+          "4": 174245
+        },
+        "candidates": 46847,
+        "candidates_pruned": 79,
+        "candidates_sat_tested": 46799,
+        "clauses": 484,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 21
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            11,
+            29
+          ],
+          [
+            0,
+            3,
+            11,
+            30
+          ],
+          [
+            0,
+            3,
+            11,
+            31
+          ],
+          [
+            0,
+            3,
+            11,
+            32
+          ],
+          [
+            0,
+            3,
+            11,
+            33
+          ],
+          [
+            0,
+            3,
+            11,
+            34
+          ],
+          [
+            0,
+            3,
+            11,
+            88
+          ],
+          [
+            0,
+            3,
+            11,
+            94
+          ],
+          [
+            0,
+            3,
+            11,
+            100
+          ],
+          [
+            0,
+            4,
+            11,
+            15
+          ],
+          [
+            0,
+            4,
+            11,
+            16
+          ],
+          [
+            0,
+            4,
+            11,
+            46
+          ],
+          [
+            0,
+            11,
+            15,
+            34
+          ],
+          [
+            0,
+            11,
+            16,
+            34
+          ],
+          [
+            0,
+            11,
+            34,
+            46
+          ],
+          [
+            0,
+            3,
+            12,
+            33
+          ],
+          [
+            0,
+            3,
+            12,
+            34
+          ],
+          [
+            0,
+            3,
+            12,
+            100
+          ],
+          [
+            0,
+            4,
+            12,
+            15
+          ],
+          [
+            0,
+            4,
+            12,
+            16
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 368471,
+        "sat_seconds": 4.714818939915858,
+        "seconds": 5.0002487659221515,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 769,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 14,
+        "candidate_component_sizes": [
+          731
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 4365,
+          "4": 1585589
+        },
+        "candidates": 18392,
+        "candidates_pruned": 31,
+        "candidates_sat_tested": 18381,
+        "clauses": 1456,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 7
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            11,
+            29
+          ],
+          [
+            0,
+            3,
+            29,
+            33
+          ],
+          [
+            0,
+            3,
+            29,
+            34
+          ],
+          [
+            0,
+            3,
+            29,
+            87
+          ],
+          [
+            0,
+            3,
+            29,
+            88
+          ],
+          [
+            0,
+            3,
+            29,
+            100
+          ],
+          [
+            0,
+            3,
+            29,
+            262
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 129464,
+        "sat_seconds": 4.8918290317524225,
+        "seconds": 5.000181669020094,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 1148,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 137,
+        "candidate_component_sizes": [
+          83
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 477,
+          "4": 18725
+        },
+        "candidates": 19208,
+        "candidates_pruned": 575,
+        "candidates_sat_tested": 18643,
+        "clauses": 160,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 6,
+          "4": 58
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 6,
+          "4": 58
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            0,
+            5,
+            13
+          ],
+          [
+            0,
+            5,
+            33
+          ],
+          [
+            1,
+            5,
+            45
+          ],
+          [
+            1,
+            6,
+            11
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            5,
+            7,
+            8
+          ],
+          [
+            0,
+            5,
+            7,
+            9
+          ],
+          [
+            0,
+            5,
+            7,
+            19
+          ],
+          [
+            0,
+            5,
+            7,
+            45
+          ],
+          [
+            0,
+            5,
+            7,
+            51
+          ],
+          [
+            0,
+            5,
+            9,
+            11
+          ],
+          [
+            0,
+            5,
+            9,
+            15
+          ],
+          [
+            0,
+            5,
+            9,
+            45
+          ],
+          [
+            0,
+            5,
+            11,
+            45
+          ],
+          [
+            0,
+            5,
+            12,
+            29
+          ],
+          [
+            0,
+            5,
+            12,
+            31
+          ],
+          [
+            0,
+            5,
+            14,
+            37
+          ],
+          [
+            0,
+            5,
+            15,
+            16
+          ],
+          [
+            0,
+            5,
+            15,
+            41
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 147410,
+        "sat_seconds": 0.5242009210633114,
+        "seconds": 0.6253226030385122,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 1148,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 81,
+        "candidate_component_sizes": [
+          245
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 1449,
+          "4": 174245
+        },
+        "candidates": 69167,
+        "candidates_pruned": 625,
+        "candidates_sat_tested": 68559,
+        "clauses": 484,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 4
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 4,
+          "4": 37
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [
+          [
+            1,
+            6,
+            11
+          ],
+          [
+            1,
+            11,
+            31
+          ],
+          [
+            1,
+            11,
+            87
+          ],
+          [
+            1,
+            11,
+            12
+          ],
+          [
+            0,
+            5,
+            9,
+            11
+          ],
+          [
+            0,
+            5,
+            11,
+            45
+          ],
+          [
+            0,
+            5,
+            11,
+            93
+          ],
+          [
+            0,
+            5,
+            11,
+            99
+          ],
+          [
+            0,
+            6,
+            9,
+            11
+          ],
+          [
+            0,
+            6,
+            11,
+            45
+          ],
+          [
+            0,
+            9,
+            11,
+            31
+          ],
+          [
+            0,
+            9,
+            11,
+            45
+          ],
+          [
+            0,
+            9,
+            11,
+            87
+          ],
+          [
+            0,
+            5,
+            12,
+            29
+          ],
+          [
+            0,
+            5,
+            12,
+            31
+          ],
+          [
+            0,
+            5,
+            12,
+            87
+          ],
+          [
+            1,
+            4,
+            11,
+            13
+          ],
+          [
+            1,
+            4,
+            11,
+            29
+          ],
+          [
+            1,
+            4,
+            11,
+            33
+          ],
+          [
+            1,
+            5,
+            9,
+            11
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 542762,
+        "sat_seconds": 4.605523872189224,
+        "seconds": 5.000197288929485,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 1148,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 8,
+        "candidate_component_sizes": [
+          731
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 4365,
+          "4": 1585589
+        },
+        "candidates": 27627,
+        "candidates_pruned": 24,
+        "candidates_sat_tested": 27612,
+        "clauses": 1456,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 4
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [
+          [
+            0,
+            5,
+            12,
+            29
+          ],
+          [
+            0,
+            5,
+            29,
+            85
+          ],
+          [
+            0,
+            5,
+            29,
+            249
+          ],
+          [
+            0,
+            5,
+            29,
+            261
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 203383,
+        "sat_seconds": 4.836634787614457,
+        "seconds": 5.000209882971831,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 22,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 306,
+        "candidate_component_sizes": [
+          83
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 477,
+          "4": 18725
+        },
+        "candidates": 19208,
+        "candidates_pruned": 865,
+        "candidates_sat_tested": 18359,
+        "clauses": 240,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 40,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 9,
+          "4": 111
+        },
+        "depth": 3,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 2,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 83,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 9,
+          "4": 111
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            0,
+            4,
+            6
+          ],
+          [
+            0,
+            6,
+            13
+          ],
+          [
+            0,
+            6,
+            14
+          ],
+          [
+            0,
+            6,
+            35
+          ],
+          [
+            0,
+            6,
+            36
+          ],
+          [
+            0,
+            6,
+            39
+          ],
+          [
+            0,
+            6,
+            40
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            3,
+            5,
+            11
+          ],
+          [
+            0,
+            3,
+            5,
+            12
+          ],
+          [
+            0,
+            3,
+            5,
+            29
+          ],
+          [
+            0,
+            3,
+            5,
+            30
+          ],
+          [
+            0,
+            3,
+            5,
+            33
+          ],
+          [
+            0,
+            3,
+            5,
+            34
+          ],
+          [
+            0,
+            5,
+            10,
+            23
+          ],
+          [
+            0,
+            5,
+            10,
+            24
+          ],
+          [
+            0,
+            5,
+            10,
+            69
+          ],
+          [
+            0,
+            5,
+            10,
+            70
+          ],
+          [
+            0,
+            5,
+            13,
+            35
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 145215,
+        "sat_seconds": 0.5142499810317531,
+        "seconds": 0.6165517959743738,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 22,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 100,
+        "candidate_component_sizes": [
+          245
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 1449,
+          "4": 174245
+        },
+        "candidates": 65988,
+        "candidates_pruned": 169,
+        "candidates_sat_tested": 65859,
+        "clauses": 726,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 121,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 245,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 43
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            4,
+            11
+          ],
+          [
+            0,
+            3,
+            5,
+            11
+          ],
+          [
+            0,
+            3,
+            11,
+            13
+          ],
+          [
+            0,
+            3,
+            11,
+            14
+          ],
+          [
+            0,
+            3,
+            11,
+            35
+          ],
+          [
+            0,
+            3,
+            11,
+            36
+          ],
+          [
+            0,
+            3,
+            11,
+            39
+          ],
+          [
+            0,
+            3,
+            11,
+            40
+          ],
+          [
+            0,
+            3,
+            11,
+            105
+          ],
+          [
+            0,
+            3,
+            11,
+            106
+          ],
+          [
+            0,
+            3,
+            11,
+            113
+          ],
+          [
+            0,
+            3,
+            11,
+            114
+          ],
+          [
+            0,
+            3,
+            11,
+            117
+          ],
+          [
+            0,
+            3,
+            11,
+            118
+          ],
+          [
+            0,
+            3,
+            4,
+            12
+          ],
+          [
+            0,
+            3,
+            5,
+            12
+          ],
+          [
+            0,
+            3,
+            12,
+            13
+          ],
+          [
+            0,
+            3,
+            12,
+            14
+          ],
+          [
+            0,
+            3,
+            12,
+            29
+          ],
+          [
+            0,
+            3,
+            12,
+            30
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 521125,
+        "sat_seconds": 4.621019269572571,
+        "seconds": 5.000185023061931,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          11,
+          12
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 2,
+      "idx": 22,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 10,
+        "candidate_component_sizes": [
+          731
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 4365,
+          "4": 1585589
+        },
+        "candidates": 25338,
+        "candidates_pruned": 61,
+        "candidates_sat_tested": 25311,
+        "clauses": 2184,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 364,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 2,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 731,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 5
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            5,
+            29
+          ],
+          [
+            0,
+            3,
+            6,
+            29
+          ],
+          [
+            0,
+            3,
+            12,
+            29
+          ],
+          [
+            0,
+            4,
+            12,
+            29
+          ],
+          [
+            0,
+            6,
+            12,
+            29
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 184902,
+        "sat_seconds": 4.847169364802539,
+        "seconds": 5.000195209984668,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          29,
+          30
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": false,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 3,
+      "idx": 914,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 1,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 1343,
+        "candidate_component_sizes": [
+          65
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 369,
+          "4": 11165
+        },
+        "candidates": 11540,
+        "candidates_pruned": 269,
+        "candidates_sat_tested": 11271,
+        "clauses": 186,
+        "complement_symmetry": true,
+        "complete": true,
+        "complete_through": 4,
+        "copies": 31,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 527
+        },
+        "depth": 4,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 3,
+        "least": 3,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 65,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 527
+        },
+        "peak_mb": 52.828125,
+        "reason": "requested_sizes_exhausted",
+        "s": 1,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            0,
+            4,
+            5,
+            11
+          ],
+          [
+            0,
+            4,
+            5,
+            12
+          ],
+          [
+            0,
+            4,
+            5,
+            17
+          ],
+          [
+            0,
+            4,
+            5,
+            18
+          ],
+          [
+            0,
+            4,
+            5,
+            19
+          ],
+          [
+            0,
+            4,
+            5,
+            20
+          ],
+          [
+            0,
+            4,
+            5,
+            21
+          ],
+          [
+            0,
+            4,
+            5,
+            22
+          ],
+          [
+            0,
+            4,
+            5,
+            23
+          ],
+          [
+            0,
+            4,
+            5,
+            24
+          ],
+          [
+            0,
+            4,
+            5,
+            37
+          ],
+          [
+            0,
+            4,
+            5,
+            38
+          ],
+          [
+            0,
+            4,
+            5,
+            39
+          ],
+          [
+            0,
+            4,
+            5,
+            40
+          ],
+          [
+            0,
+            4,
+            5,
+            45
+          ],
+          [
+            0,
+            4,
+            5,
+            46
+          ],
+          [
+            0,
+            4,
+            5,
+            47
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 89889,
+        "sat_seconds": 0.4318219784181565,
+        "seconds": 0.4982555879978463,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "complete",
+        "target": [
+          5,
+          6
+        ],
+        "through_least_plus_one": true,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": true,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 3,
+      "idx": 914,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 2,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 3085,
+        "candidate_component_sizes": [
+          129
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 753,
+          "4": 46877,
+          "5": 1929999
+        },
+        "candidates": 62140,
+        "candidates_pruned": 6041,
+        "candidates_sat_tested": 56422,
+        "clauses": 378,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 4,
+        "copies": 63,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 430
+        },
+        "depth": 5,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "h": 3,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 129,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 430,
+          "5": 636
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 2,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            4,
+            9
+          ],
+          [
+            0,
+            3,
+            7,
+            9
+          ],
+          [
+            0,
+            3,
+            8,
+            9
+          ],
+          [
+            0,
+            3,
+            9,
+            13
+          ],
+          [
+            0,
+            3,
+            9,
+            14
+          ],
+          [
+            0,
+            3,
+            9,
+            15
+          ],
+          [
+            0,
+            3,
+            9,
+            16
+          ],
+          [
+            0,
+            3,
+            9,
+            17
+          ],
+          [
+            0,
+            3,
+            9,
+            18
+          ],
+          [
+            0,
+            3,
+            9,
+            29
+          ],
+          [
+            0,
+            3,
+            9,
+            30
+          ],
+          [
+            0,
+            3,
+            9,
+            31
+          ],
+          [
+            0,
+            3,
+            9,
+            32
+          ],
+          [
+            0,
+            3,
+            9,
+            61
+          ],
+          [
+            0,
+            3,
+            9,
+            62
+          ],
+          [
+            0,
+            3,
+            9,
+            63
+          ],
+          [
+            0,
+            3,
+            9,
+            64
+          ],
+          [
+            0,
+            3,
+            9,
+            125
+          ],
+          [
+            0,
+            3,
+            9,
+            126
+          ],
+          [
+            0,
+            3,
+            9,
+            127
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 523202,
+        "sat_seconds": 4.582521267235279,
+        "seconds": 5.000141541939229,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          9,
+          10
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": true,
+      "status": "skipped_ambiguity"
+    },
+    {
+      "h": 3,
+      "idx": 914,
+      "pass": null,
+      "reason": "Should finite validation use uniform depth D=s+h (side table T_(D-j) at C_j), or the same T_h side table at every ray copy? These allow different W.",
+      "s": 3,
+      "sat": {
+        "base_satisfiable": true,
+        "cache_hits": 493,
+        "candidate_component_sizes": [
+          257
+        ],
+        "candidate_limit": 100000,
+        "candidate_totals": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 1521,
+          "4": 192029
+        },
+        "candidates": 42494,
+        "candidates_pruned": 40,
+        "candidates_sat_tested": 42454,
+        "clauses": 762,
+        "complement_symmetry": true,
+        "complete": false,
+        "complete_through": 3,
+        "copies": 127,
+        "counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "depth": 6,
+        "exact_sizes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "h": 3,
+        "least": 4,
+        "max_size": null,
+        "memory_measure": "process high-water MiB, including imports/prior work",
+        "n": 257,
+        "observed_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 198
+        },
+        "peak_mb": 52.828125,
+        "reason": "seconds_limit",
+        "s": 3,
+        "sample_bonds": [
+          [
+            0,
+            3,
+            9,
+            17
+          ],
+          [
+            0,
+            4,
+            5,
+            17
+          ],
+          [
+            0,
+            4,
+            6,
+            17
+          ],
+          [
+            0,
+            4,
+            9,
+            17
+          ],
+          [
+            0,
+            4,
+            11,
+            17
+          ],
+          [
+            0,
+            4,
+            12,
+            17
+          ],
+          [
+            0,
+            4,
+            17,
+            21
+          ],
+          [
+            0,
+            4,
+            17,
+            22
+          ],
+          [
+            0,
+            4,
+            17,
+            23
+          ],
+          [
+            0,
+            4,
+            17,
+            24
+          ],
+          [
+            0,
+            4,
+            17,
+            45
+          ],
+          [
+            0,
+            4,
+            17,
+            46
+          ],
+          [
+            0,
+            4,
+            17,
+            47
+          ],
+          [
+            0,
+            4,
+            17,
+            48
+          ],
+          [
+            0,
+            4,
+            17,
+            93
+          ],
+          [
+            0,
+            4,
+            17,
+            94
+          ],
+          [
+            0,
+            4,
+            17,
+            95
+          ],
+          [
+            0,
+            4,
+            17,
+            96
+          ],
+          [
+            0,
+            4,
+            17,
+            189
+          ],
+          [
+            0,
+            4,
+            17,
+            190
+          ]
+        ],
+        "sat_call_limit": 2000000,
+        "sat_calls": 333907,
+        "sat_seconds": 4.739248249679804,
+        "seconds": 5.000144610996358,
+        "seconds_limit": 5.0,
+        "solver": "g3",
+        "status": "incomplete",
+        "target": [
+          17,
+          18
+        ],
+        "through_least_plus_one": false,
+        "top": [
+          0,
+          1,
+          2
+        ]
+      },
+      "smallest_designation_pending": true,
+      "status": "skipped_ambiguity"
+    }
+  ],
+  "execution": {
+    "full_study_run": false,
+    "input_sha256": {
+      "artifacts/PROVED-RATE-20261113-001A/PROVED-RATE-20261113-001A-E001_cycle_mean/rates_all.jsonl": "3ae6c2a16c78ed7e11e7e040afc5d48e0368d675733b6d1b7cbc74bf468bd725",
+      "experiments/BOND-DEPTH-20261112-001A/BOND-DEPTH-20261112-001A-E001_spine_bonds/census.py": "bba5f4f187dec802ebb3f457d1183fe6ffb72d7517bcb11ba0f2eed2841c8ca2",
+      "research/TRUE-BOND-20261113-001/codex_spec.md": "1a94e14d40788fe7de97e03f48f25ad1e9c6ddc21ea9fa33889b0d3242d9647f"
+    },
+    "memory_estimate": {
+      "caveat": "RSS may grow after 60 seconds; sample maxima are not full-run memory bounds.",
+      "default_worker_address_space_mib": 1024,
+      "smoke_max_peak_mib": 392.375,
+      "smoke_mean_peak_mib": 306.9078,
+      "smoke_min_peak_mib": 207.605
+    },
+    "platform": "Linux-6.14.0-37-generic-x86_64-with-glibc2.41",
+    "python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+    "rehearsal_failure": {
+      "detail": "An initial Pool/SIGALRM rehearsal aborted before producing any row: a checkpoint TimeoutError raced with SIGALRM during timer cancellation. Replaced it with cooperative checkpoints and parent supervision. Also fixed missing-result recovery, exit/drain race, final-newline handling, interruption registration and explicit generator cleanup.",
+      "status": "fixed"
+    },
+    "resource_units": {
+      "peak_mb": "Linux RSS high-water MiB, fresh child per family",
+      "seconds": "wall seconds per family"
+    },
+    "scope_id": "TRUE-BOND-20261113-001A",
+    "scope_kind": "ticket",
+    "smallest_designation": "unresolved; validation cost ranking only",
+    "smoke_candidate_smallest": 914,
+    "smoke_command": ".venv/bin/python -B experiments/TRUE-BOND-20261113-001A/TRUE-BOND-20261113-001A-E001_side_branches/codex/run_true.py --workers 1 --only 914 296 46 1304 231 --smax 12 --seconds-limit 60 --output smoke_true.jsonl",
+    "smoke_random_draw_order": [
+      296,
+      46,
+      1304,
+      231
+    ],
+    "smoke_seed": 20261113,
+    "source_sha256": {
+      "check_runner.py": "1c5d6db5c064321c94f1baeb9a44b7d81272531eb140a04e8016afaed975dab9",
+      "run_true.py": "004a461f7475b87d43015fa6e03ac7d4440fd43f69f443f7e9cf1e7177f338b4",
+      "sat_validation.py": "a531f30662d24fff3caca41c44cb7c27891646f043c3d9459528371c2c45615c",
+      "true_bond.py": "04d89f01a7773211ca8c6f9dcec3b2f0156f9f01524f10db468ef47a37d147ee",
+      "validate_true.py": "80dcb75965f366924e794c03bb31683e5db349c11e03fdb7ac88a6707d605f9b"
+    },
+    "time_estimate": {
+      "caveat": "Censored validation sample, no finite full-completion forecast; extrapolated lower estimate is not a rigorous population bound.",
+      "censored_sample_mean_seconds": 60.0013644,
+      "default_1100s_budget_226_worker_hours": 69.05555555555556,
+      "finite_completion_estimate": null,
+      "plug_in_226_worker_hours_lower_estimate": 3.7666666666666666,
+      "three_worker_ideal_budget_wall_hours": 23.01851851851852
+    },
+    "validation_command": ".venv/bin/python -B experiments/TRUE-BOND-20261113-001A/TRUE-BOND-20261113-001A-E001_side_branches/codex/validate_true.py --case-seconds 5 --candidate-limit 100000"
+  },
+  "fixtures": {
+    "fixtures": [
+      {
+        "name": "derived_four_identity_bond",
+        "pass": true,
+        "result": {
+          "base_satisfiable": true,
+          "cache_hits": 4,
+          "candidate_component_sizes": [
+            5
+          ],
+          "candidate_limit": 10000,
+          "candidate_totals": {
+            "0": 0,
+            "1": 0,
+            "2": 3,
+            "3": 6,
+            "4": 4
+          },
+          "candidates": 13,
+          "candidates_pruned": 3,
+          "candidates_sat_tested": 10,
+          "clauses": 4,
+          "complement_symmetry": true,
+          "complete": true,
+          "complete_through": 4,
+          "copies": 2,
+          "counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "depth": 1,
+          "exact_sizes": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "h": 0,
+          "least": 3,
+          "max_size": null,
+          "memory_measure": "process high-water MiB, including imports/prior work",
+          "n": 5,
+          "observed_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "peak_mb": 43.265625,
+          "reason": "requested_sizes_exhausted",
+          "s": 1,
+          "sample_bonds": [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              4
+            ]
+          ],
+          "sat_call_limit": 2000000,
+          "sat_calls": 43,
+          "sat_seconds": 6.244785618036985e-05,
+          "seconds": 0.004423010046593845,
+          "seconds_limit": 5,
+          "solver": "g3",
+          "status": "complete",
+          "target": [
+            4
+          ],
+          "through_least_plus_one": true,
+          "top": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "name": "complement_optimization_matches_all_assignments",
+        "pass": true,
+        "result": {
+          "base_satisfiable": true,
+          "cache_hits": 4,
+          "candidate_component_sizes": [
+            5
+          ],
+          "candidate_limit": 10000,
+          "candidate_totals": {
+            "0": 0,
+            "1": 0,
+            "2": 3,
+            "3": 6,
+            "4": 4
+          },
+          "candidates": 13,
+          "candidates_pruned": 3,
+          "candidates_sat_tested": 10,
+          "clauses": 4,
+          "complement_symmetry": false,
+          "complete": true,
+          "complete_through": 4,
+          "copies": 2,
+          "counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "depth": 1,
+          "exact_sizes": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "h": 0,
+          "least": 3,
+          "max_size": null,
+          "memory_measure": "process high-water MiB, including imports/prior work",
+          "n": 5,
+          "observed_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "peak_mb": 43.265625,
+          "reason": "requested_sizes_exhausted",
+          "s": 1,
+          "sample_bonds": [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              4
+            ]
+          ],
+          "sat_call_limit": 2000000,
+          "sat_calls": 74,
+          "sat_seconds": 9.249197319149971e-05,
+          "seconds": 0.0006102810148149729,
+          "seconds_limit": 5,
+          "solver": "g3",
+          "status": "complete",
+          "target": [
+            4
+          ],
+          "through_least_plus_one": true,
+          "top": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "name": "inclusive_depth_and_fresh_sibling_own_identities",
+        "pass": true,
+        "result": {
+          "base_satisfiable": true,
+          "cache_hits": 7,
+          "candidate_component_sizes": [
+            9
+          ],
+          "candidate_limit": 10000,
+          "candidate_totals": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "3": 13,
+            "4": 36
+          },
+          "candidates": 51,
+          "candidates_pruned": 17,
+          "candidates_sat_tested": 34,
+          "clauses": 14,
+          "complement_symmetry": true,
+          "complete": true,
+          "complete_through": 4,
+          "copies": 7,
+          "counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 2
+          },
+          "depth": 2,
+          "exact_sizes": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "h": 1,
+          "least": 3,
+          "max_size": null,
+          "memory_measure": "process high-water MiB, including imports/prior work",
+          "n": 10,
+          "observed_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 2
+          },
+          "peak_mb": 43.265625,
+          "reason": "requested_sizes_exhausted",
+          "s": 1,
+          "sample_bonds": [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              1,
+              4,
+              6
+            ],
+            [
+              1,
+              4,
+              7
+            ],
+            [
+              0,
+              3,
+              4,
+              6
+            ],
+            [
+              0,
+              3,
+              4,
+              7
+            ]
+          ],
+          "sat_call_limit": 2000000,
+          "sat_calls": 226,
+          "sat_seconds": 0.0002844943664968014,
+          "seconds": 0.0008762079523876309,
+          "seconds_limit": 5,
+          "solver": "g3",
+          "status": "complete",
+          "target": [
+            4
+          ],
+          "through_least_plus_one": true,
+          "top": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "name": "G_boundary_is_CNF_not_an_extra_copy",
+        "pass": true,
+        "result": {
+          "base_satisfiable": true,
+          "cache_hits": 2,
+          "candidate_component_sizes": [
+            5
+          ],
+          "candidate_limit": 10000,
+          "candidate_totals": {
+            "0": 0,
+            "1": 0,
+            "2": 3,
+            "3": 6,
+            "4": 4
+          },
+          "candidates": 13,
+          "candidates_pruned": 2,
+          "candidates_sat_tested": 11,
+          "clauses": 6,
+          "complement_symmetry": true,
+          "complete": true,
+          "complete_through": 4,
+          "copies": 2,
+          "counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 0
+          },
+          "depth": 1,
+          "exact_sizes": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "h": 0,
+          "least": 3,
+          "max_size": null,
+          "memory_measure": "process high-water MiB, including imports/prior work",
+          "n": 5,
+          "observed_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 0
+          },
+          "peak_mb": 43.265625,
+          "reason": "requested_sizes_exhausted",
+          "s": 1,
+          "sample_bonds": [
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "sat_call_limit": 2000000,
+          "sat_calls": 46,
+          "sat_seconds": 5.565769970417023e-05,
+          "seconds": 0.0003177560865879059,
+          "seconds_limit": 5,
+          "solver": "g3",
+          "status": "complete",
+          "target": [
+            4
+          ],
+          "through_least_plus_one": true,
+          "top": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "name": "cutoff_never_reports_partial_size_as_exact",
+        "pass": true,
+        "result": {
+          "base_satisfiable": true,
+          "cache_hits": 0,
+          "candidate_component_sizes": [
+            5
+          ],
+          "candidate_limit": 0,
+          "candidate_totals": {
+            "0": 0,
+            "1": 0,
+            "2": 3
+          },
+          "candidates": 0,
+          "candidates_pruned": 0,
+          "candidates_sat_tested": 0,
+          "clauses": 4,
+          "complement_symmetry": true,
+          "complete": false,
+          "complete_through": 1,
+          "copies": 2,
+          "counts": {
+            "0": 0,
+            "1": 0
+          },
+          "depth": 1,
+          "exact_sizes": [
+            0,
+            1
+          ],
+          "h": 0,
+          "least": null,
+          "max_size": null,
+          "memory_measure": "process high-water MiB, including imports/prior work",
+          "n": 5,
+          "observed_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          },
+          "peak_mb": 43.265625,
+          "reason": "candidate_limit",
+          "s": 1,
+          "sample_bonds": [],
+          "sat_call_limit": 2000000,
+          "sat_calls": 1,
+          "sat_seconds": 3.458932042121887e-06,
+          "seconds": 0.00029412703588604927,
+          "seconds_limit": 5,
+          "solver": "g3",
+          "status": "incomplete",
+          "target": [
+            4
+          ],
+          "through_least_plus_one": false,
+          "top": [
+            0,
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "pass": true
+  },
+  "full_study_run": false,
+  "height_diagnostic": {
+    "alternatives": {
+      "common_side_height": {
+        "1": 0,
+        "2": 0,
+        "3": 12,
+        "4": 172
+      },
+      "uniform_depth": {
+        "1": 0,
+        "2": 0,
+        "3": 15,
+        "4": 305
+      }
+    },
+    "count_cap": 4,
+    "h": 2,
+    "idx": 709,
+    "s": 1,
+    "sat_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 15,
+      "4": 305
+    },
+    "status": "diagnostic_only_no_convention_selected"
+  },
+  "mutant": {
+    "h": 2,
+    "idx": 709,
+    "mutant_counts": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "mutation": "G_S := F_S, including the empty choice",
+    "pass": true,
+    "s": 1,
+    "sat_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 15,
+      "4": 305
+    },
+    "scope": "explicit uniform-truncation diagnostic; resolves no height ambiguity",
+    "status": "complete",
+    "witness": {
+      "chosen": [
+        0,
+        2,
+        5
+      ],
+      "constrained": true,
+      "deletions_free": [
+        true,
+        true,
+        true
+      ],
+      "pass": true
+    }
+  },
+  "ray_check": [
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 22,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 22,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 22,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 22,
+      "observed": 4,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 22,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 22,
+      "observed": 5,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 22,
+      "observed": 5,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 22,
+      "observed": 5,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 22,
+      "observed": 6,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 22,
+      "observed": 6,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 22,
+      "observed": 6,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 22,
+      "observed": 6,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 46,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 46,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 46,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 46,
+      "observed": 5,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 46,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 46,
+      "observed": 6,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 46,
+      "observed": 6,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 46,
+      "observed": 7,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 46,
+      "observed": 7,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 46,
+      "observed": 8,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 46,
+      "observed": 8,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 9,
+      "idx": 46,
+      "observed": 9,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 212,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 212,
+      "observed": 3,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 212,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 212,
+      "observed": 4,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 212,
+      "observed": 4,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 212,
+      "observed": 5,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 212,
+      "observed": 5,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 212,
+      "observed": 5,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 212,
+      "observed": 6,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 212,
+      "observed": 6,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 212,
+      "observed": 6,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 212,
+      "observed": 7,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 231,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 231,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 231,
+      "observed": 5,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 231,
+      "observed": 6,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 231,
+      "observed": 7,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 231,
+      "observed": 8,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 9,
+      "idx": 231,
+      "observed": 9,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 10,
+      "idx": 231,
+      "observed": 10,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 11,
+      "idx": 231,
+      "observed": 11,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 12,
+      "idx": 231,
+      "observed": 12,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 13,
+      "idx": 231,
+      "observed": 13,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 14,
+      "idx": 231,
+      "observed": 14,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 296,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 296,
+      "observed": 3,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 296,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 296,
+      "observed": 4,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 296,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 296,
+      "observed": 5,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 296,
+      "observed": 6,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 296,
+      "observed": 6,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 296,
+      "observed": 7,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 296,
+      "observed": 7,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 296,
+      "observed": 8,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 296,
+      "observed": 8,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 339,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 339,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 339,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 339,
+      "observed": 5,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 339,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 339,
+      "observed": 6,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 339,
+      "observed": 6,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 339,
+      "observed": 7,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 339,
+      "observed": 7,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 339,
+      "observed": 8,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 339,
+      "observed": 8,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 9,
+      "idx": 339,
+      "observed": 9,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 475,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 475,
+      "observed": 3,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 475,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 475,
+      "observed": 4,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 475,
+      "observed": 4,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 475,
+      "observed": 5,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 475,
+      "observed": 5,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 475,
+      "observed": 5,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 475,
+      "observed": 6,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 475,
+      "observed": 6,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 475,
+      "observed": 6,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 475,
+      "observed": 7,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 618,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 618,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 618,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 618,
+      "observed": 5,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 618,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 618,
+      "observed": 6,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 618,
+      "observed": 6,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 618,
+      "observed": 7,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 618,
+      "observed": 7,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 618,
+      "observed": 8,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 618,
+      "observed": 8,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 9,
+      "idx": 618,
+      "observed": 9,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 709,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 709,
+      "observed": 3,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 709,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 709,
+      "observed": 4,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 709,
+      "observed": 4,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 709,
+      "observed": 5,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 709,
+      "observed": 5,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 709,
+      "observed": 5,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 709,
+      "observed": 6,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 709,
+      "observed": 6,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 709,
+      "observed": 6,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 709,
+      "observed": 7,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 769,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 769,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 769,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 769,
+      "observed": 5,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 769,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 769,
+      "observed": 6,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 769,
+      "observed": 6,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 769,
+      "observed": 7,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 769,
+      "observed": 7,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 769,
+      "observed": 8,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 769,
+      "observed": 8,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 9,
+      "idx": 769,
+      "observed": 9,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 911,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 911,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 911,
+      "observed": 5,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 911,
+      "observed": 6,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 911,
+      "observed": 7,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 911,
+      "observed": 8,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 9,
+      "idx": 911,
+      "observed": 9,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 10,
+      "idx": 911,
+      "observed": 10,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 11,
+      "idx": 911,
+      "observed": 11,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 12,
+      "idx": 911,
+      "observed": 12,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 13,
+      "idx": 911,
+      "observed": 13,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 14,
+      "idx": 911,
+      "observed": 14,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 914,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 914,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 914,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 914,
+      "observed": 4,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 914,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 914,
+      "observed": 5,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 914,
+      "observed": 5,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 914,
+      "observed": 5,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 914,
+      "observed": 6,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 914,
+      "observed": 6,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 914,
+      "observed": 6,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 914,
+      "observed": 6,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 1148,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 1148,
+      "observed": 3,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 1148,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 1148,
+      "observed": 4,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 1148,
+      "observed": 4,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 1148,
+      "observed": 5,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 1148,
+      "observed": 5,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 1148,
+      "observed": 5,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 1148,
+      "observed": 6,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 1148,
+      "observed": 6,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 1148,
+      "observed": 6,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 1148,
+      "observed": 7,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 3,
+      "idx": 1304,
+      "observed": 3,
+      "pass": true,
+      "s": 1,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 1304,
+      "observed": 4,
+      "pass": true,
+      "s": 2,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 4,
+      "idx": 1304,
+      "observed": 4,
+      "pass": true,
+      "s": 3,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 1304,
+      "observed": 5,
+      "pass": true,
+      "s": 4,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 5,
+      "idx": 1304,
+      "observed": 5,
+      "pass": true,
+      "s": 5,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 1304,
+      "observed": 6,
+      "pass": true,
+      "s": 6,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 6,
+      "idx": 1304,
+      "observed": 6,
+      "pass": true,
+      "s": 7,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 1304,
+      "observed": 7,
+      "pass": true,
+      "s": 8,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 7,
+      "idx": 1304,
+      "observed": 7,
+      "pass": true,
+      "s": 9,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 1304,
+      "observed": 8,
+      "pass": true,
+      "s": 10,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 8,
+      "idx": 1304,
+      "observed": 8,
+      "pass": true,
+      "s": 11,
+      "status": "complete"
+    },
+    {
+      "bd_repeat": null,
+      "expected": 9,
+      "idx": 1304,
+      "observed": 9,
+      "pass": true,
+      "s": 12,
+      "status": "complete"
+    }
+  ],
+  "runner_checks": {
+    "cases": [
+      {
+        "name": "python_syntax",
+        "pass": true
+      },
+      {
+        "name": "two_worker_append",
+        "pass": true,
+        "returncode": 0,
+        "rows": [
+          {
+            "L": [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "L_ray": [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "active_s": 1,
+            "bd_reference": [
+              3
+            ],
+            "bd_repeat": null,
+            "fixed_point_rounds": [
+              {
+                "cap": 1,
+                "rounds": 1,
+                "size": 1
+              }
+            ],
+            "generic_by_s": [
+              {
+                "cap": 1,
+                "s": 1,
+                "size": 1
+              }
+            ],
+            "generic_summaries": 1,
+            "idx": 212,
+            "operations": 176,
+            "peak_mb": 31.086,
+            "ray_check": [
+              {
+                "expected": 3,
+                "observed": 3,
+                "pass": true,
+                "s": 1
+              }
+            ],
+            "seconds": 0.032667,
+            "shape": {
+              "knots": 1,
+              "locals": 2,
+              "self_calls": 3
+            },
+            "smax": 1,
+            "stage": "complete",
+            "status": "done"
+          },
+          {
+            "L": [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "L_ray": [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "active_s": 1,
+            "bd_reference": [
+              3
+            ],
+            "bd_repeat": null,
+            "fixed_point_rounds": [
+              {
+                "cap": 1,
+                "rounds": 5,
+                "size": 10
+              }
+            ],
+            "generic_by_s": [
+              {
+                "cap": 1,
+                "s": 1,
+                "size": 10
+              }
+            ],
+            "generic_summaries": 10,
+            "idx": 709,
+            "operations": 1598,
+            "peak_mb": 31.086,
+            "ray_check": [
+              {
+                "expected": 3,
+                "observed": 3,
+                "pass": true,
+                "s": 1
+              }
+            ],
+            "seconds": 0.032474,
+            "shape": {
+              "knots": 5,
+              "locals": 2,
+              "self_calls": 2
+            },
+            "smax": 1,
+            "stage": "complete",
+            "status": "done"
+          },
+          {
+            "L": [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "L_ray": [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "active_s": 1,
+            "bd_reference": [
+              3
+            ],
+            "bd_repeat": null,
+            "fixed_point_rounds": [
+              {
+                "cap": 1,
+                "rounds": 3,
+                "size": 3
+              }
+            ],
+            "generic_by_s": [
+              {
+                "cap": 1,
+                "s": 1,
+                "size": 3
+              }
+            ],
+            "generic_summaries": 3,
+            "idx": 914,
+            "operations": 386,
+            "peak_mb": 31.102,
+            "ray_check": [
+              {
+                "expected": 3,
+                "observed": 3,
+                "pass": true,
+                "s": 1
+              }
+            ],
+            "seconds": 0.030702,
+            "shape": {
+              "knots": 3,
+              "locals": 2,
+              "self_calls": 2
+            },
+            "smax": 1,
+            "stage": "complete",
+            "status": "done"
+          }
+        ],
+        "stderr": ""
+      },
+      {
+        "name": "resume_skips_existing_without_modification",
+        "pass": true,
+        "sha256": "dd9af129cb71f07ceb669b99471df45e94534339dcbc38cb260b06e71aea834b"
+      },
+      {
+        "name": "reject_unterminated_jsonl_without_append",
+        "pass": true,
+        "stderr": "usage: run_true.py [-h] [--workers WORKERS] [--only ONLY [ONLY ...]]\n                   [--smax {1,2,3,4,5,6,7,8,9,10,11,12}] [--output OUTPUT]\n                   [--seconds-limit SECONDS_LIMIT] [--memory-mb MEMORY_MB]\nrun_true.py: error: existing JSONL lacks a final newline; nothing appended\n"
+      },
+      {
+        "name": "dead_worker_yields_failure_row",
+        "pass": true,
+        "result": [
+          {
+            "L": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "L_ray": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "error": "worker did not return a result",
+            "generic_summaries": 0,
+            "idx": 709,
+            "peak_mb": 13.422,
+            "seconds": 0.021039,
+            "smax": 1,
+            "status": "worker_crash",
+            "worker_exitcode": 17
+          }
+        ]
+      },
+      {
+        "name": "stuck_owned_worker_is_killed_and_reaped",
+        "pass": true,
+        "result": [
+          {
+            "L": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "L_ray": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "error": "worker did not return a result",
+            "generic_summaries": 0,
+            "idx": 709,
+            "peak_mb": 14.098,
+            "seconds": 1.025893,
+            "smax": 1,
+            "status": "timeout",
+            "worker_exitcode": -9
+          }
+        ]
+      },
+      {
+        "name": "no_owned_children_left",
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "selected_small_families": [
+    914,
+    709,
+    212,
+    911,
+    339,
+    475,
+    618,
+    769,
+    1148,
+    22
+  ],
+  "selection_rule": "ten smallest uniform D=5 identity counts, then call count, then idx; smallest requirement remains ambiguous",
+  "shortening": {
+    "cases": [
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 914,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 914,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 914,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 709,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 709,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 709,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 212,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 212,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 212,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 911,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 4,
+        "idx": 911,
+        "s": 2,
+        "shorter": true,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 5,
+        "idx": 911,
+        "s": 3,
+        "shorter": true,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 339,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 339,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 339,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 475,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 475,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 475,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 618,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 618,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 618,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 769,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 769,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 769,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 1148,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 1148,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 1148,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 3,
+        "L_ray": 3,
+        "idx": 22,
+        "s": 1,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 22,
+        "s": 2,
+        "shorter": false,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 4,
+        "idx": 22,
+        "s": 3,
+        "shorter": false,
+        "status": "complete"
+      }
+    ],
+    "found": [
+      {
+        "L": 3,
+        "L_ray": 4,
+        "idx": 911,
+        "s": 2,
+        "shorter": true,
+        "status": "complete"
+      },
+      {
+        "L": 4,
+        "L_ray": 5,
+        "idx": 911,
+        "s": 3,
+        "shorter": true,
+        "status": "complete"
+      }
+    ],
+    "pass": true,
+    "pass_note": "requested finite DP comparison is skipped for height ambiguity",
+    "status": "found"
+  },
+  "shortening_diagnostic": {
+    "alternatives": {
+      "common_side_height": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 14
+      },
+      "uniform_depth": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 14
+      }
+    },
+    "count_cap": 4,
+    "creator_locations": [
+      {
+        "top_port": 2
+      },
+      {
+        "own_index": 1,
+        "path": [
+          0,
+          0
+        ]
+      },
+      {
+        "own_index": 1,
+        "path": [
+          0,
+          0,
+          2
+        ]
+      }
+    ],
+    "direct_sat_witness": {
+      "chosen": [
+        2,
+        12,
+        34
+      ],
+      "constrained": true,
+      "deletions_free": [
+        true,
+        true,
+        true
+      ],
+      "pass": true
+    },
+    "h": 2,
+    "idx": 911,
+    "s": 2,
+    "sat_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 14
+    },
+    "status": "diagnostic_only_no_convention_selected",
+    "witness": [
+      2,
+      12,
+      34
+    ]
+  },
+  "study_count": 226,
+  "summary": {
+    "mutant_pass": true,
+    "ray_checks_passed": 168,
+    "ray_checks_total": 168,
+    "required_count_comparisons_passed": 0,
+    "required_count_comparisons_skipped_ambiguity": 33,
+    "sat_cases": 33,
+    "sat_complete_through_least_plus_one": 14,
+    "shortening_found": 2
+  }
+}

@@ -1,0 +1,91 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "TRUE-BOND-20261113-001Z-P001",
+ "canonical_id": "TRUE-BOND-20261113-001Z-P001",
+ "kind": "proof",
+ "ticket": "TRUE-BOND-20261113-001Z",
+ "proof": "TRUE-BOND-20261113-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: does growth survive side branches?",
+ "status": "Proved",
+ "claim": "Ledger closing TRUE-BOND-20261113-001: ticket A (code by Codex, run by the thread): gate passed after the thread settled one ambiguity; P1 failed; P3 held where read; P2 not decided; no correction; referee pending; recommendation research directions, a per-level side-cost bound. No new claim.",
+ "dependencies": [
+  "TRUE-BOND-20261113-001A"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "TRUE-BOND-20261113-001",
+  "epic_path": [
+   "TRUE-BOND-20261113-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/TRUE-BOND-20261113-001A/TRUE-BOND-20261113-001A-E001_side_branches/contract.json": "cfe5d0b10d74296b4fe539534550a33992c106ec3f44ddf7053de1ccd704022d",
+  "artifacts/TRUE-BOND-20261113-001A/TRUE-BOND-20261113-001A-E001_side_branches/summary.json": "b16cffd0e0af76b1e358a7c0f67eaec637cb63ea40f2d39e22e869e8cac30040"
+ },
+ "paths": {
+  "manifest": "proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/result.json",
+  "check": "proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-12; referee pending (the referee thread).",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

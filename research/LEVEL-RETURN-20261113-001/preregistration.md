@@ -101,3 +101,19 @@ calibration of R3, the second generator, the treatment of undecided levels and t
 - The runner's smoke test (`smoke/`, 20 cases) ran levels 1 to 16 of one alternating pattern (key 03702b84…, #6 or #7 in the census's
   order) and levels 1 to 4 of another: the first alternated through level 16 (alive at 13 and 15, dead at 14 and 16, all certified).
   Its R1 outcome is therefore seen before this file and is not prospective; the registered run recomputes it.
+
+## Addendum R5: rigidity (added 2026-11-13 before any registered result was read)
+
+Exploration at levels already read (to 12; `exploratory/rigid.py`, `exploratory/rigid_all.py`) found that five of the seven (#2 from
+level 7, #3, #4, #5, #7) have exactly one state up to complement at every living level read, and that #2's pattern without its two
+special knots has exactly the parity state and its complement at every level from 6. Since a part's states include the whole's, this
+gives a proof of #2's death at an even level n from two facts: the reduced pattern is rigid at n, and the parity state violates the
+two knots (R4). Registered as R5, computed by a second job of the shared runner (`job_rigid.py`; rigidity certified by a checked
+model and a checked LRAT refutation of any second state):
+
+| # | Prediction | Fails if |
+| --- | --- | --- |
+| R5a | The five stay rigid at their living levels to 16; #1 and #6 are not rigid at any living level to 16. | A certified verdict against it. |
+| R5b | #2's reduced pattern is rigid at every even level 6 to 16, so with R4 its death there is certified by this reduction. | A certified second state. |
+
+`certify.py` gained the function `certify_rigid` while the main run was in progress; the functions the main run uses are unchanged.

@@ -74,3 +74,48 @@ def certify(K, nvars, workdir, timeout):
         if os.path.exists(p): os.remove(p)
     out['seconds'] = time.time() - t0
     return out
+
+
+def certify_rigid(K, nvars, workdir, timeout):
+    """Rigidity: find a state s (checked); then ask for a state that keeps s's value at the smallest address and differs from s
+    somewhere among the addresses in knots. A checked LRAT refutation of that means s and its complement are the only states."""
+    t0 = time.time()
+    first = certify(K, nvars, workdir, timeout)
+    if first['verdict'] != 'alive':
+        return dict(verdict='not alive: ' + first['verdict'], seconds=time.time() - t0)
+    cnf = os.path.join(workdir, 'f.cnf'); prf = os.path.join(workdir, 'p.lrat')
+    # re-solve to get the model values (certify does not return them): small extra cost
+    m = int(K.min()); used = sorted(set(K.ravel().tolist()))
+    def write(extra):
+        with open(cnf, 'w') as f:
+            f.write(f'p cnf {nvars} {2 * len(K) + 1 + len(extra)}\n')
+            for a, b, c in K.tolist(): f.write(f'{a+1} {b+1} {c+1} 0\n{-a-1} {-b-1} {-c-1} 0\n')
+            f.write(f'{m+1} 0\n')
+            for cl in extra: f.write(' '.join(map(str, cl)) + ' 0\n')
+    write([])
+    r = subprocess.run([CADICAL, '-q', cnf], capture_output=True, text=True, timeout=timeout)
+    lits = [int(t) for line in r.stdout.splitlines() if line.startswith('v') for t in line[1:].split()]
+    val = {abs(l): (l > 0) for l in lits if l != 0}
+    diff = [(-u - 1) if val.get(u + 1, False) else (u + 1) for u in used]
+    write([diff])
+    try:
+        r = subprocess.run([CADICAL, '--lrat=true', '--binary=false', '-q', cnf, prf], capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return dict(verdict='undecided', certificate='solver timeout (second state)', seconds=time.time() - t0)
+    if r.returncode == 10:
+        lits2 = [int(t) for line in r.stdout.splitlines() if line.startswith('v') for t in line[1:].split()]
+        v2 = np.zeros(nvars + 1, dtype=np.int8)
+        for l in lits2:
+            if l != 0 and abs(l) <= nvars: v2[abs(l)] = 1 if l > 0 else 0
+        V = v2[K + 1]; ok = bool(np.all(V.min(1) != V.max(1))) and any(bool(v2[u + 1]) != val.get(u + 1, False) for u in used)
+        out = dict(verdict='not rigid' if ok else 'checker-rejected-model', certificate='second state checked')
+    elif r.returncode == 20:
+        c = subprocess.run([CHECKER, cnf, prf], capture_output=True, text=True, timeout=timeout)
+        ok = c.returncode == 0 and c.stdout.startswith('VERIFIED')
+        out = dict(verdict='rigid' if ok else 'unverified-refutation', certificate=f'LRAT {os.path.getsize(prf)} bytes: {c.stdout.strip()}')
+    else:
+        out = dict(verdict='undecided', certificate=f'solver exit {r.returncode}')
+    for p in (cnf, prf):
+        if os.path.exists(p): os.remove(p)
+    out['seconds'] = time.time() - t0
+    return out

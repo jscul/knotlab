@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TRUE-BOND-20261113-001A-E001",
+ "ticket": "TRUE-BOND-20261113-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On the 226 families with provably growing ray bonds, the true least bond (side branches allowed) for s <= 12, against the ray bond.",
+ "definitions": {"spec": "research/TRUE-BOND-20261113-001/codex_spec.md (sha256 1a94e14d40788fe7de97e03f48f25ad1e9c6ddc21ea9fa33889b0d3242d9647f)", "deficit": "D(s) = L_ray(s) - L(s)"},
+ "public_inputs": {"code": "written by Codex in codex/ from the spec; BOND-DEPTH census.py and PROVED-RATE rates_all.jsonl read-only.", "run": "codex/run_true.py --smax 12 on the 226, launched by the thread."},
+ "forbidden_inputs": ["Changing the spec, predictions or decision rules after seeing registered results"],
+ "primary_observable": "Share of families with a deficit; deficit growth; L(12) > L(6).",
+ "cheapest_meaningful_control": "The ray check (side branches forced to G gives L_ray).",
+ "validation_gate": "The four validations of the spec.",
+ "predictions": {"P1": "deficit somewhere in <= 20%", "P2": "D(12) - D(6) <= 1 in >= 80% of those", "P3": "L(12) > L(6) in >= 90%"},
+ "stop_rule": "Code and validation by Codex; one run by the thread; a hand-off to the referee thread; report.",
+ "runtime": "Unknown; registered as long-running."
+}

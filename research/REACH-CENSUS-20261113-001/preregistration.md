@@ -92,3 +92,22 @@ definitions. G4 no family that lives at every depth has a dead usual limit. Any 
 
 One Codex hand-off (code, gates, smoke), one full run launched by the thread (registered in `docs/LONG_RUNNING.md`), its frozen
 summary, a referee hand-off, report.
+
+## Clarifications before the full run (2026-11-13, after Codex's validation, before any census result)
+
+Codex's hand-off (35 minutes, `codex/REPORT.md`) passed G0, G1 (618 families, 13,598 depths, 95 exact tests) and G4, and flagged
+eight ambiguities instead of resolving them. These are fixed here before the full run; the thread has not seen any class share.
+
+- **G2 (a flaw in the gate, Codex's A3).** Wrapping a family under a new main adds a depth 1 (main's ports and the first copy's own
+  distinctions, which are the original's depth 0), so a family with no ray bond at any depth can gain one at depth 1 only. Codex
+  found exactly this in its two mismatches (L' = 3, INF, INF, … against INF, …, λ, completeness and every shifted depth equal).
+  G2 compares the long-run class, with "none at any depth" and "lost at large depths" taken together; under it G2 passes.
+- **C1, the G3 panel (A1).** Chosen by `g3_panel.py` (frozen in the folder) from the smoke run's computed families: 10 per class
+  from each class's 30 smallest blocks, then several-definition families to 40, then to 150, one `Random(7)` stream. Mixed by
+  residue has fewer than 10 in the smoke run; the rest of the quotas are met.
+- **C2, G1 at the census caps (A2).** Compared only where both PR's graph and this run's are complete under 300,000 nodes; the rest
+  are listed as not comparable.
+- **C3, bootstrap conventions (A4–A7).** Quantiles by linear interpolation at position (n − 1)p; one shared `Random(20261113)`
+  stream in the summarizer's group order; P1 resamples the forever cell's computed draws and then conditions; P3 resamples the two
+  cells independently.
+- **C4 (A8).** The unresolved class's own share is reported exactly, without a band.

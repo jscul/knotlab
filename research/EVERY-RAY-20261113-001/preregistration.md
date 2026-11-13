@@ -105,3 +105,37 @@ main's first call, so the minimum did not run over every path. The fix and answe
 - the carried T-extension is to be built by Codex.
 
 The predictions and classes are unchanged. G-last's earlier failures are kept as evidence of the flaw.
+
+## Third clarification: a frozen sample in place of the census (2026-11-13, no class share seen)
+
+Codex's second hand-off (`codex_spec_addendum.md`) built the free start and the carried extension. It was stopped by its time cap at
+204 of 300 smoke families, before G-brute. It flagged two more gaps: G-reg against the free start, and G-brute's ordering. Timing:
+mean 58 s per family, with 15% of families stopped by the 300 s cap, so the 32,315 eligible families would take days. The advisor
+reviewed the replacement design cold (`advisor_review_answer_2.md`); its points are adopted.
+
+- **Strata** (`sample_paths.py`, one `Random(20261114)` stream over sorted keys), by the census's first-ray class:
+  - **G**, 300 first-ray growers (6,925 eligible, excluding the 224 one-definition growers, which run in full as G-last).
+  - **N**, 200 first-ray none-or-lost families (6,469).
+  - **B**, 100 first-ray bounded families (18,281). They are bounded over paths by construction (L_path ≤ L_ray), so only
+    their carried split is open, and it is reported as description only.
+- **Phase 2.** Every G and N family left unresolved by a cap is run again at 1,000 s and 1,000,000 nodes. Families stopped by
+  memory stay unresolved.
+- **Estimates.** Count shares are sample proportions, with Wilson 95% intervals. Weight shares weight each sampled family by its
+  draws; they are near the count shares here (6,989 draws on 6,925 growers). Unresolved families count against a class (low) and
+  for it (high). The 5% undecided rule is dropped, because the bands already carry the unresolved.
+- **P1, the verdict reading.** The count share of bounded-over-paths among sampled G families with at least two inequivalent SELF
+  calls. Families whose calls are all equivalent grow by construction (L_path = L_ray), so they are reported separately.
+  - **Holds** if the low band's Wilson lower end is at least 75%.
+  - **Fails** if the high band's Wilson upper end is below 75%.
+  - Otherwise **undecided**.
+  - The weight majority, the uncarried reading and G-last's 224 are reported beside it, not as the verdict.
+- **P2, P3.** These are existence claims, confirmed by any sampled instance; they cannot be refuted by a sample. "Not found" bounds
+  the share below about 1.5% at n = 200. P3 is existential over paths: a family is a hit when some path keeps a bond at large
+  depths (a bondless path enters the minimum as INF), and a cap does not block a hit.
+- **Uncarried.** L_path^unc ≥ L_path, so uncarried-bounded implies bounded. "None at any depth" on the uncarried graph includes
+  families with no uncarried path at all.
+- **Gates.**
+  - G-reg is judged on families with one SELF call and one entry, where the free start changes nothing.
+  - G-last runs on all 224.
+  - G-brute's panel is the completed 300-family smoke ordered by largest block, then the sum of block sizes (`max_then_sum`).
+  - The completed smoke, a uniform sample of eligible families, is reported as description only.

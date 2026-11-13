@@ -1,0 +1,2614 @@
+{
+  "identity": "ADDR-KNOTS-20261113-001 referee R1 joining/hash sample",
+  "branch": "code_analysis",
+  "evidence_stage": "independent_referee_sample",
+  "method": {
+    "reconstruction": "lead fresh_patterns.py, fresh code from frozen spec",
+    "joining": "explicit suffix partitions from binary strings; membership counts",
+    "fingerprint": "fresh signed little-endian integer byte construction",
+    "selection": "five per class from revised activity sample; globally unique hashes; cover state counts then favour large placement lists",
+    "k2": "reported diagnostic only; no stored comparison",
+    "no_SAT_solve": true
+  },
+  "sources": {
+    "keys_path": "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/keys.jsonl.gz",
+    "keys_sha256": "9620fa77333830ed356ee197c0642ae45f566a82a3b6a58c72ac182c2378317e",
+    "activity_json_sha256": "f8057ed0cf27d82ed801a4bfeac26b739098676f58562defcd3c9cdce5552ff8",
+    "fresh_patterns_sha256": "d76532494edecad09358475b42229c570bfd978d9d81ad8f0fadd92a040f9ca1",
+    "script_sha256": "7e970c929fcea87935f4c30f0bd959bf921428898e300f16780ad982a5f0f2e3"
+  },
+  "controls": {
+    "literal_pattern": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        4,
+        8
+      ],
+      [
+        1,
+        3,
+        5
+      ]
+    ],
+    "level": 4,
+    "k1_expected": 1,
+    "k1_computed": 1,
+    "k2_expected": 3,
+    "k2_computed": 3,
+    "empty_join_count": 0,
+    "wrong_prefix_cut_detected": {
+      "triple": [
+        0,
+        4,
+        8
+      ],
+      "correct_suffix_join": 0,
+      "wrong_prefix_join": 1
+    },
+    "independent_hash_bytes_match_fresh_module": true,
+    "all_passed": true
+  },
+  "samples": [
+    {
+      "key_id": "d918cf0f519175b238bf023ad60e08b818f5bdf8809b6da1dd89b12f60b92760",
+      "key": [
+        2,
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          [
+            3,
+            4,
+            5
+          ]
+        ]
+      ],
+      "rel_class": "finitary",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_n": [
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "01b24bfa72e6be89725fea313a6ea3cd9d28c34e"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "01b24bfa72e6be89725fea313a6ea3cd9d28c34e"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.02396465395577252
+    },
+    {
+      "key_id": "bd0944644764e111dd8dbc8a745226ebd99eb7e3df04d465acd83b6df5c5b996",
+      "key": [
+        3,
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          [
+            3,
+            5,
+            6
+          ],
+          [
+            4,
+            8,
+            10
+          ]
+        ]
+      ],
+      "rel_class": "finitary",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "join_n": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "9b838aafecab195a8826ab7473fb8e1ee6d9a6dc"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "join_k1_n": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "join_k2_n": [
+          null,
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "9b838aafecab195a8826ab7473fb8e1ee6d9a6dc"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.01905312400776893
+    },
+    {
+      "key_id": "e62fc67e1d1bf2bedb62d4e35a86266b732730778167f9ea593c47e0efd3e49f",
+      "key": [
+        4,
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          1,
+          1
+        ],
+        [
+          [
+            7,
+            12,
+            17
+          ]
+        ]
+      ],
+      "rel_class": "finitary",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          0,
+          6,
+          12,
+          24,
+          48,
+          96,
+          192,
+          384,
+          768,
+          1536,
+          3072
+        ],
+        "join_n": [
+          0,
+          0,
+          6,
+          8,
+          8,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "2efbccd8a88e4c61e9ce57e9ad95365b3254ae5c"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          0,
+          6,
+          12,
+          24,
+          48,
+          96,
+          192,
+          384,
+          768,
+          1536,
+          3072
+        ],
+        "join_k1_n": [
+          0,
+          0,
+          6,
+          8,
+          8,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "join_k2_n": [
+          null,
+          0,
+          6,
+          12,
+          20,
+          20,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "2efbccd8a88e4c61e9ce57e9ad95365b3254ae5c"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.020139349973760545
+    },
+    {
+      "key_id": "c205c940f8b12b064aed69affcb592f10a14a231d0801ab20896c25625c36813",
+      "key": [
+        5,
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        [
+          3,
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          [
+            13,
+            15,
+            26
+          ]
+        ]
+      ],
+      "rel_class": "finitary",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          0,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "join_n": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "54a619b56927a8449751b80cede5e02b50d7f142"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          0,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "join_k1_n": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "join_k2_n": [
+          null,
+          0,
+          2,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "54a619b56927a8449751b80cede5e02b50d7f142"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.010913325939327478
+    },
+    {
+      "key_id": "59a5da8fb04a2ec0c6c09ebb31e9a89df4f271404719922c54f25cdf5f1a5e0f",
+      "key": [
+        4,
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          [
+            2,
+            6,
+            13
+          ],
+          [
+            7,
+            12,
+            13
+          ],
+          [
+            7,
+            12,
+            15
+          ],
+          [
+            9,
+            16,
+            20
+          ],
+          [
+            13,
+            15,
+            17
+          ]
+        ]
+      ],
+      "rel_class": "finitary",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          14,
+          28,
+          56,
+          112,
+          224,
+          448,
+          896,
+          1792,
+          3584,
+          7168
+        ],
+        "join_n": [
+          0,
+          4,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "9b12028e7cda7b531584082e407e2d9ab47cd83c"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          14,
+          28,
+          56,
+          112,
+          224,
+          448,
+          896,
+          1792,
+          3584,
+          7168
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          14,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pattern_hash": "9b12028e7cda7b531584082e407e2d9ab47cd83c"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.043821912026032805
+    },
+    {
+      "key_id": "e4934a29b372c17c2aabe932f5c99e44605170a8e38e1a55c0825bac0203f528",
+      "key": [
+        2,
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            3,
+            6
+          ]
+        ]
+      ],
+      "rel_class": "bounded",
+      "rel_degree": 0,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_n": [
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.026921655982732773
+    },
+    {
+      "key_id": "21a548ea7c4daa537fffc9632d65a2acc5ac4cf8686039c3afc08fb8d09debcb",
+      "key": [
+        3,
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          [
+            4,
+            6,
+            8
+          ],
+          [
+            9,
+            11,
+            12
+          ]
+        ]
+      ],
+      "rel_class": "bounded",
+      "rel_degree": 0,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_n": [
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "pattern_hash": "df2738d767cf2dace4feff81fc120ca2a21268c3"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "pattern_hash": "df2738d767cf2dace4feff81fc120ca2a21268c3"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.02561282808892429
+    },
+    {
+      "key_id": "1b2c602dd5c8cc80687bce1fc2c5564edb4a8e7a879e96a360faaf104b38247a",
+      "key": [
+        4,
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          [
+            5,
+            8,
+            19
+          ]
+        ]
+      ],
+      "rel_class": "bounded",
+      "rel_degree": 0,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          2,
+          6,
+          12,
+          24,
+          48,
+          96,
+          192,
+          384,
+          768,
+          1536,
+          3072
+        ],
+        "join_n": [
+          0,
+          2,
+          4,
+          4,
+          2,
+          4,
+          4,
+          2,
+          4,
+          4,
+          2,
+          4
+        ],
+        "pattern_hash": "3d9d2dd57a65cdaaf685b43f520e21fe1817749f"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          2,
+          6,
+          12,
+          24,
+          48,
+          96,
+          192,
+          384,
+          768,
+          1536,
+          3072
+        ],
+        "join_k1_n": [
+          0,
+          2,
+          4,
+          4,
+          2,
+          4,
+          4,
+          2,
+          4,
+          4,
+          2,
+          4
+        ],
+        "join_k2_n": [
+          null,
+          2,
+          6,
+          8,
+          8,
+          6,
+          8,
+          8,
+          6,
+          8,
+          8,
+          6
+        ],
+        "pattern_hash": "3d9d2dd57a65cdaaf685b43f520e21fe1817749f"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.020033331005834043
+    },
+    {
+      "key_id": "4fa55f4a3195aefeec148af698f9d1e4e609237ce17e11ab2ee384acab7462c1",
+      "key": [
+        5,
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          3,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          2,
+          2,
+          2
+        ],
+        [
+          [
+            11,
+            13,
+            19
+          ]
+        ]
+      ],
+      "rel_class": "bounded",
+      "rel_degree": 0,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "join_n": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2
+        ],
+        "pattern_hash": "e949673bb86ae8abf57d7b8fef1349cb708ef219"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048
+        ],
+        "join_k1_n": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2
+        ],
+        "join_k2_n": [
+          null,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2
+        ],
+        "pattern_hash": "e949673bb86ae8abf57d7b8fef1349cb708ef219"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.01564164098817855
+    },
+    {
+      "key_id": "cfdbd72527fecd3cd50475fa6a1f58e800f268482af01ec301fb19883c8770f4",
+      "key": [
+        3,
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          [
+            0,
+            6,
+            10
+          ],
+          [
+            0,
+            7,
+            10
+          ],
+          [
+            1,
+            10,
+            11
+          ],
+          [
+            2,
+            8,
+            9
+          ],
+          [
+            3,
+            10,
+            11
+          ],
+          [
+            4,
+            5,
+            9
+          ],
+          [
+            5,
+            9,
+            11
+          ],
+          [
+            6,
+            8,
+            12
+          ],
+          [
+            7,
+            8,
+            11
+          ]
+        ]
+      ],
+      "rel_class": "bounded",
+      "rel_degree": 0,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          14,
+          40,
+          80,
+          160,
+          320,
+          640,
+          1280,
+          2560,
+          5120,
+          10240
+        ],
+        "join_n": [
+          0,
+          4,
+          10,
+          16,
+          18,
+          16,
+          18,
+          16,
+          18,
+          16,
+          18,
+          16
+        ],
+        "pattern_hash": "1ef8c5e690b9366f92d40b8bb5bdd043fd545934"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          14,
+          40,
+          80,
+          160,
+          320,
+          640,
+          1280,
+          2560,
+          5120,
+          10240
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          10,
+          16,
+          18,
+          16,
+          18,
+          16,
+          18,
+          16,
+          18,
+          16
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          14,
+          34,
+          40,
+          42,
+          40,
+          42,
+          40,
+          42,
+          40,
+          42
+        ],
+        "pattern_hash": "1ef8c5e690b9366f92d40b8bb5bdd043fd545934"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.06146679993253201
+    },
+    {
+      "key_id": "b2b75bd17d0afb69e3b283f316f0c6978e0a7bf3a752500523c571facb2a3225",
+      "key": [
+        3,
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          [
+            6,
+            9,
+            12
+          ]
+        ]
+      ],
+      "rel_class": "polynomial",
+      "rel_degree": 1,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          2,
+          6,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094
+        ],
+        "join_n": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pattern_hash": "81f04aab46a0a967fcaed9894f2a0ee14b1f874e"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          2,
+          6,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094
+        ],
+        "join_k1_n": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "join_k2_n": [
+          null,
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30,
+          34,
+          38,
+          42
+        ],
+        "pattern_hash": "81f04aab46a0a967fcaed9894f2a0ee14b1f874e"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.024801859981380403
+    },
+    {
+      "key_id": "204f5303519beb736d46c3b15ea411e8aea88f8e4fbdd954b62c32e4d62dfe23",
+      "key": [
+        4,
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          [
+            9,
+            14,
+            17
+          ]
+        ]
+      ],
+      "rel_class": "polynomial",
+      "rel_degree": 1,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_n": [
+          0,
+          4,
+          4,
+          10,
+          18,
+          22,
+          26,
+          30,
+          34,
+          38,
+          42,
+          46
+        ],
+        "pattern_hash": "405171302c11330c20ad29cf7f8147e88a506581"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          4,
+          10,
+          18,
+          22,
+          26,
+          30,
+          34,
+          38,
+          42,
+          46
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          8,
+          12,
+          28,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88
+        ],
+        "pattern_hash": "405171302c11330c20ad29cf7f8147e88a506581"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.02519726299215108
+    },
+    {
+      "key_id": "b1fffb7263f4e0a6d195e0a28ce0922ba0baac49722ebe1cd483c4b726803cb7",
+      "key": [
+        5,
+        [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          3
+        ],
+        [
+          3,
+          4,
+          1,
+          4,
+          4
+        ],
+        [
+          [
+            1,
+            3,
+            15
+          ],
+          [
+            3,
+            11,
+            28
+          ],
+          [
+            3,
+            19,
+            30
+          ],
+          [
+            6,
+            16,
+            21
+          ],
+          [
+            7,
+            15,
+            21
+          ],
+          [
+            10,
+            11,
+            13
+          ],
+          [
+            17,
+            25,
+            26
+          ]
+        ]
+      ],
+      "rel_class": "polynomial",
+      "rel_degree": 1,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          2,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094,
+          8190
+        ],
+        "join_n": [
+          0,
+          2,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40,
+          44,
+          48
+        ],
+        "pattern_hash": "af4a0451739d55395937808d8d010083ff9dbfd6"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          2,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094,
+          8190
+        ],
+        "join_k1_n": [
+          0,
+          2,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40,
+          44,
+          48
+        ],
+        "join_k2_n": [
+          null,
+          2,
+          14,
+          26,
+          34,
+          42,
+          50,
+          58,
+          66,
+          74,
+          82,
+          90
+        ],
+        "pattern_hash": "af4a0451739d55395937808d8d010083ff9dbfd6"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.051896570017561316
+    },
+    {
+      "key_id": "7eebe452236bd1a400af584098cbe9fea88b5937a80b5e59431a3ed783990fd9",
+      "key": [
+        3,
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            4,
+            10
+          ],
+          [
+            0,
+            9,
+            12
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            3,
+            10
+          ],
+          [
+            3,
+            8,
+            9
+          ],
+          [
+            4,
+            9,
+            10
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            8,
+            9,
+            10
+          ]
+        ]
+      ],
+      "rel_class": "polynomial",
+      "rel_degree": 1,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          14,
+          40,
+          88,
+          184,
+          376,
+          760,
+          1528,
+          3064,
+          6136,
+          12280
+        ],
+        "join_n": [
+          0,
+          4,
+          10,
+          22,
+          32,
+          42,
+          52,
+          62,
+          72,
+          82,
+          92,
+          102
+        ],
+        "pattern_hash": "7b40ea20120c48d2b4227369ddc2aa1e43597589"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          14,
+          40,
+          88,
+          184,
+          376,
+          760,
+          1528,
+          3064,
+          6136,
+          12280
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          10,
+          22,
+          32,
+          42,
+          52,
+          62,
+          72,
+          82,
+          92,
+          102
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          14,
+          32,
+          52,
+          72,
+          92,
+          112,
+          132,
+          152,
+          172,
+          192
+        ],
+        "pattern_hash": "7b40ea20120c48d2b4227369ddc2aa1e43597589"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.07177062600385398
+    },
+    {
+      "key_id": "4671d05e3c20c0ea04b8f0875d1932e1655cda8ae622e888bd5aaffdb9b754be",
+      "key": [
+        3,
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          [
+            0,
+            5,
+            11
+          ],
+          [
+            1,
+            4,
+            9
+          ],
+          [
+            1,
+            5,
+            9
+          ],
+          [
+            1,
+            8,
+            12
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            2,
+            5,
+            11
+          ],
+          [
+            3,
+            7,
+            10
+          ],
+          [
+            4,
+            5,
+            11
+          ]
+        ]
+      ],
+      "rel_class": "polynomial",
+      "rel_degree": 1,
+      "fate": "F2",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          22,
+          70,
+          150,
+          310,
+          630,
+          1270,
+          2550,
+          5110,
+          10230,
+          20470
+        ],
+        "join_n": [
+          0,
+          4,
+          18,
+          48,
+          64,
+          80,
+          96,
+          112,
+          128,
+          144,
+          160,
+          176
+        ],
+        "pattern_hash": "01b97d2e8861a1bb4b35e81f53de51ad1d1c84d9"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          22,
+          70,
+          150,
+          310,
+          630,
+          1270,
+          2550,
+          5110,
+          10230,
+          20470
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          18,
+          48,
+          64,
+          80,
+          96,
+          112,
+          128,
+          144,
+          160,
+          176
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          22,
+          62,
+          106,
+          138,
+          170,
+          202,
+          234,
+          266,
+          298,
+          330
+        ],
+        "pattern_hash": "01b97d2e8861a1bb4b35e81f53de51ad1d1c84d9"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.11343870300333947
+    },
+    {
+      "key_id": "4a50ce11e2516797979942bbdd78d42efd49aca96ad328f73bda805b4c875372",
+      "key": [
+        2,
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            2,
+            3,
+            6
+          ]
+        ]
+      ],
+      "rel_class": "exponential",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          2,
+          6,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094
+        ],
+        "join_n": [
+          0,
+          2,
+          6,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094
+        ],
+        "pattern_hash": "5d8fa7fa4bd50521bbb9201c6e87a3cc24d9de6c"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          2,
+          6,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094
+        ],
+        "join_k1_n": [
+          0,
+          2,
+          6,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094
+        ],
+        "join_k2_n": [
+          null,
+          2,
+          6,
+          14,
+          30,
+          62,
+          126,
+          254,
+          510,
+          1022,
+          2046,
+          4094
+        ],
+        "pattern_hash": "5d8fa7fa4bd50521bbb9201c6e87a3cc24d9de6c"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.02638507599476725
+    },
+    {
+      "key_id": "f00775819bc49caf5c8fb844fe4e60282a5621c7184c93d4e42f2adba410e307",
+      "key": [
+        3,
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          [
+            0,
+            1,
+            10
+          ],
+          [
+            0,
+            11,
+            12
+          ],
+          [
+            1,
+            2,
+            11
+          ],
+          [
+            1,
+            3,
+            8
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            2,
+            6,
+            12
+          ],
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            5,
+            8,
+            12
+          ],
+          [
+            5,
+            9,
+            10
+          ]
+        ]
+      ],
+      "rel_class": "exponential",
+      "rel_degree": null,
+      "fate": "F2",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          38,
+          108,
+          224,
+          456,
+          920,
+          1848,
+          3704,
+          7416,
+          14840,
+          29688
+        ],
+        "join_n": [
+          0,
+          4,
+          34,
+          90,
+          184,
+          340,
+          692,
+          1278,
+          2538,
+          4728,
+          9402,
+          17868
+        ],
+        "pattern_hash": "637bc8db8129e5540c6cddd15ed26172a4185cad"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          38,
+          108,
+          224,
+          456,
+          920,
+          1848,
+          3704,
+          7416,
+          14840,
+          29688
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          34,
+          90,
+          184,
+          340,
+          692,
+          1278,
+          2538,
+          4728,
+          9402,
+          17868
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          38,
+          106,
+          218,
+          434,
+          852,
+          1668,
+          3216,
+          6250,
+          12074,
+          23558
+        ],
+        "pattern_hash": "637bc8db8129e5540c6cddd15ed26172a4185cad"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.15880639397073537
+    },
+    {
+      "key_id": "53eaf670c17f4ef3e6766064ab01b4d7f58685088f8acd8e3ef1dbc60ccdcb96",
+      "key": [
+        4,
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          2,
+          2
+        ],
+        [
+          [
+            9,
+            10,
+            17
+          ]
+        ]
+      ],
+      "rel_class": "exponential",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          0,
+          4,
+          14,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_n": [
+          0,
+          0,
+          4,
+          10,
+          16,
+          36,
+          72,
+          110,
+          222,
+          386,
+          720,
+          1274
+        ],
+        "pattern_hash": "2b68b27f9e61425ca6cac37ca669854568acdd4b"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          0,
+          4,
+          14,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_k1_n": [
+          0,
+          0,
+          4,
+          10,
+          16,
+          36,
+          72,
+          110,
+          222,
+          386,
+          720,
+          1274
+        ],
+        "join_k2_n": [
+          null,
+          0,
+          4,
+          14,
+          28,
+          46,
+          104,
+          192,
+          338,
+          614,
+          1156,
+          2074
+        ],
+        "pattern_hash": "2b68b27f9e61425ca6cac37ca669854568acdd4b"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.02596007799729705
+    },
+    {
+      "key_id": "60c57f2b068bf5574a7d944aab57949710a8912b7caf6e23ba338cbf8cdabf9e",
+      "key": [
+        5,
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          [
+            5,
+            24,
+            26
+          ]
+        ]
+      ],
+      "rel_class": "exponential",
+      "rel_degree": null,
+      "fate": "F3",
+      "recorded": {
+        "knots_n": [
+          0,
+          0,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_n": [
+          0,
+          0,
+          8,
+          8,
+          16,
+          36,
+          70,
+          126,
+          222,
+          424,
+          834,
+          1630
+        ],
+        "pattern_hash": "77964acd401b021b094b8b37284c7a0a064dde1e"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          0,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096
+        ],
+        "join_k1_n": [
+          0,
+          0,
+          8,
+          8,
+          16,
+          36,
+          70,
+          126,
+          222,
+          424,
+          834,
+          1630
+        ],
+        "join_k2_n": [
+          null,
+          0,
+          8,
+          16,
+          22,
+          44,
+          88,
+          172,
+          326,
+          612,
+          1192,
+          2356
+        ],
+        "pattern_hash": "77964acd401b021b094b8b37284c7a0a064dde1e"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.025640804087743163
+    },
+    {
+      "key_id": "98a0bd19b09c97206024318e9b99e87141cc1bcf5d2bcd4b8935254e9191fe60",
+      "key": [
+        3,
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          [
+            0,
+            4,
+            12
+          ],
+          [
+            0,
+            8,
+            9
+          ],
+          [
+            1,
+            4,
+            11
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            2,
+            4,
+            9
+          ],
+          [
+            2,
+            4,
+            10
+          ],
+          [
+            5,
+            7,
+            11
+          ],
+          [
+            5,
+            9,
+            10
+          ]
+        ]
+      ],
+      "rel_class": "exponential",
+      "rel_degree": null,
+      "fate": "F2",
+      "recorded": {
+        "knots_n": [
+          0,
+          4,
+          22,
+          76,
+          168,
+          344,
+          696,
+          1400,
+          2808,
+          5624,
+          11256,
+          22520
+        ],
+        "join_n": [
+          0,
+          4,
+          18,
+          64,
+          122,
+          232,
+          432,
+          830,
+          1606,
+          3156,
+          6236,
+          12394
+        ],
+        "pattern_hash": "970f3de48b0c1a0787430b7005c5e877538cdcc6"
+      },
+      "reconstructed": {
+        "knots_n": [
+          0,
+          4,
+          22,
+          76,
+          168,
+          344,
+          696,
+          1400,
+          2808,
+          5624,
+          11256,
+          22520
+        ],
+        "join_k1_n": [
+          0,
+          4,
+          18,
+          64,
+          122,
+          232,
+          432,
+          830,
+          1606,
+          3156,
+          6236,
+          12394
+        ],
+        "join_k2_n": [
+          null,
+          4,
+          22,
+          72,
+          156,
+          308,
+          604,
+          1188,
+          2348,
+          4660,
+          9276,
+          18500
+        ],
+        "pattern_hash": "970f3de48b0c1a0787430b7005c5e877538cdcc6"
+      },
+      "counts_match": true,
+      "join_k1_match": true,
+      "pattern_hash_match": true,
+      "wall_seconds": 0.1251797559671104
+    }
+  ],
+  "summary": {
+    "sampled_keys": 20,
+    "nonempty_keys": 20,
+    "distinct_pattern_hashes": 20,
+    "samples_per_class": {
+      "finitary": 5,
+      "bounded": 5,
+      "polynomial": 5,
+      "exponential": 5
+    },
+    "levels_checked": 240,
+    "knot_count_mismatches": 0,
+    "k1_join_mismatches": 0,
+    "pattern_hash_mismatches": 0
+  },
+  "resources": {
+    "wall_seconds": 1.4153450588928536,
+    "peak_rss_mib": 30.59375,
+    "address_space_cap_bytes": 2147483648,
+    "child_processes": 0
+  },
+  "limitations": [
+    "Sample only, not a complete census audit.",
+    "Pattern reconstruction is shared with the lead; joining and hash bytes are separate.",
+    "No all-level survival or native-emergence conclusion."
+  ]
+}

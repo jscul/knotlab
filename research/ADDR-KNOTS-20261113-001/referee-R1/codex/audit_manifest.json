@@ -1,0 +1,32 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "ADDR-KNOTS-20261113-001",
+  "role": "independent referee recomputation, not a lifecycle or publication operation",
+  "question": "Do freshly reconstructed addressed NAE patterns reproduce the returning verdicts, sampled patterns, activity classes and joining counts?",
+  "branch": "code_analysis",
+  "evidence_stage": "independent finite recomputation",
+  "inputs": [
+    "research/ADDR-KNOTS-20261113-001/codex_spec.md",
+    "research/ADDR-KNOTS-20261113-001/codex_spec_addendum.md",
+    "research/ADDR-KNOTS-20261113-001/preregistration.md",
+    "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+    "research/ADDR-KNOTS-20261113-001/returns_recheck.json",
+    "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md",
+    "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/keys.jsonl.gz",
+    "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/draws.jsonl.gz",
+    "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/summary.md",
+    "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/summary_compact.json"
+  ],
+  "forbidden_inputs": [
+    "experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/**",
+    "research/ADDR-KNOTS-20261113-001/recheck_returns.py"
+  ],
+  "write_root": "research/ADDR-KNOTS-20261113-001/referee-R1/codex/",
+  "observables": ["level verdict with directly checked assignment or independently checked DRUP proof", "level knot count and SHA-1 pattern fingerprint", "exact relative activity class and degree", "joining count for suffix length 1", "scope and denominator of prose claims"],
+  "selection": "seven eventually parity-alternating returns first; other returns in increasing total recorded knot count; deterministic stratified pattern samples; separate class-balanced activity sample",
+  "controls": ["letter-by-letter action against inductive array action", "exhaustive Fano unsatisfiability against DRUP proof", "false empty clause and truncated proof rejection", "watched propagation against independent plain propagation", "independent inverse-composition and activity controls"],
+  "decision": "Report every mismatch or uncertified verdict explicitly. Finite agreement does not prove an all-level survival or alternation claim.",
+  "resource_budget": "at most 3 computation processes, 10 GB total, commands about 15 minutes maximum, whole task about 60 minutes, CPU only, no network",
+  "start_utc": "2026-11-13 22:25:25 UTC",
+  "nonclaims": ["no inference beyond level 12 from finite verdicts", "activity is an upper bound on joining, not a lower bound", "no theorem of native emergence or complexity separation"]
+}

@@ -1,0 +1,727 @@
+{
+  "category_counts": {
+    "Block": 1,
+    "Narrowing": 9,
+    "Not a block": 1
+  },
+  "evidence_class": "Independent aggregation of permitted artifact records, plus a fresh finite counterexample built from the permitted specification; no producer source was accessed.",
+  "issues": [
+    {
+      "category": "Block",
+      "finding": "False for suffix length 2, already at level 4. Prefix action does not imply that the same triples remain internal to every tail class. The explicit fixture is in tail_counterexample.",
+      "id": "W01",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            23,
+            24
+          ],
+          "quote": "small automaton on addresses, so a tail class has the same inner knots wherever it sits, is joined to the rest by knots that depend on\nits tail, and the number of joining knots may grow with the level (the owner's \"nested structures depend on the larger structures to",
+          "source_lines": {
+            "23": "small automaton on addresses, so a tail class has the same inner knots wherever it sits, is joined to the rest by knots that depend on",
+            "24": "its tail, and the number of joining knots may grow with the level (the owner's \"nested structures depend on the larger structures to"
+          }
+        },
+        {
+          "file": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md",
+          "lines": [
+            109,
+            110,
+            111
+          ],
+          "quote": "exponential activity at most exponentially. These are upper bounds only: maps can cancel, and a description whose state maps are\nexponentially active can have no joining knot at all. A class's inner knots are the same for every tail; how it is joined to the\nrest depends on its tail. Bartholdi 2022 (Groups Geom. Dyn.) proved the domino problem decidable in the bounded case and undecidable",
+          "source_lines": {
+            "109": "exponential activity at most exponentially. These are upper bounds only: maps can cancel, and a description whose state maps are",
+            "110": "exponentially active can have no joining knot at all. A class's inner knots are the same for every tail; how it is joined to the",
+            "111": "rest depends on its tail. Bartholdi 2022 (Groups Geom. Dyn.) proved the domino problem decidable in the bounded case and undecidable"
+          }
+        }
+      ],
+      "proposed_replacement": "A map's action on a prefix is independent of the suffix, while its section determines the output suffix. Consequently both the subset of knots internal to a tail class and the knots joining it to the rest may depend on its tail.",
+      "scope": "The asserted tail-independent internal pattern only; not the numeric census."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "3997 and 8952 are (pattern hash, relative class) memberships, not 3990 and 8937 distinct hashes. Relative activity is a property of a producing description and need not be unique for a hash. Bounded accounts for 7.87% of nonempty W draw weight, versus 3.66% of nonempty W class units; rare has no frozen threshold. These are minority frequencies, not an estimate of every pattern with actually bounded joining.",
+      "id": "W02",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            44
+          ],
+          "quote": "| 6 | **Growing joining is typical; bounded joining is rare and sparse.** By the relative maps' activity, 92% of W's distinct patterns (3,669 of 3,997) and 94% of E's (8,444 of 8,952) are exponential; among W draws with a knot, 88% by weight are exponential, 7.9% bounded, 2.7% polynomial, 1.4% finitary. Bounded and polynomial patterns are sparse (mean ρ_max 1.1 and 1.2 in W, 1.5 and 2.0 in E). The measured joining count agrees with the exact class: about constant for bounded (about 7 to 9 knots at levels 10 to 12), growing by about 10 to 12 per level for polynomial, doubling per level for exponential. | exact class; computed joining | check |",
+          "source_lines": {
+            "44": "| 6 | **Growing joining is typical; bounded joining is rare and sparse.** By the relative maps' activity, 92% of W's distinct patterns (3,669 of 3,997) and 94% of E's (8,444 of 8,952) are exponential; among W draws with a knot, 88% by weight are exponential, 7.9% bounded, 2.7% polynomial, 1.4% finitary. Bounded and polynomial patterns are sparse (mean ρ_max 1.1 and 1.2 in W, 1.5 and 2.0 in E). The measured joining count agrees with the exact class: about constant for bounded (about 7 to 9 knots at levels 10 to 12), growing by about 10 to 12 per level for polynomial, doubling per level for exponential. | exact class; computed joining | check |"
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            44
+          ],
+          "quote": "| 6 | **Growing joining is typical; bounded joining is rare and sparse.** By the relative maps' activity, 92% of W's distinct patterns (3,669 of 3,997) and 94% of E's (8,444 of 8,952) are exponential; among W draws with a knot, 88% by weight are exponential, 7.9% bounded, 2.7% polynomial, 1.4% finitary. Bounded and polynomial patterns are sparse (mean ρ_max 1.1 and 1.2 in W, 1.5 and 2.0 in E). The measured joining count agrees with the exact class: about constant for bounded (about 7 to 9 knots at levels 10 to 12), growing by about 10 to 12 per level for polynomial, doubling per level for exponential. | exact class; computed joining | check |",
+          "source_lines": {
+            "44": "| 6 | **Growing joining is typical; bounded joining is rare and sparse.** By the relative maps' activity, 92% of W's distinct patterns (3,669 of 3,997) and 94% of E's (8,444 of 8,952) are exponential; among W draws with a knot, 88% by weight are exponential, 7.9% bounded, 2.7% polynomial, 1.4% finitary. Bounded and polynomial patterns are sparse (mean ρ_max 1.1 and 1.2 in W, 1.5 and 2.0 in E). The measured joining count agrees with the exact class: about constant for bounded (about 7 to 9 knots at levels 10 to 12), growing by about 10 to 12 per level for polynomial, doubling per level for exponential. | exact class; computed joining | check |"
+          }
+        }
+      ],
+      "proposed_replacement": "Exponential relative activity is most frequent in this sample; bounded activity is a minority. Among the 5,759 W draws with a knot within levels 1–12, 5,066 (88.0%) are exponential, 453 (7.9%) bounded, 158 (2.7%) polynomial, and 82 (1.4%) finitary. Class-split counts use (pattern hash, relative class), allowing one pattern to occur in several classes: after excluding F0, exponential has 3,668/3,993 units in W (91.9%) and 8,443/8,948 in E (94.4%); bounded has 146/3,993 (3.7%) and 292/8,948 (3.3%)."
+    },
+    {
+      "alternative_replacement_preserving_raw_measure": "Here settled is evaluated on each sampled description itself, rather than inherited from any description of the same pattern as in the frozen summary:4,307/5,759 (74.8%) are settled and 314/1,452 (21.6%) of the rest are F2.",
+      "category": "Narrowing",
+      "finding": "The original numbers are correct when each draw is classified by its OWN description flags. Under the addendum and frozen unsplit pattern summary, any description can settle its pattern; this gives 4604 settled and 1155 unsettled draws, with 314/1155=27.19% F2. Do not call the raw description arithmetic wrong; disclose its different unit or use the frozen pattern rule. The 61.8% actual one-state and 18.2% other-empty components are independently confirmed.",
+      "id": "W03",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            41
+          ],
+          "quote": "| 3 | **Typical: alive at every level read, mostly by construction.** Of the 28,770 accepted W draws, 61.8% have one state map and place no knot, and 18.2% more place none within level 12. Of the 5,759 with a knot, 94.3% are alive at every level read, 5.5% end, 0.3% are undecided; 74.8% are settled by construction (B0 or first letter). Of the 1,452 unsettled, 21.6% end within level 12. | computed, frozen | descriptive |",
+          "source_lines": {
+            "41": "| 3 | **Typical: alive at every level read, mostly by construction.** Of the 28,770 accepted W draws, 61.8% have one state map and place no knot, and 18.2% more place none within level 12. Of the 5,759 with a knot, 94.3% are alive at every level read, 5.5% end, 0.3% are undecided; 74.8% are settled by construction (B0 or first letter). Of the 1,452 unsettled, 21.6% end within level 12. | computed, frozen | descriptive |"
+          }
+        }
+      ],
+      "proposed_replacement": "Among the 28,770 accepted W draws, 17,768 (61.8%) have one state map and place no knot; 5,243 more (18.2%) place no knot within levels 1–12. Among the 5,759 draws with a knot, 5,430 (94.3%) are alive at every level read, 314 (5.5%) have an observed death after an alive knotted level, and 15 (0.3%) are FU. Using the addendum rule that any description can settle its pattern, 4,604/5,759 (79.9%) are settled; among the remaining 1,155 draws, 314 (27.2%) are F2."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "Exact activity provides an upper bound, not a lower bound on actual joining. Class averages at levels 10–12 do not establish every-level growth for individual patterns. Nonempty W exponential key cb20b8fe2c4262bab1f0cf6a4b0124c0f082e6e72267baf75842775b08776d97 has J = [0,4,4,4,4,4,4,4,4,4,4,4]. Eleven exponential nonempty W draws satisfy J10 = J11 = J12. State the sample, conditioning, and finite-level boundary.",
+      "id": "W04",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            52,
+            53,
+            54
+          ],
+          "quote": "When nested parts know where they are through an automaton, growing joining is the typical case, not the exception: under a weighting\nby short descriptions almost every pattern's tail classes are joined to the rest by a number of knots that doubles with each level,\nand the bounded case, where every earlier nested result of the program lives, is a few percent. Most patterns live at every level",
+          "source_lines": {
+            "52": "When nested parts know where they are through an automaton, growing joining is the typical case, not the exception: under a weighting",
+            "53": "by short descriptions almost every pattern's tail classes are joined to the rest by a number of knots that doubles with each level,",
+            "54": "and the bounded case, where every earlier nested result of the program lives, is a few percent. Most patterns live at every level"
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            147,
+            148
+          ],
+          "quote": "   more targeted, not less worth doing: typical patterns have exponentially many joining knots, so the informative cases are the rare\n   bounded and polynomial ones, where Bartholdi's undecidable example lives.",
+          "source_lines": {
+            "147": "   more targeted, not less worth doing: typical patterns have exponentially many joining knots, so the informative cases are the rare",
+            "148": "   bounded and polynomial ones, where Bartholdi's undecidable example lives."
+          }
+        }
+      ],
+      "proposed_replacement": "Among accepted W draws with a knot within levels 1–12, exponential relative activity is most frequent (88.0%); bounded activity accounts for 7.9%. In the exponential class the mean measured joining count nearly doubled from level 10 to 11 and from 11 to 12. Activity bounds joining from above, so these data do not show that every exponential description has growing joining, or that the observed growth continues beyond level 12."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "F1/F2 record an observed dead level; neither means permanent extinction. All 48 returning keys remain F2,25 are alive at level 12,19 dead,4 undecided. Late first deaths were observed only in exponential-class descriptions, which is a finite-sample association, not necessity of actual exponential joining.",
+      "id": "W05",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            17,
+            18
+          ],
+          "quote": "The fates: F1 **resolves to nothing** (dead at its first level with knots), F2 **ends** (alive at some level, dead at a later one), F3\n**alive at every level read**, F0 no knot, FU undecided by the solver's budget; all \"within level 12\".",
+          "source_lines": {
+            "17": "The fates: F1 **resolves to nothing** (dead at its first level with knots), F2 **ends** (alive at some level, dead at a later one), F3",
+            "18": "**alive at every level read**, F0 no knot, FU undecided by the solver's budget; all \"within level 12\"."
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            45
+          ],
+          "quote": "| 7 | **Late ends need growing joining.** Bounded patterns die only at level 3 (2 of E's 293); polynomial ones by level 6 (11 of 196); exponential ones first die at every level from 3 to 12 (15 of E's at levels 9 to 12). | computed, frozen | P4 held (21 qualifying descriptions) |",
+          "source_lines": {
+            "45": "| 7 | **Late ends need growing joining.** Bounded patterns die only at level 3 (2 of E's 293); polynomial ones by level 6 (11 of 196); exponential ones first die at every level from 3 to 12 (15 of E's at levels 9 to 12). | computed, frozen | P4 held (21 qualifying descriptions) |"
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            55,
+            56
+          ],
+          "quote": "read, three quarters of them for reasons settled by construction. Of the rest about one in five ends, never at once and sometimes\nlate, and the late ends occur only where joining grows exponentially. Density explains most of who dies. Whether the growth of",
+          "source_lines": {
+            "55": "read, three quarters of them for reasons settled by construction. Of the rest about one in five ends, never at once and sometimes",
+            "56": "late, and the late ends occur only where joining grows exponentially. Density explains most of who dies. Whether the growth of"
+          }
+        }
+      ],
+      "proposed_replacement": "Within levels 1–12, F1 means dead at the first level with knots; F2 means alive at a knotted level and dead at a later knotted level; a return is a separate flag. Neither F1 nor F2 asserts permanent extinction. All observed first deaths at levels 9–12 were in descriptions of exponential relative activity; no all-level necessity is claimed."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "The sole eligible E cell has 8 observed exponential deaths,0 bounded deaths, and 16 FU exponential units. The exponential arm denominator for assigned shares is 1108, not 1092 decided units. The frozen same verdict means the interval lies within the 10-percentage-point equivalence margin; it does not mean zero deaths or identical effects.",
+      "id": "W06",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            47
+          ],
+          "quote": "| 9 | **The matched comparison is testable only where nothing dies.** With settled patterns excluded, one cell is eligible ([1.5, 2.1), bounded against exponential, 36 against 1,092 decided): Δ = −0.007 with undecided read as alive, −0.022 as dead, both \"same\". So H-dens shows no failure and H-bound fails by its frozen rule. But neither arm dies there (0 of 36; 8 of 1,092), and where deaths happen (ρ_max ≥ 2.1) no bounded or polynomial cell reaches 30 patterns. Descriptively, not tested: bounded patterns at ρ_max ≥ 2.1 end in 2 of 27, against about 9 expected at the exponential rates of the same bins; polynomial ones in 11 of 33, against about 12. | computed, frozen | H-dens: no failure observed; H-bound: fails (frozen rule); the question is open where deaths occur |",
+          "source_lines": {
+            "47": "| 9 | **The matched comparison is testable only where nothing dies.** With settled patterns excluded, one cell is eligible ([1.5, 2.1), bounded against exponential, 36 against 1,092 decided): Δ = −0.007 with undecided read as alive, −0.022 as dead, both \"same\". So H-dens shows no failure and H-bound fails by its frozen rule. But neither arm dies there (0 of 36; 8 of 1,092), and where deaths happen (ρ_max ≥ 2.1) no bounded or polynomial cell reaches 30 patterns. Descriptively, not tested: bounded patterns at ρ_max ≥ 2.1 end in 2 of 27, against about 9 expected at the exponential rates of the same bins; polynomial ones in 11 of 33, against about 12. | computed, frozen | H-dens: no failure observed; H-bound: fails (frozen rule); the question is open where deaths occur |"
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            47
+          ],
+          "quote": "| 9 | **The matched comparison is testable only where nothing dies.** With settled patterns excluded, one cell is eligible ([1.5, 2.1), bounded against exponential, 36 against 1,092 decided): Δ = −0.007 with undecided read as alive, −0.022 as dead, both \"same\". So H-dens shows no failure and H-bound fails by its frozen rule. But neither arm dies there (0 of 36; 8 of 1,092), and where deaths happen (ρ_max ≥ 2.1) no bounded or polynomial cell reaches 30 patterns. Descriptively, not tested: bounded patterns at ρ_max ≥ 2.1 end in 2 of 27, against about 9 expected at the exponential rates of the same bins; polynomial ones in 11 of 33, against about 12. | computed, frozen | H-dens: no failure observed; H-bound: fails (frozen rule); the question is open where deaths occur |",
+          "source_lines": {
+            "47": "| 9 | **The matched comparison is testable only where nothing dies.** With settled patterns excluded, one cell is eligible ([1.5, 2.1), bounded against exponential, 36 against 1,092 decided): Δ = −0.007 with undecided read as alive, −0.022 as dead, both \"same\". So H-dens shows no failure and H-bound fails by its frozen rule. But neither arm dies there (0 of 36; 8 of 1,092), and where deaths happen (ρ_max ≥ 2.1) no bounded or polynomial cell reaches 30 patterns. Descriptively, not tested: bounded patterns at ρ_max ≥ 2.1 end in 2 of 27, against about 9 expected at the exponential rates of the same bins; polynomial ones in 11 of 33, against about 12. | computed, frozen | H-dens: no failure observed; H-bound: fails (frozen rule); the question is open where deaths occur |"
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            57,
+            58
+          ],
+          "quote": "joining matters once density is matched could be tested only where nothing dies, and there it changes nothing; where patterns do\ndie, bounded ones are too few to test, though they died less often. A fourth fate appears that growth cannot have: a pattern can die",
+          "source_lines": {
+            "57": "joining matters once density is matched could be tested only where nothing dies, and there it changes nothing; where patterns do",
+            "58": "die, bounded ones are too few to test, though they died less often. A fourth fate appears that growth cannot have: a pattern can die"
+          }
+        }
+      ],
+      "proposed_replacement": "The primary matched comparison is eligible only in a bin with few observed deaths. At rho_max in [1.5, 2.1), the bounded arm has 36 units and no observed deaths; the exponential arm has 1,108 units, including 8 F2 and 16 FU (1,092 decided). Delta is −8/1,108 = −0.00722 with FU read as alive and −24/1,108 = −0.02166 with FU read as dead. Both meet the frozen same criterion (within the 10 percentage point margin). No bounded or polynomial comparison is eligible in the bins rho_max >= 2.1, where observed death shares are larger."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "The displayed bins show an association with ever-observed death through level 12. They do not identify a causal effect, determinacy, or a fraction of variation explained. FU remains unresolved.",
+      "id": "W07",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            43
+          ],
+          "quote": "| 5 | **Density decides most of it.** By knots per address (ρ_max, E's distinct patterns), the death share is 0 below 1.5, 0.24% in [1.5, 2.1), 7.4% in [2.1, 3), 23% in [3, 4.5) and 66% from 4.5 on, where a third still live through level 12. | computed, frozen | descriptive |",
+          "source_lines": {
+            "43": "| 5 | **Density decides most of it.** By knots per address (ρ_max, E's distinct patterns), the death share is 0 below 1.5, 0.24% in [1.5, 2.1), 7.4% in [2.1, 3), 23% in [3, 4.5) and 66% from 4.5 on, where a third still live through level 12. | computed, frozen | descriptive |"
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            56
+          ],
+          "quote": "late, and the late ends occur only where joining grows exponentially. Density explains most of who dies. Whether the growth of",
+          "source_lines": {
+            "56": "late, and the late ends occur only where joining grows exponentially. Density explains most of who dies. Whether the growth of"
+          }
+        }
+      ],
+      "proposed_replacement": "Observed death share increases across the displayed density bins in this finite sample. The census does not establish that density alone determines fate or causally explains the association."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "1812 is a count of keys/descriptions with an observed death; the distinct-pattern denominator is 1808. The Glucose record independently contains a decided dead-then-alive pair for all 48, but has 26 null level verdicts in 12 records and only 38 wholly equal vectors; confirm each return is justified, confirm every level verdict would not be. Neither solver refutations nor class labels were independently certified in this wording lane.",
+      "id": "W08",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            46
+          ],
+          "quote": "| 8 | **Patterns can die and come back.** 48 descriptions (48 distinct patterns, all exponential, 2.6% of the 1,812 that die) are dead at a level and alive at a later one; 7 alternate with the parity of the level from level 5 on (one is alive at levels 1 to 3, 5, 7, 9 and 11 and dead at 4, 6, 8, 10 and 12). A level is not a growth: level n + 1 lies over level n two to one, and a two-fold lift of a dead pattern can live. | computed, frozen; rechecked by the thread with a second solver (Glucose) and its own pattern code: every one of the 48 confirmed (`recheck_returns.py`, `returns_recheck.json`) | **P2 failed** |",
+          "source_lines": {
+            "46": "| 8 | **Patterns can die and come back.** 48 descriptions (48 distinct patterns, all exponential, 2.6% of the 1,812 that die) are dead at a level and alive at a later one; 7 alternate with the parity of the level from level 5 on (one is alive at levels 1 to 3, 5, 7, 9 and 11 and dead at 4, 6, 8, 10 and 12). A level is not a growth: level n + 1 lies over level n two to one, and a two-fold lift of a dead pattern can live. | computed, frozen; rechecked by the thread with a second solver (Glucose) and its own pattern code: every one of the 48 confirmed (`recheck_returns.py`, `returns_recheck.json`) | **P2 failed** |"
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            161,
+            162
+          ],
+          "quote": "the action, not the class); (d) the returns rest on decided solver verdicts; the thread rechecked all 48 with Glucose and its own pattern code (knot\ncounts equal at every level, every return confirmed), but a refutation is a solver's word, not a certificate;",
+          "source_lines": {
+            "161": "the action, not the class); (d) the returns rest on decided solver verdicts; the thread rechecked all 48 with Glucose and its own pattern code (knot",
+            "162": "counts equal at every level, every return confirmed), but a refutation is a solver's word, not a certificate;"
+          }
+        }
+      ],
+      "proposed_replacement": "48 descriptions, representing 48 distinct patterns and all classified exponential, have a decided dead level followed by a decided alive level. They are 48/1,812 (2.65%) of descriptions with an observed death, or 48/1,808 (2.65%) of distinct patterns with an observed death. The supplied Glucose recheck confirms a dead-then-alive pair in all 48; it leaves some other levels undecided."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "Lemma A supplies a finite profile for the three declared uniform list forms. This wording sounds like a general decidability characterization, which the stated argument does not supply. This lane does not audit the proof of Lemma A or its fixed-point prerequisites.",
+      "id": "W09",
+      "locations": [
+        {
+          "file": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md",
+          "lines": [
+            54,
+            55,
+            56,
+            57
+          ],
+          "quote": "**What follows.** A copy can meet an unbounded number of its container's distinctions and the pattern is still finite-state. What\nkeeps it finite is that the copy treats all members of a list alike: it can tell apart only a bounded number of different ways of\nbeing met. So the size of the interface is not what separates decidable from undecidable nesting; the number of different ways a\ncopy can be met is. *This narrows NEST-COUNT's reading (logged in `docs/CORRECTIONS.md`, Narrowing, for the list forms above only).*",
+          "source_lines": {
+            "54": "**What follows.** A copy can meet an unbounded number of its container's distinctions and the pattern is still finite-state. What",
+            "55": "keeps it finite is that the copy treats all members of a list alike: it can tell apart only a bounded number of different ways of",
+            "56": "being met. So the size of the interface is not what separates decidable from undecidable nesting; the number of different ways a",
+            "57": "copy can be met is. *This narrows NEST-COUNT's reading (logged in `docs/CORRECTIONS.md`, Narrowing, for the list forms above only).*"
+          }
+        }
+      ],
+      "proposed_replacement": "For the three uniform list forms above, unboundedly many seen distinctions coexist with finite-state behavior because a fixed finite profile suffices. This refutes interface size alone as the proposed separator in that language; it does not give a general characterization of decidable nesting."
+    },
+    {
+      "category": "Narrowing",
+      "finding": "The permitted frozen summary says required core checks passed, but its master status is passed_with_skipped_ambiguous_assertions and explicitly all assertions passed:false (summary.md:14–15). This audit did not access the forbidden validation source.",
+      "id": "W10",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            48
+          ],
+          "quote": "| 10 | **Checks.** Seven gates passed (V-act, V-rel, V-sat, V-B0, V-act-class, V-code, V-resume); the summary's units passed 37 checks; 287 level verdicts in 125 descriptions were undecided, 47 descriptions are FU; no two descriptions of one pattern gave conflicting decided verdicts. | computed | gates |",
+          "source_lines": {
+            "48": "| 10 | **Checks.** Seven gates passed (V-act, V-rel, V-sat, V-B0, V-act-class, V-code, V-resume); the summary's units passed 37 checks; 287 level verdicts in 125 descriptions were undecided, 47 descriptions are FU; no two descriptions of one pattern gave conflicting decided verdicts. | computed | gates |"
+          }
+        }
+      ],
+      "proposed_replacement": "The frozen summary reports all required core gate checks passed, with skipped ambiguous assertions; it explicitly does not claim that every assertion passed."
+    },
+    {
+      "category": "Not a block",
+      "finding": "These are the correct empirical scope boundaries. B0 and first-letter settlement have separately stated mathematical all-level claims; their theorem scope is not limited by the finite census. Preserve this distinction.",
+      "id": "W11",
+      "locations": [
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+          "lines": [
+            79,
+            80,
+            81
+          ],
+          "quote": "Levels 1 to 12, two letters, at most five state maps, words of length at most 2, placements as frozen, the stated weighting; a SAT\nconflict budget of 2,000,000 per level. Nothing is claimed beyond level 12: \"alive at every level read\" is not \"goes on forever\", and a\nreturn or an alternation seen to level 12 is not known to persist.",
+          "source_lines": {
+            "79": "Levels 1 to 12, two letters, at most five state maps, words of length at most 2, placements as frozen, the stated weighting; a SAT",
+            "80": "conflict budget of 2,000,000 per level. Nothing is claimed beyond level 12: \"alive at every level read\" is not \"goes on forever\", and a",
+            "81": "return or an alternation seen to level 12 is not known to persist."
+          }
+        },
+        {
+          "file": "research/ADDR-KNOTS-20261113-001/preregistration.md",
+          "lines": [
+            115,
+            116,
+            117
+          ],
+          "quote": "One Codex hand-off, one registered run by the thread, its frozen summary, a referee hand-off; report and hold. Nothing is claimed\nbeyond level 12, two letters, five state maps, words of length 2, or the stated weighting. A finite census proves no all-level\nstatement.",
+          "source_lines": {
+            "115": "One Codex hand-off, one registered run by the thread, its frozen summary, a referee hand-off; report and hold. Nothing is claimed",
+            "116": "beyond level 12, two letters, five state maps, words of length 2, or the stated weighting. A finite census proves no all-level",
+            "117": "statement."
+          }
+        }
+      ],
+      "proposed_replacement": "All empirical fate and joining-frequency claims concern the registered samples and levels 1–12 under the stated sampling and solver budgets. The separately proved B0 and first-letter-settled results retain their explicitly stated mathematical scope."
+    }
+  ],
+  "limitations": [
+    "No network or external novelty check.",
+    "No access to the producer code directory or recheck_returns.py.",
+    "No independent certification of raw SAT verdicts or activity-class algorithm in this wording lane.",
+    "No full proof audit; only the requested tail assertion and finite-profile wording were examined.",
+    "No all-level empirical inference. Percentages are observed sample frequencies, conditional as stated.",
+    "The raw per-description settlement numbers are valid; they differ from the addendum rule for inherited pattern settlement."
+  ],
+  "matched_cell": {
+    "assignments": {
+      "FU_alive": {
+        "bonferroni_confidence": 0.95,
+        "bonferroni_interval": [
+          -0.012534415890216324,
+          -0.0026878722914448526
+        ],
+        "bonferroni_m": 1,
+        "delta": -0.007220216606498195,
+        "interval95": [
+          -0.012534415890216324,
+          -0.0026878722914448526
+        ],
+        "verdict": "same"
+      },
+      "FU_dead": {
+        "bonferroni_confidence": 0.95,
+        "bonferroni_interval": [
+          -0.03116786617815673,
+          -0.012818606627017852
+        ],
+        "bonferroni_m": 1,
+        "delta": -0.021660649819494584,
+        "interval95": [
+          -0.03116786617815673,
+          -0.012818606627017852
+        ],
+        "verdict": "same"
+      }
+    },
+    "bin": "[1.5, 2.1)",
+    "comparison": {
+      "decided": 36,
+      "fates": {
+        "F0": 0,
+        "F1": 0,
+        "F2": 0,
+        "F3": 36,
+        "FU": 0
+      },
+      "units": 36
+    },
+    "exponential": {
+      "FU": 16,
+      "decided": 1092,
+      "fates": {
+        "F0": 0,
+        "F1": 0,
+        "F2": 8,
+        "F3": 1084,
+        "FU": 16
+      },
+      "units": 1108
+    },
+    "note": "Reported bootstrap intervals copied from the permitted frozen summary; not independently rerun in this wording audit.",
+    "verdict": "same"
+  },
+  "population_quantities": {
+    "E": {
+      "class_draws_all": {
+        "bounded": 1440,
+        "exponential": 13939,
+        "finitary": 3821,
+        "polynomial": 216
+      },
+      "class_draws_nonempty": {
+        "bounded": 860,
+        "exponential": 10720,
+        "finitary": 126,
+        "polynomial": 206
+      },
+      "class_pattern_units_all": {
+        "bounded": 293,
+        "exponential": 8444,
+        "finitary": 19,
+        "polynomial": 196
+      },
+      "class_pattern_units_nonempty": {
+        "bounded": 292,
+        "exponential": 8443,
+        "finitary": 18,
+        "polynomial": 195
+      },
+      "nonempty_exponential_draws_constant_J10_J11_J12": 68,
+      "pattern_units": {
+        "F0": 1,
+        "F2": 1496,
+        "F3": 7408,
+        "FU": 32,
+        "distinct_patterns": 8937,
+        "nonempty_patterns": 8936,
+        "nonempty_settled_any_description_draws": 6981,
+        "nonempty_unsettled_any_description_F2_draws": 1498,
+        "nonempty_unsettled_any_description_draws": 4931
+      },
+      "patterns_with_multiple_class_memberships": 13,
+      "raw_draws": {
+        "F0": 7504,
+        "F2": 1498,
+        "F3": 10382,
+        "FU": 32,
+        "accepted_draws": 19416,
+        "actual_s1_draws": 0,
+        "actual_s_ge2_F0_draws": 7504,
+        "distinct_keys": 19406,
+        "nonempty_settled_own_description_draws": 5743,
+        "nonempty_unsettled_own_description_F2_draws": 1498,
+        "nonempty_unsettled_own_description_draws": 6169
+      }
+    },
+    "W": {
+      "class_draws_all": {
+        "bounded": 972,
+        "exponential": 16052,
+        "finitary": 11571,
+        "polynomial": 175
+      },
+      "class_draws_nonempty": {
+        "bounded": 453,
+        "exponential": 5066,
+        "finitary": 82,
+        "polynomial": 158
+      },
+      "class_pattern_units_all": {
+        "bounded": 147,
+        "exponential": 3669,
+        "finitary": 28,
+        "polynomial": 153
+      },
+      "class_pattern_units_nonempty": {
+        "bounded": 146,
+        "exponential": 3668,
+        "finitary": 27,
+        "polynomial": 152
+      },
+      "nonempty_exponential_draws_constant_J10_J11_J12": 11,
+      "pattern_units": {
+        "F0": 1,
+        "F2": 314,
+        "F3": 3660,
+        "FU": 15,
+        "distinct_patterns": 3990,
+        "nonempty_patterns": 3989,
+        "nonempty_settled_any_description_draws": 4604,
+        "nonempty_unsettled_any_description_F2_draws": 314,
+        "nonempty_unsettled_any_description_draws": 1155
+      },
+      "patterns_with_multiple_class_memberships": 4,
+      "raw_draws": {
+        "F0": 23011,
+        "F2": 314,
+        "F3": 5430,
+        "FU": 15,
+        "accepted_draws": 28770,
+        "actual_s1_draws": 17768,
+        "actual_s_ge2_F0_draws": 5243,
+        "distinct_keys": 9973,
+        "nonempty_settled_own_description_draws": 4307,
+        "nonempty_unsettled_own_description_F2_draws": 314,
+        "nonempty_unsettled_own_description_draws": 1452
+      }
+    }
+  },
+  "return_quantities": {
+    "alive_at_level12": 25,
+    "dead_at_level12": 19,
+    "distinct_patterns": 48,
+    "ever_dead_distinct_patterns": 1808,
+    "ever_dead_keys": 1812,
+    "fates": {
+      "F2": 48
+    },
+    "glucose_null_level_verdicts": 26,
+    "glucose_recheck_records": 48,
+    "glucose_records_with_null": 12,
+    "glucose_returns_with_decided_dead_then_alive_pair": 48,
+    "keys": 48,
+    "recheck_contradictory_decided_verdicts": 0,
+    "recheck_full_vectors_equal": 38,
+    "relative_classes": {
+      "exponential": 48
+    },
+    "undecided_at_level12": 4
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "research/ADDR-KNOTS-20261113-001/codex_spec.md",
+      "sha256": "789690bbf92879d7fd73fb04f5afcd323a626a4ae3ad603656bc4d7bf4bf1383"
+    },
+    {
+      "path": "research/ADDR-KNOTS-20261113-001/codex_spec_addendum.md",
+      "sha256": "3c0fa577d7a06cd2b3ac3163382ed1dde092e7ab78a83898e4e3157009ac423f"
+    },
+    {
+      "path": "research/ADDR-KNOTS-20261113-001/preregistration.md",
+      "sha256": "99cbbafcc8af86dd75477a23c7767c70f2339794da93fa80214b630a709f5cc8"
+    },
+    {
+      "path": "research/ADDR-KNOTS-20261113-001/addr_knots.md",
+      "sha256": "fde698a26e63526c6ffc80dbfbdfbd7c2d0d658fa6c0b2a88d057a49b728868c"
+    },
+    {
+      "path": "research/ADDR-KNOTS-20261113-001/returns_recheck.json",
+      "sha256": "b16d6bcd22a985dac9970bb9249c3e8652a397e84baba81f13edea50499274e7"
+    },
+    {
+      "path": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md",
+      "sha256": "a33b2f10aed0fa321ffe808442924a706117a46b7dd190af2c17d1fefc7a4830"
+    },
+    {
+      "path": "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/keys.jsonl.gz",
+      "sha256": "9620fa77333830ed356ee197c0642ae45f566a82a3b6a58c72ac182c2378317e"
+    },
+    {
+      "path": "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/draws.jsonl.gz",
+      "sha256": "a0c7e9b60d963c3fe576822d382bb15bcc3b9607f868d2fc89a7a12cf43cd999"
+    },
+    {
+      "path": "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/summary.md",
+      "sha256": "686fda15389ae4007e1095dae17084b8eea076725fd2fcb3a95bd3f09ad10c06"
+    },
+    {
+      "path": "artifacts/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/summary_compact.json",
+      "sha256": "779476d502816d9c9b259a4586ffc2b961901142f3efe3de8060ef63c2c6f021"
+    }
+  ],
+  "tail_counterexample": {
+    "d0": [
+      1,
+      0
+    ],
+    "d1": [
+      1,
+      1
+    ],
+    "internal_prefix_triples_by_suffix": {
+      "00": [],
+      "01": [],
+      "10": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "11": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ]
+    },
+    "level4_triples": [
+      [
+        0,
+        5,
+        8
+      ],
+      [
+        0,
+        5,
+        13
+      ],
+      [
+        0,
+        12,
+        13
+      ],
+      [
+        1,
+        4,
+        9
+      ],
+      [
+        1,
+        4,
+        12
+      ],
+      [
+        1,
+        12,
+        13
+      ],
+      [
+        2,
+        6,
+        10
+      ],
+      [
+        2,
+        6,
+        14
+      ],
+      [
+        3,
+        7,
+        11
+      ],
+      [
+        3,
+        7,
+        15
+      ],
+      [
+        4,
+        9,
+        11
+      ],
+      [
+        5,
+        8,
+        10
+      ],
+      [
+        6,
+        8,
+        10
+      ],
+      [
+        7,
+        9,
+        11
+      ]
+    ],
+    "n": 4,
+    "s": 2,
+    "single_placement_word_indices": [
+      2,
+      3,
+      5
+    ],
+    "single_placement_words": [
+      [
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "source_key_id": "26892553d70dde64fd0f6df06341a9b09b64775b66b5500709cc72af9778cfd7",
+    "suffix_length": 2,
+    "sw": [
+      1,
+      0
+    ],
+    "verification": "Fresh plain integer action from codex_spec.md, with word composition right to left. Original key has three placements; the other two generate no triples at n=4. Total14 agrees the original stored knots_n[3]."
+  },
+  "task": "ADDR-KNOTS-20261113-001 wording audit",
+  "validation": {
+    "address_space_limit_bytes": 2000000000,
+    "direct_aggregations_match_frozen_fate_counts": true,
+    "json_parseable": true,
+    "peak_rss_kb": 113644,
+    "single_live_child_computation": true,
+    "wall_seconds": 0.9776352889603004
+  },
+  "verdict": "One false tail-invariance assertion blocks that interpretation as written. Numeric sample results remain reportable after the listed narrowings."
+}

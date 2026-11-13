@@ -1,0 +1,46 @@
+{
+  "no_forbidden_implementation_read_or_import": true,
+  "no_network": true,
+  "no_git_state_changes_or_publication": true,
+  "retained_output_root": "research/ADDR-KNOTS-20261113-001/referee-R1/codex/",
+  "temporary_file_deviation": {
+    "description": "Initial PySAT proof-logging calls used tempfile.TemporaryFile() without explicitly setting its directory. These anonymous temporary proof files used the interpreter's system temporary directory, rather than the requested referee directory.",
+    "impact": "Procedural write-scope deviation; does not alter the CNFs, assignments, saved certificates, or certificate-checking mathematics.",
+    "correction": "recompute.py, refine_unknowns.py and fast_certificates.py now explicitly set tempfile.tempdir to their own referee directory. Compiler scratch uses TMPDIR set to that directory. One old refinement was interrupted; its already retained candidate proof is checked separately before any verdict is adopted.",
+    "closed": "Initial solver scopes were closed or their process ended, closing their anonymous proof descriptors.",
+    "reported_to_user": true
+  },
+  "interrupted_attempt": {
+    "command": "refine_unknowns.py --start 1 --limit 2 --budget 500000 --solver g4",
+    "exit_code": 130,
+    "retained_candidate": "certificates/da9865d3275d2aea1bc2920bb3e1bd0aa724e137d71074c26f69869212860207-L09-g4-b500000-expanded.drup.gz",
+    "promotion_rule": "The retained candidate is not counted as a certified verdict unless the separate compiled RUP check succeeds. The second requested level was not reached by this interrupted command."
+  },
+  "checker_provenance": "Both checkers are fresh implementations of watched-literal unit propagation. Neither calls a SAT solver. The compiled checker is compared with a plain propagation oracle and with the Python checker. This is AI-authored independent recomputation, not human or external replication.",
+  "large_proof_check_interruption": {
+    "candidate": "da9865d3275d-L09",
+    "old_checker_run": "stopped after about twelve minutes, before the fifteen-minute command boundary",
+    "change": "only the order of unit-propagation assumptions was reversed; RUP closure is invariant",
+    "validation": "300 plain-propagation controls and 20 Python/compiled certificate comparisons rerun and passed",
+    "new_result_rule": "only a completed check may promote the candidate"
+  },
+  "further_bounded_checks": {
+    "unconditional_candidate_retry": "stopped before promotion; its verification did not finish",
+    "conditional_candidate_check": "also stopped before promotion to preserve time for final validation",
+    "completed_large_refinement": "28315fc68361 level 11, 242761 unconditional DRUP additions checked by compiled verifier",
+    "unaccepted_candidates": "remaining expanded and reduced files are retained as useful evidence, not certified verdicts"
+  },
+  "all_task_processes_reaped": true,
+  "finished_computation_utc": "2026-11-13T23:18:42+00:00",
+  "resource_limits": {
+    "maximum_concurrent_computation_processes": 3,
+    "solver_or_compiled_checker_address_space_cap_gib": 3,
+    "worker_address_space_cap_gib": 2,
+    "commands": "bounded below about fifteen minutes; longer candidate checks were explicitly interrupted",
+    "peak_total_memory": "not instrumented as a combined total; process limits and small measured worker footprints kept the task below the requested ceiling"
+  },
+  "removed_own_regenerable_checker_inputs": [
+    ".rup-input-d6ntli9t.cnf",
+    ".rup-input-92w5p5bf.cnf"
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "all_levels_certified": true,
+  "alternating": false,
+  "counts": [
+    0,
+    4,
+    16,
+    38,
+    84,
+    178,
+    368,
+    750,
+    1516,
+    3050,
+    6120,
+    12262
+  ],
+  "counts_match": true,
+  "fate_agrees": true,
+  "fresh_fate": "F2",
+  "fresh_first_death": 4,
+  "fresh_pattern_hash": "9af387b4025b82ec06bacb3be43d0b54f102bccc",
+  "fresh_return": true,
+  "hash_matches": true,
+  "joins": [
+    0,
+    4,
+    12,
+    22,
+    50,
+    98,
+    186,
+    358,
+    682,
+    1320,
+    2572,
+    5010
+  ],
+  "joins_match": true,
+  "key": [
+    3,
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      [
+        0,
+        3,
+        9
+      ],
+      [
+        1,
+        3,
+        11
+      ],
+      [
+        2,
+        4,
+        7
+      ],
+      [
+        5,
+        10,
+        11
+      ]
+    ]
+  ],
+  "key_id": "cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056",
+  "levels": [
+    {
+      "agrees": true,
+      "assignment": "00",
+      "certified": true,
+      "cnf_sha256": "b727033dfc7356b4b3cd8c5427dbf1d3d6afd3a8d0512e70b2dd4ce564c33232",
+      "conflict_budget": 100000,
+      "join": 0,
+      "knots": 0,
+      "level": 1,
+      "recorded_verdict": 1,
+      "solver": "empty pattern",
+      "symmetry_unit": false,
+      "verdict": 1,
+      "witness_checked_knots": 0
+    },
+    {
+      "agrees": true,
+      "assignment": "1100",
+      "certified": true,
+      "cnf_sha256": "9a0cb29ddbe3b21a56b516f54cde873f6771dd12041edac444e7c157fbeb9924",
+      "conflict_budget": 100000,
+      "join": 4,
+      "knots": 4,
+      "level": 2,
+      "recorded_verdict": 1,
+      "solve_seconds": 9.964301716536283e-05,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 0,
+        "decisions": 4,
+        "propagations": 5,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.00012258405331522226,
+      "verdict": 1,
+      "witness_checked_knots": 4
+    },
+    {
+      "agrees": true,
+      "assignment": "11110000",
+      "certified": true,
+      "cnf_sha256": "b4ac323179f0338b245e1188bb69933e9ef15036620799d61fc765be074f1317",
+      "conflict_budget": 100000,
+      "join": 12,
+      "knots": 16,
+      "level": 3,
+      "recorded_verdict": 1,
+      "solver": "directly checked lifted assignment",
+      "symmetry_unit": false,
+      "total_seconds": 3.0474970117211342e-05,
+      "verdict": 1,
+      "witness_checked_knots": 16
+    },
+    {
+      "agrees": true,
+      "certificate": "certificates/cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056-L04.drup.gz",
+      "certificate_check_seconds": 0.00033449602779001,
+      "certificate_lines": 18,
+      "certificate_uncompressed_sha256": "d48db741307bc441e740c98ec4e590efe5b74a21d091c0380bf648139909dc40",
+      "certified": true,
+      "cnf_sha256": "4697b07faf21e890ccd5935efb7ade6c7f3a9c2d012ade298e9a8bd9c53a4de6",
+      "conflict_budget": 100000,
+      "join": 22,
+      "knots": 38,
+      "level": 4,
+      "proof_check": {
+        "additions": 18,
+        "empty_clause_line": 18,
+        "ignored_deletions": 0,
+        "valid": true
+      },
+      "recorded_verdict": 0,
+      "solve_seconds": 0.00014711101539433002,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 18,
+        "decisions": 21,
+        "propagations": 119,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.0006597619503736496,
+      "verdict": 0
+    },
+    {
+      "agrees": true,
+      "assignment": "10010110100110010101101001011010",
+      "certified": true,
+      "cnf_sha256": "ed02029767d6ef64cc8fafce6b353ba4c03ee2cd3987778d2b346339fe3844e5",
+      "conflict_budget": 100000,
+      "join": 50,
+      "knots": 84,
+      "level": 5,
+      "recorded_verdict": 1,
+      "solve_seconds": 0.00021397299133241177,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 19,
+        "decisions": 26,
+        "propagations": 194,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.0002404589904472232,
+      "verdict": 1,
+      "witness_checked_knots": 84
+    },
+    {
+      "agrees": true,
+      "assignment": "1100001100111100110000111100001100110011110011000011001111001100",
+      "certified": true,
+      "cnf_sha256": "63e8fe125f1d45359dd775d99bdd02c83ea14423f857865cdabb7bf64636de98",
+      "conflict_budget": 100000,
+      "join": 98,
+      "knots": 178,
+      "level": 6,
+      "recorded_verdict": 1,
+      "solver": "directly checked lifted assignment",
+      "symmetry_unit": false,
+      "total_seconds": 0.00015317404177039862,
+      "verdict": 1,
+      "witness_checked_knots": 178
+    },
+    {
+      "agrees": true,
+      "certificate": "certificates/cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056-L07.drup.gz",
+      "certificate_check_seconds": 0.0030671809799969196,
+      "certificate_lines": 82,
+      "certificate_uncompressed_sha256": "5249a0796c99bf5a36bf658f0974c8ac8c20fc8ac0376f40ecc82aa2382f27ec",
+      "certified": true,
+      "cnf_sha256": "b7c5e9b19743beac30eed8261c38401295aa7217a411e9620ba8c903075592e1",
+      "conflict_budget": 100000,
+      "join": 186,
+      "knots": 368,
+      "level": 7,
+      "proof_check": {
+        "additions": 82,
+        "empty_clause_line": 82,
+        "ignored_deletions": 0,
+        "valid": true
+      },
+      "recorded_verdict": 0,
+      "solve_seconds": 0.0007269380148500204,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 82,
+        "decisions": 104,
+        "propagations": 1462,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.00403747009113431,
+      "verdict": 0
+    },
+    {
+      "agrees": true,
+      "certificate": "certificates/cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056-L08.drup.gz",
+      "certificate_check_seconds": 0.0039661809569224715,
+      "certificate_lines": 82,
+      "certificate_uncompressed_sha256": "8e4f0b990a11fd59469b76a59848ea82af39c41f755b426d96b40f6e8c82b7a8",
+      "certified": true,
+      "cnf_sha256": "93e04ab56294449b189d4ce49e3fc43aac5335f9f08d47fc96c44347d00d0769",
+      "conflict_budget": 100000,
+      "join": 358,
+      "knots": 750,
+      "level": 8,
+      "proof_check": {
+        "additions": 82,
+        "empty_clause_line": 82,
+        "ignored_deletions": 0,
+        "valid": true
+      },
+      "recorded_verdict": 0,
+      "solve_seconds": 0.001245909952558577,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 82,
+        "decisions": 122,
+        "propagations": 2119,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.0055107849184423685,
+      "verdict": 0
+    },
+    {
+      "agrees": true,
+      "certificate": "certificates/cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056-L09.drup.gz",
+      "certificate_check_seconds": 0.005045315017923713,
+      "certificate_lines": 96,
+      "certificate_uncompressed_sha256": "94ca8afd3544bfafe0c4d7b95006c64919f5c82e4390a92ed7d59cf1a71399f5",
+      "certified": true,
+      "cnf_sha256": "4b78a71d83dbb78121cd8a0d74bdc5a172380568fd0ff41aa3d090c6edd7fbb4",
+      "conflict_budget": 100000,
+      "join": 682,
+      "knots": 1516,
+      "level": 9,
+      "proof_check": {
+        "additions": 96,
+        "empty_clause_line": 96,
+        "ignored_deletions": 0,
+        "valid": true
+      },
+      "recorded_verdict": 0,
+      "solve_seconds": 0.002161559066735208,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 96,
+        "decisions": 162,
+        "propagations": 2288,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.007744492031633854,
+      "verdict": 0
+    },
+    {
+      "agrees": true,
+      "certificate": "certificates/cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056-L10.drup.gz",
+      "certificate_check_seconds": 0.025578627013601363,
+      "certificate_lines": 455,
+      "certificate_uncompressed_sha256": "2a86f7efd70aa7e48687f90fa787a7a3eb58110d7e1f6453a8f3fb0c4c90b289",
+      "certified": true,
+      "cnf_sha256": "90158ad68010b51fb7dd31b6ba1fffa82f7fe27cb9beba1e9676fae530c3fbcf",
+      "conflict_budget": 100000,
+      "join": 1320,
+      "knots": 3050,
+      "level": 10,
+      "proof_check": {
+        "additions": 455,
+        "empty_clause_line": 455,
+        "ignored_deletions": 0,
+        "valid": true
+      },
+      "recorded_verdict": 0,
+      "solve_seconds": 0.005508363014087081,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 455,
+        "decisions": 785,
+        "propagations": 15718,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.03190068493131548,
+      "verdict": 0
+    },
+    {
+      "agrees": true,
+      "certificate": "certificates/cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056-L11.drup.gz",
+      "certificate_check_seconds": 0.007442400907166302,
+      "certificate_lines": 53,
+      "certificate_uncompressed_sha256": "77e864a6f07b7d78dd693bef998ef4b02b549c49e1727182dd2d027916a6004b",
+      "certified": true,
+      "cnf_sha256": "2a95575924861eb4ed2714590e0b05e24f0a221ffadf35960b9c2884d43d2030",
+      "conflict_budget": 100000,
+      "join": 2572,
+      "knots": 6120,
+      "level": 11,
+      "proof_check": {
+        "additions": 53,
+        "empty_clause_line": 53,
+        "ignored_deletions": 0,
+        "valid": true
+      },
+      "recorded_verdict": 0,
+      "solve_seconds": 0.007594406022690237,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 53,
+        "decisions": 254,
+        "propagations": 1344,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.015519186039455235,
+      "verdict": 0
+    },
+    {
+      "agrees": true,
+      "certificate": "certificates/cf817ba4fe567cac5a1c7c8d38b888bc51d3ea948d35e2044723cbbf05587056-L12.drup.gz",
+      "certificate_check_seconds": 0.012904254952445626,
+      "certificate_lines": 53,
+      "certificate_uncompressed_sha256": "c59ccba785f7061824f83bb6a9d13de186829da9777c8a41e9269f4b692d9b8a",
+      "certified": true,
+      "cnf_sha256": "ec9bb27788864f31e5e2da017e95475a1c03f0c908888484748d132edd18fd02",
+      "conflict_budget": 100000,
+      "join": 5010,
+      "knots": 12262,
+      "level": 12,
+      "proof_check": {
+        "additions": 53,
+        "empty_clause_line": 53,
+        "ignored_deletions": 0,
+        "valid": true
+      },
+      "recorded_verdict": 0,
+      "solve_seconds": 0.014977930928580463,
+      "solver": "Glucose4",
+      "stats": {
+        "conflicts": 53,
+        "decisions": 446,
+        "propagations": 1664,
+        "restarts": 1
+      },
+      "symmetry_unit": false,
+      "total_seconds": 0.028474675957113504,
+      "verdict": 0
+    }
+  ],
+  "recorded_fate": "F2",
+  "recorded_first_death": 4,
+  "recorded_pattern_hash": "9af387b4025b82ec06bacb3be43d0b54f102bccc",
+  "recorded_verdicts": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

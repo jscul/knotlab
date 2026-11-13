@@ -1,0 +1,3581 @@
+{
+  "method": "Fresh TRUE-RATE referee calculation, from the relation described in the notes.\n\nNo study implementation is read or imported.  The permitted BOND-DEPTH family\nenumerator is represented by mapping_audit's family_inventory.json.  G is\nrederived by existential enumeration and descending greatest-fixed-point\niteration.  All bond projections below are direct SAT queries on an explicitly\nunfolded finite subtree with exact G relations on its outgoing calls.\n\nUsage: /home/jscul/p-vs-np-contact-first/.venv/bin/python -B <this file>\n",
+  "controls": {
+    "SAT_bond_controls": {
+      "NAE_positive": true,
+      "free_negative": false,
+      "pair_tie_negative": false,
+      "inconsistent_negative": false
+    },
+    "cycle_controls_passed": true
+  },
+  "rows": [
+    {
+      "idx": 97,
+      "defs": [
+        [
+          3,
+          4,
+          [
+            [
+              "K",
+              [
+                4,
+                3,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                6,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                1,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                5,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                5,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                4,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                5,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        0,
+        1,
+        6
+      ],
+      "carried_positions": [
+        0,
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 190,
+      "defs": [
+        [
+          3,
+          4,
+          [
+            [
+              "SELF",
+              [
+                0,
+                5,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                5,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                6,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                5,
+                1,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                3,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                2,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                6,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                5,
+                0,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                2,
+                6
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        0,
+        5,
+        6
+      ],
+      "carried_positions": [
+        0
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 262,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                4,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                2,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                1,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                4,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                0,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                4,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                2,
+                1
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        4,
+        1,
+        3
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 400,
+      "SAT_variables": 803,
+      "SAT_clauses": 3200,
+      "side_candidate_count": 108,
+      "triples_attempted": 30,
+      "bonds": [
+        {
+          "variables": [
+            2,
+            4,
+            235
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 1,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              2
+            ],
+            "slot": 4
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 117,
+          "copies": 57
+        },
+        {
+          "depth": 4,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 5605,
+          "copies": 2801
+        }
+      ],
+      "seconds": 0.036574566969648004
+    },
+    {
+      "idx": 269,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                3,
+                1,
+                0
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                3,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                4,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                0,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                0,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        3,
+        1,
+        0
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 40,
+      "SAT_variables": 83,
+      "SAT_clauses": 240,
+      "side_candidate_count": 20,
+      "triples_attempted": 33,
+      "bonds": [
+        {
+          "variables": [
+            2,
+            5,
+            58
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 1,
+          "own_member": {
+            "path": [],
+            "slot": 4
+          },
+          "side_member": {
+            "path": [
+              2
+            ],
+            "slot": 3
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 29,
+          "copies": 13
+        },
+        {
+          "depth": 4,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 245,
+          "copies": 121
+        }
+      ],
+      "seconds": 0.002658134908415377
+    },
+    {
+      "idx": 271,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                2,
+                1,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                4,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                2,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                4,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        2,
+        1,
+        4
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 302,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                2,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                2,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                3,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                4,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                2
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        2,
+        1,
+        3
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 259,
+      "SAT_variables": 521,
+      "SAT_clauses": 518,
+      "side_candidate_count": 80,
+      "triples_attempted": 9,
+      "bonds": [
+        {
+          "variables": [
+            2,
+            4,
+            78
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 1,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              0,
+              5
+            ],
+            "slot": 3
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 89,
+          "copies": 43
+        },
+        {
+          "depth": 4,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 3113,
+          "copies": 1555
+        }
+      ],
+      "seconds": 0.011569148977287114
+    },
+    {
+      "idx": 363,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                3,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                1,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                0,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                2,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                3,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                2,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                1,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                1,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        1,
+        4,
+        2
+      ],
+      "carried_positions": [
+        2
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 820,
+      "SAT_variables": 1643,
+      "SAT_clauses": 4920,
+      "side_candidate_count": 176,
+      "triples_attempted": 97,
+      "bonds": [
+        {
+          "variables": [
+            3,
+            4,
+            916
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 2,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              5
+            ],
+            "slot": 3
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 2,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 185,
+          "copies": 91
+        },
+        {
+          "depth": 4,
+          "port_position": 2,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 14765,
+          "copies": 7381
+        }
+      ],
+      "seconds": 0.10857008106540889
+    },
+    {
+      "idx": 429,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                3,
+                4,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                4,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                0,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        3,
+        4,
+        2
+      ],
+      "carried_positions": [
+        2
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 431,
+      "defs": [
+        [
+          3,
+          4,
+          [
+            [
+              "SELF",
+              [
+                1,
+                6,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                3,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                6,
+                0
+              ]
+            ],
+            [
+              "K",
+              [
+                6,
+                1,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                6,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                5,
+                0
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        1,
+        6,
+        2
+      ],
+      "carried_positions": [
+        2
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 579,
+      "defs": [
+        [
+          3,
+          4,
+          [
+            [
+              "K",
+              [
+                5,
+                3,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                2,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                5,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                5,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                5,
+                2,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        0,
+        4,
+        5
+      ],
+      "carried_positions": [
+        0
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 156,
+      "SAT_variables": 627,
+      "SAT_clauses": 1248,
+      "side_candidate_count": 112,
+      "triples_attempted": 54,
+      "bonds": [
+        {
+          "variables": [
+            1,
+            4,
+            309
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 0,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              2,
+              2
+            ],
+            "slot": 4
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 0,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 127,
+          "copies": 31
+        },
+        {
+          "depth": 4,
+          "port_position": 0,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 3127,
+          "copies": 781
+        }
+      ],
+      "seconds": 0.016619456931948662
+    },
+    {
+      "idx": 642,
+      "defs": [
+        [
+          3,
+          5,
+          [
+            [
+              "SELF",
+              [
+                2,
+                1,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                3,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                7,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                7,
+                5,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                7,
+                1,
+                0
+              ]
+            ],
+            [
+              "K",
+              [
+                7,
+                0,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                7,
+                5
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                0,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                5,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                2
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        2,
+        1,
+        4
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 85,
+      "SAT_variables": 428,
+      "SAT_clauses": 1020,
+      "side_candidate_count": 90,
+      "triples_attempted": 92,
+      "bonds": [
+        {
+          "variables": [
+            2,
+            5,
+            40
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 1,
+          "own_member": {
+            "path": [],
+            "slot": 4
+          },
+          "side_member": {
+            "path": [
+              0,
+              1
+            ],
+            "slot": 4
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 108,
+          "copies": 21
+        },
+        {
+          "depth": 4,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 1708,
+          "copies": 341
+        }
+      ],
+      "seconds": 0.0164776430465281
+    },
+    {
+      "idx": 662,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                0,
+                2,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                2,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                1,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                4,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                1,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                1,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                2,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        0,
+        2,
+        3
+      ],
+      "carried_positions": [
+        0
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 1111,
+      "SAT_variables": 2225,
+      "SAT_clauses": 4444,
+      "side_candidate_count": 216,
+      "triples_attempted": 13,
+      "bonds": [
+        {
+          "variables": [
+            1,
+            4,
+            162
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 0,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              0,
+              7
+            ],
+            "slot": 3
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 0,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 225,
+          "copies": 111
+        },
+        {
+          "depth": 4,
+          "port_position": 0,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 22225,
+          "copies": 11111
+        }
+      ],
+      "seconds": 0.12047659198287874
+    },
+    {
+      "idx": 864,
+      "defs": [
+        [
+          3,
+          5,
+          [
+            [
+              "SELF",
+              [
+                3,
+                1,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                2,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                5,
+                3,
+                7
+              ]
+            ],
+            [
+              "SELF",
+              [
+                7,
+                5,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                5,
+                0,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                4,
+                6
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        3,
+        1,
+        5
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 874,
+      "defs": [
+        [
+          3,
+          4,
+          [
+            [
+              "SELF",
+              [
+                0,
+                6,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                3,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                5,
+                6
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                6,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                5,
+                0,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                5,
+                3,
+                6
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                4,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                6,
+                3,
+                5
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        0,
+        6,
+        2
+      ],
+      "carried_positions": [
+        0,
+        2
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 908,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                2,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                4,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                0,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                0,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        2,
+        1,
+        3
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 85,
+      "SAT_variables": 173,
+      "SAT_clauses": 340,
+      "side_candidate_count": 36,
+      "triples_attempted": 5,
+      "bonds": [
+        {
+          "variables": [
+            2,
+            4,
+            38
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 1,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              0,
+              3
+            ],
+            "slot": 3
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 45,
+          "copies": 21
+        },
+        {
+          "depth": 4,
+          "port_position": 1,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 685,
+          "copies": 341
+        }
+      ],
+      "seconds": 0.00298886199016124
+    },
+    {
+      "idx": 975,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                4,
+                3,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                4,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                1,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                4,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                1,
+                0
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                1,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                0
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        0,
+        4,
+        1
+      ],
+      "carried_positions": [
+        0
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 85,
+      "SAT_variables": 173,
+      "SAT_clauses": 850,
+      "side_candidate_count": 36,
+      "triples_attempted": 27,
+      "bonds": [
+        {
+          "variables": [
+            1,
+            4,
+            132
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 0,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              3
+            ],
+            "slot": 3
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 0,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 45,
+          "copies": 21
+        },
+        {
+          "depth": 4,
+          "port_position": 0,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 685,
+          "copies": 341
+        }
+      ],
+      "seconds": 0.00532048603054136
+    },
+    {
+      "idx": 1113,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                4,
+                1,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                0,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                0,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                4,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                0,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                3,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                0,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                2
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        4,
+        1,
+        0
+      ],
+      "carried_positions": [
+        1
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 1144,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "SELF",
+              [
+                4,
+                3,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                0,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                2,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                4,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                0,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                3,
+                1
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        4,
+        3,
+        2
+      ],
+      "carried_positions": [
+        2
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true,
+      "truncation_max_copy_depth": 3,
+      "copies": 259,
+      "SAT_variables": 521,
+      "SAT_clauses": 518,
+      "side_candidate_count": 80,
+      "triples_attempted": 67,
+      "bonds": [
+        {
+          "variables": [
+            3,
+            4,
+            436
+          ],
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "states_bits_in_member_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "pairs_after_forgetting_each_member": [
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "port_position": 2,
+          "own_member": {
+            "path": [],
+            "slot": 3
+          },
+          "side_member": {
+            "path": [
+              5
+            ],
+            "slot": 3
+          }
+        }
+      ],
+      "other_truncation_checks": [
+        {
+          "depth": 2,
+          "port_position": 2,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 89,
+          "copies": 43
+        },
+        {
+          "depth": 4,
+          "port_position": 2,
+          "states": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "variables": 3113,
+          "copies": 1555
+        }
+      ],
+      "seconds": 0.019706227001734078
+    },
+    {
+      "idx": 1223,
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                4,
+                0,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                4,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                1
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        3,
+        0,
+        2
+      ],
+      "carried_positions": [
+        2
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    },
+    {
+      "idx": 1335,
+      "defs": [
+        [
+          3,
+          3,
+          [
+            [
+              "SELF",
+              [
+                1,
+                3,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                5,
+                0,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                4,
+                2,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                5,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                4,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                3,
+                0,
+                2
+              ]
+            ]
+          ]
+        ]
+      ],
+      "ray_arguments": [
+        1,
+        3,
+        2
+      ],
+      "carried_positions": [
+        2
+      ],
+      "G_mask": 255,
+      "G_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "G_descending_masks": [
+        255
+      ],
+      "R_masks_depth_0_to_12": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "R1_all_eight": true,
+      "G_checked_with_SAT": true,
+      "R1_checked_with_SAT": true
+    }
+  ],
+  "carried_growing_count": 20,
+  "certified_ten": [
+    262,
+    269,
+    302,
+    363,
+    579,
+    642,
+    662,
+    908,
+    975,
+    1144
+  ],
+  "all_twenty_R1_full": true,
+  "seconds": 0.3902650329982862,
+  "peak_rss_mb": 58.21484375,
+  "inputs_sha256": {
+    "research/TRUE-RATE-20261113-001/referee-R1/codex/family_inventory.json": "e9cdaff4a97bdd99f48f25d8a00a6a73f296ed92e92400141587760a96bcb8a1",
+    "artifacts/PROVED-RATE-20261113-001A/PROVED-RATE-20261113-001A-E001_cycle_mean/rates_all.jsonl": "3ae6c2a16c78ed7e11e7e040afc5d48e0368d675733b6d1b7cbc74bf468bd725"
+  }
+}

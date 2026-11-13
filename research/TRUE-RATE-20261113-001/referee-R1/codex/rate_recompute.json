@@ -1,0 +1,1885 @@
+{
+  "method": "Independent minimum-bond summary calculation for three small closed rules.\n\nFor a finite marked set W, a summary (F,H) records the set of possible port\nrelations for assignments to W (F), and for assignments with exactly one mark\nforgotten (H).  Join independent marked sets by intersecting their relations;\nH is the union of the two choices of which side forgot a mark.  A zero in H\ncan never be repaired by adding constraints and is safely discarded.  Keep\nrelations on the *whole environment* until all children are joined.  Generic\nsummaries mark only distinctions created inside their subtree, never ports.\n\nClosing from the empty marked set covers every finite support in the infinite\nunfolding.  No size/cost cap is used.  The ray graph retains a target mark via\nits base states; the root acceptance requires a selected original top port.\n",
+  "controls": {
+    "cycle_mean_controls": "positive, fractional, zero, acyclic passed",
+    "direct_assignment_join_control": true,
+    "NAE_three_mark_accepts_pair_rejects": true
+  },
+  "rows": [
+    {
+      "idx": 105,
+      "uncapped_table_closed": true,
+      "generic_states": 20,
+      "closure_rounds": [
+        {
+          "size": 3,
+          "cost_updates": 2
+        },
+        {
+          "size": 10,
+          "cost_updates": 7
+        },
+        {
+          "size": 20,
+          "cost_updates": 10
+        },
+        {
+          "size": 20,
+          "cost_updates": 0
+        }
+      ],
+      "reachable_nodes": 19,
+      "trimmed_nodes": 3,
+      "cyclic_component_means": [
+        "1/3"
+      ],
+      "lambda_true": "1/3",
+      "exact_cost_vector_repeat": {
+        "from_depth": 1,
+        "repeated_at_depth": 4,
+        "period": 3,
+        "gain": 1,
+        "normalized_live_cost_vector": [
+          [
+            4,
+            0
+          ]
+        ],
+        "argument": "The min-plus transition is deterministic and additively homogeneous. An exact normalized-vector repeat proves the same period/gain for every later layer and its accepted minimum."
+      },
+      "L_depths_1_to_30": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        8,
+        8,
+        8,
+        9,
+        9,
+        9,
+        10,
+        10,
+        10,
+        11,
+        11,
+        11,
+        12,
+        12,
+        12,
+        13
+      ],
+      "seconds": 0.2891498770331964,
+      "generic_table": [
+        {
+          "F": [
+            255
+          ],
+          "H": [],
+          "cost": 0
+        },
+        {
+          "F": [
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 1
+        },
+        {
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 2
+        },
+        {
+          "F": [
+            15,
+            240,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 2
+        },
+        {
+          "F": [
+            15,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            240,
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            0,
+            15,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            240,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            0,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            3,
+            12,
+            15,
+            48,
+            51,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            51,
+            204,
+            240,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            3,
+            12,
+            15,
+            48,
+            51,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            3,
+            12,
+            15,
+            48,
+            51,
+            192,
+            204,
+            240,
+            255
+          ],
+          "cost": 5
+        },
+        {
+          "F": [
+            0,
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 2
+        },
+        {
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            5,
+            10,
+            15,
+            80,
+            85,
+            160,
+            170,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            85,
+            170,
+            240,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            85,
+            170,
+            204,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "cost": 5
+        },
+        {
+          "F": [
+            5,
+            10,
+            15,
+            80,
+            85,
+            160,
+            170,
+            240,
+            255
+          ],
+          "H": [
+            5,
+            10,
+            15,
+            80,
+            85,
+            160,
+            170,
+            240,
+            255
+          ],
+          "cost": 5
+        },
+        {
+          "F": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            10,
+            12,
+            15,
+            16,
+            17,
+            32,
+            34,
+            48,
+            51,
+            64,
+            68,
+            80,
+            85,
+            128,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            3,
+            5,
+            10,
+            12,
+            15,
+            17,
+            34,
+            48,
+            51,
+            68,
+            80,
+            85,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "cost": 6
+        },
+        {
+          "F": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            10,
+            12,
+            15,
+            16,
+            17,
+            32,
+            34,
+            48,
+            51,
+            64,
+            68,
+            80,
+            85,
+            128,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            10,
+            12,
+            15,
+            16,
+            17,
+            32,
+            34,
+            48,
+            51,
+            64,
+            68,
+            80,
+            85,
+            128,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "cost": 7
+        },
+        {
+          "F": [
+            0,
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "cost": 4
+        }
+      ],
+      "ray_graph": [
+        {
+          "id": 0,
+          "F": [
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 1,
+          "accept_cost": null,
+          "successors": {
+            "0": 0,
+            "1": 2,
+            "2": 2,
+            "3": 4,
+            "7": 2,
+            "8": 4,
+            "9": 4,
+            "10": 6
+          }
+        },
+        {
+          "id": 1,
+          "F": [
+            15,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            240,
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "7": 0,
+            "8": 2,
+            "9": 2,
+            "10": 4
+          }
+        },
+        {
+          "id": 2,
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "1": 0,
+            "3": 2,
+            "8": 2,
+            "10": 4
+          }
+        },
+        {
+          "id": 3,
+          "F": [
+            3,
+            12,
+            15,
+            48,
+            51,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            3,
+            12,
+            15,
+            48,
+            51,
+            192,
+            204,
+            240,
+            255
+          ],
+          "base_cost": 5,
+          "accept_cost": null,
+          "successors": {
+            "8": 0,
+            "10": 2
+          }
+        },
+        {
+          "id": 4,
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 2,
+          "accept_cost": 1,
+          "successors": {
+            "14": 0,
+            "1": 1,
+            "15": 2,
+            "6": 2,
+            "3": 3,
+            "16": 2,
+            "8": 3,
+            "12": 4,
+            "10": 5
+          }
+        },
+        {
+          "id": 5,
+          "F": [
+            0,
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "base_cost": 4,
+          "accept_cost": null,
+          "successors": {
+            "15": 0
+          }
+        },
+        {
+          "id": 6,
+          "F": [
+            3,
+            12,
+            15,
+            48,
+            51,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            51,
+            204,
+            240,
+            255
+          ],
+          "base_cost": 4,
+          "accept_cost": null,
+          "successors": {
+            "16": 0,
+            "8": 1,
+            "12": 2,
+            "10": 3
+          }
+        },
+        {
+          "id": 7,
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "0": 0,
+            "1": 2,
+            "2": 1,
+            "3": 3,
+            "7": 2,
+            "8": 4,
+            "9": 3,
+            "10": 5
+          }
+        },
+        {
+          "id": 8,
+          "F": [
+            5,
+            10,
+            15,
+            80,
+            85,
+            160,
+            170,
+            240,
+            255
+          ],
+          "H": [
+            5,
+            10,
+            15,
+            80,
+            85,
+            160,
+            170,
+            240,
+            255
+          ],
+          "base_cost": 5,
+          "accept_cost": null,
+          "successors": {
+            "7": 0,
+            "8": 2,
+            "9": 1,
+            "10": 3
+          }
+        },
+        {
+          "id": 9,
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "base_cost": 5,
+          "accept_cost": null,
+          "successors": {
+            "1": 0,
+            "3": 1,
+            "8": 2,
+            "10": 3
+          }
+        },
+        {
+          "id": 10,
+          "F": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            10,
+            12,
+            15,
+            16,
+            17,
+            32,
+            34,
+            48,
+            51,
+            64,
+            68,
+            80,
+            85,
+            128,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            10,
+            12,
+            15,
+            16,
+            17,
+            32,
+            34,
+            48,
+            51,
+            64,
+            68,
+            80,
+            85,
+            128,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "base_cost": 7,
+          "accept_cost": null,
+          "successors": {
+            "8": 0,
+            "10": 1
+          }
+        },
+        {
+          "id": 11,
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            85,
+            170,
+            204,
+            255
+          ],
+          "base_cost": 4,
+          "accept_cost": null,
+          "successors": {
+            "1": 0,
+            "3": 2,
+            "8": 2,
+            "10": 4,
+            "6": 1,
+            "12": 3
+          }
+        },
+        {
+          "id": 12,
+          "F": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            10,
+            12,
+            15,
+            16,
+            17,
+            32,
+            34,
+            48,
+            51,
+            64,
+            68,
+            80,
+            85,
+            128,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "H": [
+            3,
+            5,
+            10,
+            12,
+            15,
+            17,
+            34,
+            48,
+            51,
+            68,
+            80,
+            85,
+            136,
+            160,
+            170,
+            192,
+            204,
+            240,
+            255
+          ],
+          "base_cost": 6,
+          "accept_cost": null,
+          "successors": {
+            "8": 0,
+            "10": 2,
+            "12": 1
+          }
+        },
+        {
+          "id": 13,
+          "F": [
+            0,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "13": 0
+          }
+        },
+        {
+          "id": 14,
+          "F": [
+            15,
+            240,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": null,
+          "accept_cost": 1,
+          "successors": {
+            "17": 0,
+            "7": 1,
+            "16": 2,
+            "11": 2,
+            "9": 3,
+            "8": 3,
+            "12": 4,
+            "10": 5,
+            "18": 2
+          }
+        },
+        {
+          "id": 15,
+          "F": [
+            0,
+            15,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            240,
+            255
+          ],
+          "base_cost": null,
+          "accept_cost": null,
+          "successors": {
+            "18": 0
+          }
+        },
+        {
+          "id": 16,
+          "F": [
+            5,
+            10,
+            15,
+            80,
+            85,
+            160,
+            170,
+            240,
+            255
+          ],
+          "H": [
+            15,
+            85,
+            170,
+            240,
+            255
+          ],
+          "base_cost": null,
+          "accept_cost": null,
+          "successors": {
+            "7": 0,
+            "8": 2,
+            "9": 2,
+            "10": 4,
+            "11": 1,
+            "12": 3
+          }
+        },
+        {
+          "id": 17,
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": null,
+          "accept_cost": 2,
+          "successors": {
+            "0": 0,
+            "1": 2,
+            "2": 2,
+            "3": 4,
+            "13": 1,
+            "7": 2,
+            "8": 4,
+            "9": 4,
+            "10": 6,
+            "4": 1,
+            "6": 3,
+            "5": 3,
+            "11": 3,
+            "12": 5
+          }
+        },
+        {
+          "id": 18,
+          "F": [
+            0,
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "base_cost": null,
+          "accept_cost": null,
+          "successors": {
+            "13": 0
+          }
+        }
+      ]
+    },
+    {
+      "idx": 429,
+      "uncapped_table_closed": true,
+      "generic_states": 11,
+      "closure_rounds": [
+        {
+          "size": 3,
+          "cost_updates": 2
+        },
+        {
+          "size": 10,
+          "cost_updates": 7
+        },
+        {
+          "size": 11,
+          "cost_updates": 1
+        },
+        {
+          "size": 11,
+          "cost_updates": 0
+        }
+      ],
+      "reachable_nodes": 8,
+      "trimmed_nodes": 2,
+      "cyclic_component_means": [
+        "1"
+      ],
+      "lambda_true": "1",
+      "exact_cost_vector_repeat": {
+        "from_depth": 1,
+        "repeated_at_depth": 2,
+        "period": 1,
+        "gain": 1,
+        "normalized_live_cost_vector": [
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "argument": "The min-plus transition is deterministic and additively homogeneous. An exact normalized-vector repeat proves the same period/gain for every later layer and its accepted minimum."
+      },
+      "L_depths_1_to_30": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "seconds": 0.03630242799408734,
+      "generic_table": [
+        {
+          "F": [
+            255
+          ],
+          "H": [],
+          "cost": 0
+        },
+        {
+          "F": [
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 1
+        },
+        {
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 2
+        },
+        {
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 2
+        },
+        {
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            0,
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            0,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            85,
+            170,
+            204,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "cost": 5
+        },
+        {
+          "F": [
+            0,
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "cost": 4
+        }
+      ],
+      "ray_graph": [
+        {
+          "id": 0,
+          "F": [
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 1,
+          "accept_cost": null,
+          "successors": {
+            "0": 0,
+            "1": 2,
+            "2": 2,
+            "3": 4
+          }
+        },
+        {
+          "id": 1,
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "0": 0,
+            "1": 2,
+            "2": 1,
+            "3": 3
+          }
+        },
+        {
+          "id": 2,
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "0": 0,
+            "1": 2,
+            "2": 1,
+            "3": 3
+          }
+        },
+        {
+          "id": 3,
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "base_cost": 5,
+          "accept_cost": null,
+          "successors": {
+            "2": 0,
+            "3": 2
+          }
+        },
+        {
+          "id": 4,
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 2,
+          "accept_cost": 2,
+          "successors": {
+            "0": 0,
+            "1": 2,
+            "2": 2,
+            "3": 4,
+            "4": 1,
+            "5": 3,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "id": 5,
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            85,
+            170,
+            204,
+            255
+          ],
+          "base_cost": 4,
+          "accept_cost": 1,
+          "successors": {
+            "4": 0,
+            "2": 1,
+            "5": 2,
+            "6": 2,
+            "3": 3
+          }
+        },
+        {
+          "id": 6,
+          "F": [
+            0,
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "base_cost": 4,
+          "accept_cost": null,
+          "successors": {
+            "7": 0
+          }
+        },
+        {
+          "id": 7,
+          "F": [
+            0,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "7": 0
+          }
+        }
+      ]
+    },
+    {
+      "idx": 874,
+      "uncapped_table_closed": true,
+      "generic_states": 11,
+      "closure_rounds": [
+        {
+          "size": 5,
+          "cost_updates": 4
+        },
+        {
+          "size": 9,
+          "cost_updates": 4
+        },
+        {
+          "size": 11,
+          "cost_updates": 2
+        },
+        {
+          "size": 11,
+          "cost_updates": 0
+        }
+      ],
+      "reachable_nodes": 8,
+      "trimmed_nodes": 1,
+      "cyclic_component_means": [
+        "2"
+      ],
+      "lambda_true": "2",
+      "exact_cost_vector_repeat": {
+        "from_depth": 1,
+        "repeated_at_depth": 2,
+        "period": 1,
+        "gain": 2,
+        "normalized_live_cost_vector": [
+          [
+            5,
+            0
+          ]
+        ],
+        "argument": "The min-plus transition is deterministic and additively homogeneous. An exact normalized-vector repeat proves the same period/gain for every later layer and its accepted minimum."
+      },
+      "L_depths_1_to_30": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63
+      ],
+      "seconds": 1.3229228070704266,
+      "generic_table": [
+        {
+          "F": [
+            255
+          ],
+          "H": [],
+          "cost": 0
+        },
+        {
+          "F": [
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 1
+        },
+        {
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 2
+        },
+        {
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            0,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "cost": 2
+        },
+        {
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "cost": 3
+        },
+        {
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            85,
+            170,
+            204,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "cost": 5
+        },
+        {
+          "F": [
+            0,
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "cost": 4
+        },
+        {
+          "F": [
+            0,
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "cost": 4
+        }
+      ],
+      "ray_graph": [
+        {
+          "id": 0,
+          "F": [
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 1,
+          "accept_cost": null,
+          "successors": {
+            "0": 0,
+            "2": 2,
+            "3": 2,
+            "4": 4
+          }
+        },
+        {
+          "id": 1,
+          "F": [
+            0,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "1": 0
+          }
+        },
+        {
+          "id": 2,
+          "F": [
+            85,
+            170,
+            255
+          ],
+          "H": [
+            85,
+            170,
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "2": 0,
+            "4": 2
+          }
+        },
+        {
+          "id": 3,
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "base_cost": 3,
+          "accept_cost": null,
+          "successors": {
+            "0": 0,
+            "2": 2,
+            "3": 2,
+            "4": 4
+          }
+        },
+        {
+          "id": 4,
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "base_cost": 5,
+          "accept_cost": null,
+          "successors": {
+            "2": 0,
+            "4": 2
+          }
+        },
+        {
+          "id": 5,
+          "F": [
+            51,
+            204,
+            255
+          ],
+          "H": [
+            255
+          ],
+          "base_cost": 2,
+          "accept_cost": 3,
+          "successors": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 2,
+            "4": 4,
+            "5": 2,
+            "6": 4,
+            "7": 4
+          }
+        },
+        {
+          "id": 6,
+          "F": [
+            17,
+            34,
+            51,
+            68,
+            85,
+            136,
+            170,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            85,
+            170,
+            204,
+            255
+          ],
+          "base_cost": 4,
+          "accept_cost": null,
+          "successors": {
+            "2": 0,
+            "4": 2,
+            "6": 2
+          }
+        },
+        {
+          "id": 7,
+          "F": [
+            0,
+            51,
+            204,
+            255
+          ],
+          "H": [
+            51,
+            204,
+            255
+          ],
+          "base_cost": 4,
+          "accept_cost": null,
+          "successors": {
+            "1": 0
+          }
+        }
+      ]
+    }
+  ],
+  "reference_comparisons": [
+    {
+      "idx": 105,
+      "study_lambda_true": "1/3",
+      "proved_ray_rate": "1/3",
+      "finite_reference_cells_checked": 12,
+      "all_finite_values_match": true,
+      "all_rates_match": true
+    },
+    {
+      "idx": 429,
+      "study_lambda_true": "1/1",
+      "proved_ray_rate": "1/1",
+      "finite_reference_cells_checked": 12,
+      "all_finite_values_match": true,
+      "all_rates_match": true
+    },
+    {
+      "idx": 874,
+      "study_lambda_true": "2/1",
+      "proved_ray_rate": "2/1",
+      "finite_reference_cells_checked": 12,
+      "all_finite_values_match": true,
+      "all_rates_match": true
+    }
+  ],
+  "record_only_checks": {
+    "closed_complete_count": 24,
+    "rate_distribution": {
+      "1": 10,
+      "1/3": 5,
+      "1/2": 8,
+      "2": 1
+    },
+    "all_24_rate_strings_equal_ray": true,
+    "all_24_unshortened_in_reached_reference": true
+  },
+  "inputs_sha256": {
+    "research/TRUE-RATE-20261113-001/referee-R1/codex/family_inventory.json": "e9cdaff4a97bdd99f48f25d8a00a6a73f296ed92e92400141587760a96bcb8a1",
+    "artifacts/TRUE-RATE-20261113-001A/TRUE-RATE-20261113-001A-E001_true_rates/true_rates_all.jsonl": "3dbcbbef09b2350addb3fb84020b315f97265fe655c0aae005db2ceb773583c6",
+    "artifacts/PROVED-RATE-20261113-001A/PROVED-RATE-20261113-001A-E001_cycle_mean/rates_all.jsonl": "3ae6c2a16c78ed7e11e7e040afc5d48e0368d675733b6d1b7cbc74bf468bd725",
+    "artifacts/TRUE-BOND-20261113-001A/TRUE-BOND-20261113-001A-E001_side_branches/true_rates_all.jsonl": "705e310adcd2800a25f6a5084bbac1feb1840e7a7b042a85d9265ce5903f014a"
+  },
+  "peak_rss_mb": 67.18359375
+}

@@ -1,0 +1,1675 @@
+{
+  "schema": "referee-R1.math-controls.v1",
+  "study_code_imported": false,
+  "scope": "Finite nonnegative integer-weight DP graphs; controls are abstract graphs, not asserted NAE-family realizations.",
+  "infinity_encoding": "null means extended +infinity; no finite 10^9 sentinel is used in calculations",
+  "computation": "One Python process, standard library, exact Fraction and independently enumerated simple cycles, 32 DP depths.",
+  "claims_checked_symbolically_in": "math_review.md",
+  "cases": [
+    {
+      "name": "sharp_lower_bound",
+      "states": [
+        "a",
+        "b",
+        "d"
+      ],
+      "starts": {
+        "a": 0
+      },
+      "closes": {
+        "b": 0
+      },
+      "transitions": [
+        {
+          "source": "a",
+          "target": "b",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "d",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "b",
+          "weight": 1,
+          "empty_W": false
+        }
+      ],
+      "expected": {
+        "lambda": "1/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": false,
+        "L_first_8": [
+          null,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "comment": "For s >= 2, L(s)=s-2=lambda*(s-t), where productive t=2. L(1)=+infinity.",
+      "computed": {
+        "productive_states": [
+          "a",
+          "b"
+        ],
+        "productive_count": 2,
+        "simple_cycles": [
+          {
+            "states": [
+              "b"
+            ],
+            "length": 1,
+            "weight": 1
+          }
+        ],
+        "lambda_fraction": "1/1",
+        "bounded_all": false,
+        "zero_cycle_states": [],
+        "period_P": 1,
+        "covered_residues": [],
+        "eventually_uniformly_bounded": false,
+        "representative_walks": {},
+        "L_depths_1_through_32": [
+          null,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "positive_rate_all_depths",
+      "states": [
+        "p",
+        "d"
+      ],
+      "starts": {
+        "p": 1
+      },
+      "closes": {
+        "p": 1
+      },
+      "transitions": [
+        {
+          "source": "p",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "d",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "p",
+          "target": "p",
+          "weight": 2,
+          "empty_W": false
+        }
+      ],
+      "expected": {
+        "lambda": "2/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": false,
+        "L_first_8": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16
+        ]
+      },
+      "comment": "L(s)=2s at every depth; the deterministic empty-W successor is unproductive.",
+      "computed": {
+        "productive_states": [
+          "p"
+        ],
+        "productive_count": 1,
+        "simple_cycles": [
+          {
+            "states": [
+              "p"
+            ],
+            "length": 1,
+            "weight": 2
+          }
+        ],
+        "lambda_fraction": "2/1",
+        "bounded_all": false,
+        "zero_cycle_states": [],
+        "period_P": 1,
+        "covered_residues": [],
+        "eventually_uniformly_bounded": false,
+        "representative_walks": {},
+        "L_depths_1_through_32": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42,
+          44,
+          46,
+          48,
+          50,
+          52,
+          54,
+          56,
+          58,
+          60,
+          62,
+          64
+        ]
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "liminf_not_limit_positive",
+      "states": [
+        "a0",
+        "a1",
+        "b",
+        "d"
+      ],
+      "starts": {
+        "a0": 1,
+        "b": 1
+      },
+      "closes": {
+        "a0": 1,
+        "b": 1
+      },
+      "transitions": [
+        {
+          "source": "a0",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a1",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "d",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a0",
+          "target": "a1",
+          "weight": 1,
+          "empty_W": false
+        },
+        {
+          "source": "a1",
+          "target": "a0",
+          "weight": 1,
+          "empty_W": false
+        },
+        {
+          "source": "b",
+          "target": "b",
+          "weight": 2,
+          "empty_W": false
+        }
+      ],
+      "expected": {
+        "lambda": "1/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": false,
+        "L_first_8": [
+          2,
+          4,
+          4,
+          8,
+          6,
+          12,
+          8,
+          16
+        ]
+      },
+      "comment": "For middle length n even, L(n+1)=n+2; for n odd, L(n+1)=2n+2. The ratios have subsequential limits 1 and 2.",
+      "computed": {
+        "productive_states": [
+          "a0",
+          "a1",
+          "b"
+        ],
+        "productive_count": 3,
+        "simple_cycles": [
+          {
+            "states": [
+              "a0",
+              "a1"
+            ],
+            "length": 2,
+            "weight": 2
+          },
+          {
+            "states": [
+              "b"
+            ],
+            "length": 1,
+            "weight": 2
+          }
+        ],
+        "lambda_fraction": "1/1",
+        "bounded_all": false,
+        "zero_cycle_states": [],
+        "period_P": 1,
+        "covered_residues": [],
+        "eventually_uniformly_bounded": false,
+        "representative_walks": {},
+        "L_depths_1_through_32": [
+          2,
+          4,
+          4,
+          8,
+          6,
+          12,
+          8,
+          16,
+          10,
+          20,
+          12,
+          24,
+          14,
+          28,
+          16,
+          32,
+          18,
+          36,
+          20,
+          40,
+          22,
+          44,
+          24,
+          48,
+          26,
+          52,
+          28,
+          56,
+          30,
+          60,
+          32,
+          64
+        ]
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "zero_rate_only_even_middle_lengths_bounded",
+      "states": [
+        "a0",
+        "a1",
+        "b",
+        "d"
+      ],
+      "starts": {
+        "a0": 1,
+        "b": 1
+      },
+      "closes": {
+        "a0": 1,
+        "b": 1
+      },
+      "transitions": [
+        {
+          "source": "a0",
+          "target": "a1",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a1",
+          "target": "a0",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "d",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "b",
+          "weight": 1,
+          "empty_W": false
+        }
+      ],
+      "expected": {
+        "lambda": "0/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": false,
+        "L_first_8": [
+          2,
+          3,
+          2,
+          5,
+          2,
+          7,
+          2,
+          9
+        ]
+      },
+      "comment": "All depths have accepting walks; even n has cost 2 and odd n has n+2. Thus lambda=0 does not imply eventual uniform boundedness or a full rate limit.",
+      "computed": {
+        "productive_states": [
+          "a0",
+          "a1",
+          "b"
+        ],
+        "productive_count": 3,
+        "simple_cycles": [
+          {
+            "states": [
+              "a0",
+              "a1"
+            ],
+            "length": 2,
+            "weight": 0
+          },
+          {
+            "states": [
+              "b"
+            ],
+            "length": 1,
+            "weight": 1
+          }
+        ],
+        "lambda_fraction": "0/1",
+        "bounded_all": false,
+        "zero_cycle_states": [
+          "a0",
+          "a1"
+        ],
+        "period_P": 2,
+        "covered_residues": [
+          0
+        ],
+        "eventually_uniformly_bounded": false,
+        "representative_walks": {
+          "0": {
+            "middle_length": 0,
+            "total_cost": 2,
+            "states": [
+              "a0"
+            ]
+          }
+        },
+        "L_depths_1_through_32": [
+          2,
+          3,
+          2,
+          5,
+          2,
+          7,
+          2,
+          9,
+          2,
+          11,
+          2,
+          13,
+          2,
+          15,
+          2,
+          17,
+          2,
+          19,
+          2,
+          21,
+          2,
+          23,
+          2,
+          25,
+          2,
+          27,
+          2,
+          29,
+          2,
+          31,
+          2,
+          33
+        ]
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "zero_rate_infinite_missing_lengths",
+      "states": [
+        "a0",
+        "a1"
+      ],
+      "starts": {
+        "a0": 1
+      },
+      "closes": {
+        "a0": 1
+      },
+      "transitions": [
+        {
+          "source": "a0",
+          "target": "a1",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a1",
+          "target": "a0",
+          "weight": 0,
+          "empty_W": true
+        }
+      ],
+      "expected": {
+        "lambda": "0/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": false,
+        "L_first_8": [
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null
+        ]
+      },
+      "comment": "The liminf is 0 but every odd middle length has no accepting walk. Infinity must remain extended infinity.",
+      "computed": {
+        "productive_states": [
+          "a0",
+          "a1"
+        ],
+        "productive_count": 2,
+        "simple_cycles": [
+          {
+            "states": [
+              "a0",
+              "a1"
+            ],
+            "length": 2,
+            "weight": 0
+          }
+        ],
+        "lambda_fraction": "0/1",
+        "bounded_all": false,
+        "zero_cycle_states": [
+          "a0",
+          "a1"
+        ],
+        "period_P": 2,
+        "covered_residues": [
+          0
+        ],
+        "eventually_uniformly_bounded": false,
+        "representative_walks": {
+          "0": {
+            "middle_length": 0,
+            "total_cost": 2,
+            "states": [
+              "a0"
+            ]
+          }
+        },
+        "L_depths_1_through_32": [
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null
+        ]
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "bounded_all_has_onset",
+      "states": [
+        "a",
+        "b"
+      ],
+      "starts": {
+        "a": 1
+      },
+      "closes": {
+        "b": 1
+      },
+      "transitions": [
+        {
+          "source": "a",
+          "target": "b",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "b",
+          "weight": 0,
+          "empty_W": true
+        }
+      ],
+      "expected": {
+        "lambda": "0/1",
+        "bounded_all": true,
+        "eventually_uniformly_bounded": true,
+        "L_first_8": [
+          null,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "comment": "bounded_all passes although the depth-1 value is infinite; the guarantee starts at depth 2.",
+      "computed": {
+        "productive_states": [
+          "a",
+          "b"
+        ],
+        "productive_count": 2,
+        "simple_cycles": [
+          {
+            "states": [
+              "b"
+            ],
+            "length": 1,
+            "weight": 0
+          }
+        ],
+        "lambda_fraction": "0/1",
+        "bounded_all": true,
+        "zero_cycle_states": [
+          "b"
+        ],
+        "period_P": 1,
+        "covered_residues": [
+          0
+        ],
+        "eventually_uniformly_bounded": true,
+        "representative_walks": {
+          "0": {
+            "middle_length": 1,
+            "total_cost": 2,
+            "states": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        "L_depths_1_through_32": [
+          null,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "certificate_onset_depth": 2,
+        "certificate_uniform_bound": 2
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "bounded_all_not_necessary_positive_prefix",
+      "states": [
+        "a0",
+        "a1"
+      ],
+      "starts": {
+        "a0": 1
+      },
+      "closes": {
+        "a0": 1
+      },
+      "transitions": [
+        {
+          "source": "a0",
+          "target": "a1",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a1",
+          "target": "a0",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a0",
+          "target": "a0",
+          "weight": 1,
+          "empty_W": false
+        }
+      ],
+      "expected": {
+        "lambda": "0/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": true,
+        "L_first_8": [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ]
+      },
+      "comment": "Only one phase closes; one positive transition covers the other parity. The uniform bound is 3 from depth 1.",
+      "computed": {
+        "productive_states": [
+          "a0",
+          "a1"
+        ],
+        "productive_count": 2,
+        "simple_cycles": [
+          {
+            "states": [
+              "a0",
+              "a1"
+            ],
+            "length": 2,
+            "weight": 0
+          },
+          {
+            "states": [
+              "a0"
+            ],
+            "length": 1,
+            "weight": 1
+          }
+        ],
+        "lambda_fraction": "0/1",
+        "bounded_all": false,
+        "zero_cycle_states": [
+          "a0",
+          "a1"
+        ],
+        "period_P": 2,
+        "covered_residues": [
+          0,
+          1
+        ],
+        "eventually_uniformly_bounded": true,
+        "representative_walks": {
+          "0": {
+            "middle_length": 0,
+            "total_cost": 2,
+            "states": [
+              "a0"
+            ]
+          },
+          "1": {
+            "middle_length": 1,
+            "total_cost": 3,
+            "states": [
+              "a0",
+              "a0"
+            ]
+          }
+        },
+        "L_depths_1_through_32": [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        "certificate_onset_depth": 2,
+        "certificate_uniform_bound": 3
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "bounded_all_not_necessary_positive_suffix",
+      "states": [
+        "a",
+        "b",
+        "d"
+      ],
+      "starts": {
+        "a": 1
+      },
+      "closes": {
+        "b": 1
+      },
+      "transitions": [
+        {
+          "source": "a",
+          "target": "a",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "d",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a",
+          "target": "b",
+          "weight": 1,
+          "empty_W": false
+        }
+      ],
+      "expected": {
+        "lambda": "0/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": true,
+        "L_first_8": [
+          null,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "comment": "Wait on the non-closing zero loop at a, then exit with positive cost to b. Every closing zero-cycle phase requirement fails.",
+      "computed": {
+        "productive_states": [
+          "a",
+          "b"
+        ],
+        "productive_count": 2,
+        "simple_cycles": [
+          {
+            "states": [
+              "a"
+            ],
+            "length": 1,
+            "weight": 0
+          }
+        ],
+        "lambda_fraction": "0/1",
+        "bounded_all": false,
+        "zero_cycle_states": [
+          "a"
+        ],
+        "period_P": 1,
+        "covered_residues": [
+          0
+        ],
+        "eventually_uniformly_bounded": true,
+        "representative_walks": {
+          "0": {
+            "middle_length": 1,
+            "total_cost": 3,
+            "states": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        "L_depths_1_through_32": [
+          null,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "certificate_onset_depth": 2,
+        "certificate_uniform_bound": 3
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "two_zero_cycles_one_fixed_residue_certificate",
+      "states": [
+        "a0",
+        "a1",
+        "b0",
+        "b1",
+        "b2"
+      ],
+      "starts": {
+        "a0": 1
+      },
+      "closes": {
+        "b0": 1
+      },
+      "transitions": [
+        {
+          "source": "a0",
+          "target": "a1",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a1",
+          "target": "a0",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b0",
+          "target": "b1",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b1",
+          "target": "b2",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b2",
+          "target": "b0",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "a0",
+          "target": "b0",
+          "weight": 1,
+          "empty_W": false
+        }
+      ],
+      "expected": {
+        "lambda": "0/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": true,
+        "L_first_8": [
+          null,
+          3,
+          null,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "comment": "Accepting middle lengths are 1+2i+3j. They include every n>=3; arbitrary finite context around a designated pump handles both zero cycles.",
+      "computed": {
+        "productive_states": [
+          "a0",
+          "a1",
+          "b0",
+          "b1",
+          "b2"
+        ],
+        "productive_count": 5,
+        "simple_cycles": [
+          {
+            "states": [
+              "a0",
+              "a1"
+            ],
+            "length": 2,
+            "weight": 0
+          },
+          {
+            "states": [
+              "b0",
+              "b1",
+              "b2"
+            ],
+            "length": 3,
+            "weight": 0
+          }
+        ],
+        "lambda_fraction": "0/1",
+        "bounded_all": false,
+        "zero_cycle_states": [
+          "a0",
+          "a1",
+          "b0",
+          "b1",
+          "b2"
+        ],
+        "period_P": 6,
+        "covered_residues": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "eventually_uniformly_bounded": true,
+        "representative_walks": {
+          "0": {
+            "middle_length": 6,
+            "total_cost": 3,
+            "states": [
+              "a0",
+              "a1",
+              "a0",
+              "b0",
+              "b1",
+              "b2",
+              "b0"
+            ]
+          },
+          "1": {
+            "middle_length": 1,
+            "total_cost": 3,
+            "states": [
+              "a0",
+              "b0"
+            ]
+          },
+          "2": {
+            "middle_length": 8,
+            "total_cost": 3,
+            "states": [
+              "a0",
+              "a1",
+              "a0",
+              "a1",
+              "a0",
+              "b0",
+              "b1",
+              "b2",
+              "b0"
+            ]
+          },
+          "3": {
+            "middle_length": 3,
+            "total_cost": 3,
+            "states": [
+              "a0",
+              "a1",
+              "a0",
+              "b0"
+            ]
+          },
+          "4": {
+            "middle_length": 4,
+            "total_cost": 3,
+            "states": [
+              "a0",
+              "b0",
+              "b1",
+              "b2",
+              "b0"
+            ]
+          },
+          "5": {
+            "middle_length": 5,
+            "total_cost": 3,
+            "states": [
+              "a0",
+              "a1",
+              "a0",
+              "a1",
+              "a0",
+              "b0"
+            ]
+          }
+        },
+        "L_depths_1_through_32": [
+          null,
+          3,
+          null,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "certificate_onset_depth": 9,
+        "certificate_uniform_bound": 3
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "acyclic_productive_graph",
+      "states": [
+        "a",
+        "b",
+        "d"
+      ],
+      "starts": {
+        "a": 1
+      },
+      "closes": {
+        "b": 1
+      },
+      "transitions": [
+        {
+          "source": "a",
+          "target": "b",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "b",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "d",
+          "target": "d",
+          "weight": 0,
+          "empty_W": true
+        }
+      ],
+      "expected": {
+        "lambda": null,
+        "bounded_all": false,
+        "eventually_uniformly_bounded": false,
+        "L_first_8": [
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "comment": "The productive graph has two states and no cycle; L(s)=+infinity for all s>2, not zero.",
+      "computed": {
+        "productive_states": [
+          "a",
+          "b"
+        ],
+        "productive_count": 2,
+        "simple_cycles": [],
+        "lambda_fraction": null,
+        "bounded_all": false,
+        "zero_cycle_states": [],
+        "period_P": 1,
+        "covered_residues": [],
+        "eventually_uniformly_bounded": false,
+        "representative_walks": {},
+        "L_depths_1_through_32": [
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "partial_positive_rate_hidden_zero_cycle_full",
+      "states": [
+        "p",
+        "r1",
+        "r2",
+        "z"
+      ],
+      "starts": {
+        "p": 1
+      },
+      "closes": {
+        "p": 1,
+        "z": 1
+      },
+      "transitions": [
+        {
+          "source": "p",
+          "target": "p",
+          "weight": 1,
+          "empty_W": false
+        },
+        {
+          "source": "p",
+          "target": "r1",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "r1",
+          "target": "r2",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "r2",
+          "target": "z",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "z",
+          "target": "z",
+          "weight": 0,
+          "empty_W": true
+        }
+      ],
+      "expected": {
+        "lambda": "0/1",
+        "bounded_all": true,
+        "eventually_uniformly_bounded": true,
+        "L_first_8": [
+          2,
+          3,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "comment": "The omitted zero continuation becomes useful only at middle length 3.",
+      "computed": {
+        "productive_states": [
+          "p",
+          "r1",
+          "r2",
+          "z"
+        ],
+        "productive_count": 4,
+        "simple_cycles": [
+          {
+            "states": [
+              "p"
+            ],
+            "length": 1,
+            "weight": 1
+          },
+          {
+            "states": [
+              "z"
+            ],
+            "length": 1,
+            "weight": 0
+          }
+        ],
+        "lambda_fraction": "0/1",
+        "bounded_all": true,
+        "zero_cycle_states": [
+          "z"
+        ],
+        "period_P": 1,
+        "covered_residues": [
+          0
+        ],
+        "eventually_uniformly_bounded": true,
+        "representative_walks": {
+          "0": {
+            "middle_length": 3,
+            "total_cost": 2,
+            "states": [
+              "p",
+              "r1",
+              "r2",
+              "z"
+            ]
+          }
+        },
+        "L_depths_1_through_32": [
+          2,
+          3,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "certificate_onset_depth": 4,
+        "certificate_uniform_bound": 2
+      },
+      "assertions_passed": true,
+      "complete": true,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": true
+    },
+    {
+      "name": "partial_positive_rate_hidden_zero_cycle_retained",
+      "states": [
+        "p",
+        "r1",
+        "r2"
+      ],
+      "starts": {
+        "p": 1
+      },
+      "closes": {
+        "p": 1
+      },
+      "transitions": [
+        {
+          "source": "p",
+          "target": "p",
+          "weight": 1,
+          "empty_W": false
+        },
+        {
+          "source": "p",
+          "target": "r1",
+          "weight": 0,
+          "empty_W": true
+        },
+        {
+          "source": "r1",
+          "target": "r2",
+          "weight": 0,
+          "empty_W": true
+        }
+      ],
+      "expected": {
+        "lambda": "1/1",
+        "bounded_all": false,
+        "eventually_uniformly_bounded": false,
+        "L_first_8": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "comment": "This retained authentic subgraph is incomplete at r2. It agrees with the full graph for depths 1..3 but has partial lambda=1 rather than full lambda=0.",
+      "computed": {
+        "productive_states": [
+          "p"
+        ],
+        "productive_count": 1,
+        "simple_cycles": [
+          {
+            "states": [
+              "p"
+            ],
+            "length": 1,
+            "weight": 1
+          }
+        ],
+        "lambda_fraction": "1/1",
+        "bounded_all": false,
+        "zero_cycle_states": [],
+        "period_P": 1,
+        "covered_residues": [],
+        "eventually_uniformly_bounded": false,
+        "representative_walks": {},
+        "L_depths_1_through_32": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ]
+      },
+      "assertions_passed": true,
+      "complete": false,
+      "finite_missing_residue_lower_bound_checked": true,
+      "finite_positive_certificate_bound_checked": true,
+      "deterministic_total_empty_W_map_checked": false
+    }
+  ],
+  "deliberately_false_claims": [
+    {
+      "claim": "bounded_all_means_bound_from_depth_1",
+      "rejected": true
+    },
+    {
+      "claim": "bounded_all_is_necessary",
+      "rejected": true
+    },
+    {
+      "claim": "zero_mean_implies_eventual_uniform_boundedness",
+      "rejected": true
+    },
+    {
+      "claim": "lambda_is_always_a_limit",
+      "rejected": true
+    },
+    {
+      "claim": "positive_partial_lambda_is_global_lower_rate",
+      "rejected": true
+    },
+    {
+      "claim": "finite_prefix_gate_proves_global_equality",
+      "rejected": true
+    }
+  ],
+  "all_assertions_passed": true,
+  "provenance": "Separately authored same-task AI-subagent mathematical controls; no human or external replication claim."
+}

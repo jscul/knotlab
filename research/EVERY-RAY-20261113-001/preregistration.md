@@ -139,3 +139,10 @@ reviewed the replacement design cold (`advisor_review_answer_2.md`); its points 
   - G-last runs on all 224.
   - G-brute's panel is the completed 300-family smoke ordered by largest block, then the sum of block sizes (`max_then_sum`).
   - The completed smoke, a uniform sample of eligible families, is reported as description only.
+
+## Deviation before G-brute (2026-11-13 22:4x UTC, before any brute-force result)
+
+The smoke could not be finished: the runner rightly refused to add rows from the timer-patched code to rows from the code before
+the patch. G-brute's panel source is therefore a 300-row composite of the frozen sample, the first 150 of stratum G and the first
+150 of stratum N in selection order (`codex/sample/brute_panel_source.jsonl`). Codex's `run_brute.py` chooses the panel from it as
+frozen (`max_then_sum`). G-reg is judged as clarified, on families with one SELF call and one entry.

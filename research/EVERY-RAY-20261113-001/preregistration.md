@@ -71,3 +71,22 @@ Any G-last, G-brute or G-node failure invalidates the run.
 One Codex hand-off (code, gates, smoke); one full run launched by the thread (registered in `docs/LONG_RUNNING.md`); its frozen
 summary; a referee hand-off; report. The free-target, members-anywhere L_any is the deferred follow-on (a sub-goal), bounded above
 by both L_path and TRUE-RATE's λ_true.
+
+## Clarification before any result (2026-11-13, while Codex builds; no result seen)
+
+`TRUE-RATE-20261113-001` found that 99 of the census's 131 last-call-bounded families carry a top port down that ray by identity, so
+the bond's top member is a port of every copy and the bond is local at each depth (A81, under challenge). `BRANCH-DEPTH-20261112-001`
+had seen the same case on the first branch. A bounded verdict is therefore split, computed in the reading by the thread on Codex's DP
+(not a change to the frozen classes or predictions):
+
+- **Port maps.** A SELF call with arguments (a_0, a_1, a_2) maps the child's port j to the parent's port a_j when a_j is a port.
+  Along a path, T_s ⊆ {0, 1, 2} is the set of C_s's port positions that hold a port of main: T_0 = {0, 1, 2} when main is S (for
+  main ≠ S, T_1 is the positions where the entry call passes a port of main), and T_{k+1} = {j : a_j ∈ T_k} for the call chosen.
+  The path is **carried** at depth s when T_s is not empty, **uncarried** when it is empty (and then it stays empty).
+- **The split.** The min-over-paths DP with the node extended by T (eight values), accepting at depth s only with T_s empty, gives
+  L_path^unc(s). A family bounded over paths is **bounded, uncarried** when L_path^unc is eventually bounded (the exact residue test
+  on the extended graph), otherwise **bounded, carried only**. The census's first-ray classes are split the same way along the first
+  ray.
+- **Reading.** P1 is reported as frozen, and next to it on uncarried boundedness. Only uncarried boundedness says the reach is
+  genuinely short: a carried bond never crosses depth. Still open: one of main's own distinctions carried down by identity forever
+  could also keep a bond local. It is not tested here and is stated as a limitation.

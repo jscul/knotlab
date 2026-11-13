@@ -1,0 +1,351 @@
+[
+  {
+    "idx": "chain_control",
+    "s": 1,
+    "h": 1,
+    "D": 2,
+    "n": 9,
+    "copies": 3,
+    "clauses": 7,
+    "status": "exact",
+    "exhaustive_through": 2,
+    "checked_by_size": {
+      "2": 6,
+      "3": 25
+    },
+    "method": "direct SAT with exhaustive support search below minimum",
+    "active_size": 3,
+    "L_trunc": 3,
+    "witness": {
+      "variables": [
+        3,
+        4,
+        6
+      ],
+      "allowed": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "forbidden": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "deletions": [
+        {
+          "forgotten": 3,
+          "all_assignments_satisfiable": true,
+          "tests": 4
+        },
+        {
+          "forgotten": 4,
+          "all_assignments_satisfiable": true,
+          "tests": 4
+        },
+        {
+          "forgotten": 6,
+          "all_assignments_satisfiable": true,
+          "tests": 4
+        }
+      ],
+      "origins": [
+        {
+          "copy": [],
+          "role": "top_port",
+          "slot": 2,
+          "depth": 0
+        },
+        {
+          "copy": [],
+          "role": "own",
+          "slot": 0,
+          "depth": 0
+        },
+        {
+          "copy": [
+            0
+          ],
+          "role": "own",
+          "slot": 0,
+          "depth": 1
+        }
+      ]
+    },
+    "seconds": 0.000476,
+    "peak_mb": 24.961,
+    "sat_calls": 35,
+    "cached_models": 64,
+    "support_checks": 33,
+    "sat_satisfied": 32,
+    "sat_unsatisfied": 3,
+    "free_cache_hits": 1,
+    "model_coverage_hits": 99,
+    "expected": 4,
+    "pass": false
+  },
+  {
+    "idx": "chain_control",
+    "s": 2,
+    "h": 1,
+    "D": 3,
+    "n": 11,
+    "copies": 4,
+    "clauses": 9,
+    "status": "exact",
+    "exhaustive_through": 3,
+    "checked_by_size": {
+      "2": 6,
+      "3": 45,
+      "4": 114
+    },
+    "method": "direct SAT with exhaustive support search below minimum",
+    "active_size": 4,
+    "L_trunc": 4,
+    "witness": {
+      "variables": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "allowed": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "forbidden": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "deletions": [
+        {
+          "forgotten": 3,
+          "all_assignments_satisfiable": true,
+          "tests": 8
+        },
+        {
+          "forgotten": 4,
+          "all_assignments_satisfiable": true,
+          "tests": 8
+        },
+        {
+          "forgotten": 5,
+          "all_assignments_satisfiable": true,
+          "tests": 8
+        },
+        {
+          "forgotten": 8,
+          "all_assignments_satisfiable": true,
+          "tests": 8
+        }
+      ],
+      "origins": [
+        {
+          "copy": [],
+          "role": "top_port",
+          "slot": 2,
+          "depth": 0
+        },
+        {
+          "copy": [],
+          "role": "own",
+          "slot": 0,
+          "depth": 0
+        },
+        {
+          "copy": [],
+          "role": "own",
+          "slot": 1,
+          "depth": 0
+        },
+        {
+          "copy": [
+            0,
+            0
+          ],
+          "role": "own",
+          "slot": 0,
+          "depth": 2
+        }
+      ]
+    },
+    "seconds": 0.001112,
+    "peak_mb": 24.961,
+    "sat_calls": 100,
+    "cached_models": 176,
+    "support_checks": 170,
+    "sat_satisfied": 88,
+    "sat_unsatisfied": 12,
+    "free_cache_hits": 11,
+    "model_coverage_hits": 1018,
+    "expected": 5,
+    "pass": false
+  },
+  {
+    "idx": "free_control",
+    "s": 1,
+    "h": 1,
+    "D": 2,
+    "n": 6,
+    "copies": 3,
+    "clauses": 1,
+    "status": "not_found_within_size_cap",
+    "exhaustive_through": 4,
+    "checked_by_size": {
+      "2": 3,
+      "3": 9,
+      "4": 10
+    },
+    "method": "direct SAT with exhaustive support search below minimum",
+    "active_size": 4,
+    "L_trunc": null,
+    "seconds": 0.000211,
+    "peak_mb": 24.961,
+    "sat_calls": 16,
+    "cached_models": 32,
+    "support_checks": 22,
+    "sat_satisfied": 16,
+    "sat_unsatisfied": 0,
+    "free_cache_hits": 0,
+    "model_coverage_hits": 107,
+    "pass": true
+  },
+  {
+    "control": "greatest_fixed_point_NAE",
+    "G": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "pass_result": true
+  }
+]

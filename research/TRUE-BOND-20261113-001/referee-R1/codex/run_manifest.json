@@ -1,0 +1,57 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "TRUE-BOND-20261113-001",
+  "purpose": "Independent referee R1 recomputation and critique",
+  "branch": "code_analysis",
+  "interface": {
+    "question": "Least bond through a top port and C_s own distinction, with finite truncation members anywhere",
+    "inputs": "Frozen spec; permitted BD definitions and prior study selection; true rows used only for post-computation comparison",
+    "forbidden": "All files under study implementation directory; no study summary-DP imports",
+    "outputs": "72 direct SAT minimum rows plus witness projections, deletion tests, subgroup and status counts",
+    "observables": "Exact L_trunc(s,h); study discrepancy; completion/shortener cross-tabulation",
+    "controls": "Known NAE chain and free pattern; greatest port fixed point; separate CNF and second SAT solver",
+    "stop": "Eight deterministic selected families, s=1,2,3 and h=1,2,3; bounded per-case commands",
+    "nonclaims": "No arbitrary-depth lower bound from finite stabilization; no asymptotic rate or typical behavior"
+  },
+  "inputs_sha256": {
+    "research/TRUE-BOND-20261113-001/codex_spec.md": "1a94e14d40788fe7de97e03f48f25ad1e9c6ddc21ea9fa33889b0d3242d9647f",
+    "research/TRUE-BOND-20261113-001/preregistration.md": "f45c03943c0da6504ecee74d691261d272f47a16f63e7ef6c3c16d2262e8745b",
+    "research/TRUE-BOND-20261113-001/true_bond.md": "35001966cd2111b72d68cef8ef2e494abfe2261bcd29d3857b65db4cda10756c",
+    "experiments/BOND-DEPTH-20261112-001A/BOND-DEPTH-20261112-001A-E001_spine_bonds/census.py": "bba5f4f187dec802ebb3f457d1183fe6ffb72d7517bcb11ba0f2eed2841c8ca2",
+    "artifacts/PROVED-RATE-20261113-001A/PROVED-RATE-20261113-001A-E001_cycle_mean/rates_all.jsonl": "3ae6c2a16c78ed7e11e7e040afc5d48e0368d675733b6d1b7cbc74bf468bd725",
+    "artifacts/TRUE-BOND-20261113-001A/TRUE-BOND-20261113-001A-E001_side_branches/true_rates_all.jsonl": "705e310adcd2800a25f6a5084bbac1feb1840e7a7b042a85d9265ce5903f014a",
+    "artifacts/TRUE-BOND-20261113-001A/TRUE-BOND-20261113-001A-E001_side_branches/summary.json": "b16cffd0e0af76b1e358a7c0f67eaec637cb63ea40f2d39e22e869e8cac30040"
+  },
+  "code_sha256": {
+    "audit_claims.py": "293d1bafd86d4d9ae919791c3bbc1b162307938c198f53d9c4cf11bfb2d03944",
+    "recompute_sat.py": "de7b4994cd2e55dda1a5ed491e9543e0d0849b37b7ccd5149fbfa7f0afe6343e",
+    "summarize_recomputation.py": "e7edc7138f9832748836086cbdf806ed8c7a93856b97f39f08d109e7b4c45283",
+    "verify_recomputation.py": "10816a0670e539ae8f8a4139b064d986ba168c08a534a146537ee488e194bcc5"
+  },
+  "python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "executable": "/home/jscul/p-vs-np-contact-first/.venv/bin/python",
+  "python_sat": "1.9.dev15",
+  "platform": "Linux-6.14.0-37-generic-x86_64-with-glibc2.41",
+  "process_budget": 2,
+  "memory_budget_mb": 6144,
+  "recomputation_address_space_cap_mb": 4096,
+  "verification_address_space_cap_mb": 2048,
+  "commands": [
+    ".venv/bin/python -B research/TRUE-BOND-20261113-001/referee-R1/codex/recompute_sat.py --controls",
+    ".venv/bin/python -B research/TRUE-BOND-20261113-001/referee-R1/codex/recompute_sat.py --h 1 --seconds 15",
+    ".venv/bin/python -B research/TRUE-BOND-20261113-001/referee-R1/codex/recompute_sat.py --h 2 3 --seconds 10",
+    ".venv/bin/python -B research/TRUE-BOND-20261113-001/referee-R1/codex/recompute_sat.py --only 137 911 --s 3 --h 3 --seconds 60 --output recomputed_retries.jsonl --warm-witnesses recomputed.jsonl",
+    ".venv/bin/python -B research/TRUE-BOND-20261113-001/referee-R1/codex/verify_recomputation.py",
+    ".venv/bin/python -B research/TRUE-BOND-20261113-001/referee-R1/codex/audit_claims.py",
+    ".venv/bin/python -B research/TRUE-BOND-20261113-001/referee-R1/codex/summarize_recomputation.py"
+  ],
+  "execution_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "calibration": "controls_initial.json preserves a first fixture with an incorrect expected chain size; a surviving top port made that fixture shorter. The fixture was replaced by a chain using three fresh distinctions per copy. All final controls pass.",
+  "write_boundary": "/home/jscul/p-vs-np-contact-first/research/TRUE-BOND-20261113-001/referee-R1/codex",
+  "git_mutations": false,
+  "publication": false,
+  "implementation_access": false
+}

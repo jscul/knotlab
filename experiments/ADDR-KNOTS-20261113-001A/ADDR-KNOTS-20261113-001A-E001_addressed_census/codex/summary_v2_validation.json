@@ -1,0 +1,423 @@
+{
+  "check_count": 37,
+  "checks": [
+    {
+      "name": "protected original inputs match baseline",
+      "status": "passed"
+    },
+    {
+      "name": "original report is an unchanged prefix",
+      "status": "passed"
+    },
+    {
+      "name": "smoke has the disclosed records and fates",
+      "status": "passed"
+    },
+    {
+      "name": "smoke_uninterrupted CLI produces both summaries",
+      "status": "passed"
+    },
+    {
+      "name": "smoke_uninterrupted Markdown points to its versioned JSON",
+      "status": "passed"
+    },
+    {
+      "name": "smoke_resumed CLI produces both summaries",
+      "status": "passed"
+    },
+    {
+      "name": "smoke_resumed Markdown points to its versioned JSON",
+      "status": "passed"
+    },
+    {
+      "name": "resumed and uninterrupted v2 summaries are identical",
+      "status": "passed"
+    },
+    {
+      "name": "smoke remains incomplete with zero unresolved ambiguities",
+      "status": "passed"
+    },
+    {
+      "name": "raw and merged smoke verdicts coincide",
+      "status": "passed"
+    },
+    {
+      "name": "E unsplit_units match independent grouping",
+      "status": "passed",
+      "units": 102
+    },
+    {
+      "name": "E class_units match independent grouping",
+      "status": "passed",
+      "units": 105
+    },
+    {
+      "name": "E s >= 2 uses unit minimum and accepted frequency",
+      "status": "passed"
+    },
+    {
+      "name": "E s >= 3 uses unit minimum and accepted frequency",
+      "status": "passed"
+    },
+    {
+      "name": "E writes two non-null logistic matrices",
+      "status": "passed"
+    },
+    {
+      "name": "W unsplit_units match independent grouping",
+      "status": "passed",
+      "units": 56
+    },
+    {
+      "name": "W class_units match independent grouping",
+      "status": "passed",
+      "units": 58
+    },
+    {
+      "name": "W s >= 2 uses unit minimum and accepted frequency",
+      "status": "passed"
+    },
+    {
+      "name": "W s >= 3 uses unit minimum and accepted frequency",
+      "status": "passed"
+    },
+    {
+      "name": "W writes two non-null logistic matrices",
+      "status": "passed"
+    },
+    {
+      "name": "labels are independent of shard and input order",
+      "status": "passed"
+    },
+    {
+      "name": "decided pattern verdict heals null and recomputes fate",
+      "status": "passed"
+    },
+    {
+      "name": "contradictions list all affected pattern levels and key IDs",
+      "status": "passed"
+    },
+    {
+      "conflicts": [
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810"
+          ],
+          "decided_records": [
+            {
+              "key_id": "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_ihm6ob_9/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_ihm6ob_9/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 2,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        },
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810"
+          ],
+          "decided_records": [
+            {
+              "key_id": "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_ihm6ob_9/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_ihm6ob_9/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 3,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        }
+      ],
+      "name": "distinct conflict stops CLI without summaries",
+      "status": "passed"
+    },
+    {
+      "conflicts": [
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "decided_records": [
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_1krhf64d/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_1krhf64d/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 2,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        },
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "decided_records": [
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_1krhf64d/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_1krhf64d/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 3,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        }
+      ],
+      "name": "duplicate conflict stops CLI without summaries",
+      "status": "passed"
+    },
+    {
+      "conflicts": [
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854-replay-control"
+          ],
+          "decided_records": [
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854-replay-control",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_khblsbi8/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_khblsbi8/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 2,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        },
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854-replay-control"
+          ],
+          "decided_records": [
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854-replay-control",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_khblsbi8/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_khblsbi8/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 3,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        }
+      ],
+      "name": "same-key-other-id conflict stops CLI without summaries",
+      "status": "passed"
+    },
+    {
+      "conflicts": [
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810"
+          ],
+          "decided_records": [
+            {
+              "key_id": "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_nu4rt8yv/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_nu4rt8yv/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 2,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        },
+        {
+          "alive_key_ids": [
+            "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854"
+          ],
+          "dead_key_ids": [
+            "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810"
+          ],
+          "decided_records": [
+            {
+              "key_id": "0524d21d71f19119bc9bccd7210f8775d342d29bec8ac7e089fe53b75462b810",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_nu4rt8yv/keys/worker-0.jsonl",
+                "line": 2
+              },
+              "verdict": 0
+            },
+            {
+              "key_id": "95aeddd146ae12e781c11cd3cab4a97918b687bac3929717027faa27671ef854",
+              "source": {
+                "file": "/home/jscul/p-vs-np-contact-first/experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/.summary_v2_controls_nu4rt8yv/keys/worker-0.jsonl",
+                "line": 1
+              },
+              "verdict": 1
+            }
+          ],
+          "level": 3,
+          "pattern_hash": "11bc4a4a3d0922908f9a7754a2e851a559c644f0"
+        }
+      ],
+      "name": "invalid-derived-metadata conflict stops CLI without summaries",
+      "status": "passed"
+    },
+    {
+      "name": "a repeated key cannot silently replace scientific metadata",
+      "status": "passed"
+    },
+    {
+      "name": "a compatible replay resolves a previously undecided key",
+      "status": "passed"
+    },
+    {
+      "name": "FU matrices differ only in the unresolved response",
+      "status": "passed"
+    },
+    {
+      "name": "100 repeated W draws do not become 30 decided units",
+      "status": "passed"
+    },
+    {
+      "name": "W death share uses frequency rather than unit count",
+      "status": "passed"
+    },
+    {
+      "name": "E bootstrap matches independent multiplicity calculation",
+      "resamples": 2000,
+      "seed": 20261115,
+      "status": "passed"
+    },
+    {
+      "name": "W bootstrap matches independent multiplicity calculation",
+      "resamples": 2000,
+      "seed": 20261115,
+      "status": "passed"
+    },
+    {
+      "name": "P1 excludes and counts all F0 descriptions",
+      "status": "passed"
+    },
+    {
+      "name": "one smoke return is preserved",
+      "status": "passed"
+    },
+    {
+      "name": "all protected inputs and original summaries remain unchanged",
+      "status": "passed"
+    }
+  ],
+  "controls": "in-memory mutations and temporary copies of smoke records only; no generated census data",
+  "elapsed_seconds": 4.796010229969397,
+  "full_run_accessed": false,
+  "inputs": [
+    "smoke_uninterrupted",
+    "smoke_resumed"
+  ],
+  "limitations": "smoke has no observed FU, no s=1 descriptions and no eligible matched cells; FU and bootstrap response handling exercised with labelled controls, not registered evidence",
+  "protected_sha256": {
+    "addr.py": "39b28de4c395a7afe38a5a47887842ca895ffed33aa8de25531ef8c868db8288",
+    "run_census.py": "74e4806a1fce5f931f1210459a0eb25d4081b12338d103e4a44225049c3f978d",
+    "smoke_resumed/draws.jsonl.gz": "a0c7e9b60d963c3fe576822d382bb15bcc3b9607f868d2fc89a7a12cf43cd999",
+    "smoke_resumed/keys/worker-0.jsonl": "afdfca38f4d77cac98b0a9045dff37519114260cbc6c1389d2b3ea3186e8fa88",
+    "smoke_resumed/keys/worker-1.jsonl": "07d8f9e253f189c54a60a14c7b3762e6da7b35c3e8d79f82f4cb3f557a1e2f64",
+    "smoke_resumed/keys/worker-2.jsonl": "086151ed95eb6b079c746c570cf1d4b17d5dee88864335543bb15e05b3cbba17",
+    "smoke_resumed/keys/worker-3.jsonl": "eca1b0122065e5c49b0bb396cb4ea47ea22708d78dad263f69c5980c81fcf24a",
+    "smoke_resumed/run_info.json": "42dae306a052a97c3557be0ba5722a2857eecf91d03d61ad34bb871d8bdaf323",
+    "smoke_uninterrupted/draws.jsonl.gz": "a0c7e9b60d963c3fe576822d382bb15bcc3b9607f868d2fc89a7a12cf43cd999",
+    "smoke_uninterrupted/keys/worker-0.jsonl": "d7ab026f5feb52b4f240c599c048e33665463f8131e81bfe481a5c985decc75a",
+    "smoke_uninterrupted/keys/worker-1.jsonl": "bd3f1c87b6889d97955afb0e845042ad8920489d62e18b881496556c1566dac3",
+    "smoke_uninterrupted/keys/worker-2.jsonl": "e263c4856cce1721b2e4571f2bc6e1c16f03d65fc36ec4d1c6c312c3cac26f31",
+    "smoke_uninterrupted/keys/worker-3.jsonl": "e8ced2971ed503887fc4cd7ff0d930f425965515af6b26a66a2b292b6dbfa0db",
+    "smoke_uninterrupted/run_info.json": "0e60956506fe7229f265c6478cbbe7f924d79ea5c11f10decf3a4b05d4aed047",
+    "smoke_uninterrupted/summary.json": "9fb10332a11a72c1891158bce231d58f219e79de0de4d4662e8a1e95fe79c8fb",
+    "smoke_uninterrupted/summary.md": "e82dadf698f6e724209bad91d9d392fa960d60499a57dbb61769ae43c95d027a",
+    "summarize.py": "33c568ab9fb4abc81b58d4e04b3988c5c6767ecefbe97287c9678f41bf0fc212",
+    "validation.json": "e4dfe5395bfc9e33fb433d848e7edc94cdfb168d1e904abe62e69834592b6b62"
+  },
+  "status": "passed",
+  "summarizer_sha256": "52c00db4f95eaf72d81aee0d463a0dc3e67826201f632d3fb96c3d8163500cdf"
+}

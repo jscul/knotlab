@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "purpose": "Implementation controls for summarize.py; these are not scientific validation gates for the registered census.",
+  "python": ".venv/bin/python -B",
+  "process_limit": "one light Python process; no census or SAT computation",
+  "synthetic_controls": {
+    "status": "passed",
+    "checks": [
+      "Python syntax parsed successfully",
+      "F0 for twelve empty levels",
+      "F1 remains determined after a later null",
+      "F2 remains determined after a later null",
+      "A leading null that leaves F1 versus F2 open remains FU",
+      "All six frozen density-bin lower boundaries are assigned correctly",
+      "E eligibility requires 30 decided patterns and five decided automaton classes per arm",
+      "Two eligible cells give Bonferroni m = 2",
+      "Both FU assignments agree on a synthetic differs cell and a synthetic same cell",
+      "Synthetic differs cell triggers H-dens failure",
+      "Synthetic same bounded cell at rho_max = 1.5 triggers H-bound failure",
+      "A known dead-then-alive profile triggers P2 independently of fate",
+      "P4 absence in incomplete coverage is not promoted to registered absence",
+      "Conflicting automaton classes preserve the exact 30-pattern arm count and mean density while blocking its cluster inference",
+      "Unambiguous raw fate counts survive a conflicting cluster assignment",
+      "Different W eligibility readings are flagged rather than silently selected",
+      "Two 2000-resample cluster bootstraps with seed 20261115 replay identically",
+      "FU stays a null logistic response and the fit is explicitly skipped pending its response rule",
+      "Percentile interpolation matches the 2.5-percent quantile of [0, 1]",
+      "Synthetic outputs serialize without NaN or infinity"
+    ],
+    "stdout": "PASS: syntax, forced fates, bin boundaries, 2000-resample bootstrap replay, E eligibility/m/combined verdicts, H-dens/H-bound, return/P4, conflicting-pattern cluster preservation, W threshold ambiguity, FU logistic matrix"
+  },
+  "post_review_controls": {
+    "status": "passed",
+    "wall_time_seconds": 0.023962035,
+    "checks": [
+      "Latest Python syntax and Markdown render",
+      "E automaton-class bootstrap and Bonferroni family retained",
+      "Incomplete H-dens and H-bound results are observed_subset_failure_signal with registered_status not_evaluated_in_incomplete_coverage",
+      "Complete synthetic H-dens and H-bound failures retain their frozen fails status",
+      "Ambiguous automaton cluster preserves exact arm count and density means",
+      "Insufficient maximum possible patterns makes a cell definitely ineligible despite representative ambiguity",
+      "W independently resamples empirical draws within each arm, not automaton clusters",
+      "Unequal-cluster fixture gives W bootstrap 95-percent lower bound 0.83 versus E cluster lower bound 0.0",
+      "W bootstrap seed replay is identical and both FU scenarios use common resampled draws",
+      "Validation falls back to CODEX/validation.json and exposes the selected path",
+      "Aggregate passed_with_skipped_ambiguous_assertions retains core checks true and all assertions false with explicit disclosure",
+      "Later null level counts remain distinct from unresolved FU fates"
+    ],
+    "stdout": {
+      "status": "passed",
+      "W_95_lower": 0.83,
+      "E_95_lower": 0.0
+    }
+  },
+  "observed_cli_smoke": {
+    "status": "passed",
+    "directory": "smoke_uninterrupted",
+    "exit_code": 0,
+    "wall_time_seconds": 0.387552626,
+    "outputs": ["smoke_uninterrupted/summary.json", "smoke_uninterrupted/summary.md"],
+    "complete_key_records": 300,
+    "present_draws": {"W": 40000, "E": 19416},
+    "draws_with_complete_keys": {"W": 114, "E": 200},
+    "accepted_draws_missing_complete_keys": {"W": 28656, "E": 19216},
+    "record_errors": 0,
+    "registered_coverage_complete": false,
+    "validation_at_this_smoke": "missing; the parent assembles validation.json after other gates finish",
+    "registered_run_ready_for_interpretation": false,
+    "distinct_pattern_fates": {
+      "W": {"F0": 1, "F1": 0, "F2": 4, "F3": 51, "FU": 0},
+      "E": {"F0": 1, "F1": 0, "F2": 33, "F3": 68, "FU": 0}
+    },
+    "literal_P1_non_F3": 45,
+    "literal_P1_non_F3_all_F0": true,
+    "triggered_ambiguities": ["pattern_class", "pattern_cluster", "pattern_condition_s", "pattern_letter_class", "pattern_settled", "p1_f0"],
+    "statsmodels_available": false,
+    "design_matrices": "retained in summary.json under logistic.E and logistic.W",
+    "note": "The parent will rerun this CLI after validation assembly. Later reviewed changes are covered by post_review_controls: definite-ineligibility bounds, observed-subset statistical claim scope, W draw bootstrap, master validation fallback and skipped-assertion disclosure, and separate null-level versus FU counts."
+  }
+}

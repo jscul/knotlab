@@ -3388,6 +3388,10 @@ So holes come in two kinds:
      counter built from it counts depth in binary, its cheapest descriptions found take about 104 to 106 bits (which bounds how
      rare counting is from neither side), one changed knot almost always breaks it within depth 64, and the hopping version is
      dead from depth 12 to 64 ([decision note](../research/CHEAP-COUNT-20261112-001/cheap_count.md)).
+   - **Counting inside** (`BOND-DEPTH-20261112-001`; referee pending): along one ray of nested copies the law's least bond from
+     the top to depth s is exactly bounded (two or three members) in 204 of 664 one-definition limit-only families, and grows
+     steadily within depth 30 (one member every one to three levels) in 240; none is yet proved to grow forever
+     ([decision note](../research/BOND-DEPTH-20261112-001/bond_depth.md)).
    - **Bonds in a side copy and a counter with shared helpers** (`BONDS-AND-COUNT-20261112-001`). At depth two one branch gives a least bond of four, even after comparing all six eligible pairs of ends. One distinction in a side copy gives a bond of three for the same comparison (exact example). Even with every side branch available, the least bond to a target on the first recursive branch grows linearly with depth (proved). A separate construction counts with three distinctions per position. The whole pattern can read the original reference and one helper of the seed. Counting with just the original reference readable everywhere remains open. [The three questions](../research/BONDS-AND-COUNT-20261112-001/three_questions.md)
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,

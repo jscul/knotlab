@@ -34,8 +34,8 @@ ray, in the satisfying assignments of infinite iterated hyperedge-replacement NA
 Inside these nested patterns the law's reach does both. In about a third of the families it is exactly bounded: some distinction
 two or three members away from the top constrains every depth, however deep. In another third, read to depth 30, it grows steadily,
 by one member every level or two, the way it grows along a ruler, though the method has not proved that this continues; and a
-quarter stay flat to depth 30 without proof. So counting inside, the law's reach lengthening with depth, is common, not rare, in the
-patterns read; whether it lasts forever in them is not settled.
+quarter stay flat to depth 30 without proof. So, within depth 30, counting inside (the law's reach lengthening with depth) appears in more
+than a third of the families read; whether it lasts in them is not settled, and no share of the full weighting is claimed.
 
 ## Reading
 

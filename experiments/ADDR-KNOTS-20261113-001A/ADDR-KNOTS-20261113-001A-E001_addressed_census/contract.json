@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "ADDR-KNOTS-20261113-001A-E001",
+ "ticket": "ADDR-KNOTS-20261113-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Among not-all-equal patterns whose knots are placed by a small automaton on binary addresses, under a description weighting: how common is each fate within level 12, and does the activity class of the relative maps change the death share at matched knot density?",
+ "definitions": {
+  "spec": "research/ADDR-KNOTS-20261113-001/codex_spec.md (sha256 789690bbf92879d7fd73fb04f5afcd323a626a4ae3ad603656bc4d7bf4bf1383), computed by Codex",
+  "design": "research/ADDR-KNOTS-20261113-001/preregistration.md"
+ },
+ "public_inputs": {
+  "code": "written by Codex in codex/ from the spec; dlang.py's gamma and the proof note's check.py read-only",
+  "run": "codex exec with the spec; the full run launched by the thread from Codex's runner"
+ },
+ "forbidden_inputs": [
+  "Changing the spec, predictions or decision rules after seeing registered results",
+  "Reading research/ADDR-KNOTS-20261113-001/exploratory/"
+ ],
+ "primary_observable": "fate within level 12 per distinct pattern, by relative activity class and density bin (rho_max); weighted shares from W",
+ "cheapest_meaningful_control": "matched knot density (the dull explanation); settled-by-construction descriptions excluded; both readings of undecided",
+ "validation_gate": "V-act, V-rel, V-sat, V-B0, V-act-class, V-code, V-resume of the spec; any failure invalidates the run",
+ "predictions": {
+  "P1": "single placement and first-letter-settled descriptions are F3",
+  "P2": "no return",
+  "P4": "some unsettled exponential description first dies at level >= 9",
+  "H-dens": "no eligible cell differs",
+  "H-bound": "bounded die less than exponential at rho_max >= 1.5"
+ },
+ "stop_rule": "One Codex hand-off, one full run by the thread, its summary; a referee hand-off; report.",
+ "runtime": "Unknown; registered as long-running."
+}

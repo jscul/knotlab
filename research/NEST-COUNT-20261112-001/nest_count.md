@@ -39,11 +39,15 @@ ends".)*
 
 **Interpretation, not a theorem.**
 - **The interface.** What separates the decidable nested patterns from the undecidable ones here is the size of the interface;
-  that is a reading of these two results, not a theorem that counting needs growing interfaces.
+  that is a reading of these two results, not a theorem that counting needs growing interfaces. *Narrowed 2026-11-13
+  (`ADDR-KNOTS-20261113-001`, Lemma A; logged in `docs/CORRECTIONS.md`, Narrowing): an interface that grows without bound but meets
+  each copy uniformly (every member of a shared list alike) still leaves nesting finite-state, so what separates is how many
+  different ways a copy can be met, not how many distinctions it meets.*
 - **The owner's Gödel question.** Gödel's compactness explains why the limit-only patterns live (`LIMIT-ONLY-20261112-001`).
   Incompleteness needs a system that can count; our nested patterns cannot, from their ends, because each nested knot meets its
   outside in three distinctions. A pattern can reach undecidable questions only when its parts meet along interfaces that grow, as
-  on the plane.
+  on the plane. *Narrowed 2026-11-13 (`ADDR-KNOTS-20261113-001`): growing is necessary, not enough; the parts must also be able to
+  tell the shared distinctions apart.*
 - **Counting inside.** T2 is about windows at the top. Inside a pattern, the law's bonds between the top and a deep level can still
   grow with depth, as bond distance does on a ruler; that would be counting in the knots-alone sense, and is not decided here.
 
@@ -78,7 +82,7 @@ block**, only T1(c) is new.
 | This attempt — can nested patterns count? | **Status:** Successful (refereed, confirmed with fixes) | T1, T2, P3 proved: this language cannot count from its ends; growing interfaces can |
 | Local direction — counting | Continue | Counting inside (bonds against depth) is the open half |
 | Broader exploration — G17 | Searching | Where the extra witnesses sit is in the basket |
-| Long-term goal — G1 Space from a law (with G17) | Capability gained | The interface size is what separates decidable nesting from undecidable, plane-like patterns |
+| Long-term goal — G1 Space from a law (with G17) | Capability gained | The interface size is what separates decidable nesting from undecidable, plane-like patterns (*narrowed 2026-11-13: the number of ways a copy can be met, not the size*) |
 
 **Corrections:** one, Not a block. **Goals:** a checkpoint for G17 and G1 (capability gained); no goal change. **Assumptions:** A79
 used. **Basket:** `WITNESS-COUNT-20261112-001#1` (2/3 Payoff, 3/3 Concreteness), `PREFIX-END-20261112-001#2` (2/3, 3/3),

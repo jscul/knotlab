@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 13 November 2026: a growing interface does not by itself escape finite state
+
+- The study of whether nested patterns can count (`NEST-COUNT-20261112-001`) read its results as "the size of the interface is what
+  separates decidable nesting from undecidable". That reading is narrowed. A pattern in which each nested copy meets every
+  distinction its ancestors put on a shared list, a number that grows without bound, is still finite-state, because a copy treats
+  all members of a list alike. What separates is how many different ways a copy can be met, not how many distinctions it meets
+  ([proof note](proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md), referee pending).
+- Unchanged: NEST-COUNT's theorems.
+
 ## 13 November 2026: true rates with side branches, narrowed by its referee
 
 - The study of true rates with side branches (`TRUE-RATE-20261113-001`) was confirmed: the proof that the reach is bounded at every

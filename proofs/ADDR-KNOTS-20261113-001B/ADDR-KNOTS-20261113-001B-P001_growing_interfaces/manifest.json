@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "ADDR-KNOTS-20261113-001B-P001",
+  "canonical_id": "ADDR-KNOTS-20261113-001B-P001",
+  "kind": "proof",
+  "ticket": "ADDR-KNOTS-20261113-001B",
+  "proof": "ADDR-KNOTS-20261113-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Growing interfaces: shared lists, one knot rule, finite types",
+  "status": "Proved",
+  "claim": "Proved by hand: (Lemma A) nesting with shared lists, where a part meets every distinction its ancestors enlisted, is finite-state through per-list value profiles, so life is eventually periodic in depth and the bottomless pattern decided; (B0) one knot rule of three tree automorphisms on two letters lives at every level, while several rules can die and one rule on seven letters (the Fano difference set) dies at every level. Remark (unchecked, flagged for the referee): with higher-order definitions and depth counted in unfoldings, finite types keep life eventually periodic. Check passed (2,242 small and 2,000 random single-rule cases alive to level 10; Fano dead at levels 1-4). Referee pending.",
+  "dependencies": [
+    "NEST-COUNT-20261112-001",
+    "SHORT-DESC-20261112-001"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "A shared-list description whose life at depth t is not determined by port values and capped per-signature value counts.",
+    "A single-rule two-letter pattern dead at some level.",
+    "The seven-letter rule (e, a, a^3) alive at some level."
+  ],
+  "lineage": {
+    "home_scope": "ADDR-KNOTS-20261113-001",
+    "epic_path": [
+      "ADDR-KNOTS-20261113-001"
+    ],
+    "parents": [
+      "research/ADDR-KNOTS-20261113-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/manifest.json",
+    "identity": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/identity.json",
+    "proof": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/proof.md",
+    "result": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/result.json",
+    "check": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces/check.py",
+    "directory": "proofs/ADDR-KNOTS-20261113-001B/ADDR-KNOTS-20261113-001B-P001_growing_interfaces"
+  },
+  "remaining_obligations": [
+    "Independent referee (the background referee thread): pending.",
+    "Section 3 (finite types) unchecked."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; the shared-list extension of the A79 language (Lemma A); binary tree automorphisms (B0); the seven-letter Fano rule.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude in one session at the coordinator's go-ahead on 2026-11-13; B0's second proof and the B0 statement's scope from the advisor model; independent referee pending.",
+    "status": "proof by hand; check passed; referee pending",
+    "novelty": "known-in-kind (Lemma A, finite types); known-with-delta (B0)"
+  }
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**331 current results** and 5 superseded ones, from 360 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**331 current results** and 5 superseded ones, from 361 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 360 epics with their closures
+- [Epics](#epics): all 361 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1487,6 +1487,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Two unlengthened shifts beyond one box (`WEIGHTS-20261112-001`) | — | [folder](research/WEIGHTS-20261112-001/) |
 | 2026-11-12 | Which cyclic sequences to fix (`WHICH-SEQUENCES-20261112-001`) | [closure](proofs/WHICH-SEQUENCES-20261112-001Z/WHICH-SEQUENCES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WHICH-SEQUENCES-20261112-001/) |
 | 2026-11-12 | How many all-equal knots each dead depth needs (`WITNESS-COUNT-20261112-001`) | [closure](proofs/WITNESS-COUNT-20261112-001Z/WITNESS-COUNT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WITNESS-COUNT-20261112-001/) |
+| 2026-11-13 | Knots placed by an automaton on addresses: do growing interfaces change fates? (`ADDR-KNOTS-20261113-001`) | — | [folder](research/ADDR-KNOTS-20261113-001/) |
 | 2026-11-13 | Does the law's reach grow along every descending path (`EVERY-RAY-20261113-001`) | — | [folder](research/EVERY-RAY-20261113-001/) |
 | 2026-11-13 | Proved rates for the law's reach along a ray (`PROVED-RATE-20261113-001`) | [closure](proofs/PROVED-RATE-20261113-001Z/PROVED-RATE-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/PROVED-RATE-20261113-001/) |
 | 2026-11-13 | How the law's reach typically behaves across nested patterns (`REACH-CENSUS-20261113-001`) | [closure](proofs/REACH-CENSUS-20261113-001Z/REACH-CENSUS-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/REACH-CENSUS-20261113-001/) |

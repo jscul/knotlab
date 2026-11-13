@@ -136,6 +136,7 @@ evidence: results and their status come from the records each entry links.
 | [A79](#a79--a-patterns-weight-under-a-description-language-sums-its-descriptions) | A pattern's weight under a description language sums its descriptions | measure | Assumed |
 | [A80](#a80--the-laws-reach-is-read-along-the-first-call-ray) | The law's reach is read along the first-call ray | reading | Under challenge |
 | [A81](#a81--the-reach-may-start-from-a-top-port-carried-down-the-ray) | The reach may start from a top port carried down the ray | reading | Under challenge |
+| [A82](#a82--knots-placed-by-address-maps-read-the-owners-nested-parts-that-know-where-they-are) | Knots placed by address maps read the owner's nested parts that know where they are | reading | Assumed |
 
 ## Entries
 
@@ -2124,3 +2125,24 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-13 · Added, and put under challenge, by `TRUE-RATE-20261113-001`: the true bond is proved bounded by 3 in 10 of 226
     families, all carrying a top port; across BRANCH-DEPTH's 664 rules 320 of the 432 bounded ones carry one and 112 do not
     ([decision note](../research/TRUE-RATE-20261113-001/true_rate.md)).
+
+### A82 · Knots placed by address maps read the owner's nested parts that know where they are
+
+**Assumed** · 2026-11-13 · reading
+
+- **Statement.** The owner's recursion picture ("the nested structures depend on the larger structures to know where they are ... for
+  logic, it can hop around") is read, for a census, as not-all-equal knots placed by a small invertible automaton on binary
+  addresses: level n is the addresses of length n, a placement (g₁, g₂, g₃) of words of length at most 2 in the automaton's maps puts
+  the knot {g₁x, g₂x, g₃x} on every address x where the three differ, and a tail class (the addresses sharing their last letters) has
+  the same inner knots everywhere and is joined to the rest by knots that depend on its tail. Descriptions are weighted by fair coins
+  over automata and placements (A79's kind, A71).
+- **Why.** A finite description must treat unboundedly many shared distinctions by a fixed rule: uniformly (shared lists, which stay
+  finite-state, Lemma A), by a shift of position (flat rows, known), or by a finite automaton on addresses, which contains the shift
+  as its simplest case and lets the number of joining knots grow with the level; it is the literature's self-similar groups
+  (Bartholdi 2022), where decidability follows that growth ([pre-registration](../research/ADDR-KNOTS-20261113-001/preregistration.md)).
+- **Rests on it.** The fate shares and the matched-density comparison of `ADDR-KNOTS-20261113-001`.
+- **Challenge.** Place knots across levels too (an address and its one-letter extensions, so that depth is nesting depth and not only
+  a level), use longer words or more letters, or weight by shortest description, and compare the fates; or find a recursion reading
+  outside the three ways that is not finite-state.
+- **History.**
+  - 2026-11-13 · Added by `ADDR-KNOTS-20261113-001` at its pre-registration.

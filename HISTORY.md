@@ -9,7 +9,8 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   from fresh code. Its correction of the earlier "ruler" reading was mostly an identity artefact: in 99 of the 131 families bounded
   along another ray, that ray carries a top distinction into every copy, so the bond is local at each depth. Only 32 of the 224 are
   bounded along another ray without one; there growth along the first ray is not growth with depth. The census's own "bounded where a
-  bond persists" is likewise mostly such carried bonds; without them the reach grows in about two thirds. Large several-definition
+  bond persists" is likewise mostly such carried bonds; without them the reach grows in about two thirds (the thread's own reading
+  after the referee, awaiting a short referee check). Large several-definition
   blocks are validated only at shallow depth ([decision note](research/REACH-CENSUS-20261113-001/reach_census.md)).
 - Unchanged: every count, certificate and proved rate.
 

@@ -3415,7 +3415,7 @@ So holes come in two kinds:
    - **The reach census** (`REACH-CENSUS-20261113-001`; refereed, confirmed with fixes; code by Codex): across all 223,261 nested
      draws of the description code, 58.4% of the weight has no eligible endpoint at increasing depth and 79.8% no ray bond at large
      depths; where a first-ray bond persists it is bounded in about 70%, but 82% of that because the ray carries a top distinction
-     into every copy (a local bond, as in `TRUE-RATE-20261113-001`); on uncarried bonds the reach grows in about two thirds, alike in
+     into every copy (a local bond, as in `TRUE-RATE-20261113-001`); on uncarried bonds the reach grows in about two thirds (unrefereed, R2 pending), alike in
      families that live at every depth and in those alive only in the limit; another ray bounds 32 of the 224 proved growers
      without a carried port ([decision note](../research/REACH-CENSUS-20261113-001/reach_census.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The

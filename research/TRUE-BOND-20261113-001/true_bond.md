@@ -2,7 +2,8 @@
 
 Epic `TRUE-BOND-20261113-001` (`PROVED-RATE-20261113-001` direction 1; G17, with G1), 2026-11-13, at the coordinator's go-ahead.
 Pre-registered with the Codex spec in commit 3709fddce before the code was written. The canonical K1–K3 test is unchanged.
-**Referee pending** (handed to the referee thread).
+Refereed by the referee thread (TRUE-BOND-R1, `referee-R1/report.md`, commit 0e741e63d): **confirmed with fixes**; six corrections
+logged (**one Block**, two Narrowing, three Not a block).
 
 ## Words
 
@@ -25,20 +26,22 @@ hyperedge-replacement NAE instance, against the same along one derivation ray, f
 | --- | --- | --- | --- |
 | 1 | **The method is exact where checked.** With the depth convention settled (Codex flagged it; the thread chose the uniform truncation), the DP's bond counts by size equal direct satisfiability counts in all 33 cases (sizes through each exhausted bound, h = 2 and 3), including a family where a side branch shortens the bond (911: 3 against 4); the F-for-G mutant fails; side branches forced to G reproduce L_ray (168 of 168). | computed | G passed (after the thread settled the ambiguity) |
 | 2 | **Side branches shorten the reach in at least 62 of 226 families (27%),** within the depths reached: by one member (44 families), two (9) or three (9); never lengthen it. | exact at the depths reached | P1 failed (at most 20% registered) |
-| 3 | **Growth survives wherever it was read deep enough.** All 37 families that reached depth 12 have L(12) > L(6), and all 75 that reached depth 8 or more grow from depth 4 to their last. In a few the deficit itself grows (0, 1, 1, 2, 2, 3, 3 in four families: a side branch lowers the rate, from one member per level to one per two, without stopping the growth). | exact at the depths reached | P3 held on the 37 reached; not decided for the rest |
+| 3 | ~~**Growth survives wherever it was read deep enough.**~~ *Corrected after the referee (Block and Narrowing):* all 37 families that reached depth 12 have L(12) > L(6), and all 75 that reached depth 8 or more grow, but these are mostly families where side branches change nothing (only 2 of the 37 and 9 of the 75 are shortened; shortening makes the computation slower, so the deep-read set is biased), and the shortened ones grow by about one member over six to eight levels. In four families (269, 302, 642, 908) the true bond is **flat at 3 through depth 7** while the ray bond rises to 6: no growth is observed there, the strongest evidence against growth surviving. ~~"a side branch lowers the rate … without stopping the growth"~~ is withdrawn. | exact at the depths reached | P3 undecided on its registered denominator |
 | 4 | **Most families did not reach depth 12.** 163 hit the time limit, 18 the memory limit, 6 had an incomplete ray reference, 2 errors; the reached depths were 5 or less in 112. P2 could be read on only 2 shortened families (both D(12) − D(6) = 0). | stated | P2 not decided |
 
 ## Answer
 
-Allowing side branches does shorten the law's reach in more than a quarter of these families, by one to three members, and in a few
-it lowers the rate of growth; but wherever the computation got deep enough, the reach still grows with depth. So the growth found along
-the ray is not an artefact of leaving out side branches, in every family where this could be checked; for most families the depths
-reached were too small to say.
+Allowing side branches shortens the law's reach in more than a quarter of these families, by one to three members. Where the
+computation got deep, the reach still grows, but those are mostly families where side branches change nothing; in four families the
+true bond stays at 3 to depth 7 while the ray bond doubles, so side branches may make the reach bounded there. Whether growth survives
+side branches is therefore open, with four candidate counter-examples. *(Corrected after the referee.)*
 
 ## Reading
 
 **Interpretation, not a theorem.** Side branches give the law extra routes near each level, so a bond can use a shortcut through a
-branch hanging off the ray, but no route skips a level (the construction's own fact), so the reach still lengthens as depth grows.
+branch hanging off the ray. No route skips a level (the construction's own fact), but that does not make the reach lengthen: the four
+flat families show that side branches can carry the constraint down at no cost per level. *(The inference first written here is
+withdrawn after the referee.)*
 
 ## Lag cutoffs and census-only claims
 
@@ -57,7 +60,10 @@ lacked a final newline); they were run afterwards with the same code (`thread_la
 
 ## Review
 
-Referee pending (the referee thread). The advisor model reviewed the design cold (`advisor_review_answer.md`): it confirmed the
+**TRUE-BOND-R1** (the referee thread with Codex): the object is right (the closed side table is the true bond with members at any
+depth; the uniform truncation only in the finite gate); the cost cap hides nothing; a fresh satisfiability recomputation gives all 48
+minima at h ≥ 2 equal to the recorded L; "never lengthens" is a consistency check (L ≤ L_ray by construction). Families 248 and 1288
+failed with a SystemError in the bond search (cause not recorded). The advisor model reviewed the design cold (`advisor_review_answer.md`): it confirmed the
 method's exactness, dropped an unsound rate step, and gave the pruning, the validation design and the discriminating predictions.
 
 ## Literature and provenance
@@ -76,13 +82,15 @@ Substantive: the exact true bonds at the depths reached. Administrative: the spe
 
 ## Corrections
 
-None.
+Six, from the referee (`docs/CORRECTIONS.md`, 2026-11-13): **Block**, the growing-deficit sentence (the four families are flat, not
+slower); **Narrowing**, the deep-read set is biased and P3 undecided; **Narrowing**, the Reading's inference; **Not a block**, two
+SystemErrors; **Not a block**, roster and P1 as reported; **Not a block**, the gate stands.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — does growth survive side branches? | **Status:** Partially successful (referee pending) | G passed; P1 failed (27% shortened); P3 held where read; most families not read to depth 12 |
+| This attempt — does growth survive side branches? | **Status:** Partially successful (refereed, one Block) | G passed; P1 failed (27% shortened); P3 undecided; four candidate counter-examples |
 | Local direction — counting inside | Continue | A faster method would read all families deep enough |
 | Broader exploration — G17 | Searching | The full census and per-residue rates stay proposed |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | The law's reach grows with side branches allowed, where checked |

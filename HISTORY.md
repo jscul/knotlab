@@ -11,6 +11,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 13 November 2026: side branches, a withdrawn claim
+
+- The test of whether the law's growing reach survives side branches (`TRUE-BOND-20261113-001`) was confirmed in its exact values,
+  but one claim is withdrawn: four families were said to grow more slowly with side branches; in fact their true bond stays flat at
+  3 to depth 7 while the bond along the ray doubles. They are candidate cases where side branches make the reach bounded. The deep-read
+  families that do grow are mostly ones side branches do not change, so whether growth survives is open
+  ([decision note](research/TRUE-BOND-20261113-001/true_bond.md)).
+- Unchanged: every exact value.
+
 ## 13 November 2026: proved rates along a ray, narrowed by its referee
 
 - The proofs of the law's long-run reach along a ray (`PROVED-RATE-20261113-001`) were confirmed. More patterns are bounded than

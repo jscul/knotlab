@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LEVEL-RETURN-20261113-001A-E001",
+ "ticket": "LEVEL-RETURN-20261113-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the 48 returning addressed patterns keep their returns and the seven their parity alternation at levels 13-16 under certified verdicts?",
+ "definitions": {
+  "design": "research/LEVEL-RETURN-20261113-001/preregistration.md",
+  "code": "certify.py, lrat_check.c, job.py (the thread's), addr.py (Codex's, second generator)"
+ },
+ "public_inputs": {
+  "keys": "artifacts/ADDR-KNOTS-20261113-001A/.../keys.jsonl.gz",
+  "solver": "CaDiCaL 2.1.2 from the Lean toolchain"
+ },
+ "forbidden_inputs": [
+  "Changing predictions after seeing registered results"
+ ],
+ "primary_observable": "certified fate per pattern and level 1-16",
+ "cheapest_meaningful_control": "brute force on small patterns; corrupted proofs rejected; two pattern generators",
+ "validation_gate": "gates.json passed; second generator agrees at every case",
+ "predictions": {
+  "R1": "seven keep alternating at 13-16",
+  "R2": "proved states replay",
+  "R3": ">=75% persistence",
+  "R4": "two knots carry #2's even deaths"
+ },
+ "stop_rule": "One registered run, the proof attempt, a referee hand-off.",
+ "runtime": "registered as long-running"
+}

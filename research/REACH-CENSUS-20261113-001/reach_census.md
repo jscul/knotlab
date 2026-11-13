@@ -4,7 +4,9 @@ Epic `REACH-CENSUS-20261113-001` (`BOND-DEPTH-20261112-001` direction 2; G17, wi
 the owner's standing instruction; computed by Codex from a frozen spec. Pre-registered in commit 5605bec51, with clarifications of
 Codex's flagged ambiguities in 3e7c1e0ef, both before any census result was seen. The canonical K1–K3 test is unchanged.
 Refereed by the referee thread with Codex (REACH-CENSUS-R1, `referee-R1/report.md`, commit d4cbc40ff): **confirmed with fixes**, folded
-in below; six corrections logged (five Narrowing, one Not a block), one of them the thread's own after the referee.
+in below; six corrections logged (five Narrowing, one Not a block), one of them the thread's own after the referee. That one, the
+carried split of the census's first-ray classes, had a light second check (REACH-CENSUS-R2, `referee-R2/report.md`, commit e7c0aa081):
+confirmed with two wording fixes, both Narrowing, folded in below.
 
 ## Words
 
@@ -36,7 +38,7 @@ family by the minimum cycle mean and an exact residue test on a finite min-plus 
 | --- | --- | --- | --- |
 | 1 | **The method is exact where checked.** The replayed draws match the stored ones (G0, 0 mismatches); on the one-definition families the new code reproduces the earlier graphs, rates, every-depth tests, ray bonds at 13,598 depths and the referee's 95 exact tests (G1, 0 mismatches; at the census caps 644 of 664 comparable, all agree); a family wrapped under a new main shifts by one depth (G2, 618 of 618 under the clarified long-run class); an independent brute force over the ray's states agrees at all 1,071 depths of 139 of the 150 panel families, 65 of them with several definitions, with no disagreement; the other 11, its largest cases, did not finish within its 5-hour cap (G3, folded in after the close); every family that lives at every depth has a living usual limit (G4). *After the referee:* its fresh recomputation agrees on 49 families (147 satisfiability checks at s = 1 to 3, classes, cycle means, residue verdicts and L_ray to depth 30), 37 with several definitions and seven with blocks of 12; so large several-definition blocks are validated only at shallow depth. | computed | G0–G2 and G4 passed; G3 on 139 of 150; large several-definition blocks checked only at shallow depth |
 | 2 | **Most nested weight has no depth to read: 58.4%.** Main reaches no copy (5.8%) or the ray definition has no own distinctions after inlining (52.6%), so no eligible endpoint lies at increasing depth. Another 3.0% has no ray bond by construction (a dead limit 0.7%, own distinctions in no constraint 2.4%). These follow from the definitions and the code, not from the law. | proved (one-line arguments) | stated |
-| 3 | **Absence is typical by weight, bounded reach is typical where a bond persists.** Of all weight: no ray bond at large depths 79.8% (to 80.2%); bounded 13.9%; grows 5.9%; mixed by residue below 0.01% of the classified weight (its band reaches 0.37%); unresolved 0.4%. Among the computed draws that live at every depth (38.2% of the weight), none at any depth 47.0%, bounded 35.7% [35.4, 36.9], grows 15.3% [15.0, 16.4], lost at large depths 1.1%, unresolved 0.9%. Where a ray bond persists, bounded is 68.8% to 70.6% [68.3, 71.0]. *After the referee (the thread's own split, `carried_split.json`; **unrefereed, a short referee check R2 pending**):* 82% of the bounded weight is **carried**: the first ray passes a top port into every copy by identity, so its bond is local at each depth and does not cross depth. On uncarried persisting bonds, growth is 63% to 68% and bounded 32% to 37% (families that live at every depth; 59% to 64% and 37% to 41% in the limit-only cell). | exact per family, census | P1 held as frozen (mostly carried), P2 held |
+| 3 | **Absence is typical by weight, bounded reach is typical where a bond persists.** Of all weight: no ray bond at large depths 79.8% (to 80.2%); bounded 13.9%; grows 5.9%; mixed by residue below 0.01% of the classified weight (its band reaches 0.37%); unresolved 0.4%. Among the computed draws that live at every depth (38.2% of the weight), none at any depth 47.0%, bounded 35.7% [35.4, 36.9], grows 15.3% [15.0, 16.4], lost at large depths 1.1%, unresolved 0.9%. Where a ray bond persists, bounded is 68.8% to 70.6% [68.3, 71.0]. *After the referee (the thread's own split, `carried_split.json`, confirmed by R2 on the one-definition families; the 11,457 several-definition persisting draws of 44,266 were not re-tested):* 82% of the bounded weight is **carried**: the first ray passes a top port into every copy by identity, so its bond is local at each depth and does not cross depth. On uncarried persisting bonds, the first-ray bond grows in 63% to 68% and is bounded in 32% to 37% (families that live at every depth; 59% to 64% and 37% to 41% in the limit-only cell). | exact per family, census | P1 held as frozen (mostly carried), P2 held |
 | 4 | **Families alive only in the limit grow about twice as often, mostly because their bonds exist.** Among their computed draws (862): bounded 63.6% [60.3, 68.9], grows 32.1% [29.0, 37.5], none 0.8%, unresolved 2.1%; grows minus the forever cell's is 15.9 points (draws, unresolved against), bootstrap 2.5% quantile 12.8. *After the run (exploratory):* where a ray bond persists, growth is 29.4% to 31.2% in families that live at every depth and 32.9% to 35.0% in the limit-only cell, close but still apart; most of the gap is the 47% of forever families with no ray bond at any depth. | exact per family, census | P3 held |
 | 5 | **The rates and bounds are few.** Growth at 1 (6,211 draws), 1/2 (5,594), 1/3 (789), 2 (345), 2/3, 1/6, 1/4 and 14 rarer rates from 1/7 to 3 members per level; bounded reach has a certified upper bound of 3 members (80% of bounded weight), 4 (17%), 2, 5 or 6, from an onset depth of 1 to 12 (a bound, not always the least value). | exact per family | reported |
 | 6 | **The class depends on which ray is read.** On a frozen sample of 3,000 families with a second ray (the last-call ray), the class agrees on 75.4%. Growth is the least stable: 314 of 645 families growing along the first ray are bounded along the last-call ray, 297 grow on both. *After the referee:* in 283 of the 314 the last-call ray carries a top port by identity; only 31 are bounded without one. | exact per family, sample | reported |
@@ -47,22 +49,26 @@ family by the minimum cycle mean and an exact residue test on a finite min-plus 
 Under the description weighting, a nested pattern typically gives the law no reach to measure: in 58% of the weight no eligible
 endpoint lies at increasing depth, and in another 21% no ray bond joins the top to deep copies. Where a ray bond persists along the
 first ray, it is bounded in about 70%, but mostly because the ray carries a top port into every copy, so the bond is local at each
-depth. Set those aside and the picture turns: on uncarried bonds the reach grows linearly, mostly at one or one half member per level,
-in about two thirds, and is genuinely short in one third, in families that live at every depth and in those alive only in the limit
-alike (this carried split of the first-ray classes is the thread's own, made after the referee's pass; R2 pending). Growth along the first ray is mostly not undone by another ray: in at least 32 of the 224 families where it was proved,
-another ray reaches depth s within five members without carrying a top port, and in 99 more it does so only by carrying one.
-*(Rewritten after the referee.)*
+depth. Set those aside and the picture turns: on uncarried bonds the first-ray bond grows linearly, mostly at one or one half member
+per level, in about two thirds, and is genuinely short in one third, in families that live at every depth and in those alive only in
+the limit alike (the thread's carried split, confirmed by R2 on the one-definition families). Growth of a ray bond is no lower bound
+on the true least bond: side branches shorten it in at least 62 of the 226 proved growers (`TRUE-BOND-20261113-001`). Another ray
+seldom contradicts first-ray growth: in at least 32 of the 224 families where it was proved, another ray reaches depth s within five
+members without carrying a top port, and in 99 more only by carrying one; in the 3,000-family sample a genuinely short second-ray
+bond contradicts it in 31 of 645 growers (4.8%), and 297 (46%) grow on both rays. *(Rewritten after the referee and R2.)*
 
 ## Reading
 
 **Interpretation, not a theorem.**
-- **Counting inside is uncommon by weight but usual where a genuine bond exists.** Along a chosen ray the reach lengthens in about
-  6% of the weight. Among the bonds that do cross depth (uncarried), lengthening is the majority, and it survives the second ray
-  read in about 95% of the sampled growers once carried ports are set aside. Whether it survives every path of copies is
-  `EVERY-RAY-20261113-001`'s question.
+- **Lengthening along a ray is uncommon by weight but usual where a genuine bond exists.** Along a chosen ray the bond lengthens in
+  about 6% of the weight. Among the bonds that do cross depth (uncarried), first-ray lengthening is the majority. On the last-call
+  ray a genuinely short bond contradicts it in only 31 of 645 sampled growers; 297 grow on both rays, 283 are bounded there only
+  through a carried port, and 34 are lost, absent or unresolved. Whether it survives every path of copies is
+  `EVERY-RAY-20261113-001`'s question, and whether it survives side branches `TRUE-RATE-20261113-001`'s.
 - **For the owner's nested parts.** Where the larger pattern holds the smaller ones close, it usually does so by sharing a top
   distinction with every copy, not by a short chain of constraint. Where no distinction is shared, each level usually adds to the
-  distance, as a count would. *(Rewritten after the referee; the carried split it rests on awaits R2.)*
+  first-ray bond, as a count would; whether it adds to the true distance is open, since side branches can shorten it. *(Rewritten
+  after the referee and R2.)*
 
 ## Lag cutoffs and census-only claims
 
@@ -96,7 +102,10 @@ ports (99 local by identity, 32 genuine; also found by `TRUE-RATE-20261113-001`,
 at shallow depth, four small overstatements, and the crash a resume. Two more points needed no change: the shares are of draws and
 worded consistently, and the 813 unresolved are handled as registered (inside the bands, below the 5% undecided level). The 70/30
 split is not settled by construction. After the referee the thread split the census's own first-ray classes by carried ports
-(`carried_split.py`), which narrows the Answer's reading of boundedness. The advisor model reviewed the design cold before freezing
+(`carried_split.py`), which narrows the Answer's reading of boundedness; **REACH-CENSUS-R2** (light, the referee's own
+carried test, `ref_split.py`) reproduced it on the one-definition families (81.9% of bounded draws carried, growth 67.1% of uncarried
+persisting bonds), found it applied symmetrically (2,201 carried growers set aside; 8% of carried families still grow), and asked for
+the two wordings above. The advisor model reviewed the design cold before freezing
 (`advisor_review_answer.md`); all its points were adopted.
 
 ## Literature and provenance
@@ -116,18 +125,22 @@ clarifications, the crash recovery, this note.
 
 ## Corrections
 
-Seven in `docs/CORRECTIONS.md` (2026-11-13). At the close, one from the stress test (**Narrowing**: the "ruler" readings of
+Nine in `docs/CORRECTIONS.md` (2026-11-13). At the close, one from the stress test (**Narrowing**: the "ruler" readings of
 `PROVED-RATE-20261113-001` and `BOND-DEPTH-20261112-001`). After the referee, five Narrowing and one Not a block:
 - **Narrowing.** That correction was mostly an identity artefact. 99 of its 131 are local by a carried top port and 32 are genuine.
   It is reworded in place in both notes; it stays a Narrowing on condition that the ruler reading is never used without the ray and
   carried-port qualifiers.
 - **Narrowing.** Bounded reach where a bond persists is mostly a carried top port (82% of bounded weight). This one is the thread's
-  own, found after the referee's pass and **unrefereed** (R2 pending).
+  own, found after the referee's pass and confirmed by R2 on the one-definition families.
 - **Narrowing.** Large several-definition blocks are validated only at shallow depth.
 - **Narrowing.** "Only because their bonds exist": the conditional bands still differ.
 - **Narrowing.** Three wordings: mixed below 0.01% is of classified weight, "settles at 3" is a certified upper bound, and "nothing
   below the top three distinctions" means no eligible endpoint at increasing depth.
 - **Not a block.** The crash was a resume, and no result changed in aggregate only.
+- **Narrowing (R2).** "The reach grows" on uncarried bonds means the first-ray bond grows; ray growth is no lower bound on the true
+  bond.
+- **Narrowing (R2).** "Survives the second ray in about 95%" counted non-contradiction as survival: 31 of 645 are contradicted, 297
+  grow on both rays.
 
 Every proved rate and bound stands.
 
@@ -152,7 +165,7 @@ referee's 99/32 on the 224).
 | Broader exploration — G17 | Searching | Typical shares under one weighting are known; other weightings are untested |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | The typical reach of nested patterns under the description weighting is located, and mostly settled by construction |
 
-**Corrections:** seven (above): six Narrowing, one Not a block. **Goals:** a checkpoint for G17 and G1 (capability gained); no goal change.
+**Corrections:** nine (above): eight Narrowing, one Not a block. **Goals:** a checkpoint for G17 and G1 (capability gained); no goal change.
 **Assumptions:** A79 and A71 used; A80 added, under challenge (the first-call ray).
 **Basket:** `BOND-BALLS-20261111-001#2` (2/3 Payoff, 3/3 Concreteness), `LIFE-JUMPS-20261112-001#2` (2/3, 3/3),
 `PREFIX-END-20261112-001#2` (2/3, 3/3), `TRUE-BOND-20261113-001#2` (2/3, 3/3), `BRANCH-DEPTH-20261112-001#2` (2/3, 2/3).

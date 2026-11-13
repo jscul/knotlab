@@ -3,14 +3,23 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 13 November 2026: the reach census's carried split, checked, two wordings narrowed
+
+- A second, light referee check confirmed the reach census's split by carried distinctions on the one-definition families. Two
+  sentences said more than it shows: on bonds that cross depth it is the bond along the first ray that grows in about two thirds, not
+  the reach itself, since side branches can shorten a ray bond; and "survives a second ray in 95%" meant only that a genuinely short
+  second-ray bond contradicts it in 31 of 645 sampled growers, while 297 (46%) grow on both rays
+  ([decision note](research/REACH-CENSUS-20261113-001/reach_census.md)).
+- Unchanged: every count.
+
 ## 13 November 2026: the reach census, confirmed by its referee, and its ray correction reworded
 
 - The census of the law's reach across all nested patterns (`REACH-CENSUS-20261113-001`) was confirmed: its computations reproduce
   from fresh code. Its correction of the earlier "ruler" reading was mostly an identity artefact: in 99 of the 131 families bounded
   along another ray, that ray carries a top distinction into every copy, so the bond is local at each depth. Only 32 of the 224 are
   bounded along another ray without one; there growth along the first ray is not growth with depth. The census's own "bounded where a
-  bond persists" is likewise mostly such carried bonds; without them the reach grows in about two thirds (the thread's own reading
-  after the referee, awaiting a short referee check). Large several-definition
+  bond persists" is likewise mostly such carried bonds; without them the bond along the first ray grows in about two thirds (the
+  thread's own reading after the referee, then checked on the one-definition families). Large several-definition
   blocks are validated only at shallow depth ([decision note](research/REACH-CENSUS-20261113-001/reach_census.md)).
 - Unchanged: every count, certificate and proved rate.
 

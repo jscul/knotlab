@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "scope_kind": "epic",
+  "scope_id": "REACH-CENSUS-20261113-001",
+  "lane": "points_5_6_and_gate_coverage",
+  "reviewer_thread_id": "01a1d543-e210-75c3-a44b-c890f9841826",
+  "verdict": "Confirmed with fixes",
+  "reading_verdict": "Block against broad ray-independent depth/counting reading; Not a block to first-ray equations; Narrowing for the surviving chosen-ray replacement",
+  "evidence": {
+    "type": "claim audit and aggregation of permitted records",
+    "independent_dp_reimplementation": false,
+    "sample_last_ray_recomputation_owned_by_lead": true,
+    "prohibited_experiment_codex_directory_opened_or_imported": false,
+    "git_mutation_or_publication": false
+  },
+  "construction": {
+    "settled_implications": ["S1 limit dead", "S2 no copy", "S3 no own distinctions", "S4 free own distinctions"],
+    "shares_are_measured": true,
+    "bounded_grows_split_settled_by_construction": false,
+    "bound_and_rate_frequencies_settled_by_construction": false,
+    "source": "research/REACH-CENSUS-20261113-001/preregistration.md:40-53"
+  },
+  "p1": {
+    "scope": "computed forever draws in bounded, grows, mixed by residue, unresolved, on the first-call ray",
+    "summary_pointer": "/cells/forever/computed/p1_bounded_conditional_share",
+    "bounded_draws": 30431,
+    "denominator": 44236,
+    "low": 0.6879238629170811,
+    "high": 0.7058956506013202,
+    "bootstrap_interval_low": 0.6834222797148636,
+    "bootstrap_interval_high": 0.7102954330254855,
+    "bootstrap_replayed_by_this_lane": false,
+    "majority_supported_conservatively": true,
+    "unrestricted_least_bond_transfer": "upper bound only; no matching 70/30 dichotomy"
+  },
+  "last_ray_stress_test_aggregation": {
+    "records": 224,
+    "class_counts": {
+      "bounded": 131,
+      "grows": 87,
+      "lost at large depths": 2,
+      "none at any depth": 1,
+      "unresolved": 3
+    },
+    "bounded_certificates_true": 131,
+    "bounded_complete_graphs": 125,
+    "bounded_incomplete_graphs_with_positive_certificates": 6,
+    "bounded_certificate_distribution": {"3": 96, "4": 32, "5": 3},
+    "sufficient_onset_min": 1,
+    "sufficient_onset_max": 11,
+    "bounded_rows_with_30_finite_recorded_values": 131,
+    "independent_certificate_verification_by_this_lane": false,
+    "classification_against_first_ray_equations": "Not a block",
+    "classification_against_broad_published_depth_counting_reading": "Block",
+    "classification_for_surviving_chosen_ray_replacement": "Narrowing",
+    "classification_against_asserted_unrestricted_whole_depth_growth": "Block",
+    "first_ray_scope_limits_present_in_original_notes": true
+  },
+  "bounded_value_audit": {
+    "exact_eventual_test_decides_predicate_not_optimal_bound": true,
+    "certificate_bound_is_upper_bound": true,
+    "certificate_onset_is_sufficient_not_minimal": true,
+    "all_bounded_family_records": 29460,
+    "records_with_reported_value_below_certificate_bound_after_onset": 6795,
+    "example": {
+      "file": "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz",
+      "decompressed_line": 262,
+      "uniform_cost_bound": 5,
+      "onset_depth": 3,
+      "L_ray_1_through_30": "all 3"
+    },
+    "periodic_stress_example": {
+      "file": "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/alt_growing664_families.jsonl.gz",
+      "decompressed_line": 8,
+      "uniform_cost_bound": 3,
+      "onset_depth": 2,
+      "L_ray_1_through_30": "alternates 2,3"
+    }
+  },
+  "gates": {
+    "G1_unique_families": 664,
+    "G1_record_multiplicity": 2,
+    "G1_latest_passed": 644,
+    "G1_latest_not_comparable": 20,
+    "G1_mismatches": 0,
+    "G1_pending_field_comparisons": 40,
+    "G1_clarification_source": "research/REACH-CENSUS-20261113-001/preregistration.md:108-109",
+    "G3_required_families": 150,
+    "G3_reported_finished": 139,
+    "G3_reported_unfinished_largest_cases": 11,
+    "G3_reported_finished_multi_definition": 65,
+    "G3_complete_as_frozen": false,
+    "G3_computed_results_falsified_by_missing_coverage": false
+  },
+  "fixes": [
+    {
+      "classification": "Narrowing",
+      "target": "reach_census.md:46-47",
+      "issue": "No-depth does not imply nothing below main's top three distinctions in the multi-definition model.",
+      "required_wording": "No new own-distinction endpoint along the specified ray; keep no-depth and computed absence separate."
+    },
+    {
+      "classification": "Narrowing",
+      "target": "reach_census.md:40,48",
+      "issue": "Settles at treats a sufficient uniform bound and sufficient onset as exact eventual values.",
+      "required_wording": "Certified upper bound from a sufficient onset."
+    },
+    {
+      "classification": "Block",
+      "target": "proved_rate.md:45-49; bond_depth.md:39-50; reach_census.md:104-107",
+      "issue": "The broad published ray-independent depth/counting reading is contradicted for the 131, although the explicitly first-ray equations stand.",
+      "required_wording": "Block against the broad reading; Not a block to first-ray equations; Narrowing to a chosen-ray replacement."
+    },
+    {
+      "classification": "Narrowing",
+      "target": "reach_census.md:42,50-60",
+      "issue": "First-ray size is not an exact unrestricted bond distance to the first-ray copy.",
+      "required_wording": "First-ray restricted least-bond size."
+    },
+    {
+      "classification": "Block",
+      "target": "Any dependent assertion of unrestricted whole-depth growth from the first-ray result",
+      "issue": "The 131 bounded last-ray certificates contradict that stronger inference.",
+      "required_wording": "Stop or replace that dependent inference; retain the valid first-ray results."
+    },
+    {
+      "classification": "Not a block",
+      "target": "gate664.json and gate664.jsonl.gz",
+      "issue": "Pending flags and duplicate records need reconciliation against pre-run clarification C2.",
+      "required_wording": "644 comparable families agree; 20 not comparable; no mismatches."
+    },
+    {
+      "classification": "Narrowing",
+      "target": "reach_census.md:36,77,123",
+      "issue": "G3 checked 139 of the frozen 150, omitting its largest unfinished cases.",
+      "required_wording": "G3 incomplete with no disagreements in completed cases; full frozen-gate completion remains unestablished."
+    }
+  ],
+  "written_files": [
+    "research/REACH-CENSUS-20261113-001/referee-R1/codex/claims_review.md",
+    "research/REACH-CENSUS-20261113-001/referee-R1/codex/claims_review.json"
+  ]
+}

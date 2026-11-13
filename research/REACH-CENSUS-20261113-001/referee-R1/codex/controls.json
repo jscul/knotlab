@@ -1,0 +1,75 @@
+[
+  {
+    "expected": "2",
+    "got": "2",
+    "kind": "karp"
+  },
+  {
+    "expected": "1/2",
+    "got": "1/2",
+    "kind": "karp"
+  },
+  {
+    "expected": "0",
+    "got": "0",
+    "kind": "karp"
+  },
+  {
+    "kind": "positive residue",
+    "result": {
+      "depth_threshold": 1,
+      "eventually_bounded": true,
+      "missing_residues": [],
+      "period": 1,
+      "product_states": 1,
+      "representatives": {
+        "0": {
+          "depth": 1,
+          "final_node": 0,
+          "middle_length": 0,
+          "total_cost": 3
+        }
+      },
+      "residues_covered": [
+        0
+      ],
+      "uniform_cost_bound": 3,
+      "zero_cycle_lengths": [
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "kind": "negative residue",
+    "result": {
+      "depth_threshold": null,
+      "eventually_bounded": false,
+      "missing_residues": [
+        1
+      ],
+      "period": 2,
+      "product_states": 2,
+      "representatives": {
+        "0": {
+          "depth": 1,
+          "final_node": 0,
+          "middle_length": 0,
+          "total_cost": 3
+        }
+      },
+      "residues_covered": [
+        0
+      ],
+      "uniform_cost_bound": null,
+      "zero_cycle_lengths": [
+        [
+          2,
+          1
+        ]
+      ]
+    }
+  }
+]

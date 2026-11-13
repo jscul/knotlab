@@ -135,6 +135,7 @@ evidence: results and their status come from the records each entry links.
 | [A78](#a78--a-parity-knot-among-copies-is-flip-blind-parity-built-from-our-knots) | A parity knot among copies is flip-blind parity, built from our knots | reading | Assumed |
 | [A79](#a79--a-patterns-weight-under-a-description-language-sums-its-descriptions) | A pattern's weight under a description language sums its descriptions | measure | Assumed |
 | [A80](#a80--the-laws-reach-is-read-along-the-first-call-ray) | The law's reach is read along the first-call ray | reading | Under challenge |
+| [A81](#a81--the-reach-may-start-from-a-top-port-carried-down-the-ray) | The reach may start from a top port carried down the ray | reading | Under challenge |
 
 ## Entries
 
@@ -2101,3 +2102,20 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-13 · Added, and put under challenge, by `REACH-CENSUS-20261113-001`: on 3,000 families with a second ray the last-call
     ray gives the same class in 75.4%, and 131 of the 224 one-definition limit-only families proved to grow along the first ray are
     bounded along the last-call ray, at 3 to 5 members ([the reach census](../research/REACH-CENSUS-20261113-001/reach_census.md)).
+
+### A81 · The reach may start from a top port carried down the ray
+
+**Under challenge** · 2026-11-13 · reading
+
+- **Statement.** The least bond from the top of a nested pattern to depth s may take as its top member any port of the top copy,
+  including a port that the ray call passes down unchanged at every level (a carried port), which is then an end of every ray copy.
+- **Why.** `BOND-DEPTH-20261112-001` defined the bond through "a port of C_0", and the studies after it kept the definition; no
+  study asked whether that port is carried.
+- **Rests on it.** The true-bond values of `TRUE-BOND-20261113-001` and the bounded families of `TRUE-RATE-20261113-001`; possibly
+  the bounded classes along the last-call ray of `REACH-CENSUS-20261113-001`.
+- **Challenge.** Start the bond from a distinction that the depth-1 copy does not hold (a local of C_0, or a port that is not
+  carried), and compare growth and boundedness. Overturned for the reach if the bounded families then grow.
+- **History.**
+  - 2026-11-13 · Added, and put under challenge, by `TRUE-RATE-20261113-001`: the true bond is proved bounded by 3 in 10 of 226
+    families, and all 10 carry a top port; no shortened family without one is flat at the depths read
+    ([decision note](../research/TRUE-RATE-20261113-001/true_rate.md)).

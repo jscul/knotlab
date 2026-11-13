@@ -1,0 +1,32 @@
+{
+ "schema_version": 3,
+ "artifact_id": "TRUE-RATE-20261113-001Z-P001",
+ "kind": "proof",
+ "ticket": "TRUE-RATE-20261113-001Z",
+ "proof": "TRUE-RATE-20261113-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing TRUE-RATE-20261113-001: ticket A (code by Codex, run by the thread): gate passed on the 24 complete graphs; P1 failed (24 < 113); P2 held only on unshortened families; P3 held (its first part by a post-hoc carried-port certificate, re-deriving BRANCH-DEPTH's ten exactly-three rules); two corrections (Narrowing); referee pending; recommendation full pivot from the first-ray true bond. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/TRUE-RATE-20261113-001A/TRUE-RATE-20261113-001A-E001_true_rates/contract.json": "Frozen",
+   "artifacts/TRUE-RATE-20261113-001A/TRUE-RATE-20261113-001A-E001_true_rates/summary.json": {
+    "done": 24,
+    "gate_mismatch": 64,
+    "upper_bound": 138
+   }
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

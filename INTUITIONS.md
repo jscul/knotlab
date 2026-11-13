@@ -2370,7 +2370,7 @@ that earlier records used in two senses.
   order, or every triple of distinct distinctions). A distinction p of the
   block is **spare** when its other distinctions can be given values with
   every knot of the block holding both values without p; p's **part** is the
-  distinctions (v, p), and it is **tied** when they lie in one tie class.
+  distinctions (v, p), and it is tied when they lie in one tie class.
   The intuition: with the block's own knots between copies, a part is pinned
   across the whole pattern exactly when the block cannot spare its
   distinction, that is, when no state of the block survives flipping it alone

@@ -1487,5 +1487,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Two unlengthened shifts beyond one box (`WEIGHTS-20261112-001`) | — | [folder](research/WEIGHTS-20261112-001/) |
 | 2026-11-12 | Which cyclic sequences to fix (`WHICH-SEQUENCES-20261112-001`) | [closure](proofs/WHICH-SEQUENCES-20261112-001Z/WHICH-SEQUENCES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WHICH-SEQUENCES-20261112-001/) |
 | 2026-11-12 | How many all-equal knots each dead depth needs (`WITNESS-COUNT-20261112-001`) | [closure](proofs/WITNESS-COUNT-20261112-001Z/WITNESS-COUNT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WITNESS-COUNT-20261112-001/) |
-| 2026-11-13 | Proved rates for the law's reach along a ray (`PROVED-RATE-20261113-001`) | — | [folder](research/PROVED-RATE-20261113-001/) |
+| 2026-11-13 | Proved rates for the law's reach along a ray (`PROVED-RATE-20261113-001`) | [closure](proofs/PROVED-RATE-20261113-001Z/PROVED-RATE-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/PROVED-RATE-20261113-001/) |
 

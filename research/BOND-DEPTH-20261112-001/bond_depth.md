@@ -1,8 +1,10 @@
 # Counting inside: least bonds across depths
 
 Epic `BOND-DEPTH-20261112-001` (`NEST-COUNT-20261112-001` direction 1; G17, with G1), 2026-11-12 to 13, at the owner's go-ahead.
-Pre-registered in commit c717335c4 before the registered run. The canonical K1–K3 test is unchanged. **Referee pending** (handed to
-the referee thread).
+Pre-registered in commit c717335c4 before the registered run. The canonical K1–K3 test is unchanged. Refereed by the referee thread
+with Codex (BOND-DEPTH-R1, `referee-R1/report.md`, commit 2d6f7058d): **confirmed with fixes**: the finite-depth values, the
+validation and the merge are right, the classification built on them is not; six corrections logged (**two Block**, two Narrowing,
+two Not a block).
 
 ## Words
 
@@ -24,9 +26,9 @@ ray, in the satisfying assignments of infinite iterated hyperedge-replacement NA
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
 | 1 | **The method is exact and validated.** It agrees with exhaustive search on 120 of 120 cases and gives steps apart + 2 on chains with no cycle of knots. | computed | G passed |
-| 2 | **In 204 of 664 families (31%) the reach is bounded, exactly.** The least ray bond settles at 3 (173 families), 2, a tie (30), or 4 (1), from depth 2 to 22; this transfers to the true least bond. | exact per family | P1 failed (below half) |
-| 3 | **No family was shown to grow.** No repeat with a positive gain was found within depth 30. | exact per family, depth ≤ 30 | reported |
-| 4 | **Within depth 30, reach grows steadily in 240 families (36%).** Their least ray bonds rise by about one member every level (55 families, 29 over 29 levels, as a ruler) or every two levels (71), or every three (29), steadily over the last ten levels; these are upper bounds on the true least bond and readings to depth 30, not proved rates. | exact per depth, depth ≤ 30 | reported |
+| 2 | ~~**In 204 of 664 families (31%) the reach is bounded, exactly.**~~ *Corrected after the referee (Block):* the repeat certifies boundedness only when the recurring closing values are finite; in 10 of the 204 the ray bond vanishes from some depth on. In the other 194 the reach is exactly bounded, with recurring tails 3 (167), 2, a tie (17), 4 (3) and periodic between 2 and 3 (7); the 173, 30 and 1 first reported were observed minima. This transfers to the true least bond. | exact per family | P1 unresolved (*not failed, after the referee*) |
+| 3 | ~~**No family was shown to grow.**~~ *Withdrawn after the referee (Block):* the detector could not report growth: its normaliser, the least cost over all states, is 1 at every depth in every family (one top port carried forward by empty selections), so its gain was always 0. Its certificates and a replay to depth 512 (Codex, the referee's) show all 20 smallest "flat" families bounded and all 20 smallest "rising" ones eventually linear plus periodic (13 at rate 1, 6 at 1/2, 1 at 2). | exact per family, depth ≤ 30 | reported |
+| 4 | **Within depth 30, reach rises in 240 families (36%).** 240 is the count with L(30) > L(1); 214 rise between depths 20 and 30, and of the 26 constant there at least five settle at 4 (*narrowed after the referee*). The rises are about one member every level (55 families, 29 over 29 levels, as a ruler), every two (71) or every three (29); ray readings to depth 30 are upper bounds on the true least bond. | exact per depth, depth ≤ 30 | reported |
 | 5 | **In 163 more (25%) the reach is flat within depth 30** without a proven repeat. 44 families passed the cap of 20,000 states, 11 did not finish (stopped after three and a half hours), and 2 have no ray bond. | exact per depth | reported |
 
 ## Answer
@@ -35,14 +37,17 @@ Inside these nested patterns the law's reach does both. In about a third of the 
 two or three members away from the top constrains every depth, however deep. In another third, read to depth 30, it grows steadily,
 by one member every level or two, the way it grows along a ruler, though the method has not proved that this continues; and a
 quarter stay flat to depth 30 without proof. So, within depth 30, counting inside (the law's reach lengthening with depth) appears in more
-than a third of the families read; whether it lasts in them is not settled, and no share of the full weighting is claimed.
+than a third of the families read; whether it lasts in them is not settled, and no share of the full weighting is claimed. *After the
+referee:* the bounded share lies between 194 and 632 of 664 (the certificates on samples suggest most of the flat families are
+bounded and the rising ones grow at rates of 1, 1/2 or 2), and growth along a ray is only an upper bound on the true bond's.
 
 ## Reading
 
 **Interpretation, not a theorem.**
 - **For the owner's nested parts.** Where the reach is bounded, the top is tied to every depth through two or three distinctions:
   the larger pattern holds the smaller ones close. Where it grows, each level adds to the distance, as a count would.
-- **What is not shown.** "Growing" here is within depth 30 and along one ray; side branches could shorten the true bond.
+- **What is not shown.** "Growing" here is within depth 30 and along one ray; side branches could shorten the true bond. "No class
+  in between" holds per length residue, possibly with different rates per residue (*narrowed after the referee*).
 
 ## Lag cutoffs and census-only claims
 
@@ -53,7 +58,9 @@ at 03:33 UTC and are counted unfinished.
 
 ## Review
 
-Referee pending (the referee thread). The advisor model reviewed the method cold (`advisor_review_answer.md`): it confirmed the
+**BOND-DEPTH-R1** (the referee thread with Codex): the finite values, the validation (24 of 24 cells reproduced independently;
+chains give steps + 2) and the merge are right; the growth detector and the classification are not (above). The merge procedure is
+kept as code (`merge_runs.py`); the duplicated records agree in every scientific field. The advisor model reviewed the method cold (`advisor_review_answer.md`): it confirmed the
 DP's minimality condition, showed growth is eventually linear or bounded per family, and suggested the cycle-mean computation and the
 exact side-branch extension.
 
@@ -72,13 +79,15 @@ Substantive: the method and its validation, the reading of 653 families. Adminis
 
 ## Corrections
 
-None.
+Six, from the referee (`docs/CORRECTIONS.md`, 2026-11-13): **Block**, the growth detector and the bounded count; **Block**, P1
+unresolved, not failed; **Narrowing**, "rising steadily in 240"; **Narrowing**, rates per length residue; **Not a block**, the merge as
+code; **Not a block**, the validation record lacks per-case values.
 
 ## Next steps
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — least bonds across depths | **Status:** Partially successful (referee pending) | Method exact and validated; P1 failed: 31% bounded exactly, 36% growing within 30 |
+| This attempt — least bonds across depths | **Status:** Partially successful (refereed, two Blocks) | Finite values exact; 194 bounded exactly; P1 unresolved; growth not certified by this run |
 | Local direction — counting inside | Continue | The growing families need a proved rate |
 | Broader exploration — G17 | Searching | The full census of 223,261 families waits on a faster method |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | The law's reach inside nested patterns is measured exactly along a ray |

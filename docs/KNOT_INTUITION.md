@@ -3388,11 +3388,13 @@ So holes come in two kinds:
      counter built from it counts depth in binary, its cheapest descriptions found take about 104 to 106 bits (which bounds how
      rare counting is from neither side), one changed knot almost always breaks it within depth 64, and the hopping version is
      dead from depth 12 to 64 ([decision note](../research/CHEAP-COUNT-20261112-001/cheap_count.md)).
-   - **Counting inside** (`BOND-DEPTH-20261112-001`; referee pending): along one ray of nested copies the law's least bond from
-     the top to depth s is exactly bounded (two or three members) in 204 of 664 one-definition limit-only families, and grows
-     steadily within depth 30 (one member every one to three levels) in 240; none is yet proved to grow forever
+   - **Counting inside** (`BOND-DEPTH-20261112-001`; refereed, two Blocks): along one ray of nested copies the law's least bond
+     from the top to depth s is exactly bounded (two, three or four members) in 194 of 664 one-definition limit-only families, and
+     rises within depth 30 in 240; the run's growth detector could not see growth, and the referee's certificates on samples show
+     rates of 1, 1/2 and 2 per level
      ([decision note](../research/BOND-DEPTH-20261112-001/bond_depth.md)).
    - **Bonds in a side copy and a counter with shared helpers** (`BONDS-AND-COUNT-20261112-001`). At depth two one branch gives a least bond of four, even after comparing all six eligible pairs of ends. One distinction in a side copy gives a bond of three for the same comparison (exact example). Even with every side branch available, the least bond to a target on the first recursive branch grows linearly with depth (proved). A separate construction counts with three distinctions per position. The whole pattern can read the original reference and one helper of the seed. Counting with just the original reference readable everywhere remains open. [The three questions](../research/BONDS-AND-COUNT-20261112-001/three_questions.md)
+   - **When nesting really costs more distinctions** (`BRANCH-DEPTH-20261112-001`). Fix the first recursive branch and let a bond use every side copy. If a run of unobserved levels forgets its incoming values, a bond has to include a distinction at least once per such run. A chain of knots can also guarantee that a bond reaches each depth. Together these tests certify linear growth in 69 of 664 recorded rules. In 393 others a three-member bond reaches every depth, and in 39 the least size eventually settles at four. A fixed size budget has an exact finite test even when its supporting distinctions can lie arbitrarily far away. [Results and remaining cases](../research/BRANCH-DEPTH-20261112-001/depth.md)
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

@@ -11,6 +11,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   holds for the 17 of 40 harmonies the capped census reached, in the order run ([decision note](research/HIDDEN-COPY-20261112-001/hidden_copy.md)).
 - Unchanged: every count and the frozen verdict.
 
+## 13 November 2026: counting inside, two claims withdrawn
+
+- The study of the law's reach inside nested patterns (`BOND-DEPTH-20261112-001`) was confirmed in its finite values but not in its
+  classification. Its growth detector could not see growth at all, so "no family was shown to grow" is withdrawn; ten of the
+  families called bounded in fact lose their bond deeper down (194 are bounded); and its prediction is unresolved rather than failed.
+  Certificates on samples show growth at one, a half or two members per level ([decision note](research/BOND-DEPTH-20261112-001/bond_depth.md)).
+- Unchanged: every finite value.
+
 ## 13 November 2026: the cheapest counter, a withdrawn claim
 
 - The study of the cheapest NAE counter (`CHEAP-COUNT-20261112-001`) was confirmed in every number, but one claim is withdrawn: that

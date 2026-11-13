@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**329 current results** and 5 superseded ones, from 354 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**329 current results** and 5 superseded ones, from 355 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 354 epics with their closures
+- [Epics](#epics): all 355 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1480,4 +1480,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | Two unlengthened shifts beyond one box (`WEIGHTS-20261112-001`) | — | [folder](research/WEIGHTS-20261112-001/) |
 | 2026-11-12 | Which cyclic sequences to fix (`WHICH-SEQUENCES-20261112-001`) | [closure](proofs/WHICH-SEQUENCES-20261112-001Z/WHICH-SEQUENCES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WHICH-SEQUENCES-20261112-001/) |
 | 2026-11-12 | How many all-equal knots each dead depth needs (`WITNESS-COUNT-20261112-001`) | [closure](proofs/WITNESS-COUNT-20261112-001Z/WITNESS-COUNT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WITNESS-COUNT-20261112-001/) |
+| 2026-11-13 | Proved rates for the law's reach along a ray (`PROVED-RATE-20261113-001`) | — | [folder](research/PROVED-RATE-20261113-001/) |
 

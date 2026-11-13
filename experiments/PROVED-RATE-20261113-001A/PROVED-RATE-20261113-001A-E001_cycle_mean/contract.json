@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PROVED-RATE-20261113-001A-E001",
+ "ticket": "PROVED-RATE-20261113-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Proved long-run rates (minimum cycle mean) and boundedness of the least ray bond in the 664 one-definition limit-only families.",
+ "definitions": {"spec": "research/PROVED-RATE-20261113-001/codex_spec.md (sha256 b616555c80b51fdbd682ad7cd347da2c20186c8c1504d85e868c26f52461231f), computed by Codex", "classes": "record classes bounded/rising/flat/capped as in the spec"},
+ "public_inputs": {"code": "written by Codex in codex/ from the spec; BOND-DEPTH census.py and runs_merged.jsonl read-only.", "run": "codex exec with the spec, one memory-capped unit, from the repository root."},
+ "forbidden_inputs": ["Changing the spec, predictions or decision rules after seeing registered results"],
+ "primary_observable": "lambda per family on complete graphs; bounded_all; the gate.",
+ "cheapest_meaningful_control": "BOND-DEPTH's recorded L_ray(s) (the gate).",
+ "validation_gate": "L_ray(s) recomputed from the graph equals the records.",
+ "predictions": {"P1": "complete graphs >= 80% of 653", "P2": "lambda > 0 in >= 90% of rising with complete graphs", "P3": "bounded_all in >= 90% of flat with complete graphs"},
+ "stop_rule": "One Codex run, its outputs checked; a hand-off to the referee thread; report.",
+ "runtime": "Unknown; registered as long-running."
+}

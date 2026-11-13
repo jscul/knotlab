@@ -116,6 +116,42 @@ One Codex hand-off, one registered run by the thread, its frozen summary, a refe
 beyond level 12, two letters, five state maps, words of length 2, or the stated weighting. A finite census proves no all-level
 statement.
 
+## Prior work in the program
+
+Added 2026-11-13 at 17:45 UTC, after the freeze commit and before any registered result, when the objects index landed (coordinator's
+note). Searches:
+
+`python3 -B scripts/track.py objects "knots placed by an automaton on addresses" --until 2026-11-13 --exclude ADDR-KNOTS-20261113-001`
+`python3 -B scripts/track.py objects "self-similar group Schreier graph NAE" --until 2026-11-13 --exclude ADDR-KNOTS-20261113-001`
+`python3 -B scripts/track.py objects "two-colourability of hypergraphs on binary words" --until 2026-11-13 --exclude ADDR-KNOTS-20261113-001`
+`python3 -B scripts/track.py objects "fate census under description weighting nested" --until 2026-11-13 --exclude ADDR-KNOTS-20261113-001`
+`python3 -B scripts/track.py objects "growing interface nested pattern" --until 2026-11-13 --exclude ADDR-KNOTS-20261113-001`
+`python3 -B scripts/track.py objects "nested pattern whose copies meet a growing number of distinctions" --until 2026-11-13 --exclude ADDR-KNOTS-20261113-001`
+
+The first is the object in the program's words, the second and third in standard terms, the fourth the population.
+
+- `NEST-COUNT-20261112-001` — a relative: bounded-interface nesting finite-state; this study's starting point, and its interface
+  reading is the one narrowed here.
+- `SHORT-DESC-20261112-001` — the same weighting's kind (A79) on another object (macro descriptions); weighting reused, object new.
+- `REACH-CENSUS-20261113-001`, `LIMIT-ONLY-20261112-001` — the same kind of population (fates and reach of A79 nested families
+  under the description weighting); bounded interfaces only.
+- `SUBST-NEST-20261112-001` — a relative: substitution makes interfaces grow, but uniformly, and is decided at the first level.
+- `ROW-NEST-20261112-001`, `TWO-BIT-ROWS-20261112-001`, `CHEAP-COUNT-20261112-001`, `BONDS-AND-COUNT-20261112-001` — relatives:
+  generations growing by one, with neighbouring or halving reach (flat rows; the halving map is not an address map of this kind,
+  being two-to-one); this study avoids flat rows and contains the shift only as one automaton among many.
+- `BOARD-DIST-20261110-001`, `WEAK-APER-20261110-001`, `LEIBNIZ-BOARDS-20261110-001` — relatives by name only: Schreier graphs
+  there are boards (stabilizer quotients of a law's solutions under name shifts), not patterns of knots placed by tree
+  automorphisms; nothing is taken from them.
+- `EXACT-TOWERS-20261029-001`, `SIGNED-GASKETS-20261029-001`, `SIMPLEX-GASKETS-20261029-001` — relatives: drawn self-similar
+  substrates (the literature's Sierpinski patterns) with exact laws; here the self-similarity is described by an automaton, not
+  drawn.
+- `BASES-WITHIN-20261112-001`, `OVERLAP-READ-20261111-001` — relatives on how the law reads nested or overlapping bases; not the
+  same object.
+- `CHEAP-COUNT`'s and `BONDS-AND-COUNT`'s other rows, `LINE-LOCK-20261112-001`, `SEARCH-AUDIT-20261112-001`,
+  `ODD-SEARCH-20261112-001`, `EVEN-PERIOD-20261112-001`, `AGE-NEST-20261112-001` — unrelated (top-three hits by words only).
+
+None measured this object: no earlier study placed knots by automaton maps or read fates by activity.
+
 ## Prior work and what is ours
 
 Known: Bartholdi 2022 (domino and monadic second-order logic on self-similar graphs: decidable when bounded, undecidable on a

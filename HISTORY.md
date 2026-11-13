@@ -3,6 +3,19 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 13 November 2026: true rates with side branches, narrowed by its referee
+
+- The study of true rates with side branches (`TRUE-RATE-20261113-001`) was confirmed: the proof that the reach is bounded at every
+  depth in ten families, the counts of carried ports and three of its 24 exact rates reproduce from fresh code. Three wordings are
+  narrowed. When ports are passed down in a cycle, the bond holds a top port at every depth, but not always the same one. The 112
+  bounded rules without a passed-down port are candidates for a bounded reach made by the law, since the test does not rule out a
+  value carried through constraints. And the earlier study `BRANCH-DEPTH-20261112-001` had classified 76 of the 226 families
+  outright, with a conditional lower bound in 144, not "largely answered" the question
+  ([decision note](research/TRUE-RATE-20261113-001/true_rate.md)).
+- The referee of the side-branch study (`TRUE-BOND-20261113-001`) withdrew its own phrase that the four flat families were the
+  strongest evidence against growth: their short bonds come from a port shared by every copy.
+- Unchanged: every exact value and count.
+
 ## 13 November 2026: the reach census's carried split, checked, two wordings narrowed
 
 - A second, light referee check confirmed the reach census's split by carried distinctions on the one-definition families. Two

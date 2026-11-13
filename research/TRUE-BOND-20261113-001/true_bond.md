@@ -26,7 +26,7 @@ hyperedge-replacement NAE instance, against the same along one derivation ray, f
 | --- | --- | --- | --- |
 | 1 | **The method is exact where checked.** With the depth convention settled (Codex flagged it; the thread chose the uniform truncation), the DP's bond counts by size equal direct satisfiability counts in all 33 cases (sizes through each exhausted bound, h = 2 and 3), including a family where a side branch shortens the bond (911: 3 against 4); the F-for-G mutant fails; side branches forced to G reproduce L_ray (168 of 168). | computed | G passed (after the thread settled the ambiguity) |
 | 2 | **Side branches shorten the reach in at least 62 of 226 families (27%),** within the depths reached: by one member (44 families), two (9) or three (9); never lengthen it. | exact at the depths reached | P1 failed (at most 20% registered) |
-| 3 | ~~**Growth survives wherever it was read deep enough.**~~ *Corrected after the referee (Block and Narrowing):* all 37 families that reached depth 12 have L(12) > L(6), and all 75 that reached depth 8 or more grow, but these are mostly families where side branches change nothing (only 2 of the 37 and 9 of the 75 are shortened; shortening makes the computation slower, so the deep-read set is biased), and the shortened ones grow by about one member over six to eight levels. In four families (269, 302, 642, 908) the true bond is **flat at 3 through depth 7** while the ray bond rises to 6: no growth is observed there, the strongest evidence against growth surviving. ~~"a side branch lowers the rate … without stopping the growth"~~ is withdrawn. | exact at the depths reached | P3 undecided on its registered denominator |
+| 3 | ~~**Growth survives wherever it was read deep enough.**~~ *Corrected after the referee (Block and Narrowing):* all 37 families that reached depth 12 have L(12) > L(6), and all 75 that reached depth 8 or more grow, but these are mostly families where side branches change nothing (only 2 of the 37 and 9 of the 75 are shortened; shortening makes the computation slower, so the deep-read set is biased), and the shortened ones grow by about one member over six to eight levels. In four families (269, 302, 642, 908) the true bond is **flat at 3 through depth 7** while the ray bond rises to 6: no growth is observed there, ~~the strongest evidence against growth surviving~~ *(narrowed 2026-11-13 after TRUE-RATE-R1: all four carry a top port down the ray, so their size-3 bonds are local by identity, A81, an identity shortcut and not the reach stopping)*. ~~"a side branch lowers the rate … without stopping the growth"~~ is withdrawn. | exact at the depths reached | P3 undecided on its registered denominator |
 | 4 | **Most families did not reach depth 12.** 163 hit the time limit, 18 the memory limit, 6 had an incomplete ray reference, 2 errors; the reached depths were 5 or less in 112. P2 could be read on only 2 shortened families (both D(12) − D(6) = 0). | stated | P2 not decided |
 
 ## Answer
@@ -37,8 +37,8 @@ true bond stays at 3 to depth 7 while the ray bond doubles, so side branches may
 side branches is therefore open, with four candidate counter-examples. *(Corrected after the referee.)*
 
 *Narrowed 2026-11-13 by `TRUE-RATE-20261113-001`:* the four, with six more, are bounded at every depth because the ray hands a top
-port down unchanged, not because side branches carry the constraint down; and the question was not open: `BRANCH-DEPTH-20261112-001`
-had read the same bond on the same rules a day earlier ([TRUE-RATE](../TRUE-RATE-20261113-001/true_rate.md)).
+port down unchanged, not because side branches carry the constraint down; and the question was partly read already:
+`BRANCH-DEPTH-20261112-001`, a day earlier, classified 76 of the 226 outright (66 linear, these 10 at exactly three) and proved a conditional lower bound in 144 ([TRUE-RATE](../TRUE-RATE-20261113-001/true_rate.md)).
 
 ## Reading
 

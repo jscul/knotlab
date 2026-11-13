@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 13 November 2026: the flat families carry a top port, and the question was already read
+
+- Four families where the law's reach looked bounded with side branches (`TRUE-BOND-20261113-001`) are now proved bounded at every
+  depth, with six more. The reason was misread: the ray passes one top port down unchanged, so the bond's top member is shared by
+  every copy and the bond never stretches across depth. It is not evidence that side branches stop the reach from growing
+  ([decision note](research/TRUE-RATE-20261113-001/true_rate.md)).
+- The question these studies called open had been largely answered a day earlier by `BRANCH-DEPTH-20261112-001`, which read the
+  same bond on the same rules: growth with side branches proved in 66 of the 226, a lower bound whenever a bond exists in 144, and
+  the same ten bounded ([its note](research/BRANCH-DEPTH-20261112-001/depth.md)).
+- Unchanged: every exact value, and the boundedness itself.
+
 ## 13 November 2026: growth along a ray, narrowed by the reach census
 
 - The proved growth of the law's reach along a ray (`PROVED-RATE-20261113-001`, and the reading of `BOND-DEPTH-20261112-001`) was

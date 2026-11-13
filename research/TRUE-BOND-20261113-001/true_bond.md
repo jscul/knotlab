@@ -36,6 +36,10 @@ computation got deep, the reach still grows, but those are mostly families where
 true bond stays at 3 to depth 7 while the ray bond doubles, so side branches may make the reach bounded there. Whether growth survives
 side branches is therefore open, with four candidate counter-examples. *(Corrected after the referee.)*
 
+*Narrowed 2026-11-13 by `TRUE-RATE-20261113-001`:* the four, with six more, are bounded at every depth because the ray hands a top
+port down unchanged, not because side branches carry the constraint down; and the question was not open: `BRANCH-DEPTH-20261112-001`
+had read the same bond on the same rules a day earlier ([TRUE-RATE](../TRUE-RATE-20261113-001/true_rate.md)).
+
 ## Reading
 
 **Interpretation, not a theorem.** Side branches give the law extra routes near each level, so a bond can use a shortcut through a

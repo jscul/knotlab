@@ -2107,15 +2107,16 @@ evidence: results and their status come from the records each entry links.
 
 **Under challenge** · 2026-11-13 · reading
 
-- **Statement.** The least bond from the top of a nested pattern to depth s may take as its top member any port of the top copy,
+- **Statement.** The least bond from the top of a nested pattern to depth s may take as its top member any top distinction,
   including a port that the ray call passes down unchanged at every level (a carried port), which is then an end of every ray copy.
-- **Why.** `BOND-DEPTH-20261112-001` defined the bond through "a port of C_0", and the studies after it kept the definition; no
-  study asked whether that port is carried.
-- **Rests on it.** The true-bond values of `TRUE-BOND-20261113-001` and the bounded families of `TRUE-RATE-20261113-001`; possibly
-  the bounded classes along the last-call ray of `REACH-CENSUS-20261113-001`.
+- **Why.** `BOND-DEPTH-20261112-001` and `BRANCH-DEPTH-20261112-001` defined the bond through any top distinction (a port of C_0),
+  and the studies after them kept the definition; none counted how often that distinction is carried.
+- **Rests on it.** The bounded classes of `BRANCH-DEPTH-20261112-001` (320 of its 432 bounded rules carry a top port), the true-bond
+  values of `TRUE-BOND-20261113-001` and the bounded families of `TRUE-RATE-20261113-001`, and most bounded classes along the
+  last-call ray of `REACH-CENSUS-20261113-001` (99 of 131 carry one).
 - **Challenge.** Start the bond from a distinction that the depth-1 copy does not hold (a local of C_0, or a port that is not
-  carried), and compare growth and boundedness. Overturned for the reach if the bounded families then grow.
+  carried), and compare growth and boundedness. Overturned for the reach if the carried bounded rules then grow.
 - **History.**
   - 2026-11-13 · Added, and put under challenge, by `TRUE-RATE-20261113-001`: the true bond is proved bounded by 3 in 10 of 226
-    families, and all 10 carry a top port; no shortened family without one is flat at the depths read
+    families, all carrying a top port; across BRANCH-DEPTH's 664 rules 320 of the 432 bounded ones carry one and 112 do not
     ([decision note](../research/TRUE-RATE-20261113-001/true_rate.md)).

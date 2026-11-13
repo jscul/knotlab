@@ -3395,13 +3395,19 @@ So holes come in two kinds:
      ([decision note](../research/BOND-DEPTH-20261112-001/bond_depth.md)).
    - **Proved rates along a ray** (`PROVED-RATE-20261113-001`; refereed, confirmed with fixes; computed by Codex from a frozen spec):
      along one ray of copies the least bond provably grows at least linearly in 226 of 664 one-definition limit-only families, at
-     rates from 1/7 to 2 members per level, and is bounded at every depth in at least 361; growth of ray bonds says nothing yet about bonds through
-     side branches; *narrowed 2026-11-13:* along the last-call ray 131 of the 224 are bounded at 3 to 5 members, so the growth is
+     rates from 1/7 to 2 members per level, and is bounded at every depth in at least 361; *narrowed 2026-11-13:* bonds through side branches had already been read by `BRANCH-DEPTH-20261112-001`
+     (below); *narrowed 2026-11-13:* along the last-call ray 131 of the 224 are bounded at 3 to 5 members, so the growth is
      the distance to one copy, not depth ([decision note](../research/PROVED-RATE-20261113-001/proved_rate.md)).
    - **With side branches** (`TRUE-BOND-20261113-001`; refereed, one Block; code by Codex): allowing members in side branches
      shortens the least bond in at least 62 of the 226 growing families, by one to three members; in four the true bond stays at 3
      to depth 7 while the ray bond rises to 6, candidate cases where side branches make the reach bounded
-     ([decision note](../research/TRUE-BOND-20261113-001/true_bond.md)).
+     ([decision note](../research/TRUE-BOND-20261113-001/true_bond.md)); *narrowed 2026-11-13:* the four, with six more, are bounded
+     at every depth because the ray hands a top port down unchanged, and `BRANCH-DEPTH-20261112-001` had already read the question.
+   - **True rates with side branches** (`TRUE-RATE-20261113-001`; referee pending; code by Codex): where the exact side table
+     closes (24 of the 226), side branches change nothing and the true rate equals the ray rate. Bounded reach is mostly identity:
+     of BRANCH-DEPTH's 432 bounded rules, 320 have a top port passed down the ray unchanged, so the bond's top member is an end of
+     every copy; 112 are bounded without one, the cases where a fixed number of members really ties the top to every depth
+     ([decision note](../research/TRUE-RATE-20261113-001/true_rate.md)).
    - **Bonds in a side copy and a counter with shared helpers** (`BONDS-AND-COUNT-20261112-001`). At depth two one branch gives a least bond of four, even after comparing all six eligible pairs of ends. One distinction in a side copy gives a bond of three for the same comparison (exact example). Even with every side branch available, the least bond to a target on the first recursive branch grows linearly with depth (proved). A separate construction counts with three distinctions per position. The whole pattern can read the original reference and one helper of the seed. Counting with just the original reference readable everywhere remains open. [The three questions](../research/BONDS-AND-COUNT-20261112-001/three_questions.md)
    - **When nesting really costs more distinctions** (`BRANCH-DEPTH-20261112-001`). Fix the first recursive branch and let a bond use every side copy. If a run of unobserved levels forgets its incoming values, a bond has to include a distinction at least once per such run. A chain of knots can also guarantee that a bond reaches each depth. Together these tests certify linear growth in 69 of 664 recorded rules. In 393 others a three-member bond reaches every depth, and in 39 the least size eventually settles at four. A fixed size budget has an exact finite test even when its supporting distinctions can lie arbitrarily far away. [Results and remaining cases](../research/BRANCH-DEPTH-20261112-001/depth.md)
    - **The reach census** (`REACH-CENSUS-20261113-001`; referee pending; code by Codex): across all 223,261 nested draws of the

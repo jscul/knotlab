@@ -2099,6 +2099,10 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Read another ray, or the least bond to any copy at depth s (the least over every path of copies), and compare the
   classes.
 - **History.**
+  - 2026-11-13 · Challenge restated after `REACH-CENSUS-20261113-001`'s referee: of the 131 last-call-bounded growers, 99 carry a top
+    port down that ray by identity, so their bounded bond is local (A81); the challenge rests on the 32 bounded without a carried
+    port (14% of the 224), and on 31 of 645 sampled first-ray growers. `EVERY-RAY-20261113-001` reads every descending path, split
+    into carried and uncarried.
   - 2026-11-13 · Added, and put under challenge, by `REACH-CENSUS-20261113-001`: on 3,000 families with a second ray the last-call
     ray gives the same class in 75.4%, and 131 of the 224 one-definition limit-only families proved to grow along the first ray are
     bounded along the last-call ray, at 3 to 5 members ([the reach census](../research/REACH-CENSUS-20261113-001/reach_census.md)).

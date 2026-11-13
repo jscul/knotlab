@@ -40,8 +40,9 @@ quarter stay flat to depth 30 without proof. So, within depth 30, counting insid
 than a third of the families read; whether it lasts in them is not settled, and no share of the full weighting is claimed. *After the
 referee:* the bounded share lies between 194 and 632 of 664 (the certificates on samples suggest most of the flat families are
 bounded and the rising ones grow at rates of 1, 1/2 or 2), and growth along a ray is only an upper bound on the true bond's. *Narrowed on 2026-11-13
-(`REACH-CENSUS-20261113-001`):* growth along the first ray is not growth with depth; in 131 of the 224 families proved to grow along
-it, a copy at the same depth on the last-call ray is tied to the top by at most 5 members.
+(`REACH-CENSUS-20261113-001`, reworded after its referee):* in at least 32 of the 224 families proved to grow along the first ray,
+another ray reaches depth s with at most five members without carrying a top port, so growth along the first ray is not growth with
+depth there; in 99 more the other ray's bound is local, by a top port carried by identity (A81).
 
 ## Reading
 

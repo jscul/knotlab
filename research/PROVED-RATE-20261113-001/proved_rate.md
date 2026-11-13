@@ -44,9 +44,11 @@ The growth is a property of ray-shaped bonds; whether side branches make the tru
 **Interpretation, not a theorem.**
 - **Counting inside, proved along a ray.** In 226 patterns the shortest chain of constraint from the top to depth s along the copies
   lengthens in proportion to s, so the law's reach measures depth there, as on a ruler, though the ends see depth only modulo a
-  period (`NEST-COUNT-20261112-001`). *Narrowed on 2026-11-13 (`REACH-CENSUS-20261113-001`, stress test): in 131 of the
-  224 complete at its caps, a copy at the same depth on the last-call ray is tied to the top by at most 5 members at every depth
-  past an onset, so the growth measures the distance to the first ray's copy, not depth.*
+  period (`NEST-COUNT-20261112-001`). *Narrowed on 2026-11-13 (`REACH-CENSUS-20261113-001`, reworded after its referee):
+  in at least 32 of the 224 first-ray growers, another ray reaches depth s with at most five members without carrying a top port, so
+  growth along the first ray is not growth with depth there; in 99 more the other ray's bounded bond is local, because that ray
+  carries a top port by identity (A81), and reach should not be read from it. Read "ruler" only with the ray and carried-port
+  qualifiers.*
 
 ## Lag cutoffs and census-only claims
 

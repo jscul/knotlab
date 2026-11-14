@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LEVEL-REACH-20261114-001A-E001",
+ "ticket": "LEVEL-REACH-20261114-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Least bond from level 3 to level 3+s in addressed patterns with knots within and between levels: none, chained (ruler) or direct, by activity class, under the description weighting.",
+ "definitions": {
+  "design": "research/LEVEL-REACH-20261114-001/preregistration.md",
+  "code": "codex/ (Codex's), with the thread's disclosed additions (budget, population filter, certificate retention)"
+ },
+ "public_inputs": {
+  "populations": "pop=R w_limit=2000 e_classes=bounded,polynomial"
+ },
+ "forbidden_inputs": [
+  "Changing predictions after seeing registered results"
+ ],
+ "primary_observable": "L(s) per description, s=1..4, outcome class",
+ "cheapest_meaningful_control": "tree-only placement (ruler); brute force on tiny patterns; monotonicity in N",
+ "validation_gate": "G-brute, G-pattern, G-tree, G-cert, G-mono (49 of 50 keys)",
+ "predictions": {
+  "Q0": "none >=25%, direct <=15%",
+  "Q1": "ruler >=70% (upper bound)",
+  "Q2": "direct <=10% (lower bound)",
+  "Q3": "no member below target",
+  "Q4": "exponential non-ruler share > finitary",
+  "Q5": "descriptive"
+ },
+ "stop_rule": "One registered run, a summary, a referee hand-off.",
+ "runtime": "registered as long-running"
+}

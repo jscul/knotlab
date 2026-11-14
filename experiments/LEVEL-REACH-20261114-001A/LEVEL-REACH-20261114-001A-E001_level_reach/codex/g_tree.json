@@ -1,0 +1,1847 @@
+{
+  "cases": [
+    {
+      "anywhere": {
+        "L": 3,
+        "bond": [
+          7,
+          15,
+          16
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 12,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "support": [
+                15,
+                16
+              ]
+            },
+            {
+              "state_indices": [
+                4,
+                5,
+                6,
+                7
+              ],
+              "support": [
+                7,
+                16
+              ]
+            },
+            {
+              "state_indices": [
+                8,
+                5,
+                6,
+                9
+              ],
+              "support": [
+                7,
+                15
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 2 steps",
+            "cnf_sha256": "9af9eccbaf8120403fc29a6c99458729210c24a0c4aaaa51c8e23fb6ff28a369",
+            "corrupted_checker": "FAILED: hint to a missing clause (clause 1026)",
+            "corrupted_hint_rejected": true,
+            "deleted_after_check": true,
+            "proof_bytes": 44,
+            "proof_sha256": "949e3ef1173e899385fe9c53fcb5e792e72abec004458f006cc4c7d83e58d546",
+            "seconds": 0.005886069964617491,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "f900feff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0000fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900ffff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          0
+        ],
+        "optimality_proved": true,
+        "sat_calls": 7,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 1,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.011046506930142641
+      },
+      "expected": 3,
+      "passed": true,
+      "s": 1,
+      "target_restricted": {
+        "L": 3,
+        "bond": [
+          7,
+          15,
+          16
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 12,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "support": [
+                15,
+                16
+              ]
+            },
+            {
+              "state_indices": [
+                4,
+                5,
+                6,
+                7
+              ],
+              "support": [
+                7,
+                16
+              ]
+            },
+            {
+              "state_indices": [
+                8,
+                5,
+                6,
+                9
+              ],
+              "support": [
+                7,
+                15
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 2 steps",
+            "cnf_sha256": "9af9eccbaf8120403fc29a6c99458729210c24a0c4aaaa51c8e23fb6ff28a369",
+            "deleted_after_check": true,
+            "proof_bytes": 44,
+            "proof_sha256": "949e3ef1173e899385fe9c53fcb5e792e72abec004458f006cc4c7d83e58d546",
+            "seconds": 0.006153051042929292,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "f900feff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0000fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900ffff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          0
+        ],
+        "optimality_proved": true,
+        "sat_calls": 0,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 1,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.007678961963392794
+      }
+    },
+    {
+      "anywhere": {
+        "L": 4,
+        "bond": [
+          7,
+          16,
+          31,
+          32
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 32,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "support": [
+                16,
+                31,
+                32
+              ]
+            },
+            {
+              "state_indices": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "support": [
+                7,
+                31,
+                32
+              ]
+            },
+            {
+              "state_indices": [
+                8,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                15
+              ],
+              "support": [
+                7,
+                16,
+                32
+              ]
+            },
+            {
+              "state_indices": [
+                19,
+                22,
+                17,
+                23,
+                24,
+                20,
+                25,
+                18
+              ],
+              "support": [
+                7,
+                16,
+                31
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 3 steps",
+            "cnf_sha256": "6b53c7c408bb66907cb23ce3c4ab53409b3eef33913592acb36ac625fa942643",
+            "deleted_after_check": true,
+            "proof_bytes": 70,
+            "proof_sha256": "94dfd20f48cc135689b557bfc32448109d71e903274ebbe4439c6a9204542eeb",
+            "seconds": 0.006039405008777976,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "7980fe7f02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0180fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900fe7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0080fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ff7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0100fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ffff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "optimality_proved": true,
+        "sat_calls": 17,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2,
+            3
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 2,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.01307708804961294
+      },
+      "expected": 4,
+      "passed": true,
+      "s": 2,
+      "target_restricted": {
+        "L": 4,
+        "bond": [
+          7,
+          16,
+          31,
+          32
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 32,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "support": [
+                16,
+                31,
+                32
+              ]
+            },
+            {
+              "state_indices": [
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "support": [
+                7,
+                31,
+                32
+              ]
+            },
+            {
+              "state_indices": [
+                8,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                15
+              ],
+              "support": [
+                7,
+                16,
+                32
+              ]
+            },
+            {
+              "state_indices": [
+                19,
+                22,
+                17,
+                23,
+                24,
+                20,
+                25,
+                18
+              ],
+              "support": [
+                7,
+                16,
+                31
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 3 steps",
+            "cnf_sha256": "6b53c7c408bb66907cb23ce3c4ab53409b3eef33913592acb36ac625fa942643",
+            "deleted_after_check": true,
+            "proof_bytes": 70,
+            "proof_sha256": "94dfd20f48cc135689b557bfc32448109d71e903274ebbe4439c6a9204542eeb",
+            "seconds": 0.006090281065553427,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "7980fe7f02000000f7ffffffffffffff80000000000000000000000000000000ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0180fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900fe7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff08000000000000007fffffffffffffffffffffffffffffff0080000000000000000000000000000000000000000000000000000000000000ffffff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0080fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ff7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0100fdffffff0a0000000000000077ffffffffffffffffffffffffffffff8080000000000000000000000000000000000000000000000000000000000000ff7fff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ffff02000000f5ffffffffffffff880000000000000000000000000000007f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00800080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "optimality_proved": true,
+        "sat_calls": 0,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2,
+            3
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 2,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.007948710932396352
+      }
+    },
+    {
+      "anywhere": {
+        "L": 5,
+        "bond": [
+          7,
+          16,
+          32,
+          63,
+          64
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 80,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "support": [
+                16,
+                32,
+                63,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                0,
+                1,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                14,
+                15
+              ],
+              "support": [
+                7,
+                32,
+                63,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                0,
+                17,
+                28,
+                29,
+                30,
+                21,
+                18,
+                31,
+                32,
+                25,
+                22,
+                33,
+                34,
+                35,
+                26,
+                15
+              ],
+              "support": [
+                7,
+                16,
+                63,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                0,
+                19,
+                18,
+                1,
+                36,
+                17,
+                20,
+                29,
+                34,
+                23,
+                26,
+                37,
+                14,
+                25,
+                24,
+                15
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                38,
+                22,
+                1,
+                39,
+                17,
+                24,
+                29,
+                34,
+                19,
+                26,
+                40,
+                14,
+                21,
+                41,
+                31
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                63
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 4 steps",
+            "cnf_sha256": "6dcb0a16e96d3527793d1f58d6a8fbfd5b96505582fbb28cb2d04525ea5d0961",
+            "deleted_after_check": true,
+            "proof_bytes": 95,
+            "proof_sha256": "d8835ff696deddaed7708815ff90b94c732208b9d2dfeccdd5b70d332eff304d",
+            "seconds": 0.005789741990156472,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "7980feff02000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f02000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f03000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f02000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f03000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f02000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "optimality_proved": true,
+        "sat_calls": 41,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2,
+            3,
+            4
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 3,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.020851324079558253
+      },
+      "expected": 5,
+      "passed": true,
+      "s": 3,
+      "target_restricted": {
+        "L": 5,
+        "bond": [
+          7,
+          16,
+          32,
+          63,
+          64
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 80,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "support": [
+                16,
+                32,
+                63,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                0,
+                1,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                14,
+                15
+              ],
+              "support": [
+                7,
+                32,
+                63,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                0,
+                17,
+                28,
+                29,
+                30,
+                21,
+                18,
+                31,
+                32,
+                25,
+                22,
+                33,
+                34,
+                35,
+                26,
+                15
+              ],
+              "support": [
+                7,
+                16,
+                63,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                0,
+                19,
+                18,
+                1,
+                36,
+                17,
+                20,
+                29,
+                34,
+                23,
+                26,
+                37,
+                14,
+                25,
+                24,
+                15
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                64
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                38,
+                22,
+                1,
+                39,
+                17,
+                24,
+                29,
+                34,
+                19,
+                26,
+                40,
+                14,
+                21,
+                41,
+                31
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                63
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 4 steps",
+            "cnf_sha256": "6dcb0a16e96d3527793d1f58d6a8fbfd5b96505582fbb28cb2d04525ea5d0961",
+            "deleted_after_check": true,
+            "proof_bytes": 95,
+            "proof_sha256": "d8835ff696deddaed7708815ff90b94c732208b9d2dfeccdd5b70d332eff304d",
+            "seconds": 0.006133391987532377,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "7980feff02000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f02000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f03000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f02000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f03000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "067f0180fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f980fe7f02000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f4ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f5ffffffffffffff8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "optimality_proved": true,
+        "sat_calls": 0,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2,
+            3,
+            4
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 3,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.008148193010129035
+      }
+    },
+    {
+      "anywhere": {
+        "L": 6,
+        "bond": [
+          7,
+          16,
+          32,
+          64,
+          127,
+          128
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 192,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "support": [
+                16,
+                32,
+                64,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                1,
+                2,
+                3,
+                4,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                27,
+                28,
+                29,
+                30,
+                55
+              ],
+              "support": [
+                7,
+                32,
+                64,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                56,
+                57,
+                58,
+                4,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                27,
+                81,
+                82,
+                83,
+                55
+              ],
+              "support": [
+                7,
+                16,
+                64,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                84,
+                60,
+                1,
+                85,
+                86,
+                87,
+                3,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                28,
+                104,
+                105,
+                106,
+                30,
+                79,
+                107,
+                55
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                108,
+                109,
+                110,
+                111,
+                2,
+                112,
+                113,
+                114,
+                4,
+                115,
+                60,
+                116,
+                85,
+                117,
+                87,
+                118,
+                119,
+                104,
+                120,
+                106,
+                121,
+                79,
+                122,
+                27,
+                123,
+                124,
+                125,
+                29,
+                126,
+                127,
+                128,
+                129
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                64,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                119,
+                84,
+                120,
+                130,
+                2,
+                131,
+                113,
+                132,
+                4,
+                133,
+                60,
+                134,
+                85,
+                135,
+                87,
+                136,
+                137,
+                104,
+                138,
+                106,
+                139,
+                79,
+                140,
+                27,
+                141,
+                124,
+                142,
+                29,
+                143,
+                117,
+                107,
+                118
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                64,
+                127
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 5 steps",
+            "cnf_sha256": "23a11431d0c57035aea1e1aeff0e214bd47fd1e959d1f70b50b2fdcbc8e94289",
+            "deleted_after_check": true,
+            "proof_bytes": 123,
+            "proof_sha256": "09e07e8f26a06804c8f693c68d34c006239f71eccbd9f30a549b6a0f689a2085",
+            "seconds": 0.006021570996381342,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "7980fe7f02000080f4ffffffffffff7f8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900fe7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0180fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ff7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0080fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0000fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0000fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980feff02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fcffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fdffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f02000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f03000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fcffff7f0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f02000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f03000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000080f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f02000080f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "optimality_proved": true,
+        "sat_calls": 97,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 4,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.039629603968933225
+      },
+      "expected": 6,
+      "passed": true,
+      "s": 4,
+      "target_restricted": {
+        "L": 6,
+        "bond": [
+          7,
+          16,
+          32,
+          64,
+          127,
+          128
+        ],
+        "certificate": {
+          "all_maximal_projections_full": true,
+          "assignments_checked": 192,
+          "maximal_proper": [
+            {
+              "state_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "support": [
+                16,
+                32,
+                64,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                1,
+                2,
+                3,
+                4,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                27,
+                28,
+                29,
+                30,
+                55
+              ],
+              "support": [
+                7,
+                32,
+                64,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                56,
+                57,
+                58,
+                4,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                27,
+                81,
+                82,
+                83,
+                55
+              ],
+              "support": [
+                7,
+                16,
+                64,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                32,
+                84,
+                60,
+                1,
+                85,
+                86,
+                87,
+                3,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                28,
+                104,
+                105,
+                106,
+                30,
+                79,
+                107,
+                55
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                127,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                108,
+                109,
+                110,
+                111,
+                2,
+                112,
+                113,
+                114,
+                4,
+                115,
+                60,
+                116,
+                85,
+                117,
+                87,
+                118,
+                119,
+                104,
+                120,
+                106,
+                121,
+                79,
+                122,
+                27,
+                123,
+                124,
+                125,
+                29,
+                126,
+                127,
+                128,
+                129
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                64,
+                128
+              ]
+            },
+            {
+              "state_indices": [
+                119,
+                84,
+                120,
+                130,
+                2,
+                131,
+                113,
+                132,
+                4,
+                133,
+                60,
+                134,
+                85,
+                135,
+                87,
+                136,
+                137,
+                104,
+                138,
+                106,
+                139,
+                79,
+                140,
+                27,
+                141,
+                124,
+                142,
+                29,
+                143,
+                117,
+                107,
+                118
+              ],
+              "support": [
+                7,
+                16,
+                32,
+                64,
+                127
+              ]
+            }
+          ],
+          "refutation": {
+            "checked": true,
+            "checker": "VERIFIED 5 steps",
+            "cnf_sha256": "23a11431d0c57035aea1e1aeff0e214bd47fd1e959d1f70b50b2fdcbc8e94289",
+            "deleted_after_check": true,
+            "proof_bytes": 123,
+            "proof_sha256": "09e07e8f26a06804c8f693c68d34c006239f71eccbd9f30a549b6a0f689a2085",
+            "seconds": 0.0059376939898356795,
+            "solver": "CaDiCaL 2.1.2",
+            "unanchored": true
+          },
+          "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+          "state_pool": [
+            "7980fe7f02000080f4ffffffffffff7f8c0000000000000000000000000000005f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900fe7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0100fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "06ff0180fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "f900feff03000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa080000000000000000000000000000000000000000000000000000000000000ff77ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ff7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fcffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0000fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "86ff0080fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7900ffff03000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0000fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0000fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0100fdffffff0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980feff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f4ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980feff02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0000fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ffff02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f5ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffffff0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0a0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000000f5ffffffffffffff8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fcffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f4ffffffffffff7f8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0a0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fcffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fdffff7f0b0000000000008072ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f02000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f03000080f4ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fcffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f02000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0080fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980ff7f03000080f5ffffffffffff7f8d0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "867f0180fdffff7f0b0000000000008073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fcffff7f0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fdffff7f0a0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fcffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0080fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "867f0180fdffff7f0b0000000000000073ffffffffffffffffffffffffffffffa280000000000000000000000000000000000000000000000000000000000000f777ff7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+            "7980fe7f02000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f02000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f03000080f4ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f02000080f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980ff7f02000080f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "7980fe7f03000080f5ffffffffffffff8c0000000000000000000000000000005d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff08880080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        },
+        "forbidden_assignment": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "optimality_proved": true,
+        "sat_calls": 0,
+        "search": {
+          "exhausted_smaller_sizes": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "method": "exact incidence-forest boundary minimization",
+          "minimum_factors": 4,
+          "reason": "every minimal nonfull support is boundary(H), size=number_of_factors(H)+2"
+        },
+        "seconds": 0.008167594904080033
+      }
+    }
+  ],
+  "corruption": {
+    "changed_effective_proof_hint_rejected": true,
+    "flipped_state_value_rejected": true
+  },
+  "passed": true
+}

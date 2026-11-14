@@ -150,3 +150,31 @@ not a dichotomy: one O family (4f5934b2e118) also conserves a parity, and core l
 strata here are reporting labels, computed exactly as frozen (`classify_full`), and **O** means "no tie cycle, only one-way core
 comparabilities", not "nothing carried". P2 compares the window's shares on these labels and claims nothing about what O families
 conserve. Nothing else changes; no code or prediction is affected.
+
+## Addendum: Codex's implementation questions, resolved before the full run (2026-11-14)
+
+Codex built the jobs, ran the gates and a 20-case smoke, and stopped at eight questions (`codex/REPORT.md`, "Ambiguities"). I saw
+the smoke's 20 verdicts (13 bounded by the window, 7 not, including 2 skipped wrapper starts and 1 cap) before writing this; no
+prediction is changed. The resolutions follow the frozen text's intent.
+
+1. **Several S-calls in a wrapper main (A1).** Every covered target counts, so Q_0 is the set of start states, one per S-call of
+   main. U(s) is the minimum over all of them, and G2's contexts are those reached from every start.
+2. **Dead positions (A2): a misstated fixed point, corrected.** "A least fixed point" in Lemma G was the wrong one: started from
+   nothing dead, it can never make a self-carried port dead, which the frozen synthetic control requires. The intended rule is the
+   least fixed point of **liveness**: a position is live when its port occurs in a knot of its definition's block, or as an argument
+   at a live position of a call; every other position is dead. A distinction at dead positions occurs in no knot of any unfolding,
+   and the usual limit is built from knots only, so it is free. Lemma G's proof is otherwise unchanged.
+3. **Depth in the brute-force gate (A3).** s is the S-word length from the top copy of S, as in the window; for a wrapper the end
+   copy is one level deeper in absolute depth. The explicit unfolding keeps every copy down to the end copy's children's level and
+   replaces the copies below them by usual-limit relations, for main = S and wrappers alike.
+4. **P3 with several unbounded residues (A4).** A family counts for P3 when on **every** residue left unbounded it has no carried
+   position sharing a knot with an own distinction. This is the stricter reading.
+5. **Sample cells (A5).** Both cell features are syntactic: the period of R_s from the identity graph, and whether some residue of
+   R_s's repeating part has a carried position in a knot with an own distinction (every residue counts as unbounded for an
+   undecided family). Every I family gets a cell this way.
+6. **Readings (A6).** Exclusive attribution by priority, per residue over the tied least supports: B, then widened B, then a tie
+   bond, then other. A family takes the lowest-priority reading any of its residues needs. These are readings, not tests.
+7. **Gate c's r (A7).** On the negative controls, G2 is searched up to the family's census r (rectangular r-products are trimmed
+   rectangular, so it must certify by then). On the population, r ≤ 8 as frozen.
+8. **Retries (A8).** `--retry timeout,memory,crashed`. The shared runner then allows at most two retries, one more than frozen;
+   it can only turn transient failures into decisions.

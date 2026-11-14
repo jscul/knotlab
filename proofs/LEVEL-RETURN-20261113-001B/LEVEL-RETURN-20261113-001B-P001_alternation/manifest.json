@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "LEVEL-RETURN-20261113-001B-P001",
+  "canonical_id": "LEVEL-RETURN-20261113-001B-P001",
+  "kind": "proof",
+  "ticket": "LEVEL-RETURN-20261113-001B",
+  "proof": "LEVEL-RETURN-20261113-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Alternation by level parity: two living halves at every level, and a reduction of a dying half",
+  "status": "Proved",
+  "claim": "Proved by a finite product check (prover.py): for description #2 the address's parity is a state at every odd level n >= 3 (and not at even n >= 4); for #3 the first letter XOR the last is a state at every even level n >= 2. Proved by hand: if #2's pattern without its two special knots is rigid at an even level, the whole is dead there (certified rigid at 6-14). Referee pending.",
+  "dependencies": [
+    "ADDR-KNOTS-20261113-001"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An odd level where #2's parity violates a knot; an even level where #3's first-XOR-last does.",
+    "A state of the whole pattern at an even level where the reduced pattern is rigid."
+  ],
+  "lineage": {
+    "home_scope": "LEVEL-RETURN-20261113-001",
+    "epic_path": [
+      "LEVEL-RETURN-20261113-001"
+    ],
+    "parents": [
+      "research/LEVEL-RETURN-20261113-001/preregistration.md"
+    ]
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/LEVEL-RETURN-20261113-001B/LEVEL-RETURN-20261113-001B-P001_alternation/manifest.json",
+    "identity": "proofs/LEVEL-RETURN-20261113-001B/LEVEL-RETURN-20261113-001B-P001_alternation/identity.json",
+    "proof": "proofs/LEVEL-RETURN-20261113-001B/LEVEL-RETURN-20261113-001B-P001_alternation/prover.py",
+    "result": "proofs/LEVEL-RETURN-20261113-001B/LEVEL-RETURN-20261113-001B-P001_alternation/result.json",
+    "check": "proofs/LEVEL-RETURN-20261113-001B/LEVEL-RETURN-20261113-001B-P001_alternation/check.py",
+    "directory": "proofs/LEVEL-RETURN-20261113-001B/LEVEL-RETURN-20261113-001B-P001_alternation"
+  },
+  "remaining_obligations": [
+    "Independent referee: pending.",
+    "Rigidity at every even level: open."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; two descriptions of the ADDR-KNOTS census, every level.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude 2026-11-13/14; the parity state hand-proved independently by the advisor model; referee pending.",
+    "status": "finite product check passed; referee pending",
+    "novelty": "known-with-delta"
+  }
+}

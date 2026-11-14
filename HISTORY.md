@@ -3,6 +3,13 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: a carried value shortens the bond only when it is read
+
+- The tie study (`TIE-CYCLE-20261114-001`) read its result as "where a pattern remembers by carrying, the carried value gives short
+  bonds". The study of the undecided half (`CARRY-BOUND-20261114-001`) found 632 census families whose carried values no knot ever
+  reads; there the bond grows. The reading now says "a value some knot reads" ([decision note](research/CARRY-BOUND-20261114-001/carry_bound.md)).
+- Unchanged: every theorem and count of the tie study.
+
 ## 14 November 2026: the tie study's residual, narrowed by its referee
 
 - In the study of whether identity is the whole story of forgetting (`TIE-CYCLE-20261114-001`), the families that remember without

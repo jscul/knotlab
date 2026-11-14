@@ -54,7 +54,8 @@ every repeated product of its calls is a product relation.
   families by **ordering** (the depth can only be on one side of the top). *Narrowed after the referee:* these are two census
   descriptions, not an exhaustive pair; one family orders and carries a parity at once.
 - **For counting inside.** Where a family forgets, its free bond grows to copies of S reached through S calls. Where it remembers by
-  carrying, the carried value gives short bonds, as the carried ports of `TRUE-RATE-20261113-001` showed. Where it remembers by order,
+  carrying, the carried value gives short bonds, as the carried ports of `TRUE-RATE-20261113-001` showed, *when some knot reads it*
+  (narrowed after `CARRY-BOUND-20261114-001`: in 632 families every carried value is unread, and the bond grows). Where it remembers by order,
   the bond's behaviour is open (B174). *Narrowed after the referee:* non-forgetting proves neither a bounded bond nor the absence of
   growth, and any growth reading keeps the covered-target scope.
 
@@ -94,6 +95,8 @@ From the referee (`docs/CORRECTIONS.md`, 2026-11-14):
 - **Narrowing.** The capped families (all 66 have identity cycles) and the tied denominator (0 of 3,471); ties beyond identity read
   narrowly.
 - **Narrowing.** Any growth reading keeps the covered-target scope.
+
+Found later by `CARRY-BOUND-20261114-001`: **Narrowing.** A carried value gives short bonds only when some knot reads it.
 
 Carried from FORGET-RULE's referee and confirmed by this one: **Narrowing.** The tie lemma, like rule N, needs a living family. No
 census count changes.

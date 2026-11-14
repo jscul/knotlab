@@ -2126,6 +2126,9 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Start the bond from a distinction that the depth-1 copy does not hold (a local of C_0, or a port that is not
   carried), and compare growth and boundedness. Overturned for the reach if the carried bounded rules then grow.
 - **History.**
+  - 2026-11-14 · Used by `CARRY-BOUND-20261114-001`: 86% of the bounded weight of the non-forgetting first-ray growers is a bond
+    through a carried top port read by a knot; the 93 order-label families are bounded without one, and a carried port that no knot
+    reads does not bound the bond ([decision note](../research/CARRY-BOUND-20261114-001/carry_bound.md)). Status unchanged.
   - 2026-11-13 · Added, and put under challenge, by `TRUE-RATE-20261113-001`: the true bond is proved bounded by 3 in 10 of 226
     families, all carrying a top port; across BRANCH-DEPTH's 664 rules 320 of the 432 bounded ones carry one and 112 do not
     ([decision note](../research/TRUE-RATE-20261113-001/true_rate.md)).

@@ -1,0 +1,8 @@
+{"schema_version": 1, "experiment_id": "CARRY-BOUND-20261114-001A-E001", "ticket": "CARRY-BOUND-20261114-001A", "status": "Frozen", "evidence_stage": "confirmatory", "branch": "code_analysis",
+ "question": "For the 5,964 census first-ray growers CENSUS-FORGET left undecided (non-forgetting or capped non-chains), is the least bond to any covered copy at depth s, members anywhere, bounded per depth or growing?",
+ "definitions": {"window": "experiments/CARRY-BOUND-20261114-001A/CARRY-BOUND-20261114-001A-E001_window/codex/window.py (sha256 2c877c44ac1c3488e411f3e816c16e4683723a721a507cdbb40f3d11a624779b)", "lemmas": "research/CARRY-BOUND-20261114-001/preregistration.md (Lemma W, Theorem B, widened B, Lemma G, Lemma G2; addendum c75547967)"},
+ "public_inputs": {"code": "Codex's codex/ (window, brute, gates, sample, summarize, jobs); CENSUS-FORGET results; TIE-CYCLE ties.py; EVERY-RAY paths_dp; FREE-TARGET referee direct_bonds"},
+ "forbidden_inputs": ["Population window, path or direct results before the freeze"],
+ "primary_observable": "P1-P5 on the in-scope population", "cheapest_meaningful_control": "negative control on 300 forgetting families; brute force on 50",
+ "validation_gate": "gates a-e and four synthetic controls", "predictions": {"P1": ">=80% of I bounded", "P2": "O bounded share >=20 points below I", "P3": ">=80% of I residual without knot-meeting carried positions", "P4": "all 5 T bounded", "P5": "growth certified in <=5%"},
+ "stop_rule": "One census-wide window run, the path DP and direct search on the frozen sample; referee hand-off; report.", "runtime": "75 minutes window; direct search pending"}

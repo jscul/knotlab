@@ -1,0 +1,261 @@
+{
+ "families": 12772,
+ "draws": 13279,
+ "strata": {
+  "chain": {
+   "families": 5190,
+   "draws": 5633,
+   "by_count": {
+    "certified": {
+     "n": 4223,
+     "share": 0.8137,
+     "wilson": [
+      0.8029,
+      0.824
+     ]
+    },
+    "non-forgetting": {
+     "n": 967,
+     "share": 0.1863,
+     "wilson": [
+      0.176,
+      0.1971
+     ]
+    }
+   },
+   "by_weight": {
+    "certified": {
+     "draws": 4526,
+     "share": 0.8035,
+     "wilson": [
+      0.7929,
+      0.8136
+     ]
+    },
+    "non-forgetting": {
+     "draws": 1107,
+     "share": 0.1965,
+     "wilson": [
+      0.1864,
+      0.2071
+     ]
+    }
+   }
+  },
+  "c>=2": {
+   "families": 6925,
+   "draws": 6989,
+   "by_count": {
+    "certified": {
+     "n": 1080,
+     "share": 0.156,
+     "wilson": [
+      0.1476,
+      0.1647
+     ]
+    },
+    "non-forgetting": {
+     "n": 5779,
+     "share": 0.8345,
+     "wilson": [
+      0.8256,
+      0.8431
+     ]
+    },
+    "capped": {
+     "n": 66,
+     "share": 0.0095,
+     "wilson": [
+      0.0075,
+      0.0121
+     ]
+    }
+   },
+   "by_weight": {
+    "certified": {
+     "draws": 1080,
+     "share": 0.1545,
+     "wilson": [
+      0.1462,
+      0.1632
+     ]
+    },
+    "non-forgetting": {
+     "draws": 5843,
+     "share": 0.836,
+     "wilson": [
+      0.8272,
+      0.8445
+     ]
+    },
+    "capped": {
+     "draws": 66,
+     "share": 0.0094,
+     "wilson": [
+      0.0074,
+      0.012
+     ]
+    }
+   }
+  },
+  "c=1 other": {
+   "families": 657,
+   "draws": 657,
+   "by_count": {
+    "certified": {
+     "n": 538,
+     "share": 0.8189,
+     "wilson": [
+      0.7876,
+      0.8464
+     ]
+    },
+    "non-forgetting": {
+     "n": 119,
+     "share": 0.1811,
+     "wilson": [
+      0.1536,
+      0.2124
+     ]
+    }
+   },
+   "by_weight": {
+    "certified": {
+     "draws": 538,
+     "share": 0.8189,
+     "wilson": [
+      0.7876,
+      0.8464
+     ]
+    },
+    "non-forgetting": {
+     "draws": 119,
+     "share": 0.1811,
+     "wilson": [
+      0.1536,
+      0.2124
+     ]
+    }
+   }
+  },
+  "all": {
+   "families": 12772,
+   "draws": 13279,
+   "by_count": {
+    "certified": {
+     "n": 5841,
+     "share": 0.4573,
+     "wilson": [
+      0.4487,
+      0.466
+     ]
+    },
+    "non-forgetting": {
+     "n": 6865,
+     "share": 0.5375,
+     "wilson": [
+      0.5288,
+      0.5461
+     ]
+    },
+    "capped": {
+     "n": 66,
+     "share": 0.0052,
+     "wilson": [
+      0.0041,
+      0.0066
+     ]
+    }
+   },
+   "by_weight": {
+    "certified": {
+     "draws": 6144,
+     "share": 0.4627,
+     "wilson": [
+      0.4542,
+      0.4712
+     ]
+    },
+    "non-forgetting": {
+     "draws": 7069,
+     "share": 0.5323,
+     "wilson": [
+      0.5238,
+      0.5408
+     ]
+    },
+    "capped": {
+     "draws": 66,
+     "share": 0.005,
+     "wilson": [
+      0.0039,
+      0.0063
+     ]
+    }
+   }
+  }
+ },
+ "P1": {
+  "families": 6625,
+  "draws": 6686,
+  "certified_draws": 1036,
+  "share": 0.155,
+  "wilson": [
+   0.1465,
+   0.1638
+  ],
+  "certified_families": 1036
+ },
+ "P1_verdict": "holds",
+ "gate_consistency": {
+  "checked": 300,
+  "forgetting_and_bounded_over_paths": 0,
+  "passed": true,
+  "examples": []
+ },
+ "gate_reproduction": {
+  "families": 66,
+  "in_census": 66,
+  "same_r": 66,
+  "certified": 43,
+  "passed": true
+ },
+ "gate_audit": {
+  "certified": 5841,
+  "with_mismatch": 0,
+  "passed": true
+ },
+ "r_distribution": {
+  "1": 128,
+  "2": 1431,
+  "3": 2512,
+  "4": 530,
+  "5": 1068,
+  "6": 116,
+  "7": 27,
+  "8": 8,
+  "9": 5,
+  "10": 3,
+  "11": 12,
+  "12": 1
+ },
+ "r_distribution_nonchain": {
+  "1": 17,
+  "2": 334,
+  "3": 633,
+  "4": 243,
+  "5": 286,
+  "6": 67,
+  "7": 18,
+  "8": 7,
+  "9": 5,
+  "10": 2,
+  "11": 5,
+  "12": 1
+ },
+ "empty_relation_families": 0,
+ "the_224": {
+  "non-forgetting": 203,
+  "capped": 21
+ }
+}

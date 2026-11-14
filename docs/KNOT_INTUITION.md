@@ -3430,6 +3430,10 @@ So holes come in two kinds:
      every bond from the top to any copy at depth s, wherever its members sit, has at least 2 + ⌊s/r⌋ members: the law counts depth
      inside them with nothing chosen. None was shown bounded. Single-call chains count depth by construction (5,190 families)
      ([decision note](../research/FREE-TARGET-20261114-001/free_target.md)).
+   - **How common** (`CENSUS-FORGET-20261114-001`; referee pending; conditional on the gap argument): across the census's 12,772
+     first-ray growers, 54.6% of their weight (3.25% of all nested draws) grows with nothing chosen at every depth where a bond
+     exists: single chains by construction (42.4%) and 21.2% of the others because every way down forgets; none of the limit-only
+     growers that started this line forgets ([decision note](../research/CENSUS-FORGET-20261114-001/census_forget.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what
      separates decidable from undecidable nesting. With knots placed by a small automaton on addresses, so that a part's joining

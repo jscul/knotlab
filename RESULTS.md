@@ -1494,6 +1494,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-13 | How the law's reach typically behaves across nested patterns (`REACH-CENSUS-20261113-001`) | [closure](proofs/REACH-CENSUS-20261113-001Z/REACH-CENSUS-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/REACH-CENSUS-20261113-001/) |
 | 2026-11-13 | Does growth survive side branches? (`TRUE-BOND-20261113-001`) | [closure](proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/TRUE-BOND-20261113-001/) |
 | 2026-11-13 | Proved true rates with side branches (`TRUE-RATE-20261113-001`) | [closure](proofs/TRUE-RATE-20261113-001Z/TRUE-RATE-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/TRUE-RATE-20261113-001/) |
-| 2026-11-14 | How common certified counting inside is (`CENSUS-FORGET-20261114-001`) | — | [folder](research/CENSUS-FORGET-20261114-001/) |
+| 2026-11-14 | How common certified counting inside is (`CENSUS-FORGET-20261114-001`) | [closure](proofs/CENSUS-FORGET-20261114-001Z/CENSUS-FORGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/CENSUS-FORGET-20261114-001/) |
 | 2026-11-14 | Does the law's reach grow to every copy at depth with members anywhere (`FREE-TARGET-20261114-001`) | [closure](proofs/FREE-TARGET-20261114-001Z/FREE-TARGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-TARGET-20261114-001/) |
 

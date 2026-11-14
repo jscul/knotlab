@@ -1,0 +1,25 @@
+{
+  "branch": "code_analysis",
+  "controls": "Direct letter actions, wrong word order, Fano proof, malformed/truncated/non-RUP proofs, wrong models.",
+  "evidence_stage": "independent finite audit",
+  "forbidden_inputs": [
+    "LEVEL-RETURN producer Python/C",
+    "LEVEL-RETURN summarize.py"
+  ],
+  "inputs": [
+    "frozen ADDR codex_spec.md",
+    "research/ADDR-KNOTS-20261113-001/referee-R1/codex/fresh_patterns.py",
+    "earlier independent returns/*.json keys",
+    "run3/results.jsonl",
+    "summary.json"
+  ],
+  "nonclaims": [
+    "Original deleted-certificate replay",
+    "uniform all-level proof",
+    "resolution of every undecided level"
+  ],
+  "outputs": "Hash-bound reconstructed CNFs; checked fresh models or RUP refutations; undecided explicit.",
+  "question": "Do fresh spec-derived patterns independently support sampled registered alive/dead verdicts?",
+  "resource_budget": "One compute process at once; RLIMIT_AS 3 GiB; bounded conflicts; per-checker timeout 180 s.",
+  "stop_rule": "One first pass over seven patterns levels 13..16, prioritized dead; bounded other samples and follow-up."
+}

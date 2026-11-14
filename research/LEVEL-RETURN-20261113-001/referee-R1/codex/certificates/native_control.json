@@ -1,0 +1,46 @@
+{
+  "certificate_cnf_sha256": "73b7dff414069a107c21a12dc97f35b0340dcaeef0d0224a940d9bfa136dded2",
+  "certified": true,
+  "cnf_path": "native_fano.cnf.gz",
+  "command": [
+    "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+    "-q",
+    "--no-witness",
+    "--no-binary",
+    "--lrat",
+    "-c",
+    "10000",
+    "-t",
+    "10",
+    "/home/jscul/p-vs-np-contact-first/research/LEVEL-RETURN-20261113-001/referee-R1/codex/certificates/native_fano.cnf",
+    "/home/jscul/p-vs-np-contact-first/research/LEVEL-RETURN-20261113-001/referee-R1/codex/certificates/native_fano.lrat"
+  ],
+  "conflict_budget": 10000,
+  "conversion": {
+    "additions": 12,
+    "deletions_discarded": 1,
+    "drup_uncompressed_sha256": "ce28c41a7168b543131a0251373c0e7944b2e2730b128647fa9c6055b94b1deb",
+    "empty_additions": 1,
+    "hints_consumed_by_checker": false,
+    "lrat_lines": 13,
+    "lrat_sha256": "9f935636e3a99c1bb8a753d2fc01c697e433804aa81481b3764ac6ea432e0793"
+  },
+  "lrat_path": "native_fano.lrat.gz",
+  "proof_check": {
+    "additions": 12,
+    "empty_clause_line": 12,
+    "exit_code": 0,
+    "ignored_deletions": 0,
+    "seconds": 0.0017521780682727695,
+    "valid": true
+  },
+  "proof_path": "native_fano.drup.gz",
+  "seconds": 0.005909401923418045,
+  "solve_seconds": 0.003341242903843522,
+  "solver_binary_sha256": "5b6adcce8d4f8e4ca75706a12c6195821dac2309c7d9bc98483e768bdfbd5a4d",
+  "solver_exit_code": 20,
+  "solver_seconds_limit": 10,
+  "solver_stderr": "",
+  "solver_stdout": "s UNSATISFIABLE\n",
+  "solver_version": "2.1.2"
+}

@@ -1,0 +1,982 @@
+{
+  "controls": {
+    "direct_small_patterns": 42,
+    "model_controls": {
+      "malformed": {
+        "reason": "malformed or incomplete assignment",
+        "valid": false
+      },
+      "positive": {
+        "checked_knots": 1,
+        "first_violation": [],
+        "valid": true,
+        "violated_knots": 0
+      },
+      "truncated": {
+        "reason": "malformed or incomplete assignment",
+        "valid": false
+      },
+      "wrong": {
+        "checked_knots": 1,
+        "first_violation": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "valid": false,
+        "violated_knots": 1
+      }
+    },
+    "native_lrat_conversion_control": {
+      "certificate_cnf_sha256": "73b7dff414069a107c21a12dc97f35b0340dcaeef0d0224a940d9bfa136dded2",
+      "certified": true,
+      "cnf_path": "native_fano.cnf.gz",
+      "command": [
+        "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+        "-q",
+        "--no-witness",
+        "--no-binary",
+        "--lrat",
+        "-c",
+        "10000",
+        "-t",
+        "10",
+        "/home/jscul/p-vs-np-contact-first/research/LEVEL-RETURN-20261113-001/referee-R1/codex/certificates/native_fano.cnf",
+        "/home/jscul/p-vs-np-contact-first/research/LEVEL-RETURN-20261113-001/referee-R1/codex/certificates/native_fano.lrat"
+      ],
+      "conflict_budget": 10000,
+      "conversion": {
+        "additions": 12,
+        "deletions_discarded": 1,
+        "drup_uncompressed_sha256": "ce28c41a7168b543131a0251373c0e7944b2e2730b128647fa9c6055b94b1deb",
+        "empty_additions": 1,
+        "hints_consumed_by_checker": false,
+        "lrat_lines": 13,
+        "lrat_sha256": "9f935636e3a99c1bb8a753d2fc01c697e433804aa81481b3764ac6ea432e0793"
+      },
+      "lrat_path": "native_fano.lrat.gz",
+      "proof_check": {
+        "additions": 12,
+        "empty_clause_line": 12,
+        "exit_code": 0,
+        "ignored_deletions": 0,
+        "seconds": 0.0017521780682727695,
+        "valid": true
+      },
+      "proof_path": "native_fano.drup.gz",
+      "seconds": 0.005909401923418045,
+      "solve_seconds": 0.003341242903843522,
+      "solver_binary_sha256": "5b6adcce8d4f8e4ca75706a12c6195821dac2309c7d9bc98483e768bdfbd5a4d",
+      "solver_exit_code": 20,
+      "solver_seconds_limit": 10,
+      "solver_stderr": "",
+      "solver_stdout": "s UNSATISFIABLE\n",
+      "solver_version": "2.1.2"
+    },
+    "proof_controls": {
+      "malformed": {
+        "exit_code": 2,
+        "reason": "invalid proof clause",
+        "seconds": 0.0019306109752506018,
+        "valid": false
+      },
+      "non_rup": {
+        "exit_code": 1,
+        "line": 1,
+        "reason": "addition is not RUP",
+        "seconds": 0.0017671750392764807,
+        "valid": false
+      },
+      "out_of_bounds": {
+        "exit_code": 2,
+        "reason": "proof variable out of bounds",
+        "seconds": 0.0019376360578462481,
+        "valid": false
+      },
+      "positive": {
+        "additions": 8,
+        "empty_clause_line": 8,
+        "exit_code": 0,
+        "ignored_deletions": 0,
+        "seconds": 0.0023357520112767816,
+        "valid": true
+      },
+      "truncated": {
+        "exit_code": 1,
+        "reason": "no derived empty clause",
+        "seconds": 0.0020428909920156,
+        "valid": false
+      }
+    },
+    "wrong_word_order_detected": 29
+  },
+  "final_source_sha256": {
+    "check_rup_fast": "b0fc7ebab4d3b655bc55661911e90e89ed3d8cf86ea3311190cdff72ce44b101",
+    "check_rup_fast.cpp": "4e0f69f37346e3cc38bab90f498e1d81941a2f0d4e1f22f5fd866e73dc14e3c9",
+    "fresh_certify.py": "9d2b1fdeaad58fa0a8b7789702249ba6d283c512d041f28a93033384a0744956",
+    "native_refute.py": "f5ace7a2e7642fc8fa87b030cfcd172117af17c3164e57928b44d816d2fee6d8",
+    "summarize_audit.py": "3a8c29d55d64215cdb9adf128c9d5ef49f73282832b107d4ebd178a678d7e3c2"
+  },
+  "independence": "Earlier independently authored pattern generator and RUP checker reused; finite checks by a subagent in the same AI task, not human review or external replication.",
+  "lane": "independent finite certificate audit",
+  "limits": [
+    "Deleted original CNFs, models, and LRAT files cannot be independently replayed or compared clause by clause.",
+    "Only the explicitly listed cases have fresh certification; unsampled registered verdicts remain outside this audit.",
+    "Complement symmetry is checked and used as a satisfiability-preserving unit restriction for refutations.",
+    "Finite case checks do not establish any all-level statement."
+  ],
+  "original_replay_gap": {
+    "directories": {
+      "run3": [
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run3/.lock",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run3/job.json",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run3/results.jsonl",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run3/runner.log",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run3/state.json"
+      ],
+      "run_rigid3": [
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run_rigid3/.lock",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run_rigid3/job.json",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run_rigid3/results.jsonl",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run_rigid3/runner.log",
+        "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/run_rigid3/state.json"
+      ]
+    },
+    "evidence_gap": "Original CNF, models and LRAT proofs are not retained in the registered run directories.",
+    "record_field_inventory": {
+      "run3": {
+        "dead_certificate_examples": [
+          "LRAT checked: VERIFIED 16 steps (406 bytes)",
+          "LRAT checked: VERIFIED 49 steps (2277 bytes)",
+          "LRAT checked: VERIFIED 275 steps (16781 bytes)"
+        ],
+        "dead_verdict_rows": 294,
+        "proof_or_certificate_hash_field_names": [],
+        "retained_hash_field_names": [
+          "job_sha",
+          "result.pattern_sha256"
+        ],
+        "rows": 775
+      },
+      "run_rigid3": {
+        "dead_certificate_examples": [],
+        "dead_verdict_rows": 0,
+        "proof_or_certificate_hash_field_names": [],
+        "retained_hash_field_names": [
+          "job_sha"
+        ],
+        "rows": 55
+      }
+    },
+    "registered_input_sha256": "312d647e1541d586a93774b51c092813e4f53a88b849838e70d563572339545f",
+    "restriction": "No producer Python/C was read or imported; no LRAT hints were consumed."
+  },
+  "original_undecided_cases": [
+    "333f0477eb69a449-L15",
+    "91c75673c09d9046-L16"
+  ],
+  "other_cases": [
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "09f2cd8cab276fc2-L16.cadical195.b100000.result.json",
+          "seconds": 14.349969552014954,
+          "solver": "cadical195",
+          "verdict": "dead"
+        }
+      ],
+      "case": "09f2cd8cab276fc2-L16",
+      "certificate_result": "09f2cd8cab276fc2-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 393192,
+      "pattern_sha256": "8c28704c5a4cd6d29dcdd26a72cefe34e20d43e7829f4ec8b22ead0a44a01fd7",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "f8313e621441de02c70005651eb2787808911a29e69be7dafa44155b774d78e8"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "545d4c874195cf46-L16.cadical195.b100000.result.json",
+          "seconds": 0.7732294220477343,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "545d4c874195cf46-L16",
+      "certificate_result": "545d4c874195cf46-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 131064,
+      "pattern_sha256": "e024e2f09a0962213f183030fc6085cf8603a4b0f9bfa3e48961048aac1821a6",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "8efe39ea2ea32502dcad2566bca48f49ffd75cdda2d3c5e9629832d53b18308c"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "cf817ba4fe567cac-L16.cadical195.b100000.result.json",
+          "seconds": 2.7713385469978675,
+          "solver": "cadical195",
+          "verdict": "dead"
+        }
+      ],
+      "case": "cf817ba4fe567cac-L16",
+      "certificate_result": "cf817ba4fe567cac-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 196574,
+      "pattern_sha256": "57655721c2eda4b7fed88273ddc46d0e7d43dd49c1f0b1281a9315a12ead8857",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "10b1a0d03889639fc8572cbe6a3d984671195b20e1f010c7ebaaa6f571e9d35a"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "d3ce4bc693ff90ef-L14.cadical195.b100000.result.json",
+          "seconds": 2.6230593599611893,
+          "solver": "cadical195",
+          "verdict": "dead"
+        }
+      ],
+      "case": "d3ce4bc693ff90ef-L14",
+      "certificate_result": "d3ce4bc693ff90ef-L14.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 73720,
+      "pattern_sha256": "d1873cf0244468f8c3da421166535e5d11a0542a578e809a240208a3430bb9f2",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "6d9849dfb786ea3c3ca4447891a80d00d4cca38f7d29c240161955eeae3d5adb"
+    },
+    {
+      "attempts": [
+        {
+          "certified": false,
+          "conflict_budget": 100000,
+          "result": "d3ce4bc693ff90ef-L16.cadical195.b100000.result.json",
+          "seconds": 17.494493230013177,
+          "solver": "cadical195",
+          "verdict": "undecided"
+        }
+      ],
+      "case": "d3ce4bc693ff90ef-L16",
+      "certificate_result": "d3ce4bc693ff90ef-L16.cadical195.b100000.result.json",
+      "fresh_certified": false,
+      "fresh_verdict": "undecided",
+      "knots": 294904,
+      "pattern_sha256": "a3cc739da12a5810539b85994f007921daf9fe166f646a691ee67121b174dbf6",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "cbd9448f5ccc2624a960f41f7463ce6affe47f07518a336e0608be9cb8bbbec3"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "f3d44a866f6ca806-L16.cadical195.b100000.result.json",
+          "seconds": 19.59879668604117,
+          "solver": "cadical195",
+          "verdict": "dead"
+        }
+      ],
+      "case": "f3d44a866f6ca806-L16",
+      "certificate_result": "f3d44a866f6ca806-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 524262,
+      "pattern_sha256": "8f12d3b22f30a4f66ff82d1a63276c6f8faea99f0a407dc3d77a56d4bc9b3676",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "335724da063169f0d5178d1b75babb6b87c7a47867e423be125ae53084687917"
+    }
+  ],
+  "primary_evidence": "Fresh checked finite models and RUP refutations, not original certificate replay.",
+  "r1_cases": [
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "03702b84f5505433-L13.cadical195.b100000.result.json",
+          "seconds": 0.16239263396710157,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "03702b84f5505433-L13",
+      "certificate_result": "03702b84f5505433-L13.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 36860,
+      "pattern_sha256": "8b30f1e8e9e5bb77623a36ddac90f37fa0a1dbbeb5dac95298ed0decfc93b5a8",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "645000af5a34e88ac07f3df44b55dd8a8ca0875b1402048dad337ca1f24ec7c2"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "03702b84f5505433-L14.glucose4.result.json",
+          "seconds": 2.6939211430726573,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "03702b84f5505433-L14",
+      "certificate_result": "03702b84f5505433-L14.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 73724,
+      "pattern_sha256": "79f187fe2946b47490894bc35af27f7d5dca43a4d836195654c2cd652893b31f",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "5307b3f31cd1b1e4772c9a4c0b0676eb9575f89b9ae48cc93c1a8bf0342078e0"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "03702b84f5505433-L15.cadical195.b100000.result.json",
+          "seconds": 0.8214701729593799,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "03702b84f5505433-L15",
+      "certificate_result": "03702b84f5505433-L15.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 147452,
+      "pattern_sha256": "503d937ce61b8b1924cfa118c64c5d4da3d60685fd8c9048fcdb798a9a95495b",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "fc846c0095c3027823cf70b219d03d8a98caf044cc75ea37f7ec167d8d98f038"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 200000,
+          "result": "03702b84f5505433-L16.cadical195.b200000.result.json",
+          "seconds": 104.82105945097283,
+          "solver": "cadical195",
+          "verdict": "dead"
+        },
+        {
+          "certified": false,
+          "conflict_budget": 50000,
+          "result": "03702b84f5505433-L16.glucose4.result.json",
+          "seconds": 38.8046961100772,
+          "solver": "glucose4",
+          "verdict": "undecided"
+        }
+      ],
+      "case": "03702b84f5505433-L16",
+      "certificate_result": "03702b84f5505433-L16.cadical195.b200000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 294908,
+      "pattern_sha256": "9f2707131bf6126dd9973d4f4127a24af40681c928dcd62dbca7b0fdaf513172",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "c6fdd1113f169f155bd331942e2d31d9ab711e7fde0943fdcc7576b4b76972c9"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "06473cf24911c977-L13.glucose4.result.json",
+          "seconds": 0.24868293304461986,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "06473cf24911c977-L13",
+      "certificate_result": "06473cf24911c977-L13.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 40956,
+      "pattern_sha256": "15f53faaf436959f55e34c4167902a07c0e38c4cbd57b480c327d3331cdf7f21",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "86a8b904211ead5a1fb4e3bbc551d8fe70089949bd80fe55c45b258006c9a0c1"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "06473cf24911c977-L14.cadical195.b100000.result.json",
+          "seconds": 0.35748599702492356,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "06473cf24911c977-L14",
+      "certificate_result": "06473cf24911c977-L14.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 81916,
+      "pattern_sha256": "e9864a9297f50c9cc0b1894b2b2f844ccdac5e77033f6bd33a5b1e33285d3659",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "b59f31f333f124696351b34a30f9b8eb44edf40571a9fa7c905150ff6eab1af7"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "06473cf24911c977-L15.glucose4.result.json",
+          "seconds": 1.0496073489775881,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "06473cf24911c977-L15",
+      "certificate_result": "06473cf24911c977-L15.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 163836,
+      "pattern_sha256": "26ab1c2aa2df65da7eac60affcf1c57ff489837d0dd38279b7690b53c91eaf9a",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "90649ed5eec3729c1f1cc3bd15eb0f98470237e796deddbf18d67f29d5f42e53"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "06473cf24911c977-L16.cadical195.b100000.result.json",
+          "seconds": 1.5522931850282475,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "06473cf24911c977-L16",
+      "certificate_result": "06473cf24911c977-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 327676,
+      "pattern_sha256": "ea267379c95535d7a9385f7380fc74009e0f47eaff6a3c7e7e1b7acebe5d5a96",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "5bba58dfb78d4ca97b4ffce72baef1b55a22f5473beba3f33d514c3a240ef836"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 300000,
+          "result": "333f0477eb69a449-L13.cadical195.b300000.result.json",
+          "seconds": 3.8967652729479596,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "333f0477eb69a449-L13",
+      "certificate_result": "333f0477eb69a449-L13.cadical195.b300000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 32756,
+      "pattern_sha256": "05f1e17bafebc74112b083d11061843c2e5b97bd0c130ae6eafa66f5d0840ce2",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "783b0029e93faf553a59113b4f5e2e399eec98d731dff37dfb22842176da1f61"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "333f0477eb69a449-L14.glucose4.result.json",
+          "seconds": 0.4386372249573469,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "333f0477eb69a449-L14",
+      "certificate_result": "333f0477eb69a449-L14.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 65526,
+      "pattern_sha256": "a69fdca0f116df9a68f3fcbf2a95cfdcc146ee8e2e9390957edd766db67df3f1",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "ad49a33d17e350285f77d15591e97ae24d749d5be2fefbe5159d16fcbcacbe63"
+    },
+    {
+      "attempts": [],
+      "case": "333f0477eb69a449-L15",
+      "certificate_result": null,
+      "fresh_certified": false,
+      "fresh_verdict": "not solved",
+      "knots": 131060,
+      "pattern_sha256": "a60d968bf14434878e717dba2bedffcb5b81c40c74e7d6bf30c2dd7c6a5bfe92",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "undecided",
+      "unconditional_cnf_sha256": "3f01ed0cbc7ba6487f7c1c529b1a9538cd43a758d413531a1bc750c1e9b5be08"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 200000,
+          "result": "333f0477eb69a449-L16.cadical195.b200000.result.json",
+          "seconds": 7.25400343502406,
+          "solver": "cadical195",
+          "verdict": "dead"
+        },
+        {
+          "certified": false,
+          "conflict_budget": 50000,
+          "result": "333f0477eb69a449-L16.glucose4.result.json",
+          "seconds": 2.216883754939772,
+          "solver": "glucose4",
+          "verdict": "undecided"
+        }
+      ],
+      "case": "333f0477eb69a449-L16",
+      "certificate_result": "333f0477eb69a449-L16.cadical195.b200000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 262134,
+      "pattern_sha256": "9a95b68253b612a1642ff22752498719228766f36532ace589007bd58d8b0c2b",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "5ae220d88bd9dc306c1b644c93a9eedde84fba592a550bd38510de55332b1490"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "40f24dbdb074a3f2-L13.glucose4.result.json",
+          "seconds": 0.5353784220060334,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "40f24dbdb074a3f2-L13",
+      "certificate_result": "40f24dbdb074a3f2-L13.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 49128,
+      "pattern_sha256": "d64984ee54471fa77d6c6a834d29cebbece610acffc5427fd2bc4c06d67600b7",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "5f5d3df2629c83ebe45cc998f9ba07a9c018dd37f83e44858127981502ad72d4"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "40f24dbdb074a3f2-L14.cadical195.b100000.result.json",
+          "seconds": 0.45093663199804723,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "40f24dbdb074a3f2-L14",
+      "certificate_result": "40f24dbdb074a3f2-L14.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 98280,
+      "pattern_sha256": "2438a71e06ff29ec8a19d310124024b7d5fb02468243d6bfdfc83a862098ade7",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "b99b53c663a16c03e6323396fec87c3e8d3c38ee8e4aee9bc32b1eb1f8a959dc"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "40f24dbdb074a3f2-L15.glucose4.result.json",
+          "seconds": 4.37530490802601,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "40f24dbdb074a3f2-L15",
+      "certificate_result": "40f24dbdb074a3f2-L15.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 196584,
+      "pattern_sha256": "0c5ccb830a2dfcabfa27361c6f176b451d84e85970734d207e1170d127215a8b",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "e48b62fd75cf8c9bef4c76e918c04624c75658de9a512a63458a1774af098ea6"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "40f24dbdb074a3f2-L16.cadical195.b100000.result.json",
+          "seconds": 1.9377857319777831,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "40f24dbdb074a3f2-L16",
+      "certificate_result": "40f24dbdb074a3f2-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 393192,
+      "pattern_sha256": "3b69264c2af3d61c13b1ee114190c8cd9b12d00003fd7e8ef89dfc0ff8d79740",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "c5873d58cc9ba9549ca7770ed39326312ff522025f23e7fec38440e337ee1776"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "91c75673c09d9046-L13.cadical195.b100000.result.json",
+          "seconds": 0.045099992072209716,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "91c75673c09d9046-L13",
+      "certificate_result": "91c75673c09d9046-L13.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 24546,
+      "pattern_sha256": "b6b2a43896aa16f6a87557adf03fecfb39a730148dc46015e36a1bf7e1cf782a",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "75bbd788d326fd8c3a84c5543d229f2772f6e2c4b79240ae6bea8eaa078b2462"
+    },
+    {
+      "attempts": [
+        {
+          "certified": false,
+          "conflict_budget": 1000000,
+          "result": "91c75673c09d9046-L14.cadical195.b1000000.result.json",
+          "seconds": 76.9768235059455,
+          "solver": "cadical195",
+          "verdict": "undecided"
+        },
+        {
+          "certified": false,
+          "conflict_budget": 200000,
+          "result": "91c75673c09d9046-L14.cadical195.b200000.result.json",
+          "seconds": 7.156066040042788,
+          "solver": "cadical195",
+          "verdict": "undecided"
+        },
+        {
+          "certified": false,
+          "conflict_budget": 3000000,
+          "result": "91c75673c09d9046-L14.cadical212.b3000000.result.json",
+          "seconds": null,
+          "solver": "cadical212",
+          "verdict": "undecided"
+        },
+        {
+          "certified": false,
+          "conflict_budget": 50000,
+          "result": "91c75673c09d9046-L14.glucose4.result.json",
+          "seconds": 1.016748253023252,
+          "solver": "glucose4",
+          "verdict": "undecided"
+        }
+      ],
+      "case": "91c75673c09d9046-L14",
+      "certificate_result": "91c75673c09d9046-L14.glucose4.result.json",
+      "fresh_certified": false,
+      "fresh_verdict": "undecided",
+      "knots": 49120,
+      "pattern_sha256": "389bf7251afffbf261f95f264d53984bf0ec2272f158d0ea88765ab20fc2b1d3",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "c25ed802df14e0560831b0abd37fa5808d5c87255d476af8fb0d4e4fa01d915f"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "91c75673c09d9046-L15.cadical195.b100000.result.json",
+          "seconds": 0.20553074905183166,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "91c75673c09d9046-L15",
+      "certificate_result": "91c75673c09d9046-L15.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 98270,
+      "pattern_sha256": "298e8e1707ecb32f546d3fbd51cf42329ceccad81ce22d7f92eeb9b64d95b7aa",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "3c8fd7389cc9935b86a4db3baf031d2e1a3b0dd4ac7bc5870b31a136618ee43b"
+    },
+    {
+      "attempts": [],
+      "case": "91c75673c09d9046-L16",
+      "certificate_result": null,
+      "fresh_certified": false,
+      "fresh_verdict": "not solved",
+      "knots": 196572,
+      "pattern_sha256": "dff1572e1fb5ce0cb1475a9dcc47729a2434407350d99575edffe08a3301504c",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "undecided",
+      "unconditional_cnf_sha256": "45bc896ffdb6761d0568a553bc451cd0a1dcdd9962eecf7820291c07b04d07de"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "cf32542e22ac0223-L13.glucose4.result.json",
+          "seconds": 0.22573213593568653,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "cf32542e22ac0223-L13",
+      "certificate_result": "cf32542e22ac0223-L13.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 38906,
+      "pattern_sha256": "5380a89b6450d7d3cbc809fdf60269f37070ca873a26164889a400bf32bfd23b",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "cfc0e3fd60eaae2085e52b9caf044c3c7f417b3a4a9a593b9d1128e339d7de44"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "cf32542e22ac0223-L14.cadical195.b100000.result.json",
+          "seconds": 0.3161735370522365,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "cf32542e22ac0223-L14",
+      "certificate_result": "cf32542e22ac0223-L14.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 77818,
+      "pattern_sha256": "34e1b8fec6df3afe14bd47fd606c0ea28388fcc0ef560d2b968525694ea6fd8d",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "3a65e1905e2fab4f2ca1c54cf903e902167ea6f16e7be9ed9293a8bab4bf14e1"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "cf32542e22ac0223-L15.glucose4.result.json",
+          "seconds": 0.9937983169220388,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "cf32542e22ac0223-L15",
+      "certificate_result": "cf32542e22ac0223-L15.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 155642,
+      "pattern_sha256": "020b690d4044f8bfbdb23fd13507e4baee15bece7b2e3bcad98eeab904165460",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "eca6153d4e67e424ce67416c27773e0f4a2d1dab687904d881e379ad0aef33ff"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "cf32542e22ac0223-L16.cadical195.b100000.result.json",
+          "seconds": 1.4439633790170774,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "cf32542e22ac0223-L16",
+      "certificate_result": "cf32542e22ac0223-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 311290,
+      "pattern_sha256": "55ab2d2fc9c8ceb8f106cc1b9dd0eaf51031a04c08fded10fa897db54c5bf217",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "2f60114fe1d6dfb55c0dcf67071d970ca566dab0b5854fa6db8e69ec4fcc8634"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "f4fd01e9afa56314-L13.glucose4.result.json",
+          "seconds": 0.31907437404152006,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "f4fd01e9afa56314-L13",
+      "certificate_result": "f4fd01e9afa56314-L13.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 49138,
+      "pattern_sha256": "aaca7a7882c318ddf5ea80af82d2c9b7b941271d9377bf9d7e3fd89ff11f57e9",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "8e31a48fce60e6080a1bccd7ba7162991676bf7616d77b923a7ad3b3d73976b3"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "f4fd01e9afa56314-L14.cadical195.b100000.result.json",
+          "seconds": 0.21201610402204096,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "f4fd01e9afa56314-L14",
+      "certificate_result": "f4fd01e9afa56314-L14.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 98290,
+      "pattern_sha256": "bcfc4ea070c1a1b4794a9d158bf89092987e602f903bfadcb80f08a8bdfe557b",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "6a872c2a10e7a01109fe4b65d7360a7499be8177941e397defb82d8c701d093c"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 50000,
+          "result": "f4fd01e9afa56314-L15.glucose4.result.json",
+          "seconds": 1.365826881956309,
+          "solver": "glucose4",
+          "verdict": "dead"
+        }
+      ],
+      "case": "f4fd01e9afa56314-L15",
+      "certificate_result": "f4fd01e9afa56314-L15.glucose4.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "dead",
+      "knots": 196594,
+      "pattern_sha256": "6c0b953084a54cbe71ca28cf9383fc342ecd3ab0e648f723bd9929787a0f9680",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "dead",
+      "unconditional_cnf_sha256": "4fd42aba1691a114472fa1593e9c5ae538894b3fbc07324b1cd08a1dfe691d7d"
+    },
+    {
+      "attempts": [
+        {
+          "certified": true,
+          "conflict_budget": 100000,
+          "result": "f4fd01e9afa56314-L16.cadical195.b100000.result.json",
+          "seconds": 0.9640626290347427,
+          "solver": "cadical195",
+          "verdict": "alive"
+        }
+      ],
+      "case": "f4fd01e9afa56314-L16",
+      "certificate_result": "f4fd01e9afa56314-L16.cadical195.b100000.result.json",
+      "fresh_certified": true,
+      "fresh_verdict": "alive",
+      "knots": 393202,
+      "pattern_sha256": "2f10a1d3c709d9d1d0c5ca51fb2fd95d0fd1ecf97be68949048f2c750fbca6be",
+      "registered_count_matches": true,
+      "registered_pattern_hash_matches": true,
+      "registered_verdict": "alive",
+      "unconditional_cnf_sha256": "362a4f074b735ecbfd1dbdac00dff0400e737f997c3522e5914f8be6ac4699d1"
+    }
+  ],
+  "r1_coverage": {
+    "all_reconstructed_counts_and_hashes_match": true,
+    "counts": {
+      "certified alive": 13,
+      "certified dead": 12,
+      "not certified": 3
+    },
+    "fresh_versus_registered_decided_disagreements": [],
+    "planned_cases": 28,
+    "reconstructed_cases": 28
+  },
+  "retention": "Checked models/refutations and compressed CNFs are retained. Only own regenerable uncompressed CNF/LRAT scratch was removed after compression. The checker binary is retained for parent replay.",
+  "runner_provenance": "The adapter evolved during the audit (bounded passes, explicit C-stream flush, timeout handling and temp-path correction). Final adapter hashes inventory the retained source only; they are not asserted as historical per-case runner hashes. Per-case generator and control checker hashes bind the unchanged independent generator/checker.",
+  "runtime": {
+    "checker_compile": "g++ -O3 -std=c++17 check_rup_fast.cpp -lz -o check_rup_fast",
+    "invocation_prefix": "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B",
+    "ownership": "Only this certificates directory was intentionally modified; no git state change, network call, or publication.",
+    "pysat": "1.9.dev15",
+    "python": "3.13.3",
+    "resource_limit": "3 GiB address space per process; one compute process at a time in this lane",
+    "temporary_stream_disclosure": "Initial PySAT controls/solves did not set tempfile.tempdir or TMPDIR, so closed unlinked temporary proof streams used the default /tmp policy. Initial compiler scratch policy was likewise not overridden; compiler intermediates may have used /tmp. Before further solver creation, tempfile.tempdir and TMPDIR were set to this certificates directory. All retained artifacts are in this directory."
+  },
+  "scope_id": "LEVEL-RETURN-20261113-001",
+  "source_reading": "No Python or C from either LEVEL-RETURN producer family was read or imported. LEVEL-RETURN summarize.py was not read.",
+  "unresolved_registered_dead_cases": [
+    "91c75673c09d9046-L14"
+  ]
+}

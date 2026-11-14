@@ -1,0 +1,126 @@
+{
+  "verdict": "Confirmed with fixes",
+  "scope_id": "LEVEL-RETURN-20261113-001",
+  "R1": {
+    "reconstructed_cells": 28,
+    "fresh_alive_certified": 13,
+    "fresh_dead_certified": 12,
+    "unconfirmed_registered_dead": [
+      "91c75673c09d9046-L14"
+    ],
+    "original_undecided": [
+      "333f0477eb69a449-L15",
+      "91c75673c09d9046-L16"
+    ],
+    "original_certificate_replay_possible": false
+  },
+  "additional_sample": {
+    "cells": 6,
+    "fresh_dead_certified": 4,
+    "fresh_alive_certified": 1,
+    "budget_undecided": [
+      "d3ce4bc693ff90ef-L16"
+    ]
+  },
+  "R2": {
+    "method": "Fresh finite product with prefix invariant and exhaustive reachability",
+    "direct_checked_levels": [
+      1,
+      22
+    ],
+    "two_parity_odd_minimum": 3,
+    "three_first_xor_last_even_minimum": 2,
+    "all_level_checks_pass": true
+  },
+  "R4": {
+    "method": "Empty symmetric difference with exact bad-input language, plus algebraic image formulas and distinctness proof",
+    "all_even_minimum": 4,
+    "violating_placement": [
+      0,
+      8,
+      10
+    ],
+    "violating_input_language": "(00)+1(0|1)",
+    "exactly_two_distinct_knots": true,
+    "reduced_pattern_has_explicit_parity_model_at_all_even_levels_from_4": true
+  },
+  "R5": {
+    "fresh_certified_rigid_even_levels": [
+      6,
+      8,
+      10,
+      12
+    ],
+    "fresh_nonrigid_control_level": 4,
+    "implication": "Reduced rigidity plus known parity state plus removed parity-violating knots implies full death",
+    "uniform_rigidity_status": "open",
+    "uniform_even_death_status": "open"
+  },
+  "wording": {
+    "small_level_counterexamples": [
+      {
+        "n": 3,
+        "knots": 14,
+        "model": "01101000",
+        "not_parity_or_complement": true,
+        "checked_all_knots": true,
+        "parity_is_model": true
+      },
+      {
+        "n": 4,
+        "knots": 36,
+        "model": "0101100110010110",
+        "not_parity_or_complement": true,
+        "checked_all_knots": true,
+        "parity_is_model": false
+      },
+      {
+        "n": 5,
+        "knots": 82,
+        "model": "01100101100101101000011001011001",
+        "not_parity_or_complement": true,
+        "checked_all_knots": true,
+        "parity_is_model": true
+      }
+    ],
+    "pattern3_level2_counterexample": {
+      "n": 2,
+      "knots": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "models": [
+        "0011",
+        "0110"
+      ],
+      "not_complements": true,
+      "checked_all_knots": true
+    },
+    "search_nonexistence_claim": "Narrow to particular tried feature automata",
+    "original_proof_archive_gap": "Block for original-certificate replay only"
+  },
+  "provenance": {
+    "study_forbidden_source_used": false,
+    "network_used": false,
+    "git_mutations": false,
+    "execution_deviations": "See execution_notes.json; initial unlinked temporary /tmp streams and possible compiler scratch."
+  }
+}

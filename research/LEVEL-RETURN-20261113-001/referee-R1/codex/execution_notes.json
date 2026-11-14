@@ -1,0 +1,23 @@
+{
+  "write_scope": "All authored files and retained evidence are inside the referee root.",
+  "execution_deviations": [
+    {
+      "kind": "temporary proof streams",
+      "observed": "Initial PySAT TemporaryFile proof streams used default /tmp; they were unlinked and closed with solver instances.",
+      "correction": "tempfile.tempdir explicitly points inside referee output before future proof-enabled solver creation."
+    },
+    {
+      "kind": "compiler scratch",
+      "observed": "Initial independent checker compilation did not override TMPDIR and may have used /tmp scratch.",
+      "correction": "No compiler scratch was intentionally retained outside the output root; no further compilation is needed."
+    }
+  ],
+  "proof_capture_note": "PySAT Cadical195 get_proof can omit final buffered C trace bytes; flushing this process C streams before get_proof recovered a full independently checked control proof. Default rigidity replay uses Glucose4.",
+  "source_restrictions": "Forbidden study source was not read or imported. No network, Git mutation, publishing or unrelated-file edit.",
+  "parent_replayed_checks": [
+    "finite product reachability and exact-language comparison",
+    "six scalar product controls and 38 formula cases",
+    "four fresh rigidity DRUP refutations",
+    "CaDiCaL trace-capture RUP control"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "agrees_with_registered_decided": true,
+  "case": "91c75673c09d9046-L14",
+  "certificate_cnf_sha256": "974b689ac66150ba6fd4043e0698136c74805b612084ab95160f07fd86ad120f",
+  "certification_rule": "A valid independently checked RUP refutation suffices; no native solver exit-status assertion is used.",
+  "certified": false,
+  "cnf_path": "91c75673c09d9046-L14.cadical212.b3000000.cnf.gz",
+  "complement_invariance_checked": true,
+  "complement_symmetry_unit": 1,
+  "conflict_budget": 3000000,
+  "conversion": {
+    "additions": 2479205,
+    "deletions_discarded": 253676,
+    "drup_uncompressed_sha256": "a611dd8f8373d850810424c0cdb8a2ded6d8f17a3ba74024c1fd9b3aee62dee0",
+    "empty_additions": 1,
+    "hints_consumed_by_checker": false,
+    "lrat_lines": 2732881,
+    "lrat_sha256": "52eac8faf16878b1006f18de18de648b7e50f7810254eb3fd295c6f3feb5cedd"
+  },
+  "disclosure": "Native stdout/exit status was held in memory and lost when the first 180s checker timeout raised; preserved proof bytes and conversion are audited here. No UNSAT verdict is inferred from solver output.",
+  "earlier_proof_checks": [
+    {
+      "reason": "checker timeout",
+      "timeout_seconds": 180,
+      "valid": false
+    }
+  ],
+  "evidence_kind": "fresh recertification",
+  "generator_source_sha256": "d76532494edecad09358475b42229c570bfd978d9d81ad8f0fadd92a040f9ca1",
+  "key_id": "91c75673c09d90467aefb05915109cabd5a02fc0103944cb525be8f56ca212c2",
+  "knots": 49120,
+  "long_replay_seconds": 600.1224887489807,
+  "lrat_path": "91c75673c09d9046-L14.cadical212.b3000000.lrat.gz",
+  "n": 14,
+  "original_cnf_available": false,
+  "original_model_available": false,
+  "original_refutation_available": false,
+  "pattern_sha256": "389bf7251afffbf261f95f264d53984bf0ec2272f158d0ea88765ab20fc2b1d3",
+  "proof_check": {
+    "reason": "checker timeout",
+    "seconds": 600.1224887489807,
+    "timeout_seconds": 600,
+    "valid": false
+  },
+  "proof_path": "91c75673c09d9046-L14.cadical212.b3000000.drup.gz",
+  "registered": {
+    "case": "91c75673c09d9046-L14",
+    "census_knots": null,
+    "census_profile": "111110101010",
+    "certificate": "LRAT checked: VERIFIED 2479205 steps (1107723237 bytes)",
+    "key_id": "91c75673c09d90467aefb05915109cabd5a02fc0103944cb525be8f56ca212c2",
+    "kind": "level",
+    "knots": 49120,
+    "n": 14,
+    "parity_violation_count": 2,
+    "parity_violations": [
+      [
+        "00000000000010",
+        "00111111111101",
+        "01111111111100"
+      ],
+      [
+        "00000000000011",
+        "00111111111100",
+        "01111111111101"
+      ]
+    ],
+    "pattern_sha256": "389bf7251afffbf261f95f264d53984bf0ec2272f158d0ea88765ab20fc2b1d3",
+    "second_generator_agrees": true,
+    "seconds": 497.4714584350586,
+    "verdict": "dead"
+  },
+  "registered_count_matches": true,
+  "registered_pattern_hash_matches": true,
+  "seconds": null,
+  "solver": "cadical212",
+  "solver_binary_sha256": "5b6adcce8d4f8e4ca75706a12c6195821dac2309c7d9bc98483e768bdfbd5a4d",
+  "solver_exit_code": null,
+  "solver_seconds_limit": 300,
+  "solver_version": "2.1.2",
+  "unconditional_cnf_sha256": "c25ed802df14e0560831b0abd37fa5808d5c87255d476af8fb0d4e4fa01d915f",
+  "verdict": "undecided"
+}

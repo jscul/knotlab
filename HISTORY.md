@@ -13,6 +13,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   states covered only the automata tried ([decision note](research/LEVEL-RETURN-20261113-001/level_return.md)).
 - Unchanged: every verdict where recertified, and the proofs.
 
+## 14 November 2026: the undecided half, confirmed by its referee with narrowings
+
+- The study of the undecided half (`CARRY-BOUND-20261114-001`) was confirmed: the window method is exact, all 632 growth proofs
+  reproduce, and the 58 / 40 / 2 split of first-ray growth stands. Narrowed: bounds hold from a threshold per family, not at every
+  depth; "at most four" describes the certificates, which bound the bond from above; "no bond of at most six found" is not "unbounded";
+  wrapper growers take the shifted bound; 72 windows are incomplete; the population includes 66 capped families; path certificates
+  are counted separately (5,072 / 632 / 85 strictly). One proof's written reason was repaired, and the result stands
+  ([decision note](research/CARRY-BOUND-20261114-001/carry_bound.md)).
+
 ## 14 November 2026: a carried value shortens the bond only when it is read
 
 - The tie study (`TIE-CYCLE-20261114-001`) read its result as "where a pattern remembers by carrying, the carried value gives short

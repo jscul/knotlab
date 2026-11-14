@@ -92,8 +92,10 @@ reported as its own cell.
 {p, x, z} is non-shattered, and the bond it contains holds both p and x unless z is tied opposite to p or to x while {p, x} is
 free. Both are read exactly in the window.
 
-**Lemma G (growth on the live quotient).** If a non-shattered set contains a distinction that lies in no constraint, it stays
-non-shattered without it, so no bond contains such a distinction. A port position is **dead** when every occurrence of it, in every
+**Lemma G (growth on the live quotient).** *Repaired after the referee (not a block): a value at unread positions may still be
+constrained above, for instance by a wrapper's knot, so the argument keeps the upper constraints, deletes only the unread occurrences
+from each stretch's end ports, and then factors; see the decision note.* If a non-shattered set contains a distinction that lies in
+no constraint, it stays non-shattered without it, so no bond contains such a distinction. A port position is **dead** when every occurrence of it, in every
 definition, is as an argument at a dead position (a least fixed point across all definitions), and a distinction is free when every
 position it occupies is dead. Delete the dead coordinates from every R_i. If every r-product of the reduced relations is
 rectangular, the gap argument applies, so L(s) ≥ 2 + ⌊s/r⌋, shifted by one level for a wrapper main.

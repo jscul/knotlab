@@ -4,7 +4,9 @@ Epic `CARRY-BOUND-20261114-001` (`CENSUS-FORGET-20261114-001#2`, backlog B174, w
 2026-11-14, at the coordinator's go-ahead. Pre-registered in 99b396c40 (objects gate passed; the advisor consulted twice), with a
 clarification after TIE-CYCLE's referee (cc2ece62c) and an addendum answering Codex's eight implementation questions before the
 full run (c75547967). Code by Codex in two hand-offs, run by the thread on the shared runner. The canonical K1–K3 test is unchanged.
-**Referee pending. Stress test pending:** the direct search's finite readings (step 3) are still running and will be folded in.
+Refereed by the referee thread with Codex (CARRY-BOUND-R1, `referee-R1/report.md`, commit 9eb44a214): **confirmed with fixes, no
+Block**. Lemma W, the cap rule, the scope and the 58.0 / 39.6 / 2.4 split reproduce, and all 632 growth certificates reproduce. Eight
+Narrowing and one proof repair are folded in below. **Stress test pending:** the direct search's finite readings (step 3) are still running and will be folded in.
 
 ## Words
 
@@ -13,13 +15,16 @@ full run (c75547967). Code by Codex in two hand-offs, run by the thread on the s
   every large s. The path to the target may change with the depth.
 - **Window**: main's ports together with the block of the target copy. Lemma W (proved in the pre-registration) makes its
   projection exact, so every bond found there is a bond of the whole pattern, and its least size U(s) bounds L(s) at every depth.
+  U(s) is searched up to size 6; "> 6" is censored (no bond of at most six found), not unbounded (*narrowed after the referee*:
+  bonds of size 7 exist in sampled "> 6" states, for example 7aac0c3bf98b).
 - **Carried port**: a port of main handed down unchanged to a copy. **Read** (live) when some knot uses the position that holds it,
   directly or further down; **unread** (dead) otherwise. A distinction held only at unread positions is constrained by nothing below.
 
 ## The question
 
-`CENSUS-FORGET-20261114-001` left undecided the families whose first-ray bond provably grows but which do not forget: some long
-product of their calls is never a product relation, so the gap argument says nothing. Per depth, with members anywhere and any
+`CENSUS-FORGET-20261114-001` left undecided the non-forgetting or capped first-ray growers (*narrowed after the referee*: the 66
+inherited caps do not establish a non-rectangular product). For the rest, some long product of their calls is never a product
+relation, so the gap argument says nothing. Per depth, with members anywhere and any
 covered target, is their bond bounded, or does it grow?
 
 ## The question in standard terms
@@ -33,18 +38,19 @@ unread coordinates.
 
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
-| 1 | **The method is exact where checked.** All 5,964 families finished (75 minutes, peak 1.8 GB, no failure). The per-call relations equal the census's in every family, and every family is living. A pendant knot at a carried position always gives a bond of at most 3 (22 of 22). No family is both bounded and growing. **Negative control:** on 300 families certified to forget, the window never undercuts the proved lower bound 2 + ⌊s/r⌋, and the trimmed gap certifies all 300. **Brute force:** separate code unfolded 50 identity-cycle families explicitly and matched the window's projection on all 2,686 words of length up to 3; 200 recorded bonds were re-verified there. The four synthetic controls pass. | computed | G passed |
-| 2 | **Where the calls carry a value they read, the bond is bounded.** In the identity-cycle stratum the window bounds L at every large depth in 4,967 of 5,687 in-scope families (5,029 of 5,751 draws, **87.4%**; Wilson 86.6% to 88.3%; 88.8% leaving out the 88 undecided). The bound never exceeds 4: at most 2 in 60 families, 3 in 4,901 and 4 in 6. In 86.0% of the bounded weight the bond is the carried port, an own distinction of the target copy and a third member, all in one knot (the advisor's widened reading of Theorem B). The strict Theorem B (two pendant members) explains only 0.4%. | proved per family (finite certificate) | P1 held (≥ 80%) |
-| 3 | **An order bounds the bond as well as carrying does.** All 93 in-scope families of the order label are bounded at every large depth: 91 by the window, 2 more by EVERY-RAY's path DP (97.8% by the window alone; Wilson 92.5% to 99.4%). That is 10 points *above* the identity stratum, not 20 below. Their bonds have 3 members (55) or 4 (36). They have no identity cycle, so no port of main is carried to large depths. A one-way order keeps the top readable at every depth without carrying a value. | proved per family | **P2 failed** (gap −10 points, not ≥ +20) |
-| 4 | **What stays unbounded carries only values no knot reads.** Of the in-scope identity families the window leaves unbounded at some residue, 89.8% by weight have no carried position in a knot with an own distinction on any such residue (100% of the decided ones). No family is left unbounded because of an opposite tie. | computed | P3 held (≥ 80%) |
+| 1 | **The method is exact where checked.** All 5,964 families finished (75 minutes, peak 1.8 GB, no failure); 72 windows are incomplete (capped). The per-call relations equal the census's in every family, and every family is living. A pendant knot at a carried position always gives a bond of at most 3 (22 of 22). No family is both bounded and growing. **Negative control:** on 300 families certified to forget, the window never undercuts the proved lower bound 2 + ⌊s/r⌋, and the trimmed gap certifies all 300. **Brute force:** separate code unfolded 50 identity-cycle families explicitly and matched the window's projection on all 2,686 words of length up to 3; 200 recorded bonds were re-verified there. The four synthetic controls pass. | computed | G passed |
+| 2 | **Where the calls carry a value they read, the bond is bounded.** In the identity-cycle stratum the window bounds L at every large depth in 4,967 of 5,687 in-scope families (5,029 of 5,751 draws, **87.4%**; Wilson 86.6% to 88.3%; 88.8% leaving out the 88 undecided). The window certificate never exceeds 4: at most 2 in 60 families, 3 in 4,901 and 4 in 6 (*narrowed after the referee*: these are certificate sizes, upper bounds on L; two path-DP rescues give bounds of 5, which is not evidence that L exceeds 4). In 86.0% of the bounded weight the bond is the carried port, an own distinction of the target copy and a third member, all in one knot (the advisor's widened reading of Theorem B). The strict Theorem B (two pendant members) explains only 0.4%. | proved per family (finite certificate) | P1 held (≥ 80%) |
+| 3 | **An order bounds the bond as well as carrying does.** All 93 in-scope families of the order label are bounded at every large depth: 91 by the window, 2 more by EVERY-RAY's path DP (97.8% by the window alone; Wilson 92.5% to 99.4%). That is 10 points *above* the identity stratum, not 20 below. Their window certificates have 3 members (55) or 4 (36); these are certificate sizes, not exact values of L. They have no identity cycle, so no port of main is carried to large depths. A one-way order keeps the top readable at every depth without carrying a value. | proved per family | **P2 failed** (gap −10 points, not ≥ +20) |
+| 4 | **Where the window finds no bond, the carried values meet no own distinction.** Of the in-scope identity families in which, at some residue, the window finds no bond of at most six (*narrowed after the referee* from "leaves unbounded": "> 6" is censored), 89.8% by weight have no carried position in a knot with an own distinction on any such residue (100% of the decided ones). No residue lacks a window bond because of an opposite tie. | computed | P3 held (≥ 80%) |
 | 5 | **Ties act like identity.** All 5 tie families are bounded: 3 through a tie bond, 2 otherwise. | proved per family | P4 held |
-| 6 | **Unread carrying hides growth.** In 632 identity-cycle families (634 draws, **10.8%** of the in-scope weight) every value carried down sits at positions no knot ever reads. Deleting those coordinates leaves relations whose r-products are all rectangular (r = 1 in 318, 2 in 163, 3 in 55, 4 in 96). By the gap argument on that quotient (Lemma G), the bond **grows** at least like 2 + ⌊s/r⌋: they forget everything they can read. Their identity cycles made them non-forgetting in name only. | proved per family | **P5 failed** (10.8% > 5%) |
-| 7 | **Little is left.** Of the 5,789 in-scope families, 5,074 are proved bounded (5,067 by the window, 7 more by the path DP on the sample of 65), 632 are proved to grow, and **83 (1.4%) are undecided**: 70 capped windows, 11 with no window bound and no growth certificate, and 2 with complete window bounds that the frozen rule counts as undecided because an inherited census cap blocks the growth test. Out of scope, 129 of 175 are bounded (a bound to covered targets bounds L) and 46 undecided. The direct search's finite readings on the 58 sampled families still open after the path DP (28 undecided, 30 growers as a consistency check) are pending. | proved per family; computed | reported |
+| 6 | **Unread carrying hides growth.** In 632 identity-cycle families (634 draws, **10.8%** of the in-scope weight) every value carried down sits at positions no knot ever reads. Deleting those coordinates leaves relations whose r-products are all rectangular (r = 1 in 318, 2 in 163, 3 in 55, 4 in 96). By the gap argument on that quotient (Lemma G), the bond **grows** at least like 2 + ⌊s/r⌋, and like 2 + ⌊(d − 1)/r⌋ at absolute depth d in the 101 wrapper families (*narrowed after the referee*): they forget everything they can read. *Proof repaired after the referee (not a block):* a value at unread positions can still be constrained above, for instance by a wrapper's knot, so "a distinction in no constraint" was the wrong reason. The argument keeps the upper constraints, deletes only the unread occurrences from the stretch's end ports, and then factors. The referee found exact minima in 8 of the smallest growers at depths 1 to 6 (3, 4, 4, 5, 5, 6 with main = S; 3, 3, 4, 4, 5, 5 for wrappers), above the bounds, and no violation in 119 exact cells of 14 growers. Their identity cycles made them non-forgetting in name only. | proved per family | **P5 failed** (10.8% > 5%) |
+| 7 | **Little is left.** Of the 5,789 in-scope families, 5,074 are proved bounded (5,067 by the window, 7 more by the path DP on the sample of 65), 632 are proved to grow, and **83 (1.4%) are undecided**. *Narrowed after the referee:* two of the 7 path rescues also carry inherited caps, so path certificates are admitted separately; the strict reading is 5,072 / 632 / 85 and the full one 5,076 / 632 / 81, with the headline unchanged. The 83 are 70 capped windows, 11 with no window bound and no growth certificate, and 2 with complete window bounds that the frozen rule counts as undecided because an inherited census cap blocks the growth test. Out of scope, 129 of 175 are bounded (a bound to covered targets bounds L) and 46 undecided. The direct search's finite readings on the 58 sampled families still open after the path DP (28 undecided, 30 growers as a consistency check) are pending. | proved per family; computed | reported |
 
 ## Answer
 
 Almost all of the undecided half is decided, and mostly the other way. In nine families out of ten, the bond from the top reaches
-every depth with at most four members, wherever they sit. A value carried down from the top, or a one-way order, keeps the top
+every sufficiently large depth with a window certificate of at most four members, wherever they sit (*narrowed after the
+referee* from "every depth"). A value carried down from the top, or a one-way order, keeps the top
 readable at every depth, and a knot at the target copy reads it. The first ray's growth in these families came from following one
 fixed way down. In the remaining tenth, the values carried down are never read by any knot. The family remembers them only in name:
 take them away and every way down forgets, so the bond grows. With the earlier census share, the census's first-ray growth now
@@ -58,9 +64,9 @@ splits as follows (13,279 draws):
 **Interpretation, not a theorem.**
 - **Memory that matters is memory that is read.** TIE-CYCLE sorted what a family keeps of its top by kind: carrying or ordering.
   For the bond, what matters is whether some knot reads the kept value near the target. A read value, or an order, gives a short
-  bond at every depth. An unread one leaves the family counting depth as if it had forgotten.
+  bond at every sufficiently large depth. An unread one leaves the family counting depth as if it had forgotten.
 - **The first ray overstates growth.** In 40% of the census's first-ray growth weight, a path that changes with the depth finds a
-  bond of at most four at every depth. Counting inside, with nothing chosen, is real in 58% of that weight, and absent in 40%.
+  window certificate of at most four at every sufficiently large depth. Counting inside, with nothing chosen, is real in 58% of that weight, and absent in 40%.
 - **The owner's nested parts.** A part knows where it sits in the larger pattern when it reads something the top handed down, or is
   held on one side of an order fixed by the top. Without that it is independent of the top after a few levels, and its distance from
   the top is counted by the law.
@@ -68,11 +74,12 @@ splits as follows (13,279 draws):
 ## Lag cutoffs and census-only claims
 
 Census families only, weighted by draws (A79). Bounded and growing are proved per family; the shares are census facts. "At every
-large depth" means after the window's preperiod (at most 36 levels here). The direct search is finite readings only, never growth.
+large depth" means from a threshold μ per family: the window's preperiod, at S-word length n, which is absolute depth d = n, or
+n + 1 for a wrapper (*narrowed after the referee*). μ is sufficient, not the earliest such depth; it is at most 36 here. The direct search is finite readings only, never growth.
 
 ## Review
 
-**Referee pending.** The advisor model was consulted twice before the freeze (`advisor_review_answer.md`,
+**CARRY-BOUND-R1**: confirmed with fixes, no Block (above). The advisor model was consulted twice before the freeze (`advisor_review_answer.md`,
 `advisor_review2_answer.md`). It checked Theorem B, proposed the widened reading, found the missing merges and the living premise
 in Lemma W, replaced capped length sets with the deterministic state iteration, proposed the trimmed gap (Lemma G2, which the
 thread checked), and flagged P3's first form as settled by construction. The thread replaced P3 before the freeze. All of this was
@@ -90,12 +97,17 @@ A79 used. A81 used: 86% of the bounded weight is a bond through a carried top po
 
 ## Ratio
 
-Substantive: 5,964 exact window decisions, 632 growth proofs, 65 path DP runs. Administrative: the freeze, the clarification, the
+Substantive: 5,964 window decisions (72 incomplete), 632 growth proofs, 65 path DP runs. Administrative: the freeze, the clarification, the
 addendum, this note.
 
 ## Corrections
 
-Two (`docs/CORRECTIONS.md`, 2026-11-14):
+From the referee (`docs/CORRECTIONS.md`, 2026-11-14): eight **Narrowing** ("> 6" is censored; "every sufficiently large depth";
+"at most four" for window certificates; the wrappers' shifted bound; 72 incomplete windows; "non-forgetting or capped"; path
+certificates admitted separately, 5,072 / 632 / 85 strict; the threshold μ per family) and one **Not a block** (Lemma G's written
+reason repaired). Both of my earlier corrections were confirmed.
+
+Before the referee, two:
 - **Narrowing** of TIE-CYCLE's reading. "Where it remembers by carrying, the carried value gives short bonds" holds only for a
   value some knot reads. In 632 families every carried value is unread, and the bond grows.
 - **Not a block**, of my own: the pre-registration's Lemma G named the wrong fixed point for unread positions. It was corrected in
@@ -114,12 +126,12 @@ Two (`docs/CORRECTIONS.md`, 2026-11-14):
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the undecided half | **Status:** Successful (referee pending) | P1, P3, P4 held; P2 and P5 failed informatively; 98.6% of the in-scope families decided |
+| This attempt — the undecided half | **Status:** Successful (refereed, confirmed with fixes) | P1, P3, P4 held; P2 and P5 failed informatively; 98.6% of the in-scope families decided |
 | Local direction — counting inside | Continue | The census's first-ray growth is now 58% grows, 40% bounded, 2% undecided |
 | Broader exploration — G17 | Searching | Where the law counts depth, and why: read memory bounds the bond, unread memory does not |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | Per-depth reach decided for almost every census family whose first ray grows |
 
-**Corrections:** two (one Narrowing of TIE-CYCLE's reading, one Not a block of my own). **Goals:** a checkpoint for G17 and G1;
+**Corrections:** eleven: from the referee eight Narrowing and one Not a block; before it, one Narrowing of TIE-CYCLE's reading and one Not a block of my own. **Goals:** a checkpoint for G17 and G1;
 no goal change. **Assumptions:** A79 and A81 used; A81's record gains this study.
 **Basket:** `B173` (2/3 Payoff, 2/3 Concreteness; next in line by the coordinator's order), `FORGET-RULE-20261114-001#2` (1/3, 2/3).
 

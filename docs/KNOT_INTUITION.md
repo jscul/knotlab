@@ -3446,9 +3446,9 @@ So holes come in two kinds:
      product of its calls is a product relation (proved; classical); a pattern remembers its top at depth mostly by carrying a value
      (identity, rarely a tie through knots), and every chain without a carried value forgets; most of the rest, about one in twenty,
      have only one-way core orders, and one of those also carries a parity, so the sort is a census label, not a dichotomy ([decision note](../research/TIE-CYCLE-20261114-001/tie_cycle.md)).
-   - **The undecided half** (`CARRY-BOUND-20261114-001`; referee pending; code by Codex): of the census families whose first ray
-     grows but which do not forget, nine in ten have a bond of at most four members to every depth (proved per family by an exact
-     window): a value carried from the top and read by a knot, or a one-way order, keeps the top readable. The other tenth carry only
+   - **The undecided half** (`CARRY-BOUND-20261114-001`; refereed, confirmed with fixes; code by Codex): of the census families whose
+     first ray grows but which do not forget (or are capped), nine in ten have a bond to every sufficiently large depth with a window
+     certificate of at most four members (proved per family by an exact window): a value carried from the top and read by a knot, or a one-way order, keeps the top readable. The other tenth carry only
      values no knot reads; without them every way down forgets, so the bond grows (proved). The census's first-ray growth now splits
      58% grows, 40% bounded, 2% undecided ([decision note](../research/CARRY-BOUND-20261114-001/carry_bound.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing

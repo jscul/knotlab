@@ -1,0 +1,8 @@
+{"schema_version": 1, "experiment_id": "TIE-CYCLE-20261114-001A-E001", "ticket": "TIE-CYCLE-20261114-001A", "status": "Frozen", "evidence_stage": "confirmatory", "branch": "code_analysis",
+ "question": "Is 'no tie cycle' equivalent to forgetting; Theorem I (forgetting iff every idempotent rectangular); the residual's type; on a fresh held-out half of the 12,772 census verdicts.",
+ "definitions": {"ties": "experiments/TIE-CYCLE-20261114-001A/TIE-CYCLE-20261114-001A-E001_ties/ties.py (sha256 82cfbebb207a0fcf884a4e74d13aa1898a59aa1c6245f1f3e73a45fb9479fa3e)", "split": "even int(sha256('TIE:'+key)[:8],16) = training"},
+ "public_inputs": {"code": "the thread's ties.py and heldout.py; CENSUS-FORGET's results"},
+ "forbidden_inputs": ["Reading held-out tie status before stage 2"],
+ "primary_observable": "H1-H4 on the held-out half", "cheapest_meaningful_control": "Theorem I's check (H3)",
+ "validation_gate": "H1, H3 (proof checks)", "predictions": {"H1": "0 tie-cycle forgetters", "H2": "tie-free chains all forget; non-chains 91.5-95.5%", "H3": "0 violations of Theorem I", "H4": ">=80% of the residual order-only"},
+ "stop_rule": "One held-out reading; referee hand-off; report.", "runtime": "minutes"}

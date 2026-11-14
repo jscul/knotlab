@@ -1,0 +1,117 @@
+{
+ "train": {
+  "families": 6321,
+  "decided": 6314,
+  "H1_violations": 0,
+  "ties_beyond_identity": {
+   "nonchain/multi": 3,
+   "nonchain/1def": 2
+  },
+  "H3_violations": 0,
+  "no_tie": {
+   "chain": {
+    "n": 2126,
+    "forget": 2126,
+    "share": 1.0,
+    "wilson": [
+     0.9982,
+     1.0
+    ]
+   },
+   "nonchain": {
+    "n": 835,
+    "forget": 780,
+    "share": 0.9341,
+    "wilson": [
+     0.9152,
+     0.949
+    ]
+   }
+  },
+  "residual_types": {
+   "order": 52,
+   "nonlinear label|order|tie": 1,
+   "order|tie": 1,
+   "tie": 1
+  },
+  "residual": 55,
+  "residual_order_only": 52,
+  "residual_order_share": 0.9455,
+  "capped_settled_by_tie": 26,
+  "parity_without_tie": 0,
+  "table": {
+   "chain/1def|no tie|certified": 1640,
+   "chain/1def|tie|non-forgetting": 367,
+   "chain/multi|no tie|certified": 486,
+   "chain/multi|tie|non-forgetting": 113,
+   "nonchain/1def|no tie|certified": 408,
+   "nonchain/1def|no tie|non-forgetting": 39,
+   "nonchain/1def|tie|capped": 23,
+   "nonchain/1def|tie|non-forgetting": 2249,
+   "nonchain/multi|no tie|certified": 372,
+   "nonchain/multi|no tie|non-forgetting": 16,
+   "nonchain/multi|tie|capped": 3,
+   "nonchain/multi|tie|non-forgetting": 598,
+   "semigroup cap": 7
+  }
+ },
+ "heldout": {
+  "families": 6451,
+  "decided": 6445,
+  "H1_violations": 0,
+  "ties_beyond_identity": {
+   "nonchain/multi": 1
+  },
+  "H3_violations": 0,
+  "no_tie": {
+   "chain": {
+    "n": 2097,
+    "forget": 2097,
+    "share": 1.0,
+    "wilson": [
+     0.9982,
+     1.0
+    ]
+   },
+   "nonchain": {
+    "n": 883,
+    "forget": 838,
+    "share": 0.949,
+    "wilson": [
+     0.9325,
+     0.9617
+    ]
+   }
+  },
+  "residual_types": {
+   "order": 44,
+   "order|tie": 1
+  },
+  "residual": 45,
+  "residual_order_only": 44,
+  "residual_order_share": 0.9778,
+  "capped_settled_by_tie": 27,
+  "parity_without_tie": 1,
+  "table": {
+   "chain/1def|no tie|certified": 1642,
+   "chain/1def|tie|non-forgetting": 386,
+   "chain/multi|no tie|certified": 455,
+   "chain/multi|tie|non-forgetting": 101,
+   "nonchain/1def|no tie|certified": 430,
+   "nonchain/1def|no tie|non-forgetting": 33,
+   "nonchain/1def|tie|capped": 25,
+   "nonchain/1def|tie|non-forgetting": 2310,
+   "nonchain/multi|no tie|certified": 408,
+   "nonchain/multi|no tie|non-forgetting": 12,
+   "nonchain/multi|tie|capped": 2,
+   "nonchain/multi|tie|non-forgetting": 641,
+   "semigroup cap": 6
+  }
+ },
+ "verdicts": {
+  "H1": "holds",
+  "H2": "holds",
+  "H3": "holds",
+  "H4": "holds"
+ }
+}

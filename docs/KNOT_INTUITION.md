@@ -3442,6 +3442,10 @@ So holes come in two kinds:
      (proved; it covers 37% of the forgetting families); in the census no identity cycle means forgetting in all chains and 94% of the
      rest, the exceptions carrying the value through knots that force equality, so the memory of depth is identity
      ([decision note](../research/FORGET-RULE-20261114-001/forget_rule.md)).
+   - **Is identity the whole story** (`TIE-CYCLE-20261114-001`; referee pending): a family forgets exactly when every repeated
+     product of its calls is a product relation (proved); a pattern remembers its top at depth by carrying a value (identity, rarely a
+     tie through knots, once a parity), and every chain without a carried value forgets; the only other way, in about one in twenty of
+     the rest, is a one-way order that carries nothing ([decision note](../research/TIE-CYCLE-20261114-001/tie_cycle.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what
      separates decidable from undecidable nesting. With knots placed by a small automaton on addresses, so that a part's joining

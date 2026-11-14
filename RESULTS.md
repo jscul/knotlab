@@ -1497,5 +1497,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-14 | How common certified counting inside is (`CENSUS-FORGET-20261114-001`) | [closure](proofs/CENSUS-FORGET-20261114-001Z/CENSUS-FORGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/CENSUS-FORGET-20261114-001/) |
 | 2026-11-14 | What makes every way down forget (`FORGET-RULE-20261114-001`) | [closure](proofs/FORGET-RULE-20261114-001Z/FORGET-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FORGET-RULE-20261114-001/) |
 | 2026-11-14 | Does the law's reach grow to every copy at depth with members anywhere (`FREE-TARGET-20261114-001`) | [closure](proofs/FREE-TARGET-20261114-001Z/FREE-TARGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-TARGET-20261114-001/) |
-| 2026-11-14 | Is identity the whole story of forgetting (`TIE-CYCLE-20261114-001`) | — | [folder](research/TIE-CYCLE-20261114-001/) |
+| 2026-11-14 | Is identity the whole story of forgetting (`TIE-CYCLE-20261114-001`) | [closure](proofs/TIE-CYCLE-20261114-001Z/TIE-CYCLE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-CYCLE-20261114-001/) |
 

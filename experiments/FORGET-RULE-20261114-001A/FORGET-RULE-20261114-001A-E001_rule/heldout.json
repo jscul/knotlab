@@ -1,0 +1,134 @@
+{
+ "train": {
+  "families": 6388,
+  "H1_violations": 0,
+  "H1_examples": [],
+  "H2_violations": 0,
+  "H2_examples": [],
+  "r_within_bound": {
+   "true": 1107
+  },
+  "coverage": {
+   "chain/1def": {
+    "certified": 1659,
+    "by_A": 694,
+    "share": 0.4183
+   },
+   "chain/multi": {
+    "certified": 468,
+    "by_A": 190,
+    "share": 0.406
+   },
+   "nonchain/1def": {
+    "certified": 439,
+    "by_A": 117,
+    "share": 0.2665
+   },
+   "nonchain/multi": {
+    "certified": 414,
+    "by_A": 106,
+    "share": 0.256
+   }
+  },
+  "coverage_total": 0.3715,
+  "N_acyclic_forgetting": {
+   "chain": {
+    "n": 2127,
+    "forget": 2127,
+    "share": 1.0
+   },
+   "nonchain": {
+    "n": 907,
+    "forget": 853,
+    "share": 0.9405
+   }
+  },
+  "table": {
+   "chain/1def|N-acyclic|A|certified": 694,
+   "chain/1def|N-acyclic|notA|certified": 965,
+   "chain/1def|N-cyclic|notA|non-forgetting": 354,
+   "chain/multi|N-acyclic|A|certified": 190,
+   "chain/multi|N-acyclic|notA|certified": 278,
+   "chain/multi|N-cyclic|notA|non-forgetting": 115,
+   "nonchain/1def|N-acyclic|A|certified": 117,
+   "nonchain/1def|N-acyclic|notA|certified": 322,
+   "nonchain/1def|N-acyclic|notA|non-forgetting": 38,
+   "nonchain/1def|N-cyclic|notA|capped": 27,
+   "nonchain/1def|N-cyclic|notA|non-forgetting": 2223,
+   "nonchain/multi|N-acyclic|A|certified": 106,
+   "nonchain/multi|N-acyclic|notA|certified": 308,
+   "nonchain/multi|N-acyclic|notA|non-forgetting": 16,
+   "nonchain/multi|N-cyclic|notA|capped": 3,
+   "nonchain/multi|N-cyclic|notA|non-forgetting": 632
+  }
+ },
+ "heldout": {
+  "families": 6384,
+  "H1_violations": 0,
+  "H1_examples": [],
+  "H2_violations": 0,
+  "H2_examples": [],
+  "r_within_bound": {
+   "true": 1051
+  },
+  "coverage": {
+   "chain/1def": {
+    "certified": 1623,
+    "by_A": 662,
+    "share": 0.4079
+   },
+   "chain/multi": {
+    "certified": 473,
+    "by_A": 186,
+    "share": 0.3932
+   },
+   "nonchain/1def": {
+    "certified": 399,
+    "by_A": 95,
+    "share": 0.2381
+   },
+   "nonchain/multi": {
+    "certified": 366,
+    "by_A": 108,
+    "share": 0.2951
+   }
+  },
+  "coverage_total": 0.3674,
+  "N_acyclic_forgetting": {
+   "chain": {
+    "n": 2096,
+    "forget": 2096,
+    "share": 1.0
+   },
+   "nonchain": {
+    "n": 817,
+    "forget": 765,
+    "share": 0.9364
+   }
+  },
+  "table": {
+   "chain/1def|N-acyclic|A|certified": 662,
+   "chain/1def|N-acyclic|notA|certified": 961,
+   "chain/1def|N-cyclic|notA|non-forgetting": 399,
+   "chain/multi|N-acyclic|A|certified": 186,
+   "chain/multi|N-acyclic|notA|certified": 287,
+   "chain/multi|N-cyclic|notA|non-forgetting": 99,
+   "nonchain/1def|N-acyclic|A|certified": 95,
+   "nonchain/1def|N-acyclic|notA|certified": 304,
+   "nonchain/1def|N-acyclic|notA|non-forgetting": 36,
+   "nonchain/1def|N-cyclic|notA|capped": 30,
+   "nonchain/1def|N-cyclic|notA|non-forgetting": 2334,
+   "nonchain/multi|N-acyclic|A|certified": 108,
+   "nonchain/multi|N-acyclic|notA|certified": 258,
+   "nonchain/multi|N-acyclic|notA|non-forgetting": 16,
+   "nonchain/multi|N-cyclic|notA|capped": 6,
+   "nonchain/multi|N-cyclic|notA|non-forgetting": 603
+  }
+ },
+ "verdicts": {
+  "H1": "holds",
+  "H2": "holds",
+  "H3": "holds",
+  "H4": "holds"
+ }
+}

@@ -1,0 +1,8 @@
+{"schema_version": 1, "experiment_id": "FORGET-RULE-20261114-001A-E001", "ticket": "FORGET-RULE-20261114-001A", "status": "Frozen", "evidence_stage": "confirmatory", "branch": "code_analysis",
+ "question": "Syntactic rules for forgetting: N (identity cycle, necessary) and A (separation after exact peeling, sufficient), tested on a held-out half of the 12,772 census verdicts.",
+ "definitions": {"rule_A": "experiments/FORGET-RULE-20261114-001A/FORGET-RULE-20261114-001A-E001_rule/rule_A.py (sha256 2ac0df3a6f1451a98dfc5240fc194711648d0d2571be8a3acae897d4f458965f)", "split": "even int(sha256(key)[:8],16) = training"},
+ "public_inputs": {"code": "the thread's rule_A.py and heldout.py; CENSUS-FORGET's results; Preparation from the census code"},
+ "forbidden_inputs": ["Reading held-out verdicts before stage 2"],
+ "primary_observable": "H1-H4 on the held-out half", "cheapest_meaningful_control": "the x != y gadget",
+ "validation_gate": "H1, H2 (proof checks)", "predictions": {"H1": "0 N violations", "H2": "0 A violations", "H3": "A coverage 30-42%, strata within 8 points", "H4": "N-acyclic forgets in >=99% chains, >=90% non-chains"},
+ "stop_rule": "One held-out reading; referee hand-off; report.", "runtime": "minutes"}

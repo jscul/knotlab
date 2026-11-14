@@ -3,6 +3,12 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: a forgetting rule's training share, corrected
+
+- In the study of what makes every way down forget (`FORGET-RULE-20261114-001`), its pre-registration quoted the proved rule's
+  training coverage as 35.7%; it is 37.1% ([decision note](research/FORGET-RULE-20261114-001/forget_rule.md)).
+- Unchanged: the held-out test and its verdicts.
+
 ## 14 November 2026: every descending path, confirmed by its referee, four sentences withdrawn
 
 - The study of the law's reach over every path of copies (`EVERY-RAY-20261113-001`) was confirmed in its per-depth result and all

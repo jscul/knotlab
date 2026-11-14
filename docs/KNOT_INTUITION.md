@@ -3434,6 +3434,11 @@ So holes come in two kinds:
      first-ray growers, 54.6% of their weight (3.25% of all nested draws) grows with nothing chosen at every depth where a bond
      exists: single chains by construction (42.4%) and 21.2% of the others because every way down forgets; none of the limit-only
      growers that started this line forgets ([decision note](../research/CENSUS-FORGET-20261114-001/census_forget.md)).
+   - **What makes every way down forget** (`FORGET-RULE-20261114-001`; referee pending): a port handed to itself around a cycle of
+     calls blocks forgetting (proved), and separation of the top from depth r after peeling the always-satisfiable knots implies it
+     (proved; it covers 37% of the forgetting families); in the census no identity cycle means forgetting in all chains and 94% of the
+     rest, the exceptions carrying the value through knots that force equality, so the memory of depth is identity
+     ([decision note](../research/FORGET-RULE-20261114-001/forget_rule.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what
      separates decidable from undecidable nesting. With knots placed by a small automaton on addresses, so that a part's joining

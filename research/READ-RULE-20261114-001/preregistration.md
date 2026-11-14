@@ -57,7 +57,8 @@ Suppose every word of length r is. Then:
 
 **Dichotomy (to prove from C′).** Under C′'s hypothesis, on each residue of s, L(s) is either bounded or at least linear in s. Which
 holds is decided by a finite local state: the carry map, the allowed values of the carried coordinates, and which of them a cluster
-excludes.
+excludes. *(After the referee: the proved dichotomy is a post-registration generalisation without C′; its lower bound is positive
+linear but possibly very weak, and the "decided by a finite local state" clause is not proved.)*
 
 **The converse, in general (expected false).** The advisor's family, one definition S(a, b, c) with own u, x, w and constraints
 "u ≠ a" (a positive NAE gadget), NAE(a, x, b), NAE(c, x, w), SELF(a, u, x), carries a down and reads it by the knot {a, x, b} at

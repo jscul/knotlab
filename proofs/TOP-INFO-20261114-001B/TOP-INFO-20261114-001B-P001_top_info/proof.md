@@ -48,8 +48,9 @@ per-call relations from a copy, carry map) over words started from any copy. The
 (Corrected on the advisor's check. The first draft said "within m levels of where they branch off", left the copy type out of the
 state, and did not say how large s must be.)
 
-*Proof.* Take a bond W of size at most C at depth s, and call the levels of the target's word holding a member, or a side subtree with
-a member, occupied. There are at most C + 1 member-free stretches.
+*Proof.* Take a bond W of size at most C at depth s. Call a level of the target's word occupied when the copy there, or a copy in its
+side subtrees, holds a member of W as its own distinction; each member counts once, at its allocating copy, as READ-RULE's referee
+required. Stretch products run over the blocks strictly inside the stretch, as repaired there. There are at most C + 1 member-free stretches.
 - **Shortening a stretch by a multiple of Π.** In a member-free stretch of at least m·(Π + 1) levels, some state (the product from
   the stretch's top and the carry map) occurs at least Π + 1 times. Two of these occurrences, at levels l < l′, have l′ − l ≡ 0
   modulo Π. Cutting the levels between them keeps the stretch's product and its carry map. So it keeps the projection of the moved set,

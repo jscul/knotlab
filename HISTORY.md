@@ -13,6 +13,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   states covered only the automata tried ([decision note](research/LEVEL-RETURN-20261113-001/level_return.md)).
 - Unchanged: every verdict where recertified, and the proofs.
 
+## 14 November 2026: reading's converse settled by its referee
+
+- In the study of whether reading decides growth (`READ-RULE-20261114-001`), the converse, "growth needs every carried value unread",
+  was called open. Its referee found a family whose carried values are read at every copy, always where a tie splits the knot, and
+  whose bond grows. Read effectively (outside that tie), the converse is a theorem. Also narrowed: the bounded-or-linear dichotomy's
+  rate can be very weak and gives no decision procedure; the tie exception is local to one knot. The proofs of the main theorems
+  stand, one with two repairs ([decision note](research/READ-RULE-20261114-001/read_rule.md)).
+- Unchanged: Theorems R and R1, the dichotomy, and the census counts (87.6% where the theorem's own quantifier is used).
+
 ## 14 November 2026: the undecided half, confirmed by its referee with narrowings
 
 - The study of the undecided half (`CARRY-BOUND-20261114-001`) was confirmed: the window method is exact, all 632 growth proofs

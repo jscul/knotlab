@@ -88,15 +88,20 @@ that is not a main port, M_t can be a product only when that coordinate is const
 
 *Statement.* For every living in-scope family there is a period Π such that, on each residue of s modulo Π, either L is bounded
 (L(s) ≤ L(s₀) for every s ≥ s₀ in the residue, for some s₀), or L(s) ≥ s/(m + 1) − 1 for every s in the residue, with m below.
-Nothing grows between bounded and linear.
+Nothing grows between bounded and a positive linear lower bound (the rate can be very weak; the proof gives semi-decision of
+boundedness only, and no finite growth test).
 
 *Proof.* Take the state of a word u of SELF calls to be the pair (the product of its per-call relations, its carry map from the
 first copy's port positions to the last copy's). There are finitely many states, say m, counting the empty word. Let Π = m!.
 
-Take a least bond W at depth s, with target x in copy c_s along the word v. Call a level i of v occupied when W has a member in the
-block of the copy at level i or in that copy's side subtrees. A member-free stretch is a run of unoccupied levels.
-- **No long stretch.** If every member-free stretch has at most m levels, then at least one level in every m + 1 is occupied, so
-  |W| ≥ s/(m + 1) − 1.
+Take a least bond W at depth s, with target x in copy c_s along the word v. Call a level i of v occupied when W has a member that is
+an own distinction of the copy at level i or of a copy in that copy's side subtrees (*repaired after the referee*: each member is
+counted at the copy that holds it as its own, not at every block where it sits as a carried port). A member-free stretch is a run of
+unoccupied levels a + 1 to b. Its product runs over the blocks of c_{a+1} to c_b, with interfaces the ports of c_{a+1} and of c_{b+1},
+and c_a's block stays in the upper context (*repaired after the referee*; the first draft took the product from c_a to c_b).
+- **No long stretch.** If every member-free stretch has at most m levels, then with t occupied levels, n ≤ (m + 1)t + m for the
+  S-word length n, and t ≤ |W| − 2 (the main port and the target are counted at main and at c_s). So |W| grows at least like
+  n/(m + 1), a positive linear lower bound, though possibly a very weak one.
 - **A long stretch.** Otherwise some stretch, from copy c_a to copy c_b, has more than m levels. Among the words from c_a to the copies
   at its levels, two, ending at levels i < j, have the same state. Write the stretch's word as t₁ y t₃, with y the levels i + 1 to j,
   of length ℓ ≤ m. Since P(t₁y) = P(t₁), induction gives P(t₁yᵏ) = P(t₁) for every k, and likewise for the carry map. So the
@@ -120,5 +125,5 @@ block of the copy at level i or in that copy's side subtrees. A member-free stre
 ## Use
 
 Theorems R and R1 and the dichotomy hold for every living in-scope family, with no census input. So every bond to a covered
-target is, per residue, eventually bounded or at least linear: the census's undecided families cannot grow slowly. The census checks of
+target is, per residue, eventually bounded or has a positive linear lower bound: the census's undecided families cannot grow slowly. The census checks of
 `READ-RULE-20261114-001B` measure their coverage, and the advisor's family tests the converse.

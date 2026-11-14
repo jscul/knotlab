@@ -91,3 +91,18 @@ identity stratum among the two-block cases (the families not already bounded), i
 of length at most 3 and every direct entry, with `two_block_brute.compare_family`. The full run uses 3 workers (MemoryMax 12 GB, 3 GB
 and 600 s per case, retries for timeouts, memory and crashes) instead of the prepared single worker; nothing else changes. Codex's
 20-case smoke was seen first; it holds no prediction's verdict.
+
+## Addendum after READ-RULE's referee (2026-11-14, before any result of this study is read)
+
+READ-RULE-R1 found its converse false syntactically and proved effectively, and narrowed the dichotomy. Where this study leans on
+them:
+- "eventually bounded or at least linear" (The question) reads "eventually bounded or a positive linear lower bound, possibly very
+  weak". The study never uses a finite growth test or "decided by a finite local state".
+- The coordinator's rule tested in check 1 is "bounded exactly when some carried value is read outside R's exception". The referee's
+  family (carried values read only inside the exception, a growing bond) is a second kind of exception to it, besides the order
+  families. Check 1 uses R's quantifier as the referee states it: some carried state with a surviving reading in every repeating
+  phase.
+- The localisation proof in `proofs/TOP-INFO-20261114-001B/` relies on the dichotomy's pumping. It takes the referee's two repairs
+  (the stretch's product over c_{a+1} to c_b; members counted at the copy that holds them as their own).
+
+No prediction changes.

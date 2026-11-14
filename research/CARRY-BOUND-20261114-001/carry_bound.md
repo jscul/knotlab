@@ -64,7 +64,8 @@ splits as follows (13,279 draws):
 **Interpretation, not a theorem.**
 - **Memory that matters is memory that is read.** TIE-CYCLE sorted what a family keeps of its top by kind: carrying or ordering.
   For the bond, what matters is whether some knot reads the kept value near the target. A read value, or an order, gives a short
-  bond at every sufficiently large depth. An unread one leaves the family counting depth as if it had forgotten.
+  bond at every sufficiently large depth (*narrowed after READ-RULE's referee*: a value read outside Theorem R's exception; a reading
+  that a tie always splits gives nothing, and the bond can then grow). An unread one leaves the family counting depth as if it had forgotten.
 - **The first ray overstates growth.** In 40% of the census's first-ray growth weight, a path that changes with the depth finds a
   window certificate of at most four at every sufficiently large depth. Counting inside, with nothing chosen, is real in 58% of that weight, and absent in 40%.
 - **The owner's nested parts.** A part knows where it sits in the larger pattern when it reads something the top handed down, or is

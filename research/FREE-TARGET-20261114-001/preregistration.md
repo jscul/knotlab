@@ -96,3 +96,17 @@ threshold, no extrapolation beyond the sample while some cases are unresolved, a
 30 minutes per case, retries for timeouts and memory at the same settings once, a 20-hour runtime limit, registered in
 `docs/LONG_RUNNING.md`. The budget is sized so that memory stops do not decide the unresolved bucket. Stop after one run, its frozen
 summary, a referee hand-off and the report. The advisor model was consulted before freezing.
+
+## Clarification before the full run (2026-11-14, after Codex's hand-off; seen: its 20-case smoke and the relation gate)
+
+Codex's hand-off (`codex/REPORT.md`, 23 minutes) built the certificates. Its gates passed: the independent R_i on all 66 with 0
+mismatches, the controls, no double certification, and a mutant that changes an R_i. It ran a 20-case smoke. It flagged two
+ambiguities, decided here:
+- **Depth when main ≠ S** (9 families). Count the target's depth from the entries of the flattened main block, the convention of
+  EVERY-RAY's L_path and the census, so that L_any ≤ L_path compares like with like. A boundedness verdict does not depend on a
+  constant shift.
+- **Gate (b)'s range.** A bounded certificate claims every depth from its onset. Witnesses are checked from the onset through the
+  onset plus two periods; depths before the onset carry no claim.
+
+What has been seen: the relation gate computed the forgetting test on all 66 (43 with a finite r, 23 with a recurring
+non-rectangular word), and the smoke's verdicts on 20. The predictions stand as frozen.

@@ -1,0 +1,2350 @@
+{
+  "Q3_prediction_rejected": true,
+  "all_twelve_L_values_equal_two": true,
+  "controls": {
+    "cases": [
+      {
+        "cegar_agrees": true,
+        "hand_expectation": 3,
+        "minimum": 3,
+        "name": "one_nae"
+      },
+      {
+        "cegar_agrees": true,
+        "hand_expectation": null,
+        "minimum": null,
+        "name": "two_independent"
+      },
+      {
+        "cegar_agrees": true,
+        "hand_expectation": 4,
+        "minimum": 4,
+        "name": "two_nae_chain"
+      },
+      {
+        "cegar_agrees": true,
+        "hand_expectation": null,
+        "minimum": null,
+        "name": "prefix_without_endpoint_bond"
+      },
+      {
+        "cegar_agrees": true,
+        "hand_expectation": 4,
+        "minimum": 4,
+        "name": "suffix_restores_endpoint_bond"
+      },
+      {
+        "cegar_agrees": true,
+        "hand_expectation": 3,
+        "minimum": 3,
+        "name": "support_minimality_control"
+      }
+    ],
+    "fresh_witness_checker_invalid_controls_rejected": {
+      "nonminimal_superset": true,
+      "shattered_pair": true,
+      "wrong_target": true
+    },
+    "nonminimal_mutant_rejected": true
+  },
+  "gadgets": {
+    "a_repeated_argument": {
+      "a_u_extension_counts": {
+        "(0, 0)": 0,
+        "(0, 1)": 1,
+        "(1, 0)": 1,
+        "(1, 1)": 0
+      },
+      "a_u_extensions": {
+        "(0, 0)": [],
+        "(0, 1)": [
+          {
+            "0": 0,
+            "3": 1
+          }
+        ],
+        "(1, 0)": [
+          {
+            "0": 1,
+            "3": 0
+          }
+        ],
+        "(1, 1)": []
+      },
+      "exactly_inequality": true,
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2"
+    },
+    "b_positive_gadget": {
+      "a_u_extension_counts": {
+        "(0, 0)": 0,
+        "(0, 1)": 6,
+        "(1, 0)": 6,
+        "(1, 1)": 0
+      },
+      "a_u_extensions": {
+        "(0, 0)": [],
+        "(0, 1)": [
+          {
+            "0": 0,
+            "3": 1,
+            "6": 0,
+            "7": 0,
+            "8": 1
+          },
+          {
+            "0": 0,
+            "3": 1,
+            "6": 0,
+            "7": 1,
+            "8": 0
+          },
+          {
+            "0": 0,
+            "3": 1,
+            "6": 0,
+            "7": 1,
+            "8": 1
+          },
+          {
+            "0": 0,
+            "3": 1,
+            "6": 1,
+            "7": 0,
+            "8": 0
+          },
+          {
+            "0": 0,
+            "3": 1,
+            "6": 1,
+            "7": 0,
+            "8": 1
+          },
+          {
+            "0": 0,
+            "3": 1,
+            "6": 1,
+            "7": 1,
+            "8": 0
+          }
+        ],
+        "(1, 0)": [
+          {
+            "0": 1,
+            "3": 0,
+            "6": 0,
+            "7": 0,
+            "8": 1
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "6": 0,
+            "7": 1,
+            "8": 0
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "6": 0,
+            "7": 1,
+            "8": 1
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "6": 1,
+            "7": 0,
+            "8": 0
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "6": 1,
+            "7": 0,
+            "8": 1
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "6": 1,
+            "7": 1,
+            "8": 0
+          }
+        ],
+        "(1, 1)": []
+      },
+      "exactly_inequality": true,
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae"
+    }
+  },
+  "no_per_call_relations_or_window_code_used": true,
+  "peak_rss_kib": 26956,
+  "python": "/home/jscul/p-vs-np-contact-first/.venv/bin/python",
+  "rows": [
+    {
+      "S": 0,
+      "S_call_length": 1,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 7,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          7
+        ]
+      },
+      "absolute_depth": 1,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 24,
+      "cutoff": 3,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 6,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          6
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        6
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0002990759676322341,
+      "variables": 15,
+      "variant": "a_repeated_argument",
+      "witness": [
+        0,
+        6
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 6,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          6
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            3
+          ],
+          "definition": 0,
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 2,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 10,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          10
+        ]
+      },
+      "absolute_depth": 2,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 30,
+      "cutoff": 4,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 9,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          9
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        9
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.00029857002664357424,
+      "variables": 18,
+      "variant": "a_repeated_argument",
+      "witness": [
+        0,
+        9
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 9,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          9
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            3,
+            3
+          ],
+          "definition": 0,
+          "depth": 2
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 3,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 13,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          13
+        ]
+      },
+      "absolute_depth": 3,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 36,
+      "cutoff": 5,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 12,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          12
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        12
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0002856870414689183,
+      "variables": 21,
+      "variant": "a_repeated_argument",
+      "witness": [
+        0,
+        12
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 12,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          12
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            3,
+            3,
+            3
+          ],
+          "definition": 0,
+          "depth": 3
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 4,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 16,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          16
+        ]
+      },
+      "absolute_depth": 4,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 42,
+      "cutoff": 6,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 15,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          15
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        15
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0003022579476237297,
+      "variables": 24,
+      "variant": "a_repeated_argument",
+      "witness": [
+        0,
+        15
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 15,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          15
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "definition": 0,
+          "depth": 4
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 5,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 19,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          19
+        ]
+      },
+      "absolute_depth": 5,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 48,
+      "cutoff": 7,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 18,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          18
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        18
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0003837089752778411,
+      "variables": 27,
+      "variant": "a_repeated_argument",
+      "witness": [
+        0,
+        18
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 18,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          18
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "definition": 0,
+          "depth": 5
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 6,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 22,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          22
+        ]
+      },
+      "absolute_depth": 6,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 54,
+      "cutoff": 8,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 21,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          21
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        21
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0003426140174269676,
+      "variables": 30,
+      "variant": "a_repeated_argument",
+      "witness": [
+        0,
+        21
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 21,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          21
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "definition": 0,
+          "depth": 6
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 1,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 10,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          10
+        ]
+      },
+      "absolute_depth": 1,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 48,
+      "cutoff": 3,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 9,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          9
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        9
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.00041597301606088877,
+      "variables": 27,
+      "variant": "b_positive_gadget",
+      "witness": [
+        0,
+        9
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 9,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          9
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            6
+          ],
+          "definition": 0,
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 2,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 16,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          16
+        ]
+      },
+      "absolute_depth": 2,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 60,
+      "cutoff": 4,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 15,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          15
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        15
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0003921419847756624,
+      "variables": 33,
+      "variant": "b_positive_gadget",
+      "witness": [
+        0,
+        15
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 15,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          15
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            6,
+            6
+          ],
+          "definition": 0,
+          "depth": 2
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 3,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 22,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          22
+        ]
+      },
+      "absolute_depth": 3,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 72,
+      "cutoff": 5,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 21,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          21
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        21
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0004102890379726887,
+      "variables": 39,
+      "variant": "b_positive_gadget",
+      "witness": [
+        0,
+        21
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 21,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          21
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            6,
+            6,
+            6
+          ],
+          "definition": 0,
+          "depth": 3
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 4,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 28,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          28
+        ]
+      },
+      "absolute_depth": 4,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 84,
+      "cutoff": 6,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 27,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          27
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        27
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.00044560793321579695,
+      "variables": 45,
+      "variant": "b_positive_gadget",
+      "witness": [
+        0,
+        27
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 27,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          27
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "definition": 0,
+          "depth": 4
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 5,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 34,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          34
+        ]
+      },
+      "absolute_depth": 5,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 96,
+      "cutoff": 7,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 33,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          33
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        33
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.00048285198863595724,
+      "variables": 51,
+      "variant": "b_positive_gadget",
+      "witness": [
+        0,
+        33
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 33,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          33
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "definition": 0,
+          "depth": 5
+        }
+      ]
+    },
+    {
+      "S": 0,
+      "S_call_length": 6,
+      "a_target_x_shattered_control": {
+        "allowed": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 40,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": false,
+        "living": true,
+        "non_shattered": false,
+        "support": [
+          0,
+          40
+        ]
+      },
+      "absolute_depth": 6,
+      "boundary_port_masks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "clauses": 108,
+      "cutoff": 8,
+      "explicit_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 39,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          39
+        ]
+      },
+      "explicit_root_a_target_u": [
+        0,
+        39
+      ],
+      "global_exact": true,
+      "global_reason": "Witness size 2; complement closure and nonempty usual limit make every singleton full, including members beyond the prefix.",
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae",
+      "limit_history": [
+        {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "main_equals_S": true,
+      "minimum": 2,
+      "nonminimal_supersupport_rejected": true,
+      "pendant_w_occurrences": [
+        [
+          "K",
+          [
+            2,
+            4,
+            5
+          ]
+        ]
+      ],
+      "seconds": 0.0005085949087515473,
+      "variables": 57,
+      "variant": "b_positive_gadget",
+      "witness": [
+        0,
+        39
+      ],
+      "witness_check": {
+        "allowed": [
+          1,
+          2
+        ],
+        "backend": "minisat22; search uses cadical195/glucose42",
+        "deletions": [
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 0,
+            "full": true
+          },
+          {
+            "allowed": [
+              0,
+              1
+            ],
+            "dropped": 39,
+            "full": true
+          }
+        ],
+        "endpoints_valid": true,
+        "every_single_deletion_full": true,
+        "is_bond": true,
+        "living": true,
+        "non_shattered": true,
+        "support": [
+          0,
+          39
+        ]
+      },
+      "witness_origins": [
+        {
+          "root_port": 0
+        },
+        {
+          "address": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "definition": 0,
+          "depth": 6
+        }
+      ]
+    }
+  ],
+  "scope": "READ-RULE-20261114-001 Q3 independent referee",
+  "script_sha256": "52af9b20ef23381eb22cb78d536e2054c7b8c41dfd207232ccd2a664d8de88ae",
+  "seconds": 0.01987980504054576,
+  "sources_sha256": {
+    "experiments/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/codex/counterexample.json": "6e9efda327805719cba87a505f69a383ca784195b146d2cbd069a34a3441f3d3",
+    "research/CARRY-BOUND-20261114-001/referee-R1/codex/grow_core.py": "30ac931939d3c734e2157048d33cbab3036087662b937c9beebe2de17ef016dc",
+    "research/FREE-TARGET-20261114-001/referee-R1/codex/direct_bonds.py": "12fb65d55ce41584b8f7c89caadb30882e1430fc59310ff5999fc571e9ff4915",
+    "research/READ-RULE-20261114-001/referee-R1/codex/growth_core.py": "f34aad6a1c5645a1913f8a2abf8bc9d838c663d117f5a32e08ae4cb3798f0741"
+  }
+}

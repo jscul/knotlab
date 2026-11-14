@@ -1,0 +1,179 @@
+{
+  "population": {
+    "families": 5964,
+    "draw_weight": 6028
+  },
+  "in_scope": {
+    "families": 5789,
+    "draw_weight": 5853
+  },
+  "bounded_denominator": {
+    "families": 5067,
+    "draw_weight": 5129
+  },
+  "R1_all_in_scope": {
+    "families": 471,
+    "draw_weight": 471
+  },
+  "R1_bounded": {
+    "families": 469,
+    "draw_weight": 469
+  },
+  "R1_bounded_weight_percent": 9.144082667186586,
+  "R1_all_nonbounded": [
+    {
+      "key_sha256": "d5ac8dc038ae968e3d26db40e8145e9a8c43abf56fa0fd929d11cc25c26b0c3e",
+      "key": "[[3,4,[[\"K\",[0,1,5]],[\"SELF\",[2,0,4]],[\"SELF\",[3,4,5]],[\"SELF\",[4,0,2]],[\"SELF\",[3,5,1]],[\"SELF\",[0,3,2]],[\"K\",[5,0,3]],[\"SELF\",[1,2,0]],[\"SELF\",[4,2,5]],[\"K\",[6,0,4]]]]]",
+      "verdict": "undecided"
+    },
+    {
+      "key_sha256": "ce083ff8262fab67119eef3db259d752d6409f682fcd622b279372fec69084a9",
+      "key": "[[3,3,[[\"SELF\",[2,4,1]],[\"SELF\",[4,3,1]],[\"SELF\",[1,3,0]],[\"SELF\",[2,3,1]],[\"SELF\",[1,0,2]],[\"K\",[0,1,2]],[\"K\",[4,1,5]]]]]",
+      "verdict": "undecided"
+    }
+  ],
+  "R1_some_only": [
+    {
+      "key_sha256": "6a025b17743cce3ea21ffba240fbb3f1e9bc6433486a97d1438d5bec016b64b3",
+      "key": "[[3,5,[[\"K\",[0,5,6]],[\"K\",[4,3,7]],[\"K\",[2,6,7]],[\"SELF\",[1,2,7]],[\"SELF\",[1,3,0]],[\"SELF\",[3,6,7]]]],[5,4,[[0,[4,2,7]]]]]",
+      "verdict": "bounded"
+    }
+  ],
+  "R_coverage": {
+    "exists_good_each_Q_residue": {
+      "families": 4484,
+      "draw_weight": 4491,
+      "family_percent": 88.4941780146043,
+      "weight_percent": 87.5609280561513
+    },
+    "exists_good_each_R_residue_union": {
+      "families": 4484,
+      "draw_weight": 4491,
+      "family_percent": 88.4941780146043,
+      "weight_percent": 87.5609280561513
+    },
+    "strict_each_Q_residue": {
+      "families": 4479,
+      "draw_weight": 4486,
+      "family_percent": 88.39550029603316,
+      "weight_percent": 87.46344316630922
+    },
+    "strict_each_R_residue": {
+      "families": 4479,
+      "draw_weight": 4486,
+      "family_percent": 88.39550029603316,
+      "weight_percent": 87.46344316630922
+    },
+    "some_Q_residue_survives": {
+      "families": 4489,
+      "draw_weight": 4496,
+      "family_percent": 88.59285573317545,
+      "weight_percent": 87.65841294599338
+    }
+  },
+  "R_unavailable_in_scope": {
+    "families": 72,
+    "draw_weight": 72
+  },
+  "exception_only_Q_residue_families": [
+    {
+      "key_sha256": "018277ebab1de9a6b8b3e43742ac4499a9a092bde7f01faa2e68a8ecb9331046",
+      "key": "[[3,4,[[\"K\",[1,2,0]],[\"K\",[3,6,1]],[\"SELF\",[4,6,5]],[\"K\",[6,3,0]],[\"SELF\",[5,0,1]],[\"SELF\",[2,3,5]],[\"SELF\",[5,2,1]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    },
+    {
+      "key_sha256": "8e8c03006cbcc448de270ba9ca0ecebbe2d741153b14020055b159cbd5a25b9b",
+      "key": "[[3,2,[[\"SELF\",[2,3,4]],[\"SELF\",[4,0,2]],[\"SELF\",[0,3,4]],[\"K\",[4,0,3]],[\"K\",[4,1,3]],[\"SELF\",[4,3,1]],[\"SELF\",[0,4,3]],[\"K\",[0,1,2]],[\"SELF\",[2,3,1]],[\"SELF\",[0,4,3]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    },
+    {
+      "key_sha256": "3fbe34294e00b1face98acbac3ecbdcc85d8d650d3572f9f65ecab32806e088a",
+      "key": "[[3,2,[[\"SELF\",[3,0,1]],[\"K\",[4,3,2]],[\"SELF\",[3,4,0]],[\"K\",[3,4,1]],[\"SELF\",[2,1,0]],[\"SELF\",[0,2,1]],[\"SELF\",[4,0,2]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    },
+    {
+      "key_sha256": "c2850e10ae4f97431a245cfeea372672fb2380f5bfe8a45f6ff538f4e27d126d",
+      "key": "[[3,2,[[\"K\",[0,4,3]],[\"SELF\",[1,3,4]],[\"SELF\",[0,2,3]],[\"SELF\",[3,1,2]],[\"K\",[4,1,3]],[\"K\",[2,1,0]],[\"K\",[4,2,3]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    },
+    {
+      "key_sha256": "33e3211faac70b6bc960a95d233ae0a25b83683c5a434d0fe65620a3488e25b7",
+      "key": "[[3,2,[[\"SELF\",[4,0,1]],[\"K\",[3,4,2]],[\"SELF\",[0,4,3]],[\"K\",[3,1,4]],[\"SELF\",[3,2,1]],[\"SELF\",[0,2,1]],[\"K\",[3,4,2]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    },
+    {
+      "key_sha256": "0235fe8965b7f432c19204b3c27c339c6497e377fa047bc9bd01886b95934a93",
+      "key": "[[3,4,[[\"K\",[4,0,3]]]],[3,2,[[\"K\",[4,3,2]],[0,[4,3,1]],[\"K\",[4,3,0]],[\"SELF\",[2,3,1]],[\"K\",[2,3,1]],[\"SELF\",[4,3,0]],[\"K\",[3,1,4]]]],[3,3,[[1,[4,0,2]]]],[3,5,[[2,[5,2,1]]]]]",
+      "verdict": "bounded",
+      "wrapper": true
+    },
+    {
+      "key_sha256": "8840b0164bc946d17059800e091cc1884fe58c2d4ee69ae29b0294acd2ab2083",
+      "key": "[[3,2,[[\"K\",[3,0,4]],[\"K\",[3,1,4]],[\"SELF\",[1,3,4]],[\"K\",[3,4,2]],[\"SELF\",[0,4,3]],[\"SELF\",[3,1,0]],[\"SELF\",[0,1,2]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    },
+    {
+      "key_sha256": "23df2a825b7b0e332ad2ca03cc2edf8f49e331f3736f300d56dca82c84c1e0c2",
+      "key": "[[3,2,[[\"SELF\",[3,4,0]],[\"K\",[1,4,3]],[\"SELF\",[1,0,2]],[\"SELF\",[3,1,2]],[\"K\",[3,4,1]],[\"K\",[0,3,4]],[\"K\",[3,0,4]],[\"SELF\",[3,4,2]],[\"K\",[1,0,2]],[\"K\",[4,3,0]],[\"SELF\",[2,3,1]],[\"K\",[4,2,3]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    },
+    {
+      "key_sha256": "c6c99c623a5487a0ede1a0dda6f5652ee026485ae4971fb28499294432f4f4d8",
+      "key": "[[3,2,[[\"K\",[3,2,4]],[\"SELF\",[1,2,4]],[\"K\",[4,0,3]],[\"K\",[2,0,1]],[\"SELF\",[4,1,3]]]]]",
+      "verdict": "bounded",
+      "wrapper": false
+    }
+  ],
+  "official_nine_exceptions_reconstructed": 9,
+  "strict_official_disagreements": [],
+  "theorem_quantifier_newly_covered": [
+    {
+      "key_sha256": "5dd5ab5a117eb66073c04e8cdfa3deb605837edd548690dc789ecd5056b6a262",
+      "key": "[[3,3,[[\"K\",[0,1,5]],[\"SELF\",[5,3,0]],[\"SELF\",[4,5,0]],[\"K\",[5,3,4]],[\"SELF\",[0,4,5]],[\"SELF\",[0,1,2]],[\"SELF\",[3,2,5]]]],[5,0,[[\"K\",[2,3,1]],[0,[3,2,4]],[\"K\",[3,0,1]],[\"K\",[4,0,2]],[0,[0,1,4]],[0,[3,0,2]],[\"K\",[2,1,3]]]]]",
+      "verdict": "bounded"
+    },
+    {
+      "key_sha256": "52997167e985b8f41b5d60dddf5efe2c35ae675b20a69fed8812091ee783354e",
+      "key": "[[5,0,[[\"K\",[4,2,3]],[\"K\",[0,4,3]]]],[3,3,[[\"SELF\",[1,4,0]],[0,[4,3,0,1,5]],[\"SELF\",[2,1,0]]]],[3,2,[[\"K\",[1,3,0]],[1,[1,3,4]],[\"K\",[0,4,2]],[1,[2,3,1]]]]]",
+      "verdict": "bounded"
+    },
+    {
+      "key_sha256": "7ecf57750d7d2775726a5844fee8e51168d29ac135bec807d0039506b58f0319",
+      "key": "[[3,1,[[\"SELF\",[3,2,0]],[\"K\",[0,2,1]],[\"SELF\",[1,2,0]],[\"K\",[0,1,2]],[\"SELF\",[0,2,1]],[\"K\",[0,2,3]],[\"SELF\",[1,0,2]]]],[5,0,[[0,[4,2,3]],[\"K\",[3,4,1]],[0,[3,4,1]],[\"K\",[1,2,0]],[0,[0,2,3]],[\"K\",[0,1,2]],[\"K\",[0,2,4]],[\"K\",[3,1,4]],[0,[1,4,3]],[\"K\",[1,3,0]]]]]",
+      "verdict": "bounded"
+    },
+    {
+      "key_sha256": "63577d9cf381049f709a189404ffb02cc2484144cabfdf69ef843fa9a10d34f1",
+      "key": "[[5,0,[[\"K\",[2,1,3]]]],[3,1,[[\"SELF\",[1,2,3]],[\"K\",[3,1,2]],[\"K\",[2,1,0]],[\"SELF\",[2,1,0]]]],[5,0,[[\"K\",[0,4,2]],[1,[3,2,4]],[\"K\",[2,4,1]],[1,[1,3,0]],[0,[2,0,3,4,1]],[1,[0,3,1]]]]]",
+      "verdict": "bounded"
+    },
+    {
+      "key_sha256": "39f7b334062ac7256e78d5d9f614ac4eedc92482aef6cf968fdbc688583b34eb",
+      "key": "[[3,2,[[\"SELF\",[1,4,3]],[\"SELF\",[2,1,4]],[\"K\",[3,4,2]],[\"SELF\",[4,3,0]],[\"K\",[1,0,2]],[\"SELF\",[4,0,2]],[\"SELF\",[0,2,4]]]],[3,0,[[0,[2,0,1]]]]]",
+      "verdict": "bounded"
+    }
+  ],
+  "Q_vs_R_union_quantifier_disagreements": [],
+  "triple_controls": {
+    "nonempty_complement_closed_NAE_relations": 7,
+    "exception_relations": 2,
+    "equivalence_passed_all": true
+  },
+  "seconds": 339.18652805301826,
+  "peak_rss_kib": 289592,
+  "inputs_sha256": {
+    "artifacts/CARRY-BOUND-20261114-001A/CARRY-BOUND-20261114-001A-E001_window/window_digest.jsonl.gz": "11a29c44f7eb65dc479c6058ce569d505ac27c5529977fe370889a7d27b2c8b8",
+    "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz": "a0473d5c08c6273ec97220cb5462bf1381140f49df0b1db653bfc09976786ddb",
+    "research/CARRY-BOUND-20261114-001/referee-R1/codex/window_audit.py": "f8d44b3d8ef20c1d94dd39641c5c2c09b4c995b62fbc6afd55aeb02ad228db52",
+    "experiments/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/codex/results.json": "f374373c84d4c4a737606d61eb86027f54059790448bb1990208e678ec7c8d41",
+    "experiments/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/codex/summary.json": "a08e5744c6a0a06910148588a30eac89e0ec5e6ab249c6b58b093b88548871e5"
+  },
+  "script_sha256": "28e3d4816a8249b92da899b0cfee126333fa7bd7b08b48f4549cc015a68d0bd6"
+}

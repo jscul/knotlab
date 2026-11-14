@@ -1,0 +1,817 @@
+{
+  "evidence_stage": "independent finite recomputation plus symbolic audit",
+  "scientific_scope": "covered S copies only",
+  "script_sha256": "81bc63b1b3eca418b37c890fc3461a6f2c2c85b96d23a5a0bb734d94b45029e3",
+  "controls": {
+    "occupied_occurrences_negative_control": {
+      "key": [
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "depth": 20,
+      "m": 2,
+      "period": 2,
+      "W_size": 3,
+      "literal_occupied_levels": 21,
+      "claimed_no_long_lower_bound": 5.666666666666667,
+      "W_projection": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "proper_projection_sizes": [
+        4,
+        4,
+        4
+      ],
+      "literal_counting_implication_rejected": true
+    },
+    "exact_period_pump": {
+      "old_depth": 20,
+      "new_depth": 22,
+      "identical_full_projection": true,
+      "all_subset_projections_checked": 8
+    },
+    "off_by_one_negative_control": {
+      "correct_projection": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dangling_member_projection": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "naive_factorisation_rejected": true
+    },
+    "non_main_carriage_and_side_subtrees": {
+      "key": [
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                2,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                2
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "repeated_prefix_lengths": [
+        2,
+        3
+      ],
+      "old_depth": 6,
+      "new_depth": 7,
+      "non_main_member_carried_by_identity": true,
+      "retained_member_in_prefix_side_subtree": true,
+      "other_side_subtrees_summarised_by_exact_limit": true,
+      "joint_projection": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "full_projection_equal": true,
+      "all_subset_projections_checked": 16
+    }
+  },
+  "samples": [
+    {
+      "name": "grow_0",
+      "key": "[[3,0,[[\"K\",[2,0,1]],[\"SELF\",[0,1,2]],[\"K\",[1,0,2]],[\"SELF\",[2,0,1]],[\"K\",[2,0,1]],[\"K\",[2,0,1]],[\"SELF\",[2,1,0]]]],[3,1,[[\"SELF\",[3,0,2]],[0,[3,1,0]]]]]",
+      "S": 1,
+      "main": 1,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 2,
+      "generators": 1,
+      "generator_relations": [
+        [
+          2,
+          12,
+          3,
+          4,
+          32,
+          192,
+          48,
+          64
+        ]
+      ],
+      "generator_arguments": [
+        [
+          3,
+          0,
+          2
+        ]
+      ],
+      "reachable_states": 5,
+      "complete": true,
+      "boolean_relations": 5,
+      "carry_maps": 3,
+      "metadata": {
+        "key_sha256": "a43ab6412097e4ba8b699279c83b8cffbbae2dfd20a77f14260daad80936cf8f",
+        "wrapper": false,
+        "stratum": "I",
+        "verdict": "growing"
+      },
+      "longest_shortest_word": 4,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0002,
+      "m": 5,
+      "period_expression": "5!",
+      "linear_constant_exact": "1/6",
+      "linear_constant_float": 0.16666666666666666,
+      "period_exact": "120"
+    },
+    {
+      "name": "grow_1",
+      "key": "[[3,0,[[\"SELF\",[0,2,1]]]],[3,1,[[0,[1,0,3]],[\"SELF\",[3,0,2]]]]]",
+      "S": 1,
+      "main": 1,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 2,
+      "generators": 1,
+      "generator_relations": [
+        [
+          2,
+          12,
+          3,
+          4,
+          32,
+          192,
+          48,
+          64
+        ]
+      ],
+      "generator_arguments": [
+        [
+          3,
+          0,
+          2
+        ]
+      ],
+      "reachable_states": 5,
+      "complete": true,
+      "boolean_relations": 5,
+      "carry_maps": 3,
+      "metadata": {
+        "key_sha256": "b3b48fb04a11ef2dc26d840629dbec9cfe995cbbadebec8f154ce52299c6cfcf",
+        "wrapper": false,
+        "stratum": "I",
+        "verdict": "growing"
+      },
+      "longest_shortest_word": 4,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0001,
+      "m": 5,
+      "period_expression": "5!",
+      "linear_constant_exact": "1/6",
+      "linear_constant_float": 0.16666666666666666,
+      "period_exact": "120"
+    },
+    {
+      "name": "grow_4",
+      "key": "[[3,0,[[\"SELF\",[1,2,0]]]],[3,1,[[0,[1,3,2]],[\"SELF\",[0,2,3]]]]]",
+      "S": 1,
+      "main": 1,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 2,
+      "generators": 1,
+      "generator_relations": [
+        [
+          16,
+          32,
+          17,
+          34,
+          68,
+          136,
+          4,
+          8
+        ]
+      ],
+      "generator_arguments": [
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "reachable_states": 5,
+      "complete": true,
+      "boolean_relations": 5,
+      "carry_maps": 3,
+      "metadata": {
+        "key_sha256": "c75c4e97f3a220bd7711d43b297efcd8ba28f4316e26ec824635d8b5c17b2548",
+        "wrapper": false,
+        "stratum": "I",
+        "verdict": "growing"
+      },
+      "longest_shortest_word": 4,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0001,
+      "m": 5,
+      "period_expression": "5!",
+      "linear_constant_exact": "1/6",
+      "linear_constant_float": 0.16666666666666666,
+      "period_exact": "120"
+    },
+    {
+      "name": "grow_6",
+      "key": "[[3,1,[[\"K\",[2,0,3]],[\"SELF\",[3,1,0]]]],[4,0,[[0,[0,1,2]],[0,[2,1,3]],[\"K\",[3,1,2]],[0,[0,3,2]]]]]",
+      "S": 0,
+      "main": 1,
+      "wrapper_offset": 1,
+      "living": true,
+      "limit_rounds": 1,
+      "generators": 1,
+      "generator_relations": [
+        [
+          2,
+          48,
+          8,
+          192,
+          3,
+          16,
+          12,
+          64
+        ]
+      ],
+      "generator_arguments": [
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "reachable_states": 5,
+      "complete": true,
+      "boolean_relations": 5,
+      "carry_maps": 3,
+      "metadata": {
+        "key_sha256": "a430c16bc4108c28e40bae66b1915934f6f5cb703ee3015d4ac3ec1923909b05",
+        "wrapper": true,
+        "stratum": "I",
+        "verdict": "growing"
+      },
+      "longest_shortest_word": 4,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0001,
+      "m": 5,
+      "period_expression": "5!",
+      "linear_constant_exact": "1/6",
+      "linear_constant_float": 0.16666666666666666,
+      "period_exact": "120"
+    },
+    {
+      "name": "grow_8",
+      "key": "[[3,0,[[\"K\",[0,1,2]],[\"SELF\",[2,0,1]],[\"SELF\",[1,2,0]],[\"K\",[1,2,0]],[\"K\",[0,2,1]],[\"K\",[2,0,1]],[\"K\",[0,2,1]],[\"K\",[2,1,0]],[\"SELF\",[2,0,1]],[\"SELF\",[2,1,0]]]],[3,2,[[\"SELF\",[3,4,2]],[0,[4,1,3]]]]]",
+      "S": 1,
+      "main": 1,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 2,
+      "generators": 1,
+      "generator_relations": [
+        [
+          14,
+          14,
+          7,
+          7,
+          224,
+          224,
+          112,
+          112
+        ]
+      ],
+      "generator_arguments": [
+        [
+          3,
+          4,
+          2
+        ]
+      ],
+      "reachable_states": 3,
+      "complete": true,
+      "boolean_relations": 3,
+      "carry_maps": 2,
+      "metadata": {
+        "key_sha256": "bc22e10bb149c640b776965273fc21fcb272650dbd70676c111b651df9a9c6a9",
+        "wrapper": false,
+        "stratum": "I",
+        "verdict": "growing"
+      },
+      "longest_shortest_word": 2,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0002,
+      "m": 3,
+      "period_expression": "3!",
+      "linear_constant_exact": "1/4",
+      "linear_constant_float": 0.25,
+      "period_exact": "6"
+    },
+    {
+      "name": "grow_10",
+      "key": "[[3,0,[[\"SELF\",[1,2,0]],[\"K\",[2,0,1]],[\"SELF\",[0,1,2]],[\"K\",[1,2,0]],[\"K\",[1,0,2]],[\"SELF\",[1,2,0]],[\"K\",[0,1,2]],[\"K\",[2,1,0]],[\"K\",[2,1,0]],[\"K\",[2,1,0]]]],[3,2,[[0,[4,3,2]],[\"K\",[0,2,3]],[\"SELF\",[4,1,3]],[\"K\",[2,3,0]]]]]",
+      "S": 1,
+      "main": 1,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 2,
+      "generators": 1,
+      "generator_relations": [
+        [
+          48,
+          50,
+          192,
+          200,
+          19,
+          3,
+          76,
+          12
+        ]
+      ],
+      "generator_arguments": [
+        [
+          4,
+          1,
+          3
+        ]
+      ],
+      "reachable_states": 4,
+      "complete": true,
+      "boolean_relations": 4,
+      "carry_maps": 2,
+      "metadata": {
+        "key_sha256": "9d46d50f19d180342d239ebab1c8d3580eda4989eb6bf7545aa524ea4f06c323",
+        "wrapper": false,
+        "stratum": "I",
+        "verdict": "growing"
+      },
+      "longest_shortest_word": 3,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0002,
+      "m": 4,
+      "period_expression": "4!",
+      "linear_constant_exact": "1/5",
+      "linear_constant_float": 0.2,
+      "period_exact": "24"
+    },
+    {
+      "name": "bounded_0",
+      "key": "[[3,2,[[\"K\",[2,3,1]],[\"K\",[3,0,2]],[\"K\",[0,2,4]],[\"K\",[2,0,4]],[\"SELF\",[1,3,4]],[\"SELF\",[3,0,2]],[\"K\",[1,3,0]]]]]",
+      "S": 0,
+      "main": 0,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 1,
+      "generators": 2,
+      "generator_relations": [
+        [
+          64,
+          68,
+          128,
+          34,
+          68,
+          1,
+          34,
+          2
+        ],
+        [
+          2,
+          8,
+          2,
+          4,
+          32,
+          64,
+          16,
+          64
+        ]
+      ],
+      "generator_arguments": [
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          3,
+          0,
+          2
+        ]
+      ],
+      "reachable_states": 596,
+      "complete": true,
+      "boolean_relations": 588,
+      "carry_maps": 8,
+      "metadata": {
+        "key_sha256": "e35d907e41c94089e6687b416a61dc61585bbfde8a7602758b4cef8ae3e9ad2e",
+        "wrapper": false,
+        "stratum": "I",
+        "verdict": "bounded"
+      },
+      "longest_shortest_word": 16,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0058,
+      "m": 596,
+      "period_expression": "596!",
+      "linear_constant_exact": "1/597",
+      "linear_constant_float": 0.0016750418760469012,
+      "period_exact": "98635529061035745912781744259398315050019796451801805551848294097903197709626612351046710269477653957593611338961830934462930186472557437060037420859851462074127365992605649887231985313832210707520582731541121945886481598251211278110870836095080902901383620370245362153347508478069584059089352964624510821615626637590947824877934426072709099030435423684954676157917635983691216674112134851670478627949721516502328047089153324072573057915226267601650987287708108421801452832120352621546490999626111698679672652069139797012306970644393445869897924584645398435420766521852479577435162680098665532713279204957066093844691673834635820635741529495541237722986738074239725538837139250066328936356089588054946728155454450802342008875677611812701428727323347252595703234134719355383743347077821889611995925744031785238897829956008194319490473317519602477836439507541510457862136097983698209742600712993247101474925656774370927992143020701069908122488920578462412008627928343664176877693495783529934236499137165243199383039793436791651663041013320858029746236032252737948278285776674319334336376415493282740792533912539375352793034961664856386637143932030679342031259376962736524358954478438640961861615865709953891024909357016945758235845091787821839953585766400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "name": "bounded_1",
+      "key": "[[3,2,[[\"SELF\",[3,2,0]],[\"SELF\",[4,1,3]],[\"K\",[0,3,2]],[\"K\",[0,1,4]],[\"K\",[1,3,4]],[\"K\",[2,4,1]],[\"SELF\",[1,4,2]],[\"SELF\",[0,3,1]],[\"SELF\",[4,0,1]],[\"K\",[1,0,4]],[\"K\",[4,2,1]]]],[4,1,[[0,[3,1,0]],[\"K\",[2,0,4]]]],[4,0,[[1,[1,3,2,0]],[1,[1,0,2,3]],[1,[2,0,3,1]],[0,[3,1,0]],[\"K\",[3,0,1]]]]]",
+      "S": 0,
+      "main": 2,
+      "wrapper_offset": 1,
+      "living": true,
+      "limit_rounds": 1,
+      "generators": 5,
+      "generator_relations": [
+        [
+          2,
+          48,
+          2,
+          48,
+          12,
+          64,
+          12,
+          64
+        ],
+        [
+          32,
+          34,
+          64,
+          68,
+          34,
+          2,
+          68,
+          4
+        ],
+        [
+          4,
+          4,
+          2,
+          2,
+          64,
+          64,
+          32,
+          32
+        ],
+        [
+          4,
+          10,
+          64,
+          160,
+          5,
+          2,
+          80,
+          32
+        ],
+        [
+          2,
+          8,
+          16,
+          64,
+          2,
+          8,
+          16,
+          64
+        ]
+      ],
+      "generator_arguments": [
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          1,
+          3
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          4,
+          0,
+          1
+        ]
+      ],
+      "reachable_states": 3173,
+      "complete": true,
+      "boolean_relations": 2799,
+      "carry_maps": 23,
+      "metadata": {
+        "key_sha256": "277e4af88ffd793a067ad78ce525a6124ab10246c8712d29eb0e1b13fdace2e5",
+        "wrapper": true,
+        "stratum": "I",
+        "verdict": "bounded"
+      },
+      "longest_shortest_word": 12,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0489,
+      "m": 3173,
+      "period_expression": "3173!",
+      "linear_constant_exact": "1/3174",
+      "linear_constant_float": 0.000315059861373661,
+      "period_decimal_digits": 9735
+    },
+    {
+      "name": "bounded_2",
+      "key": "[[3,2,[[\"SELF\",[3,2,0]],[\"SELF\",[1,4,0]],[\"K\",[2,1,4]],[\"K\",[4,3,0]],[\"SELF\",[4,2,3]],[\"K\",[3,0,4]],[\"K\",[3,4,0]],[\"K\",[0,1,4]]]]]",
+      "S": 0,
+      "main": 0,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 1,
+      "generators": 3,
+      "generator_relations": [
+        [
+          3,
+          16,
+          3,
+          48,
+          12,
+          192,
+          8,
+          192
+        ],
+        [
+          4,
+          64,
+          10,
+          32,
+          4,
+          80,
+          2,
+          32
+        ],
+        [
+          34,
+          2,
+          50,
+          17,
+          136,
+          76,
+          64,
+          68
+        ]
+      ],
+      "generator_arguments": [
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          1,
+          4,
+          0
+        ],
+        [
+          4,
+          2,
+          3
+        ]
+      ],
+      "reachable_states": 5709,
+      "complete": true,
+      "boolean_relations": 5709,
+      "carry_maps": 14,
+      "metadata": {
+        "key_sha256": "ce444059ece19f2d8c58e477a120a74f23ff91074a5a43e048ad678127ee828b",
+        "wrapper": false,
+        "stratum": "I",
+        "verdict": "bounded"
+      },
+      "longest_shortest_word": 18,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0571,
+      "m": 5709,
+      "period_expression": "5709!",
+      "linear_constant_exact": "1/5710",
+      "linear_constant_float": 0.00017513134851138354,
+      "period_decimal_digits": 18970
+    },
+    {
+      "name": "bounded_3",
+      "key": "[[3,2,[[\"SELF\",[4,0,1]],[\"K\",[3,1,4]],[\"SELF\",[0,3,2]],[\"K\",[2,0,3]],[\"K\",[2,1,3]],[\"SELF\",[2,3,4]],[\"SELF\",[0,3,1]]]],[3,2,[[\"K\",[1,4,2]],[0,[0,2,3]]]]]",
+      "S": 0,
+      "main": 1,
+      "wrapper_offset": 1,
+      "living": true,
+      "limit_rounds": 1,
+      "generators": 4,
+      "generator_relations": [
+        [
+          3,
+          12,
+          16,
+          192,
+          3,
+          8,
+          48,
+          192
+        ],
+        [
+          4,
+          8,
+          4,
+          10,
+          80,
+          32,
+          16,
+          32
+        ],
+        [
+          68,
+          68,
+          4,
+          21,
+          168,
+          32,
+          34,
+          34
+        ],
+        [
+          4,
+          8,
+          64,
+          160,
+          5,
+          2,
+          16,
+          32
+        ]
+      ],
+      "generator_arguments": [
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          1
+        ]
+      ],
+      "reachable_states": 29359,
+      "complete": true,
+      "boolean_relations": 29359,
+      "carry_maps": 14,
+      "metadata": {
+        "key_sha256": "432127c418b021d1f7ad899a4a6c3dd27932aab291c45c754346bfdfec35ae20",
+        "wrapper": true,
+        "stratum": "I",
+        "verdict": "undecided"
+      },
+      "longest_shortest_word": 23,
+      "all_flat_calls_injective": true,
+      "seconds": 0.3915,
+      "m": 29359,
+      "period_expression": "29359!",
+      "linear_constant_exact": "1/29360",
+      "linear_constant_float": 3.4059945504087195e-05,
+      "period_decimal_digits": 118421
+    },
+    {
+      "name": "synthetic_read_carried",
+      "key": "[[3,1,[[\"K\",[0,1,3]],[\"SELF\",[0,1,3]]]]]",
+      "S": 0,
+      "main": 0,
+      "wrapper_offset": 0,
+      "living": true,
+      "limit_rounds": 1,
+      "generators": 1,
+      "generator_relations": [
+        [
+          16,
+          34,
+          68,
+          8,
+          16,
+          34,
+          68,
+          8
+        ]
+      ],
+      "generator_arguments": [
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "reachable_states": 2,
+      "complete": true,
+      "boolean_relations": 2,
+      "carry_maps": 2,
+      "metadata": {},
+      "longest_shortest_word": 1,
+      "all_flat_calls_injective": true,
+      "seconds": 0.0001,
+      "m": 2,
+      "period_expression": "2!",
+      "linear_constant_exact": "1/3",
+      "linear_constant_float": 0.3333333333333333,
+      "period_exact": "2"
+    }
+  ],
+  "census_identity_arguments": {
+    "families": 5964,
+    "repeated_argument_calls": 0,
+    "examples": []
+  },
+  "sources": {
+    "research/CARRY-BOUND-20261114-001/referee-R1/codex/grow_sample.json": "251e4f17344dabacfaa21959469cdf30cb460c64d47ada8b8010503c3b800abb",
+    "research/CARRY-BOUND-20261114-001/referee-R1/codex/window_inputs.json": "3bb08cfdad39f6aca6a173d634c09ad2852414913e109e17aca5b2ef07e1a520",
+    "artifacts/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/census_run_results.jsonl.gz": "a8b79d52f0da83d868f680498a483f2827121aea9106888b5b098fdd4bccbb25"
+  },
+  "seconds": 1.684,
+  "peak_rss_kib": 54724,
+  "prohibited_study_python_opened_or_imported": false,
+  "nonclaim": "Finite controls are not a proof of the infinite dichotomy; the report supplies that argument."
+}

@@ -1,0 +1,588 @@
+{
+  "syntax_controls": [
+    {
+      "name": "pendant_own",
+      "expected_R1_all": true,
+      "actual_R1_all": true,
+      "raw": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7,
+        3
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [
+        4
+      ],
+      "flattened_pendant_before_call_guard": [
+        4
+      ]
+    },
+    {
+      "name": "second_constraint_removes_pendant",
+      "expected_R1_all": false,
+      "actual_R1_all": false,
+      "raw": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                2,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7,
+        3
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [],
+      "flattened_pendant_before_call_guard": []
+    },
+    {
+      "name": "both_own_self_arguments_remove_pendant",
+      "expected_R1_all": false,
+      "actual_R1_all": false,
+      "raw": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7,
+        1
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [],
+      "flattened_pendant_before_call_guard": []
+    },
+    {
+      "name": "swap_own_roles_retains_pendant",
+      "expected_R1_all": true,
+      "actual_R1_all": true,
+      "raw": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7,
+        3
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [
+        3
+      ],
+      "flattened_pendant_before_call_guard": [
+        3
+      ]
+    },
+    {
+      "name": "finite_helper_argument_guard",
+      "expected_R1_all": false,
+      "actual_R1_all": false,
+      "raw": [
+        [
+          3,
+          0,
+          [
+            [
+              "K",
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          2,
+          [
+            [
+              0,
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7,
+        3
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [],
+      "flattened_pendant_before_call_guard": [
+        4
+      ]
+    },
+    {
+      "name": "port_third_member_not_own",
+      "expected_R1_all": false,
+      "actual_R1_all": false,
+      "raw": [
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                1
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7,
+        3
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [],
+      "flattened_pendant_before_call_guard": []
+    },
+    {
+      "name": "unread_carried_position",
+      "expected_R1_all": false,
+      "actual_R1_all": false,
+      "raw": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                1,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7,
+        1
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [],
+      "flattened_pendant_before_call_guard": []
+    },
+    {
+      "name": "auto_port_knot_has_no_own",
+      "expected_R1_all": false,
+      "actual_R1_all": false,
+      "raw": [
+        [
+          3,
+          1,
+          [
+            [
+              "SELF",
+              [
+                2,
+                0,
+                1
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        7
+      ],
+      "R_mu": 0,
+      "R_period": 1,
+      "pendant": [],
+      "flattened_pendant_before_call_guard": []
+    },
+    {
+      "name": "wrapper_carries_pendant_knot_port",
+      "expected_R1_all": true,
+      "actual_R1_all": true,
+      "raw": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          1,
+          [
+            [
+              0,
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        3
+      ],
+      "R_mu": 0,
+      "R_period": 1,
+      "pendant": [
+        4
+      ],
+      "flattened_pendant_before_call_guard": [
+        4
+      ]
+    },
+    {
+      "name": "wrapper_loses_only_read_port",
+      "expected_R1_all": false,
+      "actual_R1_all": false,
+      "raw": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          1,
+          [
+            [
+              0,
+              [
+                3,
+                0,
+                1
+              ]
+            ]
+          ]
+        ]
+      ],
+      "R_masks": [
+        6,
+        2
+      ],
+      "R_mu": 1,
+      "R_period": 1,
+      "pendant": [
+        4
+      ],
+      "flattened_pendant_before_call_guard": [
+        4
+      ]
+    }
+  ],
+  "syntax_controls_passed": 10,
+  "pooling_Q_phases_mutant_rejected": {
+    "phases": [
+      [
+        false,
+        false
+      ],
+      [
+        true,
+        false
+      ]
+    ],
+    "correct": false,
+    "wrong_pooled": true
+  },
+  "existential_vs_universal_discriminator": [
+    true,
+    false
+  ],
+  "empty_eligible_set_not_accepted": true,
+  "generic_subset_reference_relation_cases": [
+    {
+      "allowed": [
+        1,
+        6
+      ],
+      "all_minimal_nonshattered_supports": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "generic_bond_through_p_x": true,
+      "exception": false
+    },
+    {
+      "allowed": [
+        2,
+        5
+      ],
+      "all_minimal_nonshattered_supports": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "generic_bond_through_p_x": true,
+      "exception": false
+    },
+    {
+      "allowed": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "all_minimal_nonshattered_supports": [
+        [
+          0,
+          1
+        ]
+      ],
+      "generic_bond_through_p_x": true,
+      "exception": false
+    },
+    {
+      "allowed": [
+        3,
+        4
+      ],
+      "all_minimal_nonshattered_supports": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "generic_bond_through_p_x": true,
+      "exception": false
+    },
+    {
+      "allowed": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "all_minimal_nonshattered_supports": [
+        [
+          0,
+          2
+        ]
+      ],
+      "generic_bond_through_p_x": false,
+      "exception": true
+    },
+    {
+      "allowed": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "all_minimal_nonshattered_supports": [
+        [
+          1,
+          2
+        ]
+      ],
+      "generic_bond_through_p_x": false,
+      "exception": true
+    },
+    {
+      "allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_minimal_nonshattered_supports": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "generic_bond_through_p_x": true,
+      "exception": false
+    }
+  ],
+  "generic_reference_dead_relation_rejected": true
+}

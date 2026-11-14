@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**331 current results** and 5 superseded ones, from 364 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**331 current results** and 5 superseded ones, from 365 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 364 epics with their closures
+- [Epics](#epics): all 365 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1495,5 +1495,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-13 | Does growth survive side branches? (`TRUE-BOND-20261113-001`) | [closure](proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/TRUE-BOND-20261113-001/) |
 | 2026-11-13 | Proved true rates with side branches (`TRUE-RATE-20261113-001`) | [closure](proofs/TRUE-RATE-20261113-001Z/TRUE-RATE-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/TRUE-RATE-20261113-001/) |
 | 2026-11-14 | How common certified counting inside is (`CENSUS-FORGET-20261114-001`) | [closure](proofs/CENSUS-FORGET-20261114-001Z/CENSUS-FORGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/CENSUS-FORGET-20261114-001/) |
+| 2026-11-14 | What makes every way down forget (`FORGET-RULE-20261114-001`) | — | [folder](research/FORGET-RULE-20261114-001/) |
 | 2026-11-14 | Does the law's reach grow to every copy at depth with members anywhere (`FREE-TARGET-20261114-001`) | [closure](proofs/FREE-TARGET-20261114-001Z/FREE-TARGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-TARGET-20261114-001/) |
 

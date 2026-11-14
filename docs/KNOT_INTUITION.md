@@ -3475,6 +3475,10 @@ So holes come in two kinds:
      because, without two knots, its only states are the address's parity and its complement, which those knots forbid (certified to
      level 14); five of the seven have exactly one state up to complement wherever they live
      ([decision note](../research/LEVEL-RETURN-20261113-001/level_return.md)).
+   - **Reach across levels** (`LEVEL-REACH-20261114-001`; referee pending; code by Codex): with knots also joining a level to the
+     next, the least bond from level 3 to level 3 + s is usually the ruler, one more member per level (about half the living weight),
+     absent in about two fifths, and bounded whatever the depth in about one in twenty
+     ([decision note](../research/LEVEL-REACH-20261114-001/level_reach.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

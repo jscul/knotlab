@@ -1,0 +1,607 @@
+{
+  "hiding": {
+    "rows": [
+      1,
+      17,
+      2,
+      18,
+      19,
+      4,
+      20,
+      5,
+      21,
+      6,
+      22,
+      7,
+      23,
+      8,
+      24,
+      9,
+      25,
+      10,
+      26,
+      11,
+      27,
+      12,
+      13,
+      29,
+      14,
+      30
+    ],
+    "plain_pinned": true,
+    "bond_pinned": false,
+    "joint_count": 26,
+    "left_count": 14,
+    "right_count": 2,
+    "witness": null,
+    "cross_bonds": [],
+    "all_three_ports_with_x_full": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "Pprime_equivalence_exhaustive_four_distinction_relations": 255,
+  "fixtures": [
+    {
+      "name": "main_S_own_carried",
+      "raw": [
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "S": 0,
+      "checks": [
+        {
+          "entry": null,
+          "word": [
+            0
+          ],
+          "word_depth": 1,
+          "absolute_depth": 1,
+          "explicit_all_copies": true,
+          "variables": 6,
+          "clauses": 6,
+          "copies": 3,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "window_allowed_count": 20,
+          "full_projection_assignments": 32,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": null,
+          "word": [
+            0,
+            0
+          ],
+          "word_depth": 2,
+          "absolute_depth": 2,
+          "explicit_all_copies": true,
+          "variables": 7,
+          "clauses": 8,
+          "copies": 4,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "window_allowed_count": 32,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": null,
+          "word": [
+            0,
+            0,
+            0
+          ],
+          "word_depth": 3,
+          "absolute_depth": 3,
+          "explicit_all_copies": true,
+          "variables": 8,
+          "clauses": 10,
+          "copies": 5,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "window_allowed_count": 36,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        }
+      ]
+    },
+    {
+      "name": "wrapper_own_carried",
+      "raw": [
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                2,
+                3
+              ]
+            ],
+            [
+              0,
+              [
+                0,
+                3,
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                1,
+                2,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "S": 0,
+      "checks": [
+        {
+          "entry": 1,
+          "word": [],
+          "word_depth": 0,
+          "absolute_depth": 1,
+          "explicit_all_copies": true,
+          "variables": 8,
+          "clauses": 10,
+          "copies": 5,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "window_allowed_count": 20,
+          "full_projection_assignments": 32,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": 2,
+          "word": [],
+          "word_depth": 0,
+          "absolute_depth": 1,
+          "explicit_all_copies": true,
+          "variables": 8,
+          "clauses": 10,
+          "copies": 5,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "window_allowed_count": 18,
+          "full_projection_assignments": 32,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": 1,
+          "word": [
+            0
+          ],
+          "word_depth": 1,
+          "absolute_depth": 2,
+          "explicit_all_copies": true,
+          "variables": 10,
+          "clauses": 14,
+          "copies": 7,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "window_allowed_count": 36,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": 2,
+          "word": [
+            0
+          ],
+          "word_depth": 1,
+          "absolute_depth": 2,
+          "explicit_all_copies": true,
+          "variables": 10,
+          "clauses": 14,
+          "copies": 7,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            7,
+            8
+          ],
+          "window_allowed_count": 30,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": 1,
+          "word": [
+            0,
+            0
+          ],
+          "word_depth": 2,
+          "absolute_depth": 3,
+          "explicit_all_copies": true,
+          "variables": 12,
+          "clauses": 18,
+          "copies": 9,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "window_allowed_count": 36,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": 2,
+          "word": [
+            0,
+            0
+          ],
+          "word_depth": 2,
+          "absolute_depth": 3,
+          "explicit_all_copies": true,
+          "variables": 12,
+          "clauses": 18,
+          "copies": 9,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            9,
+            10
+          ],
+          "window_allowed_count": 30,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        }
+      ]
+    },
+    {
+      "name": "wrapper_start_constraints",
+      "raw": [
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                1,
+                3
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          1,
+          [
+            [
+              "K",
+              [
+                0,
+                1,
+                3
+              ]
+            ],
+            [
+              0,
+              [
+                0,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "S": 0,
+      "checks": [
+        {
+          "entry": 1,
+          "word": [],
+          "word_depth": 0,
+          "absolute_depth": 1,
+          "explicit_all_copies": true,
+          "variables": 6,
+          "clauses": 6,
+          "copies": 3,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "window_allowed_count": 20,
+          "full_projection_assignments": 32,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": 1,
+          "word": [
+            0
+          ],
+          "word_depth": 1,
+          "absolute_depth": 2,
+          "explicit_all_copies": true,
+          "variables": 7,
+          "clauses": 8,
+          "copies": 4,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "window_allowed_count": 36,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        },
+        {
+          "entry": 1,
+          "word": [
+            0,
+            0
+          ],
+          "word_depth": 2,
+          "absolute_depth": 3,
+          "explicit_all_copies": true,
+          "variables": 8,
+          "clauses": 10,
+          "copies": 5,
+          "window_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "window_actual_ids": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "window_allowed_count": 36,
+          "full_projection_assignments": 64,
+          "projection_equal": true,
+          "bond": null,
+          "bond_origins": []
+        }
+      ]
+    }
+  ],
+  "wrong_identity_control": {
+    "repeated_relation": [
+      0,
+      3
+    ],
+    "merged_relation": [
+      0,
+      1
+    ],
+    "spurious_repeated_identity_bond_rejected": true
+  },
+  "wrong_start_control": {
+    "correct_count": 20,
+    "wrong_count": 24,
+    "wrong_start_rejected_by_raw_CNF": true
+  },
+  "seconds": 0.014697322039864957,
+  "forbidden_TOP_python_opened_or_imported": false,
+  "processes": 1,
+  "parallelism": false,
+  "validation": "V2 independently authored same-task AI referee; permitted older referee algorithms reused; no external replication",
+  "sources": {
+    "research/CARRY-BOUND-20261114-001/referee-R1/codex/window_audit.py": "f8d44b3d8ef20c1d94dd39641c5c2c09b4c995b62fbc6afd55aeb02ad228db52"
+  },
+  "scripts": {
+    "pinning_window_core.py": "6939448c3eb0e0186a2640df68767245aa5e95202cc0fe525fb877acc1e0dd1c",
+    "pinning_window_audit.py": "dbcb46d4580badb427d178c3e7b9c0aae5bb939e714bffebfb606cc7bcb847a6"
+  },
+  "peak_rss_kib": 28160
+}

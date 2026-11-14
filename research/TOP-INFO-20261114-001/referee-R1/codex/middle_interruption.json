@@ -1,0 +1,20 @@
+{
+  "file": "middle_panel5.jsonl",
+  "case": 62,
+  "depth": 6,
+  "status": "interrupted_solver_soft_timeout",
+  "session_exit_code": 130,
+  "reason": "Inherited Cadical solve() did not observe the 6-second soft cell deadline while inside a solver call; own session interrupted before the command reached 15 minutes. All completed rows preserved. Remaining/retried cells use limited Glucose with timer, and None raises SearchTimeout rather than becoming UNSAT.",
+  "old_script_sha256": "2670afa01a72668746b3727fdb58ed4667cc196f72055c9388c868c7ba25fd1b",
+  "recovered_source_snapshot": "middle_bonds_soft_timeout.py",
+  "interrupted_at_utc": "2026-11-14 11:40:34 UTC",
+  "second_attempt": {
+    "file": "middle_remaining.jsonl",
+    "case": 62,
+    "depth": 6,
+    "status": "interrupted_soft_timeout_overrun",
+    "session_exit_code": 130,
+    "interrupted_at_utc": "2026-11-14 11:46:07 UTC",
+    "reason": "Same hard cell still costly with limited Glucose; stopped owned session and narrowed the remaining panel to depths3,4 rather than consuming the review budget."
+  }
+}

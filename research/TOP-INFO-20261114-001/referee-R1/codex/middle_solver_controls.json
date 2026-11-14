@@ -1,0 +1,153 @@
+{
+  "fixtures": [
+    {
+      "name": "NAE3",
+      "minimum": 3,
+      "witness": [
+        0,
+        1,
+        2
+      ],
+      "forbidden_states": [
+        0,
+        7
+      ],
+      "by_size": [
+        {
+          "size": 2,
+          "exhausted": true,
+          "queries": 1,
+          "iterations": 0,
+          "method": "all endpoint pairs"
+        },
+        {
+          "size": 3,
+          "exhausted": false,
+          "queries": 2,
+          "iterations": 0,
+          "method": "every endpoint-eligible support, direct SAT/model coverage"
+        }
+      ],
+      "one_deleted_all_shattered": true,
+      "verification": {
+        "support": [
+          0,
+          1,
+          2
+        ],
+        "living": true,
+        "allowed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "non_shattered": true,
+        "deletions": [
+          {
+            "dropped": 0,
+            "allowed": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "full": true
+          },
+          {
+            "dropped": 1,
+            "allowed": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "full": true
+          },
+          {
+            "dropped": 2,
+            "allowed": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "full": true
+          }
+        ],
+        "every_single_deletion_full": true,
+        "endpoints_valid": true,
+        "is_bond": true,
+        "backend": "minisat22; search uses cadical195/glucose42"
+      }
+    },
+    {
+      "name": "opposite_pair",
+      "minimum": 2,
+      "witness": [
+        0,
+        1
+      ],
+      "by_size": [],
+      "one_deleted_all_shattered": true,
+      "verification": {
+        "support": [
+          0,
+          1
+        ],
+        "living": true,
+        "allowed": [
+          1,
+          2
+        ],
+        "non_shattered": true,
+        "deletions": [
+          {
+            "dropped": 0,
+            "allowed": [
+              0,
+              1
+            ],
+            "full": true
+          },
+          {
+            "dropped": 1,
+            "allowed": [
+              0,
+              1
+            ],
+            "full": true
+          }
+        ],
+        "every_single_deletion_full": true,
+        "endpoints_valid": true,
+        "is_bond": true,
+        "backend": "minisat22; search uses cadical195/glucose42"
+      }
+    },
+    {
+      "name": "free",
+      "minimum": null,
+      "proved_lower_bound": 4,
+      "by_size": [
+        {
+          "size": 2,
+          "exhausted": true,
+          "queries": 1,
+          "iterations": 0,
+          "method": "all endpoint pairs"
+        },
+        {
+          "size": 3,
+          "exhausted": true,
+          "queries": 1,
+          "iterations": 0,
+          "method": "every endpoint-eligible support, direct SAT/model coverage"
+        }
+      ]
+    }
+  ],
+  "timeout_is_exception_not_UNSAT": true
+}

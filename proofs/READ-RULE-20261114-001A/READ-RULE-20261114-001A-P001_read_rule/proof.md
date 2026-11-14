@@ -1,6 +1,6 @@
 # The reading theorems
 
-Status: Partial
+Status: Proved
 
 Ticket `READ-RULE-20261114-001A`, 2026-11-14. Statements as frozen in `research/READ-RULE-20261114-001/preregistration.md`.
 Theorems R and R1, Claim 1′, the first part of Claim 2′, and the dichotomy are proved below. The dichotomy is proved by pumping, the

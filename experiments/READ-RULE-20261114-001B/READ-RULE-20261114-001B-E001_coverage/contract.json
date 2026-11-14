@@ -1,0 +1,8 @@
+{"schema_version": 1, "experiment_id": "READ-RULE-20261114-001B-E001", "ticket": "READ-RULE-20261114-001B", "status": "Frozen", "evidence_stage": "confirmatory", "branch": "code_analysis",
+ "question": "Census coverage of Theorems R and R1, the exception's absence, conditional rectangularity, and the converse's counterexample family.",
+ "definitions": {"coverage": "experiments/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/codex/coverage.py (sha256 b9240117312ca7afcddd1ae8640052d353ca69e566a2543d47b2382ee6d2c947)", "statements": "research/READ-RULE-20261114-001/preregistration.md"},
+ "public_inputs": {"code": "Codex's codex/; CARRY-BOUND's window records and machinery"},
+ "forbidden_inputs": ["Census results for these checks before the freeze"],
+ "primary_observable": "Q1-Q3 and gate G", "cheapest_meaningful_control": "a separate R1 implementation; hand-calculated conditional controls",
+ "validation_gate": "G", "predictions": {"Q1": "the exception absent", "Q2": ">=90% conditionally rectangular", "Q3": "the counterexample grows (L = s + 3)"},
+ "stop_rule": "One census computation and the counterexample check; referee hand-off; report.", "runtime": "about ten minutes"}

@@ -1499,6 +1499,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-14 | What makes every way down forget (`FORGET-RULE-20261114-001`) | [closure](proofs/FORGET-RULE-20261114-001Z/FORGET-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FORGET-RULE-20261114-001/) |
 | 2026-11-14 | Does the law's reach grow to every copy at depth with members anywhere (`FREE-TARGET-20261114-001`) | [closure](proofs/FREE-TARGET-20261114-001Z/FREE-TARGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-TARGET-20261114-001/) |
 | 2026-11-14 | Does the top bind the deep levels where parts depend on the whole? (`LEVEL-REACH-20261114-001`) | — | [folder](research/LEVEL-REACH-20261114-001/) |
-| 2026-11-14 | Does reading decide whether the bond grows (`READ-RULE-20261114-001`) | — | [folder](research/READ-RULE-20261114-001/) |
+| 2026-11-14 | Does reading decide whether the bond grows (`READ-RULE-20261114-001`) | [closure](proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/READ-RULE-20261114-001/) |
 | 2026-11-14 | Is identity the whole story of forgetting (`TIE-CYCLE-20261114-001`) | [closure](proofs/TIE-CYCLE-20261114-001Z/TIE-CYCLE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-CYCLE-20261114-001/) |
 

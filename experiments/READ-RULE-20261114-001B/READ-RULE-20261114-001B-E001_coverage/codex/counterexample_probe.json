@@ -1,0 +1,1795 @@
+{
+  "Q3": {
+    "checks": [
+      {
+        "check": "window_no_bound",
+        "status": "fail",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "G_no_certificate",
+        "status": "pass",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "direct_s_plus_3",
+        "expected": 4,
+        "observed": 2,
+        "s": 1,
+        "status": "fail",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "direct_s_plus_3",
+        "expected": 5,
+        "observed": null,
+        "s": 2,
+        "status": "undecided",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "direct_s_plus_3",
+        "expected": 6,
+        "observed": null,
+        "s": 3,
+        "status": "undecided",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "direct_s_plus_3",
+        "expected": 7,
+        "observed": null,
+        "s": 4,
+        "status": "undecided",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "direct_s_plus_3",
+        "expected": 8,
+        "observed": null,
+        "s": 5,
+        "status": "undecided",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "direct_s_plus_3",
+        "expected": 9,
+        "observed": null,
+        "s": 6,
+        "status": "undecided",
+        "variant": "a_repeated_argument"
+      },
+      {
+        "check": "window_no_bound",
+        "status": "fail",
+        "variant": "b_positive_gadget"
+      },
+      {
+        "check": "G_no_certificate",
+        "status": "pass",
+        "variant": "b_positive_gadget"
+      },
+      {
+        "check": "direct_growth_at_least_one",
+        "observed": [
+          2,
+          null
+        ],
+        "s": 2,
+        "status": "undecided",
+        "variant": "b_positive_gadget"
+      },
+      {
+        "check": "direct_growth_at_least_one",
+        "observed": [
+          null,
+          null
+        ],
+        "s": 3,
+        "status": "undecided",
+        "variant": "b_positive_gadget"
+      },
+      {
+        "check": "direct_growth_at_least_one",
+        "observed": [
+          null,
+          null
+        ],
+        "s": 4,
+        "status": "undecided",
+        "variant": "b_positive_gadget"
+      },
+      {
+        "check": "direct_growth_at_least_one",
+        "observed": [
+          null,
+          null
+        ],
+        "s": 5,
+        "status": "undecided",
+        "variant": "b_positive_gadget"
+      },
+      {
+        "check": "direct_growth_at_least_one",
+        "observed": [
+          null,
+          null
+        ],
+        "s": 6,
+        "status": "undecided",
+        "variant": "b_positive_gadget"
+      }
+    ],
+    "evidence_scope": "Original finite-window and finite-reading direct searches only; no extrapolated L(s).",
+    "status": "fail"
+  },
+  "elapsed_seconds": 0.08290478494018316,
+  "invocation": ".venv/bin/python -B; one process; both original window/growth cells and original direct s=1 cells",
+  "process_peak_rss_kib": 42920,
+  "records": [
+    {
+      "operation": "window_growth",
+      "probe_wall_seconds": 0.07343509199563414,
+      "process_peak_rss_kib": 40592,
+      "result": {
+        "R_i": [
+          "0x0244224002442240"
+        ],
+        "ambiguities": [],
+        "c": 1,
+        "caps": [],
+        "depth": {
+          "absolute_copy_depth": "s",
+          "word_length": "s",
+          "word_s0_copy_depth": 0
+        },
+        "gate_a": {
+          "census_R_i": null,
+          "complete": true,
+          "living": true,
+          "passed": true,
+          "relations_match": true
+        },
+        "gate_b": {
+          "applicable": false,
+          "basis": "complete window residues",
+          "complete": true,
+          "passed": true,
+          "violations": []
+        },
+        "gate_e": {
+          "bounded": true,
+          "growing": false,
+          "passed": true
+        },
+        "growth": {
+          "G": {
+            "P_r": null,
+            "all_rectangular_by_length": [
+              false,
+              false
+            ],
+            "certified": false,
+            "complete": true,
+            "length_set_sizes": [
+              1,
+              1
+            ],
+            "limits": {
+              "max_levels": 100000,
+              "max_stored_products": 250000
+            },
+            "period": 1,
+            "r": null,
+            "recurring_word": {
+              "all_nonempty_prefixes_nonrectangular": true,
+              "cycle": [
+                0
+              ],
+              "cycle_products": [
+                "0x2244224422442244"
+              ],
+              "prefix": [
+                0,
+                0
+              ],
+              "prefix_product": "0x2244224422442244"
+            },
+            "repeat_all_rectangular": [
+              false
+            ],
+            "repeat_start": 2,
+            "stored_products": 2
+          },
+          "G2": {
+            "certified": false,
+            "complete": true,
+            "contexts": 2,
+            "length_set_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "r": null,
+            "size": 8
+          },
+          "G2_live": {
+            "certified": false,
+            "complete": true,
+            "contexts": 2,
+            "length_set_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "r": null,
+            "size": 8
+          },
+          "dead_positions": [
+            []
+          ],
+          "live_S": [
+            0,
+            1,
+            2
+          ]
+        },
+        "invalid": false,
+        "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+        "peak_memory_bytes": 41680896,
+        "preparation": {
+          "S": 0,
+          "alt_differs": false,
+          "k_main": 3,
+          "main_block_size": 6,
+          "main_own": 3,
+          "n_defs": 1,
+          "s_block_size": 6,
+          "s_own": 3,
+          "usual_limit_alive": true
+        },
+        "process_peak_rss_bytes": 41566208,
+        "scope": {
+          "delaying_types": [],
+          "in_scope": true,
+          "other_own_from_S": false,
+          "other_own_from_main": false,
+          "other_own_types": [],
+          "wrapper": false
+        },
+        "seconds": 0.005671,
+        "stratum": "I",
+        "stratum_details": {
+          "identity_cycle": true,
+          "status": "identity_suffices"
+        },
+        "syntactic_carried": {
+          "K": [],
+          "knot_meeting_positions": [
+            0,
+            1,
+            2
+          ],
+          "masks": [
+            7,
+            1
+          ],
+          "period": 1,
+          "preperiod": 1
+        },
+        "verdict": "bounded",
+        "weight": 1,
+        "window": {
+          "U_at_repeat": 2,
+          "cap": null,
+          "carried": {
+            "K": [],
+            "knot_meeting_positions": [
+              0,
+              1,
+              2
+            ],
+            "masks": [
+              7,
+              1
+            ],
+            "period": 1,
+            "preperiod": 1
+          },
+          "complete": true,
+          "context_images": [
+            102,
+            255
+          ],
+          "early_states": [
+            {
+              "J": "0x8040201008040201",
+              "allowed_count": 18,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                6,
+                7,
+                8
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "kinds": [
+                    "widened-B"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": false,
+                  "semantic_ties": [],
+                  "tie": false,
+                  "widened_B": true
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                1,
+                2
+              ],
+              "s": 0
+            },
+            {
+              "J": "0x244224002442240",
+              "allowed_count": 36,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "widened-B"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": false,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": true
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ],
+              "s": 1
+            },
+            {
+              "J": "0x2244224422442244",
+              "allowed_count": 48,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "widened-B"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": false,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": true
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ],
+              "s": 2
+            }
+          ],
+          "exclusive_reading": "widened_B",
+          "gate_b": {
+            "applicable": false,
+            "basis": "complete window residues",
+            "complete": true,
+            "passed": true,
+            "violations": []
+          },
+          "levels": [
+            {
+              "U": 2,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "widened_B",
+                "other_any": false,
+                "other_every": false,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": true,
+                "widened_B_every": true,
+                "witness_count": 1
+              },
+              "s": 0,
+              "states": 1
+            },
+            {
+              "U": 2,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "widened_B",
+                "other_any": false,
+                "other_every": false,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": true,
+                "widened_B_every": true,
+                "witness_count": 1
+              },
+              "s": 1,
+              "states": 1
+            },
+            {
+              "U": 2,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "widened_B",
+                "other_any": false,
+                "other_every": false,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": true,
+                "widened_B_every": true,
+                "witness_count": 1
+              },
+              "s": 2,
+              "states": 1
+            }
+          ],
+          "maximum": 2,
+          "period": 1,
+          "preperiod": 2,
+          "repeat_at": 3,
+          "residues": [
+            {
+              "B_covered": false,
+              "B_on_some_phase": false,
+              "U": 2,
+              "carried_masks": [
+                1
+              ],
+              "empty_every": false,
+              "empty_some": false,
+              "knot_meeting_every": true,
+              "knot_meeting_some": true,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "widened_B",
+                "other_any": false,
+                "other_every": false,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": true,
+                "widened_B_every": true,
+                "witness_count": 1
+              },
+              "residue": 0,
+              "s_mod_period": 0
+            }
+          ],
+          "starts": [
+            {
+              "J": "0x8040201008040201",
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                1,
+                2
+              ]
+            }
+          ],
+          "state_bonds": [
+            {
+              "J": "0x244224002442240",
+              "allowed_count": 36,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "widened-B"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": false,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": true
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ]
+            },
+            {
+              "J": "0x2244224422442244",
+              "allowed_count": 48,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "widened-B"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": false,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": true
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ]
+            },
+            {
+              "J": "0x8040201008040201",
+              "allowed_count": 18,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                6,
+                7,
+                8
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "kinds": [
+                    "widened-B"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": false,
+                  "semantic_ties": [],
+                  "tie": false,
+                  "widened_B": true
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                1,
+                2
+              ]
+            }
+          ],
+          "stored_states": 3,
+          "syntactic": {
+            "K": [],
+            "call_arguments": [
+              0,
+              3,
+              4
+            ],
+            "knot_meeting_positions": [
+              0,
+              1,
+              2
+            ],
+            "knots": [
+              [
+                0,
+                3,
+                3
+              ],
+              [
+                0,
+                4,
+                1
+              ],
+              [
+                2,
+                4,
+                5
+              ]
+            ],
+            "pendant": [
+              5
+            ]
+          },
+          "unique_states": 3,
+          "verdict": "bounded"
+        },
+        "wrapper": false
+      },
+      "variant": "a_repeated_argument"
+    },
+    {
+      "operation": "direct",
+      "probe_wall_seconds": 0.0057709659449756145,
+      "process_peak_rss_kib": 42920,
+      "result": {
+        "S": 0,
+        "blocks_through_cutoff_inclusive": true,
+        "by_size": [],
+        "checked_max_size": 6,
+        "clauses": 24,
+        "copies": 4,
+        "cutoff_depth": 3,
+        "evidence_scope": "finite reading; upper bounds only; no growth conclusion",
+        "excluded_nonfaces": 0,
+        "iterations": 0,
+        "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+        "key_sha256": "29adadae31d2bfd91f15de47aed4ef70ef0f9bcef5bd87bbb8e1759897d2d8d2",
+        "limit_relations": {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "limits": {
+          "max_clauses": 100000,
+          "max_copies": 25000,
+          "max_size": 6,
+          "max_variables": 15000,
+          "search_seconds": 480.0,
+          "seeds": 30
+        },
+        "main": 0,
+        "main_equals_S": true,
+        "members": "all unfolded distinctions",
+        "minimum": 2,
+        "models": 2,
+        "one_deleted_all_shattered": true,
+        "peak_rss_kib": 42920,
+        "root_ports": 3,
+        "s": 1,
+        "sat_queries": 2,
+        "search_source": "research/FREE-TARGET-20261114-001/referee-R1/codex/direct_bonds.py",
+        "search_source_sha256": "12fb65d55ce41584b8f7c89caadb30882e1430fc59310ff5999fc571e9ff4915",
+        "seconds": 0.005723581998609006,
+        "status": "exact_minimum",
+        "target_copies": 1,
+        "target_definitions": [
+          0
+        ],
+        "targets": 3,
+        "targets_rule": "all covered S copies at absolute depth s",
+        "usual_limit_alive": true,
+        "variables": 15,
+        "verification": {
+          "allowed": [
+            1,
+            2
+          ],
+          "backend": "glucose42",
+          "deletions": [
+            {
+              "allowed_count": 2,
+              "full": true,
+              "variable": 0
+            },
+            {
+              "allowed_count": 2,
+              "full": true,
+              "variable": 6
+            }
+          ],
+          "every_deletion_full": true,
+          "is_bond": true,
+          "living": true,
+          "non_shattered": true,
+          "support": [
+            0,
+            6
+          ]
+        },
+        "witness": [
+          0,
+          6
+        ],
+        "witness_detail": [
+          {
+            "is_target": false,
+            "is_top_port": true,
+            "origin": {
+              "top_port": 0
+            },
+            "variable": 0
+          },
+          {
+            "is_target": true,
+            "is_top_port": false,
+            "origin": {
+              "address": [
+                3
+              ],
+              "covered": true,
+              "definition": 0,
+              "depth": 1,
+              "entry_index": null,
+              "flat_index": 3,
+              "raw_owner": {
+                "definition": 0,
+                "own_index": 0
+              },
+              "word": [
+                0
+              ]
+            },
+            "variable": 6
+          }
+        ]
+      },
+      "s": 1,
+      "variant": "a_repeated_argument"
+    },
+    {
+      "operation": "window_growth",
+      "probe_wall_seconds": 0.0026518380036577582,
+      "process_peak_rss_kib": 42920,
+      "result": {
+        "R_i": [
+          "0x0244224002442240"
+        ],
+        "ambiguities": [],
+        "c": 1,
+        "caps": [],
+        "depth": {
+          "absolute_copy_depth": "s",
+          "word_length": "s",
+          "word_s0_copy_depth": 0
+        },
+        "gate_a": {
+          "census_R_i": null,
+          "complete": true,
+          "living": true,
+          "passed": true,
+          "relations_match": true
+        },
+        "gate_b": {
+          "applicable": false,
+          "basis": "complete window residues",
+          "complete": true,
+          "passed": true,
+          "violations": []
+        },
+        "gate_e": {
+          "bounded": true,
+          "growing": false,
+          "passed": true
+        },
+        "growth": {
+          "G": {
+            "P_r": null,
+            "all_rectangular_by_length": [
+              false,
+              false
+            ],
+            "certified": false,
+            "complete": true,
+            "length_set_sizes": [
+              1,
+              1
+            ],
+            "limits": {
+              "max_levels": 100000,
+              "max_stored_products": 250000
+            },
+            "period": 1,
+            "r": null,
+            "recurring_word": {
+              "all_nonempty_prefixes_nonrectangular": true,
+              "cycle": [
+                0
+              ],
+              "cycle_products": [
+                "0x2244224422442244"
+              ],
+              "prefix": [
+                0,
+                0
+              ],
+              "prefix_product": "0x2244224422442244"
+            },
+            "repeat_all_rectangular": [
+              false
+            ],
+            "repeat_start": 2,
+            "stored_products": 2
+          },
+          "G2": {
+            "certified": false,
+            "complete": true,
+            "contexts": 2,
+            "length_set_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "r": null,
+            "size": 8
+          },
+          "G2_live": {
+            "certified": false,
+            "complete": true,
+            "contexts": 2,
+            "length_set_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "r": null,
+            "size": 8
+          },
+          "dead_positions": [
+            []
+          ],
+          "live_S": [
+            0,
+            1,
+            2
+          ]
+        },
+        "invalid": false,
+        "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+        "peak_memory_bytes": 44195840,
+        "preparation": {
+          "S": 0,
+          "alt_differs": false,
+          "k_main": 3,
+          "main_block_size": 9,
+          "main_own": 6,
+          "n_defs": 1,
+          "s_block_size": 9,
+          "s_own": 6,
+          "usual_limit_alive": true
+        },
+        "process_peak_rss_bytes": 43950080,
+        "scope": {
+          "delaying_types": [],
+          "in_scope": true,
+          "other_own_from_S": false,
+          "other_own_from_main": false,
+          "other_own_types": [],
+          "wrapper": false
+        },
+        "seconds": 0.002611,
+        "stratum": "I",
+        "stratum_details": {
+          "identity_cycle": true,
+          "status": "identity_suffices"
+        },
+        "syntactic_carried": {
+          "K": [],
+          "knot_meeting_positions": [
+            0,
+            1,
+            2
+          ],
+          "masks": [
+            7,
+            1
+          ],
+          "period": 1,
+          "preperiod": 1
+        },
+        "verdict": "bounded",
+        "weight": 1,
+        "window": {
+          "U_at_repeat": 2,
+          "cap": null,
+          "carried": {
+            "K": [],
+            "knot_meeting_positions": [
+              0,
+              1,
+              2
+            ],
+            "masks": [
+              7,
+              1
+            ],
+            "period": 1,
+            "preperiod": 1
+          },
+          "complete": true,
+          "context_images": [
+            102,
+            255
+          ],
+          "early_states": [
+            {
+              "J": "0x8040201008040201",
+              "allowed_count": 108,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "kinds": [
+                    "other"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": true,
+                  "semantic_ties": [],
+                  "tie": false,
+                  "widened_B": false
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                1,
+                2
+              ],
+              "s": 0
+            },
+            {
+              "J": "0x244224002442240",
+              "allowed_count": 216,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "other"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": true,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": false
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ],
+              "s": 1
+            },
+            {
+              "J": "0x2244224422442244",
+              "allowed_count": 288,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "other"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": true,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": false
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ],
+              "s": 2
+            }
+          ],
+          "exclusive_reading": "other",
+          "gate_b": {
+            "applicable": false,
+            "basis": "complete window residues",
+            "complete": true,
+            "passed": true,
+            "violations": []
+          },
+          "levels": [
+            {
+              "U": 2,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "other",
+                "other_any": true,
+                "other_every": true,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": false,
+                "widened_B_every": false,
+                "witness_count": 1
+              },
+              "s": 0,
+              "states": 1
+            },
+            {
+              "U": 2,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "other",
+                "other_any": true,
+                "other_every": true,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": false,
+                "widened_B_every": false,
+                "witness_count": 1
+              },
+              "s": 1,
+              "states": 1
+            },
+            {
+              "U": 2,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "other",
+                "other_any": true,
+                "other_every": true,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": false,
+                "widened_B_every": false,
+                "witness_count": 1
+              },
+              "s": 2,
+              "states": 1
+            }
+          ],
+          "maximum": 2,
+          "period": 1,
+          "preperiod": 2,
+          "repeat_at": 3,
+          "residues": [
+            {
+              "B_covered": false,
+              "B_on_some_phase": false,
+              "U": 2,
+              "carried_masks": [
+                1
+              ],
+              "empty_every": false,
+              "empty_some": false,
+              "knot_meeting_every": true,
+              "knot_meeting_some": true,
+              "readings": {
+                "B_any": false,
+                "B_every": false,
+                "basis": "all equally least U witnesses",
+                "exclusive": "other",
+                "other_any": true,
+                "other_every": true,
+                "tie_any": false,
+                "tie_every": false,
+                "widened_B_any": false,
+                "widened_B_every": false,
+                "witness_count": 1
+              },
+              "residue": 0,
+              "s_mod_period": 0
+            }
+          ],
+          "starts": [
+            {
+              "J": "0x8040201008040201",
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                1,
+                2
+              ]
+            }
+          ],
+          "state_bonds": [
+            {
+              "J": "0x244224002442240",
+              "allowed_count": 216,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "other"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": true,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": false
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ]
+            },
+            {
+              "J": "0x2244224422442244",
+              "allowed_count": 288,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0
+                  ],
+                  "kinds": [
+                    "other"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": true,
+                  "semantic_ties": [
+                    {
+                      "copy_port": 1,
+                      "main": 0,
+                      "opposite": true
+                    }
+                  ],
+                  "tie": false,
+                  "widened_B": false
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                4,
+                5
+              ]
+            },
+            {
+              "J": "0x8040201008040201",
+              "allowed_count": 108,
+              "g": 2,
+              "labels": [
+                0,
+                1,
+                2,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "least_bonds": [
+                {
+                  "B": false,
+                  "carried_positions": [
+                    0,
+                    1,
+                    2
+                  ],
+                  "kinds": [
+                    "other"
+                  ],
+                  "members": [
+                    0,
+                    6
+                  ],
+                  "other": true,
+                  "semantic_ties": [],
+                  "tie": false,
+                  "widened_B": false
+                }
+              ],
+              "partition": [
+                0,
+                1,
+                2,
+                0,
+                1,
+                2
+              ]
+            }
+          ],
+          "stored_states": 3,
+          "syntactic": {
+            "K": [],
+            "call_arguments": [
+              0,
+              3,
+              4
+            ],
+            "knot_meeting_positions": [
+              0,
+              1,
+              2
+            ],
+            "knots": [
+              [
+                0,
+                3,
+                6
+              ],
+              [
+                0,
+                3,
+                7
+              ],
+              [
+                0,
+                3,
+                8
+              ],
+              [
+                6,
+                7,
+                8
+              ],
+              [
+                0,
+                4,
+                1
+              ],
+              [
+                2,
+                4,
+                5
+              ]
+            ],
+            "pendant": [
+              5
+            ]
+          },
+          "unique_states": 3,
+          "verdict": "bounded"
+        },
+        "wrapper": false
+      },
+      "variant": "b_positive_gadget"
+    },
+    {
+      "operation": "direct",
+      "probe_wall_seconds": 0.0008143660379573703,
+      "process_peak_rss_kib": 42920,
+      "result": {
+        "S": 0,
+        "blocks_through_cutoff_inclusive": true,
+        "by_size": [],
+        "checked_max_size": 6,
+        "clauses": 48,
+        "copies": 4,
+        "cutoff_depth": 3,
+        "evidence_scope": "finite reading; upper bounds only; no growth conclusion",
+        "excluded_nonfaces": 0,
+        "iterations": 0,
+        "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+        "key_sha256": "a7af13f2e91fcf226cad134539aeecf0058c7553db648b4b14adc80b646230ae",
+        "limit_relations": {
+          "0": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "limits": {
+          "max_clauses": 100000,
+          "max_copies": 25000,
+          "max_size": 6,
+          "max_variables": 15000,
+          "search_seconds": 480.0,
+          "seeds": 30
+        },
+        "main": 0,
+        "main_equals_S": true,
+        "members": "all unfolded distinctions",
+        "minimum": 2,
+        "models": 2,
+        "one_deleted_all_shattered": true,
+        "peak_rss_kib": 42920,
+        "root_ports": 3,
+        "s": 1,
+        "sat_queries": 2,
+        "search_source": "research/FREE-TARGET-20261114-001/referee-R1/codex/direct_bonds.py",
+        "search_source_sha256": "12fb65d55ce41584b8f7c89caadb30882e1430fc59310ff5999fc571e9ff4915",
+        "seconds": 0.0007831520633772016,
+        "status": "exact_minimum",
+        "target_copies": 1,
+        "target_definitions": [
+          0
+        ],
+        "targets": 6,
+        "targets_rule": "all covered S copies at absolute depth s",
+        "usual_limit_alive": true,
+        "variables": 27,
+        "verification": {
+          "allowed": [
+            1,
+            2
+          ],
+          "backend": "glucose42",
+          "deletions": [
+            {
+              "allowed_count": 2,
+              "full": true,
+              "variable": 0
+            },
+            {
+              "allowed_count": 2,
+              "full": true,
+              "variable": 9
+            }
+          ],
+          "every_deletion_full": true,
+          "is_bond": true,
+          "living": true,
+          "non_shattered": true,
+          "support": [
+            0,
+            9
+          ]
+        },
+        "witness": [
+          0,
+          9
+        ],
+        "witness_detail": [
+          {
+            "is_target": false,
+            "is_top_port": true,
+            "origin": {
+              "top_port": 0
+            },
+            "variable": 0
+          },
+          {
+            "is_target": true,
+            "is_top_port": false,
+            "origin": {
+              "address": [
+                6
+              ],
+              "covered": true,
+              "definition": 0,
+              "depth": 1,
+              "entry_index": null,
+              "flat_index": 3,
+              "raw_owner": {
+                "definition": 0,
+                "own_index": 0
+              },
+              "word": [
+                0
+              ]
+            },
+            "variable": 9
+          }
+        ]
+      },
+      "s": 1,
+      "variant": "b_positive_gadget"
+    }
+  ],
+  "source_sha256": {
+    "experiments/CARRY-BOUND-20261114-001A/CARRY-BOUND-20261114-001A-E001_window/codex/brute.py": "a1fc2a4264b49a0ba707d9898fba1eab572ea6e7938351be71d4fc55d7b7392b",
+    "experiments/CARRY-BOUND-20261114-001A/CARRY-BOUND-20261114-001A-E001_window/codex/direct.py": "1c7003835a1156923af37800925d2f11ffefa922fa9347d621e07bac56ba85b6",
+    "experiments/CARRY-BOUND-20261114-001A/CARRY-BOUND-20261114-001A-E001_window/codex/inputs.py": "1305f5b9c850ad8677928082c4c0d755ee0deaade8949b8979a2943811c0358b",
+    "experiments/CARRY-BOUND-20261114-001A/CARRY-BOUND-20261114-001A-E001_window/codex/scope.py": "320bc0acedc631ed46caa84b47a87f6c3f6a10e51068b9a255b16056e69a652a",
+    "experiments/CARRY-BOUND-20261114-001A/CARRY-BOUND-20261114-001A-E001_window/codex/window.py": "2c877c44ac1c3488e411f3e816c16e4683723a721a507cdbb40f3d11a624779b",
+    "experiments/FORGET-RULE-20261114-001A/FORGET-RULE-20261114-001A-E001_rule/gadget_control.py": "4c3b90bb4c5041ee40499996bd3280215f9955c136a63d06d3feb6d3b230f90f",
+    "experiments/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/codex/counterexample.py": "24ba32ba2bcc08d650a1c80bd8164cab572cd50b4f4145acc002e31d2eb89cb9"
+  },
+  "stage": "scheduled_tiny_probe",
+  "variants": {
+    "a_repeated_argument": {
+      "S": 0,
+      "defs": [
+        [
+          3,
+          3,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                4,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                4,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "key": "[[3,3,[[\"K\",[0,3,3]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "main": 0,
+      "main_equals_S": true,
+      "own_names": [
+        "u",
+        "x",
+        "w"
+      ],
+      "variant": "a_repeated_argument"
+    },
+    "b_positive_gadget": {
+      "S": 0,
+      "defs": [
+        [
+          3,
+          6,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                6
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                3,
+                7
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                3,
+                8
+              ]
+            ],
+            [
+              "K",
+              [
+                6,
+                7,
+                8
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                4,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                4,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                0,
+                3,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[0,3,6]],[\"K\",[0,3,7]],[\"K\",[0,3,8]],[\"K\",[6,7,8]],[\"K\",[0,4,1]],[\"K\",[2,4,5]],[\"SELF\",[0,3,4]]]]]",
+      "main": 0,
+      "main_equals_S": true,
+      "own_names": [
+        "u",
+        "x",
+        "w",
+        "gadget_u",
+        "gadget_v",
+        "gadget_w"
+      ],
+      "variant": "b_positive_gadget"
+    }
+  }
+}

@@ -3451,6 +3451,11 @@ So holes come in two kinds:
      certificate of at most four members (proved per family by an exact window): a value carried from the top and read by a knot, or a one-way order, keeps the top readable. The other tenth carry only
      values no knot reads; without them every way down forgets, so the bond grows (proved). The census's first-ray growth now splits
      58% grows, 40% bounded, 2% undecided ([decision note](../research/CARRY-BOUND-20261114-001/carry_bound.md)).
+   - **Does reading decide growth** (`READ-RULE-20261114-001`; referee pending): proved, a value carried from the top and read by
+     a knot together with something of the deep copy's own gives a bond of at most three members, unless a tie splits that knot (at
+     least 87.5% of the bounded census weight); and the law's reach never grows slowly: on each residue of the depth it is eventually
+     bounded or at least linear. Whether growth needs every carried value unread is open; the one counterexample tried failed
+     ([decision note](../research/READ-RULE-20261114-001/read_rule.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what
      separates decidable from undecidable nesting. With knots placed by a small automaton on addresses, so that a part's joining

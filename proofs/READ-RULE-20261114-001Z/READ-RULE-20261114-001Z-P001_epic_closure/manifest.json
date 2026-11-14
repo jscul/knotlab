@@ -1,0 +1,93 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "READ-RULE-20261114-001Z-P001",
+ "canonical_id": "READ-RULE-20261114-001Z-P001",
+ "kind": "proof",
+ "ticket": "READ-RULE-20261114-001Z",
+ "proof": "READ-RULE-20261114-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: does reading decide whether the bond grows",
+ "status": "Proved",
+ "claim": "Ledger closing READ-RULE-20261114-001: ticket A (Theorems R and R1, Claim 1', the pumping dichotomy, proved) and ticket B (census coverage; Q1-Q3 failed informatively); no correction; referee pending; recommendation research directions, B173. No new claim.",
+ "dependencies": [
+  "READ-RULE-20261114-001A",
+  "READ-RULE-20261114-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "READ-RULE-20261114-001",
+  "epic_path": [
+   "READ-RULE-20261114-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/contract.json": "22817e4409440ca866c6eb0c446ad64ab2fe4728f4cdcfeadab2313511beb4f0",
+  "proofs/READ-RULE-20261114-001A/READ-RULE-20261114-001A-P001_read_rule/manifest.json": "f0017da9c058def56a7b02911ab1160faeba745925b33d0a4136044286d1b394",
+  "experiments/READ-RULE-20261114-001B/READ-RULE-20261114-001B-E001_coverage/codex/summary.json": "a08e5744c6a0a06910148588a30eac89e0ec5e6ab249c6b58b093b88548871e5"
+ },
+ "paths": {
+  "manifest": "proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/result.json",
+  "check": "proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-13; referee pending (the referee thread).",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

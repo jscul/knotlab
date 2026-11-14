@@ -34,8 +34,10 @@ grows along every path with members on it — an upper-bound reading of "counts 
 - **Path-independent settled classes.** S1 (dead limit), S2 (no copy) and S3 (no own distinctions of S) hold on every path. S4 is
   **not** path-independent and is recomputed over all paths (an own distinction may be free against the first call but constrained
   against another).
-- **Trivial equalities.** If two SELF calls are duplicates or images of each other under a port symmetry of S, they give the same
-  ray, so L_path = L_ray with no new content; a grower over paths counts as genuine only when its calls are inequivalent.
+- ~~**Trivial equalities.** If two SELF calls are duplicates or images of each other under a port symmetry of S, they give the same
+  ray, so L_path = L_ray with no new content;~~ *withdrawn after the referee (Block on the justification): false, one of the four
+  equivalent-call growers has L_path(3) = 3 against L_first(3) = 4, and all four are bounded over paths.* A grower over paths counts
+  as genuine only when its calls are inequivalent: this is kept as a declared estimand, without that justification.
 - **L_path ≤ L_ray** at every depth (the min includes the first ray): a gate, not a prediction.
 
 ## Reporting and words
@@ -124,7 +126,7 @@ reviewed the replacement design cold (`advisor_review_answer_2.md`); its points 
   draws; they are near the count shares here (6,989 draws on 6,925 growers). Unresolved families count against a class (low) and
   for it (high). The 5% undecided rule is dropped, because the bands already carry the unresolved.
 - **P1, the verdict reading.** The count share of bounded-over-paths among sampled G families with at least two inequivalent SELF
-  calls. Families whose calls are all equivalent grow by construction (L_path = L_ray), so they are reported separately.
+  calls. Families whose calls are all equivalent are reported separately (a declared estimand; *the justification that they grow by construction is withdrawn after the referee*).
   - **Holds** if the low band's Wilson lower end is at least 75%.
   - **Fails** if the high band's Wilson upper end is below 75%.
   - Otherwise **undecided**.
@@ -146,3 +148,21 @@ The smoke could not be finished: the runner rightly refused to add rows from the
 the patch. G-brute's panel source is therefore a 300-row composite of the frozen sample, the first 150 of stratum G and the first
 150 of stratum N in selection order (`codex/sample/brute_panel_source.jsonl`). Codex's `run_brute.py` chooses the panel from it as
 frozen (`max_then_sum`). G-reg is judged as clarified, on families with one SELF call and one entry.
+
+## Prior work in the program
+
+Added after the referee (2026-11-14): the pre-registration was frozen before the objects gate existed (2026-11-13 17:36 UTC). The searches below were
+run with `--until 2026-11-13`, the freeze date.
+
+`python3 -B scripts/track.py objects "least bond over all descending paths of copies" --until 2026-11-13 --exclude EVERY-RAY-20261113-001`
+`python3 -B scripts/track.py objects "members-anywhere bond side branches nested" --until 2026-11-13 --exclude EVERY-RAY-20261113-001`
+`python3 -B scripts/track.py objects "first-ray growers with two or more SELF calls" --until 2026-11-13 --exclude EVERY-RAY-20261113-001`
+
+- `PROVED-RATE-20261113-001`: the first-ray rates; the population's source.
+- `TRUE-BOND-20261113-001`, `TRUE-RATE-20261113-001`, `BRANCH-DEPTH-20261112-001`: the members-anywhere bond to a fixed first-branch
+  target, a relative; neither feasible set contains the other's (the referee's note).
+- `BONDS-AND-COUNT-20261112-001`: a relative, one family.
+- `REACH-CENSUS-20261113-001`: the first-ray classes and the population.
+- `LOOP-LOCK-20261112-001`: unrelated (locks on loops of stitched bases), a lexical hit.
+
+None reads the minimum over descending paths.

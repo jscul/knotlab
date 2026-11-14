@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: every descending path, confirmed by its referee, four sentences withdrawn
+
+- The study of the law's reach over every path of copies (`EVERY-RAY-20261113-001`) was confirmed in its per-depth result and all
+  three predictions; the referee independently certified 201 of 204 bounded families without a carried distinction. Four sentences
+  are withdrawn and restated: a short bond at every depth was read as one short path, which does not follow (a sampled family has
+  short bonds at every depth on paths that change with the depth, while every single path grows; one-path witnesses are certified in
+  188 of 204); the carried-only counts mixed in unresolved cases (3 and 1, and 15 and 5); the bound counts came from the wrong field;
+  and a justification for setting aside families with equivalent calls was false. The reach census's "another ray seldom contradicts
+  first-ray growth" now names the one ray it read ([decision note](research/EVERY-RAY-20261113-001/every_ray.md)).
+- Unchanged: every count, the per-depth minima and P1 to P3.
+
 ## 13 November 2026: knots placed by address maps, confirmed by its referee, one sentence withdrawn
 
 - The census of knots placed by address maps (`ADDR-KNOTS-20261113-001`) was confirmed by its referee with fresh code: the fates, the

@@ -2101,8 +2101,8 @@ evidence: results and their status come from the records each entry links.
   classes.
 - **History.**
   - 2026-11-13 · Overturned for growth by `EVERY-RAY-20261113-001`: over every descending path (the call chosen at each level, the
-    entry too), 69% to 78% of sampled first-ray growers with inequivalent SELF calls are bounded, almost all without a carried port,
-    and a quarter of those only by a mixed path; growth classified along the first ray is not growth with depth. Bounded verdicts
+    entry too), in 69% to 78% of sampled first-ray growers with inequivalent SELF calls, for each large depth some path has a short
+    bond (per depth; one path for every depth in 188 of 204), almost all without a carried port; growth classified along the first ray is not growth with depth. Bounded verdicts
     along the first ray still hold (L_path ≤ L_ray) ([every descending path](../research/EVERY-RAY-20261113-001/every_ray.md)).
   - 2026-11-13 · Challenge restated after `REACH-CENSUS-20261113-001`'s referee: of the 131 last-call-bounded growers, 99 carry a top
     port down that ray by identity, so their bounded bond is local (A81); the challenge rests on the 32 bounded without a carried

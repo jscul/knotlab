@@ -3419,10 +3419,11 @@ So holes come in two kinds:
      into every copy (a local bond, as in `TRUE-RATE-20261113-001`); on uncarried bonds the first-ray bond grows in about two thirds (checked on one-definition families; no lower bound on the true bond), alike in
      families that live at every depth and in those alive only in the limit; another ray bounds 32 of the 224 proved growers
      without a carried port ([decision note](../research/REACH-CENSUS-20261113-001/reach_census.md)).
-   - **Every descending path** (`EVERY-RAY-20261113-001`; referee pending; code by Codex): over every path of copies (the self-call
-     chosen at each level), 69% to 78% of sampled first-ray growers with a real choice are bounded along some path, almost all without
-     a carried top port and a quarter only by mixing calls, so growth along one ray is mostly a choice of ray; 66 of 300 grow along
-     every path, fewer as self-calls multiply; a sixth of the families with no first-ray bond have one on another path
+   - **Every descending path** (`EVERY-RAY-20261113-001`; refereed, confirmed with fixes; code by Codex): over every path of copies
+     (the self-call chosen at each level), in 69% to 78% of sampled first-ray growers with a real choice, for each large depth some
+     path (possibly depending on the depth) has a short bond, almost always without a carried top port; one path does it for every
+     depth in 188 of 204; so growth along one ray is mostly a choice of ray. In this sample the per-depth minimum grows in 66 of 300,
+     fewer as self-calls multiply; a sixth of the families with no first-ray bond have one on another path
      ([decision note](../research/EVERY-RAY-20261113-001/every_ray.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what

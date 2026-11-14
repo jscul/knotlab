@@ -52,19 +52,23 @@ first ray, it is bounded in about 70%, but mostly because the ray carries a top 
 depth. Set those aside and the picture turns: on uncarried bonds the first-ray bond grows linearly, mostly at one or one half member
 per level, in about two thirds, and is genuinely short in one third, in families that live at every depth and in those alive only in
 the limit alike (the thread's carried split, confirmed by R2 on the one-definition families). Growth of a ray bond is no lower bound
-on the true least bond: side branches shorten it in at least 62 of the 226 proved growers (`TRUE-BOND-20261113-001`). Another ray
-seldom contradicts first-ray growth: in at least 32 of the 224 families where it was proved, another ray reaches depth s within five
-members without carrying a top port, and in 99 more only by carrying one; in the 3,000-family sample a genuinely short second-ray
-bond contradicts it in 31 of 645 growers (4.8%), and 297 (46%) grow on both rays. *(Rewritten after the referee and R2.)*
+on the true least bond: side branches shorten it in at least 62 of the 226 proved growers (`TRUE-BOND-20261113-001`). The
+last-call ray seldom contradicts first-ray growth: in at least 32 of the 224 families where it was proved, it reaches depth s within
+five members without carrying a top port, and in 99 more only by carrying one; in the 3,000-family sample a genuinely short
+last-call bond contradicts it in 31 of 645 growers (4.8%), and 297 (46%) grow on both rays. *(Rewritten after the referee and R2.)*
+*Narrowed on 2026-11-14 after `EVERY-RAY-20261113-001`'s referee:* over all descending paths, depth by depth, a short uncarried bond
+contradicts first-ray growth in 68.9% to 77.7% of a sample of inequivalent-call growers, so the second ray read here is not
+representative of the other paths.
 
 ## Reading
 
 **Interpretation, not a theorem.**
 - **Lengthening along a ray is uncommon by weight but usual where a genuine bond exists.** Along a chosen ray the bond lengthens in
   about 6% of the weight. Among the bonds that do cross depth (uncarried), first-ray lengthening is the majority. On the last-call
-  ray a genuinely short bond contradicts it in only 31 of 645 sampled growers; 297 grow on both rays, 283 are bounded there only
-  through a carried port, and 34 are lost, absent or unresolved. Whether it survives every path of copies is
-  `EVERY-RAY-20261113-001`'s question, and whether it survives side branches `TRUE-RATE-20261113-001`'s.
+  ray (one other ray, *named after EVERY-RAY's referee*) a genuinely short bond contradicts it in only 31 of 645 sampled growers; 297 grow on both rays, 283 are bounded there only
+  through a carried port, and 34 are lost, absent or unresolved. Over every path of copies it mostly does not:
+  depth by depth, some path has a short uncarried bond in 69% to 78% of sampled growers (`EVERY-RAY-20261113-001`). Whether it
+  survives side branches is `TRUE-RATE-20261113-001`'s question.
 - **For the owner's nested parts.** Where the larger pattern holds the smaller ones close, it usually does so by sharing a top
   distinction with every copy, not by a short chain of constraint. Where no distinction is shared, each level usually adds to the
   first-ray bond, as a count would; whether it adds to the true distance is open, since side branches can shorten it. *(Rewritten

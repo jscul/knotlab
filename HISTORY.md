@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: the forgetting rule's sentence repaired by its referee
+
+- In the study of what makes every way down forget (`FORGET-RULE-20261114-001`), the sufficient rule's sentence was ambiguous: read
+  literally, it let a value be peeled away while the next call still uses it, and that version is false (a counterexample outside the
+  census). The rule is now stated as the code always ran it, and the referee found it sound on about 240,000 families outside the
+  census. Also narrowed: an identity cycle (and the tie lemma of `TIE-CYCLE-20261114-001`) prevents forgetting only in a family with
+  an allowed state; the rules decide forgetting, and reading forgetting as growth keeps the census share's scope
+  ([decision note](research/FORGET-RULE-20261114-001/forget_rule.md)).
+- Unchanged: every count and verdict.
+
 ## 14 November 2026: the census share of counting inside, restricted by its referee
 
 - The census share of nested patterns in which the law counts depth with nothing chosen (`CENSUS-FORGET-20261114-001`) was

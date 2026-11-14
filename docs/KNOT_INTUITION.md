@@ -3437,8 +3437,8 @@ So holes come in two kinds:
      copies of the recursive definition reached through its own calls; where another recursive definition
      offers its own copies, bonds can stay at three members); none of the limit-only
      growers that started this line forgets ([decision note](../research/CENSUS-FORGET-20261114-001/census_forget.md)).
-   - **What makes every way down forget** (`FORGET-RULE-20261114-001`; referee pending): a port handed to itself around a cycle of
-     calls blocks forgetting (proved), and separation of the top from depth r after peeling the always-satisfiable knots implies it
+   - **What makes every way down forget** (`FORGET-RULE-20261114-001`; refereed, confirmed with fixes, the rule's sentence repaired):
+     in a family with an allowed state, a port handed to itself around a cycle of calls blocks forgetting (proved), and separation of the top from depth r after peeling the always-satisfiable knots implies it
      (proved; it covers 37% of the forgetting families); in the census no identity cycle means forgetting in all chains and 94% of the
      rest, the exceptions carrying the value through knots that force equality, so the memory of depth is identity
      ([decision note](../research/FORGET-RULE-20261114-001/forget_rule.md)).

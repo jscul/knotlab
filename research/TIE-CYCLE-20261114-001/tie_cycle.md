@@ -28,7 +28,7 @@ absence of coordinate self-ties, and how non-rectangular idempotents divide into
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
 | 1 | **Forgetting is exactly: every idempotent is rectangular (Theorem I).** Rectangular relations form an ideal, and every long word has an idempotent factor, so the two are equivalent. It checks on every decided family of both halves (0 violations on 12,759). | proved; checked | H3 held |
-| 2 | **A tie cycle prevents forgetting.** An equality or inequality on one coordinate, with both values present, is never a product. No family with a tie cycle forgets (0 of 6,445 held out). Ties beyond identity are rare: a tie forced through knots, with no port passed unchanged, occurs in 5 training families and 1 held out. | proved | H1 held |
+| 2 | **A tie cycle prevents forgetting,** in a living family (*narrowed after FORGET-RULE's referee*, the same premise as rule N). An equality or inequality on one coordinate, with both values present, is never a product. No family with a tie cycle forgets (0 of 6,445 held out). Ties beyond identity are rare: a tie forced through knots, with no port passed unchanged, occurs in 5 training families and 1 held out. | proved | H1 held |
 | 3 | **No tie cycle almost means forgetting, but not quite.** Without a tie cycle every chain forgets (2,097 of 2,097 held out; 2,126 of 2,126 in training). Among non-chains 838 of 883 forget (94.9%; Wilson 93.3% to 96.2%), so "no tie cycle ⟺ forgetting" is false. | computed | H2 held (the share in 91.5% to 95.5%) |
 | 4 | **What remains is order, not identity.** Among non-chains with no tie cycle that do not forget, 44 of 45 held out (97.8%; training 52 of 55) have only order-type idempotents. The top's state class and the deep copy's are linked by a one-way ordering: the deep copy can only lie at or above the top's class, and no quantity is conserved. A parity without a tie occurs in 1 held-out family and in none in training. | computed | H4 held |
 | 5 | **Ties settle capped cases.** 53 families the census left capped have a tie cycle (26 training, 27 held out), so they are non-forgetting. | proved per family | reported |
@@ -77,7 +77,8 @@ Substantive: Theorem I and the held-out test on 6,451 families. Administrative: 
 
 ## Corrections
 
-None.
+One carried from FORGET-RULE's referee (`docs/CORRECTIONS.md`, 2026-11-14): **Narrowing.** The tie lemma, like rule N, needs a
+living family; an unsatisfiable family has empty, rectangular relations. No census count changes.
 
 ## Data
 
@@ -93,7 +94,7 @@ None.
 | Broader exploration — G17 | Searching | Memory of depth classified into carrying and ordering |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | What a nested pattern remembers of its top, by kind |
 
-**Corrections:** none. **Goals:** a checkpoint for G17 and G1; no goal change. **Assumptions:** A79 used.
+**Corrections:** one Narrowing carried from FORGET-RULE's referee (a living family). **Goals:** a checkpoint for G17 and G1; no goal change. **Assumptions:** A79 used.
 **Basket:** `B173` (2/3 Payoff, 2/3 Concreteness; next in line), `B174` (2/3, 2/3), `FORGET-RULE-20261114-001#2` (1/3, 2/3).
 
 **Next step:** Research directions — selected: #1

@@ -3,8 +3,10 @@
 Epic `FORGET-RULE-20261114-001` (`CENSUS-FORGET-20261114-001#1`; G17, with G1), 2026-11-14, at the coordinator's go-ahead. The
 thread's work, reusing FREE-TARGET's per-call relations, with the advisor consulted on the proof. Pre-registered in two stages: the
 held-out split (e75be4409), and the rules with their held-out predictions (4a37c96d4). The held-out half was then read once. The
-canonical K1–K3 test is unchanged. **Referee pending.** The several-definition part rests on the gap argument's several-definition
-premise, which is under FREE-TARGET's referee.
+canonical K1–K3 test is unchanged. Refereed by the referee thread with Codex (FORGET-RULE-R1, `referee-R1/report.md`, commit
+ea19865dc): **confirmed with fixes, one Block on rule A's text**. The census results stand. The rule's sentence is repaired, and the
+code always ran the repaired rule. Reading forgetting as growth rests on the gap argument, which FREE-TARGET's
+referee confirmed, over its covered targets (`CENSUS-FORGET-20261114-001`).
 
 ## Words
 
@@ -28,8 +30,8 @@ port relations is a product relation (rectangular). Measured on 12,772 census fa
 
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
-| 1 | **An identity cycle prevents forgetting (rule N).** Along the cycle a port value passes unchanged, so the product projects onto two ports as equality. Every relation is complement-closed, so both values occur, and such an equality is never a product. No exception among 12,772 families. | proved | H1 held (0 of 6,384 held out) |
-| 2 | **Separation after exact peeling implies forgetting (rule A).** A finite automaton decides it. It starts from a generic copy and tracks, layer by layer, which ports are connected to the stretch's top through the peeled knots and side relations, and which are untouched from above. Peeling is exact for NAE, and a disconnected system has a product solution set, so if no connected path survives r levels on any word, every r-product is rectangular. On the held-out half it certifies 1,051 families, all of which forget, and every exact r is within its bound. | proved | H2 held |
+| 1 | **An identity cycle prevents forgetting (rule N),** in a living family (*narrowed after the referee*: an unsatisfiable family has empty, rectangular relations). Along the cycle a port value passes unchanged, so the product projects onto two ports as equality. Every relation is complement-closed, so both values occur, and such an equality is never a product. No exception among 12,772 families. | proved | H1 held (0 of 6,384 held out) |
+| 2 | **Separation after exact peeling implies forgetting (rule A).** *Corrected after the referee (Block on the stated rule):* a distinction may be peeled only if it is not among the followed call's arguments **and** it is an own distinction or a port untouched from above. The frozen sentence was ambiguous and, read literally, false (the referee's counterexample). The code ran the guarded rule, which the referee confirmed sound: 0 false certificates on 238,449 living families outside the census, against 63 for the literal reading, and 34,764 automaton transitions checked. The proof's invariants: the untouched-from-above set F holds no top port and nothing a kept upper constraint touches, and a peeled distinction never enters the next frontier, so it occurs in exactly one constraint of the whole stretch, which projects to the full relation on the rest. A finite automaton decides it. It starts from a generic copy and tracks, layer by layer, which ports are connected to the stretch's top through the peeled knots and side relations, and which are untouched from above. Peeling is exact for NAE, and a disconnected system has a product solution set, so if no connected path survives r levels on any word, every r-product is rectangular. On the held-out half it certifies 1,051 families, all of which forget, and every exact r is within its bound. | proved | H2 held |
 | 3 | **Rule A covers about three in eight.** It certifies 36.7% of held-out forgetting families (training 37.1%). By stratum: chains 40.8% (one definition) and 39.3% (several); non-chains 23.8% and 29.5%. All within 8 points of training. The rest forget through slack that peeling does not see: a knot can link a port to an argument without making it depend on it. | computed | H3 held |
 | 4 | **In the census, no identity cycle nearly means forgetting.** Among held-out families without an identity cycle, all 2,096 chains forget, and 765 of 817 non-chains (93.6%; training 94.1%). The exceptions carry the correlation through knots: positive NAE can force two distinctions equal or opposite (the advisor's x ≠ y gadget, `gadget_control.py`). Such a gadget makes a chain without an identity cycle that does not forget, so the chain result is a fact about this census, not a theorem. | computed | H4 held |
 | 5 | **The first connectivity rule was false.** Requiring only downward port-to-argument connections to be acyclic certified 705 of 705 training families. It is false in general: a path can go down, sideways through the child's knots, and back up, as the gadget shows. Rule A replaces it. | proved (counterexample) | — |
@@ -60,7 +62,9 @@ and the near-characterization are census facts.
 
 ## Review
 
-**Referee pending.** The advisor model answered the hard part cold (`advisor_review_answer.md`). It proved that disconnection
+**FORGET-RULE-R1**: confirmed with fixes. The guarded rule A is sound: peeling is exact, and the top-down frontier catches every climbing
+path. The generic start is necessary and predates the held-out read, the held-out read reproduces, and all 66 census-capped families are
+decided non-forgetting. The advisor model answered the hard part cold (`advisor_review_answer.md`). It proved that disconnection
 gives a product, refuted rule D with a gadget, and gave the layered automaton. The free-from-above flag and the generic start are
 the thread's. A generic start was needed because a first version, started at main's top, accepted 8 several-definition families
 that do not forget; I found and fixed this on the training half before freezing.
@@ -81,7 +85,15 @@ Substantive: two proved rules, a held-out test on 6,384 families. Administrative
 
 ## Corrections
 
-One, of my own (`docs/CORRECTIONS.md`): **Not a block**. Stage 2 quoted rule A's training coverage as 35.7%; it is 37.1%
+From the referee (`docs/CORRECTIONS.md`, 2026-11-14):
+- **Block.** Rule A's stated eligibility for peeling is repaired; the code and every count stand.
+- **Narrowing.** Rule N needs a living family.
+- **Narrowing.** N, A and H1 to H4 are about relations. Reading forgetting as growth of the free bond carries CENSUS-FORGET-R1's
+  scope: copies of S reached through S calls, the shifted bound for wrappers, and no other recursive type with own distinctions or
+  delayed S.
+- **Not a block.** The prior-work section, owed by the stage-1 freeze, is added.
+
+Before the referee, one of my own: **Not a block**. Stage 2 quoted rule A's training coverage as 35.7%; it is 37.1%
 (1,107 of 2,980; I had divided by 3,105). The held-out band (30% to 42%) and its verdict are unaffected.
 
 ## Data
@@ -93,12 +105,12 @@ One, of my own (`docs/CORRECTIONS.md`): **Not a block**. Stage 2 quoted rule A's
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the rule | **Status:** Successful (referee pending) | H1–H4 held; N proved necessary, A proved sufficient |
+| This attempt — the rule | **Status:** Successful (refereed, confirmed with fixes) | H1–H4 held; N proved necessary, A proved sufficient |
 | Local direction — counting inside | Continue | The slack beyond peeling is the open part of the rule |
 | Broader exploration — G17 | Searching | Counting inside is located, measured and explained by identity |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | What makes a nested pattern count depth, as a rule |
 
-**Corrections:** one, Not a block. **Goals:** a checkpoint for G17 and G1; no goal change. **Assumptions:** A79 used.
+**Corrections:** five: from the referee one Block (rule A's sentence; code and counts stand), two Narrowing, one Not a block; before it, one Not a block of my own. **Goals:** a checkpoint for G17 and G1; no goal change. **Assumptions:** A79 used.
 **Basket:** `FREE-TARGET-20261114-001#2` (2/3 Payoff, 2/3 Concreteness), `CENSUS-FORGET-20261114-001#2` (2/3, 2/3),
 `EVERY-RAY-20261113-001#3` (2/3, 2/3).
 

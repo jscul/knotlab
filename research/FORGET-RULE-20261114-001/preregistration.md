@@ -19,7 +19,8 @@ gap argument's several-definition premise is under referee.
 
 ## Proved before stage 1 (stated, not tested)
 
-**Necessary condition (N).** Draw the port-passing graph on the three port positions, with an edge j → k for each SELF call whose
+**Necessary condition (N).** *(Narrowed after the referee: for a living family, one with an allowed state; an unsatisfiable family
+has empty, hence rectangular, relations.)* Draw the port-passing graph on the three port positions, with an edge j → k for each SELF call whose
 k-th argument is the copy's port j. If this graph has a cycle, the family does not forget. Proof: along the cycle's call word a
 port value passes unchanged, so the product relation projects onto that pair of ports as equality. Every relation here is
 complement-closed, so both values occur, and an equality on two coordinates with both values is not a product. Hence no power of
@@ -43,8 +44,11 @@ generic start.
   blocks connected to the stretch's top and the set F of ports that no constraint above touches.
 - **Start.** A generic copy of S: σ discrete, M all, F empty.
 - **Step on call i.** Peel the copy's block. Repeatedly remove an NAE knot, or a side relation full on every two coordinates, that
-  holds a distinction occurring in no other remaining constraint. That distinction must be an own distinction not among call i's
-  arguments, or a port in F. Join σ with the components of what remains, and carry M and the new F down to the arguments.
+  holds a distinction occurring in no other remaining constraint. ~~That distinction must be an own distinction not among call i's
+  arguments, or a port in F.~~ *Corrected after the referee (Block on the sentence):* the distinction must not be among call i's
+  arguments, **and** must be an own distinction or a port in F. Read literally, the frozen sentence let a port in F be peeled while it
+  is an argument of the call being followed. That is false (the referee's counterexample `[[3,2,[["K",[0,1,2]],["K",[0,2,4]],["SELF",[1,3,4]]]]]`).
+  The code (`rule_A.py`) always ran the guarded rule, so every count stands. Join σ with the components of what remains, and carry M and the new F down to the arguments.
 - **Verdict.** Rule A holds when the reachable states with M non-empty form no cycle; r is at most the longest such path plus 1.
 
 *Proof.* Each peeling eliminates a distinction that occurs in exactly one constraint of the stretch's composite. For NAE, and for a
@@ -74,3 +78,17 @@ family forgets.
 
 One- and several-definition families are reported apart. H2 for several-definition families rests on the gap argument's
 several-definition premise, which is under referee.
+
+## Prior work in the program
+
+Added after the referee (2026-11-14): stage 1 was frozen after the objects gate took effect, so this section was owed.
+
+`python3 -B scripts/track.py objects "syntactic rule for forgetting port relations rectangular" --until 2026-11-14 --exclude FORGET-RULE-20261114-001`
+`python3 -B scripts/track.py objects "port passed down by identity cycle carried top port" --until 2026-11-14 --exclude FORGET-RULE-20261114-001`
+`python3 -B scripts/track.py objects "which branches forget their incoming values" --until 2026-11-14 --exclude FORGET-RULE-20261114-001`
+
+- `FREE-TARGET-20261114-001`: forgetting and its gap argument, the object this study explains.
+- `BRANCH-DEPTH-20261112-001`: a rectangular power for one fixed call, counted (219 of 664) without a rule; a relative.
+- `TRUE-RATE-20261113-001`, `REACH-CENSUS-20261113-001`: carried top ports, the identity mechanism; relatives.
+- `TIE-CYCLE-20261114-001`: a later study generalising rule N; named so that the gate finds every top hit.
+- `WEAK-APER-20261110-001`, `LEIBNIZ-BOARDS-20261110-001`: unrelated (boards), lexical hits.

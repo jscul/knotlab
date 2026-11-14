@@ -3459,8 +3459,8 @@ So holes come in two kinds:
      joining grow is the usual one and the only one with late ends within level 12 (associations); and 48 patterns die and come back
      across levels (certified by the referee), 7 alternating with the level's parity
      ([decision note](../research/ADDR-KNOTS-20261113-001/addr_knots.md)).
-   - **Returns across levels** (`LEVEL-RETURN-20261113-001`; referee pending): the seven keep alternating to level 16, every verdict
-     certified; two live at every level of one parity by a state a small automaton computes (proved); one dies at the other parity
+   - **Returns across levels** (`LEVEL-RETURN-20261113-001`; refereed, confirmed with fixes): the seven keep alternating to level 16,
+     every verdict certified at run time (refutations not archived; the referee recertified a sample); two live at every level of one parity by a state a small automaton computes (proved); one dies at the other parity
      because, without two knots, its only states are the address's parity and its complement, which those knots forbid (certified to
      level 14); five of the seven have exactly one state up to complement wherever they live
      ([decision note](../research/LEVEL-RETURN-20261113-001/level_return.md)).

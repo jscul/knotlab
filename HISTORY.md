@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: returns across levels, confirmed by its referee, its refutations not archived
+
+- The study of returns across levels (`LEVEL-RETURN-20261113-001`) was confirmed by its referee with fresh code. Two of its claims are
+  stronger than stated: the living states of two patterns are proved at every level (checked directly to levels 21 and 22), and the
+  "exactly two knots" behind one pattern's deaths is now proved at every even level.
+- Narrowed: its dead levels were checked at run time, but the proofs were not kept, so they cannot be replayed; the referee
+  recertified a sample (30 of 34 cells, no disagreement). The rigidity ranges now give their lower ends, and the search for living
+  states covered only the automata tried ([decision note](research/LEVEL-RETURN-20261113-001/level_return.md)).
+- Unchanged: every verdict where recertified, and the proofs.
+
 ## 14 November 2026: a carried value shortens the bond only when it is read
 
 - The tie study (`TIE-CYCLE-20261114-001`) read its result as "where a pattern remembers by carrying, the carried value gives short

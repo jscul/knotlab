@@ -32,6 +32,28 @@ def pattern(key, n):
     return np.unique(np.concatenate(ks), axis=0) if ks else np.zeros((0, 3), dtype=np.int64)
 
 
+KEEP_DIR = os.environ.get('CERT_KEEP_DIR', os.path.join(HERE, 'certificates'))
+
+
+def keep_certificate(cnf, prf):
+    """Standing rule (after LEVEL-RETURN-R1): keep every refutation's CNF and LRAT proof, gzip-compressed, named by the CNF's
+    SHA-256, with both hashes in an index line. Returns 'cnf_sha256 proof_sha256'."""
+    import gzip, json
+    os.makedirs(KEEP_DIR, exist_ok=True)
+    def sha(p):
+        h = hashlib.sha256()
+        with open(p, 'rb') as f:
+            for chunk in iter(lambda: f.read(1 << 20), b''): h.update(chunk)
+        return h.hexdigest()
+    hc, hp = sha(cnf), sha(prf)
+    for src, name in ((cnf, f'{hc}.cnf.gz'), (prf, f'{hc}.lrat.gz')):
+        with open(src, 'rb') as fi, gzip.open(os.path.join(KEEP_DIR, name), 'wb') as fo:
+            for chunk in iter(lambda: fi.read(1 << 20), b''): fo.write(chunk)
+    with open(os.path.join(KEEP_DIR, 'index.jsonl'), 'a') as f:
+        f.write(json.dumps(dict(cnf_sha256=hc, proof_sha256=hp)) + '\n')
+    return f'{hc} {hp}'
+
+
 def stream_solve(cnf, workdir, timeout):
     """Solve twice when needed: first without a proof (a model is checked by the caller); if the formula is refuted, solve again
     writing the LRAT proof to a file in the case's own work directory on disk, check it with lrat_check, and delete it. (A first
@@ -52,7 +74,8 @@ def stream_solve(cnf, workdir, timeout):
             return r2.returncode, r2.stdout, 'second solve disagreed'
         size = os.path.getsize(prf)
         c = subprocess.run([CHECKER, cnf, prf], capture_output=True, text=True, timeout=max(1.0, timeout - (time.time() - t0)))
-        return 20, r2.stdout, f'{c.stdout.strip()} ({size} bytes)'
+        kept = keep_certificate(cnf, prf)
+        return 20, r2.stdout, f'{c.stdout.strip()} ({size} bytes; kept {kept})'
     except subprocess.TimeoutExpired:
         return None
     finally:

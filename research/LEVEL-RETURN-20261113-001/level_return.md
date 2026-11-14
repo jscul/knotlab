@@ -4,13 +4,18 @@ Epic `LEVEL-RETURN-20261113-001` (`ADDR-KNOTS-20261113-001#1`; G17, with G8; pro
 the coordinator's go-ahead. Pre-registered in 470992577 ([preregistration.md](preregistration.md)), with the rigidity addendum R5
 (052c3fffb) and two procedure fixes (4f0ff2aef, 972b9d8eb), all before any registered result was used. Code by the thread
 (`certify.py`, `lrat_check.c`, `job.py`, `job_rigid.py`, `prover.py`); the census's `addr.py` (Codex's) as the second pattern generator;
-CaDiCaL 2.1.2 from the Lean toolchain. The canonical K1–K3 test is unchanged. **Referee pending** (the background referee thread).
+CaDiCaL 2.1.2 from the Lean toolchain. The canonical K1–K3 test is unchanged. **Refereed** (LEVEL-RETURN-R1, `referee-R1/report.md`,
+commit 8f155c867): **confirmed with fixes**, one Block (the refutations were not archived) and two Narrowings, folded in below and
+logged in `docs/CORRECTIONS.md`; the referee also proved two things this note had only computed.
 
 ## Words
 
 As in `ADDR-KNOTS-20261113-001`: address, level, address map, placement; a **return** is a dead level followed by a living one. A
 pattern is **rigid** at a level when it has exactly one state up to complement there. "Certified": alive by a model checked against
-every knot; dead by an LRAT refutation checked by the thread's checker; anything else undecided.
+every knot; dead by an LRAT refutation checked by the thread's checker; anything else undecided. *Narrowed after the referee
+(Block on the evidence claim):* the refutations were checked at run time, and neither the CNFs, the proofs nor their hashes were kept,
+though the pre-registration promised the hashes; the referee recertified 12 of the 13 dead and all 13 living cells of the seven at
+levels 13 to 16 from fresh code (30 of 34 sampled cells overall, no disagreement), its certificates on disk with hashes.
 
 ## The question
 
@@ -27,11 +32,11 @@ proofs of satisfiability at one parity, and a mechanism for unsatisfiability at 
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
 | 1 | **The seven keep alternating to level 16.** Every certified verdict at levels 13 to 16 follows the parity (26 of 28 decided; one level each undecided in two patterns); 5 of the 7 are certified period 2 on levels 5 to 16. | certified to level 16 | R1 held |
-| 2 | **The living half is proved at every level for two of them.** For #2 the address's parity is a state at every odd level n ≥ 3; for #3 the first letter XOR the last is a state at every even level n ≥ 2. A finite product check decides each statement for all n (reachable configurations of the three runs, the state's automaton on their outputs, which pairs have differed, the level's parity). The census's level-13-to-16 checks replay both. No state of this automatic kind exists for the other five (feature automata up to 424 states tried). | proved; replayed | R2 held |
-| 3 | **Why #2 dies at even levels: two knots and rigidity.** At every even level 4 to 14, parity violates exactly two knots, at the addresses 0ⁿ⁻²10 and 0ⁿ⁻²11 of one placement, and the pattern without them lives (certified; level 16 undecided). The pattern without them is **rigid** at every even level 6 to 14: its only states are parity and its complement. Since a part's states include the whole's, the whole has at most those two, both of which violate the two knots: so death at each even level from 6 follows from that level's rigidity. Rigidity at every even level is open. | proved implication; rigidity certified at 6 to 14 | R4 held (to 14), R5b held (to 14) |
-| 4 | **Five of the seven are rigid where they live.** #2 (from level 7), #3, #4, #5 and #7 have exactly one state up to complement at every living level certified to 16 (one level undecided); #1 and #6 have more at every living level. So in five, the law fixes the whole pattern from one value whenever it lives at all. | certified to level 16 | R5a held |
+| 2 | **The living half is proved at every level for two of them.** For #2 the address's parity is a state at every odd level n ≥ 3; for #3 the first letter XOR the last is a state at every even level n ≥ 2. A finite product check decides each statement for all n (reachable configurations of the three runs, the state's automaton on their outputs, which pairs have differed, the level's parity). The census's level-13-to-16 checks replay both. For the other five none was found among the feature automata tried (up to 424 states; *narrowed after the referee*). The referee's independent product automaton confirms both proofs, and direct checks pass to level 21 (#2) and 22 (#3). | proved; replayed | R2 held |
+| 3 | **Why #2 dies at even levels: two knots and rigidity.** At every even level n ≥ 4, parity violates exactly two knots, at the addresses 0ⁿ⁻²10 and 0ⁿ⁻²11 of one placement (*proved by the referee*: the violating inputs are exactly (00)+1(0|1) on placement [0, 8, 10], their images pairwise distinct; this note had computed it to 14), so parity is a state of the pattern without them and that pattern lives at every even level. The pattern without them is **rigid** at every even level 6 to 14: its only states are parity and its complement. Since a part's states include the whole's, the whole has at most those two, both of which violate the two knots: so death at each even level from 6 follows from that level's rigidity. Rigidity at every even level is open. | proved (the two knots, the implication); rigidity certified at 6 to 14 (recertified by the referee at 6 to 12) | R4 held (proved at every even level), R5b held (to 14) |
+| 4 | **Five of the seven are rigid where they live.** #2 (at its odd levels 7 to 13; it has other states at 3 and 5, for example 01101000 at level 3; level 15 undecided), #3 (from level 4; non-complementary states at level 2), #4, #5 and #7 (level 15 undecided) have exactly one state up to complement at every living level certified from 4 to 16 (*ranges narrowed after the referee*); #1 and #6 have more at every living level. So in five, the law fixes the whole pattern from one value whenever it lives at all. | certified to level 16 | R5a held |
 | 5 | **The other returns keep their fate.** Of the 41 other returning patterns, those alive at levels 10 to 12 stayed alive at every decided level 13 to 16 (15 of 15 decided), those dead stayed dead in 14 of 15. Fates on levels 5 to 16: 9 constant from level 5, 5 of period 2, the rest neither or with undecided levels. | certified | R3 held |
-| 6 | **Checks.** 775 cases, every one finished: 420 alive and 294 dead certified, 61 undecided (two hard patterns hold most); the two pattern generators agree at every case and the census's verdicts at every level both decided. Gates: Fano dead, corrupted and truncated proofs rejected, 400 of 400 small patterns agree with brute force. | computed | gates |
+| 6 | **Checks.** 775 cases, every one finished: 420 alive (models checked) and 294 dead (refutations checked at run time, not archived), 61 undecided (two hard patterns hold most); the two pattern generators agree at every case and the census's verdicts at every level both decided. Gates: Fano dead, corrupted and truncated proofs rejected, 400 of 400 small patterns agree with brute force. | computed | gates |
 
 ## Answer
 
@@ -73,7 +78,7 @@ deleted. Disclosed in the pre-registration. The smoke test's one alternating pat
 
 ## Review
 
-Referee pending. The advisor model was consulted before the freeze (`advisor_design_*.md`): its hand proof of #2's parity state, the
+Refereed (LEVEL-RETURN-R1, Codex-assisted, fresh code; confirmed with fixes; above). The advisor model was consulted before the freeze (`advisor_design_*.md`): its hand proof of #2's parity state, the
 two-knot prediction R4, the second generator and the checker's negative controls are its.
 
 ## Workspace assumptions
@@ -126,5 +131,4 @@ Q/A); the proof family `proofs/LEVEL-RETURN-20261113-001B/` (`prover.py`, `check
 runs; `run/`, `run2/`, `run_rigid/`, `run_rigid2/` are the stopped ones, kept, not used). Proved: the two all-level states (finite
 product check) and the implication rigidity + two knots ⇒ death. Certified: every verdict in conclusions 1, 3, 4, 5. Least sure: (a)
 the product check's handling of the identity word and of knots dropped for coinciding images; (b) whether the checker's RUP-only
-rule could accept a wrong step (it rejected every corrupted proof tried); (c) the "exactly two knots" claim is computed to 16, not
-proved; (d) the feature-automaton search for the other five was exploratory.
+rule could accept a wrong step (it rejected every corrupted proof tried); (c) the "exactly two knots" claim is now proved by the referee; (d) the feature-automaton search for the other five was exploratory.

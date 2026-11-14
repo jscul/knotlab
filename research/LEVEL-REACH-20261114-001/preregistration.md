@@ -94,3 +94,12 @@ automaton-generated patterns.
 Consulted on the design ([advisor_design_answer.md](advisor_design_answer.md)) and on these predictions
 ([advisor_review_answer.md](advisor_review_answer.md)): Q0, the bound pair in Q1 and Q2, Q3's restriction to membership, Q4 as a
 confirmation, Q5 as descriptive, the per-s reporting and the list of what is not measured are its.
+
+## Corrections after the referee (2026-11-14; the frozen text above is kept)
+
+- The "settled by construction" line "L is non-increasing in N" is false (Block; counterexamples in the decision note): the census's
+  values are readings at depth 9 only, and bounded readings are not upper bounds for deeper patterns.
+- "Knots joining only adjacent levels compose into a chain of s + 2 wherever they compose, so the ruler is the default" is withdrawn
+  as a default: composition can fail (the referee's example), and a ruler needs its own composition hypothesis and lower bound.
+- "Every refutation's CNF and LRAT proof" were kept for bond certificates but not for the 23 dead unions; those were re-solved and
+  archived after the referee (Block).

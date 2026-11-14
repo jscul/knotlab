@@ -4,7 +4,8 @@ Epic `LEVEL-REACH-20261114-001` (`ADDR-KNOTS-20261113-001#3`, approved by John 2
 group spacing). Pre-registered in 56f1cc04a ([preregistration.md](preregistration.md)) after the design, Codex's build in two hand-offs
 and a held-out pilot. Code by Codex ([codex_spec.md](codex_spec.md), addendum), with the thread's disclosed additions (budget and
 population parameters, certificate retention); run by the thread on the shared runner (`lr-reach-run`, 2026-11-14 10:30 to 23:00
-UTC, 7 workers). The canonical K1–K3 test is unchanged. **Referee pending** (the background referee thread).
+UTC, 7 workers). The canonical K1–K3 test is unchanged. **Refereed** (LEVEL-REACH-R1, `referee-R1/report.md`, commit 6ed492f3c):
+**confirmed with fixes**, two Blocks and several Narrowings, folded in below and logged in `docs/CORRECTIONS.md`.
 
 ## Words
 
@@ -12,7 +13,11 @@ Addresses of every length 0 to 9; knots placed by address maps within a level, o
 letter). The **reach** L(s) is the least bond holding an address of level 3 and one of level 3 + s, members anywhere in levels 0 to 9.
 Outcomes: **none** (no placement joins two levels, or top and target are disconnected), **chained** (the ruler L(s) = s + 2 at every s
 = 1..4: one more member per level), **direct** (L constant over s, including the rigid-like L = 2), **other**, **undecided** (a budget
-ran out), **dead**. "To depth 9": deeper levels can only lower a bond.
+ran out), **dead**. Every value is a reading at depth 9. ~~"To depth 9": deeper levels can only lower a bond.~~ *Withdrawn after the
+referee (Block): L is not monotone in N. Extra knots keep a set non-full but can make a proper subset non-full, and the smaller bond
+inside may miss the top or the target; registered counterexamples: 162021bb… (k0 = 1, s = 2: L = 3 at N = 3 with bond [1, 7, 9], no bond
+of size ≤ 3 at N = 4) and a0ce47179bf2… (W_R draw 1185, k0 = 3, s = 1: L = 3 at N = 4, L > 4 at N = 5).* "Direct" means constant over
+the four levels read, not bounded at every depth; "other" is mostly a half-rate ruler [3, 3, 4, 4] (45 of its 67 weight) and 13 "> 10".
 
 ## The question
 
@@ -29,29 +34,31 @@ sampling (W_R: 2,000 fair-coin draws), with an enriched sample of bounded and po
 
 | # | Conclusion | Kind | Prediction |
 | --- | --- | --- | --- |
-| 1 | **Usually the top binds the deep levels only through a chain.** By weight among the 1,412 alive W_R draws: chained 42.8% (53.5% if every undecided were chained), none 36.8% (47.4%), direct 5.0% (15.7%), other 4.7%, undecided 10.6%. | computed, certified, frozen | Q0 held on the point reading (none ≥ 25% both ways; direct ≤ 15% unless nearly all undecided are direct) |
-| 2 | **Where a bond exists at every level, it is the ruler in 68 to 85%.** Of the 893 draws with a bond at every s, the ruler holds in 67.7% (84.5% with undecided as ruler); direct reach is 8.0% to 24.7%. | computed, certified, frozen | Q1 held on its frozen rule (upper bound ≥ 70%; the lower bound is not); Q2 held (lower bound ≤ 10%) |
-| 3 | **No least bond needs a member below its target.** All 2,894 least bonds found lie within levels ≤ their target (membership only; whether deeper levels tighten a bond without appearing in it was not measured). | computed | Q3 held |
-| 4 | **Activity class and reach: suggestive, not shown.** Among decided bond profiles, the non-ruler share is 0.27 in the exponential class against 0.05 in the finitary class (Δ = 0.23), but the cluster-bootstrap interval by automaton class, [−0.06, 0.40], includes 0 (99 and 40 classes). | computed, frozen | Q4 failed |
+| 1 | **Most often the top binds the deep levels only through a chain.** By weight among the 1,412 alive W_R draws: chained 42.8% to 51.8% (*the referee's tightened bounds*, counting an undecided profile toward a class only if its decided levels allow it), none 36.8% (exactly), direct (constant over the four levels) 5.0% to 11.5%, other 4.7%, undecided 10.6%. The ruler is the plurality among all alive draws and the majority among bonded ones. | computed, certified, frozen | Q0 held on both readings |
+| 2 | **Where a bond is found at the levels read, it is the ruler in 68 to 82%.** Of the 893 draws (13 of them with "> 10" and 150 undecided, where a bond at every s is not proved), the ruler holds in 67.75% to 81.86% and direct reach in 7.95% to 18.14% (*tightened by the referee*). | computed, certified, frozen | Q1 and Q2 not refuted (*narrowed from "held"*) |
+| 3 | **No least bond needs a member below its target.** Every least bond size is attained within levels ≤ the target; 26 of the 2,894 bonds the search returned (16 descriptions) have members up to five levels below, each with an equal-size alternative within the target's levels (*narrowed after the referee from "all lie within"*). Membership only: whether deeper levels change a bond without appearing in it was not measured. | computed | Q3 held on its "needs" rule |
+| 4 | **Activity class and reach: suggestive, not shown.** Among decided bond profiles, the non-ruler share is 0.27 in the exponential class against 0.05 in the finitary class (Δ = 0.23), but the cluster-bootstrap interval by automaton class, [−0.06, 0.40], includes 0 (99 and 40 classes). The verdict is sensitive: 7 automata occur in both classes, and resampling them jointly gives [0.24, 39.6] (post hoc, the referee's, not promoted). | computed, frozen | Q4 failed |
 | 5 | **Bounded activity mostly binds directly where decided.** In E_R's bounded class (165 descriptions), 29 of the 45 decided are direct (64%; Wilson 50% to 77%) and 10 are rulers (22%), but 88 are undecided; the polynomial class (34) is almost all undecided (26). In W_R's exponential class the ruler is 73% and direct 13% of decided. | computed, descriptive | Q5 (descriptive) |
 | 6 | **Per level.** By weight, L(1) = 3 in 863 draws and 2 in 27; at s = 4 the ruler value 6 holds in 605, smaller values in 125, "> 10" in 13, undecided in 150. | computed | reported |
 
 ## Answer
 
-Usually the top does bind the deep levels, but only by passing the binding down one level at a time: in about half of the living
-patterns the least bond from level 3 to level 3 + s grows by exactly one member per level, the knots-alone ruler. In about two fifths
-the top binds nothing below it, and in about one in twenty it binds every level read with a fixed number of distinctions, the direct
-reach that rigidity gives at its extreme. Bounded activity, rare under the weighting, leans the other way: where decided, its patterns
+Most often the top does bind the deep levels, but only by passing the binding down one level at a time: in two fifths to a half of
+the living patterns the least bond from level 3 to level 3 + s grows by exactly one member per level over the four levels read, the
+knots-alone ruler. In about two fifths the top binds nothing below it, and in about one in twenty to one in ten the least bond stays
+the same size over the four levels read, the direct reach that rigidity gives at its extreme. Bounded activity, rare under the weighting, leans the other way: where decided, its patterns
 mostly bind directly. Whether the activity class decides the kind of reach is suggestive but not shown here.
 
 ## Reading
 
 **Interpretation, not a theorem.**
-- **For John's question.** "Parts that depend on the whole" do let the top reach the deep levels, typically as a ruler: depth becomes a
+- **For John's question.** "Parts that depend on the whole" do let the top reach the deep levels, most often as a ruler: depth becomes a
   count of members, one per level, exactly as in the knots-alone line (`RULER-20261111-001`), even though here the joining between
   levels can grow exponentially. A direct reach, where depth costs nothing, is the minority.
-- **Why the ruler is the default.** Knots join only adjacent levels, so a chain of joining knots composes into a bond of s + 2; the
-  question is when something shortens it (direct) or breaks it (none, other). That is the next proof epic.
+- **Why the ruler is common.** ~~Knots join only adjacent levels, so a chain of joining knots composes into a bond of s + 2.~~
+  *Withdrawn after the referee:* composition fails in general (NAE(a, u, v) and NAE(u, v, b) on levels {a}, {u, v}, {b} have 10 states
+  and no bond holds a and b), so a ruler needs an explicit composition hypothesis and an independent lower bound; that is the next
+  proof epic.
 - **The undecided cell.** 10.6% of the weight, mostly in the exponential and bounded classes; the bounds in conclusions 1 and 2 carry it.
 
 ## Lag cutoffs and census-only claims
@@ -67,7 +74,7 @@ patterns, its census under the weighting, the certified search. Classification: 
 
 ## Review
 
-Referee pending. The advisor model was consulted on the design and on the frozen predictions (`advisor_design_*.md`,
+Refereed (LEVEL-REACH-R1, above; optimality survives on a sampled validation: 112 depth-9 cells across 28 profiles with no disagreement, brute force one size up agreeing on all 62 decided queries, all 124 decided cells equal at N = 10 and 11, 184 CNF/LRAT pairs rebuilt and rechecked). The 23 dead-union refutations, first not kept, were re-solved after the referee and are now archived with their hashes (`artifacts/.../union_dead_certificates.json`; Block 2). The advisor model was consulted on the design and on the frozen predictions (`advisor_design_*.md`,
 `advisor_review_*.md`). Codex built the search in two hand-offs (both stopped by runtime caps; G-mono finished on 49 of 50 keys).
 
 ## Workspace assumptions
@@ -86,10 +93,10 @@ None.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the reach across levels | **Status:** Partially successful | Q0 to Q3 held (Q1, Q2 on their frozen bounds), Q4 failed; the ruler is the usual reach |
+| This attempt — the reach across levels | **Status:** Partially successful | Q0 and Q3 held, Q1 and Q2 not refuted, Q4 failed; the ruler is the usual reach |
 | Local direction — reach in addressed patterns | Continue | Why the ruler holds, and when it breaks, is now concrete |
 | Broader exploration — G17 nested line | Known alternatives | Joins the knots-alone ruler and the nested reach studies |
-| Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | The typical reach across levels is a ruler; direct reach is rare |
+| Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | The most common reach across levels is a ruler; direct reach is rare |
 
 **Corrections:** none. **Goals:** a G17 checkpoint (with G1), capability gained; no goal change. **Assumptions:** A82 used.
 **Basket:** B175 (the finite inflation for bounded patterns), `RIGID-LEVEL-20261114-001#2` (twisted families).

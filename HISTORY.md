@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: the reach across levels, confirmed by its referee, two claims withdrawn
+
+- The census of the reach across levels (`LEVEL-REACH-20261114-001`) was confirmed by its referee with fresh code, and its counts
+  stand as readings at depth 9.
+- Withdrawn: that the least bond can only shrink as deeper levels are added (two registered patterns go the other way), and that
+  joining knots compose into a chain by default (a three-level example has no bond at all).
+- Repaired: the refutations of the 23 dead patterns, first not kept, are now archived with their hashes.
+- Narrowed: the ruler is the most common reach (two fifths to a half of the living weight, the majority among bonded patterns), not
+  "typical"; "direct" means the same size over the four levels read; two predictions are "not refuted" rather than "held"
+  ([decision note](research/LEVEL-REACH-20261114-001/level_reach.md)).
+
 ## 14 November 2026: other weightings, confirmed by its referee, five narrowings
 
 - The study of two unlengthened shifts under other weightings (`WEIGHTS-20261112-001`) was confirmed by its referee with fresh code:

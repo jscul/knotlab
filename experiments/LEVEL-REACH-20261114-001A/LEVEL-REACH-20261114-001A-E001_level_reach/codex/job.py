@@ -23,7 +23,7 @@ from search import SearchEngine
 POPULATION = None
 
 
-BUDGET = float(os.environ.get('REACH_BUDGET', '300'))  # thread's addition: the registered run sets 150
+BUDGET = float(os.environ.get('REACH_BUDGET', '300'))  # thread's addition; the registered run used 300 (set by --param budget)
 
 
 def atomic_json(path, value):

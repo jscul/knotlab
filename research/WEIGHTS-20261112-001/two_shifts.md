@@ -33,7 +33,7 @@ independent certified translation directions.
 ## Answer
 
 Yes, under these weightings: among random periodic bases that travel at all, two unlengthened shifts are the rule whether the kinds
-are drawn uniformly from a larger box or with a preference for short knots, at 87 to 98% by weighting. What changes with the weighting
+are drawn uniformly from a larger box or with a preference for short knots, at 88 to 98% by weighting. What changes with the weighting
 is how often a base travels: big knots make it rarer.
 
 ## Reading

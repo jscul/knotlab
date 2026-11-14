@@ -6420,6 +6420,14 @@ So holes come in two kinds:
    - **Not a slope.** The patterns base 16 cannot certify with repeats are carried by no lattice up to 24 × 24, only by states that
      change once along and never come back ([decision note](../research/SHIFT-COUNT-20261112-001/shift_count.md)).
 
+   **2026-11-14: two unlengthened shifts beyond one box** (`WEIGHTS-20261112-001`; referee pending).
+   - **Still the rule (computed, frozen).** Drawing knot kinds from a larger box of 738, uniformly or with a preference for short
+     knots, the travelling bases with a kind outside the old box have two certified unlengthened shifts in 39 of 40, 35 of 40 and
+     38 of 41.
+   - **Big knots travel less.** What changes with the weighting is how often a base travels at all: 13.5% of the new-kind bases when
+     kinds are drawn uniformly, a third when short knots are favoured. Where a law makes an unlengthened shift, it usually makes two
+     ([decision note](../research/WEIGHTS-20261112-001/two_shifts.md)).
+
    **2026-11-12: nothing chooses a meeting pattern** (owner's statements, 2026-11-11 Pacific; interpretation, with readings under test).
    - **His words.** "There is no choice. [...] It's just random", with some realities perhaps "statistically more likely than
      others"; other realities are "Different meeting patterns! [...] Both the underlying patterns and even possibly the binding

@@ -142,3 +142,11 @@ hand-off, writing only in `experiments/CARRY-BOUND-20261114-001A/CARRY-BOUND-202
 The thread runs the census-wide window on the shared runner (3 workers, 3 GB per case, MemoryMax 12 GB, 600 s per case, one retry
 for timeouts and memory), then the sample. Each run over about ten minutes is registered in `docs/LONG_RUNNING.md`. Stop after the
 runs, their summary, a referee hand-off and the report.
+
+## Clarification after TIE-CYCLE's referee (2026-11-14, before any result)
+
+TIE-CYCLE-R1 found that the sort of idempotents into conserved labels and orders is a census label read on each idempotent's core,
+not a dichotomy: one O family (4f5934b2e118) also conserves a parity, and core labels need not hold between a word's ends. So the
+strata here are reporting labels, computed exactly as frozen (`classify_full`), and **O** means "no tie cycle, only one-way core
+comparabilities", not "nothing carried". P2 compares the window's shares on these labels and claims nothing about what O families
+conserve. Nothing else changes; no code or prediction is affected.

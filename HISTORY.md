@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: the tie study's residual, narrowed by its referee
+
+- In the study of whether identity is the whole story of forgetting (`TIE-CYCLE-20261114-001`), the families that remember without
+  a tie were described as keeping "an order, with nothing carried". One of them also carries a parity, so that holds in 43 of 45 held
+  out, not 44, and the sort into conserved labels and orders is a label read on part of each relation, not a dichotomy. Also
+  narrowed: the exact theorem is classical and its check is not a prediction; all 66 capped families have identity cycles; the tied
+  denominator is 3,471; the growth reading keeps its scope ([decision note](research/TIE-CYCLE-20261114-001/tie_cycle.md)).
+- Unchanged: the theorem, the tie lemma and every frozen prediction's verdict.
+
 ## 14 November 2026: the forgetting rule's sentence repaired by its referee
 
 - In the study of what makes every way down forget (`FORGET-RULE-20261114-001`), the sufficient rule's sentence was ambiguous: read

@@ -1,0 +1,124 @@
+{
+  "complete": true,
+  "checks": {
+    "families_with_verified_common_serial_living_support": 12772,
+    "all_nonforgetting_idempotent_witnesses": 6931,
+    "all_positive_tie_witnesses": 6831,
+    "independently_regenerated_residual_closures": 100,
+    "nonrectangular_products_in_residual_closures": 13208,
+    "idempotents_with_unique_endpoint_core_classes": 144,
+    "every_residual_idempotent_and_all_Boolean_endpoint_labels": 159
+  },
+  "controls": {
+    "passed": true,
+    "wrong_self_tie_rejected": true,
+    "wrong_idempotent_rejected": true,
+    "empty_power_exposes_missing_living_hypothesis": true,
+    "antichain_core_does_not_guarantee_global_label": true
+  },
+  "aggregates": {
+    "train": {
+      "families": 6321,
+      "decided_independently": 6321,
+      "no_tie": {
+        "chain": {
+          "n": 2126,
+          "forget": 2126
+        },
+        "nonchain": {
+          "n": 835,
+          "forget": 780
+        }
+      },
+      "tie_families": 3360,
+      "identity_cycle_families": 3355,
+      "ties_beyond_identity": 5,
+      "residual": 55,
+      "residual_order_only_core_proxy": 52,
+      "residual_order_only_no_conserved_value": 52,
+      "residual_order_only_unique_core_endpoint_classes": 51,
+      "residual_core_proxy_types": {
+        "order": 52,
+        "nonlinear label|order|tie": 1,
+        "order|tie": 1,
+        "tie": 1
+      },
+      "residual_endpoint_types": {
+        "order": 52,
+        "no conserved label and no core order|order": 2,
+        "no conserved label and no core order": 1
+      },
+      "parity_without_coordinate_self_tie": 0,
+      "census_capped_tied": 33,
+      "census_capped_identity_cycle": 33,
+      "chains": 2606,
+      "chain_single_definition": 2007,
+      "chain_multiple_definitions": 599,
+      "chain_wrappers": 228
+    },
+    "heldout": {
+      "families": 6451,
+      "decided_independently": 6451,
+      "no_tie": {
+        "chain": {
+          "n": 2097,
+          "forget": 2097
+        },
+        "nonchain": {
+          "n": 883,
+          "forget": 838
+        }
+      },
+      "tie_families": 3471,
+      "identity_cycle_families": 3470,
+      "ties_beyond_identity": 1,
+      "residual": 45,
+      "residual_order_only_core_proxy": 44,
+      "residual_order_only_no_conserved_value": 43,
+      "residual_order_only_unique_core_endpoint_classes": 43,
+      "residual_core_proxy_types": {
+        "order": 44,
+        "order|tie": 1
+      },
+      "residual_endpoint_types": {
+        "order": 43,
+        "no conserved label and no core order|order": 1,
+        "mixed label/order": 1
+      },
+      "parity_without_coordinate_self_tie": 1,
+      "census_capped_tied": 33,
+      "census_capped_identity_cycle": 33,
+      "chains": 2584,
+      "chain_single_definition": 2028,
+      "chain_multiple_definitions": 556,
+      "chain_wrappers": 215
+    }
+  },
+  "differences_from_study": [
+    {
+      "half": "train",
+      "field": "all_capped_tied",
+      "independent": 33,
+      "study": 26
+    },
+    {
+      "half": "heldout",
+      "field": "all_capped_tied",
+      "independent": 33,
+      "study": 27
+    },
+    {
+      "half": "heldout",
+      "field": "strict_order_only",
+      "independent": 43,
+      "study": 44
+    }
+  ],
+  "definitions": {
+    "core_proxy": "Every nonrectangular idempotent has some comparable distinct core classes.",
+    "no_conserved_value": "Core proxy plus no nonconstant f(start)=g(end) on the full active endpoint supports.",
+    "unique_core_endpoint_classes": "Additionally every active endpoint has a unique principal class in the core quotient, separately for the start and end roles; this is a stronger literal reading, not the published core-only definition."
+  },
+  "seconds": 2.779,
+  "max_rss_kib": 87864
+}

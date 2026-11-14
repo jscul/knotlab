@@ -1,0 +1,252 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "TIE-CYCLE-20261114-001",
+  "review_type": "independent_bounded_proof_audit",
+  "reviewer_thread_id": "01a1d7bf-d5c0-71e0-8fb4-4f4a8d11d39f",
+  "inputs_read": [
+    "research/TIE-CYCLE-20261114-001/tie_cycle.md",
+    "research/TIE-CYCLE-20261114-001/preregistration.md",
+    "research/TIE-CYCLE-20261114-001/advisor_review_answer.md"
+  ],
+  "earlier_referee_content_read": false,
+  "earlier_referee_directories_listed": true,
+  "current_study_implementation_inspected_or_imported": false,
+  "network_used": false,
+  "git_state_changed": false,
+  "lifecycle_changed": false,
+  "fresh_mathematical_computation_run": false,
+  "verdict": {
+    "theorem_I": "valid_with_explicit_positive_word_semigroup_and_admitted_repetition_scope",
+    "core_preorder_and_rectangularity_equivalence": "valid_for_finite_relations_including_empty_case",
+    "tie_lemma_as_general_complement_closed_claim": "false_without_nonempty_powers",
+    "tie_lemma_for_common_serial_living_set_families": "valid",
+    "incomparable_core_implies_global_conserved_label": "false_for_partial_relations_with_transient_endpoints",
+    "any_comparable_core_pair_implies_no_conserved_quantity": "false_even_for_full_support_reflexive_complement_closed_relations",
+    "exclusive_label_order_dichotomy": "false_as_general_theorem"
+  },
+  "theorem_I": {
+    "semigroup": "Products of nonempty words only; no automatically adjoined empty-word identity.",
+    "forgetting": "Some N makes every generator word of length at least N rectangular.",
+    "ideal": "I=S intersect Rect, where the empty relation is rectangular; I may be empty or all S.",
+    "proof": [
+      "Relational multiplication on either side preserves rectangularity.",
+      "A generated nonrectangular idempotent pumps through arbitrarily long admitted words.",
+      "Finite Ramsey on interval products supplies an idempotent contiguous factor in every sufficiently long word.",
+      "A rectangular factor forces the entire product rectangular."
+    ],
+    "rees_quotient": {
+      "nonempty_proper_I": "All idempotents lie in I iff S/I has no nonzero idempotent iff S/I is nilpotent.",
+      "I_equals_S": "Trivial immediate forgetting; quotient is the one-element zero semigroup.",
+      "I_empty": "Ordinary nonempty-ideal quotient unavailable; for nonempty finite S both forgetting and all-idempotents condition fail. Adjoining zero gives a uniform reformulation."
+    },
+    "empty_word_control": "For G={X x X}, |X|>1, positive words forget immediately, but an artificially adjoined identity is a nonrectangular idempotent."
+  },
+  "core_result": {
+    "C": "{x:xEx}",
+    "preorder": "x<=y iff xEy on C",
+    "equivalence": "E nonrectangular iff C modulo mutual reachability has at least two classes.",
+    "reason": "Every pair of a finite idempotent relation factors through a core point; zero/one class gives an empty/rectangular relation.",
+    "finite_scope_required": true
+  },
+  "correct_conserved_label_test": {
+    "definition": "Nonconstant values on active endpoint supports satisfying f(x)=g(y) for every xEy.",
+    "criterion": "At least two connected components in the classical bipartite incidence graph on dom(E) and im(E).",
+    "core_comparability": "A connected undirected core comparability graph suffices for absence of a global label; one comparable pair does not.",
+    "restricted_case": "If reflexive on active support, incidence components agree with weak components of the core preorder.",
+    "warning": "Core labels may fail to extend globally through transient endpoints."
+  },
+  "counterexamples": [
+    {
+      "id": "A",
+      "purpose": "Antichain core classes need not preserve any endpoint label.",
+      "state_set": "{0,1}^3",
+      "relation": [
+        [
+          "000",
+          "000"
+        ],
+        [
+          "111",
+          "111"
+        ],
+        [
+          "000",
+          "001"
+        ],
+        [
+          "000",
+          "110"
+        ],
+        [
+          "111",
+          "001"
+        ],
+        [
+          "111",
+          "110"
+        ]
+      ],
+      "complement_closed": true,
+      "direct_power": "E^2=E",
+      "core_classes": [
+        [
+          "000"
+        ],
+        [
+          "111"
+        ]
+      ],
+      "core_comparable_distinct_classes": false,
+      "nontrivial_global_conserved_label": false,
+      "coordinate_self_tie": false,
+      "common_serial_living_set": [
+        "000",
+        "111"
+      ],
+      "hand_check": "Each nonempty row repeats itself through its loop; all active starts share output 001, forcing their labels equal."
+    },
+    {
+      "id": "B",
+      "purpose": "Comparable core classes can coexist with a conserved parity and no coordinate tie.",
+      "state_set": "{0,1}^3",
+      "P0": [
+        "000",
+        "111"
+      ],
+      "Q0": [
+        "001",
+        "110"
+      ],
+      "P1": [
+        "010",
+        "101"
+      ],
+      "Q1": [
+        "011",
+        "100"
+      ],
+      "relation": "Delta_X union (P0 x Q0) union (P1 x Q1)",
+      "complement_closed": true,
+      "direct_power": "E^2=E",
+      "core": "All eight states, each its own equivalence class.",
+      "core_comparable_distinct_classes": true,
+      "conserved_label": "x1 xor x2, coordinates read left to right",
+      "incidence_components": 2,
+      "coordinate_self_tie": false,
+      "hand_check": "No two nonidentity transitions compose; parity is constant within each Pi union Qi; diagonal rejects opposite ties and complementary Qi outputs reject equality ties."
+    },
+    {
+      "id": "C",
+      "purpose": "A complement-closed self-tie need not obstruct forgetting when its powers become empty.",
+      "state_set": "{0,1}^3",
+      "relation": [
+        [
+          "000",
+          "001"
+        ],
+        [
+          "111",
+          "110"
+        ]
+      ],
+      "complement_closed": true,
+      "coordinate_self_ties": [
+        "coordinate 1 equality",
+        "coordinate 2 equality",
+        "coordinate 3 inequality"
+      ],
+      "direct_power": "R^2=empty because dom(R) and im(R) are disjoint.",
+      "generated_semigroup": [
+        "R",
+        "empty"
+      ],
+      "forgetting_length": 2
+    }
+  ],
+  "tie_lemma_repair": {
+    "required_power_condition": "Every power of the tied relation is nonempty; for a finite relation this is equivalent to containing a directed cycle.",
+    "uniform_sufficient_hypothesis": "A common nonempty G_S on which every generator has a successor in G_S from every state in G_S.",
+    "proof": "Every word is serial on G_S. Its nonempty powers inherit complement closure and the self-tie, giving a full equality/inequality projection and excluding rectangularity.",
+    "parent_report": "Earlier permitted referee work supplies the living-set argument; parent is freshly checking it on actual generators."
+  },
+  "direct_controls": [
+    {
+      "relation": "X x X",
+      "powers": "J^n=J",
+      "forgets": true
+    },
+    {
+      "relation": "Delta_X, |X|>1",
+      "powers": "D^n=D",
+      "forgets": false
+    },
+    {
+      "relation": "U x U union U x V union V x V, U={000,111}, V=X minus U",
+      "powers": "E^n=E",
+      "core_order": "U<V",
+      "global_conserved_label": false
+    }
+  ],
+  "parent_reported_actual_case": {
+    "independently_recomputed_in_this_lane": false,
+    "family": "4f5934b2e118",
+    "nonrectangular_idempotent_hex": "0x58a01008051a00",
+    "relation_encoding": "bit 8*x+y, integer state coordinates little-endian",
+    "word": [
+      1,
+      1
+    ],
+    "core_states": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "comparable_core_pairs": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "conserved_parity_mask": 5,
+    "full_relation_incidence_components": 3,
+    "heldout_strict_no_label_count": "43/45",
+    "heldout_any_comparable_proxy_count": "44/45"
+  },
+  "independence_assessment": {
+    "reported_check": "0 violations on 12,759 decided families",
+    "mathematical_proof_independent_of_engine": true,
+    "count_independent_evidence_for_theorem": false,
+    "possible_role": "Implementation consistency check on shared census inputs.",
+    "limitation": "Shared relation encodings or semigroup/composition engine leave shared errors untested; a fresh split is not checker independence.",
+    "implementation_provenance": "Parent-owned determination; not inspected in this lane."
+  },
+  "remaining_parent_owned_obligations": [
+    "Make common living-set seriality an explicit tie-theorem premise and record the generator check.",
+    "Distinguish core-only labels from global endpoint labels.",
+    "Report core comparability and global label tests separately; reconcile affected census prose/counts and correction record.",
+    "Keep growth, native-contact, canonical-test and novelty claims outside this review."
+  ],
+  "validation": {
+    "mathematical_method": "Direct proof and handwritten finite relation powers; no experiment engine run.",
+    "artifact_check": "JSON serialized then parsed; both owned files nonempty.",
+    "writes": [
+      "research/TIE-CYCLE-20261114-001/referee-R1/codex/proof_review.md",
+      "research/TIE-CYCLE-20261114-001/referee-R1/codex/proof_review.json"
+    ]
+  }
+}

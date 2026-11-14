@@ -1,0 +1,260 @@
+{
+  "complete": true,
+  "families": 12772,
+  "relations_fresh": 26243,
+  "seconds": 17.991,
+  "max_rss_kib": 213524,
+  "stats": {
+    "train": {
+      "families": 6321,
+      "chain": 2606,
+      "multi": 1590,
+      "forgetting": 2906,
+      "identity_cycle": 3355,
+      "tie_cycle": 3360,
+      "tie_beyond_identity": 5,
+      "no_tie_chain": 2126,
+      "no_tie_chain_forget": 2126,
+      "chain_multi": 599,
+      "chain_wrapper": 228,
+      "nonchain": 3715,
+      "no_tie_nonchain": 835,
+      "no_tie_nonchain_forget": 780,
+      "nonforgetting": 3415,
+      "tie_and_forget": 0,
+      "census_capped": 33,
+      "census_capped_tie": 33,
+      "1def": 4731,
+      "chain_1def": 2007
+    },
+    "old_split": {
+      "N_acyclic_chains_heldout": 2096,
+      "forget": 2096
+    },
+    "split_overlap": {
+      "heldout|train": 1273,
+      "train|train": 1333,
+      "heldout|heldout": 1321,
+      "train|heldout": 1263
+    },
+    "heldout": {
+      "families": 6451,
+      "nonchain": 3867,
+      "multi": 1621,
+      "forgetting": 2935,
+      "identity_cycle": 3470,
+      "tie_cycle": 3471,
+      "tie_beyond_identity": 1,
+      "no_tie_nonchain": 883,
+      "no_tie_nonchain_forget": 838,
+      "chain": 2584,
+      "no_tie_chain": 2097,
+      "no_tie_chain_forget": 2097,
+      "chain_multi": 556,
+      "chain_wrapper": 215,
+      "nonforgetting": 3516,
+      "tie_and_forget": 0,
+      "census_capped": 33,
+      "census_capped_tie": 33,
+      "1def": 4830,
+      "chain_1def": 2028
+    }
+  },
+  "errors": [],
+  "controls": {
+    "passed": true,
+    "inherited": {
+      "passed": true,
+      "two_state_product_checks": 256,
+      "two_state_generator_pair_graph_vs_orbit_checks": 136,
+      "false_lasso_rejected": true,
+      "cap_is_not_nonforgetting_control": {
+        "complete": false,
+        "cap": 1,
+        "completed_lengths": 1,
+        "stored_products": 1,
+        "next_level_products": 1,
+        "length_set_sizes": [
+          1
+        ],
+        "all_rectangular_by_length": [
+          false
+        ],
+        "empty_product_lengths": []
+      },
+      "greatest_vs_least_fixed_point_control": {
+        "greatest_history": [
+          {
+            "0": "0xff"
+          },
+          {
+            "0": "0x7e"
+          },
+          {
+            "0": "0x7e"
+          }
+        ],
+        "greatest": "0x7e",
+        "least": "0x0"
+      },
+      "side_call_constraint_projection_control": {
+        "with_side": "0x40201008040200",
+        "without_side": "0x8040201008040201",
+        "impossible_side": "0x0",
+        "SAT_vs_enumeration": true
+      },
+      "named": [
+        {
+          "name": "empty_is_rectangular",
+          "result": {
+            "verdict": "certified",
+            "r": 1,
+            "lasso": null,
+            "nonrectangular_states_seen": 1,
+            "transitions_examined": 1,
+            "exhausted_nonrectangular_automaton": true
+          }
+        },
+        {
+          "name": "proper_rectangular",
+          "result": {
+            "verdict": "certified",
+            "r": 1,
+            "lasso": null,
+            "nonrectangular_states_seen": 1,
+            "transitions_examined": 1,
+            "exhausted_nonrectangular_automaton": true
+          }
+        },
+        {
+          "name": "identity_nonforgetting",
+          "result": {
+            "verdict": "non-forgetting",
+            "r": null,
+            "lasso": {
+              "prefix": [],
+              "cycle": [
+                0
+              ]
+            },
+            "lasso_check": {
+              "valid": true,
+              "prefix_product": "0x9",
+              "cycle_products_before": [
+                "0x9"
+              ],
+              "cycle_products_after": [
+                "0x9"
+              ],
+              "returns_to_same_product": true,
+              "recorded_metadata_convention": null
+            },
+            "nonrectangular_states_seen": 1,
+            "transitions_examined": 1,
+            "exhausted_nonrectangular_automaton": false
+          }
+        },
+        {
+          "name": "permutation_period_two",
+          "result": {
+            "verdict": "non-forgetting",
+            "r": null,
+            "lasso": {
+              "prefix": [],
+              "cycle": [
+                0,
+                0
+              ]
+            },
+            "lasso_check": {
+              "valid": true,
+              "prefix_product": "0x9",
+              "cycle_products_before": [
+                "0x9",
+                "0x6"
+              ],
+              "cycle_products_after": [
+                "0x6",
+                "0x9"
+              ],
+              "returns_to_same_product": true,
+              "recorded_metadata_convention": null
+            },
+            "nonrectangular_states_seen": 2,
+            "transitions_examined": 2,
+            "exhausted_nonrectangular_automaton": false
+          }
+        },
+        {
+          "name": "mixed_nonforgetting_choice",
+          "result": {
+            "verdict": "non-forgetting",
+            "r": null,
+            "lasso": {
+              "prefix": [],
+              "cycle": [
+                1
+              ]
+            },
+            "lasso_check": {
+              "valid": true,
+              "prefix_product": "0x9",
+              "cycle_products_before": [
+                "0x9"
+              ],
+              "cycle_products_after": [
+                "0x9"
+              ],
+              "returns_to_same_product": true,
+              "recorded_metadata_convention": null
+            },
+            "nonrectangular_states_seen": 1,
+            "transitions_examined": 2,
+            "exhausted_nonrectangular_automaton": false
+          }
+        },
+        {
+          "name": "first_rectangular_at_two",
+          "result": {
+            "verdict": "certified",
+            "r": 2,
+            "lasso": null,
+            "nonrectangular_states_seen": 2,
+            "transitions_examined": 2,
+            "exhausted_nonrectangular_automaton": true
+          }
+        }
+      ]
+    },
+    "fresh_embedded_compositions": 1792,
+    "positive_negative_controls": [
+      "identity",
+      "opposite",
+      "full",
+      "empty",
+      "tie-free parity",
+      "pure order",
+      "order plus conserved label",
+      "duplicate calls counted twice"
+    ]
+  },
+  "residual_families": 100,
+  "every_nonforgetting_has_verified_nonrectangular_idempotent": true,
+  "opened_repository_files": [
+    ".venv/lib/python3.13/site-packages/pysat/__pycache__/__init__.cpython-313.pyc",
+    ".venv/lib/python3.13/site-packages/pysat/__pycache__/_fileio.cpython-313.pyc",
+    ".venv/lib/python3.13/site-packages/pysat/__pycache__/_utils.cpython-313.pyc",
+    ".venv/lib/python3.13/site-packages/pysat/__pycache__/engines.cpython-313.pyc",
+    ".venv/lib/python3.13/site-packages/pysat/__pycache__/formula.cpython-313.pyc",
+    ".venv/lib/python3.13/site-packages/pysat/__pycache__/solvers.cpython-313.pyc",
+    "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz",
+    "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/full/results.jsonl",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/codex/__pycache__/sample_audit.cpython-313.pyc",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/codex/sample_audit.py",
+    "research/FORGET-RULE-20261114-001/referee-R1/codex/__pycache__/independent_rules.cpython-313.pyc",
+    "research/FORGET-RULE-20261114-001/referee-R1/codex/heldout_fresh.jsonl",
+    "research/FORGET-RULE-20261114-001/referee-R1/codex/independent_rules.py",
+    "research/TIE-CYCLE-20261114-001/referee-R1/codex/families_fresh.jsonl"
+  ],
+  "forbidden_study_python_opened": false
+}

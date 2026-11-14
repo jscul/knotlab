@@ -1,0 +1,89 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "TIE-CYCLE-20261114-001",
+  "mode": "independent_referee_only",
+  "completed_utc": "2026-11-14T02:10:22.666903+00:00",
+  "interpreter": "/home/jscul/p-vs-np-contact-first/.venv/bin/python",
+  "python_flag": "-B",
+  "network_used": false,
+  "git_state_changed": false,
+  "current_study_python_opened_or_imported": false,
+  "current_study_implementation_provenance": "not inspected; forbidden by task",
+  "fresh_components": [
+    "tie search",
+    "identity cycle witness extraction",
+    "positive-word closure",
+    "core classification",
+    "endpoint label classification",
+    "occurrence-sensitive chain filter",
+    "TIE split"
+  ],
+  "reused_components": [
+    "permitted prior referee greatest-limit/block semantics",
+    "permitted prior referee call-relation SAT projection",
+    "permitted prior referee nonrectangular product graph decisions"
+  ],
+  "independent_second_method": [
+    "set-based products and residual closure",
+    "all Boolean endpoint-label functions"
+  ],
+  "classification_definitions": {
+    "core_proxy": "Every nonrectangular idempotent has some comparable distinct core classes.",
+    "no_conserved_value": "Core proxy plus no nonconstant f(start)=g(end) on the full active endpoint supports.",
+    "unique_core_endpoint_classes": "Additionally every active endpoint has a unique principal class in the core quotient, separately for the start and end roles; this is a stronger literal reading, not the published core-only definition."
+  },
+  "invocations": [
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/TIE-CYCLE-20261114-001/referee-R1/codex/recompute.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/TIE-CYCLE-20261114-001/referee-R1/codex/validate_and_summarize.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/TIE-CYCLE-20261114-001/referee-R1/codex/write_report.py"
+  ],
+  "main_seconds": 17.991,
+  "main_peak_rss_kib": 213524,
+  "validation_seconds": 2.779,
+  "validation_peak_rss_kib": 87864,
+  "all_families": 12772,
+  "fresh_call_relations": 26243,
+  "residual_idempotents": 159,
+  "all_json_jsonl_parsed": true,
+  "input_sha256": {
+    "research/TIE-CYCLE-20261114-001/tie_cycle.md": "18f1ac29c6ab9eaaadf44bdf04073187478681e73f7c9987a719de4d08454bf0",
+    "research/TIE-CYCLE-20261114-001/preregistration.md": "bbf474085c4783825a1fc2c31afb95e5ce57a892af6ba24ccdf228a9b2b5039d",
+    "research/TIE-CYCLE-20261114-001/advisor_review_answer.md": "f252f770e26bfdd24c7aae07487a337b55a5dcc8f6d8f9401c46888c8f59c71d",
+    "experiments/TIE-CYCLE-20261114-001A/TIE-CYCLE-20261114-001A-E001_ties/heldout.json": "50b832867284e159aea3a4c6c4e3b32d23d75177c7b85215d03243ed9bfcd3b7",
+    "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/full/results.jsonl": "ee9e8f86b4aef5fd1e5e9e90dfed7448c213751436e04cbfc0bd6339565194d0",
+    "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz": "a0473d5c08c6273ec97220cb5462bf1381140f49df0b1db653bfc09976786ddb",
+    "research/FORGET-RULE-20261114-001/referee-R1/codex/independent_rules.py": "ec7409e477bda9d0cc79e13e27202b4e53b625abebe1cafe46d2405d23a89a42",
+    "research/FORGET-RULE-20261114-001/referee-R1/codex/heldout_fresh.jsonl": "7c83ca432a2db583f2f5898c08f0017b531b209c2f214b590e33a8786b279850",
+    "research/FORGET-RULE-20261114-001/referee-R1/codex/heldout_recount.json": "341db0f9c4ae47924fd94d6b1a9050561af55435637e88d1cb87206b8076222f",
+    "research/FORGET-RULE-20261114-001/referee-R1/codex/codex_report.md": "9a2dc034eb541101d4f5877a21208b7944550f080bfd117000b8e6763f9e6f0a",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/codex/sample_audit.py": "16e50e36ef59f9d8fdbceacc33abd81588ec280f149a5f65b34ff6bc266e56cb",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/codex/codex_report.md": "c8be309f26c420e3e3dcf37bd8123a35e168a4e66ac4afa2c34490fed0ce19ca",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/codex/chain_share_audit.py": "dea2558a4ccfb01b09ddaff0becd430f26a9803f30e9e351f00e7ae5b59d381d"
+  },
+  "output_sha256": {
+    "recompute.py": "2a61bfdab31d226c7e1912486a8dfbf1b501cd9bfab89c798333ddb209b0160c",
+    "validate_and_summarize.py": "0803219d2b1b42fc1cb0baac58782a77e26a4c586b30641f435f623a1a89609d",
+    "write_report.py": "b1a2fe6292d57732abdc3bef56600b4064b39475679eb74dbdbbbfdbfd204027",
+    "families_fresh.jsonl": "d7475bb0e21dcf9e932dc37f8b3718020a67c24beacb696f9861cad942ec449b",
+    "residual_idempotents.json": "f1dd59425c32d77e47cb4d62ed868368356452d07a90e1df4d553e9a94b6e468",
+    "ties_beyond_identity.json": "deee89cfde407dae83f6fffb0cbaa2601d13c2dfcba71cf6e4dc5eba1b970d1c",
+    "capped_decisions.json": "0aaed971abc21536bd23d1fe3ea49eae0f36a5b5c26e6721a64b81c95fba70c3",
+    "classification_counterexamples.json": "be04a7aa8b1f0196287715931f7be4fd186e183039943fce6bcbd6b58f697876",
+    "recomputation.json": "83af7bb4f38a4ce00f87eb2e7de7123a98cce43c06fc9675d0227cfabef9cf6d",
+    "validation.json": "c90a240e234424c2ba9c9d414ce2bd209422a4e0a5297abe4102d737aa5ffb14",
+    "proof_review.md": "ef223e01d224c3b60bb8c408f7884ec439c643034f31e81b9464ecb6f225fcb9",
+    "proof_review.json": "423c3382e5c067442214aff8f7cd5e87475d0ce5b0bd7cf0f04b44a1c023420e",
+    "codex_report.md": "4f44377948e6f75cea49aa1cfd15b57dfeaf27cd1e1abadfc00c8e21d04c2be4"
+  },
+  "preserved_preexisting_files": [
+    "brief_codex.md",
+    "codex_last_message.md"
+  ],
+  "deleted_own_regenerable_scratch": [
+    "smoke_families.jsonl",
+    "smoke_residual_idempotents.json",
+    "smoke_ties_beyond_identity.json",
+    "smoke_capped_decisions.json",
+    "smoke_recomputation.json"
+  ]
+}

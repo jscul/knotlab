@@ -1,0 +1,171 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "CENSUS-FORGET-20261114-001",
+  "activity": "restricted independent referee; no lifecycle changes",
+  "verdict": "Refuted",
+  "started_utc": "2026-11-14T01:06:52+00:00",
+  "finished_utc": "2026-11-14T01:23:13.398315+00:00",
+  "elapsed_minutes": 16.356638583333332,
+  "python": "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B",
+  "input_sha256": {
+    "research/CENSUS-FORGET-20261114-001/census_forget.md": "3d9366cef3cbe6a7316653ad9cf9b2f2003104a22b03c93c013696b91a27342b",
+    "research/CENSUS-FORGET-20261114-001/preregistration.md": "df9d6f9cfff02694cd95dc2bbd45e420039b90bb82466d5592a4681fe3eace4f",
+    "research/CENSUS-FORGET-20261114-001/advisor_review_answer.md": "79ba7f522a40391143a968ce6b1ea500a00cd6ce2ac306b14a7833bf366a26cd",
+    "research/FREE-TARGET-20261114-001/referee-R1/codex/codex_report.md": "f37ce647d0a6a1909f3e490db2afeff65083d68bc1a305c10902b34b3d32b137",
+    "research/FREE-TARGET-20261114-001/referee-R1/codex/direct_bonds.py": "12fb65d55ce41584b8f7c89caadb30882e1430fc59310ff5999fc571e9ff4915",
+    "research/FREE-TARGET-20261114-001/referee-R1/codex/relations_audit.py": "b88fc3c7623c0f671469da8c073710c0ecefc1edb94d27243a0664ead50a6325",
+    "experiments/SHORT-DESC-20261112-001A/SHORT-DESC-20261112-001A-E001_description_census/dlang.py": "8cbd77ee6d857c7e110fb24f38be87ff80f76bd49a522f0d00e2b0166ae1bd76",
+    "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/full/results.jsonl": "ee9e8f86b4aef5fd1e5e9e90dfed7448c213751436e04cbfc0bd6339565194d0",
+    "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/reading.json": "8a5966fef6c4721b2716acb060e2e7726f4c42d9aae48e28227091c09e6fc0c3",
+    "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz": "a0473d5c08c6273ec97220cb5462bf1381140f49df0b1db653bfc09976786ddb",
+    "experiments/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/codex/draws.jsonl.gz": "9b373eca136f82905ac017c6419d27354ca0784e17f973fac238bd34723b7caf"
+  },
+  "output_sha256": {
+    "codex_report.md": "c8be309f26c420e3e3dcf37bd8123a35e168a4e66ac4afa2c34490fed0ce19ca",
+    "target_inventory.py": "fd672440953b597cab4e6a8af2d8bbe587a327a3397e4f2371b24faca6d072d5",
+    "target_inventory.json": "f41ee85a28af6ca83b8957006e73072049c1a7f6d3face4025ab85f8dacedcd3",
+    "direct_other_targets.py": "782a338287ed27e91296312f03749e268a97ee1b77c19db96f6cddfa8ea96a89",
+    "direct_other_targets.jsonl": "3ef42f01d0d840f486ec412beebc6f984ae0bdca2785343665638a3ee7a5e00a",
+    "direct_other_targets_odd.jsonl": "9711b61008f56c843a0d048007187bfc941b6e453e9f630695f2e0df97146dc0",
+    "direct_delayed_S.jsonl": "bb211f770eca7c994c5ed9fdce814af129a68429a64ead3339b4b82d6c0bb438",
+    "validate_other_targets.py": "3f5505e8286e62583019dfd09e8abf8b97ab0b99efd090834302864c76387bac",
+    "direct_validation.json": "0f3bc2237092f3ff2379fe2bf3db74949fc7b794243e00b1392eab61e4766dd4",
+    "sample_audit.py": "16e50e36ef59f9d8fdbceacc33abd81588ec280f149a5f65b34ff6bc266e56cb",
+    "sample_audit.json": "3cbad7128426069636608af2c263a55c4387b5e9d3dfa78ef54910d92687c31d",
+    "sample_audit.md": "029daf3502728463ed987dc58c9ac483d9de655751f7a1ff43204c273653527f",
+    "sample_run.log": "c576f8b83f1e0f66eed1f3721072c6e683dc2113f2a042d6a28ec4de4bb80562",
+    "chain_share_audit.py": "dea2558a4ccfb01b09ddaff0becd430f26a9803f30e9e351f00e7ae5b59d381d",
+    "chain_share_audit.json": "d516238b2855b4d3081321084fffe2bf971c18e3a3463bc13b15c49233c53079",
+    "chain_share_audit.md": "738f4c5359bd6b2eeb78515966a96b10e54cbac94dba0ec0e9aea4433db5df7b",
+    "finalize_referee.py": "45995e4e719bd44e4cecd6b8474321529843425ad0f82bdbef11dd8db970e0ef"
+  },
+  "validation": {
+    "all_json_jsonl_parse": true,
+    "all_python_ast_parse": true,
+    "direct_points": 112,
+    "all_direct_global_minima": 3,
+    "fresh_truth_table_controls": 16,
+    "inherited_search_controls": 6,
+    "sample_families": 127,
+    "sample_R_i": 318,
+    "sample_completed_source_verdicts_reproduced": 103,
+    "sample_mismatches": 0,
+    "sample_caps_new_nonforgetting_certificates": 24,
+    "provenance_checks": [
+      {
+        "file": "sample_audit.json",
+        "input": "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz",
+        "matches": true
+      },
+      {
+        "file": "sample_audit.json",
+        "input": "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/full/results.jsonl",
+        "matches": true
+      },
+      {
+        "file": "sample_audit.json",
+        "input": "experiments/SHORT-DESC-20261112-001A/SHORT-DESC-20261112-001A-E001_description_census/dlang.py",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/full/job.json",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/full/results.jsonl",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/reading.json",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "experiments/EVERY-RAY-20261113-001A/EVERY-RAY-20261113-001A-E001_min_over_paths/codex/sample/G.jsonl",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "experiments/EVERY-RAY-20261113-001A/EVERY-RAY-20261113-001A-E001_min_over_paths/codex/sample/phase2.jsonl",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "experiments/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/codex/draws.jsonl.gz",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "research/CENSUS-FORGET-20261114-001/advisor_review_answer.md",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "research/CENSUS-FORGET-20261114-001/census_forget.md",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "research/CENSUS-FORGET-20261114-001/preregistration.md",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "research/CENSUS-FORGET-20261114-001/referee-R1/codex/target_inventory.json",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "research/FREE-TARGET-20261114-001/referee-R1/codex/chain_wording_audit.md",
+        "matches": true
+      },
+      {
+        "file": "chain_share_audit.json",
+        "input": "research/FREE-TARGET-20261114-001/referee-R1/codex/codex_report.md",
+        "matches": true
+      }
+    ]
+  },
+  "safe_restricted_subtotal": {
+    "single_call_nonchains": 384,
+    "multicall_nonchains": 1046,
+    "chain_draws": 5633,
+    "draws": 7063,
+    "qualification": "Sufficient restricted tally, conditional on inherited uniform ray growth and corrected gap/ancestry arguments; not a full all-copy classification"
+  },
+  "invocations": [
+    "target_inventory.py",
+    "direct_other_targets.py --ids f25a8e17968d,3fe70047c198,f3c4843e45fa,ec647c80edb0,c6cbc657bedb --depths 1,2,3,4,6,10 --extras 1,2 --seconds 5 --max-size 4",
+    "direct_other_targets.py --ids f25a8e17968d,3fe70047c198,f3c4843e45fa,ec647c80edb0,c6cbc657bedb --depths 5,7,9,11 --extras 1,2 --seconds 10 --max-size 4 --output direct_other_targets_odd.jsonl",
+    "direct_other_targets.py --ids e8ce853eb78a --depths 1,2,3,4,5,6 --extras 1,2 --seconds 15 --max-size 4 --output direct_delayed_S.jsonl",
+    "validate_other_targets.py",
+    "sample_audit.py",
+    "chain_share_audit.py",
+    "finalize_referee.py"
+  ],
+  "resource_observations": {
+    "max_task_compute_processes": 3,
+    "per_worker_address_space_cap_bytes": 2147483648,
+    "sample_peak_rss_kib": 366420,
+    "main_direct_peak_rss_kib": 82196,
+    "finalizer_peak_rss_kib": 25048,
+    "sample_compute_seconds": 29.907128,
+    "all_commands_under_15_minutes": true,
+    "no_resource_or_timeout_result_promoted": true
+  },
+  "limitations": [
+    "Only the specified sample receives a fully fresh relation/semigroup recomputation.",
+    "Census first-ray growth authority is inherited; this task recounts its records.",
+    "The 188 excluded certificates are not all classified as bounded.",
+    "Nominal Wilson intervals do not themselves validate the sampling model.",
+    "No canonical definitions, research status, shared correction log, or public record changed."
+  ]
+}

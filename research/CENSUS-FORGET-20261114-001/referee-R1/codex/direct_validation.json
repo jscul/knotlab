@@ -1,0 +1,1537 @@
+{
+  "passed": true,
+  "search_controls": {
+    "cases": [
+      {
+        "name": "one_nae",
+        "minimum": 3,
+        "cegar_agrees": true,
+        "hand_expectation": 3
+      },
+      {
+        "name": "two_independent",
+        "minimum": null,
+        "cegar_agrees": true,
+        "hand_expectation": null
+      },
+      {
+        "name": "two_nae_chain",
+        "minimum": 4,
+        "cegar_agrees": true,
+        "hand_expectation": 4
+      },
+      {
+        "name": "prefix_without_endpoint_bond",
+        "minimum": null,
+        "cegar_agrees": true,
+        "hand_expectation": null
+      },
+      {
+        "name": "suffix_restores_endpoint_bond",
+        "minimum": 4,
+        "cegar_agrees": true,
+        "hand_expectation": 4
+      },
+      {
+        "name": "support_minimality_control",
+        "minimum": 3,
+        "cegar_agrees": true,
+        "hand_expectation": 3
+      }
+    ],
+    "nonminimal_mutant_rejected": true
+  },
+  "fresh_truth_controls": [
+    {
+      "case": 0,
+      "n": 5,
+      "clauses": [
+        [
+          5,
+          4,
+          1
+        ],
+        [
+          -5,
+          -4,
+          -1
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 1,
+      "n": 6,
+      "clauses": [
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          -2,
+          -3,
+          -6
+        ],
+        [
+          6,
+          1,
+          5
+        ],
+        [
+          -6,
+          -1,
+          -5
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 2,
+      "n": 7,
+      "clauses": [
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          -1,
+          -2,
+          -6
+        ],
+        [
+          2,
+          1,
+          4
+        ],
+        [
+          -2,
+          -1,
+          -4
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          -4,
+          -5,
+          -1
+        ]
+      ],
+      "truth_minimum": null,
+      "sat_minimum": null
+    },
+    {
+      "case": 3,
+      "n": 5,
+      "clauses": [
+        [
+          4,
+          3,
+          5
+        ],
+        [
+          -4,
+          -3,
+          -5
+        ],
+        [
+          3,
+          2,
+          4
+        ],
+        [
+          -3,
+          -2,
+          -4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          -2,
+          -4,
+          -5
+        ],
+        [
+          4,
+          3,
+          1
+        ],
+        [
+          -4,
+          -3,
+          -1
+        ]
+      ],
+      "truth_minimum": 4,
+      "sat_minimum": 4
+    },
+    {
+      "case": 4,
+      "n": 6,
+      "clauses": [
+        [
+          4,
+          2,
+          6
+        ],
+        [
+          -4,
+          -2,
+          -6
+        ],
+        [
+          3,
+          6,
+          5
+        ],
+        [
+          -3,
+          -6,
+          -5
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          -4,
+          -5,
+          -1
+        ],
+        [
+          3,
+          6,
+          5
+        ],
+        [
+          -3,
+          -6,
+          -5
+        ],
+        [
+          5,
+          2,
+          6
+        ],
+        [
+          -5,
+          -2,
+          -6
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 5,
+      "n": 7,
+      "clauses": [
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          -3,
+          -4,
+          -1
+        ]
+      ],
+      "truth_minimum": null,
+      "sat_minimum": null
+    },
+    {
+      "case": 6,
+      "n": 5,
+      "clauses": [
+        [
+          5,
+          3,
+          4
+        ],
+        [
+          -5,
+          -3,
+          -4
+        ],
+        [
+          5,
+          4,
+          2
+        ],
+        [
+          -5,
+          -4,
+          -2
+        ]
+      ],
+      "truth_minimum": null,
+      "sat_minimum": null
+    },
+    {
+      "case": 7,
+      "n": 6,
+      "clauses": [
+        [
+          6,
+          5,
+          2
+        ],
+        [
+          -6,
+          -5,
+          -2
+        ],
+        [
+          6,
+          4,
+          2
+        ],
+        [
+          -6,
+          -4,
+          -2
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          -1,
+          -3,
+          -2
+        ]
+      ],
+      "truth_minimum": 4,
+      "sat_minimum": 4
+    },
+    {
+      "case": 8,
+      "n": 7,
+      "clauses": [
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          -1,
+          -2,
+          -6
+        ],
+        [
+          2,
+          6,
+          3
+        ],
+        [
+          -2,
+          -6,
+          -3
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          -2,
+          -1,
+          -3
+        ],
+        [
+          6,
+          7,
+          3
+        ],
+        [
+          -6,
+          -7,
+          -3
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 9,
+      "n": 5,
+      "clauses": [
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          -1,
+          -5,
+          -2
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          -3,
+          -5,
+          -1
+        ],
+        [
+          5,
+          3,
+          2
+        ],
+        [
+          -5,
+          -3,
+          -2
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          -1,
+          -4,
+          -5
+        ],
+        [
+          3,
+          1,
+          4
+        ],
+        [
+          -3,
+          -1,
+          -4
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 10,
+      "n": 6,
+      "clauses": [
+        [
+          6,
+          5,
+          1
+        ],
+        [
+          -6,
+          -5,
+          -1
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 11,
+      "n": 7,
+      "clauses": [
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          -1,
+          -3,
+          -6
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          -4,
+          -3,
+          -2
+        ]
+      ],
+      "truth_minimum": null,
+      "sat_minimum": null
+    },
+    {
+      "case": 12,
+      "n": 5,
+      "clauses": [
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          -3,
+          -1,
+          -2
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          -4,
+          -3,
+          -2
+        ],
+        [
+          2,
+          5,
+          3
+        ],
+        [
+          -2,
+          -5,
+          -3
+        ]
+      ],
+      "truth_minimum": null,
+      "sat_minimum": null
+    },
+    {
+      "case": 13,
+      "n": 6,
+      "clauses": [
+        [
+          3,
+          2,
+          5
+        ],
+        [
+          -3,
+          -2,
+          -5
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          -3,
+          -5,
+          -6
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          -3,
+          -5,
+          -4
+        ],
+        [
+          2,
+          1,
+          6
+        ],
+        [
+          -2,
+          -1,
+          -6
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 14,
+      "n": 7,
+      "clauses": [
+        [
+          2,
+          4,
+          3
+        ],
+        [
+          -2,
+          -4,
+          -3
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          -3,
+          -4,
+          -5
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          -1,
+          -4,
+          -7
+        ],
+        [
+          6,
+          4,
+          1
+        ],
+        [
+          -6,
+          -4,
+          -1
+        ],
+        [
+          4,
+          5,
+          3
+        ],
+        [
+          -4,
+          -5,
+          -3
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    },
+    {
+      "case": 15,
+      "n": 5,
+      "clauses": [
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          -3,
+          -5,
+          -1
+        ]
+      ],
+      "truth_minimum": 3,
+      "sat_minimum": 3
+    }
+  ],
+  "retained_points": [
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 1,
+      "h": 1,
+      "endpoint_pairs_exhausted": 12,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 1,
+      "h": 2,
+      "endpoint_pairs_exhausted": 12,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 2,
+      "h": 1,
+      "endpoint_pairs_exhausted": 15,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 2,
+      "h": 2,
+      "endpoint_pairs_exhausted": 15,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 3,
+      "h": 1,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 3,
+      "h": 2,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 4,
+      "h": 1,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 4,
+      "h": 2,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 6,
+      "h": 1,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 6,
+      "h": 2,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 10,
+      "h": 1,
+      "endpoint_pairs_exhausted": 39,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 10,
+      "h": 2,
+      "endpoint_pairs_exhausted": 39,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 1,
+      "h": 1,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 1,
+      "h": 2,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 2,
+      "h": 1,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 2,
+      "h": 2,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 3,
+      "h": 1,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 3,
+      "h": 2,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 4,
+      "h": 1,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 4,
+      "h": 2,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 6,
+      "h": 1,
+      "endpoint_pairs_exhausted": 48,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 6,
+      "h": 2,
+      "endpoint_pairs_exhausted": 48,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 10,
+      "h": 1,
+      "endpoint_pairs_exhausted": 72,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 10,
+      "h": 2,
+      "endpoint_pairs_exhausted": 72,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 1,
+      "h": 1,
+      "endpoint_pairs_exhausted": 15,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 1,
+      "h": 2,
+      "endpoint_pairs_exhausted": 15,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 2,
+      "h": 1,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 2,
+      "h": 2,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 3,
+      "h": 1,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 3,
+      "h": 2,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 4,
+      "h": 1,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 4,
+      "h": 2,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 6,
+      "h": 1,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 6,
+      "h": 2,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 10,
+      "h": 1,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 10,
+      "h": 2,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 1,
+      "h": 1,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 1,
+      "h": 2,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 2,
+      "h": 1,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 2,
+      "h": 2,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 3,
+      "h": 1,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 3,
+      "h": 2,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 4,
+      "h": 1,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 4,
+      "h": 2,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 6,
+      "h": 1,
+      "endpoint_pairs_exhausted": 33,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 6,
+      "h": 2,
+      "endpoint_pairs_exhausted": 33,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 10,
+      "h": 1,
+      "endpoint_pairs_exhausted": 45,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 10,
+      "h": 2,
+      "endpoint_pairs_exhausted": 45,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 1,
+      "h": 1,
+      "endpoint_pairs_exhausted": 12,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 1,
+      "h": 2,
+      "endpoint_pairs_exhausted": 12,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 2,
+      "h": 1,
+      "endpoint_pairs_exhausted": 15,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 2,
+      "h": 2,
+      "endpoint_pairs_exhausted": 15,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 3,
+      "h": 1,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 3,
+      "h": 2,
+      "endpoint_pairs_exhausted": 18,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 4,
+      "h": 1,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 4,
+      "h": 2,
+      "endpoint_pairs_exhausted": 21,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 6,
+      "h": 1,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 6,
+      "h": 2,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 10,
+      "h": 1,
+      "endpoint_pairs_exhausted": 39,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 10,
+      "h": 2,
+      "endpoint_pairs_exhausted": 39,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 5,
+      "h": 1,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 5,
+      "h": 2,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 7,
+      "h": 1,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 7,
+      "h": 2,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 9,
+      "h": 1,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 9,
+      "h": 2,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 11,
+      "h": 1,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f25a8e17968d3ac687646c4eb3faf6d3c310841b8c8b16ae2240bf865304b40c",
+      "s": 11,
+      "h": 2,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 5,
+      "h": 1,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 5,
+      "h": 2,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 7,
+      "h": 1,
+      "endpoint_pairs_exhausted": 54,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 7,
+      "h": 2,
+      "endpoint_pairs_exhausted": 54,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 9,
+      "h": 1,
+      "endpoint_pairs_exhausted": 66,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 9,
+      "h": 2,
+      "endpoint_pairs_exhausted": 66,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 11,
+      "h": 1,
+      "endpoint_pairs_exhausted": 78,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "3fe70047c19879778aabd6fd392bb5034ebc3e04bd92a4be3e494f5428e776ae",
+      "s": 11,
+      "h": 2,
+      "endpoint_pairs_exhausted": 78,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 5,
+      "h": 1,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 5,
+      "h": 2,
+      "endpoint_pairs_exhausted": 27,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 7,
+      "h": 1,
+      "endpoint_pairs_exhausted": 33,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 7,
+      "h": 2,
+      "endpoint_pairs_exhausted": 33,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 9,
+      "h": 1,
+      "endpoint_pairs_exhausted": 39,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 9,
+      "h": 2,
+      "endpoint_pairs_exhausted": 39,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 11,
+      "h": 1,
+      "endpoint_pairs_exhausted": 45,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "f3c4843e45faae65bf66483fea5551262901556533efaa5c2b2731d1ebc39d2e",
+      "s": 11,
+      "h": 2,
+      "endpoint_pairs_exhausted": 45,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 5,
+      "h": 1,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 5,
+      "h": 2,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 7,
+      "h": 1,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 7,
+      "h": 2,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 9,
+      "h": 1,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 9,
+      "h": 2,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 11,
+      "h": 1,
+      "endpoint_pairs_exhausted": 48,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "ec647c80edb0a3563fa39485e2518f95058237a299cf86e497f0b074f80d2d5b",
+      "s": 11,
+      "h": 2,
+      "endpoint_pairs_exhausted": 48,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 5,
+      "h": 1,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 5,
+      "h": 2,
+      "endpoint_pairs_exhausted": 24,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 7,
+      "h": 1,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 7,
+      "h": 2,
+      "endpoint_pairs_exhausted": 30,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 9,
+      "h": 1,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 9,
+      "h": 2,
+      "endpoint_pairs_exhausted": 36,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 11,
+      "h": 1,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "c6cbc657bedb25bbb0aa21c8ea583f877683bf035b6fb1dfbff1944359112699",
+      "s": 11,
+      "h": 2,
+      "endpoint_pairs_exhausted": 42,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 1,
+      "h": 1,
+      "endpoint_pairs_exhausted": 80,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 1,
+      "h": 2,
+      "endpoint_pairs_exhausted": 80,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 2,
+      "h": 1,
+      "endpoint_pairs_exhausted": 176,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 2,
+      "h": 2,
+      "endpoint_pairs_exhausted": 176,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 3,
+      "h": 1,
+      "endpoint_pairs_exhausted": 368,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 3,
+      "h": 2,
+      "endpoint_pairs_exhausted": 368,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 4,
+      "h": 1,
+      "endpoint_pairs_exhausted": 752,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 4,
+      "h": 2,
+      "endpoint_pairs_exhausted": 752,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 5,
+      "h": 1,
+      "endpoint_pairs_exhausted": 1520,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 5,
+      "h": 2,
+      "endpoint_pairs_exhausted": 1520,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 6,
+      "h": 1,
+      "endpoint_pairs_exhausted": 3056,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    },
+    {
+      "family_sha256": "e8ce853eb78ab7e3183ead630a81fa911b37e867028864c840322c4ee06c8308",
+      "s": 6,
+      "h": 2,
+      "endpoint_pairs_exhausted": 3056,
+      "witness_projection_verified": true,
+      "global_minimum": 3
+    }
+  ],
+  "point_count": 112,
+  "all_global_minima_are_three": true,
+  "scope_of_exactness": "All depth-s target variables occur explicitly. Every singleton is free by nonempty complement symmetry. Every root/target pair is tested in the exact boundary projection. The three-member witness proves the global minimum, even when arbitrary deeper support members are admitted.",
+  "seconds": 3.891155630000867,
+  "peak_rss_kib": 47868
+}

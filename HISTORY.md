@@ -20,6 +20,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   states covered only the automata tried ([decision note](research/LEVEL-RETURN-20261113-001/level_return.md)).
 - Unchanged: every verdict where recertified, and the proofs.
 
+## 14 November 2026: the whole rule, narrowed by its referee
+
+- In the study of whether reading is the whole rule for the bond (`TOP-INFO-20261114-001`), the 1.3% of bounded families that
+  neither reading nor pinning explains were called bonds "through middle members". The referee found three of them bounded by the
+  top's own block and the target copy alone, so they are a residue, not a mechanism. Also narrowed: hiding does occur in single
+  states; localisation holds for some least bond, with a window computable once the bound is known; the counts are restated (5,085
+  bounded, 632 growing, 72 undecided in scope) ([decision note](research/TOP-INFO-20261114-001/top_info.md)).
+- Unchanged: Theorem P′, the two-block window bound, localisation (with its proof repaired), and every prediction's verdict.
+
 ## 14 November 2026: reading's converse settled by its referee
 
 - In the study of whether reading decides growth (`READ-RULE-20261114-001`), the converse, "growth needs every carried value unread",

@@ -36,9 +36,14 @@ bond of the pattern, and U₂(s) ≥ L(s).
 - **Periodicity.** The pair (J′_w, the identity partition) takes finitely many values, so U₂ is eventually periodic by the same
   state iteration. ∎
 
+*Start convention (after the referee).* For main = S, depth 0 keeps one copy, and a nonempty word starts with the call-specific
+Start′ followed by the remaining factors. A wrapper starts directly and adds one level. Main's own distinctions passed down as
+arguments must be merged with the copies' ports; without that merge the window is wrong.
+
 ## Localisation
 
-*Statement.* Suppose L(s) ≤ C for every large s on a residue modulo Π = m!. Here m counts the states (copy type, product of
+*Statement (narrowed after the referee: it holds for **some** least bond, not every one, and the window is computable only given
+C).* Suppose L(s) ≤ C for every large s on a residue modulo Π = m!. Here m counts the states (copy type, product of
 per-call relations from a copy, carry map) over words started from any copy. Then for every s on that residue beyond
 (C + 1)·m·(Π + 1) + C, some bond of size at most C has a constrained shape:
 - along the target's word, its occupied levels lie within B = C·m·(Π + 1) levels of the root or of the target copy;
@@ -47,6 +52,19 @@ per-call relations from a copy, carry map) over words started from any copy. The
 
 (Corrected on the advisor's check. The first draft said "within m levels of where they branch off", left the copy type out of the
 state, and did not say how large s must be.)
+
+*Repairs after the referee (not a block),* used below:
+- **Counting.** Members count at their allocating copy, giving at most C + 1 member-free stretches, and the stretch products run over
+  the unoccupied blocks.
+- **State equality.** It keeps the relative product and the carry map of every input port, including identities owned by an
+  ancestor.
+- **Restoring depth.** Use a pumpable loop of length ℓ ≤ m, so that ℓ divides Π.
+- **Side subtrees.** Protect, recursively, every level that holds a member or an off-path branch holding one.
+- **Onset.** A backward normalisation that keeps a short pumpable loop gives the onset s > H = (C + 1)·m·(Π + 1) + C, without also
+  needing L ≤ C to have started.
+
+The referee's synthetic family (m = 6, Π = 720, C = 3, H = 17,307) has, at s = 17,308, a least bond with a member 23 levels below
+the target, beyond C·(m + 1) = 21, as well as a local one. So the statement is a normal form for witnesses.
 
 *Proof.* Take a bond W of size at most C at depth s. Call a level of the target's word occupied when the copy there, or a copy in its
 side subtrees, holds a member of W as its own distinction; each member counts once, at its allocating copy, as READ-RULE's referee

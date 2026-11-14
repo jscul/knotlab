@@ -83,3 +83,11 @@ period without changing the projection; shorten all but one.
 Codex writes only in `experiments/TOP-INFO-20261114-001A/TOP-INFO-20261114-001A-E001_rule_check/codex/`, without commits, and uses the
 shared runner for anything over ten minutes, which the thread launches and registers. Stop after the census check, the proofs of P′
 and the two-block bound, localisation proved or its gap stated, a referee hand-off and the report.
+
+## Addendum before the full run (2026-11-14)
+
+Codex asked which 30 families the brute-force gate uses; the frozen text gave none. **The first 30 in-scope families of the
+identity stratum among the two-block cases (the families not already bounded), in sha256("TOP:" + key) order**, each at every S-word
+of length at most 3 and every direct entry, with `two_block_brute.compare_family`. The full run uses 3 workers (MemoryMax 12 GB, 3 GB
+and 600 s per case, retries for timeouts, memory and crashes) instead of the prepared single worker; nothing else changes. Codex's
+20-case smoke was seen first; it holds no prediction's verdict.

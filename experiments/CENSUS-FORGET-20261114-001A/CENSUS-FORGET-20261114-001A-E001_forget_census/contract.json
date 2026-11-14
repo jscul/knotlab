@@ -1,0 +1,10 @@
+{"schema_version": 1, "experiment_id": "CENSUS-FORGET-20261114-001A-E001", "ticket": "CENSUS-FORGET-20261114-001A", "status": "Frozen", "evidence_stage": "confirmatory", "branch": "code_analysis",
+ "question": "The weighted share of census first-ray growers certified (exact forgetting test) to grow at least linearly to any copy at depth s with members anywhere.",
+ "definitions": {"job": "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/job.py (sha256 be907ed346ee4b3deedbe874f5617167065809291e0d174f526c6b57453ebc81), wrapping FREE-TARGET's Codex code unchanged", "verdicts": "certified / non-forgetting / capped; chains a settled row"},
+ "public_inputs": {"code": "FREE-TARGET's relations.py, independent.py, inputs.py read-only", "run": "the shared runner, launched by the thread"},
+ "forbidden_inputs": ["Changing the predictions after seeing the run"],
+ "primary_observable": "verdict per family, joined to draws",
+ "cheapest_meaningful_control": "EVERY-RAY consistency; FREE-TARGET reproduction; independent audit",
+ "validation_gate": "G of the pre-registration",
+ "predictions": {"P1": "certified weight share among c>=2 non-chain growers outside EVERY-RAY's 300 in [8%, 25%]"},
+ "stop_rule": "One run, its summary; referee hand-off; report.", "runtime": "minutes"}

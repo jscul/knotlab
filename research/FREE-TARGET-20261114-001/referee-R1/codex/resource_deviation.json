@@ -1,0 +1,10 @@
+{
+  "kind": "transient_process_limit_overlap",
+  "time_utc": "2026-11-14 00:50",
+  "allowed_compute_processes": 3,
+  "observed_compute_processes": 4,
+  "cause": "Two new commands were launched after polling two older commands that were still running their last point.",
+  "remedy": "Immediately interrupted the newly started --case 5 --depths 5 --output direct_final5.jsonl command through its own execution session. It produced no result record and none is used.",
+  "scientific_effect": "No exact result is inferred from the interrupted run. A brief CPU-contention interval can affect timing and timeout outcomes, which are never counted as exact exclusions beyond completed sizes. This is an execution-rule deviation, not a mathematical validation result.",
+  "subsequent_process_policy": "Require explicit completion before replacing a process slot."
+}

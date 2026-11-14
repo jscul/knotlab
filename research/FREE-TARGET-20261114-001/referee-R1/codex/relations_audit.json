@@ -1,0 +1,6582 @@
+{
+  "controls": {
+    "all_two_state_products_checked": 256,
+    "false_identity_rectangular_claim_rejected": true,
+    "false_recurrence_claim_rejected": true,
+    "named": [
+      {
+        "derived": {
+          "P_r": [
+            "0xf"
+          ],
+          "all_rectangular_by_length": [
+            true
+          ],
+          "length_set_sizes": [
+            1
+          ],
+          "period": 1,
+          "r": 1,
+          "reachable_level_product_entries": 1,
+          "recurrent_word": null,
+          "repeat_start": 1
+        },
+        "expected_r": 1,
+        "generators": [
+          "0xf"
+        ],
+        "name": "full",
+        "q": 2
+      },
+      {
+        "derived": {
+          "P_r": [
+            "0x2"
+          ],
+          "all_rectangular_by_length": [
+            true,
+            true
+          ],
+          "length_set_sizes": [
+            1,
+            1
+          ],
+          "period": 1,
+          "r": 1,
+          "reachable_level_product_entries": 2,
+          "recurrent_word": null,
+          "repeat_start": 2
+        },
+        "expected_r": 1,
+        "generators": [
+          "0x2"
+        ],
+        "name": "proper_product",
+        "q": 2
+      },
+      {
+        "derived": {
+          "P_r": [
+            "0x0"
+          ],
+          "all_rectangular_by_length": [
+            true
+          ],
+          "length_set_sizes": [
+            1
+          ],
+          "period": 1,
+          "r": 1,
+          "reachable_level_product_entries": 1,
+          "recurrent_word": null,
+          "repeat_start": 1
+        },
+        "expected_r": 1,
+        "generators": [
+          "0x0"
+        ],
+        "name": "empty_product",
+        "q": 2
+      },
+      {
+        "derived": {
+          "P_r": null,
+          "all_rectangular_by_length": [
+            false
+          ],
+          "length_set_sizes": [
+            1
+          ],
+          "period": 1,
+          "r": null,
+          "reachable_level_product_entries": 1,
+          "recurrent_word": {
+            "cycle": [
+              0
+            ],
+            "prefix": []
+          },
+          "repeat_start": 1
+        },
+        "expected_r": null,
+        "generators": [
+          "0x9"
+        ],
+        "name": "identity_recurrence",
+        "q": 2
+      },
+      {
+        "derived": {
+          "P_r": null,
+          "all_rectangular_by_length": [
+            false,
+            false
+          ],
+          "length_set_sizes": [
+            1,
+            1
+          ],
+          "period": 2,
+          "r": null,
+          "reachable_level_product_entries": 2,
+          "recurrent_word": {
+            "cycle": [
+              0,
+              0
+            ],
+            "prefix": []
+          },
+          "repeat_start": 1
+        },
+        "expected_r": null,
+        "generators": [
+          "0x6"
+        ],
+        "name": "swap_recurrence",
+        "q": 2
+      },
+      {
+        "derived": {
+          "P_r": null,
+          "all_rectangular_by_length": [
+            false
+          ],
+          "length_set_sizes": [
+            2
+          ],
+          "period": 1,
+          "r": null,
+          "reachable_level_product_entries": 2,
+          "recurrent_word": {
+            "cycle": [
+              1
+            ],
+            "prefix": []
+          },
+          "repeat_start": 1
+        },
+        "expected_r": null,
+        "generators": [
+          "0xf",
+          "0x9"
+        ],
+        "name": "one_nonforgetting_choice",
+        "q": 2
+      },
+      {
+        "derived": {
+          "P_r": [
+            "0x124"
+          ],
+          "all_rectangular_by_length": [
+            false,
+            true
+          ],
+          "length_set_sizes": [
+            1,
+            1
+          ],
+          "period": 1,
+          "r": 2,
+          "reachable_level_product_entries": 2,
+          "recurrent_word": null,
+          "repeat_start": 2
+        },
+        "expected_r": 2,
+        "generators": [
+          "0x122"
+        ],
+        "name": "first_rectangular_at_two",
+        "q": 3
+      }
+    ],
+    "passed": true,
+    "rectangular_factor_products_checked": 220,
+    "wrapper_boundary_counterexample": {
+      "NAE_description": [
+        [
+          3,
+          4,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                5,
+                6
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                3,
+                5
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                4,
+                6
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                3,
+                6
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                4,
+                5
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          5,
+          [
+            [
+              "K",
+              [
+                0,
+                3,
+                5
+              ]
+            ],
+            [
+              0,
+              [
+                0,
+                6,
+                7
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                4
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          0,
+          [
+            [
+              1,
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ]
+        ]
+      ],
+      "NAE_equality_macro_port_relation": "0x81",
+      "NAE_flat_S_size": 12,
+      "NAE_limit_G_S": "0xff",
+      "R": "0xaaaa5555aaaa5555",
+      "S_rule": "NAE(a,u,h), t=a; SELF(b,u,v)",
+      "all_one_forgotten_projections_full": [
+        true,
+        true,
+        true
+      ],
+      "allowed_bond_states": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "bond": [
+        "main.b",
+        "C2.h",
+        "C4.t"
+      ],
+      "bond_size": 3,
+      "depth_convention": "C0=main, C1=entry S",
+      "least_r": 2,
+      "main_rule": "main(a,b,c) calls S(a,b,c)",
+      "s": 4,
+      "scope": "general gap arithmetic control, not a member of the frozen 66; the NAE description obeys the original raw language caps",
+      "shifted_bound": 3,
+      "unshifted_bound": 4,
+      "unshifted_uniform_wrapper_claim_rejected": true
+    }
+  },
+  "families": [
+    {
+      "G": {
+        "1": "0x7e",
+        "2": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            6,
+            4,
+            7
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x5cfa5cfa5f3a5f3a"
+        },
+        {
+          "arguments": [
+            7,
+            6,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 4,
+          "hex": "0x72ee72ee774e774e"
+        }
+      ],
+      "S": 2,
+      "S_calls_by_type": {
+        "1": 1,
+        "2": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          126,
+          255
+        ],
+        [
+          126,
+          255
+        ]
+      ],
+      "key": "[[3,0,[[\"K\",[1,2,0]]]],[3,0,[[0,[2,1,0]],[\"SELF\",[2,0,1]],[\"SELF\",[1,2,0]],[\"SELF\",[0,2,1]],[0,[2,1,0]],[\"K\",[2,1,0]],[\"K\",[2,0,1]]]],[3,5,[[\"SELF\",[6,4,7]],[\"K\",[0,6,7]],[\"K\",[0,3,2]],[0,[7,3,4]],[\"SELF\",[7,6,4]],[1,[4,3,7]]]]]",
+      "lambda_path": "1/1",
+      "main": 2,
+      "main_entries_by_type": {
+        "1": 1,
+        "2": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 3,
+      "other_self_holding_definitions": [
+        {
+          "G": "0x7e",
+          "arity": 3,
+          "definition": 1,
+          "flat_calls": [
+            [
+              "K",
+              [
+                1,
+                0,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                0,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            [
+              1,
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                0,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                1,
+                0
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                0,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "flat_own": 0,
+          "raw_own": 0
+        }
+      ],
+      "population_index_sorted": 0,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 3,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0x7e",
+        "1": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            8,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xa0a5555aaaa5050"
+        },
+        {
+          "arguments": [
+            3,
+            4,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0x11555f4c32faaa88"
+        }
+      ],
+      "S": 1,
+      "S_calls_by_type": {
+        "0": 3,
+        "1": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          126,
+          255
+        ],
+        [
+          126,
+          255
+        ]
+      ],
+      "key": "[[3,0,[[\"SELF\",[0,2,1]]]],[3,6,[[\"K\",[8,6,1]],[\"SELF\",[1,8,3]],[0,[2,3,5]],[\"SELF\",[3,4,5]],[0,[2,1,3]],[0,[1,0,4]]]],[5,1,[[1,[5,3,2]],[1,[2,5,4]],[0,[3,1,0]]]],[5,0,[[1,[1,2,4]],[\"K\",[4,0,3]],[1,[3,0,2]],[0,[2,0,1]]]]]",
+      "lambda_path": "1/2",
+      "main": 3,
+      "main_entries_by_type": {
+        "0": 1,
+        "1": 2
+      },
+      "main_entry_prefix_audit": {
+        "all_first_r_products_rectangular": false,
+        "entry_count": 2,
+        "least_initial_rectangular_length": 5,
+        "levels": [
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 0,
+            "total_length_from_main": 1
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 4,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 1,
+            "total_length_from_main": 2
+          },
+          {
+            "S_suffix_products": 4,
+            "all_rectangular": false,
+            "entry_products": 8,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 2,
+            "total_length_from_main": 3
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 3,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 3,
+            "total_length_from_main": 4
+          },
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": true,
+            "entry_products": 1,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 4,
+            "total_length_from_main": 5
+          }
+        ],
+        "relations": [
+          {
+            "arguments": [
+              1,
+              2,
+              4
+            ],
+            "flat_call_index": 0,
+            "hex": "0x80004000200000008040402020100000080404020201000000040002000100"
+          },
+          {
+            "arguments": [
+              3,
+              0,
+              2
+            ],
+            "flat_call_index": 2,
+            "hex": "0x20002000020000001040100401040000208020080208000000400004000400"
+          }
+        ]
+      },
+      "main_equals_S": false,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 4,
+      "other_self_holding_definitions": [
+        {
+          "G": "0x7e",
+          "arity": 3,
+          "definition": 0,
+          "flat_calls": [
+            [
+              0,
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "flat_own": 0,
+          "raw_own": 0
+        }
+      ],
+      "population_index_sorted": 1,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 4,
+        "reachable_level_product_entries": 9,
+        "recurrent_word": null,
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0x7e",
+        "1": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            5,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xa0085005a00a1005"
+        },
+        {
+          "arguments": [
+            1,
+            3,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0xa00a5005a00a5005"
+        }
+      ],
+      "S": 1,
+      "S_calls_by_type": {
+        "0": 3,
+        "1": 2
+      },
+      "S_size": 6,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          126,
+          255
+        ],
+        [
+          126,
+          255
+        ]
+      ],
+      "key": "[[3,0,[[\"SELF\",[1,2,0]]]],[3,3,[[0,[4,2,1]],[\"SELF\",[1,5,0]],[0,[0,4,5]],[\"SELF\",[1,3,0]],[0,[0,2,4]]]],[5,0,[[1,[2,1,3]],[\"K\",[4,1,2]],[1,[1,2,4]]]]]",
+      "lambda_path": "1/2",
+      "main": 2,
+      "main_entries_by_type": {
+        "1": 2
+      },
+      "main_entry_prefix_audit": {
+        "all_first_r_products_rectangular": false,
+        "entry_count": 2,
+        "least_initial_rectangular_length": 6,
+        "levels": [
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 0,
+            "total_length_from_main": 1
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 4,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 1,
+            "total_length_from_main": 2
+          },
+          {
+            "S_suffix_products": 4,
+            "all_rectangular": false,
+            "entry_products": 8,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 2,
+            "total_length_from_main": 3
+          },
+          {
+            "S_suffix_products": 8,
+            "all_rectangular": false,
+            "entry_products": 15,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 3,
+            "total_length_from_main": 4
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 3,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 4,
+            "total_length_from_main": 5
+          },
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": true,
+            "entry_products": 1,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 5,
+            "total_length_from_main": 6
+          }
+        ],
+        "relations": [
+          {
+            "arguments": [
+              2,
+              1,
+              3
+            ],
+            "flat_call_index": 0,
+            "hex": "0x202040401010000002020404010180802020404000000808020204040000"
+          },
+          {
+            "arguments": [
+              1,
+              2,
+              4
+            ],
+            "flat_call_index": 2,
+            "hex": "0x404020201010000040402020101008080404020200000808040402020000"
+          }
+        ]
+      },
+      "main_equals_S": false,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 3,
+      "other_self_holding_definitions": [
+        {
+          "G": "0x7e",
+          "arity": 3,
+          "definition": 0,
+          "flat_calls": [
+            [
+              0,
+              [
+                1,
+                2,
+                0
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "flat_own": 0,
+          "raw_own": 0
+        }
+      ],
+      "population_index_sorted": 2,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          8,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 17,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0x7e",
+        "1": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            7,
+            8
+          ],
+          "call_index": 0,
+          "flat_call_index": 2,
+          "hex": "0xffaaffffffff55ff"
+        },
+        {
+          "arguments": [
+            7,
+            8,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0xf00ff00ff00ff00f"
+        },
+        {
+          "arguments": [
+            3,
+            4,
+            7
+          ],
+          "call_index": 2,
+          "flat_call_index": 5,
+          "hex": "0xffccffffffff33ff"
+        }
+      ],
+      "S": 1,
+      "S_calls_by_type": {
+        "0": 3,
+        "1": 3
+      },
+      "S_size": 9,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          126,
+          255
+        ],
+        [
+          126,
+          255
+        ]
+      ],
+      "key": "[[3,0,[[\"SELF\",[2,0,1]]]],[3,6,[[0,[5,0,4]],[0,[4,5,6]],[\"SELF\",[4,7,8]],[\"SELF\",[7,8,0]],[0,[5,1,2]],[\"SELF\",[3,4,7]]]]]",
+      "lambda_path": "1/1",
+      "main": 1,
+      "main_entries_by_type": {
+        "0": 3,
+        "1": 3
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 2,
+      "other_self_holding_definitions": [
+        {
+          "G": "0x7e",
+          "arity": 3,
+          "definition": 0,
+          "flat_calls": [
+            [
+              0,
+              [
+                2,
+                0,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          ],
+          "flat_own": 0,
+          "raw_own": 0
+        }
+      ],
+      "population_index_sorted": 3,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 6,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            3,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xa00a5005a00a5005"
+        },
+        {
+          "arguments": [
+            3,
+            4,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x300f300ff00cf00c"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"K\",[0,4,2]],[\"SELF\",[1,3,0]],[\"SELF\",[3,4,0]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 4,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 6,
+        "reachable_level_product_entries": 16,
+        "recurrent_word": null,
+        "repeat_start": 6
+      }
+    },
+    {
+      "G": {
+        "0": "0x7e"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            2,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xcc44cc33223300"
+        },
+        {
+          "arguments": [
+            2,
+            0,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x22882244114400"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          126
+        ],
+        [
+          126
+        ]
+      ],
+      "key": "[[3,2,[[\"K\",[1,0,2]],[\"SELF\",[4,2,3]],[\"SELF\",[2,0,4]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 5,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffff00"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          3,
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 11,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "1": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            1,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xc00c3003c00c3003"
+        },
+        {
+          "arguments": [
+            6,
+            3,
+            2
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xf0f0f0f00f0f0f0f"
+        }
+      ],
+      "S": 1,
+      "S_calls_by_type": {
+        "1": 2
+      },
+      "S_size": 10,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"K\",[2,0,1]]]],[3,5,[[0,[5,3,0]],[\"SELF\",[5,1,0]],[\"SELF\",[6,3,2]]]]]",
+      "lambda_path": "1/1",
+      "main": 1,
+      "main_entries_by_type": {
+        "1": 2
+      },
+      "main_equals_S": true,
+      "main_size": 10,
+      "mismatches": [],
+      "n_defs": 2,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 6,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xcccc3333cccc3333",
+        "cycle_products": [
+          "0xcccc3333cccc3333"
+        ],
+        "prefix_products": [
+          "0xc00c3003c00c3003",
+          "0xcccc3333cccc3333"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 6,
+        "recurrent_word": {
+          "cycle": [
+            0
+          ],
+          "prefix": [
+            0,
+            0
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            0,
+            3,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x2a15a8542a15a854"
+        },
+        {
+          "arguments": [
+            0,
+            4,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xa0500a05a0500a05"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"K\",[3,1,4]],[\"SELF\",[0,3,4]],[\"SELF\",[0,4,1]]]],[4,0,[[\"K\",[0,1,2]],[\"K\",[2,3,1]],[0,[2,3,1]]]]]",
+      "lambda_path": "1/1",
+      "main": 1,
+      "main_entries_by_type": {
+        "0": 1
+      },
+      "main_equals_S": false,
+      "main_size": 4,
+      "mismatches": [],
+      "n_defs": 2,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 7,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xaa55aa55aa55aa55",
+        "cycle_products": [
+          "0xaa55aa55aa55aa55"
+        ],
+        "prefix_products": [
+          "0x2a15a8542a15a854",
+          "0xaa55aa55aa55aa55"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          1
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 3,
+        "recurrent_word": {
+          "cycle": [
+            0
+          ],
+          "prefix": [
+            0,
+            0
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            1,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 2,
+          "hex": "0x888022244401110"
+        },
+        {
+          "arguments": [
+            2,
+            3,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0x22a822a815441544"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"K\",[3,2,0]],[\"K\",[4,3,0]],[\"SELF\",[2,1,3]],[\"SELF\",[2,3,4]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 8,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xcccc3333cccc3333",
+        "cycle_products": [
+          "0xcccc3333cccc3333"
+        ],
+        "prefix_products": [
+          "0x888022244401110",
+          "0x444c1113c8883222",
+          "0xc8cc3233cc4c3313",
+          "0xcccc3333cccc3333"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          8,
+          8,
+          6,
+          4,
+          3
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 35,
+        "recurrent_word": {
+          "cycle": [
+            0
+          ],
+          "prefix": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "repeat_start": 7
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            3,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xa0a5555aaaa5050"
+        },
+        {
+          "arguments": [
+            0,
+            3,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xa0500a05a0500a05"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"K\",[4,2,1]],[\"SELF\",[1,3,4]],[\"SELF\",[0,3,1]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 9,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xaaaa5555aaaa5555",
+        "cycle_products": [
+          "0xaaaa5555aaaa5555"
+        ],
+        "prefix_products": [
+          "0xa0a5555aaaa5050",
+          "0xaaaa5555aaaa5555"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          3
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 9,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            0,
+            1
+          ]
+        },
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            3,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x2a2aa8a815155454"
+        },
+        {
+          "arguments": [
+            4,
+            0,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x4c13c8324c13c832"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"K\",[4,3,1]],[\"SELF\",[2,3,4]],[\"SELF\",[4,0,3]]]],[3,0,[[\"K\",[0,2,1]]]],[4,0,[[0,[0,1,3]]]]]",
+      "lambda_path": "1/3",
+      "main": 2,
+      "main_entries_by_type": {
+        "0": 1
+      },
+      "main_entry_prefix_audit": {
+        "all_first_r_products_rectangular": false,
+        "entry_count": 1,
+        "least_initial_rectangular_length": 6,
+        "levels": [
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": false,
+            "entry_products": 1,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 0,
+            "total_length_from_main": 1
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 1,
+            "total_length_from_main": 2
+          },
+          {
+            "S_suffix_products": 4,
+            "all_rectangular": false,
+            "entry_products": 4,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 2,
+            "total_length_from_main": 3
+          },
+          {
+            "S_suffix_products": 4,
+            "all_rectangular": false,
+            "entry_products": 4,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 3,
+            "total_length_from_main": 4
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 4,
+            "total_length_from_main": 5
+          },
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": true,
+            "entry_products": 1,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 5,
+            "total_length_from_main": 6
+          }
+        ],
+        "relations": [
+          {
+            "arguments": [
+              0,
+              1,
+              3
+            ],
+            "flat_call_index": 0,
+            "hex": "0x80402010804020100804020108040201"
+          }
+        ]
+      },
+      "main_equals_S": false,
+      "main_size": 4,
+      "mismatches": [],
+      "n_defs": 3,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 10,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          4,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 13,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            0,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x822082244104410"
+        },
+        {
+          "arguments": [
+            2,
+            3,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x22aa22aa55445544"
+        },
+        {
+          "arguments": [
+            4,
+            0,
+            3
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xc330c33cc30cc30"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 5,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[2,0,3]],[\"SELF\",[2,3,4]],[\"K\",[3,0,2]],[\"SELF\",[4,0,3]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 11,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e7e7e",
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          8,
+          7,
+          3,
+          2
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 23,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            0,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xc0300c03c0300c03"
+        },
+        {
+          "arguments": [
+            4,
+            1,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0xc00c3003c00c3003"
+        },
+        {
+          "arguments": [
+            3,
+            2,
+            1
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xc0c00c0c30300303"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 5,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[3,0,1]],[\"SELF\",[4,1,0]],[\"K\",[0,3,4]],[\"SELF\",[3,2,1]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 12,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xf00ff00ff00ff00f",
+        "cycle_products": [
+          "0xcc33cc33cc33cc33",
+          "0xf00ff00ff00ff00f"
+        ],
+        "prefix_products": [
+          "0xc0300c03c0300c03",
+          "0xf00ff00ff00ff00f"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          3,
+          9,
+          10,
+          10
+        ],
+        "period": 2,
+        "r": null,
+        "reachable_level_product_entries": 32,
+        "recurrent_word": {
+          "cycle": [
+            2,
+            0
+          ],
+          "prefix": [
+            0,
+            0
+          ]
+        },
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            4,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x300ff00c300ff00c"
+        },
+        {
+          "arguments": [
+            1,
+            3,
+            2
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xa0a050500a0a0505"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[3,4,0]],[\"K\",[0,1,4]],[\"SELF\",[1,3,2]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 13,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xffffff00ffffff0",
+        "cycle_products": [
+          "0xffffff00ffffff0"
+        ],
+        "prefix_products": [
+          "0x300ff00c300ff00c",
+          "0x500ff00a500ff00a",
+          "0xffffff00ffffff0"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          6,
+          5
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 17,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            0,
+            1,
+            0
+          ]
+        },
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            4,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x30f0030ff0c00f0c"
+        },
+        {
+          "arguments": [
+            3,
+            4,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x300f300ff00cf00c"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[3,4,1]],[\"SELF\",[3,4,0]],[\"K\",[2,0,4]]]],[3,0,[[0,[0,1,2]]]]]",
+      "lambda_path": "1/2",
+      "main": 1,
+      "main_entries_by_type": {
+        "0": 1
+      },
+      "main_entry_prefix_audit": {
+        "all_first_r_products_rectangular": false,
+        "entry_count": 1,
+        "least_initial_rectangular_length": 5,
+        "levels": [
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": false,
+            "entry_products": 1,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 0,
+            "total_length_from_main": 1
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 1,
+            "total_length_from_main": 2
+          },
+          {
+            "S_suffix_products": 3,
+            "all_rectangular": false,
+            "entry_products": 3,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 2,
+            "total_length_from_main": 3
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 3,
+            "total_length_from_main": 4
+          },
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": true,
+            "entry_products": 1,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 4,
+            "total_length_from_main": 5
+          }
+        ],
+        "relations": [
+          {
+            "arguments": [
+              0,
+              1,
+              2
+            ],
+            "flat_call_index": 0,
+            "hex": "0x8040201008040201"
+          }
+        ]
+      },
+      "main_equals_S": false,
+      "main_size": 3,
+      "mismatches": [],
+      "n_defs": 2,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 14,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 4,
+        "reachable_level_product_entries": 8,
+        "recurrent_word": null,
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            0,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x44334433cc22cc22"
+        },
+        {
+          "arguments": [
+            3,
+            1,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0xc00c3003c00c3003"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[4,0,3]],[\"SELF\",[3,1,0]],[\"K\",[0,2,4]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 15,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0x33ff33ffffccffcc",
+        "cycle_products": [
+          "0x33ff33ffffccffcc"
+        ],
+        "prefix_products": [
+          "0x44334433cc22cc22",
+          "0x33ff33ffffccffcc"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          6,
+          5,
+          4
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 21,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            0,
+            0
+          ]
+        },
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            2,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x4c4c4c4c32323232"
+        },
+        {
+          "arguments": [
+            4,
+            2,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0xc00cc00c30033003"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[4,2,3]],[\"SELF\",[4,2,0]],[\"K\",[2,3,4]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 16,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e7e7e",
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          3,
+          2
+        ],
+        "period": 1,
+        "r": 4,
+        "reachable_level_product_entries": 11,
+        "recurrent_word": null,
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            3,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x5005f00ff00fa00a"
+        },
+        {
+          "arguments": [
+            4,
+            3,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x50500f0ff0f00a0a"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[4,3,0]],[\"SELF\",[4,3,1]],[\"K\",[4,2,1]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 17,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 4,
+        "reachable_level_product_entries": 8,
+        "recurrent_word": null,
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            3,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x70e0070e70e0070e"
+        },
+        {
+          "arguments": [
+            4,
+            1,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x4cc813324cc81332"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,2,[[\"SELF\",[4,3,1]],[\"SELF\",[4,1,3]],[\"K\",[3,0,4]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 18,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xcccc3333cccc3333",
+        "cycle_products": [
+          "0xcccc3333cccc3333"
+        ],
+        "prefix_products": [
+          "0x4cc813324cc81332",
+          "0xcccc3333cccc3333"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          3
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 9,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            1,
+            1
+          ]
+        },
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            5,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x7777eeee7777eeee"
+        },
+        {
+          "arguments": [
+            2,
+            3,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xaaaaaaaa55555555"
+        },
+        {
+          "arguments": [
+            2,
+            4,
+            0
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xa00aa00a50055005"
+        },
+        {
+          "arguments": [
+            5,
+            4,
+            2
+          ],
+          "call_index": 3,
+          "flat_call_index": 4,
+          "hex": "0x7070e0e007070e0e"
+        },
+        {
+          "arguments": [
+            5,
+            4,
+            0
+          ],
+          "call_index": 4,
+          "flat_call_index": 5,
+          "hex": "0x7007e00e7007e00e"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 5
+      },
+      "S_size": 6,
+      "c": 5,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"K\",[4,1,5]],[\"SELF\",[4,5,3]],[\"SELF\",[2,3,5]],[\"SELF\",[2,4,0]],[\"SELF\",[5,4,2]],[\"SELF\",[5,4,0]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 5
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 19,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xaaaaaaaa55555555",
+        "cycle_products": [
+          "0xf0f0f0f00f0f0f0f",
+          "0xaaaaaaaa55555555"
+        ],
+        "prefix_products": [
+          "0xaaaaaaaa55555555"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          5,
+          7,
+          6,
+          6
+        ],
+        "period": 2,
+        "r": null,
+        "reachable_level_product_entries": 24,
+        "recurrent_word": {
+          "cycle": [
+            2,
+            1
+          ],
+          "prefix": [
+            1
+          ]
+        },
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0x7e"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            5,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xff00c300ff000"
+        },
+        {
+          "arguments": [
+            5,
+            0,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 4,
+          "hex": "0x300c0240300c00"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 6,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          126
+        ],
+        [
+          126
+        ]
+      ],
+      "key": "[[3,3,[[\"K\",[5,1,0]],[\"SELF\",[3,5,0]],[\"K\",[4,5,2]],[\"K\",[1,0,2]],[\"SELF\",[5,0,1]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 20,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e00",
+          "0xffffffffffff00"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          5,
+          3,
+          2
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 16,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            0,
+            3,
+            5
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xaa55aa55aa55aa55"
+        },
+        {
+          "arguments": [
+            1,
+            0,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x8822441188224411"
+        },
+        {
+          "arguments": [
+            1,
+            4,
+            3
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xaaaa5555aaaa5555"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 6,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"SELF\",[0,3,5]],[\"SELF\",[1,0,5]],[\"K\",[2,5,4]],[\"SELF\",[1,4,3]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 21,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xaa55aa55aa55aa55",
+        "cycle_products": [
+          "0xaa55aa55aa55aa55"
+        ],
+        "prefix_products": [
+          "0xaa55aa55aa55aa55"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          3,
+          6,
+          6
+        ],
+        "period": 2,
+        "r": null,
+        "reachable_level_product_entries": 15,
+        "recurrent_word": {
+          "cycle": [
+            0
+          ],
+          "prefix": [
+            0
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            3,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xaaa55500aaa5550"
+        },
+        {
+          "arguments": [
+            2,
+            4,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x22aaaa8811555544"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 6,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"SELF\",[1,3,4]],[\"K\",[1,4,0]],[\"SELF\",[2,4,5]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 22,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 12,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            4,
+            5
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x2a2aa8a815155454"
+        },
+        {
+          "arguments": [
+            5,
+            4,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x70700e0e70700e0e"
+        },
+        {
+          "arguments": [
+            5,
+            3,
+            1
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xf0f00b0bd0d00f0f"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 6,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"SELF\",[2,4,5]],[\"SELF\",[5,4,1]],[\"K\",[2,4,3]],[\"SELF\",[5,3,1]],[\"K\",[1,5,4]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 23,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e7e7e",
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          5,
+          2
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 10,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            2,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x4cc84cc813321332"
+        },
+        {
+          "arguments": [
+            4,
+            2,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0xcccccccc33333333"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 6,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"SELF\",[3,2,4]],[\"SELF\",[4,2,5]],[\"K\",[4,0,3]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 24,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            0,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xc0300c03c0300c03"
+        },
+        {
+          "arguments": [
+            4,
+            3,
+            2
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x70e070e0070e070e"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 6,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"SELF\",[4,0,1]],[\"K\",[0,3,4]],[\"SELF\",[4,3,2]]]],[3,0,[[\"K\",[1,2,0]]]],[4,0,[[\"K\",[1,3,0]],[1,[1,0,3]],[\"K\",[2,1,0]],[1,[0,3,2]],[0,[3,2,1]],[1,[0,3,1]],[1,[3,2,1]]]]]",
+      "lambda_path": "1/1",
+      "main": 2,
+      "main_entries_by_type": {
+        "0": 1
+      },
+      "main_equals_S": false,
+      "main_size": 4,
+      "mismatches": [],
+      "n_defs": 3,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 25,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xf00ff00ff00ff00f",
+        "cycle_products": [
+          "0xf00ff00ff00ff00f"
+        ],
+        "prefix_products": [
+          "0xc0300c03c0300c03",
+          "0xf00ff00ff00ff00f"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          4
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 10,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            0,
+            0
+          ]
+        },
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            2,
+            5
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xcccccccc33333333"
+        },
+        {
+          "arguments": [
+            2,
+            5,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x2a2a2a2a54545454"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 6,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"SELF\",[4,2,5]],[\"SELF\",[2,5,3]],[\"K\",[2,3,5]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 26,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e7e7e",
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 4,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            2,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x44c8088811101322"
+        },
+        {
+          "arguments": [
+            2,
+            5,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 6,
+          "hex": "0x22a8088811101544"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 6,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,3,[[\"SELF\",[5,2,4]],[\"K\",[0,5,3]],[\"K\",[1,0,5]],[\"K\",[5,0,4]],[\"K\",[3,2,0]],[\"K\",[1,5,3]],[\"SELF\",[2,5,4]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 6,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 27,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          8,
+          8,
+          5,
+          1
+        ],
+        "period": 1,
+        "r": 6,
+        "reachable_level_product_entries": 28,
+        "recurrent_word": null,
+        "repeat_start": 6
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            3,
+            6
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x55555f5ffafaaaaa"
+        },
+        {
+          "arguments": [
+            0,
+            3,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0xaa55aa55aa55aa55"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 7,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"K\",[1,4,2]],[\"SELF\",[4,3,6]],[\"K\",[6,2,4]],[\"SELF\",[0,3,5]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 28,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0x5555ffffffffaaaa",
+        "cycle_products": [
+          "0x5555ffffffffaaaa"
+        ],
+        "prefix_products": [
+          "0x55555f5ffafaaaaa",
+          "0x5555ffffffffaaaa"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          3
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            0,
+            1
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            2,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x8888444422221111"
+        },
+        {
+          "arguments": [
+            1,
+            2,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 6,
+          "hex": "0x8888444422221111"
+        },
+        {
+          "arguments": [
+            6,
+            3,
+            5
+          ],
+          "call_index": 2,
+          "flat_call_index": 7,
+          "hex": "0x555055aa55aa0aaa"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 7,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"K\",[1,6,0]],[\"SELF\",[1,2,3]],[\"K\",[5,6,0]],[\"K\",[0,4,2]],[\"K\",[2,6,0]],[\"K\",[4,2,3]],[\"SELF\",[1,2,3]],[\"SELF\",[6,3,5]],[\"K\",[1,6,2]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 29,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          4,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 13,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            3,
+            6
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x2aa82aa815541554"
+        },
+        {
+          "arguments": [
+            2,
+            6,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xaaaaaaaa55555555"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 7,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"K\",[3,0,6]],[\"SELF\",[2,3,6]],[\"SELF\",[2,6,5]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 30,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            2,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 2,
+          "hex": "0xc00cc00c30033003"
+        },
+        {
+          "arguments": [
+            3,
+            6,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0x5005f00ff00fa00a"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 7,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"K\",[5,1,0]],[\"K\",[1,2,3]],[\"SELF\",[4,2,0]],[\"SELF\",[3,6,0]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 31,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 6,
+        "reachable_level_product_entries": 16,
+        "recurrent_word": null,
+        "repeat_start": 6
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            5,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x22aa1155aa885544"
+        },
+        {
+          "arguments": [
+            1,
+            6,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xaaa0555aaa05550"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 7,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"SELF\",[1,5,4]],[\"K\",[2,5,0]],[\"SELF\",[1,6,5]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 32,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 4,
+        "reachable_level_product_entries": 8,
+        "recurrent_word": null,
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            5,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xaaaa5555aaaa5555"
+        },
+        {
+          "arguments": [
+            6,
+            3,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xf00ff00ff00ff00f"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 7,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"SELF\",[1,5,4]],[\"K\",[3,1,5]],[\"SELF\",[6,3,0]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 33,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            6,
+            5
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xaaa55500aaa5550"
+        },
+        {
+          "arguments": [
+            5,
+            6,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x547e7e2a547e7e2a"
+        },
+        {
+          "arguments": [
+            1,
+            2,
+            3
+          ],
+          "call_index": 2,
+          "flat_call_index": 2,
+          "hex": "0x8888444422221111"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 7,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"SELF\",[1,6,5]],[\"SELF\",[5,6,3]],[\"SELF\",[1,2,3]],[\"K\",[6,3,5]],[\"K\",[1,5,0]],[\"K\",[6,0,4]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 34,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e7e7e",
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          8,
+          7,
+          4,
+          3,
+          2
+        ],
+        "period": 1,
+        "r": 6,
+        "reachable_level_product_entries": 27,
+        "recurrent_word": null,
+        "repeat_start": 6
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            6,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x70700e0e70700e0e"
+        },
+        {
+          "arguments": [
+            1,
+            6,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0xaaaa5555aaaa5555"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 7,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"SELF\",[4,6,1]],[\"SELF\",[1,6,3]],[\"K\",[4,6,1]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 35,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e7e7e",
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 4,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            6,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x70e0070e70e0070e"
+        },
+        {
+          "arguments": [
+            6,
+            1,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x4cc813324cc81332"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 7,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,4,[[\"SELF\",[5,6,1]],[\"K\",[0,5,6]],[\"SELF\",[6,1,5]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 36,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xcccc3333cccc3333",
+        "cycle_products": [
+          "0xcccc3333cccc3333"
+        ],
+        "prefix_products": [
+          "0x4cc813324cc81332",
+          "0xcccc3333cccc3333"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          3
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 9,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            1,
+            1
+          ]
+        },
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0x7e"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            0,
+            7
+          ],
+          "call_index": 0,
+          "flat_call_index": 2,
+          "hex": "0x33cc33cc33cc00"
+        },
+        {
+          "arguments": [
+            7,
+            4,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0xf00f0ff0f00f00"
+        },
+        {
+          "arguments": [
+            6,
+            3,
+            5
+          ],
+          "call_index": 2,
+          "flat_call_index": 4,
+          "hex": "0xfa5ffa5ffa5f00"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 8,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          126
+        ],
+        [
+          126
+        ]
+      ],
+      "key": "[[3,5,[[\"K\",[0,6,5]],[\"K\",[1,2,0]],[\"SELF\",[3,0,7]],[\"SELF\",[7,4,1]],[\"SELF\",[6,3,5]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 37,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffff00"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 6,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            7,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 3,
+          "hex": "0xffffaaffff55ffff"
+        },
+        {
+          "arguments": [
+            6,
+            5,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 4,
+          "hex": "0x555544ee7722aaaa"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"K\",[3,1,7]],[\"K\",[1,6,5]],[\"K\",[6,2,0]],[\"SELF\",[5,7,4]],[\"SELF\",[6,5,4]],[\"K\",[1,6,2]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 38,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            7,
+            1,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xc00c3003c00c3003"
+        },
+        {
+          "arguments": [
+            7,
+            6,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x77777777eeeeeeee"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"K\",[5,6,4]],[\"SELF\",[7,1,0]],[\"SELF\",[7,6,4]],[\"K\",[6,7,2]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 39,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xcccc3333cccc3333",
+        "cycle_products": [
+          "0xcccc3333cccc3333"
+        ],
+        "prefix_products": [
+          "0xc00c3003c00c3003",
+          "0xcccc3333cccc3333"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          3,
+          2
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 11,
+        "recurrent_word": {
+          "cycle": [
+            0
+          ],
+          "prefix": [
+            0,
+            0
+          ]
+        },
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            0,
+            7
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x8822441188224411"
+        },
+        {
+          "arguments": [
+            7,
+            4,
+            6
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xffffffffffffffff"
+        },
+        {
+          "arguments": [
+            1,
+            5,
+            4
+          ],
+          "call_index": 2,
+          "flat_call_index": 4,
+          "hex": "0xaaaa5555aaaa5555"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 8,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"K\",[7,2,5]],[\"SELF\",[1,0,7]],[\"SELF\",[7,4,6]],[\"K\",[4,3,7]],[\"SELF\",[1,5,4]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 40,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0x8822441188224411",
+        "cycle_products": [
+          "0x8844221188442211",
+          "0x8822441188224411"
+        ],
+        "prefix_products": [
+          "0x8822441188224411"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          3,
+          4,
+          4
+        ],
+        "period": 2,
+        "r": null,
+        "reachable_level_product_entries": 11,
+        "recurrent_word": {
+          "cycle": [
+            0,
+            0
+          ],
+          "prefix": [
+            0
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            3,
+            7
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xaaaaaaaa55555555"
+        },
+        {
+          "arguments": [
+            0,
+            2,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0x8844884422112211"
+        },
+        {
+          "arguments": [
+            3,
+            4,
+            5
+          ],
+          "call_index": 2,
+          "flat_call_index": 5,
+          "hex": "0xffffffffffffffff"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 8,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[2,3,7]],[\"K\",[1,5,6]],[\"K\",[5,2,6]],[\"SELF\",[0,2,3]],[\"K\",[6,3,7]],[\"SELF\",[3,4,5]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 41,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xaaaaaaaa55555555",
+        "cycle_products": [
+          "0xaaaaaaaa55555555"
+        ],
+        "prefix_products": [
+          "0xaaaaaaaa55555555"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          3,
+          3
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 6,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            0
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            3,
+            7
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x2aa82aa815541554"
+        },
+        {
+          "arguments": [
+            2,
+            0,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x8822882244114411"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[2,3,7]],[\"K\",[5,2,3]],[\"SELF\",[2,0,3]],[\"K\",[7,0,3]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 42,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            0,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xcc33cc33cc33cc33"
+        },
+        {
+          "arguments": [
+            6,
+            5,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xf00ff00ff00ff00f"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[3,0,4]],[\"K\",[6,3,0]],[\"SELF\",[6,5,0]]]],[4,0,[[\"K\",[1,2,0]],[\"K\",[2,3,1]],[0,[3,0,2]],[0,[3,0,1]],[\"K\",[0,3,1]],[\"K\",[0,3,1]],[\"K\",[0,2,3]],[0,[2,0,3]],[\"K\",[2,0,3]],[\"K\",[2,3,1]],[\"K\",[2,3,0]]]]]",
+      "lambda_path": "1/1",
+      "main": 1,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_entry_prefix_audit": {
+        "all_first_r_products_rectangular": false,
+        "entry_count": 3,
+        "least_initial_rectangular_length": 3,
+        "levels": [
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": false,
+            "entry_products": 3,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 0,
+            "total_length_from_main": 1
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 4,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 1,
+            "total_length_from_main": 2
+          },
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": true,
+            "entry_products": 1,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 2,
+            "total_length_from_main": 3
+          }
+        ],
+        "relations": [
+          {
+            "arguments": [
+              3,
+              0,
+              2
+            ],
+            "flat_call_index": 2,
+            "hex": "0x20000208000010400004000000"
+          },
+          {
+            "arguments": [
+              3,
+              0,
+              1
+            ],
+            "flat_call_index": 3,
+            "hex": "0x2002008000010040040000000"
+          },
+          {
+            "arguments": [
+              2,
+              0,
+              3
+            ],
+            "flat_call_index": 7,
+            "hex": "0x20001040000002080004000000"
+          }
+        ]
+      },
+      "main_equals_S": false,
+      "main_size": 4,
+      "mismatches": [],
+      "n_defs": 2,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 43,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 3,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            3,
+            1,
+            2
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xc0c030300c0c0303"
+        },
+        {
+          "arguments": [
+            5,
+            4,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xffffffffffffffff"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[3,1,2]],[\"K\",[3,0,7]],[\"SELF\",[5,4,3]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 44,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xc0c030300c0c0303",
+        "cycle_products": [
+          "0xc0c030300c0c0303"
+        ],
+        "prefix_products": [
+          "0xc0c030300c0c0303"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false
+        ],
+        "length_set_sizes": [
+          2
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 2,
+        "recurrent_word": {
+          "cycle": [
+            0
+          ],
+          "prefix": [
+            0
+          ]
+        },
+        "repeat_start": 1
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            7,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xf0f00f0ff0f00f0f"
+        },
+        {
+          "arguments": [
+            3,
+            5,
+            7
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x7e7e7e7e7e7e7e7e"
+        },
+        {
+          "arguments": [
+            2,
+            3,
+            4
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xaaaaaaaa55555555"
+        },
+        {
+          "arguments": [
+            7,
+            6,
+            1
+          ],
+          "call_index": 3,
+          "flat_call_index": 5,
+          "hex": "0xf0f00f0ff0f00f0f"
+        },
+        {
+          "arguments": [
+            0,
+            6,
+            1
+          ],
+          "call_index": 4,
+          "flat_call_index": 6,
+          "hex": "0xa0500a05a0500a05"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 5
+      },
+      "S_size": 8,
+      "c": 5,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[4,7,1]],[\"K\",[3,5,7]],[\"SELF\",[3,5,7]],[\"SELF\",[2,3,4]],[\"K\",[7,3,4]],[\"SELF\",[7,6,1]],[\"SELF\",[0,6,1]],[\"K\",[4,1,6]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 5
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 45,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xaaaa5555aaaa5555",
+        "cycle_products": [
+          "0xaaaa5555aaaa5555"
+        ],
+        "prefix_products": [
+          "0xf0f00f0ff0f00f0f",
+          "0xaaaa5555aaaa5555"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          4,
+          5
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 9,
+        "recurrent_word": {
+          "cycle": [
+            4
+          ],
+          "prefix": [
+            0,
+            2
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            7,
+            5
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xffffffffffffffff"
+        },
+        {
+          "arguments": [
+            3,
+            0,
+            2
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xc030c0300c030c03"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[4,7,5]],[\"K\",[7,5,3]],[\"SELF\",[3,0,2]],[\"K\",[6,0,4]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 46,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xf0f0f0f00f0f0f0f",
+        "cycle_products": [
+          "0xf0f0f0f00f0f0f0f"
+        ],
+        "prefix_products": [
+          "0xc030c0300c030c03",
+          "0xf0f0f0f00f0f0f0f"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          2
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 4,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            1,
+            1
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            4,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xf00ff00ff00ff00f"
+        },
+        {
+          "arguments": [
+            6,
+            1,
+            7
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xcccc3333cccc3333"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[5,4,0]],[\"K\",[2,5,3]],[\"SELF\",[6,1,7]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 47,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xcccc3333cccc3333",
+        "cycle_products": [
+          "0xcccc3333cccc3333"
+        ],
+        "prefix_products": [
+          "0xcccc3333cccc3333"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          2
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 4,
+        "recurrent_word": {
+          "cycle": [
+            1
+          ],
+          "prefix": [
+            1
+          ]
+        },
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            6,
+            0,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x4c134c13c832c832"
+        },
+        {
+          "arguments": [
+            6,
+            3,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x77777777eeeeeeee"
+        },
+        {
+          "arguments": [
+            7,
+            3,
+            4
+          ],
+          "call_index": 2,
+          "flat_call_index": 4,
+          "hex": "0xffffffffffffffff"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 8,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[6,0,3]],[\"SELF\",[6,3,5]],[\"K\",[3,6,2]],[\"K\",[5,4,2]],[\"SELF\",[7,3,4]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 48,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 6,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            6,
+            4,
+            7
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x55ffffaa55ffffaa"
+        },
+        {
+          "arguments": [
+            3,
+            6,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x300ff00c300ff00c"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 8,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,5,[[\"SELF\",[6,4,7]],[\"SELF\",[3,6,0]],[\"K\",[1,6,0]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 8,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 49,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          3,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 6,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            6,
+            0,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 2,
+          "hex": "0xcc33cc33cc33cc33"
+        },
+        {
+          "arguments": [
+            8,
+            0,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 6,
+          "hex": "0xc0300c03c0300c03"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[1,7,6]],[\"K\",[5,0,7]],[\"SELF\",[6,0,4]],[\"K\",[3,1,8]],[\"K\",[3,6,1]],[\"K\",[0,5,7]],[\"SELF\",[8,0,1]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 50,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            7,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 2,
+          "hex": "0x22225555aaaa4444"
+        },
+        {
+          "arguments": [
+            8,
+            7,
+            6
+          ],
+          "call_index": 1,
+          "flat_call_index": 3,
+          "hex": "0x3333ffffffffcccc"
+        },
+        {
+          "arguments": [
+            6,
+            5,
+            7
+          ],
+          "call_index": 2,
+          "flat_call_index": 4,
+          "hex": "0x3073377eecce0c0"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 9,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[2,7,1]],[\"K\",[0,5,2]],[\"SELF\",[1,7,4]],[\"SELF\",[8,7,6]],[\"SELF\",[6,5,7]],[\"K\",[4,2,3]],[\"K\",[5,2,6]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 51,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          7,
+          8,
+          3,
+          1
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 22,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            7,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xaaaa5555aaaa5555"
+        },
+        {
+          "arguments": [
+            3,
+            7,
+            8
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x55ff55ffffaaffaa"
+        },
+        {
+          "arguments": [
+            4,
+            6,
+            3
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xff50ffffff0aff0"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 9,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[3,0,5]],[\"SELF\",[1,7,4]],[\"SELF\",[3,7,8]],[\"SELF\",[4,6,3]],[\"K\",[1,4,8]],[\"K\",[1,4,5]],[\"K\",[3,0,2]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 52,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          1
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 4,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            7,
+            5,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x5ffa5ffa5ffa5ffa"
+        },
+        {
+          "arguments": [
+            2,
+            3,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xaaaaaaaa55555555"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[3,0,7]],[\"SELF\",[7,5,3]],[\"SELF\",[2,3,5]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 53,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 5,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            7,
+            6,
+            4
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x7777eeee7777eeee"
+        },
+        {
+          "arguments": [
+            4,
+            6,
+            3
+          ],
+          "call_index": 1,
+          "flat_call_index": 4,
+          "hex": "0xffffffffffffffff"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[3,7,1]],[\"SELF\",[7,6,4]],[\"K\",[7,1,6]],[\"K\",[5,3,8]],[\"SELF\",[4,6,3]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 54,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 3,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            6,
+            5,
+            8
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x77777777eeeeeeee"
+        },
+        {
+          "arguments": [
+            7,
+            2,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xcccccccc33333333"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[5,8,3]],[\"SELF\",[6,5,8]],[\"SELF\",[7,2,4]],[\"K\",[2,6,5]]]]]",
+      "lambda_path": "2/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 55,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 3,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            8,
+            6
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xffffffffffffffff"
+        },
+        {
+          "arguments": [
+            5,
+            3,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xffffffffffffffff"
+        },
+        {
+          "arguments": [
+            6,
+            2,
+            4
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xcccccccc33333333"
+        },
+        {
+          "arguments": [
+            1,
+            8,
+            3
+          ],
+          "call_index": 3,
+          "flat_call_index": 4,
+          "hex": "0xaaaa5555aaaa5555"
+        },
+        {
+          "arguments": [
+            7,
+            4,
+            3
+          ],
+          "call_index": 4,
+          "flat_call_index": 6,
+          "hex": "0xffffffffffffffff"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 5
+      },
+      "S_size": 9,
+      "c": 5,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[7,5,2]],[\"SELF\",[4,8,6]],[\"SELF\",[5,3,4]],[\"SELF\",[6,2,4]],[\"SELF\",[1,8,3]],[\"K\",[6,5,8]],[\"SELF\",[7,4,3]]]],[5,2,[[0,[1,3,4]]]]]",
+      "lambda_path": "2/1",
+      "main": 1,
+      "main_entries_by_type": {
+        "0": 1
+      },
+      "main_entry_prefix_audit": {
+        "all_first_r_products_rectangular": false,
+        "entry_count": 1,
+        "least_initial_rectangular_length": 4,
+        "levels": [
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": false,
+            "entry_products": 1,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 0,
+            "total_length_from_main": 1
+          },
+          {
+            "S_suffix_products": 3,
+            "all_rectangular": false,
+            "entry_products": 3,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 1,
+            "total_length_from_main": 2
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 2,
+            "total_length_from_main": 3
+          },
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": true,
+            "entry_products": 1,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 3,
+            "total_length_from_main": 4
+          }
+        ],
+        "relations": [
+          {
+            "arguments": [
+              1,
+              3,
+              4
+            ],
+            "flat_call_index": 0,
+            "hex": "0x8080404080804040202010102020101008080404080804040202010102020101"
+          }
+        ]
+      },
+      "main_equals_S": false,
+      "main_size": 7,
+      "mismatches": [],
+      "n_defs": 2,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 56,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 6,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            3,
+            8
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x55ffffaa55ffffaa"
+        },
+        {
+          "arguments": [
+            6,
+            7,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xf0f00f0ff0f00f0f"
+        },
+        {
+          "arguments": [
+            1,
+            6,
+            5
+          ],
+          "call_index": 2,
+          "flat_call_index": 3,
+          "hex": "0xaaa55500aaa5550"
+        },
+        {
+          "arguments": [
+            1,
+            7,
+            2
+          ],
+          "call_index": 3,
+          "flat_call_index": 4,
+          "hex": "0xa0a050500a0a0505"
+        },
+        {
+          "arguments": [
+            4,
+            6,
+            8
+          ],
+          "call_index": 4,
+          "flat_call_index": 5,
+          "hex": "0x7e7e7e7e7e7e7e7e"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 5
+      },
+      "S_size": 9,
+      "c": 5,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[8,4,6]],[\"SELF\",[5,3,8]],[\"SELF\",[6,7,1]],[\"SELF\",[1,6,5]],[\"SELF\",[1,7,2]],[\"SELF\",[4,6,8]],[\"K\",[0,1,5]],[\"K\",[6,8,7]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 5
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 57,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xf0f00f0ff0f00f0f",
+        "cycle_products": [
+          "0xf0f00f0ff0f00f0f"
+        ],
+        "prefix_products": [
+          "0xf0f00f0ff0f00f0f"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          5,
+          7,
+          5
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 17,
+        "recurrent_word": {
+          "cycle": [
+            3
+          ],
+          "prefix": [
+            1
+          ]
+        },
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            0,
+            8
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0x8822441188224411"
+        },
+        {
+          "arguments": [
+            0,
+            1,
+            4
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x8844221188442211"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"K\",[8,6,2]],[\"SELF\",[1,0,8]],[\"SELF\",[0,1,4]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 58,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0x8822441188224411",
+        "cycle_products": [
+          "0x8844221188442211",
+          "0x8822441188224411"
+        ],
+        "prefix_products": [
+          "0x8822441188224411"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false
+        ],
+        "length_set_sizes": [
+          2
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 2,
+        "recurrent_word": {
+          "cycle": [
+            0,
+            0
+          ],
+          "prefix": [
+            0
+          ]
+        },
+        "repeat_start": 1
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            2,
+            6,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xaaaaaaaa55555555"
+        },
+        {
+          "arguments": [
+            6,
+            8,
+            5
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x3f3f3f3ffcfcfcfc"
+        },
+        {
+          "arguments": [
+            5,
+            3,
+            4
+          ],
+          "call_index": 2,
+          "flat_call_index": 4,
+          "hex": "0x77777777eeeeeeee"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 9,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"SELF\",[2,6,3]],[\"K\",[2,5,3]],[\"SELF\",[6,8,5]],[\"K\",[8,2,5]],[\"SELF\",[5,3,4]]]]]",
+      "lambda_path": "1/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 59,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          1
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 4,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            4,
+            1
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x30f00f0c30f00f0c"
+        },
+        {
+          "arguments": [
+            4,
+            0,
+            8
+          ],
+          "call_index": 1,
+          "flat_call_index": 1,
+          "hex": "0x4433cc224433cc22"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"SELF\",[5,4,1]],[\"SELF\",[4,0,8]],[\"K\",[0,4,1]],[\"K\",[2,0,6]],[\"K\",[0,3,5]],[\"K\",[8,3,2]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 60,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          3,
+          1
+        ],
+        "period": 1,
+        "r": 4,
+        "reachable_level_product_entries": 10,
+        "recurrent_word": null,
+        "repeat_start": 4
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            5,
+            8,
+            6
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xfff0ff00ff0fff0"
+        },
+        {
+          "arguments": [
+            2,
+            4,
+            8
+          ],
+          "call_index": 1,
+          "flat_call_index": 6,
+          "hex": "0xa8aaa8aa55155515"
+        },
+        {
+          "arguments": [
+            6,
+            4,
+            1
+          ],
+          "call_index": 2,
+          "flat_call_index": 9,
+          "hex": "0x50f0050a50a00f0a"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 9,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"SELF\",[5,8,6]],[\"K\",[3,8,4]],[\"K\",[2,0,6]],[\"K\",[0,1,6]],[\"K\",[2,0,7]],[\"K\",[2,7,4]],[\"SELF\",[2,4,8]],[\"K\",[8,7,4]],[\"K\",[8,5,4]],[\"SELF\",[6,4,1]]]]]",
+      "lambda_path": "1/3",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 61,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          8,
+          12,
+          6,
+          3,
+          1
+        ],
+        "period": 1,
+        "r": 6,
+        "reachable_level_product_entries": 33,
+        "recurrent_word": null,
+        "repeat_start": 6
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            7,
+            3,
+            5
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0xfbfbfbfbdfdfdfdf"
+        },
+        {
+          "arguments": [
+            2,
+            5,
+            7
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0xaaaaaaaa55555555"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 2
+      },
+      "S_size": 9,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"SELF\",[7,3,5]],[\"K\",[5,3,6]],[\"SELF\",[2,5,7]],[\"K\",[8,2,3]],[\"K\",[7,5,8]]]]]",
+      "lambda_path": "2/1",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 2
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 62,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 2,
+        "reachable_level_product_entries": 3,
+        "recurrent_word": null,
+        "repeat_start": 2
+      }
+    },
+    {
+      "G": {
+        "0": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            8,
+            0,
+            3
+          ],
+          "call_index": 0,
+          "flat_call_index": 0,
+          "hex": "0x4c13c8324c13c832"
+        },
+        {
+          "arguments": [
+            6,
+            4,
+            7
+          ],
+          "call_index": 1,
+          "flat_call_index": 4,
+          "hex": "0xffffffffffffffff"
+        },
+        {
+          "arguments": [
+            7,
+            2,
+            4
+          ],
+          "call_index": 2,
+          "flat_call_index": 5,
+          "hex": "0xcccccccc33333333"
+        }
+      ],
+      "S": 0,
+      "S_calls_by_type": {
+        "0": 3
+      },
+      "S_size": 9,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[3,6,[[\"SELF\",[8,0,3]],[\"K\",[3,7,5]],[\"K\",[1,8,3]],[\"K\",[3,5,2]],[\"SELF\",[6,4,7]],[\"SELF\",[7,2,4]]]]]",
+      "lambda_path": "1/2",
+      "main": 0,
+      "main_entries_by_type": {
+        "0": 3
+      },
+      "main_equals_S": true,
+      "main_size": 9,
+      "mismatches": [],
+      "n_defs": 1,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 63,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0xffffffffffffffff"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          3,
+          3,
+          1
+        ],
+        "period": 1,
+        "r": 3,
+        "reachable_level_product_entries": 7,
+        "recurrent_word": null,
+        "repeat_start": 3
+      }
+    },
+    {
+      "G": {
+        "1": "0x7e"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            1,
+            5,
+            0
+          ],
+          "call_index": 0,
+          "flat_call_index": 2,
+          "hex": "0xa5004200a5000"
+        },
+        {
+          "arguments": [
+            3,
+            5,
+            1
+          ],
+          "call_index": 1,
+          "flat_call_index": 4,
+          "hex": "0x700e0c30700e00"
+        },
+        {
+          "arguments": [
+            1,
+            5,
+            0
+          ],
+          "call_index": 2,
+          "flat_call_index": 5,
+          "hex": "0xa5004200a5000"
+        }
+      ],
+      "S": 1,
+      "S_calls_by_type": {
+        "1": 3
+      },
+      "S_size": 8,
+      "c": 3,
+      "fixed_point_history": [
+        [
+          126
+        ],
+        [
+          126
+        ]
+      ],
+      "key": "[[4,2,[[\"K\",[2,4,1]],[\"K\",[5,2,3]],[\"K\",[2,3,5]]]],[3,3,[[\"K\",[2,0,1]],[\"K\",[3,4,5]],[\"SELF\",[1,5,0]],[\"K\",[1,5,3]],[\"SELF\",[3,5,1]],[\"SELF\",[1,5,0]],[0,[0,3,5,1]]]],[3,0,[[1,[2,1,0]]]]]",
+      "lambda_path": "1/2",
+      "main": 2,
+      "main_entries_by_type": {
+        "1": 1
+      },
+      "main_entry_prefix_audit": {
+        "all_first_r_products_rectangular": false,
+        "entry_count": 1,
+        "least_initial_rectangular_length": 6,
+        "levels": [
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": false,
+            "entry_products": 1,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 0,
+            "total_length_from_main": 1
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 1,
+            "total_length_from_main": 2
+          },
+          {
+            "S_suffix_products": 4,
+            "all_rectangular": false,
+            "entry_products": 4,
+            "rectangular_products": 0,
+            "suffix_length_in_S": 2,
+            "total_length_from_main": 3
+          },
+          {
+            "S_suffix_products": 5,
+            "all_rectangular": false,
+            "entry_products": 5,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 3,
+            "total_length_from_main": 4
+          },
+          {
+            "S_suffix_products": 2,
+            "all_rectangular": false,
+            "entry_products": 2,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 4,
+            "total_length_from_main": 5
+          },
+          {
+            "S_suffix_products": 1,
+            "all_rectangular": true,
+            "entry_products": 1,
+            "rectangular_products": 1,
+            "suffix_length_in_S": 5,
+            "total_length_from_main": 6
+          }
+        ],
+        "relations": [
+          {
+            "arguments": [
+              2,
+              1,
+              0
+            ],
+            "flat_call_index": 0,
+            "hex": "0x8008200240041001"
+          }
+        ]
+      },
+      "main_equals_S": false,
+      "main_size": 3,
+      "mismatches": [],
+      "n_defs": 3,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 64,
+      "reported_verdict": "grows",
+      "reported_word_check": null,
+      "semigroup": {
+        "P_r": [
+          "0x7e7e7e7e7e7e00"
+        ],
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "length_set_sizes": [
+          2,
+          4,
+          5,
+          2,
+          1
+        ],
+        "period": 1,
+        "r": 5,
+        "reachable_level_product_entries": 14,
+        "recurrent_word": null,
+        "repeat_start": 5
+      }
+    },
+    {
+      "G": {
+        "1": "0xff"
+      },
+      "R_i": [
+        {
+          "arguments": [
+            4,
+            0,
+            2
+          ],
+          "call_index": 0,
+          "flat_call_index": 1,
+          "hex": "0xc030c0300c030c03"
+        },
+        {
+          "arguments": [
+            3,
+            4,
+            0
+          ],
+          "call_index": 1,
+          "flat_call_index": 2,
+          "hex": "0x700e700e700e700e"
+        }
+      ],
+      "S": 1,
+      "S_calls_by_type": {
+        "1": 2
+      },
+      "S_size": 5,
+      "c": 2,
+      "fixed_point_history": [
+        [
+          255
+        ]
+      ],
+      "key": "[[5,0,[[\"K\",[1,3,0]]]],[3,2,[[0,[0,3,2,4,1]],[\"SELF\",[4,0,2]],[\"SELF\",[3,4,0]]]]]",
+      "lambda_path": "1/1",
+      "main": 1,
+      "main_entries_by_type": {
+        "1": 2
+      },
+      "main_equals_S": true,
+      "main_size": 5,
+      "mismatches": [],
+      "n_defs": 2,
+      "other_self_holding_definitions": [],
+      "population_index_sorted": 65,
+      "reported_verdict": "unresolved",
+      "reported_word_check": {
+        "at_cycle": "0xf0f0f0f00f0f0f0f",
+        "cycle_products": [
+          "0xf0f0f0f00f0f0f0f"
+        ],
+        "prefix_products": [
+          "0xc030c0300c030c03",
+          "0xf0f0f0f00f0f0f0f"
+        ],
+        "recorded_cycle_products_convention": "products before each cycle step",
+        "returns_to_same_product": true,
+        "valid": true
+      },
+      "semigroup": {
+        "P_r": null,
+        "all_rectangular_by_length": [
+          false,
+          false,
+          false
+        ],
+        "length_set_sizes": [
+          2,
+          3,
+          4
+        ],
+        "period": 1,
+        "r": null,
+        "reachable_level_product_entries": 9,
+        "recurrent_word": {
+          "cycle": [
+            0
+          ],
+          "prefix": [
+            0,
+            0
+          ]
+        },
+        "repeat_start": 3
+      }
+    }
+  ],
+  "independence": "Independent standard-library reimplementation; no producer Python, paths_dp.py, or reach_dp.py opened/imported",
+  "input_sha256": {
+    "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz": "a0473d5c08c6273ec97220cb5462bf1381140f49df0b1db653bfc09976786ddb",
+    "experiments/EVERY-RAY-20261113-001A/EVERY-RAY-20261113-001A-E001_min_over_paths/codex/sample/G.jsonl": "4d7cdba62e57b6dcd8536648762ec5ae1254e5e1d4c7d8a81f1df44e19c65409",
+    "experiments/EVERY-RAY-20261113-001A/EVERY-RAY-20261113-001A-E001_min_over_paths/codex/sample/phase2.jsonl": "1501d6f1f3f2302ed457a1f3d5d2c3198f647b93af923634e1b36ecfc40adfb7",
+    "experiments/FREE-TARGET-20261114-001A/FREE-TARGET-20261114-001A-E001_free_target/codex/full/results.jsonl": "f33bd08c77c1cf5c41665d2226eebc903cc65b5973552445a60a8cec79cf51e9",
+    "experiments/FREE-TARGET-20261114-001A/FREE-TARGET-20261114-001A-E001_free_target/codex/gate_relations.jsonl": "951e9d9df2580935e8cebeb16ca11c473c797470842d01cb3b22379a0913cffe",
+    "experiments/FREE-TARGET-20261114-001A/FREE-TARGET-20261114-001A-E001_free_target/codex/population.json": "427b66b791f6bcfbe6b085384fe9b70146d7b7c48a082b2e136745045f82e7e1"
+  },
+  "mismatches": [],
+  "mutant_changes": [
+    {
+      "after": [
+        "0xcccccc33333300",
+        "0x22882244114400"
+      ],
+      "after_r": 5,
+      "before": [
+        "0xcc44cc33223300",
+        "0x22882244114400"
+      ],
+      "before_r": 5,
+      "changed_call_indices": [
+        0
+      ],
+      "dropped_flat_call": 2,
+      "key": "[[3,2,[[\"K\",[1,0,2]],[\"SELF\",[4,2,3]],[\"SELF\",[2,0,4]]]]]"
+    },
+    {
+      "after": [
+        "0xa5004200a5000",
+        "0x700e0c30700e00",
+        "0xa5005a00a5000"
+      ],
+      "after_r": 5,
+      "before": [
+        "0xa5004200a5000",
+        "0x700e0c30700e00",
+        "0xa5004200a5000"
+      ],
+      "before_r": 5,
+      "changed_call_indices": [
+        2
+      ],
+      "dropped_flat_call": 2,
+      "key": "[[4,2,[[\"K\",[2,4,1]],[\"K\",[5,2,3]],[\"K\",[2,3,5]]]],[3,3,[[\"K\",[2,0,1]],[\"K\",[3,4,5]],[\"SELF\",[1,5,0]],[\"K\",[1,5,3]],[\"SELF\",[3,5,1]],[\"SELF\",[1,5,0]],[0,[0,3,5,1]]]],[3,0,[[1,[2,1,0]]]]]"
+    },
+    {
+      "after": [
+        "0xa5005a00a5000",
+        "0x700e0c30700e00",
+        "0xa5004200a5000"
+      ],
+      "after_r": 5,
+      "before": [
+        "0xa5004200a5000",
+        "0x700e0c30700e00",
+        "0xa5004200a5000"
+      ],
+      "before_r": 5,
+      "changed_call_indices": [
+        0
+      ],
+      "dropped_flat_call": 5,
+      "key": "[[4,2,[[\"K\",[2,4,1]],[\"K\",[5,2,3]],[\"K\",[2,3,5]]]],[3,3,[[\"K\",[2,0,1]],[\"K\",[3,4,5]],[\"SELF\",[1,5,0]],[\"K\",[1,5,3]],[\"SELF\",[3,5,1]],[\"SELF\",[1,5,0]],[0,[0,3,5,1]]]],[3,0,[[1,[2,1,0]]]]]"
+    }
+  ],
+  "peak_rss_kib": 41644,
+  "seconds": 1.139615,
+  "status": "pass",
+  "summary": {
+    "all_other_self_types_have_zero_flat_own": true,
+    "calls": 161,
+    "families_with_other_self_holding_definitions": 4,
+    "finite_r": 43,
+    "growers_main_not_S": 7,
+    "growers_several_definitions": 9,
+    "growers_with_other_self_holding_definitions": 4,
+    "main_not_S": 9,
+    "mutant_changed_families": 2,
+    "population": 66,
+    "r_counts": {
+      "2": 9,
+      "3": 14,
+      "4": 6,
+      "5": 9,
+      "6": 5
+    },
+    "recurrent_nonrectangular": 23,
+    "relation_or_semigroup_mismatches": 0,
+    "several_definitions": 13,
+    "wrapper_growers_first_r_products_rectangular": 0
+  },
+  "validation": "V2 same-task independently authored AI lane, not external replication"
+}

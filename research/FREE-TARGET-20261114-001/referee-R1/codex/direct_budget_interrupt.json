@@ -1,0 +1,10 @@
+{
+  "case": 3,
+  "s": 5,
+  "h": 2,
+  "cutoff": 7,
+  "variables": 6563,
+  "status": "interrupted_without_result",
+  "reason": "The early Glucose limited call exceeded its soft per-point deadline. The task-owned command was interrupted through its own execution session after approximately 6.6 minutes total command time, below the 15-minute command budget. Earlier point results remain in direct_bonds_v3.jsonl; no minimum or lower-size exclusion is asserted for this unfinished point.",
+  "subsequent_change": "Added a timer interrupt around each meta-SAT search, using solve_limited(expect_interrupt=True)."
+}

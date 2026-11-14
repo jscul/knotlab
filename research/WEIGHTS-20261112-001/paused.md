@@ -18,6 +18,13 @@ every finished sample saved. **These are partial results, not the frozen verdict
 - **Stated limit, as agreed with the coordinator:** the certificate family is tori and strips repeating across only; no case needed the
   completion pass with the two-way certificate so far (no forced-but-uncertified case among the 73 travelling new-kind bases).
 
+*Corrected on 2026-11-14 at the close, and by the referee: these partial counts left out the 10 samples with a main-arm miss (β = 0:
+38, 98; β = 1: 2, 10, 18, 20, 28, 33, 41, 50), since the enlarged arm runs only on a miss and either died on its window (the 7
+"dropped at the cap") or was still running (3); each holds a travelling new-kind base with one certified direction, or one forced
+but uncertified. The final counts are 39 of 40 at β = 0 and 35 of 40 at β = 1, W1 passing under both. The calibration's 4 items were
+all capped and have no outcome: "none gained a second direction" observed nothing ([decision note](two_shifts.md); logged in
+`docs/CORRECTIONS.md`, Narrowing).*
+
 ## Resuming
 
 Rerun `census.py --part census` and `--part calibration` after adding a skip of (β, sample) pairs and calibration items already in

@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: other weightings, confirmed by its referee, five narrowings
+
+- The study of two unlengthened shifts under other weightings (`WEIGHTS-20261112-001`) was confirmed by its referee with fresh code:
+  the summary reruns, the four completion certificates and ten spot-checked bases are certified, and the verdict also holds when every
+  completed sample is counted ([decision note](research/WEIGHTS-20261112-001/two_shifts.md)).
+- Narrowed: when the study was paused, every travelling base with a knot kind outside the old box was reported to have two certified
+  shifts (46 of 46, 27 of 27). Those counts left out every sample where the main search missed a second direction, since the search
+  that runs on a miss had crashed or was still running there. Rerun and completed: 39 of 40 and 35 of 40.
+- Narrowed: the calibration has no outcome (all 4 attempts hit the time cap); "big knots travel less" holds across weightings only,
+  not within one; the confidence intervals are descriptive; and "four declared weightings" mixed two censuses run differently.
+- Unchanged: the verdict. Two shifts remain the rule under all three weightings.
+
 ## 14 November 2026: the rigidity attempt, confirmed by its referee, its evidence narrowed
 
 - The bounded attempt to prove rigidity at every level (`RIGID-LEVEL-20261114-001`) was confirmed by its referee: the constraint is not

@@ -87,7 +87,10 @@ for beta in (0, 1, 2):
                        "after completion": {"two certified": [k2, trav, w2], "W1": verdict2}}
     out[beta] = st
 cal = [json.loads(l) for l in open(os.path.join(O, "calibration.jsonl"))]
-out["calibration"] = {"done": len(cal), "of": 23, "gained": sum(1 for c in cal if (c.get("enlarged") or {}).get("rank certified") == 2),
-                      "note": "the enlarged arm is infeasible at this scale (over 30 minutes a base); the rest not run"}
+# every attempted calibration item so far was capped and has no outcome (referee R1); count outcomes only where there is one
+out["calibration"] = {"attempted": len(cal), "of": 23, "capped, no outcome": sum(1 for c in cal if "dropped at the cap" in c),
+                      "gained": sum(1 for c in cal if (c.get("enlarged") or {}).get("rank certified") == 2),
+                      "note": "the enlarged arm is infeasible at this scale (over 30 minutes a base); the rest not run; W3 undecided "
+                              "with no observation"}
 json.dump(out, open(os.path.join(HERE, "summary.json"), "w"), indent=1)
 print(json.dumps(out, indent=1))

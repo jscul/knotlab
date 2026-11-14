@@ -27,6 +27,8 @@ weighted by the description weighting over the census's provable first-ray growe
 - `REACH-CENSUS-20261113-001`: the population (first-ray growers).
 - `EVERY-RAY-20261113-001`: the sample behind FREE-TARGET's 66.
 - `NEST-COUNT-20261112-001`, `LIMIT-STATE-20261112-001`: ends read modulo a period and limit relations, relatives.
+- `FORGET-RULE-20261114-001`: a later study of the same day (the rule behind forgetting); it postdates this freeze and is named here
+  only so that the objects gate, rerun after the referee, finds every top hit.
 
 ## Population and words
 

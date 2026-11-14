@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: the census share of counting inside, restricted by its referee
+
+- The census share of nested patterns in which the law counts depth with nothing chosen (`CENSUS-FORGET-20261114-001`) was
+  confirmed in its verdicts, but "to any copy at depth" was too general. The proof covers copies of the recursive definition reached
+  through its own calls. Where a second recursive definition offers its own copies, a direct search finds bonds staying at three
+  members at every depth. Restricted to the covered targets, the share is 53.2% of first-ray growth and 3.16% of all nested patterns
+  (it was 54.6% and 3.25%). Also narrowed: capped cases kept apart from exact decisions, "never forget" made "none certified", and
+  the shifted bound for wrapper mains ([decision note](research/CENSUS-FORGET-20261114-001/census_forget.md)).
+- Unchanged: every verdict and certificate.
+
 ## 14 November 2026: the free-target bond, confirmed by its referee, one justification withdrawn
 
 - The study of the law's reach to any copy at depth with members anywhere (`FREE-TARGET-20261114-001`) was confirmed: in 43 of 66

@@ -3431,10 +3431,11 @@ So holes come in two kinds:
      inside them with nothing chosen (copies of the recursive definition; one level fewer for a wrapper main). No bounded certificate
      (tested on 57). Single-call chains' ray growth transfers to the free bond wherever a bond exists, as the earlier ruler did
      ([decision note](../research/FREE-TARGET-20261114-001/free_target.md)).
-   - **How common** (`CENSUS-FORGET-20261114-001`; referee pending; conditional on the gap argument): across the census's 12,772
-     first-ray growers, 54.6% of their weight (3.25% of all nested draws) grows with nothing chosen at every depth where a bond
+   - **How common** (`CENSUS-FORGET-20261114-001`; refereed, confirmed with fixes): across the census's 12,772
+     first-ray growers, 53.2% of their weight (3.16% of all nested draws), counted over the targets the proof covers, grows with nothing chosen at every depth where a bond
      exists: single chains, whose ray growth transfers to the free bond (42.4%), and 21.2% of the others because every way down forgets (targets
-     copies of the recursive definition; all eligible targets in 53.0%); none of the limit-only
+     copies of the recursive definition reached through its own calls; where another recursive definition
+     offers its own copies, bonds can stay at three members); none of the limit-only
      growers that started this line forgets ([decision note](../research/CENSUS-FORGET-20261114-001/census_forget.md)).
    - **What makes every way down forget** (`FORGET-RULE-20261114-001`; referee pending): a port handed to itself around a cycle of
      calls blocks forgetting (proved), and separation of the top from depth r after peeling the always-satisfiable knots implies it

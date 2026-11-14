@@ -1484,7 +1484,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-12 | What the law reads on travelling bases (`TRAVEL-READ-20261112-001`) | [closure](proofs/TRAVEL-READ-20261112-001Z/TRAVEL-READ-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/TRAVEL-READ-20261112-001/) |
 | 2026-11-12 | Twisted pins (`TWIST-PIN-20261112-001`) | [closure](proofs/TWIST-PIN-20261112-001Z/TWIST-PIN-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/TWIST-PIN-20261112-001/) |
 | 2026-11-12 | Two distinctions per position (`TWO-BIT-ROWS-20261112-001`) | [closure](proofs/TWO-BIT-ROWS-20261112-001Z/TWO-BIT-ROWS-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/TWO-BIT-ROWS-20261112-001/) |
-| 2026-11-12 | Two unlengthened shifts beyond one box (`WEIGHTS-20261112-001`) | — | [folder](research/WEIGHTS-20261112-001/) |
+| 2026-11-12 | Two unlengthened shifts beyond one box (`WEIGHTS-20261112-001`) | [closure](proofs/WEIGHTS-20261112-001Z/WEIGHTS-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WEIGHTS-20261112-001/) |
 | 2026-11-12 | Which cyclic sequences to fix (`WHICH-SEQUENCES-20261112-001`) | [closure](proofs/WHICH-SEQUENCES-20261112-001Z/WHICH-SEQUENCES-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WHICH-SEQUENCES-20261112-001/) |
 | 2026-11-12 | How many all-equal knots each dead depth needs (`WITNESS-COUNT-20261112-001`) | [closure](proofs/WITNESS-COUNT-20261112-001Z/WITNESS-COUNT-20261112-001Z-P001_epic_closure/proof.md) | [folder](research/WITNESS-COUNT-20261112-001/) |
 | 2026-11-13 | Knots placed by an automaton on addresses: do growing interfaces change fates? (`ADDR-KNOTS-20261113-001`) | — | [folder](research/ADDR-KNOTS-20261113-001/) |

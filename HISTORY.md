@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: the free-target bond, confirmed by its referee, one justification withdrawn
+
+- The study of the law's reach to any copy at depth with members anywhere (`FREE-TARGET-20261114-001`) was confirmed: in 43 of 66
+  every bond from the top to any copy of the recursive definition at depth s grows at least linearly, proved per family. The
+  justification that single chains have the same free bond as their ray bond is withdrawn: a free bond may use members below its
+  target. What holds bounds the free bond between two ray bonds, so the chains' growth still transfers wherever a bond exists, as
+  the program's earlier ruler did. Narrowed: the bound shifts by one level when main is a wrapper; the targets are copies of the
+  recursive definition; the bounded search ran on 57; a weight estimate mixing a sample with the census is removed. The same fixes are
+  carried into the census share (`CENSUS-FORGET-20261114-001`) ([decision note](research/FREE-TARGET-20261114-001/free_target.md)).
+- Unchanged: every certificate and count.
+
 ## 14 November 2026: a forgetting rule's training share, corrected
 
 - In the study of what makes every way down forget (`FORGET-RULE-20261114-001`), its pre-registration quoted the proved rule's

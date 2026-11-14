@@ -44,6 +44,9 @@ this census the simple test is nearly exact. A family without such a cycle forge
 ## Reading
 
 **Interpretation, not a theorem.**
+- *Scope, after FREE-TARGET's referee:* rules N and A are about forgetting, the rectangularity of products, and are unaffected.
+  Reading forgetting as growth of the free bond holds for targets that are copies of the ray definition S. The bound is shifted by one
+  level for wrapper mains, and does not reach copies of another recursive definition with its own distinctions.
 - **What carries depth's memory.** A nested pattern keeps a trace of its top at depth only through identity: a distinction passed
   down unchanged, directly or through a gadget that forces equality. Without that, every few levels wipe the slate clean. That is
   why the bond must spend a member at every stretch, so that the law counts depth.

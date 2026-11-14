@@ -3425,14 +3425,16 @@ So holes come in two kinds:
      depth in 188 of 204; so growth along one ray is mostly a choice of ray. In this sample the per-depth minimum grows in 66 of 300,
      fewer as self-calls multiply; a sixth of the families with no first-ray bond have one on another path
      ([decision note](../research/EVERY-RAY-20261113-001/every_ray.md)).
-   - **Every copy at depth, members anywhere** (`FREE-TARGET-20261114-001`; referee pending; code by Codex): in 43 of the 66 sampled
+   - **Every copy at depth, members anywhere** (`FREE-TARGET-20261114-001`; refereed, confirmed with fixes; code by Codex): in 43 of the 66 sampled
      families that grow along every path, every way down forgets (all products of a few levels' port relations are rectangular), so
      every bond from the top to any copy at depth s, wherever its members sit, has at least 2 + ⌊s/r⌋ members: the law counts depth
-     inside them with nothing chosen. None was shown bounded. Single-call chains count depth by construction (5,190 families)
+     inside them with nothing chosen (copies of the recursive definition; one level fewer for a wrapper main). No bounded certificate
+     (tested on 57). Single-call chains' ray growth transfers to the free bond wherever a bond exists, as the earlier ruler did
      ([decision note](../research/FREE-TARGET-20261114-001/free_target.md)).
    - **How common** (`CENSUS-FORGET-20261114-001`; referee pending; conditional on the gap argument): across the census's 12,772
      first-ray growers, 54.6% of their weight (3.25% of all nested draws) grows with nothing chosen at every depth where a bond
-     exists: single chains by construction (42.4%) and 21.2% of the others because every way down forgets; none of the limit-only
+     exists: single chains, whose ray growth transfers to the free bond (42.4%), and 21.2% of the others because every way down forgets (targets
+     copies of the recursive definition; all eligible targets in 53.0%); none of the limit-only
      growers that started this line forgets ([decision note](../research/CENSUS-FORGET-20261114-001/census_forget.md)).
    - **What makes every way down forget** (`FORGET-RULE-20261114-001`; referee pending): a port handed to itself around a cycle of
      calls blocks forgetting (proved), and separation of the top from depth r after peeling the always-satisfiable knots implies it

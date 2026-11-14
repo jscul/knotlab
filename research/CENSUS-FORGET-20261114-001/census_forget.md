@@ -2,8 +2,8 @@
 
 Epic `CENSUS-FORGET-20261114-001` (`FREE-TARGET-20261114-001#1`; G17, with G1), 2026-11-14, at the coordinator's go-ahead.
 Pre-registered in 1c416df97 (objects gate passed; advisor consulted). FREE-TARGET's exact forgetting test and audit (Codex's code,
-unchanged) run on the shared runner from the thread's `job.py`. The canonical K1–K3 test is unchanged. **Conditional on the gap
-argument, under FREE-TARGET's referee. Referee pending.**
+unchanged) run on the shared runner from the thread's `job.py`. The canonical K1–K3 test is unchanged. The gap argument
+was confirmed by FREE-TARGET's referee (04e2b87dc), with fixes carried here as marked narrowings. **Referee pending** for this study.
 
 ## Words
 
@@ -11,7 +11,10 @@ As in FREE-TARGET:
 - **Certified to grow**: some r with every product of r per-call port relations rectangular. Then at every depth s where a bond
   exists, every bond from a top port to **any** copy at depth s, members **anywhere**, has at least 2 + ⌊s/r⌋ members. A bond exists
   wherever the first ray has one (L_any ≤ L_ray).
-- **Chains**: one SELF call and no other self-holding call, so there is one copy per depth and no side copy. Then L_any = L_ray.
+- **Chains**: one SELF occurrence in S and in main and no other self-holding call (finite helpers and a wrapper main allowed; the
+  literal one-definition class is 4,035 of the 5,190), so there is one copy of S per depth and no side copy. ~~Then L_any = L_ray.~~
+  *Corrected after FREE-TARGET's referee:* the free bond may use members below its target, so only
+  inf_{d≥s} L_ray(d) ≤ L_any(s) ≤ L_ray(s) holds, which transfers the first-ray growth wherever a bond exists.
 - **Weight**: the share of draws (A79).
 
 ## The question
@@ -29,18 +32,18 @@ rectangular, weighted by the description weighting.
 | --- | --- | --- | --- |
 | 1 | **The test is exact and checked.** All 12,772 first-ray growers finished (3 minutes, 0 errors). The independent audit re-derived every certified family's relations and certifying products: 5,841 families, 0 mismatches. FREE-TARGET's 66 reproduce (43 certified, same r in all 66). No certified family is bounded over paths in EVERY-RAY's 300 sampled growers, a consistency check. No empty relation occurs. | computed | G passed |
 | 2 | **Among the non-chains, certified growth is a minority, but not a small one.** Of 7,646 non-chain draws, 1,618 (21.2%) are certified. That is 1,080 of 6,989 with two or more SELF calls (15.5%; Wilson 14.6% to 16.3%) and 538 of 657 with one SELF call and other self-holding calls (81.9%). 5,962 (78.0%) are certified non-forgetting (a recurring non-rectangular product) and 66 capped. Outside EVERY-RAY's sample, the c ≥ 2 share is 15.5% (14.65% to 16.38%). | proved per family (conditional) | P1 held (8% to 25%) |
-| 3 | **Together with the chains, half the first-ray growth weight.** The chains count by construction: 5,633 draws (42.4%). With the 1,618 certified non-chains, 7,251 of the 13,279 first-ray growth draws (54.6%) grow with nothing chosen, at every depth where a bond exists. That is 3.25% of all 223,261 nested draws. The rest of first-ray growth (45.4%) is undecided here, almost all of it certified non-forgetting. | proved per family (conditional); chains by construction | reported |
+| 3 | **Together with the chains, half the first-ray growth weight.** The chains' first-ray growth transfers to the free bond through inf_{d≥s} L_ray(d) ≤ L_any(s) (*not* by construction, corrected after FREE-TARGET's referee): 5,633 draws (42.4%). With the 1,618 certified non-chains, 7,251 of the 13,279 first-ray growth draws (54.6%) grow with nothing chosen, at every depth where a bond exists. That is 3.25% of all 223,261 nested draws. *Narrowed after FREE-TARGET's referee:* the targets are copies of the ray definition S. In 209 certified non-chain draws (168 of the 657 single-call families, 41 with c ≥ 2) another recursive definition has own distinctions, and targets in its copies are not covered; in the other 7,042 draws (53.0%) every eligible target is a copy of S. For the 305 certified non-chain wrapper families (main ≠ S) the bound is 2 + ⌊(s − 1)/r⌋. The rest of first-ray growth (45.4%) is undecided here, almost all of it certified non-forgetting. | proved per family; chains by transfer of first-ray growth | reported |
 | 4 | **The limit-only growers never forget.** None of the 224 one-definition limit-only growers of `PROVED-RATE-20261113-001` is certified (203 non-forgetting, 21 capped). The census's growth there is not counting with nothing chosen by this test. | computed | reported |
 | 5 | **r is small.** Certified families have r = 1 (128), 2 (1,431), 3 (2,512), 4 (530), 5 (1,068), 6 (116) or 7 to 12 (56), so the lower bound gains a member every one to six levels in almost all of them. | computed | reported |
 
 ## Answer
 
 About half of the census's first-ray growth weight is growth the law makes with nothing chosen. Every bond from the top to any copy at
-depth s needs a number of members rising with s, wherever they sit. Four fifths of that half is the single chains, which are counters
-by construction. The other fifth is families with several ways down, every one of which forgets. Among families with two or more
+depth s needs a number of members rising with s, wherever they sit. Four fifths of that half is the single chains, whose first-ray growth
+transfers to the free bond (the program's earlier ruler, `LOGIC-AXIS-20261107-001`). The other fifth is families with several ways down, every one of which forgets. Among families with two or more
 self-calls only about one in six forgets, and none of the limit-only growers that started this line does. As a share of all nested
-patterns under the description weighting it is 3.25%: a definite, uncommon kind. *(Conditional on the gap argument's review;
-unrefereed.)*
+patterns under the description weighting it is 3.25%: a definite, uncommon kind, with the targets copies of S (all eligible targets in
+53.0% of the first-ray growth weight). *(The gap argument confirmed by FREE-TARGET's referee; this study's referee pending.)*
 
 ## Reading
 

@@ -1,0 +1,23 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "LEVEL-REACH-20261114-001",
+  "purpose": "independent referee audit; no lifecycle mutation",
+  "start_utc_approximate": "2026-11-14 23:12 UTC",
+  "finalized_utc": "2026-11-14T23:49:35.046775+00:00",
+  "authorization": "Only referee-R1/codex writes; no Git mutations, publication, network, or forbidden study source access",
+  "resource_envelope": {
+    "maximum_compute_processes": 4,
+    "maximum_memory_GiB": 12,
+    "command_limit_minutes_about": 20,
+    "task_limit_minutes_about": 90
+  },
+  "actual_execution": "One compute process per lane, up to three workers plus lead. Every command completed below20minutes. Whole audit below90minutes.",
+  "validation_independence": "V2: fresh same-task implementations and previous referee helpers; shared installed SAT library; no human or external replication",
+  "retained_incomplete_evidence": [
+    "four unresolved depth cells",
+    "four unresolved original N9 profiles with new lower bounds",
+    "failed cyclic acceleration probe",
+    "partial N5 model table explicitly marked incomplete"
+  ],
+  "scratch_disposition": "No disposable scratch remains; retained source, states, proofs, counters and partial evidence are audit deliverables."
+}

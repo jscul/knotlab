@@ -1,0 +1,118 @@
+{
+  "by_stratum": {
+    "chained": {
+      "exact": 87,
+      "numeric": 87,
+      "numeric_equal_N9": 87,
+      "outcomes": {
+        "3": 24,
+        "4": 24,
+        "5": 23,
+        "6": 16,
+        "undecided": 9
+      },
+      "queries": 96,
+      "undecided_reasons": {
+        "projection deadline": 9
+      }
+    },
+    "direct3": {
+      "exact": 16,
+      "numeric": 16,
+      "numeric_equal_N9": 16,
+      "outcomes": {
+        "3": 16
+      },
+      "queries": 16,
+      "undecided_reasons": {}
+    },
+    "slow": {
+      "exact": 16,
+      "numeric": 16,
+      "numeric_equal_N9": 16,
+      "outcomes": {
+        "3": 8,
+        "4": 8
+      },
+      "queries": 16,
+      "undecided_reasons": {}
+    }
+  },
+  "depth_results_sha256": "5c4d2c570f6c25f263de9470556b18f5cf0b69a367f5af0c206a0e1ce2134886",
+  "duplicates": [],
+  "fully_preserved_eight_query_profiles": [
+    {
+      "case": "89e8ac6a39c587ba7798826fd0dd07f1bb407f9dfd53893e61d79c3c2bb6f5bd",
+      "stratum": "chained"
+    },
+    {
+      "case": "d7afe44ff99b1cc56da23cb6d31e4e9634f7e47085883c58331e917f7aacefbc",
+      "stratum": "chained"
+    },
+    {
+      "case": "903a685ae880e658eb120b8b5b7d21ddcb5c570ccce15c010a4673843360d535",
+      "stratum": "chained"
+    },
+    {
+      "case": "48b04ecc4ea7f5a211787e7135703c899d5fb2f435b0d0d361987c4849e7f83d",
+      "stratum": "chained"
+    },
+    {
+      "case": "02521084fdd5e2b316551ee3e50d7acb5c0f2e36f10bc75e2f50bbfe4b3baad4",
+      "stratum": "chained"
+    },
+    {
+      "case": "b5e8f05dc1929ac4c2af70105ae96841e997fcbaa8de62bdf3ad765a42d170d1",
+      "stratum": "direct3"
+    },
+    {
+      "case": "1c339f56e2fa2e506f2d79e0c085b927005ec5518cd9af3c9f8459a87d90b3e2",
+      "stratum": "direct3"
+    },
+    {
+      "case": "64a280cbfbd76790ab608390a638cf77dbdff2d0fd5342a715def3a2b2546bf7",
+      "stratum": "slow"
+    },
+    {
+      "case": "545fdca755627a695616157d7a02268179b81218d26aa1ae20c6d203ecb9d8f9",
+      "stratum": "slow"
+    }
+  ],
+  "loaded_source_versions": [
+    {
+      "fresh_pattern.py": "4afdb51de764d8cd7b3248c166661775cb8a069ba8235cf4e9e789d77a638497",
+      "fresh_search.py": "7e1e36a6fb73540a9b786415d4b5647bed0a8fe64a4aff8bdb686a9a110b8e62",
+      "sample_plan.json": "442664f5148d89fe6bb4cfa0f55b5f57945d92d1b345e501a248d9dcbc2289c8"
+    }
+  ],
+  "nonclaims": [
+    "Timeouts do not establish persistence or a change.",
+    "Depth results are exact SAT-based recomputation when marked exact; no new independent LRAT certificates are exported.",
+    "The chained sample is purposive, balanced by N9 incidence forest status and filtered by N9 width; direct/slow controls are separate strata. This is not a prevalence estimate."
+  ],
+  "numeric_higher_than_N9": [],
+  "numeric_lower_than_N9": [],
+  "on_disk_source_changed_during_run": false,
+  "overall": {
+    "exact": 119,
+    "numeric": 119,
+    "numeric_equal_N9": 119,
+    "outcomes": {
+      "3": 48,
+      "4": 32,
+      "5": 23,
+      "6": 16,
+      "undecided": 9
+    },
+    "queries": 128,
+    "undecided_reasons": {
+      "projection deadline": 9
+    }
+  },
+  "peak_rss_mb": 136.7734375,
+  "query_seconds_total": 1003.184950730647,
+  "requested_descriptions": 16,
+  "requested_queries": 128,
+  "rows": 128,
+  "unique_cells": 128
+}

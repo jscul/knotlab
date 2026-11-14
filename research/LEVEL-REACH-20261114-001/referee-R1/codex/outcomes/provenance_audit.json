@@ -1,0 +1,314 @@
+{
+  "budget_scopes": {
+    "L_N, L_target and all per-target searches share one deadline at each s": 1288
+  },
+  "budget_seconds_per_key_s": {
+    "300.0": 1288
+  },
+  "certificate_files_not_rechecked": "Only JSON retention metadata inspected; actual CNF/LRAT files are outside this worker's admitted inputs.",
+  "finish_timestamp_range": [
+    "2026-11-14T09:59:28.095+00:00",
+    "2026-11-14T23:04:37.227+00:00"
+  ],
+  "gate_metadata": {
+    "g_brute.json": {
+      "alive_cases": 294,
+      "case_count": 300,
+      "checks": {
+        "bond_size_comparisons": 588,
+        "fate_comparisons": 300,
+        "pattern_comparisons": 300,
+        "state_space_boundaries_total": 9830400,
+        "states_per_case": 32768,
+        "support_boundaries_total": 4915200,
+        "supports_per_case": 16384
+      },
+      "dead_L_policy": "compare fate only; L is undefined and never given a sentinel",
+      "dead_cases": 6,
+      "exhaustion": "all 32768 states and all 16384 supports of sizes 0..7 per tiny pattern",
+      "failures": [],
+      "fallback_validation": {
+        "case_count": 300,
+        "checks": {
+          "bond_size_comparisons": 588,
+          "fate_comparisons": 300,
+          "pattern_comparisons": 300,
+          "state_space_boundaries_total": 9830400,
+          "states_per_case": 32768,
+          "support_boundaries_total": 4915200,
+          "supports_per_case": 16384
+        },
+        "evidence": "g_brute_fallback.json",
+        "passed": true
+      },
+      "fixture_rule": "population.random_key; N=3; k0=1; gaps=1,2; kmax=7",
+      "gate": "G-brute",
+      "passed": true,
+      "requested_case_count": 300,
+      "search_configuration": {
+        "certify": false,
+        "seconds_per_key_gap": 300,
+        "tree_optimization": false
+      },
+      "seed": "LEVEL-REACH-20261114-001A-G-brute",
+      "stopped_after_failure": false,
+      "unique_keys": 300,
+      "wall_seconds": 10.794005122967064
+    },
+    "g_brute_fallback.json": {
+      "alive_cases": 294,
+      "case_count": 300,
+      "checks": {
+        "bond_size_comparisons": 588,
+        "fate_comparisons": 300,
+        "pattern_comparisons": 300,
+        "state_space_boundaries_total": 9830400,
+        "states_per_case": 32768,
+        "support_boundaries_total": 4915200,
+        "supports_per_case": 16384
+      },
+      "dead_L_policy": "compare fate only; L is undefined and never given a sentinel",
+      "dead_cases": 6,
+      "exhaustion": "all 32768 states and all 16384 supports of sizes 0..7 per tiny pattern",
+      "failures": [],
+      "fixture_rule": "population.random_key; N=3; k0=1; gaps=1,2; kmax=7",
+      "gate": "G-brute",
+      "passed": true,
+      "requested_case_count": 300,
+      "search_configuration": {
+        "certify": false,
+        "seconds_per_key_gap": 300,
+        "tree_optimization": false
+      },
+      "seed": "LEVEL-REACH-20261114-001A-G-brute",
+      "stopped_after_failure": false,
+      "unique_keys": 300,
+      "wall_seconds": 9.165118240052834
+    },
+    "g_pattern.json": {
+      "case_count": 200,
+      "checks": {
+        "by_N": {
+          "0": 19,
+          "1": 19,
+          "10": 200,
+          "2": 18,
+          "3": 18,
+          "4": 18,
+          "5": 18,
+          "6": 18,
+          "7": 18,
+          "8": 18,
+          "9": 200
+        },
+        "pattern_comparisons": 564
+      },
+      "failures": [],
+      "fixture_rule": "population.random_key; N=index%11 plus N=9,10 for every key",
+      "gate": "G-pattern",
+      "passed": true,
+      "seed": "LEVEL-REACH-20261114-001A-G-pattern",
+      "unique_keys": 200,
+      "wall_seconds": 5.260847722995095
+    },
+    "g_tree.json": {
+      "corruption": {
+        "changed_effective_proof_hint_rejected": true,
+        "flipped_state_value_rejected": true
+      },
+      "passed": true
+    }
+  },
+  "input_hashes": {
+    "artifacts/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/raw_hashes.json": "ac39a71c4dab4bf33d3e4d10b4ba9690ff9a824a8a47439149cfd65467209769",
+    "artifacts/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/records_slim.jsonl.gz": "4f1091abf99b62a264f605b8b1db07da695586b3173b381572046ec941171b48",
+    "artifacts/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/records_slim.jsonl.gz:uncompressed": "f0170d4cfa110259109a55caa6a2f4019b23ffceb3ff370f6c81df375ffe129c",
+    "artifacts/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/results.jsonl.gz": "0de177a8d6ff309bc9b17a8e3fa7d630a7b05253ea4ccb5ea1085f82f7b69e58",
+    "artifacts/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/results.jsonl.gz:uncompressed": "19cc32eed12dccb0c24ae34494e03af5e82063c90a154ed309716e85196c673f",
+    "artifacts/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/summary.json": "073da44713bae2ac2654b7454db0493fbfc05b9f2618db5ff68d3728222c0286"
+  },
+  "job_shas": {
+    "ba0d223f1756b99fad01236371b8bb92eb59218893ad038f305d56c97244c049": 1288
+  },
+  "limitations": [
+    "No producer Python or C source was opened, imported, hashed, or executed.",
+    "Budget/population/retention behavior is reconciled from records and documentary specifications, not source inspection.",
+    "Memoization and presence-encoding JSON claims do not independently prove semantic equivalence of the executed sources.",
+    "Presence-encoding controls disclose finite checks; memoization provenance explicitly allows timing, representative, and undecided changes.",
+    "The specification permits pre-run population cuts; preregistration fixes first 2000 W_R samples and E_R relative-class filter."
+  ],
+  "pilot_hash_not_rechecked": "Pilot raw file is outside this worker's admitted inputs.",
+  "provenance_documents": {
+    "close_cleanup_provenance.json": {
+      "archive": "validation_history/before_close_cleanup",
+      "archived_sources_and_gates": {
+        "g_brute.json": "9f702fd5235b6b6210fc77581ef4ffdca16577d431398fe375875caee8884253",
+        "g_pattern.json": "dd09162e9becdf2b346bc90f44c89bd07830ed189e24bcd6bb8dc387c0deaf48",
+        "g_tree.json": "da0951fe44209e81a76fc3a93e346c26304a563e12da122991cf21fdae890f69",
+        "search.py": "588febd9aac683d6eb21c451493926fff279ab8290b175503e331a66c2e64865"
+      },
+      "controls": {
+        "compiled_disabled_closed_engine_immediately_reclaimed": true,
+        "compiled_enabled_closed_engine_immediately_reclaimed": true,
+        "final_finite_controls": "final_controls/results.jsonl",
+        "scope": "cleanup only after computation; no cache policy, search, certificate, data or budget change"
+      },
+      "final_search_sha256": "3de432aff8081fb9fb5d2d584836993240f20b7442a4531cb4cb84e17c783b22",
+      "reason": "Confirmed closed-engine cycles through Timer.function and CompiledPattern._check retain caches until cyclic GC. Break only these lifecycle references; no search or cache policy changes.",
+      "retained_evidence": "47 successful original G-mono cases plus the successful first retry; all original and intermediate memory failures retained."
+    },
+    "continuation_provenance.json": {
+      "continuation": "research/LEVEL-REACH-20261114-001/codex_spec_addendum.md",
+      "mono_completed_before_continuation": 31,
+      "pre_edit_sources": {
+        "certificates.py": "c1b8e45af6a22c3f43b7ef181ab4149426e32a6c84973e982ce5a0e8ab59989b",
+        "compiled_search.py": "f42c318a1a599d787375cbe9b1ec41a7fb8abcc65d360fe41177d7f2780fcc9b",
+        "controls_job.py": "50030791bb841128d22e37e4c5ffa34411a588a1ce131105de13a3dc2e583b98",
+        "finalize_report.py": "a1a118381e55e46575fce2774a9b74af5f518fe15b45ed998be874423721ae89",
+        "gate_controls.py": "46c25bf5b666f007161148c58c7985117d1d89efa51229d6633560b487422be2",
+        "gates.py": "fa165d1efc8ab53143e3c1f49d3af7a591f604919515fd80307c2a4dec12508f",
+        "input_addr.py": "39b28de4c395a7afe38a5a47887842ca895ffed33aa8de25531ef8c868db8288",
+        "input_certify.py": "fab488c3028e31596e64752e6e11baf223f105a6893c2da0afb63ea2db21ff18",
+        "job.py": "6a498de88fb7645eed43274398117a33bfa759db5bd2fd38032f6ed3a541479f",
+        "mono_job.py": "fe776c9f5262c81ff377839347d8794411b59d4b48cbc503b53dd535ada16bd0",
+        "pattern.py": "b7938bbe556a6a217226270888fb7a51223d3dbf81ef7a129d3f4c3aacc97426",
+        "population.py": "d08b9b3aa4b77ac5119832fd38be263cd25b975844208e1d7df63f762356cded",
+        "reference.py": "9e9de16f753f393b19b20837a91a258ae98e735c4128e3dea6d42cd522052985",
+        "search.py": "588febd9aac683d6eb21c451493926fff279ab8290b175503e331a66c2e64865",
+        "validate_compiled.py": "c464379c6cb54d1ece3cc1ba0cc7b839cfb495acd6470347690b09f11a4c3c7f"
+      },
+      "preserved_gates": {
+        "g_brute.json": "9f702fd5235b6b6210fc77581ef4ffdca16577d431398fe375875caee8884253",
+        "g_pattern.json": "dd09162e9becdf2b346bc90f44c89bd07830ed189e24bcd6bb8dc387c0deaf48",
+        "g_tree.json": "da0951fe44209e81a76fc3a93e346c26304a563e12da122991cf21fdae890f69"
+      },
+      "scope_id": "LEVEL-REACH-20261114-001A",
+      "scope_kind": "ticket",
+      "smoke_completed_before_continuation": 0,
+      "stage": 1
+    },
+    "memo_bounds_provenance.json": {
+      "archive": "validation_history/before_memo_bounds",
+      "change_class": "optional memoization policy only; exact rules and budgets unchanged",
+      "final_search_sha256": "0da00b1fe93254773141e50e6cb0820bfc3a8af287cb224747427f964e8bb60a",
+      "forced_small_cap_control": {
+        "SAT_cap": 3,
+        "SAT_queries": 80,
+        "independent_states": 10,
+        "model_cap": 2,
+        "passed": true,
+        "projection_cap": 2,
+        "projections": 15,
+        "retained_witness_lists_not_mutated": true
+      },
+      "limitation": "Does not bound native solver or query-local IHS memory; may change timing, witnesses and undecided outcomes.",
+      "limits": {
+        "SAT_cache_entries": 20000,
+        "projection_cache_entries": 1024,
+        "retained_models": 512
+      },
+      "search_sha256": "2e7fdebbf9ba0003306d5b9161815a0816289e58106bea162b4e24665e193ca8",
+      "source_note": "Caps and cache controls were tested before the independent equivalent presence-encoding change; that exact source is archived under before_presence_encoding. Final finite controls cover the composed implementation."
+    },
+    "presence_encoding_provenance.json": {
+      "cardinality_limits": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "domains": 4,
+      "effect": "Replace both exponential support-blocker expansions by logically equivalent presence clauses; signed-unit cardinality/model extraction unchanged.",
+      "equivalence_checks": 1620,
+      "excluded_support_fixtures": [
+        [],
+        [
+          [
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      ],
+      "passed": true,
+      "scope": "SAT-query auxiliary variables only; input pattern, original-state witnesses and LRAT certificates unchanged.",
+      "search_sha256": "0da00b1fe93254773141e50e6cb0820bfc3a8af287cb224747427f964e8bb60a"
+    },
+    "provenance.json": {
+      "compile": "cc -O2 -o CODEX/lrat_check CODEX/lrat_check.c",
+      "inputs": {
+        "docs/tooling/shared-runner.md": {
+          "read_only": true,
+          "sha256": "a43591b41a5437b328483710a31db5c3e8f239b3d7779c8884e72a9d6ed9b826"
+        },
+        "input_addr.py": {
+          "exact_copy": true,
+          "sha256": "39b28de4c395a7afe38a5a47887842ca895ffed33aa8de25531ef8c868db8288",
+          "source": "experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/addr.py"
+        },
+        "input_certify.py": {
+          "exact_copy": true,
+          "sha256": "fab488c3028e31596e64752e6e11baf223f105a6893c2da0afb63ea2db21ff18",
+          "source": "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/certify.py"
+        },
+        "lrat_check.c": {
+          "exact_copy": true,
+          "sha256": "b9d4163f12fb1cd5c968664d8e499f745710d5833129075a86943abe10a78c13",
+          "source": "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/lrat_check.c"
+        },
+        "research/LEVEL-REACH-20261114-001/codex_spec.md": {
+          "read_only": true,
+          "sha256": "5e3f7dc95decd16d04841686051732498e0f754309cbc5c98fb11aee3f2a3cbe"
+        },
+        "research/LEVEL-REACH-20261114-001/design.md": {
+          "read_only": true,
+          "sha256": "713b49bc1a32911afbe126f60d5bbf3ca9ada402995a7e98ee58f80ba0460257"
+        },
+        "scripts/longrun.py": {
+          "read_only": true,
+          "sha256": "238812d88f3c91aa4e7dd0125a4be70794ec52aca3c8f2e651833179335b18ec"
+        }
+      },
+      "numpy": "2.3.2",
+      "python": "3.13.3",
+      "python_sat": "1.9.dev15",
+      "scope_id": "LEVEL-REACH-20261114-001A",
+      "scope_kind": "ticket",
+      "stage": 1,
+      "task_writable_root": "experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex"
+    }
+  },
+  "record_statuses": {
+    "ok": 1288
+  },
+  "refutation_metadata_flags": {
+    "checked=True": 36213,
+    "deleted_after_check=False": 36213,
+    "unanchored=True": 36213
+  },
+  "refutation_metadata_occurrences": 36213,
+  "registered_raw_hash_matches": true,
+  "unique_CNF_proof_hash_pairs": 12644
+}

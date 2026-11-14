@@ -1,0 +1,79 @@
+{
+  "exact_supplied_field_checks": {
+    "L_by_s_W": true,
+    "Q5_bounded": true,
+    "Q5_exponential_W": true,
+    "Q5_polynomial": true,
+    "cases": true,
+    "descriptions": true,
+    "outcomes_by_class_W": true,
+    "outcomes_by_description": true,
+    "outcomes_by_weight_W": true
+  },
+  "research_and_artifact_summary_equal": true,
+  "substantive": [
+    {
+      "evidence": "q3_membership.json",
+      "id": "Q3-frozen-literal",
+      "independent": "26 anywhere bond representatives have positive overshoot; all have equal-size in-target alternatives",
+      "recommendation": "Block",
+      "supplied": "count_below=0; every least bond found within target; Q3 holds"
+    },
+    {
+      "evidence": "independent_summary.json",
+      "id": "uncertainty-bands",
+      "independent": "126 ruler-compatible;91 direct-compatible;0 can change to frozen disconnected/no-join label",
+      "recommendation": "Narrowing",
+      "supplied": "all 150 undecided W weight added to each upper bound"
+    },
+    {
+      "evidence": "independent_summary.json",
+      "id": "Q1-Q2-interpretation",
+      "independent": "not falsified by asymmetric frozen failure criteria; neither prediction established by its full uncertainty band",
+      "recommendation": "Narrowing",
+      "supplied": "predictions held"
+    },
+    {
+      "evidence": "independent_summary.json",
+      "id": "Q1-Q2-denominator",
+      "independent": "730 have numeric bonds every s;150 undecided and13 >10 are included in893",
+      "recommendation": "Narrowing",
+      "supplied": "893 with a bond at every s"
+    },
+    {
+      "evidence": "q4_clusters.json",
+      "id": "Q4-reproducibility",
+      "independent": "99/40 reproduced under state relabeling plus binary-letter conjugation; unstated bootstrap details prevent exact interval reproduction; seven automata cross activity groups; joint resampling sensitivity retained",
+      "recommendation": "Narrowing",
+      "supplied": "99/40 automaton classes;CI[-0.05626,0.40320]"
+    },
+    {
+      "evidence": "independent_summary.json",
+      "id": "Q5-intervals",
+      "independent": "exponential_W intervals were also requested; ordinary Wilson intervals ignore repeated-automaton dependence and do not repair censoring",
+      "recommendation": "Narrowing",
+      "supplied": "intervals for E classes only"
+    },
+    {
+      "evidence": "monotonicity.json",
+      "id": "G-mono-completion",
+      "independent": "49 unique successful keys;108 equal numeric comparisons;one selected key has four memory failures",
+      "recommendation": "Block",
+      "supplied": "50-key gate required;49/50 completed disclosed"
+    },
+    {
+      "evidence": "classification_consistency.json",
+      "id": "slim-histograms",
+      "independent": "2530 null slim fields discard full histogram values; no primary classification mismatch",
+      "recommendation": "Narrowing",
+      "supplied": "slim per_target_hist field"
+    },
+    {
+      "evidence": "provenance_audit.json",
+      "id": "provenance-only",
+      "independent": "admitted metadata is internally consistent for300-second budgets and retention; semantic equivalence and pre-freeze chronology not independently established by this worker",
+      "recommendation": "Not a block",
+      "supplied": "disclosed implementation/budget/population/retention changes"
+    }
+  ]
+}

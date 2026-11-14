@@ -1,0 +1,118 @@
+{
+  "nonmonotone_under_constraint_addition": {
+    "nvars": 6,
+    "A": [
+      0
+    ],
+    "B": [
+      1
+    ],
+    "initial": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "added": [
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "before": {
+      "L": 3,
+      "states": 48,
+      "all_bonds": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "crossing_bonds": [
+        [
+          0,
+          1,
+          2
+        ]
+      ]
+    },
+    "after": {
+      "L": "none",
+      "states": 24,
+      "all_bonds": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "crossing_bonds": []
+    }
+  },
+  "connected_adjacent_level_chain_no_crossing_bond": {
+    "nvars": 4,
+    "levels": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "knots": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "result": {
+      "L": "none",
+      "states": 10,
+      "all_bonds": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "crossing_bonds": []
+    }
+  }
+}

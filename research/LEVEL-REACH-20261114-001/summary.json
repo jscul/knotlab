@@ -1,0 +1,197 @@
+{
+ "cases": {
+  "ok": 1288
+ },
+ "descriptions": 1288,
+ "outcomes_by_description": {
+  "no join": 183,
+  "no bond": 188,
+  "chained": 457,
+  "direct": 100,
+  "other": 73,
+  "dead": 23,
+  "undecided": 264
+ },
+ "outcomes_by_weight_W": {
+  "no join": 234,
+  "no bond": 285,
+  "chained": 605,
+  "direct": 71,
+  "other": 67,
+  "dead": 11,
+  "undecided": 150
+ },
+ "Q0": {
+  "alive_draws": 1412,
+  "none_lo": 0.36756373937677056,
+  "none_hi": 0.4737960339943343,
+  "chained_lo": 0.42847025495750707,
+  "chained_hi": 0.5347025495750708,
+  "direct_lo": 0.05028328611898017,
+  "direct_hi": 0.1565155807365439,
+  "other": 0.04745042492917847,
+  "undecided": 0.10623229461756374,
+  "verdict": "holds on the point reading; open with undecided read against it"
+ },
+ "Q1": {
+  "set_weight": 893,
+  "ruler_lo": 0.6774916013437849,
+  "ruler_hi": 0.845464725643897,
+  "verdict": "holds on the upper bound only"
+ },
+ "Q2": {
+  "direct_lo": 0.07950727883538634,
+  "direct_hi": 0.24748040313549832,
+  "verdict": "holds on the lower bound only"
+ },
+ "Q3": {
+  "found_bonds": 2894,
+  "needing_member_below": [],
+  "count_below": 0,
+  "verdict": "holds"
+ },
+ "Q4": {
+  "exponential_nonruler": 0.2733333333333333,
+  "finitary_nonruler": 0.045936395759717315,
+  "delta": 0.227396937573616,
+  "ci95": [
+   -0.05626146188105843,
+   0.40319611780455156
+  ],
+  "clusters": [
+   99,
+   40
+  ],
+  "verdict": "fails"
+ },
+ "Q5": {
+  "bounded": {
+   "descriptions": 165,
+   "outcomes": {
+    "direct": 29,
+    "undecided": 88,
+    "no bond": 10,
+    "other": 6,
+    "no join": 14,
+    "chained": 10,
+    "dead": 8
+   },
+   "ruler": 0.2222222222222222,
+   "ruler_ci": [
+    0.12544551866005632,
+    0.3626957379736329
+   ],
+   "direct": 0.6444444444444445,
+   "direct_ci": [
+    0.49835546011952203,
+    0.7678110864309596
+   ]
+  },
+  "polynomial": {
+   "descriptions": 34,
+   "outcomes": {
+    "no bond": 2,
+    "dead": 4,
+    "undecided": 26,
+    "chained": 1,
+    "no join": 1
+   },
+   "ruler": 1.0,
+   "ruler_ci": [
+    0.20654329147389294,
+    1.0
+   ],
+   "direct": 0.0,
+   "direct_ci": [
+    0.0,
+    0.7934567085261071
+   ]
+  },
+  "exponential_W": {
+   "weight": 738,
+   "outcomes": {
+    "chained": 327,
+    "no join": 122,
+    "direct": 57,
+    "no bond": 35,
+    "other": 66,
+    "dead": 10,
+    "undecided": 121
+   },
+   "ruler": 0.7266666666666667,
+   "direct": 0.12666666666666668
+  }
+ },
+ "outcomes_by_class_W": {
+  "bounded": {
+   "no join": 11,
+   "undecided": 24,
+   "chained": 5,
+   "direct": 2,
+   "no bond": 1
+  },
+  "finitary": {
+   "no bond": 249,
+   "no join": 97,
+   "chained": 270,
+   "direct": 12,
+   "undecided": 1,
+   "other": 1
+  },
+  "exponential": {
+   "chained": 327,
+   "no join": 122,
+   "direct": 57,
+   "no bond": 35,
+   "other": 66,
+   "dead": 10,
+   "undecided": 121
+  },
+  "polynomial": {
+   "undecided": 4,
+   "no join": 4,
+   "chained": 3,
+   "dead": 1
+  }
+ },
+ "L_by_s_W": {
+  "1": {
+   "none": 518,
+   "3": 863,
+   "2": 27,
+   "None": 11,
+   "> 10": 3,
+   "undecided": 1
+  },
+  "2": {
+   "none": 519,
+   "4": 658,
+   "2": 27,
+   "3": 118,
+   "None": 11,
+   "undecided": 77,
+   "> 10": 13
+  },
+  "3": {
+   "none": 519,
+   "5": 609,
+   "2": 27,
+   "4": 60,
+   "None": 11,
+   "3": 49,
+   "undecided": 135,
+   "> 10": 13
+  },
+  "4": {
+   "none": 519,
+   "6": 605,
+   "2": 27,
+   "4": 49,
+   "None": 11,
+   "undecided": 150,
+   "3": 44,
+   "> 10": 13,
+   "5": 5
+  }
+ }
+}

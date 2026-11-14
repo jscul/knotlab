@@ -1,0 +1,84 @@
+{
+  "status": "passed_already_executed",
+  "retention_status": "script_retained_without_rerunning_checks",
+  "validation_script": "validate_compiled.py",
+  "rerun_command": ".venv/bin/python -B experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/validate_compiled.py",
+  "compiled_search_sha256": null,
+  "hash_status": "The main task is adding an optional deadline callback after these executions and will capture the final source hash in its aggregate gates. The retained script computes the source SHA-256 when run.",
+  "source_scope": "The recorded checks executed against CompiledPattern before the optional deadline callback was added; all calls used the default constructor arguments except the stated limit fallbacks.",
+  "smoke_and_fallbacks": {
+    "passed": true,
+    "patterns": 3,
+    "fixtures": [
+      {"nvars": 0, "knots": []},
+      {"nvars": 2, "knots": []},
+      {"nvars": 3, "knots": [[0, 1, 2]]}
+    ],
+    "ternary_assignments": 37,
+    "compiled_root_SAT_checks": 73,
+    "fallback_tests": {
+      "passed": 2,
+      "width": {
+        "nvars": 5,
+        "knots": "all 10 triples",
+        "width_limit": 3,
+        "observed_width": 4,
+        "available": false,
+        "clauses_empty": true,
+        "root": null
+      },
+      "gate": {
+        "nvars": 3,
+        "knots": [[0, 1, 2]],
+        "gate_limit": 1,
+        "available": false,
+        "clauses_empty": true,
+        "root": null
+      }
+    }
+  },
+  "exhaustive": {
+    "passed": true,
+    "fixture_rule": "Every subset of the distinct NAE triples on n variables, for every n=0..5; every ternary partial assignment for every such pattern",
+    "all_patterns_through_n5": 1045,
+    "all_ternary_partials": 250195,
+    "compiled_root_SAT_checks": 500146,
+    "presence_checks": 1215,
+    "presence_fixture": "Empty pattern on 5 variables, every ternary assignment, all 5 presence indicators",
+    "max_width": 4,
+    "max_gates": 35,
+    "wall_seconds": 0.92657
+  },
+  "random_n15": {
+    "passed": true,
+    "seed": "LEVEL-REACH-compiled-n15-20261114",
+    "fixture_rule": "100 patterns: sorted random.sample of all 15-variable triples with count random.randrange(25); for every available pattern, 100 random ternary assignments and 10 additional random Boolean-selector assignments",
+    "random_n15_patterns": 100,
+    "available": 95,
+    "width_fallbacks": 5,
+    "fallback_artifacts_checked_empty": true,
+    "ternary_assignments_vs_original_SAT": 9500,
+    "additional_boolean_selector_assignments": 950,
+    "max_width": 7,
+    "max_gate_count": 413,
+    "max_table_entries": 981,
+    "wall_seconds": 0.42887
+  },
+  "first_pilot_compile_assay": {
+    "classification": "non-evidence compilation assay",
+    "first_P_key_N7": "55c81cc92df9a4062838ff0a20630fed4bff54f10071a8b7d0f15b7784936bcb",
+    "fixture_rule": "population.build_population('P')['keys'][0]['key']; N=7",
+    "nvars": 255,
+    "knots": 126,
+    "available": true,
+    "width": 2,
+    "initial_table_entries": 1518,
+    "elimination_table_entries": 726,
+    "table_entries": 2244,
+    "gate_count": 1213,
+    "clause_count": 4031,
+    "max_bucket_factors": 4,
+    "wall_seconds": 0.005896
+  },
+  "limitations": "Bounded implementation checks; no general theorem or general efficient SAT method is claimed. Retention added no tests and started no validation process."
+}

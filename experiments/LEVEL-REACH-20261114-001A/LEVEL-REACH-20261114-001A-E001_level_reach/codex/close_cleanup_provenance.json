@@ -1,0 +1,18 @@
+{
+  "archive": "validation_history/before_close_cleanup",
+  "archived_sources_and_gates": {
+    "g_brute.json": "9f702fd5235b6b6210fc77581ef4ffdca16577d431398fe375875caee8884253",
+    "g_pattern.json": "dd09162e9becdf2b346bc90f44c89bd07830ed189e24bcd6bb8dc387c0deaf48",
+    "g_tree.json": "da0951fe44209e81a76fc3a93e346c26304a563e12da122991cf21fdae890f69",
+    "search.py": "588febd9aac683d6eb21c451493926fff279ab8290b175503e331a66c2e64865"
+  },
+  "controls": {
+    "compiled_disabled_closed_engine_immediately_reclaimed": true,
+    "compiled_enabled_closed_engine_immediately_reclaimed": true,
+    "final_finite_controls": "final_controls/results.jsonl",
+    "scope": "cleanup only after computation; no cache policy, search, certificate, data or budget change"
+  },
+  "final_search_sha256": "3de432aff8081fb9fb5d2d584836993240f20b7442a4531cb4cb84e17c783b22",
+  "reason": "Confirmed closed-engine cycles through Timer.function and CompiledPattern._check retain caches until cyclic GC. Break only these lifecycle references; no search or cache policy changes.",
+  "retained_evidence": "47 successful original G-mono cases plus the successful first retry; all original and intermediate memory failures retained."
+}

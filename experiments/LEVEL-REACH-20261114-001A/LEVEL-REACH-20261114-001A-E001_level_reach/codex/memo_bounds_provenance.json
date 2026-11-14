@@ -1,0 +1,23 @@
+{
+  "archive": "validation_history/before_memo_bounds",
+  "change_class": "optional memoization policy only; exact rules and budgets unchanged",
+  "final_search_sha256": "0da00b1fe93254773141e50e6cb0820bfc3a8af287cb224747427f964e8bb60a",
+  "forced_small_cap_control": {
+    "SAT_cap": 3,
+    "SAT_queries": 80,
+    "independent_states": 10,
+    "model_cap": 2,
+    "passed": true,
+    "projection_cap": 2,
+    "projections": 15,
+    "retained_witness_lists_not_mutated": true
+  },
+  "limitation": "Does not bound native solver or query-local IHS memory; may change timing, witnesses and undecided outcomes.",
+  "limits": {
+    "SAT_cache_entries": 20000,
+    "projection_cache_entries": 1024,
+    "retained_models": 512
+  },
+  "search_sha256": "2e7fdebbf9ba0003306d5b9161815a0816289e58106bea162b4e24665e193ca8",
+  "source_note": "Caps and cache controls were tested before the independent equivalent presence-encoding change; that exact source is archived under before_presence_encoding. Final finite controls cover the composed implementation."
+}

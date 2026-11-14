@@ -1,0 +1,27 @@
+{
+  "coexistence": "Two original workers at 2G each plus one retry at 3G; at most 7G worker memory and two small runner parents, under about 8G total. Smoke starts only after both gate runners finish.",
+  "execution_sequence": "Retry one memory-limited case concurrently with two remaining original G-mono workers; then required 3-worker smoke.",
+  "population_validation": {
+    "E_R_list_seed_gamma_and_placement_replays": 2320,
+    "P_equal_to_predecessor_manifest": true,
+    "P_keys": 998,
+    "R_keys": 4399
+  },
+  "reason": "Original 2G G-mono process-group cap exceeded at 2209.947s; scientific computation unchanged, retry cap 3G.",
+  "resumption": "Preserve 31 completed G-mono cases; population.py E_R-only change leaves all P keys identical. No search, pattern, certificate, compiler or job module change.",
+  "retry_case": "b7af5bcb77f74404b9e42ebf5b166c8a405073106163c3a2e171a0e416846dd4",
+  "runtime_sha256": {
+    "certificates.py": "c1b8e45af6a22c3f43b7ef181ab4149426e32a6c84973e982ce5a0e8ab59989b",
+    "compiled_search.py": "f42c318a1a599d787375cbe9b1ec41a7fb8abcc65d360fe41177d7f2780fcc9b",
+    "input_addr.py": "39b28de4c395a7afe38a5a47887842ca895ffed33aa8de25531ef8c868db8288",
+    "input_certify.py": "fab488c3028e31596e64752e6e11baf223f105a6893c2da0afb63ea2db21ff18",
+    "job.py": "6a498de88fb7645eed43274398117a33bfa759db5bd2fd38032f6ed3a541479f",
+    "lrat_check": "a48fb080658f737270b276e750b7c9ab61c93895a04e2736a6a35dfb1ff60f0a",
+    "lrat_check.c": "b9d4163f12fb1cd5c968664d8e499f745710d5833129075a86943abe10a78c13",
+    "mono_job.py": "fe776c9f5262c81ff377839347d8794411b59d4b48cbc503b53dd535ada16bd0",
+    "mono_retry_job.py": "5e1c95e7f29ae33beb96ba88d2704b815610ddfd6e00170c79b21051050901d1",
+    "pattern.py": "b7938bbe556a6a217226270888fb7a51223d3dbf81ef7a129d3f4c3aacc97426",
+    "population.py": "9e770e36c0f41e0dd0071cc5d5765e6da491ae604d075b8a09f9494176c9b713",
+    "search.py": "588febd9aac683d6eb21c451493926fff279ab8290b175503e331a66c2e64865"
+  }
+}

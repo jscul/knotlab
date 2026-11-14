@@ -1,0 +1,32 @@
+{
+  "case_mem": "3G",
+  "change": "search.close clears two callback cycles after cancel/join; no search rule, cache policy, certificate or budget change. E_R clarification remains unchanged.",
+  "execution_sequence": "After confirmed callback-cycle cleanup, retry only the4G-memory-failed case. Existing additional3G worker plus this3G worker, and512M finite-control worker while present, stay under~8G total.",
+  "population_validation": {
+    "E_R_list_seed_gamma_and_placement_replays": 2320,
+    "P_equal_to_predecessor_manifest": true,
+    "P_keys": 998,
+    "R_keys": 4399
+  },
+  "previous_attempt": "validation_history/before_close_cleanup/mono_remaining_retry_failed_4G.jsonl",
+  "previous_attempt_sha256": "9b95fff6ba3f46c6d5d4e0d2575e0005f9cafa747f114c7a465a9b910148d7de",
+  "resumption": "Retain completed G-mono mathematical results with their archived source. Final search.py changes only close(): cancel/join and detach timer/compiler callbacks after use, permitting prompt engine reclamation. Search rules, cache policy, certificates and budgets are unchanged.",
+  "retry_cases": [
+    "0758783d31dde76fe9f2f1e3f17d2f8c077710f5fdd6a8d478363a186001d00b"
+  ],
+  "runtime_sha256": {
+    "certificates.py": "c1b8e45af6a22c3f43b7ef181ab4149426e32a6c84973e982ce5a0e8ab59989b",
+    "compiled_search.py": "f42c318a1a599d787375cbe9b1ec41a7fb8abcc65d360fe41177d7f2780fcc9b",
+    "input_addr.py": "39b28de4c395a7afe38a5a47887842ca895ffed33aa8de25531ef8c868db8288",
+    "input_certify.py": "fab488c3028e31596e64752e6e11baf223f105a6893c2da0afb63ea2db21ff18",
+    "job.py": "6a498de88fb7645eed43274398117a33bfa759db5bd2fd38032f6ed3a541479f",
+    "lrat_check": "a48fb080658f737270b276e750b7c9ab61c93895a04e2736a6a35dfb1ff60f0a",
+    "lrat_check.c": "b9d4163f12fb1cd5c968664d8e499f745710d5833129075a86943abe10a78c13",
+    "mono_job.py": "fe776c9f5262c81ff377839347d8794411b59d4b48cbc503b53dd535ada16bd0",
+    "mono_remaining_retry_job.py": "6d3298eb060914fe58805ee0ffbef794a68778f51f20d7334a0dcf0ce7e71f5b",
+    "mono_retry_job.py": "5e1c95e7f29ae33beb96ba88d2704b815610ddfd6e00170c79b21051050901d1",
+    "pattern.py": "b7938bbe556a6a217226270888fb7a51223d3dbf81ef7a129d3f4c3aacc97426",
+    "population.py": "9e770e36c0f41e0dd0071cc5d5765e6da491ae604d075b8a09f9494176c9b713",
+    "search.py": "3de432aff8081fb9fb5d2d584836993240f20b7442a4531cb4cb84e17c783b22"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "inputs": {
+    "input_addr.py": {
+      "source": "experiments/ADDR-KNOTS-20261113-001A/ADDR-KNOTS-20261113-001A-E001_addressed_census/codex/addr.py",
+      "sha256": "39b28de4c395a7afe38a5a47887842ca895ffed33aa8de25531ef8c868db8288",
+      "exact_copy": true
+    },
+    "input_certify.py": {
+      "source": "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/certify.py",
+      "sha256": "fab488c3028e31596e64752e6e11baf223f105a6893c2da0afb63ea2db21ff18",
+      "exact_copy": true
+    },
+    "lrat_check.c": {
+      "source": "experiments/LEVEL-RETURN-20261113-001A/LEVEL-RETURN-20261113-001A-E001_certified_levels/lrat_check.c",
+      "sha256": "b9d4163f12fb1cd5c968664d8e499f745710d5833129075a86943abe10a78c13",
+      "exact_copy": true
+    },
+    "research/LEVEL-REACH-20261114-001/design.md": {
+      "sha256": "713b49bc1a32911afbe126f60d5bbf3ca9ada402995a7e98ee58f80ba0460257",
+      "read_only": true
+    },
+    "research/LEVEL-REACH-20261114-001/codex_spec.md": {
+      "sha256": "5e3f7dc95decd16d04841686051732498e0f754309cbc5c98fb11aee3f2a3cbe",
+      "read_only": true
+    },
+    "docs/tooling/shared-runner.md": {
+      "sha256": "a43591b41a5437b328483710a31db5c3e8f239b3d7779c8884e72a9d6ed9b826",
+      "read_only": true
+    },
+    "scripts/longrun.py": {
+      "sha256": "238812d88f3c91aa4e7dd0125a4be70794ec52aca3c8f2e651833179335b18ec",
+      "read_only": true
+    }
+  },
+  "python": "3.13.3",
+  "numpy": "2.3.2",
+  "python_sat": "1.9.dev15",
+  "compile": "cc -O2 -o CODEX/lrat_check CODEX/lrat_check.c",
+  "task_writable_root": "experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex",
+  "scope_kind": "ticket",
+  "scope_id": "LEVEL-REACH-20261114-001A",
+  "stage": 1
+}

@@ -1,0 +1,684 @@
+{
+  "mode": "random",
+  "seed": 20261116,
+  "seconds": 139.7556,
+  "counts": {
+    "generated_unique": 50000,
+    "outside_census": 49996,
+    "alive": 46117,
+    "A_certified": 7447,
+    "N_cyclic": 26135,
+    "F_peeling_used": 6343,
+    "repaired_A_certified": 7017,
+    "exact_tested": 46117,
+    "R_i": 63685,
+    "repaired_A_bound_failures": 0,
+    "repaired_A_false_certificates": 0,
+    "A_certified_exact_certified": 7444,
+    "repaired_A_certified_exact_certified": 7017,
+    "N_cyclic_exact_certified": 0,
+    "A_certified_exact_non-forgetting": 3,
+    "repaired_A_certified_exact_non-forgetting": 0,
+    "N_cyclic_exact_non-forgetting": 26135,
+    "dead_limit": 3879
+  },
+  "by_generator": {
+    "random_two_defs_helper_ports3to6_seed20261117": {
+      "outside_census": 49996,
+      "alive": 46117,
+      "A_certified": 7447,
+      "N_cyclic": 26135,
+      "exact_certified": 15993,
+      "exact_non-forgetting": 30124,
+      "dead_limit": 3879
+    }
+  },
+  "exact_verdicts": {
+    "certified": 15993,
+    "non-forgetting": 30124
+  },
+  "skipped": {
+    "in_census_exact_key": 4
+  },
+  "counterexamples": [
+    {
+      "kind": "random_two_defs_helper_ports3to6_seed20261117",
+      "description_sha256": "673e267b11cc9d0a390a9bd8562a412c0e5da496057ca30f540e2999c0f2e01e",
+      "defs": [
+        [
+          6,
+          3,
+          [
+            [
+              "K",
+              [
+                7,
+                6,
+                4
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          4,
+          [
+            [
+              0,
+              [
+                5,
+                3,
+                2,
+                0,
+                6,
+                4
+              ]
+            ],
+            [
+              "K",
+              [
+                4,
+                1,
+                0
+              ]
+            ],
+            [
+              "K",
+              [
+                3,
+                1,
+                0
+              ]
+            ],
+            [
+              "SELF",
+              [
+                2,
+                3,
+                5
+              ]
+            ],
+            [
+              0,
+              [
+                6,
+                3,
+                2,
+                1,
+                0,
+                5
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                0,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                6,
+                4,
+                0
+              ]
+            ]
+          ]
+        ]
+      ],
+      "S": 1,
+      "G": {
+        "1": "0x7e"
+      },
+      "size": 13,
+      "calls": [
+        [
+          "K",
+          [
+            8,
+            7,
+            6
+          ]
+        ],
+        [
+          "K",
+          [
+            4,
+            1,
+            0
+          ]
+        ],
+        [
+          "K",
+          [
+            3,
+            1,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        [
+          "K",
+          [
+            11,
+            10,
+            0
+          ]
+        ],
+        [
+          "K",
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        [
+          "K",
+          [
+            6,
+            4,
+            0
+          ]
+        ]
+      ],
+      "A": {
+        "certified": true,
+        "bound": 3,
+        "live_states": 3,
+        "cycle": null,
+        "steps": 3,
+        "peelings": 15,
+        "F_peelings": 3
+      },
+      "repaired_A": {
+        "certified": false,
+        "bound": null,
+        "live_states": 2,
+        "cycle": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "steps": 2,
+        "peelings": 8,
+        "F_peelings": 0
+      },
+      "N": {
+        "cyclic": false,
+        "arcs": [
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "R_i": [
+        "0xaaaa8811555500"
+      ],
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0,
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xffff1188ffff00",
+          "cycle_products_before": [
+            "0xffff1188ffff00",
+            "0xffff8811ffff00"
+          ],
+          "cycle_products_after": [
+            "0xffff8811ffff00",
+            "0xffff1188ffff00"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 4,
+        "exhausted_nonrectangular_automaton": false
+      },
+      "A_false_certificate": true,
+      "repaired_A_false_certificate": false,
+      "A_bound_failure": false,
+      "repaired_A_bound_failure": false,
+      "N_violation": false
+    },
+    {
+      "kind": "random_two_defs_helper_ports3to6_seed20261117",
+      "description_sha256": "7fc23a29a13dbb5b9cda134422c161a6078951b675501d8cc7adff199ba864cc",
+      "defs": [
+        [
+          3,
+          3,
+          [
+            [
+              "K",
+              [
+                5,
+                3,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                1,
+                5
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          3,
+          [
+            [
+              "K",
+              [
+                1,
+                0,
+                2
+              ]
+            ],
+            [
+              0,
+              [
+                4,
+                1,
+                5
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                5
+              ]
+            ],
+            [
+              "K",
+              [
+                2,
+                0,
+                5
+              ]
+            ],
+            [
+              0,
+              [
+                5,
+                2,
+                0
+              ]
+            ],
+            [
+              0,
+              [
+                4,
+                3,
+                0
+              ]
+            ]
+          ]
+        ]
+      ],
+      "S": 1,
+      "G": {
+        "1": "0x7e"
+      },
+      "size": 15,
+      "calls": [
+        [
+          "K",
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        [
+          "K",
+          [
+            8,
+            6,
+            5
+          ]
+        ],
+        [
+          "K",
+          [
+            4,
+            1,
+            8
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            3,
+            5
+          ]
+        ],
+        [
+          "K",
+          [
+            2,
+            0,
+            5
+          ]
+        ],
+        [
+          "K",
+          [
+            11,
+            9,
+            0
+          ]
+        ],
+        [
+          "K",
+          [
+            5,
+            2,
+            11
+          ]
+        ],
+        [
+          "K",
+          [
+            14,
+            12,
+            0
+          ]
+        ],
+        [
+          "K",
+          [
+            4,
+            3,
+            14
+          ]
+        ]
+      ],
+      "A": {
+        "certified": true,
+        "bound": 3,
+        "live_states": 3,
+        "cycle": null,
+        "steps": 3,
+        "peelings": 21,
+        "F_peelings": 3
+      },
+      "repaired_A": {
+        "certified": false,
+        "bound": null,
+        "live_states": 2,
+        "cycle": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "steps": 2,
+        "peelings": 12,
+        "F_peelings": 0
+      },
+      "N": {
+        "cyclic": false,
+        "arcs": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "R_i": [
+        "0xaa0555aaa05500"
+      ],
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0,
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xffa0ffff05ff00",
+          "cycle_products_before": [
+            "0xffa0ffff05ff00",
+            "0xff05ffffa0ff00"
+          ],
+          "cycle_products_after": [
+            "0xff05ffffa0ff00",
+            "0xffa0ffff05ff00"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 4,
+        "exhausted_nonrectangular_automaton": false
+      },
+      "A_false_certificate": true,
+      "repaired_A_false_certificate": false,
+      "A_bound_failure": false,
+      "repaired_A_bound_failure": false,
+      "N_violation": false
+    },
+    {
+      "kind": "random_two_defs_helper_ports3to6_seed20261117",
+      "description_sha256": "c23ba5652e4da0df587aa7f3998e105867bd82e54278725394bc1f26de59d4a5",
+      "defs": [
+        [
+          6,
+          0,
+          [
+            [
+              "K",
+              [
+                2,
+                5,
+                3
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            [
+              "K",
+              [
+                1,
+                4,
+                2
+              ]
+            ]
+          ]
+        ],
+        [
+          3,
+          4,
+          [
+            [
+              "SELF",
+              [
+                5,
+                4,
+                1
+              ]
+            ],
+            [
+              0,
+              [
+                5,
+                0,
+                2,
+                4,
+                1,
+                3
+              ]
+            ]
+          ]
+        ]
+      ],
+      "S": 1,
+      "G": {
+        "1": "0x7e"
+      },
+      "size": 7,
+      "calls": [
+        [
+          1,
+          [
+            5,
+            4,
+            1
+          ]
+        ],
+        [
+          "K",
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          "K",
+          [
+            5,
+            2,
+            0
+          ]
+        ],
+        [
+          "K",
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      ],
+      "A": {
+        "certified": true,
+        "bound": 3,
+        "live_states": 3,
+        "cycle": null,
+        "steps": 3,
+        "peelings": 6,
+        "F_peelings": 3
+      },
+      "repaired_A": {
+        "certified": false,
+        "bound": null,
+        "live_states": 2,
+        "cycle": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "steps": 2,
+        "peelings": 2,
+        "F_peelings": 0
+      },
+      "N": {
+        "cyclic": false,
+        "arcs": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "R_i": [
+        "0xf0050ff0a00f00"
+      ],
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0,
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xffa0ffff05ff00",
+          "cycle_products_before": [
+            "0xffa0ffff05ff00",
+            "0xff05ffffa0ff00"
+          ],
+          "cycle_products_after": [
+            "0xff05ffffa0ff00",
+            "0xffa0ffff05ff00"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 4,
+        "exhausted_nonrectangular_automaton": false
+      },
+      "A_false_certificate": true,
+      "repaired_A_false_certificate": false,
+      "A_bound_failure": false,
+      "repaired_A_bound_failure": false,
+      "N_violation": false
+    }
+  ],
+  "counterexample_count": 3,
+  "bound_failure_count": 266,
+  "N_violation_count": 0,
+  "repaired_A_counterexample_count": 0,
+  "repaired_A_bound_failure_count": 0,
+  "evidence_jsonl": "wide_search.jsonl",
+  "max_rss_kib": 79516,
+  "caveat": "Exact graph resource caps are unknown; dead-limit families excluded from Rule N theorem domain."
+}

@@ -1,0 +1,182 @@
+{
+  "mode": "all",
+  "seed": 20261114,
+  "seconds": 2.7422,
+  "counts": {
+    "generated_unique": 3907,
+    "outside_census": 3707,
+    "alive": 3704,
+    "A_certified": 45,
+    "N_cyclic": 3112,
+    "F_peeling_used": 196,
+    "repaired_A_certified": 17,
+    "exact_tested": 3704,
+    "R_i": 3704,
+    "dead_limit": 3
+  },
+  "by_generator": {
+    "exhaustive_1def_l0to2_K0to3": {
+      "outside_census": 3707,
+      "alive": 3704,
+      "A_certified": 45,
+      "N_cyclic": 3112,
+      "exact_non-forgetting": 3416,
+      "exact_certified": 288,
+      "dead_limit": 3
+    }
+  },
+  "exact_verdicts": {
+    "non-forgetting": 3416,
+    "certified": 288
+  },
+  "skipped": {
+    "in_census_exact_key": 200
+  },
+  "counterexamples": [
+    {
+      "kind": "exhaustive_1def_l0to2_K0to3",
+      "description_sha256": "a00931f302b612bebf21f81039a30d58302b6b23943b5eda192e289c1bc387e6",
+      "defs": [
+        [
+          3,
+          2,
+          [
+            [
+              "K",
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            [
+              "K",
+              [
+                0,
+                2,
+                4
+              ]
+            ],
+            [
+              "SELF",
+              [
+                1,
+                3,
+                4
+              ]
+            ]
+          ]
+        ]
+      ],
+      "S": 0,
+      "G": {
+        "0": "0x7e"
+      },
+      "size": 5,
+      "calls": [
+        [
+          "K",
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          "K",
+          [
+            0,
+            2,
+            4
+          ]
+        ],
+        [
+          0,
+          [
+            1,
+            3,
+            4
+          ]
+        ]
+      ],
+      "A": {
+        "certified": true,
+        "bound": 3,
+        "live_states": 3,
+        "cycle": null,
+        "steps": 3,
+        "peelings": 3,
+        "F_peelings": 3
+      },
+      "repaired_A": {
+        "certified": false,
+        "bound": null,
+        "live_states": 2,
+        "cycle": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "steps": 2,
+        "peelings": 0,
+        "F_peelings": 0
+      },
+      "N": {
+        "cyclic": false,
+        "arcs": [
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "R_i": [
+        "0xaa0555aaa05500"
+      ],
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0,
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xffa0ffff05ff00",
+          "cycle_products_before": [
+            "0xffa0ffff05ff00",
+            "0xff05ffffa0ff00"
+          ],
+          "cycle_products_after": [
+            "0xff05ffffa0ff00",
+            "0xffa0ffff05ff00"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 4,
+        "exhausted_nonrectangular_automaton": false
+      },
+      "A_false_certificate": true,
+      "repaired_A_false_certificate": false,
+      "A_bound_failure": false,
+      "N_violation": false
+    }
+  ],
+  "counterexample_count": 1,
+  "bound_failure_count": 21,
+  "N_violation_count": 0,
+  "evidence_jsonl": "first_search.jsonl",
+  "max_rss_kib": 52528,
+  "caveat": "Exact graph resource caps are unknown; dead-limit families excluded from Rule N theorem domain."
+}

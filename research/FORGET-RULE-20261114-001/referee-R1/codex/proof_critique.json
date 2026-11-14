@@ -1,0 +1,108 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "FORGET-RULE-20261114-001",
+  "review_lane": "bounded-proof-critique",
+  "reviewer_thread_id": "01a1d7aa-a9b1-7040-a90f-1dfd6963d356",
+  "reviewer_provenance": "separately authored same-task AI subagent; not human review or external replication",
+  "verdict": "Literal written Rule A refuted; Rule N survives with explicit nonempty-word hypothesis; partition tracking survives valid peeling",
+  "forbidden_experiment_python_opened_or_imported": false,
+  "network_used": false,
+  "git_mutations": false,
+  "sources": [
+    "research/FORGET-RULE-20261114-001/forget_rule.md",
+    "research/FORGET-RULE-20261114-001/preregistration.md",
+    "research/FORGET-RULE-20261114-001/advisor_review_answer.md",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/report.md"
+  ],
+  "findings": [
+    {
+      "id": "B1",
+      "classification": "Block",
+      "claim": "Rule A as literally written is sufficient for forgetting with its reported bound",
+      "source": "research/FORGET-RULE-20261114-001/preregistration.md:45",
+      "defect": "A port in F may be selected as a next-frontier argument. Removing its sole current constraint existentially eliminates a retained output or a variable used below.",
+      "witness": "S(p0,p1,p2): NAE(p0,p1,p2), NAE(p0,p2,v), SELF(p1,u,v), with fresh own u,v",
+      "literal_automaton_bound": 3,
+      "actual_forgetting": false,
+      "required_fix": "Exclude every selected-call argument from every peeling candidate, including ports in F; preserve original top identities in F updates.",
+      "implementation_defect_established": false,
+      "census_H2_rechecked_in_this_lane": false
+    },
+    {
+      "id": "N1",
+      "classification": "Narrowing",
+      "claim": "Rule N follows from complement closure alone",
+      "source": "research/FORGET-RULE-20261114-001/preregistration.md:22",
+      "defect": "Empty relations are complement-closed and rectangular. Every repeated cycle-word product must be nonempty.",
+      "required_fix": "State the alive/unfolding witness or explicit nonempty repeated-word hypothesis and the rectangular-product closure argument."
+    },
+    {
+      "id": "NB1",
+      "classification": "Not a block",
+      "claim": "A frontier partition captures paths that climb back into the processed prefix",
+      "source": "research/FORGET-RULE-20261114-001/advisor_review_answer.md:28",
+      "reason": "The partition records all prefix connectivity between frontier variables. Joining it with current components and restricting to the next frontier is exact when peeling is valid."
+    },
+    {
+      "id": "NB2",
+      "classification": "Not a block",
+      "claim": "The generic S start repairs a main-conditioned certificate",
+      "source": "research/FORGET-RULE-20261114-001/forget_rule.md:63",
+      "reason": "The generic product theorem requires arbitrary S boundary variables, whereas a main-specific prefix can already disconnect them from main.",
+      "eight_reported_cases_independently_rechecked": false
+    },
+    {
+      "id": "N2",
+      "classification": "Narrowing",
+      "claim": "The bond-growth reading holds for targets that are copies of S",
+      "source": "research/FORGET-RULE-20261114-001/forget_rule.md:47",
+      "defect": "The earlier referee additionally requires ancestry after main consisting of S calls. Delayed S copies are not covered merely because their type is S.",
+      "required_fix": "State the full ancestry restriction and wrapper shift; distinguish relational H2 from the gap theorem."
+    },
+    {
+      "id": "N3",
+      "classification": "Narrowing",
+      "claim": "Only direct or forced identity can sustain non-forgetting",
+      "source": "research/FORGET-RULE-20261114-001/forget_rule.md:39",
+      "defect": "N and A do not prove the forced-tie characterization, which the same note lists as future work.",
+      "required_fix": "Label the identity-only explanation as a working hypothesis."
+    }
+  ],
+  "counterexample": {
+    "ports": ["p0", "p1", "p2"],
+    "own_distinctions": ["u", "v"],
+    "NAE_constraints": [["p0", "p1", "p2"], ["p0", "p2", "v"]],
+    "SELF_arguments": ["p1", "u", "v"],
+    "identity_passing_arcs": [[1, 0]],
+    "alive_witness": "010 and 101 alternate indefinitely",
+    "relation_boundary_convention": "Selected continuation removed; no bottom support constraint imposed",
+    "relation_formula": "NAE(a,b,c) and d=b and NAE(a,c,f), for top(a,b,c), bottom(d,e,f)",
+    "relation_cardinality": 20,
+    "powers_checked": [1, 2, 3, 4, 5, 6],
+    "power_cardinalities": [20, 36, 36, 36, 36, 36],
+    "all_checked_powers_nonrectangular": true,
+    "row_010_odd": ["101", "111"],
+    "row_010_even": ["000", "010"],
+    "row_101_odd": ["000", "010"],
+    "row_101_even": ["101", "111"],
+    "uniform_argument": "Only 101 can continue from the odd row and only 010 from the even row because a constant intermediate triple violates the next block's first NAE. Complementary top rows remain disjoint for every power, so every power is nonrectangular.",
+    "literal_state_trace": [
+      {"depth": 0, "partition": [[0], [1], [2]], "marked_blocks": [[0], [1], [2]], "F": []},
+      {"depth": 1, "partition": [[0, 2], [1]], "marked_blocks": [[0, 2]], "F": [1]},
+      {"depth": 2, "partition": [[0], [1], [2]], "marked_blocks": [[2]], "F": [0, 1]},
+      {"depth": 3, "partition": [[0], [1], [2]], "marked_blocks": [], "F": [0, 1, 2]}
+    ]
+  },
+  "validation": {
+    "method": "Fresh direct enumeration of all 8 top and 8 bottom triples, followed by set-based relational composition; independent symbolic argument for all powers",
+    "python": "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B",
+    "producer_functions_reused": false,
+    "earlier_referee_functions_reused": false,
+    "scientific_independence": "V2 same-task independent rederivation; no external replication",
+    "initial_scratch_boundary_error_corrected": "An initial calculation imposed bottom support and gave singleton rows. Final report uses the removed-continuation relation with 20 pairs and two-element rows.",
+    "actual_study_implementation_audited": false
+  },
+  "strongest_surviving_result": "Valid existential peeling plus boundary separation implies rectangularity; frontier partitions track all prefix connectivity; nonempty identity-cycle products obstruct forgetting.",
+  "next_discriminator": "Verify both output-argument exclusion and original-top identity protection in the repaired transition, then require rejection of this counterexample.",
+  "canonical_or_lifecycle_changes": false
+}

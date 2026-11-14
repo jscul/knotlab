@@ -1,0 +1,90 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "FORGET-RULE-20261114-001",
+  "role": "independent referee assistant",
+  "created_UTC": "2026-11-14T01:46:08.214265+00:00",
+  "python": "/home/jscul/p-vs-np-contact-first/.venv/bin/python",
+  "python_version": "3.13.3",
+  "commands": [
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/independent_rules.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/validate_counterexample.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/structural_and_boundary_controls.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/recount_heldout.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/audit_starts_and_counts.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/check_prefix_invariant.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/search_counterexamples.py --mode all --seconds 600 --count 100000 --name final_search",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/wide_search.py",
+    "/home/jscul/p-vs-np-contact-first/.venv/bin/python -B /home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex/write_report.py"
+  ],
+  "forbidden_python_prefix": "experiments/FORGET-RULE-20261114-001A/",
+  "forbidden_source_opened_or_imported": false,
+  "network_used": false,
+  "Git_mutations": false,
+  "publication": false,
+  "write_root": "/home/jscul/p-vs-np-contact-first/research/FORGET-RULE-20261114-001/referee-R1/codex",
+  "input_sha256": {
+    "research/FORGET-RULE-20261114-001/forget_rule.md": "5103db48f2468116de5c745290e1a55eb03f28208d6d6851aa00d571ea1ca8e0",
+    "research/FORGET-RULE-20261114-001/preregistration.md": "8a79159678cb1dcf1f9893572a650c50aeb6aba865ea2dcf4fe90a2d32491f3e",
+    "research/FORGET-RULE-20261114-001/advisor_review_answer.md": "83ef9747c14f776c207ea57df72eb570d9dce389f46044d152e7b31a24ed5338",
+    "research/FREE-TARGET-20261114-001/referee-R1/codex/relations_audit.py": "b88fc3c7623c0f671469da8c073710c0ecefc1edb94d27243a0664ead50a6325",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/codex/sample_audit.py": "16e50e36ef59f9d8fdbceacc33abd81588ec280f149a5f65b34ff6bc266e56cb",
+    "research/CENSUS-FORGET-20261114-001/referee-R1/report.md": "1eb7fbaef46e496a49fde6acd22f11bc7165877d00bcb6c71aec9a27f62c0d75",
+    "experiments/SHORT-DESC-20261112-001A/SHORT-DESC-20261112-001A-E001_description_census/dlang.py": "8cbd77ee6d857c7e110fb24f38be87ff80f76bd49a522f0d00e2b0166ae1bd76",
+    "experiments/LIMIT-STATE-20261112-001A/LIMIT-STATE-20261112-001A-E001_limit_states/census.py": "b72f76a655636af6c5b10b54dc5bead6aea2439e2b4a55f43eb3ffdaf756bf8b",
+    "artifacts/REACH-CENSUS-20261113-001A/REACH-CENSUS-20261113-001A-E001_reach_census/families.jsonl.gz": "a0473d5c08c6273ec97220cb5462bf1381140f49df0b1db653bfc09976786ddb",
+    "experiments/CENSUS-FORGET-20261114-001A/CENSUS-FORGET-20261114-001A-E001_forget_census/full/results.jsonl": "ee9e8f86b4aef5fd1e5e9e90dfed7448c213751436e04cbfc0bd6339565194d0",
+    "experiments/FORGET-RULE-20261114-001A/FORGET-RULE-20261114-001A-E001_rule/heldout.json": "1361ccb311f9345a64cae4cecee2e9d9c4c0d049f31b579eb0acd24fa043eeff",
+    "experiments/FORGET-RULE-20261114-001A/FORGET-RULE-20261114-001A-E001_rule/gadget_control.json": "98dc4b9e7115480ec1e8cb79d503403a1642b11a82bdd47032c5f65f35f61edd"
+  },
+  "source_sha256": {
+    "audit_starts_and_counts.py": "940181ce0061af62c5c78cd9df3c345c8da2154a8d949276e921ed5beff749b2",
+    "check_prefix_invariant.py": "f244fa861c71d1f0be14adbb91622955b5b0f7513562b2c8716a1d26448c71ae",
+    "independent_rules.py": "ec7409e477bda9d0cc79e13e27202b4e53b625abebe1cafe46d2405d23a89a42",
+    "recount_heldout.py": "4564b5669eee19dc864f574141df07f3596dc4f945ccca8e315d77f3bd723d4d",
+    "search_counterexamples.py": "e98b9c87cbe26d3239f9fde2f8d447a0b22c1f0a8d8f53d57039017154199336",
+    "structural_and_boundary_controls.py": "c2029422ff6060e5474c98247664130461ec23bc83e8f9401f08a99078678504",
+    "validate_counterexample.py": "53f94d728cd6cafa3c0a8a231e3f1ac287694e75e2940c023c84a3b76d4c1580",
+    "wide_search.py": "d5caef2277a18c0987da3de7172de1b220a5f2877088ec90600b078e4f592ab5",
+    "write_report.py": "88e6ae360cdebb189203221b4254205d3aca879a248e1a6ea03660ba2c844bf7"
+  },
+  "evidence_sha256": {
+    "codex_report.md": "9a2dc034eb541101d4f5877a21208b7944550f080bfd117000b8e6763f9e6f0a",
+    "controls.json": "fd864b5413bf3efd84322c344a0ad7daeb48a8297ae4d07f5d0bb09a05c36238",
+    "counterexample.json": "3cd2d05b1966ce5f35e96a46896d9d0f43afd36f8682468d733895f3cbbbf9d3",
+    "extended_search.json": "5238176cff94f890b89c2778147336bb742adc616a8bf057f829bcfec6d09cbb",
+    "extended_search.jsonl": "aa037f711b9bbac2c776415d81bd24144a94ff0b0515538d67ca12107da84d9b",
+    "final_search.json": "b9b5e843f0169c4f9e420f9f3965269839960f535182281ea35eeb2db477dde9",
+    "final_search.jsonl": "0095d3bfa7cbe24cdeb4967b75f3dbc33ca08579eb743be297c0ba1961b587aa",
+    "first_search.json": "034094f4ddcf68f71f41f56d05b83477828696d6c78e5d46f7395f3539a33273",
+    "first_search.jsonl": "aa1bfb1b4738c23410b37bce3c94e74a6820af7903eeafee79e921767efb32de",
+    "guarded_recount_and_starts.json": "6201ac6f1c877adc67996f688dd01b7d6642fc03a4472d6ee16617a19a8a717d",
+    "heldout_fresh.jsonl": "7c83ca432a2db583f2f5898c08f0017b531b209c2f214b590e33a8786b279850",
+    "heldout_recount.json": "341db0f9c4ae47924fd94d6b1a9050561af55435637e88d1cb87206b8076222f",
+    "prefix_invariant.json": "5b6ec8f1d8bacd89258d06c7c7b39efb61a55c22f02658bb6f87f0aaaa3fa781",
+    "proof_critique.json": "58b2e06c9b033b2166bfeedc006e5bc7b7f800f41c6ed4c6aabec87d5d361088",
+    "proof_critique.md": "9170ce9ff1cac1557cd3703bef136f0e626d3542c0cb6c164c92dcac835c02d5",
+    "structural_and_boundary_controls.json": "a2916939fb0328d1e479ac36919a1b87a690bbdf826da42c1558100ce19d96db",
+    "summary.json": "4a34d43721e120a9a3598dd7a0f79facefedf6fd9215d5dfc10f21206137dbb8",
+    "wide_search.json": "29611dd76426f9a4a81b5cd7ffac14ae4696c6c5cc16f2b0852a414d4c0e9b02",
+    "wide_search.jsonl": "01b9bd65dfdd3f44b0fca8d3da7bddc8f2d3d2dfc99bf6fcaa414fa8bf73d81d"
+  },
+  "resource_scope": "No more than three scientific subprocess jobs; adapter caps each at2GiB address space. Tool orchestration and filesystem edits are not computational workers.",
+  "subagent": {
+    "role": "bounded independent proof critique",
+    "native_thread_id": "01a1d7aa-a9b1-7040-a90f-1dfd6963d356",
+    "owned_files": [
+      "proof_critique.md",
+      "proof_critique.json"
+    ]
+  },
+  "epistemic_classes": [
+    "counterexample with uniform mathematical proof",
+    "exact finite recomputation",
+    "bounded exploratory search",
+    "advisory proof critique"
+  ],
+  "prior_files_preserved": [
+    "brief_codex.md",
+    "codex_last_message.md"
+  ]
+}

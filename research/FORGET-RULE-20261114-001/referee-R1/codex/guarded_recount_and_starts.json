@@ -1,0 +1,1950 @@
+{
+  "guarded_rule_A_aggregate": {
+    "train": {
+      "families": 6388,
+      "H1_violations": 0,
+      "H2_violations": 0,
+      "r_within_bound": {
+        "true": 1107
+      },
+      "coverage": {
+        "chain/multi": {
+          "certified": 468,
+          "by_A": 190,
+          "share": 0.406
+        },
+        "nonchain/multi": {
+          "certified": 414,
+          "by_A": 106,
+          "share": 0.256
+        },
+        "chain/1def": {
+          "certified": 1659,
+          "by_A": 694,
+          "share": 0.4183
+        },
+        "nonchain/1def": {
+          "certified": 439,
+          "by_A": 117,
+          "share": 0.2665
+        }
+      },
+      "N_acyclic_forgetting": {
+        "chain": {
+          "n": 2127,
+          "forget": 2127,
+          "share": 1.0
+        },
+        "nonchain": {
+          "n": 907,
+          "forget": 853,
+          "share": 0.9405
+        }
+      },
+      "table": {
+        "chain/multi|N-acyclic|notA|certified": 278,
+        "nonchain/multi|N-acyclic|notA|certified": 308,
+        "nonchain/multi|N-acyclic|A|certified": 106,
+        "chain/multi|N-acyclic|A|certified": 190,
+        "nonchain/multi|N-cyclic|notA|non-forgetting": 632,
+        "nonchain/multi|N-acyclic|notA|non-forgetting": 16,
+        "chain/multi|N-cyclic|notA|non-forgetting": 115,
+        "chain/1def|N-acyclic|notA|certified": 965,
+        "nonchain/1def|N-cyclic|notA|non-forgetting": 2223,
+        "chain/1def|N-cyclic|notA|non-forgetting": 354,
+        "nonchain/1def|N-acyclic|notA|certified": 322,
+        "chain/1def|N-acyclic|A|certified": 694,
+        "nonchain/1def|N-acyclic|A|certified": 117,
+        "nonchain/1def|N-acyclic|notA|non-forgetting": 38,
+        "nonchain/1def|N-cyclic|notA|capped": 27,
+        "nonchain/multi|N-cyclic|notA|capped": 3
+      },
+      "coverage_total": 0.3715
+    },
+    "heldout": {
+      "families": 6384,
+      "H1_violations": 0,
+      "H2_violations": 0,
+      "r_within_bound": {
+        "true": 1051
+      },
+      "coverage": {
+        "chain/multi": {
+          "certified": 473,
+          "by_A": 186,
+          "share": 0.3932
+        },
+        "nonchain/multi": {
+          "certified": 366,
+          "by_A": 108,
+          "share": 0.2951
+        },
+        "nonchain/1def": {
+          "certified": 399,
+          "by_A": 95,
+          "share": 0.2381
+        },
+        "chain/1def": {
+          "certified": 1623,
+          "by_A": 662,
+          "share": 0.4079
+        }
+      },
+      "N_acyclic_forgetting": {
+        "chain": {
+          "n": 2096,
+          "forget": 2096,
+          "share": 1.0
+        },
+        "nonchain": {
+          "n": 817,
+          "forget": 765,
+          "share": 0.9364
+        }
+      },
+      "table": {
+        "chain/multi|N-acyclic|A|certified": 186,
+        "nonchain/multi|N-acyclic|notA|certified": 258,
+        "nonchain/multi|N-cyclic|notA|non-forgetting": 603,
+        "chain/multi|N-acyclic|notA|certified": 287,
+        "nonchain/multi|N-acyclic|A|certified": 108,
+        "chain/multi|N-cyclic|notA|non-forgetting": 99,
+        "nonchain/multi|N-acyclic|notA|non-forgetting": 16,
+        "nonchain/multi|N-cyclic|notA|capped": 6,
+        "nonchain/1def|N-cyclic|notA|non-forgetting": 2334,
+        "chain/1def|N-acyclic|notA|certified": 961,
+        "chain/1def|N-cyclic|notA|non-forgetting": 399,
+        "nonchain/1def|N-acyclic|notA|certified": 304,
+        "chain/1def|N-acyclic|A|certified": 662,
+        "nonchain/1def|N-acyclic|notA|non-forgetting": 36,
+        "nonchain/1def|N-cyclic|notA|capped": 30,
+        "nonchain/1def|N-acyclic|A|certified": 95
+      },
+      "coverage_total": 0.3674
+    }
+  },
+  "mismatches_vs_heldout_json": [],
+  "wrapper_families": 1349,
+  "main_relative_extra_certificates": 23,
+  "main_relative_nonforgetting_false_certificates": 17,
+  "main_relative_nonforgetting_by_half": {
+    "train": 8,
+    "heldout": 9
+  },
+  "main_relative_false_examples": [
+    {
+      "key": "[[3,0,[[\"K\",[0,1,2]],[\"SELF\",[2,1,0]]]],[3,5,[[\"K\",[1,3,5]],[\"SELF\",[3,7,2]],[0,[1,3,0]]]],[4,1,[[1,[3,1,4]]]]]",
+      "half": "train",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,0,[[\"SELF\",[1,2,0]]]],[3,2,[[0,[0,4,3]],[\"SELF\",[3,0,2]]]],[3,2,[[1,[2,1,3]],[\"K\",[0,1,2]],[\"K\",[1,4,3]]]]]",
+      "half": "heldout",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,0,[[\"SELF\",[2,1,0]],[\"SELF\",[1,2,0]],[\"K\",[1,2,0]]]],[3,5,[[\"SELF\",[6,0,2]],[\"K\",[3,1,7]],[0,[7,5,6]]]],[4,4,[[1,[0,3,4]]]]]",
+      "half": "heldout",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,0,[[\"SELF\",[2,1,0]]]],[3,6,[[0,[5,1,0]],[\"SELF\",[8,7,1]],[0,[2,3,4]],[\"SELF\",[0,7,8]],[0,[2,6,8]],[0,[8,3,1]]]],[3,5,[[1,[7,3,0]]]]]",
+      "half": "train",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 6,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"K\",[3,1,0]],[\"SELF\",[4,0,1]],[\"SELF\",[1,0,3]]]],[5,6,[[0,[6,8,2]],[\"K\",[2,6,7]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            1
+          ],
+          "cycle": [
+            0,
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0x2a542a542a542a54",
+          "cycle_products_before": [
+            "0x2a542a542a542a54",
+            "0xcc33cc33cc33cc33"
+          ],
+          "cycle_products_after": [
+            "0xcc33cc33cc33cc33",
+            "0x2a542a542a542a54"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 5,
+        "transitions_examined": 8,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"SELF\",[0,4,2]],[\"K\",[3,4,1]]]],[3,2,[[0,[3,1,4]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          2,
+          5
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xa050a0500a050a05",
+          "cycle_products_before": [
+            "0xa050a0500a050a05"
+          ],
+          "cycle_products_after": [
+            "0xa050a0500a050a05"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 2,
+        "transitions_examined": 2,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"SELF\",[4,1,0]],[\"K\",[3,2,4]]]],[4,3,[[\"K\",[0,6,2]],[0,[6,4,5]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          1,
+          6
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"SELF\",[4,3,2]],[\"K\",[3,0,1]]]],[3,6,[[\"K\",[5,3,0]],[0,[0,4,2]],[0,[4,6,3]],[0,[8,0,5]],[\"K\",[1,4,5]],[0,[6,1,2]],[0,[8,7,5]]]],[3,4,[[0,[4,1,5]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          2,
+          5
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,3,[[\"K\",[2,5,1]]]],[3,2,[[\"SELF\",[0,4,3]],[0,[3,1,4]],[0,[3,4,2]]]],[4,1,[[1,[4,1,2]]]]]",
+      "half": "train",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          6,
+          1
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 2,
+        "transitions_examined": 2,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,3,[[\"SELF\",[1,3,4]],[\"SELF\",[1,4,2]],[\"K\",[1,5,0]]]],[3,0,[[0,[0,2,1]]]],[4,1,[[1,[1,4,2]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1,
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 8,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,4,[[\"SELF\",[0,6,1]],[\"K\",[2,5,1]]]],[4,0,[[\"K\",[3,0,2]]]],[5,2,[[0,[5,0,3]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          6,
+          1
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,4,[[\"SELF\",[2,1,5]],[\"K\",[4,2,0]]]],[4,0,[[0,[3,1,0]],[\"K\",[0,3,2]],[\"K\",[2,1,3]]]],[3,6,[[0,[7,6,4]],[\"K\",[3,4,1]],[0,[5,6,2]],[0,[2,5,4]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          0,
+          7
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          1,
+          6
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,6,[[\"K\",[5,8,1]],[\"SELF\",[6,8,2]]]],[4,6,[[\"K\",[1,6,2]],[0,[2,0,8]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 2,
+        "transitions_examined": 2,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,6,[[\"SELF\",[2,3,7]],[\"K\",[6,7,2]],[\"SELF\",[2,1,3]]]],[4,3,[[0,[5,4,2]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1,
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 8,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,6,[[\"SELF\",[8,4,3]],[\"SELF\",[3,1,7]],[\"K\",[8,3,5]],[\"K\",[2,7,5]],[\"K\",[0,5,2]]]],[3,0,[[\"SELF\",[1,0,2]],[\"SELF\",[0,2,1]],[\"K\",[2,1,0]],[\"K\",[0,2,1]],[\"SELF\",[1,0,2]],[\"SELF\",[1,0,2]],[\"SELF\",[1,0,2]]]],[3,5,[[0,[4,3,0]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 6,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[5,0,[[\"K\",[1,4,3]],[\"K\",[2,0,4]],[\"K\",[0,3,2]],[\"K\",[1,3,4]],[\"K\",[2,1,0]],[\"K\",[0,4,1]],[\"K\",[3,1,2]]]],[3,5,[[\"K\",[2,6,1]],[\"SELF\",[4,6,0]],[\"K\",[5,7,3]],[\"SELF\",[7,1,0]],[\"SELF\",[1,4,3]]]],[3,1,[[\"K\",[0,2,3]]]],[3,0,[[2,[0,1,2]],[\"SELF\",[1,0,2]],[1,[1,2,0]]]],[3,5,[[1,[5,4,1]]]]]",
+      "half": "heldout",
+      "S": 1,
+      "main": 4,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xffccffffffff33ff",
+          "cycle_products_before": [
+            "0xffccffffffff33ff"
+          ],
+          "cycle_products_after": [
+            "0xffccffffffff33ff"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 4,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[5,0,[[\"K\",[4,1,0]]]],[3,0,[[\"K\",[0,2,1]]]],[3,2,[[\"SELF\",[0,3,4]],[1,[1,2,4]]]],[4,5,[[\"K\",[5,1,2]],[2,[4,1,0]],[2,[4,8,7]]]]]",
+      "half": "heldout",
+      "S": 2,
+      "main": 3,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          6,
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          0,
+          7
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    }
+  ],
+  "all_main_relative_extra_certificates": [
+    {
+      "key": "[[3,0,[[\"K\",[0,1,2]],[\"SELF\",[2,1,0]]]],[3,5,[[\"K\",[1,3,5]],[\"SELF\",[3,7,2]],[0,[1,3,0]]]],[4,1,[[1,[3,1,4]]]]]",
+      "half": "train",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,0,[[\"SELF\",[1,2,0]]]],[3,2,[[0,[0,4,3]],[\"SELF\",[3,0,2]]]],[3,2,[[1,[2,1,3]],[\"K\",[0,1,2]],[\"K\",[1,4,3]]]]]",
+      "half": "heldout",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,0,[[\"SELF\",[2,1,0]],[\"SELF\",[1,2,0]],[\"K\",[1,2,0]]]],[3,5,[[\"SELF\",[6,0,2]],[\"K\",[3,1,7]],[0,[7,5,6]]]],[4,4,[[1,[0,3,4]]]]]",
+      "half": "heldout",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,0,[[\"SELF\",[2,1,0]]]],[3,6,[[0,[5,1,0]],[\"SELF\",[8,7,1]],[0,[2,3,4]],[\"SELF\",[0,7,8]],[0,[2,6,8]],[0,[8,3,1]]]],[3,5,[[1,[7,3,0]]]]]",
+      "half": "train",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 6,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"K\",[2,1,4]],[\"SELF\",[3,4,1]]]],[3,0,[[\"SELF\",[1,2,0]],[\"K\",[1,0,2]],[\"SELF\",[1,2,0]]]],[3,6,[[\"K\",[4,5,0]],[0,[0,8,4]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          1,
+          6
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "certified",
+        "r": 4,
+        "lasso": null,
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 4,
+        "exhausted_nonrectangular_automaton": true
+      }
+    },
+    {
+      "key": "[[3,2,[[\"K\",[3,1,0]],[\"SELF\",[4,0,1]],[\"SELF\",[1,0,3]]]],[5,6,[[0,[6,8,2]],[\"K\",[2,6,7]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            1
+          ],
+          "cycle": [
+            0,
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0x2a542a542a542a54",
+          "cycle_products_before": [
+            "0x2a542a542a542a54",
+            "0xcc33cc33cc33cc33"
+          ],
+          "cycle_products_after": [
+            "0xcc33cc33cc33cc33",
+            "0x2a542a542a542a54"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 5,
+        "transitions_examined": 8,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"SELF\",[0,4,2]],[\"K\",[3,4,1]]]],[3,2,[[0,[3,1,4]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          2,
+          5
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xa050a0500a050a05",
+          "cycle_products_before": [
+            "0xa050a0500a050a05"
+          ],
+          "cycle_products_after": [
+            "0xa050a0500a050a05"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 2,
+        "transitions_examined": 2,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"SELF\",[4,1,0]],[\"K\",[3,2,4]]]],[4,3,[[\"K\",[0,6,2]],[0,[6,4,5]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          1,
+          6
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,2,[[\"SELF\",[4,3,2]],[\"K\",[3,0,1]]]],[3,6,[[\"K\",[5,3,0]],[0,[0,4,2]],[0,[4,6,3]],[0,[8,0,5]],[\"K\",[1,4,5]],[0,[6,1,2]],[0,[8,7,5]]]],[3,4,[[0,[4,1,5]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          2,
+          5
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,3,[[\"K\",[0,3,2]],[\"SELF\",[3,2,5]],[\"K\",[0,1,4]]]],[3,6,[[0,[8,6,0]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "certified",
+        "r": 3,
+        "lasso": null,
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": true
+      }
+    },
+    {
+      "key": "[[3,3,[[\"K\",[1,0,5]],[\"SELF\",[5,3,1]]]],[3,6,[[0,[3,1,5]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          2,
+          5
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "certified",
+        "r": 3,
+        "lasso": null,
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": true
+      }
+    },
+    {
+      "key": "[[3,3,[[\"K\",[2,5,1]]]],[3,2,[[\"SELF\",[0,4,3]],[0,[3,1,4]],[0,[3,4,2]]]],[4,1,[[1,[4,1,2]]]]]",
+      "half": "train",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          6,
+          1
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 2,
+        "transitions_examined": 2,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,3,[[\"K\",[4,1,3]],[\"SELF\",[3,0,4]],[\"SELF\",[4,3,1]]]],[3,5,[[0,[3,6,1]],[\"K\",[3,1,4]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "certified",
+        "r": 4,
+        "lasso": null,
+        "nonrectangular_states_seen": 7,
+        "transitions_examined": 14,
+        "exhausted_nonrectangular_automaton": true
+      }
+    },
+    {
+      "key": "[[3,3,[[\"SELF\",[1,3,4]],[\"SELF\",[1,4,2]],[\"K\",[1,5,0]]]],[3,0,[[0,[0,2,1]]]],[4,1,[[1,[1,4,2]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1,
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 8,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,4,[[\"K\",[5,4,6]],[\"SELF\",[4,5,6]],[\"K\",[1,0,4]]]],[4,2,[[0,[1,5,3]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          5,
+          2
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "certified",
+        "r": 2,
+        "lasso": null,
+        "nonrectangular_states_seen": 2,
+        "transitions_examined": 2,
+        "exhausted_nonrectangular_automaton": true
+      }
+    },
+    {
+      "key": "[[3,4,[[\"SELF\",[0,6,1]],[\"K\",[2,5,1]]]],[4,0,[[\"K\",[3,0,2]]]],[5,2,[[0,[5,0,3]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          6,
+          1
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,4,[[\"SELF\",[2,1,5]],[\"K\",[4,2,0]]]],[4,0,[[0,[3,1,0]],[\"K\",[0,3,2]],[\"K\",[2,1,3]]]],[3,6,[[0,[7,6,4]],[\"K\",[3,4,1]],[0,[5,6,2]],[0,[2,5,4]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          0,
+          7
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          1,
+          6
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,6,[[\"K\",[5,8,1]],[\"SELF\",[6,8,2]]]],[4,6,[[\"K\",[1,6,2]],[0,[2,0,8]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xf0f0f0f00f0f0f0f",
+          "cycle_products_before": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "cycle_products_after": [
+            "0xf0f0f0f00f0f0f0f"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 2,
+        "transitions_examined": 2,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,6,[[\"SELF\",[2,3,7]],[\"K\",[6,7,2]],[\"SELF\",[2,1,3]]]],[4,3,[[0,[5,4,2]]]]]",
+      "half": "heldout",
+      "S": 0,
+      "main": 1,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1,
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 4,
+        "transitions_examined": 8,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[3,6,[[\"SELF\",[8,4,3]],[\"SELF\",[3,1,7]],[\"K\",[8,3,5]],[\"K\",[2,7,5]],[\"K\",[0,5,2]]]],[3,0,[[\"SELF\",[1,0,2]],[\"SELF\",[0,2,1]],[\"K\",[2,1,0]],[\"K\",[0,2,1]],[\"SELF\",[1,0,2]],[\"SELF\",[1,0,2]],[\"SELF\",[1,0,2]]]],[3,5,[[0,[4,3,0]]]]]",
+      "half": "train",
+      "S": 0,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            1
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xcccc3333cccc3333",
+          "cycle_products_before": [
+            "0xcccc3333cccc3333"
+          ],
+          "cycle_products_after": [
+            "0xcccc3333cccc3333"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 6,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[5,0,[[\"K\",[1,4,3]],[\"K\",[2,0,4]],[\"K\",[0,3,2]],[\"K\",[1,3,4]],[\"K\",[2,1,0]],[\"K\",[0,4,1]],[\"K\",[3,1,2]]]],[3,5,[[\"K\",[2,6,1]],[\"SELF\",[4,6,0]],[\"K\",[5,7,3]],[\"SELF\",[7,1,0]],[\"SELF\",[1,4,3]]]],[3,1,[[\"K\",[0,2,3]]]],[3,0,[[2,[0,1,2]],[\"SELF\",[1,0,2]],[1,[1,2,0]]]],[3,5,[[1,[5,4,1]]]]]",
+      "half": "heldout",
+      "S": 1,
+      "main": 4,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          4,
+          3
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            1
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xffccffffffff33ff",
+          "cycle_products_before": [
+            "0xffccffffffff33ff"
+          ],
+          "cycle_products_after": [
+            "0xffccffffffff33ff"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 4,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[5,0,[[\"K\",[4,1,0]]]],[3,0,[[\"K\",[0,2,1]]]],[3,2,[[\"SELF\",[0,3,4]],[1,[1,2,4]]]],[4,5,[[\"K\",[5,1,2]],[2,[4,1,0]],[2,[4,8,7]]]]]",
+      "half": "heldout",
+      "S": 2,
+      "main": 3,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          6,
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          0,
+          7
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "non-forgetting",
+        "r": null,
+        "lasso": {
+          "prefix": [
+            0,
+            0
+          ],
+          "cycle": [
+            0
+          ]
+        },
+        "lasso_check": {
+          "valid": true,
+          "prefix_product": "0xaa55aa55aa55aa55",
+          "cycle_products_before": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "cycle_products_after": [
+            "0xaa55aa55aa55aa55"
+          ],
+          "returns_to_same_product": true,
+          "recorded_metadata_convention": null
+        },
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": false
+      }
+    },
+    {
+      "key": "[[5,5,[[\"K\",[5,9,2]],[\"K\",[2,3,9]]]],[3,2,[[\"SELF\",[1,4,3]],[\"K\",[1,2,3]],[0,[4,3,0,1,2]]]],[3,2,[[1,[2,1,3]]]]]",
+      "half": "heldout",
+      "S": 1,
+      "main": 2,
+      "entry_starts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          3,
+          4
+        ]
+      ],
+      "main_relative_A": true,
+      "generic_A": false,
+      "exact": {
+        "verdict": "certified",
+        "r": 3,
+        "lasso": null,
+        "nonrectangular_states_seen": 3,
+        "transitions_examined": 3,
+        "exhausted_nonrectangular_automaton": true
+      }
+    }
+  ],
+  "seconds": 1.24717750295531,
+  "historical_qualification": "Main-relative initialization is independently reconstructed. No first-version code or list of its eight examples was supplied/read."
+}

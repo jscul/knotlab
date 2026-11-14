@@ -5,7 +5,7 @@ put it before B173. Pre-registered in c01a7a833 (objects gate passed; advisor co
 after READ-RULE's referee (356669fb1), both before any result was read. The proofs were written in 055654987 and checked by the
 advisor. Census code by Codex, run by the thread on the shared runner. The canonical K1–K3 test is unchanged. Refereed by the referee thread with Codex (TOP-INFO-R1, `referee-R1/report.md`, commit
 94befcf5c): **confirmed with fixes, one Block on "middle members"**. The three theorems stand, localisation with proof repairs; the
-counts are restated below. **Stress test pending:** the brute-force gate.
+counts are restated below. The brute-force gate, the last pending check, was folded in on 2026-11-14 (conclusion 7).
 
 ## Words
 
@@ -33,7 +33,7 @@ minimal non-shattered set through a root vertex and a depth-s vertex stays bound
 | 4 | **Not every order family is bond-pinned.** 78 of the 93 are bond-pinned on every residue; 15 are not, and they are bounded through middle members. | computed | **T2 failed** (15 of 93) |
 | 5 | **The two-block window decides a few more.** With main's whole block in the window, 9 of the 83 undecided in-scope families, all wrappers, are bounded on every residue; their bounds (at most 4) are upper bounds, not exact values. Two more undecided families, 432127c418b0 and 981fdc202826, have an effective reading on every residue of a complete window, so Theorem R and the dichotomy bound them too. *Narrowed after the referee:* they already had complete window certificates of 3, so this is a second proof, not a new bound. In scope the census now stands at **5,085 bounded, 632 growing, 72 undecided** (weights 5,147, 634 and 72). | proved per family | **T3 failed** (9 by the frozen count, threshold 10) |
 | 6 | **Localisation, proved; decidability open.** If L ≤ C eventually on a residue, then at every large depth on it **some** least bond lies within a number of levels of the root and of the target that is computable *given C*, apart from one long member-free stretch (*narrowed after the referee*: not every least bond, as a synthetic family with a member 23 levels below the target shows; the proof is repaired as the referee set out). It is a normal form for witnesses. Semi-decision of boundedness already followed from the dichotomy, and without an a priori bound on C a "no" is never certified. | proved | — |
-| 7 | **Gates.** Theorem R and bond-pinning never apply to a grower. The two-block window never undercuts the gap bound on 100 forgetting families, and never exceeds the one-block window where both bound (0 violations; 84 families unavailable through caps). **Stress test pending:** the brute-force gate on 30 identity families (registered as TOP-INFO-brute30) is still running and will be folded in. | computed | G: no violation so far (brute force pending) |
+| 7 | **Gates.** Theorem R and bond-pinning never apply to a grower. The two-block window never undercuts the gap bound on 100 forgetting families, and never exceeds the one-block window where both bound (0 violations; 84 families unavailable through caps). **Brute force** (folded in after the run): Codex's independent unfolding on the frozen 30 identity families matched the two-block projection and bond minima at every S-word of length at most 3 in all 22 that completed (1,062 checks); 8 hit the 585-second internal limit and are unknown, not failed. | computed | G: no violation (8 of 30 brute-force families unavailable) |
 
 ## Answer
 

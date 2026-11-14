@@ -3,7 +3,7 @@
 2026-11-14. The nested fixed-interface line, from the census of first-ray growth (`REACH-CENSUS-20261113-001`) to the whole-rule
 study (`TOP-INFO-20261114-001`). Every epic named here is refereed and folded in. The coordinator wrapped the line up at that point.
 CARRY-BOUND's direct-search readings are folded in: the 28 sampled undecided families stay flat at 2 or 3 up to depth 5, so the
-undecided look bounded (a reading, not a proof). TOP-INFO's brute-force gate was still running when this was written.
+undecided look bounded (a reading, not a proof). TOP-INFO's brute-force gate is folded in too: 22 of 30 families matched exactly, 8 hit a time limit, none failed.
 
 ## The question
 

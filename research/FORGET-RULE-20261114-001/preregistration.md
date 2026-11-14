@@ -28,3 +28,49 @@ that word is rectangular. N is therefore a necessary condition for forgetting, a
 ## Stage 2 (to be frozen after exploring the training half)
 
 The rule, its proof that it implies forgetting with an explicit r, and its predicted coverage on the held-out half by stratum.
+
+## Stage 2: the rules, frozen before the held-out half is read (2026-11-14)
+
+Derived on the training half (6,388 families) only. The advisor model was consulted on the sufficient side
+(`advisor_review_answer.md`). It proved that disconnection in the peeled composite gives a product, showed by an x ≠ y gadget that
+the first downward-connectivity rule D is false, and gave the layered automaton. My additions are the free-from-above flag and the
+generic start.
+
+**Rule N (necessary, proved in stage 1).** A cycle of identity passing among the ports prevents forgetting.
+
+**Rule A (sufficient, proved here).** `rule_A.py` builds a finite automaton over call words, as follows.
+- **State.** A partition σ of a copy's three ports, induced by everything above it in the stretch, together with the set M of its
+  blocks connected to the stretch's top and the set F of ports that no constraint above touches.
+- **Start.** A generic copy of S: σ discrete, M all, F empty.
+- **Step on call i.** Peel the copy's block. Repeatedly remove an NAE knot, or a side relation full on every two coordinates, that
+  holds a distinction occurring in no other remaining constraint. That distinction must be an own distinction not among call i's
+  arguments, or a port in F. Join σ with the components of what remains, and carry M and the new F down to the arguments.
+- **Verdict.** Rule A holds when the reachable states with M non-empty form no cycle; r is at most the longest such path plus 1.
+
+*Proof.* Each peeling eliminates a distinction that occurs in exactly one constraint of the stretch's composite. For NAE, and for a
+relation full on every two coordinates, that elimination is exact: the constraint projects to the full relation on the rest. In
+the peeled composite, top-down tracking of the partition of each layer, induced by everything above, sees every path, including
+those that climb back. Once M is empty the stretch's top ports lie in components that miss its bottom ports. A disconnected system
+has a product solution set, so the stretch's relation R_w is rectangular. Every stretch starts from a generic copy, F empty peels
+no more than is valid, and a product composed with anything stays a product. So every word of length r is rectangular, and the
+family forgets.
+
+**Training results (seen).**
+- N held with no exception: no N-cyclic family forgets.
+- Rule A certified 1,107 families, all of which forget. Every exact r lies within A's bound.
+- Rule A covers 35.7% of forgetting families: chains one-definition 694/1,659, several-definition 190/468; non-chains
+  one-definition 117/439, several-definition 106/414.
+- N-acyclic ⇒ forgetting held in 100% of chains (2,596) and 94% of non-chains (853/907).
+- Regression control: the x ≠ y gadget (`gadget_control.py`) is alive and non-forgetting, and rule A refuses it.
+
+## Predictions on the held-out half (frozen)
+
+| # | Prediction | Fails when |
+| --- | --- | --- |
+| H1 | **N is never violated.** No N-cyclic held-out family forgets (a check of the proof and the code). | any |
+| H2 | **A is never violated.** Every rule-A certified held-out family forgets, with its exact r within A's bound. | any |
+| H3 | **A's coverage replicates.** A certifies between 30% and 42% of held-out forgetting families, and each of the four strata lies within 8 points of its training share. | outside |
+| H4 | **N nearly characterizes forgetting.** Among held-out N-acyclic families, forgetting holds in at least 99% of chains and at least 90% of non-chains. | below |
+
+One- and several-definition families are reported apart. H2 for several-definition families rests on the gap argument's
+several-definition premise, which is under referee.

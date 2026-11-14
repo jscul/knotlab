@@ -1,0 +1,11 @@
+Hard analysis question; please reason carefully (about 400 words). Is the following sufficient condition provable, and if not, what is the right one?
+
+Setting. A nested NAE family: a 3-port block S (its distinctions are ports 0..2, own distinctions; constraints are NAE knots and "side" calls read as fixed 3-place limit relations G) with c SELF calls. Each SELF call i names 3 distinctions of the block (its arguments) that become the child copy's ports. Copies form a tree. Along a call word w the copies are C_0, C_1, ... C_r. R_i is the relation (parent port state, child port state) obtained by projecting the parent block (all constraints except call i itself, other SELF calls read as G[S]). "Forgetting" means that for some r every product R_w (|w| = r) is rectangular, i.e. a product X × Y. All relations are complement-closed.
+
+Proved: if some cycle of calls passes a port by identity (child port k receives parent port j, the edges j→k forming a cycle) then forgetting fails (an equality projection is never a product).
+
+Candidate sufficient condition D. Peel each call's block: repeatedly remove an NAE knot, or a side hyperedge whose relation is full on every pair of coordinates, that contains an own distinction occurring in no other constraint and not among the ports or call i's arguments. Then draw edge j→k when port j and argument k are in the same connected component of the peeled block, or argument k is port j itself. Claim: if this directed graph on {0,1,2} (the union over calls) is acyclic, the family forgets.
+
+Empirically, on 6,388 families, all 705 that satisfy D forget. My worry is lateral paths in the composite of the r blocks along w. A path can descend from C_j to C_{j+1}, move between two ports of C_{j+1} through C_{j+1}'s own block, then climb back into C_j's block through another argument. So D's acyclicity, which constrains only downward port-to-argument connections, may not bound how deep the top's connected component reaches.
+
+Questions. (1) Does disconnection in the peeled composite imply that R_w is a product? (2) Is the claim true as stated? Give a counterexample shape if not. (3) What is the correct, provable syntactic condition (perhaps D built on an undirected layered graph with lateral port-port edges, with a bound on r), and what r does it give?

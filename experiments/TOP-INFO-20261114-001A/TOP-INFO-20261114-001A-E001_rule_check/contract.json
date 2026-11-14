@@ -1,0 +1,8 @@
+{"schema_version": 1, "experiment_id": "TOP-INFO-20261114-001A-E001", "ticket": "TOP-INFO-20261114-001A", "status": "Frozen", "evidence_stage": "confirmatory", "branch": "code_analysis",
+ "question": "Census check of the reading rule: its exceptions, plain pinning, bond-pinning and the two-block window on CARRY-BOUND's 5,964 families.",
+ "definitions": {"two_block": "experiments/TOP-INFO-20261114-001A/TOP-INFO-20261114-001A-E001_rule_check/codex/two_block.py (sha256 ba184d13cc891783d2cac7d5a52533ab0e9af159059f0c868042814fbfcca3d6)", "statements": "research/TOP-INFO-20261114-001/preregistration.md"},
+ "public_inputs": {"code": "Codex's codex/; CARRY-BOUND and READ-RULE records"},
+ "forbidden_inputs": ["Results of these checks before the freeze"],
+ "primary_observable": "T1-T3 and gate G", "cheapest_meaningful_control": "100 forgetting families; 30-family brute force",
+ "validation_gate": "G", "predictions": {"T1": "no grower pinned", "T2": "all 93 order families bond-pinned", "T3": ">=10 of 83 undecided bounded by the two-block window"},
+ "stop_rule": "One census run; the brute-force gate; referee hand-off; report.", "runtime": "about two hours"}

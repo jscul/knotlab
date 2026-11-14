@@ -3457,6 +3457,11 @@ So holes come in two kinds:
      has a positive linear lower bound, possibly very weak. Growth does not need every carried value unread (a family read only where
      a tie splits the knot grows), but a reading outside that tie at infinitely many depths bounds the reach
      ([decision note](../research/READ-RULE-20261114-001/read_rule.md)).
+   - **Is reading the whole rule** (`TOP-INFO-20261114-001`; referee pending): no. The top stays within reach of a deep copy in three
+     ways: a carried value read outside a splitting tie (88% of the bounded families), the top's ports directly pinning the copy's own
+     distinctions with nothing carried, as in the order families (another 10%; proved sufficient), and, in 1.3%, bonds through the
+     middle. Every bounded case has a bond local to the top and the target (proved); deciding it in advance is open
+     ([decision note](../research/TOP-INFO-20261114-001/top_info.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what
      separates decidable from undecidable nesting. With knots placed by a small automaton on addresses, so that a part's joining

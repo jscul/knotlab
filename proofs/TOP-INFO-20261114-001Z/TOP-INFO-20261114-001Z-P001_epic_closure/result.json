@@ -1,0 +1,30 @@
+{
+ "schema_version": 3,
+ "artifact_id": "TOP-INFO-20261114-001Z-P001",
+ "kind": "proof",
+ "ticket": "TOP-INFO-20261114-001Z",
+ "proof": "TOP-INFO-20261114-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing TOP-INFO-20261114-001: ticket A (the census check; T1 held, T2 and T3 failed; gate no violation, brute force pending) and ticket B (P', the two-block window bound, localisation proved); no correction; referee pending; recommendation B173. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/TOP-INFO-20261114-001A/TOP-INFO-20261114-001A-E001_rule_check/contract.json": "Frozen",
+   "proofs/TOP-INFO-20261114-001B/TOP-INFO-20261114-001B-P001_top_info/manifest.json": "Proved",
+   "experiments/TOP-INFO-20261114-001A/TOP-INFO-20261114-001A-E001_rule_check/codex/summary.json": null
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

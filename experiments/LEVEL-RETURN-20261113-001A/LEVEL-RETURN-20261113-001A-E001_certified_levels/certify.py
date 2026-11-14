@@ -33,26 +33,30 @@ def pattern(key, n):
 
 
 def stream_solve(cnf, workdir, timeout):
-    """Run CaDiCaL with its LRAT proof written into a FIFO that lrat_check reads as it is written, so no proof is stored. Returns
-    (solver exit code, solver stdout, checker output) or None on timeout (both processes are killed)."""
-    fifo = os.path.join(workdir, 'p.lrat')
-    if os.path.exists(fifo): os.remove(fifo)
-    os.mkfifo(fifo)
-    chk = subprocess.Popen([CHECKER, cnf, fifo], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-    sol = subprocess.Popen([CADICAL, '--lrat=true', '--binary=false', '-q', cnf, fifo], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
+    """Solve twice when needed: first without a proof (a model is checked by the caller); if the formula is refuted, solve again
+    writing the LRAT proof to a file in the case's own work directory on disk, check it with lrat_check, and delete it. (A first
+    version streamed the proof through a pipe; the checker's pace then throttled the solver.) Returns (exit code, stdout, checker
+    output) or None on timeout."""
+    t0 = time.time()
     try:
-        so, _ = sol.communicate(timeout=timeout)
-        co, _ = chk.communicate(timeout=timeout)
+        r = subprocess.run([CADICAL, '-q', cnf], capture_output=True, text=True, timeout=timeout)
     except subprocess.TimeoutExpired:
-        for p in (sol, chk):
-            p.kill()
-        for p in (sol, chk):
-            p.communicate()
+        return None
+    if r.returncode != 20:
+        return r.returncode, r.stdout, ''
+    prf = os.path.join(workdir, 'p.lrat')
+    left = max(1.0, timeout - (time.time() - t0))
+    try:
+        r2 = subprocess.run([CADICAL, '--lrat=true', '--binary=false', '-q', cnf, prf], capture_output=True, text=True, timeout=left)
+        if r2.returncode != 20:
+            return r2.returncode, r2.stdout, 'second solve disagreed'
+        size = os.path.getsize(prf)
+        c = subprocess.run([CHECKER, cnf, prf], capture_output=True, text=True, timeout=max(1.0, timeout - (time.time() - t0)))
+        return 20, r2.stdout, f'{c.stdout.strip()} ({size} bytes)'
+    except subprocess.TimeoutExpired:
         return None
     finally:
-        if os.path.exists(fifo): os.remove(fifo)
-    return sol.returncode, so, co.strip()
-
+        if os.path.exists(prf): os.remove(prf)
 
 def certify(K, nvars, workdir, timeout):
     """K: knots (rows of three distinct variable indices, 0-based). Returns a dict with verdict alive/dead/undecided and evidence."""
@@ -81,7 +85,7 @@ def certify(K, nvars, workdir, timeout):
         out.update(verdict='alive' if ok else 'checker-rejected-model', certificate='model checked against every knot')
     elif rc == 20:
         ok = chk.startswith('VERIFIED')
-        out.update(verdict='dead' if ok else 'unverified-refutation', certificate=f'LRAT streamed to the checker: {chk}')
+        out.update(verdict='dead' if ok else 'unverified-refutation', certificate=f'LRAT checked: {chk}')
     else:
         out.update(verdict='undecided', certificate=f'solver exit {rc}')
     for p in (cnf, prf):
@@ -124,7 +128,7 @@ def certify_rigid(K, nvars, workdir, timeout):
         V = v2[K + 1]; ok = bool(np.all(V.min(1) != V.max(1))) and any(bool(v2[u + 1]) != val.get(u + 1, False) for u in used)
         out = dict(verdict='not rigid' if ok else 'checker-rejected-model', certificate='second state checked')
     elif rc == 20:
-        out = dict(verdict='rigid' if chk.startswith('VERIFIED') else 'unverified-refutation', certificate=f'LRAT streamed to the checker: {chk}')
+        out = dict(verdict='rigid' if chk.startswith('VERIFIED') else 'unverified-refutation', certificate=f'LRAT checked: {chk}')
     else:
         out = dict(verdict='undecided', certificate=f'solver exit {rc}')
     for p in (cnf, prf):

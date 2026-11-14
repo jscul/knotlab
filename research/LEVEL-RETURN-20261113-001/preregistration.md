@@ -128,3 +128,9 @@ Fix, with no change to any prediction or decision rule: CaDiCaL now writes its L
 written, so no proof is stored (proof sizes are no longer kept; the checker reports its step count); the checker frees deleted
 clauses; each case works in its own directory on disk, removed at the case's start and end. Gates rerun and passed. Both runs restart
 from scratch in `run2/` and `run_rigid2/`.
+
+Second fix (2026-11-14 about 01:40 UTC, again before any registered result was used): streaming the proof through a pipe let the
+checker's pace throttle the solver, and run2 left many cases undecided at the 1,800-second limit that run 1 had decided in seconds;
+it was stopped (kept as evidence, not used). Now each case first solves without a proof (a model is checked as before); a refuted
+formula is solved again with its LRAT proof written to a file in the case's own work directory on disk, checked, and deleted. Gates
+rerun and passed. Both runs restart from scratch in `run3/` and `run_rigid3/`.

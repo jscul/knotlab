@@ -3,6 +3,13 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 14 November 2026: the rigidity attempt, confirmed by its referee, its evidence narrowed
+
+- The bounded attempt to prove rigidity at every level (`RIGID-LEVEL-20261114-001`) was confirmed by its referee: the constraint is not
+  linear and the natural inductions fail. Narrowed: rigidity is certified at even levels 6 to 14 and odd levels 7 to 13 (not at 3 to
+  5); the solver's proof sizes grow unevenly, sometimes slower than the pattern; and the small probing sample shows no trend, so a
+  global obstruction is a conjecture ([note](research/RIGID-LEVEL-20261114-001/rigid_level.md)).
+
 ## 14 November 2026: returns across levels, confirmed by its referee, its refutations not archived
 
 - The study of returns across levels (`LEVEL-RETURN-20261113-001`) was confirmed by its referee with fresh code. Two of its claims are

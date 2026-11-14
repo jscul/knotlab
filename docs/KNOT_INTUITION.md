@@ -3425,6 +3425,11 @@ So holes come in two kinds:
      depth in 188 of 204; so growth along one ray is mostly a choice of ray. In this sample the per-depth minimum grows in 66 of 300,
      fewer as self-calls multiply; a sixth of the families with no first-ray bond have one on another path
      ([decision note](../research/EVERY-RAY-20261113-001/every_ray.md)).
+   - **Every copy at depth, members anywhere** (`FREE-TARGET-20261114-001`; referee pending; code by Codex): in 43 of the 66 sampled
+     families that grow along every path, every way down forgets (all products of a few levels' port relations are rectangular), so
+     every bond from the top to any copy at depth s, wherever its members sit, has at least 2 + ⌊s/r⌋ members: the law counts depth
+     inside them with nothing chosen. None was shown bounded. Single-call chains count depth by construction (5,190 families)
+     ([decision note](../research/FREE-TARGET-20261114-001/free_target.md)).
    - **Knots placed by address maps** (`ADDR-KNOTS-20261113-001`; refereed, confirmed with fixes; code by Codex): a copy that meets a growing
      number of its ancestors' distinctions, all alike, is still finite-state (proved), so the size of a shared boundary is not what
      separates decidable from undecidable nesting. With knots placed by a small automaton on addresses, so that a part's joining

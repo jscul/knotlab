@@ -1,0 +1,168 @@
+{
+  "artifact_id": "ONE-SIDED-PATH-SKETCH-20261115-001B-P001",
+  "claim": "For every Boolean quadratic total Q of polar half-rank r and every single Boolean quadratic observation on only one evaluator, exactly 2^r terminal cases are necessary and sufficient under repeated separate affine hulls and arbitrary adaptive visible XOR questions.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/check_execution-001.json",
+    "sha256": "7a029035c2b26c125bd054f0e3f18e8565453afdb5ddceaea2f9e9a939c3a99f"
+  },
+  "finite_bases": {
+    "1": {
+      "nonsingular_second_forms": 1,
+      "represented_cases_by_required_leaves": {
+        "free": {
+          "0": 2,
+          "1": 12,
+          "2": 2
+        }
+      },
+      "tested_representatives_with_signs": {
+        "free": 16
+      }
+    },
+    "2": {
+      "nonsingular_second_forms": 28,
+      "represented_cases_by_required_leaves": {
+        "free": {
+          "0": 2,
+          "1": 120,
+          "2": 1164,
+          "3": 504,
+          "4": 2
+        }
+      },
+      "tested_representatives_with_signs": {
+        "free": 192
+      }
+    },
+    "3": {
+      "nonsingular_second_forms": 13888,
+      "represented_cases_by_required_leaves": {
+        "pinned": {
+          "0": 2,
+          "1": 2520,
+          "2": 2563020,
+          "3": 989784,
+          "4": 2
+        }
+      },
+      "tested_representatives_with_signs": {
+        "pinned": 1536
+      }
+    }
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "guarded_support_controls": {
+    "rank_two_promise_costs_majority_minority": [
+      3,
+      1
+    ],
+    "three_scalar_terminal_source_sets": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      [
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "two_arbitrary_labels_verified_tree_leaves": 3
+  },
+  "input_bindings": {
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/check.py": "6e31ef7ca8be6570ebe1817a847599e117e919f486d06689c7304a3e45398e13",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/checks.json": "89333a028761d544a086a280d4cc14898e0b72086dfbbea72d5c5960d73e6243",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/conditional_bases.py": "fec917bc18dfef4a3c2d71d798c9c55578ee4b11c19b647501ca7318b72bd59e",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/proof.md": "da5e6ebd8c130f16a507551a7036bdb033ebecb7c61bbe14024cc2260e1fd5fb",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/manifest.json": "92fabe4344d7b3d39b8059cf9150b53371527a846246fb7f08e2272f32e760d6",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/manifest.json": "da1900eebbd6d06fd3a8c0b56aa16d13778e11136ee6628daf4608f39d6c28a3",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/manifest.json": "3e4e6fccedd1207eb9400ee2de80ebf125d6f5cd21d5f9b1f3fb7e339d1d28bb",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/manifest.json": "5d8dfe229516563915cc6a269fb614755e9a5684039377047e9897cd2dad6e57"
+  },
+  "kind": "proof",
+  "pinned_rank_two_counterexample": {
+    "domain_size": 10,
+    "exact_cost_by_pinned_sign": [
+      1,
+      2
+    ],
+    "f": "0xe248",
+    "q": "0x8777",
+    "sources": 16
+  },
+  "raw_result": {
+    "path": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/checker_output-001.json",
+    "sha256": "89333a028761d544a086a280d4cc14898e0b72086dfbbea72d5c5960d73e6243"
+  },
+  "root_eigenvector_embeddings": {
+    "mixed_total_queries": 832,
+    "normalized_private_queries": 576
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "seventeen_edge_short_branches": {
+    "honest_sources_on_short_branches": 65536,
+    "prefix_answers": 128,
+    "query_depth_of_short_branches": 8,
+    "source_assignments_checked": 262144
+  },
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "ONE-SIDED-PATH-SKETCH-20261115-001B",
+  "validation": {
+    "independence": "V1. The density induction was audited against rare levels and a genuine pinned half-rank-two counterexample. The finite bases use exhaustive affine-cell splitting and explicit valid polar transformations, and 1,408 mixed and private branch embeddings were replayed on actual evaluator states.",
+    "level": "V1",
+    "novelty": "The exact count for an arbitrary one-sided quadratic extends the unsketched and jointly diagonal cases through conditional-density bounds and affine embeddings. Classical facts about quadratic bias and rank are given elementary local proofs."
+  },
+  "zero_rank_free_base": "one leaf suffices"
+}

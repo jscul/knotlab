@@ -1,0 +1,110 @@
+{
+  "artifact_id": "ONE-SIDED-PATH-SKETCH-20261115-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "ONE-SIDED-PATH-SKETCH-20261115-001A-P001",
+  "claim": "A one-sided XOR of all eight even-numbered products on the 17-product path leaves the exact minimum at 512 cases and minimum worst depth nine. An optimal unbalanced tree closes 128 branches at depth eight, and the proof gives 2^k cases on every odd path of 2k\u22121 products with this sketch for k\u22653.",
+  "dependencies": [
+    "TWO-PRODUCT-SKETCHES-20261115-001Z",
+    "TWO-PRODUCT-SKETCHES-20261115-001A",
+    "TWO-PRODUCT-SKETCHES-20261115-001B",
+    "TWO-PRODUCT-SKETCHES-20261115-001C",
+    "TERNARY-REPORT-JOINS-20261115-001C"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/check.py": "685b17f172f27e5275d4ba2f459806f77a389289a989105113a47e56bc26ed25",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/check_execution-001.json": "2258e83df5134f3abaf67684d5ec4e22c09ae60e76c42c82b821d2fa1447794b",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/checker_output-001.json": "2716ef8c3dc39596eee213c0988c12cf4e0cb4d915843dd9aa51ded77e9d4382",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/proof.md": "f09153d8355b4383ff869d370235dce1e434aa59b271cb97fd4fadfdfd3d4ecc",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/result.json": "ccb0c61bf8420cd76c217aca3104230a907dc7bd924ad7cab83af8da11d518d3"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Counting one deep branch as a full tree, overlooking an early closed case or counting queries when the affine cell already changes."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "ONE-SIDED-PATH-SKETCH-20261115-001"
+    ],
+    "home_scope": "ONE-SIDED-PATH-SKETCH-20261115-001",
+    "parents": [
+      "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/checks.json": "2716ef8c3dc39596eee213c0988c12cf4e0cb4d915843dd9aa51ded77e9d4382",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/pinned_six_check.py": "bd02a7379a8fcbc534786710deb8aca244d60109f94786b508ebc7e438002c3b",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/manifest.json": "92fabe4344d7b3d39b8059cf9150b53371527a846246fb7f08e2272f32e760d6",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/manifest.json": "da1900eebbd6d06fd3a8c0b56aa16d13778e11136ee6628daf4608f39d6c28a3",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/manifest.json": "3e4e6fccedd1207eb9400ee2de80ebf125d6f5cd21d5f9b1f3fb7e339d1d28bb",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/manifest.json": "5d8dfe229516563915cc6a269fb614755e9a5684039377047e9897cd2dad6e57"
+  },
+  "paths": {
+    "check": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/check.py",
+    "check_execution": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/check_execution-001.json",
+    "directory": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path",
+    "identity": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/identity.json",
+    "manifest": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/manifest.json",
+    "proof": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/proof.md",
+    "raw_result": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/checker_output-001.json",
+    "result": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/result.json"
+  },
+  "proof": "ONE-SIDED-PATH-SKETCH-20261115-001A-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "ONE-SIDED-PATH-SKETCH-20261115-001A",
+  "title": "Decide the 17-product even-edge sketch",
+  "validation": {
+    "independence": "V1. A direct count with the honest-sketch distribution was checked through the two exceptional small-dimensional promise problems. The checker evaluates actual path products across all 262,144 raw assignments and the finite affine branch controls.",
+    "level": "V1",
+    "novelty": "The predecessor provided the 512-leaf upper bound and a weaker honest-mass lower bound. This argument recovers the missing leaves from the other query outcomes in this singular quadratic pencil."
+  }
+}

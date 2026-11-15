@@ -1,0 +1,114 @@
+{
+  "artifact_id": "ONE-SIDED-PATH-SKETCH-20261115-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "ONE-SIDED-PATH-SKETCH-20261115-001C-P001",
+  "claim": "All 65,536 one-sided Boolean sketches on four inputs and all 4,194,304 one-sided quadratic sketches on six inputs preserve the respective four- and eight-leaf optima for a nonsingular total. The seven-product even sketch has exact first-answer costs nine and seven, and a rank-nine one-sided lower bound implies a 512-case minimum over all two-mask choices on 31 products.",
+  "dependencies": [
+    "TWO-PRODUCT-SKETCHES-20261115-001Z",
+    "TWO-PRODUCT-SKETCHES-20261115-001A",
+    "TWO-PRODUCT-SKETCHES-20261115-001B",
+    "TWO-PRODUCT-SKETCHES-20261115-001C",
+    "TERNARY-REPORT-JOINS-20261115-001C"
+  ],
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": [
+      "uniform-family-theorem"
+    ]
+  },
+  "evidence_bindings": {
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/check.py": "f827ddfd0365b222f8a257afdc9389b60ff48789c03be2effe74af3841e25430",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/check_execution-001.json": "817c354e3d981fef414a998acd170430ed289fdc99375731930e3af01e22bcea",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/checker_output-001.json": "be240346ca9d19e1cc575efa6a3df1caa02a67e7a64fbe49b6eb452e03bf9f70",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/proof.md": "0e6439f100b7e933962bafd2e73f34b1b35bdcef1c695017cc0f285eba7a34ba",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/result.json": "e9d4b41b2ca6da6a11eadfc9579d917826a34ef63c07cd1b25d86e4c2960e427"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Confusing a small-side strategy with a long-instance refutation, checking only input-only trees or inferring all masks from one pencil."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "ONE-SIDED-PATH-SKETCH-20261115-001"
+    ],
+    "home_scope": "ONE-SIDED-PATH-SKETCH-20261115-001",
+    "parents": [
+      "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/manifest.json",
+      "proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/checks.json": "be240346ca9d19e1cc575efa6a3df1caa02a67e7a64fbe49b6eb452e03bf9f70",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/minimax.cpp": "a3dec8a466b17c3b215e19742354dd64dd94ba547b4d10de4961ff8fd91fb8c8",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/solver.py": "eb2c6fa197fb0bc2f6cef78cec27acd0b31e7d805a03b2b7694c856043df2957",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/trees.json": "6b14a430bbbad35a9106108f561257e3901b0bcd5a06f469ca6247a8b1725956",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/manifest.json": "92fabe4344d7b3d39b8059cf9150b53371527a846246fb7f08e2272f32e760d6",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/manifest.json": "da1900eebbd6d06fd3a8c0b56aa16d13778e11136ee6628daf4608f39d6c28a3",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/manifest.json": "3e4e6fccedd1207eb9400ee2de80ebf125d6f5cd21d5f9b1f3fb7e339d1d28bb",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/manifest.json": "5d8dfe229516563915cc6a269fb614755e9a5684039377047e9897cd2dad6e57"
+  },
+  "paths": {
+    "check": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/check.py",
+    "check_execution": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/check_execution-001.json",
+    "directory": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls",
+    "identity": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/identity.json",
+    "manifest": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/manifest.json",
+    "proof": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/proof.md",
+    "raw_result": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/checker_output-001.json",
+    "result": "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/result.json"
+  },
+  "proof": "ONE-SIDED-PATH-SKETCH-20261115-001C-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "ONE-SIDED-PATH-SKETCH-20261115-001C",
+  "title": "Check finite one-sided examples and the transfer to 31 products",
+  "validation": {
+    "independence": "V1. The finite cases were checked using exact repeated affine hulls, symplectic equivalences, all possible first-question types on seven products and explicit unbalanced witnesses. Direct affine reductions and polar-radical controls verify the conditional 31-product transfer.",
+    "level": "V1",
+    "novelty": "The finite checks independently constrain all one-sided observations on small ranks, exhibit an optimal uneven split, and identify the exact hypothesis needed for a transfer from the one-sided problem to the original two-mask instance."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "artifact_id": "ONE-SIDED-PATH-SKETCH-20261115-001C-P001",
+  "at": "2026-11-15T23:41:56+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/check.py": "f827ddfd0365b222f8a257afdc9389b60ff48789c03be2effe74af3841e25430",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/checks.json": "be240346ca9d19e1cc575efa6a3df1caa02a67e7a64fbe49b6eb452e03bf9f70",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/minimax.cpp": "a3dec8a466b17c3b215e19742354dd64dd94ba547b4d10de4961ff8fd91fb8c8",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/proof.md": "0e6439f100b7e933962bafd2e73f34b1b35bdcef1c695017cc0f285eba7a34ba",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/solver.py": "eb2c6fa197fb0bc2f6cef78cec27acd0b31e7d805a03b2b7694c856043df2957",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/trees.json": "6b14a430bbbad35a9106108f561257e3901b0bcd5a06f469ca6247a8b1725956",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/manifest.json": "92fabe4344d7b3d39b8059cf9150b53371527a846246fb7f08e2272f32e760d6",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/manifest.json": "da1900eebbd6d06fd3a8c0b56aa16d13778e11136ee6628daf4608f39d6c28a3",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/manifest.json": "3e4e6fccedd1207eb9400ee2de80ebf125d6f5cd21d5f9b1f3fb7e339d1d28bb",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/manifest.json": "5d8dfe229516563915cc6a269fb614755e9a5684039377047e9897cd2dad6e57"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"17_edge_prefix_strategy_leaves\": 512,\n  \"17_to_7_affine_prefix_cases\": 32,\n  \"31_edge_ranks_Q_A_QplusA_B_QplusB\": [\n    16,\n    7,\n    9,\n    8,\n    16\n  ],\n  \"arbitrary_four_bit_tables\": 65536,\n  \"canonical_17_edge_restriction\": true,\n  \"conditional_trees\": {\n    \"seven_edges_b_one\": [\n      7,\n      3\n    ],\n    \"seven_edges_b_zero\": [\n      9,\n      4\n    ],\n    \"seven_edges_public\": [\n      16,\n      4\n    ],\n    \"seven_edges_sketch_first\": [\n      16,\n      5\n    ],\n    \"six_input_cubic_b_one\": [\n      1,\n      0\n    ],\n    \"six_input_cubic_b_zero\": [\n      7,\n      3\n    ],\n    \"six_input_cubic_sketch_first\": [\n      8,\n      4\n    ]\n  },\n  \"constructive_rank_nine_restrictions\": [\n    {\n      \"low_half_rank\": 7,\n      \"residual_half_rank_before_trim\": 9,\n      \"residual_radical_dimension\": 7,\n      \"retained_pairs\": 9\n    },\n    {\n      \"low_half_rank\": 3,\n      \"residual_half_rank_before_trim\": 13,\n      \"residual_radical_dimension\": 3,\n      \"retained_pairs\": 9\n    },\n    {\n      \"low_half_rank\": 3,\n      \"residual_half_rank_before_trim\": 13,\n      \"residual_radical_dimension\": 3,\n      \"retained_pairs\": 9\n    },\n    {\n      \"low_half_rank\": 0,\n      \"residual_half_rank_before_trim\": 16,\n      \"residual_radical_dimension\": 0,\n      \"retained_pairs\": 9\n    },\n    {\n      \"low_half_rank\": 6,\n      \"residual_half_rank_before_trim\": 10,\n      \"residual_radical_dimension\": 6,\n      \"retained_pairs\": 9\n    }\n  ],\n  \"even_sketch_optima_through_eight_edges\": [\n    2,\n    2,\n    4,\n    4,\n    8,\n    8,\n    16,\n    16\n  ],\n  \"four_bit_arbitrary_optimum\": 4,\n  \"four_bit_representatives\": 1024,\n  \"nonquadratic_zero_indicator_optimum\": 8,\n  \"nonquadratic_zero_indicator_truth\": 5519032976645,\n  \"radical_affine_normalization_checked\": true,\n  \"raw_subset_fibre_classification\": {\n    \"affine_deficient_opposite\": 3036,\n    \"affine_spanning_opposite\": 8880,\n    \"empty\": 1,\n    \"free_checksum\": 53619\n  },\n  \"seven_edge_even_first_bit\": [\n    9,\n    7\n  ],\n  \"seven_edge_even_full_leaves_depth\": [\n    16,\n    4\n  ],\n  \"seven_edge_first_form_classes\": {\n    \"input_rank_three\": 255,\n    \"translated_pure_sketch\": 64,\n    \"two_rank_three_absorption_maps\": 704\n  },\n  \"seven_edge_root_b_fibres\": {\n    \"0\": {\n      \"changed_live\": 0,\n      \"codimension_two\": 173740,\n      \"empty\": 0,\n      \"excluded_leaves\": 8\n    },\n    \"1\": {\n      \"changed_live\": 476,\n      \"codimension_two\": 173740,\n      \"empty\": 7,\n      \"excluded_leaves\": 6\n    }\n  },\n  \"six_bit_boolean_quadratics\": 4194304,\n  \"six_bit_normalized_polars\": 16384,\n  \"six_bit_polar_orbit_sizes\": [\n    1,\n    336,\n    315,\n    5040,\n    4032,\n    3780,\n    2880\n  ],\n  \"six_bit_quadratic_optimum\": 8,\n  \"six_bit_representatives\": 7,\n  \"status\": \"passed\"\n}\n",
+  "ticket": "ONE-SIDED-PATH-SKETCH-20261115-001C",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

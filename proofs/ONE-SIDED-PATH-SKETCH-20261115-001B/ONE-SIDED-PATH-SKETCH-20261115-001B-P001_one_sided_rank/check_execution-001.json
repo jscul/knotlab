@@ -1,0 +1,30 @@
+{
+  "artifact_id": "ONE-SIDED-PATH-SKETCH-20261115-001B-P001",
+  "at": "2026-11-15T23:40:04+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/check.py": "6e31ef7ca8be6570ebe1817a847599e117e919f486d06689c7304a3e45398e13",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/checks.json": "89333a028761d544a086a280d4cc14898e0b72086dfbbea72d5c5960d73e6243",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/conditional_bases.py": "fec917bc18dfef4a3c2d71d798c9c55578ee4b11c19b647501ca7318b72bd59e",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/proof.md": "da5e6ebd8c130f16a507551a7036bdb033ebecb7c61bbe14024cc2260e1fd5fb",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/manifest.json": "92fabe4344d7b3d39b8059cf9150b53371527a846246fb7f08e2272f32e760d6",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/manifest.json": "da1900eebbd6d06fd3a8c0b56aa16d13778e11136ee6628daf4608f39d6c28a3",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/manifest.json": "3e4e6fccedd1207eb9400ee2de80ebf125d6f5cd21d5f9b1f3fb7e339d1d28bb",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/manifest.json": "5d8dfe229516563915cc6a269fb614755e9a5684039377047e9897cd2dad6e57"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"finite_bases\": {\n    \"1\": {\n      \"nonsingular_second_forms\": 1,\n      \"represented_cases_by_required_leaves\": {\n        \"free\": {\n          \"0\": 2,\n          \"1\": 12,\n          \"2\": 2\n        }\n      },\n      \"tested_representatives_with_signs\": {\n        \"free\": 16\n      }\n    },\n    \"2\": {\n      \"nonsingular_second_forms\": 28,\n      \"represented_cases_by_required_leaves\": {\n        \"free\": {\n          \"0\": 2,\n          \"1\": 120,\n          \"2\": 1164,\n          \"3\": 504,\n          \"4\": 2\n        }\n      },\n      \"tested_representatives_with_signs\": {\n        \"free\": 192\n      }\n    },\n    \"3\": {\n      \"nonsingular_second_forms\": 13888,\n      \"represented_cases_by_required_leaves\": {\n        \"pinned\": {\n          \"0\": 2,\n          \"1\": 2520,\n          \"2\": 2563020,\n          \"3\": 989784,\n          \"4\": 2\n        }\n      },\n      \"tested_representatives_with_signs\": {\n        \"pinned\": 1536\n      }\n    }\n  },\n  \"guarded_support_controls\": {\n    \"rank_two_promise_costs_majority_minority\": [\n      3,\n      1\n    ],\n    \"three_scalar_terminal_source_sets\": [\n      [\n        0,\n        1,\n        2,\n        3,\n        4,\n        6\n      ],\n      [\n        5,\n        6,\n        8,\n        9,\n        10,\n        11\n      ],\n      [\n        6,\n        7,\n        12,\n        13,\n        14,\n        15\n      ]\n    ],\n    \"two_arbitrary_labels_verified_tree_leaves\": 3\n  },\n  \"pinned_rank_two_counterexample\": {\n    \"domain_size\": 10,\n    \"exact_cost_by_pinned_sign\": [\n      1,\n      2\n    ],\n    \"f\": \"0xe248\",\n    \"q\": \"0x8777\",\n    \"sources\": 16\n  },\n  \"root_eigenvector_embeddings\": {\n    \"mixed_total_queries\": 832,\n    \"normalized_private_queries\": 576\n  },\n  \"seventeen_edge_short_branches\": {\n    \"honest_sources_on_short_branches\": 65536,\n    \"prefix_answers\": 128,\n    \"query_depth_of_short_branches\": 8,\n    \"source_assignments_checked\": 262144\n  },\n  \"status\": \"passed\",\n  \"zero_rank_free_base\": \"one leaf suffices\"\n}\n",
+  "ticket": "ONE-SIDED-PATH-SKETCH-20261115-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

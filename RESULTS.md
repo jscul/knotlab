@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**360 current results** and 5 superseded ones, from 393 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**363 current results** and 5 superseded ones, from 394 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 19 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 47 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 50 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 393 epics with their closures
+- [Epics](#epics): all 394 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -405,6 +405,15 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-15 · When two types of identification first change the outcome** (`ONE-RELAY-PADDING-20261115-001-D001`).
   With distinct middles, every pad present on both branches contributes two local minimal obstructions, even when pads are reused between stages. One repeated middle name still allows a linear satisfiability algorithm, and two-stage inputs show that sharing a middle and a pad can change the answer only in combination.
   [proof P001](proofs/ONE-RELAY-PADDING-20261115-001A/ONE-RELAY-PADDING-20261115-001A-P001_local_pad_obstructions/proof.md), [proof P001](proofs/ONE-RELAY-PADDING-20261115-001B/ONE-RELAY-PADDING-20261115-001B-P001_one_middle_cut/proof.md), [epic closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · An early answer can save a question while its partner pays the difference** (`ONE-SIDED-PATH-SKETCH-20261115-001-D001`).
+  The 17-product path with its even-edge sketch needs 512 leaves and minimum worst-case depth nine, and an optimal tree can have 128 leaves at depth eight. Asking the even-edge bit first on seven products costs nine leaves on zero and seven on one.
+  [proof P001](proofs/ONE-SIDED-PATH-SKETCH-20261115-001A/ONE-SIDED-PATH-SKETCH-20261115-001A-P001_even_path/proof.md), [proof P001](proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/proof.md), [epic closure](proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · One local quadratic observation preserves the full case count** (`ONE-SIDED-PATH-SKETCH-20261115-001-D002`).
+  Every single one-sided quadratic observation preserves the exact minimum of two to the polar half-rank of the common total. This includes arbitrary affine terms, radical coordinates and adaptive questions mixing all visible bits.
+  [proof P001](proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/proof.md), [epic closure](proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · The optimum with two arbitrary product masks on 31 products is 512** (`ONE-SIDED-PATH-SKETCH-20261115-001-D003`).
+  Every ordered pair of masks requires at least 512 terminal cases and the common midpoint achieves equality. A low-rank mask leaves a one-sided rank-nine obstruction, and the complementary large-rank condition covers the other pairs.
+  [proof P001](proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/proof.md), [proof P001](proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/proof.md), [epic closure](proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · How much reusable product naming the route proof lower bound withstands** (`PRODUCT-NAME-TRANSFER-20261115-001-D001`).
   Signed projection retains product definitions, and either a sublinear count of names or a fixed nesting depth suffices to preserve exponential proof length in the source variable count under the admitted preprint. With unlimited count and depth the system simulates ordinary extended resolution, for which this argument supplies no lower bound.
   *Qualification pending: implementation interfaces only. Frozen B can falsely reject a valid certificate that reuses an already-empty input axiom; use the unified C converter. C also normalizes canceled factor terms before ancestry renumbering and counts a displayed multiplier even when it multiplies zero. Its three regression controls pass. The mathematical transfer, elimination bounds, admitted lower bounds and all strict ternary examples stand; no theorem is withdrawn. See PRODUCT-NAME-TRANSFER-20261115-001C-P001 and the 15 November HISTORY entry.*
@@ -1603,6 +1612,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Regroup an AND proof and carry its pair parity directly (`GROUPED-PRODUCT-REPLAY-20261115-001`) | [closure](proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GROUPED-PRODUCT-REPLAY-20261115-001/) |
 | 2026-11-15 | When switch settings let two blocks forget a shared choice (`GUARD-CHOICE-SEPARATION-20261115-001`) | [closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GUARD-CHOICE-SEPARATION-20261115-001/) |
 | 2026-11-15 | A linear cut scan with shared hidden padding (`ONE-RELAY-PADDING-20261115-001`) | [closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-RELAY-PADDING-20261115-001/) |
+| 2026-11-15 | One exposed quadratic sum on the 17-product path (`ONE-SIDED-PATH-SKETCH-20261115-001`) | [closure](proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-SIDED-PATH-SKETCH-20261115-001/) |
 | 2026-11-15 | Transport and limits of proof-local reusable product names (`PRODUCT-NAME-TRANSFER-20261115-001`) | [closure](proofs/PRODUCT-NAME-TRANSFER-20261115-001Z/PRODUCT-NAME-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/PRODUCT-NAME-TRANSFER-20261115-001/) |
 | 2026-11-15 | Transferring route proof length when proofs can multiply two linear expressions (`QUADRATIC-ROUTE-TRANSFER-20261115-001`) | [closure](proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001Z/QUADRATIC-ROUTE-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/QUADRATIC-ROUTE-TRANSFER-20261115-001/) |
 | 2026-11-15 | What a one-pass reader must remember about joined routes (`ROUTE-FRONTIER-MEMORY-20261115-001`) | [closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-FRONTIER-MEMORY-20261115-001/) |

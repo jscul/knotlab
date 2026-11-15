@@ -1,0 +1,184 @@
+{
+  "local_partitions": {
+    "0000": {
+      "supports_by_guard_count": {
+        "12": 4
+      },
+      "blocked_half_masks": 49,
+      "blocked_raw_stage_masks": 16129
+    },
+    "0001": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      },
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073
+    },
+    "0010": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      },
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073
+    },
+    "0011": {
+      "supports_by_guard_count": {
+        "12": 2
+      },
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191
+    },
+    "0012": {
+      "supports_by_guard_count": {
+        "12": 2
+      },
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191
+    },
+    "0100": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      },
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073
+    },
+    "0101": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 4
+      },
+      "blocked_half_masks": 35,
+      "blocked_raw_stage_masks": 8387
+    },
+    "0102": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      },
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289
+    },
+    "0110": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 4
+      },
+      "blocked_half_masks": 35,
+      "blocked_raw_stage_masks": 8387
+    },
+    "0111": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      },
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073
+    },
+    "0112": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      },
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289
+    },
+    "0120": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      },
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289
+    },
+    "0121": {
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      },
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289
+    },
+    "0122": {
+      "supports_by_guard_count": {
+        "12": 2
+      },
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191
+    },
+    "0123": {
+      "supports_by_guard_count": {
+        "12": 2
+      },
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191
+    }
+  },
+  "local_half_masks": 3840,
+  "two_stages": {
+    "layouts": 4140,
+    "with_cross_stage_reuse": 3915,
+    "complete_half_masks": 271319040,
+    "layouts_by_number_of_minimal_supports": {
+      "4": 738,
+      "8": 1696,
+      "12": 216,
+      "16": 1130,
+      "24": 332,
+      "36": 28
+    }
+  },
+  "raw_cnf": {
+    "solver_tests": {
+      "complete_guard_vectors": 9216,
+      "minimal_guard_supports": 77,
+      "single_switch_deletions": 3336
+    },
+    "fresh_vs_shared": {
+      "half_mask": 90,
+      "raw_support_size": 36,
+      "fresh_sat": true,
+      "shared_sat": false
+    },
+    "visible_guard_restrictions": [
+      {
+        "loops": [
+          "AinPlus",
+          "AoutPlus"
+        ],
+        "contact": "BinMinus",
+        "allowed": 7,
+        "is_knot": true,
+        "free_guard_indices": [
+          27,
+          33,
+          36
+        ]
+      },
+      {
+        "loops": [
+          "AinPlus",
+          "AoutPlus",
+          "BinMinus"
+        ],
+        "contact": "BoutMinus",
+        "allowed": 15,
+        "is_knot": true,
+        "free_guard_indices": [
+          27,
+          33,
+          36,
+          42
+        ]
+      }
+    ],
+    "pinning_two_descents": {
+      "guards_only": true,
+      "first_descent": true,
+      "last_descent": true,
+      "both_prescribed_descents": false
+    }
+  }
+}

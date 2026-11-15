@@ -1,0 +1,247 @@
+{
+  "artifact_id": "ONE-RELAY-PADDING-20261115-001A-P001",
+  "claim": "With distinct middle names, each pad identity shared between the two branches adds exactly two local minimal contradictory guard supports. Global supports are products of one local support at each stage and the two endpoints, even if hidden pads are reused between stages.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/ONE-RELAY-PADDING-20261115-001A/ONE-RELAY-PADDING-20261115-001A-P001_local_pad_obstructions/check_execution-001.json",
+    "sha256": "0751c88010788f817f193aea0d1764c58f53ff9934056266031c6cd4d7758863"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/ONE-RELAY-PADDING-20261115-001A/ONE-RELAY-PADDING-20261115-001A-P001_local_pad_obstructions/check.py": "434cb6576f6f89d6c6f11a5c1a9ad8f0b0ddff55b4e93872fa9f4cfb8775229e",
+    "proofs/ONE-RELAY-PADDING-20261115-001A/ONE-RELAY-PADDING-20261115-001A-P001_local_pad_obstructions/checks.json": "95dd9a2a43353525a3e317606d3441eee51f02678845dfed3128bce26f0a35dc",
+    "proofs/ONE-RELAY-PADDING-20261115-001A/ONE-RELAY-PADDING-20261115-001A-P001_local_pad_obstructions/proof.md": "18f61d4ca43c61e615b17fb70193f4b5d7853db321beccd7d966fdd5d5dd2d0a",
+    "proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/manifest.json": "ef41c90d033248744b5a5c01bfea9220b333ce5beb23406f5e6f12a3b1c2af93",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/manifest.json": "5e38bc3a7ae1dcdbccf5553efc81429f56eb97b074aca1b37863b7dab2c2d0e9"
+  },
+  "kind": "proof",
+  "local_half_masks": 3840,
+  "local_partitions": {
+    "0000": {
+      "blocked_half_masks": 49,
+      "blocked_raw_stage_masks": 16129,
+      "supports_by_guard_count": {
+        "12": 4
+      }
+    },
+    "0001": {
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073,
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      }
+    },
+    "0010": {
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073,
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      }
+    },
+    "0011": {
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191,
+      "supports_by_guard_count": {
+        "12": 2
+      }
+    },
+    "0012": {
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191,
+      "supports_by_guard_count": {
+        "12": 2
+      }
+    },
+    "0100": {
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073,
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      }
+    },
+    "0101": {
+      "blocked_half_masks": 35,
+      "blocked_raw_stage_masks": 8387,
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 4
+      }
+    },
+    "0102": {
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289,
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      }
+    },
+    "0110": {
+      "blocked_half_masks": 35,
+      "blocked_raw_stage_masks": 8387,
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 4
+      }
+    },
+    "0111": {
+      "blocked_half_masks": 37,
+      "blocked_raw_stage_masks": 9073,
+      "supports_by_guard_count": {
+        "12": 2,
+        "15": 2
+      }
+    },
+    "0112": {
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289,
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      }
+    },
+    "0120": {
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289,
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      }
+    },
+    "0121": {
+      "blocked_half_masks": 33,
+      "blocked_raw_stage_masks": 8289,
+      "supports_by_guard_count": {
+        "12": 2,
+        "18": 2
+      }
+    },
+    "0122": {
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191,
+      "supports_by_guard_count": {
+        "12": 2
+      }
+    },
+    "0123": {
+      "blocked_half_masks": 31,
+      "blocked_raw_stage_masks": 8191,
+      "supports_by_guard_count": {
+        "12": 2
+      }
+    }
+  },
+  "raw_cnf": {
+    "fresh_vs_shared": {
+      "fresh_sat": true,
+      "half_mask": 90,
+      "raw_support_size": 36,
+      "shared_sat": false
+    },
+    "pinning_two_descents": {
+      "both_prescribed_descents": false,
+      "first_descent": true,
+      "guards_only": true,
+      "last_descent": true
+    },
+    "solver_tests": {
+      "complete_guard_vectors": 9216,
+      "minimal_guard_supports": 77,
+      "single_switch_deletions": 3336
+    },
+    "visible_guard_restrictions": [
+      {
+        "allowed": 7,
+        "contact": "BinMinus",
+        "free_guard_indices": [
+          27,
+          33,
+          36
+        ],
+        "is_knot": true,
+        "loops": [
+          "AinPlus",
+          "AoutPlus"
+        ]
+      },
+      {
+        "allowed": 15,
+        "contact": "BoutMinus",
+        "free_guard_indices": [
+          27,
+          33,
+          36,
+          42
+        ],
+        "is_knot": true,
+        "loops": [
+          "AinPlus",
+          "AoutPlus",
+          "BinMinus"
+        ]
+      }
+    ]
+  },
+  "raw_result": {
+    "path": "proofs/ONE-RELAY-PADDING-20261115-001A/ONE-RELAY-PADDING-20261115-001A-P001_local_pad_obstructions/checker_output-001.json",
+    "sha256": "b02212ce694a4201f5d1fe95d5f5a7867d466756f0f8338b2bb5dd9264fcd52b"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "ONE-RELAY-PADDING-20261115-001A",
+  "two_stages": {
+    "complete_half_masks": 271319040,
+    "layouts": 4140,
+    "layouts_by_number_of_minimal_supports": {
+      "12": 216,
+      "16": 1130,
+      "24": 332,
+      "36": 28,
+      "4": 738,
+      "8": 1696
+    },
+    "with_cross_stage_reuse": 3915
+  },
+  "validation": {
+    "independence": "Symbolic classification by failed branch edges, independent exhaustive finite enumerations, guarded SAT and erasure controls.",
+    "level": "V1",
+    "novelty": "The switching-network interpretation is classical. The exact visible-guard support polynomial and its invariance under arbitrary cross-stage-only pad sharing concern this strict construction."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "activation_vectors_per_wiring": 65536,
+  "classes": {
+    "across stages": {
+      "joint_only_inputs": 3168,
+      "minimal_joint_only_supports_size_48": 48,
+      "minimal_joint_only_supports_size_54": 64,
+      "wirings": 112,
+      "wirings_with_joint_only_inputs": 40
+    },
+    "same stage": {
+      "joint_only_inputs": 1776,
+      "minimal_joint_only_supports_size_48": 32,
+      "minimal_joint_only_supports_size_54": 32,
+      "wirings": 56,
+      "wirings_with_joint_only_inputs": 12
+    }
+  },
+  "direct_model_checks_on_minima": 204,
+  "distinguished_raw_core": 48,
+  "other_direct_model_checks": 11088,
+  "small_witnesses": [
+    {
+      "active_half_mask": 4050,
+      "kind": "across stages",
+      "middle_join": [
+        0,
+        2
+      ],
+      "pad_join": [
+        0,
+        2
+      ],
+      "raw_size": 48
+    },
+    {
+      "active_half_mask": 64722,
+      "kind": "across stages",
+      "middle_join": [
+        0,
+        2
+      ],
+      "pad_join": [
+        0,
+        2
+      ],
+      "raw_size": 54
+    },
+    {
+      "active_half_mask": 3870,
+      "kind": "same stage",
+      "middle_join": [
+        0,
+        1
+      ],
+      "pad_join": [
+        0,
+        2
+      ],
+      "raw_size": 48
+    },
+    {
+      "active_half_mask": 56892,
+      "kind": "same stage",
+      "middle_join": [
+        0,
+        1
+      ],
+      "pad_join": [
+        4,
+        6
+      ],
+      "raw_size": 54
+    }
+  ],
+  "status": "passed",
+  "wirings": 168
+}

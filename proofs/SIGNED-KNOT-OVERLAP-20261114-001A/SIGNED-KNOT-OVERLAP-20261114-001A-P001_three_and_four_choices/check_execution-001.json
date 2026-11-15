@@ -1,0 +1,26 @@
+{
+  "artifact_id": "SIGNED-KNOT-OVERLAP-20261114-001A-P001",
+  "at": "2026-11-15T07:27:10+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001A/SIGNED-KNOT-OVERLAP-20261114-001A-P001_three_and_four_choices/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/manifest.json": "278af85a7a65fc75aa29acad75270627925686a4a81bebabaea619e87b78fd80",
+    "proofs/KNOT-FOUNDATION-20261019-001E/KNOT-FOUNDATION-20261019-001E-P001_forgetting_reading/manifest.json": "10b44105465401c686a5b6c58944163462b1e348c626c948507e4421ef618af5",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001A/SIGNED-KNOT-OVERLAP-20261114-001A-P001_three_and_four_choices/check.py": "7c287086c04e766286f3ba45b4a95b3a1a3114515c34c09c33fff0a161b1b573",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001A/SIGNED-KNOT-OVERLAP-20261114-001A-P001_three_and_four_choices/projections.json": "4a4b17a59f04e84bfdcccc2a2d78f151a21bdaa5c06f2bba32dbd2fd5770c8b7",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001A/SIGNED-KNOT-OVERLAP-20261114-001A-P001_three_and_four_choices/proof.md": "f1034861bc85bcba71ffe15e3c0d9678934dabab8da9ad3308de43dcc3fbb11e"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\"eight_slots\": {\"bits\": 51, \"private_quartets\": {\"aligned\": 36, \"different_public\": 168, \"opposed\": 48}, \"relative_sign_comparisons\": 21, \"slots\": 8, \"small_projections\": {\"0_free\": 1, \"1_free\": 51, \"2_free\": 1275, \"3_constrained\": 32, \"3_free\": 20793}}, \"knotlab\": {\"aligned\": {\"K1\": false, \"K2\": true, \"K3\": true, \"count\": 16, \"is_knot\": false, \"omitted\": [], \"variables\": [\"e0_1\", \"w0_1\", \"e1_1\", \"w1_1\"]}, \"core\": {\"K1\": true, \"K2\": true, \"K3\": true, \"count\": 7, \"is_knot\": true, \"omitted\": [\"000\"], \"variables\": [\"w0_0\", \"w0_1\", \"w0_2\"]}, \"negative_gate\": {\"K1\": true, \"K2\": true, \"K3\": true, \"count\": 7, \"is_knot\": true, \"omitted\": [\"111\"], \"variables\": [\"e1_0\", \"w1_0\", \"x0\"]}, \"nondisplayed\": {\"K1\": false, \"K2\": true, \"K3\": true, \"count\": 8, \"is_knot\": false, \"omitted\": [], \"variables\": [\"x0\", \"x1\", \"x2\"]}, \"opposed\": {\"K1\": true, \"K2\": true, \"K3\": true, \"count\": 15, \"is_knot\": true, \"omitted\": [\"1111\"], \"variables\": [\"e0_0\", \"w0_0\", \"e1_0\", \"w1_0\"]}, \"positive_gate\": {\"K1\": true, \"K2\": true, \"K3\": true, \"count\": 7, \"is_knot\": true, \"omitted\": [\"110\"], \"variables\": [\"e0_0\", \"w0_0\", \"x0\"]}}, \"one_slot\": {\"bits\": 9, \"private_quartets\": {}, \"signings\": 8, \"small_projections\": {\"0_free\": 8, \"1_free\": 72, \"2_free\": 288, \"3_constrained\": 32, \"3_free\": 640}}, \"status\": \"passed\", \"two_distinct_slots\": {\"bits\": 16, \"private_quartets\": {\"aligned\": 64, \"different_public\": 448, \"opposed\": 64}, \"signings\": 64, \"small_projections\": {\"0_free\": 64, \"1_free\": 1024, \"2_free\": 7680, \"3_constrained\": 512, \"3_free\": 35328}}, \"two_repeated_slots\": {\"bits\": 15, \"private_quartets\": {\"aligned\": 96, \"different_public\": 384, \"opposed\": 96}, \"signings\": 64, \"small_projections\": {\"0_free\": 64, \"1_free\": 960, \"2_free\": 6720, \"3_constrained\": 512, \"3_free\": 28608}}}\n",
+  "ticket": "SIGNED-KNOT-OVERLAP-20261114-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

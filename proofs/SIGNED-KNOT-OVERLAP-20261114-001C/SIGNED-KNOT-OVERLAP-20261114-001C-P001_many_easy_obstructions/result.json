@@ -1,0 +1,93 @@
+{
+  "artifact_id": "SIGNED-KNOT-OVERLAP-20261114-001C-P001",
+  "claim": "A linear-size ternary family has exactly 2^r minimally constrained guard supports, all sharing 24 switches. A guard-only CNF needs exactly 2^r clauses. Deciding one guard vector takes exactly 24r+24 deterministic worst-case bit probes and logarithmic bounded-fan-in parallel depth.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/SIGNED-KNOT-OVERLAP-20261114-001C/SIGNED-KNOT-OVERLAP-20261114-001C-P001_many_easy_obstructions/check_execution-001.json",
+    "sha256": "2226ac93fb89a0a1697170450dc75fdc96b23c10d7ee07f9458441c2e0af94d8"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "four_guard_restriction_allowed": 15,
+  "input_bindings": {
+    "proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/manifest.json": "278af85a7a65fc75aa29acad75270627925686a4a81bebabaea619e87b78fd80",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001C/SIGNED-KNOT-OVERLAP-20261114-001C-P001_many_easy_obstructions/check.py": "54d7a006b78c876aa28901a8f06951cb9ef67ceb5325ad4c64adee7867bf78c6",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001C/SIGNED-KNOT-OVERLAP-20261114-001C-P001_many_easy_obstructions/checks.json": "e746723811e07d9bf1f8fa58fe2620f53225df02ef77620e1236178d7d83ba19",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001C/SIGNED-KNOT-OVERLAP-20261114-001C-P001_many_easy_obstructions/proof.md": "b19531d210717e5ae3f3e7869385e9958ffb837e5826c87033be87005f1d60bc",
+    "research/SIGNED-KNOT-OVERLAP-20261114-001/overlapping_obstructions_preregistration.md": "f95e634b501059faf37ca7f58e67d8fd52262f9f24e88adb9ea16c44420d11f7"
+  },
+  "kind": "proof",
+  "local_cases": 104,
+  "r8": {
+    "full_depth_orders_checked": 10,
+    "guards_common": 24,
+    "guards_each": 120,
+    "guards_total": 216,
+    "minimal_zero_certificates": 1176,
+    "obstructions": 256,
+    "sensitive_bits": 120
+  },
+  "raw_result": {
+    "path": "proofs/SIGNED-KNOT-OVERLAP-20261114-001C/SIGNED-KNOT-OVERLAP-20261114-001C-P001_many_easy_obstructions/checker_output-001.json",
+    "sha256": "f94479bbd18a23cd0cda1a6794cf426b768f3be6769e62787f5480200c08195a"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_censuses": [
+    {
+      "minimal": 2,
+      "source_activations": 64,
+      "stage_count": 1
+    },
+    {
+      "minimal": 4,
+      "source_activations": 1024,
+      "stage_count": 2
+    },
+    {
+      "minimal": 8,
+      "source_activations": 16384,
+      "stage_count": 3
+    }
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "SIGNED-KNOT-OVERLAP-20261114-001C",
+  "validation": {
+    "independence": "Independent referee identified the exact published two-route mechanism, audited the minimal and dual certificates, sharpened the adaptive upper/lower argument to all input bits, and exhaustively tested finite route masks. Coordinator replayed 1,215 raw strict-CNF SAT cases, direct truth tables and a deliberately wrong stage operation.",
+    "level": "V1",
+    "novelty": "The exponential route construction is classical (Garc\u00eda de la Banda, Stuckey and Wazny, Example 3). The strict ternary realization and exact projected clause, literal, switch, work and depth counts are the program-local transfer."
+  }
+}

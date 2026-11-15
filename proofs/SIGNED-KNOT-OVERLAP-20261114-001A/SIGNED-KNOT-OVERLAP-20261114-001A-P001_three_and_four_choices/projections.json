@@ -1,0 +1,153 @@
+{
+  "one_slot": {
+    "bits": 9,
+    "signings": 8,
+    "small_projections": {
+      "0_free": 8,
+      "1_free": 72,
+      "2_free": 288,
+      "3_constrained": 32,
+      "3_free": 640
+    },
+    "private_quartets": {}
+  },
+  "two_repeated_slots": {
+    "bits": 15,
+    "signings": 64,
+    "small_projections": {
+      "0_free": 64,
+      "1_free": 960,
+      "2_free": 6720,
+      "3_constrained": 512,
+      "3_free": 28608
+    },
+    "private_quartets": {
+      "aligned": 96,
+      "different_public": 384,
+      "opposed": 96
+    }
+  },
+  "two_distinct_slots": {
+    "bits": 16,
+    "signings": 64,
+    "small_projections": {
+      "0_free": 64,
+      "1_free": 1024,
+      "2_free": 7680,
+      "3_constrained": 512,
+      "3_free": 35328
+    },
+    "private_quartets": {
+      "aligned": 64,
+      "different_public": 448,
+      "opposed": 64
+    }
+  },
+  "eight_slots": {
+    "bits": 51,
+    "slots": 8,
+    "small_projections": {
+      "0_free": 1,
+      "1_free": 51,
+      "2_free": 1275,
+      "3_constrained": 32,
+      "3_free": 20793
+    },
+    "private_quartets": {
+      "aligned": 36,
+      "different_public": 168,
+      "opposed": 48
+    },
+    "relative_sign_comparisons": 21
+  },
+  "knotlab": {
+    "core": {
+      "variables": [
+        "w0_0",
+        "w0_1",
+        "w0_2"
+      ],
+      "count": 7,
+      "omitted": [
+        "000"
+      ],
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "is_knot": true
+    },
+    "positive_gate": {
+      "variables": [
+        "e0_0",
+        "w0_0",
+        "x0"
+      ],
+      "count": 7,
+      "omitted": [
+        "110"
+      ],
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "is_knot": true
+    },
+    "negative_gate": {
+      "variables": [
+        "e1_0",
+        "w1_0",
+        "x0"
+      ],
+      "count": 7,
+      "omitted": [
+        "111"
+      ],
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "is_knot": true
+    },
+    "nondisplayed": {
+      "variables": [
+        "x0",
+        "x1",
+        "x2"
+      ],
+      "count": 8,
+      "omitted": [],
+      "K1": false,
+      "K2": true,
+      "K3": true,
+      "is_knot": false
+    },
+    "opposed": {
+      "variables": [
+        "e0_0",
+        "w0_0",
+        "e1_0",
+        "w1_0"
+      ],
+      "count": 15,
+      "omitted": [
+        "1111"
+      ],
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "is_knot": true
+    },
+    "aligned": {
+      "variables": [
+        "e0_1",
+        "w0_1",
+        "e1_1",
+        "w1_1"
+      ],
+      "count": 16,
+      "omitted": [],
+      "K1": false,
+      "K2": true,
+      "K3": true,
+      "is_knot": false
+    }
+  }
+}

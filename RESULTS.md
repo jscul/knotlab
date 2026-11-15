@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**332 current results** and 5 superseded ones, from 377 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**334 current results** and 5 superseded ones, from 378 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 21 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 23 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 377 epics with their closures
+- [Epics](#epics): all 378 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -374,6 +374,12 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-14 · Joint crossing questions need exponentially more advance information when the input permits correlations** (`JOINT-BRAID-READS-20261114-001-D001`).
   For arbitrary allowed states on b crossed pairs, the minimum fixed-length message answering every later joint test has exponential base six. If the allowed table is a Cartesian product, exactly one plus 109 to the power b answer records occur and the message length grows linearly.
   [proof P001](proofs/JOINT-BRAID-READS-20261114-001A/JOINT-BRAID-READS-20261114-001A-P001_finite_certificates/proof.md), [proof P001](proofs/JOINT-BRAID-READS-20261114-001B/JOINT-BRAID-READS-20261114-001B-P001_message_growth/proof.md), [epic closure](proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/proof.md)
+- **2026-11-14 · Identical ternary knot locations allow both tractable and NP-complete completion families** (`SIGNED-KNOT-OVERLAP-20261114-001-D001`).
+  The signed and aligned systems have exactly the same constrained triples and seven allowed states on each. Their later switch decisions admit a uniform strict 3-SAT reduction in the signed family and a polynomial-time completion rule in the aligned family; four private variables suffice to read a relative sign.
+  [proof P001](proofs/SIGNED-KNOT-OVERLAP-20261114-001A/SIGNED-KNOT-OVERLAP-20261114-001A-P001_three_and_four_choices/proof.md), [proof P001](proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/proof.md), [epic closure](proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/proof.md)
+- **2026-11-14 · Exponentially many overlapping guard obstructions coexist with an exactly linear decision cost** (`SIGNED-KNOT-OVERLAP-20261114-001-D002`).
+  At r stages the projected switch relation requires exactly 2^r clauses over the original switches, one per minimally constrained set, with 24 switches shared by all of them. Deciding a supplied activation takes exactly 24r+24 worst-case deterministic bit probes and logarithmic bounded-fan-in parallel depth.
+  [proof P001](proofs/SIGNED-KNOT-OVERLAP-20261114-001C/SIGNED-KNOT-OVERLAP-20261114-001C-P001_many_easy_obstructions/proof.md), [epic closure](proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -1508,6 +1514,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-14 | Does reading decide whether the bond grows (`READ-RULE-20261114-001`) | [closure](proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/READ-RULE-20261114-001/) |
 | 2026-11-14 | Rigidity at every level for the alternating addressed patterns (`RIGID-LEVEL-20261114-001`) | — | [folder](research/RIGID-LEVEL-20261114-001/) |
 | 2026-11-14 | Why the reach across levels is one distinction per level (`RULER-LEVEL-20261114-001`) | — | [folder](research/RULER-LEVEL-20261114-001/) |
+| 2026-11-14 | The same overlapping ternary knots with different SAT decisions (`SIGNED-KNOT-OVERLAP-20261114-001`) | [closure](proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/proof.md) | [folder](research/SIGNED-KNOT-OVERLAP-20261114-001/) |
 | 2026-11-14 | Is identity the whole story of forgetting (`TIE-CYCLE-20261114-001`) | [closure](proofs/TIE-CYCLE-20261114-001Z/TIE-CYCLE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-CYCLE-20261114-001/) |
 | 2026-11-14 | Is reading the whole rule for the bond (`TOP-INFO-20261114-001`) | [closure](proofs/TOP-INFO-20261114-001Z/TOP-INFO-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TOP-INFO-20261114-001/) |
 | 2026-11-15 | Rulers with cycles: when cycles of knots keep or break the reach across levels (`CYCLE-RULER-20261115-001`) | — | [folder](research/CYCLE-RULER-20261115-001/) |

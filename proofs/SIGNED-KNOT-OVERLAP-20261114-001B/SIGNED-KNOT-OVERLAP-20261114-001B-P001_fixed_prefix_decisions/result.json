@@ -1,0 +1,80 @@
+{
+  "artifact_id": "SIGNED-KNOT-OVERLAP-20261114-001B-P001",
+  "claim": "A single uniformly constructible signed prefix for each variable count encodes strict 3-SAT in its later switches. Aligned literal signs and affine equations have polynomial-time decision algorithms on the same ternary scopes. Switch-only minimally constrained sets are exactly the complete guard blocks of minimal unsatisfiable source clauses.",
+  "distinct_ternary_relations_verified_by_knotlab": 4,
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/check_execution-001.json",
+    "sha256": "19374abd320ff0ff3bf2ff6182a69fde5f96f5d929f02c20c6ed2ff7f497a2f7"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "full_n3_affine_row_sums_with_at_most_three_guards": 595200,
+  "full_n3_affine_short_rows": 32,
+  "full_n3_triples_per_signed_or_aligned_control": 20825,
+  "grouped_affine_yes_n3": 2,
+  "grouped_aligned_yes_n3": 256,
+  "grouped_guard_knot_width_checked_by_knotlab": 8,
+  "grouped_inputs_with_partial_public_pins_checked": 6912,
+  "grouped_signed_yes_n3": 255,
+  "independent_affine_guard_vectors_n3": 131072,
+  "independent_signed_guard_vectors_n3": 16777215,
+  "input_bindings": {
+    "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json": "767753e5ff4857bd0b31e17abf83c4b4bc5d2f169e1c98feffb5ff5cc14a0b42",
+    "proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/manifest.json": "278af85a7a65fc75aa29acad75270627925686a4a81bebabaea619e87b78fd80",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/check.py": "f3cbcf1d8157ce583c7ea7ab8d042491907fd7e57fe7bf33aefda3f4abc0662b",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/checks.json": "ad20f6e5b7d0f8b7c183a9a3b31ba4c99121f4d5c0c3c5d54eaebf0dbf76bbfe",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/proof.md": "c3231a160af9265528a3a8d2612df40b94c8e8acb38b2e729cf123df27dbb1c2"
+  },
+  "kind": "proof",
+  "largest_strict_mus_checked_by_all_deletions": 14,
+  "named_guards_in_largest_mus_checked": 42,
+  "raw_result": {
+    "path": "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/checker_output-001.json",
+    "sha256": "ad20f6e5b7d0f8b7c183a9a3b31ba4c99121f4d5c0c3c5d54eaebf0dbf76bbfe"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "SIGNED-KNOT-OVERLAP-20261114-001B",
+  "two_slot_ternary_knot_supports_per_control": 8,
+  "two_slot_triples_per_control": 455,
+  "validation": {
+    "independence": "Independent SAT checks on all 256 three-variable selection masks, all 20,825 unpinned triples per control, and larger controls at four public variables. Referee audited the polynomial reduction, the linear-equation supports and the correspondence with minimal unsatisfiable subsets.",
+    "level": "V1",
+    "novelty": "Fixed-factor constructions, linear-equation solving and clause selector encodings have direct published antecedents; the matched semantic support and switch projections are the local result."
+  }
+}

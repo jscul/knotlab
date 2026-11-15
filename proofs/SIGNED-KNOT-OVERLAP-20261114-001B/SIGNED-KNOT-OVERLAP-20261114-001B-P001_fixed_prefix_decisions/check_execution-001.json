@@ -1,0 +1,26 @@
+{
+  "artifact_id": "SIGNED-KNOT-OVERLAP-20261114-001B-P001",
+  "at": "2026-11-15T07:29:25+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json": "767753e5ff4857bd0b31e17abf83c4b4bc5d2f169e1c98feffb5ff5cc14a0b42",
+    "proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/manifest.json": "278af85a7a65fc75aa29acad75270627925686a4a81bebabaea619e87b78fd80",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/check.py": "f3cbcf1d8157ce583c7ea7ab8d042491907fd7e57fe7bf33aefda3f4abc0662b",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/checks.json": "ad20f6e5b7d0f8b7c183a9a3b31ba4c99121f4d5c0c3c5d54eaebf0dbf76bbfe",
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001B/SIGNED-KNOT-OVERLAP-20261114-001B-P001_fixed_prefix_decisions/proof.md": "c3231a160af9265528a3a8d2612df40b94c8e8acb38b2e729cf123df27dbb1c2"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"distinct_ternary_relations_verified_by_knotlab\": 4,\n  \"full_n3_affine_row_sums_with_at_most_three_guards\": 595200,\n  \"full_n3_affine_short_rows\": 32,\n  \"full_n3_triples_per_signed_or_aligned_control\": 20825,\n  \"grouped_affine_yes_n3\": 2,\n  \"grouped_aligned_yes_n3\": 256,\n  \"grouped_guard_knot_width_checked_by_knotlab\": 8,\n  \"grouped_inputs_with_partial_public_pins_checked\": 6912,\n  \"grouped_signed_yes_n3\": 255,\n  \"independent_affine_guard_vectors_n3\": 131072,\n  \"independent_signed_guard_vectors_n3\": 16777215,\n  \"largest_strict_mus_checked_by_all_deletions\": 14,\n  \"named_guards_in_largest_mus_checked\": 42,\n  \"status\": \"passed\",\n  \"two_slot_ternary_knot_supports_per_control\": 8,\n  \"two_slot_triples_per_control\": 455\n}\n",
+  "ticket": "SIGNED-KNOT-OVERLAP-20261114-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

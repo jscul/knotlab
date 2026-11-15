@@ -1,0 +1,31 @@
+{
+  "artifact_id": "TWO-CHOICE-IMPLICATIONS-20261115-001B-P001",
+  "at": "2026-11-15T18:14:16+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001B/TWO-CHOICE-IMPLICATIONS-20261115-001B-P001_mixed_padding/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/manifest.json": "48f67237c2758bfb620e577081b53853356a704e0990d807c5f063962b7974d8",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/manifest.json": "e30a6347e1c0bb9b6a18f433586946802fe1947bd061df4ceedbf2e8c7f76453",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/manifest.json": "b851d818524cf00b7b42592c04338a2147e85ec60edab8e6efaacd01a32e3cb9",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/manifest.json": "8ecb722a0f143b2df397d7dfdf94f810740d6cc04ae744d49dade5ced43f6e3d",
+    "proofs/ROUTE-FRONTIER-MEMORY-20261115-001A/ROUTE-FRONTIER-MEMORY-20261115-001A-P001_exact_boundary_profiles/manifest.json": "abf3b7200fcd458e8be308e9968ec144463c559015e9f9399f66ae689653937f",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001B/TWO-CHOICE-IMPLICATIONS-20261115-001B-P001_mixed_padding/check.py": "a843e30ac6d9cdd0bf0c0b98c93ceedbd1927ae3739c1a949ce72a891a95210f",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001B/TWO-CHOICE-IMPLICATIONS-20261115-001B-P001_mixed_padding/checks.json": "d1fa5630197c6d3a7ddf2de353cc1ace7dbdcf00600049ac577bdd6eb8fdd023",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001B/TWO-CHOICE-IMPLICATIONS-20261115-001B-P001_mixed_padding/proof.md": "c852c97d272206ca5542f281978dae0250c32ea77efb3e6a20535d4bf9258441",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json": "03813748a8c4c4da52cb5286f924b0afa3f99e80e2f15f5a2d862f30141e7d7a",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"four_literal_exclusion_checks\": 224,\n  \"full_tables\": {\n    \"all_equal_pad_signs_wrong_menu_gives_full_relation\": true,\n    \"displayed_occurrences_per_middle\": [\n      1,\n      1\n    ],\n    \"distinct_fixed_wiring_tables\": 324,\n    \"fibres_by_endpoints_00_01_10_11\": [\n      [\n        1,\n        3,\n        5,\n        7,\n        9,\n        11,\n        13,\n        15\n      ],\n      [\n        9,\n        11,\n        13,\n        15\n      ],\n      [\n        0,\n        1,\n        2,\n        3,\n        4,\n        5,\n        6,\n        7,\n        8,\n        9,\n        10,\n        11,\n        12,\n        13,\n        14,\n        15\n      ],\n      [\n        8,\n        9,\n        10,\n        11,\n        12,\n        13,\n        14,\n        15\n      ]\n    ],\n    \"four_bit_candidate_tables\": 65536,\n    \"models_checked_against_every_clause\": 110,\n    \"raw_endpoint_and_middle_assignment_queries\": 5184,\n    \"stages\": 152,\n    \"strict_ternary_clauses\": 4896,\n    \"supplied_guard_bits\": 3672\n  },\n  \"occurrence_cap_control\": {\n    \"observed_fibre_at_10\": 6,\n    \"uses_of_one_pad_outside_the_two_use_class\": 4\n  },\n  \"one_mixed_pad_stress\": {\n    \"largest_total_vertices\": 8,\n    \"random_one_mixed_pad_graphs\": 3000,\n    \"seed\": 409613\n  },\n  \"report_language\": {\n    \"at_most_one_ordered_implication\": 12,\n    \"both_implications_allowed\": 13,\n    \"only_mask_needing_both\": 9,\n    \"three_masks_outside\": [\n      7,\n      6,\n      14\n    ],\n    \"unary_only\": 10\n  },\n  \"single_stage\": {\n    \"different_complete_tables_in_one_stage\": 34,\n    \"four_state_guard_menus\": 2560,\n    \"minimum_mixed_pads_at_10_for_OR_NAND_XOR\": [\n      1,\n      1,\n      2\n    ],\n    \"named_XOR_fixture_original_models_verified\": 12,\n    \"number_of_fibres_by_endpoints\": [\n      5,\n      1,\n      16,\n      5\n    ],\n    \"pad_layouts\": 10,\n    \"raw_assignment_queries\": 40960,\n    \"verified_zero_mixed_fibre_counts_with_three_stage_orders\": [\n      7,\n      4,\n      13,\n      7\n    ]\n  },\n  \"status\": \"passed\"\n}\n",
+  "ticket": "TWO-CHOICE-IMPLICATIONS-20261115-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

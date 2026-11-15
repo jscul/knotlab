@@ -1,0 +1,32 @@
+{
+  "artifact_id": "TWO-CHOICE-IMPLICATIONS-20261115-001A-P001",
+  "at": "2026-11-15T18:16:46+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001A/TWO-CHOICE-IMPLICATIONS-20261115-001A-P001_implication_reports/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/manifest.json": "48f67237c2758bfb620e577081b53853356a704e0990d807c5f063962b7974d8",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/manifest.json": "e30a6347e1c0bb9b6a18f433586946802fe1947bd061df4ceedbf2e8c7f76453",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/manifest.json": "b851d818524cf00b7b42592c04338a2147e85ec60edab8e6efaacd01a32e3cb9",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/manifest.json": "8ecb722a0f143b2df397d7dfdf94f810740d6cc04ae744d49dade5ced43f6e3d",
+    "proofs/ROUTE-FRONTIER-MEMORY-20261115-001A/ROUTE-FRONTIER-MEMORY-20261115-001A-P001_exact_boundary_profiles/manifest.json": "abf3b7200fcd458e8be308e9968ec144463c559015e9f9399f66ae689653937f",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001A/TWO-CHOICE-IMPLICATIONS-20261115-001A-P001_implication_reports/check.py": "184ef1df1ce6f7b2cc7186b65df21f06cdda0c6696ef96ad46dab607d90bd68e",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001A/TWO-CHOICE-IMPLICATIONS-20261115-001A-P001_implication_reports/checks.json": "b3ed5cd9ba1e66d2fd1378b9bf2d354eb18ac5f12d62d5e0a4eb9eff98a04b2a",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001A/TWO-CHOICE-IMPLICATIONS-20261115-001A-P001_implication_reports/proof.md": "26d4e676cb386d00e2721a4b5ca513e350ebd700f2f6bdc80de0ad3dddc095ba",
+    "proofs/TWO-CHOICE-IMPLICATIONS-20261115-001A/TWO-CHOICE-IMPLICATIONS-20261115-001A-P001_implication_reports/solver.py": "6aaa67c9ed9eb2e062d1348aca2aac33d4250bf79b2135125477b9b0edc2ce3f",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json": "03813748a8c4c4da52cb5286f924b0afa3f99e80e2f15f5a2d862f30141e7d7a",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"boundary_triples_with_ordered_report_pairs_replayed\": 440,\n  \"equality_mask_after_one_guard_off\": 15,\n  \"full_raw_witnesses_checked\": 5365,\n  \"joined_complete_witnesses_checked\": 380,\n  \"joined_witness_with_common_pad_release\": 1,\n  \"joint_cases_with_false_positive_marginals\": 16,\n  \"largest_tested_interface\": 5,\n  \"mixed_padding_control_mask\": 14,\n  \"one_stage_types_at_10\": 10,\n  \"pinned_spectra\": {\n    \"00\": [\n      1,\n      3,\n      5,\n      9,\n      11,\n      13,\n      15\n    ],\n    \"01\": [\n      9,\n      11,\n      13,\n      15\n    ],\n    \"10\": [\n      0,\n      1,\n      2,\n      3,\n      4,\n      5,\n      8,\n      9,\n      10,\n      11,\n      12,\n      13,\n      15\n    ],\n    \"11\": [\n      8,\n      9,\n      10,\n      11,\n      12,\n      13,\n      15\n    ]\n  },\n  \"raw_port_assignment_queries\": 104704,\n  \"reports_compared_with_raw\": 25736,\n  \"status\": \"passed\",\n  \"three_stage_left_mask\": 4,\n  \"three_stage_right_mask\": 11,\n  \"three_stage_split_patterns_checked\": 4,\n  \"three_stage_types_at_10\": 13,\n  \"two_acyclic_blocks_joint_mask\": 9,\n  \"two_stage_skeletons_with_arc_settings\": 6144,\n  \"two_stage_types_at_10\": 12\n}\n",
+  "ticket": "TWO-CHOICE-IMPLICATIONS-20261115-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

@@ -1,0 +1,334 @@
+{
+  "artifact_id": "QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001",
+  "claim": "Signed-variable and constant substitution transports every syntactic degree-two polynomial-resolution DAG through exact compiler projections with at most twice as many source nodes for duplicate-free source clauses. Work in the explicit proof encoding is polynomial.",
+  "compiler_axiom_plans": [
+    {
+      "boolean_seeds": 384,
+      "positive_and_negative_guard_units": 1368,
+      "selected_occurrences": 3,
+      "source_axiom_images": 3,
+      "source_n": 3,
+      "target_axioms": 3192,
+      "true_seeds": 2805
+    },
+    {
+      "boolean_seeds": 414,
+      "positive_and_negative_guard_units": 1560,
+      "selected_occurrences": 1,
+      "source_axiom_images": 1,
+      "source_n": 4,
+      "target_axioms": 3640,
+      "true_seeds": 3225
+    }
+  ],
+  "edge_cases": {
+    "cached_empty_final": {
+      "axiom_images": {
+        "axiom": 1
+      },
+      "distinct_source_seeds": 2,
+      "repairs": {
+        "source_duplicate_contractions": 0
+      },
+      "source": {
+        "lines": 3,
+        "max_width": 1,
+        "rules": {
+          "axiom": 1,
+          "true": 1,
+          "weaken": 1
+        },
+        "shared_parents": 0
+      },
+      "target": {
+        "lines": 3,
+        "max_width": 1,
+        "rules": {
+          "axiom": 2,
+          "true": 1
+        },
+        "shared_parents": 0
+      },
+      "verified_node_bound": 5
+    },
+    "duplicate_source_axiom": {
+      "axiom_images": {
+        "axiom": 2
+      },
+      "distinct_source_seeds": 2,
+      "repairs": {
+        "source_duplicate_contractions": 2
+      },
+      "source": {
+        "lines": 6,
+        "max_width": 3,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "contract": 2,
+          "delete_false": 1
+        },
+        "shared_parents": 0
+      },
+      "target": {
+        "lines": 4,
+        "max_width": 1,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "delete_false": 1
+        },
+        "shared_parents": 0
+      },
+      "verified_node_bound": 8
+    },
+    "set_retained_context": {
+      "axiom_images": {
+        "axiom": 2
+      },
+      "distinct_source_seeds": 2,
+      "repairs": {
+        "set_context_weakening": 1,
+        "source_duplicate_contractions": 0
+      },
+      "source": {
+        "lines": 6,
+        "max_width": 2,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "delete_false": 1,
+          "multiply": 1,
+          "weaken": 1
+        },
+        "shared_parents": 1
+      },
+      "target": {
+        "lines": 5,
+        "max_width": 2,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "delete_false": 1,
+          "multiply": 1
+        },
+        "shared_parents": 1
+      },
+      "verified_node_bound": 8
+    }
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/check_execution-001.json",
+    "sha256": "7379b545aafd3f7fcce16ecd761e4d24090e651175b09dca3324ee44a75de5a2"
+  },
+  "formal_field_census": {
+    "binary_sums": 147456,
+    "distinct_formal_polynomials": 64,
+    "extension_field_order": 4,
+    "field_point_polynomial_images": 36864,
+    "legal_products": 10368,
+    "signed_maps": 36
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/check.py": "72b56b8ad447f23688ded118848dc434c671ae27ff030db73a9d9cf1c2d53f3a",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/checks.json": "b56df39521b768209561ff97e6f7a0bd5bd84b251bb13ad394fb0f79cdf3a165",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/proof.md": "79c2ef140ab8643d45e57cc92691c06775b83eae33a6185e3d24bd85e7ccf5eb",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/solver.py": "84a7cdc149c8945061e8c46daaf9b3686cbcf4cee26f73b4e79c663bda25b71e",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001A/ROUTE-PARITY-TRANSFER-20261115-001A-P001_literal_projection/manifest.json": "4b73397968c4a4793aa2f438ae1afcedb463d8ec987025d122fccf3d6147bf37",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/manifest.json": "0fbe7309a305a4c467bbd08f53cc6ca4b62aab2ee193a0a329862fbee36c6f75",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/manifest.json": "2e6bead3c40f478e162a763c661151b1543ced0bfcdd834b6652cc2d2d6a57f1",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json": "03813748a8c4c4da52cb5286f924b0afa3f99e80e2f15f5a2d862f30141e7d7a"
+  },
+  "kind": "proof",
+  "live_identified_contexts": [
+    {
+      "context_width": 8,
+      "explicit_contractions_each": 8,
+      "source_nodes": 31,
+      "target_nodes": 36,
+      "widest_live_inference": 17
+    },
+    {
+      "context_width": 32,
+      "explicit_contractions_each": 32,
+      "source_nodes": 103,
+      "target_nodes": 132,
+      "widest_live_inference": 65
+    }
+  ],
+  "multiset_DAG": {
+    "axiom_images": {
+      "axiom": 4,
+      "boolean": 1,
+      "true": 1
+    },
+    "distinct_source_seeds": 6,
+    "products_in_ancestry_of_empty": 3,
+    "repairs": {
+      "axiom_weakening": 4,
+      "source_duplicate_contractions": 0
+    },
+    "source": {
+      "lines": 97,
+      "max_width": 6,
+      "rules": {
+        "axiom": 3,
+        "boolean": 2,
+        "combine": 19,
+        "contract": 27,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 27
+      },
+      "shared_parents": 6
+    },
+    "target": {
+      "lines": 96,
+      "max_width": 6,
+      "rules": {
+        "axiom": 6,
+        "boolean": 2,
+        "combine": 19,
+        "contract": 27,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 23
+      },
+      "shared_parents": 6
+    },
+    "truth_evaluated_nodes": 6532,
+    "verified_node_bound": 102
+  },
+  "negative_controls": [
+    "boolean_squaring_is_not_formal_equality",
+    "disallowed_quadratic_semantic_weakening",
+    "cubic_product_hidden_by_boolean_evaluation",
+    "arbitrary_boolean_tautology_is_not_default",
+    "unlicensed_forward_parent",
+    "spurious_contraction",
+    "boolean_false_polynomial_is_not_a_formal_false_constant",
+    "binary_contexts_silently_deduplicated",
+    "unused_nonaxiom_image",
+    "one_substitution_missing_a_name",
+    "target_rule_may_not_be_repaired_only_after_projection"
+  ],
+  "raw_result": {
+    "path": "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/checker_output-001.json",
+    "sha256": "eb1b06e92099bf766a138c080d43a477d38166fa26af317bef269d16a8eb26c0"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "set_DAG": {
+    "axiom_images": {
+      "axiom": 4,
+      "boolean": 1,
+      "true": 1
+    },
+    "distinct_source_seeds": 6,
+    "products_in_ancestry_of_empty": 3,
+    "repairs": {
+      "axiom_weakening": 4,
+      "set_context_weakening": 3,
+      "source_duplicate_contractions": 0
+    },
+    "source": {
+      "lines": 73,
+      "max_width": 4,
+      "rules": {
+        "axiom": 3,
+        "boolean": 2,
+        "combine": 19,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 30
+      },
+      "shared_parents": 6
+    },
+    "target": {
+      "lines": 69,
+      "max_width": 4,
+      "rules": {
+        "axiom": 6,
+        "boolean": 2,
+        "combine": 19,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 23
+      },
+      "shared_parents": 6
+    },
+    "truth_evaluated_nodes": 4708,
+    "verified_node_bound": 78
+  },
+  "status": "passed",
+  "thesis_alignment": null,
+  "three_name_control": {
+    "formal_polynomials": 1024,
+    "point_value_checks": 327680,
+    "points_per_map": 64,
+    "signed_maps": 5
+  },
+  "ticket": "QUADRATIC-ROUTE-TRANSFER-20261115-001A",
+  "validation": {
+    "independence": "Independently enumerated two-name formal substitutions including identified and complemented names, tested real quadratic steps, formal squares, axiom/default repairs, and rejection of illegal rules.",
+    "level": "V1",
+    "novelty": "The formal substitution principle is known. A proof-node bound with exact source axiom repairs and its implemented transformer specialize it to the guarded map."
+  },
+  "wide_contexts": [
+    {
+      "initial_repair_weakenings": 1,
+      "source_nodes": 7,
+      "target_nodes": 7,
+      "variables": 5,
+      "wide_initial_axiom_arity": 6,
+      "widest_inference": 65
+    },
+    {
+      "initial_repair_weakenings": 1,
+      "source_nodes": 7,
+      "target_nodes": 7,
+      "variables": 8,
+      "wide_initial_axiom_arity": 9,
+      "widest_inference": 513
+    }
+  ]
+}

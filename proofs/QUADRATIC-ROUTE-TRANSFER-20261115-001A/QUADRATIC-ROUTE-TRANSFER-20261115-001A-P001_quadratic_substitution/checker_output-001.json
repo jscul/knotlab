@@ -1,0 +1,269 @@
+{
+  "compiler_axiom_plans": [
+    {
+      "boolean_seeds": 384,
+      "positive_and_negative_guard_units": 1368,
+      "selected_occurrences": 3,
+      "source_axiom_images": 3,
+      "source_n": 3,
+      "target_axioms": 3192,
+      "true_seeds": 2805
+    },
+    {
+      "boolean_seeds": 414,
+      "positive_and_negative_guard_units": 1560,
+      "selected_occurrences": 1,
+      "source_axiom_images": 1,
+      "source_n": 4,
+      "target_axioms": 3640,
+      "true_seeds": 3225
+    }
+  ],
+  "edge_cases": {
+    "cached_empty_final": {
+      "axiom_images": {
+        "axiom": 1
+      },
+      "distinct_source_seeds": 2,
+      "repairs": {
+        "source_duplicate_contractions": 0
+      },
+      "source": {
+        "lines": 3,
+        "max_width": 1,
+        "rules": {
+          "axiom": 1,
+          "true": 1,
+          "weaken": 1
+        },
+        "shared_parents": 0
+      },
+      "target": {
+        "lines": 3,
+        "max_width": 1,
+        "rules": {
+          "axiom": 2,
+          "true": 1
+        },
+        "shared_parents": 0
+      },
+      "verified_node_bound": 5
+    },
+    "duplicate_source_axiom": {
+      "axiom_images": {
+        "axiom": 2
+      },
+      "distinct_source_seeds": 2,
+      "repairs": {
+        "source_duplicate_contractions": 2
+      },
+      "source": {
+        "lines": 6,
+        "max_width": 3,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "contract": 2,
+          "delete_false": 1
+        },
+        "shared_parents": 0
+      },
+      "target": {
+        "lines": 4,
+        "max_width": 1,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "delete_false": 1
+        },
+        "shared_parents": 0
+      },
+      "verified_node_bound": 8
+    },
+    "set_retained_context": {
+      "axiom_images": {
+        "axiom": 2
+      },
+      "distinct_source_seeds": 2,
+      "repairs": {
+        "set_context_weakening": 1,
+        "source_duplicate_contractions": 0
+      },
+      "source": {
+        "lines": 6,
+        "max_width": 2,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "delete_false": 1,
+          "multiply": 1,
+          "weaken": 1
+        },
+        "shared_parents": 1
+      },
+      "target": {
+        "lines": 5,
+        "max_width": 2,
+        "rules": {
+          "axiom": 2,
+          "combine": 1,
+          "delete_false": 1,
+          "multiply": 1
+        },
+        "shared_parents": 1
+      },
+      "verified_node_bound": 8
+    }
+  },
+  "formal_field_census": {
+    "binary_sums": 147456,
+    "distinct_formal_polynomials": 64,
+    "extension_field_order": 4,
+    "field_point_polynomial_images": 36864,
+    "legal_products": 10368,
+    "signed_maps": 36
+  },
+  "live_identified_contexts": [
+    {
+      "context_width": 8,
+      "explicit_contractions_each": 8,
+      "source_nodes": 31,
+      "target_nodes": 36,
+      "widest_live_inference": 17
+    },
+    {
+      "context_width": 32,
+      "explicit_contractions_each": 32,
+      "source_nodes": 103,
+      "target_nodes": 132,
+      "widest_live_inference": 65
+    }
+  ],
+  "multiset_DAG": {
+    "axiom_images": {
+      "axiom": 4,
+      "boolean": 1,
+      "true": 1
+    },
+    "distinct_source_seeds": 6,
+    "products_in_ancestry_of_empty": 3,
+    "repairs": {
+      "axiom_weakening": 4,
+      "source_duplicate_contractions": 0
+    },
+    "source": {
+      "lines": 97,
+      "max_width": 6,
+      "rules": {
+        "axiom": 3,
+        "boolean": 2,
+        "combine": 19,
+        "contract": 27,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 27
+      },
+      "shared_parents": 6
+    },
+    "target": {
+      "lines": 96,
+      "max_width": 6,
+      "rules": {
+        "axiom": 6,
+        "boolean": 2,
+        "combine": 19,
+        "contract": 27,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 23
+      },
+      "shared_parents": 6
+    },
+    "truth_evaluated_nodes": 6532,
+    "verified_node_bound": 102
+  },
+  "negative_controls": [
+    "boolean_squaring_is_not_formal_equality",
+    "disallowed_quadratic_semantic_weakening",
+    "cubic_product_hidden_by_boolean_evaluation",
+    "arbitrary_boolean_tautology_is_not_default",
+    "unlicensed_forward_parent",
+    "spurious_contraction",
+    "boolean_false_polynomial_is_not_a_formal_false_constant",
+    "binary_contexts_silently_deduplicated",
+    "unused_nonaxiom_image",
+    "one_substitution_missing_a_name",
+    "target_rule_may_not_be_repaired_only_after_projection"
+  ],
+  "set_DAG": {
+    "axiom_images": {
+      "axiom": 4,
+      "boolean": 1,
+      "true": 1
+    },
+    "distinct_source_seeds": 6,
+    "products_in_ancestry_of_empty": 3,
+    "repairs": {
+      "axiom_weakening": 4,
+      "set_context_weakening": 3,
+      "source_duplicate_contractions": 0
+    },
+    "source": {
+      "lines": 73,
+      "max_width": 4,
+      "rules": {
+        "axiom": 3,
+        "boolean": 2,
+        "combine": 19,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 30
+      },
+      "shared_parents": 6
+    },
+    "target": {
+      "lines": 69,
+      "max_width": 4,
+      "rules": {
+        "axiom": 6,
+        "boolean": 2,
+        "combine": 19,
+        "delete_false": 15,
+        "multiply": 3,
+        "true": 1,
+        "weaken": 23
+      },
+      "shared_parents": 6
+    },
+    "truth_evaluated_nodes": 4708,
+    "verified_node_bound": 78
+  },
+  "status": "passed",
+  "three_name_control": {
+    "formal_polynomials": 1024,
+    "point_value_checks": 327680,
+    "points_per_map": 64,
+    "signed_maps": 5
+  },
+  "wide_contexts": [
+    {
+      "initial_repair_weakenings": 1,
+      "source_nodes": 7,
+      "target_nodes": 7,
+      "variables": 5,
+      "wide_initial_axiom_arity": 6,
+      "widest_inference": 65
+    },
+    {
+      "initial_repair_weakenings": 1,
+      "source_nodes": 7,
+      "target_nodes": 7,
+      "variables": 8,
+      "wide_initial_axiom_arity": 9,
+      "widest_inference": 513
+    }
+  ]
+}

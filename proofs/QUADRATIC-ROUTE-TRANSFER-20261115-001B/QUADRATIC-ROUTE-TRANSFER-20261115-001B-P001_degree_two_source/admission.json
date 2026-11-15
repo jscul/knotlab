@@ -1,0 +1,71 @@
+{
+  "admission_id": "EVIDENCE-QUADRATIC-ROUTE-PANG-V2-72A-D2",
+  "admission_status": "admitted",
+  "approval_ticket": "EVIDENCE-001",
+  "assumptions": [
+    "The result in Shuo Pang's 24 October 2026 preprint is admitted as stated. The local finite replays test conventions and constructions.",
+    "The field is F2. Formal products use ordinary polynomial-ring arithmetic. On Boolean assignments a square evaluates like its variable; a proof representation still records exponents.",
+    "The sample is an 8n-occurrence list, including repeats, on n declared variables. The probability is over formulas, followed by a universal quantifier over their refutations.",
+    "The measure is DAG nodes. A proof line may be reused. All source rules are syntactic, with true and variable Boolean-choice axioms. No external extension axioms are supplied."
+  ],
+  "citation_required": true,
+  "citation_role": "source-identification-only",
+  "citations": [
+    {
+      "exact_support": "The introduction on printed page 1 states the polynomial equation syntax, multiplication, linear combination, default axioms and DAG-node size. Section 7.1 fixes the sampling law. Theorem 7.2(a) on printed page 12 states the bound for each fixed prime and positive integer degree, including two. Footnote 1 discusses the affine convention only.",
+      "source_kind": "paper",
+      "source_locator": "https://arxiv.org/pdf/2610.00837v2",
+      "title": "Shuo Pang, A Degree\u2013Size Relation for Resolution over Polynomials, arXiv:2610.00837v2 (24 October 2026)"
+    }
+  ],
+  "classification": "independent",
+  "classification_rationale": "Finite Boolean certificate complexity has an interpretation independent of the protected foundation.",
+  "compatibility_statement": "This record admits a statement about proof lengths for externally supplied Boolean formulas. Its proof rules, arithmetic and sample law carry no formation authority.",
+  "contact_first_safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "exact_local_claim": "For each n at least three, sample exactly 8n strict three-literal clauses independently and uniformly with replacement from the signed clauses on three distinct names among n. With probability tending to one, the formula is unsatisfiable and every syntactic Res(PC_2/F2) DAG refutation requires exp(Omega(n)) nodes. Lines are disjunctions of formal degree-at-most-two polynomial equations. The syntactic multiplication rule requires the displayed product to have degree at most two. This is precisely the p=2, r=2, w=3, Delta=8 specialization of Pang v2 Theorem 7.2(a).",
+  "excluded_interpretations": [
+    "This statement concerns a syntactic certificate calculus. It does not admit unrestricted semantic quadratic weakening, all solver architectures, general SAT decision-time bounds, or P versus NP.",
+    "It carries no claim of native emergence, logical knot, contact-first topology, minimal contact-distance, or extended distance."
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "incompatibility_reasons": [],
+  "local_dependencies": [
+    "proofs/EVIDENCE-001A/EVIDENCE-001A-P001_external_evidence_admission_schema/manifest.json",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/manifest.json"
+  ],
+  "neutralized_terms": [],
+  "outside_result_admitted": true,
+  "proof_lineage_authority": "repository-local-manifests-only",
+  "record_purpose": "admission",
+  "record_schema_version": 1,
+  "validation_commands": [
+    "python3 -B proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001B/QUADRATIC-ROUTE-TRANSFER-20261115-001B-P001_degree_two_source/check.py"
+  ]
+}

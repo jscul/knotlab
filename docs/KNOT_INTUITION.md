@@ -3480,10 +3480,10 @@ So holes come in two kinds:
      levels read (two fifths to a half of the living weight), absent in about two fifths, and the same size over the four levels in
      one in twenty to one in ten (readings at depth 9: deeper levels can change a bond either way)
      ([decision note](../research/LEVEL-REACH-20261114-001/level_reach.md)).
-   - **Why the reach is a ruler** (`RULER-LEVEL-20261114-001`; referee pending): exactly where the knots form no cycle and a chain of
-     knots steps down one level at a time, the least bond is one member per level plus one (proved from the hypertree theorem); one
-     tree-shaped placement always gives such a pattern; this explains two thirds of the census's rulers, and cycles can shorten or
-     halve the reach ([decision note](../research/RULER-LEVEL-20261114-001/ruler_level.md)).
+   - **Why the reach is a ruler** (`RULER-LEVEL-20261114-001`; refereed, confirmed with fixes): where the knots form no cycle, the
+     least bond across levels is the fewest knots on a path between them plus two, so one member per level plus one when a chain steps
+     down level by level (proved from the hypertree theorem); one tree-shaped placement always gives such a pattern; read at depth 9
+     this covers two thirds of the census's rulers (a quarter at every depth), and within-level knots can shorten the profile ([decision note](../research/RULER-LEVEL-20261114-001/ruler_level.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

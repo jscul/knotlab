@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 15 November 2026: why the reach is a ruler, confirmed by its referee, its statement completed
+
+- The theorem behind the ruler across levels (`RULER-LEVEL-20261114-001`) was confirmed by its referee. Its statement is completed:
+  with no cycle of knots the least bond across levels is the fewest knots on a path between them plus two, so a ruler when a chain steps
+  down level by level, and larger, not absent, when only a longer path joins them ([proof note](proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/proof.md)).
+- Narrowed: the theorem covers two thirds of the census's rulers as read at depth 9 and a quarter at every depth; extra knots within a
+  level shorten the reach, never lengthen it, in the cases seen. The follow-up on rulers with cycles (`CYCLE-RULER-20261115-001`) was
+  confirmed with its test restated and its cases counted exactly.
+
 ## 14 November 2026: the reach across levels, confirmed by its referee, two claims withdrawn
 
 - The census of the reach across levels (`LEVEL-REACH-20261114-001`) was confirmed by its referee with fresh code, and its counts

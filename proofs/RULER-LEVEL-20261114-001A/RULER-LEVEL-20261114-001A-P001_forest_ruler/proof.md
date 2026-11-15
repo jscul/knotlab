@@ -3,7 +3,7 @@
 Proof note of `RULER-LEVEL-20261114-001A` (epic `RULER-LEVEL-20261114-001`; G17, with G1), 2026-11-15, written by Claude after
 `LEVEL-REACH-20261114-001`'s census and its referee, and checked cold by the advisor model (`research/RULER-LEVEL-20261114-001/
 advisor_answer.md`, whose repairs are taken). The canonical K1–K3 test is unchanged; every knot is a three-place not-all-equal knot on
-three distinct distinctions. **Referee pending.**
+three distinct distinctions. **Refereed** (RULER-LEVEL-R1, confirmed with fixes; the complete formula below is its).
 
 ## Setting
 
@@ -15,8 +15,11 @@ the (i − 1)-th, with a member at level k + i − 1 and a member at level k + i
 
 ## Theorem A** (no cycle of knots)
 
-If the pattern on levels 0 to N has no cycle of knots, then for every k and s ≥ 1 with k + s ≤ N:
+If the pattern on levels 0 to N has no cycle of knots, then for every k and s ≥ 1 with k + s ≤ N, L_k(s) = D_k(s) + 2, where D_k(s) is
+the fewest knots on a path of knots from a level-k address to a level-(k + s) address (D_k(s) ≥ s); in particular:
 - if some descending chain joins level k to level k + s, L_k(s) = s + 2;
+- if a path joins the levels but no descending chain does, L_k(s) = D_k(s) + 2 > s + 2 (*added after the referee*: e.g. knots
+  {0, 00, 01}, {00, 10, 11}, {10, 000, 001} at N = 3 give a three-knot path and reach 5);
 - if no path of knots joins level k to level k + s, there is no such bond.
 
 *Proof.* By `RANDOM-FATES-20261112-001B`'s T1 (proved, refereed): in a finite Berge-acyclic 3-uniform hypergraph, two vertices at
@@ -58,10 +61,11 @@ Every acyclic description has the outcome Theorem A** gives (a check of the code
 descriptions 299 are acyclic (394 of the 605 chained weight among W_R draws); 117 have Theorem A's form, so they are rulers at every
 depth, not only at depth 9. All direct, other, undecided and dead descriptions have cycles of knots.
 
-**Cycles break the ruler both ways.** Random descriptions with one tree-type placement and one to three within-level placements
-(`exploratory/tree_plus_within.py`, levels 0 to 6, top level 1, s = 1..3, 80 samples): 51 rulers, 6 not ([3, 3, 4] twice, [3, 4, 4]
-twice, [3, 3, 3], [2, 2, 2]), 21 undecided, 2 dead; every one of the six has a within-level knot holding two siblings of the tree. So a
-cycle can shorten the reach to a constant and can halve its rate (computed, exploratory).
+**Within-level knots can shorten the profile** (*narrowed after the referee from "cycles break the ruler both ways": every failure
+shortens, none lengthens; five of the six cases are reproduced from their keys, the sixth is logged only*). Random descriptions with one
+tree-type placement and one to three within-level placements (`exploratory/tree_plus_within.py`, levels 0 to 6, top level 1, s = 1..3,
+80 samples): 51 rulers, 6 not ([3, 3, 4] twice, [3, 4, 4] twice, [3, 3, 3], [2, 2, 2]), 21 undecided, 2 dead; each reproduced case has a
+within-level knot holding two siblings of the tree (computed, exploratory).
 
 ## Open
 

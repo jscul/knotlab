@@ -1,0 +1,98 @@
+{
+  "artifact_id": "ROUTE-FRONTIER-MEMORY-20261115-001Z-P001",
+  "checks": {
+    "ROUTE-FRONTIER-MEMORY-20261115-001A": {
+      "checks": {
+        "accepted_identity": true,
+        "manifest_digest": true,
+        "manifest_identity": true,
+        "passing_result": true,
+        "proof_digest": true,
+        "result_digest": true,
+        "terminal_manifest": true,
+        "terminal_status_class": true,
+        "ticket_digest": true
+      },
+      "pass": true
+    },
+    "ROUTE-FRONTIER-MEMORY-20261115-001B": {
+      "checks": {
+        "accepted_identity": true,
+        "manifest_digest": true,
+        "manifest_identity": true,
+        "passing_result": true,
+        "proof_digest": true,
+        "result_digest": true,
+        "terminal_manifest": true,
+        "terminal_status_class": true,
+        "ticket_digest": true
+      },
+      "pass": true
+    },
+    "note_0": {
+      "pass": true,
+      "path": "research/ROUTE-FRONTIER-MEMORY-20261115-001/decision.md"
+    }
+  },
+  "claim": "One fixed joined-route system realizes every possible boundary preorder with pins. A stage-ordered reader needs quadratic memory although a whole-input reachability solver takes linear work.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/check_execution-001.json",
+    "sha256": "3e72b64b6769180d8eba616a089ac744762c06f551b19f9ff95d47cf4fb655d5"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/ROUTE-FRONTIER-MEMORY-20261115-001A/ROUTE-FRONTIER-MEMORY-20261115-001A-P001_exact_boundary_profiles/manifest.json": "abf3b7200fcd458e8be308e9968ec144463c559015e9f9399f66ae689653937f",
+    "proofs/ROUTE-FRONTIER-MEMORY-20261115-001B/ROUTE-FRONTIER-MEMORY-20261115-001B-P001_one_pass_memory/manifest.json": "c6fb7792534d71eafa309d3289e58ccecccf4e763b2ec1a59ea3e5b1c4fc7f02",
+    "proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/check.py": "7bc17903e27b9bd3d12524bdc731755fa90c3b5bf2f141422c28030356888cdf",
+    "proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md": "fea76b9df6f23712866f17f93b64caf24623a4c5244a103d0eaa7de7ca031583"
+  },
+  "kind": "proof",
+  "raw_result": {
+    "path": "proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/checker_output-001.json",
+    "sha256": "40564544c44f8fc43b1388965bb59840789345f298335cbceaefc16b0eedd874"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "ROUTE-FRONTIER-MEMORY-20261115-001Z",
+  "validation": {
+    "independence": "Hashes of the scientific records, their lifecycle identities and the decision record checked.",
+    "level": "V1",
+    "novelty": "Source-zero synthesis."
+  }
+}

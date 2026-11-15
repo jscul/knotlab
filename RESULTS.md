@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**335 current results** and 5 superseded ones, from 379 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**336 current results** and 5 superseded ones, from 380 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 24 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 25 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 379 epics with their closures
+- [Epics](#epics): all 380 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -384,6 +384,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-14 · An adjacent variable identification preserves the obstruction count and changes the SAT answers** (`UNSIGNED-ROUTE-JOINS-20261115-001-D001`).
   Joining middle variables in adjacent stages preserves the original number of minimal obstructions but changes the decision on some activations. Occurrence-labelled reachability regroups the same strict formula and decides every unsigned middle identification in linear indexed time.
   [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md), [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/proof.md), [epic closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · What a forward reader must keep about shared middle choices** (`ROUTE-FRONTIER-MEMORY-20261115-001-D001`).
+  Forced values and an implication preorder describe the residual exactly. A fixed two-route formula realizes all 732 possibilities on four ordinary names and forces quadratic one-pass activation memory in general.
+  [proof P001](proofs/ROUTE-FRONTIER-MEMORY-20261115-001A/ROUTE-FRONTIER-MEMORY-20261115-001A-P001_exact_boundary_profiles/proof.md), [proof P001](proofs/ROUTE-FRONTIER-MEMORY-20261115-001B/ROUTE-FRONTIER-MEMORY-20261115-001B-P001_one_pass_memory/proof.md), [epic closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -1523,5 +1526,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-14 | Is reading the whole rule for the bond (`TOP-INFO-20261114-001`) | [closure](proofs/TOP-INFO-20261114-001Z/TOP-INFO-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TOP-INFO-20261114-001/) |
 | 2026-11-15 | Rulers with cycles: when cycles of knots keep or break the reach across levels (`CYCLE-RULER-20261115-001`) | — | [folder](research/CYCLE-RULER-20261115-001/) |
 | 2026-11-15 | Where the top binds every depth directly, and whether it is truly bounded (`DIRECT-REACH-20261115-001`) | — | [folder](research/DIRECT-REACH-20261115-001/) |
+| 2026-11-15 | What a one-pass reader must remember about joined routes (`ROUTE-FRONTIER-MEMORY-20261115-001`) | [closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-FRONTIER-MEMORY-20261115-001/) |
 | 2026-11-15 | Sharing a middle variable between two routes (`UNSIGNED-ROUTE-JOINS-20261115-001`) | [closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/UNSIGNED-ROUTE-JOINS-20261115-001/) |
 

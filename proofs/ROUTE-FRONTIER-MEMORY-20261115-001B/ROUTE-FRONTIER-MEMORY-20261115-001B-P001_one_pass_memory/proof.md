@@ -1,0 +1,66 @@
+# Memory of a stage-ordered reader on a fixed joined schedule
+
+Status: Proved
+
+## Standard statement
+
+Fix a publicly known schedule of $r$ two-route stages. Its private activation input is read once in forward stage order. At a cut a middle name is *open* if it occurs on both sides, whether or not its occurrences are enabled. Let $W$ be the maximum number of open middle names, including any permanent middle names. Supply the wiring with reusable name indices or with the schedule-dependent transitions. Count all input-dependent state, including control state. The worst-case deterministic memory required to decide the later switch input is $\Theta(W^2)$ bits as $W$ grows.
+
+For each $k\ge 0$ we give one schedule with $r=2k^2+6k+6$ stages and $W=k+2$. It uses $k$ ordinary middle names and two permanent middle names fixed true and false. At a designated cut, with the two endpoint units and their two bus connections on, exactly
+
+$$
+ N(k)=1+\sum_{m=0}^{k}\binom{k}{m}2^{k-m}\operatorname{Pre}(m)
+$$
+
+different residual functions of the unread suffix occur. Here $\operatorname{Pre}(m)$ counts reflexive transitive relations on $m$ labelled elements, including $\operatorname{Pre}(0)=1$. The exact fixed-length message at this cut is $\lceil\log_2 N(k)\rceil$ bits. The result allows all other strict switches to vary. In particular at least $\lfloor k^2/4\rfloor$ bits are required even on a restricted set of activations encoding independent entries of a Boolean matrix.
+
+## The strict input and an upper bound for every known schedule
+
+At stage $i$ each of two middle occurrences $u$ supplies separate implications $x_{i-1}\to u$ and $u\to x_i$. Identical middle names are one Boolean variable, with no polarity reversal. Boundary variables remain distinct from all middles. The endpoint units are $x_0,\neg x_r$. In the inherited strict ternary construction, each implication occurrence is enabled by six private switches and each unit by twelve. A complete group enforces its source clause, and every incomplete group extends any values of its source variables through the private padding and witnesses. Thus every switch vector contradicts the strict formula exactly when both units are enabled and the enabled directed occurrences reach $x_r$ from $x_0$. [Joined strict formula and proof of elimination](../../UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/proof.md)
+
+After stage $i$, retain reachability through the processed occurrences **between every ordered pair** of names in
+$$I_i=\{x_0,x_i,x_r\}\ \cup\ \{\text{open middle names at cut }i\}.$$
+Use a reflexive Boolean matrix. Initially only equality holds. To process the next stage, introduce its new names and new boundary, add its enabled arcs, take transitive closure on the expanded interface, and restrict to $I_{i+1}$. The retained matrix is exact by induction. Each old subpath used by a newly formed path has endpoints in the current interface, and conversely each summary entry expands to an actual old path. Closing before forgetting preserves paths through a name that will never appear again. The final entry for $x_0,x_r$ and the two endpoint flags decide contradiction.
+
+At most two temporary middle names and one new boundary are needed beyond $I_i$. A square Boolean array, the flags and the counters for in-place Boolean transitive closure use $O((W+1)^2)$ bits. With public introduce/forget instructions and reusable slots, no history of the input labels is required. With arbitrary global integer labels supplied in the stream, an explicit dictionary of at most $W+O(1)$ labels can add $O((W+1)\log(r+1))$ bits. A separately charged schedule cursor costs $O(\log(r+1))$ bits. The width statement measures activation memory for known wiring. It does not assert that building or storing an unfamiliar schedule is free, or that closure after every block minimizes time.
+
+## One fixed schedule
+
+Use ordinary middle names $V=\{1,\ldots,k\}$ and two different bus names $s,t$. In every stage both middle occurrences name the same specified middle. They retain their individual six-switch groups per half. The following serial list fixes all literal names and incidences before any activation bits are received.
+
+1. Start with a stage named $s$. Permanently enable the occurrence $x_0\to s$ in its first branch and the positive endpoint unit.
+2. In the prefix allocate one two-stage pair for each ordered $u\to v$ with distinct $u,v\in V$, one for each $s\to u$ and $u\to t$, and one for $s\to t$. Order the list by any fixed rule. There are $k^2+k+1$ such pairs.
+3. Insert a stage named $t$, put the cut immediately after it at $x_c$, and insert a stage named $s$ immediately after the cut.
+4. In the suffix allocate one new two-stage pair for each $s\to u$ and $u\to t$. Finish with a stage named $t$. Permanently enable the first-branch occurrence $t\to x_r$ of that stage and the negative endpoint unit.
+
+A pair for $u\to v$ has first stage named $u$ and second stage named $v$. Its intended two enabled occurrences are the outgoing half $u\to x_j$ of its first stage and the incoming half $x_j\to v$ of its second stage. To select the implication, enable both. To omit it, disable both. For these realizations disable all other occurrences except the fixed connections. The boundary $x_j$ is unique to the pair. At a boundary between successive pairs neither neighboring pair uses an incident occurrence. Thus, after forgetting private boundaries, the enabled pairs are exactly the desired implications, even for a sequence of pairs with repeated endpoint names. All choices can be made at the actual guarded strict clauses. The stages, their duplicate middle occurrences and the cut are identical for every input.
+
+The two extra stages protect the cut even beyond those realizations. The only possible incoming prefix arcs at $x_c$ are $t\to x_c$, vacuous because $t=0$. The only possible outgoing suffix arcs there are $x_c\to s$, vacuous because $s=1$. Thus neither side imposes a condition on $x_c$, irrespective of its adjacent switches. All other seam-stage arcs belong entirely to their respective side. After elimination of the private witnesses, the only shared information is on $V$, with the two bus values fixed. In particular, arbitrarily enabling unintended half-arcs can alter a side's relation on $V$ but cannot add a separate bit of information at the boundary.
+
+Both bus values are consequences of the same four permanently enabled groups on every input of this designed-cut comparison. Turning that assumption off can change the answer. For instance, with a represented $s\to t$ and no outgoing occurrence of $x_0$, the public source has no way to reach $t$. Also, reversing the two seam names would allow a prefix occurrence $s\to x_c$ and a suffix occurrence $x_c\to t$ to compose through an unrecorded boundary. The general memory upper bound retains $x_i$ and applies in either case.
+
+## Exact number of residual functions
+
+For any prefix let $R\subseteq\{0,1\}^V$ be the set of assignments extending its implications with the bus values fixed. For any suffix define $T$ the same way. The whole input accepts as satisfiable if and only if $R\cap T\ne\varnothing$. Indeed, witnesses on the two sides share only the ordinary names and the fixed buses, and $x_c$ is free. Conversely a complete assignment $\alpha$ on $V$ is a permitted suffix test. Enable $s\to u$ for its ones and $u\to t$ for its zeros and disable the other available occurrences. This gives $T=\{\alpha\}$. Two different $R$ therefore differ on an actual suffix. Equal $R$ give identical residuals, including on suffixes with additional enabled arcs.
+
+A possible $R$ is either empty or has a unique description. In a feasible prefix let $P$ consist of the ordinary names forced true and $D$ the names forced false. These are precisely the names reachable from the true sources, or able to reach the false target, respectively. One least model makes only names reachable from the sources true. One greatest model makes exactly the names that cannot reach a forced false vertex true. Thus every remaining ordinary name in $M=V\setminus(P\cup D)$ can take either value.
+
+On $M$ let $u\preceq v$ mean that the prefix reaches $v$ from $u$, including equality. The permitted assignments have $P$ true, $D$ false, and an upward-closed set of true names in this preorder. To extend such a boundary assignment, make true exactly the closure of the true sources and the ordinary names assigned true. It encounters no ordinary name assigned false: a path to one would violate forcedness or upward closure. It cannot reach a forced false vertex either. All unassigned vertices can therefore be assigned consistently. The preorder itself can be recovered from the allowed assignments. If $u$ does not reach $v$, the closure of the true sources and $u$ makes $u$ true and $v$ false. Thus different choices of $P,D,\preceq$ have different projections.
+
+Every such description is realized on the fixed schedule. Choose $s\to u$ on $P$, $u\to t$ on $D$, and the nontrivial implications of the preorder on $M$. The single $s\to t$ pair realizes the empty relation. For $|M|=m$, choose its labels, give each of the remaining $k-m$ labels one of the two constant values, and choose a labelled preorder on $M$. This proves the formula for $N(k)$. Equivalently these are the empty family and all families of subsets of $V$ closed under intersection and union. For the reverse equivalence, in a nonempty closed family fix its intersection and the complement of its union. On the remaining labels the least permitted set containing $u$ exists by intersection. Any upward-closed choice for the resulting implication relation is the union of the least sets for its members, with the least permitted set supplying the empty choice.
+
+Any two prefix states that induce different residuals must have different messages. Indexing the possible residuals suffices at this cut with unbounded computation. Thus the exact fixed-length information is $\lceil\log_2 N(k)\rceil$. For $k=0,1,2,3,4$ the profile counts are $2,4,13,74,732$.
+
+The same count gives a finite comparison for general schedules. On any cut the prefix projects to an intersection- and union-closed family on $I_i$, possibly empty. Include any already-read endpoint units in this projection. Identical projected families have identical completion answers since everything forgotten is private to the prefix. Thus the number of residual states at any cut of width $W$ is at most $N(W+3)$. The fixed schedule above realizes $N(W-2)$ with $W\ge2$. These are bounds on states with unrestricted encoding time. The explicit matrix update gives the uniform bit bound without enumerating families.
+
+## Quadratic bits and linear full-input work
+
+Divide the $k$ ordinary names into sets $L,H$ of sizes $\lfloor k/2\rfloor,\lceil k/2\rceil$. Vary *only* the prefix implications $\ell\to h$ for $\ell\in L,h\in H$, each independently. No path can use two such arcs in succession. To test any entry, use only $s\to\ell$ and $h\to t$ in the suffix. The combined instance is contradictory exactly when that entry was enabled. The $2^{|L||H|}$ prefixes have distinct residuals, so every deterministic forward reader requires at least $|L||H|=\lfloor k^2/4\rfloor$ bits at this cut. Every prefix in this subfamily has the same set of ordinary names already reachable from $s$, namely the empty set. Recording only current reachability from $s$ loses the later decision.
+
+All $k+2$ middle names occur on both sides of the cut and no other middle name occurs anywhere. Thus the lower bound is $\lfloor(W-2)^2/4\rfloor$ with buses counted, and the upper bound holds for every schedule of that width. This proves the tight quadratic order. The construction has $O(k^2)$ stages and hence $O(k^2)$ switch bits. An algorithm given indexed access to the entire graph can group the live arcs by their source and decide reachability in $O(r)$ operations. The lower bound concerns information that must survive discarding the prefix before a future query arrives. It gives no time lower bound for general SAT.
+
+## Nearest known result
+
+Feigenbaum, Kannan, McGregor, Suri and Zhang give the direct one-pass directed-connectivity lower bound using a bipartite graph followed by an edge from the source and an edge to the target. Those final edges query one earlier adjacency bit. The INDEX mechanism above is that classical argument. The count of intersection- and union-closed labelled subset families, including the empty family, is also recorded. Here the contributions are their exact realization by one fixed strict joined-route schedule, the protected cut and the comparison between stage-ordered memory and grouping the same input by source. [Feigenbaum et al., ICALP 2004, Lemma 4](https://www.cs.yale.edu/homes/jf/FKMSZ-ICALP2004.pdf) · [Count of closed families, A306445](https://oeis.org/A306445)
+
+The [checker](check.py) compares the projected profiles and actual schedule answers, exercises the frontier update, and replays controls on the original guarded strict clauses. Its raw replay uses PySAT from the current Python or the repository environment and reports zero raw checks when neither provides it. [Recorded results](checks.json)

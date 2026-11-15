@@ -1,0 +1,97 @@
+{
+  "artifact_id": "BRAID-COUNTS-20261114-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "BRAID-COUNTS-20261114-001A-P001",
+  "claim": "Across 512 three-label tables, the complete crossing menu has 110 existence profiles, 128 witness-count parity profiles, 399 joint profiles and 490 exact-count profiles.",
+  "dependencies": [
+    "BRAID-READOUT-20261114-001Z"
+  ],
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/check.py": "8460a0f51efdbc4fc4ac2d8243bc845177b0d5cb0efaf145013e12323781b61e",
+    "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/check_execution-001.json": "3a4d222d5e38db05477e92171028f6042ecfec4e030f0bacd0cf95abc464aecb",
+    "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/checker_output-001.json": "24d247a1b3742d316c3fcc8fab8625cefe098a948304ac1cd476e09c213cb9ca",
+    "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/proof.md": "f482924406d1ead3ad1fb1790f6b066e5181683bafddc6b9cd830f614fab8029",
+    "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/result.json": "e7a8b3dc52c7a0ed4f7643b504a07f1881026cad1168120514a5ba3429a1eb84"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "A claimed separating pair fails on the actual crossing permutation or the independent class totals disagree."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "BRAID-COUNTS-20261114-001"
+    ],
+    "home_scope": "BRAID-COUNTS-20261114-001",
+    "parents": [
+      "proofs/BRAID-READOUT-20261114-001Z/BRAID-READOUT-20261114-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "known-overlap-found",
+  "parent_bindings": {
+    "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/comparison.json": "7aa17aa191fd02b2d88d91b28ac7a89f370471f0ef43626874ac6a0022a1b758",
+    "proofs/BRAID-READOUT-20261114-001Z/BRAID-READOUT-20261114-001Z-P001_synthesis/manifest.json": "a2da14513d1768d7e4911a477ef81a5d21e07d7446251eeffd283cbab89ddc97"
+  },
+  "paths": {
+    "check": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/check.py",
+    "check_execution": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/check_execution-001.json",
+    "directory": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison",
+    "identity": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/identity.json",
+    "manifest": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/manifest.json",
+    "proof": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/proof.md",
+    "raw_result": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/checker_output-001.json",
+    "result": "proofs/BRAID-COUNTS-20261114-001A/BRAID-COUNTS-20261114-001A-P001_reader_comparison/result.json"
+  },
+  "proof": "BRAID-COUNTS-20261114-001A-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "BRAID-COUNTS-20261114-001A",
+  "title": "Exact ternary comparison of existence, parity and counts",
+  "validation": {
+    "independence": "Census replay compared with independently reconstructed kernels and all ternary raw profiles. Enumeration at five labels covers all 68,406 tables with at most five states.",
+    "level": "V1",
+    "novelty": "The first number reuses the predecessor. The four-reader matched census and smaller-menu comparisons are finite results for the supplied interface."
+  }
+}

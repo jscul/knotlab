@@ -1,0 +1,117 @@
+{
+  "artifact_id": "BRAID-COUNTS-20261114-001B-P001",
+  "claim": "Exact counts can exchange only equally many full and empty difference classes. Parity permits complementing an even collection of classes. Distinct tables agreeing on both parity and existence must realize every measured label, and the only size-p table with such a competitor is one whole class.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/BRAID-COUNTS-20261114-001B/BRAID-COUNTS-20261114-001B-P001_count_fibres/check_execution-001.json",
+    "sha256": "053ca5d2a45848840019f7121df9a0e969a97927b3c700f336ef913a603bc659"
+  },
+  "exhaustive": [
+    {
+      "exact_profiles": 15,
+      "mixed_profiles": 15,
+      "parity_plus_missing_exact_profiles": 14,
+      "parity_profiles": 8,
+      "prime": 2,
+      "tables": 16,
+      "threshold_tables_checked": 6,
+      "threshold_tables_with_mixed_ties": 2
+    },
+    {
+      "exact_profiles": 490,
+      "mixed_profiles": 399,
+      "parity_plus_missing_exact_profiles": 512,
+      "parity_profiles": 128,
+      "prime": 3,
+      "tables": 512,
+      "threshold_tables_checked": 84,
+      "threshold_tables_with_mixed_ties": 3
+    }
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/BRAID-COUNTS-20261114-001B/BRAID-COUNTS-20261114-001B-P001_count_fibres/check.py": "42931f7914772c0464bd92e404787ea9ce3bc8455cdf789328d460b1b7f54fbe",
+    "proofs/BRAID-COUNTS-20261114-001B/BRAID-COUNTS-20261114-001B-P001_count_fibres/checks.json": "4cba42c11cfe5fe6ae0f182e439c2eb57c1b7b2261341eee26901b34b91e1949",
+    "proofs/BRAID-COUNTS-20261114-001B/BRAID-COUNTS-20261114-001B-P001_count_fibres/proof.md": "d1df90daab612b635b9bf43fa446e87abf6442186f560d37f82521d68222d584",
+    "proofs/BRAID-READOUT-20261114-001Z/BRAID-READOUT-20261114-001Z-P001_synthesis/manifest.json": "a2da14513d1768d7e4911a477ef81a5d21e07d7446251eeffd283cbab89ddc97"
+  },
+  "kind": "proof",
+  "larger": [
+    {
+      "augmented_rank": 25,
+      "base_tables": 5,
+      "full_row_mixed_fiber_by_size": {
+        "15": 10,
+        "25": 1,
+        "5": 5
+      },
+      "minimum_fully_supported_in_tested_parity_fibers": 8,
+      "observed_rank": 21,
+      "prime": 5,
+      "tested_toggles_per_table": 16,
+      "threshold_tables_checked": 53130,
+      "threshold_tables_with_mixed_ties": 5
+    },
+    {
+      "augmented_rank": 49,
+      "base_tables": 5,
+      "full_row_mixed_fiber_by_size": {
+        "21": 35,
+        "35": 21,
+        "49": 1,
+        "7": 7
+      },
+      "minimum_fully_supported_in_tested_parity_fibers": 50,
+      "observed_rank": 43,
+      "prime": 7,
+      "tested_toggles_per_table": 64
+    }
+  ],
+  "raw_result": {
+    "path": "proofs/BRAID-COUNTS-20261114-001B/BRAID-COUNTS-20261114-001B-P001_count_fibres/checker_output-001.json",
+    "sha256": "1aae9d9e41d730d6f7cb17f2bf046491a08335a5ce645430315e75015cb1f6cb"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "BRAID-COUNTS-20261114-001B",
+  "validation": {
+    "independence": "An independent referee derived the zero-query test from whole-row toggles and exhaustively tested all 33,554,432 five-label inputs against every size-five table using masks constructed from the crossings. The prime-seven checks and separate characteristic-two equations test both edge cases.",
+    "level": "V1",
+    "novelty": "The linear kernels specialize known finite-incidence theorems. The matched Boolean fiber description and sharp mixed-observation threshold are the local contribution."
+  }
+}

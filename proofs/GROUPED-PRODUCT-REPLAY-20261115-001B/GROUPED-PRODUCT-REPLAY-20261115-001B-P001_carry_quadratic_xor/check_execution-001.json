@@ -1,0 +1,32 @@
+{
+  "artifact_id": "GROUPED-PRODUCT-REPLAY-20261115-001B-P001",
+  "at": "2026-11-15T19:41:22+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001B/GROUPED-PRODUCT-REPLAY-20261115-001B-P001_carry_quadratic_xor/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/manifest.json": "7d8d6cff612631baeb8f79b6defc831dc9d07c398f3e403bf2890701e4e783ed",
+    "proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/manifest.json": "a0e656e7e75dcdfdf0e8b8c421e7187c0f10d40b4605430e858c865fe1b5d51a",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001B/GROUPED-PRODUCT-REPLAY-20261115-001B-P001_carry_quadratic_xor/check.py": "24039ee63343120620ce8e0511dbc7ecfa171b7361705ff0906c77d6f173ec13",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001B/GROUPED-PRODUCT-REPLAY-20261115-001B-P001_carry_quadratic_xor/checks.json": "6421f2d8289db9e125c8b5b5e217249319f29ccdf044b556598b824b85ece3cc",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001B/GROUPED-PRODUCT-REPLAY-20261115-001B-P001_carry_quadratic_xor/proof.md": "e74e77988860d9fac0dcdeb0d6398b31243481f60e58b47e461521477f5a7bfa",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001B/GROUPED-PRODUCT-REPLAY-20261115-001B-P001_carry_quadratic_xor/rewrite.json": "60d4ea8e6aa7e17b1988af961e87597b5dd51bd567807e5ff82025ae5f803e94",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001B/GROUPED-PRODUCT-REPLAY-20261115-001B-P001_carry_quadratic_xor/solver.py": "8be6ea4fe46a1833e6e30994fbcd2b6483bc32cc5a1004626f7a1f9f999f5d3a",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001A/PRODUCT-NAME-TRANSFER-20261115-001A-P001_named_substitution/manifest.json": "ad35c9bd29aaa701a3d85cd941646968b4527523eef8b479412c6b57b00a9eaa",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json": "98ff55b65326f881ae7981590c24144610969146b612a4e2aaae36f4ae1975f1",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/manifest.json": "d10d53858d4e17b5a184aa394b25bfe24856f3a312da3361e1dce7e2f0a8a17a",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"alias_cancellation_retained_gate_nodes\": 92,\n  \"all_original_assignments_per_strict_proof\": 65536,\n  \"complementary_quadratic_guard_refutation_nodes\": 316,\n  \"joint_report_assignments_checked\": 1360,\n  \"largest_checked_boolean_xor_nodes\": 778,\n  \"largest_checked_simultaneous_refutation\": 494,\n  \"rejected_aggregate_product\": 1,\n  \"rejected_exposed_quartic_AND_definition\": 1,\n  \"rejected_forged_prefix_axiom\": 1,\n  \"rejected_formal_square\": 1,\n  \"rejected_hidden_multiplier\": 1,\n  \"rejected_leaked_and_definition\": 1,\n  \"rejected_live_cubic\": 1,\n  \"rejected_missing_boundary_derivation\": 1,\n  \"rejected_retain_quadratic_factor\": 1,\n  \"rejected_reused_coordinate\": 1,\n  \"rejected_wrong_XOR_binding\": 1,\n  \"rejected_wrong_boundary_derivation\": 1,\n  \"rejected_wrong_pair_binding\": 1,\n  \"same_guard_occurrences_preserved\": 2,\n  \"saved_replayed_refutations\": 2,\n  \"single_pair_degree_two_images_among_1024_formal_atoms\": 128,\n  \"status\": \"passed\",\n  \"two_pair_new_nodes\": 194,\n  \"two_pair_old_nodes\": 124,\n  \"two_variable_formal_quadratic_defaults\": 64\n}\n",
+  "ticket": "GROUPED-PRODUCT-REPLAY-20261115-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

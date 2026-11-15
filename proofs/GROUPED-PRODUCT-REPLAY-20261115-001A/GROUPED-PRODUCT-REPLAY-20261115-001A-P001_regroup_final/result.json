@@ -1,0 +1,372 @@
+{
+  "arbitrary_quadratic_boundary": {
+    "arity": 4,
+    "branches": 16,
+    "exported_parent_rows": [
+      3,
+      33,
+      35,
+      37,
+      41,
+      44,
+      65
+    ],
+    "inputs": [
+      1,
+      3,
+      2,
+      4
+    ],
+    "mode": "cases",
+    "nonlinear_boundary": true,
+    "private_history_exported": true,
+    "root": 10,
+    "shared_old_private_functions": 0,
+    "source_nodes": 156,
+    "source_originals": 7,
+    "source_proof_bytes": 14277,
+    "strict_clauses": 18,
+    "target_nodes": 6718,
+    "target_proof_bytes": 856912,
+    "truth_assignments": 128
+  },
+  "artifact_id": "GROUPED-PRODUCT-REPLAY-20261115-001A-P001",
+  "claim": "A checked four-input AND producer can be regrouped with polynomial overhead for every final-only cut that also keeps incoming parent statements public. For an arbitrary number of inputs, recompiling the standard AND interface and its supplied public derivations preserves one shared suffix with polynomial overhead. The balanced four-input example needs five affine parts and the chain needs four.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/check_execution-001.json",
+    "sha256": "722c0a191186d8e924bd805f53e666c6f902746f38e515488245320db28b7c55"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/manifest.json": "7d8d6cff612631baeb8f79b6defc831dc9d07c398f3e403bf2890701e4e783ed",
+    "proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/manifest.json": "a0e656e7e75dcdfdf0e8b8c421e7187c0f10d40b4605430e858c865fe1b5d51a",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/check.py": "a89fe27e98a6ce9ad89e1560c591717d7eb496919a917e833440484cdbc4d457",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/checks.json": "5d69af4bf3a1810523a9cd05bb5b8489c1b8be6310da3e1c38217ce0bc68aec8",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/proof.md": "3f57884dc88119d999e81b9620897c25878ce786dfbc0b33ecdf11ff3965611a",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/rewrite.json": "a44d23c20ea77f848af94f730a7bd370ee2c1862b6fa6b2c40fee76e458a8be2",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/solver.py": "9c7d1ba6400a66eb84a805e0a3bb03fa15c455ce97f9a36737790c46a9bdd9d2",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001A/PRODUCT-NAME-TRANSFER-20261115-001A-P001_named_substitution/manifest.json": "ad35c9bd29aaa701a3d85cd941646968b4527523eef8b479412c6b57b00a9eaa",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json": "98ff55b65326f881ae7981590c24144610969146b612a4e2aaae36f4ae1975f1",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/manifest.json": "d10d53858d4e17b5a184aa394b25bfe24856f3a312da3361e1dce7e2f0a8a17a",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf"
+  },
+  "kind": "proof",
+  "optimal_affine_parts": {
+    "affine_parts": 307,
+    "balanced_all_names": 5,
+    "crossed_chain": 4,
+    "final_function_only": 4,
+    "first_pair_retained_chain": 4
+  },
+  "original_four_portal_replays": [
+    {
+      "arity": 4,
+      "branches": 0,
+      "exported_parent_rows": [
+        3,
+        33,
+        35,
+        37,
+        39,
+        41
+      ],
+      "inputs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "matched_imports": {
+        "all_imply_root": 1,
+        "boolean": 1,
+        "root_implies_input": 4
+      },
+      "mode": "portals",
+      "nonlinear_boundary": false,
+      "private_history_exported": false,
+      "replayed_public_prefix_nodes": 0,
+      "root": 10,
+      "shared_old_private_functions": 1,
+      "source_nodes": 147,
+      "source_originals": 7,
+      "source_proof_bytes": 13371,
+      "strict_clauses": 18,
+      "target_nodes": 147,
+      "target_proof_bytes": 13369,
+      "truth_assignments": 128
+    },
+    {
+      "arity": 4,
+      "branches": 0,
+      "exported_parent_rows": [
+        3,
+        33,
+        35,
+        37,
+        39,
+        41
+      ],
+      "inputs": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "matched_imports": {
+        "all_imply_root": 1,
+        "boolean": 1,
+        "root_implies_input": 4
+      },
+      "mode": "portals",
+      "nonlinear_boundary": false,
+      "private_history_exported": false,
+      "replayed_public_prefix_nodes": 0,
+      "root": 10,
+      "shared_old_private_functions": 0,
+      "source_nodes": 147,
+      "source_originals": 7,
+      "source_proof_bytes": 13371,
+      "strict_clauses": 18,
+      "target_nodes": 147,
+      "target_proof_bytes": 13369,
+      "truth_assignments": 128
+    }
+  ],
+  "pruned_stored_rewrite_nodes": {
+    "new_proof": 142,
+    "old_proof": 142,
+    "specified_chain_proof": 142
+  },
+  "public_quadratic_derivation": {
+    "arity": 5,
+    "branches": 0,
+    "exported_parent_rows": [
+      4,
+      40,
+      45,
+      51,
+      53,
+      57,
+      60
+    ],
+    "inputs": [
+      2,
+      4,
+      1,
+      3,
+      5
+    ],
+    "matched_imports": {
+      "all_imply_root": 1,
+      "boolean": 1,
+      "public_deduction": 1,
+      "root_implies_input": 4
+    },
+    "mode": "portals",
+    "nonlinear_boundary": true,
+    "private_history_exported": false,
+    "replayed_public_prefix_nodes": 3,
+    "root": 13,
+    "shared_old_private_functions": 1,
+    "source_nodes": 190,
+    "source_originals": 9,
+    "source_proof_bytes": 17599,
+    "strict_clauses": 23,
+    "target_nodes": 190,
+    "target_proof_bytes": 17597,
+    "truth_assignments": 512
+  },
+  "raw_result": {
+    "path": "proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/checker_output-001.json",
+    "sha256": "5d69af4bf3a1810523a9cd05bb5b8489c1b8be6310da3e1c38217ce0bc68aec8"
+  },
+  "recorded_rewrite_sha256": "a44d23c20ea77f848af94f730a7bd370ee2c1862b6fa6b2c40fee76e458a8be2",
+  "rejected_controls": {
+    "broken_formal_inference": "invalid exact occurrence counts or formal rule result",
+    "canceled_late_factor": "a suffix inscription reads an old private name",
+    "hidden_square_multiplier": "a suffix inscription reads an old private name",
+    "incomplete_tree": "prefix does not produce exactly one complete binary AND tree",
+    "raw_imported_parent": "an imported parent clause reads an old private name",
+    "wrong_signed_input": "the old producer must be a literal AND tree on the supplied leaves"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "scalable_signed_inputs": [
+    {
+      "arity": 5,
+      "branches": 0,
+      "exported_parent_rows": [
+        4,
+        40,
+        45,
+        51,
+        53,
+        55,
+        57
+      ],
+      "inputs": [
+        1,
+        -3,
+        5,
+        2,
+        4
+      ],
+      "matched_imports": {
+        "all_imply_root": 1,
+        "boolean": 1,
+        "root_implies_input": 5
+      },
+      "mode": "portals",
+      "nonlinear_boundary": false,
+      "private_history_exported": false,
+      "replayed_public_prefix_nodes": 0,
+      "root": 13,
+      "shared_old_private_functions": 0,
+      "source_nodes": 187,
+      "source_originals": 9,
+      "source_proof_bytes": 17237,
+      "strict_clauses": 23,
+      "target_nodes": 187,
+      "target_proof_bytes": 17261,
+      "truth_assignments": 512
+    },
+    {
+      "arity": 8,
+      "branches": 0,
+      "exported_parent_rows": [
+        7,
+        81,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105
+      ],
+      "inputs": [
+        1,
+        -3,
+        5,
+        7,
+        2,
+        4,
+        -6,
+        8
+      ],
+      "matched_imports": {
+        "all_imply_root": 1,
+        "boolean": 1,
+        "root_implies_input": 8
+      },
+      "mode": "portals",
+      "nonlinear_boundary": false,
+      "private_history_exported": false,
+      "replayed_public_prefix_nodes": 0,
+      "root": 22,
+      "shared_old_private_functions": 0,
+      "source_nodes": 307,
+      "source_originals": 15,
+      "source_proof_bytes": 28982,
+      "strict_clauses": 38,
+      "target_nodes": 307,
+      "target_proof_bytes": 29090,
+      "truth_assignments": 193
+    },
+    {
+      "arity": 12,
+      "branches": 0,
+      "exported_parent_rows": [
+        11,
+        129,
+        147,
+        149,
+        151,
+        153,
+        155,
+        157,
+        159,
+        161,
+        163,
+        165,
+        167,
+        169
+      ],
+      "inputs": [
+        1,
+        -3,
+        5,
+        7,
+        -9,
+        11,
+        2,
+        4,
+        -6,
+        8,
+        10,
+        -12
+      ],
+      "matched_imports": {
+        "all_imply_root": 1,
+        "boolean": 1,
+        "root_implies_input": 12
+      },
+      "mode": "portals",
+      "nonlinear_boundary": false,
+      "private_history_exported": false,
+      "replayed_public_prefix_nodes": 0,
+      "root": 34,
+      "shared_old_private_functions": 0,
+      "source_nodes": 467,
+      "source_originals": 23,
+      "source_proof_bytes": 45958,
+      "strict_clauses": 58,
+      "target_nodes": 467,
+      "target_proof_bytes": 46300,
+      "truth_assignments": 193
+    }
+  ],
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "GROUPED-PRODUCT-REPLAY-20261115-001A",
+  "validation": {
+    "independence": "V1. A same-task mathematical referee checked the interface and independent truth-table and exact-partition checks covered all 307 affine parts on four bits. Both complete proofs and hidden-reference controls replay.",
+    "level": "V1",
+    "novelty": "Boolean conjunction associativity is known. The local delta is checked proof-prefix replacement at a declared cut, a four-leaf arbitrary public-interface simulation, and an explicit separation in the adaptive partition cost of the same conjunction."
+  }
+}

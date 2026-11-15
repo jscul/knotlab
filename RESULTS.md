@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**350 current results** and 5 superseded ones, from 389 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**352 current results** and 5 superseded ones, from 390 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 19 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 37 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 39 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 389 epics with their closures
+- [Epics](#epics): all 390 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -390,6 +390,12 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-14 · An adjacent variable identification preserves the obstruction count and changes the SAT answers** (`UNSIGNED-ROUTE-JOINS-20261115-001-D001`).
   Joining middle variables in adjacent stages preserves the original number of minimal obstructions but changes the decision on some activations. Occurrence-labelled reachability regroups the same strict formula and decides every unsigned middle identification in linear indexed time.
   [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md), [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/proof.md), [epic closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Regroup one final AND inside a checked contradiction proof** (`GROUPED-PRODUCT-REPLAY-20261115-001-D001`).
+  A four-input producer can be replaced with polynomial overhead on a public cut, and the standard final AND interface scales to any arity. In a checked 147-node refutation both groupings kept the same length while the optimal number of affine parts for all named functions fell from five to four.
+  [proof P001](proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/proof.md), [epic closure](proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · A direct pair XOR and the bit needed to multiply it** (`GROUPED-PRODUCT-REPLAY-20261115-001-D002`).
+  The pair parity Q can be carried as an ordinary quadratic alongside the regrouped AND, and splitting on z carries zQ in two cases. A later independent wQ can still be cubic, while splitting on Q itself handles every later use through the two aggregate values at the proved interface.
+  [proof P001](proofs/GROUPED-PRODUCT-REPLAY-20261115-001B/GROUPED-PRODUCT-REPLAY-20261115-001B-P001_carry_quadratic_xor/proof.md), [proof P001](proofs/GROUPED-PRODUCT-REPLAY-20261115-001C/GROUPED-PRODUCT-REPLAY-20261115-001C-P001_fresh_bit_replay/proof.md), [epic closure](proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · One shared choice can be forgotten exactly when local values are compatible** (`GUARD-CHOICE-SEPARATION-20261115-001-D001`).
   An intersection test detects each disagreement on a shared bit, and one raw guard on unchanged wiring can cause a disagreement that changes SAT. Sharing padding names alone preserves every boundary assignment.
   [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md), [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/proof.md), [epic closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md)
@@ -1570,6 +1576,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | How many independent affine factors a named proof must fix (`AFFINE-FACTOR-RANK-20261115-001`) | [closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md) | [folder](research/AFFINE-FACTOR-RANK-20261115-001/) |
 | 2026-11-15 | Rulers with cycles: when cycles of knots keep or break the reach across levels (`CYCLE-RULER-20261115-001`) | — | [folder](research/CYCLE-RULER-20261115-001/) |
 | 2026-11-15 | Where the top binds every depth directly, and whether it is truly bounded (`DIRECT-REACH-20261115-001`) | — | [folder](research/DIRECT-REACH-20261115-001/) |
+| 2026-11-15 | Regroup an AND proof and carry its pair parity directly (`GROUPED-PRODUCT-REPLAY-20261115-001`) | [closure](proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GROUPED-PRODUCT-REPLAY-20261115-001/) |
 | 2026-11-15 | When switch settings let two blocks forget a shared choice (`GUARD-CHOICE-SEPARATION-20261115-001`) | [closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GUARD-CHOICE-SEPARATION-20261115-001/) |
 | 2026-11-15 | A linear cut scan with shared hidden padding (`ONE-RELAY-PADDING-20261115-001`) | [closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | Transport and limits of proof-local reusable product names (`PRODUCT-NAME-TRANSFER-20261115-001`) | [closure](proofs/PRODUCT-NAME-TRANSFER-20261115-001Z/PRODUCT-NAME-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/PRODUCT-NAME-TRANSFER-20261115-001/) |

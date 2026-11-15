@@ -1,0 +1,35 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "AFFINE-FACTOR-RANK-20261115-001C",
+    "AFFINE-FACTOR-RANK-20261115-001Z",
+    "GROUPED-PRODUCT-REPLAY-20261115-001A",
+    "GROUPED-PRODUCT-REPLAY-20261115-001B",
+    "PRODUCT-NAME-TRANSFER-20261115-001A",
+    "PRODUCT-NAME-TRANSFER-20261115-001B",
+    "PRODUCT-NAME-TRANSFER-20261115-001C",
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001A"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GROUPED-PRODUCT-REPLAY-20261115-001C-P001",
+    "artifact_path": "proofs/GROUPED-PRODUCT-REPLAY-20261115-001C/GROUPED-PRODUCT-REPLAY-20261115-001C-P001_fresh_bit_replay",
+    "manifest_path": "proofs/GROUPED-PRODUCT-REPLAY-20261115-001C/GROUPED-PRODUCT-REPLAY-20261115-001C-P001_fresh_bit_replay/manifest.json",
+    "terminal_artifact": "proofs/GROUPED-PRODUCT-REPLAY-20261115-001C/GROUPED-PRODUCT-REPLAY-20261115-001C-P001_fresh_bit_replay/manifest.json"
+  },
+  "id": "GROUPED-PRODUCT-REPLAY-20261115-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Construct actual degree-two refutations for both values of an independent fresh bit multiplying the pair parity. Analyze which subsequent uses survive and give the first primitive failure when a further independent multiplier is required.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GROUPED-PRODUCT-REPLAY-20261115-001"
+  },
+  "parent": "GROUPED-PRODUCT-REPLAY-20261115-001",
+  "schema_version": 1,
+  "status": "Proved: A two-case split on the multiplying bit z gives a polynomial checked degree-two conversion of zQ when its residual uses respect the degree bound. A second independent wQ can be a genuine cubic even after z is fixed. Splitting on the directly derived quadratic Q instead handles all legal later uses through U and zU at a certified interface, with no retained pair or aggregate name.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Carry a gated quadratic report in two guarded cases"
+}

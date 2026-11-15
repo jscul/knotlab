@@ -1,0 +1,867 @@
+{
+  "scope_id": "RULER-LEVEL-20261114-001",
+  "phase": "smoke",
+  "seed": "tree-referee-R1-fresh-20261115",
+  "validation": "V2 relative to producer; same-task AI referee, no external replication",
+  "seconds": 0.11568977893330157,
+  "peak_rss_KiB": 28700,
+  "address_space_limit_MiB": 2300,
+  "thread_id": "01a1dc89-f598-7e13-84db-fbe6c1e16644",
+  "source_sha256": {
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/tree_audit.py": "e96da776d4d3571871195c5bc5b069bfd6ab7ed01484904223a075fe04758796",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/fresh_pattern.py": "4afdb51de764d8cd7b3248c166661775cb8a069ba8235cf4e9e789d77a638497",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/fresh_search.py": "7e1e36a6fb73540a9b786415d4b5647bed0a8fe64a4aff8bdb686a9a110b8e62",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/brute_audit/brute_supports.py": "e3b6c9404135a29d2ab7c52c71f8c3312a9c4dc17f89b6209616d054c4637d8a",
+    "research/ADDR-KNOTS-20261113-001/referee-R1/codex/fresh_patterns.py": "d76532494edecad09358475b42229c570bfd978d9d81ad8f0fadd92a040f9ca1"
+  },
+  "result": {
+    "cases": 3,
+    "searches": 9,
+    "all_decided_agree": true,
+    "undecided": 0,
+    "rows": [
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 4,
+        "k0": 1,
+        "s": 1,
+        "nvars": 31,
+        "knots": 15,
+        "pattern_sha256": "b90c52c7e6127f5cf0811d75c7376dbf1a6e687661584e13859458bcaa2c8bb1",
+        "nonprefix_parent_count": 28,
+        "expected_from_A": 3,
+        "search": {
+          "L": 3,
+          "bond": [
+            1,
+            5,
+            6
+          ],
+          "forbidden_assignment": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 3,
+            "candidates": 1,
+            "projection_calls": 6,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 140,
+              "entries": 97,
+              "circuit_clauses": 460,
+              "variables": 31
+            },
+            "native_nonfull_support_blocks": 13,
+            "seconds": 0.001289286999963224
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 8
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 4,
+        "k0": 1,
+        "s": 2,
+        "nvars": 31,
+        "knots": 15,
+        "pattern_sha256": "b90c52c7e6127f5cf0811d75c7376dbf1a6e687661584e13859458bcaa2c8bb1",
+        "nonprefix_parent_count": 28,
+        "expected_from_A": 4,
+        "search": {
+          "L": 4,
+          "bond": [
+            1,
+            5,
+            7,
+            8
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 4,
+            "candidates": 1,
+            "projection_calls": 16,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2,
+              3
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 140,
+              "entries": 97,
+              "circuit_clauses": 460,
+              "variables": 31
+            },
+            "native_nonfull_support_blocks": 15,
+            "seconds": 0.001569012994877994
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 21
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 4,
+        "k0": 1,
+        "s": 3,
+        "nvars": 31,
+        "knots": 15,
+        "pattern_sha256": "b90c52c7e6127f5cf0811d75c7376dbf1a6e687661584e13859458bcaa2c8bb1",
+        "nonprefix_parent_count": 28,
+        "expected_from_A": 5,
+        "search": {
+          "L": 5,
+          "bond": [
+            2,
+            3,
+            12,
+            21,
+            22
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 5,
+            "candidates": 1,
+            "projection_calls": 40,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2,
+              3,
+              4
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 140,
+              "entries": 97,
+              "circuit_clauses": 460,
+              "variables": 31
+            },
+            "native_nonfull_support_blocks": 15,
+            "seconds": 0.003985388088040054
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 46
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 5,
+        "k0": 1,
+        "s": 1,
+        "nvars": 63,
+        "knots": 31,
+        "pattern_sha256": "01ad2d8fd039e4fb7211ed829be97358bf626c3a52950c3fb4cff89152d37e13",
+        "nonprefix_parent_count": 60,
+        "expected_from_A": 3,
+        "search": {
+          "L": 3,
+          "bond": [
+            2,
+            3,
+            4
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            0
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 3,
+            "candidates": 1,
+            "projection_calls": 6,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 292,
+              "entries": 201,
+              "circuit_clauses": 964,
+              "variables": 63
+            },
+            "native_nonfull_support_blocks": 29,
+            "seconds": 0.002478166949003935
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 8
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 5,
+        "k0": 1,
+        "s": 2,
+        "nvars": 63,
+        "knots": 31,
+        "pattern_sha256": "01ad2d8fd039e4fb7211ed829be97358bf626c3a52950c3fb4cff89152d37e13",
+        "nonprefix_parent_count": 60,
+        "expected_from_A": 4,
+        "search": {
+          "L": 4,
+          "bond": [
+            2,
+            4,
+            13,
+            14
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 4,
+            "candidates": 1,
+            "projection_calls": 16,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2,
+              3
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 292,
+              "entries": 201,
+              "circuit_clauses": 964,
+              "variables": 63
+            },
+            "native_nonfull_support_blocks": 31,
+            "seconds": 0.006174609996378422
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 21
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 5,
+        "k0": 1,
+        "s": 3,
+        "nvars": 63,
+        "knots": 31,
+        "pattern_sha256": "01ad2d8fd039e4fb7211ed829be97358bf626c3a52950c3fb4cff89152d37e13",
+        "nonprefix_parent_count": 60,
+        "expected_from_A": 5,
+        "search": {
+          "L": 5,
+          "bond": [
+            2,
+            3,
+            11,
+            19,
+            20
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 5,
+            "candidates": 6,
+            "projection_calls": 187,
+            "blocked_supports": [
+              [
+                0,
+                2,
+                5,
+                6
+              ],
+              [
+                13,
+                18,
+                57,
+                58
+              ],
+              [
+                3,
+                14,
+                17,
+                18
+              ],
+              [
+                3,
+                13,
+                15,
+                16
+              ],
+              [
+                4,
+                11,
+                19,
+                20
+              ]
+            ],
+            "exhausted_sizes": [
+              2,
+              3,
+              4
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 292,
+              "entries": 201,
+              "circuit_clauses": 964,
+              "variables": 63
+            },
+            "native_nonfull_support_blocks": 31,
+            "seconds": 0.015771234990097582
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 46
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 6,
+        "k0": 1,
+        "s": 1,
+        "nvars": 127,
+        "knots": 63,
+        "pattern_sha256": "3b77369b81c29d3f674155ce1dc60834cf4d981a77826f8202911725233530a9",
+        "nonprefix_parent_count": 124,
+        "expected_from_A": 3,
+        "search": {
+          "L": 3,
+          "bond": [
+            2,
+            3,
+            4
+          ],
+          "forbidden_assignment": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 3,
+            "candidates": 1,
+            "projection_calls": 6,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 596,
+              "entries": 409,
+              "circuit_clauses": 1972,
+              "variables": 127
+            },
+            "native_nonfull_support_blocks": 61,
+            "seconds": 0.0019273980287835002
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 8
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 6,
+        "k0": 1,
+        "s": 2,
+        "nvars": 127,
+        "knots": 63,
+        "pattern_sha256": "3b77369b81c29d3f674155ce1dc60834cf4d981a77826f8202911725233530a9",
+        "nonprefix_parent_count": 124,
+        "expected_from_A": 4,
+        "search": {
+          "L": 4,
+          "bond": [
+            1,
+            6,
+            9,
+            10
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 4,
+            "candidates": 1,
+            "projection_calls": 16,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2,
+              3
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 596,
+              "entries": 409,
+              "circuit_clauses": 1972,
+              "variables": 127
+            },
+            "native_nonfull_support_blocks": 63,
+            "seconds": 0.008584380033425987
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 21
+      },
+      {
+        "case": 0,
+        "key": [
+          3,
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            [
+              23,
+              28,
+              30
+            ]
+          ]
+        ],
+        "N": 6,
+        "k0": 1,
+        "s": 3,
+        "nvars": 127,
+        "knots": 63,
+        "pattern_sha256": "3b77369b81c29d3f674155ce1dc60834cf4d981a77826f8202911725233530a9",
+        "nonprefix_parent_count": 124,
+        "expected_from_A": 5,
+        "search": {
+          "L": 5,
+          "bond": [
+            1,
+            5,
+            8,
+            29,
+            30
+          ],
+          "forbidden_assignment": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 5,
+            "candidates": 25,
+            "projection_calls": 656,
+            "blocked_supports": [
+              [
+                9,
+                26,
+                41,
+                42
+              ],
+              [
+                5,
+                10,
+                25,
+                26
+              ],
+              [
+                1,
+                6,
+                9,
+                10
+              ],
+              [
+                1,
+                5,
+                7,
+                8
+              ],
+              [
+                6,
+                8,
+                29,
+                30
+              ],
+              [
+                22,
+                48,
+                93,
+                94
+              ],
+              [
+                21,
+                50,
+                89,
+                90
+              ],
+              [
+                18,
+                55,
+                75,
+                76
+              ],
+              [
+                16,
+                60,
+                69,
+                70
+              ],
+              [
+                28,
+                35,
+                115,
+                116
+              ],
+              [
+                8,
+                28,
+                37,
+                38
+              ],
+              [
+                17,
+                58,
+                73,
+                74
+              ],
+              [
+                12,
+                19,
+                51,
+                52
+              ],
+              [
+                11,
+                22,
+                49,
+                50
+              ],
+              [
+                20,
+                51,
+                83,
+                84
+              ],
+              [
+                3,
+                13,
+                15,
+                16
+              ],
+              [
+                18,
+                56,
+                77,
+                78
+              ],
+              [
+                11,
+                21,
+                47,
+                48
+              ],
+              [
+                29,
+                34,
+                121,
+                122
+              ],
+              [
+                29,
+                33,
+                119,
+                120
+              ],
+              [
+                30,
+                31,
+                123,
+                124
+              ],
+              [
+                30,
+                32,
+                125,
+                126
+              ],
+              [
+                7,
+                29,
+                31,
+                32
+              ],
+              [
+                7,
+                30,
+                33,
+                34
+              ]
+            ],
+            "exhausted_sizes": [
+              2,
+              3,
+              4
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 596,
+              "entries": 409,
+              "circuit_clauses": 1972,
+              "variables": 127
+            },
+            "native_nonfull_support_blocks": 63,
+            "seconds": 0.06502631190232933
+          }
+        },
+        "fresh_brute_projection_check": true,
+        "sat_calls": 46
+      }
+    ]
+  }
+}

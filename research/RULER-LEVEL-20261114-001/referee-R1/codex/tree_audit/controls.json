@@ -1,0 +1,926 @@
+{
+  "scope_id": "RULER-LEVEL-20261114-001",
+  "phase": "controls",
+  "seed": "tree-referee-R1-fresh-20261115",
+  "validation": "V2 relative to producer; same-task AI referee, no external replication",
+  "seconds": 0.007113931002095342,
+  "peak_rss_KiB": 27808,
+  "address_space_limit_MiB": 2300,
+  "thread_id": "01a1dc89-f598-7e13-84db-fbe6c1e16644",
+  "source_sha256": {
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/tree_audit.py": "e96da776d4d3571871195c5bc5b069bfd6ab7ed01484904223a075fe04758796",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/fresh_pattern.py": "4afdb51de764d8cd7b3248c166661775cb8a069ba8235cf4e9e789d77a638497",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/fresh_search.py": "7e1e36a6fb73540a9b786415d4b5647bed0a8fe64a4aff8bdb686a9a110b8e62",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/brute_audit/brute_supports.py": "e3b6c9404135a29d2ab7c52c71f8c3312a9c4dc17f89b6209616d054c4637d8a",
+    "research/ADDR-KNOTS-20261113-001/referee-R1/codex/fresh_patterns.py": "d76532494edecad09358475b42229c570bfd978d9d81ad8f0fadd92a040f9ca1"
+  },
+  "result": {
+    "structural": [
+      {
+        "name": "two_knots_share_two",
+        "knots": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            2,
+            5,
+            6
+          ]
+        ],
+        "gates_expected_false": [
+          "incidence_acyclic",
+          "no_pair_of_knots_shares_two"
+        ],
+        "rejected": true,
+        "result": {
+          "all_pass": false,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": false,
+            "one_upper_two_lower": false,
+            "upper_unique_at_all_nontop_levels": true,
+            "lower_unique_except_root": true,
+            "all_addresses_ascend_to_root": false,
+            "descending_chains_from_every_address_at_every_available_length": false,
+            "incidence_acyclic": false,
+            "incidence_connected": true,
+            "no_pair_of_knots_shares_two": false
+          },
+          "N": 2,
+          "nvars": 7,
+          "knots": 4,
+          "incidence": {
+            "acyclic": false,
+            "cycle_rank": 2,
+            "components": 1,
+            "connected": true,
+            "no_pair_of_knots_shares_two": false,
+            "repeated_pairs": [
+              {
+                "pair": [
+                  0,
+                  1
+                ],
+                "knots": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "pair": [
+                  1,
+                  3
+                ],
+                "knots": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "chain_checks": 0,
+          "chain_failure": {
+            "reason": "parent/child premise fails"
+          },
+          "pattern_sha256": "060fb869b20c58f95101c2b2e2607cf59bbb20c7568ee09570d3dccfa44bc801",
+          "nonprefix_parent_count": 0
+        }
+      },
+      {
+        "name": "long_cycle_with_only_single_overlaps",
+        "knots": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            4,
+            5
+          ]
+        ],
+        "gates_expected_false": [
+          "incidence_acyclic"
+        ],
+        "rejected": true,
+        "result": {
+          "all_pass": false,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": true,
+            "one_upper_two_lower": false,
+            "upper_unique_at_all_nontop_levels": false,
+            "lower_unique_except_root": false,
+            "all_addresses_ascend_to_root": false,
+            "descending_chains_from_every_address_at_every_available_length": false,
+            "incidence_acyclic": false,
+            "incidence_connected": false,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 2,
+          "nvars": 7,
+          "knots": 3,
+          "incidence": {
+            "acyclic": false,
+            "cycle_rank": 1,
+            "components": 2,
+            "connected": false,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 0,
+          "chain_failure": {
+            "reason": "parent/child premise fails"
+          },
+          "pattern_sha256": "89c4207320ee6ed229f0c40e602d702bff318ccf2eafeb3f0acfc15ec27151dd",
+          "nonprefix_parent_count": 2
+        }
+      },
+      {
+        "name": "missing_parent_disconnected",
+        "knots": [
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            2,
+            5,
+            6
+          ]
+        ],
+        "gates_expected_false": [
+          "incidence_connected",
+          "lower_unique_except_root"
+        ],
+        "rejected": true,
+        "result": {
+          "all_pass": false,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": false,
+            "one_upper_two_lower": true,
+            "upper_unique_at_all_nontop_levels": false,
+            "lower_unique_except_root": false,
+            "all_addresses_ascend_to_root": false,
+            "descending_chains_from_every_address_at_every_available_length": false,
+            "incidence_acyclic": true,
+            "incidence_connected": false,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 2,
+          "nvars": 7,
+          "knots": 2,
+          "incidence": {
+            "acyclic": true,
+            "cycle_rank": 0,
+            "components": 3,
+            "connected": false,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 0,
+          "chain_failure": {
+            "reason": "parent/child premise fails"
+          },
+          "pattern_sha256": "fbb6d2b67b34e97e06d1063b8113dd84dd1d18dd6038792e47d36847cd1d1124",
+          "nonprefix_parent_count": 0
+        }
+      },
+      {
+        "name": "one_lower_duplicate_parent",
+        "knots": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ]
+        ],
+        "gates_expected_false": [
+          "upper_unique_at_all_nontop_levels",
+          "lower_unique_except_root"
+        ],
+        "rejected": true,
+        "result": {
+          "all_pass": false,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": false,
+            "one_upper_two_lower": true,
+            "upper_unique_at_all_nontop_levels": false,
+            "lower_unique_except_root": false,
+            "all_addresses_ascend_to_root": false,
+            "descending_chains_from_every_address_at_every_available_length": false,
+            "incidence_acyclic": false,
+            "incidence_connected": true,
+            "no_pair_of_knots_shares_two": false
+          },
+          "N": 2,
+          "nvars": 7,
+          "knots": 4,
+          "incidence": {
+            "acyclic": false,
+            "cycle_rank": 2,
+            "components": 1,
+            "connected": true,
+            "no_pair_of_knots_shares_two": false,
+            "repeated_pairs": [
+              {
+                "pair": [
+                  1,
+                  3
+                ],
+                "knots": [
+                  1,
+                  2
+                ]
+              }
+            ]
+          },
+          "chain_checks": 0,
+          "chain_failure": {
+            "reason": "parent/child premise fails"
+          },
+          "pattern_sha256": "39843dde6cfc0afa17e03467f16b8ef6132655493cf02f3992467e31bfaeb450",
+          "nonprefix_parent_count": 0
+        }
+      },
+      {
+        "name": "only_within_level",
+        "knots": [
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "gates_expected_false": [
+          "one_upper_two_lower"
+        ],
+        "rejected": true,
+        "result": {
+          "all_pass": false,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": false,
+            "one_upper_two_lower": false,
+            "upper_unique_at_all_nontop_levels": false,
+            "lower_unique_except_root": false,
+            "all_addresses_ascend_to_root": false,
+            "descending_chains_from_every_address_at_every_available_length": false,
+            "incidence_acyclic": true,
+            "incidence_connected": false,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 2,
+          "nvars": 7,
+          "knots": 1,
+          "incidence": {
+            "acyclic": true,
+            "cycle_rank": 0,
+            "components": 5,
+            "connected": false,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 0,
+          "chain_failure": {
+            "reason": "parent/child premise fails"
+          },
+          "pattern_sha256": "843f614fa8d26b3fa29399486f7702623de653a82bf822eb511629806321285f",
+          "nonprefix_parent_count": 0
+        }
+      }
+    ],
+    "exact": [
+      {
+        "name": "one_knot",
+        "knots": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "A": [
+          0
+        ],
+        "B": [
+          2
+        ],
+        "truth": {
+          "L": 3,
+          "states": 6,
+          "all_bonds": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "crossing_bonds": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        "search": {
+          "L": 3,
+          "bond": [
+            0,
+            1,
+            2
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            0
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 3,
+            "candidates": 1,
+            "projection_calls": 6,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 10,
+              "entries": 7,
+              "circuit_clauses": 30,
+              "variables": 3
+            },
+            "native_nonfull_support_blocks": 0,
+            "seconds": 0.00029746501240879297
+          }
+        },
+        "agree": true
+      },
+      {
+        "name": "two_step_tree",
+        "knots": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "A": [
+          0
+        ],
+        "B": [
+          4
+        ],
+        "truth": {
+          "L": 4,
+          "states": 18,
+          "all_bonds": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              3,
+              4
+            ]
+          ],
+          "crossing_bonds": [
+            [
+              0,
+              1,
+              3,
+              4
+            ]
+          ]
+        },
+        "search": {
+          "L": 4,
+          "bond": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 5,
+            "candidates": 1,
+            "projection_calls": 16,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2,
+              3
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 19,
+              "entries": 13,
+              "circuit_clauses": 57,
+              "variables": 5
+            },
+            "native_nonfull_support_blocks": 2,
+            "seconds": 0.00024934904649853706
+          }
+        },
+        "agree": true
+      },
+      {
+        "name": "connected_cycle_no_cross_bond",
+        "knots": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "A": [
+          0
+        ],
+        "B": [
+          3
+        ],
+        "truth": {
+          "L": "none",
+          "states": 10,
+          "all_bonds": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "crossing_bonds": []
+        },
+        "search": {
+          "L": "> 4",
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 4,
+            "candidates": 0,
+            "projection_calls": 0,
+            "blocked_supports": [],
+            "exhausted_sizes": [
+              2,
+              3,
+              4
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 16,
+              "entries": 11,
+              "circuit_clauses": 48,
+              "variables": 4
+            },
+            "native_nonfull_support_blocks": 2,
+            "seconds": 0.00016712304204702377
+          }
+        },
+        "agree": true
+      },
+      {
+        "name": "disconnected",
+        "knots": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "A": [
+          0
+        ],
+        "B": [
+          5
+        ],
+        "truth": {
+          "L": "none",
+          "states": 36,
+          "all_bonds": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "crossing_bonds": []
+        },
+        "search": {
+          "L": "none",
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 6,
+            "candidates": 0,
+            "projection_calls": 0,
+            "blocked_supports": [],
+            "exhausted_sizes": []
+          }
+        },
+        "agree": true
+      }
+    ],
+    "redundant_non_A_full_tree": {
+      "key": [
+        1,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            3,
+            6,
+            7
+          ]
+        ]
+      ],
+      "checks": [
+        {
+          "all_pass": true,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": true,
+            "one_upper_two_lower": true,
+            "upper_unique_at_all_nontop_levels": true,
+            "lower_unique_except_root": true,
+            "all_addresses_ascend_to_root": true,
+            "descending_chains_from_every_address_at_every_available_length": true,
+            "incidence_acyclic": true,
+            "incidence_connected": true,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 0,
+          "nvars": 1,
+          "knots": 0,
+          "incidence": {
+            "acyclic": true,
+            "cycle_rank": 0,
+            "components": 1,
+            "connected": true,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 0,
+          "chain_failure": null,
+          "pattern_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "nonprefix_parent_count": 0
+        },
+        {
+          "all_pass": true,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": true,
+            "one_upper_two_lower": true,
+            "upper_unique_at_all_nontop_levels": true,
+            "lower_unique_except_root": true,
+            "all_addresses_ascend_to_root": true,
+            "descending_chains_from_every_address_at_every_available_length": true,
+            "incidence_acyclic": true,
+            "incidence_connected": true,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 1,
+          "nvars": 3,
+          "knots": 1,
+          "incidence": {
+            "acyclic": true,
+            "cycle_rank": 0,
+            "components": 1,
+            "connected": true,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 1,
+          "chain_failure": null,
+          "pattern_sha256": "aa766e53d3d3dd46260bdd8985eb2851a61e5da2156052a75560d814e4ece156",
+          "nonprefix_parent_count": 0
+        },
+        {
+          "all_pass": true,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": true,
+            "one_upper_two_lower": true,
+            "upper_unique_at_all_nontop_levels": true,
+            "lower_unique_except_root": true,
+            "all_addresses_ascend_to_root": true,
+            "descending_chains_from_every_address_at_every_available_length": true,
+            "incidence_acyclic": true,
+            "incidence_connected": true,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 3,
+          "nvars": 15,
+          "knots": 7,
+          "incidence": {
+            "acyclic": true,
+            "cycle_rank": 0,
+            "components": 1,
+            "connected": true,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 11,
+          "chain_failure": null,
+          "pattern_sha256": "ff0e41ce7db124667c5b46a38fea3819d3610fbdd8ba6980130d6e2f8400ef8d",
+          "nonprefix_parent_count": 0
+        },
+        {
+          "all_pass": true,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": true,
+            "one_upper_two_lower": true,
+            "upper_unique_at_all_nontop_levels": true,
+            "lower_unique_except_root": true,
+            "all_addresses_ascend_to_root": true,
+            "descending_chains_from_every_address_at_every_available_length": true,
+            "incidence_acyclic": true,
+            "incidence_connected": true,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 6,
+          "nvars": 127,
+          "knots": 63,
+          "incidence": {
+            "acyclic": true,
+            "cycle_rank": 0,
+            "components": 1,
+            "connected": true,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 120,
+          "chain_failure": null,
+          "pattern_sha256": "9d25fae95153d02f0522e66ebb7bb05c29b064049683b18d8bb532be2f07b6bd",
+          "nonprefix_parent_count": 0
+        },
+        {
+          "all_pass": true,
+          "flags": {
+            "addresses_valid": true,
+            "three_distinct_per_knot": true,
+            "distinct_knots": true,
+            "expected_knot_count": true,
+            "one_upper_two_lower": true,
+            "upper_unique_at_all_nontop_levels": true,
+            "lower_unique_except_root": true,
+            "all_addresses_ascend_to_root": true,
+            "descending_chains_from_every_address_at_every_available_length": true,
+            "incidence_acyclic": true,
+            "incidence_connected": true,
+            "no_pair_of_knots_shares_two": true
+          },
+          "N": 7,
+          "nvars": 255,
+          "knots": 127,
+          "incidence": {
+            "acyclic": true,
+            "cycle_rank": 0,
+            "components": 1,
+            "connected": true,
+            "no_pair_of_knots_shares_two": true,
+            "repeated_pairs": []
+          },
+          "chain_checks": 247,
+          "chain_failure": null,
+          "pattern_sha256": "a4b5367a109ce2f0cf978c1dc6d00e5db795e157f1677357b7d8513f42edf129",
+          "nonprefix_parent_count": 0
+        }
+      ]
+    },
+    "overview_detour_counterexample": {
+      "knots": [
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          6,
+          7,
+          8
+        ]
+      ],
+      "nvars": 15,
+      "k0": 1,
+      "s": 2,
+      "A": [
+        1,
+        2
+      ],
+      "B": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "incidence": {
+        "acyclic": true,
+        "cycle_rank": 0,
+        "components": 9,
+        "connected": false,
+        "no_pair_of_knots_shares_two": true,
+        "repeated_pairs": []
+      },
+      "descending_chain_length_two": false,
+      "independent_search": {
+        "L": 5,
+        "bond": [
+          1,
+          3,
+          5,
+          7,
+          8
+        ],
+        "forbidden_assignment": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "exact": true,
+        "stats": {
+          "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+          "cap": 5,
+          "candidates": 2,
+          "projection_calls": 95,
+          "blocked_supports": [
+            [
+              1,
+              3,
+              5,
+              6
+            ]
+          ],
+          "exhausted_sizes": [
+            2,
+            3,
+            4
+          ],
+          "compilation": {
+            "width": 2,
+            "gates": 37,
+            "entries": 27,
+            "circuit_clauses": 118,
+            "variables": 15
+          },
+          "native_nonfull_support_blocks": 3,
+          "seconds": 0.0006207539699971676
+        }
+      },
+      "support_enumeration": {
+        "L": 5,
+        "support": [
+          1,
+          3,
+          5,
+          7,
+          8
+        ],
+        "forbidden": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "proper_projections_full": true,
+        "optimality_exhausted": true,
+        "seconds": 0.0005032559856772423,
+        "candidate_supports": {
+          "2": 2,
+          "3": 9,
+          "4": 16,
+          "5": 8
+        },
+        "nonfull_nonminimal": 10,
+        "cap": 5,
+        "relevant_components": [
+          7
+        ],
+        "sat_calls": 250
+      },
+      "not_claimed_registered_description": true
+    }
+  }
+}

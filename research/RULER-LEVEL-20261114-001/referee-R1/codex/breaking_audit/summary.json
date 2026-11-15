@@ -1,0 +1,641 @@
+{
+  "scope_kind": "epic",
+  "scope_id": "RULER-LEVEL-20261114-001",
+  "lane": "recompute_breaking_cases",
+  "status": "five_serialized_cases_confirmed_sixth_input_unavailable",
+  "N": 6,
+  "top_level": 1,
+  "s_values": [
+    1,
+    2,
+    3
+  ],
+  "nvars": 127,
+  "log_counts": {
+    "undecided": 21,
+    "ruler": 51,
+    "NOT ruler": 6,
+    "union dead": 2
+  },
+  "reported_breaks": 6,
+  "serialized_inputs": 5,
+  "missing_input": {
+    "profile": [
+      3,
+      3,
+      4
+    ],
+    "log_line": 64,
+    "key_present": false
+  },
+  "cases": [
+    {
+      "serialized_case": 1,
+      "claimed_L": [
+        3,
+        3,
+        4
+      ],
+      "recomputed_L": [
+        3,
+        3,
+        4
+      ],
+      "all_exact": true,
+      "smaller_sizes_exhausted": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "knot_count": 245,
+      "two_builders_agree": true,
+      "elimination_width": 34,
+      "seconds": 0.7847137590870261,
+      "max_rss_KiB": 29084,
+      "sibling_witness_count": 4,
+      "sibling_witness": {
+        "tree_placement": [
+          22,
+          23,
+          24
+        ],
+        "within_placement_index": 1,
+        "within_placement": [
+          15,
+          24,
+          27
+        ],
+        "w": "0",
+        "parent": 1,
+        "parent_word": "0",
+        "siblings": [
+          5,
+          6
+        ],
+        "sibling_words": [
+          "10",
+          "11"
+        ],
+        "tree_knot": [
+          1,
+          5,
+          6
+        ],
+        "within_knot": [
+          3,
+          5,
+          6
+        ],
+        "ordinary_prefix_siblings": true
+      },
+      "bonds": [
+        {
+          "s": 1,
+          "support": [
+            1,
+            3,
+            11
+          ],
+          "forbidden_assignment": [
+            0,
+            1,
+            0
+          ],
+          "proper_projection_models": 12
+        },
+        {
+          "s": 2,
+          "support": [
+            1,
+            3,
+            11
+          ],
+          "forbidden_assignment": [
+            0,
+            1,
+            0
+          ],
+          "proper_projection_models": 12
+        },
+        {
+          "s": 3,
+          "support": [
+            1,
+            16,
+            36,
+            40
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "proper_projection_models": 32
+        }
+      ],
+      "artifact": "case_1.json"
+    },
+    {
+      "serialized_case": 2,
+      "claimed_L": [
+        3,
+        4,
+        4
+      ],
+      "recomputed_L": [
+        3,
+        4,
+        4
+      ],
+      "all_exact": true,
+      "smaller_sizes_exhausted": [
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "knot_count": 229,
+      "two_builders_agree": true,
+      "elimination_width": 32,
+      "seconds": 12.948456919984892,
+      "max_rss_KiB": 60860,
+      "sibling_witness_count": 10,
+      "sibling_witness": {
+        "tree_placement": [
+          3,
+          13,
+          14
+        ],
+        "within_placement_index": 2,
+        "within_placement": [
+          3,
+          9,
+          15
+        ],
+        "w": "0",
+        "parent": 1,
+        "parent_word": "0",
+        "siblings": [
+          5,
+          6
+        ],
+        "sibling_words": [
+          "10",
+          "11"
+        ],
+        "tree_knot": [
+          1,
+          5,
+          6
+        ],
+        "within_knot": [
+          3,
+          5,
+          6
+        ],
+        "ordinary_prefix_siblings": true
+      },
+      "bonds": [
+        {
+          "s": 1,
+          "support": [
+            1,
+            5,
+            6
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            0
+          ],
+          "proper_projection_models": 12
+        },
+        {
+          "s": 2,
+          "support": [
+            1,
+            13,
+            17,
+            18
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "proper_projection_models": 32
+        },
+        {
+          "s": 3,
+          "support": [
+            1,
+            13,
+            17,
+            18
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "proper_projection_models": 32
+        }
+      ],
+      "artifact": "case_2.json"
+    },
+    {
+      "serialized_case": 3,
+      "claimed_L": [
+        3,
+        3,
+        3
+      ],
+      "recomputed_L": [
+        3,
+        3,
+        3
+      ],
+      "all_exact": true,
+      "smaller_sizes_exhausted": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "knot_count": 309,
+      "two_builders_agree": true,
+      "elimination_width": 52,
+      "seconds": 0.04580049903597683,
+      "max_rss_KiB": 27448,
+      "sibling_witness_count": 10,
+      "sibling_witness": {
+        "tree_placement": [
+          14,
+          18,
+          25
+        ],
+        "within_placement_index": 1,
+        "within_placement": [
+          9,
+          15,
+          36
+        ],
+        "w": "01",
+        "parent": 3,
+        "parent_word": "00",
+        "siblings": [
+          7,
+          10
+        ],
+        "sibling_words": [
+          "000",
+          "011"
+        ],
+        "tree_knot": [
+          3,
+          7,
+          10
+        ],
+        "within_knot": [
+          7,
+          10,
+          12
+        ],
+        "ordinary_prefix_siblings": false
+      },
+      "bonds": [
+        {
+          "s": 1,
+          "support": [
+            1,
+            3,
+            7
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            0
+          ],
+          "proper_projection_models": 12
+        },
+        {
+          "s": 2,
+          "support": [
+            1,
+            3,
+            7
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            0
+          ],
+          "proper_projection_models": 12
+        },
+        {
+          "s": 3,
+          "support": [
+            1,
+            10,
+            15
+          ],
+          "forbidden_assignment": [
+            0,
+            1,
+            0
+          ],
+          "proper_projection_models": 12
+        }
+      ],
+      "artifact": "case_3.json"
+    },
+    {
+      "serialized_case": 4,
+      "claimed_L": [
+        2,
+        2,
+        2
+      ],
+      "recomputed_L": [
+        2,
+        2,
+        2
+      ],
+      "all_exact": true,
+      "smaller_sizes_exhausted": [
+        [],
+        [],
+        []
+      ],
+      "knot_count": 310,
+      "two_builders_agree": true,
+      "elimination_width": 53,
+      "seconds": 0.04051221499685198,
+      "max_rss_KiB": 27064,
+      "sibling_witness_count": 26,
+      "sibling_witness": {
+        "tree_placement": [
+          2,
+          4,
+          33
+        ],
+        "within_placement_index": 1,
+        "within_placement": [
+          6,
+          27,
+          30
+        ],
+        "w": "010",
+        "parent": 7,
+        "parent_word": "000",
+        "siblings": [
+          20,
+          21
+        ],
+        "sibling_words": [
+          "0101",
+          "0110"
+        ],
+        "tree_knot": [
+          7,
+          20,
+          21
+        ],
+        "within_knot": [
+          20,
+          21,
+          27
+        ],
+        "ordinary_prefix_siblings": false
+      },
+      "bonds": [
+        {
+          "s": 1,
+          "support": [
+            1,
+            3
+          ],
+          "forbidden_assignment": [
+            0,
+            0
+          ],
+          "proper_projection_models": 4
+        },
+        {
+          "s": 2,
+          "support": [
+            1,
+            7
+          ],
+          "forbidden_assignment": [
+            0,
+            1
+          ],
+          "proper_projection_models": 4
+        },
+        {
+          "s": 3,
+          "support": [
+            1,
+            15
+          ],
+          "forbidden_assignment": [
+            0,
+            0
+          ],
+          "proper_projection_models": 4
+        }
+      ],
+      "artifact": "case_4.json"
+    },
+    {
+      "serialized_case": 5,
+      "claimed_L": [
+        3,
+        4,
+        4
+      ],
+      "recomputed_L": [
+        3,
+        4,
+        4
+      ],
+      "all_exact": true,
+      "smaller_sizes_exhausted": [
+        [
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "knot_count": 347,
+      "two_builders_agree": true,
+      "elimination_width": 54,
+      "seconds": 3.5065234360517934,
+      "max_rss_KiB": 34056,
+      "sibling_witness_count": 33,
+      "sibling_witness": {
+        "tree_placement": [
+          0,
+          2,
+          10
+        ],
+        "within_placement_index": 1,
+        "within_placement": [
+          0,
+          33,
+          36
+        ],
+        "w": "00",
+        "parent": 3,
+        "parent_word": "00",
+        "siblings": [
+          8,
+          11
+        ],
+        "sibling_words": [
+          "001",
+          "100"
+        ],
+        "tree_knot": [
+          3,
+          8,
+          11
+        ],
+        "within_knot": [
+          8,
+          11,
+          12
+        ],
+        "ordinary_prefix_siblings": false
+      },
+      "bonds": [
+        {
+          "s": 1,
+          "support": [
+            1,
+            4,
+            5
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            0
+          ],
+          "proper_projection_models": 12
+        },
+        {
+          "s": 2,
+          "support": [
+            1,
+            4,
+            7,
+            26
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "proper_projection_models": 32
+        },
+        {
+          "s": 3,
+          "support": [
+            1,
+            5,
+            9,
+            20
+          ],
+          "forbidden_assignment": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "proper_projection_models": 32
+        }
+      ],
+      "artifact": "case_5.json"
+    }
+  ],
+  "all_five_claimed_vectors_match": true,
+  "all_five_have_actual_tree_siblings": true,
+  "exact_method": "enumerate every A/B-crossing support in increasing size; exact SAT projections; every maximal proper subset full",
+  "circuit_search_used_for_N6": false,
+  "resolution_pruning_used": false,
+  "controls": {
+    "comparisons": 32,
+    "all_passed": true
+  },
+  "certificates": {
+    "bonds": 15,
+    "models": 256,
+    "all_passed": true,
+    "artifact": "certificate_audit.json",
+    "proof_format": "DRUP additions checked by independent hint-free RUP; deletion lines safely ignored"
+  },
+  "validation_class": "V2 same-task independent reimplementation; no human review or external replication",
+  "claims": [
+    {
+      "classification": "Block",
+      "claim": "all six breaking descriptions independently reproduced",
+      "reason": "only five keys serialized; recover sixth key or qualify claim"
+    },
+    {
+      "classification": "Narrowing",
+      "claim": "cycles break ruler both ways / constant / halve its rate",
+      "reason": "finite s=1..3 confirms only listed shortened profiles; no longer-than-ruler example or asymptotic rate"
+    },
+    {
+      "classification": "Not a block",
+      "claim": "within-level knot contains tree siblings for five available inputs",
+      "reason": "verified from tree-placement parenthood, including non-prefix siblings"
+    }
+  ],
+  "resource_totals": {
+    "pattern_search_seconds": 17.32600682915654,
+    "certificate_seconds": 2.7790616729762405,
+    "maximum_rss_KiB": 60860
+  },
+  "source_sha256": {
+    "research/RULER-LEVEL-20261114-001/exploratory/tree_plus_within.log": "5ac388dbc80840640690b478a4502403680c506983b02f8ccb0b5493dc5da167",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/breaking_audit/audit.py": "47dc7026073bd845fe99f025ec46356fc3fd4b4b8591db22dfa2e65fa4ff4bb6",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/breaking_audit/check_certificates.py": "b3b0b642974520a01debfe19361302d41236a02e5fdd73fce74fe17985b96ec2"
+  },
+  "nonclaims": [
+    "sixth-case reconstruction",
+    "other74 input verification",
+    "asymptotic growth",
+    "general monotonicity under adding knots"
+  ]
+}

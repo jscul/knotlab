@@ -1,0 +1,565 @@
+{
+  "scope_id": "RULER-LEVEL-20261114-001",
+  "lane": "independent forest theorem audit",
+  "verdict": "A** and T1 sound for distinct endpoints; summary requires narrowing",
+  "validation": "V2 independent same-task reimplementation; not external replication",
+  "exhaustive": {
+    "n": 7,
+    "coverage": "every labelled 3-uniform incidence forest on seven distinctions, including isolates",
+    "counts": {
+      "forests": 1156,
+      "forests_0_knots": 1,
+      "pairs": 24276,
+      "bonds": 5530,
+      "truth_projections": 105687,
+      "forests_1_knots": 35,
+      "rejected_cyclic": 6020,
+      "forests_2_knots": 385,
+      "forests_3_knots": 735
+    },
+    "violations": [],
+    "resources": {
+      "seconds": 0.3443391859764233,
+      "max_rss_kib": 27276,
+      "compute_workers": 1
+    }
+  },
+  "random": {
+    "patterns": 120,
+    "n_range": [
+      5,
+      13
+    ],
+    "seeds": [
+      141100,
+      141219
+    ],
+    "coverage": {
+      "with_multiple_components": 77,
+      "with_within_level_knots": 75,
+      "with_path_without_descending_chain_query": 2,
+      "pairs": 4474,
+      "bonds": 815,
+      "truth_projections": 100113
+    },
+    "level_queries": 423,
+    "descending_chain_queries": 246,
+    "no_path_queries": 175,
+    "path_without_descending_chain_queries": 2,
+    "T1_violations": 0,
+    "level_formula_violations": 0,
+    "chain_equivalence_violations": 0
+  },
+  "controls": [
+    {
+      "name": "isolates",
+      "forest": true,
+      "states": 32,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "one_knot",
+      "forest": true,
+      "states": 12,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "two_knot_path",
+      "forest": true,
+      "states": 18,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "three_knot_path",
+      "forest": true,
+      "states": 54,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "shared_high_degree",
+      "forest": true,
+      "states": 324,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "disconnected",
+      "forest": true,
+      "states": 216,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "within_level_detour",
+      "forest": true,
+      "states": 54,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "nonmonotone_path",
+      "forest": true,
+      "states": 162,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "duplicate_dedup",
+      "forest": true,
+      "states": 36,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "negative_shared_two",
+      "forest": false,
+      "states": 10,
+      "T1_formula_failures": [
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "distance_knots": 2,
+          "expected": 4,
+          "actual": "none"
+        }
+      ],
+      "engine_crosschecks_agree": true
+    },
+    {
+      "name": "negative_Berge_cycle",
+      "forest": false,
+      "states": 26,
+      "T1_formula_failures": [],
+      "engine_crosschecks_agree": true
+    }
+  ],
+  "malformed_repeated_member_triple_rejects": true,
+  "ambient_detour": {
+    "addresses": [
+      "",
+      "0",
+      "1",
+      "00",
+      "01",
+      "10",
+      "11",
+      "000",
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110",
+      "111"
+    ],
+    "knots": [
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        3,
+        5,
+        6
+      ],
+      [
+        5,
+        7,
+        8
+      ]
+    ],
+    "A": [
+      1,
+      2
+    ],
+    "B": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "fresh_search": {
+      "L": 5,
+      "bond": [
+        1,
+        4,
+        6,
+        7,
+        8
+      ],
+      "forbidden_assignment": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "exact": true,
+      "stats": {
+        "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+        "cap": 15,
+        "candidates": 1,
+        "projection_calls": 40,
+        "blocked_supports": [],
+        "exhausted_sizes": [
+          2,
+          3,
+          4
+        ],
+        "compilation": {
+          "width": 2,
+          "gates": 37,
+          "entries": 27,
+          "circuit_clauses": 118,
+          "variables": 15
+        },
+        "native_nonfull_support_blocks": 3,
+        "seconds": 0.000689944950863719
+      }
+    },
+    "brute_supports": {
+      "L": 5,
+      "support": [
+        1,
+        4,
+        6,
+        7,
+        8
+      ],
+      "forbidden": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "proper_projections_full": true,
+      "optimality_exhausted": true,
+      "seconds": 0.0005420520901679993,
+      "candidate_supports": {
+        "2": 2,
+        "3": 9,
+        "4": 16,
+        "5": 13
+      },
+      "nonfull_nonminimal": 15,
+      "cap": 15,
+      "relevant_components": [
+        7
+      ],
+      "sat_calls": 266
+    },
+    "agree_with_compact_truth_L5": true,
+    "resources": {
+      "seconds": 0.01872100809123367,
+      "max_rss_kib": 25248,
+      "compute_workers": 1
+    }
+  },
+  "random_exact_engine_crosschecks": {
+    "patterns": 120,
+    "level_queries": 423,
+    "complete_bond_families": 20,
+    "failures": []
+  },
+  "detour_active_truth": {
+    "n": 7,
+    "knots": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        3,
+        5,
+        6
+      ]
+    ],
+    "forest": true,
+    "states": 54,
+    "bonds": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        3,
+        5,
+        6
+      ],
+      [
+        0,
+        2,
+        3,
+        4
+      ],
+      [
+        1,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        2,
+        4,
+        5,
+        6
+      ]
+    ],
+    "tested_supports": 87,
+    "pairs": 21,
+    "T1_violations": [],
+    "faithful": true,
+    "levels": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3
+    ],
+    "addresses": [
+      "0",
+      "00",
+      "01",
+      "10",
+      "11",
+      "000",
+      "001"
+    ],
+    "level_queries": [
+      {
+        "k": 1,
+        "s": 1,
+        "L": 3,
+        "minimum_distance_knots": 1,
+        "formula": 3,
+        "descending_chain": true,
+        "path_without_descending_chain": false,
+        "match": true,
+        "chain_iff_distance_s": true
+      },
+      {
+        "k": 1,
+        "s": 2,
+        "L": 5,
+        "minimum_distance_knots": 3,
+        "formula": 5,
+        "descending_chain": false,
+        "path_without_descending_chain": true,
+        "match": true,
+        "chain_iff_distance_s": true
+      },
+      {
+        "k": 2,
+        "s": 1,
+        "L": 3,
+        "minimum_distance_knots": 1,
+        "formula": 3,
+        "descending_chain": true,
+        "path_without_descending_chain": false,
+        "match": true,
+        "chain_iff_distance_s": true
+      }
+    ],
+    "name": "within_level_detour",
+    "engine_crosschecks": [
+      {
+        "pair": [
+          0,
+          5
+        ],
+        "truth": 5,
+        "fresh_search": {
+          "L": 5,
+          "bond": [
+            0,
+            2,
+            4,
+            5,
+            6
+          ],
+          "forbidden_assignment": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "exact": true,
+          "stats": {
+            "method": "fresh bucket-elimination existence circuit plus cardinality SAT",
+            "cap": 7,
+            "candidates": 3,
+            "projection_calls": 118,
+            "blocked_supports": [
+              [
+                0,
+                2,
+                3,
+                4
+              ],
+              [
+                1,
+                4,
+                5,
+                6
+              ]
+            ],
+            "exhausted_sizes": [
+              2,
+              3,
+              4
+            ],
+            "compilation": {
+              "width": 2,
+              "gates": 28,
+              "entries": 19,
+              "circuit_clauses": 84,
+              "variables": 7
+            },
+            "native_nonfull_support_blocks": 3,
+            "seconds": 0.0006244339747354388
+          }
+        },
+        "brute_supports": {
+          "L": 5,
+          "support": [
+            0,
+            2,
+            4,
+            5,
+            6
+          ],
+          "forbidden": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "proper_projections_full": true,
+          "optimality_exhausted": true,
+          "seconds": 0.00033973297104239464,
+          "candidate_supports": {
+            "2": 1,
+            "3": 5,
+            "4": 10,
+            "5": 9
+          },
+          "nonfull_nonminimal": 10,
+          "cap": 7,
+          "relevant_components": [
+            7
+          ],
+          "sat_calls": 177
+        },
+        "old_truth_table": {
+          "L": 5,
+          "states": 54,
+          "all_bonds": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              6
+            ],
+            [
+              0,
+              2,
+              3,
+              4
+            ],
+            [
+              1,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              2,
+              4,
+              5,
+              6
+            ]
+          ],
+          "crossing_bonds": [
+            [
+              0,
+              2,
+              4,
+              5,
+              6
+            ]
+          ]
+        },
+        "all_agree": true
+      }
+    ]
+  },
+  "resources": {
+    "compute_workers": 1,
+    "case_memory_limit_gib": 1,
+    "runner_memory_limit_gib": 2,
+    "total_case_seconds": 1.3702427357202396,
+    "max_observed_rss_mib": 26.63671875,
+    "raw_case_status_counts": {
+      "ok": 16
+    }
+  },
+  "restrictions": {
+    "producer_python_read_or_imported": false,
+    "network_used": false,
+    "git_mutations": false,
+    "writes_outside_lane": false
+  },
+  "source_sha256": {
+    "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/proof.md": "51e9541ad6d22df2eb561b55b13e125dba9fa823db02aa7ac1fb4a8674ab4df3",
+    "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/result.json": "e2ef4116a1201691e386970ae5afd6f18d5d0dcdbcd42c3bd26a8322e4506cf8",
+    "proofs/RANDOM-FATES-20261112-001B/RANDOM-FATES-20261112-001B-P001_no_cycle_and_four_consecutive/proof.md": "a13b108e5661641e757089d5c21d6af432ddf0cec1e79cee3358499b1720118e",
+    "research/RULER-LEVEL-20261114-001/ruler_level.md": "c83da111831b2800ca31e6a359f19991b4decdf8135e43cd665577a8e67a6776",
+    "research/RULER-LEVEL-20261114-001/advisor_question.md": "92d7871dcc223762975ae857e19898bea4a315206de2a915b936cfc7b2e1970a",
+    "research/RULER-LEVEL-20261114-001/advisor_answer.md": "a052f3201506c4618bc155aa15ca99ef00d4ff1e15b62426bd1a6924eec87640",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/fresh_search.py": "7e1e36a6fb73540a9b786415d4b5647bed0a8fe64a4aff8bdb686a9a110b8e62",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/fresh_pattern.py": "4afdb51de764d8cd7b3248c166661775cb8a069ba8235cf4e9e789d77a638497",
+    "research/LEVEL-REACH-20261114-001/referee-R1/codex/brute_audit/brute_supports.py": "e3b6c9404135a29d2ab7c52c71f8c3312a9c4dc17f89b6209616d054c4637d8a",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/forest_audit/job.py": "13cf8b142f73382ee3a8b94a384ed516c5c6d18a34273ea076ec5789fb2630be",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/forest_audit/crosscheck_job.py": "f0e6f3e899d0da77b9ccfa23ad0f4e54f086f8638d3e4179cc00736621520da6",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/forest_audit/summarize.py": "53356bca8704fa2688ba111e6b0c14afe9dbf2599513f6c0b923a734545a782d"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "scope_id": "RULER-LEVEL-20261114-001",
+  "lane": "tree_audit",
+  "created_utc": "2026-11-15T00:20:16.772879+00:00",
+  "thread_id": "01a1dc89-f598-7e13-84db-fbe6c1e16644",
+  "verdict": "Theorem A structural proof approved; reach application conditional on separately reviewed T1; overview narrowing required",
+  "blocks_in_A": [],
+  "narrowings": [
+    {
+      "path": "research/RULER-LEVEL-20261114-001/ruler_level.md",
+      "lines": [
+        14,
+        16
+      ],
+      "claim": "Exactly where no cycle, and no bond otherwise",
+      "fix": "State no-cycle plus descending-chain sufficiency; assert no bond only if no path."
+    }
+  ],
+  "not_blocks": [
+    {
+      "claim": "117 syntactic-A descriptions",
+      "qualification": "Sufficient coverage at every N, not an exact count of all uniform rulers; redundant non-A description generates the same bare tree."
+    },
+    {
+      "claim": "Prefix descendants",
+      "qualification": "Not needed; actual knot parents may differ from word prefixes."
+    }
+  ],
+  "structural": {
+    "draws": 120,
+    "unique_keys": 116,
+    "N": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      7,
+      9
+    ],
+    "patterns": 840,
+    "all_pass": true,
+    "word_address_images_checked": 415140,
+    "chain_continuations_checked": 169320
+  },
+  "exact": {
+    "N": [
+      6,
+      7
+    ],
+    "descriptions": 4,
+    "searches": 24,
+    "profile": [
+      3,
+      4,
+      5
+    ],
+    "all_exact": true,
+    "all_bonds_separately_projection_checked": true,
+    "nonprefix_cases": [
+      0,
+      4
+    ],
+    "undecided": 0
+  },
+  "controls": {
+    "malformed_structural_rejected": 5,
+    "tiny_truth_table_matches": 4,
+    "redundant_non_A_full_tree": true,
+    "layered_forest_no_descending_chain_has_L5": true,
+    "layered_forest_control_not_claimed_registered": true
+  },
+  "resources": {
+    "controls": {
+      "seconds": 0.007113931002095342,
+      "peak_rss_KiB": 27808,
+      "address_space_limit_MiB": 2300
+    },
+    "structural": {
+      "seconds": 1.0619384769815952,
+      "peak_rss_KiB": 28428,
+      "address_space_limit_MiB": 2300
+    },
+    "smoke": {
+      "seconds": 0.11568977893330157,
+      "peak_rss_KiB": 28700,
+      "address_space_limit_MiB": 2300
+    },
+    "exact": {
+      "seconds": 1.1476437830133364,
+      "peak_rss_KiB": 31504,
+      "address_space_limit_MiB": 2300
+    }
+  },
+  "validation": "V2 relative to producer; same-task AI referee; not human/external review",
+  "uniform_proof_from_finite_checks": false,
+  "T1_original_authority_reviewed_here": false,
+  "census_recounted_here": false,
+  "prior_work_flags": "Own knowledge only, unverified; no network; external novelty unassessed.",
+  "source_sha256": {
+    "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/proof.md": "51e9541ad6d22df2eb561b55b13e125dba9fa823db02aa7ac1fb4a8674ab4df3",
+    "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/result.json": "e2ef4116a1201691e386970ae5afd6f18d5d0dcdbcd42c3bd26a8322e4506cf8",
+    "research/RULER-LEVEL-20261114-001/ruler_level.md": "c83da111831b2800ca31e6a359f19991b4decdf8135e43cd665577a8e67a6776",
+    "research/RULER-LEVEL-20261114-001/advisor_question.md": "92d7871dcc223762975ae857e19898bea4a315206de2a915b936cfc7b2e1970a",
+    "research/RULER-LEVEL-20261114-001/advisor_answer.md": "a052f3201506c4618bc155aa15ca99ef00d4ff1e15b62426bd1a6924eec87640",
+    "research/LEVEL-REACH-20261114-001/codex_spec.md": "5e3f7dc95decd16d04841686051732498e0f754309cbc5c98fb11aee3f2a3cbe"
+  },
+  "artifact_sha256": {
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/interface.md": "6c1673e1db70f9e84d4fa4b04127a01a558ce8687dc3f3c4ee296721a62699d2",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/tree_audit.py": "e96da776d4d3571871195c5bc5b069bfd6ab7ed01484904223a075fe04758796",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/findings.md": "d6d85c802f9e3307168488206f62d9452a7454734077f19eba679c87222feee2",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/controls.json": "dfcb94a95e00b3ed48c65b0d7abd257982347dc954c03e79d92b7b161467b8d0",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/structural.json": "05b3cb7601d35008fcfa76863e2ab3690e17872da4cb2f759d94ebd57d4c310d",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/smoke.json": "51ef0d71a6a31aa241e83c08dca6921366ad8935cf5e38bfbf59c29ac3be3b6c",
+    "research/RULER-LEVEL-20261114-001/referee-R1/codex/tree_audit/exact.json": "c824fb8e09b493b547ed9d0086b46faec6c1faf2cbbcfe512dab393387bc3e06"
+  }
+}

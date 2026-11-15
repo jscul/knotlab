@@ -76,6 +76,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [4.5 What networks of loops remember](#45-what-networks-of-loops-remember)
   - [4.6 Dimensions from rules](#46-dimensions-from-rules)
   - [4.7 Knots alone](#47-knots-alone)
+  - [4.8 How does one level bind another?](#48-how-does-one-level-bind-another)
 - [Chapter 5. Depth](#chapter-5-depth)
   - [5.1 Proving that nothing is allowed](#51-proving-that-nothing-is-allowed)
   - [5.2 How deep a hole is](#52-how-deep-a-hole-is)
@@ -866,7 +867,9 @@ Knots can be read as requirements or as choices, can come from rules that
 compete, and can be joined into rings and networks. They also space
 distinctions apart, so that rules alone can set a distance and a dimension:
 first on a board that is given (lesson 4.6), then on knots alone, with only
-their meeting pattern given (lesson 4.7).
+their meeting pattern given (lesson 4.7). When knots join levels of a
+pattern, how many distinctions does it take to see what two levels bind
+together? Lesson 4.8 starts with just two knots.
 The chapter first fixes the words for easy and hard questions, which these
 behaviours are measured by.
 
@@ -1558,6 +1561,72 @@ each (lesson 7.3).
 PYTHONPATH=tools python3 -m knotlab space
 ```
 
+### 4.8 How does one level bind another?
+
+**Two knots and one shared bit.** Put the same rule on two triples of bits.
+Each triple must contain both a 0 and a 1. The triples `(a, p, x)` and
+`(x, q, b)` share only `x`. Set `a` and `p` to 0 and `q` and `b` to 1.
+What value can the shared bit take? What changes if you forget `p`?
+
+**What the four bits bind.** The first triple requires `x = 1`. The second
+requires `x = 0`. So the four outer bits together rule out `0011`, and
+reversing every bit rules out `1100` too. Yet every assignment to any three
+of the four is possible. For example, if you forget `p`, first choose an
+`x` that works with `q` and `b`, then choose `p` to make the first triple
+work. The same argument works whichever bit you forget. That makes the four
+a bond. Even knowing `a` leaves both values of `b` possible.
+
+**Counting across levels.** Give each distinction an address made of zeros
+and ones. Its length is its level. The address `010`, for example, names one
+bit at level 3, and that bit can take either value. A placement rule uses
+the addresses to specify which triples carry the not-all-equal rule. Here
+a triple lies within one level or joins two consecutive levels. Pick two
+levels and ask for the smallest bond with a member in each. Its other members
+can come from anywhere in the pattern. The census also counts a tied pair
+as size two.
+
+**One more member per level (proved).** In a finite pattern of these knots
+with no cycle of knots, count the fewest knots on a path joining the two
+levels and add two. That is the exact least bond size. If a chain of knots
+steps down one level at a time, the sizes for levels one, two, three and
+four apart are **3, 4, 5, 6**. If the shortest path needs a detour, the
+bond is larger. If no path joins the levels, no bond joins them. This
+applies an earlier theorem for patterns with no cycle of knots.
+([Proof across levels](research/RULER-LEVEL-20261114-001/ruler_level.md))
+
+**Four targets in one pattern (computed).** Keep the last level fixed at
+9. Starting from level 3, read each of levels 4, 5, 6 and 7 in turn.
+The study drew pattern descriptions using fair coin flips, so the same
+description could occur more than once. Among the 1,412 draws whose
+patterns allowed a state, the most common reading was **3, 4, 5, 6**,
+at about 43–52%. In 37% at least one target was disconnected from level 3.
+In about 5–11% the least size stayed the same across all four targets. The
+ranges allow for the draws still undecided.
+([Reach census](research/LEVEL-REACH-20261114-001/level_reach.md))
+
+Of the 457 distinct descriptions that gave **3, 4, 5, 6**, the theorem
+explains 299 at the levels tested. For 117 of the 457, the placement rule
+guarantees that count continues for every finite number of levels. The
+remaining 158 descriptions gave those same four sizes despite having
+cycles. The tests so far leave open which patterns with cycles do this.
+([Theorem and counts](research/RULER-LEVEL-20261114-001/ruler_level.md),
+[Tests on patterns with cycles](research/CYCLE-RULER-20261115-001/cycle_ruler.md))
+
+Changing the last level can change the answer even for the same two
+levels. In one pattern a bond of three joined levels 3 and 4 when 4 was
+the last level. After level 5 was added, no bond of four or fewer joined
+levels 3 and 4.
+([Referee's counterexample](research/LEVEL-REACH-20261114-001/referee-R1/report.md))
+
+**A tied partner at every level?** The census can use a different upper bit
+for each target, and a size that stays the same can be three. A tie makes
+a sharper prediction. The two bits agree in every allowed state, or they
+differ in every allowed state. If a chain of ties from the same upper bit
+continues one level at a time and the pattern still allows a state at every
+finite stage, that upper bit fixes a partner's value however many levels
+lie between them. Which of the census patterns with constant size keep
+such a tie as more levels are added? That is open.
+
 ## Chapter 5. Depth
 
 A knot pattern can allow nothing while every small window of it looks
@@ -2060,6 +2129,10 @@ and the guide does not say that bases or knots lie side by side: a loop's
 binding is open to any number of others at once, as overlap already is
 (lesson 2.1). His recursion picture above, inner parts placed by the larger
 ones, is nearer to substitution, but he has not chosen.
+
+[Lesson 4.8, How does one level bind another?](#48-how-does-one-level-bind-another)
+asks how many distinctions have to be read together before the upper and
+lower levels show a shared restriction.
 
 **Operations on harmonies.** "We need to cover things like operations, what is
 subtraction of the logical harmonies, what is division? This is why I'm trying

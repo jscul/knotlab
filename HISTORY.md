@@ -3,6 +3,11 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 15 November 2026: product-proof replay and serialization controls
+
+- The first bounded-count converter in `PRODUCT-NAME-TRANSFER-20261115-001` can falsely reject a valid certificate that reuses an already-empty input axiom. The unified C entry point returns that axiom as a one-node proof. It also normalizes canceled factor terms before renumbering retained declarations and includes a written multiplier in displayed degree when the product is zero. [Unified converter](proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/solver.py) · [Passing controls](proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/checks.json)
+- This is an implementation qualification on the frozen predecessors. The mathematical transfer, elimination bounds, admitted random-source lower bounds and every strict ternary example stand. Frozen evidence remains unchanged. [Full statement](research/PRODUCT-NAME-TRANSFER-20261115-001/decision.md)
+
 ## 15 November 2026: the directed two-route baseline is prior art
 
 - Novelty qualification for `SIGNED-KNOT-OVERLAP-20261114-001-D002`: Kleine Büning’s 2024 §5, Fig. 2 already prints the directed Boolean implication two-route construction and its exponential minimal-unsatisfiable-subset count. The earlier comparison named the 2003 equality analogue without this nearer Boolean source. [Kleine Büning, 2024, §5, Fig. 2](https://doi.org/10.1016/j.tcs.2024.114538)

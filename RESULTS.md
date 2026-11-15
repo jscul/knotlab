@@ -20,9 +20,9 @@ How to read an entry:
 ## Lines of work
 
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
-- [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
+- [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 19 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 39 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 37 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -258,6 +258,12 @@ How deep a hidden bit is: degree and size of refutations of charge networks, and
   Grid Sperner with a fixed boundary needs resolution width Theta(m), and so does Itsykson et al.'s Sperner CSP, for which only tree-like size was known. Walks through the free boundary stay near it, so a full triangle kept deep inside meets only short pebble walks.
   *Qualification pending: "for which only tree-like size was known" is wrong. Dantchev (On the complexity of the Sperner lemma, CiE 2006, LNCS 3988, 115-124) reduces the pigeonhole principle to Sperner's lemma and shows that it has no short constant-depth Frege proofs, which already gives superpolynomial general-resolution lower bounds for Sperner formulas. New, as far as found, are the tight width Theta(m) and, in COUNT-NOTE-20261107-001, the tight size 2^Theta(m).*
   [proof P001](proofs/SPHERE-WIDTH-20261107-001B/SPHERE-WIDTH-20261107-001B-P001_grid_sperner_needs_width_m/proof.md), [epic closure](proofs/SPHERE-WIDTH-20261107-001Z/SPHERE-WIDTH-20261107-001Z-P001_epic_closure/proof.md)
+- **2026-11-15 · Four cases at rank two, at arbitrary product depth** (`AFFINE-FACTOR-RANK-20261115-001-D001`).
+  Two independent affine observations give four cases whenever, in every case, each successive product has a fixed factor or fixed sum of its two factors. At rank r the verified unnamed refutation uses 2^r cases, and r disjoint products can require all 2^r affine parts.
+  [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001A/AFFINE-FACTOR-RANK-20261115-001A-P001_ranked_elimination/proof.md), [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/proof.md), [epic closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Finding the independent choices that remove every product name** (`AFFINE-FACTOR-RANK-20261115-001-D002`).
+  Selecting one original factor per declaration specializes Rank Vertex Cover. Allowing affine factors with a fixed sum gives a broader exact search in O(6^r poly(N)) and can reduce an arbitrarily large static factor rank to one.
+  [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/proof.md), [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/proof.md), [epic closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md)
 
 ## Composing like cycles: the algebra of knots
 
@@ -384,12 +390,6 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-14 · An adjacent variable identification preserves the obstruction count and changes the SAT answers** (`UNSIGNED-ROUTE-JOINS-20261115-001-D001`).
   Joining middle variables in adjacent stages preserves the original number of minimal obstructions but changes the decision on some activations. Occurrence-labelled reachability regroups the same strict formula and decides every unsigned middle identification in linear indexed time.
   [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md), [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/proof.md), [epic closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md)
-- **2026-11-15 · Four cases at rank two, at arbitrary product depth** (`AFFINE-FACTOR-RANK-20261115-001-D001`).
-  Two independent affine observations give four cases whenever, in every case, each successive product has a fixed factor or fixed sum of its two factors. At rank r the verified unnamed refutation uses 2^r cases, and r disjoint products can require all 2^r affine parts.
-  [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001A/AFFINE-FACTOR-RANK-20261115-001A-P001_ranked_elimination/proof.md), [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/proof.md), [epic closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md)
-- **2026-11-15 · Finding the independent choices that remove every product name** (`AFFINE-FACTOR-RANK-20261115-001-D002`).
-  Selecting one original factor per declaration specializes Rank Vertex Cover. Allowing affine factors with a fixed sum gives a broader exact search in O(6^r poly(N)) and can reduce an arbitrarily large static factor rank to one.
-  [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/proof.md), [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/proof.md), [epic closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · One shared choice can be forgotten exactly when local values are compatible** (`GUARD-CHOICE-SEPARATION-20261115-001-D001`).
   An intersection test detects each disagreement on a shared bit, and one raw guard on unchanged wiring can cause a disagreement that changes SAT. Sharing padding names alone preserves every boundary assignment.
   [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md), [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/proof.md), [epic closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md)

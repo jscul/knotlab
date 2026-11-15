@@ -1229,6 +1229,12 @@ So holes come in two kinds:
    (`INTERFERENCE-20261029-001`). The existential reading stays canonical for
    K1–K3, and every result records both verdicts
    ([adoption](../research/INTERFERENCE-20261029-001/canonical_correction_request.md)).
+
+   **2026-11-15: what every one-strand test can retain** (`BRAID-READOUT-20261114-001`).
+   - The supplied map is the classical two-strand braid crossing, (x, y) ↦ (y, 2y − x) modulo the alphabet size. After a chosen number of crossings, a test asks whether some allowed input pair gives a chosen label on one strand. On all 512 three-label tables, one, two and three distinct powers give 8, 50 and 110 answer records, hence 3, 6 and 7 bits for a fixed message sent before the question. With every power, 73 tables are determined and 214 give yes to every test (computed; reanalysis of the earlier saved tables, independently certified). [Finite classification](../proofs/BRAID-READOUT-20261114-001A/BRAID-READOUT-20261114-001A-P001_power_menu_census/proof.md)
+   - For a prime alphabet of size p, fewer than p allowed states are recoverable. The first disjoint ambiguities are two complete constant-difference families; at size p, replacing one state gives exactly C(p, 2) p² D(p−1) unordered ambiguous pairs, where D counts fixed-point-free permutations (proved; the sparse bound and disjoint equality specialize known coding arguments, the single-replacement count is local). [Sparse recovery and equality cases](../proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/proof.md)
+   - This is an observation benchmark with the crossing and reader supplied. It does not learn their rules or establish a decision-time lower bound for formula-only satisfiability.
+
 3. **Composition.** When do bindings joined through witnesses form larger
    structure, and does the result depend on the choice of witnesses?
    **Answered for loops on 2026-10-19** ("Which knots remember a loop"). A

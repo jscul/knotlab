@@ -1,0 +1,25 @@
+{
+  "artifact_id": "JOINT-BRAID-READS-20261114-001A-P001",
+  "at": "2026-11-15T07:11:01+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/JOINT-BRAID-READS-20261114-001A/JOINT-BRAID-READS-20261114-001A-P001_finite_certificates/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/BRAID-COUNTS-20261114-001Z/BRAID-COUNTS-20261114-001Z-P001_synthesis/manifest.json": "0fb44ccc1e128cf859c8cb76dea590f33b504b5d748ba687a8aa5210f543c1b5",
+    "proofs/JOINT-BRAID-READS-20261114-001A/JOINT-BRAID-READS-20261114-001A-P001_finite_certificates/certificates.json": "012351c943e2940b8f474d6652979b43b76ed3782041661bc1104b7b51dbc5b4",
+    "proofs/JOINT-BRAID-READS-20261114-001A/JOINT-BRAID-READS-20261114-001A-P001_finite_certificates/check.py": "c13e2617e3e757f358cf99a791d64c3189087ef13ff6651a811903ec8c41c1e4",
+    "proofs/JOINT-BRAID-READS-20261114-001A/JOINT-BRAID-READS-20261114-001A-P001_finite_certificates/proof.md": "a3f9d7c63c476652e2a090feaa74e4a60c3356d8610dca2ddeb34a3de3ce8853"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\"first_equal_digit_sum_exceeding_five_power\": [16, 163112472594, 152587890625], \"first_equal_high_count_exceeding_five_power\": [8, 459270, 390625], \"literal_product_certificates\": {\"2\": {\"equal_digit_sum\": 6, \"equal_high_count\": 18, \"five_letter_product\": 25}, \"3\": {\"equal_digit_sum\": 27, \"equal_high_count\": 81, \"five_letter_product\": 125}, \"4\": {\"equal_digit_sum\": 146, \"equal_high_count\": 486, \"five_letter_product\": 625}}, \"marginals\": {\"matched_marginals\": true, \"one_copy_existence_reports\": 110, \"product_control_cases\": 1296, \"same_answer\": true, \"switched_answer\": false, \"two_copy_independent_reports\": 11882}, \"matrix\": [[1, 1, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 0, 1, 0, 1, 0], [0, 1, 0, 1, 0, 0, 0, 0, 1], [0, 0, 1, 0, 1, 0, 1, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0, 1], [0, 0, 1, 1, 0, 0, 0, 1, 0], [0, 1, 0, 0, 0, 1, 1, 0, 0]], \"private_max\": 5, \"private_subsets_by_size\": [1, 9, 36, 84, 81, 27, 0, 0, 0, 0], \"rank_F2_control\": 7, \"rank_F3\": 6, \"status\": \"passed\", \"triangular_max\": 6, \"triangular_subsets_by_size\": [1, 9, 36, 84, 126, 126, 72, 0, 0, 0], \"two_level_matrix\": [[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 1, 1, 1, 0, 0], [1, 0, 1, 0, 1, 0], [1, 1, 0, 0, 0, 1]], \"wrong_mixed_level_confusion\": [[0, 4], [0, 0]]}\n",
+  "ticket": "JOINT-BRAID-READS-20261114-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

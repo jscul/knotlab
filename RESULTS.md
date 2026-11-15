@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**331 current results** and 5 superseded ones, from 376 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**332 current results** and 5 superseded ones, from 377 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 20 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 21 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 376 epics with their closures
+- [Epics](#epics): all 377 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -371,6 +371,9 @@ What networks of knots can decide, count and approximate without hubs.
   Every dag-like Res(xor) refutation of the binary left-pigeon principle with n holes, with n + 1 pigeons or with 2n, has exp(Omega(n / log^5 n)) lines; the proof runs Braun's bit-PHP framework through a decoder into the unary pigeonhole principle and separates a space of row-linear polynomials that avoids a few spare holes and pigeons.
   *Qualification pending: audited in AUDIT-LEFT-20261110-001, where every step holds (a proof written, V1, conditional on Braun's unrefereed preprint, assumption A55), but the bound is not new in substance: the 2n-pigeon formula is Pudlák and Thapen's rWPHP, and exp(Ω(n)) for it and for the n + 1 pigeon principle follows from Pang's degree–size relation (arXiv 2610.00837, 30 September 2026) by an affine substitution into graph FPHP. The PPADS-complete problem is Reversible-Pigeon in Göös et al., J. ACM 2024.*
   [proof P001](proofs/WIDE-LEFT-20261110-001A/WIDE-LEFT-20261110-001A-P001_the_left_pigeon_bound/proof.md), [epic closure](proofs/WIDE-LEFT-20261110-001Z/WIDE-LEFT-20261110-001Z-P001_epic_closure/proof.md)
+- **2026-11-14 · Joint crossing questions need exponentially more advance information when the input permits correlations** (`JOINT-BRAID-READS-20261114-001-D001`).
+  For arbitrary allowed states on b crossed pairs, the minimum fixed-length message answering every later joint test has exponential base six. If the allowed table is a Cartesian product, exactly one plus 109 to the power b answer records occur and the message length grows linearly.
+  [proof P001](proofs/JOINT-BRAID-READS-20261114-001A/JOINT-BRAID-READS-20261114-001A-P001_finite_certificates/proof.md), [proof P001](proofs/JOINT-BRAID-READS-20261114-001B/JOINT-BRAID-READS-20261114-001B-P001_message_growth/proof.md), [epic closure](proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/proof.md)
 
 ## Three-fold spaces and counting on them
 
@@ -1500,6 +1503,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-14 | How common certified counting inside is (`CENSUS-FORGET-20261114-001`) | [closure](proofs/CENSUS-FORGET-20261114-001Z/CENSUS-FORGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/CENSUS-FORGET-20261114-001/) |
 | 2026-11-14 | What makes every way down forget (`FORGET-RULE-20261114-001`) | [closure](proofs/FORGET-RULE-20261114-001Z/FORGET-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FORGET-RULE-20261114-001/) |
 | 2026-11-14 | Does the law's reach grow to every copy at depth with members anywhere (`FREE-TARGET-20261114-001`) | [closure](proofs/FREE-TARGET-20261114-001Z/FREE-TARGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-TARGET-20261114-001/) |
+| 2026-11-14 | How much a message must retain for simultaneous crossing tests (`JOINT-BRAID-READS-20261114-001`) | [closure](proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/proof.md) | [folder](research/JOINT-BRAID-READS-20261114-001/) |
 | 2026-11-14 | Does the top bind the deep levels where parts depend on the whole? (`LEVEL-REACH-20261114-001`) | — | [folder](research/LEVEL-REACH-20261114-001/) |
 | 2026-11-14 | Does reading decide whether the bond grows (`READ-RULE-20261114-001`) | [closure](proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/READ-RULE-20261114-001/) |
 | 2026-11-14 | Rigidity at every level for the alternating addressed patterns (`RIGID-LEVEL-20261114-001`) | — | [folder](research/RIGID-LEVEL-20261114-001/) |

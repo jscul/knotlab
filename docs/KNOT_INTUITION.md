@@ -1268,6 +1268,12 @@ So holes come in two kinds:
    - **Accounting** (`EMERGENCE-BITS-20261021-001`). A network with hidden
      witnesses holds at most one bit per independent loop, and only parity
      fills every loop.
+
+   **2026-11-15: one shared witness in simultaneous crossing tests** (`JOINT-BRAID-READS-20261114-001`).
+   - Supply the same three-label crossing on b pairs. A future query specifies one power and label per pair, and asks whether one joint state passes every test. For an arbitrary table of allowed joint states, let L_b be the shortest deterministic fixed-length message sent before that query, sufficient for every future query. The two-level construction supplies r=3^b C(b, floor(b/2)) states each singled out by its own test. Every subset gives a different answer record, so those 2^r records require at least r message bits under any encoding, including one that sends no state identifiers. At b=8 this forces 459,270 bits, exceeding the 390,625 from products of the best one-pair construction (proved; finite certificates independently checked). [Certificates](../proofs/JOINT-BRAID-READS-20261114-001A/JOINT-BRAID-READS-20261114-001A-P001_finite_certificates/proof.md)
+   - Over F3 the one-pair test matrix has rank six. Every inclusion-minimal subset producing a report has a private test for each retained state, so no more than 6^b states are needed. Encoding their indices uses O(b 6^b) bits. Together with the lower bound this proves lim L_b^(1/b)=6. For Cartesian-product inputs there are instead exactly 1+109^b reports, giving linear message length (proved; the underlying matrix methods are established theory). [Uniform message bound](../proofs/JOINT-BRAID-READS-20261114-001B/JOINT-BRAID-READS-20261114-001B-P001_message_growth/proof.md)
+   - This counts unrestricted deterministic messages before one future query, with sender computation unlimited. An explicit input truth table itself uses n=9^b membership bits; the message growth in that input size is n^(log_9(6)+o(1)). If the query comes first, its name and one answer bit suffice for communication. The shared-witness requirement distinguishes correlated from product inputs, while a running-time bound for formula-only satisfiability remains open.
+
 4. **Dynamics.** Are loops better modeled as processes whose outputs over time
    are the data, and does the static definition survive that change?
 

@@ -1,0 +1,94 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "RULER-LEVEL-20261114-001A-P001",
+  "canonical_id": "RULER-LEVEL-20261114-001A-P001",
+  "kind": "proof",
+  "ticket": "RULER-LEVEL-20261114-001A",
+  "proof": "RULER-LEVEL-20261114-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "The ruler across levels on patterns with no cycle of knots",
+  "status": "Proved",
+  "claim": "Theorem A**: with no cycle of knots and knots within a level or between adjacent levels, the least bond from level k to level k+s is s+2 when a descending chain exists and there is no bond otherwise (from RANDOM-FATES-001B T1). Theorem A: one tree-type placement gives a full binary tree across levels at every depth. Referee pending.",
+  "dependencies": [
+    "RANDOM-FATES-20261112-001B",
+    "LEVEL-REACH-20261114-001"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": []
+  },
+  "failure_conditions": [
+    "An acyclic pattern with a descending chain whose reach differs from s+2.",
+    "A one-tree-placement description whose pattern is not a full binary tree across levels."
+  ],
+  "lineage": {
+    "home_scope": "RULER-LEVEL-20261114-001",
+    "epic_path": [
+      "RULER-LEVEL-20261114-001"
+    ],
+    "parents": [
+      "proofs/RANDOM-FATES-20261112-001B"
+    ]
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/manifest.json",
+    "identity": "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/identity.json",
+    "proof": "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/proof.md",
+    "result": "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/result.json",
+    "check": "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler/check.py",
+    "directory": "proofs/RULER-LEVEL-20261114-001A/RULER-LEVEL-20261114-001A-P001_forest_ruler"
+  },
+  "remaining_obligations": [
+    "Independent referee: pending.",
+    "Cyclic rulers: open."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; addressed patterns with knots within or between adjacent levels.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude 2026-11-15; checked cold by the advisor model; referee pending.",
+    "status": "proof by hand from a refereed theorem; check passed",
+    "novelty": "known-with-delta"
+  }
+}

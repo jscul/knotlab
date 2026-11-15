@@ -1,0 +1,84 @@
+{
+  "actual_guard_witnesses_pinned": 587,
+  "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001A-P001",
+  "claim": "Splitting one shared Boolean choice preserves a boundary triple exactly when an empty local support excludes the split triple or the two supports intersect. Complete witnesses can be reconstructed with separate searches over the internally mixed-sign pads.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check_execution-001.json",
+    "sha256": "c1aa485a33eb085dff9782a9dc2236022d5afbed5510a4a97e30421971f4b4c9"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "full_raw_assignments_evaluated": 587,
+  "guard_vectors_checked": 595,
+  "input_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check.py": "1155d3087f4e11c349abf0fced3f2d63952f16530403b7cc4af35b468d93e9fd",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/checks.json": "ed44660d74541a50a7fab42d6624059f5d98ca40a5113156886df25250100239",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md": "bd0986e7153213f7eedbe207885ef1e85bb994c1f51e9dd819329c0e00171c4d",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/solver.py": "bd3d184bed7f1bf150670e7cac543ff7ca3e0cb31542505cdd3fadc38bc2b0ae",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json": "f5c18f63c6bac19aa20a352883ea9392647afc3a8296f64dac8f18f68e9c3b0d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/manifest.json": "b9b5f2bf862d98ed380bf2b3d71c521c24760c4469a3147781645145793fd7f2",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "invalid_cuts_rejected": 4,
+  "joined_triple_witnesses_pinned": 4368,
+  "kind": "proof",
+  "largest_raw_replay_stages": 7,
+  "local_support_entries_checked": 9520,
+  "local_witnesses_pinned": 8574,
+  "masked_external_example_lost_outer_pairs": 0,
+  "masked_external_example_lost_triples": 1,
+  "max_local_mixed_pad_count": 2,
+  "omitted_cut_boundary_false_positive": 1,
+  "one_stage_half_patterns_per_side_per_role": 256,
+  "raw_result": {
+    "path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/checker_output-001.json",
+    "sha256": "ed44660d74541a50a7fab42d6624059f5d98ca40a5113156886df25250100239"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "safe_split_mismatched_witness_rejected": 1,
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "GUARD-CHOICE-SEPARATION-20261115-001A",
+  "triple_comparisons": 4760,
+  "validation": {
+    "independence": "Compared every support entry with raw SAT on joined and independently split blocks, and simultaneously pinned reconstructed assignments. A masked cut-value counterexample tests the difference between internal observations and outer SAT.",
+    "level": "V1",
+    "novelty": "The set-intersection fact is classical. The fixed guarded realization, witness reconstruction and local mixed-pad cost specialize it to these routes."
+  },
+  "vectors_losing_a_triple": 18,
+  "vectors_losing_an_outer_pair": 15
+}

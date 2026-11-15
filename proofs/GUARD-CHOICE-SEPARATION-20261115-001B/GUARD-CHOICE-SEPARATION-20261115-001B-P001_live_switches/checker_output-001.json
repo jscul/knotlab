@@ -1,0 +1,100 @@
+{
+  "larger_pad_cases": {
+    "largest_stages": 10,
+    "original_ternary_models_rechecked": 4512,
+    "padding_layouts_and_guard_vectors": 144,
+    "seed": 27182818,
+    "single_middle_layouts_and_guard_vectors": 144,
+    "single_middle_layouts_with_loss": 10
+  },
+  "live_switch": {
+    "changed_guard_index_zero_based": 30,
+    "guard_bits": 72,
+    "guard_hamming_distance": 1,
+    "opposite_endpoint_guard_decisions_joined_split": [
+      false,
+      true
+    ],
+    "raw_ternary_clauses": 96,
+    "safe_triples": [
+      "000",
+      "001",
+      "011",
+      "111"
+    ],
+    "second_safe_neighbor": {
+      "active_endpoints_forced_both_fibres_at_110": [
+        1,
+        1
+      ],
+      "changed_guard_index_zero_based": 54,
+      "safe_to_unsafe_joined_decisions": [
+        true,
+        false
+      ],
+      "safe_to_unsafe_split_decisions": [
+        true,
+        true
+      ],
+      "safe_triples": 8
+    },
+    "shared_middle_values_at_00_01_10_11": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [],
+      [
+        1
+      ]
+    ],
+    "strict_positive_models_rechecked": 54,
+    "unsafe_joined_triples": [
+      "000",
+      "001",
+      "011",
+      "101",
+      "111"
+    ],
+    "unsafe_split_triples": [
+      "000",
+      "001",
+      "011",
+      "100",
+      "101",
+      "111"
+    ]
+  },
+  "middle_mask_census": {
+    "all_two_stage_private_pad_masks": 256,
+    "lost_triples": {
+      "100": 15,
+      "100,110": 9,
+      "110": 15,
+      "none": 217
+    },
+    "ordinary_endpoint_decision_changes": 39
+  },
+  "mixed_middle_control": {
+    "joined_sat": false,
+    "one_middle_still_shared": true,
+    "only_pad_split_sat": true
+  },
+  "one_pad_raw": {
+    "all_effective_masks": 1024,
+    "left_and_right_pad_values_on_their_respective_descents": [
+      1,
+      0
+    ],
+    "raw_joined_and_split_boundary_queries": 16384
+  },
+  "only_pads_symbolic": {
+    "all_two_stage_four_state_edge_masks": 65536,
+    "exposed_triple_comparisons": 524288,
+    "four_pad_names_joint_across_cut": 4
+  },
+  "status": "passed"
+}

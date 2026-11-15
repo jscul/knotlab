@@ -1,0 +1,92 @@
+{
+  "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001C-P001",
+  "catalogues": {
+    "3": {
+      "fixed_joined_cnf_sha256": "074ab6cb6a47acc99603111b52cc6c5f7a1894ea98276ad2b6d27b6ee1320986",
+      "fixed_stages": 78,
+      "raw_triple_queries": 4096,
+      "safe_menus": 255,
+      "unsafe_menus": 1
+    },
+    "4": {
+      "fixed_joined_cnf_sha256": "415ce279d197b4ff46808c51cb95ee4b1fdd22a075b82b84567bb0ef5c33f724",
+      "fixed_stages": 186,
+      "raw_triple_queries": 256,
+      "safe_menus": 10,
+      "unsafe_menus": 6
+    },
+    "5": {
+      "fixed_joined_cnf_sha256": "063e01ca20ea0c272c7521d46cd351e8b7c5ce0af286b646cf2b76347516e79f",
+      "fixed_stages": 390,
+      "raw_triple_queries": 256,
+      "safe_menus": 6,
+      "unsafe_menus": 10
+    }
+  },
+  "claim": "Recognizing a safe split of one middle is NP-hard on two-use schedules fixed per source width, both for all observed triples and for the outer pair after the cut bit is hidden. General triple equality in this one-middle setting can be tested with four nonadaptive SAT queries.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/check_execution-001.json",
+    "sha256": "f786e5b96285641d4bd065954c60b1b0bae9d0ecb6c679a1cac2d59404bea7f2"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "guard_vectors_identical_on_the_two_stage_suffix": true,
+  "input_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/manifest.json": "48f67237c2758bfb620e577081b53853356a704e0990d807c5f063962b7974d8",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/manifest.json": "e30a6347e1c0bb9b6a18f433586946802fe1947bd061df4ceedbf2e8c7f76453",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/check.py": "93e3ca10dfdf7a1a02faeea2b980d7026ac5fb6a5204a7e981b68dda2a58d52a",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/checks.json": "f338e641abed2f9c4ad68697552ca0cd0f285ea736b482af5efabc740c290410",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/proof.md": "9526068bd65d581a3134e2fda660bc0c3adca0fac294ca1bfafa3bfb391dc50a",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json": "f5c18f63c6bac19aa20a352883ea9392647afc3a8296f64dac8f18f68e9c3b0d",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json": "03813748a8c4c4da52cb5286f924b0afa3f99e80e2f15f5a2d862f30141e7d7a"
+  },
+  "kind": "proof",
+  "one_middle_crosses": true,
+  "raw_result": {
+    "path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/checker_output-001.json",
+    "sha256": "dd9ddc27b066f3e74094c3642db34b4730fd7f5d9543b6f0a2695fdbc9759351"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "GUARD-CHOICE-SEPARATION-20261115-001C",
+  "validation": {
+    "independence": "Derived both boundary relations before enumerating actual joined and split guarded clauses at widths three, four and five. The gate guards and wiring remain fixed throughout each catalogue.",
+    "level": "V1",
+    "novelty": "The fixed-wiring guard-only prefix reduction is the local contribution. Bounds on recognition and on arbitrary decision algorithms are logically distinct."
+  }
+}

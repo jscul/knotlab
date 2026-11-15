@@ -1,0 +1,104 @@
+{
+  "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "GUARD-CHOICE-SEPARATION-20261115-001A-P001",
+  "claim": "Splitting one shared Boolean choice preserves a boundary triple exactly when an empty local support excludes the split triple or the two supports intersect. Complete witnesses can be reconstructed with separate searches over the internally mixed-sign pads.",
+  "dependencies": [
+    "SWAPPED-ROUTE-GROUPING-20261115-001C",
+    "SWAPPED-ROUTE-GROUPING-20261115-001Z",
+    "TWO-RELAY-PADDING-20261115-001D"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check.py": "1155d3087f4e11c349abf0fced3f2d63952f16530403b7cc4af35b468d93e9fd",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check_execution-001.json": "c1aa485a33eb085dff9782a9dc2236022d5afbed5510a4a97e30421971f4b4c9",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/checker_output-001.json": "ed44660d74541a50a7fab42d6624059f5d98ca40a5113156886df25250100239",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md": "bd0986e7153213f7eedbe207885ef1e85bb994c1f51e9dd819329c0e00171c4d",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/result.json": "c990ea87d5b95a9f416dd09ac9dc1a472d6f394bf894723dfa84c3a006838fbe"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "The same SAT projection can mask a changed cut observation, or obtaining summaries may already be expensive."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "GUARD-CHOICE-SEPARATION-20261115-001"
+    ],
+    "home_scope": "GUARD-CHOICE-SEPARATION-20261115-001",
+    "parents": [
+      "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json",
+      "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/manifest.json",
+      "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/checks.json": "ed44660d74541a50a7fab42d6624059f5d98ca40a5113156886df25250100239",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/solver.py": "bd3d184bed7f1bf150670e7cac543ff7ca3e0cb31542505cdd3fadc38bc2b0ae",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json": "f5c18f63c6bac19aa20a352883ea9392647afc3a8296f64dac8f18f68e9c3b0d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/manifest.json": "b9b5f2bf862d98ed380bf2b3d71c521c24760c4469a3147781645145793fd7f2",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "paths": {
+    "check": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check.py",
+    "check_execution": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check_execution-001.json",
+    "directory": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports",
+    "identity": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/identity.json",
+    "manifest": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/manifest.json",
+    "proof": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md",
+    "raw_result": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/checker_output-001.json",
+    "result": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/result.json"
+  },
+  "proof": "GUARD-CHOICE-SEPARATION-20261115-001A-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "GUARD-CHOICE-SEPARATION-20261115-001A",
+  "title": "An exact test for dropping equality at a shared boundary choice",
+  "validation": {
+    "independence": "Compared every support entry with raw SAT on joined and independently split blocks, and simultaneously pinned reconstructed assignments. A masked cut-value counterexample tests the difference between internal observations and outer SAT.",
+    "level": "V1",
+    "novelty": "The set-intersection fact is classical. The fixed guarded realization, witness reconstruction and local mixed-pad cost specialize it to these routes."
+  }
+}

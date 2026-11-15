@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SWAPPED-ROUTE-GROUPING-20261115-001C",
+    "SWAPPED-ROUTE-GROUPING-20261115-001Z",
+    "TWO-RELAY-PADDING-20261115-001D"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001B-P001",
+    "artifact_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches",
+    "manifest_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/manifest.json",
+    "terminal_artifact": "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/manifest.json"
+  },
+  "id": "GUARD-CHOICE-SEPARATION-20261115-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Construct a fixed raw guarded layout with two genuinely active occurrences where changing one switch changes whether equality can be dropped. Determine what is possible when only padding names span the cut.",
+  "ownership": {
+    "root": false,
+    "scope_id": "GUARD-CHOICE-SEPARATION-20261115-001"
+  },
+  "parent": "GUARD-CHOICE-SEPARATION-20261115-001",
+  "schema_version": 1,
+  "status": "Proved: On one fixed two-stage raw formula, changing a single guard can make a shared middle essential to satisfiability. Across a complete-stage cut sharing only padding names, every boundary triple is preserved for any number of those names and any switch settings.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "One switch toggles the need for a shared middle while pad-only cuts separate"
+}

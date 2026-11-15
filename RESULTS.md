@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**342 current results** and 5 superseded ones, from 384 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**344 current results** and 5 superseded ones, from 385 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 31 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 33 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 384 epics with their closures
+- [Epics](#epics): all 385 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -384,6 +384,12 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-14 · An adjacent variable identification preserves the obstruction count and changes the SAT answers** (`UNSIGNED-ROUTE-JOINS-20261115-001-D001`).
   Joining middle variables in adjacent stages preserves the original number of minimal obstructions but changes the decision on some activations. Occurrence-labelled reachability regroups the same strict formula and decides every unsigned middle identification in linear indexed time.
   [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md), [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/proof.md), [epic closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · One shared choice can be forgotten exactly when local values are compatible** (`GUARD-CHOICE-SEPARATION-20261115-001-D001`).
+  An intersection test detects each disagreement on a shared bit, and one raw guard on unchanged wiring can cause a disagreement that changes SAT. Sharing padding names alone preserves every boundary assignment.
+  [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md), [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/proof.md), [epic closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Recognizing safe splitting already encodes strict 3-SAT** (`GUARD-CHOICE-SEPARATION-20261115-001-D002`).
+  A fixed switch-controlled prefix makes splitting safe exactly when a supplied strict ternary formula has a solution. The criterion works both with an observed cut bit and after hiding it.
+  [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001C/GUARD-CHOICE-SEPARATION-20261115-001C-P001_recognition_cost/proof.md), [epic closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · When two types of identification first change the outcome** (`ONE-RELAY-PADDING-20261115-001-D001`).
   With distinct middles, every pad present on both branches contributes two local minimal obstructions, even when pads are reused between stages. One repeated middle name still allows a linear satisfiability algorithm, and two-stage inputs show that sharing a middle and a pad can change the answer only in combination.
   [proof P001](proofs/ONE-RELAY-PADDING-20261115-001A/ONE-RELAY-PADDING-20261115-001A-P001_local_pad_obstructions/proof.md), [proof P001](proofs/ONE-RELAY-PADDING-20261115-001B/ONE-RELAY-PADDING-20261115-001B-P001_one_middle_cut/proof.md), [epic closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md)
@@ -1544,6 +1550,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-14 | Is reading the whole rule for the bond (`TOP-INFO-20261114-001`) | [closure](proofs/TOP-INFO-20261114-001Z/TOP-INFO-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TOP-INFO-20261114-001/) |
 | 2026-11-15 | Rulers with cycles: when cycles of knots keep or break the reach across levels (`CYCLE-RULER-20261115-001`) | — | [folder](research/CYCLE-RULER-20261115-001/) |
 | 2026-11-15 | Where the top binds every depth directly, and whether it is truly bounded (`DIRECT-REACH-20261115-001`) | — | [folder](research/DIRECT-REACH-20261115-001/) |
+| 2026-11-15 | When switch settings let two blocks forget a shared choice (`GUARD-CHOICE-SEPARATION-20261115-001`) | [closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GUARD-CHOICE-SEPARATION-20261115-001/) |
 | 2026-11-15 | A linear cut scan with shared hidden padding (`ONE-RELAY-PADDING-20261115-001`) | [closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | What a one-pass reader must remember about joined routes (`ROUTE-FRONTIER-MEMORY-20261115-001`) | [closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-FRONTIER-MEMORY-20261115-001/) |
 | 2026-11-15 | Proof length after encoding strict 3-SAT as two-use routes (`ROUTE-PARITY-TRANSFER-20261115-001`) | [closure](proofs/ROUTE-PARITY-TRANSFER-20261115-001Z/ROUTE-PARITY-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-PARITY-TRANSFER-20261115-001/) |

@@ -1,0 +1,28 @@
+{
+  "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001A-P001",
+  "at": "2026-11-15T17:39:07+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/check.py": "1155d3087f4e11c349abf0fced3f2d63952f16530403b7cc4af35b468d93e9fd",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/checks.json": "ed44660d74541a50a7fab42d6624059f5d98ca40a5113156886df25250100239",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md": "bd0986e7153213f7eedbe207885ef1e85bb994c1f51e9dd819329c0e00171c4d",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/solver.py": "bd3d184bed7f1bf150670e7cac543ff7ca3e0cb31542505cdd3fadc38bc2b0ae",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json": "f5c18f63c6bac19aa20a352883ea9392647afc3a8296f64dac8f18f68e9c3b0d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/manifest.json": "b9b5f2bf862d98ed380bf2b3d71c521c24760c4469a3147781645145793fd7f2",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"actual_guard_witnesses_pinned\": 587,\n  \"full_raw_assignments_evaluated\": 587,\n  \"guard_vectors_checked\": 595,\n  \"invalid_cuts_rejected\": 4,\n  \"joined_triple_witnesses_pinned\": 4368,\n  \"largest_raw_replay_stages\": 7,\n  \"local_support_entries_checked\": 9520,\n  \"local_witnesses_pinned\": 8574,\n  \"masked_external_example_lost_outer_pairs\": 0,\n  \"masked_external_example_lost_triples\": 1,\n  \"max_local_mixed_pad_count\": 2,\n  \"omitted_cut_boundary_false_positive\": 1,\n  \"one_stage_half_patterns_per_side_per_role\": 256,\n  \"safe_split_mismatched_witness_rejected\": 1,\n  \"status\": \"passed\",\n  \"triple_comparisons\": 4760,\n  \"vectors_losing_a_triple\": 18,\n  \"vectors_losing_an_outer_pair\": 15\n}\n",
+  "ticket": "GUARD-CHOICE-SEPARATION-20261115-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

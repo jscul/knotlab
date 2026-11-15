@@ -1,0 +1,27 @@
+{
+  "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001B-P001",
+  "at": "2026-11-15T17:39:10+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/check.py": "cfdd4e50ba1cc0c0cdb450023a9e95d0b437e4e2f5b166cb1ca526385c5a1c7a",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/checks.json": "13721ada8dbb8d49bd7e20755a8078076682587c33541fa262f8051d260f0f84",
+    "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/proof.md": "dfe639113d8e9cd14bcdb346ae0bc3f7103505d7cc989305973b69ee6b97f102",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json": "f5c18f63c6bac19aa20a352883ea9392647afc3a8296f64dac8f18f68e9c3b0d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/manifest.json": "b9b5f2bf862d98ed380bf2b3d71c521c24760c4469a3147781645145793fd7f2",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"larger_pad_cases\": {\n    \"largest_stages\": 10,\n    \"original_ternary_models_rechecked\": 4512,\n    \"padding_layouts_and_guard_vectors\": 144,\n    \"seed\": 27182818,\n    \"single_middle_layouts_and_guard_vectors\": 144,\n    \"single_middle_layouts_with_loss\": 10\n  },\n  \"live_switch\": {\n    \"changed_guard_index_zero_based\": 30,\n    \"guard_bits\": 72,\n    \"guard_hamming_distance\": 1,\n    \"opposite_endpoint_guard_decisions_joined_split\": [\n      false,\n      true\n    ],\n    \"raw_ternary_clauses\": 96,\n    \"safe_triples\": [\n      \"000\",\n      \"001\",\n      \"011\",\n      \"111\"\n    ],\n    \"second_safe_neighbor\": {\n      \"active_endpoints_forced_both_fibres_at_110\": [\n        1,\n        1\n      ],\n      \"changed_guard_index_zero_based\": 54,\n      \"safe_to_unsafe_joined_decisions\": [\n        true,\n        false\n      ],\n      \"safe_to_unsafe_split_decisions\": [\n        true,\n        true\n      ],\n      \"safe_triples\": 8\n    },\n    \"shared_middle_values_at_00_01_10_11\": [\n      [\n        0\n      ],\n      [\n        0,\n        1\n      ],\n      [],\n      [\n        1\n      ]\n    ],\n    \"strict_positive_models_rechecked\": 54,\n    \"unsafe_joined_triples\": [\n      \"000\",\n      \"001\",\n      \"011\",\n      \"101\",\n      \"111\"\n    ],\n    \"unsafe_split_triples\": [\n      \"000\",\n      \"001\",\n      \"011\",\n      \"100\",\n      \"101\",\n      \"111\"\n    ]\n  },\n  \"middle_mask_census\": {\n    \"all_two_stage_private_pad_masks\": 256,\n    \"lost_triples\": {\n      \"100\": 15,\n      \"100,110\": 9,\n      \"110\": 15,\n      \"none\": 217\n    },\n    \"ordinary_endpoint_decision_changes\": 39\n  },\n  \"mixed_middle_control\": {\n    \"joined_sat\": false,\n    \"one_middle_still_shared\": true,\n    \"only_pad_split_sat\": true\n  },\n  \"one_pad_raw\": {\n    \"all_effective_masks\": 1024,\n    \"left_and_right_pad_values_on_their_respective_descents\": [\n      1,\n      0\n    ],\n    \"raw_joined_and_split_boundary_queries\": 16384\n  },\n  \"only_pads_symbolic\": {\n    \"all_two_stage_four_state_edge_masks\": 65536,\n    \"exposed_triple_comparisons\": 524288,\n    \"four_pad_names_joint_across_cut\": 4\n  },\n  \"status\": \"passed\"\n}\n",
+  "ticket": "GUARD-CHOICE-SEPARATION-20261115-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

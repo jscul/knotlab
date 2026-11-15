@@ -1,0 +1,44 @@
+{
+  "authority_class": "proof",
+  "conclusion": "An intersection test detects each disagreement on a shared bit, and one raw guard on unchanged wiring can cause a disagreement that changes SAT. Sharing padding names alone preserves every boundary assignment.",
+  "curated_at": "2026-11-15",
+  "epic_closure": {
+    "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001Z-P001",
+    "dependency_graph_sha256": "18cb7ce37979f87a6d6947ee6a2e78611e98f7a46991b13bcb36fcababd4e0c8",
+    "manifest_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/manifest.json",
+    "manifest_sha256": "8ecb722a0f143b2df397d7dfdf94f810740d6cc04ae744d49dade5ced43f6e3d",
+    "report_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md",
+    "ticket_id": "GUARD-CHOICE-SEPARATION-20261115-001Z"
+  },
+  "evidence": [
+    {
+      "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001A-P001",
+      "authority_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/manifest.json",
+      "authority_sha256": "48f67237c2758bfb620e577081b53853356a704e0990d807c5f063962b7974d8",
+      "explanation_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md",
+      "explanation_sha256": "bd0986e7153213f7eedbe207885ef1e85bb994c1f51e9dd819329c0e00171c4d",
+      "kind": "proof",
+      "ticket_id": "GUARD-CHOICE-SEPARATION-20261115-001A"
+    },
+    {
+      "artifact_id": "GUARD-CHOICE-SEPARATION-20261115-001B-P001",
+      "authority_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/manifest.json",
+      "authority_sha256": "e30a6347e1c0bb9b6a18f433586946802fe1947bd061df4ceedbf2e8c7f76453",
+      "explanation_path": "proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/proof.md",
+      "explanation_sha256": "dfe639113d8e9cd14bcdb346ae0bc3f7103505d7cc989305973b69ee6b97f102",
+      "kind": "proof",
+      "ticket_id": "GUARD-CHOICE-SEPARATION-20261115-001B"
+    }
+  ],
+  "id": "GUARD-CHOICE-SEPARATION-20261115-001-D001",
+  "schema_version": 3,
+  "scope_id": "GUARD-CHOICE-SEPARATION-20261115-001",
+  "significance": [
+    "frontier_change",
+    "reusable_interface"
+  ],
+  "status": "active",
+  "subject": "Guarded positive two-route formulas cut between complete stages, observed at the initial, cut and terminal boundaries.",
+  "superseded_by": null,
+  "title": "One shared choice can be forgotten exactly when local values are compatible"
+}

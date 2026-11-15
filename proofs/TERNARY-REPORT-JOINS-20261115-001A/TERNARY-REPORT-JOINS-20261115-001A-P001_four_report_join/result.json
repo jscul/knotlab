@@ -1,0 +1,137 @@
+{
+  "all_charge_controls": {
+    "even_sat": 8,
+    "odd_inconsistent": 8
+  },
+  "artifact_id": "TERNARY-REPORT-JOINS-20261115-001A-P001",
+  "certificate_sha256": "d1a2a41a43519ccd13c23f6a724193751b9de60598bcad8c4d51eb087c155d9e",
+  "claim": "Joining the first two strict ternary parity checks yields sixteen source-derived conditional quadratic lines that exactly express the surviving four-report parity. The other pair yields the opposite parity on the same four reports, producing a fully checked unnamed strict-input refutation.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/check_execution-001.json",
+    "sha256": "cd25c47b39d06532e9ef90587c7d2cc67571a00d5e49da290e44519ac073ce7f"
+  },
+  "final_ancestral_input_clauses": 30960,
+  "final_ancestral_nodes": 136320,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "individually_necessary_full_mask_rows": {
+    "left": 15,
+    "right": 16
+  },
+  "input_bindings": {
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json": "98ff55b65326f881ae7981590c24144610969146b612a4e2aaae36f4ae1975f1",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/manifest.json": "7b54df188d096c51fd6c7a1f5381d1438c0bf00762df48f59a792d16583f948b",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001C/SHARED-REPORT-CANCELLATION-20261115-001C-P001_order_and_obstruction/manifest.json": "b3064a3a770d3991e6297eaf8cdfb51257e82f253e6d0e83031fc1dd92c4c10f",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/manifest.json": "b0592727f96ae2e85004492fa0a67daeef7ff7bc15a3722f3da1203ffecd15e1",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/check.py": "2886bba8401e4bb4ea5a24147f18d752486948c0421a6f9c66f5f2c8f611bc65",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/checks.json": "2dd3ec561f12c470cc23e3029d959bfd80d4d51044a8fb14419c33877a25663b",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/four-check-proof.jsonl.gz": "d1a2a41a43519ccd13c23f6a724193751b9de60598bcad8c4d51eb087c155d9e",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/proof.md": "1318190c28ba706ccf8ea1b89e64fcbbe318f3414aa8e91141bca0ecb6958590",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/solver.py": "1457ffa1f9fefdb7d97c48db1967b4ea5d63ae088b8c5caaa18076a28f37191a",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/trace.json": "d14f1860e280f1332e947cbd3266ec9687fcbaa0018439bb4772a65180f14121"
+  },
+  "kind": "proof",
+  "last_empty_row": 136319,
+  "max_proof_width": 23,
+  "mutations": {
+    "altered_sum_coefficient_rejected_at": 135920,
+    "both_charges_odd_on_single_report_cube": true,
+    "missing_ab_flips_singleton": true
+  },
+  "original_boundary_assignments_per_side": 16384,
+  "primitive_nodes_by_phase": {
+    "close": 160,
+    "derive_children": 135808,
+    "join_left": 176,
+    "join_right": 176
+  },
+  "projected_allowed": {
+    "left": 10144,
+    "right": 6240
+  },
+  "proof_nodes": 136320,
+  "raw_clause_count": 30960,
+  "raw_result": {
+    "path": "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/checker_output-001.json",
+    "sha256": "2dd3ec561f12c470cc23e3029d959bfd80d4d51044a8fb14419c33877a25663b"
+  },
+  "raw_strict_pair_queries": {
+    "left": {
+      "sat": 32,
+      "unsat": 30
+    },
+    "right": {
+      "sat": 30,
+      "unsat": 32
+    }
+  },
+  "rules": {
+    "axiom": 30960,
+    "boolean": 14,
+    "combine": 33666,
+    "contract": 38465,
+    "delete_false": 31738,
+    "multiply": 64,
+    "true": 1,
+    "weaken": 1412
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "selector_exclusions": 16,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "shared_parents": 111,
+  "source_pure_child_rows": 32,
+  "source_pure_summary_rows": 32,
+  "status": "passed",
+  "strict_cnf_variables": 27540,
+  "strict_forbidden_rows": [
+    696,
+    696,
+    696,
+    1352
+  ],
+  "thesis_alignment": null,
+  "ticket": "TERNARY-REPORT-JOINS-20261115-001A",
+  "unrestricted_cadical_models_0000_0001": [
+    true,
+    false
+  ],
+  "validation": {
+    "independence": "V1. The complete primitive proof was checked for degree, multiplicities, dependency ancestry and real original clauses. Exact boundary projections and the matched-charge control use direct Boolean evaluations independent of the inference trace.",
+    "level": "V1",
+    "novelty": "Variable elimination and guarded Boolean cases are standard. The local contribution is a four-report inference and its exact consuming refutation on specified strict gated-parity clauses, with surviving raw coordinates and source-local provenance."
+  }
+}

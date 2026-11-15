@@ -1,0 +1,476 @@
+{
+  "affine_census": {
+    "affine_sets_by_dimension": [
+      1,
+      3,
+      11,
+      51,
+      307,
+      2451
+    ],
+    "all_labelled_graphs_through_four_reports": 76,
+    "exact_min_partitions_full_then_scalar": {
+      "complete_3": [
+        4,
+        2
+      ],
+      "complete_4": [
+        8,
+        4
+      ],
+      "path_0": [
+        1,
+        1
+      ],
+      "path_1": [
+        1,
+        1
+      ],
+      "path_2": [
+        2,
+        2
+      ],
+      "path_3": [
+        2,
+        2
+      ],
+      "path_4": [
+        4,
+        4
+      ],
+      "star_0": [
+        1,
+        1
+      ],
+      "star_1": [
+        1,
+        1
+      ],
+      "star_2": [
+        2,
+        2
+      ],
+      "star_3": [
+        2,
+        2
+      ],
+      "star_4": [
+        2,
+        2
+      ]
+    }
+  },
+  "artifact_id": "TERNARY-REPORT-JOINS-20261115-001B-P001",
+  "claim": "Keeping all edge products requires exactly two to the minimum vertex-cover size in affine pieces; for their one checksum the exponent is half the polar rank. Affine pins on one checksum admit polynomial decision, k independent product combinations admit exact counting in 2^k times polynomial time, and individual product restrictions make the path NP-complete while stars stay polynomial.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "exact_query_leaves_then_depth": {
+    "path_2_free_0": {
+      "ambient_exact_affine_relation": [
+        2,
+        1
+      ],
+      "ambient_queries_bit_output": [
+        2,
+        1
+      ],
+      "report_queries_bit_output": [
+        3,
+        2
+      ]
+    },
+    "path_3_free_1": {
+      "ambient_exact_affine_relation": [
+        2,
+        1
+      ],
+      "ambient_queries_bit_output": [
+        2,
+        1
+      ],
+      "report_queries_bit_output": [
+        3,
+        2
+      ]
+    },
+    "path_4_free_0": {
+      "ambient_exact_affine_relation": [
+        4,
+        2
+      ],
+      "ambient_queries_bit_output": [
+        2,
+        1
+      ],
+      "report_queries_bit_output": [
+        7,
+        3
+      ]
+    }
+  },
+  "execution_receipt": {
+    "path": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/check_execution-001.json",
+    "sha256": "4abba4a9add0a58163c7969e5c8dde36614a1a574c68848d2e54938de40ba823"
+  },
+  "first_strict_four_report_partition": [
+    {
+      "R1_R3": [
+        0,
+        0
+      ],
+      "T_affine_mask": 0,
+      "reports_as_masks": [
+        0,
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "R1_R3": [
+        0,
+        1
+      ],
+      "T_affine_mask": 4,
+      "reports_as_masks": [
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "R1_R3": [
+        1,
+        0
+      ],
+      "T_affine_mask": 5,
+      "reports_as_masks": [
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "R1_R3": [
+        1,
+        1
+      ],
+      "T_affine_mask": 1,
+      "reports_as_masks": [
+        10,
+        11,
+        14,
+        15
+      ]
+    }
+  ],
+  "fixed_path_3cnf_reduction": {
+    "broken_intermediate_wire_falsifying_original": 0,
+    "full_report_assignments": 132104,
+    "instances": 73,
+    "matched_UNSAT_then_SAT_originals": [
+      [],
+      [
+        0
+      ]
+    ],
+    "matched_affine_rows": 40,
+    "matched_path_products": 34,
+    "matched_reports": 35
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "growth": [
+    {
+      "checks": 0,
+      "path": {
+        "depth": 0,
+        "pieces": 1
+      },
+      "reports": 1,
+      "star": {
+        "depth": 0,
+        "pieces": 1
+      }
+    },
+    {
+      "checks": 1,
+      "path": {
+        "depth": 1,
+        "pieces": 2
+      },
+      "reports": 2,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 2,
+      "path": {
+        "depth": 1,
+        "pieces": 2
+      },
+      "reports": 3,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 3,
+      "path": {
+        "depth": 2,
+        "pieces": 4
+      },
+      "reports": 4,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 4,
+      "path": {
+        "depth": 2,
+        "pieces": 4
+      },
+      "reports": 5,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 5,
+      "path": {
+        "depth": 3,
+        "pieces": 8
+      },
+      "reports": 6,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 6,
+      "path": {
+        "depth": 3,
+        "pieces": 8
+      },
+      "reports": 7,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 7,
+      "path": {
+        "depth": 4,
+        "pieces": 16
+      },
+      "reports": 8,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 8,
+      "path": {
+        "depth": 4,
+        "pieces": 16
+      },
+      "reports": 9,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 11,
+      "path": {
+        "depth": 6,
+        "pieces": 64
+      },
+      "reports": 12,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 16,
+      "path": {
+        "depth": 8,
+        "pieces": 256
+      },
+      "reports": 17,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 32,
+      "path": {
+        "depth": 16,
+        "pieces": 65536
+      },
+      "reports": 33,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    },
+    {
+      "checks": 64,
+      "path": {
+        "depth": 32,
+        "pieces": 4294967296
+      },
+      "reports": 65,
+      "star": {
+        "depth": 1,
+        "pieces": 2
+      }
+    }
+  ],
+  "input_bindings": {
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001C/SHARED-REPORT-CANCELLATION-20261115-001C-P001_order_and_obstruction/manifest.json": "b3064a3a770d3991e6297eaf8cdfb51257e82f253e6d0e83031fc1dd92c4c10f",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/manifest.json": "b0592727f96ae2e85004492fa0a67daeef7ff7bc15a3722f3da1203ffecd15e1",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/check.py": "7e7a77b81313f8ef4c62d63a3be6b6316bded3a8faa1e7ecbe6aa06e3256f00e",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/checks.json": "224150a40a9dfe47135b48b4d9e2c4c532d8d24b4d0d29767034c804e00805b6",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/proof.md": "a690ab72c50b044897abf8e5ea27dd231cc18b6e57b468c693f6d8a4f6e79921",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/solver.py": "fc0f0ba80386774952b371607599e8e947dbe85ad8cf0e307e368ed9f1560b40"
+  },
+  "kind": "proof",
+  "multiple_product_checksums": {
+    "full_coordinate_count_trials": 420,
+    "opposite_equal_product_rows": {
+      "count": 0,
+      "product_rank": 1,
+      "scalar_sums": 0
+    },
+    "scalar_quadratics_tested_exhaustively": 2198,
+    "star_two_branch_decision_trials": 244
+  },
+  "raw_report_sections": 224,
+  "raw_result": {
+    "path": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/checker_output-001.json",
+    "sha256": "224150a40a9dfe47135b48b4d9e2c4c532d8d24b4d0d29767034c804e00805b6"
+  },
+  "reflected_path": [
+    {
+      "constant_one_points_checked": 4,
+      "free_after_pinning_T": 2,
+      "pieces_for_separate_products_on_reflection": 2,
+      "reports": 3
+    },
+    {
+      "constant_one_points_checked": 7,
+      "free_after_pinning_T": 3,
+      "pieces_for_separate_products_on_reflection": 2,
+      "reports": 5
+    },
+    {
+      "constant_one_points_checked": 11,
+      "free_after_pinning_T": 4,
+      "pieces_for_separate_products_on_reflection": 4,
+      "reports": 7
+    },
+    {
+      "constant_one_points_checked": 16,
+      "free_after_pinning_T": 5,
+      "pieces_for_separate_products_on_reflection": 4,
+      "reports": 9
+    },
+    {
+      "constant_one_points_checked": 46,
+      "free_after_pinning_T": 9,
+      "pieces_for_separate_products_on_reflection": 16,
+      "reports": 17
+    },
+    {
+      "constant_one_points_checked": 154,
+      "free_after_pinning_T": 17,
+      "pieces_for_separate_products_on_reflection": 256,
+      "reports": 33
+    },
+    {
+      "constant_one_points_checked": 562,
+      "free_after_pinning_T": 33,
+      "pieces_for_separate_products_on_reflection": 65536,
+      "reports": 65
+    }
+  ],
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "single_checksum_decision": {
+    "every_nonempty_affine_restriction_through_3_reports": 2572,
+    "formal_square_cancellation": {
+      "affine_dimension": 1,
+      "certificate": "constant-one Boolean quadratic",
+      "directions": [
+        7
+      ],
+      "offset": 4,
+      "points_tested": 2,
+      "status": "unsat"
+    },
+    "random_reports_totals_and_free_witness_trials": 336,
+    "two_free_ones_needed": {
+      "affine_dimension": 2,
+      "point": 7,
+      "points_tested": 4,
+      "products": 1,
+      "report": 3,
+      "status": "sat",
+      "total": 1,
+      "witness": 0
+    }
+  },
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TERNARY-REPORT-JOINS-20261115-001B",
+  "validation": {
+    "independence": "V1. General arguments are accompanied by exact small instance checks and satisfiable and unsatisfiable projection controls. The independent whole-evaluator analysis in C tests the difference from deciding a single contradiction.",
+    "level": "V1",
+    "novelty": "The scalar quadratic rank form is classical. The local delta compares precise complete and projected product reports under the same supplied constraints, gives controls for the decision interface and explicitly embeds 3-SAT into a path when the input can constrain product wires."
+  }
+}

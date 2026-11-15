@@ -1,0 +1,676 @@
+{
+  "artifact_id": "TERNARY-REPORT-JOINS-20261115-001C-P001",
+  "claim": "Opposite checksums of a quadratic of polar rank 2r require exactly 2^r terminal cases using arbitrary public affine questions and the saturated affine hull of each whole evaluator. Product-visible cases on a path take linear numbers of leaves, and a degree-two proof bypasses the splits in linear size, even in a distributively regrouped control with no identical product gates.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/check_execution-001.json",
+    "sha256": "ede81d4c16d87323e0ff3f77f1b2422b030287efdd7455534e2149efef71cbfb"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "growth": [
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 1,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 153,
+      "shape": "star",
+      "strict_input_clauses": 12,
+      "strict_input_variables": 6
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 1,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 153,
+      "shape": "path",
+      "strict_input_clauses": 12,
+      "strict_input_variables": 6
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 2,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 386,
+      "shape": "star",
+      "strict_input_clauses": 28,
+      "strict_input_variables": 11
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 2,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 386,
+      "shape": "path",
+      "strict_input_clauses": 28,
+      "strict_input_variables": 11
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 3,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 619,
+      "shape": "star",
+      "strict_input_clauses": 44,
+      "strict_input_variables": 16
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 4,
+      "products_per_side": 3,
+      "public_exact_cases": 4,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 619,
+      "shape": "path",
+      "strict_input_clauses": 44,
+      "strict_input_variables": 16
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 7,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 1551,
+      "shape": "star",
+      "strict_input_clauses": 108,
+      "strict_input_variables": 36
+    },
+    {
+      "private_leaf_lower": 6,
+      "private_leaf_upper": 8,
+      "products_per_side": 7,
+      "public_exact_cases": 16,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 1551,
+      "shape": "path",
+      "strict_input_clauses": 108,
+      "strict_input_variables": 36
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 15,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 3415,
+      "shape": "star",
+      "strict_input_clauses": 236,
+      "strict_input_variables": 76
+    },
+    {
+      "private_leaf_lower": 10,
+      "private_leaf_upper": 16,
+      "products_per_side": 15,
+      "public_exact_cases": 256,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 3415,
+      "shape": "path",
+      "strict_input_clauses": 236,
+      "strict_input_variables": 76
+    },
+    {
+      "private_leaf_lower": 2,
+      "private_leaf_upper": 2,
+      "products_per_side": 31,
+      "public_exact_cases": 2,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 7143,
+      "shape": "star",
+      "strict_input_clauses": 492,
+      "strict_input_variables": 156
+    },
+    {
+      "private_leaf_lower": 22,
+      "private_leaf_upper": 32,
+      "products_per_side": 31,
+      "public_exact_cases": 65536,
+      "quadratic_max_width": 7,
+      "quadratic_nodes": 7143,
+      "shape": "path",
+      "strict_input_clauses": 492,
+      "strict_input_variables": 156
+    }
+  ],
+  "independent_affine_hull_checks": {
+    "affine_recoding": {
+      "canonical_identity_checks": 64,
+      "left_rows": [
+        3,
+        5,
+        7
+      ],
+      "right_rows": [
+        5,
+        3,
+        7
+      ]
+    },
+    "matched_source_only_groupings": {
+      "initial_cell_size": 32,
+      "single_gate_fixed": true,
+      "source_path_edges": 2,
+      "whole_evaluator_rejected": true
+    },
+    "output_visible_matching": {
+      "1": {
+        "binary_search_depth_and_leaves": [
+          1,
+          2
+        ],
+        "root_fixed": true
+      },
+      "2": {
+        "binary_search_depth_and_leaves": [
+          2,
+          4
+        ],
+        "distinct_nontrivial_public_partitions": 127,
+        "full_children_pruned_but_nonempty": 28,
+        "full_children_with_nonempty_closure": 254,
+        "pure_mismatch_queries": 1,
+        "queries_using_products_or_inputs": 126,
+        "whole_evaluator_fixed_subspaces": 254
+      },
+      "3": {
+        "binary_search_depth_and_leaves": [
+          3,
+          6
+        ],
+        "distinct_nontrivial_public_partitions": 2047,
+        "pure_mismatch_queries": 3,
+        "queries_using_products_or_inputs": 2044,
+        "whole_evaluator_fixed_subspaces": 4094
+      }
+    },
+    "status": "passed",
+    "whole_public_evaluators": {
+      "1": {
+        "all_input_coordinate_leaves_rejected": 2,
+        "exhaustive_adaptive_optimum_depth_leaves": [
+          1,
+          2
+        ],
+        "paired_output_partitions_including_trivial": 8,
+        "rows": {
+          "0": {
+            "cells": 1,
+            "empty": 0,
+            "empty_s_pinned_or_mixed": 0,
+            "s_pinned_or_mixed": 0
+          },
+          "1": {
+            "cells": 14,
+            "empty": 14,
+            "empty_s_pinned_or_mixed": 8,
+            "s_pinned_or_mixed": 8
+          },
+          "2": {
+            "cells": 28,
+            "empty": 28,
+            "empty_s_pinned_or_mixed": 24,
+            "s_pinned_or_mixed": 24
+          },
+          "3": {
+            "cells": 8,
+            "empty": 8,
+            "empty_s_pinned_or_mixed": 8,
+            "s_pinned_or_mixed": 8
+          }
+        }
+      },
+      "2": {
+        "all_input_coordinate_leaves_rejected": 4,
+        "exhaustive_adaptive_optimum_depth_leaves": [
+          2,
+          4
+        ],
+        "paired_output_partitions_including_trivial": 32,
+        "rows": {
+          "0": {
+            "cells": 1,
+            "empty": 0,
+            "empty_s_pinned_or_mixed": 0,
+            "s_pinned_or_mixed": 0
+          },
+          "1": {
+            "cells": 62,
+            "empty": 0,
+            "empty_s_pinned_or_mixed": 0,
+            "s_pinned_or_mixed": 32
+          },
+          "2": {
+            "cells": 620,
+            "empty": 300,
+            "empty_s_pinned_or_mixed": 240,
+            "s_pinned_or_mixed": 480
+          },
+          "3": {
+            "cells": 1240,
+            "empty": 1240,
+            "empty_s_pinned_or_mixed": 1120,
+            "s_pinned_or_mixed": 1120
+          },
+          "4": {
+            "cells": 496,
+            "empty": 496,
+            "empty_s_pinned_or_mixed": 480,
+            "s_pinned_or_mixed": 480
+          },
+          "5": {
+            "cells": 32,
+            "empty": 32,
+            "empty_s_pinned_or_mixed": 32,
+            "s_pinned_or_mixed": 32
+          }
+        }
+      },
+      "3": {
+        "all_input_coordinate_leaves_rejected": 8,
+        "exhaustive_adaptive_optimum_depth_leaves": null,
+        "paired_output_partitions_including_trivial": 128,
+        "rows": {
+          "0": {
+            "cells": 1,
+            "empty": 0,
+            "empty_s_pinned_or_mixed": 0,
+            "s_pinned_or_mixed": 0
+          },
+          "1": {
+            "cells": 254,
+            "empty": 0,
+            "empty_s_pinned_or_mixed": 0,
+            "s_pinned_or_mixed": 128
+          },
+          "2": {
+            "cells": 10668,
+            "empty": 0,
+            "empty_s_pinned_or_mixed": 0,
+            "s_pinned_or_mixed": 8064
+          },
+          "3": {
+            "cells": 94488,
+            "empty": 11160,
+            "empty_s_pinned_or_mixed": 10080,
+            "s_pinned_or_mixed": 83328
+          }
+        }
+      }
+    },
+    "xor_wires": {
+      "valid_free_terminal_pad_completions_per_point": 4,
+      "visible_xor_wires": 6,
+      "whole_source_points": 2048
+    }
+  },
+  "input_bindings": {
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json": "98ff55b65326f881ae7981590c24144610969146b612a4e2aaae36f4ae1975f1",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001C/SHARED-REPORT-CANCELLATION-20261115-001C-P001_order_and_obstruction/manifest.json": "b3064a3a770d3991e6297eaf8cdfb51257e82f253e6d0e83031fc1dd92c4c10f",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/manifest.json": "0cb5efbd08f73ed8e25b4f8dc64eb70cf326b49a380f9e677aa3f5389fd7413d",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/check.py": "9b1b7b80b66d46a3c62388d310cdbcfc4977549844566d8e82ef2c49901b8658",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/checks.json": "8a4ecfbc6dd1fbcbb8524ce0b525552e05a48b4f975cc74403b1c6be5874e9f4",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/factored_path4.json.gz": "48cbd80edf6a2abe8d9b11aef5d228340264626ba3a401e72f9c827d758f9aba",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/opposed_path3.json.gz": "5cf37535ab574cf8a31bbb7716a10a6849c65ca18fedf07315652748c6f5cb93",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/proof.md": "c4c51420e0f80dc884584f8c47a92ed69808bbe00f8f16d9c725ae1f924d35e9",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/solver.py": "618ccf7f39eaffb00afab0c9de6b32f54b6cdd81fa4b18c41b6d916c958d231e",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/split_audit.py": "793778bae6b319fd89c699985ee974dd6666202cc5b8f980cebbe36dcc958199",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/trace.json": "40a68168ef200eb2b7ca81067c3bc883d435e3c2a361abcdd5ed98a149e45d8f"
+  },
+  "invertible_path_to_two_pairs_truth_tests": 16,
+  "kind": "proof",
+  "no_duplicate_product_gate_control": [
+    {
+      "coincident_product_arguments": 0,
+      "empty": 327,
+      "path_edges": 2,
+      "products_left": 2,
+      "products_right": 1,
+      "proof_nodes": 328,
+      "strict_clauses": 24
+    },
+    {
+      "coincident_product_arguments": 0,
+      "empty": 735,
+      "first_distributive_step": {
+        "equality_step": {
+          "chosen": [
+            [
+              [
+                2,
+                13
+              ],
+              [
+                6
+              ],
+              [
+                7
+              ]
+            ],
+            [
+              [
+                2,
+                13
+              ],
+              [
+                14
+              ]
+            ]
+          ],
+          "clause": [
+            [
+              [
+                6
+              ],
+              [
+                7
+              ],
+              [
+                14
+              ]
+            ]
+          ],
+          "coefficients": [
+            1,
+            1
+          ],
+          "parents": [
+            178,
+            236
+          ],
+          "rule": "combine"
+        },
+        "scale_row": 59,
+        "scale_step": {
+          "chosen": [
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              13
+            ]
+          ],
+          "clause": [
+            [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                13
+              ]
+            ]
+          ],
+          "multiplier": [
+            [
+              2
+            ]
+          ],
+          "parents": [
+            58
+          ],
+          "rule": "multiply"
+        },
+        "sum_unit": 58,
+        "three_product_equality": 237
+      },
+      "path_edges": 4,
+      "products_left": 4,
+      "products_right": 2,
+      "proof_nodes": 736,
+      "strict_clauses": 52
+    },
+    {
+      "coincident_product_arguments": 0,
+      "empty": 1551,
+      "path_edges": 8,
+      "products_left": 8,
+      "products_right": 4,
+      "proof_nodes": 1552,
+      "strict_clauses": 108
+    },
+    {
+      "coincident_product_arguments": 0,
+      "empty": 3183,
+      "path_edges": 16,
+      "products_left": 16,
+      "products_right": 8,
+      "proof_nodes": 3184,
+      "strict_clauses": 220
+    }
+  ],
+  "partially_visible_prefixes": {
+    "linearization_tests": 1020,
+    "m31": {
+      "1": {
+        "block_lengths": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "depth_upper": 6,
+        "extra_prefix_bits": 60,
+        "leaf_upper": 62
+      },
+      "16": {
+        "block_lengths": [
+          16,
+          15
+        ],
+        "depth_upper": 9,
+        "extra_prefix_bits": 2,
+        "leaf_upper": 512
+      },
+      "2": {
+        "block_lengths": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "depth_upper": 5,
+        "extra_prefix_bits": 30,
+        "leaf_upper": 32
+      },
+      "31": {
+        "block_lengths": [
+          31
+        ],
+        "depth_upper": 16,
+        "extra_prefix_bits": 0,
+        "leaf_upper": 65536
+      },
+      "4": {
+        "block_lengths": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3
+        ],
+        "depth_upper": 5,
+        "extra_prefix_bits": 14,
+        "leaf_upper": 32
+      },
+      "8": {
+        "block_lengths": [
+          8,
+          8,
+          8,
+          7
+        ],
+        "depth_upper": 6,
+        "extra_prefix_bits": 6,
+        "leaf_upper": 64
+      }
+    }
+  },
+  "portable_proof": {
+    "first_cancel": 119,
+    "nodes": 619,
+    "strict_clauses": 44,
+    "wrong_charge_rejected": true,
+    "wrong_quadratic_operand_rejected": true
+  },
+  "private_mismatch_search": {
+    "1": {
+      "max_queries_before_endpoint": 0,
+      "odd_vectors": 1
+    },
+    "10": {
+      "max_queries_before_endpoint": 4,
+      "odd_vectors": 512
+    },
+    "11": {
+      "max_queries_before_endpoint": 4,
+      "odd_vectors": 1024
+    },
+    "12": {
+      "max_queries_before_endpoint": 4,
+      "odd_vectors": 2048
+    },
+    "2": {
+      "max_queries_before_endpoint": 1,
+      "odd_vectors": 2
+    },
+    "3": {
+      "max_queries_before_endpoint": 2,
+      "odd_vectors": 4
+    },
+    "4": {
+      "max_queries_before_endpoint": 2,
+      "odd_vectors": 8
+    },
+    "5": {
+      "max_queries_before_endpoint": 3,
+      "odd_vectors": 16
+    },
+    "6": {
+      "max_queries_before_endpoint": 3,
+      "odd_vectors": 32
+    },
+    "7": {
+      "max_queries_before_endpoint": 3,
+      "odd_vectors": 64
+    },
+    "8": {
+      "max_queries_before_endpoint": 3,
+      "odd_vectors": 128
+    },
+    "9": {
+      "max_queries_before_endpoint": 4,
+      "odd_vectors": 256
+    }
+  },
+  "raw_result": {
+    "path": "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/checker_output-001.json",
+    "sha256": "8a4ecfbc6dd1fbcbb8524ce0b525552e05a48b4f975cc74403b1c6be5874e9f4"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_and_models": {
+    "pinned_SAT_comparisons": 240,
+    "satisfying_total_assignments_tested": 120
+  },
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TERNARY-REPORT-JOINS-20261115-001C",
+  "validation": {
+    "independence": "V1. The public and private adversaries were mathematically reviewed and separately tested through finite exact affine closure, exhaustive first queries and state embeddings. Independent SAT checks and the primitive kernel validate the strict sources and two portable proofs.",
+    "level": "V1",
+    "novelty": "Classical quadratic normal form and affine decision trees are background. The local result gives an exact fixed-point refutation bound on an explicitly unsatisfiable instance, a matching private-output adversary, and actual strict proofs with a no-duplicate control."
+  }
+}

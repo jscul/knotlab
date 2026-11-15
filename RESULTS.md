@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**354 current results** and 5 superseded ones, from 391 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**357 current results** and 5 superseded ones, from 392 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 19 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 41 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 44 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 391 epics with their closures
+- [Epics](#epics): all 392 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -430,6 +430,15 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-15 · Different linear solvers compose at boundaries crossed by no name** (`SWAPPED-ROUTE-GROUPING-20261115-001-D002`).
   Independent stage blocks can use different witness-producing algorithms and combine their answers through one boundary bit. This gives linear work even on a family with arbitrarily many unavoidable exceptions and mixed-sign pads, where removing any enabled guard from the exhibited contradiction restores satisfiability.
   [proof P001](proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/proof.md), [proof P001](proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/proof.md), [epic closure](proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · A checked four-report parity summary from two ternary checks** (`TERNARY-REPORT-JOINS-20261115-001-D001`).
+  Sixteen selector-conditional quadratic lines report exactly the joint parity of the four surviving reports. The other pair yields its opposite and a primitive refutation from genuine strict clauses.
+  [proof P001](proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/proof.md), [epic closure](proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · How many affine pieces a collection of products needs** (`TERNARY-REPORT-JOINS-20261115-001-D002`).
+  Retaining every product costs two to the minimum vertex cover size in affine pieces, while retaining the single parity costs two to half the polar rank. A single constrained checksum admits polynomial decision, and arbitrary constraints on individual products on a path can express 3-SAT.
+  [proof P001](proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/proof.md), [epic closure](proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · An exponential affine case proof and a linear quadratic proof of the same contradiction** (`TERNARY-REPORT-JOINS-20261115-001-D003`).
+  On a path of m products the public whole-evaluator affine procedure requires two to the floor of (m+1)/2 terminal cases. Exposing intermediate products reduces the case count to linear order, and combining quadratic facts gives a linear-size checked proof.
+  [proof P001](proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/proof.md), [epic closure](proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · When two shared choices can report a single implication** (`TWO-CHOICE-IMPLICATIONS-20261115-001-D001`).
   With simultaneously releasable pad guards, every side is represented by unary pins and zero, one or two implications; a three-stage example needs both directions for equality. With arbitrary internally mixed pads the fixed-wiring construction gives every two-bit relation at descending ends and exactly 324 simultaneous boundary tables.
   [proof P001](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001A/TWO-CHOICE-IMPLICATIONS-20261115-001A-P001_implication_reports/proof.md), [proof P001](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001B/TWO-CHOICE-IMPLICATIONS-20261115-001B-P001_mixed_padding/proof.md), [epic closure](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001Z/TWO-CHOICE-IMPLICATIONS-20261115-001Z-P001_synthesis/proof.md)
@@ -1591,6 +1600,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Proof length after encoding strict 3-SAT as two-use routes (`ROUTE-PARITY-TRANSFER-20261115-001`) | [closure](proofs/ROUTE-PARITY-TRANSFER-20261115-001Z/ROUTE-PARITY-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-PARITY-TRANSFER-20261115-001/) |
 | 2026-11-15 | Cancel overlapping parity checks from strict clauses (`SHARED-REPORT-CANCELLATION-20261115-001`) | [closure](proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/SHARED-REPORT-CANCELLATION-20261115-001/) |
 | 2026-11-15 | Choosing how to order two routes within each stage (`SWAPPED-ROUTE-GROUPING-20261115-001`) | [closure](proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/SWAPPED-ROUTE-GROUPING-20261115-001/) |
+| 2026-11-15 | Join four surviving reports and test growing non-affine checks (`TERNARY-REPORT-JOINS-20261115-001`) | [closure](proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TERNARY-REPORT-JOINS-20261115-001/) |
 | 2026-11-15 | What two shared choices must report together (`TWO-CHOICE-IMPLICATIONS-20261115-001`) | [closure](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001Z/TWO-CHOICE-IMPLICATIONS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-CHOICE-IMPLICATIONS-20261115-001/) |
 | 2026-11-15 | Two repeated middle variables and a second way to group the hidden choices (`TWO-RELAY-PADDING-20261115-001`) | [closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | Sharing a middle variable between two routes (`UNSIGNED-ROUTE-JOINS-20261115-001`) | [closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/UNSIGNED-ROUTE-JOINS-20261115-001/) |

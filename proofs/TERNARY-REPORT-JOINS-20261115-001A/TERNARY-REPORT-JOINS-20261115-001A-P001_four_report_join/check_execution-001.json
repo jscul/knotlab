@@ -1,0 +1,32 @@
+{
+  "artifact_id": "TERNARY-REPORT-JOINS-20261115-001A-P001",
+  "at": "2026-11-15T21:32:10+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json": "98ff55b65326f881ae7981590c24144610969146b612a4e2aaae36f4ae1975f1",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/manifest.json": "7b54df188d096c51fd6c7a1f5381d1438c0bf00762df48f59a792d16583f948b",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001C/SHARED-REPORT-CANCELLATION-20261115-001C-P001_order_and_obstruction/manifest.json": "b3064a3a770d3991e6297eaf8cdfb51257e82f253e6d0e83031fc1dd92c4c10f",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/manifest.json": "b0592727f96ae2e85004492fa0a67daeef7ff7bc15a3722f3da1203ffecd15e1",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/check.py": "2886bba8401e4bb4ea5a24147f18d752486948c0421a6f9c66f5f2c8f611bc65",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/checks.json": "2dd3ec561f12c470cc23e3029d959bfd80d4d51044a8fb14419c33877a25663b",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/four-check-proof.jsonl.gz": "d1a2a41a43519ccd13c23f6a724193751b9de60598bcad8c4d51eb087c155d9e",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/proof.md": "1318190c28ba706ccf8ea1b89e64fcbbe318f3414aa8e91141bca0ecb6958590",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/solver.py": "1457ffa1f9fefdb7d97c48db1967b4ea5d63ae088b8c5caaa18076a28f37191a",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001A/TERNARY-REPORT-JOINS-20261115-001A-P001_four_report_join/trace.json": "d14f1860e280f1332e947cbd3266ec9687fcbaa0018439bb4772a65180f14121"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"all_charge_controls\": {\n    \"even_sat\": 8,\n    \"odd_inconsistent\": 8\n  },\n  \"certificate_sha256\": \"d1a2a41a43519ccd13c23f6a724193751b9de60598bcad8c4d51eb087c155d9e\",\n  \"final_ancestral_input_clauses\": 30960,\n  \"final_ancestral_nodes\": 136320,\n  \"individually_necessary_full_mask_rows\": {\n    \"left\": 15,\n    \"right\": 16\n  },\n  \"last_empty_row\": 136319,\n  \"max_proof_width\": 23,\n  \"mutations\": {\n    \"altered_sum_coefficient_rejected_at\": 135920,\n    \"both_charges_odd_on_single_report_cube\": true,\n    \"missing_ab_flips_singleton\": true\n  },\n  \"original_boundary_assignments_per_side\": 16384,\n  \"primitive_nodes_by_phase\": {\n    \"close\": 160,\n    \"derive_children\": 135808,\n    \"join_left\": 176,\n    \"join_right\": 176\n  },\n  \"projected_allowed\": {\n    \"left\": 10144,\n    \"right\": 6240\n  },\n  \"proof_nodes\": 136320,\n  \"raw_clause_count\": 30960,\n  \"raw_strict_pair_queries\": {\n    \"left\": {\n      \"sat\": 32,\n      \"unsat\": 30\n    },\n    \"right\": {\n      \"sat\": 30,\n      \"unsat\": 32\n    }\n  },\n  \"rules\": {\n    \"axiom\": 30960,\n    \"boolean\": 14,\n    \"combine\": 33666,\n    \"contract\": 38465,\n    \"delete_false\": 31738,\n    \"multiply\": 64,\n    \"true\": 1,\n    \"weaken\": 1412\n  },\n  \"selector_exclusions\": 16,\n  \"shared_parents\": 111,\n  \"source_pure_child_rows\": 32,\n  \"source_pure_summary_rows\": 32,\n  \"status\": \"passed\",\n  \"strict_cnf_variables\": 27540,\n  \"strict_forbidden_rows\": [\n    696,\n    696,\n    696,\n    1352\n  ],\n  \"unrestricted_cadical_models_0000_0001\": [\n    true,\n    false\n  ]\n}\n",
+  "ticket": "TERNARY-REPORT-JOINS-20261115-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

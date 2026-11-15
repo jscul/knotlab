@@ -1,0 +1,101 @@
+{
+  "artifact_id": "TERNARY-REPORT-JOINS-20261115-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "TERNARY-REPORT-JOINS-20261115-001B-P001",
+  "claim": "Keeping all edge products requires exactly two to the minimum vertex-cover size in affine pieces; for their one checksum the exponent is half the polar rank. Affine pins on one checksum admit polynomial decision, k independent product combinations admit exact counting in 2^k times polynomial time, and individual product restrictions make the path NP-complete while stars stay polynomial.",
+  "dependencies": [
+    "SHARED-REPORT-CANCELLATION-20261115-001Z",
+    "SHARED-REPORT-CANCELLATION-20261115-001C"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/check.py": "7e7a77b81313f8ef4c62d63a3be6b6316bded3a8faa1e7ecbe6aa06e3256f00e",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/check_execution-001.json": "4abba4a9add0a58163c7969e5c8dde36614a1a574c68848d2e54938de40ba823",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/checker_output-001.json": "224150a40a9dfe47135b48b4d9e2c4c532d8d24b4d0d29767034c804e00805b6",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/proof.md": "a690ab72c50b044897abf8e5ea27dd231cc18b6e57b468c693f6d8a4f6e79921",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/result.json": "f7b76770023c1f4a4f737e13bba7220c1a6594875f2f4a414750168b92a2aec6"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Counting nonlinear checks as independent choices, conflating exact cover with SAT decision, or permitting product queries to an oracle while charging only raw input splits."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "TERNARY-REPORT-JOINS-20261115-001"
+    ],
+    "home_scope": "TERNARY-REPORT-JOINS-20261115-001",
+    "parents": [
+      "proofs/SHARED-REPORT-CANCELLATION-20261115-001C/SHARED-REPORT-CANCELLATION-20261115-001C-P001_order_and_obstruction/manifest.json",
+      "proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001C/SHARED-REPORT-CANCELLATION-20261115-001C-P001_order_and_obstruction/manifest.json": "b3064a3a770d3991e6297eaf8cdfb51257e82f253e6d0e83031fc1dd92c4c10f",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/manifest.json": "b0592727f96ae2e85004492fa0a67daeef7ff7bc15a3722f3da1203ffecd15e1",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/checks.json": "224150a40a9dfe47135b48b4d9e2c4c532d8d24b4d0d29767034c804e00805b6",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/solver.py": "fc0f0ba80386774952b371607599e8e947dbe85ad8cf0e307e368ed9f1560b40"
+  },
+  "paths": {
+    "check": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/check.py",
+    "check_execution": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/check_execution-001.json",
+    "directory": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products",
+    "identity": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/identity.json",
+    "manifest": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/manifest.json",
+    "proof": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/proof.md",
+    "raw_result": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/checker_output-001.json",
+    "result": "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/result.json"
+  },
+  "proof": "TERNARY-REPORT-JOINS-20261115-001B-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "TERNARY-REPORT-JOINS-20261115-001B",
+  "title": "Measure affine descriptions and decisions on growing connected AND checks",
+  "validation": {
+    "independence": "V1. General arguments are accompanied by exact small instance checks and satisfiable and unsatisfiable projection controls. The independent whole-evaluator analysis in C tests the difference from deciding a single contradiction.",
+    "level": "V1",
+    "novelty": "The scalar quadratic rank form is classical. The local delta compares precise complete and projected product reports under the same supplied constraints, gives controls for the decision interface and explicitly embeds 3-SAT into a path when the input can constrain product wires."
+  }
+}

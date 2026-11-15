@@ -1,0 +1,72 @@
+{
+  "admission_id": "EVIDENCE-PRODUCT-NAMES-PANG-V2-72A-FIXED-DEGREES",
+  "admission_status": "admitted",
+  "approval_ticket": "EVIDENCE-001",
+  "assumptions": [
+    "The result in Shuo Pang's 24 October 2026 preprint is admitted as stated. The local finite replays test conventions and constructions.",
+    "The field is F2. Formal products use ordinary polynomial-ring arithmetic. On Boolean assignments a square evaluates like its variable; a proof representation still records exponents.",
+    "The sample is an 8n-occurrence list, including repeats, on n declared variables. The probability is over formulas, followed by a universal quantifier over their refutations.",
+    "The measure is DAG nodes. A proof line may be reused. All source rules are syntactic, with true and variable Boolean-choice axioms. No external extension axioms are supplied.",
+    "Every use fixes a degree cap D independent of n. No simultaneous lower bound uniform in a growing D is admitted."
+  ],
+  "citation_required": true,
+  "citation_role": "source-identification-only",
+  "citations": [
+    {
+      "exact_support": "Theorem 7.2(a), printed p. 12, fixes the prime and degree before the asymptotics. Section 7.1 defines the sampling law. The introduction defines the syntactic rules and DAG node measure.",
+      "source_kind": "paper",
+      "source_locator": "https://arxiv.org/pdf/2610.00837v2",
+      "title": "Shuo Pang, A Degree\u2013Size Relation for Resolution over Polynomials, arXiv:2610.00837v2 (24 October 2026)"
+    }
+  ],
+  "classification": "independent",
+  "classification_rationale": "Finite Boolean certificate complexity has an interpretation independent of the protected foundation.",
+  "compatibility_statement": "This record admits a statement about proof lengths for externally supplied Boolean formulas. Its proof rules, arithmetic and sample law carry no formation authority.",
+  "contact_first_safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": false,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "exact_local_claim": "For each fixed integer D>=1, the unnamed syntactic Res(PC_D/F2) system with formal total degree cap D requires exp(c_D n) DAG nodes with probability tending to one for 8n independent uniform signed clauses on three distinct variables sampled with replacement; c_D>0 may depend on D. This is Pang v2 Theorem 7.2(a), w=3, Delta=8, p=2, with D fixed before taking n to infinity. The system has no fresh-name extension rule.",
+  "excluded_interpretations": [
+    "This statement concerns a syntactic certificate calculus. It does not admit unrestricted semantic quadratic weakening, all solver architectures, general SAT decision-time bounds, or P versus NP.",
+    "It carries no claim of native emergence, logical knot, contact-first topology, minimal contact-distance, or extended distance."
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "incompatibility_reasons": [],
+  "local_dependencies": [
+    "proofs/EVIDENCE-001A/EVIDENCE-001A-P001_external_evidence_admission_schema/manifest.json",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001B/QUADRATIC-ROUTE-TRANSFER-20261115-001B-P001_degree_two_source/manifest.json"
+  ],
+  "neutralized_terms": [],
+  "outside_result_admitted": true,
+  "proof_lineage_authority": "repository-local-manifests-only",
+  "record_purpose": "admission",
+  "record_schema_version": 1,
+  "validation_commands": [
+    "python3 -B proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/check.py"
+  ]
+}

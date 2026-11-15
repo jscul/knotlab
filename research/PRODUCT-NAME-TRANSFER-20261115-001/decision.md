@@ -1,0 +1,37 @@
+# What changes when a proof can name a product
+
+A proof can now introduce a fresh \(t=fg\), where either affine factor may use any earlier product name. A later line may use \(t\) as often as needed. The literal substitution that takes the guarded wiring back to the original clauses has a simple extension: give each declared name a fresh source counterpart and translate its defining equation with its earlier references. In an \(S\)-node proof with \(k\) declarations, the source proof has at most \(\min(2S-k,S+m+n+1)\) nodes on \(m\) strict original clauses and \(n\) original variables. Its number of declarations is preserved. The two guard-level refutations checked included two successive named products, each used twice on the route to the contradiction. [Proof and named checker](../../proofs/PRODUCT-NAME-TRANSFER-20261115-001A/PRODUCT-NAME-TRANSFER-20261115-001A-P001_named_substitution/proof.md)
+
+A lower bound requires a second argument. If a proof uses \(k\) names, branch on one affine factor per definition. Along each branch every name becomes zero or an affine form. Keeping the branch assumptions in the disjunction lets us rebuild a degree-two unnamed proof on at most \(128\,2^k(n+k+1)(S+1)\) nodes. Thus a sublinear number \(k=o(n)\) still leaves exponentially many steps on the induced random family. There is also a shortcut for the simulation itself: if every declaration uses the same original affine factor or its complement, just two branches suffice for arbitrary depth and reuse. [Branching proof](../../proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/proof.md) · [Shared-factor conversion](../../proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/solver.py)
+
+Even with arbitrarily many names, a fixed bound \(d\) on successively naming products of products suffices for the lower bound. Expand the definitions into degree \(2^{d+1}\), derive the expanded names' Boolean choice axioms from the original ones, and invoke Pang's unnamed theorem for that fixed degree. With high probability both resource limits preserve exponential length in the source variable count. For listed wiring this is exponential in the number of stages and for wiring fixed in advance it is exponential in the cube root of that count. Both grow faster than every polynomial in the corresponding explicit input length. [Shallow expansion](../../proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/proof.md) · [New parameter-specific source admission](../../proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/admission.json) · [Pang v2, Theorem 7.2(a)](https://arxiv.org/html/2610.00837v2#S7)
+
+Unlimited names of unlimited depth can implement ordinary extended resolution. A product name for two signed literal values gives all three Boolean clauses that define their AND in a constant number of steps. A subsequent ordinary resolution deduction uses the same variables. The earlier unnamed lower bound therefore leaves a genuine gap. A general lower bound here would have to cover that proof method too. The work concerns explicit contradiction proofs and does not settle arbitrary SAT decisions. [Simulation and scope](../../proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/proof.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — transport proofs with names | **Status:** Successful | Map, declaration accounting and actual nested replays |
+| Local direction — lower bounds under name reuse | Continue | Count, nesting and repeated factors give certified regimes |
+| Broader exploration — unrestricted proof systems and SAT shortcuts | Known alternatives | Ordinary extended resolution is already simulated |
+| G3 Hardness at three places and G16 Learning the rules behind what a system allows | Capability gained | Identifies concrete assumptions under which the stronger lower bound survives |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Group product definitions by the original affine factor they share | 2/3 — controls reuse at arbitrary depth | 3/3 — explicit two-case replay | Use one common factor or its complement in every gate → verify a complete unnamed proof or find a failed rule | Selected · started |
+| 2 | Simulate unrestricted decisions with efficiently checkable certificates (B181) | 3/3 — all-solver complexity | 1/3 — no general simulation | Identify an uncovered algorithm and its certificate requirement → reassess if a size bound is available | Alternative · deferred |
+
+For #1 the two-case theorem and eight-level replay complete the first discriminator. They permit a number of names and a depth that both grow with the input. A natural next question is whether the number of independent affine factors that need to be fixed controls the same conversion when no single factor works in every gate. #2 concerns the long-term decision lower bound; the transport only covers refutations with explicit rules. B181 already records that wider gap.
+
+**Basis:** A proved definition-preserving map; two independent elimination arguments; versioned admission of the fixed-degree external source; constructive derivation of extended-resolution gate clauses; exact checkers and truth-table validation. The finite checks are V1. The source exponential estimate is from a preprint and was not independently reproved. The outside design advisor was unavailable at its weekly quota.
+
+**Corrections:** A replay helper in B could reject a valid proof that cites an already-empty input clause twice with other lines between. The unified C entry point now emits a one-node proof in this case. The read-only audit also found that serializing a pruned proof requires normalizing canceled factor terms before renumbering, and the degree report must count a printed multiplier even when it multiplies zero. C supplies both fixes and checked examples. The theorem and all strict ternary examples survive. **Goals:** G3 and G16 gain a proof transfer with product names, specific lower-bound regimes and an ordinary extended-resolution boundary. B181 remains the previously recorded untaken high-payoff route. **Assumptions:** Product declarations are individually charged, acyclic and proof-local. The calculus is syntactic in characteristic two. The source degree in the shallow corollary is fixed before the limit. No standing assumption changed.
+
+**Basket:** B181 is the broader gap and remains open. GUARD-CHOICE-SEPARATION-20261115-001#2 is the independent representation comparison. The completed quadratic study's #1 is linked to the present continuation.
+
+## Final report as sent
+
+2026-11-15 18:17:59 UTC
+
+The wiring-to-clause proof transfer survives named and reused products. Few names, shallow names, or a common affine factor still permit long-proof results on the admitted random family. Unrestricted names include ordinary extended resolution, and their general proof length stays open.

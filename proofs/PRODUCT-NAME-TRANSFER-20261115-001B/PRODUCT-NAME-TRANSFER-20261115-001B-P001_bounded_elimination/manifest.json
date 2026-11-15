@@ -1,0 +1,116 @@
+{
+  "artifact_id": "PRODUCT-NAME-TRANSFER-20261115-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "PRODUCT-NAME-TRANSFER-20261115-001B-P001",
+  "claim": "An S-node degree-two proof with k fresh affine-product declarations on n base variables yields an unnamed degree-two proof with at most 128\u00b72^k\u00b7(n+k+1)\u00b7(S+1) nodes. A sublinear number of declarations preserves the admitted exponential lower bound.",
+  "dependencies": [
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001A",
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001B",
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001C",
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001Z",
+    "ROUTE-PARITY-TRANSFER-20261115-001A",
+    "ROUTE-PARITY-TRANSFER-20261115-001C",
+    "EVIDENCE-001A"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/check.py": "bb32d622be902111457c17c7e81222236537618b3b5dc2f1f0b6f0a1d3612f7d",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/check_execution-001.json": "35d72850a6145e813dc9b244bfae34f9b23316aea91aec0012c45eb9a0c37b58",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/checker_output-001.json": "8b89e1663fed61b7937a2274a9c3157368e6473fc1b8f4805366932bb2201c62",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/proof.md": "5fad0a71aebfb84118a12be62ad24ec1a56c0d41ad22c9bebf545bd3733bf86c",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/result.json": "ed9eda5e02a0b4f343bd9395597dcbb8d5eb2267677bdbbeac683646f1063a79"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "A single wide proof line might silently multiply the node count; substituting both product factors could increase degree."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "PRODUCT-NAME-TRANSFER-20261115-001"
+    ],
+    "home_scope": "PRODUCT-NAME-TRANSFER-20261115-001",
+    "parents": [
+      "proofs/EVIDENCE-001A/EVIDENCE-001A-P001_external_evidence_admission_schema/manifest.json",
+      "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json",
+      "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001B/QUADRATIC-ROUTE-TRANSFER-20261115-001B-P001_degree_two_source/manifest.json",
+      "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001C/QUADRATIC-ROUTE-TRANSFER-20261115-001C-P001_encoded_products/manifest.json",
+      "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001Z/QUADRATIC-ROUTE-TRANSFER-20261115-001Z-P001_synthesis/manifest.json",
+      "proofs/ROUTE-PARITY-TRANSFER-20261115-001A/ROUTE-PARITY-TRANSFER-20261115-001A-P001_literal_projection/manifest.json",
+      "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/EVIDENCE-001A/EVIDENCE-001A-P001_external_evidence_admission_schema/manifest.json": "379d7a0c3294ecccb905ddd5046636bb85b165013260ccfba4e28a4131d9942f",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/checks.json": "56ece47af7c9569bafa4ed6bb7eacfdc46546877b6c8bcc490d0bff1d044baf4",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/solver.py": "7a381b7606d03304391fc1fc5e1bab52e53b55637187aaa1ced3b5aeae939312",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001B/QUADRATIC-ROUTE-TRANSFER-20261115-001B-P001_degree_two_source/manifest.json": "3d625b097166ed9c8400756b4bcdb217ad337484006c52d1bcd0a41a85db7c9a",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001C/QUADRATIC-ROUTE-TRANSFER-20261115-001C-P001_encoded_products/manifest.json": "42d975aa86add983e2d794c234b8ac3cf4e1e86dc67684801296ce8abfee01ae",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001Z/QUADRATIC-ROUTE-TRANSFER-20261115-001Z-P001_synthesis/manifest.json": "d0614f47e26fd5c898c9eba7523063fda90dec41a8d42381f0daaa1cd8c37dbc",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001A/ROUTE-PARITY-TRANSFER-20261115-001A-P001_literal_projection/manifest.json": "4b73397968c4a4793aa2f438ae1afcedb463d8ec987025d122fccf3d6147bf37",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/manifest.json": "2e6bead3c40f478e162a763c661151b1543ced0bfcdd834b6652cc2d2d6a57f1"
+  },
+  "paths": {
+    "check": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/check.py",
+    "check_execution": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/check_execution-001.json",
+    "directory": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination",
+    "identity": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/identity.json",
+    "manifest": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json",
+    "proof": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/proof.md",
+    "raw_result": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/checker_output-001.json",
+    "result": "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/result.json"
+  },
+  "proof": "PRODUCT-NAME-TRANSFER-20261115-001B-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "PRODUCT-NAME-TRANSFER-20261115-001B",
+  "title": "Eliminating a bounded number of reusable products inside degree two",
+  "validation": {
+    "independence": "Primitive output verification and all-assignment checking of every branch deduction, including all 64 pairs of two-variable affine factors and nested reuse.",
+    "level": "V1",
+    "novelty": "The factor-branching simulation bound and width-independent handling of branch contexts are established directly in the specified syntactic system."
+  }
+}

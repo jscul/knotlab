@@ -1,0 +1,97 @@
+{
+  "artifact_id": "UNSIGNED-ROUTE-JOINS-20261115-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "UNSIGNED-ROUTE-JOINS-20261115-001A-P001",
+  "claim": "Joining middle names in one stage doubles the minimal supports. Across two adjacent stages the count stays fixed despite a different answer on some inputs; more distant joins reduce the count while introducing bypasses.",
+  "dependencies": [
+    "SIGNED-KNOT-OVERLAP-20261114-001Z"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/check.py": "5782493db50cd379876745a4dfecd045aacff34079f229bae9d562e3465a1dbf",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/check_execution-001.json": "abb5139ee92579853acc6ff2a4a2236c04a87c613a96d115ec0b9f334d0ea88d",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/checker_output-001.json": "aab0f4dd6e99d6c38d34e6327a69baabffd1c09580b56c589236d06d22490373",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md": "594f1c9f8718067b237605e96cf5a38c067eb2d47401fef51b626db0afa3b25f",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/result.json": "2bf962835f7747cdcd0bb1db66f5821838000b9bb572742a3392bd50b50ab52d"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "A count silently drops occurrence-labelled arcs or permits a repeated vertex in a minimal support."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "UNSIGNED-ROUTE-JOINS-20261115-001"
+    ],
+    "home_scope": "UNSIGNED-ROUTE-JOINS-20261115-001",
+    "parents": [
+      "proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/manifest.json": "7cb8edad13f2debfe2c3ae17b739689f77b015e4357ad55c330f79accd77c850",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/checks.json": "ec22ff736ec4b2874d03a874564bfdb20a678a9ef10f2d86c14f0cdaa912edec"
+  },
+  "paths": {
+    "check": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/check.py",
+    "check_execution": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/check_execution-001.json",
+    "directory": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census",
+    "identity": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/identity.json",
+    "manifest": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/manifest.json",
+    "proof": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md",
+    "raw_result": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/checker_output-001.json",
+    "result": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/result.json"
+  },
+  "proof": "UNSIGNED-ROUTE-JOINS-20261115-001A-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "UNSIGNED-ROUTE-JOINS-20261115-001A",
+  "title": "How one identified middle changes minimal supports",
+  "validation": {
+    "independence": "Independent DFS over 4,083 shared classes at six stages and raw four-stage SAT checks cross-checked the uniform enumeration. The primary checker used 50 layouts and 7,592,000 source settings.",
+    "level": "V1",
+    "novelty": "The exact unjoined source example is published. The labelled one-identification census and false-input counts are the local contribution."
+  }
+}

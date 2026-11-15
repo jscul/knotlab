@@ -1,0 +1,25 @@
+{
+  "artifact_id": "UNSIGNED-ROUTE-JOINS-20261115-001B-P001",
+  "at": "2026-11-15T07:54:46+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/manifest.json": "7cb8edad13f2debfe2c3ae17b739689f77b015e4357ad55c330f79accd77c850",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/check.py": "4c3c338100fedc9251df69c93a1f3fa5d4de95455e7c1457a156fa1ba2bb8514",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/checks.json": "1204cbc39e3bc01e90a2033c773da06f034ad227503e29ab0d362fa353238d62",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/proof.md": "2d784d3da2b41f4bd7b4e338a336335fb16e7cfd67ef62eebf1f58ff92b9661d"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"all_one_bit_partitions_r1\": 2,\n  \"all_one_bit_partitions_r2\": 5,\n  \"all_one_bit_partitions_r3\": 17,\n  \"four_stage_edge_activations\": 65536,\n  \"largest_raw_strict_stage_count\": 5,\n  \"middle_partitions_exhausted_through_three_stages\": 220,\n  \"raw_guard_alias_inputs\": 16,\n  \"raw_strict_solver_cases\": 4,\n  \"raw_strict_switch_vectors\": 188,\n  \"source_edge_activations_exhausted_through_three_stages\": 835360,\n  \"status\": \"passed\",\n  \"two_stage_all_middle_equal_residuals\": 2,\n  \"two_stage_single_interstage_join_residuals\": 4\n}\n",
+  "ticket": "UNSIGNED-ROUTE-JOINS-20261115-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

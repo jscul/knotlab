@@ -1,0 +1,314 @@
+{
+  "artifact_id": "UNSIGNED-ROUTE-JOINS-20261115-001A-P001",
+  "claim": "Joining middle names in one stage doubles the minimal supports. Across two adjacent stages the count stays fixed despite a different answer on some inputs; more distant joins reduce the count while introducing bypasses.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/check_execution-001.json",
+    "sha256": "abb5139ee92579853acc6ff2a4a2236c04a87c613a96d115ec0b9f334d0ea88d"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/manifest.json": "7cb8edad13f2debfe2c3ae17b739689f77b015e4357ad55c330f79accd77c850",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/check.py": "5782493db50cd379876745a4dfecd045aacff34079f229bae9d562e3465a1dbf",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/checks.json": "ec22ff736ec4b2874d03a874564bfdb20a678a9ef10f2d86c14f0cdaa912edec",
+    "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md": "594f1c9f8718067b237605e96cf5a38c067eb2d47401fef51b626db0afa3b25f"
+  },
+  "kind": "proof",
+  "larger_path_counts": {
+    "5": {
+      "layouts": 45,
+      "paths_per_layout_by_gap": {
+        "0": 64,
+        "1": 32,
+        "2": 28,
+        "3": 26,
+        "4": 25
+      }
+    },
+    "6": {
+      "layouts": 66,
+      "paths_per_layout_by_gap": {
+        "0": 128,
+        "1": 64,
+        "2": 56,
+        "3": 52,
+        "4": 50,
+        "5": 49
+      }
+    },
+    "7": {
+      "layouts": 91,
+      "paths_per_layout_by_gap": {
+        "0": 256,
+        "1": 128,
+        "2": 112,
+        "3": 104,
+        "4": 100,
+        "5": 98,
+        "6": 97
+      }
+    }
+  },
+  "layouts": 50,
+  "per_stage_count": {
+    "1": {
+      "both_endpoints_on_vectors": 16,
+      "layouts": 1,
+      "layouts_by_gap": {
+        "0": 1
+      },
+      "per_layout_by_gap": {
+        "0": {
+          "kept": 2,
+          "minimal_switch_supports_by_size": {
+            "36": 4
+          },
+          "new": 2,
+          "old_nonminimal": 0,
+          "wrong_raw_switch_vectors": 7938,
+          "wrong_source_activations": 2
+        }
+      },
+      "source_vectors": 64
+    },
+    "2": {
+      "both_endpoints_on_vectors": 1536,
+      "layouts": 6,
+      "layouts_by_gap": {
+        "0": 2,
+        "1": 4
+      },
+      "per_layout_by_gap": {
+        "0": {
+          "kept": 4,
+          "minimal_switch_supports_by_size": {
+            "48": 8
+          },
+          "new": 4,
+          "old_nonminimal": 0,
+          "wrong_raw_switch_vectors": 65020158,
+          "wrong_source_activations": 14
+        },
+        "1": {
+          "kept": 3,
+          "minimal_switch_supports_by_size": {
+            "36": 1,
+            "48": 3
+          },
+          "new": 1,
+          "old_nonminimal": 1,
+          "wrong_raw_switch_vectors": 68702179455,
+          "wrong_source_activations": 39
+        }
+      },
+      "source_vectors": 6144
+    },
+    "3": {
+      "both_endpoints_on_vectors": 61440,
+      "layouts": 15,
+      "layouts_by_gap": {
+        "0": 3,
+        "1": 8,
+        "2": 4
+      },
+      "per_layout_by_gap": {
+        "0": {
+          "kept": 8,
+          "minimal_switch_supports_by_size": {
+            "60": 16
+          },
+          "new": 8,
+          "old_nonminimal": 0,
+          "wrong_raw_switch_vectors": 532580114178,
+          "wrong_source_activations": 98
+        },
+        "1": {
+          "kept": 6,
+          "minimal_switch_supports_by_size": {
+            "48": 2,
+            "60": 6
+          },
+          "new": 2,
+          "old_nonminimal": 2,
+          "wrong_raw_switch_vectors": 562739551915905,
+          "wrong_source_activations": 273
+        },
+        "2": {
+          "kept": 6,
+          "minimal_switch_supports_by_size": {
+            "36": 1,
+            "60": 6
+          },
+          "new": 1,
+          "old_nonminimal": 2,
+          "wrong_raw_switch_vectors": 1152921362924818305,
+          "wrong_source_activations": 849
+        }
+      },
+      "source_vectors": 245760
+    },
+    "4": {
+      "both_endpoints_on_vectors": 1835008,
+      "layouts": 28,
+      "layouts_by_gap": {
+        "0": 4,
+        "1": 12,
+        "2": 8,
+        "3": 4
+      },
+      "per_layout_by_gap": {
+        "0": {
+          "kept": 16,
+          "minimal_switch_supports_by_size": {
+            "72": 32
+          },
+          "new": 16,
+          "old_nonminimal": 0,
+          "wrong_raw_switch_vectors": 4362363715231998,
+          "wrong_source_activations": 686
+        },
+        "1": {
+          "kept": 12,
+          "minimal_switch_supports_by_size": {
+            "60": 4,
+            "72": 12
+          },
+          "new": 4,
+          "old_nonminimal": 4,
+          "wrong_raw_switch_vectors": 4609399669743177855,
+          "wrong_source_activations": 1911
+        },
+        "2": {
+          "kept": 12,
+          "minimal_switch_supports_by_size": {
+            "48": 2,
+            "72": 12
+          },
+          "new": 2,
+          "old_nonminimal": 4,
+          "wrong_raw_switch_vectors": 9443578883717186736255,
+          "wrong_source_activations": 5943
+        },
+        "3": {
+          "kept": 12,
+          "minimal_switch_supports_by_size": {
+            "36": 1,
+            "72": 12
+          },
+          "new": 1,
+          "old_nonminimal": 4,
+          "wrong_raw_switch_vectors": 19342813112673549298454655,
+          "wrong_source_activations": 15159
+        }
+      },
+      "source_vectors": 7340032
+    }
+  },
+  "raw_cnf": {
+    "first_counterexample": {
+      "four_switch_restriction_indices": [
+        0,
+        12,
+        30,
+        36
+      ],
+      "four_switch_restriction_rows": 15,
+      "joined_sat": false,
+      "live_source_mask": 27,
+      "one_switch_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "stages": 1,
+      "switches": 48,
+      "unjoined_sat": true
+    },
+    "tests": {
+      "complete_source_activation_representatives": 12416,
+      "minimal_supports_in_literal_cnf": 53,
+      "single_switch_deletions": 2736
+    }
+  },
+  "raw_result": {
+    "path": "proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/checker_output-001.json",
+    "sha256": "aab0f4dd6e99d6c38d34e6327a69baabffd1c09580b56c589236d06d22490373"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_activation_vectors": 7592000,
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "UNSIGNED-ROUTE-JOINS-20261115-001A",
+  "validation": {
+    "independence": "Independent DFS over 4,083 shared classes at six stages and raw four-stage SAT checks cross-checked the uniform enumeration. The primary checker used 50 layouts and 7,592,000 source settings.",
+    "level": "V1",
+    "novelty": "The exact unjoined source example is published. The labelled one-identification census and false-input counts are the local contribution."
+  }
+}

@@ -114,7 +114,8 @@ history.
 ## How this repository is updated
 
 Everything here is published from our research workspace, which is the source
-of truth for this repository and for [jscul.dev](https://jscul.dev).
+of truth for this repository and the research records on
+[prespatial.org](https://prespatial.org).
 
 - **Records, automatically.** Every commit in the workspace publishes itself
   here shortly after it is made: an epic's committed proofs, experiments,
@@ -133,11 +134,11 @@ of truth for this repository and for [jscul.dev](https://jscul.dev).
   that a THEORY.md claim cites, `tests/test_curation.py` fails until the claim
   says so.
 - **The site follows.** A GitHub Actions workflow in the site's repository
-  copies what jscul.dev shows from here, checks and builds it, and pushes. It
+  copies what prespatial.org shows from here, checks and builds it, and pushes. It
   starts after each publication, and also runs every six hours.
 - **Corrections.** A pending qualification is entered once, in
   [data/qualifications.json](data/qualifications.json). It then appears in
-  RESULTS.md, on jscul.dev and in the checks of THEORY.md. Corrections are
+  RESULTS.md, on prespatial.org and in the checks of THEORY.md. Corrections are
   recorded in [HISTORY.md](HISTORY.md), and are welcome as
   [issues](https://github.com/jscul/knotlab/issues).
 

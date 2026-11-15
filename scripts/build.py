@@ -238,7 +238,7 @@ def build_ranking(tiers, records):
                                "statements": statements, "links": links, "records": sorted(matched)})
             md.append(f"- **{title}** ({date}). " + (text if text else "; ".join(statements) + "."))
             md.append("  " + ", ".join(
-                f"[{l['label']}]({l['href'].replace(BLOB, '') if l['href'].startswith(BLOB) else 'https://jscul.dev' + l['href']})"
+                f"[{l['label']}]({l['href'].replace(BLOB, '') if l['href'].startswith(BLOB) else 'https://prespatial.org' + l['href']})"
                 for l in links))
         md.append("")
         site_tiers.append({"number": number, "name": name, "description": desc, "items": site_items})

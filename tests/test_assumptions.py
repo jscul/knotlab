@@ -1,7 +1,7 @@
 """Checks that docs/ASSUMPTIONS.md keeps its form: every entry has a status, a kind, its five fields and a dated history, the
 summary matches the entries, and every link points at a public file that exists.
 
-jscul.dev renders the register from this form, so a malformed register is stopped here, before it is published.
+prespatial.org renders the register from this form, so a malformed register is stopped here, before it is published.
 
 Run from the repository root: python3 -m unittest tests.test_assumptions
 In the research workspace: python3 -B publication/knotlab/tests/test_assumptions.py docs/ASSUMPTIONS.md

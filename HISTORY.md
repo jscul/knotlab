@@ -3,6 +3,11 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 15 November 2026: the directed two-route baseline is prior art
+
+- Novelty qualification for `SIGNED-KNOT-OVERLAP-20261114-001-D002`: Kleine Büning’s 2024 §5, Fig. 2 already prints the directed Boolean implication two-route construction and its exponential minimal-unsatisfiable-subset count. The earlier comparison named the 2003 equality analogue without this nearer Boolean source. [Kleine Büning, 2024, §5, Fig. 2](https://doi.org/10.1016/j.tcs.2024.114538)
+- The strict ternary-switch transfer, exact switch-only CNF size, linear worst-case decision probes and logarithmic bounded-fan-in depth remain proved in their declared model. This changes attribution, not a theorem or the general SAT-time question. [Retained proof](proofs/SIGNED-KNOT-OVERLAP-20261114-001C/SIGNED-KNOT-OVERLAP-20261114-001C-P001_many_easy_obstructions/proof.md)
+
 ## 15 November 2026: why the reach is a ruler, confirmed by its referee, its statement completed
 
 - The theorem behind the ruler across levels (`RULER-LEVEL-20261114-001`) was confirmed by its referee. Its statement is completed:

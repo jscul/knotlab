@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**348 current results** and 5 superseded ones, from 388 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**350 current results** and 5 superseded ones, from 389 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 37 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 39 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 388 epics with their closures
+- [Epics](#epics): all 389 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -384,6 +384,12 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-14 · An adjacent variable identification preserves the obstruction count and changes the SAT answers** (`UNSIGNED-ROUTE-JOINS-20261115-001-D001`).
   Joining middle variables in adjacent stages preserves the original number of minimal obstructions but changes the decision on some activations. Occurrence-labelled reachability regroups the same strict formula and decides every unsigned middle identification in linear indexed time.
   [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001A/UNSIGNED-ROUTE-JOINS-20261115-001A-P001_single_join_census/proof.md), [proof P001](proofs/UNSIGNED-ROUTE-JOINS-20261115-001B/UNSIGNED-ROUTE-JOINS-20261115-001B-P001_joined_reachability/proof.md), [epic closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Four cases at rank two, at arbitrary product depth** (`AFFINE-FACTOR-RANK-20261115-001-D001`).
+  Two independent affine observations give four cases whenever, in every case, each successive product has a fixed factor or fixed sum of its two factors. At rank r the verified unnamed refutation uses 2^r cases, and r disjoint products can require all 2^r affine parts.
+  [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001A/AFFINE-FACTOR-RANK-20261115-001A-P001_ranked_elimination/proof.md), [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/proof.md), [epic closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Finding the independent choices that remove every product name** (`AFFINE-FACTOR-RANK-20261115-001-D002`).
+  Selecting one original factor per declaration specializes Rank Vertex Cover. Allowing affine factors with a fixed sum gives a broader exact search in O(6^r poly(N)) and can reduce an arbitrarily large static factor rank to one.
+  [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/proof.md), [proof P001](proofs/AFFINE-FACTOR-RANK-20261115-001C/AFFINE-FACTOR-RANK-20261115-001C-P001_affine_restrictions/proof.md), [epic closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · One shared choice can be forgotten exactly when local values are compatible** (`GUARD-CHOICE-SEPARATION-20261115-001-D001`).
   An intersection test detects each disagreement on a shared bit, and one raw guard on unchanged wiring can cause a disagreement that changes SAT. Sharing padding names alone preserves every boundary assignment.
   [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001A/GUARD-CHOICE-SEPARATION-20261115-001A-P001_boundary_supports/proof.md), [proof P001](proofs/GUARD-CHOICE-SEPARATION-20261115-001B/GUARD-CHOICE-SEPARATION-20261115-001B-P001_live_switches/proof.md), [epic closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md)
@@ -1561,6 +1567,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-14 | The same overlapping ternary knots with different SAT decisions (`SIGNED-KNOT-OVERLAP-20261114-001`) | [closure](proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/proof.md) | [folder](research/SIGNED-KNOT-OVERLAP-20261114-001/) |
 | 2026-11-14 | Is identity the whole story of forgetting (`TIE-CYCLE-20261114-001`) | [closure](proofs/TIE-CYCLE-20261114-001Z/TIE-CYCLE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-CYCLE-20261114-001/) |
 | 2026-11-14 | Is reading the whole rule for the bond (`TOP-INFO-20261114-001`) | [closure](proofs/TOP-INFO-20261114-001Z/TOP-INFO-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TOP-INFO-20261114-001/) |
+| 2026-11-15 | How many independent affine factors a named proof must fix (`AFFINE-FACTOR-RANK-20261115-001`) | [closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md) | [folder](research/AFFINE-FACTOR-RANK-20261115-001/) |
 | 2026-11-15 | Rulers with cycles: when cycles of knots keep or break the reach across levels (`CYCLE-RULER-20261115-001`) | — | [folder](research/CYCLE-RULER-20261115-001/) |
 | 2026-11-15 | Where the top binds every depth directly, and whether it is truly bounded (`DIRECT-REACH-20261115-001`) | — | [folder](research/DIRECT-REACH-20261115-001/) |
 | 2026-11-15 | When switch settings let two blocks forget a shared choice (`GUARD-CHOICE-SEPARATION-20261115-001`) | [closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GUARD-CHOICE-SEPARATION-20261115-001/) |

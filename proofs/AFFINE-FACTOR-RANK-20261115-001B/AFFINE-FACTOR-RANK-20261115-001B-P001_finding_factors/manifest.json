@@ -1,0 +1,116 @@
+{
+  "artifact_id": "AFFINE-FACTOR-RANK-20261115-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "AFFINE-FACTOR-RANK-20261115-001B-P001",
+  "claim": "The minimum static original factor rank of a supplied refutation is a represented Rank Vertex Cover optimum, computable up to rank r in O(2^r poly(N)) time. The unbounded-budget decision is NP-complete even for verified refutations of minimally unsatisfiable strict ternary formulas with all named products used as pivots.",
+  "dependencies": [
+    "PRODUCT-NAME-TRANSFER-20261115-001Z",
+    "PRODUCT-NAME-TRANSFER-20261115-001A",
+    "PRODUCT-NAME-TRANSFER-20261115-001B",
+    "PRODUCT-NAME-TRANSFER-20261115-001C",
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001A",
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001B",
+    "QUADRATIC-ROUTE-TRANSFER-20261115-001C"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/check.py": "83988d019ff30efbc491c83de44ea8fc6c7f1c02f82b7fa57df6a996125b5671",
+    "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/check_execution-001.json": "574f1ce05035cda63136d6b4d44ed151563ef72e17749c4fbb01966668ec8da5",
+    "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/checker_output-001.json": "763beeacb24a99a7acce3b6a596d7391e83a94864aad936096e0398bc8ff1e94",
+    "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/proof.md": "acace7f787ea963142adefc9845f217eb717e151b36894fa0a93e8f89198f83f",
+    "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/result.json": "353d6cb32f048159601d23967836c37e80275d3c1a7ee164f85f68037de81e3d"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Naive selection by factor count or fixed left/right orientation may disagree with minimum rank, and dummy or unused declarations could inflate an artificial hard optimization problem."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "AFFINE-FACTOR-RANK-20261115-001"
+    ],
+    "home_scope": "AFFINE-FACTOR-RANK-20261115-001",
+    "parents": [
+      "proofs/PRODUCT-NAME-TRANSFER-20261115-001A/PRODUCT-NAME-TRANSFER-20261115-001A-P001_named_substitution/manifest.json",
+      "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json",
+      "proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/manifest.json",
+      "proofs/PRODUCT-NAME-TRANSFER-20261115-001Z/PRODUCT-NAME-TRANSFER-20261115-001Z-P001_synthesis/manifest.json",
+      "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json",
+      "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001B/QUADRATIC-ROUTE-TRANSFER-20261115-001B-P001_degree_two_source/manifest.json",
+      "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001C/QUADRATIC-ROUTE-TRANSFER-20261115-001C-P001_encoded_products/manifest.json"
+    ]
+  },
+  "novelty_status": "known-overlap-found",
+  "parent_bindings": {
+    "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/checks.json": "763beeacb24a99a7acce3b6a596d7391e83a94864aad936096e0398bc8ff1e94",
+    "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/solver.py": "592fd90313aa6fdca415097e381e1234d6a74458a1427c353bb32f728f21b9fc",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001A/PRODUCT-NAME-TRANSFER-20261115-001A-P001_named_substitution/manifest.json": "ad35c9bd29aaa701a3d85cd941646968b4527523eef8b479412c6b57b00a9eaa",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json": "98ff55b65326f881ae7981590c24144610969146b612a4e2aaae36f4ae1975f1",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/manifest.json": "d10d53858d4e17b5a184aa394b25bfe24856f3a312da3361e1dce7e2f0a8a17a",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001Z/PRODUCT-NAME-TRANSFER-20261115-001Z-P001_synthesis/manifest.json": "36940a464ccd251dcb42384f82dfb3bbff9d15df9a8011e73fbd4d1389f3b7c1",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001B/QUADRATIC-ROUTE-TRANSFER-20261115-001B-P001_degree_two_source/manifest.json": "3d625b097166ed9c8400756b4bcdb217ad337484006c52d1bcd0a41a85db7c9a",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001C/QUADRATIC-ROUTE-TRANSFER-20261115-001C-P001_encoded_products/manifest.json": "42d975aa86add983e2d794c234b8ac3cf4e1e86dc67684801296ce8abfee01ae"
+  },
+  "paths": {
+    "check": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/check.py",
+    "check_execution": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/check_execution-001.json",
+    "directory": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors",
+    "identity": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/identity.json",
+    "manifest": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/manifest.json",
+    "proof": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/proof.md",
+    "raw_result": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/checker_output-001.json",
+    "result": "proofs/AFFINE-FACTOR-RANK-20261115-001B/AFFINE-FACTOR-RANK-20261115-001B-P001_finding_factors/result.json"
+  },
+  "proof": "AFFINE-FACTOR-RANK-20261115-001B-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "AFFINE-FACTOR-RANK-20261115-001B",
+  "title": "Find a smallest original factor span",
+  "validation": {
+    "independence": "V1. A same-task referee checked the live reduction. Independent exhaustive orientation and subspace oracles check the implementation; the independent external advisor quota was exhausted.",
+    "level": "V1",
+    "novelty": "Rank Vertex Cover and its fixed-parameter tractability are known. The local contribution is the exact representation, certificate and realization in live named refutations."
+  }
+}

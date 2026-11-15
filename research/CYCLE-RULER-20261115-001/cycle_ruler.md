@@ -17,6 +17,14 @@ Why do the other 158, which have cycles, stay rulers, while cycles shorten or ha
 | 3 | **The smallest shortening is a closed fork.** In the smallest of six small breaking cases (one tree placement plus within-level knots; levels 0 to 6, top level 1), the bond {0, 001, 011} of size 3 at s = 2 (the ruler would need 4) has a core of 7 knots: the top's knot to its two children, one knot down from each child, and four within-level knots at the target level, two of them sharing two distinctions, that join the two branches. The top reaches the target level along both branches at once, and the within-level knots close them. | computed (`exploratory/cores.py`) |
 | 4 | **Other shortenings are global.** The other breaking cases' cores hold 16, 18, 153 and 162 knots, mostly within-level: the shortening there comes from a level's whole within-level pattern, not a local motif. | computed |
 
+## Closed forks counted (2026-11-15, the coordinator's one further step)
+
+A cross-level knot whose upper member lies at a level 3 to 6 is a **closed fork** when its two lower members are joined by other knots
+lying wholly in the levels below it, up to level 7 (`exploratory/forks.py`, computed on the committed records, minutes). Among cyclic
+census descriptions: rulers 97 without a closed fork and 61 with; direct 18 without, 82 with; other 10 without, 63 with. Closed forks
+go with shortened or broken reach (84% of the cyclic non-rulers against 39% of the cyclic rulers), but they do not separate: 61 rulers
+have them and 28 non-rulers do not. As agreed, the cyclic line stops here; the open question is backlog B180.
+
 ## Reading
 
 A cycle of knots is not by itself what breaks the ruler, and short cycles are everywhere in this census. What the smallest case shows is
@@ -39,13 +47,13 @@ alone cannot see.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Closed forks | 2/3 — Substantial | 2/3 — Testable | Count, in each cyclic census description, closed forks within s levels (both children of a cross-level knot rejoined by knots no deeper than the target) → absent in the cyclic rulers and present in the shortened ones, or not | Selected · awaiting go-ahead |
+| 1 | Closed forks | 2/3 — Substantial | 2/3 — Testable | Count closed forks within the levels read on the cyclic census descriptions → done: associated, not separating (above) | Selected · started (done) |
 | 2 | Levels' own state sets | 2/3 — Substantial | 1/3 — Speculative | For a tree plus within-level knots, read each level's within-level states on sibling pairs and test whether "every sibling pattern extends" predicts the ruler → a condition, or none | Alternative · deferred |
 
 1. Payoff 2: a local condition for the ruler with cycles. Concreteness 2: computable on committed records in minutes.
 2. Payoff 2; Concreteness 1: the larger cores suggest it, but no statement is in hand.
 
-**Recommendation.** Research directions, #1, awaiting the go-ahead.
+**Recommendation.** Research directions; #1 done without separating; the cyclic line stops and the question is backlog B180; take stock.
 
 ## Review
 

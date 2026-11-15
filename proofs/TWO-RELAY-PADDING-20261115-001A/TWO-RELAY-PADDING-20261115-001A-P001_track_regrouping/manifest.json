@@ -1,0 +1,100 @@
+{
+  "artifact_id": "TWO-RELAY-PADDING-20261115-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "TWO-RELAY-PADDING-20261115-001A-P001",
+  "claim": "On disjoint paths between opposite pinned repeated middles, ordinary satisfiability reduces exactly to the CNF of ways to break each path. With at most two normalized clause occurrences per pad, a linear orientation algorithm returns a witness; the minimal contradictory clause families are the unmarked tree components.",
+  "dependencies": [
+    "ONE-RELAY-PADDING-20261115-001Z",
+    "EVIDENCE-001D"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/check.py": "4cc2efefd50d5dc750f9cff85abda70559a420c2186ee93c8c8b51951b99479c",
+    "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/check_execution-001.json": "a31f781e8a736e8290324f450f65d6bc5e367eb3a073bdda8ef74ce5ce2d199b",
+    "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/checker_output-001.json": "064edcdfad25d7522fb30d7476315290326b8577be3fbb1c598a9a2d0abf99ec",
+    "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/proof.md": "1c75f7c36f3665f57218aaaa650001322f97af014123e8b2dbb67c6b9dfaa9d3",
+    "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/result.json": "04f1ae9d57accd9e5e0495e1f6d21491c895d107498c9797a565c1f237390efb"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Pure/tautological clauses, empty live corridors, duplicated literals or shared signs give a wrong answer under the proposed grouping; sparse assumptions may only hold after hidden processing."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "TWO-RELAY-PADDING-20261115-001"
+    ],
+    "home_scope": "TWO-RELAY-PADDING-20261115-001",
+    "parents": [
+      "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json",
+      "proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "known-overlap-found",
+  "parent_bindings": {
+    "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json": "767753e5ff4857bd0b31e17abf83c4b4bc5d2f169e1c98feffb5ff5cc14a0b42",
+    "proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "6dc111f068e55909817e4681792e914433cdb2f900665ff0930f61ac948bec7b",
+    "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/checks.json": "c77cfc996bd7c54717aa42303234105d9a250a9d57383a4abff10ab5ec42820c"
+  },
+  "paths": {
+    "check": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/check.py",
+    "check_execution": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/check_execution-001.json",
+    "directory": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping",
+    "identity": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/identity.json",
+    "manifest": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/manifest.json",
+    "proof": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/proof.md",
+    "raw_result": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/checker_output-001.json",
+    "result": "proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/result.json"
+  },
+  "proof": "TWO-RELAY-PADDING-20261115-001A-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "TWO-RELAY-PADDING-20261115-001A",
+  "title": "Grouping short routes by the padding variables they share",
+  "validation": {
+    "independence": "Compared actual guarded formulas, all signed pad values and an independent truth-assignment census of degree-two clause families, with duplicate, tautological, empty and parallel-edge controls.",
+    "level": "V1",
+    "novelty": "The polynomial two-occurrence SAT boundary is classical in Tovey. The exact component obstruction, raw-guard transfer and constructive regrouping are recorded for this layout."
+  }
+}

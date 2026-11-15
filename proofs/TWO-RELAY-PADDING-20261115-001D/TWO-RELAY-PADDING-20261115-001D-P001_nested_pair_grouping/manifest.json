@@ -1,0 +1,100 @@
+{
+  "artifact_id": "TWO-RELAY-PADDING-20261115-001D-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "TWO-RELAY-PADDING-20261115-001D-P001",
+  "claim": "For a fixed order of middle and pad occurrences in each stage, arbitrary nesting of repeated pairs permits linear indexed decision. If deleting k repeated names restores nesting, both finding the deletion set and conditioning it cost O(2^k r) in total, irrespective of nesting depth or the raw number of crossings.",
+  "dependencies": [
+    "ONE-RELAY-PADDING-20261115-001Z",
+    "EVIDENCE-001D"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/check.py": "1aee23c9aa74c04ede148bf94dd5134b68b3f62f5bc29b1361b4e83f4ed3ffc7",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/check_execution-002.json": "9ac25f52b533249e5968254ace791ff089479e89b1128f0d8061529853b1c236",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/checker_output-002.json": "544d81540528830a4c25136109bbd721a07699690f0d258e1a66fb4dd4cbaef1",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/proof.md": "7f449674dce57ff93e10b38721c386507b7bb5aaefc4d68a0b7c7b26be10e0e9",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/result.json": "54414e8f167e1211a2155275a095109cb0f1557ae73d4a8ba669e7046e88db96"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Pairs from different roles interleave, private padding is treated as observed, or a stage is split at an interval endpoint and the summary forgets necessary constraint information."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "TWO-RELAY-PADDING-20261115-001"
+    ],
+    "home_scope": "TWO-RELAY-PADDING-20261115-001",
+    "parents": [
+      "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json",
+      "proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "known-overlap-found",
+  "parent_bindings": {
+    "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json": "767753e5ff4857bd0b31e17abf83c4b4bc5d2f169e1c98feffb5ff5cc14a0b42",
+    "proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "6dc111f068e55909817e4681792e914433cdb2f900665ff0930f61ac948bec7b",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/checks.json": "544d81540528830a4c25136109bbd721a07699690f0d258e1a66fb4dd4cbaef1"
+  },
+  "paths": {
+    "check": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/check.py",
+    "check_execution": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/check_execution-002.json",
+    "directory": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping",
+    "identity": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/identity.json",
+    "manifest": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json",
+    "proof": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/proof.md",
+    "raw_result": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/checker_output-002.json",
+    "result": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/result.json"
+  },
+  "proof": "TWO-RELAY-PADDING-20261115-001D-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "TWO-RELAY-PADDING-20261115-001D",
+  "title": "Reading paired choices from the innermost pair outward",
+  "validation": {
+    "independence": "A closed-form eight-state reader and raw guarded SAT oracle agreed on every one- and all 65,536 tested two-stage half-masks of the designated nested schedule; witness reconstruction, a 1,200-deep family, a star requiring one removed name and three alternately paired names requiring two were checked.",
+    "level": "V1",
+    "novelty": "Nested-word evaluation and bounded vertex-cover branching are classical. The contribution specifies their exact application to simultaneous middle and hidden-pad pairs in these guarded stages."
+  }
+}

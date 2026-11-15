@@ -1,0 +1,43 @@
+{
+  "authority_class": "proof",
+  "conclusion": "Pairwise-only identifications suffice to encode general 3-SAT on a fixed schedule per source width. If removing k names leaves all remaining occurrence pairs disjoint or nested, finding and conditioning those names gives O(2^k r) work for r stages.",
+  "curated_at": "2026-11-15",
+  "epic_closure": {
+    "artifact_id": "TWO-RELAY-PADDING-20261115-001Z-P001",
+    "dependency_graph_sha256": "fe0e4f9737a0562d5a91663bdcdf2fe79cb28893204e4691d77a37c1f6cd0f81",
+    "manifest_path": "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json",
+    "manifest_sha256": "0daab833ea1a6a2f3ed5f8bac5a56d8171a46a341c3d4f94500e73fe7aab26c3",
+    "report_path": "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md",
+    "ticket_id": "TWO-RELAY-PADDING-20261115-001Z"
+  },
+  "evidence": [
+    {
+      "artifact_id": "TWO-RELAY-PADDING-20261115-001C-P001",
+      "authority_path": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json",
+      "authority_sha256": "03813748a8c4c4da52cb5286f924b0afa3f99e80e2f15f5a2d862f30141e7d7a",
+      "explanation_path": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/proof.md",
+      "explanation_sha256": "38c3da7fc2879a4ed99b80b2cd93392fb60ec1d947a4b6f5e40ccb254bab8183",
+      "kind": "proof",
+      "ticket_id": "TWO-RELAY-PADDING-20261115-001C"
+    },
+    {
+      "artifact_id": "TWO-RELAY-PADDING-20261115-001D-P001",
+      "authority_path": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json",
+      "authority_sha256": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8",
+      "explanation_path": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/proof.md",
+      "explanation_sha256": "7f449674dce57ff93e10b38721c386507b7bb5aaefc4d68a0b7c7b26be10e0e9",
+      "kind": "proof",
+      "ticket_id": "TWO-RELAY-PADDING-20261115-001D"
+    }
+  ],
+  "id": "TWO-RELAY-PADDING-20261115-001-D002",
+  "schema_version": 3,
+  "scope_id": "TWO-RELAY-PADDING-20261115-001",
+  "significance": [
+    "exact_obstruction"
+  ],
+  "status": "active",
+  "subject": "Many repeated middle and padding names in a serial guarded formula, each occurring in at most two positions of its respective kind.",
+  "superseded_by": null,
+  "title": "The arrangement of pairwise identifications controls an explicit upper bound"
+}

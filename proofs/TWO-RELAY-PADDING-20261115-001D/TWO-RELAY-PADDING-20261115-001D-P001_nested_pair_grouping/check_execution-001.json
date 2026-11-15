@@ -1,0 +1,26 @@
+{
+  "artifact_id": "TWO-RELAY-PADDING-20261115-001D-P001",
+  "at": "2026-11-15T08:35:57+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json": "767753e5ff4857bd0b31e17abf83c4b4bc5d2f169e1c98feffb5ff5cc14a0b42",
+    "proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "6dc111f068e55909817e4681792e914433cdb2f900665ff0930f61ac948bec7b",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/check.py": "bdd230aa83c01f775ece733d59aa3924e7d42c63c4c225a117a21b7878e7ebdd",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/checks.json": "4370b1e9fbb4c7a3fa487181bf79aa37e209136b297ec806f60c5f7032270f16",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/proof.md": "7f449674dce57ff93e10b38721c386507b7bb5aaefc4d68a0b7c7b26be10e0e9"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"all_one_stage_layouts_and_effective_guards\": {\n    \"interleaving_layouts\": 7,\n    \"nested_layouts\": 13,\n    \"sat_witnesses\": 12825,\n    \"unsat\": 487\n  },\n  \"conditioning_on_cover_of_alternations\": {\n    \"single_joint_crossing_all_half_masks\": {\n      \"raw_clauses\": 64,\n      \"sat_witnesses\": 193,\n      \"unsat\": 63\n    },\n    \"star_crossings\": 17,\n    \"star_minimum_removed\": 1,\n    \"star_raw\": {\n      \"raw_clauses\": 1184,\n      \"sat_witnesses\": 1,\n      \"unsat\": 1\n    },\n    \"three_pair_clique_minimum_removed\": 2,\n    \"three_pair_clique_raw\": {\n      \"raw_clauses\": 224,\n      \"sat_witnesses\": 129,\n      \"unsat\": 1\n    }\n  },\n  \"empty_schedule_endpoint_combinations\": {\n    \"raw_clauses\": 32,\n    \"sat_witnesses\": 3,\n    \"unsat\": 1\n  },\n  \"mixed_raw_vectors_by_stages\": {\n    \"4\": {\n      \"raw_clauses\": 160,\n      \"sat_witnesses\": 365,\n      \"unsat\": 19\n    },\n    \"6\": {\n      \"raw_clauses\": 224,\n      \"sat_witnesses\": 364,\n      \"unsat\": 20\n    },\n    \"8\": {\n      \"raw_clauses\": 288,\n      \"sat_witnesses\": 363,\n      \"unsat\": 21\n    },\n    \"9\": {\n      \"raw_clauses\": 320,\n      \"sat_witnesses\": 380,\n      \"unsat\": 4\n    }\n  },\n  \"next_size_all_65536_half_masks\": {\n    \"raw_clauses\": 96,\n    \"sat_witnesses\": 60816,\n    \"unsat\": 4720\n  },\n  \"promise_controls\": {\n    \"crossed_unsat\": true,\n    \"each_role_split_restores_sat\": true,\n    \"same_crossed_layout_sat\": true,\n    \"third_occurrence_rejections\": 2\n  },\n  \"unbounded_depth_family_replay\": {\n    \"open_pairs_at_midpoint\": 1200,\n    \"raw_clauses\": 38432,\n    \"sat_witnesses\": 1,\n    \"stages\": 1200,\n    \"unsat\": 1\n  }\n}\n",
+  "ticket": "TWO-RELAY-PADDING-20261115-001D",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

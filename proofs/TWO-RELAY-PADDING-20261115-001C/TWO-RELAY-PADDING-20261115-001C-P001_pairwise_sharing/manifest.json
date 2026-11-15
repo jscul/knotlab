@@ -1,0 +1,100 @@
+{
+  "artifact_id": "TWO-RELAY-PADDING-20261115-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "TWO-RELAY-PADDING-20261115-001C-P001",
+  "claim": "NP-completeness survives simultaneous bounds of two middle occurrences and two edge-pad placements per name, including in a uniform fixed-wiring family. Conditioning the q pads required in both polarities gives an O(2^q r) solver on arbitrary middle wiring.",
+  "dependencies": [
+    "ONE-RELAY-PADDING-20261115-001Z",
+    "EVIDENCE-001D"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/check.py": "28ec77fd9e0154378c7a1aefbe6d66f56df8b72e052b22961c6c29d9b743b6e4",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/check_execution-001.json": "f71ea4d8d476dd6f3c05af27b046642f98c5d9c424ad943770152fafdec08eb3",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/checker_output-001.json": "5e78809774811f4cc272103a80576af6804ad3be8736a818585c9281f05fcbc5",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/proof.md": "38c3da7fc2879a4ed99b80b2cd93392fb60ec1d947a4b6f5e40ccb254bab8183",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/result.json": "108322fbe4b193ef17c4fa42b48838e42360492e72381a113de5898e4e5822dc"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Missing wraparound constraints, a third occurrence in either role, loss of existential meaning, or SAT disagreement on a compiled signed clause refutes the construction."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "TWO-RELAY-PADDING-20261115-001"
+    ],
+    "home_scope": "TWO-RELAY-PADDING-20261115-001",
+    "parents": [
+      "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json",
+      "proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "known-overlap-found",
+  "parent_bindings": {
+    "proofs/EVIDENCE-001D/EVIDENCE-001D-P001_uniform_strict_3_cnf_sat_completeness_admission/manifest.json": "767753e5ff4857bd0b31e17abf83c4b4bc5d2f169e1c98feffb5ff5cc14a0b42",
+    "proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "6dc111f068e55909817e4681792e914433cdb2f900665ff0930f61ac948bec7b",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/checks.json": "5e78809774811f4cc272103a80576af6804ad3be8736a818585c9281f05fcbc5"
+  },
+  "paths": {
+    "check": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/check.py",
+    "check_execution": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/check_execution-001.json",
+    "directory": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing",
+    "identity": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/identity.json",
+    "manifest": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json",
+    "proof": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/proof.md",
+    "raw_result": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/checker_output-001.json",
+    "result": "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/result.json"
+  },
+  "proof": "TWO-RELAY-PADDING-20261115-001C-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "TWO-RELAY-PADDING-20261115-001C",
+  "title": "Does using every middle name and every padding name at most twice suffice for an efficient regrouping?",
+  "validation": {
+    "independence": "Independent audit of wire-variable elimination, complement conditions, both occurrence counts, and pure signs on disabled or double-active edges. Raw SAT compared all 256 selections at width three with source pins, 141 selections at widths four/five, 600 arbitrary activations and both failing mutations.",
+    "level": "V1",
+    "novelty": "Boros et al. already imply two-use control hardness in abstract switching networks. The transfer provides the exact serial layout, simultaneous role budgets and uniformly fixed wiring."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "EVIDENCE-001D",
+    "ONE-RELAY-PADDING-20261115-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "TWO-RELAY-PADDING-20261115-001D-P001",
+    "artifact_path": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping",
+    "manifest_path": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json",
+    "terminal_artifact": "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json"
+  },
+  "id": "TWO-RELAY-PADDING-20261115-001D",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "When each actual middle or padding name occurs at most twice and the repeated pairs across both roles are nested or disjoint in the supplied six-position order per stage, derive an indexed linear-time ordinary SAT algorithm even at unbounded nesting depth.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TWO-RELAY-PADDING-20261115-001"
+  },
+  "parent": "TWO-RELAY-PADDING-20261115-001",
+  "schema_version": 1,
+  "status": "Proved: For a fixed order of middle and pad occurrences in each stage, arbitrary nesting of repeated pairs permits linear indexed decision. If deleting k repeated names restores nesting, both finding the deletion set and conditioning it cost O(2^k r) in total, irrespective of nesting depth or the raw number of crossings.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "Reading paired choices from the innermost pair outward"
+}

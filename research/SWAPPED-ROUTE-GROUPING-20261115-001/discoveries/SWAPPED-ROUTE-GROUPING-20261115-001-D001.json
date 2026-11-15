@@ -1,0 +1,43 @@
+{
+  "authority_class": "proof",
+  "conclusion": "A linear parity test detects zero exceptions, and a quadratic word-operation algorithm finds an optimal branch order and the names to condition for all other layouts. Swapping improves the original order in 3,174 of 7,640 typed two-stage layouts.",
+  "curated_at": "2026-11-15",
+  "epic_closure": {
+    "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001Z-P001",
+    "dependency_graph_sha256": "18e5a5978f3476907c86765bb67b33b3f41deb48827ea5787a1d4bfedf1aba69",
+    "manifest_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/manifest.json",
+    "manifest_sha256": "b9b5f2bf862d98ed380bf2b3d71c521c24760c4469a3147781645145793fd7f2",
+    "report_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md",
+    "ticket_id": "SWAPPED-ROUTE-GROUPING-20261115-001Z"
+  },
+  "evidence": [
+    {
+      "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001A-P001",
+      "authority_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/manifest.json",
+      "authority_sha256": "e3a3f906bccf085394c8b185378f3d8dd6f814465ea36a9205a58d6cb7e80d6c",
+      "explanation_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/proof.md",
+      "explanation_sha256": "066034fcccbdb20c3ce3acf26b3cca804bdadaf384bf2b6a353f9413d57ad800",
+      "kind": "proof",
+      "ticket_id": "SWAPPED-ROUTE-GROUPING-20261115-001A"
+    },
+    {
+      "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001B-P001",
+      "authority_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/manifest.json",
+      "authority_sha256": "37d79de696ad94a59d75f311c841bc6985aba02e77dab3ab86ebeef87e45180d",
+      "explanation_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/proof.md",
+      "explanation_sha256": "0b1e146bc430fa7d5cc23d80f38ec0fe86997584c2b731f7b4aa4c40f70bfa2c",
+      "kind": "proof",
+      "ticket_id": "SWAPPED-ROUTE-GROUPING-20261115-001B"
+    }
+  ],
+  "id": "SWAPPED-ROUTE-GROUPING-20261115-001-D001",
+  "schema_version": 3,
+  "scope_id": "SWAPPED-ROUTE-GROUPING-20261115-001",
+  "significance": [
+    "reusable_interface"
+  ],
+  "status": "active",
+  "subject": "Strict two-route stages with at most two positions per typed middle or pad name.",
+  "superseded_by": null,
+  "title": "Find the fewest names that prevent nesting over all branch orders"
+}

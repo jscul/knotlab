@@ -1,0 +1,156 @@
+{
+  "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001A-P001",
+  "claim": "A linear indexed parity test finds a nested order of the two branches in each stage whenever one exists. Such orders cover 2,071 of the 7,640 two-stage layouts up to typed renaming.",
+  "controls": {
+    "binary_equation_orders": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "inconsistent_pins_and_xor_crossing_counts": [
+      3,
+      1,
+      1,
+      1
+    ],
+    "invariant_plus_two_pins_crossing_counts": [
+      1,
+      1,
+      3,
+      3
+    ],
+    "malformed_inputs_rejected": 6,
+    "three_endpoints_even_multiplicity": 4,
+    "three_endpoints_pin_first_swap": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check_execution-001.json",
+    "sha256": "c1ae1fe2f0ae86462175852e46f24c197bcf0cdc67ec9def0d68cc9893c8f0ca"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check.py": "e8b8d9f5c26a4487a9d332c9f6239d23a60ba98cd909ec5a72af443e1cf82b2b",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/checks.json": "b83c14ff036dc6bf1a353a9b12f0d9c8fd26c97dc4fa42b5c064ae86753cb5bb",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/proof.md": "066034fcccbdb20c3ce3acf26b3cca804bdadaf384bf2b6a353f9413d57ad800",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/solver.py": "46adf74671362e1f02b8931d550e377e76c0bdb99635b42e6d62141716bd745e",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8",
+    "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "0daab833ea1a6a2f3ed5f8bac5a56d8171a46a341c3d4f94500e73fe7aab26c3"
+  },
+  "kind": "proof",
+  "larger_reference": {
+    "accepted": 109,
+    "largest_exhaustive_stages": 8,
+    "layouts": 216,
+    "literal_orders": 18144,
+    "rescued_by_swaps": 66,
+    "seed": 15926535
+  },
+  "raw_result": {
+    "path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/checker_output-001.json",
+    "sha256": "b83c14ff036dc6bf1a353a9b12f0d9c8fd26c97dc4fa42b5c064ae86753cb5bb"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "scale": {
+    "fixed_minimum_exceptions": 4096,
+    "gap_stages": 8192,
+    "impossible_example_stages": 4800,
+    "independent_pair_gadgets": 4096,
+    "invariant_crossings_in_impossible_example": 2878800,
+    "minimum_after_swaps": 0,
+    "nested_depth_control": 2400
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "SWAPPED-ROUTE-GROUPING-20261115-001A",
+  "two_stage_census": {
+    "counts": {
+      "fixed_order_nested": 965,
+      "impossible": 5569,
+      "individual_orders": 30560,
+      "nested_individual_orders": 3860,
+      "rescued_by_swaps": 1106,
+      "unsatisfiable_variable_equations_no_invariant_crossing": 2134
+    },
+    "example_with_inconsistent_variable_equations": {
+      "middles": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pads": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1,
+        2
+      ]
+    },
+    "layouts": 7640,
+    "middle_partitions": 10,
+    "nested_orders_per_layout": {
+      "0": 5569,
+      "1": 908,
+      "2": 850,
+      "4": 313
+    },
+    "pad_partitions": 764
+  },
+  "validation": {
+    "independence": "Compared the local equations and witness order to literal enumeration, including constant crossings and multiple endpoints per stage.",
+    "level": "V1",
+    "novelty": "An embedding extension gives an established route to recognition. The explicit parity equations, witnessed gain and dense-index implementation are local."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "SWAPPED-ROUTE-GROUPING-20261115-001A-P001",
+  "claim": "A linear indexed parity test finds a nested order of the two branches in each stage whenever one exists. Such orders cover 2,071 of the 7,640 two-stage layouts up to typed renaming.",
+  "dependencies": [
+    "TWO-RELAY-PADDING-20261115-001Z",
+    "TWO-RELAY-PADDING-20261115-001D"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check.py": "e8b8d9f5c26a4487a9d332c9f6239d23a60ba98cd909ec5a72af443e1cf82b2b",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check_execution-001.json": "c1ae1fe2f0ae86462175852e46f24c197bcf0cdc67ec9def0d68cc9893c8f0ca",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/checker_output-001.json": "b83c14ff036dc6bf1a353a9b12f0d9c8fd26c97dc4fa42b5c064ae86753cb5bb",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/proof.md": "066034fcccbdb20c3ce3acf26b3cca804bdadaf384bf2b6a353f9413d57ad800",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/result.json": "c07ad3f15bef0e4f484bdd0cafc1f123db581c2ed33737dae841422d86f72143"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Same-stage pairs and invariant crossings may invalidate the parity test or force quadratic preprocessing."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "SWAPPED-ROUTE-GROUPING-20261115-001"
+    ],
+    "home_scope": "SWAPPED-ROUTE-GROUPING-20261115-001",
+    "parents": [
+      "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json",
+      "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "known-overlap-found",
+  "parent_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/checks.json": "b83c14ff036dc6bf1a353a9b12f0d9c8fd26c97dc4fa42b5c064ae86753cb5bb",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/solver.py": "46adf74671362e1f02b8931d550e377e76c0bdb99635b42e6d62141716bd745e",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8",
+    "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "0daab833ea1a6a2f3ed5f8bac5a56d8171a46a341c3d4f94500e73fe7aab26c3"
+  },
+  "paths": {
+    "check": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check.py",
+    "check_execution": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check_execution-001.json",
+    "directory": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations",
+    "identity": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/identity.json",
+    "manifest": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/manifest.json",
+    "proof": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/proof.md",
+    "raw_result": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/checker_output-001.json",
+    "result": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/result.json"
+  },
+  "proof": "SWAPPED-ROUTE-GROUPING-20261115-001A-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "SWAPPED-ROUTE-GROUPING-20261115-001A",
+  "title": "Recognizing a nested ordering by parity of whole-branch swaps",
+  "validation": {
+    "independence": "Compared the local equations and witness order to literal enumeration, including constant crossings and multiple endpoints per stage.",
+    "level": "V1",
+    "novelty": "An embedding extension gives an established route to recognition. The explicit parity equations, witnessed gain and dense-index implementation are local."
+  }
+}

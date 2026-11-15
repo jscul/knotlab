@@ -1,0 +1,27 @@
+{
+  "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001B-P001",
+  "at": "2026-11-15T09:33:48+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/check.py": "b76d74dddeec98bb9318fb9720408678f70817f1bbde1554ed8d9dc0581032a7",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/checks.json": "8ae669ae8bfb1456cf0053aab11a93fa52b65e1e8497c59d560f609d76fd0094",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/proof.md": "0b1e146bc430fa7d5cc23d80f38ec0fe86997584c2b731f7b4aa4c40f70bfa2c",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/solver.py": "becb0a42fec122785c7efbc079192a56ae93900b3c5f022e748432c12ace992d",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8",
+    "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "0daab833ea1a6a2f3ed5f8bac5a56d8171a46a341c3d4f94500e73fe7aab26c3"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"impossible_split_actual_retained\": 1,\n  \"impossible_split_fake_retained\": 2,\n  \"incompatible_copies_of_physical_positions\": 12,\n  \"independent_swaps_in_witness\": 18,\n  \"invariant_complete_conflict_optimum\": 14,\n  \"larger_exhaustive_layouts\": 41,\n  \"malformed_layouts_rejected\": 6,\n  \"ordered_subintervals_compared\": 529,\n  \"role_erasure_fake_exceptions\": 1,\n  \"role_preservation_actual_exceptions\": 0,\n  \"status\": \"passed\",\n  \"two_stage_explicit_orders\": 30560,\n  \"two_stage_improved_over_supplied_order\": 3174,\n  \"two_stage_minimum_histogram\": {\n    \"0\": 2071,\n    \"1\": 3758,\n    \"2\": 1614,\n    \"3\": 194,\n    \"4\": 3\n  },\n  \"two_stage_typed_layouts\": 7640,\n  \"two_stage_worst_witness\": {\n    \"middles\": [\n      0,\n      0,\n      2,\n      2\n    ],\n    \"minimum_for_each_of_four_orders\": [\n      4,\n      4,\n      4,\n      4\n    ],\n    \"pads\": [\n      0,\n      1,\n      0,\n      1,\n      4,\n      5,\n      4,\n      5\n    ],\n    \"removed\": [\n      0,\n      1,\n      4,\n      9\n    ],\n    \"swaps\": [\n      0,\n      0\n    ]\n  },\n  \"unreachable_subintervals\": 303\n}\n",
+  "ticket": "SWAPPED-ROUTE-GROUPING-20261115-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

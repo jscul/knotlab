@@ -1,0 +1,109 @@
+{
+  "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001C-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "SWAPPED-ROUTE-GROUPING-20261115-001C-P001",
+  "claim": "After optimal swapping, k exceptions give a witness-producing decision bound O((r+1)^2+2^k(r+1)); k=0 takes linear work. Independent blocks can use different linear solvers even when the global k and the number of pads active with both polarities grow linearly.",
+  "dependencies": [
+    "SWAPPED-ROUTE-GROUPING-20261115-001A",
+    "SWAPPED-ROUTE-GROUPING-20261115-001B",
+    "TWO-RELAY-PADDING-20261115-001C",
+    "TWO-RELAY-PADDING-20261115-001D"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/check.py": "796c06d35a0a9ab90f8765faf7c5a595e8979ac62568f2fb9bb41b58e8114250",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/check_execution-001.json": "ea9a0a4a3afee00fe0efc76379c57a2c4085608b6e03f3b88e64c1ed8010c8e8",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/checker_output-001.json": "d2560924a95bca9add3f52ed9f1b4575ebd41a22ffdd83d071cf770023793e3e",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/proof.md": "46fa5acfeb204d6fdbdc88b04834c7205c87876d0b70d63bc504510965950f52",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/result.json": "49b2269a86fe56b0bc3a762ab9c3c006f38bc860d960b1b6223243f2856b153f"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Swapping occurrence labels without their guard blocks, or missing easy cases with many exceptions, could give the wrong answer or interpretation."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "SWAPPED-ROUTE-GROUPING-20261115-001"
+    ],
+    "home_scope": "SWAPPED-ROUTE-GROUPING-20261115-001",
+    "parents": [
+      "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/manifest.json",
+      "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/manifest.json",
+      "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json",
+      "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/manifest.json": "e3a3f906bccf085394c8b185378f3d8dd6f814465ea36a9205a58d6cb7e80d6c",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/solver.py": "46adf74671362e1f02b8931d550e377e76c0bdb99635b42e6d62141716bd745e",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/manifest.json": "37d79de696ad94a59d75f311c841bc6985aba02e77dab3ab86ebeef87e45180d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/solver.py": "becb0a42fec122785c7efbc079192a56ae93900b3c5f022e748432c12ace992d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/checks.json": "2f9ebd24d1045bcacae7420188bc5c3083e1669050231d34f7e59ac252d98579",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/solver.py": "b8b2224fb2b593a5b9beb67641ba8fdfea3f114f07c275870faf9732098298d0",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json": "03813748a8c4c4da52cb5286f924b0afa3f99e80e2f15f5a2d862f30141e7d7a",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "paths": {
+    "check": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/check.py",
+    "check_execution": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/check_execution-001.json",
+    "directory": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls",
+    "identity": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/identity.json",
+    "manifest": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json",
+    "proof": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/proof.md",
+    "raw_result": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/checker_output-001.json",
+    "result": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/result.json"
+  },
+  "proof": "SWAPPED-ROUTE-GROUPING-20261115-001C-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "SWAPPED-ROUTE-GROUPING-20261115-001C",
+  "title": "Witnesses on the original guarded stages and limits of the grouping test",
+  "validation": {
+    "independence": "Compared SAT answers and hidden witnesses to raw guard formulas, tested physical guard swaps and proved two explicit families. A reviewer separately checked the obstruction and block arguments.",
+    "level": "V1",
+    "novelty": "Uses the fixed-order interval solver and private-pad reachability. The combined bound, switch-essential counterexample and linear block composition with both global parameters large are local to this layout."
+  }
+}

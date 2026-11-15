@@ -1,0 +1,31 @@
+{
+  "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001C-P001",
+  "at": "2026-11-15T09:41:07+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/manifest.json": "e3a3f906bccf085394c8b185378f3d8dd6f814465ea36a9205a58d6cb7e80d6c",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/solver.py": "46adf74671362e1f02b8931d550e377e76c0bdb99635b42e6d62141716bd745e",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/manifest.json": "37d79de696ad94a59d75f311c841bc6985aba02e77dab3ab86ebeef87e45180d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/solver.py": "becb0a42fec122785c7efbc079192a56ae93900b3c5f022e748432c12ace992d",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/check.py": "796c06d35a0a9ab90f8765faf7c5a595e8979ac62568f2fb9bb41b58e8114250",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/checks.json": "2f9ebd24d1045bcacae7420188bc5c3083e1669050231d34f7e59ac252d98579",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/proof.md": "46fa5acfeb204d6fdbdc88b04834c7205c87876d0b70d63bc504510965950f52",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/solver.py": "b8b2224fb2b593a5b9beb67641ba8fdfea3f114f07c275870faf9732098298d0",
+    "proofs/TWO-RELAY-PADDING-20261115-001C/TWO-RELAY-PADDING-20261115-001C-P001_pairwise_sharing/manifest.json": "03813748a8c4c4da52cb5286f924b0afa3f99e80e2f15f5a2d862f30141e7d7a",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\"combined_readers\": {\"cases\": {\"1\": {\"exceptions\": 0, \"independent_blocks\": 2, \"mixed_pads\": 1, \"stages\": 3}, \"11\": {\"exceptions\": 10, \"independent_blocks\": 2, \"mixed_pads\": 11, \"stages\": 33}, \"3\": {\"exceptions\": 2, \"independent_blocks\": 2, \"mixed_pads\": 3, \"stages\": 9}, \"5\": {\"exceptions\": 4, \"independent_blocks\": 2, \"mixed_pads\": 5, \"stages\": 15}, \"7\": {\"exceptions\": 6, \"independent_blocks\": 2, \"mixed_pads\": 7, \"stages\": 21}, \"9\": {\"exceptions\": 8, \"independent_blocks\": 2, \"mixed_pads\": 9, \"stages\": 27}}, \"individually_essential_guards\": 1224, \"raw_sat_witnesses\": 2014, \"raw_unsatisfiable\": 16, \"single_mixed_pad_splits_restoring_sat\": 36}, \"compiler_certificates\": [{\"disjoint_obstructions\": 2, \"stages\": 8, \"variables\": 0}, {\"disjoint_obstructions\": 2, \"stages\": 8, \"variables\": 0}, {\"disjoint_obstructions\": 5, \"stages\": 20, \"variables\": 1}, {\"disjoint_obstructions\": 5, \"stages\": 20, \"variables\": 1}, {\"disjoint_obstructions\": 11, \"stages\": 76, \"variables\": 3}, {\"disjoint_obstructions\": 11, \"stages\": 68, \"variables\": 3}, {\"disjoint_obstructions\": 17, \"stages\": 388, \"variables\": 5}, {\"disjoint_obstructions\": 17, \"stages\": 108, \"variables\": 5}, {\"disjoint_obstructions\": 20, \"stages\": 720, \"variables\": 6}, {\"disjoint_obstructions\": 20, \"stages\": 128, \"variables\": 6}], \"empty_guard_choices\": 4, \"live_easy_family\": {\"active_single_guard_deletions_restoring_sat\": 540, \"examples\": [{\"doubled_names\": 3, \"minimum_removed\": 2, \"stages\": 6}, {\"doubled_names\": 5, \"minimum_removed\": 4, \"stages\": 10}, {\"doubled_names\": 7, \"minimum_removed\": 6, \"stages\": 14}, {\"doubled_names\": 9, \"minimum_removed\": 8, \"stages\": 18}, {\"doubled_names\": 11, \"minimum_removed\": 10, \"stages\": 22}], \"single_identity_splits_restoring_sat\": 35}, \"one_stage_decisions\": 20480, \"raw_checked_sat_witnesses\": 20239, \"raw_checked_unsatisfiable\": 1017, \"status\": \"passed\", \"wrong_guard_block_control\": [0, 0, 3, 0, 0, 0, 0, 3]}\n",
+  "ticket": "SWAPPED-ROUTE-GROUPING-20261115-001C",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

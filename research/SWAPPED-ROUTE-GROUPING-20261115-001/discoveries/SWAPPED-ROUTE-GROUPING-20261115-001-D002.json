@@ -1,0 +1,44 @@
+{
+  "authority_class": "proof",
+  "conclusion": "Independent stage blocks can use different witness-producing algorithms and combine their answers through one boundary bit. This gives linear work even on a family with arbitrarily many unavoidable exceptions and mixed-sign pads, where removing any enabled guard from the exhibited contradiction restores satisfiability.",
+  "curated_at": "2026-11-15",
+  "epic_closure": {
+    "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001Z-P001",
+    "dependency_graph_sha256": "18e5a5978f3476907c86765bb67b33b3f41deb48827ea5787a1d4bfedf1aba69",
+    "manifest_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/manifest.json",
+    "manifest_sha256": "b9b5f2bf862d98ed380bf2b3d71c521c24760c4469a3147781645145793fd7f2",
+    "report_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md",
+    "ticket_id": "SWAPPED-ROUTE-GROUPING-20261115-001Z"
+  },
+  "evidence": [
+    {
+      "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001B-P001",
+      "authority_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/manifest.json",
+      "authority_sha256": "37d79de696ad94a59d75f311c841bc6985aba02e77dab3ab86ebeef87e45180d",
+      "explanation_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/proof.md",
+      "explanation_sha256": "0b1e146bc430fa7d5cc23d80f38ec0fe86997584c2b731f7b4aa4c40f70bfa2c",
+      "kind": "proof",
+      "ticket_id": "SWAPPED-ROUTE-GROUPING-20261115-001B"
+    },
+    {
+      "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001C-P001",
+      "authority_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/manifest.json",
+      "authority_sha256": "f5c18f63c6bac19aa20a352883ea9392647afc3a8296f64dac8f18f68e9c3b0d",
+      "explanation_path": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001C/SWAPPED-ROUTE-GROUPING-20261115-001C-P001_decision_and_controls/proof.md",
+      "explanation_sha256": "46fa5acfeb204d6fdbdc88b04834c7205c87876d0b70d63bc504510965950f52",
+      "kind": "proof",
+      "ticket_id": "SWAPPED-ROUTE-GROUPING-20261115-001C"
+    }
+  ],
+  "id": "SWAPPED-ROUTE-GROUPING-20261115-001-D002",
+  "schema_version": 3,
+  "scope_id": "SWAPPED-ROUTE-GROUPING-20261115-001",
+  "significance": [
+    "frontier_change",
+    "exact_obstruction"
+  ],
+  "status": "active",
+  "subject": "Original guarded SAT instances with joint middle and hidden-pad identities and arbitrary guard values.",
+  "superseded_by": null,
+  "title": "Different linear solvers compose at boundaries crossed by no name"
+}

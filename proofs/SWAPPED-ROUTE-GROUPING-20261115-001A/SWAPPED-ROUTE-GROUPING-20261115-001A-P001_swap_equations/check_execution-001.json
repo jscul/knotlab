@@ -1,0 +1,27 @@
+{
+  "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001A-P001",
+  "at": "2026-11-15T09:34:45+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/check.py": "e8b8d9f5c26a4487a9d332c9f6239d23a60ba98cd909ec5a72af443e1cf82b2b",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/checks.json": "b83c14ff036dc6bf1a353a9b12f0d9c8fd26c97dc4fa42b5c064ae86753cb5bb",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/proof.md": "066034fcccbdb20c3ce3acf26b3cca804bdadaf384bf2b6a353f9413d57ad800",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/solver.py": "46adf74671362e1f02b8931d550e377e76c0bdb99635b42e6d62141716bd745e",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8",
+    "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "0daab833ea1a6a2f3ed5f8bac5a56d8171a46a341c3d4f94500e73fe7aab26c3"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"controls\": {\n    \"binary_equation_orders\": [\n      [\n        0,\n        1\n      ],\n      [\n        1,\n        0\n      ]\n    ],\n    \"inconsistent_pins_and_xor_crossing_counts\": [\n      3,\n      1,\n      1,\n      1\n    ],\n    \"invariant_plus_two_pins_crossing_counts\": [\n      1,\n      1,\n      3,\n      3\n    ],\n    \"malformed_inputs_rejected\": 6,\n    \"three_endpoints_even_multiplicity\": 4,\n    \"three_endpoints_pin_first_swap\": [\n      [\n        1,\n        0\n      ],\n      [\n        1,\n        1\n      ]\n    ]\n  },\n  \"larger_reference\": {\n    \"accepted\": 109,\n    \"largest_exhaustive_stages\": 8,\n    \"layouts\": 216,\n    \"literal_orders\": 18144,\n    \"rescued_by_swaps\": 66,\n    \"seed\": 15926535\n  },\n  \"scale\": {\n    \"fixed_minimum_exceptions\": 4096,\n    \"gap_stages\": 8192,\n    \"impossible_example_stages\": 4800,\n    \"independent_pair_gadgets\": 4096,\n    \"invariant_crossings_in_impossible_example\": 2878800,\n    \"minimum_after_swaps\": 0,\n    \"nested_depth_control\": 2400\n  },\n  \"status\": \"passed\",\n  \"two_stage_census\": {\n    \"counts\": {\n      \"fixed_order_nested\": 965,\n      \"impossible\": 5569,\n      \"individual_orders\": 30560,\n      \"nested_individual_orders\": 3860,\n      \"rescued_by_swaps\": 1106,\n      \"unsatisfiable_variable_equations_no_invariant_crossing\": 2134\n    },\n    \"example_with_inconsistent_variable_equations\": {\n      \"middles\": [\n        0,\n        1,\n        2,\n        3\n      ],\n      \"pads\": [\n        0,\n        1,\n        2,\n        3,\n        4,\n        0,\n        1,\n        2\n      ]\n    },\n    \"layouts\": 7640,\n    \"middle_partitions\": 10,\n    \"nested_orders_per_layout\": {\n      \"0\": 5569,\n      \"1\": 908,\n      \"2\": 850,\n      \"4\": 313\n    },\n    \"pad_partitions\": 764\n  }\n}\n",
+  "ticket": "SWAPPED-ROUTE-GROUPING-20261115-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

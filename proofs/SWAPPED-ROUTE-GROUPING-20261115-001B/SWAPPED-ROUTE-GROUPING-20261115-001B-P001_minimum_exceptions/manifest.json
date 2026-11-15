@@ -1,0 +1,101 @@
+{
+  "artifact_id": "SWAPPED-ROUTE-GROUPING-20261115-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "SWAPPED-ROUTE-GROUPING-20261115-001B-P001",
+  "claim": "A deterministic quadratic-time and quadratic-space calculation on the graph of legal stage orders recovers the globally minimum number of exceptional names, an attaining order and the set of exceptions.",
+  "dependencies": [
+    "TWO-RELAY-PADDING-20261115-001Z",
+    "TWO-RELAY-PADDING-20261115-001D"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/check.py": "b76d74dddeec98bb9318fb9720408678f70817f1bbde1554ed8d9dc0581032a7",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/check_execution-001.json": "80fd85ab4799924b738e2c1c9bdce65fa3567ad34fa4d081732973ec362b2c8f",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/checker_output-001.json": "8ae669ae8bfb1456cf0053aab11a93fa52b65e1e8497c59d560f609d76fd0094",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/proof.md": "0b1e146bc430fa7d5cc23d80f38ec0fe86997584c2b731f7b4aa4c40f70bfa2c",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/result.json": "f40f51b97b95cb814a756cc2e768eb12a05d80dcef2153bc0a284a0795d28672"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Joining incompatible partial stage paths could give an unattainable optimum, or two copies of one occurrence could be counted as mates."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "SWAPPED-ROUTE-GROUPING-20261115-001"
+    ],
+    "home_scope": "SWAPPED-ROUTE-GROUPING-20261115-001",
+    "parents": [
+      "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json",
+      "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "known-overlap-found",
+  "parent_bindings": {
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/checks.json": "8ae669ae8bfb1456cf0053aab11a93fa52b65e1e8497c59d560f609d76fd0094",
+    "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/solver.py": "becb0a42fec122785c7efbc079192a56ae93900b3c5f022e748432c12ace992d",
+    "proofs/TWO-RELAY-PADDING-20261115-001D/TWO-RELAY-PADDING-20261115-001D-P001_nested_pair_grouping/manifest.json": "083e9340a79cb649d9dc12c2831d0b58f7e17bf602862e56e5607828f014d8e8",
+    "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "0daab833ea1a6a2f3ed5f8bac5a56d8171a46a341c3d4f94500e73fe7aab26c3"
+  },
+  "paths": {
+    "check": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/check.py",
+    "check_execution": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/check_execution-001.json",
+    "directory": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions",
+    "identity": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/identity.json",
+    "manifest": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/manifest.json",
+    "proof": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/proof.md",
+    "raw_result": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/checker_output-001.json",
+    "result": "proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/result.json"
+  },
+  "proof": "SWAPPED-ROUTE-GROUPING-20261115-001B-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "SWAPPED-ROUTE-GROUPING-20261115-001B",
+  "title": "The exact minimum number of exceptional names over all branch orders",
+  "validation": {
+    "independence": "Independent complete leaf-order and subset searches on all 7,640 two-stage layouts, larger cases and all intervals of a separate order graph. Mixed paths and role erasure were challenged.",
+    "level": "V1",
+    "novelty": "Maximum nested submatching and parsing on an acyclic graph are known techniques. Only two possible copies per physical mate give the quadratic specialization on the guarded stages."
+  }
+}

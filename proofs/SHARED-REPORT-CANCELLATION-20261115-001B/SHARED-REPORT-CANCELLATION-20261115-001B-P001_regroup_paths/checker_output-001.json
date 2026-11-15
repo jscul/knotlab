@@ -1,0 +1,763 @@
+{
+  "all_small_charge_vectors": {
+    "even_odd_charge_vectors": {
+      "3": [
+        4,
+        4
+      ],
+      "4": [
+        8,
+        8
+      ]
+    },
+    "full_strict_even_models": 96
+  },
+  "failure_controls": {
+    "altered_pivot": "resolution operand lacks the claimed pivot",
+    "different_original_cnf": "displayed resolvent has incorrect literal set",
+    "dropping_middle_z_falsifies_a_strict_model": true,
+    "even_cycle": "even total charge admits a model",
+    "nonadjacent_join": "a join needs adjacent disjoint proper paths of this cycle",
+    "omitted_shared_term_flips_a_check": true,
+    "projected_shared_bit_answers": [
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        true
+      ]
+    ]
+  },
+  "five_cycle_same_cnf": {
+    "balanced": {
+      "all_nodes_live": true,
+      "axioms": 2832,
+      "edges": 5,
+      "join_resolutions": [
+        680,
+        268,
+        680
+      ],
+      "max_width": 10,
+      "nodes": 7075,
+      "ordinary_proof_sha256": "fe59469349c3c3c5f58f4c39dd8ae69dce43bd0d7caa74418b4c9bdee6f62b7c",
+      "quadratic_nodes": 21536,
+      "resolutions": 4243,
+      "source_cnf_sha256": "f06e37ffe77d13ae3760f9ffdad6d54ff5d8347e5927f5f5446f66b7de96d6ae",
+      "strict_clauses": 2832,
+      "tree": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "left": {
+      "all_nodes_live": true,
+      "axioms": 2832,
+      "edges": 5,
+      "join_resolutions": [
+        680,
+        680,
+        680
+      ],
+      "max_width": 10,
+      "nodes": 7487,
+      "ordinary_proof_sha256": "6fc333face0785134de36152c2585a2f2acbd9072f5c8e7d26fa4d32e8b4213f",
+      "quadratic_kernel": {
+        "lines": 24552,
+        "max_width": 16,
+        "rules": {
+          "axiom": 2832,
+          "combine": 4655,
+          "contract": 12410,
+          "delete_false": 4655
+        },
+        "shared_parents": 348
+      },
+      "quadratic_nodes": 24552,
+      "resolutions": 4655,
+      "source_cnf_sha256": "f06e37ffe77d13ae3760f9ffdad6d54ff5d8347e5927f5f5446f66b7de96d6ae",
+      "strict_clauses": 2832,
+      "tree": [
+        [
+          [
+            0,
+            1
+          ],
+          2
+        ],
+        3
+      ]
+    },
+    "optimal": {
+      "all_nodes_live": true,
+      "axioms": 2832,
+      "edges": 5,
+      "join_resolutions": [
+        268,
+        268,
+        680
+      ],
+      "max_width": 10,
+      "nodes": 6663,
+      "ordinary_proof_sha256": "b33541a6d430af30852dcccd543206a24f42693bd32e6035a57a0883eada2f99",
+      "quadratic_kernel": {
+        "lines": 18520,
+        "max_width": 16,
+        "rules": {
+          "axiom": 2832,
+          "combine": 3831,
+          "contract": 8026,
+          "delete_false": 3831
+        },
+        "shared_parents": 216
+      },
+      "quadratic_nodes": 18520,
+      "resolutions": 3831,
+      "source_cnf_sha256": "f06e37ffe77d13ae3760f9ffdad6d54ff5d8347e5927f5f5446f66b7de96d6ae",
+      "strict_clauses": 2832,
+      "tree": [
+        0,
+        [
+          1,
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    }
+  },
+  "growing_cycles": [
+    {
+      "charges": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "h": 8,
+      "proofs": [
+        {
+          "all_nodes_live": true,
+          "axioms": 5472,
+          "edges": 8,
+          "grouping": "left",
+          "join_resolutions": [
+            680,
+            680,
+            680,
+            420,
+            268,
+            680
+          ],
+          "max_width": 10,
+          "nodes": 13695,
+          "ordinary_proof_sha256": "086fd1b1e0c93471bb40025e53101a4fbf9d35304d6ca374431b4bcd3df25d5d",
+          "quadratic_nodes": 41840,
+          "resolutions": 8223,
+          "source_cnf_sha256": "5b7b96e99fc0eeb42f1e5841d3d0b9af635f99be669b00d38d62cb43d5efc4bf",
+          "strict_clauses": 5472
+        },
+        {
+          "all_nodes_live": true,
+          "axioms": 5472,
+          "edges": 8,
+          "grouping": "balanced",
+          "join_resolutions": [
+            268,
+            680,
+            680,
+            680,
+            420,
+            680
+          ],
+          "max_width": 10,
+          "nodes": 13695,
+          "ordinary_proof_sha256": "751f83193066e6783725177883eec49ea52efd9ec4efc21810a968b93088919a",
+          "quadratic_nodes": 41840,
+          "resolutions": 8223,
+          "source_cnf_sha256": "5b7b96e99fc0eeb42f1e5841d3d0b9af635f99be669b00d38d62cb43d5efc4bf",
+          "strict_clauses": 5472
+        }
+      ]
+    },
+    {
+      "charges": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "h": 12,
+      "proofs": [
+        {
+          "all_nodes_live": true,
+          "axioms": 7200,
+          "edges": 12,
+          "grouping": "left",
+          "join_resolutions": [
+            680,
+            680,
+            680,
+            420,
+            268,
+            268,
+            268,
+            680,
+            680,
+            680
+          ],
+          "max_width": 10,
+          "nodes": 18759,
+          "ordinary_proof_sha256": "b12b739d8bd8855fa1d38dd3ad64351386404e71b0dd98800411f650e21cb64e",
+          "quadratic_nodes": 60352,
+          "resolutions": 11559,
+          "source_cnf_sha256": "2f3f489b42206b3030f5bb5e8dd33e1de6ecd7f8598453a28f0831bd1c4ad566",
+          "strict_clauses": 7200
+        },
+        {
+          "all_nodes_live": true,
+          "axioms": 7200,
+          "edges": 12,
+          "grouping": "balanced",
+          "join_resolutions": [
+            680,
+            680,
+            680,
+            420,
+            268,
+            268,
+            268,
+            680,
+            680,
+            680
+          ],
+          "max_width": 10,
+          "nodes": 18759,
+          "ordinary_proof_sha256": "7a93482267a2f5c39102fdb8c4106fa19b764fd04ac617f27c33394e39cc7db0",
+          "quadratic_nodes": 60352,
+          "resolutions": 11559,
+          "source_cnf_sha256": "2f3f489b42206b3030f5bb5e8dd33e1de6ecd7f8598453a28f0831bd1c4ad566",
+          "strict_clauses": 7200
+        }
+      ]
+    },
+    {
+      "charges": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "h": 17,
+      "proofs": [
+        {
+          "all_nodes_live": true,
+          "axioms": 10704,
+          "edges": 17,
+          "grouping": "left",
+          "join_resolutions": [
+            680,
+            680,
+            680,
+            680,
+            420,
+            268,
+            268,
+            268,
+            680,
+            680,
+            680,
+            680,
+            420,
+            268,
+            680
+          ],
+          "max_width": 10,
+          "nodes": 27911,
+          "ordinary_proof_sha256": "279c63194d8b35df0e65742565f5acba6e6335b6603ab15432616f076ac68df7",
+          "quadratic_nodes": 89912,
+          "resolutions": 17207,
+          "source_cnf_sha256": "5a447f19b790a86dde6032a6bf56874f09e117c2d75dc14a7941511f6578d4c8",
+          "strict_clauses": 10704
+        },
+        {
+          "all_nodes_live": true,
+          "axioms": 10704,
+          "edges": 17,
+          "grouping": "balanced",
+          "join_resolutions": [
+            680,
+            268,
+            680,
+            680,
+            268,
+            680,
+            420,
+            680,
+            268,
+            680,
+            680,
+            680,
+            420,
+            680,
+            680
+          ],
+          "max_width": 10,
+          "nodes": 28323,
+          "ordinary_proof_sha256": "d3a3c69b6388cbf5dfab18fc16c47b95d8e03871fc5d471a7fbb2338ce09a23f",
+          "quadratic_nodes": 92928,
+          "resolutions": 17619,
+          "source_cnf_sha256": "5a447f19b790a86dde6032a6bf56874f09e117c2d75dc14a7941511f6578d4c8",
+          "strict_clauses": 10704
+        }
+      ]
+    }
+  ],
+  "ordered_optimum_check": {
+    "evaluated_parenthesizations": 3236,
+    "open_charge_orders": 124
+  },
+  "ordinary_join_costs": {
+    "xyz": {
+      "ordinary": [
+        336,
+        758,
+        758,
+        484
+      ],
+      "primitive": [
+        2556,
+        5660,
+        5660,
+        3852
+      ]
+    },
+    "zxy": {
+      "ordinary": [
+        268,
+        680,
+        680,
+        420
+      ],
+      "primitive": [
+        1968,
+        4984,
+        4984,
+        3296
+      ]
+    }
+  },
+  "original_subcycle": {
+    "all_nodes_live": true,
+    "axioms": 1968,
+    "edges": 3,
+    "event_order": [
+      "edge",
+      "edge",
+      "join",
+      "edge",
+      "close"
+    ],
+    "join_resolutions": [
+      680
+    ],
+    "max_width": 10,
+    "nodes": 4543,
+    "ordinary_proof_sha256": "a4d4bcf306c564c142cfb8664b5e392918738eecd0a8e73fbdd21e8f8a782eef",
+    "original_cycle": [
+      [
+        1,
+        false
+      ],
+      [
+        2,
+        true
+      ],
+      [
+        4,
+        false
+      ]
+    ],
+    "original_edges_in_arrival_order": [
+      2,
+      4,
+      1
+    ],
+    "quadratic_nodes": 12280,
+    "resolutions": 2575,
+    "source_cnf_sha256": "84fba4d582ebca22a961621d9437dd1f532de14a2350008fb8bf9dd86ac07d73",
+    "strict_clauses": 4608,
+    "unused_original_strict_clauses": 2640
+  },
+  "status": "passed",
+  "triangle": {
+    "all_nodes_live": true,
+    "axioms": 1968,
+    "certificate_bytes": 45924,
+    "certificate_file_sha256": "cddb6e1b8a854cfa60da285afdc98c8794323f5f161770f3cf58c0bf7140dcb2",
+    "charges": [
+      0,
+      0,
+      1
+    ],
+    "edges": 3,
+    "example_endpoint_key": [
+      0,
+      0,
+      0,
+      7
+    ],
+    "grouping_events": [
+      {
+        "after_node": 792,
+        "charge": 0,
+        "edge": 0,
+        "first_node": 0,
+        "left": 0,
+        "op": "edge",
+        "right": 1,
+        "rows": 72
+      },
+      {
+        "after_node": 1584,
+        "charge": 0,
+        "edge": 1,
+        "first_node": 792,
+        "left": 1,
+        "op": "edge",
+        "right": 2,
+        "rows": 72
+      },
+      {
+        "after_node": 1852,
+        "charge": 0,
+        "charges": [
+          0,
+          0
+        ],
+        "direction": 1,
+        "first_node": 1584,
+        "left": 0,
+        "length": 2,
+        "middle": 1,
+        "op": "join",
+        "parents": [
+          0,
+          1
+        ],
+        "right": 2,
+        "rows": 72
+      },
+      {
+        "after_node": 3876,
+        "charge": 1,
+        "edge": 2,
+        "first_node": 1852,
+        "left": 2,
+        "op": "edge",
+        "right": 0,
+        "rows": 184
+      },
+      {
+        "after_node": 4131,
+        "first_node": 3876,
+        "left": 0,
+        "op": "close",
+        "parents": [
+          2,
+          3
+        ],
+        "right": 2,
+        "rows": 256
+      }
+    ],
+    "join_resolutions": [
+      268
+    ],
+    "max_width": 10,
+    "nodes": 4131,
+    "ordinary_proof_sha256": "7eb4867f5022b03426d71820ec503a2185fe2768f35e4fc1a045b1ff8268dd47",
+    "origin_of_eight_leaves": [
+      {
+        "middle_xyz": [
+          0,
+          0,
+          0
+        ],
+        "node": 802,
+        "source_edge": 1
+      },
+      {
+        "middle_xyz": [
+          0,
+          1,
+          0
+        ],
+        "node": 824,
+        "source_edge": 1
+      },
+      {
+        "middle_xyz": [
+          1,
+          0,
+          0
+        ],
+        "node": 846,
+        "source_edge": 1
+      },
+      {
+        "middle_xyz": [
+          1,
+          1,
+          0
+        ],
+        "node": 868,
+        "source_edge": 1
+      },
+      {
+        "middle_xyz": [
+          0,
+          0,
+          1
+        ],
+        "node": 813,
+        "source_edge": 1
+      },
+      {
+        "middle_xyz": [
+          0,
+          1,
+          1
+        ],
+        "node": 835,
+        "source_edge": 1
+      },
+      {
+        "middle_xyz": [
+          1,
+          0,
+          1
+        ],
+        "node": 857,
+        "source_edge": 1
+      },
+      {
+        "middle_xyz": [
+          1,
+          1,
+          1
+        ],
+        "node": 10,
+        "source_edge": 0
+      }
+    ],
+    "quadratic_kernel": {
+      "lines": 9264,
+      "max_width": 16,
+      "rules": {
+        "axiom": 1968,
+        "combine": 2163,
+        "contract": 2970,
+        "delete_false": 2163
+      },
+      "shared_parents": 50
+    },
+    "quadratic_nodes": 9264,
+    "resolutions": 2163,
+    "rotation_and_reversal": [
+      {
+        "nodes": 4131,
+        "reverse": false,
+        "source": "9ca0fb6035fc625c3f612138c3da75635563475d12df1ea526d064920eda8673",
+        "start": 0
+      },
+      {
+        "nodes": 4543,
+        "reverse": false,
+        "source": "9ca0fb6035fc625c3f612138c3da75635563475d12df1ea526d064920eda8673",
+        "start": 1
+      },
+      {
+        "nodes": 4131,
+        "reverse": true,
+        "source": "9ca0fb6035fc625c3f612138c3da75635563475d12df1ea526d064920eda8673",
+        "start": 2
+      }
+    ],
+    "seven_ordinary_resolutions": [
+      {
+        "node": 1584,
+        "parents": [
+          802,
+          824
+        ],
+        "pivot": 7,
+        "signed_clause": [
+          -11,
+          -10,
+          -9,
+          1,
+          2,
+          6,
+          8
+        ]
+      },
+      {
+        "node": 1585,
+        "parents": [
+          846,
+          868
+        ],
+        "pivot": 7,
+        "signed_clause": [
+          -11,
+          -10,
+          -9,
+          -6,
+          1,
+          2,
+          8
+        ]
+      },
+      {
+        "node": 1586,
+        "parents": [
+          813,
+          835
+        ],
+        "pivot": 7,
+        "signed_clause": [
+          -11,
+          -10,
+          -9,
+          -8,
+          1,
+          2,
+          6
+        ]
+      },
+      {
+        "node": 1587,
+        "parents": [
+          857,
+          10
+        ],
+        "pivot": 7,
+        "signed_clause": [
+          -11,
+          -10,
+          -9,
+          -8,
+          -6,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "node": 1588,
+        "parents": [
+          1584,
+          1585
+        ],
+        "pivot": 6,
+        "signed_clause": [
+          -11,
+          -10,
+          -9,
+          1,
+          2,
+          8
+        ]
+      },
+      {
+        "node": 1589,
+        "parents": [
+          1586,
+          1587
+        ],
+        "pivot": 6,
+        "signed_clause": [
+          -11,
+          -10,
+          -9,
+          -8,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "node": 1590,
+        "parents": [
+          1588,
+          1589
+        ],
+        "pivot": 8,
+        "signed_clause": [
+          -11,
+          -10,
+          -9,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "source_cnf_sha256": "9ca0fb6035fc625c3f612138c3da75635563475d12df1ea526d064920eda8673",
+    "strict_clauses": 1968
+  },
+  "truth_composition": {
+    "endpoint_cases": 1024,
+    "forbidden_endpoint_cases": 512,
+    "middle_completions": 8192
+  }
+}

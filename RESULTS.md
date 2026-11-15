@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**352 current results** and 5 superseded ones, from 390 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**354 current results** and 5 superseded ones, from 391 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 19 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 39 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 41 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 390 epics with their closures
+- [Epics](#epics): all 391 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -418,6 +418,12 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-15 · Two-use route encodings inherit a parity proof-length lower bound** (`ROUTE-PARITY-TRANSFER-20261115-001-D001`).
   A signed substitution sends the compiled axioms exactly to the source and a whole refutation to at most its original number of lines. The distribution induced by random strict clauses at density eight gives exponential lower bounds in the listed stage count and stretched-exponential lower bounds in the fixed stage count, conditional on the admitted preprint theorem.
   [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001A/ROUTE-PARITY-TRANSFER-20261115-001A-P001_literal_projection/proof.md), [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/proof.md), [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/proof.md), [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001D/ROUTE-PARITY-TRANSFER-20261115-001D-P001_encoded_lower_bound/proof.md), [epic closure](proofs/ROUTE-PARITY-TRANSFER-20261115-001Z/ROUTE-PARITY-TRANSFER-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · A strict parity cycle and its checked cancellations** (`SHARED-REPORT-CANCELLATION-20261115-001-D001`).
+  Every original clause of an odd cycle is necessary. A degree-two proof with charged product definitions or an ordinary path resolution proof both refute the entire family in linearly many nodes.
+  [proof P001](proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/proof.md), [proof P001](proofs/SHARED-REPORT-CANCELLATION-20261115-001B/SHARED-REPORT-CANCELLATION-20261115-001B-P001_regroup_paths/proof.md), [epic closure](proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Four conditional reports preserve a shortcut that one quadratic line misses** (`SHARED-REPORT-CANCELLATION-20261115-001-D002`).
+  One quadratic proof line on the original bits cannot express a proper nonempty cycle sum, even with freely quantified witnesses. Four conditional lines per path compose at constant cost and give a linear proof along an inconsistent cycle in any unsatisfiable network of pair checks.
+  [proof P001](proofs/SHARED-REPORT-CANCELLATION-20261115-001C/SHARED-REPORT-CANCELLATION-20261115-001C-P001_order_and_obstruction/proof.md), [epic closure](proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · Find the fewest names that prevent nesting over all branch orders** (`SWAPPED-ROUTE-GROUPING-20261115-001-D001`).
   A linear parity test detects zero exceptions, and a quadratic word-operation algorithm finds an optimal branch order and the names to condition for all other layouts. Swapping improves the original order in 3,174 of 7,640 typed two-stage layouts.
   [proof P001](proofs/SWAPPED-ROUTE-GROUPING-20261115-001A/SWAPPED-ROUTE-GROUPING-20261115-001A-P001_swap_equations/proof.md), [proof P001](proofs/SWAPPED-ROUTE-GROUPING-20261115-001B/SWAPPED-ROUTE-GROUPING-20261115-001B-P001_minimum_exceptions/proof.md), [epic closure](proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md)
@@ -1583,6 +1589,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Transferring route proof length when proofs can multiply two linear expressions (`QUADRATIC-ROUTE-TRANSFER-20261115-001`) | [closure](proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001Z/QUADRATIC-ROUTE-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/QUADRATIC-ROUTE-TRANSFER-20261115-001/) |
 | 2026-11-15 | What a one-pass reader must remember about joined routes (`ROUTE-FRONTIER-MEMORY-20261115-001`) | [closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-FRONTIER-MEMORY-20261115-001/) |
 | 2026-11-15 | Proof length after encoding strict 3-SAT as two-use routes (`ROUTE-PARITY-TRANSFER-20261115-001`) | [closure](proofs/ROUTE-PARITY-TRANSFER-20261115-001Z/ROUTE-PARITY-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-PARITY-TRANSFER-20261115-001/) |
+| 2026-11-15 | Cancel overlapping parity checks from strict clauses (`SHARED-REPORT-CANCELLATION-20261115-001`) | [closure](proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/SHARED-REPORT-CANCELLATION-20261115-001/) |
 | 2026-11-15 | Choosing how to order two routes within each stage (`SWAPPED-ROUTE-GROUPING-20261115-001`) | [closure](proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/SWAPPED-ROUTE-GROUPING-20261115-001/) |
 | 2026-11-15 | What two shared choices must report together (`TWO-CHOICE-IMPLICATIONS-20261115-001`) | [closure](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001Z/TWO-CHOICE-IMPLICATIONS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-CHOICE-IMPLICATIONS-20261115-001/) |
 | 2026-11-15 | Two repeated middle variables and a second way to group the hidden choices (`TWO-RELAY-PADDING-20261115-001`) | [closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-RELAY-PADDING-20261115-001/) |

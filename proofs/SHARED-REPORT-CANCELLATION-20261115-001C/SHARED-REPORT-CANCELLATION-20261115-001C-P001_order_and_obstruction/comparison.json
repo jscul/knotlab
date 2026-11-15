@@ -1,0 +1,1086 @@
+{
+  "source_named_first_inlining_failure": {
+    "index": 16,
+    "old_row": {
+      "rule": "multiply",
+      "clause": [
+        [
+          [],
+          [
+            5
+          ]
+        ],
+        [
+          [
+            5,
+            1652
+          ],
+          [
+            5,
+            1653
+          ]
+        ]
+      ],
+      "parents": [
+        15
+      ],
+      "chosen": [
+        [
+          5
+        ]
+      ],
+      "multiplier": [
+        [
+          1652
+        ],
+        [
+          1653
+        ]
+      ]
+    },
+    "selected_image": [
+      [
+        5
+      ]
+    ],
+    "multiplier_image": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "product_image": [
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ]
+  },
+  "triangle_consecutive": {
+    "charges": [
+      0,
+      0,
+      1
+    ],
+    "order": [
+      0,
+      1,
+      2
+    ],
+    "cnf_sha256": "eb5252b6129abc38f4e8a8f86a712fa2a8a02d7ff80ce5f2a95799af4d9a7520",
+    "strict_clauses": 1968,
+    "nodes": 13243,
+    "empty": 13242,
+    "source_nodes": 13165,
+    "schedule": {
+      "joins": 1,
+      "peak_components": 1,
+      "events": [
+        {
+          "arrival": 0,
+          "joins": 0,
+          "components": 1
+        },
+        {
+          "arrival": 1,
+          "joins": 1,
+          "components": 1
+        },
+        {
+          "arrival": 2,
+          "joins": 0,
+          "components": 0
+        }
+      ]
+    },
+    "check_rows": [
+      {
+        "edge": 0,
+        "from": 0,
+        "to": 1,
+        "charge": 0,
+        "rows": [
+          1,
+          1218,
+          2433,
+          3646
+        ]
+      },
+      {
+        "edge": 1,
+        "from": 1,
+        "to": 2,
+        "charge": 0,
+        "rows": [
+          3647,
+          4862,
+          6075,
+          7288
+        ]
+      },
+      {
+        "edge": 2,
+        "from": 2,
+        "to": 0,
+        "charge": 1,
+        "rows": [
+          8985,
+          10390,
+          11795,
+          13200
+        ]
+      }
+    ],
+    "path_rows": [
+      {
+        "through": 1,
+        "from": 0,
+        "to": 2,
+        "charge": 0,
+        "rows": [
+          7297,
+          7306,
+          7315,
+          7324
+        ],
+        "nodes": 36
+      },
+      {
+        "through": 2,
+        "from": 0,
+        "to": 0,
+        "charge": 1,
+        "rows": [
+          13209,
+          13218,
+          13227,
+          13236
+        ],
+        "nodes": 36
+      }
+    ],
+    "last_step": {
+      "rule": "delete_false",
+      "clause": [],
+      "parents": [
+        13241
+      ]
+    },
+    "proof_sha256": "e3468d15e524ac7db928655e920b89e68406bf988be20e24c2a83842eaab15ec"
+  },
+  "triangle_second_arrival": {
+    "charges": [
+      0,
+      0,
+      1
+    ],
+    "order": [
+      1,
+      0,
+      2
+    ],
+    "cnf_sha256": "eb5252b6129abc38f4e8a8f86a712fa2a8a02d7ff80ce5f2a95799af4d9a7520",
+    "strict_clauses": 1968,
+    "nodes": 13243,
+    "empty": 13242,
+    "source_nodes": 13165,
+    "schedule": {
+      "joins": 1,
+      "peak_components": 1,
+      "events": [
+        {
+          "arrival": 1,
+          "joins": 0,
+          "components": 1
+        },
+        {
+          "arrival": 0,
+          "joins": 1,
+          "components": 1
+        },
+        {
+          "arrival": 2,
+          "joins": 0,
+          "components": 0
+        }
+      ]
+    },
+    "check_rows": [
+      {
+        "edge": 1,
+        "from": 1,
+        "to": 2,
+        "charge": 0,
+        "rows": [
+          1,
+          1218,
+          2433,
+          3646
+        ]
+      },
+      {
+        "edge": 0,
+        "from": 0,
+        "to": 1,
+        "charge": 0,
+        "rows": [
+          3647,
+          4860,
+          6075,
+          7288
+        ]
+      },
+      {
+        "edge": 2,
+        "from": 2,
+        "to": 0,
+        "charge": 1,
+        "rows": [
+          8985,
+          10390,
+          11795,
+          13200
+        ]
+      }
+    ],
+    "path_rows": [
+      {
+        "through": 1,
+        "from": 0,
+        "to": 2,
+        "charge": 0,
+        "rows": [
+          7297,
+          7306,
+          7315,
+          7324
+        ],
+        "nodes": 36
+      },
+      {
+        "through": 2,
+        "from": 0,
+        "to": 0,
+        "charge": 1,
+        "rows": [
+          13209,
+          13218,
+          13227,
+          13236
+        ],
+        "nodes": 36
+      }
+    ],
+    "last_step": {
+      "rule": "delete_false",
+      "clause": [],
+      "parents": [
+        13241
+      ]
+    },
+    "proof_sha256": "2977b428b577aca03858b8b4d99e0acee028a91314ccb6464712343883cf1493"
+  },
+  "six": [
+    {
+      "charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "cnf_sha256": "435b9890f54d6402d6c72e43943c05b07abdb1de7d1420f5cc9714d32cf748b9",
+      "strict_clauses": 3264,
+      "nodes": 24277,
+      "empty": 24276,
+      "source_nodes": 24091,
+      "schedule": {
+        "joins": 4,
+        "peak_components": 1,
+        "events": [
+          {
+            "arrival": 0,
+            "joins": 0,
+            "components": 1
+          },
+          {
+            "arrival": 1,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 2,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 3,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 4,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 5,
+            "joins": 0,
+            "components": 0
+          }
+        ]
+      },
+      "check_rows": [
+        {
+          "edge": 0,
+          "from": 0,
+          "to": 1,
+          "charge": 0,
+          "rows": [
+            1,
+            1218,
+            2433,
+            3646
+          ]
+        },
+        {
+          "edge": 1,
+          "from": 1,
+          "to": 2,
+          "charge": 0,
+          "rows": [
+            3647,
+            4862,
+            6075,
+            7288
+          ]
+        },
+        {
+          "edge": 2,
+          "from": 2,
+          "to": 3,
+          "charge": 0,
+          "rows": [
+            7325,
+            8540,
+            9753,
+            10966
+          ]
+        },
+        {
+          "edge": 3,
+          "from": 3,
+          "to": 4,
+          "charge": 0,
+          "rows": [
+            11003,
+            12218,
+            13431,
+            14644
+          ]
+        },
+        {
+          "edge": 4,
+          "from": 4,
+          "to": 5,
+          "charge": 0,
+          "rows": [
+            14681,
+            15896,
+            17109,
+            18322
+          ]
+        },
+        {
+          "edge": 5,
+          "from": 5,
+          "to": 0,
+          "charge": 1,
+          "rows": [
+            20019,
+            21424,
+            22829,
+            24234
+          ]
+        }
+      ],
+      "path_rows": [
+        {
+          "through": 1,
+          "from": 0,
+          "to": 2,
+          "charge": 0,
+          "rows": [
+            7297,
+            7306,
+            7315,
+            7324
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 2,
+          "from": 0,
+          "to": 3,
+          "charge": 0,
+          "rows": [
+            10975,
+            10984,
+            10993,
+            11002
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 3,
+          "from": 0,
+          "to": 4,
+          "charge": 0,
+          "rows": [
+            14653,
+            14662,
+            14671,
+            14680
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 4,
+          "from": 0,
+          "to": 5,
+          "charge": 0,
+          "rows": [
+            18331,
+            18340,
+            18349,
+            18358
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 5,
+          "from": 0,
+          "to": 0,
+          "charge": 1,
+          "rows": [
+            24243,
+            24252,
+            24261,
+            24270
+          ],
+          "nodes": 36
+        }
+      ],
+      "last_step": {
+        "rule": "delete_false",
+        "clause": [],
+        "parents": [
+          24275
+        ]
+      },
+      "proof_sha256": "e8de36a8634b7e76916d9004cd8c664e6343cfa9f823d60d2976045836885740"
+    },
+    {
+      "charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "order": [
+        0,
+        2,
+        4,
+        1,
+        3,
+        5
+      ],
+      "cnf_sha256": "435b9890f54d6402d6c72e43943c05b07abdb1de7d1420f5cc9714d32cf748b9",
+      "strict_clauses": 3264,
+      "nodes": 24277,
+      "empty": 24276,
+      "source_nodes": 24091,
+      "schedule": {
+        "joins": 4,
+        "peak_components": 3,
+        "events": [
+          {
+            "arrival": 0,
+            "joins": 0,
+            "components": 1
+          },
+          {
+            "arrival": 2,
+            "joins": 0,
+            "components": 2
+          },
+          {
+            "arrival": 4,
+            "joins": 0,
+            "components": 3
+          },
+          {
+            "arrival": 1,
+            "joins": 2,
+            "components": 2
+          },
+          {
+            "arrival": 3,
+            "joins": 2,
+            "components": 1
+          },
+          {
+            "arrival": 5,
+            "joins": 0,
+            "components": 0
+          }
+        ]
+      },
+      "check_rows": [
+        {
+          "edge": 0,
+          "from": 0,
+          "to": 1,
+          "charge": 0,
+          "rows": [
+            1,
+            1218,
+            2433,
+            3646
+          ]
+        },
+        {
+          "edge": 2,
+          "from": 2,
+          "to": 3,
+          "charge": 0,
+          "rows": [
+            3647,
+            4862,
+            6077,
+            7290
+          ]
+        },
+        {
+          "edge": 4,
+          "from": 4,
+          "to": 5,
+          "charge": 0,
+          "rows": [
+            7291,
+            8506,
+            9721,
+            10934
+          ]
+        },
+        {
+          "edge": 1,
+          "from": 1,
+          "to": 2,
+          "charge": 0,
+          "rows": [
+            10935,
+            12148,
+            13361,
+            14574
+          ]
+        },
+        {
+          "edge": 3,
+          "from": 3,
+          "to": 4,
+          "charge": 0,
+          "rows": [
+            14647,
+            15860,
+            17073,
+            18286
+          ]
+        },
+        {
+          "edge": 5,
+          "from": 5,
+          "to": 0,
+          "charge": 1,
+          "rows": [
+            20019,
+            21424,
+            22829,
+            24234
+          ]
+        }
+      ],
+      "path_rows": [
+        {
+          "through": 1,
+          "from": 0,
+          "to": 2,
+          "charge": 0,
+          "rows": [
+            14583,
+            14592,
+            14601,
+            14610
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 2,
+          "from": 0,
+          "to": 3,
+          "charge": 0,
+          "rows": [
+            14619,
+            14628,
+            14637,
+            14646
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 3,
+          "from": 0,
+          "to": 4,
+          "charge": 0,
+          "rows": [
+            18295,
+            18304,
+            18313,
+            18322
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 4,
+          "from": 0,
+          "to": 5,
+          "charge": 0,
+          "rows": [
+            18331,
+            18340,
+            18349,
+            18358
+          ],
+          "nodes": 36
+        },
+        {
+          "through": 5,
+          "from": 0,
+          "to": 0,
+          "charge": 1,
+          "rows": [
+            24243,
+            24252,
+            24261,
+            24270
+          ],
+          "nodes": 36
+        }
+      ],
+      "last_step": {
+        "rule": "delete_false",
+        "clause": [],
+        "parents": [
+          24275
+        ]
+      },
+      "proof_sha256": "1894a099cd4cb5516c6711074031919abd5347e060c62d42e43b2e4e3b50a828"
+    }
+  ],
+  "ordinary_six": [
+    {
+      "nodes": 7311,
+      "schedule": {
+        "joins": 4,
+        "peak_components": 1,
+        "events": [
+          {
+            "arrival": 0,
+            "joins": 0,
+            "components": 1
+          },
+          {
+            "arrival": 1,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 2,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 3,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 4,
+            "joins": 1,
+            "components": 1
+          },
+          {
+            "arrival": 5,
+            "joins": 0,
+            "components": 0
+          }
+        ]
+      }
+    },
+    {
+      "nodes": 7311,
+      "schedule": {
+        "joins": 4,
+        "peak_components": 3,
+        "events": [
+          {
+            "arrival": 0,
+            "joins": 0,
+            "components": 1
+          },
+          {
+            "arrival": 2,
+            "joins": 0,
+            "components": 2
+          },
+          {
+            "arrival": 4,
+            "joins": 0,
+            "components": 3
+          },
+          {
+            "arrival": 1,
+            "joins": 2,
+            "components": 2
+          },
+          {
+            "arrival": 3,
+            "joins": 2,
+            "components": 1
+          },
+          {
+            "arrival": 5,
+            "joins": 0,
+            "components": 0
+          }
+        ]
+      }
+    }
+  ],
+  "separate_vs_flat_after_three_even_checks": {
+    "separate_components": 3,
+    "separate_full_rows": 216,
+    "combined_full_rows": 454272
+  },
+  "graph": {
+    "input_checks": [
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        1,
+        4,
+        0
+      ]
+    ],
+    "cycle": [
+      [
+        5,
+        true
+      ],
+      [
+        0,
+        false
+      ],
+      [
+        4,
+        true
+      ],
+      [
+        6,
+        false
+      ]
+    ],
+    "strict_clauses": 4368,
+    "used_clauses": 2400,
+    "ordinary_nodes": 6015,
+    "guarded_nodes": 16921,
+    "empty_guarded": 16920,
+    "strict_model_bits_for_consistent_signs": 4777
+  },
+  "grouping_depth": {
+    "left": {
+      "nodes": 10491,
+      "depth": 34,
+      "cnf_sha256": "0629cdf48e9a0cde077137c5aec35a5f740d57f7f60efba8d07d8915dbbbedcb"
+    },
+    "balanced": {
+      "nodes": 10491,
+      "depth": 22,
+      "cnf_sha256": "0629cdf48e9a0cde077137c5aec35a5f740d57f7f60efba8d07d8915dbbbedcb"
+    }
+  },
+  "three_report_control": {
+    "three_report_checks": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        2,
+        4,
+        5
+      ]
+    ],
+    "charges": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "solutions": 0,
+    "models_after_single_deletion": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "pair_sum_supports": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "reverse_guarded_triangle": {
+    "strict_clauses": 1968,
+    "input_variables_including_private_padding": 1651,
+    "source_rows_by_block": {
+      "0": {
+        "forbidden_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "strict_cnf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "axiom_proof_indices": [
+          21,
+          22,
+          25,
+          28,
+          31,
+          34
+        ],
+        "recovered_width_eight_proof_index": 36
+      },
+      "1": {
+        "forbidden_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "strict_cnf_indices": [
+          432,
+          433,
+          434,
+          435,
+          436,
+          437
+        ],
+        "axiom_proof_indices": [
+          3666,
+          3667,
+          3670,
+          3673,
+          3676,
+          3679
+        ],
+        "recovered_width_eight_proof_index": 3681
+      },
+      "2": {
+        "forbidden_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "strict_cnf_indices": [
+          864,
+          865,
+          866,
+          867,
+          868,
+          869
+        ],
+        "axiom_proof_indices": [
+          7289,
+          7290,
+          7293,
+          7296,
+          7299,
+          7302
+        ],
+        "recovered_width_eight_proof_index": 7304
+      }
+    },
+    "edge_roots_00_01_10_11": [
+      [
+        1,
+        1218,
+        2433,
+        3646
+      ],
+      [
+        3647,
+        4862,
+        6075,
+        7288
+      ],
+      [
+        8949,
+        10354,
+        11759,
+        13164
+      ]
+    ],
+    "prefix_nodes": 13165,
+    "first_join": {
+      "start": 0,
+      "end": 1,
+      "charge": 1,
+      "rows": [
+        13173,
+        13182,
+        13191,
+        13200
+      ]
+    },
+    "inner_quadratic_addition": {
+      "row": 13167,
+      "parents": [
+        11759,
+        4862
+      ],
+      "chosen": [
+        [
+          [],
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            10
+          ]
+        ]
+      ]
+    },
+    "closed_path": {
+      "start": 0,
+      "end": 0,
+      "charge": 1,
+      "rows": [
+        13209,
+        13218,
+        13227,
+        13236
+      ]
+    },
+    "empty": 13242,
+    "nodes": 13243,
+    "original_assignment_comparisons": 1056,
+    "mutated_quadratic_pivot_rejected": true
+  }
+}

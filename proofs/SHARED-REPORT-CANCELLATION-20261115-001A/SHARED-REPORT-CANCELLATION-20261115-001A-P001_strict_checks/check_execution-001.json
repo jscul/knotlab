@@ -1,0 +1,32 @@
+{
+  "artifact_id": "SHARED-REPORT-CANCELLATION-20261115-001A-P001",
+  "at": "2026-11-15T20:34:25+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001C/GROUPED-PRODUCT-REPLAY-20261115-001C-P001_fresh_bit_replay/manifest.json": "1fbd74dfc9f64d41025d6d63d5b6ae71eb5472a0555ef47c24f20edcf2547d8d",
+    "proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/manifest.json": "61d57f64b95fe892dfa78d6038f71cb941b7f13149a803640439564ebdb6e978",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001A/PRODUCT-NAME-TRANSFER-20261115-001A-P001_named_substitution/manifest.json": "ad35c9bd29aaa701a3d85cd941646968b4527523eef8b479412c6b57b00a9eaa",
+    "proofs/PRODUCT-NAME-TRANSFER-20261115-001B/PRODUCT-NAME-TRANSFER-20261115-001B-P001_bounded_elimination/manifest.json": "98ff55b65326f881ae7981590c24144610969146b612a4e2aaae36f4ae1975f1",
+    "proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001A/QUADRATIC-ROUTE-TRANSFER-20261115-001A-P001_quadratic_substitution/manifest.json": "30902fde8bc5901d2fadfb7fb166547f462719e41d5bcb4b8d5133e5ba6fe5cf",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/check.py": "17094bc1f30f3716cfe9a7c0475720f027aeb3dad5645abe82ce1131e53532af",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/checks.json": "b63224ad2ffbc3d8591692cf0fbf7d71d945d7f1b95c0078bc65a6e5bed33cbb",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/proof.md": "ec29b2e8966cd0b4d2b627cb0f5606bc9d3f7eeb83686aa0894d632f31b17441",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/solver.py": "77dee991ebb8595a7e2a183206bf8bd4931ec701ee0da9caf0dae677d3c9fb1e",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/trace.json": "ca63f0b5456612917aedbd74397edd1b00e59e41b9666d07d52c88434e64d274",
+    "proofs/SHARED-REPORT-CANCELLATION-20261115-001A/SHARED-REPORT-CANCELLATION-20261115-001A-P001_strict_checks/triangle.json.gz": "46026214c6dd92f017e3988fad037f744bde80ce7fe8074cc467e1d00ec5bd89"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"direct_cubic_low_degree_comparisons\": 256,\n  \"first_cubic_row_under_full_inlining\": 16,\n  \"forbidden_rows_charge_0\": 72,\n  \"forbidden_rows_charge_1\": 184,\n  \"fully_pinned_one_check_SAT_comparisons\": 1024,\n  \"reoriented_square_individual_strict_clause_deletion_models\": 3744,\n  \"signed_cycle_SAT_comparisons\": 24,\n  \"square_charged_names\": 5,\n  \"square_first_sum_quadratic_terms\": 8,\n  \"square_maximum_printed_degree\": 2,\n  \"square_maximum_width\": 17,\n  \"square_proof_nodes\": 21487,\n  \"square_uniform_node_bound\": 42977,\n  \"status\": \"passed\",\n  \"triangle_charged_names\": 4,\n  \"triangle_individual_strict_clause_deletion_models\": 1968,\n  \"triangle_input_variables\": 1651,\n  \"triangle_maximum_printed_degree\": 2,\n  \"triangle_maximum_width\": 17,\n  \"triangle_proof_nodes\": 14159,\n  \"triangle_uniform_node_bound\": 32233,\n  \"wrong_source_row_rejected\": 1\n}\n",
+  "ticket": "SHARED-REPORT-CANCELLATION-20261115-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

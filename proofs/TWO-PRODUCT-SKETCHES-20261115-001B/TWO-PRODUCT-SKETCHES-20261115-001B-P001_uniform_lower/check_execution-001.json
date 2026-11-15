@@ -1,0 +1,28 @@
+{
+  "artifact_id": "TWO-PRODUCT-SKETCHES-20261115-001B-P001",
+  "at": "2026-11-15T22:44:11+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/manifest.json": "0cb5efbd08f73ed8e25b4f8dc64eb70cf326b49a380f9e677aa3f5389fd7413d",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/manifest.json": "a5e4479cd49db010798659a07f1f09a24a91b1a22c59e62bd7c720cc4c3ff79d",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/check.py": "4e3914522d112721a8acf1dfcdf40ebbb2cc36f1d6c42400ba452f2fdde95921",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/checks.json": "0ba5e8f8ee555a6b1beb8ff31eab569042f17ade7c836a01b89334878f921312",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/projector_filter.py": "a52353306f8766d4f6fc1f50ac0ec7fd30c421d2fa22fef6af0a9ff553ad66c9",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/proof.md": "7130aab187d0e2851f475b355b658316f6b87b7bdc11a963fa58ed09f4dea446"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"full_rank_three_output_graph\": {\n    \"all_cells_by_codimension\": [\n      1,\n      1022,\n      173740\n    ],\n    \"codimension_3_control_cell_and_graph_dimensions\": [\n      6,\n      3\n    ]\n  },\n  \"left_honest_frontiers\": {\n    \"complete_mixed_query_trees\": 128,\n    \"first_right_shrinks\": 550,\n    \"tree_leaves\": 792\n  },\n  \"many_sketches\": {\n    \"all_prefix_disagreement_sequences_through_twelve_blocks\": 4095,\n    \"maximum_quadratic_outputs\": 8,\n    \"varying_output_rank_restrictions\": 120\n  },\n  \"path_rank_audit\": {\n    \"31_edge_one_side_leaf_bounds\": {\n      \"0\": 43691,\n      \"1\": 21846,\n      \"2\": 10923,\n      \"3\": 5462,\n      \"4\": 2731,\n      \"5\": 1366,\n      \"6\": 683,\n      \"7\": 342,\n      \"8\": 256,\n      \"9\": 512,\n      \"10\": 1017,\n      \"11\": 2017,\n      \"12\": 3972,\n      \"13\": 7711,\n      \"14\": 14564,\n      \"15\": 26215\n    },\n    \"31_edge_rank_distribution\": {\n      \"0\": 2,\n      \"1\": 122,\n      \"2\": 3364,\n      \"3\": 55440,\n      \"4\": 608400,\n      \"5\": 4688320,\n      \"6\": 26069120,\n      \"7\": 105830912,\n      \"8\": 313685130,\n      \"9\": 645537090,\n      \"10\": 705813560,\n      \"11\": 299492684,\n      \"12\": 43590306,\n      \"13\": 2079658,\n      \"14\": 29450,\n      \"15\": 90\n    },\n    \"individual_masks_passing_below_512_filter\": 419516042,\n    \"small_path_masks_checked\": 8190\n  },\n  \"projector_count\": {\n    \"31_edge_rank_pairs_7_9_in_either_order\": 203060,\n    \"31_edge_rank_seven_projectors\": 101530,\n    \"direct_small_masks\": 10922\n  },\n  \"rank_seven_polar_filter\": {\n    \"31_edge_nonprojector_mask\": \"0x2aaa\",\n    \"31_edge_residual_half_rank\": 10,\n    \"small_masks\": {\n      \"improved\": 512,\n      \"projector\": 155,\n      \"square_zero\": 15\n    }\n  },\n  \"regularization_eliminations\": {\n    \"0\": 697,\n    \"1\": 71,\n    \"2\": 47\n  },\n  \"status\": \"passed\"\n}\n",
+  "ticket": "TWO-PRODUCT-SKETCHES-20261115-001B",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

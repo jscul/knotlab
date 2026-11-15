@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**357 current results** and 5 superseded ones, from 392 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**360 current results** and 5 superseded ones, from 393 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 19 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 44 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 47 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 392 epics with their closures
+- [Epics](#epics): all 393 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -445,6 +445,15 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-15 · Recognizing the form of a two-choice report encodes 3-SAT** (`TWO-CHOICE-IMPLICATIONS-20261115-001-D002`).
   Choosing only earlier guards can make a local report equal the specified nontrivial implication exactly when a strict ternary formula has a solution. The same hardness applies to recognizing whether unary pins and positive implications suffice.
   [proof P001](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001C/TWO-CHOICE-IMPLICATIONS-20261115-001C-P001_report_recognition/proof.md), [epic closure](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001Z/TWO-CHOICE-IMPLICATIONS-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Exact costs for two revealed sums on paths of up to eight products** (`TWO-PRODUCT-SKETCHES-20261115-001-D001`).
+  The first eight path lengths require 2, 2, 4, 4, 6, 6, 8 and 8 cases. Moving a shared cut on the six-product path from the third product to the second reduces the optimum from eight to six.
+  [proof P001](proofs/TWO-PRODUCT-SKETCHES-20261115-001A/TWO-PRODUCT-SKETCHES-20261115-001A-P001_small_minimax/proof.md), [epic closure](proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · How many revealed product bits permit polynomially many cases** (`TWO-PRODUCT-SKETCHES-20261115-001-D002`).
+  One extra product XOR per evaluator leaves the optimal number of affine cases of order two to one quarter of the number of products. Polynomial case growth requires order m/log m extra bits on each side and matched prefix bits attain that order.
+  [proof P001](proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/proof.md), [epic closure](proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Exact midpoint optimality and limitations on unequal masks** (`TWO-PRODUCT-SKETCHES-20261115-001-D003`).
+  The midpoint and the best common mask require exactly 512 cases, while all independently chosen pairs require at least 342. Any strict improvement uses unequal, noncomplementary masks with specified rank restrictions.
+  [proof P001](proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/proof.md), [proof P001](proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/proof.md), [epic closure](proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · Two repeated middle names suffice for general 3-SAT** (`TWO-RELAY-PADDING-20261115-001-D001`).
   Two names can express a formula's clauses as paths that must each be broken. At three pad placements per shared name the resulting fixed-wiring decision is NP-complete; at two occurrences in normalized path clauses, allocating each bit to a clause decides it in linear time.
   [proof P001](proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/proof.md), [proof P001](proofs/TWO-RELAY-PADDING-20261115-001B/TWO-RELAY-PADDING-20261115-001B-P001_two_middle_reduction/proof.md), [epic closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md)
@@ -1602,6 +1611,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Choosing how to order two routes within each stage (`SWAPPED-ROUTE-GROUPING-20261115-001`) | [closure](proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/SWAPPED-ROUTE-GROUPING-20261115-001/) |
 | 2026-11-15 | Join four surviving reports and test growing non-affine checks (`TERNARY-REPORT-JOINS-20261115-001`) | [closure](proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TERNARY-REPORT-JOINS-20261115-001/) |
 | 2026-11-15 | What two shared choices must report together (`TWO-CHOICE-IMPLICATIONS-20261115-001`) | [closure](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001Z/TWO-CHOICE-IMPLICATIONS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-CHOICE-IMPLICATIONS-20261115-001/) |
+| 2026-11-15 | Two separately revealed XORs of path products (`TWO-PRODUCT-SKETCHES-20261115-001`) | [closure](proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-PRODUCT-SKETCHES-20261115-001/) |
 | 2026-11-15 | Two repeated middle variables and a second way to group the hidden choices (`TWO-RELAY-PADDING-20261115-001`) | [closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | Sharing a middle variable between two routes (`UNSIGNED-ROUTE-JOINS-20261115-001`) | [closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/UNSIGNED-ROUTE-JOINS-20261115-001/) |
 

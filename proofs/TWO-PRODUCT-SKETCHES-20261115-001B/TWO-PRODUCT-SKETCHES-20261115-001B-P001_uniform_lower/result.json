@@ -1,0 +1,147 @@
+{
+  "artifact_id": "TWO-PRODUCT-SKETCHES-20261115-001B-P001",
+  "claim": "Arbitrary separate extra product XORs leave optimal case count of order two to one quarter of the number of path products. Allowing more XORs gives a polynomial case bound exactly at the order of m/log m bits on each side when their choices can be optimized. For 31 products each rank-seven component in a sub-512 candidate must split off independently from the total.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/check_execution-001.json",
+    "sha256": "8f9d8c791e41c9a72a47af9e0413adfaa3c25354b779877ef9995f9357da6042"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "full_rank_three_output_graph": {
+    "all_cells_by_codimension": [
+      1,
+      1022,
+      173740
+    ],
+    "codimension_3_control_cell_and_graph_dimensions": [
+      6,
+      3
+    ]
+  },
+  "input_bindings": {
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/manifest.json": "0cb5efbd08f73ed8e25b4f8dc64eb70cf326b49a380f9e677aa3f5389fd7413d",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/manifest.json": "a5e4479cd49db010798659a07f1f09a24a91b1a22c59e62bd7c720cc4c3ff79d",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/check.py": "4e3914522d112721a8acf1dfcdf40ebbb2cc36f1d6c42400ba452f2fdde95921",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/checks.json": "0ba5e8f8ee555a6b1beb8ff31eab569042f17ade7c836a01b89334878f921312",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/projector_filter.py": "a52353306f8766d4f6fc1f50ac0ec7fd30c421d2fa22fef6af0a9ff553ad66c9",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/proof.md": "7130aab187d0e2851f475b355b658316f6b87b7bdc11a963fa58ed09f4dea446"
+  },
+  "kind": "proof",
+  "left_honest_frontiers": {
+    "complete_mixed_query_trees": 128,
+    "first_right_shrinks": 550,
+    "tree_leaves": 792
+  },
+  "many_sketches": {
+    "all_prefix_disagreement_sequences_through_twelve_blocks": 4095,
+    "maximum_quadratic_outputs": 8,
+    "varying_output_rank_restrictions": 120
+  },
+  "path_rank_audit": {
+    "31_edge_one_side_leaf_bounds": {
+      "0": 43691,
+      "1": 21846,
+      "10": 1017,
+      "11": 2017,
+      "12": 3972,
+      "13": 7711,
+      "14": 14564,
+      "15": 26215,
+      "2": 10923,
+      "3": 5462,
+      "4": 2731,
+      "5": 1366,
+      "6": 683,
+      "7": 342,
+      "8": 256,
+      "9": 512
+    },
+    "31_edge_rank_distribution": {
+      "0": 2,
+      "1": 122,
+      "10": 705813560,
+      "11": 299492684,
+      "12": 43590306,
+      "13": 2079658,
+      "14": 29450,
+      "15": 90,
+      "2": 3364,
+      "3": 55440,
+      "4": 608400,
+      "5": 4688320,
+      "6": 26069120,
+      "7": 105830912,
+      "8": 313685130,
+      "9": 645537090
+    },
+    "individual_masks_passing_below_512_filter": 419516042,
+    "small_path_masks_checked": 8190
+  },
+  "projector_count": {
+    "31_edge_rank_pairs_7_9_in_either_order": 203060,
+    "31_edge_rank_seven_projectors": 101530,
+    "direct_small_masks": 10922
+  },
+  "rank_seven_polar_filter": {
+    "31_edge_nonprojector_mask": "0x2aaa",
+    "31_edge_residual_half_rank": 10,
+    "small_masks": {
+      "improved": 512,
+      "projector": 155,
+      "square_zero": 15
+    }
+  },
+  "raw_result": {
+    "path": "proofs/TWO-PRODUCT-SKETCHES-20261115-001B/TWO-PRODUCT-SKETCHES-20261115-001B-P001_uniform_lower/checker_output-001.json",
+    "sha256": "0499b6f86ef3936f36d80319145178a83d2d39fd047cdbfb9ceee6d04ffde777"
+  },
+  "regularization_eliminations": {
+    "0": 697,
+    "1": 71,
+    "2": 47
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TWO-PRODUCT-SKETCHES-20261115-001B",
+  "validation": {
+    "independence": "V1. The proof tracks honest assignments to the first informative opposite-side inference, allows arbitrary mixed visible queries and proves restriction monotonicity. Independent checks exercise actual saturated trees, affine graph cells, rank counts and explicit nonprojector reductions.",
+    "level": "V1",
+    "novelty": "Classical quadratic bias, rank and affine hull are inputs. The counting argument addresses a tree refutation where each local evaluator takes all affine consequences, with different fixed observations on the two sides."
+  }
+}

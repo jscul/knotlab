@@ -1,0 +1,260 @@
+{
+  "all_small_mixed_queries": {
+    "1,1": {
+      "answer_embeddings": 254,
+      "queries": 127,
+      "simultaneously_both_inputs_and_an_output": 54,
+      "source_states": 2032
+    },
+    "1,2": {
+      "answer_embeddings": 1022,
+      "queries": 511,
+      "simultaneously_both_inputs_and_an_output": 270,
+      "source_states": 44584
+    },
+    "2,1": {
+      "answer_embeddings": 1022,
+      "queries": 511,
+      "simultaneously_both_inputs_and_an_output": 270,
+      "source_states": 127912
+    },
+    "2,2": {
+      "answer_embeddings": 148,
+      "queries": 74,
+      "simultaneously_both_inputs_and_an_output": 44,
+      "source_states": 74816
+    }
+  },
+  "artifact_id": "TWO-PRODUCT-SKETCHES-20261115-001C-P001",
+  "claim": "On 31 adjacent products the common midpoint requires exactly 512 leaves and depth nine under arbitrary adaptive visible affine questions, and 512 is the optimum across all common masks. A rank criterion gives the same lower bound when all four partial checksums have half-rank at least eight, even for unequal choices.",
+  "early_closed_asymmetric_child": {
+    "edges": 3,
+    "masks": [
+      2,
+      0
+    ],
+    "one_query_left_middle_product": 1,
+    "opposite_charge_cell_sizes_during_hull_iterations": [
+      32,
+      4,
+      0
+    ]
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/check_execution-001.json",
+    "sha256": "b97f976b6a64e5c31f5802b131c4ab6e6805bc315d37e6a92ae157a9f08d5861"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/TERNARY-REPORT-JOINS-20261115-001B/TERNARY-REPORT-JOINS-20261115-001B-P001_interacting_products/manifest.json": "0cb5efbd08f73ed8e25b4f8dc64eb70cf326b49a380f9e677aa3f5389fd7413d",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001C/TERNARY-REPORT-JOINS-20261115-001C-P001_opposed_checksums/manifest.json": "31ded0e302e6a6816f55b110e9c9b540cc86639b9e8e866391bcc37dc51f81e4",
+    "proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/manifest.json": "a5e4479cd49db010798659a07f1f09a24a91b1a22c59e62bd7c720cc4c3ff79d",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/check.py": "47cd86e351844a8aff869e2bcbca5020c6cf85c5a15d667ab37b03f104ac0576",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/checks.json": "3e88596273aafb0b260d234c601ae7682e27f2b7cb8616c5bc1198eebe2af663",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/proof.md": "753173c6cc0ad27b75dc5fbcd12958591c20aba78db8c2bee6c314fed7e7483b",
+    "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/solver.py": "5def25c0e9a6ee160ef7908a2fd8393dd23e7932d34034d929c38adbab440b39"
+  },
+  "kind": "proof",
+  "length_31_trees": {
+    "midpoint": {
+      "edge_mask_hex": "0xffff",
+      "exact_depth": 9,
+      "half_ranks": [
+        8,
+        8
+      ],
+      "invertible_raw_factors": 32,
+      "verified_odd_discrepancy_leaves": 512
+    },
+    "noncontiguous": {
+      "edge_mask_hex": "0x33333333",
+      "exact_depth": 9,
+      "half_ranks": [
+        8,
+        8
+      ],
+      "invertible_raw_factors": 32,
+      "verified_odd_discrepancy_leaves": 512
+    },
+    "unbalanced": {
+      "edge_mask_hex": "0x3fff",
+      "exact_depth": 10,
+      "half_ranks": [
+        7,
+        9
+      ],
+      "invertible_raw_factors": 32,
+      "verified_odd_discrepancy_leaves": 640
+    }
+  },
+  "length_31_whole_evaluator_fixed_subspaces": {
+    "common_product_level_spans": {
+      "output_row_rank": 1,
+      "query_codimension": 8,
+      "side_hull_bases": [
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 35
+        },
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 52
+        }
+      ]
+    },
+    "cross_sketch_row": {
+      "output_row_rank": 1,
+      "query_codimension": 8,
+      "side_hull_bases": [
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 52
+        },
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 59
+        }
+      ]
+    },
+    "input_only_forces_left_sketch": {
+      "output_row_rank": 0,
+      "query_codimension": 8,
+      "side_hull_bases": [
+        {
+          "affine_dimension": 26,
+          "deterministic_draws": 29
+        },
+        {
+          "affine_dimension": 26,
+          "deterministic_draws": 73
+        }
+      ]
+    },
+    "rare_product_level_forces_two_inputs": {
+      "output_row_rank": 1,
+      "query_codimension": 8,
+      "side_hull_bases": [
+        {
+          "affine_dimension": 25,
+          "deterministic_draws": 27
+        },
+        {
+          "affine_dimension": 25,
+          "deterministic_draws": 60
+        }
+      ]
+    },
+    "three_output_rows": {
+      "output_row_rank": 3,
+      "query_codimension": 8,
+      "side_hull_bases": [
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 179
+        },
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 212
+        }
+      ]
+    },
+    "total_pinned": {
+      "output_row_rank": 1,
+      "query_codimension": 8,
+      "side_hull_bases": [
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 54
+        },
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 83
+        }
+      ]
+    },
+    "two_output_rows": {
+      "output_row_rank": 2,
+      "query_codimension": 8,
+      "side_hull_bases": [
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 95
+        },
+        {
+          "affine_dimension": 27,
+          "deterministic_draws": 106
+        }
+      ]
+    }
+  },
+  "path_mask_census": {
+    "all_ordered_pairs": 4611686018427387904,
+    "balanced_bundle_masks": 12870,
+    "certified_by_either_criterion": 4041073256924708864,
+    "full_Gaussian_crosscheck_through_edges": 14,
+    "masks_with_additive_half_ranks": 557056,
+    "masks_with_both_half_ranks_at_least_8": 2010227968,
+    "ordered_pairs_with_all_large_forms": 4041016483329409024,
+    "ordered_pairs_with_small_union": 56773595299840,
+    "outside_these_two_criteria": 570612761502679040
+  },
+  "raw_result": {
+    "path": "proofs/TWO-PRODUCT-SKETCHES-20261115-001C/TWO-PRODUCT-SKETCHES-20261115-001C-P001_sketch_strategies/checker_output-001.json",
+    "sha256": "3e88596273aafb0b260d234c601ae7682e27f2b7cb8616c5bc1198eebe2af663"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "TWO-PRODUCT-SKETCHES-20261115-001C",
+  "unequal_mask_honest_control": {
+    "edge_masks": [
+      1,
+      4
+    ],
+    "honest_sketches": [
+      1,
+      0
+    ],
+    "reports": 3
+  },
+  "validation": {
+    "independence": "V1. The two-block embeddings, including arbitrary mixed queries, were tested against actual left and right states. The boundary-rank cases were reviewed independently and exercised on 31-edge subspaces. Explicit trees replay on original-product inputs.",
+    "level": "V1",
+    "novelty": "Classical quadratic normal form is the input to a fixed-mask optimality argument in the separate-hull rule, with a common-mask optimum and rigorous asymmetric exclusions."
+  }
+}

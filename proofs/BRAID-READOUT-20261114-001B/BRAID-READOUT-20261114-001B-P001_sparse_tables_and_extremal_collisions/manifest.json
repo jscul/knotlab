@@ -1,0 +1,91 @@
+{
+  "artifact_id": "BRAID-READOUT-20261114-001B-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "BRAID-READOUT-20261114-001B-P001",
+  "claim": "Over a prime alphabet of size p every table of fewer than p states is recoverable. Disjoint minimum ties are the two complete families at distinct differences. Minimum ties replacing one state are in bijection with derangements of p\u22121 positions for each crossing pair.",
+  "dependencies": [],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/check.py": "01c74e052868d35bf71534d4b3ee453cec8f203b8a12871495f0a95c619c488f",
+    "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/check_execution-001.json": "2615fb536232cf550c413f15481c304d28c986e11eae13541742f4ffeaf6c5b7",
+    "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/checker_output-001.json": "353ed0b4b1d28fdc7d280f7546d74eaae54b9d063b0c4ff1ba4542a4132885ef",
+    "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/proof.md": "3ccd2cef50d95dfe20ee344613db3f4c58a191c225fc8a10c7f9abdc28ae4f59",
+    "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/result.json": "30b6977a770b04a391cc7489525e637d496e084c8052122da1d5aa554ead2ad2"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "A smaller ambiguity exists, or a disjoint colliding pair of size p is not two complete, distinct slope classes.",
+    "A shared-state construction is enabled by repeated states or cannot be decoded back to its declared permutation."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "BRAID-READOUT-20261114-001"
+    ],
+    "home_scope": "BRAID-READOUT-20261114-001",
+    "parents": []
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {},
+  "paths": {
+    "check": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/check.py",
+    "check_execution": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/check_execution-001.json",
+    "directory": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions",
+    "identity": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/identity.json",
+    "manifest": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/manifest.json",
+    "proof": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/proof.md",
+    "raw_result": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/checker_output-001.json",
+    "result": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/result.json"
+  },
+  "proof": "BRAID-READOUT-20261114-001B-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "BRAID-READOUT-20261114-001B",
+  "title": "Sparse recovery and minimum disjoint ambiguities over prime alphabets",
+  "validation": {
+    "independence": "Independent referee compared the grid and frameproof literature and counted all 10,737,573 candidate common sets for fixed nonparallel and parallel pairs at p=7. Coordinator replayed the primary checker.",
+    "level": "V1",
+    "novelty": "Known superimposed-code threshold and tight-cover reasoning; the derangement count and its scope are the local value. No priority claim."
+  }
+}

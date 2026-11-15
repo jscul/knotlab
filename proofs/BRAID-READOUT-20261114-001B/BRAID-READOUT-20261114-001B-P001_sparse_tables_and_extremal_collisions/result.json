@@ -1,0 +1,87 @@
+{
+  "artifact_id": "BRAID-READOUT-20261114-001B-P001",
+  "claim": "Over a prime alphabet of size p every table of fewer than p states is recoverable. Disjoint minimum ties are the two complete families at distinct differences. Minimum ties replacing one state are in bijection with derangements of p\u22121 positions for each crossing pair.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/check_execution-001.json",
+    "sha256": "2615fb536232cf550c413f15481c304d28c986e11eae13541742f4ffeaf6c5b7"
+  },
+  "exhaustive": [
+    {
+      "disjoint_ties": 1,
+      "prime": 2,
+      "single_replacement_ties": 0,
+      "sparse_tables": 5,
+      "threshold_tables": 6
+    },
+    {
+      "disjoint_ties": 3,
+      "prime": 3,
+      "single_replacement_ties": 27,
+      "sparse_tables": 46,
+      "threshold_tables": 84
+    },
+    {
+      "disjoint_ties": 10,
+      "prime": 5,
+      "single_replacement_ties": 2250,
+      "sparse_tables": 15276,
+      "threshold_tables": 53130
+    }
+  ],
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/check.py": "01c74e052868d35bf71534d4b3ee453cec8f203b8a12871495f0a95c619c488f",
+    "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/proof.md": "3ccd2cef50d95dfe20ee344613db3f4c58a191c225fc8a10c7f9abdc28ae4f59"
+  },
+  "kind": "proof",
+  "larger_prime": 7,
+  "normalized_single_replacement_ties": 265,
+  "raw_result": {
+    "path": "proofs/BRAID-READOUT-20261114-001B/BRAID-READOUT-20261114-001B-P001_sparse_tables_and_extremal_collisions/checker_output-001.json",
+    "sha256": "353ed0b4b1d28fdc7d280f7546d74eaae54b9d063b0c4ff1ba4542a4132885ef"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "BRAID-READOUT-20261114-001B",
+  "validation": {
+    "independence": "Independent referee compared the grid and frameproof literature and counted all 10,737,573 candidate common sets for fixed nonparallel and parallel pairs at p=7. Coordinator replayed the primary checker.",
+    "level": "V1",
+    "novelty": "Known superimposed-code threshold and tight-cover reasoning; the derangement count and its scope are the local value. No priority claim."
+  }
+}

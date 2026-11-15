@@ -1,0 +1,173 @@
+{
+  "all_two_name_rules": {
+    "assignment_equation_checks": 864,
+    "literal_maps": 36,
+    "resolution_contexts": 497664,
+    "semantic_weakenings": 99540,
+    "single_weakening_repairs": 4512
+  },
+  "artifact_id": "ROUTE-PARITY-TRANSFER-20261115-001B-P001",
+  "claim": "Every S-line DAG refutation in parity resolution with one-premise semantic weakening projects to a checked source refutation using at most S lines and no more resolution depth. Conversion costs polynomial work in the supplied encoding.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/check_execution-001.json",
+    "sha256": "0b74165a66643fd98d33a2eff36cbccb1349f2a64a3e88668c8d5c3bb232ae47"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/COMPRESSION-ROBUST-PROOF-COMPLEXITY-001HDW/COMPRESSION-ROBUST-PROOF-COMPLEXITY-001HDW-P001_common_restriction_conversion/manifest.json": "b0df9395c231f79ca3ff87a839fd9f774659b949a23925bf8cbc379c507eef88",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/check.py": "66d7eff9abede565aeb97f98df8a27f11b494e5e738849d82c181a35ed77b1b1",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/checks.json": "8bc205e6881d38c08642cec7cc2e342972c0e5205111d887034012417c21ef0b",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/proof.md": "bcd8fcd17884b35d012e51fbbefaaab73276d876a6a686273470d383fe8f0054",
+    "proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/manifest.json": "0daab833ea1a6a2f3ed5f8bac5a56d8171a46a341c3d4f94500e73fe7aab26c3"
+  },
+  "kind": "proof",
+  "parity_DAG": {
+    "all_source_lines_truth_checked": true,
+    "cases": {
+      "both_premises_tautological": 1,
+      "canonical_resolution": 4,
+      "constant_pivot": 2,
+      "one_tautological_parent": 3,
+      "retained_pivot_weakening": 1,
+      "semantic_weakening": 8,
+      "tautological_nodes_omitted": 6
+    },
+    "source": {
+      "lines": 19,
+      "resolution_depth": 4,
+      "shared_parents": 2
+    },
+    "source_axiom_indices_reached": [
+      0,
+      1
+    ],
+    "source_proof_json_bytes": 1031,
+    "source_variables": 2,
+    "target": {
+      "lines": 25,
+      "resolution_depth": 8,
+      "shared_parents": 4
+    },
+    "target_axioms": 6,
+    "target_proof_json_bytes": 1467,
+    "target_variables": 8,
+    "tautological_axiom_images": 3
+  },
+  "raw_result": {
+    "path": "proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/checker_output-001.json",
+    "sha256": "ec1eae59715b04e25ba74a9bd11d8433c053485c8d665eccf1d1502b21c18f0f"
+  },
+  "rejected_controls": [
+    "two_tautological_images_are_not_an_empty_axiom",
+    "unused_axiom_image_is_only_a_consequence",
+    "missing_variable_image",
+    "unsound_target_weakening_disguised_by_alias",
+    "forward_parent",
+    "separate_substitutions_for_opposite_units"
+  ],
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "sharp_chain_controls": [
+    {
+      "essential_axioms": 2,
+      "minimal_nodes": 3,
+      "variables": 1
+    },
+    {
+      "essential_axioms": 5,
+      "minimal_nodes": 9,
+      "variables": 4
+    },
+    {
+      "essential_axioms": 10,
+      "minimal_nodes": 19,
+      "variables": 9
+    }
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "ROUTE-PARITY-TRANSFER-20261115-001B",
+  "two_corridor_guarded_refutation": {
+    "all_source_lines_truth_checked": true,
+    "cases": {
+      "both_premises_tautological": 118,
+      "canonical_resolution": 1,
+      "constant_pivot": 8,
+      "one_tautological_parent": 8,
+      "tautological_nodes_omitted": 242
+    },
+    "source": {
+      "lines": 11,
+      "resolution_depth": 1,
+      "shared_parents": 0
+    },
+    "source_axiom_indices_reached": [
+      0,
+      1
+    ],
+    "source_proof_json_bytes": 542,
+    "source_variables": 1,
+    "target": {
+      "lines": 253,
+      "resolution_depth": 10,
+      "shared_parents": 2
+    },
+    "target_axioms": 280,
+    "target_proof_json_bytes": 32178,
+    "target_variables": 273,
+    "tautological_axiom_images": 278
+  },
+  "validation": {
+    "independence": "Independent finite verifier uses Gaussian consistency to audit references and rules, including shared premises and substitutions that collapse affine forms.",
+    "level": "V1",
+    "novelty": "Affine substitution is established locally on a different representation. The explicit signed-axiom transport with one output node per input node and a checked DAG transformer is the local contribution."
+  },
+  "wide_identity_controls": [
+    {
+      "equations_on_widest_line": 127,
+      "json_bytes": 1966,
+      "nodes": 17,
+      "variables": 7
+    },
+    {
+      "equations_on_widest_line": 255,
+      "json_bytes": 3164,
+      "nodes": 19,
+      "variables": 8
+    }
+  ]
+}

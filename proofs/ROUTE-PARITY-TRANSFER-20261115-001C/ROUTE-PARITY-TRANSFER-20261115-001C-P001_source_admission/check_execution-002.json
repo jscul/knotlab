@@ -1,0 +1,27 @@
+{
+  "artifact_id": "ROUTE-PARITY-TRANSFER-20261115-001C-P001",
+  "at": "2026-11-15T09:29:16+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/COMPRESSION-ROBUST-PROOF-COMPLEXITY-001HDW/COMPRESSION-ROBUST-PROOF-COMPLEXITY-001HDW-P001_common_restriction_conversion/manifest.json": "b0df9395c231f79ca3ff87a839fd9f774659b949a23925bf8cbc379c507eef88",
+    "proofs/EVIDENCE-001A/EVIDENCE-001A-P001_external_evidence_admission_schema/manifest.json": "379d7a0c3294ecccb905ddd5046636bb85b165013260ccfba4e28a4131d9942f",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/admission.json": "0bd0b4d001714f82357e043527669214a1ff7f976903bd3954f2e0291cba3570",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/check.py": "608dd23a39f3710878bfeb215348a3e9657c4feffcc2a723f4fd517ae93f4887",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/checks.json": "c91a2a3bca41e5b8c46f5b6f93a11539054029c91813316d8851af4f7ee758e4",
+    "proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/proof.md": "257d424d5c2d4ee1c1450135bb6af7dd1b8b656fe6f97b0e0eb9178976b411bc"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"admission\": {\n    \"accepted\": true,\n    \"fields\": 22,\n    \"primary_pdf_sha256\": \"9f7eb894da07496b4cba14cbf7a4a109d64e994837fc0478be541cc4aaa57306\",\n    \"proved_local_parents\": 2\n  },\n  \"larger_control\": {\n    \"five_coordinate_excluded_middle_nodes\": 93,\n    \"five_coordinate_row_sum_nodes\": 52,\n    \"five_variable_affine_falsifying_sets\": 2452,\n    \"wrong_target_rejected\": true\n  },\n  \"rule_cases\": {\n    \"cut_cases_by_branch\": {\n      \"pivot_false_on_goal_falsifiers\": 277,\n      \"pivot_takes_both_values\": 78,\n      \"pivot_true_on_goal_falsifiers\": 277,\n      \"tautological_goal\": 520\n    },\n    \"raw_three_variable_clauses\": 65536,\n    \"semantically_true\": 63810,\n    \"two_variable_cut_cases\": 1152\n  },\n  \"sampling\": {\n    \"first_moment_base_at_density_eight\": \"5764801/8388608\",\n    \"uniform_populations\": {\n      \"3\": {\n        \"assignments\": 8,\n        \"clauses\": 8\n      },\n      \"4\": {\n        \"assignments\": 16,\n        \"clauses\": 32\n      },\n      \"5\": {\n        \"assignments\": 32,\n        \"clauses\": 80\n      },\n      \"6\": {\n        \"assignments\": 64,\n        \"clauses\": 160\n      },\n      \"7\": {\n        \"assignments\": 128,\n        \"clauses\": 280\n      }\n    }\n  },\n  \"small_cubes\": {\n    \"1\": {\n      \"affine_falsifying_sets\": 4,\n      \"all_valid_unary_implications\": 9,\n      \"max_observed_nodes\": 2\n    },\n    \"2\": {\n      \"affine_falsifying_sets\": 12,\n      \"all_valid_unary_implications\": 45,\n      \"max_observed_nodes\": 10\n    },\n    \"3\": {\n      \"affine_falsifying_sets\": 52,\n      \"all_valid_unary_implications\": 349,\n      \"max_observed_nodes\": 56\n    }\n  },\n  \"status\": \"passed\",\n  \"whole_refutation\": {\n    \"initial_strict_clauses\": 8,\n    \"semantic_dag_nodes\": 15,\n    \"syntactic_nodes\": 32,\n    \"syntactic_rule_counts\": {\n      \"contraction\": 10,\n      \"delete_false_constant\": 7,\n      \"input\": 8,\n      \"linear_combination\": 7\n    }\n  }\n}\n",
+  "ticket": "ROUTE-PARITY-TRANSFER-20261115-001C",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

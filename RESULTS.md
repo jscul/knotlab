@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**339 current results** and 5 superseded ones, from 382 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**340 current results** and 5 superseded ones, from 383 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 17 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 28 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 29 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 382 epics with their closures
+- [Epics](#epics): all 383 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -390,6 +390,9 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-15 · What a forward reader must keep about shared middle choices** (`ROUTE-FRONTIER-MEMORY-20261115-001-D001`).
   Forced values and an implication preorder describe the residual exactly. A fixed two-route formula realizes all 732 possibilities on four ordinary names and forces quadratic one-pass activation memory in general.
   [proof P001](proofs/ROUTE-FRONTIER-MEMORY-20261115-001A/ROUTE-FRONTIER-MEMORY-20261115-001A-P001_exact_boundary_profiles/proof.md), [proof P001](proofs/ROUTE-FRONTIER-MEMORY-20261115-001B/ROUTE-FRONTIER-MEMORY-20261115-001B-P001_one_pass_memory/proof.md), [epic closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · Two-use route encodings inherit a parity proof-length lower bound** (`ROUTE-PARITY-TRANSFER-20261115-001-D001`).
+  A signed substitution sends the compiled axioms exactly to the source and a whole refutation to at most its original number of lines. The distribution induced by random strict clauses at density eight gives exponential lower bounds in the listed stage count and stretched-exponential lower bounds in the fixed stage count, conditional on the admitted preprint theorem.
+  [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001A/ROUTE-PARITY-TRANSFER-20261115-001A-P001_literal_projection/proof.md), [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001B/ROUTE-PARITY-TRANSFER-20261115-001B-P001_dag_transport/proof.md), [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001C/ROUTE-PARITY-TRANSFER-20261115-001C-P001_source_admission/proof.md), [proof P001](proofs/ROUTE-PARITY-TRANSFER-20261115-001D/ROUTE-PARITY-TRANSFER-20261115-001D-P001_encoded_lower_bound/proof.md), [epic closure](proofs/ROUTE-PARITY-TRANSFER-20261115-001Z/ROUTE-PARITY-TRANSFER-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · Two repeated middle names suffice for general 3-SAT** (`TWO-RELAY-PADDING-20261115-001-D001`).
   Two names can express a formula's clauses as paths that must each be broken. At three pad placements per shared name the resulting fixed-wiring decision is NP-complete; at two occurrences in normalized path clauses, allocating each bit to a clause decides it in linear time.
   [proof P001](proofs/TWO-RELAY-PADDING-20261115-001A/TWO-RELAY-PADDING-20261115-001A-P001_track_regrouping/proof.md), [proof P001](proofs/TWO-RELAY-PADDING-20261115-001B/TWO-RELAY-PADDING-20261115-001B-P001_two_middle_reduction/proof.md), [epic closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md)
@@ -1537,6 +1540,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Where the top binds every depth directly, and whether it is truly bounded (`DIRECT-REACH-20261115-001`) | — | [folder](research/DIRECT-REACH-20261115-001/) |
 | 2026-11-15 | A linear cut scan with shared hidden padding (`ONE-RELAY-PADDING-20261115-001`) | [closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | What a one-pass reader must remember about joined routes (`ROUTE-FRONTIER-MEMORY-20261115-001`) | [closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-FRONTIER-MEMORY-20261115-001/) |
+| 2026-11-15 | Proof length after encoding strict 3-SAT as two-use routes (`ROUTE-PARITY-TRANSFER-20261115-001`) | [closure](proofs/ROUTE-PARITY-TRANSFER-20261115-001Z/ROUTE-PARITY-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-PARITY-TRANSFER-20261115-001/) |
 | 2026-11-15 | Two repeated middle variables and a second way to group the hidden choices (`TWO-RELAY-PADDING-20261115-001`) | [closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | Sharing a middle variable between two routes (`UNSIGNED-ROUTE-JOINS-20261115-001`) | [closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/UNSIGNED-ROUTE-JOINS-20261115-001/) |
 

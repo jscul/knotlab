@@ -1,0 +1,110 @@
+{
+  "all_two_name_rules": {
+    "assignment_equation_checks": 864,
+    "literal_maps": 36,
+    "resolution_contexts": 497664,
+    "semantic_weakenings": 99540,
+    "single_weakening_repairs": 4512
+  },
+  "rejected_controls": [
+    "two_tautological_images_are_not_an_empty_axiom",
+    "unused_axiom_image_is_only_a_consequence",
+    "missing_variable_image",
+    "unsound_target_weakening_disguised_by_alias",
+    "forward_parent",
+    "separate_substitutions_for_opposite_units"
+  ],
+  "wide_identity_controls": [
+    {
+      "variables": 7,
+      "nodes": 17,
+      "equations_on_widest_line": 127,
+      "json_bytes": 1966
+    },
+    {
+      "variables": 8,
+      "nodes": 19,
+      "equations_on_widest_line": 255,
+      "json_bytes": 3164
+    }
+  ],
+  "sharp_chain_controls": [
+    {
+      "variables": 1,
+      "essential_axioms": 2,
+      "minimal_nodes": 3
+    },
+    {
+      "variables": 4,
+      "essential_axioms": 5,
+      "minimal_nodes": 9
+    },
+    {
+      "variables": 9,
+      "essential_axioms": 10,
+      "minimal_nodes": 19
+    }
+  ],
+  "two_corridor_guarded_refutation": {
+    "target": {
+      "lines": 253,
+      "resolution_depth": 10,
+      "shared_parents": 2
+    },
+    "source": {
+      "lines": 11,
+      "resolution_depth": 1,
+      "shared_parents": 0
+    },
+    "cases": {
+      "both_premises_tautological": 118,
+      "canonical_resolution": 1,
+      "constant_pivot": 8,
+      "one_tautological_parent": 8,
+      "tautological_nodes_omitted": 242
+    },
+    "target_axioms": 280,
+    "tautological_axiom_images": 278,
+    "source_axiom_indices_reached": [
+      0,
+      1
+    ],
+    "target_variables": 273,
+    "source_variables": 1,
+    "target_proof_json_bytes": 32178,
+    "source_proof_json_bytes": 542,
+    "all_source_lines_truth_checked": true
+  },
+  "parity_DAG": {
+    "target": {
+      "lines": 25,
+      "resolution_depth": 8,
+      "shared_parents": 4
+    },
+    "source": {
+      "lines": 19,
+      "resolution_depth": 4,
+      "shared_parents": 2
+    },
+    "cases": {
+      "both_premises_tautological": 1,
+      "canonical_resolution": 4,
+      "constant_pivot": 2,
+      "one_tautological_parent": 3,
+      "retained_pivot_weakening": 1,
+      "semantic_weakening": 8,
+      "tautological_nodes_omitted": 6
+    },
+    "target_axioms": 6,
+    "tautological_axiom_images": 3,
+    "source_axiom_indices_reached": [
+      0,
+      1
+    ],
+    "target_variables": 8,
+    "source_variables": 2,
+    "target_proof_json_bytes": 1467,
+    "source_proof_json_bytes": 1031,
+    "all_source_lines_truth_checked": true
+  }
+}

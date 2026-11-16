@@ -2025,6 +2025,22 @@ So holes come in two kinds:
    - **Next.** The line is paused (owner, 2026-11-12); a test of drift under held examples against shuffled ones is recorded (B171)
      ([decision note](../research/CLAMP-LEARN-20261112-001/clamp_learn.md)).
 
+   **2026-11-16: an agent that chooses which knot to act on, with memory, wins where it trained and loses beyond**
+   (`WHERE-NEXT-20261116-001`; referee pending).
+   - **The question.** The owner's agent: it attends to one knot, which activates it, acts on that knot's loops, turns to another
+     knot and remembers the steps it has taken. On planted not-all-equal patterns, attending means taking a violated knot; acting
+     means flipping one of its distinctions; turning means choosing among the knots that flip violated and a few others. Does a
+     learned version need less work than the best hand-written rules, and does what it learns carry over?
+   - **Computed.** At the sizes it trained on (200 to 800 distinctions) it needs about half the flips of the best tuned rule, and
+     nearly all of the gain is its memory of when it last flipped each distinction. Learning where to turn adds little. At four
+     times its training size it only ties the best rule, at sixteen times it needs 2.4 times as many flips, and on a pattern whose
+     knots overlap only within a short run of distinctions it needs 3 to 55 times as many. Each of its steps costs 4 to 8 times as
+     much computing, so it never saves time.
+   - **Reading.** Memory of one's own steps is worth learning here: it beat the hand-written memory rule where it was trained. What
+     it learned is tied to how many steps a return takes at those sizes, a guess that one retraining can test.
+   - **Next.** Memory that reads no step counts, trained on mixed sizes (`WHERE-NEXT-20261116-001`#1); a slower loop that changes the
+     knot structures themselves is recorded as sub-goal B191 ([decision note](../research/WHERE-NEXT-20261116-001/decision.md)).
+
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
      No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.

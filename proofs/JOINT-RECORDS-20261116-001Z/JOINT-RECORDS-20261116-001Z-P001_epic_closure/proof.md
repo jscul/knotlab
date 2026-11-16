@@ -3,7 +3,7 @@
 Status: Proved
 
 Ticket `JOINT-RECORDS-20261116-001Z`, 2026-11-16. A ledger; it makes no new claim. The decision note is
-`research/JOINT-RECORDS-20261116-001/joint_records.md`. Referee pending.
+`research/JOINT-RECORDS-20261116-001/joint_records.md`. Refereed: `JOINT-RECORDS-R1`, confirmed, no fix (commit `4dbbd04df`).
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |

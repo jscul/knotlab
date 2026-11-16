@@ -1,6 +1,6 @@
 # The w-record law is width-based dynamic programming
 
-Status: Proved (referee pending)
+Status: Proved (refereed: `JOINT-RECORDS-R1`, confirmed, no fix)
 
 Ticket `JOINT-RECORDS-20261116-001A`, 16 November 2026. Written by Claude; the advisor model was consulted before the freeze and
 agreed with the reduction, corrected three statements and proposed the seam table. `seam.py` beside this file computes the table
@@ -75,3 +75,11 @@ No other gap is known, and under the law as defined none is possible, by Theorem
 
 `python3 -B seam.py`: S1 to S4 as frozen in the pre-registration, and counts of NAE colourings by a record-carrying run equal brute
 force on the tetrahedron (6), octahedron (18) and icosahedron (72).
+
+## Referee (16 November 2026)
+
+`JOINT-RECORDS-R1` confirmed both theorems with fresh code (`research/JOINT-RECORDS-20261116-001/referee-R1/`). It added one check,
+credited to the referee: every complement-closed relation is the projection of a not-all-equal pattern of knots with distinct
+members, found by exhaustive search (all 4 at s = 2 with three hidden distinctions, all 16 at s = 3 with two), which agrees with
+not-all-equal's polymorphisms being the projections and negation. It also confirmed the zero-pair correspondence (colourings are
+twice the perfect matchings of the dual cubic graph) and the counts 6, 18, 72 three ways.

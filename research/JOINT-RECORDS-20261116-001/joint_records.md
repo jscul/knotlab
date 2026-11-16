@@ -1,6 +1,7 @@
 # Joint records where they can matter
 
-Epic `JOINT-RECORDS-20261116-001`, 16 November 2026, by Claude; takes `CARRY-STRANDS-20261116-001#1`. Goal G3. Referee pending.
+Epic `JOINT-RECORDS-20261116-001`, 16 November 2026, by Claude; takes `CARRY-STRANDS-20261116-001#1`. Goal G3. Refereed:
+`JOINT-RECORDS-R1`, confirmed, no Block and no fix needed ([report](referee-R1/report.md), commit `4dbbd04df`).
 Pre-registration: [preregistration.md](preregistration.md), frozen in `8fa8b0697` before its one computation. Proof:
 [Theorems 1–2](../../proofs/JOINT-RECORDS-20261116-001A/JOINT-RECORDS-20261116-001A-P001_record_law/proof.md).
 
@@ -18,7 +19,8 @@ algebraic and matching escapes:
 - Petersen's theorem for deciding on a zero-pair weave, which is always satisfiable.
 
 One tidy fact is the program's own. What a seam of s shared distinctions must report is a relation closed under flipping every
-value. Every such relation occurs, 2^(2^(s−1)) of them. Pairwise reports suffice for one or two shared distinctions. At three they
+value. Every such relation occurs, 2^(2^(s−1)) of them (the referee checked this directly: every one is the projection of a
+not-all-equal pattern, all 4 at s = 2 with three hidden distinctions and all 16 at s = 3 with two). Pairwise reports suffice for one or two shared distinctions. At three they
 fail for exactly 4 of the 16 reports: not-all-equal and its three single-flip variants, which are knots. The first seam reports
 that pairwise reports cannot capture are the knots themselves, the foundation's two/three boundary (computed; the general fact,
 two-place shadows determine a Boolean relation exactly when it is majority-closed, is Baker–Pixley). At four shared distinctions,
@@ -26,8 +28,9 @@ two-place shadows determine a Boolean relation exactly when it is majority-close
 
 ## The connections
 
-- **The Codex seam finding** (`GUARD-CHOICE-SEPARATION-20261115-001`) is the level below. Separate bit supports on two shared
-  choices miss a contradiction. Its pair ({10} against {00, 01, 11}) is not closed under flipping, so it cannot arise in pure
+- **The Codex seam finding** (`GUARD-CHOICE-SEPARATION-20261115-001`, developed in `TWO-CHOICE-IMPLICATIONS-20261115-001`, whose
+  exact two-port reports number 13 for positive implications) is the level below. Separate bit supports on two shared choices miss
+  a contradiction. Its pair ({10} against {00, 01, 11}) is not closed under flipping, so it cannot arise in pure
   not-all-equal patterns, where one shared distinction reports only satisfiable or not.
 - **The braid studies' finding**, that separate strand records lose what the joint record keeps, is the separator's joint
   projection against its shadows.
@@ -55,7 +58,7 @@ and proposed the seam table.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: joint records in not-all-equal patterns | **Status:** Successful (referee pending) | It reduces, as the stop rule asked to test; the seam hierarchy computed |
+| This attempt: joint records in not-all-equal patterns | **Status:** Successful (refereed, confirmed) | It reduces, as the stop rule asked to test; the seam hierarchy computed |
 | Local direction: carrying records, the braid picture | Practically exhausted | Forcing: pebbling. Satisfiability and counting: treewidth. Escapes: known algebra and matchings |
 | Broader exploration: parallel and record-based methods for knot laws | Known alternatives | Width, Pfaffians, Gaussian elimination, Newton/Strahler cover what this line found |
 | Long-term goal: G3 Hardness at three places | No demonstrated advance | A restatement in the program's words, plus the seam census |

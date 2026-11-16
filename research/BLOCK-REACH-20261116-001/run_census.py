@@ -13,7 +13,7 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(ROOT / 'experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex'))
 from forget import least_forget  # noqa: E402
-from pattern import pattern  # noqa: E402
+from pattern import pattern, level  # noqa: E402
 
 CENSUS = ROOT / 'artifacts/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/records_slim.jsonl.gz'
 N, NV = 9, (1 << 10) - 1
@@ -62,10 +62,15 @@ if __name__ == '__main__':
         if not f['small_orbits']:
             continue
         prof = tuple(x['L_N'] for x in rec['levels'])
-        rows[rec['case']] = dict(profile=list(prof), name=profile_name(prof), r=f['r'], r0=f['r0'], types=f['types'],
+        # upper bounds at every depth N >= 9: a depth-9 least bond whose members all lie at level <= 9 - r0 has the same projection,
+        # hence stays a bond, at every N >= 9 (the projection onto addresses at level <= m depends on the rest only through F_(N - m))
+        upper = {lv['s']: lv['L_N'] for lv in rec['levels']
+                 if isinstance(lv['L_N'], int) and lv.get('bond') and max(level(v) for v in lv['bond']) <= N - f['r0']}
+        rows[rec['case']] = dict(profile=list(prof), name=profile_name(prof), r=f['r'], r_stable=f['r_stable'], r_all=f['r_all'],
+                                 r0=f['r0'], types=f['types'], empty_windows=f['empty_windows'], upper_every_depth=upper,
                                  cyclic=cyclic(rec['key']), relative_class=rec['classes']['relative']['class'],
                                  rises=all(isinstance(x, int) for x in prof) and prof[-1] > prof[0])
-    tally = collections.Counter((r['name'], r['cyclic'], r['r']) for r in rows.values())
+    tally = collections.Counter((r['name'], r['cyclic'], r['r_stable'], r['r_all']) for r in rows.values())
     json.dump(dict(rows=rows, tally={str(k): v for k, v in sorted(tally.items(), key=str)}), open(HERE / 'census_forget.json', 'w'), indent=1)
     for k, v in sorted(tally.items(), key=str):
         print(k, v)

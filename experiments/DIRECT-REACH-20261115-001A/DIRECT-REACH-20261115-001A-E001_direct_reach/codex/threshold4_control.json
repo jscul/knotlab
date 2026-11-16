@@ -1,0 +1,278 @@
+{
+  "case": "10e63af5c86c9ad3062d9b9f830b13f74997b4b269e35042ac184ed9e2394755",
+  "incomplete_certifications": [],
+  "passed": true,
+  "refutations": {
+    "8005150b1c95067785b314fba61ffb437a49fc662885f601d24164f816742444": {
+      "checked": true,
+      "checker": "VERIFIED 16235 steps",
+      "cnf_bytes": 995369,
+      "cnf_path": "certificates/8005150b1c95067785b314fba61ffb437a49fc662885f601d24164f816742444.cnf.gz",
+      "cnf_sha256": "8005150b1c95067785b314fba61ffb437a49fc662885f601d24164f816742444",
+      "deleted_after_check": false,
+      "kept_as": "8005150b1c95067785b314fba61ffb437a49fc662885f601d24164f816742444",
+      "proof_bytes": 2499092,
+      "proof_path": "certificates/8005150b1c95067785b314fba61ffb437a49fc662885f601d24164f816742444.lrat.gz",
+      "proof_sha256": "0692a52447f7a7034daa9663aa295ff693ee4170d7f9e9bcba6d3242f626ab5c",
+      "purpose": "census internal SAT query/exhaustion",
+      "seconds": 0.3426158350193873,
+      "solver": "CaDiCaL 2.1.2"
+    },
+    "bb9664278e3fb43b28e4ed55910733684215206e4cfe765cacc9c519bc5f8c7b": {
+      "checked": true,
+      "checker": "VERIFIED 283234 steps",
+      "cnf_bytes": 1067725,
+      "cnf_path": "certificates/bb9664278e3fb43b28e4ed55910733684215206e4cfe765cacc9c519bc5f8c7b.cnf.gz",
+      "cnf_sha256": "bb9664278e3fb43b28e4ed55910733684215206e4cfe765cacc9c519bc5f8c7b",
+      "deleted_after_check": false,
+      "kept_as": "bb9664278e3fb43b28e4ed55910733684215206e4cfe765cacc9c519bc5f8c7b",
+      "proof_bytes": 421836305,
+      "proof_path": "certificates/bb9664278e3fb43b28e4ed55910733684215206e4cfe765cacc9c519bc5f8c7b.lrat.gz",
+      "proof_sha256": "55812249cb1af5302082acaa7d9eb93a14a048dd4b56f36cbcf7439abb6e2dca",
+      "purpose": "census internal SAT query/exhaustion",
+      "seconds": 8.257276876014657,
+      "solver": "CaDiCaL 2.1.2"
+    },
+    "e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090": {
+      "checked": true,
+      "checker": "VERIFIED 4 steps",
+      "cnf_bytes": 30944,
+      "cnf_path": "certificates/e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090.cnf.gz",
+      "cnf_sha256": "e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090",
+      "deleted_after_check": false,
+      "kept_as": "e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090",
+      "proof_bytes": 104,
+      "proof_path": "certificates/e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090.lrat.gz",
+      "proof_sha256": "e59015026c2d0e8501820e45dcbbbbd317c64c7caafaa01dc36192c70f398e83",
+      "purpose": "census internal SAT query/exhaustion",
+      "seconds": 0.01217489899136126,
+      "solver": "CaDiCaL 2.1.2"
+    }
+  },
+  "result": {
+    "N": 9,
+    "S": 3,
+    "adaptation": {
+      "adapted_compute_sha256": "cbc1555b8b22c40c5428ced3e97524f373b5493b9840535ec9574fbeb5ad8ff1",
+      "histograms": false,
+      "source_job_sha256": "15456ee153062e266081908c5b785f6c498d58926de8ea25d9969cefde66a2e2",
+      "target_restricted_search": false
+    },
+    "budget_scope": "L_N, L_target and all per-target searches share one deadline at each s",
+    "budget_seconds_per_key_s": 300.0,
+    "checked_certificate_totals": {
+      "bonds": 1,
+      "proper_projection_states": 32
+    },
+    "classes": {
+      "letter": {
+        "class": "exponential",
+        "degree": null
+      },
+      "relative": {
+        "class": "exponential",
+        "degree": null
+      }
+    },
+    "flags": {
+      "no_join": false,
+      "s1": true,
+      "tree_only": false
+    },
+    "k0": 3,
+    "k_max": 4,
+    "knot_count": 1021,
+    "levels": [
+      {
+        "L_N": 4,
+        "L_target": "not_requested",
+        "anywhere": {
+          "L": 4,
+          "bond": [
+            14,
+            30,
+            65,
+            123
+          ],
+          "certificate": {
+            "all_maximal_projections_full": true,
+            "assignments_checked": 32,
+            "maximal_proper": [
+              {
+                "state_indices": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "support": [
+                  30,
+                  65,
+                  123
+                ]
+              },
+              {
+                "state_indices": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15
+                ],
+                "support": [
+                  14,
+                  65,
+                  123
+                ]
+              },
+              {
+                "state_indices": [
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23
+                ],
+                "support": [
+                  14,
+                  30,
+                  123
+                ]
+              },
+              {
+                "state_indices": [
+                  24,
+                  17,
+                  25,
+                  19,
+                  20,
+                  26,
+                  22,
+                  27
+                ],
+                "support": [
+                  14,
+                  30,
+                  65
+                ]
+              }
+            ],
+            "refutation": {
+              "checked": true,
+              "checker": "VERIFIED 4 steps",
+              "cnf_bytes": 30944,
+              "cnf_path": "certificates/e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090.cnf.gz",
+              "cnf_sha256": "e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090",
+              "deleted_after_check": false,
+              "kept_as": "e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090",
+              "proof_bytes": 104,
+              "proof_path": "certificates/e8d0cf1f0388c24ecbae3da84becb3e9c1f8dd8b5ec967f545670465a850c090.lrat.gz",
+              "proof_sha256": "e59015026c2d0e8501820e45dcbbbbd317c64c7caafaa01dc36192c70f398e83",
+              "purpose": "census internal SAT query/exhaustion",
+              "seconds": 0.01217489899136126,
+              "solver": "CaDiCaL 2.1.2",
+              "unanchored": true
+            },
+            "state_encoding": "little-endian bits, hex bytes; id v is bit v",
+            "state_pool": [
+              "7940ff3f01000060fdffffffffffff77200000000000000000000000000000a2fdfdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f18001802000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "863f0060fdffffbf00000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "79c0ff9f02000040ffffffffffffff55200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "863f0060fdffffbf02000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "79c0ff9f02000040fdffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "863f0060fdffffbf00000000000000aadffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "79c0ff9f02000040ffffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "86bf00c0feffff9f0200000000000088dfffffffffffffffffffffffffffff5d0202000000000000000000000000000000000000000000000000000000000280e7ffe7fdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7900ff7f030000a0fdffffffffffff55200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0080fdffff7f00000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ff7f02000080ffffffffffffff55200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0080fdffff7f02000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ff7f02000080fdffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0080fdffff7f00000000000000aadffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ff7f02000080ffffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "86ff0080fcffff5f02000000000000aadffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ffbf02000080ffffffffffffff55200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0000fdffff7f00000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ffff02000080ffffffffffffff55200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0040fdffff7f00000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ffbf02000080ffffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0000fdffff7f00000000000000aadffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ffff02000080ffffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0040fdffff7f00000000000000aadffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "7980ffbf02000080fdffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "7980ffff02000080fdffffffffffff5d200200000000000000000000000000bad5fde7fffffffffffffffffffffffffffffffffffffffffffffffffffffffd7f98191802800700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+              "867f0000fdffff7f02000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f",
+              "867f0040fdffff7f02000000000000a2dffdffffffffffffffffffffffffff452a0218000000000000000000000000000000000000000000000000000000028067e6e7fd7ff8ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f"
+            ]
+          },
+          "forbidden_assignment": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "optimality_proved": true,
+          "sat_calls": 17,
+          "search": {
+            "candidate_limit": 4,
+            "candidates": 1,
+            "compilation": {
+              "clause_count": 25059,
+              "elimination_table_entries": 5359,
+              "gate_count": 7671,
+              "gate_limit": 500000,
+              "initial_table_entries": 10214,
+              "knots": 1021,
+              "max_bucket_factors": 4,
+              "nvars": 1023,
+              "ordering_complete": true,
+              "selector_count": 2046,
+              "table_entries": 15573,
+              "variables_compiled": 1023,
+              "variables_ordered": 1023,
+              "width": 3,
+              "width_limit": 7
+            },
+            "exhausted_smaller_sizes": [
+              2,
+              3
+            ],
+            "method": "exact existential-elimination circuit",
+            "query_local_blockers": 15501
+          },
+          "seconds": 15.75549592205789
+        },
+        "components": true,
+        "overshoot": 0,
+        "s": 3,
+        "seconds": 15.79670378798619,
+        "target_restricted": {
+          "L": "not_requested",
+          "reason": "threshold-only query"
+        },
+        "thresholds": {
+          "3": "no",
+          "4": "yes"
+        }
+      }
+    ],
+    "nvars": 1023,
+    "seconds": 15.854411709005944,
+    "union": {
+      "certificate": "total model checked against every knot",
+      "model": "db977fd1ff7f5191ffffff7f511151d1ffffffffffffff7f5111515151115191ffffffffffffffffffffffffffffff7f511151515111511151115151511151d1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff7f5111515151115111511151515111515151115151511151115111515151115111",
+      "seconds": 0.015146378078497946,
+      "verdict": "alive"
+    }
+  }
+}

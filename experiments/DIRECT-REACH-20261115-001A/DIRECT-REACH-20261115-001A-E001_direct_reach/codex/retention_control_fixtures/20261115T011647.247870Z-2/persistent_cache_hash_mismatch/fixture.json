@@ -1,0 +1,25 @@
+{
+  "consumed_refutation": false,
+  "corrupt_cache_gzip_sha256": "737ad8cbef7ed4ca8d8d80563e06d8514f31dac984ed91cc00737d673bbc93f3",
+  "corrupt_cache_path": "retention_control_fixtures/20261115T011647.247870Z-2/persistent_cache_hash_mismatch/certificates/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.lrat.gz",
+  "fault": "alter persistent proof gzip after valid metadata is saved",
+  "fixture_kind": "explicit failed-certification test fixture; not research evidence",
+  "fixture_root": "retention_control_fixtures/20261115T011647.247870Z-2/persistent_cache_hash_mismatch",
+  "observed_error": "AssertionError: retained certificate digest mismatch",
+  "original_proof_path": "retention_control_fixtures/20261115T011647.247870Z-2/persistent_cache_hash_mismatch/original_before_fault.lrat.gz",
+  "original_proof_sha256": "d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279",
+  "passed": true,
+  "peak_external_children": 1,
+  "processes": [
+    {
+      "program": "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+      "returncode": 20
+    },
+    {
+      "program": "/home/jscul/p-vs-np-contact-first/experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/lrat_check",
+      "returncode": 0
+    }
+  ],
+  "real_checker_verified": true,
+  "seconds": 0.007334240945056081
+}

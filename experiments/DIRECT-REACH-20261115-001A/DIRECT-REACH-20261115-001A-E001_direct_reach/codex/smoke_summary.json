@@ -1,0 +1,259 @@
+{
+  "by_population": {
+    "D": 9,
+    "U": 1
+  },
+  "cases": 10,
+  "complete": true,
+  "estimates_six_workers": {
+    "D": {
+      "ideal_six_seconds": 1483.3887293114403,
+      "longest_case_seconds": 2099.7695112635847,
+      "method": "population-wide final gate tie times + profile mean non-tie time from nine smoke D cases; max(total/6,longest,scaled new external time)",
+      "planning_seconds": 2099.7695112635847,
+      "profile_non_tie_means": {
+        "constant-2": 2.6982624215306714,
+        "constant-3": 12.168957662838512,
+        "half-rate": 92.08583361300407
+      },
+      "scaled_serial_external_seconds": 1769.5744968057145
+    },
+    "U": {
+      "base_seconds_per_description": 902.555730137974,
+      "ideal_six_seconds": 39070.97449738424,
+      "longest_case_seconds": 3607.171683922992,
+      "measured_new_query_seconds_by_s": {
+        "2": 4.5556266099447384,
+        "3": 900.0516006940743,
+        "4": 900.008726480999
+      },
+      "method": "88 measured-base estimates + exact originally-undecided cell counts weighted by measured continuation cost at each s; max(total/6,longest,scaled external time); one U smoke case",
+      "planning_seconds": 39070.97449738424,
+      "scaled_serial_external_seconds": 1.4239411987364292,
+      "undecided_cells_by_s": {
+        "1": 1,
+        "2": 43,
+        "3": 83,
+        "4": 88
+      },
+      "unmeasured_s_charged_900": [
+        1
+      ]
+    }
+  },
+  "full_jobs_launched": false,
+  "incomplete_certifications": [],
+  "life_counts": {
+    "D:10:alive": 9,
+    "D:11:alive": 9,
+    "D:12:alive": 9,
+    "U:10:alive": 1,
+    "U:11:alive": 1,
+    "U:12:alive": 1
+  },
+  "runner_state": {
+    "complete": true,
+    "counts": {
+      "crashed": 0,
+      "error": 0,
+      "memory": 0,
+      "ok": 10,
+      "timeout": 0
+    },
+    "error": null,
+    "final": true,
+    "finished_last_10_minutes": 1,
+    "foreground": true,
+    "heartbeat": "2026-11-15T03:17:01.675+00:00",
+    "in_flight": {},
+    "job_sha": "61d061fdd858aa59f9eaceb366d02efca42a95fc7739f21404441f5be564caac",
+    "parent_rss_mb": 50.2265625,
+    "peak_rss_mb": 646.25,
+    "pid": 2,
+    "started": "2026-11-15T02:31:54.366+00:00",
+    "stopped": false,
+    "unit": "direct-reach-001a-smoke",
+    "workers": []
+  },
+  "smoke_sources_match_frozen_manifest": true,
+  "source_inputs_unchanged": true,
+  "threshold_counts": {
+    "D:3:no": 14,
+    "D:3:yes": 85,
+    "D:4:no": 6,
+    "D:4:yes": 16,
+    "U:3:no": 6,
+    "U:3:undecided": 3,
+    "U:3:yes": 2
+  },
+  "u_case": {
+    "accepted_maps": 0,
+    "candidate_maps": 52,
+    "case": "00a344d3f150db37014b0d13d3ca12acf65eee4350350df05052e6df304ce805",
+    "external_certificate_seconds": 0.01618114998564124,
+    "followups": [
+      {
+        "L_N": 4,
+        "bond": [
+          14,
+          29,
+          33,
+          50
+        ],
+        "new_query": true,
+        "optimality_proved": true,
+        "reason": null,
+        "s": 2,
+        "seconds": 4.5556266099447384
+      },
+      {
+        "L_N": "undecided",
+        "bond": null,
+        "new_query": true,
+        "optimality_proved": false,
+        "reason": "interrupted minimum hitting set",
+        "s": 3,
+        "seconds": 900.0516006940743
+      },
+      {
+        "L_N": "undecided",
+        "bond": null,
+        "new_query": true,
+        "optimality_proved": false,
+        "reason": "300-second search budget exhausted",
+        "s": 4,
+        "seconds": 900.008726480999
+      }
+    ],
+    "life": [
+      {
+        "N": 10,
+        "knot_count": 2045,
+        "seconds": 0.0058672509621828794,
+        "verdict": "alive"
+      },
+      {
+        "N": 11,
+        "knot_count": 4093,
+        "seconds": 0.010257769958116114,
+        "verdict": "alive"
+      },
+      {
+        "N": 12,
+        "knot_count": 8189,
+        "seconds": 0.025810754974372685,
+        "verdict": "alive"
+      }
+    ],
+    "seconds": 2707.1873770439997,
+    "thresholds": [
+      {
+        "k0": 2,
+        "rows": [
+          {
+            "L_N": 3,
+            "s": 1,
+            "seconds": 0.17161976592615247,
+            "thresholds": {
+              "3": "yes"
+            }
+          },
+          {
+            "L_N": "> 3",
+            "s": 2,
+            "seconds": 0.0932694859802723,
+            "thresholds": {
+              "3": "no"
+            }
+          },
+          {
+            "L_N": "> 3",
+            "s": 3,
+            "seconds": 0.1305093449773267,
+            "thresholds": {
+              "3": "no"
+            }
+          },
+          {
+            "L_N": "> 3",
+            "s": 4,
+            "seconds": 0.24454309896100312,
+            "thresholds": {
+              "3": "no"
+            }
+          },
+          {
+            "L_N": "> 3",
+            "s": 5,
+            "seconds": 0.4506911808857694,
+            "thresholds": {
+              "3": "no"
+            }
+          },
+          {
+            "L_N": "> 3",
+            "s": 6,
+            "seconds": 0.8640175750479102,
+            "thresholds": {
+              "3": "no"
+            }
+          }
+        ]
+      },
+      {
+        "k0": 3,
+        "rows": [
+          {
+            "L_N": 3,
+            "s": 1,
+            "seconds": 0.20219920901581645,
+            "thresholds": {
+              "3": "yes"
+            }
+          },
+          {
+            "L_N": "> 3",
+            "s": 2,
+            "seconds": 0.21566156402695924,
+            "thresholds": {
+              "3": "no"
+            }
+          },
+          {
+            "L_N": "undecided",
+            "s": 3,
+            "seconds": 300.00028460100293,
+            "thresholds": {
+              "3": "undecided"
+            }
+          },
+          {
+            "L_N": "undecided",
+            "s": 4,
+            "seconds": 300.0003638860071,
+            "thresholds": {
+              "3": "undecided"
+            }
+          },
+          {
+            "L_N": "undecided",
+            "s": 5,
+            "seconds": 300.00054107699543,
+            "thresholds": {
+              "3": "undecided"
+            }
+          }
+        ]
+      }
+    ],
+    "tie_seconds": 0.08932035695761442,
+    "timings": {
+      "U_followups": 1804.6316469060257,
+      "homomorphisms": 0.004015226964838803,
+      "life": 0.04833382798824459,
+      "threshold_reach": 902.3999351309612,
+      "ties_and_N9_union": 0.10327468498144299
+    }
+  },
+  "unique_smoke_refutations": 2439
+}

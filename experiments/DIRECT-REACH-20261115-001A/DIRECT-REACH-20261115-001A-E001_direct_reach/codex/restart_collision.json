@@ -1,0 +1,79 @@
+{
+  "reason": "earlier foreground execution survived tool interruption; two owned gate runners overlapped and exceeded process cap",
+  "state_before_barrier": {
+    "gates_run": {
+      "pid": 2,
+      "unit": "direct-reach-001a-gates",
+      "started": "2026-11-15T00:44:44.983+00:00",
+      "heartbeat": "2026-11-15T01:12:32.895+00:00",
+      "counts": {
+        "ok": 133,
+        "error": 0,
+        "timeout": 0,
+        "memory": 0,
+        "crashed": 0
+      },
+      "finished_last_10_minutes": 27,
+      "workers": [
+        3,
+        4
+      ],
+      "in_flight": {
+        "reach-867ee877d22bfa99d461ae317904677a876dc2b0c5142c2734156e4efee07df8": {
+          "worker": 3,
+          "seconds": 52.88696814305149
+        },
+        "reach-8c04e907dd57d3ca50fd5ce21a1c4b41355efece5bd63a2bea35ac6699e9a5f4": {
+          "worker": 4,
+          "seconds": 19.302024112083018
+        }
+      },
+      "peak_rss_mb": 1799.7236328125,
+      "parent_rss_mb": 51.46875,
+      "final": false,
+      "stopped": false,
+      "complete": false,
+      "error": null,
+      "foreground": true,
+      "job_sha": "4bed3d3a5ab064b490b4e395fe5a583bea680116893795a35e5bc97b36431a61"
+    },
+    "gates_run_final": {
+      "pid": 2,
+      "unit": "direct-reach-001a-gates-final",
+      "started": "2026-11-15T00:54:29.784+00:00",
+      "heartbeat": "2026-11-15T01:12:32.893+00:00",
+      "counts": {
+        "ok": 121,
+        "error": 1,
+        "timeout": 0,
+        "memory": 0,
+        "crashed": 0
+      },
+      "finished_last_10_minutes": 46,
+      "workers": [
+        3,
+        4
+      ],
+      "in_flight": {
+        "reach-756043d0b2e28750d07ec95b340cc2beaff961dcad2ab48dcbc14a960cbd8e04": {
+          "worker": 3,
+          "seconds": 4.426945632905699
+        },
+        "reach-73c66e3a031237d5fa0f2305ca32ee9c3384e4c8184f581dc2cafbd296dae120": {
+          "worker": 4,
+          "seconds": 24.766827515908517
+        }
+      },
+      "peak_rss_mb": 264.2841796875,
+      "parent_rss_mb": 48.2265625,
+      "final": false,
+      "stopped": false,
+      "complete": false,
+      "error": null,
+      "foreground": true,
+      "job_sha": "a8264644a4087c947f32bdbe60e439338b1a5f4499c2b4c52c26916914baaa2b"
+    }
+  },
+  "saved_work": "interrupted_runs/work_20261115T011233Z",
+  "barrier": "work is temporarily a file so both owned case streams terminate with explicit errors"
+}

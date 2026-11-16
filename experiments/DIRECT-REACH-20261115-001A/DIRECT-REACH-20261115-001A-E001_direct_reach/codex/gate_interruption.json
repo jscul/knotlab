@@ -1,0 +1,40 @@
+{
+  "reason": "reload retention fixes and measured gzip-level-1 optimization",
+  "state": {
+    "pid": 2,
+    "unit": "direct-reach-001a-gates",
+    "started": "2026-11-15T00:44:44.983+00:00",
+    "heartbeat": "2026-11-15T00:51:57.543+00:00",
+    "counts": {
+      "ok": 66,
+      "error": 0,
+      "timeout": 0,
+      "memory": 0,
+      "crashed": 0
+    },
+    "finished_last_10_minutes": 66,
+    "workers": [
+      3,
+      4
+    ],
+    "in_flight": {
+      "reach-1b4b72977f3a0df1f3b6a304bffa26dc7f2b958394df8ebaa11acc7ca9947341": {
+        "worker": 3,
+        "seconds": 81.87179319700226
+      },
+      "reach-1ce47cae9037d6c4f5dc4971ef00fc027e5c452d34a52d3a427ca1cbcfa4bdb6": {
+        "worker": 4,
+        "seconds": 18.461463658022694
+      }
+    },
+    "peak_rss_mb": 1799.7236328125,
+    "parent_rss_mb": 48.4609375,
+    "final": false,
+    "stopped": false,
+    "complete": false,
+    "error": null,
+    "foreground": true,
+    "job_sha": "4bed3d3a5ab064b490b4e395fe5a583bea680116893795a35e5bc97b36431a61"
+  },
+  "cmdline": "/bin/bash -c .venv/bin/python -B - <<'PY'\nfrom pathlib import Path\nimport gzip,time,json,hashlib,os,signal\np=Path('experiments/DIRECT-REACH-20261115-001A/DIRECT-REACH-20261115-001A-E001_direct_reach/codex').resolve()\nfiles=sorted((p/'certificates').glob('*.cnf.gz'),key=lambda f:f.stat().st_size,reverse=True)\nraw=gzip.decompress(files[0].read_bytes())\nbench={'input':files[0].name,'raw_bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'levels':{}}\nfor level in (1,9):\n t=time.monotonic()\n for _ in range(3): blob=gzip.compress(raw,compresslevel=level,mtime=0)\n bench['levels'][str(level)]={'seconds_per_compression':(time.monotonic()-t)/3,'bytes':len(blob),'roundtrip_ok':gzip.decompress(blob)==raw}\n(p/'compression_benchmark.json').write_text(json.dumps(bench,indent=2)+'\\n')\nprint(json.dumps(bench,indent=2),flush=True)\ns=json.loads((p/'gates_run'/'state.json').read_text())\ncmd=Path(f'/proc/{s[\"pid\"]}/cmdline').read_bytes().replace(b'\\0',b' ').decode()\nif 'scripts/longrun.py run' in cmd and 'codex/gates_run' in cmd:\n (p/'gate_interruption.json').write_text(json.dumps({'reason':'reload retention fixes and measured gzip-level-1 optimization','state':s,'cmdline':cmd},indent=2)+'\\n')\n os.kill(s['pid'],signal.SIGINT)\n print('Requested clean stop of this foreground gate runner',flush=True)\nelse:\n print('No signal sent: runner identity was not verified',repr(cmd),flush=True)\nPY "
+}

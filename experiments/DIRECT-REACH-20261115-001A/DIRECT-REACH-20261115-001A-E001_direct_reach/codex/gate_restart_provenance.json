@@ -1,0 +1,72 @@
+{
+  "reason": "reload retention corrections and gzip level 1",
+  "completed_counts": {
+    "ok": 70,
+    "error": 0,
+    "timeout": 0,
+    "memory": 0,
+    "crashed": 0
+  },
+  "interrupted_scratch": [
+    {
+      "case": "reach-1b4b72977f3a0df1f3b6a304bffa26dc7f2b958394df8ebaa11acc7ca9947341",
+      "source": "work/reach-1b4b72977f3a0df1f3b6a304bffa26dc7f2b958394df8ebaa11acc7ca9947341/retained.lrat",
+      "sha256": "d50ec0cb347168f02e5642bea09421043b68472ae77208b9b0d04016857f2bad",
+      "bytes": 20166,
+      "preserved": "interrupted_gate_scratch/d50ec0cb347168f02e5642bea09421043b68472ae77208b9b0d04016857f2bad.retained.lrat.gz",
+      "status": "interrupted, not consumed as a certificate"
+    },
+    {
+      "case": "reach-1b4b72977f3a0df1f3b6a304bffa26dc7f2b958394df8ebaa11acc7ca9947341",
+      "source": "work/reach-1b4b72977f3a0df1f3b6a304bffa26dc7f2b958394df8ebaa11acc7ca9947341/retained.cnf",
+      "sha256": "9507c451a269ca9b0317be11d0373ae6efd6c489938eddbe5c6f584bd073a170",
+      "bytes": 91363,
+      "preserved": "interrupted_gate_scratch/9507c451a269ca9b0317be11d0373ae6efd6c489938eddbe5c6f584bd073a170.retained.cnf.gz",
+      "status": "interrupted, not consumed as a certificate"
+    },
+    {
+      "case": "reach-23438162a365eacef217abd6f49e099c3271e64328df6687871a3715b59bb4dc",
+      "source": "work/reach-23438162a365eacef217abd6f49e099c3271e64328df6687871a3715b59bb4dc/retained.cnf",
+      "sha256": "ebb5c665df5877a5a2e18e9814f20be6981ec79aa390a588e56195038085a3c2",
+      "bytes": 107835,
+      "preserved": "interrupted_gate_scratch/ebb5c665df5877a5a2e18e9814f20be6981ec79aa390a588e56195038085a3c2.retained.cnf.gz",
+      "status": "interrupted, not consumed as a certificate"
+    }
+  ],
+  "state_after_interrupt": {
+    "pid": 2,
+    "unit": "direct-reach-001a-gates",
+    "started": "2026-11-15T00:44:44.983+00:00",
+    "heartbeat": "2026-11-15T00:53:39.024+00:00",
+    "counts": {
+      "ok": 70,
+      "error": 0,
+      "timeout": 0,
+      "memory": 0,
+      "crashed": 0
+    },
+    "finished_last_10_minutes": 70,
+    "workers": [
+      3,
+      4
+    ],
+    "in_flight": {
+      "reach-1b4b72977f3a0df1f3b6a304bffa26dc7f2b958394df8ebaa11acc7ca9947341": {
+        "worker": 3,
+        "seconds": 183.35283647093456
+      },
+      "reach-23438162a365eacef217abd6f49e099c3271e64328df6687871a3715b59bb4dc": {
+        "worker": 4,
+        "seconds": 23.675606067990884
+      }
+    },
+    "peak_rss_mb": 1799.7236328125,
+    "parent_rss_mb": 48.4609375,
+    "final": false,
+    "stopped": false,
+    "complete": false,
+    "error": null,
+    "foreground": true,
+    "job_sha": "4bed3d3a5ab064b490b4e395fe5a583bea680116893795a35e5bc97b36431a61"
+  }
+}

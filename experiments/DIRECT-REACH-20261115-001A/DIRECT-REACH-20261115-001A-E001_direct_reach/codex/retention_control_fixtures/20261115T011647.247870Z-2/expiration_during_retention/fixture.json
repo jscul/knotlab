@@ -1,0 +1,30 @@
+{
+  "consumed_refutation": false,
+  "failed_fixture": {
+    "checked": false,
+    "cnf_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.cnf.gz",
+    "cnf_sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58",
+    "partial_proof_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279.partial.lrat.gz",
+    "partial_proof_sha256": "d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279",
+    "purpose": "census internal SAT query/exhaustion",
+    "reason": "BudgetExpired: injected expiration after proof retention"
+  },
+  "fault": "expire immediately after retaining real LRAT",
+  "fixture_kind": "explicit failed-certification test fixture; not research evidence",
+  "fixture_root": "retention_control_fixtures/20261115T011647.247870Z-2/expiration_during_retention",
+  "observed_error": "BudgetExpired: LRAT certification deadline; negative answer not consumed",
+  "passed": true,
+  "peak_external_children": 1,
+  "processes": [
+    {
+      "program": "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+      "returncode": 20
+    },
+    {
+      "program": "/home/jscul/p-vs-np-contact-first/experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/lrat_check",
+      "returncode": 0
+    }
+  ],
+  "real_checker_verified": true,
+  "seconds": 0.00713185197673738
+}

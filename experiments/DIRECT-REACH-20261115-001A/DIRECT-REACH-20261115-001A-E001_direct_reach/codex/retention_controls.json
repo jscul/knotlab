@@ -1,0 +1,144 @@
+{
+  "binaries": {
+    "cadical": {
+      "path": "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+      "sha256": "5b6adcce8d4f8e4ca75706a12c6195821dac2309c7d9bc98483e768bdfbd5a4d"
+    },
+    "checker": {
+      "path": "/home/jscul/p-vs-np-contact-first/experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/lrat_check",
+      "sha256": "a48fb080658f737270b276e750b7c9ab61c93895a04e2736a6a35dfb1ff60f0a"
+    }
+  },
+  "controls": {
+    "checker_rejection": {
+      "consumed_refutation": false,
+      "failed_fixture": {
+        "checked": false,
+        "cnf_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.cnf.gz",
+        "cnf_sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58",
+        "partial_proof_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279.partial.lrat.gz",
+        "partial_proof_sha256": "d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279",
+        "purpose": "census internal SAT query/exhaustion",
+        "reason": "AssertionError: ('LRAT check failed', 'FAILED injected checker rejection\\n', 'retention control fault')"
+      },
+      "fault": "replace verified real checker response with rejection",
+      "fixture_kind": "explicit failed-certification test fixture; not research evidence",
+      "fixture_root": "retention_control_fixtures/20261115T011647.247870Z-2/checker_rejection",
+      "observed_error": "AssertionError: ('LRAT check failed', 'FAILED injected checker rejection\\n', 'retention control fault')",
+      "passed": true,
+      "peak_external_children": 1,
+      "processes": [
+        {
+          "program": "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+          "returncode": 20
+        },
+        {
+          "injected_returncode": 1,
+          "program": "/home/jscul/p-vs-np-contact-first/experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/lrat_check",
+          "returncode": 0
+        }
+      ],
+      "real_checker_verified": true,
+      "seconds": 0.011249782051891088
+    },
+    "expiration_during_retention": {
+      "consumed_refutation": false,
+      "failed_fixture": {
+        "checked": false,
+        "cnf_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.cnf.gz",
+        "cnf_sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58",
+        "partial_proof_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279.partial.lrat.gz",
+        "partial_proof_sha256": "d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279",
+        "purpose": "census internal SAT query/exhaustion",
+        "reason": "BudgetExpired: injected expiration after proof retention"
+      },
+      "fault": "expire immediately after retaining real LRAT",
+      "fixture_kind": "explicit failed-certification test fixture; not research evidence",
+      "fixture_root": "retention_control_fixtures/20261115T011647.247870Z-2/expiration_during_retention",
+      "observed_error": "BudgetExpired: LRAT certification deadline; negative answer not consumed",
+      "passed": true,
+      "peak_external_children": 1,
+      "processes": [
+        {
+          "program": "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+          "returncode": 20
+        },
+        {
+          "program": "/home/jscul/p-vs-np-contact-first/experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/lrat_check",
+          "returncode": 0
+        }
+      ],
+      "real_checker_verified": true,
+      "seconds": 0.00713185197673738
+    },
+    "orphan_disagreement": {
+      "consumed_refutation": false,
+      "failed_fixture": {
+        "checked": false,
+        "cnf_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.cnf.gz",
+        "cnf_sha256": "bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58",
+        "partial_proof_path": "incomplete_certifications/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279.partial.lrat.gz",
+        "partial_proof_sha256": "d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279",
+        "purpose": "census internal SAT query/exhaustion",
+        "reason": "RuntimeError: existing retained bytes disagree: bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.lrat.gz"
+      },
+      "fault": "preexisting orphan proof gzip contains different raw bytes",
+      "fixture_kind": "explicit failed-certification test fixture; not research evidence",
+      "fixture_root": "retention_control_fixtures/20261115T011647.247870Z-2/orphan_disagreement",
+      "observed_error": "RuntimeError: existing retained bytes disagree: bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.lrat.gz",
+      "orphan_gzip_sha256": "7871cd3eb6f1475aa6cbffc868892b2a34d6903f69af3a1dbc4d14232fb5f90f",
+      "orphan_path": "retention_control_fixtures/20261115T011647.247870Z-2/orphan_disagreement/certificates/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.lrat.gz",
+      "passed": true,
+      "peak_external_children": 1,
+      "processes": [
+        {
+          "program": "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+          "returncode": 20
+        },
+        {
+          "program": "/home/jscul/p-vs-np-contact-first/experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/lrat_check",
+          "returncode": 0
+        }
+      ],
+      "real_checker_verified": true,
+      "seconds": 0.007373668951913714
+    },
+    "persistent_cache_hash_mismatch": {
+      "consumed_refutation": false,
+      "corrupt_cache_gzip_sha256": "737ad8cbef7ed4ca8d8d80563e06d8514f31dac984ed91cc00737d673bbc93f3",
+      "corrupt_cache_path": "retention_control_fixtures/20261115T011647.247870Z-2/persistent_cache_hash_mismatch/certificates/bdcfed14408fb3f368fe82437336d283a9dedc953677460e9c7317724c5e1e58.lrat.gz",
+      "fault": "alter persistent proof gzip after valid metadata is saved",
+      "fixture_kind": "explicit failed-certification test fixture; not research evidence",
+      "fixture_root": "retention_control_fixtures/20261115T011647.247870Z-2/persistent_cache_hash_mismatch",
+      "observed_error": "AssertionError: retained certificate digest mismatch",
+      "original_proof_path": "retention_control_fixtures/20261115T011647.247870Z-2/persistent_cache_hash_mismatch/original_before_fault.lrat.gz",
+      "original_proof_sha256": "d43e030b5d4552f9ae519082ca85818c7f0323e654ff8e2ecb69dfde35771279",
+      "passed": true,
+      "peak_external_children": 1,
+      "processes": [
+        {
+          "program": "/home/jscul/.elan/toolchains/leanprover--lean4---v4.35.0/bin/cadical",
+          "returncode": 20
+        },
+        {
+          "program": "/home/jscul/p-vs-np-contact-first/experiments/LEVEL-REACH-20261114-001A/LEVEL-REACH-20261114-001A-E001_level_reach/codex/lrat_check",
+          "returncode": 0
+        }
+      ],
+      "real_checker_verified": true,
+      "seconds": 0.007334240945056081
+    }
+  },
+  "execution": "sequential real CaDiCaL/LRAT checker; controlled faults only; at most one child",
+  "fixture_root": "retention_control_fixtures/20261115T011647.247870Z-2",
+  "implementation_sha256": {
+    "retention.py": "a3ea9a0095952936ef06ced729dcad661dce1fc528d1626c85db5607f2749d1a",
+    "retention_controls.py": "9577dbff11d36ea4c83b1db31cb6382a5b843d3fee0b147bef5128f145536522",
+    "reuse.py": "79f22cfba346c7b2feb0a772b8c85e4275fa0895a29b1d8402069884f1643921"
+  },
+  "nonclaims": [
+    "contract failure controls only",
+    "no additional scientific gate or population run"
+  ],
+  "passed": true
+}

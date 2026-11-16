@@ -1,0 +1,68 @@
+{
+ "block_gate": {
+  "exit": 0,
+  "summary": "cases 85 joints checked 510 mismatches 0 life checks 595 life mismatches 0",
+  "passed": true
+ },
+ "block_gate_depth10": {
+  "exit": 0,
+  "summary": "cases 85 joints checked 510 mismatches 0 life checks 935 life mismatches 0",
+  "passed": true
+ },
+ "block_crosscheck": {
+  "exit": 0,
+  "tally": {
+   "tie agree": 935,
+   "b3 checked": 436,
+   "L=3 by a bond outside two orbits": 86
+  },
+  "disagreements": 0,
+  "passed": true
+ },
+ "descent_gate": {
+  "exit": 0,
+  "cases": 41,
+  "claims": 521,
+  "passed": true
+ },
+ "coverage": {
+  "constant-2": {
+   "total": 34,
+   "bounded_orbits": 10,
+   "block_verdicts": {
+    "tie at every s": 10
+   },
+   "alive_every_depth_blocks": 10,
+   "every_depth_L2": {
+    "blocks": 10,
+    "descents": 13,
+    "descents_growing": 5,
+    "union": 15
+   }
+  },
+  "constant-3": {
+   "total": 66,
+   "bounded_orbits": 32,
+   "block_verdicts": {
+    "no tie; two-orbit 3-bond at every s": 32
+   },
+   "alive_every_depth_blocks": 32,
+   "every_depth": {
+    "blocks_L3_exact": 32,
+    "descents_L_le_3": 28,
+    "descents_growing": 7,
+    "union_L_le_3": 39
+   }
+  },
+  "half-rate": {
+   "total": 46,
+   "bounded_orbits": 43,
+   "block_verdicts": {
+    "no tie; two-orbit 3-bond at s = 1 (of the first 8)": 43
+   },
+   "alive_every_depth_blocks": 43
+  },
+  "life_finite_reader": 139
+ },
+ "status": "passed"
+}

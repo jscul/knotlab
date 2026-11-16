@@ -127,3 +127,31 @@ a block), folded in at `a4860475a` and signed off.
 sizes.
 
 **Basket:** the holes-and-proofs line's basket was read; its untaken directions are about proof size, not this question.
+
+## Final report as sent
+
+Posted to the owner's project thread on 2026-11-16 at about 22:55 UTC:
+
+**Result:** your braid picture, made exact for forcing, is the classical register and pebbling picture. It explains nothing the classical statements don't, but it draws one line cleanly, and the measurements show which side the program's random patterns fall on.
+
+- **Holding several strands without splitting them can't remove the nesting.** Carrying w strands cuts the stage count to σ/w, but parallel steps never fall below σ (proved). In practice, two strands cut steps by 22 to 32%.
+- **Letting a strand split into two that rejoin pays exactly where strands rejoin.** A ladder of any length takes one stage with two strands, and its steps drop from 2k to about log₂(4k): 256 down to 9.
+- **Random atom patterns and random circuits contain little rejoining.** Splitting saves a stage for none of the distinctions before the jump's narrowest stage, and for 6 to 12% after it. Their order comes from genuine nesting.
+- Forcing has only one allowed state, so the braid studies' joint-record effect has no counterpart here. It could only matter in counting or satisfiability.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: carrying strands together | **Status:** Successful (referee pending) | Made exact and proved; 3 of 7 frozen predictions held, and the 4 that failed are explained |
+| Local direction: carrying laws for forcing | Practically exhausted | The theory is classical; the one open quantity (rejoining) is measured small |
+| Broader exploration: the braid picture | Known alternatives | A joint record needs many allowed states (counting, satisfiability) |
+| Long-term goal: G3 Hardness at three places | Obstruction learned | Carrying can't remove nested open uses, and those are what force order here |
+
+**Next step:** Research directions. Selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Joint records where they can matter: carrying knots in not-all-equal counting or satisfiability | 3/3 | 1/3, may reduce to known width-based dynamic programming | Define the law and count stages on small weaves → stop when it reduces to the known method or shows a gap | Selected · not started |
+| 2 | Why layered circuits need about d^0.4 phases | 2/3 | 3/3 | Solve the rank recursion → it matches within one, or fails | Deferred |
+| 3 | Round savings from carrying at large n | 1/3 | 3/3 | Fit to n = 2^14 → a clear limit | Deferred |
+
+**Corrections:** none for this study. The first study's four referee fixes (two Narrowing, two Not a block) were folded in and signed off. **Goals:** G3 checkpoint (obstruction learned). **Assumptions:** A87 (measure) added. [Decision note](https://github.com/jscul/knotlab/blob/main/research/CARRY-STRANDS-20261116-001/carry_strands.md)

@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "MARK-RATE-20261116-001A-P001",
+  "canonical_id": "MARK-RATE-20261116-001A-P001",
+  "kind": "proof",
+  "ticket": "MARK-RATE-20261116-001A",
+  "proof": "MARK-RATE-20261116-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "No single skip: a member at every level",
+  "status": "Proved",
+  "claim": "Theorem M: with r0 = 0, if every up signature and every below signature (families over every finite marking, Lemma S) meet the block step, no bond skips a level, so L_N(k, s) >= s + 1 at every depth. Computed: 55 small-orbit cyclic rulers with r = 2 pass (86 of 152 cyclic rulers with r0 = 0 now grow one member per level at every depth); the test is sound but coarse (0 of 48 acyclic rulers with r >= 2 pass). Referee pending.",
+  "dependencies": [
+    "BLOCK-REACH-20261116-001A",
+    "DIRECT-REACH-20261115-001B",
+    "LEVEL-REACH-20261114-001"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation",
+    "computer-assisted-proof"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "computer-assisted-census"
+    ]
+  },
+  "failure_conditions": [
+    "A real up or below signature outside the computed family.",
+    "A passing description whose reach at some depth is below s + 1."
+  ],
+  "lineage": {
+    "home_scope": "MARK-RATE-20261116-001",
+    "epic_path": [
+      "MARK-RATE-20261116-001"
+    ],
+    "parents": [
+      "proofs/BLOCK-REACH-20261116-001A"
+    ]
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip/manifest.json",
+    "identity": "proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip/identity.json",
+    "proof": "proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip/proof.md",
+    "result": "proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip/result.json",
+    "check": "proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip/check.py",
+    "directory": "proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip"
+  },
+  "remaining_obligations": [
+    "Independent referee: pending.",
+    "s + 2 (thin families or least-mark costs).",
+    "The 66 failing cyclic rulers.",
+    "Upper bounds for s > 4."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; addressed patterns placed by automaton maps, knots within a level or between adjacent levels.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude 2026-11-16; the advisor reviewed the argument; referee pending.",
+    "status": "proof by hand plus finite computation; check passed",
+    "novelty": "known-with-delta"
+  }
+}

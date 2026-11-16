@@ -1,7 +1,9 @@
 # Growth at every depth from forgetting blocks
 
 `BLOCK-REACH-20261116-001A-P001`, epic `BLOCK-REACH-20261116-001`, 2026-11-16. Written by Claude; the advisor model reviewed the design
-(`research/BLOCK-REACH-20261116-001/advisor_design_answer.md`). Referee pending. Checks: `check.py` (result in `result.json`). Words
+(`research/BLOCK-REACH-20261116-001/advisor_design_answer.md`). Refereed (BLOCK-REACH-R1,
+`research/BLOCK-REACH-20261116-001/referee-R1/report.md`): confirmed with fixes, no Block; one index reworded and an exact result the
+study missed added, credited to the referee. Checks: `check.py` (result in `result.json`). Words
 follow the [Intuitions glossary](../../../publication/knotlab/INTUITIONS.md#glossary) (block, orbit, descent: 16 November 2026).
 
 ## Setting
@@ -29,7 +31,8 @@ blocks. Take a bond B of P_N with a member u at level k and a member v at level 
 *Case 1: v lies in the subtree of u's orbit O_k.* Let O_k, O_(k+1), …, O_(k+s) be the orbits on the path from O_k to v's orbit. Group 0
 holds everything outside the proper subtree of O_k, including O_k; for j ≥ 1, group j holds O_(k+j), the side subtrees of the other
 children of O_(k+j−1), and the knots placed at O_(k+j−1) (a block knot may touch several children, so it sits with all of them). The
-interface between groups j − 1 and j is the assignment of O_(k+j); by Theorem W no other distinction is shared, and a group's
+interface between groups j − 1 and j is the assignment of O_(k+j−1) *(index corrected after the referee; it read O_(k+j); the count is
+unaffected)*; by Theorem W no other distinction is shared, and a group's
 relation is the block step from O_(k+j−1) to O_(k+j) at remaining depth N − k − j. The splicing lemma uses only the window being
 spliced: if groups i, …, i + r − 1 hold no member of B, and B has members on both sides, then the parts of B on the two sides are each
 free (B is a bond), the actual incoming and outgoing values of the window lie in the projections of its composed relation, which is
@@ -79,8 +82,16 @@ L_N(3, s) ≥ 1 + ⌈s/r⌉ for every s and N. Of the 46 that never forget, the 
 description is known both to never forget and to grow.
 
 By Lemma U every decided depth-9 value of the 786 is also an upper bound at every depth N ≥ 9 (all their depth-9 least bonds lie within
-levels 9 − r₀). For s = 1..4 the reach at every depth N ≥ 9 therefore lies between 1 + ⌈s/r⌉ and the depth-9 value; the gap is 1 in
-1,083 of the 1,596 ruler cells and 148 of the 172 half-rate cells, 2 or 3 in the rest.
+levels 9 − r₀). For s = 1..4 the reach at every depth N ≥ 9 therefore lies between max(3, 1 + ⌈s/r⌉), where Theorem W shows no tie
+at any depth, and the depth-9 value.
+
+**Exact cells (found by the referee).** Theorem W shows no tie at any depth for all 43 half-rate and all 399 small-orbit ruler
+descriptions, so L ≥ 3 for them, and Lemma U gives the depth-9 values from above. Hence L_N(3, s) = 3 exactly at every depth N ≥ 9
+for s = 1 and 2 in all 43 half-rate descriptions (the referee's upgrade, SAT-confirmed at N = 12), and for s = 1 in all 399 rulers (the
+same argument, computed after the referee and not refereed separately). Against max(3, ·) the gap to the depth-9 value is 0 in 86 and
+1 in 86 of the 172 half-rate cells, and 0 in 399, 1 in 855, 2 in 171 and 3 in 171 of the 1,596 ruler cells. *(Corrected after the
+referee: the study had measured the gap against the bare 1 + ⌈s/r⌉, "1 in 1,083 of the 1,596 ruler cells and 148 of the 172 half-rate
+cells", although its own remark gives max(3, ·).)*
 
 *Checks.* 100 composed window relations at depth 7 equal SAT projections of the sub-pattern they describe (every knot placed under the
 upper orbit and not under the lower one), and no decided census value is below the bound (`gate_forget.py`); the projections onto 158

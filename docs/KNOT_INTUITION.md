@@ -3651,11 +3651,12 @@ So holes come in two kinds:
      at the fifth level read (a second reported change was an effect of the deepest level read, corrected after the referee), and,
      read at depth 9 only, the profile that grows one member per two levels keeps growing two levels further
      ([decision note](../research/DIRECT-REACH-20261115-001/direct_reach.md)).
-   - **Growth at every depth** (`BLOCK-REACH-20261116-001`; referee pending): where the maps send each address to only a few others,
+   - **Growth at every depth** (`BLOCK-REACH-20261116-001`; refereed, confirmed with fixes): where the maps send each address to only a few others,
      a stretch of r levels that forgets what enters it forces a bond to take a member at least every r levels, so every such ruler of
      the census, cyclic ones included, and every pattern growing one member per two levels keeps growing at every depth, proved; the
-     values read at depth 9 bound them from above at every depth. Rulers with cycles forget more slowly, so that they grow one member
-     per level is still read only to depth 9 ([decision note](../research/BLOCK-REACH-20261116-001/block_reach.md)).
+     values read at depth 9 bound them from above at every depth, and the first levels are exact at every depth (three members one
+     and two levels down for the half-rate patterns, found by the referee; one level down for the rulers). Rulers with cycles forget
+     more slowly, so that they grow one member per level is still read only to depth 9 ([decision note](../research/BLOCK-REACH-20261116-001/block_reach.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

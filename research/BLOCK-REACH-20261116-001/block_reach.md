@@ -2,7 +2,10 @@
 
 Epic `BLOCK-REACH-20261116-001` (`DIRECT-REACH-20261115-001#1`, at the coordinator's go-ahead, 2026-11-16 20:30 UTC; G17, with G1),
 2026-11-16. Proof note: [proof.md](../../proofs/BLOCK-REACH-20261116-001A/BLOCK-REACH-20261116-001A-P001_forgetting_blocks/proof.md).
-Code by the thread. The canonical K1–K3 test is unchanged. **Referee pending.**
+Code by the thread. The canonical K1–K3 test is unchanged. **Refereed** (BLOCK-REACH-R1, [report](referee-R1/report.md), commit
+68f92ea96): **confirmed with fixes**, no Block; Theorem F (both cases), the block step and Lemma U hold, and the forgetting lengths
+recompute on all 786. Folded in below and logged in `docs/CORRECTIONS.md`: an index in the proof, the predictions' time, and an exact
+result the study missed.
 
 ## The question
 
@@ -38,7 +41,12 @@ depth 9 stays a bond at every depth.
 So among small orbits, forgetting decides growth: every description that forgets grows at every depth (740 of 786), and of the 46
 that never forget, 42 are proved bounded and 4 are open ([3, 4, 4, 4], [3, 4, 5, 5] and two partly undecided). None is known to
 never forget and grow. The bound is one below the census's values for most rulers (s + 1 against s + 2 when r = 1) and half-rate
-descriptions; the gap is 1 in 1,083 of the 1,596 ruler cells and 148 of the 172 half-rate cells.
+descriptions. Where Theorem W shows no tie at any depth (all 43 half-rate and all 399 rulers) the bound is max(3, 1 + ⌈s/r⌉), and
+then **the reach is exact at the first levels**: L_N(3, s) = 3 at every depth N ≥ 9 for s = 1 and 2 in every half-rate description
+(found by the referee, SAT-confirmed at N = 12) and for s = 1 in every ruler (the same argument, not refereed separately). The gap is
+then 0 in 86 and 1 in 86 of the 172 half-rate cells, and 0 / 1 / 2 / 3 in 399 / 855 / 171 / 171 of the 1,596 ruler cells. *(Corrected
+after the referee: the gap had been measured against the bare bound, "1 in 1,083 of the 1,596 ruler cells and 148 of the 172
+half-rate cells".)*
 
 **B180, the cyclic rulers.** 154 of the census's 158 cyclic rulers have small orbits, and all grow at every depth. But they forget
 more slowly: r = 1 for 20% of them against 80% of the acyclic rulers, so for most the theorem proves a rate of at least 1/2 where the
@@ -50,12 +58,13 @@ forget, their one-level stretches mostly do not.
 | 1 | Theorem F: forgetting windows of r block steps give L ≥ 1 + ⌈s/r⌉ at every depth and every s | proved (from the splicing lemma of `BRANCH-DEPTH-20261112-001A`) |
 | 2 | Lemma U: projections onto addresses at level ≤ m are the same at every depth ≥ m + r₀ | proved |
 | 3 | 740 of 786 small-orbit descriptions forget (r ≤ 3, the same at every remaining depth); every ruler, half-rate and 6 of 8 undecided grow at every depth | computed; 100 window relations equal SAT, no census value below the bound |
-| 4 | Every depth-9 least bond of the 786 holds at every depth: L_N ≤ L_9 for s ≤ 4 and N ≥ 9 | computed; 158 bonds' projections equal by SAT at depths 9, 10, 11 |
+| 4 | Every depth-9 least bond of the 786 holds at every depth: L_N ≤ L_9 for s ≤ 4 and N ≥ 9; exact L = 3 at s = 1, 2 for the 43 half-rate (the referee) and at s = 1 for the 399 rulers | computed; 158 bonds' projections equal by SAT at depths 9, 10, 11 (the referee: 132 at 9, 12, 13) |
 | 5 | Cyclic rulers forget more slowly (r = 1 in 20% against 80%) | computed |
 
 ## Predictions
 
-Frozen in [predictions.md](predictions.md) (committed in 169c0d53f before the run; the exploratory stable-depth lengths had been seen).
+Frozen in [predictions.md](predictions.md) (committed in 169c0d53f at 20:45 UTC, before the census output first appeared in 6c9ce0f8a at
+20:50 UTC; the exploratory stable-depth lengths had been seen; the file's own stamp, 21:00, was corrected after the referee).
 
 - **P1 holds.** The forgetting length at every remaining depth equals the stable one in all 786 (needed: 40 of 43 half-rate, 90% of
   the rulers).

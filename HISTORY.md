@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 16 November 2026: growth at every depth from blocks, confirmed by its referee, with an exact result added
+
+- Growth at every depth from blocks (`BLOCK-REACH-20261116-001`) was confirmed by its referee with fresh code, with no Block: the
+  forgetting theorem in both of its cases, the step it uses and the lemma that carries depth-9 bonds to every depth hold, and the
+  forgetting lengths recompute on all 786 patterns ([decision note](research/BLOCK-REACH-20261116-001/block_reach.md)).
+- Added, from the referee: for every pattern that grows one member per two levels, the least bond is exactly three members one and
+  two levels down at every depth, and for every ruler exactly three one level down. The study had compared its bound with the values
+  read at depth 9 without its own refinement, so it reported a gap of one where there is none.
+- Reworded: an index in the proof (which orbit two groups share), and the predictions' time, which had been stamped after their commit.
+
 ## 16 November 2026: direct reach at every depth, confirmed by its referee, one count narrowed
 
 - Direct reach at every depth (`DIRECT-REACH-20261115-001`) was confirmed by its referee with fresh code, with no Block: the two

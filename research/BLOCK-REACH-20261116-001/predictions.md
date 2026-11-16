@@ -1,6 +1,7 @@
 # BLOCK-REACH-20261116-001: predictions
 
-Frozen 2026-11-16 21:00 UTC, after the advisor's design review (`advisor_design_answer.md`) and before `run_census.py` was run. Seen
+Frozen 2026-11-16 20:45 UTC (the commit 169c0d53f; first stamped 21:00, later than the commit, corrected after the referee), after
+the advisor's design review (`advisor_design_answer.md`) and before `run_census.py` was run. Seen
 before freezing: the exploratory forgetting lengths at stable depth only, with a cap of six steps (`exploratory/forget_windows.py`;
 half-rate r = 2 for 19 and 3 for 24; rulers 1 / 2 / 3 for 228 / 152 / 19; other 1 / 2 / 3 / none for 283 / 8 / 1 / 2; undecided 3 / none
 for 6 / 2; direct none for 42), and the gate (`gate_forget.json`: 100 window relations equal SAT, no decided census value below the

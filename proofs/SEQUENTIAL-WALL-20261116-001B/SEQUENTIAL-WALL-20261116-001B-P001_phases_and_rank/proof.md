@@ -1,5 +1,7 @@
 # Phases of the forcing law, and what overlap does to them
 
+Status: Proved (referee pending)
+
 Ticket `SEQUENTIAL-WALL-20261116-001B`, 16 November 2026. Written by Claude in one session; checked by `check.py` beside this
 file (exhaustive comparisons on all patterns of four distinctions and on random larger ones) and handed to the referee thread.
 The advisor model was consulted on the analysis before it was frozen (see the pre-registration). Every statement is labelled

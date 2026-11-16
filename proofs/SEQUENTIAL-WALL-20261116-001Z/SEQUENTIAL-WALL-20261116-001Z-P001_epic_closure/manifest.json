@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "SEQUENTIAL-WALL-20261116-001Z-P001",
+ "canonical_id": "SEQUENTIAL-WALL-20261116-001Z-P001",
+ "kind": "proof",
+ "ticket": "SEQUENTIAL-WALL-20261116-001Z",
+ "proof": "SEQUENTIAL-WALL-20261116-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: which knot patterns must be worked in order",
+ "status": "Proved",
+ "claim": "Ledger closing SEQUENTIAL-WALL-20261116-001: ticket A, the frozen run (386 cases; 9 of 13 predictions held, P2b, P5, P6-linear and P9 failed); ticket B, Theorems 1-6 (phases = Strahler numbers, overlap bounds, knot-law classes, dual law); referee pending; recommendation research directions, carrying open atoms. No new claim.",
+ "dependencies": [
+  "SEQUENTIAL-WALL-20261116-001A",
+  "SEQUENTIAL-WALL-20261116-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "SEQUENTIAL-WALL-20261116-001",
+  "epic_path": [
+   "SEQUENTIAL-WALL-20261116-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/SEQUENTIAL-WALL-20261116-001A/SEQUENTIAL-WALL-20261116-001A-E001_rounds_phases/contract.json": "a1f6072469ffe8f0fd51a1aa0b033be0df0118c33533cb39dbc5ccdc5d164bfe",
+  "artifacts/SEQUENTIAL-WALL-20261116-001A/SEQUENTIAL-WALL-20261116-001A-E001_rounds_phases/summary.json": "7a57504600954285e4132b9a3bb0577cb4f0e7b0f7763c1a70ac3ba7a496d263",
+  "proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/manifest.json": "12394156a6547982c6dbaa673c3561b5293d0fec908bd6e98215516a039f5631",
+  "proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/result.json": "ef5aa3bbae86a8df0743c1d03f5d3844a2ba49e8e502b057d04719b0b69b84ed"
+ },
+ "paths": {
+  "manifest": "proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure/result.json",
+  "check": "proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-16; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

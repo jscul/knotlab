@@ -2543,6 +2543,23 @@ that earlier records used in two senses.
   system that allows no state is a **contradiction**.
 - **Depth.** How much of a knot pattern an observer must hold at once to see a
   hole in it (lesson 5.2).
+- **Round.** One step of propagation in an atom pattern whose held distinctions the outside sets to 1: every atom
+  whose two demanders are forced forces the distinction it demands (the literature's synchronous unit propagation).
+  The count of rounds is the height of the shallowest derivation (`SEQUENTIAL-WALL-20261116-001`, 16 November 2026).
+- **Phase.** One stage of the forcing law: every atom with a forced demander is read as the two-place rule from its
+  other demander to what it demands, and everything reachable along those rules is forced at once. A distinction's
+  phase is the first that forces it, and it equals the least Strahler number of its derivation trees (the
+  literature's Horton–Strahler number, or tree dimension; the stages are Newton iterates). The dual law's phases
+  spread unforcedness the same way, on patterns without cycles. Never "phase transition": the sudden leap of the
+  forced set is the jump. The intuition, in the owner's word: a phase untangles everything that comes apart once one
+  distinction of a knot is settled, since what is left of the knot is a two-place rule, which is no knot.
+- **Open use.** An atom whose two demanders are first forced in the same phase: it is used as a knot, both its loops
+  still open, and only open uses make the forcing law take another phase.
+- **Reused; demanded several ways; rejoining.** A distinction is reused when it demands in two or more atoms, and
+  demanded several ways when two or more atoms demand it (not the choice rule above, though in the forced set it
+  offers alternative derivations). A rejoining is an atom with one distinction below both of its demanders in a
+  derivation tree. Without reuse an atom pattern needs at most log₂ of its held count phases, more phases than that
+  need a rejoining, and the sequential wall needs both reuse and several-way demand (`SEQUENTIAL-WALL-20261116-001`).
 - **Drawn knot pattern.** A knot pattern given together with a drawing on a
   surface, which earlier records called a knot space: every knot holds three
   distinctions and every distinction lies in three knots, and the drawing is a

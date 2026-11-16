@@ -139,6 +139,8 @@ evidence: results and their status come from the records each entry links.
 | [A82](#a82--knots-placed-by-address-maps-read-the-owners-nested-parts-that-know-where-they-are) | Knots placed by address maps read the owner's nested parts that know where they are | reading | Assumed |
 | [A83](#a83--the-top-binds-every-depth-when-a-bond-of-fixed-size-reaches-every-level-of-every-finite-pattern) | The top binds every depth when a bond of fixed size reaches every level of every finite pattern | reading | Assumed |
 | [A84](#a84--pangs-degree-size-relation-holds-as-stated) | Pang's degree-size relation holds as stated | premise | Assumed |
+| [A85](#a85--what-must-be-worked-in-order-is-read-by-the-phases-of-the-forcing-law) | What must be worked in order is read by the phases of the forcing law | measure | Assumed |
+| [A86](#a86--a-typical-atom-pattern-is-uniform-atoms-at-three-per-distinction-with-a-uniform-held-order) | A typical atom pattern is uniform atoms at three per distinction with a uniform held order | scope | Assumed |
 
 ## Entries
 
@@ -2203,3 +2205,47 @@ evidence: results and their status come from the records each entry links.
   named-product bounds.
 - **History.**
   - 2026-11-16 · Added after referee GUARDED-ROUTE-BRANCH-R1 found the four studies resting on it with no register entry.
+
+### A85 · What must be worked in order is read by the phases of the forcing law
+
+**Assumed** · 2026-11-16 · measure
+
+- **Statement.** How much of an atom pattern with held distinctions must be worked in order is read by the number of phases of the
+  forcing law: in each phase every atom with a forced demander is read as a two-place rule and everything reachable along those
+  rules is forced at once, so an atom waits only when its two demanders are first forced in the same phase. On patterns without
+  cycles the lesser of this count and the dual law's (which spreads unforcedness the same way) is read instead. Parallel time is
+  then at most a polylogarithmic factor times this count.
+- **Why.** Taken by default in `SEQUENTIAL-WALL-20261116-001`
+  ([decision note](../research/SEQUENTIAL-WALL-20261116-001/sequential_wall.md)) as the knot-native law closest to the owner's
+  untangling: settling one distinction of a knot leaves a two-place rule. Its count is the Horton-Strahler number of the best
+  derivation (Esparza, Kiefer and Luttenberger, 2010), which makes it computable and comparable with propagation by rounds. Other
+  parallel readings were not compared: depth of resolution proofs, laws that carry the joint record of an open atom, and arbitrary
+  NC algorithms.
+- **Rests on it.** That epic's readings that random atom patterns at the jump need few phases (12 at n = 2^20) though propagation
+  needs many rounds (312), that unlayered random circuits need at most 4 phases, and that layered random circuits need about
+  d^0.41.
+- **Challenge.** A family with many phases that another native law decides quickly already exists without cycles (the ladder and
+  the pyramid, ended at once by the dual law); on patterns with cycles, find one, or let the law carry the joint record of open
+  atoms up to w distinctions and see whether the layered circuits' phases fall with w. Overturned if a law no stronger than
+  two-place reasoning plus bounded records needs polylogarithmically many phases on the layered circuits.
+- **History.**
+  - 2026-11-16 · Added by `SEQUENTIAL-WALL-20261116-001`.
+
+### A86 · A typical atom pattern is uniform atoms at three per distinction with a uniform held order
+
+**Assumed** · 2026-11-16 · scope
+
+- **Statement.** Claims about typical atom patterns in `SEQUENTIAL-WALL-20261116-001` are made for one declared random process: n
+  distinctions, 3n atoms each holding three distinct distinctions chosen uniformly (two demanders and the demanded one), and the
+  held set the first k distinctions of a uniform order, read at the jump of the forced set (the least k forcing half) and at fixed
+  held fractions.
+- **Why.** Taken by default in that epic ([decision note](../research/SEQUENTIAL-WALL-20261116-001/sequential_wall.md)): at three
+  atoms per distinction the mean field x = a + (1 - a)(1 - e^(-3x^2)) has a clear discontinuous jump (forced share 0.21 to 0.93 at
+  a = 0.098), which is the regime where propagation is slow; densities below two have no jump, and other weightings were not tried.
+- **Rests on it.** The epic's measured exponents at the jump (rounds like n^0.30, phases 0.57 per doubling) and the phase profile
+  read against Newton's rates at a tangency.
+- **Challenge.** Repeat at three per distinction replaced by 2.5, 4 and 6 atoms, with demanded distinctions of unequal weight, or
+  with atoms placed by a growth law of the program (newest-w growth); the exponents are overturned as typical if they move outside
+  the epic's ranges (rounds slope 0.29 to 0.37, phases 0.2 to 0.8 per doubling) under these changes.
+- **History.**
+  - 2026-11-16 · Added by `SEQUENTIAL-WALL-20261116-001`.

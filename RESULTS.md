@@ -1670,6 +1670,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Two repeated middle variables and a second way to group the hidden choices (`TWO-RELAY-PADDING-20261115-001`) | [closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | Sharing a middle variable between two routes (`UNSIGNED-ROUTE-JOINS-20261115-001`) | [closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/UNSIGNED-ROUTE-JOINS-20261115-001/) |
 | 2026-11-16 | Exact reach at every depth from blocks of orbits (`BLOCK-REACH-20261116-001`) | — | [folder](research/BLOCK-REACH-20261116-001/) |
-| 2026-11-16 | Which knot patterns must be worked in order (`SEQUENTIAL-WALL-20261116-001`) | — | [folder](research/SEQUENTIAL-WALL-20261116-001/) |
+| 2026-11-16 | Which knot patterns must be worked in order (`SEQUENTIAL-WALL-20261116-001`) | [closure](proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure/proof.md) | [folder](research/SEQUENTIAL-WALL-20261116-001/) |
 | 2026-11-16 | Does a learned choice of which knot to act on next, with memory of earlier steps, cut total work where plain search is costly? (`WHERE-NEXT-20261116-001`) | — | [folder](research/WHERE-NEXT-20261116-001/) |
 

@@ -3,7 +3,8 @@
 Status: Proved
 
 Ticket `SEQUENTIAL-WALL-20261116-001Z`, 2026-11-16. A ledger; it makes no new claim. The decision note is
-`research/SEQUENTIAL-WALL-20261116-001/sequential_wall.md`. Referee pending.
+`research/SEQUENTIAL-WALL-20261116-001/sequential_wall.md`. Refereed: `SEQUENTIAL-WALL-R1`, confirmed with fixes, no Block (commit
+`c960effc1`); four wording corrections logged on 16 November.
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |

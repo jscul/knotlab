@@ -184,3 +184,13 @@ description.
 No claim about P versus NP or P versus NC. Theorem 4's conclusions are conditional on P ≠ NC or P ≠ NL. The phase count is a
 one-sided predictor: polylogarithmically many phases give NC, but many phases do not give hardness (the ladder and the pyramid are
 decided in NL, and the dual law ends them at once).
+
+## Corrections (16 November 2026, referee `SEQUENTIAL-WALL-R1`)
+
+The text above is kept as written; read it with these two corrections.
+
+- Theorem 5, "never in NL or L", and "which is why no knot law is in NL": read **never NL-complete or L-complete**. The two AC⁰ laws
+  are in L. Baker–Pixley shows that no knot is majority-closed, which excludes exactly the NL- and L-complete cases. (Not a block.)
+- Theorem 4(c), last sentence: "such patterns" are the P-hard families, not every family needing many phases. Many phases need only
+  reuse (Theorem 3), as the pyramid shows, which has many phases and no several-way demand. A P-hard family needs reuse unless
+  P = NC and several-way demand unless P = NL. (Not a block.)

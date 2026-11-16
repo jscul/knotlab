@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 16 November 2026: which knot patterns must be worked in order, confirmed by its referee, two statements narrowed
+
+- Which knot patterns must be worked in order (`SEQUENTIAL-WALL-20261116-001`) was confirmed by its referee with fresh code, with no
+  Block: phases of the forcing law are Strahler numbers, the overlap theorems and the dual law hold, the table of the 34 three-place
+  knot laws recomputes, and the measurements reproduce ([decision note](research/SEQUENTIAL-WALL-20261116-001/sequential_wall.md)).
+- Narrowed: the sequential wall needs reuse unless P = NC and several-way demand unless P = NL, as the theorem says; the glossary
+  entry "Reused; demanded several ways; rejoining" had dropped the condition.
+- Narrowed: the rounds exponent at the jump is about 0.30 to 0.36; its lower end rests on the eight samples at n = 2^20.
+- Reworded: no knot law is NL- or L-complete (two are in AC⁰, hence in L), and many phases need only reuse, not several-way demand.
+
 ## 16 November 2026: the guarded-route proof-length bounds are conditional, and confirmed by their referee
 
 - An independent referee confirmed the 23 guarded two-route studies (`BRAID-READOUT-20261114-001` to `FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001`) with fixes and no withdrawal. The transfers, encodings, linear solvers and every recomputed number hold.

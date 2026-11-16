@@ -2559,7 +2559,8 @@ that earlier records used in two senses.
   demanded several ways when two or more atoms demand it (not the choice rule above, though in the forced set it
   offers alternative derivations). A rejoining is an atom with one distinction below both of its demanders in a
   derivation tree. Without reuse an atom pattern needs at most log₂ of its held count phases, more phases than that
-  need a rejoining, and the sequential wall needs both reuse and several-way demand (`SEQUENTIAL-WALL-20261116-001`).
+  need a rejoining, and the sequential wall needs reuse unless P = NC and several-way demand unless P = NL
+  (`SEQUENTIAL-WALL-20261116-001`).
 - **Drawn knot pattern.** A knot pattern given together with a drawing on a
   surface, which earlier records called a knot space: every knot holds three
   distinctions and every distinction lies in three knots, and the drawing is a

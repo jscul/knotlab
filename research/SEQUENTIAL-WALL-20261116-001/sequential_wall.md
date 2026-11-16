@@ -1,7 +1,7 @@
 # Which knot patterns must be worked in order
 
 Epic `SEQUENTIAL-WALL-20261116-001`, 16 November 2026, by Claude, picking up the parallelism question of the owner's Codex session
-"Clarify P vs NP and parallelism" (14 November). Goals G3 (and G16, not moved). Referee pending. Pre-registration:
+"Clarify P vs NP and parallelism" (14 November). Goals G3 (and G16, not moved). Refereed: `SEQUENTIAL-WALL-R1`, confirmed with fixes, no Block ([report](referee-R1/report.md), commit `c960effc1`); its four fixes are folded in below (see "Referee"). Pre-registration:
 [preregistration.md](preregistration.md), frozen in commit `cb6144f52` before any read-out. Proof:
 [Theorems 1–6](../../proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/proof.md).
 Experiment: [code and contract](../../experiments/SEQUENTIAL-WALL-20261116-001A/SEQUENTIAL-WALL-20261116-001A-E001_rounds_phases/),
@@ -18,7 +18,8 @@ polylogarithmically many phases is decided in polylogarithmic parallel time.
 
 Measured against step-by-step propagation (**rounds**), on 150 random atom patterns (each read at about fifteen held counts) and 220 random circuits:
 
-- On random atom patterns at the jump of the forced set, rounds grow like n^0.30 (312 rounds at n = 2^20), while phases grow only
+- On random atom patterns at the jump of the forced set, rounds grow like n^0.30 to n^0.36 (312 rounds at n = 2^20; the exponent's
+  lower end rests on the eight samples at 2^20), while phases grow only
   logarithmically, 0.57 phases per doubling of n (12 phases at n = 2^20). The slow cascade is almost all two-place work; open uses
   nest only logarithmically deep.
 - On random monotone circuits with no layering, a few phases suffice (at most 4 up to 65,536 gates).
@@ -27,7 +28,8 @@ Measured against step-by-step propagation (**rounds**), on 150 random atom patte
   the phase count growing.
 
 How the knots overlap decides when the wall can bite: it needs both a distinction **reused** as a demander in several atoms and
-one **demanded several ways** by several atoms (Theorem 4, conditional on P ≠ NC and P ≠ NL), and more phases than log₂ of the
+one **demanded several ways** by several atoms (Theorem 4: reuse unless P = NC, several-way demand unless P = NL; many phases
+alone need only reuse), and more phases than log₂ of the
 held count need a **rejoining**, one distinction below both demanders of one atom (Theorem 2). Being a knot does not decide it: of
 the 34 three-place knots, 2 make laws that are trivial (AC⁰), 2 parity laws (⊕L), 14 sequential (P-complete) and 16 NP-complete
 (Theorem 5, known classification applied).
@@ -72,7 +74,8 @@ at once.
 | P-complete | 14 | the atom, its dual, and knots that define one of them with held values (definitions found by search) |
 | NP-complete | 16 | not-all-equal and the rest |
 
-  None is in NL or L, because no knot is closed under majority (Baker and Pixley 1975). Counts agree with the advisor's hand
+  None is NL-complete or L-complete (the two AC⁰ laws are in L, so "never in NL or L", as first written, was wrong), because no
+  knot is closed under majority (Baker and Pixley 1975). Counts agree with the advisor's hand
   classification.
 
 ## Measurements
@@ -84,7 +87,7 @@ at once.
 | G | gates, checks, Strahler number = phase in every random case, circuit evaluations | held | 386 of 386 cases ok |
 | P1 | rounds fast away from the jump | held | at α = 0.03, 0.06, 0.2, 0.4: 5, 11, 17, 10.5 rounds at 2^20 against 2, 4.5, 12, 7 at 2^12 |
 | P2 | rounds slow polynomially at the jump | held | slopes 0.30 (k*) and 0.32 (α*) |
-| P2a | n^(1/3) at the sample's jump, slope in [0.29, 0.37] | held | 0.302 |
+| P2a | n^(1/3) at the sample's jump, slope in [0.29, 0.37] | held, only with the last size | 0.302 over 2^14 … 2^20, but 0.258 without the eight samples at 2^20 (bootstrap interval of the fit [0.27, 0.36]; the referee's fresh code gives 0.334 [0.31, 0.35] over 2^10 … 2^18): the exponent is about 0.30 to 0.36 |
 | P2b | n^(1/4) at fixed α* = 0.098251, slope in [0.21, 0.29] | **failed** | 0.316: at fixed α* rounds grow like at the sample's own jump, not like n^(1/4) |
 | P3 | phases grow logarithmically at the jump | held | 6, 8, 9, 10, 11, 12 phases at 2^10 … 2^20; slope 0.57 per doubling; growth +6. My first view (log log n, growth ≤ +1) was wrong, as the advisor argued |
 | P3b | rounds and phases separate | held | R*/P* = 7.0 at 2^12, 25.0 at 2^20 |
@@ -163,7 +166,7 @@ note confirms. Its Newton rates (0.54 and 6.9) were checked post hoc above.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — the sequential wall in knot patterns | **Status:** Successful (referee pending) | The wall located in knot terms (open uses, both kinds of overlap), the knot laws placed, and the rounds/phases separation measured: 9 of 13 frozen predictions held, 4 failed and are read |
+| This attempt — the sequential wall in knot patterns | **Status:** Successful (refereed, confirmed with fixes) | The wall located in knot terms (open uses, both kinds of overlap), the knot laws placed, and the rounds/phases separation measured: 9 of 13 frozen predictions held, 4 failed and are read |
 | Local direction — phases of the forcing law | Continue, narrowly | The layered √-like growth and carrying open atoms (the owner's braid made exact) are the two open questions it leaves |
 | Broader exploration — parallel complexity of knot laws | Known alternatives | Allender et al. classify every knot law; Newton/Strahler theory covers the phases; no new algorithm here |
 | Long-term goal — G3 Hardness at three places | Capability gained | A measured, knot-native account of which overlaps force order; no hardness for SAT and no P vs NC claim |
@@ -177,7 +180,10 @@ note confirms. Its Newton rates (0.54 and 6.9) were checked post hoc above.
 | 3 | Phases of not-all-equal propagation on the program's own patterns (weaves, three-regular contradictions) | 2/3 — places the program's main law in this picture | 3/3 — the gadget and code exist | Count phases from one held pair on six-regular weaves and three-regular contradictions → stop at a clear trend over three sizes | Alternative · deferred |
 | 4 | Prove the logarithmic phase law at the jump from the tangency analysis | 1/3 — known in kind (Newton at critical systems) | 2/3 | Turn the 0.545 shrink rate into a bound on phases for the mean-field map → stop at a proof or an obstacle | Alternative · deferred |
 
-**Corrections:** none. No published claim was changed; the advisor's four corrections were to this study's own unpublished design.
+**Corrections:** none at close; after the referee, four (two Narrowing, two Not a block), logged in `docs/CORRECTIONS.md` and knotlab's
+HISTORY.md: Theorem 4's condition restored in three summaries; "never in NL or L" read as never NL- or L-complete; Theorem 4(c)'s
+last sentence limited to P-hard families; P2a's verdict rests on the last size. The advisor's four corrections were to this study's
+own unpublished design.
 
 **Goals:** G3 checkpoint (capability gained), no goal changed; G16 not moved.
 
@@ -186,6 +192,26 @@ patterns without cycles by the lesser of it and the dual law) and A86 (scope: a 
 distinction with a uniform held order).
 
 **Basket:** the holes-and-proofs line's basket was read; none of its untaken directions is this question.
+
+## Referee
+
+`SEQUENTIAL-WALL-R1` (background referee thread, fresh code, no Codex; [report](referee-R1/report.md)): **confirmed with fixes, no
+Block.** Theorems 1 to 6 hold (Theorem 3's minimal-tree argument is correct); Theorem 5's table recomputes (34 knots, 2 / 2 / 14 / 16,
+all 14 definitions valid, and none of them needs a held value: identifying variables and one hidden distinction suffice); the
+pre-registration and code hashes are intact; the measurements reproduce within noise in fresh code (median R* 32, 52.5, 86, 142 and
+P* 6, 7, 9, 10 at 2^10 … 2^16; 0 failures of Theorem 1 in 115,542 cases). Folded in on 16 November:
+
+1. **Narrowing.** Theorem 4's condition was dropped in `docs/KNOT_INTUITION.md`, the G3 entry of the goals and the public glossary
+   entry "Reused; demanded several ways; rejoining"; restored there: the wall needs reuse unless P = NC and several-way demand
+   unless P = NL.
+2. **Not a block.** "Never in NL or L" (proof, this note, the objects row) is false as written, since the two AC⁰ laws are in L; it
+   means never NL-complete or L-complete, which is what Baker–Pixley gives.
+3. **Not a block.** Theorem 4(c)'s last sentence tied several-way demand to patterns needing many phases; the pyramid has many phases
+   and none. Many phases need only reuse (Theorem 3); a P-hard family needs reuse unless P = NC and several-way demand unless P = NL.
+4. **Narrowing.** P2a's "held" rests on the eight samples at 2^20 (table above); the exponent is about 0.30 to 0.36 and n^(1/3)
+   stays plausible.
+
+The tally stays 9 of 13 by the frozen rules, with P2a marked as resting on the last size.
 
 ## Final report as sent
 

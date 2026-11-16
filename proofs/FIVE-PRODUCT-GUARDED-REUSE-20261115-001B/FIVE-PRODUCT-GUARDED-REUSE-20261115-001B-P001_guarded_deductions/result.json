@@ -1,0 +1,755 @@
+{
+  "artifact_id": "FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001",
+  "balanced_whole_case_control": {
+    "single_case_closures": 280,
+    "sizes_of_saturated_live_cells": [
+      32,
+      64,
+      128
+    ],
+    "two_case_guards_still_live": 980
+  },
+  "claim": "The fixed independent pair p1 and p2 XOR p3 admits an eight-case tree whose eight guarded applications use exactly six distinct terminal contradictions. Six is minimal for a terminal-guard library covering all 64 original reporting-evaluator inputs. Under the stated unit, the guarded proof uses 20 local evaluator checks, its expansion uses 24, and a direct tree uses 16.",
+  "direct_source_fact_library": {
+    "candidate_maximal_guards": 26,
+    "minimum_rich_citations_among_size_six": 16,
+    "minimum_rich_facts": 6,
+    "tested_sizes": {
+      "0": {
+        "spanning_libraries": 0,
+        "subsets": 1
+      },
+      "1": {
+        "spanning_libraries": 0,
+        "subsets": 26
+      },
+      "2": {
+        "spanning_libraries": 0,
+        "subsets": 325
+      },
+      "3": {
+        "spanning_libraries": 0,
+        "subsets": 2600
+      },
+      "4": {
+        "spanning_libraries": 0,
+        "subsets": 14950
+      },
+      "5": {
+        "spanning_libraries": 0,
+        "subsets": 65780
+      },
+      "6": {
+        "spanning_libraries": 4,
+        "subsets": 230230
+      }
+    }
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/check_execution-001.json",
+    "sha256": "bfd7c1495b051e8d488711a14279cf4b646ffa4070d5b815d96f31fe557916ec"
+  },
+  "five_product_proofs": {
+    "direct_even_input_tree": {
+      "expansion": {
+        "nodes": 15,
+        "parent_references": 14,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "split": 7,
+          "terminal": 8
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            16,
+            64
+          ],
+          "right": [
+            16,
+            256
+          ]
+        },
+        "source_support_visits": 0
+      },
+      "nodes": 15,
+      "parent_references": 14,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "split": 7,
+        "terminal": 8
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          16,
+          64
+        ],
+        "right": [
+          16,
+          256
+        ]
+      },
+      "source_checks": 0,
+      "source_support_visits": 0,
+      "xor_additions": 0
+    },
+    "direct_same_queries": {
+      "expansion": {
+        "nodes": 15,
+        "parent_references": 14,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "split": 7,
+          "terminal": 8
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            22,
+            84
+          ],
+          "right": [
+            30,
+            340
+          ]
+        },
+        "source_support_visits": 0
+      },
+      "leaf_orders": {
+        "rich_first_then_plain_first_by_leaf": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "sum_with_best_order_per_leaf": 22
+      },
+      "nodes": 15,
+      "parent_references": 14,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "split": 7,
+        "terminal": 8
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          22,
+          84
+        ],
+        "right": [
+          30,
+          340
+        ]
+      },
+      "source_checks": 0,
+      "source_support_visits": 0,
+      "xor_additions": 0
+    },
+    "literal_live_lemma": {
+      "expansion": {
+        "nodes": 29,
+        "parent_references": 28,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "discharge": 2,
+          "split": 11,
+          "terminal": 14,
+          "use": 2
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            34,
+            104
+          ],
+          "right": [
+            44,
+            400
+          ]
+        },
+        "source_support_visits": 0
+      },
+      "literal_lemma_uses": [
+        {
+          "lemma": 5,
+          "live_points_before": 128,
+          "live_points_excluded_by_lemma": 64,
+          "node": 9,
+          "saturated_live_points_after": 32
+        },
+        {
+          "lemma": 5,
+          "live_points_before": 64,
+          "live_points_excluded_by_lemma": 32,
+          "node": 13,
+          "saturated_live_points_after": 16
+        }
+      ],
+      "nodes": 23,
+      "parent_references": 23,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "discharge": 1,
+        "split": 9,
+        "terminal": 11,
+        "use": 2
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          25,
+          72
+        ],
+        "right": [
+          32,
+          304
+        ]
+      },
+      "source_checks": 0,
+      "source_support_visits": 0,
+      "xor_additions": 0
+    },
+    "literal_specialized_rival": {
+      "expansion": {
+        "nodes": 23,
+        "parent_references": 22,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "split": 11,
+          "terminal": 12
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            24,
+            64
+          ],
+          "right": [
+            28,
+            272
+          ]
+        },
+        "source_support_visits": 0
+      },
+      "nodes": 23,
+      "parent_references": 22,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "split": 11,
+        "terminal": 12
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          24,
+          64
+        ],
+        "right": [
+          28,
+          272
+        ]
+      },
+      "source_checks": 0,
+      "source_support_visits": 0,
+      "xor_additions": 0
+    },
+    "six_terminal_dag": {
+      "expansion": {
+        "nodes": 23,
+        "parent_references": 22,
+        "rich_route_support_visits": 64,
+        "rules": {
+          "rich_route": 8,
+          "split": 7,
+          "terminal": 8
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            24,
+            136
+          ],
+          "right": [
+            16,
+            128
+          ]
+        },
+        "source_support_visits": 0
+      },
+      "nodes": 21,
+      "parent_references": 22,
+      "rich_route_support_visits": 64,
+      "rich_routes": [
+        {
+          "additional_independent_guard_equations": 1,
+          "node": 1,
+          "rich_points_checked": 10,
+          "terminal": 0
+        },
+        {
+          "additional_independent_guard_equations": 2,
+          "node": 3,
+          "rich_points_checked": 6,
+          "terminal": 2
+        },
+        {
+          "additional_independent_guard_equations": 2,
+          "node": 5,
+          "rich_points_checked": 4,
+          "terminal": 2
+        },
+        {
+          "additional_independent_guard_equations": 1,
+          "node": 7,
+          "rich_points_checked": 12,
+          "terminal": 6
+        },
+        {
+          "additional_independent_guard_equations": 1,
+          "node": 11,
+          "rich_points_checked": 10,
+          "terminal": 10
+        },
+        {
+          "additional_independent_guard_equations": 2,
+          "node": 13,
+          "rich_points_checked": 6,
+          "terminal": 12
+        },
+        {
+          "additional_independent_guard_equations": 2,
+          "node": 15,
+          "rich_points_checked": 4,
+          "terminal": 12
+        },
+        {
+          "additional_independent_guard_equations": 1,
+          "node": 17,
+          "rich_points_checked": 12,
+          "terminal": 16
+        }
+      ],
+      "rules": {
+        "rich_route": 8,
+        "split": 7,
+        "terminal": 6
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          18,
+          104
+        ],
+        "right": [
+          12,
+          96
+        ]
+      },
+      "source_checks": 0,
+      "source_support_visits": 0,
+      "xor_additions": 0
+    },
+    "source_prefix_local": {
+      "expansion": {
+        "nodes": 47,
+        "parent_references": 46,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "cancel": 8,
+          "source": 32,
+          "split": 7
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "source_support_visits": 704
+      },
+      "nodes": 37,
+      "parent_references": 46,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "cancel": 8,
+        "source": 22,
+        "split": 7
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0
+        ]
+      },
+      "source_checks": 22,
+      "source_support_visits": 448,
+      "xor_additions": 24
+    },
+    "source_three_global": {
+      "expansion": {
+        "nodes": 47,
+        "parent_references": 46,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "cancel": 8,
+          "source": 32,
+          "split": 7
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "source_support_visits": 1024
+      },
+      "nodes": 29,
+      "parent_references": 46,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "cancel": 8,
+        "source": 14,
+        "split": 7
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0
+        ]
+      },
+      "source_checks": 14,
+      "source_support_visits": 448,
+      "xor_additions": 24
+    },
+    "source_two_global": {
+      "expansion": {
+        "nodes": 39,
+        "parent_references": 38,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "cancel": 8,
+          "source": 24,
+          "split": 7
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "source_support_visits": 640
+      },
+      "nodes": 29,
+      "parent_references": 38,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "cancel": 8,
+        "source": 14,
+        "split": 7
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0
+        ]
+      },
+      "source_checks": 14,
+      "source_support_visits": 384,
+      "xor_additions": 16
+    },
+    "source_whole_totals": {
+      "expansion": {
+        "nodes": 31,
+        "parent_references": 30,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "cancel": 8,
+          "source": 16,
+          "split": 7
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            0,
+            0
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "source_support_visits": 320
+      },
+      "nodes": 31,
+      "parent_references": 30,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "cancel": 8,
+        "source": 16,
+        "split": 7
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          0,
+          0
+        ],
+        "right": [
+          0,
+          0
+        ]
+      },
+      "source_checks": 16,
+      "source_support_visits": 320,
+      "xor_additions": 8
+    },
+    "translation_control": {
+      "expansion": {
+        "nodes": 22,
+        "parent_references": 21,
+        "rich_route_support_visits": 0,
+        "rules": {
+          "split": 7,
+          "terminal": 8,
+          "translate": 7
+        },
+        "sequential_calls_then_support_visits": {
+          "left": [
+            16,
+            64
+          ],
+          "right": [
+            16,
+            256
+          ]
+        },
+        "source_support_visits": 0
+      },
+      "nodes": 7,
+      "parent_references": 9,
+      "rich_route_support_visits": 0,
+      "rules": {
+        "split": 3,
+        "terminal": 1,
+        "translate": 3
+      },
+      "sequential_calls_then_support_visits": {
+        "left": [
+          2,
+          8
+        ],
+        "right": [
+          2,
+          32
+        ]
+      },
+      "source_checks": 0,
+      "source_support_visits": 0,
+      "xor_additions": 0
+    }
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "guarded_terminal_replay": {
+    "distinct_terminal_proofs": 6,
+    "guard_sizes_raw_rich_plain_and_plain_hull": [
+      [
+        64,
+        12,
+        16,
+        16
+      ],
+      [
+        64,
+        12,
+        16,
+        16
+      ],
+      [
+        64,
+        12,
+        16,
+        16
+      ],
+      [
+        64,
+        12,
+        16,
+        16
+      ],
+      [
+        64,
+        12,
+        16,
+        16
+      ],
+      [
+        64,
+        12,
+        16,
+        16
+      ]
+    ],
+    "original_cases": 8,
+    "plain_rows": 256,
+    "rich_points_per_leaf_in_order": [
+      10,
+      6,
+      4,
+      12,
+      10,
+      6,
+      4,
+      12
+    ],
+    "rich_rows": 64,
+    "terminal_calls": {
+      "(0, 0)": 1,
+      "(0, 1)": 2,
+      "(0, 2)": 1,
+      "(1, 0)": 1,
+      "(1, 1)": 2,
+      "(1, 2)": 1
+    },
+    "visible_rows": 512,
+    "wrong_guard_witness": 0
+  },
+  "input_bindings": {
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/balanced_guards.py": "a0178b4e8b27851bbd63262d553cad00d7b25b88806755ed56f9c09b85103f16",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/certificates.json": "4d09910b52496ef8f7906ffb6f75637891ff165868effb9b7fd37ab6fb410442",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/check.py": "cc8b5dd26e7735134efe36226c6d3d3d3f59ff5e5a4f4252f5e5ce86115303a1",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/checks.json": "b6f375e8b60ff1fbdbd84b71a1fce4cdcd1e4a8e85e494d541bb26ff33ee00f4",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/fact_library.py": "05cf048d018d294970b8988b59028866ba3dd6ee9b1fb1337635f77ba4829976",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/proof.md": "a59db7953e30764a4095b78b98a60c61ba6d7f53cf73e633bf03c3e6460ac9d0",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/seven_guard_stress.py": "d81fcaa1977477d91dc845fa468a97ad321975cc6ccd71bfd798a7b48d3043b3",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/solver.py": "bdf0e17460ef46d93157fd56a1cd6710d12dba176825422a266d0dd63fee37cb",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/terminal_library.py": "69080937bb19b12532dfdea89c09626168ba0385dd1aa16aa60574eeec309c94",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/manifest.json": "4e4cd05af0b5bab029f2fe27b9e8c01231afb2ea495a82e2dfccfd16a99dfeb7",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/manifest.json": "632de76f2fb94ba4f495b2a519d5416a030eab70b57f72d823e87f45df2b134d",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/manifest.json": "1417a2ce8868fc0cdcbb5b16065876abf544a05a7530f865d07aff139f6818bb"
+  },
+  "kind": "proof",
+  "raw_result": {
+    "path": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/checker_output-001.json",
+    "sha256": "b6f375e8b60ff1fbdbd84b71a1fce4cdcd1e4a8e85e494d541bb26ff33ee00f4"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "scalar_capacity": {
+    "affine_cosets": 94488,
+    "honest_input_size_histogram": {
+      "10": 21504,
+      "12": 5040,
+      "4": 5040,
+      "6": 21504,
+      "8": 41400
+    },
+    "linear_spaces": 11811
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "semantic_negative_controls": {
+    "honest_point_refuting_unguarded_u_zero": 195,
+    "matched_charge_full_solutions": 64,
+    "rejected": {
+      "ask_for_an_extra_coordinate": "equation must use only the nine displayed coordinates and a Boolean value",
+      "circular_citation": "cyclic or forward proof reference",
+      "erase_guard_of_rich_u_zero": "claimed equation fails on guarded evaluator",
+      "indirect_guard_called_directly_terminal": "a guarded terminal reference needs a directly checked terminal proof",
+      "matched_charge_cannot_be_refuted": "terminal cell remains live",
+      "omit_discharged_lemma_guard": "literal lemma guard not entailed by the current context",
+      "reverse_discharged_literal": "discharge does not refute the opposite",
+      "transport_in_literal_model": "affine transport is disabled or malformed",
+      "wrong_guard_at_first_route": "the rich evaluator does not establish the terminal guard"
+    }
+  },
+  "seven_product_stress": {
+    "distinct_guards": 12,
+    "honest_inputs": 256,
+    "largest_honest_support": 24,
+    "lower_bound_on_distinct_guards": 11,
+    "terminal_applications": 16,
+    "visible_rows": 2048
+  },
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "FIVE-PRODUCT-GUARDED-REUSE-20261115-001B",
+  "validation": {
+    "independence": "V1. The paper derivation, an independent reviewer, an explicit acyclic certificate replay and a second raw enumeration on all 512 joint visible rows agree. A wrong guard is rejected. Each checked terminal guard covers 12 original inputs, and the upper depth, branch uses, counts, and the seven-product stress are separately replayed. A separate three-case subproof discharges an affine assumption and is reused in two live branches that have already been saturated.",
+    "level": "V1",
+    "novelty": "The same visible pair now separates the eight required tree cases from an exact minimum of six reusable terminal contradictions in an honest-input-covering proof library. The comparison includes the cost of establishing the assumptions of each use."
+  }
+}

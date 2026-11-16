@@ -1,0 +1,106 @@
+{
+  "artifact_id": "FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "canonical_id": "FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001",
+  "claim": "On five adjacent products every independent pair of fixed XOR summaries from one evaluator needs exactly eight affine-tree leaves and minimum worst-case depth three. Even revealing all five individual product bits on that evaluator has the same optimum.",
+  "dependencies": [
+    "ONE-SIDED-PATH-SKETCH-20261115-001Z",
+    "ONE-SIDED-PATH-SKETCH-20261115-001B",
+    "ONE-SIDED-PATH-SKETCH-20261115-001C"
+  ],
+  "epistemic_class": {
+    "primary": "finite-instance-classification",
+    "secondary": []
+  },
+  "evidence_bindings": {
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/check.py": "61ac635fb0067c606c10a091c48d17059ba546ed43689c917b19953ca718591a",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/check_execution-001.json": "594a7ca2642d069557e3c09c37714614b6a12fdc2e4edd73cf33f09031759af7",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/checker_output-001.json": "45ad76e19bedf75f95bb449bd6bdb5144848cf1ed97f56df465d182bda5289ad",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/proof.md": "eaf3de459f7a14c5cb1e78e29f05977b3b8ff30fda885b2828939c5a6c5e53ba",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/result.json": "009cf7d311fdedfd898d2299ac7f3622bb472211fb9801413116b254bf21b7e2"
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "failure_conditions": [
+    "Counting bases as input choices, dropping mixed XOR queries or mistaking an upper tree for an optimum."
+  ],
+  "foundation_claim_scope": "Decision under the supplied tests and representations.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "kind": "proof",
+  "lineage": {
+    "epic_path": [
+      "FIVE-PRODUCT-GUARDED-REUSE-20261115-001"
+    ],
+    "home_scope": "FIVE-PRODUCT-GUARDED-REUSE-20261115-001",
+    "parents": [
+      "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/manifest.json",
+      "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/manifest.json",
+      "proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/manifest.json"
+    ]
+  },
+  "novelty_status": "candidate-local-delta",
+  "parent_bindings": {
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/all_products.cpp": "921a9cb638709c191540a5809482d5152e9f8d7a6fe1eecf98b2ee8ef8d63364",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/census.cpp": "7e50a437ce880d4fdb2c0876828490a25e9aa67250f04af8821cad37ba99fce3",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/certificate.json": "8204a7ac3e62eaf950276ab124c327fccde9759687bbcb431e6b355f168e3ff7",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/checks.json": "f342db5cf14c32ea96a352b5e4743ca32ae1f1bea127e5332944b4c45d17d85a",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001B/ONE-SIDED-PATH-SKETCH-20261115-001B-P001_one_sided_rank/manifest.json": "4e4cd05af0b5bab029f2fe27b9e8c01231afb2ea495a82e2dfccfd16a99dfeb7",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001C/ONE-SIDED-PATH-SKETCH-20261115-001C-P001_affine_controls/manifest.json": "632de76f2fb94ba4f495b2a519d5416a030eab70b57f72d823e87f45df2b134d",
+    "proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/manifest.json": "1417a2ce8868fc0cdcbb5b16065876abf544a05a7530f865d07aff139f6818bb"
+  },
+  "paths": {
+    "check": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/check.py",
+    "check_execution": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/check_execution-001.json",
+    "directory": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census",
+    "identity": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/identity.json",
+    "manifest": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/manifest.json",
+    "proof": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/proof.md",
+    "raw_result": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/checker_output-001.json",
+    "result": "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/result.json"
+  },
+  "proof": "FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001",
+  "remaining_obligations": [],
+  "safe_to_conclude": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "source_contribution": 0,
+  "status": "Proved",
+  "ticket": "FIVE-PRODUCT-GUARDED-REUSE-20261115-001A",
+  "title": "Classify the 35 independent five-product pairs",
+  "validation": {
+    "independence": "V1. The six-variable direct census and a second same-task implementation with all five products available independently rule out seven leaves. Raw whole-cell checks replay the eight-leaf witness and the terminal criterion. The pair counts include all 35 independent quotient spaces and all 1,024 ordered raw pairs including the dependent controls.",
+    "level": "V1",
+    "novelty": "The preceding rank-three theorem covered one arbitrary quadratic observation. This classification treats two independent one-sided product observations on five products and verifies the same finite obstruction for the full product tuple."
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "study": "FOLD-GATE-20261115-001",
+  "training": {
+    "paid_training_ns": 7179077418,
+    "source_ns": 11057666975,
+    "first_pair_ns": 762406178,
+    "fitting_rules": 960,
+    "fold_cheaper_rules": 125,
+    "hindsight_possible_saving_ns": 2206059,
+    "checkpoint": {
+      "min_training_rules_per_branch": 4,
+      "prefix_length": 8,
+      "rule": null,
+      "schema_version": 1,
+      "sha256": "ff8dad4631c0243504e584d8abb052a56df062b88930cd6ef86a94714f95809b",
+      "training": {
+        "always_median_cost": 572117507,
+        "always_try_cost": 645809938,
+        "per_rule_hindsight_min_cost": 569911448,
+        "rules": 960,
+        "savings_vs_always_median": 0,
+        "selected_cost": 572117507,
+        "selected_fold_attempts": 0
+      }
+    }
+  },
+  "train_split": {
+    "split": "train",
+    "format": "fold-gate-truth-u64le-v1",
+    "n": 6,
+    "row_order": [
+      16,
+      47,
+      3,
+      29,
+      35,
+      40,
+      38,
+      63,
+      11,
+      19,
+      28,
+      52,
+      45,
+      58,
+      20,
+      13,
+      6,
+      33,
+      42,
+      22,
+      53,
+      46,
+      0,
+      27,
+      44,
+      4,
+      21,
+      37,
+      41,
+      48,
+      12,
+      57,
+      59,
+      2,
+      10,
+      9,
+      61,
+      26,
+      60,
+      62,
+      43,
+      34,
+      56,
+      8,
+      51,
+      5,
+      30,
+      25,
+      49,
+      24,
+      55,
+      7,
+      15,
+      32,
+      17,
+      18,
+      23,
+      54,
+      39,
+      50,
+      14,
+      31,
+      1,
+      36
+    ],
+    "stages": [
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "sampling": "uniform labeled truth without replacement within a uniformly partitioned mechanism pool",
+    "pool_mechanisms": 162,
+    "pool_foldable_mechanisms": 61,
+    "pool_labeled": 19523,
+    "pool_foldable_labeled": 7796,
+    "count": 1024,
+    "sample_mechanisms": 150,
+    "sample_foldable_mechanisms": 57,
+    "sample_foldable_tasks": 402,
+    "sample_recodings_after_first": 874,
+    "max_tasks_per_mechanism": 23,
+    "partition_mechanisms_sha256": "05bc903e9237fa168d8c0eed792befdecdf82cebe85c4df0896df5ac156e5ea3",
+    "sample_mechanisms_sha256": "b36dbf5f6a3d2ce452c2313b41c03d7d5b78a41f7eb5e9037c585497a3bbc1a5",
+    "ordered_truths_sha256": "238be6bbb8ca3005f32785ad4d323f2f5cb382ccc1ad8a1b3cbd7772738874df",
+    "ordered_mechanisms_sha256": "f3254702eb6d0d84914b80da052f41adde54b538f3858f6a18ac454fb55c8b06"
+  },
+  "held_split": {
+    "split": "held",
+    "format": "fold-gate-truth-u64le-v1",
+    "n": 6,
+    "row_order": [
+      16,
+      47,
+      3,
+      29,
+      35,
+      40,
+      38,
+      63,
+      11,
+      19,
+      28,
+      52,
+      45,
+      58,
+      20,
+      13,
+      6,
+      33,
+      42,
+      22,
+      53,
+      46,
+      0,
+      27,
+      44,
+      4,
+      21,
+      37,
+      41,
+      48,
+      12,
+      57,
+      59,
+      2,
+      10,
+      9,
+      61,
+      26,
+      60,
+      62,
+      43,
+      34,
+      56,
+      8,
+      51,
+      5,
+      30,
+      25,
+      49,
+      24,
+      55,
+      7,
+      15,
+      32,
+      17,
+      18,
+      23,
+      54,
+      39,
+      50,
+      14,
+      31,
+      1,
+      36
+    ],
+    "stages": [
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "sampling": "uniform labeled truth without replacement within a uniformly partitioned mechanism pool",
+    "pool_mechanisms": 489,
+    "pool_foldable_mechanisms": 216,
+    "pool_labeled": 62296,
+    "pool_foldable_labeled": 31875,
+    "count": 32768,
+    "sample_mechanisms": 487,
+    "sample_foldable_mechanisms": 216,
+    "sample_foldable_tasks": 16772,
+    "sample_recodings_after_first": 32281,
+    "max_tasks_per_mechanism": 214,
+    "partition_mechanisms_sha256": "a4c5da4ed2f416038c916a7987a45df2b4a3c1930ff7e813c286c1c641eef7c7",
+    "sample_mechanisms_sha256": "95867b1a26a431fcb92cf98771ac7e8d64b12f8b6612a4a7c77d11229a5eff02",
+    "ordered_truths_sha256": "4b7ac63aac335dfaaca43ec05820ee44ce685fabb6721e71d95393a29802e811",
+    "ordered_mechanisms_sha256": "05900938a89bbbd4dd9dd317bd524762531448847c763a57ee90cac138c69127"
+  },
+  "arms": {
+    "median": {
+      "upfront_ns": 0,
+      "runs": [
+        {
+          "repeat": 0,
+          "setup_ns": 10446283,
+          "total_ns": 12459241644,
+          "downstream_ns": 12459241644,
+          "cpu_ns": 12432229230,
+          "physical_builds": 43441,
+          "physical_hits": 102518,
+          "physical_packed_NANDs": 652118
+        },
+        {
+          "repeat": 1,
+          "setup_ns": 10698773,
+          "total_ns": 12386055945,
+          "downstream_ns": 12386055945,
+          "cpu_ns": 12359506500,
+          "physical_builds": 43441,
+          "physical_hits": 102518,
+          "physical_packed_NANDs": 652118
+        },
+        {
+          "repeat": 2,
+          "setup_ns": 16385126,
+          "total_ns": 12402639610,
+          "downstream_ns": 12402639610,
+          "cpu_ns": 12376337407,
+          "physical_builds": 43441,
+          "physical_hits": 102518,
+          "physical_packed_NANDs": 652118
+        }
+      ],
+      "trace_hash": "985dd24225d3d225fdbaeb65bba764e11fee3a8e3b31400158453e6c16da7594",
+      "stats": {
+        "tasks": 32768,
+        "try_fold": 0,
+        "used_fold": 0,
+        "first_exact": 100,
+        "final_fold": 0,
+        "verifier_calls": 138098,
+        "verifier_packed_checks": 138098,
+        "verifier_rows": 0,
+        "teacher_rows": 1835008,
+        "proposals": 145959,
+        "expanded_NANDs_returned": 492748
+      },
+      "median_total_ns": 12402639610,
+      "median_downstream_ns": 12402639610
+    },
+    "gated-warm": {
+      "upfront_ns": 18236744393,
+      "runs": [
+        {
+          "repeat": 0,
+          "setup_ns": 87672020,
+          "total_ns": 31131087630,
+          "downstream_ns": 12894343237,
+          "cpu_ns": 12866036194,
+          "physical_builds": 41744,
+          "physical_hits": 104215,
+          "physical_packed_NANDs": 627208
+        },
+        {
+          "repeat": 1,
+          "setup_ns": 84104221,
+          "total_ns": 31064629749,
+          "downstream_ns": 12827885356,
+          "cpu_ns": 12798077686,
+          "physical_builds": 41744,
+          "physical_hits": 104215,
+          "physical_packed_NANDs": 627208
+        },
+        {
+          "repeat": 2,
+          "setup_ns": 87988162,
+          "total_ns": 30948573226,
+          "downstream_ns": 12711828833,
+          "cpu_ns": 12683146268,
+          "physical_builds": 41744,
+          "physical_hits": 104215,
+          "physical_packed_NANDs": 627208
+        }
+      ],
+      "trace_hash": "985dd24225d3d225fdbaeb65bba764e11fee3a8e3b31400158453e6c16da7594",
+      "stats": {
+        "tasks": 32768,
+        "try_fold": 0,
+        "used_fold": 0,
+        "first_exact": 100,
+        "final_fold": 0,
+        "verifier_calls": 138098,
+        "verifier_packed_checks": 138098,
+        "verifier_rows": 0,
+        "teacher_rows": 1835008,
+        "proposals": 145959,
+        "expanded_NANDs_returned": 492748
+      },
+      "median_total_ns": 31064629749,
+      "median_downstream_ns": 12827885356,
+      "comparison": {
+        "first_break_even": null,
+        "sustained_from": null,
+        "reversals": [],
+        "closest_prefix": 1367,
+        "lowest_gap_ns": 17827381767,
+        "end_gap_ns": 18661990139
+      },
+      "paired_repeats": [
+        {
+          "first_break_even": null,
+          "sustained_from": null,
+          "reversals": [],
+          "closest_prefix": 1401,
+          "lowest_gap_ns": 17856647667,
+          "end_gap_ns": 18671845986
+        },
+        {
+          "first_break_even": null,
+          "sustained_from": null,
+          "reversals": [],
+          "closest_prefix": 965,
+          "lowest_gap_ns": 17811944566,
+          "end_gap_ns": 18678573804
+        },
+        {
+          "first_break_even": null,
+          "sustained_from": null,
+          "reversals": [],
+          "closest_prefix": 1405,
+          "lowest_gap_ns": 17821469654,
+          "end_gap_ns": 18545933616
+        }
+      ]
+    },
+    "gated-cold": {
+      "upfront_ns": 18236744393,
+      "runs": [
+        {
+          "repeat": 0,
+          "setup_ns": 16325221,
+          "total_ns": 31517309961,
+          "downstream_ns": 13280565568,
+          "cpu_ns": 13251860767,
+          "physical_builds": 43441,
+          "physical_hits": 102518,
+          "physical_packed_NANDs": 652118
+        },
+        {
+          "repeat": 1,
+          "setup_ns": 21272878,
+          "total_ns": 31191297516,
+          "downstream_ns": 12954553123,
+          "cpu_ns": 12922964173,
+          "physical_builds": 43441,
+          "physical_hits": 102518,
+          "physical_packed_NANDs": 652118
+        },
+        {
+          "repeat": 2,
+          "setup_ns": 19499968,
+          "total_ns": 31199766556,
+          "downstream_ns": 12963022163,
+          "cpu_ns": 12932470592,
+          "physical_builds": 43441,
+          "physical_hits": 102518,
+          "physical_packed_NANDs": 652118
+        }
+      ],
+      "trace_hash": "985dd24225d3d225fdbaeb65bba764e11fee3a8e3b31400158453e6c16da7594",
+      "stats": {
+        "tasks": 32768,
+        "try_fold": 0,
+        "used_fold": 0,
+        "first_exact": 100,
+        "final_fold": 0,
+        "verifier_calls": 138098,
+        "verifier_packed_checks": 138098,
+        "verifier_rows": 0,
+        "teacher_rows": 1835008,
+        "proposals": 145959,
+        "expanded_NANDs_returned": 492748
+      },
+      "median_total_ns": 31199766556,
+      "median_downstream_ns": 12963022163,
+      "comparison": {
+        "first_break_even": null,
+        "sustained_from": null,
+        "reversals": [],
+        "closest_prefix": 121,
+        "lowest_gap_ns": 18226292970,
+        "end_gap_ns": 18797126946
+      },
+      "paired_repeats": [
+        {
+          "first_break_even": null,
+          "sustained_from": null,
+          "reversals": [],
+          "closest_prefix": 26,
+          "lowest_gap_ns": 18234957157,
+          "end_gap_ns": 19058068317
+        },
+        {
+          "first_break_even": null,
+          "sustained_from": null,
+          "reversals": [],
+          "closest_prefix": 63,
+          "lowest_gap_ns": 18171982368,
+          "end_gap_ns": 18805241571
+        },
+        {
+          "first_break_even": null,
+          "sustained_from": null,
+          "reversals": [],
+          "closest_prefix": 160,
+          "lowest_gap_ns": 18233517579,
+          "end_gap_ns": 18797126946
+        }
+      ]
+    },
+    "always": {
+      "upfront_ns": 11057666975,
+      "runs": [
+        {
+          "repeat": 0,
+          "setup_ns": 19454172,
+          "total_ns": 24602380891,
+          "downstream_ns": 13544713916,
+          "cpu_ns": 13513950590,
+          "physical_builds": 43474,
+          "physical_hits": 102420,
+          "physical_packed_NANDs": 652823
+        }
+      ],
+      "trace_hash": "5f9f0a5ad04001db1bb859e93c9cabe3f1ef96faf7b3a51a3e5bf0e04a08c1d4",
+      "stats": {
+        "tasks": 32768,
+        "try_fold": 32768,
+        "used_fold": 32768,
+        "first_exact": 119,
+        "final_fold": 119,
+        "verifier_calls": 138194,
+        "verifier_packed_checks": 138194,
+        "verifier_rows": 0,
+        "teacher_rows": 1835008,
+        "proposals": 145894,
+        "expanded_NANDs_returned": 492867
+      },
+      "median_total_ns": 24602380891,
+      "median_downstream_ns": 13544713916
+    },
+    "median-warm": {
+      "upfront_ns": 0,
+      "runs": [
+        {
+          "repeat": 0,
+          "setup_ns": 68825502,
+          "total_ns": 12340463565,
+          "downstream_ns": 12340463565,
+          "cpu_ns": 12314354200,
+          "physical_builds": 41543,
+          "physical_hits": 104416,
+          "physical_packed_NANDs": 624084
+        }
+      ],
+      "trace_hash": "985dd24225d3d225fdbaeb65bba764e11fee3a8e3b31400158453e6c16da7594",
+      "stats": {
+        "tasks": 32768,
+        "try_fold": 0,
+        "used_fold": 0,
+        "first_exact": 100,
+        "final_fold": 0,
+        "verifier_calls": 138098,
+        "verifier_packed_checks": 138098,
+        "verifier_rows": 0,
+        "teacher_rows": 1835008,
+        "proposals": 145959,
+        "expanded_NANDs_returned": 492748
+      },
+      "median_total_ns": 12340463565,
+      "median_downstream_ns": 12340463565
+    },
+    "adaptive": {
+      "upfront_ns": 0,
+      "runs": [
+        {
+          "repeat": 0,
+          "setup_ns": 11161063,
+          "total_ns": 12947461809,
+          "downstream_ns": 12947461809,
+          "cpu_ns": 12920669598,
+          "physical_builds": 45179,
+          "physical_hits": 112513,
+          "physical_packed_NANDs": 678390
+        }
+      ],
+      "trace_hash": "38672cf0e34ac5b9d020e102db18a0dc3b65cf49836be1db05ae2e018f99bb9f",
+      "stats": {
+        "tasks": 32768,
+        "try_fold": 0,
+        "used_fold": 0,
+        "first_exact": 100,
+        "final_fold": 0,
+        "verifier_calls": 157692,
+        "verifier_packed_checks": 0,
+        "verifier_rows": 3929498,
+        "teacher_rows": 0,
+        "proposals": 157692,
+        "expanded_NANDs_returned": 492748
+      },
+      "median_total_ns": 12947461809,
+      "median_downstream_ns": 12947461809
+    }
+  },
+  "paired_choices": {
+    "tasks": 32768,
+    "same_first_truth": 267,
+    "both_first_exact": 3,
+    "fold_only_first_exact": 116,
+    "median_only_first_exact": 97,
+    "different_from_default_gate_trajectory": 0,
+    "fold_possible": 16772,
+    "fewer_checks_with_unconditional_fold": 298,
+    "more_checks_with_unconditional_fold": 434
+  },
+  "prefix_ambiguity": {
+    "observed_prefixes": 256,
+    "opposite_first_winners_prefixes": 47,
+    "example": {
+      "prefix_in_order": [
+        [
+          16,
+          1
+        ],
+        [
+          47,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          29,
+          0
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          63,
+          1
+        ]
+      ],
+      "median_first_exact_rule": 4262,
+      "fold_first_exact_rule": 3228,
+      "first_public_row_separating_them": 28,
+      "answer_median_rule": 0,
+      "answer_fold_rule": 1
+    },
+    "use": "post-evaluation diagnostic, no change to the frozen gate"
+  },
+  "correct_rule_input_pairs_per_arm": 2097152
+}

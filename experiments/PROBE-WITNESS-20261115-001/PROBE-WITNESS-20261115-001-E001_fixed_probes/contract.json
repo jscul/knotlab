@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "PROBE-WITNESS-20261115-001-E001",
+  "ticket": "PROBE-WITNESS-20261115-001",
+  "kind": "experiment",
+  "branch": "code_analysis",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Can the same few directly checkable observations exclude a one-bit encoding of a candidate triple during both search and verification, and return exact two-output programs more cheaply than primitive search?",
+  "inputs": "Two complete packed Boolean output tables and arity. Eligible groups are raw triples essential to both outputs. Main method uses fixed all-zero and all-one outside assignments. Public row identities are reused across overlapping candidate triples.",
+  "forbidden_inputs": "Source programs, planted roles or optimum, pair membership, private grades, answers or selector advice for main deployments. A separate diagnostic calibration arm receives free setting indices, never claimed as an executable selector.",
+  "outputs": "Minimum width, chosen triple, actual intermediate wires, complete physical NAND program, and compact local rejection certificates. Paid CPU for probing, exact fallback, producing and verifying witnesses and returning results, counts of row accesses/reuse and exact alternatives.",
+  "mapping": "Three distinct joint responses of three group assignments at at most two common outside settings require three messages and exclude one bit. Use this only when narrower-width exclusion suffices. Exact search and exact checking handle open candidates and any wider obligation. Independently re-read original output values when checking certificates.",
+  "primary_observable": "At exact correctness on both outputs and minimum-width physical cuts, compare total measured CPU across 192 fresh rules with fastest declared noncertificate primitive. Eight repeated paired counterbalanced blocks. Report any measured difference, paired wins, actual paid checkpoints and comparison with the existing four-cofactor heuristic.",
+  "comparators_or_controls": "Archived fastest generic primitive, original four-cofactor heuristic, independent primitive reference, archived ordered lexical solver, no-probe version of same code; no-witness verification comparisons for attribution. Separately use four fixed pairs and free diagnostic probe choices to assess headroom on calibration only.",
+  "resource_budget": "24 matched calibration and 96 matched evaluation pairs evenly across n=7,8,9, two known local Boolean operations and fresh consumer structures. One pinned CPU per stream, eight paired repeats, no hyperparameter tuning on held results.",
+  "first_executable_signal": "Synthetic certificate, inconclusive-probe, and width-three tests before binding, then all comparison programs on the first registered blocks.",
+  "stop_rule": "Close the fixed experiment at its preselected endpoint. Only start a separate training experiment if calibration demonstrates reproducible cheaper verified returns and a benefit from changing probe choices or selectively abstaining under the decision in preregistration.md.",
+  "nonclaims": "Bounded test with supplied truth tables, known triple size, exact functional decomposition and physical synthesis. Two inconclusive settings establish no positive width bound. A reduction in exact checks or more certificates alone is not a speedup."
+}

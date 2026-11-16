@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "A replayable joint-output witness from one or two common outside settings, independent original-row verification, exact fallback and frozen matched conditions.",
+  "completion_gate": "Report minimum widths, coverage, cross-triple reuse, CPU including verification, and measured headroom for choosing probes.",
+  "dependencies": [
+    "FOLD-TWO-OUTPUT-20261115-001",
+    "TRIPLE-ORDER-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/PROBE-WITNESS-20261115-001/PROBE-WITNESS-20261115-001-E001_fixed_probes/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/PROBE-WITNESS-20261115-001/PROBE-WITNESS-20261115-001-E001_fixed_probes/result.json"
+    ],
+    "independent_audit": "artifacts/PROBE-WITNESS-20261115-001/PROBE-WITNESS-20261115-001-E001_fixed_probes/audit.json",
+    "report": "research/PROBE-WITNESS-20261115-001/local_witnesses.md"
+  },
+  "id": "PROBE-WITNESS-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Use two fixed outside settings and shared table observations to certify that a candidate group cannot send one bit, preserve exact fallback, and test total producer and verifier CPU against strong shared primitive search.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-TRANSFER-20261114-001",
+  "schema_version": 1,
+  "status": "Exact on 96 one-bit and 96 rewired two-bit rules. The verifier reused 2,729 short certificates per held stream, but the fixed method took 442.355 versus 304.787 ms CPU for the fastest primitive and 359.290 ms for four cofactors. No calibration learning criterion passed. Independent audit validated the receipts.",
+  "status_class": "refuted",
+  "stop_rule": "Keep the learner conditional on the registered separate calibration result; retained fresh stream defines the fixed-method comparison.",
+  "title": "Can short local certificates make exact two-output search cheaper?"
+}

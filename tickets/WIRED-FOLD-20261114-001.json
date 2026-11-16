@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "ATOMIC-FOLD-20261114-001",
+    "SEARCH-AUDIT-20261112-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/result.json"
+    ],
+    "report": "research/WIRED-FOLD-20261114-001/frozen_policy.md"
+  },
+  "id": "WIRED-FOLD-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Train one shared policy per replicate from elementary logical choices and delayed downstream answers. Rewire rules with values held fixed, change downstream read capability, and test whether the frozen policy follows the visible connections and actually sends the minimum one or two bits.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "ATOMIC-FOLD-20261114-001",
+  "schema_version": 1,
+  "status": "One frozen scan followed all source rewirings in its two-bit state. The fitted width controller scored 54,144/55,296, exact on seven menus and under-width on both held-out menus. Replayed independently.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "One frozen policy following visible rule connections and choosing a sufficient message width"
+}

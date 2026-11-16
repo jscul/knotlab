@@ -1,0 +1,14 @@
+{
+  "schema_version": 1, "artifact_id": "STRAND-RETURN-20261114-001-E001", "ticket": "STRAND-RETURN-20261114-001", "kind": "experiment",
+  "branch": "code_analysis", "evidence_stage": "exploratory", "status": "Frozen",
+  "question": "Which local moves preserve future answers on closed signed strands, and what fails when two strands share an extra distinction?",
+  "inputs": "All sign words and all four midpoint restrictions at lengths 2, 3, 4, 6 and 8. One dependency checkpoint, four named sources, publicly visible attachments, and the original nine clauses in notebook 36.",
+  "forbidden_inputs": "No refit. Direct oracle answers and junction labels cannot enter cursor updates, checkpoint execution or the historical score.",
+  "mapping": "Advance a cursor by one signed link or an exact block of at most two, compare serial and alternating visits, then join closed strands with distinct or identified intermediate variables.",
+  "primary_observable": "Exact allowed sets, errors when skipping an interior sign, actual packet bits and answers, demanded source identities, action counts and underlying rule reads, and information lost if a shared variable is forgotten early.",
+  "comparators_or_controls": "Full joint assignment enumeration, direct evaluation of the unchanged checkpoint, blind hop, common versus distinct intermediate identity, locally opposite versus semantically incompatible demands.",
+  "resource_budget": "One bounded CPU census. No training or seed selection.",
+  "first_executable_signal": "Two individually viable returns can agree on all possible boundary values while disagreeing on their shared intermediate value.",
+  "stop_rule": "Record all cells including learned-policy failures, missed contradictions, and any differences between exact schedules.",
+  "preregistration": "research/STRAND-RETURN-20261114-001/preregistration.md"
+}

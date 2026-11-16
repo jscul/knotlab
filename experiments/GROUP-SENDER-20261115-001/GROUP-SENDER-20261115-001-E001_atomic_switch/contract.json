@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "artifact_id": "GROUP-SENDER-20261115-001-E001",
+  "ticket": "GROUP-SENDER-20261115-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Can a frozen sender trace anonymous public wiring and learn which questions to switch together to shorten a physical packet while retaining all four delayed answers?",
+  "inputs": "Four public questions with signed source occurrences. The sender alone sees the nine-bit state. Both endpoints know the fitted controller and the earlier frozen NAND parser.",
+  "forbidden_inputs": "The delayed port at the sender, grader truth or optimal groups at inference, raw input or mask identifiers at the receiver, family/layout names, historical outcome labels or test-driven refits.",
+  "outputs": "A physical binary tuple of wiring-dependent fixed length and an independently routed answer for the delayed port.",
+  "mapping": "Fit public tracing and switch choices from training answers and packet width. Compare strict one-switch search, anonymous joint trials and a fitted single direct proposal.",
+  "primary_observable": "Exact delayed answers on all 512 inputs and all four questions together with physical packet length and the independent number of answer vectors per wiring.",
+  "comparators_or_controls": "Saved predecessor widths, raw-only and all-computed messages, exhaustive best raw/computed plan, strict singleton switching, held renaming and incidence changes, and a three-bit relation needing computation across answers.",
+  "resource_budget": "One deterministic training-panel fit per declared strategy on 256 even-parity inputs. Four ports, at most 16 subsets of ports. Test every input including all odd-parity inputs. Use the shared CPU runner.",
+  "first_executable_signal": "A physical packet from a frozen policy changes width between a dependent and independent delayed query set while preserving the truth of all ports.",
+  "stop_rule": "Score the stored checkpoints once on the declared wirings. Preserve all high-width cases or decoder errors. No tuning against test outcomes.",
+  "nonclaims": "Finite communication and task-transfer evidence. This study does not establish a speedup or an algorithm for arbitrary encoders or formula families.",
+  "preregistration": "research/GROUP-SENDER-20261115-001/preregistration.md"
+}

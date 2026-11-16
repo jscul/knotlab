@@ -1,0 +1,13 @@
+{
+  "schema_version": 1, "artifact_id": "BRAID-ACTIONS-20261114-001-E002", "ticket": "BRAID-ACTIONS-20261114-001", "kind": "experiment", "branch": "training", "status": "Frozen", "evidence_stage": "exploratory",
+  "question": "Does reward-guided editing of a sequence of local bit flips discover a mixing braid and independently learn its undo?",
+  "inputs": "Two labels encoded 00,01,10; 12 valid single-bit toggles guarded on the other three bits. An executed toggle expands into the literal NOTs, two ANDs and one XOR. One seed 27183, initial sequence lengths 6..24, length cap 32.",
+  "forbidden_inputs": "No demonstrated crossing, inverse program, reversed learned sequence, access to an emitted action sequence during undo training, or held-out triple score for selecting a program.",
+  "mapping": "Each forward/undo search uses 32 populations, one initial individual each, 256 rounds and 12 proposals. The last child is a new independent random program. Other proposals insert/delete/substitute/relocate with probabilities 30/25/30/15 percent, empty sequences insert and insert at cap substitutes. Every 32nd generation takes the independent child. Otherwise the guided parent is uniformly sampled among highest-score incumbent/children and the neutral parent uniformly among all. Both retain best-ever by scalar, shorter length, then first encounter.",
+  "primary_observable": "Forward reward equals braid agreements on 18 triples (hold back z=(x+y+1)%3), plus cardinalities over six nondegeneracy slices (maximum 18), twice diagonal fixed points, four for a jointly dependent output, and two for noninvolution, maximum 48. Undo reward counts both orders on all nine points, maximum 18. Record training curves, held-out triples, nondegeneracy, mixing, inverses, instructions and primitive gate charges.",
+  "comparators_or_controls": "Neutral selection gets the same evaluation budget and variation sampling protocol. Both undo methods learn against the same previously frozen guided forward using only terminal round-trip correctness.",
+  "resource_budget": "98,336 proposals or initializations per method per stage, 393,344 total. One independent seeded fit. Its result cannot change which checkpoint is deployed in E001.",
+  "first_executable_signal": "Terminal feedback improves or fails to improve a sequence of raw Boolean actions relative to score-blind parent choice.",
+  "stop_rule": "Single seed and declared budget. Report a failure to attain or generalize the braid even if E001 succeeds. No retuning on held-out behavior.",
+  "preregistration": "research/BRAID-ACTIONS-20261114-001/preregistration.md"
+}

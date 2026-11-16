@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "No placement oracle, solvable matched recurrence breaks at all three depths, complete cached primitive and equally informed inline comparators, and per-phase and failed-trial costs.",
+  "completion_gate": "Check each returned executable on every assignment, report search scaling and verdict on whether to open the preselected discovery phase.",
+  "dependencies": [
+    "ANSWER-COMPOSE-20261115-001",
+    "FOLD-GATE-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/FOLD-DEPTH-20261115-001/FOLD-DEPTH-20261115-001-E001_supplied_fold/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/FOLD-DEPTH-20261115-001/FOLD-DEPTH-20261115-001-E001_supplied_fold/result.json"
+    ],
+    "independent_audit": "artifacts/FOLD-DEPTH-20261115-001/FOLD-DEPTH-20261115-001-E001_supplied_fold/audit.json",
+    "report": "research/FOLD-DEPTH-20261115-001/scaling.md"
+  },
+  "id": "FOLD-DEPTH-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "On fresh paired tasks at three composition depths compare the supplied learned binary-operation composition with cached primitive search and an inlined library. Discover a library on separate tasks only if the supplied one shows a growing advantage.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-GATE-20261115-001",
+  "schema_version": 1,
+  "status": "On eight four-application recurring rules a direct joint test needed 716 trials against 810 with primitives; five of eight improved. Factor-first and fixed-nine trial savings failed. All 2,160 returned programs passed independent replay. The bounded discovery phase qualified.",
+  "status_class": "supported",
+  "stop_rule": "After exhaustive correctness and accounting across the fixed panel, execute a fresh discovery-and-transfer experiment only for an appreciable growing advantage over cached primitives as specified in preregistration. A gain shared with the inline control qualifies. Otherwise stop after reporting the bottleneck.",
+  "title": "Does repeatedly using an unlocated fold avoid more program search at greater depth?"
+}

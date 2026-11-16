@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "artifact_id": "ATOMIC-FOLD-20261114-001-E001",
+  "ticket": "ATOMIC-FOLD-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Exploratory run complete",
+  "report": "research/ATOMIC-FOLD-20261114-001/atomic_folds.md",
+  "analysis": "artifacts/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E001_atomic_actions/analysis.json",
+  "contract": "experiments/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E001_atomic_actions/contract.json",
+  "contract_sha256": "d1729d850c2e79cf610481d70e822557e534df6788e3ea042d33d49e259df15a",
+  "producer": "experiments/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E001_atomic_actions/job.py",
+  "producer_sha256": "15dcc2e96614d9dd3dd641f7f0e852296f465b15b8bace3fe7ae7177723f8ab1",
+  "raw_results": "artifacts/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E001_atomic_actions/results.jsonl",
+  "raw_sha256": "6180766f76666d85c2e737c84623e60774f4fc07210c1d1ee758f213e6123a8b",
+  "analysis_sha256": "cb60053ff22a7170083d01d7e7e1a4910ec9850c3a278f9d4d8f32201bc385cd",
+  "total_program_evaluations": 884736,
+  "outcomes": {
+    "cem": {
+      "selective": {
+        "fits": 9,
+        "exact": 0,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 9,
+        "held_out_correct": 738,
+        "held_out_total": 864
+      },
+      "broad": {
+        "fits": 9,
+        "exact": 2,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 6,
+        "held_out_correct": 248,
+        "held_out_total": 288
+      }
+    },
+    "blind": {
+      "selective": {
+        "fits": 9,
+        "exact": 2,
+        "minimal_partitions": 2,
+        "minimum_width_exact": 2,
+        "width_one": 3,
+        "held_out_correct": 785,
+        "held_out_total": 864
+      },
+      "broad": {
+        "fits": 9,
+        "exact": 3,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 2,
+        "held_out_correct": 259,
+        "held_out_total": 288
+      }
+    }
+  }
+}

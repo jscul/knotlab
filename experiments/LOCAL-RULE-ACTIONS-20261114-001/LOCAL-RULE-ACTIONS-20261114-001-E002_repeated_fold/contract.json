@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "LOCAL-RULE-ACTIONS-20261114-001-E002",
+  "ticket": "LOCAL-RULE-ACTIONS-20261114-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Can the same fitted local Q policy repeat its one learned fold at previously unseen lengths when given enough actions?",
+  "inputs": "E001 sight 1, action reach 1, trained at length 3 with a single preparation. Keep the environment, local signs, actions, reward, fitted policy, three seeds and exact relation scorer identical.",
+  "forbidden_inputs": "Hidden signs, direct whole-chain parity, chain length as policy input, or an update or checkpoint choice on any evaluation start.",
+  "mapping": "Compare two readings of the same frozen table: count all remaining preparations as in E001, or report only whether a preparation remains. Training inputs only ever had values 0 or 1. Exhaust all starts at lengths 3, 4 and 5 with a budget of one and with a sufficient budget of length minus two.",
+  "primary_observable": "Exact whole-relation success for each cell and each seed. Record action traces, unseen training-state keys, Q digest and number of updates, fit and evaluation time, and table size.",
+  "comparators_or_controls": "Original count-sensitive policy, explicit fuse-until-visible policy, random actions and an untrained table. Compare budgets on the same panel. Verify that training digests reproduce E001 and both policy views address the same training keys.",
+  "resource_budget": "6,000 three-rule episodes once per seed with seeds 17, 31, 53. No search over policies, budgets, seeds or lengths. Exact CPU evaluation on at most five rules.",
+  "first_executable_signal": "Short and sufficient budgets coincide at training length. The two encodings agree for all locally available counts 0 and 1.",
+  "stop_rule": "Record all outcomes including transfer failures. One bounded follow-up to discriminate a missing action from an unseen counter value in a finite Q table.",
+  "nonclaims": "This changes the policy's view by design. The agent is supplied the state abstraction, the parity domain, the local edit and exact fusion operation. Length transfer alone gives no evidence that the agent constructs the operation or improves its learning algorithm.",
+  "preregistration": "research/LOCAL-RULE-ACTIONS-20261114-001/repeated_fold_design.md"
+}

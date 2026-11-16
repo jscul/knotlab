@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "WIRED-FOLD-20261114-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E001_cursor_reduction/contract.json",
+      "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E001_cursor_reduction/result.json",
+      "artifacts/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/result.json"
+    ],
+    "report": "research/STRAND-RETURN-20261114-001/strand_returns.md"
+  },
+  "id": "STRAND-RETURN-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Compare single-link visits, two-link hops, and alternating visits on finite closed logical strands. Reuse the frozen reader on changed attachments and test when the agent must retain a shared intermediate distinction.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "WIRED-FOLD-20261114-001",
+  "schema_version": 1,
+  "status": "All 1,392 signed-loop cases agreed under exact one- or two-link moves. In the ternary braid, two crossed systems have the same separate strand possibilities and opposite answers after undo. A promised Boolean read fits one bit; an unannounced stop-or-undo read requires two.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Local moves on closed logical strands with shared distinctions"
+}

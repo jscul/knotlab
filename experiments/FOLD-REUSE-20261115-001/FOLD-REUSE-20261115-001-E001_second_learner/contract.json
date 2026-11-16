@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "FOLD-REUSE-20261115-001-E001",
+  "ticket": "FOLD-REUSE-20261115-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does transferring the previous seven-NAND fold lower the total work of learning exact, new four- and five-input Boolean rules from sparse labels and counterexamples?",
+  "inputs": "The number of independent inputs, five or seven fixed labeled examples and a common first-counterexample oracle. Both learners know the same read-once AND/OR/XOR grammar. The transfer arms receive the saved circuit. Every task begins with fresh task-specific state.",
+  "forbidden_inputs": "Task identity, generating expression, target truth table or fold applicability at the learner. A checker may reveal one counterexample or success. Scientific audits and the hidden panel do not provide training shortcuts.",
+  "outputs": "An executable program per task, its first and all subsequent proposals, acquired labels, and a successful exhaustive check or a recorded failure.",
+  "mapping": "Fit a consistent program and refine with counterexamples. Test the optional fold in a search that prioritizes programs using it, and in a comparator that selects the median truth function from an identical set in the same order.",
+  "primary_observable": "Observed elapsed time to learn and verify the complete mixed panel, charging the transfer arms for original training, source fold planning and certification, transfer loading, fresh catalogue construction, task adaptation and each physical check. Also report cold and already-paid costs and deterministic work counts.",
+  "comparators_or_controls": "Paired identical examples per task, distinct truth functions using four or five essential inputs, matched controls, independent sampling, equal truth-function catalogues, the same physical verifier and median-selector null.",
+  "resource_budget": "32 tasks on at most 32 inputs each, four methods, three balanced fresh worker repeats per method with shared within-method catalogues across a panel. No pretrained source fit is repeated.",
+  "first_executable_signal": "Given sparse labels, the learner changes its selected program after a counterexample or returns a physically verified first proposal on a separate example.",
+  "stop_rule": "Bind sources and tasks before measuring. Score the four methods on the full panel and retain both favorable and unfavorable costs, initial errors and every correction.",
+  "nonclaims": "One transferred component, a finite read-once class, and a small supplied correctness oracle. No general self-improvement or real AI research speed claim."
+}

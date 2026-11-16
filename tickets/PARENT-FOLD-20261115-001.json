@@ -1,0 +1,38 @@
+{
+  "acceptance_gate": "Same immutable original NANDs and local certificates, one edited pin, paid independent raw-output and global frontier-minimum checks.",
+  "completion_gate": "Compare exact programs, charged CPU and avoided work against strong cached ordinary controls. Train on fresh rules only after a repeatable supplied-fold win.",
+  "dependencies": [
+    "FOLD-TWO-OUTPUT-20261115-001",
+    "PROBE-WITNESS-20261115-001",
+    "TRIPLE-ORDER-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/PARENT-FOLD-20261115-001/PARENT-FOLD-20261115-001-E001_consumer_edits/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/PARENT-FOLD-20261115-001/PARENT-FOLD-20261115-001-E001_consumer_edits/result.json",
+      "artifacts/PARENT-FOLD-20261115-001/PARENT-FOLD-20261115-001-E001_consumer_edits/explicit-piece/result.json"
+    ],
+    "independent_audit": "artifacts/PARENT-FOLD-20261115-001/PARENT-FOLD-20261115-001-E001_consumer_edits/audit.json",
+    "physical_piece_protocol": "research/PARENT-FOLD-20261115-001/physical_oracle.md",
+    "report": "research/PARENT-FOLD-20261115-001/parent_fold.md",
+    "timing_sensitivity": "artifacts/PARENT-FOLD-20261115-001/PARENT-FOLD-20261115-001-E001_consumer_edits/sensitivity/contrast.json"
+  },
+  "id": "PARENT-FOLD-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Measure exact minimum-width circuit repair with shared NAND gates, shared local histories and one changed consumer. Give the old piece location to the fold first, charge construction and checking, and train a locator only on an observed speed advantage.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-TRANSFER-20261114-001",
+  "schema_version": 1,
+  "status": "Exact on all 36 one-bit and 36 two-bit parent edits. With the original physical piece, the fold avoided 36 group tests but tied the ordinary repair in paid checking work; median total 398.361 vs 397.038 ms, four of eight paired wins. The learning gate stopped. Independent raw-circuit and timing replay passed.",
+  "status_class": "refuted",
+  "stop_rule": "Use the preselected parent stream and its conditional timing replay; preserve the training and blind reserves when the supplied fold fails its cost test.",
+  "title": "Does a verified local fold save work after a consumer edit one level up?"
+}

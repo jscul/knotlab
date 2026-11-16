@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BRAID-REUSE-20261114-001",
+    "SEARCH-AUDIT-20261112-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/result.json"
+    ],
+    "report": "research/RENAME-SELECT-20261114-001/selection.md"
+  },
+  "id": "RENAME-SELECT-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Compare a selector fitted to observed label renamings and shortest selection on identical training-perfect programs across fresh tasks with different renaming behavior. Measure full operational search, ranking and certification costs to return exact programs with and without the frozen crossing.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "BRAID-REUSE-20261114-001",
+  "schema_version": 1,
+  "status": "Training-only renaming evidence selected 52/60 exact programs versus 27/60 shortest and 36/60 unconditional renaming. The matched twin is unidentifiable. With the same fitted selector the crossing returned 27/30 versus 26/30 at 37.15% more work per correct return before acquisition.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Choose a generalizing program and charge for checking it"
+}

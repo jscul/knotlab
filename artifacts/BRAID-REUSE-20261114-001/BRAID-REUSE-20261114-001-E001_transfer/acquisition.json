@@ -1,0 +1,271 @@
+{
+  "self_test": {
+    "pass": true,
+    "controls_are_not_search_inputs": true,
+    "constructive_controls": {
+      "z_add_x_then_y": {
+        "all_exact": true,
+        "execution": {
+          "syntax_instructions": 8,
+          "frozen_calls": 0,
+          "per_input": {
+            "guarded_steps": 8,
+            "NOT": 16,
+            "AND": 16,
+            "XOR": 8,
+            "total_gates": 40
+          },
+          "inputs": 18,
+          "logical_work": {
+            "guarded_steps": 144,
+            "NOT": 288,
+            "AND": 288,
+            "XOR": 144,
+            "total_gates": 720
+          }
+        }
+      },
+      "x_add_y_then_z_add_x": {
+        "all_exact": true,
+        "execution": {
+          "syntax_instructions": 8,
+          "frozen_calls": 0,
+          "per_input": {
+            "guarded_steps": 8,
+            "NOT": 16,
+            "AND": 16,
+            "XOR": 8,
+            "total_gates": 40
+          },
+          "inputs": 18,
+          "logical_work": {
+            "guarded_steps": 144,
+            "NOT": 288,
+            "AND": 288,
+            "XOR": 144,
+            "total_gates": 720
+          }
+        }
+      }
+    }
+  },
+  "acquisition": {
+    "pass": true,
+    "reproduction": {
+      "proposal_count": true,
+      "distinct_images": true,
+      "first_maximum": true,
+      "final_actions": true,
+      "final_digest": true,
+      "final_score": true,
+      "every_saved_trajectory_row": true,
+      "bundle_same_forward": true
+    },
+    "source_sha256": "70251027a8032883dae4a44b4b3767d2171ad21b5e10c6e3f12f3c1e617cae46",
+    "raw_results_sha256": "017a3c40f2c95da9e50835fb1af7815d5519d5ce47804e203392ffece492384d",
+    "bundle_sha256": "0314efd099e3a54c3791b60968587f1e1edb4e0112ea238eab84fb6ca1a8c8a9",
+    "forward_action_sha256": "a740b9a93061a75b78ce24a135b5adc94ca55a0206872c7b69e97117837f4246",
+    "guided_forward_only": true,
+    "proposals": 98336,
+    "reward_cache_misses": 27551,
+    "reward_cache_hits": 70785,
+    "first_maximum_proposal": 1500,
+    "first_maximum_cumulative_work_per_input": {
+      "guarded_steps_per_input": 21914,
+      "NOT_per_input": 51939,
+      "AND_per_input": 43828,
+      "XOR_per_input": 21914,
+      "gates_per_input": 117681
+    },
+    "final_program": {
+      "actions": [
+        11,
+        1,
+        10,
+        4,
+        8,
+        5,
+        2,
+        10,
+        8,
+        11,
+        7,
+        5
+      ],
+      "guarded_steps": 12,
+      "NOT": 24,
+      "AND": 24,
+      "XOR": 12,
+      "total_gates": 60
+    },
+    "all_proposals_work_per_input": {
+      "guarded_steps_per_input": 1534500,
+      "NOT_per_input": 3584957,
+      "AND_per_input": 3069000,
+      "XOR_per_input": 1534500,
+      "gates_per_input": 8188457
+    },
+    "semantic_nine_state_work": {
+      "guarded_applications": 13810500,
+      "enabled_bit_toggles": 3069000,
+      "NOT": 32264613,
+      "AND": 27621000,
+      "XOR": 13810500,
+      "total_gates": 73696113
+    },
+    "length_histogram": {
+      "4": 395,
+      "5": 1414,
+      "6": 2757,
+      "7": 3886,
+      "8": 4677,
+      "9": 5434,
+      "10": 5221,
+      "11": 4740,
+      "12": 3892,
+      "13": 4377,
+      "14": 4544,
+      "15": 5121,
+      "16": 5268,
+      "17": 5880,
+      "18": 6079,
+      "19": 6747,
+      "20": 5882,
+      "21": 5453,
+      "22": 4431,
+      "23": 4163,
+      "24": 3459,
+      "25": 2262,
+      "26": 1002,
+      "27": 707,
+      "28": 366,
+      "29": 174,
+      "30": 5
+    },
+    "action_histogram": {
+      "0": 129225,
+      "1": 126191,
+      "2": 128871,
+      "3": 126508,
+      "4": 119292,
+      "5": 117519,
+      "6": 127765,
+      "7": 131323,
+      "8": 131485,
+      "9": 132459,
+      "10": 135427,
+      "11": 128435
+    },
+    "best_frontier": [
+      {
+        "proposal": 1,
+        "score": 22,
+        "length": 6
+      },
+      {
+        "proposal": 3,
+        "score": 25,
+        "length": 20
+      },
+      {
+        "proposal": 4,
+        "score": 25,
+        "length": 12
+      },
+      {
+        "proposal": 15,
+        "score": 27,
+        "length": 12
+      },
+      {
+        "proposal": 135,
+        "score": 27,
+        "length": 9
+      },
+      {
+        "proposal": 139,
+        "score": 27,
+        "length": 8
+      },
+      {
+        "proposal": 176,
+        "score": 27,
+        "length": 6
+      },
+      {
+        "proposal": 200,
+        "score": 29,
+        "length": 8
+      },
+      {
+        "proposal": 201,
+        "score": 31,
+        "length": 11
+      },
+      {
+        "proposal": 288,
+        "score": 32,
+        "length": 12
+      },
+      {
+        "proposal": 453,
+        "score": 33,
+        "length": 14
+      },
+      {
+        "proposal": 541,
+        "score": 33,
+        "length": 7
+      },
+      {
+        "proposal": 546,
+        "score": 36,
+        "length": 8
+      },
+      {
+        "proposal": 927,
+        "score": 42,
+        "length": 8
+      },
+      {
+        "proposal": 1500,
+        "score": 48,
+        "length": 24
+      },
+      {
+        "proposal": 5293,
+        "score": 48,
+        "length": 18
+      },
+      {
+        "proposal": 6735,
+        "score": 48,
+        "length": 14
+      },
+      {
+        "proposal": 51610,
+        "score": 48,
+        "length": 12
+      }
+    ],
+    "implementation": {
+      "program_image_translate_calls": 1534500,
+      "program_image_translated_bytes": 13810500,
+      "reward_translate_calls_on_cache_misses": 165306,
+      "reward_translated_bytes_on_cache_misses": 3471426,
+      "reward_padded_table_bytes_created": 14106112,
+      "cached_image_key_payload_bytes": 247959,
+      "parent_choices_including_restarts": 8192,
+      "forced_periodic_restarts": 256,
+      "source_program_execution_bypassed_by_reward_cache": false,
+      "primitive_interpreter_used_for_original_search": false
+    },
+    "timing": {
+      "audit_reproduction_seconds": 0.7908826589118689,
+      "original_combined_four_stage_runner_seconds": 1.2156773910392076,
+      "original_guided_forward_seconds": null
+    },
+    "cost_scope": "The full fixed guided-forward stage selected the reusable final program; undo and neutral searches are excluded.",
+    "unit_warning": "Nine-state literal primitive counts are semantic work, not measured instructions of the byte-packed implementation. Do not mix them with cached scoring or wall seconds."
+  }
+}

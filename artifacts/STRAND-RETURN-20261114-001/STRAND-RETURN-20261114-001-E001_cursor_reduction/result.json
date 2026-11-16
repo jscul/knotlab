@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "artifact_id": "STRAND-RETURN-20261114-001-E001",
+  "ticket": "STRAND-RETURN-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Exploratory code-analysis run complete",
+  "contract": "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E001_cursor_reduction/contract.json",
+  "report": "research/STRAND-RETURN-20261114-001/strand_returns.md",
+  "case_names": [
+    "closed-strands"
+  ],
+  "checkpoint_sha256": "090696cb712774da428f525cbd410ec92629120e15ade284ac069c063797aedf",
+  "single_strands": {
+    "lengths": {
+      "2": {
+        "tally": {
+          "cases": 16,
+          "one_correct": 16,
+          "two_correct": 16,
+          "blind_correct": 10
+        },
+        "per_loop_work": {
+          "one": {
+            "moves": 2,
+            "link_reads": 2,
+            "unary_reads": 1
+          },
+          "two": {
+            "moves": 1,
+            "link_reads": 2,
+            "unary_reads": 1
+          },
+          "blind": {
+            "moves": 1,
+            "link_reads": 1,
+            "unary_reads": 1
+          }
+        }
+      },
+      "3": {
+        "tally": {
+          "cases": 32,
+          "one_correct": 32,
+          "two_correct": 32,
+          "blind_correct": 20
+        },
+        "per_loop_work": {
+          "one": {
+            "moves": 3,
+            "link_reads": 3,
+            "unary_reads": 1
+          },
+          "two": {
+            "moves": 2,
+            "link_reads": 3,
+            "unary_reads": 1
+          },
+          "blind": {
+            "moves": 2,
+            "link_reads": 2,
+            "unary_reads": 1
+          }
+        }
+      },
+      "4": {
+        "tally": {
+          "cases": 64,
+          "one_correct": 64,
+          "two_correct": 64,
+          "blind_correct": 36
+        },
+        "per_loop_work": {
+          "one": {
+            "moves": 4,
+            "link_reads": 4,
+            "unary_reads": 1
+          },
+          "two": {
+            "moves": 2,
+            "link_reads": 4,
+            "unary_reads": 1
+          },
+          "blind": {
+            "moves": 2,
+            "link_reads": 2,
+            "unary_reads": 1
+          }
+        }
+      },
+      "6": {
+        "tally": {
+          "cases": 256,
+          "one_correct": 256,
+          "two_correct": 256,
+          "blind_correct": 144
+        },
+        "per_loop_work": {
+          "one": {
+            "moves": 6,
+            "link_reads": 6,
+            "unary_reads": 1
+          },
+          "two": {
+            "moves": 3,
+            "link_reads": 6,
+            "unary_reads": 1
+          },
+          "blind": {
+            "moves": 3,
+            "link_reads": 3,
+            "unary_reads": 1
+          }
+        }
+      },
+      "8": {
+        "tally": {
+          "cases": 1024,
+          "one_correct": 1024,
+          "two_correct": 1024,
+          "blind_correct": 576
+        },
+        "per_loop_work": {
+          "one": {
+            "moves": 8,
+            "link_reads": 8,
+            "unary_reads": 1
+          },
+          "two": {
+            "moves": 4,
+            "link_reads": 8,
+            "unary_reads": 1
+          },
+          "blind": {
+            "moves": 4,
+            "link_reads": 4,
+            "unary_reads": 1
+          }
+        }
+      }
+    },
+    "blind_witness": {
+      "sign_words": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "unary": 3,
+      "oracle_masks": [
+        3,
+        0
+      ],
+      "blind_masks": [
+        3,
+        3
+      ]
+    }
+  },
+  "steering": {
+    "serial_one": {
+      "moves": 49152,
+      "link_reads": 49152,
+      "unary_reads": 6144,
+      "world_wirings": 3072,
+      "cursors_opened": 6144,
+      "exactly_wired_names": 3072,
+      "same_state_as_direct": 3072,
+      "packets_of_1_bit": 15360,
+      "payload_bits": 39936,
+      "queries": 55296,
+      "correct": 54144,
+      "packets_of_2_bit": 12288
+    },
+    "alternating_one": {
+      "moves": 49152,
+      "link_reads": 49152,
+      "unary_reads": 6144,
+      "world_wirings": 3072,
+      "cursors_opened": 6144,
+      "exactly_wired_names": 3072,
+      "same_state_as_direct": 3072,
+      "packets_of_1_bit": 15360,
+      "payload_bits": 39936,
+      "queries": 55296,
+      "correct": 54144,
+      "packets_of_2_bit": 12288
+    },
+    "alternating_two": {
+      "moves": 24576,
+      "link_reads": 49152,
+      "unary_reads": 6144,
+      "world_wirings": 3072,
+      "cursors_opened": 6144,
+      "exactly_wired_names": 3072,
+      "same_state_as_direct": 3072,
+      "packets_of_1_bit": 15360,
+      "payload_bits": 39936,
+      "queries": 55296,
+      "correct": 54144,
+      "packets_of_2_bit": 12288
+    }
+  },
+  "historical": {
+    "original_commit": "d92bb3f74",
+    "worlds_enumerated": 64,
+    "whole_satisfying_worlds_by_c": {
+      "0": 2,
+      "1": 6
+    },
+    "individually_viable_pairs": 20,
+    "individually_viable_pairs_with_no_shared_value": 8
+  },
+  "junctions": {
+    "distinct_middles": {
+      "world_variable_order": [
+        "h",
+        "u",
+        "v"
+      ],
+      "systems": 16,
+      "oracle_assignments_tested": 128,
+      "oracle_assignments_allowed": 8,
+      "both_strands_individually_viable": 4,
+      "jointly_viable": 4,
+      "early_forgetting_exact": 16,
+      "retaining_shared_middle_exact": 16,
+      "early_mismatch_signs": []
+    },
+    "identified_middles": {
+      "world_variable_order": [
+        "h",
+        "u"
+      ],
+      "systems": 16,
+      "oracle_assignments_tested": 64,
+      "oracle_assignments_allowed": 4,
+      "both_strands_individually_viable": 4,
+      "jointly_viable": 2,
+      "early_forgetting_exact": 14,
+      "retaining_shared_middle_exact": 16,
+      "early_mismatch_signs": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "source_sha256": {
+    "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E001_cursor_reduction/job.py": "6fd489cea461ee301d2a1d2c79fcd31b127e0ff0709372bf19963d4447fc06d9",
+    "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E001_cursor_reduction/contract.json": "51a030586c37cd81ea48c4816986a2867f396041549365bca5f4c14e456799f9",
+    "artifacts/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E001_cursor_reduction/results.jsonl": "d29efdc7ba28209c85ee05cee5c349a33eb6ab1aceea2304b51e19c39916b6f6",
+    "research/STRAND-RETURN-20261114-001/verify.py": "6186c426fd93237667dc9f87de1c5cfcb3993bb7adab4fe35ef37fb85fcebe55",
+    "research/STRAND-RETURN-20261114-001/junctions.py": "12e02e1fbcb9749d574d326c81149bd8c05c00048749ba8ab1f27a5e124fddea",
+    "research/STRAND-RETURN-20261114-001/preregistration.md": "255b1ddce338bc942566c24d2444181250288080471010f05e1a779ec06cc1e4"
+  }
+}

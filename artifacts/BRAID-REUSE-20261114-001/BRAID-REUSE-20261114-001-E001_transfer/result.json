@@ -1,0 +1,952 @@
+{
+  "schema_version": 1,
+  "artifact_id": "BRAID-REUSE-20261114-001-E001",
+  "ticket": "BRAID-REUSE-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Complete paired search and held-out assessment",
+  "question": "Does one frozen local crossing reduce the cost of finding or returning a correct program on a new three-input predicate?",
+  "report": "research/BRAID-REUSE-20261114-001/transfer.md",
+  "contract": "experiments/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/contract.json",
+  "date_pacific": "2026-11-14",
+  "seeds": [
+    17,
+    29,
+    43,
+    59,
+    71
+  ],
+  "candidate_budget_per_arm": 196640,
+  "holdout_inputs": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      1
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2
+    ]
+  ],
+  "result_role": "Blind final uses training reward alone. First exact is retrospective. All proposals through the fixed budget are charged.",
+  "actual_proposals_all_arms": 1966400,
+  "frozen_training_sha256": "fddf3bd898e2b658eb47503c2ccb9333d804c2b8f796c983bdfbba46fe992f54",
+  "frozen_forward_instructions_sha256": "a740b9a93061a75b78ce24a135b5adc94ca55a0206872c7b69e97117837f4246",
+  "source_bound_pretraining": {
+    "before_target_runs": true,
+    "utc": "2026-11-15T06:16:29.595361+00:00",
+    "files_sha256": {
+      "experiments/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/job.py": "8ff46e077ee07694f27756f3b326ba094f2a5f1c827d22f14300c87f856fb336",
+      "experiments/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/contract.json": "4f85b124cda5e18a0298c42b8aa15681ca6d787efcddae4ef3a18c1b19eada20",
+      "research/BRAID-REUSE-20261114-001/preregistration.md": "602aa6cb5247d64cd6296ad7e7474eb26ecf4c8c0719753cd329af44f9e8cd13",
+      "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E002_rewarded_actions/sequence_checkpoint.json": "0314efd099e3a54c3791b60968587f1e1edb4e0112ea238eab84fb6ca1a8c8a9"
+    }
+  },
+  "acquisition": {
+    "proposals": 98336,
+    "compiled_program_image_table_translations": 1534500,
+    "reward_cache_hits": 70785,
+    "fitness_cache_misses": 27551,
+    "standalone_historical_seconds": null,
+    "cost_per_call_per_input": {
+      "guarded_toggles": 12,
+      "NOT": 24,
+      "AND": 24,
+      "XOR": 12
+    },
+    "all_nine_inputs_primitive_work": {
+      "guarded_applications": 13810500,
+      "enabled_bit_toggles": 3069000,
+      "NOT": 32264613,
+      "AND": 27621000,
+      "XOR": 13810500,
+      "total_gates": 73696113
+    }
+  },
+  "paired_arms": [
+    {
+      "seed": 17,
+      "condition": "raw",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 21042,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "14b0817faa7d1b383e69a9358d8fd6062036ce20522ebcfaa6d531d4613ed8a7",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 12,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 1826,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "0cd9f2bcd39f798c9a67d39fa429df8096bdc26cc9febb820144445d910ceef2",
+        "exposed_length": 8,
+        "expanded_guarded_length": 8,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 8,
+          "NOT": 18,
+          "AND": 16,
+          "XOR": 8
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 6820,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "5d750a41a1cfe060eee3e49de1a475ff46c65b722c105eec6f3e03e13dbf8308",
+        "exposed_length": 12,
+        "expanded_guarded_length": 12,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 12,
+          "NOT": 29,
+          "AND": 24,
+          "XOR": 12
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 6820,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 5742918,
+        "expanded_guarded_bit_flips": 1080810,
+        "packed_program_gates": 319051,
+        "expanded_terminal_readout_gates": 245520
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 173637792,
+        "expanded_guarded_bit_flips": 32552136,
+        "packed_program_gates": 9646544,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.085582772,
+      "unique_training_perfect_by_held_score": {
+        "3": 4688,
+        "5": 633,
+        "7": 667,
+        "9": 772
+      }
+    },
+    {
+      "seed": 17,
+      "condition": "reuse",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 18100,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "4d7fdca87d5a469e84ab2e53e734d6b66d27bf89f98dead58454f0dfa5e36577",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 12,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 1855,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "6d6e09570ecd60454a178ba4439b1eeb3c597e9e829a5923ad0b56e49d62cd14",
+        "exposed_length": 7,
+        "expanded_guarded_length": 7,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 7,
+          "NOT": 16,
+          "AND": 14,
+          "XOR": 7
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 5670,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "182e4648422ce3a2573b0c9918013af07beb571ae9e15bcdc54596ab430d8030",
+        "exposed_length": 14,
+        "expanded_guarded_length": 14,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 14,
+          "NOT": 31,
+          "AND": 28,
+          "XOR": 14
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 5670,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 7451982,
+        "expanded_guarded_bit_flips": 1435410,
+        "packed_program_gates": 413999,
+        "expanded_terminal_readout_gates": 204120
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 269672634,
+        "expanded_guarded_bit_flips": 51942528,
+        "packed_program_gates": 14981813,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.179081743,
+      "unique_training_perfect_by_held_score": {
+        "3": 3395,
+        "5": 602,
+        "7": 563,
+        "9": 1511
+      }
+    },
+    {
+      "seed": 29,
+      "condition": "raw",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 50806,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "6c96b1ab4e7f57f47d620af47a8a84c1a2335972a8ff7cb403b1789b78e73a67",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 12,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 1982,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "e0d9716fc25ea09d5550247c68a48b966385e80e39eabdd03180ef7078c95726",
+        "exposed_length": 9,
+        "expanded_guarded_length": 9,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 9,
+          "NOT": 20,
+          "AND": 18,
+          "XOR": 9
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 8169,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "061424246ea1f2818584c4efae55323f0409bd247ef98fbf5200b5c362364adc",
+        "exposed_length": 10,
+        "expanded_guarded_length": 10,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 10,
+          "NOT": 20,
+          "AND": 20,
+          "XOR": 10
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 8169,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 6240816,
+        "expanded_guarded_bit_flips": 1164600,
+        "packed_program_gates": 346712,
+        "expanded_terminal_readout_gates": 294084
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 170748558,
+        "expanded_guarded_bit_flips": 31939722,
+        "packed_program_gates": 9486031,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.073388779,
+      "unique_training_perfect_by_held_score": {
+        "3": 5021,
+        "5": 308,
+        "7": 388,
+        "9": 1169
+      }
+    },
+    {
+      "seed": 29,
+      "condition": "reuse",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 47088,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "c0947990840ef7cfd97d32d4fb8bfb7e023d8cf87accfd0b274ecb2423f12249",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 14,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 1982,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "e0d9716fc25ea09d5550247c68a48b966385e80e39eabdd03180ef7078c95726",
+        "exposed_length": 9,
+        "expanded_guarded_length": 9,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 9,
+          "NOT": 20,
+          "AND": 18,
+          "XOR": 9
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 6931,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "87c9193f0e8874bd4936a60370f2b446baf38c803976eb54d3f51b03f5b6341f",
+        "exposed_length": 6,
+        "expanded_guarded_length": 17,
+        "macro_calls": 1,
+        "inference_counts_per_input": {
+          "guarded_toggles": 17,
+          "NOT": 35,
+          "AND": 34,
+          "XOR": 17
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 6931,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 6578478,
+        "expanded_guarded_bit_flips": 1255662,
+        "packed_program_gates": 365471,
+        "expanded_terminal_readout_gates": 249516
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 275795298,
+        "expanded_guarded_bit_flips": 53111484,
+        "packed_program_gates": 15321961,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.188445203,
+      "unique_training_perfect_by_held_score": {
+        "3": 3581,
+        "5": 617,
+        "7": 508,
+        "9": 1085
+      }
+    },
+    {
+      "seed": 43,
+      "condition": "raw",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 9622,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "f91e21dd73990ff1b80310051a93b9ccba11e516bcd9de3321bec4b4d7c0581a",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 13,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 2907,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "00336ae6d3bb6c462292f7259586758390095b1942a710e6b4971340b3060ca4",
+        "exposed_length": 7,
+        "expanded_guarded_length": 7,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 7,
+          "NOT": 18,
+          "AND": 14,
+          "XOR": 7
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 8151,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "4fd756f534ad2bac82413939828f4d84cdb35fce6080b5d4aca9440331711ff9",
+        "exposed_length": 13,
+        "expanded_guarded_length": 13,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 13,
+          "NOT": 33,
+          "AND": 26,
+          "XOR": 13
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 8151,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 7136856,
+        "expanded_guarded_bit_flips": 1336986,
+        "packed_program_gates": 396492,
+        "expanded_terminal_readout_gates": 293436
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 167174244,
+        "expanded_guarded_bit_flips": 31292892,
+        "packed_program_gates": 9287458,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.053225793,
+      "unique_training_perfect_by_held_score": {
+        "3": 3519,
+        "5": 483,
+        "7": 390,
+        "9": 820
+      }
+    },
+    {
+      "seed": 43,
+      "condition": "reuse",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 7605,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "4cde4dc4f905b3471770cfde598389d0ad7a9e3d0a0a0a058460bea607abdd66",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 13,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 2907,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "00336ae6d3bb6c462292f7259586758390095b1942a710e6b4971340b3060ca4",
+        "exposed_length": 7,
+        "expanded_guarded_length": 7,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 7,
+          "NOT": 18,
+          "AND": 14,
+          "XOR": 7
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 8151,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "80256a5973d4d385d34cd0ee0481c9ff2b65938400710a6959857ea699a5c0e9",
+        "exposed_length": 12,
+        "expanded_guarded_length": 12,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 12,
+          "NOT": 30,
+          "AND": 24,
+          "XOR": 12
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 8151,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 8462574,
+        "expanded_guarded_bit_flips": 1616814,
+        "packed_program_gates": 470143,
+        "expanded_terminal_readout_gates": 293436
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 269840808,
+        "expanded_guarded_bit_flips": 52057242,
+        "packed_program_gates": 14991156,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.169544433,
+      "unique_training_perfect_by_held_score": {
+        "3": 3145,
+        "5": 451,
+        "7": 465,
+        "9": 819
+      }
+    },
+    {
+      "seed": 59,
+      "condition": "raw",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 4330,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "245b21118e08c869cd847d5c30dad6e314aba7a0b2ff4e37784a082f05aa6cd5",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 12,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 3563,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "0a63d56b85d7184e96f003488022d93943718bfba28d65f9beaa96f584993c27",
+        "exposed_length": 6,
+        "expanded_guarded_length": 6,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 6,
+          "NOT": 14,
+          "AND": 12,
+          "XOR": 6
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 6630,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "e35701a64fb3e38ecf96c38ea84d8c1def396f91b5da8940ff2ee0e50240c928",
+        "exposed_length": 11,
+        "expanded_guarded_length": 11,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 11,
+          "NOT": 24,
+          "AND": 22,
+          "XOR": 11
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 6630,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 4948848,
+        "expanded_guarded_bit_flips": 927414,
+        "packed_program_gates": 274936,
+        "expanded_terminal_readout_gates": 238680
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 166672476,
+        "expanded_guarded_bit_flips": 31219902,
+        "packed_program_gates": 9259582,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.058991898,
+      "unique_training_perfect_by_held_score": {
+        "3": 3879,
+        "5": 278,
+        "7": 544,
+        "9": 1157
+      }
+    },
+    {
+      "seed": 59,
+      "condition": "reuse",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 19293,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "8b1f0b6c43a8977f56e997bdb97e66f33484c3ef621077d9f4c200df08009b9a",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 12,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 3798,
+        "training_score": 24,
+        "held_correct": 7,
+        "held_total": 9,
+        "genome_sha256": "50b2a331d68292eca229f2b8a2d991b0a9ae2f2b0a20fc658591b39bdb9e8cf9",
+        "exposed_length": 13,
+        "expanded_guarded_length": 13,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 13,
+          "NOT": 31,
+          "AND": 26,
+          "XOR": 13
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 6630,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "e35701a64fb3e38ecf96c38ea84d8c1def396f91b5da8940ff2ee0e50240c928",
+        "exposed_length": 11,
+        "expanded_guarded_length": 11,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 11,
+          "NOT": 24,
+          "AND": 22,
+          "XOR": 11
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 6630,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 7310844,
+        "expanded_guarded_bit_flips": 1404594,
+        "packed_program_gates": 406158,
+        "expanded_terminal_readout_gates": 238680
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 271165950,
+        "expanded_guarded_bit_flips": 52266996,
+        "packed_program_gates": 15064775,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.1820151,
+      "unique_training_perfect_by_held_score": {
+        "3": 3688,
+        "5": 520,
+        "7": 437,
+        "9": 1213
+      }
+    },
+    {
+      "seed": 71,
+      "condition": "raw",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 46694,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "50cdd01fa8a70e66523b7f22c72f1f61e55b5e4c7defa4987edd576a822ce1ec",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 12,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 3775,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "c754a7200c35fc222e9e68a1912c8450109715127c242c82a425b006a81bd60d",
+        "exposed_length": 8,
+        "expanded_guarded_length": 8,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 8,
+          "NOT": 18,
+          "AND": 16,
+          "XOR": 8
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 4173,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "4bc629c7ae60abb534277eabaa0d90fc9bbd46ad5964066ee68fb38c947049bb",
+        "exposed_length": 10,
+        "expanded_guarded_length": 10,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 10,
+          "NOT": 22,
+          "AND": 20,
+          "XOR": 10
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 4173,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 3081096,
+        "expanded_guarded_bit_flips": 578142,
+        "packed_program_gates": 171172,
+        "expanded_terminal_readout_gates": 150228
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 167528484,
+        "expanded_guarded_bit_flips": 31414608,
+        "packed_program_gates": 9307138,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.07586841,
+      "unique_training_perfect_by_held_score": {
+        "3": 4782,
+        "5": 513,
+        "7": 508,
+        "9": 1112
+      }
+    },
+    {
+      "seed": 71,
+      "condition": "reuse",
+      "actual_proposals": 196640,
+      "held_total": 9,
+      "blind_final": {
+        "evaluation": 22930,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "86ed7596a5c655d5dffb3bcac27a4d9bab9a8ec84e845aa8d373a5cb1c8aa87e",
+        "exposed_length": 5,
+        "expanded_guarded_length": 5,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 5,
+          "NOT": 10,
+          "AND": 10,
+          "XOR": 5
+        },
+        "validated_exact": false
+      },
+      "first_training_perfect": {
+        "evaluation": 3943,
+        "training_score": 24,
+        "held_correct": 3,
+        "held_total": 9,
+        "genome_sha256": "88402f0690a60b518aa68e679573c65af12a6fbcf8a96430c56cd0fd72c9c801",
+        "exposed_length": 8,
+        "expanded_guarded_length": 8,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 8,
+          "NOT": 19,
+          "AND": 16,
+          "XOR": 8
+        },
+        "validated_exact": false
+      },
+      "first_retrospectively_exact": {
+        "evaluation": 5261,
+        "training_score": 24,
+        "held_correct": 9,
+        "held_total": 9,
+        "genome_sha256": "8f9f2abe31f0aab90f4df735996ddce03fd3f33803cf105050d287487fff40a6",
+        "exposed_length": 9,
+        "expanded_guarded_length": 9,
+        "macro_calls": 0,
+        "inference_counts_per_input": {
+          "guarded_toggles": 9,
+          "NOT": 21,
+          "AND": 18,
+          "XOR": 9
+        },
+        "validated_exact": true
+      },
+      "first_exact_right_censored": false,
+      "first_exact_or_cap": 5261,
+      "work_to_first_exact_or_cap": {
+        "expanded_program_gates": 4849146,
+        "expanded_guarded_bit_flips": 922482,
+        "packed_program_gates": 269397,
+        "expanded_terminal_readout_gates": 189396
+      },
+      "whole_fit_work": {
+        "expanded_program_gates": 274122396,
+        "expanded_guarded_bit_flips": 52873470,
+        "packed_program_gates": 15229022,
+        "expanded_terminal_readout_gates": 7079040
+      },
+      "whole_fit_seconds": 1.187952259,
+      "unique_training_perfect_by_held_score": {
+        "3": 3648,
+        "5": 482,
+        "7": 478,
+        "9": 1444
+      }
+    }
+  ],
+  "totals_by_condition": {
+    "raw": {
+      "seeds": 5,
+      "blind_final_exact_count": 0,
+      "sampled_exact_count": 5,
+      "actual_proposals": 983200,
+      "fully_expanded_gates_full_budget": 845761554,
+      "terminal_readout_gates_full_budget": 35395200,
+      "mean_capped_proposals": 6788.6,
+      "total_capped_proposals": 33943,
+      "expanded_gates_through_first_exact_or_cap": 27150534,
+      "mean_expanded_gates_through_first_exact_or_cap": 5430106.8,
+      "condition_seconds": 5.347057652
+    },
+    "reuse": {
+      "seeds": 5,
+      "blind_final_exact_count": 0,
+      "sampled_exact_count": 5,
+      "actual_proposals": 983200,
+      "fully_expanded_gates_full_budget": 1360597086,
+      "terminal_readout_gates_full_budget": 35395200,
+      "mean_capped_proposals": 6528.6,
+      "total_capped_proposals": 32643,
+      "expanded_gates_through_first_exact_or_cap": 34653024,
+      "mean_expanded_gates_through_first_exact_or_cap": 6930604.8,
+      "condition_seconds": 5.907038738
+    }
+  },
+  "elapsed_seconds": {
+    "ten_serial_fits": 11.266324538970366,
+    "post_freeze": 0.379356881021522,
+    "total": 11.645683647016995
+  },
+  "amortization": {
+    "blind_exact_outputs_raw_and_reuse": [
+      0,
+      0
+    ],
+    "mean_candidate_saving_to_first_exact_sample": 260.0,
+    "conditional_repetitions_for_proposal_acquisition_only": 379,
+    "conditional_assumptions": "A separate correct oracle could recognize the first exact sample and the same mean savings would recur.",
+    "extra_expanded_gates_to_first_exact_sample_per_seed": 1500498.0,
+    "break_even_on_primitive_cost": null,
+    "observed_payback_from_returning_correct_outputs": null
+  },
+  "files_sha256": {
+    "artifacts/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/results.jsonl": "eea7c0749a83403abd94f22bb4dae1abb3d79e0108e026568f1224c8ff38f6a9",
+    "artifacts/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/acquisition.json": "b549eb82f58e5e0704e5897c0ac1c21dcca693bd762dad73098a3753d1b72867",
+    "artifacts/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/freeze.json": "a1714d18a755ed34c4aebbd1f26ec1ced5f7dbe83f04ea04c24115ab37943f91",
+    "experiments/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/job.py": "8ff46e077ee07694f27756f3b326ba094f2a5f1c827d22f14300c87f856fb336",
+    "experiments/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/contract.json": "4f85b124cda5e18a0298c42b8aa15681ca6d787efcddae4ef3a18c1b19eada20",
+    "research/BRAID-REUSE-20261114-001/preregistration.md": "602aa6cb5247d64cd6296ad7e7474eb26ecf4c8c0719753cd329af44f9e8cd13",
+    "artifacts/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/audit.json": "7146ce8f599f67ef710d1d69775e8321acb408b7626be273ebb006f398d88938",
+    "research/BRAID-REUSE-20261114-001/independent.py": "6397d324ace991f909a15812373c6073fb1d63deb94714576c788527dfd28901",
+    "research/BRAID-REUSE-20261114-001/transfer.md": "7d052ae4ac9fb9eac750cc03aad7e664de2d877c7cd8961e3955274d64b65d2a"
+  },
+  "independent_validation": {
+    "passed": true,
+    "reconstructed_proposals": 1966400,
+    "distinct_training_perfect_programs_across_arms": 60283,
+    "matched_all_trajectories_costs_and_first_exact_or_cap": true,
+    "separate_repeat_of_producer": {
+      "arms": 10,
+      "training_trajectories_match": true,
+      "final_checkpoints_match": true,
+      "expanded_costs_match": true
+    }
+  }
+}

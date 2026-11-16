@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BIT-DECODER-20261114-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/GROUP-SENDER-20261115-001/GROUP-SENDER-20261115-001-E001_atomic_switch/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/GROUP-SENDER-20261115-001/GROUP-SENDER-20261115-001-E001_atomic_switch/result.json"
+    ],
+    "frozen_component_exchange": "artifacts/GROUP-SENDER-20261115-001/GROUP-SENDER-20261115-001-E001_atomic_switch/crossover.json",
+    "independent_audit": "artifacts/GROUP-SENDER-20261115-001/GROUP-SENDER-20261115-001-E001_atomic_switch/audit.json",
+    "report": "research/GROUP-SENDER-20261115-001/group_sender.md"
+  },
+  "id": "GROUP-SENDER-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Fit a sender using atomic operations on public wiring and anonymous groups of switches; freeze it with the previous decoder and measure delayed correctness and minimum physical message width after rewiring all inputs, with strict one-switch and all-answers controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "BIT-DECODER-20261114-001",
+  "schema_version": 1,
+  "status": "Both frozen group-capable senders reduced six bits to four on eight new coordination cases and the earlier nine-bit case to four. Each answered all 196,608 delayed questions and reached 80/96 unrestricted minima. A zero-training exchange of the learned tracing rules reached 92/96, including all 18 nuisance cases. Four parity-dependent wirings need a stronger receiver to reach three.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Learn to trace sources and switch groups of questions to computed answers"
+}

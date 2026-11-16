@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "ticket": "FOLD-TRANSFER-20261114-001",
+  "artifact_id": "FOLD-TRANSFER-20261114-001-E001",
+  "evidence_stage": "exploratory",
+  "status": "Exploratory run complete",
+  "report": "research/FOLD-TRANSFER-20261114-001/transfer.md",
+  "contract": "experiments/FOLD-TRANSFER-20261114-001/FOLD-TRANSFER-20261114-001-E001_hidden_reads/contract.json",
+  "contract_sha256": "5fb69583194ed3d7f83035a1e345a4355a307dbd101d5ab72a5cac16eeac6405",
+  "producer": "experiments/FOLD-TRANSFER-20261114-001/FOLD-TRANSFER-20261114-001-E001_hidden_reads/job.py",
+  "producer_sha256": "cfc630c7d2f6e1594ecb4ce486f5be84ab1bc7dcdd714ab99b1b1db748be8cd5",
+  "raw_results": "artifacts/FOLD-TRANSFER-20261114-001/FOLD-TRANSFER-20261114-001-E001_hidden_reads/results.jsonl",
+  "raw_sha256": "de6c316210ad9cbe2d3554f7a7b287ea088844470373e8e9cc7bd1c6b7764a26",
+  "cases": 4,
+  "counts": {
+    "ok": 4,
+    "error": 0,
+    "timeout": 0,
+    "memory": 0,
+    "crashed": 0
+  },
+  "observations": {
+    "source_seeds": [
+      9000,
+      9001,
+      9002,
+      9003
+    ],
+    "panels": [
+      {
+        "copies": 2,
+        "external_inputs": 32,
+        "distinct_functions": 4,
+        "query_count_histogram": {
+          "2": 4
+        },
+        "held_out_predictions": 120
+      },
+      {
+        "copies": 3,
+        "external_inputs": 128,
+        "distinct_functions": 8,
+        "query_count_histogram": {
+          "3": 8
+        },
+        "held_out_predictions": 1000
+      },
+      {
+        "copies": 4,
+        "external_inputs": 512,
+        "distinct_functions": 16,
+        "query_count_histogram": {
+          "4": 16
+        },
+        "held_out_predictions": 8128
+      }
+    ],
+    "plain_table_learner_matches_every_query": true,
+    "unqueried_errors": 0
+  }
+}

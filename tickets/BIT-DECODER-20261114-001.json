@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BRAID-ACTIONS-20261114-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/BIT-DECODER-20261114-001/BIT-DECODER-20261114-001-E001_atomic_codec/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/BIT-DECODER-20261114-001/BIT-DECODER-20261114-001-E001_atomic_codec/result.json"
+    ],
+    "report": "research/BIT-DECODER-20261114-001/decoder.md",
+    "validation_receipt": "artifacts/BIT-DECODER-20261114-001/BIT-DECODER-20261114-001-E001_atomic_codec/receipt.json"
+  },
+  "id": "BIT-DECODER-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Jointly fit packet selection and atomic logical answer decoding. Freeze both before new identifiable wiring and test exact minimum three- and four-bit communication on every one of 512 relations.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "BRAID-ACTIONS-20261114-001",
+  "schema_version": 1,
+  "status": "With varied training the frozen NAND decoder answered all 344,064 held queries. Its sender reached minimum width on 150/168 wirings, including all canonical three-bit and four-bit cases. Training only on disjunction missed exactly-one transfer. On the hardest compound wiring the sender used nine bits where four suffice.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Learn what to send and decode unfamiliar logical questions"
+}

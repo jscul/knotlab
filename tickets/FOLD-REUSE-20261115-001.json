@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "Pair the same fresh tasks and starting examples, admit the same semantic hypothesis set in every arm, and charge source acquisition, fitting and all rejected and successful checks.",
+  "completion_gate": "Return a program for each task, evaluate all inputs, compare first-consistent and common-order controls and replay all reported correctness and cost arithmetic.",
+  "dependencies": [
+    "ANSWER-COMPOSE-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/FOLD-REUSE-20261115-001/FOLD-REUSE-20261115-001-E001_second_learner/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/FOLD-REUSE-20261115-001/FOLD-REUSE-20261115-001-E001_second_learner/result.json"
+    ],
+    "independent_audit": "artifacts/FOLD-REUSE-20261115-001/FOLD-REUSE-20261115-001-E001_second_learner/audit.json",
+    "report": "research/FOLD-REUSE-20261115-001/fold_reuse.md",
+    "source_acquisition": "artifacts/FOLD-REUSE-20261115-001/FOLD-REUSE-20261115-001-E001_second_learner/source_cost.json"
+  },
+  "id": "FOLD-REUSE-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Fit the same fresh Boolean rules from identical labeled examples with and without a previously saved fold. Charge original acquisition, downstream setup, fitting and exact verification, and test whether reusable structure lowers the total work.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "ANSWER-COMPOSE-20261115-001",
+  "schema_version": 1,
+  "status": "On 32 fresh read-once Boolean rules each arm returned 32 exact programs over all 768 inputs. Prioritizing the fold reduced checks from 136 to 129 but took 11.243 s including source acquisition, versus 0.101 s with primitives alone. The downstream times alone were 0.186 s and 0.101 s. A common semantic order required the same 102 checks in both arms.",
+  "status_class": "obstructed",
+  "stop_rule": "Keep every proposal, counterexample and failure from the frozen panel and report the paired outcome at the observed workload.",
+  "title": "Can a saved fold lower the work of learning a new rule?"
+}

@@ -1,0 +1,683 @@
+{
+  "schema_version": 1,
+  "artifact_id": "STRAND-RETURN-20261114-001-E002",
+  "ticket": "STRAND-RETURN-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Exploratory code-analysis run complete",
+  "contract": "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/contract.json",
+  "report": "research/STRAND-RETURN-20261114-001/strand_returns.md",
+  "case_names": [
+    "binary-census",
+    "binary-signed-swap",
+    "ternary-mixing"
+  ],
+  "census": {
+    "pair_order": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "permutations": 24,
+    "triple_comparisons": 192,
+    "passing": 5,
+    "passing_identities": 1,
+    "passing_signed_swaps": 4,
+    "passing_with_a_jointly_dependent_output": 0
+  },
+  "readers": {
+    "binary-signed-swap": {
+      "points_restored": 4,
+      "triple_count": 8,
+      "braid_relation_passed": 8,
+      "relations": {
+        "crossed_pair_order_for_mask_bits": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "subsets": 16,
+        "full_joint_then_inverse_exact_entire_relation": 16,
+        "full_joint_then_inverse_exact_old_x": 16,
+        "product_of_marginals_then_inverse_exact_old_x": 16,
+        "distinct_marginal_pairs": 10,
+        "marginal_pairs_that_uniquely_determine_old_x": 10,
+        "subsets_where_marginals_uniquely_determine_old_x": 16,
+        "best_possible_exact_old_x_count_from_marginals_uniform_subsets": 16,
+        "held_x_examples": [
+          {
+            "initial_x": 0,
+            "initial_y": [
+              0,
+              1
+            ],
+            "crossed_pairs": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "u_values": [
+              0,
+              1
+            ],
+            "v_values": [
+              1
+            ],
+            "joint_then_undo_x": [
+              0
+            ],
+            "marginals_then_undo_x": [
+              0
+            ]
+          },
+          {
+            "initial_x": 1,
+            "initial_y": [
+              0,
+              1
+            ],
+            "crossed_pairs": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "u_values": [
+              0,
+              1
+            ],
+            "v_values": [
+              0
+            ],
+            "joint_then_undo_x": [
+              1
+            ],
+            "marginals_then_undo_x": [
+              1
+            ]
+          }
+        ],
+        "held_x_examples_have_identical_marginals": false
+      },
+      "point_reader": {
+        "query_order": [
+          "stop_first_zero",
+          "undo_first_zero"
+        ],
+        "crossed_point_order": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "answers_in_point_order": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "stop_known_before_encoding": {
+          "points": 4,
+          "individual_answers": 4,
+          "signature_counts": [
+            {
+              "answers": [
+                0
+              ],
+              "points": 2
+            },
+            {
+              "answers": [
+                1
+              ],
+              "points": 2
+            }
+          ],
+          "distinct_signatures": 2,
+          "minimum_fixed_payload_bits_for_exactness": 1,
+          "one_bit_decoders_enumerated": 4,
+          "best_one_bit_complete_points": 4,
+          "decoder_attaining_complete_points": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "best_one_bit_individual_answers": 4,
+          "decoder_attaining_individual_answers": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        "undo_known_before_encoding": {
+          "points": 4,
+          "individual_answers": 4,
+          "signature_counts": [
+            {
+              "answers": [
+                0
+              ],
+              "points": 2
+            },
+            {
+              "answers": [
+                1
+              ],
+              "points": 2
+            }
+          ],
+          "distinct_signatures": 2,
+          "minimum_fixed_payload_bits_for_exactness": 1,
+          "one_bit_decoders_enumerated": 4,
+          "best_one_bit_complete_points": 4,
+          "decoder_attaining_complete_points": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "best_one_bit_individual_answers": 4,
+          "decoder_attaining_individual_answers": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        "choice_announced_after_encoding": {
+          "points": 4,
+          "individual_answers": 8,
+          "signature_counts": [
+            {
+              "answers": [
+                0,
+                0
+              ],
+              "points": 1
+            },
+            {
+              "answers": [
+                0,
+                1
+              ],
+              "points": 1
+            },
+            {
+              "answers": [
+                1,
+                0
+              ],
+              "points": 1
+            },
+            {
+              "answers": [
+                1,
+                1
+              ],
+              "points": 1
+            }
+          ],
+          "distinct_signatures": 4,
+          "minimum_fixed_payload_bits_for_exactness": 2,
+          "one_bit_decoders_enumerated": 16,
+          "best_one_bit_complete_points": 2,
+          "decoder_attaining_complete_points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "best_one_bit_individual_answers": 6,
+          "decoder_attaining_individual_answers": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "ternary-mixing": {
+      "points_restored": 9,
+      "triple_count": 27,
+      "braid_relation_passed": 27,
+      "relations": {
+        "crossed_pair_order_for_mask_bits": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "subsets": 512,
+        "full_joint_then_inverse_exact_entire_relation": 512,
+        "full_joint_then_inverse_exact_old_x": 512,
+        "product_of_marginals_then_inverse_exact_old_x": 371,
+        "distinct_marginal_pairs": 50,
+        "marginal_pairs_that_uniquely_determine_old_x": 34,
+        "subsets_where_marginals_uniquely_determine_old_x": 34,
+        "best_possible_exact_old_x_count_from_marginals_uniform_subsets": 371,
+        "held_x_examples": [
+          {
+            "initial_x": 0,
+            "initial_y": [
+              0,
+              1,
+              2
+            ],
+            "crossed_pairs": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "u_values": [
+              0,
+              1,
+              2
+            ],
+            "v_values": [
+              0,
+              1,
+              2
+            ],
+            "joint_then_undo_x": [
+              0
+            ],
+            "marginals_then_undo_x": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "initial_x": 1,
+            "initial_y": [
+              0,
+              1,
+              2
+            ],
+            "crossed_pairs": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ]
+            ],
+            "u_values": [
+              0,
+              1,
+              2
+            ],
+            "v_values": [
+              0,
+              1,
+              2
+            ],
+            "joint_then_undo_x": [
+              1
+            ],
+            "marginals_then_undo_x": [
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "held_x_examples_have_identical_marginals": true
+      },
+      "point_reader": {
+        "query_order": [
+          "stop_first_zero",
+          "undo_first_zero"
+        ],
+        "crossed_point_order": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "answers_in_point_order": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "stop_known_before_encoding": {
+          "points": 9,
+          "individual_answers": 9,
+          "signature_counts": [
+            {
+              "answers": [
+                0
+              ],
+              "points": 6
+            },
+            {
+              "answers": [
+                1
+              ],
+              "points": 3
+            }
+          ],
+          "distinct_signatures": 2,
+          "minimum_fixed_payload_bits_for_exactness": 1,
+          "one_bit_decoders_enumerated": 4,
+          "best_one_bit_complete_points": 9,
+          "decoder_attaining_complete_points": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "best_one_bit_individual_answers": 9,
+          "decoder_attaining_individual_answers": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        "undo_known_before_encoding": {
+          "points": 9,
+          "individual_answers": 9,
+          "signature_counts": [
+            {
+              "answers": [
+                0
+              ],
+              "points": 6
+            },
+            {
+              "answers": [
+                1
+              ],
+              "points": 3
+            }
+          ],
+          "distinct_signatures": 2,
+          "minimum_fixed_payload_bits_for_exactness": 1,
+          "one_bit_decoders_enumerated": 4,
+          "best_one_bit_complete_points": 9,
+          "decoder_attaining_complete_points": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "best_one_bit_individual_answers": 9,
+          "decoder_attaining_individual_answers": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ]
+        },
+        "choice_announced_after_encoding": {
+          "points": 9,
+          "individual_answers": 18,
+          "signature_counts": [
+            {
+              "answers": [
+                0,
+                0
+              ],
+              "points": 4
+            },
+            {
+              "answers": [
+                0,
+                1
+              ],
+              "points": 2
+            },
+            {
+              "answers": [
+                1,
+                0
+              ],
+              "points": 2
+            },
+            {
+              "answers": [
+                1,
+                1
+              ],
+              "points": 1
+            }
+          ],
+          "distinct_signatures": 4,
+          "minimum_fixed_payload_bits_for_exactness": 2,
+          "one_bit_decoders_enumerated": 16,
+          "best_one_bit_complete_points": 6,
+          "decoder_attaining_complete_points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "best_one_bit_individual_answers": 15,
+          "decoder_attaining_individual_answers": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/job.py": "7385a461ccd9144dd9e2dff919dfdc06c358340c0e4434b93f4d91ab66a34fc9",
+    "experiments/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/contract.json": "553498c2c7260729b021e3b3306c32031020f5afef29f9a5bb5c0be418aaafda",
+    "artifacts/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/results.jsonl": "bf5dd35aefe6425083b7516455cffb621997b25b28cb5f200cedc895dca77541",
+    "research/STRAND-RETURN-20261114-001/verify.py": "6186c426fd93237667dc9f87de1c5cfcb3993bb7adab4fe35ef37fb85fcebe55",
+    "research/STRAND-RETURN-20261114-001/braid_design.md": "eaf39431ac9257912d2fe2be84bc43af598493fe04d4a92878174a98672c2de3",
+    "research/STRAND-RETURN-20261114-001/plot_pairs.py": "a3a58748db6837539eeed245b93f8a89791ae552cd18b1890bdd40b0d2e7474c",
+    "artifacts/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/independent.json": "c6f4a25a561709a3c2ad63ec61a0f396f3bf0e2200a9ba95a2e101db75cfa70f",
+    "artifacts/STRAND-RETURN-20261114-001/STRAND-RETURN-20261114-001-E002_braid_readers/allowed_pairs.png": "075df5326de2549e8c0537c9e7df67db0695236b033ee42c32482cc30d63d513"
+  }
+}

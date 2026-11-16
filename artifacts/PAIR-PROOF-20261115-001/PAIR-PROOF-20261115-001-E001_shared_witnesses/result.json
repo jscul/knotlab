@@ -1,0 +1,219 @@
+{
+  "coverage": {
+    "broken": {
+      "any_three_of_four": 1920,
+      "edits": 36,
+      "eligible": 2100,
+      "fresh": 2099,
+      "minimum_full_tests": 445,
+      "same_three": 1818
+    },
+    "surviving": {
+      "any_three_of_four": 1996,
+      "edits": 36,
+      "eligible": 2100,
+      "fresh": 2064,
+      "minimum_full_tests": 504,
+      "same_three": 1875
+    }
+  },
+  "decision": "train",
+  "failures": [],
+  "panels": {
+    "broken": {
+      "best_fixed_advice_pooled": {
+        "blocks": 16,
+        "candidate_median_ms": 321.0391555,
+        "control_median_ms": 330.0115155,
+        "median_gap_ms": 8.97236,
+        "median_paired_ms": 11.953693999999999,
+        "paired_ms": [
+          39.832161,
+          -0.264479,
+          51.83306,
+          -19.456547,
+          -5.918475,
+          2.1149,
+          46.398109,
+          -50.05371,
+          4.811621,
+          -17.33508,
+          48.026781,
+          -43.314159,
+          40.479759,
+          71.339263,
+          19.095767,
+          56.020887
+        ],
+        "wins": 10
+      },
+      "compact_phase_floor": {
+        "alternative_verification_ms": 5.4726055,
+        "free_selection_and_alternatives_median_ms": 322.1829845,
+        "removable_fraction": 0.04008786539236424,
+        "scope": "Phase subtraction for same returned programs. Grants even chosen-group selection for free. Not an executable solver.",
+        "selection_ms": 8.333897499999999,
+        "whole_verification_ms": 46.000949000000006
+      },
+      "initial_best_advice": "ideal-partial-low",
+      "initial_best_contrast": {
+        "blocks": 8,
+        "candidate_median_ms": 320.3612535,
+        "control_median_ms": 325.893237,
+        "median_gap_ms": 5.5319835,
+        "median_paired_ms": 7.363245,
+        "paired_ms": [
+          52.169265,
+          24.718688,
+          43.735361,
+          -40.707925,
+          9.452137,
+          5.274353,
+          -13.026931,
+          -19.729742
+        ],
+        "wins": 5
+      },
+      "initial_best_deployable": "ordinary",
+      "initial_best_including_abstention": "ideal-partial-low",
+      "paid_headroom": true,
+      "repeat_best_deployable": "no-proof",
+      "repeat_contrasts": {
+        "ideal-partial-low": {
+          "blocks": 8,
+          "candidate_median_ms": 326.0276265,
+          "control_median_ms": 334.296665,
+          "median_gap_ms": 8.2690385,
+          "median_paired_ms": 29.787762999999998,
+          "paired_ms": [
+            4.811621,
+            -17.33508,
+            48.026781,
+            -43.314159,
+            40.479759,
+            71.339263,
+            19.095767,
+            56.020887
+          ],
+          "wins": 6
+        },
+        "ideal-routed": {
+          "blocks": 8,
+          "candidate_median_ms": 316.7406115,
+          "control_median_ms": 334.296665,
+          "median_gap_ms": 17.5560535,
+          "median_paired_ms": 26.194553,
+          "paired_ms": [
+            26.980444,
+            -19.630518,
+            48.763571,
+            12.437986,
+            51.981071,
+            76.547765,
+            20.665272,
+            25.408662
+          ],
+          "wins": 7
+        }
+      }
+    },
+    "mixed": {
+      "best_fixed_advice_pooled": {
+        "blocks": 16,
+        "candidate_median_ms": 407.8233355,
+        "control_median_ms": 405.4399925,
+        "median_gap_ms": -2.383343,
+        "median_paired_ms": 4.1007715000000005,
+        "paired_ms": [
+          19.153968,
+          14.793328,
+          2.039848,
+          -10.775256,
+          6.161695,
+          32.274115,
+          49.203747,
+          -52.650796,
+          -8.123714,
+          11.316952,
+          41.665949,
+          -97.9291,
+          -41.559093,
+          -13.13716,
+          17.95207,
+          -32.947223
+        ],
+        "wins": 9
+      },
+      "compact_phase_floor": {
+        "alternative_verification_ms": 5.084685500000001,
+        "free_selection_and_alternatives_median_ms": 385.5226735,
+        "removable_fraction": 0.043495479165498105,
+        "scope": "Phase subtraction for same returned programs. Grants even chosen-group selection for free. Not an executable solver.",
+        "selection_ms": 12.5089515,
+        "whole_verification_ms": 92.435226
+      },
+      "initial_best_advice": "ideal-full",
+      "initial_best_contrast": {
+        "blocks": 8,
+        "candidate_median_ms": 392.021712,
+        "control_median_ms": 402.921606,
+        "median_gap_ms": 10.899894,
+        "median_paired_ms": 4.999506,
+        "paired_ms": [
+          40.36532,
+          13.463652,
+          -31.651767,
+          -56.152722,
+          36.691434,
+          5.374645,
+          4.624367,
+          -10.562478
+        ],
+        "wins": 5
+      },
+      "initial_best_deployable": "compact",
+      "initial_best_including_abstention": "ideal-full",
+      "paid_headroom": false,
+      "repeat_best_deployable": "ordinary",
+      "repeat_contrasts": {
+        "ideal-full": {
+          "blocks": 8,
+          "candidate_median_ms": 415.53052,
+          "control_median_ms": 401.725941,
+          "median_gap_ms": -13.804579,
+          "median_paired_ms": -10.630437,
+          "paired_ms": [
+            -8.123714,
+            11.316952,
+            41.665949,
+            -97.9291,
+            -41.559093,
+            -13.13716,
+            17.95207,
+            -32.947223
+          ],
+          "wins": 3
+        },
+        "ideal-routed": {
+          "blocks": 8,
+          "candidate_median_ms": 447.790503,
+          "control_median_ms": 401.725941,
+          "median_gap_ms": -46.064562,
+          "median_paired_ms": -17.642456,
+          "paired_ms": [
+            -3.80574,
+            -19.71096,
+            56.629787,
+            -85.672086,
+            -76.762035,
+            -15.573952,
+            -57.585746,
+            -10.083046
+          ],
+          "wins": 1
+        }
+      }
+    }
+  },
+  "train_gate": true
+}

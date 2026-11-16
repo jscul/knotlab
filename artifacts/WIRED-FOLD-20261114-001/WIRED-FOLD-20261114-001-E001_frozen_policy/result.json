@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "artifact_id": "WIRED-FOLD-20261114-001-E001",
+  "ticket": "WIRED-FOLD-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Exploratory run complete",
+  "report": "research/WIRED-FOLD-20261114-001/frozen_policy.md",
+  "contract": "experiments/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/contract.json",
+  "checkpoint_sha256": "090696cb712774da428f525cbd410ec92629120e15ade284ac069c063797aedf",
+  "scores": {
+    "frozen": {
+      "correct": 54144,
+      "answers": 55296,
+      "payload_bits": 39936,
+      "packets": 27648,
+      "accuracy": 0.9791666666666666,
+      "exact": false,
+      "mean_payload_bits": 1.4444444444444444
+    },
+    "forced_one": {
+      "correct": 50688,
+      "answers": 55296,
+      "payload_bits": 27648,
+      "packets": 27648,
+      "accuracy": 0.9166666666666666,
+      "exact": false,
+      "mean_payload_bits": 1.0
+    },
+    "forced_two": {
+      "correct": 55296,
+      "answers": 55296,
+      "payload_bits": 55296,
+      "packets": 27648,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 2.0
+    },
+    "hidden_wiring": {
+      "correct": 17280,
+      "answers": 55296,
+      "payload_bits": 39936,
+      "packets": 27648,
+      "accuracy": 0.3125,
+      "exact": false,
+      "mean_payload_bits": 1.4444444444444444
+    },
+    "static_AB": {
+      "correct": 40564,
+      "answers": 55296,
+      "payload_bits": 39936,
+      "packets": 27648,
+      "accuracy": 0.7335792824074074,
+      "exact": false,
+      "mean_payload_bits": 1.4444444444444444
+    }
+  },
+  "menus": [
+    {
+      "menu": [
+        1,
+        1
+      ],
+      "width": 1,
+      "physical_lengths": [
+        1
+      ],
+      "correct": 6144,
+      "answers": 6144,
+      "payload_bits": 3072,
+      "packets": 3072,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 1.0
+    },
+    {
+      "menu": [
+        1,
+        2
+      ],
+      "width": 2,
+      "physical_lengths": [
+        2
+      ],
+      "correct": 6144,
+      "answers": 6144,
+      "payload_bits": 6144,
+      "packets": 3072,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 2.0
+    },
+    {
+      "menu": [
+        1,
+        3
+      ],
+      "width": 2,
+      "physical_lengths": [
+        2
+      ],
+      "correct": 6144,
+      "answers": 6144,
+      "payload_bits": 6144,
+      "packets": 3072,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 2.0
+    },
+    {
+      "menu": [
+        2,
+        1
+      ],
+      "width": 2,
+      "physical_lengths": [
+        2
+      ],
+      "correct": 6144,
+      "answers": 6144,
+      "payload_bits": 6144,
+      "packets": 3072,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 2.0
+    },
+    {
+      "menu": [
+        2,
+        2
+      ],
+      "width": 1,
+      "physical_lengths": [
+        1
+      ],
+      "correct": 6144,
+      "answers": 6144,
+      "payload_bits": 3072,
+      "packets": 3072,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 1.0
+    },
+    {
+      "menu": [
+        2,
+        3
+      ],
+      "width": 1,
+      "physical_lengths": [
+        1
+      ],
+      "correct": 5568,
+      "answers": 6144,
+      "payload_bits": 3072,
+      "packets": 3072,
+      "accuracy": 0.90625,
+      "exact": false,
+      "mean_payload_bits": 1.0
+    },
+    {
+      "menu": [
+        3,
+        1
+      ],
+      "width": 2,
+      "physical_lengths": [
+        2
+      ],
+      "correct": 6144,
+      "answers": 6144,
+      "payload_bits": 6144,
+      "packets": 3072,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 2.0
+    },
+    {
+      "menu": [
+        3,
+        2
+      ],
+      "width": 1,
+      "physical_lengths": [
+        1
+      ],
+      "correct": 5568,
+      "answers": 6144,
+      "payload_bits": 3072,
+      "packets": 3072,
+      "accuracy": 0.90625,
+      "exact": false,
+      "mean_payload_bits": 1.0
+    },
+    {
+      "menu": [
+        3,
+        3
+      ],
+      "width": 1,
+      "physical_lengths": [
+        1
+      ],
+      "correct": 6144,
+      "answers": 6144,
+      "payload_bits": 3072,
+      "packets": 3072,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 1.0
+    }
+  ],
+  "strata": {
+    "world_train_pair_train_menu_train": {
+      "correct": 14336,
+      "answers": 14336,
+      "payload_bits": 11264,
+      "packets": 7168,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 1.5714285714285714
+    },
+    "world_train_pair_train_menu_held": {
+      "correct": 3712,
+      "answers": 4096,
+      "payload_bits": 2048,
+      "packets": 2048,
+      "accuracy": 0.90625,
+      "exact": false,
+      "mean_payload_bits": 1.0
+    },
+    "world_train_pair_held_menu_train": {
+      "correct": 7168,
+      "answers": 7168,
+      "payload_bits": 5632,
+      "packets": 3584,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 1.5714285714285714
+    },
+    "world_train_pair_held_menu_held": {
+      "correct": 1856,
+      "answers": 2048,
+      "payload_bits": 1024,
+      "packets": 1024,
+      "accuracy": 0.90625,
+      "exact": false,
+      "mean_payload_bits": 1.0
+    },
+    "world_held_pair_train_menu_train": {
+      "correct": 14336,
+      "answers": 14336,
+      "payload_bits": 11264,
+      "packets": 7168,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 1.5714285714285714
+    },
+    "world_held_pair_train_menu_held": {
+      "correct": 3712,
+      "answers": 4096,
+      "payload_bits": 2048,
+      "packets": 2048,
+      "accuracy": 0.90625,
+      "exact": false,
+      "mean_payload_bits": 1.0
+    },
+    "world_held_pair_held_menu_train": {
+      "correct": 7168,
+      "answers": 7168,
+      "payload_bits": 5632,
+      "packets": 3584,
+      "accuracy": 1.0,
+      "exact": true,
+      "mean_payload_bits": 1.5714285714285714
+    },
+    "world_held_pair_held_menu_held": {
+      "correct": 1856,
+      "answers": 2048,
+      "payload_bits": 1024,
+      "packets": 1024,
+      "accuracy": 0.90625,
+      "exact": false,
+      "mean_payload_bits": 1.0
+    }
+  },
+  "matched_rewiring": {
+    "changed_cells": 21276,
+    "unchanged_cells": 47844,
+    "correct_new_on_changed": 20823,
+    "stale_correct_on_changed": 453,
+    "prediction_changed_on_changed": 20370,
+    "prediction_changed_on_unchanged": 906,
+    "first_changed_case": {
+      "world": 5,
+      "old_pair": [
+        0,
+        1
+      ],
+      "new_pair": [
+        0,
+        2
+      ],
+      "mask": 1,
+      "answers": [
+        1,
+        0
+      ],
+      "predictions": [
+        1,
+        0
+      ]
+    }
+  },
+  "source_sha256": {
+    "experiments/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/job.py": "531db14a61674e2f3970dc2298f6f4130f67bfd54c8bf49ff1d37603750aa0b7",
+    "experiments/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/contract.json": "1b05fe16c9817efac861f6b55a6866d794010c37cc3cdfbf1875914981dd10b1",
+    "artifacts/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/results.jsonl": "a69781f7e059c4cdd14e73a85a47e8b98763370162973160582f136f1170fdbc",
+    "artifacts/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/checkpoint.json": "090696cb712774da428f525cbd410ec92629120e15ade284ac069c063797aedf",
+    "artifacts/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/independent.json": "10a1cd6149cd5de6a4ebbc175986b9eaa1025da8fcf3544a1d3d33ac783be587",
+    "artifacts/WIRED-FOLD-20261114-001/WIRED-FOLD-20261114-001-E001_frozen_policy/replay.json": "9bfaffad30ab1fd66a82bac5b13826d47036d1e240acafeb4f9dfaf59813ef45",
+    "research/WIRED-FOLD-20261114-001/independent.py": "b30fe513b9c37679d38340d791b5b6db34f3860483f61c38eb11588f975092a4"
+  }
+}

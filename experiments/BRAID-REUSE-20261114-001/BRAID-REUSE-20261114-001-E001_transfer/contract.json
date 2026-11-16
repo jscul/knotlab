@@ -1,0 +1,13 @@
+{
+  "schema_version": 1, "artifact_id": "BRAID-REUSE-20261114-001-E001", "ticket": "BRAID-REUSE-20261114-001", "kind": "experiment", "branch": "training", "status": "Frozen", "evidence_stage": "exploratory",
+  "question": "Does an optional frozen crossing reduce candidate search or fully expanded primitive compute on a new three-trit predicate?",
+  "inputs": "One frozen forward sequence a740b9a93061a75b78ce24a135b5adc94ca55a0206872c7b69e97117837f4246. Three ternary input registers using the prior legal encodings; terminal z-zero read for all equal or all distinct.",
+  "forbidden_inputs": "Held-out answers, target witnesses and intermediate labels in training; inverse as a macro, forced use of the crossing, per-seed retuning, uncharged macro calls, or outcome-dependent runs.",
+  "mapping": "One reward-guided mutation search, run with raw guarded flips and with the same raw flips plus an optional call. Five common-randomness paired seed blocks, identical raw initial populations, target, split and proposal cap.",
+  "primary_observable": "Final held-out scores, first training-perfect and first retrospectively validated solution, right-censored counts, fully expanded primitive cost, marginal acquisition cost, and any defensible amortization threshold.",
+  "comparators_or_controls": "Primitive-only, independent elementary program witnesses, all 27 new inputs, raw instruction replay, physical call expansion, source cost replay, paired accounting.",
+  "resource_budget": "196640 proposals per arm per seed on seeds 17,29,43,59,71. Same 36 expanded-guarded-action horizon. One serial shared-runner unit.",
+  "first_executable_signal": "A training-perfect result can transfer or fail on the nine withheld triples; a shorter search in candidates can still cost more expanded logic.",
+  "stop_rule": "Exhaust the frozen budget in both arms. Count censoring; do not change targets or sample further seeds to obtain a favorable contrast.",
+  "preregistration": "research/BRAID-REUSE-20261114-001/preregistration.md"
+}

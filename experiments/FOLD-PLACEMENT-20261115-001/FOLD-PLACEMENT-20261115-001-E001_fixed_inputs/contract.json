@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "FOLD-PLACEMENT-20261115-001-E001",
+  "ticket": "FOLD-PLACEMENT-20261115-001",
+  "kind": "experiment",
+  "branch": "code_analysis",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "At nine essential inputs and four ternary operations, does locating one group of inputs save time through the return of fully verified programs? Can blind repeated grouping capture any saving on new labelled rules?",
+  "inputs": "A complete nine-input truth table. In informed arms also the three sorted zero-based identifiers of one innermost source group. The fold-enabled arms receive the eight-row function (a AND b) XOR c, up to pin naming. The named and inlined entries both use six NAND gates.",
+  "forbidden_inputs": "Source tree, local operation, role order, local or intermediate answers, a second grouping, pair membership, depth, generator identity, recurrence labels, previous-arm caches or timing decisions.",
+  "outputs": "One executable physical NAND program over the original inputs or a charged failure. Return verification, timing, search and placement counters, cache use and counts of template calls with computed operands.",
+  "mapping": "Compare direct cached synthesis and searching unordered groups for a one-bit functional decomposition. Given a group, derive its truth function and residual from the public truth table. Substitute the computed program wherever its result is used. A named and a fully inlined variant receive the same unlocated template and grouping opportunities.",
+  "primary_observable": "Time through a verified return for the entire balanced, mixed 48-rule stream on this host, including setup and unsuccessful search. Pair method repeats, corroborate with process CPU time, count all failed placements, and independently replay the returned NAND circuits on all 512 rows.",
+  "comparators_or_controls": "Strong original cached primitive solver, primitive direct and repeated grouping, matched named and inlined template in both strategies. Cross each strategy with blind vs one group supplied. Hold number of essential inputs, primitive gates, AND/XOR inventory and F-site count before the one-site edit fixed across depths.",
+  "resource_budget": "Eight matched pairs at each of depths 2, 3 and 4. Thirteen method streams, five warm-cache timing repeats and three cold-cache repeats. One sequential CPU worker; each stream limited to 120 seconds and 1 GiB. Auxiliary auditing is outside paid method cost.",
+  "first_executable_signal": "Finish and physically check the first nine-input stream without changing the preselected panel or order. Inspect completion and run all declared cells unless a correctness or runtime failure invalidates them.",
+  "stop_rule": "Use the prespecified threshold in preregistration.md on the mixed stream, with duplicate structures accounted for and the fastest eligible primitive comparator. A blind gain earns the separate paid selection study. A purely hinted gain diagnoses placement and only earns a bounded fixed-width check. If neither gain appears, stop before eight-candidate training or scaling.",
+  "nonclaims": "Exact results for read-once Boolean synthesis on a small controlled workload at one fixed width. A supplied group is diagnostic information. Structural height refers only to four-copy representations under the stated operation. No complexity, real AI research, or recursive improvement claim."
+}

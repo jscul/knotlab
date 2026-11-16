@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "artifact_id": "BIT-DECODER-20261114-001-E001",
+  "ticket": "BIT-DECODER-20261114-001",
+  "kind": "experiment",
+  "branch": "training",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "question": "Can sender and atomic receiver learn to omit a redundant bit, generalize to an unseen exactly-one wiring and retain the fourth bit under independence?",
+  "inputs": "Nine raw bits to sender; four public groups of signed incidence rows to both; physical bits and eventual question only to receiver.",
+  "forbidden_inputs": "Query names, true answer tables, omission labels, raw input or selected wire IDs in the receiver, hidden test-time optimization, refits on held wiring.",
+  "mapping": "Fit two pairs of public sender/decoder policies from terminal answers and length using elementary Boolean program search. Strict and varied training use the same search.",
+  "primary_observable": "Exhaustive full-answer accuracy and physical packet width versus independent answer-vector count on every held wiring.",
+  "comparators_or_controls": "Copy-only limit, strict any-only versus varied training, all port permutations, matched sign-count rewiring, fourth source substitution, input parity holdout, three-bit collision for independent answers.",
+  "resource_budget": "Two exploratory fits, six or 36 training wirings on 256 even tables. Test 168 held wirings on all 512 tables and four ports. CPU shared runner.",
+  "first_executable_signal": "A correct three-bit packet can service all four original questions if the decoder can compute the omitted answer.",
+  "stop_rule": "Run both declared checkpoints as frozen, preserve failed or nonminimal outputs and report finite scope.",
+  "preregistration": "research/BIT-DECODER-20261114-001/preregistration.md"
+}

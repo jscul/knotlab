@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "Matched nine-input recurring and broken rules at all three heights; one equally available anonymous group; cached primitive and grouping-matched inline controls.",
+  "completion_gate": "Replay all circuits on all 512 assignments and report within-arm and strongest-blind comparisons using the frozen thresholds and failed attempts.",
+  "dependencies": [
+    "FOLD-DEPTH-20261115-001",
+    "FOLD-DISCOVERY-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/FOLD-PLACEMENT-20261115-001/FOLD-PLACEMENT-20261115-001-E001_fixed_inputs/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/FOLD-PLACEMENT-20261115-001/FOLD-PLACEMENT-20261115-001-E001_fixed_inputs/result.json"
+    ],
+    "independent_audit": "artifacts/FOLD-PLACEMENT-20261115-001/FOLD-PLACEMENT-20261115-001-E001_fixed_inputs/audit.json",
+    "report": "research/FOLD-PLACEMENT-20261115-001/placement.md"
+  },
+  "id": "FOLD-PLACEMENT-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "At nine essential inputs and four equal ternary operations, compare blind and singly hinted placement, cached primitive search and an equivalent inlined library on mixed exact rules. Distinguish the effect of locating a group from the effect of naming its operation.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-DISCOVERY-20261115-001",
+  "schema_version": 1,
+  "status": "The hinted named arm passed the bounded placement test. Blind folds missed; a true triple cut work by 1,103 tests for primitives and the library alike. All 4,992 physical returns passed independent replay.",
+  "status_class": "supported",
+  "stop_rule": "Stop or follow the blind and diagnostic decision thresholds in the bound design; deeper work requires positive blind savings.",
+  "title": "Can a solver find where to combine computed answers at constant input width?"
+}

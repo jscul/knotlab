@@ -1,0 +1,1632 @@
+{
+  "study": "FOLD-DISCOVERY-20261115-001",
+  "verdict": "PASS",
+  "independence": "Training ranking, scalar AST/NAND programs, generic role schedule, all work counters and paid costs replayed independently; no producer fitter or evaluator called.",
+  "input_hashes": {
+    "design.json": "07ede3b582b3060789d5ce2e96f0ae5c606ed8ed37daa9448e47ea0c011e4316",
+    "gate-freeze.json": "0773c887f8a32910c9a1838f65df84f1a48996145e659e61bdbbf7512eed23d5",
+    "entry.json": "84cc4dd138ab485e69d60859a87094555963cd343b6cc9496538065be8b6ac59",
+    "candidates.json": "34c55b71481b918679c424adb2bf14b3771f80203bffa50ced80bcf8a5d18932",
+    "training.jsonl.gz": "9a5ace0d033e3613876f90845916330ce2e595a1cdf0efa0de3dd532ef1dd49c",
+    "results.jsonl": "4f1eaa02d56450757383bb805b4d7b33709f6698dd664837a8c9c72059960f84",
+    "result.json": "3c428e496537ca13cd1ac605ef6ba69fae4576a4db467000ff4dba8c596d17cd"
+  },
+  "audit_source_sha256": "6d1cc9d1bea5b89321cf3ff90348350caf251c7461d086617cdc476026dfffe8",
+  "stream_hashes": {
+    "warm-0-primitive.jsonl.gz": "db7550b0cb96ff9ed5038bb3421f93f6e7b6a7a39649a3f35eb1e7357b1f7ed8",
+    "warm-0-learned.jsonl.gz": "c6a0615af685d90f265d0c9eb0a22bacdc8ca9064186741ee3f4af30bc1c888c",
+    "warm-0-flat.jsonl.gz": "8cfd8024b7922be918df763d53eb720fa4eb1407fa21e9d4c3bcaa2d1880b914",
+    "warm-0-given.jsonl.gz": "44d68cec550162f12575beb9283072a2ee0c87d81fa970c864113e7992912da6",
+    "cold-0-learned.jsonl.gz": "835a3119eb8bf49c44d08a7a97fa8b61d8057e3c079aed1c5c801eb4b9db795e",
+    "cold-0-flat.jsonl.gz": "0023fbb206b21e8e14b8f7092ef54caf4c2f3e749c173c3e0e4377a84ea289cc",
+    "cold-0-given.jsonl.gz": "83528778de2953fd5544c1c2f103e46318581b1d615bb3b5c3f8793c7e761836",
+    "cold-0-primitive.jsonl.gz": "e85fd283fe9fde86c2b9dfcd92d44c78310d99741cdf44af5a7272d7318280e9",
+    "cold-1-flat.jsonl.gz": "6e5546b2ea1bd2298d8fb58e588c79f810f3368021b6db67915b3e06cb4d15b4",
+    "cold-1-given.jsonl.gz": "15f05e0326320b9a138ec9028a91becae22c1eb02afca959398dbf0ef9b36592",
+    "cold-1-primitive.jsonl.gz": "634aaaaa69a8027e0eccabfe07734600966db27792d8b3f521763dceec8733de",
+    "cold-1-learned.jsonl.gz": "063124a0cede09d221a05b0f91f3ddf4b8a534e5663c7fa55467e2fc3ab6911c",
+    "warm-1-learned.jsonl.gz": "c97d15e85ba841f4455555899a45121d6b6f749195d097c466b4c0f6f113f0e2",
+    "warm-1-flat.jsonl.gz": "957d02f11fbcc17fb92d2dddbb8ec3b70e21094c891517f662b55f957a57f0de",
+    "warm-1-given.jsonl.gz": "5d72254e69bfdedf6e6129b9d2d9e7ae998121a49d53333c2872335154f84f19",
+    "warm-1-primitive.jsonl.gz": "180bbfd1fda5806f99c52d6699bac9d136909ef0d18f9a268d173819b4ece260",
+    "warm-2-flat.jsonl.gz": "53baead5b79b3aff2b86c7b5d7ff8c7a97d7e443acf827acbe06ac17821b0363",
+    "warm-2-given.jsonl.gz": "9a04537c61577539c1f75b090efdd8a3dcfbe3827ab54ea889ffa8e09ccf267b",
+    "warm-2-primitive.jsonl.gz": "4edcef0bf50a2e07f8c17288268825d8eb2d922912430a014350ea1bdef77164",
+    "warm-2-learned.jsonl.gz": "9d79133fe0e70fb075f466efee13f4fcccf87bd37afe218bf8bb25d8effa8c14",
+    "cold-2-given.jsonl.gz": "0fe991b387d58c01bd694e668c8c48bc1967fbd0c2323d0d7c765e7e288a154d",
+    "cold-2-primitive.jsonl.gz": "1261b5bcbe287e58247f55214e6ff69085a03e6afdc69b817d40d23a19b41273",
+    "cold-2-learned.jsonl.gz": "cc916e582920b9a0ef98842633969f6d6fb3021fac294926e1e548d4109371fb",
+    "cold-2-flat.jsonl.gz": "e1345ee9ef5c0cc30256484684c50ab025b38a0f2f4751c4ed70eca6e5b7eec6",
+    "cold-3-primitive.jsonl.gz": "cf69fb4be107b94403487e339b0e952a4611896c2d5d7564a3ee2432489591a8",
+    "cold-3-learned.jsonl.gz": "60dbe9ec00ee42e00880b23ee3391cce62d03a16eaccfa5097dee7b0601f682b",
+    "cold-3-flat.jsonl.gz": "09e382872682ce22ca8d76a559f9cb75e0ea11d5c30af5fffab527db355cc59a",
+    "cold-3-given.jsonl.gz": "d8d515e8e5a364eb7720ea00d9cd8eb7d80bdb6a05d389d4bd67cd252baebbcf",
+    "warm-3-given.jsonl.gz": "ef92a3c7ed889f7ff3b5e2c22d6bb733d7e71fb92c4ede359120bf859ba23098",
+    "warm-3-primitive.jsonl.gz": "6bd6621a9be2bd9fd46af71344f536b8ed8d7c14f91037a231606d4ff9d93ca0",
+    "warm-3-learned.jsonl.gz": "1aa987816c1a696b228aad63719c6cb4fc8ca1e705d254e9fb91a027d283995c",
+    "warm-3-flat.jsonl.gz": "83022fc6d91f99d250e6977b5eef8227dd01577f32bba94c2068fa8d661e9716",
+    "warm-4-primitive.jsonl.gz": "9636b9651b4868323bdde9cf3978c0128283661d810af2eac98ff089711b586b",
+    "warm-4-learned.jsonl.gz": "0656d9acdf3709fabd50226bb6698d19ef1c0ac4776f806bf0d0402c08396c8f",
+    "warm-4-flat.jsonl.gz": "f24091c7ada9317098c430e55523608c323b7c62a4be56155b84c206ee667e4c",
+    "warm-4-given.jsonl.gz": "51b2d0fc64402ca531160702e39066bdf816129b090385f030096dc09fea5e06",
+    "cold-4-learned.jsonl.gz": "bfb095a9124ce6f5e1efd20c2943686f789075d37bf20668792368e265388bfe",
+    "cold-4-flat.jsonl.gz": "cb370de2668374ec2a2b9ac5edc32dc438ea6b178dcb4c45860e8e6885837b05",
+    "cold-4-given.jsonl.gz": "e19b8d1411f3a86ae18226d0d73cb257e6d646408b262c1bd83fbd1d4d31f746",
+    "cold-4-primitive.jsonl.gz": "60f47af8c93dd0ce334ede1fc8fc6fbe502b1ee45b7afa7fe818e523e9b921ef"
+  },
+  "ranking": [
+    {
+      "truth": 40,
+      "distinct_tasks": 19,
+      "occurrences": 25,
+      "nand_gates": 6,
+      "selected": true
+    },
+    {
+      "truth": 106,
+      "distinct_tasks": 18,
+      "occurrences": 33,
+      "nand_gates": 6,
+      "selected": false
+    },
+    {
+      "truth": 168,
+      "distinct_tasks": 8,
+      "occurrences": 9,
+      "nand_gates": 5,
+      "selected": false
+    },
+    {
+      "truth": 30,
+      "distinct_tasks": 7,
+      "occurrences": 10,
+      "nand_gates": 7,
+      "selected": false
+    },
+    {
+      "truth": 190,
+      "distinct_tasks": 6,
+      "occurrences": 8,
+      "nand_gates": 7,
+      "selected": false
+    },
+    {
+      "truth": 128,
+      "distinct_tasks": 4,
+      "occurrences": 4,
+      "nand_gates": 4,
+      "selected": false
+    },
+    {
+      "truth": 234,
+      "distinct_tasks": 3,
+      "occurrences": 5,
+      "nand_gates": 5,
+      "selected": false
+    },
+    {
+      "truth": 150,
+      "distinct_tasks": 2,
+      "occurrences": 2,
+      "nand_gates": 8,
+      "selected": false
+    }
+  ],
+  "extraction": {
+    "anonymous_pairs": 96,
+    "all_frontiers_disjoint_and_nonempty": true,
+    "all_candidate_circuits_and_accounting_match": true,
+    "explicit_source_F_tasks": 18,
+    "explicit_source_R_tasks": 5,
+    "simplest_equivalent_description": "Count each ordered adjacent primitive-operator pair across distinct programs; the nine pairs have nine different three-hole semantic classes."
+  },
+  "separation": {
+    "training_arity": [
+      4,
+      6,
+      8
+    ],
+    "held_arity": [
+      5,
+      7,
+      9
+    ],
+    "distinct_training_structures": 24,
+    "distinct_held_structures": 10,
+    "complete_reserved_subtrees_in_training": 0,
+    "complete_reserved_shapes_in_prior_panel": 0,
+    "negative_given_F_tree_exceptions": []
+  },
+  "physical": {
+    "training_programs": 24,
+    "held_programs": 960,
+    "training_scalar_input_rows": 2688,
+    "held_scalar_input_rows": 215040,
+    "held_scalar_NAND_evaluations": 5016320,
+    "chosen_entry_rows": 8,
+    "learned_inline_equal_NAND_dependency_pairs": 240,
+    "learned_inline_different_emission_orders": 30
+  },
+  "acquisition": {
+    "accepted_training_programs": 24,
+    "candidates_sha256": "34c55b71481b918679c424adb2bf14b3771f80203bffa50ced80bcf8a5d18932",
+    "certificate_and_export_ns": 203261,
+    "cpu_ns": 30916348,
+    "design_sha256": "07ede3b582b3060789d5ce2e96f0ae5c606ed8ed37daa9448e47ea0c011e4316",
+    "entry_sha256": "84cc4dd138ab485e69d60859a87094555963cd343b6cc9496538065be8b6ac59",
+    "export_validation_scalar_nands": 48,
+    "failed_training_tasks": 0,
+    "fit_ns": 1471901,
+    "frozen_utc": "2026-11-15T19:21:56Z",
+    "training_log_sha256": "9a5ace0d033e3613876f90845916330ce2e595a1cdf0efa0de3dd532ef1dd49c",
+    "training_solve_and_setup_ns": 29245958,
+    "training_tasks": 24,
+    "wall_ns": 30921120
+  },
+  "totals": {
+    "warm": {
+      "primitive": {
+        "exact": 24,
+        "tests": 1279,
+        "failed_trials": 1191,
+        "cofactor_bit_reads": 61602,
+        "template_uses": 0,
+        "physical_nands": 439,
+        "verified_rows": 5376,
+        "search_cpu_ns": 10776005,
+        "search_wall_ns": 10794124,
+        "build_ns": 358731,
+        "verify_ns": 1956443,
+        "wall_ns": 14828091,
+        "acquisition_ns": 0,
+        "total_paid_ns": 21514865,
+        "downstream_ns": 21514865,
+        "run_paid_ns": [
+          21514865,
+          23355170,
+          21016903,
+          21628782,
+          21093724
+        ],
+        "startup_ns": 6307190,
+        "vs_primitive": {
+          "first_break_even": 1,
+          "end_gap_ns": 0,
+          "minimum_gap_ns": 0,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          }
+        ]
+      },
+      "learned": {
+        "exact": 24,
+        "tests": 4013,
+        "failed_trials": 3939,
+        "cofactor_bit_reads": 205193,
+        "template_uses": 19,
+        "physical_nands": 439,
+        "verified_rows": 5376,
+        "search_cpu_ns": 16647660,
+        "search_wall_ns": 16665669,
+        "build_ns": 398741,
+        "verify_ns": 1979275,
+        "wall_ns": 21156889,
+        "acquisition_ns": 30921120,
+        "total_paid_ns": 63139420,
+        "downstream_ns": 32218300,
+        "run_paid_ns": [
+          66431710,
+          62813045,
+          63139420,
+          62710546,
+          65267981
+        ],
+        "startup_ns": 10981039,
+        "vs_primitive": {
+          "first_break_even": null,
+          "end_gap_ns": 41624555,
+          "minimum_gap_ns": 35616255,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": null,
+            "end_gap_ns": 44916845,
+            "minimum_gap_ns": 38707577,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 39457875,
+            "minimum_gap_ns": 33072340,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 42122517,
+            "minimum_gap_ns": 35594195,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 41081764,
+            "minimum_gap_ns": 34725297,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 44174257,
+            "minimum_gap_ns": 37981156,
+            "closest_prefix": 1,
+            "reversals": []
+          }
+        ]
+      },
+      "flat": {
+        "exact": 24,
+        "tests": 4013,
+        "failed_trials": 3939,
+        "cofactor_bit_reads": 205193,
+        "template_uses": 19,
+        "physical_nands": 439,
+        "verified_rows": 5376,
+        "search_cpu_ns": 17075097,
+        "search_wall_ns": 17096933,
+        "build_ns": 282812,
+        "verify_ns": 1976612,
+        "wall_ns": 21408901,
+        "acquisition_ns": 30921120,
+        "total_paid_ns": 63810056,
+        "downstream_ns": 32888936,
+        "run_paid_ns": [
+          68239692,
+          63490871,
+          63810056,
+          63303655,
+          64514478
+        ],
+        "startup_ns": 11481756,
+        "vs_primitive": {
+          "first_break_even": null,
+          "end_gap_ns": 42295191,
+          "minimum_gap_ns": 36140156,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": null,
+            "end_gap_ns": 46724827,
+            "minimum_gap_ns": 39670914,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 40135701,
+            "minimum_gap_ns": 33499934,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 42793153,
+            "minimum_gap_ns": 36358647,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 41674873,
+            "minimum_gap_ns": 34717550,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 43420754,
+            "minimum_gap_ns": 37090883,
+            "closest_prefix": 1,
+            "reversals": []
+          }
+        ]
+      },
+      "given": {
+        "exact": 24,
+        "tests": 1543,
+        "failed_trials": 1474,
+        "cofactor_bit_reads": 42314,
+        "template_uses": 60,
+        "physical_nands": 499,
+        "verified_rows": 5376,
+        "search_cpu_ns": 8615485,
+        "search_wall_ns": 8631336,
+        "build_ns": 387651,
+        "verify_ns": 2005633,
+        "wall_ns": 12878356,
+        "acquisition_ns": 0,
+        "total_paid_ns": 24783032,
+        "downstream_ns": 24783032,
+        "run_paid_ns": [
+          23569198,
+          24331057,
+          25218145,
+          31306058,
+          24783032
+        ],
+        "startup_ns": 11998897,
+        "vs_primitive": {
+          "first_break_even": 5,
+          "end_gap_ns": 3268167,
+          "minimum_gap_ns": -121611,
+          "closest_prefix": 9,
+          "reversals": [
+            10
+          ]
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": 5,
+            "end_gap_ns": 2054333,
+            "minimum_gap_ns": -1150040,
+            "closest_prefix": 9,
+            "reversals": [
+              10
+            ]
+          },
+          {
+            "first_break_even": 5,
+            "end_gap_ns": 975887,
+            "minimum_gap_ns": -3037493,
+            "closest_prefix": 6,
+            "reversals": [
+              10
+            ]
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 4201242,
+            "minimum_gap_ns": 456535,
+            "closest_prefix": 9,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 9677276,
+            "minimum_gap_ns": 3080109,
+            "closest_prefix": 5,
+            "reversals": []
+          },
+          {
+            "first_break_even": 5,
+            "end_gap_ns": 3689308,
+            "minimum_gap_ns": -96155,
+            "closest_prefix": 6,
+            "reversals": [
+              10
+            ]
+          }
+        ]
+      }
+    },
+    "cold": {
+      "primitive": {
+        "exact": 24,
+        "tests": 1454,
+        "failed_trials": 1330,
+        "cofactor_bit_reads": 62450,
+        "template_uses": 0,
+        "physical_nands": 439,
+        "verified_rows": 5376,
+        "search_cpu_ns": 14346598,
+        "search_wall_ns": 14367664,
+        "build_ns": 477659,
+        "verify_ns": 1985146,
+        "wall_ns": 22413639,
+        "acquisition_ns": 0,
+        "total_paid_ns": 29771922,
+        "downstream_ns": 29771922,
+        "run_paid_ns": [
+          30498912,
+          28788678,
+          30607872,
+          29253005,
+          29771922
+        ],
+        "startup_ns": 7471854,
+        "vs_primitive": {
+          "first_break_even": 1,
+          "end_gap_ns": 0,
+          "minimum_gap_ns": 0,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": 1,
+            "end_gap_ns": 0,
+            "minimum_gap_ns": 0,
+            "closest_prefix": 1,
+            "reversals": []
+          }
+        ]
+      },
+      "learned": {
+        "exact": 24,
+        "tests": 4267,
+        "failed_trials": 4162,
+        "cofactor_bit_reads": 214811,
+        "template_uses": 19,
+        "physical_nands": 439,
+        "verified_rows": 5376,
+        "search_cpu_ns": 22643838,
+        "search_wall_ns": 22675098,
+        "build_ns": 412197,
+        "verify_ns": 1992216,
+        "wall_ns": 32153648,
+        "acquisition_ns": 30921120,
+        "total_paid_ns": 74409272,
+        "downstream_ns": 43488152,
+        "run_paid_ns": [
+          74779394,
+          73997654,
+          73981920,
+          75150992,
+          74409272
+        ],
+        "startup_ns": 10937857,
+        "vs_primitive": {
+          "first_break_even": null,
+          "end_gap_ns": 44637350,
+          "minimum_gap_ns": 34395565,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": null,
+            "end_gap_ns": 44280482,
+            "minimum_gap_ns": 34128630,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 45208976,
+            "minimum_gap_ns": 35494840,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 43374048,
+            "minimum_gap_ns": 33562853,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 45897987,
+            "minimum_gap_ns": 37009348,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 44637350,
+            "minimum_gap_ns": 34394877,
+            "closest_prefix": 1,
+            "reversals": []
+          }
+        ]
+      },
+      "flat": {
+        "exact": 24,
+        "tests": 4267,
+        "failed_trials": 4162,
+        "cofactor_bit_reads": 214811,
+        "template_uses": 19,
+        "physical_nands": 439,
+        "verified_rows": 5376,
+        "search_cpu_ns": 22566081,
+        "search_wall_ns": 22590427,
+        "build_ns": 295899,
+        "verify_ns": 2001331,
+        "wall_ns": 31806440,
+        "acquisition_ns": 30921120,
+        "total_paid_ns": 74488419,
+        "downstream_ns": 43567299,
+        "run_paid_ns": [
+          74488419,
+          81765789,
+          75456924,
+          73251904,
+          73356998
+        ],
+        "startup_ns": 11760859,
+        "vs_primitive": {
+          "first_break_even": null,
+          "end_gap_ns": 44716497,
+          "minimum_gap_ns": 35192398,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": null,
+            "end_gap_ns": 43989507,
+            "minimum_gap_ns": 34788577,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 52977111,
+            "minimum_gap_ns": 39268363,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 44849052,
+            "minimum_gap_ns": 35310955,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 43998899,
+            "minimum_gap_ns": 35407854,
+            "closest_prefix": 1,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 43585076,
+            "minimum_gap_ns": 34155506,
+            "closest_prefix": 1,
+            "reversals": []
+          }
+        ]
+      },
+      "given": {
+        "exact": 24,
+        "tests": 1600,
+        "failed_trials": 1516,
+        "cofactor_bit_reads": 43892,
+        "template_uses": 60,
+        "physical_nands": 499,
+        "verified_rows": 5376,
+        "search_cpu_ns": 4811265,
+        "search_wall_ns": 4827352,
+        "build_ns": 374190,
+        "verify_ns": 2128721,
+        "wall_ns": 17660624,
+        "acquisition_ns": 0,
+        "total_paid_ns": 29976250,
+        "downstream_ns": 29976250,
+        "run_paid_ns": [
+          33007530,
+          34556036,
+          28178584,
+          29638792,
+          29976250
+        ],
+        "startup_ns": 12434926,
+        "vs_primitive": {
+          "first_break_even": 4,
+          "end_gap_ns": 204328,
+          "minimum_gap_ns": -731074,
+          "closest_prefix": 4,
+          "reversals": [
+            9
+          ]
+        },
+        "paired_repeat_crossings": [
+          {
+            "first_break_even": null,
+            "end_gap_ns": 2508618,
+            "minimum_gap_ns": 1328524,
+            "closest_prefix": 4,
+            "reversals": []
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 5767358,
+            "minimum_gap_ns": 3648948,
+            "closest_prefix": 4,
+            "reversals": []
+          },
+          {
+            "first_break_even": 4,
+            "end_gap_ns": -2429288,
+            "minimum_gap_ns": -3338257,
+            "closest_prefix": 4,
+            "reversals": [
+              10
+            ]
+          },
+          {
+            "first_break_even": null,
+            "end_gap_ns": 385787,
+            "minimum_gap_ns": 385787,
+            "closest_prefix": 24,
+            "reversals": []
+          },
+          {
+            "first_break_even": 4,
+            "end_gap_ns": 204328,
+            "minimum_gap_ns": -731074,
+            "closest_prefix": 4,
+            "reversals": [
+              9
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "depth_groups": {
+    "warm": {
+      "2-positive": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 64,
+          "failed_trials": 57,
+          "cofactor_bit_reads": 506,
+          "template_uses": 0,
+          "physical_nands": 48,
+          "verified_rows": 128,
+          "search_cpu_ns": 191315,
+          "search_wall_ns": 193013,
+          "build_ns": 35180,
+          "verify_ns": 40717,
+          "wall_ns": 425659
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 220,
+          "failed_trials": 213,
+          "cofactor_bit_reads": 1470,
+          "template_uses": 0,
+          "physical_nands": 48,
+          "verified_rows": 128,
+          "search_cpu_ns": 319591,
+          "search_wall_ns": 321504,
+          "build_ns": 51510,
+          "verify_ns": 38511,
+          "wall_ns": 638840
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 220,
+          "failed_trials": 213,
+          "cofactor_bit_reads": 1470,
+          "template_uses": 0,
+          "physical_nands": 48,
+          "verified_rows": 128,
+          "search_cpu_ns": 319349,
+          "search_wall_ns": 320905,
+          "build_ns": 36154,
+          "verify_ns": 38647,
+          "wall_ns": 609307
+        },
+        "given": {
+          "exact": 4,
+          "tests": 58,
+          "failed_trials": 51,
+          "cofactor_bit_reads": 736,
+          "template_uses": 8,
+          "physical_nands": 56,
+          "verified_rows": 128,
+          "search_cpu_ns": 156909,
+          "search_wall_ns": 158910,
+          "build_ns": 48815,
+          "verify_ns": 38229,
+          "wall_ns": 449604
+        }
+      },
+      "2-negative": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 86,
+          "failed_trials": 78,
+          "cofactor_bit_reads": 602,
+          "template_uses": 0,
+          "physical_nands": 52,
+          "verified_rows": 128,
+          "search_cpu_ns": 4874175,
+          "search_wall_ns": 4877423,
+          "build_ns": 112110,
+          "verify_ns": 43327,
+          "wall_ns": 5175738
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 260,
+          "failed_trials": 252,
+          "cofactor_bit_reads": 852,
+          "template_uses": 0,
+          "physical_nands": 52,
+          "verified_rows": 128,
+          "search_cpu_ns": 252576,
+          "search_wall_ns": 254123,
+          "build_ns": 51742,
+          "verify_ns": 39341,
+          "wall_ns": 471545
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 260,
+          "failed_trials": 252,
+          "cofactor_bit_reads": 852,
+          "template_uses": 0,
+          "physical_nands": 52,
+          "verified_rows": 128,
+          "search_cpu_ns": 251614,
+          "search_wall_ns": 253547,
+          "build_ns": 36318,
+          "verify_ns": 38764,
+          "wall_ns": 456397
+        },
+        "given": {
+          "exact": 4,
+          "tests": 99,
+          "failed_trials": 92,
+          "cofactor_bit_reads": 888,
+          "template_uses": 4,
+          "physical_nands": 56,
+          "verified_rows": 128,
+          "search_cpu_ns": 165395,
+          "search_wall_ns": 166784,
+          "build_ns": 53006,
+          "verify_ns": 38585,
+          "wall_ns": 380091
+        }
+      },
+      "3-positive": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 168,
+          "failed_trials": 149,
+          "cofactor_bit_reads": 4316,
+          "template_uses": 0,
+          "physical_nands": 72,
+          "verified_rows": 512,
+          "search_cpu_ns": 652956,
+          "search_wall_ns": 655929,
+          "build_ns": 53921,
+          "verify_ns": 150993,
+          "wall_ns": 1193304
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 458,
+          "failed_trials": 445,
+          "cofactor_bit_reads": 13769,
+          "template_uses": 8,
+          "physical_nands": 72,
+          "verified_rows": 512,
+          "search_cpu_ns": 962451,
+          "search_wall_ns": 964808,
+          "build_ns": 65955,
+          "verify_ns": 148308,
+          "wall_ns": 1589316
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 458,
+          "failed_trials": 445,
+          "cofactor_bit_reads": 13769,
+          "template_uses": 8,
+          "physical_nands": 72,
+          "verified_rows": 512,
+          "search_cpu_ns": 991731,
+          "search_wall_ns": 995327,
+          "build_ns": 45900,
+          "verify_ns": 151213,
+          "wall_ns": 1588550
+        },
+        "given": {
+          "exact": 4,
+          "tests": 237,
+          "failed_trials": 227,
+          "cofactor_bit_reads": 4647,
+          "template_uses": 12,
+          "physical_nands": 84,
+          "verified_rows": 512,
+          "search_cpu_ns": 476049,
+          "search_wall_ns": 478646,
+          "build_ns": 60838,
+          "verify_ns": 148936,
+          "wall_ns": 1078911
+        }
+      },
+      "3-negative": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 214,
+          "failed_trials": 197,
+          "cofactor_bit_reads": 4696,
+          "template_uses": 0,
+          "physical_nands": 73,
+          "verified_rows": 512,
+          "search_cpu_ns": 590368,
+          "search_wall_ns": 593251,
+          "build_ns": 45617,
+          "verify_ns": 148019,
+          "wall_ns": 977812
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 500,
+          "failed_trials": 487,
+          "cofactor_bit_reads": 12185,
+          "template_uses": 7,
+          "physical_nands": 73,
+          "verified_rows": 512,
+          "search_cpu_ns": 943028,
+          "search_wall_ns": 945398,
+          "build_ns": 64479,
+          "verify_ns": 150063,
+          "wall_ns": 1352137
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 500,
+          "failed_trials": 487,
+          "cofactor_bit_reads": 12185,
+          "template_uses": 7,
+          "physical_nands": 73,
+          "verified_rows": 512,
+          "search_cpu_ns": 964137,
+          "search_wall_ns": 966475,
+          "build_ns": 44068,
+          "verify_ns": 149281,
+          "wall_ns": 1333972
+        },
+        "given": {
+          "exact": 4,
+          "tests": 398,
+          "failed_trials": 386,
+          "cofactor_bit_reads": 4942,
+          "template_uses": 8,
+          "physical_nands": 81,
+          "verified_rows": 512,
+          "search_cpu_ns": 748183,
+          "search_wall_ns": 751269,
+          "build_ns": 66444,
+          "verify_ns": 150223,
+          "wall_ns": 1149844
+        }
+      },
+      "4-positive": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 389,
+          "failed_trials": 373,
+          "cofactor_bit_reads": 26802,
+          "template_uses": 0,
+          "physical_nands": 96,
+          "verified_rows": 2048,
+          "search_cpu_ns": 1783540,
+          "search_wall_ns": 1786871,
+          "build_ns": 52175,
+          "verify_ns": 782827,
+          "wall_ns": 2922612
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 1257,
+          "failed_trials": 1243,
+          "cofactor_bit_reads": 94987,
+          "template_uses": 2,
+          "physical_nands": 96,
+          "verified_rows": 2048,
+          "search_cpu_ns": 4508407,
+          "search_wall_ns": 4519292,
+          "build_ns": 78328,
+          "verify_ns": 795555,
+          "wall_ns": 5707015
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 1257,
+          "failed_trials": 1243,
+          "cofactor_bit_reads": 94987,
+          "template_uses": 2,
+          "physical_nands": 96,
+          "verified_rows": 2048,
+          "search_cpu_ns": 4551733,
+          "search_wall_ns": 4557937,
+          "build_ns": 55185,
+          "verify_ns": 798993,
+          "wall_ns": 5724304
+        },
+        "given": {
+          "exact": 4,
+          "tests": 295,
+          "failed_trials": 280,
+          "cofactor_bit_reads": 16819,
+          "template_uses": 16,
+          "physical_nands": 112,
+          "verified_rows": 2048,
+          "search_cpu_ns": 5805611,
+          "search_wall_ns": 5809376,
+          "build_ns": 74703,
+          "verify_ns": 813095,
+          "wall_ns": 7032483
+        }
+      },
+      "4-negative": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 358,
+          "failed_trials": 337,
+          "cofactor_bit_reads": 24680,
+          "template_uses": 0,
+          "physical_nands": 98,
+          "verified_rows": 2048,
+          "search_cpu_ns": 2704314,
+          "search_wall_ns": 2712873,
+          "build_ns": 58489,
+          "verify_ns": 788173,
+          "wall_ns": 4190037
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 1318,
+          "failed_trials": 1299,
+          "cofactor_bit_reads": 81930,
+          "template_uses": 2,
+          "physical_nands": 98,
+          "verified_rows": 2048,
+          "search_cpu_ns": 9660633,
+          "search_wall_ns": 9669773,
+          "build_ns": 85952,
+          "verify_ns": 799225,
+          "wall_ns": 11408974
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 1318,
+          "failed_trials": 1299,
+          "cofactor_bit_reads": 81930,
+          "template_uses": 2,
+          "physical_nands": 98,
+          "verified_rows": 2048,
+          "search_cpu_ns": 9964613,
+          "search_wall_ns": 9995445,
+          "build_ns": 62696,
+          "verify_ns": 796090,
+          "wall_ns": 11690095
+        },
+        "given": {
+          "exact": 4,
+          "tests": 456,
+          "failed_trials": 438,
+          "cofactor_bit_reads": 14282,
+          "template_uses": 12,
+          "physical_nands": 110,
+          "verified_rows": 2048,
+          "search_cpu_ns": 1273353,
+          "search_wall_ns": 1276571,
+          "build_ns": 76269,
+          "verify_ns": 810508,
+          "wall_ns": 2833649
+        }
+      }
+    },
+    "cold": {
+      "2-positive": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 109,
+          "failed_trials": 97,
+          "cofactor_bit_reads": 748,
+          "template_uses": 0,
+          "physical_nands": 48,
+          "verified_rows": 128,
+          "search_cpu_ns": 4740538,
+          "search_wall_ns": 4745001,
+          "build_ns": 43719,
+          "verify_ns": 42000,
+          "wall_ns": 5148056
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 301,
+          "failed_trials": 289,
+          "cofactor_bit_reads": 1964,
+          "template_uses": 0,
+          "physical_nands": 48,
+          "verified_rows": 128,
+          "search_cpu_ns": 521259,
+          "search_wall_ns": 523466,
+          "build_ns": 52473,
+          "verify_ns": 39490,
+          "wall_ns": 1076160
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 301,
+          "failed_trials": 289,
+          "cofactor_bit_reads": 1964,
+          "template_uses": 0,
+          "physical_nands": 48,
+          "verified_rows": 128,
+          "search_cpu_ns": 535777,
+          "search_wall_ns": 537511,
+          "build_ns": 35804,
+          "verify_ns": 39581,
+          "wall_ns": 1046004
+        },
+        "given": {
+          "exact": 4,
+          "tests": 61,
+          "failed_trials": 53,
+          "cofactor_bit_reads": 760,
+          "template_uses": 8,
+          "physical_nands": 56,
+          "verified_rows": 128,
+          "search_cpu_ns": 167432,
+          "search_wall_ns": 170076,
+          "build_ns": 50296,
+          "verify_ns": 38564,
+          "wall_ns": 662694
+        }
+      },
+      "2-negative": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 117,
+          "failed_trials": 101,
+          "cofactor_bit_reads": 748,
+          "template_uses": 0,
+          "physical_nands": 52,
+          "verified_rows": 128,
+          "search_cpu_ns": 372053,
+          "search_wall_ns": 375349,
+          "build_ns": 208937,
+          "verify_ns": 38551,
+          "wall_ns": 929704
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 309,
+          "failed_trials": 293,
+          "cofactor_bit_reads": 1068,
+          "template_uses": 0,
+          "physical_nands": 52,
+          "verified_rows": 128,
+          "search_cpu_ns": 447717,
+          "search_wall_ns": 449775,
+          "build_ns": 51606,
+          "verify_ns": 38991,
+          "wall_ns": 989450
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 309,
+          "failed_trials": 293,
+          "cofactor_bit_reads": 1068,
+          "template_uses": 0,
+          "physical_nands": 52,
+          "verified_rows": 128,
+          "search_cpu_ns": 445242,
+          "search_wall_ns": 448209,
+          "build_ns": 34624,
+          "verify_ns": 38186,
+          "wall_ns": 935544
+        },
+        "given": {
+          "exact": 4,
+          "tests": 132,
+          "failed_trials": 120,
+          "cofactor_bit_reads": 974,
+          "template_uses": 4,
+          "physical_nands": 56,
+          "verified_rows": 128,
+          "search_cpu_ns": 334299,
+          "search_wall_ns": 336788,
+          "build_ns": 50991,
+          "verify_ns": 47753,
+          "wall_ns": 5127264
+        }
+      },
+      "3-positive": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 186,
+          "failed_trials": 162,
+          "cofactor_bit_reads": 4380,
+          "template_uses": 0,
+          "physical_nands": 72,
+          "verified_rows": 512,
+          "search_cpu_ns": 780722,
+          "search_wall_ns": 784256,
+          "build_ns": 52672,
+          "verify_ns": 152830,
+          "wall_ns": 1600423
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 461,
+          "failed_trials": 445,
+          "cofactor_bit_reads": 14403,
+          "template_uses": 8,
+          "physical_nands": 72,
+          "verified_rows": 512,
+          "search_cpu_ns": 1175675,
+          "search_wall_ns": 1178434,
+          "build_ns": 65018,
+          "verify_ns": 149261,
+          "wall_ns": 2201089
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 461,
+          "failed_trials": 445,
+          "cofactor_bit_reads": 14403,
+          "template_uses": 8,
+          "physical_nands": 72,
+          "verified_rows": 512,
+          "search_cpu_ns": 1201447,
+          "search_wall_ns": 1204596,
+          "build_ns": 45680,
+          "verify_ns": 153509,
+          "wall_ns": 2175578
+        },
+        "given": {
+          "exact": 4,
+          "tests": 240,
+          "failed_trials": 228,
+          "cofactor_bit_reads": 4751,
+          "template_uses": 12,
+          "physical_nands": 84,
+          "verified_rows": 512,
+          "search_cpu_ns": 545480,
+          "search_wall_ns": 548851,
+          "build_ns": 65044,
+          "verify_ns": 150312,
+          "wall_ns": 1533821
+        }
+      },
+      "3-negative": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 232,
+          "failed_trials": 208,
+          "cofactor_bit_reads": 4756,
+          "template_uses": 0,
+          "physical_nands": 73,
+          "verified_rows": 512,
+          "search_cpu_ns": 824178,
+          "search_wall_ns": 826937,
+          "build_ns": 48360,
+          "verify_ns": 152165,
+          "wall_ns": 1656869
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 504,
+          "failed_trials": 487,
+          "cofactor_bit_reads": 14425,
+          "template_uses": 7,
+          "physical_nands": 73,
+          "verified_rows": 512,
+          "search_cpu_ns": 1143376,
+          "search_wall_ns": 1147173,
+          "build_ns": 63225,
+          "verify_ns": 151136,
+          "wall_ns": 2201086
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 504,
+          "failed_trials": 487,
+          "cofactor_bit_reads": 14425,
+          "template_uses": 7,
+          "physical_nands": 73,
+          "verified_rows": 512,
+          "search_cpu_ns": 1157698,
+          "search_wall_ns": 1160517,
+          "build_ns": 48373,
+          "verify_ns": 148684,
+          "wall_ns": 2139732
+        },
+        "given": {
+          "exact": 4,
+          "tests": 409,
+          "failed_trials": 393,
+          "cofactor_bit_reads": 5538,
+          "template_uses": 8,
+          "physical_nands": 81,
+          "verified_rows": 512,
+          "search_cpu_ns": 855118,
+          "search_wall_ns": 857315,
+          "build_ns": 62519,
+          "verify_ns": 148548,
+          "wall_ns": 1788659
+        }
+      },
+      "4-positive": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 426,
+          "failed_trials": 404,
+          "cofactor_bit_reads": 27002,
+          "template_uses": 0,
+          "physical_nands": 96,
+          "verified_rows": 2048,
+          "search_cpu_ns": 3919182,
+          "search_wall_ns": 3925591,
+          "build_ns": 59825,
+          "verify_ns": 785876,
+          "wall_ns": 6692557
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 1330,
+          "failed_trials": 1310,
+          "cofactor_bit_reads": 99455,
+          "template_uses": 2,
+          "physical_nands": 96,
+          "verified_rows": 2048,
+          "search_cpu_ns": 7819589,
+          "search_wall_ns": 7825681,
+          "build_ns": 84876,
+          "verify_ns": 803208,
+          "wall_ns": 10966153
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 1330,
+          "failed_trials": 1310,
+          "cofactor_bit_reads": 99455,
+          "template_uses": 2,
+          "physical_nands": 96,
+          "verified_rows": 2048,
+          "search_cpu_ns": 7798099,
+          "search_wall_ns": 7803817,
+          "build_ns": 65646,
+          "verify_ns": 813877,
+          "wall_ns": 10926285
+        },
+        "given": {
+          "exact": 4,
+          "tests": 297,
+          "failed_trials": 281,
+          "cofactor_bit_reads": 17227,
+          "template_uses": 16,
+          "physical_nands": 112,
+          "verified_rows": 2048,
+          "search_cpu_ns": 1476591,
+          "search_wall_ns": 1479533,
+          "build_ns": 70153,
+          "verify_ns": 808026,
+          "wall_ns": 4323634
+        }
+      },
+      "4-negative": {
+        "tasks": 4,
+        "primitive": {
+          "exact": 4,
+          "tests": 384,
+          "failed_trials": 358,
+          "cofactor_bit_reads": 24816,
+          "template_uses": 0,
+          "physical_nands": 98,
+          "verified_rows": 2048,
+          "search_cpu_ns": 3668274,
+          "search_wall_ns": 3672710,
+          "build_ns": 62955,
+          "verify_ns": 800078,
+          "wall_ns": 6379914
+        },
+        "learned": {
+          "exact": 4,
+          "tests": 1362,
+          "failed_trials": 1338,
+          "cofactor_bit_reads": 83496,
+          "template_uses": 2,
+          "physical_nands": 98,
+          "verified_rows": 2048,
+          "search_cpu_ns": 11587565,
+          "search_wall_ns": 11594641,
+          "build_ns": 92042,
+          "verify_ns": 804478,
+          "wall_ns": 14761804
+        },
+        "flat": {
+          "exact": 4,
+          "tests": 1362,
+          "failed_trials": 1338,
+          "cofactor_bit_reads": 83496,
+          "template_uses": 2,
+          "physical_nands": 98,
+          "verified_rows": 2048,
+          "search_cpu_ns": 11593520,
+          "search_wall_ns": 11599400,
+          "build_ns": 68084,
+          "verify_ns": 812933,
+          "wall_ns": 14667217
+        },
+        "given": {
+          "exact": 4,
+          "tests": 461,
+          "failed_trials": 441,
+          "cofactor_bit_reads": 14642,
+          "template_uses": 12,
+          "physical_nands": 110,
+          "verified_rows": 2048,
+          "search_cpu_ns": 1443950,
+          "search_wall_ns": 1447343,
+          "build_ns": 72303,
+          "verify_ns": 809448,
+          "wall_ns": 4120153
+        }
+      }
+    }
+  },
+  "all_prefix_comparisons": {
+    "warm": {
+      "primitive": {
+        "paid": {
+          "first_break_even": 1,
+          "end_gap_ns": 0,
+          "minimum_gap_ns": 0,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "marginal": {
+          "first_break_even": 1,
+          "end_gap_ns": 0,
+          "minimum_gap_ns": 0,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "initial_paid_gap_ns": 0,
+        "positive_prefixes_checked": 24
+      },
+      "learned": {
+        "paid": {
+          "first_break_even": null,
+          "end_gap_ns": 41624555,
+          "minimum_gap_ns": 35616255,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "marginal": {
+          "first_break_even": null,
+          "end_gap_ns": 10703435,
+          "minimum_gap_ns": 4695135,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "initial_paid_gap_ns": 35594969,
+        "positive_prefixes_checked": 24
+      },
+      "flat": {
+        "paid": {
+          "first_break_even": null,
+          "end_gap_ns": 42295191,
+          "minimum_gap_ns": 36140156,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "marginal": {
+          "first_break_even": null,
+          "end_gap_ns": 11374071,
+          "minimum_gap_ns": 5219036,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "initial_paid_gap_ns": 36095686,
+        "positive_prefixes_checked": 24
+      },
+      "given": {
+        "paid": {
+          "first_break_even": 5,
+          "end_gap_ns": 3268167,
+          "minimum_gap_ns": -121611,
+          "closest_prefix": 9,
+          "reversals": [
+            10
+          ]
+        },
+        "marginal": {
+          "first_break_even": 5,
+          "end_gap_ns": 3268167,
+          "minimum_gap_ns": -121611,
+          "closest_prefix": 9,
+          "reversals": [
+            10
+          ]
+        },
+        "initial_paid_gap_ns": 5691707,
+        "positive_prefixes_checked": 24
+      }
+    },
+    "cold": {
+      "primitive": {
+        "paid": {
+          "first_break_even": 1,
+          "end_gap_ns": 0,
+          "minimum_gap_ns": 0,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "marginal": {
+          "first_break_even": 1,
+          "end_gap_ns": 0,
+          "minimum_gap_ns": 0,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "initial_paid_gap_ns": 0,
+        "positive_prefixes_checked": 24
+      },
+      "learned": {
+        "paid": {
+          "first_break_even": null,
+          "end_gap_ns": 44637350,
+          "minimum_gap_ns": 34395565,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "marginal": {
+          "first_break_even": null,
+          "end_gap_ns": 13716230,
+          "minimum_gap_ns": 3474445,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "initial_paid_gap_ns": 34387123,
+        "positive_prefixes_checked": 24
+      },
+      "flat": {
+        "paid": {
+          "first_break_even": null,
+          "end_gap_ns": 44716497,
+          "minimum_gap_ns": 35192398,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "marginal": {
+          "first_break_even": null,
+          "end_gap_ns": 13795377,
+          "minimum_gap_ns": 4271278,
+          "closest_prefix": 1,
+          "reversals": []
+        },
+        "initial_paid_gap_ns": 35210125,
+        "positive_prefixes_checked": 24
+      },
+      "given": {
+        "paid": {
+          "first_break_even": 4,
+          "end_gap_ns": 204328,
+          "minimum_gap_ns": -731074,
+          "closest_prefix": 4,
+          "reversals": [
+            9
+          ]
+        },
+        "marginal": {
+          "first_break_even": 4,
+          "end_gap_ns": 204328,
+          "minimum_gap_ns": -731074,
+          "closest_prefix": 4,
+          "reversals": [
+            9
+          ]
+        },
+        "initial_paid_gap_ns": 4963072,
+        "positive_prefixes_checked": 24
+      }
+    }
+  },
+  "even_free_learned_deployment_shortfall_ns": 9406255,
+  "fixture_tests": {
+    "status": "pass",
+    "generic_programs": 108,
+    "raw_truths": 21,
+    "classes": 9,
+    "distinct_support_order_duplicates": true,
+    "role_order_invariant_under_all_six_renamings": true,
+    "overlapping_anonymous_operands_rejected": true
+  },
+  "interpretation": [
+    "The winning acquired class is AND of XOR (truth40), not supplied XOR of AND (class106). Distinct-task support outranks occurrence count.",
+    "Abstract boundary roles were selected from actual primitive solutions, without old fold state, task locations, held outcomes or private syntax entering the fitter.",
+    "This is frequency-based two-operator library induction under a designed training distribution; semantic canonicalization is equivalent here to counting adjacent operator pairs.",
+    "Held positive/negative labels refer to preservation/breaking of supplied F; they do not define whether the different acquired operator is usable locally.",
+    "Learned and flat share semantic search, NAND dependency expressions and gate counts. Independent argument programs can be emitted in different topological orders; naming adds no gate-count efficiency.",
+    "Full new acquisition, discarded candidates, entry validation/export, each deployment load, failed trials, build, all-row verification and return emission are charged.",
+    "Original ancestral fold acquisition is not operational input to this fresh primitive-to-library acquisition; the free-given arm is a separately labeled reference.",
+    "Paid and marginal timing, all depths/groups and both cache regimes are distinct. The finite workload gives no general learning or complexity result."
+  ],
+  "audit_elapsed_s": 3.4979654350318015,
+  "completed_utc": "2026-11-15T19:33:01.172127+00:00"
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "artifact_id": "BRAID-ACTIONS-20261114-001-E001",
+  "ticket": "BRAID-ACTIONS-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Exploratory training run complete",
+  "report": "research/BRAID-ACTIONS-20261114-001/braid_actions.md",
+  "contract": "experiments/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/contract.json",
+  "seconds": 0.47117400309070945,
+  "peak_rss_mb": 26.4384765625,
+  "checkpoint_sha256": "c1904a2f65dd0baa8e1a3ae51a2c2fb5c06290e30a91637617b3a9deab41f504",
+  "wiring": {
+    "menus": 606,
+    "queries": 2792448,
+    "correct": 2792448,
+    "strata": {
+      "train_menu_even": {
+        "queries": 359424,
+        "correct": 359424,
+        "packets": 39936,
+        "payload_bits": 78080
+      },
+      "train_menu_odd": {
+        "queries": 359424,
+        "correct": 359424,
+        "packets": 39936,
+        "payload_bits": 78080
+      },
+      "held_menu_even": {
+        "queries": 1036800,
+        "correct": 1036800,
+        "packets": 115200,
+        "payload_bits": 243712
+      },
+      "held_menu_odd": {
+        "queries": 1036800,
+        "correct": 1036800,
+        "packets": 115200,
+        "payload_bits": 243712
+      }
+    },
+    "widths": [
+      {
+        "sent": 1,
+        "minimum": 1,
+        "menus": 42
+      },
+      {
+        "sent": 2,
+        "minimum": 2,
+        "menus": 535
+      },
+      {
+        "sent": 3,
+        "minimum": 3,
+        "menus": 13
+      },
+      {
+        "sent": 4,
+        "minimum": 3,
+        "menus": 1
+      },
+      {
+        "sent": 4,
+        "minimum": 4,
+        "menus": 2
+      },
+      {
+        "sent": 5,
+        "minimum": 5,
+        "menus": 2
+      },
+      {
+        "sent": 6,
+        "minimum": 6,
+        "menus": 3
+      },
+      {
+        "sent": 7,
+        "minimum": 7,
+        "menus": 2
+      },
+      {
+        "sent": 8,
+        "minimum": 8,
+        "menus": 2
+      },
+      {
+        "sent": 9,
+        "minimum": 9,
+        "menus": 4
+      }
+    ]
+  },
+  "training": {
+    "candidate_gate_and_initial_choices_per_stage": 342,
+    "worlds": 256,
+    "menus": 156,
+    "queries": 359424,
+    "training_errors": 0,
+    "training_payload_bits": 78080,
+    "score_improvements": {
+      "aggregate": [
+        [
+          224640,
+          0
+        ],
+        [
+          134784,
+          0
+        ],
+        [
+          133380,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "reuse": [
+        [
+          0,
+          359424,
+          0
+        ],
+        [
+          0,
+          78080,
+          3
+        ]
+      ]
+    }
+  },
+  "four_strands": {
+    "counts": {
+      "round_trips": 11745,
+      "restored": 11745,
+      "braid_triples": 1944,
+      "braid_agreements": 1944
+    },
+    "rewiring_example": [
+      {
+        "start": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "AB": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "AC": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "word_lengths": [
+      2,
+      7
+    ]
+  },
+  "simplicity_control": {
+    "diagonal_and_fiber_type_only": 64,
+    "by_total_gate_count": {
+      "6": {
+        "candidates": 6,
+        "full_braids": 6
+      },
+      "10": {
+        "candidates": 6,
+        "full_braids": 0
+      },
+      "12": {
+        "candidates": 2,
+        "full_braids": 2
+      }
+    },
+    "tested_after_checkpoint_freeze": true
+  },
+  "full_table_recovery": {
+    "tables": 512,
+    "exact_identifications": 512,
+    "physical_lengths": [
+      9
+    ],
+    "full_unknown_table_classes": 512,
+    "minimum_fixed_bits": 9,
+    "truncated_four_bit_packets_rejected": 512,
+    "four_bit_baseline": {
+      "physical_bits": 4,
+      "exact_tables": 16,
+      "tables": 512,
+      "correct_cells": 3328,
+      "cell_queries": 4608
+    },
+    "unrestricted_four_bit_exact_identification_bound": [
+      16,
+      512
+    ],
+    "scope": "one precommitted packet; all nine delayed cell reads; public wiring supplied"
+  },
+  "replay": {
+    "primary_checkpoint_identical": true,
+    "primary_training_identical": true,
+    "guided_and_neutral_training_and_assessment_identical": true,
+    "independent_literal_packet_streams_matching": 606,
+    "independent_physical_packets_matching": 310272,
+    "primary_checkpoint_sha256": "c1904a2f65dd0baa8e1a3ae51a2c2fb5c06290e30a91637617b3a9deab41f504"
+  },
+  "files_sha256": {
+    "experiments/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/job.py": "4064668b90fe666465438f43038b4671af06913b16022cd56f442554e4c231ab",
+    "experiments/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/contract.json": "08bb5fcc949ee92dbca5b90a31b27bca6e001ea82ebd4fc7b6015a833c5107dc",
+    "research/BRAID-ACTIONS-20261114-001/preregistration.md": "7f58bdf5d0918bd45f3473257d7ba12837cf36c02f96ccc6fd1dd90ec100147b",
+    "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/results.jsonl": "4474c7288eaf830fecdbefea40ecc0bee1990cb7c018c6446b6a9d3c47def182",
+    "experiments/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/actions.py": "6dde978d68e59fef1ffbda711bd8a97ae39623d546a1da232fa683ad546ed688",
+    "experiments/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/reader.py": "4d2194d97c9bb26f81ae3ec4fc0fb8bd1d46186b19a20918f40d8c8828c17d49",
+    "research/BRAID-ACTIONS-20261114-001/independent.py": "a82fb772e0c92be00c6bb8ed070a227fd7529a2d2ba735d6e1fc3ff396fdb85b",
+    "research/BRAID-ACTIONS-20261114-001/assessment.py": "8ef96623213b187ef3b20f0f6cf24cd2c52b38bed683abeeb69a019c39653b4b",
+    "research/BRAID-ACTIONS-20261114-001/replay.py": "5355cab98d824d72bac19784300f10436bd59983c20046a99a9ebb5de588dba6",
+    "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/checkpoint.json": "c1904a2f65dd0baa8e1a3ae51a2c2fb5c06290e30a91637617b3a9deab41f504",
+    "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/assessment.json": "1ed177f4cd814c3b29691fa42672d99e7ea2cf3699f21eac27e67367836b4ae9",
+    "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/independent.json": "24e041025b4bdff8858739d3eeacb77b84cb1f4e27625663c3d4f0ac04bf4ff4",
+    "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/replay.json": "235a4068659fc40511f8494a85766904cdf5aa650a697a9ef3d16bd96bcd21c7"
+  }
+}

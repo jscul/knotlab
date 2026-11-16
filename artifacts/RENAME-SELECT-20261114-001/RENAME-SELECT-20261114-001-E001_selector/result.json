@@ -1,0 +1,5255 @@
+{
+  "schema_version": 1,
+  "artifact_id": "RENAME-SELECT-20261114-001-E001",
+  "ticket": "RENAME-SELECT-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Completed mixed-symmetry task panel and independently timed certified returns",
+  "report": "research/RENAME-SELECT-20261114-001/selection.md",
+  "contract": "experiments/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/contract.json",
+  "raw_sha256": "52ef89f89868557c2a7c6004c29c763d9ad41b578fae41dc7d077c3d11d5de93",
+  "problem_controls": {
+    "point_mask_index": "9*x+3*y+z",
+    "renaming_order": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    "cyclic_successor": [
+      1,
+      2,
+      0
+    ],
+    "global_orbit_sizes": [
+      3,
+      6,
+      6,
+      6,
+      6
+    ],
+    "train": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "held": [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ],
+    "tasks": [
+      {
+        "id": "1ab7",
+        "definition": "The third is zero when the first two agree and takes the remaining label when they differ.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "stabilizer_order": 2,
+        "training_violations_in_renaming_order": [
+          0,
+          0,
+          2,
+          2,
+          2,
+          4
+        ],
+        "essential_inputs": [
+          "x",
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          28,
+          28,
+          36
+        ],
+        "primitive_witness": [
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ]
+        ],
+        "witness_flips": 16,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "4caf",
+        "definition": "The first and third values agree.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "stabilizer_order": 6,
+        "training_violations_in_renaming_order": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "essential_inputs": [
+          "x",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          36,
+          0,
+          36
+        ],
+        "primitive_witness": [
+          [
+            0,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            2
+          ]
+        ],
+        "witness_flips": 4,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "528f",
+        "definition": "The third copies the second when the first is zero and takes the cyclic successor of the second otherwise.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "stabilizer_order": 1,
+        "training_violations_in_renaming_order": [
+          0,
+          6,
+          0,
+          6,
+          6,
+          12
+        ],
+        "essential_inputs": [
+          "x",
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          24,
+          36,
+          36
+        ],
+        "primitive_witness": [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ]
+        ],
+        "witness_flips": 24,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "6d18",
+        "definition": "The first two values agree.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "stabilizer_order": 6,
+        "training_violations_in_renaming_order": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "essential_inputs": [
+          "x",
+          "y"
+        ],
+        "directed_changes_by_input": [
+          36,
+          36,
+          0
+        ],
+        "primitive_witness": [
+          [
+            0,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            1,
+            1
+          ]
+        ],
+        "witness_flips": 17,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "79c2",
+        "definition": "The third copies the first when the second is its cyclic successor and copies the second otherwise.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "stabilizer_order": 3,
+        "training_violations_in_renaming_order": [
+          0,
+          4,
+          4,
+          0,
+          0,
+          8
+        ],
+        "essential_inputs": [
+          "x",
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          24,
+          24,
+          36
+        ],
+        "primitive_witness": [
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ]
+        ],
+        "witness_flips": 24,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "a942",
+        "definition": "The last two values agree.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "stabilizer_order": 6,
+        "training_violations_in_renaming_order": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "essential_inputs": [
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          0,
+          36,
+          36
+        ],
+        "primitive_witness": [
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ]
+        ],
+        "witness_flips": 4,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "b037",
+        "definition": "The third counts how many of two tests hold, first value zero and second value one.",
+        "positive": 9,
+        "training_positive": 5,
+        "held_positive": 4,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "stabilizer_order": 1,
+        "training_violations_in_renaming_order": [
+          0,
+          2,
+          4,
+          3,
+          3,
+          10
+        ],
+        "essential_inputs": [
+          "x",
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          24,
+          24,
+          36
+        ],
+        "primitive_witness": [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ]
+        ],
+        "witness_flips": 20,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "c10e",
+        "definition": "The third equals the second when the first is zero and equals the first otherwise.",
+        "positive": 9,
+        "training_positive": 7,
+        "held_positive": 2,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "stabilizer_order": 2,
+        "training_violations_in_renaming_order": [
+          0,
+          0,
+          2,
+          3,
+          3,
+          6
+        ],
+        "essential_inputs": [
+          "x",
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          28,
+          12,
+          36
+        ],
+        "primitive_witness": [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ]
+        ],
+        "witness_flips": 32,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "e35a",
+        "definition": "The third copies the second when the first two agree and takes the cyclic successor of the second otherwise.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "stabilizer_order": 3,
+        "training_violations_in_renaming_order": [
+          0,
+          4,
+          4,
+          0,
+          0,
+          8
+        ],
+        "essential_inputs": [
+          "x",
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          24,
+          24,
+          36
+        ],
+        "primitive_witness": [
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ]
+        ],
+        "witness_flips": 24,
+        "distinct_witness_outputs": 27
+      },
+      {
+        "id": "f46b",
+        "definition": "Start with first-two equality, remove 111 and add 100.",
+        "positive": 9,
+        "training_positive": 6,
+        "held_positive": 3,
+        "full_stabilizer": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "stabilizer_order": 1,
+        "training_violations_in_renaming_order": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "essential_inputs": [
+          "x",
+          "y",
+          "z"
+        ],
+        "directed_changes_by_input": [
+          32,
+          32,
+          8
+        ],
+        "primitive_witness": [
+          [
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            1,
+            1
+          ]
+        ],
+        "witness_flips": 23,
+        "distinct_witness_outputs": 27
+      }
+    ],
+    "stabilizer_order_counts": {
+      "1": 3,
+      "2": 2,
+      "3": 2,
+      "6": 3
+    },
+    "witness_gate_fields": [
+      "control_register",
+      "control_value",
+      "target_register",
+      "swap_zero_with"
+    ],
+    "twin": {
+      "invariant_id": "6d18",
+      "sensitive_id": "f46b",
+      "same_ordered_observations": true,
+      "held_disagreements": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "paired_max_correct_from_identical_predictions": 16
+    }
+  },
+  "blind_overall": {
+    "episodes": 60,
+    "nonempty_bank": 60,
+    "oracle_available": 55,
+    "shortest": {
+      "exact": 27,
+      "held_correct_total": 430,
+      "held_seen_if_a_program_returned": 540,
+      "contrast_episodes": 55,
+      "mean_pair_win_fraction_per_eligible_episode": 0.6905919777513577,
+      "pooled_pair_wins": 73156688,
+      "pooled_eligible_pairs": 90891780
+    },
+    "fitted": {
+      "exact": 52,
+      "held_correct_total": 520,
+      "held_seen_if_a_program_returned": 540,
+      "contrast_episodes": 55,
+      "mean_pair_win_fraction_per_eligible_episode": 0.9295665437046019,
+      "pooled_pair_wins": 87961066,
+      "pooled_eligible_pairs": 90891780
+    },
+    "always": {
+      "exact": 36,
+      "held_correct_total": 460,
+      "held_seen_if_a_program_returned": 540,
+      "contrast_episodes": 55,
+      "mean_pair_win_fraction_per_eligible_episode": 0.8788752322510419,
+      "pooled_pair_wins": 86832953,
+      "pooled_eligible_pairs": 90891780
+    },
+    "paired_blind_exact": {
+      "fitted_only": 25,
+      "both_exact": 27,
+      "neither_exact": 8
+    }
+  },
+  "blind_by_task": {
+    "1ab7": {
+      "definition": "The third is zero when the first two agree and takes the remaining label when they differ.",
+      "true_group_size": 2,
+      "fitted_renamings_with_identity": 2,
+      "correct_inferred_group": true,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 2,
+        "held_correct_total": 38,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7283330566660791,
+        "pooled_pair_wins": 165941,
+        "pooled_eligible_pairs": 237479
+      },
+      "fitted": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 237479,
+        "pooled_eligible_pairs": 237479
+      },
+      "always": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 237479,
+        "pooled_eligible_pairs": 237479
+      },
+      "paired_blind_exact": {
+        "fitted_only": 4,
+        "both_exact": 2
+      }
+    },
+    "4caf": {
+      "definition": "The first and third values agree.",
+      "true_group_size": 6,
+      "fitted_renamings_with_identity": 6,
+      "correct_inferred_group": true,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.8227655348383746,
+        "pooled_pair_wins": 30370371,
+        "pooled_eligible_pairs": 36960861
+      },
+      "fitted": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 36960861,
+        "pooled_eligible_pairs": 36960861
+      },
+      "always": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 36960861,
+        "pooled_eligible_pairs": 36960861
+      },
+      "paired_blind_exact": {
+        "both_exact": 6
+      }
+    },
+    "528f": {
+      "definition": "The third copies the second when the first is zero and takes the cyclic successor of the second otherwise.",
+      "true_group_size": 1,
+      "fitted_renamings_with_identity": 1,
+      "correct_inferred_group": true,
+      "voted_cells": 0,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 5,
+        "held_correct_total": 48,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7067367362758943,
+        "pooled_pair_wins": 2394013,
+        "pooled_eligible_pairs": 3348012
+      },
+      "fitted": {
+        "exact": 5,
+        "held_correct_total": 48,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7067367362758943,
+        "pooled_pair_wins": 2394013,
+        "pooled_eligible_pairs": 3348012
+      },
+      "always": {
+        "exact": 0,
+        "held_correct_total": 22,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.36899072742584715,
+        "pooled_pair_wins": 1241751,
+        "pooled_eligible_pairs": 3348012
+      },
+      "paired_blind_exact": {
+        "both_exact": 5,
+        "neither_exact": 1
+      }
+    },
+    "6d18": {
+      "definition": "The first two values agree.",
+      "true_group_size": 6,
+      "fitted_renamings_with_identity": 6,
+      "correct_inferred_group": true,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 5,
+      "shortest": {
+        "exact": 0,
+        "held_correct_total": 34,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 5,
+        "mean_pair_win_fraction_per_eligible_episode": 0.5909525540929281,
+        "pooled_pair_wins": 3016168,
+        "pooled_eligible_pairs": 5390586
+      },
+      "fitted": {
+        "exact": 5,
+        "held_correct_total": 52,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 5,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 5390586,
+        "pooled_eligible_pairs": 5390586
+      },
+      "always": {
+        "exact": 5,
+        "held_correct_total": 52,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 5,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 5390586,
+        "pooled_eligible_pairs": 5390586
+      },
+      "paired_blind_exact": {
+        "neither_exact": 1,
+        "fitted_only": 5
+      }
+    },
+    "79c2": {
+      "definition": "The third copies the first when the second is its cyclic successor and copies the second otherwise.",
+      "true_group_size": 3,
+      "fitted_renamings_with_identity": 3,
+      "correct_inferred_group": true,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 0,
+        "held_correct_total": 38,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.5520141432265044,
+        "pooled_pair_wins": 166979,
+        "pooled_eligible_pairs": 339221
+      },
+      "fitted": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 339221,
+        "pooled_eligible_pairs": 339221
+      },
+      "always": {
+        "exact": 4,
+        "held_correct_total": 50,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.9511411509526069,
+        "pooled_pair_wins": 316685,
+        "pooled_eligible_pairs": 339221
+      },
+      "paired_blind_exact": {
+        "fitted_only": 6
+      }
+    },
+    "a942": {
+      "definition": "The last two values agree.",
+      "true_group_size": 6,
+      "fitted_renamings_with_identity": 6,
+      "correct_inferred_group": true,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.8269759037416103,
+        "pooled_pair_wins": 28812197,
+        "pooled_eligible_pairs": 34329692
+      },
+      "fitted": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 34329692,
+        "pooled_eligible_pairs": 34329692
+      },
+      "always": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 34329692,
+        "pooled_eligible_pairs": 34329692
+      },
+      "paired_blind_exact": {
+        "both_exact": 6
+      }
+    },
+    "b037": {
+      "definition": "The third counts how many of two tests hold, first value zero and second value one.",
+      "true_group_size": 1,
+      "fitted_renamings_with_identity": 1,
+      "correct_inferred_group": true,
+      "voted_cells": 0,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.8160624761260943,
+        "pooled_pair_wins": 8003994,
+        "pooled_eligible_pairs": 9859347
+      },
+      "fitted": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.8160624761260943,
+        "pooled_pair_wins": 8003994,
+        "pooled_eligible_pairs": 9859347
+      },
+      "always": {
+        "exact": 0,
+        "held_correct_total": 30,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.8099312059100627,
+        "pooled_pair_wins": 8059134,
+        "pooled_eligible_pairs": 9859347
+      },
+      "paired_blind_exact": {
+        "both_exact": 6
+      }
+    },
+    "c10e": {
+      "definition": "The third equals the second when the first is zero and equals the first otherwise.",
+      "true_group_size": 2,
+      "fitted_renamings_with_identity": 2,
+      "correct_inferred_group": true,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 1,
+        "held_correct_total": 42,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7015301947584502,
+        "pooled_pair_wins": 118109,
+        "pooled_eligible_pairs": 175111
+      },
+      "fitted": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 175111,
+        "pooled_eligible_pairs": 175111
+      },
+      "always": {
+        "exact": 5,
+        "held_correct_total": 52,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.9781770449152497,
+        "pooled_pair_wins": 171029,
+        "pooled_eligible_pairs": 175111
+      },
+      "paired_blind_exact": {
+        "fitted_only": 5,
+        "both_exact": 1
+      }
+    },
+    "e35a": {
+      "definition": "The third copies the second when the first two agree and takes the cyclic successor of the second otherwise.",
+      "true_group_size": 3,
+      "fitted_renamings_with_identity": 3,
+      "correct_inferred_group": true,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 6,
+      "shortest": {
+        "exact": 1,
+        "held_correct_total": 36,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.5254780541612134,
+        "pooled_pair_wins": 59438,
+        "pooled_eligible_pairs": 101058
+      },
+      "fitted": {
+        "exact": 6,
+        "held_correct_total": 54,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 101058,
+        "pooled_eligible_pairs": 101058
+      },
+      "always": {
+        "exact": 4,
+        "held_correct_total": 50,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 6,
+        "mean_pair_win_fraction_per_eligible_episode": 0.9498887282072559,
+        "pooled_pair_wins": 96685,
+        "pooled_eligible_pairs": 101058
+      },
+      "paired_blind_exact": {
+        "fitted_only": 5,
+        "both_exact": 1
+      }
+    },
+    "f46b": {
+      "definition": "Start with first-two equality, remove 111 and add 100.",
+      "true_group_size": 1,
+      "fitted_renamings_with_identity": 6,
+      "correct_inferred_group": false,
+      "voted_cells": 9,
+      "episodes": 6,
+      "nonempty_bank": 6,
+      "oracle_available": 2,
+      "shortest": {
+        "exact": 0,
+        "held_correct_total": 32,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 2,
+        "mean_pair_win_fraction_per_eligible_episode": 0.47420970354735537,
+        "pooled_pair_wins": 49478,
+        "pooled_eligible_pairs": 150413
+      },
+      "fitted": {
+        "exact": 0,
+        "held_correct_total": 42,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 2,
+        "mean_pair_win_fraction_per_eligible_episode": 0.494682314670586,
+        "pooled_pair_wins": 29051,
+        "pooled_eligible_pairs": 150413
+      },
+      "always": {
+        "exact": 0,
+        "held_correct_total": 42,
+        "held_seen_if_a_program_returned": 54,
+        "contrast_episodes": 2,
+        "mean_pair_win_fraction_per_eligible_episode": 0.494682314670586,
+        "pooled_pair_wins": 29051,
+        "pooled_eligible_pairs": 150413
+      },
+      "paired_blind_exact": {
+        "neither_exact": 6
+      }
+    }
+  },
+  "blind_by_language": {
+    "raw": {
+      "episodes": 30,
+      "nonempty_bank": 30,
+      "oracle_available": 27,
+      "shortest": {
+        "exact": 15,
+        "held_correct_total": 214,
+        "held_seen_if_a_program_returned": 270,
+        "contrast_episodes": 27,
+        "mean_pair_win_fraction_per_eligible_episode": 0.6904211174752899,
+        "pooled_pair_wins": 39645342,
+        "pooled_eligible_pairs": 47499531
+      },
+      "fitted": {
+        "exact": 26,
+        "held_correct_total": 262,
+        "held_seen_if_a_program_returned": 270,
+        "contrast_episodes": 27,
+        "mean_pair_win_fraction_per_eligible_episode": 0.936479347223542,
+        "pooled_pair_wins": 45813225,
+        "pooled_eligible_pairs": 47499531
+      },
+      "always": {
+        "exact": 19,
+        "held_correct_total": 232,
+        "held_seen_if_a_program_returned": 270,
+        "contrast_episodes": 27,
+        "mean_pair_win_fraction_per_eligible_episode": 0.8910888235543141,
+        "pooled_pair_wins": 45475636,
+        "pooled_eligible_pairs": 47499531
+      },
+      "paired_blind_exact": {
+        "fitted_only": 11,
+        "both_exact": 15,
+        "neither_exact": 4
+      }
+    },
+    "reuse": {
+      "episodes": 30,
+      "nonempty_bank": 30,
+      "oracle_available": 28,
+      "shortest": {
+        "exact": 12,
+        "held_correct_total": 216,
+        "held_seen_if_a_program_returned": 270,
+        "contrast_episodes": 28,
+        "mean_pair_win_fraction_per_eligible_episode": 0.6907567358747089,
+        "pooled_pair_wins": 33511346,
+        "pooled_eligible_pairs": 43392249
+      },
+      "fitted": {
+        "exact": 26,
+        "held_correct_total": 258,
+        "held_seen_if_a_program_returned": 270,
+        "contrast_episodes": 28,
+        "mean_pair_win_fraction_per_eligible_episode": 0.922900626025624,
+        "pooled_pair_wins": 42147841,
+        "pooled_eligible_pairs": 43392249
+      },
+      "always": {
+        "exact": 17,
+        "held_correct_total": 228,
+        "held_seen_if_a_program_returned": 270,
+        "contrast_episodes": 28,
+        "mean_pair_win_fraction_per_eligible_episode": 0.8670978406371723,
+        "pooled_pair_wins": 41357317,
+        "pooled_eligible_pairs": 43392249
+      },
+      "paired_blind_exact": {
+        "fitted_only": 14,
+        "both_exact": 12,
+        "neither_exact": 4
+      }
+    }
+  },
+  "blind_by_group_order": {
+    "1": {
+      "episodes": 18,
+      "nonempty_bank": 18,
+      "oracle_available": 14,
+      "shortest": {
+        "exact": 11,
+        "held_correct_total": 134,
+        "held_seen_if_a_program_returned": 162,
+        "contrast_episodes": 14,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7203724772504745,
+        "pooled_pair_wins": 10447485,
+        "pooled_eligible_pairs": 13357772
+      },
+      "fitted": {
+        "exact": 11,
+        "held_correct_total": 144,
+        "held_seen_if_a_program_returned": 162,
+        "contrast_episodes": 14,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7232971359823646,
+        "pooled_pair_wins": 10427058,
+        "pooled_eligible_pairs": 13357772
+      },
+      "always": {
+        "exact": 0,
+        "held_correct_total": 94,
+        "held_seen_if_a_program_returned": 162,
+        "contrast_episodes": 14,
+        "mean_pair_win_fraction_per_eligible_episode": 0.5759211592397594,
+        "pooled_pair_wins": 9329936,
+        "pooled_eligible_pairs": 13357772
+      },
+      "paired_blind_exact": {
+        "both_exact": 11,
+        "neither_exact": 7
+      }
+    },
+    "2": {
+      "episodes": 12,
+      "nonempty_bank": 12,
+      "oracle_available": 12,
+      "shortest": {
+        "exact": 3,
+        "held_correct_total": 80,
+        "held_seen_if_a_program_returned": 108,
+        "contrast_episodes": 12,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7149316257122647,
+        "pooled_pair_wins": 284050,
+        "pooled_eligible_pairs": 412590
+      },
+      "fitted": {
+        "exact": 12,
+        "held_correct_total": 108,
+        "held_seen_if_a_program_returned": 108,
+        "contrast_episodes": 12,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 412590,
+        "pooled_eligible_pairs": 412590
+      },
+      "always": {
+        "exact": 11,
+        "held_correct_total": 106,
+        "held_seen_if_a_program_returned": 108,
+        "contrast_episodes": 12,
+        "mean_pair_win_fraction_per_eligible_episode": 0.9890885224576248,
+        "pooled_pair_wins": 408508,
+        "pooled_eligible_pairs": 412590
+      },
+      "paired_blind_exact": {
+        "fitted_only": 9,
+        "both_exact": 3
+      }
+    },
+    "3": {
+      "episodes": 12,
+      "nonempty_bank": 12,
+      "oracle_available": 12,
+      "shortest": {
+        "exact": 1,
+        "held_correct_total": 74,
+        "held_seen_if_a_program_returned": 108,
+        "contrast_episodes": 12,
+        "mean_pair_win_fraction_per_eligible_episode": 0.5387460986938589,
+        "pooled_pair_wins": 226417,
+        "pooled_eligible_pairs": 440279
+      },
+      "fitted": {
+        "exact": 12,
+        "held_correct_total": 108,
+        "held_seen_if_a_program_returned": 108,
+        "contrast_episodes": 12,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 440279,
+        "pooled_eligible_pairs": 440279
+      },
+      "always": {
+        "exact": 8,
+        "held_correct_total": 100,
+        "held_seen_if_a_program_returned": 108,
+        "contrast_episodes": 12,
+        "mean_pair_win_fraction_per_eligible_episode": 0.9505149395799314,
+        "pooled_pair_wins": 413370,
+        "pooled_eligible_pairs": 440279
+      },
+      "paired_blind_exact": {
+        "fitted_only": 11,
+        "both_exact": 1
+      }
+    },
+    "6": {
+      "episodes": 18,
+      "nonempty_bank": 18,
+      "oracle_available": 17,
+      "shortest": {
+        "exact": 12,
+        "held_correct_total": 142,
+        "held_seen_if_a_program_returned": 162,
+        "contrast_episodes": 17,
+        "mean_pair_win_fraction_per_eligible_episode": 0.7560712589379147,
+        "pooled_pair_wins": 62198736,
+        "pooled_eligible_pairs": 76681139
+      },
+      "fitted": {
+        "exact": 17,
+        "held_correct_total": 160,
+        "held_seen_if_a_program_returned": 162,
+        "contrast_episodes": 17,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 76681139,
+        "pooled_eligible_pairs": 76681139
+      },
+      "always": {
+        "exact": 17,
+        "held_correct_total": 160,
+        "held_seen_if_a_program_returned": 162,
+        "contrast_episodes": 17,
+        "mean_pair_win_fraction_per_eligible_episode": 1.0,
+        "pooled_pair_wins": 76681139,
+        "pooled_eligible_pairs": 76681139
+      },
+      "paired_blind_exact": {
+        "both_exact": 12,
+        "neither_exact": 1,
+        "fitted_only": 5
+      }
+    }
+  },
+  "twins_identical_banks_choices_and_votes": 6,
+  "example": {
+    "id": "1ab7",
+    "seed": 101,
+    "language": "raw",
+    "shortest": {
+      "proposal": 40441,
+      "genome": "08393619233912",
+      "expanded_length": 7,
+      "macro_calls": 0
+    },
+    "fitted": {
+      "proposal": 22721,
+      "genome": "25201c0632390c153d",
+      "expanded_length": 9,
+      "macro_calls": 0
+    },
+    "scores": {
+      "shortest": 5,
+      "fitted": 9,
+      "always": 9
+    }
+  },
+  "certified_by_selector": {
+    "shortest": {
+      "raw": {
+        "episodes": 30,
+        "returns": 20,
+        "exhausted_without_return": 10,
+        "proposals": 664512,
+        "units": 664113281,
+        "units_per_correct_including_failures": 33205664.05,
+        "seconds_all": 5.0265526860021055,
+        "seconds_per_correct_including_failures": 0.2513276343001053,
+        "cost_components": {
+          "training_label_reads": 540,
+          "search_program_and_readout": 628194186,
+          "fitness_bit_operations": 35883648,
+          "fit_label_reads_and_comparisons": 0,
+          "rank_prediction_and_comparison": 0,
+          "certificate": 34907
+        },
+        "checker_actions": {
+          "fresh_truth_labels": 229,
+          "truth_reads": 703,
+          "answer_comparisons": 703
+        },
+        "certification_attempts": 213,
+        "crossing_used_in_returns": 0,
+        "failed_units": 500573813
+      },
+      "reuse": {
+        "episodes": 30,
+        "returns": 20,
+        "exhausted_without_return": 10,
+        "proposals": 573888,
+        "units": 863890241,
+        "units_per_correct_including_failures": 43194512.05,
+        "seconds_all": 4.695518356980756,
+        "seconds_per_correct_including_failures": 0.23477591784903779,
+        "cost_components": {
+          "training_label_reads": 540,
+          "search_program_and_readout": 832856490,
+          "fitness_bit_operations": 30989952,
+          "fit_label_reads_and_comparisons": 0,
+          "rank_prediction_and_comparison": 0,
+          "certificate": 43259
+        },
+        "checker_actions": {
+          "fresh_truth_labels": 223,
+          "truth_reads": 707,
+          "answer_comparisons": 707
+        },
+        "certification_attempts": 208,
+        "crossing_used_in_returns": 3,
+        "failed_units": 760796380
+      },
+      "same_successes": {
+        "raw": {
+          "episodes": 16,
+          "returns": 16,
+          "exhausted_without_return": 0,
+          "proposals": 86528,
+          "units": 84474156,
+          "units_per_correct_including_failures": 5279634.75,
+          "seconds_all": 0.6547473140526563,
+          "seconds_per_correct_including_failures": 0.04092170712829102,
+          "cost_components": {
+            "training_label_reads": 288,
+            "search_program_and_readout": 79792560,
+            "fitness_bit_operations": 4672512,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 8796
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 144,
+            "truth_reads": 197,
+            "answer_comparisons": 197
+          },
+          "certification_attempts": 39,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 16,
+          "returns": 16,
+          "exhausted_without_return": 0,
+          "proposals": 52736,
+          "units": 65285063,
+          "units_per_correct_including_failures": 4080316.4375,
+          "seconds_all": 0.40993483492638916,
+          "seconds_per_correct_including_failures": 0.025620927182899322,
+          "cost_components": {
+            "training_label_reads": 288,
+            "search_program_and_readout": 62429490,
+            "fitness_bit_operations": 2847744,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 7541
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 144,
+            "truth_reads": 163,
+            "answer_comparisons": 163
+          },
+          "certification_attempts": 27,
+          "crossing_used_in_returns": 1,
+          "failed_units": 0
+        }
+      },
+      "matched_outcomes": {
+        "both": 16,
+        "raw_only": 4,
+        "reuse_only": 4,
+        "neither": 6
+      },
+      "paired_reuse_cheaper_on_shared_successes": 4,
+      "amortized_reuse_units_per_return_lower_bound": 46879317.7,
+      "amortized_reuse_seconds_per_return": 0.2501850836968515
+    },
+    "fitted": {
+      "raw": {
+        "episodes": 30,
+        "returns": 26,
+        "exhausted_without_return": 4,
+        "proposals": 486336,
+        "units": 490620919,
+        "units_per_correct_including_failures": 18870035.346153848,
+        "seconds_all": 3.7290247741620988,
+        "seconds_per_correct_including_failures": 0.14342402977546534,
+        "cost_components": {
+          "training_label_reads": 540,
+          "search_program_and_readout": 460576980,
+          "fitness_bit_operations": 26262144,
+          "fit_label_reads_and_comparisons": 3744,
+          "rank_prediction_and_comparison": 3773502,
+          "certificate": 4009
+        },
+        "checker_actions": {
+          "fresh_truth_labels": 255,
+          "truth_reads": 645,
+          "answer_comparisons": 645
+        },
+        "certification_attempts": 152,
+        "crossing_used_in_returns": 0,
+        "failed_units": 207499545
+      },
+      "reuse": {
+        "episodes": 30,
+        "returns": 27,
+        "exhausted_without_return": 3,
+        "proposals": 457152,
+        "units": 698754924,
+        "units_per_correct_including_failures": 25879812.0,
+        "seconds_all": 3.8437975614797324,
+        "seconds_per_correct_including_failures": 0.1423628726473975,
+        "cost_components": {
+          "training_label_reads": 540,
+          "search_program_and_readout": 662111352,
+          "fitness_bit_operations": 24686208,
+          "fit_label_reads_and_comparisons": 3744,
+          "rank_prediction_and_comparison": 11948751,
+          "certificate": 4329
+        },
+        "checker_actions": {
+          "fresh_truth_labels": 255,
+          "truth_reads": 696,
+          "answer_comparisons": 696
+        },
+        "certification_attempts": 161,
+        "crossing_used_in_returns": 6,
+        "failed_units": 257729701
+      },
+      "same_successes": {
+        "raw": {
+          "episodes": 26,
+          "returns": 26,
+          "exhausted_without_return": 0,
+          "proposals": 289600,
+          "units": 283121374,
+          "units_per_correct_including_failures": 10889283.615384616,
+          "seconds_all": 2.190236347145401,
+          "seconds_per_correct_including_failures": 0.08423985950559235,
+          "cost_components": {
+            "training_label_reads": 468,
+            "search_program_and_readout": 265411926,
+            "fitness_bit_operations": 15638400,
+            "fit_label_reads_and_comparisons": 3180,
+            "rank_prediction_and_comparison": 2063772,
+            "certificate": 3628
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 234,
+            "truth_reads": 465,
+            "answer_comparisons": 465
+          },
+          "certification_attempts": 100,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 26,
+          "returns": 26,
+          "exhausted_without_return": 0,
+          "proposals": 306496,
+          "units": 437510267,
+          "units_per_correct_including_failures": 16827317.96153846,
+          "seconds_all": 2.4825002305442467,
+          "seconds_per_correct_including_failures": 0.09548077809785564,
+          "cost_components": {
+            "training_label_reads": 468,
+            "search_program_and_readout": 418818798,
+            "fitness_bit_operations": 16550784,
+            "fit_label_reads_and_comparisons": 3180,
+            "rank_prediction_and_comparison": 2133243,
+            "certificate": 3794
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 234,
+            "truth_reads": 439,
+            "answer_comparisons": 439
+          },
+          "certification_attempts": 98,
+          "crossing_used_in_returns": 5,
+          "failed_units": 0
+        }
+      },
+      "matched_outcomes": {
+        "both": 26,
+        "raw_only": 0,
+        "reuse_only": 1,
+        "neither": 3
+      },
+      "paired_reuse_cheaper_on_shared_successes": 6,
+      "amortized_reuse_units_per_return_lower_bound": 28609297.666666668,
+      "amortized_reuse_seconds_per_return": 0.15377706957170395
+    },
+    "direct": {
+      "raw": {
+        "episodes": 30,
+        "returns": 27,
+        "exhausted_without_return": 3,
+        "proposals": 376141,
+        "units": 372337044,
+        "units_per_correct_including_failures": 13790260.888888888,
+        "seconds_all": 2.94652493391186,
+        "seconds_per_correct_including_failures": 0.10913055310784667,
+        "cost_components": {
+          "training_label_reads": 540,
+          "search_program_and_readout": 351309474,
+          "fitness_bit_operations": 20311614,
+          "fit_label_reads_and_comparisons": 0,
+          "rank_prediction_and_comparison": 0,
+          "certificate": 715416
+        },
+        "checker_actions": {
+          "fresh_truth_labels": 264,
+          "truth_reads": 9276,
+          "answer_comparisons": 9276
+        },
+        "certification_attempts": 3525,
+        "crossing_used_in_returns": 0,
+        "failed_units": 154327078
+      },
+      "reuse": {
+        "episodes": 30,
+        "returns": 28,
+        "exhausted_without_return": 2,
+        "proposals": 347353,
+        "units": 516585913,
+        "units_per_correct_including_failures": 18449496.89285714,
+        "seconds_all": 3.076005322742276,
+        "seconds_per_correct_including_failures": 0.10985733295508128,
+        "cost_components": {
+          "training_label_reads": 540,
+          "search_program_and_readout": 494627184,
+          "fitness_bit_operations": 18757062,
+          "fit_label_reads_and_comparisons": 0,
+          "rank_prediction_and_comparison": 0,
+          "certificate": 3201127
+        },
+        "checker_actions": {
+          "fresh_truth_labels": 268,
+          "truth_reads": 27489,
+          "answer_comparisons": 27489
+        },
+        "certification_attempts": 8075,
+        "crossing_used_in_returns": 9,
+        "failed_units": 168658407
+      },
+      "same_successes": {
+        "raw": {
+          "episodes": 26,
+          "returns": 26,
+          "exhausted_without_return": 0,
+          "proposals": 200456,
+          "units": 188213766,
+          "units_per_correct_including_failures": 7238991.0,
+          "seconds_all": 1.5424652708461508,
+          "seconds_per_correct_including_failures": 0.05932558734023657,
+          "cost_components": {
+            "training_label_reads": 468,
+            "search_program_and_readout": 177115500,
+            "fitness_bit_operations": 10824624,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 273174
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 234,
+            "truth_reads": 3722,
+            "answer_comparisons": 3722
+          },
+          "certification_attempts": 1616,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 26,
+          "returns": 26,
+          "exhausted_without_return": 0,
+          "proposals": 239110,
+          "units": 334934599,
+          "units_per_correct_including_failures": 12882099.961538462,
+          "seconds_all": 1.9443176097702235,
+          "seconds_per_correct_including_failures": 0.07478144652962398,
+          "cost_components": {
+            "training_label_reads": 468,
+            "search_program_and_readout": 321566400,
+            "fitness_bit_operations": 12911940,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 455791
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 234,
+            "truth_reads": 4569,
+            "answer_comparisons": 4569
+          },
+          "certification_attempts": 1761,
+          "crossing_used_in_returns": 7,
+          "failed_units": 0
+        }
+      },
+      "matched_outcomes": {
+        "both": 26,
+        "raw_only": 1,
+        "reuse_only": 2,
+        "neither": 1
+      },
+      "paired_reuse_cheaper_on_shared_successes": 7,
+      "amortized_reuse_units_per_return_lower_bound": 21081500.92857143,
+      "amortized_reuse_seconds_per_return": 0.12086387998923394
+    }
+  },
+  "failed_cases": [
+    [
+      "1ab7",
+      101,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "1ab7",
+      307,
+      "raw",
+      "shortest"
+    ],
+    [
+      "6d18",
+      101,
+      "raw",
+      "shortest"
+    ],
+    [
+      "6d18",
+      101,
+      "raw",
+      "fitted"
+    ],
+    [
+      "6d18",
+      101,
+      "raw",
+      "direct"
+    ],
+    [
+      "6d18",
+      307,
+      "raw",
+      "shortest"
+    ],
+    [
+      "79c2",
+      211,
+      "raw",
+      "shortest"
+    ],
+    [
+      "c10e",
+      101,
+      "raw",
+      "shortest"
+    ],
+    [
+      "c10e",
+      101,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "c10e",
+      211,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "c10e",
+      307,
+      "raw",
+      "shortest"
+    ],
+    [
+      "c10e",
+      307,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "e35a",
+      101,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "e35a",
+      211,
+      "raw",
+      "shortest"
+    ],
+    [
+      "e35a",
+      211,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "e35a",
+      307,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "f46b",
+      101,
+      "raw",
+      "shortest"
+    ],
+    [
+      "f46b",
+      101,
+      "raw",
+      "fitted"
+    ],
+    [
+      "f46b",
+      101,
+      "raw",
+      "direct"
+    ],
+    [
+      "f46b",
+      101,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "f46b",
+      101,
+      "reuse",
+      "fitted"
+    ],
+    [
+      "f46b",
+      101,
+      "reuse",
+      "direct"
+    ],
+    [
+      "f46b",
+      211,
+      "raw",
+      "shortest"
+    ],
+    [
+      "f46b",
+      211,
+      "raw",
+      "fitted"
+    ],
+    [
+      "f46b",
+      211,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "f46b",
+      211,
+      "reuse",
+      "fitted"
+    ],
+    [
+      "f46b",
+      211,
+      "reuse",
+      "direct"
+    ],
+    [
+      "f46b",
+      307,
+      "raw",
+      "shortest"
+    ],
+    [
+      "f46b",
+      307,
+      "raw",
+      "fitted"
+    ],
+    [
+      "f46b",
+      307,
+      "raw",
+      "direct"
+    ],
+    [
+      "f46b",
+      307,
+      "reuse",
+      "shortest"
+    ],
+    [
+      "f46b",
+      307,
+      "reuse",
+      "fitted"
+    ]
+  ],
+  "acquisition": {
+    "source_acquisition": "artifacts/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/acquisition.json",
+    "source_sha256": "b549eb82f58e5e0704e5897c0ac1c21dcca693bd762dad73098a3753d1b72867",
+    "forward_sha256": "a740b9a93061a75b78ce24a135b5adc94ca55a0206872c7b69e97117837f4246",
+    "proposals": 98336,
+    "equivalent_literal_gates_over_nine_original_inputs": 73696113,
+    "actor_only_lower_bound_for_cost_comparison": true,
+    "recorded_implementation_counters": {
+      "program_image_translate_calls": 1534500,
+      "program_image_translated_bytes": 13810500,
+      "reward_translate_calls_on_cache_misses": 165306,
+      "reward_translated_bytes_on_cache_misses": 3471426,
+      "reward_padded_table_bytes_created": 14106112,
+      "cached_image_key_payload_bytes": 247959,
+      "parent_choices_including_restarts": 8192,
+      "forced_periodic_restarts": 256,
+      "source_program_execution_bypassed_by_reward_cache": false,
+      "primitive_interpreter_used_for_original_search": false
+    },
+    "forward_reacquisition_wall_seconds": [
+      0.3082022850867361,
+      0.30790034099482,
+      0.3081833169562742
+    ],
+    "median_forward_reacquisition_seconds": 0.3081833169562742,
+    "interpretation": "Three timing repeats of the same original guided forward-only fit reproduce the exact crossing. Charge one acquisition. Timings include source fitness and search bookkeeping. The historical packed source implementation priced semantic actor gates and did not literally execute them."
+  },
+  "per_task_certified": {
+    "1ab7": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 2,
+          "exhausted_without_return": 1,
+          "proposals": 79968,
+          "units": 66084011,
+          "units_per_correct_including_failures": 33042005.5,
+          "seconds_all": 0.5687883920036256,
+          "seconds_per_correct_including_failures": 0.2843941960018128,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 61761132,
+            "fitness_bit_operations": 4318272,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 4553
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 21,
+            "truth_reads": 98,
+            "answer_comparisons": 98
+          },
+          "certification_attempts": 30,
+          "crossing_used_in_returns": 0,
+          "failed_units": 40744383
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 2,
+          "exhausted_without_return": 1,
+          "proposals": 67680,
+          "units": 76524550,
+          "units_per_correct_including_failures": 38262275.0,
+          "seconds_all": 0.5048429319867864,
+          "seconds_per_correct_including_failures": 0.2524214659933932,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 72866574,
+            "fitness_bit_operations": 3654720,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 3202
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 20,
+            "truth_reads": 68,
+            "answer_comparisons": 68
+          },
+          "certification_attempts": 24,
+          "crossing_used_in_returns": 0,
+          "failed_units": 56247652
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 43104,
+          "units": 36445227,
+          "units_per_correct_including_failures": 12148409.0,
+          "seconds_all": 0.31358251394703984,
+          "seconds_per_correct_including_failures": 0.10452750464901328,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 33821892,
+            "fitness_bit_operations": 2327616,
+            "fit_label_reads_and_comparisons": 342,
+            "rank_prediction_and_comparison": 295146,
+            "certificate": 177
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 75,
+            "answer_comparisons": 75
+          },
+          "certification_attempts": 19,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 43104,
+          "units": 47858819,
+          "units_per_correct_including_failures": 15952939.666666666,
+          "seconds_all": 0.3196742330910638,
+          "seconds_per_correct_including_failures": 0.10655807769702126,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 45212652,
+            "fitness_bit_operations": 2327616,
+            "fit_label_reads_and_comparisons": 342,
+            "rank_prediction_and_comparison": 318006,
+            "certificate": 149
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 61,
+            "answer_comparisons": 61
+          },
+          "certification_attempts": 17,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 32024,
+          "units": 26454246,
+          "units_per_correct_including_failures": 8818082.0,
+          "seconds_all": 0.23522109899204224,
+          "seconds_per_correct_including_failures": 0.07840703299734741,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 24674184,
+            "fitness_bit_operations": 1729296,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 50712
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 741,
+            "answer_comparisons": 741
+          },
+          "certification_attempts": 293,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 35163,
+          "units": 37649632,
+          "units_per_correct_including_failures": 12549877.333333334,
+          "seconds_all": 0.2622564039193094,
+          "seconds_per_correct_including_failures": 0.08741880130643646,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 35698086,
+            "fitness_bit_operations": 1898802,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 52690
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 677,
+            "answer_comparisons": 677
+          },
+          "certification_attempts": 273,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      }
+    },
+    "4caf": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 3859416,
+          "units_per_correct_including_failures": 1286472.0,
+          "seconds_all": 0.03429294901434332,
+          "seconds_per_correct_including_failures": 0.011430983004781107,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 3604662,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 684
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 5166486,
+          "units_per_correct_including_failures": 1722162.0,
+          "seconds_all": 0.0353255009977147,
+          "seconds_per_correct_including_failures": 0.011775166999238232,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 4911678,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 738
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 3881475,
+          "units_per_correct_including_failures": 1293825.0,
+          "seconds_all": 0.03513801016379148,
+          "seconds_per_correct_including_failures": 0.01171267005459716,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 3604662,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 22239,
+            "certificate": 81
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 5180877,
+          "units_per_correct_including_failures": 1726959.0,
+          "seconds_all": 0.03587347606662661,
+          "seconds_per_correct_including_failures": 0.011957825355542203,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 4911678,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 14625,
+            "certificate": 81
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 2053,
+          "units": 1707750,
+          "units_per_correct_including_failures": 569250.0,
+          "seconds_all": 0.01560878090094775,
+          "seconds_per_correct_including_failures": 0.0052029269669825835,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 1595952,
+            "fitness_bit_operations": 110862,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 882
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 2898,
+          "units": 3055410,
+          "units_per_correct_including_failures": 1018470.0,
+          "seconds_all": 0.022120443056337535,
+          "seconds_per_correct_including_failures": 0.007373481018779178,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 2897370,
+            "fitness_bit_operations": 156492,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1494
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 1,
+          "failed_units": 0
+        }
+      }
+    },
+    "528f": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 16992,
+          "units": 17114253,
+          "units_per_correct_including_failures": 5704751.0,
+          "seconds_all": 0.1297414239961654,
+          "seconds_per_correct_including_failures": 0.04324714133205513,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 16195104,
+            "fitness_bit_operations": 917568,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1527
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 31,
+            "answer_comparisons": 31
+          },
+          "certification_attempts": 7,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 16992,
+          "units": 23510273,
+          "units_per_correct_including_failures": 7836757.666666667,
+          "seconds_all": 0.13986787991598248,
+          "seconds_per_correct_including_failures": 0.046622626638660826,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 22591026,
+            "fitness_bit_operations": 917568,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1625
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 34,
+            "answer_comparisons": 34
+          },
+          "certification_attempts": 10,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 16992,
+          "units": 17114568,
+          "units_per_correct_including_failures": 5704856.0,
+          "seconds_all": 0.13126239902339876,
+          "seconds_per_correct_including_failures": 0.04375413300779959,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 16195104,
+            "fitness_bit_operations": 917568,
+            "fit_label_reads_and_comparisons": 315,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1527
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 31,
+            "answer_comparisons": 31
+          },
+          "certification_attempts": 7,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 16992,
+          "units": 23510588,
+          "units_per_correct_including_failures": 7836862.666666667,
+          "seconds_all": 0.1362284851493314,
+          "seconds_per_correct_including_failures": 0.04540949504977713,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 22591026,
+            "fitness_bit_operations": 917568,
+            "fit_label_reads_and_comparisons": 315,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1625
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 34,
+            "answer_comparisons": 34
+          },
+          "certification_attempts": 10,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 5390,
+          "units": 4715241,
+          "units_per_correct_including_failures": 1571747.0,
+          "seconds_all": 0.04094188392627984,
+          "seconds_per_correct_including_failures": 0.01364729464209328,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 4422438,
+            "fitness_bit_operations": 291060,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1689
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 28,
+            "answer_comparisons": 28
+          },
+          "certification_attempts": 4,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 8483,
+          "units": 10759726,
+          "units_per_correct_including_failures": 3586575.3333333335,
+          "seconds_all": 0.0669071179581806,
+          "seconds_per_correct_including_failures": 0.02230237265272687,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 10295802,
+            "fitness_bit_operations": 458082,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 5788
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 74,
+            "answer_comparisons": 74
+          },
+          "certification_attempts": 38,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      }
+    },
+    "6d18": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 1,
+          "exhausted_without_return": 2,
+          "proposals": 122976,
+          "units": 129527916,
+          "units_per_correct_including_failures": 129527916.0,
+          "seconds_all": 0.9559367571491748,
+          "seconds_per_correct_including_failures": 0.9559367571491748,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 122880762,
+            "fitness_bit_operations": 6640704,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 6396
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 19,
+            "truth_reads": 124,
+            "answer_comparisons": 124
+          },
+          "certification_attempts": 36,
+          "crossing_used_in_returns": 0,
+          "failed_units": 102823595
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 6240,
+          "units": 6887763,
+          "units_per_correct_including_failures": 2295921.0,
+          "seconds_all": 0.04773493786342442,
+          "seconds_per_correct_including_failures": 0.015911645954474807,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 6547410,
+            "fitness_bit_operations": 336960,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 3339
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 3,
+          "failed_units": 0
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 2,
+          "exhausted_without_return": 1,
+          "proposals": 122976,
+          "units": 130614384,
+          "units_per_correct_including_failures": 65307192.0,
+          "seconds_all": 0.9562738420208916,
+          "seconds_per_correct_including_failures": 0.4781369210104458,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 122880762,
+            "fitness_bit_operations": 6640704,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 1092114,
+            "certificate": 327
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 23,
+            "truth_reads": 152,
+            "answer_comparisons": 152
+          },
+          "certification_attempts": 30,
+          "crossing_used_in_returns": 0,
+          "failed_units": 51482505
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 6240,
+          "units": 6910875,
+          "units_per_correct_including_failures": 2303625.0,
+          "seconds_all": 0.048137067002244294,
+          "seconds_per_correct_including_failures": 0.016045689000748098,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 6547410,
+            "fitness_bit_operations": 336960,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 25947,
+            "certificate": 81
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 3,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 2,
+          "exhausted_without_return": 1,
+          "proposals": 99875,
+          "units": 103893246,
+          "units_per_correct_including_failures": 51946623.0,
+          "seconds_all": 0.8004543309798464,
+          "seconds_per_correct_including_failures": 0.4002271654899232,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 98286660,
+            "fitness_bit_operations": 5393250,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 213282
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 23,
+            "truth_reads": 2715,
+            "answer_comparisons": 2715
+          },
+          "certification_attempts": 901,
+          "crossing_used_in_returns": 0,
+          "failed_units": 51284892
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4782,
+          "units": 5123934,
+          "units_per_correct_including_failures": 1707978.0,
+          "seconds_all": 0.0361679169582203,
+          "seconds_per_correct_including_failures": 0.012055972319406768,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 4862214,
+            "fitness_bit_operations": 258228,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 3438
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 3,
+          "failed_units": 0
+        }
+      }
+    },
+    "79c2": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 2,
+          "exhausted_without_return": 1,
+          "proposals": 67680,
+          "units": 71706775,
+          "units_per_correct_including_failures": 35853387.5,
+          "seconds_all": 0.5185845330124721,
+          "seconds_per_correct_including_failures": 0.25929226650623605,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 68049504,
+            "fitness_bit_operations": 3654720,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 2497
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 20,
+            "truth_reads": 39,
+            "answer_comparisons": 39
+          },
+          "certification_attempts": 18,
+          "crossing_used_in_returns": 0,
+          "failed_units": 53480456
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 24672,
+          "units": 35592914,
+          "units_per_correct_including_failures": 11864304.666666666,
+          "seconds_all": 0.1987464928533882,
+          "seconds_per_correct_including_failures": 0.06624883095112939,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 34257528,
+            "fitness_bit_operations": 1332288,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 3044
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 41,
+            "answer_comparisons": 41
+          },
+          "certification_attempts": 9,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 24672,
+          "units": 24840126,
+          "units_per_correct_including_failures": 8280042.0,
+          "seconds_all": 0.1865532419178635,
+          "seconds_per_correct_including_failures": 0.062184413972621165,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 23454270,
+            "fitness_bit_operations": 1332288,
+            "fit_label_reads_and_comparisons": 369,
+            "rank_prediction_and_comparison": 53064,
+            "certificate": 81
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 18528,
+          "units": 25404912,
+          "units_per_correct_including_failures": 8468304.0,
+          "seconds_all": 0.14610369503498077,
+          "seconds_per_correct_including_failures": 0.04870123167832693,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 24387300,
+            "fitness_bit_operations": 1000512,
+            "fit_label_reads_and_comparisons": 369,
+            "rank_prediction_and_comparison": 16596,
+            "certificate": 81
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 19342,
+          "units": 18649540,
+          "units_per_correct_including_failures": 6216513.333333333,
+          "seconds_all": 0.14491433801595122,
+          "seconds_per_correct_including_failures": 0.048304779338650405,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 17602182,
+            "fitness_bit_operations": 1044468,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 2836
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 37,
+            "answer_comparisons": 37
+          },
+          "certification_attempts": 12,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 16574,
+          "units": 22512558,
+          "units_per_correct_including_failures": 7504186.0,
+          "seconds_all": 0.13167906377930194,
+          "seconds_per_correct_including_failures": 0.043893021259767316,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 21614076,
+            "fitness_bit_operations": 894996,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 3432
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 42,
+            "answer_comparisons": 42
+          },
+          "certification_attempts": 8,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      }
+    },
+    "a942": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 4021101,
+          "units_per_correct_including_failures": 1340367.0,
+          "seconds_all": 0.03446246380917728,
+          "seconds_per_correct_including_failures": 0.011487487936392426,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 3766374,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 657
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 5233896,
+          "units_per_correct_including_failures": 1744632.0,
+          "seconds_all": 0.035298001021146774,
+          "seconds_per_correct_including_failures": 0.011766000340382258,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 4979160,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 666
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 4038543,
+          "units_per_correct_including_failures": 1346181.0,
+          "seconds_all": 0.035069739096798,
+          "seconds_per_correct_including_failures": 0.011689913032266,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 3766374,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 17595,
+            "certificate": 81
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 4704,
+          "units": 5280318,
+          "units_per_correct_including_failures": 1760106.0,
+          "seconds_all": 0.036346328095532954,
+          "seconds_per_correct_including_failures": 0.012115442698510984,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 4979160,
+            "fitness_bit_operations": 254016,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 46584,
+            "certificate": 81
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 1117,
+          "units": 876465,
+          "units_per_correct_including_failures": 292155.0,
+          "seconds_all": 0.00892442197073251,
+          "seconds_per_correct_including_failures": 0.0029748073235775032,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 815256,
+            "fitness_bit_operations": 60318,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 837
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 1014,
+          "units": 917874,
+          "units_per_correct_including_failures": 305958.0,
+          "seconds_all": 0.008292925078421831,
+          "seconds_per_correct_including_failures": 0.0027643083594739437,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 861372,
+            "fitness_bit_operations": 54756,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1692
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 1,
+          "failed_units": 0
+        }
+      }
+    },
+    "b037": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 10848,
+          "units": 9039483,
+          "units_per_correct_including_failures": 3013161.0,
+          "seconds_all": 0.07780592108611017,
+          "seconds_per_correct_including_failures": 0.02593530702870339,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 8452530,
+            "fitness_bit_operations": 585792,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1107
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 6240,
+          "units": 6425631,
+          "units_per_correct_including_failures": 2141877.0,
+          "seconds_all": 0.04569872608408332,
+          "seconds_per_correct_including_failures": 0.015232908694694439,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 6087384,
+            "fitness_bit_operations": 336960,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1233
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 10848,
+          "units": 9039798,
+          "units_per_correct_including_failures": 3013266.0,
+          "seconds_all": 0.07741321891080588,
+          "seconds_per_correct_including_failures": 0.02580440630360196,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 8452530,
+            "fitness_bit_operations": 585792,
+            "fit_label_reads_and_comparisons": 315,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1107
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 6240,
+          "units": 6425946,
+          "units_per_correct_including_failures": 2141982.0,
+          "seconds_all": 0.04582831799052656,
+          "seconds_per_correct_including_failures": 0.015276105996842185,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 6087384,
+            "fitness_bit_operations": 336960,
+            "fit_label_reads_and_comparisons": 315,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1233
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 6379,
+          "units": 5072185,
+          "units_per_correct_including_failures": 1690728.3333333333,
+          "seconds_all": 0.04541048803366721,
+          "seconds_per_correct_including_failures": 0.015136829344555736,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 4725990,
+            "fitness_bit_operations": 344466,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1675
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 29,
+            "answer_comparisons": 29
+          },
+          "certification_attempts": 5,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 3504,
+          "units": 3399129,
+          "units_per_correct_including_failures": 1133043.0,
+          "seconds_all": 0.026267089182510972,
+          "seconds_per_correct_including_failures": 0.008755696394170323,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 3208536,
+            "fitness_bit_operations": 189216,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1323
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 27,
+            "answer_comparisons": 27
+          },
+          "certification_attempts": 3,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      }
+    },
+    "c10e": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 1,
+          "exhausted_without_return": 2,
+          "proposals": 110688,
+          "units": 114186929,
+          "units_per_correct_including_failures": 114186929.0,
+          "seconds_all": 0.8477365600410849,
+          "seconds_per_correct_including_failures": 0.8477365600410849,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 108206694,
+            "fitness_bit_operations": 5977152,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 3029
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 15,
+            "truth_reads": 55,
+            "answer_comparisons": 55
+          },
+          "certification_attempts": 37,
+          "crossing_used_in_returns": 0,
+          "failed_units": 101265701
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 0,
+          "exhausted_without_return": 3,
+          "proposals": 147552,
+          "units": 241827956,
+          "units_per_correct_including_failures": null,
+          "seconds_all": 1.229563842061907,
+          "seconds_per_correct_including_failures": null,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 233854110,
+            "fitness_bit_operations": 7967808,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 5984
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 12,
+            "truth_reads": 90,
+            "answer_comparisons": 90
+          },
+          "certification_attempts": 47,
+          "crossing_used_in_returns": 0,
+          "failed_units": 241827956
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 49248,
+          "units": 50192549,
+          "units_per_correct_including_failures": 16730849.666666666,
+          "seconds_all": 0.379347589914687,
+          "seconds_per_correct_including_failures": 0.12644919663822898,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 47026152,
+            "fitness_bit_operations": 2659392,
+            "fit_label_reads_and_comparisons": 342,
+            "rank_prediction_and_comparison": 506484,
+            "certificate": 125
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 49,
+            "answer_comparisons": 49
+          },
+          "certification_attempts": 19,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 86112,
+          "units": 140150356,
+          "units_per_correct_including_failures": 46716785.333333336,
+          "seconds_all": 0.7265228329924867,
+          "seconds_per_correct_including_failures": 0.24217427766416222,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 134724474,
+            "fitness_bit_operations": 4650048,
+            "fit_label_reads_and_comparisons": 342,
+            "rank_prediction_and_comparison": 775269,
+            "certificate": 169
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 71,
+            "answer_comparisons": 71
+          },
+          "certification_attempts": 26,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 34743,
+          "units": 33719818,
+          "units_per_correct_including_failures": 11239939.333333334,
+          "seconds_all": 0.2764130790019408,
+          "seconds_per_correct_including_failures": 0.09213769300064693,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 31799718,
+            "fitness_bit_operations": 1876122,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 43924
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 568,
+            "answer_comparisons": 568
+          },
+          "certification_attempts": 451,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 67077,
+          "units": 107719915,
+          "units_per_correct_including_failures": 35906638.333333336,
+          "seconds_all": 0.5755444979295135,
+          "seconds_per_correct_including_failures": 0.19184816597650448,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 103962078,
+            "fitness_bit_operations": 3622158,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 135625
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 1227,
+            "answer_comparisons": 1227
+          },
+          "certification_attempts": 598,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        }
+      }
+    },
+    "e35a": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 2,
+          "exhausted_without_return": 1,
+          "proposals": 98400,
+          "units": 93973904,
+          "units_per_correct_including_failures": 46986952.0,
+          "seconds_all": 0.7356412239605561,
+          "seconds_per_correct_including_failures": 0.36782061198027804,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 88653114,
+            "fitness_bit_operations": 5313600,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 7136
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 26,
+            "truth_reads": 136,
+            "answer_comparisons": 136
+          },
+          "certification_attempts": 36,
+          "crossing_used_in_returns": 0,
+          "failed_units": 47660185
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 0,
+          "exhausted_without_return": 3,
+          "proposals": 147552,
+          "units": 214766811,
+          "units_per_correct_including_failures": null,
+          "seconds_all": 1.1911268531112,
+          "seconds_per_correct_including_failures": null,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 206792010,
+            "fitness_bit_operations": 7967808,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 6939
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 17,
+            "truth_reads": 145,
+            "answer_comparisons": 145
+          },
+          "certification_attempts": 44,
+          "crossing_used_in_returns": 0,
+          "failed_units": 214766811
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 61536,
+          "units": 58437209,
+          "units_per_correct_including_failures": 19479069.666666668,
+          "seconds_all": 0.4644883571891114,
+          "seconds_per_correct_including_failures": 0.15482945239637047,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 54750924,
+            "fitness_bit_operations": 3322944,
+            "fit_label_reads_and_comparisons": 369,
+            "rank_prediction_and_comparison": 362727,
+            "certificate": 191
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 82,
+            "answer_comparisons": 82
+          },
+          "certification_attempts": 25,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 122976,
+          "units": 180302532,
+          "units_per_correct_including_failures": 60100844.0,
+          "seconds_all": 1.0112747150706127,
+          "seconds_per_correct_including_failures": 0.33709157169020426,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 172700658,
+            "fitness_bit_operations": 6640704,
+            "fit_label_reads_and_comparisons": 369,
+            "rank_prediction_and_comparison": 960426,
+            "certificate": 321
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 147,
+            "answer_comparisons": 147
+          },
+          "certification_attempts": 31,
+          "crossing_used_in_returns": 3,
+          "failed_units": 0
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 48717,
+          "units": 44410167,
+          "units_per_correct_including_failures": 14803389.0,
+          "seconds_all": 0.3671682650456205,
+          "seconds_per_correct_including_failures": 0.1223894216818735,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 41733864,
+            "fitness_bit_operations": 2630718,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 45531
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 642,
+            "answer_comparisons": 642
+          },
+          "certification_attempts": 330,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 3,
+          "exhausted_without_return": 0,
+          "proposals": 101659,
+          "units": 145964854,
+          "units_per_correct_including_failures": 48654951.333333336,
+          "seconds_all": 0.83039272390306,
+          "seconds_per_correct_including_failures": 0.27679757463435334,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 140223240,
+            "fitness_bit_operations": 5489586,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 251974
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 27,
+            "truth_reads": 2450,
+            "answer_comparisons": 2450
+          },
+          "certification_attempts": 833,
+          "crossing_used_in_returns": 3,
+          "failed_units": 0
+        }
+      }
+    },
+    "f46b": {
+      "shortest": {
+        "raw": {
+          "episodes": 3,
+          "returns": 0,
+          "exhausted_without_return": 3,
+          "proposals": 147552,
+          "units": 154599493,
+          "units_per_correct_including_failures": null,
+          "seconds_all": 1.1235624619293958,
+          "seconds_per_correct_including_failures": null,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 146624310,
+            "fitness_bit_operations": 7967808,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 7321
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 20,
+            "truth_reads": 139,
+            "answer_comparisons": 139
+          },
+          "certification_attempts": 40,
+          "crossing_used_in_returns": 0,
+          "failed_units": 154599493
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 0,
+          "exhausted_without_return": 3,
+          "proposals": 147552,
+          "units": 247953961,
+          "units_per_correct_including_failures": null,
+          "seconds_all": 1.2673131910851225,
+          "seconds_per_correct_including_failures": null,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 239969610,
+            "fitness_bit_operations": 7967808,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 16489
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 12,
+            "truth_reads": 221,
+            "answer_comparisons": 221
+          },
+          "certification_attempts": 62,
+          "crossing_used_in_returns": 0,
+          "failed_units": 247953961
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 3,
+          "returns": 0,
+          "exhausted_without_return": 3,
+          "proposals": 147552,
+          "units": 156017040,
+          "units_per_correct_including_failures": null,
+          "seconds_all": 1.1498958619777113,
+          "seconds_per_correct_including_failures": null,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 146624310,
+            "fitness_bit_operations": 7967808,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 1424133,
+            "certificate": 312
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 16,
+            "truth_reads": 148,
+            "answer_comparisons": 148
+          },
+          "certification_attempts": 40,
+          "crossing_used_in_returns": 0,
+          "failed_units": 156017040
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 0,
+          "exhausted_without_return": 3,
+          "proposals": 147552,
+          "units": 257729701,
+          "units_per_correct_including_failures": null,
+          "seconds_all": 1.3378084109863266,
+          "seconds_per_correct_including_failures": null,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 239969610,
+            "fitness_bit_operations": 7967808,
+            "fit_label_reads_and_comparisons": 423,
+            "rank_prediction_and_comparison": 9791298,
+            "certificate": 508
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 12,
+            "truth_reads": 248,
+            "answer_comparisons": 248
+          },
+          "certification_attempts": 62,
+          "crossing_used_in_returns": 0,
+          "failed_units": 257729701
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 3,
+          "returns": 1,
+          "exhausted_without_return": 2,
+          "proposals": 126501,
+          "units": 132838386,
+          "units_per_correct_including_failures": 132838386.0,
+          "seconds_all": 1.0114682470448315,
+          "seconds_per_correct_including_failures": 1.0114682470448315,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 125653230,
+            "fitness_bit_operations": 6831054,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 354048
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 25,
+            "truth_reads": 4462,
+            "answer_comparisons": 4462
+          },
+          "certification_attempts": 1523,
+          "crossing_used_in_returns": 0,
+          "failed_units": 103042186
+        },
+        "reuse": {
+          "episodes": 3,
+          "returns": 1,
+          "exhausted_without_return": 2,
+          "proposals": 106199,
+          "units": 179482881,
+          "units_per_correct_including_failures": 179482881.0,
+          "seconds_all": 1.11637714097742,
+          "seconds_per_correct_including_failures": 1.11637714097742,
+          "cost_components": {
+            "training_label_reads": 54,
+            "search_program_and_readout": 171004410,
+            "fitness_bit_operations": 5734746,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 2743671
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 25,
+            "truth_reads": 22911,
+            "answer_comparisons": 22911
+          },
+          "certification_attempts": 6313,
+          "crossing_used_in_returns": 1,
+          "failed_units": 168658407
+        }
+      }
+    }
+  },
+  "per_seed_certified": {
+    "101": {
+      "shortest": {
+        "raw": {
+          "episodes": 10,
+          "returns": 7,
+          "exhausted_without_return": 3,
+          "proposals": 221504,
+          "units": 218575693,
+          "units_per_correct_including_failures": 31225099.0,
+          "seconds_all": 1.664817393058911,
+          "seconds_per_correct_including_failures": 0.237831056151273,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 206604810,
+            "fitness_bit_operations": 11961216,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 9487
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 73,
+            "truth_reads": 195,
+            "answer_comparisons": 195
+          },
+          "certification_attempts": 71,
+          "crossing_used_in_returns": 0,
+          "failed_units": 152754114
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 6,
+          "exhausted_without_return": 4,
+          "proposals": 223040,
+          "units": 320759223,
+          "units_per_correct_including_failures": 53459870.5,
+          "seconds_all": 1.790220625931397,
+          "seconds_per_correct_including_failures": 0.29837010432189953,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 308701638,
+            "fitness_bit_operations": 12044160,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 13245
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 63,
+            "truth_reads": 211,
+            "answer_comparisons": 211
+          },
+          "certification_attempts": 85,
+          "crossing_used_in_returns": 1,
+          "failed_units": 287401636
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 10,
+          "returns": 8,
+          "exhausted_without_return": 2,
+          "proposals": 184640,
+          "units": 184799844,
+          "units_per_correct_including_failures": 23099980.5,
+          "seconds_all": 1.4170694940257818,
+          "seconds_per_correct_including_failures": 0.17713368675322272,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 173682504,
+            "fitness_bit_operations": 9970560,
+            "fit_label_reads_and_comparisons": 1248,
+            "rank_prediction_and_comparison": 1144026,
+            "certificate": 1326
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 81,
+            "truth_reads": 196,
+            "answer_comparisons": 196
+          },
+          "certification_attempts": 60,
+          "crossing_used_in_returns": 0,
+          "failed_units": 102965001
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 149312,
+          "units": 220335675,
+          "units_per_correct_including_failures": 24481741.666666668,
+          "seconds_all": 1.248374778078869,
+          "seconds_per_correct_including_failures": 0.13870830867542988,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 207602586,
+            "fitness_bit_operations": 8062848,
+            "fit_label_reads_and_comparisons": 1248,
+            "rank_prediction_and_comparison": 4667391,
+            "certificate": 1422
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 85,
+            "truth_reads": 232,
+            "answer_comparisons": 232
+          },
+          "certification_attempts": 64,
+          "crossing_used_in_returns": 2,
+          "failed_units": 85916780
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 10,
+          "returns": 8,
+          "exhausted_without_return": 2,
+          "proposals": 160065,
+          "units": 158271436,
+          "units_per_correct_including_failures": 19783929.5,
+          "seconds_all": 1.247891153790988,
+          "seconds_per_correct_including_failures": 0.1559863942238735,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 149379714,
+            "fitness_bit_operations": 8643510,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 248032
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 85,
+            "truth_reads": 3187,
+            "answer_comparisons": 3187
+          },
+          "certification_attempts": 1461,
+          "crossing_used_in_returns": 0,
+          "failed_units": 102558161
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 131185,
+          "units": 191465522,
+          "units_per_correct_including_failures": 21273946.888888888,
+          "seconds_all": 1.2005165938753635,
+          "seconds_per_correct_including_failures": 0.13339073265281817,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 182601864,
+            "fitness_bit_operations": 7083990,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1779488
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 89,
+            "truth_reads": 15276,
+            "answer_comparisons": 15276
+          },
+          "certification_attempts": 4464,
+          "crossing_used_in_returns": 3,
+          "failed_units": 83758711
+        }
+      }
+    },
+    "211": {
+      "shortest": {
+        "raw": {
+          "episodes": 10,
+          "returns": 7,
+          "exhausted_without_return": 3,
+          "proposals": 196928,
+          "units": 203766621,
+          "units_per_correct_including_failures": 29109517.285714287,
+          "seconds_all": 1.5056763560278341,
+          "seconds_per_correct_including_failures": 0.2150966222896906,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 193119102,
+            "fitness_bit_operations": 10634112,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 13227
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 81,
+            "truth_reads": 263,
+            "answer_comparisons": 263
+          },
+          "certification_attempts": 66,
+          "crossing_used_in_returns": 0,
+          "failed_units": 152916548
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 7,
+          "exhausted_without_return": 3,
+          "proposals": 173888,
+          "units": 271696636,
+          "units_per_correct_including_failures": 38813805.14285714,
+          "seconds_all": 1.434971050126478,
+          "seconds_per_correct_including_failures": 0.20499586430378258,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 262289214,
+            "fitness_bit_operations": 9389952,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 17290
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 83,
+            "truth_reads": 295,
+            "answer_comparisons": 295
+          },
+          "certification_attempts": 63,
+          "crossing_used_in_returns": 1,
+          "failed_units": 237413084
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 123200,
+          "units": 129140752,
+          "units_per_correct_including_failures": 14348972.444444444,
+          "seconds_all": 0.959752464084886,
+          "seconds_per_correct_including_failures": 0.10663916267609845,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 121253454,
+            "fitness_bit_operations": 6652800,
+            "fit_label_reads_and_comparisons": 1248,
+            "rank_prediction_and_comparison": 1231614,
+            "certificate": 1456
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 89,
+            "truth_reads": 211,
+            "answer_comparisons": 211
+          },
+          "certification_attempts": 41,
+          "crossing_used_in_returns": 0,
+          "failed_units": 52443662
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 130880,
+          "units": 203158373,
+          "units_per_correct_including_failures": 22573152.555555556,
+          "seconds_all": 1.1130224112421274,
+          "seconds_per_correct_including_failures": 0.12366915680468082,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 192643128,
+            "fitness_bit_operations": 7067520,
+            "fit_label_reads_and_comparisons": 1248,
+            "rank_prediction_and_comparison": 3444777,
+            "certificate": 1520
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 85,
+            "truth_reads": 245,
+            "answer_comparisons": 245
+          },
+          "certification_attempts": 43,
+          "crossing_used_in_returns": 2,
+          "failed_units": 86704297
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 10,
+          "returns": 10,
+          "exhausted_without_return": 0,
+          "proposals": 77460,
+          "units": 79035363,
+          "units_per_correct_including_failures": 7903536.3,
+          "seconds_all": 0.6213410960044712,
+          "seconds_per_correct_including_failures": 0.062134109600447116,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 74637180,
+            "fitness_bit_operations": 4182840,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 215163
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 90,
+            "truth_reads": 2703,
+            "answer_comparisons": 2703
+          },
+          "certification_attempts": 795,
+          "crossing_used_in_returns": 0,
+          "failed_units": 0
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 103482,
+          "units": 159754815,
+          "units_per_correct_including_failures": 17750535.0,
+          "seconds_all": 0.9520167746813968,
+          "seconds_per_correct_including_failures": 0.10577964163126631,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 152995086,
+            "fitness_bit_operations": 5588028,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 1171521
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 89,
+            "truth_reads": 9805,
+            "answer_comparisons": 9805
+          },
+          "certification_attempts": 2869,
+          "crossing_used_in_returns": 2,
+          "failed_units": 84899696
+        }
+      }
+    },
+    "307": {
+      "shortest": {
+        "raw": {
+          "episodes": 10,
+          "returns": 6,
+          "exhausted_without_return": 4,
+          "proposals": 246080,
+          "units": 241770967,
+          "units_per_correct_including_failures": 40295161.166666664,
+          "seconds_all": 1.8560589369153604,
+          "seconds_per_correct_including_failures": 0.3093431561525601,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 228470274,
+            "fitness_bit_operations": 13288320,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 12193
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 75,
+            "truth_reads": 245,
+            "answer_comparisons": 245
+          },
+          "certification_attempts": 76,
+          "crossing_used_in_returns": 0,
+          "failed_units": 194903151
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 7,
+          "exhausted_without_return": 3,
+          "proposals": 176960,
+          "units": 271434382,
+          "units_per_correct_including_failures": 38776340.28571428,
+          "seconds_all": 1.4703266809228808,
+          "seconds_per_correct_including_failures": 0.21004666870326869,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 261865638,
+            "fitness_bit_operations": 9555840,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 12724
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 77,
+            "truth_reads": 201,
+            "answer_comparisons": 201
+          },
+          "certification_attempts": 60,
+          "crossing_used_in_returns": 1,
+          "failed_units": 235981660
+        }
+      },
+      "fitted": {
+        "raw": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 178496,
+          "units": 176680323,
+          "units_per_correct_including_failures": 19631147.0,
+          "seconds_all": 1.352202816051431,
+          "seconds_per_correct_including_failures": 0.15024475733904788,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 165641022,
+            "fitness_bit_operations": 9638784,
+            "fit_label_reads_and_comparisons": 1248,
+            "rank_prediction_and_comparison": 1397862,
+            "certificate": 1227
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 85,
+            "truth_reads": 238,
+            "answer_comparisons": 238
+          },
+          "certification_attempts": 51,
+          "crossing_used_in_returns": 0,
+          "failed_units": 52090882
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 176960,
+          "units": 275260876,
+          "units_per_correct_including_failures": 30584541.777777776,
+          "seconds_all": 1.482400372158736,
+          "seconds_per_correct_including_failures": 0.1647111524620818,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 261865638,
+            "fitness_bit_operations": 9555840,
+            "fit_label_reads_and_comparisons": 1248,
+            "rank_prediction_and_comparison": 3836583,
+            "certificate": 1387
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 85,
+            "truth_reads": 219,
+            "answer_comparisons": 219
+          },
+          "certification_attempts": 54,
+          "crossing_used_in_returns": 2,
+          "failed_units": 85108624
+        }
+      },
+      "direct": {
+        "raw": {
+          "episodes": 10,
+          "returns": 9,
+          "exhausted_without_return": 1,
+          "proposals": 138616,
+          "units": 135030245,
+          "units_per_correct_including_failures": 15003360.555555556,
+          "seconds_all": 1.0772926841164008,
+          "seconds_per_correct_including_failures": 0.11969918712404454,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 127292580,
+            "fitness_bit_operations": 7485264,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 252221
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 89,
+            "truth_reads": 3386,
+            "answer_comparisons": 3386
+          },
+          "certification_attempts": 1269,
+          "crossing_used_in_returns": 0,
+          "failed_units": 51768917
+        },
+        "reuse": {
+          "episodes": 10,
+          "returns": 10,
+          "exhausted_without_return": 0,
+          "proposals": 112686,
+          "units": 165365576,
+          "units_per_correct_including_failures": 16536557.6,
+          "seconds_all": 0.9234719541855156,
+          "seconds_per_correct_including_failures": 0.09234719541855156,
+          "cost_components": {
+            "training_label_reads": 180,
+            "search_program_and_readout": 159030234,
+            "fitness_bit_operations": 6085044,
+            "fit_label_reads_and_comparisons": 0,
+            "rank_prediction_and_comparison": 0,
+            "certificate": 250118
+          },
+          "checker_actions": {
+            "fresh_truth_labels": 90,
+            "truth_reads": 2408,
+            "answer_comparisons": 2408
+          },
+          "certification_attempts": 742,
+          "crossing_used_in_returns": 4,
+          "failed_units": 0
+        }
+      }
+    }
+  },
+  "independent_validation": {
+    "passed": true,
+    "arms": 60,
+    "unique_streams": 54,
+    "rebuilt_proposals": 2655936,
+    "independent_audit": "artifacts/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/audit.json",
+    "repeated_producer_cases": [
+      "1ab7-101",
+      "f46b-211"
+    ]
+  },
+  "files_sha256": {
+    "experiments/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/contract.json": "77ce1b67391eae96bfd4b0baf4793718eddf7e2519f63591fb6ae66a74c53c57",
+    "experiments/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/job.py": "48a051b0298a571f80dd31830232c72b3e789d1637890c9bfdd8a7067b845e4f",
+    "experiments/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/selection.py": "2180c5c34884f477bb0bf612886d50e3afeb64956aebfc2601a55a5553ac1b04",
+    "experiments/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/stream.py": "045883f76c8c3b4abe8c61838edb2cdc2823e4c7af2ba8efe9f51b933a11be97",
+    "research/RENAME-SELECT-20261114-001/problems.py": "39ba48245c647141a8445ab4ebb4397ff31065a1b00048308cef427016cbe61e",
+    "research/RENAME-SELECT-20261114-001/preregistration.md": "44f3985e84d609d0f8f8c4579c154405b3e854c14a02c709ef94e615ecb89ea8",
+    "research/RENAME-SELECT-20261114-001/selection.md": "81f66ed30d6b18166679fce15c3fa6026e50cf3e18c633cb60414eba4e207a97",
+    "research/RENAME-SELECT-20261114-001/summarize.py": "7f78a4c33407931772d2adb0d2058e8e4a84a7afd3c334ae62d3c9a5a28e45f6",
+    "research/RENAME-SELECT-20261114-001/audit.py": "c6c46f234a04aca93356c0c225a7f226e46556e28dd9e79a375dd8567736bffd",
+    "artifacts/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/results.jsonl": "52ef89f89868557c2a7c6004c29c763d9ad41b578fae41dc7d077c3d11d5de93",
+    "artifacts/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/freeze.json": "c8ab03a64b41219e65b63b79aa69ce810d21f0ec9350b7cb3bd824e61d15a47d",
+    "artifacts/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/acquisition.json": "f0b179c50a0827e144e7c14718100e0575b0c5f44775e5d3c23cbe21dc21ed55",
+    "artifacts/RENAME-SELECT-20261114-001/RENAME-SELECT-20261114-001-E001_selector/audit.json": "6b60e6e3be56f2de2cdea87ac10036a39da66f3c1b83391da9a315e65fe24363"
+  }
+}

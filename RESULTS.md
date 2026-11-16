@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 397 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 419 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 397 epics with their closures
+- [Epics](#epics): all 419 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1610,30 +1610,51 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-13 | How the law's reach typically behaves across nested patterns (`REACH-CENSUS-20261113-001`) | [closure](proofs/REACH-CENSUS-20261113-001Z/REACH-CENSUS-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/REACH-CENSUS-20261113-001/) |
 | 2026-11-13 | Does growth survive side branches? (`TRUE-BOND-20261113-001`) | [closure](proofs/TRUE-BOND-20261113-001Z/TRUE-BOND-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/TRUE-BOND-20261113-001/) |
 | 2026-11-13 | Proved true rates with side branches (`TRUE-RATE-20261113-001`) | [closure](proofs/TRUE-RATE-20261113-001Z/TRUE-RATE-20261113-001Z-P001_epic_closure/proof.md) | [folder](research/TRUE-RATE-20261113-001/) |
+| 2026-11-14 | Discovering a local fold from atomic Boolean instructions (`ATOMIC-FOLD-20261114-001`) | — | [folder](research/ATOMIC-FOLD-20261114-001/) |
+| 2026-11-14 | Learn what to send and decode unfamiliar logical questions (`BIT-DECODER-20261114-001`) | — | [folder](research/BIT-DECODER-20261114-001/) |
+| 2026-11-14 | Learn reversible crossings and downstream memory from atomic logical actions (`BRAID-ACTIONS-20261114-001`) | — | [folder](research/BRAID-ACTIONS-20261114-001/) |
 | 2026-11-14 | Counting the states that pass a braid test (`BRAID-COUNTS-20261114-001`) | [closure](proofs/BRAID-COUNTS-20261114-001Z/BRAID-COUNTS-20261114-001Z-P001_synthesis/proof.md) | [folder](research/BRAID-COUNTS-20261114-001/) |
 | 2026-11-14 | Which possible input pairs can a later braid test tell apart? (`BRAID-READOUT-20261114-001`) | [closure](proofs/BRAID-READOUT-20261114-001Z/BRAID-READOUT-20261114-001Z-P001_synthesis/proof.md) | [folder](research/BRAID-READOUT-20261114-001/) |
+| 2026-11-14 | Cost of reusing a frozen crossing on a new three-label task (`BRAID-REUSE-20261114-001`) | — | [folder](research/BRAID-REUSE-20261114-001/) |
 | 2026-11-14 | Is the bond bounded where the calls remember (`CARRY-BOUND-20261114-001`) | [closure](proofs/CARRY-BOUND-20261114-001Z/CARRY-BOUND-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/CARRY-BOUND-20261114-001/) |
 | 2026-11-14 | How common certified counting inside is (`CENSUS-FORGET-20261114-001`) | [closure](proofs/CENSUS-FORGET-20261114-001Z/CENSUS-FORGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/CENSUS-FORGET-20261114-001/) |
+| 2026-11-14 | Can a rule found on one pattern reduce the examples needed on joined patterns? (`FOLD-TRANSFER-20261114-001`) | — | [folder](research/FOLD-TRANSFER-20261114-001/) |
 | 2026-11-14 | What makes every way down forget (`FORGET-RULE-20261114-001`) | [closure](proofs/FORGET-RULE-20261114-001Z/FORGET-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FORGET-RULE-20261114-001/) |
 | 2026-11-14 | Does the law's reach grow to every copy at depth with members anywhere (`FREE-TARGET-20261114-001`) | [closure](proofs/FREE-TARGET-20261114-001Z/FREE-TARGET-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-TARGET-20261114-001/) |
 | 2026-11-14 | How much a message must retain for simultaneous crossing tests (`JOINT-BRAID-READS-20261114-001`) | [closure](proofs/JOINT-BRAID-READS-20261114-001Z/JOINT-BRAID-READS-20261114-001Z-P001_synthesis/proof.md) | [folder](research/JOINT-BRAID-READS-20261114-001/) |
 | 2026-11-14 | Does the top bind the deep levels where parts depend on the whole? (`LEVEL-REACH-20261114-001`) | — | [folder](research/LEVEL-REACH-20261114-001/) |
+| 2026-11-14 | A local reinforcement-learning agent acting on signed logical rules (`LOCAL-RULE-ACTIONS-20261114-001`) | — | [folder](research/LOCAL-RULE-ACTIONS-20261114-001/) |
 | 2026-11-14 | Does reading decide whether the bond grows (`READ-RULE-20261114-001`) | [closure](proofs/READ-RULE-20261114-001Z/READ-RULE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/READ-RULE-20261114-001/) |
+| 2026-11-14 | Choose a generalizing program and charge for checking it (`RENAME-SELECT-20261114-001`) | — | [folder](research/RENAME-SELECT-20261114-001/) |
 | 2026-11-14 | Rigidity at every level for the alternating addressed patterns (`RIGID-LEVEL-20261114-001`) | — | [folder](research/RIGID-LEVEL-20261114-001/) |
 | 2026-11-14 | Why the reach across levels is one distinction per level (`RULER-LEVEL-20261114-001`) | — | [folder](research/RULER-LEVEL-20261114-001/) |
 | 2026-11-14 | The same overlapping ternary knots with different SAT decisions (`SIGNED-KNOT-OVERLAP-20261114-001`) | [closure](proofs/SIGNED-KNOT-OVERLAP-20261114-001Z/SIGNED-KNOT-OVERLAP-20261114-001Z-P001_synthesis/proof.md) | [folder](research/SIGNED-KNOT-OVERLAP-20261114-001/) |
+| 2026-11-14 | Local moves on closed logical strands with shared distinctions (`STRAND-RETURN-20261114-001`) | — | [folder](research/STRAND-RETURN-20261114-001/) |
 | 2026-11-14 | Is identity the whole story of forgetting (`TIE-CYCLE-20261114-001`) | [closure](proofs/TIE-CYCLE-20261114-001Z/TIE-CYCLE-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TIE-CYCLE-20261114-001/) |
 | 2026-11-14 | Is reading the whole rule for the bond (`TOP-INFO-20261114-001`) | [closure](proofs/TOP-INFO-20261114-001Z/TOP-INFO-20261114-001Z-P001_epic_closure/proof.md) | [folder](research/TOP-INFO-20261114-001/) |
+| 2026-11-14 | One frozen policy following visible rule connections and choosing a sufficient message width (`WIRED-FOLD-20261114-001`) | — | [folder](research/WIRED-FOLD-20261114-001/) |
 | 2026-11-15 | How many independent affine factors a named proof must fix (`AFFINE-FACTOR-RANK-20261115-001`) | [closure](proofs/AFFINE-FACTOR-RANK-20261115-001Z/AFFINE-FACTOR-RANK-20261115-001Z-P001_synthesis/proof.md) | [folder](research/AFFINE-FACTOR-RANK-20261115-001/) |
+| 2026-11-15 | Learn to reconstruct an omitted answer from the other three (`ANSWER-COMPOSE-20261115-001`) | — | [folder](research/ANSWER-COMPOSE-20261115-001/) |
 | 2026-11-15 | Rulers with cycles: when cycles of knots keep or break the reach across levels (`CYCLE-RULER-20261115-001`) | — | [folder](research/CYCLE-RULER-20261115-001/) |
 | 2026-11-15 | Where the top binds every depth directly, and whether it is truly bounded (`DIRECT-REACH-20261115-001`) | — | [folder](research/DIRECT-REACH-20261115-001/) |
 | 2026-11-15 | Two product summaries and reuse of conditional deductions on five products (`FIVE-PRODUCT-GUARDED-REUSE-20261115-001`) | [closure](proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z-P001_synthesis/proof.md) | [folder](research/FIVE-PRODUCT-GUARDED-REUSE-20261115-001/) |
 | 2026-11-15 | Charged tree proofs and learned affine implications on five products (`FIVE-PRODUCT-TOTAL-WORK-20261115-001`) | [closure](proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z-P001_synthesis/proof.md) | [folder](research/FIVE-PRODUCT-TOTAL-WORK-20261115-001/) |
 | 2026-11-15 | Two assumptions for a shared deduction on five products (`FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001`) | [closure](proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001Z/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001/) |
+| 2026-11-15 | Does repeatedly using an unlocated fold avoid more program search at greater depth? (`FOLD-DEPTH-20261115-001`) | — | [folder](research/FOLD-DEPTH-20261115-001/) |
+| 2026-11-15 | Does a fold found in training programs reduce paid work on unseen compositions? (`FOLD-DISCOVERY-20261115-001`) | — | [folder](research/FOLD-DISCOVERY-20261115-001/) |
+| 2026-11-15 | When does an example-guided fold repay learning and verification? (`FOLD-GATE-20261115-001`) | — | [folder](research/FOLD-GATE-20261115-001/) |
+| 2026-11-15 | Can an exact input-pair test locate the fold cheaply without a hint? (`FOLD-PAIR-PLACE-20261115-001`) | — | [folder](research/FOLD-PAIR-PLACE-20261115-001/) |
+| 2026-11-15 | Can a solver find where to combine computed answers at constant input width? (`FOLD-PLACEMENT-20261115-001`) | — | [folder](research/FOLD-PLACEMENT-20261115-001/) |
+| 2026-11-15 | Can a saved fold lower the work of learning a new rule? (`FOLD-REUSE-20261115-001`) | — | [folder](research/FOLD-REUSE-20261115-001/) |
+| 2026-11-15 | Can two output tables reveal a shared hidden bit more cheaply with a fold? (`FOLD-TWO-OUTPUT-20261115-001`) | — | [folder](research/FOLD-TWO-OUTPUT-20261115-001/) |
+| 2026-11-15 | Learn to trace sources and switch groups of questions to computed answers (`GROUP-SENDER-20261115-001`) | — | [folder](research/GROUP-SENDER-20261115-001/) |
 | 2026-11-15 | Regroup an AND proof and carry its pair parity directly (`GROUPED-PRODUCT-REPLAY-20261115-001`) | [closure](proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GROUPED-PRODUCT-REPLAY-20261115-001/) |
 | 2026-11-15 | When switch settings let two blocks forget a shared choice (`GUARD-CHOICE-SEPARATION-20261115-001`) | [closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GUARD-CHOICE-SEPARATION-20261115-001/) |
 | 2026-11-15 | A linear cut scan with shared hidden padding (`ONE-RELAY-PADDING-20261115-001`) | [closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | One exposed quadratic sum on the 17-product path (`ONE-SIDED-PATH-SKETCH-20261115-001`) | [closure](proofs/ONE-SIDED-PATH-SKETCH-20261115-001Z/ONE-SIDED-PATH-SKETCH-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-SIDED-PATH-SKETCH-20261115-001/) |
+| 2026-11-15 | Can one checked signal pair rule out many one-bit summaries after a circuit edit? (`PAIR-PROOF-20261115-001`) | — | [folder](research/PAIR-PROOF-20261115-001/) |
+| 2026-11-15 | Does a verified local fold save work after a consumer edit one level up? (`PARENT-FOLD-20261115-001`) | — | [folder](research/PARENT-FOLD-20261115-001/) |
+| 2026-11-15 | Can short local certificates make exact two-output search cheaper? (`PROBE-WITNESS-20261115-001`) | — | [folder](research/PROBE-WITNESS-20261115-001/) |
 | 2026-11-15 | Transport and limits of proof-local reusable product names (`PRODUCT-NAME-TRANSFER-20261115-001`) | [closure](proofs/PRODUCT-NAME-TRANSFER-20261115-001Z/PRODUCT-NAME-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/PRODUCT-NAME-TRANSFER-20261115-001/) |
 | 2026-11-15 | Transferring route proof length when proofs can multiply two linear expressions (`QUADRATIC-ROUTE-TRANSFER-20261115-001`) | [closure](proofs/QUADRATIC-ROUTE-TRANSFER-20261115-001Z/QUADRATIC-ROUTE-TRANSFER-20261115-001Z-P001_synthesis/proof.md) | [folder](research/QUADRATIC-ROUTE-TRANSFER-20261115-001/) |
 | 2026-11-15 | What a one-pass reader must remember about joined routes (`ROUTE-FRONTIER-MEMORY-20261115-001`) | [closure](proofs/ROUTE-FRONTIER-MEMORY-20261115-001Z/ROUTE-FRONTIER-MEMORY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ROUTE-FRONTIER-MEMORY-20261115-001/) |
@@ -1641,6 +1662,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Cancel overlapping parity checks from strict clauses (`SHARED-REPORT-CANCELLATION-20261115-001`) | [closure](proofs/SHARED-REPORT-CANCELLATION-20261115-001Z/SHARED-REPORT-CANCELLATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/SHARED-REPORT-CANCELLATION-20261115-001/) |
 | 2026-11-15 | Choosing how to order two routes within each stage (`SWAPPED-ROUTE-GROUPING-20261115-001`) | [closure](proofs/SWAPPED-ROUTE-GROUPING-20261115-001Z/SWAPPED-ROUTE-GROUPING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/SWAPPED-ROUTE-GROUPING-20261115-001/) |
 | 2026-11-15 | Join four surviving reports and test growing non-affine checks (`TERNARY-REPORT-JOINS-20261115-001`) | [closure](proofs/TERNARY-REPORT-JOINS-20261115-001Z/TERNARY-REPORT-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TERNARY-REPORT-JOINS-20261115-001/) |
+| 2026-11-15 | Can a frozen learner order candidate triples cheaply enough to repay training? (`TRIPLE-ORDER-20261115-001`) | — | [folder](research/TRIPLE-ORDER-20261115-001/) |
 | 2026-11-15 | What two shared choices must report together (`TWO-CHOICE-IMPLICATIONS-20261115-001`) | [closure](proofs/TWO-CHOICE-IMPLICATIONS-20261115-001Z/TWO-CHOICE-IMPLICATIONS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-CHOICE-IMPLICATIONS-20261115-001/) |
 | 2026-11-15 | Two separately revealed XORs of path products (`TWO-PRODUCT-SKETCHES-20261115-001`) | [closure](proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-PRODUCT-SKETCHES-20261115-001/) |
 | 2026-11-15 | Two repeated middle variables and a second way to group the hidden choices (`TWO-RELAY-PADDING-20261115-001`) | [closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-RELAY-PADDING-20261115-001/) |

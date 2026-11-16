@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "LOCAL-RULE-ACTIONS-20261114-001-E001",
+  "ticket": "LOCAL-RULE-ACTIONS-20261114-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "How do independently configurable observation and action radii affect a local Q policy that can edit or compose signed constraints?",
+  "inputs": "Locally visible phases in a chain of supplied three-input parity maps, local unsigned structure, target phase, legal moves and preparation budget.",
+  "forbidden_inputs": "Hidden rule signs, whole-chain phase, evaluation labels during action selection, and a global state observer.",
+  "mapping": "Tabular Q-learning with action-dependent reward. Evaluation freezes the table.",
+  "primary_observable": "Fraction of entire projected boundary relations matching the target at submission in exhaustive three- and four-rule panels.",
+  "comparators_or_controls": "Uniform legal actions, untrained or shuffled reward, explicit local parity/fusion rule, hidden-sign control and independent exact scoring.",
+  "resource_budget": "Nine sight and action radius pairs, three training seeds per pair, small finite tables on CPU, no model service.",
+  "first_executable_signal": "Flipping one sign changes the allowed boundary relation while exact adjacent fusion preserves it.",
+  "stop_rule": "Run the bounded radius panel, report matched baselines and transfer or its failure; retain failures and ambiguous observations.",
+  "nonclaims": "Imposed task, reward and action algebra. No claim of general-purpose reasoning, native emergence from the agent, or accelerating AI development.",
+  "preregistration": "research/LOCAL-RULE-ACTIONS-20261114-001/preregistration.md"
+}

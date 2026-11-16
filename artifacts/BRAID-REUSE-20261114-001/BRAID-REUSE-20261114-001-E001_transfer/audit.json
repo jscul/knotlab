@@ -1,0 +1,3361 @@
+{
+  "result_file_sha256": "eea7c0749a83403abd94f22bb4dae1abb3d79e0108e026568f1224c8ff38f6a9",
+  "checker_sha256": "6397d324ace991f909a15812373c6073fb1d63deb94714576c788527dfd28901",
+  "verification": {
+    "pass": true,
+    "checks": {
+      "frozen_training_sha256": true,
+      "training_split": true,
+      "heldout_split": true,
+      "five_fixed_seeds": true,
+      "six_ordered_pairs": true,
+      "source_bundle_digest": true,
+      "source_action_digest": true,
+      "source_not_retrained": true,
+      "ten_distinct_arms": true,
+      "paired_17_initial_population_sha256": true,
+      "paired_17_variation_rng_final_sha256": true,
+      "paired_17_selection_rng_final_sha256": true,
+      "paired_29_initial_population_sha256": true,
+      "paired_29_variation_rng_final_sha256": true,
+      "paired_29_selection_rng_final_sha256": true,
+      "paired_43_initial_population_sha256": true,
+      "paired_43_variation_rng_final_sha256": true,
+      "paired_43_selection_rng_final_sha256": true,
+      "paired_59_initial_population_sha256": true,
+      "paired_59_variation_rng_final_sha256": true,
+      "paired_59_selection_rng_final_sha256": true,
+      "paired_71_initial_population_sha256": true,
+      "paired_71_variation_rng_final_sha256": true,
+      "paired_71_selection_rng_final_sha256": true,
+      "historical_acquisition_reproduced": true
+    },
+    "frozen_training_sha256": "fddf3bd898e2b658eb47503c2ccb9333d804c2b8f796c983bdfbba46fe992f54",
+    "full_search_reconstruction_run": true,
+    "arms": [
+      {
+        "seed": 17,
+        "condition": "raw",
+        "evaluations": 196640,
+        "unique_training_perfect": 6760,
+        "held_score_counts": {
+          "3": 4688,
+          "5": 633,
+          "7": 667,
+          "9": 772
+        },
+        "training_selected": {
+          "evaluation": 21042,
+          "genome": [
+            67,
+            65,
+            69,
+            33,
+            52
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 12,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 194077,
+              "NOT": 452809,
+              "AND": 388154,
+              "XOR": 194077,
+              "Boolean_gates": 1035040
+            },
+            "logical_program": {
+              "guarded_toggles": 3493386,
+              "NOT": 8150562,
+              "AND": 6986772,
+              "XOR": 3493386,
+              "Boolean_gates": 18630720
+            },
+            "packed_terminal_readout": {
+              "OR": 21042,
+              "NOT": 21042,
+              "Boolean_gates": 42084
+            },
+            "logical_terminal_readout": {
+              "OR": 378756,
+              "NOT": 378756,
+              "Boolean_gates": 757512
+            },
+            "fitness_evaluations": 21042,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 1826,
+          "genome": [
+            52,
+            58,
+            27,
+            8,
+            36,
+            65,
+            7,
+            4
+          ],
+          "expanded_guarded_length": 8,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 8,
+            "NOT": 18,
+            "AND": 16,
+            "XOR": 8
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 14681,
+              "NOT": 33921,
+              "AND": 29362,
+              "XOR": 14681,
+              "Boolean_gates": 77964
+            },
+            "logical_program": {
+              "guarded_toggles": 264258,
+              "NOT": 610578,
+              "AND": 528516,
+              "XOR": 264258,
+              "Boolean_gates": 1403352
+            },
+            "packed_terminal_readout": {
+              "OR": 1826,
+              "NOT": 1826,
+              "Boolean_gates": 3652
+            },
+            "logical_terminal_readout": {
+              "OR": 32868,
+              "NOT": 32868,
+              "Boolean_gates": 65736
+            },
+            "fitness_evaluations": 1826,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 6820,
+          "genome_hex": "1b08340403043c2442410725",
+          "elapsed_seconds": 0.045674063,
+          "macro_calls": 0,
+          "expanded_guarded_length": 12,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 60045,
+              "NOT": 138916,
+              "AND": 120090,
+              "XOR": 60045,
+              "Boolean_gates": 319051
+            },
+            "logical_program": {
+              "guarded_toggles": 1080810,
+              "NOT": 2500488,
+              "AND": 2161620,
+              "XOR": 1080810,
+              "Boolean_gates": 5742918
+            },
+            "packed_terminal_readout": {
+              "OR": 6820,
+              "NOT": 6820,
+              "Boolean_gates": 13640
+            },
+            "logical_terminal_readout": {
+              "OR": 122760,
+              "NOT": 122760,
+              "Boolean_gates": 245520
+            },
+            "fitness_evaluations": 6820,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 6820,
+        "capped_elapsed_seconds": 0.045674063,
+        "completed_budget_elapsed_seconds": 1.085582772,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 60045,
+            "NOT": 138916,
+            "AND": 120090,
+            "XOR": 60045,
+            "Boolean_gates": 319051
+          },
+          "logical_program": {
+            "guarded_toggles": 1080810,
+            "NOT": 2500488,
+            "AND": 2161620,
+            "XOR": 1080810,
+            "Boolean_gates": 5742918
+          },
+          "packed_terminal_readout": {
+            "OR": 6820,
+            "NOT": 6820,
+            "Boolean_gates": 13640
+          },
+          "logical_terminal_readout": {
+            "OR": 122760,
+            "NOT": 122760,
+            "Boolean_gates": 245520
+          },
+          "fitness_evaluations": 6820,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 1808452,
+            "NOT": 4221188,
+            "AND": 3616904,
+            "XOR": 1808452,
+            "Boolean_gates": 9646544
+          },
+          "logical_program": {
+            "guarded_toggles": 32552136,
+            "NOT": 75981384,
+            "AND": 65104272,
+            "XOR": 32552136,
+            "Boolean_gates": 173637792
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 1808452,
+              "NOT": 4221188,
+              "AND": 3616904,
+              "XOR": 1808452,
+              "Boolean_gates": 9646544
+            },
+            "logical_program": {
+              "guarded_toggles": 32552136,
+              "NOT": 75981384,
+              "AND": 65104272,
+              "XOR": 32552136,
+              "Boolean_gates": 173637792
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.9044254849432036,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 17,
+        "condition": "reuse",
+        "evaluations": 196640,
+        "unique_training_perfect": 6071,
+        "held_score_counts": {
+          "3": 3395,
+          "5": 602,
+          "7": 563,
+          "9": 1511
+        },
+        "training_selected": {
+          "evaluation": 18100,
+          "genome": [
+            39,
+            13,
+            10,
+            26,
+            63
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 12,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 272315,
+              "NOT": 595658,
+              "AND": 544630,
+              "XOR": 272315,
+              "Boolean_gates": 1412603
+            },
+            "logical_program": {
+              "guarded_toggles": 4901670,
+              "NOT": 10721844,
+              "AND": 9803340,
+              "XOR": 4901670,
+              "Boolean_gates": 25426854
+            },
+            "packed_terminal_readout": {
+              "OR": 18100,
+              "NOT": 18100,
+              "Boolean_gates": 36200
+            },
+            "logical_terminal_readout": {
+              "OR": 325800,
+              "NOT": 325800,
+              "Boolean_gates": 651600
+            },
+            "fitness_evaluations": 18100,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 1855,
+          "genome": [
+            55,
+            57,
+            64,
+            8,
+            24,
+            2,
+            53
+          ],
+          "expanded_guarded_length": 7,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 7,
+            "NOT": 16,
+            "AND": 14,
+            "XOR": 7
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 21507,
+              "NOT": 47697,
+              "AND": 43014,
+              "XOR": 21507,
+              "Boolean_gates": 112218
+            },
+            "logical_program": {
+              "guarded_toggles": 387126,
+              "NOT": 858546,
+              "AND": 774252,
+              "XOR": 387126,
+              "Boolean_gates": 2019924
+            },
+            "packed_terminal_readout": {
+              "OR": 1855,
+              "NOT": 1855,
+              "Boolean_gates": 3710
+            },
+            "logical_terminal_readout": {
+              "OR": 33390,
+              "NOT": 33390,
+              "Boolean_gates": 66780
+            },
+            "fitness_evaluations": 1855,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 5670,
+          "genome_hex": "402234303e3c0304310413352f26",
+          "elapsed_seconds": 0.032551791,
+          "macro_calls": 0,
+          "expanded_guarded_length": 14,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 79745,
+              "NOT": 174764,
+              "AND": 159490,
+              "XOR": 79745,
+              "Boolean_gates": 413999
+            },
+            "logical_program": {
+              "guarded_toggles": 1435410,
+              "NOT": 3145752,
+              "AND": 2870820,
+              "XOR": 1435410,
+              "Boolean_gates": 7451982
+            },
+            "packed_terminal_readout": {
+              "OR": 5670,
+              "NOT": 5670,
+              "Boolean_gates": 11340
+            },
+            "logical_terminal_readout": {
+              "OR": 102060,
+              "NOT": 102060,
+              "Boolean_gates": 204120
+            },
+            "fitness_evaluations": 5670,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 5670,
+        "capped_elapsed_seconds": 0.032551791,
+        "completed_budget_elapsed_seconds": 1.179081743,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 79745,
+            "NOT": 174764,
+            "AND": 159490,
+            "XOR": 79745,
+            "Boolean_gates": 413999
+          },
+          "logical_program": {
+            "guarded_toggles": 1435410,
+            "NOT": 3145752,
+            "AND": 2870820,
+            "XOR": 1435410,
+            "Boolean_gates": 7451982
+          },
+          "packed_terminal_readout": {
+            "OR": 5670,
+            "NOT": 5670,
+            "Boolean_gates": 11340
+          },
+          "logical_terminal_readout": {
+            "OR": 102060,
+            "NOT": 102060,
+            "Boolean_gates": 204120
+          },
+          "fitness_evaluations": 5670,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 2885696,
+            "NOT": 6324725,
+            "AND": 5771392,
+            "XOR": 2885696,
+            "Boolean_gates": 14981813
+          },
+          "logical_program": {
+            "guarded_toggles": 51942528,
+            "NOT": 113845050,
+            "AND": 103885056,
+            "XOR": 51942528,
+            "Boolean_gates": 269672634
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 2885696,
+              "NOT": 6324725,
+              "AND": 5771392,
+              "XOR": 2885696,
+              "Boolean_gates": 14981813
+            },
+            "logical_program": {
+              "guarded_toggles": 51942528,
+              "NOT": 113845050,
+              "AND": 103885056,
+              "XOR": 51942528,
+              "Boolean_gates": 269672634
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.8534714640118182,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 29,
+        "condition": "reuse",
+        "evaluations": 196640,
+        "unique_training_perfect": 5791,
+        "held_score_counts": {
+          "3": 3581,
+          "5": 617,
+          "7": 508,
+          "9": 1085
+        },
+        "training_selected": {
+          "evaluation": 47088,
+          "genome": [
+            39,
+            36,
+            4,
+            30,
+            51
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 14,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 653007,
+              "NOT": 1429694,
+              "AND": 1306014,
+              "XOR": 653007,
+              "Boolean_gates": 3388715
+            },
+            "logical_program": {
+              "guarded_toggles": 11754126,
+              "NOT": 25734492,
+              "AND": 23508252,
+              "XOR": 11754126,
+              "Boolean_gates": 60996870
+            },
+            "packed_terminal_readout": {
+              "OR": 47088,
+              "NOT": 47088,
+              "Boolean_gates": 94176
+            },
+            "logical_terminal_readout": {
+              "OR": 847584,
+              "NOT": 847584,
+              "Boolean_gates": 1695168
+            },
+            "fitness_evaluations": 47088,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 1982,
+          "genome": [
+            55,
+            46,
+            23,
+            26,
+            22,
+            66,
+            33,
+            52,
+            17
+          ],
+          "expanded_guarded_length": 9,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 9,
+            "NOT": 20,
+            "AND": 18,
+            "XOR": 9
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 17136,
+              "NOT": 38633,
+              "AND": 34272,
+              "XOR": 17136,
+              "Boolean_gates": 90041
+            },
+            "logical_program": {
+              "guarded_toggles": 308448,
+              "NOT": 695394,
+              "AND": 616896,
+              "XOR": 308448,
+              "Boolean_gates": 1620738
+            },
+            "packed_terminal_readout": {
+              "OR": 1982,
+              "NOT": 1982,
+              "Boolean_gates": 3964
+            },
+            "logical_terminal_readout": {
+              "OR": 35676,
+              "NOT": 35676,
+              "Boolean_gates": 71352
+            },
+            "fitness_evaluations": 1982,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 6931,
+          "genome_hex": "314841341436",
+          "elapsed_seconds": 0.035597276,
+          "macro_calls": 1,
+          "expanded_guarded_length": 17,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 69759,
+              "NOT": 156194,
+              "AND": 139518,
+              "XOR": 69759,
+              "Boolean_gates": 365471
+            },
+            "logical_program": {
+              "guarded_toggles": 1255662,
+              "NOT": 2811492,
+              "AND": 2511324,
+              "XOR": 1255662,
+              "Boolean_gates": 6578478
+            },
+            "packed_terminal_readout": {
+              "OR": 6931,
+              "NOT": 6931,
+              "Boolean_gates": 13862
+            },
+            "logical_terminal_readout": {
+              "OR": 124758,
+              "NOT": 124758,
+              "Boolean_gates": 249516
+            },
+            "fitness_evaluations": 6931,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 6931,
+        "capped_elapsed_seconds": 0.035597276,
+        "completed_budget_elapsed_seconds": 1.188445203,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 69759,
+            "NOT": 156194,
+            "AND": 139518,
+            "XOR": 69759,
+            "Boolean_gates": 365471
+          },
+          "logical_program": {
+            "guarded_toggles": 1255662,
+            "NOT": 2811492,
+            "AND": 2511324,
+            "XOR": 1255662,
+            "Boolean_gates": 6578478
+          },
+          "packed_terminal_readout": {
+            "OR": 6931,
+            "NOT": 6931,
+            "Boolean_gates": 13862
+          },
+          "logical_terminal_readout": {
+            "OR": 124758,
+            "NOT": 124758,
+            "Boolean_gates": 249516
+          },
+          "fitness_evaluations": 6931,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 2950638,
+            "NOT": 6470047,
+            "AND": 5901276,
+            "XOR": 2950638,
+            "Boolean_gates": 15321961
+          },
+          "logical_program": {
+            "guarded_toggles": 53111484,
+            "NOT": 116460846,
+            "AND": 106222968,
+            "XOR": 53111484,
+            "Boolean_gates": 275795298
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 2950638,
+              "NOT": 6470047,
+              "AND": 5901276,
+              "XOR": 2950638,
+              "Boolean_gates": 15321961
+            },
+            "logical_program": {
+              "guarded_toggles": 53111484,
+              "NOT": 116460846,
+              "AND": 106222968,
+              "XOR": 53111484,
+              "Boolean_gates": 275795298
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.8464654799317941,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 29,
+        "condition": "raw",
+        "evaluations": 196640,
+        "unique_training_perfect": 6886,
+        "held_score_counts": {
+          "3": 5021,
+          "5": 308,
+          "7": 388,
+          "9": 1169
+        },
+        "training_selected": {
+          "evaluation": 50806,
+          "genome": [
+            47,
+            2,
+            57,
+            63,
+            52
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 12,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 457120,
+              "NOT": 1065955,
+              "AND": 914240,
+              "XOR": 457120,
+              "Boolean_gates": 2437315
+            },
+            "logical_program": {
+              "guarded_toggles": 8228160,
+              "NOT": 19187190,
+              "AND": 16456320,
+              "XOR": 8228160,
+              "Boolean_gates": 43871670
+            },
+            "packed_terminal_readout": {
+              "OR": 50806,
+              "NOT": 50806,
+              "Boolean_gates": 101612
+            },
+            "logical_terminal_readout": {
+              "OR": 914508,
+              "NOT": 914508,
+              "Boolean_gates": 1829016
+            },
+            "fitness_evaluations": 50806,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 1982,
+          "genome": [
+            55,
+            46,
+            23,
+            26,
+            22,
+            66,
+            33,
+            52,
+            17
+          ],
+          "expanded_guarded_length": 9,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 9,
+            "NOT": 20,
+            "AND": 18,
+            "XOR": 9
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 13275,
+              "NOT": 31418,
+              "AND": 26550,
+              "XOR": 13275,
+              "Boolean_gates": 71243
+            },
+            "logical_program": {
+              "guarded_toggles": 238950,
+              "NOT": 565524,
+              "AND": 477900,
+              "XOR": 238950,
+              "Boolean_gates": 1282374
+            },
+            "packed_terminal_readout": {
+              "OR": 1982,
+              "NOT": 1982,
+              "Boolean_gates": 3964
+            },
+            "logical_terminal_readout": {
+              "OR": 35676,
+              "NOT": 35676,
+              "Boolean_gates": 71352
+            },
+            "fitness_evaluations": 1982,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 8169,
+          "genome_hex": "0416323e2e32311a0a41",
+          "elapsed_seconds": 0.041274885,
+          "macro_calls": 0,
+          "expanded_guarded_length": 10,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 64700,
+              "NOT": 152612,
+              "AND": 129400,
+              "XOR": 64700,
+              "Boolean_gates": 346712
+            },
+            "logical_program": {
+              "guarded_toggles": 1164600,
+              "NOT": 2747016,
+              "AND": 2329200,
+              "XOR": 1164600,
+              "Boolean_gates": 6240816
+            },
+            "packed_terminal_readout": {
+              "OR": 8169,
+              "NOT": 8169,
+              "Boolean_gates": 16338
+            },
+            "logical_terminal_readout": {
+              "OR": 147042,
+              "NOT": 147042,
+              "Boolean_gates": 294084
+            },
+            "fitness_evaluations": 8169,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 8169,
+        "capped_elapsed_seconds": 0.041274885,
+        "completed_budget_elapsed_seconds": 1.073388779,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 64700,
+            "NOT": 152612,
+            "AND": 129400,
+            "XOR": 64700,
+            "Boolean_gates": 346712
+          },
+          "logical_program": {
+            "guarded_toggles": 1164600,
+            "NOT": 2747016,
+            "AND": 2329200,
+            "XOR": 1164600,
+            "Boolean_gates": 6240816
+          },
+          "packed_terminal_readout": {
+            "OR": 8169,
+            "NOT": 8169,
+            "Boolean_gates": 16338
+          },
+          "logical_terminal_readout": {
+            "OR": 147042,
+            "NOT": 147042,
+            "Boolean_gates": 294084
+          },
+          "fitness_evaluations": 8169,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 1774429,
+            "NOT": 4162744,
+            "AND": 3548858,
+            "XOR": 1774429,
+            "Boolean_gates": 9486031
+          },
+          "logical_program": {
+            "guarded_toggles": 31939722,
+            "NOT": 74929392,
+            "AND": 63879444,
+            "XOR": 31939722,
+            "Boolean_gates": 170748558
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 1774429,
+              "NOT": 4162744,
+              "AND": 3548858,
+              "XOR": 1774429,
+              "Boolean_gates": 9486031
+            },
+            "logical_program": {
+              "guarded_toggles": 31939722,
+              "NOT": 74929392,
+              "AND": 63879444,
+              "XOR": 31939722,
+              "Boolean_gates": 170748558
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.9115094179287553,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 43,
+        "condition": "raw",
+        "evaluations": 196640,
+        "unique_training_perfect": 5212,
+        "held_score_counts": {
+          "3": 3519,
+          "5": 483,
+          "7": 390,
+          "9": 820
+        },
+        "training_selected": {
+          "evaluation": 9622,
+          "genome": [
+            24,
+            2,
+            57,
+            22,
+            63
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 13,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 89430,
+              "NOT": 209426,
+              "AND": 178860,
+              "XOR": 89430,
+              "Boolean_gates": 477716
+            },
+            "logical_program": {
+              "guarded_toggles": 1609740,
+              "NOT": 3769668,
+              "AND": 3219480,
+              "XOR": 1609740,
+              "Boolean_gates": 8598888
+            },
+            "packed_terminal_readout": {
+              "OR": 9622,
+              "NOT": 9622,
+              "Boolean_gates": 19244
+            },
+            "logical_terminal_readout": {
+              "OR": 173196,
+              "NOT": 173196,
+              "Boolean_gates": 346392
+            },
+            "fitness_evaluations": 9622,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 2907,
+          "genome": [
+            6,
+            32,
+            15,
+            54,
+            45,
+            52,
+            55
+          ],
+          "expanded_guarded_length": 7,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 7,
+            "NOT": 18,
+            "AND": 14,
+            "XOR": 7
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 23759,
+              "NOT": 55266,
+              "AND": 47518,
+              "XOR": 23759,
+              "Boolean_gates": 126543
+            },
+            "logical_program": {
+              "guarded_toggles": 427662,
+              "NOT": 994788,
+              "AND": 855324,
+              "XOR": 427662,
+              "Boolean_gates": 2277774
+            },
+            "packed_terminal_readout": {
+              "OR": 2907,
+              "NOT": 2907,
+              "Boolean_gates": 5814
+            },
+            "logical_terminal_readout": {
+              "OR": 52326,
+              "NOT": 52326,
+              "Boolean_gates": 104652
+            },
+            "fitness_evaluations": 2907,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 8151,
+          "genome_hex": "1a3f3c2430422921342f362338",
+          "elapsed_seconds": 0.043645084,
+          "macro_calls": 0,
+          "expanded_guarded_length": 13,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 74277,
+              "NOT": 173661,
+              "AND": 148554,
+              "XOR": 74277,
+              "Boolean_gates": 396492
+            },
+            "logical_program": {
+              "guarded_toggles": 1336986,
+              "NOT": 3125898,
+              "AND": 2673972,
+              "XOR": 1336986,
+              "Boolean_gates": 7136856
+            },
+            "packed_terminal_readout": {
+              "OR": 8151,
+              "NOT": 8151,
+              "Boolean_gates": 16302
+            },
+            "logical_terminal_readout": {
+              "OR": 146718,
+              "NOT": 146718,
+              "Boolean_gates": 293436
+            },
+            "fitness_evaluations": 8151,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 8151,
+        "capped_elapsed_seconds": 0.043645084,
+        "completed_budget_elapsed_seconds": 1.053225793,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 74277,
+            "NOT": 173661,
+            "AND": 148554,
+            "XOR": 74277,
+            "Boolean_gates": 396492
+          },
+          "logical_program": {
+            "guarded_toggles": 1336986,
+            "NOT": 3125898,
+            "AND": 2673972,
+            "XOR": 1336986,
+            "Boolean_gates": 7136856
+          },
+          "packed_terminal_readout": {
+            "OR": 8151,
+            "NOT": 8151,
+            "Boolean_gates": 16302
+          },
+          "logical_terminal_readout": {
+            "OR": 146718,
+            "NOT": 146718,
+            "Boolean_gates": 293436
+          },
+          "fitness_evaluations": 8151,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 1738494,
+            "NOT": 4071976,
+            "AND": 3476988,
+            "XOR": 1738494,
+            "Boolean_gates": 9287458
+          },
+          "logical_program": {
+            "guarded_toggles": 31292892,
+            "NOT": 73295568,
+            "AND": 62585784,
+            "XOR": 31292892,
+            "Boolean_gates": 167174244
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 1738494,
+              "NOT": 4071976,
+              "AND": 3476988,
+              "XOR": 1738494,
+              "Boolean_gates": 9287458
+            },
+            "logical_program": {
+              "guarded_toggles": 31292892,
+              "NOT": 73295568,
+              "AND": 62585784,
+              "XOR": 31292892,
+              "Boolean_gates": 167174244
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.9017394550610334,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 43,
+        "condition": "reuse",
+        "evaluations": 196640,
+        "unique_training_perfect": 4880,
+        "held_score_counts": {
+          "3": 3145,
+          "5": 451,
+          "7": 465,
+          "9": 819
+        },
+        "training_selected": {
+          "evaluation": 7605,
+          "genome": [
+            57,
+            12,
+            5,
+            45,
+            22
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 13,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 82425,
+              "NOT": 184100,
+              "AND": 164850,
+              "XOR": 82425,
+              "Boolean_gates": 431375
+            },
+            "logical_program": {
+              "guarded_toggles": 1483650,
+              "NOT": 3313800,
+              "AND": 2967300,
+              "XOR": 1483650,
+              "Boolean_gates": 7764750
+            },
+            "packed_terminal_readout": {
+              "OR": 7605,
+              "NOT": 7605,
+              "Boolean_gates": 15210
+            },
+            "logical_terminal_readout": {
+              "OR": 136890,
+              "NOT": 136890,
+              "Boolean_gates": 273780
+            },
+            "fitness_evaluations": 7605,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 2907,
+          "genome": [
+            6,
+            32,
+            15,
+            54,
+            45,
+            52,
+            55
+          ],
+          "expanded_guarded_length": 7,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 7,
+            "NOT": 18,
+            "AND": 14,
+            "XOR": 7
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 26931,
+              "NOT": 60525,
+              "AND": 53862,
+              "XOR": 26931,
+              "Boolean_gates": 141318
+            },
+            "logical_program": {
+              "guarded_toggles": 484758,
+              "NOT": 1089450,
+              "AND": 969516,
+              "XOR": 484758,
+              "Boolean_gates": 2543724
+            },
+            "packed_terminal_readout": {
+              "OR": 2907,
+              "NOT": 2907,
+              "Boolean_gates": 5814
+            },
+            "logical_terminal_readout": {
+              "OR": 52326,
+              "NOT": 52326,
+              "Boolean_gates": 104652
+            },
+            "fitness_evaluations": 2907,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 8151,
+          "genome_hex": "1a3f3c243042291d21342f10",
+          "elapsed_seconds": 0.043493787,
+          "macro_calls": 0,
+          "expanded_guarded_length": 12,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 89823,
+              "NOT": 200674,
+              "AND": 179646,
+              "XOR": 89823,
+              "Boolean_gates": 470143
+            },
+            "logical_program": {
+              "guarded_toggles": 1616814,
+              "NOT": 3612132,
+              "AND": 3233628,
+              "XOR": 1616814,
+              "Boolean_gates": 8462574
+            },
+            "packed_terminal_readout": {
+              "OR": 8151,
+              "NOT": 8151,
+              "Boolean_gates": 16302
+            },
+            "logical_terminal_readout": {
+              "OR": 146718,
+              "NOT": 146718,
+              "Boolean_gates": 293436
+            },
+            "fitness_evaluations": 8151,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 8151,
+        "capped_elapsed_seconds": 0.043493787,
+        "completed_budget_elapsed_seconds": 1.169544433,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 89823,
+            "NOT": 200674,
+            "AND": 179646,
+            "XOR": 89823,
+            "Boolean_gates": 470143
+          },
+          "logical_program": {
+            "guarded_toggles": 1616814,
+            "NOT": 3612132,
+            "AND": 3233628,
+            "XOR": 1616814,
+            "Boolean_gates": 8462574
+          },
+          "packed_terminal_readout": {
+            "OR": 8151,
+            "NOT": 8151,
+            "Boolean_gates": 16302
+          },
+          "logical_terminal_readout": {
+            "OR": 146718,
+            "NOT": 146718,
+            "Boolean_gates": 293436
+          },
+          "fitness_evaluations": 8151,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 2892069,
+            "NOT": 6314949,
+            "AND": 5784138,
+            "XOR": 2892069,
+            "Boolean_gates": 14991156
+          },
+          "logical_program": {
+            "guarded_toggles": 52057242,
+            "NOT": 113669082,
+            "AND": 104114484,
+            "XOR": 52057242,
+            "Boolean_gates": 269840808
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 2892069,
+              "NOT": 6314949,
+              "AND": 5784138,
+              "XOR": 2892069,
+              "Boolean_gates": 14991156
+            },
+            "logical_program": {
+              "guarded_toggles": 52057242,
+              "NOT": 113669082,
+              "AND": 104114484,
+              "XOR": 52057242,
+              "Boolean_gates": 269840808
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.8546699170256034,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 59,
+        "condition": "reuse",
+        "evaluations": 196640,
+        "unique_training_perfect": 5858,
+        "held_score_counts": {
+          "3": 3688,
+          "5": 520,
+          "7": 437,
+          "9": 1213
+        },
+        "training_selected": {
+          "evaluation": 19293,
+          "genome": [
+            67,
+            28,
+            69,
+            23,
+            63
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 12,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 259268,
+              "NOT": 571070,
+              "AND": 518536,
+              "XOR": 259268,
+              "Boolean_gates": 1348874
+            },
+            "logical_program": {
+              "guarded_toggles": 4666824,
+              "NOT": 10279260,
+              "AND": 9333648,
+              "XOR": 4666824,
+              "Boolean_gates": 24279732
+            },
+            "packed_terminal_readout": {
+              "OR": 19293,
+              "NOT": 19293,
+              "Boolean_gates": 38586
+            },
+            "logical_terminal_readout": {
+              "OR": 347274,
+              "NOT": 347274,
+              "Boolean_gates": 694548
+            },
+            "fitness_evaluations": 19293,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 3798,
+          "genome": [
+            57,
+            13,
+            27,
+            47,
+            56,
+            27,
+            8,
+            17,
+            34,
+            71,
+            62,
+            39,
+            51
+          ],
+          "expanded_guarded_length": 13,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 7,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 13,
+            "NOT": 31,
+            "AND": 26,
+            "XOR": 13
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 40939,
+              "NOT": 90452,
+              "AND": 81878,
+              "XOR": 40939,
+              "Boolean_gates": 213269
+            },
+            "logical_program": {
+              "guarded_toggles": 736902,
+              "NOT": 1628136,
+              "AND": 1473804,
+              "XOR": 736902,
+              "Boolean_gates": 3838842
+            },
+            "packed_terminal_readout": {
+              "OR": 3798,
+              "NOT": 3798,
+              "Boolean_gates": 7596
+            },
+            "logical_terminal_readout": {
+              "OR": 68364,
+              "NOT": 68364,
+              "Boolean_gates": 136728
+            },
+            "fitness_evaluations": 3798,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 6630,
+          "genome_hex": "1908021b412f2c0a2a192f",
+          "elapsed_seconds": 0.035604365,
+          "macro_calls": 0,
+          "expanded_guarded_length": 11,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 78033,
+              "NOT": 172059,
+              "AND": 156066,
+              "XOR": 78033,
+              "Boolean_gates": 406158
+            },
+            "logical_program": {
+              "guarded_toggles": 1404594,
+              "NOT": 3097062,
+              "AND": 2809188,
+              "XOR": 1404594,
+              "Boolean_gates": 7310844
+            },
+            "packed_terminal_readout": {
+              "OR": 6630,
+              "NOT": 6630,
+              "Boolean_gates": 13260
+            },
+            "logical_terminal_readout": {
+              "OR": 119340,
+              "NOT": 119340,
+              "Boolean_gates": 238680
+            },
+            "fitness_evaluations": 6630,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 6630,
+        "capped_elapsed_seconds": 0.035604365,
+        "completed_budget_elapsed_seconds": 1.1820151,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 78033,
+            "NOT": 172059,
+            "AND": 156066,
+            "XOR": 78033,
+            "Boolean_gates": 406158
+          },
+          "logical_program": {
+            "guarded_toggles": 1404594,
+            "NOT": 3097062,
+            "AND": 2809188,
+            "XOR": 1404594,
+            "Boolean_gates": 7310844
+          },
+          "packed_terminal_readout": {
+            "OR": 6630,
+            "NOT": 6630,
+            "Boolean_gates": 13260
+          },
+          "logical_terminal_readout": {
+            "OR": 119340,
+            "NOT": 119340,
+            "Boolean_gates": 238680
+          },
+          "fitness_evaluations": 6630,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 2903722,
+            "NOT": 6353609,
+            "AND": 5807444,
+            "XOR": 2903722,
+            "Boolean_gates": 15064775
+          },
+          "logical_program": {
+            "guarded_toggles": 52266996,
+            "NOT": 114364962,
+            "AND": 104533992,
+            "XOR": 52266996,
+            "Boolean_gates": 271165950
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 2903722,
+              "NOT": 6353609,
+              "AND": 5807444,
+              "XOR": 2903722,
+              "Boolean_gates": 15064775
+            },
+            "logical_program": {
+              "guarded_toggles": 52266996,
+              "NOT": 114364962,
+              "AND": 104533992,
+              "XOR": 52266996,
+              "Boolean_gates": 271165950
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.8429883429780602,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 59,
+        "condition": "raw",
+        "evaluations": 196640,
+        "unique_training_perfect": 5858,
+        "held_score_counts": {
+          "3": 3879,
+          "5": 278,
+          "7": 544,
+          "9": 1157
+        },
+        "training_selected": {
+          "evaluation": 4330,
+          "genome": [
+            37,
+            39,
+            22,
+            6,
+            47
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 12,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 32521,
+              "NOT": 75857,
+              "AND": 65042,
+              "XOR": 32521,
+              "Boolean_gates": 173420
+            },
+            "logical_program": {
+              "guarded_toggles": 585378,
+              "NOT": 1365426,
+              "AND": 1170756,
+              "XOR": 585378,
+              "Boolean_gates": 3121560
+            },
+            "packed_terminal_readout": {
+              "OR": 4330,
+              "NOT": 4330,
+              "Boolean_gates": 8660
+            },
+            "logical_terminal_readout": {
+              "OR": 77940,
+              "NOT": 77940,
+              "Boolean_gates": 155880
+            },
+            "fitness_evaluations": 4330,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 3563,
+          "genome": [
+            37,
+            39,
+            22,
+            6,
+            47,
+            40
+          ],
+          "expanded_guarded_length": 6,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 6,
+            "NOT": 14,
+            "AND": 12,
+            "XOR": 6
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 26557,
+              "NOT": 61927,
+              "AND": 53114,
+              "XOR": 26557,
+              "Boolean_gates": 141598
+            },
+            "logical_program": {
+              "guarded_toggles": 478026,
+              "NOT": 1114686,
+              "AND": 956052,
+              "XOR": 478026,
+              "Boolean_gates": 2548764
+            },
+            "packed_terminal_readout": {
+              "OR": 3563,
+              "NOT": 3563,
+              "Boolean_gates": 7126
+            },
+            "logical_terminal_readout": {
+              "OR": 64134,
+              "NOT": 64134,
+              "Boolean_gates": 128268
+            },
+            "fitness_evaluations": 3563,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 6630,
+          "genome_hex": "1908021b412f2c0a2a192f",
+          "elapsed_seconds": 0.033045784,
+          "macro_calls": 0,
+          "expanded_guarded_length": 11,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 51523,
+              "NOT": 120367,
+              "AND": 103046,
+              "XOR": 51523,
+              "Boolean_gates": 274936
+            },
+            "logical_program": {
+              "guarded_toggles": 927414,
+              "NOT": 2166606,
+              "AND": 1854828,
+              "XOR": 927414,
+              "Boolean_gates": 4948848
+            },
+            "packed_terminal_readout": {
+              "OR": 6630,
+              "NOT": 6630,
+              "Boolean_gates": 13260
+            },
+            "logical_terminal_readout": {
+              "OR": 119340,
+              "NOT": 119340,
+              "Boolean_gates": 238680
+            },
+            "fitness_evaluations": 6630,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 6630,
+        "capped_elapsed_seconds": 0.033045784,
+        "completed_budget_elapsed_seconds": 1.058991898,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 51523,
+            "NOT": 120367,
+            "AND": 103046,
+            "XOR": 51523,
+            "Boolean_gates": 274936
+          },
+          "logical_program": {
+            "guarded_toggles": 927414,
+            "NOT": 2166606,
+            "AND": 1854828,
+            "XOR": 927414,
+            "Boolean_gates": 4948848
+          },
+          "packed_terminal_readout": {
+            "OR": 6630,
+            "NOT": 6630,
+            "Boolean_gates": 13260
+          },
+          "logical_terminal_readout": {
+            "OR": 119340,
+            "NOT": 119340,
+            "Boolean_gates": 238680
+          },
+          "fitness_evaluations": 6630,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 1734439,
+            "NOT": 4056265,
+            "AND": 3468878,
+            "XOR": 1734439,
+            "Boolean_gates": 9259582
+          },
+          "logical_program": {
+            "guarded_toggles": 31219902,
+            "NOT": 73012770,
+            "AND": 62439804,
+            "XOR": 31219902,
+            "Boolean_gates": 166672476
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 1734439,
+              "NOT": 4056265,
+              "AND": 3468878,
+              "XOR": 1734439,
+              "Boolean_gates": 9259582
+            },
+            "logical_program": {
+              "guarded_toggles": 31219902,
+              "NOT": 73012770,
+              "AND": 62439804,
+              "XOR": 31219902,
+              "Boolean_gates": 166672476
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.9100198349915445,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 71,
+        "condition": "raw",
+        "evaluations": 196640,
+        "unique_training_perfect": 6915,
+        "held_score_counts": {
+          "3": 4782,
+          "5": 513,
+          "7": 508,
+          "9": 1112
+        },
+        "training_selected": {
+          "evaluation": 46694,
+          "genome": [
+            46,
+            2,
+            33,
+            54,
+            53
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 12,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 419209,
+              "NOT": 980603,
+              "AND": 838418,
+              "XOR": 419209,
+              "Boolean_gates": 2238230
+            },
+            "logical_program": {
+              "guarded_toggles": 7545762,
+              "NOT": 17650854,
+              "AND": 15091524,
+              "XOR": 7545762,
+              "Boolean_gates": 40288140
+            },
+            "packed_terminal_readout": {
+              "OR": 46694,
+              "NOT": 46694,
+              "Boolean_gates": 93388
+            },
+            "logical_terminal_readout": {
+              "OR": 840492,
+              "NOT": 840492,
+              "Boolean_gates": 1680984
+            },
+            "fitness_evaluations": 46694,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 3775,
+          "genome": [
+            32,
+            46,
+            53,
+            67,
+            55,
+            3,
+            68,
+            21
+          ],
+          "expanded_guarded_length": 8,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 8,
+            "NOT": 18,
+            "AND": 16,
+            "XOR": 8
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 28785,
+              "NOT": 66969,
+              "AND": 57570,
+              "XOR": 28785,
+              "Boolean_gates": 153324
+            },
+            "logical_program": {
+              "guarded_toggles": 518130,
+              "NOT": 1205442,
+              "AND": 1036260,
+              "XOR": 518130,
+              "Boolean_gates": 2759832
+            },
+            "packed_terminal_readout": {
+              "OR": 3775,
+              "NOT": 3775,
+              "Boolean_gates": 7550
+            },
+            "logical_terminal_readout": {
+              "OR": 67950,
+              "NOT": 67950,
+              "Boolean_gates": 135900
+            },
+            "fitness_evaluations": 3775,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 4173,
+          "genome_hex": "0a192340143d35410645",
+          "elapsed_seconds": 0.020698856,
+          "macro_calls": 0,
+          "expanded_guarded_length": 10,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 32119,
+              "NOT": 74815,
+              "AND": 64238,
+              "XOR": 32119,
+              "Boolean_gates": 171172
+            },
+            "logical_program": {
+              "guarded_toggles": 578142,
+              "NOT": 1346670,
+              "AND": 1156284,
+              "XOR": 578142,
+              "Boolean_gates": 3081096
+            },
+            "packed_terminal_readout": {
+              "OR": 4173,
+              "NOT": 4173,
+              "Boolean_gates": 8346
+            },
+            "logical_terminal_readout": {
+              "OR": 75114,
+              "NOT": 75114,
+              "Boolean_gates": 150228
+            },
+            "fitness_evaluations": 4173,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 4173,
+        "capped_elapsed_seconds": 0.020698856,
+        "completed_budget_elapsed_seconds": 1.07586841,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 32119,
+            "NOT": 74815,
+            "AND": 64238,
+            "XOR": 32119,
+            "Boolean_gates": 171172
+          },
+          "logical_program": {
+            "guarded_toggles": 578142,
+            "NOT": 1346670,
+            "AND": 1156284,
+            "XOR": 578142,
+            "Boolean_gates": 3081096
+          },
+          "packed_terminal_readout": {
+            "OR": 4173,
+            "NOT": 4173,
+            "Boolean_gates": 8346
+          },
+          "logical_terminal_readout": {
+            "OR": 75114,
+            "NOT": 75114,
+            "Boolean_gates": 150228
+          },
+          "fitness_evaluations": 4173,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 1745256,
+            "NOT": 4071370,
+            "AND": 3490512,
+            "XOR": 1745256,
+            "Boolean_gates": 9307138
+          },
+          "logical_program": {
+            "guarded_toggles": 31414608,
+            "NOT": 73284660,
+            "AND": 62829216,
+            "XOR": 31414608,
+            "Boolean_gates": 167528484
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 1745256,
+              "NOT": 4071370,
+              "AND": 3490512,
+              "XOR": 1745256,
+              "Boolean_gates": 9307138
+            },
+            "logical_program": {
+              "guarded_toggles": 31414608,
+              "NOT": 73284660,
+              "AND": 62829216,
+              "XOR": 31414608,
+              "Boolean_gates": 167528484
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.8942341200308874,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      },
+      {
+        "seed": 71,
+        "condition": "reuse",
+        "evaluations": 196640,
+        "unique_training_perfect": 6052,
+        "held_score_counts": {
+          "3": 3648,
+          "5": 482,
+          "7": 478,
+          "9": 1444
+        },
+        "training_selected": {
+          "evaluation": 22930,
+          "genome": [
+            37,
+            70,
+            47,
+            4,
+            52
+          ],
+          "expanded_guarded_length": 5,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 5,
+            "NOT": 10,
+            "AND": 10,
+            "XOR": 5
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 290564,
+              "NOT": 643144,
+              "AND": 581128,
+              "XOR": 290564,
+              "Boolean_gates": 1514836
+            },
+            "logical_program": {
+              "guarded_toggles": 5230152,
+              "NOT": 11576592,
+              "AND": 10460304,
+              "XOR": 5230152,
+              "Boolean_gates": 27267048
+            },
+            "packed_terminal_readout": {
+              "OR": 22930,
+              "NOT": 22930,
+              "Boolean_gates": 45860
+            },
+            "logical_terminal_readout": {
+              "OR": 412740,
+              "NOT": 412740,
+              "Boolean_gates": 825480
+            },
+            "fitness_evaluations": 22930,
+            "lanes": 18
+          }
+        },
+        "first_train_perfect": {
+          "evaluation": 3943,
+          "genome": [
+            0,
+            3,
+            17,
+            55,
+            21,
+            22,
+            28,
+            65
+          ],
+          "expanded_guarded_length": 8,
+          "macro_calls": 0,
+          "training_score": 24,
+          "train_correct": 18,
+          "held_correct": 3,
+          "validated_exact": false,
+          "inference_counts_per_input": {
+            "guarded_toggles": 8,
+            "NOT": 19,
+            "AND": 16,
+            "XOR": 8
+          },
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 36819,
+              "NOT": 83325,
+              "AND": 73638,
+              "XOR": 36819,
+              "Boolean_gates": 193782
+            },
+            "logical_program": {
+              "guarded_toggles": 662742,
+              "NOT": 1499850,
+              "AND": 1325484,
+              "XOR": 662742,
+              "Boolean_gates": 3488076
+            },
+            "packed_terminal_readout": {
+              "OR": 3943,
+              "NOT": 3943,
+              "Boolean_gates": 7886
+            },
+            "logical_terminal_readout": {
+              "OR": 70974,
+              "NOT": 70974,
+              "Boolean_gates": 141948
+            },
+            "fitness_evaluations": 3943,
+            "lanes": 18
+          }
+        },
+        "retrospective_first_validated": {
+          "evaluation": 5261,
+          "genome_hex": "3d303d2d2f34082a0d",
+          "elapsed_seconds": 0.026364426,
+          "macro_calls": 0,
+          "expanded_guarded_length": 9,
+          "charges_to_event": {
+            "packed_program": {
+              "guarded_toggles": 51249,
+              "NOT": 115650,
+              "AND": 102498,
+              "XOR": 51249,
+              "Boolean_gates": 269397
+            },
+            "logical_program": {
+              "guarded_toggles": 922482,
+              "NOT": 2081700,
+              "AND": 1844964,
+              "XOR": 922482,
+              "Boolean_gates": 4849146
+            },
+            "packed_terminal_readout": {
+              "OR": 5261,
+              "NOT": 5261,
+              "Boolean_gates": 10522
+            },
+            "logical_terminal_readout": {
+              "OR": 94698,
+              "NOT": 94698,
+              "Boolean_gates": 189396
+            },
+            "fitness_evaluations": 5261,
+            "lanes": 18
+          }
+        },
+        "right_censored": false,
+        "capped_evaluation": 5261,
+        "capped_elapsed_seconds": 0.026364426,
+        "completed_budget_elapsed_seconds": 1.187952259,
+        "capped_charges": {
+          "packed_program": {
+            "guarded_toggles": 51249,
+            "NOT": 115650,
+            "AND": 102498,
+            "XOR": 51249,
+            "Boolean_gates": 269397
+          },
+          "logical_program": {
+            "guarded_toggles": 922482,
+            "NOT": 2081700,
+            "AND": 1844964,
+            "XOR": 922482,
+            "Boolean_gates": 4849146
+          },
+          "packed_terminal_readout": {
+            "OR": 5261,
+            "NOT": 5261,
+            "Boolean_gates": 10522
+          },
+          "logical_terminal_readout": {
+            "OR": 94698,
+            "NOT": 94698,
+            "Boolean_gates": 189396
+          },
+          "fitness_evaluations": 5261,
+          "lanes": 18
+        },
+        "full_budget_charges": {
+          "packed_program": {
+            "guarded_toggles": 2937415,
+            "NOT": 6416777,
+            "AND": 5874830,
+            "XOR": 2937415,
+            "Boolean_gates": 15229022
+          },
+          "logical_program": {
+            "guarded_toggles": 52873470,
+            "NOT": 115501986,
+            "AND": 105746940,
+            "XOR": 52873470,
+            "Boolean_gates": 274122396
+          },
+          "packed_terminal_readout": {
+            "OR": 196640,
+            "NOT": 196640,
+            "Boolean_gates": 393280
+          },
+          "logical_terminal_readout": {
+            "OR": 3539520,
+            "NOT": 3539520,
+            "Boolean_gates": 7079040
+          },
+          "fitness_evaluations": 196640,
+          "lanes": 18
+        },
+        "cost_recount": "candidate expansions and all saved perfect events independently replayed; complete proposal recount requires reconstruct_arm",
+        "post_freeze_reproduction": {
+          "pass": true,
+          "checks": {
+            "right_censor": true,
+            "capped_evaluation": true,
+            "capped_charges": true,
+            "held_distribution": true,
+            "first_validated_event": true,
+            "first_train_perfect_held_score": true,
+            "training_selected_held_score": true,
+            "offline_held_executions": true,
+            "offline_held_charges": true,
+            "first_train_perfect_raw_replay": true,
+            "training_selected_raw_replay": true,
+            "retrospective_first_validated_raw_replay": true,
+            "offline_scalar_charges": true,
+            "offline_scalar_point_executions": true
+          }
+        },
+        "search_reconstruction": {
+          "pass": true,
+          "checks": {
+            "evaluations": true,
+            "complete_cost_ledger": true,
+            "every_trajectory_row": true,
+            "every_first_seen_perfect_event": true,
+            "perfect_repeats": true,
+            "initial_population": true,
+            "final_variation_rng": true,
+            "final_selection_rng": true,
+            "training_selected": true,
+            "first_train_perfect": true
+          },
+          "evaluations": 196640,
+          "reconstructed_charges": {
+            "packed_program": {
+              "guarded_toggles": 2937415,
+              "NOT": 6416777,
+              "AND": 5874830,
+              "XOR": 2937415,
+              "Boolean_gates": 15229022
+            },
+            "logical_program": {
+              "guarded_toggles": 52873470,
+              "NOT": 115501986,
+              "AND": 105746940,
+              "XOR": 52873470,
+              "Boolean_gates": 274122396
+            },
+            "packed_terminal_readout": {
+              "OR": 196640,
+              "NOT": 196640,
+              "Boolean_gates": 393280
+            },
+            "logical_terminal_readout": {
+              "OR": 3539520,
+              "NOT": 3539520,
+              "Boolean_gates": 7079040
+            },
+            "fitness_evaluations": 196640,
+            "lanes": 18
+          },
+          "checker_seconds": 0.8496964679798111,
+          "checker_acceleration": "27-state effects independently compiled from raw Boolean flips; costs charge every expansion"
+        }
+      }
+    ],
+    "paired": [
+      {
+        "seed": 17,
+        "raw": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 6820,
+          "capped_elapsed_seconds": 0.045674063,
+          "completed_budget_elapsed_seconds": 1.085582772,
+          "capped_logical_program_gates": 5742918,
+          "capped_logical_guarded_steps": 1080810,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 173637792
+        },
+        "reuse": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 5670,
+          "capped_elapsed_seconds": 0.032551791,
+          "completed_budget_elapsed_seconds": 1.179081743,
+          "capped_logical_program_gates": 7451982,
+          "capped_logical_guarded_steps": 1435410,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 269672634
+        },
+        "both_retrospectively_validated": true,
+        "capped_proposal_saving_reuse": 1150,
+        "capped_logical_program_gate_saving_reuse": -1709064,
+        "completed_budget_logical_program_gate_saving_reuse": -96034842
+      },
+      {
+        "seed": 29,
+        "raw": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 8169,
+          "capped_elapsed_seconds": 0.041274885,
+          "completed_budget_elapsed_seconds": 1.073388779,
+          "capped_logical_program_gates": 6240816,
+          "capped_logical_guarded_steps": 1164600,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 170748558
+        },
+        "reuse": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 6931,
+          "capped_elapsed_seconds": 0.035597276,
+          "completed_budget_elapsed_seconds": 1.188445203,
+          "capped_logical_program_gates": 6578478,
+          "capped_logical_guarded_steps": 1255662,
+          "first_validated_macro_calls": 1,
+          "full_budget_logical_program_gates": 275795298
+        },
+        "both_retrospectively_validated": true,
+        "capped_proposal_saving_reuse": 1238,
+        "capped_logical_program_gate_saving_reuse": -337662,
+        "completed_budget_logical_program_gate_saving_reuse": -105046740
+      },
+      {
+        "seed": 43,
+        "raw": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 8151,
+          "capped_elapsed_seconds": 0.043645084,
+          "completed_budget_elapsed_seconds": 1.053225793,
+          "capped_logical_program_gates": 7136856,
+          "capped_logical_guarded_steps": 1336986,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 167174244
+        },
+        "reuse": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 8151,
+          "capped_elapsed_seconds": 0.043493787,
+          "completed_budget_elapsed_seconds": 1.169544433,
+          "capped_logical_program_gates": 8462574,
+          "capped_logical_guarded_steps": 1616814,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 269840808
+        },
+        "both_retrospectively_validated": true,
+        "capped_proposal_saving_reuse": 0,
+        "capped_logical_program_gate_saving_reuse": -1325718,
+        "completed_budget_logical_program_gate_saving_reuse": -102666564
+      },
+      {
+        "seed": 59,
+        "raw": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 6630,
+          "capped_elapsed_seconds": 0.033045784,
+          "completed_budget_elapsed_seconds": 1.058991898,
+          "capped_logical_program_gates": 4948848,
+          "capped_logical_guarded_steps": 927414,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 166672476
+        },
+        "reuse": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 6630,
+          "capped_elapsed_seconds": 0.035604365,
+          "completed_budget_elapsed_seconds": 1.1820151,
+          "capped_logical_program_gates": 7310844,
+          "capped_logical_guarded_steps": 1404594,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 271165950
+        },
+        "both_retrospectively_validated": true,
+        "capped_proposal_saving_reuse": 0,
+        "capped_logical_program_gate_saving_reuse": -2361996,
+        "completed_budget_logical_program_gate_saving_reuse": -104493474
+      },
+      {
+        "seed": 71,
+        "raw": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 4173,
+          "capped_elapsed_seconds": 0.020698856,
+          "completed_budget_elapsed_seconds": 1.07586841,
+          "capped_logical_program_gates": 3081096,
+          "capped_logical_guarded_steps": 578142,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 167528484
+        },
+        "reuse": {
+          "train_selected_held_correct": 3,
+          "train_selected_validated": false,
+          "right_censored": false,
+          "capped_evaluation": 5261,
+          "capped_elapsed_seconds": 0.026364426,
+          "completed_budget_elapsed_seconds": 1.187952259,
+          "capped_logical_program_gates": 4849146,
+          "capped_logical_guarded_steps": 922482,
+          "first_validated_macro_calls": 0,
+          "full_budget_logical_program_gates": 274122396
+        },
+        "both_retrospectively_validated": true,
+        "capped_proposal_saving_reuse": -1088,
+        "capped_logical_program_gate_saving_reuse": -1768050,
+        "completed_budget_logical_program_gate_saving_reuse": -106593912
+      }
+    ],
+    "acquisition_cost": {
+      "pass": true,
+      "reproduction": {
+        "proposal_count": true,
+        "distinct_images": true,
+        "first_maximum": true,
+        "final_actions": true,
+        "final_digest": true,
+        "final_score": true,
+        "saved_primitive_counts": true,
+        "every_saved_trajectory_row": true,
+        "bundle_same_forward": true,
+        "saved_primitive_repertoire": true
+      },
+      "source_sha256": "70251027a8032883dae4a44b4b3767d2171ad21b5e10c6e3f12f3c1e617cae46",
+      "raw_results_sha256": "017a3c40f2c95da9e50835fb1af7815d5519d5ce47804e203392ffece492384d",
+      "bundle_sha256": "0314efd099e3a54c3791b60968587f1e1edb4e0112ea238eab84fb6ca1a8c8a9",
+      "forward_action_sha256": "a740b9a93061a75b78ce24a135b5adc94ca55a0206872c7b69e97117837f4246",
+      "guided_forward_only": true,
+      "proposals": 98336,
+      "reward_cache_misses": 27551,
+      "reward_cache_hits": 70785,
+      "first_maximum_proposal": 1500,
+      "first_maximum_cumulative_work_per_input": {
+        "guarded_steps_per_input": 21914,
+        "NOT_per_input": 51939,
+        "AND_per_input": 43828,
+        "XOR_per_input": 21914,
+        "gates_per_input": 117681
+      },
+      "final_program": {
+        "actions": [
+          11,
+          1,
+          10,
+          4,
+          8,
+          5,
+          2,
+          10,
+          8,
+          11,
+          7,
+          5
+        ],
+        "guarded_steps": 12,
+        "NOT": 24,
+        "AND": 24,
+        "XOR": 12,
+        "total_gates": 60
+      },
+      "all_proposals_work_per_input": {
+        "guarded_steps_per_input": 1534500,
+        "NOT_per_input": 3584957,
+        "AND_per_input": 3069000,
+        "XOR_per_input": 1534500,
+        "gates_per_input": 8188457
+      },
+      "mean_candidate_cost_per_input": {
+        "guarded_steps_fraction": [
+          383625,
+          24584
+        ],
+        "primitive_gates_fraction": [
+          8188457,
+          98336
+        ],
+        "guarded_steps": 15.604661568499838,
+        "primitive_gates": 83.27018589326391
+      },
+      "semantic_nine_state_work": {
+        "guarded_applications": 13810500,
+        "enabled_bit_toggles": 3069000,
+        "NOT": 32264613,
+        "AND": 27621000,
+        "XOR": 13810500,
+        "total_gates": 73696113
+      },
+      "length_histogram": {
+        "4": 395,
+        "5": 1414,
+        "6": 2757,
+        "7": 3886,
+        "8": 4677,
+        "9": 5434,
+        "10": 5221,
+        "11": 4740,
+        "12": 3892,
+        "13": 4377,
+        "14": 4544,
+        "15": 5121,
+        "16": 5268,
+        "17": 5880,
+        "18": 6079,
+        "19": 6747,
+        "20": 5882,
+        "21": 5453,
+        "22": 4431,
+        "23": 4163,
+        "24": 3459,
+        "25": 2262,
+        "26": 1002,
+        "27": 707,
+        "28": 366,
+        "29": 174,
+        "30": 5
+      },
+      "action_histogram": {
+        "0": 129225,
+        "1": 126191,
+        "2": 128871,
+        "3": 126508,
+        "4": 119292,
+        "5": 117519,
+        "6": 127765,
+        "7": 131323,
+        "8": 131485,
+        "9": 132459,
+        "10": 135427,
+        "11": 128435
+      },
+      "best_frontier": [
+        {
+          "proposal": 1,
+          "score": 22,
+          "length": 6
+        },
+        {
+          "proposal": 3,
+          "score": 25,
+          "length": 20
+        },
+        {
+          "proposal": 4,
+          "score": 25,
+          "length": 12
+        },
+        {
+          "proposal": 15,
+          "score": 27,
+          "length": 12
+        },
+        {
+          "proposal": 135,
+          "score": 27,
+          "length": 9
+        },
+        {
+          "proposal": 139,
+          "score": 27,
+          "length": 8
+        },
+        {
+          "proposal": 176,
+          "score": 27,
+          "length": 6
+        },
+        {
+          "proposal": 200,
+          "score": 29,
+          "length": 8
+        },
+        {
+          "proposal": 201,
+          "score": 31,
+          "length": 11
+        },
+        {
+          "proposal": 288,
+          "score": 32,
+          "length": 12
+        },
+        {
+          "proposal": 453,
+          "score": 33,
+          "length": 14
+        },
+        {
+          "proposal": 541,
+          "score": 33,
+          "length": 7
+        },
+        {
+          "proposal": 546,
+          "score": 36,
+          "length": 8
+        },
+        {
+          "proposal": 927,
+          "score": 42,
+          "length": 8
+        },
+        {
+          "proposal": 1500,
+          "score": 48,
+          "length": 24
+        },
+        {
+          "proposal": 5293,
+          "score": 48,
+          "length": 18
+        },
+        {
+          "proposal": 6735,
+          "score": 48,
+          "length": 14
+        },
+        {
+          "proposal": 51610,
+          "score": 48,
+          "length": 12
+        }
+      ],
+      "implementation": {
+        "program_image_translate_calls": 1534500,
+        "program_image_translated_bytes": 13810500,
+        "reward_translate_calls_on_cache_misses": 165306,
+        "reward_translated_bytes_on_cache_misses": 3471426,
+        "reward_padded_table_bytes_created": 14106112,
+        "terminal_training_braid_comparisons": 495918,
+        "cached_image_key_payload_bytes": 247959,
+        "shared_primitive_translation_table_bytes": 3072,
+        "parent_choices_including_restarts": 8192,
+        "forced_periodic_restarts": 256,
+        "source_program_execution_bypassed_by_reward_cache": false,
+        "primitive_interpreter_used_for_original_search": false
+      },
+      "timing": {
+        "audit_reproduction_seconds": 0.7836583839962259,
+        "original_combined_four_stage_runner_seconds": 1.2156773910392076,
+        "original_guided_forward_seconds": null
+      },
+      "cost_scope": "The full fixed guided-forward stage selected the reusable final program; undo and neutral searches are excluded.",
+      "unit_warning": "Nine-state literal primitive counts are semantic work, not measured instructions of the byte-packed implementation. Do not mix them with cached scoring or wall seconds."
+    },
+    "payback": {
+      "same_target_all_pairs_validated": true,
+      "retrospective_only": true,
+      "proposal_units": {
+        "mean_saving_per_repeat": 260.0,
+        "mean_saving_exact": [
+          260,
+          1
+        ],
+        "sum_saving_over_repeats": 1300,
+        "repeats": 5,
+        "acquisition_over_mean_saving": [
+          24584,
+          65
+        ],
+        "hypothetical_break_even_uses": 379
+      },
+      "logical_actor_gate_units": {
+        "mean_saving_per_repeat": -1500498.0,
+        "mean_saving_exact": [
+          -1500498,
+          1
+        ],
+        "sum_saving_over_repeats": -7502490,
+        "repeats": 5,
+        "hypothetical_break_even_uses": null,
+        "reason": "No positive mean saving in this unit."
+      },
+      "warning": "Retrospective first-valid arithmetic uses an oracle unavailable to training selection. It is not an operational early-stopping or learning-speed result, and repeats one target rather than a task distribution. Actor gate units exclude scoring/readout overhead.",
+      "completed_fixed_budget": {
+        "proposal_units": {
+          "per_task_saving": 0,
+          "first_break_even_task_count": null,
+          "reason": "No positive per-task saving in this unit."
+        },
+        "logical_actor_gate_units": {
+          "mean_saving_per_repeat": -102967106.4,
+          "mean_saving_exact": [
+            -514835532,
+            5
+          ],
+          "sum_saving_over_repeats": -514835532,
+          "repeats": 5,
+          "hypothetical_break_even_uses": null,
+          "reason": "No positive mean saving in this unit."
+        },
+        "raw_total_logical_actor_gates_five_runs": 845761554,
+        "reuse_total_logical_actor_gates_five_runs": 1360597086,
+        "scope": "Actual completed fixed-budget fits, separately from retrospective first valid discovery."
+      },
+      "training_selected_validated_counts": {
+        "raw": 0,
+        "reuse": 0
+      },
+      "operational_payback_established": false,
+      "wall_time_payback_estimated": false,
+      "wall_time_reason": "Historical source acquisition was not separately timed; its recorded time includes four stages and assessment."
+    },
+    "completion_control": {
+      "global_positive_states": 9,
+      "train_positive_states": 6,
+      "heldout_positive_states_for_any_train_perfect_permutation": 3,
+      "heldout_label_completions": 84,
+      "possible_heldout_correct_counts": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "globally_correct_reversible_completions": 2323293370334576640000,
+      "uniform_completion_fraction": [
+        1,
+        84
+      ],
+      "warning": "Combinatorial only. The fitted program distribution is not uniform over completions."
+    },
+    "constructive_controls": {
+      "z_add_x_then_y": {
+        "train": {
+          "correct": 18,
+          "total": 18,
+          "exact": true,
+          "weighted_reward": 24,
+          "maximum_reward": 24
+        },
+        "heldout": {
+          "correct": 9,
+          "total": 9,
+          "exact": true,
+          "weighted_reward": 12,
+          "maximum_reward": 12
+        },
+        "all": {
+          "correct": 27,
+          "total": 27,
+          "exact": true,
+          "weighted_reward": 36,
+          "maximum_reward": 36
+        },
+        "distinct_outputs": 27,
+        "positive_outputs": 9,
+        "heldout_positive_outputs": 3,
+        "execution": {
+          "syntax_instructions": 8,
+          "frozen_calls": 0,
+          "per_input": {
+            "guarded_steps": 8,
+            "NOT": 16,
+            "AND": 16,
+            "XOR": 8,
+            "total_gates": 40
+          },
+          "inputs": 18,
+          "logical_work": {
+            "guarded_steps": 144,
+            "NOT": 288,
+            "AND": 288,
+            "XOR": 144,
+            "total_gates": 720
+          }
+        }
+      },
+      "x_add_y_then_z_add_x": {
+        "train": {
+          "correct": 18,
+          "total": 18,
+          "exact": true,
+          "weighted_reward": 24,
+          "maximum_reward": 24
+        },
+        "heldout": {
+          "correct": 9,
+          "total": 9,
+          "exact": true,
+          "weighted_reward": 12,
+          "maximum_reward": 12
+        },
+        "all": {
+          "correct": 27,
+          "total": 27,
+          "exact": true,
+          "weighted_reward": 36,
+          "maximum_reward": 36
+        },
+        "distinct_outputs": 27,
+        "positive_outputs": 9,
+        "heldout_positive_outputs": 3,
+        "execution": {
+          "syntax_instructions": 8,
+          "frozen_calls": 0,
+          "per_input": {
+            "guarded_steps": 8,
+            "NOT": 16,
+            "AND": 16,
+            "XOR": 8,
+            "total_gates": 40
+          },
+          "inputs": 18,
+          "logical_work": {
+            "guarded_steps": 144,
+            "NOT": 288,
+            "AND": 288,
+            "XOR": 144,
+            "total_gates": 720
+          }
+        }
+      }
+    },
+    "scope": "One frozen new task, five paired seeds. No held labels entered proposal selection; retrospective discovery and training-selected inference are separate."
+  }
+}

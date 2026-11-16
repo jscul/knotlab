@@ -1,0 +1,36 @@
+{
+  "acceptance_gate": "Independent whole-system readout and matched plain-table comparator on every held input.",
+  "completion_gate": "Report source and target costs, an information-loss control and the limit of the evidence.",
+  "dependencies": [
+    "HOLD-COUNT-20261111-001Z",
+    "LEARN-PARITY-20261111-001Z",
+    "SEARCH-AUDIT-20261112-001Z",
+    "SHARED-COUNT-20261111-001Z"
+  ],
+  "dependency_text": "Accepted source search, its blind-search correction, the two observed count digits and the joined construction.",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/FOLD-TRANSFER-20261114-001/FOLD-TRANSFER-20261114-001-E001_hidden_reads/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/FOLD-TRANSFER-20261114-001/FOLD-TRANSFER-20261114-001-E001_hidden_reads/result.json"
+    ],
+    "program": "learning",
+    "report": "research/FOLD-TRANSFER-20261114-001/transfer.md"
+  },
+  "id": "FOLD-TRANSFER-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Continue Intuitions 4.7 for G15 and G16. Recover actual local laws found by the original search, summarize their observable behavior, and test transfer when the joint task hides which of two distinctions each copy exposes. Exhaust the frozen family and stop at a mismatch or at its measured boundary.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Exploratory finite transfer. Preserving both local reads identified all 28 target functions with one binary query per copy and 9,248 correct unqueried predictions. A plain full-table learner with the same candidate family matched every query.",
+  "status_class": "supported",
+  "stop_rule": "One bounded family of two to four joined copies.",
+  "title": "Can a rule found on one pattern reduce the examples needed on joined patterns?"
+}

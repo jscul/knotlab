@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "artifact_id": "ATOMIC-FOLD-20261114-001-E002",
+  "ticket": "ATOMIC-FOLD-20261114-001",
+  "kind": "experiment",
+  "evidence_stage": "exploratory",
+  "status": "Exploratory follow-up complete",
+  "report": "research/ATOMIC-FOLD-20261114-001/atomic_folds.md",
+  "analysis": "artifacts/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E002_program_mutation/analysis.json",
+  "contract": "experiments/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E002_program_mutation/contract.json",
+  "contract_sha256": "bff29c7ac8106a638ffe44a3e59f02f1b170eae6e9a80ba235714e01e6b3d230",
+  "producer": "experiments/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E002_program_mutation/job.py",
+  "producer_sha256": "577736edc1dfccd647bb87ca49a2c3ddea6ba91d45931694c7f02800d4e572fa",
+  "raw_results": "artifacts/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E002_program_mutation/results.jsonl",
+  "raw_sha256": "758a7b8d991315a8e909fce2b044d17ef77baf815393472118c18483dfa9ffbf",
+  "analysis_sha256": "0822cf7b2910f1c1f48450d1bc6d12b0cb11cd8a0ab8bf17026b18f0edde19b7",
+  "total_program_evaluations": 884736,
+  "outcomes": {
+    "guided": {
+      "selective": {
+        "fits": 9,
+        "exact": 9,
+        "minimal_partitions": 9,
+        "minimum_width_exact": 9,
+        "width_one": 0,
+        "held_out_correct": 864,
+        "held_out_total": 864
+      },
+      "broad": {
+        "fits": 9,
+        "exact": 9,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 0,
+        "held_out_correct": 288,
+        "held_out_total": 288
+      }
+    },
+    "neutral": {
+      "selective": {
+        "fits": 9,
+        "exact": 3,
+        "minimal_partitions": 3,
+        "minimum_width_exact": 3,
+        "width_one": 4,
+        "held_out_correct": 781,
+        "held_out_total": 864
+      },
+      "broad": {
+        "fits": 9,
+        "exact": 2,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 2,
+        "held_out_correct": 261,
+        "held_out_total": 288
+      }
+    }
+  }
+}

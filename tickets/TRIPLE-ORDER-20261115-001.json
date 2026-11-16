@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "Fit on separate structures using all minimum-width triples, freeze model, compare exact table-only outputs with matched primitive controls on the same preselected stream.",
+  "completion_gate": "Independently verify physical programs, minimum widths, held separation and all-in accounting through the end of the stream.",
+  "dependencies": [
+    "FOLD-TWO-OUTPUT-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/TRIPLE-ORDER-20261115-001/TRIPLE-ORDER-20261115-001-E001_rank_triples/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/TRIPLE-ORDER-20261115-001/TRIPLE-ORDER-20261115-001-E001_rank_triples/result.json"
+    ],
+    "frozen_policy": "artifacts/TRIPLE-ORDER-20261115-001/TRIPLE-ORDER-20261115-001-E001_rank_triples/model.json",
+    "independent_audit": "artifacts/TRIPLE-ORDER-20261115-001/TRIPLE-ORDER-20261115-001-E001_rank_triples/audit.json",
+    "report": "research/TRIPLE-ORDER-20261115-001/triple_order.md"
+  },
+  "id": "TRIPLE-ORDER-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Learn a candidate ordering from disjoint Boolean rules, freeze it before a fresh two-output stream, and compare end-to-end CPU for verified minimum-width physical programs against untrained primitive search.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-TRANSFER-20261114-001",
+  "schema_version": 1,
+  "status": "Ordering learned 1:1:1 and 1:1:2 input-flip patterns and returned all 96 one-bit and 96 two-bit cases exactly. It saved 17.5% of matched lexical candidate checks but cost 594.763 versus 291.583 ms including training and verification, with no break-even. Independent replay passed.",
+  "status_class": "refuted",
+  "stop_rule": "One frozen learner and fixed 192-rule endpoint; report any crossing and remaining gap without adaptive extension.",
+  "title": "Can a frozen learner order candidate triples cheaply enough to repay training?"
+}

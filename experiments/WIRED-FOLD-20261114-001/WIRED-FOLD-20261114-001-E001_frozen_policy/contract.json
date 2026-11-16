@@ -1,0 +1,15 @@
+{
+  "schema_version": 1, "artifact_id": "WIRED-FOLD-20261114-001-E001", "ticket": "WIRED-FOLD-20261114-001", "kind": "experiment",
+  "branch": "training", "evidence_stage": "exploratory", "status": "Frozen",
+  "question": "Can one fixed encoder/decoder use visible attachments to follow a changed pair and send just one bit when its downstream reader permits that?",
+  "inputs": "Four unary rule tables on a binary distinction, raw source names and two downstream attachments, two public potential query masks, actual choice of query after transmission.",
+  "forbidden_inputs": "Preselected or sorted pair of rule values, pair ID, consumer ID, correct width, intersection labels, held-out accuracy during training, world-dependent width, decoder access to rules, wiring, menu, scratch, timing or actual query before transmission.",
+  "mapping": "Fit shared elementary Boolean programs from downstream answers. One tied scan update, one optional one-bit readout, one pre-data width controller, and one frozen payload/query decoder across every episode. Exact finite empirical program selection. No external model service.",
+  "primary_observable": "Every downstream answer and actual width, stratified by withheld pairs, worlds and reader menus; matched rewires that require a change, renamings, record-order changes, and frozen-parameter digests.",
+  "comparators_or_controls": "Always two, at most one, static or stale wiring, same-world rewires, semantic width lower bound, attainable reference and independent execution.",
+  "resource_budget": "One deterministic fit and bounded exhaustive evaluation as specified in the design.",
+  "first_executable_signal": "Fixed rule values can require opposite answers after the two reader endpoints are rewired. An actually one-bit packet cannot distinguish four possible future answer pairs.",
+  "stop_rule": "Report all cells including overfit widths or wiring failures. Any follow-up after inspection needs a separate exploratory identity.",
+  "nonclaims": "Experimenter supplies truth-table rule inputs, primitive endpoint equality, shared sequential visit order, two accumulator lanes and a cost for transmitted bits. Finite transfer is specific to the disclosed reader family.",
+  "preregistration": "research/WIRED-FOLD-20261114-001/preregistration.md"
+}

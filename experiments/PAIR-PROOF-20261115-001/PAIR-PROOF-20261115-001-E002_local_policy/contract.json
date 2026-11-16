@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "PAIR-PROOF-20261115-001-E002",
+  "ticket": "PAIR-PROOF-20261115-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Can a small policy trained on local wiring choose two-signal tests cheaply enough to beat deterministic search on fresh larger edited circuits after paying for training?",
+  "inputs": "Use fixed train/blind partitions in the parent generator, physical public circuits of 8, 9, 10 frontier signals with 10, 11, 12 raw inputs and 3 disjoint seeds each. An example pairs two independent edits of one parent. Public inference sees original gates/frontier/pieces/outputs and current (gate,pin,to) only. Training may calculate labels from training circuits. Inspect blind after saving model, policy source and full train charge.",
+  "forbidden_inputs": "No edit ID, role, planted piece, hidden grades, future edit, blind labels, downstream output tables or held timing for choosing actions. Size, wire numbers and observable local gate neighborhood within a configurable step count are public. The ordinary solver, after receiving requests, may execute them and search the remaining groups.",
+  "outputs": "Frozen saved model, config radius and selection record, unchanged on all held cases. An actual three-row certificate for each useful pair, a correct exact minimum, physically materialized and independently raw/cut verified NAND circuit on every edit, plus acquisition, failed tests, fallback, verifying/inference CPU and evidence of whether training repays.",
+  "mapping": "Keep exactly the pair subsystem, physical compilers and checkers from E001. Compare a policy proposing ordered (pair,outside-setting) requests including abstention with historical ordinary, compact ordinary, no proof, deterministic balanced packed and fixed same-menu alternatives. Each current proof checked once, exact fallback on all other alternatives.",
+  "primary_observable": "Paired whole-stream CPU on 36 fresh two-bit edits, along with prospective deployment on the full 72 mixed edits. Both must give exact minimum and verified program. Add all training-fixture generation and training CPU once to each panel, including training labels, model and selection. Report totals, first cumulative break-even or remaining gap; include separate timings excluding training for interpretation. Give per-seed results and actual tests, misses, alternative checks avoided.",
+  "comparators_or_controls": "Same public source, prior circuit and independent checking to all arms. Arms ordinary, compact, no-proof, balanced packed, simple fixed tests, same-menu untrained strategy and learned request schedule, as applicable. No supervision or hints on blind.",
+  "resource_budget": "One CPU, eight fresh paired timing blocks per method on the same 36 held parent circuits. Train once across three fixed seeds; configurable radii 0,1,2,4, radius selection uses training only. Held seeds 281219,281227,281233. Use bounded simple supervised policy.",
+  "first_executable_signal": "Observe a real update in a synthetic/training smoke test and a finite action on a distinct circuit. Persist actual training cost and model hash before blind generation.",
+  "stop_rule": "Assess all 72 fixed blind returns across three seeds, preserving misses, failed programs and runtime. Report transfer and budget outcome at this horizon whether favorable or unfavorable. Do not use held output to tune.",
+  "nonclaims": "Small exhaustive Boolean circuits and bounded choices. This is a study of a local decision, not a general search-complexity result."
+}

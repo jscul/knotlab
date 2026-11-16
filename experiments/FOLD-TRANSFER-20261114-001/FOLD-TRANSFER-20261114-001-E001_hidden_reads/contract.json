@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "FOLD-TRANSFER-20261114-001-E001",
+  "ticket": "FOLD-TRANSFER-20261114-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "How many labels identify a held-out choice of reads on supplied chains of independently found source laws?",
+  "inputs": "Four archived bare-pattern seeds, inputs 0/1/4, candidate reads 5/6, ordered serial join and a membership-query oracle.",
+  "forbidden_inputs": "Hidden target wiring, entire target tables, and unrequested target labels are unavailable to the learner. The verifier can see them.",
+  "mapping": "Partition source inputs by the possible observable outputs, compose local functions, and eliminate incompatible candidates after each requested output.",
+  "primary_observable": "Number of requested target bits to exact functional identification, with errors scored against raw joined constraints on all unqueried inputs.",
+  "comparators_or_controls": "Plain complete-table version space with equal prior information; known-wiring XOR; discarded second read; broken shared identity; out-of-family flipped label.",
+  "resource_budget": "One small CPU experiment, four deterministic first-target replays, three chain lengths, at most 16 targets per length and 512 external inputs per target.",
+  "first_executable_signal": "A recovered source law reproduces its archived stop and makes a determinate local read on the eight inputs.",
+  "stop_rule": "Finish the specified finite panel or report failed replay, ambiguous read, mismatched independent check or unresolved target.",
+  "nonclaims": "Exploratory evidence in a supplied family. No claim of native discovery of boundaries, improved general research throughput or recursive self-improvement.",
+  "preregistration": "research/FOLD-TRANSFER-20261114-001/preregistration.md"
+}

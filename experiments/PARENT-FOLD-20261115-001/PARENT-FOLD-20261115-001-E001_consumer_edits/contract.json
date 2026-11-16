@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "PARENT-FOLD-20261115-001-E001",
+  "ticket": "PARENT-FOLD-20261115-001",
+  "kind": "experiment",
+  "branch": "code_analysis",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does a previously verified three-input summary reduce the total time to return an exact minimum-width parent circuit after one consumer changes?",
+  "inputs": "Identical raw NAND gates, input frontier, two outputs, historical piece locations, bit and ports. Each query changes one consumer input. The supplied-fold arm gets one correct piece location for free. An ordinary arm also receives that location for attribution.",
+  "forbidden_inputs": "Solver access to private grades, ground-truth width, edit kind, saved answers, future edits, identities of planned held-out structures, or semantic caches from a sibling edit. No training in this identity.",
+  "outputs": "A physical NAND DAG on raw inputs, taps and a three-variable local group, its residual class count and minimum width. Each raw output, physical cut and minimum across eligible frontier triples is checked.",
+  "mapping": "Update affected consumers from the original immutable circuit. Test the known old summary and reuse it where justified. Exact search handles unresolved groups. Compare with ordinary incremental NAND normalization, caching, search and verification.",
+  "primary_observable": "Total single-process CPU through verified serialized returns. Include local history construction and checking once per parent, and each of its two independently branched edits. Preserve failures and paired times.",
+  "comparators_or_controls": "Ordinary structural-cache repair, the same with a purchased original globally optimized program, and a cheaper ordinary strategy that prices the width before testing source circuits and uses changed-wire ancestry to prioritize local groups. Both ordinary orders also receive the supplied location for attribution. Every return goes through identical raw verification.",
+  "resource_budget": "Three fixed seeds and four matched parents per seed at each of seven, eight and nine independent frontier signals. Two more raw inputs feed the prefix. Eight counterbalanced timing blocks on one pinned logical CPU. A separate fresh confirmation of timing is allowed only for a marginal apparent win.",
+  "first_executable_signal": "A synthetic changed-parent example checks the public format, raw-program lift, minimum and shared checker. The frozen comparison then tests 36 original parents and 72 edits.",
+  "stop_rule": "At equal exact correctness, if the supplied fold has a reproducible whole-stream CPU advantage over the fastest eligible unhinted ordinary control, run separately scoped training and frozen hint-free larger tests. Otherwise report avoided work and the cost gap.",
+  "nonclaims": "The minimum is intermediate message width over jointly essential triples of the declared frontier. Gate count and general circuit optimality are outside the objective. This is a bounded experiment on finite logic circuits."
+}

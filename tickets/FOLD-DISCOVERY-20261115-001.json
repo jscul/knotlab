@@ -1,0 +1,35 @@
+{
+  "acceptance_gate": "No supplied fold during discovery; separate measured training rules and a sealed reserved structural holdout.",
+  "completion_gate": "Exhaustively check returned programs, replay ranking and all-in cost on the full held sequence, and report failed searches and alternatives.",
+  "dependencies": [
+    "FOLD-DEPTH-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/FOLD-DISCOVERY-20261115-001/FOLD-DISCOVERY-20261115-001-E001_learned_library/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/FOLD-DISCOVERY-20261115-001/FOLD-DISCOVERY-20261115-001-E001_learned_library/result.json"
+    ],
+    "frozen_entry": "artifacts/FOLD-DISCOVERY-20261115-001/FOLD-DISCOVERY-20261115-001-E001_learned_library/entry.json",
+    "independent_audit": "artifacts/FOLD-DISCOVERY-20261115-001/FOLD-DISCOVERY-20261115-001-E001_learned_library/audit.json",
+    "report": "research/FOLD-DISCOVERY-20261115-001/transfer.md",
+    "training_receipt": "artifacts/FOLD-DISCOVERY-20261115-001/FOLD-DISCOVERY-20261115-001-E001_learned_library/gate-freeze.json"
+  },
+  "id": "FOLD-DISCOVERY-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "After a free reusable operation reduced direct search on deeper recurrent chains, induce an unlabelled two-operation ternary library entry from new training programs, freeze it before transfer, and count every acquisition, candidate test and verification on reserved structures.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-DEPTH-20261115-001",
+  "schema_version": 1,
+  "status": "On 24 unseen rules the learned a AND (b XOR c) cost 63.139 ms including 30.921 ms discovery versus 21.515 ms for cached primitives. No break-even at any prefix. Every held circuit, training ranking and all costs passed independent replay.",
+  "status_class": "refuted",
+  "stop_rule": "Freeze the actual result of the one prespecified training run. Incur every rejected candidate and failed rule, score all reserved tasks as ordered, and stop. No adaptation to held rules or additional follow-on study.",
+  "title": "Does a fold found in training programs reduce paid work on unseen compositions?"
+}

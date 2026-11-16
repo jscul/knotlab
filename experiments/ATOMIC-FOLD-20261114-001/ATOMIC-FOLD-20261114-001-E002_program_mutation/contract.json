@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "ATOMIC-FOLD-20261114-001-E002",
+  "ticket": "ATOMIC-FOLD-20261114-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does using terminal reward to retain and vary complete programs improve discovery over the same unguided mutation process?",
+  "inputs": "E001 local worlds, opaque contexts, delayed queries, register language and training-only decoder.",
+  "forbidden_inputs": "The mutation and selection routines must not see oracle pairs, intermediate targets, held-out answers, hand programs, the enumeration results or a teacher.",
+  "mapping": "Twelve groups retain one program apiece and mutate it. Select parents using terminal training correctness, or independently of reward in the matched neutral control. At the end retain each method's best candidate by the identical training-only rule.",
+  "primary_observable": "Exact and exact-minimal-width fits on all 64 worlds, by consumer, seed and method. Preserve every failed fit and actual code.",
+  "comparators_or_controls": "Matched neutral parent selection; unchanged uniform blind search and factored policy records from E001; identical initial batches and program budgets; independent evaluator and logical controls.",
+  "resource_budget": "96 programs times 128 generations per width per context per method, three training seeds, six contexts and two widths. Same CPU budget in program evaluations as E001.",
+  "first_executable_signal": "The mutation operator returns legal elementary gates and output taps; matched first populations reproduce E001.",
+  "stop_rule": "Evaluate every frozen cell once and stop the optimizer comparison, irrespective of outcome.",
+  "nonclaims": "Changes the search procedure after observing E001. Still exploratory and finite; no claim of a general search advantage or a shared policy for an unobserved downstream consumer.",
+  "preregistration": "research/ATOMIC-FOLD-20261114-001/mutation_design.md"
+}

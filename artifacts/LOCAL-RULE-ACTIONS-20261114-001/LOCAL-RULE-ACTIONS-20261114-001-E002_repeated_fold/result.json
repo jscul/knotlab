@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "ticket": "LOCAL-RULE-ACTIONS-20261114-001",
+  "artifact_id": "LOCAL-RULE-ACTIONS-20261114-001-E002",
+  "status": "Exploratory follow-up complete",
+  "evidence_stage": "exploratory",
+  "report": "research/LOCAL-RULE-ACTIONS-20261114-001/local_agent.md",
+  "contract": "experiments/LOCAL-RULE-ACTIONS-20261114-001/LOCAL-RULE-ACTIONS-20261114-001-E002_repeated_fold/contract.json",
+  "contract_sha256": "669a831f56fe46ee26780520c1d1783d5707dc8b811021fbc63af874f9cbd85d",
+  "producer": "experiments/LOCAL-RULE-ACTIONS-20261114-001/LOCAL-RULE-ACTIONS-20261114-001-E002_repeated_fold/job.py",
+  "producer_sha256": "369bedb80add87bee280a365bdd1a579f02e5b075fa217270775db6e9e4545a6",
+  "raw_results": "artifacts/LOCAL-RULE-ACTIONS-20261114-001/LOCAL-RULE-ACTIONS-20261114-001-E002_repeated_fold/results.jsonl",
+  "raw_sha256": "85653159c886b18178832b8004f5c39db9a23ec11ce7db319e2fe41d15c81395",
+  "counts": {
+    "ok": 3,
+    "error": 0,
+    "timeout": 0,
+    "memory": 0,
+    "crashed": 0
+  },
+  "metric": "Correct whole boundary relations / starts, pooled over seeds",
+  "observations": {
+    "3 rules, 1 fold budget": {
+      "count_q": [
+        48,
+        48
+      ],
+      "available_q": [
+        48,
+        48
+      ],
+      "local_rule": [
+        48,
+        48
+      ],
+      "random_legal": [
+        24,
+        48
+      ],
+      "untrained_q": [
+        24,
+        48
+      ]
+    },
+    "4 rules, 1 fold budget": {
+      "count_q": [
+        48,
+        96
+      ],
+      "available_q": [
+        48,
+        96
+      ],
+      "local_rule": [
+        48,
+        96
+      ],
+      "random_legal": [
+        48,
+        96
+      ],
+      "untrained_q": [
+        48,
+        96
+      ]
+    },
+    "4 rules, 2 fold budget": {
+      "count_q": [
+        80,
+        96
+      ],
+      "available_q": [
+        96,
+        96
+      ],
+      "local_rule": [
+        96,
+        96
+      ],
+      "random_legal": [
+        48,
+        96
+      ],
+      "untrained_q": [
+        48,
+        96
+      ]
+    },
+    "5 rules, 1 fold budget": {
+      "count_q": [
+        96,
+        192
+      ],
+      "available_q": [
+        96,
+        192
+      ],
+      "local_rule": [
+        96,
+        192
+      ],
+      "random_legal": [
+        96,
+        192
+      ],
+      "untrained_q": [
+        96,
+        192
+      ]
+    },
+    "5 rules, 3 fold budget": {
+      "count_q": [
+        96,
+        192
+      ],
+      "available_q": [
+        192,
+        192
+      ],
+      "local_rule": [
+        192,
+        192
+      ],
+      "random_legal": [
+        96,
+        192
+      ],
+      "untrained_q": [
+        96,
+        192
+      ]
+    }
+  },
+  "per_seed_correct": {
+    "17": {
+      "3 rules, 1 fold budget": {
+        "count_q": 16,
+        "available_q": 16,
+        "local_rule": 16,
+        "random_legal": 8,
+        "untrained_q": 8
+      },
+      "4 rules, 1 fold budget": {
+        "count_q": 16,
+        "available_q": 16,
+        "local_rule": 16,
+        "random_legal": 16,
+        "untrained_q": 16
+      },
+      "4 rules, 2 fold budget": {
+        "count_q": 32,
+        "available_q": 32,
+        "local_rule": 32,
+        "random_legal": 16,
+        "untrained_q": 16
+      },
+      "5 rules, 1 fold budget": {
+        "count_q": 32,
+        "available_q": 32,
+        "local_rule": 32,
+        "random_legal": 32,
+        "untrained_q": 32
+      },
+      "5 rules, 3 fold budget": {
+        "count_q": 32,
+        "available_q": 64,
+        "local_rule": 64,
+        "random_legal": 32,
+        "untrained_q": 32
+      }
+    },
+    "31": {
+      "3 rules, 1 fold budget": {
+        "count_q": 16,
+        "available_q": 16,
+        "local_rule": 16,
+        "random_legal": 8,
+        "untrained_q": 8
+      },
+      "4 rules, 1 fold budget": {
+        "count_q": 16,
+        "available_q": 16,
+        "local_rule": 16,
+        "random_legal": 16,
+        "untrained_q": 16
+      },
+      "4 rules, 2 fold budget": {
+        "count_q": 32,
+        "available_q": 32,
+        "local_rule": 32,
+        "random_legal": 16,
+        "untrained_q": 16
+      },
+      "5 rules, 1 fold budget": {
+        "count_q": 32,
+        "available_q": 32,
+        "local_rule": 32,
+        "random_legal": 32,
+        "untrained_q": 32
+      },
+      "5 rules, 3 fold budget": {
+        "count_q": 32,
+        "available_q": 64,
+        "local_rule": 64,
+        "random_legal": 32,
+        "untrained_q": 32
+      }
+    },
+    "53": {
+      "3 rules, 1 fold budget": {
+        "count_q": 16,
+        "available_q": 16,
+        "local_rule": 16,
+        "random_legal": 8,
+        "untrained_q": 8
+      },
+      "4 rules, 1 fold budget": {
+        "count_q": 16,
+        "available_q": 16,
+        "local_rule": 16,
+        "random_legal": 16,
+        "untrained_q": 16
+      },
+      "4 rules, 2 fold budget": {
+        "count_q": 16,
+        "available_q": 32,
+        "local_rule": 32,
+        "random_legal": 16,
+        "untrained_q": 16
+      },
+      "5 rules, 1 fold budget": {
+        "count_q": 32,
+        "available_q": 32,
+        "local_rule": 32,
+        "random_legal": 32,
+        "untrained_q": 32
+      },
+      "5 rules, 3 fold budget": {
+        "count_q": 32,
+        "available_q": 64,
+        "local_rule": 64,
+        "random_legal": 32,
+        "untrained_q": 32
+      }
+    }
+  },
+  "reproduced_fitted_q_sha256": {
+    "17": "a0b9ecaf09d8540a30881764f6c474b36a59e622b5843926ad4004da04c102b0",
+    "31": "4e85898c841fa06148310e4c7c1a6accafc3f0ee20088b6d2ceb2978d31e1087",
+    "53": "56e61be9c12e8f328eb88d6b9df2dcaac289e681b1967a123a8fd87c0868b42b"
+  },
+  "exact_tie_check": "research/LOCAL-RULE-ACTIONS-20261114-001/check_reuse.py"
+}

@@ -3,6 +3,11 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 16 November 2026: the fold studies are published, and a cited study is no longer missing
+
+- `BRAID-READOUT-20261114-001`'s decision and proofs, and the `BRAID-COUNTS-20261114-001` and `JOINT-BRAID-READS-20261114-001` preregistrations, cited `STRAND-RETURN-20261114-001`, which had not been published, so the link was broken. It is published now, unchanged, together with the other 21 studies of the fold line. Every result of the three citing epics stands. [STRAND-RETURN report](research/STRAND-RETURN-20261114-001/strand_returns.md)
+- The fold line stays open. Learned folds kept what a later reader needs, but none repaid its training and checking against cached primitive search on tasks of 3 to 9 inputs, where exact search is nearly free. An agent that moves between knots, remembers its steps and mutates knot structures was not tested. These are computed results, audited by replay and not refereed. [Record](research/FOLD-TRANSFER-20261114-001/line_record.md)
+
 ## 15 November 2026: product-proof replay and serialization controls
 
 - The first bounded-count converter in `PRODUCT-NAME-TRANSFER-20261115-001` can falsely reject a valid certificate that reuses an already-empty input axiom. The unified C entry point returns that axiom as a one-node proof. It also normalizes canceled factor terms before renumbering retained declarations and includes a written multiplier in displayed degree when the product is zero. [Unified converter](proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/solver.py) · [Passing controls](proofs/PRODUCT-NAME-TRANSFER-20261115-001C/PRODUCT-NAME-TRANSFER-20261115-001C-P001_depth_and_unrestricted/checks.json)

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1, "artifact_id": "STRAND-RETURN-20261114-001-E002", "ticket": "STRAND-RETURN-20261114-001", "kind": "experiment",
+  "branch": "code_analysis", "evidence_stage": "exploratory", "status": "Frozen",
+  "question": "When can a downstream reader untangle a local crossing after a summary of the two strands?",
+  "inputs": "Every reversible gate on a pair of bits; one named signed swap and one ternary quandle crossing; all joint relations, all point states, and a public menu followed by a future stop/undo choice.",
+  "forbidden_inputs": "No actual future query in the encoder, no uncharged intermediate state in a projected-only message, no fitted parameters.",
+  "mapping": "Exhaustive permutation, relation and answer-signature evaluation. Test both sides of the braid relation on adjacent positions and undo with each candidate's inverse.",
+  "primary_observable": "Reversible recovery, dependence on both inputs, collision of separate marginals, minimum payload for known or delayed reader, and bounded optimal one-bit delayed accuracy.",
+  "comparators_or_controls": "Exact joint relation vs separate allowed-value sets, same crossing repeated vs inverse, known vs delayed read, and all two-bit bijections.",
+  "resource_budget": "A single deterministic CPU census, at most 512 joint relations per candidate and 24 candidate binary gates.",
+  "first_executable_signal": "Two joint relations can have exactly the same two marginals after crossing while the reader needs opposite answers after undo.",
+  "stop_rule": "Report all candidates and both wiring and readout regimes even when the alternatives agree.",
+  "preregistration": "research/STRAND-RETURN-20261114-001/braid_design.md"
+}

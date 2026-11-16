@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "FOLD-GATE-20261115-001-E001",
+  "ticket": "FOLD-GATE-20261115-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "On a long preselected stream of six-input read-once Boolean rules does a decision fitted to the first eight examples about when to try a saved fold repay its complete cost?",
+  "inputs": "The two learners see eight ordered labeled rows and the same checker observations in batches up to all 64 rows, the input count and a common AND/OR/XOR read-once grammar. The transfer arm also gets the charged physical seven-NAND source and its fitted threshold.",
+  "forbidden_inputs": "The generator and checker alone know the hidden truth table, mechanism and whether a fold is possible. Task identities and held outcomes never enter gate fitting. No target-specific state passes between distinct tasks.",
+  "outputs": "An executable physical NAND circuit for each target, with exact equality checked on all inputs, paired verification transcripts, timing prefixes, cache and fitting receipts.",
+  "mapping": "Using 1,024 separate six-input rules, time both choices three times. Fit a one-threshold rule from labeled prefix features on the last 960, charge all 1,024. In deployment, optionally replace only the first lower-median candidate by the lower median among hypotheses with one fold. Use ordinary median thereafter.",
+  "primary_observable": "First nonempty prefix k for which the median across three repeats of cumulative charged gate wall time is at most the corresponding median for primitive median search. Include source training, verifying the source, all gate training, fit, cache persistence and restore, program construction, common teaching, all rejected and successful checks, and returning executable output. Report any later reversal and terminal gap. Also compare individual paired repeats.",
+  "comparators_or_controls": "Paid inherited public cache vs cold default is primary. Both build and cache programs identically on demand. Also measure matched cold starts, unconditional fold and previous adaptive no-fold checker separately.",
+  "resource_budget": "1,024 train; 32,768 distinct ordered held rules on disjoint input-permutation families; six inputs and 64 possible assignments each. Three sequential timing repeats for primary and cold control, one repeat for ancillary controls.",
+  "first_executable_signal": "Paired separate training tasks produce exact physical programs and reveal the observed cost difference used for the fit.",
+  "stop_rule": "Finish every rule in the bound stream in every arm; do not truncate at crossing or revise the threshold after any held result.",
+  "nonclaims": "Local elapsed cost on this synthetic six-input family and this machine. Independent scientific replay and fixture production are outside deployment cost. No general self-improvement, solver or general speedup claim."
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "ATOMIC-FOLD-20261114-001-E001",
+  "ticket": "ATOMIC-FOLD-20261114-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Can an agent select a pair of local rules and build a sufficient summary using only individual Boolean gates and terminal reward from downstream reads?",
+  "inputs": "Three presented unary Boolean relations on a shared possible witness h. Six independent bits say whether each rule allows h=0 and h=1. Six opaque, familiar downstream context IDs determine a hidden pair and a family of possible next reads. A particular later query arrives after compression.",
+  "mapping": "A reward-fitted categorical program policy constructs three single Boolean gates using available local registers. Generic output taps emit one or two bits. A frequency lookup fits an arbitrary decoder from the training rows only. Fit both widths equally and select by training correctness, then width, then live gates.",
+  "forbidden_inputs": "Encoder sees no target pair, selected gates, oracle masks, later query in selective contexts, teaching traces, test rewards or optimal intermediate values. Only emitted bits, familiar context and later query can enter the decoder.",
+  "primary_observable": "Exact held-out and exhaustive downstream correctness by context, width, training seed and method; functional dependence on each input rule; number and identity of distinctions preserved up to recoding.",
+  "comparators_or_controls": "Matched blind program search with best retention, analytic hand programs, optimal one-bit tabulation, wrong fixed pair, no downstream cue, single-input flip and code-collision witnesses; test genuinely later queries and further composition.",
+  "resource_budget": "Three independent seeds, six contexts, two widths, equal proposal counts per method. Frozen numeric settings and controls in preregistration.md. Small deterministic CPU tables only.",
+  "first_executable_signal": "The evaluator accepts the two-branch hand construction and exhibits a mandatory collision when only an existence bit reaches a later branch query.",
+  "stop_rule": "Finish the declared finite panel with every seed and comparator preserved. Report null, shortcut, partial and inconsistent outcomes as found.",
+  "nonclaims": "Three unary binary-domain rules in one supplied local view, an experimenter-defined atomic language, known grammar and training objective. Transfer to novel rule values differs from transfer to an unknown consumer or autonomous discovery of the action language.",
+  "preregistration": "research/ATOMIC-FOLD-20261114-001/preregistration.md"
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "artifact_id": "RENAME-SELECT-20261114-001-E001",
+  "ticket": "RENAME-SELECT-20261114-001",
+  "kind": "experiment",
+  "branch": "training",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "question": "Do observed label renamings select a generalizing program, and does one frozen crossing reduce work to certify a correct return?",
+  "inputs": "Training tuples and bits, ordinary reversible instructions and one optional previously learned crossing. A separate verifier owns the ten full target tables.",
+  "forbidden_inputs": "Task identifiers, formulas, actual symmetry, held labels, and witness programs as selector or search inputs. No verification failure details in fitting.",
+  "mapping": "Evaluate one task-fitted renaming rule and two blind controls on the same candidates. Deploy independent, timed, certified shortest, fitted-renaming and direct checking on matched search streams.",
+  "primary_observable": "Single-choice exact held success, pairwise choice on tied training programs, exact verified returns, total work including failures, certification and acquisition.",
+  "comparators_or_controls": "Shortest, unconditional renaming, direct verification, equal-training opposite-answer pair, expansion of every crossing, complete finite truth tables.",
+  "resource_budget": "Ten fresh predicates, three paired seeds, 49,184 proposals per stream, three deployable policies, six fixed checkpoints with at most four requests each in ranked arms.",
+  "first_executable_signal": "Two indistinguishable training sets permit different completions. Fitted renaming may distinguish other cases.",
+  "stop_rule": "Finish the specified panel, retaining all censored outcomes and blind errors.",
+  "preregistration": "research/RENAME-SELECT-20261114-001/preregistration.md"
+}

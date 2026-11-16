@@ -1,0 +1,37 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FOLD-TRANSFER-20261114-001",
+    "LEARN-PARITY-20261111-001Z",
+    "LOCAL-RULE-ACTIONS-20261114-001",
+    "SEARCH-AUDIT-20261112-001Z"
+  ],
+  "dependency_text": "Own closed local-policy and source-replay tickets provide the preceding comparison and the independently scored Lesson 4.7 source instances. The source search and its published audit remain at their recorded evidence classes.",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E001_atomic_actions/contract.json",
+      "experiments/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E002_program_mutation/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E001_atomic_actions/result.json",
+      "artifacts/ATOMIC-FOLD-20261114-001/ATOMIC-FOLD-20261114-001-E002_program_mutation/result.json"
+    ],
+    "report": "research/ATOMIC-FOLD-20261114-001/atomic_folds.md"
+  },
+  "id": "ATOMIC-FOLD-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Test whether a policy using only elementary local Boolean instructions selects useful rules and constructs a sufficient summary for a later read. Challenge it with alternative neighbors, held-out relations, downstream information loss and equal-budget controls.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "LOCAL-RULE-ACTIONS-20261114-001",
+  "schema_version": 1,
+  "status": "Exploratory finite task. Reward-guided whole-program mutation recovered the relevant pair and an exact two-bit code in all 18 fits versus 5/18 under neutral mutation. Two bits were necessary in nine selective fits. All nine broad fits kept an extra bit. Size-ordered search found all six minimum-width constructions.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Discovering a local fold from atomic Boolean instructions"
+}

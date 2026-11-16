@@ -1,0 +1,36 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SEARCH-AUDIT-20261112-001Z",
+    "STRAND-RETURN-20261114-001",
+    "WIRED-FOLD-20261114-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/contract.json",
+      "experiments/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E002_rewarded_actions/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E001_atomic_policy/result.json",
+      "artifacts/BRAID-ACTIONS-20261114-001/BRAID-ACTIONS-20261114-001-E002_rewarded_actions/result.json"
+    ],
+    "report": "research/BRAID-ACTIONS-20261114-001/braid_actions.md"
+  },
+  "id": "BRAID-ACTIONS-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Fit one policy of elementary logical gates to discover a mixing braid and inverse, then freeze its actions and message code. On held-out public rewiring, measure when it transmits one distinction and when it preserves the entire joint relation.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "STRAND-RETURN-20261114-001",
+  "schema_version": 1,
+  "status": "Atomic programs learned a mixing braid and separately learned undo. The frozen reader answered 2,792,448/2,792,448 queries across 606 wirings, used minimum width in 605, and recovered all 512 joint tables. A guided sequence also learned both moves.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Learn reversible crossings and downstream memory from atomic logical actions"
+}

@@ -1,0 +1,485 @@
+{
+  "study": "FOLD-GATE-20261115-001",
+  "verdict": "PASS",
+  "independence": "Independent scalar NAND interpreter, public-class generation, literal-candidate selection and gate/cost replay; no producer evaluator/fitter invoked.",
+  "input_hashes": {
+    "design.json": "7d0722cab013bbc629f009820db03af508de7dbf9ca9377c169d0a67bc3e9eed",
+    "gate-freeze.json": "a63ea570ff4d1cb785dab4a96fd86d6ae4806d79d913b4bc73085d28d1717c93",
+    "gate.json": "901c5318e61170d453db9f472579883c14de5e722ccd1e5e6acbaa43cc3034b5",
+    "training.json.gz": "d960f1ddde538df5a3e70dd411cf66fd7df7a836b54282c49a8273973fc4cc5b",
+    "results.jsonl": "f1c0194b185a5a1cfb585701585e292f844e6d8643c320611170002b4484fdbe",
+    "result.json": "ea65b52b55e6b975fca2bc85ce1d50e3c32af15f2cc1e4743687032699d39dc8",
+    "audit.py": "f4ea69f666d0a7045dca118db093560b0472cb92d2b624f15bd641924d22fc04"
+  },
+  "population": {
+    "train": {
+      "pool_mechanisms": 162,
+      "pool_labeled": 19523,
+      "pool_foldable_mechanisms": 61,
+      "pool_foldable_labeled": 7796,
+      "sample_mechanisms": 150,
+      "sample_foldable_mechanisms": 57,
+      "sample_foldable_tasks": 402,
+      "sample_recodings_after_first": 874,
+      "max_tasks_per_mechanism": 23,
+      "partition_mechanisms_sha256": "05bc903e9237fa168d8c0eed792befdecdf82cebe85c4df0896df5ac156e5ea3",
+      "sample_mechanisms_sha256": "b36dbf5f6a3d2ce452c2313b41c03d7d5b78a41f7eb5e9037c585497a3bbc1a5",
+      "ordered_truths_sha256": "238be6bbb8ca3005f32785ad4d323f2f5cb382ccc1ad8a1b3cbd7772738874df",
+      "ordered_mechanisms_sha256": "f3254702eb6d0d84914b80da052f41adde54b538f3858f6a18ac454fb55c8b06"
+    },
+    "held": {
+      "pool_mechanisms": 489,
+      "pool_labeled": 62296,
+      "pool_foldable_mechanisms": 216,
+      "pool_foldable_labeled": 31875,
+      "sample_mechanisms": 487,
+      "sample_foldable_mechanisms": 216,
+      "sample_foldable_tasks": 16772,
+      "sample_recodings_after_first": 32281,
+      "max_tasks_per_mechanism": 214,
+      "partition_mechanisms_sha256": "a4c5da4ed2f416038c916a7987a45df2b4a3c1930ff7e813c286c1c641eef7c7",
+      "sample_mechanisms_sha256": "95867b1a26a431fcb92cf98771ac7e8d64b12f8b6612a4a7c77d11229a5eff02",
+      "ordered_truths_sha256": "4b7ac63aac335dfaaca43ec05820ee44ce685fabb6721e71d95393a29802e811",
+      "ordered_mechanisms_sha256": "05900938a89bbbd4dd9dd317bd524762531448847c763a57ee90cac138c69127"
+    },
+    "mechanisms": 651,
+    "foldable_mechanisms": 277,
+    "functions": 81819,
+    "fold_functions": 39671,
+    "verified_by": "all variable permutations plus independent subset semantic DP"
+  },
+  "training": {
+    "checkpoint": {
+      "min_training_rules_per_branch": 4,
+      "prefix_length": 8,
+      "rule": null,
+      "schema_version": 1,
+      "sha256": "ff8dad4631c0243504e584d8abb052a56df062b88930cd6ef86a94714f95809b",
+      "training": {
+        "always_median_cost": 572117507,
+        "always_try_cost": 645809938,
+        "per_rule_hindsight_min_cost": 569911448,
+        "rules": 960,
+        "savings_vs_always_median": 0,
+        "selected_cost": 572117507,
+        "selected_fold_attempts": 0
+      }
+    },
+    "eligible_thresholds": 66,
+    "largest_nonnull_training_saving_ns": -801966,
+    "fold_cheaper_training_rules": 125,
+    "sum_all_recorded_training_cpu_ns": 6998549744,
+    "archived_source_ns": 11057666975,
+    "paid_gate_training_wall_ns": 7179077418,
+    "total_upfront_ns": 18236744393,
+    "data_only_snapshots": {
+      "gated": {
+        "programs": 2905,
+        "physical_NANDs": 43226,
+        "public_row_indexes": 72,
+        "task_label_state_retained": false,
+        "safe_data_only_deserialization": true
+      },
+      "median": {
+        "programs": 2891,
+        "physical_NANDs": 42858,
+        "public_row_indexes": 64,
+        "task_label_state_retained": false,
+        "safe_data_only_deserialization": true
+      }
+    }
+  },
+  "physical_replay": {
+    "unique_circuits_including_training": 35220,
+    "scalar_inputs_each": 64,
+    "correct_held_input_pairs_per_arm": 2097152,
+    "manifests": {
+      "median": {
+        "unique_returned_programs": 32768,
+        "manifest_sha256": "85ad44ca0176ccb9e934cf4efc348967a05383eed8f8b6342d850a28e6654d4b"
+      },
+      "gated-warm": {
+        "unique_returned_programs": 32768,
+        "manifest_sha256": "d5bc20f264bce57ffc5717130d8454747c336c78fe5ef35c8fcf70bd7a1fa705"
+      },
+      "gated-cold": {
+        "unique_returned_programs": 32768,
+        "manifest_sha256": "a799e39dcda05fd0fc4ff896a10171918fe73bd1c43868581f1ced7d508b95aa"
+      },
+      "always": {
+        "unique_returned_programs": 32768,
+        "manifest_sha256": "4cb5175c10e25cfc7f27535547d54dec8952c24e06000f78dc3f82f988d232d6"
+      },
+      "median-warm": {
+        "unique_returned_programs": 32768,
+        "manifest_sha256": "7aae1fa50a596857633459bb240936391fabe6332708a8010d6a8cae98f8a634"
+      },
+      "adaptive": {
+        "unique_returned_programs": 32768,
+        "manifest_sha256": "9c830d32b12e2416353f27568b9daf119f6d5155aa43d6b90a8889bd98defbde"
+      }
+    },
+    "failed_held_proposal_limit": "All failed semantic submissions and accounting replayed; their literal circuit bytes were not exported. Training saved failed circuits and all returned held circuits were physically replayed."
+  },
+  "arm_stats": {
+    "median": {
+      "tasks": 32768,
+      "try_fold": 0,
+      "teacher_rows": 1835008,
+      "verifier_rows": 0,
+      "verifier_packed_checks": 138098,
+      "first_exact": 100,
+      "final_fold": 0,
+      "used_fold": 0,
+      "verifier_calls": 138098,
+      "proposals": 145959,
+      "expanded_NANDs_returned": 492748
+    },
+    "gated-warm": {
+      "tasks": 32768,
+      "try_fold": 0,
+      "teacher_rows": 1835008,
+      "verifier_rows": 0,
+      "verifier_packed_checks": 138098,
+      "first_exact": 100,
+      "final_fold": 0,
+      "used_fold": 0,
+      "verifier_calls": 138098,
+      "proposals": 145959,
+      "expanded_NANDs_returned": 492748
+    },
+    "gated-cold": {
+      "tasks": 32768,
+      "try_fold": 0,
+      "teacher_rows": 1835008,
+      "verifier_rows": 0,
+      "verifier_packed_checks": 138098,
+      "first_exact": 100,
+      "final_fold": 0,
+      "used_fold": 0,
+      "verifier_calls": 138098,
+      "proposals": 145959,
+      "expanded_NANDs_returned": 492748
+    },
+    "always": {
+      "tasks": 32768,
+      "try_fold": 32768,
+      "teacher_rows": 1835008,
+      "verifier_rows": 0,
+      "verifier_packed_checks": 138194,
+      "first_exact": 119,
+      "final_fold": 119,
+      "used_fold": 32768,
+      "verifier_calls": 138194,
+      "proposals": 145894,
+      "expanded_NANDs_returned": 492867
+    },
+    "median-warm": {
+      "tasks": 32768,
+      "try_fold": 0,
+      "teacher_rows": 1835008,
+      "verifier_rows": 0,
+      "verifier_packed_checks": 138098,
+      "first_exact": 100,
+      "final_fold": 0,
+      "used_fold": 0,
+      "verifier_calls": 138098,
+      "proposals": 145959,
+      "expanded_NANDs_returned": 492748
+    },
+    "adaptive": {
+      "tasks": 32768,
+      "try_fold": 0,
+      "teacher_rows": 0,
+      "verifier_rows": 3929498,
+      "verifier_packed_checks": 0,
+      "first_exact": 100,
+      "final_fold": 0,
+      "used_fold": 0,
+      "verifier_calls": 157692,
+      "proposals": 157692,
+      "expanded_NANDs_returned": 492748
+    }
+  },
+  "physical_work": {
+    "0-median": {
+      "new_physical_programs": 43441,
+      "materialization_hits": 102518,
+      "physical_packed_NANDs": 652118,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "0-gated-warm": {
+      "new_physical_programs": 41744,
+      "materialization_hits": 104215,
+      "physical_packed_NANDs": 627208,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "0-gated-cold": {
+      "new_physical_programs": 43441,
+      "materialization_hits": 102518,
+      "physical_packed_NANDs": 652118,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "1-gated-warm": {
+      "new_physical_programs": 41744,
+      "materialization_hits": 104215,
+      "physical_packed_NANDs": 627208,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "1-gated-cold": {
+      "new_physical_programs": 43441,
+      "materialization_hits": 102518,
+      "physical_packed_NANDs": 652118,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "1-median": {
+      "new_physical_programs": 43441,
+      "materialization_hits": 102518,
+      "physical_packed_NANDs": 652118,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "2-gated-cold": {
+      "new_physical_programs": 43441,
+      "materialization_hits": 102518,
+      "physical_packed_NANDs": 652118,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "2-median": {
+      "new_physical_programs": 43441,
+      "materialization_hits": 102518,
+      "physical_packed_NANDs": 652118,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "2-gated-warm": {
+      "new_physical_programs": 41744,
+      "materialization_hits": 104215,
+      "physical_packed_NANDs": 627208,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "0-always": {
+      "new_physical_programs": 43474,
+      "materialization_hits": 102420,
+      "physical_packed_NANDs": 652823,
+      "candidate_calls": 145894,
+      "public_example_rows_validated": 2716988,
+      "constraint_bitset_ops": 1859506
+    },
+    "0-median-warm": {
+      "new_physical_programs": 41543,
+      "materialization_hits": 104416,
+      "physical_packed_NANDs": 624084,
+      "candidate_calls": 145959,
+      "public_example_rows_validated": 2718400,
+      "constraint_bitset_ops": 1471229
+    },
+    "0-adaptive": {
+      "new_physical_programs": 45179,
+      "materialization_hits": 112513,
+      "physical_packed_NANDs": 678390,
+      "candidate_calls": 157692,
+      "public_example_rows_validated": 2839029,
+      "constraint_bitset_ops": 1372818
+    }
+  },
+  "prefix_cost_comparison": {
+    "gated-warm": {
+      "pointwise_median": {
+        "prefixes": 32768,
+        "first_crossover": null,
+        "transitions": [],
+        "terminal_gap": 18661990139,
+        "minimum_gap": 17827381767,
+        "minimum_gap_prefix": 1367,
+        "winning_prefixes": 0,
+        "sustained_from": null
+      },
+      "individual_repeats": [
+        {
+          "prefixes": 32768,
+          "first_crossover": null,
+          "transitions": [],
+          "terminal_gap": 18671845986,
+          "minimum_gap": 17856647667,
+          "minimum_gap_prefix": 1401,
+          "winning_prefixes": 0,
+          "sustained_from": null
+        },
+        {
+          "prefixes": 32768,
+          "first_crossover": null,
+          "transitions": [],
+          "terminal_gap": 18678573804,
+          "minimum_gap": 17811944566,
+          "minimum_gap_prefix": 965,
+          "winning_prefixes": 0,
+          "sustained_from": null
+        },
+        {
+          "prefixes": 32768,
+          "first_crossover": null,
+          "transitions": [],
+          "terminal_gap": 18545933616,
+          "minimum_gap": 17821469654,
+          "minimum_gap_prefix": 1405,
+          "winning_prefixes": 0,
+          "sustained_from": null
+        }
+      ],
+      "median_total_ns": 31064629749,
+      "median_downstream_ns": 12827885356
+    },
+    "gated-cold": {
+      "pointwise_median": {
+        "prefixes": 32768,
+        "first_crossover": null,
+        "transitions": [],
+        "terminal_gap": 18797126946,
+        "minimum_gap": 18226292970,
+        "minimum_gap_prefix": 121,
+        "winning_prefixes": 0,
+        "sustained_from": null
+      },
+      "individual_repeats": [
+        {
+          "prefixes": 32768,
+          "first_crossover": null,
+          "transitions": [],
+          "terminal_gap": 19058068317,
+          "minimum_gap": 18234957157,
+          "minimum_gap_prefix": 26,
+          "winning_prefixes": 0,
+          "sustained_from": null
+        },
+        {
+          "prefixes": 32768,
+          "first_crossover": null,
+          "transitions": [],
+          "terminal_gap": 18805241571,
+          "minimum_gap": 18171982368,
+          "minimum_gap_prefix": 63,
+          "winning_prefixes": 0,
+          "sustained_from": null
+        },
+        {
+          "prefixes": 32768,
+          "first_crossover": null,
+          "transitions": [],
+          "terminal_gap": 18797126946,
+          "minimum_gap": 18233517579,
+          "minimum_gap_prefix": 160,
+          "winning_prefixes": 0,
+          "sustained_from": null
+        }
+      ],
+      "median_total_ns": 31199766556,
+      "median_downstream_ns": 12963022163
+    }
+  },
+  "ordinary_median_total_ns": 12402639610,
+  "even_free_deployment_shortfall_ns": 5834104783,
+  "paired_choices": {
+    "tasks": 32768,
+    "fold_possible": 16772,
+    "same_first_truth": 267,
+    "both_first_exact": 3,
+    "fold_only_first_exact": 116,
+    "median_only_first_exact": 97,
+    "fewer_checks_with_unconditional_fold": 298,
+    "more_checks_with_unconditional_fold": 434,
+    "different_from_default_gate_trajectory": 0
+  },
+  "ambiguous_initial_prefixes": 47,
+  "self_tests": {
+    "status": "pass",
+    "actual_NAND_binding": true,
+    "suffix_independence_fixture": true,
+    "all_prefix_reversals_and_ties": true,
+    "future_address_rejected": true,
+    "rehashed_wrong_semantics_detected": true,
+    "gate_digest_corruption_detected": true
+  },
+  "interpretation": [
+    "The learned rule is null: it never tries the fold, and its semantic trace is identical to ordinary median.",
+    "No measured positive prefix repays source plus gate acquisition, even with the training cache retained.",
+    "Acquisition alone exceeds ordinary median's entire stream cost; this workload could not repay even free gated deployment.",
+    "The always-fold diagnostic is separate from a successfully learned conditional policy.",
+    "Physical verification validates a built column once and reuses the trusted cache; terminal tests are not fresh NAND execution.",
+    "The warm-default ancillary cache is gifted and excludes its acquisition; it is a favorable sensitivity check.",
+    "Timings exclude referee fixture generation, experimental logging, and this independent audit as preregistered.",
+    "A richer gate or different workload remains untested; ambiguous eight-label prefixes preclude always picking the first-exact route from those labels, not a perfect cost-selection impossibility."
+  ],
+  "categories": {
+    "scope_and_authority": {
+      "status": "pass",
+      "rationale": "Owned verifier only; held audit authorized after frozen checkpoint."
+    },
+    "information_leakage": {
+      "status": "pass",
+      "rationale": "Learner selection independently reproduced from visible prefixes only; safe snapshots retain no task-label state."
+    },
+    "split_integrity": {
+      "status": "pass",
+      "rationale": "Direct full permutation reconstruction verifies distinct train/held mechanisms and exact sampled streams."
+    },
+    "comparator_fairness": {
+      "status": "pass",
+      "rationale": "Common full teaching stream, common median fallback, optional one fold; cold sensitivity and adaptive ancillary explicit."
+    },
+    "artifact_and_checker": {
+      "status": "pass",
+      "rationale": "Source hashes, freeze ancestry, twelve distinct sequential processes, physical circuits and timings match."
+    },
+    "identifiability": {
+      "status": "pass",
+      "rationale": "Opposite first winners share eight-label prefixes; policy's available information is explicitly limited."
+    },
+    "resource_fairness": {
+      "status": "pass",
+      "rationale": "Source plus every paid gate-training pass charged at every positive prefix; public caching counted."
+    },
+    "statistical_validity": {
+      "status": "pass",
+      "rationale": "All preselected tasks complete; three repeats per primary arm, pointwise median and individual curves verified."
+    },
+    "representation_robustness": {
+      "status": "pass",
+      "rationale": "Mechanism partition is invariant to all 720 input permutations; all six inputs are essential."
+    },
+    "causal_alternatives": {
+      "status": "pass",
+      "rationale": "Null fitted gate isolates no positive fold-use effect; warm-cache and richer-gate explanations remain separated."
+    },
+    "independent_replay": {
+      "status": "pass",
+      "rationale": "Every saved held proposal sequence and returned physical circuit replayed independently."
+    },
+    "adversarial_mutation": {
+      "status": "pass",
+      "rationale": "Digest, gate and instruction-address corruption fixtures rejected."
+    },
+    "claim_scope": {
+      "status": "pass",
+      "rationale": "Finite host-specific negative result; no claim of universal reuse failure or learning impossibility."
+    }
+  },
+  "audit_elapsed_s": 38.32600403903052,
+  "completed_utc": "2026-11-15T18:34:27.932264+00:00"
+}

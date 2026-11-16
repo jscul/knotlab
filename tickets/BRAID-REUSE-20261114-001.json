@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "BRAID-ACTIONS-20261114-001",
+    "SEARCH-AUDIT-20261112-001Z"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/result.json"
+    ],
+    "report": "research/BRAID-REUSE-20261114-001/transfer.md"
+  },
+  "id": "BRAID-REUSE-20261114-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Compare search from raw Boolean actions versus the same algorithm with an optional previously learned crossing on an independently defined ternary relation. Measure held-out success, censored candidate counts, expanded primitive work and acquisition break-even across five paired seeds.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "BRAID-ACTIONS-20261114-001",
+  "schema_version": 1,
+  "status": "Across five paired seeds both arms sampled an exact program, yet every training-selected checkpoint held 3/9. Reuse averaged 260 fewer proposals to the first exact sample and consumed 27.63% more expanded gates. No compute payback observed.",
+  "status_class": "supported",
+  "stop_rule": "",
+  "title": "Cost of reusing a frozen crossing on a new three-label task"
+}

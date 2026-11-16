@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "FOLD-TWO-OUTPUT-20261115-001-E001",
+  "ticket": "FOLD-TWO-OUTPUT-20261115-001",
+  "kind": "experiment",
+  "branch": "code_analysis",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Given only two output truth tables, can a solver offered the saved fold distinguish when one bit is sufficient from when two bits are required, construct that interface in a physical program, and spend less total CPU than a joint primitive solver with sharing?",
+  "inputs": "Arity and two full Boolean output columns in public input order. Both sides know to look for a triple of raw variables essential to both outputs. Some methods have an additional unlocated six-NAND implementation of the earlier three-input operation.",
+  "forbidden_inputs": "Generating formulas, identity or order of the hidden triple, source wiring, local answers, class or pair labels, timing labels, identifiers as solver features, caches from a different method or run.",
+  "outputs": "Selected raw triple and sufficient local width; an explicit one- or two-output-wire summary inside an executable NAND program returning two answers. Paid correctness and lower-bound verification, cache and work accounting, observed failures.",
+  "mapping": "For each candidate triple classify its eight assignments by their pair of residual truth functions over the other variables. Minimize the number of bits required across eligible triples. Synthesize the two answers using the chosen code, with possible sharing and fan-out in all arms.",
+  "primary_observable": "Exact correctness on both outputs at every input plus a verified minimum bit width and physical cut. Compare total process CPU through the verified return of the same 48-task mixed sequence. Count setup, module/entry load, search, unsuccessful placements, joint circuit construction, complete verification and return serialization.",
+  "comparators_or_controls": "Matched generic primitive and inlined template paths as well as an independently written primitive solver with semantic memoization and joint NAND sharing, tried both cut-first and unrestricted-circuit-first. Matched shared/rewired pairs, outside inputs used by both consumers, shuffled raw positions/output order, plus a small separate operation-change sensitivity.",
+  "resource_budget": "Eight pairs each at five, seven and nine inputs. Five methods, ten warm-cache blocks, five empty-cache blocks. Two additional pairs with an alternative shared operation tested separately. One process/CPU at a time, at most 512 original input assignments per case.",
+  "first_executable_signal": "Certify the five-input examples and false certificates, then replay the first full stream of anonymous tasks on both outputs. Complete all planned cells under the frozen comparison.",
+  "stop_rule": "Conclude at the fixed widths after testing the supplied fold. Consider separately trained, frozen reuse only if exactness, genuine use and the paid advantage over the fastest primitive control satisfy the prespecified rule in preregistration.md.",
+  "nonclaims": "Bounded Boolean synthesis on complete truth tables with a declared family of candidate interfaces. Minimum width concerns transmission out of an eligible triple. It is not a global minimum NAND count, whole-program space requirement, or bound on all synthesis algorithms."
+}

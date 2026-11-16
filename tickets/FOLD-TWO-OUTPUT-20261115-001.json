@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "Blind joint truth tables, matched shared and rewired tasks including distractors; two primitive sharing controls and an equally informed inline entry.",
+  "completion_gate": "Check minimum local width and physical separation, execute both returned outputs on all inputs and report the charged warm/cold comparison.",
+  "dependencies": [
+    "ANSWER-COMPOSE-20261115-001",
+    "FOLD-PAIR-PLACE-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/FOLD-TWO-OUTPUT-20261115-001/FOLD-TWO-OUTPUT-20261115-001-E001_joint_tables/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/FOLD-TWO-OUTPUT-20261115-001/FOLD-TWO-OUTPUT-20261115-001-E001_joint_tables/result.json"
+    ],
+    "independent_audit": "artifacts/FOLD-TWO-OUTPUT-20261115-001/FOLD-TWO-OUTPUT-20261115-001-E001_joint_tables/audit.json",
+    "report": "research/FOLD-TWO-OUTPUT-20261115-001/two_outputs.md"
+  },
+  "id": "FOLD-TWO-OUTPUT-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "From only paired Boolean truth tables, synthesize two outputs joined to an inferred minimal one- or two-bit intermediate. Compare paid verified cost with a strong primitive solver that can share arbitrary work and wires.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-TRANSFER-20261114-001",
+  "schema_version": 1,
+  "status": "All 24 shared and 24 rewired rules returned minimum one- and two-bit programs. Supplied fold used 106.795 ms versus 99.823 ms primitive CPU including verification. The paid efficiency claim missed its gate; independent replay passed all 3,640 programs.",
+  "status_class": "refuted",
+  "stop_rule": "Use the prespecified total-cost and correctness conditions on the mixed stream; no scaling or learned selection on a miss.",
+  "title": "Can two output tables reveal a shared hidden bit more cheaply with a fold?"
+}

@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "Blind paid comparator arms with one pair at a time and matched inlining, under fixed input width and fresh labels.",
+  "completion_gate": "Check every returned NAND program on every original input; compare paid process CPU, paired repeats, wall and marginal costs against the strongest eligible primitive baseline.",
+  "dependencies": [
+    "FOLD-PLACEMENT-20261115-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/FOLD-PAIR-PLACE-20261115-001/FOLD-PAIR-PLACE-20261115-001-E001_pair_first/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/FOLD-PAIR-PLACE-20261115-001/FOLD-PAIR-PLACE-20261115-001-E001_pair_first/result.json"
+    ],
+    "independent_audit": "artifacts/FOLD-PAIR-PLACE-20261115-001/FOLD-PAIR-PLACE-20261115-001-E001_pair_first/audit.json",
+    "report": "research/FOLD-PAIR-PLACE-20261115-001/pair_placement.md"
+  },
+  "id": "FOLD-PAIR-PLACE-20261115-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Compare blind pair-first fold location to collapsing one atomic operation at a time and to the previous strongest blind three-input search on a fresh relabelling, with counterbalanced paired timing and exhaustive returns.",
+  "ownership": {
+    "root": false,
+    "scope_id": "FOLD-TRANSFER-20261114-001"
+  },
+  "parent": "FOLD-PLACEMENT-20261115-001",
+  "schema_version": 1,
+  "status": "Blind pair-first search found all 168 available fold uses but cost 128.777 ms CPU versus 123.416 ms for cached primitives, with zero wins in eight paired CPU repeats. All 3,840 circuits passed independent replay; stop at nine inputs.",
+  "status_class": "refuted",
+  "stop_rule": "Only a qualifying blind, fold-specific saving can open the paid selection phase. A primitive-alone gain or a miss ends the experiment.",
+  "title": "Can an exact input-pair test locate the fold cheaply without a hint?"
+}

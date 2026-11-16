@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "ANSWER-COMPOSE-20261115-001-E001",
+  "ticket": "ANSWER-COMPOSE-20261115-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Can a frozen learned decoder compose received answers to cover an unseen nonlinear relation and recognize when a one-source change makes a fourth bit necessary?",
+  "inputs": "Four anonymous signed-clause questions on nine source bits. The sender sees the raw values; both endpoints know the public incidence and the earlier frozen question parser.",
+  "forbidden_inputs": "Held examples, target query names, teacher circuits, omitted port, family identifiers, raw values at the receiver, grader or transmission metadata at deployment. No fitting after checkpoint freeze.",
+  "outputs": "A fixed-width three- or four-bit packet sent before the requested port is known. An omitted answer is reconstructed by a NAND circuit on the packet.",
+  "mapping": "Fit a library of binary NAND programs and a public probe budget on other relations. Plan by composing the frozen programs on packet slots. Report both unchecked proposals and independently certified returns.",
+  "primary_observable": "All four delayed queries exact on all 512 inputs, with three bits on the closed nonlinear wiring and four on the open wiring, against an exact cached functional-dependency compiler.",
+  "comparators_or_controls": "Parity-only shortcut, no composition, exact public lookup compiler and four-answer transmission, training relation symmetry check, event-level independent audit. Separate actual empirical savings from supplied search and checking.",
+  "resource_budget": "One finite program fit on even-parity input examples. All test layouts run on all 512 states. Compare verified setup and ordinary traffic at 1, 16, 256, 4096 and 65536 uses per wiring.",
+  "first_executable_signal": "A nonlinear held answer is computed correctly from three transmitted answers without seeing the raw input at the decoder.",
+  "stop_rule": "Score the frozen primary policies and controls on every predeclared menu. Keep a failed raw proposal even when the certificate recovers an exact result.",
+  "nonclaims": "Finite delayed-query protocol. Timing is specific to the stated implementation and host. No general program-learning, complexity or recursive improvement claim."
+}

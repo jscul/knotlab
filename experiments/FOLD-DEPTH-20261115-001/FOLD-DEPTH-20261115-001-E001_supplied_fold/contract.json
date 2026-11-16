@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "FOLD-DEPTH-20261115-001-E001",
+  "ticket": "FOLD-DEPTH-20261115-001",
+  "kind": "experiment",
+  "branch": "code_analysis",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "At equal exhaustive correctness does an unlocated, repeatedly usable learned ternary operation avoid more program search with increasing composition depth?",
+  "inputs": "Opaque truth tables on five, seven or nine relevant inputs. All solvers get the same completely specified function. Named and flat solvers get equivalent unlocated templates for F(a,b,c)=(a AND b) XOR c. The named solver receives the previously acquired seven-NAND program for free.",
+  "forbidden_inputs": "Hidden generator AST, placement, nesting port, depth, form, mechanism labels or pair/kind as solver features; outcomes on the evaluation panel during design. Full target truth alone is the public specification. Alternate source syntaxes are hidden.",
+  "outputs": "An executable NAND program per solved target, failure if no candidate or a limit is reached, all search costs, exact output verification and timing components.",
+  "mapping": "Use disjoint-support decomposition with memoized successful/failed subproblems. Synthesize using only primitives, or also use the named operation on any legal three recursively synthesized subfunctions. Equal-information inline control proposes the same unrestricted groupings and expands them back to primitive AND/XOR. In a second strategy compare direct joint tests of two raw variables against optimized one-variable primitive tests, with general factor-search fallback.",
+  "primary_observable": "Actual executed candidate/factor tests per exact rule, including unsuccessful placement screens; report absolute and percentage saved versus cached primitive at each depth, by matched condition. Preserve search CPU and wall, lower-level row or word work, physical compilation, all-input verification and failures separately.",
+  "comparators_or_controls": "Cached primitive AND/OR/XOR; same grouping/search opportunities with the supplied library fully inlined to primitives; blind repeated versus broken recurrence with matched input numbering; fixed nine essential inputs; matched cache lifetime, cold per task primary and shared per arity sensitivity.",
+  "resource_budget": "Small fixed panel for 2, 3 and 4 applications, plus a small fixed-width control, at most 512 assignments per rule. Two search strategies with three arms apiece. Five sequential timing repeats cold per task, and at least one matched warm replay. Identical bounds and full cost for unsuccessful runs. The saved fold is free only in this first stage.",
+  "first_executable_signal": "Complete a matched two-application pair with exact primitive, named and flat programs, compare failed factor tests and verification. Retain the full fixed panel over all three depths irrespective of this first comparison.",
+  "stop_rule": "After exhaustive correctness and accounting across the fixed panel, execute a fresh discovery-and-transfer experiment only for an appreciable growing advantage over cached primitives as specified in preregistration. A gain shared with the inline control qualifies. Otherwise stop after reporting the bottleneck.",
+  "nonclaims": "Small synthetic truth-table program synthesis study. Source syntax is erased in the public representation. No worst-case bound, general learned search result or inference about real AI research."
+}

@@ -1,0 +1,2752 @@
+{
+  "checkpoint_file_sha256": "c1904a2f65dd0baa8e1a3ae51a2c2fb5c06290e30a91637617b3a9deab41f504",
+  "verification": {
+    "checkpoint_digest": "c1904a2f65dd0baa8e1a3ae51a2c2fb5c06290e30a91637617b3a9deab41f504",
+    "algebra": {
+      "bijective": true,
+      "left_nondegenerate": true,
+      "right_nondegenerate": true,
+      "coordinate_dependence_xy": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "at_least_one_mixed_output": true,
+      "square_is_identity": false,
+      "square_changed_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "inverse_after_forward_failures": [],
+      "forward_after_inverse_failures": [],
+      "inverse_both_orders": true,
+      "braid_train": {
+        "correct": 21,
+        "total": 21
+      },
+      "braid_heldout": {
+        "correct": 6,
+        "total": 6
+      },
+      "braid_all": true,
+      "braid_rows": [
+        {
+          "input": [
+            0,
+            0,
+            0
+          ],
+          "left": [
+            0,
+            0,
+            0
+          ],
+          "right": [
+            0,
+            0,
+            0
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            0,
+            1
+          ],
+          "left": [
+            1,
+            0,
+            0
+          ],
+          "right": [
+            1,
+            0,
+            0
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            0,
+            2
+          ],
+          "left": [
+            2,
+            0,
+            0
+          ],
+          "right": [
+            2,
+            0,
+            0
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            1,
+            0
+          ],
+          "left": [
+            2,
+            1,
+            0
+          ],
+          "right": [
+            2,
+            1,
+            0
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            1,
+            1
+          ],
+          "left": [
+            1,
+            1,
+            0
+          ],
+          "right": [
+            1,
+            1,
+            0
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            1,
+            2
+          ],
+          "left": [
+            0,
+            1,
+            0
+          ],
+          "right": [
+            0,
+            1,
+            0
+          ],
+          "split": "heldout",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            2,
+            0
+          ],
+          "left": [
+            0,
+            2,
+            0
+          ],
+          "right": [
+            0,
+            2,
+            0
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            2,
+            1
+          ],
+          "left": [
+            1,
+            2,
+            0
+          ],
+          "right": [
+            1,
+            2,
+            0
+          ],
+          "split": "heldout",
+          "pass": true
+        },
+        {
+          "input": [
+            0,
+            2,
+            2
+          ],
+          "left": [
+            2,
+            2,
+            0
+          ],
+          "right": [
+            2,
+            2,
+            0
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            0,
+            0
+          ],
+          "left": [
+            2,
+            2,
+            1
+          ],
+          "right": [
+            2,
+            2,
+            1
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            0,
+            1
+          ],
+          "left": [
+            1,
+            2,
+            1
+          ],
+          "right": [
+            1,
+            2,
+            1
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            0,
+            2
+          ],
+          "left": [
+            0,
+            2,
+            1
+          ],
+          "right": [
+            0,
+            2,
+            1
+          ],
+          "split": "heldout",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            1,
+            0
+          ],
+          "left": [
+            0,
+            1,
+            1
+          ],
+          "right": [
+            0,
+            1,
+            1
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            1,
+            1
+          ],
+          "left": [
+            1,
+            1,
+            1
+          ],
+          "right": [
+            1,
+            1,
+            1
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            1,
+            2
+          ],
+          "left": [
+            2,
+            1,
+            1
+          ],
+          "right": [
+            2,
+            1,
+            1
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            2,
+            0
+          ],
+          "left": [
+            2,
+            0,
+            1
+          ],
+          "right": [
+            2,
+            0,
+            1
+          ],
+          "split": "heldout",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            2,
+            1
+          ],
+          "left": [
+            1,
+            0,
+            1
+          ],
+          "right": [
+            1,
+            0,
+            1
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            1,
+            2,
+            2
+          ],
+          "left": [
+            0,
+            0,
+            1
+          ],
+          "right": [
+            0,
+            0,
+            1
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            0,
+            0
+          ],
+          "left": [
+            0,
+            0,
+            2
+          ],
+          "right": [
+            0,
+            0,
+            2
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            0,
+            1
+          ],
+          "left": [
+            1,
+            0,
+            2
+          ],
+          "right": [
+            1,
+            0,
+            2
+          ],
+          "split": "heldout",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            0,
+            2
+          ],
+          "left": [
+            2,
+            0,
+            2
+          ],
+          "right": [
+            2,
+            0,
+            2
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            1,
+            0
+          ],
+          "left": [
+            2,
+            1,
+            2
+          ],
+          "right": [
+            2,
+            1,
+            2
+          ],
+          "split": "heldout",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            1,
+            1
+          ],
+          "left": [
+            1,
+            1,
+            2
+          ],
+          "right": [
+            1,
+            1,
+            2
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            1,
+            2
+          ],
+          "left": [
+            0,
+            1,
+            2
+          ],
+          "right": [
+            0,
+            1,
+            2
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            2,
+            0
+          ],
+          "left": [
+            0,
+            2,
+            2
+          ],
+          "right": [
+            0,
+            2,
+            2
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            2,
+            1
+          ],
+          "left": [
+            1,
+            2,
+            2
+          ],
+          "right": [
+            1,
+            2,
+            2
+          ],
+          "split": "train",
+          "pass": true
+        },
+        {
+          "input": [
+            2,
+            2,
+            2
+          ],
+          "left": [
+            2,
+            2,
+            2
+          ],
+          "right": [
+            2,
+            2,
+            2
+          ],
+          "split": "train",
+          "pass": true
+        }
+      ],
+      "structural_goal": true,
+      "complete_algebra_gate": true
+    },
+    "reader_gate_counts": {
+      "aggregate": 2,
+      "reuse": 3
+    },
+    "menus": {
+      "one_current_cell": {
+        "descriptors": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": true,
+        "physical_lengths": [
+          1
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 2,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 2,
+        "minimum_fixed_bits": 1,
+        "class_sizes": [
+          256,
+          256
+        ],
+        "public_read_functions": 1,
+        "minimum_width": true
+      },
+      "one_undo_cell": {
+        "descriptors": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": true,
+        "physical_lengths": [
+          1
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 2,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 2,
+        "minimum_fixed_bits": 1,
+        "class_sizes": [
+          256,
+          256
+        ],
+        "public_read_functions": 1,
+        "minimum_width": true
+      },
+      "one_current_row": {
+        "descriptors": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": true,
+        "physical_lengths": [
+          1
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 2,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 2,
+        "minimum_fixed_bits": 1,
+        "class_sizes": [
+          64,
+          448
+        ],
+        "public_read_functions": 1,
+        "minimum_width": true
+      },
+      "one_undo_row": {
+        "descriptors": [
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": true,
+        "physical_lengths": [
+          1
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 2,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 2,
+        "minimum_fixed_bits": 1,
+        "class_sizes": [
+          64,
+          448
+        ],
+        "public_read_functions": 1,
+        "minimum_width": true
+      },
+      "two_current_cells": {
+        "descriptors": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": true,
+        "physical_lengths": [
+          2
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 4,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 4,
+        "minimum_fixed_bits": 2,
+        "class_sizes": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "public_read_functions": 2,
+        "minimum_width": true
+      },
+      "mixed_three": {
+        "descriptors": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            -1
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": false,
+        "physical_lengths": [
+          2
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 4,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 4,
+        "minimum_fixed_bits": 2,
+        "class_sizes": [
+          32,
+          32,
+          224,
+          224
+        ],
+        "public_read_functions": 2,
+        "minimum_width": true
+      },
+      "fresh_label_two": {
+        "descriptors": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": false,
+        "physical_lengths": [
+          1
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 2,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 2,
+        "minimum_fixed_bits": 1,
+        "class_sizes": [
+          256,
+          256
+        ],
+        "public_read_functions": 1,
+        "minimum_width": true
+      },
+      "all_current_cells": {
+        "descriptors": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": false,
+        "physical_lengths": [
+          9
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 512,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 512,
+        "minimum_fixed_bits": 9,
+        "class_sizes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "public_read_functions": 9,
+        "minimum_width": true
+      },
+      "all_undo_cells": {
+        "descriptors": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": false,
+        "physical_lengths": [
+          9
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 512,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 512,
+        "minimum_fixed_bits": 9,
+        "class_sizes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "public_read_functions": 9,
+        "minimum_width": true
+      },
+      "three_current_rows": {
+        "descriptors": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": false,
+        "physical_lengths": [
+          3
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 8,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 8,
+        "minimum_fixed_bits": 3,
+        "class_sizes": [
+          1,
+          7,
+          7,
+          7,
+          49,
+          49,
+          49,
+          343
+        ],
+        "public_read_functions": 3,
+        "minimum_width": true
+      },
+      "three_undo_rows": {
+        "descriptors": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            2,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            2,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            2,
+            -1
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": false,
+        "physical_lengths": [
+          3
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 8,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 8,
+        "minimum_fixed_bits": 3,
+        "class_sizes": [
+          1,
+          7,
+          7,
+          7,
+          49,
+          49,
+          49,
+          343
+        ],
+        "public_read_functions": 3,
+        "minimum_width": true
+      },
+      "duplicate_current_undo": {
+        "descriptors": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": true,
+        "physical_lengths": [
+          1
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 2,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 2,
+        "minimum_fixed_bits": 1,
+        "class_sizes": [
+          256,
+          256
+        ],
+        "public_read_functions": 1,
+        "minimum_width": true
+      },
+      "redundant_row": {
+        "descriptors": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "correct": 4608,
+        "total": 4608,
+        "exact": true,
+        "accuracy": 1.0,
+        "split": {
+          "train_even": {
+            "correct": 2304,
+            "total": 2304
+          },
+          "heldout_odd": {
+            "correct": 2304,
+            "total": 2304
+          }
+        },
+        "training_menu": false,
+        "physical_lengths": [
+          4
+        ],
+        "width_chosen_before_values": true,
+        "packet_classes": 8,
+        "collisions": [],
+        "first_failure": null,
+        "answer_classes": 8,
+        "minimum_fixed_bits": 3,
+        "class_sizes": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64
+        ],
+        "public_read_functions": 4,
+        "minimum_width": false
+      }
+    },
+    "full_table_recovery": {
+      "tables": 512,
+      "exact_identifications": 512,
+      "physical_lengths": [
+        9
+      ],
+      "full_unknown_table_classes": 512,
+      "minimum_fixed_bits": 9,
+      "truncated_four_bit_packets_rejected": 512,
+      "four_bit_baseline": {
+        "physical_bits": 4,
+        "exact_tables": 16,
+        "tables": 512,
+        "correct_cells": 3328,
+        "cell_queries": 4608
+      },
+      "unrestricted_four_bit_exact_identification_bound": [
+        16,
+        512
+      ],
+      "scope": "one precommitted packet; all nine delayed cell reads; public wiring supplied"
+    },
+    "same_marginal_control": {
+      "relations": [
+        17,
+        10
+      ],
+      "marginals": [
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "equal_marginals": true,
+      "query": [
+        1,
+        0,
+        0
+      ],
+      "true_answers": [
+        1,
+        0
+      ],
+      "packets": [
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "decoded": [
+        1,
+        0
+      ]
+    },
+    "rewiring": {
+      "wire_transpositions": 36,
+      "changed_query_cells": 18432,
+      "unchanged_query_cells": 147456,
+      "correct_after_rewiring_on_changed": 18432,
+      "stale_correct_on_changed": 0,
+      "stale_invalid_packets_on_changed": 0,
+      "first_changed_case": {
+        "relation": 1,
+        "swapped_ports": [
+          0,
+          1
+        ],
+        "port": 0,
+        "truth": [
+          1,
+          0
+        ],
+        "fresh_prediction": 0,
+        "stale_prediction": 1
+      }
+    },
+    "stop_and_undo": {
+      "undo_after_move_relation_roundtrips": 512,
+      "relations": 512,
+      "identity_actor_structural_goal": false,
+      "swap_actor_structural_goal": false,
+      "stop_alone_is_not_a_noninvolutive_mixed_braid": true
+    },
+    "receiver_interface": "physical bits, same public descriptors, frozen policy, eventual port only",
+    "public_cache_scope": "binding/reach cache keys contain no relation values"
+  }
+}

@@ -1,0 +1,6708 @@
+{
+  "counts": {
+    "blind": {
+      "broad": {
+        "exact": 3,
+        "fits": 9,
+        "held_out_correct": 259,
+        "held_out_total": 288,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 2
+      },
+      "selective": {
+        "exact": 2,
+        "fits": 9,
+        "held_out_correct": 785,
+        "held_out_total": 864,
+        "minimal_partitions": 2,
+        "minimum_width_exact": 2,
+        "width_one": 3
+      }
+    },
+    "cem": {
+      "broad": {
+        "exact": 2,
+        "fits": 9,
+        "held_out_correct": 248,
+        "held_out_total": 288,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 6
+      },
+      "selective": {
+        "exact": 0,
+        "fits": 9,
+        "held_out_correct": 738,
+        "held_out_total": 864,
+        "minimal_partitions": 0,
+        "minimum_width_exact": 0,
+        "width_one": 9
+      }
+    }
+  },
+  "delayed_pair": {
+    "joint_patterns": 25,
+    "minimum_bits": 5,
+    "patterns_per_branch": [
+      5,
+      5
+    ]
+  },
+  "evidence_stage": "exploratory",
+  "independent_controls": {
+    "contexts": [
+      {
+        "context": 0,
+        "corrupt_rejected": true,
+        "hand_exact": true,
+        "one_bit_fraction": [
+          7,
+          8
+        ]
+      },
+      {
+        "context": 1,
+        "corrupt_rejected": true,
+        "hand_exact": true,
+        "one_bit_fraction": [
+          1,
+          1
+        ]
+      },
+      {
+        "context": 2,
+        "corrupt_rejected": true,
+        "hand_exact": true,
+        "one_bit_fraction": [
+          7,
+          8
+        ]
+      },
+      {
+        "context": 3,
+        "corrupt_rejected": true,
+        "hand_exact": true,
+        "one_bit_fraction": [
+          1,
+          1
+        ]
+      },
+      {
+        "context": 4,
+        "corrupt_rejected": true,
+        "hand_exact": true,
+        "one_bit_fraction": [
+          7,
+          8
+        ]
+      },
+      {
+        "context": 5,
+        "corrupt_rejected": true,
+        "hand_exact": true,
+        "one_bit_fraction": [
+          1,
+          1
+        ]
+      }
+    ],
+    "cue_free_one_bit": {
+      "accuracy": 0.8072916666666666,
+      "contexts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "correct": 930,
+      "decoder_vectors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "fraction": [
+        155,
+        192
+      ],
+      "masks": [
+        1,
+        2,
+        3
+      ],
+      "query": null,
+      "scope": "all deterministic encoders on all 64 worlds; common decoder across listed contexts",
+      "total": 1152,
+      "width": 1
+    },
+    "cue_free_single_query_bounds": {
+      "1": {
+        "accuracy": 0.875,
+        "contexts": [
+          0,
+          2,
+          4
+        ],
+        "correct": 168,
+        "decoder_vectors": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "fraction": [
+          7,
+          8
+        ],
+        "masks": [
+          1
+        ],
+        "query": 1,
+        "scope": "all deterministic encoders on all 64 worlds; common decoder across listed contexts",
+        "total": 192,
+        "width": 1
+      },
+      "2": {
+        "accuracy": 0.875,
+        "contexts": [
+          0,
+          2,
+          4
+        ],
+        "correct": 168,
+        "decoder_vectors": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "fraction": [
+          7,
+          8
+        ],
+        "masks": [
+          2
+        ],
+        "query": 2,
+        "scope": "all deterministic encoders on all 64 worlds; common decoder across listed contexts",
+        "total": 192,
+        "width": 1
+      },
+      "3": {
+        "accuracy": 0.828125,
+        "contexts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "correct": 318,
+        "decoder_vectors": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "fraction": [
+          53,
+          64
+        ],
+        "masks": [
+          3
+        ],
+        "query": 3,
+        "scope": "all deterministic encoders on all 64 worlds; common decoder across listed contexts",
+        "total": 384,
+        "width": 1
+      }
+    },
+    "cue_free_two_bits": {
+      "accuracy": 0.8411458333333334,
+      "contexts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "correct": 969,
+      "decoder_vectors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "fraction": [
+        323,
+        384
+      ],
+      "masks": [
+        1,
+        2,
+        3
+      ],
+      "query": null,
+      "scope": "all deterministic encoders on all 64 worlds; common decoder across listed contexts",
+      "total": 1152,
+      "width": 2
+    },
+    "cue_free_witness": {
+      "answers": [
+        0,
+        1
+      ],
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "contexts": [
+        1,
+        3
+      ],
+      "mask": 3,
+      "world": 60
+    },
+    "pass": true,
+    "split_sizes": [
+      32,
+      32
+    ],
+    "worlds": 64
+  },
+  "known_input_sources": {
+    "distinct_worlds": 64,
+    "instances": 16384,
+    "source_mask_counts": {
+      "9000": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      },
+      "9001": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      },
+      "9002": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      },
+      "9003": {
+        "0": 2,
+        "1": 6,
+        "2": 6,
+        "3": 2
+      }
+    },
+    "source_raw_sha256": "de6c316210ad9cbe2d3554f7a7b287ea088844470373e8e9cc7bd1c6b7764a26",
+    "triples_of_sources": 4
+  },
+  "primary": [
+    {
+      "chosen_width": 1,
+      "context": "c0",
+      "method": "cem",
+      "seed": 17,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              2,
+              4
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            2,
+            4
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c0",
+      "method": "blind",
+      "seed": 17,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            3,
+            5
+          ],
+          "code_input_support": [
+            3,
+            5
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              20,
+              1,
+              1
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0
+            ],
+            "2": [
+              1,
+              0
+            ],
+            "3": [
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 20,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "XOR",
+              4,
+              4
+            ],
+            [
+              "NAND",
+              3,
+              5
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            178,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "code_input_support": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "composition": {
+            "correct": 994,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "2": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "3": [
+              1,
+              1,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              5
+            ],
+            [
+              "AND",
+              2,
+              4
+            ],
+            [
+              "NAND",
+              3,
+              6
+            ]
+          ],
+          "held_out": [
+            89,
+            96
+          ],
+          "lesson_correct": 45184,
+          "lesson_total": 49152,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            7,
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            89,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c1",
+      "method": "cem",
+      "seed": 17,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              2
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            2
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c1",
+      "method": "blind",
+      "seed": 17,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            1,
+            3
+          ],
+          "code_input_support": [
+            1,
+            3
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 5,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              4,
+              4
+            ],
+            [
+              "AND",
+              1,
+              3
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "OR",
+              1,
+              1
+            ],
+            [
+              "OR",
+              0,
+              1
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            2
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c2",
+      "method": "cem",
+      "seed": 17,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            4
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c2",
+      "method": "blind",
+      "seed": 17,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              1,
+              0
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "XOR",
+              6,
+              6
+            ],
+            [
+              "NAND",
+              0,
+              4
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            176,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "code_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "composition": {
+            "correct": 992,
+            "first_mismatch": [
+              17,
+              1,
+              1
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "2": [
+              1,
+              0,
+              1,
+              0
+            ],
+            "3": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 17,
+          "gates": [
+            [
+              "AND",
+              0,
+              5
+            ],
+            [
+              "NAND",
+              1,
+              5
+            ],
+            [
+              "NAND",
+              4,
+              6
+            ]
+          ],
+          "held_out": [
+            88,
+            96
+          ],
+          "lesson_correct": 43008,
+          "lesson_total": 49152,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            7,
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            88,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c3",
+      "method": "cem",
+      "seed": 17,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              2,
+              4
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            64,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "code_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": {
+            "evaluation": 766,
+            "generation": 7,
+            "program": {
+              "gates": [
+                {
+                  "destination": 6,
+                  "left": 0,
+                  "op": "AND",
+                  "right": 0
+                },
+                {
+                  "destination": 7,
+                  "left": 3,
+                  "op": "NAND",
+                  "right": 5
+                },
+                {
+                  "destination": 8,
+                  "left": 2,
+                  "op": "NAND",
+                  "right": 4
+                }
+              ],
+              "live_gate_indices": [
+                1,
+                2
+              ],
+              "live_gates": 2,
+              "outputs": [
+                7,
+                8
+              ],
+              "sha256": "e874b4f49c8f7404736667cb93e9891c4fa4938549c849698bf33719cc44b6e3",
+              "text": "r6=AND(r0,r0); r7=NAND(r3,r5); r8=NAND(r2,r4); emit(r7,r8)",
+              "tokens": [
+                0,
+                104,
+                125,
+                43
+              ],
+              "width": 2
+            }
+          },
+          "first_wrong_world": null,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "NAND",
+              3,
+              5
+            ],
+            [
+              "NAND",
+              2,
+              4
+            ]
+          ],
+          "held_out": [
+            32,
+            32
+          ],
+          "lesson_correct": 16384,
+          "lesson_total": 16384,
+          "live_gates": 2,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": true,
+          "taps": [
+            7,
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            32,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c3",
+      "method": "blind",
+      "seed": 17,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            3,
+            5
+          ],
+          "code_input_support": [
+            3,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 20,
+          "gates": [
+            [
+              "AND",
+              0,
+              3
+            ],
+            [
+              "OR",
+              4,
+              5
+            ],
+            [
+              "NAND",
+              3,
+              5
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            64,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "code_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              1,
+              1,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": {
+            "evaluation": 5258,
+            "generation": 54,
+            "program": {
+              "gates": [
+                {
+                  "destination": 6,
+                  "left": 2,
+                  "op": "AND",
+                  "right": 4
+                },
+                {
+                  "destination": 7,
+                  "left": 3,
+                  "op": "NAND",
+                  "right": 5
+                },
+                {
+                  "destination": 8,
+                  "left": 1,
+                  "op": "NAND",
+                  "right": 5
+                }
+              ],
+              "live_gate_indices": [
+                0,
+                1
+              ],
+              "live_gates": 2,
+              "outputs": [
+                6,
+                7
+              ],
+              "sha256": "86c7013c96bb6a16a4b7d199f9a7e6897da6a08eae0b934fd203ae7e9ad98097",
+              "text": "r6=AND(r2,r4); r7=NAND(r3,r5); r8=NAND(r1,r5); emit(r6,r7)",
+              "tokens": [
+                13,
+                104,
+                120,
+                40
+              ],
+              "width": 2
+            }
+          },
+          "first_wrong_world": null,
+          "gates": [
+            [
+              "AND",
+              2,
+              4
+            ],
+            [
+              "NAND",
+              3,
+              5
+            ],
+            [
+              "NAND",
+              1,
+              5
+            ]
+          ],
+          "held_out": [
+            32,
+            32
+          ],
+          "lesson_correct": 16384,
+          "lesson_total": 16384,
+          "live_gates": 2,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": true,
+          "taps": [
+            6,
+            7
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            32,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c4",
+      "method": "cem",
+      "seed": 17,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              2
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            2
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c4",
+      "method": "blind",
+      "seed": 17,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            1,
+            3
+          ],
+          "code_input_support": [
+            1,
+            3
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              5,
+              1,
+              1
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0
+            ],
+            "2": [
+              0,
+              1
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 5,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              1,
+              3
+            ],
+            [
+              "AND",
+              0,
+              1
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            192,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "code_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "composition": {
+            "correct": 1024,
+            "first_mismatch": null,
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "2": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "3": [
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          "first_exact_training_sample": {
+            "evaluation": 3509,
+            "generation": 36,
+            "program": {
+              "gates": [
+                {
+                  "destination": 6,
+                  "left": 1,
+                  "op": "AND",
+                  "right": 3
+                },
+                {
+                  "destination": 7,
+                  "left": 1,
+                  "op": "AND",
+                  "right": 2
+                },
+                {
+                  "destination": 8,
+                  "left": 0,
+                  "op": "AND",
+                  "right": 2
+                }
+              ],
+              "live_gate_indices": [
+                0,
+                2
+              ],
+              "live_gates": 2,
+              "outputs": [
+                6,
+                8
+              ],
+              "sha256": "51ea44055ce0473b675aaa11bbd0246c8a8865254d7a3ff041e26d7c1e1be2f0",
+              "text": "r6=AND(r1,r3); r7=AND(r1,r2); r8=AND(r0,r2); emit(r6,r8)",
+              "tokens": [
+                8,
+                8,
+                2,
+                41
+              ],
+              "width": 2
+            }
+          },
+          "first_wrong_world": null,
+          "gates": [
+            [
+              "AND",
+              1,
+              3
+            ],
+            [
+              "AND",
+              1,
+              2
+            ],
+            [
+              "AND",
+              0,
+              2
+            ]
+          ],
+          "held_out": [
+            96,
+            96
+          ],
+          "lesson_correct": 49152,
+          "lesson_total": 49152,
+          "live_gates": 2,
+          "minimal_partition": true,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": true,
+          "taps": [
+            6,
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            96,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c5",
+      "method": "cem",
+      "seed": 17,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              4
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            4
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c5",
+      "method": "blind",
+      "seed": 17,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            1,
+            5
+          ],
+          "code_input_support": [
+            1,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 17,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              1,
+              5
+            ],
+            [
+              "AND",
+              6,
+              7
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            56,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "code_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 17,
+          "gates": [
+            [
+              "XOR",
+              3,
+              5
+            ],
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "OR",
+              1,
+              7
+            ]
+          ],
+          "held_out": [
+            28,
+            32
+          ],
+          "lesson_correct": 13312,
+          "lesson_total": 16384,
+          "live_gates": 2,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            5,
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            28,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c0",
+      "method": "cem",
+      "seed": 31,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              2,
+              4
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            2,
+            4
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c0",
+      "method": "blind",
+      "seed": 31,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "NAND",
+              1,
+              4
+            ],
+            [
+              "AND",
+              2,
+              4
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "code_input_support": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "3": [
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              2,
+              4
+            ],
+            [
+              "AND",
+              1,
+              5
+            ],
+            [
+              "AND",
+              0,
+              7
+            ]
+          ],
+          "held_out": [
+            81,
+            96
+          ],
+          "lesson_correct": 41152,
+          "lesson_total": 49152,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            6,
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            83,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c1",
+      "method": "cem",
+      "seed": 31,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            56,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "code_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 5,
+          "gates": [
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "OR",
+              3,
+              6
+            ],
+            [
+              "AND",
+              1,
+              7
+            ]
+          ],
+          "held_out": [
+            28,
+            32
+          ],
+          "lesson_correct": 13312,
+          "lesson_total": 16384,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8,
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            28,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c1",
+      "method": "blind",
+      "seed": 31,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "OR",
+              2,
+              2
+            ],
+            [
+              "NAND",
+              0,
+              2
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            54,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "code_input_support": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 9,
+          "gates": [
+            [
+              "OR",
+              2,
+              3
+            ],
+            [
+              "AND",
+              1,
+              4
+            ],
+            [
+              "OR",
+              0,
+              7
+            ]
+          ],
+          "held_out": [
+            27,
+            32
+          ],
+          "lesson_correct": 11392,
+          "lesson_total": 16384,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            6,
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            27,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c2",
+      "method": "cem",
+      "seed": 31,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              4
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            4
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c2",
+      "method": "blind",
+      "seed": 31,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            1,
+            5
+          ],
+          "code_input_support": [
+            1,
+            5
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              17,
+              1,
+              1
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0
+            ],
+            "2": [
+              0,
+              1
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 17,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "OR",
+              3,
+              5
+            ],
+            [
+              "AND",
+              1,
+              5
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            178,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "code_input_support": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "composition": {
+            "correct": 994,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "2": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "3": [
+              1,
+              1,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              1,
+              3
+            ],
+            [
+              "AND",
+              5,
+              6
+            ],
+            [
+              "NAND",
+              0,
+              4
+            ]
+          ],
+          "held_out": [
+            89,
+            96
+          ],
+          "lesson_correct": 45184,
+          "lesson_total": 49152,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            7,
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            89,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c3",
+      "method": "cem",
+      "seed": 31,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              2,
+              4
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            2,
+            4
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c3",
+      "method": "blind",
+      "seed": 31,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              2,
+              4
+            ],
+            [
+              "NAND",
+              6,
+              6
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            56,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "code_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              2,
+              2
+            ],
+            [
+              "AND",
+              3,
+              5
+            ],
+            [
+              "OR",
+              6,
+              7
+            ]
+          ],
+          "held_out": [
+            28,
+            32
+          ],
+          "lesson_correct": 13312,
+          "lesson_total": 16384,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            4,
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            28,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c4",
+      "method": "cem",
+      "seed": 31,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              2
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            2
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c4",
+      "method": "blind",
+      "seed": 31,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              1,
+              0
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              6,
+              6
+            ],
+            [
+              "NAND",
+              0,
+              2
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            1,
+            3
+          ],
+          "code_input_support": [
+            1,
+            3
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              5,
+              1,
+              1
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 5,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "OR",
+              1,
+              1
+            ],
+            [
+              "NAND",
+              5,
+              5
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            1,
+            3
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c5",
+      "method": "cem",
+      "seed": 31,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            4
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c5",
+      "method": "blind",
+      "seed": 31,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            1,
+            5
+          ],
+          "code_input_support": [
+            1,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 17,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              1,
+              5
+            ],
+            [
+              "XOR",
+              0,
+              4
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            64,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "code_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": {
+            "evaluation": 490,
+            "generation": 5,
+            "program": {
+              "gates": [
+                {
+                  "destination": 6,
+                  "left": 1,
+                  "op": "AND",
+                  "right": 5
+                },
+                {
+                  "destination": 7,
+                  "left": 0,
+                  "op": "NAND",
+                  "right": 4
+                },
+                {
+                  "destination": 8,
+                  "left": 1,
+                  "op": "NAND",
+                  "right": 6
+                }
+              ],
+              "live_gate_indices": [
+                0,
+                1,
+                2
+              ],
+              "live_gates": 3,
+              "outputs": [
+                7,
+                8
+              ],
+              "sha256": "a364fca7dd3d7da2d8c6aa807f30d3a6ad4c525ea475c2806f7e8c752c80ca9c",
+              "text": "r6=AND(r1,r5); r7=NAND(r0,r4); r8=NAND(r1,r6); emit(r7,r8)",
+              "tokens": [
+                10,
+                88,
+                121,
+                43
+              ],
+              "width": 2
+            }
+          },
+          "first_wrong_world": null,
+          "gates": [
+            [
+              "AND",
+              1,
+              5
+            ],
+            [
+              "NAND",
+              0,
+              4
+            ],
+            [
+              "NAND",
+              1,
+              6
+            ]
+          ],
+          "held_out": [
+            32,
+            32
+          ],
+          "lesson_correct": 16384,
+          "lesson_total": 16384,
+          "live_gates": 3,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": true,
+          "taps": [
+            7,
+            8
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            32,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c0",
+      "method": "cem",
+      "seed": 53,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              1,
+              0
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              1,
+              0
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              5
+            ],
+            [
+              "NAND",
+              2,
+              4
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            2,
+            4
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c0",
+      "method": "blind",
+      "seed": 53,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              2,
+              4
+            ],
+            [
+              "AND",
+              6,
+              6
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              40,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              1,
+              2
+            ],
+            [
+              "NAND",
+              5,
+              6
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            2,
+            4
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c1",
+      "method": "cem",
+      "seed": 53,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            6
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            64,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "code_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          "first_exact_training_sample": {
+            "evaluation": 1621,
+            "generation": 16,
+            "program": {
+              "gates": [
+                {
+                  "destination": 6,
+                  "left": 1,
+                  "op": "NAND",
+                  "right": 3
+                },
+                {
+                  "destination": 7,
+                  "left": 0,
+                  "op": "AND",
+                  "right": 2
+                },
+                {
+                  "destination": 8,
+                  "left": 6,
+                  "op": "AND",
+                  "right": 7
+                }
+              ],
+              "live_gate_indices": [
+                0,
+                1
+              ],
+              "live_gates": 2,
+              "outputs": [
+                6,
+                7
+              ],
+              "sha256": "1fc54cf1c148f97ba8fe599ca1ec9202e92b2732ca8cdb2fc8ece9541f1d2446",
+              "text": "r6=NAND(r1,r3); r7=AND(r0,r2); r8=AND(r6,r7); emit(r6,r7)",
+              "tokens": [
+                71,
+                2,
+                34,
+                40
+              ],
+              "width": 2
+            }
+          },
+          "first_wrong_world": null,
+          "gates": [
+            [
+              "NAND",
+              1,
+              3
+            ],
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              0,
+              1
+            ]
+          ],
+          "held_out": [
+            32,
+            32
+          ],
+          "lesson_correct": 16384,
+          "lesson_total": 16384,
+          "live_gates": 2,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": true,
+          "taps": [
+            6,
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            32,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c1",
+      "method": "blind",
+      "seed": 53,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "XOR",
+              6,
+              7
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            6
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            64,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "code_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          "first_exact_training_sample": {
+            "evaluation": 1779,
+            "generation": 18,
+            "program": {
+              "gates": [
+                {
+                  "destination": 6,
+                  "left": 0,
+                  "op": "AND",
+                  "right": 2
+                },
+                {
+                  "destination": 7,
+                  "left": 1,
+                  "op": "AND",
+                  "right": 3
+                },
+                {
+                  "destination": 8,
+                  "left": 1,
+                  "op": "XOR",
+                  "right": 4
+                }
+              ],
+              "live_gate_indices": [
+                0,
+                1
+              ],
+              "live_gates": 2,
+              "outputs": [
+                6,
+                7
+              ],
+              "sha256": "a8ff05b503c92e9b5af5e80d5c58c580cbed35121f8182ee237f1dd995ddb74c",
+              "text": "r6=AND(r0,r2); r7=AND(r1,r3); r8=XOR(r1,r4); emit(r6,r7)",
+              "tokens": [
+                2,
+                9,
+                83,
+                40
+              ],
+              "width": 2
+            }
+          },
+          "first_wrong_world": null,
+          "gates": [
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              1,
+              3
+            ],
+            [
+              "XOR",
+              1,
+              4
+            ]
+          ],
+          "held_out": [
+            32,
+            32
+          ],
+          "lesson_correct": 16384,
+          "lesson_total": 16384,
+          "live_gates": 2,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": true,
+          "taps": [
+            6,
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            32,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c2",
+      "method": "cem",
+      "seed": 53,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            6
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            4
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c2",
+      "method": "blind",
+      "seed": 53,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              34,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "NAND",
+              4,
+              4
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            192,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "code_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "composition": {
+            "correct": 1024,
+            "first_mismatch": null,
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "3": [
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          "first_exact_training_sample": {
+            "evaluation": 3327,
+            "generation": 34,
+            "program": {
+              "gates": [
+                {
+                  "destination": 6,
+                  "left": 0,
+                  "op": "AND",
+                  "right": 4
+                },
+                {
+                  "destination": 7,
+                  "left": 1,
+                  "op": "AND",
+                  "right": 5
+                },
+                {
+                  "destination": 8,
+                  "left": 6,
+                  "op": "NAND",
+                  "right": 6
+                }
+              ],
+              "live_gate_indices": [
+                0,
+                1
+              ],
+              "live_gates": 2,
+              "outputs": [
+                6,
+                7
+              ],
+              "sha256": "7e9ec967f8333921fff1a57e23c5958c8ace6ea5d8f8283e2013d394ac970ee5",
+              "text": "r6=AND(r0,r4); r7=AND(r1,r5); r8=NAND(r6,r6); emit(r6,r7)",
+              "tokens": [
+                4,
+                11,
+                141,
+                40
+              ],
+              "width": 2
+            }
+          },
+          "first_wrong_world": null,
+          "gates": [
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "AND",
+              1,
+              5
+            ],
+            [
+              "NAND",
+              6,
+              6
+            ]
+          ],
+          "held_out": [
+            96,
+            96
+          ],
+          "lesson_correct": 49152,
+          "lesson_total": 49152,
+          "live_gates": 2,
+          "minimal_partition": true,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": true,
+          "taps": [
+            6,
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            96,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c3",
+      "method": "cem",
+      "seed": 53,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              2,
+              4
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            8
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            4
+          ],
+          "code_input_support": [
+            2,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            2,
+            4
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 2,
+      "context": "c3",
+      "method": "blind",
+      "seed": 53,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            3,
+            5
+          ],
+          "code_input_support": [
+            3,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 20,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              3,
+              5
+            ],
+            [
+              "XOR",
+              6,
+              6
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            56,
+            64
+          ],
+          "answer_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "code_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 40,
+          "gates": [
+            [
+              "AND",
+              3,
+              5
+            ],
+            [
+              "OR",
+              2,
+              6
+            ],
+            [
+              "OR",
+              3,
+              6
+            ]
+          ],
+          "held_out": [
+            28,
+            32
+          ],
+          "lesson_correct": 13312,
+          "lesson_total": 16384,
+          "live_gates": 2,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            4,
+            7
+          ],
+          "target_input_support": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "train": [
+            28,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c4",
+      "method": "cem",
+      "seed": 53,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            6
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            2
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c4",
+      "method": "blind",
+      "seed": 53,
+      "use": "selective",
+      "widths": {
+        "1": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0
+            ],
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              2
+            ],
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "AND",
+              3,
+              6
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            6
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            164,
+            192
+          ],
+          "answer_input_support": [
+            0,
+            2
+          ],
+          "code_input_support": [
+            0,
+            2
+          ],
+          "composition": {
+            "correct": 964,
+            "first_mismatch": [
+              10,
+              2,
+              2
+            ],
+            "total": 1024
+          },
+          "decoder": {
+            "1": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 10,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              3
+            ],
+            [
+              "AND",
+              2,
+              4
+            ]
+          ],
+          "held_out": [
+            82,
+            96
+          ],
+          "lesson_correct": 41216,
+          "lesson_total": 49152,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 2,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            2
+          ],
+          "target_input_support": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "train": [
+            82,
+            96
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c5",
+      "method": "cem",
+      "seed": 53,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            1,
+            5
+          ],
+          "code_input_support": [
+            1,
+            5
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 17,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              1,
+              5
+            ],
+            [
+              "AND",
+              0,
+              3
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            4
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    },
+    {
+      "chosen_width": 1,
+      "context": "c5",
+      "method": "blind",
+      "seed": 53,
+      "use": "broad",
+      "widths": {
+        "1": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              4
+            ],
+            [
+              "NAND",
+              5,
+              5
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 1,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 2,
+          "sufficient": false,
+          "taps": [
+            7
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 1
+        },
+        "2": {
+          "all": [
+            52,
+            64
+          ],
+          "answer_input_support": [
+            0,
+            4
+          ],
+          "code_input_support": [
+            0,
+            4
+          ],
+          "composition": null,
+          "decoder": {
+            "3": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "first_exact_training_sample": null,
+          "first_wrong_world": 34,
+          "gates": [
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              0,
+              0
+            ],
+            [
+              "AND",
+              1,
+              1
+            ]
+          ],
+          "held_out": [
+            26,
+            32
+          ],
+          "lesson_correct": 12544,
+          "lesson_total": 16384,
+          "live_gates": 0,
+          "minimal_partition": false,
+          "minimum_possible_width": 1,
+          "realized_codes": 4,
+          "sufficient": false,
+          "taps": [
+            0,
+            4
+          ],
+          "target_input_support": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "train": [
+            26,
+            32
+          ],
+          "width": 2
+        }
+      }
+    }
+  ],
+  "producer_sha256": "15dcc2e96614d9dd3dd641f7f0e852296f465b15b8bace3fe7ae7177723f8ab1",
+  "program_evaluations": 884736,
+  "raw_sha256": "6180766f76666d85c2e737c84623e60774f4fc07210c1d1ee758f213e6123a8b",
+  "size_ordered_reference": {
+    "candidate_gate_evaluations_cumulative_by_depth": [
+      0,
+      84,
+      8232,
+      640920
+    ],
+    "winners": {
+      "c0": {
+        "candidate_gates_so_far": 5370,
+        "decoder": {
+          "0": [
+            0,
+            0,
+            0
+          ],
+          "1": [
+            1,
+            0,
+            1
+          ],
+          "2": [
+            0,
+            1,
+            1
+          ],
+          "3": [
+            1,
+            1,
+            1
+          ]
+        },
+        "gates": [
+          [
+            "AND",
+            2,
+            4
+          ],
+          [
+            "AND",
+            3,
+            5
+          ]
+        ],
+        "held_out_all_queries_correct": 32,
+        "taps": [
+          6,
+          7
+        ]
+      },
+      "c1": {
+        "candidate_gates_so_far": 92032,
+        "decoder": {
+          "0": [
+            0
+          ],
+          "1": [
+            1
+          ]
+        },
+        "gates": [
+          [
+            "AND",
+            0,
+            2
+          ],
+          [
+            "AND",
+            1,
+            3
+          ],
+          [
+            "OR",
+            6,
+            7
+          ]
+        ],
+        "held_out_all_queries_correct": 32,
+        "taps": [
+          8
+        ]
+      },
+      "c2": {
+        "candidate_gates_so_far": 1714,
+        "decoder": {
+          "0": [
+            0,
+            0,
+            0
+          ],
+          "1": [
+            1,
+            0,
+            1
+          ],
+          "2": [
+            0,
+            1,
+            1
+          ],
+          "3": [
+            1,
+            1,
+            1
+          ]
+        },
+        "gates": [
+          [
+            "AND",
+            0,
+            4
+          ],
+          [
+            "AND",
+            1,
+            5
+          ]
+        ],
+        "held_out_all_queries_correct": 32,
+        "taps": [
+          6,
+          7
+        ]
+      },
+      "c3": {
+        "candidate_gates_so_far": 640920,
+        "decoder": {
+          "0": [
+            0
+          ],
+          "1": [
+            1
+          ]
+        },
+        "gates": [
+          [
+            "AND",
+            2,
+            4
+          ],
+          [
+            "AND",
+            3,
+            5
+          ],
+          [
+            "OR",
+            6,
+            7
+          ]
+        ],
+        "held_out_all_queries_correct": 32,
+        "taps": [
+          8
+        ]
+      },
+      "c4": {
+        "candidate_gates_so_far": 802,
+        "decoder": {
+          "0": [
+            0,
+            0,
+            0
+          ],
+          "1": [
+            1,
+            0,
+            1
+          ],
+          "2": [
+            0,
+            1,
+            1
+          ],
+          "3": [
+            1,
+            1,
+            1
+          ]
+        },
+        "gates": [
+          [
+            "AND",
+            0,
+            2
+          ],
+          [
+            "AND",
+            1,
+            3
+          ]
+        ],
+        "held_out_all_queries_correct": 32,
+        "taps": [
+          6,
+          7
+        ]
+      },
+      "c5": {
+        "candidate_gates_so_far": 202960,
+        "decoder": {
+          "0": [
+            0
+          ],
+          "1": [
+            1
+          ]
+        },
+        "gates": [
+          [
+            "AND",
+            0,
+            4
+          ],
+          [
+            "AND",
+            1,
+            5
+          ],
+          [
+            "OR",
+            6,
+            7
+          ]
+        ],
+        "held_out_all_queries_correct": 32,
+        "taps": [
+          8
+        ]
+      }
+    },
+    "worlds_held_out": 32,
+    "worlds_train": 32
+  },
+  "ticket": "ATOMIC-FOLD-20261114-001"
+}

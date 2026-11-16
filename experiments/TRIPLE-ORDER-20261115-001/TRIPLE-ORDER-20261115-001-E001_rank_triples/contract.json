@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "TRIPLE-ORDER-20261115-001-E001",
+  "ticket": "TRIPLE-ORDER-20261115-001",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Can a ranking fitted only to separate pairs reduce total CPU to return correct minimum-width two-output circuits from new truth tables?",
+  "inputs": "Two packed Boolean truth columns and arity only, full support and cut inferred. Training examples include all eligible minimum-width triples, derived from tables. The solver knows to search groups of three raw inputs essential to both answers. Both outputs and all original input assignments must be correct.",
+  "forbidden_inputs": "Planted triple, formulas, the type of rewiring, pair identity, output history of other arms, held labels, test cost or answers during fitting. No model updates in evaluation.",
+  "outputs": "Frozen serialized learned priorities, per-task selected triple and width, actual separating wires and joint NAND circuit, correctness; attempted triples, checks, ranking overhead, paid training, search, verification, and cumulative CPU balance.",
+  "mapping": "Rank candidate groups from only table-derived measurements. Compute the exact width through ordinary functional decomposition and exhaust remaining competing one-bit candidates on a two-bit return. Priorities change order, with the same evidence required of all methods.",
+  "primary_observable": "Process CPU from acquiring training data and exact labels and freezing the model, through returning the same 192 verified programs on ten counterbalanced warm runs. Separate deployment-only, given-labelled-training sensitivity, elapsed times and verified correctness.",
+  "comparators_or_controls": "Same efficient primitive engine in lexical order and with an untrained table-aware heuristic, and two more untrained orders (four partial cofactors, or a detailed output-transition signature with no fitted shapes), all able to remember a valid proposal for a repeated output column. Prior independent cut-first reference and prior generic joint primitive solver. Compute an oracle count lower bound offline only. Common paid checker. Equal access to public tables, checks, primitive gates, caches, and warm-up state within matched arms.",
+  "resource_budget": "24 training pairs and 96 held pairs, equal numbers per arity 7/8/9 and for two inner operations. Ten paired warm repeats per method; 1 pinned CPU per isolated deployment, same charge for a single official fit. No held tuning or stream extension.",
+  "first_executable_signal": "Train and validate a real update on a small disjoint synthetic fixture, seal the final model from official training, then inspect one complete seven-way block of the bound stream.",
+  "stop_rule": "Stop at the prespecified 192 rules. Compare all-paid stream CPU with the fastest untrained strategy, report first and sustained break-even or endpoint gap, and separate reduced checks from paid speed. Prespecified 8/10 paid wins plus lower median cost and exactness for a repeatable advantage.",
+  "nonclaims": "Restricted eligible groups and full truth tables. Counts are minimum intermediate information, not minimum program size. Width certification and synthesis are supplied; only priority is fitted. No statement about unrelated algorithms or asymptotic complexity."
+}

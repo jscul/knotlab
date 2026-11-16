@@ -1,0 +1,27 @@
+{
+  "source_acquisition": "artifacts/BRAID-REUSE-20261114-001/BRAID-REUSE-20261114-001-E001_transfer/acquisition.json",
+  "source_sha256": "b549eb82f58e5e0704e5897c0ac1c21dcca693bd762dad73098a3753d1b72867",
+  "forward_sha256": "a740b9a93061a75b78ce24a135b5adc94ca55a0206872c7b69e97117837f4246",
+  "proposals": 98336,
+  "equivalent_literal_gates_over_nine_original_inputs": 73696113,
+  "actor_only_lower_bound_for_cost_comparison": true,
+  "recorded_implementation_counters": {
+    "program_image_translate_calls": 1534500,
+    "program_image_translated_bytes": 13810500,
+    "reward_translate_calls_on_cache_misses": 165306,
+    "reward_translated_bytes_on_cache_misses": 3471426,
+    "reward_padded_table_bytes_created": 14106112,
+    "cached_image_key_payload_bytes": 247959,
+    "parent_choices_including_restarts": 8192,
+    "forced_periodic_restarts": 256,
+    "source_program_execution_bypassed_by_reward_cache": false,
+    "primitive_interpreter_used_for_original_search": false
+  },
+  "forward_reacquisition_wall_seconds": [
+    0.3082022850867361,
+    0.30790034099482,
+    0.3081833169562742
+  ],
+  "median_forward_reacquisition_seconds": 0.3081833169562742,
+  "interpretation": "Three timing repeats of the same original guided forward-only fit reproduce the exact crossing. Charge one acquisition. Timings include source fitness and search bookkeeping. The historical packed source implementation priced semantic actor gates and did not literally execute them."
+}

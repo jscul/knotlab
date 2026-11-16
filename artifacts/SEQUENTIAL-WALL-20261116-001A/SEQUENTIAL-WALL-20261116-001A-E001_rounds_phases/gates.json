@@ -1,0 +1,50 @@
+{
+ "G1_G2_G3": {
+  "cases": 540,
+  "phase_mutant_disagrees": 417,
+  "rank_mutant_disagrees": 160
+ },
+ "G4": {
+  "circuit_inputs": 2880,
+  "circuits": 192
+ },
+ "G5": {
+  "atom": {
+   "allowed": [
+    "000",
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "111"
+   ],
+   "is_knot": true,
+   "pairwise_definable": false
+  },
+  "not-all-equal": {
+   "allowed": [
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110"
+   ],
+   "is_knot": true,
+   "pairwise_definable": false
+  }
+ },
+ "G6": {
+  "balanced tree": "rank = height",
+  "chain": "R = L, rank 1",
+  "ladder": "rank k + 1 at x_k",
+  "pyramid": "R = rank = h"
+ },
+ "G7": {
+  "acyclic_cases": 720,
+  "dual_mutant_disagrees": 324,
+  "unlayered_circuits": 200
+ },
+ "status": "all gates passed"
+}

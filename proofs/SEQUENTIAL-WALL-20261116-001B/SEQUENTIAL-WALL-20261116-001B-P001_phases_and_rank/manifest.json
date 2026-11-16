@@ -1,0 +1,75 @@
+{
+ "schema_version": 3,
+ "artifact_id": "SEQUENTIAL-WALL-20261116-001B-P001",
+ "canonical_id": "SEQUENTIAL-WALL-20261116-001B-P001",
+ "proof": "SEQUENTIAL-WALL-20261116-001B-P001",
+ "ticket": "SEQUENTIAL-WALL-20261116-001B",
+ "kind": "proof",
+ "status": "Partial",
+ "title": "Phases of the forcing law, and what overlap does to them",
+ "claim": "On atom patterns with held distinctions, a distinction's phase under the forcing law (two-place reasoning per phase) equals the least Strahler number of its derivation trees (known: Esparza-Kiefer-Luttenberger); the phase count is at most log2 of the fringe (known, Ullman-Van Gelder) and at most log2 |H| without reuse (known-with-delta); more phases than log2 |H| need a rejoining; the wall (P-completeness, Goldschlager, Cook's path systems) needs both reuse and several-way demand unless P = NC or P = NL; of the 34 three-place knot laws 2 are AC0, 2 parity-L-complete, 14 P-complete and 16 NP-complete (known, Schaefer, Allender et al., applied); not-all-equal propagation is P-complete with two held values; on acyclic patterns a dual law spreading unforcedness decides the forced set in O(min(P, P_dual) log^2 n) parallel time.",
+ "standard_statement": "Horn least-model computation by Newton iterates (Boolean semiring): iterate count = least Horton-Strahler number of derivation trees; NC for polylogarithmic Strahler number; polynomial fringe; monotone formulas; AND-only circuits in NL; MCVP P-complete; Boolean CSP classification with constants for the 34 three-ary relations that are free on every pair and not full; NAE unit propagation P-complete; dual Newton iteration for the greatest fixed point on acyclic systems.",
+ "prior_work": "Esparza, Kiefer and Luttenberger 2010; Esparza, Luttenberger and Schlund 2014; Ullman and Van Gelder 1988; Ruzzo 1980; Buss 1987; Miller and Reif 1985; Goldschlager 1977; Cook 1974; Jones and Laaser 1976; Schaefer 1978; Allender, Bauland, Immerman, Schnoor and Vollmer 2009; Baker and Pixley 1975; Kasif 1990; Berman, Idziak, Markovic, McKenzie, Valeriote and Willard 2010.",
+ "dependencies": [],
+ "completion_gate": "check.py passes (exhaustive on four distinctions, random larger patterns, the 34-knot table, the NAE gadget and the dual law), the referee thread reviews the proofs, and each statement keeps its known / known-with-delta / local label.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "check.py passed (71,536 patterns; 34 knots; 2,880 circuit inputs; 720 acyclic patterns)",
+  "independence": "check.py re-implements phases, Strahler numbers and fringe in plain Python against the experiment's numpy code; same task authorship; referee pending",
+  "novelty": "known and known-with-delta; the dual-law statement for atoms and the not-all-equal gadget written here"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "contract_frozen": true,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "phases_equal_strahler_numbers": true,
+  "no_reuse_logarithmic_phases": true,
+  "both_overlaps_needed_conditional": true,
+  "dual_law_acyclic": true,
+  "knot_law_classes_tabulated": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "Referee review of Theorems 1-6.",
+  "Promote to Proved after the referee."
+ ],
+ "paths": {
+  "manifest": "proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/manifest.json",
+  "identity": "proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/identity.json",
+  "proof": "proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/proof.md",
+  "result": "proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/result.json",
+  "check": "proofs/SEQUENTIAL-WALL-20261116-001B/SEQUENTIAL-WALL-20261116-001B-P001_phases_and_rank/check.py"
+ },
+ "attained_result": {
+  "theorems_1_to_6": "proved in prose with exhaustive and random checks; referee pending"
+ }
+}

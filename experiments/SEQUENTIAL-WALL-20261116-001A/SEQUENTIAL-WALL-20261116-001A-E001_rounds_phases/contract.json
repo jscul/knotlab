@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SEQUENTIAL-WALL-20261116-001A-E001",
+ "ticket": "SEQUENTIAL-WALL-20261116-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On random atom patterns, at and away from the jump of the forced set, and on random monotone circuits (layered and unlayered) as atom patterns, how do native rounds compare with phases of the forcing law (the least Strahler number of a derivation) and of the dual law?",
+ "definitions": {
+  "random": "n = 2^10..2^20, m = 3n atoms (three distinct uniform distinctions), held = first k of a uniform order; k* = least k with closure >= n/2; readings at k*, k*-1, k* + {+-0.001, 0.003, 0.01, 0.03} n, alpha* = 0.098251 and alpha in {0.03, 0.06, 0.2, 0.4}; seeds sha256 SW:rand:e:s",
+  "circuits": "layered: width 64/256/1024, depth 8..256, each gate AND/OR with chance 1/2, fan-in two from the layer below, inputs true with chance 1/2; unlayered: 256 inputs, 1,024..65,536 gates each reading two random earlier nodes; 10 samples each; seeds SW:circ:w:d:s and SW:unl:g:s",
+  "readings": "R (rounds), P (forcing phases), phase sizes, Strahler number by relaxation and log2 fringe (k*, k*-1), P_dual and min(P, P_dual) and output Strahler numbers on circuits"
+ },
+ "public_inputs": {
+  "code": "atoms.py (sha256 979b928fff7e11c8797d95316843a32d310d1da00b58946cf031c80a82e5e320), gates.py (sha256 cea50e64532cfb3dedbf9b373b052347b3f5e0875ba15cafd3859024bdc509ae), knots_table.py (sha256 e0273ad532cff9c2dd200944b6a1924541e18e15d54547a5706b1b9c3c70caad), job.py (sha256 bcc254f4b2ed9de1f12c36657aa33460a8059be9baaa51fd9fa373ad52538e78), summarize.py (sha256 de51df67324dfd89ceb6c15f106a051271ce4b5c014098403f84f3cf700ccf2d) beside this file; numpy, scipy.",
+  "run": "python3 -B scripts/longrun.py launch on job.py; summary by summarize.py into artifacts/SEQUENTIAL-WALL-20261116-001A/SEQUENTIAL-WALL-20261116-001A-E001_rounds_phases/."
+ },
+ "forbidden_inputs": [
+  "Changing settings, seeds, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "The predictions G, P1-P9 of research/SEQUENTIAL-WALL-20261116-001/preregistration.md, each evaluated by summarize.py.",
+ "cheapest_meaningful_control": "Structured families settled by construction (chain: one phase; ladder and pyramid: many phases, decided at once by the dual law) and the mutants of gates.py.",
+ "predictions": {
+  "P1": "alpha in {0.03, 0.06, 0.2, 0.4}: median R(2^20) <= 3 median R(2^12).",
+  "P2": "slopes of log2 median R vs log2 n over 2^14..2^20 at k* and at alpha* both >= 0.15; P2a: at k* in [0.29, 0.37]; P2b: at alpha* in [0.21, 0.29].",
+  "P3": "median P*(2^20) <= 16; median P*(2^20) - median P*(2^10) in [2, 8]; slope of median P* vs log2 n over 2^10..2^20 in [0.2, 0.8].",
+  "P3b": "median R*/P* at 2^20 >= 3 x at 2^12.",
+  "P4": "n = 2^18, 2^20: median P(k*+0.001n) - median P(k*+0.03n) in [1, 5]; median R ratio in [2, 12].",
+  "P5": "n = 2^20: largest phase at k* holds >= half the newly forced, in >= 7 of 8 samples.",
+  "P6": "w = 1024: median output Strahler number (true outputs) at d = 256 >= 1.6 x at d = 64 and >= 6; >= 7 of 10 samples at d = 256 have a true output; P6-linear: ratio >= 3 (exploratory).",
+  "P7": "w = 1024: median min(P, P_dual) at d = 256 >= 1.6 x at d = 64.",
+  "P8": "unlayered: median largest Strahler number over true gates <= 8 at every size, growth from 1,024 to 65,536 gates <= 3.",
+  "P9": "median largest log2 fringe at k* >= 3 x median P* at n = 2^16, 2^18, 2^20."
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in research/SEQUENTIAL-WALL-20261116-001/preregistration.md"
+ },
+ "stop_rule": "One run and its summary; a hand-off to the referee thread; report.",
+ "runtime": "About one to two hours on four workers; shared runner, MemoryMax 16G."
+}

@@ -51,7 +51,7 @@ sets of r-window compositions form an eventually periodic sequence: if none forg
 ("never forgets"). Rectangularity on all assignments is sufficient, not necessary (the lemma needs only the values actual states take
 at the two cuts). Where Theorem W already shows no tie at any depth, the bound is max(3, 1 + ⌈s/r⌉).
 
-## Lemma U (depth-9 bonds hold at every depth)
+## Lemma U (depth-9 bonds hold at every depth N ≥ 9)
 
 *If a set B of addresses lies at levels at most m, its projection in P_N (the assignments of B that extend to a state of P_N) is the
 same for every N ≥ m + r₀. In particular a bond of P_9 with every member at level at most 9 − r₀ is a bond of every P_N, N ≥ 9, and

@@ -14,7 +14,7 @@
   "authoritative_metadata": "manifest.json",
   "title": "No single skip: a member at every level",
   "status": "Proved",
-  "claim": "Theorem M: with r0 = 0, if every up signature and every below signature (families over every finite marking, Lemma S) meet the block step, no bond skips a level, so L_N(k, s) >= s + 1 at every depth. Computed: 55 small-orbit cyclic rulers with r = 2 pass (86 of 152 cyclic rulers with r0 = 0 now grow one member per level at every depth); the test is sound but coarse (0 of 48 acyclic rulers with r >= 2 pass). Referee pending.",
+  "claim": "Theorem M: with r0 = 0, if every up signature and every below signature (families over every finite marking, Lemma S) meet the block step, no bond skips a level, so L_N(k, s) >= s + 1 at every depth. Computed: 55 small-orbit cyclic rulers with r = 2 pass (86 of 152 cyclic rulers with r0 = 0 now grow one member per level at every depth); the test is sound but coarse (0 of 48 acyclic rulers with r >= 2 pass). Refereed, confirmed with fixes.",
   "dependencies": [
     "BLOCK-REACH-20261116-001A",
     "DIRECT-REACH-20261115-001B",
@@ -55,7 +55,6 @@
     "directory": "proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip"
   },
   "remaining_obligations": [
-    "Independent referee: pending.",
     "s + 2 (thin families or least-mark costs).",
     "The 66 failing cyclic rulers.",
     "Upper bounds for s > 4."
@@ -93,7 +92,7 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude 2026-11-16; the advisor reviewed the argument; referee pending.",
+    "independence": "Written by Claude 2026-11-16; the advisor reviewed the argument; refereed (MARK-RATE-R1, fresh code): confirmed with fixes, no Block.",
     "status": "proof by hand plus finite computation; check passed",
     "novelty": "known-with-delta"
   }

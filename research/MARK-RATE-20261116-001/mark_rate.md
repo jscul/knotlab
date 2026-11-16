@@ -3,7 +3,10 @@
 Epic `MARK-RATE-20261116-001` (`BLOCK-REACH-20261116-001#1`, at John's go-ahead on 2026-11-16 22:20 UTC, relayed by the coordinator,
 as the line's last study; G17, with G1), 2026-11-16. Proof note:
 [proof.md](../../proofs/MARK-RATE-20261116-001A/MARK-RATE-20261116-001A-P001_no_skip/proof.md). Code by the thread. The canonical K1–K3
-test is unchanged. **Referee pending.** The line's closing summary: [line_summary.md](line_summary.md).
+test is unchanged. **Refereed** (MARK-RATE-R1, [report](referee-R1/report.md), commit e60a68d91): **confirmed with fixes**, no
+Block; Theorem M and Lemma S's closure hold (3,600 SAT signatures inside the families, an independent recursion agrees on 439
+descriptions, 20 newly passing cyclic rulers checked directly), and the pilot is disclosed fairly. Its narrowings concern the line
+summary and are folded in there and logged in `docs/CORRECTIONS.md`. The line's closing summary: [line_summary.md](line_summary.md).
 
 ## The question
 

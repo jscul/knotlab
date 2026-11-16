@@ -30,13 +30,24 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
 - The exponential proof-length bounds inherited in `ROUTE-PARITY-TRANSFER-20261115-001`, `QUADRATIC-ROUTE-TRANSFER-20261115-001`, `PRODUCT-NAME-TRANSFER-20261115-001` and `AFFINE-FACTOR-RANK-20261115-001` are conditional. They rest on Pang's arXiv 2610.00837 (Theorems 1.1 and 7.2(a)), an unrefereed, AI-assisted preprint claiming a previously open result, recorded as assumption [A84](docs/ASSUMPTIONS.md#a84--pangs-degree-size-relation-holds-as-stated). "Provably" and "proves" are withdrawn from their summaries. [Route parity decision](research/ROUTE-PARITY-TRANSFER-20261115-001/decision.md)
 - For the parity case, ECCC TR26-316 (Alekseev, Gryaznov, Itsykson, Pitassi, Robere and Tzameret, 10 November 2026, Theorems 6.5 and 2.3), also unrefereed and independent of Pang, states the same bound, so that case holds if either preprint does. The degree-two and named-product bounds rest on Pang alone.
 
+## 16 November 2026: no level skipped, confirmed by its referee; the addressed-pattern line closes
+
+- The no-skip test (`MARK-RATE-20261116-001`) was confirmed by its referee with fresh code, with no Block: the theorem and the closure
+  of its families hold, and 86 of the 152 small-orbit rulers with cycles grow one member per level at every depth ([decision note](research/MARK-RATE-20261116-001/mark_rate.md)).
+- Narrowed, in the line's closing summary ([line summary](research/MARK-RATE-20261116-001/line_summary.md)): a fixed relation between
+  two orbits that survives at every distance is a sufficient condition for a bounded bond, not shown necessary (4 small-orbit patterns
+  never forget and are not known to be bounded); and a stretch of r levels that forgets forces at least one member per r levels, not a
+  rate set by r (rulers that forget only over two levels can still grow one per level).
+- Reworded: the upper bounds and exact first levels read from depth 9 hold at every depth from 9 on; the lower bounds hold at every
+  depth. The same wording is fixed in the blocks study's note, the goals and the intuition entry.
+
 ## 16 November 2026: growth at every depth from blocks, confirmed by its referee, with an exact result added
 
 - Growth at every depth from blocks (`BLOCK-REACH-20261116-001`) was confirmed by its referee with fresh code, with no Block: the
-  forgetting theorem in both of its cases, the step it uses and the lemma that carries depth-9 bonds to every depth hold, and the
+  forgetting theorem in both of its cases, the step it uses and the lemma that carries depth-9 bonds to every depth from 9 on hold, and the
   forgetting lengths recompute on all 786 patterns ([decision note](research/BLOCK-REACH-20261116-001/block_reach.md)).
 - Added, from the referee: for every pattern that grows one member per two levels, the least bond is exactly three members one and
-  two levels down at every depth, and for every ruler exactly three one level down (computed after the referee, not separately
+  two levels down at every depth from 9 on, and for every ruler exactly three one level down (computed after the referee, not separately
   refereed). The study had compared its bound with the values
   read at depth 9 without its own refinement, so it reported a gap of one where there is none.
 - Reworded: an index in the proof (which orbit two groups share), and the predictions' time, which had been stamped after their commit.

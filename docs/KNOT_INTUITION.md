@@ -3673,11 +3673,11 @@ So holes come in two kinds:
    - **Growth at every depth** (`BLOCK-REACH-20261116-001`; refereed, confirmed with fixes): where the maps send each address to only a few others,
      a stretch of r levels that forgets what enters it forces a bond to take a member at least every r levels, so every such ruler of
      the census, cyclic ones included, and every pattern growing one member per two levels keeps growing at every depth, proved; the
-     values read at depth 9 bound them from above at every depth, and the first levels are exact at every depth (three members one
+     values read at depth 9 bound them from above at every depth from 9 on, and the first levels are exact there (three members one
      and two levels down for the half-rate patterns, found by the referee; one level down for the rulers, computed after the referee
      and not separately refereed). Rulers with cycles forget
      more slowly, so that they grow one member per level is still read only to depth 9 ([decision note](../research/BLOCK-REACH-20261116-001/block_reach.md)).
-   - **No level skipped** (`MARK-RATE-20261116-001`; referee pending): a bond that skipped a level would need the marks above and below
+   - **No level skipped** (`MARK-RATE-20261116-001`; refereed, confirmed with fixes): a bond that skipped a level would need the marks above and below
      the gap to leave values on its two sides that the step between them cannot join; where no marking does, every level holds a
      member, which proves one member per level at every depth for 86 of the 152 small-orbit rulers with cycles. The line closes here
      ([line summary](../research/MARK-RATE-20261116-001/line_summary.md)).

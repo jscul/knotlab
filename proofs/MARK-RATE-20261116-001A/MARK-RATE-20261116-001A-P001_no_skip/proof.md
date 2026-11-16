@@ -1,7 +1,8 @@
 # No single skip: a member at every level
 
 `MARK-RATE-20261116-001A-P001`, epic `MARK-RATE-20261116-001`, 2026-11-16. Written by Claude; the advisor model reviewed the argument
-before the predictions were frozen (`research/MARK-RATE-20261116-001/advisor_design_answer.md`). Referee pending. Checks: `check.py`
+before the predictions were frozen (`research/MARK-RATE-20261116-001/advisor_design_answer.md`). Refereed (MARK-RATE-R1,
+`research/MARK-RATE-20261116-001/referee-R1/report.md`): confirmed with fixes, no Block. Checks: `check.py`
 (result in `result.json`). Setting, groups and block steps as in Theorem F
 ([proof](../../BLOCK-REACH-20261116-001A/BLOCK-REACH-20261116-001A-P001_forgetting_blocks/proof.md)): group j holds O_(k+j), the
 side subtrees of the other children of O_(k+j−1), and the knots placed at O_(k+j−1); groups j − 1 and j share O_(k+j−1); a mark on

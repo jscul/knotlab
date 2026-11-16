@@ -18,7 +18,7 @@ addresses.
 ## Answer
 
 **Every small-orbit ruler and half-rate description provably keeps growing at every depth, at least linearly, and the census's
-depth-9 values bound them from above at every depth; the exact rate is open, and cyclic rulers forget more slowly than acyclic ones.**
+depth-9 values bound them from above at every depth N ≥ 9; the exact rate is open, and cyclic rulers forget more slowly than acyclic ones.**
 
 The tool is the nested line's forgetting bound (`BRANCH-DEPTH-20261112-001A`), moved onto blocks. Follow the orbits from the top
 orbit down to the target's orbit, and treat each block step (an orbit's assignment to its child orbit's assignment, the block's
@@ -26,7 +26,7 @@ knots holding and the other children's subtrees feasible) as one group. If every
 value that can enter it combines with any value that can leave it, then a bond cannot skip r levels in a row, so it needs at least
 1 + ⌈s/r⌉ members to reach s levels down (**Theorem F**, proved). Separately, the projection onto addresses at levels at most m
 does not depend on the depth once the depth is r₀ past m (**Lemma U**, proved), so every least bond the census found at
-depth 9 stays a bond at every depth.
+depth 9 stays a bond at every depth N ≥ 9.
 
 | Census profile (depth 9) | Small orbits | Forget (r = 1 / 2 / 3) | Never forget | At every depth N ≥ 3 + s |
 | --- | ---: | --- | ---: | --- |

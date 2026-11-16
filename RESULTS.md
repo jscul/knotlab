@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 419 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 420 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 419 epics with their closures
+- [Epics](#epics): all 420 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1667,4 +1667,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Two separately revealed XORs of path products (`TWO-PRODUCT-SKETCHES-20261115-001`) | [closure](proofs/TWO-PRODUCT-SKETCHES-20261115-001Z/TWO-PRODUCT-SKETCHES-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-PRODUCT-SKETCHES-20261115-001/) |
 | 2026-11-15 | Two repeated middle variables and a second way to group the hidden choices (`TWO-RELAY-PADDING-20261115-001`) | [closure](proofs/TWO-RELAY-PADDING-20261115-001Z/TWO-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/TWO-RELAY-PADDING-20261115-001/) |
 | 2026-11-15 | Sharing a middle variable between two routes (`UNSIGNED-ROUTE-JOINS-20261115-001`) | [closure](proofs/UNSIGNED-ROUTE-JOINS-20261115-001Z/UNSIGNED-ROUTE-JOINS-20261115-001Z-P001_synthesis/proof.md) | [folder](research/UNSIGNED-ROUTE-JOINS-20261115-001/) |
+| 2026-11-16 | Exact reach at every depth from blocks of orbits (`BLOCK-REACH-20261116-001`) | — | [folder](research/BLOCK-REACH-20261116-001/) |
 

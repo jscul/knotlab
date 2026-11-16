@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CARRY-STRANDS-20261116-001A-E001",
+ "ticket": "CARRY-STRANDS-20261116-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "How do phases and doubling rounds of the w-carry law (spend-only and keep) fall with the number w of carried distinctions on small random atom patterns at the jump, layered and unlayered random circuits, ladders, pyramids and subdivided trees, and how much does keeping gain over spending?",
+ "definitions": {
+  "law": "carried states of at most w open distinctions; begin, follow a rule, open use taken while carried, release; spend-only (multisets, every use spends) or keep (sets, a use may keep its demanders)",
+  "readings": "P (phases), T (sum of ceil(log2(1 + L_t))), per-distinction keep gain (keep phase < ceil(sigma/w)), Strahler number sigma, propagation rounds R",
+  "seeds": "sha256 CS:<family>:<parameters>:<sample>"
+ },
+ "public_inputs": {
+  "code": "strands.py (sha256 7f54fb0d011781e984bd5e5ce7b9f94f313ee0d74fd4ddd0fe38cf60dd5939c0); gates.py (sha256 a0ea8d44ad113345ba3bb9db88c351ee9d2165987577170f3cf2319d5a52bac4); job.py (sha256 0a78f8fb34f0cc0cad5f5cbfb99851ee3de38dabaabab21080f61ef1bacb31b1); summarize.py (sha256 c369d3394af169f3f4dfc0251a8cdfa7a230f6d806b452d059fc0ea0ea14e7d2); the atom library and incremental k* of SEQUENTIAL-WALL-20261116-001A-E001 (atoms.py sha256 979b928fff7e11c8797d95316843a32d310d1da00b58946cf031c80a82e5e320, job.py sha256 bcc254f4b2ed9de1f12c36657aa33460a8059be9baaa51fd9fa373ad52538e78); numpy, scipy.",
+  "run": "scripts/longrun.py launch on job.py; summarize.py RUN into artifacts/CARRY-STRANDS-20261116-001A/CARRY-STRANDS-20261116-001A-E001_carried/."
+ },
+ "forbidden_inputs": [
+  "Changing settings, seeds, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions G, Q1, Q1b, Q2, Q3, Q3b, Q4, Q5 of research/CARRY-STRANDS-20261116-001/preregistration.md, evaluated by summarize.py.",
+ "cheapest_meaningful_control": "The spend-only law, whose phases are ceil(sigma/w) by theorem (gate G3), against the keep law on the same patterns; ladders as the keep-gain control.",
+ "predictions": {
+  "Q1": "random at the jump: P_2(keep) = ceil(P_1/2) in >= 75% of samples at each n >= 256",
+  "Q1b": "median keep-gain fraction <= 0.10 at every n; after-narrowest > before at n >= 512",
+  "Q2": "T_2(spend) <= T_1 in >= 90% of samples at n >= 256; median ratio in [0.8, 0.95] at n >= 1024",
+  "Q3": "layered depth 32: relative keep gain width 4 > width 32, width 16 >= width 32",
+  "Q3b": "narrow widths 2, 3: P_(2W)(keep) = 1 on every sample",
+  "Q4": "pyramids: P_w(keep) = P_w(spend) = ceil(h/w), T equal",
+  "Q5": "subdivided trees l = 16: T_2(spend) < T_1 at heights 4, 6; T_3(spend) < T_2(spend) at height 4"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run and its summary; referee hand-off; report.",
+ "runtime": "Under an hour on two workers; shared runner, 3G per case."
+}

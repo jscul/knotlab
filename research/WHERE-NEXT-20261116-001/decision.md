@@ -63,3 +63,22 @@ A fresh session should recheck, without this thread's reasoning:
    learned violated-clause selection with memory has been compared at charged cost with re-tuned rules.
 6. **Words.** The notes use the glossary's words (distinction, knot, meeting pattern, overlap); flag any spatial word used for
    the program's own objects.
+
+## Final report as sent
+
+2026-11-16 23:53 UTC, in the project thread:
+
+> **Result: your agent's memory works and is learnable, but what it learned doesn't carry over to bigger or different patterns
+> yet. By the rule I froze in advance, that is a clean loss at scale.**
+>
+> On the sizes it trained on, the agent with memory needed about half the flips of the best hand-written rule, Novelty+. Without
+> memory, the same agent was 2.7 to 3.3 times worse. At 4 times its training size it only tied Novelty+. At 16 times, and on the
+> local pattern it never saw, it lost. Each of its steps also costs 4 to 8 times more computing, so it never saved time. Learning
+> where to go next added little.
+>
+> (Position table, next-directions table, Corrections, Goals and Assumptions lines as in this note; next step: Continue, selected
+> #1, memory that doesn't count steps, starting next.)
+>
+> My guess about why it doesn't transfer: its memory counts steps, and at larger sizes the same number of steps means something
+> different. Novelty+'s memory only compares which distinction was flipped most recently, which works at any size. That's what #1
+> tests.

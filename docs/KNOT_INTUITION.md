@@ -1431,6 +1431,10 @@ So holes come in two kinds:
    - On random atom patterns at the jump keeping saves a phase for no distinction forced before the narrowest phase and for 6 to 12% after it; two carried distinctions without keeping cut the doubling rounds by 22 to 32%; pyramids need ⌈h/w⌉ phases and exactly h rounds either way (computed, frozen; 3 of 7 predictions held). [Decision note](../research/CARRY-STRANDS-20261116-001/carry_strands.md)
    - The picture is the classical register and pebbling one and explains nothing beyond it; it names the line between nesting, which carrying cannot remove, and rejoining, which keeping removes. Forcing has one state, so the braid studies' joint-record effect has no counterpart there.
 
+   **2026-11-16: joint records where they can matter** (`JOINT-RECORDS-20261116-001`; referee pending).
+   - Carrying joint records of up to w distinctions through not-all-equal satisfiability and counting is dynamic programming over a tree decomposition: the least w is the treewidth + 1 (known). So the braid, carried to where joint records hold more than separate ones, is the classical separator table, with the known escapes (affine records, Pfaffians, Petersen's theorem on zero-pair weaves). [Proof](../proofs/JOINT-RECORDS-20261116-001A/JOINT-RECORDS-20261116-001A-P001_record_law/proof.md)
+   - A seam of s shared distinctions reports a relation closed under flipping every value, and every such relation occurs. Pairwise reports suffice for s ≤ 2 and fail at s = 3 for exactly 4 of the 16: not-all-equal and its single-flip variants, the knots. The Codex seam finding is the level below (one-place against two-place reports, in a Horn family). [Decision note](../research/JOINT-RECORDS-20261116-001/joint_records.md)
+
 4. **Dynamics.** Are loops better modeled as processes whose outputs over time
    are the data, and does the static definition survive that change?
 

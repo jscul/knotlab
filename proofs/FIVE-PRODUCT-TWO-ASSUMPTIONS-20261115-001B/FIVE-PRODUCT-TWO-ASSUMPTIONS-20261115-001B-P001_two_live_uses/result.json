@@ -1,0 +1,1099 @@
+{
+  "artifact_id": "FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001",
+  "capacity_and_five_cost": {
+    "0": {
+      "attaining_coordinate_questions": [
+        2,
+        8
+      ],
+      "five_cost_embedding": [
+        1,
+        65,
+        33,
+        97,
+        17,
+        81,
+        49,
+        113
+      ],
+      "maximal_live_uses": 4,
+      "one_premise_training_rich_plain_rows": [
+        16,
+        64
+      ],
+      "positive_and_countercase_sizes": [
+        32,
+        32
+      ],
+      "slices": [
+        {
+          "answers": [
+            0,
+            0
+          ],
+          "post_and_counter_core_sizes": [
+            8,
+            8
+          ]
+        },
+        {
+          "answers": [
+            0,
+            1
+          ],
+          "post_and_counter_core_sizes": [
+            8,
+            8
+          ]
+        },
+        {
+          "answers": [
+            1,
+            0
+          ],
+          "post_and_counter_core_sizes": [
+            8,
+            8
+          ]
+        },
+        {
+          "answers": [
+            1,
+            1
+          ],
+          "post_and_counter_core_sizes": [
+            8,
+            8
+          ]
+        }
+      ],
+      "training_rich_plain_rows": [
+        16,
+        32
+      ]
+    },
+    "1": {
+      "attaining_coordinate_questions": [
+        2
+      ],
+      "five_cost_embedding": [
+        5,
+        69,
+        37,
+        101,
+        21,
+        85,
+        53,
+        117
+      ],
+      "maximal_live_uses": 2,
+      "one_premise_training_rich_plain_rows": [
+        16,
+        64
+      ],
+      "positive_and_countercase_sizes": [
+        16,
+        16
+      ],
+      "slices": [
+        {
+          "answers": [
+            0
+          ],
+          "post_and_counter_core_sizes": [
+            8,
+            8
+          ]
+        },
+        {
+          "answers": [
+            1
+          ],
+          "post_and_counter_core_sizes": [
+            8,
+            8
+          ]
+        }
+      ],
+      "training_rich_plain_rows": [
+        8,
+        32
+      ]
+    }
+  },
+  "claim": "Each of the two rules can be used on two genuinely live branches. Their verified costs are 31 for a=0 and 35 for a=1 with a shared guard derivation, or 32 and 36 with the guard established independently after the split. The two-use minima in the specified fourteen-question menu are 31 and 35. With arbitrary visible affine questions, the maximum possible number of live uses is four and two respectively.",
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "execution_receipt": {
+    "path": "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/check_execution-001.json",
+    "sha256": "62c3a44014079808aac57c903d0e7d5e828eeb7c04156649133d8ebeac80bd19"
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/manifest.json": "49445cf7df74c7b6522cffff4014ab58a3b2cc5c894cc51667c86f6e43d278a5",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/manifest.json": "13a616fc95de7a7a85ebe582e8224668f69b53f2f12e008bfb7f5fe4bed5a29e",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/solver.py": "7669832c06a8d80ab5be837b41388346f8e661bd3622824d94bf038869f218b1",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z-P001_synthesis/manifest.json": "cd222446c9dc153a508e8cc4b1df3e825c3bcaf44c7622e995c2261e1878ea0d",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/certificates.json": "786ad04b1fffa3304165f428e1c1c247a4e7039ec69aee22ef7904ace1fee48e",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/check.py": "e8e42ba4d3afbe00af0e792bf3349f54197f82e333e9eef2866835c986ff6e92",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/checks.json": "831b6dce7c6c1e9f9ede4eb595e7ea78af0ab7745b0b54b5857e424973ce391c",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/identity.json": "4a148fc25bffba5f1ec7a27a2d9a67ad18c2dc4280bb2551a80b3c692ec802ed",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/programs.py": "f8e7fce5652ec9103a08a61bda5a313b68e4da4bf89a764958719dfc27fa0f8e",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/proof.md": "eebdd79a5f0ede3d667bf545868da47f39dd33f8b3ce33b58eb28b3228eec7da",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/replay.py": "65acaf22795dbe869dec724f8aba551379c1f19cdcca81da77481e377118966e"
+  },
+  "kind": "proof",
+  "menu_census": {
+    "coordinates": {
+      "masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "profiles": {
+        "0": {
+          "by_exact_use_count": [
+            23,
+            24,
+            31,
+            38,
+            45
+          ],
+          "no_single_neither_x2_v_both": [
+            23,
+            24,
+            32,
+            32,
+            42,
+            31
+          ]
+        },
+        "1": {
+          "by_exact_use_count": [
+            23,
+            35,
+            42
+          ],
+          "no_single_neither_x2_v_both": [
+            23,
+            35,
+            42,
+            42,
+            42,
+            42
+          ]
+        }
+      },
+      "reachable_raw_guards": 33715
+    },
+    "full_guard_triple": {
+      "masks": [
+        1,
+        2,
+        4,
+        8,
+        10,
+        14,
+        16,
+        32,
+        64,
+        128,
+        256,
+        260,
+        266,
+        270
+      ],
+      "profiles": {
+        "0": {
+          "by_exact_use_count": [
+            23,
+            24,
+            31,
+            38,
+            45
+          ],
+          "no_single_neither_x2_v_both": [
+            23,
+            24,
+            32,
+            32,
+            38,
+            31
+          ]
+        },
+        "1": {
+          "by_exact_use_count": [
+            23,
+            28,
+            35
+          ],
+          "no_single_neither_x2_v_both": [
+            23,
+            28,
+            36,
+            42,
+            42,
+            35
+          ]
+        }
+      },
+      "reachable_raw_guards": 81874
+    }
+  },
+  "negative_controls": {
+    "0": {
+      "drop_x2_from_training": "evaluator has surviving rows at a claimed closure",
+      "matching_charge_rejected": "evaluator has surviving rows at a claimed closure",
+      "missing_raw_premise_witnesses": {
+        "v": {
+          "P": 280,
+          "R": null
+        },
+        "x2": {
+          "P": 12,
+          "R": 4
+        }
+      },
+      "missing_v": "raw premise 256=0 unestablished",
+      "missing_x2": "raw premise 4=0 unestablished",
+      "surviving_plain_training_row": 13
+    },
+    "1": {
+      "drop_x2_from_training": "evaluator has surviving rows at a claimed closure",
+      "matching_charge_rejected": "evaluator has surviving rows at a claimed closure",
+      "missing_raw_premise_witnesses": {
+        "v": {
+          "P": 268,
+          "R": 284
+        },
+        "x2": {
+          "P": 24,
+          "R": 0
+        }
+      },
+      "missing_v": "raw premise 256=0 unestablished",
+      "missing_x2": "raw premise 4=1 unestablished",
+      "surviving_plain_training_row": 13
+    }
+  },
+  "programs": {
+    "a0_asked_separately": {
+      "charges": {
+        "L": 2,
+        "P": 10,
+        "Q": 9,
+        "R": 11,
+        "ordinary_child_references": 30
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4,
+          256
+        ],
+        "path": [
+          0,
+          0
+        ],
+        "raw": 128
+      },
+      "main": 27,
+      "ordinary_expansion_cost": 37,
+      "total": 32,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            0,
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=0"
+          },
+          "raw": 64
+        },
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            0,
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=0"
+          },
+          "raw": 64
+        }
+      ]
+    },
+    "a0_both": {
+      "charges": {
+        "L": 2,
+        "P": 10,
+        "Q": 8,
+        "R": 11,
+        "ordinary_child_references": 29
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4,
+          256
+        ],
+        "path": [
+          0,
+          "R"
+        ],
+        "raw": 128
+      },
+      "main": 26,
+      "ordinary_expansion_cost": 36,
+      "total": 31,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            "R",
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 64
+        },
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            "R",
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 64
+        }
+      ]
+    },
+    "a0_four": {
+      "charges": {
+        "L": 4,
+        "P": 14,
+        "Q": 12,
+        "R": 15,
+        "ordinary_child_references": 43
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4,
+          256
+        ],
+        "path": [
+          0,
+          "R"
+        ],
+        "raw": 128
+      },
+      "main": 40,
+      "ordinary_expansion_cost": 60,
+      "total": 45,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            "R",
+            0,
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            "R",
+            0,
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            "R",
+            1,
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            "R",
+            1,
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        }
+      ]
+    },
+    "a0_neither": {
+      "charges": {
+        "L": 2,
+        "P": 10,
+        "Q": 8,
+        "R": 12,
+        "ordinary_child_references": 30
+      },
+      "common_ancestor": {
+        "established_masks": [],
+        "path": [],
+        "raw": 512
+      },
+      "main": 27,
+      "ordinary_expansion_cost": 37,
+      "total": 32,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            0,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            1,
+            0,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        }
+      ]
+    },
+    "a0_only_v": {
+      "charges": {
+        "L": 2,
+        "P": 10,
+        "Q": 9,
+        "R": 17,
+        "ordinary_child_references": 36
+      },
+      "common_ancestor": {
+        "established_masks": [
+          256
+        ],
+        "path": [
+          1,
+          1
+        ],
+        "raw": 128
+      },
+      "main": 33,
+      "ordinary_expansion_cost": 43,
+      "total": 38,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            1,
+            0,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "question 10=1",
+            "4": "rich check"
+          },
+          "raw": 16
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            1,
+            1,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "question 10=1",
+            "4": "rich check"
+          },
+          "raw": 16
+        }
+      ]
+    },
+    "a0_only_x2": {
+      "charges": {
+        "L": 2,
+        "P": 10,
+        "Q": 8,
+        "R": 12,
+        "ordinary_child_references": 30
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4
+        ],
+        "path": [
+          0
+        ],
+        "raw": 256
+      },
+      "main": 27,
+      "ordinary_expansion_cost": 37,
+      "total": 32,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            0,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            1,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        }
+      ]
+    },
+    "a0_single": {
+      "charges": {
+        "L": 1,
+        "P": 8,
+        "Q": 6,
+        "R": 9,
+        "ordinary_child_references": 22
+      },
+      "common_ancestor": null,
+      "main": 19,
+      "ordinary_expansion_cost": 24,
+      "total": 24,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 32,
+          "fixed_before": 128,
+          "fixed_excluded": 64,
+          "path": [
+            0,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 128
+        }
+      ]
+    },
+    "a0_three": {
+      "charges": {
+        "L": 3,
+        "P": 12,
+        "Q": 10,
+        "R": 13,
+        "ordinary_child_references": 36
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4,
+          256
+        ],
+        "path": [
+          0,
+          "R"
+        ],
+        "raw": 128
+      },
+      "main": 33,
+      "ordinary_expansion_cost": 48,
+      "total": 38,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            "R",
+            0,
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            "R",
+            0,
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 16,
+          "fixed_before": 32,
+          "fixed_excluded": 16,
+          "path": [
+            0,
+            "R",
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "question 4=0"
+          },
+          "raw": 64
+        }
+      ]
+    },
+    "a1_asked_separately": {
+      "charges": {
+        "L": 2,
+        "P": 14,
+        "Q": 12,
+        "R": 14,
+        "ordinary_child_references": 40
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4,
+          256
+        ],
+        "path": [
+          1,
+          0
+        ],
+        "raw": 128
+      },
+      "main": 37,
+      "ordinary_expansion_cost": 47,
+      "total": 42,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            0,
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=1"
+          },
+          "raw": 64
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            0,
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=1"
+          },
+          "raw": 64
+        }
+      ]
+    },
+    "a1_both": {
+      "charges": {
+        "L": 2,
+        "P": 10,
+        "Q": 8,
+        "R": 15,
+        "ordinary_child_references": 33
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4,
+          256
+        ],
+        "path": [
+          1,
+          "R"
+        ],
+        "raw": 64
+      },
+      "main": 30,
+      "ordinary_expansion_cost": 40,
+      "total": 35,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            "R",
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "rich check"
+          },
+          "raw": 32
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            "R",
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "rich check"
+          },
+          "raw": 32
+        }
+      ]
+    },
+    "a1_neither": {
+      "charges": {
+        "L": 2,
+        "P": 10,
+        "Q": 8,
+        "R": 16,
+        "ordinary_child_references": 34
+      },
+      "common_ancestor": {
+        "established_masks": [],
+        "path": [],
+        "raw": 512
+      },
+      "main": 31,
+      "ordinary_expansion_cost": 41,
+      "total": 36,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            1,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "rich check"
+          },
+          "raw": 16
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            1,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "rich check"
+          },
+          "raw": 16
+        }
+      ]
+    },
+    "a1_only_v": {
+      "charges": {
+        "L": 2,
+        "P": 14,
+        "Q": 12,
+        "R": 14,
+        "ordinary_child_references": 40
+      },
+      "common_ancestor": {
+        "established_masks": [
+          256
+        ],
+        "path": [
+          0
+        ],
+        "raw": 256
+      },
+      "main": 37,
+      "ordinary_expansion_cost": 47,
+      "total": 42,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            0,
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=1"
+          },
+          "raw": 64
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            0,
+            1,
+            1
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=1"
+          },
+          "raw": 64
+        }
+      ]
+    },
+    "a1_only_x2": {
+      "charges": {
+        "L": 2,
+        "P": 14,
+        "Q": 12,
+        "R": 14,
+        "ordinary_child_references": 40
+      },
+      "common_ancestor": {
+        "established_masks": [
+          4
+        ],
+        "path": [
+          1
+        ],
+        "raw": 256
+      },
+      "main": 37,
+      "ordinary_expansion_cost": 47,
+      "total": 42,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            0,
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=1"
+          },
+          "raw": 64
+        },
+        {
+          "fixed_after": 8,
+          "fixed_before": 16,
+          "fixed_excluded": 8,
+          "path": [
+            1,
+            1,
+            0
+          ],
+          "premises_acquired_by": {
+            "256": "question 256=0",
+            "4": "question 4=1"
+          },
+          "raw": 64
+        }
+      ]
+    },
+    "a1_single": {
+      "charges": {
+        "L": 1,
+        "P": 8,
+        "Q": 6,
+        "R": 13,
+        "ordinary_child_references": 26
+      },
+      "common_ancestor": null,
+      "main": 23,
+      "ordinary_expansion_cost": 28,
+      "total": 28,
+      "training": 5,
+      "uses": [
+        {
+          "fixed_after": 16,
+          "fixed_before": 64,
+          "fixed_excluded": 32,
+          "path": [
+            1,
+            "R"
+          ],
+          "premises_acquired_by": {
+            "256": "rich check",
+            "4": "rich check"
+          },
+          "raw": 64
+        }
+      ]
+    }
+  },
+  "raw_result": {
+    "path": "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B-P001_two_live_uses/checker_output-001.json",
+    "sha256": "831b6dce7c6c1e9f9ede4eb595e7ea78af0ab7745b0b54b5857e424973ce391c"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001B",
+  "validation": {
+    "independence": "The complete named programs and their negative controls were replayed on the two original relations over 512 visible words. A distinct same-task original-coordinate checker also replayed the 31- and 35-unit proof trees. The exact fixed-menu census uses the predecessor geometry search; an independent count bounds the number of nonempty disjoint live continuations.",
+    "level": "V1",
+    "novelty": "Two concrete conjunctions with identical training prices differ in the work needed for actual reuse. Both missing premise controls and unrestricted live-use capacities are fixed-pair results."
+  }
+}

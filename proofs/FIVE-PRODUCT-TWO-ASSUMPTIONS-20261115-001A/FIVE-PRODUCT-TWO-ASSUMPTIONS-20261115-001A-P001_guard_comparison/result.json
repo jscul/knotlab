@@ -1,0 +1,234 @@
+{
+  "all_first_questions": {
+    "0": {
+      "initial_histogram": {
+        "18": 3,
+        "19": 3,
+        "20": 1,
+        "21": 50,
+        "22": 20,
+        "23": 434
+      },
+      "main_lower_bound": 19,
+      "strengthened_questions": [
+        8,
+        48,
+        56
+      ],
+      "with_training_lower_bound": 24
+    },
+    "1": {
+      "initial_histogram": {
+        "18": 1,
+        "21": 3,
+        "22": 3,
+        "23": 504
+      },
+      "main_lower_bound": 21,
+      "strengthened_questions": [
+        40
+      ],
+      "with_training_lower_bound": 26
+    }
+  },
+  "artifact_id": "FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001",
+  "claim": "For either a, optional learning of (v=0 and x2=a) implies x0=0 leaves the optimum at 23. If the rule is trained and c times cited, total work is at least max(24,22+c) for a=0 and max(26,23+c) for a=1. A single live use achieves 24 and 28 respectively. Training both specified rules requires at least max(28,25+c) overall.",
+  "complement_bounds": {
+    "0": {
+      "bound_before_citations": 22,
+      "coarse": 17,
+      "compact_seven_unit_cells": 24,
+      "complement_lower": 17
+    },
+    "1": {
+      "bound_before_citations": 23,
+      "coarse": 18,
+      "compact_seven_unit_cells": 68,
+      "complement_lower": 18
+    }
+  },
+  "evidence_modes": [
+    "audit",
+    "external-presentation"
+  ],
+  "exact_declared_a_zero": {
+    "citation_raw_fixed_excluded_retained": [
+      128,
+      128,
+      64,
+      32
+    ],
+    "main": 19,
+    "missing_rich_check": "rejected",
+    "total": 24,
+    "training": 5
+  },
+  "execution_receipt": {
+    "path": "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/check_execution-001.json",
+    "sha256": "a7219dc11e616d18384fc5967568ceda2d4810af4bc4d9b4d78967823ce2c219"
+  },
+  "flagged_section_checks": {
+    "40": {
+      "a": 1,
+      "answer": 1,
+      "local_states": [
+        1,
+        4,
+        0
+      ]
+    },
+    "48": {
+      "a": 0,
+      "answer": 1,
+      "local_states": [
+        2,
+        3,
+        1
+      ]
+    },
+    "56": {
+      "a": 0,
+      "answer": 0,
+      "local_states": [
+        0,
+        3,
+        1
+      ]
+    },
+    "8": {
+      "a": 0,
+      "answer": 0,
+      "local_states": [
+        0,
+        4,
+        1
+      ]
+    }
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "input_bindings": {
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/manifest.json": "49445cf7df74c7b6522cffff4014ab58a3b2cc5c894cc51667c86f6e43d278a5",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/manifest.json": "13a616fc95de7a7a85ebe582e8224668f69b53f2f12e008bfb7f5fe4bed5a29e",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/one_premise.cpp": "8a66afa20fdfb111f5127991530d5f834a6d8b6dd796ed179a91db9d925569b6",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/sector_audit.py": "15d27506e5dd8b53ba77508a7c5bf53ee40f5bdde093d31d42a4f323fcf722e7",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z-P001_synthesis/manifest.json": "cd222446c9dc153a508e8cc4b1df3e825c3bcaf44c7622e995c2261e1878ea0d",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/check.py": "9a797ba6f52298bf521887a3f502d1c6a905d80052f15efa7e133e88e0988289",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/checks.json": "8be44bc606a01f0d27fabb9f96bc26e731ae586659383a34fdfda96cc190a54b",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/first_questions.cpp": "978fa6698cf69ac43b3edbbdad6bd3fc6fb2d38c543b81b6d402feb066a10ea8",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/identity.json": "bc0a6edd5de251d637874406e93e2d2533b50bdb2c1c1c874db8aec23e1ea6da",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/proof.md": "9efba90b73c191b0148a4400e36308ed96156e6fb4436b2244546609da2f3c37"
+  },
+  "joint_main_lower": 18,
+  "joint_total_lower": 28,
+  "joint_training_cost": 10,
+  "kind": "proof",
+  "live_a_one_upper": {
+    "citation_raw_fixed_excluded_retained": [
+      64,
+      64,
+      32,
+      16
+    ],
+    "main": 23,
+    "total": 28,
+    "training": 5
+  },
+  "opposite_answer_of_mask_40": 13,
+  "optional_rule_optimum_by_a": [
+    23,
+    23
+  ],
+  "original_visible_words": 512,
+  "raw_result": {
+    "path": "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/checker_output-001.json",
+    "sha256": "8be44bc606a01f0d27fabb9f96bc26e731ae586659383a34fdfda96cc190a54b"
+  },
+  "safe_conclusions": {
+    "affine_xor_boundary_proved": false,
+    "atomic_logical_topology_formed": false,
+    "candidate_package_persistence_proved": false,
+    "composed_logical_topology_formed": false,
+    "connectivity_formed": false,
+    "contract_frozen": true,
+    "extended_path_metric_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "irreducible_joint_contact_formed": false,
+    "logical_knot_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "minimal_contact_distance_formed": false,
+    "native_paths_formed": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "p_ne_np": false,
+    "persistent_genuine_contact_formed": false,
+    "physical_ontology": false,
+    "separation_formed": false,
+    "shared_identity_witnessed": false,
+    "three_cnf_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "two_loops_formed": false,
+    "two_sided_essential_candidate": false
+  },
+  "schema_version": 3,
+  "semantic_domains": [
+    "finite-satisfiability-queries"
+  ],
+  "status": "passed",
+  "thesis_alignment": null,
+  "ticket": "FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A",
+  "training_and_failed_body": {
+    "0": {
+      "broad_rich_plain": [
+        16,
+        64
+      ],
+      "failed_unmodified_body_branch_sizes": [
+        [
+          64,
+          64,
+          8
+        ],
+        [
+          64,
+          64,
+          8
+        ]
+      ],
+      "narrow_rich_plain": [
+        16,
+        32
+      ],
+      "training": 5
+    },
+    "1": {
+      "broad_rich_plain": [
+        16,
+        64
+      ],
+      "failed_unmodified_body_branch_sizes": [
+        [
+          64,
+          64,
+          8
+        ],
+        [
+          64,
+          64,
+          8
+        ]
+      ],
+      "narrow_rich_plain": [
+        8,
+        32
+      ],
+      "training": 5
+    }
+  },
+  "validation": {
+    "independence": "The original 512-row proof replay and the guard-transfer argument were independently refuted or confirmed against the strict local rules by a separate same-task referee. The finite lower bounds reuse the accepted two-triple and spectator routines, with original-coordinate tests of the exceptional questions and of the counterexample to dropping a training premise in place.",
+    "level": "V1",
+    "novelty": "The preceding one-premise classification did not settle either two-assumption guard or the specific costs of learning and using them."
+  }
+}

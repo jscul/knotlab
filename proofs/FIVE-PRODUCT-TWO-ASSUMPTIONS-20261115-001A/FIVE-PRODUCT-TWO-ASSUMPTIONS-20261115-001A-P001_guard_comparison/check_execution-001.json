@@ -1,0 +1,35 @@
+{
+  "artifact_id": "FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001",
+  "at": "2026-11-16T04:23:54+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "135143761500a79908cad8aa780129c9797539b69b1a541cda12ad3474e735b9",
+  "input_bindings": {
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/manifest.json": "49445cf7df74c7b6522cffff4014ab58a3b2cc5c894cc51667c86f6e43d278a5",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/manifest.json": "13a616fc95de7a7a85ebe582e8224668f69b53f2f12e008bfb7f5fe4bed5a29e",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/one_premise.cpp": "8a66afa20fdfb111f5127991530d5f834a6d8b6dd796ed179a91db9d925569b6",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/sector_audit.py": "15d27506e5dd8b53ba77508a7c5bf53ee40f5bdde093d31d42a4f323fcf722e7",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z-P001_synthesis/manifest.json": "cd222446c9dc153a508e8cc4b1df3e825c3bcaf44c7622e995c2261e1878ea0d",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/check.py": "9a797ba6f52298bf521887a3f502d1c6a905d80052f15efa7e133e88e0988289",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/checks.json": "8be44bc606a01f0d27fabb9f96bc26e731ae586659383a34fdfda96cc190a54b",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/first_questions.cpp": "978fa6698cf69ac43b3edbbdad6bd3fc6fb2d38c543b81b6d402feb066a10ea8",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/identity.json": "bc0a6edd5de251d637874406e93e2d2533b50bdb2c1c1c874db8aec23e1ea6da",
+    "proofs/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A/FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A-P001_guard_comparison/proof.md": "9efba90b73c191b0148a4400e36308ed96156e6fb4436b2244546609da2f3c37"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"all_first_questions\": {\n    \"0\": {\n      \"initial_histogram\": {\n        \"18\": 3,\n        \"19\": 3,\n        \"20\": 1,\n        \"21\": 50,\n        \"22\": 20,\n        \"23\": 434\n      },\n      \"main_lower_bound\": 19,\n      \"strengthened_questions\": [\n        8,\n        48,\n        56\n      ],\n      \"with_training_lower_bound\": 24\n    },\n    \"1\": {\n      \"initial_histogram\": {\n        \"18\": 1,\n        \"21\": 3,\n        \"22\": 3,\n        \"23\": 504\n      },\n      \"main_lower_bound\": 21,\n      \"strengthened_questions\": [\n        40\n      ],\n      \"with_training_lower_bound\": 26\n    }\n  },\n  \"complement_bounds\": {\n    \"0\": {\n      \"bound_before_citations\": 22,\n      \"coarse\": 17,\n      \"compact_seven_unit_cells\": 24,\n      \"complement_lower\": 17\n    },\n    \"1\": {\n      \"bound_before_citations\": 23,\n      \"coarse\": 18,\n      \"compact_seven_unit_cells\": 68,\n      \"complement_lower\": 18\n    }\n  },\n  \"exact_declared_a_zero\": {\n    \"citation_raw_fixed_excluded_retained\": [\n      128,\n      128,\n      64,\n      32\n    ],\n    \"main\": 19,\n    \"missing_rich_check\": \"rejected\",\n    \"total\": 24,\n    \"training\": 5\n  },\n  \"flagged_section_checks\": {\n    \"40\": {\n      \"a\": 1,\n      \"answer\": 1,\n      \"local_states\": [\n        1,\n        4,\n        0\n      ]\n    },\n    \"48\": {\n      \"a\": 0,\n      \"answer\": 1,\n      \"local_states\": [\n        2,\n        3,\n        1\n      ]\n    },\n    \"56\": {\n      \"a\": 0,\n      \"answer\": 0,\n      \"local_states\": [\n        0,\n        3,\n        1\n      ]\n    },\n    \"8\": {\n      \"a\": 0,\n      \"answer\": 0,\n      \"local_states\": [\n        0,\n        4,\n        1\n      ]\n    }\n  },\n  \"joint_main_lower\": 18,\n  \"joint_total_lower\": 28,\n  \"joint_training_cost\": 10,\n  \"live_a_one_upper\": {\n    \"citation_raw_fixed_excluded_retained\": [\n      64,\n      64,\n      32,\n      16\n    ],\n    \"main\": 23,\n    \"total\": 28,\n    \"training\": 5\n  },\n  \"opposite_answer_of_mask_40\": 13,\n  \"optional_rule_optimum_by_a\": [\n    23,\n    23\n  ],\n  \"original_visible_words\": 512,\n  \"status\": \"passed\",\n  \"training_and_failed_body\": {\n    \"0\": {\n      \"broad_rich_plain\": [\n        16,\n        64\n      ],\n      \"failed_unmodified_body_branch_sizes\": [\n        [\n          64,\n          64,\n          8\n        ],\n        [\n          64,\n          64,\n          8\n        ]\n      ],\n      \"narrow_rich_plain\": [\n        16,\n        32\n      ],\n      \"training\": 5\n    },\n    \"1\": {\n      \"broad_rich_plain\": [\n        16,\n        64\n      ],\n      \"failed_unmodified_body_branch_sizes\": [\n        [\n          64,\n          64,\n          8\n        ],\n        [\n          64,\n          64,\n          8\n        ]\n      ],\n      \"narrow_rich_plain\": [\n        8,\n        32\n      ],\n      \"training\": 5\n    }\n  }\n}\n",
+  "ticket": "FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001A",
+  "tool_version": "two-assumptions-lifecycle-v1",
+  "validator_bindings": {
+    "scripts/foundation_contract.py": "2d689c18c8504b98d2f7f915e43fafbfc5ca7fafe84599d2e217dcb466031ae1",
+    "scripts/research_scope.py": "f998c24f8060bf1d2d144b7f950ad82381e0fefc47aae8ffb785d1390d6e59ec"
+  }
+}

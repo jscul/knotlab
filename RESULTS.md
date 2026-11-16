@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**365 current results** and 5 superseded ones, from 395 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**367 current results** and 5 superseded ones, from 396 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -22,7 +22,7 @@ How to read an entry:
 - [Foundations: the knot and its readings](#foundations-the-knot-and-its-readings): 53 results
 - [Holes, depth and Tseitin proof complexity](#holes-depth-and-tseitin-proof-complexity): 19 results
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
-- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 52 results
+- [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 54 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
 - [Native creation, genus and selection](#native-creation-genus-and-selection): 84 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 395 epics with their closures
+- [Epics](#epics): all 396 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -396,6 +396,12 @@ What networks of knots can decide, count and approximate without hubs.
 - **2026-11-15 · Eight cases share six terminal contradictions under their exact assumptions** (`FIVE-PRODUCT-GUARDED-REUSE-20261115-001-D002`).
   For the fixed pair p1 and p2 XOR p3, eight cases use six distinct guarded contradictions, each covering at most twelve of the 64 original inputs. These eight applications use 20 local evaluator checks, compared with 24 on expansion and 16 in the direct tree.
   [proof P001](proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/proof.md), [epic closure](proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · A five-product tree needs seven questions and sixteen local checks** (`FIVE-PRODUCT-TOTAL-WORK-20261115-001-D001`).
+  The minimum cost is exactly 23 under unit charges. Every optimal raw tree uses seven questions, eight rich-evaluator checks and eight plain-evaluator checks.
+  [proof P001](proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/proof.md), [epic closure](proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z-P001_synthesis/proof.md)
+- **2026-11-15 · A single affine premise cannot make a learned fact beat the cheapest tree** (`FIVE-PRODUCT-TOTAL-WORK-20261115-001-D002`).
+  Permitting one rule with one affine premise and one affine conclusion leaves the minimum at 23, and training the proposed v=0 implication costs at least 25 in total. More general guarded scalar learning can lower the optimum by at most two units.
+  [proof P001](proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/proof.md), [proof P001](proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001B/FIVE-PRODUCT-TOTAL-WORK-20261115-001B-P001_learned_affine_work/proof.md), [epic closure](proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z-P001_synthesis/proof.md)
 - **2026-11-15 · Regroup one final AND inside a checked contradiction proof** (`GROUPED-PRODUCT-REPLAY-20261115-001-D001`).
   A four-input producer can be replaced with polynomial overhead on a public cut, and the standard final AND interface scales to any arity. In a checked 147-node refutation both groupings kept the same length while the optimal number of affine parts for all named functions fell from five to four.
   [proof P001](proofs/GROUPED-PRODUCT-REPLAY-20261115-001A/GROUPED-PRODUCT-REPLAY-20261115-001A-P001_regroup_final/proof.md), [epic closure](proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/proof.md)
@@ -1616,6 +1622,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-15 | Rulers with cycles: when cycles of knots keep or break the reach across levels (`CYCLE-RULER-20261115-001`) | — | [folder](research/CYCLE-RULER-20261115-001/) |
 | 2026-11-15 | Where the top binds every depth directly, and whether it is truly bounded (`DIRECT-REACH-20261115-001`) | — | [folder](research/DIRECT-REACH-20261115-001/) |
 | 2026-11-15 | Two product summaries and reuse of conditional deductions on five products (`FIVE-PRODUCT-GUARDED-REUSE-20261115-001`) | [closure](proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z-P001_synthesis/proof.md) | [folder](research/FIVE-PRODUCT-GUARDED-REUSE-20261115-001/) |
+| 2026-11-15 | Charged tree proofs and learned affine implications on five products (`FIVE-PRODUCT-TOTAL-WORK-20261115-001`) | [closure](proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z/FIVE-PRODUCT-TOTAL-WORK-20261115-001Z-P001_synthesis/proof.md) | [folder](research/FIVE-PRODUCT-TOTAL-WORK-20261115-001/) |
 | 2026-11-15 | Regroup an AND proof and carry its pair parity directly (`GROUPED-PRODUCT-REPLAY-20261115-001`) | [closure](proofs/GROUPED-PRODUCT-REPLAY-20261115-001Z/GROUPED-PRODUCT-REPLAY-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GROUPED-PRODUCT-REPLAY-20261115-001/) |
 | 2026-11-15 | When switch settings let two blocks forget a shared choice (`GUARD-CHOICE-SEPARATION-20261115-001`) | [closure](proofs/GUARD-CHOICE-SEPARATION-20261115-001Z/GUARD-CHOICE-SEPARATION-20261115-001Z-P001_synthesis/proof.md) | [folder](research/GUARD-CHOICE-SEPARATION-20261115-001/) |
 | 2026-11-15 | A linear cut scan with shared hidden padding (`ONE-RELAY-PADDING-20261115-001`) | [closure](proofs/ONE-RELAY-PADDING-20261115-001Z/ONE-RELAY-PADDING-20261115-001Z-P001_synthesis/proof.md) | [folder](research/ONE-RELAY-PADDING-20261115-001/) |

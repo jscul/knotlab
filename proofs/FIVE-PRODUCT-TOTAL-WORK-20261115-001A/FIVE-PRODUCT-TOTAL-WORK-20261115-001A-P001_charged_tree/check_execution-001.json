@@ -1,0 +1,29 @@
+{
+  "artifact_id": "FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001",
+  "at": "2026-11-16T00:40:12+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/check.py"
+  ],
+  "cwd": "/home/jscul/p-vs-np-contact-first",
+  "exit_code": 0,
+  "helper_sha256": "9444f4cea14c84b813474f5d59cffc21d0b3e40d370baf564566a7c90a593cd0",
+  "input_bindings": {
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A/FIVE-PRODUCT-GUARDED-REUSE-20261115-001A-P001_pair_census/manifest.json": "bca25fd56155ddf3280e6161995fe61747b31d0a2b2349535668a5d1e9d54d2a",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B/FIVE-PRODUCT-GUARDED-REUSE-20261115-001B-P001_guarded_deductions/manifest.json": "ab8691065a9e0897596a54e42dd6b1706f9f07e197a09e1cce20feff16933f3a",
+    "proofs/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z/FIVE-PRODUCT-GUARDED-REUSE-20261115-001Z-P001_synthesis/manifest.json": "64fc955a255127d6506f47e4190b34525e9b5f3b6080edce4abffd0de55ff123",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/certificate.json": "c6da75277bef3928a1f2bda9073979ec6a2fb5a302e7ab1691cad949d4888126",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/charged.py": "6a317cff5c9f80e752f54729ecf5f1f31d703c04139e332f15bf227fe98641f1",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/check.py": "583e1bb1a57c60d0577146b953fa271a24d6bfe7fe0af890c97b1f8f62d664f6",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/checks.json": "e2d891c8bd0e32b7ff976ea701b79da8d7809a51af9d0b30a56d0543f0fd78fa",
+    "proofs/FIVE-PRODUCT-TOTAL-WORK-20261115-001A/FIVE-PRODUCT-TOTAL-WORK-20261115-001A-P001_charged_tree/proof.md": "968ecc10625c68dd529c47259a1d21ec7c96a7f15a48375831d9ff3dcb013dc2"
+  },
+  "kind": "checker-execution",
+  "orchestrator_python": "3.13.3 (main, Jan  8 2026, 12:03:54) [GCC 14.2.0]",
+  "schema_version": 1,
+  "stderr": "",
+  "stdout": "{\n  \"status\": \"passed\",\n  \"fixed_pair\": {\n    \"splits\": 7,\n    \"rich_calls\": 8,\n    \"plain_calls\": 8,\n    \"leaves\": 8,\n    \"splits_dividing_both_sides\": 7,\n    \"structural_child_continuations\": 14,\n    \"total_work\": 23,\n    \"maximum_paid_path\": 5,\n    \"named_citations\": 0\n  },\n  \"raw_controls\": {\n    \"contextual_once_used_scalar\": 3,\n    \"inlined_scalar\": 3,\n    \"equal_charge_joint_witnesses\": 64,\n    \"rejected_mutations\": 3\n  },\n  \"small_disjoint_nonempty_pairs\": 6050,\n  \"small_distribution_free_leaves_paid_work_count\": [\n    [\n      1,\n      2,\n      5098\n    ],\n    [\n      1,\n      3,\n      896\n    ],\n    [\n      2,\n      5,\n      56\n    ]\n  ],\n  \"early_check_control\": {\n    \"optimum\": 6,\n    \"checks_only_at_leaves_optimum\": 7,\n    \"free_leaves\": 2,\n    \"tested_first_questions_nonconstant_at_t_zero\": 62\n  },\n  \"grouped_path_checks\": [\n    {\n      \"groups\": 1,\n      \"minimum_work\": 5,\n      \"embedded_word_answer_checks\": 0\n    },\n    {\n      \"groups\": 2,\n      \"minimum_work\": 11,\n      \"embedded_word_answer_checks\": 1008\n    },\n    {\n      \"groups\": 3,\n      \"minimum_work\": 23,\n      \"embedded_word_answer_checks\": 65408,\n      \"original_path_products\": 5,\n      \"verified_original_work\": 23\n    },\n    {\n      \"groups\": 4,\n      \"minimum_work\": 47,\n      \"embedded_word_answer_checks\": 4193280,\n      \"original_path_products\": 7,\n      \"verified_original_work\": 47\n    }\n  ]\n}\n",
+  "ticket": "FIVE-PRODUCT-TOTAL-WORK-20261115-001A",
+  "tool_version": "overlap-study-lifecycle-v1"
+}

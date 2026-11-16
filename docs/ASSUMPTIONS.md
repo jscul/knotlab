@@ -142,6 +142,8 @@ evidence: results and their status come from the records each entry links.
 | [A85](#a85--what-must-be-worked-in-order-is-read-by-the-phases-of-the-forcing-law) | What must be worked in order is read by the phases of the forcing law | measure | Assumed |
 | [A86](#a86--a-typical-atom-pattern-is-uniform-atoms-at-three-per-distinction-with-a-uniform-held-order) | A typical atom pattern is uniform atoms at three per distinction with a uniform held order | scope | Assumed |
 | [A87](#a87--in-forcing-the-record-a-law-carries-is-measured-by-how-many-distinctions-it-carries) | In forcing, the record a law carries is measured by how many distinctions it carries | measure | Assumed |
+| [A88](#a88--the-owners-navigating-agent-is-focused-local-search-over-violated-knots) | The owner's navigating agent is focused local search over violated knots | reading | Assumed |
+| [A89](#a89--learned-search-is-judged-by-work-per-unseen-instance-against-re-tuned-rules) | Learned search is judged by work per unseen instance against re-tuned rules | measure | Assumed |
 
 ## Entries
 
@@ -2269,3 +2271,43 @@ evidence: results and their status come from the records each entry links.
   Overturned for the owner's braid question if such a measure gives a saving that w does not see.
 - **History.**
   - 2026-11-16 · Added by `CARRY-STRANDS-20261116-001`.
+
+### A88 · The owner's navigating agent is focused local search over violated knots
+
+**Assumed** · 2026-11-16 · reading
+
+- **Statement.** The owner's agent of 2026-11-16 (it reads the context at one knot, turns from knot to knot, acts on loops,
+  remembers its steps, and activates the knot it chooses) is read as focused local search on a knot pattern of the not-all-equal
+  law. Activating a knot means attending to one violated knot. Acting on a loop means flipping one of that knot's distinctions,
+  a change of state; the law and the meeting pattern stay fixed. Turning to the next knot means choosing among the knots the last
+  flip violated and a few drawn from the other violated knots. Memory means each knot's and each distinction's recency and recent
+  count, which is what an attention over the agent's own past steps retrieves when it matches identities, plus a small recurrent
+  state.
+- **Why.** Adopted by `WHERE-NEXT-20261116-001` as the smallest reading that can be compared with tuned hand-written rules at
+  matched cost. The alternatives were an agent that edits the law (as the learning line's learner does), one that acts on
+  several knots at once, and a sequence model over raw step tokens.
+- **Rests on it.** The verdicts of [WHERE-NEXT-20261116-001](../research/WHERE-NEXT-20261116-001/where_next.md): a win at the
+  training sizes from memory, and no transfer to larger sizes or to another meeting pattern.
+- **Challenge.** Train a sequence model that reads the raw history of visited knots and flipped distinctions, with no hand-chosen
+  memory features, on the same instances and test cells. If it carries over to n = 12800 where the hand-chosen memory did not,
+  the reading's memory was too narrow.
+- **History.**
+  - 2026-11-16 · Adopted by `WHERE-NEXT-20261116-001`.
+
+### A89 · Learned search is judged by work per unseen instance against re-tuned rules
+
+**Assumed** · 2026-11-16 · measure
+
+- **Statement.** A learned search policy is better only if its median work per unseen instance is lower than the best
+  hand-written rule's. Work is counted as flips, incidences read and CPU in one shared engine. The rule is re-tuned on separate
+  instances of the same size and family. The policy's training cost is then set against any per-instance saving to give the
+  break-even count of instances.
+- **Why.** Adopted by `WHERE-NEXT-20261116-001` after the advisor review of 2026-11-16. The alternatives were a total amortized
+  over a test set the study chose itself, flips alone, and a rule tuned only at the training size.
+- **Rests on it.** The real-win, mechanism-win and clean-loss verdicts of
+  [WHERE-NEXT-20261116-001](../research/WHERE-NEXT-20261116-001/where_next.md).
+- **Challenge.** Report quality at a fixed budget (fraction solved within k flips) and work against rules tuned only at the
+  training size. A verdict that changes under either is sensitive to this measure. At `rand` n = 3200, against rules tuned at
+  n = 800, R was 0.96 [0.82, 1.09], inconclusive rather than a clean loss.
+- **History.**
+  - 2026-11-16 · Adopted by `WHERE-NEXT-20261116-001`.

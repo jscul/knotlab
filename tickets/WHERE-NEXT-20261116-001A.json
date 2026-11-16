@@ -3,19 +3,29 @@
   "completion_gate": "",
   "dependencies": [],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/WHERE-NEXT-20261116-001A/WHERE-NEXT-20261116-001A-E001_where_next/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/WHERE-NEXT-20261116-001A/WHERE-NEXT-20261116-001A-E001_where_next/result.json"
+    ],
+    "preregistration": "research/WHERE-NEXT-20261116-001/preregistration.md",
+    "report": "research/WHERE-NEXT-20261116-001/where_next.md"
+  },
   "id": "WHERE-NEXT-20261116-001A",
   "kind": "ticket",
   "legacy": {},
-  "objective": "Train (evolution strategies) an agent that attends to one violated not-all-equal knot, flips one of its distinctions and chooses the next knot to attend to, with and without memory of earlier steps, at n=100; test on unseen instances at n=100 to 800 (stress 1600) of the training family and of a second, local meeting pattern; compare flips, CPU per flip and total CPU (training charged amortized and not) with CaDiCaL, WalkSAT, probSAT, Novelty+, a greedy-where heuristic and a random-move agent. Stop at the frozen decision rule.",
+  "objective": "Train (OpenAI-ES, curriculum rand n = 200/400/800) an agent that attends to one violated not-all-equal knot, flips one of its distinctions and chooses the next knot to attend to, with and without memory of earlier steps (L1, L2w, L2, L3); test on unseen planted instances at rand n = 200, 800, 3200 (primary) and 12800, and local n = 200, 800, 3200; compare flips, incidences and CPU per instance with WalkSAT, probSAT, Novelty+, greedy-where, sticky and focused Metropolis (training-tuned and re-tuned per cell), a random agent, and CaDiCaL as context; training charged through the break-even count. Stop at the frozen decision rule. (Objective restated 2026-11-16 to the frozen design; the planning text named n = 100 and a stress size of 1600.)",
   "ownership": {
     "root": false,
     "scope_id": "WHERE-NEXT-20261116-001"
   },
   "parent": "WHERE-NEXT-20261116-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Clean loss by the frozen rule: the learned where-and-what agent with memory took 0.45 and 0.60 times the flips of re-tuned Novelty+ at its training sizes (rand n = 200, 800) but R = 1.07 [0.90, 1.21] at n = 3200 (primary), 2.43 at 12800, 2.6-55 on the unseen local pattern; memory helps on the primary cell (M = 0.37); 4-8 times CPU per flip, no marginal-cost win. Computed, referee pending.",
+  "status_class": "refuted",
   "stop_rule": "",
   "title": "Learned where-next agent with memory against plain search and tuned local heuristics on planted not-all-equal knot patterns"
 }

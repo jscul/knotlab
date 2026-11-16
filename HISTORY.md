@@ -9,7 +9,8 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   forgetting theorem in both of its cases, the step it uses and the lemma that carries depth-9 bonds to every depth hold, and the
   forgetting lengths recompute on all 786 patterns ([decision note](research/BLOCK-REACH-20261116-001/block_reach.md)).
 - Added, from the referee: for every pattern that grows one member per two levels, the least bond is exactly three members one and
-  two levels down at every depth, and for every ruler exactly three one level down. The study had compared its bound with the values
+  two levels down at every depth, and for every ruler exactly three one level down (computed after the referee, not separately
+  refereed). The study had compared its bound with the values
   read at depth 9 without its own refinement, so it reported a gap of one where there is none.
 - Reworded: an index in the proof (which orbit two groups share), and the predictions' time, which had been stamped after their commit.
 

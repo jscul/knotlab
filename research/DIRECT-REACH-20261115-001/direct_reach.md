@@ -4,7 +4,10 @@ Epic `DIRECT-REACH-20261115-001` (`LEVEL-REACH-20261114-001#2` with `ADDR-KNOTS-
 2026-11-15 00:29 UTC; G17, with G1), 2026-11-15 to 16. Proof note:
 [proof.md](../../proofs/DIRECT-REACH-20261115-001B/DIRECT-REACH-20261115-001B-P001_every_depth/proof.md). Computations:
 `experiments/DIRECT-REACH-20261115-001A/` (built by Codex on 2026-11-15 and gated; populations run by the thread). The canonical K1–K3
-test is unchanged. **Referee pending.**
+test is unchanged. **Refereed** (DIRECT-REACH-R1, [report](referee-R1/report.md), commit 79b858c31): **confirmed with fixes**, no
+Block; Theorems W and D, Lemma 0, the three pieces of code least sure of, all 540 finite-reader machines and 20 sampled archived
+certificates check out in fresh code. Narrowings folded in below and logged in `docs/CORRECTIONS.md`: one constant description, not
+two, changes at s = 5, and the deeper read-out is a depth-9 reading one level above the bottom.
 
 ## The question
 
@@ -17,7 +20,7 @@ every s, where does it occur, and what do the direct patterns share? Population 
 ## Answer
 
 **Direct reach is truly bounded at every depth for 54 of the 100 constant descriptions, proved; for the rest it is read to depth 9
-only, and two leave their constant at s = 5.** Two new every-depth arguments do it.
+only, and one leaves its constant at s = 5.** *(Narrowed after the referee: two had been reported; see below.)* Two new every-depth arguments do it.
 
 1. **Blocks of orbits (Theorem W, proved).** The maps' orbits split each level, and every knot placed at an orbit lies in its
    **block**, the orbit with its children. Blocks meet only parent to child, so the pattern is solved exactly block by block, and when
@@ -37,11 +40,17 @@ only, and two leave their constant at s = 5.** Two new every-depth arguments do 
 | constant 3 | 66 | 39: L ≤ 3, of which 32 L = 3 exactly | W 32, D 7 (growing orbits) |
 | [3, 3, 4, 4] | 46 | none bounded; 43 have no tie at any depth (L ≥ 3) | W |
 
-**Read deeper, at depth 9 (certified).** Reading two levels further (top level 2, s = 5 and 6) separates direct from half-rate where
-the top-2 control agrees with the census (31 of 34, 60 of 66, 42 of 46): 30 of 31 constant-2 stay at 2, 58 of 60 constant-3 stay at 3,
-and all 42 half-rate ones exceed 4 by s = 5. From top level 3 at s = 5, two constant descriptions leave their constant: d50c90fa37ed…
-(2 → 3, the one constant-2 without a tie class through levels 3 to 8) and 5b906d33a1e9… (3 → more than 3, bounded activity, growing
-orbits). So "constant over four levels" is not "constant": 2 of 100 change at the fifth.
+**Read deeper, at depth 9, one level above the bottom (certified).** Every s = 5 cell from top level 3 and every s = 6 cell from top
+level 2 at depth 9 has its target one level above the deepest level read, where the least bond can be larger than at any greater depth.
+At depth 9, reading two levels further (top level 2, s = 5 and 6) separates direct from half-rate where the top-2 control agrees with
+the census (31 of 34, 60 of 66, 42 of 46): 30 of 31 constant-2 stay at 2, 58 of 60 constant-3 stay at 3, and all 42 half-rate ones
+exceed 4 by s = 5. These are depth-9 readings, not evidence about larger depths; that the half-rate profile keeps growing is proved
+only as at least 1 + ⌈s/r⌉, r = 2 or 3 (`BLOCK-REACH-20261116-001`). From top level 3 at s = 5, one constant description leaves its
+constant: 5b906d33a1e9… (3 → more than 3, bounded activity, growing orbits; the referee found no tie and no three-member bond at depths
+9, 10 and 11). So "constant over four levels" is not "constant": 1 of 100 changes at the fifth. *(Narrowed after the referee:
+d50c90fa37ed… (2 → 3 at depth 9, the one constant-2 without a tie class through levels 3 to 8 at depth 9) was reported as a second
+change, but its depth-9 value at s = 5 is an effect of the bottom level: at depths 10, 11 and 12 every level-3 address is tied to
+level 8, so L = 2 there, and its tie class meets levels 3 to 8 from depth 10.)*
 
 **What the direct ones share.** Not small orbits: 43 of the 46 half-rate descriptions have orbits of at most four addresses, against
 42 of the 100 direct ones. Among small orbits the difference is how far a fixed relation survives between two orbits: for the direct
@@ -59,7 +68,7 @@ for none of the others.
 | 3 | Theorem D: a descent carrying a tie, or a three-member set with its one-sided pair free, bounds the reach at every depth | proved |
 | 4 | Corollary D: 13 constant-2 (5 with growing orbits) with L = 2, 28 constant-3 (7 with growing orbits) with L ≤ 3, at every depth | computed; all 41 descents' blocks equal the explicit ones, 521 of 521 claims hold at depth 9, the finite-reader states hold at depth 12 |
 | 5 | Life at every depth for 139 of 146 by finite-reader states (85 also by W) | computed (a product-automaton check) |
-| 6 | Deeper at depth 9: direct and half-rate separate (58 of 60 at 3, 42 of 42 above 4 by s = 5); 2 of 100 constant ones change at s = 5 | computed, certified (SAT with checked refutations) |
+| 6 | Deeper at depth 9, one level above the bottom: direct and half-rate separate (58 of 60 at 3, 42 of 42 above 4 by s = 5); 1 of 100 constant ones changes at s = 5 (narrowed from 2 after the referee) | computed, certified (SAT with checked refutations); depth-9 readings only |
 | 7 | What the direct ones share: a relation between two orbits kept at every distance; not small orbits; activity sorts partly | computed, exploratory |
 | 8 | Undecided bounded descriptions: not cheaply decidable (1 of 6 decided in the pilot, 3 of 13 cells, all at L = 4); the other 82 not run | computed, certified |
 
@@ -76,12 +85,16 @@ census's solve times.
 
 ## Predictions
 
-Frozen in [predictions.md](predictions.md) (written after the population D run had finished but before its read-out; 5 rows had been
-seen).
+History, stated after the referee (*narrowed wording*): P1 and P2 were fixed in substance before any code, in the 11-14 design and the
+advisor's revision (commit 96cb9a7cc); they were written to [predictions.md](predictions.md) after the population D run and before its
+read-out, with 5 rows seen. P3 was rewritten for the pilot of 6 before the pilot ran (the 11-14 text: at least a third of the 88 decided
+at 900 s; the advisor suggested a fifth); that change was not disclosed at the time.
 
-- **P1 holds.** 33 of the 34 constant-2 descriptions have one tie class meeting every level 3 to 8 at depth 9 (needed: 17).
+- **P1 holds.** 33 of the 34 constant-2 descriptions have one tie class meeting every level 3 to 8 at depth 9 (needed: 17); the one
+  exception, d50c90fa37ed…, is an exception at depth 9 only (from depth 10 its class meets levels 3 to 8).
 - **P2 holds.** Where the top-2 control agrees (60 of 66 constant-3, 42 of 46 half-rate), 58 of 60 constant-3 stay at L ≤ 3 at s = 5
-  and 6 (97%, needed 70%), and all 42 half-rate ones have L ≥ 5 at s = 6 (and already at s = 5).
+  and 6 (97%, needed 70%), and all 42 half-rate ones have L ≥ 5 at s = 6 (and already at s = 5), as depth-9 readings one level
+  above the bottom.
 - **P3 fails.** 1 of the 6 pilot descriptions had every undecided cell decided at 900 s (needed: 2), so U is recorded as not
   cheaply decidable and the other 82 were not run.
 
@@ -105,7 +118,7 @@ finite-reader state; `advisor/words_answer.md`), which replaced "window", "chain
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — direct reach at every depth | **Status:** Successful | Bounded at every depth for 54 of 100, proved; 2 of 100 change at s = 5 |
+| This attempt — direct reach at every depth | **Status:** Successful | Bounded at every depth for 54 of 100, proved; 1 of 100 changes at s = 5 |
 | Local direction — blocks of orbits and descents | Continue | Blocks cover 399 of the census's 457 rulers too |
 | Broader exploration — G17 nested line | Known alternatives | Joins the ruler theorem and the census; rigid growing patterns open |
 | Long-term goal — G17 Typical and rare meeting patterns (with G1) | Capability gained | Every-depth verdicts replace depth-9 readings for small orbits |

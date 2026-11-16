@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 16 November 2026: direct reach at every depth, confirmed by its referee, one count narrowed
+
+- Direct reach at every depth (`DIRECT-REACH-20261115-001`) was confirmed by its referee with fresh code, with no Block: the two
+  every-depth theorems and the code behind them hold, and the counts of patterns bounded at every depth stand ([decision note](research/DIRECT-REACH-20261115-001/direct_reach.md)).
+- Narrowed: one, not two, of the 100 patterns whose reach was constant over four levels changes at the fifth. The other reported change
+  was an effect of the deepest level read: one level further down its bond has two members again. The deeper readings that separate
+  direct from half-rate reach are readings at depth 9, one level above the bottom, not evidence about larger depths.
+- Reworded: the tie-carrying descent theorem now says which anchor each tie joins; the two cases where it mattered were checked directly.
+  The predictions' history is stated: two were fixed before any code, the third was rewritten before its run.
+
 ## 16 November 2026: the fold studies are published, and a cited study is no longer missing
 
 - `BRAID-READOUT-20261114-001`'s decision and proofs, and the `BRAID-COUNTS-20261114-001` and `JOINT-BRAID-READS-20261114-001` preregistrations, cited `STRAND-RETURN-20261114-001`, which had not been published, so the link was broken. It is published now, unchanged, together with the other 21 studies of the fold line. Every result of the three citing epics stands. [STRAND-RETURN report](research/STRAND-RETURN-20261114-001/strand_returns.md)

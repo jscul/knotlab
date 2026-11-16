@@ -2,7 +2,8 @@
 
 `DIRECT-REACH-20261115-001B-P001`, epic `DIRECT-REACH-20261115-001`, 2026-11-16. Written by Claude; the advisor model checked the
 three arguments before they were implemented (`research/DIRECT-REACH-20261115-001/advisor/proof_answer.md`) and chose the words
-(`words_answer.md`). Referee pending. Checks: `check.py` (result in `result.json`). Words follow the
+(`words_answer.md`). Refereed (DIRECT-REACH-R1, `research/DIRECT-REACH-20261115-001/referee-R1/report.md`): confirmed with fixes,
+no Block; D1's wording narrowed below. Checks: `check.py` (result in `result.json`). Words follow the
 [Intuitions glossary](../../../publication/knotlab/INTUITIONS.md#glossary); **orbit** is the literature's word, here for the
 addresses one address is sent to by the maps.
 
@@ -91,8 +92,12 @@ of the machine with the placements' words (`exploratory/automatic_life.py`). Suc
 so does its complement.
 
 **D1 (ties).** If at every level k ≥ k₀ some address of S_(k+1) is tied to an anchor address in the descent, and the pattern has a
-finite-reader state, then one tie class meets level k₀ and every deeper level in every P_N (Lemma 0, fact 2), so L_N(k₀, s) = 2 for every
-s ≥ 1 and every N ≥ k₀ + s; for k₀ ≤ 3 the same holds from level 3.
+finite-reader state, then each such tie is a tie of every P_N (Lemma 0, fact 2), a two-member bond meeting level k₀ and level k + 1, so
+L_N(k₀, s) = 2 for every s ≥ 1 and every N ≥ k₀ + s. *(Reworded after the referee, not a block: with several anchors in different tie
+classes this does not give one tie class, nor the same from level 3 when k₀ < 3; that needs the anchors in one tie class. The two
+descents from level 2, 5d9c7de076fa… and b4ba185b9c0f…, were checked directly: their anchors are tied together at every level to 17,
+and some address of S₃ is tied to some address of S_(3+s) in the explicit union of blocks to level 17 and in P₁₂ by SAT, so their L = 2
+from level 3 stands.)*
 
 **D2 (three members).** If at every level some address y of S_(k+1) either is tied to an anchor address, or lies in a three-member set
 constrained in the descent that is either {x, x′, y} with x, x′ anchors or {x, y, y′} with y′ in S_(k+1), and the pair inside one level
@@ -131,7 +136,8 @@ alive at every depth. For the 85 with orbits ≤ 4, Theorem W gives life indepen
   with each top address. Finitely many finite-reader states cannot show this in the cases tried: their joint values at a top address
   recur at deeper addresses, where all of them agree, and in all four constant-3 descriptions tried every top address had such a deeper
   match (`research/DIRECT-REACH-20261115-001/separation.py`). Only Theorem W gives exact lower bounds.
-- **Half-rate growth:** W shows no tie at any depth for 43 of 46, so L ≥ 3; that L grows past 4 is read only at N = 9 (s ≤ 6 from top 2).
+- **Half-rate growth:** W shows no tie at any depth for 43 of 46, so L ≥ 3; that L grows past 4 is read only at N = 9, one level
+  above the bottom (s = 5, 6 from top 2). `BLOCK-REACH-20261116-001` later proved growth at every depth, at least 1 + ⌈s/r⌉.
 
 ## Dependencies
 

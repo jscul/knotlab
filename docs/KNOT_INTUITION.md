@@ -3643,12 +3643,13 @@ So holes come in two kinds:
      least bond across levels is the fewest knots on a path between them plus two, so one member per level plus one when a chain steps
      down level by level (proved from the hypertree theorem); one tree-shaped placement always gives such a pattern; read at depth 9
      this covers two thirds of the census's rulers (a quarter at every depth), and within-level knots can shorten the profile ([decision note](../research/RULER-LEVEL-20261114-001/ruler_level.md)).
-   - **Where the top binds every depth** (`DIRECT-REACH-20261115-001`; referee pending): where the least bond across levels kept one
+   - **Where the top binds every depth** (`DIRECT-REACH-20261115-001`; refereed, confirmed with fixes): where the least bond across levels kept one
      size over the four levels read, it stays bounded at every depth and every distance in 54 of the census's 100 such patterns
      (proved). When the maps send each address to only a few others, the pattern is solved exactly at every depth, one small set of
      addresses with its children at a time (10 keep a bond of two, 32 a bond of three); when they send it across the whole level, a
-     few addresses followed down one letter each still carry a tie (5) or a bond of at most three (7). Two of the 100 change size at
-     the fifth level read, and the profile that grows one member per two levels keeps growing two levels further
+     few addresses followed down one letter each still carry a tie (5) or a bond of at most three (7). One of the 100 changes size
+     at the fifth level read (a second reported change was an effect of the deepest level read, corrected after the referee), and,
+     read at depth 9 only, the profile that grows one member per two levels keeps growing two levels further
      ([decision note](../research/DIRECT-REACH-20261115-001/direct_reach.md)).
    - **Growth at every depth** (`BLOCK-REACH-20261116-001`; referee pending): where the maps send each address to only a few others,
      a stretch of r levels that forgets what enters it forces a bond to take a member at least every r levels, so every such ruler of

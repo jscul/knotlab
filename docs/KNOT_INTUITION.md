@@ -3650,6 +3650,11 @@ So holes come in two kinds:
      few addresses followed down one letter each still carry a tie (5) or a bond of at most three (7). Two of the 100 change size at
      the fifth level read, and the profile that grows one member per two levels keeps growing two levels further
      ([decision note](../research/DIRECT-REACH-20261115-001/direct_reach.md)).
+   - **Growth at every depth** (`BLOCK-REACH-20261116-001`; referee pending): where the maps send each address to only a few others,
+     a stretch of r levels that forgets what enters it forces a bond to take a member at least every r levels, so every such ruler of
+     the census, cyclic ones included, and every pattern growing one member per two levels keeps growing at every depth, proved; the
+     values read at depth 9 bound them from above at every depth. Rulers with cycles forget more slowly, so that they grow one member
+     per level is still read only to depth 9 ([decision note](../research/BLOCK-REACH-20261116-001/block_reach.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

@@ -75,3 +75,22 @@ and proposed the seam table.
 law is the width method.
 
 **Basket:** read; nothing in it is this question.
+
+## Final report as sent
+
+Posted to the owner's project thread on 2026-11-16 at about 23:03 UTC:
+
+**Result:** joint records reduce to known mathematics, as expected, so I closed the study on a proof. Carrying joint records of several distinctions through not-all-equal satisfiability and counting is dynamic programming over a tree decomposition. The fewest records that work is the pattern's treewidth plus one. Your braid, taken to where joint records hold more than separate ones, is the classical separator table, and the known escapes (parity algebra, Pfaffians, Petersen on spheres) are already known.
+
+One fact is the program's own. What a seam of shared distinctions must report is a flip-symmetric relation. Pairwise reports work for one or two shared distinctions. At three they fail for exactly 4 of the 16 possible reports, and those 4 are the knots: the two/three boundary appearing at the seam. The Codex "two shared choices" finding is the level below this.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: joint records in not-all-equal patterns | **Status:** Successful (referee pending) | It reduces; seam census computed |
+| Local direction: the braid / record picture | Practically exhausted | Forcing → pebbling; satisfiability and counting → treewidth |
+| Broader exploration | Known alternatives | Width, Pfaffians, Gaussian elimination, Newton/Strahler |
+| G3 Hardness at three places | No demonstrated advance | A restatement plus the census |
+
+**Next step:** no next action in this line. The best remaining options are why layered circuits need about d^0.4 phases (2/3 payoff, 3/3 concreteness), and not-all-equal phases on the program's own weaves (2/3, 3/3).
+
+**Corrections:** none. **Goals:** G3 checkpoint. **Assumptions:** none new. [Decision note](https://github.com/jscul/knotlab/blob/main/research/JOINT-RECORDS-20261116-001/joint_records.md)

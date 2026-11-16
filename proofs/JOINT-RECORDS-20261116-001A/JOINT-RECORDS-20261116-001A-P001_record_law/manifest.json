@@ -1,0 +1,71 @@
+{
+ "schema_version": 3,
+ "artifact_id": "JOINT-RECORDS-20261116-001A-P001",
+ "canonical_id": "JOINT-RECORDS-20261116-001A-P001",
+ "proof": "JOINT-RECORDS-20261116-001A-P001",
+ "ticket": "JOINT-RECORDS-20261116-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "The w-record law is width-based dynamic programming",
+ "claim": "The w-record law (carry joint records of up to w distinctions; absorb, forget, combine) decides and counts not-all-equal patterns exactly when w >= treewidth + 1 (pathwidth + 1 without combining): bucket elimination (known). NAE seam reports are the complement-closed relations, 2^(2^(s-1)) of them; two-place shadows determine all at s <= 2 and 12 of 16 at s = 3, the 4 failures being NAE and its single-flip variants, all knots; at s = 4, 50 and 226 of 256 are fixed by two- and three-place shadows (computed). Escapes from width are known: affine records, Pfaffians, Petersen on the sphere.",
+ "standard_statement": "Tree-decomposition dynamic programming for Boolean CSP; complement-closed relations as the co-clone of NAE; k-decomposability of relations.",
+ "prior_work": "Freuder 1990; Dechter and Pearl 1989; Dechter 1999; Samer and Szeider 2010; Aji and McEliece 2000; Elberfeld, Jakoby and Tantau 2010; Bodlaender and Hagerup 1998; Marx 2010; Baker and Pixley 1975; Jeavons, Cohen and Cooper 1998; Moret 1988; Hadlock 1975; Kasteleyn; Valiant.",
+ "dependencies": [
+  "CARRY-STRANDS-20261116-001B"
+ ],
+ "completion_gate": "check.py passes (S1-S4) and the referee reviews the reduction and the census.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "check.py passed 2026-11-16; referee pending",
+  "independence": "record-carrying counts against brute force; same author",
+  "novelty": "known; the seam census local"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "contract_frozen": true,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "record_law_is_tree_decomposition_dp": true,
+  "nae_seam_hierarchy_census": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/JOINT-RECORDS-20261116-001A/JOINT-RECORDS-20261116-001A-P001_record_law/manifest.json",
+  "identity": "proofs/JOINT-RECORDS-20261116-001A/JOINT-RECORDS-20261116-001A-P001_record_law/identity.json",
+  "proof": "proofs/JOINT-RECORDS-20261116-001A/JOINT-RECORDS-20261116-001A-P001_record_law/proof.md",
+  "result": "proofs/JOINT-RECORDS-20261116-001A/JOINT-RECORDS-20261116-001A-P001_record_law/result.json",
+  "check": "proofs/JOINT-RECORDS-20261116-001A/JOINT-RECORDS-20261116-001A-P001_record_law/check.py"
+ },
+ "attained_result": {
+  "theorems_1_2": "proved (Theorem 1 known; Theorem 2 census computed); referee pending"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "s=1": {
+  "complement_closed": 2,
+  "determined_by_2_place_shadows": 2
+ },
+ "s=2": {
+  "complement_closed": 4,
+  "determined_by_2_place_shadows": 4
+ },
+ "s=3": {
+  "complement_closed": 16,
+  "determined_by_2_place_shadows": 12,
+  "failures": [
+   [
+    "011",
+    "100"
+   ],
+   [
+    "010",
+    "101"
+   ],
+   [
+    "001",
+    "110"
+   ],
+   [
+    "000",
+    "111"
+   ]
+  ],
+  "failures_are_knots": [
+   true,
+   true,
+   true,
+   true
+  ]
+ },
+ "s=4": {
+  "complement_closed": 256,
+  "determined_by_2_place_shadows": 50,
+  "determined_by_3_place_shadows": 226,
+  "nae4_determined_by_3_place_shadows": false
+ },
+ "S4_counts": {
+  "tetrahedron": {
+   "brute_force": 6,
+   "record_run": 6,
+   "largest_carried": 4
+  },
+  "octahedron": {
+   "brute_force": 18,
+   "record_run": 18,
+   "largest_carried": 5
+  },
+  "icosahedron": {
+   "brute_force": 72,
+   "record_run": 72,
+   "largest_carried": 7
+  }
+ },
+ "S1": true,
+ "S2": true,
+ "S3": true,
+ "S4": true
+}

@@ -2610,6 +2610,21 @@ that earlier records used in two senses.
 - **Step ball.** The distinctions within r steps of one distinction: a count
   on the meeting pattern (lesson 7.3). A ball, unqualified, is measured by
   bond distance.
+- **Block; descent; finite-reader state.** In patterns placed by maps on
+  addresses, the addresses one address is sent to by the maps form its
+  **orbit** (the literature's word, as for a state under shifts). A **block**
+  is a set of addresses at one level with their children one level down,
+  holding the knots placed at that level whose members all lie in it; the
+  block of an orbit holds every knot placed at the orbit, and blocks of
+  orbits meet only a block and the one above it. A **descent** follows a
+  block down the levels, each address extended by one letter, the letters
+  eventually periodic (the literature's orbital Schreier graph along a
+  rational point). A **finite-reader state** is a state at every depth whose
+  value at each address a finite machine outputs after reading the address
+  letter by letter (the literature's automatic sequence). The intuition: a
+  block is a piece the pattern can be solved in, and a descent is how a few
+  distinctions carry the top down without the rest of the level
+  (`DIRECT-REACH-20261115-001`, 16 November 2026).
 - **Binding pattern.** The owner's word, not yet defined: in his words, "This
   is what we're trying to discover" (lesson 7.3). He offers two pictures,
   logic carried in each knot that binds whole knot patterns together, and

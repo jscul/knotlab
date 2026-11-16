@@ -137,6 +137,7 @@ evidence: results and their status come from the records each entry links.
 | [A80](#a80--the-laws-reach-is-read-along-the-first-call-ray) | The law's reach is read along the first-call ray | reading | Overturned |
 | [A81](#a81--the-reach-may-start-from-a-top-port-carried-down-the-ray) | The reach may start from a top port carried down the ray | reading | Under challenge |
 | [A82](#a82--knots-placed-by-address-maps-read-the-owners-nested-parts-that-know-where-they-are) | Knots placed by address maps read the owner's nested parts that know where they are | reading | Assumed |
+| [A83](#a83--the-top-binds-every-depth-when-a-bond-of-fixed-size-reaches-every-level-of-every-finite-pattern) | The top binds every depth when a bond of fixed size reaches every level of every finite pattern | reading | Assumed |
 
 ## Entries
 
@@ -2157,3 +2158,23 @@ evidence: results and their status come from the records each entry links.
     can depend on the tail (counterexample in the [referee report](../research/ADDR-KNOTS-20261113-001/referee-R1/report.md)); the
     old wording said they were the same everywhere. Status unchanged.
   - 2026-11-13 · Added by `ADDR-KNOTS-20261113-001` at its pre-registration.
+
+### A83 · The top binds every depth when a bond of fixed size reaches every level of every finite pattern
+
+**Assumed** · 2026-11-16 · reading
+
+- **Statement.** In addressed patterns (A82), the top level 3 binds every depth directly when there is a bound c such that, for every
+  s >= 1 and every depth N >= 3 + s, the depth-N pattern has a bond of at most c distinctions meeting level 3 and level 3 + s.
+  Bounded is read at every finite depth, from level 3, with members anywhere; not in the pattern of every level at once, and not from
+  another top level.
+- **Why.** Taken by default in `DIRECT-REACH-20261115-001` ([decision note](../research/DIRECT-REACH-20261115-001/direct_reach.md)),
+  continuing the census's reading of `LEVEL-REACH-20261114-001`. Finite patterns are what the census computes; constrained sets and,
+  while the pattern lives, ties persist from one depth to the next, so a finite check can cover every depth; and the pattern of every
+  level at once would need the source-aware reading for infinite systems, which has not been set up for addresses.
+- **Rests on it.** That epic's verdicts that direct reach is bounded at every depth for 54 of the census's 100 constant descriptions
+  (15 with a bond of two, 39 of at most three), and its statement of what the direct ones share.
+- **Challenge.** Read the top's reach in the pattern of every level at once, saying which deep distinctions are native there (each
+  flipped by changing finitely many others); or read it from top level 2, where 3 of 34 and 6 of 66 of the constant descriptions
+  already read differently over s = 1 to 4; or count only bonds within a bounded number of levels below the target.
+- **History.**
+  - 2026-11-16 · Added by `DIRECT-REACH-20261115-001`.

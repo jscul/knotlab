@@ -3,7 +3,9 @@
 Status: Proved
 
 Ticket `CARRY-STRANDS-20261116-001Z`, 2026-11-16. A ledger; it makes no new claim. The decision note is
-`research/CARRY-STRANDS-20261116-001/carry_strands.md`. Referee pending.
+`research/CARRY-STRANDS-20261116-001/carry_strands.md`. Refereed: `CARRY-STRANDS-R1`, confirmed with fixes (commit
+`fb4377bd1`); three corrections logged on 16 November. Read row 2 with them: before the narrowest phase, 0% in the median sample;
+2 of 7 held, 5 failed.
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |

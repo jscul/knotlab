@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 16 November 2026: carrying distinctions together, confirmed by its referee, one prediction and one sentence narrowed
+
+- Carrying distinctions together (`CARRY-STRANDS-20261116-001`) was confirmed by its referee with fresh code, with no Block: the
+  spend-only phase count, the rounds bound and the keep law's match with black pebbling with sliding hold, and every recorded value
+  reproduces ([decision note](research/CARRY-STRANDS-20261116-001/carry_strands.md)).
+- Narrowed: its fifth prediction fails (three carried distinctions do not cut the rounds below two on subdivided trees), so 2 of 7
+  predictions held, not 3.
+- Narrowed: keeping saves no phase before the jump's narrowest phase in the median sample only; 9 of 105 samples save some, at most
+  4.1%.
+- Reworded: the freeze time (22:43:14 UTC, 12 seconds before the run).
+
 ## 16 November 2026: which knot patterns must be worked in order, confirmed by its referee, two statements narrowed
 
 - Which knot patterns must be worked in order (`SEQUENTIAL-WALL-20261116-001`) was confirmed by its referee with fresh code, with no

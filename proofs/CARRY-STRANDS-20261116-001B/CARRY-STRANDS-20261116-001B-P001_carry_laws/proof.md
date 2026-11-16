@@ -1,6 +1,6 @@
 # What carrying distinctions can and cannot save
 
-Status: Proved (referee pending)
+Status: Proved (refereed: `CARRY-STRANDS-R1`, confirmed with fixes)
 
 Ticket `CARRY-STRANDS-20261116-001B`, 16 November 2026. Written by Claude in one session; checked by `check.py` beside this file,
 which reruns the experiment's gates (exhaustive comparisons on 400 random patterns of 5 to 14 distinctions, ladders, the advisor's
@@ -93,3 +93,10 @@ one strand split into two that later rejoin. Theorem 1 and 2: holding strands wi
 open uses; it only trades phases for longer phases. Theorem 3 and its consequences: letting a strand split saves exactly where
 strands rejoin (ladders: two strands at any length; layered circuits: two layers of strands at any depth), and costs n^w carried
 sets. All of this is the classical register and pebbling picture; the knot words name it, and add no theorem to it.
+
+## Referee (16 November 2026)
+
+`CARRY-STRANDS-R1` confirmed Theorems 1 to 3 with fresh code: Theorem 2's step count and telescoping, and the keep law matching
+black pebbling with sliding move for move. Read the text above with one relabelling: the ladder and layered-circuit constructions are
+standard pebbling arguments (two pebbles slide up a ladder; layer-by-layer pebbling uses twice the width), so "local" is generous;
+read them as known in kind. The advisor's "up to two" for a copying law: the referee found at most one on the patterns tried.

@@ -1,8 +1,9 @@
 # Carrying distinctions together
 
 Epic `CARRY-STRANDS-20261116-001`, 16 November 2026, by Claude; takes `SEQUENTIAL-WALL-20261116-001#1`, the owner's braid made exact
-for forcing. Goal G3. Referee pending. Pre-registration: [preregistration.md](preregistration.md), frozen in commit `4df1a101e`
-(22:39 UTC) before the run (22:43 to 22:46 UTC). Proof: [Theorems 1–3](../../proofs/CARRY-STRANDS-20261116-001B/CARRY-STRANDS-20261116-001B-P001_carry_laws/proof.md).
+for forcing. Goal G3. Refereed: `CARRY-STRANDS-R1`, confirmed with fixes, no Block ([report](referee-R1/report.md), commit `fb4377bd1`); its
+fixes are folded in (see "Referee"). Pre-registration: [preregistration.md](preregistration.md), frozen in commit `4df1a101e` at
+22:43:14 UTC; the run was created 12 seconds later (22:43:26 UTC) and ended at 22:45:50 UTC. Proof: [Theorems 1–3](../../proofs/CARRY-STRANDS-20261116-001B/CARRY-STRANDS-20261116-001B-P001_carry_laws/proof.md).
 Experiment: [code and contract](../../experiments/CARRY-STRANDS-20261116-001A/CARRY-STRANDS-20261116-001A-E001_carried/),
 [summary](../../artifacts/CARRY-STRANDS-20261116-001A/CARRY-STRANDS-20261116-001A-E001_carried/summary.json).
 
@@ -21,8 +22,9 @@ say how the program's random families fall on each side of it:
 - **Letting a strand split pays exactly where strands rejoin.** A ladder of any length takes one phase with two carried
   distinctions, and its rounds fall from 2k to about log₂(4k) (from 256 to 9 at k = 128). A layered circuit of width W takes one
   phase with 2W at any depth (proved, and checked on every narrow circuit).
-- **The program's random families have little rejoining.** On random atom patterns at the jump, keeping saves no phase for any
-  distinction forced before the narrowest phase, and saves a phase for 6 to 12% of those forced after it (n ≥ 128; 28% at n = 64). Keeping changes the phase
+- **The program's random families have little rejoining.** In the median sample of random atom patterns at the jump, keeping saves no phase
+  for any distinction forced before the narrowest phase (9 of the 105 samples save some, at most 4.1% of them), and saves a phase
+  for 6 to 12% of those forced after it (n ≥ 128; 28% at n = 64). Keeping changes the phase
   count of 70 to 95% of samples not at all. On layered random circuits of width 16 and 32, the median gain is mostly zero. Their open
   uses are nested ties of different strands, the kind no amount of carrying removes without paying for it in rounds.
 - **Pyramids** need ⌈h/w⌉ phases whether or not strands may split, and exactly h = σ rounds for every w, so the Strahler floor is
@@ -47,16 +49,17 @@ n^w carried sets, and w is the pebble count of the classical games (assumption A
 | # | Prediction | Verdict | Reading |
 | --- | --- | --- | --- |
 | G | gates; every law ends in the closure | held | 305 of 305 cases; capped only at subdivided tree d = 4, ℓ = 16, w = 3 |
-| Q1 | keeping rarely saves a phase: P₂(keep) = ⌈P₁/2⌉ in ≥ 75% of samples at each n ≥ 256 | **failed** | 0.90, 0.80, 0.90, 0.80 at 256 … 2048, but 0.70 at 4096 |
-| Q1b | per distinction at most 10% gain, more after the narrowest phase than before | **failed**, narrowly | after > before held everywhere (before: 0 at every n); the median gain is 0.104 at 512 and 0.101 at 2048, just above 0.10 |
+| Q1 | keeping rarely saves a phase: P₂(keep) = ⌈P₁/2⌉ in ≥ 75% of samples at each n ≥ 256 | **failed** | 0.90, 0.80, 0.90, 0.80 at 256 … 2048, but 0.70 at 4096; on the referee's 30 fresh samples at 4096 the share is 0.97, so the failure looks like small-sample noise |
+| Q1b | per distinction at most 10% gain, more after the narrowest phase than before | **failed**, narrowly | after > before held everywhere (before: 0 in the median sample at every n, positive in 9 of 105 samples, at most 0.041); the median gain is 0.104 at 512 and 0.101 at 2048, just above 0.10 |
 | Q2 | T₂(spend) ≤ T₁ in ≥ 90%, median ratio in [0.8, 0.95] at n ≥ 1024 | **failed**, by saving more | T₂ ≤ T₁ in every sample; ratio 0.73, 0.70, 0.685 at 1024, 2048, 4096 |
 | Q3 | keeping gains more on narrower layered circuits (depth 32) | **failed** | median relative gain 0 (width 4), 0.25 (16), 0 (32); mostly zero; at width 4 depth 64, 0.32 |
 | Q3b | narrow circuits take one phase with 2W carried | held | 30 of 30 samples (some with no true gate) |
 | Q4 | pyramids: P_w = ⌈h/w⌉ both laws, equal rounds | held | every h = 4 … 12, w ≤ 4; T_w = h for every w |
-| Q5 | subdivided trees: carrying cuts rounds | held where evaluable | ℓ = 16: T₂ = 13 against T₁ = 21 (d = 4), 19 against 31 (d = 6); T₃ at d = 4 not evaluable (state cap) |
+| Q5 | subdivided trees: carrying cuts rounds | **failed** (corrected after the referee) | ℓ = 16: T₂ = 13 against T₁ = 21 (d = 4), 19 against 31 (d = 6), but T₃ = T₂ = 13 at d = 4: the capped part, first reported as not evaluable, is evaluable without the search and fails (the referee's tree DP and counting argument; this study's code gives T₃ = T₂ at ℓ = 4 and 8 too) |
 
-3 held, 4 failed. The read-out script needed one fix after the run, disclosed: it crashed on the capped case, and now reports that
-part of Q5 as not evaluable.
+2 held (Q3b, Q4), 5 failed (corrected after the referee: 3 held was first reported). The read-out script needed one fix after the
+run, disclosed: it crashed on the capped case, and the fix reported that part of Q5 as not evaluable, which turned an unevaluated
+part into "held"; the frozen rule needed all three parts, and the third fails.
 
 ### Random atom patterns at the jump (medians)
 
@@ -96,8 +99,7 @@ CARRY-STRANDS-L1).
 ## Advisor
 
 Consulted once before the freeze (see the pre-registration). It replaced copying by keeping (a copying law is off from pebbling
-with sliding by up to two), derived the pyramid's ⌈h/w⌉ (confirmed), proposed the subdivided-tree example (confirmed where
-evaluable), sharpened Q1 to Q3 (Q1 failed only at the largest size, Q2 failed by saving more than it expected, Q3 was a coin flip
+with sliding by up to two, it said; the referee found at most one on 468 patterns where a copying law falls short), derived the pyramid's ⌈h/w⌉ (confirmed), proposed the subdivided-tree example (confirmed at w = 2, not at w = 3), sharpened Q1 to Q3 (Q1 failed only at the largest size, Q2 failed by saving more than it expected, Q3 was a coin flip
 and failed), and gave the one-line verdict this note confirms: the strands are pebbles, and the picture isolates the dichotomy of
 rejoining against nesting.
 
@@ -105,7 +107,7 @@ rejoining against nesting.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt — carrying distinctions together | **Status:** Successful (referee pending) | The braid picture made exact for forcing; 3 of 7 frozen predictions held, the 4 failures read; proved that spend-only carrying cannot go below the Strahler number |
+| This attempt — carrying distinctions together | **Status:** Successful (refereed, confirmed with fixes) | The braid picture made exact for forcing; 2 of 7 frozen predictions held, the 5 failures read; proved that spend-only carrying cannot go below the Strahler number |
 | Local direction — carrying laws for forcing | Practically exhausted | The theory is classical (registers, pebbling); the only open quantity, rejoining in random families, is measured small |
 | Broader exploration — the braid picture | Known alternatives | The joint-record effect needs relations with many states (counting or satisfiability), not forcing |
 | Long-term goal — G3 Hardness at three places | Obstruction learned | Carrying strands cannot remove nested open uses; what makes order in these families is genuine nesting, not rejoining |
@@ -127,6 +129,27 @@ a block), folded in at `a4860475a` and signed off.
 sizes.
 
 **Basket:** the holes-and-proofs line's basket was read; its untaken directions are about proof size, not this question.
+
+## Referee
+
+`CARRY-STRANDS-R1` (background referee thread, fresh code, no Codex; [report](referee-R1/report.md)): **confirmed with fixes, no
+Block.** Theorems 1 to 3 hold, including Theorem 2's step-count bound and the keep law matching black pebbling with sliding move
+for move; every recorded value reproduces in fresh code (75 structured entries identical, the 120 random instances rebuilt
+identically). Folded in on 16 November:
+
+1. **Narrowing.** Q5 fails: T₃ = T₂ = 13 at d = 4, ℓ = 16 (the referee's tree DP, L = [115, 35], and a counting argument, since the
+   pattern is a tree; this study's own code gives T₃ = T₂ at ℓ = 4 and 8). The tally is 2 of 7 held, not 3.
+2. **Narrowing** (wording). "Keeping saves no phase for any distinction forced before the narrowest phase" holds for the median
+   sample only: 9 of 105 samples save some, at most 4.1% (witness `rand-n1024-s3`, distinction 89: σ = 3, forced by the keep law at
+   w = 2 in phase 1, below ⌈3/2⌉ = 2).
+3. **Not a block.** The freeze was at 22:43:14 UTC, 12 seconds before the run, not "22:39" as first written.
+
+Noted from the referee: Q1's failure at n = 4096 rests on 10 samples, and 30 fresh ones give 0.97; a copying law falls short of
+pebbling with sliding by at most one, not two, on the patterns tried; and the ladder and layered constructions are standard
+pebbling arguments, known in kind rather than local.
+
+The final report below is kept as sent; it said 3 of 7, and "none of the distinctions before the narrowest stage", both corrected
+here.
 
 ## Final report as sent
 

@@ -138,6 +138,7 @@ evidence: results and their status come from the records each entry links.
 | [A81](#a81--the-reach-may-start-from-a-top-port-carried-down-the-ray) | The reach may start from a top port carried down the ray | reading | Under challenge |
 | [A82](#a82--knots-placed-by-address-maps-read-the-owners-nested-parts-that-know-where-they-are) | Knots placed by address maps read the owner's nested parts that know where they are | reading | Assumed |
 | [A83](#a83--the-top-binds-every-depth-when-a-bond-of-fixed-size-reaches-every-level-of-every-finite-pattern) | The top binds every depth when a bond of fixed size reaches every level of every finite pattern | reading | Assumed |
+| [A84](#a84--pangs-degree-size-relation-holds-as-stated) | Pang's degree-size relation holds as stated | premise | Assumed |
 
 ## Entries
 
@@ -2178,3 +2179,27 @@ evidence: results and their status come from the records each entry links.
   already read differently over s = 1 to 4; or count only bonds within a bounded number of levels below the target.
 - **History.**
   - 2026-11-16 · Added by `DIRECT-REACH-20261115-001`.
+
+### A84 · Pang's degree-size relation holds as stated
+
+**Assumed** · 2026-11-16 · premise
+
+- **Statement.** Theorems 1.1 and 7.2(a) of Shuo Pang's preprint "A Degree–Size Relation for Resolution over Polynomials" (arXiv
+  2610.00837) hold as stated: linear polynomial-calculus degree forces exp(Ω(n)) size in syntactic resolution over polynomials of
+  constant degree, and random strict 3-CNF at density 8 needs exp(Ω(n)) proof nodes with probability tending to one, at
+  characteristic two and degree one, two or 2^(d+1).
+- **Why.** Admitted by the guarded-route studies of 2026-11-15, which checked its conventions against their own and did not
+  re-prove it. The preprint is unrefereed and AI-assisted (its disclosure credits a language model with the core arguments), builds
+  on Braun's preprint (A55), and claims a result that was open until September 2026; no published check or refutation was found
+  (referee GUARDED-ROUTE-BRANCH-R1, 2026-11-16). For the degree-one (parity) case only, ECCC TR26-316 (Alekseev, Gryaznov, Itsykson,
+  Pitassi, Robere and Tzameret, 10 November 2026, Theorems 6.5 and 2.3), also unrefereed and independent of Pang, states the same
+  bound even for fully semantic Res(⊕).
+- **Rests on it.** The inherited exponential lower bounds of `ROUTE-PARITY-TRANSFER-20261115-001D` (or on ECCC TR26-316 instead),
+  `QUADRATIC-ROUTE-TRANSFER-20261115-001B` and `-001C`, `PRODUCT-NAME-TRANSFER-20261115-001B` and `-001C`, and
+  `AFFINE-FACTOR-RANK-20261115-001C`'s lower-bound corollary. The transfers themselves are proved without it.
+  [Route parity decision](../research/ROUTE-PARITY-TRANSFER-20261115-001/decision.md)
+- **Challenge.** Have a resolution-over-parities expert read Pang §§3–5; a published check or refutation, or a gap in Theorem 1.1,
+  would confirm or overturn it. A gap would leave the parity case standing on ECCC TR26-316 alone and remove the degree-two and
+  named-product bounds.
+- **History.**
+  - 2026-11-16 · Added after referee GUARDED-ROUTE-BRANCH-R1 found the four studies resting on it with no register entry.

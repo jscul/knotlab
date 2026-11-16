@@ -3,6 +3,12 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 16 November 2026: the guarded-route proof-length bounds are conditional, and confirmed by their referee
+
+- An independent referee confirmed the 23 guarded two-route studies (`BRAID-READOUT-20261114-001` to `FIVE-PRODUCT-TWO-ASSUMPTIONS-20261115-001`) with fixes and no withdrawal. The transfers, encodings, linear solvers and every recomputed number hold.
+- The exponential proof-length bounds inherited in `ROUTE-PARITY-TRANSFER-20261115-001`, `QUADRATIC-ROUTE-TRANSFER-20261115-001`, `PRODUCT-NAME-TRANSFER-20261115-001` and `AFFINE-FACTOR-RANK-20261115-001` are conditional. They rest on Pang's arXiv 2610.00837 (Theorems 1.1 and 7.2(a)), an unrefereed, AI-assisted preprint claiming a previously open result, recorded as assumption [A84](docs/ASSUMPTIONS.md#a84--pangs-degree-size-relation-holds-as-stated). "Provably" and "proves" are withdrawn from their summaries. [Route parity decision](research/ROUTE-PARITY-TRANSFER-20261115-001/decision.md)
+- For the parity case, ECCC TR26-316 (Alekseev, Gryaznov, Itsykson, Pitassi, Robere and Tzameret, 10 November 2026, Theorems 6.5 and 2.3), also unrefereed and independent of Pang, states the same bound, so that case holds if either preprint does. The degree-two and named-product bounds rest on Pang alone.
+
 ## 16 November 2026: growth at every depth from blocks, confirmed by its referee, with an exact result added
 
 - Growth at every depth from blocks (`BLOCK-REACH-20261116-001`) was confirmed by its referee with fresh code, with no Block: the

@@ -199,14 +199,18 @@ def train(arm: str, seed: int, out: Path, pairs: int, sigma: float, lr: float, w
     print(json.dumps(summary), flush=True)
 
 
+# Extended on 2026-11-16 before any learned arm was trained, where the first tuning's optimum sat at a grid edge
+# (deviation recorded in the result note); extending a grid can only strengthen the hand-written side.
 GRIDS = {
-    "walksat": [("walksat", (p,)) for p in (0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.6)],
-    "probsat": [("probsat_poly", (cb, 1.0)) for cb in (1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.5, 4.0)]
-               + [("probsat_exp", (cb,)) for cb in (1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0)],
-    "novelty_plus": [("novelty_plus", (p, wp)) for p in (0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6) for wp in (0.01, 0.05)],
-    "greedy_where": [("greedy_where", (cb, 1.0, q)) for q in (0.0, 0.1, 0.2, 0.4, 0.6) for cb in (1.8, 2.3, 2.8)],
-    "sticky": [("sticky", (cb, 1.0, q)) for q in (0.2, 0.4, 0.6, 0.8, 0.95) for cb in (1.8, 2.3, 2.8)],
-    "fms": [("fms", (eta,)) for eta in (0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5)],
+    "walksat": [("walksat", (p,)) for p in (0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8)],
+    "probsat": [("probsat_poly", (cb, 1.0)) for cb in (1.0, 1.2, 1.5, 1.8, 2.1, 2.4, 2.7, 3.0, 3.5, 4.0)]
+               + [("probsat_exp", (cb,)) for cb in (1.25, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0)],
+    "novelty_plus": [("novelty_plus", (p, wp)) for p in (0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9)
+                     for wp in (0.01, 0.05, 0.1, 0.2)],
+    "greedy_where": [("greedy_where", (cb, 1.0, q)) for q in (0.0, 0.1, 0.2, 0.4, 0.6, 0.75, 0.9)
+                     for cb in (1.5, 1.8, 2.3, 2.8)],
+    "sticky": [("sticky", (cb, 1.0, q)) for q in (0.2, 0.4, 0.6, 0.8, 0.95) for cb in (1.5, 1.8, 2.3, 2.8)],
+    "fms": [("fms", (eta,)) for eta in (0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8)],
 }
 TUNE_N, TUNE_CAP, TUNE_COUNT = 800, 1_500_000, 64
 

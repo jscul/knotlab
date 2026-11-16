@@ -274,8 +274,7 @@ of it. Its rule cannot be split into two-place rules, even with witnesses
 (lesson 3.1 gives the test), and it is not a knot either (lesson 2.1); its
 patterns also rest on the drawn grid. The lessons that follow look for the
 first thing that a whole allows and no part shows: a binding between two
-loops, which lesson 2.1 calls a knot. The game's name is only a name, and
-nothing here is a claim about biology.
+loops, which lesson 2.1 calls a knot.
 
 ### 1.4 The picture
 
@@ -769,8 +768,6 @@ something that no part shows at the step from two-literal to three-literal
 clauses. This is a statement about what can be *expressed*, not
 about how hard anything is to compute. There are easy knots: the atom is a
 Horn clause, and Horn satisfiability takes linear time (lessons 4.1 and 4.2).
-So this boundary is not the boundary between P and NP, and nothing here
-addresses that question.
 
 ### 3.3 The free complex of a system
 
@@ -1867,13 +1864,9 @@ remains open, and the owner's picture of what the program's bases are part of.
   and we give sources where we know them. The three notes contain results that
   are new as far as our searches found, and each note states its own novelty
   and folklore risk. See [FINDINGS.md](FINDINGS.md).
-- **Not implied:**
-  - Requirements alone run in linear time, and requirements with choice are
-    NP-complete. That locates where hardness enters, but says nothing about
-    whether P equals NP.
-  - Nothing here is physics.
-  - The interpretation that coherent alternatives are co-real is an
-    interpretation, and nothing is proved from it.
+- **Further distinctions.** Requirements alone run in linear time, and
+  requirements with choice are NP-complete. The co-reality of coherent
+  alternatives is an interpretation.
 
 ### 7.2 Open questions
 
@@ -1908,8 +1901,8 @@ On the evening of 11 November 2026 (Pacific time; the record's tickets carry
 12 November, its date in UTC) the owner set out what the program's bases are
 part of. This lesson records his picture in his words, beside the readings of
 the coordinator, the agent that runs the program's lines of research, and the
-tests now running on each part. The readings are interpretations and can be
-challenged; nothing here is proved unless a result is named.
+tests now running on each part. The readings are interpretations open to
+challenge; named results identify what is proved.
 
 **The owner's picture.** "The intuition is that these structures are
 essentially like a permutation of all the possible logical sequences that
@@ -1990,8 +1983,7 @@ triangles are. Triangles are simply patterns that exist in some base reality,
 and humans are also patterns that exist in this current base reality. We are
 closer to triangles than to the limits of what is possible with emergence
 (which is very difficult to conceptualize because necessary for humans are
-bindings like "time", "space", and "physics")." Nothing here is a claim about
-humans or physics.
+bindings like "time", "space", and "physics")."
 
 **Odds over infinitely many (classical).** The owner's "maybe all the same
 likelihood" meets a fact of probability: infinitely many finite meeting
@@ -2066,7 +2058,7 @@ measures disagree: steps along the meeting pattern say far, and the law says
 near, and on one base a whole direction has no length to the law, which is
 proved: three distinctions any number of steps away still form a bond of four
 with the starting one (lesson 4.7). The coordinator calls the comparison with relativity an
-analogy so far and nothing more, and nothing here is physics.
+analogy.
 
 **Harmonies and "fractals".** "I think of fractals and harmonies. Where
 harmonies might be something like natural numbers and the fractals are

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "WHERE-NEXT-20261116-001A-E001",
+  "ticket": "WHERE-NEXT-20261116-001A",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does a learned choice of which violated not-all-equal knot to attend to next and which of its distinctions to flip, with memory of earlier steps, reduce work per instance below tuned hand-written local rules on planted knot patterns where exact search is costly, and does it carry over to unseen and larger instances and to a second meeting pattern?",
+  "inputs": "The agent's local reads: break and make of the attended knot's distinctions; for each where-candidate (up to three knots just violated by its last flip and three drawn uniformly from the violated ones) its least, mean and zero-count break, whether it was just violated and whether it overlaps the knot just acted on; with memory, visit and flip ages, ranks, recent counts and a recurrent state.",
+  "forbidden_inputs": "The hidden planted state, the global violated count beyond the recurrent input's log count, any test instance during training or tuning, and any solver output.",
+  "mapping": "Softmax policy over candidates from two 8-unit scorers and a 6-unit recurrent state (326 weights), trained by OpenAI-ES on a curriculum of rand training instances n = 200, 400, 800; frozen for testing.",
+  "primary_observable": "R = median flips of L3 / median flips of the best re-tuned hand-written rule on unseen rand n = 3200 instances, with a paired bootstrap interval; marginal CPU and incidences per instance and break-even N*.",
+  "comparators_or_controls": "Random agent; WalkSAT, probSAT, Novelty+, greedy-where, sticky (follow what you broke) and focused Metropolis, each tuned on training instances and re-tuned per test cell; CaDiCaL as exact-search context; learned ablations L1 (no where, no memory), L2w (learned where, fixed probSAT what), L2 (no memory).",
+  "resource_budget": "Eight ES trainings (about 12 CPU-hours) and test cells to rand n = 12800 and local n = 3200, CPU only, MemoryMax 16G under the shared runner.",
+  "first_executable_signal": "Gate G: every reported solution satisfies every knot, incremental counts match recomputation, zero weights act uniformly, a break-preferring mutant is slower, CaDiCaL models check; then G-learn: L1 within 1.15 times probSAT at training size.",
+  "stop_rule": "Stop at the frozen decision rule (real win, mechanism win, clean loss, inconclusive, or learner failure if G-learn fails); keep every run, failed or censored.",
+  "nonclaims": "Planted instances only; no general SAT method; no claim about unrestricted solvers, P vs NP, native emergence or self-improving AI; the knot structures are fixed and their change (the second stage) is not tested.",
+  "preregistration": "research/WHERE-NEXT-20261116-001/preregistration.md"
+}

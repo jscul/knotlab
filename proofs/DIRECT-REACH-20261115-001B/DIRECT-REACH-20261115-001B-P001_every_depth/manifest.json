@@ -14,7 +14,7 @@
   "authoritative_metadata": "manifest.json",
   "title": "Direct reach at every depth: blocks of orbits and a block's descent",
   "status": "Proved",
-  "claim": "Theorem W: the blocks of the maps' orbits (an orbit with its children) meet only parent to child, so with orbits of bounded size ties, two-orbit three-member bonds and life are decided at every depth by a finite computation; computed: of population D, 10 constant-2 descriptions have L = 2 and 32 constant-3 descriptions L = 3 exactly at every depth and every s, and 43 half-rate ones no tie at any depth. Theorem D: a few addresses followed down one letter each (eventually periodic) carry ties (D1) or three-member bonds (D2) to every depth; with finite-reader states, 15 of 34 constant-2 descriptions have L = 2 and 39 of 66 constant-3 descriptions L <= 3 at every depth. Referee pending.",
+  "claim": "Theorem W: the blocks of the maps' orbits (an orbit with its children) meet only parent to child, so with orbits of bounded size ties, two-orbit three-member bonds and life are decided at every depth by a finite computation; computed: of population D, 10 constant-2 descriptions have L = 2 and 32 constant-3 descriptions L = 3 exactly at every depth and every s, and 43 half-rate ones no tie at any depth. Theorem D: a few addresses followed down one letter each (eventually periodic) carry ties (D1) or three-member bonds (D2) to every depth; with finite-reader states, 15 of 34 constant-2 descriptions have L = 2 and 39 of 66 constant-3 descriptions L <= 3 at every depth. Refereed, confirmed with fixes.",
   "dependencies": [
     "DIRECT-REACH-20261115-001A",
     "LEVEL-REACH-20261114-001"
@@ -56,10 +56,9 @@
     "directory": "proofs/DIRECT-REACH-20261115-001B/DIRECT-REACH-20261115-001B-P001_every_depth"
   },
   "remaining_obligations": [
-    "Independent referee: pending.",
     "Constant-2 descriptions with growing orbits: 19 of 34 open.",
     "Exact L = 3 at every depth with growing orbits: open (D2 gives L <= 3 only).",
-    "Half-rate growth beyond depth 9: open."
+    "Half-rate exact rate beyond depth 9: open (growth at every depth proved in BLOCK-REACH-20261116-001A)."
   ],
   "safe_to_conclude": {
     "contract_frozen": false,
@@ -94,7 +93,7 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude 2026-11-16 (code by the thread, validated against Codex-built certified SAT results of 001A); advisor checked the arguments; referee pending.",
+    "independence": "Written by Claude 2026-11-16 (code by the thread, validated against Codex-built certified SAT results of 001A); advisor checked the arguments; refereed (DIRECT-REACH-R1, fresh code): confirmed with fixes, no Block; signed off 2026-11-16 at a19e876a1.",
     "status": "proof by hand plus finite computation; check passed",
     "novelty": "known-with-delta"
   }

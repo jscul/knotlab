@@ -107,7 +107,7 @@ read only to depth 9.
 | 1 | Exact rates from marked windows | 2/3 — Substantial | 2/3 — Testable | Test whether one-step windows of the cyclic rulers forget once one member is pinned in them, which would give s + 2 → a ruler at every depth for those, or the pinned windows that still remember | Selected · awaiting go-ahead |
 | 2 | Upper bounds for every s by marked block tables | 2/3 — Substantial | 2/3 — Testable | Adapt `BRANCH-DEPTH-20261112-001D`'s fixed-size reachability to blocks for sizes up to 6 → exact L at every s where L ≤ 6, or tables too large | Alternative · deferred |
 | 3 | The four that never forget | 1/3 — Incremental | 2/3 — Testable | Decide boundedness of [3, 4, 4, 4] and [3, 4, 5, 5] with direction 2's tables at size 5 → bounded, or a growth certificate | Alternative · deferred |
-| 4 | Growing orbits | 2/3 — Substantial | 1/3 — Stated | Find a finite interface for descents where orbits grow (502 census descriptions) → one family with a forgetting bound, or none | Alternative · deferred |
+| 4 | Growing orbits | 2/3 — Substantial | 1/3 — Stated | Find a finite interface for descents where orbits grow (479 alive census descriptions; *corrected 2026-11-16 from 502, which counted the 23 dead ones too*) → one family with a forgetting bound, or none | Alternative · deferred |
 
 1. Payoff 2: would answer B180 for cyclic rulers at every depth and make the rate exact where the theorem is one short. Concreteness 2:
    the census's rulers have exact depth-9 values to test against, and pinning one member is a small change to the gate-checked

@@ -186,3 +186,31 @@ patterns without cycles by the lesser of it and the dual law) and A86 (scope: a 
 distinction with a uniform held order).
 
 **Basket:** the holes-and-proofs line's basket was read; none of its untaken directions is this question.
+
+## Final report as sent
+
+Posted to the owner's project thread on 2026-11-16 at 22:27:42 UTC (the decision-note link corrected at 22:28:15 UTC):
+
+**Result:** knot patterns do hit the sequential wall, and the knot picture shows exactly where. Once one distinction of an atom (A ∧ B → c) is settled, what's left is a two-place rule, and every two-place rule can be followed at once. Order is forced only where an atom has to be used as a knot, with both its loops still open at the same stage. Counting those stages ("phases") gives the classical Strahler/Newton count, so as theory this restates known results. The measurements are new:
+
+- On random atom patterns at the jump, step-by-step propagation takes about n^0.30 rounds (312 at a million distinctions), while untangling takes only 12 phases, about 0.57 more per doubling.
+- Unlayered random circuits need at most 4 phases. Layered ones need about d^0.41.
+- Being a knot doesn't decide the outcome. Of the 34 three-place knot laws, 2 are trivial, 2 are parity, 14 hit the wall and 16 are NP-complete.
+- The wall needs both kinds of overlap: a distinction reused by several atoms, and one demanded several ways. Braids stay an analogy here.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the sequential wall in knot patterns | **Status:** Successful (referee pending) | Wall located in knot terms, 34 laws placed; 9 of 13 frozen predictions held, and the 4 that failed are explained |
+| Local direction: phases of the forcing law | Continue, narrowly | Layered growth and carrying open atoms are still open |
+| Broader exploration: parallel complexity of knot laws | Known alternatives | Allender et al. and the Newton/Strahler theory cover it; no new algorithm |
+| Long-term goal: G3 Hardness at three places | Capability gained | Which overlaps force an order is now measured; no claim about P vs NC |
+
+**Next step:** Research directions. Selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Carry open atoms (your braid made exact) | 3/3, says how many strands must be carried together to save a phase | 2/3, the record-size measure has to be fixed first | Phases against record width on layered circuits → stop when phases stop falling or records outgrow polynomial size | Selected · not started |
+| 2 | Why layered circuits need about d^0.4 phases | 2/3 | 3/3 | Solve the rank recursion → it matches within one, or fails | Deferred |
+| 3 | Not-all-equal phases on the program's own patterns | 2/3 | 3/3 | Phases on weaves and three-regular contradictions → a clear trend over three sizes | Deferred |
+
+**Corrections:** none. **Goals:** G3 checkpoint (capability gained); no goal changed. **Assumptions:** two new entries, A85 (measure) and A86 (scope). **Advisor:** consulted before the freeze; I adopted its four corrections, and its predicted Newton rate of 0.54 matched the measured 0.545. [Decision note](https://github.com/jscul/knotlab/blob/main/research/SEQUENTIAL-WALL-20261116-001/sequential_wall.md)

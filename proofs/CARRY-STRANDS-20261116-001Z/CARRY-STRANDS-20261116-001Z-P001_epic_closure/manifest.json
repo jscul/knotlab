@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "CARRY-STRANDS-20261116-001Z-P001",
+ "canonical_id": "CARRY-STRANDS-20261116-001Z-P001",
+ "kind": "proof",
+ "ticket": "CARRY-STRANDS-20261116-001Z",
+ "proof": "CARRY-STRANDS-20261116-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: carrying distinctions together",
+ "status": "Proved",
+ "claim": "Ledger closing CARRY-STRANDS-20261116-001: ticket A, the frozen run (305 cases; 3 of 7 predictions held, Q1, Q1b, Q2, Q3 failed); ticket B, Theorems 1-3 (spend-only phases ceil(sigma/w), rounds never below sigma, keep law = pebbling with sliding); referee pending; recommendation research directions. No new claim.",
+ "dependencies": [
+  "CARRY-STRANDS-20261116-001A",
+  "CARRY-STRANDS-20261116-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "CARRY-STRANDS-20261116-001",
+  "epic_path": [
+   "CARRY-STRANDS-20261116-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/CARRY-STRANDS-20261116-001A/CARRY-STRANDS-20261116-001A-E001_carried/contract.json": "44a0b9c167ed29edb4652f2686d8d5a01cd07ea1f3c02605acb274a6897f5b5c",
+  "artifacts/CARRY-STRANDS-20261116-001A/CARRY-STRANDS-20261116-001A-E001_carried/summary.json": "a10bd937d62668f6432516265d9b432f4baca4c8a106d37d1e244de4436dedb9",
+  "proofs/CARRY-STRANDS-20261116-001B/CARRY-STRANDS-20261116-001B-P001_carry_laws/manifest.json": "a4a930df60af248e95472743de12f0b7478a3a1db00c1621ad7f41712a652f08",
+  "proofs/CARRY-STRANDS-20261116-001B/CARRY-STRANDS-20261116-001B-P001_carry_laws/result.json": "c2eceeaa24450c6b8135a00c217ac0aa31d2162b940c68a13839cd3df5cb1970"
+ },
+ "paths": {
+  "manifest": "proofs/CARRY-STRANDS-20261116-001Z/CARRY-STRANDS-20261116-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/CARRY-STRANDS-20261116-001Z/CARRY-STRANDS-20261116-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/CARRY-STRANDS-20261116-001Z/CARRY-STRANDS-20261116-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/CARRY-STRANDS-20261116-001Z/CARRY-STRANDS-20261116-001Z-P001_epic_closure/result.json",
+  "check": "proofs/CARRY-STRANDS-20261116-001Z/CARRY-STRANDS-20261116-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/CARRY-STRANDS-20261116-001Z/CARRY-STRANDS-20261116-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-16; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

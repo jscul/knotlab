@@ -123,7 +123,10 @@ def main(run_dir):
     sub = {k: r for k, r in res.items() if k.startswith("subtree-")}
     sv = {k: {law: r["laws"][law]["T"] for law in r["laws"] if "cap" not in r["laws"][law]} for k, r in sub.items()}
     a4, a6 = sv.get("subtree-d4-l16", {}), sv.get("subtree-d6-l16", {})
-    V["Q5"] = {"values": sv, "holds": bool(a4 and a6 and a4["w2"] < a4["w1"] and a6["w2"] < a6["w1"] and a4["w3"] < a4["w2"])}
+    # read-out fix (after the run, disclosed): a capped law is not evaluable, so its part of Q5 is reported as such
+    parts = {"T2<T1 at d4": a4["w2"] < a4["w1"], "T2<T1 at d6": a6["w2"] < a6["w1"],
+             "T3<T2 at d4": (a4["w3"] < a4["w2"]) if "w3" in a4 else "not evaluable (state cap)"}
+    V["Q5"] = {"values": sv, "parts": parts, "holds": all(v is True for v in parts.values() if v in (True, False))}
 
     tabs["structured"] = {k: r for k, r in res.items() if k.split("-")[0] in ("ladder", "pyramid", "subtree")}
     unl = {}

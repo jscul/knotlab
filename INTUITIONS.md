@@ -2561,6 +2561,12 @@ that earlier records used in two senses.
   derivation tree. Without reuse an atom pattern needs at most log₂ of its held count phases, more phases than that
   need a rejoining, and the sequential wall needs reuse unless P = NC and several-way demand unless P = NL
   (`SEQUENTIAL-WALL-20261116-001`).
+- **Carried distinction; keep and spend.** A law for forcing may carry up to w open distinctions in a phase and take
+  an open use while carrying both demanders. A step spends what it uses, or keeps it to use again; the spend-only law
+  needs ⌈σ/w⌉ phases for Strahler number σ (the literature's register allocation), and the keep law reaches in one
+  phase what w black pebbles with sliding reach (the literature's pebble game). The intuition, in the owner's words:
+  carrying is holding several strands, and keeping lets one strand split into two that later rejoin; splitting pays
+  only where strands rejoin (`CARRY-STRANDS-20261116-001`, 16 November 2026).
 - **Drawn knot pattern.** A knot pattern given together with a drawing on a
   surface, which earlier records called a knot space: every knot holds three
   distinctions and every distinction lies in three knots, and the drawing is a

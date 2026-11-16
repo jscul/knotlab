@@ -141,6 +141,7 @@ evidence: results and their status come from the records each entry links.
 | [A84](#a84--pangs-degree-size-relation-holds-as-stated) | Pang's degree-size relation holds as stated | premise | Assumed |
 | [A85](#a85--what-must-be-worked-in-order-is-read-by-the-phases-of-the-forcing-law) | What must be worked in order is read by the phases of the forcing law | measure | Assumed |
 | [A86](#a86--a-typical-atom-pattern-is-uniform-atoms-at-three-per-distinction-with-a-uniform-held-order) | A typical atom pattern is uniform atoms at three per distinction with a uniform held order | scope | Assumed |
+| [A87](#a87--in-forcing-the-record-a-law-carries-is-measured-by-how-many-distinctions-it-carries) | In forcing, the record a law carries is measured by how many distinctions it carries | measure | Assumed |
 
 ## Entries
 
@@ -2249,3 +2250,22 @@ evidence: results and their status come from the records each entry links.
   the epic's ranges (rounds slope 0.29 to 0.37, phases 0.2 to 0.8 per doubling) under these changes.
 - **History.**
   - 2026-11-16 · Added by `SEQUENTIAL-WALL-20261116-001`.
+
+### A87 · In forcing, the record a law carries is measured by how many distinctions it carries
+
+**Assumed** · 2026-11-16 · measure
+
+- **Statement.** When a law for forcing in an atom pattern carries open distinctions together instead of waiting a phase for each
+  open use, the size of what it carries is measured by w, the number of distinctions carried at once; a phase then searches about
+  n^w carried sets.
+- **Why.** Taken by default in `CARRY-STRANDS-20261116-001`
+  ([decision note](../research/CARRY-STRANDS-20261116-001/carry_strands.md)): the forced set is one state, so a joint record of
+  carried distinctions holds only which ones are carried, and table size or states visited are functions of w (advisor). It is the
+  pebble count of the classical games, which makes the results comparable with register allocation and pebbling.
+- **Rests on it.** That epic's readings: spend-only phases ⌈σ/w⌉, rounds never below σ, keeping paying only where strands rejoin,
+  and little rejoining in random atom patterns and random circuits.
+- **Challenge.** In counting or satisfiability, where the allowed states are many, a carried record is a relation and its size can
+  grow without bound in w; measure it by the number of allowed joint states carried, and see whether the conclusions change.
+  Overturned for the owner's braid question if such a measure gives a saving that w does not see.
+- **History.**
+  - 2026-11-16 · Added by `CARRY-STRANDS-20261116-001`.

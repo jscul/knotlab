@@ -148,7 +148,9 @@ Folder: this one (note, predictions, advisor answers, read-out, `chain_ties.py`,
 `crosscheck_window_tree.py`, `exploratory/`); the proof family `proofs/DIRECT-REACH-20261115-001B/` (`proof.md`, `check.py`,
 `result.json`); the Codex-built computations `experiments/DIRECT-REACH-20261115-001A/…/codex/` (`REPORT.md`, gates, certified case
 results; their slim records and every cited refutation's hashes in `artifacts/DIRECT-REACH-20261115-001A/`, the 30 GB of
-certificates themselves kept on disk only; 5 certifications timed out at their query deadlines and are kept as incomplete attempts, leaving those cells undecided, none behind a reported
+certificates themselves kept on disk only, repacked on 2026-11-16 at John's choice into 135 zstd archives (8.99 GB, every member
+checked against its hash; index and extraction in `codex/certificate_archives/INDEX.md`, for example
+`zstd -dc --long=27 codex/certificate_archives/<case>.tar.zst | tar -x -C out`); 5 certifications timed out at their query deadlines and are kept as incomplete attempts, leaving those cells undecided, none behind a reported
 verdict) and the thread's U pilot `…/thread/`. Proved: Theorems W and D and Lemma 0. Computed: Corollaries W and D, life, the depth-9
 read-out. Least sure: (a) the block computation's every-depth bookkeeping (feasible sets by remaining depth, the r < r₀ cases) in
 `exploratory/window_tree.py`, checked against SAT only at depths up to 12; (b) the composite words m_j · m_i⁻¹ and the inverse automaton

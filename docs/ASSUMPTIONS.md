@@ -2578,7 +2578,12 @@ evidence: results and their status come from the records each entry links.
   nothing skipped. Every distinction relates to every other in it, and its own states name where the next knot must go: between
   two neighbours (a knot with only those two) or beyond an end (a knot with both ends). Statically, betweenness on every box of a
   grid holds two independent orders. The price is states: the line has only 2n.
+  `GRID-GROW-20261117-001` ([decision note](../research/GRID-GROW-20261117-001/grid_grow.md); referee pending) grew the
+  two-way grid the same way: a new row or column costs one forced knot tying the new cell to its neighbour and the opposite corner,
+  and a filled cell costs exactly three, which can stay in its unit square. The states name every placement. That is two
+  independent orders grown from knots on a given meeting pattern.
 - **History.**
+  - 2026-11-17 · A two-dimensional positive case added by `GRID-GROW-20261117-001`; status unchanged.
   - 2026-11-17 · The weave narrowing scoped after the referee `WEAVE-LAWS-R1`: one-knot-per-orientation laws only; status unchanged.
   - 2026-11-17 · A positive case built from knots added by `KNOT-ORDER-20261117-001`; status unchanged.
   - 2026-11-17 · Narrowed on the weave by `WEAVE-LAWS-20261117-001`: no tested law does both there; status unchanged.

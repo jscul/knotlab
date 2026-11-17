@@ -386,6 +386,16 @@ pairwise, its count is an exact ruler, and every distinction in it relates to
 every other. Statically, betweenness on every box of a grid holds two
 independent orders, its rows and its columns
 ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md)).
+That grid can be grown the same way (`GRID-GROW-20261117-001`, proof and frozen
+computation, referee pending). Starting a new row or column costs one knot, and
+it is forced: the new cell between its neighbour and the opposite corner, the
+one cell across every cut. Filling a cell costs exactly three knots, and they
+can stay in its unit square: the new cell between its left and lower
+neighbours, and each of those between the corner and the new cell. A single
+four-place parity on the square does the same, since a cut crosses a square
+through opposite sides or not at all. The states name every placement. So
+knots alone grow two independent orders, reaching far only to start a line
+([decision note](../research/GRID-GROW-20261117-001/grid_grow.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

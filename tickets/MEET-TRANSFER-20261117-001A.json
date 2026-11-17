@@ -5,7 +5,17 @@
     "SCALE-MEMORY-20261116-001"
   ],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/MEET-TRANSFER-20261117-001A/MEET-TRANSFER-20261117-001A-E001_meet_transfer/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/MEET-TRANSFER-20261117-001A/MEET-TRANSFER-20261117-001A-E001_meet_transfer/result.json"
+    ],
+    "preregistration": "research/MEET-TRANSFER-20261117-001/preregistration.md",
+    "report": "research/MEET-TRANSFER-20261117-001/meet_transfer.md"
+  },
   "id": "MEET-TRANSFER-20261117-001A",
   "kind": "ticket",
   "legacy": {},
@@ -16,8 +26,8 @@
   },
   "parent": "MEET-TRANSFER-20261117-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Degree-normalized, step-free memory carries the navigating agent to held-out meeting patterns: R vs two-stage-tuned Novelty+ (five runs) 0.83 [0.63, 1.09] on local window 10 at 3200 (primary; old agent 24.7), 0.66 at 800, 0.72-0.81 on heavy, 0.95 on window 160, 0.75 on window 40 (one seed of four at 2.99); flips wins on local 800, heavy 3200, block 3200; loses on rand 2.1 at 3200 (1.60); the reads do the carrying (Dr/L3sm = 0.031, D/Dr = 1.09); 1.5-9x CPU, no CPU win. Inner-loop bar: D usable on the primary only by the frozen rule (window 40 seed); Dr meets it everywhere held out. Computed, referee pending.",
+  "status_class": "supported",
   "stop_rule": "",
   "title": "Degree-normalized scale-free memory trained on mixed meeting patterns, tested on a held-out one"
 }

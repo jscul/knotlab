@@ -3,7 +3,7 @@
 Epic `SCALE-MEMORY-20261116-001`, ticket `SCALE-MEMORY-20261116-001A` (`WHERE-NEXT-20261116-001#1`; goals G15, G16), 2026-11-17.
 Evidence: **computed** (finite experiments on planted instances, every run kept), frozen before any new arm was trained
 ([pre-registration](preregistration.md), freeze commit `40cf4237c`, 2026-11-17 00:02 UTC; [advisor review](advisor_review.md)).
-**Stress test pending**: the n = 51200 cell (registered `SCALE-MEMORY-P1`) is still running and will be folded in. **Refereed**
+**Stress cell folded in** (n = 51200, 2026-11-17; see "The 51,200 cell" below). **Refereed**
 (SCALE-MEMORY-R1, confirmed with fixes, no Block; [report](referee-R1/report.md); the 51200 cell not refereed). The canonical K1–K3
 test is unchanged.
 
@@ -101,6 +101,27 @@ passed for L3m and L3sm (both seeds) and failed for L2m seed 1. Every arm's numb
 [`summary_pilot.json`](../../artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/summary_pilot.json),
 the five-run check in [`posthoc_summary.json`](../../artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/posthoc_summary.json).
 
+## The 51,200 cell
+
+The stress cell at n = 51,200 is 16 times the mixed arms' largest training size, and 64 times L3s's. It was stopped on 2026-11-17 at
+10:21 UTC with 4,855 of 6,250 runs finished, at the coordinator's request, as a disclosed deviation. Its remaining runs were mostly
+the collapsed step-counted arms running toward the 2·10^9 cap at about an hour each. The scale-free arms and the comparators R
+needs were then finished on every instance (`stress_sf_job.py`: same instances, run seeds, caps and code). The other arms finished
+only 6 to 14 of the 100 instances (L3 seed 0 6, L3c seed 0 9, L3 seed 1 12, the rest 14). Their unfinished runs are not finished
+within the flips reached, and they enter no figure.
+
+| Arm | Median flips (seeds) | R against re-tuned Novelty+ (0.7, 0.05), 99% |
+| --- | --- | --- |
+| L3s (scale-free, trained to 800) | 1,843,636 / 1,794,674 | 0.96 [0.88, 1.05] (seeds 0.98, 0.95) |
+| L3sm (scale-free, trained to 3,200) | 1,627,460 / 1,764,179 | **0.90 [0.83, 0.98]** (seeds 0.86, 0.94) |
+| Novelty+ | 1,885,357 | the comparator |
+| sticky | 6,065,132 | — |
+
+All of these runs solved. **Parity holds at 64 times L3s's training size, and L3sm keeps a small margin**: P5 held.
+L3sm / L3s = 0.93 [0.84, 1.03]. The comparator caveat of 12,800 does not apply here: at 51,200 the re-tuning scored (0.7, 0.05) and
+(0.7, 0.01) alike (14.42 and 14.44 mean log flips). These are single runs per instance, as in the frozen protocol; the five-run
+check covered 3,200 and 12,800 only. The cell is computed and was not refereed. Analysis: `stress_analyze.py`, `stress_51200.json`.
+
 ## Predictions
 
 | # | Prediction (probability) | Outcome |
@@ -110,7 +131,7 @@ the five-run check in [`posthoc_summary.json`](../../artifacts/SCALE-MEMORY-2026
 | P3 | T = L3m / L3 at 12,800 at most 0.7, upper end below 1 (55%) | **Held**: 0.092 (L3m's seeds disagree) |
 | P3c | C = L3m / L3c at 12,800 at most 0.8, upper end below 1 (50%) | **Held**: 0.50 [0.34, 0.62] |
 | P4 | L3sm wins in flips at 12,800: R at most 0.8, upper end below 0.9 (30%) | **Failed narrowly**: 0.82 [0.73, 0.91]; five runs: 0.94 |
-| P5 | L3sm at 51,200: R at most 1.0 (25%) | **Pending** (stress cell running) |
+| P5 | L3sm at 51,200: R at most 1.0 (25%) | **Held**: 0.90 [0.83, 0.98] (seeds 0.86, 0.94) |
 | P6 | K = L3m / L2m at 12,800 at most 0.8 (50%) | **Held**: 0.52, but L2m failed its learner gate |
 | P7 | Every new arm still loses on `local` 3,200 (80%) | **Held**: R from 4.7 to 29 |
 | P8 | No real win (90%) | **Held**: CPU per instance about 5 times Novelty+'s |
@@ -137,8 +158,7 @@ as its fast loop.
 - Planted instances of two families only; the three limits above.
 - Two seeds per arm, and the seed noise is large for step-counted memory (L3's seeds differ 33 times at 12,800). The arm-level
   intervals do not carry seed variance, which is why the decision also asked for seed agreement.
-- The 51,200 cell is pending: its collapsed arms (L3 seed 0, L3c seed 0) run toward the 2·10^9 cap at about 15 minutes per run.
-  The first instance read 0.80 to 0.87 of Novelty+ for L3sm and 0.86 to 1.77 for L3s; a single instance decides nothing.
+- The 51,200 cell was stopped early (below), so its step-counted, memoryless and control arms are reported only as unfinished.
 - Deviations from the frozen text:
   - a first training launch was stopped after seconds to fix a pool hang, and relaunched; no result of it was read;
   - the post hoc five-run check is not part of the frozen protocol;

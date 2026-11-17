@@ -1,6 +1,6 @@
 # Decision: SCALE-MEMORY-20261116-001
 
-2026-11-17 · goals G15, G16 · takes `WHERE-NEXT-20261116-001#1` · computed, **stress test pending** (n = 51200), referee
+2026-11-17 · goals G15, G16 · takes `WHERE-NEXT-20261116-001#1` · computed, stress cell (n = 51200) folded in, referee
 pending · result note [scale_memory.md](scale_memory.md) · pre-registration [preregistration.md](preregistration.md) (frozen
 `40cf4237c`, 2026-11-17 00:02 UTC)
 
@@ -38,7 +38,8 @@ separately).
 **Basket:** as in WHERE-NEXT; the paused point-learner items do not test the navigating agent, so #1 stands.
 **Advisor:** Fable 5.2 reviewed the first draft and said "don't freeze yet"; its seven changes are in the frozen design
 ([advisor_review.md](advisor_review.md)). Not used after the results.
-**Stress test pending:** the n = 51200 cell (P5, the transfer cell of the mixed arms), registered `SCALE-MEMORY-P1`.
+**Stress cell:** folded in 2026-11-17 after a disclosed early stop (the collapsed arms left unfinished). L3sm 0.90 [0.83, 0.98] and
+L3s 0.96 [0.88, 1.05] against Novelty+ at 51,200; P5 held.
 **Referee:** pending; hand-off below.
 
 ## Referee hand-off

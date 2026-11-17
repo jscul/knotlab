@@ -3,7 +3,7 @@
  "ticket": "SCALE-MEMORY-20261116-001A",
  "artifact_id": "SCALE-MEMORY-20261116-001A-E001",
  "evidence_stage": "exploratory",
- "status": "Exploratory run complete except the n = 51200 cell (stress test pending)",
+ "status": "Exploratory run complete; the n = 51200 cell stopped early by a disclosed deviation and finished for the scale-free arms and comparators",
  "report": "research/SCALE-MEMORY-20261116-001/scale_memory.md",
  "decision": "research/SCALE-MEMORY-20261116-001/decision.md",
  "contract": "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/contract.json",
@@ -16,7 +16,9 @@
   "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/test_job.py": "8203862da07d936ddc86c4e08f45de4fbb9b4579e41ab039af0df472f4c62aeb",
   "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/posthoc_job.py": "e451539b4ae8104c175ea687e916692331a78113606ee0d9568efa1547be2de4",
   "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/analyze_scale.py": "6cce64a46c139ae92ba4f13579fd5a69a2ac335d4494363700dc3d7577bf29e6",
-  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/check.py": "16caf7698e33449f843a17bae81673c9a4635a219f785526e8ba95f7444f75dc"
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/check.py": "16caf7698e33449f843a17bae81673c9a4635a219f785526e8ba95f7444f75dc",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/stress_sf_job.py": "e79c9270cc9bbeda26ee07cb81ae8ca0b30faee3d17d2f4d95c52c3e561795d1",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/stress_analyze.py": "1d864022775dfeab44127629189bf81cf3ca818542433d675481157a45f16f80"
  },
  "raw_results": {
   "training": {
@@ -30,10 +32,15 @@
   "posthoc": {
    "path": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/posthoc/results.jsonl",
    "sha256": "2e44b0ea9e9dfdcad705ca0c7e0d447d91dc1637a79aa2a16b58f83aaf1eccf5"
+  },
+  "stress_sf": {
+   "path": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/stress_sf/results.jsonl",
+   "sha256": "dd6df0227762d5703eccf24d46a3dda14a6dca1621c7515920af74dde1e8f7ee"
+  },
+  "test": {
+   "path": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/test/results.jsonl",
+   "sha256": "762824f2dd108a2164405cdd189db9704f31d6b537b10c2214e4e582d1a04dbd"
   }
- },
- "raw_results_running": {
-  "test": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/test/results.jsonl"
  },
  "reused": "artifacts/WHERE-NEXT-20261116-001A/WHERE-NEXT-20261116-001A-E001_where_next/{test,stress}/results.jsonl",
  "inputs": {
@@ -179,5 +186,63 @@
    "level": 99.0
   }
  },
- "corrections": "2026-11-17 referee R1: L3m inconclusive; the 12800 comparator was 10-15% weaker than the best Novelty+, so the five-run 0.92-0.94 is the better reading; posthoc_analyze.py committed"
+ "corrections": "2026-11-17 referee R1: L3m inconclusive; the 12800 comparator was 10-15% weaker than the best Novelty+, so the five-run 0.92-0.94 is the better reading; posthoc_analyze.py committed",
+ "stress_51200": {
+  "instances": 100,
+  "medians": {
+   "L3s_s0": 1843635.5,
+   "L3s_s1": 1794674.0,
+   "L3sm_s0": 1627460.0,
+   "L3sm_s1": 1764178.5,
+   "novelty_plus@train": 1885357.0,
+   "novelty_plus@cell": 1885357.0,
+   "sticky@train": 6065131.5,
+   "sticky@cell": 6065131.5
+  },
+  "solved": {
+   "L3s_s0": 1.0,
+   "L3s_s1": 1.0,
+   "L3sm_s0": 1.0,
+   "L3sm_s1": 1.0,
+   "novelty_plus@train": 1.0,
+   "novelty_plus@cell": 1.0,
+   "sticky@train": 1.0,
+   "sticky@cell": 1.0
+  },
+  "not_finished_arms": {
+   "L3m_s0": 14,
+   "L2m_s0": 14,
+   "L2m_s1": 14,
+   "L3c_s1": 14,
+   "L3m_s1": 14,
+   "L3_s1": 12,
+   "L3c_s0": 9,
+   "L3_s0": 6
+  },
+  "R": {
+   "L3s": {
+    "point": 0.9647987204693799,
+    "lo": 0.8848390518594579,
+    "hi": 1.0518695997673966,
+    "seeds": [
+     0.9778707693025777,
+     0.9519014170790996
+    ]
+   },
+   "L3sm": {
+    "point": 0.8987374240068361,
+    "lo": 0.8279134543253377,
+    "hi": 0.9776804613170856,
+    "seeds": [
+     0.8632105219329814,
+     0.9357264963611666
+    ]
+   }
+  },
+  "L3sm_over_L3s": {
+   "point": 0.9315284161753401,
+   "lo": 0.8405740744802227,
+   "hi": 1.0276576815181273
+  }
+ }
 }

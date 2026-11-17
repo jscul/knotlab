@@ -721,6 +721,23 @@ it as A97, now under challenge (the last part of this lesson). This lesson
 says what it means in the words of lessons 1.1 to 2.3, and which later lessons
 hang from it.
 
+**Relative, with an order.** Asked the same day whether his distance includes
+which way or only how far, the owner answered:
+"Distance is topological, so it will have some starting point, then go off
+outward from there. So for example, 0 might be a starting point on the number
+line. In my view, there isn't really any such thing as "direction". Everything
+is just "relative", but it's also topological, so if you're at 3 on the number
+line, you can't just skip 4 to get to 5, so there is an order."
+The number line is his illustration, not a space the guide assumes. In the
+guide's words, and as the guide's reading rather than his: a distance is
+counted outward from a starting distinction, it has no direction, and nothing
+farther can be reached without passing what lies between, so the distance
+alone gives an order (the literature's betweenness, for a distance built from
+unit steps). Along the chain of atoms of lesson 4.6, bond distance has this
+property: every bond through w(s) and w(t) contains the loops between them
+(proved). Whether the candidate distances of the test at the end of this lesson
+have it is being checked (open).
+
 **This versus that.** Lesson 1.1 starts from one material, the distinction:
 two alternatives of which exactly one holds, with no space, no order and no
 number. It treats a distinction as the least piece of information, since it
@@ -867,9 +884,10 @@ computed, and refereed with a Block on its first reading,
   allowed states, not an extended or metric distance in the program's sense,
   which the foundation allows only after paths and separation are built.
 
-So one candidate fails and one has passed every case tested. Which of them,
-or what other notion, the owner means is his to say, and the guide leaves the
-word open until he does. The register lists one more question: is the full
+So one candidate fails and one has passed every case tested. The owner's
+answer above rules out direction and asks for an order in which nothing is
+skipped; whether either candidate gives such an order is being checked, and the
+guide leaves the choice open until it is. The register lists one more question: is the full
 bit that parity hides a distance? See A97 in the
 [register](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information).
 

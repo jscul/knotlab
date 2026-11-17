@@ -98,6 +98,17 @@ his premise and his interpretation. Nothing in the record proves it, no
 result is derived from it, and the protected thesis does not state it in these
 words.
 
+Asked whether his distance includes which way or only how far, he answered:
+"Distance is topological, so it will have some starting point, then go off
+outward from there. So for example, 0 might be a starting point on the number
+line. In my view, there isn't really any such thing as "direction". Everything
+is just "relative", but it's also topological, so if you're at 3 on the number
+line, you can't just skip 4 to get to 5, so there is an order."
+The number line is his illustration, not a space the program assumes. Read
+as order from distance alone, with no direction (classically, betweenness for
+a distance built from unit steps), this is the program's reading of his
+words, and it has not been tested.
+
 In the program's terms it joins two things the foundation already says. The
 knot's single touch is minimal contact-distance, the smallest relative
 existence, with no magnitude (the claim above); and a knot is joint
@@ -124,8 +135,9 @@ distinctions differ, the number of allowed states in which they take
 different values, it passed every case tested: that table determined every
 not-all-equal base on up to six distinctions and 46,445 sampled on seven
 (computed and refereed, not proved for all sizes; a count across the allowed
-states, not an extended or metric distance). Which notion the owner means is
-his to say, and this page leaves the word open until he does.
+states, not an extended or metric distance). His answer rules out direction
+and asks for an order in which nothing is skipped; whether either candidate
+gives one is being checked, and this page leaves the choice open until it is.
 
 Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [its referee](research/DISTANCE-INFO-20261117-001/referee-R1/report.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
 

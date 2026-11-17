@@ -14,7 +14,7 @@
   "authoritative_metadata": "manifest.json",
   "title": "Two-orbit bonds, forgetting on the values states take, and exposure",
   "status": "Proved",
-  "claim": "Theorem K: the least bond of any size inside an orbit at level k and one at level k + s, read from their exact joint, bounds L at every depth; Theorem F': forgetting read on actual joints from level k forces growth; Lemma E: an exposed missing pair gives a two-orbit bond. Computed: the four non-direct census patterns that never forget are bounded at every depth (4, 4, 5, 6), so forgetting decides all 786 small-orbit census descriptions; in 2,380 fresh and mutated patterns, 39 never forget on all values without a two-orbit bond: 14 forget on actual values, 13 have top joints that become products (one grows past its parent at depth 11), 12 keep a hidden dependence. Conjecture C' open. Referee pending.",
+  "claim": "Theorem K: the least bond of any size inside an orbit at level k and one at level k + s, read from their exact joint, bounds L at every depth; Theorem F': forgetting read on actual pair projections from level k forces growth; Lemma E: an exposed missing pair gives a two-orbit bond. Computed: the four non-direct census patterns that never forget are bounded at every depth (4, 4, 5, 6), so forgetting decides all 786 small-orbit census descriptions; in 2,380 fresh and mutated patterns, 39 never forget on all values without a two-orbit bond: 14 forget on actual values, 13 have top joints that become products (one grows past its parent at depth 11), 12 keep an unexposed dependence; boundedness of these 25 open. Conjecture C' open. Refereed, confirmed with fixes.",
   "dependencies": [
     "DIRECT-REACH-20261115-001B",
     "BLOCK-REACH-20261116-001A",
@@ -58,7 +58,6 @@
     "directory": "proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit"
   },
   "remaining_obligations": [
-    "Independent referee: pending.",
     "Conjecture C' (no persistent two-orbit bond from the top implies growth): open on 25 patterns.",
     "Depth 13 reading of 8db5da810c00-73: pending (LONG_RUNNING KEEP-REACH-A2)."
   ],
@@ -95,7 +94,7 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude 2026-11-17; the advisor reviewed the design and proposed the exposure lemma; referee pending.",
+    "independence": "Written by Claude 2026-11-17; the advisor reviewed the design, proposed the exposure lemma and checked the words; refereed (KEEP-REACH-R1): confirmed with fixes, no Block.",
     "status": "proof by hand plus finite computation; check passed",
     "novelty": "known-with-delta"
   }

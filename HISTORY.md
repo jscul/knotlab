@@ -114,6 +114,17 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
 - The exponential proof-length bounds inherited in `ROUTE-PARITY-TRANSFER-20261115-001`, `QUADRATIC-ROUTE-TRANSFER-20261115-001`, `PRODUCT-NAME-TRANSFER-20261115-001` and `AFFINE-FACTOR-RANK-20261115-001` are conditional. They rest on Pang's arXiv 2610.00837 (Theorems 1.1 and 7.2(a)), an unrefereed, AI-assisted preprint claiming a previously open result, recorded as assumption [A84](docs/ASSUMPTIONS.md#a84--pangs-degree-size-relation-holds-as-stated). "Provably" and "proves" are withdrawn from their summaries. [Route parity decision](research/ROUTE-PARITY-TRANSFER-20261115-001/decision.md)
 - For the parity case, ECCC TR26-316 (Alekseev, Gryaznov, Itsykson, Pitassi, Robere and Tzameret, 10 November 2026, Theorems 6.5 and 2.3), also unrefereed and independent of Pang, states the same bound, so that case holds if either preprint does. The degree-two and named-product bounds rest on Pang alone.
 
+## 17 November 2026: what keeps the top bound, confirmed by its referee, one summary narrowed
+
+- The study of what keeps the top bound (`KEEP-REACH-20261117-001`) was confirmed by its referee with fresh code, with no Block: the two
+  theorems and the exposure lemma hold, every small-orbit census pattern is decided, and the four that never forget are bounded
+  ([decision note](research/KEEP-REACH-20261117-001/keep_reach.md)).
+- Narrowed: that never forgetting does not keep the top bound is proved only for the 14 patterns that forget once forgetting is read on
+  the values states take. For 25 that never forget even there, whether the reach stays bounded is open, though one already passes its
+  bounded parent at depth 11.
+- Recorded: the certificates of the depth-11 readings, which the first runs had not written to their files. Words checked with the
+  advisor: "pair projection" replaces "joint", and "unexposed dependence" replaces "hidden".
+
 ## 16 November 2026: no level skipped, confirmed by its referee; the addressed-pattern line closes
 
 - The no-skip test (`MARK-RATE-20261116-001`) was confirmed by its referee with fresh code, with no Block: the theorem and the closure

@@ -30,7 +30,10 @@ try:
     res = job.compute(key, wd, N=N, k0=3, S=S, histograms=False)
 finally:
     shutil.rmtree(wd, ignore_errors=True)
-out = dict(index=index, key=key, N=N, k0=3, budget=job.BUDGET, levels=[dict(s=lv['s'], L_N=lv['L_N'], bond=lv.get('bond'),
-                                                        optimality_proved=lv.get('optimality_proved')) for lv in res['levels']])
+out = dict(index=index, key=key, N=N, k0=3, budget=job.BUDGET,
+           levels=[dict(s=lv['s'], L_N=lv['L_N'], bond=lv.get('bond') or (lv.get('anywhere') or {}).get('bond'),
+                        optimality_proved=lv.get('optimality_proved', (lv.get('anywhere') or {}).get('optimality_proved')),
+                        certificate=(lv.get('anywhere') or {}).get('certificate')) for lv in res['levels']])
+# (fixed after the referee, 2026-11-17: the first runs read the row's own fields, which are null; the certificate is in row['anywhere'])
 json.dump(out, open(HERE / ('exact_third_%s_N%d.json' % (index.replace(':', '_'), N)), 'w'), indent=1)
 print(index, [lv['L_N'] for lv in res['levels']])

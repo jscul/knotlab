@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "experiment_id": "KNOT-CAP-20261117-001B-E001",
+ "ticket": "KNOT-CAP-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does a cap on knots per distinction (or per pair) stop the cheapest growth at two orders with the two orders still growing; which state differences separate matched starts with the same states and different knots, and do they persist; what do the states remember after the knots are erased?",
+ "definitions": {
+  "cap": "after a move every distinction lies in at most c knots; pair cap: every pair in at most m knots",
+  "fill": "a zero-cost step (no state added)",
+  "distance": "total variation between two starts' distributions over full classes, classes of states, or coarse features",
+  "erasure": "KF3 to n = 8, then the states-only fewest-states rule of STATE-RULES (three knots, extensions counted one by one)"
+ },
+ "public_inputs": {
+  "code": "caplib.py (sha256 d6402f8b762a629672529817b553de85af32c75bfbfc3ad377b08bb18a11c8a2), run.py (sha256 466efc57278e9ac3ba5c6a76b51e0d1dcee33a22f8506b4486891c13de51a6b7), checks.py (sha256 1e6bce06e28511293a760265653db2bb299b3e5caa75dcb25180d0c31a79287a); experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/rules.py (sha256 d1ee374ca2c6784bdbad72c32878d7c6a3c98c60a28da73f34f14f76c8d10172); networkx 3.6.1 in the workspace .venv",
+  "run": ".venv/bin/python -B run.py --part NAME for K1-K5, each its own process, then run.py --merge"
+ },
+ "forbidden_inputs": [
+  "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions C1-C9 of research/KNOT-CAP-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "c = 3 and the pair cap from one knot (proved stops); the sampling floor (same start, other seeds); the no-erasure control.",
+ "predictions": {
+  "C1": "c3 and pair2: square at 4, then stall, probability 1",
+  "C2": "c4: no stall at 5; at 16 <= 3 fills, no cube, lambda = 2 majority",
+  "C3": "c5 no Q3 at 8; c6 Q3 at 8 < half, no Q4; c9 Q3 at 8 majority, Q4 at 16 minority; c12 Q3 at 8 majority",
+  "C4": "no rule: lambda = 2 with >= 4 fills at 16 in a majority",
+  "C5": "six-starts: equal two-order probability at 8; states TV 3/4 at 7, >= 0.7 to 10; features TV <= 0.03",
+  "C6": "five-starts: TV 0 at 5, >= 0.5 at 6, >= 0.6 to 10; two-order probabilities equal",
+  "C7": "sampled TV at 7, 8 above floors, p < 0.01; two-order counts at 8 within 3 SE",
+  "C8": "erasure: non-increasing, positive at 9, 10, 11 (six-starts)",
+  "C9": "c5, c6 from six-starts: stalls < 5% by 12"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 and A99 status; referee hand-off; report.",
+ "runtime": "Parts in parallel; expected under an hour; registered in docs/LONG_RUNNING.md if a part passes ten minutes."
+}

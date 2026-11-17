@@ -51,3 +51,19 @@ in the frozen design: the oracle, untouched held-out families, an inner-loop bar
    seeds fail per seed).
 5. **The flips wins**: `local` 800, `heavy` 3,200 and `block` 3,200 by the frozen tiers; check seed agreement and that CPU loses.
 6. **Prior work** (`track.py objects-gate research/MEET-TRANSFER-20261117-001/preregistration.md`) and words.
+
+## Final report as sent
+
+2026-11-17 09:25 UTC, in the project thread (tables as above, shortened for the owner):
+
+> **Result: your agent's memory now carries across meeting patterns it never trained on, and it beats a carefully tuned Novelty+
+> in flips on most of them.** The change was in what the agent reads, not in how it was trained. On the held-out local pattern it
+> takes 0.83× Novelty+'s flips at 3,200 and 0.66× at 800, against five runs per instance. The previous agent was 25× worse there.
+> It also wins clearly in flips on a heavy-tailed pattern it never saw (0.72×) and on a clustered one (0.61×). It still loses on
+> plain random patterns at 3,200 (1.6×) and costs 1.5 to 9× the computing per instance. The version trained only on random patterns
+> does just as well on local.
+>
+> **For your second stage:** the agent now meets the bar I set for an inner loop. It meets it on the held-out pattern for the
+> mixed-trained version, and on every held-out pattern for the version trained on random patterns only.
+>
+> **Corrections:** none. **Goals:** checkpoint added. **Assumptions:** unchanged. Referee pending.

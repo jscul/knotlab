@@ -1,6 +1,8 @@
 """Shared-runner job for EARN-BUDGET-20261117-001A, one stage per launch (--param stage=...).
 
   retune   R1: NOV (48 settings) and PS (10) on 8 tuning instances per cell, 3 runs each
+  retune_tune  R1t: R1's cases for the three tuning cells only, run ahead so that policy tuning can start (deterministic:
+           the same results as R1's for those cells)
   policy   P1: on rand 2.1, block 2.5 and local w10 at n = 800, 8 instances x 3 runs each: the 90 earned-budget settings
            (E, Erb), the 15 fixed batched settings (Gb), SLOW-LOOP's 48 fixed settings (Gm) and its 8 static settings (ST),
            with NOV from the same initial states ("base")
@@ -81,8 +83,8 @@ def _load(key):
 
 def cases():
     st = P["stage"]
-    if st == "retune":
-        for name, *_ in CELLS + TUNE_CELLS:
+    if st in ("retune", "retune_tune"):
+        for name, *_ in (CELLS + TUNE_CELLS if st == "retune" else TUNE_CELLS):
             for i in range(8):
                 for j, prm in enumerate(NOV_GRID):
                     yield f"retune|{name}|NOV|{j}|{i}", {"cell": name, "algo": "novelty_plus", "prm": prm, "i": i}
@@ -96,7 +98,10 @@ def cases():
                     for k in range(len(grid)):
                         yield f"policy|{name}|{g}{k}|{i}", {"cell": name, "grid": g, "k": k, "i": i}
     elif st == "oracle":
+        only = set(P["cells"].split(",")) if P.get("cells") else None  # launched in parts as R1's cells finish
         for name, *_ in CELLS:
+            if only is not None and name not in only:
+                continue
             for i in range(8):
                 yield f"oracle|{name}|base|{i}", {"cell": name, "grid": "base", "k": -1, "i": i}
                 for k in range(len(FIXB_GRID)):
@@ -165,10 +170,10 @@ def run(case_id, payload):
     import slow_loop as S
     st = P["stage"]
     cell, i = payload["cell"], payload["i"]
-    if st in ("retune", "retune12800"):
+    if st in ("retune", "retune_tune", "retune12800"):
         seed = SEED_TUNE + i
         inst, _ = _inst(cell, seed)
-        out = [_slim(S.run_fast(inst, payload["algo"], tuple(payload["prm"]), S.run_seed("retune", cell, seed, r),
+        out = [_slim(S.run_fast(inst, payload["algo"], tuple(payload["prm"]), S.run_seed("retune", cell, seed, r),  # R1t too
                                 TUNE_CAP)) for r in range(3)]
         return {"cell": cell, "algo": payload["algo"], "prm": payload["prm"], "seed": seed, "runs": out}
     if st in ("policy", "oracle"):

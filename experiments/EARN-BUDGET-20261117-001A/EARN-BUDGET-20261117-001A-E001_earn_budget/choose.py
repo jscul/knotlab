@@ -39,27 +39,37 @@ def score(run):
     return s
 
 
-def ok_records(d):
-    recs = load_results(d)
+def ok_records(d, partial=False):
+    recs = {}
+    for one in d.split(","):  # several runner directories, as when a stage ran in parts
+        recs.update(load_results(one))
     bad = [k for k, r in recs.items() if r.get("status") != "ok"]
-    if bad:
+    if bad and not partial:
         raise SystemExit(f"{len(bad)} cases not ok, e.g. {bad[:3]}")
-    return {k: r["result"] for k, r in recs.items()}
+    return {k: r["result"] for k, r in recs.items() if r.get("status") == "ok"}
 
 
-def retune(d, out):
-    res = ok_records(d)
+def retune(d, out, partial=False):
+    res = ok_records(d, partial)
     acc = defaultdict(list)
     for r in res.values():
         tag = "NOV" if r["algo"] == "novelty_plus" else "PS"
         for run in r["runs"]:
             acc[(r["cell"], tag, tuple(r["prm"]))].append(score(run))
     choice, table = {}, {}
+    cells = {r["cell"] for r in res.values()}
     for name, *_ in job.CELLS + job.TUNE_CELLS:
+        if name not in cells:
+            continue
         choice[name], table[name] = {}, {}
         for tag, grid in (("NOV", job.NOV_GRID), ("PS", job.PS_GRID)):
             rows = {prm: sum(v) / len(v) for (c, t, prm), v in acc.items() if c == name and t == tag}
-            assert len(rows) == len(grid) and all(len(acc[(name, tag, p)]) == 24 for p in rows), (name, tag)
+            complete = len(rows) == len(grid) and all(len(acc[(name, tag, p)]) == 24 for p in rows)
+            if partial and not complete:
+                choice.pop(name, None)
+                table.pop(name, None)
+                break
+            assert complete, (name, tag)
             best = min(rows, key=rows.get)
             choice[name][tag] = list(best)
             table[name][tag] = {str(list(p)): round(v, 4) for p, v in sorted(rows.items(), key=lambda kv: kv[1])}
@@ -153,5 +163,8 @@ def retune12800(d, out):
 
 
 if __name__ == "__main__":
-    {"retune": retune, "policy": policy, "oracle": oracle, "retune12800": retune12800}[sys.argv[1]](sys.argv[2],
-                                                                                                    sys.argv[3])
+    if sys.argv[1] == "retune-partial":  # the cells R1 has finished, so that the oracle can start on them
+        retune(sys.argv[2], sys.argv[3], partial=True)
+    else:
+        {"retune": retune, "policy": policy, "oracle": oracle, "retune12800": retune12800}[sys.argv[1]](sys.argv[2],
+                                                                                                        sys.argv[3])

@@ -77,6 +77,7 @@ typedef struct {
   int32_t *visits, *vlistk; /* attention counts this epoch, and the knots attended to, in order of first visit */
   int nvis;
   uint8_t *probed;
+  int sortlog;                       /* EARN-BUDGET charge v2: the guided order's sort charged k log k, not k */
   int8_t *val; int32_t *trail;       /* probe scratch */
   Rng rng, srng;
   int maxdeg;
@@ -159,6 +160,7 @@ void fl_get(void *h, uint8_t *x, int64_t *lastflip, uint64_t *rng, int64_t *t, i
 }
 
 int fl_nviol(void *h) { return ((H *)h)->nviol; }
+void fl_set_sortlog(void *h, int on) { ((H *)h)->sortlog = on; }
 
 static void flip(H *S, int v, int64_t *work) {
   int xv = S->x[v];
@@ -376,7 +378,7 @@ int sl_probe(void *h, int mode, int64_t budget, int64_t pb, double beta, int J, 
     for (int i = 0; i < S->nvis; i++) if (!S->probed[S->vlistk[i]]) order[nord++] = S->vlistk[i];
     g_vis = S->visits;
     qsort(order, (size_t)nord, sizeof(int32_t), cmp_vis);
-    work += S->nvis + nord;
+    work += S->nvis + (S->sortlog ? (int64_t)(nord * ceil(log2(nord + 1.0))) : nord);
   } else if (mode == 2) {
     nord = S->m;
   } else {

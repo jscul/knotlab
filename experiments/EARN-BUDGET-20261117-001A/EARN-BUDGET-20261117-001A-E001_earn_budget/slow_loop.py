@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import ctypes
 import hashlib
+import math
 import os
 import subprocess
 import tempfile
@@ -72,6 +73,7 @@ def lib():
         L.fl_free.argtypes = [ctypes.c_void_p]
         L.fl_get.argtypes = [ctypes.c_void_p, u8p, i64p, u64p, ctypes.POINTER(ctypes.c_int64), i32p, u8p]
         L.fl_nviol.argtypes = [ctypes.c_void_p]
+        L.fl_set_sortlog.argtypes = [ctypes.c_void_p, ctypes.c_int]
         L.fl_run.argtypes = [ctypes.c_void_p, ctypes.c_int, f64p, ctypes.c_int64, f64p]
         L.fl_run.restype = ctypes.c_int
         L.sl_probe.argtypes = [ctypes.c_void_p, ctypes.c_int, ctypes.c_int64, ctypes.c_int64, ctypes.c_double,
@@ -160,6 +162,8 @@ def planted_embed(n: int, seed: int, frac: float = 0.25, alpha_r: float = 2.1, a
     while hidden.min() == hidden.max():
         hidden = rng.integers(0, 2, n, dtype=np.int8)
     ne = int(round(frac * n))
+    while hidden[:ne].min() == hidden[:ne].max() or hidden[ne:].min() == hidden[ne:].max():
+        hidden = rng.integers(0, 2, n, dtype=np.int8)  # a constant part allows no knot (only at tiny n; SLOW-LOOP referee)
 
     def draw(need, kind):
         out = []
@@ -288,8 +292,16 @@ def reduce_pattern(knots0: np.ndarray, shadows: list, ties: Ties, new_ties: np.n
 DEFAULT_POLICY = {"e": 1.0, "rho": 0.3, "beta": 0.0, "J": 2, "pb": 4000, "backoff": True, "mode": 0}
 
 
+CHARGE = "v2"
+
+
+def _sortcost(k: int) -> int:
+    """Charge for sorting or set-merging k items: k ceil(log2(k + 1)) operations."""
+    return int(k * math.ceil(math.log2(k + 1))) if k > 0 else 0
+
+
 def run_slow(inst: Instance, algo: str, params, seed: int, cap: int, policy: dict, static: bool = False,
-             debug: bool = False, mutant: bool = False) -> dict:
+             debug: bool = False, mutant: bool = False, charge: str | None = None) -> dict:
     """The fast loop in epochs of e * n flips (n the current number of tie classes); after each epoch the slow loop
     spends at most rho times the epoch's fast work on probes (guided by where the fast loop dwelt, or random), and the
     pattern is rebuilt when it found a move. With backoff, an epoch whose probes found nothing halves the next epoch's
@@ -299,6 +311,9 @@ def run_slow(inst: Instance, algo: str, params, seed: int, cap: int, policy: dic
     most policy['passes'] passes; a pass that has probed policy['abort'] * m knots without a find stops (abort 0: never).
     Then the fast loop alone to the cap.
     mutant=True (gate G4 only): every tie is applied with the wrong parity.
+    charge "v2" (the default; EARN-BUDGET-20261117-001A, after SLOW-LOOP's referee): the rebuild's Python-side operations are
+    charged too: the dedup and the roots' unique, the probed flags' isin, the probed-key union, the majority vote, and the
+    guided order's sort, each sort or set merge of k items as k ceil(log2(k + 1)). "v1" is SLOW-LOOP's charge, which omits them.
     Earned budget (policy["earn"], EARN-BUDGET-20261117-001A): the slow budget starts at rho_min. After an epoch's slow pass
     and rebuild, q = (classes merged / classes before) / ((probe work + rebuild work) / the epoch's fast work), the share of
     the pattern removed per unit of relative slow cost. The next budget doubles (up to rho_max) when q >= theta and halves
@@ -330,6 +345,8 @@ def run_slow(inst: Instance, algo: str, params, seed: int, cap: int, policy: dic
     sl_out = np.zeros(6)
     fl_out = np.zeros(5)
 
+    v2 = (charge or CHARGE) == "v2"
+
     def build(new_ties):
         nonlocal work_rebuild
         roots, kv, ks, w = reduce_pattern(inst.knots, shadows, ties, new_ties)
@@ -338,12 +355,17 @@ def run_slow(inst: Instance, algo: str, params, seed: int, cap: int, policy: dic
         kvn = idx[kv].astype(np.int32)
         pr = np.isin(sig_keys(kv, ks, n0), probed_keys).astype(np.uint8) if len(probed_keys) else None
         work_rebuild += w + n0
+        if v2:
+            work_rebuild += _sortcost(len(inst.knots) + len(shadows)) + _sortcost(n0) + len(kv)
+            if len(probed_keys):
+                work_rebuild += _sortcost(len(kv) + len(probed_keys))
         return roots, kv, ks, kvn, pr
 
     # the unmutated pattern as given, so that until the first move the fast loop runs exactly as it runs alone
     roots, kv, ks, pr = np.arange(n0), inst.knots.copy(), np.zeros(inst.knots.shape, np.uint8), None
     kvn = kv
     h, w0 = _handle(len(roots), kvn, ks, xr[roots], lfr[roots], rngst, run_seed("slow", seed), t, pr)
+    L.fl_set_sortlog(h, int(v2))
     work_fast += w0
     earn = bool(policy.get("earn"))
     batch = (not static) and policy.get("rb", 0) > 0
@@ -424,7 +446,10 @@ def run_slow(inst: Instance, algo: str, params, seed: int, cap: int, policy: dic
         xr[roots] = xs
         lfr[roots] = lf
         if mcur:
-            probed_keys = np.union1d(probed_keys, sig_keys(kv[prb[:mcur] == 1], ks[prb[:mcur] == 1], n0))
+            newk = sig_keys(kv[prb[:mcur] == 1], ks[prb[:mcur] == 1], n0)
+            if v2:
+                work_rebuild += _sortcost(len(probed_keys) + len(newk)) + mcur
+            probed_keys = np.union1d(probed_keys, newk)
         if batch:
             new_ties = np.array(pend_ties, dtype=np.int32).reshape(-1, 3)
             pend_ties = []
@@ -446,7 +471,10 @@ def run_slow(inst: Instance, algo: str, params, seed: int, cap: int, policy: dic
         vote = np.bincount(ties.root, weights=imp, minlength=n0)
         size = np.bincount(ties.root, minlength=n0)
         xr = np.where(2 * vote > size, 1, np.where(2 * vote < size, 0, xo)).astype(np.uint8)
+        if v2:
+            work_rebuild += 4 * n0  # the current state, the vote, the class sizes, the new values
         h, w0 = _handle(len(roots), kvn, ks, xr[roots], lfr[roots], rngst, run_seed("slow", seed, rebuilds), t, pr)
+        L.fl_set_sortlog(h, int(v2))
         work_rebuild += w0
         contra |= ties.contradiction
         cpu_rebuild += time.thread_time() - c_rb

@@ -16,7 +16,10 @@ any failure.
   G7 at n = 800 and 3200, every tie and shadow knot found holds in the planted state, and every reported solution
      checks (a run may stop unsolved at the cap: very many shadow knots slow the search, which is a finding, not a fault);
   G8 the earned budget rises on a pattern full of ties and stays at its floor on one with none;
-  G9 this driver reproduces SLOW-LOOP-20261117-001A's driver run for run (flips, work, moves) for G, GO and ST.
+  G9 this driver reproduces SLOW-LOOP-20261117-001A's driver run for run (flips, work, moves) for G, GO and ST, under
+     SLOW-LOOP's charge (v1);
+  G10 the corrected charge (v2, after SLOW-LOOP's referee) only adds the rebuild's sorting where no budget is counted in it
+      (static probing; a random-target run before its first rebuild).
 """
 from __future__ import annotations
 
@@ -245,20 +248,37 @@ def main() -> int:
     old = load(SL / "slow_loop.py", "sl_driver")
     pols = json.loads((ROOT / "artifacts/SLOW-LOOP-20261117-001A/SLOW-LOOP-20261117-001A-E001_slow_loop/policies.json")
                       .read_text())
-    g9 = 0
+    g9 = g10 = 0
     for i in range(12):
         fam, alpha, w = [("local", 4.0, 10), ("block", 2.5, 20), ("rand", 2.1, 10)][i % 3]
         inst = S.planted(fam, 800, alpha, 996_000 + i, w=w)
         inst_o = old.planted(fam, 800, alpha, 996_000 + i, w=w)
         for name, static in (("G", False), ("GO", False), ("ST", True)):
-            a = S.run_slow(inst, "novelty_plus", (0.7, 0.05), seed=i, cap=10**7, policy=pols[name], static=static)
+            a = S.run_slow(inst, "novelty_plus", (0.7, 0.05), seed=i, cap=10**7, policy=pols[name], static=static,
+                           charge="v1")
+            if name == "ST":
+                # static probing has no slow budget, so the charge cannot change its run: v2 must only add the sorting
+                a2 = S.run_slow(inst, "novelty_plus", (0.7, 0.05), seed=i, cap=10**7, policy=pols[name], static=static)
+                if (a2["flips"], a2["ties"], a2["n_final"], a2["work_fast"], a2["work_slow"]) != \
+                        (a["flips"], a["ties"], a["n_final"], a["work_fast"], a["work_slow"]) or \
+                        (a["rebuilds"] and a2["work_rebuild"] <= a["work_rebuild"]):
+                    fails.append(f"G10 charge v2 changed a static run or added nothing: {fam} {i}")
+                g10 += 1
             b = old.run_slow(inst_o, "novelty_plus", (0.7, 0.05), seed=i, cap=10**7, policy=pols[name], static=static)
             ka = tuple(a[k] for k in ("flips", "work", "ties", "shadows", "n_final", "rebuilds"))
             kb = tuple(b[k] for k in ("flips", "work", "ties", "shadows", "n_final", "rebuilds"))
             if ka != kb:
                 fails.append(f"G9 {name} {fam} {i}: {ka} vs {kb}")
             g9 += 1
-    print(f"G9 {g9} run-for-run checks against SLOW-LOOP's driver")
+    print(f"G9 {g9} run-for-run checks against SLOW-LOOP's driver (charge v1); G10 {g10} static runs under charge v2")
+    # G10, budgeted arms: their slow budget is counted in charged work, so the corrected charge can change their runs (a
+    # costlier sort leaves fewer probes in a budget); with random targets and no rebuild yet nothing differs
+    inst = S.planted("rand", 800, 2.1, 997_000)
+    gb = {"e": 1.0, "rho": 0.3, "beta": 0.0, "J": 2, "pb": 4000, "backoff": False, "mode": 1, "rb": 0.03}
+    r1 = S.run_slow(inst, "novelty_plus", (0.7, 0.05), seed=1, cap=10**7, policy=gb, charge="v1")
+    r2 = S.run_slow(inst, "novelty_plus", (0.7, 0.05), seed=1, cap=10**7, policy=gb, charge="v2")
+    if r1["rebuilds"] == 0 and (r1["flips"], r1["work"]) != (r2["flips"], r2["work"]):
+        fails.append("G10 charge v2 changed a random-target run with no rebuild")
 
     print("FAILS:", len(fails))
     for f in fails[:40]:

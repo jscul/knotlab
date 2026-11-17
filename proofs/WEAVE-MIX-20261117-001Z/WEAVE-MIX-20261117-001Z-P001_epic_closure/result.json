@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "WEAVE-MIX-20261117-001Z-P001",
+ "kind": "proof",
+ "ticket": "WEAVE-MIX-20261117-001Z",
+ "proof": "WEAVE-MIX-20261117-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing WEAVE-MIX-20261117-001: ticket A (each NAE-class knot breaks one bond; states are perfect matchings with inconsistent bonds subdivided; 2 = 2u + i per cell; bipartite iff every count even) and ticket B (frozen census, 2 of 6 predictions held; the frozen classification broke on the twist around the cylinder; post hoc four candidates with odd counts look disordered). Inconclusive; A97 unchanged; referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/WEAVE-MIX-20261117-001B/WEAVE-MIX-20261117-001B-E001_mixes/contract.json": "Frozen",
+   "artifacts/WEAVE-MIX-20261117-001B/WEAVE-MIX-20261117-001B-E001_mixes/results.json": "run output",
+   "proofs/WEAVE-MIX-20261117-001A/WEAVE-MIX-20261117-001A-P001_broken_bonds/manifest.json": "Proved",
+   "proofs/WEAVE-MIX-20261117-001A/WEAVE-MIX-20261117-001A-P001_broken_bonds/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "closed-null"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

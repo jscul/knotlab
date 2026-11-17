@@ -1694,5 +1694,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-17 | Do speculative merges chosen from a fast search's own co-flip evidence, undone when the search stalls, cut the charged work of solving planted knot patterns where provable moves find nothing? (`SPEC-MERGE-20261117-001`) | — | [folder](research/SPEC-MERGE-20261117-001/) |
 | 2026-11-17 | Rules that read only the states: what they grow (`STATE-RULES-20261117-001`) | — | [folder](research/STATE-RULES-20261117-001/) |
 | 2026-11-17 | Which knot laws on the weave give a ruler from their counts (`WEAVE-LAWS-20261117-001`) | [closure](proofs/WEAVE-LAWS-20261117-001Z/WEAVE-LAWS-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-LAWS-20261117-001/) |
-| 2026-11-17 | Can a mixed arrangement of not-all-equal knots on the weave be disordered (`WEAVE-MIX-20261117-001`) | — | [folder](research/WEAVE-MIX-20261117-001/) |
+| 2026-11-17 | Can a mixed arrangement of not-all-equal knots on the weave be disordered (`WEAVE-MIX-20261117-001`) | [closure](proofs/WEAVE-MIX-20261117-001Z/WEAVE-MIX-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-MIX-20261117-001/) |
 

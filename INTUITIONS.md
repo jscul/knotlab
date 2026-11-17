@@ -89,6 +89,7 @@ PYTHONPATH=tools python3 -m knotlab demo
 - [Chapter 5. Depth](#chapter-5-depth)
   - [5.1 Proving that nothing is allowed](#51-proving-that-nothing-is-allowed)
   - [5.2 How deep a hole is](#52-how-deep-a-hole-is)
+  - [5.3 Forcing in rounds and phases](#53-forcing-in-rounds-and-phases)
 - [Chapter 6. Counting](#chapter-6-counting)
   - [6.1 Counting worlds](#61-counting-worlds)
   - [6.2 The worlds of not-all-equal knots](#62-the-worlds-of-not-all-equal-knots)
@@ -1828,13 +1829,33 @@ differ in every allowed state. If a chain of ties from the same upper bit
 continues one level at a time and the pattern still allows a state at every
 finite stage, that upper bit fixes a partner's value however many levels
 lie between them. Which of the census patterns with constant size keep
-such a tie as more levels are added? That is open.
+such a tie as more levels are added? The next subsection answers part of it.
+
+**Blocks and descents (proved for 54 of 100).** A later study took the
+census's constant cases to every depth
+([DIRECT-REACH-20261115-001](research/DIRECT-REACH-20261115-001/direct_reach.md),
+refereed and confirmed with fixes). A placement rule's maps send each address
+to others at its level, and the addresses one address is sent to form its
+orbit. Every knot placed at an orbit lies in its **block**: the orbit together
+with its children one level down. Blocks meet only a block and the one above
+it, so the pattern can be solved block by block, and when orbits stay small
+there are finitely many kinds of block, which a finite computation decides at
+every depth. When orbits grow, a **descent** can still carry the top down: a
+few addresses followed down one letter at a time, the letters eventually
+repeating. A **finite-reader state** gives every address its value by a finite
+machine that reads the address letter by letter, and so gives the pattern a
+state at every depth. With these two arguments, 54 of the 100 descriptions
+whose least size stayed constant over four levels are proved to keep it at
+every depth and every number of levels apart: 15 at size two, a tie, and 39 at
+size at most three. Read to depth 9, one of the 100 leaves its constant at the
+fifth level, so constant over four levels is not constant.
 
 ## Chapter 5. Depth
 
 A knot pattern can allow nothing while every small window of it looks
 consistent. This chapter asks how much of the pattern a proof has to hold at
-once to see that nothing is allowed.
+once to see that nothing is allowed, and then how many stages forcing needs
+when it works on as much as it can at once.
 
 ### 5.1 Proving that nothing is allowed
 
@@ -1910,6 +1931,118 @@ complexity" in [RESULTS.md](RESULTS.md).
 ```bash
 PYTHONPATH=tools python3 -m knotlab depth
 ```
+
+### 5.3 Forcing in rounds and phases
+
+**The question.** Lesson 4.2 showed that a system of requirements has one
+least world, the forced world, which propagation finds in linear time. The
+owner asked whether P versus NP is a question about what can be worked on in
+parallel. It is not: that question is the literature's P versus NC. But it
+raises one of its own. Must forcing in a pattern of atoms go one step after
+another, or can most of it be done at once? This lesson gives the two ways the
+record counts the stages, says where the knot picture puts the order that
+cannot be avoided, and reports what was measured
+([SEQUENTIAL-WALL-20261116-001](research/SEQUENTIAL-WALL-20261116-001/sequential_wall.md),
+refereed and confirmed with fixes).
+
+**Atom patterns with held distinctions.** Take a pattern of atoms A ∧ B → c,
+"A and B together demand c" (lesson 1.5), and let the outside hold some
+distinctions at 1. A distinction is forced when it is 1 in every allowed
+state, and the forced distinctions make the forced world of lesson 4.2. In the
+literature these are Horn clauses with two premises and positive facts, and
+the forced set is the least model.
+
+**Rounds.** One **round** forces, all at once, everything demanded by an atom
+whose two demanders are already forced. A chain of six atoms, each with one
+held helper, takes six rounds. The count of rounds is the height of the
+shallowest derivation, and the literature calls the rounds synchronous unit
+propagation.
+
+**Phases.** Once one demander of an atom is forced, what is left of the atom is
+a two-place rule, from its other demander to what it demands, and a two-place
+rule is no knot (lesson 3.2). Two-place rules can all be followed at once, by
+reachability. One **phase** does exactly that: it reads every atom with a
+forced demander as its two-place rule and forces everything reachable along
+those rules. The six-atom chain takes one phase. A distinction's phase is the
+first one that forces it, and it equals the least Strahler number of its
+derivation trees (proved in the record; the classical statement is Esparza,
+Kiefer and Luttenberger's of 2010, in which the phases are Newton iterates).
+
+**Open uses.** An atom whose two demanders are first forced in the same phase
+has to wait for the next phase: it is used as a knot, with both its loops still
+open. This is an **open use**, and only open uses make the forcing law take
+another phase. Two open uses of equal standing, nested, make the next
+standing, which is how a Strahler number grows. So the knot picture names
+where the order comes from: a knot used as a knot, with both its loops still
+open. As theory this restates the classical Strahler and Newton statements,
+and it adds no algorithm.
+
+**Where the wall can bite (proved).** Forcing in atom patterns is P-complete,
+as monotone circuit value is (classical: Goldschlager 1977). How the atoms
+overlap decides when that matters:
+
+- a distinction is **reused** when it demands in two or more atoms, and
+  **demanded several ways** when two or more atoms demand it;
+- without reuse a pattern needs at most log₂ of its held count phases, and
+  more phases than that need a **rejoining**, an atom with one distinction
+  below both of its demanders in a derivation;
+- the wall needs reuse unless P = NC, and several-way demand unless P = NL.
+
+Being a knot does not decide it. Of the 34 three-place knots, 2 make laws in
+AC⁰, 2 make parity laws, 14 make sequential (P-complete) laws and 16 make
+NP-complete ones (the known classification, applied).
+
+**What was measured (computed, refereed).**
+
+- On random atom patterns at the jump, where the forced set leaps from about a
+  fifth to more than nine tenths of the distinctions, rounds grow like n^0.30
+  to n^0.36 (312 rounds at n = 2^20), while phases grow by about 0.57 per
+  doubling of n (12 phases at 2^20). The slow cascade is almost all two-place
+  work.
+- On random monotone circuits with no layers, at most 4 phases were needed, up
+  to 65,536 gates.
+- On layered random circuits, where every gate reads only the layer below,
+  the phase count follows a front at about √d for d layers, and the mean
+  standing is about (2/3)√d
+  ([LAYER-RANK-20261117-001](research/LAYER-RANK-20261117-001/layer_rank.md),
+  narrowed by its referee). Order built into the meeting pattern keeps the
+  phase count growing.
+
+**Carrying distinctions (proved, refereed).** The owner pictured working on
+several strands at once. Made exact
+([CARRY-STRANDS-20261116-001](research/CARRY-STRANDS-20261116-001/carry_strands.md)),
+a law for forcing may carry up to w open distinctions in a phase, each a
+**carried distinction**, and take an open use while carrying both demanders.
+A step either spends what it uses or keeps it to use again (**keep and
+spend**). Spending only, the phases fall to exactly ⌈σ/w⌉ for Strahler number
+σ, the literature's register allocation, and the rounds never fall below σ.
+Keeping, the law reaches in one phase what w black pebbles with sliding reach,
+the literature's pebble game, and that pays exactly where strands rejoin: a
+ladder of any length takes one phase with two carried distinctions. The
+program's random families have little rejoining: in the median sample at the
+jump, keeping saves no phase for any distinction forced before the narrowest
+phase (9 of 105 samples save some, at most 4.1% of those distinctions). As
+theory the strand picture adds nothing to the register and pebbling
+statements; what is new is measured.
+
+**On a weave (proved, with a withdrawn reading).** Each phase moves the forced
+set at most one step apart (lesson 4.7), because a two-place rule exists only
+inside a knot that already has a forced member. So the phases are at least the
+steps apart from what is held (proved; the classical locality bound of Linial
+1992). On a six-regular weave, a law that grows a region from one place needs
+one phase per step of the region's growth: 256 phases on a weave of side 384
+([SPACE-ORDER-20261117-001](research/SPACE-ORDER-20261117-001/space_order.md)).
+But the phases follow the weave's local overlap structure, every co-knotted
+pair in two knots, and not the steps apart: rewiring 0.2% of the knots cuts the
+largest steps apart from 256 to 52 and leaves 252 phases. The study's first
+reading, "space forces order, and only through steps apart", was withdrawn by
+its referee; steps apart is only a lower bound.
+
+**Reading.** The order that forcing cannot avoid sits where a knot is used as a
+knot, with both its loops still open; every two-place remainder can be worked
+at once. That restates classical results in the program's words. What the
+record adds is measured: how far rounds and phases separate on random
+patterns, and how little rejoining the program's random families contain.
 
 ## Chapter 6. Counting
 
@@ -2771,23 +2904,26 @@ that earlier records used in two senses.
   hole in it (lesson 5.2).
 - **Round.** One step of propagation in an atom pattern whose held distinctions the outside sets to 1: every atom
   whose two demanders are forced forces the distinction it demands (the literature's synchronous unit propagation).
-  The count of rounds is the height of the shallowest derivation (`SEQUENTIAL-WALL-20261116-001`, 16 November 2026).
-- **Phase.** One stage of the forcing law: every atom with a forced demander is read as the two-place rule from its
-  other demander to what it demands, and everything reachable along those rules is forced at once. A distinction's
+  The count of rounds is the height of the shallowest derivation (lesson 5.3), as `SEQUENTIAL-WALL-20261116-001`
+  found on 16 November 2026.
+- **Phase.** One stage of the forcing law (lesson 5.3): every atom with a forced demander is read as the two-place rule
+  from its other demander to what it demands, and everything reachable along those rules is forced at once. A distinction's
   phase is the first that forces it, and it equals the least Strahler number of its derivation trees (the
   literature's Horton–Strahler number, or tree dimension; the stages are Newton iterates). The dual law's phases
   spread unforcedness the same way, on patterns without cycles. Never "phase transition": the sudden leap of the
   forced set is the jump. The intuition, in the owner's word: a phase untangles everything that comes apart once one
   distinction of a knot is settled, since what is left of the knot is a two-place rule, which is no knot.
-- **Open use.** An atom whose two demanders are first forced in the same phase: it is used as a knot, both its loops
-  still open, and only open uses make the forcing law take another phase.
-- **Reused; demanded several ways; rejoining.** A distinction is reused when it demands in two or more atoms, and
+- **Open use.** An atom whose two demanders are first forced in the same phase (lesson 5.3): it is used as a knot, both
+  its loops still open, and only open uses make the forcing law take another phase.
+- **Reused; demanded several ways; rejoining.** In an atom pattern (lesson 5.3), a distinction is reused when it
+  demands in two or more atoms, and
   demanded several ways when two or more atoms demand it (not the choice rule above, though in the forced set it
   offers alternative derivations). A rejoining is an atom with one distinction below both of its demanders in a
   derivation tree. Without reuse an atom pattern needs at most log₂ of its held count phases, more phases than that
   need a rejoining, and the sequential wall needs reuse unless P = NC and several-way demand unless P = NL
   (`SEQUENTIAL-WALL-20261116-001`).
-- **Carried distinction; keep and spend.** A law for forcing may carry up to w open distinctions in a phase and take
+- **Carried distinction; keep and spend.** A law for forcing (lesson 5.3) may carry up to w open distinctions in a
+  phase and take
   an open use while carrying both demanders. A step spends what it uses, or keeps it to use again; the spend-only law
   needs ⌈σ/w⌉ phases for Strahler number σ (the literature's register allocation), and the keep law reaches in one
   phase what w black pebbles with sliding reach (the literature's pebble game). The intuition, in the owner's words:
@@ -2861,7 +2997,7 @@ that earlier records used in two senses.
   on the meeting pattern (lesson 7.3). A ball, unqualified, is measured by
   bond distance.
 - **Block; descent; finite-reader state.** In patterns placed by maps on
-  addresses, the addresses one address is sent to by the maps form its
+  addresses (lesson 4.8), the addresses one address is sent to by the maps form its
   orbit (the literature's word, as for a state under shifts; see Harmony). A **block**
   is a set of addresses at one level with their children one level down,
   holding the knots placed at that level whose members all lie in it; the

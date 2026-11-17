@@ -2115,18 +2115,20 @@ So holes come in two kinds:
      ([decision note](../research/EARN-BUDGET-20261117-001/decision.md)).
 
    **2026-11-17: the search's own history knows something about the structure, but not enough to change it without proof**
-   (`SPEC-MERGE-20261117-001`; referee pending).
+   (`SPEC-MERGE-20261117-001`; refereed, confirmed with fixes).
    - **The question.** Can the slow loop change the pattern on the search's evidence alone, without proving anything? It watched
      which pairs of distinctions the search kept flipping together, and when the search was stuck it merged them, undoing the
      merge if the search did not then improve. These changes can remove every solution, so each answer was checked on the
      original knots.
    - **Computed.**
      - **The evidence is real.** Pairs the search moves together agree with the hidden solution about 70% of the time on random
-       patterns, against about 58% for random pairs, and on a local pattern they are provably tied two and a half times as often.
-     - **The merges never paid.** On random patterns about 30% of them were wrong, and the search paid for every one. On the local
-       pattern the proof-based loop was far better.
-     - **The undo was blind.** Watching whether the search improved after a merge threw away most correct merges and kept some
-       wrong ones.
+       patterns, about 0.1 more often than random pairs, and on a local pattern they are provably tied two and a half times as
+       often.
+     - **The merges never paid.** On random patterns most arms almost never merged, so what they paid for was the watching. The
+       one arm that merged often was wrong about 30% of the time, and it did no better than merging random pairs the search was
+       moving. On the local pattern the proof-based loop was far better.
+     - **The undo was blind.** Watching whether the search improved after a merge kept wrong rounds as often as right ones. The
+       check that did catch most wrong rounds was the one that looks for a contradiction among the merges.
    - **Reading.** The fast loop's history is the first signal in this line that points at structure, and it is worth keeping, but
      as a guide for what to prove, not as a licence to change the pattern. A mutation of the knot pattern needs a check of its own;
      the search's progress over a few steps is not one.

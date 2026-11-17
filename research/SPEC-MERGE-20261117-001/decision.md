@@ -1,25 +1,30 @@
 # Decision: SPEC-MERGE-20261117-001
 
-2026-11-17 · goals G15, G16 · takes sub-goal B191 (direction A gated by D, the coordinator's go-ahead) · computed, referee pending
-· result note [spec_merge.md](spec_merge.md) · pre-registration [preregistration.md](preregistration.md) (frozen `8147c8202`)
+2026-11-17 · goals G15, G16 · takes sub-goal B191 (direction A gated by D, the coordinator's go-ahead) · computed, refereed
+(confirmed with fixes, no Block; [report](referee-R1/report.md), folded in 2026-11-17) · result note [spec_merge.md](spec_merge.md)
+· pre-registration [preregistration.md](preregistration.md) (frozen `8147c8202`)
 
 **Headline.** Speculative merges, chosen from the fast search's own co-flip evidence, made without proof when it is stuck and
 undone when it does not then improve, never paid.
 - **The evidence is real.** Pairs the search keeps moving together agree with the planted relative values 0.66 to 0.75 of the
   time on random patterns, against 0.55 to 0.63 for random pairs. On the local pattern they are provably tied 2.5 times as often.
-  This is the first signal from the fast loop's history that predicts structure.
-- **But it is too often wrong.** On random patterns, at a precision of about 0.7, unproved merges cost 1.17 to 2.26 times
-  Novelty+.
-- **The undo is blind.** On the local pattern it threw away 85% of wholly correct rounds and kept 9% of wrong ones.
+  This is the first signal in this program from the fast loop's history that predicts structure (backbone-guided local search,
+  Zhang 2004, is the literature's signal of this kind), about 0.1 more often than random co-knotted pairs.
+- **But it is too often wrong** (corrected after the referee). On random patterns the tuned and default arms almost never merged
+  (3 to 6% of runs), so their losses (1.17 to 1.34) are the cost of watching. AE, the one arm that merged in most runs, at
+  precision 0.70, cost 2.26 (a bound; 2.19 against its own fast loop), and was no better than merging random active pairs.
+- **The undo is blind.** On the local pattern it threw away 85% of wholly correct rounds. The contradiction check undid 61% of
+  AE's wrong rounds at once; the stall test itself kept the wrong rounds it judged at least as often as the right ones (24.0%
+  against 17.7%; corrected after the referee).
 - **No speculative arm won anywhere.** On the local pattern the proof-based eager loop was 9 to 20 times better than any of them.
 - **By the frozen rule this is reading 5: no win anywhere.** No publication-hold question arose.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: speculative merges on co-flip evidence with undo on stalls, Novelty+ as the fast loop | **Status:** Failed (reading 5: no win anywhere) | Gate D passed on both families, but every speculative arm lost on every random cell (1.17–4.40) and none won on `local` w10 (best 1.41); the undo does not detect wrong merges |
-| Local direction: changes to the pattern that are not proofs | Retire in this form; keep the evidence | Unproved merges need precision near 1, which the evidence reaches only where proofs already work; the co-flip signal itself is worth keeping as a guide for what to prove |
+| Local direction: changes to the pattern that are not proofs | Retire in this form; keep the evidence | Rounds of 16 to 320 unproved merges need precision near 1. On `rand` 3.0 the evidence reached 0.98 where proofs found nothing, but rounds of 320 were still wrong and the search was rarely stuck, so small high-precision rounds there are untried (corrected after the referee). The co-flip signal itself is worth keeping as a guide for what to prove |
 | Broader exploration: speculative structure changes for local search | Known alternatives | Multilevel refinement, backbone-guided search and survey-propagation decimation; none needed here to explain the result, and none was beaten |
-| G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Capability gained; obstruction learned | The fast loop's own history carries structural information (first such signal); acting on it without proof fails because the remaining error rate is fatal and progress-based undo cannot see it |
+| G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Capability gained; obstruction learned | The fast loop's own history carries structural information (the first such signal in this program); acting on it without proof failed here, because the remaining error rate was fatal at the round sizes tried and progress-based undo cannot see it |
 
 **Next step:** Research directions — selected: #1 (awaiting go-ahead; the coordinator is taking stock with John)
 
@@ -41,7 +46,11 @@ Ratings.
 - **#2** keeps the one positive finding of this study, but it is scheduling again.
 - **#3** and **#4** are weaker.
 
-**Corrections:** none.
+**Corrections:** none at the close.
+- **Folded in after the referee (2026-11-17), all logged in `docs/CORRECTIONS.md`:**
+  - three Narrowings: the random-cell losses attributed to watching, with AE no better than its control; the precision claim
+    scoped to the round sizes tried; "the first signal" scoped to this program, with gate D's control named;
+  - two Not a block: the undo split by check, and three small figures.
 **Goals:** checkpoint row added (G15, G16; capability gained and obstruction learned); G15's Stands on and Open updated; no goal
 changed.
 **Assumptions:** added A93 (a speculative change is judged by whether the search then gets below its pre-change best), overturned
@@ -49,7 +58,9 @@ by this study's round log. A90's history notes that changes which do not keep th
 **Basket:** as before; the learning line's other items belong to the paused point-learner line.
 **Advisor:** Fable 5.2 reviewed the draft design and said "freeze with changes", all taken ([advisor_review.md](advisor_review.md)).
 It was not used after the results.
-**Referee:** pending; hand-off below.
+**Referee:** R1 confirmed with fixes, no Block ([report](referee-R1/report.md)). Its fixes are folded in above, in the note,
+in A93 and in the intuition entry. The hand-off is kept below. For direction #3, the contradiction check, the loop's one check of
+its own, did most of the filtering.
 
 ## Referee hand-off
 
@@ -92,3 +103,8 @@ It was not used after the results.
 >
 > **Corrections:** none. **Goals:** checkpoint added. **Assumptions:** A93 added and overturned (judging a merge by whether the
 > search then improves). Referee pending.
+
+*After the referee (2026-11-17), the report's "about 30% of the merges are wrong" applies to AE, the one arm that merged in most
+random runs; the other arms' random-cell losses are the cost of watching. "Kept 9% of wrong ones" should read: the contradiction
+check undid 61% of the wrong rounds at once, and the stall test kept wrong rounds at least as often as right ones (24% against
+18%).*

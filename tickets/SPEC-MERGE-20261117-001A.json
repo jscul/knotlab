@@ -16,7 +16,7 @@
   },
   "parent": "SPEC-MERGE-20261117-001",
   "schema_version": 1,
-  "status": "Reading 5 by the frozen rule (no win anywhere): gate D passed on both families (co-flip pairs agree with the planted relative values 0.66-0.75 against 0.55-0.63 on rand 2.1; provably tied 2.5x as often on local w10), but every speculative arm lost on every random cell (A 1.17 [1.13, 1.33] on the primary, AE 2.26, 1.21-1.85 at 12800, 2.25-4.40 on rand 3.0) and none won on local w10 (best Aloc 1.41; the proof-based Gpr 0.15); merge precision about 0.7 on rand; the undo rule undid 85% of correct rounds and kept 9% of wrong ones (A93 overturned). Computed, referee pending.",
+  "status": "Reading 5 by the frozen rule (no win anywhere): gate D passed on both families (co-flip pairs agree with the planted relative values 0.66-0.75 against 0.55-0.63 for uniform co-knotted pairs on rand 2.1, about 0.1 more often; provably tied 2.5x as often on local w10), but every speculative arm lost on every random cell (A 1.17 [1.13, 1.33] on the primary, the cost of watching since A, A0 and Aloc merged in 3-6% of random runs; AE 2.26, no better than its random control; 1.21-1.85 at 12800, 2.25-4.40 on rand 3.0) and none won on local w10 (best Aloc 1.41; the proof-based Gpr 0.15); the undo rule undid 85% of correct rounds, and its stall test kept wrong rounds at least as often as right ones while the contradiction check undid 61-78% of wrong rounds (A93 overturned). Computed; refereed R1, confirmed with fixes, no Block (folded in 2026-11-17).",
   "status_class": "refuted",
   "stop_rule": "",
   "title": "Co-flip evidence as a guide (gate D) and speculative merges with un-merge (A) between epochs of Novelty+"

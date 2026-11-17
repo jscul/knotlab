@@ -2397,9 +2397,18 @@ evidence: results and their status come from the records each entry links.
   local search on the merged knots) and no undo.
 - **Rests on it.** The speculative arms of `SPEC-MERGE-20261117-001`.
 - **Challenge.** It was challenged in the same study by logging every round against the planted state. On `local` w10 the rule
-  undid 85% of the rounds whose merges were all right and kept 9% of those with a wrong merge (AE). On `rand` 2.1, it kept 85
-  wrong rounds and 10% of runs stalled. The search's progress over a few epochs is no test of a merge. The lesson: a mutation
-  needs a check of its own, not the search's short-term progress.
+  undid 85% of the rounds whose merges were all right (AE). Two checks act before a round is kept:
+  - **The contradiction check** undoes a round whose merges contradict each other or the knots. It undid 61% of AE's wrong
+    rounds on `local` w10 and 78% on `rand` 2.1 at once.
+  - **The stall test** (this assumption) kept the wrong rounds it judged at least as often as the right ones: AE 24.0% against
+    17.7%, A0 20.3% against 11.9%, Aloc 26.1% against 19.7%, A 14.0% against 13.5% (the referee's rerun with the contradiction
+    flag recorded).
+
+  On `rand` 2.1, 10% of AE's runs stalled. The search's progress over a few epochs is no test of a merge. The lesson: a mutation
+  needs a check of its own, not the search's short-term progress. The loop's one check of its own, the contradiction check, did
+  the useful filtering.
 - **History.**
+  - 2026-11-17 · The overturn made firmer by the referee of `SPEC-MERGE-20261117-001`. "Kept 9% of the wrong rounds" had counted
+    the contradiction check's undos as the stall test's. The stall test alone was no better than blind.
   - 2026-11-17 · Overturned by `SPEC-MERGE-20261117-001`'s round log, in the study that adopted it.
   - 2026-11-17 · Adopted by `SPEC-MERGE-20261117-001`.

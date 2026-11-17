@@ -416,6 +416,21 @@ arrangement, not the states, says where the second order starts (the referee's
 Block). A base of knots alone holds the grid's own two orders and grows them at
 fixed costs on that arrangement, reaching far only to start a line
 ([decision note](../research/GRID-GROW-20261117-001/grid_grow.md)).
+What grows when nothing is given, and a rule reads only the states
+(`STATE-RULES-20261117-001`, proof and frozen computation, referee pending)?
+The cheapest way to add one knot keeps whatever the start had: a line stays a
+line, a square stays two orders (proved). With three knots per step a new
+distinction can join without adding a single state, and from one knot the only
+such step is the square: two orders, chosen by the states with no coin. From a
+longer line there are as many such steps as triples of its distinctions, each a
+second order, so there the coin chooses where it starts. And the cheapest growth
+does not stop at two: it fills the cube of three orders at eight distinctions
+and of four at sixteen, one more order each time the count doubles. Uniform
+choice makes many orders, and a rule that also reads which knots meet changes
+the odds along the way (two orders at six distinctions two times in three rather
+than one in two) but not where it ends. So two orders are logic's cheapest
+continuation of one knot, but none of these laws stops there
+([decision note](../research/STATE-RULES-20261117-001/state_rules.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

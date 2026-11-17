@@ -153,6 +153,7 @@ evidence: results and their status come from the records each entry links.
 | [A96](#a96--a-role-preserving-shuffle-of-a-weave-removes-its-steps-apart-and-nothing-else-that-matters) | A role-preserving shuffle of a weave removes its steps apart and nothing else that matters | scope | Overturned |
 | [A97](#a97--distance-is-the-only-form-of-information) | Distance is the only form of information | interpretation | Under challenge |
 | [A98](#a98--the-owners-no-skipping-is-read-as-betweenness-of-a-pairwise-count-with-flips-counted) | The owner's "no skipping" is read as betweenness of a pairwise count, with flips counted | reading | Assumed |
+| [A99](#a99--states-only-growth-is-judged-on-conservative-betweenness-extensions-with-up-to-three-knots-per-step) | States-only growth is judged on conservative betweenness extensions with up to three knots per step | scope | Assumed |
 
 ## Entries
 
@@ -2592,7 +2593,14 @@ evidence: results and their status come from the records each entry links.
   states admit a fill at every inner distinction, so the states do not say where the second order starts (they give only where a
   new line starts). The two orders are the arrangement's own, read back as its halfspaces, and the base is nearly frozen
   (2(r + c) − 2 states for r·c distinctions).
+  `STATE-RULES-20261117-001` ([decision note](../research/STATE-RULES-20261117-001/state_rules.md); referee pending) then let
+  uniform rules that read only the states (and, in a second arm, which knots meet) choose every step, under A99's move set. The
+  cheapest one-knot steps keep the start's number of orders (proved); the cheapest three-knot steps make two orders at once from
+  one knot, chosen by the states alone, and then grow the cube of three orders at eight distinctions and of four at sixteen; uniform
+  choice gives many. Two orders appear as a stage and are kept by none of these laws, with or without reading the knots.
 - **History.**
+  - 2026-11-17 · `STATE-RULES-20261117-001`: no uniform states-only or knot-local law tried keeps two orders (A99's move set);
+    status unchanged.
   - 2026-11-17 · The mixed weave case scoped after `WEAVE-MIX-R1` (Narrowing): one candidate pair, not four; status unchanged.
   - 2026-11-17 · The referee's 2 × 2 law withdrawn from the weave text (the referee's erratum to `WEAVE-LAWS-R1`); status unchanged.
   - 2026-11-17 · The mixed weave case left open by `WEAVE-MIX-20261117-001` (inconclusive; post hoc candidates named); status
@@ -2678,3 +2686,26 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-17 · Challenge "levels from a start" run by `DISTANCE-DIM-20261117-001`; status unchanged.
   - 2026-11-17 · Challenge partly run by the referee `DISTANCE-ORDER-R1` (the order-only reading above); status unchanged.
   - 2026-11-17 · Added by `DISTANCE-ORDER-20261117-001`.
+
+### A99 · States-only growth is judged on conservative betweenness extensions with up to three knots per step
+
+**Assumed** · 2026-11-17 · scope
+
+- **Statement.** In `STATE-RULES-20261117-001`, and in `GRID-GROW-20261117-001` before it, a growth step adds one distinction with
+  one to three betweenness knots, each on that distinction and two old ones. Every old state must still extend, and the new
+  distinction must be constrained and not a copy of an old one. A rule weighs these steps by what it reads (the state count, or
+  also which knots meet), and the number of orders is read as the least number of lines whose product holds the distinctions.
+- **Why.** Taken by default, on the advisor's advice. Betweenness knots keep both constant states, so the states read as a split
+  system. Three knots is the fewest that allow a fill, so a second order can start in one step (the owner's item that the moves must
+  include the event counted). Keeping every old state makes a step an extension of the base, not a rewrite of it.
+- **Rests on it.** That study's obstruction: no uniform law tried makes two orders and keeps them. The one-knot rule keeps the
+  start's number of orders; the cheapest three-knot rule grows cubes.
+- **Challenge.** Widen the move set and rerun the same weightings:
+  - all 34 three-place knots, or four-place ones (the parity of a filled cell is one four-place knot);
+  - more knots per step;
+  - steps allowed to remove old states;
+  - a cost on knots per distinction.
+
+  A law in the wider set that stops at two orders would narrow the obstruction.
+- **History.**
+  - 2026-11-17 · Added by `STATE-RULES-20261117-001`.

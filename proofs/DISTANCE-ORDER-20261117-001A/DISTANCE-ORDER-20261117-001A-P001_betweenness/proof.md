@@ -129,6 +129,10 @@ weight.
 So the correlation 1 − 2d/N of two distinctions s steps apart is (−1/3)^s, by induction. When x is new the new piece is independent
 of the old, and the correlation is 0: rate 1/2, no row. Then τ = −log₃ |(−1/3)^s| = s. ∎
 
+*Added at the close, 17 November 2026.* Among such bases, steps apart also determines the knots, and so the base. Three
+distinctions that pairwise share a knot lie in one knot. Otherwise, of the knots that hold the three pairs, the last one listed would
+share two distinctions with the knots before it. So the knots are the triples whose pairs are all one step apart. ∎
+
 ## What it means
 
 - **The census, explained.** The referee of `DISTANCE-INFO-20261117-001` found that the disagreement table determined every

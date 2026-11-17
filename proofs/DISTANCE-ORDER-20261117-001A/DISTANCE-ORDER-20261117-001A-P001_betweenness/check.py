@@ -278,5 +278,9 @@ if __name__ == "__main__":
     out = run()
     print(json.dumps(out, indent=1, default=str))
     if "--write" in sys.argv:
-        (HERE / "result.json").write_text(json.dumps({"checks": out, "passed": out["passed"]}, indent=1, default=str) + "\n")
+        manifest = json.loads((HERE / "manifest.json").read_text())
+        (HERE / "result.json").write_text(json.dumps({
+            "schema_version": 3, "artifact_id": manifest["artifact_id"], "kind": "proof", "ticket": manifest["ticket"],
+            "proof": manifest["proof"], "status": "passed" if out["passed"] else "failed", "checks": out,
+            "failures": [] if out["passed"] else ["a statement check failed"]}, indent=1, default=str) + "\n")
     sys.exit(0 if out["passed"] else 1)

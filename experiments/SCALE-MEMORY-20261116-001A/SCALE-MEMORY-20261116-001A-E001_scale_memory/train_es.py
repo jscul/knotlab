@@ -122,6 +122,11 @@ def _eval(task):
     return out, time.process_time() - t0
 
 
+def _default_sigterm():
+    import signal
+    signal.signal(signal.SIGTERM, signal.SIG_DFL)
+
+
 def centered_ranks(x: np.ndarray) -> np.ndarray:
     r = np.empty(len(x))
     r[np.argsort(x)] = np.arange(len(x))
@@ -156,7 +161,9 @@ def train(arm: str, seed: int, out: Path, pairs: int, sigma: float, lr: float, w
                 acct["cpu_engine"] += x[3]
                 acct["work"] += x[4]
 
-    with Pool(workers) as pool:
+    # the shared runner's workers ignore SIGTERM, which pool workers inherit; restore it so that leaving the pool
+    # cannot hang (it did once in WHERE-NEXT, L1 seed 0, after the training had finished)
+    with Pool(workers, initializer=_default_sigterm) as pool:
         def validate(tag):
             nonlocal best
             res = pool.map(_eval, [(theta, flags, "policy", params, val_n, [s], f"val|{arm}|{seed}|{tag}", val_cap)

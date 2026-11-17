@@ -104,3 +104,24 @@ the outcome. Its guess D4 failed.
 **Assumptions:** A97 set Under challenge (its plain reading overturned); no new entry.
 
 **Basket:** read; nothing in it is this question.
+
+## Final report as sent
+
+Posted to the owner's project thread on 2026-11-17 at about 17:50 UTC:
+
+**Result of testing "distance is the only form of information": read as the program's distance between pairs, it fails.** It fails at the smallest possible size. On four distinctions, three of the four knots give the same pairwise distances as all four knots, yet they allow different states (8 against 6). At six distinctions, 10,012 distance tables cover 97,248 different not-all-equal bases.
+
+Knowing which whole sets are knots, or whether tied pairs are equal or opposite, still isn't enough. What does carry everything (every base up to six distinctions, and every sampled one at seven) is each knot together with which joint states it rules out. In other words: how far, and which way.
+
+So your reading holds only if "distance" includes that orientation. **Does your "distance" include which way, or only how far?** I've marked A97 "under challenge" until you say. 4 of 5 frozen predictions held.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: is distance the only information | **Status:** Successful (referee pending) | Pairwise distance fails at n = 4; distance with orientation determines every base tested |
+| Local direction | Unresolved | Turns on your answer; then a proof for larger n |
+| Broader exploration | Known alternatives | Shattered sets and binary projections are known not to suffice |
+| G1, G16 | Obstruction learned | How-far alone can't be all a base holds |
+
+**Next step:** no next action until you answer; then a proof attempt that orientation always suffices (payoff 2/3, concreteness 2/3).
+
+**Corrections:** none here. **Goals:** G1/G16 checkpoint. **Assumptions:** A97 now under challenge. [Decision note](https://github.com/jscul/knotlab/blob/main/research/DISTANCE-INFO-20261117-001/distance_info.md)

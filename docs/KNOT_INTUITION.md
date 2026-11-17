@@ -2044,6 +2044,21 @@ So holes come in two kinds:
    - **Next.** Memory that reads no step counts, trained on mixed sizes (`WHERE-NEXT-20261116-001`#1); a slower loop that changes the
      knot structures themselves is recorded as sub-goal B191 ([decision note](../research/WHERE-NEXT-20261116-001/decision.md)).
 
+   **2026-11-17: memory that counts no steps keeps the agent level with the best rule at larger sizes**
+   (`SCALE-MEMORY-20261116-001`; stress test and referee pending).
+   - **The question.** Was the agent's failure at larger patterns in how its memory read time? It read each distinction's age in
+     steps, and as the pattern grows almost every age reads "long ago".
+   - **Computed.** With each age read against the oldest of the knot's three distinctions instead, the agent stays level with the
+     best hand-written rule at four and sixteen times its training size, about 0.8 to 1.0 times its flips, where the step-counting
+     agent needed 1.4 and 15 times as many. Training on larger patterns added nothing once the reads counted no steps. It keeps no
+     clear margin, each step still costs about five times as much computing, and on the pattern whose knots overlap only within a
+     short run of distinctions every version still loses.
+   - **Reading.** A learned memory can carry across size when it reads time relative to what it is looking at. Whether it can carry
+     across how knots meet is the next question, and the owner's slower loop that changes the knot structures (B191) needs that
+     first.
+   - **Next.** Memory normalized by how many knots meet at a distinction, trained on mixed meeting patterns and tested on a held-out
+     one ([decision note](../research/SCALE-MEMORY-20261116-001/decision.md)).
+
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
      No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.

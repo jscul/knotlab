@@ -122,3 +122,20 @@ Its only miss was the slope after fixation at w = 1,024 (S2).
 
 **Corrections:** none. **Goals:** G3 checkpoint (capability gained); no goal changed. **Assumptions:** none new. **Basket:** read;
 B184 taken by this epic.
+
+## Final report as sent
+
+Posted to the owner's project thread on 2026-11-17 at about 17:33 UTC:
+
+**Result:** layered random circuits need about (2/3)√d untangling stages. The d^0.4 measured earlier was this law's slowly fading correction, not a different exponent. The cause is one exact identity, which I've proved. Taking the better of two alternatives and joining two strands cancel out exactly, so only joins of two strands at equal standing build nesting. Each one spreads the standings and makes the next rarer, so nesting slows itself down. The resulting law (a Burgers equation) matched to depth 100,000. It also reproduces every earlier measurement within one, and explains why unlayered circuits stayed at 2 to 4 stages: their effective depth is only about ln n. 10 of 11 frozen predictions held.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: why layered circuits need about d^0.4 stages | **Status:** Successful (referee pending) | Exact identity plus its √d law; old data reproduced |
+| Local direction: stages in random circuits | Practically exhausted | The law is now known for both layered and unlayered circuits |
+| Broader exploration | Known alternatives | General theory of these min/max recursions |
+| G3 | Capability gained | How a built-in order forces nesting |
+
+**Next step:** test your reading A97 ("distance is the only form of information"): do small not-all-equal patterns with identical distance tables always allow the same states? Payoff 3/3, concreteness 3/3. The coordinator will confirm.
+
+**Corrections:** none. **Goals:** G3 checkpoint. **Assumptions:** none new. [Decision note](https://github.com/jscul/knotlab/blob/main/research/LAYER-RANK-20261117-001/layer_rank.md)

@@ -338,17 +338,17 @@ class Canon:
 
     @staticmethod
     def graph(states, n, knots=None):
-        full = (1 << n) - 1
+        """The complete graph on the distinctions weighted by the disagreement count, plus a node per knot joined to its three
+        distinctions by its roles.  For n >= 4 the counts and N determine a base of betweenness knots
+        (DISTANCE-ORDER-20261117-001A, statement 3(a)), and N is in the bucket key, so isomorphism of these graphs is
+        isomorphism of the bases.  (Amendment 2: this replaces the incidence graph of distinctions and split sides, on which the
+        isomorphism search blew up exponentially; the classes are the same.)"""
+        Z, O = columns(states, n)
         G = nx.Graph()
         for x in range(n):
             G.add_node(("p", x), kind="p")
-        for i, a in enumerate(splits(states, n)):
-            for side, m in ((0, a), (1, full ^ a)):
-                G.add_node(("s", i, side), kind="s")
-                for x in range(n):
-                    if (m >> x) & 1:
-                        G.add_edge(("p", x), ("s", i, side))
-            G.add_edge(("s", i, 0), ("s", i, 1), role="pair")
+        for u, v in itertools.combinations(range(n), 2):
+            G.add_edge(("p", u), ("p", v), role=pc(Z[u] & O[v]) + pc(O[u] & Z[v]))
         for j, k in enumerate(sorted(set(knots or []))):
             G.add_node(("k", j), kind="k")
             for pos, x in enumerate(k):

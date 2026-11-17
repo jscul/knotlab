@@ -55,6 +55,14 @@
    "change": "The first run (one process, parts in order) spent over an hour in E1's exact F2 run to n = 9: under F2 the classes multiply (650 at n = 7, about 9 s; n = 9 would take hours), the time going to isomorphism checks. The run was stopped. run.py now runs each part as its own process (--part NAME, then --merge) so that no part blocks another, and F2's exact run stops at n = 7. R6 (F2 at n = 4) is unaffected. rules.py, the rules, starts, readings, predictions and decision rules are unchanged.",
    "run_sha256": "1a36095b638eecc74fb1df24c056412776b36557fadd59e5882311b845c9afb1",
    "rules_sha256": "7ea310dca857d82506e29a9819339164858fb74c9426a5dae94a6bd177c5ad6c"
+  },
+  {
+   "at": "2026-11-17T23:18Z",
+   "before_any_read_out": "of E2, E3 and E3c (none had printed; E1, E4-E8 had finished with the frozen class graph and are unaffected)",
+   "change": "E2, E3 and E3c, which check at every step whether the top options form one class, printed nothing in 27 minutes: the isomorphism search on the incidence graph of distinctions and split sides blows up exponentially as lines grow (32 s for one step at n = 13). They were stopped. rules.py's Canon now compares the complete graph on the distinctions weighted by the disagreement count (with N in the key, and the knots as before); by DISTANCE-ORDER-20261117-001A statement 3(a) the counts and N determine these bases for n >= 4, so the classes are the same. A new check (13) confirms agreement with the frozen graph on 166 pairs of bases. One F3 run to n = 16 now takes under a second. E2, E3 and E3c are rerun from the start; no rule, start, reading, prediction or decision rule changed.",
+   "rules_sha256": "d1ee374ca2c6784bdbad72c32878d7c6a3c98c60a28da73f34f14f76c8d10172",
+   "checks_sha256": "03c748fa1e0c54d7f9c2d62a5495bb1fd3d7ae0b34a1504ea4bbd02e728e78d0",
+   "run_sha256": "1a36095b638eecc74fb1df24c056412776b36557fadd59e5882311b845c9afb1"
   }
  ]
 }

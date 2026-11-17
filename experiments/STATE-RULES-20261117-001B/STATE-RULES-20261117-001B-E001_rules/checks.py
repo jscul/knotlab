@@ -191,5 +191,43 @@ mf = sorted((a0, a1) for a0, a1, _ in R.knot_moves(line6, 6, list(f), 3, local="
 mn = sorted((a0, a1) for a0, a1, _ in R.knot_moves(line6, 6, list(nf), 3, local="closure"))
 check("closure-local moves identical from fan6 and nonfan6", mf == mn)
 
+# 13. amendment 2: the disagreement-weighted class graph gives the same classes as the frozen incidence graph (small bases)
+import networkx as nx
+
+
+def old_graph(states, n):
+    full = (1 << n) - 1
+    G = nx.Graph()
+    for x in range(n):
+        G.add_node(("p", x), kind="p")
+    for i, a in enumerate(R.splits(states, n)):
+        for side, m in ((0, a), (1, full ^ a)):
+            G.add_node(("s", i, side), kind="s")
+            for x in range(n):
+                if (m >> x) & 1:
+                    G.add_edge(("p", x), ("s", i, side))
+        G.add_edge(("s", i, 0), ("s", i, 1), role="pair")
+    return G
+
+
+nm = lambda a, b: a["kind"] == b["kind"]
+em = lambda a, b: a.get("role") == b.get("role")
+bad = tested = 0
+for trial in range(300):
+    n = rng.randint(4, 7)
+    a = R.base_from_knots(n, [tuple(rng.sample(range(n), 3)) for _ in range(rng.randint(1, 2 * n))])
+    if rng.random() < 0.5:
+        perm = list(range(n)); rng.shuffle(perm)
+        b = R.relabel(a, n, perm)
+    else:
+        b = R.base_from_knots(n, [tuple(rng.sample(range(n), 3)) for _ in range(rng.randint(1, 2 * n))])
+    if len(a) != len(b) or len(a) < 2:
+        continue
+    tested += 1
+    old = nx.is_isomorphic(old_graph(a, n), old_graph(b, n), node_match=nm, edge_match=em)
+    new = nx.is_isomorphic(R.Canon.graph(a, n), R.Canon.graph(b, n), node_match=nm, edge_match=em)
+    bad += old != new
+check(f"amendment 2: new class graph = frozen class graph on {tested} pairs of bases", bad == 0, f"{bad} disagreements")
+
 print("FAILURES:", fails)
 sys.exit(1 if fails else 0)

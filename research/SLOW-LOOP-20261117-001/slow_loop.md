@@ -3,8 +3,31 @@
 Epic `SLOW-LOOP-20261117-001`, ticket `SLOW-LOOP-20261117-001A` (sub-goal B191, the owner's second stage; goals G15, G16),
 2026-11-17. Evidence: **computed** on finite experiments with planted instances, every run kept. Frozen before any policy was tuned,
 comparator re-tuned or test instance run ([pre-registration](preregistration.md), freeze commit `8898f7117`;
-[advisor review](advisor_review.md), "freeze with changes", all taken but one). **Referee pending.** The canonical K1–K3 test is
-unchanged. The knot law (not-all-equal on three distinctions) and its signed form both pass it (gate G0).
+[advisor review](advisor_review.md), "freeze with changes", all taken but one). **Refereed: confirmed with fixes, no Block**
+([report](referee-R1/report.md)). The canonical K1–K3 test is unchanged. The knot law (not-all-equal on three distinctions) and its
+signed form both pass it (gate G0).
+
+**Corrected 2026-11-17 after the referee** (logged in `docs/CORRECTIONS.md`):
+- *Narrowing (charging, A91).* Charged work left out part of the rebuild: the Python-side deduplication, the probed-key set
+  operations (`np.isin`, and a growing `np.union1d`), the roots' unique, and the guided order's sort, which was charged as
+  linear. For GO on the primary cell the uncharged sorting alone is 1.2 times its counted rebuild work. With it counted (the
+  referee's range: one unit per sort operation at the low end, rebuild CPU at the fast loop's rate at the high end), GO's work
+  ratios become:
+
+  | Cell | As first charged | Corrected |
+  | --- | ---: | ---: |
+  | `local` w10, 3,200 | 0.15 | 0.24 to 0.30 |
+  | `local` w40, 3,200 | 0.23 | 0.46 to 0.60 |
+  | `embed`, 3,200 | 0.67 | 1.09 to 1.35, so the work win is gone |
+  | `local` w10, 800 | 0.38 | 0.57 to 1.45, so the work win is uncertain |
+
+  GO's two charged wins at 3,200 stand, because the frozen rule also asked for whole-run CPU (0.33 and 0.61), which counts
+  everything. The frozen verdicts do not change. The work-only figures below are as first charged.
+- *Not a block.* Counting rebuild CPU makes G worse on the primary cell (0.84 to about 2.1), which only strengthens reading 4.
+- *Not a block (wording).* GO's eagerness was tuned on `local` window 10, the first of its two winning patterns; the second,
+  window 40, it never saw.
+- *Not a block.* `planted_embed` looped forever when the hidden values of one of its parts came out all equal, which happens
+  only at tiny n. It now redraws, and no instance of this study changes.
 
 ## The question, and the answer
 
@@ -74,10 +97,10 @@ state, and GO. No arm has more than 5% of its runs censored, so no figure is a b
 | --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- |
 | **`local` w10, 3,200** (primary) | 2.17·10^7 | 0.84 [0.65, 1.07] | 0.83 [0.64, 1.07] | 1.07 [0.80, 1.33] | 0.52 [0.39, 0.65] | **0.15 [0.12, 0.19]** | 0.13 [0.10, 0.16] | parity | charged win |
 | `local` w40, 3,200 | 3.46·10^7 | 0.91 [0.77, 1.25] | 0.91 [0.74, 1.34] | 0.81 [0.60, 1.17] | 1.27 [0.92, 1.81] | **0.23 [0.19, 0.30]** | 0.23 [0.18, 0.30] | parity | charged win |
-| `embed`, 3,200 | 6.74·10^6 | 0.98 [0.78, 1.18] | 0.91 [0.72, 1.16] | 1.13 [0.95, 1.38] | 0.90 [0.74, 1.09] | 0.67 [0.54, 0.82] | 0.60 [0.49, 0.72] | parity | work win |
+| `embed`, 3,200 | 6.74·10^6 | 0.98 [0.78, 1.18] | 0.91 [0.72, 1.16] | 1.13 [0.95, 1.38] | 0.90 [0.74, 1.09] | 0.67 [0.54, 0.82] | 0.60 [0.49, 0.72] | parity | work win (gone when the rebuild is fully charged) |
 | `rand`, 3,200 | 2.10·10^6 | 1.04 [1.04, 1.04] | 1.04 [1.04, 1.04] | 1.03 [1.03, 1.03] | 1.04 [1.03, 1.04] | 1.64 [1.57, 1.68] | 1.64 [1.57, 1.70] | parity | loss |
 | `block`, 3,200 | 3.23·10^6 | 1.03 [0.94, 1.16] | 1.11 [1.02, 1.21] | 1.76 [1.43, 1.93] | 1.60 [1.42, 1.80] | 1.88 [1.63, 2.13] | 1.94 [1.68, 2.17] | parity | loss |
-| `local` w10, 800 | 1.47·10^6 | 1.09 [0.95, 1.42] | 0.89 [0.73, 1.16] | 1.52 [1.24, 2.04] | 1.90 [1.65, 2.51] | 0.38 [0.34, 0.50] | 0.38 [0.33, 0.50] | parity | work win |
+| `local` w10, 800 | 1.47·10^6 | 1.09 [0.95, 1.42] | 0.89 [0.73, 1.16] | 1.52 [1.24, 2.04] | 1.90 [1.65, 2.51] | 0.38 [0.34, 0.50] | 0.38 [0.33, 0.50] | parity | work win (uncertain when fully charged) |
 | `local` w40, 800 | 4.65·10^5 | 1.02 [0.95, 1.03] | 1.12 [0.93, 1.40] | 1.01 [0.85, 1.21] | 3.96 [2.99, 5.06] | 2.05 [1.54, 2.57] | 2.00 [1.58, 2.57] | parity | loss |
 | `embed`, 800 | 3.87·10^5 | 1.09 [0.90, 1.39] | 1.05 [0.85, 1.21] | 1.52 [1.13, 1.83] | 3.21 [2.47, 3.75] | 1.51 [1.14, 1.77] | 1.51 [1.09, 1.75] | parity | loss |
 | `rand`, 800 | 3.21·10^5 | 1.04 [1.04, 1.04] | 1.05 [1.04, 1.06] | 1.03 [1.03, 1.03] | 1.06 [1.04, 1.09] | 1.78 [1.68, 1.84] | 1.84 [1.72, 1.93] | parity | loss |
@@ -237,7 +260,8 @@ All were made before any slow arm was scored, except where noted:
 - **The fast loop.** It was not re-tuned on the changed pattern; the slow arms keep the cell's Novelty+ setting. This can only
   understate them.
 - **The rebuild.** It is partly in Python, which inflates the slow arms' CPU (for GO on the primary cell, 70% of its CPU is
-  rebuild). Charged work does not depend on this.
+  rebuild). Charged work, as first counted, also left out the rebuild's Python-side sorting and set operations (corrected
+  above; the referee's ranges), so neither measure isolates the slow loop exactly. Only the whole-run CPU counts everything.
 - **G's laziness.** It is partly the cost of reading the attention counts (a scan and sort of the knots visited each epoch). A
   cheaper read, kept up incrementally by the fast loop, would leave more of a small budget for probes. At the eager budget the
   read is cheap relative to the probes, and attention still did not help.

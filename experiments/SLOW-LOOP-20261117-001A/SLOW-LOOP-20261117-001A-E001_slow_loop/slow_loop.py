@@ -153,6 +153,8 @@ def planted_embed(n: int, seed: int, frac: float = 0.25, alpha_r: float = 2.1, a
     while hidden.min() == hidden.max():
         hidden = rng.integers(0, 2, n, dtype=np.int8)
     ne = int(round(frac * n))
+    while hidden[:ne].min() == hidden[:ne].max() or hidden[ne:].min() == hidden[ne:].max():
+        hidden = rng.integers(0, 2, n, dtype=np.int8)  # a constant part allows no knot (only at tiny n; referee R1)
 
     def draw(need, kind):
         out = []

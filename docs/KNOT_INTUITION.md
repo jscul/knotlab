@@ -2060,13 +2060,16 @@ So holes come in two kinds:
      one ([decision note](../research/SCALE-MEMORY-20261116-001/decision.md)).
 
    **2026-11-17: changing the knot pattern during the search pays where the pattern has local structure, but only when the slow
-   loop is eager, and the search's attention does not say where to change it** (`SLOW-LOOP-20261117-001`; referee pending).
+   loop is eager, and the search's attention does not say where to change it** (`SLOW-LOOP-20261117-001`; refereed, confirmed
+   with fixes).
    - **The question.** The owner's second stage: a fast loop searches the knot pattern while a slower loop reshapes it. Between
      epochs of Novelty+ the slow loop merged distinctions shown tied by a short refutation and added shadow knots: three-place
      knots that every allowed state satisfies. Both moves keep the allowed states, and every check was charged.
    - **Computed.**
-     - **The eager loop.** With the slow loop as busy as the search, total work fell to 0.15 and 0.23 of the search alone on two
-       local patterns at 3,200 distinctions, one of them never seen, and to 0.12 at 12,800. That beats probing everything first.
+     - **The eager loop.** With the slow loop as busy as the search, and its eagerness tuned on the first pattern, total work fell
+       to about a quarter (0.24 to 0.30) and a half (0.46 to 0.60) of the search alone on two local patterns at 3,200
+       distinctions, the second never seen. Computing time fell to 0.33 and 0.61. That beats probing everything first. (Corrected
+       after the referee: the first figures, 0.15 and 0.23, left the rebuild's sorting uncounted.)
      - **Where it costs.** On random and block patterns, where there is nothing useful to find, it cost 1.5 to 2 times.
      - **Tuned on those patterns,** the slow loop learned to do almost nothing.
      - **Attention.** The knots the search kept returning to were no better places to look than random knots.

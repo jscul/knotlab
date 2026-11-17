@@ -1,6 +1,7 @@
 # Decision: SLOW-LOOP-20261117-001
 
-2026-11-17 · goals G15, G16 · takes sub-goal B191 (the owner's second stage) · computed, referee pending · result note
+2026-11-17 · goals G15, G16 · takes sub-goal B191 (the owner's second stage) · computed, refereed (confirmed with fixes, no
+Block; [report](referee-R1/report.md), folded in 2026-11-17) · result note
 [slow_loop.md](slow_loop.md) · pre-registration [preregistration.md](preregistration.md) (frozen `8898f7117`) · stress cell (n =
 12,800) done and folded in
 
@@ -8,8 +9,12 @@
 knots that keep the allowed states, every probe and rebuild charged.
 - **The eager loop pays where the pattern has local structure.** With the policy tuned on `local` window 10 (GO), charged work
   falls to 0.15 [0.12, 0.19] of the best fast rule on `local` w10 and to 0.23 [0.19, 0.30] on `local` w40, which GO never saw, at
-  n = 3,200. At 12,800 it is 0.12 on w10. These are charged wins, CPU included, and 3.4 to 5.5 times better than tuned static
-  probing.
+  n = 3,200. At 12,800 it is 0.12 on w10. These are charged wins, CPU included (0.33 and 0.61), and 3.4 to 5.5 times better than
+  tuned static probing.
+  - **Corrected 2026-11-17 (referee; Narrowing).** Charged work had left out the rebuild's Python-side sorting. With it counted,
+    0.15 and 0.23 become about 0.24 to 0.30 and 0.46 to 0.60, still wins.
+  - **The other two cells.** The work win on `embed` 3,200 is gone, and the one on `local` w10 800 is uncertain.
+  - **G.** Counted the same way, G's ratio on the primary cell rises to about 2.1.
 - **The eager loop costs elsewhere:** 1.5 to 2.1 times as much on random and block patterns.
 - **The transferred policy does nothing.** The policy tuned on `rand` and `block` (G) is the grid's laziest, at parity everywhere
   (0.84 to 1.09). By the frozen rule that is **reading 4, no charged win for G anywhere**.
@@ -47,8 +52,11 @@ Ratings.
 - **#3.** It is the owner's picture in full, but its fast half still fails on the local patterns where the slow half pays.
 - **#4.** The moves would be new to this engine, but the literature expects little on random patterns.
 
-**Corrections:** none to earlier claims. The deviations from this study's own frozen text are listed in the note: a re-tuning grid
-extended at its edges, an analysis edit that had not applied, and the CaDiCaL interrupt.
+**Corrections:** none to earlier claims at the close. The deviations from this study's own frozen text are listed in the note: a
+re-tuning grid extended at its edges, an analysis edit that had not applied, and the CaDiCaL interrupt.
+- **Folded in after the referee (2026-11-17).** One Narrowing: charged work omitted the rebuild's Python-side sorting, as above.
+  Three Not a block: G worse when fully charged; GO's tuning family stated; the `planted_embed` guard.
+- **All four** are logged in `docs/CORRECTIONS.md`.
 **Goals:** checkpoint row added (G15, G16; obstruction learned); B191 marked taken by this epic, with its first attempt and the
 filed direction #3; G15's Stands on, Open and Lines updated; no goal changed.
 **Assumptions:** added A90 (the reading of the owner's slow loop as changes to the pattern that keep its allowed states, at the
@@ -60,7 +68,8 @@ arm, now direction #2 ([advisor_review.md](advisor_review.md)). It was not used 
 **Stress test:** the n = 12,800 cell (S4, registered `SLOW-LOOP-S4`) finished before the close and is folded in.
 **Post hoc (not frozen):** RNDO (registered `SLOW-LOOP-H1`), static probing tuned on `local` w10 (it came out the same setting as
 ST), and the one-epoch attention diagnostic.
-**Referee:** pending; hand-off below.
+**Referee:** R1 confirmed with fixes, no Block ([report](referee-R1/report.md)); its fixes are folded in above and in the note.
+The hand-off is kept below.
 
 ## Referee hand-off
 
@@ -124,3 +133,6 @@ A fresh session should recheck, without this thread's reasoning:
 >
 > **Corrections:** none. **Goals:** checkpoint added, no goal changed. **Assumptions:** A90 (the reading of your slow loop) and A91
 > (how it is charged) added. Referee pending.
+
+*After the referee (2026-11-17), the report's 0.15 and 0.23 should read "with its eagerness tuned on the first pattern", and
+about 0.24 to 0.30 and 0.46 to 0.60 once the rebuild's sorting is charged; the CPU-included wins stand.*

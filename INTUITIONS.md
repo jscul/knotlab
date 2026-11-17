@@ -3070,6 +3070,15 @@ that earlier records used in two senses.
   is a bond that two orbits far apart hold between themselves alone, and an
   unexposed dependence binds them too, but only a larger set of addresses
   can show it (`KEEP-REACH-20261117-001`, 17 November 2026).
+- **Stem.** For an orbit at one level and an orbit some levels below it, the
+  stem of depth d is the upper orbit together with the lower orbit's
+  ancestor orbits at the d levels below the upper one: the start of the way
+  down from the top toward the lower orbit (the advisor's word). A bond inside
+  the stem and the lower orbit, holding a distinction of each end, holds the
+  top to the lower orbit, as a two-orbit bond does. Stems of depth 2 hold the
+  top in ten patterns where no bond inside two orbits does: their unexposed
+  dependence shows once the orbits just below the top are held too
+  (`CARRIER-20261117-001`, 17 November 2026).
 - **Binding pattern.** The owner's word, not yet defined: in his words, "This
   is what we're trying to discover" (lesson 7.3). He offers two pictures,
   logic carried in each knot that binds whole knot patterns together, and

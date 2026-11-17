@@ -3,6 +3,20 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: "space forces order only through steps apart" withdrawn; the numbers stand
+
+- The referee of `SPACE-ORDER-20261117-001` confirmed the lemma (untangling phases are at least the steps apart from what is
+  held, the light cone of a local rule) and every frozen number, and withdrew the study's headline, "space forces order, and only
+  through steps apart". Rewiring 0.2% of the weave's knots cuts its largest steps apart five-fold and leaves the phase count
+  unchanged: the phases follow the weave's local overlap structure (every pair of co-knotted distinctions in two knots), and steps
+  apart is only their lower bound ([decision note](research/SPACE-ORDER-20261117-001/space_order.md)).
+- Withdrawn with it: the explanation that random atom patterns were easy because everything is within log n steps; they lack the
+  local structure a growing region needs. Assumption A96 is overturned.
+- Narrowed: phases rise about one per step from where the growth began, a few above the steps apart, not equal to them, and this
+  was a post hoc reading.
+- The owner's reading "Distance is the only form of information" stays recorded in his words (A97); it does not rest on the
+  withdrawn sentence.
+
 ## 17 November 2026: memory read per knot, confirmed by its referee, its summary and cost narrowed
 
 - Memory read per knot (`MEET-TRANSFER-20261117-001`) was confirmed by its referee with fresh code, with no Block: the held-out

@@ -3,7 +3,9 @@
 Status: Proved
 
 Ticket `SPACE-ORDER-20261117-001Z`, 2026-11-17. A ledger; it makes no new claim. The decision note is
-`research/SPACE-ORDER-20261117-001/space_order.md`. Referee pending.
+`research/SPACE-ORDER-20261117-001/space_order.md`. Refereed: `SPACE-ORDER-R1`, numbers confirmed, a Block on the reading "only
+through steps apart" (commit `2739fc6d7`); row 2 now reads: one phase per step of growth through the weave's local structure, which
+the phases follow rather than steps apart.
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |

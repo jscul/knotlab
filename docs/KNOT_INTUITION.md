@@ -287,11 +287,11 @@ A distinction is the material, and an atom is what holds material together.
 
 **Distance as information (the owner's reading, 17 November 2026).** "Distance
 is the only form of information. That's the entire basis of the 'this versus
-that' distinction in the smallest emergent unit." He said it on reading
-`SPACE-ORDER-20261117-001`, which found that space forces order only through
-steps apart: each untangling phase moves the settled set at most one step, so
-a region that must grow across a weave costs one phase per step. In the
-program's terms the reading says that what a base holds is carried by how far
+that' distinction in the smallest emergent unit." He said it in reply to the
+first reading of `SPACE-ORDER-20261117-001`, "space forces order, and only
+through steps apart", which its referee later withdrew: there the phases follow
+the weave's local overlap structure, and steps apart is only their lower bound.
+His reading does not rest on that study. In the program's terms it says that what a base holds is carried by how far
 its distinctions are from one another as its own law measures it (bond
 distance, steps apart plus one on six-regular weaves), and that a distinction
 is the least such separation. It continues his stance of 22 October that there
@@ -1451,10 +1451,10 @@ So holes come in two kinds:
    - A seam of s shared distinctions reports a relation closed under flipping every value, and every such relation occurs. Pairwise reports suffice for s ≤ 2 and fail at s = 3 for exactly 4 of the 16: not-all-equal and its single-flip variants, the knots. The Codex seam finding (`GUARD-CHOICE-SEPARATION-20261115-001`, developed in `TWO-CHOICE-IMPLICATIONS-20261115-001`) is the level below (one-place against two-place reports, in a Horn family). [Decision note](../research/JOINT-RECORDS-20261116-001/joint_records.md)
 
 
-   **2026-11-17: does space force order** (`SPACE-ORDER-20261117-001`; referee pending).
-   - Untangling travels along what is already settled: a two-place rule exists only where a knot already has a settled member, so a phase's long chains run along the rim of the settled region and never into the open. Each phase therefore moves the settled set at most one step (proved), and phases are at least the steps apart from what is held.
-   - On the triangular six-regular weaves, a law that can grow a kernel (each knot demanding two members) needs one phase per step apart from where the kernel began: 256 phases at L = 384, the weave's largest steps apart, each distinction's phase its steps from the start (correlation 0.99). The same law on the weave's role-preserving shuffle jumps in 9.5 phases. Laws that cannot grow a kernel (one demand per knot; not-all-equal from a planted state) need 2 to 7.5 phases on both (computed, frozen; 9 of 10 predictions held). [Decision note](../research/SPACE-ORDER-20261117-001/space_order.md)
-   - So space is what untangling cannot shortcut, and its price is steps apart, which the ruler of question 9 makes the law's own distance. The classical counterpart is a light cone; no complexity claim follows.
+   **2026-11-17: does space force order** (`SPACE-ORDER-20261117-001`; refereed: numbers confirmed, first reading withdrawn).
+   - Untangling travels along what is already settled: a two-place rule exists only where a knot already has a settled member, so a phase's long chains run only next to what is already settled. Each phase therefore moves the settled set at most one step (proved), and phases are at least the steps apart from what is held.
+   - On the triangular six-regular weaves, a law that can grow a kernel (each knot demanding two members) needs one phase per step of its growth through the weave's local structure (every co-knotted pair in two knots): 256 phases at L = 384, where the growth distance equals the weave's largest steps apart (post hoc: phases rise about one per step from the trigger, correlation 0.99). The same law on the weave's role-preserving shuffle jumps in 9.5 phases. Laws that cannot grow a kernel (one demand per knot; not-all-equal from a planted state) need 2 to 7.5 phases on both (computed, frozen; 9 of 10 predictions held). [Decision note](../research/SPACE-ORDER-20261117-001/space_order.md)
+   - **Withdrawn after the referee:** "its price is steps apart". Rewiring 0.2% of the weave's knots cuts its largest steps apart from 256 to 52 and leaves the phases at 252; they fall only as the local structure goes. What forces the order is that local structure; steps apart is only the lower bound. The classical counterparts are the light cone of a local rule and the known time of bootstrap percolation.
 
    **2026-11-17: why layered circuits need about d^0.4 phases** (`LAYER-RANK-20261117-001`; referee pending).
    - In a layered random circuit as an atom pattern, taking the better of two alternatives and joining two strands cancel exactly: only an open use of two strands of equal standing moves the standings, and each such use spreads them, making the next rarer. At infinite width this is the identity Q_{L+1} = Q_L − ½q_L² (proved), whose continuum limit gives about (2/3)√d phases at depth d; the earlier d^0.41 was its logarithmic correction, and the largest standing among 1,024 gates by the recursion is within one of every earlier measurement. Unlayered circuits have depth about ln n, hence √(ln n) (computed, frozen; 10 of 11 predictions held). [Decision note](../research/LAYER-RANK-20261117-001/layer_rank.md)

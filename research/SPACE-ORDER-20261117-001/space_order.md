@@ -5,32 +5,34 @@ Epic `SPACE-ORDER-20261117-001`, 17 November 2026, by Claude; takes B185. Goals 
 ended at 17:14:24 UTC. Experiment: [code and contract](../../experiments/SPACE-ORDER-20261117-001A/SPACE-ORDER-20261117-001A-E001_weave_phases/),
 [summary](../../artifacts/SPACE-ORDER-20261117-001A/SPACE-ORDER-20261117-001A-E001_weave_phases/summary.json).
 
-## The answer
+## The answer (corrected after the referee, 17 November)
 
-Yes: space forces order, and only through steps apart. Untangling travels along what is already settled. A two-place rule exists
-only where a knot already has a settled member, so the long chains of a phase run along the rim of the settled region and never
-into the open. Each phase therefore moves the settled region at most one step (proved, below).
+*The first version of this answer said "space forces order, and only through steps apart; the price is exactly steps apart". The
+referee (`SPACE-ORDER-R1`) ran assumption A96's own challenge and overturned it: that sentence is withdrawn (Block, logged in
+`docs/CORRECTIONS.md`). The corrected reading follows.*
 
-On a weave the law that can grow a set region from one place (each knot demanding two members) does exactly that. A kernel starts
-near one held distinction and grows one step per phase until it covers the weave:
+Phases are at least the steps apart from what is held (proved, below): a two-place rule exists only where a knot already has a
+settled member, so a phase's long chains run only next to what is already settled, and each phase moves the settled set at most
+one step. This is the light cone of a local rule (the locality bound of Linial 1992).
 
-- 256 phases at L = 384, which is the weave's largest steps apart (2L/3);
-- each distinction's phase is its steps apart from where the kernel began (correlation 0.99, 0.99 phases per step at L = 384);
-- phases and rounds both grow like L, local slopes 0.95 to 1.01 and 0.91 to 0.94.
+On the weave the law that can grow a set region from one place (each knot demanding two members) grows a kernel that needs one
+phase per step of its growth through the weave's local structure, in which every co-knotted pair lies in two knots: 256 phases at
+L = 384, where its growth distance equals the weave's largest steps apart, 2L/3 (the diameter of the triangular torus when 3
+divides L). Phases rise about one per step from the trigger (post hoc: correlation 0.99, slope 0.99 at L = 384, but a few phases
+above the steps apart, equal for only 4 to 18% of distinctions). Phases and rounds both grow like L; rounds like L after
+nucleation are the known time of bootstrap percolation (Balister, Bollobás and Smith 2016; Bollobás, Holmgren, Smith and Uzzell
+2014).
 
-The same law on the weave's shuffled twin (every distinction in the same number of knots in each role, steps apart destroyed)
-jumps the mean-field way. It needs 9.5 phases at the same size against 174 rounds, logarithmic in n, as random atom patterns did.
-That is a ratio of 27 between pattern and twin.
+What the phases follow is that local structure, not steps apart. Rewiring 0.2% of the weave's knots keeps 99% of the pairs that
+lie in two knots and cuts the largest steps apart from 256 to 52, yet the phases stay at 252 (referee's run). They fall only as the
+local structure goes: 134 at 95% of it, 48 at 35%, and about 10 on the fully shuffled twin, which keeps every distinction's role
+counts and has no such structure. The 27-fold ratio between weave and twin is the loss of that local structure. Laws that cannot
+grow a kernel (one demand per knot; not-all-equal from a planted state) need 2 to 7.5 phases on both.
 
-Laws that cannot grow a kernel see no space at all: one demand per knot, and not-all-equal from a planted state. They have no
-jump on either pattern and need 3 to 7.5 phases at every size.
-
-So in the knot picture, space is what untangling cannot shortcut, and the price is exactly steps apart. The program's ruler
-(`RULER-20261111-001`: on the six-regular weave bond distance is steps apart + 1) makes that price the law's own distance. The
-classical counterpart is a light cone: local Newton iterates move information one step at a time. This identifies nothing new in
-complexity theory: planar or bootstrap-type questions can be in NC by methods that are not phases. What the knot picture explains
-is why the random patterns of `SEQUENTIAL-WALL-20261116-001` were easy for untangling: everything there is within about log n steps.
-It also explains why weaves are not: a kernel must travel the weave's whole span, one settled step at a time.
+So in the knot picture, order on a weave comes from a kernel that can grow only through knots that overlap two at a time on each
+pair. Long-range shortcuts that bring everything close do not speed it, because a lone shortcut knot cannot carry the growth.
+Random atom patterns were easy for untangling not because everything there is within log n steps (the first version said so,
+also withdrawn) but because they have no such local structure for a kernel: their jump is the mean-field one.
 
 ## The lemma (proved)
 
@@ -82,7 +84,8 @@ against 256 at L = 384, 127 to 136 against 128 at L = 192, and 64 to 77 against 
 
 - One weave family (triangular tori) and one shuffle; other two-fold weaves (other cycle pairs) were not tried.
 - The planted not-all-equal state is a declared process (30 zero-energy sweeps from the three-class state), checked only by its
-  free share; not-all-equal from it cannot grow a kernel, as the advisor computed.
+  free share; it keeps part of the three-class order of its start (order parameter 0.32 to 0.36, still 0.23 to 0.35 after 3,000
+  sweeps; referee), though the readings are unchanged with 100 times the mixing. Not-all-equal from it cannot grow a kernel.
 - Phases are one parallel law. Bootstrap-type and planar questions can be in NC by other methods, so P ∝ L is not a claim that these
   patterns are inherently sequential.
 
@@ -113,10 +116,10 @@ Its T4 guess (P ≈ D from the held set) failed for the reason above.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: does space force order | **Status:** Successful (referee pending) | Yes, through steps apart only: a kernel costs one phase per step (256 at L = 384), against 9.5 on the same law's twin; 9 of 10 predictions held |
+| This attempt: does space force order | **Status:** Successful (refereed: confirmed numbers, Block on the reading) | Phases are at least the steps apart (proved); a kernel costs one phase per step of growth through the weave's local structure (256 at L = 384), against 9.5 on the twin; the first reading, "only through steps apart", is withdrawn |
 | Local direction: phases on spatial patterns | Continue, narrowly | The lemma and the kernel regime are clean; other weaves and laws would only repeat it unless a law with longer-range rules is tried |
 | Broader exploration: parallel methods on planar patterns | Known alternatives | Planar and bootstrap prediction can be in NC by non-phase methods |
-| Long-term goal: G3, with G1 | Capability gained | The sequential resource of untangling is steps apart, which on weaves is the program's own ruler distance |
+| Long-term goal: G3, with G1 | Capability gained (narrowed) | Local overlap structure that lets a kernel grow is what forces nesting; steps apart is only a lower bound |
 
 **Next step:** Research directions. Selected: #1
 
@@ -125,13 +128,36 @@ Its T4 guess (P ≈ D from the held set) failed for the reason above.
 | 1 | B184: why layered random circuits need about d^0.4 phases (layering as a built-in order) | 2/3, would explain how order designed into a meeting pattern forces nesting, the counterpart of space here | 3/3, a mean-field recursion for the rank distribution, data in hand | Iterate the infinite-width recursion to d = 10^4 and compare with the measured 4 … 17 → stop when it matches within one, or fails | Selected · next |
 | 2 | A law whose two-place rules reach past the rim (rules from knots with no settled member, such as parity's) on weaves | 2/3, would test whether the one-step light cone is special to atoms and not-all-equal | 2/3 | Parity knots on the weave, phases of elimination against steps apart → stop at a clear scaling | Alternative · deferred |
 
-**Corrections:** none.
+**Corrections:** none at close; after the referee, a Block on the reading "only through steps apart" (and on the explanation of the
+random patterns by log n steps), a Narrowing on the post hoc "phase = steps apart from the trigger", and three Not a block notes
+(the lemma named as a light cone, the planted state's residual order, the known bootstrap time); A96 overturned. All in
+`docs/CORRECTIONS.md` and knotlab's HISTORY.md.
 
 **Goals:** G3 checkpoint (capability gained), with G1; no goal changed.
 
-**Assumptions:** A96 added (scope: the role-preserving shuffle removes steps apart and nothing else that matters).
+**Assumptions:** A96 added (scope: the role-preserving shuffle removes steps apart and nothing else that matters), overturned by its
+own challenge after the referee: the shuffle also removes the local structure, and that is what the phases follow.
 
 **Basket:** read; B185 taken by this epic.
+
+## Referee
+
+`SPACE-ORDER-R1` ([report](referee-R1/report.md), commit `2739fc6d7`): the lemma and every frozen number confirmed (all 426 cases
+recompute with 0 mismatches; phases recomputed as least labels of g(i, j) = max(i, j) if i ≠ j, else i + 1, so "Strahler number =
+phase" is a theorem); **Block** on the reading "space forces order, and only through steps apart" and on the explanation of the
+random patterns by log n steps; A96 overturned by its own challenge (table below, the referee's run at L = 384); **Narrowing** on
+the post hoc relation; Not a block on the lemma's naming, the planted state and the known bootstrap time.
+
+| Rewired share of knots | Pairs in two knots | Largest steps apart | P* | R* |
+| --- | --- | --- | --- | --- |
+| 0 (weave) | 1.000 | 256 | 260 | 543 |
+| 0.002 | 0.989 | 52 | 252 | 530 |
+| 0.01 | 0.949 | 27 | 134 | 303 |
+| 0.05 | 0.778 | 15 | 115 | 295 |
+| 0.25 | 0.345 | 9 | 48 | 212 |
+| twin | 0.000 | 7 | 10 | 244 |
+
+The final report below is kept as sent; its headline was withdrawn here.
 
 ## Final report as sent
 
@@ -150,4 +176,7 @@ On the program's six-regular weaves, a law that can grow a settled region from o
 
 **Next step:** Research directions. Selected: #1, B184 (why layered circuits need about d^0.4 stages), payoff 2/3, concreteness 3/3. Starting now.
 
-**Corrections:** none. **Goals:** G3 checkpoint. **Assumptions:** A96 (the shuffled twin removes distance and nothing else that matters). [Decision note](https://github.com/jscul/knotlab/blob/main/research/SPACE-ORDER-20261117-001/space_order.md)
+**Corrections:** none at close; after the referee, a Block on the reading "only through steps apart" (and on the explanation of the
+random patterns by log n steps), a Narrowing on the post hoc "phase = steps apart from the trigger", and three Not a block notes
+(the lemma named as a light cone, the planted state's residual order, the known bootstrap time); A96 overturned. All in
+`docs/CORRECTIONS.md` and knotlab's HISTORY.md. **Goals:** G3 checkpoint. **Assumptions:** A96 (the shuffled twin removes distance and nothing else that matters). [Decision note](https://github.com/jscul/knotlab/blob/main/research/SPACE-ORDER-20261117-001/space_order.md)

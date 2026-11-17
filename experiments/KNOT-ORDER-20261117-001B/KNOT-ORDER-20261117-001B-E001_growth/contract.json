@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "KNOT-ORDER-20261117-001B-E001",
+ "ticket": "KNOT-ORDER-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which one-knot-per-step growth rules keep an exact order (a line of thresholds) to n = 14; which single knots keep a line (m = 3..8, all 34 knot kinds); does box-triple betweenness on 3x3 and 3x4 grids hold exactly the row and column cuts?",
+ "definitions": {
+  "B": "the knot excluding 010 and 101 on (a, b, c)",
+  "line": "the thresholds along an order",
+  "rules": "start, neighbour, random (seed sha256 KO:random), states (seed sha256 KO:states), spiral"
+ },
+ "public_inputs": {
+  "code": "growth.py (sha256 bf0ae13a3f8b3fea09e8bdffd15750929092308d0430f3b6c6ed3392445a85cf); Python standard library",
+  "run": "python3 -B growth.py"
+ },
+ "forbidden_inputs": [
+  "Changing rules, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions R1, G1-G5, X1, X2 of research/KNOT-ORDER-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "The start rule (forced by K3) and the neighbour rule (fails by K2).",
+ "predictions": {
+  "R1": "10/8 at n=4 (0110, 1001), 16/10 at n=5, 8 for B(0,1,2)+B(0,2,3)",
+  "G1": "start: line, 2n",
+  "G2": "neighbour: not a line from 4, 2F(n+1)",
+  "G3": "random: not a line unless all x = start, count in (28, 1220)",
+  "G4": "states: line, ends unique",
+  "G5": "spiral: line",
+  "X1": "m+1 distinct line-keeping single knots, all betweenness",
+  "X2": "3x3: 10, 3x4: 12, d = 2 L1, betweenness = boxes"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "Under ten minutes, one process."
+}

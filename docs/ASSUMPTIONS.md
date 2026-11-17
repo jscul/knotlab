@@ -151,7 +151,7 @@ evidence: results and their status come from the records each entry links.
 | [A94](#a94--an-agents-memory-across-a-change-of-the-pattern-is-carried-by-signed-navs-rule) | An agent's memory across a change of the pattern is carried by SIGNED-NAV's rule | reading | Assumed |
 | [A95](#a95--two-fast-loops-are-compared-at-the-same-proofs-per-flip-in-flips-and-at-the-same-share-of-work-on-proofs-in-work) | Two fast loops are compared at the same proofs per flip in flips, and at the same share of work on proofs in work | measure | Assumed |
 | [A96](#a96--a-role-preserving-shuffle-of-a-weave-removes-its-steps-apart-and-nothing-else-that-matters) | A role-preserving shuffle of a weave removes its steps apart and nothing else that matters | scope | Overturned |
-| [A97](#a97--distance-is-the-only-form-of-information) | Distance is the only form of information | interpretation | Assumed |
+| [A97](#a97--distance-is-the-only-form-of-information) | Distance is the only form of information | interpretation | Under challenge |
 
 ## Entries
 
@@ -2497,7 +2497,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A97 · Distance is the only form of information
 
-**Assumed** · 2026-11-17 · interpretation
+**Under challenge** · 2026-11-17 · interpretation
 
 - **Statement.** The owner's reading, in his words (17 November 2026): "Distance is the only form of information. That's the
   entire basis of the 'this versus that' distinction in the smallest emergent unit." Read in the program's terms: what a base
@@ -2509,14 +2509,21 @@ evidence: results and their status come from the records each entry links.
   their lower bound. The owner's reading does not rest on it and stands as his interpretation. It continues his stance of 22 October
   2026 that there are no values, only relations seeded from the smallest distinction, this versus that. It is an interpretation, not
   a theorem: no result shows that every kind of information a base holds is a distance.
-- **Rests on it.** No result yet. It frames the ruler results that make bond distance the law's own distance
-  (`RULER-20261111-001`, `LOGIC-AXIS-20261107-001`), and it is tested by `DISTANCE-INFO-20261117-001`.
+- **Rests on it.** No result. It frames the ruler results that make bond distance the law's own distance (`RULER-20261111-001`,
+  `LOGIC-AXIS-20261107-001`).
 - **Challenge.** Find two bases whose bond distances agree for every pair of distinctions but whose allowed states differ (for
   example in count, or in what is forced from the same held values): their difference would be information that is not distance.
   The cheapest first test is a census of small not-all-equal patterns grouped by their bond-distance tables, checking whether equal
   tables force equal relations (`OVERLAP-READ-20261111-001` found that equal pair counts give equal states, a related result).
-  Parity knots, which hide one full bit, are a second test: is the hidden bit a distance?
+  Parity knots, which hide one full bit, are a second test: is the hidden bit a distance? Run by `DISTANCE-INFO-20261117-001`
+  ([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md)): on every not-all-equal base of 4, 5 and 6
+  distinctions, and 258,384 sampled at 7, pairwise bond distance fails at n = 4 (12 tables for 16 relations; at n = 6, 10,012 for
+  97,248); the sign of ties and distances between sets (which sets are bonds) do not repair it; each bond with the joint states it
+  excludes determines every relation tested. The plain reading is overturned; the reading survives only if distance includes
+  orientation, which joint states each knot excludes. Open: whether the owner means that.
 - **History.**
+  - 2026-11-17 · Under challenge: `DISTANCE-INFO-20261117-001` found the plain (pairwise) reading false at four distinctions;
+    distance with orientation (bonds with their excluded states) determines every relation tested through six.
   - 2026-11-17 · Why and Rests on it revised: the SPACE-ORDER reading it was said in reply to was withdrawn by the referee; the
     owner's words are unchanged.
   - 2026-11-17 · Added at the owner's request, in his words.

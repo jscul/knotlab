@@ -13,3 +13,12 @@ Ticket `KNOT-ORDER-20261117-001Z`, 2026-11-17. A ledger; it makes no new claim. 
 | 4 | The grown line is pairwise with an exact ruler 2\|i − j\|; box-triple betweenness on 3 × 3 and 3 × 4 grids allows exactly the row and column cuts (d = 2·L1, two independent orders). | classical cited (cut systems); computed | A, B (X2) |
 
 **Recommendation:** Research directions; the first (grow the two-way grid with knots) starts on the coordinator's go-ahead.
+
+## After the referee (R1, 17 November 2026)
+
+Confirmed with fixes, no Block; folded in the same day and logged in `docs/CORRECTIONS.md`. The rows above are kept as written.
+- **Narrowing** of row 3. An outside rule reads the states and chooses; the knots do not.
+- **Narrowing** of row 4. The grid's two orders are its own arrangement, read back as its halfspaces. The line's ruler is A98's
+  exact betweenness, and by the transfer-gap reading the line is frozen.
+- **Not a block.** Row 2's m + 1 count is proved by the referee for every knot at every m. K4's proof gap is closed (the count
+  2m + 2(b − a)). The kind flags were inverted. "Pairwise" in this ledger's sense is now "determined by its pair counts".

@@ -8,8 +8,11 @@ Code: [gridgrow.py and run.py](../../experiments/GRID-GROW-20261117-001B/GRID-GR
 
 ## The answer
 
-**Two independent orders grow from betweenness knots, one distinction at a time, with fixed costs** (proved; every case in a
-4 × 4 box checked). The knot is "b lies between a and c".
+**The grid's two independent orders can be grown from betweenness knots one distinction at a time, with fixed costs** (proved;
+every case in a 4 × 4 box checked). The knot is "b lies between a and c". The two orders are the grid's own arrangement of places,
+its row and column cuts (the classical halfspaces of a product of two paths), and the placement of each new distinction is given.
+The growth reads and extends that meeting pattern's own two orders. *Scoped on 17 November 2026, after `KNOT-ORDER-20261117-001`'s
+referee, before this study's own.*
 - **A new line costs one knot, and that knot is forced.** A new line is the first cell of a new row or column. Its knot ties the
   new cell to its neighbour and to the opposite corner, the one cell on the far side of every cut. No other single knot works.
   This is the line's growth at an end, done along the shape's two far corners. In all 66 such steps there was exactly one such
@@ -22,12 +25,13 @@ Code: [gridgrow.py and run.py](../../experiments/GRID-GROW-20261117-001B/GRID-GR
 - **Totals do not depend on the order.** Growing the 4 × 4 square from the three-cell L took 32 knots both ways, arms first then
   filling, and row by row. That is 5 new lines plus 3 × 9 fills, exact at every step.
 - **The states name every placement.** On every shape the disagreement count is twice the L1 distance, and the knot base is
-  exactly the row and column cuts (69 of 69). So the outer corners, the neighbours and the opposite corners are read from the
-  states, with names and history erased.
+  exactly the row and column cuts (69 of 69). So an outside rule that uses only the states, with names and history erased, can
+  find the outer corners, the neighbours and the opposite corners. The knots do not choose; the rule does.
 
-In the owner's terms: knots alone grow two independent orders. Reaching far is needed only to start a line, where the new cell is
-tied to the far corner, so in that sense every cell relates to all the others. Everything inside is filled locally. The two-way
-structure is this meeting pattern's own: the growth reads and extends it, and nothing here shows a law choosing to grow two ways.
+In the owner's terms: a base of knots alone holds the grid's two independent orders, and it can be grown one distinction at a
+time. Reaching far is needed only to start a line, where the new cell is tied to the far corner, so in that sense every cell
+relates to all the others. Everything inside is filled locally. The two-way structure is this meeting pattern's own: the growth
+reads and extends it, and nothing here shows a law choosing to grow two ways.
 
 | Step | Knots | Reach (largest L1 from the new cell) | Unique? |
 | --- | --- | --- | --- |
@@ -53,19 +57,23 @@ new-line knots, each holding an opposite corner.
 
 ## What it means for A97
 
-On knots alone, the owner's reading now holds in two dimensions too. A pairwise base made of betweenness knots holds two
-independent orders, its rows and columns, with an exact ruler (d = 2·L1) and nothing skipped. It grows one distinction at a time,
-and its own states name where the next knots go. The weave, critical, does not do this (`WEAVE-LAWS-20261117-001`); the grid of
-betweenness knots does. The price is again states: the 4 × 4 grid has 14 states for 16 distinctions.
+*Scoped on 17 November 2026, after `KNOT-ORDER-20261117-001`'s referee.* Under the ruler of A98's exact betweenness, d = 2·L1, a
+base of betweenness knots holds the grid's two independent orders, its rows and columns, with nothing skipped, and its base is
+determined by its pair counts. It grows one distinction at a time, and an outside rule that reads only its states finds where the
+next knots go.
+- **By `WEAVE-LAWS-20261117-001`'s transfer-gap reading, the grid base is frozen.** The 4 × 4 grid has 14 states for 16
+  distinctions. So a comparison with the weave would cross two readings, and none is made.
+- **The two orders are put in by where the knots go and read back.** They are the classical cut system of a product of two paths.
+- **What is new is the growth accounting.**
 
-A97 stays under challenge. It now has a positive case built from knots in two dimensions, on a given meeting pattern.
+A97 stays under challenge. Under A98's reading it has a two-way case built from knots, on a given meeting pattern.
 
 ## What the knot picture explained
 
 - **Two kinds of growth, two costs.** Starting a line is end growth: the new cell's knot must straddle every cut, which only the
   opposite corner does. Filling is local: each cut through the new cell's square is caught by one of three knots inside it.
 - **The parity knot.** The cut system's law on a unit square is a four-place parity, the knot that hides the most. Three
-  betweenness knots do the same job, so here the parity knot is the compact form of three pairwise ones.
+  betweenness knots do the same job, so here the parity knot is the compact form of three three-place ones.
 
 Known mathematics, labelled: Young diagrams as median-closed subsets of the grid, halfspaces as Djoković–Winkler classes,
 squaregraphs, and the duality of cuts and cycles. Local: the growth accounting and the uniqueness of the new-line knot.
@@ -99,7 +107,7 @@ Not consulted after the read-out.
 | This attempt: grow two independent orders with knots | **Status:** Successful (referee pending) | One forced knot per new line, three per filled cell, order-independent totals, placements named by the states; 4 of 4 held |
 | Local direction: dimension built by knots | Promising | Grown in two dimensions on a given pattern; whether a law chooses its dimension is open |
 | Broader exploration: knots alone, nothing given | Unexplored | A rule reading only the states that decides by itself to start a second line |
-| Long-term goal: G1 and G16 | Capability gained | Knots alone grow two independent orders, and the states name each next step |
+| Long-term goal: G1 and G16 | Capability gained | A base of knots alone holds and grows the grid's two orders; an outside rule reading only the states finds each next step |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 

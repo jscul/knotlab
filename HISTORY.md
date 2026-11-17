@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the order study, confirmed by its referee, with three narrowings
+
+- The order study (`KNOT-ORDER-20261117-001`) was confirmed by its referee with no Block. Its count of exactly m + 1 single knots
+  that keep a line is now proved for every knot at every m.
+- Narrowed: an outside rule reads the states and chooses each placement; the knots do not choose.
+- Narrowed: the grid's two orders, read from betweenness on every box, are the grid's own arrangement read back as its halfspaces.
+- Narrowed: the ruler is named, the disagreement count with exact betweenness. By the transfer-gap reading the line is frozen, so
+  the comparison with the weave is withdrawn. The line is the flip-symmetric implication chain, its order put in by where the knots
+  go and read back. What is new is the growth analysis.
+- The same three narrowings were applied at once to the grid-growth study (`GRID-GROW-20261117-001`), still with its referee.
+- Small fixes: a gap in one proof closed; inverted reporting flags; "pairwise" in the sense "determined by its pair counts" replaced,
+  since the glossary uses it otherwise; "spiral" replaced by "inward"
+  ([decision note](research/KNOT-ORDER-20261117-001/knot_order.md),
+  [referee's report](research/KNOT-ORDER-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026: the knot-law study, confirmed by its referee, with two narrowings
 
 - The knot-law study (`WEAVE-LAWS-20261117-001`) was confirmed by its referee with no Block.

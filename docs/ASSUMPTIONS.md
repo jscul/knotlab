@@ -2573,16 +2573,20 @@ evidence: results and their status come from the records each entry links.
   look disordered with every knot pairwise, so the narrowing holds for one-knot-per-orientation laws only
   (`WEAVE-MIX-20261117-001` tests the rest).
   The order study `KNOT-ORDER-20261117-001`
-  ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md); referee pending) gave a positive case built from knots
-  alone. A line of betweenness knots, grown one knot per step, is pairwise, and its disagreement count is an exact ruler with
-  nothing skipped. Every distinction relates to every other in it, and its own states name where the next knot must go: between
-  two neighbours (a knot with only those two) or beyond an end (a knot with both ends). Statically, betweenness on every box of a
-  grid holds two independent orders. The price is states: the line has only 2n.
+  ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md); refereed) gave, under A98's reading (the disagreement
+  count with exact additive betweenness), a case built from knots alone. A line of betweenness knots, grown one knot per step, is
+  determined by its pair counts, and its count is an exact ruler with nothing skipped in which every distinction relates to every
+  other. An outside rule reading only its states finds where the next knot must go: between two neighbours (a knot with only
+  those two) or beyond an end (a knot with both ends). The line is the flip-symmetric implication chain: its order is put in by
+  where the knots go and read back, and by `WEAVE-LAWS-20261117-001`'s transfer-gap reading it is frozen (2n states).
   `GRID-GROW-20261117-001` ([decision note](../research/GRID-GROW-20261117-001/grid_grow.md); referee pending) grew the
-  two-way grid the same way: a new row or column costs one forced knot tying the new cell to its neighbour and the opposite corner,
-  and a filled cell costs exactly three, which can stay in its unit square. The states name every placement. That is two
-  independent orders grown from knots on a given meeting pattern.
+  grid's two orders the same way, under the same reading. A new row or column costs one forced knot tying the new cell to its
+  neighbour and the opposite corner, and a filled cell costs exactly three, which can stay in its unit square. The two orders are
+  the grid's own arrangement read back as its halfspaces, and the base is frozen by the transfer-gap reading.
 - **History.**
+  - 2026-11-17 · The knot-built cases scoped after `KNOT-ORDER-R1` (Narrowing): the ruler named (A98's), the line frozen by the
+    transfer-gap reading, its order put in by the knots' placement and read back, the choosing done by an outside rule; status
+    unchanged.
   - 2026-11-17 · A two-dimensional positive case added by `GRID-GROW-20261117-001`; status unchanged.
   - 2026-11-17 · The weave narrowing scoped after the referee `WEAVE-LAWS-R1`: one-knot-per-orientation laws only; status unchanged.
   - 2026-11-17 · A positive case built from knots added by `KNOT-ORDER-20261117-001`; status unchanged.

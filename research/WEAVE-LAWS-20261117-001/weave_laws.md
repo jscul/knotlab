@@ -12,8 +12,9 @@ any read-out (`266f96fde`; the contract's amendment time 19:47Z should read 19:4
 
 **On the weave, no tested knot law has a distance read from pair counts that both carries all its information and is a ruler.**
 "Carries the information" is about the family of all bases of a law. "Ruler" is about one base, the weave's meeting pattern.
-- **The pairwise laws that put one knot on every up knot and one on every down knot are critical or frozen.** *Scoped after the
-  referee: all 16 such laws are, but a sparse mix of signed knots, and one law on a 2 × 2 cell, look disordered (see Referee).* Only the not-all-equal class of knots is pairwise: its pair counts carry all of a
+- **The laws determined by their pair counts that put one knot on every up knot and one on every down knot are critical or
+  frozen.** *Scoped after the
+  referee: all 16 such laws are, but a sparse mix of signed knots, and one law on a 2 × 2 cell, look disordered (see Referee).* Only the not-all-equal class of knots gives bases determined by their pair counts: they carry all of a
   base's information (proved, L1; the census confirms it through six distinctions). On the weave:
   - plain not-all-equal, and its signed copies whose signs agree on every pair, are gauge copies of the triangular
     antiferromagnet and critical (proved, L2; measured, gap × width 1.192, 1.216, 1.225 toward the conformal 1.238);
@@ -21,7 +22,7 @@ any read-out (`266f96fde`; the contract's amendment time 19:47Z should read 19:4
     1, except NAE up with place 1 odd down, which has exactly 2 on two live rows (1.0595 per distinction at width 12, and no state
     at odd widths); all tend to 1 per distinction (the referee's exact test; the Arnoldi values above 1 were artifacts).
   Neither kind gives a ruler.
-- **The laws that give a ruler are not pairwise.** OR (some 1 on every knot) and "not exactly two ones" are disordered. The second
+- **The laws that give a ruler are not determined by their pair counts.** OR (some 1 on every knot) and "not exactly two ones" are disordered. The second
   is hard hexagons at activity one (L3), with 1.39549 states per distinction, Baxter's constant. Their transfer gaps settle at
   1.12 and 0.86 per row, so their counts' log grows linearly with distance. But their pair counts do not determine their bases:
   OR's first collide at six distinctions (44,521 colliding groups among 1,048,576 relations), and "not exactly two"'s at five.
@@ -34,7 +35,7 @@ any read-out (`266f96fde`; the contract's amendment time 19:47Z should read 19:4
 In the owner's terms: on this meeting pattern, the distance that carries a law's information does not step outward from a start
 without skipping, and the distances that do step outward carry only part of the information.
 
-| Law | Class | Information pairwise? | On the weave | States per distinction (width 12) | Gap per row (widths 6, 9, 12) |
+| Law | Class | Determined by pair counts? | On the weave | States per distinction (width 12) | Gap per row (widths 6, 9, 12) |
 | --- | --- | --- | --- | --- | --- |
 | NAE | complementary pair | yes (proved; census 16, 1,023, 97,248 injective) | critical (known; gauge copy) | 1.3857 | 0.199, 0.135, 0.102 (× width 1.19, 1.22, 1.23) |
 | signed NAE, signs agreeing (place 2 odd) | complementary pair | yes | critical (L2): the same spectrum as NAE at every even width, twisted at every odd width (gauge i mod 2) | 1.3857 | 0.199, 0.094, 0.102 |
@@ -78,18 +79,19 @@ without skipping, and the distances that do step outward carry only part of the 
 
 A97 asks whether the distance that carries a base's information is also the one that orders it. On the weave, among the twelve
 laws tested, the answer is no.
-- The law whose information is pairwise is critical or frozen there, so its counts set no scale.
+- The law whose bases are determined by their pair counts is critical or frozen there, so its counts set no scale.
 - The laws with a scale keep part of their information in counts of three.
 
 This is a narrowing of where the reading could hold on this meeting pattern, not a test of other patterns. A97 stays under
 challenge. The open question now has two forms:
-- whether a non-uniform arrangement of pairwise knots on the weave can be disordered;
+- whether a non-uniform arrangement of not-all-equal-class knots on the weave can be disordered;
 - whether knots alone, on some meeting pattern, build an order among their distinctions (the owner's knots-first answer).
 
 ## What the knot picture explained
 
-Being pairwise and having a scale pull in opposite directions here.
-- **Pairwise means frustrated or frozen.** A knot is pairwise only if it excludes a complementary pair. On the weave that makes
+Being determined by pair counts and having a scale pull in opposite directions here.
+- **Determined by pair counts means frustrated or frozen.** A knot's bases are determined by pair counts only if it excludes a
+  complementary pair. On the weave that makes
   every knot a frustrated triangle. With agreeing signs, the frustration is the triangular antiferromagnet's, which is critical.
   With disagreeing signs, no consistent bond signs exist, and the rows lock.
 - **Scale needs counts of three.** The knots that give a scale exclude states of one parity, so they are not complementary pairs.
@@ -143,7 +145,7 @@ day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
    - NAE with a random 10% of signed knots levels off at a gap near 0.20 per row from width 9 to 15, with 1.30 states per
      distinction, over 5,000 rows;
    - one periodic law, p3 at one up knot in every 2 × 2 cell, has gaps 0.257, 0.240 and 0.233 at widths 8, 10 and 12.
-   Both look disordered with every knot pairwise. They are probes: Lyapunov exponents, few seeds and small widths. An endless
+   Both look disordered with every knot in the not-all-equal class. They are probes: Lyapunov exponents, few seeds and small widths. An endless
    independent random mix may be contradictory somewhere; the periodic law avoids that. So "obstruction learned", A97's narrowing
    and the goals checkpoint hold for one-knot-per-orientation laws only. `WEAVE-MIX-20261117-001` is the test.
 2. **Narrowing.** The gap's mode is a complex pair at phase 2π/3, the mode a single distinction feels. P7's miss is a period-three
@@ -165,16 +167,16 @@ day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: which knot laws on the weave give a ruler | **Status:** Successful (referee pending) | Pairwise laws: critical (agreeing signs) or frozen (disagreeing); ruler laws (OR, hard hexagons) not pairwise; 6 of 8 held |
+| This attempt: which knot laws on the weave give a ruler | **Status:** Successful (refereed) | Laws determined by pair counts: critical (agreeing signs) or frozen (disagreeing); ruler laws (OR, hard hexagons) not; 6 of 8 held |
 | Local direction: one distance that carries the information and steps outward | Promising | Not among one-knot-per-orientation laws; the referee's probes find candidates among mixed arrangements |
-| Broader exploration: which meeting patterns and laws do both | Unexplored | Off-critical pairwise patterns exist elsewhere (the chain grid of `DISTANCE-DIM-20261117-001`) |
+| Broader exploration: which meeting patterns and laws do both | Unexplored | Off-critical not-all-equal-class patterns exist elsewhere (the chain grid of `DISTANCE-DIM-20261117-001`) |
 | Long-term goal: G1 and G16 | Obstruction learned, for one-knot-per-orientation laws | For such laws, information and order sit in different laws' counts; a sparse mix and a 2 × 2 periodic law look disordered (referee), which `WEAVE-MIX-20261117-001` tests |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Can a non-uniform arrangement of pairwise knots on the weave be disordered? Random and periodic mixes of the four signed not-all-equal knots per triangle | 2/3, the premise's positive case on the weave if yes | 3/3, the same transfer code with position-dependent laws | Freeze a classification of periodic mixes up to period 3 → stop at the first disordered one, or at a proof that mixed signs lock rows | Alternative |
+| 1 | Can a non-uniform arrangement of not-all-equal-class knots on the weave be disordered? Random and periodic mixes of the four signed not-all-equal knots per triangle | 2/3, the premise's positive case on the weave if yes | 3/3, the same transfer code with position-dependent laws | Freeze a classification of periodic mixes up to period 3 → stop at the first disordered one, or at a proof that mixed signs lock rows | Alternative |
 | 2 | Can knots alone build an order among their distinctions (the owner's knots-first answer), for example through distinctions that knots force or settle? | 3/3 | 1/3 | Look for knot patterns whose settled distinctions carry exact betweenness → stop at a pattern or an obstruction | Alternative |
 | 3 | B195, outlines of the disordered laws' rulers (OR, hard hexagons) | 1/3 | 3/3 | Queued for its own owner | Queued elsewhere |
 

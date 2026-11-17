@@ -360,7 +360,8 @@ and 5 in the count exactly when it does in the order
 ([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md);
 scoped after its referee, 17 November 2026).
 Which knot laws on the weave give a ruler (`WEAVE-LAWS-20261117-001`, proof and
-frozen computation, referee pending)? None that is also pairwise. Only the
+frozen computation, refereed)? None whose bases are also determined by their
+pair counts. Only the
 not-all-equal class keeps all its information in pair counts. On the weave,
 with signs that agree on every pair, it is the triangular antiferromagnet in
 disguise, which is critical; with signs that disagree, its rows lock. The laws
@@ -369,7 +370,7 @@ in the literature), keep part of their information in counts of three. On this
 meeting pattern, information and a scale sit in different laws, for laws that
 put one knot kind on every up knot and one on every down knot; its referee's
 probes find a sparse mix, and one law on a 2 × 2 cell, that look disordered
-with every knot pairwise
+with every knot in the not-all-equal class
 ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); scoped
 after its referee, 17 November 2026).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
@@ -381,11 +382,14 @@ neighbours needs a knot with just those two, and one placed beyond an end needs
 a knot with both ends. Exactly that many single knots keep a line: one per
 gap, plus one past each end. The line's own states name those places, the ends
 at the largest count and the neighbours at count 2. A rule that reads only the
-states grew a line to fourteen, and no direction is stored. The line is
-pairwise, its count is an exact ruler, and every distinction in it relates to
-every other. Statically, betweenness on every box of a grid holds two
-independent orders, its rows and its columns
-([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md)).
+states (an outside rule; the knots do not choose) grew a line to fourteen, and
+no direction is stored. The line is
+determined by its pair counts, its count is an exact ruler under exact
+betweenness, and every distinction in it relates to every other. Statically, betweenness on every box of a grid holds two
+independent orders, its rows and its columns: the grid's own arrangement, read
+back ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md);
+scoped after its referee: under the transfer-gap reading the line is frozen,
+and an outside rule, not the knots, does the reading and the choosing).
 That grid can be grown the same way (`GRID-GROW-20261117-001`, proof and frozen
 computation, referee pending). Starting a new row or column costs one knot, and
 it is forced: the new cell between its neighbour and the opposite corner, the
@@ -393,8 +397,9 @@ one cell across every cut. Filling a cell costs exactly three knots, and they
 can stay in its unit square: the new cell between its left and lower
 neighbours, and each of those between the corner and the new cell. A single
 four-place parity on the square does the same, since a cut crosses a square
-through opposite sides or not at all. The states name every placement. So
-knots alone grow two independent orders, reaching far only to start a line
+through opposite sides or not at all. An outside rule reading only the states
+finds every placement. So a base of knots alone holds and grows the grid's own
+two orders, reaching far only to start a line
 ([decision note](../research/GRID-GROW-20261117-001/grid_grow.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with

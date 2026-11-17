@@ -1,4 +1,4 @@
-# Which knot laws are pairwise, and which are gauge copies of the triangular antiferromagnet
+# Which knot laws are determined by their pair counts, and which are gauge copies of the triangular antiferromagnet
 
 Status: Proved
 
@@ -7,7 +7,8 @@ three-place knots, L2's sign test on the study's laws, and L3 on small weaves. T
 
 ## Statements
 
-- **L1. Only the not-all-equal class is pairwise.** Write a three-place knot's allowed set as a function of ±1 values.
+- **L1. Only the not-all-equal class is determined by its pair counts.** (Worded "pairwise" until 17 November 2026; the
+  glossary's "pairwise" means defined by two-place projections, which no knot is.) Write a three-place knot's allowed set as a function of ±1 values.
   - Its degree-three Fourier coefficient is the parity imbalance of its excluded set: excluded states of even weight minus those of
     odd weight.
   - Among the 34 knots, that imbalance is zero exactly for the 4 that exclude one complementary pair (corrected from 8 after the referee), the not-all-equal class with

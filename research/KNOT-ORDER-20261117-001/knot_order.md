@@ -1,6 +1,7 @@
 # How knots build an order: which distinction each new knot must share
 
-Epic `KNOT-ORDER-20261117-001`, 17 November 2026, by Claude. Goals G1 and G16; tests A97. Referee pending. It answers Codex's
+Epic `KNOT-ORDER-20261117-001`, 17 November 2026, by Claude. Goals G1 and G16; tests A97. Refereed: report
+[R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 17 November (see Referee). It answers Codex's
 recommended question after the owner's knots-first answer, on the coordinator's go-ahead. Pre-registration:
 [preregistration.md](preregistration.md), frozen in commit `11978fa6f` at 20:14:09 UTC; the run went from 20:14:16 to 20:14:39
 UTC. Proof: [proof.md](../../proofs/KNOT-ORDER-20261117-001A/KNOT-ORDER-20261117-001A-P001_growing_a_line/proof.md). Code:
@@ -28,23 +29,25 @@ B(a, b, c), "b lies between a and c". It excludes the two joint states in which 
   This is a property of that growth rule, not of the line. Growing inward, each new distinction between the two last placed,
   builds the same kind of line with every distinction in at most three knots and no hub. What every rule needs, by the straddle
   lemma, is a knot across every pair of places where the values could change twice.
-- **The grown line is pairwise, and an exact ruler.** It is built from not-all-equal-class knots, so its pair counts carry all its
+- **The grown line is determined by its pair counts, and under exact betweenness its count is a ruler.** It is built from not-all-equal-class knots, so its pair counts carry all its
   information, and its count is 2|i − j|, with nothing skipped. Whatever knots generate it, its states put every distinction
   between every two on either side: each relates to all the others, as the owner says "3" does.
 - **Two independent orders, statically.** On a grid, put betweenness on every triple with the middle one inside the box of the
   other two. The states are then exactly the row cuts and the column cuts: 10 on 3 × 3, 12 on 3 × 4. The count is twice the L1
-  distance, and betweenness is exactly "inside the box". The base holds two independent orders, rows and columns. This is a given
-  meeting pattern; no growth rule for it is claimed yet.
+  distance, and betweenness is exactly "inside the box". The base holds two independent orders, rows and columns: the grid's own
+  arrangement of places, read back as its halfspaces (the classical cut system of a product of two paths; median graphs). This is
+  a given meeting pattern; no growth rule for it is claimed here. *Scoped after the referee.*
 
-In the owner's terms, on knots alone: an order with nothing skipped, read and continued from the states, in which each
-distinction relates to every other. Growing the order needs at each step a knot across the place where the new distinction goes.
-The states tell the pattern where those places are. They do not tell it which one to choose, and the choice leaves no trace.
+In the owner's terms: the base is made of knots alone. It holds an order with nothing skipped, and in it each distinction relates
+to every other. Growing the order needs at each step a knot across the place where the new distinction goes. An outside rule that
+uses only the states, with names erased, can find those places. The knots do not choose: the rule does, and the choice leaves no
+trace. *Scoped after the referee: the first version said the pattern reads and continues itself.*
 
 | Rule (one knot per step) | Line at every n? | States at n = 14 | Why |
 | --- | --- | --- | --- |
 | start: B(start, end, new) | yes | 28 = 2n | forced for outward growth (K3) |
 | states only: ends found from the counts, a random side | yes, ends found uniquely at every step | 28 | K5 |
-| spiral: new between the last two placed | yes | 28 | K4; no hub |
+| inward: new between the last two placed | yes | 28 | K4; no hub |
 | neighbour: B(previous, end, new) | no, from n = 4 | 1,220 = 2·F(15) | K2: two changes slip past |
 | random earlier: B(x, end, new) | no, from n = 5 | 456 | x not the start |
 
@@ -57,7 +60,7 @@ The states tell the pattern where those places are. They do not tell it which on
 | G2 | neighbour: not a line from 4, 2·F(n + 1) | held | 10, 16, 26, 42, 68, … 1,220 |
 | G3 | random: not a line at 14 unless every x was the start; count in (28, 1,220) | held | 456; a line only at n = 4, where x was the start |
 | G4 | states: a line, ends unique | held | every step |
-| G5 | spiral: a line | held | every n |
+| G5 | inward: a line | held | every n |
 | X1 | exactly m + 1 single knots keep a line, all betweenness: m − 1 between neighbours, 2 beyond the ends | held | 4, 5, …, 9 at m = 3 … 8; kinds read post hoc (below) |
 | X2 | 3 × 3: 10; 3 × 4: 12; d = 2·L1; betweenness = boxes | held | exactly |
 
@@ -70,16 +73,25 @@ Reading each stored constraint's excluded pair and its odd place gives exactly t
 - B(0, m − 1, new) beyond one end;
 - B(m − 1, 0, new) beyond the other end.
 
-The count, m + 1, was computed as frozen.
+The count, m + 1, was computed as frozen. *After the referee:* the flags were inverted, not just unusable. The post hoc reading
+is right, and the referee proved the m + 1 count for all 34 knots at every m and checked all 255 three-place constraints to
+m = 14. So X1 reads: count as frozen; kinds post hoc, since proved.
 
 ## What it means for A97
 
-On knots alone, in one dimension, the owner's reading holds exactly: a distance that carries all the information, the
-disagreement count of a pairwise base, orders it with nothing skipped, and every distinction relates to every other. What it costs
-is states. The line has only 2n of them (`DISTANCE-ORDER-20261117-001`, statement 6: order costs states). The weave, the critical
-two-way pattern, does not do both (`WEAVE-LAWS-20261117-001`). A line of knots does.
+*Scoped after the referee.* Under one reading of the ruler, the disagreement count with exact additive betweenness (A98's), the
+line does both. The count carries all the information, since the base is determined by its pair counts, and it orders the line
+with nothing skipped, with every distinction related to every other.
+- **By the transfer-gap reading of `WEAVE-LAWS-20261117-001`, the line is frozen.** It has (2n)^(1/n) states per distinction,
+  tending to 1, and its correlation 1 − 2r/n falls through zero. So the first version's "the weave does not do both; a line of
+  knots does" compared two readings. Within either single reading the comparison does not stand, and it is withdrawn.
+- **The line is classical.** It is the implication chain of `DISTANCE-DIM-20261117-001` made symmetric under flipping all
+  values: in the gauge of any one distinction, its 2n states are the up-sets of a chain, each twice. Its order is put in by where
+  the knots go, and read back.
+- **What is new is the growth analysis:** which knot each step needs, and that the states name the placements.
 
-A97 stays under challenge. It now has a positive case built from knots: the grown line, and statically the box-betweenness grid.
+A97 stays under challenge. Under A98's reading it has a case built from knots, the grown line, where the order is the knots'
+placement read back.
 
 ## What the knot picture explained
 
@@ -87,8 +99,8 @@ A97 stays under challenge. It now has a positive case built from knots: the grow
   change, a knot must straddle it.
 - **Why the start mattered in the first draft.** Outward growth from one end must keep a knot across the whole line, so it keeps
   returning to the start. Inward growth straddles each new place with its two neighbours.
-- **The pattern can continue itself.** Its states name the ends and the neighbours, so it can find its own next placements. That is
-  "retain the shared distinction" in the strongest form available: the states carry it, with no names and no history.
+- **The states carry the placements.** They name the ends and the neighbours, so an outside rule that reads only the states can
+  find every next placement, with no names and no history (scoped after the referee: the rule chooses, not the knots).
 
 Known mathematics, labelled:
 - betweenness and orders up to reversal (Huntington and Kline; Fishburn);
@@ -117,19 +129,43 @@ python3 -B experiments/KNOT-ORDER-20261117-001B/KNOT-ORDER-20261117-001B-E001_gr
 Consulted before the freeze. It:
 - corrected the draft's claim that every step must reach the start: inserting between neighbours needs only the neighbours, so
   there are m + 1 placements;
-- gave the straddle lemma in general form, the spiral rule and the Fibonacci count;
+- gave the straddle lemma in general form, the inward rule and the Fibonacci count;
 - gave the gauge reading of the hub and the two-way grid statement.
 
 Not consulted after the read-out.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 17 November 2026, by a background referee thread with fresh code and no Codex: confirmed with
+fixes, no Block. K1 to K7 hold. K3's "forced" is right: the random rule confirms it over 40 seeds. The referee proved "exactly
+m + 1" for all 34 knots at every m and enumerated all 255 three-place constraints to m = 14. K1 is exhaustive to four places at
+n = 5 to 7, the grids hold to 4 × 5, and B passes the canonical knot test. A blind rerun, renaming every distinction at random
+before each read, grew exact lines in 20 of 20 seeds to n = 16, from a supplied first knot with fresh distinctions. Folded in the
+same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing, wording.** "Knots alone" is kept for the base. "The pattern can continue itself" and "reads its next placements
+   from its states" are replaced: an outside rule reads all the states and chooses.
+2. **Narrowing.** K7's two orders are the grid's own arrangement of places, read back as its halfspaces. That is the classical cut
+   system of a product of two paths, as in `DISTANCE-DIM-20261117-001`.
+3. **Narrowing.** For A97, the ruler is named: the disagreement count with A98's exact betweenness. By `WEAVE-LAWS-20261117-001`'s
+   transfer-gap reading the line is frozen, so the weave comparison crossed two readings and is withdrawn. The line is the
+   flip-symmetric implication chain, its order put in by where the knots go and read back. The growth analysis is what is new.
+4. **Not a block.**
+   - K4's proof had a gap. K1 forces only that the knot straddles the new place, B(a, new, b) with a ≤ k < b; adjacency needs
+     the count 2m + 2(b − a), so b = a + 1.
+   - The frozen kind flags were inverted, not just unusable. X1 reads: count as frozen; kinds post hoc, since proved.
+   - Classical names added: flip-symmetric chain up-sets (Alexandrov; Birkhoff), median-graph halfspaces (Mulder; Bandelt), and
+     the 2F(n + 1) count (folklore).
+   - Words: "pairwise" clashed with the glossary, where no knot is pairwise. That meaning is now "determined by its pair
+     counts". "Spiral" is now "inward", though the run's rule key stays "spiral". `check.py`'s K1 check is described as sampled.
 
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: how knots build an order | **Status:** Successful (referee pending) | The straddle lemma; m + 1 placements; the states name them; the grown line is pairwise and an exact ruler; 8 of 8 held |
+| This attempt: how knots build an order | **Status:** Successful (referee pending) | The straddle lemma; m + 1 placements; the states name them; the grown line is determined by its pair counts and, under exact betweenness, a ruler; 8 of 8 held |
 | Local direction: an order built and continued by knots alone | Promising | Exact in one dimension; two independent orders exist statically on a grid |
 | Broader exploration: dimension built by knots | Unexplored | Growth for the grid, and whether a law can choose to grow two ways |
-| Long-term goal: G1 and G16 | Capability gained | Knots alone build an order with nothing skipped and read its next placements from their states |
+| Long-term goal: G1 and G16 | Capability gained | A base of knots alone holds an order with nothing skipped; an outside rule reading only its states finds every next placement |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 

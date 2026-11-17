@@ -2,13 +2,13 @@
 
 Status: Proved
 
-Ticket `KNOT-ORDER-20261117-001A`, 17 November 2026, by Claude. Epic `KNOT-ORDER-20261117-001`. `check.py` checks K1, K2 and K4
+Ticket `KNOT-ORDER-20261117-001A`, 17 November 2026, by Claude. Epic `KNOT-ORDER-20261117-001`. `check.py` checks K1 (by sampling), K2 and K4
 by enumeration. The proofs are below.
 
 ## Words
 
 - **Betweenness knot.** B(a, b, c) is the knot excluding 010 and 101 on (a, b, c): b lies between a and c in the disagreement count
-  (`DISTANCE-ORDER-20261117-001A`, statement 1). It is a not-all-equal knot with b read flipped, so it is pairwise.
+  (`DISTANCE-ORDER-20261117-001A`, statement 1). It is a not-all-equal knot with b read flipped, so its bases are determined by their pair counts.
 - **Line.** A line on an order of n distinctions is the base whose states are the thresholds, the states whose values change at
   most once along the order: 2n states. It is the conjunction of B on every ordered triple, and its disagreement count is 2|i − j|.
 - **The (p, q) state.** For p < q, it is the state 0…0 1…1 0…0 (and its flip) with changes after positions p and q.
@@ -36,7 +36,7 @@ by enumeration. The proofs are below.
   - the neighbours are the pairs at count 2.
   So the states name all m + 1 admissible placements. Up to renaming, every placement gives the same base, a line on m + 1. The
   placement is a choice the rule makes, and no direction is stored in the result.
-- **K6. The line is pairwise and a ruler.** A line is built from not-all-equal-class knots, so its pair counts and N determine it
+- **K6. The line is determined by its pair counts, and a ruler under exact betweenness.** A line is built from not-all-equal-class knots, so its pair counts and N determine it
   (`DISTANCE-ORDER-20261117-001A`, statement 3(a)). Its count 2|i − j| is an exact ruler with nothing skipped. Whatever knots
   generate it, the base implies B on every ordered triple: each distinction is related to every other.
 - **K7. A two-way order from knots alone.** On an r × c grid, put B(a, b, c) on every triple with b coordinatewise between a and
@@ -68,9 +68,9 @@ when y₁ = 0, which is the implication y_m ≤ y_(m+1). ∎
 
 **K4.** For B(k, new, k + 1): when x_k = x_(k+1) the new value is forced equal to them, and when they differ it is free. That
 gives (2m − 2) + 2·2 = 2(m + 1) states, which are exactly the thresholds of 1..k, new, k + 1..m. For a single betweenness knot
-(i, j, l) to keep a line, it must straddle every new (p, q) pattern of the new order, which forces its places to be the new
-distinction and its two neighbours there (K1, as in K3). Each of the m + 1 positions gives one knot. Non-betweenness knots are
-excluded by `check.py`'s exhaustive search for m ≤ 8, not by this proof. The inward spiral places each new distinction between
+to keep a line, K1 forces only that it straddles the new place: B(a, new, b) with a ≤ k < b. Its base then has 2m + 2(b − a)
+states, which is the line's 2(m + 1) only when b = a + 1, so the two are neighbours (gap closed after the referee). Each of the m + 1 positions gives one knot. Non-betweenness knots are
+excluded by the frozen exhaustive search for m ≤ 8, and for every knot at every m by the referee's proof (R1, section 1). The inward inward places each new distinction between
 the two last placed, which are adjacent. Each distinction is in at most three knots: as a neighbour twice and as the new one once.
 ∎
 
@@ -88,7 +88,8 @@ interval, the box. ∎
 ## Provenance
 
 - Betweenness axioms, and the order determined up to reversal: classical (Huntington and Kline 1917; Huntington 1924; Fishburn
-  1971).
+  1971). The line's states are the up-sets of a chain, flip-symmetric (Alexandrov; Birkhoff); the grid's are median-graph
+  halfspaces (Mulder; Bandelt); the 2F(n + 1) count is folklore (added after the referee).
 - Thresholds are the cut (split) system of a path, with d its cut metric; the grid's cuts are the split system of a product of
   paths (Buneman 1971; Deza and Laurent; median graphs).
 - Deciding whether an arbitrary set of betweenness triples has a consistent order is NP-complete (Opatrný 1979). The growth here is

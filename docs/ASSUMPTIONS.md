@@ -2535,13 +2535,19 @@ evidence: results and their status come from the records each entry links.
   to seven distinctions, not the smallest emergent unit. Followed by `DISTANCE-ORDER-20261117-001`
   ([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md)), after the owner's answer, with the reading of "no
   skipping" in A98. Proved: the disagreement count determines every not-all-equal base from four distinctions, and fails at three
-  (one knot against none, told apart only by the rates); in it, "c lies between a and b" is exactly a three-place constraint, and a
-  chain of m distinctions allows at most 2m joint values. On bases whose knots form no cycle, −log₃ |1 − 2d/N| equals steps apart,
-  so one distance read from the states is built from unit steps and carries the base. Computed: on the thread, a chain of knots and
-  the six-regular weave, no distinction lies between two others in the disagreement count, while steps apart and bond distance,
-  which have the order, do not carry everything. The reading holds where knots form no cycle and splits where they do. Open:
-  whether some other reading of the weave's states gives both.
+  (one knot against none, told apart only by the rates); in it, "c lies between a and b" is exactly a three-place constraint (a
+  knot where its pairs are free), and a chain of m distinctions allows at most 2m joint values. On bases whose knots form no cycle,
+  −log₃ |1 − 2d/N| equals steps apart, so one distance read from the states is built from unit steps and carries the base.
+  Computed, under A98's exact additive betweenness: on the thread, a chain of knots and the six-regular weave, no distinction lies
+  between two others in the disagreement count, while steps apart and bond distance (up to its offset), which have the order, do
+  not carry everything. Read only as order (its referee `DISTANCE-ORDER-R1`), the weave's count has a local order with nothing
+  skipped whose nearest neighbours are twelve, the six knot-neighbours and the six second neighbours of the start's own class, not
+  the weave's own six. So the reading holds on knot trees; on the thread and the weave the split rests on A98, and it is not a
+  property of cycles (cyclic bases with betweenness are common at five and six distinctions). Open: whether some reading of the
+  weave's states gives both.
 - **History.**
+  - 2026-11-17 · Challenge scoped after the referee `DISTANCE-ORDER-R1` (Narrowing): the split on bases with cycles is A98's strict
+    reading on two bases, and an order-only reading finds a local order on the weave; status unchanged.
   - 2026-11-17 · Narrowed by `DISTANCE-ORDER-20261117-001` (proof and frozen computation): holds where knots form no cycle, and
     splits between two distances where they do; status unchanged. The word "differ count" replaced by "disagreement count"
     throughout.
@@ -2580,12 +2586,19 @@ evidence: results and their status come from the records each entry links.
   Flips are counted because the owner says there is no direction: betweenness on distinctions alone changes when one distinction's
   values are renamed.
 - **Rests on it.** That epic's reading that the disagreement count has no order on the thread, the knot chain and the six-regular
-  weave, and so A97's narrowing to bases whose knots form no cycle.
+  weave, and so A97's narrowing on bases whose knots form cycles.
 - **Challenge.** Read "no skipping" another way and test it on the same bases. Two candidates:
   - order by levels from a start, where reaching a farther level needs a member of each nearer level, measured on a coarsened
     count;
   - betweenness of sets rather than of single distinctions.
 
   Or ask the owner whether his order is between three distinctions, as a knot is, or in levels from a starting point.
+  Partly run by the referee `DISTANCE-ORDER-R1` with the weakest order-only reading: w lies between u and v when it is nearer to
+  each than they are to each other (the literature's relative neighbourhood graph), in τ = −log₃ |1 − 2d/N|. On the weave at L = 6, 9
+  and 12, a start then has exactly twelve neighbours with nothing between: its six knot-neighbours and the six second neighbours of
+  its own class. Every farther distinction has something between. So under that reading the count carries a local order with
+  nothing skipped, but not the weave's own steps, and A97's narrowing on bases with cycles holds only under this entry's strict
+  reading.
 - **History.**
+  - 2026-11-17 · Challenge partly run by the referee `DISTANCE-ORDER-R1` (the order-only reading above); status unchanged.
   - 2026-11-17 · Added by `DISTANCE-ORDER-20261117-001`.

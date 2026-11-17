@@ -146,6 +146,7 @@ evidence: results and their status come from the records each entry links.
 | [A89](#a89--learned-search-is-judged-by-work-per-unseen-instance-against-re-tuned-rules) | Learned search is judged by work per unseen instance against re-tuned rules | measure | Assumed |
 | [A90](#a90--the-owners-slow-loop-changes-the-pattern-where-the-search-dwells-keeping-its-allowed-states) | The owner's slow loop changes the pattern where the search dwells, keeping its allowed states | reading | Assumed |
 | [A91](#a91--a-slow-loop-is-judged-by-charged-work-both-loops-and-every-rebuild-counted) | A slow loop is judged by charged work, both loops and every rebuild counted | measure | Assumed |
+| [A92](#a92--a-slow-loop-earns-its-eagerness-by-doubling-and-halving-on-the-share-its-batched-merges-remove) | A slow loop earns its eagerness by doubling and halving on the share its batched merges remove | reading | Assumed |
 
 ## Entries
 
@@ -2357,3 +2358,25 @@ evidence: results and their status come from the records each entry links.
     work-only ratios were corrected (`docs/CORRECTIONS.md`). `EARN-BUDGET-20261117-001` charges the sorting, at k log k per
     sort of k items, before its test.
   - 2026-11-17 · Adopted by `SLOW-LOOP-20261117-001`.
+
+### A92 · A slow loop earns its eagerness by doubling and halving on the share its batched merges remove
+
+**Assumed** · 2026-11-17 · reading
+
+- **Statement.** A structure-changing slow loop sets its own budget as follows:
+  - the moves it finds are kept until they number a fixed share of the classes, and the pattern is rebuilt then;
+  - its next budget doubles (up to a ceiling) when that rebuild removed at least theta of the classes per unit of slow work
+    relative to fast work since the last rebuild, and halves (down to a floor) otherwise.
+
+  This is the rule by which the program reads "a slow loop that monitors its own changes".
+- **Why.** Adopted by `EARN-BUDGET-20261117-001` at its freeze. It is the productivity-driven scheduling of inprocessing that CDCL
+  solvers use, moved to a local-search fast loop. The alternatives were a fixed budget (SLOW-LOOP's, which stays lazy when tuned
+  where nothing pays), a budget set from the probes' find rate (which SLOW-LOOP's runs showed does not separate the patterns), and
+  pricing a batch before its rebuild.
+- **Rests on it.** The reading-2 verdict of `EARN-BUDGET-20261117-001` and its diagnosis that the ramp, not the moves, limits the
+  gain.
+- **Challenge.** Price the pending moves before rebuilding (run the tie cascade alone) and jump to the ceiling on the first
+  productive batch. If that closes most of the 3 to 4 times regret against the per-cell fixed budget, the doubling rule was the
+  obstruction, not self-monitoring as such (`EARN-BUDGET-20261117-001`#1).
+- **History.**
+  - 2026-11-17 · Adopted by `EARN-BUDGET-20261117-001`.

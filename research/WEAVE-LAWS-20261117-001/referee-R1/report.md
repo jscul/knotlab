@@ -55,8 +55,9 @@
     term is a pair count d or N − d.
 
     N and the pair counts therefore say which signed knots a relation satisfies. A base's relation is the conjunction of the knots
-    it satisfies. This is the one line that extends L1's last sentence (statement 3(a), proved for plain NAE) to the class with
-    literals.
+    it satisfies. This re-derives statement 3(a) of `DISTANCE-ORDER-20261117-001A`, which already covers the signed knots
+    (001/110, 010/101 and 100/011, through its statement 1), so L1's last sentence needs no extension. *Corrected by the referee
+    after the first commit:* an earlier wording said 3(a) was proved for plain NAE only.
 - **L3 (proved).**
   - **Hard hexagons.** States per distinction are 1.39549 at widths 8 to 12. The torus counts are 23, 202, 4,217 and 162,315, and,
     one size past, 12,329,634 at L = 7.

@@ -1,0 +1,1098 @@
+{
+ "0_knot_test_B": {
+  "allowed": [
+   "000",
+   "010",
+   "011",
+   "100",
+   "101",
+   "111"
+  ],
+  "variables": [
+   "a",
+   "c",
+   "b"
+  ],
+  "is_knot": true,
+  "binding": true,
+  "invisible_in_parts": true,
+  "loss_on_erasure": true,
+  "coexistence": true,
+  "pairwise_definable": false
+ },
+ "1_R1": {
+  "4": {
+   "consecutive": 10,
+   "all_triples": 8,
+   "extra": [
+    "0110",
+    "1001"
+   ]
+  },
+  "5": {
+   "consecutive": 16,
+   "all_triples": 10,
+   "extra": [
+    "00110",
+    "01100",
+    "01110",
+    "10001",
+    "10011",
+    "11001"
+   ]
+  },
+  "B(0,1,2)+B(0,2,3)": 8
+ },
+ "2_growth": {
+  "start": [
+   {
+    "n": 3,
+    "states": 6,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 4,
+    "states": 8,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 5,
+    "states": 10,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 6,
+    "states": 12,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 7,
+    "states": 14,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 8,
+    "states": 16,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 9,
+    "states": 18,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 10,
+    "states": 20,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 11,
+    "states": 22,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 12,
+    "states": 24,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 13,
+    "states": 26,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 14,
+    "states": 28,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 15,
+    "states": 30,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 16,
+    "states": 32,
+    "line": true,
+    "line_along_rule_order": true
+   }
+  ],
+  "neighbour": [
+   {
+    "n": 3,
+    "states": 6,
+    "line": true,
+    "line_along_rule_order": true,
+    "2F(n+1)": 6
+   },
+   {
+    "n": 4,
+    "states": 10,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 10
+   },
+   {
+    "n": 5,
+    "states": 16,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 16
+   },
+   {
+    "n": 6,
+    "states": 26,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 26
+   },
+   {
+    "n": 7,
+    "states": 42,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 42
+   },
+   {
+    "n": 8,
+    "states": 68,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 68
+   },
+   {
+    "n": 9,
+    "states": 110,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 110
+   },
+   {
+    "n": 10,
+    "states": 178,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 178
+   },
+   {
+    "n": 11,
+    "states": 288,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 288
+   },
+   {
+    "n": 12,
+    "states": 466,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 466
+   },
+   {
+    "n": 13,
+    "states": 754,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 754
+   },
+   {
+    "n": 14,
+    "states": 1220,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 1220
+   },
+   {
+    "n": 15,
+    "states": 1974,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 1974
+   },
+   {
+    "n": 16,
+    "states": 3194,
+    "line": false,
+    "line_along_rule_order": false,
+    "2F(n+1)": 3194
+   }
+  ],
+  "random": [
+   {
+    "n": 3,
+    "states": 6,
+    "line": true,
+    "line_along_rule_order": true,
+    "x_is_start": false
+   },
+   {
+    "n": 4,
+    "states": 10,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": true
+   },
+   {
+    "n": 5,
+    "states": 14,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": false
+   },
+   {
+    "n": 6,
+    "states": 24,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": true
+   },
+   {
+    "n": 7,
+    "states": 34,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": true
+   },
+   {
+    "n": 8,
+    "states": 44,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": false
+   },
+   {
+    "n": 9,
+    "states": 78,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": false
+   },
+   {
+    "n": 10,
+    "states": 116,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": false
+   },
+   {
+    "n": 11,
+    "states": 170,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": false
+   },
+   {
+    "n": 12,
+    "states": 286,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": true
+   },
+   {
+    "n": 13,
+    "states": 424,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": false
+   },
+   {
+    "n": 14,
+    "states": 636,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": false
+   },
+   {
+    "n": 15,
+    "states": 962,
+    "line": false,
+    "line_along_rule_order": false,
+    "x_is_start": true
+   },
+   {
+    "n": 16,
+    "states": 1436,
+    "line": false,
+    "line_along_rule_order": false
+   }
+  ],
+  "spiral": [
+   {
+    "n": 3,
+    "states": 6,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 4,
+    "states": 8,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 5,
+    "states": 10,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 6,
+    "states": 12,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 7,
+    "states": 14,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 8,
+    "states": 16,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 9,
+    "states": 18,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 10,
+    "states": 20,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 11,
+    "states": 22,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 12,
+    "states": 24,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 13,
+    "states": 26,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 14,
+    "states": 28,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 15,
+    "states": 30,
+    "line": true,
+    "line_along_rule_order": true
+   },
+   {
+    "n": 16,
+    "states": 32,
+    "line": true,
+    "line_along_rule_order": true
+   }
+  ],
+  "states": [
+   {
+    "n": 3,
+    "states": 6,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 2
+   },
+   {
+    "n": 4,
+    "states": 8,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 3
+   },
+   {
+    "n": 5,
+    "states": 10,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 4
+   },
+   {
+    "n": 6,
+    "states": 12,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 5
+   },
+   {
+    "n": 7,
+    "states": 14,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 6
+   },
+   {
+    "n": 8,
+    "states": 16,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 7
+   },
+   {
+    "n": 9,
+    "states": 18,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 8
+   },
+   {
+    "n": 10,
+    "states": 20,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 9
+   },
+   {
+    "n": 11,
+    "states": 22,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 10
+   },
+   {
+    "n": 12,
+    "states": 24,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 11
+   },
+   {
+    "n": 13,
+    "states": 26,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 12
+   },
+   {
+    "n": 14,
+    "states": 28,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 13
+   },
+   {
+    "n": 15,
+    "states": 30,
+    "line": true,
+    "line_along_rule_order": true,
+    "ends_unique": true,
+    "ends_at_2(n-1)": true,
+    "neighbour_pairs_at_2": 14
+   },
+   {
+    "n": 16,
+    "states": 32,
+    "line": true,
+    "line_along_rule_order": true
+   }
+  ]
+ },
+ "2_states_rule_more_seeds": {
+  "1": true,
+  "2": true,
+  "3": true,
+  "4": true,
+  "5": true,
+  "6": true,
+  "7": true,
+  "8": true,
+  "9": true,
+  "10": true,
+  "11": true,
+  "12": true,
+  "13": true,
+  "14": true,
+  "15": true,
+  "16": true,
+  "17": true,
+  "18": true,
+  "19": true,
+  "20": true
+ },
+ "2_random_study_seed": [
+  6,
+  8,
+  12,
+  18,
+  26,
+  40,
+  58,
+  90,
+  132,
+  188,
+  298,
+  456
+ ],
+ "2_random_line_iff_every_x_was_start_40_seeds_mismatches": 0,
+ "3_single_constraints": [
+  {
+   "m": 3,
+   "line_keeping": 4,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": [
+    {
+     "a": 0,
+     "b": 1,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(a, new, b), a and b neighbours",
+     "new_neighbours_in_line": [
+      0,
+      1
+     ]
+    },
+    {
+     "a": 0,
+     "b": 2,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(new, a, b): beyond end a",
+     "new_neighbours_in_line": [
+      0
+     ]
+    },
+    {
+     "a": 0,
+     "b": 2,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(new, b, a): beyond end b",
+     "new_neighbours_in_line": [
+      2
+     ]
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(a, new, b), a and b neighbours",
+     "new_neighbours_in_line": [
+      1,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "m": 4,
+   "line_keeping": 5,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": [
+    {
+     "a": 0,
+     "b": 1,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(a, new, b), a and b neighbours",
+     "new_neighbours_in_line": [
+      0,
+      1
+     ]
+    },
+    {
+     "a": 0,
+     "b": 3,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       1
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(new, a, b): beyond end a",
+     "new_neighbours_in_line": [
+      0
+     ]
+    },
+    {
+     "a": 0,
+     "b": 3,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       1,
+       1,
+       0
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(new, b, a): beyond end b",
+     "new_neighbours_in_line": [
+      3
+     ]
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(a, new, b), a and b neighbours",
+     "new_neighbours_in_line": [
+      1,
+      2
+     ]
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "excluded_on_new_a_b": [
+      [
+       0,
+       1,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "is_one_of_34": true,
+     "kind": "B(a, new, b), a and b neighbours",
+     "new_neighbours_in_line": [
+      2,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "m": 5,
+   "line_keeping": 6,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 6,
+   "line_keeping": 7,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 7,
+   "line_keeping": 8,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 8,
+   "line_keeping": 9,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 9,
+   "line_keeping": 10,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 10,
+   "line_keeping": 11,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 11,
+   "line_keeping": 12,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 12,
+   "line_keeping": 13,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 13,
+   "line_keeping": 14,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  },
+  {
+   "m": 14,
+   "line_keeping": 15,
+   "kinds": [
+    "B(a, new, b), a and b neighbours",
+    "B(new, a, b): beyond end a",
+    "B(new, b, a): beyond end b"
+   ],
+   "all_in_34": true,
+   "constraints": null
+  }
+ ],
+ "4_K1": [
+  {
+   "n": 5,
+   "constraints_tested": 1305,
+   "violations": 0
+  },
+  {
+   "n": 6,
+   "constraints_tested": 3885,
+   "violations": 0
+  },
+  {
+   "n": 7,
+   "constraints_tested": 9030,
+   "violations": 0
+  }
+ ],
+ "5_K2": [
+  {
+   "r": 3,
+   "n": 4,
+   "states": 10,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 3,
+   "n": 5,
+   "states": 16,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 3,
+   "n": 6,
+   "states": 26,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 4,
+   "n": 5,
+   "states": 12,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 4,
+   "n": 6,
+   "states": 18,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 4,
+   "n": 7,
+   "states": 26,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 5,
+   "n": 6,
+   "states": 14,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 5,
+   "n": 7,
+   "states": 20,
+   "(1,r)_state_survives": true,
+   "line": false
+  },
+  {
+   "r": 5,
+   "n": 8,
+   "states": 28,
+   "(1,r)_state_survives": true,
+   "line": false
+  }
+ ],
+ "6_K7": [
+  {
+   "grid": "3x3",
+   "box_triples": 68,
+   "states": 10,
+   "2(r+c)-2": 10,
+   "states_are_row_and_column_cuts": true,
+   "d_is_2L1": true,
+   "betweenness_is_box": true
+  },
+  {
+   "grid": "3x4",
+   "box_triples": 168,
+   "states": 12,
+   "2(r+c)-2": 12,
+   "states_are_row_and_column_cuts": true,
+   "d_is_2L1": true,
+   "betweenness_is_box": true
+  },
+  {
+   "grid": "4x4",
+   "box_triples": 400,
+   "states": 14,
+   "2(r+c)-2": 14,
+   "states_are_row_and_column_cuts": true,
+   "d_is_2L1": true,
+   "betweenness_is_box": true
+  },
+  {
+   "grid": "3x5",
+   "box_triples": 335,
+   "states": 14,
+   "2(r+c)-2": 14,
+   "states_are_row_and_column_cuts": true,
+   "d_is_2L1": true,
+   "betweenness_is_box": true
+  },
+  {
+   "grid": "4x5",
+   "box_triples": 780,
+   "states": 16,
+   "2(r+c)-2": 16,
+   "states_are_row_and_column_cuts": true,
+   "d_is_2L1": true,
+   "betweenness_is_box": true
+  }
+ ],
+ "7_gauge": [
+  {
+   "n": 4,
+   "gauge_image_is_chain_upsets": true,
+   "each_twice": true,
+   "states_per_distinction": 1.681792830507429,
+   "correlation_end_to_r": [
+    0.5,
+    0.0,
+    -0.5
+   ]
+  },
+  {
+   "n": 6,
+   "gauge_image_is_chain_upsets": true,
+   "each_twice": true,
+   "states_per_distinction": 1.5130857494229015,
+   "correlation_end_to_r": [
+    0.6666666666666667,
+    0.33333333333333337,
+    0.0,
+    -0.33333333333333326,
+    -0.6666666666666667
+   ]
+  },
+  {
+   "n": 8,
+   "gauge_image_is_chain_upsets": true,
+   "each_twice": true,
+   "states_per_distinction": 1.4142135623730951,
+   "correlation_end_to_r": [
+    0.75,
+    0.5,
+    0.25,
+    0.0,
+    -0.25,
+    -0.5,
+    -0.75
+   ]
+  },
+  {
+   "n": 10,
+   "gauge_image_is_chain_upsets": true,
+   "each_twice": true,
+   "states_per_distinction": 1.3492828476735634,
+   "correlation_end_to_r": [
+    0.8,
+    0.6,
+    0.4,
+    0.19999999999999996,
+    0.0,
+    -0.19999999999999996,
+    -0.3999999999999999,
+    -0.6000000000000001,
+    -0.8
+   ]
+  }
+ ]
+}

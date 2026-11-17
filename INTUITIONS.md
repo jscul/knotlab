@@ -2222,7 +2222,10 @@ that earlier records used in two senses.
   both values; each loop brings an open distinction to a knot. The intuition:
   the least thing that could be otherwise. Everything in the guide is built
   from distinctions and from rules about them, and nothing else is assumed,
-  not even a place to put them.
+  not even a place to put them. The owner's reading, in his words (17 November
+  2026): "Distance is the only form of information. That's the entire basis of
+  the 'this versus that' distinction in the smallest emergent unit" (an
+  interpretation, assumption A97).
 - **Joint state.** A value for every variable, written as a string such as 110
   (lesson 1.1). The guide calls it a state for short.
 - **Flip graph.** The states of some variables, two of them linked when they

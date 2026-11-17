@@ -285,6 +285,21 @@ So binary code can build language models and games because the hardware
 supplies the bonds: every gate that uses both of its inputs contains an atom.
 A distinction is the material, and an atom is what holds material together.
 
+**Distance as information (the owner's reading, 17 November 2026).** "Distance
+is the only form of information. That's the entire basis of the 'this versus
+that' distinction in the smallest emergent unit." He said it on reading
+`SPACE-ORDER-20261117-001`, which found that space forces order only through
+steps apart: each untangling phase moves the settled set at most one step, so
+a region that must grow across a weave costs one phase per step. In the
+program's terms the reading says that what a base holds is carried by how far
+its distinctions are from one another as its own law measures it (bond
+distance, steps apart plus one on six-regular weaves), and that a distinction
+is the least such separation. It continues his stance of 22 October that there
+are no values, only relations seeded from this versus that. It is an
+interpretation, recorded as assumption A97 with a test that could challenge it:
+two bases with equal bond distances for every pair but different allowed
+states ([register](ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information)).
+
 ## Requirement and choice
 
 This section reads true as "exists". Whether a knot is a requirement or a

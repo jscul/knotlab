@@ -144,6 +144,7 @@ evidence: results and their status come from the records each entry links.
 | [A87](#a87--in-forcing-the-record-a-law-carries-is-measured-by-how-many-distinctions-it-carries) | In forcing, the record a law carries is measured by how many distinctions it carries | measure | Assumed |
 | [A88](#a88--the-owners-navigating-agent-is-focused-local-search-over-violated-knots) | The owner's navigating agent is focused local search over violated knots | reading | Assumed |
 | [A89](#a89--learned-search-is-judged-by-work-per-unseen-instance-against-re-tuned-rules) | Learned search is judged by work per unseen instance against re-tuned rules | measure | Assumed |
+| [A90](#a90--the-owners-slow-loop-changes-the-pattern-where-the-search-dwells-keeping-its-allowed-states) | The owner's slow loop changes the pattern where the search dwells, keeping its allowed states | reading | Assumed |
 
 ## Entries
 
@@ -2311,3 +2312,24 @@ evidence: results and their status come from the records each entry links.
   n = 800, R was 0.96 [0.82, 1.09], inconclusive rather than a clean loss.
 - **History.**
   - 2026-11-16 · Adopted by `WHERE-NEXT-20261116-001`.
+
+### A90 · The owner's slow loop changes the pattern where the search dwells, keeping its allowed states
+
+**Assumed** · 2026-11-17 · reading
+
+- **Statement.** The owner's second stage (B191: "mutations of the knot structures to improve results", a fast search with a
+  slower loop reshaping the structure, "braids and untangles" as ways of creating structure) is read as a slow loop that, between
+  epochs of a fast local search, changes the knot pattern being searched where the search attended most. Its moves keep the allowed
+  states: merging a tie class (allowed states kept one for one) and adding an implied knot (a signed three-place not-all-equal
+  knot every allowed state satisfies). Novelty+ is the fast loop.
+- **Why.** The coordinator's reading of 2026-11-17, adopted by `SLOW-LOOP-20261117-001` at its freeze. Moves that keep the
+  allowed states make any saving a saving on the same question, and they are what a refutation can certify locally. The
+  alternatives were: moves that keep only satisfiability (eliminating a distinction, breaking the complement symmetry); changes to
+  the agent's own internal knot structure rather than to the pattern it searches; and the owner's "braid" read as carrying open
+  distinctions together (the forcing line's reading).
+- **Rests on it.** The verdicts of `SLOW-LOOP-20261117-001` and the reading of B191's first attempt.
+- **Challenge.** The cheapest discriminator is a slow loop whose moves change the agent instead of the pattern (for example
+  reweighting or adding knots to the agent's own reads), or moves that keep only satisfiability, compared at the same charged
+  work. A saving under another reading that this one misses would overturn it as the reading of the owner's picture.
+- **History.**
+  - 2026-11-17 · Adopted by `SLOW-LOOP-20261117-001` (the coordinator's reading, challengeable).

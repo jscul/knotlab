@@ -6,8 +6,8 @@
     - a new line costs exactly one knot, forced and unique;
     - a filled cell costs three, never two;
     - the totals do not depend on the order.
-  - Every frozen number recomputes with the referee's own code, and one size past, in the 5 × 5 box (251 shapes, 629 steps), every
-    reading holds.
+  - Every frozen number recomputes with the referee's own code. One size past, every reading also holds in the 5 × 5 box (251
+    shapes, 629 steps) and in the 6 × 6 box (923 shapes, 2,771 steps).
   - The referee checked every minimum cover, not only the local ones. All their knots are betweenness knots.
 - **The Block.** Bases with the same states can have different placements. The column of three cells and the three-cell L (the
   growth's own start) have the same states up to renaming, a line of three. Only the L has a cell to fill.
@@ -44,8 +44,8 @@
   - **The knot is fixed.** On (z, b, p) the targets use six of the eight patterns, so the knot excludes exactly 010 and 101: it is
     B(z, b, p).
 
-  The census agrees: 66 of 66 new-line steps in 4 × 4, and 248 of 248 in 5 × 5, have exactly one single-knot cover, that
-  betweenness knot. From a single cell the cost is 0.
+  The census agrees: 66 of 66 new-line steps in 4 × 4, 248 of 248 in 5 × 5 and 920 of 920 in 6 × 6 have exactly one single-knot
+  cover, that betweenness knot. From a single cell the cost is 0.
 - **G3's lower bound (proved for every corner; the coordinator's item 1, "never two").**
   - **A knot that fixes the constants does nothing else.** A knot that kills p flipped on a constant state needs every cut to
     have u or v on p's side. Since no cell of S dominates p, its pair is one cell up and left and one down and right. That pair is
@@ -55,10 +55,10 @@
     x′ ≥ x and y′ ≥ y.
   - **So three are needed.** The referee rewrote both steps and finds them right. They do not depend on the box.
 
-  The census agrees: 71 of 71 fills in 4 × 4, and 379 of 379 in 5 × 5, need exactly 3 and never 2. The unit-square three cover in
+  The census agrees: 71 of 71 fills in 4 × 4, 379 of 379 in 5 × 5 and 1,849 of 1,849 in 6 × 6 need exactly 3 and never 2. The unit-square three cover in
   every case, and so does the four-place parity. That parity is a knot under the canonical test (`knotlab`, `is_knot: true`).
 - **Every minimum cover is made of betweenness knots.** The frozen code checked only the covers within radius 2. The referee
-  enumerated every minimum cover, from 1 to 7,225 distinct ones per fill. In 4 × 4 and 5 × 5 every knot in every one is a
+  enumerated every minimum cover, from 1 to 40,000 distinct ones per fill. In 4 × 4, 5 × 5 and 6 × 6 every knot in every one is a
   betweenness knot.
   - A sketch of why, the referee's and not fully checked: each of the three knots kills one kind of bad state in both
     orientations. Its excluded set then holds a complementary pair, which among the 34 knots means the not-all-equal class. It is
@@ -189,6 +189,8 @@ as (x − 2, y), (x, y − 2), (x + 1, y − 1) and (x − 1, y + 1) can be in S
 
 ## Files
 
+- **`census_6x6.json`:** the same step census in the 6 × 6 box (`referee_grid.census(6, 6)`, about nine minutes), run after the
+  first commit of this report. It confirms every count.
 - **`referee_grid.py` and `.json`:**
   - 1, G1 by brute force (198 shapes);
   - 2, the step census in 4 × 4 and 5 × 5 (6 × 6 with `--six`);

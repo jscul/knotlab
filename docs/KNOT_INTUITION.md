@@ -2081,6 +2081,21 @@ So holes come in two kinds:
    - **Next.** A slow loop that earns its budget from how fast its moves shrink the pattern
      ([decision note](../research/SLOW-LOOP-20261117-001/decision.md)).
 
+   **2026-11-17: a slow loop that earns its budget is safe everywhere and wins on new local patterns, but starts too cautiously**
+   (`EARN-BUDGET-20261117-001`; stress test pending, referee pending).
+   - **The question.** Can the slow loop decide for itself how eager to be? It keeps the ties it finds, merges them in batches, and
+     after each merge doubles its effort if the merge shrank the pattern enough for what it cost, or halves it if not.
+   - **Computed.** Tuned on three patterns of 800 distinctions, it cut total work to 0.56 of the search alone on a local pattern
+     nothing had touched before the test, and to 0.75 and 0.56 on two others, at 3,200 distinctions. On random patterns it cost
+     about 3%. A fixed effort tuned on each local pattern itself did three to four times better, so most of the gain was left
+     unused. Tuned without any local pattern, the rule stayed cautious everywhere.
+   - **Reading.** A loop that watches the yield of its own changes, rather than where the search is stuck, can be made safe. But
+     starting cautious and doubling once per merge is too slow: where ties are rare but each one sets off many others, it never
+     started. The caution was also learned at a size where eagerness did not yet pay. Both moves and the scheduling principle are
+     known from satisfiability solvers.
+   - **Next.** Price a batch of ties before paying for the merge, so that a few rare ties can justify eagerness at once
+     ([decision note](../research/EARN-BUDGET-20261117-001/decision.md)).
+
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
      No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.

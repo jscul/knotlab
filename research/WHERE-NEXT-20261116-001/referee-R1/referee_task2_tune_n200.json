@@ -1,0 +1,2814 @@
+{
+ "task": "2 wide tuning (tune)",
+ "family": "rand",
+ "n": 200,
+ "tuning_seeds": [
+  4000000,
+  4000063
+ ],
+ "reps": 2,
+ "cap": 1000000,
+ "objective": "median flips (censored runs = cap)",
+ "cpu_s": 121.14542173199908,
+ "wall_s": 17.661304712295532,
+ "best": {
+  "adapt_novelty_plus": {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    12,
+    0.4
+   ],
+   "median": 1598.0,
+   "mean_log": 7.458723542221154,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.36983311292668025
+  },
+  "novelty_plus": {
+   "algo": "novelty_plus",
+   "params": [
+    0.675,
+    0.01
+   ],
+   "median": 982.0,
+   "mean_log": 7.014510309714682,
+   "censored": 0,
+   "runs": 128
+  },
+  "novelty_pp": {
+   "algo": "novelty_pp",
+   "params": [
+    0.6,
+    0.01
+   ],
+   "median": 1000.5,
+   "mean_log": 7.011018326076782,
+   "censored": 0,
+   "runs": 128
+  },
+  "probsat": {
+   "algo": "probsat",
+   "params": [
+    2.0,
+    1.0
+   ],
+   "median": 2763.5,
+   "mean_log": 7.921055316993191,
+   "censored": 0,
+   "runs": 128
+  },
+  "walksat": {
+   "algo": "walksat",
+   "params": [
+    0.5
+   ],
+   "median": 3150.0,
+   "mean_log": 8.063326860027049,
+   "censored": 0,
+   "runs": 128
+  }
+ },
+ "grid": [
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    12,
+    0.4
+   ],
+   "median": 1598.0,
+   "mean_log": 7.458723542221154,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.36983311292668025
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    12,
+    0.2
+   ],
+   "median": 1610.5,
+   "mean_log": 7.5003328322307485,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3736974787878362
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    12,
+    0.2
+   ],
+   "median": 1661.0,
+   "mean_log": 7.4381398609829885,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.36192173975727293
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    12,
+    0.4
+   ],
+   "median": 1757.5,
+   "mean_log": 7.549186177217569,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3819082735455476
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    12,
+    0.1
+   ],
+   "median": 1851.5,
+   "mean_log": 7.569511531743023,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3605116268412724
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    6,
+    0.4
+   ],
+   "median": 1887.5,
+   "mean_log": 7.566379571652311,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3316453090927211
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    12,
+    0.4
+   ],
+   "median": 1945.5,
+   "mean_log": 7.438799499333791,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.35504244260898427
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    6,
+    0.2
+   ],
+   "median": 1970.5,
+   "mean_log": 7.604997401884118,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3238781933821125
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    12,
+    0.2
+   ],
+   "median": 2034.5,
+   "mean_log": 7.611881260787186,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.37389795329942355
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    6,
+    0.4
+   ],
+   "median": 2115.0,
+   "mean_log": 7.751342763642568,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3595544371653351
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    3,
+    0.4
+   ],
+   "median": 2167.0,
+   "mean_log": 7.725370328512158,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.30880507000300106
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    12,
+    0.1
+   ],
+   "median": 2181.5,
+   "mean_log": 7.7615396792811175,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.37447713979571695
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    6,
+    0.2
+   ],
+   "median": 2185.5,
+   "mean_log": 7.727982847606439,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.34897747588174777
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    3,
+    0.2
+   ],
+   "median": 2185.5,
+   "mean_log": 7.861562359378929,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3022672309357507
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    3,
+    0.4
+   ],
+   "median": 2226.0,
+   "mean_log": 7.792638097444163,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.30579737661916845
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    6,
+    0.1
+   ],
+   "median": 2242.5,
+   "mean_log": 7.8279130131302725,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.33211309695680225
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    3,
+    0.4
+   ],
+   "median": 2248.5,
+   "mean_log": 7.738212709013477,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3166748112366091
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    6,
+    0.4
+   ],
+   "median": 2283.5,
+   "mean_log": 7.625159683859227,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3360244816586825
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    6,
+    0.1
+   ],
+   "median": 2298.0,
+   "mean_log": 7.846382741890351,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.32597301463403855
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    12,
+    0.1
+   ],
+   "median": 2335.0,
+   "mean_log": 7.763255151612158,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.38422169369967507
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    6,
+    0.2
+   ],
+   "median": 2387.0,
+   "mean_log": 7.859257730822282,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.362928636642906
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    6,
+    0.1
+   ],
+   "median": 2487.0,
+   "mean_log": 7.835992050292447,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.323092595640995
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.05,
+    3,
+    0.1
+   ],
+   "median": 2833.0,
+   "mean_log": 8.003934484606921,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.29109680577127495
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    3,
+    0.1
+   ],
+   "median": 2974.0,
+   "mean_log": 8.064558929720567,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.3013499394160172
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    3,
+    0.1
+   ],
+   "median": 3125.5,
+   "mean_log": 8.048411962708304,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.2944259323407188
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.01,
+    3,
+    0.2
+   ],
+   "median": 3447.0,
+   "mean_log": 8.053488164137587,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.32445371357155717
+  },
+  {
+   "algo": "adapt_novelty_plus",
+   "params": [
+    0.0,
+    3,
+    0.2
+   ],
+   "median": 3625.5,
+   "mean_log": 8.08828601592727,
+   "censored": 0,
+   "runs": 128,
+   "mean_adapted_noise": 0.33498260361799204
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.675,
+    0.01
+   ],
+   "median": 982.0,
+   "mean_log": 7.014510309714682,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.65,
+    0.0
+   ],
+   "median": 1059.0,
+   "mean_log": 7.070072676463412,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.0
+   ],
+   "median": 1077.0,
+   "mean_log": 7.021805661112795,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.75,
+    0.0
+   ],
+   "median": 1107.0,
+   "mean_log": 7.1498691743484475,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.65,
+    0.02
+   ],
+   "median": 1116.5,
+   "mean_log": 7.063131430605658,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.675,
+    0.02
+   ],
+   "median": 1117.5,
+   "mean_log": 6.918276237217841,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.65,
+    0.05
+   ],
+   "median": 1118.5,
+   "mean_log": 7.108632664407738,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.75,
+    0.005
+   ],
+   "median": 1125.0,
+   "mean_log": 7.129291593120564,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.65,
+    0.005
+   ],
+   "median": 1126.5,
+   "mean_log": 7.086922564761178,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.01
+   ],
+   "median": 1130.0,
+   "mean_log": 7.066910182518109,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.575,
+    0.01
+   ],
+   "median": 1137.0,
+   "mean_log": 7.131456462687005,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.675,
+    0.005
+   ],
+   "median": 1138.5,
+   "mean_log": 7.001485849049589,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.625,
+    0.0
+   ],
+   "median": 1166.0,
+   "mean_log": 7.055445580571531,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.02
+   ],
+   "median": 1171.0,
+   "mean_log": 7.146659415882304,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.675,
+    0.0
+   ],
+   "median": 1179.0,
+   "mean_log": 6.99449014840021,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.675,
+    0.05
+   ],
+   "median": 1200.5,
+   "mean_log": 7.209422721586977,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.575,
+    0.02
+   ],
+   "median": 1204.0,
+   "mean_log": 7.147058152156781,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.75,
+    0.01
+   ],
+   "median": 1225.0,
+   "mean_log": 7.191250806964871,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.725,
+    0.01
+   ],
+   "median": 1232.5,
+   "mean_log": 7.0975995768520095,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.775,
+    0.005
+   ],
+   "median": 1251.5,
+   "mean_log": 7.239470663116521,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.1
+   ],
+   "median": 1253.0,
+   "mean_log": 7.297774440940673,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.005
+   ],
+   "median": 1262.0,
+   "mean_log": 7.163242567675029,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.725,
+    0.0
+   ],
+   "median": 1270.0,
+   "mean_log": 7.1751170149761245,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.625,
+    0.05
+   ],
+   "median": 1276.5,
+   "mean_log": 7.10669402160185,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.01
+   ],
+   "median": 1278.0,
+   "mean_log": 7.093574975049876,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.575,
+    0.005
+   ],
+   "median": 1286.0,
+   "mean_log": 7.18583985711641,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.05
+   ],
+   "median": 1290.5,
+   "mean_log": 7.223651961917979,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.65,
+    0.01
+   ],
+   "median": 1291.0,
+   "mean_log": 7.095135318425334,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.775,
+    0.0
+   ],
+   "median": 1299.5,
+   "mean_log": 7.230143906851078,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.725,
+    0.02
+   ],
+   "median": 1300.5,
+   "mean_log": 7.203389154196378,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.775,
+    0.02
+   ],
+   "median": 1334.5,
+   "mean_log": 7.236390276610244,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.625,
+    0.01
+   ],
+   "median": 1349.5,
+   "mean_log": 7.222945587045002,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.02
+   ],
+   "median": 1351.5,
+   "mean_log": 7.228905556360418,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.2
+   ],
+   "median": 1357.5,
+   "mean_log": 7.256244408344898,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.55,
+    0.02
+   ],
+   "median": 1368.0,
+   "mean_log": 7.269068257273085,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.625,
+    0.005
+   ],
+   "median": 1376.0,
+   "mean_log": 7.160337915362961,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.725,
+    0.005
+   ],
+   "median": 1380.0,
+   "mean_log": 7.287602106632936,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.55,
+    0.05
+   ],
+   "median": 1410.5,
+   "mean_log": 7.329203299550937,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.005
+   ],
+   "median": 1420.5,
+   "mean_log": 7.419053710806437,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.575,
+    0.0
+   ],
+   "median": 1430.5,
+   "mean_log": 7.27071692125369,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.75,
+    0.02
+   ],
+   "median": 1430.5,
+   "mean_log": 7.323652161580696,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.55,
+    0.01
+   ],
+   "median": 1433.0,
+   "mean_log": 7.2811673654989395,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.625,
+    0.02
+   ],
+   "median": 1433.5,
+   "mean_log": 7.209009377925311,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.55,
+    0.0
+   ],
+   "median": 1446.0,
+   "mean_log": 7.237370774276227,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.05
+   ],
+   "median": 1449.5,
+   "mean_log": 7.300053324520633,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.775,
+    0.01
+   ],
+   "median": 1472.0,
+   "mean_log": 7.233758701962426,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.0
+   ],
+   "median": 1490.5,
+   "mean_log": 7.234832547059726,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.1
+   ],
+   "median": 1509.0,
+   "mean_log": 7.440179153066461,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.15
+   ],
+   "median": 1524.5,
+   "mean_log": 7.3426694326066455,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.775,
+    0.05
+   ],
+   "median": 1526.5,
+   "mean_log": 7.440454829962463,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.005
+   ],
+   "median": 1531.5,
+   "mean_log": 7.536344604683622,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.6,
+    0.005
+   ],
+   "median": 1536.0,
+   "mean_log": 7.369033381832891,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.725,
+    0.05
+   ],
+   "median": 1538.5,
+   "mean_log": 7.382989065173081,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.55,
+    0.005
+   ],
+   "median": 1544.0,
+   "mean_log": 7.352735728381688,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.575,
+    0.05
+   ],
+   "median": 1554.0,
+   "mean_log": 7.29638153749573,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.15
+   ],
+   "median": 1600.5,
+   "mean_log": 7.476574182193652,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.0
+   ],
+   "median": 1637.0,
+   "mean_log": 7.520691626574974,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.05
+   ],
+   "median": 1647.0,
+   "mean_log": 7.36976202895263,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.02
+   ],
+   "median": 1713.5,
+   "mean_log": 7.402277026373076,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.05
+   ],
+   "median": 1719.5,
+   "mean_log": 7.656786357066764,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.1
+   ],
+   "median": 1721.0,
+   "mean_log": 7.427876903932889,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.01
+   ],
+   "median": 1729.0,
+   "mean_log": 7.465324871115901,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.0
+   ],
+   "median": 1795.5,
+   "mean_log": 7.550690442170106,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.01
+   ],
+   "median": 1833.0,
+   "mean_log": 7.564241323539452,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.5,
+    0.2
+   ],
+   "median": 1853.0,
+   "mean_log": 7.458265167476464,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.02
+   ],
+   "median": 1947.0,
+   "mean_log": 7.795676476035493,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.02
+   ],
+   "median": 1950.5,
+   "mean_log": 7.569462873278319,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.1
+   ],
+   "median": 1964.0,
+   "mean_log": 7.712087313694402,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.2
+   ],
+   "median": 1972.5,
+   "mean_log": 7.660015475838527,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.75,
+    0.05
+   ],
+   "median": 1981.0,
+   "mean_log": 7.381863474985251,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.7,
+    0.15
+   ],
+   "median": 1998.0,
+   "mean_log": 7.6753684858352615,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.01
+   ],
+   "median": 2295.0,
+   "mean_log": 8.099651931317858,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.2
+   ],
+   "median": 2407.0,
+   "mean_log": 7.70218476720066,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.1
+   ],
+   "median": 2432.0,
+   "mean_log": 7.906869466430023,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.15
+   ],
+   "median": 2543.0,
+   "mean_log": 8.091732689450254,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.15
+   ],
+   "median": 2624.5,
+   "mean_log": 7.964364527412329,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.005
+   ],
+   "median": 2821.5,
+   "mean_log": 8.151284764632384,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.1
+   ],
+   "median": 2885.5,
+   "mean_log": 8.283120526011208,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.01
+   ],
+   "median": 2888.0,
+   "mean_log": 8.123440393090148,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.15
+   ],
+   "median": 2995.5,
+   "mean_log": 8.139760711848504,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.02
+   ],
+   "median": 3126.5,
+   "mean_log": 8.204166661986484,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.2
+   ],
+   "median": 3171.5,
+   "mean_log": 8.126010531922876,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.05
+   ],
+   "median": 3211.5,
+   "mean_log": 7.942225447159904,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.0
+   ],
+   "median": 3266.0,
+   "mean_log": 8.235612162405028,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.4,
+    0.005
+   ],
+   "median": 3563.5,
+   "mean_log": 8.256860620271281,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.8,
+    0.2
+   ],
+   "median": 3826.0,
+   "mean_log": 8.438406646611309,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.05
+   ],
+   "median": 3839.5,
+   "mean_log": 8.416730204310486,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.0
+   ],
+   "median": 4258.0,
+   "mean_log": 8.262732903131614,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.005
+   ],
+   "median": 5597.0,
+   "mean_log": 8.771393719040585,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.02
+   ],
+   "median": 5733.5,
+   "mean_log": 8.808713621039134,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.15
+   ],
+   "median": 5913.0,
+   "mean_log": 9.084584404788615,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.01
+   ],
+   "median": 5969.0,
+   "mean_log": 8.818077999130892,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.2
+   ],
+   "median": 6332.0,
+   "mean_log": 8.75167532069356,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.1
+   ],
+   "median": 6439.5,
+   "mean_log": 8.894013152811638,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.05
+   ],
+   "median": 7114.5,
+   "mean_log": 8.895476254886113,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.3,
+    0.0
+   ],
+   "median": 7337.5,
+   "mean_log": 9.050049249694643,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.15
+   ],
+   "median": 9669.0,
+   "mean_log": 9.254519063225143,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.01
+   ],
+   "median": 10776.5,
+   "mean_log": 9.314069950848523,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.005
+   ],
+   "median": 11337.0,
+   "mean_log": 9.3478523686905,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.0
+   ],
+   "median": 11719.5,
+   "mean_log": 9.258199583603623,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.1
+   ],
+   "median": 11896.0,
+   "mean_log": 9.512030998159037,
+   "censored": 3,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.05
+   ],
+   "median": 12279.0,
+   "mean_log": 9.516754344274805,
+   "censored": 6,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.2
+   ],
+   "median": 12594.0,
+   "mean_log": 9.642427216873305,
+   "censored": 9,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.005
+   ],
+   "median": 12911.5,
+   "mean_log": 9.87008107295635,
+   "censored": 10,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.9,
+    0.2
+   ],
+   "median": 14540.5,
+   "mean_log": 9.670955952678899,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.02
+   ],
+   "median": 15943.0,
+   "mean_log": 9.658918672188026,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.01
+   ],
+   "median": 16278.5,
+   "mean_log": 9.94435232119786,
+   "censored": 15,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.05
+   ],
+   "median": 17292.5,
+   "mean_log": 9.712974305808165,
+   "censored": 3,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.02
+   ],
+   "median": 19635.0,
+   "mean_log": 9.953090906381355,
+   "censored": 12,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.1
+   ],
+   "median": 21207.5,
+   "mean_log": 10.266078613149213,
+   "censored": 12,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.1
+   ],
+   "median": 25149.5,
+   "mean_log": 10.226626225534238,
+   "censored": 4,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.15
+   ],
+   "median": 30403.0,
+   "mean_log": 10.10460878713306,
+   "censored": 16,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.2,
+    0.0
+   ],
+   "median": 40268.5,
+   "mean_log": 10.312086080721336,
+   "censored": 19,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.15
+   ],
+   "median": 53577.5,
+   "mean_log": 10.696569145847631,
+   "censored": 6,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.05
+   ],
+   "median": 58933.0,
+   "mean_log": 10.853254374082805,
+   "censored": 30,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    1.0,
+    0.2
+   ],
+   "median": 73278.0,
+   "mean_log": 11.097720276159778,
+   "censored": 10,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.01
+   ],
+   "median": 127302.5,
+   "mean_log": 11.304549430898284,
+   "censored": 31,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.02
+   ],
+   "median": 156178.5,
+   "mean_log": 11.179259746880387,
+   "censored": 38,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.005
+   ],
+   "median": 293682.0,
+   "mean_log": 11.666145960218405,
+   "censored": 44,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_plus",
+   "params": [
+    0.1,
+    0.0
+   ],
+   "median": 552189.5,
+   "mean_log": 11.672751136711732,
+   "censored": 60,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.6,
+    0.01
+   ],
+   "median": 1000.5,
+   "mean_log": 7.011018326076782,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.75,
+    0.005
+   ],
+   "median": 1089.0,
+   "mean_log": 7.1190617533800005,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.65,
+    0.005
+   ],
+   "median": 1100.0,
+   "mean_log": 6.9926715643639366,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.6,
+    0.05
+   ],
+   "median": 1103.5,
+   "mean_log": 7.105310789887638,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.7,
+    0.005
+   ],
+   "median": 1106.0,
+   "mean_log": 7.058726917078495,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.7,
+    0.01
+   ],
+   "median": 1163.0,
+   "mean_log": 7.134356955181172,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.55,
+    0.02
+   ],
+   "median": 1180.5,
+   "mean_log": 7.038740171314771,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.6,
+    0.005
+   ],
+   "median": 1195.5,
+   "mean_log": 7.113047535063078,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.8,
+    0.005
+   ],
+   "median": 1196.0,
+   "mean_log": 7.285453967852247,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.65,
+    0.02
+   ],
+   "median": 1211.0,
+   "mean_log": 7.08844836632216,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.65,
+    0.01
+   ],
+   "median": 1213.0,
+   "mean_log": 7.122940358759024,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.65,
+    0.05
+   ],
+   "median": 1231.5,
+   "mean_log": 7.110787958386072,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.7,
+    0.02
+   ],
+   "median": 1236.0,
+   "mean_log": 7.1731552738706945,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.75,
+    0.02
+   ],
+   "median": 1294.5,
+   "mean_log": 7.231284055557403,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.6,
+    0.1
+   ],
+   "median": 1354.5,
+   "mean_log": 7.295738986781706,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.6,
+    0.02
+   ],
+   "median": 1372.0,
+   "mean_log": 7.198226231421761,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.55,
+    0.01
+   ],
+   "median": 1407.5,
+   "mean_log": 7.22009887721917,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.75,
+    0.05
+   ],
+   "median": 1440.0,
+   "mean_log": 7.43247191503153,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.4,
+    0.2
+   ],
+   "median": 1440.5,
+   "mean_log": 7.330828382451484,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.5,
+    0.05
+   ],
+   "median": 1469.5,
+   "mean_log": 7.302609253770309,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.75,
+    0.01
+   ],
+   "median": 1488.5,
+   "mean_log": 7.275251452244267,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.55,
+    0.05
+   ],
+   "median": 1493.5,
+   "mean_log": 7.283995710414093,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.7,
+    0.05
+   ],
+   "median": 1501.0,
+   "mean_log": 7.427401836603959,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.8,
+    0.01
+   ],
+   "median": 1521.5,
+   "mean_log": 7.388148229244658,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.5,
+    0.1
+   ],
+   "median": 1533.5,
+   "mean_log": 7.23227987842785,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.55,
+    0.005
+   ],
+   "median": 1602.5,
+   "mean_log": 7.410265017338832,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.5,
+    0.02
+   ],
+   "median": 1651.0,
+   "mean_log": 7.404771002728082,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.4,
+    0.05
+   ],
+   "median": 1731.5,
+   "mean_log": 7.618360842299035,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.8,
+    0.02
+   ],
+   "median": 1771.0,
+   "mean_log": 7.5565411615596485,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.3,
+    0.2
+   ],
+   "median": 1774.0,
+   "mean_log": 7.534533032080076,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.5,
+    0.01
+   ],
+   "median": 1876.5,
+   "mean_log": 7.401627237887361,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.4,
+    0.1
+   ],
+   "median": 1877.5,
+   "mean_log": 7.509309538706397,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.5,
+    0.2
+   ],
+   "median": 1909.0,
+   "mean_log": 7.5994115118425025,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.7,
+    0.1
+   ],
+   "median": 2295.0,
+   "mean_log": 7.760829574063827,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.4,
+    0.01
+   ],
+   "median": 2347.0,
+   "mean_log": 7.754025732809375,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.4,
+    0.02
+   ],
+   "median": 2452.0,
+   "mean_log": 7.876130448744012,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.3,
+    0.1
+   ],
+   "median": 3001.5,
+   "mean_log": 8.133889368233731,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.3,
+    0.05
+   ],
+   "median": 3024.5,
+   "mean_log": 8.136706269449776,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.6,
+    0.2
+   ],
+   "median": 3296.0,
+   "mean_log": 8.25161485368039,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.9,
+    0.01
+   ],
+   "median": 3305.5,
+   "mean_log": 8.262093723906762,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.3,
+    0.02
+   ],
+   "median": 3471.0,
+   "mean_log": 8.558442989692274,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.8,
+    0.05
+   ],
+   "median": 3512.0,
+   "mean_log": 8.116539808752513,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.9,
+    0.02
+   ],
+   "median": 5165.5,
+   "mean_log": 8.595560444470838,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.8,
+    0.1
+   ],
+   "median": 5267.5,
+   "mean_log": 8.652849139146252,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.3,
+    0.01
+   ],
+   "median": 6556.0,
+   "mean_log": 8.861167448801591,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.9,
+    0.05
+   ],
+   "median": 7879.0,
+   "mean_log": 9.030157978155122,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.7,
+    0.2
+   ],
+   "median": 11598.5,
+   "mean_log": 9.396607589243086,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.9,
+    0.1
+   ],
+   "median": 19807.0,
+   "mean_log": 10.021822781079527,
+   "censored": 3,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.8,
+    0.2
+   ],
+   "median": 49242.5,
+   "mean_log": 10.698351336154333,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "novelty_pp",
+   "params": [
+    0.9,
+    0.2
+   ],
+   "median": 133887.5,
+   "mean_log": 11.832311204363524,
+   "censored": 19,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.0,
+    1.0
+   ],
+   "median": 2763.5,
+   "mean_log": 7.921055316993191,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.75,
+    0.5
+   ],
+   "median": 2827.0,
+   "mean_log": 8.060500560719147,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.5,
+    0.25
+   ],
+   "median": 2836.0,
+   "mean_log": 8.002188347108875,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.25,
+    0.25
+   ],
+   "median": 2909.5,
+   "mean_log": 8.35048029005993,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.25,
+    0.5
+   ],
+   "median": 3017.0,
+   "mean_log": 8.175580484144007,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.0,
+    0.5
+   ],
+   "median": 3251.0,
+   "mean_log": 8.094220697177429,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.25,
+    0.25
+   ],
+   "median": 3302.0,
+   "mean_log": 8.061753637467783,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.5,
+    0.5
+   ],
+   "median": 3377.5,
+   "mean_log": 8.074713537439436,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.0,
+    0.25
+   ],
+   "median": 3447.5,
+   "mean_log": 8.416434405527779,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.75,
+    1.0
+   ],
+   "median": 3560.0,
+   "mean_log": 8.164828632407797,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.0,
+    1.0
+   ],
+   "median": 3626.0,
+   "mean_log": 8.33486315074623,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.75,
+    0.25
+   ],
+   "median": 3748.5,
+   "mean_log": 8.253306786619824,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.5,
+    1.0
+   ],
+   "median": 3908.0,
+   "mean_log": 8.251204603419513,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.75,
+    1.0
+   ],
+   "median": 3955.5,
+   "mean_log": 8.42171149121222,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.25,
+    0.5
+   ],
+   "median": 3982.5,
+   "mean_log": 8.278499021307388,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.0,
+    0.25
+   ],
+   "median": 3985.5,
+   "mean_log": 8.420722791425014,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.25,
+    1.0
+   ],
+   "median": 4023.5,
+   "mean_log": 8.347427042774775,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.5,
+    0.5
+   ],
+   "median": 4059.0,
+   "mean_log": 8.358815368977469,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.25,
+    1.0
+   ],
+   "median": 4064.5,
+   "mean_log": 8.626091159820634,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.75,
+    0.5
+   ],
+   "median": 4183.5,
+   "mean_log": 8.4519585888474,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.5,
+    1.0
+   ],
+   "median": 4951.5,
+   "mean_log": 8.428188512481718,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.5,
+    0.25
+   ],
+   "median": 5224.5,
+   "mean_log": 8.731778899756733,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    4.0,
+    1.0
+   ],
+   "median": 5811.5,
+   "mean_log": 8.935041774621181,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.0,
+    0.5
+   ],
+   "median": 5852.0,
+   "mean_log": 8.66928840918407,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.0,
+    0.5
+   ],
+   "median": 5894.5,
+   "mean_log": 9.006735215828218,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.25,
+    1.0
+   ],
+   "median": 6055.0,
+   "mean_log": 8.782037225016287,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.75,
+    1.0
+   ],
+   "median": 6129.5,
+   "mean_log": 8.88933102431978,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.5,
+    1.0
+   ],
+   "median": 6582.5,
+   "mean_log": 8.93445784116253,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.0,
+    0.25
+   ],
+   "median": 7602.0,
+   "mean_log": 9.225293465495596,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.25,
+    0.5
+   ],
+   "median": 8876.0,
+   "mean_log": 9.255826512856482,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    2.75,
+    0.25
+   ],
+   "median": 9529.0,
+   "mean_log": 9.22232716333665,
+   "censored": 2,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.75,
+    0.5
+   ],
+   "median": 10985.5,
+   "mean_log": 9.499687046924626,
+   "censored": 4,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    1.0,
+    1.0
+   ],
+   "median": 13286.5,
+   "mean_log": 9.659890481481154,
+   "censored": 1,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.5,
+    0.5
+   ],
+   "median": 13952.5,
+   "mean_log": 9.600602528258197,
+   "censored": 3,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.25,
+    0.25
+   ],
+   "median": 14709.5,
+   "mean_log": 9.787918313506319,
+   "censored": 6,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    4.0,
+    0.5
+   ],
+   "median": 16261.0,
+   "mean_log": 10.038163677799062,
+   "censored": 14,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.5,
+    0.25
+   ],
+   "median": 18675.0,
+   "mean_log": 9.955402696688424,
+   "censored": 12,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    3.75,
+    0.25
+   ],
+   "median": 22922.0,
+   "mean_log": 10.334977987495352,
+   "censored": 20,
+   "runs": 128
+  },
+  {
+   "algo": "probsat",
+   "params": [
+    4.0,
+    0.25
+   ],
+   "median": 31703.0,
+   "mean_log": 10.436855258048158,
+   "censored": 14,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.5
+   ],
+   "median": 3150.0,
+   "mean_log": 8.063326860027049,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.6
+   ],
+   "median": 3423.5,
+   "mean_log": 8.19246694320482,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.7
+   ],
+   "median": 3579.5,
+   "mean_log": 8.323350918079417,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.4
+   ],
+   "median": 4601.5,
+   "mean_log": 8.426310476491729,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.3
+   ],
+   "median": 6576.0,
+   "mean_log": 8.89381427057203,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.8
+   ],
+   "median": 7166.0,
+   "mean_log": 9.03444332448307,
+   "censored": 0,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.2
+   ],
+   "median": 16317.5,
+   "mean_log": 9.697072918020599,
+   "censored": 3,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.9
+   ],
+   "median": 20800.5,
+   "mean_log": 10.033518768604608,
+   "censored": 3,
+   "runs": 128
+  },
+  {
+   "algo": "walksat",
+   "params": [
+    0.1
+   ],
+   "median": 38144.0,
+   "mean_log": 10.586868436324039,
+   "censored": 20,
+   "runs": 128
+  }
+ ]
+}

@@ -3056,6 +3056,20 @@ that earlier records used in two senses.
   block is a piece the pattern can be solved in, and a descent is how a few
   distinctions carry the top down without the rest of the level
   (`DIRECT-REACH-20261115-001`, 16 November 2026).
+- **Pair projection; product; two-orbit bond; exposed; unexposed dependence.**
+  The **pair projection** of two orbits is the projection of the allowed
+  states onto them. It is a **product** when every pairing of the two
+  orbits' own projections is allowed, so neither orbit says anything about
+  the other. A **two-orbit bond** is a bond inside the two orbits that
+  contains a distinction of each. An assignment of an orbit is **exposed**
+  when some free set of the orbit's addresses takes its values in that
+  assignment only. A dependence is **unexposed** when the pair projection is
+  not a product but every missing pair has a side that is not exposed: the
+  orbits depend on each other, but no bond inside them shows it, because one
+  orbit's own constraint stands in the way. The intuition: a two-orbit bond
+  is a bond that two orbits far apart hold between themselves alone, and an
+  unexposed dependence binds them too, but only a larger set of addresses
+  can show it (`KEEP-REACH-20261117-001`, 17 November 2026).
 - **Binding pattern.** The owner's word, not yet defined: in his words, "This
   is what we're trying to discover" (lesson 7.3). He offers two pictures,
   logic carried in each knot that binds whole knot patterns together, and

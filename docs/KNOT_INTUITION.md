@@ -299,6 +299,16 @@ are no values, only relations seeded from this versus that. It is an
 interpretation, recorded as assumption A97 with a test that could challenge it:
 two bases with equal bond distances for every pair but different allowed
 states ([register](ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information)).
+The test was run the same day (`DISTANCE-INFO-20261117-001`): read as bond
+distance between pairs, distance is not the only form of information. Three of
+the four knots on four distinctions and all four give the same distances and
+different allowed states; at six distinctions 10,012 distance tables serve
+97,248 bases. Distances between sets (which sets are bonds) and the signs of
+ties do not repair it. What determines every base tested, through six
+distinctions and in a sample at seven, is each bond together with which joint
+states it excludes: how far, and which way. The reading survives if distance
+includes that orientation; whether the owner means it so is open
+([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md)).
 
 ## Requirement and choice
 

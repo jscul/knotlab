@@ -147,7 +147,7 @@ def main():
     # G-Dr
     rows = []
     cap = 10**7
-    for f in sorted(REBUILT.glob("*.npz")):
+    for f in sorted(p for p in REBUILT.glob("*.npz") if not p.name.startswith("seq_")):
         d = np.load(f)
         inst = E.Instance(int(d["n"]), d["kv"], signs=d["ks"])
         row = {"pattern": f.name, "n": inst.n, "m": inst.m, "signed_knots": int((inst.signs.sum(axis=1) > 0).sum())}

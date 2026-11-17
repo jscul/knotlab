@@ -229,56 +229,24 @@ static double thread_cpu(void) {
   return ts.tv_sec + 1e-9 * ts.tv_nsec;
 }
 
-/* out: [0] steps (flips; FMS counts rejected tries too), [1] solved, [2] least violated count seen,
- *      [3] work, [4] cpu seconds, [5] where-steps that chose a newly violated knot,
- *      [6] where-steps with one available, [7] distinct candidates summed over where-steps,
- *      [8] where-steps, [9] accepted flips */
-int nae_run_signed(int n, int m, const int32_t *kv, const int32_t *os, const int32_t *occ, const uint8_t *ks,
-                   const uint8_t *ocs, const uint8_t *x0, int algo, const double *params, const double *theta, int flags,
-                   uint64_t seed, int64_t max_flips, double *out, uint8_t *xout) {
-  double c0 = thread_cpu();
-  St S;
-  memset(&S, 0, sizeof S);
-  S.n = n; S.m = m; S.kv = kv; S.os = os; S.occ = occ; S.ks = ks; S.ocs = ocs;
-  rng_seed(&S.rng, seed);
-  S.x = malloc(n); S.ones = malloc(m);
-  S.vlist = malloc(sizeof(int32_t) * m); S.vpos = malloc(sizeof(int32_t) * m);
-  S.lastflip = malloc(sizeof(int64_t) * n); S.fcnt_t = malloc(sizeof(int64_t) * n);
-  S.fcnt = malloc(sizeof(double) * n);
-  S.lastvisit = malloc(sizeof(int64_t) * m); S.vcnt_t = malloc(sizeof(int64_t) * m);
-  S.vcnt = malloc(sizeof(double) * m);
-  for (int v = 0; v < n; v++) {
-    S.x[v] = x0 ? x0[v] : (uint8_t)(rng_next(&S.rng) >> 63);
-    S.lastflip[v] = -1; S.fcnt_t[v] = -1; S.fcnt[v] = 0.0;
-  }
-  S.nviol = 0;
-  for (int k = 0; k < m; k++) {
-    if (ks)
-      S.ones[k] = (uint8_t)((S.x[kv[3 * k]] ^ ks[3 * k]) + (S.x[kv[3 * k + 1]] ^ ks[3 * k + 1]) + (S.x[kv[3 * k + 2]] ^ ks[3 * k + 2]));
-    else
-      S.ones[k] = (uint8_t)(S.x[kv[3 * k]] + S.x[kv[3 * k + 1]] + S.x[kv[3 * k + 2]]);
-    S.vpos[k] = -1;
-    S.lastvisit[k] = -1; S.vcnt_t[k] = -1; S.vcnt[k] = 0.0;
-    if (is_v(S.ones[k])) vadd(&S, k);
-  }
-  S.work = 3 * (int64_t)m;
-  S.last_var = -1;
-  int minviol = S.nviol;
+/* The search loop, shared by nae_run_signed and the handle (na_run): at most budget steps from the state in *Sp. */
+typedef struct {
+  int algo, flags;
+  double params[4];
+  const double *theta;
+  double *tab;
+  double h[HR];
+  double newchosen, newavail, distinct_sum, wsteps, accepted;
+  int minviol;
+} Ctx;
 
-  int maxdeg = 0;
-  for (int v = 0; v < n; v++) if (os[v + 1] - os[v] > maxdeg) maxdeg = os[v + 1] - os[v];
-  double *tab = malloc(sizeof(double) * (maxdeg + 2));
-  int poly_what = algo == PROBSAT_POLY || algo == GREEDY_WHERE || algo == STICKY ||
-                  (algo == POLICY && (flags & WHAT_PROBSAT));
-  if (poly_what) {
-    double cb = params[0], eps = params[1];
-    for (int b = 0; b <= maxdeg + 1; b++) tab[b] = pow(eps + b, -cb);
-  } else if (algo == PROBSAT_EXP) {
-    for (int b = 0; b <= maxdeg + 1; b++) tab[b] = pow(params[0], -(double)b);
-  }
-
-  double h[HR] = {0}, hn[HR];
+#define S (*Sp)
+static int64_t run_steps(St *Sp, Ctx *C, int64_t max_flips) {
+  int algo = C->algo, flags = C->flags, m = Sp->m;
+  const double *params = C->params, *theta = C->theta, *tab = C->tab;
+  double *h = C->h, hn[HR];
   double newchosen = 0, newavail = 0, distinct_sum = 0, wsteps = 0, accepted = 0;
+  int minviol = C->minviol;
   int64_t f = 0;
   while (S.nviol > 0 && f < max_flips) {
     int k, cand[NCAND], isnew[NCAND], nc = 0;
@@ -509,9 +477,76 @@ int nae_run_signed(int n, int m, const int32_t *kv, const int32_t *os, const int
         for (int j = 0; j < DS; j++) a += theta[R_WS + i * DS + j] * s[j];
         hn[i] = ftanh(a);
       }
-      memcpy(h, hn, sizeof h);
+      memcpy(h, hn, sizeof(double) * HR);
     }
   }
+  C->newchosen += newchosen; C->newavail += newavail; C->distinct_sum += distinct_sum; C->wsteps += wsteps;
+  C->accepted += accepted; C->minviol = minviol;
+  return f;
+}
+#undef S
+
+static double *make_tab(const int32_t *os, int n, int algo, int flags, const double *params) {
+  int maxdeg = 0;
+  for (int v = 0; v < n; v++) if (os[v + 1] - os[v] > maxdeg) maxdeg = os[v + 1] - os[v];
+  double *tab = malloc(sizeof(double) * (maxdeg + 2));
+  int poly_what = algo == PROBSAT_POLY || algo == GREEDY_WHERE || algo == STICKY ||
+                  (algo == POLICY && (flags & WHAT_PROBSAT));
+  if (poly_what) {
+    double cb = params[0], eps = params[1];
+    for (int b = 0; b <= maxdeg + 1; b++) tab[b] = pow(eps + b, -cb);
+  } else if (algo == PROBSAT_EXP) {
+    for (int b = 0; b <= maxdeg + 1; b++) tab[b] = pow(params[0], -(double)b);
+  }
+  return tab;
+}
+
+/* out: [0] steps (flips; FMS counts rejected tries too), [1] solved, [2] least violated count seen,
+ *      [3] work, [4] cpu seconds, [5] where-steps that chose a newly violated knot,
+ *      [6] where-steps with one available, [7] distinct candidates summed over where-steps,
+ *      [8] where-steps, [9] accepted flips */
+int nae_run_signed(int n, int m, const int32_t *kv, const int32_t *os, const int32_t *occ, const uint8_t *ks,
+                   const uint8_t *ocs, const uint8_t *x0, int algo, const double *params, const double *theta, int flags,
+                   uint64_t seed, int64_t max_flips, double *out, uint8_t *xout) {
+  double c0 = thread_cpu();
+  St S;
+  memset(&S, 0, sizeof S);
+  S.n = n; S.m = m; S.kv = kv; S.os = os; S.occ = occ; S.ks = ks; S.ocs = ocs;
+  rng_seed(&S.rng, seed);
+  S.x = malloc(n); S.ones = malloc(m);
+  S.vlist = malloc(sizeof(int32_t) * m); S.vpos = malloc(sizeof(int32_t) * m);
+  S.lastflip = malloc(sizeof(int64_t) * n); S.fcnt_t = malloc(sizeof(int64_t) * n);
+  S.fcnt = malloc(sizeof(double) * n);
+  S.lastvisit = malloc(sizeof(int64_t) * m); S.vcnt_t = malloc(sizeof(int64_t) * m);
+  S.vcnt = malloc(sizeof(double) * m);
+  for (int v = 0; v < n; v++) {
+    S.x[v] = x0 ? x0[v] : (uint8_t)(rng_next(&S.rng) >> 63);
+    S.lastflip[v] = -1; S.fcnt_t[v] = -1; S.fcnt[v] = 0.0;
+  }
+  S.nviol = 0;
+  for (int k = 0; k < m; k++) {
+    if (ks)
+      S.ones[k] = (uint8_t)((S.x[kv[3 * k]] ^ ks[3 * k]) + (S.x[kv[3 * k + 1]] ^ ks[3 * k + 1]) + (S.x[kv[3 * k + 2]] ^ ks[3 * k + 2]));
+    else
+      S.ones[k] = (uint8_t)(S.x[kv[3 * k]] + S.x[kv[3 * k + 1]] + S.x[kv[3 * k + 2]]);
+    S.vpos[k] = -1;
+    S.lastvisit[k] = -1; S.vcnt_t[k] = -1; S.vcnt[k] = 0.0;
+    if (is_v(S.ones[k])) vadd(&S, k);
+  }
+  S.work = 3 * (int64_t)m;
+  S.last_var = -1;
+  int minviol = S.nviol;
+
+  Ctx C;
+  memset(&C, 0, sizeof C);
+  C.algo = algo; C.flags = flags; C.theta = theta; C.minviol = minviol;
+  for (int i = 0; i < 4; i++) C.params[i] = params[i];
+  C.tab = make_tab(os, n, algo, flags, params);
+  double *tab = C.tab;
+  int64_t f = run_steps(&S, &C, max_flips);
+  double newchosen = C.newchosen, newavail = C.newavail, distinct_sum = C.distinct_sum, wsteps = C.wsteps,
+         accepted = C.accepted;
+  minviol = C.minviol;
   out[0] = (double)f;
   out[1] = S.nviol == 0;
   out[2] = minviol;
@@ -584,4 +619,149 @@ int nae_selftest_signed(int n, int m, const int32_t *kv, const int32_t *os, cons
 
 int nae_selftest(int n, int m, const int32_t *kv, const int32_t *os, const int32_t *occ, uint64_t seed, int64_t nflips) {
   return nae_selftest_signed(n, m, kv, os, occ, NULL, NULL, seed, nflips);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+ * The handle (SIGNED-NAV-20261117-001, at the coordinator's request): a run whose whole state, the agent's memory
+ * included, persists between calls, so a caller (the slow loop) can run it in epochs and rebuild the pattern between
+ * them, carrying the memory across the rebuild.
+ *
+ *   na_new(n, m, kv, os, occ, ks, ocs, algo, params, theta, flags, seed, x, lastflip, fcnt, fcnt_t, lastvisit, vcnt,
+ *          vcnt_t, rngst, t, hstate, last_var, vorder, nvorder, newk, nnew)
+ *       a handle on the pattern with the given state; any memory array may be NULL (fresh: never flipped or visited),
+ *       rngst NULL seeds the random stream from seed, hstate NULL starts the recurrent state at 0; vorder (optional)
+ *       orders the violated list (its violated knots first, in that order, then the rest by index), and newk
+ *       (optional) gives the knots the last flip violated, so that an unchanged pattern continues exactly;
+ *   na_run(h, budget, out)    at most budget steps; out as nae_run's, for this call only;
+ *   na_get(h, x, lastflip, fcnt, fcnt_t, lastvisit, vcnt, vcnt_t, rngst, &t, hstate, &last_var, vlist, &nviol,
+ *          newk, &nnew)
+ *       read the state back (NULL skips an array; vlist needs room for m, newk for 3);
+ *   na_free(h).
+ * The pattern arrays (kv, os, occ, ks, ocs) and theta must outlive the handle. A run made by na_new with the state
+ * nae_run_signed would draw and one na_run of the whole budget is that run exactly (gate H-plain); so is the same run
+ * split into epochs (gate H-epochs).
+ */
+typedef struct {
+  St S;
+  Ctx C;
+  int n, m;
+} Handle;
+
+void *na_new(int n, int m, const int32_t *kv, const int32_t *os, const int32_t *occ, const uint8_t *ks, const uint8_t *ocs,
+             int algo, const double *params, const double *theta, int flags, uint64_t seed, const uint8_t *x,
+             const int64_t *lastflip, const double *fcnt, const int64_t *fcnt_t, const int64_t *lastvisit,
+             const double *vcnt, const int64_t *vcnt_t, const uint64_t *rngst, int64_t t, const double *hstate,
+             int last_var, const int32_t *vorder, int nvorder, const int32_t *newk, int nnew) {
+  Handle *H = calloc(1, sizeof(Handle));
+  St *Sp = &H->S;
+  H->n = n; H->m = m;
+  Sp->n = n; Sp->m = m; Sp->kv = kv; Sp->os = os; Sp->occ = occ; Sp->ks = ks; Sp->ocs = ocs;
+  if (rngst) { Sp->rng.s[0] = rngst[0]; Sp->rng.s[1] = rngst[1]; }
+  else rng_seed(&Sp->rng, seed);
+  Sp->x = malloc(n); Sp->ones = malloc(m > 0 ? m : 1);
+  Sp->vlist = malloc(sizeof(int32_t) * (m > 0 ? m : 1)); Sp->vpos = malloc(sizeof(int32_t) * (m > 0 ? m : 1));
+  Sp->lastflip = malloc(sizeof(int64_t) * n); Sp->fcnt_t = malloc(sizeof(int64_t) * n);
+  Sp->fcnt = malloc(sizeof(double) * n);
+  Sp->lastvisit = malloc(sizeof(int64_t) * (m > 0 ? m : 1)); Sp->vcnt_t = malloc(sizeof(int64_t) * (m > 0 ? m : 1));
+  Sp->vcnt = malloc(sizeof(double) * (m > 0 ? m : 1));
+  for (int v = 0; v < n; v++) {
+    Sp->x[v] = x ? x[v] : (uint8_t)(rng_next(&Sp->rng) >> 63);
+    Sp->lastflip[v] = lastflip ? lastflip[v] : -1;
+    Sp->fcnt[v] = fcnt ? fcnt[v] : 0.0;
+    Sp->fcnt_t[v] = fcnt_t ? fcnt_t[v] : -1;
+  }
+  Sp->nviol = 0;
+  for (int k = 0; k < m; k++) {
+    if (ks)
+      Sp->ones[k] = (uint8_t)((Sp->x[kv[3 * k]] ^ ks[3 * k]) + (Sp->x[kv[3 * k + 1]] ^ ks[3 * k + 1]) +
+                              (Sp->x[kv[3 * k + 2]] ^ ks[3 * k + 2]));
+    else
+      Sp->ones[k] = (uint8_t)(Sp->x[kv[3 * k]] + Sp->x[kv[3 * k + 1]] + Sp->x[kv[3 * k + 2]]);
+    Sp->vpos[k] = -1;
+    Sp->lastvisit[k] = lastvisit ? lastvisit[k] : -1;
+    Sp->vcnt[k] = vcnt ? vcnt[k] : 0.0;
+    Sp->vcnt_t[k] = vcnt_t ? vcnt_t[k] : -1;
+    if (is_v(Sp->ones[k])) vadd(Sp, k);
+  }
+  if (vorder && Sp->nviol > 0) {
+    /* reorder the violated list: the given order first, then the rest by index */
+    int32_t *nl = malloc(sizeof(int32_t) * Sp->nviol);
+    uint8_t *seen = calloc(m, 1);
+    int c = 0;
+    for (int i = 0; i < nvorder; i++) {
+      int k = vorder[i];
+      if (k >= 0 && k < m && Sp->vpos[k] >= 0 && !seen[k]) { nl[c++] = k; seen[k] = 1; }
+    }
+    for (int k = 0; k < m; k++) if (Sp->vpos[k] >= 0 && !seen[k]) nl[c++] = k;
+    for (int i = 0; i < c; i++) { Sp->vlist[i] = nl[i]; Sp->vpos[nl[i]] = i; }
+    free(nl); free(seen);
+  }
+  Sp->work = 3 * (int64_t)m;
+  Sp->t = t;
+  Sp->last_var = last_var;
+  Sp->nnew = 0;
+  for (int i = 0; newk && i < nnew && Sp->nnew < NEWMAX; i++)
+    if (newk[i] >= 0 && newk[i] < m) Sp->newk[Sp->nnew++] = newk[i];
+  H->C.algo = algo; H->C.flags = flags; H->C.theta = theta;
+  for (int i = 0; i < 4; i++) H->C.params[i] = params ? params[i] : 0.0;
+  H->C.tab = make_tab(os, n, algo, flags, H->C.params);
+  for (int i = 0; i < HR; i++) H->C.h[i] = hstate ? hstate[i] : 0.0;
+  H->C.minviol = Sp->nviol;
+  return H;
+}
+
+int na_run(void *hp, int64_t budget, double *out) {
+  Handle *H = hp;
+  double c0 = thread_cpu();
+  int64_t w0 = H->S.work;
+  H->C.newchosen = H->C.newavail = H->C.distinct_sum = H->C.wsteps = H->C.accepted = 0;
+  H->C.minviol = H->S.nviol;
+  int64_t f = run_steps(&H->S, &H->C, budget);
+  out[0] = (double)f;
+  out[1] = H->S.nviol == 0;
+  out[2] = H->C.minviol;
+  out[3] = (double)(H->S.work - w0);
+  out[5] = H->C.newchosen;
+  out[6] = H->C.newavail;
+  out[7] = H->C.distinct_sum;
+  out[8] = H->C.wsteps;
+  out[9] = H->C.accepted;
+  out[4] = thread_cpu() - c0;
+  return 0;
+}
+
+int na_nviol(void *hp) { return ((Handle *)hp)->S.nviol; }
+int64_t na_work_total(void *hp) { return ((Handle *)hp)->S.work; }
+
+void na_get(void *hp, uint8_t *x, int64_t *lastflip, double *fcnt, int64_t *fcnt_t, int64_t *lastvisit, double *vcnt,
+            int64_t *vcnt_t, uint64_t *rngst, int64_t *t, double *hstate, int *last_var, int32_t *vlist, int *nviol,
+            int32_t *newk, int *nnew) {
+  Handle *H = hp;
+  St *Sp = &H->S;
+  int n = H->n, m = H->m;
+  if (x) memcpy(x, Sp->x, n);
+  if (lastflip) memcpy(lastflip, Sp->lastflip, sizeof(int64_t) * n);
+  if (fcnt) memcpy(fcnt, Sp->fcnt, sizeof(double) * n);
+  if (fcnt_t) memcpy(fcnt_t, Sp->fcnt_t, sizeof(int64_t) * n);
+  if (lastvisit) memcpy(lastvisit, Sp->lastvisit, sizeof(int64_t) * m);
+  if (vcnt) memcpy(vcnt, Sp->vcnt, sizeof(double) * m);
+  if (vcnt_t) memcpy(vcnt_t, Sp->vcnt_t, sizeof(int64_t) * m);
+  if (rngst) { rngst[0] = Sp->rng.s[0]; rngst[1] = Sp->rng.s[1]; }
+  if (t) *t = Sp->t;
+  if (hstate) memcpy(hstate, H->C.h, sizeof(double) * HR);
+  if (last_var) *last_var = Sp->last_var;
+  if (vlist) memcpy(vlist, Sp->vlist, sizeof(int32_t) * Sp->nviol);
+  if (nviol) *nviol = Sp->nviol;
+  if (newk) memcpy(newk, Sp->newk, sizeof(int32_t) * Sp->nnew);
+  if (nnew) *nnew = Sp->nnew;
+}
+
+void na_free(void *hp) {
+  Handle *H = hp;
+  St *Sp = &H->S;
+  free(H->C.tab);
+  free(Sp->x); free(Sp->ones); free(Sp->vlist); free(Sp->vpos);
+  free(Sp->lastflip); free(Sp->fcnt_t); free(Sp->fcnt);
+  free(Sp->lastvisit); free(Sp->vcnt_t); free(Sp->vcnt);
+  free(H);
 }

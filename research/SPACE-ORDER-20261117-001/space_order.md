@@ -132,3 +132,22 @@ Its T4 guess (P ≈ D from the held set) failed for the reason above.
 **Assumptions:** A96 added (scope: the role-preserving shuffle removes steps apart and nothing else that matters).
 
 **Basket:** read; B185 taken by this epic.
+
+## Final report as sent
+
+Posted to the owner's project thread on 2026-11-17 at about 17:20 UTC:
+
+**Result: space does force order, and only through distance.** An untangling stage can follow two-place rules only where a knot already has a settled member. So its long chains run along the edge of what's settled and never out into the open. Each stage therefore moves the settled region at most one step (proved).
+
+On the program's six-regular weaves, a law that can grow a settled region from one place needs one stage per step from where that region began. That's 256 stages at L = 384, exactly the weave's widest distance. The same law on a shuffled copy of the weave, with identical counts per distinction, needs only 9.5 stages. Laws that can't grow a region see no space at all: 2 to 7.5 stages on both. So distance (steps apart, which the program's ruler made the law's own distance) is exactly what untangling can't shortcut. The classical counterpart is a light cone, so there's no complexity claim.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: does space force order | **Status:** Successful (referee pending) | One stage per step (256 at L = 384) against 9.5 on the twin; 9 of 10 predictions held |
+| Local direction: stages on spatial patterns | Continue, narrowly | The lemma and the growth regime are clean |
+| Broader exploration | Known alternatives | Planar problems can be fast by other methods |
+| G3, with G1 | Capability gained | Untangling's sequential cost is steps apart, the program's own distance |
+
+**Next step:** Research directions. Selected: #1, B184 (why layered circuits need about d^0.4 stages), payoff 2/3, concreteness 3/3. Starting now.
+
+**Corrections:** none. **Goals:** G3 checkpoint. **Assumptions:** A96 (the shuffled twin removes distance and nothing else that matters). [Decision note](https://github.com/jscul/knotlab/blob/main/research/SPACE-ORDER-20261117-001/space_order.md)

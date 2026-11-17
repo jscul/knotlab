@@ -2545,7 +2545,16 @@ evidence: results and their status come from the records each entry links.
   the weave's own six. So the reading holds on knot trees; on the thread and the weave the split rests on A98, and it is not a
   property of cycles (cyclic bases with betweenness are common at five and six distinctions). Open: whether some reading of the
   weave's states gives both.
+  The dimension test `DISTANCE-DIM-20261117-001`
+  ([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md)) reads it under both answers to the owner's question
+  B194. Under plain implications, the disagreement count's betweenness is exactly the order's intervals (proved), so the states give
+  the order up to reversal and its number of independent orders: 1 on a chain, 2 on a grid, 3 on a three-way grid (computed,
+  frozen). Under not-all-equal knots, no exact betweenness occurs on the thread, the weave or a chain grid. Read only as nearness,
+  levels from a start grow in two dimensions on the weave and the chain grid, and only off the critical point (the chain grid) do
+  the counts give a linear ruler.
 - **History.**
+  - 2026-11-17 · Challenge extended by `DISTANCE-DIM-20261117-001`: an exact positive case under plain implications (order and
+    order dimension read from the states); under knots, nearness levels only. Status unchanged.
   - 2026-11-17 · Challenge scoped after the referee `DISTANCE-ORDER-R1` (Narrowing): the split on bases with cycles is A98's strict
     reading on two bases, and an order-only reading finds a local order on the weave; status unchanged.
   - 2026-11-17 · Narrowed by `DISTANCE-ORDER-20261117-001` (proof and frozen computation): holds where knots form no cycle, and
@@ -2599,6 +2608,12 @@ evidence: results and their status come from the records each entry links.
   its own class. Every farther distinction has something between. So under that reading the count carries a local order with
   nothing skipped, but not the weave's own steps, and A97's narrowing on bases with cycles holds only under this entry's strict
   reading.
+  "Levels from a starting point" was then run by `DISTANCE-DIM-20261117-001` (frozen). The levels of that order-only reading have
+  bounded degree: 12 on the weave, 8 and 2 on a not-all-equal chain grid, 3 to 4 on the thread. They grow quadratically on the
+  weave and the chain grid, linearly on the thread, and exponentially on a knot tree. Exact ties need exact arithmetic: floating
+  ties broke one prediction there. Under plain implications this entry's strict reading is satisfied exactly: betweenness is the
+  order's intervals.
 - **History.**
+  - 2026-11-17 · Challenge "levels from a start" run by `DISTANCE-DIM-20261117-001`; status unchanged.
   - 2026-11-17 · Challenge partly run by the referee `DISTANCE-ORDER-R1` (the order-only reading above); status unchanged.
   - 2026-11-17 · Added by `DISTANCE-ORDER-20261117-001`.

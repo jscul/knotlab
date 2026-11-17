@@ -342,6 +342,19 @@ neighbours of its own class, not the weave's own six (the study's referee).
 That split is not a property of cycles: many small bases with cycles of knots
 have betweenness ([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md);
 scoped after its referee, 17 November 2026).
+The dimension test followed (`DISTANCE-DIM-20261117-001`, proof and frozen
+computation, referee pending), built to read under either answer to whether
+the owner's 3, 4, 5 are plain implications or knots. Under implications, 4
+lies between 3 and 5 in the disagreement count exactly when it lies between
+them in the order, so the states give the order back (up to reversal, with no
+direction used) and its number of independent orders: 1 on a chain, 2 on a
+grid, 3 on a three-way grid. Under knots, no three distinctions of the thread,
+the weave or a chain grid stand in that relation; read only as nearness, the
+levels from a start have bounded degree and grow in two dimensions on the weave
+and the chain grid. The chain grid is off its critical point, and its counts
+give a linear ruler along an axis (Onsager's 1 − log₃ 2 per step); the weave
+is critical, and its counts do not
+([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

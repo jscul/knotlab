@@ -96,9 +96,11 @@ eight states also give each pair 4. ∎
 
 **4.** Under parity on a, b, c, the value of c is the sum of a and b mod 2. So each value of (a, b) has exactly one completion in c,
 and by symmetry the same holds for (a, c) and (b, c). A pair with a distinction outside the knot meets no constraint from it. Every
-pair therefore differs in half of the 8 states in both bases, and 0111 is allowed by the first and not the second. The four-place
+pair therefore differs in half of the 8 states in both bases, and 0110 is allowed by the first and not the second
+(witness corrected 17 November 2026; 0111 is allowed by both). The four-place
 case is the same argument: every pair, and every triple, among a, b, c, d takes all its joint values equally often under a + b +
-c + d even. Flipping all five values keeps both relations, since 4 is even, and 01111 is allowed by the first and not the second. ∎
+c + d even. Flipping all five values keeps both relations, since 4 is even, and 01101 is allowed by the first and not the second
+(witness corrected 17 November 2026; both exclude 01111). ∎
 
 **5.** By statement 1, additivity at (i, j, k) says that no allowed state has x_i = x_k ≠ x_j. A state with no such triple is
 monotone along the order, since a value that changes twice gives such a triple, and a monotone state has none.
@@ -153,8 +155,9 @@ share two distinctions with the knots before it. So the knots are the triples wh
   pairs are free. On a base closed under flipping all values and with no tie, every strict betweenness is a knot, since a
   complement-closed pair that is not free is a tie. Elsewhere it can follow from two-place rules: on the chain of implications x →
   y → z, which has no knot, the counts are 1, 1 and 2 (narrowed 17 November 2026). By statement 6 it is paid for in states: a chain of k + 1 distinctions leaves only
-  2(k + 1) of their 2^(k+1) joint values. A line with nothing skipped (statement 5) is the base whose knots say that each
-  distinction lies between its neighbours, and it has only 2n states.
+  2(k + 1) of their 2^(k+1) joint values. A line with nothing skipped (statement 5) needs betweenness on every ordered triple, not only on neighbours: the two
+  consecutive triples of four distinctions also allow 0110 and 1001 (narrowed 17 November 2026). With every threshold allowed it
+  has 2n states, and its counts leave the two constant states optional.
 - **Steps apart, read from the states.** By statement 7, on knot trees the log of the correlation reads steps apart exactly. That is
   a quantity read from the allowed states alone, built from unit steps, with nothing skipped. On knot trees bond distance is steps
   apart plus one (`RANDOM-FATES-20261112-001`, proved), so there the states' pair counts and the bonds give the same ruler.

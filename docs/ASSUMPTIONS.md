@@ -2351,4 +2351,9 @@ evidence: results and their status come from the records each entry links.
   count reads one counter per incidence), or count CPU with the rebuild in C. A verdict that changes under a factor-of-two change
   in the probe charge is sensitive to this measure.
 - **History.**
+  - 2026-11-17 · SLOW-LOOP's referee found the count incomplete: the rebuild's Python-side sorting and set operations
+    (deduplication, probed-key sets, the roots' unique, the guided order's sort charged as linear) were not counted, 1.2 times
+    the counted rebuild work for the eager loop. Its frozen verdicts stand because they also required whole-run CPU; the
+    work-only ratios were corrected (`docs/CORRECTIONS.md`). `EARN-BUDGET-20261117-001` charges the sorting, at k log k per
+    sort of k items, before its test.
   - 2026-11-17 · Adopted by `SLOW-LOOP-20261117-001`.

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 446 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 447 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 446 epics with their closures
+- [Epics](#epics): all 447 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1688,6 +1688,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-17 | How knots build an order: which distinction each new knot must share (`KNOT-ORDER-20261117-001`) | [closure](proofs/KNOT-ORDER-20261117-001Z/KNOT-ORDER-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/KNOT-ORDER-20261117-001/) |
 | 2026-11-17 | Why layered random circuits need about d^0.4 phases (`LAYER-RANK-20261117-001`) | [closure](proofs/LAYER-RANK-20261117-001Z/LAYER-RANK-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/LAYER-RANK-20261117-001/) |
 | 2026-11-17 | Does the navigating agent learned memory carry over to a meeting pattern it never trained on, when its reads are normalized by how many knots meet at a distinction and count no steps? (`MEET-TRANSFER-20261117-001`) | — | [folder](research/MEET-TRANSFER-20261117-001/) |
+| 2026-11-17 | Can the top tie itself to the frozen strand, or do the 13 grow? (`MODE-BOND-20261117-001`) | — | [folder](research/MODE-BOND-20261117-001/) |
 | 2026-11-17 | Port the navigating agent engine to signed not-all-equal knots so the slow loop can use it as its fast loop (`SIGNED-NAV-20261117-001`) | — | [folder](research/SIGNED-NAV-20261117-001/) |
 | 2026-11-17 | Does a slow loop that mutates the knot structure, guided by where a fast search dwells, cut the charged work of solving unseen knot patterns, and does a mutation policy learned on some meeting patterns carry to others? (`SLOW-LOOP-20261117-001`) | — | [folder](research/SLOW-LOOP-20261117-001/) |
 | 2026-11-17 | Does space force order: untangling phases on weaves (`SPACE-ORDER-20261117-001`) | [closure](proofs/SPACE-ORDER-20261117-001Z/SPACE-ORDER-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/SPACE-ORDER-20261117-001/) |

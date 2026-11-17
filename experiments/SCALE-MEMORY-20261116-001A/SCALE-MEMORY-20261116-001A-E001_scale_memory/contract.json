@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "SCALE-MEMORY-20261116-001A-E001",
+  "ticket": "SCALE-MEMORY-20261116-001A",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does the navigating agent's learned memory carry over to larger planted not-all-equal patterns when its long-horizon reads count no steps, when it trains on patterns of 3,200 distinctions, both, or neither?",
+  "inputs": "WHERE-NEXT's local reads; for flag 16, ages read relative to the attended knot's oldest distinction and to the oldest candidate, the violated fraction in the recurrent input.",
+  "forbidden_inputs": "The hidden planted state, any test instance during training, validation or tuning, and any solver output.",
+  "mapping": "The WHERE-NEXT policy (326 weights) trained by OpenAI-ES; arms L3s, L3m, L3sm, L2m and L3c, two seeds each, both tested.",
+  "primary_observable": "Per arm, R = geometric mean of the two seeds' median flips / median flips of the best re-tuned hand-written rule on rand at 4 times its largest training size, 99% paired bootstrap; ratios S, T, C, I, K between arms.",
+  "comparators_or_controls": "WHERE-NEXT's hand-written rules (reused run for run, gate G6) and Novelty+ and sticky re-tuned at 51200; WHERE-NEXT's L3 (both seeds); the schedule control L3c and the memoryless L2m.",
+  "resource_budget": "Ten ES trainings (about 25 CPU-hours) and test cells to rand n = 51200, CPU only, MemoryMax 16G under the shared runner.",
+  "first_executable_signal": "Gate G including G6 (run-for-run identity with WHERE-NEXT's engine); then G-learn and G-train per arm.",
+  "stop_rule": "Stop at the frozen decision rule and diagnosis; keep every run, failed or censored.",
+  "nonclaims": "Planted instances only; no general SAT method; no claim about unrestricted solvers, P vs NP, native emergence or self-improving AI; knot structures fixed.",
+  "preregistration": "research/SCALE-MEMORY-20261116-001/preregistration.md"
+}

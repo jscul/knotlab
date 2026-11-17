@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WEAVE-MIX-20261117-001B-E001",
+ "ticket": "WEAVE-MIX-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Is some non-uniform periodic arrangement of the four not-all-equal-class knots on the six-regular weave disordered (flip-split transfer spectra, widths 6-12; periods (1,1), (2,1), (1,2) exhaustive, (3,1), (1,3), (2,2) 150 random each)?",
+ "definitions": {
+  "inconsistent bond": "its two knots give it different signs",
+  "spin gap": "log_3(top flip-even / top flip-odd) per row",
+  "energy gap": "log_3(top / second flip-even) per row",
+  "classes": "empty; frozen (per distinction < 1.01); ordered (spin gap < 0.01, energy gap > 0.05); disordered (both gaps > 0.05 and within 10% of the next smaller width); critical (spin gap smaller at 12 than 6, spin gap x width within 15%); unresolved"
+ },
+ "public_inputs": {
+  "code": "mixlib.py (sha256 bc257fd1346a72c56cf4603d5bc2f6c20c16b4534e233c4152968ce4e4a8db8e), run.py (sha256 9ba73cd75d31edea1814510ef41a3fc7e2cca2a25ba2e91f08b4258d1c7da120); numpy, scipy",
+  "run": ".venv/bin/python -B run.py",
+  "seeds": "sha256 WM:pcxpr"
+ },
+ "forbidden_inputs": [
+  "Changing arrangements, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions Q0-Q5 of research/WEAVE-MIX-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "Consistent arrangements (I empty): gauge copies of the triangular antiferromagnet, critical (Q1).",
+ "predictions": {
+  "Q0": "same inconsistent set, same spectrum at width 6 (1e-9)",
+  "Q1": "I empty: critical",
+  "Q2": "> 2 inconsistent per cell: empty",
+  "Q3": "all degrees even: never disordered",
+  "Q4": "some odd-degree arrangement disordered",
+  "Q5": "disordered ones decay at all three positions"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "About 45 minutes, one process, background, registered in docs/LONG_RUNNING.md."
+}

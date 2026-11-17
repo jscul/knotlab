@@ -3,7 +3,7 @@
 Status: Proved
 
 Ticket `STATE-RULES-20261117-001Z`, 2026-11-17. A ledger; it makes no new claim. The decision note is
-`research/STATE-RULES-20261117-001/state_rules.md`. Referee pending.
+`research/STATE-RULES-20261117-001/state_rules.md`. Refereed (R1, confirmed with fixes; see the last section).
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
@@ -15,3 +15,10 @@ Ticket `STATE-RULES-20261117-001Z`, 2026-11-17. A ledger; it makes no new claim.
 | 6 | A coin-free continuation invariant under every signed renaming exists once (parity, the 2 × 2 pattern) and then only fixed or free ones; under renamings with the global swap only, the 2 × 2 pattern has one invariant knot continuation (10 states). | computed | B (E7) |
 
 **Recommendation:** Research directions; the first (a cap on knots per distinction) starts on the coordinator's go-ahead.
+
+## After the referee (R1, 17 November 2026)
+
+Confirmed with fixes, no Block; folded in the same day and logged in `docs/CORRECTIONS.md`. The rows above are kept as written.
+- **Narrowing** of row 5. With 1,000 runs per start the two six-starts grow different bases (TV distance 0.76 at n = 7) with the
+  same number of orders (two orders at n = 8: 375 and 361). The 2/3 against 1/2 at n = 6 is the knot arm's weighting, not its
+  reading of knots (closure control 0.70, knot-local 0.65).

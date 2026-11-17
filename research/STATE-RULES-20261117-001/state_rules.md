@@ -2,7 +2,8 @@
 
 Epic `STATE-RULES-20261117-001`, 17 November 2026, by Claude, on the coordinator's go-ahead. It takes the first direction of
 `GRID-GROW-20261117-001`, sharpened by that study's referee, and adds the owner's second arm, passed on from Codex. Goals G1 and
-G16; tests A97. Referee pending.
+G16; tests A97. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 17 November (see
+Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `fa975f08b` at 21:38:45 UTC.
@@ -26,7 +27,9 @@ G16; tests A97. Referee pending.
 - **Cheapest three-knot steps** make a second order at once from one knot, with no coin. After that a coin picks the route, but
   every route reaches the same cube each time the number of distinctions doubles: one more order each time (computed to 16).
 - **Uniform choice** gives many orders.
-- **Reading which knots meet** changes the odds along the way, not the destination.
+- **Reading which knots meet** changes which bases grow, but not how many orders they have. *Narrowed after the referee: with
+  1,000 runs per start, two starts with the same states and different knots grow different bases (they share 1 of 4 classes at
+  n = 7) with the same number of orders.*
 
 Here "an order" is one line of the least number of lines whose product holds the distinctions, with the disagreement count as
 twice the distance along them (the literature's lattice dimension, Eppstein). "Two orders" means two lines and a crossing.
@@ -79,17 +82,26 @@ Two orders are typical only at n = 4 and 5, under the cheapest rule. They are a 
 The rule may also read the knots, with names and history erased. A new knot must join two distinctions that already share a knot
 (knot-local), or in the strict arm the whole step must sit inside one existing knot.
 - **From one knot.** Two orders at n = 6 with probability 2/3, against 1/2 for the states-only rule, and 0 at n = 7. The cube at
-  n = 8 in 30 of 30 runs, and 3 or 4 orders at n = 12 with 10 states, as for the states-only rule.
+  n = 8 in 30 of 30 runs, and 3 or 4 orders at n = 12 with 10 states, as for the states-only rule. *Narrowed after the referee:
+  the 2/3 is the knot arm's weighting (each knot set counts, not each extension), not its reading of knots. The closure control,
+  a function of the states with the same weighting, gives 0.70 against the knot-local rule's 0.65 (1,000 runs each); the
+  comparison to quote is between those two.*
 - **From two starts with the same 12 states and different knots.** One start has a distinction in all four knots, the other none.
   - The knots decide where the first fill can go: only at the knots' own four triples, which differ between the starts.
-  - After that both behave alike. Two orders at n = 8 in 11 and 15 of 30 runs; the closure-local control, a function of the
-    states alone, gives 22 and 23, so the difference is within sampling. Then 3 to 5 orders by n = 12, with 12 states in 30 of 30 runs.
+  - Two orders at n = 8 in 11 and 15 of 30 runs; the closure-local control, a function of the states alone, gives 22 and 23.
+    Then 3 to 5 orders by n = 12, with 12 states in 30 of 30 runs. *Withdrawn after the referee: "so the difference is within
+    sampling". With 30 runs per start the comparison had about 3% power at these rates and could show nothing either way.*
+  - **The referee's 1,000 runs per start, identical seeds.** The number of orders does not depend on the knots: two orders at
+    n = 8 in 375 and 361 runs (Fisher p = 0.55), and the same distributions of λ at n = 10 and 12 (χ² p = 0.68, 0.81). The grown
+    bases do depend on them. The classes of states (knots ignored) at n = 7 are four from each start and only one is shared, total
+    variation distance 0.76; at n = 8 it is 0.81.
   - States-only rules give identical runs from the two starts, as they must.
 - **The strict arm** does not stall. It takes the costlier steps and reaches 5 or 6 orders by n = 12.
 - **Uniform over knot-local steps:** two orders at n = 10 in 1 of 30, 0 and 0.
 
-So how the knots meet does carry information the states do not: it fixes where the first fill can go, and it shifts the odds on
-the way. It does not change where the growth goes. No knot-reading rule tried keeps two orders.
+So how the knots meet does carry information the states do not: it fixes where the first fill can go, and the bases grown from
+the same states then differ (the referee's 1,000 runs). It does not change how many orders they have. No knot-reading rule tried
+keeps two orders.
 
 ### A rule with no coin (Codex's check)
 
@@ -104,8 +116,33 @@ any distinction.
 
 **In the owner's terms.** The cheapest way one knot can continue is two orders, and the states choose it alone. But the same
 cheapness keeps going, to three orders and then four, one more each time the distinctions double. Nothing in these laws stops at
-two: either the start hands the number of orders over, or the growth keeps adding them. Reading how the knots meet changes the
-route, not where it ends.
+two: either the start hands the number of orders over, or the growth keeps adding them. Reading how the knots meet changes what
+grows from the same states, but not how many orders it has.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 17 November 2026, by a background referee thread with fresh code and no Codex: confirmed with
+fixes, no Block.
+- S1 to S5 hold (S4's case analysis is complete for at most three knots). The referee's code recomputes, one size past:
+  - the C(n, 3) zero-cost fills at n = 3 to 10, all two orders;
+  - every extension of a line with k, λ ≤ 2, and exactly n + 1 keeping a line;
+  - (k, λ) conserved to n = 13 from all three starts;
+  - the exact 1, 1/2 and 0 at n = 5, 6 and 7, and 5/12 with classes counted once.
+- The amendments changed no read-out or prediction, and amendment 2's class equivalence is right. The number of orders is read from
+  the states alone, so no arrangement is smuggled in. "No rule tried makes two orders and keeps them" is fair as scoped.
+
+Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (the one that bears on the owner's premise).**
+   - The fan and non-fan comparison with 30 runs per start had about 3% power, so "within sampling" carried nothing and is
+     withdrawn.
+   - With 1,000 runs per start and identical seeds, the number of orders does not depend on the knots, but the grown bases do (TV
+     distance 0.76 at n = 7, 0.81 at n = 8).
+   - How the knots meet carries information that changes what grows, not how many orders it has. Not yet tested: other start
+     pairs, other knot rules, and which state differences matter. `KNOT-CAP-20261117-001` takes these up.
+2. **Narrowing.** The 2/3 against 1/2 at n = 6 is the weighting (knot sets against extensions), not knot reading: the closure
+   control gives 0.70 and the knot-local rule 0.65.
+3. **Not a block.** R16 failed only because the seed string includes the start. R17 and R19 were held on a post hoc read, as
+   labelled.
 
 ## Predictions and verdicts
 

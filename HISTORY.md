@@ -30,6 +30,17 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   s = 7 and 8 at depth 12. They are no longer written as one rising sequence.
 - Sharpened: for that pattern at s = 7, stems hold no bond of any size.
 
+## 17 November 2026: the states-only growth study, confirmed by its referee, with two narrowings
+
+- The study of rules that read only the states (`STATE-RULES-20261117-001`) was confirmed by its referee with no Block: its proofs
+  hold, and its counts recompute one size past.
+- Narrowed: from two starts with the same states and different knots, a rule that reads which knots meet grows different bases (a
+  thousand runs from each start share one of their four kinds of base after one step) but the same number of orders. The study's
+  own comparison, thirty runs per start, had too little power to show anything, and its "within sampling" is withdrawn.
+- Narrowed: the knot-reading rule's higher chance of two orders after three steps came from how it weighed its moves, not from
+  reading knots ([decision note](research/STATE-RULES-20261117-001/state_rules.md),
+  [referee's report](research/STATE-RULES-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026: the mixed-arrangement study, refereed, with one narrowing
 
 - The mixed-arrangement study on the weave (`WEAVE-MIX-20261117-001`) was confirmed by its referee with no Block. "Inconclusive"

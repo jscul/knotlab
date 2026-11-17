@@ -1,0 +1,45 @@
+{
+ "schema_version": 1,
+ "experiment_id": "DISTANCE-DIM-20261117-001B-E001",
+ "ticket": "DISTANCE-DIM-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under either answer to B194, does a distance read from the allowed states give an order with nothing skipped and two independent orders: implication bases (order, dimension read from betweenness), NAE thread, weave, chain grid, knot tree (pair patterns, betweenness, order-only gap graph levels, transfer gaps)?",
+ "definitions": {
+  "disagreement count": "allowed states in which two distinctions differ",
+  "tau": "-log_3|1 - 2d/N|",
+  "gap neighbour": "no w with tau(o,w) < tau(o,v) and tau(w,v) < tau(o,v) (strict)",
+  "order dimension": "Dushnik-Miller two-test by Golumbic implication classes; three = test fails and a verified realizer of three",
+  "transfer gap": "log_3(lambda_0 / |lambda_1|), lambda_1 the largest modulus below the top"
+ },
+ "public_inputs": {
+  "code": "dimlib.py (sha256 b24c89c30853ab6db0f9cc2a82383d80c830fb1cea28cefd5d589f0dfdeed46e), run.py (sha256 d64fb360e3df4859c00937efdf6c944c8e193cdacfeaa89cb54c6113b30c42da); DISTANCE-ORDER-20261117-001B's order.py; numpy",
+  "run": ".venv/bin/python -B run.py"
+ },
+ "forbidden_inputs": [
+  "Changing bases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions I1-I5, K1-K8 of research/DISTANCE-DIM-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "The knot tree (exponential levels) and bare S_3 (the betweenness route reads nothing).",
+ "predictions": {
+  "I1": "betweenness = intervals on all eight",
+  "I2": "patterns = comparability on all eight",
+  "I3": "comparability from betweenness exact on seven; none on bare S_3",
+  "I4": "order up to reversal on seven, not bare S_3",
+  "I5": "dimension <= 2 on chain and four two-way orders; 3 on 3x3x3 and S_3 with bottom/top (realizer verified)",
+  "K1": "all four patterns on thread, weave, chain grid",
+  "K2": "no strict betweenness on thread and through chain-grid starts",
+  "K3": "chain grid degrees 8 / 2, levels as listed",
+  "K4": "weave levels as listed",
+  "K5": "thread degrees and levels <= 6",
+  "K6": "tree: gap graph = co-knot graph, levels 1, 2, 4, 8, 16",
+  "K7": "chain-grid gap within 0.01 of 0.3691 at width 12, deviation shrinking",
+  "K8": "weave gap falls with width, gap(12)/gap(6) < 0.7"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 and A98 status; referee hand-off; report.",
+ "runtime": "Under twenty minutes, one process."
+}

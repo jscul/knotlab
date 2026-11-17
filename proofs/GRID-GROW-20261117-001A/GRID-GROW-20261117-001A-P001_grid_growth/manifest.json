@@ -7,7 +7,7 @@
  "kind": "proof",
  "status": "Proved",
  "title": "Growing the grid: one knot for a new line, three for a filled cell",
- "claim": "On Young-diagram shapes the box-betweenness base is the cut system (d = 2 L1); a step starting a new line needs exactly one three-place knot, B(opposite corner, neighbour, new), unique; a filled corner needs exactly three, unique within L1 radius 2 (the unit square), and the unit-square parity alone also extends; totals are order-independent ((r+c-3) + 3(r-1)(c-1)); the states name every placement.",
+ "claim": "On Young-diagram shapes the box-betweenness base is the cut system (d = 2 L1); a step starting a new line needs exactly one three-place knot, B(opposite corner, neighbour, new), unique; a filled corner needs exactly three, unique within L1 radius 2 (the unit square; computed in 4 x 4 and 5 x 5, not proved), and the unit-square parity alone also extends; totals are order-independent ((r+c-3) + 3(r-1)(c-1)); the states name every placement (withdrawn after referee R1, Block: equal states can have different placements; the states name only the new-line pair).",
  "standard_statement": "Halfspaces of median-closed subsets of Z^2 (Djokovic-Winkler classes) are the row and column cuts; set covers of the extension's bad states by three-place constraints.",
  "prior_work": "Djokovic 1973; Winkler 1984; Bandelt, Chepoi and Eppstein (squaregraphs); KNOT-ORDER-20261117-001.",
  "dependencies": [],
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proof written before the freeze; checked by ticket B; referee pending",
+  "status": "proof written before the freeze; checked by ticket B; refereed (R1: G1-G4 confirmed, G5 withdrawn)",
   "independence": "cover search by brute force against the proofs; same task authorship",
   "novelty": "classical (G1), local (G2-G4 accounting)"
  },
@@ -62,5 +62,5 @@
   "identity": "proofs/GRID-GROW-20261117-001A/GRID-GROW-20261117-001A-P001_grid_growth/identity.json",
   "proof": "proofs/GRID-GROW-20261117-001A/GRID-GROW-20261117-001A-P001_grid_growth/proof.md"
  },
- "attained_result": "G1-G5 proved."
+ "attained_result": "G1-G4 proved; G5 withdrawn after referee R1 (Block); G3's local uniqueness computed, not proved."
 }

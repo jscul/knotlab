@@ -5,8 +5,7 @@ coordinator: "let's see if we can uncover anything here". It serves G17, with G1
 [proof.md](../../proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/proof.md). Code by the thread. The canonical
 K1–K3 test is unchanged. **Refereed** (KEEP-REACH-R1, [report](referee-R1/report.md), commits 2275fed41 and e6e24ed66): **confirmed with
 fixes**, no Block; Theorems K and F′ and Lemma E hold, and the three least-sure points check out; the summaries of what is shown about
-the 25 are narrowed below. The referee did not recompute the 2,380 / 39 classification counts. **Stress test pending:** the depth-13 reading of one mutant (LONG_RUNNING
-`KEEP-REACH-A2`).
+the 25 are narrowed below. The referee did not recompute the 2,380 / 39 classification counts. **Stress test done** (depth 13, below).
 
 ## The question
 
@@ -46,8 +45,11 @@ certified least bonds at depth 11 are:
 - **parent:** 3, 4, 5, 5, 5, 5;
 - **mutant:** 3, 4, 5, 5, 6, 6.
 
-So the mutant has passed the parent's bound, although something in it never forgets, even on actual values. *(Depth 13, s up to 8:
-pending.)*
+So the mutant has passed the parent's bound, although something in it never forgets, even on actual values. **Stress test
+(2026-11-17, LONG_RUNNING `KEEP-REACH-A2`):** at depth 13, with 900 s per s, the mutant reads 3, 4, 5, 5, 6, 6 for s = 1..6, the same as
+at depth 11 and now four levels above the bottom at s = 6; s = 7 and 8 are undecided. The depth-11 readings were rerun after the referee
+with their certificates recorded (`exact_third_8db5da810c00-73_N11.json`, `exact_third_census_8db5da810c00_N11.json`); the depth-13
+file was written by the first version of the wrapper and does not record them.
 
 **So "never forgets on all assignments" does not keep the top bound** (the 14, proved). For the 25 that never forget even on actual
 values, boundedness is open: the mutant has passed its parent's bound at depth 11 but is not shown unbounded, and the 12 with an unexposed dependence

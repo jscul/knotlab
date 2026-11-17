@@ -368,6 +368,20 @@ whose counts do give a ruler there, OR and "not exactly two ones" (hard hexagons
 in the literature), keep part of their information in counts of three. On this
 meeting pattern, information and a scale sit in different laws
 ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md)).
+How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
+computation, referee pending)? One knot at a time, with "b lies between a and
+c" as the knot. Each knot passes the knot test, yet the last three alone let the
+order turn back (Codex's 0110). To stop that, a knot must straddle every place
+where the values could change twice. So a new distinction placed between two
+neighbours needs a knot with just those two, and one placed beyond an end needs
+a knot with both ends. Exactly that many single knots keep a line: one per
+gap, plus one past each end. The line's own states name those places, the ends
+at the largest count and the neighbours at count 2. A rule that reads only the
+states grew a line to fourteen, and no direction is stored. The line is
+pairwise, its count is an exact ruler, and every distinction in it relates to
+every other. Statically, betweenness on every box of a grid holds two
+independent orders, its rows and its columns
+([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

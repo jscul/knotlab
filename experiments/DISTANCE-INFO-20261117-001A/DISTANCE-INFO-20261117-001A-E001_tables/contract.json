@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "DISTANCE-INFO-20261117-001A-E001",
+ "ticket": "DISTANCE-INFO-20261117-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the bond distances of a not-all-equal base, read from its allowed states, determine those states? Unsigned and signed pairwise tables, bond sets (plain, signed ties, with missing states) and prime implicates (control), all relations at n = 4, 5, 6 and 400,000 random knot sets at n = 7.",
+ "definitions": {
+  "bond": "a set of >= 2 distinctions whose projection is constrained and free after forgetting any one member",
+  "bond distance": "size of the smallest bond holding the pair, minus one",
+  "seeds": "sha256 DI:7:<shard>"
+ },
+ "public_inputs": {
+  "code": "tables.py (sha256 7a5038ff4eb2d560597238581f955a2074a7f0e20a361c1eb06abee43a92bff3), census.py (sha256 b2845605b6bfa8b082260c8fa68a458817bfaff727b7ead78190b43322d2051c); Python standard library.",
+  "run": "python3 -B census.py"
+ },
+ "forbidden_inputs": [
+  "Changing readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions G, D1-D5 of research/DISTANCE-INFO-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "Prime implicates, which determine the relation by theorem (G).",
+ "predictions": {
+  "D1": "(a) collides at n = 4: 12 tables for 16 relations",
+  "D2": "(b) same at n = 4, first finer than (a) at n = 5",
+  "D3": "(c) clean at n = 4, collides at n = 5 (isomorphic)",
+  "D4": "(c-s) clean at n = 5, collides at n = 6 or 7",
+  "D5": "(c') clean at n <= 6"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "Under ten minutes on four processes."
+}

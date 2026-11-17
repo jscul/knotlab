@@ -366,8 +366,12 @@ with signs that agree on every pair, it is the triangular antiferromagnet in
 disguise, which is critical; with signs that disagree, its rows lock. The laws
 whose counts do give a ruler there, OR and "not exactly two ones" (hard hexagons,
 in the literature), keep part of their information in counts of three. On this
-meeting pattern, information and a scale sit in different laws
-([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md)).
+meeting pattern, information and a scale sit in different laws, for laws that
+put one knot kind on every up knot and one on every down knot; its referee's
+probes find a sparse mix, and one law on a 2 × 2 cell, that look disordered
+with every knot pairwise
+([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); scoped
+after its referee, 17 November 2026).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

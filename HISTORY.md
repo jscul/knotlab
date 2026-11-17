@@ -3,6 +3,20 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the knot-law study, confirmed by its referee, with two narrowings
+
+- The knot-law study (`WEAVE-LAWS-20261117-001`) was confirmed by its referee with no Block.
+- Narrowed: "the pairwise laws are critical or frozen" holds for every law that puts one not-all-equal-class knot on every up
+  knot and one on every down knot (all 16 such laws). The referee's probes find a sparse mix of signed knots, and one law on a
+  2 × 2 cell, that look disordered with every knot pairwise, so the obstruction is scoped to those 16 and the mixed case is open
+  (`WEAVE-MIX-20261117-001`).
+- Narrowed: the rulers of OR and hard hexagons step outward only in envelope, since their correlations oscillate with period
+  three.
+- Small fixes, none changing a frozen number: the frozen laws' exact spectral radii; the agreeing-signs law's twist at every odd
+  width; the count of pairwise knots (4); wording in a proof and a script
+  ([decision note](research/WEAVE-LAWS-20261117-001/weave_laws.md),
+  [referee's report](research/WEAVE-LAWS-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026 · Local and global betweenness
 
 - The order study's proof uses betweenness on every ordered triple. Its summary about neighbours was too strong.

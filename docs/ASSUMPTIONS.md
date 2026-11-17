@@ -2567,8 +2567,11 @@ evidence: results and their status come from the records each entry links.
   The knot-law test `WEAVE-LAWS-20261117-001`
   ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); referee pending) found that on the weave no tested knot
   law has a pair-count distance that both carries its information and is a ruler. Only the not-all-equal class is pairwise
-  (proved), and on the weave it is critical or frozen. The laws that give a ruler there (OR; hard hexagons) keep part of their
-  information in counts of three.
+  (proved). On the weave, every law putting one such knot on every up knot and one on every down knot is critical or frozen
+  (all 16; its referee). The laws that give a ruler there (OR; hard hexagons) keep part of their information in counts of three,
+  and step outward only in envelope. Its referee's probes find a sparse mix of signed knots, and one law on a 2 × 2 cell, that
+  look disordered with every knot pairwise, so the narrowing holds for one-knot-per-orientation laws only
+  (`WEAVE-MIX-20261117-001` tests the rest).
   The order study `KNOT-ORDER-20261117-001`
   ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md); referee pending) gave a positive case built from knots
   alone. A line of betweenness knots, grown one knot per step, is pairwise, and its disagreement count is an exact ruler with
@@ -2576,6 +2579,7 @@ evidence: results and their status come from the records each entry links.
   two neighbours (a knot with only those two) or beyond an end (a knot with both ends). Statically, betweenness on every box of a
   grid holds two independent orders. The price is states: the line has only 2n.
 - **History.**
+  - 2026-11-17 · The weave narrowing scoped after the referee `WEAVE-LAWS-R1`: one-knot-per-orientation laws only; status unchanged.
   - 2026-11-17 · A positive case built from knots added by `KNOT-ORDER-20261117-001`; status unchanged.
   - 2026-11-17 · Narrowed on the weave by `WEAVE-LAWS-20261117-001`: no tested law does both there; status unchanged.
   - 2026-11-17 · Challenge text scoped after the dimension test's referee `DISTANCE-DIM-R1` (Narrowing): knots first, each growth the

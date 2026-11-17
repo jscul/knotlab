@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Checks of WEAVE-LAWS-20261117-001A-P001 (not a proof).
 L1: all 34 three-place knots: degree-3 coefficient zero iff the excluded set is one complementary pair.
-L2: the sign-consistency test agrees with a direct gauge search on small tori (L = 3, 6): a consistent law's weave has the same
-    count as the uniform NAE weave; an inconsistent one is reported.
+L2: a consistent law's weave has the same torus count as the uniform NAE weave at L = 6; an inconsistent one's count is reported.
+    (Corrected after the referee: the earlier text claimed a gauge search, which this script does not do.)
 L3: not-exactly-two counts = independent sets of the triangular torus + 1 (L = 3, 6, brute force at 3); parity counts 4 (L = 3, 6)
     and 1 (L = 4, 5).
     python3 -B check.py [--write]"""

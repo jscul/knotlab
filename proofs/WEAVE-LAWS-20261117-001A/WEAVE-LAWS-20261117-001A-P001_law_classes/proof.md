@@ -10,7 +10,7 @@ three-place knots, L2's sign test on the study's laws, and L3 on small weaves. T
 - **L1. Only the not-all-equal class is pairwise.** Write a three-place knot's allowed set as a function of ±1 values.
   - Its degree-three Fourier coefficient is the parity imbalance of its excluded set: excluded states of even weight minus those of
     odd weight.
-  - Among the 34 knots, that imbalance is zero exactly for the 8 that exclude one complementary pair, the not-all-equal class with
+  - Among the 34 knots, that imbalance is zero exactly for the 4 that exclude one complementary pair (corrected from 8 after the referee), the not-all-equal class with
     its literals.
   - So these are the only knots of degree at most two. Their bases are determined by the pair counts and N
     (`DISTANCE-ORDER-20261117-001A`, statement 3(a)).
@@ -43,7 +43,8 @@ Two non-neighbours at distance two share a parity, and two at distance three hav
 exactly for a complementary pair. A complementary pair's set is closed under flipping all values, so its degree-one coefficients
 vanish too, and its degree is two. ∎
 
-**L2.** An Ising triangle excluding {p, p̄} forbids exactly the states in which all three bonds are satisfied, with the bond signs
+**L2.** An Ising triangle excluding {p, p̄} forbids exactly the states in which all three bonds are violated (corrected from
+"satisfied" after the referee), with the bond signs
 read off p as stated, so it is a frustrated triangle. If the up and down knots give every bond the same sign, the base is the
 zero-energy set of one Ising model with those bond signs and every triangle frustrated. On the endless weave, two sign patterns
 with the same frustrated triangles differ by a gauge transformation, a set of distinctions flipped, since the weave's cycle space

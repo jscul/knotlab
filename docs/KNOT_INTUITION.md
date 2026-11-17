@@ -2059,6 +2059,24 @@ So holes come in two kinds:
    - **Next.** Memory normalized by how many knots meet at a distinction, trained on mixed meeting patterns and tested on a held-out
      one ([decision note](../research/SCALE-MEMORY-20261116-001/decision.md)).
 
+   **2026-11-17: changing the knot pattern during the search pays where the pattern has local structure, but only when the slow
+   loop is eager, and the search's attention does not say where to change it** (`SLOW-LOOP-20261117-001`; referee pending).
+   - **The question.** The owner's second stage: a fast loop searches the knot pattern while a slower loop reshapes it. Between
+     epochs of Novelty+ the slow loop merged distinctions shown tied by a short refutation and added shadow knots: three-place
+     knots that every allowed state satisfies. Both moves keep the allowed states, and every check was charged.
+   - **Computed.**
+     - **The eager loop.** With the slow loop as busy as the search, total work fell to 0.15 and 0.23 of the search alone on two
+       local patterns at 3,200 distinctions, one of them never seen, and to 0.12 at 12,800. That beats probing everything first.
+     - **Where it costs.** On random and block patterns, where there is nothing useful to find, it cost 1.5 to 2 times.
+     - **Tuned on those patterns,** the slow loop learned to do almost nothing.
+     - **Attention.** The knots the search kept returning to were no better places to look than random knots.
+   - **Reading.** The search's attention marks where it is stuck, not where the pattern can be simplified. What tells the patterns
+     apart is how fast the slow loop's merges shrink the pattern, which is a fact about the pattern, not about the search. Both
+     moves are known inference (probing and merging equivalent variables). What the test adds is that the owner's loop pays where
+     knots meet densely within short runs, and that its eagerness has to be earned from its own results, not tuned elsewhere.
+   - **Next.** A slow loop that earns its budget from how fast its moves shrink the pattern
+     ([decision note](../research/SLOW-LOOP-20261117-001/decision.md)).
+
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
      No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.

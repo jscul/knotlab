@@ -322,10 +322,12 @@ be a starting point on the number line. In my view, there isn't really any
 such thing as "direction". Everything is just "relative", but it's also
 topological, so if you're at 3 on the number line, you can't just skip 4 to
 get to 5, so there is an order." The next test (`DISTANCE-ORDER-20261117-001`,
-proof and frozen computation) found that the knot decides where order lives.
+proof and frozen computation) found where order lives.
 In the disagreement count, "c lies between a and b" is exactly the three-place
-constraint that no allowed state has a = b ≠ c, so order is carried by knots,
-and it costs states: a chain of m distinctions allows at most 2m of their joint
+constraint that no allowed state has a = b ≠ c, a knot where the three pairs
+are free (on a chain of two-place implications, which has no knot, it follows
+from the two-place rules: x → y → z reads 1, 1 and 2; corrected 17 November
+2026), and it costs states: a chain of m distinctions allows at most 2m of their joint
 values. On a base whose knots form no cycle, −log₃ |1 − 2d/N| equals steps
 apart, so one distance read from the states goes outward one step at a time and
 carries the base. With cycles of knots the two jobs split. On the thread, a

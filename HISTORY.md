@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: order in the disagreement count does not need a knot
+
+- Narrowed: THEORY.md and Intuitions lesson 2.4 said that, since three distinctions are in order in the disagreement count
+  exactly when a three-place constraint holds on them, order is carried by knots. That constraint (no allowed state with
+  a = b ≠ c) is a knot only where the three pairs are free. On a chain of two-place implications, which has no knot, the count is
+  exactly the number of steps: x → y → z reads 1, 1 and 2, nothing skipped. The proof and every computed number of
+  [the order test](research/DISTANCE-ORDER-20261117-001/distance_order.md) stand.
+
 ## 17 November 2026: where order lives; the disagreement table proved, and narrowed at three distinctions
 
 - New: [which distance carries a base's information, and which gives an order with nothing skipped](research/DISTANCE-ORDER-20261117-001/distance_order.md)

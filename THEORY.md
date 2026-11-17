@@ -136,8 +136,11 @@ different values, that table determines every not-all-equal base from four
 distinctions on (proved; on three distinctions one knot and no knot share it),
 a count across the allowed states, not an extended or metric distance. His
 answer rules out direction and asks for an order in which nothing is skipped.
-In that count, three distinctions are in order exactly when a three-place
-constraint holds on them, so order is carried by knots. Where the knots form no
+In that count, c lies between a and b exactly when no allowed state has
+a = b ≠ c. Where the pairs of the three are all free, that constraint is a
+knot; on a chain of two-place implications, which has no knot, it follows from
+the two-place rules, and the count is exactly the number of steps (on
+x → y → z it is 1, 1 and 2). Where the knots form no
 cycle, one quantity read from the counts equals steps apart, so a single
 distance carries the base and goes outward with nothing skipped; on the thread
 and the six-regular weave the count that carries everything puts no distinction

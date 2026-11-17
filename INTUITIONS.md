@@ -888,14 +888,17 @@ computed, and refereed with a Block on its first reading,
 
 So one candidate fails and one carries everything. The owner's answer above
 rules out direction and asks for an order in which nothing is skipped. The
-next test found that knots decide where that order lives
+next test found where that order lives
 ([DISTANCE-ORDER-20261117-001](research/DISTANCE-ORDER-20261117-001/distance_order.md);
 proved and computed, referee pending). In the disagreement count, c lies
-between a and b exactly when no allowed state has a = b ≠ c, and that is a
-three-place constraint. Where the knots form no cycle, one quantity read from
-the counts equals steps apart (lesson 4.7), so a single distance carries the
-base and goes outward with nothing skipped. On the thread and the six-regular
-weave the two split: the count that carries everything puts no distinction
+between a and b exactly when no allowed state has a = b ≠ c, a three-place
+constraint. Where the pairs of the three are all free, that constraint is a
+knot. It can also follow from two-place rules alone: on the chain of lesson
+1.4, x → y → z, which has no knot and "only orders its members", the counts
+are 1, 1 and 2, an exact order with nothing skipped. Where the knots form no
+cycle, one quantity read from the counts equals steps apart (lesson 4.7), so a
+single distance carries the base and goes outward with nothing skipped. On
+the thread and the six-regular weave the two split: the count that carries everything puts no distinction
 between two others, and steps apart, which has the order, does not carry
 everything. The guide leaves the owner's word open.
 

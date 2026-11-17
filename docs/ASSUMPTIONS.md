@@ -150,6 +150,7 @@ evidence: results and their status come from the records each entry links.
 | [A93](#a93--a-speculative-change-is-judged-by-whether-the-search-then-gets-below-its-pre-change-best) | A speculative change is judged by whether the search then gets below its pre-change best | premise | Overturned |
 | [A94](#a94--an-agents-memory-across-a-change-of-the-pattern-is-carried-by-signed-navs-rule) | An agent's memory across a change of the pattern is carried by SIGNED-NAV's rule | reading | Assumed |
 | [A95](#a95--two-fast-loops-are-compared-at-the-same-proofs-per-flip-in-flips-and-at-the-same-share-of-work-on-proofs-in-work) | Two fast loops are compared at the same proofs per flip in flips, and at the same share of work on proofs in work | measure | Assumed |
+| [A96](#a96--a-role-preserving-shuffle-of-a-weave-removes-its-steps-apart-and-nothing-else-that-matters) | A role-preserving shuffle of a weave removes its steps apart and nothing else that matters | scope | Assumed |
 
 ## Entries
 
@@ -2468,3 +2469,21 @@ evidence: results and their status come from the records each entry links.
   interactions in work should be checked against such a control.
 - **History.**
   - 2026-11-17 · Adopted by `AGENT-LOOP-20261117-001`.
+
+### A96 · A role-preserving shuffle of a weave removes its steps apart and nothing else that matters
+
+**Assumed** · 2026-11-17 · scope
+
+- **Statement.** In `SPACE-ORDER-20261117-001`, the twin of a six-regular weave is the same knots after 5m degree- and
+  role-preserving swaps (members exchanged only between slots of the same role), and differences between a weave and its twin
+  are read as effects of steps apart (the weave's space).
+- **Why.** Taken by default in that epic ([decision note](../research/SPACE-ORDER-20261117-001/space_order.md)), on the advisor's
+  advice: plain swaps change how many knots demand each distinction, which confounds the comparison, while role-preserving swaps
+  keep every distinction's counts in each role and destroy short cycles and steps apart.
+- **Rests on it.** That epic's reading that space forces order: 256 phases on the weave against 9.5 on the twin at L = 384 for the
+  two-demand law.
+- **Challenge.** The twin also loses short cycles (the weave's triangles of co-knotted pairs), which matter for local forcing apart
+  from distance. Compare with a twin that keeps short cycles but adds long-range shortcuts (a weave with a few random rewirings),
+  and see whether the phase count follows steps apart (falls to about the new largest steps apart) or the cycles.
+- **History.**
+  - 2026-11-17 · Added by `SPACE-ORDER-20261117-001`.

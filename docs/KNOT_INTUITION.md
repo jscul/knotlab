@@ -3971,6 +3971,12 @@ So holes come in two kinds:
      there: two tested deeper need at least 7 at s = 7 and 8, and whether they grow without bound is open. The repaired conjecture:
      the top is held exactly when a bond between two bounded pieces, one at each end, survives at every distance
      ([decision note](../research/CARRIER-20261117-001/carrier.md)).
+   - **Pieces at three ends** (`TWO-ENDS-20261117-001`; referee pending): whatever holds the top to every depth can be slid, by
+     pumping the repeating structure of the blocks, until it sits near the top, near the far member or near the last few levels,
+     which the pattern reads differently, so the conjecture holds with three ends. Reach is either eventually constant or grows at
+     least linearly, never in between. Across a long stretch the 13 patterns that pass every carrier carry only one thing, an
+     orbit frozen all equal down a self-similar strand, and their least bonds so far avoid it: a chain along the way, 7 members at
+     s = 7 and 8 ([decision note](../research/TWO-ENDS-20261117-001/two_ends.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

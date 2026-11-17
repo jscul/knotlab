@@ -1,0 +1,3349 @@
+{
+ "cells": {
+  "local-w30-3200": {
+   "capped": {
+    "NOV8": 0.744,
+    "SL": 1.0
+   },
+   "room": {
+    "DrC0": 0.537,
+    "DrC1": 0.537,
+    "DrR0": 0.537,
+    "DrR1": 0.54,
+    "DrCf0": 0.756,
+    "DrCf1": 0.755,
+    "DrRf0": 0.758,
+    "DrRf1": 0.754
+   },
+   "R": {
+    "GN": {
+     "flips": [
+      0.0189,
+      0.015,
+      0.0235
+     ],
+     "work": [
+      0.1736,
+      0.1397,
+      0.2172
+     ],
+     "cpu": [
+      0.1948,
+      0.1578,
+      0.2437
+     ]
+    },
+    "GNf": {
+     "flips": [
+      0.0193,
+      0.0153,
+      0.024
+     ],
+     "work": [
+      0.1736,
+      0.138,
+      0.2175
+     ],
+     "cpu": [
+      0.1971,
+      0.1592,
+      0.247
+     ]
+    },
+    "GNco": {
+     "flips": [
+      0.0296,
+      0.0234,
+      0.0371
+     ],
+     "work": [
+      0.2713,
+      0.2151,
+      0.3427
+     ],
+     "cpu": [
+      0.5675,
+      0.4538,
+      0.7061
+     ]
+    },
+    "Dr0": {
+     "flips": [
+      0.3399,
+      0.2562,
+      0.4404
+     ],
+     "work": [
+      1.6478,
+      1.2413,
+      2.1567
+     ],
+     "cpu": [
+      2.8445,
+      2.1599,
+      3.6859
+     ]
+    },
+    "Dr1": {
+     "flips": [
+      0.4148,
+      0.2973,
+      0.5814
+     ],
+     "work": [
+      2.0195,
+      1.4456,
+      2.8016
+     ],
+     "cpu": [
+      3.3487,
+      2.4625,
+      4.5894
+     ]
+    },
+    "DrC0": {
+     "flips": [
+      0.0103,
+      0.0082,
+      0.013
+     ],
+     "work": [
+      0.3042,
+      0.2402,
+      0.3857
+     ],
+     "cpu": [
+      0.4986,
+      0.4015,
+      0.6246
+     ]
+    },
+    "DrC1": {
+     "flips": [
+      0.0103,
+      0.0081,
+      0.013
+     ],
+     "work": [
+      0.302,
+      0.2393,
+      0.3805
+     ],
+     "cpu": [
+      0.5003,
+      0.4057,
+      0.6294
+     ]
+    },
+    "DrR0": {
+     "flips": [
+      0.0103,
+      0.0082,
+      0.013
+     ],
+     "work": [
+      0.3029,
+      0.2366,
+      0.3832
+     ],
+     "cpu": [
+      0.4135,
+      0.3269,
+      0.5187
+     ]
+    },
+    "DrR1": {
+     "flips": [
+      0.0103,
+      0.0082,
+      0.013
+     ],
+     "work": [
+      0.3003,
+      0.2393,
+      0.3753
+     ],
+     "cpu": [
+      0.4091,
+      0.3299,
+      0.5127
+     ]
+    },
+    "DrCf0": {
+     "flips": [
+      0.0193,
+      0.0154,
+      0.0244
+     ],
+     "work": [
+      0.2977,
+      0.2366,
+      0.3741
+     ],
+     "cpu": [
+      0.7554,
+      0.6067,
+      0.9472
+     ]
+    },
+    "DrCf1": {
+     "flips": [
+      0.0188,
+      0.015,
+      0.024
+     ],
+     "work": [
+      0.2907,
+      0.2302,
+      0.3655
+     ],
+     "cpu": [
+      0.7415,
+      0.5997,
+      0.9341
+     ]
+    },
+    "DrRf0": {
+     "flips": [
+      0.0192,
+      0.0154,
+      0.0243
+     ],
+     "work": [
+      0.2975,
+      0.239,
+      0.3719
+     ],
+     "cpu": [
+      0.5309,
+      0.4275,
+      0.6591
+     ]
+    },
+    "DrRf1": {
+     "flips": [
+      0.019,
+      0.015,
+      0.0239
+     ],
+     "work": [
+      0.2911,
+      0.2287,
+      0.3669
+     ],
+     "cpu": [
+      0.5169,
+      0.4082,
+      0.6508
+     ]
+    }
+   },
+   "tests": {
+    "M1 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0038,
+        0.9805,
+        1.0125
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9926,
+        0.9739,
+        1.0352
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M1 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0043,
+        0.957,
+        1.0568
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.0057,
+        0.9559,
+        1.0376
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M2 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.0568,
+        0.0478,
+        0.0711
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.0454,
+        0.0369,
+        0.0565
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M2 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.1846,
+        0.1536,
+        0.2316
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.1495,
+        0.1201,
+        0.1856
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M3 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0015,
+        0.9738,
+        1.0155
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9766,
+        0.9612,
+        1.0156
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M3 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.7517,
+        1.632,
+        1.8288
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.7392,
+        1.6135,
+        1.8159
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        2.9467,
+        2.2396,
+        3.9369
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        2.3544,
+        1.7131,
+        3.311
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0631,
+        0.8189,
+        1.4051
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.8612,
+        0.6176,
+        1.1869
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    }
+   },
+   "per_rebuild": {
+    "DrC0": {
+     "rebuilds_median": 3.0,
+     "flips_after_first_per_rebuild": 1432.8,
+     "flips_after_first_median": 3713.0
+    },
+    "DrC1": {
+     "rebuilds_median": 3.0,
+     "flips_after_first_per_rebuild": 1445.2,
+     "flips_after_first_median": 3709.5
+    },
+    "DrR0": {
+     "rebuilds_median": 3.0,
+     "flips_after_first_per_rebuild": 1421.3,
+     "flips_after_first_median": 3716.0
+    },
+    "DrR1": {
+     "rebuilds_median": 3.0,
+     "flips_after_first_per_rebuild": 1424.2,
+     "flips_after_first_median": 3752.5
+    },
+    "DrCf0": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 1994.1,
+     "flips_after_first_median": 9895.0
+    },
+    "DrCf1": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 2024.8,
+     "flips_after_first_median": 9867.0
+    },
+    "DrRf0": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 1985.8,
+     "flips_after_first_median": 10001.5
+    },
+    "DrRf1": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 2017.8,
+     "flips_after_first_median": 9822.5
+    }
+   },
+   "context": {
+    "M1 flips other budget s0": [
+     1.0007,
+     0.9841,
+     1.0176
+    ],
+    "M1 flips other budget s1": [
+     0.9929,
+     0.9707,
+     1.0123
+    ],
+    "M1 work other budget s0": [
+     1.0007,
+     0.9609,
+     1.0208
+    ],
+    "M1 work other budget s1": [
+     0.9985,
+     0.9611,
+     1.0465
+    ],
+    "GNco/GN": {
+     "flips": [
+      1.5681,
+      1.4731,
+      1.6544
+     ],
+     "work": [
+      1.5623,
+      1.4696,
+      1.6555
+     ]
+    },
+    "GNf/GN": {
+     "flips": [
+      1.0219,
+      0.9797,
+      1.0672
+     ],
+     "work": [
+      0.9999,
+      0.9536,
+      1.0426
+     ]
+    },
+    "Dr/F flips": {
+     "0": [
+      0.3399,
+      0.2542,
+      0.4471
+     ],
+     "1": [
+      0.4148,
+      0.2987,
+      0.5737
+     ]
+    },
+    "GN slow work median": 2035169.0,
+    "DrC0 slow work median": 5544754.5,
+    "probes GN median": 3886.5
+   },
+   "SL": {
+    "solved": 0,
+    "runs": 250,
+    "n_final_range": [
+     88,
+     125
+    ],
+    "n_final_median": 106.0,
+    "work_median": 5802312.0
+   }
+  },
+  "local-w10-3200": {
+   "capped": {
+    "NOV": 0.004,
+    "SL": 1.0
+   },
+   "room": {
+    "DrC0": 0.115,
+    "DrC1": 0.115,
+    "DrR0": 0.116,
+    "DrR1": 0.117,
+    "DrCf0": 0.511,
+    "DrCf1": 0.509,
+    "DrRf0": 0.513,
+    "DrRf1": 0.511
+   },
+   "R": {
+    "GN": {
+     "flips": [
+      0.0167,
+      0.013,
+      0.0205
+     ],
+     "work": [
+      0.1713,
+      0.1326,
+      0.209
+     ],
+     "cpu": [
+      0.1994,
+      0.1546,
+      0.2422
+     ]
+    },
+    "GNf": {
+     "flips": [
+      0.0172,
+      0.0134,
+      0.0212
+     ],
+     "work": [
+      0.172,
+      0.135,
+      0.2098
+     ],
+     "cpu": [
+      0.2011,
+      0.1581,
+      0.244
+     ]
+    },
+    "GNco": {
+     "flips": [
+      0.0239,
+      0.0184,
+      0.0294
+     ],
+     "work": [
+      0.2726,
+      0.2133,
+      0.3328
+     ],
+     "cpu": [
+      0.4385,
+      0.3397,
+      0.5333
+     ]
+    },
+    "Dr0": {
+     "flips": [
+      0.7621,
+      0.5852,
+      1.1027
+     ],
+     "work": [
+      3.6039,
+      2.7867,
+      5.2048
+     ],
+     "cpu": [
+      6.1779,
+      4.8195,
+      9.0093
+     ]
+    },
+    "Dr1": {
+     "flips": [
+      0.7162,
+      0.5687,
+      0.9387
+     ],
+     "work": [
+      3.374,
+      2.6991,
+      4.4263
+     ],
+     "cpu": [
+      5.5703,
+      4.4403,
+      7.329
+     ]
+    },
+    "DrC0": {
+     "flips": [
+      0.0095,
+      0.0073,
+      0.0117
+     ],
+     "work": [
+      0.2486,
+      0.1941,
+      0.3039
+     ],
+     "cpu": [
+      0.3732,
+      0.2929,
+      0.4532
+     ]
+    },
+    "DrC1": {
+     "flips": [
+      0.0094,
+      0.0073,
+      0.0116
+     ],
+     "work": [
+      0.2474,
+      0.1916,
+      0.3022
+     ],
+     "cpu": [
+      0.3704,
+      0.2889,
+      0.4474
+     ]
+    },
+    "DrR0": {
+     "flips": [
+      0.0095,
+      0.0073,
+      0.0117
+     ],
+     "work": [
+      0.249,
+      0.1949,
+      0.3034
+     ],
+     "cpu": [
+      0.3514,
+      0.2715,
+      0.4235
+     ]
+    },
+    "DrR1": {
+     "flips": [
+      0.0095,
+      0.0073,
+      0.0117
+     ],
+     "work": [
+      0.2479,
+      0.1923,
+      0.3021
+     ],
+     "cpu": [
+      0.3477,
+      0.2762,
+      0.4196
+     ]
+    },
+    "DrCf0": {
+     "flips": [
+      0.017,
+      0.0131,
+      0.021
+     ],
+     "work": [
+      0.2642,
+      0.2041,
+      0.3223
+     ],
+     "cpu": [
+      0.5792,
+      0.4476,
+      0.7055
+     ]
+    },
+    "DrCf1": {
+     "flips": [
+      0.0169,
+      0.0131,
+      0.0208
+     ],
+     "work": [
+      0.2603,
+      0.2027,
+      0.3155
+     ],
+     "cpu": [
+      0.5785,
+      0.4499,
+      0.6979
+     ]
+    },
+    "DrRf0": {
+     "flips": [
+      0.0172,
+      0.0134,
+      0.0211
+     ],
+     "work": [
+      0.2664,
+      0.2086,
+      0.3243
+     ],
+     "cpu": [
+      0.451,
+      0.3532,
+      0.5435
+     ]
+    },
+    "DrRf1": {
+     "flips": [
+      0.0169,
+      0.013,
+      0.0208
+     ],
+     "work": [
+      0.2623,
+      0.2038,
+      0.3181
+     ],
+     "cpu": [
+      0.437,
+      0.3388,
+      0.5301
+     ]
+    }
+   },
+   "tests": {
+    "M1 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9925,
+        0.9821,
+        1.0055
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9988,
+        0.9894,
+        1.0083
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M1 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9984,
+        0.9764,
+        1.0188
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.998,
+        0.9751,
+        1.0238
+       ],
+       "bound": false
+      }
+     },
+     "room": false,
+     "helps": "no room",
+     "hurts": "no room"
+    },
+    "M2 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.0224,
+        0.0149,
+        0.031
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.0236,
+        0.0172,
+        0.0293
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M2 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.069,
+        0.046,
+        0.0914
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.0733,
+        0.0522,
+        0.0899
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M3 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9883,
+        0.9771,
+        1.0005
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9812,
+        0.9696,
+        0.9942
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M3 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.4515,
+        1.4189,
+        1.5067
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.4443,
+        1.4122,
+        1.4968
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.9909,
+        1.1162,
+        2.6194
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        2.1033,
+        1.3121,
+        2.7412
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.6121,
+        0.3388,
+        0.8028
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.6506,
+        0.395,
+        0.8457
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    }
+   },
+   "per_rebuild": {
+    "DrC0": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 215.8,
+     "flips_after_first_median": 414.0
+    },
+    "DrC1": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 215.0,
+     "flips_after_first_median": 415.5
+    },
+    "DrR0": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 223.5,
+     "flips_after_first_median": 420.0
+    },
+    "DrR1": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 220.2,
+     "flips_after_first_median": 422.5
+    },
+    "DrCf0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 871.2,
+     "flips_after_first_median": 3340.0
+    },
+    "DrCf1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 881.3,
+     "flips_after_first_median": 3322.0
+    },
+    "DrRf0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 868.9,
+     "flips_after_first_median": 3369.5
+    },
+    "DrRf1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 874.2,
+     "flips_after_first_median": 3347.0
+    }
+   },
+   "context": {
+    "M1 flips other budget s0": [
+     0.995,
+     0.9891,
+     1.0046
+    ],
+    "M1 flips other budget s1": [
+     0.9945,
+     0.9876,
+     1.0063
+    ],
+    "M1 work other budget s0": [
+     0.9916,
+     0.971,
+     1.008
+    ],
+    "M1 work other budget s1": [
+     0.9926,
+     0.9721,
+     1.0156
+    ],
+    "GNco/GN": {
+     "flips": [
+      1.4341,
+      1.3909,
+      1.472
+     ],
+     "work": [
+      1.5915,
+      1.5139,
+      1.6556
+     ]
+    },
+    "GNf/GN": {
+     "flips": [
+      1.0343,
+      1.0171,
+      1.0456
+     ],
+     "work": [
+      1.004,
+      0.983,
+      1.0424
+     ]
+    },
+    "Dr/F flips": {
+     "0": [
+      0.7621,
+      0.5843,
+      1.098
+     ],
+     "1": [
+      0.7162,
+      0.5677,
+      0.9362
+     ]
+    },
+    "GN slow work median": 1025791.5,
+    "DrC0 slow work median": 2696928.0,
+    "probes GN median": 1111.0
+   },
+   "SL": {
+    "solved": 0,
+    "runs": 250,
+    "n_final_range": [
+     152,
+     230
+    ],
+    "n_final_median": 203.0,
+    "work_median": 4262204.5
+   }
+  },
+  "local-w20-3200": {
+   "capped": {
+    "SL": 1.0
+   },
+   "room": {
+    "DrC0": 0.294,
+    "DrC1": 0.294,
+    "DrR0": 0.294,
+    "DrR1": 0.293,
+    "DrCf0": 0.627,
+    "DrCf1": 0.628,
+    "DrRf0": 0.632,
+    "DrRf1": 0.629
+   },
+   "R": {
+    "GN": {
+     "flips": [
+      0.0131,
+      0.0108,
+      0.0153
+     ],
+     "work": [
+      0.1282,
+      0.1049,
+      0.1484
+     ],
+     "cpu": [
+      0.1552,
+      0.128,
+      0.1819
+     ]
+    },
+    "GNf": {
+     "flips": [
+      0.0136,
+      0.0113,
+      0.0159
+     ],
+     "work": [
+      0.1302,
+      0.1065,
+      0.1512
+     ],
+     "cpu": [
+      0.161,
+      0.1335,
+      0.1883
+     ]
+    },
+    "GNco": {
+     "flips": [
+      0.0179,
+      0.0147,
+      0.0212
+     ],
+     "work": [
+      0.1875,
+      0.1538,
+      0.2224
+     ],
+     "cpu": [
+      0.3604,
+      0.2987,
+      0.4272
+     ]
+    },
+    "Dr0": {
+     "flips": [
+      0.4681,
+      0.3669,
+      0.5884
+     ],
+     "work": [
+      2.272,
+      1.7784,
+      2.8239
+     ],
+     "cpu": [
+      4.0169,
+      3.1589,
+      4.9476
+     ]
+    },
+    "Dr1": {
+     "flips": [
+      0.4795,
+      0.3841,
+      0.5997
+     ],
+     "work": [
+      2.3335,
+      1.8739,
+      2.9094
+     ],
+     "cpu": [
+      3.9137,
+      3.1709,
+      4.9676
+     ]
+    },
+    "DrC0": {
+     "flips": [
+      0.007,
+      0.0057,
+      0.0082
+     ],
+     "work": [
+      0.2069,
+      0.17,
+      0.2409
+     ],
+     "cpu": [
+      0.3292,
+      0.2737,
+      0.3829
+     ]
+    },
+    "DrC1": {
+     "flips": [
+      0.007,
+      0.0058,
+      0.0082
+     ],
+     "work": [
+      0.2048,
+      0.1674,
+      0.2388
+     ],
+     "cpu": [
+      0.3258,
+      0.2707,
+      0.3865
+     ]
+    },
+    "DrR0": {
+     "flips": [
+      0.007,
+      0.0058,
+      0.0082
+     ],
+     "work": [
+      0.2079,
+      0.1705,
+      0.2428
+     ],
+     "cpu": [
+      0.2903,
+      0.2404,
+      0.34
+     ]
+    },
+    "DrR1": {
+     "flips": [
+      0.007,
+      0.0057,
+      0.0082
+     ],
+     "work": [
+      0.2054,
+      0.1702,
+      0.2383
+     ],
+     "cpu": [
+      0.2883,
+      0.2381,
+      0.3389
+     ]
+    },
+    "DrCf0": {
+     "flips": [
+      0.0133,
+      0.0111,
+      0.0157
+     ],
+     "work": [
+      0.2107,
+      0.1741,
+      0.2458
+     ],
+     "cpu": [
+      0.5181,
+      0.4302,
+      0.606
+     ]
+    },
+    "DrCf1": {
+     "flips": [
+      0.0135,
+      0.0112,
+      0.0159
+     ],
+     "work": [
+      0.2157,
+      0.1769,
+      0.2512
+     ],
+     "cpu": [
+      0.5226,
+      0.4315,
+      0.6118
+     ]
+    },
+    "DrRf0": {
+     "flips": [
+      0.0134,
+      0.0111,
+      0.0158
+     ],
+     "work": [
+      0.2138,
+      0.1767,
+      0.2506
+     ],
+     "cpu": [
+      0.381,
+      0.315,
+      0.4419
+     ]
+    },
+    "DrRf1": {
+     "flips": [
+      0.0134,
+      0.0111,
+      0.0156
+     ],
+     "work": [
+      0.2117,
+      0.1748,
+      0.2479
+     ],
+     "cpu": [
+      0.3769,
+      0.3099,
+      0.4364
+     ]
+    }
+   },
+   "tests": {
+    "M1 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9937,
+        0.9764,
+        1.0061
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.0078,
+        0.9912,
+        1.02
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M1 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9951,
+        0.9807,
+        1.0092
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9968,
+        0.9855,
+        1.012
+       ],
+       "bound": false
+      }
+     },
+     "room": false,
+     "helps": "no room",
+     "hurts": "no room"
+    },
+    "M2 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.0285,
+        0.0237,
+        0.0336
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.0282,
+        0.0234,
+        0.0325
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M2 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.0911,
+        0.0756,
+        0.1065
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.0878,
+        0.0737,
+        0.1017
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M3 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9812,
+        0.9662,
+        1.0034
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9949,
+        0.9788,
+        1.0049
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M3 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.6137,
+        1.5701,
+        1.6742
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.5973,
+        1.5571,
+        1.6587
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        2.0959,
+        1.6732,
+        2.6959
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        2.075,
+        1.6647,
+        2.5824
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.7103,
+        0.5675,
+        0.9079
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.6845,
+        0.5502,
+        0.8592
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    }
+   },
+   "per_rebuild": {
+    "DrC0": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 652.6,
+     "flips_after_first_median": 1330.5
+    },
+    "DrC1": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 659.0,
+     "flips_after_first_median": 1335.5
+    },
+    "DrR0": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 650.5,
+     "flips_after_first_median": 1335.5
+    },
+    "DrR1": {
+     "rebuilds_median": 2.0,
+     "flips_after_first_per_rebuild": 661.5,
+     "flips_after_first_median": 1329.0
+    },
+    "DrCf0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 1368.2,
+     "flips_after_first_median": 5383.0
+    },
+    "DrCf1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 1351.9,
+     "flips_after_first_median": 5406.0
+    },
+    "DrRf0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 1352.8,
+     "flips_after_first_median": 5490.0
+    },
+    "DrRf1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 1379.5,
+     "flips_after_first_median": 5426.5
+    }
+   },
+   "context": {
+    "M1 flips other budget s0": [
+     1.0,
+     0.9935,
+     1.0067
+    ],
+    "M1 flips other budget s1": [
+     1.0029,
+     0.9945,
+     1.0151
+    ],
+    "M1 work other budget s0": [
+     0.9855,
+     0.9591,
+     1.0115
+    ],
+    "M1 work other budget s1": [
+     1.019,
+     0.9788,
+     1.0347
+    ],
+    "GNco/GN": {
+     "flips": [
+      1.3661,
+      1.3219,
+      1.4157
+     ],
+     "work": [
+      1.4628,
+      1.402,
+      1.5322
+     ]
+    },
+    "GNf/GN": {
+     "flips": [
+      1.039,
+      1.0103,
+      1.063
+     ],
+     "work": [
+      1.0153,
+      0.9869,
+      1.0443
+     ]
+    },
+    "Dr/F flips": {
+     "0": [
+      0.4681,
+      0.3669,
+      0.5912
+     ],
+     "1": [
+      0.4795,
+      0.3845,
+      0.603
+     ]
+    },
+    "GN slow work median": 1388664.0,
+    "DrC0 slow work median": 3699259.0,
+    "probes GN median": 1938.5
+   },
+   "SL": {
+    "solved": 0,
+    "runs": 250,
+    "n_final_range": [
+     96,
+     163
+    ],
+    "n_final_median": 124.0,
+    "work_median": 4501503.5
+   }
+  },
+  "block-w20-3200": {
+   "capped": {
+    "NOV": 0.016,
+    "NOV8": 0.996,
+    "SL": 1.0
+   },
+   "room": {
+    "DrC0": 0.891,
+    "DrC1": 0.885,
+    "DrR0": 0.895,
+    "DrR1": 0.884,
+    "DrCf0": 0.895,
+    "DrCf1": 0.886,
+    "DrRf0": 0.904,
+    "DrRf1": 0.893
+   },
+   "R": {
+    "GN": {
+     "flips": [
+      0.3638,
+      0.2791,
+      0.4818
+     ],
+     "work": [
+      1.9696,
+      1.2968,
+      2.2948
+     ],
+     "cpu": [
+      2.2993,
+      1.5155,
+      2.646
+     ]
+    },
+    "GNf": {
+     "flips": [
+      0.3485,
+      0.2516,
+      0.4423
+     ],
+     "work": [
+      1.7673,
+      1.1182,
+      2.0681
+     ],
+     "cpu": [
+      2.0511,
+      1.3293,
+      2.383
+     ]
+    },
+    "GNco": {
+     "flips": [
+      0.3937,
+      0.2602,
+      0.4685
+     ],
+     "work": [
+      2.9963,
+      1.9081,
+      3.4855
+     ],
+     "cpu": [
+      8.1175,
+      5.3871,
+      9.304
+     ]
+    },
+    "Dr0": {
+     "flips": [
+      0.424,
+      0.2951,
+      0.5096
+     ],
+     "work": [
+      1.9407,
+      1.3598,
+      2.3239
+     ],
+     "cpu": [
+      3.9269,
+      2.7308,
+      4.5904
+     ]
+    },
+    "Dr1": {
+     "flips": [
+      0.4207,
+      0.2787,
+      0.4948
+     ],
+     "work": [
+      1.9222,
+      1.2401,
+      2.2392
+     ],
+     "cpu": [
+      3.6747,
+      2.4358,
+      4.2181
+     ]
+    },
+    "DrC0": {
+     "flips": [
+      0.1968,
+      0.1279,
+      0.2371
+     ],
+     "work": [
+      2.3928,
+      1.4812,
+      2.8347
+     ],
+     "cpu": [
+      5.0453,
+      3.2377,
+      5.9844
+     ]
+    },
+    "DrC1": {
+     "flips": [
+      0.1882,
+      0.1167,
+      0.2245
+     ],
+     "work": [
+      2.344,
+      1.5684,
+      2.7567
+     ],
+     "cpu": [
+      4.9801,
+      3.1826,
+      5.7405
+     ]
+    },
+    "DrR0": {
+     "flips": [
+      0.2005,
+      0.1343,
+      0.2375
+     ],
+     "work": [
+      2.4398,
+      1.5694,
+      2.851
+     ],
+     "cpu": [
+      4.1534,
+      2.7123,
+      4.801
+     ]
+    },
+    "DrR1": {
+     "flips": [
+      0.1831,
+      0.12,
+      0.2184
+     ],
+     "work": [
+      2.3093,
+      1.5927,
+      2.7211
+     ],
+     "cpu": [
+      3.852,
+      2.5294,
+      4.5005
+     ]
+    },
+    "DrCf0": {
+     "flips": [
+      0.1977,
+      0.1275,
+      0.2393
+     ],
+     "work": [
+      2.5906,
+      1.7252,
+      3.0923
+     ],
+     "cpu": [
+      6.4495,
+      4.2548,
+      7.5247
+     ]
+    },
+    "DrCf1": {
+     "flips": [
+      0.1783,
+      0.116,
+      0.22
+     ],
+     "work": [
+      2.464,
+      1.562,
+      2.9395
+     ],
+     "cpu": [
+      6.14,
+      3.8825,
+      7.1585
+     ]
+    },
+    "DrRf0": {
+     "flips": [
+      0.215,
+      0.1358,
+      0.2566
+     ],
+     "work": [
+      2.7015,
+      1.7761,
+      3.1863
+     ],
+     "cpu": [
+      4.8831,
+      3.1265,
+      5.6782
+     ]
+    },
+    "DrRf1": {
+     "flips": [
+      0.1908,
+      0.1231,
+      0.2288
+     ],
+     "work": [
+      2.5681,
+      1.6276,
+      3.0333
+     ],
+     "cpu": [
+      4.5823,
+      3.0166,
+      5.3337
+     ]
+    }
+   },
+   "tests": {
+    "M1 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9192,
+        0.8308,
+        1.0439
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9347,
+        0.8772,
+        1.0553
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M1 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9808,
+        0.9283,
+        1.0562
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.015,
+        0.9295,
+        1.0865
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M2 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.4662,
+        0.3999,
+        0.5278
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.4238,
+        0.3898,
+        0.4968
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M2 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.2329,
+        1.0594,
+        1.3416
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.2195,
+        1.1094,
+        1.3787
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M3 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.5672,
+        0.4627,
+        0.6432
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.5117,
+        0.4221,
+        0.5811
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M3 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.2149,
+        1.1421,
+        1.2946
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.1901,
+        1.0695,
+        1.2607
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.3377,
+        1.022,
+        1.8557
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.2162,
+        0.973,
+        1.6878
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.626,
+        0.5246,
+        0.8819
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.6191,
+        0.5243,
+        0.9093
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    }
+   },
+   "per_rebuild": {
+    "DrC0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 6052.6,
+     "flips_after_first_median": 26097.5
+    },
+    "DrC1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 5838.4,
+     "flips_after_first_median": 24550.5
+    },
+    "DrR0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 6219.5,
+     "flips_after_first_median": 27170.0
+    },
+    "DrR1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 5633.8,
+     "flips_after_first_median": 24456.5
+    },
+    "DrCf0": {
+     "rebuilds_median": 7.0,
+     "flips_after_first_per_rebuild": 3749.7,
+     "flips_after_first_median": 27149.5
+    },
+    "DrCf1": {
+     "rebuilds_median": 7.0,
+     "flips_after_first_per_rebuild": 3536.5,
+     "flips_after_first_median": 24955.5
+    },
+    "DrRf0": {
+     "rebuilds_median": 7.0,
+     "flips_after_first_per_rebuild": 4176.6,
+     "flips_after_first_median": 30042.0
+    },
+    "DrRf1": {
+     "rebuilds_median": 7.0,
+     "flips_after_first_per_rebuild": 3791.2,
+     "flips_after_first_median": 26754.5
+    }
+   },
+   "context": {
+    "M1 flips other budget s0": [
+     0.9815,
+     0.8672,
+     1.1503
+    ],
+    "M1 flips other budget s1": [
+     1.0276,
+     0.8992,
+     1.1431
+    ],
+    "M1 work other budget s0": [
+     0.9589,
+     0.8957,
+     1.0197
+    ],
+    "M1 work other budget s1": [
+     0.9595,
+     0.9267,
+     1.0284
+    ],
+    "GNco/GN": {
+     "flips": [
+      1.0821,
+      0.8333,
+      1.2012
+     ],
+     "work": [
+      1.5213,
+      1.3549,
+      1.608
+     ]
+    },
+    "GNf/GN": {
+     "flips": [
+      0.9579,
+      0.7648,
+      1.1634
+     ],
+     "work": [
+      0.8973,
+      0.8563,
+      0.9378
+     ]
+    },
+    "Dr/F flips": {
+     "0": [
+      0.424,
+      0.2839,
+      0.5085
+     ],
+     "1": [
+      0.4207,
+      0.2806,
+      0.4935
+     ]
+    },
+    "GN slow work median": 2745704.0,
+    "DrC0 slow work median": 3245026.0,
+    "probes GN median": 7744.5
+   },
+   "SL": {
+    "solved": 0,
+    "runs": 250,
+    "n_final_range": [
+     2412,
+     2621
+    ],
+    "n_final_median": 2495.0,
+    "work_median": 8562460.0
+   }
+  },
+  "block-w40-3200": {
+   "capped": {
+    "NOV8": 0.996,
+    "SL": 1.0
+   },
+   "room": {
+    "DrC0": 0.912,
+    "DrC1": 0.907,
+    "DrR0": 0.917,
+    "DrR1": 0.91,
+    "DrCf0": 0.91,
+    "DrCf1": 0.904,
+    "DrRf0": 0.914,
+    "DrRf1": 0.908
+   },
+   "R": {
+    "GN": {
+     "flips": [
+      1.084,
+      0.9381,
+      1.2247
+     ],
+     "work": [
+      4.5045,
+      3.9445,
+      4.887
+     ],
+     "cpu": [
+      4.8042,
+      4.2664,
+      5.206
+     ]
+    },
+    "GNf": {
+     "flips": [
+      1.037,
+      0.9083,
+      1.1835
+     ],
+     "work": [
+      4.2753,
+      3.7037,
+      4.4984
+     ],
+     "cpu": [
+      4.5457,
+      4.0037,
+      4.7856
+     ]
+    },
+    "GNco": {
+     "flips": [
+      1.0419,
+      0.8689,
+      1.125
+     ],
+     "work": [
+      6.124,
+      5.3758,
+      6.9322
+     ],
+     "cpu": [
+      17.6734,
+      15.7851,
+      20.2695
+     ]
+    },
+    "Dr0": {
+     "flips": [
+      0.7864,
+      0.6828,
+      0.8251
+     ],
+     "work": [
+      3.5429,
+      3.0802,
+      3.7023
+     ],
+     "cpu": [
+      6.7784,
+      6.032,
+      7.0988
+     ]
+    },
+    "Dr1": {
+     "flips": [
+      0.7004,
+      0.5936,
+      0.7599
+     ],
+     "work": [
+      3.1335,
+      2.6545,
+      3.3838
+     ],
+     "cpu": [
+      5.7158,
+      4.9771,
+      6.1962
+     ]
+    },
+    "DrC0": {
+     "flips": [
+      0.6711,
+      0.578,
+      0.7178
+     ],
+     "work": [
+      6.0032,
+      5.2129,
+      6.5847
+     ],
+     "cpu": [
+      12.5919,
+      11.0914,
+      14.0928
+     ]
+    },
+    "DrC1": {
+     "flips": [
+      0.5988,
+      0.5092,
+      0.6881
+     ],
+     "work": [
+      5.8036,
+      5.0075,
+      6.0964
+     ],
+     "cpu": [
+      11.9878,
+      10.597,
+      12.966
+     ]
+    },
+    "DrR0": {
+     "flips": [
+      0.7024,
+      0.5981,
+      0.7575
+     ],
+     "work": [
+      6.2993,
+      5.2398,
+      6.7718
+     ],
+     "cpu": [
+      10.6347,
+      9.1176,
+      11.6166
+     ]
+    },
+    "DrR1": {
+     "flips": [
+      0.6326,
+      0.5421,
+      0.7036
+     ],
+     "work": [
+      5.8813,
+      5.0509,
+      6.3157
+     ],
+     "cpu": [
+      9.5551,
+      8.3819,
+      10.6878
+     ]
+    },
+    "DrCf0": {
+     "flips": [
+      0.6721,
+      0.5586,
+      0.718
+     ],
+     "work": [
+      6.5962,
+      5.6727,
+      7.2322
+     ],
+     "cpu": [
+      15.2933,
+      13.4816,
+      16.9628
+     ]
+    },
+    "DrCf1": {
+     "flips": [
+      0.5787,
+      0.498,
+      0.6798
+     ],
+     "work": [
+      6.3274,
+      5.46,
+      6.673
+     ],
+     "cpu": [
+      14.7973,
+      12.89,
+      15.4616
+     ]
+    },
+    "DrRf0": {
+     "flips": [
+      0.6788,
+      0.5795,
+      0.7295
+     ],
+     "work": [
+      6.8858,
+      5.8385,
+      7.3895
+     ],
+     "cpu": [
+      11.9926,
+      10.2857,
+      12.7966
+     ]
+    },
+    "DrRf1": {
+     "flips": [
+      0.6536,
+      0.5549,
+      0.6993
+     ],
+     "work": [
+      6.4986,
+      5.6589,
+      6.9577
+     ],
+     "cpu": [
+      11.0656,
+      9.7977,
+      11.9905
+     ]
+    }
+   },
+   "tests": {
+    "M1 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.9901,
+        0.8985,
+        1.0792
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.8854,
+        0.8157,
+        1.0323
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M1 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.953,
+        0.8945,
+        1.0591
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.9868,
+        0.9241,
+        1.0491
+       ],
+       "bound": false
+      }
+     },
+     "room": true,
+     "helps": "fails",
+     "hurts": "fails"
+    },
+    "M2 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.8546,
+        0.7834,
+        0.9388
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.8263,
+        0.7525,
+        0.9839
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M2 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.6944,
+        1.6007,
+        1.8931
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.8521,
+        1.6953,
+        2.0031
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M3 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.6481,
+        0.5396,
+        0.7141
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.5581,
+        0.4686,
+        0.6721
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M3 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.3327,
+        1.2304,
+        1.4559
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.2884,
+        1.1743,
+        1.3881
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.8241,
+        0.7056,
+        0.9558
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.7968,
+        0.6744,
+        0.9922
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    },
+    "M4 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.3762,
+        0.3481,
+        0.4397
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.4112,
+        0.3699,
+        0.48
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    }
+   },
+   "per_rebuild": {
+    "DrC0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 9390.0,
+     "flips_after_first_median": 33002.0
+    },
+    "DrC1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 8611.8,
+     "flips_after_first_median": 31194.0
+    },
+    "DrR0": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 9912.1,
+     "flips_after_first_median": 35424.5
+    },
+    "DrR1": {
+     "rebuilds_median": 4.0,
+     "flips_after_first_per_rebuild": 9105.3,
+     "flips_after_first_median": 32440.0
+    },
+    "DrCf0": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 6112.2,
+     "flips_after_first_median": 32524.0
+    },
+    "DrCf1": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 5674.5,
+     "flips_after_first_median": 30439.0
+    },
+    "DrRf0": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 6426.0,
+     "flips_after_first_median": 34072.5
+    },
+    "DrRf1": {
+     "rebuilds_median": 5.0,
+     "flips_after_first_per_rebuild": 5833.4,
+     "flips_after_first_median": 31806.0
+    }
+   },
+   "context": {
+    "M1 flips other budget s0": [
+     0.9554,
+     0.8678,
+     1.0653
+    ],
+    "M1 flips other budget s1": [
+     0.9467,
+     0.844,
+     1.0725
+    ],
+    "M1 work other budget s0": [
+     0.9579,
+     0.8953,
+     1.048
+    ],
+    "M1 work other budget s1": [
+     0.9736,
+     0.9099,
+     1.0342
+    ],
+    "GNco/GN": {
+     "flips": [
+      0.9611,
+      0.8143,
+      1.087
+     ],
+     "work": [
+      1.3595,
+      1.2218,
+      1.5451
+     ]
+    },
+    "GNf/GN": {
+     "flips": [
+      0.9567,
+      0.8337,
+      1.1682
+     ],
+     "work": [
+      0.9491,
+      0.8824,
+      1.0133
+     ]
+    },
+    "Dr/F flips": {
+     "0": [
+      0.7864,
+      0.6838,
+      0.8231
+     ],
+     "1": [
+      0.7004,
+      0.5936,
+      0.7591
+     ]
+    },
+    "GN slow work median": 2290292.0,
+    "DrC0 slow work median": 2265882.0,
+    "probes GN median": 7935.5
+   },
+   "SL": {
+    "solved": 0,
+    "runs": 250,
+    "n_final_range": [
+     2888,
+     3140
+    ],
+    "n_final_median": 3069.5,
+    "work_median": 8351539.0
+   }
+  },
+  "rand-3200": {
+   "capped": {
+    "NOV8": 0.712,
+    "SL": 1.0
+   },
+   "room": {
+    "DrC0": 0.0,
+    "DrC1": 0.0,
+    "DrR0": 0.0,
+    "DrR1": 0.0,
+    "DrCf0": 0.0,
+    "DrCf1": 0.0,
+    "DrRf0": 0.0,
+    "DrRf1": 0.0
+   },
+   "R": {
+    "GN": {
+     "flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "work": [
+      1.6612,
+      1.6078,
+      1.8146
+     ],
+     "cpu": [
+      1.5135,
+      1.475,
+      1.6745
+     ]
+    },
+    "GNf": {
+     "flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "work": [
+      1.6625,
+      1.6059,
+      1.8152
+     ],
+     "cpu": [
+      1.5055,
+      1.4706,
+      1.6481
+     ]
+    },
+    "GNco": {
+     "flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "work": [
+      3.7617,
+      3.7194,
+      3.9477
+     ],
+     "cpu": [
+      11.6957,
+      11.2895,
+      12.5226
+     ]
+    },
+    "Dr0": {
+     "flips": [
+      1.1462,
+      0.9999,
+      1.4828
+     ],
+     "work": [
+      5.0351,
+      4.4184,
+      6.5071
+     ],
+     "cpu": [
+      10.0832,
+      8.7499,
+      12.8745
+     ]
+    },
+    "Dr1": {
+     "flips": [
+      0.8956,
+      0.7579,
+      1.0969
+     ],
+     "work": [
+      3.9122,
+      3.305,
+      4.7753
+     ],
+     "cpu": [
+      7.4916,
+      6.307,
+      9.0388
+     ]
+    },
+    "DrC0": {
+     "flips": [
+      1.1462,
+      0.9996,
+      1.4828
+     ],
+     "work": [
+      5.739,
+      5.0913,
+      7.2931
+     ],
+     "cpu": [
+      10.6459,
+      9.2958,
+      13.5235
+     ]
+    },
+    "DrC1": {
+     "flips": [
+      0.8956,
+      0.7545,
+      1.0923
+     ],
+     "work": [
+      4.5975,
+      3.9685,
+      5.5891
+     ],
+     "cpu": [
+      8.0086,
+      6.8064,
+      9.6525
+     ]
+    },
+    "DrR0": {
+     "flips": [
+      1.1462,
+      0.9993,
+      1.4859
+     ],
+     "work": [
+      5.739,
+      5.087,
+      7.2931
+     ],
+     "cpu": [
+      10.6147,
+      9.2567,
+      13.5202
+     ]
+    },
+    "DrR1": {
+     "flips": [
+      0.8956,
+      0.7606,
+      1.0919
+     ],
+     "work": [
+      4.5975,
+      3.9694,
+      5.5702
+     ],
+     "cpu": [
+      7.9791,
+      6.846,
+      9.6173
+     ]
+    },
+    "DrCf0": {
+     "flips": [
+      1.1462,
+      1.0019,
+      1.4802
+     ],
+     "work": [
+      5.7386,
+      5.0675,
+      7.3198
+     ],
+     "cpu": [
+      10.6176,
+      9.275,
+      13.5177
+     ]
+    },
+    "DrCf1": {
+     "flips": [
+      0.8956,
+      0.7606,
+      1.0969
+     ],
+     "work": [
+      4.5967,
+      3.9608,
+      5.5511
+     ],
+     "cpu": [
+      8.0111,
+      6.8423,
+      9.6285
+     ]
+    },
+    "DrRf0": {
+     "flips": [
+      1.1462,
+      1.0001,
+      1.486
+     ],
+     "work": [
+      5.7386,
+      5.0807,
+      7.3639
+     ],
+     "cpu": [
+      10.683,
+      9.2786,
+      13.5655
+     ]
+    },
+    "DrRf1": {
+     "flips": [
+      0.8956,
+      0.7599,
+      1.0863
+     ],
+     "work": [
+      4.5967,
+      3.9766,
+      5.5845
+     ],
+     "cpu": [
+      7.9826,
+      6.8464,
+      9.6225
+     ]
+    }
+   },
+   "tests": {
+    "M1 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      }
+     },
+     "room": false,
+     "helps": "no room",
+     "hurts": "no room"
+    },
+    "M1 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      }
+     },
+     "room": false,
+     "helps": "no room",
+     "hurts": "no room"
+    },
+    "M2 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M2 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.1398,
+        1.116,
+        1.1525
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.1752,
+        1.153,
+        1.2109
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M3 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.1462,
+        0.9984,
+        1.4818
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.8956,
+        0.7617,
+        1.0916
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M3 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        3.4547,
+        3.0987,
+        4.2161
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        2.7676,
+        2.4179,
+        3.1607
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 flips": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "bound": false
+      }
+     },
+     "helps": "fails"
+    },
+    "M4 work": {
+     "seeds": {
+      "0": {
+       "ratio": [
+        0.6861,
+        0.6296,
+        0.708
+       ],
+       "bound": false
+      },
+      "1": {
+       "ratio": [
+        0.7074,
+        0.6477,
+        0.7354
+       ],
+       "bound": false
+      }
+     },
+     "helps": "holds"
+    }
+   },
+   "per_rebuild": {
+    "DrC0": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    },
+    "DrC1": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    },
+    "DrR0": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    },
+    "DrR1": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    },
+    "DrCf0": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    },
+    "DrCf1": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    },
+    "DrRf0": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    },
+    "DrRf1": {
+     "rebuilds_median": 0.0,
+     "flips_after_first_per_rebuild": 0.0,
+     "flips_after_first_median": 0.0
+    }
+   },
+   "context": {
+    "M1 flips other budget s0": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "M1 flips other budget s1": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "M1 work other budget s0": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "M1 work other budget s1": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GNco/GN": {
+     "flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "work": [
+      2.2644,
+      2.159,
+      2.3285
+     ]
+    },
+    "GNf/GN": {
+     "flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "work": [
+      1.0008,
+      1.0003,
+      1.0019
+     ]
+    },
+    "Dr/F flips": {
+     "0": [
+      1.1462,
+      1.0001,
+      1.4797
+     ],
+     "1": [
+      0.8956,
+      0.7599,
+      1.0949
+     ]
+    },
+    "GN slow work median": 1372621.0,
+    "DrC0 slow work median": 1380965.0,
+    "probes GN median": 6533.5
+   },
+   "SL": {
+    "solved": 0,
+    "runs": 250,
+    "n_final_range": [
+     3200,
+     3200
+    ],
+    "n_final_median": 3200.0,
+    "work_median": 1443345.0
+   },
+   "rand_identity": {
+    "identical_runs": 1000,
+    "of": 1000,
+    "rebuilds_total": 0
+   }
+  }
+ },
+ "checks": {
+  "runs": 24000,
+  "solved": 21633,
+  "solved_verified_true": 21633
+ },
+ "family": {
+  "local": {
+   "M1 flips helps": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "fails",
+     "local-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M1 flips hurts": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "fails",
+     "local-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M1 work helps": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "no room",
+     "local-w20-3200": "no room"
+    },
+    "family": "fails"
+   },
+   "M1 work hurts": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "no room",
+     "local-w20-3200": "no room"
+    },
+    "family": "fails"
+   },
+   "M2 flips": {
+    "first": "holds",
+    "rest": {
+     "local-w10-3200": "holds",
+     "local-w20-3200": "holds"
+    },
+    "family": "holds"
+   },
+   "M2 work": {
+    "first": "holds",
+    "rest": {
+     "local-w10-3200": "holds",
+     "local-w20-3200": "holds"
+    },
+    "family": "holds"
+   },
+   "M3 flips": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "fails",
+     "local-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M3 work": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "fails",
+     "local-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M4 flips": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "fails",
+     "local-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M4 work": {
+    "first": "fails",
+    "rest": {
+     "local-w10-3200": "holds",
+     "local-w20-3200": "holds"
+    },
+    "family": "fails"
+   }
+  },
+  "block": {
+   "M1 flips helps": {
+    "first": "fails",
+    "rest": {
+     "block-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M1 flips hurts": {
+    "first": "fails",
+    "rest": {
+     "block-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M1 work helps": {
+    "first": "fails",
+    "rest": {
+     "block-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M1 work hurts": {
+    "first": "fails",
+    "rest": {
+     "block-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M2 flips": {
+    "first": "fails",
+    "rest": {
+     "block-w20-3200": "holds"
+    },
+    "family": "fails"
+   },
+   "M2 work": {
+    "first": "fails",
+    "rest": {
+     "block-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M3 flips": {
+    "first": "holds",
+    "rest": {
+     "block-w20-3200": "holds"
+    },
+    "family": "holds"
+   },
+   "M3 work": {
+    "first": "fails",
+    "rest": {
+     "block-w20-3200": "fails"
+    },
+    "family": "fails"
+   },
+   "M4 flips": {
+    "first": "holds",
+    "rest": {
+     "block-w20-3200": "fails"
+    },
+    "family": "not replicated"
+   },
+   "M4 work": {
+    "first": "holds",
+    "rest": {
+     "block-w20-3200": "holds"
+    },
+    "family": "holds"
+   }
+  }
+ },
+ "memory": {
+  "local flips": "no difference shown",
+  "local work": "no difference shown",
+  "block flips": "no difference shown",
+  "block work": "no difference shown"
+ },
+ "loop": {
+  "local": [
+   4,
+   [
+    "flips",
+    "work"
+   ],
+   []
+  ],
+  "block": [
+   5,
+   [],
+   [
+    "flips"
+   ]
+  ]
+ }
+}

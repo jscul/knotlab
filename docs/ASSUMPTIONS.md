@@ -2505,7 +2505,14 @@ evidence: results and their status come from the records each entry links.
   which under the not-all-equal law is steps apart plus one on the endless six-regular weave, and on finite six-regular weaves
   while the steps apart stay below a third of their margin), and a distinction itself, this versus that, is the least such
   separation. Stated as the program's founding premise, with what hangs from it, in THEORY.md (section 1) and the Intuitions
-  guide's lesson 2.4 ([lesson](../INTUITIONS.md#24-distance-is-the-only-form-of-information)).
+  guide's lesson 2.4 ([lesson](../INTUITIONS.md#24-distance-is-the-only-form-of-information)). Asked the same day whether his
+  distance includes which way or only how far, he answered: "Distance is topological, so it will have some starting point, then go
+  off outward from there. So for example, 0 might be a starting point on the number line. In my view, there isn't really any such
+  thing as "direction". Everything is just "relative", but it's also topological, so if you're at 3 on the number line, you can't
+  just skip 4 to get to 5, so there is an order." The number line is his illustration, not a space the program assumes. Read in
+  the program's terms, his distance has no direction, and nothing farther is reached without passing what lies between, so distance
+  alone gives an order (the literature's betweenness, for a distance built from unit steps); that reading is the program's and is
+  untested.
 - **Why.** Recorded at the owner's request on 17 November 2026, in reply to the first reading of `SPACE-ORDER-20261117-001`
   ([decision note](../research/SPACE-ORDER-20261117-001/space_order.md)), "space forces order, and only through steps apart". That
   reading was later withdrawn by its referee: the phases there follow the weave's local overlap structure, and steps apart is only
@@ -2519,19 +2526,27 @@ evidence: results and their status come from the records each entry links.
   The cheapest first test is a census of small not-all-equal patterns grouped by their bond-distance tables, checking whether equal
   tables force equal relations (`OVERLAP-READ-20261111-001` found that equal pair counts give equal states, a related result).
   Parity knots, which hide one full bit, are a second test: is the hidden bit a distance? Run by `DISTANCE-INFO-20261117-001`
-  ([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md)): on every not-all-equal base of 4, 5 and 6
-  distinctions, and 258,384 sampled at 7, pairwise bond distance fails at n = 4 (12 tables for 16 relations; at n = 6, 10,012 for
-  97,248); the sign of ties and distances between sets (which sets are bonds) do not repair it; each bond with the joint states it
-  excludes determines every relation tested. The plain reading is overturned; the reading survives only if distance includes
-  orientation, which joint states each knot excludes. Open: whether the owner means that.
+  ([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md)) on every not-all-equal base of 4, 5 and 6
+  distinctions and 258,384 sampled at 7. Which distance is meant decides it. Pairwise bond distance fails at four distinctions (12
+  tables for 16 relations; at six, 10,012 for 97,248), and which sets are bonds does not repair it. How often two distinctions
+  differ, the number of allowed states in which they take different values, determined every base tested through six and every
+  sampled one at seven (its referee `DISTANCE-INFO-R1`, recomputed by the study; computed, not proved). The test covers bases of up
+  to seven distinctions, not the smallest emergent unit. Open, after the owner's answer: whether that differ count determines every
+  base, and whether the candidate distances give an order in which nothing is skipped.
 - **History.**
   - 2026-11-17 · Statement: the ruler's scope corrected (steps apart plus one is proved on the endless six-regular weave, and on
     finite six-regular weaves while the steps apart stay below a third of their margin, beyond which only a lower bound is proved;
     short unfilled cycles shorten bonds on small ones,
     `KNOTS-ALONE-20261111-001`), logged in the corrections log; the owner's words and the status unchanged. The owner called it "the
     entire premise of 'space from logic'", and it is now stated as the founding premise in THEORY.md and lesson 2.4.
-  - 2026-11-17 · Under challenge: `DISTANCE-INFO-20261117-001` found the plain (pairwise) reading false at four distinctions;
-    distance with orientation (bonds with their excluded states) determines every relation tested through six.
+  - 2026-11-17 · Statement: the owner's answer added in his words (distance has no direction, is relative, and gives an order in
+    which nothing is skipped). Challenge corrected after the referee `DISTANCE-INFO-R1` (Block): the study had called the plain
+    reading overturned and said the reading survives only if distance includes orientation (each bond with the joint states it
+    excludes). That was withdrawn: a second pairwise distance, how often two distinctions differ, determined every base tested,
+    and the bond reading with excluded states worked only with two-place ties counted as bonds. Status unchanged, logged in the
+    corrections log.
+  - 2026-11-17 · Under challenge: `DISTANCE-INFO-20261117-001` found pairwise bond distance does not determine the allowed states
+    from four distinctions (its further reading, withdrawn, is in the entry above).
   - 2026-11-17 · Why and Rests on it revised: the SPACE-ORDER reading it was said in reply to was withdrawn by the referee; the
     owner's words are unchanged.
   - 2026-11-17 · Added at the owner's request, in his words.

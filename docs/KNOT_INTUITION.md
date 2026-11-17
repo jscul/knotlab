@@ -301,21 +301,32 @@ are no values, only relations seeded from this versus that. It is an
 interpretation, recorded as assumption A97 with a test that could challenge it:
 two bases with equal bond distances for every pair but different allowed
 states ([register](ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information)).
-The test was run the same day (`DISTANCE-INFO-20261117-001`): read as bond
-distance between pairs, distance is not the only form of information. Three of
+The test was run the same day (`DISTANCE-INFO-20261117-001`), on bases of up
+to seven distinctions, and which distance is meant decides it. Read as bond
+distance between pairs, distance is not the only form of information: three of
 the four knots on four distinctions and all four give the same distances and
-different allowed states; at six distinctions 10,012 distance tables serve
-97,248 bases. Distances between sets (which sets are bonds) and the signs of
-ties do not repair it. What determines every base tested, through six
-distinctions and in a sample at seven, is each bond together with which joint
-states it excludes: how far, and which way. The reading survives if distance
-includes that orientation; whether the owner means it so is open
-([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md)).
+different allowed states, and at six distinctions 10,012 distance tables serve
+97,248 bases; which sets are bonds does not repair it. Read as how often two
+distinctions differ, the number of allowed states in which this and that take
+different values, a pairwise distance determined every base tested through six
+distinctions and in a sample at seven (its referee's reading, recomputed;
+computed, not proved). The study's first reading, that each bond with the joint
+states it excludes was needed, "how far, and which way", is withdrawn: it
+counted two-place ties as bonds, and the differ count needs no such addition
+([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md);
+corrected 17 November 2026). Asked whether his distance includes which way, the
+owner answered that it has none: "Distance is topological, so it will have
+some starting point, then go off outward from there. So for example, 0 might
+be a starting point on the number line. In my view, there isn't really any
+such thing as "direction". Everything is just "relative", but it's also
+topological, so if you're at 3 on the number line, you can't just skip 4 to
+get to 5, so there is an order." Whether the candidate distances give such an
+order, with nothing skipped, is the next test.
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of
-information") and in lesson 2.4 of the Intuitions guide, with the word
-"distance" left open to his answer.
+information") and in lesson 2.4 of the Intuitions guide, with his answer on
+"distance" quoted there too.
 
 ## Requirement and choice
 

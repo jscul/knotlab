@@ -3,6 +3,20 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the A97 test, corrected by its referee
+
+- Withdrawn: the A97 test (`DISTANCE-INFO-20261117-001`) said A97's plain reading was overturned and that it survives only if
+  distance includes "orientation", which joint states each bond excludes. A second plain pairwise distance, the number of allowed
+  states in which two distinctions differ, determined every not-all-equal base through six distinctions and every sampled one at
+  seven, so the answer turns on which distance is meant. Pairwise bond distance still fails from four distinctions. The test covers
+  bases of up to seven distinctions, not the smallest emergent unit. The word "orientation" is withdrawn with that reading.
+- Narrowed: "each bond with the states it excludes determines every base" holds only when two-place ties count as bonds, which the
+  glossary does not do; with bonds of three or more it fails at five distinctions.
+- Narrowed: the test's pre-registration said distinct knot sets give distinct relations through seven distinctions. At six,
+  999,018 knot sets give 97,248 relations; the bases counted are relations. No count changes
+  ([decision note](research/DISTANCE-INFO-20261117-001/distance_info.md),
+  [referee's report](research/DISTANCE-INFO-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026: the founding premise stated; the ruler's scope restored in A97
 
 - The owner's founding premise, "Distance is the only form of information. That's the entire basis of the 'this versus that'

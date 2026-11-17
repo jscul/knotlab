@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "thesis_alignment": null,
+  "artifact_id": "KEEP-REACH-20261117-001A-P001",
+  "canonical_id": "KEEP-REACH-20261117-001A-P001",
+  "kind": "proof",
+  "ticket": "KEEP-REACH-20261117-001A",
+  "proof": "KEEP-REACH-20261117-001A-P001",
+  "authoritative_metadata": "manifest.json",
+  "title": "Two-orbit bonds, forgetting on the values states take, and exposure",
+  "status": "Proved",
+  "claim": "Theorem K: the least bond of any size inside an orbit at level k and one at level k + s, read from their exact joint, bounds L at every depth; Theorem F': forgetting read on actual joints from level k forces growth; Lemma E: an exposed missing pair gives a two-orbit bond. Computed: the four non-direct census patterns that never forget are bounded at every depth (4, 4, 5, 6), so forgetting decides all 786 small-orbit census descriptions; in 2,380 fresh and mutated patterns, 39 never forget on all values without a two-orbit bond: 14 forget on actual values, 13 have top joints that become products (one grows past its parent at depth 11), 12 keep a hidden dependence. Conjecture C' open. Referee pending.",
+  "dependencies": [
+    "DIRECT-REACH-20261115-001B",
+    "BLOCK-REACH-20261116-001A",
+    "BRANCH-DEPTH-20261112-001A",
+    "LEVEL-REACH-20261114-001"
+  ],
+  "evidence_modes": [
+    "exact-proof",
+    "finite-validation",
+    "computer-assisted-proof"
+  ],
+  "source_contribution": 0,
+  "epistemic_class": {
+    "primary": "theorem-with-finite-validation",
+    "secondary": [
+      "computer-assisted-census"
+    ]
+  },
+  "failure_conditions": [
+    "A two-orbit bond from the joint that is not a bond of the pattern.",
+    "A pattern forgetting on actual values whose reach is below 1 + ceil(s/r).",
+    "An exposed missing pair with no two-orbit bond."
+  ],
+  "lineage": {
+    "home_scope": "KEEP-REACH-20261117-001",
+    "epic_path": [
+      "KEEP-REACH-20261117-001"
+    ],
+    "parents": [
+      "proofs/DIRECT-REACH-20261115-001B",
+      "proofs/BLOCK-REACH-20261116-001A"
+    ]
+  },
+  "parent_bindings": {},
+  "paths": {
+    "manifest": "proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/manifest.json",
+    "identity": "proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/identity.json",
+    "proof": "proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/proof.md",
+    "result": "proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/result.json",
+    "check": "proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/check.py",
+    "directory": "proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit"
+  },
+  "remaining_obligations": [
+    "Independent referee: pending.",
+    "Conjecture C' (no persistent two-orbit bond from the top implies growth): open on 25 patterns.",
+    "Depth 13 reading of 8db5da810c00-73: pending (LONG_RUNNING KEEP-REACH-A2)."
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "foundation_claim_scope": "The plain not-all-equal law; addressed patterns placed by automaton maps, knots within a level or between adjacent levels.",
+  "validation": {
+    "level": "V1",
+    "external_review": false,
+    "trusted_kernel": false,
+    "independence": "Written by Claude 2026-11-17; the advisor reviewed the design and proposed the exposure lemma; referee pending.",
+    "status": "proof by hand plus finite computation; check passed",
+    "novelty": "known-with-delta"
+  }
+}

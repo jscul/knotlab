@@ -158,12 +158,15 @@ that study, not this one.
 
 Objects index, searched 2026-11-17:
 
-`python3 -B scripts/track.py objects "learned memory that carries over to another meeting pattern" --until 2026-11-18 --exclude MEET-TRANSFER-20261117-001`
-`python3 -B scripts/track.py objects "learned local search policy transfer to a held-out instance family" --until 2026-11-18 --exclude MEET-TRANSFER-20261117-001`
+`python3 -B scripts/track.py objects "learned memory that carries over to another meeting pattern" --until 2026-11-17 --exclude MEET-TRANSFER-20261117-001`
+`python3 -B scripts/track.py objects "learned local search policy transfer to a held-out instance family" --until 2026-11-17 --exclude MEET-TRANSFER-20261117-001`
 
 - `SCALE-MEMORY-20261116-001` and `WHERE-NEXT-20261116-001`: the same agent and the same held-out `local` pattern; this study
   continues them and reuses SCALE-MEMORY's L3sm and engine (gate G6).
 - `SEARCH-AUDIT-20261112-001`: a relative; its lesson (score against tuned search) is kept.
+- `SLOW-LOOP-20261117-001` (added 2026-11-17 after the referee; it closed after this freeze, the same day, so the date-only gate
+  lists it): a relative, the slow loop that changes knot structures with Novelty+ as its fast loop, on the same families; it does
+  not test a learned agent's transfer.
 - `FORGET-RULE-20261114-001`: unrelated object (syntactic forgetting rules on nested families, with a held-out split); matched on
   "held-out" and "family".
 

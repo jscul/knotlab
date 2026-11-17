@@ -3,7 +3,22 @@
 Epic `MEET-TRANSFER-20261117-001`, ticket `MEET-TRANSFER-20261117-001A` (`SCALE-MEMORY-20261116-001#1`; goals G15, G16; the
 prerequisite for sub-goal B191), 2026-11-17. Evidence: **computed** (finite experiments on planted instances, five runs per instance,
 every run kept), frozen before any arm was trained or any comparator tuned ([pre-registration](preregistration.md), freeze commit
-`19c8b1ed1`, 2026-11-17 04:48 UTC; [advisor review](advisor_review.md)). **Referee pending.** The canonical K1–K3 test is unchanged.
+`19c8b1ed1`, 2026-11-17 04:48 UTC; [advisor review](advisor_review.md)). **Refereed** (MEET-TRANSFER-R1, confirmed with fixes, no
+Block; [report](referee-R1/report.md)). The canonical K1–K3 test is unchanged.
+
+**Corrected 2026-11-17 after the referee** (logged in `docs/CORRECTIONS.md`):
+- *Narrowing (wording).* "Beats the best rule in flips on most of them" overstated. By the frozen tiers the flips wins are 3 of 9
+  cells: `local` window 10 at 800 (0.66), `heavy` at 3,200 (0.72), `block` at 3,200 (0.61). The primary is inconclusive, 0.83 [0.63,
+  1.09], with one seed at 1.18. "Carries over", from 25 times worse to parity or better, stands. The primary's test instances are
+  WHERE-NEXT's `local` instances knot for knot, so the clean held-out cells are windows 40 and 160 and `heavy`.
+- *Narrowing (number).* The CPU cost was quoted from single seeds. At arm level (the geometric mean of the four seeds' median CPU
+  per instance, over the best rule's) it is 4.7 to 13.5 times, and 4.8 times on the primary; single seeds range from 1.5 to 59. P7
+  (no CPU win) is unaffected.
+- *Narrowing (the frozen seed-agreement clause).* D's learner gate on `rand` 2.1 splits: its seeds read 1.155, 1.325, 0.870 and
+  1.301, and only the arm mean, 1.147, passes. So "passed (borderline)" does not hold with seed agreement. The `rand` 2.1 loss (1.60,
+  seeds 0.83 to 3.86) and "the mixture hurts on `rand` 2.1 (X 1.50) and window 40 (1.71)" are seed splits too, which the frozen
+  clause reads as learner variance, not as verdicts on transfer.
+- *Not a block.* The objects gate is rerun with the freeze date as its cut-off.
 
 ## The answer
 
@@ -18,7 +33,8 @@ memory of its earlier steps. In SCALE-MEMORY it held parity with Novelty+ across
 The new agent was trained on a mixture of meeting patterns and tested against a carefully tuned comparator: the best of three
 Novelty+ settings, probSAT and WalkSAT, each tuned in two stages, with five runs per instance.
 
-**It now carries over to meeting patterns it never trained on, and in flips it beats the best rule on most of them:**
+**It now carries over to meeting patterns it never trained on, from 25 times worse to parity or better, with flips wins in 3 of 9
+cells (corrected):**
 
 | Cell | Role | D (4 seeds) | Dr (`rand` only, 2 seeds) | Dl (oracle, trained on `local`) | L3sm (SCALE-MEMORY) |
 | --- | --- | --- | --- | --- | --- |
@@ -43,20 +59,22 @@ What the table shows:
   0.66 at 800.
 - On a degree spread no training pattern has (`heavy`) it takes 0.72 to 0.81 times the flips.
 - On the untouched wider windows it is at 0.75 and 0.95, though one of its four seeds fails on window 40.
-- **It loses on the plainest pattern, `rand` 2.1 at 3,200 (1.60).** Training on the mixture traded some `rand` 2.1 performance for
-  the rest. The learner gate passed there only narrowly (1.147 against 1.15), and one seed is 3.9 times worse.
+- **On the plainest pattern, `rand` 2.1 at 3,200, its seeds split (1.60 at arm level; seeds 0.83 to 3.86).** By the frozen clause
+  that is learner variance, not a transfer verdict (corrected). Its learner gate there passes only at arm level (1.147); three of
+  four seeds read above 1.15.
 
 **What carries it is the reads, not the mixture of training patterns.**
 - *The reads.* Dr has the same reads but was trained on `rand` 2.1 alone, and on `local` it does as well as D: 0.77 against 0.83,
   X = D / Dr = 1.09 [0.82, 1.32]. Against the old reads, Dr / L3sm = Z = 0.031 at `local` 3,200.
 - *The mixture.* Mixed training helps on the patterns near the training mixture (X = 0.78 to 0.91 on `rand` 4.0, `block`, `heavy` and
-  window 160). It hurts on `rand` 2.1 (1.50) and window 40 (1.71).
+  window 160). On `rand` 2.1 (1.50) and window 40 (1.71) the ratio rests on D's split seeds, so it is learner variance (corrected).
 - *Memory* now helps everywhere instead of hurting on `local`. The memoryless Dn needs 12 times as many flips there (K = D / Dn =
   0.081). Dn failed its learner gate, as memoryless policies did before.
 - *The oracle.* Dl, trained on `local` as well, does about 1.75 times better than D there (O = 1.75 [1.52, 2.07]). Transfer
   recovers most of the gap but not all of it.
 
-**It still costs more computing.** Per instance, the agent takes 1.5 to 9 times Novelty+'s CPU (3.1 times at the primary cell),
+**It still costs more computing.** Per instance, the agent takes 4.7 to 13.5 times the best rule's CPU at arm level (4.8 times at the
+primary cell; single seeds 1.5 to 59; corrected from a single seed's 1.5 to 9),
 because it scores its where-candidates and runs two small networks per step. So every flips win here is a mechanism win, not a real
 win. No cell has a CPU win (P7).
 
@@ -74,14 +92,14 @@ win. No cell has a CPU win (P7).
 | # | Prediction (probability) | Outcome |
 | --- | --- | --- |
 | G | Engine gate, including run-for-run identity with SCALE-MEMORY's engine | **Passed** |
-| G-learn | Each arm within 1.15 times the better reference rule on every training pattern | **D passed** (1.147 on `rand` 2.1, borderline), **Dl, Dr passed**, **Dn failed** (learner failure) |
+| G-learn | Each arm within 1.15 times the better reference rule on every training pattern | **D split on `rand` 2.1** (arm 1.147; seeds 1.155, 1.325, 0.870, 1.301; corrected from "passed"), **Dl, Dr passed**, **Dn failed** (learner failure) |
 | P1 | D usable as an inner loop on `local` 3,200 (30%) | **Held**: R 0.83, 95th-percentile ratio 0.35 |
 | P1o | Dl usable there (50%) | **Held**: 0.48 |
 | P2 | X = D / Dr at most 0.5 at `local` 3,200 (50%) | **Failed**: 1.09; the reads, not the mixture, do the work |
 | P3 | Y = D / L3sm at most 0.5 (55%) | **Held**: 0.034 |
 | P5 | D at most 1.1 on all three training patterns at 3,200 (45%) | **Failed**: `rand` 2.1 at 1.60 |
 | P6 | K = D / Dn at most 0.9 at `local` 3,200 (35%) | **Held**: 0.081 |
-| P7 | No CPU win anywhere (92%) | **Held**: 1.5 to 9 times the CPU |
+| P7 | No CPU win anywhere (92%) | **Held**: 4.7 to 13.5 times the CPU at arm level |
 | P8 | Z = Dr / L3sm at most 0.7 at `local` 3,200 (40%) | **Held**: 0.031 |
 | P9 | D usable on both untouched windows (35%) | **Failed**: one seed at 2.99 on window 40 |
 | P10 | D within 1.5 times on `heavy` at 800 and 3,200 (50%) | **Held**: 0.81 and 0.72 |

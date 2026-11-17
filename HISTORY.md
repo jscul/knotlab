@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: memory read per knot, confirmed by its referee, its summary and cost narrowed
+
+- Memory read per knot (`MEET-TRANSFER-20261117-001`) was confirmed by its referee with fresh code, with no Block: the held-out
+  patterns were unseen, every ratio recomputes, and "usable as an inner loop on the primary only" is right
+  ([result note](research/MEET-TRANSFER-20261117-001/meet_transfer.md)).
+- Narrowed: the agent goes from 25 times worse to parity or better on the held-out pattern, with flips wins in 3 of 9 cells, not "on
+  most"; the primary's instances are WHERE-NEXT's, so windows 40 and 160 and the heavy-tailed pattern are the clean held-out cells.
+- Narrowed: its CPU cost is 4.7 to 13.5 times the best rule's at arm level, not a single seed's 1.5 to 9.
+- Narrowed: the learner gate, the loss on plain random patterns and the mixture's effect on two cells are seed splits.
+
 ## 17 November 2026: memory that counts no steps, confirmed by its referee, one verdict and one comparator narrowed
 
 - Memory that counts no steps (`SCALE-MEMORY-20261116-001`) was confirmed by its referee with fresh code, with no Block: the agent

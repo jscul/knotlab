@@ -6,14 +6,15 @@
 
 **Headline.** With reads that count neither steps nor knots, the navigating agent carries over to meeting patterns it never trained
 on. On the held-out `local` pattern it goes from 25 times worse than the best tuned rule to 0.83 times its flips at n = 3,200 and
-0.66 at 800. In flips it beats the best rule on most held-out and training patterns: 0.61 on `block`, 0.72 on `heavy`. It loses on
-the plain `rand` 2.1 pattern at 3,200 (1.60) and costs 1.5 to 9 times the CPU per instance. The reads do the carrying, not the mixed
+0.66 at 800. By the frozen tiers it wins in flips in 3 of 9 cells: 0.66 on `local` at 800, 0.72 on `heavy`, 0.61 on `block`
+(corrected 2026-11-17 from "most"). On the plain `rand` 2.1 pattern at 3,200 its seeds split (1.60). It costs 4.7 to 13.5 times the
+CPU per instance at arm level (corrected from a single seed's 1.5 to 9). The reads do the carrying, not the mixed
 training: a `rand`-trained agent with the same reads does as well on `local`.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: degree-normalized, step-free memory trained on mixed meeting patterns | **Status:** Partially successful | Usable inner loop on the held-out primary (R 0.83 [0.63, 1.09]) and three of four untouched cells; flips wins on `local` 800, `heavy` 3,200 and `block`; fails the bar on window 40 by one seed in four; loses on `rand` 2.1; no CPU win |
-| Local direction: learned memory for choosing where and what to act on | Continue | The agent now beats well-tuned Novelty+ in flips across meeting patterns; seed variance and cost per step are what remain |
+| Local direction: learned memory for choosing where and what to act on | Continue | The agent now carries across meeting patterns to parity or better, with flips wins in 3 of 9 cells against well-tuned Novelty+ (corrected); seed variance and cost per step are what remain |
 | Broader exploration: learned search for satisfiability | Known alternatives | Novelty+ stays the strongest hand-written rule here; the learned agent's flips advantage is real but costs 1.5 to 9 times the computing per instance |
 | G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Capability gained | First learned agent in the program that carries across meeting patterns and beats a well-tuned rule there in flips |
 
@@ -23,7 +24,7 @@ training: a `rand`-trained agent with the same reads does as well on `local`.
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | This learned agent as the fast loop of the structure-changing slow loop (B191, the owner's full picture) | 3/3 — the owner's metacognition picture, with a fast loop that now reads new structures | 3/3 — the slow-loop line has its loop and Novelty+ as fast loop; swap in Dr (or D) and rerun its paid comparison | Replace Novelty+ by Dr in the slow loop's charged comparison on its local and block cells → stop if the charged total is not below the Novelty+ fast loop's | Offered to the slow-loop line (coordinator decides the join) |
-| 2 | A cheaper agent: turn the flips win into a CPU win | 2/3 — a real win where flips are 0.6 to 0.8 times (`block`, `heavy`, `local`) needs about 1.5 times the cost per step, not 3 to 9 | 3/3 — the weights exist; distil the where-and-what scores into a linear rule or cache the reads | Distil D into a linear score and rerun `block` and `heavy` 3,200 → stop if its flips rise above 1.2 times D's or its CPU stays above the best rule's | Selected · not started |
+| 2 | A cheaper agent: turn the flips win into a CPU win | 2/3 — a real win where flips are 0.6 to 0.8 times (`block`, `heavy`, `local`) needs about 1.5 times the cost per step, not 5 to 13 (arm level, corrected) | 3/3 — the weights exist; distil the where-and-what scores into a linear rule or cache the reads | Distil D into a linear score and rerun `block` and `heavy` 3,200 → stop if its flips rise above 1.2 times D's or its CPU stays above the best rule's | Selected · not started |
 | 3 | Seed variance: select across more patterns | 1/3 — would remove the window-40 failure and the `rand` 2.1 loss | 3/3 | Train eight seeds and select by validation on all training patterns plus a held-out one → stop if the worst seed is still above 2 on window 40 | Alternative · deferred |
 
 Ratings. #1 is the owner's goal and now has the fast loop it needed, but another line already owns the slow loop, so it is offered
@@ -67,3 +68,8 @@ in the frozen design: the oracle, untouched held-out families, an inner-loop bar
 > mixed-trained version, and on every held-out pattern for the version trained on random patterns only.
 >
 > **Corrections:** none. **Goals:** checkpoint added. **Assumptions:** unchanged. Referee pending.
+
+**Correction to the report as sent (2026-11-17, referee R1, logged in `docs/CORRECTIONS.md`).** "It beats a carefully tuned Novelty+
+in flips on most of them" should read "from 25 times worse to parity or better, with flips wins in 3 of 9 cells" (Narrowing). "1.5 to
+9× the computing per instance" should read 4.7 to 13.5 times at arm level (Narrowing). "Still loses on plain random patterns at 3,200"
+is a seed split, learner variance by the frozen clause (Narrowing).

@@ -1,0 +1,46 @@
+{
+  "schema_version": 3,
+  "artifact_id": "CARRY-FIFTH-20261117-001-P001",
+  "canonical_id": "CARRY-FIFTH-20261117-001-P001",
+  "proof": "CARRY-FIFTH-20261117-001-P001",
+  "ticket": "CARRY-FIFTH-20261117-001",
+  "kind": "proof",
+  "status": "Proved",
+  "title": "Can four distinctions retain a unique reference when a fifth joins?",
+  "claim": "Classify all single ternary K1–K3 attachments extending the four-distinction threshold relation to the five-distinction threshold relation, and determine whether an old distinction is fixed by its symmetries.",
+  "standard_statement": "Extension and automorphisms of the binary words with at most one sign change, with and without independent coordinate reorientations.",
+  "prior_work": "DISTANCE-ORDER-20261117-001A statement 5 supplies the starting relation. KNOT-ORDER-20261117-001 treats growth with a common value convention. Kemper and Lawrence describe the corresponding alternating arrangement in classical terms.",
+  "novelty_assessment": "Known threshold structure. This local comparison tests whether a designated carry survives forgetting growth history and independent value recoding.",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": ["contact-foundations", "logical-topology"],
+  "dependencies": ["DISTANCE-ORDER-20261117-001A"],
+  "completion_gate": "The proof and finite certificate agree on exact state sets, all successful attachments, candidate symmetries and the marked-end and insertion controls.",
+  "attained_result": "Five of 204 attachments give the exact common-value target, including the two outward extensions. Eight give its independently recoded type. The joint four-distinction states select no individual carry. With common values, either of the two possible unordered constituent presentations identifies a reference for outward growth. Independent value swaps remove that choice at four. Every successful fifth attachment creates one distinction common to all three knots, which may be an endpoint or an interior distinction.",
+  "epistemic_class": "finite-instance-classification",
+  "additional_epistemic_classes": ["exact-obstruction-or-countermodel", "inherited-consequence"],
+  "validation": {
+    "level": "V1",
+    "classification": "V1-separate-algorithm-same-task",
+    "status": "The finite checker, explicit forbidden-pattern argument, symmetry witnesses and command-line knot checks agree.",
+    "independence": "A separate same-task investigator derived the symmetry obstruction. The checker enumerates truth tables and recoded target states and uses the canonical knot predicate. Deterministic replays matched. No external replication is claimed.",
+    "constituent_control": "Added after the primary census. All 136 old knots and 9180 unordered pairs were checked. A further control reads the unordered three knots after each successful attachment."
+  },
+  "safe_to_conclude": {
+    "states_only_unique_old_reference": false,
+    "common_value_states_identify_unordered_ends": true,
+    "common_value_fixed_end_requires_the_opposite_end": true,
+    "common_value_retained_knot_roles_identify_a_growth_reference": true,
+    "independently_recoded_retained_knots_fix_an_old_distinction_at_four": false,
+    "each_successful_step_leaves_one_distinction_in_all_three_knots": true,
+    "distinction_in_all_three_knots_must_be_an_endpoint": false
+  },
+  "remaining_obligations": [],
+  "source_contribution": 0,
+  "paths": {
+    "manifest": "proofs/CARRY-FIFTH-20261117-001/CARRY-FIFTH-20261117-001-P001_threshold_extension/manifest.json",
+    "identity": "proofs/CARRY-FIFTH-20261117-001/CARRY-FIFTH-20261117-001-P001_threshold_extension/identity.json",
+    "proof": "proofs/CARRY-FIFTH-20261117-001/CARRY-FIFTH-20261117-001-P001_threshold_extension/proof.md",
+    "check": "proofs/CARRY-FIFTH-20261117-001/CARRY-FIFTH-20261117-001-P001_threshold_extension/check.py",
+    "result": "proofs/CARRY-FIFTH-20261117-001/CARRY-FIFTH-20261117-001-P001_threshold_extension/result.json"
+  }
+}

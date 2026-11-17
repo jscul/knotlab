@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "Enumerate every ternary knot on two old distinctions and the new one. Check equality of allowed state sets and test a proposed unique carry against all allowed renamings.",
+  "completion_gate": "An explicit separating pair of histories or a unique fixed choice, a control with and without a marked end, and a reproducible finite certificate.",
+  "dependencies": [
+    "DISTANCE-ORDER-20261117-001A"
+  ],
+  "dependency_text": "Statement 5 and its corrected four-distinction reading define the target.",
+  "fields": {
+    "groups": [
+      "holes-and-proofs"
+    ],
+    "program": "foundations",
+    "proof_family": "proofs/CARRY-FIFTH-20261117-001/CARRY-FIFTH-20261117-001-P001_threshold_extension",
+    "result": "proofs/CARRY-FIFTH-20261117-001/CARRY-FIFTH-20261117-001-P001_threshold_extension/result.json"
+  },
+  "id": "CARRY-FIFTH-20261117-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Starting only from the eight four-place threshold states, find the one-knot extensions admitting the five-place threshold order. Decide which old distinctions are recoverable before and after independently renaming the two values at each place. Serves G1 and G16.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CARRY-FIFTH-20261117-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Proved and exhaustively checked for four distinctions growing to five. The eight old states select no individual carry. Two retained knots identify a reference with shared binary values. Independent value swaps remove the individual choice at four. After every successful fifth attachment one old distinction belongs to all three knots, and it can be interior.",
+  "status_class": "proved",
+  "stop_rule": "Stop after the four-to-five classification and its controls.",
+  "title": "Which distinction can carry an order from four to five?"
+}

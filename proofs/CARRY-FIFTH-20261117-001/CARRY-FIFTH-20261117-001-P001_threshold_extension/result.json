@@ -1,0 +1,1678 @@
+{
+  "attachment_count": 204,
+  "attachment_state_sizes": {
+    "8": 12,
+    "9": 16,
+    "10": 32,
+    "11": 16,
+    "12": 64,
+    "13": 16,
+    "14": 32,
+    "15": 16
+  },
+  "comparison": {
+    "all_orders_and_signs": {
+      "count_matches": 32,
+      "count_matches_that_fail_exact_equality": 24,
+      "count_rejects": 172,
+      "exact_matches": 8,
+      "exact_rejects": 196
+    },
+    "all_orders_positive": {
+      "count_matches": 32,
+      "count_matches_that_fail_exact_equality": 27,
+      "count_rejects": 172,
+      "exact_matches": 5,
+      "exact_rejects": 199
+    },
+    "fixed_order_positive": {
+      "count_matches": 32,
+      "count_matches_that_fail_exact_equality": 27,
+      "count_rejects": 172,
+      "exact_matches": 5,
+      "exact_rejects": 199
+    }
+  },
+  "end_attachment_count": 2,
+  "equal_size_negative_control": {
+    "allowed_row": "00001",
+    "allowed_row_present": true,
+    "attachment_triple": "abe",
+    "complemented_row": "11110",
+    "complemented_row_present": false,
+    "excluded_patterns": [
+      "000",
+      "110"
+    ],
+    "is_ternary_knot": true,
+    "matches_signed_threshold": false,
+    "state_count": 10
+  },
+  "fifth_attachment_constituent_control": {
+    "case_count": 16,
+    "classification": "post_census_sensitivity",
+    "common_distinction_count_histogram": {
+      "1": 16
+    },
+    "joint_state_count_histogram": {
+      "10": 16
+    },
+    "presentations": [
+      {
+        "cases": [
+          {
+            "attachment_excluded_patterns": [
+              "000",
+              "111"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "a"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": null,
+            "shared_value_endpoints": null,
+            "shared_value_insertion_slot": null,
+            "unordered_knot_scopes": [
+              "abc",
+              "abe",
+              "acd"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "001",
+              "110"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "a"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "endpoint",
+            "shared_value_endpoints": "ad",
+            "shared_value_insertion_slot": 1,
+            "unordered_knot_scopes": [
+              "abc",
+              "abe",
+              "acd"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "010",
+              "101"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "a"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "endpoint",
+            "shared_value_endpoints": "ae",
+            "shared_value_insertion_slot": 4,
+            "unordered_knot_scopes": [
+              "abc",
+              "acd",
+              "ade"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "011",
+              "100"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "a"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "interior",
+            "shared_value_endpoints": "de",
+            "shared_value_insertion_slot": 0,
+            "unordered_knot_scopes": [
+              "abc",
+              "acd",
+              "ade"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "000",
+              "111"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "c"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": null,
+            "shared_value_endpoints": null,
+            "shared_value_insertion_slot": null,
+            "unordered_knot_scopes": [
+              "abc",
+              "acd",
+              "bce"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "001",
+              "110"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "c"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "interior",
+            "shared_value_endpoints": "ad",
+            "shared_value_insertion_slot": 2,
+            "unordered_knot_scopes": [
+              "abc",
+              "acd",
+              "bce"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "000",
+              "111"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "c"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": null,
+            "shared_value_endpoints": null,
+            "shared_value_insertion_slot": null,
+            "unordered_knot_scopes": [
+              "abc",
+              "acd",
+              "cde"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "001",
+              "110"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "c"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "interior",
+            "shared_value_endpoints": "ad",
+            "shared_value_insertion_slot": 3,
+            "unordered_knot_scopes": [
+              "abc",
+              "acd",
+              "cde"
+            ]
+          }
+        ],
+        "old_knot_scopes": [
+          "abc",
+          "acd"
+        ],
+        "outward_choice_contrast": {
+          "choices": [
+            {
+              "common_distinction_role": "interior",
+              "common_distinctions": [
+                "a"
+              ],
+              "endpoints": "de",
+              "slot": 0
+            },
+            {
+              "common_distinction_role": "endpoint",
+              "common_distinctions": [
+                "a"
+              ],
+              "endpoints": "ae",
+              "slot": 4
+            }
+          ],
+          "same_common_distinctions": true
+        }
+      },
+      {
+        "cases": [
+          {
+            "attachment_excluded_patterns": [
+              "000",
+              "111"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "b"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": null,
+            "shared_value_endpoints": null,
+            "shared_value_insertion_slot": null,
+            "unordered_knot_scopes": [
+              "abd",
+              "abe",
+              "bcd"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "001",
+              "110"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "b"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "interior",
+            "shared_value_endpoints": "ad",
+            "shared_value_insertion_slot": 1,
+            "unordered_knot_scopes": [
+              "abd",
+              "abe",
+              "bcd"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "010",
+              "101"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "d"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "interior",
+            "shared_value_endpoints": "ae",
+            "shared_value_insertion_slot": 4,
+            "unordered_knot_scopes": [
+              "abd",
+              "ade",
+              "bcd"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "011",
+              "100"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "d"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "endpoint",
+            "shared_value_endpoints": "de",
+            "shared_value_insertion_slot": 0,
+            "unordered_knot_scopes": [
+              "abd",
+              "ade",
+              "bcd"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "000",
+              "111"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "b"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": null,
+            "shared_value_endpoints": null,
+            "shared_value_insertion_slot": null,
+            "unordered_knot_scopes": [
+              "abd",
+              "bcd",
+              "bce"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "001",
+              "110"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "b"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "interior",
+            "shared_value_endpoints": "ad",
+            "shared_value_insertion_slot": 2,
+            "unordered_knot_scopes": [
+              "abd",
+              "bcd",
+              "bce"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "000",
+              "111"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "d"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": null,
+            "shared_value_endpoints": null,
+            "shared_value_insertion_slot": null,
+            "unordered_knot_scopes": [
+              "abd",
+              "bcd",
+              "cde"
+            ]
+          },
+          {
+            "attachment_excluded_patterns": [
+              "001",
+              "110"
+            ],
+            "common_distinction_count": 1,
+            "common_distinctions": [
+              "d"
+            ],
+            "joint_state_count": 10,
+            "shared_value_common_distinction_role": "endpoint",
+            "shared_value_endpoints": "ad",
+            "shared_value_insertion_slot": 3,
+            "unordered_knot_scopes": [
+              "abd",
+              "bcd",
+              "cde"
+            ]
+          }
+        ],
+        "old_knot_scopes": [
+          "abd",
+          "bcd"
+        ],
+        "outward_choice_contrast": {
+          "choices": [
+            {
+              "common_distinction_role": "endpoint",
+              "common_distinctions": [
+                "d"
+              ],
+              "endpoints": "de",
+              "slot": 0
+            },
+            {
+              "common_distinction_role": "interior",
+              "common_distinctions": [
+                "d"
+              ],
+              "endpoints": "ae",
+              "slot": 4
+            }
+          ],
+          "same_common_distinctions": true
+        }
+      }
+    ],
+    "shared_value_common_distinction_roles": {
+      "endpoint": 4,
+      "interior": 6
+    }
+  },
+  "fixed_old_rows": [
+    "0000",
+    "0001",
+    "0011",
+    "0111",
+    "1000",
+    "1100",
+    "1110",
+    "1111"
+  ],
+  "interior_attachment_count": 3,
+  "mirror_histories": {
+    "end_choice_intersection_rows": [
+      "00000",
+      "00001",
+      "11110",
+      "11111"
+    ],
+    "end_choice_union_is_free_extension": true,
+    "end_choice_union_rows": [
+      "00000",
+      "00001",
+      "00010",
+      "00011",
+      "00110",
+      "00111",
+      "01110",
+      "01111",
+      "10000",
+      "10001",
+      "11000",
+      "11001",
+      "11100",
+      "11101",
+      "11110",
+      "11111"
+    ],
+    "end_extensions_equal": false,
+    "excluded_triples_at_each_step": [
+      "010",
+      "101"
+    ],
+    "histories": [
+      {
+        "attachment_triples": [
+          "abc",
+          "acd",
+          "ade"
+        ],
+        "end_extension_rows": [
+          "00000",
+          "00001",
+          "00011",
+          "00111",
+          "01111",
+          "10000",
+          "11000",
+          "11100",
+          "11110",
+          "11111"
+        ],
+        "formation_order": "abcde",
+        "old_rows": [
+          "0000",
+          "0001",
+          "0011",
+          "0111",
+          "1000",
+          "1100",
+          "1110",
+          "1111"
+        ]
+      },
+      {
+        "attachment_triples": [
+          "dcb",
+          "dba",
+          "dae"
+        ],
+        "end_extension_rows": [
+          "00000",
+          "00001",
+          "00010",
+          "00110",
+          "01110",
+          "10001",
+          "11001",
+          "11101",
+          "11110",
+          "11111"
+        ],
+        "formation_order": "dcbae",
+        "old_rows": [
+          "0000",
+          "0001",
+          "0011",
+          "0111",
+          "1000",
+          "1100",
+          "1110",
+          "1111"
+        ]
+      }
+    ],
+    "old_relations_equal_fixed_relation": true
+  },
+  "old_symmetries": {
+    "permutations": {
+      "automorphism_count": 2,
+      "automorphisms": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "0000",
+          "order": "dcba"
+        }
+      ],
+      "coordinate_orbits": [
+        "ad",
+        "bc"
+      ],
+      "endpoint_coordinate_sets": [
+        "ad"
+      ],
+      "fixed_coordinates": [],
+      "fixed_states": [
+        "0000",
+        "1111"
+      ],
+      "fixing_d_coordinate": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        }
+      ],
+      "fixing_d_coordinate_and_value": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        }
+      ],
+      "preserves_endpoint_set_ad": true,
+      "state_orbits": [
+        [
+          "0000"
+        ],
+        [
+          "0001",
+          "1000"
+        ],
+        [
+          "0011",
+          "1100"
+        ],
+        [
+          "0111",
+          "1110"
+        ],
+        [
+          "1111"
+        ]
+      ]
+    },
+    "permutations_and_independent_flips": {
+      "automorphism_count": 16,
+      "automorphisms": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "1111",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "0111",
+          "order": "adcb"
+        },
+        {
+          "flip_mask": "1000",
+          "order": "adcb"
+        },
+        {
+          "flip_mask": "0011",
+          "order": "badc"
+        },
+        {
+          "flip_mask": "1100",
+          "order": "badc"
+        },
+        {
+          "flip_mask": "0111",
+          "order": "bcda"
+        },
+        {
+          "flip_mask": "1000",
+          "order": "bcda"
+        },
+        {
+          "flip_mask": "0001",
+          "order": "cbad"
+        },
+        {
+          "flip_mask": "1110",
+          "order": "cbad"
+        },
+        {
+          "flip_mask": "0011",
+          "order": "cdab"
+        },
+        {
+          "flip_mask": "1100",
+          "order": "cdab"
+        },
+        {
+          "flip_mask": "0001",
+          "order": "dabc"
+        },
+        {
+          "flip_mask": "1110",
+          "order": "dabc"
+        },
+        {
+          "flip_mask": "0000",
+          "order": "dcba"
+        },
+        {
+          "flip_mask": "1111",
+          "order": "dcba"
+        }
+      ],
+      "coordinate_orbits": [
+        "abcd"
+      ],
+      "endpoint_coordinate_sets": [
+        "ab",
+        "ad",
+        "bc",
+        "cd"
+      ],
+      "fixed_coordinates": [],
+      "fixed_states": [],
+      "fixing_d_coordinate": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "1111",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "0001",
+          "order": "cbad"
+        },
+        {
+          "flip_mask": "1110",
+          "order": "cbad"
+        }
+      ],
+      "fixing_d_coordinate_and_value": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "1110",
+          "order": "cbad"
+        }
+      ],
+      "preserves_endpoint_set_ad": false,
+      "state_orbits": [
+        [
+          "0000",
+          "0001",
+          "0011",
+          "0111",
+          "1000",
+          "1100",
+          "1110",
+          "1111"
+        ]
+      ]
+    },
+    "permutations_and_simultaneous_flip": {
+      "automorphism_count": 4,
+      "automorphisms": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "1111",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "0000",
+          "order": "dcba"
+        },
+        {
+          "flip_mask": "1111",
+          "order": "dcba"
+        }
+      ],
+      "coordinate_orbits": [
+        "ad",
+        "bc"
+      ],
+      "endpoint_coordinate_sets": [
+        "ad"
+      ],
+      "fixed_coordinates": [],
+      "fixed_states": [],
+      "fixing_d_coordinate": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        },
+        {
+          "flip_mask": "1111",
+          "order": "abcd"
+        }
+      ],
+      "fixing_d_coordinate_and_value": [
+        {
+          "flip_mask": "0000",
+          "order": "abcd"
+        }
+      ],
+      "preserves_endpoint_set_ad": true,
+      "state_orbits": [
+        [
+          "0000",
+          "1111"
+        ],
+        [
+          "0001",
+          "0111",
+          "1000",
+          "1110"
+        ],
+        [
+          "0011",
+          "1100"
+        ]
+      ]
+    }
+  },
+  "passing_attachments": [
+    {
+      "aligned_insertion_slot": null,
+      "all_positive_orders": [],
+      "attachment_triple": "abe",
+      "excluded_patterns": [
+        "000",
+        "111"
+      ],
+      "rows": [
+        "00001",
+        "00011",
+        "00111",
+        "01110",
+        "01111",
+        "10000",
+        "10001",
+        "11000",
+        "11100",
+        "11110"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "01110",
+        "order": "adcbe"
+      },
+      "state_count": 10,
+      "support": [
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110"
+      ]
+    },
+    {
+      "aligned_insertion_slot": 1,
+      "all_positive_orders": [
+        "aebcd",
+        "dcbea"
+      ],
+      "attachment_triple": "abe",
+      "excluded_patterns": [
+        "001",
+        "110"
+      ],
+      "rows": [
+        "00000",
+        "00010",
+        "00110",
+        "01110",
+        "01111",
+        "10000",
+        "10001",
+        "11001",
+        "11101",
+        "11111"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "01111",
+        "order": "adcbe"
+      },
+      "state_count": 10,
+      "support": [
+        "000",
+        "010",
+        "011",
+        "100",
+        "101",
+        "111"
+      ]
+    },
+    {
+      "aligned_insertion_slot": 4,
+      "all_positive_orders": [
+        "abcde",
+        "edcba"
+      ],
+      "attachment_triple": "ade",
+      "excluded_patterns": [
+        "010",
+        "101"
+      ],
+      "rows": [
+        "00000",
+        "00001",
+        "00011",
+        "00111",
+        "01111",
+        "10000",
+        "11000",
+        "11100",
+        "11110",
+        "11111"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "00000",
+        "order": "abcde"
+      },
+      "state_count": 10,
+      "support": [
+        "000",
+        "001",
+        "011",
+        "100",
+        "110",
+        "111"
+      ]
+    },
+    {
+      "aligned_insertion_slot": 0,
+      "all_positive_orders": [
+        "dcbae",
+        "eabcd"
+      ],
+      "attachment_triple": "ade",
+      "excluded_patterns": [
+        "011",
+        "100"
+      ],
+      "rows": [
+        "00000",
+        "00001",
+        "00010",
+        "00110",
+        "01110",
+        "10001",
+        "11001",
+        "11101",
+        "11110",
+        "11111"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "00001",
+        "order": "abcde"
+      },
+      "state_count": 10,
+      "support": [
+        "000",
+        "001",
+        "010",
+        "101",
+        "110",
+        "111"
+      ]
+    },
+    {
+      "aligned_insertion_slot": null,
+      "all_positive_orders": [],
+      "attachment_triple": "bce",
+      "excluded_patterns": [
+        "000",
+        "111"
+      ],
+      "rows": [
+        "00001",
+        "00011",
+        "00110",
+        "00111",
+        "01110",
+        "10001",
+        "11000",
+        "11001",
+        "11100",
+        "11110"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "00001",
+        "order": "abecd"
+      },
+      "state_count": 10,
+      "support": [
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110"
+      ]
+    },
+    {
+      "aligned_insertion_slot": 2,
+      "all_positive_orders": [
+        "abecd",
+        "dceba"
+      ],
+      "attachment_triple": "bce",
+      "excluded_patterns": [
+        "001",
+        "110"
+      ],
+      "rows": [
+        "00000",
+        "00010",
+        "00110",
+        "00111",
+        "01111",
+        "10000",
+        "11000",
+        "11001",
+        "11101",
+        "11111"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "00000",
+        "order": "abecd"
+      },
+      "state_count": 10,
+      "support": [
+        "000",
+        "010",
+        "011",
+        "100",
+        "101",
+        "111"
+      ]
+    },
+    {
+      "aligned_insertion_slot": null,
+      "all_positive_orders": [],
+      "attachment_triple": "cde",
+      "excluded_patterns": [
+        "000",
+        "111"
+      ],
+      "rows": [
+        "00001",
+        "00010",
+        "00011",
+        "00110",
+        "01110",
+        "10001",
+        "11001",
+        "11100",
+        "11101",
+        "11110"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "00001",
+        "order": "abced"
+      },
+      "state_count": 10,
+      "support": [
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110"
+      ]
+    },
+    {
+      "aligned_insertion_slot": 3,
+      "all_positive_orders": [
+        "abced",
+        "decba"
+      ],
+      "attachment_triple": "cde",
+      "excluded_patterns": [
+        "001",
+        "110"
+      ],
+      "rows": [
+        "00000",
+        "00010",
+        "00011",
+        "00111",
+        "01111",
+        "10000",
+        "11000",
+        "11100",
+        "11101",
+        "11111"
+      ],
+      "signed_presentation_count": 20,
+      "signed_presentation_example": {
+        "flip_mask": "00000",
+        "order": "abced"
+      },
+      "state_count": 10,
+      "support": [
+        "000",
+        "010",
+        "011",
+        "100",
+        "101",
+        "111"
+      ]
+    }
+  ],
+  "positive_insertion_slots": [
+    {
+      "exact_matches": 1,
+      "kind": "end",
+      "order": "eabcd",
+      "slot": 0
+    },
+    {
+      "exact_matches": 1,
+      "kind": "interior",
+      "order": "aebcd",
+      "slot": 1
+    },
+    {
+      "exact_matches": 1,
+      "kind": "interior",
+      "order": "abecd",
+      "slot": 2
+    },
+    {
+      "exact_matches": 1,
+      "kind": "interior",
+      "order": "abced",
+      "slot": 3
+    },
+    {
+      "exact_matches": 1,
+      "kind": "end",
+      "order": "abcde",
+      "slot": 4
+    }
+  ],
+  "retained_constituent_control": {
+    "classification": "post_census_sensitivity",
+    "lifted_knot_count": 136,
+    "presentations_reproducing_old_relation": [
+      {
+        "common_value_outer_in_both": [
+          "a"
+        ],
+        "common_value_outer_in_its_only_constituent": [
+          "d"
+        ],
+        "constituents": [
+          {
+            "common_value_outer_pairs": [
+              "ac"
+            ],
+            "excluded_patterns": [
+              "010",
+              "101"
+            ],
+            "support": [
+              "000",
+              "001",
+              "011",
+              "100",
+              "110",
+              "111"
+            ],
+            "triple": "abc"
+          },
+          {
+            "common_value_outer_pairs": [
+              "ad"
+            ],
+            "excluded_patterns": [
+              "010",
+              "101"
+            ],
+            "support": [
+              "000",
+              "001",
+              "011",
+              "100",
+              "110",
+              "111"
+            ],
+            "triple": "acd"
+          }
+        ],
+        "presentation_preserving_symmetries": {
+          "permutations": {
+            "automorphism_count": 1,
+            "automorphisms": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "coordinate_orbits": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "endpoint_coordinate_sets": [
+              "ad"
+            ],
+            "fixed_coordinates": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "fixed_states": [
+              "0000",
+              "0001",
+              "0011",
+              "0111",
+              "1000",
+              "1100",
+              "1110",
+              "1111"
+            ],
+            "fixing_d_coordinate": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "fixing_d_coordinate_and_value": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "preserves_endpoint_set_ad": true,
+            "state_orbits": [
+              [
+                "0000"
+              ],
+              [
+                "0001"
+              ],
+              [
+                "0011"
+              ],
+              [
+                "0111"
+              ],
+              [
+                "1000"
+              ],
+              [
+                "1100"
+              ],
+              [
+                "1110"
+              ],
+              [
+                "1111"
+              ]
+            ]
+          },
+          "permutations_and_independent_flips": {
+            "automorphism_count": 8,
+            "automorphisms": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "0111",
+                "order": "adcb"
+              },
+              {
+                "flip_mask": "1000",
+                "order": "adcb"
+              },
+              {
+                "flip_mask": "0001",
+                "order": "cbad"
+              },
+              {
+                "flip_mask": "1110",
+                "order": "cbad"
+              },
+              {
+                "flip_mask": "0011",
+                "order": "cdab"
+              },
+              {
+                "flip_mask": "1100",
+                "order": "cdab"
+              }
+            ],
+            "coordinate_orbits": [
+              "ac",
+              "bd"
+            ],
+            "endpoint_coordinate_sets": [
+              "ab",
+              "ad",
+              "bc",
+              "cd"
+            ],
+            "fixed_coordinates": [],
+            "fixed_states": [],
+            "fixing_d_coordinate": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "0001",
+                "order": "cbad"
+              },
+              {
+                "flip_mask": "1110",
+                "order": "cbad"
+              }
+            ],
+            "fixing_d_coordinate_and_value": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1110",
+                "order": "cbad"
+              }
+            ],
+            "preserves_endpoint_set_ad": false,
+            "state_orbits": [
+              [
+                "0000",
+                "0001",
+                "0011",
+                "0111",
+                "1000",
+                "1100",
+                "1110",
+                "1111"
+              ]
+            ]
+          },
+          "permutations_and_simultaneous_flip": {
+            "automorphism_count": 2,
+            "automorphisms": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              }
+            ],
+            "coordinate_orbits": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "endpoint_coordinate_sets": [
+              "ad"
+            ],
+            "fixed_coordinates": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "fixed_states": [],
+            "fixing_d_coordinate": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              }
+            ],
+            "fixing_d_coordinate_and_value": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "preserves_endpoint_set_ad": true,
+            "state_orbits": [
+              [
+                "0000",
+                "1111"
+              ],
+              [
+                "0001",
+                "1110"
+              ],
+              [
+                "0011",
+                "1100"
+              ],
+              [
+                "0111",
+                "1000"
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "common_value_outer_in_both": [
+          "d"
+        ],
+        "common_value_outer_in_its_only_constituent": [
+          "a"
+        ],
+        "constituents": [
+          {
+            "common_value_outer_pairs": [
+              "ad"
+            ],
+            "excluded_patterns": [
+              "010",
+              "101"
+            ],
+            "support": [
+              "000",
+              "001",
+              "011",
+              "100",
+              "110",
+              "111"
+            ],
+            "triple": "abd"
+          },
+          {
+            "common_value_outer_pairs": [
+              "bd"
+            ],
+            "excluded_patterns": [
+              "010",
+              "101"
+            ],
+            "support": [
+              "000",
+              "001",
+              "011",
+              "100",
+              "110",
+              "111"
+            ],
+            "triple": "bcd"
+          }
+        ],
+        "presentation_preserving_symmetries": {
+          "permutations": {
+            "automorphism_count": 1,
+            "automorphisms": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "coordinate_orbits": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "endpoint_coordinate_sets": [
+              "ad"
+            ],
+            "fixed_coordinates": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "fixed_states": [
+              "0000",
+              "0001",
+              "0011",
+              "0111",
+              "1000",
+              "1100",
+              "1110",
+              "1111"
+            ],
+            "fixing_d_coordinate": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "fixing_d_coordinate_and_value": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "preserves_endpoint_set_ad": true,
+            "state_orbits": [
+              [
+                "0000"
+              ],
+              [
+                "0001"
+              ],
+              [
+                "0011"
+              ],
+              [
+                "0111"
+              ],
+              [
+                "1000"
+              ],
+              [
+                "1100"
+              ],
+              [
+                "1110"
+              ],
+              [
+                "1111"
+              ]
+            ]
+          },
+          "permutations_and_independent_flips": {
+            "automorphism_count": 8,
+            "automorphisms": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "0111",
+                "order": "adcb"
+              },
+              {
+                "flip_mask": "1000",
+                "order": "adcb"
+              },
+              {
+                "flip_mask": "0001",
+                "order": "cbad"
+              },
+              {
+                "flip_mask": "1110",
+                "order": "cbad"
+              },
+              {
+                "flip_mask": "0011",
+                "order": "cdab"
+              },
+              {
+                "flip_mask": "1100",
+                "order": "cdab"
+              }
+            ],
+            "coordinate_orbits": [
+              "ac",
+              "bd"
+            ],
+            "endpoint_coordinate_sets": [
+              "ab",
+              "ad",
+              "bc",
+              "cd"
+            ],
+            "fixed_coordinates": [],
+            "fixed_states": [],
+            "fixing_d_coordinate": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "0001",
+                "order": "cbad"
+              },
+              {
+                "flip_mask": "1110",
+                "order": "cbad"
+              }
+            ],
+            "fixing_d_coordinate_and_value": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1110",
+                "order": "cbad"
+              }
+            ],
+            "preserves_endpoint_set_ad": false,
+            "state_orbits": [
+              [
+                "0000",
+                "0001",
+                "0011",
+                "0111",
+                "1000",
+                "1100",
+                "1110",
+                "1111"
+              ]
+            ]
+          },
+          "permutations_and_simultaneous_flip": {
+            "automorphism_count": 2,
+            "automorphisms": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              }
+            ],
+            "coordinate_orbits": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "endpoint_coordinate_sets": [
+              "ad"
+            ],
+            "fixed_coordinates": [
+              "a",
+              "b",
+              "c",
+              "d"
+            ],
+            "fixed_states": [],
+            "fixing_d_coordinate": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              },
+              {
+                "flip_mask": "1111",
+                "order": "abcd"
+              }
+            ],
+            "fixing_d_coordinate_and_value": [
+              {
+                "flip_mask": "0000",
+                "order": "abcd"
+              }
+            ],
+            "preserves_endpoint_set_ad": true,
+            "state_orbits": [
+              [
+                "0000",
+                "1111"
+              ],
+              [
+                "0001",
+                "1110"
+              ],
+              [
+                "0011",
+                "1100"
+              ],
+              [
+                "0111",
+                "1000"
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "singletons_reproducing_old_relation": [],
+    "unordered_pairs_tested": 9180
+  },
+  "signed_only_attachment_count": 3,
+  "signed_threshold_presentation_count": 3840,
+  "signed_threshold_relation_count": 192,
+  "ternary_knot_count": 34,
+  "ternary_knot_sizes": {
+    "4": 2,
+    "5": 8,
+    "6": 16,
+    "7": 8
+  },
+  "ternary_supports_tested": 256,
+  "threshold_state_count": 10
+}

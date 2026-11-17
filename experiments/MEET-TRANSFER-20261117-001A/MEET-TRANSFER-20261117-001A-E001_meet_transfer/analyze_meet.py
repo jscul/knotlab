@@ -55,7 +55,7 @@ def inst_score(runs, cap):
 
 def cmd_screen(a):
     by = defaultdict(lambda: defaultdict(list))
-    for r in ok(a.runs):
+    for r in [x for d in a.runs for x in ok(d)]:
         by[key(r["cell"])][(r["algo"], tuple(r["params"]))].append(inst_score(r["runs"], r["cap"]))
     out = {}
     for cell, d in by.items():
@@ -217,12 +217,12 @@ if __name__ == "__main__":
     sub = ap.add_subparsers(dest="cmd", required=True)
     for nm in ("screen", "confirm", "summary"):
         p = sub.add_parser(nm)
-        p.add_argument("--runs", nargs="+" if nm == "summary" else None, required=True)
+        p.add_argument("--runs", nargs="+" if nm in ("summary", "screen") else None, required=True)
         p.add_argument("--out", required=True)
     p = sub.add_parser("gates")
     p.add_argument("--training", required=True)
     p.add_argument("--out", required=True)
     a = ap.parse_args()
-    if a.cmd in ("screen", "confirm") and isinstance(a.runs, list):
+    if a.cmd == "confirm" and isinstance(a.runs, list):
         a.runs = a.runs[0]
     {"screen": cmd_screen, "confirm": cmd_confirm, "gates": cmd_gates, "summary": cmd_summary}[a.cmd](a)

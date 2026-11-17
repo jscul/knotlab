@@ -36,6 +36,11 @@ GRID = [("novelty_plus", (p, wp)) for p in (0.5, 0.6, 0.65, 0.7, 0.75, 0.8) for 
        [("probsat_poly", (cb, 1.0)) for cb in (1.0, 1.2, 1.5, 1.8, 2.1, 2.4, 2.7, 3.0)] + \
        [("probsat_exp", (cb,)) for cb in (1.5, 2.0, 2.5, 3.0, 3.5, 4.0)] + \
        [("walksat", (p,)) for p in (0.3, 0.4, 0.5, 0.6, 0.7, 0.8)]
+# Added 2026-11-17 after the screen, before any learned arm was tested: several optima sat at the grid's edges (noise 0.8 at
+# local window 10 n = 3200, 0.5 at windows 40 and 160 and rand 4.0, probSAT cb 1.0), so the screen is extended there. This can
+# only strengthen the hand-written side (deviation recorded in the result note).
+GRID_EDGE = [("novelty_plus", (p, wp)) for p in (0.3, 0.4, 0.85, 0.9) for wp in (0.0, 0.005, 0.01, 0.02, 0.05)] + \
+            [("probsat_poly", (cb, 1.0)) for cb in (0.6, 0.8)]
 LEARNED = [f"{a}_s{k}" for a, ks in (("D", 4), ("Dl", 4), ("Dr", 2), ("Dn", 2), ("L3sm", 2)) for k in range(ks)]
 
 P = {}
@@ -59,9 +64,9 @@ def key(cell):
 
 
 def cases():
-    if P["phase"] == "screen":
+    if P["phase"] in ("screen", "screen_edge"):
         for cell, (_, _, tcap) in CELLS.items():
-            for algo, prm in GRID:
+            for algo, prm in (GRID if P["phase"] == "screen" else GRID_EDGE):
                 for i in range(TUNE_INSTANCES):
                     s = TUNE_SEED0[cell[0]] + i
                     yield (f"screen|{key(cell)}|{algo}|{','.join(map(str, prm))}|{s}",

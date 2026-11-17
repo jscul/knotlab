@@ -14,7 +14,8 @@ any read-out (`266f96fde`; the contract's amendment time 19:47Z should read 19:4
 "Carries the information" is about the family of all bases of a law. "Ruler" is about one base, the weave's meeting pattern.
 - **The laws determined by their pair counts that put one knot on every up knot and one on every down knot are critical or
   frozen.** *Scoped after the
-  referee: all 16 such laws are, but a sparse mix of signed knots, and one law on a 2 × 2 cell, look disordered (see Referee).* Only the not-all-equal class of knots gives bases determined by their pair counts: they carry all of a
+  referee: all 16 such laws are, but a sparse mix of signed knots looks disordered (see Referee). The referee's 2 × 2 law, once
+  said to look disordered too, was withdrawn by the referee on 17 November: one size past, its gap keeps falling.* Only the not-all-equal class of knots gives bases determined by their pair counts: they carry all of a
   base's information (proved, L1; the census confirms it through six distinctions). On the weave:
   - plain not-all-equal, and its signed copies whose signs agree on every pair, are gauge copies of the triangular
     antiferromagnet and critical (proved, L2; measured, gap × width 1.192, 1.216, 1.225 toward the conformal 1.238);
@@ -145,7 +146,9 @@ day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
    - NAE with a random 10% of signed knots levels off at a gap near 0.20 per row from width 9 to 15, with 1.30 states per
      distinction, over 5,000 rows;
    - one periodic law, p3 at one up knot in every 2 × 2 cell, has gaps 0.257, 0.240 and 0.233 at widths 8, 10 and 12.
-   Both look disordered with every knot in the not-all-equal class. They are probes: Lyapunov exponents, few seeds and small widths. An endless
+     *Withdrawn by the referee (17 November, during `WEAVE-MIX-R1`): at widths 14 and 16 the spin gap falls to 0.143 and 0.132,
+     so this law is unresolved and looks critical or long-range, not disordered.*
+   The random mix looks disordered with every knot in the not-all-equal class. They are probes: Lyapunov exponents, few seeds and small widths. An endless
    independent random mix may be contradictory somewhere; the periodic law avoids that. So "obstruction learned", A97's narrowing
    and the goals checkpoint hold for one-knot-per-orientation laws only. `WEAVE-MIX-20261117-001` is the test.
 2. **Narrowing.** The gap's mode is a complex pair at phase 2π/3, the mode a single distinction feels. P7's miss is a period-three

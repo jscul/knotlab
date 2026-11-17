@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: a referee's own finding withdrawn, the 2 × 2 law on the weave
+
+- The knot-law study's referee had reported two laws on the weave that looked disordered with every knot in the not-all-equal
+  class: a sparse random mix of signed knots, and one periodic law on a 2 × 2 cell. Refereeing the next study, the referee checked
+  the periodic law one size past its widths: its gap falls from 0.233 at width 12 to 0.143 at 14 and 0.132 at 16. It is
+  unresolved and looks critical or long-range, not disordered, and it is withdrawn wherever it was cited. The random mix stands
+  ([referee's report](research/WEAVE-LAWS-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026: the grid-growth study, refereed, with one Block
 
 - The grid-growth study (`GRID-GROW-20261117-001`) was refereed. Its costs are confirmed and now proved for every shape: a new row
@@ -38,7 +46,7 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
 - Narrowed: "the pairwise laws are critical or frozen" holds for every law that puts one not-all-equal-class knot on every up
   knot and one on every down knot (all 16 such laws). The referee's probes find a sparse mix of signed knots, and one law on a
   2 × 2 cell, that look disordered with every knot pairwise, so the obstruction is scoped to those 16 and the mixed case is open
-  (`WEAVE-MIX-20261117-001`).
+  (`WEAVE-MIX-20261117-001`). *The 2 × 2 law was later withdrawn by the referee; see the entry above.*
 - Narrowed: the rulers of OR and hard hexagons step outward only in envelope, since their correlations oscillate with period
   three.
 - Small fixes, none changing a frozen number: the frozen laws' exact spectral radii; the agreeing-signs law's twist at every odd

@@ -369,8 +369,9 @@ whose counts do give a ruler there, OR and "not exactly two ones" (hard hexagons
 in the literature), keep part of their information in counts of three. On this
 meeting pattern, information and a scale sit in different laws, for laws that
 put one knot kind on every up knot and one on every down knot; its referee's
-probes find a sparse mix, and one law on a 2 × 2 cell, that look disordered
-with every knot in the not-all-equal class
+probes find a sparse mix that looks disordered with every knot in the
+not-all-equal class (a 2 × 2 law first named with it was withdrawn by the
+referee: one size past, its gap keeps falling)
 ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); scoped
 after its referee, 17 November 2026).
 Can such a mix be disordered (`WEAVE-MIX-20261117-001`, proof and frozen

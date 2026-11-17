@@ -2569,8 +2569,9 @@ evidence: results and their status come from the records each entry links.
   law has a pair-count distance that both carries its information and is a ruler. Only the not-all-equal class gives bases
   determined by their pair counts (proved). On the weave, every law putting one such knot on every up knot and one on every down knot is critical or frozen
   (all 16; its referee). The laws that give a ruler there (OR; hard hexagons) keep part of their information in counts of three,
-  and step outward only in envelope. Its referee's probes find a sparse mix of signed knots, and one law on a 2 × 2 cell, that
-  look disordered with every knot in the not-all-equal class, so the narrowing holds for one-knot-per-orientation laws only.
+  and step outward only in envelope. Its referee's probes find a sparse mix of signed knots that looks disordered with every
+  knot in the not-all-equal class, so the narrowing holds for one-knot-per-orientation laws only. (A 2 × 2 law first reported
+  with it was withdrawn by the referee: one size past, its gap keeps falling.)
   `WEAVE-MIX-20261117-001` ([decision note](../research/WEAVE-MIX-20261117-001/weave_mix.md); referee pending) tested mixed
   arrangements with periods up to three and did not settle them: its frozen test broke on the twist around the cylinder. Read
   again post hoc, four arrangements look disordered, all with a distinction meeting an odd number of inconsistent bonds (two
@@ -2590,6 +2591,7 @@ evidence: results and their status come from the records each entry links.
   new line starts). The two orders are the arrangement's own, read back as its halfspaces, and the base is nearly frozen
   (2(r + c) − 2 states for r·c distinctions).
 - **History.**
+  - 2026-11-17 · The referee's 2 × 2 law withdrawn from the weave text (the referee's erratum to `WEAVE-LAWS-R1`); status unchanged.
   - 2026-11-17 · The mixed weave case left open by `WEAVE-MIX-20261117-001` (inconclusive; post hoc candidates named); status
     unchanged.
   - 2026-11-17 · The grid's case scoped after `GRID-GROW-R1` (Block on "the states name every placement"): the given arrangement

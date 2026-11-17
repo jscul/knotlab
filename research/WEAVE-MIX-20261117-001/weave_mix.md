@@ -30,7 +30,8 @@ bonds, and none with every count even.**
     two rows.
   - No arrangement with every count even reads as disordered, as the bipartite picture expects.
 - **The referee's 2 × 2 law** (index 3 on one up knot per 2 × 2 block, plain not-all-equal elsewhere) is unresolved under both
-  rules. Its spin gap is 0.32, 0.26, 0.24 and 0.23 at widths 6 to 12, still drifting, and its energy gap is erratic.
+  rules. Its spin gap is 0.32, 0.26, 0.24 and 0.23 at widths 6 to 12, still drifting, and its energy gap is erratic. The referee
+  has since withdrawn it as a disordered-looking case: at widths 14 and 16 the gap falls to 0.143 and 0.132.
 
 In the owner's terms: knots whose bases are determined by their pair counts may still give the weave a distance that carries the
 information and steps outward from a start. The 3 × 1 pair is the candidate. This study does not show it, because its frozen test

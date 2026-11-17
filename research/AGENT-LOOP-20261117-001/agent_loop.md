@@ -1,11 +1,39 @@
-# The learned agent under the proof-based slow loop: carrying its memory across the loop's changes makes no difference, the loop helps it where proofs find structure, and there any search then finishes equally
+# The learned agent under the proof-based slow loop: carrying its memory across the loop's changes showed no difference, in a test that could not have shown one; the loop helps it where proofs find structure, and there any search then finishes equally
 
 Epic `AGENT-LOOP-20261117-001`, ticket `AGENT-LOOP-20261117-001A` (sub-goal B191, `SPEC-MERGE-20261117-001#1`, the coordinator's
 go-ahead; goals G15, G16), 2026-11-17.
 - **Evidence:** **computed** on finite experiments with planted instances, every run kept.
 - **Frozen** before any test instance ran ([pre-registration](preregistration.md), freeze commit `cf3982921`). The advisor reviewed
   the design and said "freeze with changes", all taken ([advisor review](advisor_review.md)).
-- **Referee pending.**
+- **Refereed: confirmed with fixes, no Block** ([report](referee-R1/report.md)).
+
+**Corrected 2026-11-17 after the referee** (logged in `docs/CORRECTIONS.md`; both frozen verdicts stand and recompute):
+- *Narrowing (the main one): the memory test had almost no power.* "Room", the share of flips after the first change, measures
+  how much search is left after a change. It does not measure whether the agent's memory matters over the stretch a restart wipes.
+  The referee measured that in this study's own regime (15,000 runs, the per-flip budget), wiping the agent's memory every K flips
+  between rebuilds:
+  - **On `local` w30,** wiping it every 100 flips changes nothing (1.00 to 1.02), and scrambling the carried memory at every rebuild
+    changes nothing (0.99 to 1.00). M1 was untestable on local, not merely null.
+  - **On block,** wiping every 100 flips costs 1.6 to 1.9 times, every 500 flips 1.24 to 1.32, every 2,000 flips 1.00 to 1.13, and
+    every 5,000 nothing. The rebuilds were 3,500 to 6,400 flips apart, so a perfect carry could have gained at most about 0 to 13%,
+    and the frozen "helps" bar was out of reach for any carry rule.
+  - **A deliberately scrambled carry** gives 1.01 and 1.13 on the first block cell, so it too would read "no difference shown".
+
+  So "no difference shown" stands as the frozen verdict, read as **not testable at these rebuild spacings** (block) and
+  **untestable** (local). "The carry rule does no harm" and "safe to train with" do not follow, and are withdrawn below and in the
+  decision, the goals, A94 and the intuition entry.
+- *Narrowing (wording), in the decision's line summary.*
+  - "The loop neither creates nor multiplies the agent's lead" was too strong. On the first block cell the frozen interaction in
+    flips held for both seeds (0.82 [0.71, 0.96], 0.80 [0.67, 0.99]); it was not replicated on `block` w20.
+  - "Four studies found the same boundary" counted studies that tested different things. Two located the boundary with proved
+    moves; one showed that one unproved design does not cross it, leaving a corner untried; this one showed a learned fast loop
+    does not move it.
+- *Not a block.*
+  - **M4 in work on local.** "Dilution" fits `rand` and block. On `local` w10 and w20 the agent buys 2.6 to 2.7 times the probing,
+    and the pass comes from the loop removing the search, where the agent's per-flip premium sits.
+  - **The `rand` identity** (C4, gate A3) is a driver check. No rebuild happened in any `rand` run, so the carry path never ran
+    there.
+  - **CPU.** M3 in CPU is 1.9 to 2.6 times under EARN-BUDGET's rule and 2.9 to 3.8 times under the per-flip budget.
 - **These moves keep the allowed states.** Every merge is a proved tie. Every state reported in the 24,000 test runs was mapped
   back and checked on the original knots, and the 21,633 solved runs all satisfied them.
 - **The canonical K1–K3 test** is unchanged.
@@ -26,18 +54,21 @@ share of its work on proofs.
 
 **The answer has three parts.**
 
-1. **Memory: carrying it across the changes made no difference** (the frozen memory verdict, "no difference shown", on both
-   families and in both measures).
+1. **Memory: carrying it across the changes showed no difference** (the frozen memory verdict, "no difference shown", on both
+   families and in both measures), **but the test could not have shown one** (corrected after the referee).
    - **Where it was tested.** It was read only where there was room: on `local` w30, 54% to 76% of the restarted runs' flips came
      after the first change, and on `block` 88% to 92%.
    - **The ratios.** Carried over restarted memory was 0.99 to 1.01 on the local cells. On `block` it was 0.89 to 0.99 in flips
      and 0.95 to 1.02 in work, with every interval reaching 1.
-   - **What it shows.** The carried memory did no harm, so the carry rule does not put the agent off its training. It did no
-     measurable good either.
+   - **What it shows: little.** In this regime the agent's memory does not matter on local patterns at all, and on block patterns
+     it matters only over the last few hundred to 2,000 flips, while the rebuilds were 3,500 to 6,400 flips apart. A scrambled
+     carry would have read the same. So the result says neither that this carry rule is harmless nor that it keeps useful memory
+     (withdrawn after the referee: "the carried memory did no harm, so the carry rule does not put the agent off its training").
 2. **The loop: on local patterns it helps the agent enormously, but then the agent does no better than Novelty+** (loop reading 4).
    - **Against the agent alone.** Under the loop the agent needed 0.02 to 0.06 of its flips and 0.07 to 0.18 of its charged work.
    - **Against Novelty+ under the same loop.** At the same proofs per flip, the agent needed 0.98 to 1.00 of Novelty+'s flips. It
-     cost 1.44 to 1.75 times its charged work, and 1.9 to 3.8 times its CPU.
+     cost 1.44 to 1.75 times its charged work, and 1.9 to 2.6 times its CPU under EARN-BUDGET's rule (2.9 to 3.8 under the per-flip
+     budget).
    - **Why: the slow loop does nearly all the work there.** Alone, it shrinks the 3,200 distinctions to 106 to 203 classes and
      then stops, solving none of 750 runs. Its work up to that point (4.3 to 5.8·10^6) is about what Novelty+ under the loop
      spends in total (3.3 to 5.9·10^6). Whatever fast loop finishes the small remainder, it finishes it in about the same number of
@@ -57,7 +88,9 @@ Novelty+ more (2.0 to 2.9).
   it passes too (0.69 and 0.71).
 - **Why it passes there.** The probing is bounded by the knots there are to probe, since each is probed once. Its cost is therefore
   close to fixed (about 1.4·10^6 on `rand`), and spread over the agent's four to five times larger fast work it is a smaller share.
-- **So M4 in work measures that dilution,** not a better use of the reshaped pattern.
+- **So M4 in work measures that dilution on `rand` and block,** not a better use of the reshaped pattern. On `local` w10 and w20 the
+  pass has another cause (found by the referee): there the agent buys 2.6 to 2.7 times the probing, and the loop removes most of
+  the search, where the agent's per-flip premium sits. M3 in flips is 0.98 to 1.00 there.
 
 **The co-flip targets (secondary) never paid.** Probing the pairs that Novelty+ keeps moving together, instead of random knots, cost
 1.36 to 1.59 times the work on the local and block cells (2.26 on `rand`). On local patterns it also needed 1.37 to 1.57 times the
@@ -65,10 +98,11 @@ flips.
 
 **What it means for the owner's picture.** Here the fast and slow loops each do real work where they are strong: the slow loop on
 patterns where propagation proves ties, the agent on patterns where search stays hard. But they do not combine into more than their
-parts, and the agent's memory of the pattern before a change neither helps nor hurts after it. The metacognition picture, in the
-specific form "memory survives a change of structure usefully", is not supported by this agent with this carry rule. The agent was
-never trained with changes in its episodes, which is the most direct way left to test the picture (direction #1 of the line summary
-in the [decision](decision.md)).
+parts except on one cell, not replicated (M4 in flips on `block` w40). The metacognition picture, in the specific form "memory
+survives a change of structure usefully", was **not testable at these rebuild spacings**: the agent's memory matters only over a
+shorter stretch than the loop leaves between changes (corrected after the referee). The agent was never trained with changes in
+its episodes. Testing the picture needs changes closer together than the agent's memory range, or an agent whose memory reaches
+further, with a power check first (direction #1 of the line summary in the [decision](decision.md)).
 
 **In standard terms.** A learned local-search policy with history features, interleaved with inprocessing (failed-literal probing
 and equivalent-literal substitution). Its internal state is mapped through each substitution. On planted not-all-equal patterns:
@@ -143,7 +177,8 @@ on the block cells, and 3,200 (nothing proved) on `rand`.
 **Soundness.**
 - **Every solved run** (21,633 of 24,000) satisfies every original knot. The unsolved ones are the 1,500 runs of the slow loop
   alone and the capped Novelty+ runs.
-- **On `rand`,** where nothing is proved, carried and restarted memory gave identical runs in 500 of 500.
+- **On `rand`,** where nothing is proved, carried and restarted memory gave identical runs in 500 of 500. This is a driver check:
+  no rebuild happened there, so the carry path never ran.
 
 ## Predictions
 
@@ -152,7 +187,7 @@ on the block cells, and 3,200 (nothing proved) on `rand`.
 | C1 | Check: M2 holds on local in flips and work (95%) | **Held** |
 | C2 | Check: local has no room under EARN-BUDGET's rule (95%) | **Failed**: `local` w30 had room 0.54, so its work reading of memory was made (no difference) |
 | C3 | Check: the slow loop alone solves no local or block run (95%) | **Held**: 0 of 1,250 |
-| C4 | Check: on `rand`, carried and restarted memory coincide in every run (97%) | **Held**: 500 of 500 |
+| C4 | Check: on `rand`, carried and restarted memory coincide in every run (97%) | **Held**: 500 of 500 (a driver check: no rebuild ran) |
 | C5 | Check: every reported state satisfies the original knots (99.9%) | **Held** |
 | P1 | On block, M2 holds in flips but not in work (65%) | **Failed**: in flips the first cell gives 0.83 to 0.85 |
 | P2 | M3 holds on local in flips (7%) | Did not hold (0.98 to 1.00) |
@@ -191,6 +226,8 @@ Nothing else differs from the frozen text.
   calibrated family, a weak reading of "a pattern untouched before the freeze".
 - **The agent and the carry rule.** One agent, never trained with changes in its episodes, and one carry rule. A learner trained
   through rebuilds might use carried memory. This study does not test that.
+- **The power of the memory test** (found by the referee). At these rebuild spacings the agent's memory hardly matters between
+  changes, so M1 could not tell a good carry from a scrambled one.
 - **The slow loop.** One slow loop (EARN-BUDGET's eager batched loop, tie merges only), at one setting.
 - **CPU.** Thread CPU on a shared runner.
 

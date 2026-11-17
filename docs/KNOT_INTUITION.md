@@ -2135,14 +2135,16 @@ So holes come in two kinds:
    - **Next.** The learned agent as the fast loop under the proof-based slow loop, with its memory carried across the changes
      ([decision note](../research/SPEC-MERGE-20261117-001/decision.md)).
 
-   **2026-11-17: the learned agent and the slow loop do not add up to more than their parts** (`AGENT-LOOP-20261117-001`; referee
-   pending).
+   **2026-11-17: the learned agent and the slow loop do not add up to more than their parts** (`AGENT-LOOP-20261117-001`;
+   refereed, confirmed with fixes).
    - **The question.** This was the owner's whole picture in one system. The learned agent turns from knot to knot and
      remembers its steps. Under it, the proof-based slow loop merges the distinctions it proves tied and rebuilds the pattern.
      At every change the agent's memory is either carried across or restarted.
    - **Computed.**
-     - **Memory did not matter.** Carrying the agent's memory across a change of the pattern was neither better nor worse than
-       starting fresh. That held on patterns where most of the search came after the first change.
+     - **Memory could not be tested.** Carrying the agent's memory across a change of the pattern was neither better nor worse than
+       starting fresh. But the agent's memory hardly matters between changes here: under the loop, wiping it every 100 flips
+       changes nothing on local patterns. On block patterns it matters only over the last few hundred to 2,000 flips, while the
+       changes came 3,500 to 6,400 flips apart. Even a deliberately scrambled carry read the same.
      - **Where the slow loop works, it does the work.** On local patterns it alone shrinks 3,200 distinctions to about 100 to 200
        classes. Any search then finishes the rest in about the same number of flips: the agent needed as many as Novelty+, and
        cost more.
@@ -2151,8 +2153,10 @@ So holes come in two kinds:
    - **Reading.**
      - **Each loop is strong in its own place.** The slow loop is strong where propagation can prove ties; the agent is strong
        where search stays hard after the changes.
-     - **Here they do not compound.** A memory of the pattern before a change neither helps nor hurts after it.
-     - **What was not tested.** An agent trained with the changes in its episodes, which might learn to use that memory.
+     - **They compound on one cell only.** It was not replicated.
+     - **What was not tested.** Whether a memory of the pattern before a change helps after it: the changes came further apart
+       than the agent's memory reaches. Testing it needs changes closer together, or an agent trained with the changes in its
+       episodes, and first a check that memory matters at that spacing.
    - **Next.** The line stops here for a stock-take with the owner. Over four studies, changing the knot pattern paid exactly where
      proofs find structure, which is what satisfiability solvers' inprocessing already does
      ([decision note](../research/AGENT-LOOP-20261117-001/decision.md)).

@@ -1,13 +1,19 @@
 # Decision: AGENT-LOOP-20261117-001
 
-2026-11-17 · goals G15, G16 · takes sub-goal B191 (`SPEC-MERGE-20261117-001#1`, the coordinator's go-ahead) · computed, referee
-pending · result note [agent_loop.md](agent_loop.md) · pre-registration [preregistration.md](preregistration.md) (frozen
-`cf3982921`)
+2026-11-17 · goals G15, G16 · takes sub-goal B191 (`SPEC-MERGE-20261117-001#1`, the coordinator's go-ahead) · computed, refereed
+(confirmed with fixes, no Block; [report](referee-R1/report.md), folded in 2026-11-17) · result note [agent_loop.md](agent_loop.md)
+· pre-registration [preregistration.md](preregistration.md) (frozen `cf3982921`)
 
 **Headline.** The learned agent was run as the fast loop under the proof-based slow loop, with its memory carried across every
 change of the pattern.
-- **Carrying the memory made no difference.** Against restarting, carried memory was 0.99 to 1.01 on local patterns and 0.89 to
-  1.02 on block patterns, every interval reaching 1. That held where half to nine tenths of the search came after the first change.
+- **Carrying the memory showed no difference, in a test that could not have shown one** (corrected after the referee). Against
+  restarting, carried memory was 0.99 to 1.01 on local patterns and 0.89 to 1.02 on block patterns, every interval reaching 1. But
+  the referee's controls show the agent's memory hardly matters between changes here:
+  - on local patterns, wiping it every 100 flips changes nothing;
+  - on block patterns it matters only over the last few hundred to 2,000 flips, while the rebuilds were 3,500 to 6,400 flips apart;
+  - a scrambled carry also reads "no difference".
+
+  So the verdict reads "not testable at these rebuild spacings".
 - **On local patterns the slow loop helps the agent enormously,** cutting its flips to 0.02 to 0.06 and its charged work to 0.07
   to 0.18. But there the loop does nearly all the work: alone, it shrinks 3,200 distinctions to about 100 to 200 classes. Then the
   agent finishes in the same number of flips as Novelty+ (0.98 to 1.00), at 1.4 to 1.75 times the work.
@@ -21,14 +27,15 @@ change of the pattern.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: the learned agent under the proof-based slow loop, memory carried or restarted | **Status:** Failed (no mechanism gain beyond the parts) | Memory: no difference shown; loop: reading 4 on local, 5 on block; every state checked |
+| This attempt: the learned agent under the proof-based slow loop, memory carried or restarted | **Status:** Failed (no mechanism gain beyond the parts) | Memory: no difference shown, in a test without power at these rebuild spacings; loop: reading 4 on local, 5 on block; every state checked |
 | Local direction: B191, the slow loop that changes the knot pattern (four studies) | Practically exhausted in this form; paused for the stock-take | Structure changes pay only where proofs find structure, and there any fast loop finishes equally |
 | Broader exploration: learned local search with inprocessing | Known alternatives | Failed-literal probing, equivalent-literal substitution and inprocessing scheduling cover the line's moves; CaDiCaL solves these patterns in 0.05 s |
-| G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Obstruction learned | A learned agent's memory survives a change of the pattern without harm and without use; its lead and the loop's do not compound |
+| G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Obstruction learned | The agent's memory matters over a shorter stretch than the loop leaves between changes, so carrying it could not be tested; its lead and the loop's compound on one cell only, not replicated |
 
 Under the table:
-- **What the attempt leaves unresolved.** Whether a learner trained through changes would use carried memory. Dr never saw a
-  rebuild in training, and the carry rule is one of many.
+- **What the attempt leaves unresolved.** Whether carried memory can matter at all. The agent's memory matters only over a few
+  hundred to 2,000 flips on block patterns, and the rebuilds were further apart. Whether a learner trained through changes, or
+  changes closer together, would give memory work to do. Dr never saw a rebuild in training, and the carry rule is one of many.
 - **What the retired form keeps.** The slow loop's local-pattern wins, the agent's block-pattern lead, and the gates and driver.
 - **The bridge to G15** that is missing: a learned point whose memory does work after its pattern changes.
 
@@ -36,14 +43,15 @@ Under the table:
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Train the agent through changes: learning episodes run under the slow loop, with carried memory | 2/3 — the one untested part of the owner's picture: a learner that learns to use memory across a change | 2/3 — MEET-TRANSFER's trainer, SIGNED-NAV's handle and this driver exist; several CPU-hours of training | Train on `block` 2.5 at n = 800 with the loop's rebuilds in every episode, then carry against restart on `block` w40 at 3,200, five runs, both seeds → stop if carry/restart stays within 0.9 to 1.1 | Selected · awaiting go-ahead |
+| 1 | Train the agent through changes: learning episodes run under the slow loop, with carried memory | 2/3 — the one untested part of the owner's picture: a learner that learns to use memory across a change | 2/3 — MEET-TRANSFER's trainer, SIGNED-NAV's handle, this driver and the referee's wipe-every-K control exist; several CPU-hours of training | First a power check: wiping the memory every K flips at the planned rebuild spacing must cost at least about 1.2, else bring the changes closer together; then train on `block` 2.5 at n = 800 with the loop's rebuilds in every episode, and test carry against restart on `block` w40 at 3,200, five runs, both seeds → stop if the power check fails at every spacing tried, or carry/restart stays within 0.9 to 1.1 | Selected · awaiting go-ahead |
 | 2 | Read what the slow loop leaves: the 100 to 200 class remainder of a local pattern | 2/3 — ties the owner's "untangling" back to the program's own objects | 1/3 — no measure chosen yet for what a remainder is | Dump the remainders of 10 `local` w30 instances, and compare their meeting counts and density with planted `rand` patterns of that size → stop if they look like random patterns | Alternative · deferred |
 | 3 | Small, high-precision speculative rounds with a check per merge, where proofs find nothing | 1/3 — the referee's open corner (precision 0.98 on `rand` 3.0); a win would be small, since search there is easy | 3/3 — the evidence, the pair probe and SPEC-MERGE's driver exist | Rounds of 4 to 16 merges, each checked by a bounded pair probe, only when stuck, on `rand` 3.0 at 3,200 → stop if R stays above 1 | Alternative · deferred |
 | 4 | Full pivot: pause B191 and return to the idle goals | not rated — a choice for the stock-take | — | The coordinator's portfolio review with John | Alternative · deferred |
 
 Ratings.
-- **#1** is the most direct remaining test of the metacognition picture. This study shows the carry rule does no harm, so a
-  learner can be trained with it. Its main uncertainty is whether any memory can matter when the loop leaves a small remainder
+- **#1** is the most direct remaining test of the metacognition picture. This study did not show the carry rule safe or useful:
+  its memory test had almost no power (corrected after the referee). Without the power check, the stop rule would be met almost by
+  construction. Its main uncertainty is whether any memory can matter between changes when the loop leaves a small remainder
   (local) or proves little (block).
   - **Bound:** one training run and one test like this one, about 3 to 5 CPU-hours.
   - **Done so far:** nothing beyond this study.
@@ -51,8 +59,13 @@ Ratings.
 - **#3** closes the one corner SPEC-MERGE left open, for a small prize.
 - **#4** is the stock-take's own option.
 
-**Corrections:** none to earlier claims. Two departures from this study's frozen text are listed in the note: the prior-work
-cut-off, rerun with the freeze date, and the epic names. Check C2 failed: `local` w30 had room.
+**Corrections:** none to earlier claims at the close. Two departures from this study's frozen text are listed in the note: the
+prior-work cut-off, rerun with the freeze date, and the epic names. Check C2 failed: `local` w30 had room.
+- **Folded in after the referee (2026-11-17), all logged in `docs/CORRECTIONS.md`:**
+  - a Narrowing: the memory test had almost no power, so "the carry rule does no harm" and "safe to train with" are withdrawn, and
+    direction #1 starts with a power check;
+  - a Narrowing in wording: the line summary's "neither creates nor multiplies" and "four studies, one boundary";
+  - a Not a block: M4 in work on local, the `rand` identity as a driver check, and CPU per budget.
 - **Folded in during this study (7eddc5dcf):** SPEC-MERGE's referee, five entries in `docs/CORRECTIONS.md` (three Narrowings, two
   Not a block).
 
@@ -69,7 +82,8 @@ Relied on A90 and A91.
 **Advisor:** Fable 5.2 reviewed the second draft and said "freeze with changes". Its twelve points were taken, one in part (the
 statistic kept as the line's convention) ([advisor_review.md](advisor_review.md)). It was not used after the results.
 
-**Referee:** pending; hand-off below.
+**Referee:** R1 confirmed with fixes, no Block ([report](referee-R1/report.md)). Its fixes are folded in above, in the note,
+in A94, in the goals and in the intuition entry. The hand-off is kept below.
 
 ## The line, for the stock-take
 
@@ -82,7 +96,7 @@ computed, with both loops charged.
 | `SLOW-LOOP-20261117-001` | Do structure changes that keep the allowed states (proved ties, implied knots), applied between runs of Novelty+, cut the total work? | Yes on local patterns when eager (0.24 to 0.30 and 0.46 to 0.60 fully charged, CPU wins), no on random and block (1.5 to 2.1 times); the search's attention is no guide to where to probe | yes, with fixes |
 | `EARN-BUDGET-20261117-001` | Can the loop earn its eagerness from what its changes remove? | Safe (3% where nothing is found) and a win on an untouched local pattern (0.56; 0.18 at 12,800), but 3 to 4 times short of the best fixed setting per pattern, because it ramps too slowly | yes, wording only |
 | `SPEC-MERGE-20261117-001` | Can unproved changes, chosen from the search's own co-flip evidence, pay? | No. The evidence is real (about 0.1 above random pairs; tied 2.5 times as often on local), but unproved merges never paid. Only the check for contradictions filtered wrong ones; undoing on a stall was blind | yes, with fixes |
-| `AGENT-LOOP-20261117-001` (this) | Does the learned agent, with memory carried across changes, make the two loops worth more than their parts? | No. Memory makes no difference; the loop helps the agent on local patterns, where any search then finishes equally; the agent's lead on block patterns is its own | pending |
+| `AGENT-LOOP-20261117-001` (this) | Does the learned agent, with memory carried across changes, make the two loops worth more than their parts? | No. Carried memory showed no difference, in a test without power at these rebuild spacings; the loop helps the agent on local patterns, where any search then finishes equally; the agent's lead on block patterns exists without the loop | yes, with fixes |
 
 **What the line established.**
 1. **Changing the pattern by proved ties pays exactly where propagation proves many ties.** Those are the local patterns, where
@@ -91,8 +105,12 @@ computed, with both loops charged.
 2. **Where it pays, the fast loop hardly matters.** Novelty+ and the learned agent finish the remainder in the same flips, and the
    cheaper fast loop wins in work.
 3. **Unproved changes need a check of their own.** The search's progress after a change is no such check.
-4. **A learned agent's memory can be carried through a change of the pattern without harm, but here without use.**
-5. **The agent's lead on hard-to-search patterns is its own.** The loop neither creates it nor multiplies it.
+4. **Whether a learned agent's memory can be carried usefully through a change was not testable here.** The agent's memory matters
+   only over a few hundred to 2,000 flips on block patterns and not at all on local ones under the loop. The rebuilds were 3,500
+   to 6,400 flips apart, and a scrambled carry also read "no difference" (corrected after the referee).
+5. **The agent's lead on hard-to-search patterns exists without the loop:** alone it needs 0.42 to 0.79 of Novelty+'s flips. The
+   loop's added help is small on the first block cell, where the interaction is 0.80 to 0.82, not replicated. On the second block
+   cell the loop helps Novelty+ more (corrected after the referee).
 
 **What is known mathematics.**
 - **The moves are classical:**
@@ -112,12 +130,16 @@ computed, with both loops charged.
   None of it goes beyond what an inprocessing solver does.
 
 **What I would do next.**
-- **If the line continues,** train the agent through changes (#1). It is the one part of the owner's picture not yet tested, and
-  this study shows the carry rule is safe to train with.
+- **If the line continues,** train the agent through changes (#1). It is the one part of the owner's picture not yet tested. It
+  must start with a power check that memory matters at the spacing of the changes, which this study lacked.
 - **If it does not,** the line's results stand as a measured account of when a structure-changing loop pays. Then I would pause
   B191 and return to the idle goals (#4).
-- **I would not run** more variants of the slow loop itself. Four studies found the same boundary, that proofs pay where
-  propagation finds structure, and a further variant is unlikely to move it.
+- **I would not run** more variants of the slow loop itself.
+  - **What each study tested.** Two studies (SLOW-LOOP, EARN-BUDGET) located the boundary, that proofs pay where propagation finds
+    structure, with proved moves. SPEC-MERGE showed that one design of unproved moves does not cross it, leaving one corner untried
+    (#3). This study showed that a learned fast loop does not move it.
+  - **The common scope.** All four ran on planted not-all-equal patterns at n up to 12,800.
+  - **My judgement** is that a further variant is unlikely to move the boundary (corrected after the referee).
 
 ## Referee hand-off
 
@@ -145,3 +167,33 @@ computed, with both loops charged.
    the predictions and checks are scored as frozen.
 6. **Prior work.** Rerun `track.py objects-gate research/AGENT-LOOP-20261117-001/preregistration.md` with the freeze date, and
    search for memory transfer of learned local search under problem reformulation.
+
+## Final report as sent
+
+2026-11-17, in the project thread (shortened for the owner):
+
+> **Result: your learned agent plus the slow loop isn't worth more than its parts. Carrying the agent's memory across the loop's
+> changes made no difference at all.**
+>
+> - **Memory.** Carried and restarted memory came out within 1% on local patterns and within 11% on block patterns, never
+>   significant. That held even where most of the search came after the first change.
+> - **Local patterns.** The loop cuts the agent's flips about 20 to 50 times. But the loop alone already shrinks 3,200
+>   distinctions to about 100 to 200, and the agent then finishes in the same flips as Novelty+, at 1.4 to 1.75 times the work.
+> - **Block patterns.** The agent needs about half Novelty+'s flips, but it was already that far ahead alone, and the loop adds
+>   little.
+>
+> (Two tables followed: the position table and the four directions, rated as above.)
+>
+> **What the four studies established:** changing the knot pattern by proved ties pays exactly where propagation proves structure,
+> and nowhere else. Unproved changes need a check of their own. That's known mathematics (probing and equivalent-literal
+> substitution). The program's own part is the measurement, including the agent's memory carried through changes. I'd run #1 only
+> if you want the metacognition idea tested once more; otherwise #4.
+>
+> **Corrections:** five, from the speculative-merge referee (three Narrowings, two Not a block, no Block). **Goals:** checkpoint
+> added, no goal changed. **Assumptions:** A94 (the memory-carry rule) and A95 (fair budget per measure) added. **Advisor:** used
+> before the freeze. Referee pending.
+
+*After the referee (2026-11-17), "made no difference at all" should read "showed no difference, in a test that could not have
+shown one". At these rebuild spacings the agent's memory hardly matters between changes, and a scrambled carry also reads "no
+difference". So the result is "not testable", not "no difference". The table's "memory survives a change without harm" is
+withdrawn, and #1 must start with a power check.*

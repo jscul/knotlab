@@ -2432,12 +2432,21 @@ evidence: results and their status come from the records each entry links.
   the ages; resetting the recurrent state; and training the agent with the changes in its episodes, so that it learns its own use
   of carried memory.
 - **Rests on it.** The memory verdict of `AGENT-LOOP-20261117-001` ("no difference shown").
-- **Challenge.** Train the agent with the slow loop's rebuilds in its learning episodes and test carry against restart again
-  (`AGENT-LOOP-20261117-001#1`). A learner that uses carried memory where this one does not would show the verdict belongs to
-  this rule and this agent, not to memory across a change.
+- **Challenge.** First show that the agent's memory matters over the stretch between changes. Wiping it every K flips at the
+  rebuild spacing must cost at least about 1.2, or the changes must come closer together. Then train the agent with the slow
+  loop's rebuilds in its learning episodes, and test carry against restart again (`AGENT-LOOP-20261117-001#1`). A learner that
+  uses carried memory where this one does not would show the verdict belongs to this rule and this agent, not to memory across a
+  change.
 - **History.**
+  - 2026-11-17 · Untested, after the referee of `AGENT-LOOP-20261117-001`. The study's memory test had almost no power:
+    - under the loop, wiping the agent's memory every 100 flips changes nothing on `local` w30;
+    - on block it matters only within about 2,000 flips, while the rebuilds were 3,500 to 6,400 apart;
+    - a deliberately scrambled carry also reads "no difference shown" on the first block cell.
+
+    The earlier "so the rule does no harm" is withdrawn. The rule is implemented as stated: carried through an unchanged pattern,
+    it reproduces the agent's runs exactly.
   - 2026-11-17 · Adopted by `AGENT-LOOP-20261117-001`. Carried and restarted memory gave the same flips and work within 0.89 to
-    1.02 on every cell with room, so the rule does no harm; it was not shown to help.
+    1.02 on every cell with room. The history entry first said this showed the rule does no harm; it was not shown to help.
 
 ### A95 · Two fast loops are compared at the same proofs per flip in flips, and at the same share of work on proofs in work
 

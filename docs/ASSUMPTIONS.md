@@ -148,6 +148,8 @@ evidence: results and their status come from the records each entry links.
 | [A91](#a91--a-slow-loop-is-judged-by-charged-work-both-loops-and-every-rebuild-counted) | A slow loop is judged by charged work, both loops and every rebuild counted | measure | Assumed |
 | [A92](#a92--a-slow-loop-earns-its-eagerness-by-doubling-and-halving-on-the-share-its-batched-merges-remove) | A slow loop earns its eagerness by doubling and halving on the share its batched merges remove | reading | Assumed |
 | [A93](#a93--a-speculative-change-is-judged-by-whether-the-search-then-gets-below-its-pre-change-best) | A speculative change is judged by whether the search then gets below its pre-change best | premise | Overturned |
+| [A94](#a94--an-agents-memory-across-a-change-of-the-pattern-is-carried-by-signed-navs-rule) | An agent's memory across a change of the pattern is carried by SIGNED-NAV's rule | reading | Assumed |
+| [A95](#a95--two-fast-loops-are-compared-at-the-same-proofs-per-flip-in-flips-and-at-the-same-share-of-work-on-proofs-in-work) | Two fast loops are compared at the same proofs per flip in flips, and at the same share of work on proofs in work | measure | Assumed |
 
 ## Entries
 
@@ -2412,3 +2414,48 @@ evidence: results and their status come from the records each entry links.
     the contradiction check's undos as the stall test's. The stall test alone was no better than blind.
   - 2026-11-17 · Overturned by `SPEC-MERGE-20261117-001`'s round log, in the study that adopted it.
   - 2026-11-17 · Adopted by `SPEC-MERGE-20261117-001`.
+
+### A94 · An agent's memory across a change of the pattern is carried by SIGNED-NAV's rule
+
+**Assumed** · 2026-11-17 · reading
+
+- **Statement.** When the slow loop rebuilds the knot pattern, the learned agent keeps its memory through SIGNED-NAV's carry rule:
+  - **values:** a class takes the slow loop's majority vote;
+  - **ages:** a class takes its members' most recent flip;
+  - **recent counts:** decayed and summed over the members;
+  - **knots:** a new knot takes the most recent visit of its old knots, and their visit counts decayed and summed;
+  - **the rest:** the recurrent state, the step count and the random stream carry over unchanged.
+
+  Restarting instead keeps only the mapped values, with fresh memory.
+- **Why.** Adopted by `AGENT-LOOP-20261117-001` at its freeze. It is the carry rule SIGNED-NAV built and replayed on real
+  tie-merge sequences, and it is the natural mapping of a memory through a substitution. The alternatives were: carrying only
+  the ages; resetting the recurrent state; and training the agent with the changes in its episodes, so that it learns its own use
+  of carried memory.
+- **Rests on it.** The memory verdict of `AGENT-LOOP-20261117-001` ("no difference shown").
+- **Challenge.** Train the agent with the slow loop's rebuilds in its learning episodes and test carry against restart again
+  (`AGENT-LOOP-20261117-001#1`). A learner that uses carried memory where this one does not would show the verdict belongs to
+  this rule and this agent, not to memory across a change.
+- **History.**
+  - 2026-11-17 · Adopted by `AGENT-LOOP-20261117-001`. Carried and restarted memory gave the same flips and work within 0.89 to
+    1.02 on every cell with room, so the rule does no harm; it was not shown to help.
+
+### A95 · Two fast loops are compared at the same proofs per flip in flips, and at the same share of work on proofs in work
+
+**Assumed** · 2026-11-17 · measure
+
+- **Statement.** When two fast loops of different cost per flip run under one slow loop, each measure is read under its own
+  budget:
+  - **flips** under a slow budget of a fixed 50 incidences per flip (times 3), the same proofs per flip for both;
+  - **charged work** under EARN-BUDGET's rule, a slow budget of 3 times the epoch's own fast work, the same share of work on
+    proofs for both.
+- **Why.** Adopted by `AGENT-LOOP-20261117-001` at its freeze, after calibration showed that EARN-BUDGET's rule buys the learned
+  agent (about 240 incidences per flip) about 5 times Novelty+'s proofs per flip, so that in flips the agent "won" by half through
+  proofs alone. The advisor's review asked that each measure be read under the budget that makes it fair. The alternatives were
+  one budget for both measures, or a budget fixed in proofs per epoch.
+- **Rests on it.** M2 to M4 of `AGENT-LOOP-20261117-001`.
+- **Challenge.** Rerun the comparison with a budget fixed in proofs per epoch, or with the unit set from each fast loop's own
+  measured cost. A verdict that flips would show this choice was doing the work. The interaction test in work also passes on
+  `rand`, where nothing is proved, because the probing cost is bounded and diluted by a costlier fast loop, so any reading of
+  interactions in work should be checked against such a control.
+- **History.**
+  - 2026-11-17 · Adopted by `AGENT-LOOP-20261117-001`.

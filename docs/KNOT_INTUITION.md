@@ -2135,6 +2135,28 @@ So holes come in two kinds:
    - **Next.** The learned agent as the fast loop under the proof-based slow loop, with its memory carried across the changes
      ([decision note](../research/SPEC-MERGE-20261117-001/decision.md)).
 
+   **2026-11-17: the learned agent and the slow loop do not add up to more than their parts** (`AGENT-LOOP-20261117-001`; referee
+   pending).
+   - **The question.** This was the owner's whole picture in one system. The learned agent turns from knot to knot and
+     remembers its steps. Under it, the proof-based slow loop merges the distinctions it proves tied and rebuilds the pattern.
+     At every change the agent's memory is either carried across or restarted.
+   - **Computed.**
+     - **Memory did not matter.** Carrying the agent's memory across a change of the pattern was neither better nor worse than
+       starting fresh. That held on patterns where most of the search came after the first change.
+     - **Where the slow loop works, it does the work.** On local patterns it alone shrinks 3,200 distinctions to about 100 to 200
+       classes. Any search then finishes the rest in about the same number of flips: the agent needed as many as Novelty+, and
+       cost more.
+     - **Where search stays hard, the agent's lead is its own.** On block patterns the agent needed about half of Novelty+'s
+       flips under the loop. It was already that far ahead alone, and the loop added little to it.
+   - **Reading.**
+     - **Each loop is strong in its own place.** The slow loop is strong where propagation can prove ties; the agent is strong
+       where search stays hard after the changes.
+     - **Here they do not compound.** A memory of the pattern before a change neither helps nor hurts after it.
+     - **What was not tested.** An agent trained with the changes in its episodes, which might learn to use that memory.
+   - **Next.** The line stops here for a stock-take with the owner. Over four studies, changing the knot pattern paid exactly where
+     proofs find structure, which is what satisfiability solvers' inprocessing already does
+     ([decision note](../research/AGENT-LOOP-20261117-001/decision.md)).
+
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
      No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.

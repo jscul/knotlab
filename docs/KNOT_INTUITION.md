@@ -2114,6 +2114,25 @@ So holes come in two kinds:
    - **Next.** Price a batch of ties before paying for the merge, so that a few rare ties can justify eagerness at once
      ([decision note](../research/EARN-BUDGET-20261117-001/decision.md)).
 
+   **2026-11-17: the search's own history knows something about the structure, but not enough to change it without proof**
+   (`SPEC-MERGE-20261117-001`; referee pending).
+   - **The question.** Can the slow loop change the pattern on the search's evidence alone, without proving anything? It watched
+     which pairs of distinctions the search kept flipping together, and when the search was stuck it merged them, undoing the
+     merge if the search did not then improve. These changes can remove every solution, so each answer was checked on the
+     original knots.
+   - **Computed.**
+     - **The evidence is real.** Pairs the search moves together agree with the hidden solution about 70% of the time on random
+       patterns, against about 58% for random pairs, and on a local pattern they are provably tied two and a half times as often.
+     - **The merges never paid.** On random patterns about 30% of them were wrong, and the search paid for every one. On the local
+       pattern the proof-based loop was far better.
+     - **The undo was blind.** Watching whether the search improved after a merge threw away most correct merges and kept some
+       wrong ones.
+   - **Reading.** The fast loop's history is the first signal in this line that points at structure, and it is worth keeping, but
+     as a guide for what to prove, not as a licence to change the pattern. A mutation of the knot pattern needs a check of its own;
+     the search's progress over a few steps is not one.
+   - **Next.** The learned agent as the fast loop under the proof-based slow loop, with its memory carried across the changes
+     ([decision note](../research/SPEC-MERGE-20261117-001/decision.md)).
+
    **2026-11-07: a beginning is a knot, and growth needs a shared coin** (`GROWTH-LAW-20261107-001`).
    - **The question.** Backlog B1: written as a law, with its history as variables, what can a growth order add to a static law?
      No scheduler may supply an input, so a result belongs to the law only if it holds in every growth order.

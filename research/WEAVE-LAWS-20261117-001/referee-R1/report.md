@@ -1,5 +1,12 @@
 # Referee report WEAVE-LAWS-R1 (fresh code, no Codex)
 
+> **Correction (2026-11-17, by this referee, during `WEAVE-MIX-R1`).** The 2 × 2 law below (p3 on one up knot per 2 × 2 cell) does
+> not look disordered. One size past this report's widths, its spin gap falls from 0.233 at width 12 to 0.143 at 14 and 0.132 at
+> 16; at width 14 the top flip-even pair is nearly degenerate. That was checked with eight eigenvalues per sector and the referee's
+> own transfer (`research/WEAVE-MIX-20261117-001/referee-R1/referee_weavemix_gaps.json`). It is unresolved, and it looks critical
+> or long-range at these widths. The sentences that call it disordered-looking are withdrawn. The random mix of signed knots
+> (ε = 0.1, Lyapunov gap 0.20 at widths 9 to 15) is unaffected.
+
 **Verdict: Confirmed with fixes. No Block.**
 - **What holds.**
   - L1, L2 and L3 are correct, and the sign-consistency test is right.
@@ -162,7 +169,8 @@ Gap per row, in log base 3, with two seeds and 600 rows (500 after a burn-in of 
       9.
 
     **So one periodic law on a 2 × 2 cell, all of whose knots are pairwise, already looks disordered at widths up to 12.** It is a
-    probe at small widths, not a classification.
+    probe at small widths, not a classification. *(Withdrawn: see the correction at the top; at widths 14 and 16 the gap falls to
+    0.14 and 0.13.)*
 - **What follows for the study.**
   - The headline, "no *tested* knot law", stands.
   - The bullet "The pairwise laws are critical or frozen" should read "every law that puts one not-all-equal-class knot on all up

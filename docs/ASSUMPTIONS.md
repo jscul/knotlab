@@ -145,6 +145,7 @@ evidence: results and their status come from the records each entry links.
 | [A88](#a88--the-owners-navigating-agent-is-focused-local-search-over-violated-knots) | The owner's navigating agent is focused local search over violated knots | reading | Assumed |
 | [A89](#a89--learned-search-is-judged-by-work-per-unseen-instance-against-re-tuned-rules) | Learned search is judged by work per unseen instance against re-tuned rules | measure | Assumed |
 | [A90](#a90--the-owners-slow-loop-changes-the-pattern-where-the-search-dwells-keeping-its-allowed-states) | The owner's slow loop changes the pattern where the search dwells, keeping its allowed states | reading | Assumed |
+| [A91](#a91--a-slow-loop-is-judged-by-charged-work-both-loops-and-every-rebuild-counted) | A slow loop is judged by charged work, both loops and every rebuild counted | measure | Assumed |
 
 ## Entries
 
@@ -2333,3 +2334,21 @@ evidence: results and their status come from the records each entry links.
   work. A saving under another reading that this one misses would overturn it as the reading of the owner's picture.
 - **History.**
   - 2026-11-17 · Adopted by `SLOW-LOOP-20261117-001` (the coordinator's reading, challengeable).
+
+### A91 · A slow loop is judged by charged work, both loops and every rebuild counted
+
+**Assumed** · 2026-11-17 · measure
+
+- **Statement.** A slow loop that changes the pattern is better only if the median over unseen instances of its charged work is
+  lower than the better of the re-tuned fast rules alone. Charged work counts the incidences (knot-distinction pairs) read by the
+  fast loop, by every probe (three per knot it reads) and by every rebuild. Each instance's figure is the geometric mean of five
+  runs. CPU must also be lower for a charged win, and it is measured with the rebuild partly in Python.
+- **Why.** Adopted by `SLOW-LOOP-20261117-001` at its freeze, extending A89 to two loops. Flips alone would not charge the slow
+  loop at all, and CPU alone depends on how much of the rebuild is written in C. The alternatives were flips, CPU alone, and
+  conflicts or propagations, as solvers count them.
+- **Rests on it.** The charged-win, work-win and loss verdicts of `SLOW-LOOP-20261117-001`.
+- **Challenge.** Weigh probes and fast-loop reads differently (a probe reads three incidences per knot, while a fast-loop break
+  count reads one counter per incidence), or count CPU with the rebuild in C. A verdict that changes under a factor-of-two change
+  in the probe charge is sensitive to this measure.
+- **History.**
+  - 2026-11-17 · Adopted by `SLOW-LOOP-20261117-001`.

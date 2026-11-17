@@ -1,6 +1,9 @@
 """Shared-runner job for SLOW-LOOP-20261117-001A, one stage per launch (--param stage=...).
 
   retune   S1: NOV (30 settings) and PS (8) on 8 tuning instances per cell, 3 runs each
+  retune2  S1b (deviation, decided after S1 and before any slow arm was tuned): where S1's best setting sat on an edge of
+           its grid, the grid extended one step beyond it on the same instances (NOV: noise 0.85 and 0.9, walk probability
+           0.1; PS: cb 0.8 and 0.6)
   policy   S2: the 48 slow-loop settings on 8 instances of rand 2.1 and block 2.5 (G) and of local w10 (GO) at n = 800,
            and the 8 static settings on rand 2.1 and block 2.5 (ST), 3 runs each, with NOV from the same initial states
            ("base" cases)
@@ -49,6 +52,11 @@ STATIC_GRID = [{"e": 1.0, "rho": 0.0, "beta": beta, "J": 2, "pb": 4000, "backoff
 EMBED = {"frac": 0.25, "alpha_r": 2.1, "alpha_l": 4.0, "alpha_c": 0.02, "w": 10}
 CDCL_ALL = ("local", "embed")
 TUNE_CAP = 2 * 10**7
+NOV_EXT = [(nz, wp) for nz in (0.85, 0.9) for wp in (0.0, 0.005, 0.01, 0.02, 0.05, 0.1)] + \
+    [(nz, 0.1) for nz in (0.5, 0.6, 0.65, 0.7, 0.75, 0.8)]
+PS_EXT = [(0.6, 1.0), (0.8, 1.0)]
+EXT_NOV_CELLS = ("local-w10-3200", "local-w40-3200", "rand-3200", "block-3200", "embed-3200", "local-w10-800")
+EXT_PS_CELLS = ("local-w10-3200", "local-w40-3200")
 SEED_TUNE, SEED_POLICY, SEED_ORACLE, SEED_TEST, SEED_STRESS = 7_500_000, 7_000_000, 7_600_000, 7_100_000, 7_200_000
 POLICY_PATTERNS = {"rand-800": "G", "block-800": "G", "local-w10-800": "GO"}
 ARMS = ["NOV", "PS", "G", "Gx", "RND", "ST", "GO"]
@@ -74,6 +82,15 @@ def cases():
                     yield f"retune|{name}|NOV|{j}|{i}", {"cell": name, "algo": "novelty_plus", "prm": prm, "i": i}
                 for j, prm in enumerate(PS_GRID):
                     yield f"retune|{name}|PS|{j}|{i}", {"cell": name, "algo": "probsat_poly", "prm": prm, "i": i}
+    elif st == "retune2":
+        for name in EXT_NOV_CELLS:
+            for i in range(8):
+                for j, prm in enumerate(NOV_EXT):
+                    yield f"retune2|{name}|NOV|{j}|{i}", {"cell": name, "algo": "novelty_plus", "prm": prm, "i": i}
+        for name in EXT_PS_CELLS:
+            for i in range(8):
+                for j, prm in enumerate(PS_EXT):
+                    yield f"retune2|{name}|PS|{j}|{i}", {"cell": name, "algo": "probsat_poly", "prm": prm, "i": i}
     elif st == "policy":
         for name in POLICY_PATTERNS:
             for i in range(8):
@@ -121,7 +138,7 @@ def run(case_id, payload):
     import slow_loop as S
     st = P["stage"]
     cell, i = payload["cell"], payload["i"]
-    if st == "retune":
+    if st in ("retune", "retune2"):
         seed = SEED_TUNE + i
         inst, _ = _inst(cell, seed)
         out = [_slim(S.run_fast(inst, payload["algo"], tuple(payload["prm"]), S.run_seed("retune", cell, seed, r),

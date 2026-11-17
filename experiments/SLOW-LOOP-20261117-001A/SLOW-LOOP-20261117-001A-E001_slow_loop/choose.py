@@ -1,6 +1,7 @@
 """Choices between stages of SLOW-LOOP-20261117-001A, by the frozen scores.
 
-  python3 choose.py retune <S1 dir> <retuned.json>     best NOV and PS per cell: least mean log charged work over
+  python3 choose.py retune <S1 dir>[,<S1b dir>] <retuned.json>
+                                                        best NOV and PS per cell: least mean log charged work over
                                                         8 instances x 3 runs; an unsolved run scores log(work at the
                                                         cap) + log(1 + least violated count)
   python3 choose.py policy <S2 dir> <policies.json>    G: least mean over rand-800 and block-800 of each pattern's
@@ -31,7 +32,9 @@ def score(run):
 
 
 def ok_records(d):
-    recs = load_results(d)
+    recs = {}
+    for one in d.split(","):
+        recs.update(load_results(one))
     bad = [k for k, r in recs.items() if r.get("status") != "ok"]
     if bad:
         raise SystemExit(f"{len(bad)} cases not ok, e.g. {bad[:3]}")
@@ -51,7 +54,9 @@ def retune(d, out):
         table[name] = {}
         for tag in ("NOV", "PS"):
             rows = {prm: sum(v) / len(v) for (c, t, prm), v in acc.items() if c == name and t == tag}
-            assert len(rows) == (30 if tag == "NOV" else 8) and all(len(acc[(name, tag, p)]) == 24 for p in rows)
+            want = (30 + (len(job.NOV_EXT) if name in job.EXT_NOV_CELLS and "," in d else 0)) if tag == "NOV" else \
+                (8 + (len(job.PS_EXT) if name in job.EXT_PS_CELLS and "," in d else 0))
+            assert len(rows) == want and all(len(acc[(name, tag, p)]) == 24 for p in rows), (name, tag, len(rows), want)
             best = min(rows, key=rows.get)
             choice[name][tag] = list(best)
             table[name][tag] = {str(list(p)): round(v, 4) for p, v in sorted(rows.items(), key=lambda kv: kv[1])}
@@ -97,5 +102,22 @@ def policy(d, out):
           "| ST", kst[1], job.STATIC_GRID[kst[1]], round(st[kst], 4))
 
 
+def posthoc(d, out):
+    """STO (post hoc, not frozen): the static setting least in mean paired log(W_setting) - log(W_NOV) on local-w10-800"""
+    res = ok_records(d)
+    base = {(r["seed"], j): score(run) for r in res.values() if r["k"] < 0 for j, run in enumerate(r["runs"])}
+    acc = defaultdict(list)
+    for r in res.values():
+        if r["k"] >= 0:
+            for j, run in enumerate(r["runs"]):
+                acc[r["k"]].append(score(run) - base[(r["seed"], j)])
+    assert len(acc) == len(job.STATIC_GRID) and all(len(v) == 24 for v in acc.values())
+    sc = {k: sum(v) / len(v) for k, v in acc.items()}
+    k = min(sc, key=sc.get)
+    Path(out).write_text(json.dumps({"STO": job.STATIC_GRID[k], "_k": k, "_scores": {str(a): round(b, 4) for a, b in
+                                                                                       sorted(sc.items())}}, indent=1))
+    print("STO", k, job.STATIC_GRID[k], round(sc[k], 4))
+
+
 if __name__ == "__main__":
-    {"retune": retune, "policy": policy}[sys.argv[1]](sys.argv[2], sys.argv[3])
+    {"retune": retune, "policy": policy, "posthoc": posthoc}[sys.argv[1]](sys.argv[2], sys.argv[3])

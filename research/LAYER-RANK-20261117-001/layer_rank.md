@@ -5,37 +5,49 @@ Epic `LAYER-RANK-20261117-001`, 17 November 2026, by Claude; takes B184. Goal G3
 Experiment: [code and contract](../../experiments/LAYER-RANK-20261117-001A/LAYER-RANK-20261117-001A-E001_layer_rank/),
 [summary](../../artifacts/LAYER-RANK-20261117-001A/LAYER-RANK-20261117-001A-E001_layer_rank/summary.json).
 
-## The answer
+## The answer (corrected after the referee, 17 November)
 
-Layered random circuits need about (2/3)√d untangling phases, and the d^0.41 measured earlier was this law's slowly vanishing
-logarithmic correction, not a different exponent. The mechanism is one exact identity.
+*The first version said layered circuits "need about (2/3)√d phases" and that the measured d^0.41 was "this law's slowly vanishing
+logarithmic correction". The referee (`LAYER-RANK-R1`) narrowed both, and the labels of the continuum law; corrected below and
+logged in `docs/CORRECTIONS.md`.*
+
+A circuit's phase count is its largest standing (rank), which follows the front of the standing profile, about √d; the **mean**
+standing is about (2/3)√d. The mechanism is one exact identity.
 
 In a gate's derivation, taking the better of two alternatives (OR) and joining two strands (AND) cancel exactly. Only an open use of
 two strands of equal standing (an AND of two inputs of the same rank, which costs a phase) moves the ranks. With infinite width the
-cumulative rank distribution obeys **Q_{L+1}(r) = Q_L(r) − ½ q_L(r)²** (proved, below). Each tie raises a strand and spreads the
-standings, which makes the next tie rarer: nesting limits itself.
+cumulative rank distribution obeys **Q_{L+1}(r) = Q_L(r) − ½ q_L(r)²** (proved, below; it holds from L ≥ 1). Each tie raises a strand
+and spreads the standings, which makes the next tie rarer: nesting limits itself.
 
-The continuum limit is inviscid Burgers. Its solution, confirmed by the frozen numerics to depth 10⁵, has these properties:
+The continuum limit is inviscid Burgers (derived by a heuristic continuum argument, the advisor's; not proved). Its solution, matched
+by the frozen numerics to depth 10⁵, has these properties:
 
 - a triangular standing profile reaching √d;
 - mean (2/3)√d − ¼ ln d + O(1) (at 10⁵: mean/√d = 0.658, and the slope of mean + ¼ ln d against √d is 0.666);
-- exactly 4/d of true gates at standing 1, and 10.47/d at standing ≤ 2, the predicted limits 4 and 6 + 2√5.
+- 4/d of true gates at standing 1, and 10.47/d at standing ≤ 2, the limits 4 and 6 + 2√5 of the β_r recursion (a consistent
+  asymptotic solution, not a proof).
 
-The largest standing among 1,024 gates by the recursion is 4, 5, 6, 9, 12, 16 at d = 8 … 256, against 4, 5, 7, 9, 11, 17 measured in
-`SEQUENTIAL-WALL-20261116-001`: within one everywhere. Unlayered circuits obey the same equation with depth about ln n, hence
-√(ln n), which is why they stayed at 2 to 4. At finite width the true fraction drifts and fixes. Once all gates are true, the
-standings grow linearly, about c·d/√w with c from 0.70 (w = 64) to 1.01 (w = 1,024).
+Post hoc, the largest standing among 1,024 gates by the recursion is 4, 5, 6, 9, 12, 16 at d = 8 … 256, against 4, 5, 7, 9, 11, 17
+measured in `SEQUENTIAL-WALL-20261116-001`, within one everywhere; it is 98 at d = 10⁴ and 313 at 10⁵, tracking the front √d. The
+earlier d^0.41 is a pre-asymptotic exponent of the same law (post hoc): the largest of 1,024 sits a fading constant above the front,
+and that offset gives an exponent of 0.40 over d = 8 to 256. (The −¼ ln d correction belongs to the mean, whose local exponent rises
+from 0.39 to 0.52.) For unlayered circuits the advisor's heuristic is the same equation with depth about ln n, hence √(ln n),
+consistent with the 2 to 4 measured but not tested here. At finite width the true fraction drifts and fixes; once all gates are
+true, the standings grow linearly, about c·d/√w with c from 0.70 (w = 64) to 1.01 (w = 1,024).
 
 **What the knot picture explained.** The cancellation is the explanation, and it is stated in the program's words: alternatives and
 joins balance, so only equal-standing open uses build nesting, and they build it at a rate that falls as the standing spreads.
 Layering matters because every gate then draws its two strands from the same standing distribution, an order designed into the
 meeting pattern. My first picture ("layering spreads standings like a random walk") was wrong, as the advisor pointed out:
-layering spreads nothing, and the ties make the spread. As mathematics this is a max/min recursion reducing to Burgers. I found no
-statement of it in the Strahler literature, which treats fixed trees and gets logarithms.
+layering spreads nothing, and the ties make the spread. As mathematics this is a max/min recursion reducing to Burgers. That the
+phases are the least Strahler number over derivations is known (Newton's method over ω-continuous semirings: Esparza, Kiefer and
+Luttenberger, J. ACM 2010; Esparza, Luttenberger and Schlund 2014); computing it is P-complete (Ganardi and Lohrey 2026); Horton-law
+coalescence equations (Kovchegov and Zaliapin 2020) are neighbours. No statement of this recursion or its √L law was found.
 
 ## The identity (proved)
 
-For L ≥ 2 (when every true gate has rank at least 1), with inputs independent:
+For L ≥ 1 (the referee checked that it already holds at the first step; for L ≥ 2 every true gate has rank at least 1), with inputs
+independent:
 
 - an OR gate has rank ≤ r exactly when some input is true with rank ≤ r: chance 2Q − Q²;
 - an AND gate has rank ≤ r exactly when both inputs are true with rank ≤ r, except when both have rank exactly r (then r + 1):
@@ -108,8 +120,8 @@ Its only miss was the slope after fixation at w = 1,024 (S2).
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: why layered circuits need about d^0.4 phases | **Status:** Successful (referee pending) | An exact identity and its √d law, confirmed to depth 10⁵; the old measurements reproduced within one; 10 of 11 held |
-| Local direction: phases of random circuits | Practically exhausted | The law is known now, layered and unlayered |
+| This attempt: why layered circuits need about d^0.4 phases | **Status:** Successful (refereed, confirmed with fixes) | An exact identity; phases follow the front √d, mean standing (2/3)√d (continuum law heuristic, matched to depth 10⁵); the old measurements reproduced within one (post hoc); 10 of 11 held |
+| Local direction: phases of random circuits | Practically exhausted | The layered law is known; the unlayered √(ln n) is the advisor's untested heuristic |
 | Broader exploration: Strahler-type recursions | Known alternatives | Max-type recursive distributional equations (Aldous and Bandyopadhyay) |
 | Long-term goal: G3 | Capability gained | A mechanism for how designed order forces nesting: only equal-standing open uses build it, and they slow themselves |
 
@@ -120,8 +132,18 @@ Its only miss was the slope after fixation at w = 1,024 (S2).
 | 1 | A97's test: do equal bond-distance tables force equal relations? (the owner's "distance is the only form of information") | 3/3, would test the owner's reading of information directly | 3/3, a census of small not-all-equal patterns grouped by bond-distance table | Enumerate small patterns, group by bond-distance table, compare their allowed-state relations → stop at a counterexample or at the largest size checked | Selected · not started |
 | 2 | Parity knots on weaves (rules that reach past the rim): does the one-step light cone hold? | 2/3 | 2/3 | Phases of elimination against steps apart on parity weaves → a clear scaling | Alternative · deferred |
 
-**Corrections:** none. **Goals:** G3 checkpoint (capability gained); no goal changed. **Assumptions:** none new. **Basket:** read;
+**Corrections:** none at close; after the referee, three Narrowing (phases follow the front √d, not the mean; d^0.41 is a
+pre-asymptotic exponent, not the log correction; heuristic and post hoc labels added) and one Not a block (the phase–Strahler
+theorem's source), in `docs/CORRECTIONS.md` and knotlab's HISTORY.md. **Goals:** G3 checkpoint (capability gained); no goal changed. **Assumptions:** none new. **Basket:** read;
 B184 taken by this epic.
+
+## Referee
+
+`LAYER-RANK-R1` (light check; [report](referee-R1/report.md), commit `04f58d017`): confirmed with fixes, no Block. The identity's
+proof holds, from L ≥ 1; it is satisfied in the referee's own recursion at all 10⁵ layers to 1.3e-15; M1 to M7 recompute exactly;
+S1 holds on 12 fresh simulations; S2 reproduces, failure included; the post hoc largest-of-1,024 values reproduce; the β_r limits are a
+consistent asymptotic solution, not a proof. Its fixes are folded in above. The final report below is kept as sent; it said "need
+about (2/3)√d" and "which I've proved" beside the continuum law, both corrected here.
 
 ## Final report as sent
 
@@ -138,4 +160,6 @@ Posted to the owner's project thread on 2026-11-17 at about 17:33 UTC:
 
 **Next step:** test your reading A97 ("distance is the only form of information"): do small not-all-equal patterns with identical distance tables always allow the same states? Payoff 3/3, concreteness 3/3. The coordinator will confirm.
 
-**Corrections:** none. **Goals:** G3 checkpoint. **Assumptions:** none new. [Decision note](https://github.com/jscul/knotlab/blob/main/research/LAYER-RANK-20261117-001/layer_rank.md)
+**Corrections:** none at close; after the referee, three Narrowing (phases follow the front √d, not the mean; d^0.41 is a
+pre-asymptotic exponent, not the log correction; heuristic and post hoc labels added) and one Not a block (the phase–Strahler
+theorem's source), in `docs/CORRECTIONS.md` and knotlab's HISTORY.md. **Goals:** G3 checkpoint. **Assumptions:** none new. [Decision note](https://github.com/jscul/knotlab/blob/main/research/LAYER-RANK-20261117-001/layer_rank.md)

@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: layered circuits, confirmed by the referee, with three narrowings
+
+- Why layered circuits need about d^0.4 phases (`LAYER-RANK-20261117-001`) was confirmed by its referee with no Block: the identity
+  (alternatives and joins cancel, so only equal-standing open uses move the standings) is proved and holds from the first layer,
+  and every frozen number recomputes ([decision note](research/LAYER-RANK-20261117-001/layer_rank.md)).
+- Narrowed: the phase count is the largest standing, which follows a front at about √d; (2/3)√d is the mean standing.
+- Narrowed: the earlier d^0.41 is a pre-asymptotic exponent of the same law (post hoc), not its logarithmic correction.
+- Labelled: the continuum law is a heuristic matched numerically; the unlayered √(ln n) is untested; the match with earlier
+  measurements is post hoc.
+
 ## 17 November 2026: "space forces order only through steps apart" withdrawn; the numbers stand
 
 - The referee of `SPACE-ORDER-20261117-001` confirmed the lemma (untangling phases are at least the steps apart from what is

@@ -3,7 +3,8 @@
 Status: Proved
 
 Ticket `LAYER-RANK-20261117-001Z`, 2026-11-17. A ledger; it makes no new claim. The decision note is
-`research/LAYER-RANK-20261117-001/layer_rank.md`. Referee pending.
+`research/LAYER-RANK-20261117-001/layer_rank.md`. Refereed: `LAYER-RANK-R1`, confirmed with fixes (commit `04f58d017`). Read row 2
+as: phases follow the front √d, mean standing (2/3)√d (continuum law heuristic); d^0.41 a pre-asymptotic exponent (post hoc).
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |

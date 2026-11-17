@@ -2502,7 +2502,10 @@ evidence: results and their status come from the records each entry links.
 - **Statement.** The owner's reading, in his words (17 November 2026): "Distance is the only form of information. That's the
   entire basis of the 'this versus that' distinction in the smallest emergent unit." Read in the program's terms: what a base
   holds as information is carried by how far its distinctions are from one another, as its own law measures it (bond distance,
-  which on six-regular weaves is steps apart plus one), and a distinction itself, this versus that, is the least such separation.
+  which under the not-all-equal law is steps apart plus one on the endless six-regular weave, and on finite six-regular weaves
+  while the steps apart stay below a third of their margin), and a distinction itself, this versus that, is the least such
+  separation. Stated as the program's founding premise, with what hangs from it, in THEORY.md (section 1) and the Intuitions
+  guide's lesson 2.4 ([lesson](../INTUITIONS.md#24-distance-is-the-only-form-of-information)).
 - **Why.** Recorded at the owner's request on 17 November 2026, in reply to the first reading of `SPACE-ORDER-20261117-001`
   ([decision note](../research/SPACE-ORDER-20261117-001/space_order.md)), "space forces order, and only through steps apart". That
   reading was later withdrawn by its referee: the phases there follow the weave's local overlap structure, and steps apart is only
@@ -2522,6 +2525,11 @@ evidence: results and their status come from the records each entry links.
   excludes determines every relation tested. The plain reading is overturned; the reading survives only if distance includes
   orientation, which joint states each knot excludes. Open: whether the owner means that.
 - **History.**
+  - 2026-11-17 · Statement: the ruler's scope corrected (steps apart plus one is proved on the endless six-regular weave, and on
+    finite six-regular weaves while the steps apart stay below a third of their margin, beyond which only a lower bound is proved;
+    short unfilled cycles shorten bonds on small ones,
+    `KNOTS-ALONE-20261111-001`), logged in the corrections log; the owner's words and the status unchanged. The owner called it "the
+    entire premise of 'space from logic'", and it is now stated as the founding premise in THEORY.md and lesson 2.4.
   - 2026-11-17 · Under challenge: `DISTANCE-INFO-20261117-001` found the plain (pairwise) reading false at four distinctions;
     distance with orientation (bonds with their excluded states) determines every relation tested through six.
   - 2026-11-17 · Why and Rests on it revised: the SPACE-ORDER reading it was said in reply to was withdrawn by the referee; the

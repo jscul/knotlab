@@ -6,6 +6,13 @@ states its thesis and its main claims. Each claim carries one label for how it
 is supported, the date it was recorded or adopted, and links to its evidence
 in the knotlab repository.
 
+The program's founding premise is its owner's, in his words: "Distance is
+the only form of information. That's the entire basis of the 'this versus
+that' distinction in the smallest emergent unit." Section 1 states it with the
+thesis, and the [intuition guide, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information),
+shows what hangs from it. It is his premise and interpretation, not a result,
+and it is under test.
+
 The [intuition guide](INTUITIONS.md) explains the first claims at length, and
 the [list of results](RESULTS.md) gives every result with its proof. This page
 connects them: what the program assumes, what it has shown, and what is still
@@ -78,6 +85,47 @@ of relative existence, with no magnitude, direction, coordinate or metric.
 Paths, separation and extended distance come later, from networks of contacts.
 
 Evidence: [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance)
+
+### Distance is the only form of information
+
+**Premise** · 2026-11-17
+
+The program's owner, on 17 November 2026: "Distance is the only form of information.
+That's the entire basis of the 'this versus that' distinction in the smallest
+emergent unit." It was, he said, "the entire premise of 'space from logic'",
+and it "plays in with everything, like the dimensions from logic too". It is
+his premise and his interpretation. Nothing in the record proves it, no
+result is derived from it, and the protected thesis does not state it in these
+words.
+
+In the program's terms it joins two things the foundation already says. The
+knot's single touch is minimal contact-distance, the smallest relative
+existence, with no magnitude (the claim above); and a knot is joint
+information, a difference held by the whole and by no part. Read with the
+premise, the two are one, and there is no other kind of information; the owner
+has not put it in these words. Minimal contact-distance then appears with the
+first knot, not before, since logic itself presupposes no distance (the first
+claim of this section), and counted distances appear only where knots compose.
+Every counted distance is counted in knots,
+bonds or contacts: bond distance read from the allowed states, which counts one
+unit per loop along a chain of atoms and, under the not-all-equal law, measures
+steps apart exactly on the endless six-regular weave (section 5); counted
+contacts along a route, across time (assumption A40); and dimension, which the
+record reads from how fast the distinctions within a given bond distance grow.
+The owner's idea of axes that "expand out in measures of logic" is this
+premise turned on space; this line of work is parked, with one dimension
+grown from a rule and none yet selected by a law of its own.
+
+The premise is under challenge as assumption A97. Its first direct test found
+that bond distance between pairs is not all a base's information: from four
+distinctions up, bases with the same pairwise bond distances allow different
+states, while each bond together with which joint states it excludes
+determined every base tested through six distinctions (computed, referee
+pending). The test calls these two parts "how far" and "which way"; which way
+is which joint states a bond rules out, not a direction. Whether his "distance" includes which way is the owner's to say,
+and this page leaves the word open until he does.
+
+Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
 
 ### The knot test K1–K3
 
@@ -392,7 +440,9 @@ Evidence: [what a proof must contain](proofs/LOOP-HUB-20261025-001B/LOOP-HUB-202
 
 Logic allows every free complex, so whatever space there is must come from a
 law. These claims ask what uniform local laws make natively, and what the
-literature would draw it as.
+literature would draw it as. On the founding premise (section 1, "Distance is
+the only form of information"), the distances a law reads are all the
+information it holds, so this is where the premise is put to work.
 
 ### A law recognizes its graph; it does not create it
 
@@ -519,6 +569,51 @@ later records show that how knots meet is an input the law does not supply,
 `NAE-SURFACE-20261111-001`.)
 
 Evidence: [the knot intuition, question 9](docs/KNOT_INTUITION.md#open-questions)
+
+### Bond distance is a ruler where knots compose
+
+**Proved** · 2026-11-07
+
+Bond distance, the size of the least knot through two distinctions minus one,
+is read from the allowed states alone. Along a chain of atoms
+w(t−1) ∧ L(t) → w(t) it is exactly t − s + 1 from w(s) to w(t), one unit per
+loop, while a chain of two-place ties has no knot and so no bond distance.
+When finite sets of distinctions far enough apart are independent, as under
+parity laws with no ends, every knot is chained at the law's range, so bond
+distance is at least the separation divided by that range. Tseitin's parity law on a drawn
+grid of D steps has bond balls that grow like r^D, so the allowed states read
+the grid's dimension back. A rule that grows only at knots holding two loose
+ends grows an endless chain from one knot, along which bond distance counts one
+per step, with nothing drawn. Bond distance spaces nothing across a gate, a
+shared distinction one value of which satisfies both knots it joins: there a
+chain of knots can read what the literature calls a number line while bond
+distance reads none, and the register holds as assumption A39 that such
+distinctions are not spaced. These are the first exact distances under the
+founding premise (section 1); the core is classical shift theory, and what is
+new is reading a ruler from the least knots.
+
+Evidence: [proof](proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/proof.md), [the axis decision note](research/LOGIC-AXIS-20261107-001/logic_axis.md), [growth at loose ends](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md), [bond and chain distance](research/BOND-CHAIN-20261108-001/bond_chain.md), [Intuitions, lesson 4.6](INTUITIONS.md#46-dimensions-from-rules)
+
+### On knots alone, the knots measure their own meeting pattern
+
+**Proved** · 2026-11-11
+
+On the endless six-regular weave, with nothing given but the knots and which
+distinctions they share, the not-all-equal law reads the meeting pattern
+faithfully, and two distinctions d steps apart lie together in a bond of
+exactly d + 2 distinctions and in no smaller one: bond distance is steps apart
+plus one at every distance. So the law reads dimension two from its allowed
+states, with the meeting pattern given. On a finite six-regular weave whose
+unfilled cycles set a margin M, the orientable ones have states exactly when
+M ≥ 0, bond distance is steps apart plus one whenever the steps apart are
+below M/3 (beyond that only a lower bound is proved, and on small weaves short
+unfilled cycles do shorten bonds three steps apart), and the reading is
+faithful when M > 3. The allowed states are the
+literature's ground states of the triangular Ising antiferromagnet, and the
+height function behind the proof is known (Blöte and Hilhorst 1982); the
+statement of the ruler was not found in a bounded search.
+
+Evidence: [proof](proofs/RULER-20261111-001A/RULER-20261111-001A-P001_the_plane_ruler/proof.md), [finite weaves](proofs/RULER-FLAT-20261111-001A/RULER-FLAT-20261111-001A-P001_winding_heights/proof.md), [Intuitions, lesson 4.7](INTUITIONS.md#47-knots-alone)
 
 ## 6. Selection
 
@@ -852,7 +947,8 @@ Which uniform, local law, not written on a space in advance, gives a meeting
 pattern of knots that looks like a space of low dimension, with geometry as
 well as topology? Native laws found so far fix
 topology but neither orientation nor scale, and see a drawn three-manifold
-only through hubs.
+only through hubs. On the founding premise, the question asks when the
+distances a law's knots carry add up to a space.
 
 Evidence: [the knot intuition, question 9](docs/KNOT_INTUITION.md#open-questions), [Intuitions, lesson 7.2](INTUITIONS.md#72-open-questions)
 

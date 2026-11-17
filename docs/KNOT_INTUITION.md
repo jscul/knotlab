@@ -293,8 +293,10 @@ through steps apart", which its referee later withdrew: there the phases follow
 the weave's local overlap structure, and steps apart is only their lower bound.
 His reading does not rest on that study. In the program's terms it says that what a base holds is carried by how far
 its distinctions are from one another as its own law measures it (bond
-distance, steps apart plus one on six-regular weaves), and that a distinction
-is the least such separation. It continues his stance of 22 October that there
+distance, which under the not-all-equal law is steps apart plus one on the
+endless six-regular weave, and on finite six-regular weaves while the steps
+apart stay below a third of their margin; corrected 17 November 2026), and
+that a distinction is the least such separation. It continues his stance of 22 October that there
 are no values, only relations seeded from this versus that. It is an
 interpretation, recorded as assumption A97 with a test that could challenge it:
 two bases with equal bond distances for every pair but different allowed
@@ -309,6 +311,11 @@ distinctions and in a sample at seven, is each bond together with which joint
 states it excludes: how far, and which way. The reading survives if distance
 includes that orientation; whether the owner means it so is open
 ([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md)).
+The owner then said this was "the entire premise of 'space from logic'", and
+it is now stated as the program's founding premise, in his words and with
+what hangs from it, in THEORY.md (section 1, "Distance is the only form of
+information") and in lesson 2.4 of the Intuitions guide, with the word
+"distance" left open to his answer.
 
 ## Requirement and choice
 

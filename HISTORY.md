@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the founding premise stated; the ruler's scope restored in A97
+
+- The owner's founding premise, "Distance is the only form of information. That's the entire basis of the 'this versus that'
+  distinction in the smallest emergent unit", is now stated in his words in [THEORY.md](THEORY.md#distance-is-the-only-form-of-information)
+  and in a new lesson, [Intuitions 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), with what hangs from it and its
+  open test (A97, under challenge). It is his premise and interpretation, not a result. THEORY.md also gains two claims it lacked,
+  the rulers of `LOGIC-AXIS-20261107-001` and `RULER-20261111-001`.
+- Narrowed: A97 and its notebook paragraph said bond distance "on six-regular weaves is steps apart plus one". That is proved under
+  the not-all-equal law on the endless six-regular weave, and on finite six-regular weaves only while the steps apart stay below a
+  third of their margin; beyond that only a lower bound is proved.
+
 ## 17 November 2026: layered circuits, confirmed by the referee, with three narrowings
 
 - Why layered circuits need about d^0.4 phases (`LAYER-RANK-20261117-001`) was confirmed by its referee with no Block: the identity

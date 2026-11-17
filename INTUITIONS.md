@@ -9,6 +9,14 @@ This page states the intuitions behind that answer in plain terms. Each one is
 tied to what has been proved or checked in this repository, and each is
 labelled by what kind of claim it is.
 
+**The founding premise.** The program's question, whether logic can build
+space, rests on a premise the owner states in his own words: "Distance is the
+only form of information. That's the entire basis of the 'this versus that'
+distinction in the smallest emergent unit." It is his premise and his
+interpretation, not a result, and it is under test. Lesson 2.4 states it in
+the guide's words, once the knot it speaks of has been defined, and shows how
+the later lessons on distance and dimension hang from it.
+
 The page is written as a textbook, to be read in order. Its seven chapters are
 divided into lessons, and each lesson builds on the ones before it. Chapter 1
 sets up bits, rules and the notation, including how to read A, B → c, before
@@ -63,6 +71,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [2.1 The knot test](#21-the-knot-test)
   - [2.2 Knots on the cube](#22-knots-on-the-cube)
   - [2.3 What a knot hides](#23-what-a-knot-hides)
+  - [2.4 Distance is the only form of information](#24-distance-is-the-only-form-of-information)
 - [Chapter 3. Pairs and three places](#chapter-3-pairs-and-three-places)
   - [3.1 Two-place rules and the majority vote](#31-two-place-rules-and-the-majority-vote)
   - [3.2 Pairs cannot make a knot; three places can](#32-pairs-cannot-make-a-knot-three-places-can)
@@ -303,7 +312,9 @@ The picture itself:
   "equal" and "unequal" steps collapses to one free bit, or contradicts itself.
 - **What is real is what lies between bound loops.** The binding belongs to
   the pair, not to either loop. No part smaller than the whole shows it, and
-  erasing either loop removes it.
+  erasing either loop removes it. The foundation calls this binding
+  minimal contact-distance, and the owner's founding premise, that distance is
+  the only form of information, is lesson 2.4.
 - **A loop is a logical structure, not a spatial one.** What it brings to a
   binding is an *open distinction*: a bit it leaves free.
 
@@ -529,8 +540,9 @@ here is a claim about minds or biology.
 ## Chapter 2. The knot test
 
 Lesson 1.5 found a rule that lives in the whole and in no pair. This chapter
-turns that into a test, draws the test on the cube of states, and counts every
-knot on three variables.
+turns that into a test, draws the test on the cube of states, counts every
+knot on three variables, and ends with the owner's founding premise, that
+distance is the only form of information.
 
 ### 2.1 The knot test
 
@@ -689,10 +701,177 @@ the system allows.
 
 **Reading.** A distinction is the material and an atom is what holds material
 together. Digital hardware can build anything because its gates supply atoms.
+Lesson 2.4 gives the owner's premise about what kind of thing the information
+of this lesson is.
 
 ```bash
 PYTHONPATH=tools python3 -m knotlab patterns
 ```
+
+### 2.4 Distance is the only form of information
+
+**The premise.** On 17 November 2026 the owner stated, in his words, the
+premise that the program's question rests on: "Distance is the only form of
+information. That's the entire basis of the 'this versus that' distinction in
+the smallest emergent unit." It was, he said, "the entire premise of 'space
+from logic'", and it "plays in with everything, like the dimensions from logic
+too". It is the owner's premise and his interpretation. Nothing in the record
+proves it, no result is derived from it, and the register of assumptions holds
+it as A97, now under challenge (the last part of this lesson). This lesson
+says what it means in the words of lessons 1.1 to 2.3, and which later lessons
+hang from it.
+
+**This versus that.** Lesson 1.1 starts from one material, the distinction:
+two alternatives of which exactly one holds, with no space, no order and no
+number. It treats a distinction as the least piece of information, since it
+tells this from that. The guide reads the premise as saying what kind of thing
+that telling apart is: a distance. On this reading nothing has information on
+its own, as a value it carries; it has it only in its distance from what it is
+told apart from. That continues the owner's stance of 22 October 2026 that
+"everything is relational", that there are no values, only relations
+([TWIST-RELATIONS-20261022-001](research/TWIST-RELATIONS-20261022-001/twist_relations.md)).
+A lone distinction, though, stands apart from nothing. The program's
+foundation says that before emergence logical things "may be themselves, but
+they do not yet exist relative to one another"
+([the thesis](docs/FOUNDATIONAL_THESIS.md#transcendental-logical-base)). So the
+guide takes the premise to speak, in the owner's words, of the smallest
+emergent unit, not of a lone distinction; whether a lone distinction holds
+information on the premise is open.
+
+**The first touch.** The smallest emergent unit is the knot (lessons 1.4
+and 2.1): two loops bring open distinctions A and B, a contact c binds them,
+and the whole is constrained while no part is. The foundation says what that
+one binding makes: A is A, B is B, A differs from B, and c relates them without
+making them one. From A's side, B now exists relative to A through c, and from
+B's side, A exists relative to B through the same c. The foundation calls this
+single touch at once the first atomic logical topology and **minimal
+contact-distance**, "the smallest relative existence": one indivisible unit
+with no magnitude, direction, coordinate or metric, not a number of anything
+([the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance)).
+Lesson 2.3 measured what such a binding holds that no part holds, in bits:
+about 0.193 for the atom and one bit for parity. On the guide's reading, that
+information belongs to the knot's touch; whether the bits themselves are a
+distance is open (the last part of this lesson). The foundation already read
+emergence as joint information, "a difference held by the whole and by no
+part" ([the foundation's reading](docs/FOUNDATION_READING.md)), and the touch
+as minimal contact-distance. The guide reads the premise as making the two
+one, and as saying there is no other kind of information; the owner has not
+put it in these words.
+
+**Distances counted in knots.** Every distance the guide counts is counted in
+knots, bonds or contacts, and each has its own definition. The touch itself
+carries no number; the counts are the guide's.
+
+- **Bond distance (lesson 4.6).** Two distinctions are as far apart as the
+  smallest bond that contains them both, read from the allowed states alone,
+  so no ruler is drawn. Along a chain of atoms, w(t−1) ∧ L(t) → w(t), the bond
+  distance from w(s) to w(t) is t − s + 1, one unit for each loop between them
+  (proved,
+  [LOGIC-AXIS-20261107-001](research/LOGIC-AXIS-20261107-001/logic_axis.md)).
+  It spaces distinctions only where knots compose. Where two knots meet only
+  at a gate, a shared distinction one value of which satisfies both, no knot
+  crosses it, and the register holds as assumption A39 that distinctions
+  joined only through gates are not spaced at all
+  ([BOND-CHAIN-20261108-001](research/BOND-CHAIN-20261108-001/bond_chain.md)).
+- **Steps apart and the ruler (lesson 4.7).** Steps apart counts co-knotted
+  pairs on a meeting pattern, and comes with the pattern. Under the
+  not-all-equal law the knots measure it exactly on the endless six-regular
+  weave: bond distance is steps apart plus one at every distance (proved and
+  refereed, [RULER-20261111-001](research/RULER-20261111-001/ruler.md)). On a
+  finite six-regular weave the same is proved while the steps apart stay
+  below a third of the weave's margin, a number set by its unfilled cycles
+  (for the orientable ones,
+  [RULER-FLAT-20261111-001](research/RULER-FLAT-20261111-001/ruler_flat.md)),
+  and on small weaves short unfilled cycles do shorten some bonds three steps
+  apart
+  ([KNOTS-ALONE-20261111-001](research/KNOTS-ALONE-20261111-001/knots_alone.md)).
+- **Length across time.** A count of contacts along a route is a magnitude
+  the record reads, by the owner's ruling of 8 November 2026 (assumption A40,
+  its consequence checked by a frozen test), and distance across time was built from it in
+  two exact forms on networks of rings
+  ([DISTANCE-20261108-001](research/DISTANCE-20261108-001/distance.md)).
+
+Extended distance along paths, or a metric, comes later still: the foundation
+allows it only after paths and separation have been built from many contacts.
+
+**Dimensions from logic.** The owner's idea of 7 November 2026, "a number
+line/Cartesian plane where the dimensions themselves expand out in measures of
+logic" (lesson 4.6), is the premise turned on the axes themselves. The guide's
+meaning of dimension is built from distance alone: the distinctions within a
+given bond distance of one of them form a ball, and when balls grow like r^D
+the rules have dimension D (lesson 4.6). On the premise, a dimension is then a
+property of information (reading): how many distinctions lie within a given
+distance of one of them, as the distance grows. Where the record stands, with
+this line of work parked:
+
+- **One dimension, with nothing drawn (proved).** A rule that grows only at
+  knots holding two loose ends grows an endless chain from a single knot, and
+  bond distance counts one per step along it
+  ([OPEN-END-GROWTH-20261107-001](research/OPEN-END-GROWTH-20261107-001/open_end_growth.md)).
+- **Dimensions read back (proved).** Tseitin's parity law on a drawn grid of D
+  steps has balls that grow like r^D, so the allowed states recover the grid's
+  dimension (LOGIC-AXIS-20261107-001), and on knots alone the not-all-equal law
+  reads dimension two on the endless six-regular weave, with the meeting
+  pattern given (lesson 4.7).
+- **No tested law selects its own dimension (reading).** Every board of
+  dimension two was drawn or declared (assumption A51). When the board itself
+  is made of
+  distinctions, a law that declares no cycle never forces the commuting board
+  (proved,
+  [BOARD-DIST-20261110-001](research/BOARD-DIST-20261110-001/board_dist.md)).
+- **Three dimensions are open.** The networks of knots studied so far do not
+  tell apart some of the literature's different three-manifolds (proved for
+  gluings that ignore which places meet,
+  [HUB-DIMENSION-20261024-001](research/HUB-DIMENSION-20261024-001/dimension_three.md)), and the
+  reading drawn from that, that native space is two-dimensional topology, is
+  not proved.
+
+The record is consistent with the premise in one more way, read before the
+premise was written down (reading). Along an endless chain of atoms the unit
+of bond distance is one loop, one open distinction. Under growth by substitution,
+distance between existing distinctions grows exactly where the growth adds
+loose ends, and every gadget that lengthened distance added three loose ends
+and three open bits at each substitution, while bits added in closed cycles of
+knots lengthened nothing (LOGIC-AXIS-20261107-001).
+
+**What the premise does not say.** It does not put distance into logic: lesson
+1.1 assumes none, and logic comes before space
+([THEORY.md](THEORY.md#logic-comes-before-space)). On the premise, minimal
+contact-distance appears with the first knot, where information first stands
+relative to anything, and counted distances only where knots compose. It
+gives the first touch no number. And it does not settle what a
+system below emergence holds. A chain of two-place ties rules out states, as
+the chain of lesson 1.4 orders its members, yet it has no knot and so no bond
+distance at all (lesson 4.6). The foundation places such a chain below
+emergence, where nothing yet exists relative to anything; whether the premise
+counts what it rules out as information is the owner's to say.
+
+**The open challenge.** The premise was tested directly on the day it was
+recorded ([DISTANCE-INFO-20261117-001](research/DISTANCE-INFO-20261117-001/distance_info.md);
+computed, referee pending). Read as bond distance between pairs, distance is
+not the only form of information: that reading fails at the smallest size
+where it could. On four distinctions, three of the four not-all-equal knots on them
+allow 8 states and all four allow 6, yet in both every pair lies in a knot of
+three, so every pair is at bond distance 2. Which sets are bonds, and whether
+tied pairs are equal or unequal, do not repair it. What did determine every
+base tested, every not-all-equal base on up to six distinctions and a sample
+on seven, is each bond together with which joint states it excludes: how many
+distinctions the bond joins, and which of their joint states it rules out. The
+test's shorthand for the two is "how far" and "which way", and "which way" is
+not a direction. So the premise is not refuted by this test if the owner's
+"distance" includes which way, and fails it, as pairwise bond distance, if it
+is only how far. Which he means
+is his to say, and the guide leaves the word open until he does. If it
+includes which way, that is the knot's own: which joint states it rules out,
+not a direction supplied from outside, which the foundation excludes. The
+register lists one more challenge: is the full bit that parity hides a
+distance? See A97 in the
+[register](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information).
+
+**Reading.** Apart from the results it cites, this lesson is the owner's
+premise and the guide's reading of it. Lessons 4.6 and 4.7 make its distances
+exact, lesson 7.1 lists it among the program's readings, and lesson 7.2 asks
+the question it leads to.
 
 ## Chapter 3. Pairs and three places
 
@@ -1087,8 +1266,10 @@ itself: in the owner's terms, lines and functions are "shapes", and "shapes"
 have rules. A function's
 graph already obeys one ("A single input (x-value) cannot have two different
 outputs (y-values)", in the owner's words of 8 November), so the axes it is
-drawn on could obey rules too. This lesson says what of that idea is proved,
-what is computed, and what is still only an idea.
+drawn on could obey rules too. It is his founding premise turned on space
+(lesson 2.4): if distance is the only form of information, the axes are made
+of that information. This lesson says what of that idea is proved, what is
+computed, and what is still only an idea.
 
 **Infinite CNFs.** A CNF may have infinitely many variables and clauses, as
 long as each clause names finitely many variables. A law is **uniform** when
@@ -1106,10 +1287,12 @@ distinctions on which its allowed states, with every other variable forgotten
 (lesson 1.6), form a knot, and its size is its number of distinctions. Two
 distinctions are as far apart as the smallest bond that contains them both:
 their **bond distance** is that bond's size minus one. It is read from the
-allowed states alone, so no ruler is drawn. On a chain of atoms,
-w(t−1) ∧ L(t) → w(t), the bond distance from w(s) to w(t) is exactly t − s + 1,
-one unit for each loop between them, and every bond through the two contains
-those loops. A chain of two-place ties has no knot, and so no bond distance
+allowed states alone, so no ruler is drawn. It is the guide's exact measure
+of how far apart two distinctions are, and the reading of the owner's premise
+(lesson 2.4) that was tested first. On a chain of atoms,
+w(t−1) ∧ L(t) → w(t), the bond distance from w(s) to w(t) is exactly
+t − s + 1, one unit for each loop between them, and every bond through the
+two contains those loops. A chain of two-place ties has no knot, and so no bond distance
 (proved, [LOGIC-AXIS-20261107-001](research/LOGIC-AXIS-20261107-001/logic_axis.md)).
 
 **Dimension read from the rules.** The distinctions within bond distance r of
@@ -1857,6 +2040,8 @@ remains open, and the owner's picture of what the program's bases are part of.
     either loop is erased;
   - loops, their open distinctions and their witnesses are the units;
   - emergence begins at the first such binding;
+  - distance is the only form of information, the owner's founding premise,
+    under challenge as A97 (lesson 2.4);
   - distinctions are the material and atoms are the bonds;
   - a hidden bit has a depth.
 - **Ours, as results.** The classifications and constants marked as proved
@@ -1872,7 +2057,9 @@ remains open, and the owner's picture of what the program's bases are part of.
 
 1. **Space from a law.** Logic allows every free complex (lesson 3.4). Which
    uniform, local law, not written on a space in advance, gives a meeting
-   pattern that looks like a space of low dimension?
+   pattern that looks like a space of low dimension? On the owner's founding
+   premise (lesson 2.4), this asks when the distances a law's knots carry,
+   all the information the law has, add up to a space.
    One necessary condition is known: a law keeps a lasting record of its
    loops only if its contacts act as group elements (lessons 4.4 and 4.5).
    Lesson 4.6 shows how far the program has got: rules read a drawn grid's
@@ -2222,10 +2409,10 @@ that earlier records used in two senses.
   both values; each loop brings an open distinction to a knot. The intuition:
   the least thing that could be otherwise. Everything in the guide is built
   from distinctions and from rules about them, and nothing else is assumed,
-  not even a place to put them. The owner's reading, in his words (17 November
-  2026): "Distance is the only form of information. That's the entire basis of
-  the 'this versus that' distinction in the smallest emergent unit" (an
-  interpretation, assumption A97).
+  not even a place to put them. The owner's founding premise, in his words (17
+  November 2026): "Distance is the only form of information. That's the entire
+  basis of the 'this versus that' distinction in the smallest emergent unit"
+  (lesson 2.4: an interpretation, under challenge as assumption A97).
 - **Joint state.** A value for every variable, written as a string such as 110
   (lesson 1.1). The guide calls it a state for short.
 - **Flip graph.** The states of some variables, two of them linked when they
@@ -2291,6 +2478,18 @@ that earlier records used in two senses.
   a **classical knot** (lesson 6.3).
 - **Hub.** One variable shared by several separate relations, such as
   `(¬A ∨ c) ∧ (¬B ∨ c)`. Sharing identity is not a binding (lesson 2.1).
+- **Minimal contact-distance.** The foundation's name for the one touch of a
+  complete knot: the smallest relative existence, with no magnitude,
+  direction, coordinate or metric (lesson 2.4). The intuition: in a knot, A
+  and B first exist relative to each other, through c, without becoming one.
+  It is not a number. Bond distance and the guide's other counts come later,
+  from many knots.
+- **Information.** What a system's allowed states tell apart (lesson 2.4).
+  The part a whole holds and no part holds is joint information, measured in
+  bits in lesson 2.3: about 0.193 bits for the atom, one bit for parity. The
+  owner's founding premise is that all information is distance; whether that
+  distance is only how far, or also which joint states a knot excludes, is
+  open (lesson 2.4).
 - **Overlap.** Knots overlap when they share a distinction, a **shared
   distinction**. Nothing limits how many knots one knot overlaps, or which
   (lesson 2.1). The intuition: knots do not sit side by side in a space. They
@@ -2388,7 +2587,9 @@ that earlier records used in two senses.
   the set of distinctions within a given bond distance of one of them, and how
   fast balls grow gives a dimension (lesson 4.6). The intuition: two
   distinctions are as near as the least knot that ties them, so the ruler
-  comes from the rules and is never drawn.
+  comes from the rules and is never drawn. Read as all the information a base
+  holds, as the owner's founding premise would have it, bond distance between
+  pairs falls short from four distinctions up (lesson 2.4).
 - **Steps apart.** Two distinctions are d steps apart when the shortest row of
   co-knotted pairs leading from one to the other, each pair sharing a
   distinction with the next, has d pairs (lesson 4.7): the literature's graph
@@ -2639,7 +2840,7 @@ that earlier records used in two senses.
   bond distance.
 - **Block; descent; finite-reader state.** In patterns placed by maps on
   addresses, the addresses one address is sent to by the maps form its
-  **orbit** (the literature's word, as for a state under shifts). A **block**
+  orbit (the literature's word, as for a state under shifts; see Harmony). A **block**
   is a set of addresses at one level with their children one level down,
   holding the knots placed at that level whose members all lie in it; the
   block of an orbit holds every knot placed at the orbit, and blocks of
@@ -2728,6 +2929,7 @@ that earlier records used in two senses.
   | network | a network of loops (lesson 4.5) | a pattern of knots: knot pattern; the foundation's contact network, written in full |
   | space | what the program hopes to build, with native definitions (lesson 7.2) | three-fold space: three-regular contradiction; knot space: drawn knot pattern |
   | dimension | how fast balls grow (lesson 4.6) | the dimension of a hole or of a complex: the literature's, marked as such |
+  | distance | (unqualified, only in the owner's words: his founding premise, lesson 2.4, whose reach he has yet to settle) | the one touch of a knot: minimal contact-distance; read from the allowed states: bond distance; a count on the meeting pattern: steps apart; contacts along a route across time: counted length (A40), not the quantity THEORY.md's claim "Counted length" (1 November 2026) names, the logarithm of a count of states, read as a count; between states: Hamming distance, the literature's; along paths, or a metric: not yet built |
   | place | an argument position, as in three-place (lesson 3.2) | where a board holds a value: cell; the index of a stitch's members: lag (unlagged stitch, formerly "stitch at one place"); a block's position: its distinction (spare distinction, formerly "loose place") |
   | point | the owner's moving point, a state with a charge-like strength (his picture of learning), and otherwise the literature's | a variable: distinction |
   | line | (only in the owner's words and the literature's names, such as the number line and a Fano line) | a three-place knot: knot; an open chain: chain |

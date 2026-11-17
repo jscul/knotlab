@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "MEET-TRANSFER-20261117-001A-E001",
+  "ticket": "MEET-TRANSFER-20261117-001A",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does the navigating agent's learned memory carry over to a meeting pattern it never trained on, with reads normalized by how many knots meet at a distinction and counting no steps, trained on a mixture of meeting patterns?",
+  "inputs": "Degree-normalized break and make, relative ages and ranks, last-flipped flag, the where-candidates' flags, the violated fraction and the recurrent state.",
+  "forbidden_inputs": "The hidden planted state, any test or tuning instance during training, and any solver output.",
+  "mapping": "The 326-weight policy trained by OpenAI-ES on mixed meeting patterns (rand 2.1, rand 4.0, block 2.5; the oracle adds local window 10); arms D (4 seeds), Dl (4), Dr (2), Dn (2), and SCALE-MEMORY's L3sm reused.",
+  "primary_observable": "On held-out local window 10 at n = 3200, R = D's figure (geometric mean over seeds of the median over instances of five-run geometric means) / the best two-stage-tuned rule's, 99% paired bootstrap, with the inner-loop bar (R <= 2, solved fraction, 95th percentile ratio <= 3).",
+  "comparators_or_controls": "Novelty+ (top three settings), probSAT (poly or exp) and WalkSAT, tuned in two stages per cell; the oracle Dl, the rand-only Dr, the memoryless Dn and SCALE-MEMORY's L3sm.",
+  "resource_budget": "Twelve ES trainings (about 25 CPU-hours), tuning and test cells to n = 3200 with five runs per instance, CPU only, MemoryMax 16G under the shared runner.",
+  "first_executable_signal": "Gate G including G6 (run-for-run identity with SCALE-MEMORY's engine); G-learn on every training pattern.",
+  "stop_rule": "Stop at the frozen decision rule (the inner-loop bar for B191); keep every run.",
+  "nonclaims": "Planted instances only; no general SAT method; no claim about unrestricted solvers, P vs NP, native emergence or self-improving AI; knot structures fixed.",
+  "preregistration": "research/MEET-TRANSFER-20261117-001/preregistration.md"
+}

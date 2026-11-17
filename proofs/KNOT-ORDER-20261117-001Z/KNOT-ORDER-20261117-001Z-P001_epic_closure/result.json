@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "KNOT-ORDER-20261117-001Z-P001",
+ "kind": "proof",
+ "ticket": "KNOT-ORDER-20261117-001Z",
+ "proof": "KNOT-ORDER-20261117-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing KNOT-ORDER-20261117-001: ticket A (straddle lemma; local knots fail; end growth needs both ends, insertion only the neighbours; m + 1 placements; the states name them; the line is pairwise with an exact ruler; box betweenness on a grid holds two independent orders) and ticket B (8 of 8 predictions held); A97 gains a positive case built from knots; referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/KNOT-ORDER-20261117-001B/KNOT-ORDER-20261117-001B-E001_growth/contract.json": "Frozen",
+   "artifacts/KNOT-ORDER-20261117-001B/KNOT-ORDER-20261117-001B-E001_growth/results.json": "run output",
+   "proofs/KNOT-ORDER-20261117-001A/KNOT-ORDER-20261117-001A-P001_growing_a_line/manifest.json": "Proved",
+   "proofs/KNOT-ORDER-20261117-001A/KNOT-ORDER-20261117-001A-P001_growing_a_line/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -2565,13 +2565,16 @@ evidence: results and their status come from the records each entry links.
   states are the order's Alexandrov topology, and its specialization order and dimension are read back exactly (classical):
   that is what knots would have to build.
   The knot-law test `WEAVE-LAWS-20261117-001`
-  ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); referee pending) found that on the weave no tested knot
-  law has a pair-count distance that both carries its information and is a ruler. Only the not-all-equal class is pairwise
-  (proved). On the weave, every law putting one such knot on every up knot and one on every down knot is critical or frozen
+  ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); refereed) found that on the weave no tested knot
+  law has a pair-count distance that both carries its information and is a ruler. Only the not-all-equal class gives bases
+  determined by their pair counts (proved). On the weave, every law putting one such knot on every up knot and one on every down knot is critical or frozen
   (all 16; its referee). The laws that give a ruler there (OR; hard hexagons) keep part of their information in counts of three,
   and step outward only in envelope. Its referee's probes find a sparse mix of signed knots, and one law on a 2 × 2 cell, that
-  look disordered with every knot pairwise, so the narrowing holds for one-knot-per-orientation laws only
-  (`WEAVE-MIX-20261117-001` tests the rest).
+  look disordered with every knot in the not-all-equal class, so the narrowing holds for one-knot-per-orientation laws only.
+  `WEAVE-MIX-20261117-001` ([decision note](../research/WEAVE-MIX-20261117-001/weave_mix.md); referee pending) tested mixed
+  arrangements with periods up to three and did not settle them: its frozen test broke on the twist around the cylinder. Read
+  again post hoc, four arrangements look disordered, all with a distinction meeting an odd number of inconsistent bonds (two
+  3 × 1 gauge copies are the best candidates), and none with every count even; the referee's 2 × 2 law is unresolved.
   The order study `KNOT-ORDER-20261117-001`
   ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md); refereed) gave, under A98's reading (the disagreement
   count with exact additive betweenness), a case built from knots alone. A line of betweenness knots, grown one knot per step, is
@@ -2587,6 +2590,8 @@ evidence: results and their status come from the records each entry links.
   new line starts). The two orders are the arrangement's own, read back as its halfspaces, and the base is nearly frozen
   (2(r + c) − 2 states for r·c distinctions).
 - **History.**
+  - 2026-11-17 · The mixed weave case left open by `WEAVE-MIX-20261117-001` (inconclusive; post hoc candidates named); status
+    unchanged.
   - 2026-11-17 · The grid's case scoped after `GRID-GROW-R1` (Block on "the states name every placement"): the given arrangement
     says where each fill goes, and the states only where a new line starts; status unchanged.
   - 2026-11-17 · The knot-built cases scoped after `KNOT-ORDER-R1` (Narrowing): the ruler named (A98's), the line frozen by the

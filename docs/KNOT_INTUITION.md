@@ -373,6 +373,14 @@ probes find a sparse mix, and one law on a 2 × 2 cell, that look disordered
 with every knot in the not-all-equal class
 ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); scoped
 after its referee, 17 November 2026).
+Can such a mix be disordered (`WEAVE-MIX-20261117-001`, proof and frozen
+computation, referee pending)? Not settled. On a cylinder, two arrangements whose
+knots read the same bonds differently still differ by the twist around it, and
+the frozen test compared widths across that twist, so it called copies of the
+critical law disordered. Compared at widths of one parity, after the fact, four
+arrangements still look disordered, each with a distinction that meets an odd
+number of disagreeing bonds, and none with every count even
+([decision note](../research/WEAVE-MIX-20261117-001/weave_mix.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

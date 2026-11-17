@@ -108,7 +108,10 @@ def verdict(rw, rc):
 def test(d, out):
     rng = np.random.default_rng(20261117)
     data = {}
-    for k, r in load_results(d).items():
+    recs = {}
+    for one in d.split(","):  # the test ran in two parts: the fixed arms, then the tuned ones once tuning was done
+        recs.update(load_results(one))
+    for k, r in recs.items():
         if r.get("status") != "ok":
             continue
         res = r["result"]

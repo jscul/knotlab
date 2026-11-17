@@ -14,7 +14,7 @@
  },
  "public_inputs": {
   "code": "rules.py (sha256 7ea310dca857d82506e29a9819339164858fb74c9426a5dae94a6bd177c5ad6c), run.py (sha256 dd2cc72cc5d7413e41b92a2c0cdfdc37b76896ab46ac902bc17b16cee95ed8c8), checks.py (sha256 41ab6b41be229542a08460fe738d12adcb50f8ea1d955f56e54d55cf3e12f2eb); Python 3 with networkx 3.6.1 (the workspace .venv)",
-  "run": ".venv/bin/python -B run.py (and run.py --stress for the stress test)"
+  "run": ".venv/bin/python -B run.py --part NAME for each of E6, E1, E2, E3, E4, E5, E3c, E7, E8 (each its own process), then run.py --merge; run.py --stress for the stress test"
  },
  "forbidden_inputs": [
   "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
@@ -47,5 +47,14 @@
   "each prediction": "holds or fails as stated in the pre-registration"
  },
  "stop_rule": "One run (plus the non-blocking stress test); A97 status; referee hand-off; report.",
- "runtime": "Expected under an hour, one process, run in the background; registered in docs/LONG_RUNNING.md if it passes ten minutes."
+ "runtime": "Expected under an hour, one process, run in the background; registered in docs/LONG_RUNNING.md if it passes ten minutes.",
+ "amendments": [
+  {
+   "at": "2026-11-17T22:46Z",
+   "before_any_read_out": "of E1 beyond F1 and of E2-E8 (E6 and E1's F1 had printed when the first run was stopped)",
+   "change": "The first run (one process, parts in order) spent over an hour in E1's exact F2 run to n = 9: under F2 the classes multiply (650 at n = 7, about 9 s; n = 9 would take hours), the time going to isomorphism checks. The run was stopped. run.py now runs each part as its own process (--part NAME, then --merge) so that no part blocks another, and F2's exact run stops at n = 7. R6 (F2 at n = 4) is unaffected. rules.py, the rules, starts, readings, predictions and decision rules are unchanged.",
+   "run_sha256": "1a36095b638eecc74fb1df24c056412776b36557fadd59e5882311b845c9afb1",
+   "rules_sha256": "7ea310dca857d82506e29a9819339164858fb74c9426a5dae94a6bd177c5ad6c"
+  }
+ ]
 }

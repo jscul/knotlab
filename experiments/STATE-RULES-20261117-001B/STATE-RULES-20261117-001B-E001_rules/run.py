@@ -1,7 +1,7 @@
 """Frozen run for STATE-RULES-20261117-001B-E001: what uniform rules that read only the states grow, and whether they decide.
 
 Parts (see the contract and the pre-registration):
-- E1, exact distributions over classes from one knot B(0, 1, 2): F1, F2, F3, F3c to n = 9, U1 to n = 7, U3 and U3c to n = 6
+- E1, exact distributions over classes from one knot B(0, 1, 2): F1, F3, F3c to n = 9, F2 and U1 to n = 7, U3 and U3c to n = 6
   (c: each class of outcome counted once);
 - E2, conservation: F1 from the line, the 2 x 2 pattern and the 3-leaf star, 20 runs each to n = 14;
 - E3, F3 and F3c from one knot, 40 runs each to n = 16 (classes at n = 8 and 16; whether each step's top options are one class);
@@ -42,7 +42,7 @@ def two_way(rows):
 
 def e1():
     res = {}
-    for name, rule, K, nmax, count in (("F1", "fewest", 1, 9, "extensions"), ("F2", "fewest", 2, 9, "extensions"),
+    for name, rule, K, nmax, count in (("F1", "fewest", 1, 9, "extensions"), ("F2", "fewest", 2, 7, "extensions"),
                                        ("F3", "fewest", 3, 9, "extensions"), ("F3c", "fewest", 3, 9, "classes"),
                                        ("U1", "uniform", 1, 7, "extensions"), ("U3", "uniform", 3, 6, "extensions"),
                                        ("U3c", "uniform", 3, 6, "classes")):
@@ -236,7 +236,13 @@ def e8():
 SEED_N = {"line": 3, "fan6": 6, "nonfan6": 6}
 
 
+PARTS = {"E6": lambda: e6(), "E1": lambda: e1(), "E2": lambda: e2(), "E3": lambda: e3(), "E4": lambda: e4(), "E5": lambda: e5(),
+         "E3c": lambda: e3(tag="E3c", how="classes"), "E7": lambda: e7(), "E8": lambda: e8()}
+
+
 def main():
+    """Amendment 1 (before any read-out of E1 beyond F1, or of E2-E8): each part runs as its own process with --part, and --merge
+    joins their outputs into results.json; F2's exact run stops at n = 7."""
     os.makedirs(OUT, exist_ok=True)
     if "--stress" in sys.argv:
         t = time.time()
@@ -244,20 +250,25 @@ def main():
         out["seconds"] = round(time.time() - t)
         json.dump(out, open(os.path.join(OUT, "stress.json"), "w"), indent=1)
         return
-    t0 = time.time()
-    res = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
-    res["E6"] = e6()
-    res["E1"] = e1()
-    res["E2"] = e2()
-    res["E3"] = e3()
-    res["E4"] = e4()
-    res["E5"] = e5()
-    res["E3c"] = e3(tag="E3c", how="classes")
-    res["E7"] = e7()
-    res["E8"] = e8()
-    res["seconds"] = round(time.time() - t0)
-    json.dump(res, open(os.path.join(OUT, "results.json"), "w"), indent=1)
-    print("done", res["seconds"], "s")
+    if "--part" in sys.argv:
+        name = sys.argv[sys.argv.index("--part") + 1]
+        t0 = time.time()
+        res = {"part": name, "started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "result": PARTS[name]()}
+        res["seconds"] = round(time.time() - t0)
+        res["finished"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+        json.dump(res, open(os.path.join(OUT, f"part_{name}.json"), "w"), indent=1, default=str)
+        print("done", name, res["seconds"], "s")
+        return
+    if "--merge" in sys.argv:
+        res = {}
+        for name in PARTS:
+            part = json.load(open(os.path.join(OUT, f"part_{name}.json")))
+            res[name] = part["result"]
+            res.setdefault("parts", {})[name] = {k: part[k] for k in ("started", "finished", "seconds")}
+        json.dump(res, open(os.path.join(OUT, "results.json"), "w"), indent=1, default=str)
+        print("merged", len(PARTS), "parts")
+        return
+    raise SystemExit("use --part NAME (one of " + ", ".join(PARTS) + "), --merge or --stress")
 
 
 if __name__ == "__main__":

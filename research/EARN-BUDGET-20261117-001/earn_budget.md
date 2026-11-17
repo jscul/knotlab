@@ -4,8 +4,18 @@ Epic `EARN-BUDGET-20261117-001`, ticket `EARN-BUDGET-20261117-001A` (`SLOW-LOOP-
 2026-11-17. Evidence: **computed** on finite experiments with planted instances, every run kept. Frozen before any policy was tuned,
 comparator re-tuned or test instance run ([pre-registration](preregistration.md), freeze commit `fd9e95c8d`;
 [advisor review](advisor_review.md), "freeze with changes", all taken). One deviation came before the test: the charge was
-corrected after SLOW-LOOP's referee (below). **Referee pending; stress test pending** (n = 12,800). The canonical K1–K3 test is
-unchanged.
+corrected after SLOW-LOOP's referee (below). **Referee pending.** The stress cell (n = 12,800) has finished and is folded in below.
+The canonical K1–K3 test is unchanged.
+
+**Stress cell at n = 12,800 (folded in 2026-11-17):** `local` w20 and `heavy`, 20 fresh instances, five runs. NOV and PS were
+re-tuned at 12,800; the slow arms kept their 800-tuned policies.
+- **On `local` w20** the earned budget's win grows with size, to 0.18 [0.13, 0.21] (CPU 0.22) from 0.75 at 3,200:
+  - Erb, tuned without a local pattern, now wins too, at 0.48 [0.34, 0.56];
+  - the fixed batched budget is at 0.29, E/Gb = 0.63 [0.62, 0.66];
+  - one pass of static probing does best, at 0.11 [0.08, 0.15], so E/ST = 1.60 [1.28, 1.86].
+- **On `heavy`** E stays at parity (1.03), and static probing loses (1.31).
+- **What this changes.** SLOW-LOOP's obstruction, a budget tuned without a local pattern staying lazy, holds at 3,200 but not at
+  12,800. There the gain is large enough that even the cautious rule earns its way up. Part 3 below is therefore scoped to 3,200.
 
 ## The question, and the answer
 
@@ -43,9 +53,10 @@ instances of ten patterns at n = 3,200, two of them never run before the freeze.
    - **Why: the ramp.** The budget starts at 3% of the search's work and doubles at most once per rebuild. A rebuild waits until
      the moves found reach 3% of the classes. On `local` w40, where ties are rare but each cascades, E never collected a batch,
      never rebuilt and stayed at its floor in all 250 runs (R 1.03). On `local` w20 it reached the top budget in 18 of 250 runs.
-3. **A rule tuned without a local pattern does not carry over.** Erb, tuned on `rand` and `block` alone, is at parity everywhere
-   (0.81 [0.65, 1.05] on `local` w10). It is the same with the lazy tie rule (ErbL). SLOW-LOOP's obstruction stands for the
-   earned budget too: the tuning patterns set how slowly it ramps.
+3. **At 3,200, a rule tuned without a local pattern does not carry over.** Erb, tuned on `rand` and `block` alone, is at parity
+   everywhere (0.81 [0.65, 1.05] on `local` w10), and so is ErbL with the lazy tie rule. SLOW-LOOP's obstruction stands for the
+   earned budget at this size, because the tuning patterns set how slowly it ramps. At 12,800 Erb wins on `local` w20 (0.48; stress
+   cell above).
 4. **At the tuning size, earning was invisible.**
    - **At n = 800.** Under the corrected charge, E and the best fixed batched budget scored almost alike (−0.070 and −0.073 in mean
      log ratio).
@@ -176,7 +187,7 @@ All were made before any test instance ran:
 
 ## Limitations
 
-- **The instances.** Planted instances only, one density per pattern, n = 3,200 (12,800 pending).
+- **The instances.** Planted instances only, one density per pattern, n = 3,200, with two patterns at 12,800.
 - **The rules tried.** One earning rule (factor 2, one q per rebuild), random targets and tie probes only.
 - **The fast loop** was not re-tuned on the changed pattern.
 - **The charge** is still a model of the cost: one unit per sort operation. Whole-run CPU, which counts everything, agrees on every
@@ -191,7 +202,7 @@ All were made before any test instance ran:
   - `job.py`, `choose.py` and `analyze.py`;
   - the gates: `.venv/bin/python -B experiments/.../check.py`.
 - **Runs** (in `artifacts/EARN-BUDGET-20261117-001A/EARN-BUDGET-20261117-001A-E001_earn_budget/`):
-  - `retune/`, `retune_tune/`, `policy_v2/`, `oracle_a_v2/`, `oracle_b/`, `retune12800/`, `test/` and `stress/` (pending);
+  - `retune/`, `retune_tune/`, `policy_v2/`, `oracle_a_v2/`, `oracle_b/`, `retune12800/`, `test/` and `stress/`;
   - the choices `retuned.json`, `policies.json`, `oracle_policies.json` and `retuned12800.json`;
   - the summary `summary.json`.
 - **To rebuild the summary:**

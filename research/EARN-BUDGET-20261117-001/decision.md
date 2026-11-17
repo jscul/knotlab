@@ -1,6 +1,6 @@
 # Decision: EARN-BUDGET-20261117-001
 
-2026-11-17 · goals G15, G16 · takes `SLOW-LOOP-20261117-001#1` (sub-goal B191) · computed, **stress test pending** (n = 12,800),
+2026-11-17 · goals G15, G16 · takes `SLOW-LOOP-20261117-001#1` (sub-goal B191) · computed, stress cell (n = 12,800) folded in,
 referee pending · result note [earn_budget.md](earn_budget.md) · pre-registration [preregistration.md](preregistration.md) (frozen
 `fd9e95c8d`; charge corrected before the test, `13ae23679`)
 
@@ -11,7 +11,9 @@ referee pending · result note [earn_budget.md](earn_budget.md) · pre-registrat
   `local` w10 (0.56). It beats the best fixed batched budget tuned the same way.
 - **It ramps too slowly.** The fixed budget tuned on each cell itself reaches 0.16 to 0.18, a regret of 3.4 to 4.1 times. It never
   leaves its floor on `local` w40, where ties are rare but cascade.
-- **Without a local pattern in tuning it does not carry over** (Erb at parity).
+- **Without a local pattern in tuning it does not carry over at 3,200** (Erb at parity).
+- **At 12,800 (the stress cell, folded in)** E's win on `local` w20 grows to 0.18 (CPU 0.22), and Erb wins too (0.48), while
+  static probing does best (0.11) and `heavy` stays at parity. The gain, and the transfer, grow with size.
 - **By the frozen rule this is reading 2:** it works, but earning is not shown to matter, since E/GO = 1.65 > 1.5 on `local` w10.
 - **What is known.** The moves and the principle are known (probing, equivalent-literal substitution, productivity-driven
   inprocessing), and CaDiCaL solves these local patterns in at most 0.06 s.
@@ -48,7 +50,8 @@ batched merges remove per unit of slow cost), Assumed. Relied on A90 and A91, wh
 still running. So #1 stands.
 **Advisor:** Fable 5.2 reviewed the draft design and said "freeze with changes". All were taken ([advisor_review.md](advisor_review.md)).
 It was not used after the results.
-**Stress test pending:** T2, `local` w20 and `heavy` at n = 12,800 (registered `EARN-BUDGET-T2`).
+**Stress test:** T2, `local` w20 and `heavy` at n = 12,800 (registered `EARN-BUDGET-T2`), finished and folded in (above and in
+the note).
 **Referee:** pending; hand-off below.
 
 ## Referee hand-off

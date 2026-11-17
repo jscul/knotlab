@@ -1,0 +1,67 @@
+{
+ "schema_version": 3,
+ "artifact_id": "WEAVE-LAWS-20261117-001A-P001",
+ "kind": "proof",
+ "ticket": "WEAVE-LAWS-20261117-001A",
+ "proof": "WEAVE-LAWS-20261117-001A-P001",
+ "status": "passed",
+ "checks": {
+  "L1": true,
+  "L2": {
+   "NAE": {
+    "consistent": true,
+    "count_L6": 263640
+   },
+   "signed NAE, place 2 odd (consistent signs)": {
+    "consistent": true,
+    "count_L6": 263640
+   },
+   "signed NAE, place 1 odd": {
+    "consistent": false,
+    "count_L6": 64
+   },
+   "signed NAE, place 3 odd": {
+    "consistent": false,
+    "count_L6": 64
+   },
+   "NAE up, place 1 odd down": {
+    "consistent": false,
+    "count_L6": 64
+   },
+   "NAE up, place 3 odd down": {
+    "consistent": false,
+    "count_L6": 64
+   }
+  },
+  "L2_consistent_equal_NAE": true,
+  "NAE_L6": 263640,
+  "L3_hard_hexagons": {
+   "3": [
+    23,
+    23
+   ],
+   "4": [
+    202,
+    202
+   ],
+   "5": [
+    4217,
+    4217
+   ],
+   "6": [
+    162315,
+    162315
+   ]
+  },
+  "L3_ok": true,
+  "parity_counts": {
+   "3": 4,
+   "4": 1,
+   "5": 1,
+   "6": 4
+  },
+  "parity_ok": true,
+  "passed": true
+ },
+ "failures": []
+}

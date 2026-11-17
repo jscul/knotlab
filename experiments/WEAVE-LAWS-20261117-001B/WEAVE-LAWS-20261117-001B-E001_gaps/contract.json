@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WEAVE-LAWS-20261117-001B-E001",
+ "ticket": "WEAVE-LAWS-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which three-place knot laws on the six-regular weave are disordered, critical or frozen (row transfer spectra, widths 3-12, with a direct axis correlation), and whether N, single and pair counts determine each law's bases (census n = 4-6)?",
+ "definitions": {
+  "gap": "log_3(lambda_0 / |lambda_1|), lambda_1 the largest modulus below the top",
+  "disordered": "gap settles (< 10% change 9 to 12) above 0.05",
+  "critical": "gap falls, gap x width within 15% from 6 to 12",
+  "frozen or ordered": "states per distinction to 1, or gap falling faster than 1/width"
+ },
+ "public_inputs": {
+  "code": "lawlib.py (sha256 5d8ec8607161db915d4f1a9a523ca8e548a683c70473429a859942a4f38c6f77), run.py (sha256 e4797515be653c3339f2b4c7292faa4d02088343a69404bf57a6bf0469373e9f); numpy, scipy",
+  "run": ".venv/bin/python -B run.py"
+ },
+ "forbidden_inputs": [
+  "Changing laws, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P8 of research/WEAVE-LAWS-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "NAE (critical, conformal 1.238) and hard hexagons (Baxter's 1.39549).",
+ "predictions": {
+  "P1": "NAE gap x width to 1.238, within 0.03 at 12",
+  "P2": "consistent signed NAE critical",
+  "P3": "hard hexagons disordered, per-site within 0.001 of 1.39549 at 12",
+  "P4": "OR disordered",
+  "P5": "parity frozen",
+  "P6": "inconsistent signed NAE frozen or ordered (L=6 counts 64 seen before the freeze)",
+  "P7": "disordered laws: direct correlation rate within 10% of the gap",
+  "P8": "census: NAE injective 4-6; parity collides at 4; OR injective at 4, 5, first collision at 6"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "Under twenty minutes, one process."
+}

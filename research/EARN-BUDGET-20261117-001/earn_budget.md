@@ -1,10 +1,12 @@
-# A slow loop that earns its budget is safe everywhere and wins on new local patterns, but it ramps too slowly to take most of the gain
+# A slow loop that earns its budget is safe everywhere and wins on local patterns, including one never run before the freeze, but it ramps too slowly to take most of the gain
 
 Epic `EARN-BUDGET-20261117-001`, ticket `EARN-BUDGET-20261117-001A` (`SLOW-LOOP-20261117-001#1`; sub-goal B191; goals G15, G16),
 2026-11-17. Evidence: **computed** on finite experiments with planted instances, every run kept. Frozen before any policy was tuned,
 comparator re-tuned or test instance run ([pre-registration](preregistration.md), freeze commit `fd9e95c8d`;
 [advisor review](advisor_review.md), "freeze with changes", all taken). One deviation came before the test: the charge was
-corrected after SLOW-LOOP's referee (below). **Referee pending.** The stress cell (n = 12,800) has finished and is folded in below.
+corrected after SLOW-LOOP's referee (below). **Refereed: confirmed, no Block** ([report](referee-R1/report.md)). Its four wording
+fixes are folded in. Charge v2 leaves 0.2% of the work uncharged; corrected, R is 0.56 to 0.59 on the primary and 0.75 to 0.78 on
+`local` w20. The stress cell (n = 12,800) has finished and is folded in below.
 The canonical K1–K3 test is unchanged.
 
 **Stress cell at n = 12,800 (folded in 2026-11-17):** `local` w20 and `heavy`, 20 fresh instances, five runs. NOV and PS were
@@ -35,14 +37,16 @@ instances of ten patterns at n = 3,200, two of them never run before the freeze.
 
 **The answer has four parts.**
 
-1. **The earned budget wins on new local patterns and costs almost nothing where there is nothing to find.**
+1. **The earned budget wins on local patterns, including one never run before the freeze, and costs almost nothing where there
+   is nothing to find.**
    - **The wins.** E's charged work is 0.56 [0.51, 0.68] of the best fast rule on the primary pattern (`local` window 15,
-     density 3.5, never run before the freeze), 0.75 [0.61, 0.87] on `local` w20 and 0.56 [0.43, 0.81] on `local` w10. All three
-     are charged wins, CPU 0.61, 0.76 and 0.72.
+     density 3.5, never run before the freeze), 0.75 [0.61, 0.87] on `local` w20 (seen only in calibration), and 0.56 [0.43,
+     0.81] on `local` w10, which is one of E's tuning patterns (at 800). All three are charged wins, CPU 0.61, 0.76 and 0.72.
    - **Where nothing is found.** On `rand` 2.1, `rand` 3.0 and the heavy-tailed pattern it costs 3% (R_W 1.03, CPU 1.11 to 1.23),
      and 4% on `block`.
    - **Against the comparators.** It beats the best fixed batched budget tuned on the same patterns (E/Gb 0.68 to 0.86 on the three
-     winning cells, never worse elsewhere) and static probing on the primary (0.08).
+     winning cells, never worse elsewhere) and static probing on the primary (0.08). That figure is a bound: one pass of static
+     probing made Novelty+ stall in 18% of ST's runs there, so ST's figure is a lower bound and E/ST an upper one.
 2. **But it leaves most of the gain on the table.**
    - **The per-cell oracle.** Tuned on each cell's own instances, the best fixed batched budget is the most eager one (3 times the
      search's work) on the four local patterns at density 3.5 and 4.0. It reaches 0.16 to 0.18 on windows 15, 20 and 10, and 0.38

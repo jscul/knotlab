@@ -1,14 +1,14 @@
 # Decision: EARN-BUDGET-20261117-001
 
 2026-11-17 · goals G15, G16 · takes `SLOW-LOOP-20261117-001#1` (sub-goal B191) · computed, stress cell (n = 12,800) folded in,
-referee pending · result note [earn_budget.md](earn_budget.md) · pre-registration [preregistration.md](preregistration.md) (frozen
+refereed (confirmed, no Block; [report](referee-R1/report.md), wording fixes folded in) · result note [earn_budget.md](earn_budget.md) · pre-registration [preregistration.md](preregistration.md) (frozen
 `fd9e95c8d`; charge corrected before the test, `13ae23679`)
 
 **Headline.** A structure-changing slow loop that earns its budget from how much its own merges shrink the pattern was tuned on
 `rand`, `block` and `local` w10 at n = 800 and tested on fresh instances at 3,200.
 - **It is safe:** 3% overhead on every structure-poor pattern.
-- **It wins** on the never-run primary (`local` w15 at density 3.5: 0.56 [0.51, 0.68], CPU 0.61), on `local` w20 (0.75) and on
-  `local` w10 (0.56). It beats the best fixed batched budget tuned the same way.
+- **It wins** on the never-run primary (`local` w15 at density 3.5: 0.56 [0.51, 0.68], CPU 0.61), on `local` w20 (0.75), and on
+  `local` w10 (0.56), which is one of its own tuning patterns. It beats the best fixed batched budget tuned the same way.
 - **It ramps too slowly.** The fixed budget tuned on each cell itself reaches 0.16 to 0.18, a regret of 3.4 to 4.1 times. It never
   leaves its floor on `local` w40, where ties are rare but cascade.
 - **Without a local pattern in tuning it does not carry over at 3,200** (Erb at parity).
@@ -20,7 +20,7 @@ referee pending · result note [earn_budget.md](earn_budget.md) · pre-registrat
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: an earned budget (doubling and halving on the share merged per unit of slow cost) for the structure-changing slow loop | **Status:** Partially successful | Reading 2: charged wins on the unseen primary and two other local patterns, about 3% overhead on all structure-poor ones, better than the fixed batched budget; but 3.4–4.1 times the per-cell oracle, nothing on `local` w40, no transfer from structure-poor tuning |
+| This attempt: an earned budget (doubling and halving on the share merged per unit of slow cost) for the structure-changing slow loop | **Status:** Partially successful | Reading 2: charged wins on the unseen primary and two other local patterns, about 3% overhead on all structure-poor ones, better than the fixed batched budget; but 3.4–4.1 times the per-cell oracle, nothing on `local` w40, no transfer from structure-poor tuning at 3,200 (Erb wins at 12,800) |
 | Local direction: scheduling structure changes by their own yield | Continue, toward pricing a batch of moves before paying for its rebuild | The ramp is the obstruction. A rebuild waits for 3% of the classes and the budget doubles once per rebuild, so rare cascading ties (w40) are never tried and dense ones (w20) are tried late |
 | Broader exploration: inprocessing schedules for satisfiability | Known alternatives | CDCL solvers schedule inprocessing by effort relative to search and by productivity; CaDiCaL solves every local instance here in 0.06 s; clause weighting is untested here |
 | G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Capability gained | The first slow loop in the program tuned on some meeting patterns that wins on unseen ones without costing on structure-poor ones; the eagerness it would need is learned only where the gain already shows |
@@ -52,7 +52,9 @@ still running. So #1 stands.
 It was not used after the results.
 **Stress test:** T2, `local` w20 and `heavy` at n = 12,800 (registered `EARN-BUDGET-T2`), finished and folded in (above and in
 the note).
-**Referee:** pending; hand-off below.
+**Referee:** R1 confirmed, no Block, with wording fixes only, all folded in ([report](referee-R1/report.md)). Charge v2 leaves
+0.2% of the work uncharged; corrected, R is 0.56 to 0.59 on the primary and 0.75 to 0.78 on `local` w20. The hand-off is kept
+below.
 
 ## Referee hand-off
 

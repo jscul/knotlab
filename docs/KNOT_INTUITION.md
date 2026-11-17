@@ -2071,7 +2071,8 @@ So holes come in two kinds:
      - **Tuned on those patterns,** the slow loop learned to do almost nothing.
      - **Attention.** The knots the search kept returning to were no better places to look than random knots.
    - **Reading.** The search's attention marks where it is stuck, not where the pattern can be simplified. What tells the patterns
-     apart is how fast the slow loop's merges shrink the pattern, which is a fact about the pattern, not about the search. Both
+     apart, on a post hoc reading with one exception, is how fast the slow loop's merges shrink the pattern: a fact about the
+     pattern, not about the search. Both
      moves are known inference (probing and merging equivalent variables). What the test adds is that the owner's loop pays where
      knots meet densely within short runs, and that its eagerness has to be earned from its own results, not tuned elsewhere.
    - **Next.** A slow loop that earns its budget from how fast its moves shrink the pattern

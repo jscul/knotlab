@@ -55,3 +55,22 @@ separately).
 5. **Fairness.** Novelty+ at walk probability 0 was outside the frozen grids; the five-run check includes it. Check whether the
    frozen comparator was weaker than it should have been at 3,200 and 12,800.
 6. **Prior work** (`track.py objects-gate research/SCALE-MEMORY-20261116-001/preregistration.md`) and words.
+
+## Final report as sent
+
+2026-11-17 04:30 UTC, in the project thread (position and directions tables as above, shortened for the owner):
+
+> **Result: memory that doesn't count steps carries your agent to parity with the best hand-written rule at 4× and 16× its
+> training size, but not to a win.** With step-counted memory the agent collapsed at larger sizes, to 1.4× and 15× Novelty+'s
+> flips. With memory that reads each age against the oldest of the knot's three distinctions, it stays at 0.82 to 0.94 of
+> Novelty+'s flips, and 0.88 to 1.01 on a five-run recheck. Training on bigger patterns added nothing once the memory was
+> scale-free. It still costs about 5× the computing per step, and it still loses on the local pattern, where memory still hurts.
+>
+> **What this means for your second stage:** a slow loop that changes knot structures would put the agent on patterns it never
+> saw, and that's exactly where it still fails. So #1 comes first.
+>
+> **Limits and pending work:** one kept step-counted read (it only understates the agent), counts not adjusted for how many knots
+> meet at a distinction (this mainly weakens the local result), and single runs (the five-run check pulls the results toward
+> parity). The 51,200 cell is still running and the referee is pending.
+>
+> **Corrections:** none new. **Goals:** checkpoint added. **Assumptions:** unchanged.

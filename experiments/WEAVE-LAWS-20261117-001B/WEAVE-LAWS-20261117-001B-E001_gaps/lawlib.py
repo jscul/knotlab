@@ -66,13 +66,35 @@ def transfer(width, law):
     return ok
 
 
+def live_part(ok):
+    """Rows and columns that lie on an infinite path (repeatedly drop rows with no successor and columns with no
+    predecessor); the nonzero spectrum lives there.  Added after the freeze, before any read-out, when ARPACK failed on a
+    degenerate matrix (see the decision note)."""
+    keep = np.ones(len(ok), dtype=bool)
+    while True:
+        sub = ok[np.ix_(keep, keep)]
+        good = sub.any(axis=1) & sub.any(axis=0)
+        if good.all():
+            return ok[np.ix_(keep, keep)]
+        idx = np.flatnonzero(keep)
+        keep[idx[~good]] = False
+        if not keep.any():
+            return ok[:0, :0]
+
+
 def spectrum(width, law, k=10):
-    ok = transfer(width, law)
-    if width <= 9:
+    ok = live_part(transfer(width, law))
+    if len(ok) == 0:
+        ev = np.array([0.0])
+    elif len(ok) <= 1024:
         ev = np.linalg.eigvals(ok.astype(np.float64))
     else:
         M = sp.csr_matrix(ok.astype(np.float64))
-        ev = eigs(M, k=k, which="LM", return_eigenvectors=False, tol=1e-12, maxiter=20000)
+        try:
+            ev = eigs(M, k=min(k, len(ok) - 2), which="LM", return_eigenvectors=False, tol=1e-12, maxiter=20000,
+                      v0=np.ones(len(ok)))
+        except Exception:
+            ev = np.linalg.eigvals(ok.astype(np.float64))
     mags = np.sort(np.abs(ev))[::-1]
     out = {"width": width, "lambda0": float(mags[0]) if mags[0] > 0 else 0.0, "nonzero": bool(mags[0] > 1e-12)}
     if mags[0] > 1e-12:
@@ -85,7 +107,9 @@ def spectrum(width, law, k=10):
             out["lambda1_abs"] = 0.0
             out["gap_log3"] = float("inf")
         out["per_site"] = float(mags[0] ** (1 / width))
-    out["torus_states"] = int(round(float(np.trace(np.linalg.matrix_power(ok.astype(object), width))))) if width <= 6 else None
+    full = transfer(width, law)
+    out["live_rows"] = int(len(ok))
+    out["torus_states"] = int(np.trace(np.linalg.matrix_power(full.astype(object), width))) if width <= 6 else None
     return out
 
 
@@ -132,8 +156,9 @@ def axis_correlation(width, law, rmax=24):
     """Connected (Pearson) correlation of distinction (0, 0) with (0, r) on the infinite cylinder of the given width,
     from the leading right and left eigenvectors of the row transfer matrix; dense, width <= 12."""
     T = sp.csr_matrix(transfer(width, law).astype(np.float64))
-    vals, R = eigs(T, k=1, which="LM", tol=1e-13, maxiter=50000)
-    valsL, Lv = eigs(T.T.tocsr(), k=1, which="LM", tol=1e-13, maxiter=50000)
+    v0 = np.ones(T.shape[0])
+    vals, R = eigs(T, k=1, which="LM", tol=1e-13, maxiter=50000, v0=v0)
+    valsL, Lv = eigs(T.T.tocsr(), k=1, which="LM", tol=1e-13, maxiter=50000, v0=v0)
     lam = vals[0].real
     r = np.abs(R[:, 0].real)
     l = np.abs(Lv[:, 0].real)

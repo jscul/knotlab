@@ -35,5 +35,14 @@
   "each prediction": "holds or fails as stated in the pre-registration"
  },
  "stop_rule": "One run; A97 status; referee hand-off; report.",
- "runtime": "Under twenty minutes, one process."
+ "runtime": "Under twenty minutes, one process.",
+ "amendments": [
+  {
+   "at": "2026-11-17T19:47Z",
+   "before_any_read_out": true,
+   "change": "lawlib.py: the frozen run crashed at once with ARPACK error -9 (a zero starting vector) on a degenerate transfer matrix; spectrum() now trims the matrix to its live rows and columns, uses dense eigenvalues up to 1,024 live rows and Arnoldi with a ones starting vector (dense fallback) above; axis_correlation uses the same starting vector. No law, reading, prediction or decision rule changed.",
+   "lawlib_sha256": "2ba5e5532aa93992e95c0b890ab448451c47e10e69a4c26c885bec4e3b57bf72",
+   "run_sha256": "e4797515be653c3339f2b4c7292faa4d02088343a69404bf57a6bf0469373e9f"
+  }
+ ]
 }

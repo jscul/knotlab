@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "experiment_id": "DISTANCE-ORDER-20261117-001B-E001",
+ "ticket": "DISTANCE-ORDER-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does the disagreement count (or bond distance, or steps apart) give an order with nothing skipped on the not-all-equal thread, a chain of knots sharing one distinction, the six-regular weave (L = 6, 9, 12) and a threshold-line control; does tau = -log_3 |1 - 2d/N| read steps apart; what betweenness occurs among all not-all-equal relations on 4 to 6 distinctions?",
+ "definitions": {
+  "disagreement count": "number of allowed states in which two distinctions take different values",
+  "P1": "a whole multiple of the least positive value, with a unit step toward every farther distinction",
+  "strict betweenness": "D(o,w) = D(o,v) + D(v,w) with both parts positive",
+  "gap": "a pair with nothing strictly between",
+  "chain": "o, v1, ..., vk with each v_i strictly between o and v_(i+1), counted with o",
+  "bond": "glossary's: three or more distinctions"
+ },
+ "public_inputs": {
+  "code": "order.py (sha256 5048db3af89bf37373136d297c7439b220f64ca5f4520aa067a4f25e82a502b6), run.py (sha256 49a521f61b2897e87a24c88e4d2e847c933c0403c456a6f5e7cf680d0f5852cd); DISTANCE-INFO-20261117-001A's tables.py for the relation list; numpy",
+  "run": ".venv/bin/python -B run.py"
+ },
+ "forbidden_inputs": [
+  "Changing bases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions C, E1-E8 of research/DISTANCE-ORDER-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "The threshold line b4, whose counts are 2|i - j| by statement 5 (C).",
+ "predictions": {
+  "C": "b4: P1 unit 2, gap path, chain 10, with flips 11 and 10 without the start's flip",
+  "E1": "disagreement count fails P1 on b1, b2, b3",
+  "E2": "no strict betweenness among distinctions on b1, b2, b3",
+  "E3": "with flips chain 4 (3 without the start's flip) on b1, b2; b3 lower confidence",
+  "E4": "b2: tau = steps apart",
+  "E5": "b1: tau does not increase with steps apart",
+  "E6": "b3: rate 2/3 at one step; from v(0,0) to v(r,0) below 1/2 iff r = 0 mod 3",
+  "E7": "b2 four knots: bond distance = steps + 1, fails P1, no betweenness",
+  "E8": "b5: no strict betweenness at n = 4, some at 5 and 6; chain bound holds"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "Under twenty minutes, one process."
+}

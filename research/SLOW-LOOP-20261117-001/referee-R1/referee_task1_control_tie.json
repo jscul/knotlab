@@ -1,0 +1,81 @@
+{
+ "instances": 400,
+ "totals": {
+  "ties_checked": 45064,
+  "shadows_checked": 26203,
+  "reduces": 512,
+  "bij_checks": 512,
+  "dropped_checked": 41622,
+  "kept_checked": 14956,
+  "contra_probe": 5,
+  "contra_reduce": 395,
+  "probes": 3990,
+  "rounds": 1330,
+  "skipped_generator": 4
+ },
+ "violations": 55206,
+ "by_kind": {
+  "rand": {
+   "instances": 80,
+   "ties": 9694,
+   "shadows": 4637,
+   "reduces": 111,
+   "violations": 11347,
+   "n_allowed_median": 14.0,
+   "instances_where_probing_reached_true_classes": 28
+  },
+  "block": {
+   "instances": 80,
+   "ties": 4217,
+   "shadows": 5246,
+   "reduces": 136,
+   "violations": 5712,
+   "n_allowed_median": 80.0,
+   "instances_where_probing_reached_true_classes": 24
+  },
+  "local_w10s": {
+   "instances": 80,
+   "ties": 7852,
+   "shadows": 4793,
+   "reduces": 95,
+   "violations": 9809,
+   "n_allowed_median": 44.0,
+   "instances_where_probing_reached_true_classes": 12
+  },
+  "local_w40s": {
+   "instances": 80,
+   "ties": 13768,
+   "shadows": 5379,
+   "reduces": 79,
+   "violations": 16316,
+   "n_allowed_median": 10.0,
+   "instances_where_probing_reached_true_classes": 17
+  },
+  "embed": {
+   "instances": 76,
+   "ties": 9533,
+   "shadows": 6148,
+   "reduces": 91,
+   "violations": 12022,
+   "n_allowed_median": 71.0,
+   "instances_where_probing_reached_true_classes": 0
+  }
+ },
+ "seconds": 6.3,
+ "n_range": [
+  10,
+  20
+ ],
+ "mutant": "tie",
+ "violation_kinds": {
+  "tie fails": 45059,
+  "reduce reported a contradiction": 395,
+  "class tie fails": 396,
+  "lift is not one-for-one onto A": 396,
+  "dropped knot is contra": 8826,
+  "sl_probe reported a contradiction": 5,
+  "shadow fails": 129
+ },
+ "instances_with_violation": 355,
+ "instances_with_finds": 385
+}

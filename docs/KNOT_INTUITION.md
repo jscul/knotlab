@@ -308,11 +308,12 @@ the four knots on four distinctions and all four give the same distances and
 different allowed states, and at six distinctions 10,012 distance tables serve
 97,248 bases; which sets are bonds does not repair it. Read as how often two
 distinctions differ, the number of allowed states in which this and that take
-different values, a pairwise distance determined every base tested through six
-distinctions and in a sample at seven (its referee's reading, recomputed;
-computed, not proved). The study's first reading, that each bond with the joint
+different values, a pairwise distance determined every base tested on four to
+six distinctions and in a sample at seven (its referee's reading, recomputed;
+proved the same day for every size from four, and false at three, where one
+knot and no knot share the table; narrowed 17 November 2026). The study's first reading, that each bond with the joint
 states it excludes was needed, "how far, and which way", is withdrawn: it
-counted two-place ties as bonds, and the differ count needs no such addition
+counted two-place ties as bonds, and the disagreement count needs no such addition
 ([decision note](../research/DISTANCE-INFO-20261117-001/distance_info.md);
 corrected 17 November 2026). Asked whether his distance includes which way, the
 owner answered that it has none: "Distance is topological, so it will have
@@ -320,8 +321,19 @@ some starting point, then go off outward from there. So for example, 0 might
 be a starting point on the number line. In my view, there isn't really any
 such thing as "direction". Everything is just "relative", but it's also
 topological, so if you're at 3 on the number line, you can't just skip 4 to
-get to 5, so there is an order." Whether the candidate distances give such an
-order, with nothing skipped, is the next test.
+get to 5, so there is an order." The next test (`DISTANCE-ORDER-20261117-001`,
+proof and frozen computation) found that the knot decides where order lives.
+In the disagreement count, "c lies between a and b" is exactly the three-place
+constraint that no allowed state has a = b ≠ c, so order is carried by knots,
+and it costs states: a chain of m distinctions allows at most 2m of their joint
+values. On a base whose knots form no cycle, −log₃ |1 − 2d/N| equals steps
+apart, so one distance read from the states goes outward one step at a time and
+carries the base. With cycles of knots the two jobs split. On the thread, a
+chain of knots and the six-regular weave no distinction lies between two others
+in the disagreement count, and its rates rise and fall with steps apart (on the
+weave, 2/3 one step away and below 1/2 at every third distinction of a row),
+while steps apart and bond distance keep the order but not all the information
+([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

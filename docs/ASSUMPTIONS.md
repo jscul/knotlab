@@ -152,6 +152,7 @@ evidence: results and their status come from the records each entry links.
 | [A95](#a95--two-fast-loops-are-compared-at-the-same-proofs-per-flip-in-flips-and-at-the-same-share-of-work-on-proofs-in-work) | Two fast loops are compared at the same proofs per flip in flips, and at the same share of work on proofs in work | measure | Assumed |
 | [A96](#a96--a-role-preserving-shuffle-of-a-weave-removes-its-steps-apart-and-nothing-else-that-matters) | A role-preserving shuffle of a weave removes its steps apart and nothing else that matters | scope | Overturned |
 | [A97](#a97--distance-is-the-only-form-of-information) | Distance is the only form of information | interpretation | Under challenge |
+| [A98](#a98--the-owners-no-skipping-is-read-as-betweenness-of-a-pairwise-count-with-flips-counted) | The owner's "no skipping" is read as betweenness of a pairwise count, with flips counted | reading | Assumed |
 
 ## Entries
 
@@ -2531,9 +2532,19 @@ evidence: results and their status come from the records each entry links.
   tables for 16 relations; at six, 10,012 for 97,248), and which sets are bonds does not repair it. How often two distinctions
   differ, the number of allowed states in which they take different values, determined every base tested through six and every
   sampled one at seven (its referee `DISTANCE-INFO-R1`, recomputed by the study; computed, not proved). The test covers bases of up
-  to seven distinctions, not the smallest emergent unit. Open, after the owner's answer: whether that differ count determines every
-  base, and whether the candidate distances give an order in which nothing is skipped.
+  to seven distinctions, not the smallest emergent unit. Followed by `DISTANCE-ORDER-20261117-001`
+  ([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md)), after the owner's answer, with the reading of "no
+  skipping" in A98. Proved: the disagreement count determines every not-all-equal base from four distinctions, and fails at three
+  (one knot against none, told apart only by the rates); in it, "c lies between a and b" is exactly a three-place constraint, and a
+  chain of m distinctions allows at most 2m joint values. On bases whose knots form no cycle, −log₃ |1 − 2d/N| equals steps apart,
+  so one distance read from the states is built from unit steps and carries the base. Computed: on the thread, a chain of knots and
+  the six-regular weave, no distinction lies between two others in the disagreement count, while steps apart and bond distance,
+  which have the order, do not carry everything. The reading holds where knots form no cycle and splits where they do. Open:
+  whether some other reading of the weave's states gives both.
 - **History.**
+  - 2026-11-17 · Narrowed by `DISTANCE-ORDER-20261117-001` (proof and frozen computation): holds where knots form no cycle, and
+    splits between two distances where they do; status unchanged. The word "differ count" replaced by "disagreement count"
+    throughout.
   - 2026-11-17 · Statement: the ruler's scope corrected (steps apart plus one is proved on the endless six-regular weave, and on
     finite six-regular weaves while the steps apart stay below a third of their margin, beyond which only a lower bound is proved;
     short unfilled cycles shorten bonds on small ones,
@@ -2550,3 +2561,31 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-17 · Why and Rests on it revised: the SPACE-ORDER reading it was said in reply to was withdrawn by the referee; the
     owner's words are unchanged.
   - 2026-11-17 · Added at the owner's request, in his words.
+
+### A98 · The owner's "no skipping" is read as betweenness of a pairwise count, with flips counted
+
+**Assumed** · 2026-11-17 · reading
+
+- **Statement.** In `DISTANCE-ORDER-20261117-001`, the owner's "if you're at 3 on the number line, you can't just skip 4 to get to
+  5, so there is an order" is read on a candidate pairwise distance D in four ways:
+  - D is built from unit steps: it is a whole multiple of its least value, with a unit step toward every farther distinction;
+  - betweenness: v lies between o and w when D(o, w) = D(o, v) + D(v, w);
+  - the gap graph of pairs with nothing between, which is a path for a line;
+  - the longest chain from a start, each member between the start and the next.
+
+  The flip of a distinction, the same distinction read with its values exchanged, counts as a distinction for betweenness.
+- **Why.** Taken by default in that epic
+  ([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md)), on the advisor's advice, as the literature's metric
+  betweenness and graphic metrics. A level-by-level test was dropped because an exact least value is attained by too few pairs.
+  Flips are counted because the owner says there is no direction: betweenness on distinctions alone changes when one distinction's
+  values are renamed.
+- **Rests on it.** That epic's reading that the disagreement count has no order on the thread, the knot chain and the six-regular
+  weave, and so A97's narrowing to bases whose knots form no cycle.
+- **Challenge.** Read "no skipping" another way and test it on the same bases. Two candidates:
+  - order by levels from a start, where reaching a farther level needs a member of each nearer level, measured on a coarsened
+    count;
+  - betweenness of sets rather than of single distinctions.
+
+  Or ask the owner whether his order is between three distinctions, as a knot is, or in levels from a starting point.
+- **History.**
+  - 2026-11-17 · Added by `DISTANCE-ORDER-20261117-001`.

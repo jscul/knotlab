@@ -14,8 +14,9 @@ unit", one knot, where every reading here determines the allowed states triviall
   It fails already at four distinctions, and at six, 10,012 tables cover 97,248 not-all-equal bases. Which sets of distinctions are
   bonds is not enough either.
 - **How often two distinctions differ**, the number of allowed states in which this and that take different values, is a plain
-  pairwise distance with no sets and no signs. It determined every not-all-equal base through six distinctions, and every sampled
-  one at seven. This is the referee's reading (e), recomputed here with this study's code. It is computed, not proved, and it was
+  pairwise distance with no sets and no signs. It determined every not-all-equal base on four to six distinctions, and every sampled
+  one at seven. *Narrowed and proved the same day (`DISTANCE-ORDER-20261117-001`): it determines every base from four distinctions
+  on, and fails at three, where one knot and no knot share the table.* This is the referee's reading (e), recomputed here with this study's code. It is computed, not proved, and it was
   not a frozen prediction.
 
 The first answer of this note is withdrawn (referee R1, Block). It said that each bond together with the joint states it excludes,
@@ -54,7 +55,7 @@ code gives the same at n ≤ 6 and on its own 258,384 at n = 7.
 **The smallest failures.**
 - **Four distinctions, pairwise bond distance.** Three of the four knots on four distinctions allow 8 states; all four allow only
   the 6 states of weight two. In both, every pair lies in a knot of three, so every pair is at bond distance 2. The tables agree and
-  the allowed states differ, and the two are not the same up to renaming (8 against 6 states). The differ counts tell them apart:
+  the allowed states differ, and the two are not the same up to renaming (8 against 6 states). The disagreement counts tell them apart:
   in the first, the distinction shared by all three knots differs from each other one in 6 of the 8 states, and the rest differ in
   4; in the second, every pair differs in 4 of the 6.
 - **Five distinctions, distance between sets.** A base whose states are a single state and its flip has every pair tied, at
@@ -71,9 +72,9 @@ any reading. It fails for pairwise bond distance, and holds, in every base teste
 stays under challenge, now with the owner's answer: his distance has no direction and gives an order in which nothing is skipped.
 
 **What the knot picture explained.** "This versus that" can be read pairwise in two ways. Bond distance asks how large a knot it
-takes to tie this to that. The differ count asks in how many allowed states this is not that. The census shows that the first loses
+takes to tie this to that. The disagreement count asks in how many allowed states this is not that. The census shows that the first loses
 information the second keeps. In the literature's terms, with values written as ±1, the number of allowed states minus twice the
-differ count is the sum of the two values' product over the allowed states. So the differ table is the allowed states' pair
+disagreement count is the sum of the two values' product over the allowed states. So the disagreement table is the allowed states' pair
 correlations, their degree-two Fourier coefficients up to scale; the odd ones vanish, since every relation here is closed under
 flipping all values. A set of joint states is not determined by such low-degree data in general, so that these not-all-equal
 relations are, in the range tested, would be a property of the law; it is the next study's question. The rest is classical. Bonds
@@ -142,16 +143,16 @@ recomputes exactly. Folded in the same day; each item is logged in `docs/CORRECT
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: is distance the only form of information | **Status:** Successful (refereed, corrected) | Pairwise bond distance fails at n = 4; how often two distinctions differ determined every base tested through n = 6 and sampled at n = 7 |
-| Local direction: distance as information | Promising | The owner's distance has no direction and gives an order with nothing skipped; whether the differ count always determines the base, and which distances have no gaps, is the next study |
+| Local direction: distance as information | Promising | The owner's distance has no direction and gives an order with nothing skipped; whether the disagreement count always determines the base, and which distances have no gaps, is the next study |
 | Broader exploration: what determines a relation | Known alternatives | Prime implicates determine it; binary projections as sets and shattered sets do not; pair correlations do here, which is not true of sets in general |
 | Long-term goal: G1 and G16 | Obstruction learned | Bond distance between pairs is not all a base holds; a second pairwise distance, read from the allowed states alone, was in every case tested |
 
 **Next step:** Continue. On the coordinator's go-ahead (17 November, 18:09 UTC), the next study tests the owner's no-skipping
-property for the candidate distances, and tries to prove or refute that the differ count determines every not-all-equal base.
+property for the candidate distances, and tries to prove or refute that the disagreement count determines every not-all-equal base.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Does the differ count determine every not-all-equal relation, and does each candidate distance (differ count, bond distance, steps apart) have no gaps, so that betweenness gives an order from any starting distinction | 3/3, would test the owner's premise as he now states it | 2/3, a census to n = 7 or 8 with a proof attempt beside it | Freeze readings and predictions with the advisor → stop at a proof or a counterexample for each | Selected |
+| 1 | Does the disagreement count determine every not-all-equal relation, and does each candidate distance (disagreement count, bond distance, steps apart) have no gaps, so that betweenness gives an order from any starting distinction | 3/3, would test the owner's premise as he now states it | 2/3, a census to n = 7 or 8 with a proof attempt beside it | Freeze readings and predictions with the advisor → stop at a proof or a counterexample for each | Selected |
 | 2 | Bonds with excluded states, ties counted, as an exact statement | 1/3, superseded by direction 1 | 2/3 | — | Retired |
 
 **Corrections:** a Block and two Narrowings from referee R1, and one Not a block; all logged.

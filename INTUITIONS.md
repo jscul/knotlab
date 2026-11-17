@@ -877,19 +877,32 @@ computed, and refereed with a Block on its first reading,
   bond distance 2. The same distances, different states: read as the guide's
   bond distance, distance is not the only form of information, and that
   reading fails at the smallest size where it could.
-- **How often two distinctions differ passes every case tested (computed).**
-  Count, for each pair, the allowed states in which the two take different
-  values. That table, read from the allowed states alone, determined every
-  not-all-equal base on up to six distinctions and every one of 46,445 sampled
-  on seven. It is not proved for all sizes, and it is a count across the
-  allowed states, not an extended or metric distance in the program's sense,
-  which the foundation allows only after paths and separation are built.
+- **How often two distinctions differ determines the base (proved).** Count,
+  for each pair, the allowed states in which the two take different values:
+  the disagreement count. That table, read from the allowed states alone,
+  determines every not-all-equal base from four distinctions on. On three
+  distinctions it does not: one knot and no knot both give every pair 4, and
+  only the rates, 4 of 6 against 4 of 8, tell them apart. It is a count across
+  the allowed states, not an extended or metric distance in the program's
+  sense, which the foundation allows only after paths and separation are built.
 
-So one candidate fails and one has passed every case tested. The owner's
-answer above rules out direction and asks for an order in which nothing is
-skipped; whether either candidate gives such an order is being checked, and the
-guide leaves the choice open until it is. The register lists one more question: is the full
-bit that parity hides a distance? See A97 in the
+So one candidate fails and one carries everything. The owner's answer above
+rules out direction and asks for an order in which nothing is skipped. The
+next test found that knots decide where that order lives
+([DISTANCE-ORDER-20261117-001](research/DISTANCE-ORDER-20261117-001/distance_order.md);
+proved and computed, referee pending). In the disagreement count, c lies
+between a and b exactly when no allowed state has a = b ≠ c, and that is a
+three-place constraint. Where the knots form no cycle, one quantity read from
+the counts equals steps apart (lesson 4.7), so a single distance carries the
+base and goes outward with nothing skipped. On the thread and the six-regular
+weave the two split: the count that carries everything puts no distinction
+between two others, and steps apart, which has the order, does not carry
+everything. The guide leaves the owner's word open.
+
+The register lists one more question: is the full bit that parity hides a
+distance? Not a pairwise one. Under a parity knot every pair takes each of its
+four joint values equally often, so no count of pairs sees it (proved, same
+study). See A97 and A98 in the
 [register](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information).
 
 **Reading.** Apart from the results it cites, this lesson is the owner's
@@ -2745,6 +2758,13 @@ that earlier records used in two senses.
   comes from the rules and is never drawn. Read as all the information a base
   holds, as the owner's founding premise would have it, bond distance between
   pairs falls short from four distinctions up (lesson 2.4).
+- **Disagreement count.** For two distinctions, the number of allowed states
+  in which they take different values; as a share of the allowed states it is
+  the **disagreement rate**. It is a count across the allowed states, not an
+  extended or metric distance. Not-all-equal on three distinctions is a sum of
+  their disagreements, so the table of disagreement counts determines every
+  not-all-equal base from four distinctions on, and in it three distinctions
+  are in order exactly when a three-place constraint holds on them (lesson 2.4).
 - **Steps apart.** Two distinctions are d steps apart when the shortest row of
   co-knotted pairs leading from one to the other, each pair sharing a
   distinction with the next, has d pairs (lesson 4.7): the literature's graph

@@ -132,14 +132,19 @@ shows that which notion of distance is meant decides the answer. Read as bond
 distance between pairs, it fails from four distinctions up: bases with the
 same pairwise bond distances allow different states. Read as how often two
 distinctions differ, the number of allowed states in which they take
-different values, it passed every case tested: that table determined every
-not-all-equal base on up to six distinctions and 46,445 sampled on seven
-(computed and refereed, not proved for all sizes; a count across the allowed
-states, not an extended or metric distance). His answer rules out direction
-and asks for an order in which nothing is skipped; whether either candidate
-gives one is being checked, and this page leaves the choice open until it is.
+different values, that table determines every not-all-equal base from four
+distinctions on (proved; on three distinctions one knot and no knot share it),
+a count across the allowed states, not an extended or metric distance. His
+answer rules out direction and asks for an order in which nothing is skipped.
+In that count, three distinctions are in order exactly when a three-place
+constraint holds on them, so order is carried by knots. Where the knots form no
+cycle, one quantity read from the counts equals steps apart, so a single
+distance carries the base and goes outward with nothing skipped; on the thread
+and the six-regular weave the count that carries everything puts no distinction
+between two others (proved and computed, referee pending). This page leaves
+the choice of his word open.
 
-Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [its referee](research/DISTANCE-INFO-20261117-001/referee-R1/report.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
+Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [its referee](research/DISTANCE-INFO-20261117-001/referee-R1/report.md), [the order test](research/DISTANCE-ORDER-20261117-001/distance_order.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
 
 ### The knot test K1–K3
 

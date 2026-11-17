@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: where order lives; the disagreement table proved, and narrowed at three distinctions
+
+- New: [which distance carries a base's information, and which gives an order with nothing skipped](research/DISTANCE-ORDER-20261117-001/distance_order.md)
+  (`DISTANCE-ORDER-20261117-001`, proved and computed, referee pending). How many allowed states tell two distinctions apart
+  determines every not-all-equal base from four distinctions on (proved). In that count, three distinctions are in order exactly
+  when a three-place constraint holds on them. Where knots form no cycle, one distance read from the states is steps apart. On the
+  thread and the six-regular weave, the count puts no distinction between two others.
+- Narrowed: THEORY.md, Intuitions lesson 2.4, the A97 test's decision note and the entry below said this table determined every
+  not-all-equal base "on up to six distinctions" or "through six". The census began at four. On three distinctions, one knot and no
+  knot share the table, and only the rates tell them apart.
+
 ## 17 November 2026: the A97 test, corrected by its referee
 
 - Withdrawn: the A97 test (`DISTANCE-INFO-20261117-001`) said A97's plain reading was overturned and that it survives only if

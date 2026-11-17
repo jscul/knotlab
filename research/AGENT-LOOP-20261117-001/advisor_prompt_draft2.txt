@@ -1,0 +1,222 @@
+You are reviewing a pre-registered computational study before it is frozen. Be a sharp, skeptical colleague. Give a verdict ("freeze as is", "freeze with changes", or "do not freeze"), then numbered points, each with a concrete change. Focus on: whether the tests answer the stated mechanism question; confounds; whether the calibration leaks into the test; the room rule; the per-flip budget's fairness; seed agreement; the decision rule's order and completeness; the predictions' calibration; anything that would make a result misleading. Keep it under 900 words.
+
+Context from three earlier studies in this line (all on planted not-all-equal 3-place patterns; "charged work" counts incidences read):
+- A proof-based slow loop (probe knots by bounded propagation, merge proven ties, rebuild the pattern) under Novelty+ pays several-fold on local patterns when eager, not on random ones.
+- An earned budget was safe but ramped too slowly.
+- Speculative (unproved) merges from co-flip evidence never paid; the evidence predicts structure above chance, but precision ~0.7 is fatal.
+
+The coordinator's request for this study: "the learned agent as the fast loop under the proof-based eager loop, memory carried across rebuilds, carry against restart as the first comparison; interpretable either way: report flips, charged work and CPU separately; say up front that the agent's CPU per flip makes a charged-time win unlikely, so the frozen primary is the mechanism question (does carried memory beat restart, and does agent plus slow loop beat each alone, in flips and in charged work); Novelty+ plus the same slow loop as comparator; five runs; fresh instances; a pattern untouched before the freeze; seed agreement in the decision rule; co-flip targets for proofs as a cheap secondary arm."
+
+Here is the draft pre-registration:
+# Does the owner's whole picture work as a mechanism: a learned agent with memory acting on knots while a proof-based slow loop reshapes the pattern?: pre-registration
+
+Epic `AGENT-LOOP-20261117-001` (`SPEC-MERGE-20261117-001#1`, the coordinator's go-ahead of 2026-11-17; sub-goal B191; goals G15,
+G16). **Frozen** before any test instance ran. The commit time of this file is the only authority for the freeze. Before it ran:
+- the gates (A1–A4);
+- a calibration and a dry run of the whole pipeline, on calibration instances (seeds 9,600,000 and up) of the four cells already
+  run in the program (disclosed below).
+
+The two primary cells, `local` window 30 and `block` window 40, were not run at all.
+- **Code** by the thread (Claude), in `experiments/AGENT-LOOP-20261117-001A/AGENT-LOOP-20261117-001A-E001_agent_loop/`:
+  - SPEC-MERGE's engine and driver, copied;
+  - SIGNED-NAV's signed-knot agent engine and handle, copied unchanged into `agent/` (from commit `0c631cb87`);
+  - a new driver, `agent_loop.py`.
+- **The canonical K1–K3 test** is unchanged.
+- **The advisor** reviewed a draft ([advisor note](advisor_review.md)).
+
+## The question
+
+This is the first test of the owner's whole picture in one system. The pieces:
+- **The fast loop** is the learned navigating agent, which attends to a violated knot, flips one of its distinctions and remembers
+  its steps. It is Dr of `MEET-TRANSFER-20261117-001` (unrefereed), both seeds.
+- **The slow loop** reshapes the knot pattern under the agent. It is EARN-BUDGET's eager batched proof-based loop:
+  - after each epoch of n′ flips it spends 3 times the epoch's charged fast work on tie probes (bounded refutations by
+    propagation);
+  - it rebuilds the pattern on the proven ties when they reach 0.3% of the classes.
+- **Memory across a change.** At each rebuild the agent's whole state (values, recurrent state, ages, visit counts) is carried
+  across the change by SIGNED-NAV's carry rule, or restarted from the mapped values with fresh memory.
+
+**The primary question is the mechanism, read in flips and in charged work separately:**
+1. **M1.** Does carried memory beat restarting?
+2. **M2.** Does the agent with the slow loop beat the agent alone?
+3. **M3.** Does the agent beat Novelty+ under the same slow loop, at the same proof effort per flip?
+
+Beside them, the slow loop alone (SL) shows whether a fast loop is needed at all.
+
+**Stated up front:**
+- The agent costs 4 to 14 times Novelty+'s CPU per flip (SPEC-MERGE's context arm), so a win in charged time over Novelty+ under
+  the same loop is unlikely. CPU is reported, and no verdict rests on it except the context line P9.
+- These moves keep the allowed states: every merge is a proved tie. The carry is a mapping of the agent's memory through the
+  substitution, not a statement about the knots.
+
+The secondary question takes SPEC-MERGE's one positive signal, the co-flip evidence, as the target for proofs: probe the pairs the
+search keeps moving together instead of random knots, with Novelty+ as the fast loop.
+
+## Two problems found in calibration, and the changes
+
+The first draft froze M1 to M3 on the local cells with EARN-BUDGET's budget rule. Calibration showed two problems.
+1. **No room for memory on local patterns.** There the slow loop reduces the pattern to about 100 to 300 classes within two
+   rebuilds. Only 12% to 30% of the agent's flips come after the first change, and carried and restarted memory agree to 1%.
+   - **Change:** two block cells were added, where the slow loop proves little and about 90% of the flips come after the first
+     change.
+   - **Change:** M1 is read only where there is room (below).
+2. **The budget rule favours the costlier fast loop.** The slow budget is 3 times the epoch's own fast work. The agent charges
+   about 240 incidences per flip, Novelty+ about 50, so the agent buys about 5 times the proofs per flip. Under this rule the
+   agent "beat" Novelty+ by about half in flips on local patterns purely through more proofs.
+   - **Change:** a per-flip budget, 3 × 50 incidences per flip of the epoch, is the same for every fast loop. M3 compares the
+     agent and Novelty+ under it (DrCf against GNf).
+
+## In standard terms
+
+A learned local-search policy with history features (a recurrent state, ages and visit counts), interleaved with inprocessing
+(failed-literal probing and equivalent-literal substitution). The policy's internal state is mapped through each variable
+substitution. Memory transfer under problem reformulation is not, as far as this program found, measured in the SAT literature.
+
+**What each outcome would show.**
+- **If M2 holds,** the slow loop's structure changes help a learned agent as they help Novelty+.
+- **If M1 holds,** an agent's memory survives a change of structure usefully. That is the owner's metacognition picture in its
+  most specific form.
+- **If M3 holds,** the agent uses the reshaped pattern better than Novelty+ does, for the same proof effort.
+- **None of them** would say anything about satisfiability in general. CaDiCaL solves these local patterns in about 0.05 s.
+
+## Prior work in the program
+
+Objects index, searched 2026-11-17:
+
+`python3 -B scripts/track.py objects "learned agent with memory as the fast loop under a structure-changing slow loop" --until 2026-11-18 --exclude AGENT-LOOP-20261117-001`
+`python3 -B scripts/track.py objects "memory carried across a change of the knot pattern" --until 2026-11-18 --exclude AGENT-LOOP-20261117-001`
+
+Neither search returned a study of a learned agent under a structure-changing loop, or of memory carried across a change of the
+pattern. The nearest records:
+- `SLOW-LOOP-20261117-001/1` and `/2`, and `EARN-BUDGET-20261117-001/1`: the slow loop with Novelty+.
+- `WHERE-NEXT-20261116-001/1` and `RULER-LEVEL-20261114-001/1`: unrelated to memory.
+
+The study builds on:
+- `SLOW-LOOP-20261117-001`, `EARN-BUDGET-20261117-001` and `SPEC-MERGE-20261117-001`: the slow loop;
+- `MEET-TRANSFER-20261117-001`: the agent Dr;
+- `SIGNED-NAV-20261117-001`: the signed engine and the carry rule.
+
+## Cells and arms
+
+Planted unsigned not-all-equal patterns at n = 3,200, 50 fresh instances per cell (seeds 9,100,000 to 9,100,049), five runs each.
+Every arm runs from the same five initial states per instance. Both engines draw the initial state from the run seed with the same
+generator; this was checked on 5 seeds.
+
+| Cell | Family | Role | Flip cap |
+| --- | --- | --- | --- |
+| `local` window 30, density 4.0 | local | **first cell**: never run in the program before the freeze | 2·10^8 |
+| `local` w10, density 4.0 | local | second | 2·10^8 |
+| `local` w20, density 4.0 | local | second | 2·10^8 |
+| `block` w40, density 2.5 | block | **first cell**: never run in the program before the freeze | 2·10^7 |
+| `block` w20, density 2.5 | block | second (run in SLOW-LOOP and EARN-BUDGET on other instances) | 2·10^7 |
+| `rand` 2.1 | control | the slow loop proves nothing, so carried and restarted memory must coincide | 2·10^7 |
+
+The block cap is 2·10^7 because Novelty+ (0.8, 0.01) never solved a calibration block run within 2·10^8. The slowest other block
+arm needed about 2.3·10^5 flips.
+
+| Arm | What it is |
+| --- | --- |
+| NOV, NOV8 | Novelty+ (0.7, 0.01) and (0.8, 0.01) alone; F is the better of the two, re-chosen per resample |
+| GN | Novelty+ (0.7, 0.01) under the slow loop, EARN-BUDGET's budget rule, random probe targets |
+| GNf | the same under the per-flip budget (the comparator for M3) |
+| GNco | GN with co-flip probe targets (secondary) |
+| SL | the slow loop alone: the same probes and rebuilds with no fast loop; it solves only if the pattern collapses to no knots, and it stops when nothing is left to probe |
+| Dr0, Dr1 | Dr alone, each seed |
+| DrC0, DrC1 | Dr under the slow loop (EARN-BUDGET's rule), memory carried |
+| DrR0, DrR1 | the same with memory restarted from the mapped values, with a fresh random stream |
+| DrCf0, DrCf1, DrRf0, DrRf1 | the same two under the per-flip budget |
+
+## Measures
+
+- **Flips, charged work (v2) and CPU,** each a separate statistic: per instance the geometric mean of five runs, per cell the
+  median.
+- **The agent's charged work** is its engine's incidence count, reads included.
+- **The slow loop's charge** counts:
+  - the probes, and the sweep that finds the last unprobed knots (SL);
+  - the stability counts (co-flip);
+  - the rebuilds with their sorting;
+  - the carry's mapping and the new handles.
+- **R** is against F. Ratios between arms are paired, with 99% bootstrap intervals over instances (10,000 resamples).
+- **Room** on a cell is the median share of the restarted runs' flips made after the first rebuild.
+
+## The mechanism tests (frozen)
+
+Each test is computed for each seed of Dr, and a claim needs **both seeds** (seed agreement).
+- **A test holds on a family** when it holds on the family's first cell and on at least one of its second cells.
+- **Each test is read in flips and in charged work separately.**
+
+| Test | Ratio | Holds when |
+| --- | --- | --- |
+| M1, carry helps | DrC/DrR (EARN-BUDGET's rule) and DrCf/DrRf (per-flip), each separately | ≤ 0.9 with the upper end below 1; read only if the first cell has room ≥ 0.5 for both seeds, else "no room" |
+| M1, carry hurts | the same | the lower end above 1 |
+| M2 | DrC/Dr | ≤ 0.8 with the upper end below 0.9 |
+| M3 | DrCf/GNf | ≤ 0.9 with the upper end below 1 |
+
+## Decision rule (frozen)
+
+Applied in order, over the two families:
+
+1. **Every part pays in charged work:** on some family, M2 and M3 hold in charged work.
+2. **Every part pays in flips only:** on some family, M2 and M3 hold in flips.
+3. **The loop helps the agent, but the agent adds nothing over Novelty+ at the same proof effort:** M2 holds on some family, in
+   flips or in work.
+4. **No mechanism gain:** M2 holds nowhere.
+
+Beside the rule:
+- **Memory,** per family and budget: "carry helps", "carry hurts", "no difference shown" or "no room", read in flips.
+- **The slow loop alone:** how often it solves on each cell.
+- **The co-flip targets** pay on a cell if GNco/GN ≤ 0.9 with the upper end below 1, in work.
+
+## Gates (run before the freeze)
+
+| # | Gate | Fails when |
+| --- | --- | --- |
+| A1 | With no slow budget, the agent driver reproduces Dr alone run for run (flips and work), and the Novelty+ driver reproduces Novelty+ alone (24 runs) | any differs |
+| A2 | 144 runs at n = 800 (`local` w10 and w20, `block`, `rand`): agent carry and restart under both budgets, Novelty+ with random and co-flip targets and under the per-flip budget, the agent with co-flip targets, and the slow loop alone. Each solves (the slow loop alone excepted), every reported state satisfies every original knot, and every proved tie holds in the planted state | any fails |
+| A3 | On `rand`, where nothing is proved, carried and restarted memory give identical runs (6 instances) | any differs |
+| A4 | The first epoch under the slow loop equals Dr alone capped there | any differs |
+
+All passed (`gates/check_output.txt`): 55,870 merged distinctions checked against the planted state.
+
+## Calibration and dry run (disclosed)
+
+Both were on calibration instances (seeds 9,600,000 to 9,600,003) of `local` w10 and w20, `block` w20 and `rand`, four
+instances each, all arms. Medians of five runs (dry-run summary in `calibration/`):
+
+| Cell | Dr alone, flips | DrC, flips | room under EARN-BUDGET's rule, per-flip | DrC/DrR, flips | DrCf/GNf, flips; work | DrC/Dr, work | SL solves |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `local` w10 | 2.5–3.2·10^5 | 3.6·10^3 | 0.12, 0.51 | 1.00 | 0.99; 1.50 | 0.06–0.08 | 0 of 20 |
+| `local` w20 | 2.5–4.8·10^5 | 4.6·10^3 | 0.30, 0.64 | 1.00 | 0.99–1.00; 1.65–1.69 | 0.06–0.11 | 0 of 20 |
+| `block` w20 | 6.2–7.6·10^4 | 2.7–3.2·10^4 | 0.87–0.91 | 1.09–1.10 (per-flip 0.90–0.91) | 0.52–0.58; 1.43–1.51 | 1.12–1.30 | 0 of 20 |
+| `rand` | 6.2–8.8·10^4 | the same as Dr | 0 | 1.00 | 0.86–1.22 | 1.13–1.18 | 0 of 20 |
+
+The calibration fixed the design changes above. It informed the predictions below, which is why they are sharper than the first
+draft's. It did not touch the two first cells.
+
+## Predictions (frozen)
+
+| # | Prediction | Probability | Fails when |
+| --- | --- | --- | --- |
+| P1 | M2 holds on local, in flips and in work | 95% | otherwise |
+| P2 | On block, M2 holds in flips but not in work | 60% | otherwise |
+| P3 | M3 holds on local in flips | 7% | it holds |
+| P4 | M3 holds on block in flips | 65% | otherwise |
+| P5 | M3 holds in work on either family | 3% | it holds |
+| P6 | Memory: "no difference shown" on block under both budgets | 70% | carry helps or hurts under either |
+| P7 | Local has no room under EARN-BUDGET's rule | 95% | room ≥ 0.5 |
+| P8 | The slow loop alone solves no run on the local and block cells | 95% | any solves |
+| P9 | DrC (both seeds) is a charged win against F on `local` w30: work ≤ 0.8 (upper end < 0.9) and CPU upper end < 1 | 80% | otherwise |
+| P10 | Co-flip targets pay on some local or block cell, in work | 10% | they pay |
+| P11 | On `rand`, DrC and DrR coincide in every run | 97% | any run differs |
+| P12 | Every reported state satisfies the original knots | 99.9% | any fails |
+
+The decision reading most likely: **2** (block) about 55%, **3** about 40%, others 5%.
+
+**Publication hold.** As before. Planted patterns, local search and propagation give no general method, and the thread tells the
+coordinator before committing if anything on `rand` wins.
+
+## Runs and stop rule
+
+On the shared runner, 6 workers, MemoryMax 16G: 6 cells × 16 arms × 50 instances × 5 runs (4,800 cases), estimated 30 to 60 min
+from the dry run's pace (256 cases in 3.3 min on 4 workers). The study stops at the decision rule. Nothing is added after the
+results are seen. After this study the line stops for a stock-take with the owner, whatever the outcome.

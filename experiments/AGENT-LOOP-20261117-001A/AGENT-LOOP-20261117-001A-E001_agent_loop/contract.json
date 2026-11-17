@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "AGENT-LOOP-20261117-001A-E001",
+  "ticket": "AGENT-LOOP-20261117-001A",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Under EARN-BUDGET's eager batched proof-based slow loop, does the learned agent Dr with its memory carried across every rebuild beat Dr with its memory restarted (M1), does the loop help Dr over Dr alone (M2), does Dr under the loop beat Novelty+ under the same loop (M3), and does the loop help Dr more than it helps Novelty+ (M4), in flips (per-flip budget) and in charged work (EARN-BUDGET's rule) separately, with both seeds of Dr agreeing, on planted not-all-equal patterns of two families (local windows 30, 10, 20 at density 4.0; block windows 40 and 20 at density 2.5) and rand 2.1 at n = 3200? Secondary: co-flip probe targets against random ones for Novelty+ under the loop; the slow loop alone.",
+  "inputs": "The knot pattern, the fast loop's state, its memory and its flip history; never the planted state (read only by gate A2's tie check).",
+  "forbidden_inputs": "The hidden planted state inside the loop, any test instance before the freeze, any solver output.",
+  "mapping": "No tuning: the slow loop's settings are EARN-BUDGET's Gpr (epoch n', rho 3, probe bound 4000, rebuild at 0.3% of the classes), with the slow budget either 3 times the epoch's own fast work (EARN-BUDGET's rule) or 3 x 50 incidences per flip (per-flip budget); Dr's two seeds from MEET-TRANSFER-20261117-001's policies.json; Novelty+ (0.7, 0.01) and (0.8, 0.01).",
+  "primary_observable": "Two frozen verdicts. Memory: M1 per family (first cells local w30 and block w40, never run before the freeze, replicated on a second cell), in flips (DrCf/DrRf) and work (DrC/DrR), read only where there is room. Loop: per family, the measures in which M2 (DrCf/Dr, DrC/Dr) and M3 (DrCf/GNf, DrC/GN) hold. Ratios of cell medians of five-run geometric means over 50 instances, 99% paired bootstrap; CPU reported beside.",
+  "comparators_or_controls": "Dr alone (both seeds); Dr under the loop with memory restarted; Novelty+ under the same loop (GN, GNf); the slow loop alone (SL); Novelty+ (0.7, 0.01) and (0.8, 0.01) alone (F = the better, re-chosen per resample); rand 2.1 as the control where nothing is proved.",
+  "resource_budget": "6 cells x 16 arms x 50 instances x 5 runs at n = 3200 (4,800 cases), 6 workers, MemoryMax 16G, shared runner, about 1 to 3 CPU-hours.",
+  "first_executable_signal": "Gates A1-A4: identity with no slow budget (agent and Novelty+), soundness of every arm at n = 800 against the original knots and of every proved tie against the planted state (both budgets, the slow loop alone included), carry = restart where nothing is proved, first-epoch identity.",
+  "stop_rule": "Stop at the frozen decision rule; keep every run; if any arm wins on rand, message the coordinator before committing (publication hold). After this study the line stops for a stock-take with the owner, whatever the outcome.",
+  "nonclaims": "Planted instances only; no claim about SAT in general, P vs NP, native emergence or self-improving AI; the agent's memory carry is a mapping through a substitution, not a proof of anything about the knots.",
+  "preregistration": "research/AGENT-LOOP-20261117-001/preregistration.md"
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 436 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 437 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 436 epics with their closures
+- [Epics](#epics): all 437 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1677,6 +1677,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-16 | Which knot patterns must be worked in order (`SEQUENTIAL-WALL-20261116-001`) | [closure](proofs/SEQUENTIAL-WALL-20261116-001Z/SEQUENTIAL-WALL-20261116-001Z-P001_epic_closure/proof.md) | [folder](research/SEQUENTIAL-WALL-20261116-001/) |
 | 2026-11-16 | Does a learned choice of which knot to act on next, with memory of earlier steps, cut total work where plain search is costly? (`WHERE-NEXT-20261116-001`) | — | [folder](research/WHERE-NEXT-20261116-001/) |
 | 2026-11-17 | Does the owner's whole picture work as a mechanism: a learned agent with memory acting on knots while a proof-based slow loop reshapes the pattern, its memory carried across each change? (`AGENT-LOOP-20261117-001`) | — | [folder](research/AGENT-LOOP-20261117-001/) |
+| 2026-11-17 | Is a two-orbit bond from the top the only thing that keeps the reach bounded? (`CARRIER-20261117-001`) | — | [folder](research/CARRIER-20261117-001/) |
 | 2026-11-17 | Is distance the only form of information: bond-distance tables of not-all-equal bases (`DISTANCE-INFO-20261117-001`) | [closure](proofs/DISTANCE-INFO-20261117-001Z/DISTANCE-INFO-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/DISTANCE-INFO-20261117-001/) |
 | 2026-11-17 | Does a slow loop that sets its own eagerness from how fast its moves shrink the knot pattern keep the eager loop's gain on locally structured patterns and lose its cost elsewhere, on fresh instances and new meeting patterns? (`EARN-BUDGET-20261117-001`) | — | [folder](research/EARN-BUDGET-20261117-001/) |
 | 2026-11-17 | Does a relation that never forgets keep the reach bounded? (`KEEP-REACH-20261117-001`) | — | [folder](research/KEEP-REACH-20261117-001/) |

@@ -151,6 +151,7 @@ evidence: results and their status come from the records each entry links.
 | [A94](#a94--an-agents-memory-across-a-change-of-the-pattern-is-carried-by-signed-navs-rule) | An agent's memory across a change of the pattern is carried by SIGNED-NAV's rule | reading | Assumed |
 | [A95](#a95--two-fast-loops-are-compared-at-the-same-proofs-per-flip-in-flips-and-at-the-same-share-of-work-on-proofs-in-work) | Two fast loops are compared at the same proofs per flip in flips, and at the same share of work on proofs in work | measure | Assumed |
 | [A96](#a96--a-role-preserving-shuffle-of-a-weave-removes-its-steps-apart-and-nothing-else-that-matters) | A role-preserving shuffle of a weave removes its steps apart and nothing else that matters | scope | Assumed |
+| [A97](#a97--distance-is-the-only-form-of-information) | Distance is the only form of information | interpretation | Assumed |
 
 ## Entries
 
@@ -2487,3 +2488,26 @@ evidence: results and their status come from the records each entry links.
   and see whether the phase count follows steps apart (falls to about the new largest steps apart) or the cycles.
 - **History.**
   - 2026-11-17 · Added by `SPACE-ORDER-20261117-001`.
+
+### A97 · Distance is the only form of information
+
+**Assumed** · 2026-11-17 · interpretation
+
+- **Statement.** The owner's reading, in his words (17 November 2026): "Distance is the only form of information. That's the
+  entire basis of the 'this versus that' distinction in the smallest emergent unit." Read in the program's terms: what a base
+  holds as information is carried by how far its distinctions are from one another, as its own law measures it (bond distance,
+  which on six-regular weaves is steps apart plus one), and a distinction itself, this versus that, is the least such separation.
+- **Why.** Recorded at the owner's request after `SPACE-ORDER-20261117-001`
+  ([decision note](../research/SPACE-ORDER-20261117-001/space_order.md)) found that space forces order only through steps apart:
+  untangling's phases are bounded below by, and on weaves equal to, the steps apart a settled region must travel. It continues his
+  stance of 22 October 2026 that there are no values, only relations seeded from the smallest distinction, this versus that. It is
+  an interpretation, not a theorem: no result shows that every kind of information a base holds is a distance.
+- **Rests on it.** The reading of `SPACE-ORDER-20261117-001`, that steps apart is the sequential resource of untangling; the
+  ruler results that make bond distance the law's own distance (`RULER-20261111-001`, `LOGIC-AXIS-20261107-001`).
+- **Challenge.** Find two bases whose bond distances agree for every pair of distinctions but whose allowed states differ (for
+  example in count, or in what is forced from the same held values): their difference would be information that is not distance.
+  The cheapest first test is a census of small not-all-equal patterns grouped by their bond-distance tables, checking whether equal
+  tables force equal relations (`OVERLAP-READ-20261111-001` found that equal pair counts give equal states, a related result).
+  Parity knots, which hide one full bit, are a second test: is the hidden bit a distance?
+- **History.**
+  - 2026-11-17 · Added at the owner's request, in his words.

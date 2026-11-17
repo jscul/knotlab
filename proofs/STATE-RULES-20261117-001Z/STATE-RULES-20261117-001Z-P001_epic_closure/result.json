@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "STATE-RULES-20261117-001Z-P001",
+ "kind": "proof",
+ "ticket": "STATE-RULES-20261117-001Z",
+ "proof": "STATE-RULES-20261117-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing STATE-RULES-20261117-001: ticket A (single-knot costs; one-knot fewest-states keeps k and lambda; one step from a line makes at most two orders; C(n,3) zero-cost fills; the square from one knot) and ticket B (frozen computation with two run amendments before read-out, 19 of 20 predictions held): no uniform rule tried, reading the states alone or also which knots meet, makes two orders and keeps them; the cheapest three-knot rule grows Q3 at n = 8 and Q4 at n = 16. Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/contract.json": "Frozen",
+   "artifacts/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/results.json": "run output",
+   "proofs/STATE-RULES-20261117-001A/STATE-RULES-20261117-001A-P001_cheapest_steps/manifest.json": "Proved",
+   "proofs/STATE-RULES-20261117-001A/STATE-RULES-20261117-001A-P001_cheapest_steps/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

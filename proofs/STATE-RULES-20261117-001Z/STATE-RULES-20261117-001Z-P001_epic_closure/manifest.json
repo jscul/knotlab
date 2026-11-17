@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "STATE-RULES-20261117-001Z-P001",
+ "canonical_id": "STATE-RULES-20261117-001Z-P001",
+ "kind": "proof",
+ "ticket": "STATE-RULES-20261117-001Z",
+ "proof": "STATE-RULES-20261117-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: rules that read only the states",
+ "status": "Proved",
+ "claim": "Ledger closing STATE-RULES-20261117-001: ticket A (single-knot costs; one-knot fewest-states keeps k and lambda; one step from a line makes at most two orders; C(n,3) zero-cost fills; the square from one knot) and ticket B (frozen computation with two run amendments before read-out, 19 of 20 predictions held): no uniform rule tried, reading the states alone or also which knots meet, makes two orders and keeps them; the cheapest three-knot rule grows Q3 at n = 8 and Q4 at n = 16. Referee pending. No new claim.",
+ "dependencies": [
+  "STATE-RULES-20261117-001A",
+  "STATE-RULES-20261117-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "STATE-RULES-20261117-001",
+  "epic_path": [
+   "STATE-RULES-20261117-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/contract.json": "24c8af7bb11e83f3c73a1c372599a830ef16b6e8150d120c3946f3e9506a4a97",
+  "artifacts/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/results.json": "b63c4ed1925ab167e66f790d3459bd7888e54dc54c58e4c8e27cad569b305860",
+  "proofs/STATE-RULES-20261117-001A/STATE-RULES-20261117-001A-P001_cheapest_steps/manifest.json": "767dc13a3040a1921544f5372a8bd656b8a213ed1e0ece83a4277aee95863513",
+  "proofs/STATE-RULES-20261117-001A/STATE-RULES-20261117-001A-P001_cheapest_steps/result.json": "72078aea51f3565ddafa7a0c8f824c39f68b929a610c5b21f6dadf790ed59285"
+ },
+ "paths": {
+  "manifest": "proofs/STATE-RULES-20261117-001Z/STATE-RULES-20261117-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/STATE-RULES-20261117-001Z/STATE-RULES-20261117-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/STATE-RULES-20261117-001Z/STATE-RULES-20261117-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/STATE-RULES-20261117-001Z/STATE-RULES-20261117-001Z-P001_epic_closure/result.json",
+  "check": "proofs/STATE-RULES-20261117-001Z/STATE-RULES-20261117-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/STATE-RULES-20261117-001Z/STATE-RULES-20261117-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-17; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

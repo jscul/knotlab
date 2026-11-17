@@ -3,7 +3,9 @@
 `MODE-BOND-20261117-001A-P001`, epic `MODE-BOND-20261117-001`, 2026-11-17. Written by Claude. The advisor checked the design before
 the freeze (`research/MODE-BOND-20261117-001/advisor/design_answer.md`). Proof by hand with finite checks: `check.py`, with its result
 in `result.json`, and the gates of `research/MODE-BOND-20261117-001/`. It uses Theorem G of `TWO-ENDS-20261117-001A`, which its
-referee confirmed as written (TWO-ENDS-R1), and nothing that rests on Theorem N.
+referee confirmed as written (TWO-ENDS-R1), and nothing that rests on Theorem N. *Refereed* (MODE-BOND-R1,
+`research/MODE-BOND-20261117-001/referee-R1/report.md`): confirmed, no Block. The disconnection is proved from the block types for
+every depth and checked at depths 9 to 13.
 
 ## Setting
 

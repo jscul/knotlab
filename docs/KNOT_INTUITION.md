@@ -3996,9 +3996,10 @@ So holes come in two kinds:
      levels, which the pattern reads differently. So a three-end form of the conjecture holds; with two ends it stays open. On each
      depth tier, reach is either eventually constant or grows at least linearly, never in between. Across a long stretch the 5
      patterns (13 descriptions) that pass every carrier carry only one link down a self-similar strand, in two parts: an all-equal
-     orbit stays all equal, and a split one below forces a split one above. Their least bonds so far avoid it: for one of them, a
+     orbit stays all equal, and a split one below forces a split one above (superseded by `MODE-BOND-20261117-001`: that strand
+     never meets the top, and the 5 grow linearly). Their least bonds so far avoid it: for one of them, a
      chain along the way, 7 members at s = 7 and 8 ([decision note](../research/TWO-ENDS-20261117-001/two_ends.md)).
-   - **The strand that never forgets is a separate strand** (`MODE-BOND-20261117-001`; referee pending): the link those 5 patterns
+   - **The strand that never forgets is a separate strand** (`MODE-BOND-20261117-001`; refereed, confirmed): the link those 5 patterns
      carry runs down a self-similar strand that no knot ties to its parent, so it never touches the top, and nothing that holds the
      top can use it. The top's own strands all forget within five levels, so the reach grows linearly, proved. With this, every
      small-orbit pattern seen is decided, and every bounded one is held by a bond between two bounded pieces, one at each end

@@ -3,7 +3,8 @@
 Epic `MODE-BOND-20261117-001`. It takes direction #1 of `TWO-ENDS-20261117-001` at the coordinator's go-ahead (2026-11-17 22:40
 UTC), within John's request of 16:52 UTC to reopen the line. It serves G17, with G1, and ran on 2026-11-17. Proof note:
 [proof.md](../../proofs/MODE-BOND-20261117-001A/MODE-BOND-20261117-001A-P001_components/proof.md). Code by the thread. The canonical
-K1–K3 test is unchanged. **Referee pending.** It uses Theorem G of `TWO-ENDS-20261117-001`, which that study's referee confirmed as
+K1–K3 test is unchanged. **Refereed** (MODE-BOND-R1, [report](referee-R1/report.md), commit 5eed968e0): **confirmed**, no Block; one
+wording fix and the TWO-ENDS status notes below ("Referee"). It uses Theorem G of `TWO-ENDS-20261117-001`, which that study's referee confirmed as
 written, and nothing that rests on Theorem N.
 
 ## The question
@@ -32,7 +33,7 @@ so whatever holds the top to a far level must keep adding members as the distanc
 | --- | --- | --- |
 | 1 | Lemma J: a bond lies in one component | proved |
 | 2 | Theorem G on the component of level k: products along joined children force linear growth | proved (Theorem G, refereed, with a joined-path lemma) |
-| 3 | The 5 patterns (13 descriptions): self-similar subtrees unjoined; on the top's component ℓ₀ = 5; L ≥ (⌊(s − 1)/5⌋ + 3)/2 | proved with finite checks (SAT gate at depth 11) |
+| 3 | The 5 patterns (13 descriptions): self-similar subtrees unjoined; on the top's component ℓ₀ = 5; L ≥ (⌊(s − 1)/5⌋ + 3)/2 | proved from the block types; checked at depths 9 to 13 (SAT gate at depth 11; the referee's union-find at 9, 11, 13) |
 | 4 | The joined product test agrees with forgetting on all 786 census descriptions (181 patterns), and passes exactly the 13 of the 39 | computed |
 | 5 | All 39 third-class descriptions (16 patterns), and so all 2,380 fresh and mutated small-orbit descriptions (583 patterns), are decided | follows (with KEEP-REACH and CARRIER) |
 | 6 | In every bounded one, the reach is held at two ends (two-orbit, block or stem bonds), so the bottom band is never needed here | follows |
@@ -47,8 +48,8 @@ so whatever holds the top to a far level must keep adding members as the distanc
 | 12 (5) | bounded | Theorem K\* (orbit-and-block and stem bonds) |
 | 13 (5) | grow | Theorem G on the top's component (this study) |
 
-The 1,260 bounded descriptions with a two-orbit bond are 323 patterns, if every group of identical descriptions carries one verdict,
-as the referee found for the census. That is the 583 less the 244 and the 16.
+The 1,260 bounded descriptions with a two-orbit bond are 323 patterns (the referee checked each by its two-orbit bond at every s;
+the first draft inferred the count).
 
 ## Predictions
 
@@ -63,6 +64,19 @@ Frozen in [predictions.md](predictions.md), commit 7451de98b, before any Part A 
 The contract planned a decorated search. Reading the blocks made it unnecessary. The decorated closure was still run as frozen. It
 agrees: it finds pairs only at the self-similar type, and every entry block is a product with its self-similar child for all 426 and
 347 sibling restrictions.
+
+## Referee
+
+MODE-BOND-R1 ([report](referee-R1/report.md)), confirmed, no Block. Folded in on 2026-11-17:
+- **What holds.** The referee checked, by its own SAT on P₁₁, all 92 pair projections at distances 5 and 6 and all 38 saturated
+  composites 5 levels apart on the top's component: all are products. The non-products lie outside it. "Components never meet level
+  3" is proved for every depth from the type table, and the referee's union-find at depths 9, 11 and 13 agrees. "All 583 decided"
+  is exact, and the 323 is now checked.
+- **Wording.** "Proved with finite checks (SAT gate at depth 11)" now reads "proved from the block types; checked at depths 9 to 13".
+- **TWO-ENDS's reading of the carried link.** Four TWO-ENDS sentences read the link as a route the top might take. They are true as
+  implications but were read as live possibilities, and they steered this direction. They now carry a note, "superseded by
+  MODE-BOND: the link never meets the top". This is logged in `docs/CORRECTIONS.md` as Not a block.
+- **Not refereed.** The two ca1efb37ad88 controls of the decorated test (`MODE-BOND-A1`), still running. Nothing rests on them.
 
 ## Lessons
 

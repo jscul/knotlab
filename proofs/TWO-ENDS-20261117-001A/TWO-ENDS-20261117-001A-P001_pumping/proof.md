@@ -173,7 +173,8 @@ the count is that of Theorem D. ∎
   - **the split link:** a split lower orbit (0011 or 1100) forces the upper orbit to be split.
 
   Every other composite on the periodic part is a product.
-- A bond across a long stretch must use that mode. Stems of depth 0 to 2 hold no bond of any size at s = 7 and 8 at depth 12.
+- A bond across a long stretch must use that mode *(superseded by `MODE-BOND-20261117-001`: the mode lies in components that
+  never meet level 3, so no bond meeting level 3 crosses a long stretch; the 13 grow linearly)*. Stems of depth 0 to 2 hold no bond of any size at s = 7 and 8 at depth 12.
 - The least bonds found at s = 7 and 8 avoid it. For the pattern of 8db5da810c00-73 and -79 (one pattern) at depth 12 they have 7 members (certified), all on the
   lower member's line of orbits, which never enters the self-similar type, with gaps of at most two levels.
 

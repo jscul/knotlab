@@ -37,7 +37,8 @@ whether the 13 mutants of 8db5da810c00 (5 distinct patterns), which pass every c
   linearly. This is a finite computation. On the census it holds exactly for the 740 descriptions that forget (139 distinct
   patterns), which reproves their growth, and for none of the 46 that do not (42 patterns).
 
-**The 13 remain open.** The test fails for them, and the computation shows exactly why:
+**The 13 remain open.** *(Superseded by `MODE-BOND-20261117-001`: they grow linearly, and the link below never meets the top.)* The
+test fails for them, and the computation shows exactly why:
 - **One carried link, in two parts.** One orbit type has both children of its own type, and along it one composite is not a
   product (narrowed after the referee, who checked it by SAT at depth 11):
   - **the all-equal link:** an upper orbit whose four addresses are all equal forces the lower orbit all equal, flipping at each
@@ -46,7 +47,8 @@ whether the 13 mutants of 8db5da810c00 (5 distinct patterns), which pass every c
 
   Every other long composite is a product.
 - **Its size.** Their automaton is tiny (88 states for −73, threshold 5, period 2).
-- **What a bounded bond would need.** It must cross a long stretch through this link. So it would need a piece near the top that
+- **What a bounded bond would need.** *(Superseded by MODE-BOND: the link never meets the top, so no bond meeting level 3 can
+  use it.)* It must cross a long stretch through this link. So it would need a piece near the top that
   forces such an orbit to be all equal, or forbids its split, with the top member needed. None is in a stem: stems of depth 0 to 2 hold no bond of any size
   at s = 7 or 8.
 - **The certified readings, for one pattern.** −73 and −79 are the same pattern (CARRIER's referee: their depth-12 runs refuted the
@@ -60,7 +62,8 @@ whether the 13 mutants of 8db5da810c00 (5 distinct patterns), which pass every c
   - At depth 13 the same pattern's search did not decide s = 7 or 8 within 3,600 s per cell.
 
 In the program's words: across a long stretch, the only thing a pattern carries is a strand that has frozen into one of two states.
-Reach stays bounded only if the top can tie itself to such a frozen strand. Then a bond between the top's piece and the far end holds
+Reach stays bounded only if the top can tie itself to such a frozen strand *(superseded by MODE-BOND: for the 13 it cannot,
+since that strand never meets the top)*. Then a bond between the top's piece and the far end holds
 at every distance. Otherwise each stretch needs its own member, and the reach grows linearly.
 
 | # | Conclusion | Kind |
@@ -124,7 +127,7 @@ Used twice:
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt (C*'s converse; the 13) | **Status:** Successful | Normal form (three ends), dichotomy and product test proved; the 13 reduced to one carried link |
-| Local direction (the 13) | Continue | A bounded bond for them must tie the top to the carried link (all-equal or split); that is a small, exact search |
+| Local direction (the 13) | Continue (settled by MODE-BOND: they grow) | A bounded bond for them must tie the top to the carried link (all-equal or split); that is a small, exact search |
 | Broader exploration (G17's addressed line) | Known alternatives | B186, B188 |
 | Long-term goal (G17, with G1) | Capability gained | Bounded reach is now characterised by pieces at three ends (semi-decidable, sketched); on each depth tier growth is linear when it happens |
 

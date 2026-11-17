@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the 13 grow, confirmed by the referee; an earlier reading superseded
+
+- The study of the 13 hard mutants (`MODE-BOND-20261117-001`) was confirmed by its referee with fresh SAT code, with no Block. The 13
+  descriptions, 5 distinct patterns, grow linearly. Their one carried link lies in subtrees that no knot ties to the top, a fact proved
+  from the block types and checked at depths 9 to 13. Every one of the 583 small-orbit patterns of that population is decided
+  ([decision note](research/MODE-BOND-20261117-001/mode_bond.md)).
+- Superseded: four sentences of the pumping study read that link as a route the top might take. They were true as implications and
+  now carry a note.
+
 ## 17 November 2026: the pumping study confirmed by its referee, with a repaired step and narrower summaries
 
 - The pumping study (`TWO-ENDS-20261117-001`) was confirmed by its referee with fresh SAT code, with no Block. The segment lemma, the

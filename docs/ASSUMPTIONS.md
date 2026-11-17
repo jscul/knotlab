@@ -2564,7 +2564,13 @@ evidence: results and their status come from the records each entry links.
   the critical point (the chain grid) do the counts give a linear ruler, and the weave is critical. Under plain implications the
   states are the order's Alexandrov topology, and its specialization order and dimension are read back exactly (classical):
   that is what knots would have to build.
+  The knot-law test `WEAVE-LAWS-20261117-001`
+  ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); referee pending) found that on the weave no tested knot
+  law has a pair-count distance that both carries its information and is a ruler. Only the not-all-equal class is pairwise
+  (proved), and on the weave it is critical or frozen. The laws that give a ruler there (OR; hard hexagons) keep part of their
+  information in counts of three.
 - **History.**
+  - 2026-11-17 · Narrowed on the weave by `WEAVE-LAWS-20261117-001`: no tested law does both there; status unchanged.
   - 2026-11-17 · Challenge text scoped after the dimension test's referee `DISTANCE-DIM-R1` (Narrowing): knots first, each growth the
     meeting pattern's own, the implication result named as the classical specialization order; status unchanged.
   - 2026-11-17 · Statement: the owner's answer to B194 added in his words (the knots are the smallest form of "spatial topology",

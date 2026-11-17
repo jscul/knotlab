@@ -359,6 +359,15 @@ exactly. That is the classical specialization order, with 4 lying between 3
 and 5 in the count exactly when it does in the order
 ([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md);
 scoped after its referee, 17 November 2026).
+Which knot laws on the weave give a ruler (`WEAVE-LAWS-20261117-001`, proof and
+frozen computation, referee pending)? None that is also pairwise. Only the
+not-all-equal class keeps all its information in pair counts. On the weave,
+with signs that agree on every pair, it is the triangular antiferromagnet in
+disguise, which is critical; with signs that disagree, its rows lock. The laws
+whose counts do give a ruler there, OR and "not exactly two ones" (hard hexagons,
+in the literature), keep part of their information in counts of three. On this
+meeting pattern, information and a scale sit in different laws
+([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

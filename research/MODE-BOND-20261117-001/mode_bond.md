@@ -55,9 +55,11 @@ the first draft inferred the count).
 
 Frozen in [predictions.md](predictions.md), commit 7451de98b, before any Part A computation.
 - **P1 holds.** No gadget at a level-3 type for any of the 5 patterns.
-- **P2 holds so far.** The test finds gadgets for 3 of the 5 bounded controls: 70,260 for bace53f8f952-58, 904 for -111 and 62 for
-  -147. The two ca1efb37ad88 controls were still running at the close (LONG_RUNNING `MODE-BOND-A1`). A separate check is complete:
-  the joined product test fails for all 12 bounded descriptions, as it must.
+- **P2 holds.** The test finds gadgets for all 5 bounded controls: 70,260 for bace53f8f952-58, 904 for -111 and 62 for -147, by the
+  full closure. For the two ca1efb37ad88 controls the full closure passed its cap of 500,000 pairs. An existence check, stopping at
+  the first gadget at a level-3 type, found one for each in 7 and 3 seconds (`run_controls_first.py`, `controls_first.json`;
+  LONG_RUNNING `MODE-BOND-A1`, folded in after the referee, not refereed). A separate check is complete: the joined product test
+  fails for all 12 bounded descriptions, as it must.
 - **P3 holds, trivially.** No crossing of the link can meet level 3, so paired crossings add nothing.
 - **P4 does not apply.** No gadget appeared.
 
@@ -76,7 +78,8 @@ MODE-BOND-R1 ([report](referee-R1/report.md)), confirmed, no Block. Folded in on
 - **TWO-ENDS's reading of the carried link.** Four TWO-ENDS sentences read the link as a route the top might take. They are true as
   implications but were read as live possibilities, and they steered this direction. They now carry a note, "superseded by
   MODE-BOND: the link never meets the top". This is logged in `docs/CORRECTIONS.md` as Not a block.
-- **Not refereed.** The two ca1efb37ad88 controls of the decorated test (`MODE-BOND-A1`), still running. Nothing rests on them.
+- **Not refereed.** The two ca1efb37ad88 controls of the decorated test (`MODE-BOND-A1`), finished after the referee by an
+  existence check (a gadget each). Nothing rests on them.
 
 ## Lessons
 

@@ -203,7 +203,7 @@ class Decorated:
                     out.setdefault(t0, set()).add(C)
         return {t: sorted(v) for t, v in out.items()}
 
-    def closure(self, start_type, conds, max_pairs=500000):
+    def closure(self, start_type, conds, max_pairs=500000, stop_types=None):
         """Backward closure from crossing tops of start_type with the given conditions (masks on start_type's states).
         Returns Pairs as dict type -> dict (M1, M2) -> witness."""
         tree = self.tree
@@ -245,6 +245,8 @@ class Decorated:
                         if N1 and N1 != N2 and (N1, N2) not in pairs[t]:
                             pairs[t][(N1, N2)] = ('up', c, M1, M2, j, restr, cube)
                             work.append((t, N1, N2))
+                            if stop_types is not None and t in stop_types:
+                                return pairs  # a gadget at a target type: enough for an existence check
                             if sum(len(p) for p in pairs.values()) > max_pairs:
                                 raise RuntimeError('closure over %d pairs' % max_pairs)
         return pairs
@@ -257,13 +259,13 @@ def level_types(tree, k):
     return sorted(ts)
 
 
-def gadgets(D, k=3, max_pairs=500000):
+def gadgets(D, k=3, max_pairs=500000, first_only=False):
     """All gadgets: for every start type with conditions, the closure, then the pairs at types found at level k with
     0 != M1 != M2. Returns (list of (start type, level-k type, M1, M2, witness), closure sizes)."""
     out, sizes = [], {}
     tk = level_types(D.tree, k)
     for t0, conds in D.conditions().items():
-        pairs = D.closure(t0, conds, max_pairs=max_pairs)
+        pairs = D.closure(t0, conds, max_pairs=max_pairs, stop_types=set(tk) if first_only else None)
         sizes[t0] = {t: len(p) for t, p in pairs.items() if p}
         for t in tk:
             for (M1, M2), w in pairs[t].items():

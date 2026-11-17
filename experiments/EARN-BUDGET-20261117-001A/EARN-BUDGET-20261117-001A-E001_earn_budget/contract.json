@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "EARN-BUDGET-20261117-001A-E001",
+  "ticket": "EARN-BUDGET-20261117-001A",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does a structure-changing slow loop whose budget doubles after rebuilds that merged at least theta of the pattern's classes per unit of relative slow cost, and halves otherwise, keep the eager loop's gain on locally structured patterns and lose its cost on structure-poor ones, on fresh instances and on meeting patterns it was not tuned on?",
+  "inputs": "The knot pattern, the fast loop's state, and the slow loop's own record of classes merged and work spent since its last rebuild.",
+  "forbidden_inputs": "The hidden planted state (used only by gate G7), any test instance during tuning, any solver output.",
+  "mapping": "Four tuned parameters of the earned budget (theta, rho_max, rho_min, rebuild batch rb) chosen from 90 settings on rand 2.1, block 2.5 and local window 10 at n = 800 (E) or on rand and block alone (Erb), with a declared eager tie rule; fixed moves (tie merges by bounded propagation refutations), random targets.",
+  "primary_observable": "On local window 20 at n = 3200 (a new pattern), R_W = E's charged work (median over 50 instances of five-run geometric means) / the better of re-tuned Novelty+ and probSAT, 99% paired bootstrap; R_CPU beside it.",
+  "comparators_or_controls": "Re-tuned Novelty+ (48 settings) and probSAT (10); the best fixed batched budget Gb; SLOW-LOOP's fixed grid Gm and static probing ST, tuned on the same mixture; SLOW-LOOP's frozen G and GO; CaDiCaL for context.",
+  "resource_budget": "Re-tuning, policy tuning and the test at n = 800 and 3200 (about 3 CPU-hours) and a stress cell at 12800, CPU only, at most 5 workers, MemoryMax 16G, shared runner.",
+  "first_executable_signal": "Gates G0-G9: brute-force soundness of every move including the earned budget's, the wrong-parity mutant, run-for-run identity with SCALE-MEMORY's engine and SLOW-LOOP's driver, and the budget's response (G8).",
+  "stop_rule": "Stop at the frozen decision rule; keep every run; nothing added after the test results are seen except the registered stress cell T2.",
+  "nonclaims": "Planted instances only; the moves and the scheduling principle are known (probing, equivalent-literal substitution, productivity-driven inprocessing); no claim about SAT in general, P vs NP, native emergence or self-improving AI; CDCL solves the local patterns far faster.",
+  "preregistration": "research/EARN-BUDGET-20261117-001/preregistration.md"
+}

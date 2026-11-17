@@ -1,0 +1,27 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SLOW-LOOP-20261117-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "group": "learning",
+    "program": "learning",
+    "takes": "SLOW-LOOP-20261117-001#1"
+  },
+  "id": "EARN-BUDGET-20261117-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "SLOW-LOOP-20261117-001#1 (coordinator's go-ahead 2026-11-17; sub-goal B191; goals G15, G16). SLOW-LOOP found that an eager structure-changing slow loop (tie merges, shadow knots) cuts charged work 4-8x on local patterns but costs 1.5-2x on random and block ones, and that a fixed budget tuned on structure-poor patterns stays lazy. Here the slow budget doubles after an epoch whose merges shrank the pattern by at least theta per unit of relative slow cost and halves otherwise (productivity-driven scheduling, as in SAT solvers' inprocessing). Tuned on rand, block and local window 10 at n = 800 (and on rand and block alone, with a pre-declared eager tie rule), tested on fresh instances of seven patterns at 3200, two of them new (local window 20; local window 10 at density 3.0) and one new to this line (heavy-tailed degrees), five runs, against re-tuned Novelty+ and probSAT, tuned static probing, the best fixed budget on the same mixture and SLOW-LOOP's two fixed policies. Stop at the frozen rule.",
+  "ownership": {
+    "root": true,
+    "scope_id": "EARN-BUDGET-20261117-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "Does a slow loop that sets its own eagerness from how fast its moves shrink the knot pattern keep the eager loop's gain on locally structured patterns and lose its cost elsewhere, on fresh instances and new meeting patterns?"
+}

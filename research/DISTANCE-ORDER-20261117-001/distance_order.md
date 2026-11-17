@@ -44,7 +44,8 @@ start's own class, not the weave's own steps (the referee's reading, computed). 
   - Read with flips, each not-all-equal knot gives a chain of three, and on every spatial base tested that is the longest chain:
     three, or four counting the start's own flip.
   - Order costs states. A chain of m distinctions allows at most 2m of their 2^m joint values.
-  - The one base whose counts make a line with nothing skipped, 2|i − j|, is the threshold line, and it has only 2n states.
+  - With all thresholds of both kinds allowed, the 2n states give disagreement counts 2|i − j|. The counts determine the
+    nonconstant thresholds and leave the two constant states optional. [Four-distinction check](#local-and-global-betweenness)
 - **On knot trees the two jobs meet (proved).** When the knots form no cycle, τ = −log₃ |1 − 2d/N| equals steps apart exactly. Among
   such bases, steps apart determines the knots. So there one quantity, read from the allowed states alone, is built from unit
   steps, goes outward from any start with nothing skipped, and carries the base. On the thread and the weave, τ breaks. On the weave,
@@ -145,6 +146,28 @@ The local parts are statement 3 in this form, statement 6, and the measurements 
   assumption.
 - Steps apart and bond distance are only cited, not re-proved, as not carrying everything. The n = 4 collision of
   `DISTANCE-INFO-20261117-001` serves for both.
+
+## Local and global betweenness
+
+Review, 17 November 2026. In statement 5, a state is a threshold when its values change at most once along the given order.
+The theorem tests **every** triple in that order. Its summary about neighbours needs that qualification.
+
+Write `B(a,b,c)` when the allowed states exclude `a = c ≠ b`. Impose `B(a,b,c)` and `B(b,c,d)`.
+Each of those triples passes K1–K3 after the fourth distinction is forgotten. Of the 16 states on four distinctions,
+10 survive both rules. Eight change value at most once. The other two, `0110` and `1001`, change twice.
+For example, in `0110` the first and last values agree and the second differs, so `B(a,b,d)` fails.
+Checking all four ordered triples leaves exactly the eight thresholds. The same enumeration on five distinctions gives
+16 states for consecutive triples and 10 for all triples.
+
+There is a second qualification to the answer above. With disagreement counts `d(i,j) = 2|i − j|`, additivity on all
+triples makes every allowed state a threshold. Each adjacent pair differs in exactly two states, forcing both
+nonconstant thresholds that change at that pair. Either constant state contributes zero to every count. For example,
+all eight thresholds on four distinctions and just the six nonconstant ones have identical raw disagreement counts.
+
+The parity examples in the proof of statement 4 also need corrected witnesses. For even parity on `abc` or `abd`,
+`0111` satisfies both laws and `0110` satisfies only the first. For even parity on `abcd` or `abce`, both laws exclude
+`01111` and only the first allows `01101`. Exhaustive enumeration gives the same total number of states in each pair
+of bases and the same count on every pair of distinctions (8 states and count 4, or 16 states and count 8).
 
 ## Reproduce
 

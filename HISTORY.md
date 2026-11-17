@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026 · Local and global betweenness
+
+- The order study's proof uses betweenness on every ordered triple. Its summary about neighbours was too strong.
+  On four distinctions the two consecutive triples allow ten states, including `0110` and `1001`. All four triples
+  together allow the eight states that change value at most once.
+- The raw disagreement table of those eight states also belongs to the six nonconstant ones. The study's uniqueness
+  claim now specifies which states the counts determine. Its parity examples have corrected witnesses, `0110` and
+  `01101`, for two different relations with identical pair counts. [Review and counts](research/DISTANCE-ORDER-20261117-001/distance_order.md#local-and-global-betweenness)
+
 ## 17 November 2026: the dimension test, confirmed by its referee, read with knots first
 
 - The dimension test (`DISTANCE-DIM-20261117-001`) was confirmed by its referee with no Block, and is now read with knots first, as

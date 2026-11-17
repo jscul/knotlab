@@ -328,14 +328,20 @@ constraint that no allowed state has a = b ≠ c, a knot where the three pairs
 are free (on a chain of two-place implications, which has no knot, it follows
 from the two-place rules: x → y → z reads 1, 1 and 2; corrected 17 November
 2026), and it costs states: a chain of m distinctions allows at most 2m of their joint
-values. On a base whose knots form no cycle, −log₃ |1 − 2d/N| equals steps
-apart, so one distance read from the states goes outward one step at a time and
-carries the base. With cycles of knots the two jobs split. On the thread, a
-chain of knots and the six-regular weave no distinction lies between two others
-in the disagreement count, and its rates rise and fall with steps apart (on the
-weave, 2/3 one step away and below 1/2 at every third distinction of a row),
-while steps apart and bond distance keep the order but not all the information
-([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md)).
+values. On a base whose knots form no cycle, such as a chain of knots,
+−log₃ |1 − 2d/N| equals steps apart, so one distance read from the states goes
+outward one step at a time and carries the base (proved). On the thread and
+the six-regular weave, read with exact additive betweenness (A98), no
+distinction lies between two others in the disagreement count, and its rates
+rise and fall with steps apart (on the weave, 2/3 one step away and below 1/2
+at every third distinction of a row), while steps apart and bond distance keep
+the order but not all the information (computed). Read only as order, the
+weave's count does have a local order with nothing skipped, but a start's
+nearest neighbours are twelve, its six knot-neighbours and the six second
+neighbours of its own class, not the weave's own six (the study's referee).
+That split is not a property of cycles: many small bases with cycles of knots
+have betweenness ([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md);
+scoped after its referee, 17 November 2026).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

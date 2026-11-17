@@ -14,3 +14,18 @@ Ticket `DISTANCE-ORDER-20261117-001Z`, 2026-11-17. A ledger; it makes no new cla
 | 5 | On the thread, the knot chain and the weave (L = 6, 9, 12) no distinction lies between two others in the disagreement count; it is not built from unit steps; with flips the longest chain is 4 (3 without the start's flip); τ is steps apart on the chain and not on the thread or the weave. | computed, frozen (9 of 9 held) | B |
 
 **Recommendation:** Research directions; the first (can the weave's states read steps apart) starts on the coordinator's go-ahead.
+
+## After the referee (R1, 17 November 2026)
+
+Confirmed with fixes, no Block; folded in the same day and logged in `docs/CORRECTIONS.md`. The rows above are kept as written.
+- **Narrowing** of row 5's reading, not its numbers. "No distinction lies between two others" holds under exact additive
+  betweenness (A98). Read only as order, a weave start has twelve nearest neighbours with nothing between, the six knot-neighbours
+  and six second neighbours of its own class. So the split on the thread and the weave rests on A98, and it is not a property of
+  cycles: the census has cyclic bases with betweenness.
+- **Not a block.** Row 2's statement 3(b) is proved for every n ≥ 4. Statement 7's "four" is six. "Non-constant P1" is 72 and 780 by
+  the referee's definition. Bond distance has the order up to its offset.
+- **Narrowing from the review of what the premise reopens.** Row 1's betweenness is a knot where its three pairs are free. On the
+  chain of implications x → y → z the counts are 1, 1 and 2 with no knot.
+
+**Recommendation, unchanged:** Research directions. The first, whether the weave's states read steps apart, is taken by the
+dimension test on the coordinator's go-ahead.

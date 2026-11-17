@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the order test, confirmed by its referee, with one narrowing
+
+- The order test (`DISTANCE-ORDER-20261117-001`) was confirmed by its referee with no Block. All seven statements of its proof
+  hold. The disagreement table's recovery of a not-all-equal base is proved for every size from four distinctions. Every computed
+  number recomputes, including the weave's exact counts.
+- Narrowed: "with cycles of knots the two jobs split" is what one strict reading of order (exact additive betweenness, A98) finds
+  on the thread and the weave. It is not a property of cycles. Read only as order, a start on the weave has twelve nearest
+  neighbours with nothing between: its six knot-neighbours and six more of its own class, not the weave's own six. THEORY.md,
+  Intuitions lesson 2.4, the notebook, A97, A98 and the goals now say so
+  ([decision note](research/DISTANCE-ORDER-20261117-001/distance_order.md),
+  [referee's report](research/DISTANCE-ORDER-20261117-001/referee-R1/report.md)).
+- Small fixes, none changing a result: six completions, not four, in one step of the proof; a defined count for an exploratory
+  census line; bond distance's order holds up to its offset of one. The study's note and proof also carry the review's narrowing
+  that betweenness is a knot only where its three pairs are free.
+
 ## 17 November 2026: order in the disagreement count does not need a knot
 
 - Narrowed: THEORY.md and Intuitions lesson 2.4 said that, since three distinctions are in order in the disagreement count

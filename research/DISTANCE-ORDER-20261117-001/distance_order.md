@@ -1,7 +1,8 @@
 # Which distance carries a base's information, and which gives an order with nothing skipped
 
 Epic `DISTANCE-ORDER-20261117-001`, 17 November 2026, by Claude. It follows `DISTANCE-INFO-20261117-001`, its referee and the
-owner's answer on A97. Goals G1 and G16. Referee pending. Pre-registration: [preregistration.md](preregistration.md), frozen in
+owner's answer on A97. Goals G1 and G16. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on
+17 November (see Referee). Pre-registration: [preregistration.md](preregistration.md), frozen in
 commit `9becfe4b8` at 18:36:24 UTC; the run went from 18:36:33 to 18:38:49 UTC. Proof:
 [proof.md](../../proofs/DISTANCE-ORDER-20261117-001A/DISTANCE-ORDER-20261117-001A-P001_betweenness/proof.md). Code:
 [order.py and run.py](../../experiments/DISTANCE-ORDER-20261117-001B/DISTANCE-ORDER-20261117-001B-E001_order/). Results:
@@ -9,8 +10,11 @@ commit `9becfe4b8` at 18:36:24 UTC; the run went from 18:36:33 to 18:38:49 UTC. 
 
 ## The answer
 
-**Where knots form no cycle, one distance read from the allowed states does both. Where they form cycles, as on the thread and the
-weave, the two jobs split between different distances.**
+**On knot trees one distance read from the allowed states does both (proved).** On the thread and the weave, read with exact
+additive betweenness (A98), the count that carries the information has no betweenness at all (computed). Read only as order, it
+has a local order with nothing skipped, but its nearest neighbours are the knot-neighbours plus the second neighbours of the
+start's own class, not the weave's own steps (the referee's reading, computed). *Narrowed after the referee: the first answer said
+"where they form cycles, the two jobs split"; that is one strict reading on two bases, not a property of cycles.*
 
 - **The disagreement count carries everything (proved).** The disagreement count of two distinctions is the number of allowed
   states in which they take different values.
@@ -21,22 +25,29 @@ weave, the two jobs split between different distances.**
     against 1/2, they differ.
   - The reason is that "not all equal" on three distinctions is itself a sum of pairwise disagreements. Pairs see exactly three
     places: a parity knot is invisible to them.
-- **It has no order on the program's spatial bases (computed).** These are the thread, a chain of knots and the six-regular weave at
-  L = 6, 9 and 12. On all of them no distinction lies between two others, nothing is built from unit steps, and the rates go up and
-  down with steps apart. On the weave the rate is 2/3 one step away. Along a row it falls below 1/2 at every third distinction and
+- **It has no additive betweenness on the program's spatial bases (computed, under A98).** These are the thread, a chain of knots
+  and the six-regular weave at L = 6, 9 and 12. On all of them no distinction lies between two others, nothing is built from unit
+  steps, and the rates go up and down with steps apart. Read only as order (w between u and v when nearer to each than they are to
+  each other; the literature's relative neighbourhood graph), the weave's start has exactly twelve neighbours with nothing between,
+  at L = 6, 9 and 12: its six knot-neighbours and the six second neighbours of its own class. Every farther distinction has something
+  between it and the start. A path back to the start falling one step at a time fails for 11 of 35, 26 of 80 and 47 of 143
+  distinctions (the referee's computation). On the weave the rate is 2/3 one step away. Along a row it falls below 1/2 at every third distinction and
   stays above 1/2 elsewhere (at L = 12: 0.667, 0.600, 0.311, 0.589, 0.581, 0.339).
-- **Steps apart and bond distance have the order but do not carry everything.** Both have an order with nothing skipped. Bond
-  distance is steps apart plus one on the knot chain, on the thread at ten distinctions except its two ends, and on the weave within
+- **Steps apart and bond distance have the order but do not carry everything.** Both have an order with nothing skipped, bond
+  distance up to its offset of one. Bond distance is steps apart plus one on the knot chain, on the thread at ten distinctions except its two ends, and on the weave within
   the ruler theorems' margin. But equal tables of either still allow different states, from four distinctions on (`DISTANCE-INFO-20261117-001`).
-- **Order lives in knots (proved).** In the disagreement count, "c lies between a and b" says exactly that no allowed state has
-  a = b ≠ c, which is a three-place constraint.
+- **Order is a three-place constraint (proved).** In the disagreement count, "c lies between a and b" says exactly that no allowed
+  state has a = b ≠ c, which is a three-place constraint. It is a knot where the three pairs are free. On complement-closed bases
+  with no tie, strict betweenness is always a knot. Without complement closure it can follow from two-place rules: on the chain of
+  implications x → y → z, which has no knot, the counts are 1, 1 and 2 (corrected the same day by the review of what the premise
+  reopens).
   - Read with flips, each not-all-equal knot gives a chain of three, and on every spatial base tested that is the longest chain:
     three, or four counting the start's own flip.
   - Order costs states. A chain of m distinctions allows at most 2m of their 2^m joint values.
   - The one base whose counts make a line with nothing skipped, 2|i − j|, is the threshold line, and it has only 2n states.
 - **On knot trees the two jobs meet (proved).** When the knots form no cycle, τ = −log₃ |1 − 2d/N| equals steps apart exactly. Among
   such bases, steps apart determines the knots. So there one quantity, read from the allowed states alone, is built from unit
-  steps, goes outward from any start with nothing skipped, and carries the base. Where knots form cycles, τ breaks. On the weave,
+  steps, goes outward from any start with nothing skipped, and carries the base. On the thread and the weave, τ breaks. On the weave,
   two distinctions two steps apart in the same one of its three classes read nearer (τ = 0.66) than two that share a knot (τ = 1).
 
 | Base | P1, built from unit steps | Betweenness triples | Gap graph | Longest chain, alone / with flips / without the start's flip | τ = steps apart | τ grows with steps apart |
@@ -56,7 +67,8 @@ definition.
 - **Betweenness.** No relation on four distinctions has any. At five, 732 of 1,023 relations have some, and at six, 87,924 of
   97,248. These are mostly bases with few states, as statement 6 leads one to expect.
 - **Lines.** No relation on four to six distinctions has a gap graph that is a path.
-- **Unit steps.** 92 of 1,023 relations at n = 5, and 870 of 97,248 at n = 6, have a non-constant count built from unit steps (P1).
+- **Unit steps.** 92 of 1,023 relations at n = 5, and 870 of 97,248 at n = 6, pass P1 with a table that is not constant. Counting only
+  tables with at least two distinct positive values, as the referee does, gives 0, 72 and 780 at n = 4, 5 and 6.
 - **The chain bound** of statement 6 held everywhere.
 - **τ.** τ with N gives 16, 674 and 63,355 distinct tables for 16, 1,023 and 97,248 relations. Dropping the sign of the correlation
   loses information, so τ is not a reading that carries everything, except among knot trees.
@@ -88,25 +100,27 @@ three to six distinctions, every signed complement-closed relation of four and f
 The owner's reading has two parts: distance is the only form of information, and distance is topological, with no direction and
 an order in which nothing is skipped. Read with the pairwise distances tested here:
 
-- **Without cycles of knots, the reading holds exactly.** On a base whose knots form no cycle, one quantity read from the allowed
-  states, τ, is steps apart. It goes outward from any start one unit at a time, and among such bases it determines the base.
-- **With cycles of knots, the two parts come apart.** The disagreement count holds all the information but no order: on the thread
-  and the weave nothing lies between anything. Steps apart and bond distance hold the order but not all the information. This is
-  proved for the information (statement 3; `DISTANCE-INFO-20261117-001` for the collisions) and computed for the absence of order.
-- **The order is in the knots.** By statement 1, "c lies between a and b" is a three-place knot. A distance that orders a base
-  therefore restates its knots, and statement 6 says it costs states: a long order means a nearly frozen base.
+- **Without cycles of knots, the reading holds exactly (proved).** On a base whose knots form no cycle, one quantity read from the
+  allowed states, τ, is steps apart. It goes outward from any start one unit at a time, and among such bases it determines the base.
+- **On the thread and the weave, under A98's strict reading, the two parts come apart (computed).** The disagreement count holds all
+  the information but no additive betweenness. Steps apart and bond distance hold the order but not all the information.
+- **Not a property of cycles.** Under an order-only reading the weave's count has a local order, though not the weave's own (twelve
+  nearest neighbours instead of six). The census has 732 and 87,924 relations with cycles of knots and strict betweenness at n = 5
+  and 6, and the threshold-line control has cycles and does both. What the data show is about spatial bases with many states,
+  as statement 6 says: order costs states.
+- **The order is a three-place constraint.** By statement 1, "c lies between a and b" is a three-place constraint, a knot where its
+  pairs are free. Statement 6 says it costs states: a long order means a nearly frozen base.
 
-So A97 is narrowed, not overturned. It holds on knot trees, and with cycles of knots it needs either two readings of distance or a
-reading not tried here. It stays under challenge, and the reading of "no skipping" used here is recorded as an assumption of its
-own.
+So A97 is narrowed, not overturned. It holds on knot trees. Its narrowing on bases with cycles rests on A98's strict reading, and
+an order-only reading changes it on the weave. A97 stays under challenge.
 
 ## What the knot picture explained
 
 - **Information.** The census result "the pair table determines the base" turned out to be the law's own shape. Not all equal on
   three is a sum of pairwise disagreements. That is the dual of the known fact that the law reads pair counts of knots
   (`OVERLAP-READ-20261111-001`), and it explains why pairs see exactly three places and miss parity.
-- **Order.** The knot picture says where order comes from: betweenness of three is a knot. A base's order is its knots, read three
-  at a time.
+- **Order.** The knot picture says where order comes from: betweenness of three is a three-place constraint, a knot wherever its
+  pairs are free. On a base with no tie and closed under flipping all values, its order is its knots, read three at a time.
 - **Distance.** It also says when a distance read from states is a ruler: when no cycle of knots lets two routes interfere. The
   weave's three classes are the interference. The literature's version is the additive tree distance of phylogenetics, which
   works on trees and fails with cycles.
@@ -152,14 +166,33 @@ Consulted before the freeze. It:
 
 It was not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 17 November 2026, by a background referee thread with fresh code and no Codex: confirmed with
+fixes, no Block. All seven statements are correct. Statement 3(b), with its recovery of N, is proved for every n ≥ 4. Every number of
+ticket B recomputes with the referee's own code, including the weave's exact counts and a SAT check of no betweenness at L = 6 and
+9. The freeze preceded the results. Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing.** "With cycles they split" is what A98's exact additive betweenness finds on two bases, not a property of cycles.
+   The census has cyclic bases with betweenness, and the threshold line is cyclic and does both. Read only as order, the weave's
+   count has a local order of twelve neighbours, not the weave's six. The answer, the meaning for A97, the position rows, A97, A98,
+   the notebook, the goals and the two premise pages are scoped, and the chain of knots, a knot tree, is no longer listed under
+   cycles.
+2. **Not a block.** Statement 7 said "four if x is also new"; it is six. Only the equal weight is used.
+3. **Not a block.** "Non-constant P1" counted tables with zeros and one positive value; the referee's 72 and 780 are given beside 92
+   and 870.
+4. **Not a block.** Bond distance has the order only up to its offset of one.
+5. **Literature added to the proof.** The second-moment reading behind statement 3 (degree-two Sherali–Adams and sum-of-squares:
+   a nonnegative degree-two violation count holds exactly when its mean is zero), and the broadcast process on a tree behind
+   statement 7 (Evans, Kenyon, Peres and Schulman 2000).
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: which distance carries the information and which the order | **Status:** Successful (referee pending) | Proof that the disagreement count determines every not-all-equal base from four distinctions; on the thread, knot chain and weave it has no betweenness at all; on knot trees τ is steps apart; 9 of 9 predictions held |
-| Local direction: distance that is both information and order | Promising | Holds on knot trees, splits with cycles; whether the weave's states can read steps apart in some other way is open |
+| This attempt: which distance carries the information and which the order | **Status:** Successful (refereed, confirmed with fixes) | Proof that the disagreement count determines every not-all-equal base from four distinctions; on knot trees τ is steps apart; on the thread, knot chain and weave no additive betweenness; read only as order, a local order of twelve neighbours on the weave; 9 of 9 predictions held |
+| Local direction: distance that is both information and order | Promising | Holds on knot trees; on the weave it depends on the reading of order (A98); whether the weave's states can read steps apart some other way is open |
 | Broader exploration: what determines a relation | Known alternatives | Pair statistics determine conjunctions of complement-closed constraints on at most three places (likely folklore); parity needs more |
-| Long-term goal: G16 and G1 | G16 capability gained; G1 obstruction learned | G16: what pair counts of the allowed states determine is now proved. G1: on the weave, the count that carries the information gives no order of its own |
+| Long-term goal: G16 and G1 | G16 capability gained; G1 obstruction learned | G16: what pair counts of the allowed states determine is now proved. G1: on the weave, the count that carries the information gives no additive order, and its order-only neighbours are not the weave's own |
 
 **Next step:** Research directions. No action is selected; the first starts on the coordinator's go-ahead.
 
@@ -169,14 +202,14 @@ It was not consulted after the read-out.
 | 2 | k-wise disagreement counts and k-place knots, with parity at k = 3 | 1/3, likely folklore | 3/3 | Prove the degree-k statement → stop at the proof | Alternative |
 | 3 | Order against states: how long a chain a base of N states can hold, and whether the program's grown number line is near the bound | 1/3 | 2/3 | Compare chains with the bound of statement 6 on `OPEN-END-GROWTH-20261107-001`'s thread → stop at the comparison | Alternative |
 
-**Corrections:** one Narrowing, logged. The disagreement table was said to determine "every not-all-equal base on up to six
+**Corrections:** one Narrowing at the close, and after the referee one more Narrowing and three Not a block entries, all logged. The disagreement table was said to determine "every not-all-equal base on up to six
 distinctions" (THEORY.md, Intuitions lesson 2.4, HISTORY.md and the predecessor's note). It fails at three, one knot against none,
 and holds from four, now proved.
 
 **Goals:** a G16 and G1 checkpoint (G16 capability gained, G1 obstruction learned). G16's entry is upgraded from computed to
 proved. No goal changed.
 
-**Assumptions:** A97 stays Under challenge, narrowed: it holds on knot trees, and splits with cycles of knots. New entry A98 records
-the reading of "no skipping" used here.
+**Assumptions:** A97 stays Under challenge, narrowed: it holds on knot trees; on the thread and the weave the split rests on A98.
+New entry A98 records the reading of "no skipping" used here; its challenge was partly run by the referee.
 
 **Basket:** read; nothing in it is this question.

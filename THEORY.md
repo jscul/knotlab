@@ -142,10 +142,11 @@ knot; on a chain of two-place implications, which has no knot, it follows from
 the two-place rules, and the count is exactly the number of steps (on
 x → y → z it is 1, 1 and 2). Where the knots form no
 cycle, one quantity read from the counts equals steps apart, so a single
-distance carries the base and goes outward with nothing skipped; on the thread
-and the six-regular weave the count that carries everything puts no distinction
-between two others (proved and computed, referee pending). This page leaves
-the choice of his word open.
+distance carries the base and goes outward with nothing skipped (proved). On
+the thread and the six-regular weave, read with exact additive betweenness, the
+count that carries everything puts no distinction between two others; read
+only as order, it has a local order whose nearest neighbours are not the
+weave's own (computed, refereed). This page leaves the choice of his word open.
 
 Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [its referee](research/DISTANCE-INFO-20261117-001/referee-R1/report.md), [the order test](research/DISTANCE-ORDER-20261117-001/distance_order.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
 

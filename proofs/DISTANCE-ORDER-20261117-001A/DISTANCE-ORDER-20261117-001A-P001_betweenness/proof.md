@@ -45,7 +45,10 @@ Ticket `DISTANCE-ORDER-20261117-001A`, 17 November 2026, by Claude. Epic `DISTAN
 5. **A line made of betweenness.** On distinctions 0, …, n − 1, the count is additive along the order, d(i, k) = d(i, j) + d(j, k)
    for all i < j < k, if and only if every allowed state is a threshold, 0…01…1 or 1…10…0. If every threshold is allowed, then
    d(i, j) = 2|i − j|. Each condition "j lies between i and k" is a three-place knot (K1 to K3) excluding 010 and 101 on (i, j, k).
-   It is a not-all-equal knot with j read flipped, not a plain one.
+   It is a not-all-equal knot with j read flipped, not a plain one. When every threshold of both kinds is allowed, the base's
+   projection on (i, j, k) is exactly that knot. *Narrowed after the review of what the premise reopens, 17 November 2026: with only
+   one kind of threshold, as on the chain of implications x → y → z, the projection also excludes 100 and 110, its pairs are not
+   free, and it is no knot; there d(i, j) = |i − j|, a line from two-place rules alone.*
 6. **Order costs states.** Take a chain o, v1, …, vk, each strictly between o and the next. Then every allowed state is a
    threshold along the chain, so the base allows at most 2(k + 1) joint values on its k + 1 distinctions, out of 2^(k+1).
 7. **On knot trees the rate reads steps apart.** Take a not-all-equal pattern with no cycle of knots: its knots can be listed so
@@ -118,7 +121,7 @@ By statement 1 no allowed state has v_i = v_l ≠ v_j, so every state is monoton
 differs in 4 of them, rate 2/3 = (1 − (−1/3))/2.
 
 Add a knot (x, y, z) that meets the earlier ones in at most the one distinction x; y and z are new. For each earlier state there
-are exactly three completions on (y, z) (four if x is also new, the case of a separate piece), so every earlier state keeps the same
+are exactly three completions on (y, z) (six if x is also new, the case of a separate piece; corrected after the referee from "four"), so every earlier state keeps the same
 weight.
 - In ±1 terms, among the three completions with x given, y equals x once and differs twice, so the mean of s_y given s_x is
   −s_x/3, and the same holds for z. The pair (y, z) is equal in one of the three completions, so the mean of s_y s_z is −1/3.
@@ -146,8 +149,10 @@ share two distinctions with the knots before it. So the knots are the triples wh
   a set of states in general, which is false: see statement 4, and the bits a knot hides from pairs (`EMERGENCE-BITS-20261021-001`).
 - **The smallest emergent unit.** On one knot of three distinctions, statement 3(c) shows that the table alone cannot tell the knot
   from no knot. It can once N is known, or once the counts are read as rates: 2/3 against 1/2.
-- **Where order lives.** By statement 1, "c lies between a and b" is exactly a three-place constraint. In the disagreement count,
-  order is carried by knots and nowhere else. By statement 6 it is paid for in states: a chain of k + 1 distinctions leaves only
+- **Where order lives.** By statement 1, "c lies between a and b" is exactly a three-place constraint. It is a knot where its three
+  pairs are free. On a base closed under flipping all values and with no tie, every strict betweenness is a knot, since a
+  complement-closed pair that is not free is a tie. Elsewhere it can follow from two-place rules: on the chain of implications x →
+  y → z, which has no knot, the counts are 1, 1 and 2 (narrowed 17 November 2026). By statement 6 it is paid for in states: a chain of k + 1 distinctions leaves only
   2(k + 1) of their 2^(k+1) joint values. A line with nothing skipped (statement 5) is the base whose knots say that each
   distinction lies between its neighbours, and it has only 2n states.
 - **Steps apart, read from the states.** By statement 7, on knot trees the log of the correlation reads steps apart exactly. That is
@@ -162,7 +167,8 @@ share two distinctions with the knots before it. So the knots are the triples wh
   tight, one for each pair of opposite joint states (Deza and Laurent 1997). That "not all equal" on three values has degree two in
   ±1 values, (3 − x_a x_b − x_b x_c − x_c x_a)/4, is standard in the Fourier analysis of constraint problems.
 - **Statement 3** has no source I know in this form, and the advisor knows none either. It is likely folklore: a nonnegative
-  degree-two violation count has mean zero over a base exactly when it vanishes on it. The complement-closed relations of 3(a) sit
+  degree-two violation count has mean zero over a base exactly when it vanishes on it, the second-moment reading behind
+  degree-two Sherali–Adams and sum-of-squares arguments (added after the referee). The complement-closed relations of 3(a) sit
   in the co-clone IN₂ (Böhler, Reith, Schnoor and Vollmer 2005). A co-clone also allows hidden distinctions, and four-place parity
   is in IN₂, so 3(a) covers plain conjunctions of the named constraints, not the whole co-clone.
 - **Statement 4** is the standard fact that parity is pairwise independent.
@@ -170,6 +176,7 @@ share two distinctions with the knots before it. So the knots are the triples wh
 - **Statement 6** is local. It is elementary from statement 1.
 - **Statement 7** is the binary symmetric Markov model on a tree. The log transform is the literature's additive tree metric for
   such models, the Cavender–Farris–Neyman distance of phylogenetics, −½ ln(1 − 2p) (Neyman 1971, Farris 1973, Cavender 1978), here
-  with base three and the sign of the correlation dropped.
+  with base three and the sign of the correlation dropped. The process is the broadcast process on a tree with flip probability
+  2/3 (Evans, Kenyon, Peres and Schulman 2000; added after the referee).
 - **Advisor.** The advisor model was consulted before the freeze. It confirmed statements 1 to 5 by hand. It gave the four-place
   parity witness of statement 4 and the bound behind statement 6, and it proposed the log transform of statement 7.

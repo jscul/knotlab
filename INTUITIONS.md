@@ -898,9 +898,14 @@ knot. It can also follow from two-place rules alone: on the chain of lesson
 are 1, 1 and 2, an exact order with nothing skipped. Where the knots form no
 cycle, one quantity read from the counts equals steps apart (lesson 4.7), so a
 single distance carries the base and goes outward with nothing skipped. On
-the thread and the six-regular weave the two split: the count that carries everything puts no distinction
-between two others, and steps apart, which has the order, does not carry
-everything. The guide leaves the owner's word open.
+the thread and the six-regular weave, read with exact additive betweenness, the
+two split: the count that carries everything puts no distinction between two
+others, and steps apart, which has the order, does not carry everything
+(computed). Read only as order, the weave's count does have a local order with
+nothing skipped, but a start's nearest neighbours are its six knot-neighbours
+and six more of its own class, not the weave's own six (computed by the study's
+referee). So the split depends on how order is read, and it is not a property
+of cycles. The guide leaves the owner's word open.
 
 The register lists one more question: is the full bit that parity hides a
 distance? Not a pairwise one. Under a parity knot every pair takes each of its

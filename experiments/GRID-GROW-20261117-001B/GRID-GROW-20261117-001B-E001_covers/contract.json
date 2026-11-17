@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "GRID-GROW-20261117-001B-E001",
+ "ticket": "GRID-GROW-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On every Young diagram in a 4 x 4 box: is the box-betweenness base the cut system; for every outer-corner step, how many three-place knots extend the cut system, how far they reach, and which; do growth runs to 4 x 4 stay exact with order-independent totals?",
+ "definitions": {
+  "step": "add an outer corner p to the exact cut system of S",
+  "cover": "a set of three-place knots on triples containing p, allowing every target state, excluding every other extension state",
+  "radius": "the largest L1 distance from p of a knot's cells"
+ },
+ "public_inputs": {
+  "code": "gridgrow.py (sha256 8fe9a2e310b6d203fc6abf39dd3d5960711b484923bfbd53f571b684bc4a9d48), run.py (sha256 fb4c462ec2b3a1e22816ed10b6eb7a385ab09a300bbc07f5bf810678bf135879); Python standard library",
+  "run": "python3 -B run.py"
+ },
+ "forbidden_inputs": [
+  "Changing shapes, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P4 of research/GRID-GROW-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "Single-row shapes, where a new line is the line's end growth (B(start, end, new)).",
+ "predictions": {
+  "P1": "base = cuts, d = 2 L1 on all 69",
+  "P2": "new line: min 1, one single cover {opposite corner, neighbour, p}, betweenness; single cell: 0",
+  "P3": "corner fill: min 3, reached at radius 2 by exactly one cover (unit square), all betweenness; parity covers",
+  "P4": "growth exact; 32 knots both orders"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "Under ten minutes, one process."
+}

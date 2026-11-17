@@ -1,0 +1,1790 @@
+{
+ "stored": {
+  "local35-w15-3200": {
+   "instances": 50,
+   "better_fast_rule": "NOV",
+   "ns_per_charged_incidence_median_of_runs": {
+    "fast": 5.217044267120782,
+    "slow": 5.57619425675075,
+    "rebuild": 5.583189965321292
+   },
+   "ns_per_charged_incidence_pooled": {
+    "fast": 5.417065797617316,
+    "slow": 5.714342774092659,
+    "rebuild": 5.773716238942255
+   },
+   "nov_whole_run_ns_per_incidence": 4.967353816934438,
+   "median_run": {
+    "work": 17433778.0,
+    "work_fast": 12090613.0,
+    "work_slow": 1262791.0,
+    "work_rebuild": 4122418.5,
+    "cpu": 0.09734511200000284,
+    "cpu_fast": 0.0641915099999828,
+    "cpu_slow": 0.006942854499968121,
+    "cpu_rebuild": 0.022535389500006886,
+    "rebuilds": 9.0,
+    "epochs": 90.0
+   },
+   "share_rebuild_of_work_median": 0.2252659786848042,
+   "R_work": 0.5568235745935556,
+   "R_work_ci99": [
+    0.5065887964819202,
+    0.6774042223816488
+   ],
+   "R_work_plus_rebuild_cpu_excess": 0.5634435912801563,
+   "ci99_rebuild": [
+    0.5135331114188987,
+    0.6928556084107413
+   ],
+   "R_work_plus_all_uncharged_cpu": 0.588826137573477,
+   "ci99_all": [
+    0.539476391703686,
+    0.7308157586840656
+   ],
+   "R_cpu": 0.6104997685577884,
+   "median_rebuild_cpu_excess_over_work_rebuild": 0.030666817408244385
+  },
+  "local-w20-3200": {
+   "instances": 50,
+   "better_fast_rule": "NOV",
+   "ns_per_charged_incidence_median_of_runs": {
+    "fast": 4.958777924588515,
+    "slow": 5.406211194275829,
+    "rebuild": 5.657684064445681
+   },
+   "ns_per_charged_incidence_pooled": {
+    "fast": 5.040761937679374,
+    "slow": 5.470884097595429,
+    "rebuild": 5.4379759034118145
+   },
+   "nov_whole_run_ns_per_incidence": 4.842029256988802,
+   "median_run": {
+    "work": 20107511.0,
+    "work_fast": 16618681.5,
+    "work_slow": 881706.5,
+    "work_rebuild": 2191737.5,
+    "cpu": 0.10571343149996437,
+    "cpu_fast": 0.08246539950033593,
+    "cpu_slow": 0.00455020250058169,
+    "cpu_rebuild": 0.010792511499971624,
+    "rebuilds": 4.0,
+    "epochs": 113.0
+   },
+   "share_rebuild_of_work_median": 0.09053966621905354,
+   "R_work": 0.7467804002919369,
+   "R_work_ci99": [
+    0.6038125736089871,
+    0.8747973419124261
+   ],
+   "R_work_plus_rebuild_cpu_excess": 0.7467804002919369,
+   "ci99_rebuild": [
+    0.6046569623657412,
+    0.8805038020108149
+   ],
+   "R_work_plus_all_uncharged_cpu": 0.7807260258648179,
+   "ci99_all": [
+    0.6360921637289039,
+    0.9259992350916671
+   ],
+   "R_cpu": 0.7596381921874862,
+   "median_rebuild_cpu_excess_over_work_rebuild": 0.12238668169485534
+  }
+ },
+ "rerun": {
+  "local35-w15-3200": {
+   "runs": 20,
+   "reproduction_vs_stored": {
+    "identical": 20
+   },
+   "mean_per_run": {
+    "work": 18431597.5,
+    "work_fast": 13048361.4,
+    "work_slow": 1272770.0,
+    "work_rebuild": 4110466.1,
+    "rebuild_v1_part": 1223526.25,
+    "rebuild_v2_additions": 2886939.85,
+    "v2_sort_charges": 2668169.25,
+    "actual_sort_ops": 2449745.018429476,
+    "uncharged_sort_ops_net": 30951.742223834364,
+    "uncharged_idx_sort": 605974.235329288,
+    "cpu": 0.11866595360000001,
+    "cpu_fast": 0.07228849925000028,
+    "cpu_slow": 0.007675058050000285,
+    "cpu_rebuild": 0.029402215299999986,
+    "python_numpy_cpu": 0.013855038099999887,
+    "rebuilds": 8.9,
+    "cpu:C.fl_new": 0.0011415737999998898,
+    "cpu:C.fl_run": 0.07384403194999974,
+    "cpu:C.sl_probe": 0.010122394349999777,
+    "cpu:py.sig_keys": 0.001609702700000018,
+    "cpu:np.union1d": 0.0019457188500000666,
+    "cpu:C.sl_reduce": 0.006085961550000138,
+    "cpu:np.unique": 0.004792218899999931,
+    "cpu:np.isin": 0.005023967099999957,
+    "cpu:np.bincount": 0.0002365007499999877,
+    "cpu:np.where": 0.0002469297999999259
+   },
+   "share_v2_additions_of_work_rebuild": 0.7023388053242916,
+   "uncharged_sort_ops_net_share_of_work_rebuild": 0.007529983576274808,
+   "uncharged_sort_ops_net_share_of_work": 0.001679276157361529,
+   "uncharged_idx_sort_share_of_work_rebuild": 0.14742226808032502,
+   "uncharged_idx_sort_share_of_work": 0.03287692427795735,
+   "actual_sort_ops_over_v2_sort_charges": 0.9181370403805815,
+   "ns_per_charged_incidence": {
+    "fast (C fl_run)": 5.659257104114217,
+    "slow (C sl_probe)": 7.953042851418385,
+    "rebuild (all, as reported)": 7.153012477100829,
+    "rebuild C part (sl_reduce + fl_new) over the v1 part": 5.907135502814123,
+    "rebuild Python part over the v2 additions": 7.681032893705755
+   },
+   "rebuild_python_cpu_in_fast_equiv_minus_v2_additions_share_of_work_rebuild": 0.25091130630255204,
+   "rebuild_python_cpu_in_fast_equiv_minus_v2_additions_share_of_work": 0.05595621424910979,
+   "median_per_run_uncharged_sort_share_of_work": 0.0,
+   "median_per_run_idx_sort_share_of_work": 0.03372691004681344,
+   "per_run": [
+    {
+     "work": 18238848,
+     "work_fast": 12187429,
+     "work_slow": 1402266,
+     "work_rebuild": 4649153,
+     "rebuild_v1_part": 1374688,
+     "rebuild_v2_additions": 3274465,
+     "v2_sort_charges": 3027877,
+     "actual_sort_ops": 2795006.457958161,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 164110.49689297468,
+      "np.unique": 1076929.8858293989,
+      "idx.sort after unique (uncharged)": 689367.3468624097,
+      "np.isin": 864598.7283733776
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 689367.3468624097,
+     "linear_elements": {
+      "py.sig_keys": 112766.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.13394870799999997,
+     "cpu_fast": 0.07524736500000062,
+     "cpu_slow": 0.009472953000000117,
+     "cpu_rebuild": 0.036798217999999994,
+     "cpu_parts": {
+      "C.fl_new": 0.0013989980000000402,
+      "C.fl_run": 0.076817615,
+      "C.sl_probe": 0.011902654999999984,
+      "py.sig_keys": 0.0020415789999999046,
+      "np.union1d": 0.002378054000000074,
+      "C.sl_reduce": 0.007709288999999897,
+      "np.unique": 0.0059241909999999676,
+      "np.isin": 0.006257057999999982,
+      "np.bincount": 0.0002742789999999884,
+      "np.where": 0.0003128229999999066
+     },
+     "python_numpy_cpu": 0.017187983999999823
+    },
+    {
+     "work": 19691728,
+     "work_fast": 13136589,
+     "work_slow": 1485981,
+     "work_rebuild": 5069158,
+     "rebuild_v1_part": 1495127,
+     "rebuild_v2_additions": 3574031,
+     "v2_sort_charges": 3313410,
+     "actual_sort_ops": 2922788.1414026916,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 205384.16895351815,
+      "np.unique": 1116664.6890084383,
+      "idx.sort after unique (uncharged)": 692391.9331743242,
+      "np.isin": 908347.3502664107
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 692391.9331743242,
+     "linear_elements": {
+      "py.sig_keys": 114482.0,
+      "np.bincount": 70400.0,
+      "np.where": 70400.0
+     },
+     "rebuilds": 11,
+     "cpu": 0.13976105400000005,
+     "cpu_fast": 0.08060181700000024,
+     "cpu_slow": 0.009914662999999102,
+     "cpu_rebuild": 0.03929554200000002,
+     "cpu_parts": {
+      "C.fl_new": 0.0014077310000000787,
+      "C.fl_run": 0.08227195199999998,
+      "C.sl_probe": 0.012593009999999738,
+      "py.sig_keys": 0.0020832760000000783,
+      "np.union1d": 0.00285210500000016,
+      "C.sl_reduce": 0.008500009999999836,
+      "np.unique": 0.006086598000000054,
+      "np.isin": 0.006836283999999748,
+      "np.bincount": 0.0003103489999997655,
+      "np.where": 0.0003229450000000189
+     },
+     "python_numpy_cpu": 0.018491556999999825
+    },
+    {
+     "work": 18343467,
+     "work_fast": 12722801,
+     "work_slow": 1398887,
+     "work_rebuild": 4221779,
+     "rebuild_v1_part": 1249503,
+     "rebuild_v2_additions": 2972276,
+     "v2_sort_charges": 2745127,
+     "actual_sort_ops": 2594215.899587185,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 145244.249610227,
+      "np.unique": 996593.6416213716,
+      "idx.sort after unique (uncharged)": 648022.9655437468,
+      "np.isin": 804355.0428118396
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 648022.9655437468,
+     "linear_elements": {
+      "py.sig_keys": 106086.0,
+      "np.bincount": 57600.0,
+      "np.where": 57600.0
+     },
+     "rebuilds": 9,
+     "cpu": 0.13069248700000002,
+     "cpu_fast": 0.07850295599999968,
+     "cpu_slow": 0.00934165099999984,
+     "cpu_rebuild": 0.033511539000000035,
+     "cpu_parts": {
+      "C.fl_new": 0.001287835999999709,
+      "C.fl_run": 0.0801000449999999,
+      "C.sl_probe": 0.011824370000000362,
+      "py.sig_keys": 0.0018082290000001056,
+      "np.union1d": 0.002156625000000023,
+      "C.sl_reduce": 0.006935746000000131,
+      "np.unique": 0.005577080999999762,
+      "np.isin": 0.005663971999999906,
+      "np.bincount": 0.0002572529999997908,
+      "np.where": 0.0002810730000001316
+     },
+     "python_numpy_cpu": 0.01574423299999972
+    },
+    {
+     "work": 18077937,
+     "work_fast": 13110086,
+     "work_slow": 1249948,
+     "work_rebuild": 3717903,
+     "rebuild_v1_part": 1126330,
+     "rebuild_v2_additions": 2591573,
+     "v2_sort_charges": 2391753,
+     "actual_sort_ops": 2210695.001759927,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 114335.59672411473,
+      "np.unique": 863375.7775548765,
+      "idx.sort after unique (uncharged)": 553644.884387302,
+      "np.isin": 679338.7430936336
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 553644.884387302,
+     "linear_elements": {
+      "py.sig_keys": 90753.0,
+      "np.bincount": 51200.0,
+      "np.where": 51200.0
+     },
+     "rebuilds": 8,
+     "cpu": 0.12878774999999998,
+     "cpu_fast": 0.0816441250000004,
+     "cpu_slow": 0.008425072999999506,
+     "cpu_rebuild": 0.02923278500000004,
+     "cpu_parts": {
+      "C.fl_new": 0.001148024999999997,
+      "C.fl_run": 0.08327814200000005,
+      "C.sl_probe": 0.010975546999999586,
+      "py.sig_keys": 0.0015911539999997615,
+      "np.union1d": 0.0017784809999998874,
+      "C.sl_reduce": 0.006442651999999827,
+      "np.unique": 0.00482915000000006,
+      "np.isin": 0.0048092669999999504,
+      "np.bincount": 0.00021420400000005113,
+      "np.where": 0.0002404609999998586
+     },
+     "python_numpy_cpu": 0.013462716999999569
+    },
+    {
+     "work": 18787007,
+     "work_fast": 12769236,
+     "work_slow": 1433460,
+     "work_rebuild": 4584311,
+     "rebuild_v1_part": 1373102,
+     "rebuild_v2_additions": 3211209,
+     "v2_sort_charges": 2971939,
+     "actual_sort_ops": 2642289.539476836,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 166194.39248164027,
+      "np.unique": 1024560.0382460703,
+      "idx.sort after unique (uncharged)": 637241.5531669654,
+      "np.isin": 814293.5555821604
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 637241.5531669654,
+     "linear_elements": {
+      "py.sig_keys": 105334.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.13221309400000003,
+     "cpu_fast": 0.07770779600000055,
+     "cpu_slow": 0.009364962999999782,
+     "cpu_rebuild": 0.035723250000000095,
+     "cpu_parts": {
+      "C.fl_new": 0.0013350090000001646,
+      "C.fl_run": 0.07931787200000018,
+      "C.sl_probe": 0.011902311000000387,
+      "py.sig_keys": 0.0018667500000000281,
+      "np.union1d": 0.002437824000000144,
+      "C.sl_reduce": 0.007891194999999795,
+      "np.unique": 0.0055930240000002795,
+      "np.isin": 0.0060883540000000735,
+      "np.bincount": 0.000282721999999902,
+      "np.where": 0.00030395599999955003
+     },
+     "python_numpy_cpu": 0.016572629999999977
+    },
+    {
+     "work": 18041527,
+     "work_fast": 12571121,
+     "work_slow": 1292948,
+     "work_rebuild": 4177458,
+     "rebuild_v1_part": 1235738,
+     "rebuild_v2_additions": 2941720,
+     "v2_sort_charges": 2716675,
+     "actual_sort_ops": 2545620.331162623,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 140899.83250972876,
+      "np.unique": 984447.3597036733,
+      "idx.sort after unique (uncharged)": 633652.2511391647,
+      "np.isin": 786620.8878100563
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 633652.2511391647,
+     "linear_elements": {
+      "py.sig_keys": 103814.0,
+      "np.bincount": 57600.0,
+      "np.where": 57600.0
+     },
+     "rebuilds": 9,
+     "cpu": 0.12725050299999996,
+     "cpu_fast": 0.0761457710000003,
+     "cpu_slow": 0.008761590999999291,
+     "cpu_rebuild": 0.03325336900000009,
+     "cpu_parts": {
+      "C.fl_new": 0.001295459999999471,
+      "C.fl_run": 0.07773483599999942,
+      "C.sl_probe": 0.011185536999999246,
+      "py.sig_keys": 0.0017917260000006596,
+      "np.union1d": 0.002097689999999819,
+      "C.sl_reduce": 0.007052218000000332,
+      "np.unique": 0.0054895379999997385,
+      "np.isin": 0.005558134000000159,
+      "np.bincount": 0.0002650889999997741,
+      "np.where": 0.0002817659999989619
+     },
+     "python_numpy_cpu": 0.015483942999999112
+    },
+    {
+     "work": 22476785,
+     "work_fast": 16196840,
+     "work_slow": 1398841,
+     "work_rebuild": 4881104,
+     "rebuild_v1_part": 1469170,
+     "rebuild_v2_additions": 3411934,
+     "v2_sort_charges": 3161831,
+     "actual_sort_ops": 2634774.675038429,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 168329.02442267863,
+      "np.unique": 1044551.1335998549,
+      "idx.sort after unique (uncharged)": 619633.9901400398,
+      "np.isin": 802260.5268758554
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 619633.9901400398,
+     "linear_elements": {
+      "py.sig_keys": 103242.0,
+      "np.bincount": 70400.0,
+      "np.where": 70400.0
+     },
+     "rebuilds": 11,
+     "cpu": 0.17778183899999989,
+     "cpu_fast": 0.12155266300000145,
+     "cpu_slow": 0.009947533000001174,
+     "cpu_rebuild": 0.03307296299999973,
+     "cpu_parts": {
+      "C.fl_new": 0.0012294119999991526,
+      "C.fl_run": 0.12387360300000028,
+      "C.sl_probe": 0.01359988500000009,
+      "py.sig_keys": 0.0017907949999995676,
+      "np.union1d": 0.0023217349999997694,
+      "C.sl_reduce": 0.007058835000000041,
+      "np.unique": 0.005155712000000312,
+      "np.isin": 0.005658546000000042,
+      "np.bincount": 0.0002887480000002274,
+      "np.where": 0.0002800240000007115
+     },
+     "python_numpy_cpu": 0.01549556000000063
+    },
+    {
+     "work": 17711833,
+     "work_fast": 11422341,
+     "work_slow": 1422328,
+     "work_rebuild": 4867164,
+     "rebuild_v1_part": 1463062,
+     "rebuild_v2_additions": 3404102,
+     "v2_sort_charges": 3153942,
+     "actual_sort_ops": 2632564.773617058,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 166663.40064492333,
+      "np.unique": 1043958.3297025781,
+      "idx.sort after unique (uncharged)": 620496.6145685138,
+      "np.isin": 801446.4287010428
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 620496.6145685138,
+     "linear_elements": {
+      "py.sig_keys": 103257.0,
+      "np.bincount": 70400.0,
+      "np.where": 70400.0
+     },
+     "rebuilds": 11,
+     "cpu": 0.10521144400000004,
+     "cpu_fast": 0.05750936200000045,
+     "cpu_slow": 0.007635528999999863,
+     "cpu_rebuild": 0.03202972400000026,
+     "cpu_parts": {
+      "C.fl_new": 0.001158403000000252,
+      "C.fl_run": 0.05880694999999991,
+      "C.sl_probe": 0.00966662299999732,
+      "py.sig_keys": 0.0017391609999997115,
+      "np.union1d": 0.002285440000000083,
+      "C.sl_reduce": 0.006828443000000517,
+      "np.unique": 0.004906557999999839,
+      "np.isin": 0.005476376000000283,
+      "np.bincount": 0.00027989000000050446,
+      "np.where": 0.0002772770000001312
+     },
+     "python_numpy_cpu": 0.014964702000000552
+    },
+    {
+     "work": 16882364,
+     "work_fast": 12038861,
+     "work_slow": 1129790,
+     "work_rebuild": 3713713,
+     "rebuild_v1_part": 1132812,
+     "rebuild_v2_additions": 2580901,
+     "v2_sort_charges": 2379237,
+     "actual_sort_ops": 2222885.2611719146,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 100357.37031622011,
+      "np.unique": 876453.1495574138,
+      "idx.sort after unique (uncharged)": 566142.490025501,
+      "np.isin": 679932.2512727798
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 566142.490025501,
+     "linear_elements": {
+      "py.sig_keys": 92262.0,
+      "np.bincount": 51200.0,
+      "np.where": 51200.0
+     },
+     "rebuilds": 8,
+     "cpu": 0.10034835799999997,
+     "cpu_fast": 0.06075690999999961,
+     "cpu_slow": 0.006407406000001004,
+     "cpu_rebuild": 0.025269116999999675,
+     "cpu_parts": {
+      "C.fl_new": 0.0010231390000001728,
+      "C.fl_run": 0.062090342000000076,
+      "C.sl_probe": 0.008479456000000107,
+      "py.sig_keys": 0.001399184999999914,
+      "np.union1d": 0.001508774000000157,
+      "C.sl_reduce": 0.005298127000000097,
+      "np.unique": 0.004175679000000043,
+      "np.isin": 0.004231843999999985,
+      "np.bincount": 0.00020824599999968996,
+      "np.where": 0.0002104190000002948
+     },
+     "python_numpy_cpu": 0.011734147000000084
+    },
+    {
+     "work": 18261147,
+     "work_fast": 12469166,
+     "work_slow": 1295346,
+     "work_rebuild": 4496635,
+     "rebuild_v1_part": 1367922,
+     "rebuild_v2_additions": 3128713,
+     "v2_sort_charges": 2896119,
+     "actual_sort_ops": 2479388.239706451,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 150401.74954584014,
+      "np.unique": 978774.0597431372,
+      "idx.sort after unique (uncharged)": 593649.0057815698,
+      "np.isin": 756563.4246359038
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 593649.0057815698,
+     "linear_elements": {
+      "py.sig_keys": 98002.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.10860202600000002,
+     "cpu_fast": 0.06313265500000331,
+     "cpu_slow": 0.0071370200000004935,
+     "cpu_rebuild": 0.029800679000000052,
+     "cpu_parts": {
+      "C.fl_new": 0.0011068150000006494,
+      "C.fl_run": 0.0645344080000001,
+      "C.sl_probe": 0.009538483000000042,
+      "py.sig_keys": 0.0016239950000001002,
+      "np.union1d": 0.0020830819999999584,
+      "C.sl_reduce": 0.006388048000000257,
+      "np.unique": 0.004583888999998953,
+      "np.isin": 0.0051226839999996,
+      "np.bincount": 0.0002671079999996273,
+      "np.where": 0.0002525790000003081
+     },
+     "python_numpy_cpu": 0.013933336999998547
+    },
+    {
+     "work": 16248918,
+     "work_fast": 11849455,
+     "work_slow": 1053200,
+     "work_rebuild": 3346263,
+     "rebuild_v1_part": 1001607,
+     "rebuild_v2_additions": 2344656,
+     "v2_sort_charges": 2157872,
+     "actual_sort_ops": 2151473.5000348804,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 93891.06290979352,
+      "np.unique": 832513.0862192858,
+      "idx.sort after unique (uncharged)": 560900.0533440917,
+      "np.isin": 664169.2975617091
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 560900.0533440917,
+     "linear_elements": {
+      "py.sig_keys": 91436.0,
+      "np.bincount": 44800.0,
+      "np.where": 44800.0
+     },
+     "rebuilds": 7,
+     "cpu": 0.09788239700000001,
+     "cpu_fast": 0.06050816500000189,
+     "cpu_slow": 0.006020972000002178,
+     "cpu_rebuild": 0.023374974999999854,
+     "cpu_parts": {
+      "C.fl_new": 0.000965549000000232,
+      "C.fl_run": 0.06181179999999964,
+      "C.sl_probe": 0.008258694000000899,
+      "py.sig_keys": 0.0012976050000010897,
+      "np.union1d": 0.0013563009999999487,
+      "C.sl_reduce": 0.004753207000000259,
+      "np.unique": 0.004060768999999631,
+      "np.isin": 0.0039189290000003485,
+      "np.bincount": 0.00017320199999959485,
+      "np.where": 0.0001893669999997183
+     },
+     "python_numpy_cpu": 0.010996173000000331
+    },
+    {
+     "work": 12143247,
+     "work_fast": 10551353,
+     "work_slow": 532817,
+     "work_rebuild": 1059077,
+     "rebuild_v1_part": 284866,
+     "rebuild_v2_additions": 774211,
+     "v2_sort_charges": 706012,
+     "actual_sort_ops": 931412.9179008303,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 10523.73763419005,
+      "np.unique": 353898.17331301776,
+      "idx.sort after unique (uncharged)": 275237.8668729535,
+      "np.isin": 291753.14008066896
+     },
+     "uncharged_sort_ops_net": 225400.91790083027,
+     "uncharged_idx_sort": 275237.8668729535,
+     "linear_elements": {
+      "py.sig_keys": 42316.0,
+      "np.bincount": 12800.0,
+      "np.where": 12800.0
+     },
+     "rebuilds": 2,
+     "cpu": 0.07075301,
+     "cpu_fast": 0.052808447000000314,
+     "cpu_slow": 0.0032837139999994935,
+     "cpu_rebuild": 0.007973650999999915,
+     "cpu_parts": {
+      "C.fl_new": 0.000535937999999847,
+      "C.fl_run": 0.053914601999999645,
+      "C.sl_probe": 0.005006522999999374,
+      "py.sig_keys": 0.0005226069999999527,
+      "np.union1d": 0.0002634440000002236,
+      "C.sl_reduce": 0.0010205530000000351,
+      "np.unique": 0.0017730479999999993,
+      "np.isin": 0.0013946809999998422,
+      "np.bincount": 4.853399999982244e-05,
+      "np.where": 7.789800000002067e-05
+     },
+     "python_numpy_cpu": 0.004080211999999861
+    },
+    {
+     "work": 21418598,
+     "work_fast": 15601941,
+     "work_slow": 1282003,
+     "work_rebuild": 4534654,
+     "rebuild_v1_part": 1346630,
+     "rebuild_v2_additions": 3188024,
+     "v2_sort_charges": 2948210,
+     "actual_sort_ops": 2624145.332512143,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 153413.02118804466,
+      "np.unique": 1027529.8375485435,
+      "idx.sort after unique (uncharged)": 639879.5661604102,
+      "np.isin": 803322.9076151447
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 639879.5661604102,
+     "linear_elements": {
+      "py.sig_keys": 106142.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.12710808200000012,
+     "cpu_fast": 0.07908837400000035,
+     "cpu_slow": 0.007156326999998575,
+     "cpu_rebuild": 0.030534031000000406,
+     "cpu_parts": {
+      "C.fl_new": 0.0011483060000001544,
+      "C.fl_run": 0.0808722129999988,
+      "C.sl_probe": 0.010088483000000092,
+      "py.sig_keys": 0.0016628980000001903,
+      "np.union1d": 0.0020693270000002872,
+      "C.sl_reduce": 0.0063421459999999374,
+      "np.unique": 0.004863105000000534,
+      "np.isin": 0.005182104999999382,
+      "np.bincount": 0.00025401900000021627,
+      "np.where": 0.0002605450000003895
+     },
+     "python_numpy_cpu": 0.014291999000000999
+    },
+    {
+     "work": 17945879,
+     "work_fast": 12085599,
+     "work_slow": 1357155,
+     "work_rebuild": 4503125,
+     "rebuild_v1_part": 1355875,
+     "rebuild_v2_additions": 3147250,
+     "v2_sort_charges": 2913636,
+     "actual_sort_ops": 2513069.046717117,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 155046.28091591215,
+      "np.unique": 987695.5190995836,
+      "idx.sort after unique (uncharged)": 601497.3254182573,
+      "np.isin": 768829.9212833638
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 601497.3254182573,
+     "linear_elements": {
+      "py.sig_keys": 99235.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.10587189699999988,
+     "cpu_fast": 0.060202410999999234,
+     "cpu_slow": 0.007459875999998644,
+     "cpu_rebuild": 0.02988366099999995,
+     "cpu_parts": {
+      "C.fl_new": 0.0011193539999996283,
+      "C.fl_run": 0.061577868000001645,
+      "C.sl_probe": 0.009572378000000104,
+      "py.sig_keys": 0.001629044999999829,
+      "np.union1d": 0.0021677499999996908,
+      "C.sl_reduce": 0.006109885000000315,
+      "np.unique": 0.0046933279999996635,
+      "np.isin": 0.0051821679999999315,
+      "np.bincount": 0.00027046199999958276,
+      "np.where": 0.0002549069999999709
+     },
+     "python_numpy_cpu": 0.014197659999998669
+    },
+    {
+     "work": 20537701,
+     "work_fast": 14516224,
+     "work_slow": 1409223,
+     "work_rebuild": 4612254,
+     "rebuild_v1_part": 1389285,
+     "rebuild_v2_additions": 3222969,
+     "v2_sort_charges": 2979195,
+     "actual_sort_ops": 2703415.387932717,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 156667.177496681,
+      "np.unique": 1052929.4225210496,
+      "idx.sort after unique (uncharged)": 664421.0699281291,
+      "np.isin": 829397.717986857
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 664421.0699281291,
+     "linear_elements": {
+      "py.sig_keys": 110165.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.1235885360000002,
+     "cpu_fast": 0.07463998500000257,
+     "cpu_slow": 0.007860503999999047,
+     "cpu_rebuild": 0.03141362399999936,
+     "cpu_parts": {
+      "C.fl_new": 0.0011871039999995503,
+      "C.fl_run": 0.07633941399999866,
+      "C.sl_probe": 0.01042467499999944,
+      "py.sig_keys": 0.001712664999999447,
+      "np.union1d": 0.002075169999999904,
+      "C.sl_reduce": 0.006565157999999904,
+      "np.unique": 0.005092348000000246,
+      "np.isin": 0.005370486000000341,
+      "np.bincount": 0.00026751299999983047,
+      "np.where": 0.0002543620000001745
+     },
+     "python_numpy_cpu": 0.014772543999999943
+    },
+    {
+     "work": 14635586,
+     "work_fast": 11743143,
+     "work_slow": 790160,
+     "work_rebuild": 2102283,
+     "rebuild_v1_part": 570814,
+     "rebuild_v2_additions": 1531469,
+     "v2_sort_charges": 1400867,
+     "actual_sort_ops": 1752639.072602718,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 40600.18311832924,
+      "np.unique": 659966.259960219,
+      "idx.sort after unique (uncharged)": 501900.6321095074,
+      "np.isin": 550171.9974146622
+     },
+     "uncharged_sort_ops_net": 351772.0726027179,
+     "uncharged_idx_sort": 501900.6321095074,
+     "linear_elements": {
+      "py.sig_keys": 78442.0,
+      "np.bincount": 25600.0,
+      "np.where": 25600.0
+     },
+     "rebuilds": 4,
+     "cpu": 0.08811868300000025,
+     "cpu_fast": 0.05986555299999763,
+     "cpu_slow": 0.004854029999998399,
+     "cpu_rebuild": 0.015613118000000092,
+     "cpu_parts": {
+      "C.fl_new": 0.0008282480000003645,
+      "C.fl_run": 0.06117861899999966,
+      "C.sl_probe": 0.00706776500000128,
+      "py.sig_keys": 0.0009835549999999138,
+      "np.union1d": 0.000693893000000223,
+      "C.sl_reduce": 0.0022621150000006196,
+      "np.unique": 0.0032690460000002197,
+      "np.isin": 0.002699140999999905,
+      "np.bincount": 9.701600000022736e-05,
+      "np.where": 0.0001306100000006971
+     },
+     "python_numpy_cpu": 0.007873261000001186
+    },
+    {
+     "work": 20927879,
+     "work_fast": 15006346,
+     "work_slow": 1360271,
+     "work_rebuild": 4561262,
+     "rebuild_v1_part": 1364435,
+     "rebuild_v2_additions": 3196827,
+     "v2_sort_charges": 2956397,
+     "actual_sort_ops": 2647455.9531744127,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 153738.57374322813,
+      "np.unique": 1034908.7067743484,
+      "idx.sort after unique (uncharged)": 645434.1209519363,
+      "np.isin": 813374.5517048998
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 645434.1209519363,
+     "linear_elements": {
+      "py.sig_keys": 106220.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.12502541600000017,
+     "cpu_fast": 0.07659949100000008,
+     "cpu_slow": 0.007498318000002335,
+     "cpu_rebuild": 0.031038615000000824,
+     "cpu_parts": {
+      "C.fl_new": 0.0011663579999998674,
+      "C.fl_run": 0.07834661199999937,
+      "C.sl_probe": 0.01014578499999974,
+      "py.sig_keys": 0.0016962490000009822,
+      "np.union1d": 0.002138713999999986,
+      "C.sl_reduce": 0.006582879000000652,
+      "np.unique": 0.004952503999998914,
+      "np.isin": 0.005277518999999398,
+      "np.bincount": 0.000259331000000973,
+      "np.where": 0.0002590849999992706
+     },
+     "python_numpy_cpu": 0.014583401999999523
+    },
+    {
+     "work": 20643363,
+     "work_fast": 14642996,
+     "work_slow": 1382624,
+     "work_rebuild": 4617743,
+     "rebuild_v1_part": 1380256,
+     "rebuild_v2_additions": 3237487,
+     "v2_sort_charges": 2995558,
+     "actual_sort_ops": 2700644.7975437813,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 166095.48945925818,
+      "np.unique": 1045152.4895932969,
+      "idx.sort after unique (uncharged)": 656996.7756349246,
+      "np.isin": 832400.0428563015
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 656996.7756349246,
+     "linear_elements": {
+      "py.sig_keys": 108191.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.12366755399999985,
+     "cpu_fast": 0.07506563499999919,
+     "cpu_slow": 0.007746162000000556,
+     "cpu_rebuild": 0.031126057999999457,
+     "cpu_parts": {
+      "C.fl_new": 0.0011682409999997923,
+      "C.fl_run": 0.07672665599999684,
+      "C.sl_probe": 0.010390547999999722,
+      "py.sig_keys": 0.0017012539999994303,
+      "np.union1d": 0.0021947020000010475,
+      "C.sl_reduce": 0.006328193999999954,
+      "np.unique": 0.0050058030000004194,
+      "np.isin": 0.005413745999999442,
+      "np.bincount": 0.0002558479999996699,
+      "np.where": 0.00025609599999798505
+     },
+     "python_numpy_cpu": 0.014827448999997994
+    },
+    {
+     "work": 18568261,
+     "work_fast": 12536799,
+     "work_slow": 1425390,
+     "work_rebuild": 4606072,
+     "rebuild_v1_part": 1371812,
+     "rebuild_v2_additions": 3234260,
+     "v2_sort_charges": 2992898,
+     "actual_sort_ops": 2693724.1853165003,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 170412.67749584696,
+      "np.unique": 1038586.1383640637,
+      "idx.sort after unique (uncharged)": 652056.0002304242,
+      "np.isin": 832669.3692261656
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 652056.0002304242,
+     "linear_elements": {
+      "py.sig_keys": 107489.0,
+      "np.bincount": 64000.0,
+      "np.where": 64000.0
+     },
+     "rebuilds": 10,
+     "cpu": 0.11236817499999985,
+     "cpu_fast": 0.06412122599999925,
+     "cpu_slow": 0.00770834400000453,
+     "cpu_rebuild": 0.03147997300000016,
+     "cpu_parts": {
+      "C.fl_new": 0.0012116219999995792,
+      "C.fl_run": 0.06565170000000187,
+      "C.sl_probe": 0.00996808799999771,
+      "py.sig_keys": 0.0017037549999989743,
+      "np.union1d": 0.002259166999999618,
+      "C.sl_reduce": 0.006437717999999926,
+      "np.unique": 0.00497152900000053,
+      "np.isin": 0.005500915000000273,
+      "np.bincount": 0.00025303500000095625,
+      "np.where": 0.000270556000000699
+     },
+     "python_numpy_cpu": 0.01495895700000105
+    },
+    {
+     "work": 19049875,
+     "work_fast": 13808902,
+     "work_slow": 1352762,
+     "work_rebuild": 3888211,
+     "rebuild_v1_part": 1117491,
+     "rebuild_v2_additions": 2770720,
+     "v2_sort_charges": 2554830,
+     "actual_sort_ops": 2596691.853973139,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 135884.86717360246,
+      "np.unique": 978757.843476009,
+      "idx.sort after unique (uncharged)": 666918.2611455908,
+      "np.isin": 815130.8821779371
+     },
+     "uncharged_sort_ops_net": 41861.85397313908,
+     "uncharged_idx_sort": 666918.2611455908,
+     "linear_elements": {
+      "py.sig_keys": 108456.0,
+      "np.bincount": 51200.0,
+      "np.where": 51200.0
+     },
+     "rebuilds": 8,
+     "cpu": 0.11433805900000005,
+     "cpu_fast": 0.07006927799999829,
+     "cpu_slow": 0.0075045320000017846,
+     "cpu_rebuild": 0.027619413999999676,
+     "cpu_parts": {
+      "C.fl_new": 0.001109927999999094,
+      "C.fl_run": 0.07163538999999863,
+      "C.sl_probe": 0.009857071000000328,
+      "py.sig_keys": 0.0015485710000007202,
+      "np.union1d": 0.0017960990000003285,
+      "C.sl_reduce": 0.005212813000000427,
+      "np.unique": 0.004841477999999455,
+      "np.isin": 0.004837133000000549,
+      "np.bincount": 0.00020316699999956,
+      "np.where": 0.00022184699999971969
+     },
+     "python_numpy_cpu": 0.013448295000000332
+    }
+   ],
+   "R_work_times_1_plus_uncharged_sort_share": 0.5568235745935556,
+   "R_work_times_1_plus_idx_sort_share": 0.5756035132058175
+  },
+  "local-w20-3200": {
+   "runs": 20,
+   "reproduction_vs_stored": {
+    "identical": 20
+   },
+   "mean_per_run": {
+    "work": 19300913.4,
+    "work_fast": 16497476.8,
+    "work_slow": 801678.15,
+    "work_rebuild": 2001758.45,
+    "rebuild_v1_part": 639681.8,
+    "rebuild_v2_additions": 1362076.65,
+    "v2_sort_charges": 1257490.55,
+    "actual_sort_ops": 1177348.7968704016,
+    "uncharged_sort_ops_net": 32016.48495945243,
+    "uncharged_idx_sort": 308328.8989014324,
+    "cpu": 0.10876466114999994,
+    "cpu_fast": 0.08112494825000047,
+    "cpu_slow": 0.004753498449999794,
+    "cpu_rebuild": 0.013065448499999799,
+    "python_numpy_cpu": 0.005985792650000299,
+    "rebuilds": 3.8,
+    "cpu:C.fl_new": 0.0006480054999998819,
+    "cpu:C.fl_run": 0.08286061150000087,
+    "cpu:C.sl_probe": 0.007520166449999266,
+    "cpu:C.sl_reduce": 0.0028834157999998444,
+    "cpu:py.sig_keys": 0.0007419004999999146,
+    "cpu:np.union1d": 0.000779904850000035,
+    "cpu:np.unique": 0.0021052519000002825,
+    "cpu:np.isin": 0.0021621773000000564,
+    "cpu:np.bincount": 9.851790000008354e-05,
+    "cpu:np.where": 9.804019999992697e-05
+   },
+   "share_v2_additions_of_work_rebuild": 0.6804400650837766,
+   "uncharged_sort_ops_net_share_of_work_rebuild": 0.015994179996818514,
+   "uncharged_sort_ops_net_share_of_work": 0.0016588067256678347,
+   "uncharged_idx_sort_share_of_work_rebuild": 0.15402902328272045,
+   "uncharged_idx_sort_share_of_work": 0.01597483458484573,
+   "actual_sort_ops_over_v2_sort_charges": 0.9362685046582668,
+   "ns_per_charged_incidence": {
+    "fast (C fl_run)": 5.022623308068593,
+    "slow (C sl_probe)": 9.380530640630864,
+    "rebuild (all, as reported)": 6.526985561119924,
+    "rebuild C part (sl_reduce + fl_new) over the v1 part": 5.5205905498635826,
+    "rebuild Python part over the v2 additions": 6.9996260489452435
+   },
+   "rebuild_python_cpu_in_fast_equiv_minus_v2_additions_share_of_work_rebuild": 0.2678345141894008,
+   "rebuild_python_cpu_in_fast_equiv_minus_v2_additions_share_of_work": 0.027777960082463145,
+   "median_per_run_uncharged_sort_share_of_work": 0.0,
+   "median_per_run_idx_sort_share_of_work": 0.016238058424480416,
+   "per_run": [
+    {
+     "work": 10582476,
+     "work_fast": 10255629,
+     "work_slow": 326847,
+     "work_rebuild": 0,
+     "rebuild_v1_part": 0,
+     "rebuild_v2_additions": 0,
+     "v2_sort_charges": 0,
+     "actual_sort_ops": 0,
+     "actual_sort_ops_by_call": {},
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 0.0,
+     "linear_elements": {},
+     "rebuilds": 0,
+     "cpu": 0.05776738800000025,
+     "cpu_fast": 0.04986886499999921,
+     "cpu_slow": 0.0020447070000004786,
+     "cpu_rebuild": 0.0,
+     "cpu_parts": {
+      "C.fl_new": 0.00023313199999996925,
+      "C.fl_run": 0.050864729000001496,
+      "C.sl_probe": 0.0036371249999995747,
+      "C.sl_reduce": 0.0
+     },
+     "python_numpy_cpu": 0
+    },
+    {
+     "work": 19778203,
+     "work_fast": 15479921,
+     "work_slow": 1081978,
+     "work_rebuild": 3216304,
+     "rebuild_v1_part": 1001922,
+     "rebuild_v2_additions": 2214382,
+     "v2_sort_charges": 2043959,
+     "actual_sort_ops": 2018915.6745534565,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 82521.08478424767,
+      "np.unique": 768008.7977956333,
+      "idx.sort after unique (uncharged)": 536840.5195193384,
+      "np.isin": 631545.2724542371
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 536840.5195193384,
+     "linear_elements": {
+      "py.sig_keys": 84916.0,
+      "np.bincount": 38400.0,
+      "np.where": 38400.0
+     },
+     "rebuilds": 6,
+     "cpu": 0.11341388300000022,
+     "cpu_fast": 0.07627641999999923,
+     "cpu_slow": 0.006245166999999885,
+     "cpu_rebuild": 0.02124308500000005,
+     "cpu_parts": {
+      "C.fl_new": 0.0009369180000002864,
+      "C.fl_run": 0.07792449200000062,
+      "C.sl_probe": 0.008686003999999414,
+      "py.sig_keys": 0.0012052719999995354,
+      "np.union1d": 0.001269480000000378,
+      "C.sl_reduce": 0.004366602000000608,
+      "np.unique": 0.003601600000001426,
+      "np.isin": 0.00361652300000026,
+      "np.bincount": 0.0001507589999993897,
+      "np.where": 0.0001596449999983207
+     },
+     "python_numpy_cpu": 0.01000327899999931
+    },
+    {
+     "work": 16501148,
+     "work_fast": 14705151,
+     "work_slow": 611511,
+     "work_rebuild": 1184486,
+     "rebuild_v1_part": 347215,
+     "rebuild_v2_additions": 837271,
+     "v2_sort_charges": 765808,
+     "actual_sort_ops": 947404.6629565392,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 16700.09352067066,
+      "np.unique": 353867.09633543104,
+      "idx.sort after unique (uncharged)": 276290.3391818618,
+      "np.isin": 300547.13391857577
+     },
+     "uncharged_sort_ops_net": 181596.6629565392,
+     "uncharged_idx_sort": 276290.3391818618,
+     "linear_elements": {
+      "py.sig_keys": 42637.0,
+      "np.bincount": 12800.0,
+      "np.where": 12800.0
+     },
+     "rebuilds": 2,
+     "cpu": 0.09234500099999998,
+     "cpu_fast": 0.07202799100000146,
+     "cpu_slow": 0.003735869000000669,
+     "cpu_rebuild": 0.008467746999999637,
+     "cpu_parts": {
+      "C.fl_new": 0.0005485709999999422,
+      "C.fl_run": 0.07343756700000048,
+      "C.sl_probe": 0.005994195000003089,
+      "py.sig_keys": 0.0005145149999985499,
+      "np.union1d": 0.00034180199999989114,
+      "C.sl_reduce": 0.0014274380000003362,
+      "np.unique": 0.0017262500000003733,
+      "np.isin": 0.0014377749999998635,
+      "np.bincount": 4.578699999990832e-05,
+      "np.where": 6.448800000047328e-05
+     },
+     "python_numpy_cpu": 0.004130616999999059
+    },
+    {
+     "work": 17325702,
+     "work_fast": 14246320,
+     "work_slow": 861350,
+     "work_rebuild": 2218032,
+     "rebuild_v1_part": 685660,
+     "rebuild_v2_additions": 1532372,
+     "v2_sort_charges": 1407199,
+     "actual_sort_ops": 1518503.2090015206,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 44199.88180614692,
+      "np.unique": 576814.9440491296,
+      "idx.sort after unique (uncharged)": 422371.92345730413,
+      "np.isin": 475116.4596889399
+     },
+     "uncharged_sort_ops_net": 111304.20900152065,
+     "uncharged_idx_sort": 422371.92345730413,
+     "linear_elements": {
+      "py.sig_keys": 66434.0,
+      "np.bincount": 25600.0,
+      "np.where": 25600.0
+     },
+     "rebuilds": 4,
+     "cpu": 0.0990301979999999,
+     "cpu_fast": 0.06990605099999936,
+     "cpu_slow": 0.005124243000002693,
+     "cpu_rebuild": 0.015110538000000506,
+     "cpu_parts": {
+      "C.fl_new": 0.0007573240000002812,
+      "C.fl_run": 0.07141606900000053,
+      "C.sl_probe": 0.007681948999997523,
+      "py.sig_keys": 0.0009088420000002984,
+      "np.union1d": 0.000720684000000027,
+      "C.sl_reduce": 0.0029708600000000196,
+      "np.unique": 0.002759094000000406,
+      "np.isin": 0.002520844999999383,
+      "np.bincount": 9.691099999997732e-05,
+      "np.where": 0.00011460999999934884
+     },
+     "python_numpy_cpu": 0.007120985999999441
+    },
+    {
+     "work": 27611229,
+     "work_fast": 24062282,
+     "work_slow": 956916,
+     "work_rebuild": 2592031,
+     "rebuild_v1_part": 842600,
+     "rebuild_v2_additions": 1749431,
+     "v2_sort_charges": 1615373,
+     "actual_sort_ops": 1451567.6213453393,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 60667.26371751172,
+      "np.unique": 567228.0965612604,
+      "idx.sort after unique (uncharged)": 376248.7612369607,
+      "np.isin": 447423.49982960644
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 376248.7612369607,
+     "linear_elements": {
+      "py.sig_keys": 60882.0,
+      "np.bincount": 32000.0,
+      "np.where": 32000.0
+     },
+     "rebuilds": 5,
+     "cpu": 0.157300459,
+     "cpu_fast": 0.11936443600000235,
+     "cpu_slow": 0.005826660000002537,
+     "cpu_rebuild": 0.01705022899999964,
+     "cpu_parts": {
+      "C.fl_new": 0.0007471409999992851,
+      "C.fl_run": 0.1221674019999992,
+      "C.sl_probe": 0.010301782000001758,
+      "py.sig_keys": 0.0009193860000005216,
+      "np.union1d": 0.0010128390000003762,
+      "C.sl_reduce": 0.004150791999999903,
+      "np.unique": 0.002632267000000077,
+      "np.isin": 0.0027417850000004407,
+      "np.bincount": 0.00012820000000024478,
+      "np.where": 0.00011877499999979335
+     },
+     "python_numpy_cpu": 0.007553252000001454
+    },
+    {
+     "work": 27197004,
+     "work_fast": 23035815,
+     "work_slow": 1058895,
+     "work_rebuild": 3102294,
+     "rebuild_v1_part": 975104,
+     "rebuild_v2_additions": 2127190,
+     "v2_sort_charges": 1967229,
+     "actual_sort_ops": 1780685.645836766,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 82797.05004272619,
+      "np.unique": 686988.8539463715,
+      "idx.sort after unique (uncharged)": 457798.6998700396,
+      "np.isin": 553101.0419776288
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 457798.6998700396,
+     "linear_elements": {
+      "py.sig_keys": 73903.0,
+      "np.bincount": 38400.0,
+      "np.where": 38400.0
+     },
+     "rebuilds": 6,
+     "cpu": 0.1547158190000002,
+     "cpu_fast": 0.11443517600000241,
+     "cpu_slow": 0.006335693000000031,
+     "cpu_rebuild": 0.020206967999999215,
+     "cpu_parts": {
+      "C.fl_new": 0.0008696519999991104,
+      "C.fl_run": 0.11692187100000151,
+      "C.sl_probe": 0.010166054999995566,
+      "py.sig_keys": 0.0011031429999999176,
+      "np.union1d": 0.0012747390000003023,
+      "C.sl_reduce": 0.004515846999999962,
+      "np.unique": 0.003201435999999891,
+      "np.isin": 0.003361672000000482,
+      "np.bincount": 0.00015379199999987492,
+      "np.where": 0.00014962599999979176
+     },
+     "python_numpy_cpu": 0.00924440800000026
+    },
+    {
+     "work": 23186901,
+     "work_fast": 19750035,
+     "work_slow": 899482,
+     "work_rebuild": 2537384,
+     "rebuild_v1_part": 827023,
+     "rebuild_v2_additions": 1710361,
+     "v2_sort_charges": 1581343,
+     "actual_sort_ops": 1341409.8040901406,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 61621.34742080574,
+      "np.unique": 529652.9758611178,
+      "idx.sort after unique (uncharged)": 339294.83607566,
+      "np.isin": 410840.64473255706
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 339294.83607566,
+     "linear_elements": {
+      "py.sig_keys": 54968.0,
+      "np.bincount": 32000.0,
+      "np.where": 32000.0
+     },
+     "rebuilds": 5,
+     "cpu": 0.1300820810000003,
+     "cpu_fast": 0.09666667700000398,
+     "cpu_slow": 0.0052888059999935955,
+     "cpu_rebuild": 0.01598789200000006,
+     "cpu_parts": {
+      "C.fl_new": 0.0007091420000002735,
+      "C.fl_run": 0.09886162600000015,
+      "C.sl_probe": 0.008970146999999873,
+      "py.sig_keys": 0.0008683580000004021,
+      "np.union1d": 0.0009704579999998408,
+      "C.sl_reduce": 0.0038101729999997502,
+      "np.unique": 0.002399541999999588,
+      "np.isin": 0.002616852999999697,
+      "np.bincount": 0.00013353900000012686,
+      "np.where": 0.00012266799999993694
+     },
+     "python_numpy_cpu": 0.007111417999999592
+    },
+    {
+     "work": 23174759,
+     "work_fast": 19039624,
+     "work_slow": 1236233,
+     "work_rebuild": 2898902,
+     "rebuild_v1_part": 885811,
+     "rebuild_v2_additions": 2013091,
+     "v2_sort_charges": 1853858,
+     "actual_sort_ops": 2046963.2400236668,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 91154.73533263018,
+      "np.unique": 747047.4204424142,
+      "idx.sort after unique (uncharged)": 555067.1157201546,
+      "np.isin": 653693.9685284678
+     },
+     "uncharged_sort_ops_net": 193105.24002366676,
+     "uncharged_idx_sort": 555067.1157201546,
+     "linear_elements": {
+      "py.sig_keys": 87399.0,
+      "np.bincount": 32000.0,
+      "np.where": 32000.0
+     },
+     "rebuilds": 5,
+     "cpu": 0.13338925299999982,
+     "cpu_fast": 0.09512591399999737,
+     "cpu_slow": 0.007118127000000474,
+     "cpu_rebuild": 0.020286013999999408,
+     "cpu_parts": {
+      "C.fl_new": 0.0009313670000001828,
+      "C.fl_run": 0.09709641500000243,
+      "C.sl_probe": 0.010094594999999984,
+      "py.sig_keys": 0.0011386649999991505,
+      "np.union1d": 0.001220467000000447,
+      "C.sl_reduce": 0.0038596849999996685,
+      "np.unique": 0.0035598549999993345,
+      "np.isin": 0.0034671180000001023,
+      "np.bincount": 0.00012754799999914468,
+      "np.where": 0.00014283500000056293
+     },
+     "python_numpy_cpu": 0.009656487999998742
+    },
+    {
+     "work": 8406283,
+     "work_fast": 8149718,
+     "work_slow": 256565,
+     "work_rebuild": 0,
+     "rebuild_v1_part": 0,
+     "rebuild_v2_additions": 0,
+     "v2_sort_charges": 0,
+     "actual_sort_ops": 0,
+     "actual_sort_ops_by_call": {},
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 0.0,
+     "linear_elements": {},
+     "rebuilds": 0,
+     "cpu": 0.04558273700000015,
+     "cpu_fast": 0.03936683899999993,
+     "cpu_slow": 0.0015657670000002177,
+     "cpu_rebuild": 0.0,
+     "cpu_parts": {
+      "C.fl_new": 0.00022543799999974468,
+      "C.fl_run": 0.04011467400000068,
+      "C.sl_probe": 0.0027790009999995036,
+      "C.sl_reduce": 0.0
+     },
+     "python_numpy_cpu": 0
+    },
+    {
+     "work": 19694248,
+     "work_fast": 16177246,
+     "work_slow": 916142,
+     "work_rebuild": 2600860,
+     "rebuild_v1_part": 852390,
+     "rebuild_v2_additions": 1748470,
+     "v2_sort_charges": 1614536,
+     "actual_sort_ops": 1447803.3207396185,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 61281.04274997371,
+      "np.unique": 565835.5896792496,
+      "idx.sort after unique (uncharged)": 374418.23262438976,
+      "np.isin": 446268.45568600553
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 374418.23262438976,
+     "linear_elements": {
+      "py.sig_keys": 59948.0,
+      "np.bincount": 32000.0,
+      "np.where": 32000.0
+     },
+     "rebuilds": 5,
+     "cpu": 0.11096226900000028,
+     "cpu_fast": 0.0790374159999998,
+     "cpu_slow": 0.005314268000001121,
+     "cpu_rebuild": 0.017015551000000517,
+     "cpu_parts": {
+      "C.fl_new": 0.0007656119999994715,
+      "C.fl_run": 0.08075029199999761,
+      "C.sl_probe": 0.00792617100000026,
+      "py.sig_keys": 0.001157752000001011,
+      "np.union1d": 0.0009783160000003122,
+      "C.sl_reduce": 0.003972673999999454,
+      "np.unique": 0.0025966589999995016,
+      "np.isin": 0.00273132199999937,
+      "np.bincount": 0.00013337799999968425,
+      "np.where": 0.00012159100000008749
+     },
+     "python_numpy_cpu": 0.007719017999999966
+    },
+    {
+     "work": 25040080,
+     "work_fast": 21032449,
+     "work_slow": 985031,
+     "work_rebuild": 3022600,
+     "rebuild_v1_part": 988368,
+     "rebuild_v2_additions": 2034232,
+     "v2_sort_charges": 1884452,
+     "actual_sort_ops": 1562153.6325109622,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 79384.94376267942,
+      "np.unique": 616640.0376362767,
+      "idx.sort after unique (uncharged)": 387803.55963202636,
+      "np.isin": 478325.0914799798
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 387803.55963202636,
+     "linear_elements": {
+      "py.sig_keys": 63089.0,
+      "np.bincount": 38400.0,
+      "np.where": 38400.0
+     },
+     "rebuilds": 6,
+     "cpu": 0.14065697300000002,
+     "cpu_fast": 0.10369570600000078,
+     "cpu_slow": 0.00580029099999857,
+     "cpu_rebuild": 0.01893070099999994,
+     "cpu_parts": {
+      "C.fl_new": 0.0007918810000000498,
+      "C.fl_run": 0.10593464600000058,
+      "C.sl_probe": 0.00929199500000033,
+      "py.sig_keys": 0.0010412509999997432,
+      "np.union1d": 0.001222275999999578,
+      "C.sl_reduce": 0.004513618999999469,
+      "np.unique": 0.002806186000000821,
+      "np.isin": 0.0030921230000005018,
+      "np.bincount": 0.0001616840000000508,
+      "np.where": 0.00015645799999930432
+     },
+     "python_numpy_cpu": 0.008479977999999999
+    },
+    {
+     "work": 17736821,
+     "work_fast": 15372182,
+     "work_slow": 746926,
+     "work_rebuild": 1617713,
+     "rebuild_v1_part": 531232,
+     "rebuild_v2_additions": 1086481,
+     "v2_sort_charges": 996768,
+     "actual_sort_ops": 980868.0771045941,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 30832.65568580876,
+      "np.unique": 380251.6400661168,
+      "idx.sort after unique (uncharged)": 265455.15043977526,
+      "np.isin": 304328.6309128932
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 265455.15043977526,
+     "linear_elements": {
+      "py.sig_keys": 42676.0,
+      "np.bincount": 19200.0,
+      "np.where": 19200.0
+     },
+     "rebuilds": 3,
+     "cpu": 0.09971034899999998,
+     "cpu_fast": 0.07511774999999776,
+     "cpu_slow": 0.004471495000003323,
+     "cpu_rebuild": 0.010797181000000045,
+     "cpu_parts": {
+      "C.fl_new": 0.000581401000000259,
+      "C.fl_run": 0.0767008800000002,
+      "C.sl_probe": 0.006921163999996427,
+      "py.sig_keys": 0.0006253169999990149,
+      "np.union1d": 0.0005789520000001325,
+      "C.sl_reduce": 0.0024402149999995792,
+      "np.unique": 0.0017771049999999455,
+      "np.isin": 0.001736847000000985,
+      "np.bincount": 7.128300000047716e-05,
+      "np.where": 8.023900000031503e-05
+     },
+     "python_numpy_cpu": 0.00486974300000087
+    },
+    {
+     "work": 7240139,
+     "work_fast": 7017738,
+     "work_slow": 222401,
+     "work_rebuild": 0,
+     "rebuild_v1_part": 0,
+     "rebuild_v2_additions": 0,
+     "v2_sort_charges": 0,
+     "actual_sort_ops": 0,
+     "actual_sort_ops_by_call": {},
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 0.0,
+     "linear_elements": {},
+     "rebuilds": 0,
+     "cpu": 0.03926076599999995,
+     "cpu_fast": 0.03359629999999836,
+     "cpu_slow": 0.0014015739999981847,
+     "cpu_rebuild": 0.0,
+     "cpu_parts": {
+      "C.fl_new": 0.00022912100000027635,
+      "C.fl_run": 0.0342499399999987,
+      "C.sl_probe": 0.00242283199999882,
+      "C.sl_reduce": 0.0
+     },
+     "python_numpy_cpu": 0
+    },
+    {
+     "work": 23066709,
+     "work_fast": 18945270,
+     "work_slow": 1026782,
+     "work_rebuild": 3094657,
+     "rebuild_v1_part": 998330,
+     "rebuild_v2_additions": 2096327,
+     "v2_sort_charges": 1938590,
+     "actual_sort_ops": 1727994.6024563003,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 78543.18992932685,
+      "np.unique": 672973.0305184282,
+      "idx.sort after unique (uncharged)": 443776.9366323234,
+      "np.isin": 532701.4453762218
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 443776.9366323234,
+     "linear_elements": {
+      "py.sig_keys": 70833.0,
+      "np.bincount": 38400.0,
+      "np.where": 38400.0
+     },
+     "rebuilds": 6,
+     "cpu": 0.13065002499999956,
+     "cpu_fast": 0.0932228710000027,
+     "cpu_slow": 0.006064274999999952,
+     "cpu_rebuild": 0.01977290699999923,
+     "cpu_parts": {
+      "C.fl_new": 0.0008600780000005415,
+      "C.fl_run": 0.09529324400000139,
+      "C.sl_probe": 0.009452205000000546,
+      "py.sig_keys": 0.0011009789999985031,
+      "np.union1d": 0.0012211280000009594,
+      "C.sl_reduce": 0.004486990999999385,
+      "np.unique": 0.00309018600000055,
+      "np.isin": 0.0032494930000011024,
+      "np.bincount": 0.00015971400000136526,
+      "np.where": 0.0001535850000013994
+     },
+     "python_numpy_cpu": 0.00897508500000388
+    },
+    {
+     "work": 28851594,
+     "work_fast": 24701014,
+     "work_slow": 1022516,
+     "work_rebuild": 3128064,
+     "rebuild_v1_part": 994336,
+     "rebuild_v2_additions": 2133728,
+     "v2_sort_charges": 1974098,
+     "actual_sort_ops": 1782826.5910121938,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 90842.18838030584,
+      "np.unique": 682627.785595018,
+      "idx.sort after unique (uncharged)": 453905.1856938502,
+      "np.isin": 555451.4313430198
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 453905.1856938502,
+     "linear_elements": {
+      "py.sig_keys": 73292.0,
+      "np.bincount": 38400.0,
+      "np.where": 38400.0
+     },
+     "rebuilds": 6,
+     "cpu": 0.16357194699999944,
+     "cpu_fast": 0.12247332200000116,
+     "cpu_slow": 0.006123976000002251,
+     "cpu_rebuild": 0.020267392999999245,
+     "cpu_parts": {
+      "C.fl_new": 0.0008571269999997355,
+      "C.fl_run": 0.1251398679999971,
+      "C.sl_probe": 0.010405643999995995,
+      "py.sig_keys": 0.0011106230000006434,
+      "np.union1d": 0.0013595739999994194,
+      "C.sl_reduce": 0.004474919999999827,
+      "np.unique": 0.003123098000000546,
+      "np.isin": 0.0034176689999991794,
+      "np.bincount": 0.0001541840000012229,
+      "np.where": 0.00014848999999728107
+     },
+     "python_numpy_cpu": 0.009313637999998292
+    },
+    {
+     "work": 10316128,
+     "work_fast": 9996334,
+     "work_slow": 319794,
+     "work_rebuild": 0,
+     "rebuild_v1_part": 0,
+     "rebuild_v2_additions": 0,
+     "v2_sort_charges": 0,
+     "actual_sort_ops": 0,
+     "actual_sort_ops_by_call": {},
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 0.0,
+     "linear_elements": {},
+     "rebuilds": 0,
+     "cpu": 0.0562074560000001,
+     "cpu_fast": 0.0486347839999981,
+     "cpu_slow": 0.0019618789999986674,
+     "cpu_rebuild": 0.0,
+     "cpu_parts": {
+      "C.fl_new": 0.0002279209999995757,
+      "C.fl_run": 0.04957682100000227,
+      "C.sl_probe": 0.0034748070000025777,
+      "C.sl_reduce": 0.0
+     },
+     "python_numpy_cpu": 0
+    },
+    {
+     "work": 19274901,
+     "work_fast": 18042501,
+     "work_slow": 627392,
+     "work_rebuild": 605008,
+     "rebuild_v1_part": 160325,
+     "rebuild_v2_additions": 444683,
+     "v2_sort_charges": 406662,
+     "actual_sort_ops": 560985.587207322,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 5879.989432847929,
+      "np.unique": 207712.0250332809,
+      "idx.sort after unique (uncharged)": 168931.73234027138,
+      "np.isin": 178461.84040092176
+     },
+     "uncharged_sort_ops_net": 154323.587207322,
+     "uncharged_idx_sort": 168931.73234027138,
+     "linear_elements": {
+      "py.sig_keys": 25575.0,
+      "np.bincount": 6400.0,
+      "np.where": 6400.0
+     },
+     "rebuilds": 1,
+     "cpu": 0.10652697499999952,
+     "cpu_fast": 0.08818690599999801,
+     "cpu_slow": 0.003897745999998037,
+     "cpu_rebuild": 0.004411224000000047,
+     "cpu_parts": {
+      "C.fl_new": 0.00041282199999947977,
+      "C.fl_run": 0.08995034700000382,
+      "C.sl_probe": 0.007004892000000318,
+      "py.sig_keys": 0.0003059580000002171,
+      "np.union1d": 0.00014367699999962014,
+      "C.sl_reduce": 0.0005358929999994544,
+      "np.unique": 0.0009977509999998802,
+      "np.isin": 0.0007786000000002957,
+      "np.bincount": 2.1470999999273488e-05,
+      "np.where": 3.533699999991313e-05
+     },
+     "python_numpy_cpu": 0.0022827939999991997
+    },
+    {
+     "work": 21103548,
+     "work_fast": 17050040,
+     "work_slow": 1011744,
+     "work_rebuild": 3041764,
+     "rebuild_v1_part": 996592,
+     "rebuild_v2_additions": 2045172,
+     "v2_sort_charges": 1895760,
+     "actual_sort_ops": 1564975.6679015511,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 85073.03503781345,
+      "np.unique": 613583.3037141544,
+      "idx.sort after unique (uncharged)": 385670.6778139979,
+      "np.isin": 480648.65133558545
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 385670.6778139979,
+     "linear_elements": {
+      "py.sig_keys": 62442.0,
+      "np.bincount": 38400.0,
+      "np.where": 38400.0
+     },
+     "rebuilds": 6,
+     "cpu": 0.11869521099999947,
+     "cpu_fast": 0.08362160100000171,
+     "cpu_slow": 0.005855577999998474,
+     "cpu_rebuild": 0.018803131999997724,
+     "cpu_parts": {
+      "C.fl_new": 0.0007912319999991979,
+      "C.fl_run": 0.08544602800001311,
+      "C.sl_probe": 0.008652384999997764,
+      "py.sig_keys": 0.0009793830000015546,
+      "np.union1d": 0.0012538990000008354,
+      "C.sl_reduce": 0.004440618000000285,
+      "np.unique": 0.0027573270000011973,
+      "np.isin": 0.0031684570000010126,
+      "np.bincount": 0.0001625980000010685,
+      "np.where": 0.00014136500000017094
+     },
+     "python_numpy_cpu": 0.00846302900000584
+    },
+    {
+     "work": 19444856,
+     "work_fast": 15971879,
+     "work_slow": 885114,
+     "work_rebuild": 2587863,
+     "rebuild_v1_part": 871920,
+     "rebuild_v2_additions": 1715943,
+     "v2_sort_charges": 1585266,
+     "actual_sort_ops": 1371799.0002355122,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 57681.14033191229,
+      "np.unique": 542464.8252528076,
+      "idx.sort after unique (uncharged)": 352336.14014638885,
+      "np.isin": 419316.89450440335
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 352336.14014638885,
+     "linear_elements": {
+      "py.sig_keys": 55926.0,
+      "np.bincount": 32000.0,
+      "np.where": 32000.0
+     },
+     "rebuilds": 5,
+     "cpu": 0.10937576199999999,
+     "cpu_fast": 0.07853745800000755,
+     "cpu_slow": 0.005246051999998613,
+     "cpu_rebuild": 0.016254063999999957,
+     "cpu_parts": {
+      "C.fl_new": 0.0007425070000000034,
+      "C.fl_run": 0.08020592799999893,
+      "C.sl_probe": 0.007812378999997094,
+      "py.sig_keys": 0.0009168439999989175,
+      "np.union1d": 0.000980230999999776,
+      "C.sl_reduce": 0.003889460999999983,
+      "np.unique": 0.0024851170000017575,
+      "np.isin": 0.002568424999998875,
+      "np.bincount": 0.0001403279999996343,
+      "np.where": 0.00011984300000200676
+     },
+     "python_numpy_cpu": 0.007210788000000967
+    },
+    {
+     "work": 20485539,
+     "work_fast": 16918388,
+     "work_slow": 979944,
+     "work_rebuild": 2587207,
+     "rebuild_v1_part": 834808,
+     "rebuild_v2_additions": 1752399,
+     "v2_sort_charges": 1618910,
+     "actual_sort_ops": 1442119.6004325505,
+     "actual_sort_ops_by_call": {
+      "np.union1d": 64314.178555742925,
+      "np.unique": 561191.492811357,
+      "idx.sort after unique (uncharged)": 370368.16764430597,
+      "np.isin": 446245.7614211447
+     },
+     "uncharged_sort_ops_net": 0.0,
+     "uncharged_idx_sort": 370368.16764430597,
+     "linear_elements": {
+      "py.sig_keys": 59735.0,
+      "np.bincount": 32000.0,
+      "np.where": 32000.0
+     },
+     "rebuilds": 5,
+     "cpu": 0.11604867099999971,
+     "cpu_fast": 0.08333648199999821,
+     "cpu_slow": 0.005647795999998095,
+     "cpu_rebuild": 0.01670434400000076,
+     "cpu_parts": {
+      "C.fl_new": 0.0007417229999999719,
+      "C.fl_run": 0.08515939099999681,
+      "C.sl_probe": 0.008728001999998902,
+      "py.sig_keys": 0.0009417220000003113,
+      "np.union1d": 0.0010495749999988035,
+      "C.sl_reduce": 0.0038125279999992046,
+      "np.unique": 0.002591565000000351,
+      "np.isin": 0.0027380389999995813,
+      "np.bincount": 0.0001291820000002275,
+      "np.where": 0.00013124899999983342
+     },
+     "python_numpy_cpu": 0.007581331999999108
+    }
+   ],
+   "R_work_times_1_plus_uncharged_sort_share": 0.7467804002919369,
+   "R_work_times_1_plus_idx_sort_share": 0.7589066640621343
+  }
+ },
+ "seconds": {
+  "stored": 0.2,
+  "rerun": 4.8
+ }
+}

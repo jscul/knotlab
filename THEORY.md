@@ -109,6 +109,18 @@ as order from distance alone, with no direction (classically, betweenness for
 a distance built from unit steps), this is the program's reading of his
 words, and it has not been tested.
 
+Asked next whether that order exists before any knot, as on a chain of plain
+implications, or only with one knot per step, he answered: "The knots are
+themselves the smallest form of spatial topology. "3" as a concept is a
+topological structure that exists but with relation to all other numbers, not
+just neighbors", and "Logical topology is the very first instance of "this
+versus that". From that, we can create space, set theory, everything else."
+Read in the program's terms, not his: the knot comes first, so under the
+premise minimal contact-distance appears with the first knot, and the order a
+chain of plain implications already has is not yet his distance; "all other
+numbers, not just neighbors" reads distance as a relation over every pair. He
+did not name one of the candidate distances.
+
 In the program's terms it joins two things the foundation already says. The
 knot's single touch is minimal contact-distance, the smallest relative
 existence, with no magnitude (the claim above); and a knot is joint

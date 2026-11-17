@@ -737,7 +737,24 @@ alone gives an order (the literature's betweenness, for a distance built from
 unit steps). Along the chain of atoms of lesson 4.6, bond distance has this
 property: every bond through w(s) and w(t) contains the loops between them
 (proved). Whether the candidate distances of the test at the end of this lesson
-have it is being checked (open).
+have it was checked next (the end of this lesson).
+
+Asked next whether that order already exists before any knot, as a chain of
+plain implications has one (lesson 1.4), or comes only with one knot per step,
+the owner found the question confusing and answered: "The knots are themselves
+the smallest form of spatial topology. "3" as a concept is a topological
+structure that exists but with relation to all other numbers, not just
+neighbors." In his words, logical topology "is the very first instance of
+"this versus that". From that, we can create space, set theory, everything
+else", and he counts physics, the genetic code and consciousness among what it
+builds, "just like in conways game of life". That wider view is his
+interpretation, not a result. The guide reads his answer as putting the knot
+first: nothing is his distance before the first knot, so the order that the
+disagreement count finds on a chain of plain implications (the end of this
+lesson) is not yet his distance, and minimal contact-distance appears with the
+first knot. It reads "with relation to all other numbers, not just neighbors"
+as distance being a relation over every pair, not only between neighbours; he
+did not name one of the candidate distances.
 
 **This versus that.** Lesson 1.1 starts from one material, the distinction:
 two alternatives of which exactly one holds, with no space, no order and no

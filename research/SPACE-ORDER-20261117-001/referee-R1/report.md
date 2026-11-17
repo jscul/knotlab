@@ -187,3 +187,10 @@ These should be named beside the post hoc finding, together with the bootstrap l
 - `referee_rewire.py`, `referee_rewire_runs.jsonl` and `referee_rewire.json`: A96's challenge.
 - `referee_planted.py` and `.json`: the planted state.
 - `referee_swap_invariants.py` and `.json`: the twins.
+
+## Addendum (from the LAYER-RANK referee check)
+
+The equality "phase = least Strahler number of a derivation", which the gate checks and the remark under "The lemma" derives, is a
+known theorem: the k-th Newton approximant of a fixed-point equation over an ω-continuous semiring collects exactly the derivation
+trees of dimension (Strahler number) at most k (Esparza, Kiefer and Luttenberger, "Newtonian program analysis", J. ACM 57(6),
+2010). Name it beside the lemma; the one-step lemma itself is the elementary light cone. **Not a block.**

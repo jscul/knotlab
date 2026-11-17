@@ -1,0 +1,51 @@
+{
+ "schema_version": 1,
+ "experiment_id": "STATE-RULES-20261117-001B-E001",
+ "ticket": "STATE-RULES-20261117-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Among all the extensions the states admit, what do uniform rules that read only the states grow (names erased); does the rule or the start supply the number of orders; do the states decide each step or does a coin; is a second order typical or rare under fewest-states, uniform and softmax weightings (extensions counted one by one or classes once); and does a rule that may read which knots meet (from two starts with the same states and different knots) grow differently?",
+ "definitions": {
+  "extension": "the states left by adding distinction n with up to K betweenness knots on triples containing n, every old state kept, n constrained and untied",
+  "orders": "k = chromatic number of the split crossing graph; lambda = lattice dimension (least chain cover of nested oriented splits); two orders = k = lambda = 2",
+  "D1": "the number of classes (up to renaming) among the top-weight options at a step",
+  "knot-local": "each new knot's two old distinctions lie together in one existing knot; strict: the whole move's old distinctions in one existing knot; closure: in some betweenness triple every state satisfies"
+ },
+ "public_inputs": {
+  "code": "rules.py (sha256 7ea310dca857d82506e29a9819339164858fb74c9426a5dae94a6bd177c5ad6c), run.py (sha256 dd2cc72cc5d7413e41b92a2c0cdfdc37b76896ab46ac902bc17b16cee95ed8c8), checks.py (sha256 41ab6b41be229542a08460fe738d12adcb50f8ea1d955f56e54d55cf3e12f2eb); Python 3 with networkx 3.6.1 (the workspace .venv)",
+  "run": ".venv/bin/python -B run.py (and run.py --stress for the stress test)"
+ },
+ "forbidden_inputs": [
+  "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions R1-R20 of research/STATE-RULES-20261117-001/preregistration.md.",
+ "cheapest_meaningful_control": "F1 from the line (a theorem: an exact line every run); states-only and closure-local rules from the two six-starts (identical by construction).",
+ "predictions": {
+  "R1": "line extensions k, lambda <= 2",
+  "R2": "n + 1 line-keeping, all N + 2",
+  "R3": "C(n,3) zero-cost, all two orders, 10/19/28 classes",
+  "R4": "uniform two-order fraction > 0.9",
+  "R5": "F1 line prob 1, one class at the top",
+  "R6": "F2 line at n = 4 strictly between 0 and 1",
+  "R7": "F3: 2x2 at 4 (one class), two classes 1/2 at 5, two orders 1/2 at 6 and 0 at 7, Q3 at 8",
+  "R8": "F3c: two orders 5/12 at 6, Q3 at 8",
+  "R9": "U1 at 4: 4/9, 3/9, 2/9",
+  "R10": "F1 conserves (k, lambda) from three starts; line always one class, 2x2 and star not",
+  "R11": "F3, F3c: Q3 at 8 and Q4 at 16 in 40/40; top more than one class at a majority of steps from 5",
+  "R12": "U1, U3: two orders < 10% at 10, lambda >= 3 majority; U3 k >= 3 majority at 7",
+  "R13": "softmax: two orders < half at 10 for every beta",
+  "R14": "signed group: one invariant open continuation at the 3-line (parity), none at the 2x2, no invariant knot extension",
+  "R15": "global-swap group: one invariant open knot extension at the 2x2, 10 states",
+  "R16": "states-only and closure-local identical from the two six-starts",
+  "R17": "KF3 exact: 1/2, 1/2 at 5; two orders 2/3 at 6, 0 at 7",
+  "R18": "KF3 from one knot: Q3 at 8 in >= 24/30, two orders in none at 12",
+  "R19": "KF3 six-starts: 12 states to 12 in >= 24/30; two orders <= 3 at 12; at 8 >= 1 each, counts differ",
+  "R20": "KU3 two orders < 10% at 10"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run (plus the non-blocking stress test); A97 status; referee hand-off; report.",
+ "runtime": "Expected under an hour, one process, run in the background; registered in docs/LONG_RUNNING.md if it passes ten minutes."
+}

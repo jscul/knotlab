@@ -13,6 +13,10 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
 - Narrowed: A97 and its notebook paragraph said bond distance "on six-regular weaves is steps apart plus one". That is proved under
   the not-all-equal law on the endless six-regular weave, and on finite six-regular weaves only while the steps apart stay below a
   third of their margin; beyond that only a lower bound is proved.
+- Narrowed the same day, after the A97 test's referee: the premise texts no longer say that "which way" (each bond with the states
+  it excludes) determined every base. Which notion of distance is meant decides the test: bond distance between pairs fails from
+  four distinctions, while the number of allowed states in which two distinctions differ determined every not-all-equal base
+  tested ([referee's report](research/DISTANCE-INFO-20261117-001/referee-R1/report.md)).
 
 ## 17 November 2026: layered circuits, confirmed by the referee, with three narrowings
 

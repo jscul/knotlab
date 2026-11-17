@@ -116,16 +116,18 @@ The owner's idea of axes that "expand out in measures of logic" is this
 premise turned on space; this line of work is parked, with one dimension
 grown from a rule and none yet selected by a law of its own.
 
-The premise is under challenge as assumption A97. Its first direct test found
-that bond distance between pairs is not all a base's information: from four
-distinctions up, bases with the same pairwise bond distances allow different
-states, while each bond together with which joint states it excludes
-determined every base tested through six distinctions (computed, referee
-pending). The test calls these two parts "how far" and "which way"; which way
-is which joint states a bond rules out, not a direction. Whether his "distance" includes which way is the owner's to say,
-and this page leaves the word open until he does.
+The premise is under challenge as assumption A97, and its first direct test
+shows that which notion of distance is meant decides the answer. Read as bond
+distance between pairs, it fails from four distinctions up: bases with the
+same pairwise bond distances allow different states. Read as how often two
+distinctions differ, the number of allowed states in which they take
+different values, it passed every case tested: that table determined every
+not-all-equal base on up to six distinctions and 46,445 sampled on seven
+(computed and refereed, not proved for all sizes; a count across the allowed
+states, not an extended or metric distance). Which notion the owner means is
+his to say, and this page leaves the word open until he does.
 
-Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
+Evidence: [Intuitions, lesson 2.4](INTUITIONS.md#24-distance-is-the-only-form-of-information), [the register, A97](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information), [the direct test](research/DISTANCE-INFO-20261117-001/distance_info.md), [its referee](research/DISTANCE-INFO-20261117-001/referee-R1/report.md), [the thesis](docs/FOUNDATIONAL_THESIS.md#emergence-atomic-topology-and-distance), [the foundation's reading](docs/FOUNDATION_READING.md)
 
 ### The knot test K1–K3
 

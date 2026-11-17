@@ -847,25 +847,30 @@ emergence, where nothing yet exists relative to anything; whether the premise
 counts what it rules out as information is the owner's to say.
 
 **The open challenge.** The premise was tested directly on the day it was
-recorded ([DISTANCE-INFO-20261117-001](research/DISTANCE-INFO-20261117-001/distance_info.md);
-computed, referee pending). Read as bond distance between pairs, distance is
-not the only form of information: that reading fails at the smallest size
-where it could. On four distinctions, three of the four not-all-equal knots on them
-allow 8 states and all four allow 6, yet in both every pair lies in a knot of
-three, so every pair is at bond distance 2. Which sets are bonds, and whether
-tied pairs are equal or unequal, do not repair it. What did determine every
-base tested, every not-all-equal base on up to six distinctions and a sample
-on seven, is each bond together with which joint states it excludes: how many
-distinctions the bond joins, and which of their joint states it rules out. The
-test's shorthand for the two is "how far" and "which way", and "which way" is
-not a direction. So the premise is not refuted by this test if the owner's
-"distance" includes which way, and fails it, as pairwise bond distance, if it
-is only how far. Which he means
-is his to say, and the guide leaves the word open until he does. If it
-includes which way, that is the knot's own: which joint states it rules out,
-not a direction supplied from outside, which the foundation excludes. The
-register lists one more challenge: is the full bit that parity hides a
-distance? See A97 in the
+recorded, and the test shows that which notion of distance is meant decides
+the answer
+([DISTANCE-INFO-20261117-001](research/DISTANCE-INFO-20261117-001/distance_info.md);
+computed, and refereed with a Block on its first reading,
+[referee's report](research/DISTANCE-INFO-20261117-001/referee-R1/report.md)).
+
+- **Bond distance between pairs fails (computed).** On four distinctions,
+  three of the four not-all-equal knots on them allow 8 states and all four
+  allow 6, yet in both every pair lies in a knot of three, so every pair is at
+  bond distance 2. The same distances, different states: read as the guide's
+  bond distance, distance is not the only form of information, and that
+  reading fails at the smallest size where it could.
+- **How often two distinctions differ passes every case tested (computed).**
+  Count, for each pair, the allowed states in which the two take different
+  values. That table, read from the allowed states alone, determined every
+  not-all-equal base on up to six distinctions and every one of 46,445 sampled
+  on seven. It is not proved for all sizes, and it is a count across the
+  allowed states, not an extended or metric distance in the program's sense,
+  which the foundation allows only after paths and separation are built.
+
+So one candidate fails and one has passed every case tested. Which of them,
+or what other notion, the owner means is his to say, and the guide leaves the
+word open until he does. The register lists one more question: is the full
+bit that parity hides a distance? See A97 in the
 [register](docs/ASSUMPTIONS.md#a97--distance-is-the-only-form-of-information).
 
 **Reading.** Apart from the results it cites, this lesson is the owner's
@@ -2487,9 +2492,8 @@ that earlier records used in two senses.
 - **Information.** What a system's allowed states tell apart (lesson 2.4).
   The part a whole holds and no part holds is joint information, measured in
   bits in lesson 2.3: about 0.193 bits for the atom, one bit for parity. The
-  owner's founding premise is that all information is distance; whether that
-  distance is only how far, or also which joint states a knot excludes, is
-  open (lesson 2.4).
+  owner's founding premise is that all information is distance; which notion
+  of distance he means is open (lesson 2.4).
 - **Overlap.** Knots overlap when they share a distinction, a **shared
   distinction**. Nothing limits how many knots one knot overlaps, or which
   (lesson 2.1). The intuition: knots do not sit side by side in a space. They

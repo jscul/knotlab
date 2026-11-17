@@ -2059,6 +2059,20 @@ So holes come in two kinds:
    - **Next.** Memory normalized by how many knots meet at a distinction, trained on mixed meeting patterns and tested on a held-out
      one ([decision note](../research/SCALE-MEMORY-20261116-001/decision.md)).
 
+   **2026-11-17: memory read per knot carries the agent to patterns it never saw** (`MEET-TRANSFER-20261117-001`; referee pending).
+   - **The question.** On a pattern whose knots overlap only within a short run of distinctions, every earlier version lost badly,
+     and memory hurt. Was that because its reads still counted things that change with the pattern, steps and knots?
+   - **Computed.** With what it reads at a distinction taken as a fraction of that distinction's own knots, and its memory as ages
+     relative to the knot's oldest distinction, the agent needs 0.66 to 0.83 times the flips of the best hand-written rule on that
+     pattern, where it used to need 9 to 25 times as many, and fewer flips than the rule on a pattern with a few heavily shared
+     distinctions that it never trained on. A version trained only on random patterns does as well, so the change in what it reads
+     did it. It still needs more flips than the rule on plain random patterns at the largest size, and each step costs several times
+     more computing.
+   - **Reading.** What the agent learns carries to new ways of meeting once it reads each knot relative to itself. That is what the
+     owner's slower loop, which changes the knot structures, needed from a learned fast loop.
+   - **Next.** This agent as the slower loop's fast loop, in place of the hand-written rule, and a cheaper version of it
+     ([decision note](../research/MEET-TRANSFER-20261117-001/decision.md)).
+
    **2026-11-17: changing the knot pattern during the search pays where the pattern has local structure, but only when the slow
    loop is eager, and the search's attention does not say where to change it** (`SLOW-LOOP-20261117-001`; refereed, confirmed
    with fixes).

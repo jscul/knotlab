@@ -375,12 +375,14 @@ referee: one size past, its gap keeps falling)
 ([decision note](../research/WEAVE-LAWS-20261117-001/weave_laws.md); scoped
 after its referee, 17 November 2026).
 Can such a mix be disordered (`WEAVE-MIX-20261117-001`, proof and frozen
-computation, referee pending)? Not settled. On a cylinder, two arrangements whose
+computation, refereed)? Not settled. On a cylinder, two arrangements whose
 knots read the same bonds differently still differ by the twist around it, and
 the frozen test compared widths across that twist, so it called copies of the
-critical law disordered. Compared at widths of one parity, after the fact, four
-arrangements still look disordered, each with a distinction that meets an odd
-number of disagreeing bonds, and none with every count even
+critical law disordered. Compared at widths of one parity, after the fact, one
+pair of arrangements stays gapped one size past, each with a distinction that
+meets an odd number of disagreeing bonds, and none with every count even reads
+disordered; two others first counted with them fall apart into independent
+pieces (its referee)
 ([decision note](../research/WEAVE-MIX-20261117-001/weave_mix.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and

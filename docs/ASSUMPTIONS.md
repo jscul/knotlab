@@ -2572,10 +2572,12 @@ evidence: results and their status come from the records each entry links.
   and step outward only in envelope. Its referee's probes find a sparse mix of signed knots that looks disordered with every
   knot in the not-all-equal class, so the narrowing holds for one-knot-per-orientation laws only. (A 2 × 2 law first reported
   with it was withdrawn by the referee: one size past, its gap keeps falling.)
-  `WEAVE-MIX-20261117-001` ([decision note](../research/WEAVE-MIX-20261117-001/weave_mix.md); referee pending) tested mixed
+  `WEAVE-MIX-20261117-001` ([decision note](../research/WEAVE-MIX-20261117-001/weave_mix.md); refereed) tested mixed
   arrangements with periods up to three and did not settle them: its frozen test broke on the twist around the cylinder. Read
-  again post hoc, four arrangements look disordered, all with a distinction meeting an odd number of inconsistent bonds (two
-  3 × 1 gauge copies are the best candidates), and none with every count even; the referee's 2 × 2 law is unresolved.
+  again post hoc, one pair of 3 × 1 arrangements, each with a distinction meeting an odd number of inconsistent bonds, is gapped
+  one size past (to width 18; its referee), and none with every count even reads disordered; the other post hoc survivors fall
+  apart into independent pieces. That pair and the random 10% mix are the leads; neither's pair-count distance has been measured
+  as a ruler.
   The order study `KNOT-ORDER-20261117-001`
   ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md); refereed) gave, under A98's reading (the disagreement
   count with exact additive betweenness), a case built from knots alone. A line of betweenness knots, grown one knot per step, is
@@ -2591,6 +2593,7 @@ evidence: results and their status come from the records each entry links.
   new line starts). The two orders are the arrangement's own, read back as its halfspaces, and the base is nearly frozen
   (2(r + c) − 2 states for r·c distinctions).
 - **History.**
+  - 2026-11-17 · The mixed weave case scoped after `WEAVE-MIX-R1` (Narrowing): one candidate pair, not four; status unchanged.
   - 2026-11-17 · The referee's 2 × 2 law withdrawn from the weave text (the referee's erratum to `WEAVE-LAWS-R1`); status unchanged.
   - 2026-11-17 · The mixed weave case left open by `WEAVE-MIX-20261117-001` (inconclusive; post hoc candidates named); status
     unchanged.

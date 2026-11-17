@@ -30,6 +30,17 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   s = 7 and 8 at depth 12. They are no longer written as one rising sequence.
 - Sharpened: for that pattern at s = 7, stems hold no bond of any size.
 
+## 17 November 2026: the mixed-arrangement study, refereed, with one narrowing
+
+- The mixed-arrangement study on the weave (`WEAVE-MIX-20261117-001`) was confirmed by its referee with no Block. "Inconclusive"
+  stands: its frozen test broke on the twist around the cylinder.
+- Narrowed: of the four arrangements that still looked disordered when re-read after the fact, the two in the 2 × 2 family fall
+  apart into independent pieces (bands of two rows, strips of two columns). One candidate pair remains, in the 3 × 1 family. It is
+  gapped one size past, to width 18, and its two members are not gauge copies of each other, as the note had said.
+- Small fixes: part of one failed prediction came from a doubly degenerate eigenvalue, not the twist; a threshold the
+  pre-registration had not fixed is stated ([decision note](research/WEAVE-MIX-20261117-001/weave_mix.md),
+  [referee's report](research/WEAVE-MIX-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026: a referee's own finding withdrawn, the 2 × 2 law on the weave
 
 - The knot-law study's referee had reported two laws on the weave that looked disordered with every knot in the not-all-equal

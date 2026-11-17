@@ -47,7 +47,7 @@
  "verdicts": {
   "L3": "clean loss",
   "L3s": "inconclusive",
-  "L3m": "clean loss",
+  "L3m": "inconclusive (corrected 2026-11-17, referee R1: seeds 0.86 and 2.06 disagree around 0.9)",
   "L3sm": "inconclusive",
   "L2m": "learner failure (G-learn failed)",
   "L3c": "clean loss"
@@ -178,5 +178,6 @@
    "hi": 2.246005098551265,
    "level": 99.0
   }
- }
+ },
+ "corrections": "2026-11-17 referee R1: L3m inconclusive; the 12800 comparator was 10-15% weaker than the best Novelty+, so the five-run 0.92-0.94 is the better reading; posthoc_analyze.py committed"
 }

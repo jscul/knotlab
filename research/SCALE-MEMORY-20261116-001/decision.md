@@ -7,9 +7,10 @@ pending · result note [scale_memory.md](scale_memory.md) · pre-registration [p
 **Headline.** Size-relative memory carries the navigating agent to parity with the best hand-written rule at 3,200 and 12,800
 distinctions, not to a win. With step-counted memory it collapses (R 1.36 and 14.5); with memory that counts no steps it stays
 at 0.82 to 0.94 in the frozen runs and 0.88 to 1.01 in the post hoc five-run check. The training-size margin (about 1.3 to 1.4
-times) is mostly gone by 4 to 16 times the training sizes. By the frozen rule: inconclusive for the scale-free arms, clean loss
-for the step-counted ones, learner failure for the memoryless one; no CPU win anywhere; every arm still loses on the unseen
-local pattern.
+times) is mostly gone by 4 to 16 times the training sizes. By the frozen rule: inconclusive for the scale-free arms and for L3m
+(corrected 2026-11-17: its seeds disagree), clean loss for the control L3c, learner failure for the memoryless one; no CPU win
+anywhere; every arm still loses on the unseen local pattern. The frozen 0.82 at 12,800 rests on a comparator 10 to 15% weaker than
+the best Novelty+ there (corrected 2026-11-17), so the five-run 0.92 to 0.94 is the better reading.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |

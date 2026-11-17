@@ -2045,7 +2045,7 @@ So holes come in two kinds:
      knot structures themselves is recorded as sub-goal B191 ([decision note](../research/WHERE-NEXT-20261116-001/decision.md)).
 
    **2026-11-17: memory that counts no steps keeps the agent level with the best rule at larger sizes**
-   (`SCALE-MEMORY-20261116-001`; stress test and referee pending).
+   (`SCALE-MEMORY-20261116-001`; refereed, confirmed with fixes; stress test pending).
    - **The question.** Was the agent's failure at larger patterns in how its memory read time? It read each distinction's age in
      steps, and as the pattern grows almost every age reads "long ago".
    - **Computed.** With each age read against the oldest of the knot's three distinctions instead, the agent stays level with the

@@ -3,8 +3,20 @@
 Epic `SCALE-MEMORY-20261116-001`, ticket `SCALE-MEMORY-20261116-001A` (`WHERE-NEXT-20261116-001#1`; goals G15, G16), 2026-11-17.
 Evidence: **computed** (finite experiments on planted instances, every run kept), frozen before any new arm was trained
 ([pre-registration](preregistration.md), freeze commit `40cf4237c`, 2026-11-17 00:02 UTC; [advisor review](advisor_review.md)).
-**Stress test pending**: the n = 51200 cell (registered `SCALE-MEMORY-P1`) is still running and will be folded in. **Referee
-pending.** The canonical K1–K3 test is unchanged.
+**Stress test pending**: the n = 51200 cell (registered `SCALE-MEMORY-P1`) is still running and will be folded in. **Refereed**
+(SCALE-MEMORY-R1, confirmed with fixes, no Block; [report](referee-R1/report.md); the 51200 cell not refereed). The canonical K1–K3
+test is unchanged.
+
+**Corrected 2026-11-17 after the referee** (logged in `docs/CORRECTIONS.md`):
+- *Narrowing.* L3m is **inconclusive**, not a clean loss: its seeds read 0.86 and 2.06, on opposite sides of 0.9, so the frozen
+  seed-agreement clause fails.
+- *Narrowing (wording).* At 12,800 the frozen comparator, Novelty+ (0.7, 0.05) from WHERE-NEXT, was 10 to 15% weaker than the best
+  Novelty+ there, (0.7, 0.01) or (0.7, 0); an independent engine gives 1.10 times [1.04, 1.19]. So the frozen 0.82 for L3sm
+  flatters it, and the five-run 0.92 to 0.94 is the better reading. At 3,200 the frozen comparator, (0.7, 0.01), was already the
+  best.
+- *Not a block.* The script that wrote `posthoc_summary.json` is now committed (`posthoc_analyze.py`). Its statistic is the median
+  over instances of each instance's geometric mean over five runs; on pooled medians of all 500 runs the referee gets 0.85 to
+  0.97.
 
 ## The answer
 
@@ -19,7 +31,7 @@ hand-written rule, Novelty+, not to a win.**
 | --- | --- | --- | --- | --- |
 | L3, step-counted, 800 (WHERE-NEXT) | 1.36 [1.12, 1.63] | 1.03 (seed 1) | 14.5 [10.5, 22.2] (seeds 84 and 2.5) | 2.67 (seed 1) |
 | L3s, scale-free, 800 | **0.94 [0.79, 1.11]** | **0.88 [0.81, 0.97]** | 0.86 [0.75, 0.97] | 1.01 [0.96, 1.07] |
-| L3sm, scale-free, 3,200 | 0.94 [0.80, 1.10] | 0.95 [0.85, 1.02] | **0.82 [0.73, 0.91]** | **0.94 [0.89, 1.00]** |
+| L3sm, scale-free, 3,200 | 0.94 [0.80, 1.10] | 0.95 [0.85, 1.02] | **0.82 [0.73, 0.91]** (comparator 10–15% weak here) | **0.94 [0.89, 1.00]** |
 | L3m, step-counted, 3,200 | 0.95 [0.81, 1.16] | — | 1.33 [1.12, 1.56] (seeds 0.86 and 2.06) | — |
 | L3c, step-counted, schedule control | 1.16 [0.97, 1.42] | — | 2.68 [2.19, 4.04] | — |
 
@@ -39,7 +51,7 @@ What the table shows:
 **By the frozen rule:**
 - *L3s and L3sm*: **inconclusive** on their primary cells. L3sm's 0.82 [0.73, 0.91] misses the flips-win line (at most 0.8, upper
   end below 0.9) narrowly.
-- *L3m and the control L3c*: **clean loss**.
+- *L3m*: **inconclusive** (corrected: its seeds, 0.86 and 2.06, disagree around 0.9). *The control L3c*: **clean loss**.
 - *The memoryless L2m*: **learner failure**. It failed the learner gate at 2.1 to 2.3 times Novelty+, as a memoryless policy was
   likely to.
 - *Cost*: no arm saves CPU. At 12,800 the scale-free agent takes 0.60 s per instance against Novelty+'s 0.12 s, about 5.5 times

@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: memory that counts no steps, confirmed by its referee, one verdict and one comparator narrowed
+
+- Memory that counts no steps (`SCALE-MEMORY-20261116-001`) was confirmed by its referee with fresh code, with no Block: the agent
+  stays at parity with Novelty+ at 4 and 16 times its training size instead of collapsing, not at a win, and every frozen value
+  recomputes ([result note](research/SCALE-MEMORY-20261116-001/scale_memory.md)). The 51,200 cell is still pending.
+- Narrowed: the step-counted agent trained to 3,200 (L3m) is inconclusive, not a clean loss, since its two seeds disagree.
+- Narrowed: at 12,800 the frozen comparator was 10 to 15% weaker than the best Novelty+, so the five-run 0.92 to 0.94 is the better
+  reading than the frozen 0.82.
+- Added: the script that wrote the five-run summary.
+
 ## 17 November 2026: the navigating agent, confirmed by its referee, its training-size win narrowed
 
 - The navigating agent (`WHERE-NEXT-20261116-001`) was confirmed by its referee with fresh code, with no Block: the engine, the

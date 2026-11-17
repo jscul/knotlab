@@ -112,5 +112,5 @@ are accurate.
 
 ## Files
 
-- `referee_two_orbit_sat.py`, `.out` and `.json`: b_8(3, s) by SAT for 29 patterns against the routine; product joints for the 14.
-- `referee_cutoffs.py` and `.out`: the cycle starts and periods behind the level-16 and s = 13..16 cut-offs.
+- `referee_two_orbit_sat.py` and `.json`: b_8(3, s) by SAT for 29 patterns against the routine; product joints for the 14.
+- `referee_cutoffs.py` and `.json`: the cycle starts and periods behind the level-16 and s = 13..16 cut-offs.

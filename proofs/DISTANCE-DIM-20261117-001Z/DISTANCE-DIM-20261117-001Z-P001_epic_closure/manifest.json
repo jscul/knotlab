@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "DISTANCE-DIM-20261117-001Z-P001",
+ "canonical_id": "DISTANCE-DIM-20261117-001Z-P001",
+ "kind": "proof",
+ "ticket": "DISTANCE-DIM-20261117-001Z",
+ "proof": "DISTANCE-DIM-20261117-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: order and dimension read from the states",
+ "status": "Proved",
+ "claim": "Ledger closing DISTANCE-DIM-20261117-001: ticket A (proof: implication bases' betweenness is the order's intervals, so the states give the order up to reversal and its dimension; chain grid full support; Onsager gap) and ticket B (frozen computation, 12 of 13 predictions held, K3 failed on floating ties): A97 under challenge with an exact positive case under implications; referee pending. No new claim.",
+ "dependencies": [
+  "DISTANCE-DIM-20261117-001A",
+  "DISTANCE-DIM-20261117-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "DISTANCE-DIM-20261117-001",
+  "epic_path": [
+   "DISTANCE-DIM-20261117-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/DISTANCE-DIM-20261117-001B/DISTANCE-DIM-20261117-001B-E001_dims/contract.json": "87183877a6a03ac03f2495fca93eac5eee8c80f58cc74314eb0bd311ba16cfd5",
+  "artifacts/DISTANCE-DIM-20261117-001B/DISTANCE-DIM-20261117-001B-E001_dims/results.json": "5e7687b226df5b05f689ac09d8431e917beef1f2f2ff4df1b5c20c1726ef82c8",
+  "proofs/DISTANCE-DIM-20261117-001A/DISTANCE-DIM-20261117-001A-P001_order_dimension/manifest.json": "7ac60cf004ce193c42e8a34d56f268b91728064e340628903cbaa8d17c934718",
+  "proofs/DISTANCE-DIM-20261117-001A/DISTANCE-DIM-20261117-001A-P001_order_dimension/result.json": "42b10f4b73268cfcac6d83d511163bef60e1eccada72029b250a168ada129112"
+ },
+ "paths": {
+  "manifest": "proofs/DISTANCE-DIM-20261117-001Z/DISTANCE-DIM-20261117-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/DISTANCE-DIM-20261117-001Z/DISTANCE-DIM-20261117-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/DISTANCE-DIM-20261117-001Z/DISTANCE-DIM-20261117-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/DISTANCE-DIM-20261117-001Z/DISTANCE-DIM-20261117-001Z-P001_epic_closure/result.json",
+  "check": "proofs/DISTANCE-DIM-20261117-001Z/DISTANCE-DIM-20261117-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/DISTANCE-DIM-20261117-001Z/DISTANCE-DIM-20261117-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-17; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

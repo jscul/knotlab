@@ -3997,6 +3997,11 @@ So holes come in two kinds:
      patterns (13 descriptions) that pass every carrier carry only one link down a self-similar strand, in two parts: an all-equal
      orbit stays all equal, and a split one below forces a split one above. Their least bonds so far avoid it: for one of them, a
      chain along the way, 7 members at s = 7 and 8 ([decision note](../research/TWO-ENDS-20261117-001/two_ends.md)).
+   - **The strand that never forgets is a separate strand** (`MODE-BOND-20261117-001`; referee pending): the link those 5 patterns
+     carry runs down a self-similar strand that no knot ties to its parent, so it never touches the top, and nothing that holds the
+     top can use it. The top's own strands all forget within five levels, so the reach grows linearly, proved. With this, every
+     small-orbit pattern seen is decided, and every bounded one is held by a bond between two bounded pieces, one at each end
+     ([decision note](../research/MODE-BOND-20261117-001/mode_bond.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

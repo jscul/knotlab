@@ -38,7 +38,7 @@ period Q. So for two states p, q, the lengths of paths from p to q form a set Λ
 *Proof.* Each composite is a relation between two sets of at most 16 assignments, and the types are finitely many. The set reached
 in ℓ + 1 steps is a function of the set reached in ℓ steps, so the sequence of sets repeats from its first repeat. ∎
 
-For the 13 mutants of 8db5da810c00 this is small: 8db5da810c00-73 has M = 88, T = 5, Q = 2 (`composite.json`).
+For the 13 mutants of 8db5da810c00 (5 distinct patterns) this is small: 8db5da810c00-73 has M = 88, T = 5, Q = 2 (`composite.json`).
 
 ## Segments and moves
 
@@ -154,15 +154,15 @@ Both parts are proper subsets of B, hence free, so B would be free. So the speci
 the count is that of Theorem D. ∎
 
 **Computed** (`run_composite.py`, `composite.json`):
-- On the census's 786 small-orbit descriptions alive at every depth, the product test holds for exactly the 740 that forget. Each
+- On the census's 786 small-orbit descriptions alive at every depth, the product test holds for exactly the 740 that forget (139 distinct patterns of the 181). Each
   passes it with ℓ₀ at most its forgetting length plus 1, so Theorem G reproves their growth, at a lower rate than Theorem F's
   1 + ⌈s/r⌉. The 46 that
-  never forget all fail it.
-- It fails for all 25 open patterns of KEEP-REACH. For the 13 mutants of 8db5da810c00 the reason is one carried mode. An orbit type
+  never forget (42 patterns) all fail it.
+- It fails for all 25 open descriptions of KEEP-REACH (10 patterns). For the 13 mutants of 8db5da810c00 the reason is one carried mode. An orbit type
   whose children are both of its own type keeps the two all-equal assignments at every depth, alternating with each step, while every
   other composite on the periodic part is a product (8db5da810c00-73: 2 of 43 periodic states are not products).
 - A bond across a long stretch must use that mode. Stems of depth 0 to 2 hold no bond of any size at s = 7 and 8 at depth 12.
-- The least bonds found at s = 7 and 8 avoid it. For 8db5da810c00-79 at depth 12 they have 7 members (certified), all on the
+- The least bonds found at s = 7 and 8 avoid it. For the pattern of 8db5da810c00-73 and -79 (one pattern) at depth 12 they have 7 members (certified), all on the
   lower member's line of orbits, which never enters the self-similar type, with gaps of at most two levels.
 
 ## Dependencies

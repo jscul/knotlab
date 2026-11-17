@@ -5,7 +5,10 @@ coordinator: "let's see if we can uncover anything here". It serves G17, with G1
 [proof.md](../../proofs/KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/proof.md). Code by the thread. The canonical
 K1–K3 test is unchanged. **Refereed** (KEEP-REACH-R1, [report](referee-R1/report.md), commits 2275fed41 and e6e24ed66): **confirmed with
 fixes**, no Block; Theorems K and F′ and Lemma E hold, and the three least-sure points check out; the summaries of what is shown about
-the 25 are narrowed below. The referee did not recompute the 2,380 / 39 classification counts. **Stress test done** (depth 13, below).
+the 25 are narrowed below. The referee did not recompute the 2,380 / 39 classification counts. *Narrowed after CARRIER's referee
+(CARRIER-R1, 2026-11-17): those counts are of descriptions, and several descriptions give the same pattern. The 2,380 are 583
+distinct patterns (244 that forget), the 39 are 16 (6, 5 and 5), the 25 are 10, and the census's 786 descriptions are 181 (139
+that forget, 42 that never do).* **Stress test done** (depth 13, below).
 
 ## The question
 
@@ -30,15 +33,16 @@ distance. Three new results say how far that holds.
 - **Lemma E (proved; the advisor's idea).** A dependence between two orbits gives a two-orbit bond when it is exposed: each side of
   some missing pair is the only state with its values on a free set of addresses.
 
-The fresh sample and the mutations test the converse. Of 2,380 small-orbit patterns that live at every depth, 1,081 forget and grow,
-and 1,260 never forget and hold a two-orbit bond at every distance, so they are bounded. **39 never forget on all values, yet lack a
+The fresh sample and the mutations test the converse. Of 2,380 small-orbit descriptions that live at every depth (583 distinct
+patterns), 1,081 forget and grow (244 patterns), and 1,260 never forget and hold a two-orbit bond at every distance, so they are
+bounded. **39 descriptions (16 patterns) never forget on all values, yet lack a
 two-orbit bond from the top at some distance.** They fall into three kinds:
 
-| Kind | Patterns | What happens |
+| Kind | Descriptions (patterns) | What happens |
 | --- | ---: | --- |
-| Forget on actual values | 14 | The "never forgets" came from values no state takes. Theorem F′ proves growth |
-| Top pair projections become products | 13 | From level 3 every two-orbit pair projection is independent from s = 5 on, while deeper pair projections never forget |
-| Unexposed dependence | 12 | From level 3 the pair projections stay dependent at every s, but every missing pair has an unexposed side, so no two-orbit bond forms |
+| Forget on actual values | 14 (6) | The "never forgets" came from values no state takes. Theorem F′ proves growth |
+| Top pair projections become products | 13 (5) | From level 3 every two-orbit pair projection is independent from s = 5 on, while deeper pair projections never forget |
+| Unexposed dependence | 12 (5) | From level 3 the pair projections stay dependent at every s, but every missing pair has an unexposed side, so no two-orbit bond forms |
 
 The second kind gives a sharp contrast. Mutant 8db5da810c00-73 differs from its bounded parent by one slot of one placement. The
 certified least bonds at depth 11 are:
@@ -57,7 +61,7 @@ are undecided past s = 2. *(Narrowed after the referee: it read "'never forgets'
 said not to hold the top's bond.)* What the data supports throughout is
 **Conjecture C′**: the reach from level k is bounded exactly when a two-orbit bond from level k survives at every distance. It is
 proved in one direction (K). The other direction is proved where actual-value forgetting holds (F′), and it agrees with everything
-computed. It stays open on the 25 patterns of the last two kinds.
+computed. It stays open on the 25 descriptions (10 patterns) of the last two kinds.
 
 In the program's words, a relation that never forgets is a tangle. What is proved to hold the top is narrower than a tangle
 somewhere: a tangle that starts at the top and is exposed on both of its strands. Whether that is the only thing that holds it is
@@ -69,7 +73,7 @@ Conjecture C′.
 | 2 | The four census patterns are bounded at every depth (4, 4, 5, 6); forgetting decides all 786 | computed at every depth tier |
 | 3 | Theorem F′: forgetting on actual pair projections from the top level forces growth | proved (the splicing lemma with a weaker hypothesis) |
 | 4 | Lemma E: an exposed dependence gives a two-orbit bond | proved |
-| 5 | Among 2,380 fresh and mutated patterns, 39 never forget on all values yet lack a two-orbit bond: 14, 13 and 12 of the three kinds | computed (not recomputed by the referee, who checked the 13 and 12 by SAT) |
+| 5 | Among 2,380 fresh and mutated descriptions (583 patterns), 39 (16 patterns) never forget on all values yet lack a two-orbit bond: 14, 13 and 12 of the three kinds (6, 5 and 5 patterns) | computed (not recomputed by the referee, who checked the 13 and 12 by SAT) |
 | 6 | Mutant 8db5da810c00-73: L₁₁ = 3, 4, 5, 5, 6, 6 against its parent's 3, 4, 5, 5, 5, 5 | computed, certified (census search, N = 11); depth 13 pending |
 | 7 | Conjecture C′, consistent with every pattern decided; open on 25 | stated |
 
@@ -78,7 +82,8 @@ Conjecture C′.
 Frozen in [predictions.md](predictions.md), committed in 54a0010bc at 17:02 UTC, before the runs. What had been seen was disclosed
 there: the exploratory look at the four and the gates.
 - **P1 holds.** All four have a two-orbit bond at every s and every depth tier, at 4, 4, 5 and 6.
-- **P2 fails.** It predicted zero third-class patterns; there are 39 (2 in the fresh sample, 37 among the mutations). The sample reached
+- **P2 fails.** It predicted zero third-class patterns; there are 39 descriptions, 16 distinct patterns (2 in the fresh sample, 37
+  among the mutations). The sample reached
   its power floor of 40 never-forgetting patterns after 1,016 draws.
 
 ## Lessons

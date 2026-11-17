@@ -3,7 +3,8 @@
 `CARRIER-20261117-001A-P001`, epic `CARRIER-20261117-001`, 2026-11-17. Written by Claude. The advisor model was consulted on the
 repaired conjecture and the word "stem" (`research/CARRIER-20261117-001/advisor/head_answer.md`). Checks: `check.py`, with its result
 in `result.json`, and the gates of `research/CARRIER-20261117-001/` (`gate_two_block.json`, `gate_head.json`). The setting is that of
-Theorems W, F and K
+Theorems W, F and K. *Refereed* (CARRIER-R1, `research/CARRIER-20261117-001/referee-R1/report.md`): confirmed with fixes, no Block;
+the counts below are narrowed to distinct patterns, since several descriptions give the same pattern
 ([W](../../DIRECT-REACH-20261115-001B/DIRECT-REACH-20261115-001B-P001_every_depth/proof.md),
 [F](../../BLOCK-REACH-20261116-001A/BLOCK-REACH-20261116-001A-P001_forgetting_blocks/proof.md),
 [K](../../KEEP-REACH-20261117-001A/KEEP-REACH-20261117-001A-P001_two_orbit/proof.md)):
@@ -49,27 +50,28 @@ Two-orbit bonds are orbit-and-block bonds that use no child, and stem bonds of d
 
 ## Computed
 
-**The 25 open patterns of KEEP-REACH** (`run_block.py`, `block_25.json`; `run_head.py`, `head/`), from level 3, at every depth, bonds
+**The 25 open descriptions of KEEP-REACH, 10 distinct patterns** (`run_block.py`, `block_25.json`; `run_head.py`, `head/`), from level 3, at every depth, bonds
 searched to 8 members:
 
-| Patterns | Kind in KEEP-REACH | Two-orbit bond from level 3 | Orbit-and-block bond | Stem bond of depth 2 | Verdict |
+| Descriptions | Kind in KEEP-REACH | Two-orbit bond from level 3 | Orbit-and-block bond | Stem bond of depth 2 | Verdict |
 | --- | --- | --- | --- | --- | --- |
-| bace53f8f952-147, -111 | unexposed dependence | to s = 2 only | every s: 4 below the bottom tiers, 5 at them | | bounded at every depth (5) |
+| bace53f8f952-147, -111 (2 patterns) | unexposed dependence | to s = 2 only | every s: 4 below the bottom tiers, 5 at them | | bounded at every depth (5) |
 | bace53f8f952-58 | unexposed dependence | to s = 4 only | to s = 4 only | every s ≥ 3: 5 | bounded at every depth (5) |
-| ca1efb37ad88-361, -364, -367, -375, -378, -386, -389, -418, -835 | unexposed dependence | to s = 4 only | to s = 4 only | every s ≥ 3: 4, then 5 | bounded at every depth (5) |
-| the 13 mutants of 8db5da810c00 | top pair projections become products | to s = 4 only | to s = 4 only | s = 3 to 6: 5, 5, 6, 6; none of at most 8 from s = 7 | open |
+| ca1efb37ad88-361, -364, -367, -375, -378, -386, -389, -418, -835 (2 patterns: -835, and the other eight) | unexposed dependence | to s = 4 only | to s = 4 only | every s ≥ 3: 4, then 5 | bounded at every depth (5) |
+| the 13 mutants of 8db5da810c00 (5 patterns) | top pair projections become products | to s = 4 only | to s = 4 only | s = 3 to 6: 5, 5, 6, 6; none of at most 8 from s = 7 (for −73 at s = 7, none of any size: the referee) | open |
 
 The values at s = 1, 2 come from the two-orbit and orbit-and-block bonds (3 and 4 or 5) at every tier, so each "bounded" row is
 bounded at every s and every depth, by Theorem K*.
 
-**Corollary (Conjecture C′ fails).** *The twelve patterns with an unexposed dependence have a bounded reach from level 3 at every
+**Corollary (Conjecture C′ fails).** *The twelve descriptions with an unexposed dependence, five distinct patterns, have a bounded reach from level 3 at every
 depth, yet none holds a two-orbit bond from level 3 at every distance. So C′'s "only if" is false.* Their dependence, unexposed inside
 the two orbits, is exposed once the lower orbit's children or the lower orbit's ancestors below the top are held as well.
 
-**Exact values for the 13 mutants.** The threshold run (`threshold_*.json`, certified by LRAT) finds no bond of at most 5 members at
-s = 5 and 6 at depth 11 for each of the 12 besides −73, and −73's exact reading says the same. Their stem bonds of 6 hold at every depth.
+**Exact values for the 13 mutants (5 patterns).** The threshold run (`threshold_*.json`, certified by LRAT) finds no bond of at most 5 members at
+s = 5 and 6 at depth 11 for each of the 12 besides −73 (4 patterns besides −73's own), and −73's exact reading says the same. Their stem bonds of 6 hold at every depth.
 So L₁₁(3, 5) = L₁₁(3, 6) = 6 for all 13, and L_N(3, 5), L_N(3, 6) ≤ 6 at every depth. Past the stems, the certified search finds no bond of at most 6 at s = 7
-and 8 at depth 12 for −73 and −79 (`threshold_deep_*_c6.json`), so L₁₂(3, 7), L₁₂(3, 8) ≥ 7 there.
+and 8 at depth 12 for −73, which is the same pattern as −79 (`threshold_deep_*_c6.json`; the two runs refuted the same formulas),
+and the bound-7 run finds bonds of 7, so L₁₂(3, 7) = L₁₂(3, 8) = 7 for that one pattern.
 
 *Checks* (`gate_two_block.py`, `gate_head.py`, all passed):
 - the least bond search agrees with an independent brute force on 2,000 and 1,000 random relations;
@@ -95,7 +97,7 @@ pieces are bounded parts of the tree of blocks around each end.
   monoid times the number of types can be shortened or lengthened by a repeated factor without changing the projection onto the bond,
   so the bond can be moved, keeping s, until every stretch but one is short. The tiers below r₀ must be part of the type.
 
-C* would make the open question for the 13 mutants a dichotomy: a bond in fixed pieces at both ends at every distance, or growth.
+C* would make the open question for the 13 mutants (5 patterns) a dichotomy: a bond in fixed pieces at both ends at every distance, or growth.
 
 ## Dependencies
 

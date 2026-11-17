@@ -14,7 +14,7 @@
   "authoritative_metadata": "manifest.json",
   "title": "Bonds in exactly projected pieces: an orbit and a block, and stems",
   "status": "Proved",
-  "claim": "Theorem K*: a bond inside any set of addresses whose projection is exact, holding a distinction at level k and one at level k + s, bounds L_N(k, s); Lemma P: the projections onto an orbit and the block of a lower orbit, and onto a stem (the top orbit with the lower orbit's ancestors at the next d levels) and a lower orbit, are exact. Computed at every depth: the 12 patterns of KEEP-REACH with an unexposed dependence are bounded at 5 (2 by orbit-and-block bonds, 10 by stem bonds of depth 2), with no two-orbit bond from level 3 at every distance, so Conjecture C' is false; L_11(3, 5) = L_11(3, 6) = 6 for the 13 mutants of 8db5da810c00 (certified lower bound, stem upper bound at every depth); stems of depth 2 give no bond of at most 8 for them from s = 7. Conjecture C* (bounded pieces at both ends) stated. Referee pending.",
+  "claim": "Theorem K*: a bond inside any set of addresses whose projection is exact, holding a distinction at level k and one at level k + s, bounds L_N(k, s); Lemma P: the projections onto an orbit and the block of a lower orbit, and onto a stem (the top orbit with the lower orbit's ancestors at the next d levels) and a lower orbit, are exact. Computed at every depth: the 12 descriptions of KEEP-REACH with an unexposed dependence (5 distinct patterns) are bounded at 5 (2 patterns by orbit-and-block bonds, 3 by stem bonds of depth 2), with no two-orbit bond from level 3 at every distance, so Conjecture C' is false; L_11(3, 5) = L_11(3, 6) = 6 for the 13 mutants of 8db5da810c00, 5 patterns (certified lower bound, stem upper bound at every depth); stems of depth 2 give no bond of at most 8 for them from s = 7. Conjecture C* (bounded pieces at both ends) stated. Refereed (CARRIER-R1): confirmed with fixes, no Block; counts narrowed to distinct patterns.",
   "dependencies": [
     "DIRECT-REACH-20261115-001B",
     "KEEP-REACH-20261117-001A",
@@ -93,7 +93,7 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude 2026-11-17; the advisor proposed the repaired conjecture's pieces, its proof idea and the word 'stem'; referee pending.",
+    "independence": "Written by Claude 2026-11-17; the advisor proposed the repaired conjecture's pieces, its proof idea and the word 'stem'; refereed (CARRIER-R1), confirmed with fixes.",
     "status": "proof by hand plus finite computation; check passed",
     "novelty": "known-with-delta"
   }

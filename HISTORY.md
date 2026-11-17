@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: what holds the top past two orbits, confirmed by its referee; the line's counts narrowed to distinct patterns
+
+- The study of what holds the top past two orbits (`CARRIER-20261117-001`) was confirmed by its referee with fresh SAT code, with no
+  Block. The theorem that a bond inside any exactly projected piece bounds the reach holds, and so does the refutation of Conjecture
+  C′ at every depth ([decision note](research/CARRIER-20261117-001/carrier.md)).
+- Narrowed: the line counted descriptions, and many are the same pattern, since a mutation can swap a word for one that acts the
+  same.
+  - The 25 open descriptions are 10 distinct patterns. C′ is refuted by 5 patterns (12 descriptions), and the 13 mutants that
+    pass every carrier are 5.
+  - Upstream, the 2,380 fresh and mutated descriptions are 583 patterns, and the census's 786 small-orbit descriptions are 181.
+  - Fixed in the notes, the glossary, the goals and the objects index.
+- Narrowed: the readings past the stems are one pattern's, at two depths: exactly 6 at s = 5 and 6 at depth 11, and exactly 7 at
+  s = 7 and 8 at depth 12. They are no longer written as one rising sequence.
+- Sharpened: for that pattern at s = 7, stems hold no bond of any size.
+
 ## 17 November 2026: a referee's own finding withdrawn, the 2 × 2 law on the weave
 
 - The knot-law study's referee had reported two laws on the weave that looked disordered with every knot in the not-all-equal

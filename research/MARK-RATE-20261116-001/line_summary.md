@@ -33,7 +33,9 @@ The `LEVEL-REACH-20261114-001` census reads the reach from level 3 to level 3 + 
 
 No least bond needs a member below its target. The least bond is not monotone in depth, so these are depth-9 readings.
 
-Of the census's alive descriptions, 786 have orbits of at most four addresses. For these the census values become every-depth results (lower bounds and bounded reach at every
+Of the census's alive descriptions, 786 have orbits of at most four addresses. *(Counted as descriptions: several descriptions give the same
+pattern, and the 786 are 181 distinct patterns, 139 of which forget; CARRIER's referee, 2026-11-17. Every count in this summary is of
+descriptions.)* For these the census values become every-depth results (lower bounds and bounded reach at every
 depth; upper bounds from depth-9 values, by Lemma U, at every depth N ≥ 9):
 - **Bounded at every depth.** 54 of the 100 constant descriptions: 15 at two members, 39 at most three (32 at exactly three). Blocks
   prove 42 of them, descents 12 more.

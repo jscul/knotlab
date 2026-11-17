@@ -73,13 +73,17 @@ own constraint, and the pair projection holds no bond meeting both orbits (the a
 | Fresh sample | 670 | 630 | 38 | 2 |
 | Mutations of the four | 1,710 | 451 | 1,222 | 37 |
 
+*Narrowed after CARRIER's referee (CARRIER-R1, 2026-11-17):* the counts are of descriptions (keys), and many give the same pattern,
+since a mutation can swap a word for one that acts the same. The 2,380 are 583 distinct patterns (244 forget), the 39 are 16 (6, 5
+and 5 of the kinds below), and the census's 786 descriptions are 181 distinct (139 forget, 42 never do).
+
 The 39 in the last column (`analyze_third.py`, `third_class.json`) fall into three kinds:
-- **14 forget on actual values.** Theorem F′ applies with r = 2 or 3 from level 3, so they grow at every depth.
-- **13 have top pair projections that become products.** From level 3, every two-orbit pair projection is a product from s = 5 on, while pair projections that
+- **14 forget on actual values (6 patterns).** Theorem F′ applies with r = 2 or 3 from level 3, so they grow at every depth.
+- **13 have top pair projections that become products (5 patterns).** From level 3, every two-orbit pair projection is a product from s = 5 on, while pair projections that
   start deeper never become products. All 13 are mutants of 8db5da810c00. For one of them, 8db5da810c00-73, the certified least bond
   at depth 11 is L₁₁(3, s) = 3, 4, 5, 5, 6, 6 for s = 1..6. That is past its parent's bound of 5, which holds at every depth by
   Theorem K. The parent's own certified values at depth 11 are 3, 4, 5, 5, 5, 5. At depth 13 (900 s per s) it reads 3, 4, 5, 5, 6, 6 again for s = 1..6; s = 7, 8 undecided.
-- **12 keep a unexposed dependence.** From level 3 the pair projections stay non-product at every s checked (13 to 16, past every preperiod seen),
+- **12 keep an unexposed dependence (5 patterns).** From level 3 the pair projections stay non-product at every s checked (13 to 16, past every preperiod seen),
   but every missing pair has an unexposed side (Lemma E fails). So no two-orbit bond forms. The census search at 300 s per s decided
   none of their cells past s = 2 at depth 11.
 

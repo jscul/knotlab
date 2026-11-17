@@ -3963,21 +3963,22 @@ So holes come in two kinds:
    - **What keeps the top bound** (`KEEP-REACH-20261117-001`; refereed, confirmed with fixes): a relation between two of the maps'
      orbits that never untangles, starts at the top and has its dependence exposed holds a bond across both, and that bond's size bounds
      the reach at every depth, proved. On the census this settles every small-orbit pattern. Whether it is the only thing that keeps the
-     top bound is open: in fresh and mutated patterns, 25 never untangle somewhere yet hold no such bond, and one, a single change away
-     from a bounded pattern, has passed it at depth 11 ([decision note](../research/KEEP-REACH-20261117-001/keep_reach.md)).
-   - **What holds the top past two orbits** (`CARRIER-20261117-001`; referee pending): it is not the only thing. The 12
-     patterns whose two orbits depend on each other with no bond between them keep the top bound at every depth, at 5. The bond
-     appears once a little more of one strand is held: the lower orbit's children (2 patterns), or the orbits just below the top on
-     the way down, a stem (10). The 13 whose top untangles read exactly 6 at s = 5 and 6, also through stems, and the stems stop
-     there: two tested deeper need at least 7 at s = 7 and 8, and whether they grow without bound is open. The repaired conjecture:
+     top bound is open: in fresh and mutated patterns, 25 descriptions (10 distinct patterns) never untangle somewhere yet hold no such
+     bond, and one, a single change away from a bounded pattern, has passed it at depth 11 ([decision note](../research/KEEP-REACH-20261117-001/keep_reach.md)).
+   - **What holds the top past two orbits** (`CARRIER-20261117-001`; refereed, confirmed with fixes): it is not the only thing.
+     The 5 patterns (12 descriptions) whose two orbits depend on each other with no bond between them keep the top bound at every
+     depth, at 5. The bond appears once a little more of one strand is held: the lower orbit's children (2 patterns), or the orbits
+     just below the top on the way down, a stem (3). The 5 patterns (13 descriptions) whose top untangles read exactly 6 at s = 5
+     and 6, also through stems, and the stems stop there: one pattern tested deeper needs exactly 7 at s = 7 and 8 (depth 12), and
+     whether they grow without bound is open. The repaired conjecture:
      the top is held exactly when a bond between two bounded pieces, one at each end, survives at every distance
      ([decision note](../research/CARRIER-20261117-001/carrier.md)).
    - **Pieces at three ends** (`TWO-ENDS-20261117-001`; referee pending): whatever holds the top to every depth can be slid, by
      pumping the repeating structure of the blocks, until it sits near the top, near the far member or near the last few levels,
      which the pattern reads differently, so the conjecture holds with three ends. Reach is either eventually constant or grows at
-     least linearly, never in between. Across a long stretch the 13 patterns that pass every carrier carry only one thing, an
-     orbit frozen all equal down a self-similar strand, and their least bonds so far avoid it: a chain along the way, 7 members at
-     s = 7 and 8 ([decision note](../research/TWO-ENDS-20261117-001/two_ends.md)).
+     least linearly, never in between. Across a long stretch the 5 patterns (13 descriptions) that pass every carrier carry only one thing, an
+     orbit frozen all equal down a self-similar strand, and their least bonds so far avoid it: for one of them, a chain along the way, 7
+     members at s = 7 and 8 ([decision note](../research/TWO-ENDS-20261117-001/two_ends.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

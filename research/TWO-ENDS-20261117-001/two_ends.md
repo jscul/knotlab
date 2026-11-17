@@ -3,14 +3,16 @@
 Epic `TWO-ENDS-20261117-001`. It takes direction #1 of `CARRIER-20261117-001` at the coordinator's go-ahead (2026-11-17 21:19
 UTC), within John's request of 16:52 UTC to reopen the line. It serves G17, with G1, and ran on 2026-11-17. Proof note:
 [proof.md](../../proofs/TWO-ENDS-20261117-001A/TWO-ENDS-20261117-001A-P001_pumping/proof.md). Code by the thread. The canonical K1–K3
-test is unchanged. **Referee pending.**
+test is unchanged. **Referee pending.** *Counts narrowed on 2026-11-17, before this study's referee, after CARRIER's (CARRIER-R1):
+several descriptions give the same pattern, so counts now give distinct patterns too. The 13 mutants are 5 patterns, −73 and −79
+are one, and the census's 786 descriptions are 181 patterns.*
 
 ## The question
 
 CARRIER found that bonds inside slightly larger pieces than two orbits keep the top bound where two-orbit bonds fail, and proposed,
 with the advisor, Conjecture C*: the reach is bounded exactly when a bond inside bounded pieces at the two ends (the top orbit and
 the lower orbit) survives at every distance. Its "if" was proved (Theorem K*). This epic asks for the "only if", by pumping, and
-whether the 13 mutants of 8db5da810c00, which pass every carrier found, grow.
+whether the 13 mutants of 8db5da810c00 (5 distinct patterns), which pass every carrier found, grow.
 
 ## Answer
 
@@ -27,8 +29,8 @@ whether the 13 mutants of 8db5da810c00, which pass every carrier found, grow.
 - **Decidable in principle.** For each c, whether the reach stays at most c at every depth is decidable, with no feasible constants
   claimed in general. Boundedness is semi-decidable.
 - **Theorem G (proved; the advisor's test).** If every long enough composite of steps through blocks is a product, the reach grows
-  linearly. This is a finite computation. On the census it holds exactly for the 740 patterns that forget, which reproves their
-  growth, and for none of the 46 that do not.
+  linearly. This is a finite computation. On the census it holds exactly for the 740 descriptions that forget (139 distinct
+  patterns), which reproves their growth, and for none of the 46 that do not (42 patterns).
 
 **The 13 remain open.** The test fails for them, and the computation shows exactly why:
 - **One carried mode.** One orbit type has both children of its own type. Down such a line, an orbit whose four addresses are all
@@ -37,13 +39,15 @@ whether the 13 mutants of 8db5da810c00, which pass every carrier found, grow.
 - **What a bounded bond would need.** It must cross a long stretch through this mode, so it would need a piece near the top that
   forces such an orbit to be all equal, with the top member needed. None is in a stem: stems of depth 0 to 2 hold no bond of any size
   at s = 7 or 8.
-- **The certified readings.** For −79 at depth 12 the least bond has exactly 7 members at s = 7 and 8. A bond of 7 exists, and none
-  of at most 6 (both certified by LRAT). So −79 reads 6, 6, 7, 7 for s = 5 to 8.
+- **The certified readings, for one pattern.** −73 and −79 are the same pattern (CARRIER's referee: their depth-12 runs refuted the
+  same formulas). At depth 12 its least bond has exactly 7 members at s = 7 and 8: a bond of 7 exists (found under the name −79), and
+  none of at most 6 (both certified by LRAT). So it reads exactly 6 at s = 5, 6 (depth 11) and exactly 7 at s = 7, 8 (depth 12).
+  Reach need not be monotone in the depth, so these are readings at two depths.
   - Both bonds of 7 lie on the lower member's own line of orbits, which alternates between two types and never enters the
     self-similar one. There are two members at level 3, then one or two every two or three levels down to v (levels 3, 3, 4, 6, 6,
     7, 10 at s = 7; 3, 3, 5, 7, 8, 8, 11 at s = 8). That is a chain spread along the way, not a stem and not the advisor's off-line
     shape.
-  - For −73 at depth 13, the search did not decide s = 7 or 8 within 3,600 s per cell.
+  - At depth 13 the same pattern's search did not decide s = 7 or 8 within 3,600 s per cell.
 
 In the program's words: across a long stretch, the only thing a pattern carries is a strand that has frozen into one of two states.
 Reach stays bounded only if the top can tie itself to such a frozen strand. Then a bond between the top's piece and the far end holds
@@ -55,23 +59,23 @@ at every distance. Otherwise each stretch needs its own member, and the reach gr
 | 2 | Theorem N: normal form with three ends (top, lower member, bottom band) | proved by hand (the advisor's three repairs) |
 | 3 | Theorem D: per depth tier and residue, eventually constant or linear | proved |
 | 4 | Lemma R and the corollary: "at most c at every depth" decidable in principle | proved (sketch for the corollary) |
-| 5 | Theorem G: products of long composites force linear growth; on the census, exactly the 740 that forget | proved; computed (`composite.json`) |
-| 6 | The 13: one carried mode blocks the test; no stem bond at s = 7, 8 | computed |
-| 7 | 8db5da810c00-79: L₁₂(3, 7) = L₁₂(3, 8) = 7, by bonds spread along the lower member's line | computed, certified (LRAT) |
+| 5 | Theorem G: products of long composites force linear growth; on the census, exactly the 740 descriptions that forget (139 patterns) | proved; computed (`composite.json`) |
+| 6 | The 13 (5 patterns): one carried mode blocks the test; no stem bond at s = 7, 8 | computed |
+| 7 | One pattern (8db5da810c00-73, also -79): L₁₂(3, 7) = L₁₂(3, 8) = 7, by bonds spread along the lower member's line | computed, certified (LRAT) |
 
 ## Predictions
 
 Frozen in [predictions.md](predictions.md), commit d438a143e, before any Part B computation.
-- **P1 holds.** −79 has a bond of 7 at s = 7 (and at s = 8) at depth 12, so L₁₂(3, 7) = L₁₂(3, 8) = 7.
+- **P1 holds.** −79 (the same pattern as −73) has a bond of 7 at s = 7 (and at s = 8) at depth 12, so L₁₂(3, 7) = L₁₂(3, 8) = 7.
 - **P2 undecided.** At depth 13 the search for a bond of at most 6 for −73 at s = 7, 8 ran out of its 3,600 s per cell.
 - **P3 holds.** The 13's automata have at most 88 states (fewer than 10,000).
 - **P4 holds.** For all 13, non-product composites lie on the periodic part (the carried mode), so the product test does not prove growth.
-- **P5 holds.** Every one of the 740 forgetting census patterns passes the test with ℓ₀ at most its forgetting length plus 1.
+- **P5 holds.** Every one of the 740 forgetting census descriptions (139 patterns) passes the test with ℓ₀ at most its forgetting length plus 1.
 - **P6, not tested beyond −73.** No other pattern has exact readings at two depths.
 
 ## Lessons
 
-- A finite-state reformulation can match a proved criterion exactly: the product test and forgetting agree on all 786.
+- A finite-state reformulation can match a proved criterion exactly: the product test and forgetting agree on all 786 descriptions (181 patterns).
 - What blocks a growth proof can be one mode, small enough to name: an all-equal strand passed down a self-similar type.
 - Pumping on a pattern of finite depth leaves the bottom as an end of its own. Results stated for two ends need a reason to drop it.
 

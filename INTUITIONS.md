@@ -3076,7 +3076,7 @@ that earlier records used in two senses.
   down from the top toward the lower orbit (the advisor's word). A bond inside
   the stem and the lower orbit, holding a distinction of each end, holds the
   top to the lower orbit, as a two-orbit bond does. Stems of depth 2 hold the
-  top in ten patterns where no bond inside two orbits does: their unexposed
+  top in three patterns (ten descriptions) where no bond inside two orbits does: their unexposed
   dependence shows once the orbits just below the top are held too
   (`CARRIER-20261117-001`, 17 November 2026).
 - **Binding pattern.** The owner's word, not yet defined: in his words, "This

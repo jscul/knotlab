@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the pumping study confirmed by its referee, with a repaired step and narrower summaries
+
+- The pumping study (`TWO-ENDS-20261117-001`) was confirmed by its referee with fresh SAT code, with no Block. The segment lemma, the
+  bounded-or-linear dichotomy on each depth tier, the depth lemma and the product test hold as written, and so do both certified
+  bonds of 7 at depth 12 ([decision note](research/TWO-ENDS-20261117-001/two_ends.md)).
+- Repaired: the normal form's step 3 missed two branch points that block each other. It now moves such clusters as one unit, with a
+  larger constant; the repaired step has not been re-refereed.
+- Narrowed: what is shown is a three-end form of Conjecture C*, not C* with two ends. Decidability is a proof sketch. The dichotomy
+  holds on each depth tier.
+- Narrowed: the counts are of descriptions (139 and 42 of 181 distinct patterns, 10 open). The one link carried across long
+  stretches by the 13 open descriptions has two parts, an all-equal part and a split part.
+
 ## 17 November 2026: what holds the top past two orbits, confirmed by its referee; the line's counts narrowed to distinct patterns
 
 - The study of what holds the top past two orbits (`CARRIER-20261117-001`) was confirmed by its referee with fresh SAT code, with no

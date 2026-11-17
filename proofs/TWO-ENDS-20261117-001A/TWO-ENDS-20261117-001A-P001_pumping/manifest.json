@@ -14,7 +14,7 @@
   "authoritative_metadata": "manifest.json",
   "title": "Pumping along blocks: a normal form with three ends, a bounded-or-linear dichotomy, and a product test",
   "status": "Proved",
-  "claim": "Lemma S: finitely many states of saturated downward paths, lengths ultimately periodic (threshold T, period Q). Theorem N: a bond of at most c members meeting levels k and k + s moves, keeping its size and the two levels, until every member lies within K(c) blocks of the top region, the lower member's orbit or the bottom band (three ends). Theorem D: per depth tier and residue of s mod Q, L is eventually constant or at least linear. Lemma R: depth pumping. Corollary: 'L <= c at every depth' decidable in principle. Theorem G: if all composites of l0 steps are products, L grows linearly. Computed: the product test holds for exactly the 740 forgetting census descriptions (139 distinct patterns) (l0 <= r + 1) and fails for the 46 others (42 patterns) and the 25 open ones (10 patterns); for the 13 mutants (5 patterns) of 8db5da810c00 one carried mode (all-equal orbits down a self-similar type) blocks it; one pattern (8db5da810c00-73 = -79) has L_12(3,7) = L_12(3,8) = 7 (certified). Referee pending.",
+  "claim": "Lemma S: finitely many states of saturated downward paths, lengths ultimately periodic (threshold T, period Q). Theorem N (step 3 repaired for clusters after the referee): a bond of at most c members meeting levels k and k + s moves, keeping its size and the two levels, until every member lies within K(c) blocks of the top region, the lower member's orbit or the bottom band (three ends). Theorem D: per depth tier and residue of s mod Q, L is eventually constant or at least linear. Lemma R: depth pumping. Corollary (proof sketch): 'L <= c at every depth' decidable in principle. A three-end form of C* follows; C* with two ends is open. Theorem G: if all composites of l0 steps are products, L grows linearly. Computed: the product test holds for exactly the 740 forgetting census descriptions (139 distinct patterns) (l0 <= r + 1) and fails for the 46 others (42 patterns) and the 25 open ones (10 patterns); for the 13 mutants (5 patterns) of 8db5da810c00 one carried link down a self-similar type, with an all-equal part and a split part, blocks it; one pattern (8db5da810c00-73 = -79) has L_12(3,7) = L_12(3,8) = 7 (certified). Refereed (TWO-ENDS-R1): confirmed with fixes, no Block.",
   "dependencies": [
     "DIRECT-REACH-20261115-001B",
     "CARRIER-20261117-001A",
@@ -92,7 +92,7 @@
     "level": "V1",
     "external_review": false,
     "trusted_kernel": false,
-    "independence": "Written by Claude 2026-11-17; the advisor checked the plan before the freeze, gave three repairs and the product test; referee pending.",
+    "independence": "Written by Claude 2026-11-17; the advisor checked the plan before the freeze, gave three repairs and the product test; refereed (TWO-ENDS-R1), confirmed with fixes, no Block; step 3 of Theorem N repaired after the referee, not re-refereed.",
     "status": "proof by hand plus finite computation; check passed",
     "novelty": "known-with-delta"
   }

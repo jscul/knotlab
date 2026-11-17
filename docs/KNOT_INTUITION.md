@@ -3973,12 +3973,13 @@ So holes come in two kinds:
      whether they grow without bound is open. The repaired conjecture:
      the top is held exactly when a bond between two bounded pieces, one at each end, survives at every distance
      ([decision note](../research/CARRIER-20261117-001/carrier.md)).
-   - **Pieces at three ends** (`TWO-ENDS-20261117-001`; referee pending): whatever holds the top to every depth can be slid, by
-     pumping the repeating structure of the blocks, until it sits near the top, near the far member or near the last few levels,
-     which the pattern reads differently, so the conjecture holds with three ends. Reach is either eventually constant or grows at
-     least linearly, never in between. Across a long stretch the 5 patterns (13 descriptions) that pass every carrier carry only one thing, an
-     orbit frozen all equal down a self-similar strand, and their least bonds so far avoid it: for one of them, a chain along the way, 7
-     members at s = 7 and 8 ([decision note](../research/TWO-ENDS-20261117-001/two_ends.md)).
+   - **Pieces at three ends** (`TWO-ENDS-20261117-001`; refereed, confirmed with fixes): whatever holds the top to every depth can
+     be slid, by pumping the repeating structure of the blocks, until it sits near the top, near the far member or near the last few
+     levels, which the pattern reads differently. So a three-end form of the conjecture holds; with two ends it stays open. On each
+     depth tier, reach is either eventually constant or grows at least linearly, never in between. Across a long stretch the 5
+     patterns (13 descriptions) that pass every carrier carry only one link down a self-similar strand, in two parts: an all-equal
+     orbit stays all equal, and a split one below forces a split one above. Their least bonds so far avoid it: for one of them, a
+     chain along the way, 7 members at s = 7 and 8 ([decision note](../research/TWO-ENDS-20261117-001/two_ends.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

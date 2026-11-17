@@ -2,7 +2,8 @@
 
 `TWO-ENDS-20261117-001A-P001`, epic `TWO-ENDS-20261117-001`, 2026-11-17. Written by Claude. The advisor model checked the plan before
 the freeze and proposed three repairs and the product test (`research/TWO-ENDS-20261117-001/advisor/plan_answer.md`). Proof by hand,
-not machine-checked. Checks: `check.py`, with its result in `result.json`. The method is pumping finite semigroup states along words,
+not machine-checked. *Refereed* (TWO-ENDS-R1, `research/TWO-ENDS-20261117-001/referee-R1/report.md`): confirmed with fixes, no
+Block; Theorem N's step 3 repaired for clusters, the corollary marked a sketch, the carried mode given both parts. Checks: `check.py`, with its result in `result.json`. The method is pumping finite semigroup states along words,
 as for regular languages and tree automata, and as `READ-RULE-20261114-001` did for nested families. What is new here is the setting:
 addressed patterns of finite depth, where the depth tiers pin a third end.
 
@@ -56,7 +57,7 @@ or keep them, except new interior orbits. Those lie above an end that does not m
 ## Theorem N (a normal form with three ends)
 
 *Let B be a bond of P_N with at most c members, one at level k and one, v, at level k + s. Then P_N has a bond with as many members,
-one at level k and one at level k + s, each member of which lies within K = 4c²(T + Q) + k + R blocks of:*
+one at level k and one at level k + s, each member of which lies within K = 11c³(T + Q) + k + R blocks of:*
 - *the top region;*
 - *the orbit of the member at level k + s;*
 - *or an orbit of the bottom band.*
@@ -76,17 +77,22 @@ branches hold no anchor.
    such segment by the total. Then the edge's length is kept, and every point above the lowest long segment moves up while every point
    below it stays (advisor's repair: length passes only between segments at least T long). Afterwards each edge has at most one segment
    of length at least T + Q.
-3. **Branch points of A, from the top down.** Let b be a branch point of A, not an anchor, whose edge from above holds a segment of
-   length at least T + Q.
-   - If every edge below b holds a segment of length at least T, shorten the edge above by a multiple of Q to below T + Q. Then
-     lengthen the lowest such segment of each edge below by the same amount. Every anchor keeps its level, and b moves up.
-   - Otherwise some edge below b has every segment shorter than T. Then b lies within 2c·T blocks of that edge's lower node.
+3. **Clusters of nodes of A, from the top down** (*repaired after the referee, TWO-ENDS-R1*). Call an edge of A **short** when all
+   its segments are shorter than T. A **cluster** is a maximal set of nodes of A joined by short edges. It has at most 2c nodes, so its
+   diameter is below 2c·2c·T.
+   - **A cluster holding an anchor** does not move. Each of its nodes is within 4c²T blocks of that anchor.
+   - **Any other cluster** C has every edge that leaves it downward holding a segment of length at least T. A short one would bring
+     its lower node into C, and the leaves of A are anchors. If C's edge from above holds a segment of length at least T + Q, shorten
+     that edge by a multiple of Q to below T + Q, and lengthen the lowest segment of length at least T on each edge leaving C downward
+     by the same amount. Every anchor keeps its level, C moves up rigidly, and C ends within 2c(T + Q) blocks of the cluster above it.
 
-   By induction from the bottom of A, each branch point ends within 2c(T + Q) blocks of an anchor, or of a node one edge nearer the
-   top. So every node of A lies within 4c²(T + Q) blocks of an anchor (advisor: a branch point that cannot move is already near an
-   anchor).
+   The first draft moved one branch point at a time. The referee showed that two branch points joined by a short edge, each with
+   long edges below, could then each be "near" only the other, with no bound. Taken from the top down, every cluster is anchored or
+   within 2c(T + Q) + 4c²T blocks of the cluster above it, and there are at most 2c clusters. So every node of A lies within
+   2c(2c(T + Q) + 4c²T) ≤ 10c³(T + Q) blocks of an anchor, for c ≥ 2. The repaired step has not been re-refereed.
 4. **The members.** A member on an edge of A lies on one side of the edge's only long segment, so it is within 2c(T + Q) blocks of an
-   end of the edge. A member off A lies in a subtree whose segments are all short.
+   end of the edge. A member off A lies in a subtree whose segments are all short. With step 3, every member is within 10c³(T + Q) + 2c(T + Q) + k + R ≤ K
+   blocks of an anchor.
 
 Every move keeps types, child relations and tiers, so the carried set is a bond of P_N of the same size. It keeps a member at level k,
 in the top region, which no move touches, and v's image at level k + s. ∎
@@ -115,7 +121,8 @@ between the two levels, and at most |B| − 1 branch points. So |B| ≥ (⌊n(s)
 Suppose f(s₁) < (⌊n(s₁)/W⌋ + 3)/2 for some s₁. Then a window exists at s₁, so f(s₁ + Q) ≤ f(s₁). The bound grows with s, so the same
 holds at s₁ + Q and onward, and f is non-increasing from s₁ along the residue, hence eventually constant. ∎
 
-So nothing grows between bounded and linear, on each depth tier and residue. The theorem does not need Theorem N (advisor).
+So nothing grows between bounded and linear, on each depth tier and residue, as s grows. Boundedness over every (s, N) also
+involves N growing at fixed s, which Lemma R treats separately. The theorem does not need Theorem N (advisor).
 
 ## Lemma R (depth)
 
@@ -124,9 +131,10 @@ So nothing grows between bounded and linear, on each depth tier and residue. The
 *Proof.* At most 2c − 1 special orbits lie strictly between level k + s and the band. So some W consecutive saturated levels there
 hold none. Lengthen the crossings as in Theorem D. Level k + s stays, and N grows by Q. ∎
 
-## Corollary (decidable in principle)
+## Corollary (decidable in principle; proof sketch)
 
-*For each c, whether L_N(k, s) ≤ c for every s ≥ 1 and N ≥ k + s is decidable.*
+*For each c, whether L_N(k, s) ≤ c for every s ≥ 1 and N ≥ k + s is decidable (a sketch: the reduction below is outlined, not
+carried out).*
 
 *Proof sketch.* By Theorem N, it is enough to consider bonds whose members lie within K of the three ends. Between the ends run long
 paths whose states lie in the periodic part of Lemma S. Whether such a bond exists then depends only on:
@@ -158,9 +166,13 @@ the count is that of Theorem D. ∎
   passes it with ℓ₀ at most its forgetting length plus 1, so Theorem G reproves their growth, at a lower rate than Theorem F's
   1 + ⌈s/r⌉. The 46 that
   never forget (42 patterns) all fail it.
-- It fails for all 25 open descriptions of KEEP-REACH (10 patterns). For the 13 mutants of 8db5da810c00 the reason is one carried mode. An orbit type
-  whose children are both of its own type keeps the two all-equal assignments at every depth, alternating with each step, while every
-  other composite on the periodic part is a product (8db5da810c00-73: 2 of 43 periodic states are not products).
+- It fails for all 25 open descriptions of KEEP-REACH (10 patterns). For the 13 mutants of 8db5da810c00 (5 patterns) the reason
+  is one non-product composite (8db5da810c00-73: 2 of 43 periodic states, one per parity), along an orbit type whose children are
+  both of its own type. It has two parts (narrowed after the referee, TWO-ENDS-R1, by SAT at depth 11):
+  - **the all-equal link:** an all-equal upper orbit forces the lower orbit all equal, alternating with each step;
+  - **the split link:** a split lower orbit (0011 or 1100) forces the upper orbit to be split.
+
+  Every other composite on the periodic part is a product.
 - A bond across a long stretch must use that mode. Stems of depth 0 to 2 hold no bond of any size at s = 7 and 8 at depth 12.
 - The least bonds found at s = 7 and 8 avoid it. For the pattern of 8db5da810c00-73 and -79 (one pattern) at depth 12 they have 7 members (certified), all on the
   lower member's line of orbits, which never enters the self-similar type, with gaps of at most two levels.

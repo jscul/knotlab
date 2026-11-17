@@ -3,7 +3,9 @@
 Epic `TWO-ENDS-20261117-001`. It takes direction #1 of `CARRIER-20261117-001` at the coordinator's go-ahead (2026-11-17 21:19
 UTC), within John's request of 16:52 UTC to reopen the line. It serves G17, with G1, and ran on 2026-11-17. Proof note:
 [proof.md](../../proofs/TWO-ENDS-20261117-001A/TWO-ENDS-20261117-001A-P001_pumping/proof.md). Code by the thread. The canonical K1–K3
-test is unchanged. **Referee pending.** *Counts narrowed on 2026-11-17, before this study's referee, after CARRIER's (CARRIER-R1):
+test is unchanged. **Refereed** (TWO-ENDS-R1, [report](referee-R1/report.md), commit 9ebb6077c): **confirmed with fixes**, no Block.
+Lemma S, Theorems D and G and Lemma R hold as written; Theorem N's step 3 is repaired for clusters; the summaries now say "a
+three-end form of C\*" and "decidable in principle (proof sketch)"; the carried mode has two parts (below, "Referee"). *Counts narrowed on 2026-11-17, before this study's referee, after CARRIER's (CARRIER-R1):
 several descriptions give the same pattern, so counts now give distinct patterns too. The 13 mutants are 5 patterns, −73 and −79
 are one, and the census's 786 descriptions are 181 patterns.*
 
@@ -16,28 +18,36 @@ whether the 13 mutants of 8db5da810c00 (5 distinct patterns), which pass every c
 
 ## Answer
 
-**Almost, with three ends instead of two, and nothing grows slowly.**
-- **Theorem N (proved).** Any bond of at most c members meeting levels k and k + s can be moved, keeping its size and those two
+**A three-end form of C\* holds; with two ends it stays open. On each depth tier, nothing grows slowly.**
+- **Theorem N (proved; step 3 repaired for clusters after the referee).** Any bond of at most c members meeting levels k and k + s can be moved, keeping its size and those two
   levels, until every member lies within K(c) blocks of the top, of the lower member's orbit, or of the bottom band, the last few
   levels of the pattern.
   - The proof pumps the finite set of states of downward paths through blocks.
   - The bottom band is a third end. A member there cannot move, because the pattern reads the bottom levels differently, and nothing
     found removes it.
-  - So C* holds in the form "bounded pieces at three ends", and two ends may not suffice.
+  - So a three-end form of C\* holds: bounded pieces near the top, near the lower member and near the bottom band. C\* with two
+    ends, as first stated, is not shown.
 - **Theorem D (proved).** On each depth tier and each residue of s, the reach is either eventually constant or grows at least
-  linearly. Nothing grows between bounded and linear, as `READ-RULE-20261114-001` found for nested families.
-- **Decidable in principle.** For each c, whether the reach stays at most c at every depth is decidable, with no feasible constants
-  claimed in general. Boundedness is semi-decidable.
+  linearly as s grows. Nothing grows between bounded and linear there, as `READ-RULE-20261114-001` found for nested families.
+  Boundedness over every depth also involves the depth growing at fixed s, which Lemma R treats.
+- **Decidable in principle (proof sketch).** For each c, whether the reach stays at most c at every depth reduces to finitely many
+  cases; the reduction is outlined, not carried out, and no feasible constants are claimed. Boundedness would then be
+  semi-decidable.
 - **Theorem G (proved; the advisor's test).** If every long enough composite of steps through blocks is a product, the reach grows
   linearly. This is a finite computation. On the census it holds exactly for the 740 descriptions that forget (139 distinct
   patterns), which reproves their growth, and for none of the 46 that do not (42 patterns).
 
 **The 13 remain open.** The test fails for them, and the computation shows exactly why:
-- **One carried mode.** One orbit type has both children of its own type. Down such a line, an orbit whose four addresses are all
-  equal stays all equal at every depth, flipping at each step, and every other long composite is a product.
+- **One carried link, in two parts.** One orbit type has both children of its own type, and along it one composite is not a
+  product (narrowed after the referee, who checked it by SAT at depth 11):
+  - **the all-equal link:** an upper orbit whose four addresses are all equal forces the lower orbit all equal, flipping at each
+    step;
+  - **the split link:** a lower orbit split as 0011 or 1100 forces the upper orbit to be split.
+
+  Every other long composite is a product.
 - **Its size.** Their automaton is tiny (88 states for −73, threshold 5, period 2).
-- **What a bounded bond would need.** It must cross a long stretch through this mode, so it would need a piece near the top that
-  forces such an orbit to be all equal, with the top member needed. None is in a stem: stems of depth 0 to 2 hold no bond of any size
+- **What a bounded bond would need.** It must cross a long stretch through this link. So it would need a piece near the top that
+  forces such an orbit to be all equal, or forbids its split, with the top member needed. None is in a stem: stems of depth 0 to 2 hold no bond of any size
   at s = 7 or 8.
 - **The certified readings, for one pattern.** −73 and −79 are the same pattern (CARRIER's referee: their depth-12 runs refuted the
   same formulas). At depth 12 its least bond has exactly 7 members at s = 7 and 8: a bond of 7 exists (found under the name −79), and
@@ -56,11 +66,11 @@ at every distance. Otherwise each stretch needs its own member, and the reach gr
 | # | Conclusion | Kind |
 | --- | --- | --- |
 | 1 | Lemma S: finitely many path states; lengths ultimately periodic | proved |
-| 2 | Theorem N: normal form with three ends (top, lower member, bottom band) | proved by hand (the advisor's three repairs) |
+| 2 | Theorem N: normal form with three ends (top, lower member, bottom band) | proved by hand (the advisor's three repairs; step 3 repaired for clusters after the referee, not re-refereed) |
 | 3 | Theorem D: per depth tier and residue, eventually constant or linear | proved |
-| 4 | Lemma R and the corollary: "at most c at every depth" decidable in principle | proved (sketch for the corollary) |
+| 4 | Lemma R and the corollary: "at most c at every depth" decidable in principle | Lemma R proved; the corollary a proof sketch |
 | 5 | Theorem G: products of long composites force linear growth; on the census, exactly the 740 descriptions that forget (139 patterns) | proved; computed (`composite.json`) |
-| 6 | The 13 (5 patterns): one carried mode blocks the test; no stem bond at s = 7, 8 | computed |
+| 6 | The 13 (5 patterns): one carried link (all-equal and split parts) blocks the test; no stem bond at s = 7, 8 | computed |
 | 7 | One pattern (8db5da810c00-73, also -79): L₁₂(3, 7) = L₁₂(3, 8) = 7, by bonds spread along the lower member's line | computed, certified (LRAT) |
 
 ## Predictions
@@ -73,10 +83,28 @@ Frozen in [predictions.md](predictions.md), commit d438a143e, before any Part B 
 - **P5 holds.** Every one of the 740 forgetting census descriptions (139 patterns) passes the test with ℓ₀ at most its forgetting length plus 1.
 - **P6, not tested beyond −73.** No other pattern has exact readings at two depths.
 
+## Referee
+
+TWO-ENDS-R1 ([report](referee-R1/report.md)), confirmed with fixes, no Block. Folded in on 2026-11-17 and logged in
+`docs/CORRECTIONS.md`:
+- **Theorem N's step 3 (Narrowing).** Two branch points joined by a short edge could each be "near" only the other. The step now
+  moves clusters of nodes joined by short edges as one unit, and K is recomputed (11c³(T + Q) + k + R). The repaired step has not been
+  re-refereed.
+- **Three ends, and decidability (Narrowing, wording).** The summaries said "C\* holds" and stated decidability as a result. They now
+  say "a three-end form of C\*" and "decidable in principle (proof sketch)".
+- **Counts (Narrowing).** As for CARRIER: the 740 and 46 are 139 and 42 of 181 distinct patterns, the 25 open are 10, and −73 and
+  −79 are one pattern.
+- **The carried link (Narrowing).** It has a split part as well as the all-equal part: a split lower orbit forces a split upper one.
+  The next study's search includes it.
+
+The referee also confirmed by its own SAT that both bonds of 7 at depth 12 are bonds of P₁₂, and that the product test equals
+forgetting on every census description, with no mixed verdicts inside a group of identical descriptions.
+
 ## Lessons
 
 - A finite-state reformulation can match a proved criterion exactly: the product test and forgetting agree on all 786 descriptions (181 patterns).
-- What blocks a growth proof can be one mode, small enough to name: an all-equal strand passed down a self-similar type.
+- What blocks a growth proof can be one link, small enough to name: an all-equal link and a split link passed down a self-similar
+  type.
 - Pumping on a pattern of finite depth leaves the bottom as an end of its own. Results stated for two ends need a reason to drop it.
 
 ## Advisor
@@ -95,10 +123,10 @@ Used twice:
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt (C*'s converse; the 13) | **Status:** Successful | Normal form, dichotomy and product test proved; the 13 reduced to one carried mode |
-| Local direction (the 13) | Continue | A bounded bond for them must tie the top to the all-equal mode; that is a small, exact search |
+| This attempt (C*'s converse; the 13) | **Status:** Successful | Normal form (three ends), dichotomy and product test proved; the 13 reduced to one carried link |
+| Local direction (the 13) | Continue | A bounded bond for them must tie the top to the carried link (all-equal or split); that is a small, exact search |
 | Broader exploration (G17's addressed line) | Known alternatives | B186, B188 |
-| Long-term goal (G17, with G1) | Capability gained | Bounded reach is now characterised by pieces at three ends and is semi-decidable; growth is linear when it happens |
+| Long-term goal (G17, with G1) | Capability gained | Bounded reach is now characterised by pieces at three ends (semi-decidable, sketched); on each depth tier growth is linear when it happens |
 
 **Corrections:** none. **Goals:** a G17 checkpoint (with G1), capability gained. **Assumptions:** A83 used; none added.
 
@@ -106,7 +134,7 @@ Used twice:
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Settle the 13 through the carried mode | 2/3 — Substantial | 3/3 — Ready | Search for the least set near the top whose assignment forces an orbit of the self-similar type all equal, with the top member needed (exact, by the block automaton); if none exists, prove growth by a test that allows that one mode → a bound for the 13, or linear growth proved | Selected · awaiting go-ahead |
+| 1 | Settle the 13 through the carried mode | 2/3 — Substantial | 3/3 — Ready | Search for the least set near the top whose assignment forces an orbit of the self-similar type all equal, or forbids its split (the split link, added after the referee), with the top member needed (exact, by the block automaton); if none exists, prove growth by a test that allows that one mode → a bound for the 13, or linear growth proved | Selected · awaiting go-ahead |
 | 2 | Two ends or three: does any pattern need the bottom band? | 2/3 — Substantial | 2/3 — Testable | Compare least bonds with and without a bottom piece on the census's bounded patterns at large depth tiers → a pattern that needs it, or a proof that the bottom can be dropped | Alternative · deferred |
 | 3 | Exact reach by least-mark costs (B186) | 2/3 — Substantial | 2/3 — Testable | As filed | Alternative · deferred |
 

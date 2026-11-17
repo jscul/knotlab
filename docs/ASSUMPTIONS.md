@@ -2557,13 +2557,16 @@ evidence: results and their status come from the records each entry links.
   property of cycles (cyclic bases with betweenness are common at five and six distinctions). Open: whether some reading of the
   weave's states gives both.
   The dimension test `DISTANCE-DIM-20261117-001`
-  ([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md)) reads it under both answers to the owner's question
-  B194. Under plain implications, the disagreement count's betweenness is exactly the order's intervals (proved), so the states give
-  the order up to reversal and its number of independent orders: 1 on a chain, 2 on a grid, 3 on a three-way grid (computed,
-  frozen). Under not-all-equal knots, no exact betweenness occurs on the thread, the weave or a chain grid. Read only as nearness,
-  levels from a start grow in two dimensions on the weave and the chain grid, and only off the critical point (the chain grid) do
-  the counts give a linear ruler.
+  ([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md); refereed) reads it with knots first, as the owner
+  answered B194. Under not-all-equal knots no distance read from the states gave an order: no exact betweenness occurs on the
+  thread, the weave or a chain grid. Nearness graphs depend on the test, and they grow as each meeting pattern does (two-way on the
+  weave and the chain grid, one-way on the thread), so the distance reads the pattern's own growth and adds no dimension. Only off
+  the critical point (the chain grid) do the counts give a linear ruler, and the weave is critical. Under plain implications the
+  states are the order's Alexandrov topology, and its specialization order and dimension are read back exactly (classical):
+  that is what knots would have to build.
 - **History.**
+  - 2026-11-17 · Challenge text scoped after the dimension test's referee `DISTANCE-DIM-R1` (Narrowing): knots first, each growth the
+    meeting pattern's own, the implication result named as the classical specialization order; status unchanged.
   - 2026-11-17 · Statement: the owner's answer to B194 added in his words (the knots are the smallest form of "spatial topology",
     logical "topology" is the very first instance of this versus that, and "3" exists in relation to all other numbers), with the
     program's reading that distance begins with the first knot; status unchanged.
@@ -2622,12 +2625,15 @@ evidence: results and their status come from the records each entry links.
   its own class. Every farther distinction has something between. So under that reading the count carries a local order with
   nothing skipped, but not the weave's own steps, and A97's narrowing on bases with cycles holds only under this entry's strict
   reading.
-  "Levels from a starting point" was then run by `DISTANCE-DIM-20261117-001` (frozen). The levels of that order-only reading have
-  bounded degree: 12 on the weave, 8 and 2 on a not-all-equal chain grid, 3 to 4 on the thread. They grow quadratically on the
-  weave and the chain grid, linearly on the thread, and exponentially on a knot tree. Exact ties need exact arithmetic: floating
+  "Levels from a starting point" was then run by `DISTANCE-DIM-20261117-001` (frozen). Under the relative-neighbourhood test the
+  levels have bounded degree: 12 on the weave, 8 and 2 on a not-all-equal chain grid, 3 to 4 on the thread. They grow as each
+  meeting pattern does: quadratically on the weave and the chain grid, linearly on the thread, and exponentially on a knot tree.
+  Other nearness tests give other graphs (its referee: the six-nearest test splits the weave into its three classes, and the
+  unit-ball degree grows with L), and none gives an order. Exact ties need exact arithmetic: floating
   ties broke one prediction there. Under plain implications this entry's strict reading is satisfied exactly: betweenness is the
   order's intervals.
 - **History.**
+  - 2026-11-17 · Scoped after the referee `DISTANCE-DIM-R1`: degree 12 belongs to the relative-neighbourhood test.
   - 2026-11-17 · Challenge "levels from a start" run by `DISTANCE-DIM-20261117-001`; status unchanged.
   - 2026-11-17 · Challenge partly run by the referee `DISTANCE-ORDER-R1` (the order-only reading above); status unchanged.
   - 2026-11-17 · Added by `DISTANCE-ORDER-20261117-001`.

@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the dimension test, confirmed by its referee, read with knots first
+
+- The dimension test (`DISTANCE-DIM-20261117-001`) was confirmed by its referee with no Block, and is now read with knots first, as
+  the owner answered. On knots, no distance read from the allowed states gave an order. Nearness graphs depend on the test and grow
+  as each meeting pattern does, and only away from the critical point do the counts give a ruler; the weave is critical, which is
+  known exactly. Under plain implications the states are the order's Alexandrov topology, and its specialization order and
+  dimension are read back, a classical round trip: that is what knots would have to build.
+- Narrowed: the summaries had said the states read "two independent orders" and "a two-dimensional growth" without saying that each
+  is the meeting pattern's own, and the goals checkpoint said G1 gained a capability; it is now "no demonstrated advance".
+- Narrowed: the weave's twelve nearness neighbours belong to the relative-neighbourhood test; the six-nearest test gives six that
+  split the weave's three classes. Small fixes, none changing a number: bare S_3's order is read from its pairs, though not through
+  betweenness, and the weave's criticality is cited
+  ([decision note](research/DISTANCE-DIM-20261117-001/distance_dim.md),
+  [referee's report](research/DISTANCE-DIM-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026: the order test, confirmed by its referee, with one narrowing
 
 - The order test (`DISTANCE-ORDER-20261117-001`) was confirmed by its referee with no Block. All seven statements of its proof

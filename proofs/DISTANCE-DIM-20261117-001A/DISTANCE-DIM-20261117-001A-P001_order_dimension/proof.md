@@ -96,3 +96,14 @@ differ, since p is free; both are −(s_u + s_v)/2. ∎
 - **D5** is Onsager 1944, applied.
 - **The advisor** was consulted twice before the freeze. It confirmed D1, and gave D3's hypothesis and argument, D4's
   full-support proof and D5's slope.
+
+## After the referee (R1, 17 November 2026)
+
+- **Provenance.** The allowed states of an implication base are the open sets of the order's Alexandrov topology. Reading the order
+  back from them (D2's missing pattern: every open set containing u contains v) is that topology's specialization order (Alexandrov
+  1937), and equivalently Birkhoff's duality between finite orders and finite distributive lattices. D1 is the folklore-level
+  addition (Glivenko; Pitcher and Smiley).
+- **The dimension needs no hypothesis.** D2 reads the comparability from pairs alone, and the order dimension depends only on the
+  comparability graph. So it is read from the states for every finite order, bare S_3 included (dimension 3). D3's hypothesis is
+  needed only for the betweenness route and for the up-to-reversal reading.
+

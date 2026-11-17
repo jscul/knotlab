@@ -1,7 +1,8 @@
 # Dimension test: does a distance read from the allowed states give an order with nothing skipped, and two independent orders?
 
 Epic `DISTANCE-DIM-20261117-001`, 17 November 2026, by Claude, on the coordinator's go-ahead. It takes the first direction of
-`DISTANCE-ORDER-20261117-001`. Goals G1 and G16; tests A97 and A98. Referee pending. Pre-registration:
+`DISTANCE-ORDER-20261117-001`. Goals G1 and G16; tests A97 and A98. Refereed: report [R1](referee-R1/report.md), confirmed with
+fixes, no Block, folded in on 17 November (see Referee). Pre-registration:
 [preregistration.md](preregistration.md), frozen in commit `c04c4a400` at 19:23:49 UTC; the run went from 19:24:00 to 19:26:07
 UTC. Proof: [proof.md](../../proofs/DISTANCE-DIM-20261117-001A/DISTANCE-DIM-20261117-001A-P001_order_dimension/proof.md). Code:
 [dimlib.py and run.py](../../experiments/DISTANCE-DIM-20261117-001B/DISTANCE-DIM-20261117-001B-E001_dims/). Results:
@@ -9,52 +10,51 @@ UTC. Proof: [proof.md](../../proofs/DISTANCE-DIM-20261117-001A/DISTANCE-DIM-2026
 
 ## The answer
 
-**It depends on what 3, 4, 5 are made of (B194).**
+*Rewritten after the referee and the owner's answer to B194 (17 November 2026, see Referee). The owner puts knots first: "The knots
+are themselves the smallest form of spatial topology", and "3" exists "with relation to all other numbers, not just neighbors". So
+the knot reading comes first below, and the implication reading is what knots would have to build.*
 
-**If they are plain implications, yes: the order and its number of independent orders come out of the allowed states exactly
-(proved).** In a base of two-place implications, w lies between u and v in the disagreement count exactly when w is in the
-order's interval from u to v. The disagreement count is the number of allowed states in which two distinctions differ. So the
-states give back the order up to reversal, with no direction used, and with it the order dimension, the number of linear orders
-whose intersection it is. The run read these from the states:
-- 1 on the chain of twelve;
-- 2 on the grids 4 × 4, 6 × 6 and 3 × 7 and on a grid with a corner removed;
-- 3 on the three-way grid 3 × 3 × 3 and on the standard example S_3 with a bottom and a top.
+**On knots, no distance read from the allowed states gave an order, let alone two independent orders (computed).**
+- **No exact betweenness.** On the not-all-equal thread, the weave and the chain grid, no distinction lies exactly between two
+  others in the disagreement count, the number of allowed states in which two distinctions differ. The chain grid is a square
+  meeting pattern with one knot and one private distinction on each pair; on it every assignment of the grid distinctions is
+  allowed (proved).
+- **Nearness gives a graph, not an order.** Read only as nearness, the result depends on the test. Under the relative-neighbourhood
+  test (v is a neighbour of o when nothing is nearer to both), a start has 12 neighbours on the weave: its six knot-neighbours and
+  six second neighbours of its own class. On the chain grid it has 8 at a grid distinction and 2 at a private one, 3 or 4 on the
+  thread, and exactly the knots' own pairs on a binary knot tree. Under the six-nearest test the weave's six neighbours are the
+  same-class second neighbours, and the graph splits the weave into its three classes. Under the unit-ball test the degree grows
+  with L, so it is not local (the referee's computation).
+- **The growth is the meeting pattern's own.** The local graphs' levels grow quadratically on the weave and the chain grid,
+  linearly on the thread and exponentially on the tree. The distance faithfully reads how the knots meet in each sample. Nothing
+  tested shows it adding or choosing a dimension.
+- **Only away from the critical point do the counts give a ruler.** Along an axis, the chain grid's transfer gap tends to Onsager's
+  1 − log₃ 2 = 0.3691 per step, so τ = −log₃ |1 − 2d/N| grows linearly with distance. The weave's gap falls like one over the width:
+  0.199, 0.135, 0.102 at widths 6, 9, 12, with gap × width 1.19, 1.22, 1.23 approaching the conformal value π√3·x/ln 3 = 1.238 for
+  spin dimension x = 1/4. The weave's criticality is known exactly (Stephenson; Blöte and Hilhorst; Nienhuis, Hilhorst and Blöte).
+  So on the weave, τ grows only like a logarithm.
 
-A pair's states alone already say whether it is ordered, since one joint pattern never occurs. The route needs chains of three:
-on S_3 with nothing above or below, nothing lies between anything, and it reads nothing. The grid is still drawn. The states read
-its dimension; they do not choose it.
+**What knots would have to build: an order of plain implications, which the states read back exactly (proved).** In a base of
+two-place implications the allowed states are the up-sets of an order. These are the open sets of its Alexandrov topology: the
+states are literally a topology, as the owner's "distance is topological" says. Reading the order back is that topology's
+specialization order (Alexandrov 1937; Birkhoff's duality), and its dimension follows by Dushnik and Miller.
+- **Read from the states.** A pair's states say whether it is ordered, since one joint pattern never occurs. That alone gives the
+  comparability, and with it the order dimension: 1 on the chain of twelve, 2 on the grids 4 × 4, 6 × 6, 3 × 7 and a grid with a
+  corner removed, 3 on 3 × 3 × 3, on S_3 with a bottom and a top, and on bare S_3.
+- **The local part.** In the disagreement count, w lies between u and v exactly when w is in the order's interval from u to v, so
+  the order has nothing skipped. This is a folklore-level addition. Through betweenness, bare S_3 reads nothing: it has no chain of
+  three.
+- **The order is the meeting pattern's own.** These orders are the patterns of implications they were built from, read back. The
+  question John's answer raises is whether knots alone can build such an order among their distinctions.
 
-**If they are knots, exact betweenness gives no order at all, but a nearness order gives levels that grow in two dimensions
-(computed).** On the not-all-equal thread, the weave and the chain grid, no distinction lies exactly between two others. The chain
-grid is a square grid with one knot and one private distinction on each edge. On it, every assignment of the grid distinctions is
-allowed (proved). Read only as nearness, v is a gap neighbour of o when nothing is nearer to both. On that reading the gap graph
-has bounded degree:
-- 12 on the weave (the six knot-neighbours and six second neighbours of the start's own class);
-- 8 at a grid distinction of the chain grid (4 grid neighbours and its 4 private distinctions), and 2 at a private one;
-- 3 or 4 on the thread;
-- on a binary tree of knots, exactly the knots' own pairs.
-
-Its levels from a start grow:
-- quadratically on the weave and the chain grid (balls in two dimensions);
-- linearly on the thread;
-- exponentially on the tree.
-
-That is a growth dimension, which is a different invariant from an order dimension.
-
-**The two knot bases differ in a second way.** Along an axis, the chain grid's transfer gap tends to Onsager's exact value
-1 − log₃ 2 = 0.3691 per step. So its pair counts decay at a fixed rate per step, and τ = −log₃ |1 − 2d/N| grows linearly with
-distance. The weave's gap falls like one over the width (0.199, 0.135, 0.102 at widths 6, 9 and 12; gap × width 1.19, 1.22, 1.23),
-as at a critical point. There τ grows only logarithmically. The chain grid's counts carry a linear distance along an axis. The
-weave's, the program's own space, do not.
-
-| Base | Exact betweenness | Order from the states | Gap degree (order-only) | Levels from a start | Transfer gap |
+| Base | Exact betweenness | Order from the states | Nearness neighbours (relative-neighbourhood test) | Levels from a start | Transfer gap |
 | --- | --- | --- | --- | --- | --- |
 | implication chain, 12 | the intervals | the order up to reversal, dimension 1 | 1–2 (in d) | — | — |
 | implication grids 4 × 4, 6 × 6, 3 × 7; corner removed | the intervals | the order up to reversal, dimension 2 | 2–6 | — | — |
 | implication 3 × 3 × 3; S_3 with bottom and top | the intervals | the order up to reversal, dimension 3 (realizer verified) | 3–12 | — | — |
-| bare S_3 | none | nothing | 4 | — | — |
+| bare S_3 | none | nothing through betweenness; its pairs give the order and dimension 3 (referee) | 4 | — | — |
 | NAE thread, n = 30 | none | none | 3–4 | 1, 4, 6, 6, 6, 6, 1 (linear) | — |
-| NAE weave, L = 6, 9, 12 | none | none | 12 | 1, 12, 30, 48, 53 at L = 12 (quadratic) | 0.199, 0.135, 0.102: to 0 (critical) |
+| NAE weave, L = 6, 9, 12 | none | none | 12 (six-nearest test: 6, splitting the three classes) | 1, 12, 30, 48, 53 at L = 12 (quadratic) | 0.199, 0.135, 0.102: to 0 (critical, known) |
 | NAE chain grid, L = 8, 10, 12 | none | none | 8 and 2 (post hoc at 10, 12; see K3) | 1, 8, 20, 32, 44, … (quadratic) | 0.3764, 0.3719, 0.3702: to 0.3691 |
 | knot tree, depth 4 | — | — | the knots' own pairs | 1, 2, 4, 8, 16 (exponential) | — |
 
@@ -90,20 +90,17 @@ The fix is exact arithmetic or symmetrised counts, not a tolerance.
 
 ## What it means for A97 and A98
 
-- **Under the implication answer to B194, the owner's reading holds exactly on these bases.** One distance read from the allowed
-  states, the disagreement count, has an order with nothing skipped: its betweenness is the order's intervals. That order has its
-  number of independent orders: 1 on a line, 2 on a grid, 3 on a three-way grid. It is relative and needs no direction.
-  - *What it does not cover.* The count is additive along each chain, but its steps are not equal (on 3 × 3, consecutive covers
-    count 3 and 6), so it is an order, not a ruler.
-  - *Where the grid comes from.* The grid is drawn, so the barrier of `LOGIC-AXIS-20261107-001` stands.
-- **Under the knot answer, the order is the nearness order's, and the space is a growth dimension.**
-  - The count has no exact betweenness on the thread, the weave and the chain grid.
-  - Its nearness order has bounded degree and levels that grow in two dimensions on the weave and the chain grid.
-  - Only off the critical point (the chain grid) do the counts also give a linear distance along an axis. On the weave they do not.
-- **A97 stays under challenge.** It now has an exact positive case: plain implications, in any number of dimensions drawn. On
-  knots it has a nearness-order reading.
-- **A98.** Its challenge "order by levels from a start" has been run. Under knots, the levels give bounded degree and two-dimensional
-  growth on the weave and the chain grid.
+- **On knots, the owner's reading is not borne out on these samples.** The disagreement count carries the information
+  (`DISTANCE-ORDER-20261117-001`). Read here, it gives no order: no exact betweenness, and nearness graphs whose degree depends on
+  the test. Their growth reads each meeting pattern's own (two-way, one-way, branching). Only off the critical point does it give a
+  linear ruler along an axis, and the weave is critical. *Scoped after the referee: the first version said the states read "two
+  independent orders" under implications and "a two-dimensional growth" under knots without saying that both are the meeting
+  pattern's own.*
+- **Under implications the states are a topology, and its specialization order is read back exactly** (classical). Under the
+  owner's answer, that is what knots would have to build, not the premise's positive case.
+- **A97** stays under challenge, with these two facts.
+- **A98.** Its challenge "order by levels from a start" has been run. Under the relative-neighbourhood test the levels have bounded
+  degree, but other nearness tests give other graphs, and none gives an order.
 
 ## What the knot picture explained
 
@@ -132,7 +129,8 @@ The local parts are D1 in this form, the up-to-reversal reading from states, and
 
 ## Limitations
 
-- The implication grids are drawn, so the states read a dimension and do not choose one.
+- The implication orders and the knot patterns are given samples; the states read each one's own order or growth, and nothing tested
+  adds or chooses a dimension.
 - The knot bases are read at L ≤ 12. The weave's levels are exact on the tori but reach only five levels. The criticality is read
   from three widths: gap × width is nearly constant, which is the critical signature, not a proof.
 - The order-only reading uses τ and a strict gap test. Exact ties need exact arithmetic (K3).
@@ -165,26 +163,46 @@ The second consultation:
 
 It was not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 17 November 2026, by a background referee thread with fresh code and no Codex: confirmed with
+fixes, no Block. D1 to D5 are correct, D3 included. The implication bases recompute exactly. The K3 tie explanation is confirmed:
+mirror entries differ by 1.7 to 2.8 × 10⁻¹⁶, and with exactly symmetric correlations the frozen levels hold at L = 8, 10, 12. The
+chain grid's float transfer is fine. Folded in the same day, with the owner's answer to B194 (knots first), each item logged in
+`docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing.** The summaries said the states read "two independent orders" (implications) and "a two-dimensional growth"
+   (knots) without saying that each is the meeting pattern's own. The implication half is the classical round trip: Alexandrov's
+   specialization order and Birkhoff's duality, with D1 a folklore-level addition. The knot half reads each pattern's own growth.
+   The answer, the meaning for A97, the notebook, A97, the goals line and checkpoint, and the objects rows say so. The answer now
+   leads with knots, per the owner.
+2. **Narrowing.** Degree 12 belongs to the relative-neighbourhood test. The six-nearest test gives the six same-class second
+   neighbours and splits the weave into its three classes, and the unit-ball test's degree grows with L (17, 32, 36). No
+   order-only reading gives an order.
+3. **Not a block.** The weave's criticality is known exactly (Stephenson; Blöte and Hilhorst; Nienhuis, Hilhorst and Blöte), and
+   the measured gap × width approaches the conformal 1.238 (x = 1/4). It is cited now instead of resting on three widths.
+4. **Not a block.** Bare S_3: "nothing" holds only for the betweenness route. Its pairs give the order and dimension 3, since D2
+   reads comparability with no hypothesis, and dimension depends only on comparability.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: order and dimension read from the states | **Status:** Successful (referee pending) | Under implications, the order and its dimension (1, 2, 3) are read exactly from the states (proved, checked). Under knots, no exact order; nearness levels grow in two dimensions on the weave and chain grid. The weave is critical, the chain grid is not. 12 of 13 held |
-| Local direction: a distance that is information, order and dimension | Promising | Exact under implications; under knots it splits into nearness levels and, off criticality, a ruler |
+| This attempt: order and dimension read from the states | **Status:** Successful (refereed, confirmed with fixes) | On knots, no order: no exact betweenness, and nearness graphs that depend on the test and grow as each meeting pattern does; only off criticality a ruler, and the weave is critical. Under implications the states are a topology whose specialization order and dimension are read back (classical; D1 folklore level). 12 of 13 held |
+| Local direction: a distance that is information, order and dimension | Promising | Knots first (the owner's answer): can knots alone build an order among their distinctions, as implications have one |
 | Broader exploration: dimension from logic | Known alternatives | Order dimension, growth dimension and correlation length are classical; reading them from a base's states is the local step |
-| Long-term goal: G1 and G16 | G16 capability gained; G1 capability gained | The states give back an order up to reversal and its dimension; the barrier (dimension is drawn) stands |
+| Long-term goal: G1 and G16 | G16 capability gained; G1 no demonstrated advance | G16: the states give back an implication pattern's order. G1: on knots the distance reads each meeting pattern's own growth and adds no order |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Which three-place knot laws on the weave are off their critical point, so that their counts give a ruler on the program's own space? | 2/3, a state-read ruler on the weave | 3/3: the transfer gaps of the five knot classes at widths 6, 9, 12 | Freeze per-class predictions → stop at the list of critical and off-critical laws | Alternative |
+| 1 | Which three-place knot laws on the weave are off their critical point, so that their counts give a ruler on the program's own space? | 2/3, a state-read ruler on the weave | 3/3: the transfer gaps of the five knot classes at widths 6, 9, 12 | Freeze per-class predictions → stop at the list of critical and off-critical laws | Taken by `WEAVE-LAWS-20261117-001` (coordinator's go-ahead) |
 | 2 | Mixed bases: implications and knots together. Does an order survive a knot, and what does the order dimension read then? | 2/3 | 2/3 | Census of small mixed bases with the betweenness route → stop at the first rule | Alternative |
-| 3 | Can a law choose its order dimension (the barrier), for example implications grown at open ends? | 3/3 | 1/3 | Look for a growth rule whose up-sets give dimension 2 without a drawn grid → stop at a rule or an obstruction | Alternative |
+| 3 | Can knots alone build an order among their distinctions, as implications have one (sharpened by the owner's answer: knots first)? For example through distinctions that knots force or settle | 3/3 | 1/3 | Look for knot patterns whose forced or settled distinctions carry exact betweenness → stop at a pattern or an obstruction | Alternative |
 
-**Corrections:** none.
+**Corrections:** none at the close; after the referee, two Narrowings and two Not a block entries, logged.
 
-**Goals:** a G1 and G16 checkpoint (capability gained for both); no goal changed.
+**Goals:** a G1 and G16 checkpoint (G16 capability gained, G1 no demonstrated advance; corrected after the referee from capability gained for both); no goal changed.
 
 **Assumptions:** A97 stays Under challenge, now with an exact positive case under implications. A98's challenge "levels from a
 start" has been run; no new entry.

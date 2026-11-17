@@ -343,18 +343,22 @@ That split is not a property of cycles: many small bases with cycles of knots
 have betweenness ([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md);
 scoped after its referee, 17 November 2026).
 The dimension test followed (`DISTANCE-DIM-20261117-001`, proof and frozen
-computation, referee pending), built to read under either answer to whether
-the owner's 3, 4, 5 are plain implications or knots. Under implications, 4
-lies between 3 and 5 in the disagreement count exactly when it lies between
-them in the order, so the states give the order back (up to reversal, with no
-direction used) and its number of independent orders: 1 on a chain, 2 on a
-grid, 3 on a three-way grid. Under knots, no three distinctions of the thread,
-the weave or a chain grid stand in that relation; read only as nearness, the
-levels from a start have bounded degree and grow in two dimensions on the weave
-and the chain grid. The chain grid is off its critical point, and its counts
-give a linear ruler along an axis (Onsager's 1 − log₃ 2 per step); the weave
-is critical, and its counts do not
-([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md)).
+computation, refereed), read with knots first, as the owner answered: "the
+knots are themselves the smallest form of spatial topology". Under knots, no
+three distinctions of the thread, the weave or a chain grid stand exactly in
+order, so the count gives no order. Read only as nearness, it gives graphs that
+depend on the test and grow as each meeting pattern does: two-way on the weave
+and the chain grid, one-way on the thread, branching on a knot tree. The
+distance faithfully reads how the knots meet there, and adds no dimension of
+its own. The chain grid is off its critical point, so its counts give a linear
+ruler along an axis (Onsager's 1 − log₃ 2 per step). The weave is critical
+(known), so its counts do not. Plain implications are what knots would have to
+build. There the allowed states are a topology, the order's Alexandrov
+topology, and the order with nothing skipped and its dimension are read back
+exactly. That is the classical specialization order, with 4 lying between 3
+and 5 in the count exactly when it does in the order
+([decision note](../research/DISTANCE-DIM-20261117-001/distance_dim.md);
+scoped after its referee, 17 November 2026).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

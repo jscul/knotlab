@@ -14,3 +14,15 @@ Ticket `DISTANCE-DIM-20261117-001Z`, 2026-11-17. A ledger; it makes no new claim
 | 5 | The chain grid's transfer gap tends to Onsager's 0.3691; the weave's falls like one over the width (critical). | known (Onsager), computed | A (D5), B |
 
 **Recommendation:** Research directions; the first (which knot laws on the weave are off-critical) starts on the coordinator's go-ahead.
+
+## After the referee (R1, 17 November 2026)
+
+Confirmed with fixes, no Block; folded in the same day with the owner's answer to B194 (knots first), logged in `docs/CORRECTIONS.md`.
+The rows above are kept as written.
+- **Narrowing** of rows 3 and 4's readings. Each reads the meeting pattern's own order or growth. Row 3 is the classical
+  specialization order of the states' Alexandrov topology.
+- **Narrowing** of row 4. Degree 12 belongs to the relative-neighbourhood test. The six-nearest test gives the same-class second
+  neighbours and splits the weave's classes, and the unit-ball degree grows with L. No order-only reading gives an order.
+- **Not a block.** Row 5's criticality is known exactly (Stephenson; Blöte and Hilhorst), with the conformal limit 1.238. Bare S_3's
+  order and dimension 3 are read from its pairs, though not through betweenness.
+

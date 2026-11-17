@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "GRID-GROW-20261117-001Z-P001",
+ "canonical_id": "GRID-GROW-20261117-001Z-P001",
+ "kind": "proof",
+ "ticket": "GRID-GROW-20261117-001Z",
+ "proof": "GRID-GROW-20261117-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: growing the grid with knots",
+ "status": "Proved",
+ "claim": "Ledger closing GRID-GROW-20261117-001: ticket A (box betweenness on Young diagrams is the cut system; one forced knot per new line, three per filled cell, unique within the unit square; order-independent totals; placements named by the states) and ticket B (4 of 4 predictions held on every Young diagram in a 4 x 4 box); A97 gains a two-dimensional positive case built from knots; referee pending. No new claim.",
+ "dependencies": [
+  "GRID-GROW-20261117-001A",
+  "GRID-GROW-20261117-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "GRID-GROW-20261117-001",
+  "epic_path": [
+   "GRID-GROW-20261117-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/GRID-GROW-20261117-001B/GRID-GROW-20261117-001B-E001_covers/contract.json": "13e08f84029f6d969a1905ef9b86baf61acce50549c605d3da7339da8bba7502",
+  "artifacts/GRID-GROW-20261117-001B/GRID-GROW-20261117-001B-E001_covers/results.json": "e33544c8d1994a59105a5c777467755a4649bd73130999d3d1a9ae82dbbe7953",
+  "proofs/GRID-GROW-20261117-001A/GRID-GROW-20261117-001A-P001_grid_growth/manifest.json": "3b4af0a04af9f395b76801867db0ff2261ce4a5fb5fe58b1f3af24c63efd03c0",
+  "proofs/GRID-GROW-20261117-001A/GRID-GROW-20261117-001A-P001_grid_growth/result.json": "8538bb37c380bbbb44a0c0782fd8109f0ab6e2147fa1c5870924d6a60c5a9cea"
+ },
+ "paths": {
+  "manifest": "proofs/GRID-GROW-20261117-001Z/GRID-GROW-20261117-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/GRID-GROW-20261117-001Z/GRID-GROW-20261117-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/GRID-GROW-20261117-001Z/GRID-GROW-20261117-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/GRID-GROW-20261117-001Z/GRID-GROW-20261117-001Z-P001_epic_closure/result.json",
+  "check": "proofs/GRID-GROW-20261117-001Z/GRID-GROW-20261117-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/GRID-GROW-20261117-001Z/GRID-GROW-20261117-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-17; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

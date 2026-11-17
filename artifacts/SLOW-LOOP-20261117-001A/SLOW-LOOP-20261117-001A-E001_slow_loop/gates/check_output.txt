@@ -1,0 +1,10 @@
+G0 a b c; ~a ~b ~c knot: True
+G0 a ~b c; ~a b ~c knot: True
+G1 480 slow runs, 480 one-for-one checks, 16481 moves checked against brute force
+G2 300 recounts
+G3 60 run-for-run checks; G6 60 run-for-run checks and 18 generator checks
+G4 mutant caught on 118 of 118 instances where it made a tie
+G7 576490 moves checked against the planted state (6 aggressive runs unsolved at the cap)
+FAILS: 0
+
+[exited with code 0]

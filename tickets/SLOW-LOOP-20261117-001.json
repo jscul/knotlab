@@ -1,0 +1,28 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SCALE-MEMORY-20261116-001",
+    "WHERE-NEXT-20261116-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "group": "learning",
+    "program": "learning",
+    "takes": "B191"
+  },
+  "id": "SLOW-LOOP-20261117-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Sub-goal B191 (the owner's second stage, coordinator's go-ahead 2026-11-17; goals G15, G16). A fast loop (re-tuned Novelty+) searches a planted not-all-equal knot pattern; between its epochs a slow loop reads where it dwelt and mutates the structure there with two moves that keep the allowed states: untangle (merge a tie class found by a bounded refutation) and braid (add a signed three-place knot, a shadow of the pattern that passes K1-K3). Charged work (incidences touched by both loops, rebuilds included) and CPU against the fast loop alone (best of re-tuned Novelty+ and probSAT, five runs per instance), static probing (the preprocessing precedent), random targets, an untangle-only ablation and CaDiCaL; the slow loop's policy is tuned on rand 2.1 and block 2.5 and tested on held-out local patterns (windows 10 and 40). Stop at the frozen rule.",
+  "ownership": {
+    "root": true,
+    "scope_id": "SLOW-LOOP-20261117-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "Does a slow loop that mutates the knot structure, guided by where a fast search dwells, cut the charged work of solving unseen knot patterns, and does a mutation policy learned on some meeting patterns carry to others?"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "SLOW-LOOP-20261117-001A-E001",
+  "ticket": "SLOW-LOOP-20261117-001A",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does a slow loop that changes the knot structure where a fast search (re-tuned Novelty+) dwells, with tie merges and implied knots that keep the allowed states, cut the charged work of solving unseen planted not-all-equal patterns, and does its policy, tuned on two meeting patterns, carry over to two it never saw?",
+  "inputs": "The knot pattern, the fast loop's state and its per-knot attention counts in the last epoch; the slow loop's probes read only the pattern.",
+  "forbidden_inputs": "The hidden planted state (used only by gate G7), any test instance during tuning, any solver output.",
+  "mapping": "Four tuned slow-loop parameters (epoch length e, slow budget rho, implied-knot share beta, backoff), chosen from a 48-setting grid on rand 2.1 and block 2.5 at n = 800 (G) and on local window 10 at n = 800 (the oracle GO); the moves are fixed (bounded propagation refutations, tie classes, signed not-all-equal implied knots).",
+  "primary_observable": "On held-out local window 10 at n = 3200, R_W = G's charged work (median over 50 instances of five-run geometric means) / the better of re-tuned Novelty+ and probSAT, 99% paired bootstrap with the better rule re-chosen per resample; R_CPU beside it.",
+  "comparators_or_controls": "Re-tuned Novelty+ (30 settings) and probSAT (8) alone; static probing to fixpoint (ST); random targets at equal slow budget (RND); G with the implied-knot share switched (Gx); the oracle policy GO; CaDiCaL 1.9.5 for context.",
+  "resource_budget": "Re-tuning, policy tuning and the test at n = 800 and 3200 (about 2-3 CPU-hours), a stress cell at n = 12800 (about 0.5 CPU-hour), CPU only, MemoryMax 16G under the shared runner.",
+  "first_executable_signal": "Gate G (G0-G7): brute-force soundness of every move, run-for-run identity with SCALE-MEMORY's engine, incremental counts on signed patterns.",
+  "stop_rule": "Stop at the frozen decision rule; keep every run; no arm, cell or setting added after the test results are seen except the registered stress cell S4.",
+  "nonclaims": "Planted instances only; probing by propagation and local search; no general SAT method; no claim about P vs NP, native emergence or self-improving AI; the moves are known inference rules and the claim is only about where and when to apply them.",
+  "preregistration": "research/SLOW-LOOP-20261117-001/preregistration.md"
+}

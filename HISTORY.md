@@ -3,6 +3,20 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the grid-growth study, refereed, with one Block
+
+- The grid-growth study (`GRID-GROW-20261117-001`) was refereed. Its costs are confirmed and now proved for every shape: a new row
+  or column costs one forced knot, a filled cell three and never two, and the totals do not depend on the order.
+- Withdrawn (Block): "the states name every placement". Bases with the same states can have different placements: the column of
+  three cells and the three-cell L have the same states, and only the L has a cell to fill. From a straight run's states a fill at
+  any inner distinction gives a valid two-way base. So the states say where a new line starts, and the given arrangement, not the
+  states, says where the second order starts.
+- Narrowed: the uniqueness of the local fill is computed in 4 × 4 and 5 × 5 boxes, not proved. The ruler is the disagreement count
+  with exact betweenness, by which the base is frozen, and "two-way" is the given arrangement's.
+- Small fixes: the busiest cells are four, not three; the betweenness check covers every minimum cover; the arrangement's words
+  are marked as its own ([decision note](research/GRID-GROW-20261117-001/grid_grow.md),
+  [referee's report](research/GRID-GROW-20261117-001/referee-R1/report.md)).
+
 ## 17 November 2026: the order study, confirmed by its referee, with three narrowings
 
 - The order study (`KNOT-ORDER-20261117-001`) was confirmed by its referee with no Block. Its count of exactly m + 1 single knots

@@ -390,16 +390,20 @@ independent orders, its rows and its columns: the grid's own arrangement, read
 back ([decision note](../research/KNOT-ORDER-20261117-001/knot_order.md);
 scoped after its referee: under the transfer-gap reading the line is frozen,
 and an outside rule, not the knots, does the reading and the choosing).
-That grid can be grown the same way (`GRID-GROW-20261117-001`, proof and frozen
-computation, referee pending). Starting a new row or column costs one knot, and
-it is forced: the new cell between its neighbour and the opposite corner, the
-one cell across every cut. Filling a cell costs exactly three knots, and they
-can stay in its unit square: the new cell between its left and lower
-neighbours, and each of those between the corner and the new cell. A single
-four-place parity on the square does the same, since a cut crosses a square
-through opposite sides or not at all. An outside rule reading only the states
-finds every placement. So a base of knots alone holds and grows the grid's own
-two orders, reaching far only to start a line
+That grid can be grown with knots, told its next cell (`GRID-GROW-20261117-001`,
+proof and frozen computation, refereed with one Block). Starting a new row or
+column costs one knot, and it is forced: the new cell between its neighbour and
+the opposite corner, the one cell across every cut. Filling a cell costs exactly
+three knots, and they can stay in its unit square (the arrangement's words): the
+new cell between its left and lower neighbours, and each of those between the
+corner and the new cell. A single four-place parity on those four distinctions
+does the same. But the states do not say where a fill goes. The column of three
+cells and the three-cell L have the same states, those of a line of three, and
+only the L has a cell to fill; a straight run's states allow a fill at any of
+its inner distinctions. So the states say where a new line starts, and the given
+arrangement, not the states, says where the second order starts (the referee's
+Block). A base of knots alone holds the grid's own two orders and grows them at
+fixed costs on that arrangement, reaching far only to start a line
 ([decision note](../research/GRID-GROW-20261117-001/grid_grow.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with

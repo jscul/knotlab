@@ -2579,11 +2579,16 @@ evidence: results and their status come from the records each entry links.
   other. An outside rule reading only its states finds where the next knot must go: between two neighbours (a knot with only
   those two) or beyond an end (a knot with both ends). The line is the flip-symmetric implication chain: its order is put in by
   where the knots go and read back, and by `WEAVE-LAWS-20261117-001`'s transfer-gap reading it is frozen (2n states).
-  `GRID-GROW-20261117-001` ([decision note](../research/GRID-GROW-20261117-001/grid_grow.md); referee pending) grew the
-  grid's two orders the same way, under the same reading. A new row or column costs one forced knot tying the new cell to its
-  neighbour and the opposite corner, and a filled cell costs exactly three, which can stay in its unit square. The two orders are
-  the grid's own arrangement read back as its halfspaces, and the base is frozen by the transfer-gap reading.
+  `GRID-GROW-20261117-001` ([decision note](../research/GRID-GROW-20261117-001/grid_grow.md); refereed, one Block) grew the
+  grid's two orders under the same reading, on the given two-way arrangement. Betweenness knots grow a base whose disagreement
+  count is twice the arrangement's L1 distance, at fixed costs per new cell: one forced knot for a new line, three for a fill. The
+  arrangement says where each next cell goes: shapes with the same states can have different placements, and a straight run's
+  states admit a fill at every inner distinction, so the states do not say where the second order starts (they give only where a
+  new line starts). The two orders are the arrangement's own, read back as its halfspaces, and the base is nearly frozen
+  (2(r + c) − 2 states for r·c distinctions).
 - **History.**
+  - 2026-11-17 · The grid's case scoped after `GRID-GROW-R1` (Block on "the states name every placement"): the given arrangement
+    says where each fill goes, and the states only where a new line starts; status unchanged.
   - 2026-11-17 · The knot-built cases scoped after `KNOT-ORDER-R1` (Narrowing): the ruler named (A98's), the line frozen by the
     transfer-gap reading, its order put in by the knots' placement and read back, the choosing done by an outside rule; status
     unchanged.

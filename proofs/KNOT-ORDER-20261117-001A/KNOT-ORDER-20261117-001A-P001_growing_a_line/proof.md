@@ -70,7 +70,7 @@ when y₁ = 0, which is the implication y_m ≤ y_(m+1). ∎
 gives (2m − 2) + 2·2 = 2(m + 1) states, which are exactly the thresholds of 1..k, new, k + 1..m. For a single betweenness knot
 to keep a line, K1 forces only that it straddles the new place: B(a, new, b) with a ≤ k < b. Its base then has 2m + 2(b − a)
 states, which is the line's 2(m + 1) only when b = a + 1, so the two are neighbours (gap closed after the referee). Each of the m + 1 positions gives one knot. Non-betweenness knots are
-excluded by the frozen exhaustive search for m ≤ 8, and for every knot at every m by the referee's proof (R1, section 1). The inward inward places each new distinction between
+excluded by the frozen exhaustive search for m ≤ 8, and for every knot at every m by the referee's proof (R1, section 1). The inward rule places each new distinction between
 the two last placed, which are adjacent. Each distinction is in at most three knots: as a neighbour twice and as the new one once.
 ∎
 

@@ -2,7 +2,8 @@
 
 Status: Proved
 
-Ticket `GRID-GROW-20261117-001A`, 17 November 2026, by Claude. Epic `GRID-GROW-20261117-001`. The frozen census of ticket B checks
+Ticket `GRID-GROW-20261117-001A`, 17 November 2026, by Claude. Epic `GRID-GROW-20261117-001`. G1 to G4 are proved; G5 was
+withdrawn after the referee (see the last section). The frozen census of ticket B checks
 every statement on all Young diagrams in a 4 × 4 box. The proofs below follow the advisor's derivation, which I checked.
 
 ## Words
@@ -31,6 +32,7 @@ every statement on all Young diagrams in a 4 × 4 box. The proofs below follow t
   (r + c − 3) + (r − 1)(c − 1).
 - **G5. The states name the placements.** By G1 the counts give the L1 geometry of the shape, up to its symmetries. So the outer
   corners, the neighbours a, b, c and the opposite corners are all read from the states, with names and history erased.
+  *Withdrawn after the referee (R1, Block): the counts give the base's L1 metric, not the shape. See "After the referee".*
 
 ## Proofs
 
@@ -61,9 +63,11 @@ So no knot kills two of the three kinds, and three knots are needed. The unit-sq
 - B(c, a, p) fixes p under R_y;
 - B(c, b, p) fixes p under C_x.
 
-Within L1 radius 2 of p the only cells are a, b and c, so this cover is unique there. On every cut state p equals a + b + c mod 2,
+Within L1 radius 2 of p the only cells are a, b and c, so this cover is unique there. *(False premise, found by the referee:
+other cells can lie at distance 2. The uniqueness is computed in the 4 × 4 and 5 × 5 boxes, not proved.)* On every cut state p equals a + b + c mod 2,
 since a cut crosses the unit square through opposite sides or not at all. So the parity also covers alone. That a minimum cover's
-knots are betweenness knots is checked by the census, not proved here. ∎
+knots are betweenness knots is checked by the census, not proved here. *(The census checked only the covers within radius 2; the
+referee enumerated every minimum cover in the 4 × 4 and 5 × 5 boxes, all betweenness.)* ∎
 
 **G4.** Each new line costs one knot (G2) and each filled cell three (G3), whatever the order. The rectangle has r + c − 3 new-line
 steps beyond the L and (r − 1)(c − 1) filled cells. ∎
@@ -79,3 +83,17 @@ steps beyond the L and (r − 1)(c − 1) filled cells. ∎
   reading in the program's terms. Neither I nor the advisor knows a source for them.
 - **The advisor** gave G3's lower bound, the cover family, G2's uniqueness and G4's totals. It corrected my "all inside the unit
   square": three are needed, and keeping them local is a choice.
+
+## After the referee (R1, 17 November 2026)
+
+Report `research/GRID-GROW-20261117-001/referee-R1/report.md`; folded in the same day and logged in `docs/CORRECTIONS.md`. The text
+above is kept as written, with the notices added.
+- **G5 withdrawn as stated (Block).** The counts give the base's L1 metric, not the shape. The column of three cells and the
+  three-cell L have the same states up to renaming, and only the L has a cell to fill. From a straight run's states, the three
+  fill knots B(a, p, b), B(c, a, p), B(c, b, p) at any inner distinction c give, up to renaming, the cut system of a shape (the
+  referee, to n = 7). What holds: the new-line pair is read from the states, as the pair at the largest disagreement count. Where
+  a fill goes is the given arrangement's.
+- **G2** is proved for every shape of two or more cells. The step left implicit: on the two constant states p is free, so a single
+  knot on (u, v, p) must fix p on every non-constant cut, which needs u and v on opposite sides of every cut.
+- **G3.** "Never two" is proved for every corner. Local uniqueness is computed in the 4 × 4 and 5 × 5 boxes (its premise is false).
+  Every minimum cover is made of betweenness knots in both boxes (the referee's enumeration; a proof sketch is in its report).

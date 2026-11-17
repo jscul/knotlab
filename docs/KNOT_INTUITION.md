@@ -2026,18 +2026,21 @@ So holes come in two kinds:
      ([decision note](../research/CLAMP-LEARN-20261112-001/clamp_learn.md)).
 
    **2026-11-16: an agent that chooses which knot to act on, with memory, wins where it trained and loses beyond**
-   (`WHERE-NEXT-20261116-001`; referee pending).
+   (`WHERE-NEXT-20261116-001`; refereed, confirmed with fixes).
    - **The question.** The owner's agent: it attends to one knot, which activates it, acts on that knot's loops, turns to another
      knot and remembers the steps it has taken. On planted not-all-equal patterns, attending means taking a violated knot; acting
      means flipping one of its distinctions; turning means choosing among the knots that flip violated and a few others. Does a
      learned version need less work than the best hand-written rules, and does what it learns carry over?
-   - **Computed.** At the sizes it trained on (200 to 800 distinctions) it needs about half the flips of the best tuned rule, and
-     nearly all of the gain is its memory of when it last flipped each distinction. Learning where to turn adds little. At four
+   - **Computed.** At the sizes it trained on (200 to 800 distinctions) it needs about 0.7 to 0.8 times the flips of the best tuned
+     rule (the referee's five-run estimate; single runs had shown about half), and nearly all of the gain is its memory of when it
+     last flipped each distinction. Learning where to turn adds little. At four
      times its training size it only ties the best rule, at sixteen times it needs 2.4 times as many flips, and on a pattern whose
      knots overlap only within a short run of distinctions it needs 3 to 55 times as many. Each of its steps costs 4 to 8 times as
      much computing, so it never saves time.
    - **Reading.** Memory of one's own steps is worth learning here: it beat the hand-written memory rule where it was trained. What
-     it learned is tied to how many steps a return takes at those sizes, a guess that one retraining can test.
+     it learned is tied to how many steps a return takes at those sizes: the referee found its step-counted reads saturate as the
+     pattern grows (most ages past the 1,000-step clip from 3,200 distinctions on), while age over the number of distinctions stays
+     near 0.2, so one retraining with reads that count no steps can test it.
    - **Next.** Memory that reads no step counts, trained on mixed sizes (`WHERE-NEXT-20261116-001`#1); a slower loop that changes the
      knot structures themselves is recorded as sub-goal B191 ([decision note](../research/WHERE-NEXT-20261116-001/decision.md)).
 

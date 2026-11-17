@@ -6,7 +6,9 @@
 **Verdict (frozen rule).** Clean loss on the primary cell (`rand` n = 3200: R = 1.07 [0.90, 1.21] against re-tuned
 Novelty+) and on both secondary cells (`rand` n = 12800: 2.43 [1.73, 4.29]; `local` n = 3200: 55 [31, 95]). Memory helps on the
 primary cell (M = 0.37 [0.31, 0.44]). No marginal-cost win anywhere (N* infinite). At the training sizes the learned agent with
-memory took 0.45 and 0.60 times the flips of the best hand-written rule: a learned mechanism that works where it was trained and
+memory took 0.45 and 0.60 times the flips of the best hand-written rule by the frozen protocol (corrected 2026-11-17: about 0.71
+and 0.77 on the referee's five-run estimates against a widely re-tuned Novelty+, 1.3 to 1.4 times fewer; Narrowing): a learned
+mechanism that works where it was trained and
 does not carry over.
 
 | Scope | Verdict | Why |
@@ -14,7 +16,7 @@ does not carry over.
 | This attempt: a learned where-and-what agent with memory against tuned rules on planted not-all-equal knot patterns | **Status:** Failed (clean loss by the frozen rule), with a training-size win | It beats every rule 1.7–2.2 times in flips at n = 200 and 800 through memory, but ties at 4 times the training size, loses 2.4 times at 16 times, loses 3–55 times on an unseen meeting pattern, and costs 4–8 times more per flip |
 | Local direction: learned memory for choosing where and what to act on | Continue | The memory gain is large and real where trained; whether its failure to carry over is the step-counted features or the idea is decided by one cheap retraining |
 | Broader exploration: learned search for satisfiability | Known alternatives | Learned variable selection (Yolcu and Póczos 2019; Interian and Bernardini 2023) and learned branching (Graph-Q-SAT) also win in steps on their training distribution and lose in time or at scale; scale-free hand-written memory (Novelty+, 1997–99) remains the rule to beat |
-| G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Capability gained and obstruction learned | First learned policy in the program that beats tuned search at matched instances (flips, training sizes); first measured limit on carrying it to larger sizes and other meeting patterns |
+| G15 Learning: a point in a learned knot pattern, and G16 Learning the rules behind what a system allows | Capability gained and obstruction learned (for memory reads counted in steps, trained at n ≤ 800; corrected 2026-11-17) | First learned policy in the program that beats tuned search at matched instances (flips, training sizes); first measured limit on carrying it to larger sizes and other meeting patterns |
 
 **Next step:** Continue — selected: #1
 
@@ -82,3 +84,8 @@ A fresh session should recheck, without this thread's reasoning:
 > My guess about why it doesn't transfer: its memory counts steps, and at larger sizes the same number of steps means something
 > different. Novelty+'s memory only compares which distinction was flipped most recently, which works at any size. That's what #1
 > tests.
+
+**Correction to the report as sent (2026-11-17, referee R1, logged in `docs/CORRECTIONS.md`).** "About half the flips" at the
+training sizes should read "about 0.7 to 0.8 times the flips (1.3 to 1.4 times fewer)" on the referee's five-run estimates
+against a widely re-tuned Novelty+ (Narrowing); the loss at scale is scoped to memory reads counted in steps, trained at n ≤ 800
+(Narrowing, wording). The primary-cell loss is firmer (R = 1.10 [1.02, 1.19]); P2 would narrowly have held (Not a block).

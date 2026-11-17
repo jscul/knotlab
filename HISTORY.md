@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 17 November 2026: the navigating agent, confirmed by its referee, its training-size win narrowed
+
+- The navigating agent (`WHERE-NEXT-20261116-001`) was confirmed by its referee with fresh code, with no Block: the engine, the
+  baselines (against an independent implementation), the seeds and the headline recomputation all check, and the clean losses at
+  4 and 16 times the training size and on the local pattern stand, the primary one firmer on better estimates (R = 1.10 [1.02,
+  1.19]) ([result note](research/WHERE-NEXT-20261116-001/where_next.md)).
+- Narrowed: at its training sizes the agent takes about 0.71 and 0.77 times the flips of a widely re-tuned Novelty+ (five runs per
+  instance), 1.3 to 1.4 times fewer, not the single-run 0.45 and 0.60.
+- Narrowed: the loss at scale is for memory reads counted in steps, trained at n ≤ 800; those reads saturate as n grows.
+- Reworded: P2 would narrowly have held on better estimates; "a region" is "the same distinctions".
+
 ## 16 November 2026: carrying distinctions together, confirmed by its referee, one prediction and one sentence narrowed
 
 - Carrying distinctions together (`CARRY-STRANDS-20261116-001`) was confirmed by its referee with fresh code, with no Block: the

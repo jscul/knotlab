@@ -5,6 +5,18 @@ Evidence: **computed** (finite experiments on planted instances, every run kept)
 ([pre-registration](preregistration.md), freeze commit `a341054e5`; [advisor review](advisor_review.md)). **Referee pending.**
 The canonical K1–K3 test is unchanged; the knot law used here, not-all-equal on three distinctions, passes it (gate G0).
 
+**Corrected 2026-11-17 after the referee** ([report](referee-R1/report.md); confirmed with fixes, no Block; logged in
+`docs/CORRECTIONS.md`):
+- *Narrowing.* The win at the training sizes is smaller than the frozen protocol's single runs show. Against a widely re-tuned
+  Novelty+, with five runs per instance for both, L3 takes about **0.71 [0.63, 0.86]** times the flips at n = 200 and **0.77
+  [0.71, 0.87]** at n = 800, that is 1.3 to 1.4 times fewer, not 1.7 to 2.2. The frozen R values (0.45, 0.60) stay as the
+  protocol's values. About half the gap, in log terms, was single-run noise and a coarse re-tune.
+- *Narrowing (wording).* The loss at larger sizes is an obstruction for memory reads counted in steps and training at n ≤ 800,
+  not for learned memory as such. The referee measured the reads' saturation: ages past the 1,000-step clip in 7.5%, 24%, 45% and
+  65% of cases at n = 200, 800, 3200 and 12800; the 50-step counts near 0 from 3200 on; age over n near 0.2 at every size.
+- *Not a block.* On those better estimates P2 (R in [0.7, 1.1] at n = 200) would narrowly have held (about 0.71); the frozen
+  verdict "failed, the other way" stands as computed. The primary-cell loss is firmer: R = 1.10 [1.02, 1.19].
+
 ## The question, and the answer
 
 The owner's idea (2026-11-16) is an agent that reads the context at one logical knot, turns from knot to knot and acts on their
@@ -18,8 +30,9 @@ meeting pattern it never saw. The hand-written rules were tuned on the training 
 
 **The answer has three parts.**
 
-1. **At the sizes it trained on, the agent beats every hand-written rule.** It takes 0.45 times the flips of the best re-tuned
-   rule at n = 200 and 0.60 times at n = 800. The best rule is always Novelty+.
+1. **At the sizes it trained on, the agent beats every hand-written rule.** By the frozen protocol it takes 0.45 times the flips
+   of the best re-tuned rule at n = 200 and 0.60 times at n = 800; on the referee's better estimates, 0.71 and 0.77 (1.3 to 1.4
+   times fewer). The best rule is always Novelty+.
 2. **The gain is memory.** The same agent without memory needs 2.7 to 3.3 times as many flips (M = 0.36, 0.31 and 0.37 at
    n = 200, 800 and 3200). Learning where to go next, without memory, adds little: L2 against L1 is 0.75 to 0.95 on `rand`.
 3. **What it learned does not carry over.**
@@ -30,7 +43,8 @@ meeting pattern it never saw. The hand-written rules were tuned on the training 
      (M = 2.8 at n = 800 and 4.7 at n = 3200).
    - In CPU per instance it never wins: it costs 4 to 8 times more per flip, so the break-even count N* is infinite in every cell.
 
-The decision is a **clean loss** on the primary cell and on both secondary cells. Memory **helps** on the primary cell. G-learn
+The decision is a **clean loss** on the primary cell and on both secondary cells (firmer on the referee's estimate, R = 1.10
+[1.02, 1.19]), for this agent: memory reads counted in steps, trained at n ≤ 800. Memory **helps** on the primary cell. G-learn
 passed: L1's validation median at n = 800 was 0.85 times probSAT's on the same instances.
 
 ## Results
@@ -88,7 +102,7 @@ hold does not apply.
 | --- | --- | --- |
 | G | Engine gate | **Passed** (all six checks, `check.py`) |
 | G-learn | L1 within 1.15 times probSAT at n = 800 (80%) | **Passed**: 0.85 (29,664 against 34,907 at the median) |
-| P2 | R in [0.7, 1.1] at n = 200 (70%) | **Failed, the other way**: R = 0.45, a larger win than predicted |
+| P2 | R in [0.7, 1.1] at n = 200 (70%) | **Failed, the other way**: R = 0.45, a larger win than predicted (on the referee's estimates about 0.71, narrowly inside) |
 | P3 | No flips win on `rand` at 3200 and 12800 (70%) | **Held**: 1.07 and 2.43 |
 | P4 | A flips win on `local` at 3200 (30%) | **Failed**: R = 55 |
 | P5 | Memory helps on some headline cell (45%) | **Held**: M = 0.37 at `rand` n = 3200 |
@@ -113,10 +127,10 @@ The memory the agent used is the kind Novelty+ uses: each distinction's age with
 counts. Learning found a better use of it than the 1997–99 hand-written rule at the sizes it saw. Learning found no use of the
 where-choice that a tuned hand-written rule lacks, except a modest gain on `local`.
 
-## Why the memory did not carry over (not tested)
+## Why the memory did not carry over (not tested here; the referee's saturation table supports it)
 
 The working hypothesis is that the memory features are counted in steps. Ages are clipped at 1,000 steps and counts decay over
-50 steps. As n grows, the walk takes more steps to come back to a region, so the same reading means something else: most ages
+50 steps. As n grows, the walk takes more steps to come back to the same distinctions, so the same reading means something else: most ages
 read "long ago", and recent counts read near zero. Novelty+'s rule reads only which of the knot's three distinctions was flipped
 most recently, a comparison with no scale. Its re-tuned noise stayed between 0.6 and 0.7 at every size, and its advantage over
 re-tuned probSAT grew with size (1.7, 2.4 and 3.4 times fewer flips at n = 200, 800 and 3200). On `local`, where each distinction is in about 12 knots rather than 6.3, the same step counts again mean

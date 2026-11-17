@@ -53,6 +53,8 @@ extended at its edges, an analysis edit that had not applied, and the CaDiCaL in
 filed direction #3; G15's Stands on, Open and Lines updated; no goal changed.
 **Assumptions:** added A90 (the reading of the owner's slow loop as changes to the pattern that keep its allowed states, at the
 knots the search attends to most) and A91 (charged work counts both loops and every rebuild), both Assumed. Relied on A88 and A89.
+**Basket:** the learning line's untaken items (B155, B154, B157, B162, B166, B169 and 14 more) belong to the paused point-learner
+line and test neither loop of the navigating agent; MEET-TRANSFER's result is pending. So #1 stands.
 **Advisor:** Fable 5.2 reviewed the draft design and said "freeze with changes". All eight were taken except the clause-weighting
 arm, now direction #2 ([advisor_review.md](advisor_review.md)). It was not used after the results.
 **Stress test:** the n = 12,800 cell (S4, registered `SLOW-LOOP-S4`) finished before the close and is folded in.

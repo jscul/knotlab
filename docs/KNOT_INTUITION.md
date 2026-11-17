@@ -3850,6 +3850,11 @@ So holes come in two kinds:
      the gap to leave values on its two sides that the step between them cannot join; where no marking does, every level holds a
      member, which proves one member per level at every depth for 86 of the 152 small-orbit rulers with cycles. The line closes here
      ([line summary](../research/MARK-RATE-20261116-001/line_summary.md)).
+   - **What keeps the top bound** (`KEEP-REACH-20261117-001`; referee pending): a relation between two of the maps' orbits that never
+     untangles keeps the top bound only when it starts at the top and its dependence is exposed, so that it holds a bond across both;
+     then the bond's size bounds the reach at every depth, proved. On the census this settles every small-orbit pattern; in fresh and
+     mutated ones, 39 never untangle somewhere yet hold no such bond, and one, a single change away from a bounded pattern, grows past
+     it ([decision note](../research/KEEP-REACH-20261117-001/keep_reach.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

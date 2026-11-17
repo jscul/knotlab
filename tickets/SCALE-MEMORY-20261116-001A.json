@@ -5,7 +5,17 @@
     "WHERE-NEXT-20261116-001"
   ],
   "dependency_text": "",
-  "fields": {},
+  "fields": {
+    "evidence_stage": "exploratory",
+    "experiment_contracts": [
+      "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/contract.json"
+    ],
+    "experiment_results": [
+      "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/result.json"
+    ],
+    "preregistration": "research/SCALE-MEMORY-20261116-001/preregistration.md",
+    "report": "research/SCALE-MEMORY-20261116-001/scale_memory.md"
+  },
   "id": "SCALE-MEMORY-20261116-001A",
   "kind": "ticket",
   "legacy": {},
@@ -16,8 +26,8 @@
   },
   "parent": "SCALE-MEMORY-20261116-001",
   "schema_version": 1,
-  "status": "Planned",
-  "status_class": "planned",
+  "status": "Scale-free memory carries the navigating agent to parity with re-tuned Novelty+ at rand 3200 and 12800 (frozen R 0.94 and 0.82 [0.73, 0.91], inconclusive by the rule; post hoc five runs 0.88-1.01), where step-counted memory collapses (1.36, 14.5); S = L3s/L3 = 0.059 at 12800, L3sm/L3s = 0.95 (training at 3200 adds nothing once reads are scale-free); no CPU win; every arm loses on local 3200; 51200 stress cell pending. Computed, referee pending.",
+  "status_class": "supported",
   "stop_rule": "",
   "title": "Scale-free memory and mixed-size training for the navigating agent"
 }

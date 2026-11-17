@@ -1,0 +1,182 @@
+{
+ "schema_version": 1,
+ "ticket": "SCALE-MEMORY-20261116-001A",
+ "artifact_id": "SCALE-MEMORY-20261116-001A-E001",
+ "evidence_stage": "exploratory",
+ "status": "Exploratory run complete except the n = 51200 cell (stress test pending)",
+ "report": "research/SCALE-MEMORY-20261116-001/scale_memory.md",
+ "decision": "research/SCALE-MEMORY-20261116-001/decision.md",
+ "contract": "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/contract.json",
+ "contract_sha256": "25c383cb6ed245936d3fd1baac9b053852bcd344c135b72fd4a5c7eb10ad8d2e",
+ "producers": {
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/nae_engine.c": "c9a7406fe57ff43f11688d74e23b6816d5cfbf6ec3a2247159615f1e04ad008c",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/engine.py": "9b3c1725c66492ab537913f01fa3b0424e18f304888c2951cf705539f1980efd",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/train_es.py": "6cc3df651178712d484fc46012e2c75cbfa3b39a29891f58e604c6ff230b5ca4",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/train_job.py": "025daa2fd439b3d2b7d27a045b91ee3a8dd86000748a4b3c5061490704248287",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/test_job.py": "8203862da07d936ddc86c4e08f45de4fbb9b4579e41ab039af0df472f4c62aeb",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/posthoc_job.py": "e451539b4ae8104c175ea687e916692331a78113606ee0d9568efa1547be2de4",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/analyze_scale.py": "6cce64a46c139ae92ba4f13579fd5a69a2ac335d4494363700dc3d7577bf29e6",
+  "experiments/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/check.py": "16caf7698e33449f843a17bae81673c9a4635a219f785526e8ba95f7444f75dc"
+ },
+ "raw_results": {
+  "training": {
+   "path": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/training/results.jsonl",
+   "sha256": "9189cbd973e1e3f0e9d0fdaa6b882efc07801c0c1f5fefff38a116bd790af24d"
+  },
+  "retune51200": {
+   "path": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/retune51200/results.jsonl",
+   "sha256": "7675bc7e662343b27de5b3a0044beb7bceebc46356405a2e4847b1280145d7a8"
+  },
+  "posthoc": {
+   "path": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/posthoc/results.jsonl",
+   "sha256": "2e44b0ea9e9dfdcad705ca0c7e0d447d91dc1637a79aa2a16b58f83aaf1eccf5"
+  }
+ },
+ "raw_results_running": {
+  "test": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/test/results.jsonl"
+ },
+ "reused": "artifacts/WHERE-NEXT-20261116-001A/WHERE-NEXT-20261116-001A-E001_where_next/{test,stress}/results.jsonl",
+ "inputs": {
+  "retuned": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/retuned.json",
+  "policies": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/policies.json",
+  "gates": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/gates.json",
+  "novelty_val_reference": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/novelty_val_reference.json"
+ },
+ "summary": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/summary_pilot.json",
+ "posthoc_summary": "artifacts/SCALE-MEMORY-20261116-001A/SCALE-MEMORY-20261116-001A-E001_scale_memory/posthoc_summary.json",
+ "verdicts": {
+  "L3": "clean loss",
+  "L3s": "inconclusive",
+  "L3m": "clean loss",
+  "L3sm": "inconclusive",
+  "L2m": "learner failure (G-learn failed)",
+  "L3c": "clean loss"
+ },
+ "headline": "scale-free memory carries the agent to parity with Novelty+ at 3200 and 12800 (frozen R 0.82-0.94; five runs 0.88-1.01), not to a win; step-counted memory collapses (1.36, 14.5)",
+ "R_primary": {
+  "L3": {
+   "point": 1.3575838262601532,
+   "lo": 1.1243942823950204,
+   "hi": 1.6320151854713003,
+   "level": 99.0
+  },
+  "L3s": {
+   "point": 0.9378996193421081,
+   "lo": 0.7942240166259932,
+   "hi": 1.105579193131192,
+   "level": 99.0
+  },
+  "L3m": {
+   "point": 1.3336172011087408,
+   "lo": 1.1159598707733207,
+   "hi": 1.5634211501339461,
+   "level": 99.0
+  },
+  "L3sm": {
+   "point": 0.8163080004301927,
+   "lo": 0.7265441652930181,
+   "hi": 0.9063997050861591,
+   "level": 99.0
+  },
+  "L2m": {
+   "point": 2.549316376274538,
+   "lo": 2.230342091431988,
+   "hi": 2.881276618687105,
+   "level": 99.0
+  },
+  "L3c": {
+   "point": 2.674569909326275,
+   "lo": 2.1894670055672676,
+   "hi": 4.0441877063917415,
+   "level": 99.0
+  }
+ },
+ "ratios_12800": {
+  "S": {
+   "point": 0.05935521836296955,
+   "lo": 0.03845061621389102,
+   "hi": 0.08226795280473556,
+   "level": 99.0
+  },
+  "T": {
+   "point": 0.09175193205728777,
+   "lo": 0.05836293865249441,
+   "hi": 0.13305172393525264,
+   "level": 99.0
+  },
+  "C": {
+   "point": 0.4986286566892092,
+   "lo": 0.3397326761395784,
+   "hi": 0.6241891023048558,
+   "level": 99.0
+  },
+  "I_m": {
+   "point": 0.612100683578115,
+   "lo": 0.522269935030565,
+   "hi": 0.7136297755655702,
+   "level": 99.0
+  },
+  "I_s": {
+   "point": 0.9461917903905229,
+   "lo": 0.8541044402721703,
+   "hi": 1.0691497490040969,
+   "level": 99.0
+  },
+  "K": {
+   "point": 0.523127381724834,
+   "lo": 0.4453133843495703,
+   "hi": 0.6107226428155891,
+   "level": 99.0
+  },
+  "seed_floor": {
+   "point": 33.479265707080415,
+   "lo": 19.521428709729534,
+   "hi": 80.41568862192005,
+   "level": 99.0
+  }
+ },
+ "ratios_3200": {
+  "S": {
+   "point": 0.6908594528013909,
+   "lo": 0.5802122720699746,
+   "hi": 0.8266847171814141,
+   "level": 99.0
+  },
+  "T": {
+   "point": 0.6967975731738236,
+   "lo": 0.5936858151898371,
+   "hi": 0.8710749084641329,
+   "level": 99.0
+  },
+  "C": {
+   "point": 0.8167077737779214,
+   "lo": 0.6851213056332037,
+   "hi": 1.0015276038501364,
+   "level": 99.0
+  },
+  "I_m": {
+   "point": 0.9946991979611813,
+   "lo": 0.8166195839210943,
+   "hi": 1.139421738316397,
+   "level": 99.0
+  },
+  "I_s": {
+   "point": 1.003248901591789,
+   "lo": 0.8679913545942581,
+   "hi": 1.15908101359045,
+   "level": 99.0
+  },
+  "K": {
+   "point": 0.3368699681813642,
+   "lo": 0.2887144384553169,
+   "hi": 0.4082956654231408,
+   "level": 99.0
+  },
+  "seed_floor": {
+   "point": 1.6189676524174776,
+   "lo": 1.2303003955849385,
+   "hi": 2.246005098551265,
+   "level": 99.0
+  }
+ }
+}

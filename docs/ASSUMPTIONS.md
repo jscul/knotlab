@@ -2335,6 +2335,9 @@ evidence: results and their status come from the records each entry links.
   reweighting or adding knots to the agent's own reads), or moves that keep only satisfiability, compared at the same charged
   work. A saving under another reading that this one misses would overturn it as the reading of the owner's picture.
 - **History.**
+  - 2026-11-17 · Part of the alternative tested by `SPEC-MERGE-20261117-001`: changes that do not keep the allowed states
+    (speculative merges on the fast loop's co-flip evidence, undone on stalls). They did not pay anywhere, so this reading
+    stands as the one under which structure changes have paid.
   - 2026-11-17 · Adopted by `SLOW-LOOP-20261117-001` (the coordinator's reading, challengeable).
 
 ### A91 · A slow loop is judged by charged work, both loops and every rebuild counted

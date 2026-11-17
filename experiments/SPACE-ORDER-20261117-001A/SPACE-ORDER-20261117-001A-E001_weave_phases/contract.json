@@ -1,0 +1,41 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SPACE-ORDER-20261117-001A-E001",
+ "ticket": "SPACE-ORDER-20261117-001A",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On six-regular weaves and their role-preserving shuffled twins, how do propagation rounds and untangling phases compare at the sample jump of the forced set, for the two-demand, one-demand and planted not-all-equal laws: does distance force nested open uses?",
+ "definitions": {
+  "patterns": "W(L) triangular-torus weave, L = 24..384; R6 = W after 5m degree- and role-preserving knot swaps",
+  "laws": "two: atoms (f, y -> x), (f, x -> y) per knot, f uniform; one: one uniformly demanded member per knot; nae: planted state from 30 zero-energy sweeps of the three-class state",
+  "readings": "k*, R, P, D (largest steps apart from held to set), avalanche, at k* and k* - 1 and at held fractions 0.05, 0.1, 0.2",
+  "seeds": "sha256 SO:<law>:<pattern>:<L>:<sample>"
+ },
+ "public_inputs": {
+  "code": "weaves.py (sha256 9098491b97a7110f9a06c7b5cafebd3b906987740d1e4d3ccabc751f71a245a5); gates.py (sha256 d977d082afa5193590c8af4bc74b4720d7970513f8fd823d5dc8b589847e2f3e); job.py (sha256 ccb0d5fa2711bc0239db4940af6e3038e59859f864cac396c9dff5166b603abe); summarize.py (sha256 2df1afad3947cb2b642d1607222b2bf1dfecde3120be871baf8665b947d7aa6b); atoms.py and job.py of SEQUENTIAL-WALL-20261116-001A-E001; numpy, scipy.",
+  "run": "scripts/longrun.py launch on job.py; summarize.py RUN"
+ },
+ "forbidden_inputs": [
+  "Changing settings, seeds, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions G, T1-T4, O1-O3, N1-N3 of research/SPACE-ORDER-20261117-001/preregistration.md, evaluated by summarize.py.",
+ "cheapest_meaningful_control": "The role-preserving twin R6 of each weave (same degrees and roles, no steps-apart structure).",
+ "predictions": {
+  "T1": "two on W: local slopes of log P*, log R* vs log L >= 0.7 at 96-192 and 192-384; P*/R* at 384 in [0.3, 1]; k*/n at 384 <= half at 48",
+  "T2": "two on R6: k*/n in [0.06, 0.11]; R*(384)/R*(96) >= 2; P*(384) - P*(24) in [1, 8], P*(384) <= 20",
+  "T3": "P*(W)/P*(R6) >= 5 at 384, two",
+  "T4": "two on W: P*/D* in [1, 1.5] at 96, 192, 384",
+  "O1": "one: avalanche at 384 <= 0.05 on W and R6",
+  "O2": "one: R6 P*(384) - P*(24) <= 4; W local slope 192-384 < 0.2",
+  "O3": "one R6: k*/n in [0.20, 0.245] at 96, 192, 384",
+  "N1": "nae: avalanche at 384 <= 0.05 both",
+  "N2": "nae: P* <= 8 at every size both",
+  "N3": "nae W free share in [0.27, 0.31] at L >= 48; 300 sweeps change <= 0.01"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run and its read-out; referee hand-off; report.",
+ "runtime": "Under an hour on three workers; shared runner."
+}

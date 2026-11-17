@@ -147,6 +147,7 @@ evidence: results and their status come from the records each entry links.
 | [A90](#a90--the-owners-slow-loop-changes-the-pattern-where-the-search-dwells-keeping-its-allowed-states) | The owner's slow loop changes the pattern where the search dwells, keeping its allowed states | reading | Assumed |
 | [A91](#a91--a-slow-loop-is-judged-by-charged-work-both-loops-and-every-rebuild-counted) | A slow loop is judged by charged work, both loops and every rebuild counted | measure | Assumed |
 | [A92](#a92--a-slow-loop-earns-its-eagerness-by-doubling-and-halving-on-the-share-its-batched-merges-remove) | A slow loop earns its eagerness by doubling and halving on the share its batched merges remove | reading | Assumed |
+| [A93](#a93--a-speculative-change-is-judged-by-whether-the-search-then-gets-below-its-pre-change-best) | A speculative change is judged by whether the search then gets below its pre-change best | premise | Overturned |
 
 ## Entries
 
@@ -2380,3 +2381,22 @@ evidence: results and their status come from the records each entry links.
   obstruction, not self-monitoring as such (`EARN-BUDGET-20261117-001`#1).
 - **History.**
   - 2026-11-17 · Adopted by `EARN-BUDGET-20261117-001`.
+
+### A93 · A speculative change is judged by whether the search then gets below its pre-change best
+
+**Overturned** · 2026-11-17 · premise
+
+- **Statement.** A change to the knot pattern made without proof, such as merging two distinctions at their current relative
+  value, is good if the fast search, after it, gets below the least violated count it was stuck at before it within a few epochs.
+  Otherwise the change is undone.
+- **Why.** Adopted by `SPEC-MERGE-20261117-001` at its freeze as the undo rule for speculative merges: it costs nothing to read,
+  and it is the natural "keep what helps" test of a mutation. The alternatives were a per-merge check (a bounded probe or a short
+  local search on the merged knots) and no undo.
+- **Rests on it.** The speculative arms of `SPEC-MERGE-20261117-001`.
+- **Challenge.** It was challenged in the same study by logging every round against the planted state. On `local` w10 the rule
+  undid 85% of the rounds whose merges were all right and kept 9% of those with a wrong merge (AE). On `rand` 2.1, it kept 85
+  wrong rounds and 10% of runs stalled. The search's progress over a few epochs is no test of a merge. The lesson: a mutation
+  needs a check of its own, not the search's short-term progress.
+- **History.**
+  - 2026-11-17 · Overturned by `SPEC-MERGE-20261117-001`'s round log, in the study that adopted it.
+  - 2026-11-17 · Adopted by `SPEC-MERGE-20261117-001`.

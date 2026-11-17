@@ -10,6 +10,11 @@
   test     S3: the frozen arms on 50 test instances per cell, 5 runs each; CDCL on all 50 of the local and embedded
            cells and the first 20 of the others
   stress   S4: local w10 and rand at n = 12800, 20 instances, NOV, PS, G, ST, GO at the n = 3200 settings
+  pht      post hoc, not frozen (decided after the policy tuning gave G the laziest setting and before the test was
+           complete): the 8 static settings scored on local w10 at n = 800 as GO was (STO)
+  ph       post hoc, not frozen: RNDO (GO's policy with random targets: the attention counts at an eager policy) in every
+           test cell, the test's instances and initial states. STO came out the same setting as ST, so its runs would
+           repeat ST's and are not made
 
 Params: stage; retuned (S1's choice, retuned.json) for policy/test/stress; policies (S2's choice, policies.json) for
 test/stress.
@@ -91,6 +96,15 @@ def cases():
             for i in range(8):
                 for j, prm in enumerate(PS_EXT):
                     yield f"retune2|{name}|PS|{j}|{i}", {"cell": name, "algo": "probsat_poly", "prm": prm, "i": i}
+    elif st == "pht":
+        for i in range(8):
+            yield f"pht|local-w10-800|base|{i}", {"cell": "local-w10-800", "k": -1, "i": i}
+            for k in range(len(STATIC_GRID)):
+                yield f"pht|local-w10-800|st{k}|{i}", {"cell": "local-w10-800", "k": k, "static": True, "i": i}
+    elif st == "ph":
+        for name, *_ in CELLS:
+            for i in range(50):
+                yield f"ph|{name}|RNDO|{i}", {"cell": name, "arm": "RNDO", "i": i}
     elif st == "policy":
         for name in POLICY_PATTERNS:
             for i in range(8):
@@ -144,14 +158,14 @@ def run(case_id, payload):
         out = [_slim(S.run_fast(inst, payload["algo"], tuple(payload["prm"]), S.run_seed("retune", cell, seed, r),
                                 TUNE_CAP)) for r in range(3)]
         return {"cell": cell, "algo": payload["algo"], "prm": payload["prm"], "seed": seed, "runs": out}
-    if st == "policy":
+    if st in ("policy", "pht"):
         seed = (SEED_ORACLE if POLICY_PATTERNS[cell] == "GO" else SEED_POLICY) + i
         inst, cap = _inst(cell, seed)
         nov = tuple(_load("retuned")[cell]["NOV"])
         k = payload["k"]
         out = []
         for r in range(3):
-            rs = S.run_seed("policy", cell, seed, r)
+            rs = S.run_seed("policy", cell, seed, r)  # pht reuses the policy stage's seeds, so its base runs repeat S2's
             if k < 0:
                 out.append(_slim(S.run_fast(inst, "novelty_plus", nov, rs, cap)))
             elif payload.get("static"):
@@ -159,9 +173,9 @@ def run(case_id, payload):
             else:
                 out.append(_slim(S.run_slow(inst, "novelty_plus", nov, rs, cap, POLICY_GRID[k])))
         return {"cell": cell, "k": k, "static": bool(payload.get("static")), "seed": seed, "runs": out}
-    if st in ("test", "stress"):
+    if st in ("test", "stress", "ph"):
         arm = payload["arm"]
-        if st == "test":
+        if st in ("test", "ph"):
             seed = SEED_TEST + i
             src = cell
         else:
@@ -176,8 +190,12 @@ def run(case_id, payload):
         pols = _load("policies")
         out = []
         for r in range(5):
-            rs = S.run_seed(st, cell, seed, r)
-            if arm == "NOV":
+            rs = S.run_seed("test" if st == "ph" else st, cell, seed, r)
+            if arm == "RNDO":
+                res = S.run_slow(inst, "novelty_plus", nov, rs, cap, dict(pols["GO"], mode=1))
+            elif arm == "STO":
+                res = S.run_slow(inst, "novelty_plus", nov, rs, cap, _load("posthoc_policies")["STO"], static=True)
+            elif arm == "NOV":
                 res = S.run_fast(inst, "novelty_plus", nov, rs, cap)
             elif arm == "PS":
                 res = S.run_fast(inst, "probsat_poly", ps, rs, cap)

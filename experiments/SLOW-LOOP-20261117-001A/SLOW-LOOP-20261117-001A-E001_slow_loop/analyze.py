@@ -124,10 +124,13 @@ def analyze(data, cells):
                 row["R_W"] = boot(fw, a, ["NOV", "PS"], idx, rng)
                 row["R_CPU"] = boot(fc, a, ["NOV", "PS"], idx, rng)
                 row["R_flips"] = boot(ff, a, ["NOV", "PS"], idx, rng)
+                row["R_W_vs_NOV"] = boot(fw, a, ["NOV"], idx, rng)
                 row["verdict"] = verdict(row["R_W"], row["R_CPU"])
-                if cens > 0.05:
-                    row["verdict"] += " (bound: over 5% censored)"
-                for key in ("ties", "braids", "n_final", "rebuilds", "targets"):
+                b = bound(cens, max(cens_of["NOV"], cens_of["PS"]))
+                if b:
+                    row["verdict"] += f" (R is {b})"
+                    row["bound"] = b
+                for key in ("ties", "shadows", "n_final", "rebuilds", "targets", "cpu_fast", "cpu_slow", "cpu_rebuild"):
                     row[key] = float(np.median([np.median([r.get(key, 0) for r in arms[a][i]["runs"]]) for i in idx]))
                 row["slow_share"] = float(np.median([np.median([(r["work_slow"] + r["work_rebuild"]) / r["work"]
                                                                 for r in arms[a][i]["runs"]]) for i in idx]))
@@ -152,8 +155,12 @@ def analyze(data, cells):
         cell["ratios"] = ratios
         if "CDCL" in arms:
             cd = arms["CDCL"]
-            solved = [i for i, r in cd.items() if r["cdcl"]["result"] is True]
+            # the 60 s interrupt did not stop CaDiCaL (pysat), so every run went to its answer; "within 60 s" is read from
+            # the wall time
+            solved = [i for i, r in cd.items() if r["cdcl"]["result"] is True and r["cdcl"]["wall"] <= 60.0]
             cell["CDCL"] = {"instances": len(cd), "solved_60s": len(solved),
+                            "solved_any_time": sum(r["cdcl"]["result"] is True for r in cd.values()),
+                            "max_wall": float(max(r["cdcl"]["wall"] for r in cd.values())),
                             "median_cpu": float(np.median([r["cdcl"]["cpu"] for r in cd.values()])),
                             "median_propagations": float(np.median([r["cdcl"].get("propagations", -1)
                                                                     for r in cd.values()])),

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 429 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 430 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 429 epics with their closures
+- [Epics](#epics): all 430 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1679,4 +1679,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-17 | Does a slow loop that sets its own eagerness from how fast its moves shrink the knot pattern keep the eager loop's gain on locally structured patterns and lose its cost elsewhere, on fresh instances and new meeting patterns? (`EARN-BUDGET-20261117-001`) | — | [folder](research/EARN-BUDGET-20261117-001/) |
 | 2026-11-17 | Does the navigating agent learned memory carry over to a meeting pattern it never trained on, when its reads are normalized by how many knots meet at a distinction and count no steps? (`MEET-TRANSFER-20261117-001`) | — | [folder](research/MEET-TRANSFER-20261117-001/) |
 | 2026-11-17 | Does a slow loop that mutates the knot structure, guided by where a fast search dwells, cut the charged work of solving unseen knot patterns, and does a mutation policy learned on some meeting patterns carry to others? (`SLOW-LOOP-20261117-001`) | — | [folder](research/SLOW-LOOP-20261117-001/) |
+| 2026-11-17 | Do speculative merges chosen from a fast search's own co-flip evidence, undone when the search stalls, cut the charged work of solving planted knot patterns where provable moves find nothing? (`SPEC-MERGE-20261117-001`) | — | [folder](research/SPEC-MERGE-20261117-001/) |
 

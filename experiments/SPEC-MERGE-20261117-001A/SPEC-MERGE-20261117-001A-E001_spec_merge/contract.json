@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "SPEC-MERGE-20261117-001A-E001",
+  "ticket": "SPEC-MERGE-20261117-001A",
+  "kind": "experiment",
+  "branch": "training",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "question": "Does the fast search's co-flip evidence (pairs whose relative value stays fixed while both flip) pick provably tied and planted-agreeing pairs better than random co-knotted pairs (gate D), and do speculative merges of such pairs, made when the search is stuck and undone when they do not help, cut the charged work of solving planted not-all-equal patterns, on random patterns (primary) and a local one (contrast)?",
+  "inputs": "The knot pattern, the fast loop's state and its per-distinction flip counts; never the planted state (read only by the gate and the after-run diagnostics).",
+  "forbidden_inputs": "The hidden planted state inside the loop, any test instance during tuning, any solver output.",
+  "mapping": "Four tuned parameters of the speculative loop (epoch length, stability threshold, round size, patience) chosen from 24 settings on rand 2.1 (A) or local w10 (Aloc) at n = 3200, only if gate D passes on that family; the default A0 always.",
+  "primary_observable": "On rand 2.1 at n = 3200, R_W = the speculative arm's charged work (median over 50 fresh instances of five-run geometric means) / the better of Novelty+ (0.7, 0.01) and re-tuned Novelty+, 99% paired bootstrap; R_CPU beside it; the arm over its random-pair control.",
+  "comparators_or_controls": "Novelty+ (0.7, 0.01) and EARN-BUDGET's re-tuned Novelty+; the same schedules merging random co-knotted pairs (Arand0, Arand, Arandloc); EARN-BUDGET's proof-based eager loop (Gpr).",
+  "resource_budget": "Gate, tuning and test at n = 3200 and 12800, about 2 CPU-hours, at most 4 workers, MemoryMax 16G, shared runner.",
+  "first_executable_signal": "Gates S1-S5: every reported state checked on the original knots (small instances and n = 800 with eager settings), identity with merging off, stability recount, pair-probe soundness by brute force, identity with EARN-BUDGET's engine.",
+  "stop_rule": "Stop at the frozen decision rule; keep every run; if the speculative arm wins on random patterns at 3200 and 12800, stop and message the coordinator before committing any result (publication hold).",
+  "nonclaims": "The moves do not keep the allowed states; planted instances only; no claim about SAT in general, P vs NP, native emergence or self-improving AI.",
+  "preregistration": "research/SPEC-MERGE-20261117-001/preregistration.md"
+}

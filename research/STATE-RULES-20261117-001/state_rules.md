@@ -171,8 +171,8 @@ Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's 
 
 19 of 20 held, and R16 held in part. With classes counted once the top weight goes only to the smallest classes in a tie, so its
 step-by-step class reading (158 of 480 steps inequivalent) is not comparable with R11's and is not scored. Two readings were counted post hoc from the frozen runs, recomputed from the frozen seeds:
-R17's n = 5 split and R19's state counts. They are labelled, and `posthoc.py` gives them. The stress test (the cheapest rule to
-n = 32, five runs, Q5 predicted) is pending; it does not block the read-out.
+R17's n = 5 split and R19's state counts. They are labelled, and `posthoc.py` gives them. The stress test, one size past (the cheapest rule to n = 32, five runs), held: the cube of five orders, Q5, at n = 32 in 5 of
+5 runs, with 12 states (folded in 18 November 2026; 546 s; `stress.json`).
 
 ## What the knot picture explained
 
@@ -211,7 +211,7 @@ Local: the costs, the conservation, the C(n, 3) fills, the cube growth and the c
 - **Knots.** Betweenness knots only, in three roles, up to three per step. Other three-place knots, four-place knots and larger
   steps are untested.
 - **Every old state kept.** Steps that remove old states are out.
-- **Sizes.** Exact counts reach n = 6 to 9, runs reach 10 to 16, and the stress test to 32 is pending.
+- **Sizes.** Exact counts reach n = 6 to 9, runs reach 10 to 16, and the stress test reaches 32 (five runs).
 - **Weightings.** Fewest states, uniform and softmax, by state count alone, or by knot-locality. A rule weighing something else
   (knots per distinction, say) is untested.
 

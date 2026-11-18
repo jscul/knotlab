@@ -42,7 +42,7 @@ so whatever holds the top to a far level must keep adding members as the distanc
 
 | Descriptions (patterns) | Verdict | By |
 | --- | --- | --- |
-| 1,081 (244) | grow | Theorem F (forgetting) |
+| 1,081 (244) | grow (229), or no bond across the ends (15) | Theorem F (forgetting) |
 | 1,260 | bounded | Theorem K (two-orbit bonds) |
 | 14 (6) | grow | Theorem F′ (forgetting on actual values) |
 | 12 (5) | bounded | Theorem K\* (orbit-and-block and stem bonds) |

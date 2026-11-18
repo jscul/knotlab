@@ -63,7 +63,9 @@ own constraint, and the pair projection holds no bond meeting both orbits (the a
 **The census** (`run_census.py`, `census_keep.json`): 786 small-orbit descriptions, every depth tier.
 - The 46 that never forget all have a two-orbit bond at every s and every depth. The 42 direct ones are at 2 or 3. The four others
   are bounded at 4, 4, 5 and 6 from s = 2 or 3 on: 8db5da810c00 at 5, a9a1c941de1a at 4, bace53f8f952 at 4, ca1efb37ad88 at 6.
-- So forgetting decides bounded or growing for all 786, at every depth: 740 grow by Theorem F, 46 are bounded by Theorem K.
+- So forgetting decides bounded or growing for all 786, at every depth: 740 grow by Theorem F, 46 are bounded by Theorem K. *(Narrowed
+  after DECIDE-SMALL-R1: of the 740's 139 patterns, 16 have no bond across the ends at all, so their reach is "none", the census's
+  "no bond" class, and Theorem F holds there vacuously.)*
 
 **A fresh sample** (`run_sample.py`, seed "KEEP-1117"): 1,016 draws until 40 small-orbit draws, alive at every depth, never forget.
 **The mutations** (`run_sample.py mutants`): every one-slot change of one placement of the four.

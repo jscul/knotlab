@@ -35,7 +35,8 @@ whether the 13 mutants of 8db5da810c00 (5 distinct patterns), which pass every c
   semi-decidable.
 - **Theorem G (proved; the advisor's test).** If every long enough composite of steps through blocks is a product, the reach grows
   linearly. This is a finite computation. On the census it holds exactly for the 740 descriptions that forget (139 distinct
-  patterns), which reproves their growth, and for none of the 46 that do not (42 patterns).
+  patterns), which reproves their growth, and for none of the 46 that do not (42 patterns). *(16 of the 139 have no bond across the
+  ends at all, so growth holds there vacuously; narrowed after DECIDE-SMALL-R1.)*
 
 **The 13 remain open.** *(Superseded by `MODE-BOND-20261117-001`: they grow linearly, and the link below never meets the top.)* The
 test fails for them, and the computation shows exactly why:

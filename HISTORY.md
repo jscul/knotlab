@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the completeness check confirmed by its referee; three counts narrowed
+
+- The completeness check (`DECIDE-SMALL-20261117-001`) was confirmed by its referee with fresh code, with no Block. All 627 distinct
+  small-orbit patterns of a fresh sample, 476 of them new, are decided, and so are all 1,167 seen in all. The population is automata
+  of at most three states with one to four placements, under KEEP-REACH's fair-coin weighting
+  ([decision note](research/DECIDE-SMALL-20261117-001/decide_small.md)).
+- Narrowed: 44 of the 452 "grow by forgetting" have no bond across the ends at all, so their reach is "none". Upstream the same holds
+  for 16 of the census's 139 forgetting patterns and 15 of KEEP-REACH's 244.
+- Narrowed: the ground truth fits 167 certified readings, not 145.
+- Narrowed: the summaries now name the sample's scope and weighting.
+
 ## 17 November 2026: the 13 grow, confirmed by the referee; an earlier reading superseded
 
 - The study of the 13 hard mutants (`MODE-BOND-20261117-001`) was confirmed by its referee with fresh SAT code, with no Block. The 13

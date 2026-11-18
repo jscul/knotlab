@@ -34,7 +34,7 @@ distance. Three new results say how far that holds.
   some missing pair is the only state with its values on a free set of addresses.
 
 The fresh sample and the mutations test the converse. Of 2,380 small-orbit descriptions that live at every depth (583 distinct
-patterns), 1,081 forget and grow (244 patterns), and 1,260 never forget and hold a two-orbit bond at every distance, so they are
+patterns), 1,081 forget and grow (244 patterns, 15 of which have no bond across the ends at all), and 1,260 never forget and hold a two-orbit bond at every distance, so they are
 bounded. **39 descriptions (16 patterns) never forget on all values, yet lack a
 two-orbit bond from the top at some distance.** They fall into three kinds:
 

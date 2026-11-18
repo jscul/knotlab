@@ -4,7 +4,7 @@
 reopened the line on 2026-11-17 ("let's see if we can uncover anything here"), and five studies followed:
 `KEEP-REACH-20261117-001`, `CARRIER-20261117-001`, `TWO-ENDS-20261117-001`, `MODE-BOND-20261117-001` and `DECIDE-SMALL-20261117-001`.
 The coordinator wrapped the line up after the last of them. All but `DECIDE-SMALL-20261117-001` are refereed and folded in;
-`DECIDE-SMALL-20261117-001` is with its referee.
+its referee confirmed `DECIDE-SMALL-20261117-001` with fixes (2026-11-18), folded in here.
 
 **Counting.** Counts are of distinct patterns: clause sets at a fixed depth, after CARRIER's referee found that many descriptions give
 the same pattern. Where a count of descriptions is given, it is marked as such.
@@ -42,22 +42,22 @@ Asked in the program's words: when a strand pair's relation never untangles, doe
 
 ## What is computed
 
-- **The census.** The 786 small-orbit descriptions alive at every depth (181 patterns): forgetting decides all of them (139 grow), and
+- **The census.** The 786 small-orbit descriptions alive at every depth (181 patterns): forgetting decides all of them (139 forget: 123 grow, and 16 have no bond across the ends at all), and
   the product test on the top's component agrees with forgetting on every one.
 - **KEEP-REACH's fresh and mutated population.** 2,380 descriptions (583 patterns), all decided:
-  - 244 patterns grow by forgetting;
+  - 229 patterns grow by forgetting, and 15 more pass it with no bond across the ends;
   - 323 are bounded by a two-orbit bond;
   - 6 grow by forgetting on actual values;
   - 5 are bounded by orbit-and-block or stem bonds;
   - 5 grow by the product test on the top's component.
 - **A fresh sample ten times larger** (seed `DECIDE-1117`, KEEP-REACH's fair-coin weighting). 10,160 draws give 627 patterns, 476 of them
   new, and all are decided:
-  - 452 by forgetting;
+  - 408 grow by forgetting, and 44 more pass it with no bond across the ends;
   - 172 by two-orbit bonds;
   - 2 by block or stem bonds;
   - 1 by forgetting on actual values.
 
-  145 certified readings of L₉ on 50 of them fit their verdicts.
+  167 certified readings of L₉ on 50 of them fit their verdicts.
 - **Exact readings.** The pattern of 8db5da810c00-73 reads exactly 6 at s = 5, 6 (depth 11) and exactly 7 at s = 7, 8 (depth 12),
   certified by LRAT. The proved rate is one member per ten levels; the readings suggest one per two.
 - **Growing orbits.** The census's 441 growing-orbit patterns, read through level 3's component at depth 12:
@@ -69,7 +69,8 @@ Asked in the program's words: when a strand pair's relation never untangles, doe
 
 On small orbits the top is held to every depth exactly when a bond between two bounded pieces, one at the top and one at the far
 level, survives at every distance. In every pattern seen, that is a two-orbit bond, an orbit with the far orbit's block, or a stem.
-Otherwise some strand between the ends forgets, and each stretch then costs a member: the reach grows, at least linearly. Two
+Otherwise some strand between the ends forgets, and each stretch then costs a member: the reach grows, at least linearly. Or nothing
+joins the ends at all, and there is no bond (the census's "no bond" class). Two
 corrections shaped this reading:
 - **a dependence can hide** inside two orbits, and a little more of either strand exposes it;
 - **a strand that never forgets can sit beside the top** without touching it.

@@ -3,6 +3,20 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: count balls, confirmed by the referee; two headlines narrowed
+
+- The study of the disagreement count's balls (`COUNT-BALLS-20261118-001`) was confirmed by its referee with fresh code, with no
+  Block: Gołąb's π of the chain grids, the closed form's rates, the chain grid's reduction, and the census class for class all
+  recompute ([decision note](research/COUNT-BALLS-20261118-001/count_balls.md)).
+- Narrowed: "a periodic law's balls are round" holds for the critical weave; under the count, chain grids give smooth outlines that
+  are not round and grown split grids give the taxicab diamond. Under bond distance every periodic law gives a polygon; under the
+  count it depends on the law. The Intuitions guide says so.
+- Narrowed: the ladder and the comb grow alike only from the middle of the line; one start's growth does not read the number of
+  orders, while every start's growth together does on small bases and stops at seven distinctions.
+- Not a block: the weave's outline is an ellipse in every drawing of its repeats (Gołąb's π = π), the circle where the law's
+  symmetries are rotations; the amplitude is 0.6322260823 from its closed form; at four or more knots per chain the sixth decimal
+  of Gołąb's π depends on the polygon used.
+
 ## 18 November 2026: two orders held without memory, confirmed by the referee; what the rule is given narrowed
 
 - The study of a rule that never nests its fills (`NEVER-NEST-20261118-001`) was confirmed by its referee with fresh code, with no

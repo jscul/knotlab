@@ -2664,12 +2664,12 @@ evidence: results and their status come from the records each entry links.
   With the original eight betweenness distinctions attached, two mixed presentations have identical full states on the same 36 distinctions. One permits a complete next round of eleven joins and the other cannot run a complete round. The difference persists through one more common join. [Proof and checks](../research/MIXED-NEXT-JOIN-20261117-001/hidden_eight.md)
   On the aligned three-dimensional continuation with the original eight kept and hidden, anonymous bond distances through five determine all permitted next joins at every complete round. Permuting the three loose distinctions at a growing junction can realize any of their allowed assignments. [Proof and checks](../research/ALIGNED-NEXT-JOIN-20261117-001/aligned_rounds.md)
   Starting with the original eight alone, temporary tests using their own betweenness recover all twelve neighbor pairs from scalar bond distances. Every recovered orientation reaches the first aligned round. Four literal arrangements give identical feedback under fresh parity alone. [Proof and checks](../research/BOOTSTRAP-ALIGNMENT-20261117-001/getting_aligned.md)
-  `COUNT-BALLS-20261118-001` ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md); referee pending) read the
+  `COUNT-BALLS-20261118-001` ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md); refereed) read the
   count's balls. On the six-regular weave the start's class fills a round outline and on chain grids a smooth one just off
   round, where bond distance gives polygons; the outline's growth against the ball reads the meeting pattern's dimension, while
-  the count's own scale reads d/η. The number of orders is not a growth quantity: a ladder of two orders and a comb of one grow
-  identically (proved), and every start's growth read without names merges bases of two and three orders from seven
-  distinctions (computed), while the full table keeps them. So the orders sit in the count's arrangement, which start's row is
+  the count's own scale reads d/η. One start's growth does not read the number of orders: from the middle of its line a ladder of two
+  orders and a comb of one grow identically (proved), and every start's growth taken together, read without names, merges bases
+  of two and three orders from seven distinctions (computed), while the full table keeps them (narrowed after the referee). So the orders sit in the count's arrangement, which start's row is
   which, not in its growth.
 - **History.**
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.

@@ -41,8 +41,11 @@ distinction i of the line, at count 2j with 2 ≤ j ≤ the steps to the nearer 
 - comb: i ± j on the line and the pendants of i ± (j − 1), 4 members.
 
 So every middle start sees the same outlines, 4 at every count from 4 on, in a base with two orders and in one with one; the
-ball's growth is linear in both (outline against ball, exponent 0). The count's growth reads how the distinctions spread, not how
+ball's growth is linear in both (outline against ball, exponent 0). One start's growth reads how the distinctions spread, not how
 the splits cross. (Checked: gate G-ladder-and-comb-layers at m = 10.) ∎
+
+*Scope (after the referee, 18 November 2026):* the comb's pendant starts see one distinction at count 2 and no ladder start does,
+so the multiset of every start's growth tells these two bases apart. The statement is about one start's growth.
 
 ## S3. Parity bases are blank
 
@@ -91,13 +94,14 @@ is the unit ball of m, scaled.
 - **Toward the taxicab diamond.** As l → ∞, A ~ 1/(2t) → ∞ and ∂Q tends, after dividing by ln A, to the square
   max(|q₁|, |q₂|) = 1, so m/ln A tends to |n₁| + |n₂|, and Gołąb's π, continuous in the norm, tends to 4. ∎
 - **Computed from the formula** (not a measurement): largest to smallest rate per unit length 1.003400, 1.068608, 1.141877 at
-  l = 1, 2, 3; Gołąb π 3.141701, 3.182439, 3.297933, 3.418831 (l = 4), 3.589386 (l = 6), 3.687920 (l = 8), 3.790555 (l = 12).
+  l = 1, 2, 3; Gołąb π 3.141701, 3.182439, 3.297933, 3.418831 (l = 4), 3.589386 (l = 6), 3.687920 (l = 8), 3.790555 (l = 12); at l ≥ 4 the sixth decimal depends on the polygon
+  used (the referee: 3.418832 and 3.589388 at 16,000 points).
 
 ## S7. The weave (classical)
 
 The endless six-regular weave under not-all-equal is the triangular Ising antiferromagnet at zero temperature. Its pair
 correlation is C(r) ≈ a r^(−1/2) cos(Q·r), with Q at the corner of the literature's Brillouin zone, so cos(Q·r) = 1 on the start's
-own class and −1/2 on the other two, and a = 2·3^(−1/4)·E₀², E₀ = 2^(1/12) e^(3ζ′(−1)), a = 0.6322260804 (Stephenson 1964, 1970;
+own class and −1/2 on the other two, and a = 2·3^(−1/4)·E₀², E₀ = 2^(1/12) e^(3ζ′(−1)), a = 0.6322260823 (Stephenson 1964, 1970;
 the exponent η = 1/2 from the height mapping, Blöte and Hilhorst 1982, Nienhuis, Hilhorst and Blöte 1984). The amplitude is the
 same along every repeat because the height field's stiffness is isotropic (three-fold symmetry of a quadratic form). Consequently:
 - the raw count's ball below N/2 holds only the start's class, with outline the literature's circle of reach R = (a/u)², u = 1 − 2ρ/N,

@@ -3,7 +3,8 @@
 Epic `COUNT-BALLS-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes backlog B195 (G1, a
 challenge of A39) as the coordinator restated it: take a distinction, collect every distinction within a given disagreement count
 of it, and ask how that ball grows, what its outline looks like, and whether the growth reads how many orders the base has,
-without names or history. Goals G1 and G16; tests A97 and A39. **Referee pending.**
+without names or history. Goals G1 and G16; tests A97 and A39. **Refereed:** report [R1](referee-R1/report.md), confirmed with
+fixes, no Block, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `33de2e4cc` at 06:19:46 UTC. The run went from
@@ -18,19 +19,27 @@ without names or history. Goals G1 and G16; tests A97 and A39. **Referee pending
 ## The answer
 
 **In the owner's terms.**
-- **Read by the disagreement count, a periodic law's balls are round.** On the six-regular weave under not-all-equal, the
-  distinctions within a given count of a start fill a round outline: the reach is the same along every repeat to one part in ten
-  thousand at sixty steps (computed exactly; the classical amplitude of Stephenson). Bond distance gives the same law a hexagon.
-  So the record's verdict that periodic laws make polygons belongs to bond distance, not to periodic laws.
+*Narrowed after the referee (18 November 2026): the first bullet said "a periodic law's balls are round", which holds for one law,
+and the third said the ladder and the comb "grow identically", which holds only from the line's middle starts.*
+
+- **Read by the disagreement count, a periodic law's balls can be round: the critical weave's are.** On the six-regular weave
+  under not-all-equal, the distinctions within a given count of a start fill a round outline: the reach is the same along every
+  repeat to one part in ten thousand at sixty steps (computed exactly; the classical amplitude of Stephenson). Without any drawing,
+  the outline is an ellipse in every linear drawing of the law's repeats (Gołąb's π equals π), and it is the circle of the drawing
+  in which the law's own symmetries act as rotations. Bond distance gives the same law a hexagon. Under bond distance every
+  periodic law gives a polygon (proved); under the count the outline depends on the law: a polygon on split grids (the diamond),
+  smooth and not round on chain grids, round on the critical weave.
 - **How round depends on how near the law is to its critical point.** On chain grids (a not-all-equal knot, or a chain of l of
   them, on each pair of the literature's square grid) the outline is smooth, with no corner and no flat side, and slightly off
-  round: Gołąb's π is 3.1417 with one knot per pair, 3.18 with two, 3.30 with three, and tends to 4, the taxicab diamond, as the
-  chains lengthen (closed form, classical). Grown split grids give the diamond exactly. The weave sits at its critical point and is
+  round: Gołąb's π is 3.1417 with one knot per pair (1.1e-4 above π, so no ellipse in any drawing), 3.18 with two, 3.30 with three,
+  and tends to 4, the taxicab diamond, as the chains lengthen (closed form, classical). Grown split grids give the diamond exactly. The weave sits at its critical point and is
   exactly round there; that the outline rounds off at criticality is classical physics, and here it is the program's count.
 - **The growth reads the dimension, not the number of orders.** How the outline grows against the ball reads the dimension of the
   meeting pattern whatever the count's scale: about ball^(1/2) on the weave and on the chain grid, so two. On the weave the count's
-  own scale reads four instead (two divided by the law's exponent one half). A ladder of two orders and a comb of one order grow
-  identically. And the profile of every start's growth, read without names, tells the number of orders on every base the program's
+  own scale reads four instead (two divided by the law's exponent one half), so on the weave the count orders distinctions by reach
+  but is not a length. One start's growth does not read the number of orders: from the middle of its line, a ladder of two orders
+  and a comb of one grow identically (the comb's other starts grow differently). The profile of every start's growth taken
+  together, read without names, tells the number of orders on every base the program's
   cheapest growth reaches to twelve distinctions and on every base of up to six, but not from seven on: there it merges bases of
   two and three orders. The full table of counts, which also says which start's row is which, keeps the orders.
 - **Taken literally, "states within r disagreements of a state" sees less.** It cannot tell a base from its translate by one of
@@ -45,7 +54,7 @@ without names or history. Goals G1 and G16; tests A97 and A39. **Referee pending
 | Grown split grids and boxes of d orders | 2·L1: (2j)^d/d! | the cross-polytope (in two orders the taxicab diamond, π = 4) | yes on full boxes (k = λ = d), by construction |
 | λ = 2 bases, NN's grids included | 2·L1 in the two orders | taxicab diamond clipped to the grown shape | the count is a two-way ruler, by the definition of λ |
 | Cube Q_d | C(d, j) at count 2j | — | the nearest count is d |
-| Ladder (2 orders) against comb (1 order) | 4 per count at every middle start | — | **no**: same growth, different orders (proved) |
+| Ladder (2 orders) against comb (1 order) | 4 per count from the line's middle starts | — | **no** from one start: same growth, different orders (proved); every start together tells them apart |
 | Grown split bases, every start's growth profile (no names) | — | — | yes to n = 12 (cheapest) and n = 6 (one split per step); **no** from n = 7 (3 of 1,651 groups, 227 of 58,985 at n = 8) |
 | Parity bases | flat at N/2 | — | nothing (known) |
 
@@ -61,8 +70,8 @@ the result; the counts come from the allowed states.*
 Exact pair counts on the endless weave come from honeycomb dimers (each knot has exactly one co-knotted pair with equal values),
 with Kenyon's kernel evaluated exactly (rational plus √3/π) and 40-digit determinants; an independent Toeplitz formula for the
 row agrees to 1e-61. Read out:
-- **Amplitude.** √r·C along the row tends to a = 0.6322260 (fit 0.6322260 against the literature's 0.6322260804, Stephenson 1970,
-  as the advisor derived it).
+- **Amplitude.** √r·C along the row tends to a = 0.6322260 (fit 0.6322260 against 0.6322260823 from Stephenson's closed form; the
+  pre-registration's 0.6322260804 was the advisor's arithmetic, see Referee).
 - **Even.** Along the repeats (4,1), (5,2) and (1,1) of the start's class, √r·C divided by the row's at the same separation is
   1.000023, 1.000050 and 1.000077 at r = 59.6, 56.2 and 60.6, down from 1.0001 to 1.0003 at half those separations, and ordered as
   the advisor's symmetry argument predicted. The hexagon of steps apart would give 0.931.
@@ -94,8 +103,11 @@ high temperature. Exact pair counts by the Kac–Ward resolvent, two independent
 - **Proved.** On split bases the count is twice the number of separating splits, so on full boxes it is twice the L1 distance
   and the growth exponent is the number of orders; on any base with λ = 2 it is twice the L1 distance of the two orders (this
   answers `NEVER-NEST-20261118-001#4`: NN's grids carry a two-way ruler by construction). But the ladder (k = λ = 2) and the comb
-  (k = 1, λ = 5 at m = 10) have outlines of 4 at every count from every middle start: the growth reads how the distinctions
-  spread, not how the splits cross.
+  (k = 1, λ = 5 at m = 10) have outlines of 4 at every count from every middle start: one start's growth reads how the distinctions
+  spread, not how the splits cross. (The comb's pendant starts see one distinction at count 2, so every start's growth taken
+  together tells these two apart; the census below is where that profile fails.) The full table determines these bases because a
+  betweenness knot holds exactly when its counts add (`DISTANCE-ORDER-20261117-001`, statement 1); for split systems in general it
+  need not.
 - **Computed census** (frozen, `COUNT-BALLS-B1`). Every base the cheapest growth reaches from the line of three to n = 12, and
   every base reachable by steps adding at most one split to n = 8 (4, 12, 101, 1,656 and 59,675 classes at n = 4 to 8):
 
@@ -153,8 +165,8 @@ distinctions.
 ## What it means for A97 and A39
 
 - **A97** (distance is the only form of information). On not-all-equal bases the count carries the information, and its balls
-  have the shape one would want of distance: round on the critical weave and smooth on chain grids, with nothing hidden and nothing
-  aperiodic. Their growth reads the meeting pattern's dimension through the outline. It does not read the number of orders, and
+  can have the shape one would want of distance: round on the critical weave and smooth on chain grids, with nothing hidden and
+  nothing aperiodic (and the diamond on split grids). Their growth reads the meeting pattern's dimension through the outline. It does not read the number of orders, and
   its profile loses them from seven distinctions, while the full table keeps them: so the orders are information in the count's
   arrangement (which start's growth sits next to which), not in its growth. A97 stays under challenge.
 - **A39** (space is spaced by bond distance). The outline depends on which reading spaces the law. Bond distance gives the weave
@@ -172,10 +184,10 @@ Wortis 1981; Avron, van Beijeren, Schulman and Zia 1982; Holzer 1990; Akutsu and
 analytic strictly convex rate (Campanino, Ioffe and Velenik 2003); emergent rotation invariance at a critical point; lattice
 dimension (Eppstein 2005; trees, Ovchinnikov); Gołąb's π.
 
-What this adds: the reading. The program's own count, the one that carries every not-all-equal base, gives periodic laws round
-or smooth outlines where its bond distance gives polygons, so the record's "no periodic law has a round circle" is a statement
-about bond distance; the outline's growth against the ball reads the dimension without the count's scale (four on the weave by
-the scale, two by the outline); the number of orders is not a growth quantity (ladder against comb, proved) and the growth profile
+What this adds: the reading. The program's own count, the one that carries every not-all-equal base, can give a periodic law a
+round or smooth outline where its bond distance gives a polygon, so the record's "no periodic law has a round circle" is a
+statement about bond distance; the outline's growth against the ball reads the dimension without the count's scale (four on the weave by
+the scale, two by the outline); one start's growth does not read the number of orders (ladder against comb, proved) and the growth profile
 loses it from seven distinctions (computed); the state-side reading is blind to translation.
 
 ## Limitations
@@ -214,16 +226,34 @@ Not consulted after the read-out.
 
 ## Referee
 
-Pending. To be run by the coordinator's background referee thread.
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code and no Codex:
+confirmed with fixes, no Block. It recomputed Gołąb's π at l = 1 to 12, the axis rate (Onsager's 2(K* − K)) and the ratio 1.003400,
+the chain grid's reduction on 3 × 3 to 1e-16, the census class for class (cheapest to 12, one-split to 8; reading a 58,985 groups,
+672 merged, 227 differing in k, 234 in λ; reading c), the first merge at seven, the star and its translate, the ladder and the comb,
+and the weave's short range to about 1e-3 from its own transfer. Folded in the same day, each item logged in `docs/CORRECTIONS.md`
+and knotlab's `HISTORY.md`:
+1. **Narrowing.** "A periodic law's balls are round" holds for one law, the critical weave; split grids give the diamond and chain
+   grids are not round. Now "can be round: the critical weave's are", with "under bond distance every periodic law gives a polygon;
+   under the count it depends on the law". The Intuitions guide sentence is changed to match.
+2. **Narrowing.** "The ladder and the comb grow identically" holds from the line's middle starts. Now "one start's growth does not
+   read the orders"; every start's growth together does on small bases and stops at seven.
+3. **Not a block.** "Round" needs no drawing: on the weave the outline is an ellipse in every linear drawing of the repeats
+   (Gołąb's π is π), the circle of the drawing in which the law's symmetries are rotations; a chain grid's outline is no ellipse in
+   any drawing (π_G − π = 1.1e-4 at l = 1).
+4. **Not a block.** The amplitude's last digits: 0.6322260823 from the closed form, not "the literature's 0.6322260804" (the
+   advisor's arithmetic). W4 is unaffected.
+5. **Not a block.** At l ≥ 4 the sixth decimal of Gołąb's π depends on the polygon (3.418832 and 3.589388 at 16,000 points).
+6. **Not a block.** "The full table determines the base" cites `DISTANCE-ORDER-20261117-001`, statement 1; it holds for betweenness
+   bases, not for split systems in general.
 
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: count balls, outlines and orders | **Status:** Successful (referee pending) | Round on the weave (11/11 weave predictions held), smooth and nearly round on chain grids with a closed form, the diamond on split grids; growth reads the dimension, not the orders; profile loses orders from n = 7; 14 of 20 held |
+| This attempt: count balls, outlines and orders | **Status:** Successful (refereed, confirmed with fixes) | Round on the critical weave (11/11 weave predictions held), smooth and nearly round on chain grids with a closed form, the diamond on split grids; growth reads the dimension, not the orders; profile loses orders from n = 7; 14 of 20 held |
 | Local direction: the count as the program's ruler | Promising | It carries the information, gives smooth outlines and reads dimension through the outline; what it lacks is the orders, held only in the arrangement of its rows |
 | Broader exploration: roundness from logic | Known alternatives | Rotation invariance at criticality and Wulff shapes are classical; the program's step is the reading under its own count |
-| Long-term goal: G1 and G16 | G1 capability gained; G16 obstruction learned | G1: round outlines from a periodic local law, read from its states. G16: the number of orders is not a growth quantity of the count |
+| Long-term goal: G1 and G16 | G1 capability gained; G16 obstruction learned | G1: a round outline from a periodic local law (the critical weave), read from its states. G16: one start's growth does not read the number of orders |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 
@@ -235,10 +265,12 @@ Pending. To be run by the coordinator's background referee thread.
 | 4 | A distance that reads both parity and not-all-equal bases (bond distance is flat on betweenness grids, the count flat on parity): the least set's size plus its correlation, say | 3/3 | 1/3 | define one candidate and test it on the cubic parity system and a split grid → stop at one that reads both or an obstruction | Sub-goal B200 |
 | 5 | The chain grid at l = 2, 3 in high precision, to settle C1 | 1/3 | 3/3 | the 1D residue form of the Kac–Ward resolvent in 50 digits → stop at the rate to 1e-4 | Alternative |
 
-**Corrections:** none. No published claim was found false: the record's polygon verdict was stated for bond distance, and the
+**Corrections:** none at the close; after the referee, two Narrowings and four Not a block entries, logged. No earlier
+published claim was found false: the record's polygon verdict was stated for bond distance, and the
 Intuitions guide says so; this study adds that the count gives the same periodic laws smooth outlines.
 
-**Goals:** G1 checkpoint (capability gained: round outlines from a periodic local law under the information-carrying count) and
+**Goals:** G1 checkpoint (capability gained: a round outline from a periodic local law, the critical weave, under the
+information-carrying count) and
 G16 checkpoint (obstruction learned: the number of orders is not read by the count's growth, and its unnamed growth profile loses it
 from seven distinctions); no goal changed.
 
@@ -246,6 +278,8 @@ from seven distinctions); no goal changed.
 (the maximal-entropy weighting on endless bases).
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its first sentence and the ladder-and-comb sentence were narrowed after the referee (see Referee).*
 
 **Outcome:** read by the disagreement count, a periodic law's balls come out round. On the six-regular weave, the start's own
 class fills a round outline. Measured along every repeat, it reaches equally far to one part in ten thousand at sixty steps. Bond

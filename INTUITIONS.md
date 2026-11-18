@@ -496,7 +496,9 @@ law gives smooth outlines: on the six-regular weave under not-all-equal the
 distinctions of the start's own class within a given count fill a round
 outline, and chain grids give outlines just off round
 ([COUNT-BALLS-20261118-001](research/COUNT-BALLS-20261118-001/count_balls.md),
-referee pending). The polygons belong to bond distance.
+refereed). Under bond distance every periodic law gives a polygon; under the
+count it depends on the law: the diamond on split grids, smooth on chain grids,
+round on the critical weave.
 
 **Every bond is finite.** A meeting pattern can run on forever, but each bond
 in it joins finitely many distinctions. No system of clauses binds infinitely

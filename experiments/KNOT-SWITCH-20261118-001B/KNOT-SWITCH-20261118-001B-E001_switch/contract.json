@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "experiment_id": "KNOT-SWITCH-20261118-001B-E001",
+ "ticket": "KNOT-SWITCH-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "What state of the knots does SEED's 'no two splits cross' read, along knot-local growth from bracketings, and is SEED with knot-local moves strong?",
+ "definitions": {
+  "knot complex": "distinctions, co-knotted pairs, knots as triples; GF(2) homology",
+  "filled knot": "four distinctions carrying four knots, each the middle of exactly one",
+  "strong": "PICK-TWO's tiers"
+ },
+ "public_inputs": {
+  "code": "knotlib.py (sha256 f1ac42407cb6f0e4e6f07445ee81f5034d0d2b2c8a8cc622290c4ffb4203de2b), run.py (sha256 40da20acc1b30eb2eac27c956f0c6d4ec922b6633304265db6fb5e1bf594e6fd), checks.py (sha256 08a2505aee239b9012d8ba19cd14c65e25e578dc8080478c5b0ccd32253d7199); experiments/PICK-TWO-20261118-001B/PICK-TWO-20261118-001B-E001_pick/picklib.py (sha256 16948493f658259c97a096fbe7b3c3fe026b3d1c6822c24483e2abf669440172); experiments/NEVER-NEST-20261118-001B/NEVER-NEST-20261118-001B-E001_nest/nnlib.py (sha256 91ad735e50d81a6f40834fbdfa9096077477cd076f788c48e7a91a2c2eea967c); experiments/MEET-ORDERS-20261118-001B/MEET-ORDERS-20261118-001B-E001_census/melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4)",
+  "run": ".venv/bin/python -B run.py --part S1 --procs 12, then --merge"
+ },
+ "forbidden_inputs": [
+  "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions Q1-Q4 and the decision rules of research/KNOT-SWITCH-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "Saturated line presentations (gate check 6): b2 > 0 with nothing crossing, no filled knot.",
+ "predictions": {
+  "Q1": "W3 at every step of every run",
+  "Q2": "all-four-triples-knotted (without middles) agrees with a crossing at every step of these runs",
+  "Q3": "SEEDK strong at every start size",
+  "Q4": "b1 > 0 by the end in >= half the KF3 runs"
+ },
+ "decision_rules": {
+  "W3 holds": "the four readings agree at every step of every run",
+  "SEEDK strong": "PICK-TWO tiers per start size",
+  "each prediction": "holds or fails as stated"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "About 30 to 60 minutes on 12 processes.",
+ "amendments": []
+}

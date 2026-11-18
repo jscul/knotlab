@@ -28,5 +28,13 @@
   "each prediction": "holds or fails as stated in the pre-registration"
  },
  "stop_rule": "One run; referee hand-off; report.",
- "runtime": "Expected under thirty minutes."
+ "runtime": "Expected under thirty minutes.",
+ "amendments": [
+  {
+   "at": "2026-11-18T02:45Z",
+   "before_any_read_out": "of L2 (its summary line was not read; L1 finished and is unaffected)",
+   "change": "L2 finished its 200 runs but failed when writing its output: a dictionary keyed by tuples cannot be written as JSON, so part_L2.json is truncated. run.py now writes those keys as strings; L2 is rerun with the same seeds (the runs are deterministic). No rule, start, reading, prediction or decision rule changed.",
+   "run_sha256": "5a9599b4523de7b6178097c13c6d514a357192db4b913629b70f31de89a93dfc"
+  }
+ ]
 }

@@ -61,7 +61,7 @@ def l2():
             if x.get("full_grid"):
                 fills_at_full[x["n"]] += 1
     res = {"summary": out, "full_grid_counts_by_n": dict(sorted(fills_at_full.items())),
-           "class_splits_at_30": dict(collections.Counter(tuple(tr[-1].get("class_splits", [])) for tr in traces)),
+           "class_splits_at_30": {str(k): v for k, v in collections.Counter(tuple(tr[-1].get("class_splits", [])) for tr in traces).items()},
            "every_run_lam2_k2": all(x["lam"] == 2 and x["k"] == "2" for tr in traces for x in tr if "lam" in x and x["n"] >= 4)}
     print("L2", f"{time.time() - t:.0f}s", {n: (v["kinds"], v["full_grid"], v["stalled"]) for n, v in out.items()}, res["every_run_lam2_k2"], flush=True)
     return res

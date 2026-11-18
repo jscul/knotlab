@@ -2738,7 +2738,9 @@ evidence: results and their status come from the records each entry links.
   referee's Block on the general reading), and every unbonded pair is two lone distinctions (each in one knot) of opposite classes
   facing each other; the lone double meeting is the smallest case. Bond distance is at least steps apart + 1 there (sketched through
   the height function, checked) and equal to it on all but 64 bonded pairs.
+  A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
 - **History.**
+  - 2026-11-18 · `ONE-PROBE-ALIGNMENT-20261118-001` proved a limit to guaranteed serial alignment with one live betweenness test.
   - 2026-11-18 · `DOUBLE-MEET-20261118-001`: in the weave double meetings are harmless; failures only through lone pairs of opposite classes facing each other, unbonded or (from twelve knots) bonded too far; status unchanged.
   - 2026-11-18 · `NAE-METRIC-20261118-001`: under not-all-equal bond distance is a true distance exactly when it is one in every block; trees of knots and rings proved; status unchanged.
   - 2026-11-18 · `BOND-METRIC-20261118-001`: bond distance is a metric on every base whose knots compose, and on every base of copies of one three-place law exactly for parity (scoped to laws after its referee); status unchanged.

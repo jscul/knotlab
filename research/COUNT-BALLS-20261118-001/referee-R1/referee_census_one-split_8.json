@@ -1,0 +1,325 @@
+{
+ "population": "one-split",
+ "levels": [
+  {
+   "classes": 1,
+   "k_lam": {
+    "1,1": 1
+   },
+   "a": {
+    "groups": 1,
+    "multi": 0,
+    "fail_k": 0,
+    "fail_lam": 0,
+    "example": null
+   },
+   "c": {
+    "groups": 1,
+    "multi": 0,
+    "fail_k": 0,
+    "fail_lam": 0,
+    "example": null
+   },
+   "n": 3
+  },
+  {
+   "classes": 4,
+   "k_lam": {
+    "1,1": 1,
+    "1,2": 1,
+    "2,2": 2
+   },
+   "a": {
+    "groups": 4,
+    "multi": 0,
+    "fail_k": 0,
+    "fail_lam": 0,
+    "example": null
+   },
+   "c": {
+    "groups": 3,
+    "multi": 1,
+    "fail_k": 1,
+    "fail_lam": 0,
+    "example": [
+     {
+      "splits": [
+       "c|abd",
+       "bc|ad",
+       "cd|ab"
+      ],
+      "k": 2,
+      "lam": 2,
+      "states": 8
+     },
+     {
+      "splits": [
+       "c|abd",
+       "d|abc",
+       "bcd|a"
+      ],
+      "k": 1,
+      "lam": 2,
+      "states": 8
+     }
+    ]
+   },
+   "n": 4
+  },
+  {
+   "classes": 12,
+   "k_lam": {
+    "1,1": 1,
+    "1,2": 2,
+    "2,2": 8,
+    "3,3": 1
+   },
+   "a": {
+    "groups": 12,
+    "multi": 0,
+    "fail_k": 0,
+    "fail_lam": 0,
+    "example": null
+   },
+   "c": {
+    "groups": 5,
+    "multi": 4,
+    "fail_k": 2,
+    "fail_lam": 1,
+    "example": [
+     {
+      "splits": [
+       "c|abde",
+       "cd|abe",
+       "ce|abd",
+       "bcde|a"
+      ],
+      "k": 2,
+      "lam": 2,
+      "states": 10
+     },
+     {
+      "splits": [
+       "cd|abe",
+       "bcd|ae",
+       "e|abcd",
+       "ce|abd"
+      ],
+      "k": 2,
+      "lam": 2,
+      "states": 10
+     }
+    ]
+   },
+   "n": 5
+  },
+  {
+   "classes": 101,
+   "k_lam": {
+    "1,1": 1,
+    "1,2": 4,
+    "2,2": 63,
+    "3,3": 33
+   },
+   "a": {
+    "groups": 101,
+    "multi": 0,
+    "fail_k": 0,
+    "fail_lam": 0,
+    "example": null
+   },
+   "c": {
+    "groups": 27,
+    "multi": 24,
+    "fail_k": 18,
+    "fail_lam": 16,
+    "example": [
+     {
+      "splits": [
+       "bcde|af",
+       "cf|abde",
+       "cdf|abe",
+       "cef|abd"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 10
+     },
+     {
+      "splits": [
+       "bcd|aef",
+       "e|abcdf",
+       "ce|abdf",
+       "cdf|abe"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 10
+     }
+    ]
+   },
+   "n": 6
+  },
+  {
+   "classes": 1656,
+   "k_lam": {
+    "1,1": 1,
+    "1,2": 7,
+    "2,2": 528,
+    "2,3": 38,
+    "3,3": 980,
+    "4,4": 102
+   },
+   "a": {
+    "groups": 1651,
+    "multi": 5,
+    "fail_k": 3,
+    "fail_lam": 3,
+    "example": [
+     {
+      "splits": [
+       "c|abdefg",
+       "cd|abefg",
+       "cef|abdg",
+       "cdg|abef",
+       "cdfg|abe",
+       "bcdefg|a"
+      ],
+      "k": 2,
+      "lam": 2,
+      "states": 14
+     },
+     {
+      "splits": [
+       "f|abcdeg",
+       "bcdef|ag",
+       "cfg|abde",
+       "cdfg|abe",
+       "cefg|abd",
+       "bcdefg|a"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 14
+     }
+    ]
+   },
+   "c": {
+    "groups": 283,
+    "multi": 280,
+    "fail_k": 249,
+    "fail_lam": 243,
+    "example": [
+     {
+      "splits": [
+       "cf|abdeg",
+       "cdf|abeg",
+       "bcdeg|af",
+       "cdfg|abe",
+       "cefg|abd"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 12
+     },
+     {
+      "splits": [
+       "c|abdefg",
+       "bcdef|ag",
+       "cg|abdef",
+       "cdfg|abe",
+       "cefg|abd"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 12
+     }
+    ]
+   },
+   "n": 7
+  },
+  {
+   "classes": 59675,
+   "k_lam": {
+    "1,1": 1,
+    "1,2": 12,
+    "2,2": 5519,
+    "2,3": 1215,
+    "3,3": 36847,
+    "3,4": 39,
+    "4,4": 15456,
+    "5,5": 583,
+    "6,6": 3
+   },
+   "a": {
+    "groups": 58985,
+    "multi": 672,
+    "fail_k": 227,
+    "fail_lam": 234,
+    "example": [
+     {
+      "splits": [
+       "cf|abdegh",
+       "bcdeg|afh",
+       "cdfg|abeh",
+       "cefg|abdh",
+       "cdfh|abeg",
+       "bcdegh|af"
+      ],
+      "k": 4,
+      "lam": 4,
+      "states": 14
+     },
+     {
+      "splits": [
+       "bcde|afgh",
+       "cf|abdegh",
+       "cdf|abegh",
+       "cefg|abdh",
+       "cdfh|abeg",
+       "bcdegh|af"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 14
+     }
+    ]
+   },
+   "c": {
+    "groups": 4327,
+    "multi": 4322,
+    "fail_k": 4155,
+    "fail_lam": 4123,
+    "example": [
+     {
+      "splits": [
+       "cefg|abdh",
+       "cfh|abdeg",
+       "cdfh|abeg",
+       "bcdegh|af",
+       "cdfgh|abe",
+       "cefgh|abd"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 14
+     },
+     {
+      "splits": [
+       "cf|abdegh",
+       "cdf|abegh",
+       "ceg|abdfh",
+       "ceh|abdfg",
+       "bcdegh|af",
+       "bcdefgh|a"
+      ],
+      "k": 3,
+      "lam": 3,
+      "states": 14
+     }
+    ]
+   },
+   "n": 8
+  }
+ ]
+}

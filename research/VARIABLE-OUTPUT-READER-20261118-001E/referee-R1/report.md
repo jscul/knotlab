@@ -83,7 +83,9 @@ across every reachable realization of that table, not across tables.
 - **The legal-triple counts per row match the study's:** 22, 95, 244 and 52.
 - Every presentation at widths 15 to 19 has its own table class, so no isometry between different presentations exists there.
 - All 882,404 table automorphisms keep the legal triples.
-- **Width 20 was not rerun.** There, by 001D, distinct presentations can share a table (24 sources), all with empty menus.
+- **Width 20 was not rerun.** There, by 001D, one presentation's table can admit two labelled parity codes (24 sources), all with
+  empty menus. *Corrected 18 November: an earlier version of this line said that distinct presentations share a table there. 001F's
+  width-20 control finds no two distinct arrangement types with a common table.*
 - **So the bound is exhaustive computation plus a short argument, and the referee confirms its base independently through width 19.**
 
 ## 4. The higher-arity claim (question 4)

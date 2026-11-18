@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 450 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 451 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 450 epics with their closures
+- [Epics](#epics): all 451 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1685,6 +1685,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-17 | Which distance carries a base's information, and which gives an order with nothing skipped (`DISTANCE-ORDER-20261117-001`) | [closure](proofs/DISTANCE-ORDER-20261117-001Z/DISTANCE-ORDER-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/DISTANCE-ORDER-20261117-001/) |
 | 2026-11-17 | Does a slow loop that sets its own eagerness from how fast its moves shrink the knot pattern keep the eager loop's gain on locally structured patterns and lose its cost elsewhere, on fresh instances and new meeting patterns? (`EARN-BUDGET-20261117-001`) | — | [folder](research/EARN-BUDGET-20261117-001/) |
 | 2026-11-17 | What the states retain after erasing the knots at seven or eight distinctions (`ERASE-SEPARATELY-20261117-001`) | — | [folder](research/ERASE-SEPARATELY-20261117-001/) |
+| 2026-11-17 | Can the three new distinctions alone carry the trace of the erased knots? (`FRESH-THREE-20261117-001`) | — | [folder](research/FRESH-THREE-20261117-001/) |
 | 2026-11-17 | Growing the two-way grid with knots, one at a time (`GRID-GROW-20261117-001`) | [closure](proofs/GRID-GROW-20261117-001Z/GRID-GROW-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/GRID-GROW-20261117-001/) |
 | 2026-11-17 | Does a relation that never forgets keep the reach bounded? (`KEEP-REACH-20261117-001`) | — | [folder](research/KEEP-REACH-20261117-001/) |
 | 2026-11-17 | A cap on knots per distinction, and what matched starts remember (`KNOT-CAP-20261117-001`) | — | [folder](research/KNOT-CAP-20261117-001/) |

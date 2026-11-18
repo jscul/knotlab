@@ -1,0 +1,1035 @@
+{
+  "by_start": {
+    "fan6": {
+      "probability_sum": "1",
+      "projection_probabilities": {
+        "6": "342161151354242813/555370467200287200",
+        "8": "213209315846044387/555370467200287200"
+      },
+      "stalled_probability": "0"
+    },
+    "nonfan6": {
+      "probability_sum": "1",
+      "projection_probabilities": {
+        "6": "89888721452073377/146150122947444000",
+        "8": "56261401495370623/146150122947444000"
+      },
+      "stalled_probability": "0"
+    }
+  },
+  "controls": {
+    "both_projection_classes_checked": true,
+    "frozen_rule_agreement": [
+      {
+        "literal_zero_cost_extensions": 2,
+        "width": 3
+      },
+      {
+        "literal_zero_cost_extensions": 2,
+        "width": 3
+      },
+      {
+        "literal_zero_cost_extensions": 8,
+        "width": 4
+      },
+      {
+        "literal_zero_cost_extensions": 8,
+        "width": 4
+      },
+      {
+        "literal_zero_cost_extensions": 20,
+        "width": 5
+      },
+      {
+        "literal_zero_cost_extensions": 20,
+        "width": 5
+      },
+      {
+        "literal_zero_cost_extensions": 0,
+        "width": 4
+      }
+    ]
+  },
+  "cut_class_count": 13,
+  "cut_source_sha256": "65b8a87894afafc8464731432c42242d1b55b803370ddece9c7232c6e79e6d95",
+  "elapsed_seconds": 0.993121,
+  "equal_prior_recognition": "126353290235602541/252441121454676000",
+  "per_cut_class": [
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 0,
+      "cut_probabilities": {
+        "fan6": "0",
+        "nonfan6": "1/14"
+      },
+      "cut_rows": [
+        0,
+        3,
+        7,
+        32,
+        62,
+        112,
+        143,
+        193,
+        223,
+        248,
+        252,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1066,
+        "8": 586
+      },
+      "projected_literal_history_counts": {
+        "6": 41168,
+        "8": 26224
+      },
+      "projection_probabilities": {
+        "6": "113125559/184338000",
+        "8": "71212441/184338000"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 20,
+          "literal_branch_count_histogram": {
+            "40": 1
+          },
+          "literal_histories_after": 40,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 220,
+          "literal_branch_count_histogram": {
+            "38": 4,
+            "40": 2,
+            "42": 14
+          },
+          "literal_histories_after": 1640,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 20,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1652,
+          "literal_branch_count_histogram": {
+            "36": 6,
+            "38": 4,
+            "40": 116,
+            "42": 56,
+            "44": 38
+          },
+          "literal_histories_after": 67392,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 220,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 1,
+      "cut_probabilities": {
+        "fan6": "19/70",
+        "nonfan6": "19/70"
+      },
+      "cut_rows": [
+        0,
+        3,
+        32,
+        48,
+        62,
+        71,
+        184,
+        193,
+        207,
+        223,
+        252,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1158,
+        "8": 680
+      },
+      "projected_literal_history_counts": {
+        "6": 50000,
+        "8": 31344
+      },
+      "projection_probabilities": {
+        "6": "166691219/270006660",
+        "8": "103315441/270006660"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 22,
+          "literal_branch_count_histogram": {
+            "44": 1
+          },
+          "literal_histories_after": 44,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 247,
+          "literal_branch_count_histogram": {
+            "42": 12,
+            "44": 4,
+            "46": 6
+          },
+          "literal_histories_after": 1912,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 22,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1838,
+          "literal_branch_count_histogram": {
+            "40": 66,
+            "42": 42,
+            "44": 139
+          },
+          "literal_histories_after": 81344,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 247,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 2,
+      "cut_probabilities": {
+        "fan6": "1/14",
+        "nonfan6": "1/14"
+      },
+      "cut_rows": [
+        0,
+        7,
+        32,
+        48,
+        62,
+        67,
+        188,
+        193,
+        207,
+        223,
+        248,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1038,
+        "8": 548
+      },
+      "projected_literal_history_counts": {
+        "6": 40432,
+        "8": 24928
+      },
+      "projection_probabilities": {
+        "6": "245216383/393129000",
+        "8": "147912617/393129000"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 20,
+          "literal_branch_count_histogram": {
+            "40": 1
+          },
+          "literal_histories_after": 40,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 214,
+          "literal_branch_count_histogram": {
+            "38": 4,
+            "40": 10,
+            "42": 4,
+            "44": 2
+          },
+          "literal_histories_after": 1616,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 20,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1586,
+          "literal_branch_count_histogram": {
+            "36": 6,
+            "38": 48,
+            "40": 81,
+            "42": 46,
+            "44": 33
+          },
+          "literal_histories_after": 65360,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 214,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 3,
+      "cut_probabilities": {
+        "fan6": "1/14",
+        "nonfan6": "0"
+      },
+      "cut_rows": [
+        0,
+        7,
+        32,
+        60,
+        62,
+        79,
+        176,
+        193,
+        195,
+        223,
+        248,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 977,
+        "8": 514
+      },
+      "projected_literal_history_counts": {
+        "6": 35928,
+        "8": 23072
+      },
+      "projection_probabilities": {
+        "6": "155860442057/254538518850",
+        "8": "98678076793/254538518850"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 19,
+          "literal_branch_count_histogram": {
+            "38": 1
+          },
+          "literal_histories_after": 38,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 201,
+          "literal_branch_count_histogram": {
+            "36": 2,
+            "38": 7,
+            "40": 7,
+            "42": 3
+          },
+          "literal_histories_after": 1488,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 19,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1491,
+          "literal_branch_count_histogram": {
+            "34": 1,
+            "36": 15,
+            "38": 60,
+            "40": 85,
+            "42": 22,
+            "44": 18
+          },
+          "literal_histories_after": 59000,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 201,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 4,
+      "cut_probabilities": {
+        "fan6": "0",
+        "nonfan6": "6/35"
+      },
+      "cut_rows": [
+        0,
+        7,
+        32,
+        65,
+        112,
+        124,
+        131,
+        143,
+        190,
+        223,
+        248,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1089,
+        "8": 614
+      },
+      "projected_literal_history_counts": {
+        "6": 44512,
+        "8": 28176
+      },
+      "projection_probabilities": {
+        "6": "3659337709/5935683600",
+        "8": "2276345891/5935683600"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 21,
+          "literal_branch_count_histogram": {
+            "42": 1
+          },
+          "literal_histories_after": 42,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 229,
+          "literal_branch_count_histogram": {
+            "40": 8,
+            "42": 10,
+            "46": 3
+          },
+          "literal_histories_after": 1756,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 21,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1703,
+          "literal_branch_count_histogram": {
+            "38": 28,
+            "40": 87,
+            "42": 28,
+            "44": 86
+          },
+          "literal_histories_after": 72688,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 229,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 5,
+      "cut_probabilities": {
+        "fan6": "0",
+        "nonfan6": "1/14"
+      },
+      "cut_rows": [
+        0,
+        15,
+        32,
+        62,
+        120,
+        124,
+        131,
+        135,
+        193,
+        223,
+        240,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 987,
+        "8": 513
+      },
+      "projected_literal_history_counts": {
+        "6": 36376,
+        "8": 22920
+      },
+      "projection_probabilities": {
+        "6": "8269191067/13396764150",
+        "8": "5127573083/13396764150"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 19,
+          "literal_branch_count_histogram": {
+            "38": 1
+          },
+          "literal_histories_after": 38,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 202,
+          "literal_branch_count_histogram": {
+            "36": 2,
+            "38": 6,
+            "40": 8,
+            "42": 3
+          },
+          "literal_histories_after": 1492,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 19,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1500,
+          "literal_branch_count_histogram": {
+            "34": 1,
+            "36": 15,
+            "38": 59,
+            "40": 85,
+            "42": 19,
+            "44": 23
+          },
+          "literal_histories_after": 59296,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 202,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 6,
+      "cut_probabilities": {
+        "fan6": "0",
+        "nonfan6": "1/14"
+      },
+      "cut_rows": [
+        0,
+        15,
+        32,
+        65,
+        120,
+        124,
+        131,
+        135,
+        190,
+        223,
+        240,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1058,
+        "8": 594
+      },
+      "projected_literal_history_counts": {
+        "6": 40736,
+        "8": 26656
+      },
+      "projection_probabilities": {
+        "6": "1060917281/1751211000",
+        "8": "690293719/1751211000"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 20,
+          "literal_branch_count_histogram": {
+            "40": 1
+          },
+          "literal_histories_after": 40,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 220,
+          "literal_branch_count_histogram": {
+            "38": 4,
+            "40": 2,
+            "42": 14
+          },
+          "literal_histories_after": 1640,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 20,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1652,
+          "literal_branch_count_histogram": {
+            "36": 6,
+            "38": 4,
+            "40": 117,
+            "42": 54,
+            "44": 39
+          },
+          "literal_histories_after": 67392,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 220,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 7,
+      "cut_probabilities": {
+        "fan6": "6/35",
+        "nonfan6": "6/35"
+      },
+      "cut_rows": [
+        0,
+        32,
+        48,
+        62,
+        71,
+        124,
+        131,
+        184,
+        193,
+        207,
+        223,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1184,
+        "8": 705
+      },
+      "projected_literal_history_counts": {
+        "6": 50544,
+        "8": 32240
+      },
+      "projection_probabilities": {
+        "6": "3594211/5869710",
+        "8": "2275499/5869710"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 22,
+          "literal_branch_count_histogram": {
+            "44": 1
+          },
+          "literal_histories_after": 44,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 251,
+          "literal_branch_count_histogram": {
+            "42": 7,
+            "44": 10,
+            "46": 5
+          },
+          "literal_histories_after": 1928,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 22,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1889,
+          "literal_branch_count_histogram": {
+            "40": 18,
+            "42": 92,
+            "44": 141
+          },
+          "literal_histories_after": 82784,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 251,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 8,
+      "cut_probabilities": {
+        "fan6": "6/35",
+        "nonfan6": "0"
+      },
+      "cut_rows": [
+        0,
+        32,
+        56,
+        62,
+        79,
+        124,
+        131,
+        176,
+        193,
+        199,
+        223,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1103,
+        "8": 623
+      },
+      "projected_literal_history_counts": {
+        "6": 45120,
+        "8": 28272
+      },
+      "projection_probabilities": {
+        "6": "11027815961/17807050800",
+        "8": "6779234839/17807050800"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 21,
+          "literal_branch_count_histogram": {
+            "42": 1
+          },
+          "literal_histories_after": 42,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 231,
+          "literal_branch_count_histogram": {
+            "40": 8,
+            "42": 9,
+            "46": 4
+          },
+          "literal_histories_after": 1764,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 21,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1726,
+          "literal_branch_count_histogram": {
+            "38": 28,
+            "40": 79,
+            "42": 22,
+            "44": 102
+          },
+          "literal_histories_after": 73392,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 231,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 9,
+      "cut_probabilities": {
+        "fan6": "1/14",
+        "nonfan6": "0"
+      },
+      "cut_rows": [
+        0,
+        32,
+        60,
+        62,
+        79,
+        120,
+        135,
+        176,
+        193,
+        195,
+        223,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1074,
+        "8": 592
+      },
+      "projected_literal_history_counts": {
+        "6": 41352,
+        "8": 26336
+      },
+      "projection_probabilities": {
+        "6": "4720003877/7705328400",
+        "8": "2985324523/7705328400"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 20,
+          "literal_branch_count_histogram": {
+            "40": 1
+          },
+          "literal_histories_after": 40,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 221,
+          "literal_branch_count_histogram": {
+            "38": 1,
+            "40": 10,
+            "42": 6,
+            "44": 3
+          },
+          "literal_histories_after": 1644,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 20,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1666,
+          "literal_branch_count_histogram": {
+            "38": 33,
+            "40": 73,
+            "42": 67,
+            "44": 48
+          },
+          "literal_histories_after": 67688,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 221,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 10,
+      "cut_probabilities": {
+        "fan6": "1/14",
+        "nonfan6": "0"
+      },
+      "cut_rows": [
+        0,
+        32,
+        65,
+        67,
+        79,
+        120,
+        135,
+        176,
+        188,
+        190,
+        223,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1099,
+        "8": 625
+      },
+      "projected_literal_history_counts": {
+        "6": 44968,
+        "8": 28376
+      },
+      "projection_probabilities": {
+        "6": "60439120661/97938779400",
+        "8": "37499658739/97938779400"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 21,
+          "literal_branch_count_histogram": {
+            "42": 1
+          },
+          "literal_histories_after": 42,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 231,
+          "literal_branch_count_histogram": {
+            "40": 8,
+            "42": 8,
+            "44": 2,
+            "46": 3
+          },
+          "literal_histories_after": 1764,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 21,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 1724,
+          "literal_branch_count_histogram": {
+            "38": 28,
+            "40": 76,
+            "42": 31,
+            "44": 96
+          },
+          "literal_histories_after": 73344,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 231,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 11,
+      "cut_probabilities": {
+        "fan6": "1/10",
+        "nonfan6": "0"
+      },
+      "cut_rows": [
+        0,
+        48,
+        56,
+        62,
+        95,
+        124,
+        131,
+        160,
+        193,
+        199,
+        207,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1240,
+        "8": 784
+      },
+      "projected_literal_history_counts": {
+        "6": 59520,
+        "8": 37632
+      },
+      "projection_probabilities": {
+        "6": "155/253",
+        "8": "98/253"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 24,
+          "literal_branch_count_histogram": {
+            "48": 1
+          },
+          "literal_histories_after": 48,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 276,
+          "literal_branch_count_histogram": {
+            "46": 24
+          },
+          "literal_histories_after": 2208,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 24,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 2024,
+          "literal_branch_count_histogram": {
+            "44": 276
+          },
+          "literal_histories_after": 97152,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 276,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    },
+    {
+      "all_new_pairs_free": true,
+      "cut_class": 12,
+      "cut_probabilities": {
+        "fan6": "0",
+        "nonfan6": "1/10"
+      },
+      "cut_rows": [
+        0,
+        48,
+        60,
+        65,
+        71,
+        96,
+        159,
+        184,
+        190,
+        195,
+        207,
+        255
+      ],
+      "no_equal_or_complementary_copies": true,
+      "projected_column_set_counts": {
+        "6": 1236,
+        "8": 788
+      },
+      "projected_literal_history_counts": {
+        "6": 59328,
+        "8": 37824
+      },
+      "projection_probabilities": {
+        "6": "309/506",
+        "8": "197/506"
+      },
+      "stages": [
+        {
+          "distinct_column_sets_after": 24,
+          "literal_branch_count_histogram": {
+            "48": 1
+          },
+          "literal_histories_after": 48,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 1,
+          "stalled_probability": "0",
+          "width_before": 8
+        },
+        {
+          "distinct_column_sets_after": 276,
+          "literal_branch_count_histogram": {
+            "46": 24
+          },
+          "literal_histories_after": 2208,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 24,
+          "stalled_probability": "0",
+          "width_before": 9
+        },
+        {
+          "distinct_column_sets_after": 2024,
+          "literal_branch_count_histogram": {
+            "44": 276
+          },
+          "literal_histories_after": 97152,
+          "probability_sum": "1",
+          "reachable_nodes_with_zero_cost_extension": 276,
+          "stalled_probability": "0",
+          "width_before": 10
+        }
+      ]
+    }
+  ],
+  "total_variation": "132729508264541/126220560727338000"
+}

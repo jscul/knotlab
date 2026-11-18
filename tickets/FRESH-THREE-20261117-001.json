@@ -1,0 +1,30 @@
+{
+  "acceptance_gate": "Use identical signed growth at every input with no access to cohort marks. Project the final set of allowed states onto just the three added distinctions and forget all labels.",
+  "completion_gate": "Give the likelihood of each three-distinction outcome under each start, the equal-prior recognition probability and an independent check of the weighting and projection.",
+  "dependencies": [
+    "ERASE-SEPARATELY-20261117-001"
+  ],
+  "dependency_text": "The closed erasure study supplies the eight-cut state tables with their two exact probability laws and specifies the fully anonymous growth rule.",
+  "fields": {
+    "experiment_family": "experiments/FRESH-THREE-20261117-001/FRESH-THREE-20261117-001-E001_projection",
+    "groups": [
+      "holes-and-proofs"
+    ],
+    "program": "foundations",
+    "result": "artifacts/FRESH-THREE-20261117-001/FRESH-THREE-20261117-001-E001_projection/results.json"
+  },
+  "id": "FRESH-THREE-20261117-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Starting with the known eight-distinction erasure laws, use the same anonymous growth to eleven. Test whether the three distinctions added after erasure distinguish the two starts when all eight original distinctions are hidden. Serves G1 and G16.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FRESH-THREE-20261117-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Exact finite fresh-only signal. After erasure at eight, the three added distinctions have six allowed assignments with probability 61.60953% for fan6 and 61.50438% for nonfan6. Optimal equal-prior recognition is 50.05258%; uniform draws from unused columns yield 50.03211%. Independent literal reconstruction agreed in all 13 starting classes. Old distinctions participated in growth and were completely hidden at readout.",
+  "status_class": "supported",
+  "stop_rule": "Stop after the exact three-addition experiment and its finite checks.",
+  "title": "Can the three new distinctions alone carry the trace of the erased knots?"
+}

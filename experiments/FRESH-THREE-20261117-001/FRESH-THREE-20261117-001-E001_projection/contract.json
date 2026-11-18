@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_id": "FRESH-THREE-20261117-001-E001",
+  "ticket": "FRESH-THREE-20261117-001",
+  "evidence_stage": "exploratory",
+  "status": "Frozen",
+  "branch": "code_analysis",
+  "question": "Do the allowed states of the three distinctions added after erasing the knots at eight carry any information about which six-distinction start was used?",
+  "public_inputs": {
+    "accepted_ticket": "ERASE-SEPARATELY-20261117-001",
+    "artifact": "artifacts/ERASE-SEPARATELY-20261117-001/ERASE-SEPARATELY-20261117-001-E001_erasure/results.json",
+    "sha256": "65b8a87894afafc8464731432c42242d1b55b803370ddece9c7232c6e79e6d95",
+    "cut": "eight_independent.layers[0], all 13 representatives at width eight with their exact probabilities under fan6 and nonfan6",
+    "prior": "equal probability of the two starts",
+    "growth": "Continue for three moves with the same signed fewest-states rule. Use one to three ternary constraints, each on two current distinctions and the fresh one, forbidding one complementary pair of assignments. Every old state must extend. Exclude a fully free addition, copies and opposite copies. Minimize row count and weight each distinct minimizing literal extension equally, before quotienting by symmetry. The two fresh-value orientations may be paired when their multiplicity is constant.",
+    "observation": "Project the final set of rows onto the set of exactly those three distinctions added after the cut. Discard multiplicities, their order, coordinate names, local value names and all eight older distinctions. Only the evaluator tracks the cohort to extract this projection."
+  },
+  "forbidden_inputs": [
+    "Consulting the start identity, old knot list, path, ages or evaluator marks to grow or break ties",
+    "Choosing distinguished slots of an anonymous ten-point representative as if they encoded the growth history",
+    "Giving the observer the eight-point table, final full table, multiplicities, contact list, arbitrary signs or birth order",
+    "Replacing local probability products by uniform weighting of entire trajectories, isomorphism classes or distinct terminal sets"
+  ],
+  "primary_observable": "For each start, the exact probability p of a six-state projection at eleven. The other observation class has eight states. The optimal equal-prior probability of guessing the start is (1 + abs(p_fan - p_nonfan))/2.",
+  "decision_rule": "Compare exact rational probabilities. A nonzero difference shows information in the projected allowed states under this law. Report its magnitude even if very small. Equality gives exactly chance recognition for this complete readout.",
+  "cheapest_meaningful_control": "Every one- and two-distinction projection of the new cohort has 2 or 4 states respectively. Enumerate the complement-closed ternary relations with full binary projections to check that only the six-state type and the free type remain after renaming.",
+  "other_checks": "Each cut-class continuation is shared across starts. Their cut probabilities are used only for the final two mixtures. Check total surviving probability, unbiased weighting under signed recoding and an independent reconstruction of the transition probabilities. Any zero-cost-only optimization must verify that a fill exists at every reached parent.",
+  "comparison": "To measure how much the no-copy rule alone can pass on, use the same cut tables and draw uniformly without replacement from all unused complementary column pairs. This comparison still preserves all twelve rows; it ignores knot admissibility. Compute the same two exact projected probabilities by counting triples of unused columns. The primary score is judged against chance regardless of the comparison's result.",
+  "resource_ceiling": "Exactly 13 finite inputs, three additions to width eleven and one projection per terminal extension. Use rational arithmetic. If an input has no fill, evaluate the original minimization or record the obstruction explicitly.",
+  "first_executable_signal": "Recover the two complete anonymous ternary outcome classes and match a finite set of allowed next moves to the predecessor rule.",
+  "stop_rule": "Stop after the distribution on the new triple has been computed for both starts and validated.",
+  "nonclaims": [
+    "No assertion that three distinctions selected without the evaluator's cohort information would identify the start",
+    "No assertion that the old distinctions were absent during growth or that the new relation can propagate independently or indefinitely"
+  ]
+}

@@ -1,5 +1,8 @@
 # Growing interfaces: the addressed patterns' closing summary
 
+*Continued: the line was reopened on 2026-11-17 and wrapped up again on 2026-11-18; see the
+[second closing summary](../DECIDE-SMALL-20261117-001/line_summary.md).*
+
 2026-11-16. This is the addressed-pattern line, from knots placed by address maps (`ADDR-KNOTS-20261113-001`) to the no-skip test
 (`MARK-RATE-20261116-001`). Every epic named here is refereed and folded in, `MARK-RATE-20261116-001` last (its referee R1, confirmed with fixes, folded in below).
 The owner and the coordinator wrapped the line up after that study (2026-11-16); the program's main line moves to the navigating-agent

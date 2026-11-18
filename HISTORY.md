@@ -39,6 +39,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   s = 7 and 8 at depth 12. They are no longer written as one rising sequence.
 - Sharpened: for that pattern at s = 7, stems hold no bond of any size.
 
+## 18 November 2026: reading the knots can change the number of orders too
+
+- The states-only growth study's referee had found that, from two starts with the same states, a rule reading the knots grows
+  different bases but the same number of orders. That holds for those two starts, exactly through nine distinctions. The cap
+  study (`KNOT-CAP-20261117-001`) found a second pair of starts, a line of five with its shared distinction at an end or in the
+  middle, where the number of orders differs from the first fill (computed exactly), and found that under a cap on contacts the
+  first pair differs too. The general statement is scoped to the first pair
+  ([decision note](research/KNOT-CAP-20261117-001/knot_cap.md)).
+
 ## 17 November 2026: the states-only growth study, confirmed by its referee, with two narrowings
 
 - The study of rules that read only the states (`STATE-RULES-20261117-001`) was confirmed by its referee with no Block: its proofs

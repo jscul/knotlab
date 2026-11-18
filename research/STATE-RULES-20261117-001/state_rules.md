@@ -27,7 +27,8 @@ Referee).
 - **Cheapest three-knot steps** make a second order at once from one knot, with no coin. After that a coin picks the route, but
   every route reaches the same cube each time the number of distinctions doubles: one more order each time (computed to 16).
 - **Uniform choice** gives many orders.
-- **Reading which knots meet** changes which bases grow, but not how many orders they have. *Narrowed after the referee: with
+- **Reading which knots meet** changes which bases grow, but not how many orders they have, for these two starts (*scoped on 18
+  November 2026 by `KNOT-CAP-20261117-001`: for another matched pair, and under a cap, it changes the number of orders too*). *Narrowed after the referee: with
   1,000 runs per start, two starts with the same states and different knots grow different bases (they share 1 of 4 classes at
   n = 7) with the same number of orders.*
 
@@ -100,7 +101,8 @@ The rule may also read the knots, with names and history erased. A new knot must
 - **Uniform over knot-local steps:** two orders at n = 10 in 1 of 30, 0 and 0.
 
 So how the knots meet does carry information the states do not: it fixes where the first fill can go, and the bases grown from
-the same states then differ (the referee's 1,000 runs). It does not change how many orders they have. No knot-reading rule tried
+the same states then differ (the referee's 1,000 runs). For these two starts it does not change how many orders they have (exactly
+equal through n = 9; `KNOT-CAP-20261117-001` found other starts where it does). No knot-reading rule tried
 keeps two orders.
 
 ### A rule with no coin (Codex's check)
@@ -117,7 +119,7 @@ any distinction.
 **In the owner's terms.** The cheapest way one knot can continue is two orders, and the states choose it alone. But the same
 cheapness keeps going, to three orders and then four, one more each time the distinctions double. Nothing in these laws stops at
 two: either the start hands the number of orders over, or the growth keeps adding them. Reading how the knots meet changes what
-grows from the same states, but not how many orders it has.
+grows from the same states, and for some starts how many orders it has (`KNOT-CAP-20261117-001`).
 
 ## Referee
 
@@ -137,7 +139,7 @@ Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's 
      withdrawn.
    - With 1,000 runs per start and identical seeds, the number of orders does not depend on the knots, but the grown bases do (TV
      distance 0.76 at n = 7, 0.81 at n = 8).
-   - How the knots meet carries information that changes what grows, not how many orders it has. Not yet tested: other start
+   - How the knots meet carries information that changes what grows, not (for these starts) how many orders it has. Not yet tested: other start
      pairs, other knot rules, and which state differences matter. `KNOT-CAP-20261117-001` takes these up.
 2. **Narrowing.** The 2/3 against 1/2 at n = 6 is the weighting (knot sets against extensions), not knot reading: the closure
    control gives 0.70 and the knot-local rule 0.65.

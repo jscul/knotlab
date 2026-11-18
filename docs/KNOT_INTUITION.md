@@ -432,6 +432,19 @@ kinds of base after one step, but the same number of orders (its referee, with
 a thousand runs from each start). So two orders are logic's cheapest
 continuation of one knot, but none of these laws stops there
 ([decision note](../research/STATE-RULES-20261117-001/state_rules.md)).
+Can a limit on contacts stop it at two (`KNOT-CAP-20261117-001`, proof and
+frozen computation, referee pending)? The two tightest limits stop it exactly
+there: if a distinction may join at most three knots, or two distinctions may
+share at most two, one knot grows into the square and then nothing more can
+join (proved). The square is the pattern complete under both limits. Looser
+limits let the growth past two orders, and none tried keeps two orders growing.
+How the knots meet matters more than the first comparison showed: from a line
+of five whose shared distinction sits at an end, or in the middle, the number of
+orders itself differs (two orders after two more distinctions with chance 0.42
+against 0.61, computed exactly). And when the knots are forgotten partway, the
+states keep a fading memory of how they met: the gap between two starts shrinks
+by about a fifth each step but has not closed three steps later
+([decision note](../research/KNOT-CAP-20261117-001/knot_cap.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

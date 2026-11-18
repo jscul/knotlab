@@ -244,3 +244,23 @@ from seven distinctions); no goal changed.
 
 **Assumptions:** A39 to Under challenge (the outline depends on the reading that spaces the law); A97 gains this study; new A102
 (the maximal-entropy weighting on endless bases).
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** read by the disagreement count, a periodic law's balls come out round. On the six-regular weave, the start's own
+class fills a round outline. Measured along every repeat, it reaches equally far to one part in ten thousand at sixty steps. Bond
+distance gives the same law a hexagon, so the record's "periodic laws make polygons" belongs to bond distance. Chain grids give
+smooth outlines just off round: Gołąb's π is 3.1417 with one knot per pair and tends to 4 as the chains lengthen. Grown split
+grids give the taxicab diamond. How the outline grows against the ball reads the dimension of the meeting pattern (two). It does
+not read the number of orders: a ladder of two orders and a comb of one grow identically (proved). Without names, every start's
+growth stops telling two orders from three at seven distinctions, though the full table of counts still does. Taken literally,
+"states within r disagreements of a state" sees even less, because it can't tell a base from a copy shifted by one of its own
+states. 14 of 20 frozen predictions held. The weave's 11 all held. The 6 misses are pre-asymptotic or a missing sign in my code,
+plus the census failing earlier than predicted. The epic is closed with the referee pending.
+
+The position table, the next-step line and the five directions as in Position above (direction 4 filed as sub-goal B200).
+
+**Corrections:** none. The polygon verdict was already stated for bond distance.
+**Goals:** G1 checkpoint (capability gained); G16 checkpoint (obstruction learned); no goal changed.
+**Assumptions:** A39 moved to Under challenge, because the outline depends on which reading spaces the law. A97 gains this study.
+A new entry, A102, records that endless bases are read in the maximal-entropy weighting.

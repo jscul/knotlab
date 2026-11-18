@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "KNOT-CAP-20261117-001Z-P001",
+ "kind": "proof",
+ "ticket": "KNOT-CAP-20261117-001Z",
+ "proof": "KNOT-CAP-20261117-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing KNOT-CAP-20261117-001: ticket A (the cap of three per distinction and of two per pair stop at the 2 x 2 pattern; the fill bound; erasure cannot increase a distance) and ticket B (frozen computation, 4 of 9 held): no cap keeps two orders growing; how knots meet changes what grows and, for the five-starts and under a cap, how many orders; after erasure the states keep a fading imprint. Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/KNOT-CAP-20261117-001B/KNOT-CAP-20261117-001B-E001_cap/contract.json": "Frozen",
+   "artifacts/KNOT-CAP-20261117-001B/KNOT-CAP-20261117-001B-E001_cap/results.json": "run output",
+   "proofs/KNOT-CAP-20261117-001A/KNOT-CAP-20261117-001A-P001_caps/manifest.json": "Proved",
+   "proofs/KNOT-CAP-20261117-001A/KNOT-CAP-20261117-001A-P001_caps/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

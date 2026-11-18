@@ -527,6 +527,11 @@ law) the counts carry all of it from the first new distinction. The share the
 unnamed counts miss is in the order of growth, which is history, not distance
 (its referee, correcting a first reading that it was lost)
 ([decision note](../research/MEET-DIST-20261118-001/meet_dist.md)).
+Which names carry it (`MEET-HIST-20261118-001`, frozen computation, referee
+pending)? Mostly the order in which the new distinctions came, which the states
+do not record even when the line's own distinctions are known; knowing which
+distinctions are the line's adds little. The knots record the nesting directly
+([decision note](../research/MEET-HIST-20261118-001/meet_hist.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

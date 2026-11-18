@@ -2838,6 +2838,8 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `KNOT-SWITCH-20261118-001` built on it (KF3, NN, NN2 and SEED with knot-local moves, every knot recorded);
+    status unchanged.
   - 2026-11-18 · `PICK-TWO-20261118-001` built on it (caps, prices and rules told no number, on fills and subdivisions); status
     unchanged.
   - 2026-11-18 · `NEVER-NEST-20261118-001` built on it (rules that take only the fills keeping two orders grow full two-way grids;
@@ -2896,6 +2898,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `KNOT-SWITCH-20261118-001` ([decision note](../research/KNOT-SWITCH-20261118-001/knot_switch.md); referee
+    pending) read SEED's switch in the knots: "nothing crosses yet" is "no filled knot yet" (four distinctions carrying four
+    knots, each the middle of one), which forces a crossing in any presentation; along every growth tried the first fill makes
+    both. The rule must still be told to stop being free once the knots have closed. Status unchanged.
   - 2026-11-18 · `PICK-TWO-20261118-001`'s referee (R1): SEED is given one order-making step, not a number; arity makes the step
     one order and the line has one, so its number is the start's λ + 1 from an uncrossed line (from a branching tree one fill can
     give λ = 3). Status unchanged.

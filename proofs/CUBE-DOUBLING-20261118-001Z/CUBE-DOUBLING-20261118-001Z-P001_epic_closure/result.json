@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "CUBE-DOUBLING-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "CUBE-DOUBLING-20261118-001Z",
+ "proof": "CUBE-DOUBLING-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing CUBE-DOUBLING-20261118-001: ticket A (the cheapest growth reaches Q_d at n = 2^d for every d, every run, every tie rule; STATE-RULES S6 proved) and ticket B (frozen check, 3 of 3 held: certificates for s = 1 to 7, the cheapest extensions of Q_s for s = 2 to 4, the exact distribution to n = 20). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/CUBE-DOUBLING-20261118-001B/CUBE-DOUBLING-20261118-001B-E001_certificates/contract.json": "Frozen",
+   "artifacts/CUBE-DOUBLING-20261118-001B/CUBE-DOUBLING-20261118-001B-E001_certificates/results.json": "run output",
+   "proofs/CUBE-DOUBLING-20261118-001A/CUBE-DOUBLING-20261118-001A-P001_cube_doubling/manifest.json": "Proved",
+   "proofs/CUBE-DOUBLING-20261118-001A/CUBE-DOUBLING-20261118-001A-P001_cube_doubling/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

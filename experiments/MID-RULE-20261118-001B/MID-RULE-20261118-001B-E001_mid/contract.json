@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MID-RULE-20261118-001B-E001",
+ "ticket": "MID-RULE-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the rules that take, after the first fill, only fills with two or more middle knots (MID2) or at most one end knot (ONE) keep two orders and grow full two-way grids, free and knot-local, to n = 60?",
+ "definitions": {
+  "MID2": "phase two: a certificate with two or more middle knots",
+  "ONE": "phase two: a certificate with at most one end knot",
+  "ANY": "phase two: any fill (control)"
+ },
+ "public_inputs": {
+  "code": "midlib.py (sha256 db3b05c740c36370fa520ed4a8eb7e4c576f489e2daed0ffe18a4f70c1e55f55), run.py (sha256 f6e76162c7b404c6e93f736d2352cf62a3990486af9b5cd86e74644b1e19c405), checks.py (sha256 9247ec9a37873d2ffba73ec1fc1f2b659cffb00615195be01c898e1fd096e5d1); experiments/KNOT-SWITCH-20261118-001B/KNOT-SWITCH-20261118-001B-E001_switch/knotlib.py (sha256 f1ac42407cb6f0e4e6f07445ee81f5034d0d2b2c8a8cc622290c4ffb4203de2b)",
+  "run": ".venv/bin/python -B run.py --part K|F --procs 12, then --merge"
+ },
+ "forbidden_inputs": [
+  "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions Q1-Q5 and the decision rules of research/MID-RULE-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "ANY (phase two any fill) must raise lambda.",
+ "predictions": {
+  "Q1": "no phase-two step changes k or lambda",
+  "Q2": "free forms strong from 2x2",
+  "Q3": "free forms from lines strong iff the first fill spans; no full grid otherwise",
+  "Q4": "knot-local forms starve (fill fraction steps 31-60 <= 0.15), lambda 2 throughout",
+  "Q5": "ANY raises lambda above 2 in every run"
+ },
+ "decision_rules": {
+  "invariant": "violation stops the study",
+  "strong": "as PICK-TWO",
+  "starved": "fill fraction on steps 31-60 <= 0.15",
+  "each prediction": "holds or fails as stated"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "About 20 to 40 minutes on 12 processes.",
+ "amendments": []
+}

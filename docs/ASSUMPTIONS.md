@@ -2938,7 +2938,10 @@ evidence: results and their status come from the records each entry links.
     found that SEED's copy step, which grows two orders over the whole line, shows no sign in the fill's own knots or the
     betweenness among its distinctions (all 566 absorbing fills looked like refused ones); one step out was untestable on bases
     this small. Status unchanged.
-  - 2026-11-18 · `MID-RULE-20261118-001` ([decision note](../research/MID-RULE-20261118-001/mid_rule.md); referee pending)
+  - 2026-11-18 · `MID-RULE-20261118-001`'s referee (R1): the one free fill is a given, as in `PICK-TWO-20261118-001`; knot-local the
+    rule never fills again (it keeps two orders by lengthening), and free it grows full grids only from a spanning first fill or
+    the 2 × 2 pattern. Status unchanged.
+  - 2026-11-18 · `MID-RULE-20261118-001` ([decision note](../research/MID-RULE-20261118-001/mid_rule.md); refereed)
     proved that a fill makes a new crossing only through two different end knots, so after one free fill a rule taking only
     fills certified with at most one end knot keeps two orders forever, told no number and reading only the fill's knots. It only
     conserves: full grids need the first fill to span the line, and with knots on co-knotted pairs it stops after one fill.

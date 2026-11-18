@@ -647,7 +647,7 @@ among their distinctions, exactly like fills that add a third. Whether the knots
 one step further out suffice could not be tested on bases this small
 ([decision note](../research/KEEP-READ-20261118-001/keep_read.md)).
 Is there a safe local sign (`MID-RULE-20261118-001`, proof and frozen
-computation, referee pending)? Yes, on one side. A knot copies an old distinction
+computation, refereed)? Yes, on one side. A knot copies an old distinction
 onto the new one on the states it pins, so a new crossing needs two different
 knots that each extend a pair outward to the new distinction, two end knots
 (proved). A rule that, after its first free fill, takes only fills tied by at most

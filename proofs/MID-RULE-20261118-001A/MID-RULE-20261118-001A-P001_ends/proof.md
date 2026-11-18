@@ -23,7 +23,7 @@ As in `KEEP-READ-20261118-001A`, `KNOT-SWITCH-20261118-001A` and `PICK-TWO-20261
 - **E1. A new crossing needs two end knots.** If a fill makes two old splits cross, then in every certificate the two states that
   realise the newly occupied quadrant are pinned by two different end knots.
 - **E2. At most one end knot keeps everything.** A fill with a certificate of at most one end knot makes no new crossing. It changes
-  no relation of splits, so k and λ are unchanged, on any base. MID2's certificates have at most one end knot.
+  no relation of splits, so k and λ are unchanged, on any base of betweenness knots. MID2's certificates have at most one end knot.
 - **E3. From a line, MID2 and ONE keep two orders forever.** Their first fill makes exactly two (`PICK-TWO-20261118-001A`, S6). After
   it, each fill keeps every relation (E2), and so does each subdivision. Nothing in either rule names a number of orders; after the
   switch, both read only the move's knots.

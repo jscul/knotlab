@@ -1,7 +1,8 @@
 # A rule whose second phase reads only the fill's knots
 
 Epic `MID-RULE-20261118-001`, 18 November 2026, by Claude. It takes `KEEP-READ-20261118-001`'s first direction, with the
-coordinator's go-ahead. Goals G1 and G16; challenges A101. Referee pending. **Stress test pending:** part F, the free forms' runs
+coordinator's go-ahead. Goals G1 and G16; challenges A101. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no
+Block, folded in on 18 November (see Referee). **Stress test pending:** part F, the free forms' runs
 (which check E4 and E5, both proved), is still running and will be folded in when it finishes (`docs/LONG_RUNNING.md`, MID-RULE-B1).
 
 **Record.**
@@ -13,10 +14,13 @@ coordinator's go-ahead. Goals G1 and G16; challenges A101. Referee pending. **St
 
 ## The answer
 
-**A fill can make a new crossing only through two different end knots of its certificate (proved, on any base). So a rule that takes
-one free fill and afterwards only fills certified with at most one end knot keeps two orders forever from any line. It is told no
-number, and after its switch it reads only the fill's own knots.** That is a local reading of keeping, on its sufficient side.
-It is also a conservative one: no crossing is ever added again.
+**A fill can make a new crossing only through two different end knots of its certificate (proved, on any base of betweenness
+knots). So after one free fill, a rule taking only fills with at most one end knot never makes a third order. Free, it grows full
+grids only from a spanning first fill or from the 2 × 2 pattern; knot-local, it never fills again.** (Headline narrowed after the
+referee; the one free fill is a given, as in `PICK-TWO-20261118-001`.) That is a local reading of keeping, on its sufficient side.
+It is also a conservative one: no crossing is ever added again. Knot-local, it keeps two orders by lengthening alone, since it
+never accepts a second fill: in effect "one free fill, then lengthen". Free, it grows full grids from a line in only 6 / (n (n − 1))
+of runs: 30% at five, 11% at eight, 4.5% at twelve.
 - **With knots on any pairs (free).** It refills every new row from a full grid. From a line it reaches a full grid exactly when
   its first fill spans the line (proved; the runs that check this are pending).
 - **With knots only on pairs that already share one (knot-local).** It starves. In all 105 runs from bracketings of 5 to 8, to
@@ -90,6 +94,26 @@ Consulted once before the freeze. It made three points:
 - It asked for the ONE rule, the ANY control and the retro-check of E1 on 3,110 fills.
 
 It was not consulted after the read-out.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code: confirmed with fixes, no Block.
+- E1 to E5 hold, checked by hand (the copy principle and the middle-knot step).
+- E2 on bases no growth made: 400 random copy-free bases of 3 to 7 knots on 5 to 8 distinctions, 43,677 fills. Of these, 10,244
+  have a certificate with at most one end knot, and none changes a relation or λ. Every certificate of the 33,430 crossing-making
+  fills has at least two end knots.
+- Part K with the referee's own engine: in 210 runs to n = 60 and 70 runs to n = 75, both knot-local forms made exactly one fill
+  per run, held two orders, and reached no full grid.
+- E5 checked independently: MID2F from the line of five with each of its 10 first fills to n = 14. The 3 spanning fills reach full
+  grids, and the 7 others never do.
+
+Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (wording).** "Keeps two orders, told no number, reading only the fill's knots" holds only with its scope. Knot-local,
+   the rule never accepts a second fill. Free, it grows full grids only from the 2 × 2 pattern or a spanning first fill. The one
+   free fill is a given. The headline above is the referee's.
+2. **Not a block.** "On any base" now reads "on any base of betweenness knots", where splits and λ are defined.
+
+Q2 and Q5 wait on part F; Q3 was checked by the referee on the line of five only.
 
 ## Position
 

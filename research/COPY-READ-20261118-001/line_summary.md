@@ -10,8 +10,8 @@ that the cheapest growth gains one order at every doubling and never keeps two:
 - `MID-RULE-20261118-001`
 - `COPY-READ-20261118-001`
 
-The first five are refereed and folded in. `MID-RULE` and `COPY-READ` are with the referee; `MID-RULE`'s free-form runs (a check of
-proved statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
+The first six are refereed and folded in. `COPY-READ` is with the referee; `MID-RULE`'s free-form runs (a check of proved
+statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
 returns shrinking on bases this small.
 
 **Scope throughout.** Growth by A99's moves (one new distinction with one to three betweenness knots; every old state kept),
@@ -32,8 +32,9 @@ each step do it?
 - Told nothing but "take one free step from the line, then never make a new crossing except by copying", it settles at exactly two.
   That is because a single new distinction has two values, so one step from a line always makes exactly two orders.
 - The step where the two enters can be read in the knots: it is the first time four knots close on four distinctions.
-- Keeping the two afterwards can be done with a rule that reads only the step's own knots, but such a rule never grows a full grid
-  over the whole line. The step that grows it, the copy step, shows no sign in its own knots.
+- After one free fill, a rule taking only fills with at most one end knot never makes a third order. But free, it grows full grids
+  only from a spanning first fill or the 2 × 2 pattern, and knot-local it never fills again. The step that grows the grid over the
+  whole line, the copy step, shows no sign in its own knots.
 
 ## What is proved
 
@@ -47,8 +48,8 @@ each step do it?
 | **One fill on a line makes exactly two orders.** The new distinction lies inside some cuts and outside the rest; only pairs with one cut of each kind come to cross. | `PICK-TWO-20261118-001` (S6) |
 | **A knot and its fill force a crossing.** Four distinctions carrying a knot and the three knots of its fill allow only two ways of splitting them, and those two cross. This holds in any presentation without copies. Along every growth here, the first fill makes the first such "filled knot" and the first crossing in the same step. | `KNOT-SWITCH-20261118-001` (W2, W3) |
 | **A fill's own knots cannot tell keeping from raising.** One knot pattern, a corner, fills a grid cell or adds a third order depending only on whether the two splits it touches cross. | `KEEP-READ-20261118-001` (R1) |
-| **A new crossing needs two end knots.** Each knot makes the new distinction copy an old one on the states it pins. So two different knots must pin a new crossing's two states, and neither can be a middle knot. A fill tied by at most one end knot therefore never changes the number of orders, on any base. | `MID-RULE-20261118-001` (E1, E2; referee pending) |
-| **A rule reading only the fill's knots keeps two orders forever.** After one free fill, take only fills with at most one end knot. With knots on any pairs it refills from a full grid, and from a line it reaches one exactly when the first fill spans the line. | `MID-RULE-20261118-001` (E3 to E5; referee pending) |
+| **A new crossing needs two end knots.** Each knot makes the new distinction copy an old one on the states it pins. So two different knots must pin a new crossing's two states, and neither can be a middle knot. A fill tied by at most one end knot therefore never changes the number of orders, on any base of betweenness knots. | `MID-RULE-20261118-001` (E1, E2; refereed) |
+| **After one free fill, a rule taking only fills with at most one end knot never makes a third order.** Free, it grows full grids only from a spanning first fill or the 2 × 2 pattern (6 / (n (n − 1)) of lines); knot-local, it never fills again, and keeps two orders by lengthening. The one free fill is a given. | `MID-RULE-20261118-001` (E3 to E5; refereed) |
 
 **Known results, and what this view adds.**
 - *Lattice dimension* by chain covers of splits (Eppstein 2005); *Dilworth's* chain covers; *medians* in a product of chains (median
@@ -92,6 +93,9 @@ All logged in `docs/CORRECTIONS.md` with knotlab's `HISTORY.md`:
   (Narrowing).
 - `KEEP-READ-20261118-001`: "no local reading" narrowed to the fill's own knots and the betweenness among its distinctions. On bases
   of 24, one step out is most of the base and could not be tested (Narrowing).
+- `MID-RULE-20261118-001`: "keeps two orders, told no number, reading only the fill's knots" scoped. Knot-local it never fills again,
+  free it grows full grids only from a spanning first fill or 2 × 2, and the free fill is a given (Narrowing). "Any base" means any
+  base of betweenness knots (Not a block).
 
 ## What is open
 

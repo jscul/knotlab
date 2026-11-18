@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: a crossing needs two end knots, confirmed by the referee; the rule built on it scoped
+
+- The study of a rule whose second phase reads only the fill's knots (`MID-RULE-20261118-001`) was confirmed by its referee with
+  fresh code, with no Block. A fill can make a new crossing only through two different knots that each extend a pair outward to
+  the new distinction (proved, on any base of betweenness knots), so after one free fill a rule taking only fills tied by at most
+  one such knot never makes a third order ([decision note](research/MID-RULE-20261118-001/mid_rule.md)).
+- Narrowed: with knots on any pairs it grows full grids only when its first fill spans the line, and with knots on pairs that
+  already share a knot it never fills again; the one free fill is given.
+
 ## 18 November 2026: what keeps two orders after the switch, confirmed by the referee; narrowed
 
 - The study of what the knots read in the second phase of the rule that keeps two orders (`KEEP-READ-20261118-001`) was confirmed by

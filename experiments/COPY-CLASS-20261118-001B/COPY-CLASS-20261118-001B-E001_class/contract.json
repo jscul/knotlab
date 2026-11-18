@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "COPY-CLASS-20261118-001B-E001",
+ "ticket": "COPY-CLASS-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does a local copy rule (model among the splits of the end pair sharing a distinction with the middle pair) decide SEED's copy step exactly?",
+ "definitions": {
+  "CR": "model sought among crossed splits separating the end pair that shares a distinction with the middle pair; clause (a) on the end pairs' splits",
+  "CRANY": "model among all crossed splits"
+ },
+ "public_inputs": {
+  "code": "classlib.py (sha256 9b4b87a56b3b19889c37751ee5b1baef64e8e4e082ce16b647c52599c3fccdce), run.py (sha256 1199c44a4a387863899b9edb3e47bb1d61ef5f12154c2a8ca9e43c2ed293fb12), checks.py (sha256 2ed96c688515e04860d29468e47dae10cbe786a6fb92d8fd50435d8ec242a970); experiments/KEEP-READ-20261118-001B/KEEP-READ-20261118-001B-E001_keep/keeplib.py (sha256 5f20d1cb1922c2e7f742da75e1865a2ead70550533e1d963f0379b67a3eef175)",
+  "run": ".venv/bin/python -B run.py --procs 8"
+ },
+ "forbidden_inputs": [
+  "Changing the rule, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P5 of research/COPY-CLASS-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "CRANY (SEED's own clause (b)) must equal SEED.",
+ "predictions": {
+  "P1": "CR = SEED on every crossing-making extension",
+  "P2": "CRANY = SEED; C1 on every knot set",
+  "P3": "most refusals clause (a); among (b) refusals subsets outnumber supersets",
+  "P4": "some absorbing fills have a model with >= 2 crossers",
+  "P5": "every absorbing fill in the copy class"
+ },
+ "decision_rules": {
+  "CR decides": "agreement with SEED on every crossing-making extension, no tolerance",
+  "otherwise": "recall, false acceptances, every counterexample"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "About 30 to 60 minutes on 8 processes.",
+ "amendments": []
+}

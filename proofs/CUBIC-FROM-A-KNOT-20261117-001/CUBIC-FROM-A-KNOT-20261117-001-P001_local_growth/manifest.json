@@ -1,0 +1,98 @@
+{
+  "schema_version": 3,
+  "artifact_id": "CUBIC-FROM-A-KNOT-20261117-001-P001",
+  "canonical_id": "CUBIC-FROM-A-KNOT-20261117-001-P001",
+  "proof": "CUBIC-FROM-A-KNOT-20261117-001-P001",
+  "ticket": "CUBIC-FROM-A-KNOT-20261117-001",
+  "kind": "proof",
+  "status": "Proved",
+  "title": "One local assembly with cubic bond-ball growth",
+  "claim": "There is a coordinate-free local assembly from one ternary parity knot with cubic growth in bond distance at every distinction. There is also a continuation of one six-state betweenness knot through the actual eight-distinction cut cube with the same exponent at every center.",
+  "standard_statement": "Growth of an unlabelled parity incidence presentation with an orthant as its proved coordinate representation, finite perturbation on the original cube, and cubic growth in the least size of a circuit containing two coordinates.",
+  "prior_work": "LOGIC-AXIS Proposition 3b on a supplied full lattice; the loose-end grown line; box betweenness and the finite greedy cube; standard graph cut/cycle duality.",
+  "dependencies": [
+    "CUBE-DOUBLING-20261118-001A",
+    "GRID-GROW-20261117-001A",
+    "KNOT-FOUNDATION-20261019-001A",
+    "LOGIC-AXIS-20261107-001A",
+    "OPEN-END-GROWTH-20261107-001B",
+    "STATE-RULES-20261117-001A"
+  ],
+  "lineage": {
+    "home_scope": "CUBIC-FROM-A-KNOT-20261117-001",
+    "epic_path": [],
+    "parents": [
+      "proofs/CUBE-DOUBLING-20261118-001A/CUBE-DOUBLING-20261118-001A-P001_cube_doubling/manifest.json",
+      "proofs/GRID-GROW-20261117-001A/GRID-GROW-20261117-001A-P001_grid_growth/manifest.json",
+      "proofs/KNOT-FOUNDATION-20261019-001A/KNOT-FOUNDATION-20261019-001A-P001_relational_knot_boundary/manifest.json",
+      "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json",
+      "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/manifest.json",
+      "proofs/STATE-RULES-20261117-001A/STATE-RULES-20261117-001A-P001_cheapest_steps/manifest.json"
+    ]
+  },
+  "parent_bindings": {
+    "proofs/CUBE-DOUBLING-20261118-001A/CUBE-DOUBLING-20261118-001A-P001_cube_doubling/manifest.json": "4ea1893816c94a56d8c2195223930a7b57b4d4683751a3b9af5dd8ca36cf05d4",
+    "proofs/GRID-GROW-20261117-001A/GRID-GROW-20261117-001A-P001_grid_growth/manifest.json": "8d074172366c19c1891764784859ba097f464a765d6f1450d49f014bdd0ade01",
+    "proofs/KNOT-FOUNDATION-20261019-001A/KNOT-FOUNDATION-20261019-001A-P001_relational_knot_boundary/manifest.json": "b2922b9471f94e731cda965ac0fd93e953d5c2e2577a3d95d4790d2b3e8cdd24",
+    "proofs/LOGIC-AXIS-20261107-001A/LOGIC-AXIS-20261107-001A-P001_rulers_without_ends/manifest.json": "df7b2df5577d9ba4018a922c4dbc8f0844b2eac7bf0dff1c77f33808b630f0a6",
+    "proofs/OPEN-END-GROWTH-20261107-001B/OPEN-END-GROWTH-20261107-001B-P001_bond_distance_is_a_boundary/manifest.json": "502e2e479d09eb2bf16e7561478ee69558582f457299c717fc02cfa7c0adb07a",
+    "proofs/STATE-RULES-20261117-001A/STATE-RULES-20261117-001A-P001_cheapest_steps/manifest.json": "767dc13a3040a1921544f5372a8bd656b8a213ed1e0ece83a4277aee95863513"
+  },
+  "completion_gate": "Resolve the 27-position test, prove a cubic ball bound or identify its precise obstruction, and replay an independent finite check one size beyond.",
+  "validation": {
+    "level": "V1",
+    "classification": "V1-separate-algorithm-same-task",
+    "status": "Written proof with completed adversarial review within this ticket. Separate finite checks replayed for the 27- and 64-junction blocks, and for paths near the eight marks.",
+    "novelty": "unassessed",
+    "independence": "Independent implementations and a fresh reader within the same research task. No external referee or proof-assistant certification."
+  },
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false,
+    "one_local_parity_assembly_has_uniform_cubic_bond_balls": true,
+    "original_eight_cube_variables_and_rows_preserved": true
+  },
+  "source_contribution": "The odd/even truth tables, three loose outputs per ordinary move and the local incidence tests are supplied. Parallel grouping reads a single current snapshot. The original eight use a bounded attachment with a choice of frame and value conventions. Bond distance is measured on the full allowed-state relation.",
+  "remaining_obligations": [],
+  "paths": {
+    "directory": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth",
+    "manifest": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/manifest.json",
+    "identity": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/identity.json",
+    "proof": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/proof.md",
+    "check": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/check.py",
+    "result": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/result.json",
+    "original_cube_proof": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/cube_interface.md",
+    "anonymous_growth_checks": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/checks.json",
+    "cube_and_cut_check": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/cut_control.py",
+    "path_check": "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/path_check.py"
+  },
+  "attained_result": "Every old row extends, all distinctions admit finite flips at every solution, and the full state relation has uniform bond-ball volume Theta(r^3). A bounded attachment preserves the original eight distinctions at the corresponding positions and their exact joint relation. Blocks of sides three and four were independently replayed."
+}

@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "proof_id": "CUBIC-FROM-A-KNOT-20261117-001-P001",
+  "evidence": {
+    "proof": "proof.md",
+    "original_cube_proof": "cube_interface.md",
+    "uniform_exponent": 3,
+    "quantifier": "Every edge of the constructed nonnegative orthant, for all sufficiently large integer radii. One permitted growth family.",
+    "local_inputs": [
+      "Incidence of distinguished current knots and current loose distinctions",
+      "One to three old loose bits and three fresh bits per standard move",
+      "A finite alignment for the actual eight-variable cut cube; canonical round policy uses simultaneous evaluation"
+    ],
+    "infinite_source": "Each variable flips by a finite change at every solution.",
+    "pure_parity_bounds": "r >= 5: 3*binom(floor((r-5)/4)+3,3) <= |B(e,r)| <= 3*(2r+1)^3",
+    "aligned_eight_bounds": "r >= 33: 3*binom(floor((r-33)/4)+3,3) <= |B(e,r)| <= 3*(6r+1)^3",
+    "aligned_eight_open_box_rows": {
+      "side_3": "2^49",
+      "side_4": "2^123"
+    },
+    "position_only_marginal": "If all joining bits are hidden and one distinguished-direction bit per junction is kept, the marginal is the original eight-state relation times free binary choices at all new positions. Bond-ball volume is computed in the full state relation."
+  },
+  "finite_verification": {
+    "anonymous_growth": "checks.json",
+    "literal_cut_and_aligned_boxes": {
+      "seed_to_cut_cube": {
+        "states_at_milestones": {
+          "3": 6,
+          "4": 6,
+          "8": 8
+        },
+        "single_point_moves": 5,
+        "wrong_middle_controls_rejected": 1
+      },
+      "boxes": [
+        {
+          "side": 2,
+          "distinctions": 8,
+          "allowed_states": 8,
+          "single_point_moves_since_q3": 0,
+          "bond_distance_counts": {
+            "2": 28
+          },
+          "raw_disagreement_counts": {
+            "2": 12,
+            "4": 12,
+            "6": 4
+          }
+        },
+        {
+          "side": 3,
+          "distinctions": 27,
+          "allowed_states": 14,
+          "single_point_moves_since_q3": 19,
+          "bond_distance_counts": {
+            "2": 351
+          },
+          "raw_disagreement_counts": {
+            "2": 54,
+            "4": 99,
+            "6": 104,
+            "8": 66,
+            "10": 24,
+            "12": 4
+          }
+        },
+        {
+          "side": 4,
+          "distinctions": 64,
+          "allowed_states": 20,
+          "single_point_moves_since_q3": 56,
+          "bond_distance_counts": {
+            "2": 2016
+          },
+          "raw_disagreement_counts": {
+            "2": 144,
+            "4": 312,
+            "6": 444,
+            "8": 456,
+            "10": 348,
+            "12": 200,
+            "14": 84,
+            "16": 24,
+            "18": 4
+          }
+        }
+      ],
+      "wrong_middle_controls_rejected": 6,
+      "pinned_parity_boxes": [
+        {
+          "side": 3,
+          "junctions": 27,
+          "free_parameters_before_restriction": 54,
+          "marked_rows_before_restriction": 256,
+          "marked_rows_after_restriction": 8,
+          "free_new_position_bits_after_hiding_other_bits": 19,
+          "full_even_stars_by_arity": {
+            "3": 1,
+            "4": 6,
+            "5": 12,
+            "6": 8
+          },
+          "star_counts_by_number_of_old_ports": {
+            "0": 15,
+            "1": 8,
+            "2": 4
+          },
+          "two_constant_control_at_001": {
+            "even_tuples": 8,
+            "allowed": 4
+          }
+        },
+        {
+          "side": 4,
+          "junctions": 64,
+          "free_parameters_before_restriction": 128,
+          "marked_rows_before_restriction": 256,
+          "marked_rows_after_restriction": 8,
+          "free_new_position_bits_after_hiding_other_bits": 56,
+          "full_even_stars_by_arity": {
+            "3": 1,
+            "4": 9,
+            "5": 27,
+            "6": 27
+          },
+          "star_counts_by_number_of_old_ports": {
+            "0": 52,
+            "1": 8,
+            "2": 4
+          },
+          "two_constant_control_at_001": {
+            "even_tuples": 8,
+            "allowed": 4
+          }
+        }
+      ]
+    },
+    "path_witnesses": {
+      "anchor_coordinate_max": 3,
+      "cut_mark_count_histogram": {
+        "0": 2408,
+        "1": 210,
+        "2": 70
+      },
+      "enclosing_box_coordinate_max": 8,
+      "junction_stars_checked": 64,
+      "max_cut_size_minus_offset_term_and_one": 24,
+      "max_path_length_minus_offset_sum": 7,
+      "monotone_axis_orders": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "paths_by_escape_case": {
+        "above_marks": 168,
+        "height_one": 56,
+        "height_two": 112,
+        "height_zero": 112,
+        "outside_footprint": 2240
+      },
+      "paths_by_source_orientation": {
+        "0": 896,
+        "1": 896,
+        "2": 896
+      },
+      "paths_checked": 2688,
+      "source_count_by_mark": {
+        "bottom_mark": 4,
+        "unmarked": 184,
+        "upper_mark": 4
+      },
+      "source_target_checks": 8064,
+      "target_offsets": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ]
+    },
+    "canonical_knotlab_cli": {
+      "ternary_betweenness": {
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "number_of_allowed_rows": 6
+      },
+      "even_3": {
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "number_of_allowed_rows": 4
+      },
+      "even_4": {
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "number_of_allowed_rows": 8
+      },
+      "even_5": {
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "number_of_allowed_rows": 16
+      },
+      "even_6": {
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "number_of_allowed_rows": 32
+      },
+      "two_junction_bond_with_original_cube": {
+        "K1": true,
+        "K2": true,
+        "K3": true,
+        "number_of_allowed_rows": 16
+      }
+    }
+  },
+  "controls": [
+    "Cut-only: all distinct pairs at sides 2, 3 and 4 have bond distance 2.",
+    "Two-constant pin instead of the old cube invalidates a full star at (0,0,1).",
+    "A breadth-first singleton-only tree that consumes every loose bit admits no nonzero finitely supported even change. A branch that leaves two seed ports forever loose admits their simultaneous flip.",
+    "Keeping all outgoing bits was required for finite conservativity."
+  ],
+  "classification": {
+    "primary": "uniform-family-theorem",
+    "additional": [
+      "constructive-existence",
+      "source-relative-capability",
+      "matched-negative-control"
+    ],
+    "validation": "Paper proof plus independent within-task finite checks and adversarial proof review.",
+    "external_novelty": "unassessed",
+    "external_referee": false,
+    "machine_formalized": false
+  },
+  "status": "Proved",
+  "review": {
+    "scope": "Fresh adversarial review within the task",
+    "outcome": "The two uniform cubic-growth results stand. The referee confirmed the finite attachment, bounds at every center, and infinite-system source condition.",
+    "integrated_qualifications": [
+      "The singleton tree control consumes every loose bit eventually. The unrestricted-ray example is a counterexample to dropping that condition.",
+      "A serial branch may visit any finite coordinate down-set first.",
+      "Only supports of three or more distinctions are knots. An absent qualifying support gives infinite bond distance.",
+      "In the restricted system the path bound reaches a forward set of targets from each center. The position-only marginal frees every new position."
+    ]
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "allowed_row_witness": {
+    "after": 5160,
+    "before": 1576,
+    "ones_after": [
+      3,
+      5,
+      10,
+      12
+    ],
+    "ones_before": [
+      3,
+      5,
+      9,
+      10
+    ],
+    "violated_junctions_after": [
+      7
+    ]
+  },
+  "allowed_rows_moved_outside_relation": 512,
+  "bond_distance_histogram": {
+    "2": 12,
+    "3": 30,
+    "4": 39,
+    "5": 45,
+    "7": 18,
+    "8": 9
+  },
+  "bond_distance_pairs_checked": 153,
+  "checks": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      3,
+      5
+    ],
+    [
+      1,
+      4,
+      7
+    ],
+    [
+      2,
+      6,
+      8
+    ],
+    [
+      3,
+      4,
+      9,
+      12
+    ],
+    [
+      5,
+      6,
+      10,
+      13
+    ],
+    [
+      7,
+      8,
+      11,
+      14
+    ],
+    [
+      9,
+      10,
+      11,
+      15,
+      16,
+      17
+    ]
+  ],
+  "history": [
+    {
+      "allowed_rows": 4,
+      "consumed": [],
+      "fresh": [
+        0,
+        1,
+        2
+      ],
+      "junction": 0,
+      "parents": []
+    },
+    {
+      "allowed_rows": 8,
+      "consumed": [
+        0
+      ],
+      "fresh": [
+        3,
+        5
+      ],
+      "junction": 1,
+      "parents": [
+        0
+      ]
+    },
+    {
+      "allowed_rows": 16,
+      "consumed": [
+        1
+      ],
+      "fresh": [
+        4,
+        7
+      ],
+      "junction": 2,
+      "parents": [
+        0
+      ]
+    },
+    {
+      "allowed_rows": 32,
+      "consumed": [
+        2
+      ],
+      "fresh": [
+        6,
+        8
+      ],
+      "junction": 3,
+      "parents": [
+        0
+      ]
+    },
+    {
+      "allowed_rows": 64,
+      "consumed": [
+        3,
+        4
+      ],
+      "fresh": [
+        9,
+        12
+      ],
+      "junction": 4,
+      "parents": [
+        1,
+        2
+      ]
+    },
+    {
+      "allowed_rows": 128,
+      "consumed": [
+        5,
+        6
+      ],
+      "fresh": [
+        10,
+        13
+      ],
+      "junction": 5,
+      "parents": [
+        1,
+        3
+      ]
+    },
+    {
+      "allowed_rows": 256,
+      "consumed": [
+        7,
+        8
+      ],
+      "fresh": [
+        11,
+        14
+      ],
+      "junction": 6,
+      "parents": [
+        2,
+        3
+      ]
+    },
+    {
+      "allowed_rows": 1024,
+      "consumed": [
+        9,
+        10,
+        11
+      ],
+      "fresh": [
+        15,
+        16,
+        17
+      ],
+      "junction": 7,
+      "parents": [
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "literal_checker_sha256": "2d5b68921439022f1290e315e7149303a6c1c135e5cc266254660a5c060c15be",
+  "menu_by_arity": {
+    "1": {
+      "illegal_after_transport": [
+        [
+          9
+        ]
+      ],
+      "legal": [
+        [
+          12
+        ],
+        [
+          13
+        ],
+        [
+          14
+        ],
+        [
+          15
+        ],
+        [
+          16
+        ],
+        [
+          17
+        ]
+      ],
+      "missing_after_transport": [
+        [
+          12
+        ]
+      ]
+    },
+    "2": {
+      "illegal_after_transport": [
+        [
+          9,
+          13
+        ],
+        [
+          9,
+          14
+        ]
+      ],
+      "legal": [
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          14
+        ]
+      ],
+      "missing_after_transport": [
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ]
+      ]
+    },
+    "3": {
+      "illegal_after_transport": [],
+      "legal": [],
+      "missing_after_transport": []
+    }
+  },
+  "relation_preserving_witness": {
+    "allowed_rows_in_common_prefix": 256,
+    "allowed_rows_moved_outside_relation": 0,
+    "alternate_eighth_check": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "alternate_eighth_junction": {
+      "allowed_rows": 1024,
+      "consumed": [
+        12,
+        13,
+        14
+      ],
+      "fresh": [
+        15,
+        16,
+        17
+      ],
+      "junction": 7,
+      "parents": [
+        4,
+        5,
+        6
+      ]
+    },
+    "alternate_only_ninth_inputs": [
+      [
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11
+      ]
+    ],
+    "bond_distance_pairs_checked": 153,
+    "common_ninth_inputs": [
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [
+        17
+      ]
+    ],
+    "first_eighth_junction": {
+      "allowed_rows": 1024,
+      "consumed": [
+        9,
+        10,
+        11
+      ],
+      "fresh": [
+        15,
+        16,
+        17
+      ],
+      "junction": 7,
+      "parents": [
+        4,
+        5,
+        6
+      ]
+    },
+    "first_only_ninth_inputs": [
+      [
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14
+      ]
+    ],
+    "same_named_allowed_rows": 1024,
+    "transpositions": [
+      [
+        9,
+        12
+      ],
+      [
+        10,
+        13
+      ],
+      [
+        11,
+        14
+      ]
+    ],
+    "witness_owners": {
+      "alternate": {
+        "9": [
+          4
+        ],
+        "12": [
+          4,
+          7
+        ]
+      },
+      "first": {
+        "9": [
+          4,
+          7
+        ],
+        "12": [
+          4
+        ]
+      }
+    },
+    "xor_of_seven_older_checks": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "row_count": 1024,
+  "transposition": [
+    9,
+    12
+  ]
+}

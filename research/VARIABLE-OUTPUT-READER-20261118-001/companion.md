@@ -16,10 +16,16 @@ Across all 1,045 reachable arrangements through six junctions, every distance-pr
 
 The first untested kind of move has three parents. Such parents need three different witnesses, one common neighbor for each pair, because a neighbor common to all three excludes the move. With just those six junctions the meeting pattern would be a six-junction ring. Its last junction would have had two earlier parents without an earlier common neighbor, so this pattern cannot arise by itself. Seven existing junctions suffice. Give the root three children, then add a junction on each of the three pairs of children. Those last three junctions can supply the eighth.
 
-As a targeted check beyond the census, let the three children introduce 3, 2 and 3 distinctions. Let their three pair joins, in the order first–second, first–third and second–third, introduce 2, 3 and 2. The seven-junction table then admits 12 distinct choices of old operands for a three-parent join. All 48 renamings preserving its full table preserve those choices, as do all 48 preserving its table through five. This checks one arrangement against its own symmetries. Comparisons against other seven-junction arrangements remain open.
+As a targeted check beyond the census, let the three children introduce 3, 2 and 3 distinctions. Let their three pair joins, in the order first–second, first–third and second–third, introduce 2, 3 and 2. The seven-junction table then admits 12 distinct choices of old operands for a three-parent join. All 48 renamings preserving its full table preserve those choices, as do all 48 preserving its table through five. This checks one arrangement against its own symmetries. The later exhaustive comparison covers every other reachable arrangement of that width.
 
-## What would settle the direction
+## Original decision test
 
 Find a rule that returns exactly which existing distinctions may be joined, using only the present bond-distance table, for every finite history under these permissions. Alternatively, exhibit two reachable tables related by a renaming that carries a legal next join to an illegal one. A symmetry of one table that does this also suffices. A failure visible only after pooling distances above five calls for checking the full table.
 
 Compare the first three-parent arrangements against all other reachable tables of the same width. Use the spurious four-distinction junction to characterize the small combined parity constraints that the fixed-three proof excluded. An exact general reader would remove the fixed-three assumption from this part of growth. A collision would identify the particular choice a distance reader cannot distinguish on this family. A rule choosing its own dimension could still admit a narrower family of histories. External novelty has not been assessed.
+
+## Outcome at width eighteen
+
+The designated seven-junction example has a direct rule for its eighth join. The legal three-parent choices are exactly the twelve triples whose mutual bond distances are 6, 8 and 8. They survive comparison with all 3,495 reachable width-eighteen arrangements. Every three-parent menu at this width survives every exact table symmetry.
+
+The all-size question about the complete menu is settled negatively. Two reachable ways to add an eighth junction agree on every one of the 1,024 allowed states on the same eighteen distinctions, yet give different single and two-parent choices for the ninth. The seven older parity equations make the two eighth equations equivalent. Each construction consumes a different member of three pairs of loose distinctions. [Width-eighteen study and explicit witness](../VARIABLE-OUTPUT-READER-20261118-001A/first_three.md)

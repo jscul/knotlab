@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "experiment_id": "BOND-METRIC-20261118-001B-E001",
+ "ticket": "BOND-METRIC-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Is bond distance a metric on every base? Census of the triangle inequality on parity bases, on bases of copies of each of the eight non-parity three-place languages, on not-all-equal bases whose knots meet at most once, and on not-all-equal tori.",
+ "definitions": {
+  "bond": "S with non-full projection and every (|S|-1)-subset projection full",
+  "bond distance": "least bond holding both, minus one; infinite when none",
+  "failure": "b(x,z) > b(x,y) + b(y,z) on three distinct distinctions, an infinite left side against a finite right side included",
+  "language": "a three-place law up to reordering places and switching every value at once"
+ },
+ "public_inputs": {
+  "code": "metriclib.py (sha256 d32edec48f906113e91cca2a208ba03fb91a02046379226b96cfea670035639d), job.py (sha256 d6565059aa4112bfb67270fcf983cb95e4418963d7a9599d4d4d8c47e1a3feb6), merge.py (sha256 8f774c5a5071060d23488a5ccf4a616ba64a5a960d72b9c886ff4f4b2e6cbf5a), checks.py (sha256 3e9c07f1f45e77081cc9406d05ce2428d727890ac8882044f99292cc37537866)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "checks.py imports FREE-READ's freelib.py and the FREE-READ referee's referee_free.py as separate implementations"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "P1-P6 (with P3b) of research/BOND-METRIC-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates: separate bond searches, the planted violation, the exhibits of every language.",
+ "predictions": {
+  "P1": "parity bases: b satisfies the triangle inequality",
+  "P2": "parity bases: b - 1 too",
+  "P3": "six languages (NAE, betweenness, clause, twisted clause, R6, twisted R6) fail on two knots on four distinctions",
+  "P3b": "the two R5 languages: no failure within six distinctions and four knots",
+  "P4": "pure NAE meeting at most once on seven distinctions: no failure",
+  "P5": "pure NAE meeting at most once on eight distinctions with at most four knots: no failure",
+  "P6": "every infinite failure under pure NAE has its long pair correlated (exact test)"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; proof; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py (BOND-METRIC-B1), about 20 minutes",
+ "amendments": []
+}

@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MEET-DIST-20261118-001B-E001",
+ "ticket": "MEET-DIST-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "After k new distinctions of KF3, how much of the knots' nesting (the bare bracketing) does a grown base's table of disagreement counts reveal, in law and per sample, compared with a bag-of-knots null and an unlabelled multiset ablation?",
+ "definitions": {
+  "table class": "(N, disagreement table) up to renaming",
+  "information fraction": "mutual information between the bare bracketing and the table class over the bare bracketing's entropy, prior uniform over labelled presentations of one labelling",
+  "null": "k distinct knots chosen uniformly and revealed as fills, no growth",
+  "multiset": "N with the sorted multiset of table entries"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 0a17ea2b01a82b2a072a8620bf438c5462a1be71e4ed36cdbbd4fed561f61c57), checks.py (sha256 0ecc4dac73e741dbd27207a5bf36b20bf3bf7e590fda3966c79df2000a9a75ac), merge.py (sha256 f447822aa830628670bb3a6eb735530f1d9f96d20c9612d22270da67d715e637), melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4, MEET-ORDERS-20261118-001B's engine unchanged)",
+  "run": "scripts/longrun.py launch job.py (315 cases), then merge.py"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "D1-D5 of research/MEET-DIST-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "k = 0 (one law); the bag-of-knots null; the multiset ablation.",
+ "predictions": {
+  "D1": "in law, different bare bracketings differ from k = 1",
+  "D2": "in law, non-mirror presentations differ from k = 2",
+  "D3": "information fraction largest at k = 1 or 2 and smaller at the last k",
+  "D4": "KF3 below the null at every k >= 2 where it exists",
+  "D5": "multiset below the full table from k = 2"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "12 workers, 1 GB per case; registered as MEET-DIST-B1."
+}

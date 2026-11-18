@@ -120,3 +120,19 @@ hub-free) and G16 checkpoint (capability gained: the knot test's K2 as the rule 
 no goal changed.
 
 **Assumptions:** A97 gains this study; no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** the distance is mended, and the mend is the knot test's own rule. The first distance went wrong on big trees because a
+hub of many distinctions bound to one gets an outsized binding: it needs 32 copies, i.e. 16 knots on one distinction (proved). The
+fix is to count only sets that are bound and contain no smaller bound set holding the pair, which is K2 ("forget any one and the
+rest is free") said of cumulants. The repaired distance ignores hubs (proved). It equals the count's τ wherever two distinctions
+correlate and bond distance minus one on parity bases (proved). It is steps apart on every not-all-equal tree, every parity tree,
+and every mixed tree whose path has no parity knot (proved). On every six-knot tree under every mix of laws, it is steps apart on
+all 94,848 pairs (computed). One mixed case is still unproved. 4 of 4 frozen predictions held. The epic is closed with the referee
+pending.
+
+The position table, the next-step line and the three directions as in Position above.
+
+**Corrections:** one Block, already reported, on CUMULANT-DIST's "every knot tree"; none for this study. **Goals:** G1 and G16
+checkpoints (capability gained). **Assumptions:** A97 gains this study.

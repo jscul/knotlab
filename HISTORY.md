@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: what decides the copy step; a reading withdrawn (Block), a sign found
+
+- The study of what SEED's copy step reads (`COPY-CLASS-20261118-001`) was refereed with fresh code. Its facts stand. Every new
+  crossing joins splits separating the fill's two end pairs, so the copy is decided on those splits and the crossings of a model
+  split (proved) ([decision note](research/COPY-CLASS-20261118-001/copy_class.md)).
+- **Withdrawn (Block):** the reading that the fill's own pairs name the split it copies. The rule behind it restated the rule it was
+  checked against, and agreed trivially.
+- Found by the referee instead, so far by computation: a fill is a copy step exactly when its far end pair is separated by every
+  split that crosses something. That is one simple sign, but it reads every crossed split.
+
 ## 18 November 2026: the copy step, confirmed by the referee; a local necessary sign found
 
 - The study of SEED's copy step in the knots (`COPY-READ-20261118-001`) was confirmed by its referee with fresh code, with no Block.

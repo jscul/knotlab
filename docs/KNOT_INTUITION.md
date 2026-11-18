@@ -676,13 +676,12 @@ pulls a split in (566 in nearly 1.8 million) shows the same shape of betweenness
 which fewer than 2 in 100 of the others share
 ([decision note](../research/COPY-READ-20261118-001/copy_read.md)).
 And within that shape (`COPY-CLASS-20261118-001`, proof and frozen computation,
-referee pending), the three knots each have a job: one holds the loose split,
-the middle one says what it will come to cross, and the third points at an
-existing split whose crossings it must copy. Whether the copy is exact can be
-checked on the splits those knots' own pairs touch, and that check matched SEED
-on every one of 85,202 fills (found after the frozen guess had the roles the
-wrong way round). But it compares crosser sets, and in a grown grid a split's
-crossers are one whole order
+refereed, with a Block on its first reading)? The copy step is decided on the
+splits that separate its two end pairs. No knot of it points at a split to copy;
+a rule claiming that only restated SEED's own condition. What does decide it, by
+the referee's finding, is one sign: the far end pair is separated by every
+crossed split. That sign needs no comparison of crossings, but checking it means
+looking at every crossed split
 ([decision note](../research/COPY-CLASS-20261118-001/copy_class.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?

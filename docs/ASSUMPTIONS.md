@@ -2940,10 +2940,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
-  - 2026-11-18 · `COPY-CLASS-20261118-001` ([decision note](../research/COPY-CLASS-20261118-001/copy_class.md); referee pending)
-    found the copy step named by the fill's own pairs: the model whose crossers the absorbed split copies lies among the crossed
-    splits of the end pair not touching the middle knot's pair (post hoc, exact on 85,202 fills, held out). But the check reads that
-    model's crossers, a whole order in a full grid. Status unchanged.
+  - 2026-11-18 · `COPY-CLASS-20261118-001` ([decision note](../research/COPY-CLASS-20261118-001/copy_class.md); refereed, Block on
+    its reading) proved that the copy step is decided on the splits separating the fill's two end pairs and a model's crossers. Its
+    claim that the fill's own pairs name the model was withdrawn: the rule restated SEED's clause. The referee found one sign that
+    decides it, the far end pair separated by every crossed split, which reads every crossed split. Status unchanged.
   - 2026-11-18 · `COPY-READ-20261118-001` ([decision note](../research/COPY-READ-20261118-001/copy_read.md); refereed) found
     that SEED's copy step, which grows two orders over the whole line, is not decided by the fill's own knots or the betweenness
     among its distinctions, but every copy step met has one closure picture, shared by under 2% of crossing-making fills (the

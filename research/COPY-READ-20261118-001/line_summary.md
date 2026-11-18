@@ -77,10 +77,13 @@ each step do it?
 - **The rule reading only the fill's knots, with knot-sharing,** starved: exactly one fill per run, then only lengthening, in 210 of
   210 runs to 60 distinctions. (`MID-RULE-20261118-001`)
 - **What decides the copy step** (proved and computed). Every new crossing joins splits separating the fill's two end pairs, so
-  the copy is decided on those splits and a model's crossers. The frozen local rule had the knots' roles the wrong way round and
-  failed. Swapped (post hoc), the model lies among the crossed splits of the end pair not touching the middle knot's pair, and the
-  rule agreed with SEED on all 85,202 crossing-making fills, held out on four fifths of the starts. It names only the fill's own
-  pairs, but reads a model's crossers, a whole order in a full grid. (`COPY-CLASS-20261118-001`, referee pending)
+  the copy is decided on those splits and a model's crossers (proved).
+  - The frozen local rule accepted no copy step, because its candidate set was always empty.
+  - The "swapped" rule agreed with SEED everywhere, but trivially: it is SEED's own clause.
+  - *Corrected after the referee (Block on the reading "named by the fill's own pairs"):* what decides the copy step, by the
+    referee's exploratory finding, is one sign: the far end pair is separated by every crossed split. It held on 2,916 copy steps
+    and none of 196,292 refused fills, and it reads every crossed split.
+  - (`COPY-CLASS-20261118-001`, refereed)
 - **The copy step** (pulling an uncrossed split into the grid without adding an order) is rare: 566 among about 1.8 million
   crossing-making fills, all early. No reading of its own knots or the betweenness among its distinctions decides it. But all of
   them fall in one closure class, which holds under 2% of crossing-making fills (the referee's count: 528 of 528, lift 57).
@@ -102,6 +105,9 @@ All logged in `docs/CORRECTIONS.md` with knotlab's `HISTORY.md`:
   of 24, one step out is most of the base and could not be tested (Narrowing).
 - `COPY-READ-20261118-001`: "no sign" became "no exact reading, but one closure class holding every copy step and under 2% of
   crossing-making fills" (Narrowing).
+- `COPY-CLASS-20261118-001`: **Block on a reading.** "The copy step is named by the fill's own pairs" withdrawn, along with its G1
+  capability. The agreement was SEED's own clause restated. The referee's sign (the far end pair separated by every crossed split)
+  decides the step and reads every crossed split.
 - `MID-RULE-20261118-001`: "keeps two orders, told no number, reading only the fill's knots" scoped. Knot-local it never fills again,
   free it grows full grids only from a spanning first fill or 2 × 2, and the free fill is a given (Narrowing). "Any base" means any
   base of betweenness knots (Not a block).

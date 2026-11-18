@@ -513,6 +513,14 @@ another and back always costs three times their steps apart. A knot holding
 both must close such a cycle, so it has at least the steps apart plus two
 members (proved)
 ([decision note](../research/WEAVE-HEIGHTS-20261118-001/weave_heights.md)).
+And how much more, at the rim (`RIM-EXCESS-20261118-001`, proof and frozen
+census, referee pending)? A bond, visited in the right order, is a closed route
+exactly as short as the heights allow, so bond distance is the steps apart plus
+one plus how much longer the shortest bond's route is than the plain round
+trip. On every patch without holes up to twelve knots that extra length is
+zero except on lone pairs of opposite classes facing each other, and there it
+is at most two. Whether it can grow without limit is open
+([decision note](../research/RIM-EXCESS-20261118-001/rim_excess.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

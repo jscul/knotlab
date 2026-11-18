@@ -1036,6 +1036,10 @@ evidence: results and their status come from the records each entry links.
   carry, for example a hub chain in two dimensions whose chain balls are round. The cheapest test measures chain balls on a plane of
   gated knots against the grid it is drawn on.
 - **History.**
+  - 2026-11-18 · `RIM-EXCESS-20261118-001` ([decision note](../research/RIM-EXCESS-20261118-001/rim_excess.md); referee pending):
+    the excess form. On weave patches without holes bond distance is steps apart + 1 plus an excess that is the least bond polygon's
+    extra length over the round trip; to twelve knots it lives only on lone pairs of opposite classes facing each other, at most 2;
+    growth open. Status unchanged.
   - 2026-11-18 · `WEAVE-HEIGHTS-20261118-001` ([decision note](../research/WEAVE-HEIGHTS-20261118-001/weave_heights.md); referee
     pending): on weave patches without holes bond distance is at least steps apart + 1, proved through the height function (with an
     exact criterion for constrained sets); its excess at the rim is open. Status unchanged.

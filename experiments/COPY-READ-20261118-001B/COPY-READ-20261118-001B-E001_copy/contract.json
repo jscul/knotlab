@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "COPY-READ-20261118-001B-E001",
+ "ticket": "COPY-READ-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Can the knots near a crossing-making fill tell SEED's absorbing fills from refused ones?",
+ "definitions": {
+  "absorbing": "accepted by SEED after the switch while making a new crossing",
+  "held-out": "classes learnt on even start indices, scored on odd"
+ },
+ "public_inputs": {
+  "code": "copylib.py (sha256 daf0012ffc2331410725f7a6663a74327fafa8d525d920732907a8fa76bd2637), run.py (sha256 fd3ee7824c456e2df096512639456dbc053195e48cc7171c5b32d9a7685c1038), checks.py (sha256 ec827433a4ab5bf9d519292e748e14e868046c4e17ff7a1ecd13e32d42d1cd37); experiments/KEEP-READ-20261118-001B/KEEP-READ-20261118-001B-E001_keep/keeplib.py (sha256 5f20d1cb1922c2e7f742da75e1865a2ead70550533e1d963f0379b67a3eef175)",
+  "run": ".venv/bin/python -B run.py --procs 8"
+ },
+ "forbidden_inputs": [
+  "Changing tiers, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P4 of research/COPY-READ-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "Coverage of the radius-one ball; share of test classes seen.",
+ "predictions": {
+  "P1": "absorbing < 1% of crossing-making fills",
+  "P2": "tier 0 and closure clean witness 0",
+  "P3": "tier 1 held-out: < half of test absorbing extensions have a seen clean class",
+  "P4": "median n of absorbing offers < 15"
+ },
+ "decision_rules": {
+  "tier reads": "clean witness for every absorbing extension, pooled and held-out",
+  "obstruction": "an absorbing extension with every knot set alike to a refused move"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "About 30 minutes on 8 processes.",
+ "amendments": []
+}

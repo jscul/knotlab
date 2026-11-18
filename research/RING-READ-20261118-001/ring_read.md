@@ -52,8 +52,8 @@ Stress test one size past (after the frozen runs, not pre-registered; `check.py 
 | 22 | 687 | 2,572 | 9 | exact | equal | 8 |
 | 25 | 1,024 | 4,110 | 10 | exact | equal | 9 |
 
-Stress test pending: the round-25 table at sides of up to six against seven junctions (registered as `RING-READ-S25` in the
-long-running index; the reader above read the six-junction table).
+The round-25 table at sides of up to six against seven junctions (`stress_tables_25.json`, registered as `RING-READ-S25`):
+all 8,443,995 entries agree.
 
 
 ## Predictions and verdicts
@@ -136,7 +136,7 @@ distances exactly up to the largest junction less one; the junction graph is 3-c
 ## Limitations
 
 - Computed at seven rounds and two more in the stress test, not proved for every round. The table's completeness for bonds with two sides of
-  more than six junctions is checked by agreement to eight, not proved.
+  more than six junctions is checked by agreement to eight (to seven at round 25), not proved.
 - Uniqueness is the reader's: the repair step had nothing to repair, so this does not show that no other legal incidence has the
   same table. With 3-connectivity, a second incidence would need different allowed states with the same table, the kind found at
   width 32 under the other law (`VARIABLE-OUTPUT-READER-20261118-001E`). Not searched.
@@ -178,14 +178,14 @@ study, status unchanged; none new. **Basket:** B196, B202, `BOND-BALLS-20261111-
 ideas 3 and 4, recorded this session) are #4 and #5 here.
 
 
-## Final report as sent (2026-11-18 23:49 UTC)
+## Final report as sent (2026-11-18 23:50 UTC)
 
 **Outcome:** yes, through round 25. The bond-distance table alone gives back the ring of four four-place knots and one five-place knot, with no names, rounds or parents, and one round grown from it is the true next round. Closed, referee pending.
 
 - **What was read.** At rounds 10 to 20 the largest junctions have 7, 8 and 9 distinctions (526 junctions at round 20). A stress test one size past went to round 25: 1,024 junctions, up to ten distinctions. A new reader gets every junction exactly at every round. It keeps what it has already read and sets aside the short pairs that sums of junctions already read explain. It needs distances exactly as far as the largest junction less one, and one less fails. The growth rule needs nothing beyond the junctions, because it only reads which junctions still have loose distinctions.
 - **Why the old reader failed.** Codex's proved reader assumes three junctions added together always leave at least seven distinctions. Near the ring's start that is false. At round 10 the failure comes from a path through the one three-distinction junction (3 + 4 + 4 − 4 = 7), which is a different obstruction from Codex's newest. From round 15 it also comes from cycles of four four-place junctions, which is Codex's obstruction kind (VARIABLE-OUTPUT-READER-001H), one size larger. A repair step rescued rounds 10 to 14 but nothing after that.
 - **Rigid.** No two junctions cut the rest apart at any round. By Whitney's theorem, the allowed states therefore fix the junctions.
-- **Not shown.** This does not show that no other legal arrangement has the same table. It is computed, not proved for every round. One check is still running: the round-25 table compared at two enumeration sizes, registered as long-running.
+- **Not shown.** This does not show that no other legal arrangement has the same table. It is computed, not proved for every round. The stress check of the table itself also passed: at round 25, all 8,443,995 entries agree between the two enumeration sizes.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |

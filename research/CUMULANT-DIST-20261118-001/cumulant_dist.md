@@ -33,8 +33,10 @@ It is read from the allowed states alone, and it ignores both the distinctions' 
   the two laws, and to six knots under one law). *Corrected the same day:* it fails on large not-all-equal trees with a hub. Hang
   32 knots on x and take one distinction from each together with x and y: their joint cumulant is the 34th cumulant of a fair coin
   times (−1/3)^(32 + k), and the coin's cumulants grow factorially, so with k ≥ 33 steps the distance falls below steps apart
-  (proved; 65 knots; asymptotically it is O(k/log k)). See Correction. Bond distance gives parity trees this and not-all-equal ones nothing; the disagreement count gives
-  not-all-equal trees this and parity ones nothing; this one distance gives both, and their mixtures.
+  (proved; 65 knots; asymptotically it is O(k/log k)). See Correction. *Corrected the same day (second correction):* bond distance
+  gives this too, on every knot tree under any mixture of the laws (it is steps apart plus one there; `FREE-READ-20261118-001`), so
+  on trees this distance adds nothing to bond distance; the disagreement count gives not-all-equal trees this and parity ones
+  nothing.
 - **On parity bases it is bond distance minus one** (proved; checked on 7,450 pairs of 300 random bases), so it keeps everything
   bond distance read there, the cube of three orders grown from one knot included.
 - **On not-all-equal bases it is the count's τ where pairs carry the binding**: exactly so on a chain grid (every pair of a 4 × 4
@@ -51,9 +53,9 @@ It is read from the allowed states alone, and it ignores both the distinctions' 
 | Base | δ | Bond distance | Count (τ) |
 | --- | --- | --- | --- |
 | One knot, either law | 1 on every pair | 2 (one knot), offset 1 | parity: blank; not-all-equal: 1 |
-| Knot trees, any mixture of laws | steps apart (proved for parity, computed for the rest) | steps apart + 1 for parity, 2 on not-all-equal pairs | steps apart on not-all-equal trees, blank on parity |
+| Knot trees, any mixture of laws | steps apart (proved for parity, computed for the rest) | steps apart + 1 under any mixture (corrected; `FREE-READ-20261118-001`) | steps apart on not-all-equal trees, blank on parity |
 | Parity bases | least circuit − 2 = bond distance − 1 (proved) | the reading | blank |
-| Chain grid (4 × 4 patch) | τ on every pair (computed) | 2 on co-knotted pairs, no ruler | τ |
+| Chain grid (4 × 4 patch) | τ on every pair (computed) | not computed (an earlier "no ruler" here was unchecked; withdrawn) | τ |
 | Weave patch, radius 2 | τ except 3 pairs where τ is 4 to 4.9 and δ 3.1 to 3.2 | steps apart + 1 | τ |
 | Parity rings | steps apart from five knots; shortened at three, four | the ring's circuit | blank |
 | Not-all-equal rings | τ, above and below steps apart | — | τ |
@@ -82,8 +84,11 @@ the far corner (P9).
 
 ## What it means for A97
 
-The owner's premise is that distance is the only form of information. Until now each law needed its own distance: bond distance
-for parity, the disagreement count for not-all-equal. One distance read from the states, built from how strongly sets of
+The owner's premise is that distance is the only form of information. *Corrected the same day:* this paragraph first said that
+each law needed its own distance, bond distance for parity and the disagreement count for not-all-equal. On knot trees that is
+false: bond distance is steps apart plus one under either law and any mixture (`FREE-READ-20261118-001`); the two readings part on
+bases with cycles, where bond distance counts steps (polygons) and the count carries the information (round outlines, and it
+determines every not-all-equal base). One distance read from the states, built from how strongly sets of
 distinctions are bound beyond their parts, reads both alike on small trees of knots and on every parity tree, and reduces to each
   on its own law's bases; on large not-all-equal trees with a hub it falls below steps apart (see Correction). So
 for knots the premise can be met with one distance. What it does not read is the value convention: the orders a betweenness growth

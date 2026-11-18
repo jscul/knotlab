@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: bond distance already reads both knot laws on trees
+
+- The cumulant-distance study (`CUMULANT-DIST-20261118-001`) said bond distance, the smallest knot holding both distinctions, reads
+  parity trees but not not-all-equal ones. That was wrong: on every knot tree, under either law and any mixture, bond distance is
+  steps apart plus one (proved in `FREE-READ-20261118-001`), as the record already had on the weave. So on trees the cumulant
+  distances add nothing to bond distance; the two kinds of reading part on bases with cycles.
+  ([decision note](research/CUMULANT-DIST-20261118-001/cumulant_dist.md))
+
 ## 18 November 2026: the repaired distance, refereed; sound on trees, a relative of K2, not K2
 
 - The study that repaired the cumulant distance (`TREE-STEPS-20261118-001`) was confirmed by its referee on trees and on bases with one

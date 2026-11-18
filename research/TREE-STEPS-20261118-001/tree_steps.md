@@ -65,7 +65,9 @@ k ≥ 3 it fails the triangle inequality through z (3 > 2.002).
 
 Sub-goal B200 asked for one distance read from the states that reads parity and not-all-equal bases alike. The first attempt
 (`CUMULANT-DIST-20261118-001`) did on small trees and failed on large ones through a factorial growth of cumulants. The repaired
-distance, irreducible in cumulants, keeps the unification on trees and removes the failure: on every knot tree checked it is one
+distance, irreducible in cumulants, keeps the unification on trees and removes the failure (but bond distance, which reads
+freedom, already gives steps apart plus one on every knot tree under any mixture, `FREE-READ-20261118-001`; corrected the same
+day): on every knot tree checked it is one
 step per knot under either law, and on each law's own bases it is that law's established reading (τ, bond distance). The premise that
 distance is the only form of information gains a single distance for both laws, read from the states. It still ignores which value
 is called 1 (A103), so split grids remain a ring. A97 stays under challenge, with this study added.

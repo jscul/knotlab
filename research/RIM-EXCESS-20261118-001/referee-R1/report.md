@@ -191,10 +191,10 @@ states, as in DOUBLE-MEET-R1, and walk weights from WEAVE-HEIGHTS-R1.
 ## Files
 
 - **`referee_rim.py`.**
-- **`referee_rim_lemmaP.json`, `_validate.json`, `_validate_big.json`, `_random.json`, `_finish.json`, `_k13.json`, `_k14.json`**, and
-  `times.log`.
+- **`referee_rim_lemmaP.json`, `_validate.json`, `_validate_big.json`, `_random.json`, `_finish.json`, `_k13.json` and `_k14.json`.**
 
-Reproduce, from `research/RIM-EXCESS-20261118-001/referee-R1/`, one part per command (16 workers; the minutes are in `times.log`).
+Reproduce, from `research/RIM-EXCESS-20261118-001/referee-R1/`, one part per command (16 workers). Wall times: lemmaP 26 s, validate
+7 min, validate_big 3 min, random 5 min, finish 9 min, k13 7 min, k14 18 min.
 
 ```sh
 for p in lemmaP validate validate_big random finish k13 k14; do

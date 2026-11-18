@@ -129,3 +129,17 @@ sub-goal B198.
 **Assumptions:** A97 under challenge, with this finding added; A99 and A100 gain this study among what rests on them; no new entry.
 
 **Basket:** read; `MEET-GROW-20261118-001#1` taken by this epic.
+
+## Final report as sent
+
+Posted in the project thread at about 04:18 UTC on 18 November 2026 (the tables are those of the Position section above, with the
+directions shortened):
+
+> **Third study done (referee pending): why the meeting pattern grows the same wherever it sits is now proved.** Read a
+> presentation's knots as a ring of distinctions cut at the line's two ends. Move the cut one step and keep each distinction's odd
+> set. Some knots then change which distinction they hold between the other two, but each still rules out exactly the same states.
+> So KF3's choices correspond one for one, with the same chances. This holds for every size, until a step adds a state. The cut
+> decides only how many orders the grown knots line up into. The frozen check passed at all 74,972 reached states of every
+> presentation of 5 to 9 distinctions (3 of 3 predictions).
+>
+> Corrections: none new. Goals: G16 checkpoint. Assumptions: A97 under challenge, with the placement independence proved.

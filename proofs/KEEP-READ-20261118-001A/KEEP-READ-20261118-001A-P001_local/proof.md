@@ -33,7 +33,9 @@ are isomorphic.
   t₂. Their old distinctions and middles correspond by x ↦ x, c ↦ c, y ↦ y.
 - *If t₁ and t₂ cross,* r is the empty cell, and two orders are kept (N5).
 - *If they are nested in one chain,* r makes them cross, and λ rises by one at a full grid (S4).
-- *The bases exist.* Both occur on full grids, at a corner and along a row. ∎
+- *The bases exist.* The raising case occurs along a row of any full grid with a chain of two splits. The keeping case needs an
+  empty cell at a corner, as in the new row after a subdivision (on a full grid such a corner lands on an occupied cell, a copy;
+  wording corrected after the referee). ∎
 
 **R2.**
 - *Exactness needs a clean witness.* A rule reading a tier decides each knot set by its picture alone, so it treats a whole picture

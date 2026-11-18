@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: what keeps two orders after the switch, confirmed by the referee; narrowed
+
+- The study of what the knots read in the second phase of the rule that keeps two orders (`KEEP-READ-20261118-001`) was confirmed by
+  its referee with fresh code, with no Block. A fill completing a square's corner and one twisting three distinctions in a row use
+  the same three knots, and about a fifth of the fills that keep two orders look, in their own knots and in the betweenness among
+  their distinctions, like fills that add a third order. A new distinction in the middle of two or more of its knots never added an
+  order ([decision note](research/KEEP-READ-20261118-001/keep_read.md)).
+- Narrowed: this shows that no reading of a fill's own knots suffices; whether the knots one step further out do could not be
+  tested on bases of 24, where that step takes in most of the base.
+
 ## 18 November 2026: where the second order enters, read in the knots, confirmed by the referee; scoped
 
 - The study of what the knots read when nothing crosses yet (`KNOT-SWITCH-20261118-001`) was confirmed by its referee with fresh

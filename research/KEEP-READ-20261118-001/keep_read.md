@@ -1,7 +1,8 @@
 # What the knots read in SEED's second phase
 
 Epic `KEEP-READ-20261118-001`, 18 November 2026, by Claude. It takes `KNOT-SWITCH-20261118-001`'s first direction, chosen by the
-coordinator. Goals G1 and G16; challenges A101. Referee pending.
+coordinator. Goals G1 and G16; challenges A101. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block,
+folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `5d06adb51` at 08:53:13 UTC.
@@ -17,6 +18,9 @@ the distinctions it uses, leave about one in five of the fills that keep two ord
 Reading one step further already takes in most of the base on these sizes, and still leaves a few undecided. So what keeps two
 orders after the switch is not visible near the move. It is the crossing of splits, which depends on the whole base.** One local
 sign works in one direction: when the new distinction is the middle of two or more of its knots, the fill never raises the orders.
+*Narrowed after the referee:* the fair statement is that no reading of a move's own knots, or of the betweenness among its
+distinctions, is SEED's second phase; one step out could not be tested on bases of 24, where the radius-one ball holds 88% of the
+base and most of its picture classes are met once. "The deciding fact is a crossing, which is global" is an interpretation.
 
 - **At the move's own knots (tier 0) and at the betweenness among its distinctions (closure tier):** the best possible rule
   recognises 79% of the extensions that keep two orders, and 82% of those SEED accepts (R2's clean-witness fraction). 310 and 392
@@ -99,6 +103,26 @@ for all of an extension's knot sets. It also proposed:
 - the predictions P2 to P5, three of which missed.
 
 It was not consulted after the read-out.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code and exact isomorphism classes:
+confirmed with fixes, no Block.
+- **Replication.** With its own seeds: 37,302 extensions after the switch, 3,636 keeping two orders, of which SEED refuses 146. At
+  tier 0 there are 17 exact classes, with clean-witness fractions 0.813 (keeping) and 0.847 (SEED's acceptance), against this
+  study's 0.790 and 0.825. The closure tier adds 0.0003.
+- **The safe sign.** "Two or more middle knots" never raises: 634 extensions at n ≤ 24 and 2,179 on bases to n = 40. Every raising
+  extension has at most one middle knot.
+- **R2** is right as a bound on rules.
+
+Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (wording).** "No local reading of the knots" overreaches. It now reads: no reading of a move's own knots, or of the
+   betweenness among its distinctions, is SEED's second phase; one step out could not be tested on bases of 24.
+2. **Not a block.** Tier 1 (and tier 2) is uninformative as positive evidence. 482,120 of 587,854 tier-1 classes are met once, and
+   only 1,098 of 3,457 keeping extensions have a knot set in a repeated class, so 0.997 and 1.0 mostly measure sparsity. The 3
+   look-alike pairs remain a valid obstruction but say nothing about locality. A positive claim needs held-out scoring.
+3. **Not a block.** R1's "both occur on full grids" is loose: on a full grid a corner across crossing splits lands on an occupied
+   cell (a copy); the keeping case needs an empty cell, as after a subdivision.
 
 ## Position
 

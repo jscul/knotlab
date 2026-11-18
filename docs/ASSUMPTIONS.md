@@ -2900,9 +2900,9 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
-  - 2026-11-18 · `KEEP-READ-20261118-001` ([decision note](../research/KEEP-READ-20261118-001/keep_read.md); referee pending)
-    found that keeping two orders after the switch is not a local reading of the knots: a move's knots and the betweenness among
-    its distinctions leave a fifth of the keeping fills looking like raising ones. The one free step is read locally, the keeping
+  - 2026-11-18 · `KEEP-READ-20261118-001` ([decision note](../research/KEEP-READ-20261118-001/keep_read.md); refereed) found
+    that keeping two orders after the switch is not a reading of a move's own knots or of the betweenness among its distinctions:
+    those leave a fifth of the keeping fills looking like raising ones (one step out could not be tested on bases of 24). The one free step is read locally, the keeping
     is not. Status unchanged.
   - 2026-11-18 · `KNOT-SWITCH-20261118-001`'s referee (R1): the knot reading holds both ways along these growths only; in general
     a filled knot forces a crossing but a crossing rarely brings one. SEEDK must still be told to stop being free once the knots

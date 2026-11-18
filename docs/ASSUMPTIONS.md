@@ -2611,6 +2611,9 @@ evidence: results and their status come from the records each entry links.
   carries all its information and decays at a fixed rate, but oscillates, so it steps outward only in envelope. Its referee found
   that `WEAVE-MIX-20261117-001`'s third survivor, decoupled into strips of two columns, is a one-way ruler with full information
   that decreases strictly from every start. So on the weave the one-way premise is met and the two-way one is not.
+  `LOCAL-ROOM-20261118-001` ([decision note](../research/LOCAL-ROOM-20261118-001/local_room.md); referee pending) showed that no
+  reach limit read from the states holds two orders and fills them, and that one remembered class per split does: knots only
+  across the two classes grow full two-way grids forever.
   `MEET-ORDERS-20261118-001` ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md); referee pending) found
   which information that is. The fewest-knot presentations of a line are its bracketings, which knot lies within which half of
   which (proved), and under KF3 the chance of two orders after the second new distinction is an exact formula in the bracketing

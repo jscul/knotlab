@@ -468,6 +468,18 @@ found that another survivor, which falls apart into independent strips two
 distinctions wide, does step outward strictly along each strip: a one-way
 ruler that carries all its information. The two-way one is still missing
 ([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md)).
+Can a local law hold two orders and fill them like a grid
+(`LOCAL-ROOM-20261118-001`, proof and frozen computation, referee pending)? Not
+one that limits only how far a knot reaches, read from the states. The corner of
+a square and three distinctions in a row are the same distances apart, so such a
+limit allows both fills or neither: the cube, or no fill at all (proved). Under
+the tightest reach no cell is ever filled, but two orders made in the first
+steps last, and both keep growing, woven as thinly as possible. What does hold
+two orders and fill them is memory: if each split remembers which of the two
+orders it belongs to, and knots may only join across the two, the cheapest
+growth builds a full grid, row by row, forever. The memory is given at the
+start, by the first square
+([decision note](../research/LOCAL-ROOM-20261118-001/local_room.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
 Because the knots nest. Every presentation of a line by the fewest knots is a

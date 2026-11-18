@@ -2640,7 +2640,9 @@ evidence: results and their status come from the records each entry links.
   0.91 at six; in law they carry all of it from the first new distinction. So the share the unnamed distances miss is held in the
   order of growth, which is history, not distance; whether that order can be read from the grown base without names is open.
   In the finite pure parity growth family, bond distances through five determine every junction and the full set of next joins at every size. This includes the cubic rounds and all legal serial rearrangements. All 552 presentations through seven junctions were independently checked within the task. [Proof and checks](../research/BOND-NEXT-JOIN-20261117-001/next_joins.md)
+  With the original eight betweenness distinctions attached, two mixed presentations have identical full states on the same 36 distinctions. One permits a complete next round of eleven joins and the other cannot run a complete round. The difference persists through one more common join. [Proof and checks](../research/MIXED-NEXT-JOIN-20261117-001/hidden_eight.md)
 - **History.**
+  - 2026-11-18 · `MIXED-NEXT-JOIN-20261117-001` proved that the full states can lose which distinctions the growth rule has used, even with the original eight identified.
   - 2026-11-18 · `BOND-NEXT-JOIN-20261117-001` proved a constructive positive case for pairwise bond distance at every finite stage of the specified pure parity growth law.
   - 2026-11-18 · `MEET-DIST-20261118-001`: one grown base's unnamed distances carry part of the nesting, the order of growth
     the rest (computed; its referee's Block corrected the first reading "lost, not hidden"); status unchanged.

@@ -1,0 +1,53 @@
+{
+ "schema_version": 1,
+ "experiment_id": "COUNT-BALLS-20261118-001B-E001",
+ "ticket": "COUNT-BALLS-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "How do the disagreement count's balls grow and what do their outlines look like on the endless six-regular weave under not-all-equal and on chain grids (exact infinite-plane correlations), and does ball growth read how many orders a grown split base has, without names?",
+ "definitions": {
+  "C": "1 - 2d/N for two distinctions, d their disagreement count",
+  "tau": "-log_3 |C|",
+  "A": "sqrt(r) C, r the literature's Euclidean separation",
+  "ball": "distinctions with C >= u (raw count below N/2) or tau <= tau0",
+  "outline": "ball members with one of their count-nearest distinctions (six on the weave, four on the chain grid) outside the ball",
+  "k": "least colours of the splits' crossing graph",
+  "lam": "Eppstein's lattice dimension",
+  "reading a": "multiset of sorted count rows",
+  "reading c": "multiset of sorted state Hamming rows"
+ },
+ "public_inputs": {
+  "code": "weave.py (sha256 0373a26e85b966d5fd02c791478cc6a43b223863ff6865a4e9eff76c70e8489f), chain.py (sha256 602b630216777063b19fcecbd02b443f3a228ba1f30c82cb305f3a5ab2443ab9), outline.py (sha256 297ec89fd12fb731d39b596ac3d02713dcc2b64250e92b28675024f45cc01a2d), census.py (sha256 b38d8bfcd5aceed668b9cfd52cab840f840745499f17fb7babe996098cfd8805), run.py (sha256 9eec1d341356ba0cc2bfef426974eb74ca73c0930582b7b4da75087979ebb1c8), score.py (sha256 e212d8e04f0016fa4f27e2a16ef5fab58e9f82d44a42cee2cc5d17ce91389abc), checks.py (sha256 bb4ef1d72098716a6be6561e27a21618cb591237225e0eced54d76389aec6a2d)",
+  "engine": "experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/rules.py, unchanged",
+  "run": "run.py --part weave_rays | weave_scan | chain_rays | chain_scan | outline_cf | census | state_side; run.py --score"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "W1-W6b, C1-C4c, G1-G3 of research/COUNT-BALLS-20261118-001/preregistration.md, scored by score.py.",
+ "cheapest_meaningful_control": "checks.py gates: brute force of the chain-grid reduction, the row Toeplitz formula against the dimer kernel, Kac-Ward against brute force, mutants that must be detected.",
+ "predictions": {
+  "W1": "off-row own-class amplitudes equal the row's within 1e-3 at r ~ 60, not 0.931 of it",
+  "W2": "row log-slope -1/2 within 0.005",
+  "W3": "other-class mean -1/2 a within 2e-3",
+  "W4": "a = 0.6322260804 within 1e-3",
+  "W5a": "own class C > 0, others C < 0",
+  "W5b": "ball 2pi/(3 sqrt3) a^4 u^-4 within 5%",
+  "W6": "outline vs ball slope in [0.4, 0.6]",
+  "W6b": "ball vs 1/u slope in [3.5, 4.5]",
+  "C1": "rates equal the closed form within 1e-3",
+  "C1c": "l = 1 anisotropy 1.003400 within 1e-3",
+  "C4": "outline vs ball slope in [0.4, 0.6]",
+  "C4b": "ball vs tau slope in [1.6, 2.4]",
+  "C4c": "two classes by parity of steps apart",
+  "G1": "reading a determines k and lam (cheap n <= 12, one-split n <= 7)",
+  "G2": "reading c fails on k at n = 4 or 5",
+  "G3": "reading a determines k and lam at n = 8"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by score.py"
+ },
+ "stop_rule": "One run; read-out; proofs of the settled parts; A97/A39 status; referee hand-off; report.",
+ "runtime": "single process per part, nice 5, BLAS threads 4; census n = 8 registered as LONG_RUNNING if over ten minutes."
+}

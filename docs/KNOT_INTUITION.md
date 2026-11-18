@@ -572,6 +572,12 @@ returning copy as a new way instead of merging it. So the junctions made in a
 round are those of five rounds before plus those of six rounds before, a rate
 of about 1.135 a round, and five five-place knots give exactly the Fibonacci
 numbers ([decision note](../research/RING-GROWTH-20261118-001/ring_growth.md)).
+And when do chains born apart combine (`PLUS-ONE-20261118-001`, frozen run,
+referee pending)? When the junctions they are each asked to join share a
+neighbour: then their dimensions add. That predicts the dimension of 11,649 of
+11,658 small arrangements that grow with a birth, never too high; ten combine
+through a link not yet found
+([decision note](../research/PLUS-ONE-20261118-001/plus_one.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

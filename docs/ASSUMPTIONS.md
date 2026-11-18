@@ -2962,6 +2962,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `FRESH-COUNT-20261118-001` ([decision note](../research/FRESH-COUNT-20261118-001/fresh_count.md); referee
+    pending) gave the parity counterpart: with the cubic study's joining rule, one fresh count for every join must equal the first
+    knot's size, the old cap of three is what made four stall, and the fewest counts close the first knot; no rule picks a number
+    from nothing there either. Status unchanged.
   - 2026-11-18 · `FAR-SIGN-20261118-001` ([decision note](../research/FAR-SIGN-20261118-001/far_sign.md); refereed, confirmed
     with fixes) found the referee's sign exact on SEEDK's fills (149,162 fresh fills, computed; two computed facts with L4 and L5). It
     is not a theorem of the fill, since a base of seven distinctions breaks both directions. It proved that under the sign the copy

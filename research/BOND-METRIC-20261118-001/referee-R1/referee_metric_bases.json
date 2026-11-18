@@ -1,0 +1,171 @@
+{
+ "T2 NAE {a,b,c},{a,b,d}": {
+  "states": 10,
+  "b": {
+   "2-0": 2,
+   "0-3": 2,
+   "2-3": Infinity
+  },
+  "triangle_failures": 2,
+  "first": [
+   2,
+   0,
+   3,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "T3 clause, two sharing two": {
+  "states": 13,
+  "b": {
+   "2-0": 2,
+   "0-3": 2,
+   "2-3": Infinity
+  },
+  "triangle_failures": 2,
+  "first": [
+   2,
+   0,
+   3,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "T3 clause, two sharing one": {
+  "states": 25,
+  "b": {
+   "0-2": 2,
+   "2-4": 2,
+   "0-4": Infinity
+  },
+  "triangle_failures": 4,
+  "first": [
+   0,
+   2,
+   3,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "T4 R6(a;b,c), R6(d;b,c)": {
+  "states": 10,
+  "b": {
+   "0-1": 2,
+   "1-3": 2,
+   "0-3": Infinity
+  },
+  "triangle_failures": 2,
+  "first": [
+   0,
+   1,
+   3,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "T4 R6(a;b,c), R6(a;d,e) (meet once)": {
+  "states": 20,
+  "b": {
+   "1-0": 2,
+   "0-3": 2,
+   "1-3": Infinity
+  },
+  "triangle_failures": 4,
+  "first": [
+   1,
+   0,
+   3,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "T4 twisted (c switched)": {
+  "states": 10,
+  "b": {
+   "0-1": 2,
+   "1-3": 2,
+   "0-3": Infinity
+  },
+  "triangle_failures": 2,
+  "first": [
+   0,
+   1,
+   3,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "T5 R5 closure base": {
+  "states": 34,
+  "b": {
+   "4-0": 2,
+   "0-7": 2,
+   "4-7": Infinity
+  },
+  "triangle_failures": 6,
+  "first": [
+   4,
+   0,
+   7,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "T5 twisted (a, c, d switched)": {
+  "states": 34,
+  "b": {
+   "4-0": 2,
+   "0-7": 2,
+   "4-7": Infinity
+  },
+  "triangle_failures": 6,
+  "first": [
+   4,
+   0,
+   7,
+   2,
+   2,
+   Infinity
+  ]
+ },
+ "two R5 knots sharing two": {
+  "states": 7,
+  "b": {
+   "2-0": 2,
+   "0-3": 2,
+   "2-3": 2
+  },
+  "triangle_failures": 0,
+  "first": null
+ },
+ "P6 NAE four knots": {
+  "states": 24,
+  "b": {
+   "3-0": 2,
+   "0-4": 2,
+   "3-4": Infinity
+  },
+  "triangle_failures": 6,
+  "first": [
+   2,
+   0,
+   3,
+   2,
+   2,
+   Infinity
+  ],
+  "joint_counts_3_4": {
+   "(0, 0)": 6,
+   "(0, 1)": 6,
+   "(1, 0)": 6,
+   "(1, 1)": 6
+  }
+ }
+}

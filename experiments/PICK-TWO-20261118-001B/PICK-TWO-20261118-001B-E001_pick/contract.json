@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PICK-TWO-20261118-001B-E001",
+ "ticket": "PICK-TWO-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does any rule told no number settle at two orders from a line, or is the number handed over by a cap, a price, the start or the arity of one fill?",
+ "definitions": {
+  "told no number": "its conditions name no count of orders or crossings other than zero (crosses nothing)",
+  "weak": "k = lambda = 2 at every step after the first fill, every run, every line length",
+  "strong": "weak, and >= 90% of runs per line length pass a full 2-grid >= 3 times with every later subdivision at a full 2-grid"
+ },
+ "public_inputs": {
+  "code": "picklib.py (sha256 16948493f658259c97a096fbe7b3c3fe026b3d1c6822c24483e2abf669440172), run.py (sha256 940e7e3d1a678a517ed81d79970800122ac7aa383a1afd37475396e1566c3de9), checks.py (sha256 0950874164af0b7add947b0a08dfafcbb28ffb7f7e4221220e6d5b7b911bb051); experiments/NEVER-NEST-20261118-001B/NEVER-NEST-20261118-001B-E001_nest/nnlib.py (sha256 91ad735e50d81a6f40834fbdfa9096077477cd076f788c48e7a91a2c2eea967c); experiments/MEET-ORDERS-20261118-001B/MEET-ORDERS-20261118-001B-E001_census/melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4)",
+  "run": ".venv/bin/python -B run.py --part C1|C2|C3|C4 [--procs 12], then --merge"
+ },
+ "forbidden_inputs": [
+  "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P9 and the decision rules of research/PICK-TWO-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "Q3 and the 3 x 3 x 3 grid as starts (conserving rules keep three); KEEP and CC (proved to conserve).",
+ "predictions": {
+  "P1": "CAP(3) from lines 5-8: lambda reaches 3, never exceeds, full 3-grid before first subdivision, every run; >= 2 full 3-grids by 60 in >= 90% from lines 5, 6",
+  "P2": "CAP(4) from line 5 and Q4: lambda reaches 4, never exceeds, every run",
+  "P3": "PRICE(w lambda): w 2.1, 3.0 keep lambda 1; w 1.0, 1.9 reach lambda >= 4 by 40 from line 5, every run; w 2.0 grows past 2 in most runs",
+  "P4": "PRICE(w lambda^2): largest lambda 4, 3, 2, 1 for w 0.25, 0.35, 0.5, 1.0, every run",
+  "P5": "ODD as NNF: two orders every step after first fill, full 2-grid, every run, every line",
+  "P6": "FRESH weak at every line length, not strong at any",
+  "P7": "NEWCROSS from line 8: fewer than half the runs end with lambda = 2",
+  "P8": "SEED strong at every line length; keeps lambda 3 from Q3 and 3x3x3",
+  "P9": "KEEP, CC: lambda 1 from every line, 3 from both controls, every run"
+ },
+ "decision_rules": {
+  "settles at two": "weak and strong tiers as defined",
+  "source": "from Q3 and 3x3x3: lambda kept = conserves the start",
+  "CAP(d) picks d": "lambda reaches d, never exceeds, every run; full d-grids in >= 90%",
+  "each prediction": "holds or fails as stated"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "About 30 to 60 minutes on 12 processes.",
+ "amendments": []
+}

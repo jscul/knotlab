@@ -517,6 +517,13 @@ other two, but each knot then rules out exactly the same states, so the growth
 makes the same choices with the same chances (proved for every size, until a
 step adds a state); the cut decides only how many orders the grown knots line up
 into ([decision note](../research/MEET-TWIST-20261118-001/meet_twist.md)).
+Is the knots' nesting then a distance (`MEET-DIST-20261118-001`, frozen
+computation, referee pending)? Not at the start: every presentation of a line has
+the same disagreement counts. Growth writes part of it into them: one grown
+base's counts carry at most about two thirds of the information about how the
+knots nest, best after a few new distinctions, and later growth blurs it; since
+these counts determine the states, the rest is lost, not hidden elsewhere
+([decision note](../research/MEET-DIST-20261118-001/meet_dist.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

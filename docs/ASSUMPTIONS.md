@@ -2632,7 +2632,14 @@ evidence: results and their status come from the records each entry links.
   moving the line's ends one step round the cycle of its knots, keeping every distinction's odd set, carries KF3's options knot
   by knot, so the growth's law does not depend on where the ends sit (every n, until a state is added); the ends decide only the
   number of orders.
+  `MEET-DIST-20261118-001` ([decision note](../research/MEET-DIST-20261118-001/meet_dist.md); referee pending) measured how
+  much of the nesting becomes distance: none before growth (all presentations have the same disagreement counts); after KF3 growth
+  one base's counts carry at most about two thirds of the information about the bare bracketing (0.63, 0.65, 0.62 at five to
+  seven), peaking near n0 − 4 new distinctions and then falling, less than revealing the knots directly; in these bases the counts
+  determine the states, so the rest is lost, not held in another form.
 - **History.**
+  - 2026-11-18 · `MEET-DIST-20261118-001`: the nesting is a distance only in part and only after growth (computed); status
+    unchanged.
   - 2026-11-18 · `MEET-TWIST-20261118-001`: placement independence proved (until a state is added); status unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001`: the meeting pattern grows by one law wherever it sits under KF3 (computed; narrowed
     by its referee from "grows on its own"); status unchanged.
@@ -2786,6 +2793,7 @@ evidence: results and their status come from the records each entry links.
   sort by bare bracketing (371/600 and 1523/2352 occur for both chains and the middle). The bracketing account holds for
   fewest-knot presentations only; with extra knots, how the knots meet is more than the bracketing.
 - **History.**
+  - 2026-11-18 · `MEET-DIST-20261118-001` built on it; status unchanged.
   - 2026-11-18 · `MEET-TWIST-20261118-001` built on it (proof for this population and rule); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-R1`: material (one redundant knot changes the second-step chance in 21 of 21 cases); status
     unchanged.

@@ -2,8 +2,8 @@
 
 Line summary, 18 November 2026, by Claude, for the owner. It covers the six studies `FRESH-COUNT-20261118-001`,
 `FIRST-KNOT-20261118-001`, `TOUCH-CENSUS-20261118-001`, `RING-GROWTH-20261118-001`, `PLUS-ONE-20261118-001` and
-`RING-FORMULA-20261118-001`. Each study's decision note holds the evidence; this page adds no new result. Referee verdicts: three
-in (confirmed with fixes, no Block), three pending. "Dimension" here always counts junctions by round: the junctions up to round t
+`RING-FORMULA-20261118-001`. Each study's decision note holds the evidence; this page adds no new result. Referee verdicts: five
+in (all confirmed, no Block; three with fixes), and `PLUS-ONE-20261118-001`'s pending. "Dimension" here always counts junctions by round: the junctions up to round t
 grow like t^d. Bond balls, the program's own measure, are proved only for the d-fold counting pattern.
 
 ## Why the line exists
@@ -22,7 +22,7 @@ the growth is three-dimensional (proved). The cheapest count closes a lone knot 
 independent chain per birth, adding the chains whose partners share a neighbour (proved for the basic cases; 99.9% of small
 arrangements that grow with a birth). Over every small arrangement of touching knots, nothing chosen, two dimensions are typical (about four in five that
 grow), three and four rare (computed). Rings are the exception: a ring of an odd number of knots with spare distinctions winds back
-over its own start each lap and grows exponentially, at a rate fixed by its length and its spares (proved through a model). So
+over its own start each lap and grows exponentially, at a rate fixed by its length and its spares (proved). So
 three is not the law's own number: it is the foundation's first knot under one count, or a rare arrangement.
 
 ## The six studies
@@ -59,18 +59,18 @@ three is not the law's own number: it is the foundation's first knot under one c
 | m knots of m + 1 places, each touching every other | fewest | m chains born together | m | proved; checked m = 3 to 6 |
 | every arrangement of up to five knots | fewest | stall, close, or chains | 2 typical; 3 and 4 rare | computed (census) |
 | arrangements with births | fewest | linked chains add | the largest linked sum | computed: 11,649 of 11,658 (fitting), 148 of 149 (test) |
-| odd ring of n ≥ 5 knots, j spares | fewest | a winding whose laps add ways | none: rate the root of x^(n+j) = (1 + x)^j | proved through the model; 17 rings matched |
-| odd ring, a spare at every knot | fewest | n F(t + 2) junctions in round t | none: the golden ratio | proved through the model |
-| rings of three, four, six; even rings of eight or more | fewest | groups, not windings; two windings of half the length | 3 / polynomial / polynomial; per winding | computed |
+| odd ring of n ≥ 5 knots, j spares | fewest | a winding whose laps add ways | none: rate the root of x^(n+j) = (1 + x)^j | proved; matched on 17 rings here, and on the 13 census rings and five more by the referee |
+| odd ring, a spare at every knot | fewest | n F(t + 2) junctions in round t | none: the golden ratio | proved |
+| odd ring, q spares at every knot | fewest | n Σ_h C(q(h + 1), t − h) junctions in round t | none: the root of x^(q+1) = (1 + x)^q | proved (the referee's addition); computed for q = 2 |
+| rings of three, four, six; even rings of eight or more | fewest | groups, not windings; two windings of half the length | 3 / polynomial / polynomial; per winding | computed (even rings at 8, 10 and 12) |
 
 ## Proved against computed
 
 - **Proved:** the Birkhoff structure for every count rule; the one-count and capped-count theorems; the fewest counts on one knot,
   on any hand-over and on touching pairs; the pieces lemma and the presentation result; m mutually touching knots; stalls only in
-  round 1 and where chains start (census lemmas); the ring count and recurrence from the model for any odd n ≥ 5 and j spares, and
-  the Fibonacci ring in every round.
-- **Proved in outline:** that the rings' growth is the model (its third step at the level of the predecessor's lemma); checked by
-  graph isomorphism to round 20 for one ring and by counts on 17.
+  round 1 and where chains start (census lemmas); that every odd ring's growth is the model (its group step by the referee's exact
+  argument), the count and the recurrence from round n + j for any odd n ≥ 5 and j spares, and the Fibonacci ring in every round.
+  Checked by graph isomorphism to round 20 for one ring, by counts on 17, and by the referee's histograms on ten.
 - **Computed only:** the census shares and the typical two; the link rule; even rings; rings of four and six; bond balls anywhere
   but the a-fold pattern.
 - **Readings, not theorems:** the three as the foundation's (A105); "a rule can only copy its number from its start".
@@ -82,10 +82,13 @@ three is not the law's own number: it is the foundation's first knot under one c
 | FRESH-COUNT | Confirmed with fixes, no Block: one Narrowing, two Not a block | the "cannot" claim scoped to the complete round and the three rules proved; distance-only proved for the uniform count only |
 | FIRST-KNOT | Confirmed with fixes, no Block: one Narrowing, one Not a block | dimension is junctions by round; bond balls proved only for the a-fold pattern |
 | TOUCH-CENSUS | Confirmed with fixes, no Block: three Narrowings | the 200 arrangements unread at the close held the rare growth (40 three-dimensional, not 36; 13 fast rings, not 7); the fast rings' rates 1.13 to 1.62; 1,746 starts force a distinction, not 1,713 |
-| RING-GROWTH, PLUS-ONE, RING-FORMULA | pending | — |
+| RING-GROWTH | Confirmed, no Block: one Narrowing, one Not a block | the formula is for odd rings; the ring of eight follows it at half its length (rate 1.1673), not at n = 8; the group step's "product" was not a product, and the referee's exact argument replaces it, so the growth is the model is proved |
+| RING-FORMULA | Confirmed, no Block: two Not a block | the transient is exactly n + j, not "about 3n + j", with two slips in its proof fixed; the proof's pointer to its check corrected |
+| PLUS-ONE | pending | — |
 
 Each is in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`. The lessons: state a "cannot" for the rules actually proved; name the
-measure behind "dimension" every time; never treat the tail of a sorted run as a sample.
+measure behind "dimension" every time; never treat the tail of a sorted run as a sample; state a formula's range next to every
+case it is checked on.
 
 ## Known mathematics, and what the line adds
 
@@ -131,5 +134,5 @@ typical; the link rule for chains born apart; and the exact exponential rate of 
 Two ring studies run in other threads and are not in this basket: composing rings with other pieces, and regrowing a ring from its
 distance table.
 
-**Corrections:** none new; the three folded in are listed above. **Goals:** no change. **Assumptions:** A104, A105 and A106 carry
+**Corrections:** none new; those folded in are listed above. **Goals:** no change. **Assumptions:** A104, A105 and A106 carry
 the line; no status changed. **Advisor:** not consulted for this summary; each study's use is in its note.

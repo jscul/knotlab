@@ -564,7 +564,7 @@ knots grow faster than any power. Two is typical, not forced; the chains of junc
 together predict the dimension in 98.7% of growing arrangements
 ([decision note](../research/TOUCH-CENSUS-20261118-001/touch_census.md)).
 Why do some rings of five knots grow faster than any power
-(`RING-GROWTH-20261118-001`, proof and checks, referee pending)? Because a
+(`RING-GROWTH-20261118-001`, proof and checks, refereed)? Because a
 ring makes its own extra directions. A five-place knot's spare distinction
 opens one more independent way to grow, on the cone above it; on a ring that
 cone comes back over its own start every lap, and the cheapest rule adds the
@@ -579,7 +579,7 @@ neighbour: then their dimensions add. That predicts the dimension of 11,649 of
 through a link not yet found
 ([decision note](../research/PLUS-ONE-20261118-001/plus_one.md)).
 Does one formula give every ring's rate (`RING-FORMULA-20261118-001`, proof
-through the model and 17 grown rings, referee pending)? Yes, for every ring of an
+and 17 grown rings, refereed)? Yes, for every ring of an
 odd number of knots, five or more: with n knots and j spare distinctions in
 all, each lap of the ring adds j new ways to grow, and the rate is the root of
 x^(n+j) = (1 + x)^j. With a spare at every knot the junctions per round are n

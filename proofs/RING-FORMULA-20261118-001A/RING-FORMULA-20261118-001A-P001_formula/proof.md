@@ -5,7 +5,7 @@
 For an odd cycle of n ≥ 5 even-parity constraints of arity 4 + s_i (one variable shared between consecutive constraints), with
 j = Σ s_i extra variables, the least closure under the complete-round joining policy has, in the model of
 `RING-GROWTH-20261118-001A` extended to j extra variables, c(t) = Σ_v C(m(v), t − h(v)) constraints in round t, which satisfies
-c(t) = Σ_{i=0}^{j} C(j, i) c(t − n − i) after a transient and grows like ρ^t with ρ the unique root above 1 of x^(n+j) = (1 + x)^j.
+c(t) = Σ_{i=0}^{j} C(j, i) c(t − n − i) for t ≥ n + j and grows like ρ^t with ρ the unique root above 1 of x^(n+j) = (1 + x)^j.
 When every constraint has one extra variable, c(t) = n F(t + 2) for every t, F the Fibonacci numbers.
 
 ## Nearest known result
@@ -26,22 +26,28 @@ Each spare distinction of R_i at cylinder position a_0 has lifts p_k = (a_0 + nk
 finite set of lifts (of any spares) below v; its round is h(v) + |S|; parents and demands as in `RING-GROWTH-20261118-001A` §2, each
 lift being one more direction on its cone. The identification of the grown pattern with this model is that study's Proposition 2,
 whose four steps do not use j = 1: no surplus beyond the spares' offshoots (every demand is 2 + m(v) − |S| ≥ 2), candidates one
-direction apart over a common lower element, groups the lower covers of one element (the predecessor lemma in the unrolled
-product), and no group wraps the ring (a group spans a few steps, a loop round the cylinder at least 2n ≥ 10). It is written at
-the level of the predecessor's lemma and checked here on 17 rings (§4).
+direction apart over a common lower element, groups the lower covers of one element (the referee's exact argument, now
+`RING-GROWTH-20261118-001A` Proposition 2 step 3, which uses only that L is monotone and L(v ∧ v') = L(v) ∩ L(v'), true for any
+spares), and no group wraps the ring (a group spans a few steps, a loop round the cylinder at least 2n ≥ 10). So the grown pattern
+is the model, proved. A knot with q spares makes q one-parent offshoots in round 1, each of demand q + 1 and given exactly q + 1 by
+the fewest rule; their combinations fill in later (the referee). The identification is checked by counts on 17 rings to round 13
+(Verification) and by the referee's per-round histograms of (parents, fresh) on nine rings.
 
 ## 2. The count and the recurrence
 
 **Proposition 1.** With m(v) the number of lifts below v, c(t) = Σ_{v: h(v) ≤ t} C(m(v), t − h(v)).
 
-**Proposition 2.** There is T_0 (at most about 3n + j) such that c(t) = Σ_{i=0}^{j} C(j, i) c(t − n − i) for t ≥ T_0. Its
+**Proposition 2.** For every t ≥ T_0 = n + j, c(t) = Σ_{i=0}^{j} C(j, i) c(t − n − i). Its
 characteristic equation is x^(n+j) = (1 + x)^j, which has exactly one root ρ > 0, and ρ > 1 when j ≥ 1; c grows like ρ^t.
 
 *Proof.* The shift (0, n) is a bijection from the positions of height h onto those of height h + n. For a spare at a_0, the number
-of its lifts below (a, b) is ⌊(a − a_0)/n⌋ − ⌈(−b − a_0)/n⌉ + 1 when that is nonnegative; raising b by n raises it by exactly one
-once it is nonnegative, which holds for every spare when h(v) ≥ n − 1. So m(v + (0, n)) = m(v) + j there, and by Vandermonde's
-identity C(m + j, s) = Σ_i C(j, i) C(m, s − i). Summing over positions of height at least 2n − 1 gives the recurrence's terms; the
-positions of smaller height contribute C(m(v), t − h(v)) only for t ≤ h(v) + m(v), a bounded range, so they drop out for t large.
+of its lifts below (a, b) is ⌊(a − a_0)/n⌋ − ⌈(−b − a_0)/n⌉ + 1, which is nonnegative whenever h(v) ≥ 0; raising b by n raises it
+by exactly one. So m(v + (0, n)) = m(v) + j at every position of height at least 0, and by Vandermonde's identity
+C(m + j, s) = Σ_i C(j, i) C(m, s − i). Every position of height at least n is such a shift, so summing over them gives
+Σ_i C(j, i) c(t − n − i). Below height n each spare has at most one lift below v (the admissible k lie in an interval of length
+h(v)/n < 1), so m(v) ≤ j there, and those positions contribute C(m(v), t − h(v)) only for t ≤ h(v) + m(v) ≤ n − 1 + j. Hence the
+recurrence holds from T_0 = n + j (the referee's sharpening of this study's "at most about 3n + j", and the first round at which it
+can be stated).
 For the root: f(x) = (n + j) log x − j log(1 + x) has derivative (n + j)/x − j/(1 + x) > 0 for x > 0, so f has one zero; f(1) =
 −j log 2 < 0 for j ≥ 1. ∎
 
@@ -57,6 +63,17 @@ c(t) = n F(t + 2) for every t ≥ 0 (F(1) = F(2) = 1). For the ring of five five
 c(t) = n Σ_{h=0}^{t} C(h + 1, t − h) = n Σ_k C(t + 1 − k, k) = n F(t + 2), the diagonal sums of Pascal's triangle. ∎
 
 The rate is the golden ratio for every n, as x^(2n) = (1 + x)^n reduces to x² = x + 1.
+
+**Proposition 4 (q spares at every knot; the referee's addition).** If every ring knot has q spare distinctions (j = qn), then
+m(v) = q(h(v) + 1), c(t) = n Σ_h C(q(h + 1), t − h), with generating function n(1 + x)^q / (1 − x(1 + x)^q), and the rate is the
+root of x^(q+1) = (1 + x)^q.
+
+*Proof.* As Proposition 3, with q lifts at every integer; summing x^h (1 + x)^(q(h+1)) over h gives the generating function, whose
+dominant singularity is the root x_0 of x(1 + x)^q = 1, and ρ = 1/x_0 satisfies ρ^(q+1) = (1 + ρ)^q. ∎
+
+This agrees with Proposition 2, since x^(q+1) − (1 + x)^q divides x^(n(q+1)) − (1 + x)^(nq). For q = 2 (five six-place knots) the
+referee's grown counts are 15, 30, 65, 140, 300, 645, 1,385, 2,975, 6,390, 13,725 in rounds 1 to 10, with
+c(t) = c(t − 1) + 2c(t − 2) + c(t − 3) and rate 2.1479 (computed; R1 §7).
 
 ## 4. Why rings of three, four and six are different, and even rings in general
 
@@ -77,5 +94,9 @@ The rate is the golden ratio for every n, as x^(2n) = (1 + x)^n reduces to x² =
 
 ## Verification
 
-Ticket B compares the model's counts with the grown rings for 17 rings of lengths 5, 7 and 9 with knots of four to six places, and
-checks the recurrence and the rate on the model to round 80.
+Ticket B compares the model's counts with the grown rings for 17 rings of lengths 5, 7 and 9 with knots of four to six places, to
+round 13, and checks the recurrence and the rate on the model to round 80. The referee (R1, Part 2) compared the full per-round
+histograms of (parents, fresh) with the model on nine rings through 10 to 88 rounds, two of them past this study (a seven-place
+knot; two spares at every knot), and found the recurrence exact from its first possible round on five odd rings this study did not
+grow (n = 11, j = 1; n = 9, j = 3; n = 7, j = 4; n = 5, j = 4; n = 9, j = 9, which gives 9 F(t + 2) in every round) and on all 13
+census rings.

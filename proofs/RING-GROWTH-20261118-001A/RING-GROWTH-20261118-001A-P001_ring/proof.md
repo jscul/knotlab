@@ -59,29 +59,43 @@ their parents, rounds and fresh counts, are the model's (v, S) of round at most 
    demand, k = d. The offshoot (p_0, {0}) has one parent and demand 2 and gets max(2, 3 − 1, 1) = 2, again its demand.
 2. *Candidates.* Two round-t junctions are candidates exactly when they are u + x and u + y for one round-(t − 1) junction u and two
    different directions x, y among e_a, e_b and the lifts e_k available at u.
-3. *Groups.* A set of at least three pairwise candidates with no common neighbour is exactly the lower-cover set of one (v, S) with
-   at least three lower covers, and the remaining candidate pairs are the lower-cover pairs of the (v, S) with two. In the unrolled
-   cylinder this is the predecessor's argument (`FRESH-COUNT-20261118-001A` Theorem 1, the sunflower and co-star lemma): positions
-   with sets of lifts form a product of the quadrant order with a cube over each position, families of round-t elements pairwise
-   sharing a lower cover are sunflowers (common lower cover, invalid) or lie below one round-(t + 1) element (valid), and that
-   element's lower covers are all present.
+3. *Groups* (the referee's exact argument, R1 §2, replacing this study's sketch). The model's junctions form the set
+   M = {(v, S): h(v) ≥ 0, S ⊆ L(v)}, with L(v) the lifts below v, inside the lattice ℤ² × (finite sets of lifts), ordered by both
+   coordinates and by inclusion. That lattice is distributive and its rank h(v) + |S| is modular.
+   - *M is closed under joins:* S ⊆ L(v) and S' ⊆ L(v') give S ∪ S' ⊆ L(v ∨ v'), since L is monotone.
+   - *Candidates meet in M:* if x ≠ y of rank t share a lower cover u in M, then u = x ∧ y, since u ≤ x ∧ y < x.
+   - *Sunflower or co-star:* let x₁, x₂, x₃ of rank t meet pairwise at rank t − 1. If x₁ ∧ x₂ ≠ x₁ ∧ x₃, then
+     (x₁ ∧ x₂) ∨ (x₁ ∧ x₃) = x₁, so x₁ ≤ x₂ ∨ x₃; every pairwise join has rank t + 1 by modularity, so the three joins are one
+     element w of M, and the three have no common neighbour (it would be a common lower cover of rank t − 1 below x₁ ∧ x₂ ∧ x₃,
+     which has rank t − 2). Otherwise the three meets are one lower cover: a sunflower, which is invalid.
+   - *Lower covers meet:* two lower covers of a w = (v, S) in M share a lower cover in M, except when w is a round-1 position
+     junction. The meets are (v − e_a − e_b, S) when h(v) ≥ 2, using L(v − e_a − e_b) = L(v − e_a) ∩ L(v − e_b); (v − e_a, S ∖ k);
+     and (v, S ∖ {k, k'}).
+
+   So the maximal valid sets are exactly the lower-cover sets of the elements with three or more lower covers, and the remaining
+   candidate pairs are the lower-cover pairs of the elements with exactly two. At round 1 the ring knots are candidates through the
+   ring adjacency, not a lower cover; §1 handles that (n odd and at least 5: pairs two apart, no triple). The argument uses only that
+   L is monotone and L(v ∧ v') = L(v) ∩ L(v'), so it holds for any set of spares.
 4. *Descent to the ring.* A valid set, or a candidate pair, spans a loop of at most six junction steps, while a loop around the ring
    in the cylinder takes at least ten, so every group lifts to the unrolled cylinder and is counted once.
 
-Steps 1, 2 and 4 are short. Step 3 is the predecessor's lemma carried to a product with a cube; it is written here at the level of
-that lemma, not line by line, and it is the part a referee should check most closely.
+All four steps are exact. Step 3 is the referee's; this study's first version sketched it through the predecessor's lemma "in a
+product of the quadrant order with a cube over each position", but M is a join-closed subset, not a product (the cube's dimension
+m(v) changes with v, and positions stop at height 0).
 
 **Checked.** The grown pattern (parents, rounds, fresh counts, the five-place knot marked) is isomorphic to the model as a directed
 graph at rounds 8, 12, 16 and 20 (526 junctions); the per-round counts agree with Proposition 1 at every round computed (to 40 here,
-to 57 by the referee's independent code); the parent-and-demand histograms agree at every round to 22, including the advisor's two
-forecasts (the first six-parent junction at round 21, the first demand 7 at round 20).
+to 57 by the TOUCH-CENSUS referee's independent code); the parent-and-demand histograms agree at every round to 22, including the advisor's two
+forecasts (the first six-parent junction at round 21, the first demand 7 at round 20). The referee (R1): equal counts and equal
+joint histograms of (parents, fresh) in every round 1 to 53 (41,501 junctions).
 
 ## 4. Other rings (the advisor's predictions, checked by ticket B)
 
-With j extra open distinctions on a clean ring of period n (any positions; a six-place knot counts two), every lap raises the number
+With j extra open distinctions on a clean ring of odd period n ≥ 5 (any positions; a six-place knot counts two), every lap raises the number
 of independent directions by j, and after a transient c(t) = Σ_i C(j, i) c(t − n − i): growth rate the root of x^(n + j) = (1 + x)^j
 (about 1.135 for n = 5, j = 1; 1.263 for j = 2; 1.385 for j = 3). A ring of eight splits into two interleaved cylinders, one of which
-stays inert. Rings of four and six are degenerate (two common neighbours, or a group wrapping the ring).
+stays inert; the other follows the formula with n/2 = 4 (rate 1.1673), not with n = 8. The formula is proved for every odd
+n ≥ 5 in `RING-FORMULA-20261118-001A`. Rings of four and six are degenerate (two common neighbours, or a group wrapping the ring).
 
 ## 5. What the ring does that a chain cannot
 

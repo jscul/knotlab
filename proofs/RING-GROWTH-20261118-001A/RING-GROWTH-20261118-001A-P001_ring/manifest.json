@@ -7,16 +7,16 @@
  "kind": "proof",
  "status": "Proved",
  "title": "The ring of five knots with one five-place knot",
- "claim": "Under the fewest counts the ring of four four-place knots and one five-place knot grows as the (v, S) model (cylinder positions with sets of lifts of the five-place knot below them): c(t) = sum_v C(m(v), t - h(v)) = c(t-5) + c(t-6), rate the real root of x^6 = x + 1 (about 1.1347). Proposition 1 (the count) proved; Proposition 2 (the identification) proved in outline, its group step at the level of the predecessor's lemma, and checked exactly (isomorphism at rounds 8-20).",
+ "claim": "Under the fewest counts the ring of four four-place knots and one five-place knot grows as the (v, S) model (cylinder positions with sets of lifts of the five-place knot below them): c(t) = sum_v C(m(v), t - h(v)) = c(t-5) + c(t-6), rate the real root of x^6 = x + 1 (about 1.1347). Proposition 1 (the count) proved; Proposition 2 (the identification) proved, its group step by the referee's exact argument (a join-closed set with a modular rank: pairwise candidates are a sunflower or the lower covers of one element), and checked exactly (isomorphism at rounds 8-20; the referee's histograms in every round to 53).",
  "standard_statement": "Least cube completion of a five-cycle of parity constraints with one extra variable; diagonal sums of Pascal's triangle.",
  "prior_work": "TOUCH-CENSUS-20261118-001, FIRST-KNOT-20261118-001A, FRESH-COUNT-20261118-001A; the advisor's model.",
  "dependencies": [],
- "completion_gate": "Ticket B's checks; the referee reviews the proof, step 3 most closely.",
+ "completion_gate": "Ticket B's checks; referee R1 (confirmed, no Block).",
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "model from the advisor (Fable 5.2), checked by isomorphism and counts; referee pending",
-  "independence": "the TOUCH-CENSUS referee's independent counts to 57 rounds",
+  "status": "model from the advisor (Fable 5.2), checked by isomorphism and counts; refereed R1 (confirmed, no Block; step 3 re-derived exactly)",
+  "independence": "the TOUCH-CENSUS referee's independent counts to 57 rounds; referee R1's fresh code: counts and (parents, fresh) histograms equal in rounds 1 to 53",
   "novelty": "local"
  },
  "foundation_contract": "contact-first-atomic-topology-v3",
@@ -50,12 +50,11 @@
   "two_cnf_three_cnf_knot_boundary_proved": false,
   "p_ne_np": false,
   "physical_ontology": false,
-  "five_ring_recurrence_proved_through_model": true
+  "five_ring_recurrence_proved_through_model": true,
+  "ring_growth_is_the_model_proved": true
  },
  "source_contribution": 0,
- "remaining_obligations": [
-  "referee"
- ],
+ "remaining_obligations": [],
  "paths": {
   "manifest": "proofs/RING-GROWTH-20261118-001A/RING-GROWTH-20261118-001A-P001_ring/manifest.json",
   "identity": "proofs/RING-GROWTH-20261118-001A/RING-GROWTH-20261118-001A-P001_ring/identity.json",

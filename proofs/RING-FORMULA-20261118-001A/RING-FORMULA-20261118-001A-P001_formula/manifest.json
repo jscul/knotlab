@@ -7,15 +7,15 @@
  "kind": "proof",
  "status": "Proved",
  "title": "One formula for the growth of rings of knots",
- "claim": "For an odd ring of n >= 5 knots with j spare distinctions, the (v, S) model's per-round count c(t) = sum_v C(m(v), t - h(v)) satisfies c(t) = sum_i C(j, i) c(t - n - i) after a transient (Vandermonde), rate the unique root above 1 of x^(n+j) = (1+x)^j; with a spare at every knot, c(t) = n F(t+2) for every t. Rings of three, four and six degenerate (one group of three; two common neighbours; two triples). The identification with the growth as in RING-GROWTH-20261118-001A, checked on 17 rings.",
+ "claim": "For an odd ring of n >= 5 knots with j spare distinctions, the (v, S) model's per-round count c(t) = sum_v C(m(v), t - h(v)) satisfies c(t) = sum_i C(j, i) c(t - n - i) for t >= n + j (Vandermonde; the transient exactly n + j), rate the unique root above 1 of x^(n+j) = (1+x)^j; with a spare at every knot, c(t) = n F(t+2) for every t. Rings of three, four and six degenerate (one group of three; two common neighbours; two triples). The growth is the model, by RING-GROWTH-20261118-001A's identification with the referee's exact group step, which uses nothing about j; checked on 17 rings. With q spares at every knot, c(t) = n sum_h C(q(h+1), t-h), rate the root of x^(q+1) = (1+x)^q (the referee's addition).",
  "standard_statement": "Vandermonde's identity; diagonal sums of Pascal's triangle.",
  "prior_work": "RING-GROWTH-20261118-001A.",
  "dependencies": [],
- "completion_gate": "Ticket B's checks; the referee.",
+ "completion_gate": "Ticket B's checks; referee R1 (confirmed, no Block).",
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "model counts equal grown counts on 17 rings; referee pending",
+  "status": "model counts equal grown counts on 17 rings; refereed R1 (confirmed, no Block)",
   "independence": "same task",
   "novelty": "local"
  },
@@ -50,12 +50,11 @@
   "two_cnf_three_cnf_knot_boundary_proved": false,
   "p_ne_np": false,
   "physical_ontology": false,
-  "ring_formula_proved_through_model": true
+  "ring_formula_proved_through_model": true,
+  "ring_growth_is_the_model_proved": true
  },
  "source_contribution": 0,
- "remaining_obligations": [
-  "referee"
- ],
+ "remaining_obligations": [],
  "paths": {
   "manifest": "proofs/RING-FORMULA-20261118-001A/RING-FORMULA-20261118-001A-P001_formula/manifest.json",
   "identity": "proofs/RING-FORMULA-20261118-001A/RING-FORMULA-20261118-001A-P001_formula/identity.json",

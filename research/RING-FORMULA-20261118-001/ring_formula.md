@@ -1,7 +1,8 @@
 # Does one formula give the growth rate of every ring of knots?
 
 Epic `RING-FORMULA-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead for `RING-GROWTH-20261118-001`'s
-direction 2. Goal G17. **Referee pending.**
+direction 2. Goal G17. **Refereed:** report [R1](referee-R1/report.md) (Part 2 of the joint report with `RING-GROWTH-20261118-001`),
+confirmed, no Block, folded in on 18 November (see Referee).
 
 **Line summary** of the six parity-growth studies: [line_summary.md](line_summary.md).
 
@@ -36,9 +37,10 @@ and checks it on 17 rings chosen before any was grown.
 
 **In standard terms.** For an odd cycle of n ≥ 5 even-parity constraints with j extra variables in all, under the complete-round
 joining policy and the fewest counts, the model's count c(t) = Σ_v C(m(v), t − h(v)) satisfies c(t) = Σ_i C(j, i) c(t − n − i)
-after a transient (Vandermonde's identity), and the growth rate is the unique root above 1 of x^(n+j) = (1 + x)^j. With one extra
+from round n + j (Vandermonde's identity), and the growth rate is the unique root above 1 of x^(n+j) = (1 + x)^j. With one extra
 variable at every constraint, m(v) = h(v) + 1 and c(t) = n F(t + 2) for every t (diagonal sums of Pascal's triangle). The growth is
-the model by `RING-GROWTH-20261118-001A`'s identification, whose four steps do not use j = 1, and the counts agree on 17 rings.
+the model by `RING-GROWTH-20261118-001A`'s identification, made exact by the referee and using nothing about j, and the counts agree
+on 17 rings.
 
 ## The check
 
@@ -65,7 +67,8 @@ to round 80.
 | eight four-place knots and one five-place knot | 9 | 1 | yes | 10 | 1.0758 | 1.0830 |
 | seven four-place knots and two five-place knots | 9 | 2 | yes | 11 | 1.1493 | 1.1460 |
 
-In all 17 rings the recurrence holds on the model from round n + j, earlier than the proof's bound of about 3n + j. The ratio of
+In all 17 rings the recurrence holds on the model from round n + j, the exact transient (the proof's "about 3n + j" sharpened by
+the referee). The ratio of
 successive counts still oscillates at round 80 for the long rings with few spares (n = 7 and 9, j = 1). The recurrence's other
 roots are close to the leading one in size there, so the ratio settles slowly; the rate is the leading root because the recurrence
 is exact.
@@ -78,12 +81,30 @@ distinctions alone, and the ring with a spare at every knot as an exact Fibonacc
 
 ## Limitations
 
-- The identification of the growth with the model is proved in outline: its third step, the groups as the lower covers of one
-  element, is written at the level of the predecessor's lemma, as in `RING-GROWTH-20261118-001`. Here it is checked by counts on
-  17 rings to 13 rounds; graph isomorphism was checked only for the ring with one spare (`RING-GROWTH-20261118-001`).
+- The identification of the growth with the model is proved; its third step, the groups as the lower covers of one element, is
+  the referee's exact argument (it first stood at the level of the predecessor's lemma). This study checked counts on 17 rings to
+  13 rounds; the referee checked per-round histograms on nine rings.
 - Even rings of eight or more: one ring computed, not proved.
 - Rates count junctions per round; bond balls are not measured.
 - The advisor was not consulted again; the formula and its predictions are its answer from `RING-GROWTH-20261118-001`.
+
+## Referee
+
+Report [R1](referee-R1/report.md) (Part 2 of the [joint report](../RING-GROWTH-20261118-001/referee-R1/report.md)), 18 November
+2026, by the coordinator's background referee thread with fresh code: confirmed, no Block. The referee's exact version of the group
+step uses nothing about j, so the grown pattern is the model with j spares for every odd ring of at least five knots; per-round
+histograms of (parents, fresh) equal the model's on nine rings through 10 to 88 rounds, two past this study (a seven-place knot; two
+spares at every knot). Five odd rings this study did not grow (n = 11, j = 1; n = 9, j = 3; n = 7, j = 4; n = 5, j = 4; n = 9,
+j = 9, which gives 9 F(t + 2) in every round) and all 13 census rings follow c(t) = Σ_i C(j, i) c(t − n − i) exactly, from its first
+possible round. Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`, none a block:
+1. **The transient** is exactly T₀ = n + j, not "at most about 3n + j"; the proof of Proposition 2 had two slips ("h(v) ≥ n − 1"
+   for "≥ 0", "height at least 2n − 1" for "at least n").
+2. **The pointer to the check.** The proof's §1 pointed to "§4" for the check; it is in the Verification section and compares counts
+   to round 13.
+
+**Addition (the referee's).** With q spares at every knot, c(t) = n Σ_h C(q(h + 1), t − h), at the rate of the root of
+x^(q+1) = (1 + x)^q: 2.1479 for five six-place knots, whose grown counts are 15, 30, 65, 140, 300, … (proof, Proposition 4; computed
+for q = 2).
 
 ## Position
 

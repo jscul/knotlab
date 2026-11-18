@@ -1,7 +1,8 @@
 # Why do rings of five knots grow faster than any power under the cheapest counts?
 
 Epic `RING-GROWTH-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead for `TOUCH-CENSUS-20261118-001`'s
-direction 1. Goals G17, G2 and G1. **Referee pending.**
+direction 1. Goals G17, G2 and G1. **Refereed:** report [R1](referee-R1/report.md) (Part 1), confirmed, no Block, folded in on
+18 November (see Referee).
 
 **Record.**
 - Pre-registration (the predictions for the other rings, frozen before they were read): [preregistration.md](preregistration.md),
@@ -18,7 +19,8 @@ direction 1. Goals G17, G2 and G1. **Referee pending.**
   five-place knot under the cheapest counts, the number of junctions made in round t is the number made five rounds earlier plus
   the number made six rounds earlier, exactly: c(t) = c(t − 5) + c(t − 6). Its rate is the real root of x⁶ = x + 1, about 1.1347
   (computed exactly through round 40 here and 57 by the referee; the count follows from the model by Pascal's rule, proved; the model
-  is the growth, proved in outline and checked exactly through round 20).
+  is the growth, proved, its group step by the referee's exact argument, and checked exactly through round 20 here and in every
+  round to 53 by the referee).
 - **What the ring does that a chain cannot.** The five-place knot's one spare distinction opens one more independent way to grow, on
   the cone above that knot. On a chain that cone never meets itself, and the growth stays at most two-dimensional. On a ring of five
   the cone goes round and comes back over its own start every five rounds. The cheapest rule does not merge the returning copy with
@@ -29,9 +31,11 @@ direction 1. Goals G17, G2 and G1. **Referee pending.**
   lap. **A "logic based fractal": only loosely.** The counts are diagonal sums of Pascal's triangle wound around the ring, like
   Fibonacci numbers, which are the case of five five-place knots (base 1.618, the golden ratio); there is no self-similarity at every
   scale (the advisor's caution).
-- **The rule for every clean ring.** With j spare distinctions on a ring of n four-place knots, the rate is the root of
-  x^(n + j) = (1 + x)^j: 1.135 (n = 5, j = 1), 1.263 (j = 2), 1.385 (j = 3), the golden ratio 1.618 (j = 5), and c(t) = c(t − 7) +
-  c(t − 8) for a ring of seven (the advisor's formula; checked here for n = 5, 7 and 8, and by the referee's runs for j = 2, 3 and 5).
+- **The rule for every clean ring of odd length.** With j spare distinctions on a ring of an odd number n ≥ 5 of knots, the rate is
+  the root of x^(n + j) = (1 + x)^j: 1.135 (n = 5, j = 1), 1.263 (j = 2), 1.385 (j = 3), the golden ratio 1.618 (j = 5), and
+  c(t) = c(t − 7) + c(t − 8) for a ring of seven (the advisor's formula, proved since in `RING-FORMULA-20261118-001`; checked here
+  for n = 5 and 7, and by the referee's runs for j = 2, 3 and 5). The ring of eight follows it with n/2 = 4, on the one of its two
+  windings that holds the spare (rate 1.1673, the root of x⁵ = x + 1), not with n = 8 (narrowed after the referee).
 - **Rings of other lengths differ.** A ring of four knots grows by one junction a round; a ring of six grows polynomially (per-round
   counts quadratic); both are degenerate in the joining rule (two common neighbours, or a group wrapping the ring).
 
@@ -66,12 +70,12 @@ The advisor gave the model; this study checked it and wrote the proof
 - **The identification.** The growth is the model, by induction in four steps.
   - No surplus after the first offshoot.
   - Candidates are elements one direction apart over a common lower element.
-  - Groups are the lower covers of one element. This is the predecessor's lemma in the unrolled product.
+  - Groups are the lower covers of one element: the model's junctions form a join-closed set whose rank is modular, so pairwise
+    candidates are either a sunflower or the lower covers of one element (the referee's exact argument).
   - Groups never wrap the ring, since a group spans at most six steps and the ring takes ten.
-- **What is checked.** The third step is written at the level of the predecessor's lemma, so the identification is also checked
-  exactly. The grown pattern is isomorphic to the model's at rounds 8, 12, 16 and 20 (526 junctions). The parent and demand counts
+- **What is checked.** The identification is also checked exactly. The grown pattern is isomorphic to the model's at rounds 8, 12, 16 and 20 (526 junctions). The parent and demand counts
   agree at every round to 22, including the advisor's two forecasts (the first six-parent junction at round 21, the first demand 7 at
-  round 20).
+  round 20). The referee's own code found equal counts and equal (parents, fresh) histograms in every round 1 to 53.
 
 ## Known results, and what this adds
 
@@ -82,9 +86,25 @@ growth explained.
 
 ## Limitations
 
-- The identification's third step is written at the level of the earlier lemma, not line by line; it is checked exactly to round 20.
+- The identification is proved; its third step is the referee's exact argument, replacing this study's sketch through the earlier
+  lemma. It is checked exactly to round 20 here and by histograms to round 53 by the referee.
 - "Rate" counts junctions per round; bond balls are not measured.
 - R3–R5 were not scored by this study's own runs.
+
+## Referee
+
+Report [R1](referee-R1/report.md), Part 1, 18 November 2026, by the coordinator's background referee thread with fresh code:
+confirmed, no Block. Proposition 1 and steps 1, 2 and 4 check by hand; step 3 holds, and the referee re-derived it exactly (the
+model's junctions form a join-closed set with a modular rank, so pairwise candidates are a sunflower or the lower covers of one
+element), so the growth is the model, proved, not outlined. Computed: equal counts and (parents, fresh) histograms in every round 1
+to 53; all 13 census rings follow the general formula exactly (four have a knot sharing two distinctions with a neighbour; there
+j = Σ (size − shared distinctions − 2), so a double share uses up a spare); the ring of ten follows the n/2 = 5 formula with one
+inert winding (predicted), the ring of twelve the n/2 = 6 formula (found after the run). Folded in the same day, logged in
+`docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (wording).** The formula is for odd n ≥ 5; the ring of eight follows it with n/2 = 4 (rate 1.1673), not with n = 8
+   (the table row and proof §4 already said so).
+2. **Not a block.** Step 3's "a product of the quadrant order with a cube over each position" is not a product; the referee's
+   argument replaces it in the proof.
 
 ## Advisor
 
@@ -99,7 +119,7 @@ confirmed). It also cautioned against calling the growth a fractal.
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: the ring of four four-place knots and one five-place knot | **Status:** Successful | Exponential growth with c(t) = c(t − 5) + c(t − 6), rate 1.1347, proved through the model, the model checked exactly |
-| Local direction: rings of knots with spare distinctions | Continue | One formula, x^(n + j) = (1 + x)^j, fits every clean ring checked; its general proof is open |
+| Local direction: rings of knots with spare distinctions | Continue | One formula, x^(n + j) = (1 + x)^j, fits every clean ring checked; its general proof is open (proved since, for odd rings, by `RING-FORMULA-20261118-001`) |
 | Broader exploration: what the cheapest growth builds | Known alternatives | Lattice-like growth from trees of knots (polynomial), wound cones from rings (exponential) |
 | Long-term goal: G17 Typical and rare meeting patterns (with G2) | Capability gained | The census's rarest growth is explained: a ring makes its own extra directions, one per lap |
 

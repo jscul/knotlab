@@ -3,6 +3,22 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the ring formula refereed; the ring growth proved
+
+- The studies of why rings of knots grow faster than any power (`RING-GROWTH-20261118-001`,
+  [decision note](research/RING-GROWTH-20261118-001/ring_growth.md)) and of one formula for every ring (`RING-FORMULA-20261118-001`,
+  [decision note](research/RING-FORMULA-20261118-001/ring_formula.md)) were refereed with fresh code and confirmed, no Block. The
+  referee wrote the step both had left in outline exactly, so the growth of every odd ring of five or more knots is proved to be the
+  model, and the formula holds on all 13 census rings and five more.
+- **Narrowed (wording).** The formula x^(n + j) = (1 + x)^j is for rings of an odd number n ≥ 5 of knots; the ring of eight follows
+  it with n/2 = 4 (rate 1.1673), not with n = 8.
+- **Clarified.** The formula's transient is exactly n + j, not "about 3n + j"; two slips in its proof and one cross-reference fixed.
+
+## 18 November 2026: a referee's sentence on width 20 corrected
+
+- The referee's report on `VARIABLE-OUTPUT-READER-20261118-001E` said that at width 20 distinct presentations can share a table. One
+  presentation's table can admit two labelled parity codes there; no two distinct presentations share a table. Not a block.
+
 ## 18 November 2026: the arrangement census completed
 
 - The census of the cheapest growth over every small arrangement of touching knots (`TOUCH-CENSUS-20261118-001`,

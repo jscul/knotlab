@@ -490,6 +490,17 @@ is two knots meeting twice; patterns of single meetings of plain not-all-equal
 knots with no four-knot tangle (no K4, in the literature's words) all passed,
 though one betweenness knot among them can break it (its referee)
 ([decision note](../research/NAE-METRIC-20261118-001/nae_metric.md)).
+And inside the weave, which is made of knots meeting twice
+(`DOUBLE-MEET-20261118-001`, frozen census, referee pending)? There the double
+meetings do no harm. On every patch without holes checked, bond distance stops
+being a true distance only when some pair is held by no knot of the states, and
+every such pair is two lone distinctions, each in a single knot, whose knots
+are of opposite classes and which face each other across the patch. Two knots
+meeting twice alone are the smallest such patch: their outer distinctions are
+lone, opposite and facing. Inside a larger weave the same meeting is harmless,
+because other knots hold its outer distinctions. Bond distance is never less
+than the steps apart plus one there
+([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

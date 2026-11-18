@@ -1036,6 +1036,9 @@ evidence: results and their status come from the records each entry links.
   carry, for example a hub chain in two dimensions whose chain balls are round. The cheapest test measures chain balls on a plane of
   gated knots against the grid it is drawn on.
 - **History.**
+  - 2026-11-18 · `DOUBLE-MEET-20261118-001` ([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md); referee
+    pending): the weave form. On patches of the weave the double meetings never break the spacing; only an unbonded pair of lone
+    distinctions of opposite classes facing each other does, a property of the patch's rim. Status unchanged.
   - 2026-11-18 · `NAE-METRIC-20261118-001` ([decision note](../research/NAE-METRIC-20261118-001/nae_metric.md); referee
     pending): the block form. On every not-all-equal or betweenness base, bond distance minus one adds across a joint, so a base is
     spaced by bond distance as soon as each of its blocks is; trees of knots and rings are (proved), lone double meetings are not.
@@ -2721,7 +2724,13 @@ evidence: results and their status come from the records each entry links.
   are true distances with bond distance one more than steps apart (proved); every small failing block has two knots meeting twice,
   and every series-parallel pattern of single meetings of plain not-all-equal knots checked passes (computed; one betweenness knot
   can break it, its referee).
+  `DOUBLE-MEET-20261118-001` ([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md); referee pending) looked inside
+  the weave: its double meetings are harmless. On every patch without holes checked (22,143), bond distance fails to be a true
+  distance exactly when some pair is unbonded, and every unbonded pair is two lone distinctions (each in one knot) of opposite classes
+  facing each other; the lone double meeting is the smallest case. Bond distance is at least steps apart + 1 there (sketched through
+  the height function, checked) and equal to it on all but 64 bonded pairs.
 - **History.**
+  - 2026-11-18 · `DOUBLE-MEET-20261118-001`: in the weave double meetings are harmless; failures only through unbonded lone pairs of opposite classes facing each other; status unchanged.
   - 2026-11-18 · `NAE-METRIC-20261118-001`: under not-all-equal bond distance is a true distance exactly when it is one in every block; trees of knots and rings proved; status unchanged.
   - 2026-11-18 · `BOND-METRIC-20261118-001`: bond distance is a metric on every base whose knots compose, and on every base of copies of one three-place law exactly for parity (scoped to laws after its referee); status unchanged.
   - 2026-11-18 · `FREE-READ-20261118-001`: bond distance is steps apart plus one on every knot tree under any mixture of the three laws (proved); flat on split grids; status unchanged.

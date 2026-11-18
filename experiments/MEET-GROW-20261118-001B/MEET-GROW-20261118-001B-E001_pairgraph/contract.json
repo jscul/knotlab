@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MEET-GROW-20261118-001B-E001",
+ "ticket": "MEET-GROW-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under KF3, is the growth of the co-knotted pairs carried exactly, label for label, between presentations of a line with the same meeting pattern by an isomorphism of that pattern, at every new distinction; do different meeting patterns grow differently; is a state-by-state correspondence behind it?",
+ "definitions": {
+  "meeting pattern": "the knots as sets of distinctions, the line ignored, up to renaming",
+  "carried": "some isomorphism phi of the starting meeting patterns maps the labelled distribution of the pair graph from one presentation onto the other's (new distinctions keep their numbers) at every level",
+  "option profile": "for a state: the cost and the multiset of new pairs of KF3's options"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 40dd9fdb61be838cea74447fb2b453b506c7999a424c9bbb95248abd6e323ca3), merge.py (sha256 03b229c4d0f3724c8a8c8c6e9c4d0c698e6a395a8cf59c3c75f4ed80372c90bd), checks.py (sha256 aed7365601a6789bba02b98ac2a411abaaa60c2d771b80c41aee44fb18321446), melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4, MEET-ORDERS-20261118-001B's engine unchanged); numpy and networkx 3.6.1 in the workspace .venv",
+  "run": "scripts/longrun.py launch job.py twice (--param subset=heavy: 3 cases; subset=light: 312 cases), then merge.py on both runner outputs"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P4 of research/MEET-GROW-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "Mirror images (carried by construction); presentations of different meeting patterns; a digest mutant.",
+ "predictions": {
+  "P1": "same meeting pattern: labelled pair-graph distributions carried at every level (5 to +5, 6 to +4, 7 to +4, 8 to +4, 9 to +3)",
+  "P2": "different meeting patterns: pair-graph distributions differ up to renaming at every level to n0 + 3",
+  "P3": "labelled base counts depend only on the meeting pattern",
+  "P4": "the joint distribution of pair graph and option profile is carried (to n0 + 3 below depth)"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "heavy launch 3 workers x 5 GB (MEET-GROW-B1), light launch 8 workers x 1.5 GB (MEET-GROW-B2)."
+}

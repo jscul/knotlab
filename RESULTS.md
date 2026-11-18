@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 457 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 458 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 457 epics with their closures
+- [Epics](#epics): all 458 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1705,6 +1705,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-17 | Can a mixed arrangement of not-all-equal knots on the weave be disordered (`WEAVE-MIX-20261117-001`) | [closure](proofs/WEAVE-MIX-20261117-001Z/WEAVE-MIX-20261117-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-MIX-20261117-001/) |
 | 2026-11-18 | Why the cheapest growth gains an order at each doubling (`CUBE-DOUBLING-20261118-001`) | [closure](proofs/CUBE-DOUBLING-20261118-001Z/CUBE-DOUBLING-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/CUBE-DOUBLING-20261118-001/) |
 | 2026-11-18 | A law whose free room runs only along two orders (`LOCAL-ROOM-20261118-001`) | [closure](proofs/LOCAL-ROOM-20261118-001Z/LOCAL-ROOM-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/LOCAL-ROOM-20261118-001/) |
+| 2026-11-18 | Does the meeting pattern grow on its own? (`MEET-GROW-20261118-001`) | — | [folder](research/MEET-GROW-20261118-001/) |
 | 2026-11-18 | Why how the knots meet changes the number of orders (`MEET-ORDERS-20261118-001`) | [closure](proofs/MEET-ORDERS-20261118-001Z/MEET-ORDERS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-ORDERS-20261118-001/) |
 | 2026-11-18 | The surviving weave pair, with the twist fixed (`WEAVE-PAIR-20261118-001`) | [closure](proofs/WEAVE-PAIR-20261118-001Z/WEAVE-PAIR-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-PAIR-20261118-001/) |
 

@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "proof_id": "ONE-PROBE-ALIGNMENT-20261118-001-P001",
+  "status": "Proved",
+  "theorem": "A single live shared-end betweenness test and current scalar bond distances cannot guarantee the first required original neighbor, hence cannot guarantee reaching I4 by the connected serial law. An explicit reachable adverse set survives direct probe replacement even with role markers on the root, its fresh outputs and the disposable endpoints.",
+  "evidence_class": "exact-obstruction-or-countermodel",
+  "observation": "Full anonymous matrix of minimum K1\u2013K3 projection size minus one, invariant under each current renaming. All outputs of an admissible action orbit must succeed in finite time.",
+  "operations": "Place, release or atomically replace one two-middle betweenness probe, or add one inherited permanent parity junction in the connected source construction. No hidden tested-middle or nonrepetition markers.",
+  "early_necessary_goal": "Choose any true old neighbor of the root and one root port for the second source junction.",
+  "rooted_adverse_set": {
+    "unordered_live_probes": 45,
+    "adverse_live_probes": 36,
+    "idle_additionally_adverse": true,
+    "optimistically_favorable_live_probes": 9,
+    "exact_unmarked_candidates_safe_for_immediate_second": 3,
+    "verified_replacement_orbits_with_an_adverse_resolution": 396
+  },
+  "census": {
+    "seed_namings_checked_through_signed_presentations": 4,
+    "physical_positions_before_or_at_root": 397,
+    "physical_types_after_symmetry": 19,
+    "anonymous_observation_classes": 12,
+    "bare_live_table_classes": 3,
+    "rooted_live_table_classes": 7,
+    "all_placement_trials": 1552
+  },
+  "control": {
+    "same_full_table_swap": {
+      "misaligned_move": [
+        "second",
+        [
+          0,
+          3
+        ]
+      ],
+      "position": {
+        "root": 0,
+        "tested": [
+          0,
+          3
+        ]
+      },
+      "safe_move": [
+        "second",
+        [
+          0,
+          1
+        ]
+      ],
+      "scalar_table_transposition": [
+        1,
+        3
+      ],
+      "tested_middle_marker_breaks_transposition": true
+    },
+    "random_uniform_root_trial": "3/7 for the immediate true neighbor, exact failure after n independent attempts (4/7)^n, almost-sure prefix only",
+    "single_probe_with_other_role_information": {
+      "atomic_replacement": {
+        "anonymous": {
+          "guaranteed_safe_second": false
+        },
+        "both_disclosed": {
+          "guaranteed_safe_second": true,
+          "minimum_total_moves": 4
+        },
+        "endpoints_disclosed": {
+          "guaranteed_safe_second": false
+        },
+        "middles_disclosed": {
+          "guaranteed_safe_second": true,
+          "minimum_total_moves": 5
+        }
+      },
+      "erase_before_reprobe": {
+        "anonymous": {
+          "guaranteed_safe_second": false
+        },
+        "both_disclosed": {
+          "guaranteed_safe_second": false
+        },
+        "endpoints_disclosed": {
+          "guaranteed_safe_second": false
+        },
+        "middles_disclosed": {
+          "guaranteed_safe_second": false
+        }
+      }
+    }
+  },
+  "size_controls": [
+    {
+      "dimension": 2,
+      "originals": 4,
+      "rooted_probe_choices": 15,
+      "endpoint_distances_to_unused_originals_checked": 45,
+      "adverse_probes_plus_idle": 10,
+      "adverse_types_with_a_class_entirely_of_neighbors": 4,
+      "replacement_orbits_with_a_verified_adverse_resolution": 42,
+      "full_mixed_tables_computed_here": false
+    },
+    {
+      "dimension": 3,
+      "originals": 8,
+      "rooted_probe_choices": 45,
+      "endpoint_distances_to_unused_originals_checked": 315,
+      "adverse_probes_plus_idle": 37,
+      "adverse_types_with_a_class_entirely_of_neighbors": 0,
+      "replacement_orbits_with_a_verified_adverse_resolution": 396,
+      "full_mixed_tables_computed_here": false
+    },
+    {
+      "dimension": 4,
+      "originals": 16,
+      "rooted_probe_choices": 153,
+      "endpoint_distances_to_unused_originals_checked": 2295,
+      "adverse_probes_plus_idle": 142,
+      "adverse_types_with_a_class_entirely_of_neighbors": 0,
+      "replacement_orbits_with_a_verified_adverse_resolution": 1622,
+      "full_mixed_tables_computed_here": false
+    }
+  ],
+  "scope": "This rules out guaranteed complete alignment for this protocol. Full alignment in the variants with extra role information, under independent random retries, or with two simultaneous probes is unproved here. The predecessor with 28 simultaneous probes used a bounded assembly update.",
+  "assumption": "A97 remains under challenge.",
+  "validation": "V1. Independent algorithms, review within one task and same-seed adversarial proof; external novelty unassessed.",
+  "independent_target_prefix_check": {
+    "full_even_ternaries": 3,
+    "full_even_quaternaries": 19,
+    "first_stars_reusing_one_original": 1,
+    "second_supports_by_number_of_newly_used_originals": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "source_compatible_second_originals": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ]
+  }
+}

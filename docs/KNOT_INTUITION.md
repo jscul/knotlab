@@ -683,6 +683,16 @@ the referee's finding, is one sign: the far end pair is separated by every
 crossed split. That sign needs no comparison of crossings, but checking it means
 looking at every crossed split
 ([decision note](../research/COPY-CLASS-20261118-001/copy_class.md)).
+Is that sign the copy step (`FAR-SIGN-20261118-001`, proof and frozen
+computation, referee pending)? On every run of SEED's own growth, exactly. As a
+law of the fill alone, no: a base of seven distinctions has a fill with the sign
+that SEED refuses, and a copy step without it. What is proved is that with the
+sign the copy step asks one thing, whether the splits that pull the new
+distinction away from p's side make up one whole order. The betweenness among
+the move's distinctions cannot read the sign, because it counts crossed and
+uncrossed splits alike. Mark each split as crossed or not, and what the five
+distinctions see decides it
+([decision note](../research/FAR-SIGN-20261118-001/far_sign.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
 Because the knots nest. Every presentation of a line by the fewest knots is a

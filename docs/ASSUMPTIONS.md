@@ -2876,6 +2876,8 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `FAR-SIGN-20261118-001` built on it (SEED with knot-local moves, its crossing-making fills, and fills on any pairs
+    for an ablation); status unchanged.
   - 2026-11-18 · `COPY-CLASS-20261118-001` built on it (SEED with knot-local moves, its copy steps); status unchanged.
   - 2026-11-18 · `COPY-READ-20261118-001` built on it (SEED with knot-local moves, its crossing-making fills); status unchanged.
   - 2026-11-18 · `MID-RULE-20261118-001` built on it (the two-middle and one-end rules, knot-local and free); status unchanged.
@@ -2940,6 +2942,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `FAR-SIGN-20261118-001` ([decision note](../research/FAR-SIGN-20261118-001/far_sign.md); referee pending) found
+    the referee's sign exact on SEEDK's fills (149,162 fresh fills, computed). It is not a theorem of the fill, since a base of seven
+    distinctions breaks both directions. It proved that under the sign the copy step is "the moved splits are one whole order". The
+    copy step stays global in what it reads. Status unchanged.
   - 2026-11-18 · `COPY-CLASS-20261118-001` ([decision note](../research/COPY-CLASS-20261118-001/copy_class.md); refereed, Block on
     its reading) proved that the copy step is decided on the splits separating the fill's two end pairs and a model's crossers. Its
     claim that the fill's own pairs name the model was withdrawn: the rule restated SEED's clause. The referee found one sign that

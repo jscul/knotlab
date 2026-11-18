@@ -10,6 +10,7 @@ that the cheapest growth gains one order at every doubling and never keeps two:
 - `MID-RULE-20261118-001`
 - `COPY-READ-20261118-001`
 - `COPY-CLASS-20261118-001` (added after the summary, on the coordinator's go-ahead)
+- `FAR-SIGN-20261118-001` (the last study, on the coordinator's go-ahead; referee pending)
 
 All seven are refereed and folded in; `MID-RULE`'s free-form runs (a check of proved statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
 returns shrinking on bases this small.
@@ -84,6 +85,15 @@ each step do it?
     referee's exploratory finding, is one sign: the far end pair is separated by every crossed split. It held on 2,916 copy steps
     and none of 196,292 refused fills, and it reads every crossed split.
   - (`COPY-CLASS-20261118-001`, refereed)
+- **Is that sign the copy step?** On SEEDK's own fills, exactly: 1,794 copy steps and none of 147,368 refused fills, on fresh runs
+  to lines of 26 and n = 48 (computed; 8 of 8 predictions held). As a theorem, no.
+  - On a seven-distinction base of two orders a fill with the sign is refused and a copy step lacks it (proved).
+  - What is proved is that under the sign the copy step is one set comparison: the splits on which r leaves p's side must be one
+    whole order. A pair pattern forces it.
+  - The copy class's betweenness cannot read the sign, since it does not tell crossed splits from uncrossed ones. With one mark per
+    split, crossed or not, the move's five distinctions read it exactly.
+  - An ablation found that SEEDK's bases carry the sign's sufficiency, and the knots already on the middle and near pairs carry its
+    necessity. (`FAR-SIGN-20261118-001`, referee pending)
 - **The copy step** (pulling an uncrossed split into the grid without adding an order) is rare: 566 among about 1.8 million
   crossing-making fills, all early. No reading of its own knots or the betweenness among its distinctions decides it. But all of
   them fall in one closure class, which holds under 2% of crossing-making fills (the referee's count: 528 of 528, lift 57).

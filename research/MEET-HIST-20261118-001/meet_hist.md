@@ -110,3 +110,17 @@ sanity row; probabilities for H1 to H3; ties scored as failures. Not consulted a
 **Assumptions:** A97 under challenge, with this finding added; A100 gains this study among what rests on it; no new entry.
 
 **Basket:** read; `MEET-DIST-20261118-001#1` taken by this epic.
+
+## Final report as sent
+
+Posted in the project thread at about 04:55 UTC on 18 November 2026 (the tables are those of the Position section above, with the
+directions shortened):
+
+> **Fifth study done (referee pending): the share of the nesting that the distances miss is mostly the order of growth, and the
+> states don't record that order.** Read one grown base three ways: unnamed; with the line's distinctions named; and with the order
+> of growth named too. Naming the line adds little (0.005 to 0.30). Naming the order adds most of the rest (0.07 to 0.49), up to all
+> of it on the line of five. Even with the line named, the order can't be read from the states (0.9 to 3.9 bits left over). The
+> knots, by contrast, record the nesting directly. So what one grown base's distances lack is history plus the knots themselves.
+> All 4 predictions held; the advisor turned one would-be prediction into a sanity check, since it held by construction.
+>
+> Corrections: none. Goals: G16 checkpoint. Assumptions: A97 under challenge, with the order of growth located as the missing share.

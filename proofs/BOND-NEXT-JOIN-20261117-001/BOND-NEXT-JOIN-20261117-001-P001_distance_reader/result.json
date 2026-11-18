@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "proof_id": "BOND-NEXT-JOIN-20261117-001-P001",
+  "status": "Proved",
+  "theorem": "For every finite legal pure-parity history, scalar bond distances recover ordinary junction supports on the original bits, the allowed states under the given zero-charge law, the legal serial additions, the complete parallel prescription and all permitted allocations. The table is sufficient modulo merging all entries above 5.",
+  "distance_thresholds": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "quantifier": "All bijections of old bits preserving the four threshold graphs carry all next options. Includes all complete rounds and legal serial rearrangements.",
+  "supplied": [
+    "The pure parity law, three fresh distinctions per ordinary move and the common-neighbor parent eligibility tests",
+    "The chosen serial or simultaneous growth policy",
+    "All present distinctions including loose ends; all-even truth tables in the stated value conventions"
+  ],
+  "census": {
+    "file": "finite_checks.json",
+    "sha256": "663c4631a99573f07c4f21d0a8dfa6f07650325bc98597f66e46c838e5f2012a",
+    "renamings": [
+      113,
+      271
+    ],
+    "presentations_by_junction_count": [
+      1,
+      1,
+      2,
+      6,
+      21,
+      89,
+      432
+    ],
+    "incidence_presentations": 552,
+    "exact_distance_table_classes": 552,
+    "all_stage_star_sets_exact": 552,
+    "serial_and_parallel_outputs_exact": 552,
+    "reversed_and_truncated_reader_exact": 552,
+    "parallel_blocked": 489,
+    "serial_legal_loose_bit_sets": 21741,
+    "serial_illegal_old_bit_sets": 754623,
+    "two_threshold_pilot_failures": 280
+  },
+  "independent_small_checks": {
+    "four_junctions": {
+      "three_children": {
+        "allowed_states": 256,
+        "distinct_bonds": 11,
+        "next_group_sizes_1_2_3": [
+          3,
+          3,
+          0
+        ],
+        "distance_histogram": {
+          "2": 3,
+          "3": 18,
+          "4": 18,
+          "6": 27
+        }
+      },
+      "chain": {
+        "allowed_states": 256,
+        "distinct_bonds": 10,
+        "next_group_sizes_1_2_3": [
+          5,
+          2,
+          0
+        ],
+        "distance_histogram": {
+          "2": 3,
+          "3": 18,
+          "4": 6,
+          "5": 18,
+          "6": 6,
+          "7": 9,
+          "8": 6
+        }
+      },
+      "seed_next_to_five": {
+        "allowed_states": 256,
+        "distinct_bonds": 13,
+        "next_group_sizes_1_2_3": [
+          4,
+          2,
+          0
+        ],
+        "distance_histogram": {
+          "2": 3,
+          "3": 12,
+          "4": 16,
+          "5": 16,
+          "6": 13,
+          "7": 6
+        },
+        "canonical": {
+          "seed": {
+            "K1": true,
+            "K2": true,
+            "K3": true,
+            "knot": true,
+            "projected_states": 4
+          },
+          "four": {
+            "K1": true,
+            "K2": true,
+            "K3": true,
+            "knot": true,
+            "projected_states": 8
+          },
+          "five": {
+            "K1": true,
+            "K2": true,
+            "K3": true,
+            "knot": true,
+            "projected_states": 16
+          },
+          "sum_of_seed_and_five": {
+            "K1": true,
+            "K2": true,
+            "K3": true,
+            "knot": true,
+            "projected_states": 32
+          },
+          "nonminimal_union": {
+            "K1": true,
+            "K2": false,
+            "K3": true,
+            "knot": false,
+            "projected_states": 32
+          }
+        },
+        "false_adjacency_distance": 5
+      }
+    },
+    "complete_round_three": {
+      "junctions": 20,
+      "distinctions": 60,
+      "combinations": 1048576,
+      "exact_stars_from_truncated_table": 20,
+      "minimal_short_supports_by_size": {
+        "3": 1,
+        "4": 9,
+        "5": 12,
+        "6": 7
+      },
+      "next_group_sizes_1_2_3": [
+        3,
+        9,
+        3
+      ]
+    },
+    "nonlinear_attachment_control": {
+      "old_bits": 8,
+      "old_rows": 8,
+      "old_pairs_at_bond_distance_two": 28,
+      "old_bits_in_one_first_threshold_clique": 8,
+      "largest_designated_star": 6
+    }
+  },
+  "allocation_control": {
+    "round": 1,
+    "parent_groups": [
+      3,
+      3,
+      0
+    ],
+    "allocations_on_fixed_old_bits": 216
+  },
+  "limits": [
+    "The result determines the set of legal joins, including equivalent uses of loose bits.",
+    "On the nonlinear eight-bit attachment the first threshold groups at least eight old bits. Its star characterization fails there. The final output on the mixed system was not decided by this control.",
+    "A universal inverse for arbitrary logical laws does not follow.",
+    "The rule evaluates each snapshot afresh. The remaining instructions of an earlier preallocated schedule are not part of the old pair table."
+  ],
+  "validation": {
+    "class": "V1-separate-algorithm-same-task",
+    "checks": [
+      "Full finite dual row space and exact isomorphism census",
+      "Literal allowed-state projections and canonical K1-K3 gates on small controls",
+      "All 1,048,576 combinations at 20 junctions"
+    ],
+    "external_referee": false,
+    "proof_assistant": false,
+    "external_novelty": "unassessed",
+    "text_review": "A separate within-task reviewer checked the argument, including an independent count of the 216 permitted old-bit allocations. The text now qualifies the partial-round and attachment statements."
+  }
+}

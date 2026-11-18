@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 459 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 460 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 459 epics with their closures
+- [Epics](#epics): all 460 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1708,5 +1708,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Does the meeting pattern grow on its own? (`MEET-GROW-20261118-001`) | [closure](proofs/MEET-GROW-20261118-001Z/MEET-GROW-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-GROW-20261118-001/) |
 | 2026-11-18 | Why how the knots meet changes the number of orders (`MEET-ORDERS-20261118-001`) | [closure](proofs/MEET-ORDERS-20261118-001Z/MEET-ORDERS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-ORDERS-20261118-001/) |
 | 2026-11-18 | Why the meeting pattern grows on its own: moving the ends' side (`MEET-TWIST-20261118-001`) | — | [folder](research/MEET-TWIST-20261118-001/) |
+| 2026-11-18 | A rule that never nests its fills (`NEVER-NEST-20261118-001`) | — | [folder](research/NEVER-NEST-20261118-001/) |
 | 2026-11-18 | The surviving weave pair, with the twist fixed (`WEAVE-PAIR-20261118-001`) | [closure](proofs/WEAVE-PAIR-20261118-001Z/WEAVE-PAIR-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-PAIR-20261118-001/) |
 

@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "experiment_id": "NEVER-NEST-20261118-001B-E001",
+ "ticket": "NEVER-NEST-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does a rule that takes only the fills keeping two orders (never nesting), and subdivides otherwise, grow two-way grids without end from a line, with knots only on pairs that already share one (NN), at any cost (NN2), with any pairs (NNF), or by corners across crossing splits (CC)?",
+ "definitions": {
+  "fill": "a step adding no state",
+  "subdivision": "one knot B(u, p, v) on an old pair differing on exactly one split",
+  "full grid": "(a+1)(b+1) = n with a complete bipartite crossing graph",
+  "fill fraction": "fills per step on steps 21 to 40"
+ },
+ "public_inputs": {
+  "code": "nnlib.py (sha256 91ad735e50d81a6f40834fbdfa9096077477cd076f788c48e7a91a2c2eea967c), run.py (sha256 4043a4ef14665f9033ee982089a1d66c356d96406335c314f40162836da22f0a), checks.py (sha256 fae4006800c5426d044a4794e562cacf8db03787e149e574d450a6af5d27dfc0); experiments/MEET-ORDERS-20261118-001B/MEET-ORDERS-20261118-001B-E001_census/melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4); experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/rules.py (sha256 d1ee374ca2c6784bdbad72c32878d7c6a3c98c60a28da73f34f14f76c8d10172); experiments/LOCAL-ROOM-20261118-001B/LOCAL-ROOM-20261118-001B-E001_local/locallib.py (sha256 30a724e34e4f6e6319fb01420d3eb791c5be65a8b7932b84d72961e57230327b)",
+  "run": ".venv/bin/python -B run.py --part E1|E2|R1|R2 [--procs 12], then --merge"
+ },
+ "forbidden_inputs": [
+  "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P8 and the decision rule of research/NEVER-NEST-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "SUB (subdivisions only: two orders never formed, no fills) and KF3 (no two-order filter).",
+ "predictions": {
+  "P1": "NN intermediate at every start size",
+  "P2": "NN passes a full grid at some n <= 40 in >= half the runs per start size, fewer from 8 than from 5",
+  "P3": "NN median fill fraction, steps 21-40, in [0.25, 0.65] per start size",
+  "P4": "NN no fill in steps 31-40 in <= 15% of runs per start size",
+  "P5": "NN2 median fill fraction, steps 21-40, below NN's per start size",
+  "P6": "KF3 two orders at n = 40 in <= 10% of runs per start size",
+  "P7": "NNF (2x2 and every line) and CC (2x2): two orders at every step after the first, a full grid after every completed row or column, every run (proved; a check)",
+  "P8": "CC after one fill of a line: a full grid at some n in < half the runs per start size"
+ },
+ "decision_rules": {
+  "grows": "median fill fraction >= 0.7, full grid at some n in 30-40 in >= 80% of runs, both chains growing after n = 20 in >= 80%",
+  "starved": "median fill fraction <= 0.15, or no fill in steps 31-40 in >= 50% of runs",
+  "intermediate": "otherwise",
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "E1 and E2 about 15 minutes, R1 about an hour on 12 processes, R2 about 5 minutes.",
+ "amendments": []
+}

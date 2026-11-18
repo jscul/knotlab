@@ -563,6 +563,15 @@ and four dimensions are rare (47 arrangements, 0.18%), and 13 rings of five
 knots grow faster than any power. Two is typical, not forced; the chains of junctions born
 together predict the dimension in 98.7% of growing arrangements
 ([decision note](../research/TOUCH-CENSUS-20261118-001/touch_census.md)).
+Why do some rings of five knots grow faster than any power
+(`RING-GROWTH-20261118-001`, proof and checks, referee pending)? Because a
+ring makes its own extra directions. A five-place knot's spare distinction
+opens one more independent way to grow, on the cone above it; on a ring that
+cone comes back over its own start every lap, and the cheapest rule adds the
+returning copy as a new way instead of merging it. So the junctions made in a
+round are those of five rounds before plus those of six rounds before, a rate
+of about 1.135 a round, and five five-place knots give exactly the Fibonacci
+numbers ([decision note](../research/RING-GROWTH-20261118-001/ring_growth.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

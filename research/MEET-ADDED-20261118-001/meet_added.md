@@ -1,0 +1,108 @@
+# Do the knots a growth added record its order?
+
+Epic `MEET-ADDED-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes sub-goal B199
+(`MEET-HIST-20261118-001`'s selected direction). Goal G16; tests A97. Referee pending.
+
+**Record.**
+- Pre-registration: [preregistration.md](preregistration.md), frozen in commit `259e35081` at about 05:09 UTC on 18 November. The
+  run (long run MEET-ADDED-B1, 61 cases on the shared runner) ended at 05:12 UTC, 61 of 61 ok.
+- Code: [job.py, checks.py, merge.py and melib.py](../../experiments/MEET-ADDED-20261118-001B/MEET-ADDED-20261118-001B-E001_added/).
+- Results: [results.json](../../artifacts/MEET-ADDED-20261118-001B/MEET-ADDED-20261118-001B-E001_added/results.json).
+
+## The answer
+
+- **Yes, almost exactly: the knots the growth added, read with the states and no names, carry what all the names carry about how
+  the line's knots nest** (computed, exact, every presentation of 5, 6 to k = 4 and 7 to k = 3; prior uniform over labelled
+  presentations). Shares of the information about the bare bracketing:
+
+  | Line of, k | Added pairs alone | States alone | States + added pairs | States + added knots | All named |
+  | --- | --- | --- | --- | --- | --- |
+  | 5, k = 2 / 3 / 4 | 0 / 0 / 0 | 0.60 / 0.39 / 0.22 | 1.0 / 0.95 / 0.94 | 1.0 / 1.0 / 1.0 | 1.0 / 1.0 / 1.0 |
+  | 6, k = 2 / 3 / 4 | 0.009 / 0.040 / 0.050 | 0.65 / 0.63 / 0.53 | 0.83 / 0.90 / 0.91 | 0.83 / 0.91 / 0.93 | 0.83 / 0.91 / 0.93 |
+  | 7, k = 2 / 3 | 0.002 / 0.016 | 0.57 / 0.62 | 0.68 / 0.787 | 0.68 / 0.7915 | 0.68 / 0.7916 |
+
+  - The states with the added knots (as triples, and the same with their middles) equal the all-named share exactly at every level
+    of five and six, and at seven to within 0.00012 at k = 3, the only level where they differ (Q2 failed there by that margin).
+  - The added pairs alone, with no states, carry almost nothing (at most 0.05; Q1), as the referee's preview showed; with the
+    states they carry nearly all (Q5), a little less than the triples from k = 3 (Q4).
+- **So the part of the order of growth that the distances miss is recorded in the knots the growth added**, read together with the
+  states: which new distinction was knotted to which older ones. Neither the states alone nor the added knots alone hold it.
+- **The order itself stays mostly unknown even then**: the named base given the states and the added knots still has 0.40 to 1.28
+  bits of uncertainty; only the small part of the order that bears on the nesting is recorded.
+
+**In the owner's terms.**
+- What a grown base's distances miss about how its first knots met is written into the knots the growth made: each new
+  distinction's knots say what it was tied to. Read with the states, those knots tell everything the full history would, on lines
+  of five and six, and all but a sliver on seven.
+- The new knots' pattern alone, without the states, tells almost nothing; the states alone tell part. Together they tell it.
+
+## Predictions and verdicts
+
+| # | Prediction | Verdict | Reading |
+| --- | --- | --- | --- |
+| G | 5 gate checks pass | held | the referee's preview reproduced |
+| Q1 | Added pairs alone below a quarter of the states-alone share at every k ≥ 1 | held | at most 0.050 against 0.53 |
+| Q2 | States + added knots (triples and middles) = all named, exactly, at every k | **failed** (seven, k = 3) | exact at five and six (every k) and at seven k = 1, 2; at seven k = 3 short by 0.00012 |
+| Q4 | States + added pairs short of the triples at some k ≥ 3, each n0 | held | five 0.95 < 1.0; six 0.90 < 0.91; seven 0.787 < 0.7915 |
+| Q5 | States + added pairs above the states alone at every k ≥ 2 | held | every n0 and k |
+
+3 of 4 held. Q2 failed by a margin of 0.00012 of the entropy at one level, as the advisor warned an old distinction with few
+knots might pass for a late arrival at larger n.
+
+## What it means for A97 and the goals
+
+- **A97** stays under challenge. The information a grown base's distances miss about how its knots met is recorded in how the
+  growth's own knots meet, read with the states; not in the distances. Knots carry it; distances do not.
+- **G16:** capability gained. The missing share located in the added knots, almost exactly.
+
+## Limitations
+
+- Fewest-knot presentations, KF3, one prior; five and six to k = 4, seven to k = 3.
+- Q2's equality is computed, not proved; the advisor's peeling lemma (reading the order of growth back from the states with the
+  added knots, up to swaps that do not change the bracketing) is open, and it fails by a sliver at seven, k = 3.
+
+## Reproduce
+
+```sh
+cd experiments/MEET-ADDED-20261118-001B/MEET-ADDED-20261118-001B-E001_added
+../../../.venv/bin/python -B checks.py
+cd ../../..
+.venv/bin/python -B scripts/longrun.py launch experiments/MEET-ADDED-20261118-001B/MEET-ADDED-20261118-001B-E001_added/job.py \
+  --out <dir> --unit <name> --workers 8 --case-mem 1800M
+.venv/bin/python -B experiments/MEET-ADDED-20261118-001B/MEET-ADDED-20261118-001B-E001_added/merge.py <dir>
+```
+
+## Advisor
+
+Consulted once before the freeze: probabilities (Q1 about 0.25 as first written, so restated; Q2 about 0.8, not by construction
+without a peeling lemma, with the warning that a sparsely knotted old distinction could pass for a late one; Q4 about 0.8; Q5
+about 0.97), which bounds hold by construction, and to score the triple and middle equalities jointly. Not consulted after.
+
+## Position
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: do the added knots record the order's missing part | **Status:** Successful (referee pending) | Read with the states, they carry the all-named share exactly at five and six, within 0.00012 at seven; 3 of 4 held |
+| Local direction: how knots meet as information under KF3 | Practically exhausted at these sizes | The missing share is located; what remains is a peeling lemma and the sliver at seven |
+| Broader exploration: A97, knots against distances | Searching | One rule, fewest-knot presentations of lines |
+| Long-term goal: G16 Learning the rules behind what a system allows | Capability gained | The nesting's trace located in the grown knots |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The peeling lemma: from the states and the added knots, read the order of growth back up to swaps that keep the bracketing; find what fails at seven, k = 3 | 2/3 | 2/3 | List the seven, k = 3 grown bases that the added knots confuse but the names separate → stop at the cause, or a proof for the cases where it holds | Selected · awaiting go-ahead |
+| 2 | Beyond lines and fewest knots (A100): does the trace sit in the added knots for redundant presentations too? | 2/3 | 2/3 | Add one redundant knot and rerun the arms at five → holds or fails | Alternative · deferred |
+| 3 | Long growth: all arms sampled to k = 20 | 2/3 | 3/3 | Sample six and seven → the limits | Alternative · deferred |
+
+- **#1.** Payoff: turns the near-equality into a statement with a cause. Concreteness: the confused cases are few and listable.
+- **#2.** Payoff: whether this is about lines or knots. Concreteness: needs a redundant-knot start.
+- **#3.** Payoff: the long-run picture. Concreteness: sampling only.
+
+**Corrections:** none.
+
+**Goals:** a G16 checkpoint (capability gained); no goal changed.
+
+**Assumptions:** A97 under challenge, with this finding added; A100 gains this study among what rests on it; no new entry.
+
+**Basket:** read; B199 taken by this epic.

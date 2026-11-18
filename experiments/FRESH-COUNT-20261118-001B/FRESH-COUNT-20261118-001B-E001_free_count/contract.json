@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "experiment_id": "FRESH-COUNT-20261118-001B-E001",
+ "ticket": "FRESH-COUNT-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Parity growth by CUBIC-FROM-A-KNOT's joining policy with the fresh count of every new junction left to a count rule: which counts keep it running, what each rule builds, what blind and random counts do, and whether the cap of three or any distance-read criterion singles out a number.",
+ "definitions": {
+  "offshoot": "a junction with one parent (join-irreducible)",
+  "demand": "number of joins of the next round taking a distinction from the junction",
+  "surplus": "fresh distinctions beyond the demand; each becomes an offshoot",
+  "descent order": "offshoots ordered by descent",
+  "stall": "a round in which some junction is in more groups than it has loose distinctions"
+ },
+ "public_inputs": {
+  "code": "freelib.py (sha256 7f9ef5f67852b35fdd816e4a04f7fe3df2998d611e792ed9e0a44cba8f46e7a5), ideals.py (sha256 54b70d28ae23458a59119421276d772ac9276d85ffcddfcbc94c3528ba7a8269), bonds.py (sha256 485a832039d0b6a487153ac53ae3b64c53d9779c9e7cec986fcf207593873438), job.py (sha256 3052c77d180668ddc388e6a9cbebd637ce8a853716241967422f7be273ef4a87), merge.py (sha256 45f75e391ff6e606805514511617a4a43cb650edc044cfec84154c7b71ab61ea), checks.py (sha256 1ecc145d3ca5b721185081716efb88a721d1c70d2716d5ac780d9f213fb2bf55)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "bonds.py's threshold reader follows BOND-NEXT-JOIN-20261117-001 section 3"
+ },
+ "forbidden_inputs": [
+  "Changing cases, rules, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "G and P1-P9 of research/FRESH-COUNT-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates: the predecessor's rounds and its referee's variants, GF(2) implied parity, mutants for the ideal checker, bond distances from the allowed states, the reader on N^3, a planted forced distinction.",
+ "predictions": {
+  "P1": "uniform uncapped: survives iff c = a; stall rounds 2/4/3",
+  "P2": "capped: survives iff c = a = 3; c = a >= 4 stalls at round 4",
+  "P3": "fewest gives 2^a; axis, inherit give N^a; balance stalls (round 2 for a >= 4, within 6 for a = 3)",
+  "P4": "ideal check passes on every non-stalling run",
+  "P5": "blind: at most 10% not stalled by round 10 per cell",
+  "P6": "surplus: no stall, no forced bit, unclosed share rises with q, median last-round offshoots >= 3 for q >= 0.2",
+  "P7": "fewest after hand-over: constant offshoots per round = first-round offshoots with demand 1; crossed starts keep a chains",
+  "P8": "reader exact on uniform stages; on 2^a stages exact except the round a-1 stage (also reads all loose bits); at least one misread on mixed stages",
+  "P9": "capped = uncapped iff no uncapped group of four or more"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; proofs; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py, 15 to 30 minutes expected",
+ "amendments": []
+}

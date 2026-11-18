@@ -14,7 +14,8 @@ Parts:
   cycles     the mixed cycles (a not-all-equal path of k knots from x to y closed by a parity knot (x, y, z)), k = 2 to 5: b, delta_K
              and delta_KB = min(delta_K, min over bonds S holding the pair of (|S| - 2) + tau(kappa_S)) on every pair, against steps.
   triangle   400 random bases that are not trees (6 to 8 distinctions, 3 to 7 knots of mixed laws), and every ring of three to six
-             knots under P, N, B and alternating laws: the triangle inequality for b and for b - 1.
+             knots under P, N, B and alternating laws: the triangle inequality for b and for b - 1, a pair that no bond holds
+             counting as infinitely far (corrected: the first version skipped such triples).
   hub        the hub set {x, y, one child of each of N not-all-equal knots hung on x} is free for N = 1 to 8 (so freedom gating keeps it).
 """
 import itertools
@@ -189,35 +190,40 @@ def random_base(rng):
 
 
 def triangle_on(n, st):
+    """A pair that no bond holds counts as infinitely far (corrected on 18 November 2026: the first version skipped such triples,
+    which hid every failure; the owner's challenge).  Returns triples checked, failures for b (all, and those with every distance
+    finite), failures for b - 1, and the first failure of b."""
     sup = Sup(st, n)
     D = {}
     for x, y in itertools.combinations(range(n), 2):
-        D[(x, y)] = D[(y, x)] = sup.b(x, y)
-    v_b = v_b1 = checked = 0
+        v = sup.b(x, y)
+        D[(x, y)] = D[(y, x)] = math.inf if v is None else v
+    v_b = v_bfin = v_b1 = checked = 0
     ex = None
     for x, y, z in itertools.permutations(range(n), 3):
         a, b, c = D[(x, z)], D[(x, y)], D[(y, z)]
-        if None in (a, b, c):
-            continue
         checked += 1
         if a > b + c:
             v_b += 1
+            v_bfin += a < math.inf
+            ex = ex or {"x": x, "y": y, "z": z, "b_xz": a, "b_xy": b, "b_yz": c}
         if a - 1 > (b - 1) + (c - 1):
             v_b1 += 1
-            ex = ex or {"x": x, "y": y, "z": z, "b_xz": a, "b_xy": b, "b_yz": c}
-    return checked, v_b, v_b1, ex
+    return checked, v_b, v_bfin, v_b1, ex
 
 
 def part_triangle():
     rng = random.Random("referee-free-read-triangle")
-    out = {"random_bases": 0, "triples": 0, "violations_b": 0, "violations_b_minus_1": 0, "bases_violating_b_minus_1": 0,
-           "example": None, "rings": {}}
+    out = {"random_bases": 0, "triples": 0, "violations_b": 0, "violations_b_finite": 0, "bases_violating_b": 0,
+           "violations_b_minus_1": 0, "bases_violating_b_minus_1": 0, "example": None, "rings": {}}
     for _ in range(400):
         n, knots, st = random_base(rng)
-        c, vb, vb1, ex = triangle_on(n, st)
+        c, vb, vbf, vb1, ex = triangle_on(n, st)
         out["random_bases"] += 1
         out["triples"] += c
         out["violations_b"] += vb
+        out["violations_b_finite"] += vbf
+        out["bases_violating_b"] += vb > 0
         out["violations_b_minus_1"] += vb1
         out["bases_violating_b_minus_1"] += vb1 > 0
         if ex and out["example"] is None:
@@ -226,8 +232,11 @@ def part_triangle():
         for name, laws in (("P", "P" * m), ("N", "N" * m), ("B", "B" * m), ("alt", ("PN" * m)[:m])):
             knots = [(laws[i], (2 * i, 2 * i + 1, (2 * i + 2) % (2 * m))) for i in range(m)]
             st = RC.states(2 * m, knots)
-            c, vb, vb1, _ = triangle_on(2 * m, st)
-            out["rings"][f"{m}{name}"] = {"triples": c, "violations_b": vb, "violations_b_minus_1": vb1}
+            c, vb, vbf, vb1, _ = triangle_on(2 * m, st)
+            out["rings"][f"{m}{name}"] = {"triples": c, "violations_b": vb, "violations_b_finite": vbf, "violations_b_minus_1": vb1}
+    st = RC.states(4, [("N", (0, 2, 3)), ("N", (1, 2, 3))])
+    sup = Sup(st, 4)
+    out["two_knots_sharing_two_distinctions"] = {"b(0,2)": sup.b(0, 2), "b(2,1)": sup.b(2, 1), "b(0,1)": sup.b(0, 1)}
     return out
 
 

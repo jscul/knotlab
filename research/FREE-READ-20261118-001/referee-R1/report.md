@@ -14,9 +14,12 @@
       16 of 84 triples are free.
     - The hub set is free, so freedom gating keeps the shortcut.
     - δ_KB misreads the cross-parity pairs, by up to 5 where steps apart is 2.
-  - **(3) The triangle inequality.** For bond distance it holds on 400 random bases that are not trees (62,154 triples), on 16
-    rings, and, proved here, on every parity base. For bond distance minus one, the quantity compared with steps apart, it fails on
-    48 of the 400 random bases, wherever two distinctions form a bond of two.
+  - **(3) The triangle inequality (corrected on 18 November 2026, after the owner's challenge).**
+    - **It holds on parity bases** (proved here) **and on knot trees.**
+    - **It fails in general.** The first version of this report said it held on 400 random bases that are not trees. That check
+      skipped every triple with a pair that no bond holds. Counting such a pair as infinitely far, the inequality fails on 106 of
+      those 400 bases (1,524 triples), already on two not-all-equal knots sharing two distinctions.
+    - **Bond distance minus one** fails more often still, wherever bonds of two exist.
 
 ## What holds
 
@@ -84,23 +87,36 @@
 
 ## 3. The triangle inequality (the owner's point 3)
 
-- **Bond distance (the least bond's size minus one), on the referee's tests** (`referee_free_triangle.json`):
-  - 0 violations on 62,154 triples of 400 random connected bases that are not trees (6 to 8 distinctions, 3 to 7 knots of mixed
-    parity, not-all-equal and betweenness);
-  - 0 on every ring of three to six knots under parity, not-all-equal, betweenness and alternating laws.
+- **Correction (18 November 2026).**
+  - **What the first version said.** "0 violations on 62,154 triples of 400 random connected bases that are not trees". That was
+    wrong as a statement about bond distance.
+  - **What went wrong.** The check skipped every triple holding a pair that no bond holds. Such a pair is infinitely far, and
+    those are exactly the failures.
+  - **The owner caught it.** Recounted with the fixed code (`referee_free_triangle.json`):
+    - **The failures.** Bond distance fails on 1,524 of 77,556 triples, in 106 of the 400 bases. Every one of the referee's
+      failures has the far side unheld (0 with all three distances finite).
+    - **The smallest case** is two not-all-equal knots (0, 2, 3) and (1, 2, 3): b(0, 2) = b(2, 1) = 2, but no bond holds 0 and 1.
+  - **A finite failure.** The owner reports one, on ten distinctions under not-all-equal (2, 2 and 5). The referee has not
+    checked it, because the example is not yet in the record (`BOND-METRIC-20261118-001`).
+  - **What still holds.** Every ring of three to six knots under parity, not-all-equal, betweenness and alternating laws:
+    0 failures, counted the right way.
+  - **The lesson.** A check of a distance must count a pair with no reading as infinitely far, never skip it.
 - **Proved for parity bases.**
   - **The setup.** Let x, y lie on a least circuit C₁ and y, z on a least circuit C₂.
   - **A circuit through x and z exists inside C₁ ∪ C₂.** Two circuits sharing an element have a connected union: connectivity is
     an equivalence, and its transitivity is proved inside the union.
   - **The bound.** b(x, z) + 1 ≤ |C₁ ∪ C₂| ≤ |C₁| + |C₂| − 1, so b(x, z) ≤ b(x, y) + b(y, z).
-  - This settles the parity case of the note's direction 2.
-  - On knot trees the inequality is immediate from the theorem.
-- **Bond distance minus one is not a metric in general.** It fails on 604 triples of 48 of the 400 random bases.
-  - Every failure involves a bond of two (b = 1): two distinctions tied by the knots around them, so that b − 1 = 0 between
-    distinct distinctions. Of the 604, 600 have the shape (b(x, z), b(x, y), b(y, z)) = (2, 1, 1) and 4 have (3, 2, 1).
+  - This settles the parity case of the note's direction 2. It needs no finiteness assumption: if b(x, y) and b(y, z) are
+    finite, so is b(x, z).
+  - On knot trees the inequality is immediate from the theorem, since every pair is held.
+- **Bond distance minus one is not a metric either.**
+  - **Among finite triples** it fails on 604 triples of 48 of the 400 random bases. Every one of these involves a bond of two
+    (b = 1): two distinctions tied by the knots around them, so that b − 1 = 0 between distinct distinctions. Of the 604, 600 have
+    the shape (b(x, z), b(x, y), b(y, z)) = (2, 1, 1), and 4 have (3, 2, 1).
+  - **With unheld pairs counted,** it fails on 2,128 triples of 132 bases.
   - An example on six distinctions: b(0, 1) = b(1, 2) = 1 and b(0, 2) = 2.
-  - The study compares δ, δ_K and τ with b − 1, which equals steps apart on trees. So the triangle inequality should be claimed for
-    b, not for b − 1, off trees.
+  - The study compares δ, δ_K and τ with b − 1, which equals steps apart on trees. Off trees, neither b nor b − 1 is a metric in
+    general.
 
 ## 4. Smaller points (Not a block)
 
@@ -118,8 +134,9 @@
 
 1. **Split grids.** Write "every pair lies in a bond of three", not "every three distinctions form a knot". On the 3 × 3 grid,
    16 of 84 triples are free. **Not a block.**
-2. **The triangle inequality.** Claim it for bond distance, which held on 400 random non-tree bases and 16 rings and is proved here
-   for parity bases. It fails for bond distance minus one wherever bonds of two exist (48 of 400 random bases). **Not a block.**
+2. **The triangle inequality (corrected).** Claim it only for parity bases (proved here) and knot trees. It fails in general: on 106
+   of 400 random bases a pair no bond holds is infinitely far, and the owner reports a finite failure. Bond distance minus one
+   fails also wherever bonds of two exist. **Narrowing** (the study has already narrowed its claim, 50647493f).
 3. **U's mixture.** Say that the forcing works knot by knot for each of the six laws, rather than "a switch of not-all-equal",
    since one switch may not serve two knots that share a distinction. **Not a block.**
 4. **Lo.** Name the connectedness that L1 uses: the knots inside L_j and R_j form subtrees. **Not a block.**

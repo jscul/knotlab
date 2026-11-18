@@ -1,0 +1,560 @@
+{
+  "dependencies": {
+    "check_span_controls.py": "ece53f8c0aa3f71c6be5984de374992d11c15bd3f4a20e9ff979d4c57e7cd6a2",
+    "continuation.json": "8235526471d3b1348dc0a23bb07481ec699abb66fd6e3bf2eebf80af153c1066"
+  },
+  "initial_history": [
+    [
+      [
+        0
+      ],
+      2
+    ],
+    [
+      [
+        0
+      ],
+      3
+    ],
+    [
+      [
+        0
+      ],
+      3
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      2
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      2
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      2
+    ],
+    [
+      [
+        4,
+        5,
+        6
+      ],
+      3
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      2
+    ]
+  ],
+  "initial_junctions": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      3,
+      5
+    ],
+    [
+      1,
+      4,
+      7,
+      12
+    ],
+    [
+      2,
+      6,
+      8,
+      13
+    ],
+    [
+      3,
+      4,
+      9,
+      14
+    ],
+    [
+      5,
+      6,
+      10,
+      15
+    ],
+    [
+      7,
+      8,
+      11,
+      16
+    ],
+    [
+      9,
+      10,
+      11,
+      17,
+      18,
+      19
+    ],
+    [
+      12,
+      13,
+      20,
+      21
+    ]
+  ],
+  "initial_true_and_false_marks": [
+    {
+      "common_witnesses": [],
+      "holders": [
+        4,
+        5,
+        8
+      ],
+      "legal": true,
+      "marks": [
+        14,
+        15,
+        20
+      ],
+      "pair_witnesses": [
+        [
+          1,
+          7
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ]
+    },
+    {
+      "common_witnesses": [
+        7
+      ],
+      "holders": [
+        4,
+        5,
+        6
+      ],
+      "legal": false,
+      "marks": [
+        14,
+        15,
+        16
+      ],
+      "pair_witnesses": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ]
+    }
+  ],
+  "initial_width": 22,
+  "lawful_right_example": {
+    "attachment_boundary_cost_controls": {
+      "7": {
+        "junctions": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "least_net_added_support_by_number_selected": {
+          "1": 1,
+          "2": 2,
+          "3": 2,
+          "4": 4,
+          "5": 4
+        }
+      },
+      "8": {
+        "junctions": [
+          14
+        ],
+        "least_net_added_support_by_number_selected": {
+          "1": 2
+        }
+      }
+    },
+    "history": [
+      {
+        "fresh": [
+          22,
+          23
+        ],
+        "legal_under_join_rule": true,
+        "parents": [
+          7
+        ],
+        "used": [
+          17
+        ]
+      },
+      {
+        "fresh": [
+          24,
+          25
+        ],
+        "legal_under_join_rule": true,
+        "parents": [
+          7
+        ],
+        "used": [
+          18
+        ]
+      },
+      {
+        "fresh": [
+          26,
+          27,
+          28
+        ],
+        "legal_under_join_rule": true,
+        "parents": [
+          7
+        ],
+        "used": [
+          19
+        ]
+      },
+      {
+        "fresh": [
+          29,
+          30
+        ],
+        "legal_under_join_rule": true,
+        "parents": [
+          9,
+          10
+        ],
+        "used": [
+          22,
+          24
+        ]
+      },
+      {
+        "fresh": [
+          31,
+          32
+        ],
+        "legal_under_join_rule": true,
+        "parents": [
+          9,
+          11
+        ],
+        "used": [
+          23,
+          26
+        ]
+      },
+      {
+        "fresh": [
+          33,
+          34,
+          35
+        ],
+        "legal_under_join_rule": true,
+        "parents": [
+          8
+        ],
+        "used": [
+          20
+        ]
+      }
+    ],
+    "marked_radius_set": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "minimum_new_distances_from_fixed_marks": {
+      "14": 8,
+      "15": 8
+    },
+    "new_distinctions_removed": [
+      33,
+      34,
+      35
+    ],
+    "new_distinctions_retained": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "original_entries_verified": 231,
+    "width": 36
+  },
+  "matched_negative_controls": {
+    "counterfactual_join_between_attachments_preserving_right_marks": {
+      "history": [
+        {
+          "fresh": [
+            22,
+            23
+          ],
+          "legal_under_join_rule": false,
+          "parents": [
+            7,
+            8
+          ],
+          "used": [
+            17,
+            20
+          ]
+        }
+      ],
+      "new_distinctions_within_radius_on_all_marks": [
+        22,
+        23
+      ],
+      "shortened_original_entries": [
+        [
+          1,
+          17,
+          9,
+          7
+        ],
+        [
+          2,
+          17,
+          9,
+          7
+        ],
+        [
+          12,
+          17,
+          7,
+          5
+        ],
+        [
+          13,
+          17,
+          7,
+          5
+        ],
+        [
+          17,
+          20,
+          7,
+          3
+        ],
+        [
+          17,
+          21,
+          7,
+          5
+        ]
+      ]
+    },
+    "lawful_left_with_its_own_marks_preserved": {
+      "history": [
+        {
+          "fresh": [
+            22,
+            23
+          ],
+          "legal_under_join_rule": true,
+          "parents": [
+            6,
+            8
+          ],
+          "used": [
+            16,
+            21
+          ]
+        }
+      ],
+      "new_distinctions_within_radius_on_all_marks": [
+        22,
+        23
+      ],
+      "shortened_original_entries": [
+        [
+          11,
+          21,
+          6,
+          5
+        ],
+        [
+          16,
+          20,
+          6,
+          5
+        ],
+        [
+          16,
+          21,
+          6,
+          3
+        ]
+      ]
+    }
+  },
+  "original_old_distances_at_most_seven_from_every_mark": true,
+  "original_shell_invariant": {
+    "left": {
+      "count": 5,
+      "mark_opposite_unique_minimum_pair": 20,
+      "pairs": [
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          11,
+          19
+        ]
+      ]
+    },
+    "right": {
+      "count": 0,
+      "mark_opposite_unique_minimum_pair": 16,
+      "pairs": []
+    }
+  },
+  "original_three_row_map_disagreements": [
+    [
+      9,
+      11
+    ],
+    [
+      9,
+      21
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      21
+    ],
+    [
+      11,
+      17
+    ],
+    [
+      11,
+      18
+    ],
+    [
+      11,
+      19
+    ],
+    [
+      17,
+      21
+    ],
+    [
+      18,
+      21
+    ],
+    [
+      19,
+      21
+    ]
+  ],
+  "right_anchor_loose_distances_from_14_and_15": {
+    "7": [
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "8": [
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        7
+      ]
+    ]
+  },
+  "right_initial_holders_lack_meeting_and_common_witness": true,
+  "right_legal_initial_ports_after_reserving_its_marks": {
+    "7": [
+      17,
+      18,
+      19
+    ],
+    "8": [
+      20,
+      21
+    ]
+  },
+  "whole_original_incidence_has_no_single_distinction_separator": true
+}

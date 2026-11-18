@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "proof_id": "VARIABLE-OUTPUT-READER-20261118-001E-P001",
+  "status": "Partial",
+  "all_size_scalar_triple_inverse": "open",
+  "counterexample_to_full_scalar_triple_invariance": null,
+  "scope": "Finite reachable serial parity growth from one ternary seed. Each later junction uses one, two or three legal distinct parents and produces two or three fresh distinctions. Only the full scalar table and the unordered triple are observed.",
+  "specified_width32": {
+    "width": 32,
+    "inputs_compared": 4960,
+    "ordered_code_labels": 2,
+    "legal_triples": 8,
+    "different_verdicts": 0,
+    "pair_entries": 496,
+    "explicit_reader": "All three internal bond distances equal six.",
+    "covers": "Every reachable realization and every isometry of this particular full matrix."
+  },
+  "literal_width32_swap": "The predecessor's dormant-input argument applies to this transposition acting as the identity on future distinctions. The present complete-matrix certificate also covers arbitrary other realizing histories at this width.",
+  "minimum_width_if_counterexample": 21,
+  "structural_results": {
+    "short_equations": "Every parity equation on at most four distinctions containing an input to a legal triple is invariant, in both directions, under any full scalar isometry.",
+    "four_bit_shores": "Four-bit bonds whose ordinary shores comprise at least three junctions form a nested chain. None of their distinctions can enter any legal triple in any continuation.",
+    "literal_swaps": "Any same-presentation scalar transposition moving a live input fixes every parity word of size at most four individually.",
+    "restricted_all_size_reader": "If both reachable competitors have junction arities at most four, pair distances through three recover every junction star, including mixed fresh counts.",
+    "terminal_junction": "An output still loose at a childless junction distinguishes an input it consumed from a retained live distinction at the same parent.",
+    "off_block": "A loose input in a legal triple cannot exchange individually with a shared bit at its holder outside the six-cycle's ordinary block.",
+    "reduced_presentation": "An opposing pair across histories could be taken to consist of the respective retained cores plus up to two ternary attachments per side without increasing width.",
+    "width22": "No independently grown continuations from the specified opposing width-22 markings, preserving the marked bits, can equalize their full or retained matrices."
+  },
+  "five_bit_frontier": {
+    "width": 30,
+    "uniform_internal_bond_distance": 4,
+    "eligible_triples": 2,
+    "forbidden_triples": 8,
+    "code_forced_by_full_table": true
+  },
+  "supplement": {
+    "least_sufficient_arity_for_triple_legality": "open",
+    "upper_bound": 5,
+    "observation": "For each triple distinguish minima 3, 4 and other. For each quintuple distinguish minima 5, 6 and other, on the same distinction set.",
+    "recovers": "Every minimal parity bond of sizes 3 through 6, hence all allowed states and all three-parent verdicts at any finite width.",
+    "width32_ternary_minimum_changes": 200,
+    "witness_containing_bond_sizes": [
+      {
+        "subset": [
+          4,
+          11,
+          13
+        ],
+        "size": 10
+      },
+      {
+        "subset": [
+          4,
+          11,
+          14
+        ],
+        "size": 8
+      }
+    ],
+    "ternary_alone_necessary_or_sufficient_for_legality": "unestablished"
+  },
+  "remaining_obligations": [
+    "Decide whether changing a larger equation through one of the marked inputs, or a relation elsewhere affecting their ordinary witnesses, can flip a triple verdict under a full marked isometry.",
+    "If such a collision exists, certify reachable histories, every original entry, minimum width and the least sufficient supplemental reading."
+  ],
+  "validation": {
+    "level": "V1",
+    "status": "Scoped lemmas audited and exact finite checks replayed. Universal inverse open.",
+    "novelty": "unassessed",
+    "advisor": "Claude Fable 5.2 supplied no all-size solution. Its proposed correction to the predecessor was checked against Theorem 1. That theorem asserts the separator converse, while the predecessor explicitly records the loss of the parity relation at width 32. No correction followed."
+  },
+  "frozen_design_sha256": "257bbc54fab299c73016ab8b676924d6ae90270baf72eadddbe84f08c3c6be85",
+  "decision_note_sha256": "41e65e92dbcf0124769cc3f1eb5934c1c23591bda1421d85b51901c855f5d369",
+  "evidence_files": {
+    "check_32_realizations.py": "5392e8f90c3754e22028072171176378335f80ec303f4a04e0806afe1841f539",
+    "check_extra.py": "47c5b79717b365fbb7802c5ad42adea78133aa3d42feec79dcf58d7afb212cc2",
+    "check_four_reader.py": "e6eb616123f98e480d8fdb8d0ea333dd05b4a114d9aa002efdbb8bbf0b760c35",
+    "equalize_rows.json": "19364b8d0c26d9d9871fa0c87af38cb8d023fbbb6d9382a85607b1738cb62920",
+    "equalize_rows.py": "d36703b6ddf971d1998ba6f19c7387d6c4c47bb4a6c5696b2a4905d7f4691daa",
+    "equalizer.md": "a12be659894aacba001264598d82062dd2ed8e0e7a11b5c5b2281cf2c1113b7f",
+    "exterior_hole.md": "061db50ec07ec9fcb2c586b5fc48709dc28d80055ba0e6d183a1c291f0ac8cd9",
+    "extra_reading.md": "94a66c71b3d2705d256fb09c0ff41a9708696f1663ed5809659f75ddc42b545c",
+    "five_frontier.py": "7976b5db5c81a07786b4cea201d726fafd270daa8a9bdc6c527555e24ef20b0c",
+    "four_bonds.md": "2ac8c60727b7efc2387d9dd49a1324735e35f942cfb08463eccad58aa4a6b218",
+    "frontier_exchange.md": "e8ff52448224f8d1ac62a2c8fa2abc1c4922ad69b2c526bcb806efbce4b1592e",
+    "identity.json": "aba0cac88db77c55a8e6b55971d52d4bc35246a3dfbd4130c0c08720410c0143",
+    "live_four.md": "252ec2208b2a35bb5c2cf562f69e88d61186f5a03e3a0a4bb561312255d8b47a",
+    "off_block.md": "c1ee9426d6ae07614cd5be71349c42afebeb3b8aef6d0331a42bfcf5b853e6f7",
+    "proof.md": "a733a0c4e4fba505bcb8b19ae30a8d165b0d00bf4b122468e4f329464606ddd9",
+    "read_table32.py": "8d31ba103930a927664b227fcc30b68aff8201c55cf23c1a78e291e87a8aa70a",
+    "realizations32.json": "e12e5b82dc546d7c8303ad774e0c4b8d97285e1a93cfbcfb7b574d3ed0874a74",
+    "scalar_inverse.md": "ee202ccf6c09a5b0f38cbfdef086dca241e676a8ae0dca9144ce7dc878a13bca",
+    "short_supports.md": "8500343ec92c69d804e0d907017b0ff6ac0d424a5ec6a768989b5f5cf19479d3",
+    "small_widths.md": "9dfded0282f8119a21817895dd132a959ebaba36bc20bfd633deafa272d06245",
+    "smallest_branches.md": "f87a3a38bf6f6c98196570cf42263fe3ef9a28bae3fdc381569c4154f12d4aa0",
+    "square_exchange.md": "973439a312d383ffb8955b9176791e66583445672fa36769f6fb7a9ba545373b",
+    "square_exchange.py": "f199bfed1a3dae57666093f769da10020e38dd58adb2bb33a5e5cf7f667a01a6",
+    "targeted_countermodel.json": "62b72150d49e8242c023996c7d9483128d530ff2a85d5a127230fa57aec83275",
+    "targeted_countermodel.py": "fd759c762f1753840a5ea434f967e571d4fad52f604d4d04115566352a61420e",
+    "terminal_cap.md": "b71f71e8beb9ffcfed0720867efa48ad6dd0410249455a97ae102797ec012f2c",
+    "three_terminals.md": "1dc86f0fb2d81b6b0d80e1b2063c86bd0bd57fb2a4ddf5f989c90bf0c6de0ce4"
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "archived_amplification_inputs": {
+    "archived_scalar_transpositions_checked": 32,
+    "shared_bit_born_at_loose_holder": 32,
+    "shared_input_at_holder_with_three_loose_bits": 0
+  },
+  "full_cap_counterexample": null,
+  "full_exact_isometries_on_cap_trials": {
+    "automorphisms_across_fixtures": 18072,
+    "first_conflict": null,
+    "full_table_classes": 292,
+    "generators_checked": 1608,
+    "isometric_pairs_of_indexed_observations": 140,
+    "triple_menu_conflicts": 0
+  },
+  "full_exact_isometries_on_targeted_repairs": {
+    "automorphisms_across_fixtures": 21024,
+    "first_conflict": null,
+    "full_table_classes": 110,
+    "generators_checked": 2696,
+    "isometric_pairs_of_indexed_observations": 3536,
+    "triple_menu_conflicts": 0
+  },
+  "full_repair_counterexample": null,
+  "specified_cap_motifs": {
+    "branch_through_a_new_shared_witness": {
+      "alternate_caps_changing_some_actual_triple": 128,
+      "alternate_caps_on_the_same_prefix": 128,
+      "alternate_caps_with_identical_named_matrices": 0,
+      "exact_live_loose_shared_twins": 0,
+      "least_prefix_word_size_after_symmetric_difference_with_cap_inputs": {
+        "5": 138,
+        "6": 502
+      },
+      "legal_triples": 768,
+      "live_sibling_swaps": 640,
+      "three_loose_holder_input_swaps": 512,
+      "three_loose_holder_scalar_twins": 0,
+      "width_counts": {
+        "23": 2,
+        "24": 14,
+        "25": 42,
+        "26": 70,
+        "27": 70,
+        "28": 42,
+        "29": 14,
+        "30": 2
+      },
+      "with_live_triples": 256
+    },
+    "repeated_two_parent_branch": {
+      "alternate_caps_changing_some_actual_triple": 64,
+      "alternate_caps_on_the_same_prefix": 64,
+      "alternate_caps_with_identical_named_matrices": 0,
+      "exact_live_loose_shared_twins": 0,
+      "least_prefix_word_size_after_symmetric_difference_with_cap_inputs": {
+        "5": 128,
+        "6": 256
+      },
+      "legal_triples": 720,
+      "live_sibling_swaps": 384,
+      "three_loose_holder_input_swaps": 320,
+      "three_loose_holder_scalar_twins": 0,
+      "width_counts": {
+        "21": 2,
+        "22": 12,
+        "23": 30,
+        "24": 40,
+        "25": 30,
+        "26": 12,
+        "27": 2
+      },
+      "with_live_triples": 128
+    }
+  },
+  "targeted_repairs_of_two_closest_caps": {
+    "branch_through_a_new_shared_witness": {
+      "checks": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          3,
+          5,
+          10,
+          11
+        ],
+        [
+          4,
+          8,
+          12,
+          13,
+          14
+        ],
+        [
+          6,
+          9,
+          15,
+          16
+        ],
+        [
+          10,
+          12,
+          17,
+          18
+        ],
+        [
+          7,
+          17,
+          19,
+          20,
+          21
+        ],
+        [
+          13,
+          15,
+          19,
+          22,
+          23
+        ]
+      ],
+      "extra_joins_only_at_the_cap_its_parents_or_new_outputs": [
+        {
+          "full_live_swaps": 0,
+          "histories_retaining_a_live_input": 12,
+          "moves": 1,
+          "smallest_number_of_differing_row_entries": 4
+        },
+        {
+          "full_live_swaps": 0,
+          "histories_retaining_a_live_input": 340,
+          "moves": 2,
+          "smallest_number_of_differing_row_entries": 4
+        }
+      ],
+      "history": [
+        {
+          "consumed": [],
+          "fresh": [
+            0,
+            1,
+            2
+          ],
+          "parents": []
+        },
+        {
+          "consumed": [
+            0
+          ],
+          "fresh": [
+            3,
+            4
+          ],
+          "parents": [
+            0
+          ]
+        },
+        {
+          "consumed": [
+            1
+          ],
+          "fresh": [
+            5,
+            6,
+            7
+          ],
+          "parents": [
+            0
+          ]
+        },
+        {
+          "consumed": [
+            2
+          ],
+          "fresh": [
+            8,
+            9
+          ],
+          "parents": [
+            0
+          ]
+        },
+        {
+          "consumed": [
+            3,
+            5
+          ],
+          "fresh": [
+            10,
+            11
+          ],
+          "parents": [
+            1,
+            2
+          ]
+        },
+        {
+          "consumed": [
+            4,
+            8
+          ],
+          "fresh": [
+            12,
+            13,
+            14
+          ],
+          "parents": [
+            1,
+            3
+          ]
+        },
+        {
+          "consumed": [
+            6,
+            9
+          ],
+          "fresh": [
+            15,
+            16
+          ],
+          "parents": [
+            2,
+            3
+          ]
+        },
+        {
+          "consumed": [
+            10,
+            12
+          ],
+          "fresh": [
+            17,
+            18
+          ],
+          "parents": [
+            4,
+            5
+          ]
+        },
+        {
+          "consumed": [
+            7,
+            17
+          ],
+          "fresh": [
+            19,
+            20,
+            21
+          ],
+          "parents": [
+            2,
+            7
+          ]
+        },
+        {
+          "consumed": [
+            13,
+            15,
+            19
+          ],
+          "fresh": [
+            22,
+            23
+          ],
+          "parents": [
+            5,
+            6,
+            8
+          ]
+        }
+      ],
+      "live_loose": 16,
+      "live_triples": [
+        [
+          11,
+          14,
+          16
+        ]
+      ],
+      "row_differences_loose_then_shared": [
+        [
+          13,
+          6,
+          4
+        ],
+        [
+          19,
+          6,
+          4
+        ],
+        [
+          22,
+          6,
+          4
+        ],
+        [
+          23,
+          6,
+          4
+        ]
+      ],
+      "shared_cap_input": 15
+    },
+    "repeated_two_parent_branch": {
+      "checks": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9,
+          10
+        ],
+        [
+          3,
+          5,
+          11,
+          12
+        ],
+        [
+          4,
+          8,
+          13,
+          14
+        ],
+        [
+          6,
+          9,
+          15,
+          16
+        ],
+        [
+          7,
+          10,
+          17,
+          18,
+          19
+        ],
+        [
+          11,
+          13,
+          17,
+          20,
+          21
+        ]
+      ],
+      "extra_joins_only_at_the_cap_its_parents_or_new_outputs": [
+        {
+          "full_live_swaps": 0,
+          "histories_retaining_a_live_input": 16,
+          "moves": 1,
+          "smallest_number_of_differing_row_entries": 4
+        },
+        {
+          "full_live_swaps": 0,
+          "histories_retaining_a_live_input": 384,
+          "moves": 2,
+          "smallest_number_of_differing_row_entries": 4
+        }
+      ],
+      "history": [
+        {
+          "consumed": [],
+          "fresh": [
+            0,
+            1,
+            2
+          ],
+          "parents": []
+        },
+        {
+          "consumed": [
+            0
+          ],
+          "fresh": [
+            3,
+            4
+          ],
+          "parents": [
+            0
+          ]
+        },
+        {
+          "consumed": [
+            1
+          ],
+          "fresh": [
+            5,
+            6,
+            7
+          ],
+          "parents": [
+            0
+          ]
+        },
+        {
+          "consumed": [
+            2
+          ],
+          "fresh": [
+            8,
+            9,
+            10
+          ],
+          "parents": [
+            0
+          ]
+        },
+        {
+          "consumed": [
+            3,
+            5
+          ],
+          "fresh": [
+            11,
+            12
+          ],
+          "parents": [
+            1,
+            2
+          ]
+        },
+        {
+          "consumed": [
+            4,
+            8
+          ],
+          "fresh": [
+            13,
+            14
+          ],
+          "parents": [
+            1,
+            3
+          ]
+        },
+        {
+          "consumed": [
+            6,
+            9
+          ],
+          "fresh": [
+            15,
+            16
+          ],
+          "parents": [
+            2,
+            3
+          ]
+        },
+        {
+          "consumed": [
+            7,
+            10
+          ],
+          "fresh": [
+            17,
+            18,
+            19
+          ],
+          "parents": [
+            2,
+            3
+          ]
+        },
+        {
+          "consumed": [
+            11,
+            13,
+            17
+          ],
+          "fresh": [
+            20,
+            21
+          ],
+          "parents": [
+            4,
+            5,
+            7
+          ]
+        }
+      ],
+      "live_loose": 12,
+      "live_triples": [
+        [
+          12,
+          14,
+          15
+        ],
+        [
+          12,
+          14,
+          16
+        ]
+      ],
+      "row_differences_loose_then_shared": [
+        [
+          13,
+          6,
+          4
+        ],
+        [
+          17,
+          6,
+          4
+        ],
+        [
+          20,
+          6,
+          4
+        ],
+        [
+          21,
+          6,
+          4
+        ]
+      ],
+      "shared_cap_input": 11
+    }
+  },
+  "width_32_predecessor_control": {
+    "first_changed_ternary_minimum": [
+      [
+        4,
+        11,
+        13
+      ],
+      10,
+      8
+    ],
+    "legal_triples_fixed": [
+      [
+        26,
+        28,
+        30
+      ],
+      [
+        26,
+        28,
+        31
+      ],
+      [
+        26,
+        29,
+        30
+      ],
+      [
+        26,
+        29,
+        31
+      ],
+      [
+        27,
+        28,
+        30
+      ],
+      [
+        27,
+        28,
+        31
+      ],
+      [
+        27,
+        29,
+        30
+      ],
+      [
+        27,
+        29,
+        31
+      ]
+    ],
+    "modified_ternary_minimum_on_all_input_triples": 200,
+    "pair_entries_invariant": 496,
+    "scalar_group_order": 384,
+    "source_sha256": "48a711f1fa5b6eca0aa05d47eba9011bb129af985f29f8fd3ea959981ee09ed3"
+  }
+}

@@ -1,0 +1,46 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RING-READ-20261118-001A-E001",
+ "ticket": "RING-READ-20261118-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "At rounds 10 to 20 of the ring of four four-place knots and one five-place knot under the cheapest counts, does the bond-distance table alone give back the junctions and the next round (readers R1, R1', R2), and is the junction graph rigid (3-connected)?",
+ "definitions": {
+  "table": "bond_table(stars, m, K): exact distances up to K over bonds with a side of at most m junctions and a connected complement",
+  "R0": "BOND-NEXT-JOIN-20261117-001 read_stages to support 6",
+  "R1": "the same stages run on to the largest junction size",
+  "R1prime": "R1 with cliques in the GF(2) span of the previous stage's junctions discarded (the advisor's linear prune)",
+  "R2": "R1's junctions repaired to a legal incidence, kept when their own table equals the given one"
+ },
+ "public_inputs": {
+  "code": "ringread.py (sha256 f38d0b7406a181ec0273df9baa2445fb1b820c0e60a36a06b3664956702d9c43), check.py (sha256 9160f829687fefc8d1fa93776b616f205a3df1f25f88fcfa4bdc8cbcb3f8febf)",
+  "run": ".venv/bin/python -B check.py gate; .venv/bin/python -B check.py 10 12 14 15 16 18 20 (one process per round); .venv/bin/python -B check.py merge",
+  "reused": "RING-GROWTH-20261118-001B ring.py, FIRST-KNOT-20261118-001B startlib.py, FRESH-COUNT-20261118-001B freelib.py, BOND-NEXT-JOIN-20261117-001 check_rearrangements.py (closed records, hashes checked on import)"
+ },
+ "forbidden_inputs": [
+  "Rounds, parents, history or bit names given to a reader (readers see only the table)",
+  "Changing a prediction after a round is read"
+ ],
+ "primary_observable": "G, F1-F3, P1-P6 of research/RING-READ-20261118-001/preregistration.md",
+ "cheapest_meaningful_control": "R0 at round 9 (inside the proved scope) and a mutated round-10 table",
+ "predictions": {
+  "G": "brute-force table equality at rounds 1 and 2; R0 exact at round 9; mutant rejected",
+  "F1": "no one-parent junction after round 1",
+  "F2": "no triangle, no pair of junctions sharing two distinctions",
+  "F3": "every layer cut at least 11",
+  "P1": "tables at m = 6, 7 (8) agree",
+  "P2": "R1 spurious at every round",
+  "P3prime": "R1' exact at every round (advisor)",
+  "P3": "R2 exactly one survivor, the truth",
+  "P4": "regrown round equals the true one",
+  "P5": "G 3-connected",
+  "P6": "least working horizon = largest junction size - 1"
+ },
+ "decision_rules": {
+  "each": "as stated in the pre-registration's table; no tolerance"
+ },
+ "stop_rule": "One run per round; read-out; referee hand-off; report.",
+ "runtime": "minutes",
+ "amendments": []
+}

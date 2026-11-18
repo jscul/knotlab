@@ -24,8 +24,8 @@ As in `MEET-ORDERS-20261118-001A` (the line, betweenness, KF3, fills, odd sets, 
   - NNF is the same with any old pair allowed in a knot, not only pairs that already share one.
   - CC takes the **corner fills across crossing splits**, and a subdivision when there is none. A corner fill is
     {B(x, r, y), B(c, x, r), B(c, y, r)} on old distinctions where c differs from x on exactly one split t₁, from y on exactly one
-    other split t₂, and t₁ and t₂ cross; then r is c with both t₁ and t₂ changed. CC reads only the states near c: which two
-    splits separate c from x and from y, and whether those two cross.
+    other split t₂, and t₁ and t₂ cross; then r is c with both t₁ and t₂ changed. CC reads which two splits separate c from x and
+    from y, and whether those two cross.
 
 ## Statements
 
@@ -64,8 +64,12 @@ As in `MEET-ORDERS-20261118-001A` (the line, betweenness, KF3, fills, odd sets, 
 - **NN** reads the states and the pairs that share a knot, and checks after each candidate fill whether the base has two orders.
 - **NNF** reads only the states, and checks the same. The number of orders is read from all the splits at once (k and λ). What
   the rule is given is the number two: it takes the fills after which there are at most two orders, and nothing marks which split
-  belongs to which order. A rule told to keep the number of orders it has would never fill a line.
-- **CC** reads, for each candidate, two splits near one distinction and whether they cross. It is given its first crossing.
+  belongs to which order. A rule told to keep the number of orders it has would never fill a line. *After the referee (R1,
+  section 1):* it is also given the step for when no such fill exists, a subdivision, which N1 and N3 use; and NNF is the cheapest
+  rule with the cap added, which uncapped makes every order (`CUBE-DOUBLING-20261118-001A`), so the two is wholly the cap's.
+- **CC** reads, for each candidate, two splits near one distinction and whether they cross. Whether two splits cross depends on
+  every distinction, so this is a reading of two splits, not a strictly local one (wording after the referee). It is given its
+  first crossing.
 - **The class law** of `LOCAL-ROOM-20261118-001` is given a class for every split, by the start and by inheritance.
 
 ## Proofs

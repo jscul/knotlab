@@ -1,7 +1,8 @@
 # A rule that never nests its fills
 
 Epic `NEVER-NEST-20261118-001`, 18 November 2026, by Claude. It takes B197, from `MEET-ORDERS-20261118-001` (direction 2), after
-`LOCAL-ROOM-20261118-001`, agreed with the coordinator. Goals G1 and G16; tests A99. Referee pending.
+`LOCAL-ROOM-20261118-001`, agreed with the coordinator. Goals G1 and G16; tests A99. Refereed: report
+[R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `d285dd83f` at 04:06:13 UTC.
@@ -17,8 +18,12 @@ Epic `NEVER-NEST-20261118-001`, 18 November 2026, by Claude. It takes B197, from
 **Yes. The rule that takes only the fills keeping two orders, and otherwise lengthens the line by one subdivision, grows full
 two-way grids and keeps two orders forever, in nearly every run, even with its knots confined to pairs that already share one
 (computed to n = 40 from every bracketing of 5 to 8). Without that confinement it does so in every run, from every line (proved).
-What these rules are given is the number two; nothing marks which split belongs to which order, and nothing is remembered. A local
-version, which completes a corner only across two splits that cross, does the same once its first crossing reaches every split.**
+What these rules are given is the cap "at most two orders" and the step to take when no such fill exists, a subdivision; nothing
+marks which split belongs to which order, and nothing is remembered. A rule that completes a corner only across two splits that
+cross does the same once its first crossing reaches every split.**
+*Narrowed after the referee:* NNF is `CUBE-DOUBLING-20261118-001`'s cheapest rule with the cap added. Uncapped, the same rule makes
+every order, so the two is wholly the cap's, and the rule does not choose it. Whether a cap of three gives three-way grids is
+untested here (`PICK-TWO-20261118-001` tests it).
 
 - **NN, B197's rule: knots only on pairs that already share one** (R1, 254 runs to n = 40; E1 exact to n = 12).
   - Two orders at every step after the first fill, in every run and with probability 1 in the exact distributions, as the rule
@@ -54,21 +59,25 @@ version, which completes a corner only across two splits that cross, does the sa
   When its knots must join distinctions that already share a knot, as B197 asked, it still does this in nearly every run
   (computed).
 - What the earlier class law supplied split by split, which order each split belongs to, is read here from how the splits cross.
-- What is still given is the number two. A law told to keep three would, as far as these arguments go, fill a three-way grid; no
-  law here chooses two by itself.
+- What is still given is the cap of two orders, and the lengthening step for when no fill keeps it. Without the cap the same rule
+  makes every order, so no law here chooses two by itself.
+- *After the referee:* this settles `LOCAL-ROOM-20261118-001`'s open point. A rule that reads the states beyond a reach limit holds
+  two orders and fills them, so two orders need no memory, only the cap.
 
 ## What each rule reads and what it is given
 
 | Rule | Reads | Given |
 | --- | --- | --- |
-| NN (B197) | the states, and which pairs share a knot | the number two: the fills after which there are at most two orders |
-| NNF | the states only | the number two |
-| CC | two splits next to one distinction, and whether they cross | a first crossing |
+| NN (B197) | the states, and which pairs share a knot | the cap: the fills after which there are at most two orders; and the subdivision when there is none |
+| NNF | the states only (the order count is a function of the states, but of all of them at once) | the cap and the subdivision |
+| CC | two splits next to one distinction, and whether they cross (which depends on every distinction) | a first crossing |
 | The class law (`LOCAL-ROOM-20261118-001`) | the states and a class for every split | the classes, by the start and by inheritance |
 
 The number of orders, k and λ, is read from all the splits at once. Nothing marks which split belongs to which order, and nothing is
 remembered from one step to the next: each rule's choice is a function of the present base. A rule told only to keep the number of
-orders it has would never fill a line, since every fill of a line makes two (`STATE-RULES-20261117-001`, S4).
+orders it has would never fill a line, since every fill of a line makes two (`STATE-RULES-20261117-001`, S4). All of them also take
+A99's moves and uniform ties, from a line. The subdivision fallback is what N1 and N3 use; NN2, which takes any cheapest step
+keeping two orders, behaves the same in the runs, so the fallback can be loosened, but NNF's proof is for the subdivision.
 
 ## Predictions and verdicts
 
@@ -109,8 +118,8 @@ split, is read here from the states, once the law is told how many orders to kee
 ## What it means for A99 and the goals
 
 - **G1:** capability gained. A law that grows two orders and keeps them, filled, without end: proved for NNF from any line and
-  CC from the 2 × 2 pattern, computed for NN (B197) from every bracketing of 5 to 8 to n = 40. What it is given is the number two
-  (new A101).
+  CC from the 2 × 2 pattern, computed for NN (B197) from every bracketing of 5 to 8 to n = 40. What it is given is the cap of two
+  orders and the subdivision fallback (new A101); uncapped, the same rule makes every order.
 - **G16:** capability gained. A shape is made by a rule that reads only the states (and, for NN, which knots meet), with the
   order each split belongs to read from the crossings.
 - **A99** stays assumed; these laws sit on top of it. **A97** gains this study among the two-way laws: the grids grown here are
@@ -121,7 +130,7 @@ split, is read here from the states, once the law is told how many orders to kee
 
 - Exact distributions to n = 12 (NN) and n = 10 (NN2); runs to n = 40, one or two seeds per bracketing.
 - NNF's and CC's courses are proved; their runs check the proofs and read the shapes.
-- The rules are told the number two; no rule here picks it (A101).
+- The rules are told the cap of two and the subdivision fallback; no rule here picks two (A101).
 - NN's growth past n = 40, and its 13 runs with holes and 4 without a full grid, are computed, not proved.
 - Ties are uniform over knot sets for the knot-sharing rules and over distinct extensions for the others, as declared.
 
@@ -152,12 +161,29 @@ Consulted twice before the freeze.
 The CC rule, P8 and N5 were added after the second consultation, prompted by `LOCAL-ROOM-20261118-001`'s referee, and were not
 reviewed by the advisor. It was not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code: confirmed with fixes, no Block.
+- N1 to N6 hold, checked by hand (N4's minimal empty cell, N3's medians, N5's refill, N6's invariance).
+- Its own NN (eight runs to n = 40, bracketings of 5 to 8) and NNF (four runs to n = 32) agree: two orders at every step, the first
+  full grid at 9, 12, 15 and 20 (NN) and 8, 12, 15 and 18 (NNF) with no subdivision before it, every later subdivision at a full
+  grid, and a fill fraction of 0.80.
+- "NNF reads only the states" is exact; its order count is a global reading of the states.
+
+Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing.** What is given is the cap "at most two orders" and the subdivision fallback (and, as for every rule in this line,
+   A99's moves, uniform ties and a line start), not only "the number two". NNF is the cheapest rule capped at two; uncapped, it
+   makes every order (`CUBE-DOUBLING-20261118-001`), so the two is wholly the cap's. A101 says so.
+2. **Not a block.** CC "reads two splits and whether they cross", which depends on every distinction, rather than being strictly
+   local.
+3. Recorded, not a correction: the study settles `LOCAL-ROOM-20261118-001`'s open point; two orders need no memory, only the cap.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: a rule that never nests its fills (B197) | **Status:** Successful (referee pending), with 3 of 8 predictions failed | NN grows full two-way grids in nearly every run to n = 40; NNF does in every run, proved; CC does from a crossing that reaches every split |
-| Local direction: holding two orders while filling | Promising | Held without per-split memory; the number two is still given |
+| Local direction: holding two orders while filling | Promising | Held without per-split memory; the cap of two is still given |
 | Broader exploration: a law that picks two orders by itself | Unexplored | Every law that holds two orders is told two, or handed a crossing |
 | Long-term goal: G1 | Capability gained | A two-way grid grows forever from a line, read from the states |
 
@@ -166,7 +192,7 @@ reviewed by the advisor. It was not consulted after the read-out.
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Who picks two? Tell NNF to keep at most d orders and test whether it fills full d-way grids (the proofs of N3 and N4 look as if they carry over); then look for a states-only rule told no number that settles at two | 3/3 | 2/3 | Prove or refute the d-way N3 and N4, and run d = 3 → stop at a rule that picks two, or an obstruction | Selected |
-| 2 | A fully local rule from a bare line: CC with a first step read from the states (the fill whose ends are the line's two ends, readable as the distinctions every split separates) | 3/3 | 2/3 | Define the first step from the states, prove with N6 that CC then fills every grid → stop at a proof or a counterexample | Alternative |
+| 2 | A rule reading two splits, from a bare line: CC with a first step read from the states (the fill whose ends are the line's two ends, readable as the distinctions every split separates) | 3/3 | 2/3 | Define the first step from the states, prove with N6 that CC then fills every grid → stop at a proof or a counterexample | Alternative |
 | 3 | Why NN refills: prove that the new row's neighbouring pairs share knots, and explain the 13 runs with holes and the 4 without a full grid | 2/3 | 3/3 | Characterise the co-knotted neighbour pairs of NN's full grids → stop at a proof or the failing pattern | Alternative |
 | 4 | The distance on a grown grid: does the pair-count distance on NN's and NNF's grids read as a two-way ruler (A97)? | 3/3 | 2/3 | Read the pair counts of the grown grids against the grid's own distance → stop at a ruler or its failure | Alternative |
 

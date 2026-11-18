@@ -3,6 +3,19 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: two orders held without memory, confirmed by the referee; what the rule is given narrowed
+
+- The study of a rule that never nests its fills (`NEVER-NEST-20261118-001`) was confirmed by its referee with fresh code, with no
+  Block. Taking only the fills after which there are at most two orders, and lengthening the line by one subdivision otherwise,
+  grows full two-way grids forever from any line (proved when knots may join any pair; computed, in nearly every run to forty
+  distinctions, when they may join only pairs that already share a knot). A rule that completes a corner only across two splits
+  that cross does the same once its first crossing reaches every split
+  ([decision note](research/NEVER-NEST-20261118-001/never_nest.md)).
+- Narrowed: the rule is given the cap of two orders and the lengthening step, not only "the number two"; without the cap the same
+  rule makes every order, so the two is the cap's and the rule does not choose it. A new study tests caps of three and four.
+- Not a block: the corner rule reads two splits and whether they cross, which is not strictly local.
+- Recorded: this settles the reach-limit study's open question; two orders need no memory, only the cap.
+
 ## 18 November 2026: what the growth's knots tell, confirmed by its referee; narrowed
 
 - The study of whether the knots a growth added record how the first knots met (`MEET-ADDED-20261118-001`) was confirmed by its

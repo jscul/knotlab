@@ -2616,12 +2616,13 @@ evidence: results and their status come from the records each entry links.
   reach limit read from the states holds two orders and fills them, and that one remembered class per split, handed over by the
   start, does: knots only across the two classes grow full two-way grids forever. So two orders need more than a reach limit; a
   rule reading the crossing of the splits is not excluded (narrowed after the referee).
-  `NEVER-NEST-20261118-001` ([decision note](../research/NEVER-NEST-20261118-001/never_nest.md); referee pending) found such
-  rules. Told only to take no fill that makes a third order, the growth reads which order each split belongs to from the states
-  and grows full two-way grids forever from a line: proved when knots may join any pair, computed (nearly every run to n = 40)
-  when they may join only pairs that already share a knot. A rule that completes a corner only across two crossing splits does the
-  same once its first crossing reaches every split. The number two is given (A101). These are the first grown bases on which a
-  two-way distance can be read.
+  `NEVER-NEST-20261118-001` ([decision note](../research/NEVER-NEST-20261118-001/never_nest.md); refereed) found such rules.
+  Told to take no fill that makes a third order, and to lengthen by a subdivision when no other fill is left, the growth reads
+  which order each split belongs to from the states and grows full two-way grids forever from a line: proved when knots may join
+  any pair, computed (nearly every run to n = 40) when they may join only pairs that already share a knot. So two orders need no
+  memory, only the cap. A rule that completes a corner only across two crossing splits does the same once its first crossing
+  reaches every split. The two is wholly the cap's: uncapped, the same rule makes every order (A101). These are the first grown
+  bases on which a two-way distance can be read.
   `MEET-ORDERS-20261118-001` ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md); refereed) found
   which information that is, for fewest-knot presentations (one redundant knot changes the chances; A100). The fewest-knot presentations of a line are its bracketings, which knot lies within which half of
   which (proved), and under KF3 the chance of two orders after the second new distinction is an exact formula in the bracketing
@@ -2834,8 +2835,10 @@ evidence: results and their status come from the records each entry links.
 **Assumed** · 2026-11-18 · scope
 
 - **Statement.** In `NEVER-NEST-20261118-001`, the rules that grow two-way grids from a line are told the number two. NN and NNF
-  take only the fills after which the base has at most two orders (read from all the splits at once), and CC is given a first
-  crossing. Nothing marks which split belongs to which order, and nothing is remembered, but no rule there chooses two by itself.
+  take only the fills after which the base has at most two orders (read from all the splits at once), and lengthen by a
+  subdivision (one knot on a pair one split apart) when no such fill exists; CC is given a first crossing. Nothing marks which
+  split belongs to which order, and nothing is remembered, but no rule there chooses two by itself. NNF is the cheapest rule with
+  the cap added; uncapped, it makes every order (`CUBE-DOUBLING-20261118-001`), so the two is wholly the cap's.
 - **Why.** Taken by default: B197 asked whether a rule that never nests its fills keeps two orders, which fixes two as the target.
   The cheapest growth with no target gains an order at every doubling (`CUBE-DOUBLING-20261118-001`), and a rule told only to keep
   the number of orders it has never fills a line, since every fill of a line makes two.
@@ -2846,4 +2849,6 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `NEVER-NEST-20261118-001`'s referee (R1): what is given is the cap and the subdivision fallback, not only the
+    number; the two is wholly the cap's. Statement narrowed; status unchanged.
   - 2026-11-18 · Added by `NEVER-NEST-20261118-001`.

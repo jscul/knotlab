@@ -148,6 +148,10 @@ Folded in the same day, each logged in `docs/CORRECTIONS.md` and knotlab's `HIST
    still a single split at n = 20. The matching-based chains count splits that cross nothing. The 2 × 2 start has n − 2 splits.
 4. **Not a block.** The class law's two orders are close to built in, and its row completion is computed, not proved.
 
+*Later (18 November):* `NEVER-NEST-20261118-001` settled the open point of fix 2. A rule that reads the states, told to take no fill
+that makes a third order and to subdivide otherwise, holds two orders and fills them forever from any line (proved), so two orders
+need no memory, only that cap.
+
 ## Position
 
 | Scope | Verdict | Why |

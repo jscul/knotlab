@@ -10,8 +10,7 @@ that the cheapest growth gains one order at every doubling and never keeps two:
 - `MID-RULE-20261118-001`
 - `COPY-READ-20261118-001`
 
-The first six are refereed and folded in. `COPY-READ` is with the referee; `MID-RULE`'s free-form runs (a check of proved
-statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
+All seven are refereed and folded in; `MID-RULE`'s free-form runs (a check of proved statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
 returns shrinking on bases this small.
 
 **Scope throughout.** Growth by A99's moves (one new distinction with one to three betweenness knots; every old state kept),
@@ -34,7 +33,8 @@ each step do it?
 - The step where the two enters can be read in the knots: it is the first time four knots close on four distinctions.
 - After one free fill, a rule taking only fills with at most one end knot never makes a third order. But free, it grows full grids
   only from a spanning first fill or the 2 × 2 pattern, and knot-local it never fills again. The step that grows the grid over the
-  whole line, the copy step, shows no sign in its own knots.
+  whole line, the copy step, is not decided by its own knots or the betweenness among its distinctions. But every copy step met
+  has one shape of that betweenness, shared by under 2% of crossing-making fills: a local necessary condition.
 
 ## What is proved
 
@@ -76,8 +76,9 @@ each step do it?
 - **The rule reading only the fill's knots, with knot-sharing,** starved: exactly one fill per run, then only lengthening, in 210 of
   210 runs to 60 distinctions. (`MID-RULE-20261118-001`)
 - **The copy step** (pulling an uncrossed split into the grid without adding an order) is rare: 566 among about 1.8 million
-  crossing-making fills, all early. Every one looks, in its own knots and the betweenness among its distinctions, like a refused
-  fill. (`COPY-READ-20261118-001`)
+  crossing-making fills, all early. No reading of its own knots or the betweenness among its distinctions decides it. But all of
+  them fall in one closure class, which holds under 2% of crossing-making fills (the referee's count: 528 of 528, lift 57).
+  (`COPY-READ-20261118-001`)
 
 ## What the referees narrowed
 
@@ -93,6 +94,8 @@ All logged in `docs/CORRECTIONS.md` with knotlab's `HISTORY.md`:
   (Narrowing).
 - `KEEP-READ-20261118-001`: "no local reading" narrowed to the fill's own knots and the betweenness among its distinctions. On bases
   of 24, one step out is most of the base and could not be tested (Narrowing).
+- `COPY-READ-20261118-001`: "no sign" became "no exact reading, but one closure class holding every copy step and under 2% of
+  crossing-making fills" (Narrowing).
 - `MID-RULE-20261118-001`: "keeps two orders, told no number, reading only the fill's knots" scoped. Knot-local it never fills again,
   free it grows full grids only from a spanning first fill or 2 × 2, and the free fill is a given (Narrowing). "Any base" means any
   base of betweenness knots (Not a block).

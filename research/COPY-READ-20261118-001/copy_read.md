@@ -1,7 +1,8 @@
 # SEED's copy clause read in the knots
 
 Epic `COPY-READ-20261118-001`, 18 November 2026, by Claude. It takes `MID-RULE-20261118-001`'s first direction, with the
-coordinator's go-ahead. Goals G1 and G16; challenges A101. Referee pending.
+coordinator's go-ahead. Goals G1 and G16; challenges A101. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no
+Block, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `3b771378c` at 11:28:57 UTC.
@@ -17,6 +18,10 @@ one of the 566 fills that pulled an uncrossed split into the grid without adding
 fill. Absorbing fills are rare: 566 among 1,787,986 crossing-making fills (0.03%), offered early (median n = 10). One step out, the
 ball covers 96% of the base, and only 4% of held-out absorbing fills had a picture class seen before, so that tier could not be
 tested.**
+*Narrowed after the referee:* "no sign" is too strong. No reading of the move's own knots or closure accepts exactly SEED's absorbing
+fills, but every absorbing fill met has one closure picture, shared by under 2% of crossing-making fills: a local necessary
+condition (recall 1, precision 1.7%, a 57-fold lift). At tier 0 they also share one class (a middle knot and two end knots), which
+holds 36% of crossing-making fills.
 
 - **Two end knots, always.** Every absorbing fill makes a new crossing, so each of its certificates has two end knots (A1). Each
   absorbing extension here had a single knot set.
@@ -86,11 +91,29 @@ Consulted after the freeze and before the read-out. This was a lapse: the standi
   pair (v, v′) shares a knot with an active split's ends", fixed on exploration runs and scored on the rest. These are taken as the
   next direction.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code: confirmed with fixes, no Block.
+- **Proofs.** A1 holds (it is E1); A2 holds (KEEP-READ's R2).
+- **Replication.** Its own SEEDK runs, with other seeds and exact canonical classes, found 528 absorbing fills among 1,762,024
+  crossing-making fills (0.030%, against this study's 0.032%), at median n = 10. Neither tier 0 nor the closure gives an exact
+  reading: clean witness 0, pooled and held out.
+
+Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (wording).** "No sign" is too strong. At the closure tier all 528 absorbing fills fall in one class, which holds only
+   1.76% of crossing-making fills (30,490 refused), a 57-fold lift. At tier 0 they also share one class (a middle knot and two end
+   knots), holding 36% (lift 2.8). So the betweenness among the move's distinctions gives a local necessary condition for absorbing,
+   with recall 1 and precision 1.7%, but not an exact rule. An example of the class: the knots B(1, r, 4), B(2, 1, r), B(3, 5, r),
+   with nine implied betweennesses among 1 to 5; it turns up in three different runs.
+2. **Not a block.** P1 and P2 are replications at scale, not predictions, since the disclosed exploration had settled them. Only P3
+   and P4 were open, and both held.
+3. **Not a block.** The late advisor consultation is disclosed.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: SEED's copy step in the knots | **Status:** Successful (referee pending), 4 of 4 held | No sign at the move's own knots or closure; one step out untestable here |
+| This attempt: SEED's copy step in the knots | **Status:** Successful (refereed), 4 of 4 held (P1, P2 as replications) | No sign at the move's own knots or closure; one step out untestable here |
 | Local direction: growth by a local rule | Obstruction learned (move's own knots) | The copy step is rare and looks like raising |
 | Broader exploration: how far the copy step's evidence sits | Unexplored | The witness radius is the direct measure |
 | Long-term goal: G1 | Obstruction learned | Growing two orders over the whole line needs a non-local copy step |

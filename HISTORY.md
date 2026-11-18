@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the copy step, confirmed by the referee; a local necessary sign found
+
+- The study of SEED's copy step in the knots (`COPY-READ-20261118-001`) was confirmed by its referee with fresh code, with no Block.
+  Fills that pull an uncrossed split into the grid without adding an order are rare (about 0.03% of crossing-making fills), and
+  neither their own knots nor the betweenness among their distinctions decide them
+  ([decision note](research/COPY-READ-20261118-001/copy_read.md)).
+- Narrowed: every one of them shares one shape of that betweenness, which holds under 2% of the fills that make a crossing, so the
+  shape is a local necessary sign, not an exact rule.
+
 ## 18 November 2026: a crossing needs two end knots, confirmed by the referee; the rule built on it scoped
 
 - The study of a rule whose second phase reads only the fill's knots (`MID-RULE-20261118-001`) was confirmed by its referee with

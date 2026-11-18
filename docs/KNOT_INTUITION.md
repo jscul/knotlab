@@ -521,6 +521,21 @@ trip. On every patch without holes up to twelve knots that extra length is
 zero except on lone pairs of opposite classes facing each other, and there it
 is at most two. Whether it can grow without limit is open
 ([decision note](../research/RIM-EXCESS-20261118-001/rim_excess.md)).
+Can a growth read its own dimension from bond distances, if nobody tells it
+how many fresh distinctions each new parity knot takes
+(`FRESH-COUNT-20261118-001`, proofs and frozen census, referee pending)? No:
+it can only copy the number from its start. Whatever the counts, the cubic
+study's joining rule builds one kind of object, the down-closed sets of the
+order in which its one-parent junctions descend (the literature's Birkhoff
+lattice of ideals), so a count rule only chooses where to start a new
+one-parent junction; the rule completes the rest and starts no chain of them
+by itself (proved). If every join must take the same number and the growth must
+never stall, the number has to be the size of the first knot, and then balls
+grow as r to that power (proved): from the smallest knot, three. The stall at
+four that seemed to pick three is the old rule's cap of three on how many
+junctions one join may take. The fewest counts close one knot into the 2^a
+pattern (the literature's a-cube: eight junctions from a knot of three) and stop
+([decision note](../research/FRESH-COUNT-20261118-001/fresh_count.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

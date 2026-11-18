@@ -3033,6 +3033,24 @@ that earlier records used in two senses.
   process has nothing left to add (lesson 7.3). Growth is counted in moves,
   never in steps, which belong to steps apart. The **horizon** is the number
   of moves computed.
+- **Junction; parent.** In parity growth by the cubic study's joining rule
+  (`CUBIC-FROM-A-KNOT-20261117-001`), a junction is one of the growth's
+  parity knots, each placed by the rule on loose distinctions of earlier
+  junctions and some fresh ones; its parents are the junctions it took a
+  distinction from.
+- **Offshoot.** A junction with exactly one parent: the rule gives a loose
+  distinction no join wants a junction of its own
+  (`FRESH-COUNT-20261118-001`). The literature's join-irreducible element.
+- **Demand; surplus distinctions.** A junction's demand is the number of
+  joins of the next round that take a distinction from it; its surplus
+  distinctions are the fresh distinctions it has beyond its demand, and each
+  becomes an offshoot (`FRESH-COUNT-20261118-001`).
+- **Descent order; breadth.** The offshoots of a growth, one below another
+  when the second descends from the first through parents; its breadth is
+  the most offshoots none of which descends from another (the literature's
+  width). The pattern the joining rule grows is the down-closed sets of this
+  order (the literature's distributive lattice of ideals). Breadth is not the
+  dimension: balls can grow more slowly than the breadth allows.
 - **Newest-w growth.** Growth in which every new knot holds only distinctions
   among the w that arrived last (lesson 7.3). The process supplies the order
   of arrival.

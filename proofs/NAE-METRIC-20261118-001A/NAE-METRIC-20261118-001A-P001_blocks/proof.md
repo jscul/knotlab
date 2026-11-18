@@ -1,7 +1,8 @@
 # Cuts, blocks, rings and split bases: what is proved
 
 Ticket `NAE-METRIC-20261118-001A`, 18 November 2026. Written before the frozen run; checked by ticket B's gates and census
-(`experiments/NAE-METRIC-20261118-001B/NAE-METRIC-20261118-001B-E001_blocks/`). Referee pending. Lemmas 1 and 2, the gluing and C4 are
+(`experiments/NAE-METRIC-20261118-001B/NAE-METRIC-20261118-001B-E001_blocks/`). Refereed: report R1, confirmed with fixes, no Block
+(`research/NAE-METRIC-20261118-001/referee-R1/report.md`), folded in on 18 November. Lemmas 1 and 2, the gluing and C4 are
 the thread's, checked by the advisor (claude-fable-5-2); the exact bond structure in C1, the weaker hypothesis, the primal-graph
 definition of blocks and the ring lower bound (C3) are the advisor's, checked here.
 
@@ -44,7 +45,8 @@ set (B_L ∪ B_R) − y is constrained, with every proper subset free: a bond. W
 
 **Hypothesis.** Only F2 and F3 were used: y takes both values on each side, and every bond through y can force y both ways. So C1 holds
 for parity bases wherever y is not fixed (the missing patterns of a parity bond form a coset); there it is the parallel connection
-of matroids (Brylawski 1971).
+of matroids (Brylawski 1971). Bases that mix parity with not-all-equal or betweenness knots in one block can break the hypothesis through one-way ties
+of two, and are not claimed (the referee found 5 of 237 random mixed bases breaking Lemma 1).
 
 ## C2. Blocks
 
@@ -108,4 +110,6 @@ grids); it is not evidence on the metric question (the advisor).
 - Every failing pure not-all-equal block on at most seven distinctions with at most six knots has two knots sharing two distinctions
   (325,395 failing of 1,327,830 on seven distinctions with six knots).
 - Graph-like bases (knots meeting at most once, each distinction in at most two knots) whose knot graph is series-parallel: none of
-  354 fails, plain or twisted (conjecture P6). With a K4 minor, 3 of 6 fail.
+  354 fails here, plain or twisted. *Narrowed after the referee:* one betweenness knot can break it ({1,7,0}, {8,1,9}, {4,3,2} with 3
+  in the middle, {5,0,4}, {5,3,6}, {10,6,2}: no bond holds 0 and 10); the conjecture stands for plain not-all-equal knots (0 of 129
+  more, the referee). With a K4 minor, 3 of 6 fail.

@@ -22,6 +22,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   ([decision note](research/KNOT-SWITCH-20261118-001/knot_switch.md)).
 - Narrowed: outside those growths the reading is one way only; a crossing seldom comes with a filled knot.
 
+## 18 November 2026: where not-all-equal bond distance is a distance, confirmed by the referee; one conjecture narrowed
+
+- The study of where not-all-equal bond distance is a true distance (`NAE-METRIC-20261118-001`) was confirmed by its referee with fresh
+  code, with no Block: bond distance minus one adds across a joint, so a base is a true distance exactly when each block is, and trees
+  of knots and rings are ([decision note](research/NAE-METRIC-20261118-001/nae_metric.md)).
+- Narrowed: the conjecture that series-parallel patterns of single meetings are true distances holds for plain not-all-equal knots
+  only; one betweenness knot can break it.
+
 ## 18 November 2026: where bond distance is a metric, confirmed by the referee; two statements narrowed
 
 - The study of whether bond distance is a metric (`BOND-METRIC-20261118-001`) was confirmed by its referee with fresh code, with no

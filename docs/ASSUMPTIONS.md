@@ -2715,11 +2715,12 @@ evidence: results and their status come from the records each entry links.
   among the 34 three-place laws it is a metric on every base of copies of one law exactly for parity (proved by a failing base for
   each of the other eight). Under not-all-equal it is a distance on trees and on the tori checked, not in general: two knots sharing
   two distinctions put their thirds infinitely far apart, each one knot from a shared distinction.
-  `NAE-METRIC-20261118-001` ([decision note](../research/NAE-METRIC-20261118-001/nae_metric.md); referee pending) found where under
+  `NAE-METRIC-20261118-001` ([decision note](../research/NAE-METRIC-20261118-001/nae_metric.md); refereed) found where under
   not-all-equal: bond distance minus one adds across a joint (a distinction whose removal splits the knots), so bond distance is a
   true distance exactly when it is one in every block (proved for every not-all-equal and betweenness base); trees of knots and rings
   are true distances with bond distance one more than steps apart (proved); every small failing block has two knots meeting twice,
-  and every series-parallel pattern of single meetings checked passes (computed).
+  and every series-parallel pattern of single meetings of plain not-all-equal knots checked passes (computed; one betweenness knot
+  can break it, its referee).
 - **History.**
   - 2026-11-18 · `NAE-METRIC-20261118-001`: under not-all-equal bond distance is a true distance exactly when it is one in every block; trees of knots and rings proved; status unchanged.
   - 2026-11-18 · `BOND-METRIC-20261118-001`: bond distance is a metric on every base whose knots compose, and on every base of copies of one three-place law exactly for parity (scoped to laws after its referee); status unchanged.

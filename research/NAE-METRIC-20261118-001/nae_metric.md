@@ -3,7 +3,7 @@
 Epic `NAE-METRIC-20261118-001`, 18 November 2026, by Claude. The coordinator's go-ahead on `BOND-METRIC-20261118-001`'s direction 2:
 under not-all-equal, the owner's case, find a condition on how the knots meet that makes bond distance a true distance, prove it if
 possible, and say whether tonight's grown bases (lines, two-order grids) satisfy it. Goals G1 and G16; tests A97 and A39; sub-goal
-B200. **Referee pending.**
+B200. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `13d727a38` at 10:34 UTC; the census ran from 10:34 to
@@ -26,8 +26,9 @@ B200. **Referee pending.**
     pair (proved). So **every base whose knots form a tree of single knots and rings is a true distance, with bond distance one more
     than the steps apart** (proved). Knot trees are the special case of FREE-READ.
   - Knots meeting at most once, each distinction in at most two knots, and the knots' pattern of meetings with no K4 inside it (the
-    literature's series-parallel graphs): no failure among 354 such bases, plain or twisted (computed; a conjecture). With a K4 inside,
-    3 of 6 fail; the eight-distinction failure of `BOND-METRIC-20261118-001` is a K4 with one meeting stretched.
+    literature's series-parallel graphs), every knot plain not-all-equal: no failure among the 167 plain bases here and 129 more
+    of the referee's (computed; a conjecture). *Narrowed after the referee:* with one betweenness knot it fails (11 distinctions, six
+    knots), though none of this census's 187 twisted bases did. With a K4 inside, 3 of 6 fail; the eight-distinction failure of `BOND-METRIC-20261118-001` is a K4 with one meeting stretched.
   - The woven tori checked in `BOND-METRIC-20261118-001`, and the endless weave (`RULER-20261111-001`).
 - **Which blocks fail.** On at most seven distinctions and six knots, every failing pure not-all-equal block has two knots that meet
   twice (325,395 of 1,327,830 blocks at seven and six; none of the failures has knots meeting at most once). A double meeting is not
@@ -43,7 +44,7 @@ B200. **Referee pending.**
 | Single knot | yes (b = 2) | proved |
 | Ring of knots meeting once, plain or twisted | yes, b = steps apart + 1 | proved; computed to 9 knots |
 | Tree of knots and rings | yes, b − 1 = steps apart | proved; 200 random cacti |
-| Meeting once, each distinction in two knots, no K4 | yes in all 354 checked | computed (conjecture) |
+| Meeting once, each distinction in two knots, no K4, all plain not-all-equal | yes in all 296 checked | computed (conjecture); false with one betweenness knot (the referee) |
 | Two knots meeting twice, alone | no | proved (BOND-METRIC T2) |
 | Small blocks with a double meeting | often not (325,395 of 1,327,830 at 7 and 6) | computed |
 | Twisted four-knot pattern on six (betweenness mixed in) | no | computed |
@@ -61,7 +62,7 @@ B200. **Referee pending.**
 | P3 | rings of 3 to 9, plain and twisted: b = steps + 1, m(m − 1) runs, other bonds ≥ m + 1, largest b = ⌊m/2⌋ + 2 | held | all 14 |
 | P4 | 200 cacti: b − 1 = steps apart | held | no pair differs |
 | P5 | failing pure not-all-equal blocks to 7 distinctions and 6 knots have a double meeting | held | 420,202 failing blocks of 1,589,656, all with one |
-| P6 | (conjecture) graph-like, series-parallel: metric | held | 0 of 354 fail |
+| P6 | (conjecture) graph-like, series-parallel: metric | held on the frozen sample; **refuted** in its twisted half by the referee | 0 of 354 fail here; the referee's base with one betweenness knot fails, inside the frozen scope |
 | P7 | grown bases: b ≤ 2 at every step | **failed** | one pair at b = 3 at one step (a three-order state reached from a line of seven by NEWCROSS and by CAP(3) with the same seed); the triangle inequality still holds there (post hoc); the triple criterion matched brute force at all 1,728 steps checked |
 
 7 of 8 held; P7 failed narrowly.
@@ -69,7 +70,7 @@ B200. **Referee pending.**
 ## What it means for A97, A39 and B200
 
 For not-all-equal, the owner's case, the program's distance is a true distance wherever the knots meet in a tree-like way: trees of
-knots and rings (proved), and in every series-parallel pattern of single meetings checked. What breaks it is a block where two knots
+knots and rings (proved), and in every series-parallel pattern of single meetings of plain not-all-equal knots checked. What breaks it is a block where two knots
 meet twice in isolation, or a dense small cluster (a K4 among the meetings). A39 (space is spaced by knots that compose) gains the
 block form: a base is spaced by bond distance as soon as each of its blocks is, and joints add. For A97 this gives a law-specific
 domain where distance reads the base, and a precise boundary.
@@ -85,7 +86,8 @@ knew no published statement of the non-matroid additivity; no literature search 
 
 ## Limitations
 
-- The series-parallel condition is a conjecture, computed on 354 bases of at most 14 distinctions; the census of blocks stops at seven
+- The series-parallel condition is a conjecture for plain not-all-equal knots only (296 bases of at most 15 distinctions, with the
+  referee's); one betweenness knot breaks it; the census of blocks stops at seven
   distinctions and six knots.
 - Weaves (two-fold surfaces) are covered only by earlier results (the endless weave proved, small tori computed).
 - P7's exception was examined post hoc at its one step only.
@@ -107,6 +109,21 @@ and the weaker hypothesis covering parity, corrected blocks to the primal graph,
 suggested P1b, P3's counts and P2's "no violation spans two blocks". Its H1 (every graph-like block metric) was already false; P6 is the
 thread's variant of its H2 and was not put to it.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+fixes, no Block. C1 to C4 checked by hand, the ring lower bound for any mixture of not-all-equal and betweenness knots; recomputed one
+size past (1,021 glued bases and 8,564 separated triples; 30 rings of 3 to 10 knots with any mixture; 150 cacti to 18 distinctions).
+Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (P6).** The series-parallel conjecture fails with a single betweenness knot: on {1,7,0}, {8,1,9}, {4,3,2}, {5,0,4},
+   {5,3,6}, {10,6,2}, all not-all-equal except {4,3,2} with 3 in the middle, no bond holds 0 and 10 while b(0,2) = 3 and b(2,10) = 2
+   (checked here). The base is inside P6's frozen scope ("plain or twisted"), so P6's twisted half is refuted; only 2 of 18 single
+   twists of that pattern fail, which is why the census's 187 twisted bases missed it. With every knot plain the conjecture survives
+   (0 of 129 more). The conjecture now reads: plain not-all-equal only.
+2. **Not a block (scope).** C1 needs every bond through the joint to force it both ways. Bases mixing parity with not-all-equal or
+   betweenness in one block can break that through one-way ties of two (5 of 237 random mixed bases break Lemma 1); they are not
+   claimed, and the proof now says they are excluded.
+
 ## Position
 
 | Scope | Verdict | Why |
@@ -120,7 +137,7 @@ thread's variant of its H2 and was not put to it.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Prove the series-parallel conjecture: decompose at two-distinction separations (the advisor's H2), so b is a minimum over two routes as on a ring | 2/3 | 2/3 | state and check the two-joint formula on rings with one knot replaced by a small block → stop at a proof or a counterexample | Alternative |
+| 1 | Prove the series-parallel conjecture for plain not-all-equal knots: decompose at two-distinction separations (the advisor's H2), so b is a minimum over two routes as on a ring | 2/3 | 2/3 | state and check the two-joint formula on rings with one knot replaced by a small block → stop at a proof or a counterexample | Alternative |
 | 2 | Double meetings: which blocks with knots meeting twice are true distances (weave rhombi are, lone pairs are not)? | 2/3 | 2/3 | classify the 7-distinction failing blocks by how their double meetings are covered by other knots → stop at a rule that predicts every failure | Alternative |
 | 3 | Weaves as blocks: is every two-fold weave of not-all-equal knots a true distance, beyond the cutoff RULER-FLAT found? | 2/3 | 1/3 | tori 5 × 5 to 6 × 6 with a bounded bond search → stop at a failing torus or a proof route | Alternative |
 
@@ -133,6 +150,8 @@ goal changed.
 **Assumptions:** A39 gains the block form; A97 gains this study; no status changed, no new entry.
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its series-parallel conjecture was narrowed to plain not-all-equal knots after the referee (see Referee).*
 
 **Outcome:** under not-all-equal, bond distance is a true distance exactly when it is one inside every block of the knots, because it
 adds up across joints (a joint is a distinction whose removal splits the knots; proved for every not-all-equal and betweenness base).

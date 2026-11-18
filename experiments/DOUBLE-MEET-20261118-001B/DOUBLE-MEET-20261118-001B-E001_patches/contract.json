@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "DOUBLE-MEET-20261118-001B-E001",
+ "ticket": "DOUBLE-MEET-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On patches of the not-all-equal weave without holes: is bond distance steps apart + 1 wherever a bond exists, and are the unbonded pairs exactly lone distinctions of opposite classes facing each other?",
+ "definitions": {
+  "lone": "a distinction in one knot of the patch",
+  "facing": "z = x + p(u - x) + q(v - x), p, q >= 1, for x's knot {x, u, v}; both ways",
+  "disc": "no hole and no pinch",
+  "D": "least route weight, forward step 1, backward step 2"
+ },
+ "public_inputs": {
+  "code": "weavelib.py (sha256 994e5f5bc8022f7241ef2154749ee90b07b42aef179382429eb7939e03a6443d), job.py (sha256 247f8e5fe63a69124b786c1fbf42d4697e07c2209ceaa519fa4f44189eb42644), merge.py (sha256 5f24accd7277ed21923b01c1edf5b766f2ad3c5a2c66c843d3cfb681b23e139b), checks.py (sha256 d667678a5c2079e2dfb93c2d930718501b1f832108758325e807845697309989)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "BOND-METRIC's metriclib.py and NAE-METRIC's naelib.py, unchanged"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "P0-P5 of research/DOUBLE-MEET-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates: the two-knot exhibit, the disc count, facing, the criterion on the two-knot base.",
+ "predictions": {
+  "P0": "the cyclic D-sum criterion gives the constrained sets (discs to 7 knots); D + D = 3 steps on every disc pair",
+  "P1": "bonded pairs: b = steps + 1 (discs to 11 knots, 480 random discs)",
+  "P2": "unbonded pairs are lone, opposite classes, facing each other",
+  "P3": "facing pairs with no knot outside their parallelogram are unbonded",
+  "P4": "parallelograms: exactly one unbonded pair, the lone pair",
+  "P5": "a disc is metric exactly when it has no unbonded pair"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; proof; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py (DOUBLE-MEET-B1)",
+ "amendments": []
+}

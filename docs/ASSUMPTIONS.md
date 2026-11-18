@@ -2637,7 +2637,9 @@ evidence: results and their status come from the records each entry links.
   one base's counts carry at most about two thirds of the information about the bare bracketing (0.63, 0.65, 0.62 at five to
   seven), peaking near n0 − 4 new distinctions and then falling, less than revealing the knots directly; in these bases the counts
   determine the states, so the rest is lost, not held in another form.
+  In the finite pure parity growth family, bond distances through five determine every junction and the full set of next joins at every size. This includes the cubic rounds and all legal serial rearrangements. All 552 presentations through seven junctions were independently checked within the task. [Proof and checks](../research/BOND-NEXT-JOIN-20261117-001/next_joins.md)
 - **History.**
+  - 2026-11-18 · `BOND-NEXT-JOIN-20261117-001` proved a constructive positive case for pairwise bond distance at every finite stage of the specified pure parity growth law.
   - 2026-11-18 · `MEET-DIST-20261118-001`: the nesting is a distance only in part and only after growth (computed); status
     unchanged.
   - 2026-11-18 · `MEET-TWIST-20261118-001`: placement independence proved (until a state is added); status unchanged.

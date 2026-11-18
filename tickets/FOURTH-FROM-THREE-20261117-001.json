@@ -1,0 +1,31 @@
+{
+  "acceptance_gate": "Blind update on the full state table; compare exact four-distinction outcome laws for every reachable context with the same restricted triple.",
+  "completion_gate": "Evaluate both probability and support sufficiency for knotted and free triples, measure a new interaction involving the fourth, and give a checked witness or exhaustive equality certificate.",
+  "dependencies": [
+    "ERASE-SEPARATELY-20261117-001",
+    "FRESH-THREE-20261117-001"
+  ],
+  "dependency_text": "The two closed experiments supply the eight-cut probabilities, the signed conservative transition, the 11-distinction context totals, and the two possible three-distinction relations.",
+  "fields": {
+    "experiment_family": "experiments/FOURTH-FROM-THREE-20261117-001/FOURTH-FROM-THREE-20261117-001-E001_prediction",
+    "groups": [
+      "holes-and-proofs"
+    ],
+    "program": "foundations",
+    "result": "artifacts/FOURTH-FROM-THREE-20261117-001/FOURTH-FROM-THREE-20261117-001-E001_prediction/results.json"
+  },
+  "id": "FOURTH-FROM-THREE-20261117-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Compare the next four-distinction relation across older contexts that give the same anonymous new triple. Test exactly what the knot predicts about the fourth addition, using a free triple as the comparison. Serves G16 and the intuition of rules within rules.",
+  "ownership": {
+    "root": true,
+    "scope_id": "FOURTH-FROM-THREE-20261117-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "The same three-distinction knot admits different sets of fourth outcomes across older contexts. A fourth bound with an earlier pair in 98.17% under a knotted triple and 73.26% under a free triple. Independent enumeration and literal replays verified the result.",
+  "status_class": "refuted",
+  "stop_rule": "Stop after one fourth addition from the reachable eleven-distinction contexts in this lineage.",
+  "title": "Does a knot on three new distinctions determine the possibilities for the fourth?"
+}

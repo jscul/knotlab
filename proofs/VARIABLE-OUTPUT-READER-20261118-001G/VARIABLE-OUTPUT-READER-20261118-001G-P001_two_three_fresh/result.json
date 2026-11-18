@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "proof_id": "VARIABLE-OUTPUT-READER-20261118-001G-P001",
+  "status": "Proved",
+  "scope": "Finite serial even parity from one ternary seed. At least one realization has all ordinary junctions of size at most four. The competing realization and both growth histories are unrestricted under the law.",
+  "conclusion": "The truncated pair table identifies every ordinary junction up to the prescribed renaming. It determines all allowed states and every permitted one-, two- and three-parent choice.",
+  "exact_D_horizons": {
+    "0_or_1_three_fresh": 3,
+    "2_three_fresh": 4,
+    "every_exact_count_at_least_3": 5
+  },
+  "exact_K_horizons": {
+    "0_or_1_three_fresh": 4,
+    "2_three_fresh": 5,
+    "every_exact_count_at_least_3": 6
+  },
+  "sharpness_convention": "Values up to the given horizon are exact and all greater values are a single symbol. Optimality concerns each fixed source count against unrestricted rivals.",
+  "reader_input": "One anonymous pair table and the proposed marks, with no loose flags, construction order, or counts of exceptional sites identified.",
+  "separator_lemma": "When the maximum degree is bounded by L=5 or L=6, the truncated pair table through K=L recovers all ordinary one-distinction separations.",
+  "lower_bound_receipts": {
+    "0_and_1": {
+      "widths": [
+        15,
+        18
+      ],
+      "transposition": [
+        10,
+        11
+      ],
+      "legal": [
+        9,
+        11,
+        13
+      ],
+      "forbidden": [
+        9,
+        10,
+        13
+      ]
+    },
+    "2": {
+      "width": 27,
+      "triple": [
+        9,
+        11,
+        13
+      ],
+      "rank_source": 12,
+      "rank_rival": 13,
+      "identical_entries_through_K4": 351,
+      "opposing_fresh_output_pair": {
+        "minimum_bond_sizes": [
+          7,
+          5
+        ],
+        "pair": [
+          19,
+          22
+        ]
+      }
+    },
+    "3_or_more": {
+      "start_width": 26,
+      "identical_entries_through_K5": 325,
+      "opposing_triple": {
+        "mark": [
+          9,
+          11,
+          13
+        ],
+        "source_legal": true,
+        "rival_legal": false
+      },
+      "proof_for_every_exact_larger_count": "Use a matching unary three-fresh addition at common loose bit 25, then iterate on a fresh output."
+    }
+  },
+  "auxiliary_verified_finite_closures": {
+    "all_two_fresh": [
+      220,
+      822
+    ],
+    "one_three_fresh": [
+      323,
+      1109
+    ]
+  },
+  "unrestricted_inverse_status": "Open when both candidate presentations contain a junction with five or six distinctions. A full-table counterexample to three-parent eligibility still needs width at least 27.",
+  "validation": {
+    "level": "V1",
+    "kind": "Independent mathematical review and independently measured literal controls within this task",
+    "checks": "Parity equations and wired cut minima, literal rule replay, tracked scalar truncations, reference transitions on both finite-state closures, two directional high-site cases, scope validation."
+  },
+  "decision_note_sha256": "a86ca6c4769ad3be5a0dc2950b04015d6ac02783937957ab8e27787ddcffc811",
+  "frozen_design_sha256": "5cda7c01a916a69eb93acf09ad994cfd298fbeeb36c3e77e50a53532eee58968",
+  "evidence_files": {
+    "check.py": "369e04530009ec021b2ccfdfd3e79146ae8f49f644b83689977fe1a40e26b8b1",
+    "checks.json": "7be02df944b55cba01b9d5d024e77571a3bd2e942efae7ff12f771d5b5f094b2",
+    "cutoff.md": "2b1f61010ff1c1c7c14eaa56739eb007faa0898e737dbe7fe7255b051fa4b81d",
+    "extension.md": "c1438d2e225391ccb4c0b4439b52194d16cf527a8dbbca951e7ad31be6bd0bea",
+    "frontiers.json": "eff3a9d66167b7fed4c6fd4ad628d8ce7442c470d0b5aa6169bb82046111ff39",
+    "frontiers.py": "9680bf28e091af0aab224ed086d00c1fd6c80170e9f318ed8f66e652e9e01081",
+    "frontiers_one_three.json": "dee9eddf6c1bace41a9ecb2ccb5ba53a8b0af849412aa160c4165ac8f8e18815",
+    "frontiers_one_three.py": "5c3995e08c91f8e7c92eacf592ff623605f0918532cb90a5618d5948054c8b72",
+    "identity.json": "0cfda9846405712f575d0180217810c32e5bba4b609873171e0c6bd8e4d7c232",
+    "proof.md": "c022173072e03ee835d2ad943c5dacc0cf72a571df420b5536893bc10f61dc42",
+    "separator_horizon.md": "e293bb7ad836b0199fbfc01fc2d7a0dbbe73d164c7192b3e5ced7a4569219e72",
+    "six_check.json": "21b673034abf89e7db4f800c2bc850a6ba313d2af77d37644cb8460b096c7fbc",
+    "six_check.py": "084e01351583f78127cac18180d2644ce0d6cf34e1048751f55c969228822628"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "caps": {
+    "fresh_per_join": 2,
+    "sites_saturated_at": 3,
+    "three_parent": 2,
+    "unary": 3
+  },
+  "fixed_point_sha256": "9b8964e6cf7e862696a15c9ab3e820b4f6ff6a92e6ee8075b4e0a8b735d96ef5",
+  "four_loose_but_only_two_junctions_control": {
+    "history_after_three_place_seed": [
+      {
+        "consumed": [
+          0
+        ],
+        "fresh": [
+          3,
+          4
+        ],
+        "parents": [
+          0
+        ]
+      }
+    ],
+    "junction_supports": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ]
+    ],
+    "junctions": 2,
+    "three_parent_joins": 0,
+    "unary_joins": 1
+  },
+  "inherited_parent_rule_sha256": "038a6845675cbc158e1abd0b55e72addd935c4dee9e6bb8153abe82a543894e8",
+  "legal_actions_before_budget_screen": 1688,
+  "matched_controls": {
+    "retired_common_witness": {
+      "all_pairs_legal": true,
+      "erasing_retired_masks_removes_all_pairs": true,
+      "history": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "triple_legal": false
+    },
+    "retired_distinct_pair_witnesses": {
+      "history": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "literal_triple_successor_has_five_loose_distinctions": true,
+      "triple_legal": true,
+      "union_of_masks_would_forbid_triple": true
+    }
+  },
+  "maximum_representative_junction_count": 13,
+  "possible_target_budgets": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "reachable_states": 220,
+  "shortest_target": null,
+  "states_by_saturated_site_count_and_loose_count": [
+    [
+      1,
+      3,
+      1
+    ],
+    [
+      2,
+      4,
+      1
+    ],
+    [
+      3,
+      5,
+      52
+    ],
+    [
+      3,
+      6,
+      166
+    ]
+  ],
+  "target_loose_distinctions": 4,
+  "tested_budgets": [
+    {
+      "reachable_states": 1,
+      "target_at_three_or_more_junctions": null,
+      "three_parent_joins": 0,
+      "unary_joins": 0
+    },
+    {
+      "reachable_states": 1,
+      "target_at_three_or_more_junctions": null,
+      "three_parent_joins": 0,
+      "unary_joins": 1
+    },
+    {
+      "reachable_states": 25,
+      "target_at_three_or_more_junctions": null,
+      "three_parent_joins": 0,
+      "unary_joins": 2
+    },
+    {
+      "reachable_states": 166,
+      "target_at_three_or_more_junctions": null,
+      "three_parent_joins": 0,
+      "unary_joins": 3
+    },
+    {
+      "reachable_states": 27,
+      "target_at_three_or_more_junctions": null,
+      "three_parent_joins": 1,
+      "unary_joins": 3
+    }
+  ],
+  "transitions_to_states_already_reached": 603,
+  "validated_transitions_after_budget_screen": 822
+}

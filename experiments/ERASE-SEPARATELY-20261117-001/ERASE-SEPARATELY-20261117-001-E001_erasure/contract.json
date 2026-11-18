@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "ERASE-SEPARATELY-20261117-001-E001",
+  "ticket": "ERASE-SEPARATELY-20261117-001",
+  "question": "Can an observer identify one of two equally likely six-distinction starts from just the allowed states at nine and ten, after knot erasure at seven or at eight?",
+  "status": "Frozen",
+  "branch": "code_analysis",
+  "evidence_stage": "exploratory",
+  "public_inputs": {
+    "dependency": "STATE-RULES-20261117-001B",
+    "source": "experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/rules.py",
+    "source_sha256": "d1ee374ca2c6784bdbad72c32878d7c6a3c98c60a28da73f34f14f76c8d10172",
+    "starts": ["fan6", "nonfan6"],
+    "before_cut": "Original KF3 on shared binary values, equiprobable irredundant knot sets attaining fewest states, independent choices at each step.",
+    "after_cut": "Keep only current joint states. For one fresh distinction and two old ones per ternary constraint, allow one through three attachments. Preserve every old state. Exclude a fully free distinction and copies. Choose uniformly among distinct literal extensions with the fewest rows, then forget which distinction was added. If growth stalls, report its mass separately.",
+    "common_values": "Use ordinary betweenness on the three choices of middle distinction. Exclude equality to an existing distinction. Erase the knots at seven. KNOT-CAP K4 owns the analogous arm at eight and supplies no target values here.",
+    "independent_value_names": "Erase the knots at seven and separately at eight. After each cut allow all four ways of forbidding one complementary pair of ternary assignments. Exclude both equality and complementary equality to an old distinction. The growth rule and observation are invariant under all column permutations and independent binary swaps.",
+    "known_cut_accuracy": {"seven_common": "7/8", "seven_independent": "1/2", "eight_common": "249/280", "eight_independent": "26/35"}
+  },
+  "forbidden_inputs": ["The starting arrangement, its constituent knots or any growth trace after the cut", "Marks identifying any old or fresh distinction at observation or at a subsequent step", "Input naming order as a tie breaker or an enduring orientation in the independent-value arm", "The pending eight/common results or an independent rerun of that arm"],
+  "primary_observable": "Equal-prior Bayes recognition from the whole isomorphism class of the allowed state table. For distributions p and q it is (1 + sum(abs(p-q))/2)/2. Keep exact rational transition weights.",
+  "secondary_observable": "Pool each final distribution by the histogram of disagreements between unordered pairs of allowed rows. Recognition obtained from only that histogram is an independently checkable lower bound.",
+  "cheapest_meaningful_control": "At seven the two independently renamed cut laws coincide. Every further anonymous transition gives chance recognition exactly. Recover the known cut baselines. Test a treatment of copies that also rejects complementary copies; check that an independent switch of values permutes the four allowed masks.",
+  "resource_ceiling": "Two six-distinction starts, cuts 7 and 8, at most three ternary constraints per move, last observed size 10. Exhaust reachable classes with rational weights. For seven/independent one may use the proved equality of the propagated laws. Report any incomplete arm explicitly.",
+  "first_executable_signal": "Recover both known cut distributions and compare a signed extension from two independently renamed presentations of the same input.",
+  "stop_rule": "Report recognition at nine and ten, verify monotonicity of the full-data score after each cutoff, and stop.",
+  "nonclaims": ["No universal persistence across growth laws or beyond ten for the eight-cut signal", "Recognition describes the probability laws for two starts, not exact reconstruction of each growth history or an ordering of distinctions"]
+}

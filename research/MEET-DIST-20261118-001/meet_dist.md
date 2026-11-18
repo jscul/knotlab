@@ -125,3 +125,17 @@ settled by hand. Not consulted after the read-out.
 **Assumptions:** A97 under challenge, with this finding added; A100 gains this study among what rests on it; no new entry.
 
 **Basket:** read; B198 taken by this epic.
+
+## Final report as sent
+
+Posted in the project thread at about 04:31 UTC on 18 November 2026 (the tables are those of the Position section above, with the
+directions shortened):
+
+> **Fourth study done (referee pending): the knots' nesting is a distance only in part, and only after growth.** Every
+> presentation of a line has the same disagreement counts, so at the start no distance holds how the knots nest. Growth writes part
+> of it in. One grown base's counts carry at most about two thirds of the information (0.63, 0.65, 0.62 for lines of five, six and
+> seven), best after about n0 − 4 new distinctions, and then growth blurs it again. Revealing the knots directly carries all of it,
+> and the unlabelled list of counts carries less. Here the counts determine the states, so the missing share is lost, not hidden in
+> some other form. 4 of 5 predictions held; the one miss was timing: the peak comes later for longer lines.
+>
+> Corrections: none. Goals: G16 checkpoint. Assumptions: A97 under challenge, with this measurement added.

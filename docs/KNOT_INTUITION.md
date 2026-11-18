@@ -510,6 +510,13 @@ for every presentation of five to nine distinctions and state by state, while
 the number of orders they carry differs with the placement. It does not grow
 by itself: the states still steer which pairs come next (its referee)
 ([decision note](../research/MEET-GROW-20261118-001/meet_grow.md)).
+Why (`MEET-TWIST-20261118-001`, proof and frozen check, referee pending)?
+Read the line's knots as a ring of distinctions cut at the line's two ends.
+Moving the cut one step changes which distinction some knots hold between the
+other two, but each knot then rules out exactly the same states, so the growth
+makes the same choices with the same chances (proved for every size, until a
+step adds a state); the cut decides only how many orders the grown knots line up
+into ([decision note](../research/MEET-TWIST-20261118-001/meet_twist.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

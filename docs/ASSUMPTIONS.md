@@ -2628,7 +2628,12 @@ evidence: results and their status come from the records each entry links.
   meeting pattern, one renaming carries the whole law of the grown co-knotted pairs, state by state (computed, every presentation
   of 5 to 9 distinctions; refereed), while the number of orders differs with the placement. It does not grow by itself: the
   states still steer which pairs come next (its referee, Narrowing).
+  `MEET-TWIST-20261118-001` ([decision note](../research/MEET-TWIST-20261118-001/meet_twist.md); referee pending) proved why:
+  moving the line's ends one step round the cycle of its knots, keeping every distinction's odd set, carries KF3's options knot
+  by knot, so the growth's law does not depend on where the ends sit (every n, until a state is added); the ends decide only the
+  number of orders.
 - **History.**
+  - 2026-11-18 · `MEET-TWIST-20261118-001`: placement independence proved (until a state is added); status unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001`: the meeting pattern grows by one law wherever it sits under KF3 (computed; narrowed
     by its referee from "grows on its own"); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-20261118-001`: the information is the bracketing (proved at the second new distinction); the
@@ -2755,6 +2760,7 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `MEET-TWIST-20261118-001` built on it (proof for this population and rule); status unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001` built on it (the same population and rule); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-20261118-001` built on it (KF3 from every fewest-knot presentation of a line); status unchanged.
   - 2026-11-18 · `CUBE-DOUBLING-20261118-001` proved the cube growth under this entry (its referee: for any cap of three or more
@@ -2780,6 +2786,7 @@ evidence: results and their status come from the records each entry links.
   sort by bare bracketing (371/600 and 1523/2352 occur for both chains and the middle). The bracketing account holds for
   fewest-knot presentations only; with extra knots, how the knots meet is more than the bracketing.
 - **History.**
+  - 2026-11-18 · `MEET-TWIST-20261118-001` built on it (proof for this population and rule); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-R1`: material (one redundant knot changes the second-step chance in 21 of 21 cases); status
     unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001` built on it (the same population and rule); status unchanged.

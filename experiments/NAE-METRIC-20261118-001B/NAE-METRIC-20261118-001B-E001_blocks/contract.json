@@ -1,0 +1,41 @@
+{
+ "schema_version": 1,
+ "experiment_id": "NAE-METRIC-20261118-001B-E001",
+ "ticket": "NAE-METRIC-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Where is not-all-equal bond distance a metric? Additivity at separating distinctions and the block reduction on random complement-closed bases; rings and cacti; every small pure not-all-equal block; graph-like bases; sparse bases on nine distinctions; tonight's grown bases.",
+ "definitions": {
+  "bond distance": "least bond holding both, minus one; infinite when none",
+  "block": "biconnected component of the primal graph",
+  "separating distinction": "a cut vertex of the primal graph",
+  "graph-like": "each distinction in at most two knots, knots meeting at most once"
+ },
+ "public_inputs": {
+  "code": "naelib.py (sha256 3a42e3603d6c3581bbddf9d75de3ade80a53d9960ae97a9646d783c48d22a90e), job.py (sha256 3132fad3d1c3ba40498200f2f61dc6ee84f8980f7a1c206823469247c50841b3), merge.py (sha256 d98dcd76d04204032e36a71eb02850057aefc30f8f617f37d83b867f23679911), checks.py (sha256 80147f21a6efca3637a3deeac4b3b23f0593edd53284ea28f6d07920527ee4c3)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "BOND-METRIC's metriclib.py; PICK-TWO's picklib.py and KNOT-SWITCH's knotlib.py for the growth runs, unchanged"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "P1-P7 (with P1b) of research/NAE-METRIC-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates: the split criterion against brute force, the series-parallel test on known graphs, the two-knot exhibit.",
+ "predictions": {
+  "P1": "additivity across separating distinctions",
+  "P1b": "bond count identity at a separating distinction",
+  "P2": "block formula; metric iff every block; no violation spans blocks",
+  "P3": "rings 3-9 plain and twisted: b = steps + 1, run counts, largest b",
+  "P4": "cacti: b - 1 = steps",
+  "P5": "failing pure NAE blocks (<= 7 distinctions, <= 6 knots) have a double meeting",
+  "P6": "graph-like pure NAE bases with a series-parallel knot graph are metric (conjecture)",
+  "P7": "grown bases: b <= 2 at every step; the triple criterion agrees with brute force"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; proof; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py (NAE-METRIC-B1)",
+ "amendments": []
+}

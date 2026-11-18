@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 477 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 478 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 477 epics with their closures
+- [Epics](#epics): all 478 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1722,6 +1722,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Why how the knots meet changes the number of orders (`MEET-ORDERS-20261118-001`) | [closure](proofs/MEET-ORDERS-20261118-001Z/MEET-ORDERS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-ORDERS-20261118-001/) |
 | 2026-11-18 | Why the meeting pattern grows the same wherever it sits: moving the ends' pair (`MEET-TWIST-20261118-001`) | [closure](proofs/MEET-TWIST-20261118-001Z/MEET-TWIST-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-TWIST-20261118-001/) |
 | 2026-11-18 | A rule whose second phase reads only the fill's knots (`MID-RULE-20261118-001`) | — | [folder](research/MID-RULE-20261118-001/) |
+| 2026-11-18 | Where not-all-equal bond distance is a distance (`NAE-METRIC-20261118-001`) | — | [folder](research/NAE-METRIC-20261118-001/) |
 | 2026-11-18 | A rule that never nests its fills (`NEVER-NEST-20261118-001`) | [closure](proofs/NEVER-NEST-20261118-001Z/NEVER-NEST-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/NEVER-NEST-20261118-001/) |
 | 2026-11-18 | Who picks the number of orders (`PICK-TWO-20261118-001`) | [closure](proofs/PICK-TWO-20261118-001Z/PICK-TWO-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/PICK-TWO-20261118-001/) |
 | 2026-11-18 | What the arrangement of the count's rows holds (`ROW-ARRANGE-20261118-001`) | [closure](proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/ROW-ARRANGE-20261118-001/) |

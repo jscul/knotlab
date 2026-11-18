@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the weave's rim excess stops rising at 2
+
+- The study of how far the weave's rim pushes bond distance (`RIM-EXCESS-20261118-001`,
+  [decision note](research/RIM-EXCESS-20261118-001/rim_excess.md)) was refereed with fresh code and confirmed with fixes, no Block.
+  Its lemma on bonds as closed routes holds one size past with every tight order checked.
+- **Narrowed (wording).** "The largest excess rises by one about every two knots, which points to growth": the referee found it still 2
+  on the facing pairs of every patch of thirteen and fourteen knots, so it no longer points to growth; whether it is bounded is open.
+  The study's check of its search covered only pairs without an excess; the referee checked excess 1 and 2.
+- **Clarified.** 17 of the 20 random searches that ran out of time are settled; the search certifies by itself that no bond holds a
+  pair when run to its size bound.
+
 ## 18 November 2026: the first-knot dimensions count junctions
 
 - The study of whether anything prefers the smallest first knot (`FIRST-KNOT-20261118-001`,

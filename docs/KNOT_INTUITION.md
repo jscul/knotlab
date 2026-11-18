@@ -514,12 +514,14 @@ both must close such a cycle, so it has at least the steps apart plus two
 members (proved)
 ([decision note](../research/WEAVE-HEIGHTS-20261118-001/weave_heights.md)).
 And how much more, at the rim (`RIM-EXCESS-20261118-001`, proof and frozen
-census, referee pending)? A bond, visited in the right order, is a closed route
+census, refereed)? A bond, visited in the right order, is a closed route
 exactly as short as the heights allow, so bond distance is the steps apart plus
 one plus how much longer the shortest bond's route is than the plain round
 trip. On every patch without holes up to twelve knots that extra length is
 zero except on lone pairs of opposite classes facing each other, and there it
-is at most two. Whether it can grow without limit is open
+is at most two. The referee found it still at most two on the facing pairs of
+every patch of thirteen and fourteen knots, so it stops rising there. Whether
+it is bounded is open
 ([decision note](../research/RIM-EXCESS-20261118-001/rim_excess.md)).
 Can a growth read its own dimension from bond distances, if nobody tells it
 how many fresh distinctions each new parity knot takes

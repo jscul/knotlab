@@ -3,7 +3,7 @@
 Line summary, 18 November 2026, by Claude, for the owner. It covers the five studies `BOND-METRIC-20261118-001`,
 `NAE-METRIC-20261118-001`, `DOUBLE-MEET-20261118-001`, `WEAVE-HEIGHTS-20261118-001` and `RIM-EXCESS-20261118-001`, with
 `FREE-READ-20261118-001` as their starting point. Each study's decision note holds the evidence; this page adds no new result. Referee
-verdicts: five in (FREE-READ and the first four studies), `RIM-EXCESS-20261118-001`'s pending.
+verdicts: all six in; `RIM-EXCESS-20261118-001`'s (confirmed with fixes, no Block) is folded in below.
 
 ## Why the line exists
 
@@ -23,7 +23,7 @@ meeting twice with nothing else around break it, and so can single meetings in a
 lone distinctions (each in a single knot) of opposite classes facing each other across the patch: no knot holds them, or only one that
 is too large. There bond distance is never less than the steps apart plus one (proved) and equals it everywhere except on those facing
 rim pairs (computed, to twelve knots). So distance read from freedom is a true ruler in the weave away from its rim; at the rim it
-overcounts, never undercounts, and how far it can overcount is open.
+overcounts, never undercounts, by at most 2 on every patch checked (to fourteen knots), and whether that overcount is bounded is open.
 
 ## The five studies
 
@@ -46,10 +46,13 @@ overcounts, never undercounts, and how far it can overcount is open.
    whole number at each distinction that steps up by one or down by two along each pair. A set is constrained exactly when a few of its
    distinctions close a route too short for the heights to fit, and going between two distinctions and back always costs three times
    their steps apart. So every knot holding two distinctions has at least the steps apart plus two members (proved).
-5. **How much more, at the rim?** (`RIM-EXCESS-20261118-001`, referee pending.) A knot of the states, visited in the right order, is a
+5. **How much more, at the rim?** (`RIM-EXCESS-20261118-001`, refereed.) A knot of the states, visited in the right order, is a
    closed route exactly as short as the heights allow. So bond distance is the steps apart plus one plus the **excess**: how much longer
    the least knot's route is than the plain round trip, in units of three (proved). The excess lives only on facing rim pairs and is at
-   most 2 up to twelve knots (computed). Whether it grows without limit is open.
+   most 2 up to twelve knots (computed). The referee ran one and two sizes past: on the facing pairs of every patch of thirteen and
+   fourteen knots it is still at most 2, so the largest values (0 to nine knots, 1 at ten and eleven, 2 at
+   twelve) stop rising. Whether it is
+   bounded is open.
 
 ## Where bond distance is a true distance
 
@@ -63,7 +66,7 @@ overcounts, never undercounts, and how far it can overcount is open.
 | Plain not-all-equal knots meeting at most once, each distinction in at most two, no K4 in their pattern of meetings | yes in all 296 checked | — | computed; a conjecture, false with one betweenness knot |
 | Small not-all-equal blocks with two knots meeting twice | often not | — | computed (420,202 failing of 1,589,656 to seven distinctions and six knots, every one with a double meeting) |
 | Weave patches without holes, pairs other than facing rim pairs | yes | exactly steps + 1 | at least steps + 1 proved; equality computed to twelve knots |
-| Weave patches without holes, facing rim pairs | sometimes not | unbonded, or steps + 2 (from ten knots), steps + 3 (from twelve) | at least steps + 1 proved; the rest computed |
+| Weave patches without holes, facing rim pairs | sometimes not | unbonded, or steps + 2 (from ten knots), steps + 3 (from twelve; still the most at fourteen) | at least steps + 1 proved; the rest computed |
 | The endless weave | yes | exactly steps + 1 | proved (`RULER-20261111-001`) |
 | Woven tori 3 × 3 to 4 × 5 | yes | — | computed (BOND-METRIC) |
 | Tonight's grown lines and grids | yes, trivially | at most 2 (one pair at 3 at one step) | proved for split lines and full grids (NAE-METRIC C4); the runs computed |
@@ -73,9 +76,11 @@ overcounts, never undercounts, and how far it can overcount is open.
 - **Proved:** the triangle inequality on every parity base, for bond distance and bond distance minus one; the classification of all 34
   three-place laws; additivity across joints and the block reduction for not-all-equal, betweenness and parity bases; rings, and trees
   of knots and rings; flatness of split lines and grids; the weave's height criterion for constrained sets; the round-trip identity; the
-  lower bound b ≥ steps + 1 on weave patches without holes; a least knot as a closed route of the heights' length, and the excess formula.
+  lower bound b ≥ steps + 1 on weave patches without holes; a least knot as a closed route of the heights' length, and the excess formula,
+  with a search that finds bond distance, or certifies that no knot holds a pair, without listing the states.
 - **Computed only:** that every unbonded or over-long pair of a weave patch is a facing rim pair (to twelve knots); that the excess is at
-  most 2 there (and at most 1 on random patches of 20 to 40 knots); that small not-all-equal failures need a double meeting (to seven distinctions); the
+  most 2 there (and on the facing pairs of every patch of thirteen and fourteen knots, the referee; at most 1 on random patches of 20 to
+  40 knots); that small not-all-equal failures need a double meeting (to seven distinctions); the
   series-parallel conjecture for plain not-all-equal; that the woven tori checked are true distances.
 - **Resting on citations:** one step of the lower bound (no knot of a patch without holes is level as seen from any distinction) uses
   standard theorems on bridged graphs; the referee confirmed the statements from secondary sources, but not the theorem numbers. The
@@ -90,11 +95,11 @@ overcounts, never undercounts, and how far it can overcount is open.
 | NAE-METRIC | Narrowing, and Not a block | The series-parallel conjecture holds for plain not-all-equal only: one betweenness knot breaks it on eleven distinctions. The joint lemma now excludes blocks mixing parity with not-all-equal or betweenness. |
 | DOUBLE-MEET | **Block** on one reading, and Not a block | "A weave patch fails exactly when some pair is unbonded" is false from twelve knots, where a facing pair can fail while bonded. The rim is still the only cause; nothing had been built on the blocked reading. The lower bound was marked sketched until WEAVE-HEIGHTS proved it. |
 | WEAVE-HEIGHTS | Confirmed, no Block, no entry | Lemma 5's citation caveat; one sentence reworded; two stale phrases from DOUBLE-MEET's fold-in fixed. |
-| RIM-EXCESS | pending | — |
+| RIM-EXCESS | Confirmed with fixes, no Block: two Narrowings (wording), and Not a block | The search had been checked against brute force only where no pair has an excess (to nine knots); the referee checked it at excess 1 and 2. "Rises by one about every two knots, which points to growth" met 2 and 2 at thirteen and fourteen knots. Not a block: 17 of the 20 timed-out random searches settled (none hides an excess from 1 to 8); the search certifies an unbonded pair at its size bound; Lemma P's three-member case rests on the cited theorems. |
 
 Each entry is in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`. The lessons the line taught: count a pair with no reading as
 infinitely far; search one size past an advisor's smallest example; test every twisted variant of a pattern; when an excess over a ruler
-grows with size, run the census past the first size where it appears.
+grows with size, run the census past the first size where it appears; and read no trend from three sizes before the next two are in.
 
 ## Known mathematics, and what the program's view adds
 
@@ -116,30 +121,30 @@ knot as a closed route and the excess as its extra length; the census placing ev
 Read from freedom alone, distance is a true ruler where knots compose: everywhere under parity, and under not-all-equal on tree-like patterns and in the weave away from its rim. That is where the
 program's spacing results (rulers, circles, ball growth) were measured, so none of them changes (A39). At the rim of a not-all-equal
 patch the reading overcounts: two lone distinctions facing each other can look farther apart than the steps between them, or unrelated.
-The overcount is exactly the extra length of a route the heights force around the rim. So the premise holds away from the rim and
+The overcount is exactly the extra length of a route the heights force around the rim, and to fourteen knots it is never more than 2. So the premise holds away from the rim and
 meets a boundary effect at the rim, which is where the line stands.
 
 ## The open basket
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This line: is bond distance a true distance | Settled away from the rim, open at it | Proved where knots compose, on trees of knots and rings, and as a lower bound on the weave; the rim excess's growth is open |
+| This line: is bond distance a true distance | Settled away from the rim, open at it | Proved where knots compose, on trees of knots and rings, and as a lower bound on the weave; the rim excess is at most 2 to fourteen knots, and whether it is bounded is open |
 | One distance for both laws (B200) | Promising | Bond distance reads both laws on trees and on the weave away from the rim; grown split bases stay flat |
 | Long-term goal: G1 | Capability gained | A proved ruler on trees of knots and rings, a proved lower bound on the weave, and an exact meaning for the rim excess |
 
 **Next step:** Research directions; none selected (the line is paused for this summary).
 
-| # | Direction | Payoff | Concreteness | First step → stop when |
+| # | Open item | Payoff | Concreteness | First step → stop when |
 | --- | --- | --- | --- | --- |
-| 1 | Does the rim excess grow without limit? Check the advisor's split of every excess knot (a closed route crossing itself once, the advisor's figure-eight) to twelve knots and build a family from it | 2/3 | 2/3 | the split on all 198 excess pairs → a family with excess 3, or a reason the loops cannot grow |
+| 1 | Is the rim excess bounded? It stays at 2 to fourteen knots: check the advisor's split of every excess knot (a closed route crossing itself once, the advisor's figure-eight) and use it to prove a bound or build a family that grows | 2/3 | 2/3 | the split on every excess pair to fourteen knots → a proof that the excess is at most 2, or a family with excess 3 |
 | 2 | Prove the plain not-all-equal series-parallel conjecture through two-distinction separations | 2/3 | 2/3 | a two-joint formula on rings with one knot replaced by a small block → a proof or a counterexample |
 | 3 | Is "a true distance on every base" the same as "composes like cycles" for laws of four places or three values? | 2/3 | 2/3 | four-place laws whose knots fail to compose, bases of up to four knots → a law with no failure, or a proof |
 | 4 | Prove that every pair other than a facing rim pair has b = steps + 1 on weave patches | 2/3 | 1/3 | a closed route of steps + 2 members for a pair with a non-lone end → a proof or a counterexample |
 | 5 | Closed weaves beyond the cutoff `RULER-FLAT-20261111-001` found | 2/3 | 1/3 | tori 5 × 5 to 6 × 6 with the route search → a failing torus or a proof route |
-| 6 | Exhaustive excess at thirteen knots with the route search | 1/3 | 3/3 | the largest excess at thirteen knots → 3, or 2 |
+| 6 | Exhaustive excess at fifteen knots with the route search (the referee's thirteen and fourteen gave 2) | 1/3 | 3/3 | the largest excess on facing pairs at fifteen knots → 3, or 2 |
 | 7 | One-way ties as orders (the twisted "not exactly two ones" failures) | 1/3 | 3/3 | the ties of two in every failing base and their directions → the list |
 | 8 | Patches with holes: heights that wind, and whether a hole acts like a rim | 1/3 | 2/3 | annuli of the weave → the first failure or a pattern |
 | 9 | A citation-free proof that no knot of a weave patch is level | 1/3 | 2/3 | an argument by the rim's turning → a proof or a gap |
 
-**Corrections:** listed above; none new in this summary. **Goals:** no change. **Assumptions:** A39 and A97 carry the line's history;
+**Corrections:** listed above; the RIM-EXCESS referee's two Narrowings of wording are logged, and this summary adds none. **Goals:** no change. **Assumptions:** A39 and A97 carry the line's history;
 no status changed. **Advisor:** not consulted for this summary; each study's use is in its note.

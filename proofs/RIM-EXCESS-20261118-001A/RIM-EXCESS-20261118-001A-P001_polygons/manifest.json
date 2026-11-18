@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RIM-EXCESS-20261118-001A-P001",
+ "canonical_id": "RIM-EXCESS-20261118-001A-P001",
+ "proof": "RIM-EXCESS-20261118-001A-P001",
+ "ticket": "RIM-EXCESS-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Bond polygons and the excess at the weave's rim",
+ "claim": "On a weave patch without holes: every tight cyclic order of a bond of m members has D-sum exactly 3(m - 2), each member on a D-geodesic between its neighbours (Lemma P); the excess e = b - steps - 1 equals (W - D(x,y) - D(y,x))/3 for the least bond's polygon weight W; a least bond's members lie within detour 3e of the round trip (Lemma C); hence an exact bond search without state enumeration. The figure-eight structure of bonds through opposite lone pairs is the advisor's sketch, not claimed.",
+ "standard_statement": "Heights of the triangular antiferromagnet; difference constraints; minimal non-shattered sets.",
+ "prior_work": "WEAVE-HEIGHTS-20261118-001 (criterion, lower bound), DOUBLE-MEET-20261118-001 (lone facing pairs).",
+ "dependencies": [],
+ "completion_gate": "Ticket B's frozen census; the referee reviews the proofs.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proved before the run and checked by the advisor; referee pending",
+  "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
+  "novelty": "the program's (no literature search run)"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "weave_bond_polygons_and_excess_formula_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/manifest.json",
+  "identity": "proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/identity.json",
+  "proof": "proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/proof.md"
+ },
+ "attained_result": "Lemma P, the excess corollary and Lemma C proved; the search's correctness argued."
+}

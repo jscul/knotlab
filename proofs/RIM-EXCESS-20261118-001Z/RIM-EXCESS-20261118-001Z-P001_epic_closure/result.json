@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RIM-EXCESS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "RIM-EXCESS-20261118-001Z",
+ "proof": "RIM-EXCESS-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing RIM-EXCESS-20261118-001: ticket A (Lemma P, the excess corollary, Lemma C) and ticket B (frozen census, 5 of 5 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/RIM-EXCESS-20261118-001B/RIM-EXCESS-20261118-001B-E001_excess/contract.json": "Frozen",
+   "artifacts/RIM-EXCESS-20261118-001B/RIM-EXCESS-20261118-001B-E001_excess/results.json": "run output",
+   "proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/manifest.json": "Proved",
+   "proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

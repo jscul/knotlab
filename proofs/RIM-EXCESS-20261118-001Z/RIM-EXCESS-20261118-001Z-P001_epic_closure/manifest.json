@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "RIM-EXCESS-20261118-001Z-P001",
+ "canonical_id": "RIM-EXCESS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "RIM-EXCESS-20261118-001Z",
+ "proof": "RIM-EXCESS-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: how far the weave's rim pushes bond distance",
+ "status": "Proved",
+ "claim": "Ledger closing RIM-EXCESS-20261118-001: ticket A (Lemma P, the excess corollary, Lemma C) and ticket B (frozen census, 5 of 5 held). Referee pending. No new claim.",
+ "dependencies": [
+  "RIM-EXCESS-20261118-001A",
+  "RIM-EXCESS-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "RIM-EXCESS-20261118-001",
+  "epic_path": [
+   "RIM-EXCESS-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/RIM-EXCESS-20261118-001B/RIM-EXCESS-20261118-001B-E001_excess/contract.json": "f852da9117bbf85c0e0ade5d6eb6da7c8437b82ba0ab30c25bac817de5acdea9",
+  "artifacts/RIM-EXCESS-20261118-001B/RIM-EXCESS-20261118-001B-E001_excess/results.json": "aa14ee55dbebcd920d7a61f6e6bb8ccd133f68b183224cb18a282a91839e9ae8",
+  "proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/manifest.json": "6a6964774b5822f26d575dd8afe2d97fa93f49964c8abac5558e24476d92fbea",
+  "proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/result.json": "09c56e0b8e7149c16f3f835e59f49d335d3c04220d68eb9e9707a9b408e3537e"
+ },
+ "paths": {
+  "manifest": "proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

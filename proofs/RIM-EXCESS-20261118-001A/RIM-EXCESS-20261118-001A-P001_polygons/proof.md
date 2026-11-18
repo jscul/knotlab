@@ -56,3 +56,10 @@ meeting only in y; its excess is then e = e₁ + e₂ + (s(x, y) + s(y, z) − s
 
 Whether the excess grows without limit with patch size; why excess lives only on lone pairs of opposite classes facing each other
 (computed in ticket B).
+
+## Computed in ticket B (frozen)
+
+Lemma P held on all 116,932 bonds of the 2,907 discs to nine knots; the polygon search matched brute force on all 142,413 pairs there. On
+every disc of eleven and twelve knots (13,746 and 37,901), every pair carrying an excess (48 and 198) and every unbonded pair is a lone
+pair of opposite classes facing each other; the largest excess is 1 at eleven knots and 2 at twelve (6 pairs). Random patches of 20 to 40
+knots gave excess 0 on 253 facing pairs, 1 on one, and 20 searches ran out of time; eight shape climbs reached 2 at most.

@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "WEAVE-HEIGHTS-20261118-001A-P001",
+ "canonical_id": "WEAVE-HEIGHTS-20261118-001A-P001",
+ "proof": "WEAVE-HEIGHTS-20261118-001A-P001",
+ "ticket": "WEAVE-HEIGHTS-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Heights on weave patches: the criterion for constrained sets and the lower bound",
+ "claim": "On a weave patch without holes: states are height functions up to adding 6 (Lemma 1); heights are difference constraints with extension (Lemma 2); a set is constrained exactly when m >= 3 of its members have a cyclic order of height-distance sum <= 3(m - 2) (Proposition 3); no knot is level from any distinction (Lemma 5, via cited bridged-graph theorems); D(x,y) + D(y,x) = 3 steps (Lemma 6); every bond holding x != y has at least steps + 2 members, so b >= steps + 1 (Theorem 7); lone-distinction identities (Lemma 8).",
+ "standard_statement": "Triangular Ising antiferromagnet height functions; integer difference constraints; bridged graphs (Chepoi 2000; Soltan-Chepoi 1983; Farber-Jamison 1987; Chalopin-Chepoi-Hirai-Osajda 2020).",
+ "prior_work": "DOUBLE-MEET-20261118-001 (the sketches and the census), RULER-20261111-001 (heights on the endless weave).",
+ "dependencies": [],
+ "completion_gate": "Ticket B's frozen checks; the referee reviews the proofs.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "written in full, refereed once by the advisor before the freeze; referee pending",
+  "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
+  "novelty": "the height mapping classical; the criterion for constrained sets and the lower bound not known to the advisor (no literature search run)"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "weave_height_criterion_and_lower_bound_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/WEAVE-HEIGHTS-20261118-001A/WEAVE-HEIGHTS-20261118-001A-P001_heights/manifest.json",
+  "identity": "proofs/WEAVE-HEIGHTS-20261118-001A/WEAVE-HEIGHTS-20261118-001A-P001_heights/identity.json",
+  "proof": "proofs/WEAVE-HEIGHTS-20261118-001A/WEAVE-HEIGHTS-20261118-001A-P001_heights/proof.md"
+ },
+ "attained_result": "Lemmas 0-2, 5, 6, 8, Proposition 3, Corollary 4 and Theorem 7 proved (Lemma 5 resting on cited theorems)."
+}

@@ -1730,6 +1730,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Who picks the number of orders (`PICK-TWO-20261118-001`) | [closure](proofs/PICK-TWO-20261118-001Z/PICK-TWO-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/PICK-TWO-20261118-001/) |
 | 2026-11-18 | What the arrangement of the count's rows holds (`ROW-ARRANGE-20261118-001`) | [closure](proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/ROW-ARRANGE-20261118-001/) |
 | 2026-11-18 | Where the cumulant distance is steps apart, and a repair (`TREE-STEPS-20261118-001`) | [closure](proofs/TREE-STEPS-20261118-001Z/TREE-STEPS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-STEPS-20261118-001/) |
-| 2026-11-18 | Heights on weave patches: the criterion and the lower bound (`WEAVE-HEIGHTS-20261118-001`) | — | [folder](research/WEAVE-HEIGHTS-20261118-001/) |
+| 2026-11-18 | Heights on weave patches: the criterion and the lower bound (`WEAVE-HEIGHTS-20261118-001`) | [closure](proofs/WEAVE-HEIGHTS-20261118-001Z/WEAVE-HEIGHTS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-HEIGHTS-20261118-001/) |
 | 2026-11-18 | The surviving weave pair, with the twist fixed (`WEAVE-PAIR-20261118-001`) | [closure](proofs/WEAVE-PAIR-20261118-001Z/WEAVE-PAIR-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-PAIR-20261118-001/) |
 

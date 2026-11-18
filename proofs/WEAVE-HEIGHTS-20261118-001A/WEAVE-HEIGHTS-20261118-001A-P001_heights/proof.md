@@ -158,3 +158,16 @@ of routing s → v, then the backward step v → u (D(v, u) = 2: it is ≡ 2 (mo
 Proved: Lemmas 0 to 2, 5, 6 and 8, Proposition 3, Corollary 4 and Theorem 7, the bridged-graph step resting on the cited theorems.
 The upper bound b ≤ s + 1 is refuted by `DOUBLE-MEET-20261118-001`'s census (64 bonded pairs at s + 2). Not proved here: which facing
 pairs of lone distinctions are bonded.
+
+## Checked in ticket B (frozen)
+
+On every disc of the weave to twelve knots (59,564): Lemma 0's flagness, convex balls and the triangle condition (the ingredients of
+Lemma 5), no level knot, Lemma 6's identity and Lemma 8's identities, with no exception; on every disc to eight knots (1,080): Lemma 1's
+count and Proposition 3 set by set (833,536 sets); on every disc of twelve knots (37,901), Theorem 7 on all 3,365,574 bonded pairs.
+
+## The upper side
+
+Theorem 7 is a lower bound only. The excess of bond distance over steps apart + 1 grows at the rim: 64 bonded pairs at steps + 2 from
+ten knots (`DOUBLE-MEET-20261118-001`), and lone pairs of opposite classes facing each other at steps + 3 from twelve knots, where they
+break the triangle inequality while bonded (its referee). By Proposition 3 and minimality, b(x, y) + 1 is the least size of a set holding
+x and y that has a cyclic order of D-sum at most 3(m − 2) and no such sub-collection; a closed form for it at the rim is not found here.

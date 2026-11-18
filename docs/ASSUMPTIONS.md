@@ -2745,6 +2745,11 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-18 · `FRESH-COUNT-20261118-001` ([decision note](../research/FRESH-COUNT-20261118-001/fresh_count.md); referee
+    pending) let a rule read only bond distances and choose the fresh count: the distances carry the pattern under one count (the
+    reader proved) but cannot supply the count, which must equal the first knot's size; under the fewest counts the distances read
+    the 2^a pattern closed one round early, because the last loose distinctions already form a knot (the same loss of which
+    distinctions are loose that `VARIABLE-OUTPUT-READER-20261118-001A` found). Status unchanged.
   - 2026-11-18 · `VARIABLE-OUTPUT-READER-20261118-001B` found a width-nineteen reader for three-parent choices. One bit from the full table resolves the ambiguity of the three rows.
   - 2026-11-18 · `VARIABLE-OUTPUT-READER-20261118-001A` found an exact loss of next choices under variable fresh counts. The same 1,024 named states can leave different distinctions loose.
   - 2026-11-18 · `TWO-PROBE-ALIGNMENT-20261118-001` referee fold. The finite construction, the instrument’s contribution and the perfect-recall obstruction are distinguished. Status unchanged.

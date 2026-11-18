@@ -157,6 +157,7 @@ evidence: results and their status come from the records each entry links.
 | [A100](#a100--how-knots-meet-is-compared-on-fewest-knot-presentations-of-a-line) | How knots meet is compared on fewest-knot presentations of a line | scope | Assumed |
 | [A101](#a101--the-number-of-orders-a-growth-rule-keeps-is-given-two) | The number of orders a growth rule keeps is given: two | scope | Assumed |
 | [A102](#a102--an-endless-bases-counts-are-read-in-its-maximal-entropy-weighting) | An endless base's counts are read in its maximal-entropy weighting | reading | Assumed |
+| [A103](#a103--a-bases-values-are-data-which-value-is-called-1-is-part-of-the-base) | A base's values are data: which value is called 1 is part of the base | reading | Assumed |
 
 ## Entries
 
@@ -2676,6 +2677,12 @@ evidence: results and their status come from the records each entry links.
   distinctions and every one reached at nine, so it recovers the orders there (computed); no local view does (reach 8 to 10 here,
   and for every reach two rings sharing a distinction fool it, proved); no fixed round does in general (simplex graphs of rings,
   proved), and the number of orders is NP-hard to read from the full table (classical). Distance holds it, at a cost.
+  `CUMULANT-DIST-20261118-001` ([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md); referee pending, B200)
+  found one distance for both laws: the least number of extra distinctions a set holding the pair needs, plus −log₃ of how
+  strongly the set is bound beyond its parts (its joint cumulant). It gives one step per knot under parity and not-all-equal
+  alike, steps apart on every knot tree under any mixture of the two (proved for parity, computed on 19,730 pairs), bond distance
+  minus one on every parity base (proved), and the count's τ on a chain grid. It ignores which value is called 1, so it reads a
+  split line as a ring and cannot read the orders a betweenness growth builds (A103).
 - **History.**
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.
   - 2026-11-18 · `ALIGNED-NEXT-JOIN-20261117-001` proved the exact next joins readable on every complete aligned round, with a finite check of the effect of the original eight.
@@ -2895,3 +2902,27 @@ evidence: results and their status come from the records each entry links.
   on finite pieces selects the round one.
 - **History.**
   - 2026-11-18 · Added by `COUNT-BALLS-20261118-001`.
+
+### A103 · A base's values are data: which value is called 1 is part of the base
+
+**Assumed** · 2026-11-18 · reading
+
+- **Statement.** A base is a set of allowed states with the values 0 and 1 as given, not up to flipping a distinction's values.
+  Readings that use the values (the raw disagreement count, the all-equal states, the splits' sides) are taken as readings of the
+  base itself. Flipping one distinction's values (the literature's switching) turns a betweenness knot into a not-all-equal knot and
+  a split base into another set of states with the same switching-invariant readings.
+- **Why.** Taken by default in every split-base study: the betweenness growth (`STATE-RULES-20261117-001`, `CUBE-DOUBLING-20261118-001`,
+  `NEVER-NEST-20261118-001`) keeps both all-equal states, which fixes the values up to one global flip, and the count is twice the
+  L1 distance only in that convention (`GRID-GROW-20261117-001`). `CUMULANT-DIST-20261118-001` showed what changes without it: up to
+  flipping values a split line is a ring (proved), so a value-free distance reads the line of eight as a ring of eight, and
+  `COUNT-BALLS-20261118-001` found that a base and its translate by one of its states share every state distance while their
+  numbers of orders differ.
+- **Rests on it.** The count as twice the L1 distance on split grids and the λ = 2 ruler; the number of orders k and λ of grown
+  bases; every census of orders.
+- **Challenge.** Read the program's results value-free, as the owner's "no values, only relations" would suggest: which survive
+  switching (the cumulant distance, the knot trees' steps apart) and which do not (the split line's ends, the orders). The cheapest
+  test is the switching group of the grown split bases to n = 8: how many orders does each switching class carry, and is there a
+  value-free reading that recovers a two-order grid's ruler? `CUMULANT-DIST-20261118-001` found that in two orders no switching
+  equivalence takes a corner's neighbour to the far corner, so something value-free distinguishes them there.
+- **History.**
+  - 2026-11-18 · Added by `CUMULANT-DIST-20261118-001`.

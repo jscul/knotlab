@@ -419,6 +419,20 @@ and of two rings of five, proved), and reading the orders from the full table is
 as hard as three-colouring (classical). The distances hold the orders; reading
 them is global, and can be costly
 ([decision note](../research/ROW-ARRANGE-20261118-001/row_arrange.md)).
+Is there one distance for both laws (`CUMULANT-DIST-20261118-001`, proofs and
+frozen computation, referee pending)? Yes, for knots. For two distinctions,
+take the sets that hold both, and ask how strongly each set is bound beyond
+what its parts explain (the literature's joint cumulant); charge one step per
+extra distinction and −log₃ of the binding's weakness, and take the least. A
+parity knot binds three distinctions with nothing in pairs, a not-all-equal
+knot binds them through pairs, and both come out one step. On every tree of
+knots, whichever law each knot has, the distance is steps apart (proved for
+parity, computed for the rest), on parity bases it is bond distance minus one,
+and on a chain grid it is the count's τ. The laws part on cycles. What it does
+not read is which value is called 1: flipping values turns a split line into a
+ring, its two ends as near as neighbours, so the orders a betweenness growth
+builds need the values (assumption A103)
+([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

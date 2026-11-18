@@ -503,6 +503,16 @@ lone, opposite and facing. Inside a larger weave the same meeting is harmless,
 because other knots hold its outer distinctions. Bond distance is never less
 than the steps apart plus one there
 ([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md)).
+Why never less (`WEAVE-HEIGHTS-20261118-001`, proof and frozen checks, referee
+pending)? On a patch without holes every state of the weave is a height: a
+whole number at each distinction that steps up by one or down by two along
+each pair in a fixed direction, the value being its parity. A set is then
+constrained exactly when a few of its distinctions can be visited in a cycle
+that is too short for the heights to fit, and going from one distinction to
+another and back always costs three times their steps apart. A knot holding
+both must close such a cycle, so it has at least the steps apart plus two
+members (proved)
+([decision note](../research/WEAVE-HEIGHTS-20261118-001/weave_heights.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

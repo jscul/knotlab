@@ -1036,6 +1036,9 @@ evidence: results and their status come from the records each entry links.
   carry, for example a hub chain in two dimensions whose chain balls are round. The cheapest test measures chain balls on a plane of
   gated knots against the grid it is drawn on.
 - **History.**
+  - 2026-11-18 · `WEAVE-HEIGHTS-20261118-001` ([decision note](../research/WEAVE-HEIGHTS-20261118-001/weave_heights.md); referee
+    pending): on weave patches without holes bond distance is at least steps apart + 1, proved through the height function (with an
+    exact criterion for constrained sets); its excess at the rim is open. Status unchanged.
   - 2026-11-18 · `DOUBLE-MEET-20261118-001` ([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md); referee
     pending; refereed, one reading blocked): the weave form. On patches of the weave the double meetings never break the spacing;
     only a pair of lone distinctions of opposite classes facing each other does, unbonded or (from twelve knots) bonded too far, a

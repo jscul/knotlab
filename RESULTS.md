@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 467 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 468 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 467 epics with their closures
+- [Epics](#epics): all 468 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1679,6 +1679,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-17 | Does the owner's whole picture work as a mechanism: a learned agent with memory acting on knots while a proof-based slow loop reshapes the pattern, its memory carried across each change? (`AGENT-LOOP-20261117-001`) | — | [folder](research/AGENT-LOOP-20261117-001/) |
 | 2026-11-17 | Can anonymous mixed bond distances identify every next join on the aligned cubic rounds? (`ALIGNED-NEXT-JOIN-20261117-001`) | — | [folder](research/ALIGNED-NEXT-JOIN-20261117-001/) |
 | 2026-11-17 | Do bond distances determine the next joins at every round? (`BOND-NEXT-JOIN-20261117-001`) | — | [folder](research/BOND-NEXT-JOIN-20261117-001/) |
+| 2026-11-17 | Can the changing bond distances bring the original eight into alignment? (`BOOTSTRAP-ALIGNMENT-20261117-001`) | — | [folder](research/BOOTSTRAP-ALIGNMENT-20261117-001/) |
 | 2026-11-17 | Is a two-orbit bond from the top the only thing that keeps the reach bounded? (`CARRIER-20261117-001`) | — | [folder](research/CARRIER-20261117-001/) |
 | 2026-11-17 | Which distinction can carry an order from four to five? (`CARRY-FIFTH-20261117-001`) | — | [folder](research/CARRY-FIFTH-20261117-001/) |
 | 2026-11-17 | Can one local assembly from a knot have cubic bond-ball growth? (`CUBIC-FROM-A-KNOT-20261117-001`) | — | [folder](research/CUBIC-FROM-A-KNOT-20261117-001/) |

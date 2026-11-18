@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "proof_id": "BOOTSTRAP-ALIGNMENT-20261117-001-P001",
+  "status": "Proved",
+  "theorem": "Two anonymous bounded updates suffice from the literal eight to the first aligned mixed round. Temporary betweenness probes recover its twelve neighbor pairs. Every one of 48 frames gives the exact I4. Adaptive fresh parity alone has four indistinguishable literal neighbor graphs and cannot guarantee the target.",
+  "observation": "Only the scalar minimum K1\u2013K3 support size minus one on each pair. Binary value comparisons occur inside the source betweenness law. No tuples, signed differences, old position names or past actions are input to the reader.",
+  "initial_and_moves": {
+    "seed_distinctions": 8,
+    "seed_rows": 8,
+    "identical_old_pair_entries": 28,
+    "first_parity_rows": 16,
+    "second_parity_choices_exhausted": 168,
+    "indistinguishable_old_neighbor_graphs_under_fresh_parity": 4,
+    "uniform_blind_placements_compatible": 48,
+    "uniform_blind_placements_total": 40320,
+    "blind_probability": "1/840",
+    "bound_uniform_over_four_hidden_gauges": "1/4"
+  },
+  "measurement": {
+    "parallel_original_pairs": 28,
+    "fresh_probe_endpoints": 56,
+    "temporary_betweennesses": 56,
+    "original_neighbor_pairs": 12,
+    "original_distance_two_degree": 33,
+    "probe_endpoint_degrees": [
+      3,
+      5,
+      9
+    ],
+    "interval_size_counts": {
+      "2": 12,
+      "4": 12,
+      "8": 4
+    },
+    "all_old_rows_preserved": true
+  },
+  "construction": {
+    "bounded_updates": 2,
+    "charts_per_naming": 48,
+    "whole_replay_namings": 2,
+    "two_fresh_attachment_moves": 8,
+    "three_fresh_ordinary_moves": 27,
+    "junctions": 35,
+    "retained_originals": 8,
+    "genuine_fresh_distinctions": 97,
+    "distinctions_after_forgetting": 105,
+    "exact_final_state_count": "36893488147419103232",
+    "next_joins": {
+      "one_parent": 3,
+      "two_parents": 12,
+      "three_parents": 6
+    }
+  },
+  "terminal_persistent_betweennesses": {
+    "old_only": 48,
+    "with_any_genuine_fresh_bit": 0
+  },
+  "quantifiers": "Every naming, every allowed measured frame, modulo names of fresh bits. No parity-only controller can guarantee compatible literal alignment; a compatible monotone branch exists.",
+  "scope": "Original common binary value convention, the inherited target and specified growth law. The positive rule permits extra temporary probes followed by existential forgetting. The serial replay of its second bounded update does not assert an individual-junction memoryless choice theorem.",
+  "evidence": "Proof with exhaustive finite checks; within-task validation, external novelty unassessed.",
+  "checks": {
+    "exact_initial_tables": "seed.json",
+    "pair_probe_projections": "probe.json",
+    "all_frame_assemblies": "construction.json",
+    "signed_alternates_and_terminal_triples": "scopes.json"
+  },
+  "further_round_by_round_test": {
+    "separate_parity_junctions_read": [
+      1,
+      4,
+      10,
+      20,
+      35
+    ],
+    "joins_issued": [
+      3,
+      6,
+      10,
+      15
+    ],
+    "complete_inputs_renamed_between_rounds": true,
+    "compatible_frame_pairs_per_naming": 288,
+    "endpoint_operation": "Identify 8 placeholders with 8 originals and forget 56 test endpoints. This restricts the independently grown component.",
+    "retained_separate_component_marginal_before": "2^70",
+    "retained_separate_component_marginal_after": "2^65",
+    "output": "rounds.json"
+  },
+  "within_task_review": {
+    "verdict": "confirmed with a corrected helper",
+    "correction": "An initially unused three-fresh case in the tabulation helper was repaired before publication. An independent truth-table regression and an explicit three-fresh signed control pass. Every earlier output matched exactly.",
+    "one_round_past": "A translated seed with a nondefault measured frame continued from I4 through the 21 joins to I5 on 168 distinctions.",
+    "separate_external_referee": false
+  }
+}

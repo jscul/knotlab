@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PLUS-ONE-20261118-001B-E001",
+ "ticket": "PLUS-ONE-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does the linked-class sum rule predict the cheapest growth's dimension on every census arrangement with a birth (fitting) and on six-knot samples (test)?",
+ "definitions": {
+  "linked": "two classes of one round whose partners share a neighbour",
+  "rule": "largest sum of class sizes over linked components"
+ },
+ "public_inputs": {
+  "code": "linked.py (sha256 9f8527ef833b3be917f747de9d245e2b1f53fae5fbffbbe12a44ec47903398dc), job.py (sha256 ba4fd1b2000490c7d9b62f244ba2538b7b5bfdd454a9c8dd4197acea72167b97), merge.py (sha256 4de12f2d502934ca35fb666600ade5bad9fee143466017bd6e1a9b91f1ad3f25)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "TOUCH-CENSUS-20261118-001B arrlib.py; its run's per-arrangement results (runs/touch-census) select the census part"
+ },
+ "forbidden_inputs": [
+  "Changing the rule or predictions after reading the six-knot results"
+ ],
+ "primary_observable": "F, P1, P2 of research/PLUS-ONE-20261118-001/preregistration.md",
+ "cheapest_meaningful_control": "the census part (fitting)",
+ "predictions": {
+  "P1": "six knots: dimension = linked sum, no false positive",
+  "P2": "sum on larger components; a path of three gives 2"
+ },
+ "decision_rules": {
+  "each": "as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "minutes to an hour",
+ "amendments": []
+}

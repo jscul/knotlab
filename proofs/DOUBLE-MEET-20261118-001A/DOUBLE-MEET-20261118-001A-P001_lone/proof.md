@@ -1,7 +1,8 @@
 # Lone distinctions in the weave: what is proved, and what is sketched
 
 Ticket `DOUBLE-MEET-20261118-001A`, 18 November 2026. Written before the frozen run; checked by ticket B's gates and census
-(`experiments/DOUBLE-MEET-20261118-001B/DOUBLE-MEET-20261118-001B-E001_patches/`). Referee pending. Sections H and L are the advisor's
+(`experiments/DOUBLE-MEET-20261118-001B/DOUBLE-MEET-20261118-001B-E001_patches/`). Refereed: report R1 (one reading blocked, see
+`research/DOUBLE-MEET-20261118-001/double_meet.md`); H, L and the corollary are proved in `WEAVE-HEIGHTS-20261118-001A`. Sections H and L are the advisor's
 (claude-fable-5-2) sketches, not machine-checked, and are tested computationally in P0; T is the thread's (from
 `BOND-METRIC-20261118-001A`).
 
@@ -50,4 +51,5 @@ exact rule for which facing pairs are (ticket B measures all three).
   all 1,564,004 pairs of the 22,143 discs of the census; no bonded pair had b below steps + 1.
 - The upper bound is false: 64 bonded pairs have b = steps + 2 (at steps 4), first on discs of ten knots.
 - Every unbonded pair (12,318) is two lone distinctions of opposite classes facing each other; a disc is a true distance exactly when
-  it has none (all 22,143).
+  it has none (all 22,143). *Blocked beyond the census (the referee):* from twelve knots a disc with every pair bonded can fail through
+  such a pair at b = steps + 3.

@@ -7,7 +7,7 @@
  "kind": "proof",
  "status": "Proved",
  "title": "Lone distinctions in the weave: what is proved, and what is sketched",
- "claim": "T (proved): two knots sharing two distinctions leave their lone, facing, opposite-class distinctions unbonded. H and L (the advisor's sketches, checked computationally): on weave patches without holes a set is constrained exactly when m >= 3 of its members have a cyclic order of height-distance sum at most 3(m - 2); D(x,y) + D(y,x) = 3 steps; hence b >= steps + 1 on every such patch. Open: the upper bound (false in 64 pairs, ticket B) and which facing pairs are bonded.",
+ "claim": "T (proved): two knots sharing two distinctions leave their lone, facing, opposite-class distinctions unbonded. H and L (the advisor's sketches, checked computationally): on weave patches without holes a set is constrained exactly when m >= 3 of its members have a cyclic order of height-distance sum at most 3(m - 2); D(x,y) + D(y,x) = 3 steps; hence b >= steps + 1 on every such patch. Open: the upper bound (false in 64 pairs, ticket B) and which facing pairs are bonded. Refereed R1: the computed reading 'a patch fails exactly when some pair is unbonded' is blocked beyond eleven knots (a facing lone pair can fail bonded, at steps + 3); H, L and the lower bound are proved in WEAVE-HEIGHTS-20261118-001A.",
  "standard_statement": "Triangular Ising antiferromagnet height functions (Bloete-Hilhorst 1982; Nienhuis-Hilhorst-Bloete 1984); heights as difference constraints (Thurston 1990); systolic complexes.",
  "prior_work": "NAE-METRIC-20261118-001 (blocks), BOND-METRIC-20261118-001 (T2), RULER-20261111-001 (the endless weave).",
  "dependencies": [],
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "T proved; H and L the advisor's sketches checked computationally; referee pending",
+  "status": "T proved; H and L sketched here, proved in WEAVE-HEIGHTS-20261118-001A; refereed R1 (one reading blocked)",
   "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
   "novelty": "the height mapping classical; the lone-pair obstruction not known to the advisor (no literature search run)"
  },

@@ -1037,8 +1037,9 @@ evidence: results and their status come from the records each entry links.
   gated knots against the grid it is drawn on.
 - **History.**
   - 2026-11-18 · `DOUBLE-MEET-20261118-001` ([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md); referee
-    pending): the weave form. On patches of the weave the double meetings never break the spacing; only an unbonded pair of lone
-    distinctions of opposite classes facing each other does, a property of the patch's rim. Status unchanged.
+    pending; refereed, one reading blocked): the weave form. On patches of the weave the double meetings never break the spacing;
+    only a pair of lone distinctions of opposite classes facing each other does, unbonded or (from twelve knots) bonded too far, a
+    property of the patch's rim. Status unchanged.
   - 2026-11-18 · `NAE-METRIC-20261118-001` ([decision note](../research/NAE-METRIC-20261118-001/nae_metric.md); referee
     pending): the block form. On every not-all-equal or betweenness base, bond distance minus one adds across a joint, so a base is
     spaced by bond distance as soon as each of its blocks is; trees of knots and rings are (proved), lone double meetings are not.
@@ -2724,9 +2725,10 @@ evidence: results and their status come from the records each entry links.
   are true distances with bond distance one more than steps apart (proved); every small failing block has two knots meeting twice,
   and every series-parallel pattern of single meetings of plain not-all-equal knots checked passes (computed; one betweenness knot
   can break it, its referee).
-  `DOUBLE-MEET-20261118-001` ([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md); referee pending) looked inside
-  the weave: its double meetings are harmless. On every patch without holes checked (22,143), bond distance fails to be a true
-  distance exactly when some pair is unbonded, and every unbonded pair is two lone distinctions (each in one knot) of opposite classes
+  `DOUBLE-MEET-20261118-001` ([decision note](../research/DOUBLE-MEET-20261118-001/double_meet.md); refereed) looked inside
+  the weave: its double meetings are harmless. On every patch without holes in its census (22,143), bond distance fails to be a true
+  distance exactly when some pair is unbonded (beyond the census, from twelve knots, also through such a pair bonded too far: its
+  referee's Block on the general reading), and every unbonded pair is two lone distinctions (each in one knot) of opposite classes
   facing each other; the lone double meeting is the smallest case. Bond distance is at least steps apart + 1 there (sketched through
   the height function, checked) and equal to it on all but 64 bonded pairs.
 - **History.**

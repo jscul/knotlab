@@ -31,6 +31,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   ([decision note](research/KNOT-SWITCH-20261118-001/knot_switch.md)).
 - Narrowed: outside those growths the reading is one way only; a crossing seldom comes with a filled knot.
 
+## 18 November 2026: which double meetings are harmless, refereed; one reading blocked
+
+- The study of double meetings in the weave (`DOUBLE-MEET-20261118-001`) was refereed with fresh code: double meetings are harmless, and
+  every pair held by no bond is a lone pair of opposite classes facing each other
+  ([decision note](research/DOUBLE-MEET-20261118-001/double_meet.md)).
+- Blocked: "a patch fails exactly when some pair is unbonded" holds to eleven knots only. From twelve knots such a facing pair can also
+  break the triangle inequality while bonded, at steps apart plus three. The rim is still the only cause.
+
 ## 18 November 2026: where not-all-equal bond distance is a distance, confirmed by the referee; one conjecture narrowed
 
 - The study of where not-all-equal bond distance is a true distance (`NAE-METRIC-20261118-001`) was confirmed by its referee with fresh

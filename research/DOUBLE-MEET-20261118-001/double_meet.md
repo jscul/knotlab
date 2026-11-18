@@ -2,7 +2,8 @@
 
 Epic `DOUBLE-MEET-20261118-001`, 18 November 2026, by Claude. The coordinator's go-ahead on `NAE-METRIC-20261118-001`'s direction 2:
 which double meetings (two knots sharing two distinctions) are harmless for not-all-equal bond distance, the weave's against lone
-pairs. Goals G1 and G16; tests A97 and A39; sub-goal B200. **Referee pending.**
+pairs. Goals G1 and G16; tests A97 and A39; sub-goal B200. **Refereed:** report [R1](referee-R1/report.md): a **Block** on one reading (see Referee), the rest confirmed with fixes,
+folded in on 18 November.
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `9802904ff` at 11:19 UTC; the census ran from 11:19 to
@@ -17,7 +18,8 @@ pairs. Goals G1 and G16; tests A97 and A39; sub-goal B200. **Referee pending.**
 - **A double meeting is never the cause.** On every patch of the weave without holes, 22,143 of them (every one up to eleven knots,
   and 480 random ones to sixteen distinctions), bond distance fails to be a true distance exactly when some pair is held by no bond,
   and every such pair is two **lone** distinctions (each in a single knot of the patch) whose knots are of **opposite classes** and
-  that **face each other**: each lies in the wedge the other's knot opens onto (computed, no exception among 12,318 such pairs).
+  that **face each other**: each lies in the wedge the other's knot opens onto (computed, no exception among 12,318 such pairs). The
+  "exactly when" is blocked beyond the census (see the last bullet).
 - **The lone pair is the smallest case.** Two knots sharing two distinctions: their other two distinctions are lone, of opposite
   classes, and face each other, so no bond holds them (proved). Inside the weave the same double meeting is harmless because its outer
   distinctions are not lone: other knots hold them. So the rhombi of a patch never hurt; what hurts is a pair of lone distinctions of
@@ -27,8 +29,15 @@ pairs. Goals G1 and G16; tests A97 and A39; sub-goal B200. **Referee pending.**
   one whose lone distinctions are all of one class, or never face each other. Facing is necessary, not sufficient: of 15,290 facing
   pairs of opposite classes, 2,972 are bonded after all; no simple rule found yet says which.
 - **How far, when held.** Bond distance is never below steps apart + 1 on a patch without holes (sketched by the advisor through the
-  weave's height function, and checked on 1.56 million pairs), and it is exactly steps apart + 1 on all but 64 of the 1.56 million
-  bonded pairs; those 64 are steps apart + 2, first on patches of ten knots. They do not break the triangle inequality.
+  weave's height function, and checked on 1.56 million pairs; now proved in `WEAVE-HEIGHTS-20261118-001`), and it is exactly steps
+  apart + 1 on all but 64 of the 1.56 million bonded pairs; those 64 are steps apart + 2, first on patches of ten knots. In the census
+  they do not break the triangle inequality.
+- ***Corrected after the referee (Block on this reading):*** "fails exactly when some pair is held by no bond" holds on the census (to
+  eleven knots and the random discs) but not beyond it. From twelve knots a lone pair of opposite classes facing each other can be held
+  by a bond that is too large: on the 12-knot disc d(0,1), d(0,2), d(1,0), d(1,1), d(2,0), d(2,1), u(1,1), u(1,2), u(2,1), u(2,2), u(3,0),
+  u(3,1), every pair has a bond, yet b((0,3), (1,2)) = 2, b((1,2), (4,0)) = 4 and b((0,3), (4,0)) = 7 with steps apart 4 (checked here). So
+  the corrected statement: **a patch fails only through lone pairs of opposite classes facing each other, when they are unbonded or (from
+  twelve knots) bonded too far.** Double meetings remain harmless; the rim is still the only cause.
 
 | Patch | True distance? | Evidence |
 | --- | --- | --- |
@@ -36,7 +45,7 @@ pairs. Goals G1 and G16; tests A97 and A39; sub-goal B200. **Referee pending.**
 | Parallelograms to 16 distinctions | no, exactly one unbonded pair: the two acute lone distinctions | computed (11) |
 | Patches with no lone distinctions (hexagons and the like) | yes | computed |
 | Lone distinctions all of one class (triangles, trapezoids) | yes | computed |
-| Every patch without holes to eleven knots | exactly when no lone pair of opposite classes facing each other is unbonded | computed (21,663) |
+| Every patch without holes to eleven knots | exactly when no lone pair of opposite classes facing each other is unbonded | computed (21,663); beyond, facing pairs can also fail bonded (the referee) |
 | Closed weaves (tori 3 × 3 to 4 × 5; the endless weave) | yes | computed (BOND-METRIC); proved (RULER) |
 
 ## Predictions and verdicts
@@ -49,7 +58,7 @@ pairs. Goals G1 and G16; tests A97 and A39; sub-goal B200. **Referee pending.**
 | P2 | unbonded pairs are lone, opposite classes, facing each other | held | all 12,318 |
 | P3 | facing pairs with no knot outside their parallelogram are unbonded | **failed** | 7 of 502 such pairs are bonded |
 | P4 | parallelograms: exactly one unbonded pair, the lone pair; b = steps + 1 elsewhere | held | all 11 |
-| P5 | a patch is a true distance exactly when it has no unbonded pair | held | all 22,143 |
+| P5 | a patch is a true distance exactly when it has no unbonded pair | held on the frozen sample; **false** one size past (the referee) | all 22,143 here; a 12-knot disc with every pair bonded fails through a facing pair at steps + 3 |
 
 4 of 6 held; P1 and P3 failed narrowly, both on the record.
 
@@ -93,12 +102,26 @@ identity D + D = 3·steps and the lower bound b ≥ steps + 1 on discs (sketches
 contradicted), a structure statement for bonds through lone distinctions of opposite classes, and the literature. It could not prove
 the upper bound (now known false in 64 pairs) or give a rule for which facing pairs are bonded.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with its own code. Reproduced: every
+disc to ten knots (7,917; all 4,272 unbonded pairs lone, opposite and facing; none below steps + 1; 12 pairs at steps + 2; metric exactly
+when no pair is unbonded); 2,500 random discs each of twelve and thirteen knots (every unbonded pair lone, opposite and facing; none
+below steps + 1); parallelograms to 18 distinctions (exactly the acute lone pair unbonded). Folded in the same day, logged in
+`docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Block (one reading).** P5 and "fails exactly when some pair is held by no bond" are false one size past the census: discs of twelve
+   and thirteen knots with every pair bonded fail through a lone pair of opposite classes facing each other at steps + 3 (the example
+   above). The census to eleven knots stands. What survives: every long side of a failure is such a pair, so the rim is the cause and the
+   double meetings are harmless.
+2. **Not a block.** The position table's "at least steps apart + 1 throughout" is marked sketched and computed (now proved, in
+   `WEAVE-HEIGHTS-20261118-001`).
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: which double meetings are harmless | **Status:** Successful (referee pending) | All of them inside the weave; the failures are lone pairs of opposite classes facing each other (every one of 12,318); a patch is a true distance exactly when it has no unbonded such pair; 4 of 6 held |
-| Local direction: one distance for both laws (B200) | Promising | On weave patches bond distance is a true distance up to a rim effect, and at least steps apart + 1 throughout |
+| This attempt: which double meetings are harmless | **Status:** Successful (refereed; one reading blocked) | All of them inside the weave; the failures are lone pairs of opposite classes facing each other (every one of 12,318); a patch is a true distance exactly when it has no unbonded such pair; 4 of 6 held |
+| Local direction: one distance for both laws (B200) | Promising | On weave patches bond distance is a true distance up to a rim effect, and at least steps apart + 1 throughout (sketched and computed here; proved in WEAVE-HEIGHTS) |
 | Broader exploration: heights and tilings | Known alternatives | The triangular antiferromagnet's height function and lozenge tilings carry the mechanism |
 | Long-term goal: G1 and G16 | G1 capability gained; G16 capability gained | G1: where the weave's distance is a true distance, and why the rim can break it. G16: lone distinctions and their classes as what decides it |
 
@@ -119,6 +142,8 @@ goal changed.
 **Assumptions:** A39 gains the weave form; A97 gains this study; no status changed, no new entry.
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its "stops being a true distance only when some pair is held by no bond" was blocked by the referee beyond the census (see Referee).*
 
 **Outcome:** inside the weave, double meetings are harmless. On every patch without holes checked (22,143 of them), bond distance stops
 being a true distance only when some pair is held by no bond, and every such pair is two lone distinctions (each in a single knot)

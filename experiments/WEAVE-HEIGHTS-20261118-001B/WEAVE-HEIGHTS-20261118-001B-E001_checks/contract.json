@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WEAVE-HEIGHTS-20261118-001B-E001",
+ "ticket": "WEAVE-HEIGHTS-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does every step of ticket A's proofs (Lemmas 0, 1, 5, 6, 8, Proposition 3, Theorem 7, and the bridged-graph facts Lemma 5 cites) hold on every disc patch of the weave to its size limit?",
+ "definitions": {
+  "disc": "knots connected through double meetings, V - E + F = 1, no pinch",
+  "D": "least walk weight, forward step 1, backward step 2"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 5e01b8d8db0af15bbd665c5366f156668294ff71d4e373f2e55ec2d1cd3d4d0e), merge.py (sha256 1caddfcdf1ad4972a6f0abc59e10fc473251ba38abbe0e0447d420d32df220df), checks.py (sha256 7c388eda866ec62465ee7d8a6c8aa6dc32bfbb2625033e6081c327f4160bdf84)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "DOUBLE-MEET's weavelib.py and job.py (discs_of_size), unchanged"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Q1-Q7 of research/WEAVE-HEIGHTS-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates on the two-knot disc and the 3 x 3 parallelogram.",
+ "predictions": {
+  "Q1": "states = 2 x falling-pair choices (discs to 8 knots)",
+  "Q2": "the cyclic criterion set by set (discs to 8 knots)",
+  "Q3": "flagness (to 12)",
+  "Q4": "convex balls and the triangle condition (to 12)",
+  "Q5": "no level knot (to 12)",
+  "Q6": "D + D = 3 steps and the lone identities (to 12)",
+  "Q7": "b >= steps + 1 on discs of 12 knots"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py (WEAVE-HEIGHTS-B1), about half an hour",
+ "amendments": []
+}

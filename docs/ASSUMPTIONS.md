@@ -2671,6 +2671,11 @@ evidence: results and their status come from the records each entry links.
   orders and a comb of one grow identically (proved), and every start's growth taken together, read without names, merges bases
   of two and three orders from seven distinctions (computed), while the full table keeps them (narrowed after the referee). So the orders sit in the count's arrangement, which start's row is
   which, not in its growth.
+  `ROW-ARRANGE-20261118-001` ([decision note](../research/ROW-ARRANGE-20261118-001/row_arrange.md); referee pending) located
+  them: one round of reading each start's growth against every other's, tagged by count, tells apart every grown base to eight
+  distinctions and every one reached at nine, so it recovers the orders there (computed); no local view does (reach 8 to 10 here,
+  and for every reach two rings sharing a distinction fool it, proved); no fixed round does in general (simplex graphs of rings,
+  proved), and the number of orders is NP-hard to read from the full table (classical). Distance holds it, at a cost.
 - **History.**
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.
   - 2026-11-18 · `ALIGNED-NEXT-JOIN-20261117-001` proved the exact next joins readable on every complete aligned round, with a finite check of the effect of the original eight.

@@ -406,6 +406,19 @@ seven distinctions (narrowed after its referee), while the full table of
 counts keeps them. Read on states instead, "the states within r disagreements of
 a state" cannot tell a base from its translate by one of its own states
 ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md)).
+Where, then, are the orders (`ROW-ARRANGE-20261118-001`, proofs and frozen
+computation, referee pending)? In how the starts' growths sit against each
+other. Read each start's growth together with every other start's, each tagged
+by its count from the start: one such round tells apart every base grown to
+eight distinctions, and every one reached at nine, so it reads the number of
+orders there. What each start sees nearby does not: the view must reach almost
+across the base, and two rings sharing one distinction look the same from every
+start, at every reach, while their orders differ (proved). Nor does any fixed
+number of rounds in general (the literature's simplex graphs of a ring of ten
+and of two rings of five, proved), and reading the orders from the full table is
+as hard as three-colouring (classical). The distances hold the orders; reading
+them is global, and can be costly
+([decision note](../research/ROW-ARRANGE-20261118-001/row_arrange.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

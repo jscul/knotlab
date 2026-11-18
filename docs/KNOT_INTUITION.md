@@ -456,6 +456,13 @@ there, without adding a state, and filling one combination leaves the others
 reachable. So the cube of s + 1 orders fills before another split can be added,
 whatever the tied choices
 ([decision note](../research/CUBE-DOUBLING-20261118-001/cube_doubling.md)).
+And the weave pair that survived (`WEAVE-PAIR-20261118-001`, frozen
+computation, referee pending)? It is one arrangement seen two ways, a half-turn
+of the weave apart, and with the twist around the cylinder fixed it is
+genuinely disordered: its distance carries all its information and fades at a
+steady rate from any start. But it fades in waves, so farther is not always less
+alike, and the distance does not step outward without skipping
+([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

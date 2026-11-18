@@ -2605,7 +2605,12 @@ evidence: results and their status come from the records each entry links.
   erased the states keep a fading imprint of it (the fading due to erasure shown for the six-starts; its referee).
   `CUBE-DOUBLING-20261118-001` ([decision note](../research/CUBE-DOUBLING-20261118-001/cube_doubling.md); referee pending)
   proved the cheapest law's cube growth for every size: it gains one order at each doubling and never keeps two.
+  `WEAVE-PAIR-20261118-001` ([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md); referee pending) settled
+  `WEAVE-MIX-20261117-001`'s surviving pair: one arrangement, disordered in both twist sectors to width 21, whose distance carries
+  all its information and decays at a fixed rate, but oscillates, so it steps outward only in envelope.
 - **History.**
+  - 2026-11-18 · `WEAVE-PAIR-20261118-001`: the weave's best periodic candidate is disordered but a ruler only in envelope; status
+    unchanged.
   - 2026-11-18 · The cap study scoped after `KNOT-CAP-R1` (Narrowing): the fade due to erasure holds for the six-starts; the c = 5
     difference is built into the cap; status unchanged.
   - 2026-11-18 · `KNOT-CAP-20261117-001`: the tight caps stop at two orders without growing them; how knots meet changes what

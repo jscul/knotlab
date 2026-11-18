@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: what the arrangement of the count's rows holds, confirmed by the referee; three statements narrowed
+
+- The study of which reading of the count table recovers a grown base's number of orders (`ROW-ARRANGE-20261118-001`) was confirmed by
+  its referee with fresh code, with no Block: every reading at seven and eight distinctions, the cheapest growth to twelve, the
+  least local reach and both failing pairs reproduce exactly ([decision note](research/ROW-ARRANGE-20261118-001/row_arrange.md)).
+- Narrowed: at nine the result is about samples of families (children of random parents), not every base; the nearest-rows reading
+  fails there too in other samples. One round of refinement stays complete on all three samples, which, as for colour refinement in
+  general, is not special to orders.
+- Narrowed: the number of orders cannot be computed from the table in polynomial time unless P = NP; the table does determine it.
+
 ## 18 November 2026: count balls, confirmed by the referee; two headlines narrowed
 
 - The study of the disagreement count's balls (`COUNT-BALLS-20261118-001`) was confirmed by its referee with fresh code, with no

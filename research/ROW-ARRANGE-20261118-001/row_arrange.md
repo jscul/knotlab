@@ -4,7 +4,8 @@ Epic `ROW-ARRANGE-20261118-001`, 18 November 2026, by Claude, on the coordinator
 `COUNT-BALLS-20261118-001#1`: every start's sorted row of disagreement counts, read without names, stops telling grown bases of two
 and three orders apart at seven distinctions, while the full table of counts keeps the orders. Where between the two is the number
 of orders recovered, and does a reading that looks only near each start suffice? Goals G16 and G1; tests A97. Reading only; no
-growth rule. **Referee pending.**
+growth rule. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18 November (see
+Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `7284768c8` at 06:56:43 UTC. The run went from
@@ -18,21 +19,24 @@ growth rule. **Referee pending.**
 
 ## The answer
 
-**In the owner's terms.**
+**In the owner's terms.** *Narrowed after the referee (18 November 2026): at nine the result is about one sample of families, and
+the nearest-rows reading fails there too in other samples; "one round" here is what the ladder calls W2.*
 - **What the arrangement holds is which start's growth lies at which count from which.** Read each start's growth together with
   every other start's growth, each tagged by its count from the start: one such round recovers the number of orders on every base
   grown to eight distinctions, and in fact tells every two of the 59,675 bases at eight apart (computed). It does the same on the
-  55,394 bases reached at nine by growing every child of 300 random bases of eight. Reading each start's growth with only its
-  nearest starts' growth nearly does: every base at seven, all but one pair at eight (two orders against three), and no pair with
-  different orders among those at nine.
+  55,394 bases at nine that are children of 300 random bases of eight (a few percent of the bases at nine), and on the referee's two
+  other samples (54,805 and 162,381 classes). Being a complete invariant there, it says nothing special about orders: colour
+  refinement tells apart almost every structure (Babai and Kučera 1979; Babai, Erdős and Selkow 1980). Reading each start's growth
+  with only its nearest starts' growth nearly does: every base at seven, all but one pair at eight (two orders against three); at
+  nine, none in this study's sample but two and one such groups in the referee's two samples.
 - **No local reading does it.** Views of the table that look only near each start need to look nearly across the whole base: as
   far as count 8 at seven distinctions and count 10 at eight (computed). And for every reach there are bases with the same view from
   every start and different numbers of orders: two rings sharing one distinction (proved).
 - **And no fixed amount of such reading does it in general.** Two bases of 21 distinctions agree under every reading of rows and
   under colour refinement run to the end, yet have two and three orders (proved; the literature's simplex graphs of a ring of ten
   and of two rings of five). Computing the number of orders from the full table is NP-hard (classical: it is the least number of
-  trees whose product holds the base), while the lattice dimension is a matching. So the one round that works on small grown
-  bases works because they are small.
+  trees whose product holds the base), so k cannot be computed from the table in polynomial time unless P = NP, while the lattice
+  dimension is a matching. So the one round that works on small grown bases may work because they are small.
 - **So the number of orders is held in the arrangement of the distances, globally.** It is information the distances carry, as the
   owner's premise says, but not in any one start's growth, nor in what each start sees nearby; on small bases one look at how
   every start's growth sits against every other's recovers it.
@@ -138,13 +142,26 @@ the machine, and that part was disregarded. Its P5 was one step short. Not consu
 
 ## Referee
 
-Pending. To be run by the coordinator's background referee thread.
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code and no Codex:
+confirmed with fixes, no Block. Every reading's groups at seven and eight, the cheapest growth to twelve, the least local reach (8
+and 10) and both failing pairs reproduce exactly; R1, R3 and R5 hold as written; R2 holds and its condition is tight; the canonical
+view form is correct. Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing.** N1 at nine: the referee's replicates (300 other parents, 54,805 classes; 900 parents, 162,381) have two and one
+   groups mixing k (4 against 3, fourteen states), so "no pair with different orders at nine" belonged to this study's sample. W2
+   stays complete on both replicates; the least local reach is again 10.
+2. **Narrowing.** R4's last sentence said no polynomial reading determines k unless P = NP; the table itself determines k (R0). It
+   now says k cannot be computed from the table in polynomial time unless P = NP.
+3. **Narrowing (headline).** "Every one reached at nine" now names the population: children of 300 random parents (0.5% of the
+   bases at eight), a few percent of the at least about 1.2 million bases at nine; the calibration at eight held 42% of its classes.
+4. **Not a block.** W2's completeness makes it a complete invariant here and says nothing specific to orders (Babai and Kučera;
+   Babai, Erdős and Selkow). "Works because they are small" now reads "may work". "One round" is the ladder's W2 (two rounds counting
+   the uniform start). R0 cites `DISTANCE-ORDER-20261117-001`, statement 1. R2's wording of the view near p is corrected.
 
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: what the arrangement of the count's rows holds | **Status:** Successful (referee pending) | One round of arrangement recovers the orders on every grown base to eight and on all reached at nine; no local reading does (proved, and reach 8 to 10 here); no fixed round does in general (proved); 7 of 8 held |
+| This attempt: what the arrangement of the count's rows holds | **Status:** Successful (refereed, confirmed with fixes) | One round of arrangement recovers the orders on every grown base to eight and on all reached at nine; no local reading does (proved, and reach 8 to 10 here); no fixed round does in general (proved); 7 of 8 held |
 | Local direction: reading the orders from distances | Promising | The orders are in the distances' arrangement; how far one round suffices on grown bases is open |
 | Broader exploration: locality and refinement | Known alternatives | Hanf and Gaifman locality, colour refinement, tree number: classical; the thresholds and the reading are the program's |
 | Long-term goal: G16 and G1 | G16 capability gained; G1 no demonstrated advance | G16: a name-free reading (one round of refinement) recovers the orders on small grown bases, with proved limits. G1: nothing new about space |
@@ -158,7 +175,7 @@ Pending. To be run by the coordinator's background referee thread.
 | 3 | The same ladder on not-all-equal bases (weave patches, chain grids): what reading of the count recovers the meeting pattern there? | 2/3 | 2/3 | the ladder on small weave patches and their twins → stop at the least reading that separates them | Alternative |
 | 4 | Median bases: the advisor's conjecture that crossing (squares) and local views with refinement suffice there; the Mycielski simplex graphs as the test | 1/3 | 1/3 | κ of small Mycielski graphs → stop at a pair or a proof | Alternative |
 
-**Corrections:** none.
+**Corrections:** none at the close; after the referee, three Narrowings and one Not a block entry, logged.
 
 **Goals:** G16 checkpoint (capability gained: one round of refinement recovers the orders on small grown bases, with proved limits)
 and G1 checkpoint (no demonstrated advance); no goal changed.
@@ -166,6 +183,8 @@ and G1 checkpoint (no demonstrated advance); no goal changed.
 **Assumptions:** A97 gains this study; no new entry.
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its claims at nine were narrowed after the referee (see Referee).*
 
 **Outcome:** the number of orders of a grown base sits in how the starts' growths are arranged against each other. Take each
 start's counts together with every other start's counts, tagged by distance. One round of that tells apart all 59,675 grown bases

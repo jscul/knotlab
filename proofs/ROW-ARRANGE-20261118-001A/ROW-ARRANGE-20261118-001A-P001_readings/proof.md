@@ -16,7 +16,7 @@ start, start marked, up to renaming).
 Each round of 1-WL keeps the previous colour, so a, read off round one, is a function of W2, and W2 of WL. N1 is a function of W2:
 the round-two colour of x lists every (count, row) pair, from which the least count and the rows at it are read. B_r with r at least
 the largest count is the full table, and for bases of complement-closed three-place constraints the full table with N determines
-the base (`DISTANCE-ORDER-20261117-001A`, statement 3(a)), hence k and λ. ∎ (Checked on the 101 classes at n = 6.)
+the base (`DISTANCE-ORDER-20261117-001A`, statement 1: a betweenness knot holds exactly when its counts add), hence k and λ. ∎ (Checked on the 101 classes at n = 6.)
 
 ## R1. Every partial cube is a base (the advisor's lemma)
 
@@ -37,7 +37,7 @@ of ring 2. The crossing graph is a clique of a and a clique of b: k = max(a, b).
 
 Fix r (in count units; the view of x is every point within r/2 steps). Let a, b, c, d ≥ r with a + b = c + d. A point at more than
 r/2 steps from p sees a run of r + 1 consecutive points of one ring, the same table in all four rings. A point at t ≤ r/2 steps
-from p sees p's surroundings: four runs of at least r/2 points leaving p, the same table whatever the rings' lengths, and depending
+from p sees p and four runs leaving it, one of t + r/2 points and three of r/2 − t (corrected after the referee), the same table whatever the rings' lengths, and depending
 only on t. There is one point with t = 0 and four with each t = 1, …, r/2, in both bases, and the rest are runs. So F(a, b) and
 F(c, d) have the same n = 2(a + b) − 1, the same N, and the same multiset of views within count r, and k = max(a, b) against
 max(c, d). For every r, F(r, 3r) and F(2r, 2r) (n = 8r − 1) differ in k (3r against 2r) with equal views. This is Hanf's and
@@ -62,8 +62,8 @@ empty-set point is the whole table, so B_4 tells them apart: local views and col
 
 k is the least number of trees whose product holds a median graph (Bandelt and van de Vel 1989), and deciding three is
 NP-complete. Directly: three-colouring graphs without triangles is NP-complete, and H ↦ κ(H) is computed in polynomial time with
-k(κ(H)) = χ(H) (R3); the count table of κ(H) is twice its graph distance. So no reading computable in polynomial time determines k
-on every base unless P = NP. λ, by contrast, is a maximum matching (Eppstein 2005). ∎ (A hardness statement only.)
+k(κ(H)) = χ(H) (R3); the count table of κ(H) is twice its graph distance. So k cannot be computed from the table in polynomial time
+unless P = NP (the table does determine k, R0; narrowed after the referee). λ, by contrast, is a maximum matching (Eppstein 2005). ∎ (A hardness statement only.)
 
 ## R5. Distinct rows suffice for W2 (the advisor's remark)
 

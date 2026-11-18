@@ -2672,11 +2672,13 @@ evidence: results and their status come from the records each entry links.
   orders and a comb of one grow identically (proved), and every start's growth taken together, read without names, merges bases
   of two and three orders from seven distinctions (computed), while the full table keeps them (narrowed after the referee). So the orders sit in the count's arrangement, which start's row is
   which, not in its growth.
-  `ROW-ARRANGE-20261118-001` ([decision note](../research/ROW-ARRANGE-20261118-001/row_arrange.md); referee pending) located
+  `ROW-ARRANGE-20261118-001` ([decision note](../research/ROW-ARRANGE-20261118-001/row_arrange.md); refereed) located
   them: one round of reading each start's growth against every other's, tagged by count, tells apart every grown base to eight
-  distinctions and every one reached at nine, so it recovers the orders there (computed); no local view does (reach 8 to 10 here,
+  distinctions and every base in three samples at nine, so it recovers the orders there (computed; a complete invariant there, not
+  special to orders); no local view does (reach 8 to 10 here,
   and for every reach two rings sharing a distinction fool it, proved); no fixed round does in general (simplex graphs of rings,
-  proved), and the number of orders is NP-hard to read from the full table (classical). Distance holds it, at a cost.
+  proved), and the number of orders cannot be read from the full table in polynomial time unless P = NP
+  (classical). Distance holds it, at a cost.
   `CUMULANT-DIST-20261118-001` ([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md); referee pending, B200)
   found one distance for both laws: the least number of extra distinctions a set holding the pair needs, plus −log₃ of how
   strongly the set is bound beyond its parts (its joint cumulant). It gives one step per knot under parity and not-all-equal

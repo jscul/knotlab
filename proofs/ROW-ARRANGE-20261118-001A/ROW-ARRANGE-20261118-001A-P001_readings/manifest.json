@@ -7,7 +7,7 @@
  "kind": "proof",
  "status": "Proved",
  "title": "What colour refinement and local views of the count table cannot see",
- "claim": "R0: the ladder of readings (a <= N1, W2 <= WL; B_r up to the full table, which determines the base). R1: every partial cube is a base (its betweenness solution set is its halfspaces). R2: F(a,b), two rings sharing a point, has k = max(a,b); for every count r, F(r,3r) and F(2r,2r) have equal views within count r and k = 3r against 2r, so no bounded-count reading determines k. R3: kappa(C10) and kappa(C5+C5) (simplex graphs, median, n = 21) agree under a, N1, W2 and 1-WL and have k = 2 against 3; B4 separates them, so local views and colour refinement are incomparable. R4 (classical): k from the table is NP-hard (Bandelt-van de Vel; via kappa and triangle-free 3-colouring); lambda is a matching. R5: distinct rows make W2 complete. R6: rings of arcs, split systems that are not bases, do the same.",
+ "claim": "R0: the ladder of readings (a <= N1, W2 <= WL; B_r up to the full table, which determines the base). R1: every partial cube is a base (its betweenness solution set is its halfspaces). R2: F(a,b), two rings sharing a point, has k = max(a,b); for every count r, F(r,3r) and F(2r,2r) have equal views within count r and k = 3r against 2r, so no bounded-count reading determines k. R3: kappa(C10) and kappa(C5+C5) (simplex graphs, median, n = 21) agree under a, N1, W2 and 1-WL and have k = 2 against 3; B4 separates them, so local views and colour refinement are incomparable. R4 (classical): k cannot be computed from the table in polynomial time unless P = NP (Bandelt-van de Vel; via kappa and triangle-free 3-colouring); lambda is a matching. R5: distinct rows make W2 complete. R6: rings of arcs, split systems that are not bases, do the same.",
  "standard_statement": "Weisfeiler-Leman refinement and Hanf-Gaifman locality on split metrics of partial cubes; simplex graphs; tree number of median graphs.",
  "prior_work": "COUNT-BALLS-20261118-001 (reading a fails from n = 7); DISTANCE-ORDER-20261117-001 (the table determines these bases); REFINE-READ-20261107-001 (colour refinement on another object); classical: Weisfeiler-Leman, Cai-Furer-Immerman, Hanf, Gaifman, Djokovic-Winkler, Bandelt-van de Vel, Eppstein, Prowse-Woodall.",
  "dependencies": [],
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proofs written with the run, several proposed by the advisor and checked; referee pending",
+  "status": "proofs written with the run; refereed R1 (confirmed with fixes, no Block)",
   "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
   "novelty": "classical in substance (locality, 1-WL, tree number) read in the program's terms"
  },

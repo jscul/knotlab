@@ -407,11 +407,12 @@ counts keeps them. Read on states instead, "the states within r disagreements of
 a state" cannot tell a base from its translate by one of its own states
 ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md)).
 Where, then, are the orders (`ROW-ARRANGE-20261118-001`, proofs and frozen
-computation, referee pending)? In how the starts' growths sit against each
+computation, refereed)? In how the starts' growths sit against each
 other. Read each start's growth together with every other start's, each tagged
 by its count from the start: one such round tells apart every base grown to
-eight distinctions, and every one reached at nine, so it reads the number of
-orders there. What each start sees nearby does not: the view must reach almost
+eight distinctions, and every base in three samples at nine, so it reads the
+number of orders there (it tells almost everything apart, as colour refinement
+does, so this is not special to orders). What each start sees nearby does not: the view must reach almost
 across the base, and two rings sharing one distinction look the same from every
 start, at every reach, while their orders differ (proved). Nor does any fixed
 number of rounds in general (the literature's simplex graphs of a ring of ten

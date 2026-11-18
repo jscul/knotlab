@@ -1,17 +1,8 @@
 {
-  "schema_version": 1,
-  "id": "COPY-CLASS-20261118-001",
-  "title": "What SEED's copy step reads",
-  "kind": "epic",
-  "parent": null,
-  "status": "Planned",
-  "status_class": "planned",
-  "objective": "COPY-READ-20261118-001's referee found every copy step in one closure class, with about 55 refused fills per absorbing one; the coordinator asked what separates them inside it. By MID-RULE E1 every new crossing joins a split separating one end pair to a split separating the other, so SEED's verdict can be read on those splits and the crossers of a model split. Test a frozen local rule (model among the splits of the end pair that shares a distinction with the middle pair) as a classifier against SEED on every crossing-making fill, with the refusals broken down, from bracketings of 5 to 8 and lines of 12. Serves G1 and G16; challenges A101.",
-  "dependencies": [],
-  "dependency_text": "",
   "acceptance_gate": "",
   "completion_gate": "",
-  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "dependencies": [],
+  "dependency_text": "",
   "fields": {
     "groups": [
       "holes-and-proofs"
@@ -21,9 +12,18 @@
       "COPY-READ-20261118-001#2"
     ]
   },
+  "id": "COPY-CLASS-20261118-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "COPY-READ-20261118-001's referee found every copy step in one closure class, with about 55 refused fills per absorbing one; the coordinator asked what separates them inside it. By MID-RULE E1 every new crossing joins a split separating one end pair to a split separating the other, so SEED's verdict can be read on those splits and the crossers of a model split. Test a frozen local rule (model among the splits of the end pair that shares a distinction with the middle pair) as a classifier against SEED on every crossing-making fill, with the refusals broken down, from bracketings of 5 to 8 and lines of 12. Serves G1 and G16; challenges A101.",
   "ownership": {
-    "scope_id": "COPY-CLASS-20261118-001",
-    "root": true
+    "root": true,
+    "scope_id": "COPY-CLASS-20261118-001"
   },
-  "legacy": {}
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-18 (Successful; referee pending): SEED's copy step is decided by the splits separating the fill's two end pairs and a model's crossers (proved); the frozen local rule looked for the model in the wrong end pair and failed on all 850 copy steps, while the swapped rule (model among the crossed splits of the end pair not touching the middle pair) agreed with SEED on all 85,202 crossing-making fills, found post hoc on a fifth of the starts and held out on the rest. It names only the fill's own pairs but reads a model's crossers, a whole order in a full grid. 2 of 5 predictions held.",
+  "status_class": "complete",
+  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "title": "What SEED's copy step reads"
 }

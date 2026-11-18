@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "COPY-CLASS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "COPY-CLASS-20261118-001Z",
+ "proof": "COPY-CLASS-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing COPY-CLASS-20261118-001: ticket A (C1-C3: new crossings join the two end pairs' splits; SEED's verdict is decided on those splits and a model's crossers; in a full grid a model's crossers are a whole order) and ticket B (frozen computation, 2 of 5 held): the frozen local rule failed on all 850 copy steps (roles swapped); post hoc, the swapped rule agreed with SEED on all 85,202 extensions (found on a fifth of the starts, held out on the rest). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/COPY-CLASS-20261118-001B/COPY-CLASS-20261118-001B-E001_class/contract.json": "Frozen",
+   "artifacts/COPY-CLASS-20261118-001B/COPY-CLASS-20261118-001B-E001_class/results.json.gz": "run output",
+   "proofs/COPY-CLASS-20261118-001A/COPY-CLASS-20261118-001A-P001_model/manifest.json": "Proved",
+   "proofs/COPY-CLASS-20261118-001A/COPY-CLASS-20261118-001A-P001_model/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

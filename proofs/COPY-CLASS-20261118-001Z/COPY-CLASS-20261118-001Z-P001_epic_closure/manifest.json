@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "COPY-CLASS-20261118-001Z-P001",
+ "canonical_id": "COPY-CLASS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "COPY-CLASS-20261118-001Z",
+ "proof": "COPY-CLASS-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: what SEED's copy step reads",
+ "status": "Proved",
+ "claim": "Ledger closing COPY-CLASS-20261118-001: ticket A (C1-C3: new crossings join the two end pairs' splits; SEED's verdict is decided on those splits and a model's crossers; in a full grid a model's crossers are a whole order) and ticket B (frozen computation, 2 of 5 held): the frozen local rule failed on all 850 copy steps (roles swapped); post hoc, the swapped rule agreed with SEED on all 85,202 extensions (found on a fifth of the starts, held out on the rest). Referee pending. No new claim.",
+ "dependencies": [
+  "COPY-CLASS-20261118-001A",
+  "COPY-CLASS-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "COPY-CLASS-20261118-001",
+  "epic_path": [
+   "COPY-CLASS-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/COPY-CLASS-20261118-001B/COPY-CLASS-20261118-001B-E001_class/contract.json": "df194b5340091b14ce233032d793abed6a5532db700dbb098265eea714ae4eaa",
+  "artifacts/COPY-CLASS-20261118-001B/COPY-CLASS-20261118-001B-E001_class/results.json.gz": "8d8eba993bf64fcc0757a8d01cac860b62c93b67348bd51c34c3dc0b720910e6",
+  "proofs/COPY-CLASS-20261118-001A/COPY-CLASS-20261118-001A-P001_model/manifest.json": "3bac79f737708461e61566fa731379dca29f6be10a76a398730875fbceca1e9d",
+  "proofs/COPY-CLASS-20261118-001A/COPY-CLASS-20261118-001A-P001_model/result.json": "8404dc2d3e230cbd199ef8f63687b3a6c6092a853221d3177fd336f793dff021"
+ },
+ "paths": {
+  "manifest": "proofs/COPY-CLASS-20261118-001Z/COPY-CLASS-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/COPY-CLASS-20261118-001Z/COPY-CLASS-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/COPY-CLASS-20261118-001Z/COPY-CLASS-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/COPY-CLASS-20261118-001Z/COPY-CLASS-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/COPY-CLASS-20261118-001Z/COPY-CLASS-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/COPY-CLASS-20261118-001Z/COPY-CLASS-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-17; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

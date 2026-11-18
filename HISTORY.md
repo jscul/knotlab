@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the bracketing study confirmed by its referee; one reading narrowed, one scope named
+
+- The study of why the line of five's placements differ (`MEET-ORDERS-20261118-001`) was confirmed by its referee with fresh code,
+  with no Block. The proofs hold, and every number reproduces, Theorem 1 one size past included
+  ([decision note](research/MEET-ORDERS-20261118-001/meet_orders.md)).
+- Narrowed: the counts that follow the meeting pattern do not tell every pattern apart (12 patterns share 8 sets of values at
+  eight distinctions); that one pattern grows alike wherever it sits holds, and a second study takes it to nine
+  ([decision note](research/MEET-GROW-20261118-001/meet_grow.md)).
+- Scoped (not a block): the bracketing account is about presentations with the fewest knots; one knot more than needed changes the
+  chances and mixes the placements. The third-step reading is marked computed, the proof gains one case, and the phylogenetics count
+  of minimal rooted-triple sets is cited.
+
 ## 18 November 2026: why the line of five's placements differ in the number of orders; one wording corrected
 
 - A new study (`MEET-ORDERS-20261118-001`, referee pending) explains the cap study's five-starts. The fewest-knot presentations of

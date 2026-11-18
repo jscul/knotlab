@@ -113,15 +113,18 @@ say), they are {y, c, b} and {a, y, b}.
 2. *Compression.* Merge the steps of each segment. Compatibility, covering (every state pinned), irredundancy and "adds no
    state" are statements about the pins segment by segment, so they hold before iff after. "Not a copy" also: r is constant on
    segments, so r equals a line distinction i only if i ∈ P, and equals q iff it does after (a, c, b ∈ P).
-3. *Pull-back.* The pairs a knot set uses, with κ's pairs, are co-knotted in the bracketing, so as chords of the polygon they do
-   not cross; after compression they still do not, and complete to a bracketing T′ of the compressed line (at most 11
+3. *Pull-back.* The line pairs a knot set uses, with κ's pairs, are co-knotted in the bracketing, so as chords of the polygon
+   they do not cross (the pairs holding q, namely (q, a), (q, c) and (q, b), are not chords and compression keeps them); after compression they still do not, and complete to a bracketing T′ of the compressed line (at most 11
    distinctions) that contains κ′ and the set's pairs. So every option of the big presentation is an option of a small one, and
    conversely for a set whose positions are all in P. A set of kind F or E in T′ uses all three pairs of a knot of T′ (F) or, with
    κ's shared pair, all three pairs of a knot sharing a pair with κ (E); those pairs are co-knotted in T, so the knot exists in T
    (Lemma 0). This is the advisor's point: the check records that the E sets use the two pairs of ν other than the shared one.
 4. *Finite check* (ticket B, M1): every bracketing with n0 = 4 to 11 distinctions and every first knot: the options are exactly
    the sets above, one per other knot and two per knot sharing a pair, with the stated odd sets. With 1 to 3, this proves the
-   lemma for every n. ∎ *(Run on 18 November 2026: 6,916 of 6,916 bracketings, every first knot, no exception.)*
+   lemma for every n. When a = 0, b = m and the set uses only κ's and q's pairs, the compressed line has three distinctions; the
+   line of three's cheapest second step costs 2 (its referee's check, 40 options), so no zero-cost set compresses there and nothing
+   is missed. ∎ *(Run on 18 November 2026: 6,916 of 6,916 bracketings, every first knot, no exception. The line-of-three case added
+   after the referee, R1.)*
 
 **Verdicts, by Lemma C.**
 - (F) τ step-disjoint from κ: neither middle lies strictly between the other's ends: two orders. τ within a half of κ (or κ
@@ -167,5 +170,7 @@ the knots lie within one another, the fewer second fills are step-disjoint, and 
 ## Known mathematics, labelled
 
 Triangulations, bracketings and binary trees (Catalan); lattice dimension and chains of splits (Eppstein 2005); rotations
-(Sleator, Tarjan and Thurston). Local: Lemma 0's characterization of betweenness presentations, Lemmas A to C for KF3, and the
-formula.
+(Sleator, Tarjan and Thurston). The count n − 2 matches phylogenetics' minimal sets of rooted triples defining a binary tree
+(Steel; Grünewald, Steel and Swenson 2007), for a different object; order-theoretic betweenness (Opatrny 1979) needs only the
+consecutive triples, which do not present the line's states. Local: Lemma 0's characterization of betweenness presentations of the
+cuts (not found in the literature so far), Lemmas A to C for KF3, and the formula.

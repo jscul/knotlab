@@ -2614,8 +2614,8 @@ evidence: results and their status come from the records each entry links.
   `LOCAL-ROOM-20261118-001` ([decision note](../research/LOCAL-ROOM-20261118-001/local_room.md); referee pending) showed that no
   reach limit read from the states holds two orders and fills them, and that one remembered class per split does: knots only
   across the two classes grow full two-way grids forever.
-  `MEET-ORDERS-20261118-001` ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md); referee pending) found
-  which information that is. The fewest-knot presentations of a line are its bracketings, which knot lies within which half of
+  `MEET-ORDERS-20261118-001` ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md); refereed) found
+  which information that is, for fewest-knot presentations (one redundant knot changes the chances; A100). The fewest-knot presentations of a line are its bracketings, which knot lies within which half of
   which (proved), and under KF3 the chance of two orders after the second new distinction is an exact formula in the bracketing
   read without halves (proved): 5/12 for chains (shared distinction at an end or next to an end), 11/18 when the knot holding both
   ends holds one knot in each half. That reading decides the whole distribution through the third new distinction, and the
@@ -2772,6 +2772,12 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Add redundant knots to a bracketing (a knot whose rule the others already imply) and rerun KF3: knot-locality
   reads the extra co-knotted pairs, so the order distribution can change with the states and the bracketing fixed. Then try
   presentations of the 2 × 2 pattern or of a branching tree.
+  First result (`MEET-ORDERS-R1`, 18 November 2026): adding one redundant knot to a five-start (the states unchanged, co-knotted
+  pairs added) changes KF3's chance of two orders at n = 7 in all 21 cases tried, by 0.04 to 0.33, and the placements no longer
+  sort by bare bracketing (371/600 and 1523/2352 occur for both chains and the middle). The bracketing account holds for
+  fewest-knot presentations only; with extra knots, how the knots meet is more than the bracketing.
 - **History.**
+  - 2026-11-18 · `MEET-ORDERS-R1`: material (one redundant knot changes the second-step chance in 21 of 21 cases); status
+    unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001` built on it (the same population and rule); status unchanged.
   - 2026-11-18 · Added by `MEET-ORDERS-20261118-001`.

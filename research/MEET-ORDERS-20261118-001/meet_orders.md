@@ -1,7 +1,8 @@
 # Why how the knots meet changes the number of orders
 
 Epic `MEET-ORDERS-20261118-001`, 18 November 2026, by Claude, on the coordinator's pick. It takes the second direction of
-`KNOT-CAP-20261117-001` (why the five-starts differ in the number of orders). Goals G1 and G16; tests A97. Referee pending.
+`KNOT-CAP-20261117-001` (why the five-starts differ in the number of orders). Goals G1 and G16; tests A97. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no
+Block, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `d636345d9` at 02:40 UTC on 18 November. The run
@@ -23,7 +24,9 @@ set of line distinctions whose parity it takes while nothing has added a state.
   is a bracketing: each knot B(a, c, b) has its middle c between a and b, and each knot but the ends' knot lies directly within
   one half of exactly one other (Lemma 0, both directions; the literature's triangulation of a polygon, rooted at the side that
   joins the line's ends). The states are the same for all of them; which knot lies within which is how the knots meet, read
-  against the line.
+  against the line. *Scoped after the referee:* this holds for fewest-knot presentations. One redundant knot (the states
+  unchanged) moves the five-starts' chance at n = 7 in all 21 cases tried, by 0.04 to 0.33, and the placements then no longer sort
+  by bare bracketing (A100).
 - **The shared distinction's place is a proxy for the bracketing** (proved). Per labelling, the line of five has five
   presentations:
   - **at an end** (two of them): a chain, each knot directly within the next, lying the same way;
@@ -65,7 +68,9 @@ set of line distinctions whose parity it takes while nothing has added a state.
   What holds instead, for every presentation of 5, 6 and 7 distinctions: the number of labelled bases at each new distinction and
   how much weight has a new distinction whose odd set has five members depend exactly on the meeting pattern itself, read as an
   abstract pattern (which knots share which distinctions, up to renaming, the line ignored). Each meeting pattern has its own
-  values (1, 3 and 4 patterns for n0 = 5, 6, 7), whatever its bracketing. So how the knots meet works twice:
+  values (1, 3 and 4 patterns for n0 = 5, 6, 7), whatever its bracketing. *Narrowed after the referee:* one size past (eight
+  distinctions, to n0 + 3) every pattern still has one set of values, but the 12 patterns share 8, so these counts do not tell
+  every pattern apart; the patterns' laws of growth do (`MEET-GROW-20261118-001`, P2). So how the knots meet works twice:
   - the meeting pattern alone decides how the growth branches;
   - the same pattern placed against the line (the bracketing) decides how many orders the branches carry.
 
@@ -120,9 +125,15 @@ pair of bits swapped between them.
   the first with a neighbour. A rule that reads only the states could fill any of the C(n, 3) triples.
 
 Known mathematics, labelled: triangulations, bracketings and binary trees (Catalan); lattice dimension by chains of splits
-(Eppstein 2005); rotations of binary trees (Sleator, Tarjan and Thurston). The phylogenetics analogue, minimal sets of rooted
-triples that define a binary tree, is noted for the referee to compare. Local: Lemma 0's characterization of betweenness
-presentations (not found in two searches), Lemmas A to C for KF3, Theorem 1, and the census.
+(Eppstein 2005); rotations of binary trees (Sleator, Tarjan and Thurston 1988). *Added after the referee:* the count n − 2 matches
+phylogenetics, where every rooted binary tree on n leaves is defined by n − 2 rooted triples and all minimal defining sets have
+that size (Steel; characterised by Grünewald, Steel and Swenson 2007); the object differs, since there one tree has many minimal
+triple sets and here one line has many minimal presentations, exactly its triangulations. It also differs from order-theoretic
+betweenness (Opatrny 1979), where the n − 2 consecutive triples fix the order: in this semantics they do not present the line's
+states (B(0,1,2) and B(1,2,3) allow 0110). What this view adds: the states hold the line, and how its knots meet is a
+triangulation the states do not show, which the growth reads through co-knotted pairs. Local: Lemma 0's characterization of
+betweenness presentations of the cuts (proved here, not found in the literature so far), Lemmas A to C for KF3, Theorem 1, and
+the census.
 
 An observation on the earlier design: `KNOT-CAP-20261117-001` chose the five-starts as "the closest five-distinction analogue of
 the fan and non-fan". The two comparisons are of opposite kinds. The fan and non-fan of six are two meeting patterns with one bare
@@ -142,19 +153,44 @@ bracketing; the five-starts are one meeting pattern with two. That is why the fi
 
 ## Limitations
 
-- Fewest-knot presentations of a line, betweenness knots, and one rule (KF3). Presentations with extra knots, other knot kinds and
-  other weightings are untested.
+- Fewest-knot presentations of a line, betweenness knots, and one rule (KF3); other knot kinds and weightings are untested. Extra
+  knots matter (the referee): one redundant knot changes the second-step chance in all 21 cases tried and mixes the placements,
+  so the bracketing account is a statement about fewest-knot presentations (A100).
 - The proof covers the first two new distinctions. The third-step blindness and the fourth-step order are computed, exact, for
   every presentation of 5 to 9 distinctions only.
-- The meeting-pattern layer is post hoc and covers 5 to 7 distinctions.
+- The meeting-pattern layer is post hoc and covers 5 to 7 distinctions here; that the pattern decides the branching holds one size
+  past (the referee, and `MEET-GROW-20261118-001` to nine), that each pattern has its own counts does not.
 - Ties at n0 + 4 from n0 = 8 show the fourth-step distribution sees the bracketing's order only partly; what it sees is open.
 
+
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh exact code (nothing imported from
+`melib.py`): confirmed with fixes, no Block.
+- Lemmas 0, A, B and C and Theorem 1 hold, checked by hand. The referee's own engine reproduces Theorem 1 on every bracketing of 4
+  to 9 distinctions (624) and on 200 random bracketings each of 10 and 11 and 120 of 12, the five-starts to the last digit, the
+  n0 = 8 tie (identical through n = 12, 34,520 labelled bases each), the six-starts' labelled counts, and the KNOT-CAP correction.
+
+Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing** (of a post hoc reading). That the meeting pattern decides the branching holds one size past (12 of 12 patterns of
+   eight have one signature), but "each pattern has its own values" fails there (12 patterns, 8 signatures).
+2. **Not a block, but material** (A100). One redundant knot changes the five-starts' chance at n = 7 in all 21 cases, by 0.04 to
+   0.33, and values cross between the placements (371/600 and 1523/2352 occur for chains and for the middle). The bracketing
+   account is about fewest-knot presentations.
+3. **Not a block** (wording). "The knots nest" is the reason, proved at the second new distinction, computed through the third
+   (5 to 9 distinctions), and not the whole reason from the fourth, where the halves' order enters and ties appear. The intuition
+   entry now marks the third-step clause as computed.
+4. **Not a block** (the proof). Lemma B's proof now covers the case where the compressed line has three distinctions (a = 0, b =
+   m, only κ's and q's pairs used): the line of three's cheapest second step costs 2, so it has no zero-cost option and nothing is
+   missed (the referee's check); and the pull-back says that q's pairs are not chords.
+5. **Not a block** (literature). Steel and Grünewald–Steel–Swenson for the n − 2 count, and the difference from order-theoretic
+   betweenness, cited once with what this view adds.
 
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: why the shared distinction's place changes the number of orders | **Status:** Successful (referee pending) | The bracketing decides it: an exact formula after the second new distinction (proved), the bare bracketing through the third (computed to 9); 6 of 8 predictions held |
+| This attempt: why the shared distinction's place changes the number of orders | **Status:** Successful (refereed R1, confirmed with fixes) | The bracketing decides it: an exact formula after the second new distinction (proved), the bare bracketing through the third (computed to 9); 6 of 8 predictions held |
 | Local direction: how knots meet, read against the states | Continue | Two layers found: the meeting pattern decides the branching (post hoc), its placement the orders |
 | Broader exploration: what in how knots meet is information | Searching | Whether the bracketing or the meeting pattern is a distance (A97) is open |
 | Long-term goal: G16 Learning the rules behind what a system allows | Capability gained | The order distribution predicted exactly from the bracketing; G1 Space from a law: obstruction learned (nesting makes the third order) |

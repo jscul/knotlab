@@ -73,7 +73,10 @@ Epic `MEET-GROW-20261118-001`, 18 November 2026, by Claude, on the coordinator's
 
 - Computed, not proved: through n0 + 5 for five, n0 + 4 for six to eight, n0 + 3 for nine; P4 through n0 + 3. The twist is the
   advisor's reading.
-- Fewest-knot presentations of a line under KF3 only (A99, A100).
+- Fewest-knot presentations of a line under KF3 only (A99, A100). A100 is material: `MEET-ORDERS-20261118-001`'s referee found
+  that one redundant knot changes the orders' chances; whether it changes the pairs' law across placements is untested.
+- The coarse counts (labelled bases and odd-set weights) do not separate every pattern at eight (`MEET-ORDERS-20261118-001`'s
+  referee: 12 patterns, 8 signatures); P2 compares the pair-graph laws themselves, which do separate them.
 - Equality is tested by digests of exact distributions (24 hexadecimal characters of sha256), checked against a direct
   comparison on all ten pairs of five.
 
@@ -126,3 +129,16 @@ different meeting patterns already differ at the start. Not consulted after the 
 **Assumptions:** A97 under challenge, with this finding added; A99 and A100 gain this study among what rests on them; no new entry.
 
 **Basket:** read; `MEET-ORDERS-20261118-001#1` taken by this epic.
+
+## Final report as sent
+
+Posted in the project thread at about 03:57 UTC on 18 November 2026, together with the fold-in of `MEET-ORDERS-20261118-001`'s
+referee (the tables are those of the Position section above, with the directions shortened):
+
+> **Second study done (referee pending): under KF3 the meeting pattern grows on its own.** Take any two presentations of a line
+> whose knots form the same pattern, read as sets of distinctions with the line ignored. One renaming then carries the whole law of
+> the grown co-knotted pairs from one to the other, after every new distinction. That held for all 1,049 such pairs (lines of 5 to
+> 9) and also state by state, not just on average. Only the number of orders depends on where the pattern sits along the line. All
+> 4 predictions held.
+>
+> Goals: G16 and G1 checkpoints. Assumptions: A97 under challenge with both findings; A100 gains its first challenge result.

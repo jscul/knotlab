@@ -491,11 +491,13 @@ distinctions is an exact count of which knots lie within which (proved): 5/12
 when the knots form a chain, which they do with the shared distinction at an
 end or next to an end, and 11/18 when the ends' knot holds one knot in each
 half, the middle placement. Through three new distinctions only that nesting
-matters; which way a chain lies enters at the fourth, where next to an end
+matters (computed, five to nine distinctions); which way a chain lies enters at the fourth, where next to an end
 parts from the end (n = 9) and the two six-starts, both chains, part (n = 10).
 And the meeting pattern alone, with the line ignored, decides how the growth
 branches (post hoc): the knots meet twice, once in how they share
-distinctions and once in how that pattern sits along the states
+distinctions and once in how that pattern sits along the states. All this is
+for the fewest knots: one knot more than needed changes the chances and mixes the
+placements (its referee)
 ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md)).
 Does the meeting pattern then grow on its own (`MEET-GROW-20261118-001`,
 frozen computation, referee pending)? Yes, as far as computed: from any two

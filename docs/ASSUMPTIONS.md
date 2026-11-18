@@ -158,6 +158,8 @@ evidence: results and their status come from the records each entry links.
 | [A101](#a101--the-number-of-orders-a-growth-rule-keeps-is-given-two) | The number of orders a growth rule keeps is given: two | scope | Under challenge |
 | [A102](#a102--an-endless-bases-counts-are-read-in-its-maximal-entropy-weighting) | An endless base's counts are read in its maximal-entropy weighting | reading | Assumed |
 | [A103](#a103--a-bases-values-are-data-which-value-is-called-1-is-part-of-the-base) | A base's values are data: which value is called 1 is part of the base | reading | Assumed |
+| [A104](#a104--parity-growth-is-judged-under-the-complete-round-joining-rule) | Parity growth is judged under the complete-round joining rule | scope | Assumed |
+| [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
 
 ## Entries
 
@@ -3043,3 +3045,42 @@ evidence: results and their status come from the records each entry links.
   equivalence takes a corner's neighbour to the far corner, so something value-free distinguishes them there.
 - **History.**
   - 2026-11-18 · Added by `CUMULANT-DIST-20261118-001`.
+
+### A104 · Parity growth is judged under the complete-round joining rule
+
+**Assumed** · 2026-11-18 · scope
+
+- **Statement.** Growth of parity bases from one knot is studied under the joining rule of `CUBIC-FROM-A-KNOT-20261117-001`
+  applied in complete rounds: every set of current junctions that pairwise share a parent and share none all together is joined
+  at once, every pair so placed and in no such set is joined, and every other loose distinction gets a junction of its own; a round
+  is unavailable when some junction has too few loose distinctions. The count rule decides only the number of fresh distinctions.
+- **Why.** Taken by default from the cubic study by `FRESH-COUNT-20261118-001`, which asked what the fresh count decides with the
+  rule fixed. The serial rule, adding one junction at a time, never stalls and admits trees (the cubic study's own remark), so it
+  constrains nothing the study measured.
+- **Rests on it.** Every result of `FRESH-COUNT-20261118-001`
+  ([decision note](../research/FRESH-COUNT-20261118-001/fresh_count.md)): the grown pattern is the ideals of the descent order, one
+  count for every join must equal the first knot's size, the cap of three picks three, the fewest counts close one knot into the 2^a
+  pattern.
+- **Challenge.** A serial or asynchronous rule that reads only bond distances and joins whatever its own test allows: does any such
+  rule avoid trees without the complete round, and what does it build? The cheapest discriminator is the serial rule with a
+  distance-only preference (join before extending) from one knot, compared with the complete round on the same seeds.
+- **History.**
+  - 2026-11-18 · Adopted by `FRESH-COUNT-20261118-001`.
+
+### A105 · A growth starts from the smallest knot
+
+**Assumed** · 2026-11-18 · working premise
+
+- **Statement.** A growth from one knot starts from the smallest knot of its law: under parity, the three-place parity knot, two
+  loops' distinctions and one contact.
+- **Why.** Taken by default from the cubic study, which started from one three-place parity knot, and from the foundation's knot of
+  two loops and one contact (A2). `FRESH-COUNT-20261118-001` proved that one fresh count for every join must equal the first knot's
+  size, so the dimension of that growth is the first knot's size, and three only for a three-place first knot. A four-place parity
+  knot also passes K1–K3.
+- **Rests on it.** "From the smallest knot, one count gives dimension three" (`FRESH-COUNT-20261118-001`,
+  [decision note](../research/FRESH-COUNT-20261118-001/fresh_count.md)); the cubic study's choice of three fresh distinctions.
+- **Challenge.** Give a native reason why the first knot should be the smallest, for instance the cheapest knot by allowed states
+  (2^(a−1) for a places), or a competition between first knots of different sizes in one base, and test whether the three-place
+  knot wins; or show that nothing in the law prefers it, which leaves the number a choice of start.
+- **History.**
+  - 2026-11-18 · Recorded by `FRESH-COUNT-20261118-001`.

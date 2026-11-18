@@ -2639,14 +2639,14 @@ evidence: results and their status come from the records each entry links.
   bare bracketing; with the distinctions' names, chiefly the order in which the new ones came, they carry all of it at five and
   0.91 at six; in law they carry all of it from the first new distinction. So the share the unnamed distances miss is held in the
   order of growth, which is history, not distance. `MEET-HIST-20261118-001`
-  ([decision note](../research/MEET-HIST-20261118-001/meet_hist.md); referee pending) located it: the order of growth carries most
-  of the missing share (0.07 to 0.49), knowing which distinctions are the line's little (0.005 to 0.30), and the order is not
-  readable from the states even with the line named (0.9 to 3.9 bits); the knots record the nesting directly.
+  ([decision note](../research/MEET-HIST-20261118-001/meet_hist.md); refereed) located it: what the distances miss is a small part
+  of the order of growth (it adds 0.07 to 0.49 of the share, 0.22 to 0.36 bits), and that part is not in the states even with the
+  line named (the order is 85 to 90% undetermined by them); knowing which distinctions are the line's adds 0.005 to 0.30.
   In the finite pure parity growth family, bond distances through five determine every junction and the full set of next joins at every size. This includes the cubic rounds and all legal serial rearrangements. All 552 presentations through seven junctions were independently checked within the task. [Proof and checks](../research/BOND-NEXT-JOIN-20261117-001/next_joins.md)
   With the original eight betweenness distinctions attached, two mixed presentations have identical full states on the same 36 distinctions. One permits a complete next round of eleven joins and the other cannot run a complete round. The difference persists through one more common join. [Proof and checks](../research/MIXED-NEXT-JOIN-20261117-001/hidden_eight.md)
 - **History.**
-  - 2026-11-18 · `MEET-HIST-20261118-001`: the share the distances miss is mostly the order of growth, not readable from the
-    states (computed); status unchanged.
+  - 2026-11-18 · `MEET-HIST-20261118-001`: the share the distances miss is a small part of the order of growth, not in the
+    states (computed; reworded by its referee); status unchanged.
   - 2026-11-18 · `MIXED-NEXT-JOIN-20261117-001` proved that the full states can lose which distinctions the growth rule has used, even with the original eight identified.
   - 2026-11-18 · `BOND-NEXT-JOIN-20261117-001` proved a constructive positive case for pairwise bond distance at every finite stage of the specified pure parity growth law.
   - 2026-11-18 · `MEET-DIST-20261118-001`: one grown base's unnamed distances carry part of the nesting, the order of growth

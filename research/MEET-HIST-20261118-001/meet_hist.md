@@ -1,7 +1,8 @@
 # Can the order of growth be read from a grown base without names?
 
 Epic `MEET-HIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes `MEET-DIST-20261118-001`'s
-first direction as regraded after that study's referee's Block. Goal G16; tests A97. Referee pending.
+first direction as regraded after that study's referee's Block. Goal G16; tests A97. Refereed: report [R1](referee-R1/report.md), confirmed with fixes (wording), no Block, folded in on
+18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `625cfd109` at about 04:48 UTC on 18 November. The
@@ -11,8 +12,9 @@ first direction as regraded after that study's referee's Block. Goal G16; tests 
 
 ## The answer
 
-- **The share of the knots' nesting that one grown base's unnamed states miss is carried mostly by the order of growth, and that
-  order cannot be read from the states, even with the line's distinctions named** (computed, exact, every presentation of 5 to 8
+- **What one grown base's distances miss of the knots' nesting is a small part of the order of growth, and that part is not in the
+  states, even with the line's distinctions named** (computed; *reworded after the referee*: first "carried mostly by the order of
+  growth, and that order cannot be read", exact, every presentation of 5 to 8
   distinctions; prior uniform over labelled presentations). Shares of the information about the bare bracketing, read three ways:
 
   | Line of, k | Unnamed | The line's distinctions named | All named (the order of growth too) |
@@ -25,18 +27,23 @@ first direction as regraded after that study's referee's Block. Goal G16; tests 
   - Knowing which distinctions are the line's adds 0.005 to 0.30 (H3); the order of growth among the new ones adds more, 0.07 to
     0.49, at every k ≥ 2 (H4).
   - With all names the share keeps rising with k; without them it falls after a peak (for five to seven).
-  - The order is not readable from the states with the line named: its conditional entropy is 0.9 to 3.9 bits at k = 2 to 4 (H1),
-    and it grows with k.
-- **Through the knots it is immediate** (settled by construction): the grown base's knots include the presentation's own, so
-  reading which knots meet gives the nesting at every k. The question is about the states, which here are the distances
+  - With the line named the order is mostly undetermined by the states: its conditional entropy is 0.9 to 3.9 bits at k = 2 to 4
+    (H1), 85 to 90% of its largest value log2 k! (0.895 of 1 bit, 2.20 of 2.58, 3.88 of 4.58 at five), so the states pin about 10
+    to 15% of the order (the referee).
+  - The nesting needs only a small part of the order: the information the order adds about the bare bracketing, given the named
+    line, is 0.22, 0.22 and 0.36 bits at five (0.22, 0.28 at six), 6 to 24% of the order's unread entropy, and that part is not
+    recorded in the states either (the referee).
+- **The starting knots are still there** (settled by construction): the grown base's knots include the presentation's own, so
+  reading them gives the nesting at every k; this says nothing about what the growth recorded. The question is about the states, which here are the distances
   (`DISTANCE-ORDER-20261117-001`, 3(a)).
 - **Naming the order names the line** (by construction; the sanity row held at every k): with the new distinctions marked and
   ordered, the line's distinctions are a chain of nested cuts that the states order up to reversal.
 
 **In the owner's terms.**
-- What one grown base's distances miss of how the knots nest is mostly the order in which its distinctions were added. That order
-  is history: the states and their distances do not record it, even when the line's own distinctions are known.
-- The knots record it at once: a base read with its knots shows how they nest.
+- What one grown base's distances miss of how the knots nest is a small part of the order in which its distinctions were added.
+  That part is history: the states and their distances do not record it, even when the line's own distinctions are known.
+- The starting knots, which a grown base still holds, show the nesting at once; whether the knots the growth added record it is
+  the next question.
 
 ## Predictions and verdicts
 
@@ -54,8 +61,8 @@ first direction as regraded after that study's referee's Block. Goal G16; tests 
 ## What it means for A97 and the goals
 
 - **A97** stays under challenge, with a sharper statement of what is not distance. The share of the nesting that one grown base's
-  distances miss is held mostly in the order of growth, which the states do not record even with the line's distinctions named;
-  the knots record the nesting directly. History and the knots' meeting are information that a single grown base's distances lack.
+  distances miss is a small part of the order of growth, which the states do not record even with the line's distinctions named.
+  History, and the starting knots themselves, are information that a single grown base's distances lack.
   (The foundation already says formation order alone is not physical time; this is about information, not time.)
 - **G16:** capability gained. The missing share decomposed exactly by which names carry it.
 
@@ -81,11 +88,25 @@ cd ../../..
 Consulted once before the freeze: the first H4 (the order named alone equals all named) holds by construction and became the
 sanity row; probabilities for H1 to H3; ties scored as failures. Not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with its own code: confirmed with fixes, no
+Block. Every number recomputes exactly (five to k = 4, six to k = 3), matching its `MEET-DIST-20261118-001` named numbers; the
+readings are right (NL's mirror quotient, NO's colouring, H(N | NL) = H(N) − H(NL), NO = N as a partition at every level), and NL
+equals knowing which distinctions are the line's (while no state is added the line's mutual counts stay twice their steps apart).
+Folded in the same day, logged as one Not-a-block entry in `docs/CORRECTIONS.md` and in knotlab's `HISTORY.md`:
+1. "The order cannot be read" is now "is mostly undetermined": 85 to 90% of its largest entropy; the states pin about 10 to 15%.
+2. The nesting needs only a small part of the order (0.22 to 0.36 bits, 6 to 24% of its unread entropy), and that part is not in
+   the states: "what the distances miss is a small part of the order of growth, and that part is not in the states".
+3. "The knots record the nesting directly" only says the starting knots are still there; presented as that.
+The referee's preview for B199 (not a frozen test): the co-knotted pairs the growth added, read alone as an unnamed graph with no
+states, carry almost none of the nesting (0 at five for every k ≤ 4; 0, 0.009, 0.040 at six).
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: is the order of growth readable from a grown base without names | **Status:** Successful (referee pending) | Not from the states, even with the line named; it carries most of the share the unnamed distances miss; 4 of 4 held |
+| This attempt: is the order of growth readable from a grown base without names | **Status:** Successful (refereed R1, confirmed with fixes) | Mostly undetermined by the states, even with the line named; a small part of it carries the missing share; 4 of 4 held |
 | Local direction: how knots meet as information under KF3 | Continue | Whether the new knots alone record the order, and the long-growth limits, are open |
 | Broader exploration: A97 against history | Unmapped | One rule; history as information not yet read in other growths |
 | Long-term goal: G16 Learning the rules behind what a system allows | Capability gained | The missing share located exactly |
@@ -103,7 +124,7 @@ sanity row; probabilities for H1 to H3; ties scored as failures. Not consulted a
   exclude the starting knots cleanly.
 - **#2, #3** as in `MEET-DIST-20261118-001`.
 
-**Corrections:** none.
+**Corrections:** three wording fixes from the referee (Not a block), logged; see Referee.
 
 **Goals:** a G16 checkpoint (capability gained); no goal changed; direction #1 filed as sub-goal B199.
 

@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: where the grown distances' missing share sits, confirmed by its referee; reworded
+
+- The study of which names carry the knots' nesting in a grown base (`MEET-HIST-20261118-001`) was confirmed by its referee: every
+  number recomputes ([decision note](research/MEET-HIST-20261118-001/meet_hist.md)).
+- Reworded (not a block): what one grown base's distances miss of the nesting is a small part of the order of growth, and that part
+  is not in the states; the order itself is mostly undetermined by them (85 to 90%), not unreadable; and "the knots record the
+  nesting" means only that the starting knots are still there.
+
 ## 18 November 2026: how much of the knots' nesting the grown distances hold; one reading withdrawn
 
 - The study of whether the knots' nesting becomes a distance (`MEET-DIST-20261118-001`) was checked by its referee with its own

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "proof_id": "TWO-PROBE-ALIGNMENT-20261118-001-P001",
+  "status": "Proved",
+  "theorem": "Two concurrent betweenness tests cannot guarantee the second connected junction if the rule must identify and move one pair at a time. A rule that may discharge or reconfigure both together on the current scalar bond table guarantees all 35 individual junctions of the literal first aligned round.",
+  "evidence_class": [
+    "exact-obstruction-or-countermodel",
+    "finite-constructive-policy"
+  ],
+  "requested_observation": "Only the current unmarked bond-distance matrix, under arbitrary renaming between decisions. Every permitted resolution must terminate.",
+  "strict_single_probe_change": {
+    "named_positions": 9083,
+    "physical_types": 225,
+    "full_matrix_classes": 73,
+    "second_join_guaranteed": false,
+    "hidden_state_advice_start_rank": 5,
+    "five_observation_solver_free_nodes": 1260,
+    "solver_free_losing_leaves": 1173
+  },
+  "joint_reconfiguration": {
+    "two_concurrent_tests": true,
+    "hidden_middle_labels": false,
+    "history_given_to_controller": false,
+    "permanent_junctions_per_join": 1,
+    "actions_at_most": [
+      8,
+      22,
+      33
+    ],
+    "total_actions_at_most": 63,
+    "clean_final_junctions": 35,
+    "clean_final_distinctions": 105,
+    "allowed_rows": "2^65",
+    "preserved_original_rows": 8,
+    "live_tests_at_end": 0
+  },
+  "validation_relation": {
+    "level": "V1",
+    "status": "V1-separate-algorithm-same-task",
+    "novelty": "unassessed",
+    "evidence": "Separate finite state and action enumerations, rank and reachable-cycle checks and a solver-free partial-policy certificate. Literal row projections check representative block and probe tables. All source input orbits and the two assembly interfaces are checked. External referee review is distinct."
+  },
+  "novelty": "unassessed",
+  "boundary": "Bounded first-round theorem. The weakest instrument achieving full alignment is open.",
+  "checks": {
+    "start": {
+      "script": "check_start.py",
+      "record": "start.json"
+    },
+    "audit": {
+      "script": "check_audit.py",
+      "record": "audit.json"
+    },
+    "block": {
+      "script": "check_block.py",
+      "record": "block.json"
+    },
+    "tail": {
+      "script": "check_tail.py",
+      "record": "tail.json"
+    },
+    "composition": {
+      "script": "check_compose.py",
+      "record": "composition.json"
+    },
+    "oracle": {
+      "script": "distance_oracle.py",
+      "record": "oracle.json"
+    }
+  }
+}

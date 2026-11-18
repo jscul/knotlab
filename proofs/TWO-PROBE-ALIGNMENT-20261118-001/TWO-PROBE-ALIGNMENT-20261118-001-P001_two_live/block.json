@@ -1,0 +1,125 @@
+{
+  "compiled_readings": 32,
+  "from_clean_first_horizontal_using_bulk": {
+    "individual_commands_only": false,
+    "maximum_commands": 22,
+    "maximum_live_pairs": 2,
+    "observed_stages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "permitted_operand_choices": 78,
+    "physical_positions": 42,
+    "physical_transitions": 49
+  },
+  "from_clean_lower_square_individual": {
+    "individual_commands_only": true,
+    "maximum_commands": 14,
+    "maximum_live_pairs": 2,
+    "observed_stages": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "permitted_operand_choices": 42,
+    "physical_positions": 30,
+    "physical_transitions": 32
+  },
+  "from_clean_two_horizontal_children_individual": {
+    "individual_commands_only": true,
+    "maximum_commands": 17,
+    "maximum_live_pairs": 2,
+    "observed_stages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "permitted_operand_choices": 48,
+    "physical_positions": 33,
+    "physical_transitions": 35
+  },
+  "local_checks": {
+    "antipodal_endpoint_and_unused_original_are_exact_twins": [
+      12,
+      2
+    ],
+    "distance_three_pair_counts_by_external_upper_old_name": {
+      "4": 66,
+      "5": 62,
+      "6": 62,
+      "7": 66
+    },
+    "independent_literal_projection": [
+      {
+        "capped_pair_entries": 120,
+        "case": "first horizontal, antipodal comparison",
+        "literal_rows": 180,
+        "through_distance": 4,
+        "width": 16
+      },
+      {
+        "capped_pair_entries": 190,
+        "case": "lower square, unmarked diagonal class",
+        "literal_rows": 800,
+        "through_distance": 4,
+        "width": 20
+      },
+      {
+        "capped_pair_entries": 190,
+        "case": "lower square, unmarked side class",
+        "literal_rows": 800,
+        "through_distance": 4,
+        "width": 20
+      },
+      {
+        "capped_pair_entries": 325,
+        "case": "full marked block before the last gate",
+        "literal_rows": 6400,
+        "through_distance": 4,
+        "width": 26
+      },
+      {
+        "capped_pair_entries": 378,
+        "case": "full marked block with its crossing marker",
+        "literal_rows": 12800,
+        "through_distance": 4,
+        "width": 28
+      }
+    ],
+    "rejected_consumption_of_crossing_marker": [
+      "gate",
+      7,
+      [
+        3,
+        19,
+        20
+      ]
+    ],
+    "rejected_same_parent_corner_inputs": [
+      "gate",
+      7,
+      [
+        3,
+        18,
+        19
+      ]
+    ]
+  },
+  "meanings": {
+    "cap": "4, with every larger or absent entry read identically.",
+    "face_test": "Lower XY and upper YZ.",
+    "physical_names": "Only for the offline universal-tie grader.",
+    "terminal": "Eight genuine marked parity junctions, with both observable probes live.",
+    "upper_marker": "Old YZ and the unconsumed upper-X outward distinction at XZ."
+  }
+}

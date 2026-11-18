@@ -1,0 +1,95 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "FAR-SIGN-20261118-001Z-P001",
+ "canonical_id": "FAR-SIGN-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "FAR-SIGN-20261118-001Z",
+ "proof": "FAR-SIGN-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: is the far pair's sign SEED's copy step?",
+ "status": "Proved",
+ "claim": "Ledger closing FAR-SIGN-20261118-001: ticket A (L1-L6 and Proposition 7: moved splits and new crossings; under the far-pair sign clause (a) holds and the copy step is 'the moved splits are one whole order'; a pair pattern forces it; on a seven-distinction base of two orders both halves of sign = copy step fail) and ticket B (frozen, 8 of 8 held): the sign equals the copy step on all 149,162 fresh crossing-making SEEDK fills (1,794 copy steps); F1, T1, T2, the pair pattern, the weak and near-pair signs all exact; the copy class's closure picture holds both verdicts, the marked five-distinction picture none; ablation: sufficiency never failed, necessity fails unless the middle and near pairs already share knots. Referee pending. No new claim.",
+ "dependencies": [
+  "FAR-SIGN-20261118-001A",
+  "FAR-SIGN-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "FAR-SIGN-20261118-001",
+  "epic_path": [
+   "FAR-SIGN-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/FAR-SIGN-20261118-001B/FAR-SIGN-20261118-001B-E001_sign/contract.json": "1ddfdbe144c37f5c416d8db604329007ba2e3fc0c343ed465eeaabb3d4521f36",
+  "artifacts/FAR-SIGN-20261118-001B/FAR-SIGN-20261118-001B-E001_sign/part_S.json.gz": "985f496cb40456afdda461e314406226ba34b5414f42346582573fbd9c8ecde0",
+  "artifacts/FAR-SIGN-20261118-001B/FAR-SIGN-20261118-001B-E001_sign/part_A.json.gz": "19097fb57deef4095b4ee7550e1ca9e00029a9ab92fdbbf3603032ee44dffe09",
+  "proofs/FAR-SIGN-20261118-001A/FAR-SIGN-20261118-001A-P001_sign/manifest.json": "41bc459dcced213c2a6df9311c87b4621ab771364ac5d3385b75b44abd2837b6",
+  "proofs/FAR-SIGN-20261118-001A/FAR-SIGN-20261118-001A-P001_sign/result.json": "0525a5c86433425190e63b9b41b4da3fdad63dba938ffc6c7aa40522f4ffa6e3"
+ },
+ "paths": {
+  "manifest": "proofs/FAR-SIGN-20261118-001Z/FAR-SIGN-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/FAR-SIGN-20261118-001Z/FAR-SIGN-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/FAR-SIGN-20261118-001Z/FAR-SIGN-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/FAR-SIGN-20261118-001Z/FAR-SIGN-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/FAR-SIGN-20261118-001Z/FAR-SIGN-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/FAR-SIGN-20261118-001Z/FAR-SIGN-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

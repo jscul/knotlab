@@ -75,8 +75,8 @@ still reads every crossed split.**
   pins, since that knot pins the new distinction to its far distinction, which lies on the model's side.
 - **Why it is not bounded.** The model's crossers are whatever crosses it, and in a grown grid that is a whole order.
 
-Known mathematics, labelled: none beyond the split-system notions already cited. What this adds: a rule that names only a fill's own
-pairs and decides SEED's copy step, with the locality of its naming separated from the extent of what it reads.
+Known mathematics, labelled: none beyond the split-system notions already cited. What this adds: the proof that the copy step is
+decided on the end pairs' splits and a model's crossers, and (after the referee) the roles of the two end pairs on every copy step.
 
 ## What it means for A101 and the goals
 
@@ -89,8 +89,8 @@ pairs and decides SEED's copy step, with the locality of its naming separated fr
 
 ## Limitations
 
-- CRSWAP is post hoc. It was found on a fifth of the frozen run's starts and scored on the rest of the same run, not on a fresh
-  freeze. A referee rerun with new seeds would confirm it.
+- CRSWAP is post hoc and, as the referee showed, SEED's own clause. The referee's sign is exploratory: it is not frozen and not
+  proved beyond its implying clause (a).
 - Bases up to 30 distinctions; lines up to 12.
 
 ## Reproduce
@@ -152,10 +152,10 @@ and the line summary, the intuition entry, A101's line and the goals rows are co
 | 1 | The referee's sign, frozen and proved: "the far end pair is separated by every crossed split" equals SEED's copy step (sign implies clause (b), and the converse), or a counterexample; then whether the copy class's betweenness reads it | 3/3 | 3/3 | Freeze the sign, attempt both proofs, rerun on fresh starts → stop at a proof or a counterexample | Selected (coordinator) |
 | 2 | Replace "every crossed split" by a bounded check: in a full grid the distinctions every split separates are the extremes of both orders; is the sign readable from those extremes? | 2/3 | 2/3 | Characterise the far pair's position in grids → stop at a bounded test or an obstruction | Alternative |
 
-**Corrections:** none.
+**Corrections:** one, after the referee (Block on the reading "the copy step is named by the fill's own pairs"; `docs/CORRECTIONS.md`).
 
-**Goals:** a G1 checkpoint (capability gained; obstruction learned for extent) and a G16 checkpoint (capability gained); no goal
-changed.
+**Goals:** a G1 checkpoint (obstruction learned for extent; the capability first claimed is withdrawn) and a G16 checkpoint
+(capability gained, corrected); no goal changed.
 
 **Assumptions:** A101 stays under challenge; A99 gains this study.
 

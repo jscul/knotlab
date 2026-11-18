@@ -2624,11 +2624,13 @@ evidence: results and their status come from the records each entry links.
   decides how the growth branches. Whether the bracketing is a distance is open: it is read from the states' disagreement counts
   together with the knots, and the states alone do not give it.
   `MEET-GROW-20261118-001` ([decision note](../research/MEET-GROW-20261118-001/meet_grow.md); referee pending) found that,
-  under KF3, the meeting pattern grows on its own: from any two presentations with one meeting pattern, one renaming carries the
-  whole law of the grown co-knotted pairs, state by state (computed, every presentation of 5 to 9 distinctions), while the number
-  of orders differs with the placement.
+  under KF3, the meeting pattern grows by the same law wherever it sits along the line: from any two presentations with one
+  meeting pattern, one renaming carries the whole law of the grown co-knotted pairs, state by state (computed, every presentation
+  of 5 to 9 distinctions; refereed), while the number of orders differs with the placement. It does not grow by itself: the
+  states still steer which pairs come next (its referee, Narrowing).
 - **History.**
-  - 2026-11-18 · `MEET-GROW-20261118-001`: the meeting pattern grows on its own under KF3 (computed); status unchanged.
+  - 2026-11-18 · `MEET-GROW-20261118-001`: the meeting pattern grows by one law wherever it sits under KF3 (computed; narrowed
+    by its referee from "grows on its own"); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-20261118-001`: the information is the bracketing (proved at the second new distinction); the
     meeting pattern alone decides the branching (post hoc); status unchanged.
   - 2026-11-18 · The weave case scoped after `WEAVE-PAIR-R1` (Narrowing): a one-way strip ruler with full information exists; the

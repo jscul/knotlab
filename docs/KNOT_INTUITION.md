@@ -502,12 +502,13 @@ distinctions and once in how that pattern sits along the states. All this is
 for the fewest knots: one knot more than needed changes the chances and mixes the
 placements (its referee)
 ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md)).
-Does the meeting pattern then grow on its own (`MEET-GROW-20261118-001`,
-frozen computation, referee pending)? Yes, as far as computed: from any two
-presentations of a line with the same meeting pattern, the co-knotted pairs grow
-with the same law, label for label after one renaming, for every presentation
-of five to nine distinctions and state by state, while the number of orders
-they carry differs with the placement
+Does the meeting pattern then grow the same wherever it sits
+(`MEET-GROW-20261118-001`, frozen computation, refereed)? Yes, as far as
+computed: from any two presentations of a line with the same meeting pattern,
+the co-knotted pairs grow with the same law, label for label after one renaming,
+for every presentation of five to nine distinctions and state by state, while
+the number of orders they carry differs with the placement. It does not grow
+by itself: the states still steer which pairs come next (its referee)
 ([decision note](../research/MEET-GROW-20261118-001/meet_grow.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with

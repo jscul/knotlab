@@ -1,7 +1,8 @@
 # Does the meeting pattern grow on its own?
 
 Epic `MEET-GROW-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes the selected direction of
-`MEET-ORDERS-20261118-001`. Goals G16 and G1; tests A97. Referee pending.
+`MEET-ORDERS-20261118-001`. Goals G16 and G1; tests A97. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18
+November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `73b8a25a0` at 03:33 UTC on 18 November. Two
@@ -13,7 +14,11 @@ Epic `MEET-GROW-20261118-001`, 18 November 2026, by Claude, on the coordinator's
 
 ## The answer
 
-- **Under KF3 the meeting pattern grows on its own** (computed, exact). Take two presentations of a line whose knots, read as
+- **Under KF3 the meeting pattern grows by the same law wherever it sits along the line** (computed, exact). *Narrowed after the
+  referee:* first written "grows on its own", which says more. The pair graph is not a process by itself: within one
+  presentation, bases with the same pair graph give different laws for the next pairs from the third new distinction on (at six,
+  6 of 18 pair graphs at n0 + 2 and 170 of 218 at n0 + 3), so the states steer which pairs come next. What holds is that the
+  joint growth is the same for every placement of the pattern. Take two presentations of a line whose knots, read as
   sets of distinctions with the line ignored, are the same pattern up to renaming. The co-knotted pairs, which are all KF3 reads of
   the knots, then grow with the same law, label for label. One renaming of the starting pattern carries the whole distribution of
   the grown pairs from one presentation onto the other, after every new distinction.
@@ -21,7 +26,8 @@ Epic `MEET-GROW-20261118-001`, 18 November 2026, by Claude, on the coordinator's
     distinctions, with 1, 3, 4, 12 and 27 meeting patterns.
   - It holds state by state as well (P4): the joint distribution of the pairs with each state's options, by their cost and the
     pairs each adds, is carried the same way through n0 + 3. So it is not an average over states. Something maps the states of one
-    presentation to those of the other while keeping every option's effect on the pairs (the advisor's candidate is a twist, below).
+    presentation to those of the other while keeping every option's effect on the pairs (the advisor's candidate is a twist, below;
+  `MEET-TWIST-20261118-001` constructs and proves it).
 - **The states differ, and so do the orders.** The same pair graph is reached with different state sets, and in every meeting
   pattern with more than one presentation the chance of two orders differs between presentations (all 46 such patterns). How
   many orders the grown pattern carries depends on where it sits along the line, the bracketing of `MEET-ORDERS-20261118-001`.
@@ -32,10 +38,10 @@ Epic `MEET-GROW-20261118-001`, 18 November 2026, by Claude, on the coordinator's
   past.
 
 **In the owner's terms.**
-- How the knots meet is not only information the states lack: under this growth it is a process of its own. The pattern of which
-  knots share which distinctions grows by the same law wherever it sits along the line.
-- The states do one thing: they decide how many orders the grown pattern carries. Same pattern, different placement: same growth,
-  different number of orders.
+- How the knots meet grows by the same law wherever the pattern sits along the line: the pattern of which knots share which
+  distinctions grows alike from every placement.
+- It does not grow by itself: the states, together with the knots, steer which pairs come next. Where the pattern sits changes
+  only how many orders the grown pattern carries. Same pattern, different placement: same growth, different number of orders.
 
 ## Predictions and verdicts
 
@@ -62,9 +68,9 @@ Epic `MEET-GROW-20261118-001`, 18 November 2026, by Claude, on the coordinator's
 
 ## What it means for A97 and the goals
 
-- **A97** stays under challenge, with a sharper positive finding. How the knots meet is a growing structure that the states do
-  not steer: the pairs grow by a law of the meeting pattern alone, while the states decide only the number of orders. Whether the
-  meeting pattern is a distance is open.
+- **A97** stays under challenge, with a sharper positive finding. The growth of how the knots meet does not depend on where the
+  pattern sits along the line, while the number of orders does. (Narrowed after the referee: the states still steer which pairs
+  come next; what is independent of them is the placement, not the growth.) Whether the meeting pattern is a distance is open.
 - **G16:** capability gained. A computable invariant, the meeting pattern up to renaming, predicts the whole law of KF3's pair
   growth from every presentation tested, and the bracketing predicts the orders.
 - **G1:** no demonstrated advance; the result separates the pattern's growth from the orders without growing two orders.
@@ -78,7 +84,8 @@ Epic `MEET-GROW-20261118-001`, 18 November 2026, by Claude, on the coordinator's
 - The coarse counts (labelled bases and odd-set weights) do not separate every pattern at eight (`MEET-ORDERS-20261118-001`'s
   referee: 12 patterns, 8 signatures); P2 compares the pair-graph laws themselves, which do separate them.
 - Equality is tested by digests of exact distributions (24 hexadecimal characters of sha256), checked against a direct
-  comparison on all ten pairs of five.
+  comparison on all ten pairs of five. That gate tests agreement where a pair is carried, not discrimination (at five every pair
+  shares a pattern, the referee); discrimination is tested by the digest mutant (G3b) and by P2's separation of patterns.
 
 ## Reproduce
 
@@ -98,11 +105,24 @@ Consulted once before the freeze (Fable 5.2, no tools). It gave P1's probability
 mechanism, the discriminator that became P4 (carried means state by state, not carried means averaging), and the remark that
 different meeting patterns already differ at the start. Not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with its own exact engine and no digests:
+confirmed with fixes, no Block. It recomputed P1 for every pair of presentations of five and six to n0 + 4 (9 of 9 carried, each
+by both isomorphisms of the pattern), P3's counts (6,752 at five; 13,368, 13,364 and 16,272 at six) and the order control, and
+found the digest method, `canonical_pattern` and the automorphism comparison correct. Folded in the same day, each logged in
+`docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing.** "The meeting pattern grows on its own" said more than P1 and P4 show: the pair graph is not a process by itself
+   (same pair graph, different next laws within one presentation from the third new distinction on). The finding is placement
+   independence: "grows by the same law wherever it sits along the line". Corrected in the headline, the owner's-terms paragraph,
+   A97, the intuition entry, the goals row, the objects row and `MEET-TWIST-20261118-001`'s proof.
+2. **Not a block.** The G4 gate tests agreement on carried pairs only; the Limitations now say so.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: does the meeting pattern grow on its own under KF3 | **Status:** Successful (referee pending) | Carried exactly for all 1,049 pairs of presentations of 5 to 9 distinctions, state by state through n0 + 3; 4 of 4 held |
+| This attempt: does the meeting pattern grow by one law wherever it sits | **Status:** Successful (refereed R1, confirmed with fixes) | Carried exactly for all 1,049 pairs of presentations of 5 to 9 distinctions, state by state through n0 + 3; 4 of 4 held |
 | Local direction: the two layers of how knots meet | Continue | The pattern's growth is separate from the orders; the map between states is not yet known |
 | Broader exploration: how knots meet as information | Searching | Other bases, knot kinds and rules untested (A99, A100) |
 | Long-term goal: G16 Learning the rules behind what a system allows | Capability gained | The meeting pattern predicts the pairs' growth law exactly; the bracketing predicts the orders |
@@ -111,7 +131,7 @@ different meeting patterns already differ at the start. Not consulted after the 
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Prove that the meeting pattern grows on its own: construct the map of states (the advisor's twist) and show it carries KF3's options | 3/3 | 2/3 | Build the twist for one move of the marked side, check it maps options to options on every reached state of five and six → stop at a proof, or at the first state where no such map exists | Selected · started |
+| 1 | Prove that the meeting pattern grows by one law wherever it sits: construct the map of states (the advisor's twist) and show it carries KF3's options | 3/3 | 2/3 | Build the twist for one move of the marked side, check it maps options to options on every reached state of five and six → stop at a proof, or at the first state where no such map exists | Selected · started |
 | 2 | Beyond lines: presentations of the 2 × 2 pattern and of branching trees, and redundant knots (A100's challenge) | 2/3 | 2/3 | Enumerate their fewest-knot presentations and rerun this test → stop when it fails or holds one size past | Alternative · deferred |
 | 3 | The order layer past n0 + 3: what reading of the bracketing predicts the orders where its halves tie (from n0 = 8)? | 2/3 | 2/3 | Group the tied pairs by their same-way bits → stop at a reading that separates all of 9 or a counterexample | Alternative · deferred |
 

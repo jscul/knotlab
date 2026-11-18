@@ -1,7 +1,8 @@
 # Moving the ends' pair carries KF3
 
 Ticket `MEET-TWIST-20261118-001A`, 18 November 2026, by Claude; checked by the advisor model (Fable 5.2: holds with fixes, all
-folded in before the freeze). Words as in `MEET-ORDERS-20261118-001` (bracketing, odd set) and
+folded in before the freeze). The pair graph alone is not a process: the states steer which pairs come next (`MEET-GROW-20261118-001`'s referee); what this
+proves is that the joint growth does not depend on where the ends' pair sits. Words as in `MEET-ORDERS-20261118-001` (bracketing, odd set) and
 the glossary. The map was found by computation (the advisor's twist made exact, see the decision note); the proof below was written
 before the frozen check of ticket B.
 
@@ -73,7 +74,7 @@ O_r under g⁺, by the table below, and each knot's image pins exactly the same 
   [w ∈ F] by Lemma 1, and g lies in A_{g⁺} when w ∉ E_uv and in D_{g⁺} when w ∈ E_uv. The same argument then sends every right
   knot under g⁺ to a right knot under g, and the two maps undo each other. ∎
 
-## Theorem 2 (the meeting pattern grows on its own)
+## Theorem 2 (the meeting pattern grows by the same law wherever it sits)
 
 For a bracketing T of the cycle and steps g, g⁺ of it, the KF3 chains from P_g and P_{g⁺}, each with its new distinctions numbered in order,
 have the same law on (the family of odd sets, the co-knotted pairs) under the coupling of Lemma 2, until the first new distinction

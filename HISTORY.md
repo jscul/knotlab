@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the meeting pattern's growth, confirmed by its referee; the headline narrowed
+
+- The study of whether the meeting pattern grows the same wherever it sits (`MEET-GROW-20261118-001`) was confirmed by its referee
+  with its own exact engine and no digests: every pair of presentations of five and six distinctions with one meeting pattern grows
+  its co-knotted pairs by one law, label for label after one renaming, while the number of orders differs
+  ([decision note](research/MEET-GROW-20261118-001/meet_grow.md)).
+- Narrowed: it was first summed up as "the meeting pattern grows on its own". The pairs alone are not a process of their own (the
+  states steer which pairs come next); what holds is that the growth is the same for every placement of the pattern along the line.
+
 ## 18 November 2026: the reach-limit study confirmed by its referee; what it shows narrowed
 
 - The study of a law whose free room runs along two orders (`LOCAL-ROOM-20261118-001`) was confirmed by its referee with fresh code,

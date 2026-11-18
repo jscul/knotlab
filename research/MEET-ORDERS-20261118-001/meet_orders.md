@@ -218,3 +218,29 @@ Consulted twice before the freeze (Fable 5.2, no tools).
 - The second was asked about Q8 and the third-step blindness. It put Q8 at about 75%, proposed a twist (re-gluing along a
   shared pair) as the symmetry behind it, and a sketch for the blindness with a gap at the histories that hold an odd set of five.
 - Not consulted after the read-out.
+
+## Final report as sent
+
+Posted in the project thread at 03:18 UTC on 18 November 2026 (the two tables and the Corrections, Goals and Assumptions lines are
+those of the Position section above). Its text:
+
+> **Done (referee pending): the knots' nesting is the reason, and the second fill now has a proved formula.** Every fewest-knot
+> presentation of a line is a bracketing: each knot lies within one half of another, starting from the knot that holds both
+> ends. A fill makes its knot's halves cross. A second fill inside one of those halves adds a third order; one on untouched steps
+> keeps two. That gives an exact formula: 5/12 for chains, which are the end and next-to-end placements, and 11/18 for the middle
+> placement.
+> - Next to an end equals the end through n = 8 and parts at n = 9, because its chain lies the other way.
+> - The six-starts are both chains: 51/140 at n = 8, equal through n = 9, parting at 10. Same mechanism.
+> - Post hoc: the meeting pattern alone, with the line ignored, decides how the growth branches. Its placement along the line
+>   decides how many orders the branches carry.
+>
+> (Position table and directions table as above, with the directions shortened.)
+>
+> What failed: at the fourth new distinction, presentations with different nestings can tie (one pair at eight distinctions, 24
+> at nine). Branching does not follow which knots share pairs; it follows the full meeting pattern.
+>
+> Corrections: one, Not a block. KNOT-CAP said the five-starts differ "from the first fill"; they differ from the second new
+> distinction. Fixed and logged. Goals: G16 and G1 checkpoints; no goal changed; B197 added as a sub-goal of G1. Assumptions: A97
+> stays under challenge, with this finding added. New A100 records fewest-knot presentations as the population, set by default.
+> Advisor: consulted twice before the freeze. It supplied the converse proof, the two-order criterion and the words, and flagged
+> the hole in the proof's compression step, now closed.

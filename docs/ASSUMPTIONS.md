@@ -2899,8 +2899,11 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
-  - 2026-11-18 · `KNOT-SWITCH-20261118-001` ([decision note](../research/KNOT-SWITCH-20261118-001/knot_switch.md); referee
-    pending) read SEED's switch in the knots: "nothing crosses yet" is "no filled knot yet" (four distinctions carrying four
+  - 2026-11-18 · `KNOT-SWITCH-20261118-001`'s referee (R1): the knot reading holds both ways along these growths only; in general
+    a filled knot forces a crossing but a crossing rarely brings one. SEEDK must still be told to stop being free once the knots
+    close: `PICK-TWO-20261118-001`'s one free step, read in the knots. Status unchanged.
+  - 2026-11-18 · `KNOT-SWITCH-20261118-001` ([decision note](../research/KNOT-SWITCH-20261118-001/knot_switch.md); refereed)
+    read SEED's switch in the knots: "nothing crosses yet" is "no filled knot yet" (four distinctions carrying four
     knots, each the middle of one), which forces a crossing in any presentation; along every growth tried the first fill makes
     both. The rule must still be told to stop being free once the knots have closed. Status unchanged.
   - 2026-11-18 · `PICK-TWO-20261118-001`'s referee (R1): SEED is given one order-making step, not a number; arity makes the step

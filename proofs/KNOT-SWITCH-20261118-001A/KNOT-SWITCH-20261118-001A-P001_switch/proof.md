@@ -12,8 +12,10 @@ crossing).
   GF(2), with Betti numbers b₀, b₁, b₂.
 - **An even knot set.** A set of knots in which every pair lies in an even number of them (the literature's 2-cycle of K over
   GF(2)). b₂ counts the independent ones.
-- **A filled knot.** Four distinctions carrying four knots, one on each three of them, with each of the four the middle of exactly
-  one. It is a knot (a, c, b) together with the three knots of its fill F(a, c, b) = {B(a, r, b), B(c, a, r), B(c, b, r)}. Any of
+- **A filled knot.** A knot (a, c, b) together with the three knots of its fill F(a, c, b) = {B(a, r, b), B(c, a, r), B(c, b, r)}:
+  four distinctions carrying four knots, one on each three of them, each the middle of exactly one. (*After the referee:* of the
+  nine ways to give four distinctions four such knots, three are of this kind; the other six force two distinctions to be copies,
+  so they never occur in a base without copies.) Any of
   the four knots can play (a, c, b), since the other three are its fill. Its four knots are an even knot set.
 - **The rules.** KF3, NN and NN2 (`NEVER-NEST-20261118-001`), and SEEDK: `PICK-TWO-20261118-001`'s SEED with knots only on pairs
   that already share a knot. While b₂(K) = 0 it takes any fill; afterwards it takes the fills that copy or conserve as SEED does.
@@ -32,7 +34,10 @@ crossing).
   a, b, c, r, and no two of these four are copies, then two splits cross. The four knots allow, on a, b, c, r, only the two
   constants and the patterns ac | br and ar | cb with their complements. Distinctness forces both patterns to occur, and they
   cross.
-- **W3. Along these rules, nothing crosses exactly until the first filled knot and the first even knot set.** From a bracketing
+- **W3. Along these rules, nothing crosses exactly until the first filled knot and the first even knot set.** (*Scope, after the
+  referee:* this is an equivalence along these growths, where all four readings change at the first move. In general a filled knot
+  forces a crossing (W2), but a crossing rarely brings one: of 2,776 random copy-free presentations with a crossing, 2,772 carry
+  none.) From a bracketing
   each of KF3, NN, NN2 and SEEDK first takes a fill, and that fill is the fill of one of the presentation's knots (Lemma A). It
   makes, in the same step, the first crossing (`PICK-TWO-20261118-001A`, S6), the first filled knot, and b₂ = 1. Crossings,
   filled knots and b₂ never go away. So at every step:

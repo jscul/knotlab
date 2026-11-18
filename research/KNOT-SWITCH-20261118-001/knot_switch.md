@@ -1,7 +1,8 @@
 # What the knots read when nothing crosses yet
 
 Epic `KNOT-SWITCH-20261118-001`, 18 November 2026, by Claude. It takes `PICK-TWO-20261118-001`'s first direction, chosen by the
-coordinator. Goals G1 and G16; challenges A101. Referee pending.
+coordinator. Goals G1 and G16; challenges A101. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block,
+folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `d753ef8bf` at 08:20:07 UTC.
@@ -17,6 +18,11 @@ four is a knot together with its fill, a "filled knot". A filled knot allows onl
 so it forces a crossing in any presentation (proved). Along every growth here, the first fill makes the first filled knot and the
 first crossing in the same step (proved, and checked at all 11,050 steps of 420 runs).** So the two enters exactly when the knots
 first close on themselves, in four knots on four distinctions, the smallest even knot set there is.
+*Narrowed after the referee:* the equivalence holds along these growths, where all four readings change at the first move, so there
+"no filled knot yet" also means "no move yet". It is not a general equivalence of states: of 2,776 random copy-free presentations
+with a crossing (five to seven distinctions, three to nine knots), 2,772 carry no filled knot among their knots, and 2,760 none
+even among all the knots their states satisfy. A filled knot always forced a crossing (no exception). So the knot reading signals
+a crossing, one way, in any presentation, and tracks it both ways only along these growths.
 
 - **The switch, four ways at once.** At every step of every run (KF3, NN, NN2 and SEEDK from 105 bracketings of 5 to 8), four
   readings agreed: no two splits cross; there is no filled knot; the knot complex has no even knot set (b₂ = 0); no fill has been
@@ -100,11 +106,29 @@ Consulted once before the freeze. It made four points:
 
 It was not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code: confirmed with fixes, no Block.
+- W1 to W4 hold, checked by hand. Of the nine ways to give four distinctions four knots with each the middle once, the three of
+  fill type allow exactly the six patterns and force a crossing; the six of cycle type force two distinctions to be copies, so they
+  never occur in a base without copies.
+- The saturated line has b₂ = C(n − 1, 3), no filled knot and no crossing, for n = 4 to 9.
+- Its own KF3 and SEEDK from the same 105 bracketings agree with all four readings at every step; SEEDK is strong in 105 of 105.
+
+Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (scope).** "SEED's switch reads 'no filled knot yet'" holds along these growths, both ways; in general a filled knot
+   forces a crossing, but a crossing rarely brings one (2,772 of 2,776 random presentations with a crossing have none). This also
+   answers direction 2 in part.
+2. **Not a block.** The definition now says "a knot and its fill": the fill-type arrangement, not every way of giving each of four
+   distinctions one middle.
+3. **On A101:** SEEDK still has to be told to stop being free once the knots close; that is `PICK-TWO-20261118-001`'s one free
+   step, read in the knots.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: what SEED's switch reads in the knots | **Status:** Successful (referee pending), 4 of 4 held | "No filled knot yet": the first closed four of knots is the first crossing, in every presentation one way and along every growth both ways |
+| This attempt: what SEED's switch reads in the knots | **Status:** Successful (refereed), 4 of 4 held | "No filled knot yet": the first closed four of knots is the first crossing, in every presentation one way and along every growth both ways |
 | Local direction: two orders from the knots' own state | Promising | SEEDK is strong with knot-sharing moves |
 | Broader exploration: SEED's second phase in the knots | Unexplored | Its copy-or-conserve condition reads crossings; no knot reading is known |
 | Long-term goal: G1 | Capability gained | The second order enters with the knots' first closed set |

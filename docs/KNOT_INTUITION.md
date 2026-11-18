@@ -593,14 +593,16 @@ distinction's two sides: the rule allows one free step, the two values of a
 distinction make that step exactly one more order, and the line has the first
 one (refereed; [decision note](../research/PICK-TWO-20261118-001/pick_two.md)).
 And what do the knots say at that switch (`KNOT-SWITCH-20261118-001`, proof and
-frozen computation, referee pending)? A line's knots never close on themselves:
+frozen computation, refereed)? A line's knots never close on themselves:
 each hangs off an old pair. The first fill adds three knots that close with an
 old one, on four distinctions, every three of them knotted and each the middle
 of one, a filled knot. Those four knots allow only two ways of splitting the
 four distinctions, and the two cross: wherever a filled knot appears, a crossing
 follows, whatever else the knots are. Along every growth tried, the first fill
 makes the first filled knot and the first crossing in the same step; later fills
-close loops but never enclose again
+close loops but never enclose again. Outside these growths the reading is one
+way only: a filled knot always brings a crossing, but a crossing seldom comes
+with a filled knot
 ([decision note](../research/KNOT-SWITCH-20261118-001/knot_switch.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?

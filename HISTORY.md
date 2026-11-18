@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: where the second order enters, read in the knots, confirmed by the referee; scoped
+
+- The study of what the knots read when nothing crosses yet (`KNOT-SWITCH-20261118-001`) was confirmed by its referee with fresh
+  code, with no Block. Four distinctions carrying a knot and its fill allow only two crossing ways of splitting them, so such a
+  filled knot always brings a crossing; along every growth tried, the first fill makes the first filled knot and the first crossing
+  together, and the rule that keeps two orders works with knots only on pairs that already share one
+  ([decision note](research/KNOT-SWITCH-20261118-001/knot_switch.md)).
+- Narrowed: outside those growths the reading is one way only; a crossing seldom comes with a filled knot.
+
 ## 18 November 2026: the distance that reads freedom, confirmed by the referee; the triangle inequality narrowed
 
 - The study of the distance that reads freedom (`FREE-READ-20261118-001`) was confirmed by its referee with fresh code, with no Block:

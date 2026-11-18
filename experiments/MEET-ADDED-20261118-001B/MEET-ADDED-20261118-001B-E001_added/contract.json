@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MEET-ADDED-20261118-001B-E001",
+ "ticket": "MEET-ADDED-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the knots a KF3 growth added, read without names, record the part of the order of growth that one grown base's states miss about how the line's knots nest?",
+ "definitions": {
+  "P0": "added pairs alone as a graph, no states",
+  "U": "states alone",
+  "P1": "states with added pairs",
+  "T1": "states with added knots as triples",
+  "K1": "states with added knots and middles",
+  "SG": "states with all pairs (sanity)",
+  "N": "all named",
+  "share": "I(bare bracketing; reading)/H, prior uniform over labelled presentations"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 927048c1876a7ae53f81d264948ff97e78d3db1344fc78a84adb6715d9548f70), checks.py (sha256 6b058cff72e3db0d3e3226bb660fc2b73c6b56d8b76d3ee4b456d00cef1f964a), merge.py (sha256 1b0d1c598b0ac98b4d0d7cf7b8eb215b2e7e9064fbdff9864a2b9cd7fd63cd4d), melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4, MEET-ORDERS-20261118-001B's engine unchanged)",
+  "run": "scripts/longrun.py launch job.py (61 cases), then merge.py"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Q1, Q2, Q4, Q5 of research/MEET-ADDED-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "The referee's preview (P0) and MEET-HIST's shares reproduced as gates; SG at k = 0.",
+ "predictions": {
+  "Q1": "P0 < 0.25 U at every k >= 1",
+  "Q2": "T1 = K1 = N at every k",
+  "Q4": "P1 < T1 at some k >= 3 for each n0",
+  "Q5": "P1 > U at every k >= 2"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "8 workers, 1.8 GB per case; registered as MEET-ADDED-B1."
+}

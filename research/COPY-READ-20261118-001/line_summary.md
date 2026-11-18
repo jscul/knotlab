@@ -9,6 +9,7 @@ that the cheapest growth gains one order at every doubling and never keeps two:
 - `KEEP-READ-20261118-001`
 - `MID-RULE-20261118-001`
 - `COPY-READ-20261118-001`
+- `COPY-CLASS-20261118-001` (added after the summary, on the coordinator's go-ahead)
 
 All seven are refereed and folded in; `MID-RULE`'s free-form runs (a check of proved statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
 returns shrinking on bases this small.
@@ -75,6 +76,11 @@ each step do it?
   - (`KEEP-READ-20261118-001`)
 - **The rule reading only the fill's knots, with knot-sharing,** starved: exactly one fill per run, then only lengthening, in 210 of
   210 runs to 60 distinctions. (`MID-RULE-20261118-001`)
+- **What decides the copy step** (proved and computed). Every new crossing joins splits separating the fill's two end pairs, so
+  the copy is decided on those splits and a model's crossers. The frozen local rule had the knots' roles the wrong way round and
+  failed. Swapped (post hoc), the model lies among the crossed splits of the end pair not touching the middle knot's pair, and the
+  rule agreed with SEED on all 85,202 crossing-making fills, held out on four fifths of the starts. It names only the fill's own
+  pairs, but reads a model's crossers, a whole order in a full grid. (`COPY-CLASS-20261118-001`, referee pending)
 - **The copy step** (pulling an uncrossed split into the grid without adding an order) is rare: 566 among about 1.8 million
   crossing-making fills, all early. No reading of its own knots or the betweenness among its distinctions decides it. But all of
   them fall in one closure class, which holds under 2% of crossing-making fills (the referee's count: 528 of 528, lift 57).

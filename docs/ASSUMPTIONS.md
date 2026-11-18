@@ -2876,6 +2876,7 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `COPY-CLASS-20261118-001` built on it (SEED with knot-local moves, its copy steps); status unchanged.
   - 2026-11-18 · `COPY-READ-20261118-001` built on it (SEED with knot-local moves, its crossing-making fills); status unchanged.
   - 2026-11-18 · `MID-RULE-20261118-001` built on it (the two-middle and one-end rules, knot-local and free); status unchanged.
   - 2026-11-18 · `KEEP-READ-20261118-001` built on it (SEED with knot-local moves, every move's local pictures); status unchanged.
@@ -2939,6 +2940,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `COPY-CLASS-20261118-001` ([decision note](../research/COPY-CLASS-20261118-001/copy_class.md); referee pending)
+    found the copy step named by the fill's own pairs: the model whose crossers the absorbed split copies lies among the crossed
+    splits of the end pair not touching the middle knot's pair (post hoc, exact on 85,202 fills, held out). But the check reads that
+    model's crossers, a whole order in a full grid. Status unchanged.
   - 2026-11-18 · `COPY-READ-20261118-001` ([decision note](../research/COPY-READ-20261118-001/copy_read.md); refereed) found
     that SEED's copy step, which grows two orders over the whole line, is not decided by the fill's own knots or the betweenness
     among its distinctions, but every copy step met has one closure picture, shared by under 2% of crossing-making fills (the

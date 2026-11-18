@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RIM-EXCESS-20261118-001B-E001",
+ "ticket": "RIM-EXCESS-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On weave patches without holes: do bond polygons have weight exactly 3(m - 2); does the polygon search equal brute force; which pairs carry an excess of bond distance over steps apart + 1 at eleven and twelve knots, and how large; does any random patch to forty knots reach excess 3?",
+ "definitions": {
+  "excess": "b(x, y) - steps apart - 1",
+  "facing": "lone, opposite classes, each in the other's wedge (DOUBLE-MEET)"
+ },
+ "public_inputs": {
+  "code": "polylib.py (sha256 d4fdd01141788db8c4e7a84702c27da009179b68da0c806b139fda2fde6d4880), job.py (sha256 bf43c7d36262744e5e7c98da329d3204d671d90853fbf1f998bb04c013d35149), merge.py (sha256 e7927a190e1189114cb16abcf82ccd4a2fb4a14e6d8bc1b07561af449c717f61), checks.py (sha256 b4a1beec6d7249f3706d7b52e95ecccc2f8e83be184c397916a0966494b98e2a)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "DOUBLE-MEET's weavelib.py and job.py (discs_of_size), unchanged"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "R1-R5 of research/RIM-EXCESS-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates, including the referee's twelve-knot disc.",
+ "predictions": {
+  "R1": "Lemma P on every bond to nine knots",
+  "R2": "polygon search = brute force on every pair to nine knots",
+  "R3": "excess and unbonded pairs only lone opposite facing (11 and 12 knots)",
+  "R4": "largest excess at 12 knots is exactly 2",
+  "R5": "no excess >= 3 on random patches of 20-40 knots"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py (RIM-EXCESS-B1), about an hour",
+ "amendments": []
+}

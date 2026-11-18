@@ -215,6 +215,10 @@ read from nothing); G1 checkpoint (the same, read for space from a law); no goal
 starts from the smallest knot, working premise); A97 gains this study (status unchanged); A101 gains its parity counterpart
 (status unchanged).
 
+**Basket:** B196 (a decision procedure for bounded reach on small orbits, 3/3 · 2/3), B201 (this study's #2, why the smallest
+knot first, 3/3 · 1/3), `BOND-BALLS-20261111-001#2` (2/3 · 3/3); none taken: this study's selected #1 awaits the coordinator's
+go-ahead.
+
 ## Final report as sent (2026-11-18 19:58 UTC)
 
 **Outcome:** No. Under the parity law, a growth rule that reads only bond distances cannot settle its own dimension; it can only copy the number from its start or its own text (proved, and replayed by a frozen census of 3,982 runs in which all ten predictions held). Closed, referee pending.
@@ -241,6 +245,6 @@ starts from the smallest knot, working premise); A97 gains this study (status un
 | 3 | Bond balls on descent orders with tied chains | 1/3 — closes the census's volume gap | 3/3 | prove or refute "exponent = chains eventually untied" → stop at either | Alternative · deferred |
 | 4 | A short note: the parity growth law is Birkhoff's construction | 1/3 — conversion | 3/3 | write T1 and T2 self-contained → stop when checked | Alternative · deferred |
 
-**Corrections:** none; the cubic study's referee wrote that the law puts the three in, and this adds that with one count it has no other choice. **Goals:** G2 checkpoint (capability gained), G1 checkpoint (obstruction learned); no goal changed. **Assumptions:** new A104 (the complete-round joining rule, scope) and A105 (a growth starts from the smallest knot, working premise); A97 and A101 gain this study, statuses unchanged. **Advisor:** Fable 5.2 before the freeze; it confirmed the main theorems, refuted my first guess that the fewest counts keep at most two chains (they keep whatever they are handed), and supplied the literature and the new words (offshoot, demand, surplus, descent order). **Overlap:** Codex's planned `VARIABLE-OUTPUT-READER-20261118-001` asks whether distances still identify the joins under mixed counts; I left that question to it.
+**Corrections:** none; the cubic study's referee wrote that the law puts the three in, and this adds that with one count it has no other choice. **Goals:** G2 checkpoint (capability gained), G1 checkpoint (obstruction learned); no goal changed. **Assumptions:** new A104 (the complete-round joining rule, scope) and A105 (a growth starts from the smallest knot, working premise); A97 and A101 gain this study, statuses unchanged. **Advisor:** Fable 5.2 before the freeze; it confirmed the main theorems, refuted my first guess that the fewest counts keep at most two chains (they keep whatever they are handed), and supplied the literature and the new words (offshoot, demand, surplus, descent order). **Basket:** B196, B201 (this study's #2), `BOND-BALLS-20261111-001#2`; none taken, #1 awaits go-ahead. **Overlap:** Codex's planned `VARIABLE-OUTPUT-READER-20261118-001` asks whether distances still identify the joins under mixed counts; I left that question to it.
 
 Referee hand-off: the prior-work line is in the pre-registration (objects-gate passes). Decision note: `research/FRESH-COUNT-20261118-001/fresh_count.md`.

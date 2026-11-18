@@ -106,3 +106,18 @@ study leaves open).
 changed.
 
 **Assumptions:** A39 gains the proof of the lower bound; no status changed, no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** both pieces the weave result rested on are now proved. On a patch of the weave without holes, every allowed state is a
+height, a whole number at each distinction that steps up by 1 or down by 2 along each pair in a fixed direction. A set is constrained
+exactly when some m ≥ 3 of its distinctions can be visited in a cycle whose height-length is at most 3(m − 2). Going there and back between
+two distinctions always costs exactly three times their steps apart, so every bond holding them has at least the steps apart plus two
+members: bond distance never undercuts the steps apart. Every step was checked on all 59,564 patches up to twelve knots, and all 7 checks
+held. One step leans on cited theorems about bridged graphs. The upper side, how far the rim pushes bond distance above steps + 1, is
+still open. Closed, referee pending.
+
+The position table, the next-step line and the three directions as in Position above.
+
+**Corrections:** none for this study (DOUBLE-MEET's referee Block was folded in today, `b3afe07ca`). **Goals:** G1 checkpoint (capability
+gained). **Assumptions:** A39 gains the proof; no status changed. **Advisor:** refereed the written proofs before the freeze.

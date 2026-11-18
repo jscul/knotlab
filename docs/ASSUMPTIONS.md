@@ -154,6 +154,7 @@ evidence: results and their status come from the records each entry links.
 | [A97](#a97--distance-is-the-only-form-of-information) | Distance is the only form of information | interpretation | Under challenge |
 | [A98](#a98--the-owners-no-skipping-is-read-as-betweenness-of-a-pairwise-count-with-flips-counted) | The owner's "no skipping" is read as betweenness of a pairwise count, with flips counted | reading | Assumed |
 | [A99](#a99--states-only-growth-is-judged-on-conservative-betweenness-extensions-with-up-to-three-knots-per-step) | States-only growth is judged on conservative betweenness extensions with up to three knots per step | scope | Assumed |
+| [A100](#a100--how-knots-meet-is-compared-on-fewest-knot-presentations-of-a-line) | How knots meet is compared on fewest-knot presentations of a line | scope | Assumed |
 
 ## Entries
 
@@ -2610,7 +2611,17 @@ evidence: results and their status come from the records each entry links.
   carries all its information and decays at a fixed rate, but oscillates, so it steps outward only in envelope. Its referee found
   that `WEAVE-MIX-20261117-001`'s third survivor, decoupled into strips of two columns, is a one-way ruler with full information
   that decreases strictly from every start. So on the weave the one-way premise is met and the two-way one is not.
+  `MEET-ORDERS-20261118-001` ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md); referee pending) found
+  which information that is. The fewest-knot presentations of a line are its bracketings, which knot lies within which half of
+  which (proved), and under KF3 the chance of two orders after the second new distinction is an exact formula in the bracketing
+  read without halves (proved): 5/12 for chains (shared distinction at an end or next to an end), 11/18 when the knot holding both
+  ends holds one knot in each half. That reading decides the whole distribution through the third new distinction, and the
+  halves enter at the fourth (computed, every presentation of 5 to 9). Post hoc, the meeting pattern alone, with the line ignored,
+  decides how the growth branches. Whether the bracketing is a distance is open: it is read from the states' disagreement counts
+  together with the knots, and the states alone do not give it.
 - **History.**
+  - 2026-11-18 · `MEET-ORDERS-20261118-001`: the information is the bracketing (proved at the second new distinction); the
+    meeting pattern alone decides the branching (post hoc); status unchanged.
   - 2026-11-18 · The weave case scoped after `WEAVE-PAIR-R1` (Narrowing): a one-way strip ruler with full information exists; the
     two-way premise stays unmet; status unchanged.
   - 2026-11-18 · `WEAVE-PAIR-20261118-001`: the weave's best periodic candidate is disordered but a ruler only in envelope; status
@@ -2724,6 +2735,7 @@ evidence: results and their status come from the records each entry links.
   - `CUBE-DOUBLING-20261118-001`'s theorem: the cheapest rule with three or more knots per step reaches the cube at every
     doubling (its L4 uses that every old state is kept).
   - `KNOT-CAP-20261117-001`'s and `LOCAL-ROOM-20261118-001`'s laws, built on top of it.
+  - `MEET-ORDERS-20261118-001`'s Theorem 1 and census (KF3 from the presentations of a line).
 - **Challenge.** Widen the move set and rerun the same weightings:
   - all 34 three-place knots, or four-place ones (the parity of a filled cell is one four-place knot);
   - more knots per step;
@@ -2732,6 +2744,24 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `MEET-ORDERS-20261118-001` built on it (KF3 from every fewest-knot presentation of a line); status unchanged.
   - 2026-11-18 · `CUBE-DOUBLING-20261118-001` proved the cube growth under this entry (its referee: for any cap of three or more
     knots per step); status unchanged.
   - 2026-11-17 · Added by `STATE-RULES-20261117-001`.
+
+### A100 · How knots meet is compared on fewest-knot presentations of a line
+
+**Assumed** · 2026-11-18 · scope
+
+- **Statement.** `MEET-ORDERS-20261118-001` compares how knots meet on presentations of a line by the fewest betweenness knots,
+  n − 2 of them, which are exactly the line's bracketings, and reads mirror images as one. Presentations with more knots than
+  needed (redundant ones), with other knot kinds, or of bases other than a line are not in its population.
+- **Why.** Taken by default. The earlier matched starts (`STATE-RULES-20261117-001`, `KNOT-CAP-20261117-001`) were fewest-knot
+  presentations; with n − 2 knots each interior distinction is the middle of exactly one knot, which makes every presentation a
+  bracketing and the census finite (Catalan(n − 2) per labelling).
+- **Rests on it.** That study's Theorem 1 and census, and its reading that the bracketing is what the states do not carry.
+- **Challenge.** Add redundant knots to a bracketing (a knot whose rule the others already imply) and rerun KF3: knot-locality
+  reads the extra co-knotted pairs, so the order distribution can change with the states and the bracketing fixed. Then try
+  presentations of the 2 × 2 pattern or of a branching tree.
+- **History.**
+  - 2026-11-18 · Added by `MEET-ORDERS-20261118-001`.

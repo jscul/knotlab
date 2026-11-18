@@ -29,7 +29,8 @@ G16; tests A97 and A99. Refereed: report [R1](referee-R1/report.md), confirmed w
     - the first difference in the number of orders is at n = 10, and it is tiny (two orders 0.0027 against 0.0017);
     - the bases differ at once: at n = 7 each start has four classes of states, one shared, distance 3/4.
   - **The five-starts** (the line of five's 10 states, three knots each, the shared distinction at an end or in the middle) differ in
-    the number of orders from the first fill: two orders at n = 7 with probability 5/12 against 11/18, and 3 against 4 orders at
+    the number of orders from the second new distinction (*corrected 18 November 2026 by `MEET-ORDERS-20261118-001`: after the
+    first fill both have two orders with probability 1; that study explains the difference by how the knots nest*): two orders at n = 7 with probability 5/12 against 11/18, and 3 against 4 orders at
     n = 10 in 52 : 48 against 42 : 58. *After the referee:* every three-knot presentation of that line has exactly one shared
     distinction, at an end, next to an end or in the middle; this study tested two of the three positions.
   - **Under a cap of five per distinction** the six-starts differ sharply as well: two orders at n = 10 in 181 against 95 of 300

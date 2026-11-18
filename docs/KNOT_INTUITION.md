@@ -468,6 +468,23 @@ found that another survivor, which falls apart into independent strips two
 distinctions wide, does step outward strictly along each strip: a one-way
 ruler that carries all its information. The two-way one is still missing
 ([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md)).
+Why did the line of five's placements grow different numbers of orders
+(`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
+Because the knots nest. Every presentation of a line by the fewest knots is a
+bracketing: each knot lies within one half of another, starting from the knot
+that holds both ends. A fill makes the two halves of its knot cross. A second
+fill within one of those halves makes a third order; a second fill on steps the
+first does not touch keeps two. So the chance of two orders after two new
+distinctions is an exact count of which knots lie within which (proved): 5/12
+when the knots form a chain, which they do with the shared distinction at an
+end or next to an end, and 11/18 when the ends' knot holds one knot in each
+half, the middle placement. Through three new distinctions only that nesting
+matters; which way a chain lies enters at the fourth, where next to an end
+parts from the end (n = 9) and the two six-starts, both chains, part (n = 10).
+And the meeting pattern alone, with the line ignored, decides how the growth
+branches (post hoc): the knots meet twice, once in how they share
+distinctions and once in how that pattern sits along the states
+([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

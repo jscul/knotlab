@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: why the line of five's placements differ in the number of orders; one wording corrected
+
+- A new study (`MEET-ORDERS-20261118-001`, referee pending) explains the cap study's five-starts. The fewest-knot presentations of
+  a line by betweenness knots are exactly its bracketings: which knot lies within which half of which (proved). With the shared
+  distinction at an end or next to an end the knots form a chain; in the middle the ends' knot holds one knot in each half. An
+  exact formula in the bracketing gives the chance of two orders after the second new distinction (proved): 5/12 for the chains,
+  11/18 for the middle, and 51/140 for both six-starts, which are chains
+  ([decision note](research/MEET-ORDERS-20261118-001/meet_orders.md)).
+- Corrected (not a block): the five-starts differ in the number of orders from the second new distinction, not "from the first
+  fill"; after the first fill both have two orders with probability 1
+  ([decision note](research/KNOT-CAP-20261117-001/knot_cap.md)).
+
 ## 18 November 2026: the completeness check confirmed by its referee; three counts narrowed
 
 - The completeness check (`DECIDE-SMALL-20261117-001`) was confirmed by its referee with fresh code, with no Block. All 627 distinct

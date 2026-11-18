@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "ROW-ARRANGE-20261118-001Z-P001",
+ "canonical_id": "ROW-ARRANGE-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "ROW-ARRANGE-20261118-001Z",
+ "proof": "ROW-ARRANGE-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: what the arrangement of the count's rows holds",
+ "status": "Proved",
+ "claim": "Ledger closing ROW-ARRANGE-20261118-001: ticket A (R0-R5: the ladder, partial cubes are bases, no bounded-count reading and not colour refinement determine k, k NP-hard) and ticket B (frozen census, 7 of 8 held). Referee pending. No new claim.",
+ "dependencies": [
+  "ROW-ARRANGE-20261118-001A",
+  "ROW-ARRANGE-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "ROW-ARRANGE-20261118-001",
+  "epic_path": [
+   "ROW-ARRANGE-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/ROW-ARRANGE-20261118-001B/ROW-ARRANGE-20261118-001B-E001_readings/contract.json": "ca90329cc90e487dde6049e1b8a51721ffc863200f3e5b42a668fe93a478c7ba",
+  "artifacts/ROW-ARRANGE-20261118-001B/ROW-ARRANGE-20261118-001B-E001_readings/results.json": "e8b2787877b65e2bfd3b6aeffe6d6b6fb7c0a8fb629f2299e49878f37add57dc",
+  "proofs/ROW-ARRANGE-20261118-001A/ROW-ARRANGE-20261118-001A-P001_readings/manifest.json": "f4a3856908fc5fc5790af06e1aa93307d2f4007fbc6a3aef987ae9cb5041a168",
+  "proofs/ROW-ARRANGE-20261118-001A/ROW-ARRANGE-20261118-001A-P001_readings/result.json": "f658aebd89a7bd2dcd89d253983eba9d2353f282e6721f14f17e23213ad021a8"
+ },
+ "paths": {
+  "manifest": "proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

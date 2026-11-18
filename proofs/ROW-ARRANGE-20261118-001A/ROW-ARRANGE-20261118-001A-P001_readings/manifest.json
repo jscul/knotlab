@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "ROW-ARRANGE-20261118-001A-P001",
+ "canonical_id": "ROW-ARRANGE-20261118-001A-P001",
+ "proof": "ROW-ARRANGE-20261118-001A-P001",
+ "ticket": "ROW-ARRANGE-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "What colour refinement and local views of the count table cannot see",
+ "claim": "R0: the ladder of readings (a <= N1, W2 <= WL; B_r up to the full table, which determines the base). R1: every partial cube is a base (its betweenness solution set is its halfspaces). R2: F(a,b), two rings sharing a point, has k = max(a,b); for every count r, F(r,3r) and F(2r,2r) have equal views within count r and k = 3r against 2r, so no bounded-count reading determines k. R3: kappa(C10) and kappa(C5+C5) (simplex graphs, median, n = 21) agree under a, N1, W2 and 1-WL and have k = 2 against 3; B4 separates them, so local views and colour refinement are incomparable. R4 (classical): k from the table is NP-hard (Bandelt-van de Vel; via kappa and triangle-free 3-colouring); lambda is a matching. R5: distinct rows make W2 complete. R6: rings of arcs, split systems that are not bases, do the same.",
+ "standard_statement": "Weisfeiler-Leman refinement and Hanf-Gaifman locality on split metrics of partial cubes; simplex graphs; tree number of median graphs.",
+ "prior_work": "COUNT-BALLS-20261118-001 (reading a fails from n = 7); DISTANCE-ORDER-20261117-001 (the table determines these bases); REFINE-READ-20261107-001 (colour refinement on another object); classical: Weisfeiler-Leman, Cai-Furer-Immerman, Hanf, Gaifman, Djokovic-Winkler, Bandelt-van de Vel, Eppstein, Prowse-Woodall.",
+ "dependencies": [],
+ "completion_gate": "Ticket B's gates check R1 on four instances and R2, R3 on their smallest instances; the referee reviews the proofs.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proofs written with the run, several proposed by the advisor and checked; referee pending",
+  "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
+  "novelty": "classical in substance (locality, 1-WL, tree number) read in the program's terms"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "count_table_readings_ladder_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/ROW-ARRANGE-20261118-001A/ROW-ARRANGE-20261118-001A-P001_readings/manifest.json",
+  "identity": "proofs/ROW-ARRANGE-20261118-001A/ROW-ARRANGE-20261118-001A-P001_readings/identity.json",
+  "proof": "proofs/ROW-ARRANGE-20261118-001A/ROW-ARRANGE-20261118-001A-P001_readings/proof.md"
+ },
+ "attained_result": "R0-R5 proved; R4 classical."
+}

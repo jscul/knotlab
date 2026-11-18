@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "ROW-ARRANGE-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "ROW-ARRANGE-20261118-001Z",
+ "proof": "ROW-ARRANGE-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing ROW-ARRANGE-20261118-001: ticket A (R0-R5: the ladder, partial cubes are bases, no bounded-count reading and not colour refinement determine k, k NP-hard) and ticket B (frozen census, 7 of 8 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/ROW-ARRANGE-20261118-001B/ROW-ARRANGE-20261118-001B-E001_readings/contract.json": "Frozen",
+   "artifacts/ROW-ARRANGE-20261118-001B/ROW-ARRANGE-20261118-001B-E001_readings/results.json": "run output",
+   "proofs/ROW-ARRANGE-20261118-001A/ROW-ARRANGE-20261118-001A-P001_readings/manifest.json": "Proved",
+   "proofs/ROW-ARRANGE-20261118-001A/ROW-ARRANGE-20261118-001A-P001_readings/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -93,7 +93,7 @@ evidence: results and their status come from the records each entry links.
 | [A36](#a36--a-law-declared-cell-by-cell-is-a-native-substrate) | A law declared cell by cell is a native substrate | scope | Assumed |
 | [A37](#a37--a-path-composes-at-the-recurring-lags-its-dynamics-fixes) | A path composes at the recurring lags its dynamics fixes | reading | Assumed |
 | [A38](#a38--a-contact-is-cut-by-freezing-it) | A contact is cut by freezing it | scope | Assumed |
-| [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Assumed |
+| [A39](#a39--space-is-spaced-by-knots-that-compose) | Space is spaced by knots that compose | reading | Under challenge |
 | [A40](#a40--counted-length-is-a-native-magnitude) | Counted length is a native magnitude | measure | Confirmed |
 | [A41](#a41--distance-across-time-is-read-through-freezes) | Distance across time is read through freezes | reading | Confirmed |
 | [A42](#a42--a-grown-network-is-read-stage-by-stage) | A grown network is read stage by stage | scope | Confirmed |
@@ -156,6 +156,7 @@ evidence: results and their status come from the records each entry links.
 | [A99](#a99--states-only-growth-is-judged-on-conservative-betweenness-extensions-with-up-to-three-knots-per-step) | States-only growth is judged on conservative betweenness extensions with up to three knots per step | scope | Assumed |
 | [A100](#a100--how-knots-meet-is-compared-on-fewest-knot-presentations-of-a-line) | How knots meet is compared on fewest-knot presentations of a line | scope | Assumed |
 | [A101](#a101--the-number-of-orders-a-growth-rule-keeps-is-given-two) | The number of orders a growth rule keeps is given: two | scope | Assumed |
+| [A102](#a102--an-endless-bases-counts-are-read-in-its-maximal-entropy-weighting) | An endless base's counts are read in its maximal-entropy weighting | reading | Assumed |
 
 ## Entries
 
@@ -1017,7 +1018,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A39 · Space is spaced by knots that compose
 
-**Assumed** · 2026-11-08 · reading
+**Under challenge** · 2026-11-18 · reading
 
 - **Statement.** The spacing a law sets between two distinctions is their bond distance, the size of the least knot through both,
   minus one: distinctions joined only by a chain of knots that meet at gates are not spaced at all. A gate is a shared distinction
@@ -1034,6 +1035,12 @@ evidence: results and their status come from the records each entry links.
   carry, for example a hub chain in two dimensions whose chain balls are round. The cheapest test measures chain balls on a plane of
   gated knots against the grid it is drawn on.
 - **History.**
+  - 2026-11-18 · `COUNT-BALLS-20261118-001` ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md); referee
+    pending): the outline depends on which reading spaces the law. On the six-regular weave under not-all-equal, bond distance
+    gives the hexagon of steps apart (rational π), while the disagreement count, which carries every not-all-equal base, gives the
+    start's class a round outline (the amplitude the same along every repeat to 1e-4; computed exactly, classical in substance);
+    chain grids give smooth outlines just off round. So the circles of periodic laws and dimension read from ball growth, which
+    rest here, are statements about bond distance. Status Assumed → Under challenge.
   - 2026-11-08 · Added by `BOND-CHAIN-20261108-001`, replacing A12.
 
 ### A40 · Counted length is a native magnitude
@@ -2657,6 +2664,13 @@ evidence: results and their status come from the records each entry links.
   With the original eight betweenness distinctions attached, two mixed presentations have identical full states on the same 36 distinctions. One permits a complete next round of eleven joins and the other cannot run a complete round. The difference persists through one more common join. [Proof and checks](../research/MIXED-NEXT-JOIN-20261117-001/hidden_eight.md)
   On the aligned three-dimensional continuation with the original eight kept and hidden, anonymous bond distances through five determine all permitted next joins at every complete round. Permuting the three loose distinctions at a growing junction can realize any of their allowed assignments. [Proof and checks](../research/ALIGNED-NEXT-JOIN-20261117-001/aligned_rounds.md)
   Starting with the original eight alone, temporary tests using their own betweenness recover all twelve neighbor pairs from scalar bond distances. Every recovered orientation reaches the first aligned round. Four literal arrangements give identical feedback under fresh parity alone. [Proof and checks](../research/BOOTSTRAP-ALIGNMENT-20261117-001/getting_aligned.md)
+  `COUNT-BALLS-20261118-001` ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md); referee pending) read the
+  count's balls. On the six-regular weave the start's class fills a round outline and on chain grids a smooth one just off
+  round, where bond distance gives polygons; the outline's growth against the ball reads the meeting pattern's dimension, while
+  the count's own scale reads d/η. The number of orders is not a growth quantity: a ladder of two orders and a comb of one grow
+  identically (proved), and every start's growth read without names merges bases of two and three orders from seven
+  distinctions (computed), while the full table keeps them. So the orders sit in the count's arrangement, which start's row is
+  which, not in its growth.
 - **History.**
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.
   - 2026-11-18 · `ALIGNED-NEXT-JOIN-20261117-001` proved the exact next joins readable on every complete aligned round, with a finite check of the effect of the original eight.
@@ -2854,3 +2868,25 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-18 · `NEVER-NEST-20261118-001`'s referee (R1): what is given is the cap and the subdivision fallback, not only the
     number; the two is wholly the cap's. Statement narrowed; status unchanged.
   - 2026-11-18 · Added by `NEVER-NEST-20261118-001`.
+
+### A102 · An endless base's counts are read in its maximal-entropy weighting
+
+**Assumed** · 2026-11-18 · reading
+
+- **Statement.** On an endless base, the disagreement count of two distinctions is read as the limit of the uniform weighting of
+  allowed states on ever larger finite pieces, the weighting of greatest entropy per distinction. On the six-regular weave under
+  not-all-equal this is the translation-invariant weighting in which every co-knotted pair has equal values with chance 1/3
+  (Kenyon's kernel for the honeycomb's perfect matchings); on chain grids it is the unique weighting of the high-temperature Ising
+  law the chains reduce to.
+- **Why.** Taken by default in `COUNT-BALLS-20261118-001`, as earlier studies read finite tori and long strips
+  (`DISTANCE-DIM-20261117-001`, `WEAVE-LAWS-20261117-001`). It is the natural reading of "uniform over the allowed states" when there
+  are infinitely many, but on the weave it is one of a family: weightings of other slopes of the height also give translation-
+  invariant limits, from pieces with tilted boundaries.
+- **Rests on it.** `COUNT-BALLS-20261118-001`'s round outline on the weave (the amplitude, its isotropy, the ball counts), and the
+  chain grids' outlines.
+- **Challenge.** Read the weave in a weighting of another slope: the height's stiffness is then anisotropic, and the count's outline
+  should be an ellipse, not round. The cheapest test is Kenyon's kernel with unequal pair weights (exact, as in
+  `COUNT-BALLS-20261118-001B`), stopping at the ellipse's ratio as a function of the slope; then ask whether any uniform local rule
+  on finite pieces selects the round one.
+- **History.**
+  - 2026-11-18 · Added by `COUNT-BALLS-20261118-001`.

@@ -491,6 +491,12 @@ That outline depends on the law. Periodic layouts give polygons, whose ratio of
 perimeter to diameter (π, in Gołąb's sense) is a rational number, and an
 exactly round outline came from a random layout with no preferred direction
 ([LOGIC-CIRCLE-20261107-001](research/LOGIC-CIRCLE-20261107-001/logic_circle.md)).
+Read by the disagreement count instead (lesson 2.4), the same kind of periodic
+law gives smooth outlines: on the six-regular weave under not-all-equal the
+distinctions of the start's own class within a given count fill a round
+outline, and chain grids give outlines just off round
+([COUNT-BALLS-20261118-001](research/COUNT-BALLS-20261118-001/count_balls.md),
+referee pending). The polygons belong to bond distance.
 
 **Every bond is finite.** A meeting pattern can run on forever, but each bond
 in it joins finitely many distinctions. No system of clauses binds infinitely

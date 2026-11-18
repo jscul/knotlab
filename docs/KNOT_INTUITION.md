@@ -384,6 +384,25 @@ meets an odd number of disagreeing bonds, and none with every count even reads
 disordered; two others first counted with them fall apart into independent
 pieces (its referee)
 ([decision note](../research/WEAVE-MIX-20261117-001/weave_mix.md)).
+What does the count's ball look like (`COUNT-BALLS-20261118-001`, proofs and
+frozen computation, referee pending)? Round, on the weave. Take a start and the
+distinctions within a given count of it. Below half, only the start's own class
+is inside, and it fills a round outline: computed exactly on the endless weave,
+it reaches equally far along every repeat to one part in ten thousand at sixty
+steps, where bond distance gives the same law the hexagon of steps apart (the
+literature's triangular antiferromagnet, whose correlation Stephenson
+computed). On chain grids the outline is smooth and just off round, Gołąb's π
+3.1417 with one knot per pair, tending to 4 as the chains lengthen; grown split
+grids give the taxicab diamond. So periodic laws make polygons under bond
+distance, not under the count, and how round the count's ball is follows how
+near the law is to its critical point (classical). Its growth reads the
+dimension of the meeting pattern, through how the outline grows against the
+ball, but not the number of orders: a ladder of two orders and a comb of one
+grow alike (proved), and every start's growth, read without names, merges grown
+bases of two and three orders from seven distinctions, while the full table of
+counts keeps them. Read on states instead, "the states within r disagreements of
+a state" cannot tell a base from its translate by one of its own states
+([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

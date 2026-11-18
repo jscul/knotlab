@@ -1,0 +1,1191 @@
+{
+  "by_step": {
+    "1": {
+      "distinct_literal_supports_first_seen": 310,
+      "kept_original_loose_bit": 296,
+      "measured_seed_path_occurrences": 440,
+      "measured_unordered_scalar_pairs": 106480,
+      "original_swap_still_scalar": 230,
+      "original_swap_still_scalar_and_moves_state": 230,
+      "original_swap_still_scalar_and_some_triple_legal": 0,
+      "original_swap_still_scalar_and_some_triple_legal_and_moves_state": 0,
+      "with_a_legal_triple_using_tracked_bit": 0,
+      "with_any_legal_triple": 0
+    },
+    "2": {
+      "distinct_literal_supports_first_seen": 4496,
+      "kept_original_loose_bit": 3156,
+      "measured_seed_path_occurrences": 6556,
+      "measured_unordered_scalar_pairs": 1968439,
+      "original_swap_still_scalar": 2006,
+      "original_swap_still_scalar_and_moves_state": 2006,
+      "original_swap_still_scalar_and_some_triple_legal": 0,
+      "original_swap_still_scalar_and_some_triple_legal_and_moves_state": 0,
+      "with_a_legal_triple_using_tracked_bit": 0,
+      "with_any_legal_triple": 0
+    },
+    "3": {
+      "measured_seed_path_occurrences": 0,
+      "third_moves_preserving_tracked_loose": 42560,
+      "with_a_legal_triple_using_tracked_bit": 0
+    }
+  },
+  "example_continuations": {
+    "first_live_swap_failure": {
+      "continuation": [
+        {
+          "consumed": [
+            14
+          ],
+          "fresh": [
+            20,
+            21
+          ],
+          "parents": [
+            5
+          ]
+        },
+        {
+          "consumed": [
+            15,
+            18
+          ],
+          "fresh": [
+            22,
+            23
+          ],
+          "parents": [
+            6,
+            8
+          ]
+        }
+      ],
+      "distinguishing_bit_and_two_entries": [
+        22,
+        6,
+        7
+      ],
+      "junction_supports": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          3,
+          4,
+          9,
+          13
+        ],
+        [
+          5,
+          6,
+          10,
+          14
+        ],
+        [
+          7,
+          8,
+          11,
+          15
+        ],
+        [
+          9,
+          10,
+          11,
+          12,
+          16,
+          17
+        ],
+        [
+          12,
+          18,
+          19
+        ],
+        [
+          14,
+          20,
+          21
+        ],
+        [
+          15,
+          18,
+          22,
+          23
+        ]
+      ],
+      "source": "width_20_type_12356",
+      "source_history": [
+        [
+          [
+            0
+          ],
+          2
+        ],
+        [
+          [
+            0
+          ],
+          2
+        ],
+        [
+          [
+            0
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          2
+        ],
+        [
+          [
+            4,
+            5,
+            6
+          ],
+          3
+        ],
+        [
+          [
+            7
+          ],
+          2
+        ]
+      ],
+      "tracked_loose": 13,
+      "tracked_shared": 9,
+      "width": 24
+    }
+  },
+  "full_marked_table_comparison_across_measured_states": {
+    "classes_shared_between_physical_types": 0,
+    "exact_legal_classes": 0,
+    "forbidden_group_inputs_canonicalized": 0,
+    "forbidden_named_occurrences_passing_necessary_filter": 0,
+    "grouped_numbered_tables_and_active_sets": 4806,
+    "numbered_group_triples": 10880981,
+    "opposite_color_exact_classes": 0,
+    "opposite_color_named_forbidden_occurrences": 0,
+    "opposite_color_occurrence_pairs": 0,
+    "opposite_color_pairs_also_matching_before_pruning": 0,
+    "opposite_color_witnesses": [],
+    "positive_group_input_maps_verified_entry_by_entry": 0
+  },
+  "independent_numeric_support_states_measured": 4806,
+  "number_with_persistent_common_witness_proof": 11,
+  "other_source_examined_separately": "width_20_type_12350",
+  "per_source_transposition": [
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 4,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              5
+            ]
+          },
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 22,
+        "third_moves_preserving_tracked_loose": 3192,
+        "two_steps": 404
+      },
+      "source": "width_20_type_12356",
+      "tracked_loose": 13,
+      "tracked_shared": 9
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 5,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              4
+            ]
+          },
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 22,
+        "third_moves_preserving_tracked_loose": 3192,
+        "two_steps": 404
+      },
+      "source": "width_20_type_12356",
+      "tracked_loose": 14,
+      "tracked_shared": 10
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 6,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              4
+            ]
+          },
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              5
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 22,
+        "third_moves_preserving_tracked_loose": 3192,
+        "two_steps": 404
+      },
+      "source": "width_20_type_12356",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "4": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "5": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 18,
+        "third_moves_preserving_tracked_loose": 2480,
+        "two_steps": 340
+      },
+      "source": "width_20_type_12374",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              7
+            ],
+            "other_possible_old_holders": [
+              7
+            ]
+          },
+          "5": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              7
+            ],
+            "other_possible_old_holders": [
+              7
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 8,
+        "third_moves_preserving_tracked_loose": 216,
+        "two_steps": 76
+      },
+      "source": "width_20_type_12384",
+      "tracked_loose": 14,
+      "tracked_shared": 13
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 6,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              7
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 1200,
+        "two_steps": 168
+      },
+      "source": "width_20_type_12460",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 7,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 1200,
+        "two_steps": 168
+      },
+      "source": "width_20_type_12460",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              5
+            ],
+            "other_possible_old_holders": [
+              5
+            ]
+          },
+          "6": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 656,
+        "two_steps": 164
+      },
+      "source": "width_20_type_12473",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 5,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 18,
+        "third_moves_preserving_tracked_loose": 2912,
+        "two_steps": 340
+      },
+      "source": "width_20_type_13598",
+      "tracked_loose": 14,
+      "tracked_shared": 10
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              5
+            ]
+          },
+          "4": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 18,
+        "third_moves_preserving_tracked_loose": 2640,
+        "two_steps": 340
+      },
+      "source": "width_20_type_13598",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 5,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 14,
+        "third_moves_preserving_tracked_loose": 1616,
+        "two_steps": 200
+      },
+      "source": "width_20_type_13613",
+      "tracked_loose": 14,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              4
+            ],
+            "other_possible_old_holders": [
+              4
+            ]
+          },
+          "5": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [
+              4
+            ],
+            "other_possible_old_holders": [
+              4
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 16,
+        "third_moves_preserving_tracked_loose": 1792,
+        "two_steps": 284
+      },
+      "source": "width_20_type_13872",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              4
+            ],
+            "other_possible_old_holders": [
+              4
+            ]
+          },
+          "5": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              4,
+              6
+            ],
+            "other_possible_old_holders": [
+              4,
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 14,
+        "third_moves_preserving_tracked_loose": 632,
+        "two_steps": 172
+      },
+      "source": "width_20_type_13936",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 6,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              7
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 880,
+        "two_steps": 144
+      },
+      "source": "width_20_type_14034",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              6
+            ]
+          },
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              5
+            ],
+            "other_possible_old_holders": [
+              5
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 584,
+        "two_steps": 144
+      },
+      "source": "width_20_type_14034",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "6": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 1296,
+        "two_steps": 172
+      },
+      "source": "width_20_type_14050",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "6": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 864,
+        "two_steps": 152
+      },
+      "source": "width_20_type_14119",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "0": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "5": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 18,
+        "third_moves_preserving_tracked_loose": 2480,
+        "two_steps": 328
+      },
+      "source": "width_20_type_16682",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "6": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 14,
+        "third_moves_preserving_tracked_loose": 952,
+        "two_steps": 180
+      },
+      "source": "width_20_type_16684",
+      "tracked_loose": 16,
+      "tracked_shared": 13
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "0": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "5": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              7
+            ],
+            "other_possible_old_holders": [
+              7
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 8,
+        "third_moves_preserving_tracked_loose": 216,
+        "two_steps": 76
+      },
+      "source": "width_20_type_16695",
+      "tracked_loose": 14,
+      "tracked_shared": 13
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "0": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "5": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              4
+            ],
+            "other_possible_old_holders": [
+              4,
+              7
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 14,
+        "third_moves_preserving_tracked_loose": 640,
+        "two_steps": 156
+      },
+      "source": "width_20_type_16696",
+      "tracked_loose": 15,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "3": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              4
+            ],
+            "other_possible_old_holders": [
+              4
+            ]
+          },
+          "5": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              4
+            ],
+            "other_possible_old_holders": [
+              4,
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 14,
+        "third_moves_preserving_tracked_loose": 640,
+        "two_steps": 156
+      },
+      "source": "width_20_type_16696",
+      "tracked_loose": 16,
+      "tracked_shared": 13
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 5,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              3
+            ],
+            "other_possible_old_holders": [
+              3
+            ]
+          },
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              3
+            ],
+            "other_possible_old_holders": [
+              3,
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 20,
+        "third_moves_preserving_tracked_loose": 2136,
+        "two_steps": 332
+      },
+      "source": "width_20_type_16759",
+      "tracked_loose": 14,
+      "tracked_shared": 10
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 7,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 6,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              3
+            ],
+            "other_possible_old_holders": [
+              3
+            ]
+          },
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              3
+            ],
+            "other_possible_old_holders": [
+              3,
+              5
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 20,
+        "third_moves_preserving_tracked_loose": 2136,
+        "two_steps": 332
+      },
+      "source": "width_20_type_16759",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 6,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 8,
+        "third_moves_preserving_tracked_loose": 504,
+        "two_steps": 88
+      },
+      "source": "width_20_type_16760",
+      "tracked_loose": 14,
+      "tracked_shared": 13
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "6": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 14,
+        "third_moves_preserving_tracked_loose": 952,
+        "two_steps": 180
+      },
+      "source": "width_20_type_16787",
+      "tracked_loose": 16,
+      "tracked_shared": 13
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "0": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "5": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              6
+            ],
+            "other_possible_old_holders": [
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 656,
+        "two_steps": 152
+      },
+      "source": "width_20_type_16820",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              3
+            ],
+            "other_possible_old_holders": [
+              3
+            ]
+          },
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [
+              3
+            ],
+            "other_possible_old_holders": [
+              3
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 12,
+        "third_moves_preserving_tracked_loose": 880,
+        "two_steps": 156
+      },
+      "source": "width_20_type_16833",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": false,
+        "holder": 7,
+        "other_directions": {
+          "0": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "6": {
+            "loose_bits_on_witness": 1,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 10,
+        "third_moves_preserving_tracked_loose": 656,
+        "two_steps": 120
+      },
+      "source": "width_20_type_16988",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 6,
+        "other_directions": {
+          "1": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              7
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 10,
+        "third_moves_preserving_tracked_loose": 584,
+        "two_steps": 112
+      },
+      "source": "width_20_type_17001",
+      "tracked_loose": 15,
+      "tracked_shared": 11
+    },
+    {
+      "initial_common_witness_control": {
+        "common_witness": 8,
+        "forbidden_for_every_continuation_retaining_the_bit": true,
+        "holder": 7,
+        "other_directions": {
+          "2": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": []
+          },
+          "4": {
+            "loose_bits_on_witness": 0,
+            "not_adjacent_to_cap": [],
+            "other_possible_old_holders": [
+              6
+            ]
+          }
+        }
+      },
+      "paths_by_depth": {
+        "one_step": 10,
+        "third_moves_preserving_tracked_loose": 584,
+        "two_steps": 112
+      },
+      "source": "width_20_type_17001",
+      "tracked_loose": 16,
+      "tracked_shared": 12
+    }
+  ],
+  "retained_marked_table_comparison_across_measured_states": {
+    "classes_shared_between_physical_types": 0,
+    "exact_legal_classes": 0,
+    "forbidden_group_inputs_canonicalized": 0,
+    "forbidden_named_occurrences_passing_necessary_filter": 0,
+    "grouped_numbered_tables_and_active_sets": 1846,
+    "numbered_group_triples": 2885027,
+    "opposite_color_exact_classes": 0,
+    "opposite_color_named_forbidden_occurrences": 0,
+    "opposite_color_occurrence_pairs": 0,
+    "opposite_color_pairs_also_matching_before_pruning": 0,
+    "opposite_color_witnesses": [],
+    "positive_group_input_maps_verified_entry_by_entry": 0
+  },
+  "scope": "All one- and two-move continuations up to loose-port permutations fixing the two tracked bits, and every third move preserving the loose bit after these prefixes. All depth-one and depth-two tables were measured in full. A depth-three table is measured only if one of its legal triples uses the tracked loose bit.",
+  "source_types": 23,
+  "span_archive_sha256": "f6bf1f48a6c59d9062277257e1f727bc458f1441770373e4da6ee5062af5c027",
+  "span_checker_sha256": "ece53f8c0aa3f71c6be5984de374992d11c15bd3f4a20e9ff979d4c57e7cd6a2",
+  "target_triple_menu_control": {
+    "accepted_mark": [
+      14,
+      15,
+      20
+    ],
+    "rejected_mark": [
+      14,
+      15,
+      16
+    ],
+    "source": "continuation.json#matched_retained_rows_control"
+  },
+  "tracked_source_transpositions": 31
+}

@@ -602,7 +602,14 @@ follows, whatever else the knots are. Along every growth tried, the first fill
 makes the first filled knot and the first crossing in the same step; later fills
 close loops but never enclose again. Outside these growths the reading is one
 way only: a filled knot always brings a crossing, but a crossing seldom comes
-with a filled knot
+with a filled knot. And after the switch, can the knots near a fill tell whether
+it keeps the two orders (`KEEP-READ-20261118-001`, proof and frozen computation,
+referee pending)? No: a fill completing a square's corner and one twisting three
+distinctions in a row use the same three knots, and about a fifth of the fills
+that keep two orders look, in their own knots and in every betweenness among
+their distinctions, exactly like fills that add a third. Keeping two orders reads
+the crossings, which depend on the whole base
+([decision note](../research/KEEP-READ-20261118-001/keep_read.md))
 ([decision note](../research/KNOT-SWITCH-20261118-001/knot_switch.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?

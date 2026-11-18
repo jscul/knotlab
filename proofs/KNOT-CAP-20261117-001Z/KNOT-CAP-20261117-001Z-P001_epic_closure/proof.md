@@ -3,7 +3,7 @@
 Status: Proved
 
 Ticket `KNOT-CAP-20261117-001Z`, 2026-11-18. A ledger; it makes no new claim. The decision note is
-`research/KNOT-CAP-20261117-001/knot_cap.md`. Referee pending.
+`research/KNOT-CAP-20261117-001/knot_cap.md`. Refereed (R1, confirmed with fixes; see the last section).
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
@@ -13,3 +13,11 @@ Ticket `KNOT-CAP-20261117-001Z`, 2026-11-18. A ledger; it makes no new claim. Th
 | 4 | After erasure at n = 8 the distance is non-increasing and stays positive: 0.78, 0.66, 0.52, 0.41 (six-starts), 0.65, 0.46, 0.30, 0.20 (five-starts) at n = 8 to 11; with the knots kept, about 0.7 for the six-starts. | proved (T4); computed | A, B (K4) |
 
 **Recommendation:** Research directions; S6 (cube growth at each doubling) starts next on the coordinator's queue.
+
+## After the referee (R1, 18 November 2026)
+
+Confirmed with fixes, no Block; folded in the same day and logged in `docs/CORRECTIONS.md`. The rows above are kept as written.
+- **Narrowing** of row 4. For the five-starts the kept control fades too (0.65, 0.47, 0.40); only the six-starts' fading is due to
+  erasure.
+- **Not a block** on row 3. "Correspond class for class" is the multiset of probabilities of classes of states and knots and the
+  order distributions; the classes of states differ. The c = 5 difference is the cap reading the fan's hub, not separate evidence.

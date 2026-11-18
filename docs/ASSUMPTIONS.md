@@ -2601,9 +2601,11 @@ evidence: results and their status come from the records each entry links.
   `KNOT-CAP-20261117-001` ([decision note](../research/KNOT-CAP-20261117-001/knot_cap.md); referee pending) added caps on
   contacts: the two tightest (three knots per distinction, two per pair) stop the growth exactly at the 2 × 2 pattern, looser ones
   pass it, and none keeps two orders growing. On the owner's premise it found that how knots meet is information the states lack:
-  from matched starts it changes what grows and, for one pair and under a cap, how many orders; after the knots are erased the
-  states keep a fading imprint of it.
+  from matched starts it changes what grows and, for one pair (end hub against middle hub), how many orders; after the knots are
+  erased the states keep a fading imprint of it (the fading due to erasure shown for the six-starts; its referee).
 - **History.**
+  - 2026-11-18 · The cap study scoped after `KNOT-CAP-R1` (Narrowing): the fade due to erasure holds for the six-starts; the c = 5
+    difference is built into the cap; status unchanged.
   - 2026-11-18 · `KNOT-CAP-20261117-001`: the tight caps stop at two orders without growing them; how knots meet changes what
     grows and, for some starts, how many orders; status unchanged.
   - 2026-11-17 · `STATE-RULES-20261117-001`: no uniform states-only or knot-local law tried keeps two orders (A99's move set);

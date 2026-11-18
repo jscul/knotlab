@@ -28,7 +28,7 @@ Referee).
   every route reaches the same cube each time the number of distinctions doubles: one more order each time (computed to 16).
 - **Uniform choice** gives many orders.
 - **Reading which knots meet** changes which bases grow, but not how many orders they have, for these two starts (*scoped on 18
-  November 2026 by `KNOT-CAP-20261117-001`: for another matched pair, and under a cap, it changes the number of orders too*). *Narrowed after the referee: with
+  November 2026 by `KNOT-CAP-20261117-001`: for another matched pair it changes the number of orders too*). *Narrowed after the referee: with
   1,000 runs per start, two starts with the same states and different knots grow different bases (they share 1 of 4 classes at
   n = 7) with the same number of orders.*
 
@@ -102,7 +102,7 @@ The rule may also read the knots, with names and history erased. A new knot must
 
 So how the knots meet does carry information the states do not: it fixes where the first fill can go, and the bases grown from
 the same states then differ (the referee's 1,000 runs). For these two starts it does not change how many orders they have (exactly
-equal through n = 9; `KNOT-CAP-20261117-001` found other starts where it does). No knot-reading rule tried
+equal through n = 9, with a tiny difference from n = 10; `KNOT-CAP-20261117-001` found other starts where it does). No knot-reading rule tried
 keeps two orders.
 
 ### A rule with no coin (Codex's check)

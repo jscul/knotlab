@@ -2,7 +2,8 @@
 
 Epic `KNOT-CAP-20261117-001`, 17 to 18 November 2026, by Claude, on the coordinator's go-ahead. It takes the first direction of
 `STATE-RULES-20261117-001`, that study's referee's lead, and the owner's question about erasure, passed on from Codex. Goals G1 and
-G16; tests A97 and A99. Referee pending.
+G16; tests A97 and A99. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18 November
+(see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `3e41d8f11` at 23:58:38 UTC on 17 November. The five
@@ -22,23 +23,28 @@ G16; tests A97 and A99. Referee pending.
 - **How the knots meet can change the number of orders, not only the bases** (exact). This revises the earlier reading from one
   pair of starts.
   - **The six-starts of `STATE-RULES-20261117-001`** (the line's 12 states, with a distinction in all four knots or in none):
-    - the two starts' growths correspond class for class, with the same probabilities, through n = 9, so the number of orders is
-      exactly the same there (two orders at n = 8: 0.3643 from each);
+    - the two starts' classes of states and knots carry the same multiset of probabilities through n = 9, and the number of orders
+      is exactly the same there (two orders at n = 8: 51/140 from each); *scoped after the referee: their classes of states differ
+      (14 against 15 at n = 8, 52 against 57 at n = 9), and the coarse counts by 0.0023 at n = 9;*
     - the first difference in the number of orders is at n = 10, and it is tiny (two orders 0.0027 against 0.0017);
     - the bases differ at once: at n = 7 each start has four classes of states, one shared, distance 3/4.
   - **The five-starts** (the line of five's 10 states, three knots each, the shared distinction at an end or in the middle) differ in
-    the number of orders from the first fill: two orders at n = 7 with probability 0.417 against 0.611, and 3 against 4 orders at
-    n = 10 in 52 : 48 against 42 : 58.
+    the number of orders from the first fill: two orders at n = 7 with probability 5/12 against 11/18, and 3 against 4 orders at
+    n = 10 in 52 : 48 against 42 : 58. *After the referee:* every three-knot presentation of that line has exactly one shared
+    distinction, at an end, next to an end or in the middle; this study tested two of the three positions.
   - **Under a cap of five per distinction** the six-starts differ sharply as well: two orders at n = 10 in 181 against 95 of 300
-    runs.
+    runs. *After the referee:* that is the degree cap reading the fan's hub (four knots against three at the start), so it is built
+    into the cap and not separate evidence about the knots.
 - **After the knots are erased the states remember, with a fading imprint** (exact). Grow with the knot-reading rule to n = 8, then
   forget the knots and continue from the states alone:
   - the six-starts' distance falls from 0.78 to 0.66, 0.52 and 0.41 at n = 9, 10 and 11, while with the knots kept it stays near
     0.7 (0.68 and 0.72 at n = 9 and 10);
   - the five-starts' falls from 0.65 to 0.46, 0.30 and 0.20, and by n = 14 it is near the sampling floor (sampled 0.06 against a
-    floor of 0.05; p = 0.035).
+    floor of 0.05; p = 0.035). *Narrowed after the referee:* with the knots kept it fades too (0.65, 0.47, 0.40 at n = 8, 9, 10,
+    against 0.65, 0.46, 0.30 erased).
 
-  So the knots carry what the states only keep for a while.
+  So for the six-starts the knots carry what the states only keep for a while. For the five-starts the difference fades with or
+  without them, a little faster without.
 
 **Which state differences.** At n = 7 the six-starts' classes found in one start only come in matched sets: three from each, all
 with 12 states, 5 splits and two orders, with 1, 2 and 3 crossings. Every coarse count agrees, and the bases still differ: the
@@ -51,7 +57,8 @@ features 0.67 at n = 6, falling to 0.12 at n = 10).
 - Looser limits do not hold two orders; they let the growth run on.
 - How the knots meet is information the states do not hold. It changes which shapes grow, and for some starts how many orders they
   have.
-- When the knots are forgotten, the states keep a fading memory of how they met.
+- When the knots are forgotten, the states keep a fading memory of how they met. For the six-starts the fading is the erasure's;
+  for the five-starts the difference fades with the knots kept as well.
 
 ## Predictions and verdicts
 
@@ -97,7 +104,8 @@ Known mathematics, labelled: data processing for total variation. Local: the sto
 ## What it means for A97, A99 and the goals
 
 - **A97** stays under challenge, with a positive finding: how knots meet is information the states lack, enough to change what
-  grows and, from the five-starts and under a cap, how many orders. The states keep a fading imprint of it.
+  grows and, from the five-starts, how many orders. The states keep a fading imprint of it (the fading due to erasure shown for
+  the six-starts).
 - **A99** (the move set) stays assumed. The caps were added on top of it.
 - **G1:** obstruction learned. The natural caps stop at two orders without growing them, and looser caps pass them.
 - **G16:** capability gained. Exact distances between matched starts, with and without the knots, and the rate at which the states
@@ -126,6 +134,32 @@ account of the six-starts and gave the matched-start and erasure predictions, wi
 tests, the no-erasure control, three kinds of distance and the table of classes in one start only. Its exact value of 3/4 at n = 7
 held. Five of its quantitative predictions failed (above). Not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh exact code (rational propagation,
+nothing shared with `caplib.py` or `rules.py`): confirmed with fixes, no Block.
+- T1 to T4 are proofs. The referee's exact run agrees for the degree cap of three and the pair cap of two, with and without
+  locality.
+- The six-starts' order distributions are identical through n = 9 (two orders 51/140 at n = 8 and 9409/339822 at n = 9), and the
+  first difference at n = 10 is confirmed (0.0027098 against 0.0017223).
+- The five-starts' 5/12 against 11/18 at n = 7, and 173/6552 against 233/2457 at n = 8, reproduce.
+- The exact erasure values carry no floor, so the fade is real.
+
+Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing.** For the five-starts the kept control fades too (0.65, 0.47, 0.40 against erased 0.65, 0.46, 0.30). Only for the
+   six-starts is the fading due to the erasure.
+2. **Not a block.** "Correspond class for class" overstated it. What matches is the multiset of probabilities of classes of states
+   and knots, and the order distributions. The classes of states differ (14 against 15 at n = 8), and the coarse counts by 0.0023
+   at n = 9.
+3. **Not a block.** A three-knot line of five has its one shared distinction at an end (120 labelled presentations), next to an end
+   (120) or in the middle (60). Two of the three positions were tested.
+4. **Not a block.** The c = 5 difference between the six-starts is the cap reading the fan's hub, built in, not separate
+   evidence.
+5. **Not a block.** The scoped `STATE-RULES-20261117-001` sentence gains "with a tiny difference from n = 10", and this note's
+   Corrections line, which said "none", now names the Narrowing logged at the close.
+
+The sampled six-start values are at the floor from about n = 10 (sampled 0.715 against the exact 0.522), as the note said.
+
 ## Position
 
 | Scope | Verdict | Why |
@@ -144,8 +178,9 @@ held. Five of its quantitative predictions failed (above). Not consulted after t
 | 3 | The forgetting rate: does the distance after erasure fall geometrically (about ×0.8 per step for the six-starts, ×0.67 for the five-starts), and what sets the rate? | 2/3 | 2/3 | Exact to n = 12 for both pairs → stop at a rate law or its failure | Alternative |
 | 4 | The 3 × 1 weave pair with the twist fixed and the ruler measured | 2/3 | 3/3 | Queued by the coordinator after S6 | Alternative |
 
-**Corrections:** none. The earlier narrowing ("the knots change what grows, not how many orders") is extended by this study, not
-contradicted: it was right for the six-starts.
+**Corrections:** one (Narrowing), logged at the close: `STATE-RULES-20261117-001`'s "the knots change what grows, not how many
+orders" holds for its six-starts (exactly through n = 9, with a tiny difference from n = 10), not in general. *Corrected after the
+referee: this line first said "none".*
 
 **Goals:** a G1 checkpoint (obstruction learned) and a G16 checkpoint (capability gained); no goal changed.
 

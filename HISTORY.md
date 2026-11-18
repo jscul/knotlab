@@ -39,13 +39,24 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   s = 7 and 8 at depth 12. They are no longer written as one rising sequence.
 - Sharpened: for that pattern at s = 7, stems hold no bond of any size.
 
+## 18 November 2026: the cap study, confirmed by its referee, with one narrowing
+
+- The cap study (`KNOT-CAP-20261117-001`) was confirmed by its referee with no Block. Its proofs hold, and its exact numbers
+  reproduce with independent code.
+- Narrowed: after the knots are erased, the fading of the difference between two starts is the erasure's only for the first pair.
+  For the five-distinction pair it fades with the knots kept as well.
+- Small fixes: what matches between the first pair is the probabilities of their classes, not the classes themselves; the
+  capped difference is built into the cap; two of the three positions of the five-distinction pair's shared distinction were
+  tested ([decision note](research/KNOT-CAP-20261117-001/knot_cap.md),
+  [referee's report](research/KNOT-CAP-20261117-001/referee-R1/report.md)).
+
 ## 18 November 2026: reading the knots can change the number of orders too
 
 - The states-only growth study's referee had found that, from two starts with the same states, a rule reading the knots grows
   different bases but the same number of orders. That holds for those two starts, exactly through nine distinctions. The cap
   study (`KNOT-CAP-20261117-001`) found a second pair of starts, a line of five with its shared distinction at an end or in the
   middle, where the number of orders differs from the first fill (computed exactly), and found that under a cap on contacts the
-  first pair differs too. The general statement is scoped to the first pair
+  first pair differs too (a difference the cap builds in by reading the hub, its referee found). The general statement is scoped to the first pair
   ([decision note](research/KNOT-CAP-20261117-001/knot_cap.md)).
 
 ## 17 November 2026: the states-only growth study, confirmed by its referee, with two narrowings

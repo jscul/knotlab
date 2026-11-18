@@ -2871,6 +2871,7 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `COPY-READ-20261118-001` built on it (SEED with knot-local moves, its crossing-making fills); status unchanged.
   - 2026-11-18 · `MID-RULE-20261118-001` built on it (the two-middle and one-end rules, knot-local and free); status unchanged.
   - 2026-11-18 · `KEEP-READ-20261118-001` built on it (SEED with knot-local moves, every move's local pictures); status unchanged.
   - 2026-11-18 · `KNOT-SWITCH-20261118-001` built on it (KF3, NN, NN2 and SEED with knot-local moves, every knot recorded);
@@ -2933,6 +2934,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `COPY-READ-20261118-001` ([decision note](../research/COPY-READ-20261118-001/copy_read.md); referee pending)
+    found that SEED's copy step, which grows two orders over the whole line, shows no sign in the fill's own knots or the
+    betweenness among its distinctions (all 566 absorbing fills looked like refused ones); one step out was untestable on bases
+    this small. Status unchanged.
   - 2026-11-18 · `MID-RULE-20261118-001` ([decision note](../research/MID-RULE-20261118-001/mid_rule.md); referee pending)
     proved that a fill makes a new crossing only through two different end knots, so after one free fill a rule taking only
     fills certified with at most one end knot keeps two orders forever, told no number and reading only the fill's knots. It only

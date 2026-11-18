@@ -656,6 +656,14 @@ it never makes a crossing again either, so it fills whole grids only when the
 first crossing reaches every split, and when its knots must reuse pairs that
 already share one it stops filling at once
 ([decision note](../research/MID-RULE-20261118-001/mid_rule.md)).
+Then what pulls a loose split into the grid (`COPY-READ-20261118-001`, proof and
+frozen computation, referee pending)? A fill tied by two knots that each extend a
+pair outward. Almost all such fills add a third order instead, and in their own
+knots and the betweenness among their distinctions the few that pull a split in
+(566 in nearly 1.8 million) look exactly like the others. The difference lies in
+whether the new crossings copy an existing split's crossings, which these small
+bases could not localise
+([decision note](../research/COPY-READ-20261118-001/copy_read.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
 Because the knots nest. Every presentation of a line by the fewest knots is a

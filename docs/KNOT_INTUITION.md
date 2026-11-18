@@ -635,6 +635,16 @@ fills that keep two orders look, in their own knots and in every betweenness
 among their distinctions, exactly like fills that add a third. Whether the knots
 one step further out suffice could not be tested on bases this small
 ([decision note](../research/KEEP-READ-20261118-001/keep_read.md)).
+Is there a safe local sign (`MID-RULE-20261118-001`, proof and frozen
+computation, referee pending)? Yes, on one side. A knot copies an old distinction
+onto the new one on the states it pins, so a new crossing needs two different
+knots that each extend a pair outward to the new distinction, two end knots
+(proved). A rule that, after its first free fill, takes only fills tied by at most
+one such knot never makes a third order, and reads only the fill's own knots. But
+it never makes a crossing again either, so it fills whole grids only when the
+first crossing reaches every split, and when its knots must reuse pairs that
+already share one it stops filling at once
+([decision note](../research/MID-RULE-20261118-001/mid_rule.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
 Because the knots nest. Every presentation of a line by the fewest knots is a

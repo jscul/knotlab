@@ -107,3 +107,17 @@ exploration), and set R3 and R4 with its confidence (80% and 90%).
 **Goals:** G1 checkpoint (capability gained: the excess located and bounded to twelve knots; growth open); no goal changed.
 
 **Assumptions:** A39 gains the excess form; no status changed, no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** the rim's excess now has an exact meaning. A bond, visited in the right order, is a closed route exactly as short as the
+heights allow, so bond distance is the steps apart plus one plus how much longer the shortest bond's route is than the plain round trip
+(proved). That gives an exact bond search that never lists the states. On every patch without holes of eleven and twelve knots (51,647),
+that excess is zero except on lone pairs of opposite classes facing each other; it is at most 1 up to eleven knots and 2 at twelve.
+Random patches of 20 to 40 knots showed at most 1. Whether it grows without limit is still open. All 5 frozen predictions held. Closed,
+referee pending.
+
+The position table, the next-step line and the three directions as in Position above.
+
+**Corrections:** none for this study. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A39 gains the excess form; no status
+changed. **Advisor:** before the freeze (checked the lemmas, sketched the figure-eight, proposed a growing family that stayed unbonded).

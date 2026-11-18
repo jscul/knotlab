@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MEET-TWIST-20261118-001B-E001",
+ "ticket": "MEET-TWIST-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does Lemma 2's knot-by-knot map carry KF3's options from every bracketing to its one-step move at every reached state, and the joint law of (states, pairs)?",
+ "definitions": {
+  "twist": "keep every distinction's odd set, move the ends' pair from {m,0} to {0,1}, rename i -> i-1 mod n0",
+  "T1": "options map knot by knot onto the image state's options, as multisets, both zero cost"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 bdcca8b9f5c41b0672019e831818a986a5da5d945e70338217dd775853c1ff01), checks.py (sha256 f252e2053b4e8cb96173265c95df28dfa2fed9835477fe5edb76f819acf9e399), merge.py (sha256 156b6ce962682440eb9d7d306ee341e844837ab58123b7ef88c708a1b5578e12), melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4, MEET-ORDERS-20261118-001B's engine unchanged)",
+  "run": "scripts/longrun.py launch job.py (622 cases), then merge.py"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "T1-T3 of research/MEET-TWIST-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "The mutant without role changes (fails on 18 states of five).",
+ "predictions": {
+  "T1": "options carried knot by knot at every reached state below depth",
+  "T2": "joint law of (states, pairs) carried at every level",
+  "T3": "no state added in the ranges run"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; a proof with its check or the first failing state.",
+ "runtime": "12 workers, 1 GB per case; registered as MEET-TWIST-B1."
+}

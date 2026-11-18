@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "CUMULANT-DIST-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "CUMULANT-DIST-20261118-001Z",
+ "proof": "CUMULANT-DIST-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing CUMULANT-DIST-20261118-001: ticket A (D0-D5) and ticket B (frozen run, 4 of 9 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/CUMULANT-DIST-20261118-001B/CUMULANT-DIST-20261118-001B-E001_delta/contract.json": "Frozen",
+   "artifacts/CUMULANT-DIST-20261118-001B/CUMULANT-DIST-20261118-001B-E001_delta/results.json": "run output",
+   "proofs/CUMULANT-DIST-20261118-001A/CUMULANT-DIST-20261118-001A-P001_delta/manifest.json": "Proved",
+   "proofs/CUMULANT-DIST-20261118-001A/CUMULANT-DIST-20261118-001A-P001_delta/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

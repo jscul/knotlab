@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "CUMULANT-DIST-20261118-001Z-P001",
+ "canonical_id": "CUMULANT-DIST-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "CUMULANT-DIST-20261118-001Z",
+ "proof": "CUMULANT-DIST-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: one distance for parity and not-all-equal knots",
+ "status": "Proved",
+ "claim": "Ledger closing CUMULANT-DIST-20261118-001: ticket A (D0-D5) and ticket B (frozen run, 4 of 9 held). Referee pending. No new claim.",
+ "dependencies": [
+  "CUMULANT-DIST-20261118-001A",
+  "CUMULANT-DIST-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "CUMULANT-DIST-20261118-001",
+  "epic_path": [
+   "CUMULANT-DIST-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/CUMULANT-DIST-20261118-001B/CUMULANT-DIST-20261118-001B-E001_delta/contract.json": "8e3b44a03ad5384a5ec3373b5c25eb8024961a14784bdb783124a589c70421fa",
+  "artifacts/CUMULANT-DIST-20261118-001B/CUMULANT-DIST-20261118-001B-E001_delta/results.json": "7fac7849ba47fbd894659148c0a38b58c7794c0277962ca0f9dab349be1c01b9",
+  "proofs/CUMULANT-DIST-20261118-001A/CUMULANT-DIST-20261118-001A-P001_delta/manifest.json": "d2b05c698b4ed73ad0da7b3ad31e27781640bf38d17f38ab9db356dc18bfffc2",
+  "proofs/CUMULANT-DIST-20261118-001A/CUMULANT-DIST-20261118-001A-P001_delta/result.json": "a445dc2e477444b579f6c31afc0a36d7a02aa943b5b292cb736d12283fd388cb"
+ },
+ "paths": {
+  "manifest": "proofs/CUMULANT-DIST-20261118-001Z/CUMULANT-DIST-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/CUMULANT-DIST-20261118-001Z/CUMULANT-DIST-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/CUMULANT-DIST-20261118-001Z/CUMULANT-DIST-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/CUMULANT-DIST-20261118-001Z/CUMULANT-DIST-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/CUMULANT-DIST-20261118-001Z/CUMULANT-DIST-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/CUMULANT-DIST-20261118-001Z/CUMULANT-DIST-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

@@ -164,3 +164,20 @@ Pending. To be run by the coordinator's background referee thread.
 and G1 checkpoint (no demonstrated advance); no goal changed.
 
 **Assumptions:** A97 gains this study; no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** the number of orders of a grown base sits in how the starts' growths are arranged against each other. Take each
+start's counts together with every other start's counts, tagged by distance. One round of that tells apart all 59,675 grown bases
+at eight distinctions, and all 55,394 reached at nine, so it reads the orders there. Each start's growth alone does not, and
+neither do the counts near each start: the view must reach almost across the base. For every reach, two rings sharing one
+distinction look identical from every start while their orders differ (proved). No fixed number of rounds works in general either
+(proved on 21-distinction bases). Reading the orders from the full table is NP-hard (classical), so the distances hold the orders,
+but reading them is global and can be costly. 7 of 8 frozen predictions held. The miss: local views needed one more step of reach
+than predicted. The epic is closed with the referee pending.
+
+The position table, the next-step line and the four directions as in Position above.
+
+**Corrections:** none for this study. The earlier COUNT-BALLS fold-in, already reported, logged two Narrowings and one Not a block.
+**Goals:** G16 checkpoint (capability gained); G1 checkpoint (no demonstrated advance); no goal changed.
+**Assumptions:** A97 gains this study; no new entry.

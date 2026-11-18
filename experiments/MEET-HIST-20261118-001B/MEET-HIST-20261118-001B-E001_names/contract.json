@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MEET-HIST-20261118-001B-E001",
+ "ticket": "MEET-HIST-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which names carry the share of the knots' nesting that one grown base's unnamed states miss: knowing which distinctions are the line's, or the order of growth; and is that order readable from the named states?",
+ "definitions": {
+  "U": "unnamed",
+  "NL": "line's distinctions named by place up to reversal, new anonymous",
+  "NO": "new named by order, line anonymous (equals N by construction)",
+  "N": "all named",
+  "share": "I(bare bracketing; reading)/H(bare bracketing), prior uniform over labelled presentations"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 da827f5af38170387f181251264ac4491436b3a0ccec02266d73816c000cf519), checks.py (sha256 0f56959daa15014682f6e4bffbe9439062db2f07437708393c445f751c3630fd), merge.py (sha256 b566e83240c052f054daa98b66ec6451847b2c224964aad1a38be2ddf1e8d01f), melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4, MEET-ORDERS-20261118-001B's engine unchanged)",
+  "run": "scripts/longrun.py launch job.py (193 cases), then merge.py"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "H1-H4 of research/MEET-HIST-20261118-001/preregistration.md, scored by merge.py (ties fail).",
+ "cheapest_meaningful_control": "The sanity row NO = N (by construction); the unnamed reading against the engine's state classes.",
+ "predictions": {
+  "H1": "H(N | NL) > 0 at every k >= 2",
+  "H2": "share(N) > share(NL) at every k >= 2",
+  "H3": "share(NL) > share(U) at every k >= 2",
+  "H4": "share(N) - share(NL) > share(NL) - share(U) at every k >= 2"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py; ties count as failures"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "12 workers, 1.2 GB per case; registered as MEET-HIST-B1."
+}

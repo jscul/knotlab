@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LOCAL-ROOM-20261118-001B-E001",
+ "ticket": "LOCAL-ROOM-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does a reach limit read from the states make the cheapest growth keep two orders and fill them; if not, does one remembered class per split?",
+ "definitions": {
+  "reach limit r": "every knot's old pair within r splits (disagreement count <= 2r)",
+  "class law": "knots only across splits of pairwise different classes; subdivided splits inherit their class; no pendants; start 2 x 2 with two classes"
+ },
+ "public_inputs": {
+  "code": "locallib.py (sha256 30a724e34e4f6e6319fb01420d3eb791c5be65a8b7932b84d72961e57230327b), run.py (sha256 ae0e1df372bddb6006772065a5e9e09aa6a430eddf94f178a21f6ffa0a149d13), checks.py (sha256 77f8e0502f3fe142e4c74cb25c85f96cd9739de99d7322867da7f34f223e6379); experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/rules.py (sha256 d1ee374ca2c6784bdbad72c32878d7c6a3c98c60a28da73f34f14f76c8d10172)",
+  "run": ".venv/bin/python -B run.py --part L1|L2, then --merge"
+ },
+ "forbidden_inputs": [
+  "Changing rules, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P3 of research/LOCAL-ROOM-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "r = 3 (expected to equal the cheapest rule at the doublings).",
+ "predictions": {
+  "P1": "LF3(1): no zero-cost step; line at every n (2n states); 2x2: 2n - 2 states",
+  "P2": "LF3(2), LF3(3): Q3 at 8 (prob 1), Q4 at 16 in 100/100, both starts",
+  "P3": "class law: k = lambda = 2 at every step, no stall, a full grid beyond n = 9 in every run"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "Expected under thirty minutes."
+}

@@ -23,7 +23,9 @@ E[∏_{v∈S} s_v] and κ_S is the joint cumulant, defined by m_S = Σ over part
 ## D1. Parity bases: δ is bond distance minus one (advisor)
 
 On a base cut out by parity knots (a linear code), m_S = ±1 when S is a dual codeword (a sum of checks) and 0 otherwise.
-- If S splits into two parts A, B with no dual codeword meeting both, the spins of A and of B are independent, so κ_S = 0. So
+- If S splits into two parts A, B with no circuit inside S meeting both (a separator of the restriction; corrected after the
+  referee, since a codeword inside S can meet both parts as a disjoint union of circuits), the restriction of the states to S is a
+  product over A and B, so the spins of A and of B are independent and κ_S = 0. So
   κ_S ≠ 0 forces the dual matroid restricted to S to be connected, and in a connected matroid every two elements lie on a common
   circuit inside S. So |S| ≥ (least circuit through x and y).
 - A circuit (an inclusion-minimal dual codeword) has no proper subset with a nonzero moment, so its cumulant is its moment, ±1.

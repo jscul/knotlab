@@ -3,7 +3,7 @@
 Status: Proved
 
 Ticket `CUMULANT-DIST-20261118-001Z`, 2026-11-18. A ledger; it makes no new claim. The decision note is
-`research/CUMULANT-DIST-20261118-001/cumulant_dist.md`. Referee pending.
+`research/CUMULANT-DIST-20261118-001/cumulant_dist.md`. Refereed (R1: one Block confirmed, the rest confirmed with fixes).
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |

@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: one distance for both knot laws, refereed; the Block confirmed, the headline scoped
+
+- The cumulant-distance study (`CUMULANT-DIST-20261118-001`) was refereed with fresh code. The referee confirms independently that the
+  distance is not steps apart on every knot tree (a hub of 32 knots breaks it), and confirms the rest with fixes
+  ([decision note](research/CUMULANT-DIST-20261118-001/cumulant_dist.md)).
+- Narrowed: "one distance reads both laws" holds as bond distance minus one on parity bases (proved), steps apart on small knot trees
+  under either law (computed, now to seven knots under one law) and τ on a chain-grid patch; large hubs and patch edges undercut it.
+- Not a block: one proof hypothesis worded more carefully (a separator of the circuits); the weave patch's shortcuts are a boundary
+  effect; the fair coin's cumulants (the tangent numbers) cited as the mechanism of the hub.
+
 ## 18 November 2026: the cumulant distance is steps apart on small trees, not on every tree
 
 - The study of one distance for parity and not-all-equal knots (`CUMULANT-DIST-20261118-001`) said the distance is steps apart on

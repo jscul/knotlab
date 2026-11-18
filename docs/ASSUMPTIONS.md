@@ -2679,8 +2679,8 @@ evidence: results and their status come from the records each entry links.
   and for every reach two rings sharing a distinction fool it, proved); no fixed round does in general (simplex graphs of rings,
   proved), and the number of orders cannot be read from the full table in polynomial time unless P = NP
   (classical). Distance holds it, at a cost.
-  `CUMULANT-DIST-20261118-001` ([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md); referee pending, B200)
-  found one distance for both laws: the least number of extra distinctions a set holding the pair needs, plus −log₃ of how
+  `CUMULANT-DIST-20261118-001` ([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md); refereed, B200)
+  found one distance for both laws on small trees and parity bases (narrowed after the referee): the least number of extra distinctions a set holding the pair needs, plus −log₃ of how
   strongly the set is bound beyond its parts (its joint cumulant). It gives one step per knot under parity and not-all-equal
   alike, steps apart on every parity tree (proved) and on every small knot tree under any mixture (computed to five knots), but
   not on large not-all-equal trees with a hub (corrected the same day: proved counterexample of 65 knots), bond distance minus

@@ -421,7 +421,7 @@ as hard as three-colouring (classical). The distances hold the orders; reading
 them is global, and can be costly
 ([decision note](../research/ROW-ARRANGE-20261118-001/row_arrange.md)).
 Is there one distance for both laws (`CUMULANT-DIST-20261118-001`, proofs and
-frozen computation, referee pending)? Yes, for knots. For two distinctions,
+frozen computation, refereed)? On small trees and parity bases, yes. For two distinctions,
 take the sets that hold both, and ask how strongly each set is bound beyond
 what its parts explain (the literature's joint cumulant); charge one step per
 extra distinction and −log₃ of the binding's weakness, and take the least. A

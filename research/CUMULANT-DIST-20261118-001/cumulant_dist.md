@@ -2,7 +2,8 @@
 
 Epic `CUMULANT-DIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes sub-goal B200 (one
 distance read from the states that reads parity and not-all-equal bases alike) in place of `ROW-ARRANGE-20261118-001`'s direction 3,
-as the go-ahead allowed once a concrete handle appeared. Goals G1 and G16; tests A97. **Referee pending.** **Corrected on 18 November
+as the go-ahead allowed once a concrete handle appeared. Goals G1 and G16; tests A97. **Refereed:** report [R1](referee-R1/report.md), which independently confirms the Block below and
+confirms the rest with fixes, folded in on 18 November (see Referee). **Corrected on 18 November
 2026 (before the referee, see Correction): "steps apart on every knot tree" is false for large not-all-equal trees with a hub.**
 
 **Record.**
@@ -43,7 +44,7 @@ It is read from the allowed states alone, and it ignores both the distinctions' 
   rings of five or more knots keep steps apart exactly, and only rings of three and four are shortened by the ring's own circuit.
 - **What it cannot do.** A split grid's ruler (twice the L1 distance) depends on which value is called 1: up to flipping values,
   a split line is a ring, its two ends as near as neighbours (proved), and this distance reads the line of eight as a ring of eight.
-  So one distance that ignores values reads parity and not-all-equal knots alike, but not the orders a betweenness growth builds,
+  So one distance that ignores values reads parity and not-all-equal knots alike on small trees, but not the orders a betweenness growth builds,
   which need the values. In two orders the obstruction is partial: pair readings cannot tell a corner's neighbour from the far
   corner, but no flip of values carries one to the other, so the full structure can.
 
@@ -73,7 +74,7 @@ It is read from the allowed states alone, and it ignores both the distinctions' 
 | P8 | split line of eight: switching rotation, invariant \|κ\|, largest δ = 2 + log₃ 2 | **failed** | rotation and invariance held; the largest δ is 2 + log₃ 4 = 3.26 (κ₄ = −1/4 at the antipode), not 2.63 |
 | P9 | split grids: a switching equivalence takes a corner's neighbour to the far corner | **failed** | none on 3 × 3, 3 × 4 or 4 × 4 (|C| and the triangle products agree, the full structure does not) |
 
-4 of 9 held. The four that hold are the B200 content: one distance, parity and not-all-equal alike, on trees and on parity bases,
+4 of 9 held. The four that hold are the B200 content: one distance, parity and not-all-equal alike, on small trees and on parity bases,
 and no shortcut on the chain grid. Of the five that failed, one is a coding error in the test (P4, which holds as stated), and
 four are informative: parity rings of five or more do not part from steps apart (P5), the weave patch's near-cancelling pairs are
 bound more strongly in fours (P7), the advisor's cap on the split line was too low (P8), and in two orders switching does not hide
@@ -91,7 +92,8 @@ ring. A97 stays under challenge, with this study added; the value convention is 
 
 ## Known results, and what this adds
 
-Known, cited once: Ursell functions and cumulant inequalities (Lebowitz; Aizenman's tree bound); connected information and
+Known, cited once: the cumulants of a fair coin, the tangent numbers from log cosh (the mechanism of D6); Ursell functions and
+cumulant inequalities (Lebowitz; Aizenman's tree bound); connected information and
 irreducible correlations (Schneidman, Still, Berry and Bialek 2003; Linden, Popescu and Wootters), whose canonical example is
 parity; tree metrics from correlations (log-det and information distances: Steel; Choi, Tan, Anandkumar and Willsky; Chow and
 Liu); matroid circuits and connectivity (Tutte); switching and two-graphs (Seidel; Zaslavsky; Toulouse); circular split systems
@@ -102,8 +104,11 @@ split lines as rings. Each is short once seen; a targeted literature check befor
 ## Limitations
 
 - Trees are computed, not proved, beyond parity (and beyond four-sets for not-all-equal); mixed trees to five knots, pure to six.
-- The chain grid and the weave are finite patches (4 × 4; radius 2), so boundaries shape the correlations; the weave's three
-  shortcut pairs sit at the patch edge.
+- The chain grid and the weave are finite patches (4 × 4; radius 2), so boundaries shape the correlations. On the radius-2 patch
+  every site is within one step of the edge; one of the three shortcut pairs joins two sites one step from the centre. The referee's
+  radius-3 patch reads those three at τ and finds 22 other pairs below τ, each with a distinction within one step of the new edge
+  and a near-cancelling correlation: a boundary effect (on the endless weave C never cancels).
+- The chain grid's δ = τ holds with the loose distinctions allowed into the sets as well (the referee).
 - The search is exponential in the set size; it is exact here only because the bases are small or the bound stops it.
 - δ is not shown to satisfy the triangle inequality in general.
 
@@ -148,13 +153,33 @@ The study's next step was to prove that δ is steps apart on every knot tree. As
 
 ## Referee
 
-Pending. To be run by the coordinator's background referee thread.
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code and no Codex.
+It independently confirms the Block on "steps apart on every knot tree" (its own partition-formula cumulants at (N, k) = (2, 1),
+(4, 1), (2, 2), (4, 2), (6, 1); log₃ |κ_{N+2}| − 2N is −1.44 at N = 30, +0.075 at 32, +1.70 at 34) and confirms the rest with
+fixes: 0 of 7,619 pairs differ on its own 300 parity bases, the triangle inequality held on 33,636 triples there, the trees, the
+split line and the chain grid (0 of 120 pairs below τ) recompute, and it adds every seven-knot tree under one law (48 shapes, 10,080
+pairs, none differs). Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Block (confirmed).** The scoped statement replaces "steps apart on every knot tree": proved, δ = bond distance − 1 on every
+   parity base and steps apart on every parity tree, and δ ≤ steps apart on every knot tree under any mixture (D3 holds on trees);
+   computed, steps apart on every tree to five knots under every mixture, six under one law (this study) and seven under one law
+   (the referee); false, on not-all-equal trees with a hub of 32 knots on one distinction; open, between seven and 65 knots and for
+   nested or spread hubs (`TREE-STEPS-20261118-001`).
+2. **Narrowing (headline).** "One distance reads both" is not fair as a general statement. Fair: bond distance − 1 on parity bases
+   (proved), steps apart on small knot trees under either law and mixtures (computed), τ on a chain-grid patch; large
+   not-all-equal hubs and patch edges undercut it, and it ignores the value convention.
+3. **Not a block.** D1's hypothesis is now "no circuit inside S meets both parts" (a separator of the restriction): a codeword inside
+   S can meet both parts as a disjoint union of circuits. The statement stands.
+4. **Not a block.** The weave patch's shortcuts are a boundary effect (see Limitations; the radius-3 patch).
+5. **Not a block.** The chain grid's result holds with loose distinctions in the sets.
+6. **Not a block.** The tangent numbers (the cumulants of a fair coin, from log cosh) are cited beside D6; −log |C| is the additive
+   tree metric (Cavender–Farris; Choi, Tan, Anandkumar and Willsky) and connected information (Schneidman et al. 2003) the nearest
+   relative; no distance of this exact form was found.
 
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: one distance for parity and not-all-equal knots (B200) | **Status:** Partially successful (referee pending) | One distance reads both laws alike on knot trees and reduces to bond distance and to τ on each law's bases; it cannot read value-dependent orders (split grids); 4 of 9 held |
+| This attempt: one distance for parity and not-all-equal knots (B200) | **Status:** Partially successful (refereed, confirmed with fixes; one Block) | One distance is bond distance − 1 on parity bases (proved), steps apart on small knot trees under either law (computed) and τ on a chain-grid patch; large not-all-equal hubs and patch edges undercut it; it cannot read value-dependent orders (split grids); 4 of 9 held |
 | Local direction: the cumulant distance | Promising | Proofs for trees of both laws, the triangle inequality and larger bases are open |
 | Broader exploration: correlation and information distances | Known alternatives | Ursell functions, tree metrics and switching are classical; the functional and its readings are the program's |
 | Long-term goal: G1 and G16 | G1 capability gained (narrowed: small trees and parity trees); G16 capability gained | G1: one state-read distance gives steps apart on small knot trees and every parity tree, either law. G16: what the two laws share and where they part (cycles), read from states |
@@ -178,7 +203,8 @@ changed.
 
 ## The final report as sent (18 November 2026)
 
-*As sent; its "every tree of knots" was corrected the same day (see Correction).*
+*As sent; its "every tree of knots" was corrected the same day (see Correction), and its headline narrowed after the referee
+(see Referee).*
 
 **Outcome (sub-goal B200): one distance read from the states now reads parity and not-all-equal knots alike.** For two
 distinctions, it charges one step for each extra distinction a set holding both needs, plus how weakly that set is bound beyond

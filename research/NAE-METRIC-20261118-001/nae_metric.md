@@ -131,3 +131,19 @@ block; trees of knots and rings proved) and G16 checkpoint (capability gained: j
 goal changed.
 
 **Assumptions:** A39 gains the block form; A97 gains this study; no status changed, no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** under not-all-equal, bond distance is a true distance exactly when it is one inside every block of the knots, because it
+adds up across joints (a joint is a distinction whose removal splits the knots; proved for every not-all-equal and betweenness base).
+Single knots and rings of knots are fine blocks, with bond distance one more than the steps apart, so every base whose knots form a
+tree of knots and rings is a true distance (proved). In every small case the thing that breaks it is two knots meeting twice; every
+pattern of single meetings with no K4 tangle that was checked passed (a conjecture, 354 bases). Tonight's grown lines and grids are
+true distances only trivially: every pair sits in a knot of three, so bond distance gives them no spacing. 7 of 8 frozen predictions
+held; the miss is one pair at distance three in one grown state, which is still a true distance. Closed, referee pending.
+
+The position table, the next-step line and the three directions as in Position above.
+
+**Corrections:** none for this study (BOND-METRIC's referee fold-in, logged earlier today, was one Narrowing). **Goals:** G1 and G16
+checkpoints (capability gained). **Assumptions:** A39 gains the block form, A97 this study; no status changed. **Advisor:** before the
+freeze (checked the proofs, gave the bond structure at a joint, the ring lower bound and three predictions).

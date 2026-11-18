@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "COUNT-BALLS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "COUNT-BALLS-20261118-001Z",
+ "proof": "COUNT-BALLS-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing COUNT-BALLS-20261118-001: ticket A (S1-S5 proved, S6-S7 cited and checked) and ticket B (frozen run, 14 of 20 predictions held: the weave's eleven; chain-grid C1c and C4; census G2). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/COUNT-BALLS-20261118-001B/COUNT-BALLS-20261118-001B-E001_outlines/contract.json": "Frozen",
+   "artifacts/COUNT-BALLS-20261118-001B/COUNT-BALLS-20261118-001B-E001_outlines/results.json": "run output",
+   "proofs/COUNT-BALLS-20261118-001A/COUNT-BALLS-20261118-001A-P001_count_balls/manifest.json": "Proved",
+   "proofs/COUNT-BALLS-20261118-001A/COUNT-BALLS-20261118-001A-P001_count_balls/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

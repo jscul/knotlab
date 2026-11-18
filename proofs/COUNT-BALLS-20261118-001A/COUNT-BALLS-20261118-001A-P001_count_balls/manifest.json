@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "COUNT-BALLS-20261118-001A-P001",
+ "canonical_id": "COUNT-BALLS-20261118-001A-P001",
+ "proof": "COUNT-BALLS-20261118-001A-P001",
+ "ticket": "COUNT-BALLS-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Count balls: what is settled by construction and by classical results",
+ "claim": "S1: on split bases the disagreement count is twice the number of separating splits; on boxes twice the L1 distance (ball the cross-polytope, Golab pi 4 in two orders, k = lam = d); on every base with lam = 2 twice the L1 distance of its two orders (NN's grids). S2: the 2 x m ladder (k = lam = 2) and the comb (k = 1) have outlines of 4 at every count from a middle start, so the count's growth does not read k. S3: parity bases are blank. S4: on the state side every parity state sees the weight enumerator; the state metric is blind to translation by a state; rooted at the all-equal state it determines k and lam. S5: a chain of l not-all-equal knots with loose distinctions is the pair law (w_eq - w_ne)/(w_eq + w_ne) = (-1/3)^l (high-temperature Ising), with the gauge sign and the loose identity. S6 (cited): the chain grid's count outline is the polar of {cosh q1 + cosh q2 <= A}, strictly convex and analytic for every l, tending to the taxicab diamond (Golab pi -> 4). S7 (cited): on the weave C ~ a r^(-1/2) cos(Q.r), a = 0.6322260804, isotropic.",
+ "standard_statement": "Split metrics and lattice dimension; Ising correlation-length shape above Tc; zero-temperature triangular antiferromagnet correlations; Hamming geometry of codes.",
+ "prior_work": "GRID-GROW-20261117-001, KNOT-ORDER-20261117-001 (count = 2 L1 on two-order boxes); DISTANCE-ORDER-20261117-001 (parity blank; the table determines these bases); DISTANCE-DIM-20261117-001 (chain grid's axis gap); classical: Onsager, Cheng-Wu, Rottman-Wortis, Avron-van Beijeren-Schulman-Zia, Campanino-Ioffe-Velenik, Stephenson, Blote-Hilhorst, Nienhuis-Hilhorst-Blote, Kenyon, Eppstein, Ovchinnikov.",
+ "dependencies": [],
+ "completion_gate": "Ticket B's gates and frozen run check S1, S2, S5 literally and S6, S7 numerically; the referee reviews the proofs and citations.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proofs written with the run; checked by ticket B; referee pending",
+  "independence": "literal enumeration and exact kernels against the statements; same task authorship",
+  "novelty": "known mathematics read in the program's terms"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "count_outline_round_on_weave_cited_and_computed": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/COUNT-BALLS-20261118-001A/COUNT-BALLS-20261118-001A-P001_count_balls/manifest.json",
+  "identity": "proofs/COUNT-BALLS-20261118-001A/COUNT-BALLS-20261118-001A-P001_count_balls/identity.json",
+  "proof": "proofs/COUNT-BALLS-20261118-001A/COUNT-BALLS-20261118-001A-P001_count_balls/proof.md"
+ },
+ "attained_result": "S1-S5 proved; S6-S7 cited and checked numerically."
+}

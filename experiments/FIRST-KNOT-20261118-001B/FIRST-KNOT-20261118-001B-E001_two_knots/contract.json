@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "FIRST-KNOT-20261118-001B-E001",
+ "ticket": "FIRST-KNOT-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Two first knots of three to six places, apart or sharing one or two distinctions, and small starts of several knots, grown by the cubic study's joining rule under one count and under the fewest counts: which counts run, what grows, and does anything prefer the smallest knot?",
+ "definitions": {
+  "open distinctions": "a start knot's loose distinctions",
+  "Lemma 1 scope": "no two start knots have a common neighbour",
+  "relay": "a top's single fresh distinction equal to a start-shared distinction on every allowed state"
+ },
+ "public_inputs": {
+  "code": "startlib.py (sha256 ba4d90274ebf36cb16626c29aba7be116437d6b694bf05f650295881da1d2074), job.py (sha256 cdd56be79f4f79f85cc835f2b46eda5094c6064821edf69cd9b1b2faecd949a1), merge.py (sha256 47925b0270e5f32de4663bfaf25bee435da8fd212124a18041f3c015f4d6de75), checks.py (sha256 a31d0373e4c71a332e924649a07214cf9592bd37188207a6f0fc14a109c82750)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "freelib.py of FRESH-COUNT-20261118-001B (closed record), imported by path"
+ },
+ "forbidden_inputs": [
+  "Changing cases, rules, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "G and Q1-Q5 of research/FIRST-KNOT-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates (one-knot replay, GF(2) closure, pieces never mix, refusal, two N^3) and the floor control Q5.",
+ "predictions": {
+  "Q1": "one count runs iff every start knot has l in {0,1,c}; stall round min r(l,c); counts as predicted (scored in Lemma 1's scope)",
+  "Q2": "fewest: apart closes as two Boolean patterns; sharing one grows two N^2 with exact per-round counts and one relay per piece with l >= 3",
+  "Q4": "small starts and two-distinction touches under fewest: closed iff every demand-0 junction implied; else constant differences over the last ten rounds; no forced distinction",
+  "Q5": "floor 2: constant per-round counts; floor 4: strictly increasing differences"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; proofs; referee hand-off; report.",
+ "runtime": "7 workers through scripts/longrun.py, a few minutes",
+ "amendments": []
+}

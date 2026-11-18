@@ -2693,7 +2693,14 @@ evidence: results and their status come from the records each entry links.
   on every knot tree except one mixed case, computed there (every six-knot tree, 94,848 pairs). On a mixed cycle (a not-all-equal
   path closed by a parity knot) it misreads the parity knot as k steps (the referee), so freedom, not zero correlation, is still
   to be read.
+  `FREE-READ-20261118-001` ([decision note](../research/FREE-READ-20261118-001/free_read.md); referee pending) reads it: bond
+  distance, the knot test applied to sets, is steps apart plus one on every knot tree of parity, not-all-equal and betweenness
+  knots in any mixture (proved), hub-free, and reads the mixed cycle's parity knot as one knot. It needs no measure, only which
+  values occur. Freedom and correlation part on cycles: on split grids every three distinctions form a knot, so bond distance is
+  flat and only correlation grades them; and freedom cannot mend the cumulant distance's hub shortcut, whose set is free (post
+  hoc).
 - **History.**
+  - 2026-11-18 · `FREE-READ-20261118-001`: bond distance is steps apart plus one on every knot tree under any mixture of the three laws (proved); flat on split grids; status unchanged.
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.
   - 2026-11-18 · `ALIGNED-NEXT-JOIN-20261117-001` proved the exact next joins readable on every complete aligned round, with a finite check of the effect of the original eight.
   - 2026-11-18 · `MEET-ADDED-20261118-001`: the states with the added knots, the reader told which are added, recover it

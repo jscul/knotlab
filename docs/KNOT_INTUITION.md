@@ -452,6 +452,20 @@ trees. On a cycle mixing the laws it can misread: close a not-all-equal path of
 k knots with a parity knot, and the mended distance puts that knot's two ends k
 steps apart, because they still correlate a little (its referee)
 ([decision note](../research/TREE-STEPS-20261118-001/tree_steps.md)).
+Then read freedom itself (`FREE-READ-20261118-001`, proof and frozen
+computation, referee pending). Take the least set holding both distinctions on
+which the allowed states form a knot, and count its size minus one: bond
+distance. On every tree of knots, parity, not-all-equal or betweenness in any
+mixture, it is steps apart plus one (proved). The two distinctions with the
+third distinction of each knot between them form a knot: fix them and the path
+is forced, forget any one and it goes slack. No smaller set can, because a set
+that skips some knot's branch splits into two free parts. Hubs cannot fool it,
+and it reads the mixed cycle's parity knot as one knot. It needs knots that
+pass a value on: chains of the clause "not all ones" hold no knot between their
+ends. Where freedom and correlation part is on cycles. On a split grid every
+three distinctions form a knot, so bond distance is flat while correlation
+grades the grid
+([decision note](../research/FREE-READ-20261118-001/free_read.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

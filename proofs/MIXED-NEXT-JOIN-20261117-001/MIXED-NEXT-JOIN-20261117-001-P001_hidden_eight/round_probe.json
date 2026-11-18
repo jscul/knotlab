@@ -1,0 +1,391 @@
+{
+  "attachment_distinctions": 24,
+  "branches": {
+    "001_111": {
+      "next_round": {
+        "capacity_and_demand": {
+          "011": [
+            2,
+            2
+          ],
+          "101": [
+            2,
+            2
+          ],
+          "111": [
+            2,
+            2
+          ],
+          "A": [
+            3,
+            2
+          ],
+          "B": [
+            3,
+            2
+          ],
+          "U": [
+            3,
+            2
+          ],
+          "W": [
+            3,
+            1
+          ]
+        },
+        "deficient": [],
+        "feasible": true,
+        "loose_bits": {
+          "011": [
+            "y011",
+            "z011"
+          ],
+          "101": [
+            "x101",
+            "z101"
+          ],
+          "111": [
+            "x111",
+            "y111"
+          ],
+          "A": [
+            "a0",
+            "a1",
+            "a2"
+          ],
+          "B": [
+            "b0",
+            "b1",
+            "b2"
+          ],
+          "U": [
+            "u0",
+            "u1",
+            "u2"
+          ],
+          "W": [
+            "w0",
+            "w1",
+            "w2"
+          ]
+        },
+        "one_complete_allocation": [
+          [
+            "y011",
+            "x101",
+            "w0"
+          ],
+          [
+            "z011",
+            "u0"
+          ],
+          [
+            "z101",
+            "u1"
+          ],
+          [
+            "x111",
+            "a0"
+          ],
+          [
+            "y111",
+            "b0"
+          ],
+          [
+            "a1",
+            "b1"
+          ],
+          [
+            "a2"
+          ],
+          [
+            "b2"
+          ],
+          [
+            "u2"
+          ],
+          [
+            "w1"
+          ],
+          [
+            "w2"
+          ]
+        ],
+        "required_multiple_groups": [
+          [
+            "011",
+            "U"
+          ],
+          [
+            "101",
+            "U"
+          ],
+          [
+            "111",
+            "A"
+          ],
+          [
+            "111",
+            "B"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "011",
+            "101",
+            "W"
+          ]
+        ]
+      },
+      "serial_moves": [
+        {
+          "consumed": [
+            "z001",
+            "z111"
+          ],
+          "fresh": [
+            "u0",
+            "u1",
+            "u2"
+          ],
+          "junction": "U"
+        },
+        {
+          "consumed": [
+            "x100",
+            "y010"
+          ],
+          "fresh": [
+            "w0",
+            "w1",
+            "w2"
+          ],
+          "junction": "W"
+        },
+        {
+          "consumed": [
+            "x110"
+          ],
+          "fresh": [
+            "a0",
+            "a1",
+            "a2"
+          ],
+          "junction": "A"
+        },
+        {
+          "consumed": [
+            "y110"
+          ],
+          "fresh": [
+            "b0",
+            "b1",
+            "b2"
+          ],
+          "junction": "B"
+        }
+      ]
+    },
+    "101_011": {
+      "next_round": {
+        "capacity_and_demand": {
+          "001": [
+            1,
+            2
+          ],
+          "011": [
+            1,
+            1
+          ],
+          "101": [
+            1,
+            1
+          ],
+          "111": [
+            3,
+            4
+          ],
+          "A": [
+            3,
+            2
+          ],
+          "B": [
+            3,
+            2
+          ],
+          "U": [
+            3,
+            2
+          ],
+          "W": [
+            3,
+            1
+          ]
+        },
+        "deficient": [
+          "001",
+          "111"
+        ],
+        "feasible": false,
+        "loose_bits": {
+          "001": [
+            "z001"
+          ],
+          "011": [
+            "y011"
+          ],
+          "101": [
+            "x101"
+          ],
+          "111": [
+            "x111",
+            "y111",
+            "z111"
+          ],
+          "A": [
+            "a0",
+            "a1",
+            "a2"
+          ],
+          "B": [
+            "b0",
+            "b1",
+            "b2"
+          ],
+          "U": [
+            "u0",
+            "u1",
+            "u2"
+          ],
+          "W": [
+            "w0",
+            "w1",
+            "w2"
+          ]
+        },
+        "required_multiple_groups": [
+          [
+            "001",
+            "111"
+          ],
+          [
+            "001",
+            "U"
+          ],
+          [
+            "111",
+            "A"
+          ],
+          [
+            "111",
+            "B"
+          ],
+          [
+            "111",
+            "U"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "011",
+            "101",
+            "W"
+          ]
+        ]
+      },
+      "serial_moves": [
+        {
+          "consumed": [
+            "z101",
+            "z011"
+          ],
+          "fresh": [
+            "u0",
+            "u1",
+            "u2"
+          ],
+          "junction": "U"
+        },
+        {
+          "consumed": [
+            "x100",
+            "y010"
+          ],
+          "fresh": [
+            "w0",
+            "w1",
+            "w2"
+          ],
+          "junction": "W"
+        },
+        {
+          "consumed": [
+            "x110"
+          ],
+          "fresh": [
+            "a0",
+            "a1",
+            "a2"
+          ],
+          "junction": "A"
+        },
+        {
+          "consumed": [
+            "y110"
+          ],
+          "fresh": [
+            "b0",
+            "b1",
+            "b2"
+          ],
+          "junction": "B"
+        }
+      ]
+    }
+  },
+  "comparison": "Literal equality of full allowed states on the same distinction names at the attachment and after each tested addition",
+  "legal_wrong_first_join": {
+    "disagreeing_attachment_rows": 1024,
+    "inputs": [
+      "z001",
+      "x100"
+    ]
+  },
+  "old_row_lifts_per_addition": 4,
+  "one_further_common_singleton": {
+    "distinctions": 39,
+    "equal_complete_states": 2097152,
+    "input": "w0",
+    "rounds": {
+      "001_111": {
+        "deficient": [],
+        "feasible": true,
+        "join_counts_by_parent_count": {
+          "1": 7,
+          "2": 5,
+          "3": 1
+        }
+      },
+      "101_011": {
+        "deficient": [
+          "001",
+          "111"
+        ],
+        "feasible": false,
+        "join_counts_by_parent_count": {}
+      }
+    }
+  },
+  "reused_fresh_bit_rejected": true,
+  "rows_at_attachment_and_after_each_addition": [
+    2048,
+    8192,
+    32768,
+    131072,
+    524288
+  ]
+}

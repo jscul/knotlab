@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "proof_id": "MIXED-NEXT-JOIN-20261117-001-P001",
+  "status": "Proved",
+  "theorem": "Two legally reachable mixed presentations on the same 36 observed distinctions have identical complete allowed states but opposite next-round feasibility under the original simultaneous rule. The full anonymous scalar bond-distance table cannot determine the next joins.",
+  "quantifier": "All finite serial continuations from the actual mixed attachment, with the simultaneous policy evaluated afresh at a current presentation. A single reachable pair refutes a uniform reader.",
+  "originals": "The same eight marked indices carry the literal original nonlinear relation in both. The first symmetry even fixes them pointwise.",
+  "finite_checks": {
+    "base": {
+      "distinctions": 24,
+      "allowed_states": 2048,
+      "permutation_verified": true,
+      "distance_control": {
+        "minimum_distances": [
+          {
+            "bond_distance": 4,
+            "one_shortest_support": [
+              "x001",
+              "x101",
+              "y101",
+              "z000",
+              "z101"
+            ],
+            "pair": [
+              "z101",
+              "x101"
+            ],
+            "shortest_supports": 7
+          },
+          {
+            "bond_distance": 4,
+            "one_shortest_support": [
+              "x011",
+              "y001",
+              "y011",
+              "z000",
+              "z101"
+            ],
+            "pair": [
+              "z101",
+              "y011"
+            ],
+            "shortest_supports": 7
+          }
+        ],
+        "single_mark_pure_control_completions": 256
+      }
+    },
+    "different_single_step_options": {
+      "distinctions": 27,
+      "same_complete_states": 8192,
+      "by_arity": {
+        "A": {
+          "1": 13,
+          "2": 35
+        },
+        "B": {
+          "1": 13,
+          "2": 35,
+          "3": 3
+        }
+      },
+      "different_parity_functions_on_fixed_old_states": {
+        "A": 48,
+        "A_only": 26,
+        "B": 51,
+        "B_only": 29,
+        "shared": 22
+      }
+    },
+    "opposite_full_round_feasibility": {
+      "distinctions": 36,
+      "allowed_states_through_construction": [
+        2048,
+        8192,
+        32768,
+        131072,
+        524288
+      ],
+      "A": {
+        "feasible": true,
+        "junctions_added": 11,
+        "by_parent_count": {
+          "1": 5,
+          "2": 5,
+          "3": 1
+        }
+      },
+      "B": {
+        "feasible": false,
+        "deficient_capacity_and_demand": {
+          "001": [
+            1,
+            2
+          ],
+          "111": [
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "wrong_legal_first_join": {
+      "disagreeing_attachment_rows": 1024,
+      "inputs": [
+        "z001",
+        "x100"
+      ]
+    },
+    "capture_rejected": true,
+    "one_addition_past_the_witness": {
+      "distinctions": 39,
+      "equal_complete_states": 2097152,
+      "input": "w0",
+      "rounds": {
+        "001_111": {
+          "deficient": [],
+          "feasible": true,
+          "join_counts_by_parent_count": {
+            "1": 7,
+            "2": 5,
+            "3": 1
+          }
+        },
+        "101_011": {
+          "deficient": [
+            "001",
+            "111"
+          ],
+          "feasible": false,
+          "join_counts_by_parent_count": {}
+        }
+      }
+    }
+  },
+  "epistemic_class": "Constructive non-identifiability theorem, supported by exact finite enumeration. Supplied growth architecture with original state restriction.",
+  "validation": {
+    "level": "V1",
+    "independence": "Separate within-task algorithms for the state relation: parameterized elimination with explicit fresh truth tables, and constructive generation from the original betweennesses with per-row lifts. The capacity reconstruction and a concrete allocation are compared against the archived predecessor policy. The shortest-support checks use the canonical knot CLI.",
+    "review": "Independent within-task review confirmed all three arguments, including the six-bit flip. The reviewer checked one further reachable singleton with separate row reduction. The archived enumeration verifies the same 39-distinction result. The triple eligibility wording, aligned-branch scope and no-mimic assertion were made explicit before closure.",
+    "external_novelty": "unassessed"
+  },
+  "scope_limits": [
+    "The predecessor guarantees feasibility along the special aligned cubic sequence from I4. Recovery of its particular next joins from the anonymous mixed distances remains open.",
+    "Serial option counts act on the present distinctions and are not a count of isomorphism classes of future states.",
+    "The existing cubic volume-growth theorem is outside the claim."
+  ],
+  "reproduce_from_repository_root": [
+    "python3 -B proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/check_witness.py",
+    "python3 -B proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/round_probe.py",
+    "python3 -B proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/check_distances.py"
+  ],
+  "source_and_finite_check_sha256": {
+    "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/check.py": "038a6845675cbc158e1abd0b55e72addd935c4dee9e6bb8153abe82a543894e8",
+    "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/cut_control.py": "d0c58a560195ad4893dcf2d44dd1ea13c673ea93e7e85715bf1488cb77e7d53b",
+    "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/cube_interface.md": "221512704c34ab7ada914cf4d2e5dd523ed6322b661a39a032b540d1275e559e",
+    "proofs/CUBIC-FROM-A-KNOT-20261117-001/CUBIC-FROM-A-KNOT-20261117-001-P001_local_growth/proof.md": "584cddcb4ea8d885b1b7118287990389ebd1f4a8c21edd2aa0218431163f0a77",
+    "proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/checks.json": "f707ba67ae378d9c3c40eb40f04c40166dfd3a06136c0696c2b92d33f4ab0ae8",
+    "proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/round_probe.json": "19d7f286a8651a643ad9c6cfdba6c5c4ad422c510aa3744b0b0d66f459e253a0",
+    "proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/check_witness.py": "a291733b2e1e77eb3d070e2e6067d510f3181743ec63515826b0c0ba35b2fb5f",
+    "proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/round_probe.py": "fc29ad881f615013eea4f5d62ef8af328830c2cd1cfbf49f8332f972d7cf3e39",
+    "proofs/MIXED-NEXT-JOIN-20261117-001/MIXED-NEXT-JOIN-20261117-001-P001_hidden_eight/check_distances.py": "479ba0d2a5ce522ccaa9424cd4a7a91ce6709b3c7decbc40349eb0d002c73136"
+  }
+}

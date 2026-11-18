@@ -1,0 +1,133 @@
+{
+  "base": {
+    "allowed_rows": 2048,
+    "distinctions": 24,
+    "junctions": 8,
+    "rank_with_marked_coordinates_fixed": 16,
+    "row_digest": "5657c49e50dc302a97728b22631b583db0e187f1af8c0ef33f7bfe315a6adac1",
+    "rows_per_cut_word": 256
+  },
+  "cut_words_in_marked_bit_order": [
+    0,
+    15,
+    51,
+    85,
+    170,
+    204,
+    240,
+    255
+  ],
+  "equal_state_successors": {
+    "A_consumed": [
+      "z001",
+      "z111"
+    ],
+    "B_consumed": [
+      "z101",
+      "z011"
+    ],
+    "allowed_rows": 8192,
+    "common_fresh_bits": [
+      "new0",
+      "new1",
+      "new2"
+    ],
+    "complete_allowed_row_sets_equal": true,
+    "direct_truth_table_agreement": true,
+    "distinctions": 27,
+    "extension_comparison_scope": "Next parity functions on the same named old rows",
+    "junctions": 9,
+    "next_parity_function_counts": {
+      "A": 48,
+      "A_only": 26,
+      "B": 51,
+      "B_only": 29,
+      "shared": 22
+    },
+    "one_parent_witness": {
+      "bit": "z001",
+      "functionally_matching_A_options_of_any_arity": [],
+      "legal_in_A": false,
+      "legal_in_B": true
+    },
+    "parallel_outcomes": {
+      "A": {
+        "available": false,
+        "reason": "The selected parent groups require too many loose ports"
+      },
+      "B": {
+        "available": false,
+        "reason": "The selected parent groups require too many loose ports"
+      }
+    },
+    "rank_with_marked_coordinates_fixed": 17,
+    "row_digest": "5eba4d80e5cdcabf5509aab3d0aadc573e75ff1b6398665207fb42cf150cf83c",
+    "rows_per_cut_word": 1024,
+    "serial_literal_option_counts": {
+      "A": 48,
+      "B": 51,
+      "shared": 21
+    },
+    "serial_literal_options_by_arity": {
+      "A": {
+        "1": 13,
+        "2": 35
+      },
+      "B": {
+        "1": 13,
+        "2": 35,
+        "3": 3
+      }
+    }
+  },
+  "predecessor_rule_sha256": "038a6845675cbc158e1abd0b55e72addd935c4dee9e6bb8153abe82a543894e8",
+  "reflection": {
+    "allowed_rows_checked": 2048,
+    "common_neighbors": [
+      "001",
+      "111"
+    ],
+    "exact_state_preserving": true,
+    "fixed_marked_bits": [
+      "z000",
+      "z001",
+      "z010",
+      "z011",
+      "z100",
+      "z101",
+      "z110",
+      "z111"
+    ],
+    "nontrivial_swaps": [
+      [
+        "x001",
+        "y001"
+      ],
+      [
+        "x011",
+        "y101"
+      ],
+      [
+        "x101",
+        "y011"
+      ],
+      [
+        "x111",
+        "y111"
+      ]
+    ],
+    "reflected_legal_pair": [
+      "z101",
+      "y011"
+    ],
+    "reflected_parents": [
+      "101",
+      "011"
+    ],
+    "same_producer": "101",
+    "same_producer_pair": [
+      "z101",
+      "x101"
+    ]
+  }
+}

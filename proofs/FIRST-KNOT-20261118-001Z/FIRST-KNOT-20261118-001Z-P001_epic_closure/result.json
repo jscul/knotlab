@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "FIRST-KNOT-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "FIRST-KNOT-20261118-001Z",
+ "proof": "FIRST-KNOT-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing FIRST-KNOT-20261118-001: ticket A (Lemma 1, Theorems 2 and 3, Corollary 2.1, Proposition 4) and ticket B (frozen census, 4 of 5 held, Q4 failed). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/FIRST-KNOT-20261118-001B/FIRST-KNOT-20261118-001B-E001_two_knots/contract.json": "Frozen",
+   "artifacts/FIRST-KNOT-20261118-001B/FIRST-KNOT-20261118-001B-E001_two_knots/results.json": "run output",
+   "proofs/FIRST-KNOT-20261118-001A/FIRST-KNOT-20261118-001A-P001_two_knots/manifest.json": "Proved",
+   "proofs/FIRST-KNOT-20261118-001A/FIRST-KNOT-20261118-001A-P001_two_knots/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

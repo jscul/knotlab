@@ -5,9 +5,9 @@
  "proof": "FIRST-KNOT-20261118-001A-P001",
  "ticket": "FIRST-KNOT-20261118-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "Two first knots under one count and under the fewest counts",
- "claim": "S1: a start of knots with no common neighbour grows as independent pieces, one per start knot, each a single seed on its open distinctions. S2: under one count, two first knots of a and b places grow together exactly when c = a = b (apart) or c = a - 1 = b - 1 (sharing one distinction), as two copies of N^c; otherwise a stall by round 4; a four-place knot presented as two three-place knots through a hidden distinction grows only at c = 2. S3: under the fewest counts, separate knots close; two knots sharing one distinction grow two copies of N^2 forever for every pair of sizes. S4: cheapness prefers the least admissible count.",
+ "claim": "S1: a start of knots with no common neighbour grows as independent pieces, one per start knot, each a single seed on its open distinctions. Theorem 2: under one count c >= 2 the growth runs exactly when every start knot has 0, 1 or c open distinctions, else stalls at the earliest r(l, c); so a three-place and a four-place first knot apart or sharing one distinction cannot grow under any count; Corollary 2.1: the same relation grows at c = 4 or 2 by presentation. S3: under the fewest counts, separate knots close; two knots sharing one distinction grow two copies of N^2 forever for every pair of sizes. S4: cheapness prefers the least admissible count. Proposition 4 (added after the census): m >= 3 mutually touching knots of m + 1 places grow m-dimensionally under the fewest counts.",
  "standard_statement": "Upward closure (cube condition) of a cover graph from several constraints; vertex splitting of parity constraints.",
  "prior_work": "FRESH-COUNT-20261118-001A (one seed); PICK-TWO-20261118-001 (betweenness analogue); GROWTH-LAW-20261107-001 (a beginning is a knot, another sense).",
  "dependencies": [],
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proofs written before the census; advisor (Fable 5.2) before the freeze; referee pending",
+  "status": "proofs written before the census and corrected with the advisor (Fable 5.2); ticket B replayed Theorems 2 and 3 (Q1, Q2, Q5 held); Q4 failed and led to Proposition 4 (computed m = 3, 4, 5); referee pending",
   "independence": "census replays the statements; same task authorship",
   "novelty": "extends the predecessor; no literature search run"
  },
@@ -54,7 +54,6 @@
  },
  "source_contribution": 0,
  "remaining_obligations": [
-  "ticket B replay",
   "referee"
  ],
  "paths": {
@@ -62,5 +61,5 @@
   "identity": "proofs/FIRST-KNOT-20261118-001A/FIRST-KNOT-20261118-001A-P001_two_knots/identity.json",
   "proof": "proofs/FIRST-KNOT-20261118-001A/FIRST-KNOT-20261118-001A-P001_two_knots/proof.md"
  },
- "attained_result": "S1-S4 written; replay pending."
+ "attained_result": "Lemma 1, Theorems 2 and 3, Corollary 2.1, Lemma 3 proved; Proposition 4 proved after the read-out and computed."
 }

@@ -114,6 +114,30 @@ the three-and-three case through the relay. **The two is the rule's floor, not a
 would get m − 1 fresh distinctions and the tail would change with m (ticket B's control, floors 2 and 4). The fewest rule writes the
 knot's smallest size into its floor, and touching knots then grow in 3 − 1 = 2 dimensions.
 
+## 3b. Mutually touching knots under the fewest counts (added after the census)
+
+Ticket B's Q4 failed on the ring of three four-place knots, which the fewest counts grow three-dimensionally. This section, written
+after the read-out, explains it.
+
+**Proposition 4.** Let m ≥ 3 knots of m + 1 places touch pairwise, each pair sharing one distinction of its own (so each knot has
+m − 1 shared and 2 open distinctions). Under the fewest counts the growth runs forever and, from round 2 on, is the crossed start of
+`FRESH-COUNT-20261118-001A` Theorem 4(c) with a = m: m chains of offshoots that never end, and the junctions up to round t grow like
+t^m.
+
+*Proof.* In round 1 every start knot is live. Two of them have the other m − 2 as common neighbours, so all pairs are candidates. A
+set of at least three of them that misses some knot R_k has R_k as a common neighbour, and the whole set has none, so the only
+group is the whole set: one junction T taking one distinction from each knot. Each knot's other open distinction becomes an offshoot
+c_i. Next round the live junctions are T and the c_i. Each c_i has the single neighbour R_i, whose live children are T and c_i, so its
+only candidate is T and its demand is 1; the fewest rule gives it max(1, 3 − 1, 1) = 2, one surplus, and by
+`FRESH-COUNT-20261118-001A` Theorem 4(b) its chain never ends. T has demand m. From round 2 on, candidates are read only through
+junctions of round 1 or later, whose neighbour pattern is that of the crossed start at its round a = m (its top and its m offshoots
+above the level-(a − 1) junctions), so the growth from there is the crossed growth, whose ideal count grows like t^m. ∎ (Computed
+for m = 3, 4, 5: the per-round counts match the crossed start's exactly through 14 rounds. Three mutually touching knots of five
+places, or four of four, close instead: the single group then takes every open distinction or leaves offshoots of demand two.)
+
+So the fewest counts single out no number either: two touching knots give two, and m mutually touching knots of m + 1 places give
+m. The number is the start's arrangement.
+
 ## 4. Cheapness (S4)
 
 Each junction of a one-count growth adds c fresh distinctions under one parity, so it multiplies the allowed states by 2^(c − 1)
@@ -128,8 +152,9 @@ knots it is c = 2, two smallest knots sharing a distinction. Cheapness prefers s
 - **What does fix the three of a lone knot.** The foundation's first emergence is two native recurrences joined by one contact: a
   relation on two loops' distinctions and the contact, three variables, whose parity form is the three-place knot with three open
   distinctions (A2). That is a definition of the foundation, not a consequence of the law (a reading).
-- **Touching lowers the count, and the fewest counts then give two,** but the two is the fewest rule's floor of three places less
-  the one shared distinction (Theorem 3), so it too is the knot's number written into the rule.
+- **Touching lowers the count, and the fewest counts give whatever the arrangement holds.** Two touching knots of any sizes grow
+  two-dimensionally (Theorem 3, through the floor of three places less the shared distinction); m mutually touching knots of m + 1
+  places grow m-dimensionally (Proposition 4).
 - **The growth belongs to the presentation.** The same relation grows four- or two-dimensionally depending on the chosen junctions
   (Corollary 2.1).
 

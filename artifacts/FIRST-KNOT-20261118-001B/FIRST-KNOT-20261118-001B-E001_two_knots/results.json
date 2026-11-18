@@ -1,0 +1,949 @@
+{
+ "cases": 313,
+ "not_ok": [],
+ "score": {
+  "Q1": true,
+  "Q2": true,
+  "Q4": false,
+  "Q5": true
+ },
+ "notes": {
+  "Q1": {
+   "fails": [],
+   "outside Lemma 1, prediction missed (reported)": [
+    [
+     "small-uniform-chain 3-3-3-c2",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-chain 4-4-4-c2",
+     "stall",
+     2
+    ],
+    [
+     "small-uniform-chain 4-4-4-c3",
+     "stall",
+     2
+    ],
+    [
+     "small-uniform-chain 3-4-5-c3",
+     "stall",
+     2
+    ],
+    [
+     "small-uniform-chain 3-3-3-3-c2",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of three 3s-c2",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of three 3s-c3",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of three 3s-c4",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of three 3s-c5",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of four 3s-c2",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of four 3s-c3",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of four 3s-c4",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of four 3s-c5",
+     "alive",
+     null
+    ],
+    [
+     "small-uniform-ring of three 4s-c2",
+     "stall",
+     2
+    ],
+    [
+     "small-uniform-star of 3s-c2",
+     "stall",
+     3
+    ],
+    [
+     "small-uniform-star 4 with two 3s-c2",
+     "alive",
+     null
+    ]
+   ],
+   "runs": 262,
+   "grid (start: count -> outcome)": {
+    "3-3-s0": {
+     "2": "x4",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "8": "x3",
+     "7": "x3",
+     "3": "run"
+    },
+    "3-3-s1": {
+     "3": "x3",
+     "5": "x3",
+     "4": "x3",
+     "6": "x3",
+     "2": "run",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-3-s2": {
+     "2": "run",
+     "3": "run",
+     "4": "run",
+     "5": "run",
+     "6": "run",
+     "7": "run",
+     "8": "run"
+    },
+    "3-4-s0": {
+     "2": "x2",
+     "3": "x4",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-4-s1": {
+     "2": "x4",
+     "3": "x3",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-4-s2": {
+     "2": "run",
+     "3": "x3",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-5-s0": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-5-s1": {
+     "2": "x2",
+     "3": "x3",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-5-s2": {
+     "2": "x4",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3",
+     "3": "run"
+    },
+    "3-6-s0": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x2",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-6-s1": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "3-6-s2": {
+     "2": "x2",
+     "3": "x4",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3",
+     "4": "run"
+    },
+    "4-4-s0": {
+     "2": "x2",
+     "3": "x4",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3",
+     "4": "run"
+    },
+    "4-4-s1": {
+     "2": "x4",
+     "3": "run",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "4-4-s2": {
+     "2": "run",
+     "3": "x3",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "4-5-s0": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x4",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "4-5-s1": {
+     "2": "x2",
+     "4": "x3",
+     "3": "x4",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "4-5-s2": {
+     "2": "x4",
+     "3": "x3",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "4-6-s0": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x2",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "4-6-s1": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "4-6-s2": {
+     "2": "x2",
+     "3": "x3",
+     "4": "x3",
+     "5": "x3",
+     "7": "x3",
+     "6": "x3",
+     "8": "x3"
+    },
+    "5-5-s0": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x4",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3",
+     "5": "run"
+    },
+    "5-5-s1": {
+     "2": "x2",
+     "3": "x4",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3",
+     "4": "run"
+    },
+    "5-5-s2": {
+     "2": "x4",
+     "3": "run",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "5-6-s0": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x2",
+     "5": "x4",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "5-6-s1": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x4",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "5-6-s2": {
+     "2": "x2",
+     "3": "x4",
+     "4": "x3",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    },
+    "6-6-s0": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x2",
+     "5": "x4",
+     "7": "x3",
+     "8": "x3",
+     "6": "run"
+    },
+    "6-6-s1": {
+     "2": "x2",
+     "3": "x2",
+     "4": "x4",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3",
+     "5": "run"
+    },
+    "6-6-s2": {
+     "2": "x2",
+     "3": "x4",
+     "4": "run",
+     "5": "x3",
+     "6": "x3",
+     "7": "x3",
+     "8": "x3"
+    }
+   }
+  },
+  "Q2": {
+   "fails": [],
+   "table": {
+    "3+3": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 0,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       56,
+       58,
+       60
+      ]
+     ]
+    },
+    "3+4": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 1,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       57,
+       59,
+       61
+      ]
+     ]
+    },
+    "3+5": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 1,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       53,
+       55,
+       57
+      ]
+     ]
+    },
+    "3+6": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 1,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       52,
+       54,
+       56
+      ]
+     ]
+    },
+    "4+4": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 2,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       58,
+       60,
+       62
+      ]
+     ]
+    },
+    "4+5": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 2,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       54,
+       56,
+       58
+      ]
+     ]
+    },
+    "4+6": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 2,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       53,
+       55,
+       57
+      ]
+     ]
+    },
+    "5+5": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 2,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       50,
+       52,
+       54
+      ]
+     ]
+    },
+    "5+6": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 2,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       49,
+       51,
+       53
+      ]
+     ]
+    },
+    "6+6": {
+     "apart": "closed",
+     "sharing one": "alive",
+     "relays": 2,
+     "sharing two": [
+      "alive",
+      4,
+      [
+       48,
+       50,
+       52
+      ]
+     ]
+    }
+   }
+  },
+  "Q4": {
+   "fewest-3-3-s2": {
+    "outcome": "alive",
+    "demand0": 2,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     56,
+     58,
+     60
+    ]
+   },
+   "fewest-3-4-s2": {
+    "outcome": "alive",
+    "demand0": 1,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     57,
+     59,
+     61
+    ]
+   },
+   "fewest-3-5-s2": {
+    "outcome": "alive",
+    "demand0": 3,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     53,
+     55,
+     57
+    ]
+   },
+   "fewest-3-6-s2": {
+    "outcome": "alive",
+    "demand0": 3,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     52,
+     54,
+     56
+    ]
+   },
+   "fewest-4-4-s2": {
+    "outcome": "alive",
+    "demand0": 0,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     58,
+     60,
+     62
+    ]
+   },
+   "fewest-4-5-s2": {
+    "outcome": "alive",
+    "demand0": 2,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     54,
+     56,
+     58
+    ]
+   },
+   "fewest-4-6-s2": {
+    "outcome": "alive",
+    "demand0": 2,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     53,
+     55,
+     57
+    ]
+   },
+   "fewest-5-5-s2": {
+    "outcome": "alive",
+    "demand0": 4,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     50,
+     52,
+     54
+    ]
+   },
+   "fewest-5-6-s2": {
+    "outcome": "alive",
+    "demand0": 4,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     49,
+     51,
+     53
+    ]
+   },
+   "fewest-6-6-s2": {
+    "outcome": "alive",
+    "demand0": 4,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     48,
+     50,
+     52
+    ]
+   },
+   "small-chain 3-3-3": {
+    "outcome": "alive",
+    "demand0": 1,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     58,
+     60,
+     62
+    ]
+   },
+   "small-chain 4-4-4": {
+    "outcome": "alive",
+    "demand0": 2,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     52,
+     54,
+     56
+    ]
+   },
+   "small-chain 3-4-5": {
+    "outcome": "alive",
+    "demand0": 0,
+    "implied": 0,
+    "last diffs": [
+     1
+    ],
+    "offshoots last": 3,
+    "last counts": [
+     38,
+     39,
+     40
+    ]
+   },
+   "small-chain 3-3-3-3": {
+    "outcome": "alive",
+    "demand0": 0,
+    "implied": 0,
+    "last diffs": [
+     0
+    ],
+    "offshoots last": 2,
+    "last counts": [
+     4,
+     4,
+     4
+    ]
+   },
+   "small-ring of three 3s": {
+    "outcome": "closed",
+    "demand0": 1,
+    "implied": 1,
+    "last diffs": [
+     -2
+    ],
+    "offshoots last": 0,
+    "last counts": [
+     3,
+     1
+    ]
+   },
+   "small-ring of four 3s": {
+    "outcome": "alive",
+    "demand0": 4,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     54,
+     56,
+     58
+    ]
+   },
+   "small-ring of three 4s": {
+    "outcome": "alive",
+    "demand0": 0,
+    "implied": 0,
+    "last diffs": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "offshoots last": 3,
+    "last counts": [
+     409,
+     438,
+     468
+    ]
+   },
+   "small-star of 3s": {
+    "outcome": "closed",
+    "demand0": 1,
+    "implied": 1,
+    "last diffs": [
+     -2,
+     -1
+    ],
+    "offshoots last": 0,
+    "last counts": [
+     4,
+     3,
+     1
+    ]
+   },
+   "small-star 4 with two 3s": {
+    "outcome": "alive",
+    "demand0": 0,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     59,
+     61,
+     63
+    ]
+   },
+   "small-lone 3 and two touching 4s": {
+    "outcome": "alive",
+    "demand0": 5,
+    "implied": 1,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     50,
+     52,
+     54
+    ]
+   },
+   "small-presented 4: A and B": {
+    "outcome": "alive",
+    "demand0": 0,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     58,
+     60,
+     62
+    ]
+   },
+   "small-presented 4: A and A+B": {
+    "outcome": "alive",
+    "demand0": 1,
+    "implied": 0,
+    "last diffs": [
+     2
+    ],
+    "offshoots last": 4,
+    "last counts": [
+     57,
+     59,
+     61
+    ]
+   },
+   "small-single 4": {
+    "outcome": "closed",
+    "demand0": 1,
+    "implied": 1,
+    "last diffs": [
+     -3,
+     -2,
+     2,
+     3
+    ],
+    "offshoots last": 0,
+    "last counts": [
+     6,
+     4,
+     1
+    ]
+   }
+  },
+  "Q5": {
+   "floor2-3-3 s1": {
+    "outcome": "alive",
+    "last counts": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "offshoots last": 2
+   },
+   "floor2-4-4 s1": {
+    "outcome": "alive",
+    "last counts": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "offshoots last": 2
+   },
+   "floor2-3-5 s1": {
+    "outcome": "alive",
+    "last counts": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "offshoots last": 2
+   },
+   "floor2-ring of four 3s": {
+    "outcome": "alive",
+    "last counts": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "offshoots last": 2
+   },
+   "floor4-4-4 s1": {
+    "outcome": "alive",
+    "last counts": [
+     110,
+     132,
+     156,
+     182,
+     210,
+     240
+    ],
+    "offshoots last": 6
+   },
+   "floor4-3-5 s1": {
+    "outcome": "alive",
+    "last counts": [
+     153,
+     206,
+     270,
+     346,
+     435,
+     538
+    ],
+    "offshoots last": 7
+   },
+   "floor4-3-3 s1": {
+    "outcome": "alive",
+    "last counts": [
+     276,
+     370,
+     484,
+     620,
+     780,
+     966
+    ],
+    "offshoots last": 8
+   },
+   "floor4-ring of four 3s": {
+    "outcome": "alive",
+    "last counts": [
+     200,
+     276,
+     370,
+     484,
+     620,
+     780
+    ],
+    "offshoots last": 8
+   }
+  }
+ }
+}

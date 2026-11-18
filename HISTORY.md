@@ -3,6 +3,21 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the far-pair sign is SEED's copy step on its own growth, not as a theorem
+
+- The last study on the two-order line asked whether the referee's sign decides SEED's copy step: the fill's far end pair separated by
+  every split that crosses something ([decision note](research/FAR-SIGN-20261118-001/far_sign.md)). Refereed with fresh code,
+  confirmed with fixes.
+- **On SEED's own growth it does, exactly.** It held on 149,162 fresh fills, and on the referee's 307,135 out to lines of 42. What the
+  runs add is two facts, which the proved lemmas turn into the equivalence.
+- **As a theorem it does not.** On a base of seven distinctions a fill with the sign is refused, and a copy step lacks it (proved).
+- **Under the sign, the copy step asks one thing (proved):** whether the splits that pull the new distinction away are one whole class.
+- **Narrowed (four points of wording, no Block):**
+  - the eight predictions are two facts stated several ways;
+  - "two orders" in the main lemma now reads "two classes";
+  - the ablation does not show which pairs' knots carry the sign's necessity;
+  - every copy step's shared distinction lies on the starting line.
+
 ## 18 November 2026: what decides the copy step; a reading withdrawn (Block), a sign found
 
 - The study of what SEED's copy step reads (`COPY-CLASS-20261118-001`) was refereed with fresh code. Its facts stand. Every new

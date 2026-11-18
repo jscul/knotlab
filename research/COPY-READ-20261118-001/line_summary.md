@@ -10,7 +10,7 @@ that the cheapest growth gains one order at every doubling and never keeps two:
 - `MID-RULE-20261118-001`
 - `COPY-READ-20261118-001`
 - `COPY-CLASS-20261118-001` (added after the summary, on the coordinator's go-ahead)
-- `FAR-SIGN-20261118-001` (the last study, on the coordinator's go-ahead; referee pending)
+- `FAR-SIGN-20261118-001` (the last study, on the coordinator's go-ahead; refereed)
 
 All seven are refereed and folded in; `MID-RULE`'s free-form runs (a check of proved statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
 returns shrinking on bases this small.
@@ -86,14 +86,17 @@ each step do it?
     and none of 196,292 refused fills, and it reads every crossed split.
   - (`COPY-CLASS-20261118-001`, refereed)
 - **Is that sign the copy step?** On SEEDK's own fills, exactly: 1,794 copy steps and none of 147,368 refused fills, on fresh runs
-  to lines of 26 and n = 48 (computed; 8 of 8 predictions held). As a theorem, no.
-  - On a seven-distinction base of two orders a fill with the sign is refused and a copy step lacks it (proved).
-  - What is proved is that under the sign the copy step is one set comparison: the splits on which r leaves p's side must be one
-    whole order. A pair pattern forces it.
+  to lines of 26 and n = 48, and the referee's 3,072 of 307,135 to lines of 42 at n = 64 (computed). As a theorem, no.
+  - What the runs add is two facts. Every copy step's knot set of the treated shape has the sign, and no fill refused by clause (b)
+    has that shape. L4 and L5 (proved) make them the equivalence.
+  - On a seven-distinction base of two orders, a fill with the sign is refused and a copy step lacks it (proved).
+  - Under the sign the copy step is one set comparison: the splits on which r leaves p's side must be one whole class. A pair pattern
+    forces it.
   - The copy class's betweenness cannot read the sign, since it does not tell crossed splits from uncrossed ones. With one mark per
     split, crossed or not, the move's five distinctions read it exactly.
-  - An ablation found that SEEDK's bases carry the sign's sufficiency, and the knots already on the middle and near pairs carry its
-    necessity. (`FAR-SIGN-20261118-001`, referee pending)
+  - An ablation found that SEEDK's bases carry the sign's sufficiency. Its necessity failed only where the middle or near pair had no
+    knot, though the data cannot separate those from the far pair's knot. In every copy step, p is a distinction of the starting line.
+  - (`FAR-SIGN-20261118-001`, refereed)
 - **The copy step** (pulling an uncrossed split into the grid without adding an order) is rare: 566 among about 1.8 million
   crossing-making fills, all early. No reading of its own knots or the betweenness among its distinctions decides it. But all of
   them fall in one closure class, which holds under 2% of crossing-making fills (the referee's count: 528 of 528, lift 57).
@@ -118,6 +121,9 @@ All logged in `docs/CORRECTIONS.md` with knotlab's `HISTORY.md`:
 - `COPY-CLASS-20261118-001`: **Block on a reading.** "The copy step is named by the fill's own pairs" withdrawn, along with its G1
   capability. The agreement was SEED's own clause restated. The referee's sign (the far end pair separated by every crossed split)
   decides the step and reads every crossed split.
+- `FAR-SIGN-20261118-001`: four narrowings of wording, no Block. The eight predictions are two computed facts stated several ways.
+  "Two orders" in L5 became "two classes". The ablation does not show which pairs' knots carry necessity. Every copy step's p lies on
+  the starting line, so the untested region is never reached.
 - `MID-RULE-20261118-001`: "keeps two orders, told no number, reading only the fill's knots" scoped. Knot-local it never fills again,
   free it grows full grids only from a spanning first fill or 2 × 2, and the free fill is a given (Narrowing). "Any base" means any
   base of betweenness knots (Not a block).

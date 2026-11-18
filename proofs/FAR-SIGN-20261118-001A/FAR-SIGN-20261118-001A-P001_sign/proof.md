@@ -1,6 +1,7 @@
 # What the far-pair sign decides, and where it stops
 
-Status: Proved (L1 to L6 and Proposition 7); the equivalence on SEEDK's own fills is not proved here (see "Not proved")
+Status: Proved (L1 to L6 and Proposition 7); the equivalence on SEEDK's own fills is not proved here (see "Not proved").
+Refereed (R1, confirmed with fixes, no Block); the wording fixes are folded in and marked.
 
 Ticket `FAR-SIGN-20261118-001A`, 18 November 2026, by Claude, written before ticket B's freeze. It takes up
 `COPY-CLASS-20261118-001`'s referee finding, "a crossing-making fill is a copy step exactly when its far end pair is separated by every
@@ -92,8 +93,11 @@ Assume the sign.
 - **(T1)** no uncrossed split is moved, and
 - **(T2)** M equals the crossers of some unmoved crossed split.
 
-On a base of two orders this reads: the moved splits are exactly one whole order. Here a base of two orders means that its crossed
-splits fall into two classes, with no two of one class crossing and every split of one crossing every split of the other.
+On a base of two classes this reads: the moved splits are exactly one whole class. Here a base of two classes means that its crossed
+splits fall into two classes, with no two of one class crossing and every split of one crossing every split of the other. The classes
+need not be chains. When each is a chain (one split's side nested in the next), the base has two orders, as on SEEDK's runs under the
+sign (3,072 of 3,072 copy steps in the referee's runs). *Corrected after the referee:* this definition first said "two orders"; see
+Proposition 7 (B).
 
 **Proof.**
 - By L4 clause (a) holds, and the new crossings are G × M, with G and M nonempty.
@@ -106,13 +110,13 @@ splits fall into two classes, with no two of one class crossing and every split 
   - A moved crossed split ends with crossers that include G, which holds uncrossed splits, while M holds none. So it is not a model.
   - An unmoved crossed split gains nothing (L4, (a)'s proof), so it ends with its old crossers.
   - Hence a split of G has a model exactly when (T2) holds.
-- On a base of two orders, a crossed split's crossers are the other whole order.
-  - If M is one whole order, every split of the other order is unmoved and is a model.
+- On a base of two classes, a crossed split's crossers are the other whole class.
+  - If M is one whole class, every split of the other class is unmoved and is a model.
   - Conversely M = C(m) is the order not holding m. ∎
 
 ## L6. A pair pattern that gives the copy step
 
-**Claim (base of two orders).** Suppose:
+**Claim (base of two classes).** Suppose:
 - every crossed split separates p from q;
 - no crossed split separates a from p;
 - some crossed split separates p from d, and some does not.
@@ -126,9 +130,9 @@ Then the sign holds and (T1) and (T2) hold. So the fill, if it makes a new cross
   So their four quadrants hold p, c, d and q.
 - So every moved crossed split crosses every unmoved crossed split, and both kinds occur.
   - Two moved splits in different orders would cross each other and both cross an unmoved one. That is three pairwise crossing splits,
-    impossible in two orders.
-  - So the moved crossed splits lie in one order, the unmoved in the other, and every crossed split is one or the other. The moved
-    crossed splits are therefore one whole order.
+    impossible in two classes.
+  - So the moved crossed splits lie in one class. The unmoved ones lie in the other, since each crosses a moved one (a step the
+    referee noted as implicit). Every crossed split is one or the other, so the moved crossed splits are one whole class.
 - An uncrossed moved split u would have P(u) holding p, a, c and not q, d. The same four quadrants against an unmoved crossed split
   would make them cross. So there is none: (T1).
 - L5 gives the copy step. ∎
@@ -140,7 +144,7 @@ the other. Then the sign holds exactly when every distinction lies between c and
   betweenness among the move's own distinctions. A reading of the sign must tell crossed splits from uncrossed ones, and the closure
   picture does not. Ticket B checks this both ways: the plain picture, and the picture with one mark for crossed per split.
 
-## Proposition 7. Neither direction is a theorem of the fill and the base's two orders
+## Proposition 7. Neither direction is a theorem of the fill and the base's two classes
 
 **The base.** Take seven distinctions. Six of them are the product of a chain of two and a chain of three:
 - 0 = (0, 0), 1 = (0, 1), 2 = (0, 2), 3 = (1, 0), 4 = (1, 1), 5 = (1, 2);
@@ -154,7 +158,7 @@ Its states are the constant states and both sides of four splits:
 
 These are exactly the states allowed by the betweenness knots the base implies (ticket B's checks confirm it).
 - σ_X crosses σ_0 and σ_2, and τ crosses nothing.
-- So the crossed splits form two orders, {σ_X} and {σ_0, σ_2}.
+- So the crossed splits form two classes, {σ_X} and {σ_0, σ_2}, each a chain: two orders.
 
 **(A) The sign without the copy step.**
 - Knot set: B(3, r, 6), B(1, 6, r), B(5, 0, r). Its roles are p = 6, q = 3, a = 1, c = 5, d = 0.
@@ -162,21 +166,23 @@ These are exactly the states allowed by the betweenness knots the base implies (
   - σ_X separates 5 from 0;
   - σ_0 separates 0 from 5;
   - σ_2 separates 5 from 0.
-- Moved splits (L1: 1 ∈ P, 3 ∉ P, 0 ∉ P): only σ_0. So M = {σ_0}, which is not a whole order.
+- Moved splits (L1: 1 ∈ P, 3 ∉ P, 0 ∉ P): only σ_0. So M = {σ_0}, which is not a whole class.
 - So τ comes to cross σ_0 alone. No crossed split has crossers {σ_0}: σ_X has two, and σ_0 and σ_2 have {σ_X}.
 - SEED refuses (clause (b), a strict subset).
 - L5's (T2) fails, as the theorem says it must.
 
 **(B) The copy step without the sign.**
 - Knot set: B(3, r, 6), B(0, 6, r), B(0, 4, r). Its roles are p = 6, q = 3, a = 0, c = 0, d = 4.
-- The moved splits are σ_X alone, a whole order.
+- The moved splits are σ_X alone, a whole class.
 - τ comes to cross σ_X. Then τ's crossers are {σ_X}, which are σ_0's crossers, so SEED accepts.
 - But σ_2 = {2, 5} | rest has 0 and 4 on one side: the sign fails.
 - No other knot set of this fill of the same shape has the sign (ticket B's checks list them all).
-- This copy step also makes a third order. After it, τ, σ_0 and σ_2 each cross σ_X, but none of the three is nested in another, and
-  the lattice dimension is 3 (computed in the checks). So off SEEDK's own bases, SEED's two clauses do not keep two orders either.
+- This copy step also makes a third order. After it, τ, σ_0 and σ_2 each cross σ_X, so the crossed splits still form two classes.
+  But none of the three is nested in another, so their class is no longer a chain. The lattice dimension, the least cover of the
+  splits by chains, goes from 2 to 3 (computed in the checks, and confirmed by the referee). So off SEEDK's own bases, SEED's two
+  clauses do not keep two orders either.
 
-**So neither half of "sign ⟺ copy step" follows from the fill's knots and the base's two orders.**
+**So neither half of "sign ⟺ copy step" follows from the fill's knots and the base's two classes, even when they are two orders.**
 - A's lemmas reduce the question to (T1) and (T2) under the sign, and to the converse: does every copy step have the sign?
 - Both can fail when the three knots sit on pairs that SEEDK's growth would not have co-knotted.
 - Any proof on SEEDK must therefore use which pairs its history has put in a common knot.
@@ -189,7 +195,7 @@ On SEEDK's knot-local fills, the following three statements; ticket B scores eac
 - **T1** and **T2** under the sign.
   - They give "sign ⇒ copy step" through L5.
 
-L6's pattern is a sufficient condition proved on any base of two orders. Whether it is also necessary on SEEDK is computed, not
+L6's pattern is a sufficient condition proved on any base of two classes. Whether it is also necessary on SEEDK is computed, not
 proved.
 
 ## Sources
@@ -198,7 +204,7 @@ Split systems, compatibility and crossing are standard: Bandelt and Dress (1992)
 partial cubes. A base presented by all its implied betweenness knots, with half-spaces as states, is the half-space system of a median
 graph. What this adds:
 - L1 to L6, which reduce SEED's copy step under the sign to one set comparison: the moved splits against the crossers of one split,
-  that is, against one whole order;
+  that is, against one whole class;
 - the pair pattern that forces it;
 - two seven-distinction counterexamples showing the equivalence is a property of SEEDK's knot-local growth, not of the fill's shape.
 

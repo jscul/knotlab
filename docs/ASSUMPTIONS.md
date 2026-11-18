@@ -2942,10 +2942,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
-  - 2026-11-18 · `FAR-SIGN-20261118-001` ([decision note](../research/FAR-SIGN-20261118-001/far_sign.md); referee pending) found
-    the referee's sign exact on SEEDK's fills (149,162 fresh fills, computed). It is not a theorem of the fill, since a base of seven
-    distinctions breaks both directions. It proved that under the sign the copy step is "the moved splits are one whole order". The
-    copy step stays global in what it reads. Status unchanged.
+  - 2026-11-18 · `FAR-SIGN-20261118-001` ([decision note](../research/FAR-SIGN-20261118-001/far_sign.md); refereed, confirmed
+    with fixes) found the referee's sign exact on SEEDK's fills (149,162 fresh fills, computed; two computed facts with L4 and L5). It
+    is not a theorem of the fill, since a base of seven distinctions breaks both directions. It proved that under the sign the copy
+    step is "the moved splits are one whole class". The copy step stays global in what it reads. Status unchanged.
   - 2026-11-18 · `COPY-CLASS-20261118-001` ([decision note](../research/COPY-CLASS-20261118-001/copy_class.md); refereed, Block on
     its reading) proved that the copy step is decided on the splits separating the fill's two end pairs and a model's crossers. Its
     claim that the fill's own pairs name the model was withdrawn: the rule restated SEED's clause. The referee found one sign that

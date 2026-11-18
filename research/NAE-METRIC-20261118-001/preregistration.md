@@ -51,6 +51,10 @@ acyclic scheme (Beeri, Fagin, Maier and Yannakakis 1983). Series-parallel graphs
 - `KNOTS-ALONE-20261111-001` — relative: bond distance on not-all-equal weaves (faithful readings, bond distance two and three at
   graph distances one and two).
 - `RANDOM-FATES-20261112-001` — unrelated (uniform not-all-equal growth on fixed distinctions; matched on words).
+- `DISTANCE-ORDER-20261117-001` — relative (τ = steps apart on not-all-equal trees). *Added after the freeze:* the prior-work gate
+  flagged it at the freeze and the line was missed; no case, reading or prediction depends on it.
+- `CUMULANT-DIST-20261118-001` — relative (bond distance minus one equals the cumulant distance on parity bases). *Added after the
+  freeze* for the same reason.
 
 ## Settled by construction (proofs in ticket A)
 

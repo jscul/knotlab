@@ -98,3 +98,14 @@ against the other two (it lies between them in the split metric). So b(x, y) = 2
 So b = 2 for every pair there. Any function with values in [1, 2] on distinct pairs satisfies the triangle inequality, so this says
 the grown bases have bond-distance diameter two (bond distance gives them no spacing, as `FREE-READ-20261118-001` found on split
 grids); it is not evidence on the metric question (the advisor).
+
+## Computed in ticket B (frozen)
+
+- C1 and C2 held on 1,000 glued bases (16,719 separated triples, with parity and four-place not-all-equal knots among them; the bond
+  count identity exact on 858) and on 1,000 sparse bases on nine distinctions (no violating triple spans two blocks).
+- C3 held on rings of 3 to 9 knots, plain and twisted, with exactly m(m − 1) runs, largest b = ⌊m/2⌋ + 2, and the bonds holding every
+  own distinction (they exist only for plain rings of odd length and twisted rings of even length) of exactly m + 1 members.
+- Every failing pure not-all-equal block on at most seven distinctions with at most six knots has two knots sharing two distinctions
+  (325,395 failing of 1,327,830 on seven distinctions with six knots).
+- Graph-like bases (knots meeting at most once, each distinction in at most two knots) whose knot graph is series-parallel: none of
+  354 fails, plain or twisted (conjecture P6). With a K4 minor, 3 of 6 fail.

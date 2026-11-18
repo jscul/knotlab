@@ -148,3 +148,19 @@ law) and G16 checkpoint (capability gained: where parity and not-all-equal readi
 changed.
 
 **Assumptions:** A97 gains this study; new A103 (a base's values are data, not labels: which value is called 1 is part of a base).
+
+## The final report as sent (18 November 2026)
+
+**Outcome (sub-goal B200): one distance read from the states now reads parity and not-all-equal knots alike.** For two
+distinctions, it charges one step for each extra distinction a set holding both needs, plus how weakly that set is bound beyond
+what its parts explain (its joint cumulant). One knot comes out as one step under either law. On every tree of knots, whatever mix
+of the two laws, it is steps apart: proved for parity, and computed on 19,730 pairs. On parity bases it is bond distance minus one
+(proved). On a chain grid it is the count's τ. The laws part only on cycles. The limit: it ignores which value is called 1, and up
+to flipping values a split line is a ring (proved). So the orders a betweenness growth builds still need the values, which I've
+recorded as new assumption A103. 4 of 9 frozen predictions held. The misses: one was a coding slip in a test (the statement
+holds), and four were informative surprises. The epic is closed with the referee pending.
+
+The position table, the next-step line and the four directions as in Position above.
+
+**Corrections:** none. **Goals:** G1 and G16 checkpoints (capability gained); no goal changed. **Assumptions:** new A103 (a base's
+values are data); A97 gains this study.

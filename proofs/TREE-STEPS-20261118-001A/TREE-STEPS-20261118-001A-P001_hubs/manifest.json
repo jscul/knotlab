@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "TREE-STEPS-20261118-001A-P001",
+ "canonical_id": "TREE-STEPS-20261118-001A-P001",
+ "proof": "TREE-STEPS-20261118-001A-P001",
+ "ticket": "TREE-STEPS-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Hubs and the irreducible distance: what is proved",
+ "claim": "H1: kappa(sigma u_1..sigma u_n) = kappa_n(sigma) prod mu_i for independent u_i (NAE hung knots give two copies each, parity hung knots one per two distinctions). H2: a hub shortcuts the cumulant distance only with at least 32 copies (log3|kappa_34(coin)| = 64.075 > 64); a distinction in at most 15 knots cannot. K1: if C(x,y) != 0, delta_K = tau. K2: on parity bases delta_K = delta = bond distance - 1. K3: delta_K ignores hubs. K4: delta_K = steps apart on NAE trees, parity trees and mixed trees whose path has no parity knot; open with a parity knot on the path (sketch).",
+ "standard_statement": "Joint cumulants of a fair coin (tangent numbers); Brillinger's law of total cumulance; matroid circuits; irreducible correlation sets.",
+ "prior_work": "CUMULANT-DIST-20261118-001 (D0-D6); DISTANCE-ORDER-20261117-001 (tau = steps on NAE trees); classical: tangent numbers, Brillinger, Zwiernik-Smith tree cumulants, Schneidman et al.",
+ "dependencies": [],
+ "completion_gate": "Ticket B's gates (hub identity, threshold, irreducible search) and frozen run; the referee reviews the proofs.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proofs written with the run, several proposed by the advisor and checked; referee pending",
+  "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
+  "novelty": "classical in substance (locality, 1-WL, tree number) read in the program's terms"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "irreducible_cumulant_distance_hub_free_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/TREE-STEPS-20261118-001A/TREE-STEPS-20261118-001A-P001_hubs/manifest.json",
+  "identity": "proofs/TREE-STEPS-20261118-001A/TREE-STEPS-20261118-001A-P001_hubs/identity.json",
+  "proof": "proofs/TREE-STEPS-20261118-001A/TREE-STEPS-20261118-001A-P001_hubs/proof.md"
+ },
+ "attained_result": "H1, H2, K1-K3 proved; K4 proved except mixed paths with a parity knot (sketch; computed)."
+}

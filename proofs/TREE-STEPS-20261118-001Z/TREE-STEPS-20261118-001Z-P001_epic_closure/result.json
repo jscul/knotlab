@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "TREE-STEPS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "TREE-STEPS-20261118-001Z",
+ "proof": "TREE-STEPS-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing TREE-STEPS-20261118-001: ticket A (H1, H2, K1-K4) and ticket B (frozen run, 4 of 4 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/TREE-STEPS-20261118-001B/TREE-STEPS-20261118-001B-E001_trees/contract.json": "Frozen",
+   "artifacts/TREE-STEPS-20261118-001B/TREE-STEPS-20261118-001B-E001_trees/results.json": "run output",
+   "proofs/TREE-STEPS-20261118-001A/TREE-STEPS-20261118-001A-P001_hubs/manifest.json": "Proved",
+   "proofs/TREE-STEPS-20261118-001A/TREE-STEPS-20261118-001A-P001_hubs/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -136,3 +136,20 @@ wrong for its twist), and asked for exact arithmetic in P6. It saw no uniform co
 parity) and G16 checkpoint (capability gained: the triangle inequality as a test of composition); no goal changed.
 
 **Assumptions:** A39 gains a metric form (status unchanged); A97 gains this study; no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** bond distance is not a metric on every base, and the reason is the program's own contact rule. Two not-all-equal knots
+that share two distinctions put each third distinction one knot from the shared ones, while no knot holds the two thirds together, so
+they are infinitely far apart (proved). Bond distance is a metric exactly where knots compose: on every parity base, and so is bond
+distance minus one (proved; 439,652 bases checked). Among all 34 three-place laws that pass the knot test, parity is the only one
+under which it is a metric on every base (proved, with a failing base for each of the other eight kinds). Under not-all-equal it holds
+on trees and on the woven tori checked, but not in general. 5 of 7 frozen predictions held; two missed: the twisted "not exactly two
+ones" law fails much sooner than the advisor expected, and a failing pair can be fully independent rather than tied. Closed, referee
+pending.
+
+The position table, the next-step line and the three directions as in Position above.
+
+**Corrections:** none for this study. **Goals:** G1 checkpoint (obstruction learned), G16 checkpoint (capability gained).
+**Assumptions:** A39 gains a metric form, A97 this study; no status changed. **Advisor:** before the freeze (proof check, bond
+distance minus one, the R5 and R6 bases, nine languages).

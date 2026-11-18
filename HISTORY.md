@@ -50,6 +50,17 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   s = 7 and 8 at depth 12. They are no longer written as one rising sequence.
 - Sharpened: for that pattern at s = 7, stems hold no bond of any size.
 
+## 18 November 2026: the weave pair, confirmed by its referee, with one narrowing
+
+- The weave-pair study (`WEAVE-PAIR-20261118-001`) was confirmed by its referee with no Block. The twist and the identification of
+  the two arrangements were rebuilt independently and proved.
+- Narrowed: the pair is the first two-way base on the weave whose distance carries all its information and decays at a fixed rate.
+  Another survivor of the mixed-arrangement study, which falls apart into independent strips, steps outward strictly along each
+  strip. So a one-way ruler with full information exists on the weave, and the two-way one is still missing.
+- Small fixes: the decay rate is within 4% of the gap on longer windows, so its "exactly" is withdrawn; one sector's energy gap is
+  exactly log₃ 2; the information claim cites the proofs ([decision note](research/WEAVE-PAIR-20261118-001/weave_pair.md),
+  [referee's report](research/WEAVE-PAIR-20261118-001/referee-R1/report.md)).
+
 ## 18 November 2026: the doubling theorem, confirmed by its referee
 
 - The doubling theorem (`CUBE-DOUBLING-20261118-001`) was confirmed by its referee with no Block. Independent code checked it one

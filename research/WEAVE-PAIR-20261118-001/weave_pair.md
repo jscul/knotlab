@@ -1,7 +1,8 @@
 # The surviving weave pair, with the twist fixed
 
 Epic `WEAVE-PAIR-20261118-001`, 18 November 2026, by Claude, on the coordinator's queue. It is the first direction of
-`WEAVE-MIX-20261117-001` after that study's referee. Goals G1 and G16; tests A97. Referee pending.
+`WEAVE-MIX-20261117-001` after that study's referee. Goals G1 and G16; tests A97. Refereed: report [R1](referee-R1/report.md),
+confirmed with fixes, no Block, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `2790acb70` at 01:35:56 UTC. The three parts ran from
@@ -17,27 +18,40 @@ without skipping.**
 - **One, not two.** A half-turn of the weave, with a shift of two columns, carries the first arrangement's disagreeing bonds onto
   the second's. The two differ only by one seam per three columns, where the knots read the values flipped. So with an even number
   of periods around the cylinder they have identical spectra, and with an odd number each one's periodic spectrum is the other's
-  twisted one. This held to every printed digit at widths 6 to 21.
+  twisted one. This held to every printed digit at widths 6 to 21. *The referee proved it:* an explicit gauge search finds the
+  maps (shift 2 or 5, gauge 001110, antiperiodic with period three), which close exactly when w/3 is even.
 - **Disordered, with the twist fixed.**
-  - In both sectors the spin gap is 0.314 to 0.316 and the energy gap 0.630 at widths 15, 18 and 21. The energy gap is twice the
-    spin gap, the threshold of two excitations.
+  - In both sectors the spin gap is 0.314 to 0.316 and the energy gap 0.630 at widths 15, 18 and 21. *After the referee:* in one
+    sector the energy gap is exactly log₃ 2, from an exact eigenvalue λ₀/2 at widths 6 to 18, not a measured two-excitation
+    threshold.
   - There are 1.2631 states per distinction.
-  - The splitting between the sectors shrinks from 1.7 × 10⁻³ at width 12 to 6.4 × 10⁻⁵ at width 21, about threefold for every
-    three columns. That is exponential decay, the signature of a gapped, disordered phase rather than a critical or ordered one.
+  - The splitting between the sectors (in natural logs per row; the gaps are in log base 3) shrinks from 1.7 × 10⁻³ at width 12 to
+    6.4 × 10⁻⁵ at width 21, about threefold for every three columns. That is exponential decay, the signature of a gapped, disordered phase rather than a critical or ordered one.
   - Moving the seam one column changes nothing.
 - **A ruler only in envelope.**
-  - At width 12 the correlation along the transfer, from which the pair-count distance is read, decays at exactly the spin gap.
-    The fitted slope of its log on rows 10 to 30 is 0.3171 against a gap of 0.3170, at two of the three positions in the period.
-  - But the top flip-odd eigenvalue comes as a pair of equal magnitude, so the correlation oscillates as it decays.
+  - At width 12 the correlation along the transfer, from which the pair-count distance is read, decays at the gap's rate: the
+    fitted slope of its log on rows 10 to 30 is 0.3171 against a gap of 0.3170 at two of the three positions. *Scoped after the
+    referee:* that window is shorter than the oscillation's beat periods (about 33 and 61 rows). On longer windows the rate is 0.317
+    to 0.327 at every position and in both sectors, within 4% of the gaps 0.3135 and 0.3170. So Q6's 0.24 and 0.17 are artifacts
+    of the window.
+  - But the top flip-odd eigenvalue comes as a pair of equal magnitude, so the correlation oscillates as it decays. *After the
+    referee:* in one sector it is a real ± pair, in the other a complex conjugate pair at 0.94π to 0.98π, alternating with the
+    parity of w/3. Both approach λ₀/√2 and phase π as the width grows.
   - At single-row resolution its size never decreases strictly, at any position or in either sector.
   - Even the two-row tick, declared in advance as an envelope reading, holds only at two positions in the periodic sector. It
     fails at the third position, and at every position in the twisted sector, where the correlation crosses zero.
 
-In the owner's terms: on the weave there is now a base whose distance carries all its information (pair counts determine it, for
-this class of knots) and decays at a fixed rate from any start, about 2.9 rows per factor of e. It is the first such base found on
-this pattern. But it skips: farther is not always less alike, because the likeness oscillates. A distance that both carries the
-information and steps outward strictly is still not found. This is the third case in envelope only, after OR and hard hexagons,
-and the first that carries all the information.
+In the owner's terms: on the weave there is now a two-way base whose distance carries all its information and decays at a fixed
+rate from any start, about 2.9 rows per factor of e. Pair counts determine it, for this class of knots (`WEAVE-LAWS-20261117-001A`,
+L1, and `DISTANCE-ORDER-20261117-001A`, statement 3(a), which cover the signed knots). But it skips: farther is not always less
+alike, because the likeness oscillates. This is the third case in envelope only, after OR and hard hexagons, and the first of them
+that carries all the information.
+
+*Narrowed after the referee:* it is the first such base among the coupled, two-way ones. `WEAVE-MIX-20261117-001`'s third survivor
+falls apart into independent strips of two columns. Along a strip, its distance carries all the information, decays at a fixed
+rate (an odd pair of exactly ±(√2 − 1)λ₀) and decreases strictly at single-row resolution from every start, the referee found. That
+meets this study's own ruler criterion. So on the weave a one-way ruler with full information exists, and the two-way one is still
+unmet.
 
 ## Predictions and verdicts
 
@@ -69,8 +83,9 @@ the program's terms.
 
 ## What it means for A97 and the goals
 
-- **A97** stays under challenge. On the weave a base whose distance carries all its information, and decays at a fixed rate, now
-  exists. It steps outward only in envelope, so the strict premise is still unmet there.
+- **A97** stays under challenge. On the weave a two-way base whose distance carries all its information, and decays at a fixed rate,
+  now exists. It steps outward only in envelope, so the two-way premise is still unmet there. *After the referee:* a one-way strip
+  ruler with full information exists (`WEAVE-MIX-20261117-001`'s decoupled survivor).
 - **G1:** obstruction learned. The best periodic candidate is a ruler only in envelope.
 - **G16:** capability gained. Twist sectors, the splitting diagnostic and the identification of the pair.
 
@@ -99,11 +114,34 @@ Consulted before the freeze. It found the half-turn with a seam, and predicted t
 
 Its two-row-tick prediction failed. Not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code: confirmed with fixes, no Block.
+- The twist is right. It was rebuilt independently by re-signing the two seam knots, and the stored spectra at widths 6, 9 and 12
+  reproduce to 6 × 10⁻¹². The seam's position is irrelevant.
+- The site transfer equals the dense one to 10⁻¹³, and the Arnoldi values at widths 15, 18 and 21 match to 3 × 10⁻¹².
+- The half-turn's gauge proves Q2's parity rule.
+- "The third envelope-only case" is right, and it is the first of the three with full information.
+
+Folded in the same day, each logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing.** "The first base on the weave whose distance carries all its information and decays at a fixed rate" holds among
+   two-way bases only. `WEAVE-MIX-20261117-001`'s third survivor is a one-way strip ruler with full information, and strictly
+   decreasing.
+2. **Not a block.** "Carries all its information" cites the proofs (`WEAVE-LAWS-20261117-001A`, L1; `DISTANCE-ORDER-20261117-001A`,
+   3(a)).
+3. **Not a block.** The fit window is shorter than the beat periods. On longer windows the rate is within 4% of the gap at every
+   position, so "exactly" is withdrawn and Q6's misses are window artifacts.
+4. **Not a block.** The odd pair is real ± in one sector and complex in the other, alternating with the parity of w/3.
+5. **Not a block.** The splitting is in natural logs, the gaps in log base 3. In one sector the energy gap is exactly log₃ 2,
+   from an exact eigenvalue λ₀/2.
+
+The referee's suggested direction, a closed form by Kasteleyn's method, is filed as direction 4.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: settle the 3 × 1 pair | **Status:** Successful (referee pending) | One arrangement; gapped in both sectors to width 21 with exponential sector splitting; a ruler only in envelope; 4 of 6 held |
+| This attempt: settle the 3 × 1 pair | **Status:** Successful (refereed) | One arrangement; gapped in both sectors to width 21 with exponential sector splitting; a ruler only in envelope; 4 of 6 held |
 | Local direction: a distance that carries information and steps outward on the weave | Narrowed | The one periodic candidate oscillates |
 | Broader exploration: a strict ruler with full information | Unexplored | Needs a base whose slowest mode is a single real one |
 | Long-term goal: G1 | Obstruction learned | The best candidate on the weave skips |
@@ -115,6 +153,7 @@ Its two-row-tick prediction failed. Not consulted after the read-out.
 | 1 | A law whose free room runs only along two orders (from `CUBE-DOUBLING-20261118-001`) | 3/3 | 2/3 | Characterise which combinations stay forceable when certificates may use only adjacent pairs → stop at a law or an obstruction | Selected (coordinator) |
 | 2 | The random 10% mix of signed knots, with the twist fixed and correlations measured | 2/3 | 2/3 | Lyapunov gaps and correlations in both sectors → stop at its class and ruler reading | Alternative |
 | 3 | Which periodic arrangements have a single real slowest mode: a strict ruler with full information | 2/3 | 1/3 | Scan the odd-count families for a real leading odd eigenvalue → stop at one or an obstruction | Alternative |
+| 4 | The pair in closed form (the referee's suggestion): the exact eigenvalue λ₀/2, the odd −λ₀(other)/2 and \|μ\|/λ₀ → 1/√2 (spin gap → ½ log₃ 2) look Pfaffian; N2 maps the base to dimers on a planar graph, so a Kasteleyn computation could give the gap and phase exactly and make "disordered" a theorem | 2/3 | 2/3 | Build the Kasteleyn matrix of the subdivided honeycomb for the 3 × 1 period → stop at the gap in closed form or an obstruction | Alternative |
 
 **Corrections:** none.
 

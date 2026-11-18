@@ -3,7 +3,7 @@
 Status: Proved
 
 Ticket `WEAVE-PAIR-20261118-001Z`, 2026-11-18. A ledger; it makes no new claim. The decision note is
-`research/WEAVE-PAIR-20261118-001/weave_pair.md`. Referee pending.
+`research/WEAVE-PAIR-20261118-001/weave_pair.md`. Refereed (R1, confirmed with fixes; see the last section).
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |
@@ -12,3 +12,11 @@ Ticket `WEAVE-PAIR-20261118-001Z`, 2026-11-18. A ledger; it makes no new claim. 
 | 3 | Its pair-count distance decays at the spin gap but oscillates (the slowest odd mode is a pair of equal magnitude): a ruler only in envelope; the two-row tick holds at two of three positions in the periodic sector only. | computed | B (Q5, Q6 failed) |
 
 **Recommendation:** Research directions; the next (a law whose free room runs only along two orders) is on the coordinator's queue.
+
+## After the referee (R1, 18 November 2026)
+
+Confirmed with fixes, no Block; folded in the same day and logged in `docs/CORRECTIONS.md`. The rows above are kept as written.
+- **Narrowing.** Among two-way bases this is the first with full information and a fixed decay rate on the weave; a one-way strip
+  ruler with full information exists (`WEAVE-MIX-20261117-001`'s decoupled survivor).
+- **Not a block** on row 3. The decay rate is within 4% of the gap at every position on windows longer than the beat periods; the
+  odd pair alternates between a real ± pair and a complex one with the parity of w/3.

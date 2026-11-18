@@ -459,11 +459,14 @@ whatever the tied choices. This is not the median-graph growth of the literature
 cube, and the knots' end readings reach the rest
 ([decision note](../research/CUBE-DOUBLING-20261118-001/cube_doubling.md)).
 And the weave pair that survived (`WEAVE-PAIR-20261118-001`, frozen
-computation, referee pending)? It is one arrangement seen two ways, a half-turn
+computation, refereed)? It is one arrangement seen two ways, a half-turn
 of the weave apart, and with the twist around the cylinder fixed it is
 genuinely disordered: its distance carries all its information and fades at a
 steady rate from any start. But it fades in waves, so farther is not always less
-alike, and the distance does not step outward without skipping
+alike, and the distance does not step outward without skipping. Its referee
+found that another survivor, which falls apart into independent strips two
+distinctions wide, does step outward strictly along each strip: a one-way
+ruler that carries all its information. The two-way one is still missing
 ([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with

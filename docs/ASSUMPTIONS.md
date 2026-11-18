@@ -2605,10 +2605,14 @@ evidence: results and their status come from the records each entry links.
   erased the states keep a fading imprint of it (the fading due to erasure shown for the six-starts; its referee).
   `CUBE-DOUBLING-20261118-001` ([decision note](../research/CUBE-DOUBLING-20261118-001/cube_doubling.md); referee pending)
   proved the cheapest law's cube growth for every size under A99: it gains one order at each doubling and never keeps two.
-  `WEAVE-PAIR-20261118-001` ([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md); referee pending) settled
-  `WEAVE-MIX-20261117-001`'s surviving pair: one arrangement, disordered in both twist sectors to width 21, whose distance carries
-  all its information and decays at a fixed rate, but oscillates, so it steps outward only in envelope.
+  `WEAVE-PAIR-20261118-001` ([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md); refereed) settled
+  `WEAVE-MIX-20261117-001`'s surviving pair: one two-way arrangement, disordered in both twist sectors to width 21, whose distance
+  carries all its information and decays at a fixed rate, but oscillates, so it steps outward only in envelope. Its referee found
+  that `WEAVE-MIX-20261117-001`'s third survivor, decoupled into strips of two columns, is a one-way ruler with full information
+  that decreases strictly from every start. So on the weave the one-way premise is met and the two-way one is not.
 - **History.**
+  - 2026-11-18 · The weave case scoped after `WEAVE-PAIR-R1` (Narrowing): a one-way strip ruler with full information exists; the
+    two-way premise stays unmet; status unchanged.
   - 2026-11-18 · `WEAVE-PAIR-20261118-001`: the weave's best periodic candidate is disordered but a ruler only in envelope; status
     unchanged.
   - 2026-11-18 · The cap study scoped after `KNOT-CAP-R1` (Narrowing): the fade due to erasure holds for the six-starts; the c = 5

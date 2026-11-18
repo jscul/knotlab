@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: moving the line's ends, confirmed by its referee; its range stated
+
+- The proof that moving a presentation's ends one step round the cycle of its knots carries the growth rule
+  (`MEET-TWIST-20261118-001`) was confirmed by its referee, with a fresh test of the law at 263 of 263 levels
+  ([decision note](research/MEET-TWIST-20261118-001/meet_twist.md)).
+- Stated (not a block): the theorem holds for every line length through the steps before the first added state, and that comes
+  within 2^(n0 − 1) distinctions on a line of n0; "for every n" is replaced accordingly.
+
 ## 18 November 2026: the meeting pattern's growth, confirmed by its referee; the headline narrowed
 
 - The study of whether the meeting pattern grows the same wherever it sits (`MEET-GROW-20261118-001`) was confirmed by its referee

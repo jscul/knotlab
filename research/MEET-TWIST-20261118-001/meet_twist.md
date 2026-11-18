@@ -1,7 +1,8 @@
 # Why the meeting pattern grows the same wherever it sits: moving the ends' pair
 
 Epic `MEET-TWIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes the selected direction of
-`MEET-GROW-20261118-001`. Goal G16; tests A97. Referee pending.
+`MEET-GROW-20261118-001`. Goal G16; tests A97. Refereed: report [R1](referee-R1/report.md), confirmed, no Block, one wording fix folded
+in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `0aabfbd2c` at about 04:00 UTC on 18 November. The
@@ -24,7 +25,7 @@ Epic `MEET-TWIST-20261118-001`, 18 November 2026, by Claude, on the coordinator'
 - **Every two presentations with one meeting pattern are linked this way** (proved). Their knots are one bracketing of the cycle
   with the ends' pair at different steps, since the co-knotted pairs have one Hamiltonian cycle (the literature's word; classical).
   So `MEET-GROW-20261118-001`'s computed findings, one law for the co-knotted pairs wherever the pattern sits (P1), the same
-  labelled counts (P3) and the same option profiles (P4), are now proved for every n, until a state is added.
+  labelled counts (P3) and the same option profiles (P4), are now proved for every line length, through the steps before the first added state (a range that ends by 2^(n0 − 1) distinctions: while no state is added every distinction is one of the 2^(n0 − 1) odd sets of the line's distinctions; the referee).
 - **What the ends' pair still decides is the number of orders.** The same odd sets read against a different ends' pair have
   different middles (the middle of a fill is the one of its three distinctions that does not bound the run of the cycle between them that holds
   the ends' pair), and
@@ -70,7 +71,8 @@ GF(2). Local: Lemmas 1 and 2 and Theorem 2 for KF3.
 - **A97** stays under challenge. How the knots meet (the bracketing) is information the states lack; its growth under KF3 is now
   proved independent of where the line's ends sit, while the number of orders depends on it. Whether this information is a
   distance is open, and is the next direction.
-- **G16:** capability gained. An exact symmetry of the growth law, proved for every n until a state is added.
+- **G16:** capability gained. An exact symmetry of the growth law, proved for every line length through the steps before the first
+  added state.
 
 ## Limitations
 
@@ -96,11 +98,30 @@ Consulted once, on the written proof before the freeze: holds with fixes (the in
 same law under the coupling"), all folded in. The twist itself was its suggestion in `MEET-GROW-20261118-001`; the exact form
 (keep every odd set) was found by computation.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code: confirmed, no Block.
+- Lemma 2's five rows and the inverse hold (checked by hand), as do the parity of one odd set for every zero-cost option, Lemma 1
+  at h = g, reflections (a run becomes its complement, odd sets unchanged) and KF3's irredundancy being judged on states.
+- A fresh test without Lemma 2's table: the exact joint law of (odd sets, co-knotted pairs) before and after one move of the ends'
+  pair is carried at 263 of 263 levels for every bracketing of five and six (to n0 + 4) and seven (to n0 + 3), with no state added;
+  the move changes the two-order chance in 4 of 5, 10 of 14 and 24 of 42 bracketings.
+- Prior work, cited once: the dihedral symmetry of triangulations (moving the marked side re-roots the binary tree) and the
+  outerplanar Hamiltonian cycle are classical. Nothing was found on a growth rule that is invariant under the move while its
+  number of orders is not, which is what this study adds.
+
+Folded in the same day (logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`):
+1. **Not a block** (wording). "For every n" is earned only as "for every line length, through the steps before the first added
+   state". That range is finite on each line: while no state is added every distinction is one of the 2^(n0 − 1) odd sets, so a
+   state is added by 2^(n0 − 1) distinctions (from the line of five one bracketing runs with no added state through n = 10). After a
+   state is added the theorem says nothing. Fixed in the note, the proof, the intuition entry, the goals row, A97 and the objects
+   row.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: the map of states behind placement independence | **Status:** Successful (referee pending) | Constructed and proved for every n until a state is added; the frozen check passed at 74,972 states |
+| This attempt: the map of states behind placement independence | **Status:** Successful (refereed R1, confirmed) | Constructed and proved for every line length, before the first added state; the frozen check passed at 74,972 states |
 | Local direction: the two layers of how knots meet | Practically exhausted for this rule | Growth's independence of the ends is proved; the orders' dependence is explained by Lemma C |
 | Broader exploration: is how knots meet a distance (A97) | Unmapped | The bracketing is outside the line's states; whether grown states' disagreement counts carry it is untested |
 | Long-term goal: G16 Learning the rules behind what a system allows | Capability gained | An exact symmetry of the growth law, proved |

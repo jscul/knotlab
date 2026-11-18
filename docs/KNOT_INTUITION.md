@@ -514,8 +514,8 @@ Why (`MEET-TWIST-20261118-001`, proof and frozen check, referee pending)?
 Read the line's knots as a ring of distinctions cut at the line's two ends.
 Moving the cut one step changes which distinction some knots hold between the
 other two, but each knot then rules out exactly the same states, so the growth
-makes the same choices with the same chances (proved for every size, until a
-step adds a state); the cut decides only how many orders the grown knots line up
+makes the same choices with the same chances (proved for every line length,
+until a step adds a state, which happens within 2^(n0 − 1) distinctions); the cut decides only how many orders the grown knots line up
 into ([decision note](../research/MEET-TWIST-20261118-001/meet_twist.md)).
 Is the knots' nesting then a distance (`MEET-DIST-20261118-001`, frozen
 computation, referee pending)? Not at the start: every presentation of a line has

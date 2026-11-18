@@ -95,7 +95,9 @@ literature's), which has one Hamiltonian cycle (classical), so φ maps the cycle
 the indexing reversal sends (h, ε) to (h, 1 − ε) with the odd sets unchanged). Moving the ends' pair one step at a time carries
 KF3 from one to the other. So, until the first state is added, the labelled law of the co-knotted pairs is carried by one
 renaming (MEET-GROW's P1), the labelled base counts agree (P3), and the joint law with every state's options (all of which add no
-state in that range) is carried (P4), for every n. The states correspond by their index (h, ε), not by the renaming: the values
+state in that range) is carried (P4), for every line length through the steps before the first added state. That
+range is finite: while no state is added every distinction is one of the 2^(n0 − 1) odd sets of the line's distinctions, so a
+state is added by 2^(n0 − 1) distinctions (added after the referee, R1). The states correspond by their index (h, ε), not by the renaming: the values
 differ, which is why the number of orders is not carried.
 
 **What the mark still decides: the number of orders.** The states are read from the odd sets with the mark: the line is the cycle
@@ -111,5 +113,6 @@ the same odd sets give different numbers of orders under different marks.
 
 ## Known mathematics, labelled
 
-Polygon triangulations and bracketings (Catalan); the unique Hamiltonian cycle of a maximal outerplanar graph (classical); parity
+Polygon triangulations and bracketings (Catalan), and their dihedral symmetry (moving the marked side re-roots the binary
+tree); the unique Hamiltonian cycle of a maximal outerplanar graph (classical); parity
 (odd sets) of GF(2)-valued functions. Local: Lemmas 1 and 2 and Theorem 2 for KF3.

@@ -2630,7 +2630,8 @@ evidence: results and their status come from the records each entry links.
   states still steer which pairs come next (its referee, Narrowing).
   `MEET-TWIST-20261118-001` ([decision note](../research/MEET-TWIST-20261118-001/meet_twist.md); referee pending) proved why:
   moving the line's ends one step round the cycle of its knots, keeping every distinction's odd set, carries KF3's options knot
-  by knot, so the growth's law does not depend on where the ends sit (every n, until a state is added); the ends decide only the
+  by knot, so the growth's law does not depend on where the ends sit (every line length, until a state is added, which happens
+  within 2^(n0 − 1) distinctions; refereed); the ends decide only the
   number of orders.
   `MEET-DIST-20261118-001` ([decision note](../research/MEET-DIST-20261118-001/meet_dist.md); referee pending) measured how
   much of the nesting becomes distance: none before growth (all presentations have the same disagreement counts); after KF3 growth

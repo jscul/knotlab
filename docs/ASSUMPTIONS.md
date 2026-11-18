@@ -2739,7 +2739,9 @@ evidence: results and their status come from the records each entry links.
   facing each other; the lone double meeting is the smallest case. Bond distance is at least steps apart + 1 there (sketched through
   the height function, checked) and equal to it on all but 64 bonded pairs.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
+  With two temporary tests the bond distances suffice for 35 individual joins if the instrument can set or clear both tests together on the current reading. Changing one table-identified pair at a time can be blocked before the second join. Both conclusions are proved for the original eight in the common-value convention. [Two live tests](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-18 · `TWO-PROBE-ALIGNMENT-20261118-001` distinguished coordinated replacement from moving one probe at a time. Status unchanged.
   - 2026-11-18 · `ONE-PROBE-ALIGNMENT-20261118-001` proved a limit to guaranteed serial alignment with one live betweenness test.
   - 2026-11-18 · `DOUBLE-MEET-20261118-001`: in the weave double meetings are harmless; failures only through lone pairs of opposite classes facing each other, unbonded or (from twelve knots) bonded too far; status unchanged.
   - 2026-11-18 · `NAE-METRIC-20261118-001`: under not-all-equal bond distance is a true distance exactly when it is one in every block; trees of knots and rings proved; status unchanged.

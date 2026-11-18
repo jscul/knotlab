@@ -107,6 +107,18 @@ The reasons for each rating:
 
 **Recommendation.** Research directions, #1, awaiting the coordinator's go-ahead.
 
+**Route assessed, then parked (2026-11-18, after the coordinator's go-ahead).** With the advisor
+(`advisor/completeness_route_question.md`, `advisor/completeness_route_answer.md`), #1 has a route. A subtree's summary is the family
+of realised subsets of its interface states, tracked with and without its level-k and far members. It composes at blocks and branch
+points, and it handles any number of crossings, so "L ≤ c" is decidable for each c.
+- **Where totality stalls.** Deciding boundedness in s is a limitedness question for a weighted tree automaton. It is decidable by
+  min-plus matrix powers only when the far members hang below one long spine. The normal form does not give that, since members near
+  the bottom band ride on further spines synchronised with s.
+- **What totality would need.** Either the theory of regular cost functions (Colcombet–Löding), through evidence admission, or a long
+  Hashiguchi-style proof.
+- **The decision.** #1 stays open in the basket, and the study moved to #2 (growing orbits, B188), as the go-ahead allowed for a
+  route that is not clear.
+
 ## Hand-off to the referee
 
 **Files.**

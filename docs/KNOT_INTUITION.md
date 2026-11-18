@@ -467,8 +467,8 @@ pair lies in a knot of three, so bond distance is flat while correlation
 grades the grid
 ([decision note](../research/FREE-READ-20261118-001/free_read.md)).
 Is bond distance then a distance, one that adds up along the way
-(`BOND-METRIC-20261118-001`, proofs and frozen census, referee pending)? Only
-where knots compose. Two not-all-equal knots sharing two distinctions put each
+(`BOND-METRIC-20261118-001`, proofs and frozen census, refereed)? Not always.
+Two not-all-equal knots sharing two distinctions put each
 third distinction one knot from the shared ones, yet no knot holds the two
 thirds: the shared pair is a hub between them, not a touch, so they are
 infinitely far apart. On every parity base it does add up, because two knots

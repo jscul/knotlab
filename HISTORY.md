@@ -22,6 +22,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   ([decision note](research/KNOT-SWITCH-20261118-001/knot_switch.md)).
 - Narrowed: outside those growths the reading is one way only; a crossing seldom comes with a filled knot.
 
+## 18 November 2026: where bond distance is a metric, confirmed by the referee; two statements narrowed
+
+- The study of whether bond distance is a metric (`BOND-METRIC-20261118-001`) was confirmed by its referee with fresh code, with no
+  Block: among the 34 three-place laws that pass the knot test, bond distance is a metric on every base of copies of one law exactly
+  when the law is parity ([decision note](research/BOND-METRIC-20261118-001/bond_metric.md)).
+- Narrowed: that statement holds law by law, not base by base (not-all-equal trees and tori are metric though their knots do not
+  compose); and "not exactly two ones" first fails on seven distinctions with six knots, not eight.
+
 ## 18 November 2026: the distance that reads freedom, confirmed by the referee; the triangle inequality narrowed
 
 - The study of the distance that reads freedom (`FREE-READ-20261118-001`) was confirmed by its referee with fresh code, with no Block:

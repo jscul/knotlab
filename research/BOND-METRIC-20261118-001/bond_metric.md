@@ -2,7 +2,8 @@
 
 Epic `BOND-METRIC-20261118-001`, 18 November 2026, by Claude. The coordinator's go-ahead on `FREE-READ-20261118-001`'s direction 2:
 is bond distance a metric on every base, prove the triangle inequality or find the base where it fails. Goals G1 and G16; tests A97
-and A39; sub-goal B200. **Referee pending.**
+and A39; sub-goal B200. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18
+November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `c26b2177d` at 09:11 UTC; the census ran from 09:11 to
@@ -24,16 +25,19 @@ and A39; sub-goal B200. **Referee pending.**
   program already had: a law composes like cycles exactly when it is parity (`KNOT-CIRCUITS-20261020-001`), and chains of knots add
   nothing to bond distance exactly where knots compose (`BOND-CHAIN-20261108-001`, A39).
 - **Why.** The triangle inequality is composition. On a parity base, any two knots that meet contain, inside their union, a knot
-  holding their far ends (two circuits of a matroid that share an element). Under any other law two knots can meet at a hub: the
-  shared distinctions can take values that leave both knots slack, so the far ends never share a knot. The foundation's own contact
+  holding their far ends (two circuits of a matroid that share an element). Under six of the other eight kinds two knots can meet at
+  a hub: the shared distinctions can take values that leave both knots slack, so the far ends never share a knot; the other two
+  ("not exactly two ones" and its twist) need more knots. This holds law by law, not base by base: not-all-equal trees and the tori
+  checked are metric though their knots do not compose (narrowed after the referee). The foundation's own contact
   rule says the same: a common hub is not one touch.
 - **How small, and where.** The census (frozen):
   - No failure of bond distance or of bond distance minus one on 439,652 parity bases (every base to seven distinctions and four
     knots, and 2,000 random ones to twelve distinctions).
   - Six of the eight other kinds fail on the smallest possible base, two knots on four distinctions: not-all-equal, betweenness, the
     clause and its twist, and both forms of "if one place is 1 the other two agree (or differ)".
-  - "Not exactly two ones" never fails up to seven distinctions and four knots (its failure needs eight and six), but its twist fails
-    on four distinctions with three knots, through two ties of two that each run one way (one forbids both being 1, the other forbids
+  - "Not exactly two ones" never fails up to seven distinctions and four knots, but it fails on seven with six knots (8,190 of
+    1,356,250 bases, the referee; T5's eight-distinction base is not the smallest), and its twist fails on four distinctions with
+    three knots (12 of the 108 bases on distinct triples), through two ties of two that each run one way (one forbids both being 1, the other forbids
     one without the other), and one-way ties do not compose. That was not predicted.
   - Not-all-equal with knots meeting at most once: no failure on seven distinctions (all 4,095 systems that allow a state; the 30
     Fano planes allow none); on eight, failures only among
@@ -60,7 +64,7 @@ and A39; sub-goal B200. **Referee pending.**
 | P1 | parity bases: bond distance satisfies the triangle inequality | held | 0 of 439,652 bases fail |
 | P2 | the same for bond distance − 1 | held | 0 fail |
 | P3 | six languages fail on two knots on four distinctions | held | all six |
-| P3b | (advisor) neither R5 language fails within six distinctions and four knots | **failed** | R5 never fails to seven; its twist fails on four distinctions with three knots (12 of 108 bases) |
+| P3b | (advisor) neither R5 language fails within six distinctions and four knots | **failed** | R5 never fails to seven distinctions and four knots; its twist fails on four distinctions with three knots (12 of the 108 bases on distinct triples) |
 | P4 | not-all-equal meeting at most once, seven distinctions: no failure | held | 0 of 4,095 (the 30 Fano planes allow no state) |
 | P5 | the same on eight distinctions with at most four knots: no failure | held | 0 of 26,040 |
 | P6 | every infinite failure under pure not-all-equal has a correlated pair | **failed** | an independent pair on six distinctions and four knots |
@@ -70,10 +74,12 @@ and A39; sub-goal B200. **Referee pending.**
 ## What it means for A97, A39 and B200
 
 A39 (space is spaced by knots that compose) gains a metric form: bond distance obeys the triangle inequality on every base exactly
-for the law whose knots always compose, and fails, already on two knots, wherever a hub can stand between them. The results that rest
+for the law whose knots always compose, and for every other three-place law fails on some base (on two knots for six of the eight
+kinds). The results that rest
 on A39 (rulers, circles, ball growth) were measured on weaves, trees and parity bases, where bond distance is a metric (proved, or
 checked here on tori), so none of them changes. For A97 (distance is the only form of information) and B200, bond distance is a
-distance only where knots compose; elsewhere it reads how far one knot reaches, which does not add up along a chain. The step that
+distance on every base only for parity; under the other laws it is a distance on some bases (trees, the tori checked) and elsewhere
+reads how far one knot reaches, which need not add up along a chain. The step that
 would make it add up is composition, which the foundation reserves for native networks (two contacts composing by a substrate law),
 not a choice of reading.
 
@@ -113,14 +119,29 @@ compose (in T1), gave the failing bases for R6, R5 and the twisted kinds (T4, T5
 unit from five classes to nine languages, predicted that R5 would pass within six distinctions and four knots (P3b: right for R5,
 wrong for its twist), and asked for exact arithmetic in P6. It saw no uniform construction for general laws.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+fixes, no Block. The theorem stands; T1 to T5 checked by hand, every proof base rebuilt; the smallest failures per language, P6's
+independent pair, the eight-distinction census meeting once and 1,500 random parity bases (no failure of b or b − 1) all reproduce.
+The nine languages are the right unit, and P3b and P6 are rightly scored failed. Folded in the same day, each item logged in
+`docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (R5's smallest failure).** "Its failure needs eight and six" was false: R5 fails on seven distinctions with six knots
+   (8,190 of 1,356,250 bases; for example {0,1,2}, {0,1,3}, {0,1,4}, {0,2,3}, {2,4,5}, {3,4,6}, where no bond holds 5 and 6 though each
+   is two from every one of 0 to 4; checked here). Nothing fails on six distinctions with five to eight knots, or on seven with five.
+2. **Narrowing (wording).** "A metric exactly where knots compose" holds law by law, not base by base: not-all-equal trees and the tori
+   checked are metric though their knots do not compose. It now reads "on every base of copies of one law exactly when the law is
+   parity".
+3. **Not a block.** The twisted R5's 12 failing bases are of the 108 bases on distinct triples (216 if two knots may share a triple).
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: is bond distance a metric? | **Status:** Successful (referee pending) | Proved a metric exactly where knots compose (all parity bases; with b − 1); proved failing for every other three-place law; census of smallest failures; 5 of 7 held |
-| Local direction: one distance for both laws (B200) | Narrowed | Bond distance adds up only where knots compose; under not-all-equal it is a metric on trees, the tori checked and small bases meeting once, not in general |
+| This attempt: is bond distance a metric? | **Status:** Successful (refereed) | Proved a metric on every base whose knots compose (all parity bases; with b − 1), and on every base of copies of one law exactly for parity; proved failing for every other three-place law; census of smallest failures; 5 of 7 held |
+| Local direction: one distance for both laws (B200) | Narrowed | Bond distance adds up on every base only under parity; under not-all-equal it is a metric on trees, the tori checked and small bases meeting once, not in general |
 | Broader exploration: distances read from the states | Known alternatives | Matroid connectivity and the program's own composition results (KNOT-CIRCUITS, BOND-CHAIN) carry the mechanism |
-| Long-term goal: G1 and G16 | G1 obstruction learned; G16 capability gained | G1: the program's distance is a metric only where knots compose. G16: the triangle inequality as a test that tells composing laws from the rest |
+| Long-term goal: G1 and G16 | G1 obstruction learned; G16 capability gained | G1: the program's distance is a metric on every base only for the law whose knots compose. G16: the triangle inequality as a test that tells composing laws from the rest |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 
@@ -132,12 +153,14 @@ wrong for its twist), and asked for exact arithmetic in P6. It saw no uniform co
 
 **Corrections:** none for this study (the correction it began from, FREE-READ's referee check, is logged under `FREE-READ-20261118-001`).
 
-**Goals:** G1 checkpoint (obstruction learned: bond distance is a metric exactly where knots compose; among three-place laws, exactly
-parity) and G16 checkpoint (capability gained: the triangle inequality as a test of composition); no goal changed.
+**Goals:** G1 checkpoint (obstruction learned: bond distance is a metric on every base whose knots compose; on every base of copies
+of one three-place law exactly for parity) and G16 checkpoint (capability gained: the triangle inequality as a test of composition); no goal changed.
 
 **Assumptions:** A39 gains a metric form (status unchanged); A97 gains this study; no new entry.
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its "exactly where knots compose" was scoped to laws after the referee (see Referee).*
 
 **Outcome:** bond distance is not a metric on every base, and the reason is the program's own contact rule. Two not-all-equal knots
 that share two distinctions put each third distinction one knot from the shared ones, while no knot holds the two thirds together, so

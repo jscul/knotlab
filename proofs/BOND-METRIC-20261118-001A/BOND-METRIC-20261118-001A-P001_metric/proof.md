@@ -2,7 +2,8 @@
 
 Ticket `BOND-METRIC-20261118-001A`, 18 November 2026. Written before the frozen run; checked by ticket B's gates and census
 (`experiments/BOND-METRIC-20261118-001B/BOND-METRIC-20261118-001B-E001_triangles/`). Referee pending. T1's second half, T4 and T5
-are the advisor's (claude-fable-5-2), checked here by hand and by the gates; T1's first half, T2 and T3 are the thread's.
+are the advisor's (claude-fable-5-2), checked here by hand and by the gates; T1's first half, T2 and T3 are the thread's. Refereed:
+report R1, confirmed with fixes, no Block (`research/BOND-METRIC-20261118-001/referee-R1/report.md`), folded in on 18 November.
 
 ## Terms
 
@@ -91,6 +92,10 @@ So b(c, d) is infinite while b(c, a) + b(a, d) = 4. Switching a, c and d, each l
 and every knot holding exactly one of them, turns every knot into a copy of the twisted R5 with the same bonds. Two R5 knots sharing
 two distinctions do not fail: given a = 1, c = d, so {a, c, d} is a bond. ∎
 
+*Not the smallest (the referee):* R5 already fails on seven distinctions with six knots, for example {0, 1, 2}, {0, 1, 3}, {0, 1, 4},
+{0, 2, 3}, {2, 4, 5}, {3, 4, 6}, where no bond holds 5 and 6 though each is two from every one of 0 to 4 (8,190 of 1,356,250 such
+bases fail; none on six distinctions with five to eight knots, or on seven with five).
+
 ## The nine languages
 
 The 34 three-place laws passing K1–K3 form nine languages under reordering places and switching every value at once: the operations
@@ -110,8 +115,8 @@ bonds.
 
 - Parity: a metric on every base (T1). Not-all-equal and the clause: not a metric, on four distinctions (T2, T3).
 - Ticket B's census (frozen): no failure of b or b − 1 on 439,652 parity bases; six languages fail on two knots on four
-  distinctions; R5 has no failure on at most seven distinctions and four knots, but its twist fails on four distinctions with three
-  knots (P3b missed), through two bonds of two that are one-way ties: {0, 1} forbids both being 1, {0, 3} forbids 0 = 1 with 3 = 0,
+  distinctions; R5 has no failure on at most seven distinctions and four knots (it fails on seven with six, the referee), but its twist
+  fails on four distinctions with three knots (12 of the 108 bases on distinct triples) (P3b missed), through two bonds of two that are one-way ties: {0, 1} forbids both being 1, {0, 3} forbids 0 = 1 with 3 = 0,
   and nothing then ties 1 to 3. One-way ties, unlike parity's equalities, do not compose.
 - A failing pair need not be correlated (P6 missed): on the not-all-equal knots {0, 1, 2}, {0, 1, 3}, {0, 4, 5}, {2, 4, 5}, the pair
   3, 4 takes its four joint values equally often, though each is one knot from 0.

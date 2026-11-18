@@ -11,7 +11,7 @@
   "rule": "largest sum of class sizes over linked components"
  },
  "public_inputs": {
-  "code": "linked.py (sha256 9f8527ef833b3be917f747de9d245e2b1f53fae5fbffbbe12a44ec47903398dc), job.py (sha256 ba4fd1b2000490c7d9b62f244ba2538b7b5bfdd454a9c8dd4197acea72167b97), merge.py (sha256 4de12f2d502934ca35fb666600ade5bad9fee143466017bd6e1a9b91f1ad3f25)",
+  "code": "linked.py (sha256 9f8527ef833b3be917f747de9d245e2b1f53fae5fbffbbe12a44ec47903398dc), job.py (sha256 ba4fd1b2000490c7d9b62f244ba2538b7b5bfdd454a9c8dd4197acea72167b97), merge.py (sha256 751a5ca13ef4e53516153eddcc7ba71673550bd7ada03b2dc6fb6826c603cc8c)",
   "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
   "reused": "TOUCH-CENSUS-20261118-001B arrlib.py; its run's per-arrangement results (runs/touch-census) select the census part"
  },
@@ -29,5 +29,10 @@
  },
  "stop_rule": "One run; read-out; referee hand-off; report.",
  "runtime": "minutes to an hour",
- "amendments": []
+ "amendments": [
+  {
+   "date": "2026-11-18 22:44 UTC",
+   "change": "merge.py printed a dictionary with tuple keys; keys converted to text. No case, rule, prediction or number changed."
+  }
+ ]
 }

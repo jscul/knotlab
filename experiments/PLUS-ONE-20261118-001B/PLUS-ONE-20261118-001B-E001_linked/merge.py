@@ -25,7 +25,7 @@ p1 = [x for x in s1 if x['dim'] != x['linked_sum']]
 fp6 = [x for x in s1 if x['linked_sum'] > x['largest_class'] and x['dim'] == x['largest_class']]
 out['P1'] = {'held': not p1, 'settled with a birth': len(s1), 'misses': [(x['key'], x['dim'], x['largest_class'], x['linked_sum'], x['shapes']) for x in p1[:10]],
              'false positives': len(fp6), 'plus-one cases': sum(1 for x in s1 if x['linked_sum'] > x['largest_class'])}
-out['six outcomes'] = dict(Counter((x['outcome'], x['dim']) for x in six).most_common())
+out['six outcomes'] = {str(k): v for k, v in Counter((x['outcome'], x['dim']) for x in six).most_common()}
 out['six shapes'] = {str(k): v for k, v in Counter((tuple(s[0]), s[1]) for x in six for s in x['shapes']).items()}
 txt = json.dumps(out, indent=1, default=str)
 print(txt)

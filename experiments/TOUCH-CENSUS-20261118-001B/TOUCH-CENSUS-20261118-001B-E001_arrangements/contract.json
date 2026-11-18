@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TOUCH-CENSUS-20261118-001B-E001",
+ "ticket": "TOUCH-CENSUS-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Every distinct connected arrangement of up to five parity knots of three to five places grown by the cubic study's joining rule under the fewest counts: which dimensions occur, how often (distinct and labelled weights, per number of knots), and does the chain-birth rule predict every dimension?",
+ "definitions": {
+  "arrangement": "a connected multigraph on knots with sizes 3-5, degree <= size, up to renaming",
+  "birth": "an offshoot of demand 1 whose parent is not an offshoot of demand 1",
+  "class": "births of one round with one partner (a sibling pair is one class)",
+  "dimension": "0 if closed; k + 1 for the least k with constant nonzero k-th differences of junctions per round over the last seven rounds"
+ },
+ "public_inputs": {
+  "code": "arrlib.py (sha256 7f8ed7484f065922683788d0f5b7d389df2cb7a0428941a8629685a5180b6c71), job.py (sha256 feda87e4fa2bc4dcaeeee32cbb2c4d85d119a9879a31f2ab670ca0275750ecae), merge.py (sha256 18df543689a95f51895e3dc8da74c00011026e68670f1ce989b6159526f02d2e), checks.py (sha256 2f23be38eec45dd863c6c1512d4fe7cf63720ebe7e0f67314ea4be54e04d1727)",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>",
+  "reused": "FIRST-KNOT-20261118-001B startlib.py and FRESH-COUNT-20261118-001B freelib.py (closed records), imported by path"
+ },
+ "forbidden_inputs": [
+  "Changing cases, rules, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "G and P1a-P6 of research/TOUCH-CENSUS-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py: brute-force isomorphism counts to three knots; five known starts.",
+ "predictions": {
+  "P1a": "birthless growth has dimension 1",
+  "P1b": "dimension = largest class when there is a birth",
+  "P2": "2 most common among settled growing; >= 3 under 2% distinct and labelled",
+  "P3": "none above 4, none unsettled after rerun, exactly one of dimension 4",
+  "P4": "stalls only in round 1",
+  "P5": "stall share rises to > 40% at five knots; dim-2 share rises and dim-1 share falls with knots",
+  "P6": "no forced distinction"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py, 15-40 minutes",
+ "amendments": []
+}

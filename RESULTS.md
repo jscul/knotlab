@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 489 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 490 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 489 epics with their closures
+- [Epics](#epics): all 490 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1734,6 +1734,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Who picks the number of orders (`PICK-TWO-20261118-001`) | [closure](proofs/PICK-TWO-20261118-001Z/PICK-TWO-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/PICK-TWO-20261118-001/) |
 | 2026-11-18 | How far the weave's rim pushes bond distance (`RIM-EXCESS-20261118-001`) | [closure](proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/RIM-EXCESS-20261118-001/) |
 | 2026-11-18 | What the arrangement of the count's rows holds (`ROW-ARRANGE-20261118-001`) | [closure](proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/ROW-ARRANGE-20261118-001/) |
+| 2026-11-18 | Which dimensions does the cheapest growth give across arrangements of touching knots? (`TOUCH-CENSUS-20261118-001`) | — | [folder](research/TOUCH-CENSUS-20261118-001/) |
 | 2026-11-18 | Where the cumulant distance is steps apart, and a repair (`TREE-STEPS-20261118-001`) | [closure](proofs/TREE-STEPS-20261118-001Z/TREE-STEPS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-STEPS-20261118-001/) |
 | 2026-11-18 | Can two live betweenness tests guarantee the first aligned round one join at a time? (`TWO-PROBE-ALIGNMENT-20261118-001`) | — | [folder](research/TWO-PROBE-ALIGNMENT-20261118-001/) |
 | 2026-11-18 | Can bond distances identify the joins when either two or three fresh distinctions are allowed? (`VARIABLE-OUTPUT-READER-20261118-001`) | — | [folder](research/VARIABLE-OUTPUT-READER-20261118-001/) |

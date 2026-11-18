@@ -5,9 +5,9 @@
  "proof": "FRESH-COUNT-20261118-001A-P001",
  "ticket": "FRESH-COUNT-20261118-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "What the joining policy builds when the fresh count is free",
- "claim": "T1: with no stall, the parity pattern grown by CUBIC-FROM-A-KNOT's policy with any count rule is the rank-truncated distributive lattice of ideals of the descent order of its offshoots (Birkhoff); groups are lower covers of the next size's ideals, demand = minimal offshoots outside, surplus = new offshoots; a count below demand stalls; implied parity iff demand 0. T2: one count c for every join survives iff c = a (seed size), building N^a; else stalls at rounds 2 / 4 / 3. T3: with groups of at most three, only c = a = 3; capped = uncapped iff no ideal has four maximal elements. T4: fewest counts close one knot into the 2^a pattern and stop; from any hand-over they conserve the chains with demand 1; the crossed start keeps a chains for every a. T5: bond balls of N^a are Theta(r^a), a >= 3. T6: the threshold reader recovers every junction of the uniform growth, a >= 3.",
+ "claim": "T1: with no stall, the parity pattern grown by CUBIC-FROM-A-KNOT's policy with any count rule is the rank-truncated distributive lattice of ideals of the descent order of its offshoots (Birkhoff); groups are lower covers of the next size's ideals, demand = minimal offshoots outside, surplus = new offshoots; a count below demand stalls; implied parity iff demand 0. T2: one count c for every join survives iff c = a (seed size), building N^a; else stalls at rounds 2 / 4 / 3. T3: with groups of at most three, only c = a = 3; capped = uncapped iff no ideal has four maximal elements. T4: fewest counts close one knot into the 2^a pattern and stop; from any hand-over they conserve the chains with demand 1; the crossed start keeps a chains for every a. T5: bond balls of N^a are Theta(r^a), a >= 3. T6: the threshold reader recovers every junction of the uniform growth, a >= 3. Corollary 2.1 (added after the freeze, before the read-out): among one-count growths from one knot that never stall, the fewest added states per junction is at a = 3.",
  "standard_statement": "Birkhoff's representation (finitary form, Stanley EC1 Prop. 3.4.3); conflict-free prime event structures (Nielsen-Plotkin-Winskel 1981); cube condition of median graphs (Barthelemy-Constantin 1993; Chepoi 2000); order dimension = width of join-irreducibles (Dilworth 1950); minimal cuts connected when short cycles generate (Babson-Benjamini 1999; Timar 2013).",
  "prior_work": "CUBIC-FROM-A-KNOT-20261117-001 (policy, r^3) and its referee (two- and four-distinction variants); BOND-NEXT-JOIN-20261117-001 (reader, three fresh); LOGIC-AXIS-20261107-001A (r^D on Z^D); STATE-RULES-20261117-001 and PICK-TWO-20261118-001 (betweenness analogues).",
  "dependencies": [],
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proofs written before the census and read by the advisor (Fable 5.2); referee pending",
+  "status": "proofs written before the census and read by the advisor (Fable 5.2); ticket B replayed T1-T4 and T6 (all ten frozen predictions held); referee pending",
   "independence": "census code replays the statements on its own runs; same task authorship",
   "novelty": "classical mechanism (Birkhoff, cube condition); the count-rule reading and T2-T4 not known to the advisor; no literature search run"
  },
@@ -55,7 +55,6 @@
  },
  "source_contribution": 0,
  "remaining_obligations": [
-  "ticket B replay",
   "referee"
  ],
  "paths": {
@@ -63,5 +62,5 @@
   "identity": "proofs/FRESH-COUNT-20261118-001A/FRESH-COUNT-20261118-001A-P001_free_count/identity.json",
   "proof": "proofs/FRESH-COUNT-20261118-001A/FRESH-COUNT-20261118-001A-P001_free_count/proof.md"
  },
- "attained_result": "T1-T6 written; replay in ticket B pending."
+ "attained_result": "T1-T6 and Corollary 2.1 proved; replayed by ticket B (1,829 runs pass the descent-order check; P1-P3, P7-P9 held)."
 }

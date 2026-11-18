@@ -50,7 +50,7 @@ def summary(P, outcome, log, check_ideals=True):
         out['rank'] = len(P.basis)
         out['implied_mismatch'] = P.implied_mismatch
     if log and 'cap_agrees' in log[0]:
-        out['cap_rounds'] = [[r['cap_agrees'], r['max_group']] for r in log]
+        out['cap_rounds'] = [[r['cap_agrees'], r['max_group']] for r in log if 'cap_agrees' in r]
     return out
 
 

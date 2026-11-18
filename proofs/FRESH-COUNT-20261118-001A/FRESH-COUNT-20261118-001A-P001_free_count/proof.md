@@ -118,6 +118,12 @@ c = a − 1, and at round 3 if c ≥ a + 1.
   of chain i), the minimal elements outside it are the a − 1 other chain bottoms: demand a − 1, one surplus, the next element of
   chain i. Otherwise every chain's next element exists: demand a, no surplus. So Q stays a chains and J(a chains) = ℕ^a. ∎
 
+**Corollary 2.1 (added after the freeze, before the read-out).** Each new junction of the uniform growth takes c = a fresh
+distinctions under one parity, so it multiplies the number of allowed states by 2^(a−1) (every old state has that many
+completions). Among growths from one knot with one count that never stall, the fewest added states per junction (the price of
+A99's cheapest growth) is therefore at the smallest knot, a = 3, the three-fold product. A two-place start (an equality, not a knot)
+would be cheaper still and gives the two-fold product. So "cheapest" picks three only through the knot's own floor of three places.
+
 ## 3. The cap of three (T3)
 
 **Theorem 3.** (a) On a snapshot satisfying Theorem 1, the capped and uncapped policies form the same groups exactly when no ideal of
@@ -167,7 +173,7 @@ single minimal element μ_i (every other c_j lies above μ_i), so c_i has demand
 C_i lie above every μ_j with j ≠ i, and an ideal is a choice of heights in the a chains together with the μ's it needs; the number of
 ideals of size at most t grows like t^a. ∎
 
-So the fewest counts add no direction by themselves: from one knot they close it, and from any hand-over they conserve the number of
+So the fewest counts start no chain of offshoots by themselves: from one knot they close it, and from any hand-over they conserve the number of
 chains they are handed, which can be any number.
 
 ## 5. Bond balls of the product (T5)
@@ -223,10 +229,10 @@ fails after three junctions and no collision of tables through six.
 
 ## 7. What this answers
 
-- **The count rule chooses only the descent order** (Theorem 1). Every number of directions the pattern grows comes from where the
-  rule puts offshoots; the policy adds none of its own.
+- **The count rule chooses only the descent order** (Theorem 1). Every chain of offshoots the pattern grows starts where the rule
+  puts a surplus distinction; the policy adds none of its own.
 - **One count for every join is forced to the first knot's size** (Theorem 2). A rule told only "use one count" and "never stall"
-  has one choice, a, and grows a directions; the smallest knot gives three. The three is the first knot's, not the rule's.
+  has one choice, a, and grows a chains of offshoots (balls r^a); the smallest knot gives three. The three is the first knot's, not the rule's.
 - **The stall at four is the cap's** (Theorem 3). It singles out three only for the capped policy, which is told three.
 - **The fewest counts close one knot into the 2^a pattern and stop, and otherwise conserve the chains they are handed** (Theorem 4).
   They never single out a number either.

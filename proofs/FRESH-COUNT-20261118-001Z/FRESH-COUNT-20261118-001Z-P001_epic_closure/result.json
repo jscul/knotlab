@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "FRESH-COUNT-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "FRESH-COUNT-20261118-001Z",
+ "proof": "FRESH-COUNT-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing FRESH-COUNT-20261118-001: ticket A (T1-T6 and Corollary 2.1) and ticket B (frozen census). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/FRESH-COUNT-20261118-001B/FRESH-COUNT-20261118-001B-E001_free_count/contract.json": "Frozen",
+   "artifacts/FRESH-COUNT-20261118-001B/FRESH-COUNT-20261118-001B-E001_free_count/results.json": "run output",
+   "proofs/FRESH-COUNT-20261118-001A/FRESH-COUNT-20261118-001A-P001_free_count/manifest.json": "Proved",
+   "proofs/FRESH-COUNT-20261118-001A/FRESH-COUNT-20261118-001A-P001_free_count/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

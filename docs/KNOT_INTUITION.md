@@ -578,6 +578,14 @@ neighbour: then their dimensions add. That predicts the dimension of 11,649 of
 11,658 small arrangements that grow with a birth, never too high; ten combine
 through a link not yet found
 ([decision note](../research/PLUS-ONE-20261118-001/plus_one.md)).
+Does one formula give every ring's rate (`RING-FORMULA-20261118-001`, proof
+through the model and 17 grown rings, referee pending)? Yes, for every ring of an
+odd number of knots, five or more: with n knots and j spare distinctions in
+all, each lap of the ring adds j new ways to grow, and the rate is the root of
+x^(n+j) = (1 + x)^j. With a spare at every knot the junctions per round are n
+times the Fibonacci numbers in every round. Rings of three, four and six join
+their knots in groups instead of round the ring, and grow polynomially
+([decision note](../research/RING-FORMULA-20261118-001/ring_formula.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

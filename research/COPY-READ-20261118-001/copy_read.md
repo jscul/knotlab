@@ -110,3 +110,5 @@ Consulted after the freeze and before the read-out. This was a lapse: the standi
 **Assumptions:** A101 stays under challenge; A99 gains this study.
 
 **Basket:** read; nothing taken.
+
+**The line's closing summary:** [line_summary.md](line_summary.md) (the coordinator stopped the two-order line here).

@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the first-knot dimensions count junctions
+
+- The study of whether anything prefers the smallest first knot (`FIRST-KNOT-20261118-001`,
+  [decision note](research/FIRST-KNOT-20261118-001/first_knot.md)) was refereed with fresh code and confirmed with fixes, no Block;
+  every theorem replays past the study's sizes, and its proposition on mutually touching knots holds one size past.
+- **Narrowed (wording).** "Two-, (a − 1)- and m-dimensionally" count junctions by round; bond balls are proved only for the a-fold
+  counting pattern.
+
 ## 18 November 2026: the free-count study's headline scoped
 
 - The study that left the number of fresh distinctions per join to a rule (`FRESH-COUNT-20261118-001`,

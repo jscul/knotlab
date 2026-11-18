@@ -1,7 +1,8 @@
 # Why does a growth begin with the smallest knot?
 
 Epic `FIRST-KNOT-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead for `FRESH-COUNT-20261118-001`'s
-direction 2 (sub-goal B201). Goals G2 and G1; challenges A105. **Referee pending.**
+direction 2 (sub-goal B201). Goals G2 and G1; challenges A105. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on
+18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `3d0efe6f6` at 20:18 UTC; the census ran at 20:19 UTC
@@ -84,6 +85,20 @@ foundation's, not the law's.
 - Lemma 1's scope is starts whose knots share no neighbour. Chains, rings and stars of knots were computed, not proved.
 - One joining rule (A104); serial growth is the basket's next direction.
 - The reading that first emergence is a three-place knot rests on the foundation's definition (A2), which no computation here tests.
+- **"Dimension" here counts junctions by round** (narrowed after the referee): "two-", "(a − 1)-" and "m-dimensionally" mean that the
+  junctions up to round t grow like t², t^(a − 1) and t^m (for mutually touching knots the per-round counts are exact polynomials of
+  degree m − 1, the referee's check). Bond balls are proved only for the a-fold counting pattern with a ≥ 3
+  (`FRESH-COUNT-20261118-001`, T5), not for the two-fold pieces or the crossed growths.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+fixes, no Block. Lemma 1, Theorem 2, Corollary 2.1, Lemma 3, Theorem 3 and Proposition 4 check by hand; Theorem 2 on 360 of 360
+cells (knots of three to seven places, counts 2 to 9), Theorem 3 on all 15 pairs with the relay confirmed at every top, Proposition 4
+for m = 3 to 6 round for round. Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (wording).** The dimensions stated are counts of junctions by round; bond balls are proved only for the a-fold
+   counting pattern (see Limitations).
+2. **Not a block.** "The rule never sees a size" holds by the policy's definition; "three is the foundation's" is a reading, as stated.
 
 ## Advisor
 

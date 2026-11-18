@@ -110,7 +110,7 @@ Lemma 1 (chains, rings, stars), which were computed only.
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Serial growth read from distances (`FRESH-COUNT-20261118-001#1`) | 2/3 — tests A104 | 2/3 — moves and reader exist | compare its descent orders with the complete round's on seeds of three to five → stop at a proof they agree, or a seed where they differ | Selected · awaiting go-ahead |
-| 2 | A growth whose dimension belongs to the relation: read the allowed states with hidden distinctions forgotten, and grow from a canonical presentation | 3/3 — would make "dimension" a property of the base | 1/3 — no canonical presentation is known (a four-place knot splits three ways) | define one canonical presentation and test it on the four-place relation's three presentations → stop at one that grows alike, or a proof none can | Alternative · deferred (sub-goal) |
+| 2 | A growth whose dimension belongs to the relation: read the allowed states with hidden distinctions forgotten, and grow from a canonical presentation | 3/3 — would make "dimension" a property of the base | 1/3 — no canonical presentation is known (a four-place knot splits three ways) | define one canonical presentation and test it on the four-place relation's three presentations → stop at one that grows alike, or a proof none can | Alternative · deferred (sub-goal B202) |
 | 3 | The fewest counts on every small arrangement of touching knots | 2/3 — maps which arrangements give which dimension | 3/3 — Lemma 1, Theorem 3 and Proposition 4 cover the parts | census of all arrangements of up to five knots of three to five places → stop at a rule that predicts every dimension, or a counterexample | Alternative · deferred |
 
 - **#1.** As in `FRESH-COUNT-20261118-001`; the coordinator asked to keep it next.
@@ -128,7 +128,7 @@ handed, any number" stands; this study adds natural starts that hand over three,
 **Assumptions:** A105 returns to Assumed, its reason restated: the law prefers no size, so the premise rests on the foundation's
 first emergence (A2), and the dimension also depends on the start's arrangement and presentation. No new entry.
 
-**Basket:** B196, `FRESH-COUNT-20261118-001#1` (serial growth), the new sub-goal (#2 here); none taken, #1 awaits go-ahead.
+**Basket:** B196, `FRESH-COUNT-20261118-001#1` (serial growth), B202 (#2 here); none taken, #1 awaits go-ahead.
 
 ## Final report as sent (2026-11-18 20:30 UTC)
 
@@ -153,9 +153,9 @@ first emergence (A2), and the dimension also depends on the start's arrangement 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Serial growth read from distances (`FRESH-COUNT-20261118-001#1`) | 2/3 — tests A104 | 2/3 — moves and reader exist | compare its descent orders with the complete round's on seeds of three to five → stop at a proof they agree, or a seed where they differ | Selected · awaiting go-ahead |
-| 2 | A growth whose dimension belongs to the relation (a canonical presentation read from the states) | 3/3 — would make dimension a property of the base | 1/3 — no canonical presentation known | test one candidate on the four-place relation's three presentations → stop at one that grows alike, or a proof none can | Alternative · deferred (sub-goal) |
+| 2 | A growth whose dimension belongs to the relation (a canonical presentation read from the states) | 3/3 — would make dimension a property of the base | 1/3 — no canonical presentation known | test one candidate on the four-place relation's three presentations → stop at one that grows alike, or a proof none can | Alternative · deferred (sub-goal B202) |
 | 3 | The cheapest growth on every small arrangement of touching knots | 2/3 — maps arrangement to dimension | 3/3 | census of arrangements of up to five knots of three to five places → stop at a rule predicting every dimension, or a counterexample | Alternative · deferred |
 
-**Corrections:** none. **Goals:** G2 and G1 checkpoints (obstruction learned); no goal changed. **Assumptions:** A105 returns to Assumed, now resting on the foundation's first emergence (A2); no new entry. **Basket:** B196, `FRESH-COUNT-20261118-001#1`, the new sub-goal; none taken, #1 awaits go-ahead. **Advisor:** Fable 5.2 before the freeze. It found my first "different sizes never grow together" too strong (the condition is on open counts, so a three and a four sharing two distinctions do grow), repaired a proof, and proposed the floor control. Its "nothing three-dimensional ever" was refuted by the census.
+**Corrections:** none. **Goals:** G2 and G1 checkpoints (obstruction learned); no goal changed. **Assumptions:** A105 returns to Assumed, now resting on the foundation's first emergence (A2); no new entry. **Basket:** B196, `FRESH-COUNT-20261118-001#1`, B202 (the new sub-goal); none taken, #1 awaits go-ahead. **Advisor:** Fable 5.2 before the freeze. It found my first "different sizes never grow together" too strong (the condition is on open counts, so a three and a four sharing two distinctions do grow), repaired a proof, and proposed the floor control. Its "nothing three-dimensional ever" was refuted by the census.
 
 Referee hand-off: the prior-work line is in the pre-registration (objects-gate passes). The decision note is `research/FIRST-KNOT-20261118-001/first_knot.md`.

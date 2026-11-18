@@ -586,6 +586,18 @@ x^(n+j) = (1 + x)^j. With a spare at every knot the junctions per round are n
 times the Fibonacci numbers in every round. Rings of three, four and six join
 their knots in groups instead of round the ring, and grow polynomially
 ([decision note](../research/RING-FORMULA-20261118-001/ring_formula.md)).
+Can the ring be grown again from its distances alone (`RING-READ-20261118-001`,
+frozen computation, referee pending)? Yes, through round 25. Keep only the bond
+distance between every two distinctions of the ring of four four-place knots
+and one five-place knot, with no names, rounds or parents: a reader that keeps
+what it has already read gives back every junction, up to 1,024 of them with as
+many as ten distinctions, and one round grown from what it read is the true
+next round. It needs distances exactly as far as the largest junction less one.
+The reader proved for junctions of at most six distinctions breaks from round
+10, because small junctions near the start add up to short consequences. And
+no two junctions (counting one extra end for the loose distinctions) cut the
+rest apart at any round, so by Whitney's theorem the allowed states fix them
+([decision note](../research/RING-READ-20261118-001/ring_read.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

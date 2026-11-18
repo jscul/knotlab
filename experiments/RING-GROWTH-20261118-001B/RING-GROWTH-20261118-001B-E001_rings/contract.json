@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RING-GROWTH-20261118-001B-E001",
+ "ticket": "RING-GROWTH-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "The ring of four four-place knots and one five-place knot under the fewest counts against the (v, S) model; other rings against the advisor's frozen predictions R1-R5.",
+ "definitions": {
+  "model": "cylinder positions with sets of lifts of the five-place knot below them"
+ },
+ "public_inputs": {
+  "code": "ring.py (sha256 00a66203cfca618c22d1996e9e598e05160a06b6cac192968a09a575bbc6ab72), model.py (sha256 71e695f052e2c562672229a52d406151163dd5250aee9fdc30802a715d658e8e), iso.py (sha256 02af770b05368b8499a9d1a9946410e957823c57368de95c9c32a25573a33ab9), simhist.py (sha256 37100cda5cde5fcdcdf5b89ac4b9c165d8d009db4ad97f6cd28922851fd37c22), bm.py (sha256 4906869c92a7ec4b132f02d4622055c2e3e7dff06a972df84a0d188154db3f9c), one.py (sha256 acb1a3101941459394b2da4993360fdd6e012e645bf7107ae4e66b151e9c9839), check.py (sha256 c2d5ab6edaa6f88dad86e4a099257fc91ba95d466653399fbf7cccda0359c070)",
+  "run": ".venv/bin/python -B check.py; python3 -B one.py <ring> 34",
+  "reused": "FIRST-KNOT-20261118-001B startlib.py (closed record)"
+ },
+ "forbidden_inputs": [
+  "Changing R1-R5 after reading the other rings"
+ ],
+ "primary_observable": "model equality, recurrence, isomorphism; R1-R5 of research/RING-GROWTH-20261118-001/preregistration.md",
+ "cheapest_meaningful_control": "the ring of five four-place knots (five per round)",
+ "predictions": {
+  "R1": "n = 7: c(t) = c(t-7) + c(t-8)",
+  "R2": "n = 8: c - 4 satisfies g(t) = g(t-4) + g(t-5)",
+  "R3-R5": "j = 2, 3: the advisor's recurrences"
+ },
+ "decision_rules": {
+  "each": "Berlekamp-Massey returns the predicted recurrence with at least twice its order to spare"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "minutes",
+ "amendments": [
+  {
+   "date": "2026-11-18 22:40 UTC",
+   "change": "R3-R5 runs did not finish within their 20-minute limit; not scored."
+  }
+ ]
+}

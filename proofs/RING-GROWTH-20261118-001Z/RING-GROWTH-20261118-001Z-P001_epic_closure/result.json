@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RING-GROWTH-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "RING-GROWTH-20261118-001Z",
+ "proof": "RING-GROWTH-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing RING-GROWTH-20261118-001: ticket A (Propositions 1 and 2) and ticket B (checks; R1, R2 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/RING-GROWTH-20261118-001B/RING-GROWTH-20261118-001B-E001_rings/contract.json": "Frozen",
+   "artifacts/RING-GROWTH-20261118-001B/RING-GROWTH-20261118-001B-E001_rings/results.json": "run output",
+   "proofs/RING-GROWTH-20261118-001A/RING-GROWTH-20261118-001A-P001_ring/manifest.json": "Proved",
+   "proofs/RING-GROWTH-20261118-001A/RING-GROWTH-20261118-001A-P001_ring/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

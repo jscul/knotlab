@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "RING-GROWTH-20261118-001Z-P001",
+ "canonical_id": "RING-GROWTH-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "RING-GROWTH-20261118-001Z",
+ "proof": "RING-GROWTH-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: the ring growth study",
+ "status": "Proved",
+ "claim": "Ledger closing RING-GROWTH-20261118-001: ticket A (Propositions 1 and 2) and ticket B (checks; R1, R2 held). Referee pending. No new claim.",
+ "dependencies": [
+  "RING-GROWTH-20261118-001A",
+  "RING-GROWTH-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "RING-GROWTH-20261118-001",
+  "epic_path": [
+   "RING-GROWTH-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/RING-GROWTH-20261118-001B/RING-GROWTH-20261118-001B-E001_rings/contract.json": "e9f95d4a91f97f1ed52afa134852d2227322050cad67193999d958fb527764df",
+  "artifacts/RING-GROWTH-20261118-001B/RING-GROWTH-20261118-001B-E001_rings/results.json": "903da5f40dade8b92bfa903adec3274de8bdceb486ab3561e6520c13b025858c",
+  "proofs/RING-GROWTH-20261118-001A/RING-GROWTH-20261118-001A-P001_ring/manifest.json": "ce8ac5cb23c3aedaf6c97b75d3d59155ac21e8fb3a1c0299099ba2c00137a45f",
+  "proofs/RING-GROWTH-20261118-001A/RING-GROWTH-20261118-001A-P001_ring/result.json": "e01e97a01c3355845f2be486fb8db20b9d6fd0ad7df70929b9a8c450961e9ad5"
+ },
+ "paths": {
+  "manifest": "proofs/RING-GROWTH-20261118-001Z/RING-GROWTH-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/RING-GROWTH-20261118-001Z/RING-GROWTH-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/RING-GROWTH-20261118-001Z/RING-GROWTH-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/RING-GROWTH-20261118-001Z/RING-GROWTH-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/RING-GROWTH-20261118-001Z/RING-GROWTH-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/RING-GROWTH-20261118-001Z/RING-GROWTH-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18; refereed R1 (fresh code), confirmed with fixes.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "CUBE-DOUBLING-20261118-001A-P001",
+ "canonical_id": "CUBE-DOUBLING-20261118-001A-P001",
+ "proof": "CUBE-DOUBLING-20261118-001A-P001",
+ "ticket": "CUBE-DOUBLING-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "The cube at every doubling",
+ "claim": "Under A99's moves and the cheapest rule (fewest states, up to three betweenness knots per step, any tie rule), from one knot the base at n = 2^d is the cube Q_d for every d >= 2 in every run: from Q_s the cheapest steps are the s 2^(s-1) subdivisions and 2^s pendants, after either every unoccupied orientation has a three-knot certificate, certificates survive fills, so the cube fills before a new split is needed (STATE-RULES S6).",
+ "standard_statement": "Greedy single-point extension of a split system by betweenness constraints of arity three; hypercube cut systems.",
+ "prior_work": "STATE-RULES-20261117-001 (S1, S4, S5, S6 conjectured); KNOT-CAP-20261117-001 (the forcing restatement).",
+ "dependencies": [],
+ "completion_gate": "Ticket B's frozen check verifies the certificates for s = 2 to 7, the step analysis for s = 2 to 4, and the exact distribution to n = 20; the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proof written before the freeze; checked by ticket B; referee pending",
+  "independence": "brute-force extension and exact enumeration against the proof; same task authorship",
+  "novelty": "local"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "cheapest_growth_reaches_cube_at_every_doubling": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/CUBE-DOUBLING-20261118-001A/CUBE-DOUBLING-20261118-001A-P001_cube_doubling/manifest.json",
+  "identity": "proofs/CUBE-DOUBLING-20261118-001A/CUBE-DOUBLING-20261118-001A-P001_cube_doubling/identity.json",
+  "proof": "proofs/CUBE-DOUBLING-20261118-001A/CUBE-DOUBLING-20261118-001A-P001_cube_doubling/proof.md"
+ },
+ "attained_result": "L1-L5 and the theorem proved."
+}

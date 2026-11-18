@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CUBE-DOUBLING-20261118-001B-E001",
+ "ticket": "CUBE-DOUBLING-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the proof's certificates force every unoccupied orientation after either cheapest step from Q_s (s = 2 to 7); are the cheapest extensions of Q_s exactly the subdivisions and pendants (s = 2 to 4); does the exact cheapest-rule distribution from one knot have 2 ceil(log2 n) + 2 states at every n to 20?",
+ "definitions": {
+  "certificate": "the three knots of L5 for one target orientation",
+  "fill": "a zero-cost admitted extension that is not a copy"
+ },
+ "public_inputs": {
+  "code": "check.py (sha256 e18c5bdb8d62947e0e0255c69cd734466d20a962d8913fbd438f8a1d6132bdd1); experiments/STATE-RULES-20261117-001B/STATE-RULES-20261117-001B-E001_rules/rules.py (sha256 d1ee374ca2c6784bdbad72c32878d7c6a3c98c60a28da73f34f14f76c8d10172); networkx 3.6.1 in the workspace .venv",
+  "run": ".venv/bin/python -B check.py"
+ },
+ "forbidden_inputs": [
+  "Changing certificates, sizes, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P3 of research/CUBE-DOUBLING-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "s = 2 (the 2 x 2 pattern and its 8 cheapest extensions, known from STATE-RULES S5).",
+ "predictions": {
+  "P1": "every certificate works; fills = 2^(s+1) - 2^s - 1, s = 2..7, both classes",
+  "P2": "no zero-cost extension of Q_s; s 2^(s-1) + 2^s at N + 2, s = 2..4",
+  "P3": "2 ceil(log2 n) + 2 states at every n = 4..20 with probability 1; Q3 at 8, Q4 at 16"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "Expected under twenty minutes, one process."
+}

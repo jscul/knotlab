@@ -580,7 +580,7 @@ uncrossed stays that way under it. So two orders need no memory, only the cap.
 But the two is wholly the cap's: without it the same rule makes every order
 ([decision note](../research/NEVER-NEST-20261118-001/never_nest.md)).
 Then who picks the number (`PICK-TWO-20261118-001`, proof and frozen
-computation, referee pending)? Told "at most three", the rule builds full
+computation, refereed)? Told "at most three", the rule builds full
 three-way grids; told a price on states and orders, it keeps the number the
 price works out to; told only to keep what it has, a line stays a line. No rule
 here chooses two out of nothing. But one fill on a line always makes exactly two
@@ -589,7 +589,9 @@ into those it lies inside and those it does not (proved). A rule that takes one
 free fill while nothing crosses, and afterwards only copies or conserves, grows
 full two-way grids from every line; started from three orders, it keeps three.
 So the two that comes without being named is the line's one plus one
-distinction's two sides ([decision note](../research/PICK-TWO-20261118-001/pick_two.md)).
+distinction's two sides: the rule allows one free step, the two values of a
+distinction make that step exactly one more order, and the line has the first
+one (refereed; [decision note](../research/PICK-TWO-20261118-001/pick_two.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
 Because the knots nest. Every presentation of a line by the fewest knots is a

@@ -105,7 +105,8 @@ So neither k nor λ changes. ∎
 - *Which pairs come to cross.* A pair t_i ⊂ t_j (i < j) comes to cross exactly when the new distinction r lies in t_i and not in
   t_j, the empty intersection. Let A be the cuts whose side holds r and B the rest. Every new crossing joins A to B.
 - *Two chains.* Within A, adding r to every side keeps them nested; within B, no side changes. So A and B are chains: λ ≤ 2.
-- *At least two.* Some pair crosses, since r is constrained and no copy, so its value changes more than once along the cuts.
+- *At least two.* Some pair crosses, since r is constrained and no copy, so its value changes at least three times along the cuts
+  (corrected wording after the referee: an odd number of changes, and one would make r a copy).
   Then λ ≥ k = 2.
 - *KEEP.* It takes only fills that leave λ unchanged, and subdivisions keep λ. On a line no fill does, so KEEP subdivides forever.
   ∎
@@ -120,7 +121,9 @@ first fill is bipartite, so it stays so. ∎
 - Whether CAP(d) for d ≥ 3 reaches a full d-grid from a line before it first subdivides. For d = 2 this is
   `NEVER-NEST-20261118-001A`'s N4. For d ≥ 3 the advisor proves it only while the base stays connected.
 - How fast PRICE's λ grows below the threshold, and what the tie at w = 2 does.
-- λ (not only k) for FRESH, NEWCROSS and SEED, and whether their two-order bases are full grids.
+- λ (not only k) for FRESH, NEWCROSS and SEED, and whether their two-order bases are full grids. (*After the referee:* FRESH's
+  k ≤ 2 follows from S6's argument, since the splits that cross nothing stay one chain; and S6's λ = 2 needs the line start, since
+  from an uncrossed tree that branches one fill can give λ = 3.)
 - That λ equals the largest set of pairwise crossing splits on every base grown from a line (the advisor's argument; checked on
   every base reached).
 

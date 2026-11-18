@@ -1,7 +1,8 @@
 # Who picks the number of orders
 
 Epic `PICK-TWO-20261118-001`, 18 November 2026, by Claude. It takes `NEVER-NEST-20261118-001`'s first direction, chosen by the
-coordinator. Goals G1 and G16; challenges A101. Referee pending.
+coordinator. Goals G1 and G16; challenges A101. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block,
+folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `f13d6ac35` at 05:51:59 UTC.
@@ -17,6 +18,10 @@ one move: a single fill on a line always makes exactly two orders, because one n
 takes one free fill while nothing crosses and is conservative afterwards settles at two from every line, with full two-way grids
 recurring, and from a three-way start it keeps three.** So the two that can be had without naming it is one plus one: the line's
 one order, and the one order that a single new distinction adds.
+*Narrowed after the referee:* SEED names no number of orders. It allows one free step and then conserves. Arity makes that step one
+order, and the line has one. The rule chooses the one step; arity chooses one order per step. The line start is needed too: from
+an uncrossed tree that branches, one fill keeps k = 2 but can give λ = 3 (28 of 52 fills on the spider with four legs of two),
+since a tree's λ is already ⌈leaves / 2⌉.
 
 - **A cap of d gives exactly d** (C1). With "at most three orders", every run from lines of 5 to 8 reached λ = 3 and never
   exceeded it. It filled a full three-way grid before its first subdivision, at n = 12 from a line of five (3 × 2 × 2), at 16 or 18
@@ -53,7 +58,8 @@ one order, and the one order that a single new distinction adds.
 - The one way to two without saying "two" is to allow a single free step from the line and then only conserve. Because a new
   distinction has two values, that one step always splits the line's order into exactly two, never more. After that, the grid
   fills and grows. Started from three orders, the same rule keeps three.
-- So the two comes from the line plus one distinction's two values, not from the rule's choice.
+- So the rule chooses one step, arity makes that step one order, and the line supplies the first order (wording after the
+  referee).
 
 ## Predictions and verdicts
 
@@ -89,12 +95,13 @@ the program's line start plus one distinction's two values gives exactly two.
 ## What it means for A101 and the goals
 
 - **A101** is under challenge. The number two can come without being named, from the start's one order and one fill's two sides
-  (SEED). That source is still not the rule's choice: from three orders the same rule keeps three.
+  (SEED). That source is still not the rule's choice: from three orders the same rule keeps three. *After the referee:* what SEED is
+  given is one order-making step; its number is the start's λ + 1 from an uncrossed line, and the start's λ otherwise.
 - **G1:** capability gained. A rule told no number grows full two-way grids forever from every line, and the sources of the number
   are mapped: cap, price, start, parity and arity.
 - **G16:** capability gained. Caps of three and four grow full three- and four-way grids. The number of orders is shown to be the
   law's parameter.
-- **A99** stays assumed. λ equals the largest set of pairwise crossing splits on every base reached (the advisor's argument; computed
+- **A99** stays assumed. λ equals the largest set of pairwise crossing splits on every base reached (not in general: trees) (the advisor's argument; computed
   here, not proved).
 
 ## Limitations
@@ -125,6 +132,22 @@ Consulted once before the freeze, on the design. It made four main points:
 
 It also asked for the frozen definition of "told no number", the two tiers, line lengths 5 to 12 and the three-way controls. All its
 predictions held. It was not consulted after the read-out.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with fresh code: confirmed with fixes, no Block.
+- S1 to S7 hold, checked by hand (S2, S4 and S5 line by line; S7's colouring also works when several splits gain crossings at once).
+- picklib's fill enumeration equals its brute-force closure on all 77 bases tested.
+- With its own engine, 29 run batches to n = 60 agree: caps of three and four, the quadratic prices, KEEP, CC, ODD and SEED, and
+  λ equal to the largest set of pairwise crossing splits at every step. It did not rerun the linear prices, FRESH or NEWCROSS.
+
+Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (wording).** "The one way to two without naming it is arity" now reads: the rule chooses the one free step, arity
+   makes that step one order, and the line supplies one order. SEED is given one order-making step, not a number.
+2. **Not a block.** λ = 2 after the first fill needs the line start: from uncrossed trees that branch, one fill can give λ = 3.
+3. **Not a block.** FRESH's k ≤ 2 follows from S6's argument (the uncrossed splits stay one chain), not S7.
+4. **Not a block.** S6's "changes more than once" reads "changes at least three times".
+5. **Not a block.** λ equals the largest set of pairwise crossing splits on every base reached, not in general (trees).
 
 ## Position
 

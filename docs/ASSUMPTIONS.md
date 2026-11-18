@@ -2896,7 +2896,10 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
-  - 2026-11-18 · `PICK-TWO-20261118-001` ([decision note](../research/PICK-TWO-20261118-001/pick_two.md); referee pending)
+  - 2026-11-18 · `PICK-TWO-20261118-001`'s referee (R1): SEED is given one order-making step, not a number; arity makes the step
+    one order and the line has one, so its number is the start's λ + 1 from an uncrossed line (from a branching tree one fill can
+    give λ = 3). Status unchanged.
+  - 2026-11-18 · `PICK-TWO-20261118-001` ([decision note](../research/PICK-TWO-20261118-001/pick_two.md); refereed)
     challenged it: no rule there chooses two out of nothing, but two can come without being named. One fill on a line makes
     exactly two orders (proved), so a rule that takes one free fill while nothing crosses and then only copies or conserves grows
     full two-way grids from every line, and keeps three from three-way starts: its two is the line's one order plus one

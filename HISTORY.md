@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: who picks the number of orders, confirmed by the referee; the share of arity narrowed
+
+- The study of who picks the number of orders (`PICK-TWO-20261118-001`) was confirmed by its referee with fresh code, with no
+  Block. A cap of d orders gives exactly d, filling full d-way grids; a price on states and orders settles where its increments
+  say; rules that only conserve keep the start's number; and one rule told no number, which takes one free fill while nothing
+  crosses and then only copies or conserves, grows full two-way grids from every line and keeps three from three-way starts
+  ([decision note](research/PICK-TWO-20261118-001/pick_two.md)).
+- Narrowed: that rule is given one order-making step. The two values of a new distinction make the step exactly one order, and the
+  line has the first; from a branching tree the same step can give three.
+- Not a block: three small fixes in the proof's wording and attributions.
+
 ## 18 November 2026: bond distance already reads both knot laws on trees
 
 - The cumulant-distance study (`CUMULANT-DIST-20261118-001`) said bond distance, the smallest knot holding both distinctions, reads

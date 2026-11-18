@@ -148,3 +148,17 @@ of parity, not-all-equal and betweenness knots, proved, hub-free; flat on split 
 and correlation located as the two state readings, agreeing on trees, parting on cycles); no goal changed.
 
 **Assumptions:** A97 gains this study; no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** the distance that reads freedom is bond distance itself, the knot test applied to sets of distinctions. On every tree of
+knots, parity, not-all-equal or betweenness in any mixture, it is exactly steps apart plus one (proved), so hubs cannot fool it, and
+it reads the mixed cycle's parity knot as one knot. 7 of 7 frozen predictions held, with no exception among 103,248 tree pairs. The
+catch is on cycles: on split grids every three distinctions form a knot, so bond distance is flat there and only correlation grades
+the grid; and, post hoc, gating the cumulant distance by freedom does not remove its hub shortcut, because the hub's set is free.
+Closed, referee pending.
+
+The position table, the next-step line and the three directions as in Position above.
+
+**Corrections:** none. **Goals:** G1 and G16 checkpoints (capability gained). **Assumptions:** A97 gains this study. **Advisor:**
+before the freeze (proof check, the clause counterexample, P4b); not on the post hoc hybrids.

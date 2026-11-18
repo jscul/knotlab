@@ -43,3 +43,11 @@ L. So 3(m − 2) ≥ 3·steps, that is b = m − 1 ≥ steps + 1.
 
 The upper bound b ≤ steps + 1 when a bond exists; that only lone pairs of opposite classes facing each other can be unbonded; and an
 exact rule for which facing pairs are (ticket B measures all three).
+
+## Computed in ticket B (frozen)
+
+- H's criterion gave exactly the constrained sets of every disc to seven knots (156,160 sets of 405 discs), and L's identity held on
+  all 1,564,004 pairs of the 22,143 discs of the census; no bonded pair had b below steps + 1.
+- The upper bound is false: 64 bonded pairs have b = steps + 2 (at steps 4), first on discs of ten knots.
+- Every unbonded pair (12,318) is two lone distinctions of opposite classes facing each other; a disc is a true distance exactly when
+  it has none (all 22,143).

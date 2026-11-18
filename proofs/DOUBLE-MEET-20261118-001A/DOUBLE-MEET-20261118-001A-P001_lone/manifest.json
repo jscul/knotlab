@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "DOUBLE-MEET-20261118-001A-P001",
+ "canonical_id": "DOUBLE-MEET-20261118-001A-P001",
+ "proof": "DOUBLE-MEET-20261118-001A-P001",
+ "ticket": "DOUBLE-MEET-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Lone distinctions in the weave: what is proved, and what is sketched",
+ "claim": "T (proved): two knots sharing two distinctions leave their lone, facing, opposite-class distinctions unbonded. H and L (the advisor's sketches, checked computationally): on weave patches without holes a set is constrained exactly when m >= 3 of its members have a cyclic order of height-distance sum at most 3(m - 2); D(x,y) + D(y,x) = 3 steps; hence b >= steps + 1 on every such patch. Open: the upper bound (false in 64 pairs, ticket B) and which facing pairs are bonded.",
+ "standard_statement": "Triangular Ising antiferromagnet height functions (Bloete-Hilhorst 1982; Nienhuis-Hilhorst-Bloete 1984); heights as difference constraints (Thurston 1990); systolic complexes.",
+ "prior_work": "NAE-METRIC-20261118-001 (blocks), BOND-METRIC-20261118-001 (T2), RULER-20261111-001 (the endless weave).",
+ "dependencies": [],
+ "completion_gate": "Ticket B's gates and frozen census; the referee reviews the proofs and sketches.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "T proved; H and L the advisor's sketches checked computationally; referee pending",
+  "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
+  "novelty": "the height mapping classical; the lone-pair obstruction not known to the advisor (no literature search run)"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "weave_patch_lone_pair_obstruction_located": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/DOUBLE-MEET-20261118-001A/DOUBLE-MEET-20261118-001A-P001_lone/manifest.json",
+  "identity": "proofs/DOUBLE-MEET-20261118-001A/DOUBLE-MEET-20261118-001A-P001_lone/identity.json",
+  "proof": "proofs/DOUBLE-MEET-20261118-001A/DOUBLE-MEET-20261118-001A-P001_lone/proof.md"
+ },
+ "attained_result": "T proved; H, L and the lower bound sketched and checked computationally; census in ticket B."
+}

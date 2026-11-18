@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "DOUBLE-MEET-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "DOUBLE-MEET-20261118-001Z",
+ "proof": "DOUBLE-MEET-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing DOUBLE-MEET-20261118-001: ticket A (T proved; H, L sketched) and ticket B (frozen census, 4 of 6 held, P1 and P3 missed narrowly). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/DOUBLE-MEET-20261118-001B/DOUBLE-MEET-20261118-001B-E001_patches/contract.json": "Frozen",
+   "artifacts/DOUBLE-MEET-20261118-001B/DOUBLE-MEET-20261118-001B-E001_patches/results.json": "run output",
+   "proofs/DOUBLE-MEET-20261118-001A/DOUBLE-MEET-20261118-001A-P001_lone/manifest.json": "Proved",
+   "proofs/DOUBLE-MEET-20261118-001A/DOUBLE-MEET-20261118-001A-P001_lone/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

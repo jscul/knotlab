@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "experiment_id": "FAR-SIGN-20261118-001B-E001",
+ "ticket": "FAR-SIGN-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "On SEEDK's knot-local fills, is the far-pair sign (the far end pair separated by every crossed split) exactly SEED's copy step, and do F1, T1 and T2 hold; does the copy class's betweenness read the sign?",
+ "definitions": {
+  "sign": "every crossed split separates c from d (far end knot B(c,d,r))",
+  "weak sign": "r sides with d on every crossed split",
+  "near-pair sign": "no crossed split separates the near pair {a,p}",
+  "F1": "a fill giving an uncrossed split a crossing has the sign",
+  "T1": "under the sign no uncrossed split is moved",
+  "T2": "under the sign the moved crossed splits are one whole order",
+  "pattern": "L6: every crossed split separates p from q, none separates a from p, some but not all separate p from d",
+  "marked picture": "closure picture plus each split's trace on (p;q,a,c,d) and a crossed mark"
+ },
+ "public_inputs": {
+  "code": "signlib.py (sha256 411100ee98829bd11a3a67f0969864164c7e82b585999a2411504496aab5a5a2), run.py (sha256 502a4290d42f5b379f84cbb536400b46485aa4f0cf3a8a237587833f008accc6), checks.py (sha256 af64a0d668e0d3357a909f9ff5d7a076716eb1301b2625dbfde8e403165460ed), readout.py (sha256 bd286d4c3e1cee581629fa89bf7a7c85d9e1e6d6ea5f150bb2cf92be4b6e4c36); experiments/COPY-CLASS-20261118-001B/COPY-CLASS-20261118-001B-E001_class/classlib.py (sha256 9b4b87a56b3b19889c37751ee5b1baef64e8e4e082ce16b647c52599c3fccdce)",
+  "run": ".venv/bin/python -B run.py --procs 8"
+ },
+ "forbidden_inputs": [
+  "Changing the starts, readings, predictions, coverage or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions R0-R7 of research/FAR-SIGN-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "The library's SEED verdict equals knotlib's on every extension; L1, L2, K1 on every treated knot set.",
+ "predictions": {
+  "R0": "every copy step has a treated knot set; every crossing-making knot set of the shape pins r to the shared distinction",
+  "R1": "sign = copy step on every crossing-making extension",
+  "R2": "F1 on every treated knot set",
+  "R3": "T1 and T2 under the sign",
+  "R4": "L6 pattern on every treated set of every copy step and none of a refused fill",
+  "R5": "weak sign and near-pair sign each = copy step",
+  "R6": "every treated set in state alpha or beta; no fill with both",
+  "R7": "(i) both verdicts in the copy class; (ii) no marked picture with both verdicts"
+ },
+ "decision_rules": {
+  "R1": "no exception either way; every exception printed",
+  "coverage": ">= 100 sign sets with smaller order >= 3 or R3 untested there; copy steps with p an earlier r and with >= 2 earlier copy steps counted",
+  "harness": "L1/L2/K1 or the SEED cross-check failing is a bug and stops the read-out",
+  "proof": "R1-R6 stay computed"
+ },
+ "stop_rule": "One run; referee hand-off; report; the two-order line stops.",
+ "runtime": "About 15 to 25 minutes on 8 processes.",
+ "amendments": []
+}

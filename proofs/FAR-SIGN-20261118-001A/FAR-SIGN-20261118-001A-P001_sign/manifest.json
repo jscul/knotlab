@@ -1,0 +1,66 @@
+{
+ "schema_version": 3,
+ "artifact_id": "FAR-SIGN-20261118-001A-P001",
+ "canonical_id": "FAR-SIGN-20261118-001A-P001",
+ "proof": "FAR-SIGN-20261118-001A-P001",
+ "ticket": "FAR-SIGN-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "What the far-pair sign decides, and where it stops",
+ "claim": "For a fill with a middle knot B(p,r,q), a near end knot B(a,p,r) and a far end knot B(c,d,r): L1 the moved splits are those with a, not q, not d on p's side; L2 two old splits come to cross iff one is moved, the other not, and the unmoved one's p-side lies inside the moved one's; L3-L4 under the far-pair sign (every crossed split separates c from d) clause (a) holds, the new crossings are G x M and r sides with d on every crossed split; L5 under the sign a crossing-making fill is a copy step iff no uncrossed split is moved and the moved splits are the crossers of one unmoved crossed split, on a base of two orders iff they are one whole order; L6 a pair pattern (crossed splits all separate p from q, none separates a from p, some but not all separate p from d) gives the copy step; Proposition 7: on a seven-distinction base of two orders, the sign without the copy step and the copy step without the sign. The equivalence on SEEDK's knot-local fills (F1, T1, T2) is not proved.",
+ "standard_statement": "Split systems, compatibility and crossing; half-spaces of median graphs.",
+ "prior_work": "COPY-CLASS-20261118-001 (referee R1's sign and its half 'sign implies (a)'); MID-RULE-20261118-001 (E1); COPY-READ-20261118-001 (copy class); Bandelt and Dress (1992); Eppstein (2005).",
+ "dependencies": [],
+ "completion_gate": "Ticket B scores F1, T1, T2 and the sign against SEED on fresh runs and reproduces Proposition 7; the referee reviews.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proof written before the freeze; checked by ticket B; referee pending",
+  "independence": "same task authorship",
+  "novelty": "local"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "sign_reduces_copy_step_to_one_order": true,
+  "sign_equals_copy_step_proved": false
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "F1, T1 and T2 on SEEDK's knot-local fills (computed in ticket B, not proved)"
+ ],
+ "paths": {
+  "manifest": "proofs/FAR-SIGN-20261118-001A/FAR-SIGN-20261118-001A-P001_sign/manifest.json",
+  "identity": "proofs/FAR-SIGN-20261118-001A/FAR-SIGN-20261118-001A-P001_sign/identity.json",
+  "proof": "proofs/FAR-SIGN-20261118-001A/FAR-SIGN-20261118-001A-P001_sign/proof.md"
+ },
+ "attained_result": "L1-L6 and Proposition 7 proved; the equivalence on SEEDK's fills left to computation."
+}

@@ -155,6 +155,7 @@ evidence: results and their status come from the records each entry links.
 | [A98](#a98--the-owners-no-skipping-is-read-as-betweenness-of-a-pairwise-count-with-flips-counted) | The owner's "no skipping" is read as betweenness of a pairwise count, with flips counted | reading | Assumed |
 | [A99](#a99--states-only-growth-is-judged-on-conservative-betweenness-extensions-with-up-to-three-knots-per-step) | States-only growth is judged on conservative betweenness extensions with up to three knots per step | scope | Assumed |
 | [A100](#a100--how-knots-meet-is-compared-on-fewest-knot-presentations-of-a-line) | How knots meet is compared on fewest-knot presentations of a line | scope | Assumed |
+| [A101](#a101--the-number-of-orders-a-growth-rule-keeps-is-given-two) | The number of orders a growth rule keeps is given: two | scope | Assumed |
 
 ## Entries
 
@@ -2615,6 +2616,12 @@ evidence: results and their status come from the records each entry links.
   reach limit read from the states holds two orders and fills them, and that one remembered class per split, handed over by the
   start, does: knots only across the two classes grow full two-way grids forever. So two orders need more than a reach limit; a
   rule reading the crossing of the splits is not excluded (narrowed after the referee).
+  `NEVER-NEST-20261118-001` ([decision note](../research/NEVER-NEST-20261118-001/never_nest.md); referee pending) found such
+  rules. Told only to take no fill that makes a third order, the growth reads which order each split belongs to from the states
+  and grows full two-way grids forever from a line: proved when knots may join any pair, computed (nearly every run to n = 40)
+  when they may join only pairs that already share a knot. A rule that completes a corner only across two crossing splits does the
+  same once its first crossing reaches every split. The number two is given (A101). These are the first grown bases on which a
+  two-way distance can be read.
   `MEET-ORDERS-20261118-001` ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md); refereed) found
   which information that is, for fewest-knot presentations (one redundant knot changes the chances; A100). The fewest-knot presentations of a line are its bracketings, which knot lies within which half of
   which (proved), and under KF3 the chance of two orders after the second new distinction is an exact formula in the bracketing
@@ -2775,7 +2782,7 @@ evidence: results and their status come from the records each entry links.
     orders.
   - `CUBE-DOUBLING-20261118-001`'s theorem: the cheapest rule with three or more knots per step reaches the cube at every
     doubling (its L4 uses that every old state is kept).
-  - `KNOT-CAP-20261117-001`'s and `LOCAL-ROOM-20261118-001`'s laws, built on top of it.
+  - `KNOT-CAP-20261117-001`'s, `LOCAL-ROOM-20261118-001`'s and `NEVER-NEST-20261118-001`'s laws, built on top of it.
   - `MEET-ORDERS-20261118-001`'s Theorem 1 and census (KF3 from the presentations of a line).
 - **Challenge.** Widen the move set and rerun the same weightings:
   - all 34 three-place knots, or four-place ones (the parity of a filled cell is one four-place knot);
@@ -2785,6 +2792,8 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `NEVER-NEST-20261118-001` built on it (rules that take only the fills keeping two orders grow full two-way grids;
+    its move set is this entry's); status unchanged.
   - 2026-11-18 · `MEET-TWIST-20261118-001` built on it (proof for this population and rule); status unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001` built on it (the same population and rule); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-20261118-001` built on it (KF3 from every fewest-knot presentation of a line); status unchanged.
@@ -2819,3 +2828,22 @@ evidence: results and their status come from the records each entry links.
     unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001` built on it (the same population and rule); status unchanged.
   - 2026-11-18 · Added by `MEET-ORDERS-20261118-001`.
+
+### A101 · The number of orders a growth rule keeps is given: two
+
+**Assumed** · 2026-11-18 · scope
+
+- **Statement.** In `NEVER-NEST-20261118-001`, the rules that grow two-way grids from a line are told the number two. NN and NNF
+  take only the fills after which the base has at most two orders (read from all the splits at once), and CC is given a first
+  crossing. Nothing marks which split belongs to which order, and nothing is remembered, but no rule there chooses two by itself.
+- **Why.** Taken by default: B197 asked whether a rule that never nests its fills keeps two orders, which fixes two as the target.
+  The cheapest growth with no target gains an order at every doubling (`CUBE-DOUBLING-20261118-001`), and a rule told only to keep
+  the number of orders it has never fills a line, since every fill of a line makes two.
+- **Rests on it.** That study's capability for G1: a law that grows full two-way grids forever from a line, read from the states
+  (proved for NNF, computed for NN). G1's target, space of low dimension from a uniform local law, is met there only with the
+  dimension given.
+- **Challenge.** Tell the rule a cap of d orders and test whether it fills full d-way grids (the arguments for N3 and N4 look as if
+  they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
+  number of orders once a fill has kept it, or one that reads the cap from the start.
+- **History.**
+  - 2026-11-18 · Added by `NEVER-NEST-20261118-001`.

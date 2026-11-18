@@ -483,6 +483,19 @@ the start, by the first square, and it nearly builds the two orders in. So two
 orders need more than a reach limit; a rule that reads the crossing of the
 splits is not excluded (narrowed after the referee)
 ([decision note](../research/LOCAL-ROOM-20261118-001/local_room.md)).
+Can a rule that reads the states do what that memory did
+(`NEVER-NEST-20261118-001`, proof and frozen computation, referee pending)?
+Yes, once it is told the number two. Take only the fills after which there are
+at most two orders, and lengthen the line by one step when none is left. From
+any line this fills the whole grid the line spans, then lengthens one row and
+fills it, forever, when knots may join any pair (proved); when they may join
+only pairs that already share a knot, as `MEET-ORDERS-20261118-001` asked, it
+does the same in nearly every run (computed to forty distinctions). Which order
+a split belongs to is read from how the splits cross, so nothing is handed over
+split by split. A rule that only completes a corner across two splits that
+cross does the same, once its first crossing reaches every split; a split left
+uncrossed stays that way under it. What is still given is the number two
+([decision note](../research/NEVER-NEST-20261118-001/never_nest.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
 Because the knots nest. Every presentation of a line by the fewest knots is a

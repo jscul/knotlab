@@ -117,3 +117,19 @@ pairs of opposite classes facing each other) and G16 checkpoint (capability gain
 goal changed.
 
 **Assumptions:** A39 gains the weave form; A97 gains this study; no status changed, no new entry.
+
+## The final report as sent (18 November 2026)
+
+**Outcome:** inside the weave, double meetings are harmless. On every patch without holes checked (22,143 of them), bond distance stops
+being a true distance only when some pair is held by no bond, and every such pair is two lone distinctions (each in a single knot)
+whose knots are of opposite classes and which face each other across the patch. Two knots meeting twice on their own are the smallest
+such patch; inside a larger weave the same meeting is harmless because other knots hold its outer distinctions. Bond distance is never
+below the steps apart plus one there (the advisor's height-function argument, checked on 1.56 million pairs) and equals it on all but
+64 bonded pairs. 4 of 6 frozen predictions held; the two misses (those 64 pairs, and 7 facing pairs that are bonded inside their
+parallelogram) are on the record. Closed, referee pending.
+
+The position table, the next-step line and the three directions as in Position above.
+
+**Corrections:** none for this study (NAE-METRIC's referee fold-in earlier today was one Narrowing). **Goals:** G1 and G16 checkpoints
+(capability gained). **Assumptions:** A39 gains the weave form, A97 this study; no status changed. **Advisor:** before the freeze
+(the height description, the constrained-set criterion, the lower bound, the literature).

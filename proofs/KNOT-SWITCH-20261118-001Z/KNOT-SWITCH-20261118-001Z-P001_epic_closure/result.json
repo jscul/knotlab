@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "KNOT-SWITCH-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "KNOT-SWITCH-20261118-001Z",
+ "proof": "KNOT-SWITCH-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing KNOT-SWITCH-20261118-001: ticket A (W1-W4: a knot-local move attaches a cone over its pair graph, b2 never falls; a filled knot forces a crossing in any presentation; along KF3, NN, NN2 and SEEDK from a bracketing, no crossing, no filled knot, b2 = 0 and no fill yet are equivalent; b2 depends on the presentation) and ticket B (frozen computation, 4 of 4 held): the equivalence at all 11,050 steps of 420 runs; SEEDK strong in 105 of 105 runs. Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/KNOT-SWITCH-20261118-001B/KNOT-SWITCH-20261118-001B-E001_switch/contract.json": "Frozen",
+   "artifacts/KNOT-SWITCH-20261118-001B/KNOT-SWITCH-20261118-001B-E001_switch/results.json.gz": "run output",
+   "proofs/KNOT-SWITCH-20261118-001A/KNOT-SWITCH-20261118-001A-P001_switch/manifest.json": "Proved",
+   "proofs/KNOT-SWITCH-20261118-001A/KNOT-SWITCH-20261118-001A-P001_switch/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

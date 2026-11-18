@@ -1,17 +1,8 @@
 {
-  "schema_version": 1,
-  "id": "KNOT-SWITCH-20261118-001",
-  "title": "What the knots read when nothing crosses yet",
-  "kind": "epic",
-  "parent": null,
-  "status": "Planned",
-  "status_class": "planned",
-  "objective": "PICK-TWO-20261118-001's first direction, chosen by the coordinator: SEED's switch, one free fill while no two splits cross, is where the two enters. What state of the knots does that condition read? Proposed: with knot-local moves, no two splits cross exactly while the knots close no cycle (the knot complex's second Betti number is zero). Proof of the switch reading; frozen runs of KF3, NN, NN2 and SEEDK (SEED with knot-local moves and its switch read from the knots) from every bracketing of 5 to 8, checking the reading at every step and reading SEEDK's tiers; other knot readings tested against it. Serves G1 and G16; challenges A101.",
-  "dependencies": [],
-  "dependency_text": "",
   "acceptance_gate": "",
   "completion_gate": "",
-  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "dependencies": [],
+  "dependency_text": "",
   "fields": {
     "groups": [
       "holes-and-proofs"
@@ -21,9 +12,18 @@
       "PICK-TWO-20261118-001#1"
     ]
   },
+  "id": "KNOT-SWITCH-20261118-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "PICK-TWO-20261118-001's first direction, chosen by the coordinator: SEED's switch, one free fill while no two splits cross, is where the two enters. What state of the knots does that condition read? Proposed: with knot-local moves, no two splits cross exactly while the knots close no cycle (the knot complex's second Betti number is zero). Proof of the switch reading; frozen runs of KF3, NN, NN2 and SEEDK (SEED with knot-local moves and its switch read from the knots) from every bracketing of 5 to 8, checking the reading at every step and reading SEEDK's tiers; other knot readings tested against it. Serves G1 and G16; challenges A101.",
   "ownership": {
-    "scope_id": "KNOT-SWITCH-20261118-001",
-    "root": true
+    "root": true,
+    "scope_id": "KNOT-SWITCH-20261118-001"
   },
-  "legacy": {}
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-18 (Successful; referee pending): SEED's 'nothing crosses yet' reads, in the knots, 'no filled knot yet': four distinctions carrying four knots, each the middle of one, allow only two crossing patterns and so force a crossing in any presentation, and along every growth here the first fill makes the first filled knot and the first crossing in the same step (proved; all 11,050 steps of 420 runs). SEED with knots only on co-knotted pairs is strong from every bracketing of 5 to 8. 4 of 4 predictions held.",
+  "status_class": "complete",
+  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "title": "What the knots read when nothing crosses yet"
 }

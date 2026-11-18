@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "KEEP-READ-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "KEEP-READ-20261118-001Z",
+ "proof": "KEEP-READ-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing KEEP-READ-20261118-001: ticket A (R1: the move's own knots cannot tell keeping from raising; R2: the clean-witness fraction bounds every rule at a tier) and ticket B (frozen computation, 2 of 5 held): at the move's knots and the betweenness among its distinctions only 79% of extensions keeping two orders have a clean witness (310 and 392 confirmed collisions); one step out covers 88% of the base and still leaves 3 confirmed collisions; 'the new distinction the middle of two or more knots' never raises (recall 18%). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/KEEP-READ-20261118-001B/KEEP-READ-20261118-001B-E001_keep/contract.json": "Frozen",
+   "artifacts/KEEP-READ-20261118-001B/KEEP-READ-20261118-001B-E001_keep/results.json.gz": "run output",
+   "proofs/KEEP-READ-20261118-001A/KEEP-READ-20261118-001A-P001_local/manifest.json": "Proved",
+   "proofs/KEEP-READ-20261118-001A/KEEP-READ-20261118-001A-P001_local/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

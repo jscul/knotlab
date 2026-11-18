@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "KEEP-READ-20261118-001Z-P001",
+ "canonical_id": "KEEP-READ-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "KEEP-READ-20261118-001Z",
+ "proof": "KEEP-READ-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: what the knots read in SEED's second phase",
+ "status": "Proved",
+ "claim": "Ledger closing KEEP-READ-20261118-001: ticket A (R1: the move's own knots cannot tell keeping from raising; R2: the clean-witness fraction bounds every rule at a tier) and ticket B (frozen computation, 2 of 5 held): at the move's knots and the betweenness among its distinctions only 79% of extensions keeping two orders have a clean witness (310 and 392 confirmed collisions); one step out covers 88% of the base and still leaves 3 confirmed collisions; 'the new distinction the middle of two or more knots' never raises (recall 18%). Referee pending. No new claim.",
+ "dependencies": [
+  "KEEP-READ-20261118-001A",
+  "KEEP-READ-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "KEEP-READ-20261118-001",
+  "epic_path": [
+   "KEEP-READ-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/KEEP-READ-20261118-001B/KEEP-READ-20261118-001B-E001_keep/contract.json": "91951aa95fc8ced02edbe266851dc03ff9914028938a2fbad87a47b30aac6a65",
+  "artifacts/KEEP-READ-20261118-001B/KEEP-READ-20261118-001B-E001_keep/results.json.gz": "8619d16f20790afab4dec7ed8a1899871a7fdbb8b467fbf3de7dc1fb9ba71a3b",
+  "proofs/KEEP-READ-20261118-001A/KEEP-READ-20261118-001A-P001_local/manifest.json": "ff7595261c547ed99d39bd79989a375d0ab29eb91d387b60ec7eb75458476fa7",
+  "proofs/KEEP-READ-20261118-001A/KEEP-READ-20261118-001A-P001_local/result.json": "da0aa746e4b13f8376b850504b4a840e983281f2ed235e5404a367131218e51f"
+ },
+ "paths": {
+  "manifest": "proofs/KEEP-READ-20261118-001Z/KEEP-READ-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/KEEP-READ-20261118-001Z/KEEP-READ-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/KEEP-READ-20261118-001Z/KEEP-READ-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/KEEP-READ-20261118-001Z/KEEP-READ-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/KEEP-READ-20261118-001Z/KEEP-READ-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/KEEP-READ-20261118-001Z/KEEP-READ-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-17; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

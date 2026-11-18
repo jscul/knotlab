@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: how much of the knots' nesting the grown distances hold; one reading withdrawn
+
+- The study of whether the knots' nesting becomes a distance (`MEET-DIST-20261118-001`) was checked by its referee with its own
+  engine: every number holds ([decision note](research/MEET-DIST-20261118-001/meet_dist.md)).
+- Withdrawn (a Block on a reading): "the rest is lost, not hidden". One grown base's distances, read on unnamed distinctions, carry
+  about 0.4 to 0.7 of the information about how the knots nest; read with the distinctions' names, chiefly the order in which the
+  new ones came, they carry all of it on the line of five and 0.91 on the line of six. The missing share is in the order of growth,
+  which is history, not distance; over many growths the distances carry all of it from the first new distinction.
+- Narrowed: the share is one grown base under one prior, and its fall after a peak was seen for five to seven only.
+
 ## 18 November 2026: moving the line's ends, confirmed by its referee; its range stated
 
 - The proof that moving a presentation's ends one step round the cycle of its knots carries the growth rule

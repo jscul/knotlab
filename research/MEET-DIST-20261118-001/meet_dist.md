@@ -1,7 +1,8 @@
 # Is the knots' nesting a distance?
 
 Epic `MEET-DIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes sub-goal B198
-(`MEET-TWIST-20261118-001`'s selected direction). Goal G16; tests A97 directly. Referee pending.
+(`MEET-TWIST-20261118-001`'s selected direction). Goal G16; tests A97 directly. Refereed: report [R1](referee-R1/report.md), every number confirmed, one Block on a
+reading, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `5df037bcd` at about 04:23 UTC on 18 November. The
@@ -11,10 +12,12 @@ Epic `MEET-DIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's
 
 ## The answer
 
-- **Before growth the nesting is not a distance; growth writes part of it into the distances, never all, and then blurs it**
-  (computed, exact, every presentation of 5 to 9 distinctions). All presentations of a line have the same disagreement counts, so
-  at the start the counts carry none of how the knots nest. Under KF3 one grown base's table of disagreement counts carries this
-  share of the information about the bare bracketing (mutual information over entropy, prior uniform over labelled presentations):
+- **One grown base's distances, read without the distinctions' names, carry part of the nesting; with the names, all of it at
+  five** (computed, exact; *corrected after the referee*, see Referee: this headline first said the nesting becomes a distance
+  "never all" and that "the rest is lost, not hidden", which is false). Every presentation of a line has the line's states, hence the same
+  disagreement counts (the setting, `MEET-ORDERS-20261118-001` Lemma 0, not a finding). Under KF3 one grown base's table of
+  disagreement counts, read up to renaming (without names), carries this share of the information about the bare bracketing
+  (mutual information over entropy, prior uniform over labelled presentations):
 
   | Line of | k = 1 | k = 2 | k = 3 | k = 4 |
   | --- | --- | --- | --- | --- |
@@ -24,12 +27,17 @@ Epic `MEET-DIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's
   | 8 | 0.30 | 0.51 | 0.58 | |
   | 9 | 0.26 | 0.45 | 0.53 | |
 
-  The share rises, peaks below two thirds (at k = 1, 2, 3 for five, six, seven: about n0 − 4 new distinctions), and falls.
-- **It is not the growth's failure to look.** Revealing the same number of knots directly, as fills chosen at random with no growth
+  Unnamed, the share rises and, for five, six and seven, peaks (at k = 1, 2, 3) and falls; for eight and nine it is still rising
+  at k = 3, the last computed. The peaks are about 0.6 to 0.7 depending on the prior (under a prior uniform over bare bracketings
+  0.70 at five and 0.69 at six, the referee). **Named** (the line's distinctions known, and the new ones in the order they came),
+  the same grown base carries all of it at five from k = 2 (1.0 at k = 2, 3, 4) and 0.83 and 0.91 at six (k = 2, 3), still rising;
+  naming only the line's distinctions gives 0.70 and 0.71 at six (the referee's recomputation).
+- **Unnamed, the growth reads less than revealing the knots directly.** Revealing the same number of knots directly, as fills chosen at random with no growth
   (the advisor's bag-of-knots null), carries the whole of it by k = n0 − 3 (1.0 at five from k = 2, at six from k = 3, at seven at
   k = 4). KF3's grown tables carry less than the null at every k ≥ 2 (D4). The growth reveals the knots it fills and, in the same
-  steps, confuses which knots they were: later fills are fills of re-bracketed triples, and up to renaming they mix.
-- **In law the nesting is fully readable from k = 1** (D1, D2). Different bare bracketings give different laws of grown tables from
+  steps, makes them confusable up to renaming: later fills are fills of re-bracketed triples. Named, they are not confused.
+- **In law the nesting is fully readable from k = 1** (D1, D2): the law of the grown distances determines the nesting from the
+  first new distinction; the shares above are one sample's. Different bare bracketings give different laws of grown tables from
   the first new distinction, and every two presentations that are not mirror images from the second. At k = 1 some presentations
   with one bare bracketing tie (1, 2, 17 and 41 pairs at six to nine), as the advisor predicted from mirrored self-mirror regions.
 - **The labels matter.** The unlabelled multiset of the table's entries carries less than the full table from k = 2 (D5): from
@@ -39,14 +47,18 @@ Epic `MEET-DIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's
   for the end placement's knots (0,1,2) and (0,2,3), 6 for the middle placement's (0,1,2) and (0,2,4), though each pair shares a
   pair of distinctions.
 - **Distance and states are the same here** (DISTANCE-ORDER's statement 3(a), checked): for these bases the table with the state
-  count determines the allowed states, so what the grown distances miss of the nesting, the grown states miss too. The share not
-  carried is not held in some other form; the growth does not keep it.
+  count determines the allowed states, named or unnamed. So the share the unnamed table misses is carried by the names, which
+  distinctions are the line's and in what order the new ones came: with them one grown base holds all of it at five and 0.91 at
+  six. *Corrected after the referee (Block on this reading):* this bullet first said "the share not carried is not held in some
+  other form; the growth does not keep it", which is false. The share measures what a reader loses by not knowing which
+  distinction is which, not what the growth loses.
 
 **In the owner's terms.**
-- How the knots meet starts as information that no distance holds: every presentation of the line has the same distances.
-- Growth turns part of it into distance. A grown base's distances tell how the knots nest better than chance, best after a few
-  new distinctions, but at most about two thirds of the way, and later growth blurs it again.
-- Read off the distances as plain numbers, without knowing which distinction is which, they tell much less.
+- Every presentation of a line has the same distances, so before growth no distance can tell how the knots nest.
+- After growth, one grown base's distances, read as plain numbers on unnamed distinctions, tell part of it, about half to two
+  thirds. Knowing which distinction is which, above all the order in which the new ones came, tells all of it on the line of five.
+  That order is history, not a distance.
+- Read over many growths (the law), the distances tell the nesting completely from the first new distinction.
 
 ## Predictions and verdicts
 
@@ -64,10 +76,11 @@ fall is seen for five, six and seven.
 
 ## What it means for A97 and the goals
 
-- **A97** stays under challenge, with a quantitative finding. How the knots nest is information that no distance holds before
-  growth; KF3 writes up to about two thirds of it into a single grown base's distances, and the rest is lost, not hidden: in these
-  bases the distances determine the states. Under the owner's premise the nesting is a distance only in part, and only after
-  growth.
+- **A97** stays under challenge. *Corrected after the referee:* one grown base's unnamed distances carry about 0.4 to 0.7 of
+  how the knots nest; the distances together with the distinctions' names carry all of it at five, and the names that matter most
+  are the order of growth, which is history, not distance. In law the distances carry all of it from the first new distinction.
+  Whether the order of growth can itself be read from the grown base without names (from its distances or from how its grown
+  knots meet) is the open question.
 - **G16:** capability gained. The information a grown base's distances carry about how the knots nest, measured exactly against a
   null and an ablation.
 
@@ -96,29 +109,51 @@ judged the rising and threshold predictions unlikely, and argued that the design
 nesting as a distance. Its sharper tests became the bag-of-knots null (D4), the multiset ablation (D5) and the literal test
 settled by hand. Not consulted after the read-out.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with its own engine (a WL hash with VF2 for
+table classes, every bracketing so no mirror bookkeeping): every share recomputes to four digits (five to k = 4, six to k = 3),
+with the null, the multiset ablation and the in-law separation; the code (information share, prior, null fill points, multiset key,
+canonical form) is right. Folded in the same day, each logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Block (on a reading; every number stands).** "The rest is lost, not hidden: the growth does not keep it" is false. Read with
+   the distinctions' names kept, one grown base carries all of the information about the bare bracketing at five from k = 2 and
+   0.83 and 0.91 at six (k = 2, 3); naming only the line's distinctions gives 0.70 and 0.71. The missing share sits in the names,
+   mostly in the order of growth. Corrected in the headline, the bullets, the owner's terms, A97, the intuition entry and the goals
+   row. No work depended on the false reading.
+2. **Narrowing.** The share is one grown base, read without names, under the labelled prior; in law the tables carry all of it from
+   k = 1.
+3. **Narrowing.** "Then growth blurs it" holds for the unnamed reading and for five to seven only; named, the share rises; for
+   eight and nine the unnamed share was still rising at k = 3, so "peaks near n0 − 4", "never all" and "at most two thirds" are not
+   shown there.
+4. **Not a block.** The peaks depend on the prior (0.70 and 0.69 under a prior uniform over bare bracketings).
+5. **Not a block.** "No distance holds the nesting before growth" is the setting (all presentations have the line's states), not a
+   finding; now presented as such.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: is the knots' nesting a distance | **Status:** Successful (referee pending) | Exact: none before growth, at most about two thirds after, peaking near n0 − 4 new distinctions; 4 of 5 held |
+| This attempt: is the knots' nesting a distance | **Status:** Successful (refereed R1: numbers confirmed, one Block on a reading) | Exact: one grown base's unnamed distances carry about 0.4 to 0.7; named, all of it at five; in law all from k = 1; 4 of 5 held |
 | Local direction: how knots meet as information under KF3 | Continue | The fade's long-run limit and which part of the table carries it are open |
 | Broader exploration: A97 on other growths and readings | Searching | One rule, one distance reading |
 | Long-term goal: G16 Learning the rules behind what a system allows | Capability gained | A measured transfer of knot information into distance |
 
-**Next step:** Research directions — selected: #1
+**Next step:** Research directions — selected: #1 (regraded after the referee)
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Long growth: does a single grown base's share fall to zero, and how fast in n0 and k? | 2/3 | 3/3 | Sample KF3 to k = 20 from every presentation of 6 and 7 with a plug-in estimate and a floor → a rate, or a floor above zero | Selected · awaiting go-ahead |
-| 2 | Which part of the table carries the nesting: the old-by-new block, the new-by-new block, or the old-by-old block | 2/3 | 3/3 | Information shares per block, exact, five to seven → stop at the block that carries most | Alternative · deferred |
-| 3 | Prove the k = 1 value: one fill reveals one knot's triple up to mirror, so the k = 1 share is a function of the knots' position types | 1/3 | 3/3 | Write the formula and check it on 5 to 9 → stop at a proof | Alternative · deferred |
+| 1 | Where the missing share lives: can the order of growth be read from one grown base without names, from its distances or from how its grown knots meet (the co-knotted pairs)? | 3/3 | 3/3 | Exact shares, unnamed, for the table with the grown pairs, and named variants, five to seven → stop when the unnamed reading reaches the named share, or at the part that stays outside | Selected · started (coordinator's go-ahead) |
+| 2 | Long growth: the unnamed and named shares to k = 20, sampled | 2/3 | 3/3 | Sample six and seven → a rate or a floor | Alternative · deferred |
+| 3 | Which block of the table carries the nesting | 2/3 | 3/3 | Shares per block, exact → the carrying block | Alternative · deferred |
+| 4 | Prove the k = 1 value | 1/3 | 3/3 | Formula, checked 5 to 9 → proof | Alternative · deferred |
 
-- **#1.** Payoff: whether the nesting's trace in distance is transient or lasting bears on A97's reading over time. Concreteness:
-  sampling code exists; exact laws are out of reach past k = 4.
-- **#2.** Payoff: says where the trace sits. Concreteness: a re-reading of the same runs with block keys.
-- **#3.** Payoff: small; the k = 1 mechanism is understood. Concreteness: high.
+- **#1.** Payoff: after the Block, A97's question on this line is whether the order of growth, which carries the share the unnamed
+  distances miss, is itself readable from the grown base (then the knots' meeting carries it, or the distances do) or genuinely
+  outside. Concreteness: the exact runs exist; the grown pairs are tracked by the engine.
+- **#2, #3, #4** as before.
 
-**Corrections:** none.
+**Corrections:** five from the referee (one Block on the reading "lost, not hidden", two Narrowings, two Not a block), all
+logged; see Referee.
 
 **Goals:** a G16 checkpoint (capability gained); no goal changed.
 

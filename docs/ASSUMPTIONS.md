@@ -2633,16 +2633,17 @@ evidence: results and their status come from the records each entry links.
   by knot, so the growth's law does not depend on where the ends sit (every line length, until a state is added, which happens
   within 2^(n0 − 1) distinctions; refereed); the ends decide only the
   number of orders.
-  `MEET-DIST-20261118-001` ([decision note](../research/MEET-DIST-20261118-001/meet_dist.md); referee pending) measured how
-  much of the nesting becomes distance: none before growth (all presentations have the same disagreement counts); after KF3 growth
-  one base's counts carry at most about two thirds of the information about the bare bracketing (0.63, 0.65, 0.62 at five to
-  seven), peaking near n0 − 4 new distinctions and then falling, less than revealing the knots directly; in these bases the counts
-  determine the states, so the rest is lost, not held in another form.
+  `MEET-DIST-20261118-001` ([decision note](../research/MEET-DIST-20261118-001/meet_dist.md); refereed, one Block on a
+  reading, corrected) measured how much of the nesting becomes distance. All presentations have the same disagreement counts (the
+  setting). After KF3 growth one base's counts, read on unnamed distinctions, carry about 0.4 to 0.7 of the information about the
+  bare bracketing; with the distinctions' names, chiefly the order in which the new ones came, they carry all of it at five and
+  0.91 at six; in law they carry all of it from the first new distinction. So the share the unnamed distances miss is held in the
+  order of growth, which is history, not distance; whether that order can be read from the grown base without names is open.
   In the finite pure parity growth family, bond distances through five determine every junction and the full set of next joins at every size. This includes the cubic rounds and all legal serial rearrangements. All 552 presentations through seven junctions were independently checked within the task. [Proof and checks](../research/BOND-NEXT-JOIN-20261117-001/next_joins.md)
 - **History.**
   - 2026-11-18 · `BOND-NEXT-JOIN-20261117-001` proved a constructive positive case for pairwise bond distance at every finite stage of the specified pure parity growth law.
-  - 2026-11-18 · `MEET-DIST-20261118-001`: the nesting is a distance only in part and only after growth (computed); status
-    unchanged.
+  - 2026-11-18 · `MEET-DIST-20261118-001`: one grown base's unnamed distances carry part of the nesting, the order of growth
+    the rest (computed; its referee's Block corrected the first reading "lost, not hidden"); status unchanged.
   - 2026-11-18 · `MEET-TWIST-20261118-001`: placement independence proved (until a state is added); status unchanged.
   - 2026-11-18 · `MEET-GROW-20261118-001`: the meeting pattern grows by one law wherever it sits under KF3 (computed; narrowed
     by its referee from "grows on its own"); status unchanged.

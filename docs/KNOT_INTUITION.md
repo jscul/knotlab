@@ -518,11 +518,14 @@ makes the same choices with the same chances (proved for every line length,
 until a step adds a state, which happens within 2^(n0 − 1) distinctions); the cut decides only how many orders the grown knots line up
 into ([decision note](../research/MEET-TWIST-20261118-001/meet_twist.md)).
 Is the knots' nesting then a distance (`MEET-DIST-20261118-001`, frozen
-computation, referee pending)? Not at the start: every presentation of a line has
-the same disagreement counts. Growth writes part of it into them: one grown
-base's counts carry at most about two thirds of the information about how the
-knots nest, best after a few new distinctions, and later growth blurs it; since
-these counts determine the states, the rest is lost, not hidden elsewhere
+computation, refereed)? Every presentation of a line has the same disagreement
+counts, so not before growth. One grown base's counts, read on unnamed
+distinctions, carry about half to two thirds of the information about how the
+knots nest; with the distinctions' names, above all the order in which the new
+ones came, they carry all of it on the line of five, and over many growths (in
+law) the counts carry all of it from the first new distinction. The share the
+unnamed counts miss is in the order of growth, which is history, not distance
+(its referee, correcting a first reading that it was lost)
 ([decision note](../research/MEET-DIST-20261118-001/meet_dist.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with

@@ -1,8 +1,9 @@
 # Which dimensions does the cheapest growth give across arrangements of touching knots?
 
 Epic `TOUCH-CENSUS-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead for `FIRST-KNOT-20261118-001`'s
-direction 3. Goals G17, G2 and G1. **Referee pending.** **Two of 265 shards pending** (200 of the 26,441 arrangements, the slowest);
-every number below is on the other 26,241 and is folded in again when they finish.
+direction 3. Goals G17, G2 and G1. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18 November
+(see Referee). The study's run read 26,341 of the 26,441 arrangements (one shard of 100 timed out and is retrying); the referee grew
+the last 100, so the tables below are the **complete census**, the study's 26,241 at the close given in the Referee section.
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `86694ace0` at 20:36 UTC; the census ran from 20:37
@@ -24,9 +25,11 @@ every number below is on the other 26,241 and is folded in again when they finis
   open distinctions. About one in seven closes. Of those that grow, about four in five grow two-dimensionally, and almost all the
   rest along a single strip (one-dimensional). This holds under both ways of counting (each arrangement once, or by how many
   labelled descriptions it has) and at four and at five knots.
-- **What is rare.** Three-dimensional growth: 36 arrangements (0.14%). Four-dimensional: 7 (0.03%), all of them growing exactly as
-  four mutually touching knots do. Growth faster than any of these: 7 arrangements, all rings of five knots with some five-place
-  knots, whose junctions per round multiply by about 1.25 to 1.4 every round (computed, not proved).
+- **What is rare.** Three-dimensional growth: 40 arrangements (0.15%). Four-dimensional: 7 (0.03%), all of them growing exactly as
+  four mutually touching knots do. Growth faster than any power: 13 arrangements (0.05%), rings of five knots with some five-place
+  knots, whose junctions per round multiply by a fixed base between about 1.13 and 1.62 every round (four of them follow exact
+  recurrences: x⁶ = x + 1 with base 1.135, x⁵ = x⁴ − x² + x + 1 with base 1.263, and Fibonacci with base 1.618 for the ring of five
+  five-place knots; computed, not proved; the ring of one five-place knot is proved in `RING-GROWTH-20261118-001`).
 - **So the cheapest growth has a typical dimension, two, without being told any number.** It is typical, not forced: three and four
   occur, rarely, and exactly where the arrangement holds three or four chains of junctions born together.
 - **The rule mostly predicts the dimension.** The dimension is the largest set of chains born together with one common partner in
@@ -36,15 +39,20 @@ every number below is on the other 26,241 and is folded in again when they finis
 
 | Outcome | Distinct arrangements | Share | By labelled count |
 | --- | --- | --- | --- |
-| cannot start (round-1 stall) | 10,906 | 41.6% | 43.6% |
-| closes | 3,705 | 14.1% | 12.5% |
-| one-dimensional | 2,068 | 7.9% | 8.1% |
-| two-dimensional | 9,512 | 36.2% | 35.8% |
-| three-dimensional | 36 | 0.14% | 0.08% |
+| cannot start (round-1 stall) | 11,010 | 41.6% | 43.6% (at the close) |
+| closes | 3,726 | 14.1% | 12.5% |
+| one-dimensional | 2,081 | 7.9% | 8.1% |
+| two-dimensional | 9,564 | 36.2% | 35.8% |
+| three-dimensional | 40 | 0.15% | 0.08% |
 | four-dimensional | 7 | 0.03% | 0.01% |
-| faster than any power (rings of five) | 7 (3 read as "6" by the frozen reader, 4 unsettled) | 0.03% | 0.02% |
+| faster than any power (rings of five) | 13 | 0.05% | 0.02% |
 
-By number of knots (distinct): two knots, 17 of 22 grow, all two-dimensionally; three, 71 of 154 two-dimensional, 28 one-dimensional,
+Complete census (the referee's table; the labelled column is the study's at the close). Two-dimensional among growing arrangements:
+81.7% by distinct count, 81.4% by labelled count; at six knots (the referee's sample of 1,200, one size past) 85.1% and 84.5%. A
+reading of 5 or 6 by the frozen reader is not a dimension: it means "not polynomial" (two equal fifth differences in a seven-round
+window), and it fired only on exponential rings.
+
+By number of knots (distinct, the 26,241 read at the close): two knots, 17 of 22 grow, all two-dimensionally; three, 71 of 154 two-dimensional, 28 one-dimensional,
 2 three-dimensional; four, 852 of 1,760 two-dimensional, 192 one-, 5 three-, 2 four-dimensional, 315 stalls; five (24,302 read),
 8,572 two-dimensional, 1,848 one-, 29 three-, 5 four-dimensional, 7 faster, 10,591 stalls.
 
@@ -56,10 +64,10 @@ By number of knots (distinct): two knots, 17 of 22 grow, all two-dimensionally; 
 | P1a | birthless growth is one-dimensional | **failed** | 9 birthless growths: 2 rings of five four-place knots (one-dimensional, 5 junctions a round), 7 rings of five with five-place knots growing faster than any power |
 | P1b | with a birth, dimension = the largest class | **failed** | held in 11,476 of 11,621; in all 145 exceptions the dimension is the largest class plus one (141 times 2 from single births, 4 times 3 from a class of two and single births) |
 | P2 | two most common among growing; three or more under 2% | held | 0.18% by distinct count, 0.09% by labelled count |
-| P3 | nothing above four, nothing unsettled after the rerun, exactly one arrangement of dimension 4 | **failed** | 7 arrangements of dimension 4, each growing exactly as four mutually touching five-place knots; the 7 faster-than-power rings were read as "6" (a short-window artifact) or left unsettled |
+| P3 | nothing above four, nothing unsettled after the rerun, exactly one arrangement of dimension 4 | **failed** | 7 arrangements of dimension 4, each growing exactly as four mutually touching five-place knots; the faster-than-power rings were read as "6" (meaning not polynomial) or left unsettled |
 | P4 | every stall in round 1 | held | 10,906 of 10,906 |
 | P5 | stall share rising with knots to over 40% at five; two-dimensional share rising, one-dimensional falling | **failed** | stall shares 0, 0, 18%, 44% (no rise from two to three knots); two-dimensional share 100%, 70%, 81%, 82% |
-| P6 | no distinction with one value in every state | **failed as stated** | 1,713 arrangements already force a distinction in their start (a part of the arrangement whose cut is one distinction); the growth never adds one |
+| P6 | no distinction with one value in every state | **failed as stated** | 1,746 of the 26,241 arrangements (1,749 of 26,341) already force a distinction in their start (a part of the arrangement whose cut is one distinction); the growth never adds one (number corrected after the referee) |
 
 Three of eight held (G, P2, P4). The failures are on the record; two of them (P1b's "plus one" and the faster growths) are the study's
 most informative findings.
@@ -95,11 +103,25 @@ rare, and a mechanism (chains born together) that predicts nearly every case.
 knots grow without a chain (right: one-dimensionally), and that linked partners might combine (right: always plus one); its tighter
 2% bound held; it predicted "no birth after round 2" (not frozen; births came up to round 11, through relays).
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+fixes, no Block. Counting confirmed by Burnside's lemma (3, 22, 154, 1,760, 24,502) and the labelled weights; two-dimensional growth
+typical under both weights, in the complete census and one size past at six knots; the fast rings real (grown to 60,000 junctions);
+1,686 of 1,686 sampled readings agree at 45 rounds. Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's
+`HISTORY.md`:
+1. **Narrowing (the unread block).** The 200 arrangements unread at the close were the last, largest five-knot arrangements, not a
+   random sample, and they held the exotic growth: the complete census has 40 three-dimensional arrangements (not 36) and 13
+   faster-than-power rings (not 7). At the close the study had read 26,241: stall 10,906, closes 3,705, one-dimensional 2,068,
+   two-dimensional 9,512, three-dimensional 36, four-dimensional 7, faster 7.
+2. **Narrowing (the fast rings' bases).** 1.13 to 1.62, not "about 1.25 to 1.4"; a reading of 6 means "not polynomial".
+3. **Narrowing (number).** 1,746 arrangements force a distinction in their start, not 1,713.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: which dimensions are typical and rare across small arrangements of touching knots? | **Status:** Successful (census; 3 of 8 predictions held) | Two-dimensional growth is typical (about four in five growing arrangements, under both weights and at four and five knots); three and four are rare (0.16%); the chain rule predicts 98.7% |
+| This attempt: which dimensions are typical and rare across small arrangements of touching knots? | **Status:** Successful (census; 3 of 8 predictions held) | Two-dimensional growth is typical (about four in five growing arrangements, under both weights, at four and five knots, and at six by the referee); three and four are rare (0.18%); the chain rule predicts 98.7% |
 | Local direction: what the start's arrangement decides | Continue | Two exceptions to the rule are sharp and testable: separately born chains add one, and rings of five grow without chains, sometimes faster than any power |
 | Broader exploration: where dimension comes from | Known alternatives | A cap, a price, the start's open distinctions, or (here) the typical arrangement |
 | Long-term goal: G17 Typical and rare meeting patterns (with G2) | Capability gained | The first typical dimension of cheapest parity growth over unchosen arrangements: two; three is rare, not forced |
@@ -131,12 +153,14 @@ of three to five places; a measure).
 
 ## Final report as sent (2026-11-18 21:45 UTC)
 
+*As sent, on the 26,241 arrangements read at the close; the complete census and two corrected numbers are in Referee.*
+
 **Outcome:** Over every small arrangement of touching first knots, the cheapest growth is typically two-dimensional. Three and four dimensions are rare, and nothing forces a number. The census covered 26,241 of the 26,441 distinct arrangements of up to five knots of three to five places; two slow shards of 100 are still running and will be folded in. 3 of 8 frozen predictions held. Closed, referee pending.
 
 - **Typical.** About two in five arrangements cannot start: some knot is asked for more joins than it has open distinctions. About one in seven closes. Of those that grow, about four in five grow two-dimensionally and most of the rest along one strip. This holds counting each arrangement once or by labelled count, and at four and at five knots.
 - **Rare.** Three dimensions: 36 arrangements (0.14%). Four: 7, all growing exactly as four mutually touching knots do. Faster than any power: 7 rings of five knots containing five-place knots, multiplying by about 1.3 a round (computed, not proved). "Dimension" here counts junctions by round, not bond balls.
 - **The rule.** "The dimension is the largest set of chains born together" held in 98.7% of growing arrangements. In all 145 misses it was exactly one more. Rings of five knots grow with no chain at all: one-dimensionally when all have four places, faster when some have five.
-- **Failed predictions:** the rule as frozen (both parts), "exactly one four-dimensional arrangement", the trends by knot count, and "no forced distinction". On the last, 1,713 arrangements already force one in their start; the growth never adds one.
+- **Failed predictions:** the rule as frozen (both parts), "exactly one four-dimensional arrangement", the trends by knot count, and "no forced distinction". On the last, 1,746 arrangements (corrected from 1,713 after the referee) already force one in their start; the growth never adds one.
 
 | Scope | Verdict | Why |
 | --- | --- | --- |

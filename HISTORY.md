@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the arrangement census completed
+
+- The census of the cheapest growth over every small arrangement of touching knots (`TOUCH-CENSUS-20261118-001`,
+  [decision note](research/TOUCH-CENSUS-20261118-001/touch_census.md)) was refereed with fresh code and confirmed with fixes, no
+  Block. Two-dimensional growth stays typical (81.7% of growing arrangements; 85% at six knots).
+- **Narrowed.** The 200 arrangements unread at the close held the rare growth: the complete census has 40 three-dimensional
+  arrangements and 13 rings that grow faster than any power (bases 1.13 to 1.62), not 36 and 7; 1,746 arrangements force a
+  distinction in their start, not 1,713.
+
 ## 18 November 2026: the weave's rim excess stops rising at 2
 
 - The study of how far the weave's rim pushes bond distance (`RIM-EXCESS-20261118-001`,

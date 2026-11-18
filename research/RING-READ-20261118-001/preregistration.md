@@ -148,3 +148,32 @@ Rounds T = 10, 12, 14, 15, 16, 18, 20; tables at m = 6 (main) and 7, and 8 at T 
 that works at rounds 10 to 20 (computed, not an all-size proof). If P3 fails with two or more survivors, those incidences are two
 answers with one table, checked for legality against the law and history; if it fails with none, the failure is diagnosed and the
 study closes with the obstruction. Either way: referee hand-off, two-table report.
+
+## Amendment 1: ticket B, frozen before it runs (2026-11-18)
+
+Ticket A's frozen run has been read (`artifacts/RING-READ-20261118-001A/.../results.json`): the gate, F1–F3, P1, P2, P5 held;
+P3′ failed (the linear prune changed nothing); P3, P4 and P6 held at rounds 10, 12 and 14 and failed at 15, 16, 18 and 20, where
+R1 misses junctions and makes 104 to 148 spurious ones near the seed, and R2 finds no legal repair. Diagnosis (`diagnose.py`, after
+the run): at round 15 the missed junction is the round-1 three-distinction junction, one of whose pairs the pairwise prune removes
+at stage 8 (R1 recomputes every junction each stage); the spurious cliques come from bonds of size at most 8 that are sums of three
+or more small junctions near the seed. The advisor was asked again ([question](advisor/question_2.md),
+[answer](advisor/answer_2_fable.md)): it judged three junctions too few (chains and closed rings of small junctions sum to small
+bonds; a 2-by-2 block of four-place junctions has support 8), proposed the closure below, warned that kept wrong junctions can
+poison later stages, and bet against Q1.
+
+Reader R3 (`experiments/RING-READ-20261118-001B/.../reader3.py`): keep every junction read at an earlier stage; at stage s remove
+a short pair lying in the support (at most s) of the sum of a connected set of known junctions, at most s of them, grown only while
+the running support stays at most s + 2, unless one known junction holds both; new junctions are the maximal cliques of at most s
+distinctions that are not known, not in the span of the known ones, and share at most one distinction with each known junction (F2
+used as a filter, declared). R3+ = R3 followed by ticket A's legality repair and own-table check. Same tables (m = 6), same rounds.
+
+| # | Prediction | Fails when |
+| --- | --- | --- |
+| Q0 | Gate: R3 exact at rounds 3 to 9; R3+ on the mutated round-10 table does not return the true junctions | either fails |
+| Q1 | R3 alone returns exactly the true junctions at every round 10 to 20 (the advisor bets against) | some round differs |
+| Q2 | R3+ has exactly one survivor, the true junctions, at every round | none, two or more, or a wrong one |
+| Q3 | The round regrown from R3+'s junctions equals the true next round at every round | some round differs |
+| Q4 | The least horizon at which R3+ works is (largest junction size) − 1 at every round | smaller, or R3+ needs more |
+
+Stop rule: one run per round. If Q2 holds, the study closes with a reader that works at rounds 10 to 20; if it fails, it closes
+with the obstruction found, a reader that works to round 14, and the diagnosis. No third reader in this study.

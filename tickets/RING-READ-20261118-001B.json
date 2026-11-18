@@ -1,0 +1,23 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "RING-READ-20261118-001A"
+  ],
+  "dependency_text": "",
+  "fields": {},
+  "id": "RING-READ-20261118-001B",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Computation: after the frozen run of ticket A (R2 works at rounds 10 to 14 and fails from round 15, where the pairwise prune loses a known junction and sums of three small junctions near the seed make spurious ones), a reader R3 that keeps earlier junctions and prunes sums of up to three known junctions, frozen before it runs, scored at rounds 10 to 20.",
+  "ownership": {
+    "root": false,
+    "scope_id": "RING-READ-20261118-001"
+  },
+  "parent": "RING-READ-20261118-001",
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "",
+  "title": "An incremental reader"
+}

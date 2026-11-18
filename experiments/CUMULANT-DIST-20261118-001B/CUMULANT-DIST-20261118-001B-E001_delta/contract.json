@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CUMULANT-DIST-20261118-001B-E001",
+ "ticket": "CUMULANT-DIST-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does the cumulant distance delta(x,y) = min over S containing x, y of (|S| - 2) - log_3 |kappa_S| read parity and not-all-equal bases alike?",
+ "definitions": {
+  "kappa_S": "joint cumulant of the spins of S under the uniform weighting",
+  "tau": "max(0, -log_3 |k|)",
+  "delta": "min over S containing x and y of (|S| - 2) + tau(kappa_S), kappa_S = 0 skipped"
+ },
+ "public_inputs": {
+  "code": "cumlib.py (sha256 afe8fcc193aaaeb18c236795d050c83725838ccb5ee48037c5d36c303132ab7a), run.py (sha256 c14a7bd0e7cf8b9a67942f3d19ae14d217b0706f6099a98c825817031b6fe7c8), score.py (sha256 cc0364589311e40eb2846356579c85e04a3056e61bc5c4ea45797c2010922b2e), checks.py (sha256 6f979c8ddffef943649c4c0c65d0cb77c1d640921280e990099aa184be5c3b59)",
+  "reused": "COUNT-BALLS-20261118-001B chain.py (Kac-Ward) for the bubble, unchanged",
+  "run": "run.py --part <each>; run.py --score"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "P1-P9 of research/CUMULANT-DIST-20261118-001/preregistration.md, scored by score.py.",
+ "cheapest_meaningful_control": "checks.py: recursion vs partitions, pruned vs full search, invariances, circuits vs knot sets, a moment mutant that must shortcut.",
+ "predictions": {
+  "P1": "parity bases: delta = least circuit - 2",
+  "P2": "knot trees: delta = steps apart, every law assignment",
+  "P3": "mixed chains: kappa = (-1/3)^a",
+  "P4": "NAE separated 4-sets: kappa_4 = -2*3^-(d1+d2)",
+  "P5": "rings: parity shortens some pair, NAE delta = tau",
+  "P6": "chain grid 4x4: delta = tau; bubble <= 4.5",
+  "P7": "weave patch R = 2: delta = tau",
+  "P8": "split line 8: switching rotation, invariant |kappa|, max delta = 2 + log3 2",
+  "P9": "split grids: a switching equivalence sends a corner's neighbour to the far corner"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by score.py"
+ },
+ "stop_rule": "One run; read-out; proofs; referee hand-off; report.",
+ "runtime": "single process per part, nice 5"
+}

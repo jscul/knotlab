@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: what the growth's knots tell, confirmed by its referee; narrowed
+
+- The study of whether the knots a growth added record how the first knots met (`MEET-ADDED-20261118-001`) was confirmed by its
+  referee with independent code: every number holds, and the one shortfall, at seven distinctions, is real
+  ([decision note](research/MEET-ADDED-20261118-001/meet_added.md)).
+- Narrowed: it was summed up as "the knots carry it, not the distances". The reading tells the reader which knots were added, which
+  is itself history; given every knot, old and new mixed, the nesting is read at once. The fair sentence: given the grown states and
+  told which knots the growth added, a reader recovers what the full history gives, exactly on lines of five and six and all but a
+  sliver on seven.
+
 ## 18 November 2026: where the grown distances' missing share sits, confirmed by its referee; reworded
 
 - The study of which names carry the knots' nesting in a grown base (`MEET-HIST-20261118-001`) was confirmed by its referee: every

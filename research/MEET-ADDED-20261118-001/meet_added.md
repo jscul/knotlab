@@ -1,7 +1,8 @@
 # Do the knots a growth added record its order?
 
 Epic `MEET-ADDED-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes sub-goal B199
-(`MEET-HIST-20261118-001`'s selected direction). Goal G16; tests A97. Referee pending.
+(`MEET-HIST-20261118-001`'s selected direction). Goal G16; tests A97. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18
+November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `259e35081` at about 05:09 UTC on 18 November. The
@@ -11,8 +12,9 @@ Epic `MEET-ADDED-20261118-001`, 18 November 2026, by Claude, on the coordinator'
 
 ## The answer
 
-- **Yes, almost exactly: the knots the growth added, read with the states and no names, carry what all the names carry about how
-  the line's knots nest** (computed, exact, every presentation of 5, 6 to k = 4 and 7 to k = 3; prior uniform over labelled
+- **Given the grown states and told which knots the growth added, a reader recovers what the full names give about the nesting,
+  exactly at five and six and within 0.0002 at seven; neither the states nor the added knots suffice alone, and knowing which
+  knots were added is itself history** (*narrowed after the referee*: first "the knots carry it, not the distances"; computed, exact, every presentation of 5, 6 to k = 4 and 7 to k = 3; prior uniform over labelled
   presentations). Shares of the information about the bare bracketing:
 
   | Line of, k | Added pairs alone | States alone | States + added pairs | States + added knots | All named |
@@ -25,16 +27,22 @@ Epic `MEET-ADDED-20261118-001`, 18 November 2026, by Claude, on the coordinator'
     of five and six, and at seven to within 0.00012 at k = 3, the only level where they differ (Q2 failed there by that margin).
   - The added pairs alone, with no states, carry almost nothing (at most 0.05; Q1), as the referee's preview showed; with the
     states they carry nearly all (Q5), a little less than the triples from k = 3 (Q4).
-- **So the part of the order of growth that the distances miss is recorded in the knots the growth added**, read together with the
-  states: which new distinction was knotted to which older ones. Neither the states alone nor the added knots alone hold it.
+- **What this reading assumes.** It hands the reader the added knots as a separate structure, so it is told which knots the growth
+  made, and that is a piece of history. Read with every knot, starting and added, not told apart, the states carry 1.0 at every k,
+  k = 0 included, because the starting knots are the presentation; even all knots without the states carry 1.0. The added knots
+  alone (with middles, no states) carry 0 to 0.41 at five and 0 to 0.12 at six; the added pairs alone at most 0.05 (the referee).
+- **The shortfall at seven is real** (the referee, with independent classes): 44 classes of (states, added knots) merge named
+  bases whose laws over the bare bracketing differ; for example fills on {0, 1, 6}, {1, 2, 6} and {4, 5, 6} grown in two orders
+  are isomorphic with their added knots but have laws ½/½ against 13/22, 9/22. The order of three fills carries a sliver that the
+  added knots do not fix.
 - **The order itself stays mostly unknown even then**: the named base given the states and the added knots still has 0.40 to 1.28
   bits of uncertainty; only the small part of the order that bears on the nesting is recorded.
 
 **In the owner's terms.**
-- What a grown base's distances miss about how its first knots met is written into the knots the growth made: each new
-  distinction's knots say what it was tied to. Read with the states, those knots tell everything the full history would, on lines
-  of five and six, and all but a sliver on seven.
-- The new knots' pattern alone, without the states, tells almost nothing; the states alone tell part. Together they tell it.
+- Given a grown base's states and told which knots the growth made, a reader recovers everything the full history would about how
+  the first knots met, on lines of five and six, and all but a sliver on seven: each new distinction's knots say what it was tied to.
+- Neither the states alone nor the new knots alone tell it, and knowing which knots are new is itself history. A reader given every
+  knot, old and new mixed, recovers it at once, because the old knots are how the knots first met.
 
 ## Predictions and verdicts
 
@@ -51,8 +59,9 @@ knots might pass for a late arrival at larger n.
 
 ## What it means for A97 and the goals
 
-- **A97** stays under challenge. The information a grown base's distances miss about how its knots met is recorded in how the
-  growth's own knots meet, read with the states; not in the distances. Knots carry it; distances do not.
+- **A97** stays under challenge. Narrowed after the referee: what one grown base's distances miss about how its knots met is
+  recovered from the states together with the knots the growth made, when the reader is told which those are; that knowledge is
+  itself history. With every knot the nesting is given outright; with the distances alone, only in part.
 - **G16:** capability gained. The missing share located in the added knots, almost exactly.
 
 ## Limitations
@@ -78,11 +87,23 @@ Consulted once before the freeze: probabilities (Q1 about 0.25 as first written,
 without a peeling lemma, with the warning that a sparsely knotted old distinction could pass for a late one; Q4 about 0.8; Q5
 about 0.97), which bounds hold by construction, and to score the triple and middle equalities jointly. Not consulted after.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by a background referee thread with independent VF2 classes: confirmed with
+fixes, no Block. `exact_with_knots` is KF3's law, and every share reproduces to six digits, the seven, k = 3 shortfall included.
+Folded in the same day (logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`):
+1. **Narrowing** (the headline, the owner's terms, A97). "The knots carry it, not the distances" is not fair: the reading tells
+   the reader which knots the growth added, which is history; with every knot undistinguished the nesting is given outright (1.0 at
+   every k). The fair sentence is the headline above.
+2. **Not a block.** The shortfall at seven is real: 44 classes merge named bases with different laws; the order of three fills
+   carries a sliver the added knots do not fix. This answers direction 1's first step.
+3. **Not a block.** The arm the coordinator asked for (states with every knot, undistinguished) is trivially 1.0; recorded above.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: do the added knots record the order's missing part | **Status:** Successful (referee pending) | Read with the states, they carry the all-named share exactly at five and six, within 0.00012 at seven; 3 of 4 held |
+| This attempt: do the added knots record the order's missing part | **Status:** Successful (refereed R1, confirmed with fixes) | Told which knots were added, the states recover the all-named share: exact at five and six, within 0.00012 at seven; 3 of 4 held |
 | Local direction: how knots meet as information under KF3 | Practically exhausted at these sizes | The missing share is located; what remains is a peeling lemma and the sliver at seven |
 | Broader exploration: A97, knots against distances | Searching | One rule, fewest-knot presentations of lines |
 | Long-term goal: G16 Learning the rules behind what a system allows | Capability gained | The nesting's trace located in the grown knots |
@@ -99,7 +120,7 @@ about 0.97), which bounds hold by construction, and to score the triple and midd
 - **#2.** Payoff: whether this is about lines or knots. Concreteness: needs a redundant-knot start.
 - **#3.** Payoff: the long-run picture. Concreteness: sampling only.
 
-**Corrections:** none.
+**Corrections:** one Narrowing and two Not-a-block points from the referee, logged; see Referee.
 
 **Goals:** a G16 checkpoint (capability gained); no goal changed.
 

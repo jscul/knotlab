@@ -547,11 +547,11 @@ order itself is mostly undetermined by them); knowing which distinctions are the
 line's adds little. The starting knots, still in the grown base, show the nesting
 ([decision note](../research/MEET-HIST-20261118-001/meet_hist.md)).
 Do the knots the growth added record it (`MEET-ADDED-20261118-001`, frozen
-computation, referee pending)? Yes, almost exactly: read with the states and no
-names, the new knots, each saying what its new distinction was tied to, tell as
-much about the nesting as the full history on lines of five and six, and all but
-a sliver on seven; the new knots' pattern alone, without the states, tells almost
-nothing ([decision note](../research/MEET-ADDED-20261118-001/meet_added.md)).
+computation, refereed)? Given the grown states and told which knots the growth
+made, a reader recovers what the full history gives, on lines of five and six,
+and all but a sliver on seven; but being told which knots are new is itself
+history, the states or the new knots alone do not suffice, and a reader given
+every knot, old and new mixed, has the nesting at once ([decision note](../research/MEET-ADDED-20261118-001/meet_added.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

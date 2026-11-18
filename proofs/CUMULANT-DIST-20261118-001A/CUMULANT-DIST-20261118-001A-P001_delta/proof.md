@@ -63,9 +63,23 @@ line is a ring of m: its two ends are as near as any two neighbours, and every s
 folds its L1. ∎ (P8: the map and the invariance of every |κ_S| with |S| ≤ 4 hold on m = 8; δ reads the ring of eight: 0.26, 0.63,
 1.26 at ring distance 1, 2, 3 and 3.26 at the antipode.)
 
+## D6. The general tree claim is false (added on 18 November 2026; the advisor's counterexample, checked)
+
+- **Lemma.** If σ is a uniform ±1 and u₁, …, u_n are independent of σ and of each other, with means μ_i, then
+  κ(σu₁, …, σu_n) = κ_n(σ) ∏ μ_i. Proof: by independence the moment of a block B is E[σ^{|B|}] ∏_{i∈B} μ_i, which are the
+  moments of the variables μ_iσ; cumulants are functions of moments, and κ(μ₁σ, …, μ_nσ) = ∏ μ_i κ_n(σ) by multilinearity. ∎
+- **Counterexample.** In the tree process rooted at x (σ = s_x), take a path of k not-all-equal knots from x to y and N further
+  not-all-equal knots on x, with b_i a child of hung knot i. Then s_{b_i} = σ r_i and s_y = σR with r_i, R independent of σ and of
+  each other, of means −1/3 and (−1/3)^k. By the lemma, κ_{{x, y, b₁, …, b_N}} = κ_{N+2}(σ)(−1/3)^{N+k}. Since
+  |κ_{2j}(σ)| = 2^{2j}(2^{2j} − 1)|B_{2j}|/(2j) (the tangent numbers; B Bernoulli), log₃ |κ₃₄(σ)| = 64.0752 > 64, so for N = 32 and
+  k ≥ 33, δ(x, y) ≤ 32 + (32 + k − 64.0752) = k − 0.0752 < k. ∎ (Checked: the identity on the bases at (N, k) = (2, 1), (4, 1),
+  (2, 2); the tangent numbers exactly.)
+- So D3's upper bound is the truth only on trees without such hubs; the lower bound holds on every parity tree (D2) and is computed
+  on every tree to five knots.
+
 ## Not proved here
 
-δ = steps apart on not-all-equal and mixed trees in general (computed to five knots mixed and six pure); δ = τ on the chain grid
+δ = steps apart on not-all-equal and mixed trees without large hubs (computed to five knots mixed and six pure; false in general by D6); δ = τ on the chain grid
 (computed on a 4 × 4 patch; the bound route through Aizenman's tree bound is a sketch, with the bubble 2.99 ≤ 4.5); whether a
 switching-invariant reading recovers a split grid's L1 in two orders (no switching equivalence takes a corner's neighbour to the
 far corner on 3 × 3, 3 × 4, 4 × 4, so the full structure distinguishes them, while |C| and the triangle products do not).

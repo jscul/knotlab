@@ -426,9 +426,13 @@ take the sets that hold both, and ask how strongly each set is bound beyond
 what its parts explain (the literature's joint cumulant); charge one step per
 extra distinction and −log₃ of the binding's weakness, and take the least. A
 parity knot binds three distinctions with nothing in pairs, a not-all-equal
-knot binds them through pairs, and both come out one step. On every tree of
-knots, whichever law each knot has, the distance is steps apart (proved for
-parity, computed for the rest), on parity bases it is bond distance minus one,
+knot binds them through pairs, and both come out one step. On every parity tree
+the distance is steps apart (proved), and on every small tree of knots whatever
+the laws (computed to five knots), but not on large not-all-equal trees: hang
+32 knots on one distinction, and the many distinctions bound to it together
+reach far more cheaply than steps apart (corrected the same day: the
+cumulants of a fair coin grow factorially). On parity bases it is bond
+distance minus one,
 and on a chain grid it is the count's τ. The laws part on cycles. What it does
 not read is which value is called 1: flipping values turns a split line into a
 ring, its two ends as near as neighbours, so the orders a betweenness growth

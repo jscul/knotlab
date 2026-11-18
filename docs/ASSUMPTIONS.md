@@ -2682,8 +2682,9 @@ evidence: results and their status come from the records each entry links.
   `CUMULANT-DIST-20261118-001` ([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md); referee pending, B200)
   found one distance for both laws: the least number of extra distinctions a set holding the pair needs, plus −log₃ of how
   strongly the set is bound beyond its parts (its joint cumulant). It gives one step per knot under parity and not-all-equal
-  alike, steps apart on every knot tree under any mixture of the two (proved for parity, computed on 19,730 pairs), bond distance
-  minus one on every parity base (proved), and the count's τ on a chain grid. It ignores which value is called 1, so it reads a
+  alike, steps apart on every parity tree (proved) and on every small knot tree under any mixture (computed to five knots), but
+  not on large not-all-equal trees with a hub (corrected the same day: proved counterexample of 65 knots), bond distance minus
+  one on every parity base (proved), and the count's τ on a chain grid. It ignores which value is called 1, so it reads a
   split line as a ring and cannot read the orders a betweenness growth builds (A103).
 - **History.**
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.

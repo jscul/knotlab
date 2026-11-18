@@ -2,7 +2,8 @@
 
 Epic `CUMULANT-DIST-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. It takes sub-goal B200 (one
 distance read from the states that reads parity and not-all-equal bases alike) in place of `ROW-ARRANGE-20261118-001`'s direction 3,
-as the go-ahead allowed once a concrete handle appeared. Goals G1 and G16; tests A97. **Referee pending.**
+as the go-ahead allowed once a concrete handle appeared. Goals G1 and G16; tests A97. **Referee pending.** **Corrected on 18 November
+2026 (before the referee, see Correction): "steps apart on every knot tree" is false for large not-all-equal trees with a hub.**
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `6d9f3ed9b` at 07:23:35 UTC; the run went from
@@ -26,9 +27,12 @@ It is read from the allowed states alone, and it ignores both the distinctions' 
 **In the owner's terms.**
 - **One knot is one step, under either law.** A parity knot binds its three distinctions with nothing visible in pairs; a
   not-all-equal knot binds them through its pairs. Both come out at distance 1 between any two of their distinctions.
-- **On every tree of knots the distance is steps apart, whichever law each knot has.** Proved for parity trees; computed for
-  not-all-equal and mixed trees, on all 19,730 pairs of 380 trees (every tree to five knots under every assignment of the two laws,
-  and to six knots under one law). Bond distance gives parity trees this and not-all-equal ones nothing; the disagreement count gives
+- **On small trees of knots the distance is steps apart, whichever law each knot has; on every parity tree it is (proved).**
+  Computed for not-all-equal and mixed trees on all 19,730 pairs of 380 trees (every tree to five knots under every assignment of
+  the two laws, and to six knots under one law). *Corrected the same day:* it fails on large not-all-equal trees with a hub. Hang
+  32 knots on x and take one distinction from each together with x and y: their joint cumulant is the 34th cumulant of a fair coin
+  times (−1/3)^(32 + k), and the coin's cumulants grow factorially, so with k ≥ 33 steps the distance falls below steps apart
+  (proved; 65 knots; asymptotically it is O(k/log k)). See Correction. Bond distance gives parity trees this and not-all-equal ones nothing; the disagreement count gives
   not-all-equal trees this and parity ones nothing; this one distance gives both, and their mixtures.
 - **On parity bases it is bond distance minus one** (proved; checked on 7,450 pairs of 300 random bases), so it keeps everything
   bond distance read there, the cube of three orders grown from one knot included.
@@ -79,7 +83,8 @@ the far corner (P9).
 
 The owner's premise is that distance is the only form of information. Until now each law needed its own distance: bond distance
 for parity, the disagreement count for not-all-equal. One distance read from the states, built from how strongly sets of
-distinctions are bound beyond their parts, reads both alike on every tree of knots and reduces to each on its own law's bases. So
+distinctions are bound beyond their parts, reads both alike on small trees of knots and on every parity tree, and reduces to each
+  on its own law's bases; on large not-all-equal trees with a hub it falls below steps apart (see Correction). So
 for knots the premise can be met with one distance. What it does not read is the value convention: the orders a betweenness growth
 builds, and the split grid's ruler, need to know which value is called 1, and a distance that ignores values sees a split line as a
 ring. A97 stays under challenge, with this study added; the value convention is recorded as a new assumption (A103).
@@ -119,6 +124,28 @@ for p in trees mixed_identity nae_separated linear rings chain_patch bubble weav
 D5 (proved here), the clamp counterexample, and P1 to P8. It was wrong on the split line's cap (P8: 2.63 against 3.26) and did not
 know P9. Not consulted after the read-out.
 
+## Correction (18 November 2026, before the referee)
+
+The study's next step was to prove that δ is steps apart on every knot tree. Asked for the lower bound, the advisor
+(claude-fable-5-2) found that it is false, and I checked it:
+- **Lemma (proved).** If σ is a uniform ±1 and u₁, …, u_n are independent of it and of each other with means μ_i, then
+  κ(σu₁, …, σu_n) = κ_n(σ) ∏ μ_i: the joint moments are those of μ_iσ. The cumulants of a fair coin, |κ_{2j}(σ)| = 1, 2, 16, 272,
+  7936, …, are the tangent numbers and grow factorially.
+- **Counterexample (proved).** A path of k not-all-equal knots from x to y, and N more not-all-equal knots hung on x, with b_i one of
+  the hung knot i's other distinctions. Rooted at x, every spin of S = {x, y, b₁, …, b_N} is σ = s_x times independent factors of
+  mean −1/3 (one per knot crossed), so κ_S = κ_{N+2}(σ)(−1/3)^{N+k}. Checked on the bases at (N, k) = (2, 1), (4, 1) and (2, 2).
+  Exactly, log₃|κ₃₄(σ)| = 64.075 > 64, so with N = 32 and k ≥ 33 (a tree of 65 knots) δ(x, y) ≤ k − 0.075; with N = 34, δ ≤ k − 1.70.
+  Choosing N with log₃ |κ_{N+2}| ≥ N + k gives δ ≤ N, and log₃ |κ_{N+2}| grows like N log N, so δ = O(k / log k) on such trees.
+- **What stands.** δ = bond distance − 1 on every parity base and so steps apart on every parity tree (proved); a parity path knot
+  whose branch misses S forces κ_S = 0; sets of two and three never shortcut; separated four-sets never shortcut; every tree to five
+  knots under every law assignment and to six under one law (computed). The hub needs at least 32 knots on one distinction (or the
+  advisor's compact variant, 48 knots), so the bases of the program's other studies, with at most six knots per distinction, are not
+  reached by this mechanism; whether bounded-degree trees can shortcut is open.
+- **Verdict.** A **Block** on the reading "δ = steps apart on every knot tree under either law": the unification of the two laws by
+  this distance holds on small trees and on every parity tree, not on all trees. Logged in `docs/CORRECTIONS.md` and knotlab's
+  `HISTORY.md`. A repair is to read cumulants that factor along the tree (the literature's tree cumulants, Zwiernik and Smith 2012),
+  or to admit at most one distinction per branch; `TREE-STEPS-20261118-001` takes this up.
+
 ## Referee
 
 Pending. To be run by the coordinator's background referee thread.
@@ -130,18 +157,18 @@ Pending. To be run by the coordinator's background referee thread.
 | This attempt: one distance for parity and not-all-equal knots (B200) | **Status:** Partially successful (referee pending) | One distance reads both laws alike on knot trees and reduces to bond distance and to τ on each law's bases; it cannot read value-dependent orders (split grids); 4 of 9 held |
 | Local direction: the cumulant distance | Promising | Proofs for trees of both laws, the triangle inequality and larger bases are open |
 | Broader exploration: correlation and information distances | Known alternatives | Ursell functions, tree metrics and switching are classical; the functional and its readings are the program's |
-| Long-term goal: G1 and G16 | G1 capability gained; G16 capability gained | G1: one state-read distance gives steps apart on every knot tree, either law. G16: what the two laws share and where they part (cycles), read from states |
+| Long-term goal: G1 and G16 | G1 capability gained (narrowed: small trees and parity trees); G16 capability gained | G1: one state-read distance gives steps apart on small knot trees and every parity tree, either law. G16: what the two laws share and where they part (cycles), read from states |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Prove δ = steps apart on every knot tree, any mixture of laws (the lower bound beyond four-sets) | 2/3 | 2/3 | bound the cumulants of sets of six and eight on not-all-equal trees by the separation lemma → stop at a proof or a tree where a larger set wins | Alternative |
+| 1 | *(Answered the same day: false in general, see Correction.)* Prove δ = steps apart on every knot tree, any mixture of laws (the lower bound beyond four-sets) | 2/3 | 2/3 | bound the cumulants of sets of six and eight on not-all-equal trees by the separation lemma → stop at a proof or a tree where a larger set wins | Alternative |
 | 2 | The cumulant distance on the program's large bases: the cubic parity system grown from one knot and the endless weave (exact kernels), and mixed laws on the weave | 2/3 | 2/3 | δ on the weave from four-point dimer correlations → stop at its outline and growth | Alternative |
 | 3 | What reads the value convention: a statistic of the states, invariant under renaming but not switching, that recovers the split grid's L1 and the orders, and why betweenness growth fixes it (A103's challenge) | 2/3 | 2/3 | the switching group of grown split bases → stop at the least added datum (the all-equal states) | Alternative |
 | 4 | Two orders without values: which switching-invariant statistic tells a corner's neighbour from the far corner in a split grid (P9) | 1/3 | 3/3 | four-point cumulants at the corner → stop at the first that separates | Alternative |
 
-**Corrections:** none.
+**Corrections:** none at the close; on the same day one Block on the reading "steps apart on every knot tree" (see Correction).
 
 **Goals:** G1 checkpoint (capability gained: one distance read from the states gives steps apart on every knot tree under either
 law) and G16 checkpoint (capability gained: where parity and not-all-equal readings agree and part, read from the states); no goal
@@ -150,6 +177,8 @@ changed.
 **Assumptions:** A97 gains this study; new A103 (a base's values are data, not labels: which value is called 1 is part of a base).
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its "every tree of knots" was corrected the same day (see Correction).*
 
 **Outcome (sub-goal B200): one distance read from the states now reads parity and not-all-equal knots alike.** For two
 distinctions, it charges one step for each extra distinction a set holding both needs, plus how weakly that set is bound beyond

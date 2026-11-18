@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the cumulant distance is steps apart on small trees, not on every tree
+
+- The study of one distance for parity and not-all-equal knots (`CUMULANT-DIST-20261118-001`) said the distance is steps apart on
+  every tree of knots, whichever law each knot has. That is true on every parity tree (proved) and on every tree to five knots
+  (computed), but false in general: hang 32 not-all-equal knots on one distinction, and the many distinctions bound to it reach a
+  far one more cheaply than steps apart, because the joint cumulants of a fair coin grow factorially (proved; a tree of 65 knots)
+  ([decision note](research/CUMULANT-DIST-20261118-001/cumulant_dist.md)).
+- Blocked: the reading "steps apart on every knot tree". What stands: bond distance minus one on parity bases, the switching
+  obstruction, and every computed number. A repaired distance is being studied.
+
 ## 18 November 2026: what the arrangement of the count's rows holds, confirmed by the referee; three statements narrowed
 
 - The study of which reading of the count table recovers a grown base's number of orders (`ROW-ARRANGE-20261118-001`) was confirmed by

@@ -497,6 +497,13 @@ And the meeting pattern alone, with the line ignored, decides how the growth
 branches (post hoc): the knots meet twice, once in how they share
 distinctions and once in how that pattern sits along the states
 ([decision note](../research/MEET-ORDERS-20261118-001/meet_orders.md)).
+Does the meeting pattern then grow on its own (`MEET-GROW-20261118-001`,
+frozen computation, referee pending)? Yes, as far as computed: from any two
+presentations of a line with the same meeting pattern, the co-knotted pairs grow
+with the same law, label for label after one renaming, for every presentation
+of five to nine distinctions and state by state, while the number of orders
+they carry differs with the placement
+([decision note](../research/MEET-GROW-20261118-001/meet_grow.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

@@ -2622,7 +2622,12 @@ evidence: results and their status come from the records each entry links.
   halves enter at the fourth (computed, every presentation of 5 to 9). Post hoc, the meeting pattern alone, with the line ignored,
   decides how the growth branches. Whether the bracketing is a distance is open: it is read from the states' disagreement counts
   together with the knots, and the states alone do not give it.
+  `MEET-GROW-20261118-001` ([decision note](../research/MEET-GROW-20261118-001/meet_grow.md); referee pending) found that,
+  under KF3, the meeting pattern grows on its own: from any two presentations with one meeting pattern, one renaming carries the
+  whole law of the grown co-knotted pairs, state by state (computed, every presentation of 5 to 9 distinctions), while the number
+  of orders differs with the placement.
 - **History.**
+  - 2026-11-18 · `MEET-GROW-20261118-001`: the meeting pattern grows on its own under KF3 (computed); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-20261118-001`: the information is the bracketing (proved at the second new distinction); the
     meeting pattern alone decides the branching (post hoc); status unchanged.
   - 2026-11-18 · The weave case scoped after `WEAVE-PAIR-R1` (Narrowing): a one-way strip ruler with full information exists; the
@@ -2747,6 +2752,7 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `MEET-GROW-20261118-001` built on it (the same population and rule); status unchanged.
   - 2026-11-18 · `MEET-ORDERS-20261118-001` built on it (KF3 from every fewest-knot presentation of a line); status unchanged.
   - 2026-11-18 · `CUBE-DOUBLING-20261118-001` proved the cube growth under this entry (its referee: for any cap of three or more
     knots per step); status unchanged.
@@ -2767,4 +2773,5 @@ evidence: results and their status come from the records each entry links.
   reads the extra co-knotted pairs, so the order distribution can change with the states and the bracketing fixed. Then try
   presentations of the 2 × 2 pattern or of a branching tree.
 - **History.**
+  - 2026-11-18 · `MEET-GROW-20261118-001` built on it (the same population and rule); status unchanged.
   - 2026-11-18 · Added by `MEET-ORDERS-20261118-001`.

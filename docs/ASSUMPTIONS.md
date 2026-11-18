@@ -1036,6 +1036,11 @@ evidence: results and their status come from the records each entry links.
   carry, for example a hub chain in two dimensions whose chain balls are round. The cheapest test measures chain balls on a plane of
   gated knots against the grid it is drawn on.
 - **History.**
+  - 2026-11-18 · `BOND-METRIC-20261118-001` ([decision note](../research/BOND-METRIC-20261118-001/bond_metric.md); referee
+    pending): a metric form. Bond distance satisfies the triangle inequality on every base whose knots compose like cycles (every
+    parity base; proved, with bond distance minus one), and among the 34 three-place laws on every base of copies of one law exactly
+    for parity; under every other law two knots meeting at a hub already break it (two not-all-equal knots sharing two distinctions).
+    The results resting here were measured on weaves, trees and parity bases, where it is a metric. Status unchanged.
   - 2026-11-18 · `COUNT-BALLS-20261118-001` ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md); referee
     pending): the outline depends on which reading spaces the law. On the six-regular weave under not-all-equal, bond distance
     gives the hexagon of steps apart (rational π), while the disagreement count, which carries every not-all-equal base, gives the
@@ -2700,7 +2705,13 @@ evidence: results and their status come from the records each entry links.
   flat and only correlation grades them; and freedom cannot mend the cumulant distance's hub shortcut, whose set is free (post
   hoc). Its referee proved bond distance satisfies the triangle inequality on every parity base; off parity bases and knot trees
   it fails once a pair that no bond holds is read as infinitely far (`BOND-METRIC-20261118-001`).
+  `BOND-METRIC-20261118-001` ([decision note](../research/BOND-METRIC-20261118-001/bond_metric.md); referee pending) settled where:
+  bond distance (and bond distance minus one) is a metric wherever knots compose like cycles, so on every parity base (proved), and
+  among the 34 three-place laws it is a metric on every base of copies of one law exactly for parity (proved by a failing base for
+  each of the other eight). Under not-all-equal it is a distance on trees and on the tori checked, not in general: two knots sharing
+  two distinctions put their thirds infinitely far apart, each one knot from a shared distinction.
 - **History.**
+  - 2026-11-18 · `BOND-METRIC-20261118-001`: bond distance is a metric exactly where knots compose (among three-place laws, exactly parity); status unchanged.
   - 2026-11-18 · `FREE-READ-20261118-001`: bond distance is steps apart plus one on every knot tree under any mixture of the three laws (proved); flat on split grids; status unchanged.
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.
   - 2026-11-18 · `ALIGNED-NEXT-JOIN-20261117-001` proved the exact next joins readable on every complete aligned round, with a finite check of the effect of the original eight.

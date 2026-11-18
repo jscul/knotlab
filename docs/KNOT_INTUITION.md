@@ -466,6 +466,17 @@ ends. Where freedom and correlation part is on cycles. On a split grid every
 pair lies in a knot of three, so bond distance is flat while correlation
 grades the grid
 ([decision note](../research/FREE-READ-20261118-001/free_read.md)).
+Is bond distance then a distance, one that adds up along the way
+(`BOND-METRIC-20261118-001`, proofs and frozen census, referee pending)? Only
+where knots compose. Two not-all-equal knots sharing two distinctions put each
+third distinction one knot from the shared ones, yet no knot holds the two
+thirds: the shared pair is a hub between them, not a touch, so they are
+infinitely far apart. On every parity base it does add up, because two knots
+that meet always contain a knot holding their far ends. Of all three-place laws
+that pass the knot test, parity is the only one under which bond distance adds
+up on every base (proved). Under not-all-equal it adds up on trees and on the
+woven tori checked, but not in general
+([decision note](../research/BOND-METRIC-20261118-001/bond_metric.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

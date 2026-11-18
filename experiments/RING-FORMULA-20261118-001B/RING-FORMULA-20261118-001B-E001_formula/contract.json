@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RING-FORMULA-20261118-001B-E001",
+ "ticket": "RING-FORMULA-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Do the model's counts equal the grown counts on odd rings with spare distinctions, and does the recurrence hold on the model?",
+ "definitions": {
+  "model": "RING-GROWTH-20261118-001A's (v, S) model with j spares"
+ },
+ "public_inputs": {
+  "code": "formula.py (sha256 6a2d17955efbe052b3cd41347d192a374e1efd3d2962e5aaed500a3127b17c56), check.py (sha256 311dbfbb6fb031f5ab247b0c9db43b7e071488117d79229e3137506eaafe41b3), ring.py (sha256 00a66203cfca618c22d1996e9e598e05160a06b6cac192968a09a575bbc6ab72), bm.py (sha256 4906869c92a7ec4b132f02d4622055c2e3e7dff06a972df84a0d188154db3f9c)",
+  "run": "python3 -B check.py <out json>",
+  "reused": "FIRST-KNOT-20261118-001B startlib.py"
+ },
+ "forbidden_inputs": [
+  "Choosing rings after reading them"
+ ],
+ "primary_observable": "model_equal per ring; recurrence_from_round",
+ "cheapest_meaningful_control": "the one-spare ring of RING-GROWTH",
+ "predictions": {
+  "formula": "RING-GROWTH-20261118-001 R1-R5: c(t) = sum_i C(j,i) c(t-n-i)"
+ },
+ "decision_rules": {
+  "each ring": "model_equal True"
+ },
+ "stop_rule": "One run; report.",
+ "runtime": "25 minutes",
+ "amendments": []
+}

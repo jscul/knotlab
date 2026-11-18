@@ -1,0 +1,31 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "RING-GROWTH-20261118-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "RING-GROWTH-20261118-001#2"
+    ]
+  },
+  "id": "RING-FORMULA-20261118-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (18 November 2026) on RING-GROWTH-20261118-001's direction 2: under the cheapest counts, a ring of n four-place knots with j spare distinctions grows at the root of x^(n+j) = (1+x)^j (the advisor's formula). Write the (v, S) model for j spare distinctions and odd n and stop at a proof or a ring that breaks it; prove the ring of five five-place knots round by round (Fibonacci); say why rings of four and six degenerate. Serves G17.",
+  "ownership": {
+    "root": true,
+    "scope_id": "RING-FORMULA-20261118-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-18 (Successful; referee pending): for odd rings of n >= 5 knots with j spare distinctions the cheapest growth's junctions per round satisfy c(t) = sum_i C(j,i) c(t-n-i), rate the root of x^(n+j) = (1+x)^j (proved through the model, matched on 17 rings); with a spare at every knot c(t) = n F(t+2) every round; rings of three, four and six degenerate; even rings of eight or more split in two (computed).",
+  "status_class": "complete",
+  "stop_rule": "A proof or a ring that breaks the formula; checks; referee hand-off; report.",
+  "title": "Does one formula give the growth rate of every ring of knots?"
+}

@@ -3079,6 +3079,24 @@ that earlier records used in two senses.
   top in three patterns (ten descriptions) where no bond inside two orbits does: their unexposed
   dependence shows once the orbits just below the top are held too
   (`CARRIER-20261117-001`, 17 November 2026).
+- **Bracketing; bare bracketing.** A line (the one-order base) of n distinctions presented by the fewest betweenness knots,
+  n − 2 of them, is presented exactly when its knots form a **bracketing**: every knot B(a, c, b) has c between a and b, its
+  **halves** are the line's steps from a to c and from c to b, and each knot other than the **ends' knot** (the one holding
+  both ends) lies directly within a half of exactly one other, while every half holds one knot directly within it or is a
+  single step. The **bare bracketing** forgets which half: only which knot lies directly within which. Two knots are
+  **step-disjoint** when they share no step, which is the same as neither lying within the other. The literature's bracketing,
+  or rooted binary tree, drawn as a triangulation of a polygon rooted at a marked side; the bare one is the unlabelled rooted
+  binary tree. The intuition: how the knots meet, read against the line, is a hierarchy of which knot lies within which, and the
+  growth that reads which knots meet reads this hierarchy: a fill makes a knot's halves cross, and a second fill keeps two orders
+  only when its knot is step-disjoint from the first or joins it to a knot it shares a pair with (`MEET-ORDERS-20261118-001`,
+  18 November 2026).
+- **Same way, other way.** For knots χ within ν within π of a bracketing, χ lies in ν **the same way** when it sits in ν at the
+  same end as ν sits in π, and **the other way** otherwise. With the bare bracketing these choices make up the whole bracketing
+  up to mirror image. The shared distinction of the line of five's three knots sits at an end when the chain lies the same way and
+  next to an end when it lies the other way (`MEET-ORDERS-20261118-001`).
+- **Odd set.** While no new distinction has added a state, each new distinction of a line takes, in every allowed state, the
+  parity of an odd set of the line's distinctions: its odd set. The fill of three distinctions a < c < b is their parity (the
+  advisor's parity form; `MEET-ORDERS-20261118-001`).
 - **Binding pattern.** The owner's word, not yet defined: in his words, "This
   is what we're trying to discover" (lesson 7.3). He offers two pictures,
   logic carried in each knot that binds whole knot patterns together, and
@@ -3133,6 +3151,7 @@ that earlier records used in two senses.
   | Fano pattern; Fano piece | seven distinctions and seven knots, every two distinctions in one knot; that pattern less one element | Fano plane; Fano plane less a point or a line |
   | unlengthened shift; along-count, across-count | a shift the law does not lengthen; how many of each shift separate two distinctions | (none for the shift); coordinates of the sheared frame, drawn as column and row |
   | heddle | three consecutive across-counts and every second one after them, at one along-count | (none; drawn as a column of a grid) |
+  | bracketing; bare bracketing; ends' knot | which knot of a fewest-knot presentation of a line lies directly within which half of which, from the knot holding both ends; the same forgetting the halves | triangulation of a polygon with a marked side, rooted binary tree; unlabelled rooted binary tree; the root |
 - **One word, one meaning.** Earlier records used some words in two senses
   (lesson 1.1). The guide keeps one sense of each and gives the other its own
   word. The

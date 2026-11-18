@@ -1,0 +1,68 @@
+{
+ "schema_version": 3,
+ "artifact_id": "MEET-ORDERS-20261118-001A-P001",
+ "canonical_id": "MEET-ORDERS-20261118-001A-P001",
+ "proof": "MEET-ORDERS-20261118-001A-P001",
+ "ticket": "MEET-ORDERS-20261118-001A",
+ "kind": "proof",
+ "status": "Partial",
+ "title": "How the knots' bracketing decides the second fill",
+ "claim": "The fewest-knot betweenness presentations of a line of n are exactly its bracketings (n - 2 knots, Catalan(n - 2) per arrangement). Under KF3 the first new distinction fills one knot uniformly (one knot set each); on a line with fills of triples there are two orders iff some fill exists and no fill's middle lies strictly inside another's span except at its own middle; after a first fill at kappa the options are the fills of the other knots and two re-bracketing fills per knot sharing a pair with kappa; hence P(two orders after the second new distinction) = (1/(n-2)) sum_kappa [s + 2p + c]/[(n - 3) + 2(p + c)], a function of the bare bracketing.",
+ "standard_statement": "Minimal betweenness presentations of a path are polygon triangulations (rooted binary trees); an exact second-step formula for a knot-local Markov growth of split systems, read by lattice dimension.",
+ "prior_work": "STATE-RULES-20261117-001 (S4, KF3); KNOT-CAP-20261117-001 (the five-starts and six-starts, the referee's count of 300 presentations); Catalan (classical); Eppstein 2005 (lattice dimension).",
+ "dependencies": [],
+ "completion_gate": "Ticket B's finite check M1 (every bracketing with n0 = 4..11, every first knot) discharges Lemma B; the referee reviews the proofs.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proof written before the freeze; Lemma B awaits ticket B's finite check; referee pending",
+  "independence": "exact enumeration against the proofs; same task authorship; the advisor model supplied Lemma 0's converse and Lemma C",
+  "novelty": "local (Lemma 0's characterization not found in two searches; Lemmas A-C and Theorem 1); classical ingredients (Catalan, Eppstein)"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "presentations_are_bracketings": true,
+  "second_fill_formula": true,
+  "two_order_criterion_for_fills": true,
+  "third_step_bare_bracketing_blindness": false
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "Lemma B's finite check (ticket B, cases M1)"
+ ],
+ "paths": {
+  "manifest": "proofs/MEET-ORDERS-20261118-001A/MEET-ORDERS-20261118-001A-P001_second_fill/manifest.json",
+  "identity": "proofs/MEET-ORDERS-20261118-001A/MEET-ORDERS-20261118-001A-P001_second_fill/identity.json",
+  "proof": "proofs/MEET-ORDERS-20261118-001A/MEET-ORDERS-20261118-001A-P001_second_fill/proof.md"
+ },
+ "attained_result": "Lemma 0, Lemma A, Lemma C proved; Lemma B reduced to the finite check; Theorem 1 conditional on it."
+}

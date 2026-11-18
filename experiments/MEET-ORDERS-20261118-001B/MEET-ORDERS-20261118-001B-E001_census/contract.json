@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MEET-ORDERS-20261118-001B-E001",
+ "ticket": "MEET-ORDERS-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which invariant of how betweenness knots meet predicts the distribution of the number of orders grown by KF3 from presentations of the same line; does the second step follow Theorem 1 for every presentation with at most 11 distinctions; through which step does the bare bracketing decide the number of orders, and from which does the order of the bracketing enter?",
+ "definitions": {
+  "presentation": "a fewest-knot set of betweenness knots allowing exactly the line's states (a bracketing)",
+  "bare bracketing": "which knot lies directly within which, from the ends' knot, forgetting which half (unlabelled rooted binary tree)",
+  "number of orders": "lambda from Eppstein's formula as in STATE-RULES; two orders = lambda 2 and a bipartite crossing graph",
+  "odd set": "the line distinctions whose parity a new distinction takes while no step has added a state"
+ },
+ "public_inputs": {
+  "code": "melib.py (sha256 9d1b32f3c600a8e489862bc14bff8a78eb0b7c925eb73adcff1635205d1788a4), job.py (sha256 ca5bd76a448d47b91b2bade3e433ccf9cb0d0c2f3a32379cd04b4b28f4af58e8), checks.py (sha256 3178f1ec7883c254837b548de7f9abf90087394d0eeace59246a96aefaa512de), merge.py (sha256 c9a376e5a9e524356d7c84c37321da931dabd8bbff32fcbb867acd0b85b8c265); numpy and networkx 3.6.1 in the workspace .venv",
+  "run": "scripts/longrun.py launch job.py (634 cases), then merge.py on the runner output"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions Q1-Q8 of research/MEET-ORDERS-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "Mirror images (identical by construction); the mutant formula and mutant criterion of checks.py; presentations of the same arrangement with different bare bracketings.",
+ "predictions": {
+  "Q1": "M1: Lemma B and Theorem 1 hold for every bracketing with n0 = 4..11 and every first knot",
+  "Q2": "n0 = 7, 8, 9: the distribution of the number of orders at n0 + 3 depends only on the bare bracketing",
+  "Q3": "n0 = 7, 8, 9: different bare bracketings give different distributions at n0 + 3",
+  "Q4": "n0 = 7, 8: every two presentations that are not mirror images differ at n0 + 4",
+  "Q5": "n0 = 5..9: the fewest-knot presentations are exactly the bracketings",
+  "Q6": "n0 = 5..13: the chain is the unique least of Theorem 1's value",
+  "Q7": "Lemma C's criterion = the measured two orders on every labelled fills-only base",
+  "Q8": "n0 = 6 (to +4), 7 (to +3): labelled counts and mass by largest odd set depend only on the unrooted pair-sharing tree, and different trees differ"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "12 workers, 2 GB per case, heaviest case about 30 s; registered as MEET-ORDERS-B1 in docs/LONG_RUNNING.md."
+}

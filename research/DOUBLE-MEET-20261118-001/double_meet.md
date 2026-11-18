@@ -120,7 +120,7 @@ below steps + 1); parallelograms to 18 distinctions (exactly the acute lone pair
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: which double meetings are harmless | **Status:** Successful (refereed; one reading blocked) | All of them inside the weave; the failures are lone pairs of opposite classes facing each other (every one of 12,318); a patch is a true distance exactly when it has no unbonded such pair; 4 of 6 held |
+| This attempt: which double meetings are harmless | **Status:** Successful (refereed; one reading blocked) | All of them inside the weave; the failures are lone pairs of opposite classes facing each other (every one of 12,318); on the census to eleven knots a patch is a true distance exactly when it has no unbonded such pair (from twelve knots such a pair can also fail bonded); 4 of 6 held |
 | Local direction: one distance for both laws (B200) | Promising | On weave patches bond distance is a true distance up to a rim effect, and at least steps apart + 1 throughout (sketched and computed here; proved in WEAVE-HEIGHTS) |
 | Broader exploration: heights and tilings | Known alternatives | The triangular antiferromagnet's height function and lozenge tilings carry the mechanism |
 | Long-term goal: G1 and G16 | G1 capability gained; G16 capability gained | G1: where the weave's distance is a true distance, and why the rim can break it. G16: lone distinctions and their classes as what decides it |

@@ -3,7 +3,7 @@
 Status: Proved
 
 Ticket `WEAVE-HEIGHTS-20261118-001Z`, 2026-11-18. A ledger; it makes no new claim. The decision note is
-`research/WEAVE-HEIGHTS-20261118-001/weave_heights.md`. Referee pending.
+`research/WEAVE-HEIGHTS-20261118-001/weave_heights.md`. Refereed (R1, confirmed).
 
 | # | Conclusion | Novelty | Evidence |
 | --- | --- | --- | --- |

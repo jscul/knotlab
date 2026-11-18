@@ -2,7 +2,8 @@
 
 Epic `WEAVE-HEIGHTS-20261118-001`, 18 November 2026, by Claude. The coordinator's go-ahead on `DOUBLE-MEET-20261118-001`'s direction 2:
 write the height-function criterion for constrained sets and the bound b ≥ steps apart + 1 on weave patches without holes (the
-advisor's sketches H and L) as full, refereeable proofs. Goal G1; tests A39 and A97. **Referee pending.**
+advisor's sketches H and L) as full, refereeable proofs. Goal G1; tests A39 and A97. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block; small fixes folded in on 18
+November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `fa778afc8` at 11:51 UTC; the checks ran from 11:51 to
@@ -82,11 +83,22 @@ names claude-fable-5-2) refereed the written proofs before the freeze: no wrong 
 fixes (definitions, the hypotheses of the cited characterisation, the 2020 reference, Corollary 4's subset step, Theorem 7 for every
 bond, a remark weakened) are folded in. The statements and outline of Proposition 3 and Lemma 6 are its, from `DOUBLE-MEET-20261118-001`.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed, no Block.
+Every step checks by hand, Proposition 3's parity bookkeeping is exact, and with its own code two sizes past: Proposition 3 set by set on
+every disc to ten knots (24,146,944 sets) and 300 random discs of twelve (a control with 3(m − 3) disagrees on 52% of constrained sets,
+so the check is sharp); Lemma 1's count to eight knots; flagness, convex balls, the triangle condition, no level knot, D + D = 3·steps and
+Lemma 8 to ten knots and on 6,000 random discs of thirteen and fourteen; Theorem 7 on 227,039 bonded pairs at thirteen knots. The cited
+statements of Lemma 5 are confirmed as standard from secondary sources; theorem numbers remain unverified. Folded in: Lemma 5's caveat
+now says so; a sentence of Proposition 3 reworded; two stale phrases left from `DOUBLE-MEET-20261118-001`'s fold-in corrected (its
+position table and A97's history line), residue of the Block already logged there, so no new entry.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: prove the criterion and the lower bound | **Status:** Successful (referee pending) | Both proved; every step checked on every disc to twelve knots; 7 of 7 held |
+| This attempt: prove the criterion and the lower bound | **Status:** Successful (refereed) | Both proved; every step checked on every disc to twelve knots; 7 of 7 held |
 | Local direction: one distance for both laws (B200) | Promising | On the weave bond distance never undercuts steps apart; its rim excess is the open part |
 | Broader exploration: heights and tilings | Known alternatives | The height function and difference constraints are classical; the criterion for constrained sets is the program's |
 | Long-term goal: G1 | G1 capability gained | The weave's distance is bounded below by the steps apart, proved |

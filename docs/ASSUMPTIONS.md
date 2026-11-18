@@ -2735,7 +2735,7 @@ evidence: results and their status come from the records each entry links.
   facing each other; the lone double meeting is the smallest case. Bond distance is at least steps apart + 1 there (sketched through
   the height function, checked) and equal to it on all but 64 bonded pairs.
 - **History.**
-  - 2026-11-18 · `DOUBLE-MEET-20261118-001`: in the weave double meetings are harmless; failures only through unbonded lone pairs of opposite classes facing each other; status unchanged.
+  - 2026-11-18 · `DOUBLE-MEET-20261118-001`: in the weave double meetings are harmless; failures only through lone pairs of opposite classes facing each other, unbonded or (from twelve knots) bonded too far; status unchanged.
   - 2026-11-18 · `NAE-METRIC-20261118-001`: under not-all-equal bond distance is a true distance exactly when it is one in every block; trees of knots and rings proved; status unchanged.
   - 2026-11-18 · `BOND-METRIC-20261118-001`: bond distance is a metric on every base whose knots compose, and on every base of copies of one three-place law exactly for parity (scoped to laws after its referee); status unchanged.
   - 2026-11-18 · `FREE-READ-20261118-001`: bond distance is steps apart plus one on every knot tree under any mixture of the three laws (proved); flat on split grids; status unchanged.

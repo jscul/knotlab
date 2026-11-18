@@ -1,7 +1,8 @@
 # Heights on weave patches: the criterion for constrained sets and the lower bound
 
 Ticket `WEAVE-HEIGHTS-20261118-001A`, 18 November 2026. Written before the frozen checks of ticket B
-(`experiments/WEAVE-HEIGHTS-20261118-001B/WEAVE-HEIGHTS-20261118-001B-E001_checks/`). Referee pending. The statements of Proposition 3
+(`experiments/WEAVE-HEIGHTS-20261118-001B/WEAVE-HEIGHTS-20261118-001B-E001_checks/`). Refereed: report R1, confirmed, no Block
+(`research/WEAVE-HEIGHTS-20261118-001/referee-R1/report.md`); its small fixes folded in on 18 November. The statements of Proposition 3
 and Lemma 6 and the outline of their proofs are the advisor's (claude-fable-5-2, in `DOUBLE-MEET-20261118-001`); the proofs below are
 written out in full by the thread, with the bridged-graph step resting on cited theorems. The advisor then refereed this text before the
 freeze; its fixes are folded in (definitions, the hypotheses of the cited theorems, a remark weakened).
@@ -83,8 +84,8 @@ telescope, so with L = Σᵢ D(sᵢ, sᵢ₊₁) the cycle's weight is
 L ≡ 0 (mod 3), and Σᵢ εᵢ ≡ L/3 (mod 2), since εᵢ is the parity of a_i/3. Changing σ(sᵢ) moves r_i by 3 and flips εᵢ and εᵢ₋₁ together;
 so the vectors (εᵢ) reachable by changing σ on the cycle are exactly those with Σᵢ εᵢ of that fixed parity, and the largest reachable sum
 is m when L/3 ≡ m (mod 2) and m − 1 otherwise.
-- *If L ≤ 3(m − 2) for some cycle with m ≥ 3:* when L/3 ≡ m (mod 2), take Σεᵢ = m > L/3; otherwise L/3 ≡ m − 1 and L/3 ≤ m − 2 force
-  L/3 ≤ m − 3, and take Σεᵢ = m − 1 > L/3. Either way the cycle is negative for that σ (values off the cycle chosen freely), so σ does
+- *If L ≤ 3(m − 2) for some cycle with m ≥ 3:* when L/3 ≡ m (mod 2), take Σεᵢ = m > L/3; otherwise take Σεᵢ = m − 1, and
+  L/3 ≤ m − 2 < m − 1. Either way the cycle is negative for that σ (values off the cycle chosen freely), so σ does
   not occur and S is constrained.
 - *If S is constrained:* some σ gives a negative simple cycle, so L < 3 Σεᵢ with Σεᵢ ≡ L/3 (mod 2), hence L/3 ≤ Σεᵢ − 2 ≤ m − 2. For
   m = 2 this would need L ≤ 0, but D(s, t) + D(t, s) ≥ 3 for s ≠ t (a closed walk through t weighs ≡ 0 (mod 3) by (i) and is
@@ -111,9 +112,9 @@ links have no induced 4- or 5-cycles (Chepoi, "Graphs of some CAT(0) complexes",
 the 1-skeleta of systolic complexes, Januszkiewicz and Świątkowski, Publ. Math. IHÉS 104 (2006)). In a bridged graph every ball is
 convex (Soltan and Chepoi 1983; Farber and Jamison, Discrete Math. 66 (1987)), and the triangle condition holds: two adjacent
 distinctions at the same distance t ≥ 1 from x have a common neighbour at distance t − 1, since bridged graphs are weakly modular
-(Chalopin, Chepoi, Hirai and Osajda, "Weakly modular graphs and nonpositive curvature", Mem. AMS 268 (2020)). (Theorem numbers are to be
-checked against the sources; ticket B checks convex balls, the triangle condition and the conclusion itself on every disc to twelve
-knots.) Suppose a knot {a, b, c} has δ = t on all three; t ≥ 1.
+(Chalopin, Chepoi, Hirai and Osajda, "Weakly modular graphs and nonpositive curvature", Mem. AMS 268 (2020)). (The referee confirmed these statements as standard from secondary sources; the primary texts were not reachable, so theorem numbers
+are unverified. Their conclusions on these graphs, convex balls, the triangle condition and no level knot, were checked mechanically on
+every disc to twelve knots in ticket B and by the referee to fourteen knots.) Suppose a knot {a, b, c} has δ = t on all three; t ≥ 1.
 By the triangle condition a and b have a common neighbour at distance t − 1; the common neighbours of a and b in G are the far
 distinctions of the lattice knots on {a, b} that lie in T, and c is at distance t, so it is the far distinction c′ of the other knot
 on {a, b}. Likewise the far distinctions a′ across {b, c} and b′ across {c, a} are in V at distance t − 1. Now a′ and b′ are not a

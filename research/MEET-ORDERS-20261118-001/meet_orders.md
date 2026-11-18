@@ -2,7 +2,8 @@
 
 Epic `MEET-ORDERS-20261118-001`, 18 November 2026, by Claude, on the coordinator's pick. It takes the second direction of
 `KNOT-CAP-20261117-001` (why the five-starts differ in the number of orders). Goals G1 and G16; tests A97. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no
-Block, folded in on 18 November (see Referee).
+Block, folded in on 18 November (see Referee). The line's closing summary, over all six MEET studies, is
+[line_summary.md](../MEET-ADDED-20261118-001/line_summary.md).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `d636345d9` at 02:40 UTC on 18 November. The run

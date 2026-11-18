@@ -6,6 +6,7 @@ arrangements are the same when a renaming of the knots carries one to the other 
 library (the joining rule, the fewest counts, implied parity by GF(2))."""
 import itertools
 import sys
+import time
 from collections import defaultdict
 from pathlib import Path
 
@@ -99,7 +100,7 @@ def stars_of(key):
     return stars
 
 
-def grow_tracked(stars, rounds=30, maxj=6000):
+def grow_tracked(stars, rounds=30, maxj=6000, deadline=None):
     """Grow under the fewest counts, recording each round's chain-birth classes: offshoots of demand 1 whose parent is not itself
     a chain offshoot, grouped by their demand-1 partner (a sibling pair of births is one class)."""
     births = []
@@ -134,6 +135,9 @@ def grow_tracked(stars, rounds=30, maxj=6000):
             break
         if len(P.bits_of) > maxj:
             out = 'big'
+            break
+        if deadline is not None and time.time() > deadline:
+            out = 'timed'
             break
     return P, out, births
 

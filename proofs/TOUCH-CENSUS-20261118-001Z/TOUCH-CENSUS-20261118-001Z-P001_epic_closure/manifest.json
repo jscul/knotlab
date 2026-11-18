@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "TOUCH-CENSUS-20261118-001Z-P001",
+ "canonical_id": "TOUCH-CENSUS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "TOUCH-CENSUS-20261118-001Z",
+ "proof": "TOUCH-CENSUS-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: which dimensions the cheapest growth gives across arrangements of touching knots",
+ "status": "Proved",
+ "claim": "Ledger closing TOUCH-CENSUS-20261118-001: ticket A (Lemmas 1 and 2) and ticket B (frozen census, 3 of 8 held; two shards pending). Referee pending. No new claim.",
+ "dependencies": [
+  "TOUCH-CENSUS-20261118-001A",
+  "TOUCH-CENSUS-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "TOUCH-CENSUS-20261118-001",
+  "epic_path": [
+   "TOUCH-CENSUS-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/TOUCH-CENSUS-20261118-001B/TOUCH-CENSUS-20261118-001B-E001_arrangements/contract.json": "cb04028a3e9d8e7a540fbcc8fca243b32cca6323394dc840c79dfa6bcefb8693",
+  "artifacts/TOUCH-CENSUS-20261118-001B/TOUCH-CENSUS-20261118-001B-E001_arrangements/results.json": "8a05b1a2ab63f7abca46f1afb1e7411eccb57706c3b6a98554c5090a47ea69bb",
+  "proofs/TOUCH-CENSUS-20261118-001A/TOUCH-CENSUS-20261118-001A-P001_chains/manifest.json": "dc59411905135edd9bbf62c4fe860a69c9cde90c8b14c739dea680c6da0fd28f",
+  "proofs/TOUCH-CENSUS-20261118-001A/TOUCH-CENSUS-20261118-001A-P001_chains/result.json": "549657d11748f0a40305e2a4cce9069072d0b15d998005075a2c7b420d793706"
+ },
+ "paths": {
+  "manifest": "proofs/TOUCH-CENSUS-20261118-001Z/TOUCH-CENSUS-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/TOUCH-CENSUS-20261118-001Z/TOUCH-CENSUS-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/TOUCH-CENSUS-20261118-001Z/TOUCH-CENSUS-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/TOUCH-CENSUS-20261118-001Z/TOUCH-CENSUS-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/TOUCH-CENSUS-20261118-001Z/TOUCH-CENSUS-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/TOUCH-CENSUS-20261118-001Z/TOUCH-CENSUS-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18; refereed R1 (fresh code), confirmed with fixes.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

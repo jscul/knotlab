@@ -19,7 +19,7 @@ def nk(a):
     return len(a['key'][0])
 
 
-growing = [a for a in A if a['outcome'] in ('alive', 'big')]
+growing = [a for a in A if a['outcome'] in ('alive', 'big', 'timed')]
 settled = [a for a in growing if a['dim'] is not None]
 unsettled = [a for a in growing if a['dim'] is None]
 
@@ -71,7 +71,7 @@ notes['P4'] = {'stalls': len(stalls), 'rounds': dict(Counter(a['stall_round'] fo
 # P5: stall share rises with the number of knots and exceeds 40% at five knots; among settled growing, the share of dimension 2
 # rises and that of dimension 1 falls from two to five knots
 share_stall = {n: sum(1 for a in v if a['outcome'] == 'stall') / len(v) for n, v in by_n.items()}
-sg = {n: [a for a in v if a['outcome'] in ('alive', 'big') and a['dim'] is not None] for n, v in by_n.items()}
+sg = {n: [a for a in v if a['outcome'] in ('alive', 'big', 'timed') and a['dim'] is not None] for n, v in by_n.items()}
 s2 = {n: (sum(1 for a in v if a['dim'] == 2) / len(v) if v else None) for n, v in sg.items()}
 s1 = {n: (sum(1 for a in v if a['dim'] == 1) / len(v) if v else None) for n, v in sg.items()}
 ns = [2, 3, 4, 5]

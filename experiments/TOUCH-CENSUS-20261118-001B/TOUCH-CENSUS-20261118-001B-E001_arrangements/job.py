@@ -35,12 +35,15 @@ def cases():
 
 
 def one(key):
+    import time
     P, o, births = A.grow_tracked(A.stars_of(key))
     d = A.measured_dimension(P, o)
     rerun = False
     if d is None and o in ('alive', 'big'):
-        P, o, births = A.grow_tracked(A.stars_of(key), rounds=45, maxj=25000)
-        d = A.measured_dimension(P, o)
+        # amendment (2026-11-18 21:06 UTC): the rerun stops at 12,000 junctions, 40 rounds or 600 seconds
+        P2, o2, b2 = A.grow_tracked(A.stars_of(key), rounds=40, maxj=12000, deadline=time.time() + 600)
+        d2 = A.measured_dimension(P2, o2 if o2 != 'timed' else 'big')
+        P, o, births, d = P2, o2, b2, d2
         rerun = True
     classes = [c for b in births for c in b]
     birth_rounds = [r + 1 for r, b in enumerate(births) if b]

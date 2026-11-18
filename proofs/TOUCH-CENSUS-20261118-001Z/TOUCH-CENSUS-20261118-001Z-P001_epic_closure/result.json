@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "TOUCH-CENSUS-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "TOUCH-CENSUS-20261118-001Z",
+ "proof": "TOUCH-CENSUS-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing TOUCH-CENSUS-20261118-001: ticket A (Lemmas 1 and 2) and ticket B (frozen census, 3 of 8 held; two shards pending). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/TOUCH-CENSUS-20261118-001B/TOUCH-CENSUS-20261118-001B-E001_arrangements/contract.json": "Frozen",
+   "artifacts/TOUCH-CENSUS-20261118-001B/TOUCH-CENSUS-20261118-001B-E001_arrangements/results.json": "run output",
+   "proofs/TOUCH-CENSUS-20261118-001A/TOUCH-CENSUS-20261118-001A-P001_chains/manifest.json": "Proved",
+   "proofs/TOUCH-CENSUS-20261118-001A/TOUCH-CENSUS-20261118-001A-P001_chains/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

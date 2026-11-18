@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "experiment_id": "FREE-READ-20261118-001B-E001",
+ "ticket": "FREE-READ-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Is bond distance steps apart plus one on every knot tree of parity and not-all-equal knots (one size past), how does it compare with the correlation readings on rings and mixed cycles, and does a clause chain lack bonds?",
+ "definitions": {
+  "bond": "S with non-full projection and every (|S|-1)-subset projection full",
+  "bond distance": "least bond holding both, minus one"
+ },
+ "public_inputs": {
+  "code": "freelib.py (sha256 522e7cb43fd165a6384d599bb49a84cabd2b347cbd83683ae242085dcaf7e660), job.py (sha256 72e6d34044554ed18814f4f4f4fde762b21e4ad3455215f1034bb40848d63caa), merge.py (sha256 aa40c7a37d441b8a1e29d1741f2b1e0174f411d6c9bc6fde3405dd69d5db49c7), checks.py (sha256 079175077c700bc9b03c6d0ae47bd286a45e974ba2484a92eeb0e794d86402bc)",
+  "reused": "TREE-STEPS treelib.py and CUMULANT-DIST cumlib.py, unchanged",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "P1-P6 of research/FREE-READ-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py gates; the clause-chain negative control (P6).",
+ "predictions": {
+  "P1": "six-knot trees: bond - 1 = steps",
+  "P2": "random seven-knot trees: same",
+  "P3": "mixed cycles: bond - 1 = 1, delta_K = k, delta <= 1.1",
+  "P4": "rings: parity bond-1 = delta; NAE bond-1 = steps; alternating <= steps",
+  "P4b": "alternating rings: = steps",
+  "P5": "NAE rings: tau differs from bond-1 by > 0.01 somewhere",
+  "P6": "clause chains: no bond holds the ends"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; proof; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py (FREE-READ-B1)"
+}

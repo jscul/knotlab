@@ -3,6 +3,17 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the free-count study's headline scoped
+
+- The study that left the number of fresh distinctions per join to a rule (`FRESH-COUNT-20261118-001`,
+  [decision note](research/FRESH-COUNT-20261118-001/fresh_count.md)) was refereed with fresh code and confirmed with fixes, no Block.
+  Its theorems replay one size past.
+- **Narrowed (wording).** "A growth rule that reads only bond distances cannot settle its own dimension" is proved for the uniform,
+  capped and fewest rules under the complete-round joining rule, with the structure theorem for count rules in general; "it can only
+  copy the number from its start" is a reading. Reading only bond distances is proved only for the uniform count.
+- **Clarified.** One count is forced to the first knot's size for a lone first knot, and in general to the start's open
+  distinctions; all 2,000 blind runs stall by round 14.
+
 ## 18 November 2026: the far-pair sign is SEED's copy step on its own growth, not as a theorem
 
 - The last study on the two-order line asked whether the referee's sign decides SEED's copy step: the fill's far end pair separated by

@@ -523,14 +523,16 @@ is at most two. Whether it can grow without limit is open
 ([decision note](../research/RIM-EXCESS-20261118-001/rim_excess.md)).
 Can a growth read its own dimension from bond distances, if nobody tells it
 how many fresh distinctions each new parity knot takes
-(`FRESH-COUNT-20261118-001`, proofs and frozen census, referee pending)? No:
-it can only copy the number from its start. Whatever the counts, the cubic
+(`FRESH-COUNT-20261118-001`, proofs and frozen census, refereed)? Not by any
+of the count rules tested, under the cubic study's joining rule; that a rule
+can only copy the number from its start is a reading (its referee). Whatever the counts, the cubic
 study's joining rule builds one kind of object, the down-closed sets of the
 order in which its one-parent junctions descend (the literature's Birkhoff
 lattice of ideals), so a count rule only chooses where to start a new
 one-parent junction; the rule completes the rest and starts no chain of them
 by itself (proved). If every join must take the same number and the growth must
-never stall, the number has to be the size of the first knot, and then balls
+never stall, the number has to be the size of a lone first knot (in general
+its open distinctions), and then balls
 grow as r to that power (proved): from the smallest knot, three. The stall at
 four that seemed to pick three is the old rule's cap of three on how many
 junctions one join may take. The fewest counts close one knot into the 2^a

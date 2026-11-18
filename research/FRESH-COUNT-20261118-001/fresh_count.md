@@ -1,7 +1,8 @@
 # Can a growth rule read its own dimension from distances?
 
 Epic `FRESH-COUNT-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead. Goals G2 and G1; tests A97; the parity
-counterpart of A101. **Referee pending.**
+counterpart of A101. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18 November
+(see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `38de2f3dd` at 18:58 UTC. The census ran from 19:01
@@ -13,15 +14,20 @@ counterpart of A101. **Referee pending.**
 ## The answer
 
 **In the owner's terms.**
-- **No rule here reads its dimension from the distances unless its start or its own text supplies the number. The joining rule
-  adds nothing of its own: every chain of junctions with one parent starts from a fresh distinction that no join of the next round
-  asks for, and the dimension comes from those chains.**
+- **None of the count rules tested here settles its dimension by itself: the uniform count is forced to the start's number, the
+  capped count to three, and the fewest counts close the first knot or keep what they are handed (proved, under the complete-round
+  joining rule, A104).** For count rules in general, what is proved is the structure: the joining rule adds nothing of its own,
+  every chain of junctions with one parent starts from a fresh distinction that no join of the next round asks for, and the
+  dimension comes from those chains. That a rule "can only copy the number from its start or its own text" is a reading of that
+  structure, not a theorem. Reading only bond distances is proved only for the uniform count (T6); the other rules read their
+  demands from the pattern of junctions (narrowed after the referee).
 - **What the growth is.** Growing by the cubic study's joining rule, whatever the counts, always builds the same kind of object: the
   pattern of all "down-closed" sets of the junctions that have one parent, ordered by descent (proved; the literature's distributive
   lattice of ideals, Birkhoff). So a count rule has exactly one freedom: where to start a new junction with one parent (an
   **offshoot**). Each fresh distinction a junction takes beyond what the next round's joins ask for (its **demand**) becomes an
   offshoot. The policy completes everything else.
-- **One count for every join is forced to the first knot's size.** If every join must take the same number of fresh distinctions
+- **One count for every join is forced to the first knot's size** (for a lone first knot; in general, to the start's number of
+  open distinctions, `FIRST-KNOT-20261118-001`). If every join must take the same number of fresh distinctions
   and the growth must never stall, there is exactly one choice: the number of distinctions in the first knot (proved). Any other
   count stalls within four rounds: at round 2 if it is two or more short, at round 4 if it is one short, at round 3 if it is more.
   With the right count the growth is the a-fold counting pattern (the literature's orthant ℕ^a) and balls grow as r^a (proved for
@@ -35,7 +41,8 @@ counterpart of A101. **Referee pending.**
   knot and no allowed state lost, closes one knot on a distinctions into the 2^a pattern (the literature's a-cube: eight junctions
   of three distinctions each from the smallest knot) and stops; its last junction adds nothing new (proved). From any other start
   the fewest counts keep exactly the chains of offshoots they are handed, which can be any number (proved).
-- **Typical counts.** Counts chosen blindly almost always stall (1,997 of 2,000 runs by round 10; the three survivors are at the smallest knot with counts of one or two). Counts that cover the demand and add a surplus
+- **Typical counts.** Counts chosen blindly almost always stall (1,997 of 2,000 runs by round 10, and all 2,000 by round 14: the three round-10 survivors, at the smallest knot with counts of one or
+  two, stall at rounds 11, 12 and 13, the referee's runs). Counts that cover the demand and add a surplus
   distinction at random never stall, and either close early or grow offshoots without limit, so no dimension is
   typical (1,600 runs: from the 2^3 pattern closing at round 3 in 141 of 200 runs at the lowest rate, to more than 300 new offshoots a round at the highest).
 
@@ -47,7 +54,7 @@ counterpart of A101. **Referee pending.**
 | fewest, from any hand-over | keeps the chains it is handed with demand 1, any number | proved (T4); replayed P7 |
 | the demand plus one at every offshoot; inherit a parent's count | the a-fold counting pattern | proved (T1, T2); replayed P3 |
 | as many fresh as old taken | stalls | computed P3 |
-| blind, uniform on 1..K | stalls (1,997 of 2,000 by round 10) | computed P5 |
+| blind, uniform on 1..K | stalls (all 2,000 by round 14, the referee) | computed P5 |
 | the demand plus a random surplus | never stalls; closes or grows without a fixed number | proved (T1) and computed P6 |
 
 ## Predictions and verdicts
@@ -172,6 +179,19 @@ distinction with one value in every state at an implied two-parent junction (the
 "breadth w gives t^w" to an upper bound; and gave the literature and the words. Its pointer to a "section 9.6" of the public text
 saying four fresh distinctions stall at the fourth round was not found. It saw no distance-only criterion that picks a number.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+fixes, no Block. T1 to T4, T6 and Lemma 0 check by hand; T5 carried over from the cubic study. Fresh code one size past agrees: one
+count at a = 3 to 9 (126 cells), fewest at a = 3 to 8, 300 hand-overs, crossed starts at a = 3 to 7. Folded in the same day, each item
+logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (wording).** "Cannot settle its own dimension" is proved only under the complete-round joining rule (A104), and only
+   for the uniform, capped and fewest rules, plus T1's structure for count rules in general; "it can only copy the number from its
+   start or its own text" is a reading of T1; "distance-only" is proved only for the uniform count (T6). The headline is scoped so.
+2. **Not a block.** "Forced to the first knot's size" has no exception in its scope (a lone seed of three or more places, uncapped,
+   one count); in general the count is forced to the start's number of open distinctions.
+3. **Not a block.** The blind row: all 2,000 runs stall by round 14.
+
 ## Position
 
 | Scope | Verdict | Why |
@@ -205,7 +225,7 @@ The attempt leaves open why a growth should begin with the smallest knot (A105) 
 - The companion question whether the full table determines the junctions under mixed counts is
   `VARIABLE-OUTPUT-READER-20261118-001` (planned, in another scope), not a row here.
 
-**Corrections:** none. Nothing published is contradicted: the cubic study's referee wrote that "the three is put in by the law";
+**Corrections:** none at the close; after the referee, one narrowing of wording and two clarifications (see Referee). At the close, nothing published was contradicted: the cubic study's referee wrote that "the three is put in by the law";
 this study adds that with one count the law has no other choice, given a three-place first knot.
 
 **Goals:** G2 checkpoint (capability gained and obstruction learned: three from one count and a three-place first knot, no number

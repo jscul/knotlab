@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "BOND-METRIC-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "BOND-METRIC-20261118-001Z",
+ "proof": "BOND-METRIC-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing BOND-METRIC-20261118-001: ticket A (T1-T5, the three-place theorem) and ticket B (frozen census, 5 of 7 held, P3b and P6 missed). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/BOND-METRIC-20261118-001B/BOND-METRIC-20261118-001B-E001_triangles/contract.json": "Frozen",
+   "artifacts/BOND-METRIC-20261118-001B/BOND-METRIC-20261118-001B-E001_triangles/results.json": "run output",
+   "proofs/BOND-METRIC-20261118-001A/BOND-METRIC-20261118-001A-P001_metric/manifest.json": "Proved",
+   "proofs/BOND-METRIC-20261118-001A/BOND-METRIC-20261118-001A-P001_metric/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

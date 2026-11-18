@@ -1,0 +1,63 @@
+{
+ "schema_version": 3,
+ "artifact_id": "BOND-METRIC-20261118-001A-P001",
+ "canonical_id": "BOND-METRIC-20261118-001A-P001",
+ "proof": "BOND-METRIC-20261118-001A-P001",
+ "ticket": "BOND-METRIC-20261118-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Where bond distance is a metric: what is proved",
+ "claim": "T1: where the bonds of a base satisfy circuit elimination (every parity base), bond distance and bond distance minus one satisfy the triangle inequality (matroid connectivity inside the union of two circuits; b - 1 a pseudometric). T2-T5: bond distance fails it on copies of each of the eight other three-place languages passing K1-K3 (not-all-equal, betweenness, the clause and its twist, R6 and its twist on two knots on four distinctions; R5 and its twist on eight distinctions and six knots). Theorem: among the 34 three-place laws passing K1-K3 (nine languages), bond distance is a metric on every base of copies of one law exactly for parity.",
+ "standard_statement": "Matroid circuit connectivity (Whitney; Oxley Prop. 4.1.2); minimal non-shattered sets; Horn closure systems (R5).",
+ "prior_work": "BOND-CHAIN-20261108-001 (chains add nothing on parity laws, A39); KNOT-CIRCUITS-20261020-001 (composes like cycles exactly when affine); FREE-READ-20261118-001 (trees; its referee's parity proof).",
+ "dependencies": [],
+ "completion_gate": "Ticket B's gates and frozen census; the referee reviews the proofs.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "proofs written before the run and checked by the advisor; referee pending",
+  "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
+  "novelty": "classical mechanism (matroid connectivity); the triangle-inequality criterion over the 34 three-place laws not known to the advisor (no literature search run)"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "bond_distance_metric_exactly_for_parity_among_three_place_laws_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/BOND-METRIC-20261118-001A/BOND-METRIC-20261118-001A-P001_metric/manifest.json",
+  "identity": "proofs/BOND-METRIC-20261118-001A/BOND-METRIC-20261118-001A-P001_metric/identity.json",
+  "proof": "proofs/BOND-METRIC-20261118-001A/BOND-METRIC-20261118-001A-P001_metric/proof.md"
+ },
+ "attained_result": "T1-T5 and the theorem proved; census of smallest failures in ticket B."
+}

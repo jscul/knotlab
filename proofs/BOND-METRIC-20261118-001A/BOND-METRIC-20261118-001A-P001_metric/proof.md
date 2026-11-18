@@ -109,8 +109,12 @@ bonds.
 ## What follows, and what is computed
 
 - Parity: a metric on every base (T1). Not-all-equal and the clause: not a metric, on four distinctions (T2, T3).
-- Ticket B measures the smallest failing base of each language (P3: two knots on four distinctions for six of them; P3b: none
-  within six distinctions and four knots for the two R5 languages).
+- Ticket B's census (frozen): no failure of b or b − 1 on 439,652 parity bases; six languages fail on two knots on four
+  distinctions; R5 has no failure on at most seven distinctions and four knots, but its twist fails on four distinctions with three
+  knots (P3b missed), through two bonds of two that are one-way ties: {0, 1} forbids both being 1, {0, 3} forbids 0 = 1 with 3 = 0,
+  and nothing then ties 1 to 3. One-way ties, unlike parity's equalities, do not compose.
+- A failing pair need not be correlated (P6 missed): on the not-all-equal knots {0, 1, 2}, {0, 1, 3}, {0, 4, 5}, {2, 4, 5}, the pair
+  3, 4 takes its four joint values equally often, though each is one knot from 0.
 - On knot trees of parity, not-all-equal and betweenness knots, b = steps apart + 1, so b is a metric there
   (`FREE-READ-20261118-001A`).
 - Open: whether "metric on every base" and "composes like cycles" coincide for every law.

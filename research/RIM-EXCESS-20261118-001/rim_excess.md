@@ -10,6 +10,8 @@ grows without limit. Goal G1; tests A39 and A97. **Referee pending.**
 - Proofs: [proof.md](../../proofs/RIM-EXCESS-20261118-001A/RIM-EXCESS-20261118-001A-P001_polygons/proof.md).
 - Code: [polylib.py, job.py, merge.py, checks.py](../../experiments/RIM-EXCESS-20261118-001B/RIM-EXCESS-20261118-001B-E001_excess/).
 - Results: [results.json](../../artifacts/RIM-EXCESS-20261118-001B/RIM-EXCESS-20261118-001B-E001_excess/results.json).
+- Line summary: [line_summary.md](line_summary.md), the bond-distance line from `BOND-METRIC-20261118-001` to this study, taken stock
+  of for the owner (18 November).
 
 ## The answer
 

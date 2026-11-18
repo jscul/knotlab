@@ -2686,6 +2686,11 @@ evidence: results and their status come from the records each entry links.
   not on large not-all-equal trees with a hub (corrected the same day: proved counterexample of 65 knots), bond distance minus
   one on every parity base (proved), and the count's τ on a chain grid. It ignores which value is called 1, so it reads a
   split line as a ring and cannot read the orders a betweenness growth builds (A103).
+  `TREE-STEPS-20261118-001` ([decision note](../research/TREE-STEPS-20261118-001/tree_steps.md); referee pending) repaired it:
+  counting only irreducible sets (bound, with no smaller bound set holding the pair: the knot test's K2 in cumulant form) removes
+  the hub shortcut (proved), keeps τ on correlated pairs and bond distance minus one on parity bases (proved), and is steps apart
+  on every knot tree except one mixed case, computed there (every six-knot tree, 94,848 pairs). One distance for both laws, read
+  from the states, on knot trees.
 - **History.**
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.
   - 2026-11-18 · `ALIGNED-NEXT-JOIN-20261117-001` proved the exact next joins readable on every complete aligned round, with a finite check of the effect of the original eight.

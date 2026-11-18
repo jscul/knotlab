@@ -438,6 +438,16 @@ not read is which value is called 1: flipping values turns a split line into a
 ring, its two ends as near as neighbours, so the orders a betweenness growth
 builds need the values (assumption A103)
 ([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md)).
+Can that be mended (`TREE-STEPS-20261118-001`, proofs and frozen computation,
+referee pending)? Yes, with the knot test's own rule. Count only sets that are
+bound and contain no smaller bound set holding the pair, which is K2 ("forget
+any one and the rest is free") said of cumulants. A hub set always contains a
+smaller bound set, so it no longer counts. The mended distance is the count's τ
+wherever two distinctions correlate, bond distance minus one on parity bases,
+and steps apart on every not-all-equal tree, every parity tree and every mixed
+tree whose path has no parity knot (proved), and on every tree of six knots
+under every mix of laws (computed). One step per knot, under either law
+([decision note](../research/TREE-STEPS-20261118-001/tree_steps.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

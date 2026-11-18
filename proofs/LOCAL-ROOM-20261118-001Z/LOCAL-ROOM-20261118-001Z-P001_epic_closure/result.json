@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "LOCAL-ROOM-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "LOCAL-ROOM-20261118-001Z",
+ "proof": "LOCAL-ROOM-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing LOCAL-ROOM-20261118-001: ticket A (reach one: no free fill; reach two or more: the cube at every doubling; no reach limit separates a grid's fill from a line's) and ticket B (frozen computation, 2 of 3 held): reach limits read from the states cannot hold two orders and fill them; under reach one two orders formed early persist and both grow, unfilled; the class law (one remembered class per split) grows full grids with two orders forever. Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/LOCAL-ROOM-20261118-001B/LOCAL-ROOM-20261118-001B-E001_local/contract.json": "Frozen",
+   "artifacts/LOCAL-ROOM-20261118-001B/LOCAL-ROOM-20261118-001B-E001_local/results.json": "run output",
+   "proofs/LOCAL-ROOM-20261118-001A/LOCAL-ROOM-20261118-001A-P001_reach/manifest.json": "Proved",
+   "proofs/LOCAL-ROOM-20261118-001A/LOCAL-ROOM-20261118-001A-P001_reach/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

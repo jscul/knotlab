@@ -536,6 +536,19 @@ four that seemed to pick three is the old rule's cap of three on how many
 junctions one join may take. The fewest counts close one knot into the 2^a
 pattern (the literature's a-cube: eight junctions from a knot of three) and stop
 ([decision note](../research/FRESH-COUNT-20261118-001/fresh_count.md)).
+Does anything in the law prefer the smallest first knot, then
+(`FIRST-KNOT-20261118-001`, proofs and frozen census, referee pending)? No.
+The joining rule never sees a knot's size, only how many of its distinctions
+are still open, so a three-place and a four-place first knot, apart or
+touching at one distinction, cannot grow under any single count, and neither
+wins (proved). The three of a lone knot is the foundation's first emergence,
+two loops joined by one contact, not the law's. Touching lowers the dimension:
+two touching knots of any sizes grow two-dimensionally under the fewest
+counts, and m knots of m + 1 places, each touching every other, grow
+m-dimensionally, so the number comes from how the first knots are arranged.
+And the same relation grows differently as different knots: one four-place
+knot or two three-place ones through a hidden distinction
+([decision note](../research/FIRST-KNOT-20261118-001/first_knot.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

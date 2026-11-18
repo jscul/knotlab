@@ -2862,6 +2862,7 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `MID-RULE-20261118-001` built on it (the two-middle and one-end rules, knot-local and free); status unchanged.
   - 2026-11-18 · `KEEP-READ-20261118-001` built on it (SEED with knot-local moves, every move's local pictures); status unchanged.
   - 2026-11-18 · `KNOT-SWITCH-20261118-001` built on it (KF3, NN, NN2 and SEED with knot-local moves, every knot recorded);
     status unchanged.
@@ -2923,6 +2924,11 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `MID-RULE-20261118-001` ([decision note](../research/MID-RULE-20261118-001/mid_rule.md); referee pending)
+    proved that a fill makes a new crossing only through two different end knots, so after one free fill a rule taking only
+    fills certified with at most one end knot keeps two orders forever, told no number and reading only the fill's knots. It only
+    conserves: full grids need the first fill to span the line, and with knots on co-knotted pairs it stops after one fill.
+    Status unchanged.
   - 2026-11-18 · `KEEP-READ-20261118-001` ([decision note](../research/KEEP-READ-20261118-001/keep_read.md); refereed) found
     that keeping two orders after the switch is not a reading of a move's own knots or of the betweenness among its distinctions:
     those leave a fifth of the keeping fills looking like raising ones (one step out could not be tested on bases of 24). The one free step is read locally, the keeping

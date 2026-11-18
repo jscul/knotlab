@@ -3,7 +3,8 @@
 Epic `FREE-READ-20261118-001`, 18 November 2026, by Claude. The coordinator's go-ahead after `TREE-STEPS-20261118-001`'s referee:
 on the mixed cycle the referee found, look for a distance that reads freedom (the knot test's K2) rather than zero correlation,
 agreeing with bond distance there and keeping what the irreducible-set distance δ_K gained on trees (hub-free, steps apart), or prove
-none exists. Goals G1 and G16; tests A97; sub-goal B200. **Referee pending.**
+none exists. Goals G1 and G16; tests A97; sub-goal B200. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no
+Block, folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `8cec5373d` at 08:19:50 UTC. The frozen run
@@ -36,10 +37,12 @@ none exists. Goals G1 and G16; tests A97; sub-goal B200. **Referee pending.**
 - **Where freedom and correlation part.** Bond distance and the correlation readings (τ, the cumulant distance δ, δ_K) agree on trees.
   On cycles of knots they part in two ways. On a ring of not-all-equal knots bond distance is still steps apart plus one, while τ
   shifts by fractions with the ring's length (the correlation feels the ring close; freedom does not) and τ fails the triangle
-  inequality there, while bond distance satisfies it on every ring and cycle checked (post hoc). On a ring of three or four parity
+  inequality there, while bond distance satisfies it on every ring and cycle checked (post hoc; it fails on other bases, see
+  Referee). On a ring of three or four parity
   knots the ring's own distinctions together form a parity knot, so bond distance falls below steps apart plus one, and the
-  correlation readings agree with it. And on a split line or split grid (cuts and their complements) every three distinctions form
-  a knot, so bond distance is two for every pair, flat, while τ grades them (known from `COUNT-BALLS-20261118-001`; checked again post
+  correlation readings agree with it. And on a split line or split grid (cuts and their complements) every pair lies in a knot of
+  three distinctions, so bond distance is two for every pair, flat, while τ grades them (on the split line every three distinctions
+  form a knot; on the 3 × 3 grid 16 of 84 triples are free; narrowed after the referee) (known from `COUNT-BALLS-20261118-001`; checked again post
   hoc). So bond distance answers the go-ahead, but not the whole of B200: it does not read split grids.
 
 **Post hoc (after the read-out; no prediction):** two hybrids were tried, and each fails one side, on the record.
@@ -84,8 +87,8 @@ cannot mend hubs; bond distance mends both but is flat on split grids.
 
 B200 asked for one distance read from the states for parity and not-all-equal bases alike. On trees the answer is the program's own
 bond distance, proved: one step per knot under either law and any mixture, hub-free, with the cumulant distances adding nothing
-there. On cycles freedom and correlation part, and the split grid is where they part most: every triple there is a knot, so freedom
-alone is flat, while correlation grades the grid. A97 (distance is the only form of information) gains a proved distance on knot
+there. On cycles freedom and correlation part, and the split grid is where they part most: every pair there lies in a knot of three, so
+freedom alone is flat, while correlation grades the grid. A97 (distance is the only form of information) gains a proved distance on knot
 trees that needs no measure at all, and a located gap: the split grid's grading lives in correlation, not in which values occur.
 
 ## Known results, and what this adds
@@ -95,14 +98,16 @@ families); the splitting lemma is the acyclic join-tree decomposition (Beeri, Fa
 parity bases bonds are matroid circuits. What this adds: the statement that the least non-shattered set holding two variables of a
 tree of three-place constraints passing K2 has size at least steps apart plus two, with equality for parity, not-all-equal and
 betweenness in any mixture and not for the clause "not all ones"; the advisor knows no published statement of it (no literature
-search was run). In the
+search was run), and is likely folklore: a short consequence of the lossless join of an acyclic scheme plus a
+forcing argument (the referee). In the
 program it closes the bond-distance comparison that `CUMULANT-DIST-20261118-001` and `TREE-STEPS-20261118-001` got wrong (corrected
 in `01941028d`).
 
 ## Limitations
 
 - The theorem is for trees. On cycles everything is computed, on rings of up to six knots and four mixed cycles.
-- The triangle inequality for bond distance is checked post hoc on 16 small bases, not proved.
+- The triangle inequality for bond distance holds on knot trees and on parity bases (the referee's proof) and on the rings and
+  mixed cycles checked; on other bases it fails where some pair is held by no bond (see Referee).
 - The hybrids δ_F and δ_KB were tried after the read-out; their failures are an argument (δ_F's hub) and a computation (δ_KB).
 - Bond distance's search is exponential in the set size.
 
@@ -123,13 +128,33 @@ names claude-fable-5-2), asked before the freeze. It confirmed both halves of th
 theorem is not law-independent (the clause counterexample, P6), confirmed P3 and P4, strengthened P4 to equality on alternating rings
 (P4b), asked for a tolerance in P5, and named the literature. The post hoc hybrids were not put to it.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+fixes, no Block. The tree theorem holds: U, Lo (with L0 to L2), C and M checked by hand, and its own code gives bond distance = steps
+apart + 1 on 3,360 trees (222,768 pairs, none off), every five-knot tree under every parity, not-all-equal and betweenness
+assignment among them. Folded in the same day, each item logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (the triangle inequality).** The referee proved it for bond distance on every parity base and found it failing for
+   bond distance minus one wherever bonds of two exist (48 of 400 random bases); its report says it holds for bond distance on 400
+   random bases that are not trees. That count left out triples with a pair that no bond holds. Read as infinitely far, such pairs
+   break it on 106 of the same 400 bases (1,524 triples; recounted with the referee's code), already on two not-all-equal knots
+   sharing two distinctions. So the inequality is claimed for bond distance only on knot trees and parity bases; where it fails is
+   `BOND-METRIC-20261118-001`'s question.
+2. **Not a block (split grids).** "Every three distinctions form a knot" holds on the split line only; on the grids every pair lies in
+   a knot of three, which is what makes bond distance flat.
+3. **Not a block (U's mixture).** The forcing works knot by knot for each of the six laws; "betweenness is a switch of not-all-equal"
+   cannot serve two knots that share a distinction as the middle of one and an end of the other.
+4. Lo now names where it uses connectedness (the knots inside L_j and R_j form subtrees).
+5. The referee confirms the post hoc claims otherwise (the hub set is free for every number of copies, so freedom gating keeps the
+   shortcut; δ_KB is off steps apart on 0, 2, 5 and 9 mixed-cycle pairs at k = 2 to 5) and this thread's own Narrowing `01941028d`.
+
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: the distance that reads freedom | **Status:** Successful (referee pending) | Bond distance = steps apart + 1 on every knot tree of the three laws (proved), hub-free, right on the mixed cycle; 7 of 7 held |
+| This attempt: the distance that reads freedom | **Status:** Successful (refereed) | Bond distance = steps apart + 1 on every knot tree of the three laws (proved), hub-free, right on the mixed cycle; 7 of 7 held |
 | Local direction: one distance for both laws (B200) | Promising | Answered on trees; on split grids freedom is flat and only correlation grades, and the correlation readings either shortcut at hubs (δ, δ_F) or misread mixed cycles (δ_K, δ_KB) |
-| Broader exploration: state-read distances | Known alternatives | Shattering and acyclic joins are classical; the tree statement is the program's |
+| Broader exploration: state-read distances | Known alternatives | Shattering and acyclic joins are classical; the tree statement is likely folklore, not found published |
 | Long-term goal: G1 and G16 | G1 capability gained; G16 capability gained | G1: a proved distance on knot trees from which values occur alone. G16: freedom and correlation located as two readings that agree on trees and part on cycles |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
@@ -150,6 +175,8 @@ and correlation located as the two state readings, agreeing on trees, parting on
 **Assumptions:** A97 gains this study; no new entry.
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its split-grid wording was narrowed after the referee (see Referee).*
 
 **Outcome:** the distance that reads freedom is bond distance itself, the knot test applied to sets of distinctions. On every tree of
 knots, parity, not-all-equal or betweenness in any mixture, it is exactly steps apart plus one (proved), so hubs cannot fool it, and

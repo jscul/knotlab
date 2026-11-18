@@ -1,7 +1,8 @@
 # Bond distance on knot trees: what is proved
 
 Ticket `FREE-READ-20261118-001A`, 18 November 2026. Checked by ticket B's gates and frozen run
-(`experiments/FREE-READ-20261118-001B/FREE-READ-20261118-001B-E001_bonds/`). Referee pending. The proofs are the thread's; the advisor
+(`experiments/FREE-READ-20261118-001B/FREE-READ-20261118-001B-E001_bonds/`). Refereed: report R1, confirmed with fixes, no Block
+(`research/FREE-READ-20261118-001/referee-R1/report.md`), folded in on 18 November. The proofs are the thread's; the advisor
 (claude-fable-5-2) checked them before the freeze, made three lemmas explicit (L1, L2 and the meaning of "third branch") and gave
 the clause counterexample (C).
 
@@ -48,7 +49,11 @@ Let S = {x, y, p₁, …, p_k}, of size k + 2.
 *S is constrained.* Fix x and choose p₁, …, p_k in turn. Once v_{j−1} is forced, a not-all-equal K_j with p_j equal to v_{j−1}
 forces v_j to the other value, and a parity K_j forces v_j = v_{j−1} + p_j + c for every p_j. So with these choices every v_j is
 forced, y among them, and the joint value on S with y flipped is not allowed by the chain; by L2 it is not allowed by the base.
-Betweenness is a switch of not-all-equal, and switching keeps freedom, so the same holds for it and for any mixture of the three.
+A betweenness knot forbids a pattern and its complement, as not-all-equal does: given v_{j−1}, choose p_j to agree with the
+forbidden pattern, or with its complement, at v_{j−1}'s place and at its own, and v_j is forced. So the forcing works knot by knot
+for each of the six laws (parity with either constant, and the four laws that forbid a pattern and its complement), and any mixture
+holds directly. *Corrected after the referee:* an earlier version said "betweenness is a switch of not-all-equal, so the same holds
+for any mixture", but one switch may not serve two knots that share a distinction as the middle of one and an end of the other.
 
 *Every set of k + 1 is free.* Drop x: given any values on p₁, …, p_k and y, choose v_{k−1}, …, v₀ backward, each allowed by L0 (two
 of K_j's distinctions are set, choose the third). Drop y: forward from x in the same way. Drop p_j: choose forward from x to v_{j−1}
@@ -57,8 +62,9 @@ base. So S is a bond, and b(x, y) ≤ (k + 2) − 1 = k + 1. ∎
 
 ## Lo. Lower bound: b(x, y) ≥ s(x, y) + 1 for any three-place knots passing K2
 
-Let S be a bond holding x and y, and suppose S misses the third branch T_j of some path knot K_j. Given allowed states of the
-knots inside L_j and of those inside R_j, the pair (v_{j−1}, v_j) has an allowed p_j by L0, and T_j's knots extend it by L1. So the
+Let S be a bond holding x and y, and suppose S misses the third branch T_j of some path knot K_j. The knots inside L_j and inside
+R_j form subtrees, so L1 applies to each side as a connected starting set (the two places the proof uses connectedness, named after
+the referee). Given allowed states of the knots inside L_j and of those inside R_j, the pair (v_{j−1}, v_j) has an allowed p_j by L0, and T_j's knots extend it by L1. So the
 allowed states restricted to S are every pairing of an allowed value on S ∩ L_j with an allowed value on S ∩ R_j: the projection
 onto S is the product of the projections onto S ∩ L_j and S ∩ R_j. S is constrained, so one factor is not full, and that part is a
 constrained proper subset of S (x is not in R_j and y is not in L_j). But every proper subset of a bond is free (K2). So S meets
@@ -100,3 +106,8 @@ are the minimal supports of such sums, the circuits of the matroid of the allowe
   parity bond (the sum of all its knots).
 - Post hoc (not predicted): b satisfies the triangle inequality on every pair of the 16 rings and mixed cycles; τ, which δ and δ_K
   equal there, fails it on every not-all-equal ring and δ_K on every mixed cycle.
+- After the referee: b satisfies the triangle inequality on every parity base (the referee's proof: two circuits sharing y have a
+  connected union, so a circuit through x and z lies inside C₁ ∪ C₂) and on every knot tree (by the theorem). b − 1 fails it
+  wherever two distinctions form a bond of two (48 of the referee's 400 random bases). And b itself fails it off these bases once a
+  pair that no bond holds is read as infinitely far: on 106 of the referee's 400 random bases (1,524 triples), already on two
+  not-all-equal knots sharing two distinctions (`BOND-METRIC-20261118-001`).

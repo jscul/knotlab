@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the distance that reads freedom, confirmed by the referee; the triangle inequality narrowed
+
+- The study of the distance that reads freedom (`FREE-READ-20261118-001`) was confirmed by its referee with fresh code, with no Block:
+  on every knot tree of parity, not-all-equal and betweenness knots, bond distance is steps apart plus one
+  ([decision note](research/FREE-READ-20261118-001/free_read.md)).
+- Narrowed: bond distance satisfies the triangle inequality on every parity base and every knot tree, not on every base. A pair that
+  no bond holds is infinitely far, and such pairs break the inequality, already on two not-all-equal knots sharing two distinctions.
+- Not a block: on split grids every pair lies in a knot of three (not every three distinctions), and the proof's forcing step is
+  argued knot by knot.
+
 ## 18 November 2026: who picks the number of orders, confirmed by the referee; the share of arity narrowed
 
 - The study of who picks the number of orders (`PICK-TWO-20261118-001`) was confirmed by its referee with fresh code, with no

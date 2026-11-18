@@ -1,0 +1,31 @@
+{
+  "acceptance_gate": "Test the fixed observation on every reachable width-twenty marked triple and test every full-table isometry separately. A universal counterexample requires reachable presentations, a full-table isometry and an actual legal triple with a forbidden image.",
+  "completion_gate": "Decide the width-twenty tests and explain the width-nineteen witnesses. Settle the uniform assertion by proof or witness if possible, otherwise state the size-independent candidate and the exact remaining obligation.",
+  "dependencies": [
+    "BOND-NEXT-JOIN-20261117-001",
+    "VARIABLE-OUTPUT-READER-20261118-001A",
+    "VARIABLE-OUTPUT-READER-20261118-001B"
+  ],
+  "dependency_text": "The width-nineteen study supplies the three-row observation and the proposed parity bit. The width-eighteen study supplies the equal-state example for single and two-parent choices. The fixed-three inverse specifies the growth law.",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "proof_manifest": "proofs/VARIABLE-OUTPUT-READER-20261118-001C/VARIABLE-OUTPUT-READER-20261118-001C-P001_triple_inverse/manifest.json",
+    "research_note": "research/VARIABLE-OUTPUT-READER-20261118-001C/all_sizes.md"
+  },
+  "id": "VARIABLE-OUTPUT-READER-20261118-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Trace the width-nineteen common-neighbor distinction, test the proposed three-row plus distance-four parity observation at width twenty, compare full tables, and pursue a size-independent criterion or a reachable exact counterexample for triples under variable fresh counts.",
+  "ownership": {
+    "root": false,
+    "scope_id": "TWO-PROBE-ALIGNMENT-20261118-001"
+  },
+  "parent": "VARIABLE-OUTPUT-READER-20261118-001",
+  "schema_version": 1,
+  "status": "Proved the full-table classification at width twenty, global parity failure at every width from 27, and the equal-state single-step exclusion. The unrestricted full-table triple inverse remains open.",
+  "status_class": "proved",
+  "stop_rule": "A reduced-observation collision alone cannot refute full-table sufficiency. Finite positive counts cannot establish an all-sizes result.",
+  "title": "Does the complete scalar table determine all three-parent joins at every finite width?"
+}

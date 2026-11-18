@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "proof_id": "VARIABLE-OUTPUT-READER-20261118-001C-P001",
+  "status": "Proved",
+  "scope": "Three-distinction even parity seed, legal serial additions on one, two or three distinct parents, with two or three fresh distinctions at each step. The reader receives the current scalar table up to a consistent renaming.",
+  "primary": "Every full scalar bond-distance isometry at width twenty preserves exactly the three-parent menu. The three candidate rows and the global distance-four parity classify every triple at that width.",
+  "global_parity_obstruction": "Identical marked rows and identical global distance-four parity with opposite triple eligibility occur at every width at least 27. The exact distance-four count can also agree at width 28 and every width at least 30.",
+  "retained_part_result": "The scalar single-distinction partitions equal the physical cut partitions at widths 19 and 20. In the combined populations the restricted three rows and local distance-four parity separate every candidate; the same repair works on all the stated unary extensions of the two larger witnesses.",
+  "same_prefix_equal_state_result": "Two distinct one-junction successors of the same physical prefix on identical fresh identities and with equal allowed states on the same names both have empty next-three-parent menus.",
+  "all_finite_full_inverse_status": "Open",
+  "open_questions": [
+    "Prove or refute that every reported scalar cut reflects a genuine physical separation at arbitrary width.",
+    "Prove or refute parity separation of opposing triple permissions with identical marked rows inside arbitrary retained parts.",
+    "The full scalar-table inverse for triples between arbitrary finite histories is open."
+  ],
+  "width_twenty": {
+    "counts_by_junctions": {
+      "7": {
+        "types": 1216,
+        "types_with_legal_triples": 49,
+        "legal": 501,
+        "checked": 1386240
+      },
+      "8": {
+        "types": 10198,
+        "types_with_legal_triples": 869,
+        "legal": 4182,
+        "checked": 11625720
+      },
+      "9": {
+        "types": 8000,
+        "types_with_legal_triples": 667,
+        "legal": 1675,
+        "checked": 9120000
+      }
+    },
+    "actual_triples": 6358,
+    "candidate_triples": 22131960,
+    "physical_types": 19414,
+    "types_with_a_legal_triple": 1585,
+    "false_matches_with_three_rows": 15,
+    "false_matches_with_parity": 0,
+    "legal_profiles_with_parity": 1702,
+    "full_unmarked_table_classes": 19414,
+    "self_isometries": 1420288,
+    "marked_triple_orbits": 1732
+  },
+  "retained_part": {
+    "widths": [
+      19,
+      20
+    ],
+    "cut_tests": 543909,
+    "genuine_cuts": 54644,
+    "partition_disagreements": 0,
+    "surviving_triples": 13088190,
+    "surviving_legal_triples": 8739,
+    "false_matches_rows_alone": 36,
+    "false_matches_local_parity": 0,
+    "known_witness_pair_widths": [
+      27,
+      28
+    ],
+    "known_witness_retained_size": 16,
+    "retained_distance_four_counts": [
+      32,
+      33
+    ]
+  },
+  "larger_examples": {
+    "27": {
+      "marked_entries": 75,
+      "distance_four_counts": [
+        46,
+        52
+      ],
+      "full_histograms_differ": true
+    },
+    "28": {
+      "marked_entries": 78,
+      "distance_four_counts": [
+        50,
+        50
+      ],
+      "distance_two_counts": [
+        21,
+        18
+      ],
+      "full_histograms_differ": true
+    }
+  },
+  "early_provenance": {
+    "original_preregistration_sha256": "b637e632c1ce923e4c1c29eba4b49a6d8c003e17e5de9fa23da4359c4425b213",
+    "width_twenty_features": "prespecified",
+    "localization_and_extensions": "exploratory origins with separate algebraic guarantees"
+  },
+  "validation_independence": "Forward growth and reverse deletion independently enumerated width twenty. Exact table symmetries and marked orbit tests agree. The width-27/28 witnesses were reconstructed from literal states. The two symbolic proofs received a separate in-task check.",
+  "evidence_files": {
+    "check_core.py": "2499b1bd43e3af655a599e3216ae42a138b1c1e0e501afb9ed70c4f9c7ed5750",
+    "check_extension.py": "d895f96f30f66ae0206c250bc75f4bb7dd3b41dbc7fc50c5766377e61dcd0b41",
+    "check_full.py": "37b7b666a5c06fd180dad515f98c98fac314c8e573f36d9b437828384fc11c35",
+    "check_gluing.py": "6ce8aa70d9ec7ead98da8a4bfd0c891a935dc0cc2fb4effa3bad3e885f653335",
+    "check_parity.py": "49020cc4c6f6f1fdd723a777495fc7a3711c4eae90dc8a05b39778bf6b734342",
+    "check_reverse.py": "4a6fed54c4068f0171806f97a7abea06095588073d848923f5f96b2475324046",
+    "check_same.py": "9b2f2b4e40531db1cab4fd07b2e14f327fe0e6f523eb5d141dfa3bad75b60d1e",
+    "check_surroundings.py": "d21658ebb3061f9e7f653bfc80c97bcf670977cec9fb36ba4b6e50ab8b5eaffb",
+    "check_witness.py": "32ee37953706cb99cb4370c77b0bfbc7f5e84372ea753b1b1473a29a54a407ce",
+    "complementary.md": "362e7e7d44d077401c0f632e0ec3c8152a173f7d35c47a02199ff0aabb50f023",
+    "core.json": "37919bb415be306db0010e6d85e3ad89ff23b81165f9649f4d3a5dfaec9c3bd3",
+    "extension.json": "4e736d6d9727a0b22325ac3b6b0da643870cc485e3efc08a380d9667853880a2",
+    "full.json": "fe8942c22071b913e6362e95012a2ac7e6dd63a12c8bdb2b257cfca04953adcc",
+    "gluing.json": "e4e7c08d0a529239a0f1dd69c3753e9b70f524f75668b26ff001071c44183825",
+    "parity.json": "c70aa4d9f59a48c21ea0d9325e0249b09051322586ffd60888deb6706a4f335e",
+    "proof.md": "78d7ce4d86da38f2e2f48352b085c365c2fc8b86c8b797b6d90edfe7ece08102",
+    "reverse.json": "7f58e36abe50cb664d73e3069d8402b33b030c2afbceab926439e8073fc7695f",
+    "same.json": "3db7612559ed3e97fa097f0e46fa0fd6543ac7cdcb2441f045f5f30f36f08b83",
+    "surroundings.json": "824f3d0e62aba80a46a4d79f095d128ba6bc054109a64f0ad37336365b2b43ba",
+    "witness.json": "7685dbb6636b3611a6e8a1f090bba446365feeaad00f22437594bfa3b6fd93ca"
+  }
+}

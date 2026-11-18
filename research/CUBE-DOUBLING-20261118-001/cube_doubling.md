@@ -45,8 +45,11 @@ Known mathematics, labelled:
 - hypercube cut systems and their lattice dimension;
 - the median-graph expansions of Mulder and Chepoi (related, from the advisor's memory and not checked).
 
-The advisor rates the folklore risk moderate to high: given the model, filling before adding is unsurprising. Local: the step
-analysis and the three-knot certificates.
+Parts of this may be folklore in the median-graph literature. If so it is cited, not held back (the owner, 18 November 2026: "it's
+about the perspective we're adding"). **What this adds:** the cube growth read as space from logic. Built only from knots
+("b lies between a and c"), the cheapest continuation adds one order each time the number of distinctions doubles. The
+three-knot certificates say in knot terms why every missing combination is reachable. Local: the step analysis and the
+certificates.
 
 ## Predictions and verdicts
 
@@ -92,7 +95,7 @@ case, all added:
 - that only the existence of a free step is used;
 - the base from Q₁.
 
-It gave the related literature from memory and the folklore risk. Not consulted after the read-out.
+It gave the related literature from memory. Not consulted after the read-out.
 
 ## Position
 

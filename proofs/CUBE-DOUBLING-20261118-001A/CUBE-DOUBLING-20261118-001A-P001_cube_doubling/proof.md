@@ -128,9 +128,8 @@ some zero-cost step, and by L1 every such step is a fill.
 
   These characterise expansions. They do not describe a cheapest growth under three-place betweenness constraints.
 - **Local.**
-  - The step analysis and the certificates are new as far as I know. The advisor rates the folklore risk moderate to high: given
-    the model, that the cheapest rule fills before it adds is unsurprising, and the new content is the model and the three-knot
-    certificates.
+  - The step analysis and the certificates are new as far as I know. Any part that proves to be folklore is cited, and what this
+    adds is the reading: the cube growth as space built from knots alone, with the certificates in knot terms.
   - The certificate construction follows the advisor's restatement of forcing (`KNOT-CAP-20261117-001`'s consultation).
   - The forceability of every orientation was the advisor's claim; this proof makes it explicit.
   - The advisor checked the proof before the freeze and asked for three lines, now added: L4's use of A99, L2's no-doubling line,

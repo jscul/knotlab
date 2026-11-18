@@ -3,6 +3,18 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the reach-limit study confirmed by its referee; what it shows narrowed
+
+- The study of a law whose free room runs along two orders (`LOCAL-ROOM-20261118-001`) was confirmed by its referee with fresh code,
+  with no Block. Reach limits read from the states cannot hold two orders and fill them (proved), the cube at every doubling holds
+  under every tie rule one doubling further, and one remembered class per split grows full grids forever in the referee's own
+  implementation too ([decision note](research/LOCAL-ROOM-20261118-001/local_room.md)).
+- Narrowed: this shows that two orders need more than a reach limit, not that they need memory. A rule that reads the crossing of
+  the splits is not excluded; a new study tests one.
+- Not a block: the proof of the cube at reach two left out pendants, which its own first case covers; under the tightest reach one
+  order stays a single split in about one run in six; and the class law's classes, handed over by the start, nearly build the two
+  orders in.
+
 ## 18 November 2026: the bracketing study confirmed by its referee; one reading narrowed, one scope named
 
 - The study of why the line of five's placements differ (`MEET-ORDERS-20261118-001`) was confirmed by its referee with fresh code,

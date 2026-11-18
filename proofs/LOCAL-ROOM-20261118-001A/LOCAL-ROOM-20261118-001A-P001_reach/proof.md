@@ -34,8 +34,11 @@ Ticket `LOCAL-ROOM-20261118-001A`, 18 November 2026, by Claude. Epic `LOCAL-ROOM
 - So the target is the orientation of u or v, a copy, which is not admitted. ∎
 
 **R2.** Follow `CUBE-DOUBLING-20261118-001A` with every certificate checked for reach.
-- **From Q_s, the cheapest step.** It is a subdivision, by one knot on an adjacent pair (reach 1). A pendant needs B(v̄, v, p) at
-  reach s, so for s ≥ 3 only subdivisions are allowed. At s = 2 both kinds are.
+- **From Q_s, the cheapest step.** It is a subdivision, by one knot on an adjacent pair (reach 1), or a pendant. *Corrected after
+  the referee (R1, section 1):* an earlier version said that a pendant needs B(v̄, v, p) at reach s, so that for s ≥ 3 only
+  subdivisions are allowed. That is false: a pendant only needs p forced to v on every split, which up to three end knots B(u, v, p)
+  of reach 2 can do (8 of Q₃'s 20 cheapest extensions under reach 2 are pendants, 16 of Q₄'s 48). The pendant case below is
+  argued for s = 2, and the same argument works at every s.
 - **After a subdivision** (splits a, b and w, new point (1, 0, w₀)):
   - **The targets (1, 0, w).** The middle knot B((0,0,w), p, (1,1,w)) has reach 2. The end knots B((0,0,w₀), (1,0,w₀), p) and
     B((1,1,w₀), (1,0,w₀), p) have reach 1. So every (1, 0, w) is forceable.
@@ -43,11 +46,11 @@ Ticket `LOCAL-ROOM-20261118-001A`, 18 November 2026, by Claude. Epic `LOCAL-ROOM
     B((1,0,w), (0,0,w), p) and B((1,0,w), (1,1,w), p) have reach 1. Consistency: A((0,0,w)) = {b} ⊆ {a, b} = A((1,0,w)), and
     likewise with a.
   - By L3 the (1, 0, ·) layer fills first or interleaved; either way every orientation becomes forceable, and the cube fills.
-- **After a pendant at s = 2** (Q₂ plus p copying c, trivial split t):
+- **After a pendant** (Q_s plus p copying c, trivial split t; written for s = 2, and it uses nothing about s):
   - the targets (x, 1) with x adjacent to c are certified by `CUBE-DOUBLING-20261118-001A`'s pendant certificate, whose pairs have
     reach at most 2;
-  - the last, x = c̄, by the same certificate with c replaced by a filled neighbour (x′, 1) of c̄. Its middle pair (x′, 1)–(c̄, 0)
-    has reach 2.
+  - every farther x (at s = 2 the last, x = c̄), in order of distance from c, by the same certificate with c replaced by a filled
+    neighbour (x′, 1) of x. Its middle pair (x′, 1)–(x, 0) has reach 2.
 - The rest is the doubling induction. ∎
 
 **R3.**

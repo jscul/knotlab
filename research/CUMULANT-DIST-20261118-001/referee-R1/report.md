@@ -5,7 +5,8 @@ with fixes.**
 - **The Block.** The owner logged it in d6ef076cb (proof D6). The referee checked the mechanism with its own code:
   - **The identity holds on actual bases.** κ_S = κ_(N+2)(coin)·(−1/3)^(N+k) at (N, k) = (2, 1), (4, 1), (2, 2), (4, 2) and (6, 1).
   - **The cumulants of a fair coin** are the tangent numbers with signs: 1, −2, 16, −272, 7,936, −353,792, ….
-  - **32 hung knots is the first hub that wins.** log₃|κ_(N+2)| − 2N is −1.44 at N = 30, then +0.075 at N = 32 and +1.70 at N = 34.
+  - **32 copies of one spin is the first hub that wins.** log₃|κ_(N+2)| − 2N is −1.44 at N = 30, then +0.075 at N = 32 and
+    +1.70 at N = 34. 32 copies means 32 hung knots with one child each, or 16 with both children (corrected; see §4).
 - **Everything else reproduces with fresh code.** That includes:
   - the parity theorem;
   - every knot tree in the study's range, and every seven-knot tree under one law, one size past;
@@ -93,14 +94,23 @@ the search is its own.
   - The coin's cumulants grow factorially, so with N = 32 hung knots and a path of k ≥ 33:
     δ ≤ 32 + (32 + k − 64.0752) = k − 0.075.
   - Letting the hub grow with k gives δ = O(k / log k).
-  - Parity hubs do not help, because a parity child's u has mean 0.
+  - **Parity hubs (corrected on 18 November 2026).** The first version of this report said parity hubs do not help, because a
+    parity child's factor has mean 0. That is true only with one child per hung knot.
+    - With both children taken, E[s_b s_c | σ] = σ, an exact copy of the coin for two distinctions. That is the same price per
+      copy as a not-all-equal child.
+    - So a mixed tree with a parity hub on x and a not-all-equal path to y shortcuts at the same 32 copies (32 parity knots). A
+      not-all-equal hub needs only 16 knots with both children taken.
+    - These are TREE-STEPS H1 and H2. The owner pointed this out, and the referee checked both cases on actual bases in
+      TREE-STEPS-R1: κ = κ_(N+2)(coin)·(−1/3)^k for N parity knots, e.g. 2/3 at N = 2, k = 1.
+    - Pure parity trees are unaffected (D1).
 - **The correct scoped statement.**
   - **Proved:** δ = bond distance − 1 on every parity base, and δ = steps apart on every parity knot tree. δ ≤ steps apart on every
     knot tree under any mixture (D3, on trees).
   - **Computed:** δ = steps apart on every knot tree to five knots under every mixture and to six under one law (the study), and
     to seven under one law (the referee). Also τ on a 4 × 4 chain-grid patch, loose distinctions included.
-  - **False in general:** on not-all-equal trees with a hub, from 32 knots hung on one distinction (65 knots in all).
-  - **Open:** where between seven and 65 knots, and under which bound on knots per distinction, steps apart stops. Nested or spread
+  - **False in general:** on trees with a hub of 32 copies of one spin. That is 16 not-all-equal knots on one distinction with both
+    other distinctions taken (49 knots in all with a path of 33), or 32 parity knots on a mixed tree (corrected).
+  - **Open:** where between seven and 49 knots, and under which bound on knots per distinction, steps apart stops. Nested or spread
     hubs are not covered by the single-hub threshold. TREE-STEPS, the next review, takes this up.
 - **Is "one distance reads both" fair?** No, as a general headline. It is fair as follows: "one distance is bond distance − 1 on
   parity bases (proved), steps apart on small knot trees under either law and their mixtures (computed), and τ on a chain-grid

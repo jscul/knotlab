@@ -447,6 +447,15 @@ by about a fifth each step but has not closed three steps later, while with the
 knots kept it holds near 0.7 (for the five-starts it fades with the knots kept
 too)
 ([decision note](../research/KNOT-CAP-20261117-001/knot_cap.md)).
+Does the cheapest growth really gain one order at each doubling, always
+(`CUBE-DOUBLING-20261118-001`, proof and frozen check, referee pending)? Yes,
+proved for every size. Once the cube of s orders is full, nothing is free, and
+the cheapest step adds one split. After that, every combination of sides that no
+distinction holds yet can be reached by three knots touching what is already
+there, without adding a state, and filling one combination leaves the others
+reachable. So the cube of s + 1 orders fills before another split can be added,
+whatever the tied choices
+([decision note](../research/CUBE-DOUBLING-20261118-001/cube_doubling.md)).
 The owner then said this was "the entire premise of 'space from logic'", and
 it is now stated as the program's founding premise, in his words and with
 what hangs from it, in THEORY.md (section 1, "Distance is the only form of

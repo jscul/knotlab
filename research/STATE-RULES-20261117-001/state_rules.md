@@ -195,6 +195,9 @@ Known mathematics, labelled:
 
 Local: the costs, the conservation, the C(n, 3) fills, the cube growth and the comparisons.
 
+*Added 18 November 2026:* the cube growth, conjectured here as S6, is proved for every size by `CUBE-DOUBLING-20261118-001`
+(referee pending).
+
 ## What it means for A97 and the goals
 
 - **A97** (distance is the only form of information) stays under challenge. Under A98's reading, the disagreement count, a base of

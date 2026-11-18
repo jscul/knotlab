@@ -2603,6 +2603,8 @@ evidence: results and their status come from the records each entry links.
   pass it, and none keeps two orders growing. On the owner's premise it found that how knots meet is information the states lack:
   from matched starts it changes what grows and, for one pair (end hub against middle hub), how many orders; after the knots are
   erased the states keep a fading imprint of it (the fading due to erasure shown for the six-starts; its referee).
+  `CUBE-DOUBLING-20261118-001` ([decision note](../research/CUBE-DOUBLING-20261118-001/cube_doubling.md); referee pending)
+  proved the cheapest law's cube growth for every size: it gains one order at each doubling and never keeps two.
 - **History.**
   - 2026-11-18 · The cap study scoped after `KNOT-CAP-R1` (Narrowing): the fade due to erasure holds for the six-starts; the c = 5
     difference is built into the cap; status unchanged.

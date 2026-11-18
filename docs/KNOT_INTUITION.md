@@ -553,6 +553,16 @@ m-dimensionally, so the number comes from how the first knots are arranged.
 And the same relation grows differently as different knots: one four-place
 knot or two three-place ones through a hidden distinction
 ([decision note](../research/FIRST-KNOT-20261118-001/first_knot.md)).
+Nothing chooses how first knots are arranged, so what is typical
+(`TOUCH-CENSUS-20261118-001`, frozen census, referee pending)? Over every
+connected way of letting up to five parity knots of three to five places
+share distinctions (26,241 read of 26,441), the cheapest growth cannot start
+in about two in five, closes in one in seven, and of the rest grows
+two-dimensionally about four times in five, counting junctions by round. Three
+and four dimensions are rare (0.16%), and a few rings of five knots grow faster
+than any power. Two is typical, not forced; the chains of junctions born
+together predict the dimension in 98.7% of growing arrangements
+([decision note](../research/TOUCH-CENSUS-20261118-001/touch_census.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

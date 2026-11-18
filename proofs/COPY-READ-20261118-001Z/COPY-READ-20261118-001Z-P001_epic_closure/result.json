@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "COPY-READ-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "COPY-READ-20261118-001Z",
+ "proof": "COPY-READ-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing COPY-READ-20261118-001: ticket A (absorbing fills have two end knots; the clean-witness bound) and ticket B (frozen computation, 4 of 4 held): 566 absorbing among 1,787,986 crossing-making fills; clean witness 0 at the move's knots and its closure, pooled and held out (86 confirmed look-alikes); one step out covers 96% of the base and only 4% of held-out absorbing fills have a seen class. Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/COPY-READ-20261118-001B/COPY-READ-20261118-001B-E001_copy/contract.json": "Frozen",
+   "artifacts/COPY-READ-20261118-001B/COPY-READ-20261118-001B-E001_copy/results.json.gz": "run output",
+   "proofs/COPY-READ-20261118-001A/COPY-READ-20261118-001A-P001_absorb/manifest.json": "Proved",
+   "proofs/COPY-READ-20261118-001A/COPY-READ-20261118-001A-P001_absorb/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

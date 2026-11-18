@@ -2604,7 +2604,7 @@ evidence: results and their status come from the records each entry links.
   from matched starts it changes what grows and, for one pair (end hub against middle hub), how many orders; after the knots are
   erased the states keep a fading imprint of it (the fading due to erasure shown for the six-starts; its referee).
   `CUBE-DOUBLING-20261118-001` ([decision note](../research/CUBE-DOUBLING-20261118-001/cube_doubling.md); referee pending)
-  proved the cheapest law's cube growth for every size: it gains one order at each doubling and never keeps two.
+  proved the cheapest law's cube growth for every size under A99: it gains one order at each doubling and never keeps two.
   `WEAVE-PAIR-20261118-001` ([decision note](../research/WEAVE-PAIR-20261118-001/weave_pair.md); referee pending) settled
   `WEAVE-MIX-20261117-001`'s surviving pair: one arrangement, disordered in both twist sectors to width 21, whose distance carries
   all its information and decays at a fixed rate, but oscillates, so it steps outward only in envelope.
@@ -2714,8 +2714,12 @@ evidence: results and their status come from the records each entry links.
 - **Why.** Taken by default, on the advisor's advice. Betweenness knots keep both constant states, so the states read as a split
   system. Three knots is the fewest that allow a fill, so a second order can start in one step (the owner's item that the moves must
   include the event counted). Keeping every old state makes a step an extension of the base, not a rewrite of it.
-- **Rests on it.** That study's obstruction: no uniform law tried makes two orders and keeps them. The one-knot rule keeps the
-  start's number of orders; the cheapest three-knot rule grows cubes.
+- **Rests on it.**
+  - That study's obstruction: no uniform law tried makes two orders and keeps them. The one-knot rule keeps the start's number of
+    orders.
+  - `CUBE-DOUBLING-20261118-001`'s theorem: the cheapest rule with three or more knots per step reaches the cube at every
+    doubling (its L4 uses that every old state is kept).
+  - `KNOT-CAP-20261117-001`'s and `LOCAL-ROOM-20261118-001`'s laws, built on top of it.
 - **Challenge.** Widen the move set and rerun the same weightings:
   - all 34 three-place knots, or four-place ones (the parity of a filled cell is one four-place knot);
   - more knots per step;
@@ -2724,4 +2728,6 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `CUBE-DOUBLING-20261118-001` proved the cube growth under this entry (its referee: for any cap of three or more
+    knots per step); status unchanged.
   - 2026-11-17 · Added by `STATE-RULES-20261117-001`.

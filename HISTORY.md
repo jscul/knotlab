@@ -50,6 +50,19 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   s = 7 and 8 at depth 12. They are no longer written as one rising sequence.
 - Sharpened: for that pattern at s = 7, stems hold no bond of any size.
 
+## 18 November 2026: the doubling theorem, confirmed by its referee
+
+- The doubling theorem (`CUBE-DOUBLING-20261118-001`) was confirmed by its referee with no Block. Independent code checked it one
+  size past, and enumerated every reachable base to 33 distinctions.
+- Small fixes:
+  - it holds for any cap of three or more knots per step;
+  - it rests on the assumption that every old state is kept (A99), now named wherever it is quoted;
+  - a disclosure of what was seen before the freeze is widened;
+  - the referee's window for when each new order arrives is added.
+- The known results (median-graph expansions) are cited, with what this adds: the growth is not median closure, so those theorems
+  do not cover it ([decision note](research/CUBE-DOUBLING-20261118-001/cube_doubling.md),
+  [referee's report](research/CUBE-DOUBLING-20261118-001/referee-R1/report.md)).
+
 ## 18 November 2026: the cap study, confirmed by its referee, with one narrowing
 
 - The cap study (`KNOT-CAP-20261117-001`) was confirmed by its referee with no Block. Its proofs hold, and its exact numbers

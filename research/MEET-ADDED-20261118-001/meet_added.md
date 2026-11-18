@@ -106,3 +106,17 @@ about 0.97), which bounds hold by construction, and to score the triple and midd
 **Assumptions:** A97 under challenge, with this finding added; A100 gains this study among what rests on it; no new entry.
 
 **Basket:** read; B199 taken by this epic.
+
+## Final report as sent
+
+Posted in the project thread at about 05:15 UTC on 18 November 2026 (the tables are those of the Position section above, with the
+directions shortened):
+
+> **Sixth study done (referee pending): the knots the growth added record the missing part, almost exactly.** Read a grown base
+> with its states and its added knots, and no names. That tells as much about how the first knots nested as the full history does.
+> It matches exactly on lines of five and six, and comes within 0.00012 on seven, the one level where the two differ. The added
+> knots' pattern alone, without the states, tells almost nothing (at most 0.05). So what the distances miss is written in which new
+> distinction was tied to which older ones: the knots carry it, not the distances. 3 of 4 predictions held; the exact-equality one
+> failed by that sliver at seven, as the advisor warned it might.
+>
+> Corrections: none. Goals: G16 checkpoint. Assumptions: A97 under challenge, with this finding added.

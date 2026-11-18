@@ -160,6 +160,7 @@ evidence: results and their status come from the records each entry links.
 | [A103](#a103--a-bases-values-are-data-which-value-is-called-1-is-part-of-the-base) | A base's values are data: which value is called 1 is part of the base | reading | Assumed |
 | [A104](#a104--parity-growth-is-judged-under-the-complete-round-joining-rule) | Parity growth is judged under the complete-round joining rule | scope | Assumed |
 | [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
+| [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Assumed |
 
 ## Entries
 
@@ -3106,3 +3107,19 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-18 · Under challenge: `FIRST-KNOT-20261118-001` asks whether the parity law or the joining rule prefers the smallest
     first knot (two first knots of different sizes, apart and sharing a distinction, under one count and under the fewest counts).
   - 2026-11-18 · Recorded by `FRESH-COUNT-20261118-001`.
+
+### A106 · Arrangements of first knots are weighted uniformly up to five knots of three to five places
+
+**Assumed** · 2026-11-18 · measure
+
+- **Statement.** "Typical" among arrangements of first knots means frequent among the distinct connected arrangements of up to
+  five parity knots of three to five places (each shared distinction in two knots, counted once up to renaming), or among their
+  labelled descriptions (knots labelled, places not), and holding at each number of knots.
+- **Why.** Taken by default by `TOUCH-CENSUS-20261118-001` to read the owner's no-choice direction (nothing chooses an
+  arrangement); the advisor noted that neither weighting is canonical and that the cutoffs are a choice.
+- **Rests on it.** "Two-dimensional growth is typical, three and four rare" (`TOUCH-CENSUS-20261118-001`,
+  [decision note](../research/TOUCH-CENSUS-20261118-001/touch_census.md)).
+- **Challenge.** Extend to six knots or to six places, weight by random pairing of places, or by a growth process that adds knots
+  one at a time, and test whether two stays typical and three rare.
+- **History.**
+  - 2026-11-18 · Adopted by `TOUCH-CENSUS-20261118-001`.

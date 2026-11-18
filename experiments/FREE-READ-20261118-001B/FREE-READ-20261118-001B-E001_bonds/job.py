@@ -32,6 +32,11 @@ def tree_rows(knots, n, laws):
     return {"laws": "".join(laws), "n": n, "pairs": n * (n - 1) // 2, "off": off}
 
 
+def fin(v):
+    """JSON has no infinity: write an infinite reading (no binding set) as null; merge.py reads it back as infinity."""
+    return None if v == math.inf else v
+
+
 def cycles():
     """Rings of m = 3..6 knots under pure parity, pure NAE and alternating laws, and the mixed cycle (an NAE path of k = 2..5 from
     x to y closed by a parity knot (x, y, z)): bond distance, steps apart, tau, delta and delta_K for every pair."""
@@ -57,7 +62,7 @@ def cycles():
             b = sup.bond_distance(x, y, d + 3)
             v, vK = T.both(B, x, y, d + 3)
             rows.append({"x": x, "y": y, "steps": d, "bond_minus_1": None if b is None else b - 1,
-                         "tau": L.tau(B.correlation(x, y)), "delta": v, "delta_K": vK})
+                         "tau": fin(L.tau(B.correlation(x, y))), "delta": fin(v), "delta_K": fin(vK)})
         out.append({"name": name, "n": n, "N": len(st), "rows": rows})
     # negative control: the clause law "not all ones" (K1 and K2 hold) on chains of 2 to 4 knots; bonds holding the ends
     for k in range(2, 5):

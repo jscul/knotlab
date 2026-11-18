@@ -12,6 +12,11 @@ def main(rundir):
     six = [row for r in res if r["case"].startswith("six") and r["status"] == "ok" for row in r["result"]["rows"]]
     rnd = [row for r in res if r["case"].startswith("rand") and r["status"] == "ok" for row in r["result"]["rows"]]
     cyc = next((r["result"]["cycles"] for r in res if r["case"] == "cycles" and r["status"] == "ok"), [])
+    for c in cyc:  # job.py writes an infinite reading as null
+        for r in c["rows"]:
+            for key in ("tau", "delta", "delta_K"):
+                if key in r and r[key] is None:
+                    r[key] = float("inf")
     summ = lambda rows: {"bases": len(rows), "pairs": sum(r["pairs"] for r in rows), "off": sum(len(r["off"]) for r in rows),
                          "examples": [dict(laws=r["laws"], off=r["off"][:3]) for r in rows if r["off"]][:5]}
     s6, sr = summ(six), summ(rnd)

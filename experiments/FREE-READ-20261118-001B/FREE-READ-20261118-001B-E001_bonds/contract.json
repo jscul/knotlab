@@ -33,5 +33,14 @@
   "each prediction": "holds or fails as scored by merge.py"
  },
  "stop_rule": "One run; read-out; proof; referee hand-off; report.",
- "runtime": "8 workers through scripts/longrun.py (FREE-READ-B1)"
+ "runtime": "8 workers through scripts/longrun.py (FREE-READ-B1)",
+ "amendments": [
+  {
+   "at": "2026-11-18T08:21Z",
+   "before_any_read_out": true,
+   "change": "The frozen run (runs/free-read) finished its 232 tree cases but its cycles case failed when writing its output: a parity pair has no correlation, so tau is infinite, and JSON has no infinity. job.py now writes an infinite tau, delta or delta_K as null and merge.py reads null back as infinity; nothing else changed. The whole job was rerun (runs/free-read-r2, all 233 cases ok); its 232 tree results are identical to the first run's. No case, reading, prediction or decision rule changed.",
+   "job_sha256": "beb9f9a27d5a099e73e12d847749f969d029b8414c54a596e97c20fff76bed64",
+   "merge_sha256": "4cd1001be5f6a2aca544d89a3c07eb104c11cedb33019ede1b69ec4cb89fcb9e"
+  }
+ ]
 }

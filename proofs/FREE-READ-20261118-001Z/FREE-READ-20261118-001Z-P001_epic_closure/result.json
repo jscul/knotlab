@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "FREE-READ-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "FREE-READ-20261118-001Z",
+ "proof": "FREE-READ-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing FREE-READ-20261118-001: ticket A (U, Lo, the tree theorem, C, M) and ticket B (frozen run, 7 of 7 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/FREE-READ-20261118-001B/FREE-READ-20261118-001B-E001_bonds/contract.json": "Frozen",
+   "artifacts/FREE-READ-20261118-001B/FREE-READ-20261118-001B-E001_bonds/results.json": "run output",
+   "proofs/FREE-READ-20261118-001A/FREE-READ-20261118-001A-P001_trees/manifest.json": "Proved",
+   "proofs/FREE-READ-20261118-001A/FREE-READ-20261118-001A-P001_trees/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

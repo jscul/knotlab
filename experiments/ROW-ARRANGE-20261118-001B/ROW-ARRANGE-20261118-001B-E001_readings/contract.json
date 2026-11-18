@@ -1,0 +1,44 @@
+{
+ "schema_version": 1,
+ "experiment_id": "ROW-ARRANGE-20261118-001B-E001",
+ "ticket": "ROW-ARRANGE-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which reading of a grown split base's disagreement-count table, between every start's sorted row and the full table, recovers the number of orders k and the lattice dimension, and does a local one?",
+ "definitions": {
+  "a": "multiset of sorted rows",
+  "N1": "row with the nearest starts' rows",
+  "W2": "two rounds of 1-WL on the count table",
+  "WL": "1-WL for 2n rounds",
+  "BW4": "1-WL from the B4 views",
+  "B_r": "view of the table within count r of each start, start marked, up to renaming",
+  "k": "crossing-graph colours",
+  "lam": "Eppstein's lattice dimension"
+ },
+ "public_inputs": {
+  "code": "readings.py (sha256 1ccea88d4765acbb7b171a2f7248c59596b5949004e00b8f5e6b0a37f386d5d3), families.py (sha256 b6305ed3a7b0ec7af0dd611e5194f62856b01e3c3bc154df58c601f6294da55a), job.py (sha256 edcf6efeffb45aa1df80e6a8bb0dcab19e29be2ae12a00214d64739c5eaecb18), merge.py (sha256 2e537913ce7c7ea411b4e5835ed077a8dd2f13b85d9472bbb78e87b7ce1be8c9), checks.py (sha256 4fd724f05e9e83bac8ed8c1957cff39f5a8ac8e752aa2e99b9bce5e8aa696fe8)",
+  "engines": "STATE-RULES-20261117-001B rules.py and COUNT-BALLS-20261118-001B census.py, unchanged",
+  "run": "scripts/longrun.py launch job.py; then merge.py <out dir>"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "P1-P8 of research/ROW-ARRANGE-20261118-001/preregistration.md, scored from merge.py's results.json.",
+ "cheapest_meaningful_control": "checks.py: reading a reproduces COUNT-BALLS at n = 7; invariance under renaming; canonical views against brute force; the two proved families.",
+ "predictions": {
+  "P1": "N1 determines k, lam at n = 7",
+  "P2": "W2 complete at n = 7",
+  "P3": "WL complete at 7 and cheapest to 12; determines k, lam at 8",
+  "P4": "N1 mixes k at 8",
+  "P5": "least r with B_r determining k: 6 at n = 7, 8 at n = 8",
+  "P6": "BW4 complete at 7 and 8",
+  "P7": "families at 8 find one of a's k-mixing groups",
+  "P8": "families at 9: WL determines k, lam; a mixes k"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as read from results.json"
+ },
+ "stop_rule": "One run; read-out; proofs; referee hand-off; report.",
+ "runtime": "8 workers, 3 GB per case, through scripts/longrun.py (ROW-ARRANGE-B1)."
+}

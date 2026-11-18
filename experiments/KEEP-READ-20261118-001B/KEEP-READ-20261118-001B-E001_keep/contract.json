@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "KEEP-READ-20261118-001B-E001",
+ "ticket": "KEEP-READ-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Can a reading of the knots near a move tell SEED's second-phase fills (keeping two orders) from those raising them?",
+ "definitions": {
+  "tier": "0: the move's knots; 1, 2: presented knots within that many steps; c: betweenness implied by the states among the move's old distinctions",
+  "clean-witness fraction": "extensions keeping two orders with a knot set whose picture class has no raising move"
+ },
+ "public_inputs": {
+  "code": "keeplib.py (sha256 5f20d1cb1922c2e7f742da75e1865a2ead70550533e1d963f0379b67a3eef175), run.py (sha256 51b0dd4d65548538743568dc9bbbe5598edfb93c34228b590ef1fa015ec2e881), checks.py (sha256 21fa52ebd35a2d9fb4d0f5d15173c0055194cd89da8ba22d14e9d77e00a2f3d0); experiments/KNOT-SWITCH-20261118-001B/KNOT-SWITCH-20261118-001B-E001_switch/knotlib.py (sha256 f1ac42407cb6f0e4e6f07445ee81f5034d0d2b2c8a8cc622290c4ffb4203de2b)",
+  "run": ".venv/bin/python -B run.py --procs 12"
+ },
+ "forbidden_inputs": [
+  "Changing tiers, starts, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions P1-P5 and the decision rules of research/KEEP-READ-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "Ball coverage at radius 1 and 2; purity over classes met more than once.",
+ "predictions": {
+  "P1": "tier 0 obstructed",
+  "P2": "tier 1 obstructed, clean-witness over repeated classes in [0.3, 0.6]",
+  "P3": "tier 2 obstructed or its balls cover >= 3/4 of the base on average",
+  "P4": "closure tier clean witness >= 0.8 of keeping extensions, not exact",
+  "P5": "no candidate rule matches SEED; two-middles has no false accept and recall 5-15%"
+ },
+ "decision_rules": {
+  "exact tier": "clean-witness fraction 1 for keeps and for SEED acceptance",
+  "candidate match": "accepts exactly SEED's accepted extensions"
+ },
+ "stop_rule": "One run; referee hand-off; report.",
+ "runtime": "About 10 minutes on 12 processes.",
+ "amendments": []
+}

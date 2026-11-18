@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 474 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 475 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 474 epics with their closures
+- [Epics](#epics): all 475 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1711,6 +1711,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Why the cheapest growth gains an order at each doubling (`CUBE-DOUBLING-20261118-001`) | [closure](proofs/CUBE-DOUBLING-20261118-001Z/CUBE-DOUBLING-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/CUBE-DOUBLING-20261118-001/) |
 | 2026-11-18 | One distance for parity and not-all-equal knots (`CUMULANT-DIST-20261118-001`) | [closure](proofs/CUMULANT-DIST-20261118-001Z/CUMULANT-DIST-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/CUMULANT-DIST-20261118-001/) |
 | 2026-11-18 | The distance that reads freedom (`FREE-READ-20261118-001`) | [closure](proofs/FREE-READ-20261118-001Z/FREE-READ-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-READ-20261118-001/) |
+| 2026-11-18 | What the knots read in SEED's second phase (`KEEP-READ-20261118-001`) | — | [folder](research/KEEP-READ-20261118-001/) |
 | 2026-11-18 | What the knots read when nothing crosses yet (`KNOT-SWITCH-20261118-001`) | [closure](proofs/KNOT-SWITCH-20261118-001Z/KNOT-SWITCH-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/KNOT-SWITCH-20261118-001/) |
 | 2026-11-18 | A law whose free room runs only along two orders (`LOCAL-ROOM-20261118-001`) | [closure](proofs/LOCAL-ROOM-20261118-001Z/LOCAL-ROOM-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/LOCAL-ROOM-20261118-001/) |
 | 2026-11-18 | Do the knots a growth added record its order? (`MEET-ADDED-20261118-001`) | [closure](proofs/MEET-ADDED-20261118-001Z/MEET-ADDED-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-ADDED-20261118-001/) |

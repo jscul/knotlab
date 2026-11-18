@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WEAVE-PAIR-20261118-001B-E001",
+ "ticket": "WEAVE-PAIR-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "With the twist set explicitly, is the 3 x 1 weave pair gapped in both sectors to width 21; does its pair-count distance step outward without skipping (single-row or two-row tick); are the two arrangements one up to a symmetry of the weave?",
+ "definitions": {
+  "antiperiodic sector": "every knot crossing the seam reads column 0 flipped",
+  "two-row tick": "the even-r and odd-r subsequences of |C(r)| each strictly decrease (declared as an envelope reading)",
+  "splitting": "the difference of the top flip-even log eigenvalues per row between the sectors"
+ },
+ "public_inputs": {
+  "code": "twistlib.py (sha256 45a8cf0ccaca3b46b2a9d7d3b2e3840475a9121e315c4276ba09090e013cd357), run.py (sha256 06ec16e1ca33f213bc730f655de23b0b217a744fdae3a21972551260a0455c29), checks.py (sha256 a96685f3205a2ddebce2b854727c2b6e659b1353f4c7fb391fee1297239632fe); experiments/WEAVE-MIX-20261117-001B/WEAVE-MIX-20261117-001B-E001_mixes/mixlib.py (sha256 bc257fd1346a72c56cf4603d5bc2f6c20c16b4534e233c4152968ce4e4a8db8e); numpy and scipy in the workspace .venv",
+  "run": ".venv/bin/python -B run.py --part W1|W2|W3, each its own process, then run.py --merge"
+ },
+ "forbidden_inputs": [
+  "Changing arrangements, widths, sectors, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "Predictions Q1-Q6 of research/WEAVE-PAIR-20261118-001/preregistration.md.",
+ "cheapest_meaningful_control": "Plain NAE (critical, known numbers); the seam moved one column.",
+ "predictions": {
+  "Q1": "a point symmetry carries arr1's inconsistent bonds onto arr2's",
+  "Q2": "same spectra at w/3 even; arr1 anti = arr2 per at w/3 odd (1e-6)",
+  "Q3": "gapped in both sectors at 15-21 (5%)",
+  "Q4": "sector splitting shrinks >= 3x from 12 to 21",
+  "Q5": "single-row ruler fails at 0, 2; two-row tick holds everywhere",
+  "Q6": "tau slope on r = 10-30 within 10% of the width-12 spin gap"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as stated in the pre-registration"
+ },
+ "stop_rule": "One run; A97 status; referee hand-off; report.",
+ "runtime": "W2 at width 21 tens of minutes; registered in docs/LONG_RUNNING.md."
+}

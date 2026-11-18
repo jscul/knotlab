@@ -1,0 +1,2797 @@
+{
+  "entry_encoding": "K = D + 1, lexicographic upper triangle, hexadecimal ff denotes infinity",
+  "cutoff_rule": "Coalesce K strictly greater than L at L+1",
+  "sources": {
+    "VARIABLE-OUTPUT-READER-20261118-001G/VARIABLE-OUTPUT-READER-20261118-001G-P001_two_three_fresh/six_check.json": "21b673034abf89e7db4f800c2bc850a6ba313d2af77d37644cb8460b096c7fbc",
+    "VARIABLE-OUTPUT-READER-20261118-001D/VARIABLE-OUTPUT-READER-20261118-001D-P001_separator_inverse/active_part.json": "48a711f1fa5b6eca0aa05d47eba9011bb129af985f29f8fd3ea959981ee09ed3",
+    "VARIABLE-OUTPUT-READER-20261118-001D/VARIABLE-OUTPUT-READER-20261118-001D-P001_separator_inverse/check_span_controls.py": "ece53f8c0aa3f71c6be5984de374992d11c15bd3f4a20e9ff979d4c57e7cd6a2"
+  },
+  "controls": {
+    "auxiliary_root_and_two_nonroots/source": {
+      "archived_entries_checked": 325,
+      "independent_span_entries_checked": 325
+    },
+    "auxiliary_root_and_two_nonroots/rival": {
+      "archived_entries_checked": 325,
+      "independent_span_entries_checked": 325
+    },
+    "only_nonroot_children/source": {
+      "archived_entries_checked": 351,
+      "independent_span_entries_checked": 351
+    },
+    "only_nonroot_children/rival": {
+      "archived_entries_checked": 351,
+      "independent_span_entries_checked": 351
+    },
+    "active_part_completion_0": {
+      "actual_legal_triples": 8,
+      "independent_span_entries_checked": 496
+    },
+    "arbitrary_full_relabeling": {
+      "seed": 612018,
+      "entries_checked": 496,
+      "old_marks": [
+        26,
+        28,
+        30
+      ],
+      "new_marks": [
+        3,
+        16,
+        28
+      ],
+      "known_bijection": [
+        0,
+        30,
+        23,
+        25,
+        6,
+        4,
+        29,
+        2,
+        17,
+        7,
+        8,
+        5,
+        26,
+        11,
+        9,
+        15,
+        14,
+        24,
+        12,
+        20,
+        18,
+        19,
+        22,
+        31,
+        13,
+        1,
+        16,
+        21,
+        3,
+        27,
+        28,
+        10
+      ],
+      "checked_bijection": [
+        0,
+        23,
+        30,
+        4,
+        29,
+        25,
+        6,
+        17,
+        2,
+        8,
+        7,
+        26,
+        5,
+        9,
+        11,
+        14,
+        15,
+        20,
+        12,
+        24,
+        1,
+        13,
+        31,
+        22,
+        19,
+        18,
+        28,
+        10,
+        3,
+        27,
+        16,
+        21
+      ]
+    }
+  },
+  "fixed_single_distinction_branch": [
+    {
+      "kept_K_through": 5,
+      "width": 35,
+      "bijection_left_to_right": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "checked_upper_triangle_entries": 595,
+      "full_entries_different_under_map": 153,
+      "independent_span_entries_checked": [
+        595,
+        595
+      ],
+      "first_full_difference": {
+        "left_pair": [
+          3,
+          15
+        ],
+        "right_pair": [
+          3,
+          15
+        ],
+        "left_K": 9,
+        "right_K": 8
+      },
+      "next_cutoff_rejection": {
+        "kept_K_through": 6,
+        "pairs_at_next_value": [
+          78,
+          96
+        ],
+        "marked_isometry_exists": false
+      },
+      "left": {
+        "prefix": "auxiliary_root_and_two_nonroots/source",
+        "width": 35,
+        "junctions": 15,
+        "new_moves": [
+          [
+            [
+              25
+            ],
+            2
+          ],
+          [
+            [
+              26
+            ],
+            2
+          ],
+          [
+            [
+              27
+            ],
+            2
+          ],
+          [
+            [
+              28,
+              30
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              4
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              5,
+              6
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              7,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              5
+            ],
+            "fresh": [
+              9,
+              10
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              4,
+              7
+            ],
+            "fresh": [
+              11,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              6,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              14
+            ],
+            "fresh": [
+              19,
+              20,
+              21
+            ],
+            "parents": [
+              6
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              19
+            ],
+            "fresh": [
+              15,
+              18
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              20
+            ],
+            "fresh": [
+              16,
+              22,
+              23
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              21
+            ],
+            "fresh": [
+              17,
+              24,
+              25
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              25
+            ],
+            "fresh": [
+              26,
+              27
+            ],
+            "parents": [
+              10
+            ]
+          },
+          {
+            "site": 12,
+            "consumed": [
+              26
+            ],
+            "fresh": [
+              28,
+              29
+            ],
+            "parents": [
+              11
+            ]
+          },
+          {
+            "site": 13,
+            "consumed": [
+              27
+            ],
+            "fresh": [
+              30,
+              31
+            ],
+            "parents": [
+              11
+            ]
+          },
+          {
+            "site": 14,
+            "consumed": [
+              28,
+              30
+            ],
+            "fresh": [
+              32,
+              33,
+              34
+            ],
+            "parents": [
+              12,
+              13
+            ]
+          }
+        ],
+        "mark": [
+          9,
+          11,
+          13
+        ],
+        "allowed": true,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            14
+          ],
+          "retained_high_sites": []
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "pairwise_common_neighbors": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "neighbors_common_to_all_three": []
+        },
+        "full_upper_triangle_K_hex": "030303030404040405050505050508090908070707090909090a0a0b0b0b0b0d0d0d0304040303040405050505050508090908070707090909090a0a0b0b0b0b0d0d0d04040404030305050505050508090908070707090909090a0a0b0b0b0b0d0d0d0304050505040405050606090a0a090808080a0a0a0a0b0b0c0c0c0c0e0e0e05050405050504040606090a0a090808080a0a0a0a0b0b0c0c0c0c0e0e0e03050504040606050508090908070707090909090a0a0b0b0b0b0d0d0d0504050506060404070808070606060808080809090a0a0a0a0c0c0c0306060404050508090908070707090909090a0a0b0b0b0b0d0d0d060605050404070808070606060808080809090a0a0a0a0c0c0c0406060606090a0a090808080a0a0a0a0b0b0c0c0c0c0e0e0e06060606090a0a090808080a0a0a0a0b0b0c0c0c0c0e0e0e040606090a0a090808080a0a0a0a0b0b0c0c0c0c0e0e0e0606090a0a090808080a0a0a0a0b0b0c0c0c0c0e0e0e04070808070606060808080809090a0a0a0a0c0c0c05060605040404060606060707080808080a0a0a070703030505070707070808090909090b0b0b08070604060404080809090a0a0a0a0c0c0c0706060408080404050506060606080808030505070707070808090909090b0b0b0404060606060707080808080a0a0a04040406060707080808080a0a0a0606040405050606060608080804080809090a0a0a0a0c0c0c080809090a0a0a0a0c0c0c04050506060606080808030304040404060606030303040406060604040303060606030505050505050506060603050505060606050505"
+      },
+      "right": {
+        "prefix": "auxiliary_root_and_two_nonroots/rival",
+        "width": 35,
+        "junctions": 16,
+        "new_moves": [
+          [
+            [
+              25
+            ],
+            2
+          ],
+          [
+            [
+              26
+            ],
+            2
+          ],
+          [
+            [
+              27
+            ],
+            2
+          ],
+          [
+            [
+              28,
+              30
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              4
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              5,
+              6
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              7,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              5
+            ],
+            "fresh": [
+              9,
+              10
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              4,
+              7
+            ],
+            "fresh": [
+              11,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              6,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              9,
+              11,
+              13
+            ],
+            "fresh": [
+              15,
+              16,
+              17
+            ],
+            "parents": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              15
+            ],
+            "fresh": [
+              18,
+              19
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              19,
+              14
+            ],
+            "fresh": [
+              20,
+              21
+            ],
+            "parents": [
+              8,
+              6
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              16,
+              20
+            ],
+            "fresh": [
+              22,
+              23
+            ],
+            "parents": [
+              7,
+              9
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              17,
+              21
+            ],
+            "fresh": [
+              24,
+              25
+            ],
+            "parents": [
+              7,
+              9
+            ]
+          },
+          {
+            "site": 12,
+            "consumed": [
+              25
+            ],
+            "fresh": [
+              26,
+              27
+            ],
+            "parents": [
+              11
+            ]
+          },
+          {
+            "site": 13,
+            "consumed": [
+              26
+            ],
+            "fresh": [
+              28,
+              29
+            ],
+            "parents": [
+              12
+            ]
+          },
+          {
+            "site": 14,
+            "consumed": [
+              27
+            ],
+            "fresh": [
+              30,
+              31
+            ],
+            "parents": [
+              12
+            ]
+          },
+          {
+            "site": 15,
+            "consumed": [
+              28,
+              30
+            ],
+            "fresh": [
+              32,
+              33,
+              34
+            ],
+            "parents": [
+              13,
+              14
+            ]
+          }
+        ],
+        "mark": [
+          9,
+          11,
+          13
+        ],
+        "allowed": false,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            7,
+            15
+          ],
+          "retained_high_sites": [
+            7
+          ]
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ]
+        },
+        "full_upper_triangle_K_hex": "030303030404040405050505050508090908070707090909090a0a0b0b0b0b0d0d0d0304040303040405050505050508090908070707090909090a0a0b0b0b0b0d0d0d04040404030305050505050508090908070707090909090a0a0b0b0b0b0d0d0d030405050504040505060608080809080808090909090a0a0b0b0b0b0d0d0d0505040505050404060608080809080808090909090a0a0b0b0b0b0d0d0d03050504040606050508080808070707090909090a0a0b0b0b0b0d0d0d0504050506060404070808070606060808080809090a0a0a0a0c0c0c0306060404050508080808070707090909090a0a0b0b0b0b0d0d0d060605050404070808070606060808080809090a0a0a0a0c0c0c0406060606060606070708080808080809090a0a0a0a0c0c0c0606060606060607070707070707070808090909090b0b0b040606060606070708080808080809090a0a0a0a0c0c0c060606060607070707070707070808090909090b0b0b04060606070606060808080809090a0a0a0a0c0c0c05060605040404060606060707080808080a0a0a060603030505070707070808090909090b0b0b0607060406040407070808090909090b0b0b0706060407070404050506060606080808030505070707070808090909090b0b0b0404060606060707080808080a0a0a04040406060707080808080a0a0a060604040505060606060808080407070808090909090b0b0b07070808090909090b0b0b04050506060606080808030304040404060606030303040406060604040303060606030505050505050506060603050505060606050505"
+      },
+      "separator_distinction": 25,
+      "branch_distinctions_except_separator": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "first_branch_site": [
+        11,
+        12
+      ],
+      "two_sided_gluing_formula_entries_checked": 1190
+    },
+    {
+      "kept_K_through": 5,
+      "width": 36,
+      "bijection_left_to_right": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "checked_upper_triangle_entries": 630,
+      "full_entries_different_under_map": 90,
+      "independent_span_entries_checked": [
+        630,
+        630
+      ],
+      "first_full_difference": {
+        "left_pair": [
+          3,
+          18
+        ],
+        "right_pair": [
+          3,
+          18
+        ],
+        "left_K": 10,
+        "right_K": 8
+      },
+      "next_cutoff_rejection": {
+        "kept_K_through": 6,
+        "pairs_at_next_value": [
+          87,
+          105
+        ],
+        "marked_isometry_exists": false
+      },
+      "left": {
+        "prefix": "only_nonroot_children/source",
+        "width": 36,
+        "junctions": 15,
+        "new_moves": [
+          [
+            [
+              26
+            ],
+            2
+          ],
+          [
+            [
+              27
+            ],
+            2
+          ],
+          [
+            [
+              28
+            ],
+            2
+          ],
+          [
+            [
+              29,
+              31
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              4
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              5,
+              6
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              7,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              5
+            ],
+            "fresh": [
+              9,
+              10
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              4,
+              7
+            ],
+            "fresh": [
+              11,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              6,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              14
+            ],
+            "fresh": [
+              15,
+              16,
+              17
+            ],
+            "parents": [
+              6
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              15
+            ],
+            "fresh": [
+              18,
+              21,
+              22
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              16
+            ],
+            "fresh": [
+              19,
+              23,
+              24
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              17
+            ],
+            "fresh": [
+              20,
+              25,
+              26
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              26
+            ],
+            "fresh": [
+              27,
+              28
+            ],
+            "parents": [
+              10
+            ]
+          },
+          {
+            "site": 12,
+            "consumed": [
+              27
+            ],
+            "fresh": [
+              29,
+              30
+            ],
+            "parents": [
+              11
+            ]
+          },
+          {
+            "site": 13,
+            "consumed": [
+              28
+            ],
+            "fresh": [
+              31,
+              32
+            ],
+            "parents": [
+              11
+            ]
+          },
+          {
+            "site": 14,
+            "consumed": [
+              29,
+              31
+            ],
+            "fresh": [
+              33,
+              34,
+              35
+            ],
+            "parents": [
+              12,
+              13
+            ]
+          }
+        ],
+        "mark": [
+          9,
+          11,
+          13
+        ],
+        "allowed": true,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            14
+          ],
+          "retained_high_sites": []
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "pairwise_common_neighbors": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "neighbors_common_to_all_three": []
+        },
+        "full_upper_triangle_K_hex": "03030303040404040505050505050707070909090909090909090a0a0b0b0b0b0d0d0d030404030304040505050505050707070909090909090909090a0a0b0b0b0b0d0d0d0404040403030505050505050707070909090909090909090a0a0b0b0b0b0d0d0d03040505050404050506060808080a0a0a0a0a0a0a0a0a0b0b0c0c0c0c0e0e0e050504050505040406060808080a0a0a0a0a0a0a0a0a0b0b0c0c0c0c0e0e0e0305050404060605050707070909090909090909090a0a0b0b0b0b0d0d0d050405050606040406060608080808080808080809090a0a0a0a0c0c0c030606040405050707070909090909090909090a0a0b0b0b0b0d0d0d06060505040406060608080808080808080809090a0a0a0a0c0c0c04060606060808080a0a0a0a0a0a0a0a0a0b0b0c0c0c0c0e0e0e060606060808080a0a0a0a0a0a0a0a0a0b0b0c0c0c0c0e0e0e0406060808080a0a0a0a0a0a0a0a0a0b0b0c0c0c0c0e0e0e06060808080a0a0a0a0a0a0a0a0a0b0b0c0c0c0c0e0e0e0406060608080808080808080809090a0a0a0a0c0c0c0404040606060606060606060707080808080a0a0a04040406060404060606060707080808080a0a0a040604060606040406060707080808080a0a0a060604060606060404050506060606080808080804040808080809090a0a0a0a0c0c0c0808080404080809090a0a0a0a0c0c0c080808080404050506060606080808040808080809090a0a0a0a0c0c0c0808080809090a0a0a0a0c0c0c04080809090a0a0a0a0c0c0c080809090a0a0a0a0c0c0c04050506060606080808030304040404060606030303040406060604040303060606030505050505050506060603050505060606050505"
+      },
+      "right": {
+        "prefix": "only_nonroot_children/rival",
+        "width": 36,
+        "junctions": 16,
+        "new_moves": [
+          [
+            [
+              26
+            ],
+            2
+          ],
+          [
+            [
+              27
+            ],
+            2
+          ],
+          [
+            [
+              28
+            ],
+            2
+          ],
+          [
+            [
+              29,
+              31
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              4
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              5,
+              6
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              7,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              5
+            ],
+            "fresh": [
+              9,
+              10
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              4,
+              7
+            ],
+            "fresh": [
+              11,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              6,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              14
+            ],
+            "fresh": [
+              15,
+              16,
+              17
+            ],
+            "parents": [
+              6
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              9,
+              11,
+              13
+            ],
+            "fresh": [
+              18,
+              19,
+              20
+            ],
+            "parents": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              15,
+              18
+            ],
+            "fresh": [
+              21,
+              22
+            ],
+            "parents": [
+              7,
+              8
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              16,
+              19
+            ],
+            "fresh": [
+              23,
+              24
+            ],
+            "parents": [
+              7,
+              8
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              17,
+              20
+            ],
+            "fresh": [
+              25,
+              26
+            ],
+            "parents": [
+              7,
+              8
+            ]
+          },
+          {
+            "site": 12,
+            "consumed": [
+              26
+            ],
+            "fresh": [
+              27,
+              28
+            ],
+            "parents": [
+              11
+            ]
+          },
+          {
+            "site": 13,
+            "consumed": [
+              27
+            ],
+            "fresh": [
+              29,
+              30
+            ],
+            "parents": [
+              12
+            ]
+          },
+          {
+            "site": 14,
+            "consumed": [
+              28
+            ],
+            "fresh": [
+              31,
+              32
+            ],
+            "parents": [
+              12
+            ]
+          },
+          {
+            "site": 15,
+            "consumed": [
+              29,
+              31
+            ],
+            "fresh": [
+              33,
+              34,
+              35
+            ],
+            "parents": [
+              13,
+              14
+            ]
+          }
+        ],
+        "mark": [
+          9,
+          11,
+          13
+        ],
+        "allowed": false,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            8,
+            15
+          ],
+          "retained_high_sites": [
+            8
+          ]
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              4,
+              8
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              8
+            ]
+          ]
+        },
+        "full_upper_triangle_K_hex": "03030303040404040505050505050707070909090909090909090a0a0b0b0b0b0d0d0d030404030304040505050505050707070909090909090909090a0a0b0b0b0b0d0d0d0404040403030505050505050707070909090909090909090a0a0b0b0b0b0d0d0d03040505050404050506060808080808080a0a0a0a0a0a0b0b0c0c0c0c0e0e0e050504050505040406060808080808080a0a0a0a0a0a0b0b0c0c0c0c0e0e0e0305050404060605050707070808080909090909090a0a0b0b0b0b0d0d0d050405050606040406060608080808080808080809090a0a0a0a0c0c0c030606040405050707070808080909090909090a0a0b0b0b0b0d0d0d06060505040406060608080808080808080809090a0a0a0a0c0c0c040606060608080806060608080808080809090a0a0a0a0c0c0c0606060608080806060608080808080809090a0a0a0a0c0c0c04060608080806060608080808080809090a0a0a0a0c0c0c060608080806060608080808080809090a0a0a0a0c0c0c0406060606060608080808080809090a0a0a0a0c0c0c0404040606060606060606060707080808080a0a0a04040406060404060606060707080808080a0a0a040604060606040406060707080808080a0a0a060604060606060404050506060606080808060604040808080809090a0a0a0a0c0c0c0608080404080809090a0a0a0a0c0c0c080808080404050506060606080808040808080809090a0a0a0a0c0c0c0808080809090a0a0a0a0c0c0c04080809090a0a0a0a0c0c0c080809090a0a0a0a0c0c0c04050506060606080808030304040404060606030303040406060604040303060606030505050505050506060603050505060606050505"
+      },
+      "separator_distinction": 26,
+      "branch_distinctions_except_separator": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "first_branch_site": [
+        11,
+        12
+      ],
+      "two_sided_gluing_formula_entries_checked": 1260
+    }
+  ],
+  "two_serial_additions_per_side": {
+    "generation": {
+      "auxiliary_root_and_two_nonroots/source": [
+        {
+          "additions": 0,
+          "paths": 1,
+          "eligible": 0,
+          "eligible_by_width": {},
+          "eligible_with_high_in_marked_part": 0
+        },
+        {
+          "additions": 1,
+          "paths": 18,
+          "eligible": 4,
+          "eligible_by_width": {
+            "29": 4
+          },
+          "eligible_with_high_in_marked_part": 1
+        },
+        {
+          "additions": 2,
+          "paths": 332,
+          "eligible": 125,
+          "eligible_by_width": {
+            "31": 70,
+            "32": 55
+          },
+          "eligible_with_high_in_marked_part": 26
+        }
+      ],
+      "auxiliary_root_and_two_nonroots/rival": [
+        {
+          "additions": 0,
+          "paths": 1,
+          "eligible": 1,
+          "eligible_by_width": {
+            "26": 1
+          },
+          "eligible_with_high_in_marked_part": 1
+        },
+        {
+          "additions": 1,
+          "paths": 30,
+          "eligible": 30,
+          "eligible_by_width": {
+            "28": 15,
+            "29": 15
+          },
+          "eligible_with_high_in_marked_part": 30
+        },
+        {
+          "additions": 2,
+          "paths": 672,
+          "eligible": 672,
+          "eligible_by_width": {
+            "30": 168,
+            "31": 336,
+            "32": 168
+          },
+          "eligible_with_high_in_marked_part": 672
+        }
+      ],
+      "only_nonroot_children/source": [
+        {
+          "additions": 0,
+          "paths": 1,
+          "eligible": 0,
+          "eligible_by_width": {},
+          "eligible_with_high_in_marked_part": 0
+        },
+        {
+          "additions": 1,
+          "paths": 18,
+          "eligible": 4,
+          "eligible_by_width": {
+            "30": 4
+          },
+          "eligible_with_high_in_marked_part": 1
+        },
+        {
+          "additions": 2,
+          "paths": 332,
+          "eligible": 125,
+          "eligible_by_width": {
+            "32": 70,
+            "33": 55
+          },
+          "eligible_with_high_in_marked_part": 26
+        }
+      ],
+      "only_nonroot_children/rival": [
+        {
+          "additions": 0,
+          "paths": 1,
+          "eligible": 1,
+          "eligible_by_width": {
+            "27": 1
+          },
+          "eligible_with_high_in_marked_part": 1
+        },
+        {
+          "additions": 1,
+          "paths": 30,
+          "eligible": 30,
+          "eligible_by_width": {
+            "29": 15,
+            "30": 15
+          },
+          "eligible_with_high_in_marked_part": 30
+        },
+        {
+          "additions": 2,
+          "paths": 764,
+          "eligible": 764,
+          "eligible_by_width": {
+            "31": 191,
+            "32": 382,
+            "33": 191
+          },
+          "eligible_with_high_in_marked_part": 764
+        }
+      ]
+    },
+    "equal_width_path_pairs": {
+      "29": 120,
+      "30": 732,
+      "31": 36890,
+      "32": 68750,
+      "33": 10505
+    },
+    "by_cutoff": {
+      "5": {
+        "entering_path_pairs": 116997,
+        "exact_marked_comparisons": 2030,
+        "isometric_but_physically_identical": 0,
+        "opposing_cross_pairs_by_width": {
+          "29": 6,
+          "30": 10,
+          "31": 234,
+          "32": 817,
+          "33": 451
+        },
+        "opposing_cross_pairs_with_high_in_both_marked_parts_by_width": {
+          "29": 1,
+          "30": 1,
+          "31": 41,
+          "32": 114,
+          "33": 73
+        },
+        "opposing_cross_pairs_by_prefix": {
+          "auxiliary_root_and_two_nonroots/source versus auxiliary_root_and_two_nonroots/rival": 435,
+          "only_nonroot_children/source versus only_nonroot_children/rival": 1083
+        }
+      },
+      "6": {
+        "entering_path_pairs": 1518,
+        "exact_marked_comparisons": 0,
+        "isometric_but_physically_identical": 0,
+        "opposing_cross_pairs_by_width": {},
+        "opposing_cross_pairs_with_high_in_both_marked_parts_by_width": {},
+        "opposing_cross_pairs_by_prefix": {}
+      },
+      "full": {
+        "opposing_cross_pairs_by_width": {},
+        "excluded_by_cutoff": 6
+      }
+    },
+    "largest_opposing_capped_K": 5,
+    "full_opposing_collision": false,
+    "witness": {
+      "kept_K_through": 5,
+      "width": 29,
+      "bijection_left_to_right": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "checked_upper_triangle_entries": 406,
+      "full_entries_different_under_map": 105,
+      "independent_span_entries_checked": [
+        406,
+        406
+      ],
+      "first_full_difference": {
+        "left_pair": [
+          3,
+          15
+        ],
+        "right_pair": [
+          3,
+          15
+        ],
+        "left_K": 9,
+        "right_K": 8
+      },
+      "next_cutoff_rejection": {
+        "kept_K_through": 6,
+        "pairs_at_next_value": [
+          50,
+          68
+        ],
+        "marked_isometry_exists": false
+      },
+      "left": {
+        "prefix": "auxiliary_root_and_two_nonroots/source",
+        "width": 29,
+        "junctions": 12,
+        "new_moves": [
+          [
+            [
+              10,
+              12
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              4
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              5,
+              6
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              7,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              5
+            ],
+            "fresh": [
+              9,
+              10
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              4,
+              7
+            ],
+            "fresh": [
+              11,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              6,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              14
+            ],
+            "fresh": [
+              19,
+              20,
+              21
+            ],
+            "parents": [
+              6
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              19
+            ],
+            "fresh": [
+              15,
+              18
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              20
+            ],
+            "fresh": [
+              16,
+              22,
+              23
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              21
+            ],
+            "fresh": [
+              17,
+              24,
+              25
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              10,
+              12
+            ],
+            "fresh": [
+              26,
+              27,
+              28
+            ],
+            "parents": [
+              4,
+              5
+            ]
+          }
+        ],
+        "mark": [
+          9,
+          11,
+          13
+        ],
+        "allowed": true,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            11
+          ],
+          "retained_high_sites": [
+            11
+          ]
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          "pairwise_common_neighbors": [
+            [
+              1,
+              11
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "neighbors_common_to_all_three": []
+        },
+        "full_upper_triangle_K_hex": "0303030304040404050505050505080909080707070909090908080803040403030404050505050505080909080707070909090908080804040404030305050505050508090908070707090909090808080304050505040405050606090a0a090808080a0a0a0a07070705050405050504040606090a0a090808080a0a0a0a07070703050504040606050508090908070707090909090707070504050506060404070808070606060808080807070703060604040505080909080707070909090907070706060505040407080807060606080808080707070406060606090a0a090808080a0a0a0a07070706050606090a0a090808080a0a0a0a050505040606090a0a090808080a0a0a0a0707070606090a0a090808080a0a0a0a0505050407080807060606080808080707070506060504040406060606070707070703030505070707070a0a0a0807060406040408080b0b0b07060604080804040b0b0b030505070707070a0a0a0404060606060909090404040606090909060604040909090408080b0b0b08080b0b0b040b0b0b0b0b0b050505"
+      },
+      "right": {
+        "prefix": "auxiliary_root_and_two_nonroots/rival",
+        "width": 29,
+        "junctions": 13,
+        "new_moves": [
+          [
+            [
+              10,
+              12
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              4
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              5,
+              6
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              7,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              5
+            ],
+            "fresh": [
+              9,
+              10
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              4,
+              7
+            ],
+            "fresh": [
+              11,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              6,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              9,
+              11,
+              13
+            ],
+            "fresh": [
+              15,
+              16,
+              17
+            ],
+            "parents": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              15
+            ],
+            "fresh": [
+              18,
+              19
+            ],
+            "parents": [
+              7
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              19,
+              14
+            ],
+            "fresh": [
+              20,
+              21
+            ],
+            "parents": [
+              8,
+              6
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              16,
+              20
+            ],
+            "fresh": [
+              22,
+              23
+            ],
+            "parents": [
+              7,
+              9
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              17,
+              21
+            ],
+            "fresh": [
+              24,
+              25
+            ],
+            "parents": [
+              7,
+              9
+            ]
+          },
+          {
+            "site": 12,
+            "consumed": [
+              10,
+              12
+            ],
+            "fresh": [
+              26,
+              27,
+              28
+            ],
+            "parents": [
+              4,
+              5
+            ]
+          }
+        ],
+        "mark": [
+          9,
+          11,
+          13
+        ],
+        "allowed": false,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            7,
+            12
+          ],
+          "retained_high_sites": [
+            7,
+            12
+          ]
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ]
+        },
+        "full_upper_triangle_K_hex": "03030303040404040505050505050809090807070709090909080808030404030304040505050505050809090807070709090909080808040404040303050505050505080909080707070909090908080803040505050404050506060808080908080809090909070707050504050505040406060808080908080809090909070707030505040406060505080808080707070909090907070705040505060604040708080706060608080808070707030606040405050808080807070709090909070707060605050404070808070606060808080807070704060606060606060707080808080808070707060506060606060707070707070707050505040606060606070708080808080807070706060606060707070707070707050505040606060706060608080808070707050606050404040606060607070706060303050507070707070707060706040604040707070707070606040707040407070703050507070707080808040406060606080808040404060608080806060404080808040707080808070708080804080808080808050505"
+      }
+    }
+  },
+  "one_high_cap_on_active_prefix": {
+    "distinct_placements_by_width": {
+      "34": 1,
+      "35": 2
+    },
+    "placements_with_legal_triples_by_width": {
+      "35": 1
+    },
+    "equal_width_type_pairs": {
+      "35": 1
+    },
+    "by_cutoff": {
+      "3": {
+        "entering_pairs": 1,
+        "exact_isometry_comparisons": 1,
+        "isometric_pairs_by_width": {
+          "35": 1
+        },
+        "opposing_pairs_by_width": {
+          "35": 1
+        }
+      },
+      "4": {
+        "entering_pairs": 1,
+        "exact_isometry_comparisons": 1,
+        "isometric_pairs_by_width": {
+          "35": 1
+        },
+        "opposing_pairs_by_width": {
+          "35": 1
+        }
+      },
+      "5": {
+        "entering_pairs": 1,
+        "exact_isometry_comparisons": 0,
+        "isometric_pairs_by_width": {},
+        "opposing_pairs_by_width": {}
+      },
+      "full": {
+        "isometric_pairs_by_width": {},
+        "opposing_pairs_by_width": {},
+        "excluded_by_cutoff": 5
+      }
+    },
+    "largest_opposing_capped_K": 4,
+    "full_opposing_collision": false,
+    "witness": {
+      "kept_K_through": 4,
+      "width": 35,
+      "bijection_left_to_right": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "checked_upper_triangle_entries": 595,
+      "full_entries_different_under_map": 96,
+      "independent_span_entries_checked": [
+        595,
+        595
+      ],
+      "first_full_difference": {
+        "left_pair": [
+          0,
+          32
+        ],
+        "right_pair": [
+          0,
+          32
+        ],
+        "left_K": 13,
+        "right_K": 12
+      },
+      "next_cutoff_rejection": {
+        "kept_K_through": 5,
+        "pairs_at_next_value": [
+          85,
+          75
+        ],
+        "marked_isometry_exists": false
+      },
+      "left": {
+        "prefix": "active_part_completion_0",
+        "width": 35,
+        "junctions": 16,
+        "new_moves": [
+          [
+            [
+              26,
+              28
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              5
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              4,
+              7
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              6,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              4
+            ],
+            "fresh": [
+              9,
+              11
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              5,
+              6
+            ],
+            "fresh": [
+              10,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              7,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              9,
+              10
+            ],
+            "fresh": [
+              15,
+              16
+            ],
+            "parents": [
+              4,
+              5
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              11,
+              12,
+              13
+            ],
+            "fresh": [
+              17,
+              18,
+              19
+            ],
+            "parents": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              17
+            ],
+            "fresh": [
+              20,
+              21
+            ],
+            "parents": [
+              8
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              18
+            ],
+            "fresh": [
+              22,
+              23
+            ],
+            "parents": [
+              8
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              19
+            ],
+            "fresh": [
+              24,
+              25
+            ],
+            "parents": [
+              8
+            ]
+          },
+          {
+            "site": 12,
+            "consumed": [
+              20,
+              22
+            ],
+            "fresh": [
+              26,
+              27
+            ],
+            "parents": [
+              9,
+              10
+            ]
+          },
+          {
+            "site": 13,
+            "consumed": [
+              21,
+              24
+            ],
+            "fresh": [
+              28,
+              29
+            ],
+            "parents": [
+              9,
+              11
+            ]
+          },
+          {
+            "site": 14,
+            "consumed": [
+              23,
+              25
+            ],
+            "fresh": [
+              30,
+              31
+            ],
+            "parents": [
+              10,
+              11
+            ]
+          },
+          {
+            "site": 15,
+            "consumed": [
+              26,
+              28
+            ],
+            "fresh": [
+              32,
+              33,
+              34
+            ],
+            "parents": [
+              12,
+              13
+            ]
+          }
+        ],
+        "mark": [
+          27,
+          29,
+          30
+        ],
+        "allowed": true,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            8,
+            15
+          ],
+          "retained_high_sites": [
+            8,
+            15
+          ]
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ]
+          ],
+          "pairwise_common_neighbors": [
+            [
+              9,
+              15
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ]
+          ],
+          "neighbors_common_to_all_three": []
+        },
+        "full_upper_triangle_K_hex": "030303040304040405050505050507070909090a0a0a0a0a0a0b0b0b0b0b0b0d0d0d0304030404030405050505050507070909090a0a0a0a0a0a0b0b0b0b0b0b0d0d0d04040403040305050505050507070909090a0a0a0a0a0a0b0b0b0b0b0b0d0d0d040305050504050405060606060808080909090909090a0a0a0a0a0a0c0c0c0505030504060406050506060808080909090909090a0a0a0a0a0a0c0c0c04050505040504060606060808080909090909090a0a0a0a0a0a0c0c0c050306040604050506060808080909090909090a0a0a0a0a0a0c0c0c0405060506040406060808080909090909090a0a0a0a0a0a0c0c0c06050605040406060808080909090909090a0a0a0a0a0a0c0c0c040406060604040606060707070707070808080808080a0a0a0604060604040606060707070707070808080808080a0a0a06060606060606060707070707070808080808080a0a0a060606060606060707070707070808080808080a0a0a0406060606060707070707070808080808080a0a0a06060606060707070707070808080808080a0a0a040606060707070707070808080808080a0a0a0606060707070707070808080808080a0a0a0606030305060506050505050808080808060506030306050505080805050808080605060503030808050505050808080304050506040405050707070707050604050505040407070707070306050404070705050707070504050507070404080808030707040405050707070707050504040808080405070707050505070707070707070407070505050707070707040a0a0a0a0a0a050505"
+      },
+      "right": {
+        "prefix": "active_part_completion_0",
+        "width": 35,
+        "junctions": 16,
+        "new_moves": [
+          [
+            [
+              26,
+              28,
+              30
+            ],
+            3
+          ]
+        ],
+        "history": [
+          {
+            "site": 0,
+            "consumed": [],
+            "fresh": [
+              0,
+              1,
+              2
+            ],
+            "parents": []
+          },
+          {
+            "site": 1,
+            "consumed": [
+              0
+            ],
+            "fresh": [
+              3,
+              5
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 2,
+            "consumed": [
+              1
+            ],
+            "fresh": [
+              4,
+              7
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 3,
+            "consumed": [
+              2
+            ],
+            "fresh": [
+              6,
+              8
+            ],
+            "parents": [
+              0
+            ]
+          },
+          {
+            "site": 4,
+            "consumed": [
+              3,
+              4
+            ],
+            "fresh": [
+              9,
+              11
+            ],
+            "parents": [
+              1,
+              2
+            ]
+          },
+          {
+            "site": 5,
+            "consumed": [
+              5,
+              6
+            ],
+            "fresh": [
+              10,
+              12
+            ],
+            "parents": [
+              1,
+              3
+            ]
+          },
+          {
+            "site": 6,
+            "consumed": [
+              7,
+              8
+            ],
+            "fresh": [
+              13,
+              14
+            ],
+            "parents": [
+              2,
+              3
+            ]
+          },
+          {
+            "site": 7,
+            "consumed": [
+              9,
+              10
+            ],
+            "fresh": [
+              15,
+              16
+            ],
+            "parents": [
+              4,
+              5
+            ]
+          },
+          {
+            "site": 8,
+            "consumed": [
+              11,
+              12,
+              13
+            ],
+            "fresh": [
+              17,
+              18,
+              19
+            ],
+            "parents": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "site": 9,
+            "consumed": [
+              17
+            ],
+            "fresh": [
+              20,
+              21
+            ],
+            "parents": [
+              8
+            ]
+          },
+          {
+            "site": 10,
+            "consumed": [
+              18
+            ],
+            "fresh": [
+              22,
+              23
+            ],
+            "parents": [
+              8
+            ]
+          },
+          {
+            "site": 11,
+            "consumed": [
+              19
+            ],
+            "fresh": [
+              24,
+              25
+            ],
+            "parents": [
+              8
+            ]
+          },
+          {
+            "site": 12,
+            "consumed": [
+              20,
+              22
+            ],
+            "fresh": [
+              26,
+              27
+            ],
+            "parents": [
+              9,
+              10
+            ]
+          },
+          {
+            "site": 13,
+            "consumed": [
+              21,
+              24
+            ],
+            "fresh": [
+              28,
+              29
+            ],
+            "parents": [
+              9,
+              11
+            ]
+          },
+          {
+            "site": 14,
+            "consumed": [
+              23,
+              25
+            ],
+            "fresh": [
+              30,
+              31
+            ],
+            "parents": [
+              10,
+              11
+            ]
+          },
+          {
+            "site": 15,
+            "consumed": [
+              26,
+              28,
+              30
+            ],
+            "fresh": [
+              32,
+              33,
+              34
+            ],
+            "parents": [
+              12,
+              13,
+              14
+            ]
+          }
+        ],
+        "mark": [
+          27,
+          29,
+          30
+        ],
+        "allowed": false,
+        "marked_part": {
+          "status": "retained",
+          "high_sites": [
+            8,
+            15
+          ],
+          "retained_high_sites": [
+            8,
+            15
+          ]
+        },
+        "mark_incidence_for_grading": {
+          "holders_by_mark": [
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14,
+              15
+            ]
+          ]
+        },
+        "full_upper_triangle_K_hex": "030303040304040405050505050507070909090a0a0a0a0a0a0b0b0b0b0b0b0c0c0c0304030404030405050505050507070909090a0a0a0a0a0a0b0b0b0b0b0b0c0c0c04040403040305050505050507070909090a0a0a0a0a0a0b0b0b0b0b0b0c0c0c040305050504050405060606060808080909090909090a0a0a0a0a0a0b0b0b0505030504060406050506060808080909090909090a0a0a0a0a0a0b0b0b04050505040504060606060808080909090909090a0a0a0a0a0a0b0b0b050306040604050506060808080909090909090a0a0a0a0a0a0b0b0b0405060506040406060808080909090909090a0a0a0a0a0a0b0b0b06050605040406060808080909090909090a0a0a0a0a0a0b0b0b04040606060404060606070707070707080808080808090909060406060404060606070707070707080808080808090909060606060606060607070707070708080808080809090906060606060606070707070707080808080808090909040606060606070707070707080808080808090909060606060607070707070708080808080809090904060606070707070707080808080808090909060606070707070707080808080808090909060603030506050605050505080809090906050603030605050508080505090909060506050303080805050505090909030405050604040505070708080805060405050504040707080808030605040407070505080808050405050707040408080803070704040505080808070705050404080808040607060706060607070707080808040607060606070708080804060606080808060606"
+      }
+    },
+    "raw_placements_by_width": {
+      "34": 1,
+      "35": 4
+    }
+  }
+}

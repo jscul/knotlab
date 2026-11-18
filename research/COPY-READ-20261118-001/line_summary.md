@@ -12,7 +12,7 @@ that the cheapest growth gains one order at every doubling and never keeps two:
 - `COPY-CLASS-20261118-001` (added after the summary, on the coordinator's go-ahead)
 - `FAR-SIGN-20261118-001` (the last study, on the coordinator's go-ahead; refereed)
 
-All seven are refereed and folded in; `MID-RULE`'s free-form runs (a check of proved statements) are still running. The coordinator stopped the line here: it had come down to "is it local or not", with
+All are refereed and folded in. `MID-RULE`'s free-form runs, a check of proved statements, finished and held. The coordinator stopped the line here: it had come down to "is it local or not", with
 returns shrinking on bases this small.
 
 **Scope throughout.** Growth by A99's moves (one new distinction with one to three betweenness knots; every old state kept),

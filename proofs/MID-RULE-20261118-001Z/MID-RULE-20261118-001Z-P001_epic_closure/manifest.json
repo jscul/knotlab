@@ -14,7 +14,7 @@
  "authoritative_metadata": "manifest.json",
  "title": "Closure: a rule whose second phase reads only the fill's knots",
  "status": "Proved",
- "claim": "Ledger closing MID-RULE-20261118-001 (part F pending): ticket A (E1-E5: a new crossing needs two different end knots; fills certified with at most one end knot keep every relation; the two-middle and one-end rules keep two orders forever from a line; their free forms refill from a full grid and reach one from a line iff the first fill spans it) and ticket B part K (the knot-local forms keep two orders and starve: exactly one fill per run in 210 of 210 runs to n = 60). Referee pending. No new claim.",
+ "claim": "Ledger closing MID-RULE-20261118-001: ticket A (E1-E5: a new crossing needs two different end knots; fills certified with at most one end knot keep every relation; the two-middle and one-end rules keep two orders forever from a line; their free forms refill from a full grid and reach one from a line iff the first fill spans it) and ticket B part K (the knot-local forms keep two orders and starve: exactly one fill per run in 210 of 210 runs to n = 60). Part F (free forms): strong from 2 x 2 in 20 of 20 runs; from lines, full grid exactly when the first fill spans (60 of 60); ANY raises lambda in 10 of 10. Refereed. No new claim.",
  "dependencies": [
   "MID-RULE-20261118-001A",
   "MID-RULE-20261118-001B"
@@ -43,7 +43,8 @@
   "experiments/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/contract.json": "ada5c32dcfe1c234aeb6671d006568ce999b2fb4e0c0e492d7d2739a9af86991",
   "artifacts/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/part_K.json.gz": "120b503eecf63c95c63be11afd5b00ba4bd47f9b67e4caf60e3aad35e0ed36ee",
   "proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/manifest.json": "591c9f32e0e9e60305981bdd34869a4eab9413bc2d9531257cd3ebb46f9ef89d",
-  "proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/result.json": "37ed71d27ec245092d911329340083c3ed74ff3ef0517a6eaac9e60a752a1363"
+  "proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/result.json": "37ed71d27ec245092d911329340083c3ed74ff3ef0517a6eaac9e60a752a1363",
+  "artifacts/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/part_F.json.gz": "e82af5bf8a4f12c0e57c5f92311f47d83d37d30865bed64b32d14a89e10ce7c7"
  },
  "paths": {
   "manifest": "proofs/MID-RULE-20261118-001Z/MID-RULE-20261118-001Z-P001_epic_closure/manifest.json",

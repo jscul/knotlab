@@ -2,15 +2,16 @@
 
 Epic `MID-RULE-20261118-001`, 18 November 2026, by Claude. It takes `KEEP-READ-20261118-001`'s first direction, with the
 coordinator's go-ahead. Goals G1 and G16; challenges A101. Refereed: report [R1](referee-R1/report.md), confirmed with fixes, no
-Block, folded in on 18 November (see Referee). **Stress test pending:** part F, the free forms' runs
-(which check E4 and E5, both proved), is still running and will be folded in when it finishes (`docs/LONG_RUNNING.md`, MID-RULE-B1).
+Block, folded in on 18 November (see Referee). **Stress test done:** part F, the free forms' runs (which check E4 and E5, both
+proved), finished at 14:25 UTC and is folded in below. Q2, Q3 and Q5 held, so all five predictions held (`docs/LONG_RUNNING.md`,
+MID-RULE-B1).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `1f3557541` at 09:15:27 UTC.
-- The run: part K from 09:15 to 09:55 UTC; part F started at 09:16 UTC and is still running.
+- The run: part K from 09:15 to 09:55 UTC; part F from 09:16 to 14:25 UTC (90 runs, 18,598 s).
 - Proof: [proof.md](../../proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/proof.md).
 - Code: [midlib.py, run.py, checks.py and readout.py](../../experiments/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/).
-- Results: [part_K.json.gz](../../artifacts/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/).
+- Results: [part_K.json.gz, part_F.json.gz, results.json.gz and readout.json](../../artifacts/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/).
 
 ## The answer
 
@@ -22,7 +23,11 @@ It is also a conservative one: no crossing is ever added again. Knot-local, it k
 never accepts a second fill: in effect "one free fill, then lengthen". Free, it grows full grids from a line in only 6 / (n (n − 1))
 of runs: 30% at five, 11% at eight, 4.5% at twelve.
 - **With knots on any pairs (free).** It refills every new row from a full grid. From a line it reaches a full grid exactly when
-  its first fill spans the line (proved; the runs that check this are pending).
+  its first fill spans the line (proved).
+  - Part F checks it on 60 free runs from lines of 5, 8 and 12. Replaying each run's first fill (post hoc, a check of E5), every run
+    whose first fill spans reached a full grid (11 of 11), and none of the other 49 did.
+  - The strong shares were 30% and 40% at five, 10% and 20% at eight, and 10% and 0% at twelve (10 runs each). E5's share
+    6 / (n (n − 1)) predicts 30%, 10.7% and 4.5%.
 - **With knots only on pairs that already share one (knot-local).** It starves. In all 105 runs from bracketings of 5 to 8, to
   n = 60, both forms (two or more middle knots; at most one end knot) made exactly one fill, the free first one. After that they
   only lengthened: two orders throughout, and no full grid. Right after a lengthening, the new distinction shares knots only with
@@ -44,13 +49,14 @@ crosses nothing, and grows full grids only from a first crossing that reaches ev
 
 | # | Prediction | Verdict | Reading |
 | --- | --- | --- | --- |
-| Q1 | No phase-two step changes k or λ | held (part K) | 210 of 210 knot-local runs; part F pending |
-| Q2 | Free forms strong from 2 × 2 | pending | proved (E4) |
-| Q3 | Free forms from lines strong iff the first fill spans | pending | proved (E5) |
+| Q1 | No phase-two step changes k or λ | held | 210 of 210 knot-local runs and 80 of 80 free runs (MID2 and ONE) |
+| Q2 | Free forms strong from 2 × 2 | held | 20 of 20 runs to n = 60, two orders and a full grid at every lengthening (E4, proved) |
+| Q3 | Free forms from lines strong iff the first fill spans | held | as the frozen read-out scores it: strong exactly when a full grid is reached, 60 of 60; spanning first fill ⟺ full grid, 60 of 60 (post hoc replay, E5) |
 | Q4 | Knot-local forms starve (fill fraction ≤ 0.15 on steps 31–60), λ = 2 throughout | held | exactly one fill per run, fill fraction 0 |
-| Q5 | ANY raises λ above 2 in every run | pending | |
+| Q5 | ANY raises λ above 2 in every run | held | λ reached 6 from the line of five and 7 from the line of eight, in 10 of 10 runs |
 
-Two held and three are pending, which part F will settle. The advisor predicted Q4's "about one fill per run" exactly.
+5 of 5 held, three of them after part F. The advisor predicted Q4's "about one fill per run" exactly. One MID2 run from the line of
+twelve stopped at the 60-state limit at n = 55. Its readings hold up to there, and it is counted as not strong (no full grid).
 
 ## What the knot picture explained
 
@@ -73,7 +79,7 @@ that can never change the number of orders.
 
 ## Limitations
 
-- Part F (the free forms, a check of proved statements) is pending.
+- Part F's free runs stop at 60 states; one stopped early (n = 55). Ten runs per free start.
 - Knot-local runs: one seed per bracketing, to n = 60.
 
 ## Reproduce
@@ -113,13 +119,13 @@ Folded in the same day, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.m
    free fill is a given. The headline above is the referee's.
 2. **Not a block.** "On any base" now reads "on any base of betweenness knots", where splits and λ are defined.
 
-Q2 and Q5 wait on part F; Q3 was checked by the referee on the line of five only.
+Q2, Q3 and Q5 were settled by part F after the fold-in (all held). Q3 was also checked by the referee on the line of five.
 
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: a rule reading only the fill's knots after the switch | **Status:** Successful (referee pending; part F pending), 2 of 5 held, 3 pending | It keeps two orders forever (proved); knot-local, it starves after one fill |
+| This attempt: a rule reading only the fill's knots after the switch | **Status:** Successful (refereed), 5 of 5 held | It keeps two orders forever (proved); knot-local, it starves after one fill |
 | Local direction: keeping two orders by a local rule | Promising on safety, obstructed on growth | Conservative rules never absorb uncrossed splits |
 | Broader exploration: growth that absorbs | Unexplored | Absorbing a split needs a fill with two end knots, which the local test refuses |
 | Long-term goal: G1 | Capability gained; obstruction learned | Two orders held locally, full growth needs the first crossing to reach everything |

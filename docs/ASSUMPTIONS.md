@@ -159,7 +159,7 @@ evidence: results and their status come from the records each entry links.
 | [A102](#a102--an-endless-bases-counts-are-read-in-its-maximal-entropy-weighting) | An endless base's counts are read in its maximal-entropy weighting | reading | Assumed |
 | [A103](#a103--a-bases-values-are-data-which-value-is-called-1-is-part-of-the-base) | A base's values are data: which value is called 1 is part of the base | reading | Assumed |
 | [A104](#a104--parity-growth-is-judged-under-the-complete-round-joining-rule) | Parity growth is judged under the complete-round joining rule | scope | Assumed |
-| [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
+| [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Under challenge |
 
 ## Entries
 
@@ -3078,7 +3078,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A105 · A growth starts from the smallest knot
 
-**Assumed** · 2026-11-18 · working premise
+**Under challenge** · 2026-11-18 · working premise
 
 - **Statement.** A growth from one knot starts from the smallest knot of its law: under parity, the three-place parity knot, two
   loops' distinctions and one contact.
@@ -3092,4 +3092,6 @@ evidence: results and their status come from the records each entry links.
   (2^(a−1) for a places), or a competition between first knots of different sizes in one base, and test whether the three-place
   knot wins; or show that nothing in the law prefers it, which leaves the number a choice of start.
 - **History.**
+  - 2026-11-18 · Under challenge: `FIRST-KNOT-20261118-001` asks whether the parity law or the joining rule prefers the smallest
+    first knot (two first knots of different sizes, apart and sharing a distinction, under one count and under the fewest counts).
   - 2026-11-18 · Recorded by `FRESH-COUNT-20261118-001`.

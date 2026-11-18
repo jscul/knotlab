@@ -70,7 +70,7 @@ P1 and P2.
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained). **Assumptions:** none new. **Basket:** B196,
 `FRESH-COUNT-20261118-001#1`, `RING-GROWTH-20261118-001#2`, B202; none taken.
 
-## Final report as sent (2026-11-18 23:25 UTC)
+## Final report as sent (2026-11-18 22:47 UTC)
 
 **Outcome:** Separately born chains combine when the junctions they are each asked to join share a neighbour, almost always. With that one link, the dimension (junctions by round) is predicted in 11,649 of 11,658 census arrangements that grow with a birth, and in 148 of 149 six-knot samples, with no overshoot anywhere. The frozen test failed by one arrangement. Closed, partially successful, referee pending.
 

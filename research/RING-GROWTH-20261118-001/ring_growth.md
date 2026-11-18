@@ -119,7 +119,7 @@ confirmed). It also cautioned against calling the growth a fractal.
 
 **Basket:** B196, `FRESH-COUNT-20261118-001#1`, B202; #1 here is `TOUCH-CENSUS-20261118-001#2`, taken next.
 
-## Final report as sent (2026-11-18 22:50 UTC)
+## Final report as sent (2026-11-18 22:41 UTC)
 
 **Outcome:** The ring grows exponentially, about 13.5% more junctions every round. For the ring of four four-place knots and one five-place knot under the cheapest counts, the junctions made in round t are exactly those of five rounds earlier plus those of six rounds earlier: c(t) = c(t − 5) + c(t − 6), at the rate 1.1347 (the root of x⁶ = x + 1). The count is proved from the advisor's model, and the model is proved to be the growth in outline and checked exactly through round 20. Closed, referee pending.
 

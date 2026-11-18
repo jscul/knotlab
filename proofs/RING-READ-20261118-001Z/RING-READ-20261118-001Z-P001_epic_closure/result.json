@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RING-READ-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "RING-READ-20261118-001Z",
+ "proof": "RING-READ-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing RING-READ-20261118-001: ticket A (tables and the first readers; G, F1-F3, P1, P2, P5 held, P3' failed, P3/P4/P6 held at rounds 10-14 and failed from 15) and ticket B (the incremental reader; Q0-Q4 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/RING-READ-20261118-001A/RING-READ-20261118-001A-E001_tables/contract.json": "Frozen",
+   "artifacts/RING-READ-20261118-001A/RING-READ-20261118-001A-E001_tables/results.json": "run output",
+   "experiments/RING-READ-20261118-001B/RING-READ-20261118-001B-E001_incremental/contract.json": "Frozen",
+   "artifacts/RING-READ-20261118-001B/RING-READ-20261118-001B-E001_incremental/results.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

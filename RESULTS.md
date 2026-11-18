@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 494 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 495 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 494 epics with their closures
+- [Epics](#epics): all 495 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1718,6 +1718,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Why does a growth begin with the smallest knot? (`FIRST-KNOT-20261118-001`) | [closure](proofs/FIRST-KNOT-20261118-001Z/FIRST-KNOT-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/FIRST-KNOT-20261118-001/) |
 | 2026-11-18 | The distance that reads freedom (`FREE-READ-20261118-001`) | [closure](proofs/FREE-READ-20261118-001Z/FREE-READ-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/FREE-READ-20261118-001/) |
 | 2026-11-18 | Can a growth rule read its own dimension from distances? (`FRESH-COUNT-20261118-001`) | [closure](proofs/FRESH-COUNT-20261118-001Z/FRESH-COUNT-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/FRESH-COUNT-20261118-001/) |
+| 2026-11-18 | Do growth behaviours compose when growing parts are joined? (`JOIN-GROWTH-20261118-001`) | — | [folder](research/JOIN-GROWTH-20261118-001/) |
 | 2026-11-18 | What the knots read in SEED's second phase (`KEEP-READ-20261118-001`) | [closure](proofs/KEEP-READ-20261118-001Z/KEEP-READ-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/KEEP-READ-20261118-001/) |
 | 2026-11-18 | What the knots read when nothing crosses yet (`KNOT-SWITCH-20261118-001`) | [closure](proofs/KNOT-SWITCH-20261118-001Z/KNOT-SWITCH-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/KNOT-SWITCH-20261118-001/) |
 | 2026-11-18 | A law whose free room runs only along two orders (`LOCAL-ROOM-20261118-001`) | [closure](proofs/LOCAL-ROOM-20261118-001Z/LOCAL-ROOM-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/LOCAL-ROOM-20261118-001/) |
@@ -1736,7 +1737,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | How far the weave's rim pushes bond distance (`RIM-EXCESS-20261118-001`) | [closure](proofs/RIM-EXCESS-20261118-001Z/RIM-EXCESS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/RIM-EXCESS-20261118-001/) |
 | 2026-11-18 | Does one formula give the growth rate of every ring of knots? (`RING-FORMULA-20261118-001`) | [closure](proofs/RING-FORMULA-20261118-001Z/RING-FORMULA-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/RING-FORMULA-20261118-001/) |
 | 2026-11-18 | Why do rings of five knots grow faster than any power under the cheapest counts? (`RING-GROWTH-20261118-001`) | [closure](proofs/RING-GROWTH-20261118-001Z/RING-GROWTH-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/RING-GROWTH-20261118-001/) |
-| 2026-11-18 | Can the ring be regrown from its bond distances past six? (`RING-READ-20261118-001`) | — | [folder](research/RING-READ-20261118-001/) |
+| 2026-11-18 | Can the ring be regrown from its bond distances past six? (`RING-READ-20261118-001`) | [closure](proofs/RING-READ-20261118-001Z/RING-READ-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/RING-READ-20261118-001/) |
 | 2026-11-18 | What the arrangement of the count's rows holds (`ROW-ARRANGE-20261118-001`) | [closure](proofs/ROW-ARRANGE-20261118-001Z/ROW-ARRANGE-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/ROW-ARRANGE-20261118-001/) |
 | 2026-11-18 | Which dimensions does the cheapest growth give across arrangements of touching knots? (`TOUCH-CENSUS-20261118-001`) | [closure](proofs/TOUCH-CENSUS-20261118-001Z/TOUCH-CENSUS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/TOUCH-CENSUS-20261118-001/) |
 | 2026-11-18 | Where the cumulant distance is steps apart, and a repair (`TREE-STEPS-20261118-001`) | [closure](proofs/TREE-STEPS-20261118-001Z/TREE-STEPS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/TREE-STEPS-20261118-001/) |

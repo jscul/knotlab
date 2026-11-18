@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "experiment_id": "JOIN-GROWTH-20261118-001B-E001",
+ "ticket": "JOIN-GROWTH-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "When a part is joined to a ring of knots under the cheapest parity growth, does the product law (return equation y^n (1+y)^j prod F_k(y) = 1, F_s = 1 + y(1+y)^s, renewing offshoot 1/(1-y)) predict the growth exactly on fresh starts; do joins always speed the ring; how do two joined rings grow; do joins without a ring stay polynomial?",
+ "definitions": {
+  "bare start": "each knot max(3, shared + round-1 demand) places plus listed surplus distinctions",
+  "holds": "the predicted annihilator annihilates the grown counts from some round t0 <= 12 with at least three rounds tested past its order",
+  "growth": "junctions per round (not bond balls)"
+ },
+ "public_inputs": {
+  "code": "fastlib.py (sha256 984252a28a9c4448d922119d1c7ba6f1bbfc4eb714c801fa12d3d864e348161d), joinlib.py (sha256 007e597cc3157c29d5768eafc0a704fd2aa8235cb1768da69dd0062001dd7588), reclib.py (sha256 e0b2fae70f9baf5aff98e0a96093fc5b1b9aeeb6103ff6a63cdbef7027dcdf01), job.py (sha256 ad0bcd826e172f189cc2d1e2a146df56e1523e974ea3741576a9a5e23b9058a0), merge.py (sha256 fae25419407abd77a785efb5167765206cabb1872d71df09b470518fa09597f4), checks.py (sha256 c7962e51c4c2f05f35282f6fde5ec77f0c2a08fef8a3539814adde8ecc8f6c82)",
+  "run": "scripts/longrun.py launch job.py (7 workers, 2G per case, 900 s per case); .venv/bin/python -B merge.py <out dir> <results.json>",
+  "reused": "FIRST-KNOT-20261118-001B startlib.py and FRESH-COUNT-20261118-001B freelib.py (the policy); TOUCH-CENSUS-20261118-001B arrlib.py (gate starts)"
+ },
+ "forbidden_inputs": [
+  "Changing a case, a predicted annihilator or a decision rule after reading any census result"
+ ],
+ "primary_observable": "P1-P10 of research/JOIN-GROWTH-20261118-001/preregistration.md",
+ "cheapest_meaningful_control": "family E (joins without a ring) and the gate's clean rings",
+ "predictions": {
+  "P1": "lone adjunct x^(n+s+1) = x^(s+1) + (1+x)^s (A1)",
+  "P2": "products at separate knots, any positions (A2)",
+  "P3": "two lone adjuncts on one knot multiply (A3)",
+  "P4": "bare two-fold piece (x-1)(x^(n+1) - x^n - x - 1) (A4)",
+  "P5": "two-fold piece with surplus: F_sA F_sB (A5)",
+  "P6": "ring surplus beside the piece adds (1+y) (A6)",
+  "P7": "product law on every D/K join of the census D (48; 35 unseen)",
+  "P8": "every join of families A, B, D faster than its ring alone",
+  "P9": "two rings: no recurrence of order <= 7; lambda > 1.5; lambda decreasing in ring length; alpha in [-2, -1]",
+  "P10": "no ring: never exponential, dimension at most 2"
+ },
+ "decision_rules": {
+  "each": "as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "1 to 2 hours",
+ "disclosed_exploration": "pilot/ (about 40 starts, fitting); 14 starts of family D repeat pilot starts (merge.py SEEN)",
+ "amendments": []
+}

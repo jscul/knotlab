@@ -4017,6 +4017,10 @@ So holes come in two kinds:
      top can use it. The top's own strands all forget within five levels, so the reach grows linearly, proved. With this, every
      small-orbit pattern seen is decided, and every bounded one is held by a bond between two bounded pieces, one at each end
      ([decision note](../research/MODE-BOND-20261117-001/mode_bond.md)).
+   - **Every small-orbit pattern seen is decided** (`DECIDE-SMALL-20261117-001`; referee pending): on 627 fresh distinct
+     patterns, whether the top is held to every depth is settled by the same few facts. Either some strand between the two ends
+     forgets, and the reach grows, or a bond between two bounded pieces, one at each end, holds at every distance
+     ([decision note](../research/DECIDE-SMALL-20261117-001/decide_small.md)).
 8. **Forgetting or absence? Resolved on 2026-10-19: forgetting.** The
    original post entwines patterns by whether they match, which is parity,
    and parity counts only under the forgetting reading. The owner chose

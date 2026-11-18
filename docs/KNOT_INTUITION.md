@@ -477,6 +477,18 @@ that pass the knot test, parity is the only one under which bond distance adds
 up on every base (proved). Under not-all-equal it adds up on trees and on the
 woven tori checked, but not in general
 ([decision note](../research/BOND-METRIC-20261118-001/bond_metric.md)).
+So where, under not-all-equal (`NAE-METRIC-20261118-001`, proofs and frozen
+census, referee pending)? Call a distinction a joint when removing it splits
+the knots into two groups that meet nowhere else. Across a joint, bond distance
+adds up (proved): from one side to the other it is the distance to the joint
+plus the distance on, less one. So the whole base is a true distance exactly
+when each block, each piece no single distinction splits, is one. A single knot
+is, and so is a ring of knots each meeting the next once, with bond distance
+one more than the steps apart (proved). So every base whose knots form a tree
+of knots and rings is a true distance. What breaks it, in every small case,
+is two knots meeting twice; patterns of single meetings with no four-knot
+tangle (no K4, in the literature's words) all passed
+([decision note](../research/NAE-METRIC-20261118-001/nae_metric.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

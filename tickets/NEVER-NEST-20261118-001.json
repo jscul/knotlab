@@ -1,17 +1,8 @@
 {
-  "schema_version": 1,
-  "id": "NEVER-NEST-20261118-001",
-  "title": "A rule that never nests its fills",
-  "kind": "epic",
-  "parent": null,
-  "status": "Planned",
-  "status_class": "planned",
-  "objective": "B197, from MEET-ORDERS-20261118-001 (direction 2), taken after LOCAL-ROOM-20261118-001 by agreement with the coordinator: does a rule that takes only the fills keeping two orders (never nesting one fill inside another, Lemma C), and subdivides when none is left, grow two-way grids without end, as the class law did with memory, or starve? Compared with plain KF3, a subdivide-only baseline, the cheapest steps that keep two orders, and the same rule with no knot-sharing condition. Serves G1 and G16; tests A99.",
-  "dependencies": [],
-  "dependency_text": "",
   "acceptance_gate": "",
   "completion_gate": "",
-  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "dependencies": [],
+  "dependency_text": "",
   "fields": {
     "groups": [
       "holes-and-proofs"
@@ -21,9 +12,18 @@
       "B197"
     ]
   },
+  "id": "NEVER-NEST-20261118-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "B197, from MEET-ORDERS-20261118-001 (direction 2), taken after LOCAL-ROOM-20261118-001 by agreement with the coordinator: does a rule that takes only the fills keeping two orders (never nesting one fill inside another, Lemma C), and subdivides when none is left, grow two-way grids without end, as the class law did with memory, or starve? Compared with plain KF3, a subdivide-only baseline, the cheapest steps that keep two orders, and the same rule with no knot-sharing condition. Serves G1 and G16; tests A99.",
   "ownership": {
-    "scope_id": "NEVER-NEST-20261118-001",
-    "root": true
+    "root": true,
+    "scope_id": "NEVER-NEST-20261118-001"
   },
-  "legacy": {}
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-18 (Successful; referee pending): B197 answered yes. The rule that takes only the fills keeping two orders, and otherwise lengthens the line, grows full two-way grids and keeps two orders forever: proved with any old pairs (from any line, a full grid before the first lengthening, then every new row or column refilled), computed with knots only on co-knotted pairs (nearly every run to n = 40 from every bracketing of 5 to 8). Nothing per split is handed over; what is given is the number two. The corner rule across crossing splits does the same once its first crossing reaches every split. 5 of 8 predictions held.",
+  "status_class": "complete",
+  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "title": "A rule that never nests its fills"
 }

@@ -7,7 +7,7 @@
  "kind": "proof",
  "status": "Proved",
  "title": "What a rule that never nests its fills keeps, and when it refills",
- "claim": "N1: a subdivision keeps k and lambda. N2: on a line with fills of triples keeping two orders, n <= (s0+1)(s1+1), with a full grid exactly when there are at most two middles and every allowed fill. N3: from a full grid, the never-nest rule with any old pairs (NNF) refills every new row or column forever. N4: from any line, NNF reaches a full grid before its first subdivision. N5: the corner rule across crossing splits (CC) keeps two orders, refills from a full grid, and never fills a line.",
+ "claim": "N1: a subdivision keeps k and lambda. N2: on a line with fills of triples keeping two orders, n <= (s0+1)(s1+1), with a full grid exactly when there are at most two middles and every allowed fill. N3: from a full grid, the never-nest rule with any old pairs (NNF) refills every new row or column forever. N4: from any line, NNF reaches a full grid before its first subdivision. N5: the corner rule across crossing splits (CC) keeps two orders, refills from a full grid, and never fills a line. N6 (proved after the read-out): under CC a split that crosses nothing never comes to cross one, so after one fill of a line CC reaches a full grid exactly when that fill's ends are the line's ends.",
  "standard_statement": "Greedy extension of split systems of a product of two chains by betweenness constraints; medians and corner completion in the grid.",
  "prior_work": "MEET-ORDERS-20261118-001 (Lemma C and its colouring); STATE-RULES-20261117-001; LOCAL-ROOM-20261118-001; median graphs (classical).",
  "dependencies": [],
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proof written before the freeze; checked by ticket B; referee pending",
+  "status": "proof written before the freeze (N6 after the read-out); checked by ticket B; referee pending",
   "independence": "brute-force extension and exhaustive checks against the proof; same task authorship",
   "novelty": "local"
  },
@@ -54,7 +54,8 @@
   "triple_fills_full_grid_one_or_two_middles": true,
   "free_never_nest_refills_full_grids_forever": true,
   "free_never_nest_reaches_full_grid_from_line": true,
-  "crossing_corner_rule_refills_from_full_grid": true
+  "crossing_corner_rule_refills_from_full_grid": true,
+  "crossing_corner_rule_keeps_apart_splits_apart": true
  },
  "source_contribution": 0,
  "remaining_obligations": [],
@@ -63,5 +64,5 @@
   "identity": "proofs/NEVER-NEST-20261118-001A/NEVER-NEST-20261118-001A-P001_refill/identity.json",
   "proof": "proofs/NEVER-NEST-20261118-001A/NEVER-NEST-20261118-001A-P001_refill/proof.md"
  },
- "attained_result": "N1-N5 proved."
+ "attained_result": "N1-N5 proved before the run, N6 after it."
 }

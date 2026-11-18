@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "NEVER-NEST-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "NEVER-NEST-20261118-001Z",
+ "proof": "NEVER-NEST-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing NEVER-NEST-20261118-001: ticket A (N1-N5 before the run, N6 after: subdivisions keep the orders; fills of triples give full grids only with one or two middles; the never-nest rule with any pairs (NNF) reaches a full grid from any line and refills every new row or column forever; the corner rule across crossing splits (CC) refills from a full grid, never fills a line, and never crosses a split that crosses nothing) and ticket B (frozen computation, 5 of 8 held): the never-nest rule with knots only on co-knotted pairs (NN, B197) keeps two orders at every step and grows full two-way grids in nearly every run to n = 40 from every bracketing of 5 to 8; the rules are given the number two. Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/NEVER-NEST-20261118-001B/NEVER-NEST-20261118-001B-E001_nest/contract.json": "Frozen",
+   "artifacts/NEVER-NEST-20261118-001B/NEVER-NEST-20261118-001B-E001_nest/results.json.gz": "run output",
+   "proofs/NEVER-NEST-20261118-001A/NEVER-NEST-20261118-001A-P001_refill/manifest.json": "Proved",
+   "proofs/NEVER-NEST-20261118-001A/NEVER-NEST-20261118-001A-P001_refill/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -151,6 +151,21 @@ cells increase by one in one coordinate at each step. Each empty cell lies on on
   is no empty cell, so CC subdivides (N1 keeps the two orders). ∎
 - *A line.* A line's splits are nested in one chain, and no two cross. ∎
 
+## After the read-out: N6 (proved after the run, prompted by it)
+
+- **N6. Under CC, a split that crosses nothing never comes to cross anything.** So from a line with one fill of (a, c, b), CC
+  reaches a full grid exactly when a = 0 and b = m, the line's two ends; otherwise it never does.
+- *Proof.* Let t cross no split. A corner fill r agrees with c on every split but t₁ and t₂, which cross each other, so t is
+  neither. For any split s, r lies in the quadrant of (t, s) that holds c, unless s is t₁ or t₂; then it lies in the quadrant
+  that holds x (or y). Either way the quadrant was occupied, so t gains no crossing. A subdivision changes no crossing (N1), and
+  the two splits made from a subdivided t cross what t crossed. A full grid with both chains non-empty has a complete bipartite
+  crossing graph, so no split crosses nothing; hence a fill whose span misses a step of the line, which leaves that step's split
+  crossing nothing, rules out every full grid. If a = 0 and b = m, the line with the fill has a complete bipartite crossing graph
+  K_{c, m − c}. The minimal empty cell of N4 then has a corner whose two splits lie in different chains, so they cross, and CC
+  fills the grid; N5 does the rest. ∎
+- A uniform first fill has a = 0 and b = m with chance (n₀ − 2) / C(n₀, 3) = 6 / (n₀ (n₀ − 1)): 0.30, 0.20, 0.14 and 0.11 for
+  n₀ = 5 to 8.
+
 ## What this leaves to the computation
 
 - Whether NN, whose knots may only join pairs that already share a knot, reaches a full grid from a line, and whether it refills

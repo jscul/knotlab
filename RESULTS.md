@@ -1714,6 +1714,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Can the order of growth be read from a grown base without names? (`MEET-HIST-20261118-001`) | [closure](proofs/MEET-HIST-20261118-001Z/MEET-HIST-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-HIST-20261118-001/) |
 | 2026-11-18 | Why how the knots meet changes the number of orders (`MEET-ORDERS-20261118-001`) | [closure](proofs/MEET-ORDERS-20261118-001Z/MEET-ORDERS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-ORDERS-20261118-001/) |
 | 2026-11-18 | Why the meeting pattern grows the same wherever it sits: moving the ends' pair (`MEET-TWIST-20261118-001`) | [closure](proofs/MEET-TWIST-20261118-001Z/MEET-TWIST-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-TWIST-20261118-001/) |
-| 2026-11-18 | A rule that never nests its fills (`NEVER-NEST-20261118-001`) | — | [folder](research/NEVER-NEST-20261118-001/) |
+| 2026-11-18 | A rule that never nests its fills (`NEVER-NEST-20261118-001`) | [closure](proofs/NEVER-NEST-20261118-001Z/NEVER-NEST-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/NEVER-NEST-20261118-001/) |
 | 2026-11-18 | The surviving weave pair, with the twist fixed (`WEAVE-PAIR-20261118-001`) | [closure](proofs/WEAVE-PAIR-20261118-001Z/WEAVE-PAIR-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-PAIR-20261118-001/) |
 

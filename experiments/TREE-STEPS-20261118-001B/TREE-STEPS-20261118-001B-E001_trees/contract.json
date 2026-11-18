@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TREE-STEPS-20261118-001B-E001",
+ "ticket": "TREE-STEPS-20261118-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Is the cumulant distance, and its irreducible-set repair, steps apart on every knot tree of six knots under every law assignment and on random seven-knot trees with at most three knots per distinction?",
+ "definitions": {
+  "delta": "min over S containing x, y of (|S|-2) + max(0, -log3|kappa_S|)",
+  "delta_K": "the same over irreducible S (kappa_S != 0, kappa_T = 0 for {x,y} <= T < S)"
+ },
+ "public_inputs": {
+  "code": "treelib.py (sha256 e6aa0d871e00cc00a4472bf1e48239be2bfaee6a3adfff6e8789c82c56b23802), job.py (sha256 c48167de51e4bd2f41c3d3d9f24a47b26090555d5cb23c67abb4e3f8a3211381), merge.py (sha256 f3b35c0edf70ad0dc3e008ccb978fb9b70043f328b43e70c335eb4132f652dad), checks.py (sha256 fbf935ae5e7b9a686894d2de3216788daf9ccd298d1f0509074641c173b1b10a)",
+  "reused": "CUMULANT-DIST-20261118-001B cumlib.py, unchanged",
+  "run": "scripts/longrun.py launch job.py; merge.py <out dir>"
+ },
+ "forbidden_inputs": [
+  "Changing cases, readings, predictions or decision rules after seeing registered results"
+ ],
+ "primary_observable": "P1-P4 of research/TREE-STEPS-20261118-001/preregistration.md, scored by merge.py.",
+ "cheapest_meaningful_control": "checks.py: agreement with the earlier delta, brute-force irreducible search, the hub identity and threshold.",
+ "predictions": {
+  "P1": "six knots, every assignment: delta = steps",
+  "P2": "same: delta_K = steps",
+  "P3": "80 random seven-knot trees: both = steps",
+  "P4": "delta = delta_K everywhere there"
+ },
+ "decision_rules": {
+  "each prediction": "holds or fails as scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; proofs; referee hand-off; report.",
+ "runtime": "8 workers through scripts/longrun.py (TREE-STEPS-B1)"
+}

@@ -2,7 +2,8 @@
 
 Epic `TREE-STEPS-20261118-001`, 18 November 2026, by Claude. It takes `CUMULANT-DIST-20261118-001`'s direction 1, prove that the
 cumulant distance is steps apart on every knot tree, pivoted with the coordinator's approval once the advisor showed the statement
-false (hubs). Goals G1 and G16; tests A97; sub-goal B200. **Referee pending.**
+false (hubs). Goals G1 and G16; tests A97; sub-goal B200. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block
+on the study's own claims (trees and single-law bases), folded in on 18 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `0a8ea0e9f` at 07:44:47 UTC (it records the pivot);
@@ -18,18 +19,25 @@ false (hubs). Goals G1 and G16; tests A97; sub-goal B200. **Referee pending.**
   bound beyond its parts. Distinctions that all hang on one hub move together, and the joint binding of many copies of one coin
   grows factorially, faster than the one step charged for each. With sixteen not-all-equal knots on one distinction (both other
   distinctions of each taken), the hub pays for itself, and a far distinction comes out nearer than its steps (proved; the
-  advisor's counterexample). Below that size no single hub can do it: a distinction in at most fifteen knots is safe, and the
-  program's bases have at most six.
-- **The repair: count only sets that are bound and have no smaller bound set holding the pair.** That is the knot test's K2 ("forget
-  any one and the rest is free") in cumulant form. A hub set always contains a smaller bound set holding the pair, so the repaired
+  advisor's counterexample). Below that size no single hub can do it: no single hub on a distinction in at most fifteen knots can
+  shortcut (the program's bases have at most six); hubs spread over several distinctions or nested in one another are open (two
+  hubs at the ends of a path add their gains, the referee's argument).
+- **The repair: count only sets that are bound and have no smaller bound set holding the pair.** It is irreducibility in cumulants,
+  a relative of the knot test's K2 ("forget any one and the rest is free") but not K2: K2 asks for freedom, irreducibility for zero
+  correlation (narrowed after the referee). In effect δ_K is the pair's τ when the pair correlates, and the least minimal binding
+  set otherwise. A hub set always contains a smaller bound set holding the pair, so the repaired
   distance ignores hubs. It is the count's τ wherever the two distinctions correlate (proved), bond distance minus one on every
   parity base (proved), and steps apart on every not-all-equal tree, every parity tree, and every mixed tree whose path between the
   two has no parity knot (proved). The one case left, a mixed tree whose path holds a parity knot, is computed, not proved.
 - **On every tree of six knots under every law assignment (1,216 bases, 94,848 pairs) and on 80 random trees of seven knots, both
   distances are steps apart on every pair, and agree** (computed; one size past the earlier range).
 
-So the repaired distance keeps everything the first one read, parity and not-all-equal alike, and drops the factorial shortcut:
-on knot trees it is one step per knot under either law (proved except one mixed case, computed there).
+So on trees and on single-law bases the repaired distance keeps everything the first one read, parity and not-all-equal alike, and
+drops the factorial shortcut: on knot trees it is one step per knot under either law (proved except one mixed case, computed there).
+*Narrowed after the referee:* on bases with cycles mixing the two laws it can fail. Close a not-all-equal path of k knots from x to y
+with a parity knot (x, y, z): {x, y, z} is a knot (it passes K1–K3), bond distance reads x and y one knot apart, and δ reads them about
+one step apart (κ = 1 − C²), but their weak correlation C = (−1/3)^k makes every larger set reducible, so δ_K reads k steps, and for
+k ≥ 3 it fails the triangle inequality through z (3 > 2.002).
 
 | Base | δ (first distance) | δ_K (irreducible sets) |
 | --- | --- | --- |
@@ -57,8 +65,8 @@ on knot trees it is one step per knot under either law (proved except one mixed 
 
 Sub-goal B200 asked for one distance read from the states that reads parity and not-all-equal bases alike. The first attempt
 (`CUMULANT-DIST-20261118-001`) did on small trees and failed on large ones through a factorial growth of cumulants. The repaired
-distance, built on the knot test's own K2, keeps the unification and removes the failure: on every knot tree checked it is one step
-per knot under either law, and on each law's own bases it is that law's established reading (τ, bond distance). The premise that
+distance, irreducible in cumulants, keeps the unification on trees and removes the failure: on every knot tree checked it is one
+step per knot under either law, and on each law's own bases it is that law's established reading (τ, bond distance). The premise that
 distance is the only form of information gains a single distance for both laws, read from the states. It still ignores which value
 is called 1 (A103), so split grids remain a ring. A97 stays under challenge, with this study added.
 
@@ -94,7 +102,23 @@ irreducible-set repair and K1 to K4 are mine; the advisor was not asked about th
 
 ## Referee
 
-Pending. To be run by the coordinator's background referee thread.
+Report [R1](referee-R1/report.md), 18 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+fixes, no Block on the study's own claims. It reproduces δ = δ_K = steps apart on all 94,848 pairs of every six-knot tree and on
+21,000 pairs of 200 random seven-knot trees of its own (196 mixed), and H1's extensions on actual bases (not-all-equal hubs with
+both children; parity hubs with both children on a mixed tree, κ = κ_{N+2}(coin)(−1/3)^k). Folded in the same day, each item logged
+in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+1. **Narrowing (cycles).** "Keeps everything the first one read" and "one step per knot under either law" hold on trees and
+   single-law bases. On the closed path above, δ_K misreads a parity knot as k steps and breaks the triangle inequality.
+2. **Narrowing (wording).** "The knot test's K2 in cumulant form" becomes "irreducible in cumulants, a relative of K2": K2 asks for
+   freedom, irreducibility for zero correlation.
+3. **Not a block.** H2 reads "no single hub on a distinction in at most fifteen knots can shortcut; spread and nested hubs are
+   open". Two hubs at the ends of a long path add their gains to leading order (an argument; exactly −0.042 against −0.013 at two
+   four-copy hubs, k = 1).
+4. **Not a block.** K1 is one rule whose whole effect is the case split: τ when C ≠ 0, the least minimal binding set otherwise.
+5. **Not a block.** The smallest single hub is sixteen not-all-equal knots with both other distinctions (49 knots with a path of 33),
+   and `CUMULANT-DIST-20261118-001`'s correction is aligned with it.
+6. The referee corrected its own `CUMULANT-DIST-20261118-001` report ("parity hubs do not help"): parity hubs count at the same rate
+   when both children are taken.
 
 ## Position
 
@@ -102,8 +126,8 @@ Pending. To be run by the coordinator's background referee thread.
 | --- | --- | --- |
 | This attempt: where δ is steps apart, and a repair | **Status:** Successful (referee pending) | Hub threshold proved; the irreducible distance proved hub-free, τ on correlated pairs, bond distance on parity bases, steps apart except one mixed case (computed); 4 of 4 held |
 | Local direction: one distance for both laws (B200) | Promising | The repair keeps the unification on knot trees; cycles and value conventions remain |
-| Broader exploration: cumulant distances | Known alternatives | Tree cumulants and irreducible correlations are classical; the K2 form is the program's |
-| Long-term goal: G1 and G16 | G1 capability gained; G16 capability gained | G1: one state-read distance gives one step per knot under either law on trees. G16: the knot test's K2 as the rule that keeps a distance honest |
+| Broader exploration: cumulant distances | Known alternatives | Tree cumulants and irreducible correlations are classical; the irreducible-set distance is the program's |
+| Long-term goal: G1 and G16 | G1 capability gained (on trees and single-law bases); G16 capability gained | G1: one state-read distance gives one step per knot under either law on trees. G16: irreducibility in cumulants, a relative of K2, as the rule that keeps a distance honest |
 
 **Next step:** Research directions. None is selected; the first starts on the coordinator's go-ahead.
 
@@ -116,12 +140,15 @@ Pending. To be run by the coordinator's background referee thread.
 **Corrections:** none for this study (the correction it prompted, to `CUMULANT-DIST-20261118-001`, is logged there).
 
 **Goals:** G1 checkpoint (capability gained: the irreducible-set distance gives one step per knot under either law on knot trees,
-hub-free) and G16 checkpoint (capability gained: the knot test's K2 as the rule that keeps a cumulant distance from shortcutting);
+hub-free; not on mixed cycles) and G16 checkpoint (capability gained: irreducibility in cumulants as the rule that keeps a cumulant
+distance from shortcutting on trees);
 no goal changed.
 
 **Assumptions:** A97 gains this study; no new entry.
 
 ## The final report as sent (18 November 2026)
+
+*As sent; its "the knot test's own rule" and its scope were narrowed after the referee (see Referee).*
 
 **Outcome:** the distance is mended, and the mend is the knot test's own rule. The first distance went wrong on big trees because a
 hub of many distinctions bound to one gets an outsized binding: it needs 32 copies, i.e. 16 knots on one distinction (proved). The

@@ -439,14 +439,18 @@ ring, its two ends as near as neighbours, so the orders a betweenness growth
 builds need the values (assumption A103)
 ([decision note](../research/CUMULANT-DIST-20261118-001/cumulant_dist.md)).
 Can that be mended (`TREE-STEPS-20261118-001`, proofs and frozen computation,
-referee pending)? Yes, with the knot test's own rule. Count only sets that are
-bound and contain no smaller bound set holding the pair, which is K2 ("forget
-any one and the rest is free") said of cumulants. A hub set always contains a
-smaller bound set, so it no longer counts. The mended distance is the count's τ
+refereed)? On trees, yes. Count only sets that are bound and contain no smaller
+bound set holding the pair, a relative of the knot test's K2 ("forget any one
+and the rest is free"), though not K2 itself: it asks for zero correlation, K2
+for freedom. A hub set always contains a smaller bound set, so it no longer
+counts. The mended distance is the count's τ
 wherever two distinctions correlate, bond distance minus one on parity bases,
 and steps apart on every not-all-equal tree, every parity tree and every mixed
 tree whose path has no parity knot (proved), and on every tree of six knots
-under every mix of laws (computed). One step per knot, under either law
+under every mix of laws (computed). One step per knot, under either law, on
+trees. On a cycle mixing the laws it can misread: close a not-all-equal path of
+k knots with a parity knot, and the mended distance puts that knot's two ends k
+steps apart, because they still correlate a little (its referee)
 ([decision note](../research/TREE-STEPS-20261118-001/tree_steps.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
@@ -561,6 +565,17 @@ cross does the same, once its first crossing reaches every split; a split left
 uncrossed stays that way under it. So two orders need no memory, only the cap.
 But the two is wholly the cap's: without it the same rule makes every order
 ([decision note](../research/NEVER-NEST-20261118-001/never_nest.md)).
+Then who picks the number (`PICK-TWO-20261118-001`, proof and frozen
+computation, referee pending)? Told "at most three", the rule builds full
+three-way grids; told a price on states and orders, it keeps the number the
+price works out to; told only to keep what it has, a line stays a line. No rule
+here chooses two out of nothing. But one fill on a line always makes exactly two
+orders, since a new distinction has two values and so splits the line's cuts
+into those it lies inside and those it does not (proved). A rule that takes one
+free fill while nothing crosses, and afterwards only copies or conserves, grows
+full two-way grids from every line; started from three orders, it keeps three.
+So the two that comes without being named is the line's one plus one
+distinction's two sides ([decision note](../research/PICK-TWO-20261118-001/pick_two.md)).
 Why did the line of five's placements grow different numbers of orders
 (`MEET-ORDERS-20261118-001`, proof and frozen computation, referee pending)?
 Because the knots nest. Every presentation of a line by the fewest knots is a

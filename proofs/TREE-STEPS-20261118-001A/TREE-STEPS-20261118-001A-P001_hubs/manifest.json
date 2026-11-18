@@ -7,7 +7,7 @@
  "kind": "proof",
  "status": "Proved",
  "title": "Hubs and the irreducible distance: what is proved",
- "claim": "H1: kappa(sigma u_1..sigma u_n) = kappa_n(sigma) prod mu_i for independent u_i (NAE hung knots give two copies each, parity hung knots one per two distinctions). H2: a hub shortcuts the cumulant distance only with at least 32 copies (log3|kappa_34(coin)| = 64.075 > 64); a distinction in at most 15 knots cannot. K1: if C(x,y) != 0, delta_K = tau. K2: on parity bases delta_K = delta = bond distance - 1. K3: delta_K ignores hubs. K4: delta_K = steps apart on NAE trees, parity trees and mixed trees whose path has no parity knot; open with a parity knot on the path (sketch).",
+ "claim": "H1: kappa(sigma u_1..sigma u_n) = kappa_n(sigma) prod mu_i for independent u_i (NAE hung knots give two copies each, parity hung knots one per two distinctions). H2: a hub shortcuts the cumulant distance only with at least 32 copies (log3|kappa_34(coin)| = 64.075 > 64); no single hub on a distinction in at most 15 knots can (spread and nested hubs open). K1: if C(x,y) != 0, delta_K = tau. K2: on parity bases delta_K = delta = bond distance - 1. K3: delta_K ignores hubs. K4: delta_K = steps apart on NAE trees, parity trees and mixed trees whose path has no parity knot; open with a parity knot on the path (sketch). Narrowed after referee R1: delta_K is irreducibility in cumulants, a relative of K2 (zero correlation, not freedom); on a mixed cycle (NAE path closed by a parity knot) it misreads the parity knot as k steps and fails the triangle inequality.",
  "standard_statement": "Joint cumulants of a fair coin (tangent numbers); Brillinger's law of total cumulance; matroid circuits; irreducible correlation sets.",
  "prior_work": "CUMULANT-DIST-20261118-001 (D0-D6); DISTANCE-ORDER-20261117-001 (tau = steps on NAE trees); classical: tangent numbers, Brillinger, Zwiernik-Smith tree cumulants, Schneidman et al.",
  "dependencies": [],
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proofs written with the run, several proposed by the advisor and checked; referee pending",
+  "status": "proofs written with the run; refereed R1 (confirmed with fixes, no Block on trees and single-law bases)",
   "independence": "brute-force solution sets and computed readings against the statements; same task authorship",
   "novelty": "classical in substance (locality, 1-WL, tree number) read in the program's terms"
  },

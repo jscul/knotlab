@@ -29,8 +29,9 @@ two distinctions per copy (parity). Then κ_S = κ_{2j+2}(σ)·(−1/3)^{2j+k} a
 
 below k exactly when log₃ |κ_{2j+2}(σ)| > 4j. Computed exactly (gate), the least such 2j is 32: log₃ |κ₃₄(σ)| = 64.0752. So a hub
 shortcuts only with at least 32 copies: sixteen not-all-equal knots on one distinction with both other distinctions in S, or
-thirty-two parity knots, and then only for k ≥ 33 − (the hub's slack). A hub on a distinction lying in at most fifteen knots
-cannot shortcut this way. ∎ (Nested hubs, copies feeding copies through a shared knot, are not covered by H2.)
+thirty-two parity knots, and then only for k ≥ 33 − (the hub's slack). No single hub on a distinction lying in at most fifteen
+knots can shortcut. ∎ (Spread hubs, on several distinctions, and nested hubs, copies feeding copies through a shared knot, are
+not covered by H2; two hubs at the ends of a long path add their gains to leading order, the referee's argument.)
 
 ## The irreducible-set distance
 
@@ -38,7 +39,11 @@ Call S ∋ x, y **irreducible** when κ_S ≠ 0 and κ_T = 0 for every T with {x
 
 δ_K(x, y) = min over irreducible S of (|S| − 2) + τ(κ_S).
 
-It is the cumulant form of the knot test's K2: the set is bound as a whole, and no smaller set holding the pair is. Like δ it is read
+It is irreducibility in cumulants, a relative of the knot test's K2 but not K2 (narrowed after the referee): K2 asks that a set be
+free once any member is forgotten, irreducibility that smaller sets holding the pair be uncorrelated. In effect δ_K is the pair's τ
+when C ≠ 0 and the least minimal binding set otherwise. On a mixed cycle it can misread: a not-all-equal path of k knots from x to
+y closed by a parity knot (x, y, z) has C(x, y) = (−1/3)^k ≠ 0, so δ_K = k although {x, y, z} is a knot, and for k ≥ 3 the
+triangle inequality fails through z (the referee). Like δ it is read
 from the states alone and is invariant under renaming and under switching values. Always δ_K ≥ δ.
 
 ## K1. A correlated pair is its own irreducible set

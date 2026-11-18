@@ -143,8 +143,9 @@ The study's next step was to prove that δ is steps apart on every knot tree. As
   Choosing N with log₃ |κ_{N+2}| ≥ N + k gives δ ≤ N, and log₃ |κ_{N+2}| grows like N log N, so δ = O(k / log k) on such trees.
 - **What stands.** δ = bond distance − 1 on every parity base and so steps apart on every parity tree (proved); a parity path knot
   whose branch misses S forces κ_S = 0; sets of two and three never shortcut; separated four-sets never shortcut; every tree to five
-  knots under every law assignment and to six under one law (computed). The hub needs at least 32 knots on one distinction (or the
-  advisor's compact variant, 48 knots), so the bases of the program's other studies, with at most six knots per distinction, are not
+  knots under every law assignment and to six under one law (computed). The hub needs at least 32 copies of one spin: 32 knots on one
+  distinction with one other distinction each, or sixteen with both (49 knots in all with a path of 33; `TREE-STEPS-20261118-001`,
+  H2), so the bases of the program's other studies, with at most six knots per distinction, are not
   reached by this mechanism; whether bounded-degree trees can shortcut is open.
 - **Verdict.** A **Block** on the reading "δ = steps apart on every knot tree under either law": the unification of the two laws by
   this distance holds on small trees and on every parity tree, not on all trees. Logged in `docs/CORRECTIONS.md` and knotlab's

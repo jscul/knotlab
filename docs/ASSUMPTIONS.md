@@ -155,7 +155,7 @@ evidence: results and their status come from the records each entry links.
 | [A98](#a98--the-owners-no-skipping-is-read-as-betweenness-of-a-pairwise-count-with-flips-counted) | The owner's "no skipping" is read as betweenness of a pairwise count, with flips counted | reading | Assumed |
 | [A99](#a99--states-only-growth-is-judged-on-conservative-betweenness-extensions-with-up-to-three-knots-per-step) | States-only growth is judged on conservative betweenness extensions with up to three knots per step | scope | Assumed |
 | [A100](#a100--how-knots-meet-is-compared-on-fewest-knot-presentations-of-a-line) | How knots meet is compared on fewest-knot presentations of a line | scope | Assumed |
-| [A101](#a101--the-number-of-orders-a-growth-rule-keeps-is-given-two) | The number of orders a growth rule keeps is given: two | scope | Assumed |
+| [A101](#a101--the-number-of-orders-a-growth-rule-keeps-is-given-two) | The number of orders a growth rule keeps is given: two | scope | Under challenge |
 | [A102](#a102--an-endless-bases-counts-are-read-in-its-maximal-entropy-weighting) | An endless base's counts are read in its maximal-entropy weighting | reading | Assumed |
 | [A103](#a103--a-bases-values-are-data-which-value-is-called-1-is-part-of-the-base) | A base's values are data: which value is called 1 is part of the base | reading | Assumed |
 
@@ -2686,11 +2686,12 @@ evidence: results and their status come from the records each entry links.
   not on large not-all-equal trees with a hub (corrected the same day: proved counterexample of 65 knots), bond distance minus
   one on every parity base (proved), and the count's τ on a chain grid. It ignores which value is called 1, so it reads a
   split line as a ring and cannot read the orders a betweenness growth builds (A103).
-  `TREE-STEPS-20261118-001` ([decision note](../research/TREE-STEPS-20261118-001/tree_steps.md); referee pending) repaired it:
-  counting only irreducible sets (bound, with no smaller bound set holding the pair: the knot test's K2 in cumulant form) removes
+  `TREE-STEPS-20261118-001` ([decision note](../research/TREE-STEPS-20261118-001/tree_steps.md); refereed) repaired it on
+  trees: counting only irreducible sets (bound, with no smaller correlated set holding the pair: a relative of K2, not K2) removes
   the hub shortcut (proved), keeps τ on correlated pairs and bond distance minus one on parity bases (proved), and is steps apart
-  on every knot tree except one mixed case, computed there (every six-knot tree, 94,848 pairs). One distance for both laws, read
-  from the states, on knot trees.
+  on every knot tree except one mixed case, computed there (every six-knot tree, 94,848 pairs). On a mixed cycle (a not-all-equal
+  path closed by a parity knot) it misreads the parity knot as k steps (the referee), so freedom, not zero correlation, is still
+  to be read.
 - **History.**
   - 2026-11-18 · `BOOTSTRAP-ALIGNMENT-20261117-001` proved reliable alignment after temporary betweenness tests and an obstruction for permanent parity growth.
   - 2026-11-18 · `ALIGNED-NEXT-JOIN-20261117-001` proved the exact next joins readable on every complete aligned round, with a finite check of the effect of the original eight.
@@ -2829,6 +2830,8 @@ evidence: results and their status come from the records each entry links.
 
   A law in the wider set that stops at two orders would narrow the obstruction.
 - **History.**
+  - 2026-11-18 · `PICK-TWO-20261118-001` built on it (caps, prices and rules told no number, on fills and subdivisions); status
+    unchanged.
   - 2026-11-18 · `NEVER-NEST-20261118-001` built on it (rules that take only the fills keeping two orders grow full two-way grids;
     its move set is this entry's); status unchanged.
   - 2026-11-18 · `MEET-TWIST-20261118-001` built on it (proof for this population and rule); status unchanged.
@@ -2868,7 +2871,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A101 · The number of orders a growth rule keeps is given: two
 
-**Assumed** · 2026-11-18 · scope
+**Under challenge** · 2026-11-18 · scope
 
 - **Statement.** In `NEVER-NEST-20261118-001`, the rules that grow two-way grids from a line are told the number two. NN and NNF
   take only the fills after which the base has at most two orders (read from all the splits at once), and lengthen by a
@@ -2885,6 +2888,11 @@ evidence: results and their status come from the records each entry links.
   they carry over); then look for a rule told no number that settles at two, for instance one that refuses any fill raising the
   number of orders once a fill has kept it, or one that reads the cap from the start.
 - **History.**
+  - 2026-11-18 · `PICK-TWO-20261118-001` ([decision note](../research/PICK-TWO-20261118-001/pick_two.md); referee pending)
+    challenged it: no rule there chooses two out of nothing, but two can come without being named. One fill on a line makes
+    exactly two orders (proved), so a rule that takes one free fill while nothing crosses and then only copies or conserves grows
+    full two-way grids from every line, and keeps three from three-way starts: its two is the line's one order plus one
+    distinction's two sides. Caps of d give d, and prices settle where their increments say. Status: Under challenge.
   - 2026-11-18 · `NEVER-NEST-20261118-001`'s referee (R1): what is given is the cap and the subdivision fallback, not only the
     number; the two is wholly the cap's. Statement narrowed; status unchanged.
   - 2026-11-18 · Added by `NEVER-NEST-20261118-001`.

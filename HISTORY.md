@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 18 November 2026: the repaired distance, refereed; sound on trees, a relative of K2, not K2
+
+- The study that repaired the cumulant distance (`TREE-STEPS-20261118-001`) was confirmed by its referee on trees and on bases with one
+  law ([decision note](research/TREE-STEPS-20261118-001/tree_steps.md)).
+- Narrowed: counting only irreducible sets is a relative of the knot test's K2, not K2 itself (K2 asks for freedom, irreducibility for
+  zero correlation), and on a cycle mixing the two laws it misreads a parity knot as many steps.
+- Not a block: no single hub on a distinction in at most fifteen knots can shortcut the first distance, spread and nested hubs being
+  open; the smallest single hub is sixteen not-all-equal knots (49 knots in all), and the earlier correction now says so.
+
 ## 18 November 2026: one distance for both knot laws, refereed; the Block confirmed, the headline scoped
 
 - The cumulant-distance study (`CUMULANT-DIST-20261118-001`) was refereed with fresh code. The referee confirms independently that the

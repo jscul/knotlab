@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "MID-RULE-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "MID-RULE-20261118-001Z",
+ "proof": "MID-RULE-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing MID-RULE-20261118-001 (part F pending): ticket A (E1-E5: a new crossing needs two different end knots; fills certified with at most one end knot keep every relation; the two-middle and one-end rules keep two orders forever from a line; their free forms refill from a full grid and reach one from a line iff the first fill spans it) and ticket B part K (the knot-local forms keep two orders and starve: exactly one fill per run in 210 of 210 runs to n = 60). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/contract.json": "Frozen",
+   "artifacts/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/part_K.json.gz": "run output",
+   "proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/manifest.json": "Proved",
+   "proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

@@ -1,17 +1,8 @@
 {
-  "schema_version": 1,
-  "id": "MID-RULE-20261118-001",
-  "title": "A rule whose second phase reads only the fill's knots",
-  "kind": "epic",
-  "parent": null,
-  "status": "Planned",
-  "status_class": "planned",
-  "objective": "KEEP-READ-20261118-001's first direction, given the go-ahead by the coordinator: after the first fill, take only fills whose new distinction is the middle of two or more of their knots (MID2), or more generally fills certified with at most one end knot (ONE), else subdivide. A fill makes a new crossing only through two different end knots (proved), so these rules keep the number of orders after the first fill on any base. Do they grow full two-way grids from lines and the 2 x 2 pattern, with knots on any pairs and with knots only on co-knotted pairs, well past n = 24? Serves G1 and G16; challenges A101.",
-  "dependencies": [],
-  "dependency_text": "",
   "acceptance_gate": "",
   "completion_gate": "",
-  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "dependencies": [],
+  "dependency_text": "",
   "fields": {
     "groups": [
       "holes-and-proofs"
@@ -21,9 +12,18 @@
       "KEEP-READ-20261118-001#1"
     ]
   },
+  "id": "MID-RULE-20261118-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "KEEP-READ-20261118-001's first direction, given the go-ahead by the coordinator: after the first fill, take only fills whose new distinction is the middle of two or more of their knots (MID2), or more generally fills certified with at most one end knot (ONE), else subdivide. A fill makes a new crossing only through two different end knots (proved), so these rules keep the number of orders after the first fill on any base. Do they grow full two-way grids from lines and the 2 x 2 pattern, with knots on any pairs and with knots only on co-knotted pairs, well past n = 24? Serves G1 and G16; challenges A101.",
   "ownership": {
-    "scope_id": "MID-RULE-20261118-001",
-    "root": true
+    "root": true,
+    "scope_id": "MID-RULE-20261118-001"
   },
-  "legacy": {}
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-18 (Successful; referee pending; free-form runs pending): a fill makes a new crossing only through two different end knots (proved), so a rule that takes one free fill and afterwards only fills certified with at most one end knot (or two or more middle knots) keeps two orders forever from any line, told no number and reading only the fill's knots after its switch. It is conservative: with knots on any pairs it reaches full grids only from a first fill that spans the line (proved); with knots only on co-knotted pairs it starves after one fill (210 of 210 runs to n = 60).",
+  "status_class": "complete",
+  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "title": "A rule whose second phase reads only the fill's knots"
 }

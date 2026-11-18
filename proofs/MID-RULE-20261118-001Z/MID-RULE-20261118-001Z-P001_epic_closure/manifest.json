@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "MID-RULE-20261118-001Z-P001",
+ "canonical_id": "MID-RULE-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "MID-RULE-20261118-001Z",
+ "proof": "MID-RULE-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: a rule whose second phase reads only the fill's knots",
+ "status": "Proved",
+ "claim": "Ledger closing MID-RULE-20261118-001 (part F pending): ticket A (E1-E5: a new crossing needs two different end knots; fills certified with at most one end knot keep every relation; the two-middle and one-end rules keep two orders forever from a line; their free forms refill from a full grid and reach one from a line iff the first fill spans it) and ticket B part K (the knot-local forms keep two orders and starve: exactly one fill per run in 210 of 210 runs to n = 60). Referee pending. No new claim.",
+ "dependencies": [
+  "MID-RULE-20261118-001A",
+  "MID-RULE-20261118-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "MID-RULE-20261118-001",
+  "epic_path": [
+   "MID-RULE-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/contract.json": "ada5c32dcfe1c234aeb6671d006568ce999b2fb4e0c0e492d7d2739a9af86991",
+  "artifacts/MID-RULE-20261118-001B/MID-RULE-20261118-001B-E001_mid/part_K.json.gz": "120b503eecf63c95c63be11afd5b00ba4bd47f9b67e4caf60e3aad35e0ed36ee",
+  "proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/manifest.json": "591c9f32e0e9e60305981bdd34869a4eab9413bc2d9531257cd3ebb46f9ef89d",
+  "proofs/MID-RULE-20261118-001A/MID-RULE-20261118-001A-P001_ends/result.json": "37ed71d27ec245092d911329340083c3ed74ff3ef0517a6eaac9e60a752a1363"
+ },
+ "paths": {
+  "manifest": "proofs/MID-RULE-20261118-001Z/MID-RULE-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/MID-RULE-20261118-001Z/MID-RULE-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/MID-RULE-20261118-001Z/MID-RULE-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/MID-RULE-20261118-001Z/MID-RULE-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/MID-RULE-20261118-001Z/MID-RULE-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/MID-RULE-20261118-001Z/MID-RULE-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-17; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

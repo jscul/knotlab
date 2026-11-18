@@ -1,17 +1,8 @@
 {
-  "schema_version": 1,
-  "id": "PICK-TWO-20261118-001",
-  "title": "Who picks the number of orders",
-  "kind": "epic",
-  "parent": null,
-  "status": "Planned",
-  "status_class": "planned",
-  "objective": "NEVER-NEST-20261118-001's first direction, chosen by the coordinator: the never-nest rules hold two orders because they are told the number two (A101). Does any rule told no number settle at two from a line, or is the number always handed over, by a cap, a price, the start, or the arity of one move? Caps of d orders, prices on states and orders, conservative rules (fewest orders first; the corner rule) and rules that name only 'crosses nothing' (fresh crossings; no new crossing between crossed splits; seed and copy), from lines of 5 to 12 and from Q3 and the 3 x 3 x 3 grid. Serves G1 and G16; challenges A101.",
-  "dependencies": [],
-  "dependency_text": "",
   "acceptance_gate": "",
   "completion_gate": "",
-  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "dependencies": [],
+  "dependency_text": "",
   "fields": {
     "groups": [
       "holes-and-proofs"
@@ -21,9 +12,18 @@
       "NEVER-NEST-20261118-001#1"
     ]
   },
+  "id": "PICK-TWO-20261118-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "NEVER-NEST-20261118-001's first direction, chosen by the coordinator: the never-nest rules hold two orders because they are told the number two (A101). Does any rule told no number settle at two from a line, or is the number always handed over, by a cap, a price, the start, or the arity of one move? Caps of d orders, prices on states and orders, conservative rules (fewest orders first; the corner rule) and rules that name only 'crosses nothing' (fresh crossings; no new crossing between crossed splits; seed and copy), from lines of 5 to 12 and from Q3 and the 3 x 3 x 3 grid. Serves G1 and G16; challenges A101.",
   "ownership": {
-    "scope_id": "PICK-TWO-20261118-001",
-    "root": true
+    "root": true,
+    "scope_id": "PICK-TWO-20261118-001"
   },
-  "legacy": {}
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-18 (Successful; referee pending): no rule here chooses two out of nothing. A cap of d gives exactly d orders with full d-grids (d = 3, 4); a price settles where its increments cross two states; conservative rules keep the start's number. One fill on a line always makes exactly two orders (proved), so a rule that takes one free fill while nothing crosses and then only copies or conserves grows full two-way grids from every line of 5 to 12, and keeps three from three-way starts: its two is the line's one order plus one distinction's two sides. 9 of 9 predictions held.",
+  "status_class": "complete",
+  "stop_rule": "One proof and one frozen computation with its read-out; referee hand-off; report.",
+  "title": "Who picks the number of orders"
 }

@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PICK-TWO-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "PICK-TWO-20261118-001Z",
+ "proof": "PICK-TWO-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing PICK-TWO-20261118-001: ticket A (S1-S7: lambda never decreases; the corner rule keeps every relation; a cap of d refills full d-grids; the corner knot set is always a fill and raises a full grid by exactly one; a greedy price raises iff its increment is below two states; one fill on a line makes exactly two orders; the seed-and-copy rule keeps a bipartite crossing graph) and ticket B (frozen computation, 9 of 9 held): a cap of d gives exactly d orders with full d-grids (d = 3, 4); prices settle where their increments cross two states; of six rules told no number, the seed-and-copy rule (and the odd-cycle rule, the cap in parity's words) grows full two-way grids from every line of 5 to 12, and every rule keeps three from three-way starts. Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/PICK-TWO-20261118-001B/PICK-TWO-20261118-001B-E001_pick/contract.json": "Frozen",
+   "artifacts/PICK-TWO-20261118-001B/PICK-TWO-20261118-001B-E001_pick/results.json.gz": "run output",
+   "proofs/PICK-TWO-20261118-001A/PICK-TWO-20261118-001A-P001_sources/manifest.json": "Proved",
+   "proofs/PICK-TWO-20261118-001A/PICK-TWO-20261118-001A-P001_sources/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

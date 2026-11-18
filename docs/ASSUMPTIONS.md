@@ -2642,9 +2642,14 @@ evidence: results and their status come from the records each entry links.
   ([decision note](../research/MEET-HIST-20261118-001/meet_hist.md); refereed) located it: what the distances miss is a small part
   of the order of growth (it adds 0.07 to 0.49 of the share, 0.22 to 0.36 bits), and that part is not in the states even with the
   line named (the order is 85 to 90% undetermined by them); knowing which distinctions are the line's adds 0.005 to 0.30.
+  `MEET-ADDED-20261118-001` ([decision note](../research/MEET-ADDED-20261118-001/meet_added.md); referee pending): that part is
+  recorded in the knots the growth added, read with the states and no names (the all-named share exactly at five and six, within
+  0.00012 at seven); the added knots' pattern alone carries almost nothing. Knots carry it; distances do not.
   In the finite pure parity growth family, bond distances through five determine every junction and the full set of next joins at every size. This includes the cubic rounds and all legal serial rearrangements. All 552 presentations through seven junctions were independently checked within the task. [Proof and checks](../research/BOND-NEXT-JOIN-20261117-001/next_joins.md)
   With the original eight betweenness distinctions attached, two mixed presentations have identical full states on the same 36 distinctions. One permits a complete next round of eleven joins and the other cannot run a complete round. The difference persists through one more common join. [Proof and checks](../research/MIXED-NEXT-JOIN-20261117-001/hidden_eight.md)
 - **History.**
+  - 2026-11-18 · `MEET-ADDED-20261118-001`: the missing part is in the added knots with the states (computed); status
+    unchanged.
   - 2026-11-18 · `MEET-HIST-20261118-001`: the share the distances miss is a small part of the order of growth, not in the
     states (computed; reworded by its referee); status unchanged.
   - 2026-11-18 · `MIXED-NEXT-JOIN-20261117-001` proved that the full states can lose which distinctions the growth rule has used, even with the original eight identified.
@@ -2804,6 +2809,7 @@ evidence: results and their status come from the records each entry links.
   sort by bare bracketing (371/600 and 1523/2352 occur for both chains and the middle). The bracketing account holds for
   fewest-knot presentations only; with extra knots, how the knots meet is more than the bracketing.
 - **History.**
+  - 2026-11-18 · `MEET-ADDED-20261118-001` built on it; status unchanged.
   - 2026-11-18 · `MEET-HIST-20261118-001` built on it; status unchanged.
   - 2026-11-18 · `MEET-DIST-20261118-001` built on it; status unchanged.
   - 2026-11-18 · `MEET-TWIST-20261118-001` built on it (proof for this population and rule); status unchanged.

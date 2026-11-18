@@ -3,6 +3,8 @@
 Epic `RING-FORMULA-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead for `RING-GROWTH-20261118-001`'s
 direction 2. Goal G17. **Referee pending.**
 
+**Line summary** of the six parity-growth studies: [line_summary.md](line_summary.md).
+
 **Record.** Proof: [proof.md](../../proofs/RING-FORMULA-20261118-001A/RING-FORMULA-20261118-001A-P001_formula/proof.md). Code:
 [formula.py, check.py, ring.py](../../experiments/RING-FORMULA-20261118-001B/RING-FORMULA-20261118-001B-E001_formula/). Results:
 [results.json](../../artifacts/RING-FORMULA-20261118-001B/RING-FORMULA-20261118-001B-E001_formula/results.json). No new

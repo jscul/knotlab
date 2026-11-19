@@ -160,7 +160,7 @@ evidence: results and their status come from the records each entry links.
 | [A103](#a103--a-bases-values-are-data-which-value-is-called-1-is-part-of-the-base) | A base's values are data: which value is called 1 is part of the base | reading | Assumed |
 | [A104](#a104--parity-growth-is-judged-under-the-complete-round-joining-rule) | Parity growth is judged under the complete-round joining rule | scope | Under challenge |
 | [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
-| [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Assumed |
+| [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Overturned |
 | [A107](#a107--small-joins-of-a-ring-and-a-two-fold-piece-are-weighted-uniformly-over-one-bare-census) | Small joins of a ring and a two-fold piece are weighted uniformly over one bare census | measure | Assumed |
 | [A108](#a108--the-cheapest-growth-reads-which-junction-holds-which-distinction-not-only-the-allowed-states) | The cheapest growth reads which junction holds which distinction, not only the allowed states | scope | Confirmed |
 | [A109](#a109--self-feeding-loops-are-few-in-kind-and-recur-as-shared-routines-the-owners-eddies) | Self-feeding loops are few in kind and recur as shared routines, the owner's eddies | working premise | Under challenge |
@@ -3152,7 +3152,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A106 · Arrangements of first knots are weighted uniformly up to five knots of three to five places
 
-**Assumed** · 2026-11-18 · measure
+**Overturned** · 2026-11-19 · measure
 
 - **Statement.** "Typical" among arrangements of first knots means frequent among the distinct connected arrangements of up to
   five parity knots of three to five places (each shared distinction in two knots, counted once up to renaming), or among their
@@ -3164,6 +3164,20 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Extend to six knots or to six places, weight by random pairing of places, or by a growth process that adds knots
   one at a time, and test whether two stays typical and three rare.
 - **History.**
+  - 2026-11-19 · Overturned as a reading of what the growth makes typical, by `WEIGHTINGS-20261119-001`
+    ([decision note](../research/WEIGHTINGS-20261119-001/weightings.md)). That epic froze seven weightings before reading any and
+    read them with the proved theorem.
+    - Its two named alternatives keep two typical and three absent: random pairing of places (a configuration model) and growth
+      that adds knots one at a time.
+    - Its third, more than five places, does not. Under uniform random trees, whose knots get the places their joins need, three
+      or more dimensions is 12% of growers at twelve knots and 37% at twenty. Every one of those starts has a knot of six or more
+      places.
+    - So "two typical, three and four rare" belongs to this weighting: crowded knots of at most five places. It is not a property
+      of the growth. A bare tree of such knots is a caterpillar with at most two chains (proved post hoc).
+    - The census's figures stand as figures under this weighting (A71). The published claims that read them as the growth's are
+      narrowed (docs/CORRECTIONS.md, 2026-11-19).
+    - Status Assumed → Under challenge → Overturned.
+  - 2026-11-19 · Under challenge by `WEIGHTINGS-20261119-001`.
   - 2026-11-19 · `SCALE-SHARE-20261119-001`: extended to 20 knots by Metropolis sampling, the labelled measure makes stalls
     typical for a counting reason (open places per knot fall like √(5/n)); among growers two dimensions takes over (98% at 20
     knots); distinct and labelled shares converge. Status unchanged.
@@ -3189,6 +3203,10 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Rings of seven and nine, pieces of three or more knots, surplus distinctions placed at random, or a weighting by
   labelled descriptions; the law is stated in surplus counts, so a different convention changes the counts, not the law.
 - **History.**
+  - 2026-11-19 · `WEIGHTINGS-20261119-001`: under random trees with one random extra line, at the places the joins need, every
+    in-class start whose one cycle has knots attached grows exponentially (94 of 94 at six knots, 391 of 391 at twenty). Only a
+    cycle through every knot stays one-dimensional, as the proved theorem says. "Every join speeds the ring" holds beyond the bare
+    census; status unchanged ([decision note](../research/WEIGHTINGS-20261119-001/weightings.md)).
   - 2026-11-18 · Adopted by `JOIN-GROWTH-20261118-001`.
 
 ### A108 · The cheapest growth reads which junction holds which distinction, not only the allowed states

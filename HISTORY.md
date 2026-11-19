@@ -4,6 +4,16 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: two dimensions are typical of the weighting
+
+- **Narrowed.** "Two is typical, three and four only among mutually touching knots" holds where knots are crowded and have three
+  to five places: the census, SCALE-SHARE's samples, random pairing of places, and growth by attachment.
+  - Under uniform random trees, read by the same proved theorem, three or more dimensions is 12% of growers at twelve knots and
+    37% at twenty.
+  - With random extra lines, exponential growth is up to 41%.
+
+  Source: `WEIGHTINGS-20261119-001`, [decision note](research/WEIGHTINGS-20261119-001/weightings.md).
+
 ## 19 November 2026: the theorem past the census refereed
 
 - The proved theorem's reading of SCALE-SHARE's samples of 5 to 20 knots (`SCALE-THEOREM-20261119-001`,

@@ -838,9 +838,22 @@ And past the census, in starts of up to twenty knots
 (`SCALE-THEOREM-20261119-001`, frozen run, refereed)? About three
 non-stalling starts in four fall in the proved class at every size. Within it
 two dimensions take over, from 85% of growers at five knots to 98% at twenty, and
-three dimensions never occur: every start that grows in three or four dimensions
-has knots that touch each other all round, which is the part not yet proved
-([decision note](../research/SCALE-THEOREM-20261119-001/scale_theorem.md)).
+three dimensions never occur there: under that weighting every start that grows
+in three or four dimensions has knots that touch each other all round
+([decision note](../research/SCALE-THEOREM-20261119-001/scale_theorem.md); narrowed
+by the next entry).
+Is that two a law of the growth, or of how the starts were drawn
+(`WEIGHTINGS-20261119-001`, frozen run, referee pending)? Of how they were drawn.
+Read by the same theorem, uniform random trees, whose knots get the places their
+joins need, grow in three or more dimensions in 12% of starts at twelve knots and
+37% at twenty, up to six. A chain hangs from each leaf beside a knot of two
+touches, and a random tree has about n/e² of them. Random extra lines make the
+growth exponential in up to 41% of the class. Two stays typical only where knots
+are crowded and keep to three to five places, as in the census, under random
+pairing of places and under growth by attachment. A tree of knots of at most five
+places is a caterpillar (the non-leaves form one line), so it carries at most two
+chains; a dead knot can still join three
+([decision note](../research/WEIGHTINGS-20261119-001/weightings.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

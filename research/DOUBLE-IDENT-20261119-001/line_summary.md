@@ -26,8 +26,10 @@ So the growth is decided by the map of joins alone, and the same few pieces recu
 - loops, which are the catalogue's eddies when they offer a choice.
 
 From this the growth's dimension can be read off a tree-shaped start. It is the largest number of chains in one piece, and a finished
-piece counts two. That is why two dimensions are typical: a piece with no chain relays, and a start is one-dimensional only if each of
-its two pieces holds exactly one chain.
+piece counts two. That is why two dimensions are typical on the census: a piece with no chain relays, and a start is one-dimensional
+only if each of its two pieces holds exactly one chain. Three or more needs three chains in one piece, which the census's crowded
+knots of at most five places rarely allow. Under uniform random trees it is common from twelve knots, so "two is typical" belongs
+to the weighting (`WEIGHTINGS-20261119-001`, a Narrowing logged in docs/CORRECTIONS.md).
 
 ## The four proofs
 

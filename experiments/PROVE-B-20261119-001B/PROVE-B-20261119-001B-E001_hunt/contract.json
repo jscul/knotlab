@@ -12,7 +12,7 @@
  },
  "public_inputs": {
   "code": "reached_job.py (sha256 615e6fffe3337d5146d28e97bb09427be0446ea977610fedbe3e70ca7e1b30bb), control.py (sha256 f2e2596151b2ab057ef6ff47d9269ba9a5999e03bbb25069fef844e469e487e3)",
-  "run": "scripts/longrun.py launch reached_job.py --out runs/prove-b-hunt (8 workers, 16G cap); .venv/bin/python -B control.py",
+  "run": "scripts/longrun.py launch reached_job.py --out runs/prove-b-hunt (8 workers, 16G cap); .venv/bin/python -B control.py; Amendment 1: scripts/longrun.py launch meetonce_job.py --out runs/prove-b-meetonce",
   "reused": "EXTEND-ROUND-20261119-001A extend.py (reading, extension, grow1, full_table); PARENT-RULE plib.py"
  },
  "forbidden_inputs": [
@@ -29,5 +29,17 @@
  },
  "stop_rule": "One run each.",
  "runtime": "about an hour",
- "amendments": []
+ "amendments": [
+  {
+   "id": 1,
+   "date": "2026-11-19",
+   "when": "after Codex's GROWN-END-SWAP counterexample was confirmed and P0-P1 were read out; before part M ran",
+   "change": "part M (meetonce_job.py sha256 f54f4d1fc1a4229b82f15ff29e4e9a75d3440bcd02e6e77a553e114eee6f69ae): Claim B on meet-once starts of at most 6 junctions and their round-1 stages",
+   "new_predictions": {
+    "P2": "no counterexample at meet-once starts <= 6 junctions",
+    "P3": "none at their round-1 stages"
+   },
+   "unchanged": "P0, P1"
+  }
+ ]
 }

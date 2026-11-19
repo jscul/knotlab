@@ -76,3 +76,26 @@ Fable 5.2 ([question](advisor/question_1.md), [answer](advisor/answer_1_fable.md
 ## Runs and stop rule
 
 `reached_job.py` (312 cases, 8 workers, 16G cap), then `control.py`. One run each; then stop.
+
+## Amendment 1 (2026-11-19, after Codex's counterexample and the referee's confirmation; before the meet-once hunt ran)
+
+- **Why.** Codex's `GROWN-END-SWAP-20261119-001` (refereed) is a Claim B counterexample on a reached stage: a six-junction start
+  with three pairs meeting twice. It is Proposition X's mechanism on a reached stage. So Claim B is false on reached stages when
+  start junctions meet twice. The open statement is the meet-once version, at starts of six knots, which the census never
+  reached.
+- **New part M (`meetonce_job.py`, shared runner).**
+  - **Population.** Every one of PARENT-RULE's legal meet-once arrangements of at most 6 junctions (85,742) is taken as a start.
+  - **What is tested.** The start itself (Claim B for meet-once arrangements in general) and its stage of round 1, each against
+    its next stage, counted apart.
+  - **Method.** As in part B: table symmetries one per coset of holder-class permutations, holder-breaking ones included. VF2 is
+    restricted by loose and live-star labels, which is sound because only reading-keeping symmetries are tested. Stages whose
+    table colouring is discrete are skipped. Extensions are checked entry by entry.
+- **Predictions (frozen now):**
+
+| # | Prediction | Fails when |
+| --- | --- | --- |
+| P2 | No Claim B counterexample among meet-once starts of at most 6 junctions (round 0) | one fails |
+| P3 | No Claim B counterexample among their round-1 stages (reached, meet-once) | one fails |
+
+- **Unchanged.** P0 and P1, which were read out before this amendment: P0 held, and P1 held with 1,249,715 extensions in 42,771
+  stages, 6 stages late and 38 capped.

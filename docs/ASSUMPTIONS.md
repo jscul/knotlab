@@ -3280,6 +3280,9 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `RING-CORES-20261119-001` refereed (R1, confirmed). Narrowed: the golden-ratio ceiling is for rings of live
+    knots. With dead knots, an 11-knot start with two dead hubs grows at about 2.383 (`DEAD-CAP-20261119-001`, referee pending),
+    so the in-class catalogue within five places is completed by that study, not by the rings alone. Status unchanged.
   - 2026-11-19 · `RING-CORES-20261119-001` (proved; [decision note](../research/RING-CORES-20261119-001/ring_cores.md)): within five
     places, in the proved class with every knot live, the eddies are exactly the rings carrying a hung knot or a spare. Each
     piece's round-weight is a product of three kinds of factor: y per walk knot, 1 + y per spare, 1 + y(1 + y)^b per hung knot with

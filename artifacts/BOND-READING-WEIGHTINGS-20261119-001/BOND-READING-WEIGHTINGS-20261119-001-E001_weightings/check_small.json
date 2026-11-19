@@ -1,0 +1,5089 @@
+{
+  "archived_controls": [
+    {
+      "J": 5,
+      "exact_strict_future_order": {
+        "decides_future": true,
+        "order": 3,
+        "tests": [
+          {
+            "changes_equations": [
+              [
+                2,
+                7
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "generators_checked": 2,
+            "order": 0
+          },
+          {
+            "changes_equations": [
+              [
+                2,
+                7
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "generators_checked": 2,
+            "order": 1
+          },
+          {
+            "changes_equations": [
+              [
+                1,
+                7
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "generators_checked": 2,
+            "order": 2
+          },
+          {
+            "changes_equations": null,
+            "generators_checked": 4,
+            "order": 3
+          }
+        ]
+      },
+      "finite_and_absent_checks": [
+        {
+          "all_entries": 11,
+          "finite": 11,
+          "order": 1
+        },
+        {
+          "all_entries": 55,
+          "finite": 55,
+          "order": 2
+        }
+      ],
+      "insufficient_order": 2,
+      "literal_group_stabilizer_audit": [
+        {
+          "full_group": 120,
+          "generators": 4,
+          "order": 0
+        },
+        {
+          "full_group": 120,
+          "generators": 4,
+          "order": 1
+        },
+        {
+          "full_group": 120,
+          "generators": 10,
+          "order": 2
+        },
+        {
+          "full_group": 8,
+          "generators": 4,
+          "order": 3
+        }
+      ],
+      "n": 11,
+      "stage_sha256": "5114bb7aec84e9dfee5086bb4e5e08baedeb719fd691e79428a5d49ec8f39dd4"
+    },
+    {
+      "J": 13,
+      "finite_and_absent_checks": [
+        {
+          "all_entries": 91,
+          "finite": 91,
+          "order": 1
+        },
+        {
+          "all_entries": 4095,
+          "finite": 4095,
+          "order": 2
+        },
+        {
+          "all_entries": 121485,
+          "finite": 120368,
+          "order": 3
+        }
+      ],
+      "insufficient_order": 3,
+      "n": 91,
+      "stage_sha256": "b727d583074cbe780150585516a5848a1861105d1275791ed0a04675bc93f47a"
+    }
+  ],
+  "exhaustive_populations": [
+    {
+      "labelled_starts_replayed": 31,
+      "m": 4,
+      "shapes": [
+        {
+          "age_1_2": [
+            {
+              "J": 7,
+              "future_status": "next_closes",
+              "n": 12,
+              "order": {
+                "decides_future": true,
+                "order": 2,
+                "tests": [
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 0
+                  },
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 1
+                  },
+                  {
+                    "changes_equations": null,
+                    "generators_checked": 0,
+                    "order": 2
+                  }
+                ]
+              },
+              "rows": [
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5,
+                  6
+                ],
+                [
+                  2,
+                  7,
+                  8
+                ],
+                [
+                  3,
+                  5,
+                  9
+                ],
+                [
+                  4,
+                  7,
+                  10
+                ],
+                [
+                  6,
+                  8,
+                  11
+                ]
+              ],
+              "stage_sha256": "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d",
+              "status": "reached"
+            },
+            {
+              "J": 8,
+              "future_status": "closed",
+              "n": 12,
+              "order": {
+                "decides_future": true,
+                "order": 0,
+                "tests": []
+              },
+              "rows": [
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  5,
+                  6
+                ],
+                [
+                  2,
+                  7,
+                  8
+                ],
+                [
+                  3,
+                  5,
+                  9
+                ],
+                [
+                  4,
+                  7,
+                  10
+                ],
+                [
+                  6,
+                  8,
+                  11
+                ],
+                [
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "stage_sha256": "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3",
+              "status": "reached"
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "counts": {
+            "uniform_labelled_tree": 4,
+            "uniform_recursive_tree": 48
+          },
+          "first_round_demand_deficits": [],
+          "first_round_status": "next_open",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "counts": {
+            "uniform_tree_plus_links": 36
+          },
+          "first_round_demand_deficits": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "J": 8,
+              "future_status": "next_open",
+              "n": 15,
+              "order": {
+                "decides_future": true,
+                "order": 2,
+                "tests": [
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 0
+                  },
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 1
+                  },
+                  {
+                    "changes_equations": null,
+                    "generators_checked": 0,
+                    "order": 2
+                  }
+                ]
+              },
+              "rows": [
+                [
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  5,
+                  6
+                ],
+                [
+                  2,
+                  7,
+                  8
+                ],
+                [
+                  3,
+                  7,
+                  9
+                ],
+                [
+                  4,
+                  5,
+                  10
+                ],
+                [
+                  6,
+                  11,
+                  12
+                ],
+                [
+                  8,
+                  13,
+                  14
+                ]
+              ],
+              "stage_sha256": "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450",
+              "status": "reached"
+            },
+            {
+              "J": 12,
+              "future_status": "next_open",
+              "n": 21,
+              "order": {
+                "decides_future": true,
+                "order": 2,
+                "tests": [
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 0
+                  },
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 1
+                  },
+                  {
+                    "changes_equations": null,
+                    "generators_checked": 0,
+                    "order": 2
+                  }
+                ]
+              },
+              "rows": [
+                [
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  5,
+                  6
+                ],
+                [
+                  2,
+                  7,
+                  8
+                ],
+                [
+                  3,
+                  7,
+                  9
+                ],
+                [
+                  4,
+                  5,
+                  10
+                ],
+                [
+                  6,
+                  11,
+                  12
+                ],
+                [
+                  8,
+                  13,
+                  14
+                ],
+                [
+                  9,
+                  13,
+                  15
+                ],
+                [
+                  10,
+                  11,
+                  16
+                ],
+                [
+                  12,
+                  17,
+                  18
+                ],
+                [
+                  14,
+                  19,
+                  20
+                ]
+              ],
+              "stage_sha256": "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83",
+              "status": "reached"
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "counts": {
+            "uniform_labelled_tree": 12,
+            "uniform_recursive_tree": 96
+          },
+          "first_round_demand_deficits": [],
+          "first_round_status": "next_open",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "J": 6,
+              "future_status": "next_open",
+              "n": 10,
+              "order": {
+                "decides_future": true,
+                "order": 2,
+                "tests": [
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 0
+                  },
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 1
+                  },
+                  {
+                    "changes_equations": null,
+                    "generators_checked": 0,
+                    "order": 2
+                  }
+                ]
+              },
+              "rows": [
+                [
+                  0,
+                  1,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  5
+                ],
+                [
+                  1,
+                  3,
+                  6
+                ],
+                [
+                  2,
+                  3,
+                  7
+                ],
+                [
+                  4,
+                  7,
+                  8
+                ],
+                [
+                  5,
+                  6,
+                  9
+                ]
+              ],
+              "stage_sha256": "798a32b3c60d6b8082bd7d15e78fe9d23b7f6676c64312e6fac472060d59842c",
+              "status": "reached"
+            },
+            {
+              "J": 8,
+              "future_status": "next_open",
+              "n": 14,
+              "order": {
+                "decides_future": true,
+                "order": 2,
+                "tests": [
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 0
+                  },
+                  {
+                    "changes_equations": [
+                      [
+                        0,
+                        1
+                      ],
+                      [
+                        1,
+                        0
+                      ]
+                    ],
+                    "generators_checked": 1,
+                    "order": 1
+                  },
+                  {
+                    "changes_equations": null,
+                    "generators_checked": 4,
+                    "order": 2
+                  }
+                ]
+              },
+              "rows": [
+                [
+                  0,
+                  1,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  5
+                ],
+                [
+                  1,
+                  3,
+                  6
+                ],
+                [
+                  2,
+                  3,
+                  7
+                ],
+                [
+                  4,
+                  7,
+                  8
+                ],
+                [
+                  5,
+                  6,
+                  9
+                ],
+                [
+                  8,
+                  10,
+                  11
+                ],
+                [
+                  9,
+                  12,
+                  13
+                ]
+              ],
+              "stage_sha256": "e4a56b8c109557ecca94581c0ecc64e96711dd1ebe5acfbf916a84c8ac53a38c",
+              "status": "reached"
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "counts": {
+            "uniform_tree_plus_links": 12
+          },
+          "first_round_demand_deficits": [],
+          "first_round_status": "next_open",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      ],
+      "weightings": {
+        "uniform_labelled_tree": {
+          "age_1_2": [
+            {
+              "age": 1,
+              "generation_counts_by_status": {
+                "reached": 16
+              },
+              "mass_reached": "1",
+              "order_probability_conditional_reached": {
+                "2": "1"
+              },
+              "strict_future_by_status_if_reached": {
+                "next_closes": 4,
+                "next_open": 12
+              },
+              "strict_order_if_reached": {
+                "2": 16
+              }
+            },
+            {
+              "age": 2,
+              "generation_counts_by_status": {
+                "reached": 16
+              },
+              "mass_reached": "1",
+              "order_probability_conditional_reached": {
+                "0": "1/4",
+                "2": "3/4"
+              },
+              "strict_future_by_status_if_reached": {
+                "closed": 4,
+                "next_open": 12
+              },
+              "strict_order_if_reached": {
+                "0": 4,
+                "2": 12
+              }
+            }
+          ],
+          "distinct_labelled_starts": 16,
+          "generation_outcomes": 16
+        },
+        "uniform_recursive_tree": {
+          "age_1_2": [
+            {
+              "age": 1,
+              "generation_counts_by_status": {
+                "reached": 144
+              },
+              "mass_reached": "1",
+              "order_probability_conditional_reached": {
+                "2": "1"
+              },
+              "strict_future_by_status_if_reached": {
+                "next_closes": 48,
+                "next_open": 96
+              },
+              "strict_order_if_reached": {
+                "2": 144
+              }
+            },
+            {
+              "age": 2,
+              "generation_counts_by_status": {
+                "reached": 144
+              },
+              "mass_reached": "1",
+              "order_probability_conditional_reached": {
+                "0": "1/3",
+                "2": "2/3"
+              },
+              "strict_future_by_status_if_reached": {
+                "closed": 48,
+                "next_open": 96
+              },
+              "strict_order_if_reached": {
+                "0": 48,
+                "2": 96
+              }
+            }
+          ],
+          "distinct_labelled_starts": 16,
+          "generation_outcomes": 144
+        },
+        "uniform_tree_plus_links": {
+          "age_1_2": [
+            {
+              "age": 1,
+              "generation_counts_by_status": {
+                "reached": 12,
+                "unreached_demand_stall": 36
+              },
+              "mass_reached": "1/4",
+              "order_probability_conditional_reached": {
+                "2": "1"
+              },
+              "strict_future_by_status_if_reached": {
+                "next_open": 12
+              },
+              "strict_order_if_reached": {
+                "2": 12
+              }
+            },
+            {
+              "age": 2,
+              "generation_counts_by_status": {
+                "reached": 12,
+                "unreached_demand_stall": 36
+              },
+              "mass_reached": "1/4",
+              "order_probability_conditional_reached": {
+                "2": "1"
+              },
+              "strict_future_by_status_if_reached": {
+                "next_open": 12
+              },
+              "strict_order_if_reached": {
+                "2": 12
+              }
+            }
+          ],
+          "distinct_labelled_starts": 15,
+          "generation_outcomes": 48
+        }
+      }
+    },
+    {
+      "labelled_starts_replayed": 347,
+      "m": 5,
+      "shapes": [
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "counts": {
+            "uniform_labelled_tree": 5,
+            "uniform_recursive_tree": 240
+          },
+          "first_round_demand_deficits": [
+            [
+              1,
+              3,
+              2
+            ],
+            [
+              2,
+              3,
+              2
+            ],
+            [
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              2
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "counts": {
+            "uniform_tree_plus_links": 90
+          },
+          "first_round_demand_deficits": [
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              2
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "counts": {
+            "uniform_tree_plus_links": 180
+          },
+          "first_round_demand_deficits": [
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": {
+            "uniform_tree_plus_links": 180
+          },
+          "first_round_demand_deficits": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              1
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "counts": {
+            "uniform_labelled_tree": 60,
+            "uniform_recursive_tree": 1680
+          },
+          "first_round_demand_deficits": [
+            [
+              1,
+              2,
+              1
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "counts": {
+            "uniform_tree_plus_links": 240
+          },
+          "first_round_demand_deficits": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "counts": {
+            "uniform_labelled_tree": 60,
+            "uniform_recursive_tree": 960
+          },
+          "first_round_demand_deficits": [
+            [
+              0,
+              2,
+              1
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "age_1_2": [
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            },
+            {
+              "status": "unreached_demand_stall",
+              "terminal_age": 0
+            }
+          ],
+          "canonical_simple_start": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "counts": {
+            "uniform_tree_plus_links": 60
+          },
+          "first_round_demand_deficits": [
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              1
+            ],
+            [
+              4,
+              2,
+              1
+            ]
+          ],
+          "first_round_status": "demand_stall",
+          "labelled_representative": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "weightings": {
+        "uniform_labelled_tree": {
+          "age_1_2": [
+            {
+              "age": 1,
+              "generation_counts_by_status": {
+                "unreached_demand_stall": 125
+              },
+              "mass_reached": "0",
+              "order_probability_conditional_reached": {},
+              "strict_future_by_status_if_reached": {},
+              "strict_order_if_reached": {}
+            },
+            {
+              "age": 2,
+              "generation_counts_by_status": {
+                "unreached_demand_stall": 125
+              },
+              "mass_reached": "0",
+              "order_probability_conditional_reached": {},
+              "strict_future_by_status_if_reached": {},
+              "strict_order_if_reached": {}
+            }
+          ],
+          "distinct_labelled_starts": 125,
+          "generation_outcomes": 125
+        },
+        "uniform_recursive_tree": {
+          "age_1_2": [
+            {
+              "age": 1,
+              "generation_counts_by_status": {
+                "unreached_demand_stall": 2880
+              },
+              "mass_reached": "0",
+              "order_probability_conditional_reached": {},
+              "strict_future_by_status_if_reached": {},
+              "strict_order_if_reached": {}
+            },
+            {
+              "age": 2,
+              "generation_counts_by_status": {
+                "unreached_demand_stall": 2880
+              },
+              "mass_reached": "0",
+              "order_probability_conditional_reached": {},
+              "strict_future_by_status_if_reached": {},
+              "strict_order_if_reached": {}
+            }
+          ],
+          "distinct_labelled_starts": 125,
+          "generation_outcomes": 2880
+        },
+        "uniform_tree_plus_links": {
+          "age_1_2": [
+            {
+              "age": 1,
+              "generation_counts_by_status": {
+                "unreached_demand_stall": 750
+              },
+              "mass_reached": "0",
+              "order_probability_conditional_reached": {},
+              "strict_future_by_status_if_reached": {},
+              "strict_order_if_reached": {}
+            },
+            {
+              "age": 2,
+              "generation_counts_by_status": {
+                "unreached_demand_stall": 750
+              },
+              "mass_reached": "0",
+              "order_probability_conditional_reached": {},
+              "strict_future_by_status_if_reached": {},
+              "strict_order_if_reached": {}
+            }
+          ],
+          "distinct_labelled_starts": 222,
+          "generation_outcomes": 750
+        }
+      }
+    }
+  ],
+  "sample_audit": {
+    "all_four_junction_start_cells_through_age_two": {
+      "counts_by_weighting_and_age": [
+        [
+          [
+            "uniform_labelled_tree",
+            1
+          ],
+          {
+            "2": 64
+          }
+        ],
+        [
+          [
+            "uniform_labelled_tree",
+            2
+          ],
+          {
+            "0": 14,
+            "2": 50
+          }
+        ],
+        [
+          [
+            "uniform_recursive_tree",
+            1
+          ],
+          {
+            "2": 64
+          }
+        ],
+        [
+          [
+            "uniform_recursive_tree",
+            2
+          ],
+          {
+            "0": 17,
+            "2": 47
+          }
+        ],
+        [
+          [
+            "uniform_tree_plus_links",
+            1
+          ],
+          {
+            "2": 11,
+            "not_reached": 53
+          }
+        ],
+        [
+          [
+            "uniform_tree_plus_links",
+            2
+          ],
+          {
+            "2": 11,
+            "not_reached": 53
+          }
+        ]
+      ],
+      "rows": [
+        [
+          "uniform_labelled_tree",
+          4,
+          0,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          0,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          1,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          1,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          2,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          2,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          3,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          3,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          4,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          4,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          5,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          5,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          6,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          6,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          7,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          7,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          8,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          8,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          9,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          9,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          10,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          10,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          11,
+          1,
+          2,
+          "efdbe9d5221f71b786bb15784f8ac87019dcee547589b2e6fad4246dbb5a4622"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          11,
+          2,
+          2,
+          "3e371a968786b89611437ed1b79817a99518dba279b3a0d286ac97abaa23eb5f"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          12,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          12,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          13,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          13,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          14,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          14,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          15,
+          1,
+          2,
+          "ef7655fa19e4cc8df4849a956603cf95f5b89397100647bb006022caf4e3a260"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          15,
+          2,
+          2,
+          "21167a1306ae8c96da31fa9c4ad5fc9b99d88b8ba04bcb36d3334e5fd734f554"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          16,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          16,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          17,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          17,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          18,
+          1,
+          2,
+          "81249f86f1537667fc02fed10af786fd5d4b3fb1f455fffebe894a750baa8eec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          18,
+          2,
+          2,
+          "0e78ca904e5e5fcea0bf4a31e839654c8de26047d578eac1d175597e83284dae"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          19,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          19,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          20,
+          1,
+          2,
+          "efdbe9d5221f71b786bb15784f8ac87019dcee547589b2e6fad4246dbb5a4622"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          20,
+          2,
+          2,
+          "3e371a968786b89611437ed1b79817a99518dba279b3a0d286ac97abaa23eb5f"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          21,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          21,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          22,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          22,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          23,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          23,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          24,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          24,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          25,
+          1,
+          2,
+          "81249f86f1537667fc02fed10af786fd5d4b3fb1f455fffebe894a750baa8eec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          25,
+          2,
+          2,
+          "0e78ca904e5e5fcea0bf4a31e839654c8de26047d578eac1d175597e83284dae"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          26,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          26,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          27,
+          1,
+          2,
+          "4b297954d30a53ce85e2243478ae79ba95ff7a2ac66b919126829e0f66bbef18"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          27,
+          2,
+          2,
+          "051ba6f17efc60f890e1b868376ee38cb49ce77bd2143f450aff9eb76913b4cc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          28,
+          1,
+          2,
+          "8dcee120de84779f977c6497477c369e3fef03aff91914414f2fca3ab410b244"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          28,
+          2,
+          2,
+          "b74b627db5ad001123cc43b72d63219fddae5472e1f70725b8826e70bd44ff7e"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          29,
+          1,
+          2,
+          "4b297954d30a53ce85e2243478ae79ba95ff7a2ac66b919126829e0f66bbef18"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          29,
+          2,
+          2,
+          "051ba6f17efc60f890e1b868376ee38cb49ce77bd2143f450aff9eb76913b4cc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          30,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          30,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          31,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          31,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          32,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          32,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          33,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          33,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          34,
+          1,
+          2,
+          "8dcee120de84779f977c6497477c369e3fef03aff91914414f2fca3ab410b244"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          34,
+          2,
+          2,
+          "b74b627db5ad001123cc43b72d63219fddae5472e1f70725b8826e70bd44ff7e"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          35,
+          1,
+          2,
+          "ef7655fa19e4cc8df4849a956603cf95f5b89397100647bb006022caf4e3a260"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          35,
+          2,
+          2,
+          "21167a1306ae8c96da31fa9c4ad5fc9b99d88b8ba04bcb36d3334e5fd734f554"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          36,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          36,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          37,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          37,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          38,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          38,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          39,
+          1,
+          2,
+          "8540b59c589a3138534990d89081244b3002625c112f93cee92e09810df5adab"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          39,
+          2,
+          2,
+          "286c63f5e5d68091bb6d1c7e33f520fd69859dbeefd217ad7164dc4b37ec2797"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          40,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          40,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          41,
+          1,
+          2,
+          "81249f86f1537667fc02fed10af786fd5d4b3fb1f455fffebe894a750baa8eec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          41,
+          2,
+          2,
+          "0e78ca904e5e5fcea0bf4a31e839654c8de26047d578eac1d175597e83284dae"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          42,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          42,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          43,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          43,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          44,
+          1,
+          2,
+          "ef7655fa19e4cc8df4849a956603cf95f5b89397100647bb006022caf4e3a260"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          44,
+          2,
+          2,
+          "21167a1306ae8c96da31fa9c4ad5fc9b99d88b8ba04bcb36d3334e5fd734f554"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          45,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          45,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          46,
+          1,
+          2,
+          "8540b59c589a3138534990d89081244b3002625c112f93cee92e09810df5adab"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          46,
+          2,
+          2,
+          "286c63f5e5d68091bb6d1c7e33f520fd69859dbeefd217ad7164dc4b37ec2797"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          47,
+          1,
+          2,
+          "efdbe9d5221f71b786bb15784f8ac87019dcee547589b2e6fad4246dbb5a4622"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          47,
+          2,
+          2,
+          "3e371a968786b89611437ed1b79817a99518dba279b3a0d286ac97abaa23eb5f"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          48,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          48,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          49,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          49,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          50,
+          1,
+          2,
+          "efdbe9d5221f71b786bb15784f8ac87019dcee547589b2e6fad4246dbb5a4622"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          50,
+          2,
+          2,
+          "3e371a968786b89611437ed1b79817a99518dba279b3a0d286ac97abaa23eb5f"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          51,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          51,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          52,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          52,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          53,
+          1,
+          2,
+          "5f043afca25a23fc0c40d175814a02b1a6eb17e48583bd2a9e55d2c84682bee0"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          53,
+          2,
+          2,
+          "2b3cbb63eabaac9c98dcbf6597f13bf6173e5f2f99e72837a582d14d02c177a4"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          54,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          54,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          55,
+          1,
+          2,
+          "8540b59c589a3138534990d89081244b3002625c112f93cee92e09810df5adab"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          55,
+          2,
+          2,
+          "286c63f5e5d68091bb6d1c7e33f520fd69859dbeefd217ad7164dc4b37ec2797"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          56,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          56,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          57,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          57,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          58,
+          1,
+          2,
+          "8540b59c589a3138534990d89081244b3002625c112f93cee92e09810df5adab"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          58,
+          2,
+          2,
+          "286c63f5e5d68091bb6d1c7e33f520fd69859dbeefd217ad7164dc4b37ec2797"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          59,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          59,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          60,
+          1,
+          2,
+          "81249f86f1537667fc02fed10af786fd5d4b3fb1f455fffebe894a750baa8eec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          60,
+          2,
+          2,
+          "0e78ca904e5e5fcea0bf4a31e839654c8de26047d578eac1d175597e83284dae"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          61,
+          1,
+          2,
+          "81249f86f1537667fc02fed10af786fd5d4b3fb1f455fffebe894a750baa8eec"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          61,
+          2,
+          2,
+          "0e78ca904e5e5fcea0bf4a31e839654c8de26047d578eac1d175597e83284dae"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          62,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          62,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          63,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_labelled_tree",
+          4,
+          63,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          0,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          0,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          1,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          1,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          2,
+          1,
+          2,
+          "81249f86f1537667fc02fed10af786fd5d4b3fb1f455fffebe894a750baa8eec"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          2,
+          2,
+          2,
+          "0e78ca904e5e5fcea0bf4a31e839654c8de26047d578eac1d175597e83284dae"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          3,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          3,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          4,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          4,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          5,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          5,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          6,
+          1,
+          2,
+          "5f043afca25a23fc0c40d175814a02b1a6eb17e48583bd2a9e55d2c84682bee0"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          6,
+          2,
+          2,
+          "2b3cbb63eabaac9c98dcbf6597f13bf6173e5f2f99e72837a582d14d02c177a4"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          7,
+          1,
+          2,
+          "8540b59c589a3138534990d89081244b3002625c112f93cee92e09810df5adab"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          7,
+          2,
+          2,
+          "286c63f5e5d68091bb6d1c7e33f520fd69859dbeefd217ad7164dc4b37ec2797"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          8,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          8,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          9,
+          1,
+          2,
+          "81249f86f1537667fc02fed10af786fd5d4b3fb1f455fffebe894a750baa8eec"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          9,
+          2,
+          2,
+          "0e78ca904e5e5fcea0bf4a31e839654c8de26047d578eac1d175597e83284dae"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          10,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          10,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          11,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          11,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          12,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          12,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          13,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          13,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          14,
+          1,
+          2,
+          "4b297954d30a53ce85e2243478ae79ba95ff7a2ac66b919126829e0f66bbef18"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          14,
+          2,
+          2,
+          "051ba6f17efc60f890e1b868376ee38cb49ce77bd2143f450aff9eb76913b4cc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          15,
+          1,
+          2,
+          "8540b59c589a3138534990d89081244b3002625c112f93cee92e09810df5adab"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          15,
+          2,
+          2,
+          "286c63f5e5d68091bb6d1c7e33f520fd69859dbeefd217ad7164dc4b37ec2797"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          16,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          16,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          17,
+          1,
+          2,
+          "5f043afca25a23fc0c40d175814a02b1a6eb17e48583bd2a9e55d2c84682bee0"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          17,
+          2,
+          2,
+          "2b3cbb63eabaac9c98dcbf6597f13bf6173e5f2f99e72837a582d14d02c177a4"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          18,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          18,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          19,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          19,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          20,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          20,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          21,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          21,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          22,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          22,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          23,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          23,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          24,
+          1,
+          2,
+          "efdbe9d5221f71b786bb15784f8ac87019dcee547589b2e6fad4246dbb5a4622"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          24,
+          2,
+          2,
+          "3e371a968786b89611437ed1b79817a99518dba279b3a0d286ac97abaa23eb5f"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          25,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          25,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          26,
+          1,
+          2,
+          "4b297954d30a53ce85e2243478ae79ba95ff7a2ac66b919126829e0f66bbef18"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          26,
+          2,
+          2,
+          "051ba6f17efc60f890e1b868376ee38cb49ce77bd2143f450aff9eb76913b4cc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          27,
+          1,
+          2,
+          "5f043afca25a23fc0c40d175814a02b1a6eb17e48583bd2a9e55d2c84682bee0"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          27,
+          2,
+          2,
+          "2b3cbb63eabaac9c98dcbf6597f13bf6173e5f2f99e72837a582d14d02c177a4"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          28,
+          1,
+          2,
+          "efdbe9d5221f71b786bb15784f8ac87019dcee547589b2e6fad4246dbb5a4622"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          28,
+          2,
+          2,
+          "3e371a968786b89611437ed1b79817a99518dba279b3a0d286ac97abaa23eb5f"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          29,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          29,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          30,
+          1,
+          2,
+          "5f043afca25a23fc0c40d175814a02b1a6eb17e48583bd2a9e55d2c84682bee0"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          30,
+          2,
+          2,
+          "2b3cbb63eabaac9c98dcbf6597f13bf6173e5f2f99e72837a582d14d02c177a4"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          31,
+          1,
+          2,
+          "5f043afca25a23fc0c40d175814a02b1a6eb17e48583bd2a9e55d2c84682bee0"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          31,
+          2,
+          2,
+          "2b3cbb63eabaac9c98dcbf6597f13bf6173e5f2f99e72837a582d14d02c177a4"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          32,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          32,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          33,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          33,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          34,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          34,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          35,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          35,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          36,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          36,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          37,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          37,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          38,
+          1,
+          2,
+          "efdbe9d5221f71b786bb15784f8ac87019dcee547589b2e6fad4246dbb5a4622"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          38,
+          2,
+          2,
+          "3e371a968786b89611437ed1b79817a99518dba279b3a0d286ac97abaa23eb5f"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          39,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          39,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          40,
+          1,
+          2,
+          "ef7655fa19e4cc8df4849a956603cf95f5b89397100647bb006022caf4e3a260"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          40,
+          2,
+          2,
+          "21167a1306ae8c96da31fa9c4ad5fc9b99d88b8ba04bcb36d3334e5fd734f554"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          41,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          41,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          42,
+          1,
+          2,
+          "8dcee120de84779f977c6497477c369e3fef03aff91914414f2fca3ab410b244"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          42,
+          2,
+          2,
+          "b74b627db5ad001123cc43b72d63219fddae5472e1f70725b8826e70bd44ff7e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          43,
+          1,
+          2,
+          "4b297954d30a53ce85e2243478ae79ba95ff7a2ac66b919126829e0f66bbef18"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          43,
+          2,
+          2,
+          "051ba6f17efc60f890e1b868376ee38cb49ce77bd2143f450aff9eb76913b4cc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          44,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          44,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          45,
+          1,
+          2,
+          "4b297954d30a53ce85e2243478ae79ba95ff7a2ac66b919126829e0f66bbef18"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          45,
+          2,
+          2,
+          "051ba6f17efc60f890e1b868376ee38cb49ce77bd2143f450aff9eb76913b4cc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          46,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          46,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          47,
+          1,
+          2,
+          "e9a385bc46a834a9c2495ce299fe31c7a590f301c51b60f2a06db5bb04298a3d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          47,
+          2,
+          2,
+          "ff21c7d1e819ea25bcbcaf2593350d15089f713d854af5faf9468734d7cc7bec"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          48,
+          1,
+          2,
+          "ef7655fa19e4cc8df4849a956603cf95f5b89397100647bb006022caf4e3a260"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          48,
+          2,
+          2,
+          "21167a1306ae8c96da31fa9c4ad5fc9b99d88b8ba04bcb36d3334e5fd734f554"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          49,
+          1,
+          2,
+          "8dcee120de84779f977c6497477c369e3fef03aff91914414f2fca3ab410b244"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          49,
+          2,
+          2,
+          "b74b627db5ad001123cc43b72d63219fddae5472e1f70725b8826e70bd44ff7e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          50,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          50,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          51,
+          1,
+          2,
+          "ef7655fa19e4cc8df4849a956603cf95f5b89397100647bb006022caf4e3a260"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          51,
+          2,
+          2,
+          "21167a1306ae8c96da31fa9c4ad5fc9b99d88b8ba04bcb36d3334e5fd734f554"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          52,
+          1,
+          2,
+          "8dcee120de84779f977c6497477c369e3fef03aff91914414f2fca3ab410b244"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          52,
+          2,
+          2,
+          "b74b627db5ad001123cc43b72d63219fddae5472e1f70725b8826e70bd44ff7e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          53,
+          1,
+          2,
+          "5f043afca25a23fc0c40d175814a02b1a6eb17e48583bd2a9e55d2c84682bee0"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          53,
+          2,
+          2,
+          "2b3cbb63eabaac9c98dcbf6597f13bf6173e5f2f99e72837a582d14d02c177a4"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          54,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          54,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          55,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          55,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          56,
+          1,
+          2,
+          "8bbd93205256ded4ddd43e196cd4cdd89554aa593595e69ed17d2c71254ba984"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          56,
+          2,
+          2,
+          "f7a93a4a01999e9cd682bb3f7b2379227cc3b532926c87287bc7742455835f04"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          57,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          57,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          58,
+          1,
+          2,
+          "ef7655fa19e4cc8df4849a956603cf95f5b89397100647bb006022caf4e3a260"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          58,
+          2,
+          2,
+          "21167a1306ae8c96da31fa9c4ad5fc9b99d88b8ba04bcb36d3334e5fd734f554"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          59,
+          1,
+          2,
+          "5fa72af89e2723765d5c12331b2bbf08b79412f673739afaae53dca999f8f0fc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          59,
+          2,
+          2,
+          "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          60,
+          1,
+          2,
+          "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          60,
+          2,
+          2,
+          "876c71146ba549fecd648b3268d6392955bf3f76271922203fedf62614dd0521"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          61,
+          1,
+          2,
+          "23f6ea889503cf645fb4fb257150d81847bbb7f2fd1a60ca69dccf0184d78450"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          61,
+          2,
+          2,
+          "7f135004951ee5f62fdfa2f8cd1332fac86c888a0610c43964f7de1fe6cb0f83"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          62,
+          1,
+          2,
+          "4b297954d30a53ce85e2243478ae79ba95ff7a2ac66b919126829e0f66bbef18"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          62,
+          2,
+          2,
+          "051ba6f17efc60f890e1b868376ee38cb49ce77bd2143f450aff9eb76913b4cc"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          63,
+          1,
+          2,
+          "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d"
+        ],
+        [
+          "uniform_recursive_tree",
+          4,
+          63,
+          2,
+          0,
+          "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          0,
+          1,
+          2,
+          "9d4dfdb45b4e4e029cdebd3afa3fed3e677c53db214ddffb0f3f34ef128e4c58"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          0,
+          2,
+          2,
+          "dc4a500a1def5ac6e349ccb82b451f97fa9c9b492d4a2cb438f266822d7db34a"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          5,
+          1,
+          2,
+          "798a32b3c60d6b8082bd7d15e78fe9d23b7f6676c64312e6fac472060d59842c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          5,
+          2,
+          2,
+          "e4a56b8c109557ecca94581c0ecc64e96711dd1ebe5acfbf916a84c8ac53a38c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          10,
+          1,
+          2,
+          "798a32b3c60d6b8082bd7d15e78fe9d23b7f6676c64312e6fac472060d59842c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          10,
+          2,
+          2,
+          "e4a56b8c109557ecca94581c0ecc64e96711dd1ebe5acfbf916a84c8ac53a38c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          15,
+          1,
+          2,
+          "5a60e2626def82922a13f96d459b3acf9576446b75950498762d9b035d544fe3"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          15,
+          2,
+          2,
+          "8faa84adcdc74d49436a6e31a1cb061577a9e342f1bb2d20b3c84a66d9ee32ec"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          25,
+          1,
+          2,
+          "5a60e2626def82922a13f96d459b3acf9576446b75950498762d9b035d544fe3"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          25,
+          2,
+          2,
+          "8faa84adcdc74d49436a6e31a1cb061577a9e342f1bb2d20b3c84a66d9ee32ec"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          26,
+          1,
+          2,
+          "798a32b3c60d6b8082bd7d15e78fe9d23b7f6676c64312e6fac472060d59842c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          26,
+          2,
+          2,
+          "e4a56b8c109557ecca94581c0ecc64e96711dd1ebe5acfbf916a84c8ac53a38c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          36,
+          1,
+          2,
+          "9d4dfdb45b4e4e029cdebd3afa3fed3e677c53db214ddffb0f3f34ef128e4c58"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          36,
+          2,
+          2,
+          "dc4a500a1def5ac6e349ccb82b451f97fa9c9b492d4a2cb438f266822d7db34a"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          37,
+          1,
+          2,
+          "798a32b3c60d6b8082bd7d15e78fe9d23b7f6676c64312e6fac472060d59842c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          37,
+          2,
+          2,
+          "e4a56b8c109557ecca94581c0ecc64e96711dd1ebe5acfbf916a84c8ac53a38c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          43,
+          1,
+          2,
+          "798a32b3c60d6b8082bd7d15e78fe9d23b7f6676c64312e6fac472060d59842c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          43,
+          2,
+          2,
+          "e4a56b8c109557ecca94581c0ecc64e96711dd1ebe5acfbf916a84c8ac53a38c"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          54,
+          1,
+          2,
+          "5a60e2626def82922a13f96d459b3acf9576446b75950498762d9b035d544fe3"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          54,
+          2,
+          2,
+          "8faa84adcdc74d49436a6e31a1cb061577a9e342f1bb2d20b3c84a66d9ee32ec"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          55,
+          1,
+          2,
+          "9d4dfdb45b4e4e029cdebd3afa3fed3e677c53db214ddffb0f3f34ef128e4c58"
+        ],
+        [
+          "uniform_tree_plus_links",
+          4,
+          55,
+          2,
+          2,
+          "dc4a500a1def5ac6e349ccb82b451f97fa9c9b492d4a2cb438f266822d7db34a"
+        ]
+      ]
+    },
+    "distinct_literal_fingerprints": 15,
+    "maximum_used_J": 15,
+    "maximum_used_n": 48,
+    "reader_comparison": [
+      {
+        "distinct_shapes": 18,
+        "nonsingleton_intervals": [
+          [
+            "12",
+            2,
+            2,
+            3
+          ],
+          [
+            "14",
+            3,
+            2,
+            4
+          ],
+          [
+            "29",
+            3,
+            2,
+            3
+          ],
+          [
+            "35",
+            3,
+            2,
+            4
+          ],
+          [
+            "62",
+            3,
+            2,
+            3
+          ]
+        ],
+        "observations": {
+          "exact_agreement": 287,
+          "interval_contains_exact_value": 5
+        },
+        "path": "pair_certificates.json",
+        "sha256": "2661ef7963b636fbb39153028dc250eedc3f112e547e1c6ed8d036beddf87706"
+      }
+    ],
+    "rows": [
+      {
+        "J": 8,
+        "age": 1,
+        "eligible_in_bucket": 64,
+        "future_status": "next_open",
+        "m": 4,
+        "n": 15,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 10,
+        "stage_sha256": "a3d00692a70bec4a27564315c9cfc98fca9150c3a3b8171795338dfdde9c0e21",
+        "weighting": "uniform_labelled_tree"
+      },
+      {
+        "J": 12,
+        "age": 2,
+        "eligible_in_bucket": 50,
+        "future_status": "next_open",
+        "m": 4,
+        "n": 21,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 45,
+        "stage_sha256": "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e",
+        "weighting": "uniform_labelled_tree"
+      },
+      {
+        "J": 8,
+        "age": 2,
+        "eligible_in_bucket": 14,
+        "future_status": "closed",
+        "m": 4,
+        "n": 12,
+        "order": {
+          "decides_future": true,
+          "order": 0,
+          "tests": []
+        },
+        "replicate": 56,
+        "stage_sha256": "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3",
+        "weighting": "uniform_labelled_tree"
+      },
+      {
+        "J": 12,
+        "age": 1,
+        "eligible_in_bucket": 5,
+        "future_status": "next_open",
+        "m": 6,
+        "n": 25,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 16,
+        "stage_sha256": "06ebeeb1925feef393c058cbc4d340e6c0bac06aa23f97acef4e52502c631128",
+        "weighting": "uniform_labelled_tree"
+      },
+      {
+        "J": 15,
+        "age": 1,
+        "eligible_in_bucket": 2,
+        "future_status": "next_open",
+        "m": 8,
+        "n": 28,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 34,
+        "stage_sha256": "b271419912530063f33e9157c6fd099a5d2e65ff1fb69e7c7cdf5b51e86e1821",
+        "weighting": "uniform_labelled_tree"
+      },
+      {
+        "J": 7,
+        "age": 1,
+        "eligible_in_bucket": 64,
+        "future_status": "next_closes",
+        "m": 4,
+        "n": 12,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 39,
+        "stage_sha256": "dde13867f436195e5a3f9d457be48a691ff9856189a799fa74aaf9a4fe739a2d",
+        "weighting": "uniform_recursive_tree"
+      },
+      {
+        "J": 12,
+        "age": 2,
+        "eligible_in_bucket": 47,
+        "future_status": "next_open",
+        "m": 4,
+        "n": 21,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 3,
+        "stage_sha256": "d4a9ea12c8c6088a82122fe2731be2908585caf78888c82493eb2404f3919c1e",
+        "weighting": "uniform_recursive_tree"
+      },
+      {
+        "J": 8,
+        "age": 2,
+        "eligible_in_bucket": 17,
+        "future_status": "closed",
+        "m": 4,
+        "n": 12,
+        "order": {
+          "decides_future": true,
+          "order": 0,
+          "tests": []
+        },
+        "replicate": 39,
+        "stage_sha256": "600357536ba6ed70b94b78e81da55ecb316e3d2401fcb2c9fc0700149ca965b3",
+        "weighting": "uniform_recursive_tree"
+      },
+      {
+        "J": 12,
+        "age": 1,
+        "eligible_in_bucket": 5,
+        "future_status": "next_open",
+        "m": 6,
+        "n": 25,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 17,
+        "stage_sha256": "e866535b961d64aff5da6a982c601c2486683cdf298471020cda995f45641868",
+        "weighting": "uniform_recursive_tree"
+      },
+      {
+        "J": 15,
+        "age": 1,
+        "eligible_in_bucket": 2,
+        "future_status": "next_open",
+        "m": 8,
+        "n": 28,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 8,
+        "stage_sha256": "094e43b99f6b8ebb3c459badcddab892c622a52e2ce6190a26947ebc395abc42",
+        "weighting": "uniform_recursive_tree"
+      },
+      {
+        "J": 6,
+        "age": 1,
+        "eligible_in_bucket": 11,
+        "future_status": "next_open",
+        "m": 4,
+        "n": 10,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 37,
+        "stage_sha256": "798a32b3c60d6b8082bd7d15e78fe9d23b7f6676c64312e6fac472060d59842c",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 8,
+        "age": 2,
+        "eligible_in_bucket": 11,
+        "future_status": "next_open",
+        "m": 4,
+        "n": 14,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 4,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 54,
+        "stage_sha256": "8faa84adcdc74d49436a6e31a1cb061577a9e342f1bb2d20b3c84a66d9ee32ec",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 12,
+        "age": 3,
+        "eligible_in_bucket": 11,
+        "future_status": "next_open",
+        "m": 4,
+        "n": 22,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 5,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 54,
+        "stage_sha256": "7167e512f4ad4fc6344fcebfa4760682649c26fa4835925396dc786f46b38d98",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 8,
+        "age": 1,
+        "eligible_in_bucket": 30,
+        "future_status": "next_open",
+        "m": 6,
+        "n": 13,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 57,
+        "stage_sha256": "b5afe43c99d1f437d991da122c6a94bf530bb7e23e2e39eb69b823047477a58f",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 15,
+        "age": 2,
+        "eligible_in_bucket": 18,
+        "future_status": "next_open",
+        "m": 6,
+        "n": 28,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 33,
+        "stage_sha256": "f17a871d57712a8a580bf1c61d48b74c54163f931cf082b656a0cd125cdb77d5",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 14,
+        "age": 3,
+        "eligible_in_bucket": 3,
+        "future_status": "next_open",
+        "m": 6,
+        "n": 25,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 4,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 10,
+        "stage_sha256": "4a91379b9e7fd5173bc6150cc51934c582481b1587a2d1358e2d101b7b3c68d9",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 13,
+        "age": 1,
+        "eligible_in_bucket": 16,
+        "future_status": "next_open",
+        "m": 8,
+        "n": 24,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 0,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 61,
+        "stage_sha256": "da1f8a7eae0e56e917f1270b8edd681c6594640272c31eb9df2fbb2205503e54",
+        "weighting": "uniform_tree_plus_links"
+      }
+    ],
+    "stage_file_sha256": "b134b135e6ef3ceec684f2900496a0b48b4697f2a87495dfaa469ebe091b1024",
+    "targeted_interval_rows": [
+      {
+        "J": 11,
+        "age": 2,
+        "coarse_interval": [
+          2,
+          3
+        ],
+        "future_status": "next_open",
+        "m": 6,
+        "n": 20,
+        "order": {
+          "decides_future": true,
+          "order": 2,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 1,
+              "order": 2
+            }
+          ]
+        },
+        "replicate": 3,
+        "shape": 12,
+        "stage_sha256": "e82c60a75284f203a32c28c2acd95c4d6bfb356abce013eaa74bad9f4b1e57db",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 14,
+        "age": 1,
+        "coarse_interval": [
+          2,
+          4
+        ],
+        "future_status": "next_open",
+        "m": 8,
+        "n": 28,
+        "order": {
+          "decides_future": true,
+          "order": 3,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  5,
+                  7
+                ],
+                [
+                  7,
+                  3
+                ]
+              ],
+              "generators_checked": 2,
+              "order": 2
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 3,
+              "order": 3
+            }
+          ]
+        },
+        "replicate": 3,
+        "shape": 14,
+        "stage_sha256": "453b34ec4d767b024af7077cc917f33c614c3ccfbf6487fccd850455755c3e85",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 10,
+        "age": 1,
+        "coarse_interval": [
+          2,
+          3
+        ],
+        "future_status": "next_open",
+        "m": 6,
+        "n": 19,
+        "order": {
+          "decides_future": true,
+          "order": 3,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  5,
+                  2
+                ]
+              ],
+              "generators_checked": 2,
+              "order": 2
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 3,
+              "order": 3
+            }
+          ]
+        },
+        "replicate": 9,
+        "shape": 29,
+        "stage_sha256": "830a44b017c16fd129141d85e1d81590cefc1e6e338e6c45b34cfa3616255b5b",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 10,
+        "age": 1,
+        "coarse_interval": [
+          2,
+          4
+        ],
+        "future_status": "next_open",
+        "m": 6,
+        "n": 20,
+        "order": {
+          "decides_future": true,
+          "order": 3,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 1
+            },
+            {
+              "changes_equations": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  3,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  6,
+                  3
+                ]
+              ],
+              "generators_checked": 2,
+              "order": 2
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 3,
+              "order": 3
+            }
+          ]
+        },
+        "replicate": 11,
+        "shape": 35,
+        "stage_sha256": "de8ab26a114677a67ffc56c90ee12674a4faf7f4f3d89db32a43ae2e034d2355",
+        "weighting": "uniform_tree_plus_links"
+      },
+      {
+        "J": 10,
+        "age": 1,
+        "coarse_interval": [
+          2,
+          3
+        ],
+        "future_status": "next_open",
+        "m": 6,
+        "n": 19,
+        "order": {
+          "decides_future": true,
+          "order": 3,
+          "tests": [
+            {
+              "changes_equations": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ],
+              "generators_checked": 1,
+              "order": 0
+            },
+            {
+              "changes_equations": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              "generators_checked": 2,
+              "order": 1
+            },
+            {
+              "changes_equations": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  6,
+                  2
+                ]
+              ],
+              "generators_checked": 3,
+              "order": 2
+            },
+            {
+              "changes_equations": null,
+              "generators_checked": 4,
+              "order": 3
+            }
+          ]
+        },
+        "replicate": 17,
+        "shape": 62,
+        "stage_sha256": "a83254f0948a7fb4497d1f63c986db61b143556b45e3c74448461a1d74c24294",
+        "weighting": "uniform_tree_plus_links"
+      }
+    ]
+  }
+}

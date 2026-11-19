@@ -1,0 +1,39 @@
+# Exact short bond certificates for the remaining sampled stages
+
+The singleton-minimum certificate left 34 of 200 sampled shapes unresolved, accounting for 59 of 767 observations. Exact pair minima through bond size five certify order two on 22 of those shapes and 32 observations. Extending the cutoff to six certifies the same cases. The other 12 shapes and 27 observations have exact order three. Every one of those stages has a strictly later lawful round. [Initial certificates](../../artifacts/BOND-READING-WEIGHTINGS-20261119-001/BOND-READING-WEIGHTINGS-20261119-001-E001_weightings/pair_certificates.json) · [Case results](../../artifacts/BOND-READING-WEIGHTINGS-20261119-001/BOND-READING-WEIGHTINGS-20261119-001-E001_weightings/short_bonds.json)
+
+## Computing the pair certificate
+
+Use the classical graph representation with an exterior holder for loose distinctions. A bond is a nonempty cut whose two parts are connected. All distinctions with the same two holders cross together. The code uses one link for each such bundle and its number of distinctions as weight.
+
+For every set of at most three links of total weight at most six, compute its binary syndrome on the fundamental cycles of a spanning tree. Any cut of at most six distinctions uses at most six links. In sorted link order its first half of ⌊k/2⌋ links and remaining half have equal syndrome, where \(k\) is its number of links. Matching all halves therefore finds every possible short cut. Delete each resulting set on the actual graph. Count it precisely if two components remain and every deleted link crosses between them. These are exactly the short bonds. The kernel stores the smallest weight through each pair or the combined color for greater weight and absence. Two 64-bit words hold the exact cycle coordinates in all sampled cases. At higher rank a linear projection can admit extra candidate sets, each of which still undergoes the two-component test. A work-limit exit has no certificate. [Enumeration kernel](../../experiments/BOND-READING-WEIGHTINGS-20261119-001/BOND-READING-WEIGHTINGS-20261119-001-E001_weightings/short_bonds.cpp)
+
+The certificate combines the capped pair entry with each exact singleton reading, the directed tests of whether a pair attains either singleton minimum, and the pointwise fixed growing end. Every full pair matching preserves these features. In some cases, taking each invariant color class as freely permutable already preserves the equation span. Otherwise the code pools genuine transposition twins and checks generators of the resulting quotient group. It tests every kernel transposition needed to lift the proof to literal distinction names. The previously certified lower bound of two then gives exact order two. [Certificate and replay](../../experiments/BOND-READING-WEIGHTINGS-20261119-001/BOND-READING-WEIGHTINGS-20261119-001-E001_weightings/short_bonds.py)
+
+## Why the remaining stages need order three
+
+In each of the remaining stages there are four exhausted junctions \(A,B,C,D\) with five single meetings \(AC,AD,BC,BD,CD\). The two middle holders \(C,D\) have no other meetings. Removing them leaves a connected remainder \(Q\) in which one of \(A,B\) has a single incident distinction. Consequently the least \(A,B\)-separating cut in \(Q\) has weight one. Each case exchanges \(AC\) and \(BD\) and fixes every other distinction, including the growing end. The case table records the literal holders, attachments, and exchanged names. [Motif checks by shape](../../artifacts/BOND-READING-WEIGHTINGS-20261119-001/BOND-READING-WEIGHTINGS-20261119-001-E001_weightings/short_bonds.json)
+
+Every internal singleton has minimum three. Each pair of internal distinctions has minimum three except the two opposite spoke pairs \(AC,BD\) and \(AD,BC\), which have minimum four. A cut that separates \(A,B\) crosses at least two internal distinctions and at least one in \(Q\). A nonempty internal cut keeping the poles together crosses either three or four. The middle-holder equations attain three for pairs at one middle holder. Separating the poles by a minimum cut of \(Q\) and placing both middle holders with one pole attains three for the pair at the other pole. An opposite pair needs four because separating the poles then also separates the middle holders. With the poles together, taking \(C,D\) together on the other part attains four.
+
+For a pair that includes a distinction in \(Q\), moving from the spoke \(AC\) to \(BD\) also preserves the full reading. If the poles are together, swapping \(C,D\) transfers the crossing of \(AC\) to \(AD\), which then crosses exactly when \(BD\) does. If the poles are separate, first swap the middle holders and then change both of their part assignments. Each part restricted to \(Q\) is connected since it has only one pole through which its junctions can meet the removed part. Each middle holder is adjacent to the pole in its new part. The new cut thus has two connected parts and the same weight and the same crossings in \(Q\). The correspondence reverses, including when no common bond exists. This proves the full pair symmetry at any size under these literal hypotheses. [Related adjacent-spoke argument](../../proofs/GROWN-END-MEET-ONCE-20261119-001A/GROWN-END-MEET-ONCE-20261119-001A-P001_pointwise/proof.md#why-the-complete-table-agrees)
+
+The equation at \(C\) has support \(AC,BC,CD\). Its image \(BD,BC,CD\) meets the classical cycle on \(B,C,D\) three times, so it is never a cut. Each full pair matching displayed in the artifact therefore changes the equation span. With a strict future, equation-span disagreement precludes transport of all later readings. The pair obstruction here concerns all later reading orders. [Transport equivalence](../BOND-READING-SCALE-20261119-001/limiting-reading.md)
+
+For sufficiency at order three, preserve the actual weight-three bonds, recognized by the minimum three on their three distinct names. For six of the 12 shapes those bonds, the fixed equations at live junctions, and the unique singleton-minimum bonds span the equation space. For the other six, the code refines the pair features by counts and fixed names of marked thirds that give a weight-three bond. It then checks every quotient permutation of those pair features. Before testing span transport it checks the entire weight-three relation on the lifted permutation. All compatible permutations preserve the equations. The literal transpositions pooled within each block preserve both the features and the equations.
+
+## Validation and replay
+
+An independent complete connected-shore enumeration checks every capped entry and every weight count on nine sampled shapes with at most 18 augmented holders. For the opposite-spoke cases within that range it also checks the full uncapped rows of the displayed swaps. A previously verified pair failure remains uncertified and reproduces its swapped names. Further controls cover weighted parallel distinctions, equal syndromes in a series, and truncation of the kernel by an explicit work limit. In the sampled run neither the short-bond kernel nor the permutation search hit a work limit.
+
+From the repository root, the following commands replay all 34 shapes.
+
+```bash
+family=experiments/BOND-READING-WEIGHTINGS-20261119-001/BOND-READING-WEIGHTINGS-20261119-001-E001_weightings
+run_dir=$(mktemp -d)
+.venv/bin/python -B "$family/short_bonds.py" controls
+.venv/bin/python -B scripts/longrun.py launch "$family/short_bonds.py" --out "$run_dir" --unit short-bonds-replay --workers 4 --case-timeout 60 --case-mem 384M --mem-max 4G --prepare-only
+.venv/bin/python -B scripts/longrun.py run --out "$run_dir" --foreground --limit 20
+.venv/bin/python -B scripts/longrun.py run --out "$run_dir" --foreground
+.venv/bin/python -B "$family/short_bonds.py" collect "$run_dir"
+```

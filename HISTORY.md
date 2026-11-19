@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+
+## 19 November 2026: growth without rounds, refereed
+
+- The study of growth without rounds (`ROUND-FREE-20261119-001`,
+  [decision note](research/ROUND-FREE-20261119-001/round_free.md)) was refereed with fresh code and confirmed with two Narrowings, no
+  Block. The order effect of the present-state serial laws reproduces.
+- **Narrowed.** The order-free closure law reads the unrolled map, which encodes every future join: it trades the tick for knowledge
+  of the map. It equals the rounds only where the cluster rule holds, and only its completed structure is order-free.
+
 ## 19 November 2026: the ring reader's tie rule no longer uses names
 
 - **Clarified (not a block).** The incremental reader of `RING-READ-20261118-001` ([decision note](research/RING-READ-20261118-001/ring_read.md))

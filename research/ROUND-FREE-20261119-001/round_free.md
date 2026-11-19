@@ -1,7 +1,8 @@
 # What does the growth build when joins come one at a time, without rounds?
 
 Epic `ROUND-FREE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (the round-free test promised to the
-owner; `FRESH-COUNT-20261118-001#1`, serial growth testing A104). Goal G17. **Referee pending.**
+owner; `FRESH-COUNT-20261118-001#1`, serial growth testing A104). Goal G17. **Refereed:** report [R1](referee-R1/report.md),
+confirmed with two Narrowings, no Block, folded in on 19 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `d2ff4b4d8` after a three-order pilot and the
@@ -27,11 +28,17 @@ junction spans (`RING-PAIR-20261119-001`).
   partners may not exist yet. The rounds supply that by making all partners at once. That is the work the outside tick was doing.
 - **The law that needs no rounds.** Make a junction for a cluster of the map as soon as all its parent junctions exist; nothing
   else is a move.
-  - It is order-free: every order reaches the same structure. Making one junction never blocks another, so the result is the same
-    whatever comes first (argued, the advisor's argument).
+  - It is order-free in its completed structure: every order reaches the same structure in the end. Making one junction never
+    blocks another (a monotone closure, the advisor's argument, confirmed by the referee). What exists after a fixed number of
+    moves still differs between orders.
   - It needs no clock. The only before-and-after is that a junction comes after its parents. Junctions of different sizes are
     made in any order.
-  - It reads the map instead of a clock. The map says, in advance, which junctions will join which.
+  - **It trades the tick for knowledge of the map** (narrowed after the referee). The map says in advance which junctions will
+    join which, so it encodes every future join. This does not show that a law reading only what has been built can do without
+    ticks; the naive laws above say it cannot easily.
+  - **It equals the rounds only where the cluster rule holds** (narrowed after the referee). At `CLUSTER-ALL-20261119-001`'s
+    overlapping sunflowers the rounds make two junctions on one cluster, and the closure law makes one in every order: order-free
+    and wrong there.
 - **The ratios survive, read by size instead of by round.**
   - The golden ratio of the ring of five five-place knots, the 1.1347 of the ring with one spare, and the 2.6075 of two joined
     rings are ratios between the numbers of junctions spanning k and k + 1 points.
@@ -84,6 +91,22 @@ What this adds:
 - It named three causes of order dependence, the impossibility template, and the wording "size counts what a junction spans, not
   when it is made".
 - It advised against a random-order point prediction (Pólya urns), so none was frozen.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread with fresh code: confirmed with
+two Narrowings, no Block.
+- **Confirmed.** `serial.py`'s present-state law is a fair serial reading of the policy. The referee's own implementation
+  reproduces the order effect: two touching three-place knots close in 12 of 40 orders, and a lone four-place knot keeps growing in
+  38 of 40. Part C's shares match its own brute force at sizes 1 to 13 for the 5–7 join and the 5–5 join through a path; the
+  ring-with-a-hanging-pair join was not checked. The closure law is a monotone closure, so every order reaches the same completed
+  structure in general.
+- **Folded in the same day**, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
+  1. **Narrowing (scope of the claim).** The closure law reads the whole unrolled map in advance, which encodes every future join.
+     It trades the tick for knowledge of the map. It does not show that a law reading only what is built can do without ticks.
+  2. **Narrowing (scope).** It equals the rounds only where the cluster rule holds. At the overlapping sunflowers it is
+     order-free and wrong. Only the completed structure is order-free; partial structures after a fixed number of moves differ.
+- **Also noted.** Codex's serial two-or-three-fresh law is a third thing: a nondeterministic menu, not a growth policy.
 
 ## Position
 

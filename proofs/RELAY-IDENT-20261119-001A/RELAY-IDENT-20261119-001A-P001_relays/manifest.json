@@ -1,0 +1,70 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RELAY-IDENT-20261119-001A-P001",
+ "canonical_id": "RELAY-IDENT-20261119-001A-P001",
+ "proof": "RELAY-IDENT-20261119-001A-P001",
+ "ticket": "RELAY-IDENT-20261119-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Relays: the count when a finished piece goes on",
+ "claim": "Under (S3) and (S4) only: infinite pieces of the extended complex follow CHAIN-IDENT's cluster count; a finite piece (a tree of blocks without chains, occurring only when K is a tree) follows its clusters to its top at round |Y| - 1 and then, if another piece holds a live knot, carries a relay (the pendant rule applied to the top: one point with two endless chains), making k junctions in the k-th round after its top; if it is the only piece it closes (Theorem 4). For K a tree, the dimension is max(chains of an infinite piece, 2 if a piece is finite) (Theorem 5); in bare trees, two is typical because a class without chains relays (Corollary 6).",
+ "standard_statement": "As CHAIN-IDENT's.",
+ "prior_work": "CHAIN-IDENT-20261119-001 and RING-IDENT-20261119-001 (the identification), CLUSTER-ALL-20261119-001 (the relay, computed).",
+ "dependencies": [
+  "CHAIN-IDENT-20261119-001",
+  "RING-IDENT-20261119-001",
+  "CLUSTER-ALL-20261119-001"
+ ],
+ "completion_gate": "The machine check (218 of 218 starts with (S3) and (S4) agree); the census tally (ticket B); the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "written in full; statement checked by the advisor before the freeze (its fixes folded in; its two predictions held); referee pending",
+  "independence": "machine_check.py compares the growth with the relayed complex per round; tally.py compares Theorem 5 with the touch census measured dimensions",
+  "novelty": "extension of CHAIN-IDENT; the relay rule was CLUSTER-ALL computed reading"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "weave_height_criterion_and_lower_bound_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/manifest.json",
+  "identity": "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/identity.json",
+  "proof": "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/proof.md",
+  "result": "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/result.json",
+  "machine_check": "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/machine_check.py",
+  "machine_check_output": "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/machine_check.json"
+ },
+ "attained_result": "Theorems 4 and 5 and Corollary 6 proved; the census tally (T1, 307 of 307) in ticket B."
+}

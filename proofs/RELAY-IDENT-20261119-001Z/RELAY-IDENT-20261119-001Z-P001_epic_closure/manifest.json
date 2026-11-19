@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "RELAY-IDENT-20261119-001Z-P001",
+ "canonical_id": "RELAY-IDENT-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "RELAY-IDENT-20261119-001Z",
+ "proof": "RELAY-IDENT-20261119-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: relays, and why two is typical",
+ "status": "Proved",
+ "claim": "Ledger closing RELAY-IDENT-20261119-001: ticket A (proof) and ticket B (census tally, T1 held). Referee pending. No new claim.",
+ "dependencies": [
+  "RELAY-IDENT-20261119-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "RELAY-IDENT-20261119-001",
+  "epic_path": [
+   "RELAY-IDENT-20261119-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/manifest.json": "e97a1f7956b034992e2524275cdf72c78bc39ffd7d76304b1f730cae9bc83178",
+  "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/result.json": "ba22692cffb796106ecee523d0627956f4ece9a9101f9a5bd1be3025fad88e13",
+  "proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/machine_check.json": "0f6cdc6da3a52d8440f08714a4f5efd4142c2a044ce7608654c331e33621a087",
+  "experiments/RELAY-IDENT-20261119-001B/RELAY-IDENT-20261119-001B-E001_tally/contract.json": "9bdb064d09af3b2f97e91536d91d6f66c941154f0a80b3fc9b6c0b17a7c02e53",
+  "artifacts/RELAY-IDENT-20261119-001B/RELAY-IDENT-20261119-001B-E001_tally/tally.json": "d8a10d6985920b214e5d85961c222635207ecee960ecbc4abbe3d09c827af8ab"
+ },
+ "paths": {
+  "manifest": "proofs/RELAY-IDENT-20261119-001Z/RELAY-IDENT-20261119-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/RELAY-IDENT-20261119-001Z/RELAY-IDENT-20261119-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/RELAY-IDENT-20261119-001Z/RELAY-IDENT-20261119-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/RELAY-IDENT-20261119-001Z/RELAY-IDENT-20261119-001Z-P001_epic_closure/result.json",
+  "check": "proofs/RELAY-IDENT-20261119-001Z/RELAY-IDENT-20261119-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/RELAY-IDENT-20261119-001Z/RELAY-IDENT-20261119-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

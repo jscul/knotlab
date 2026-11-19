@@ -789,6 +789,16 @@ graph is a tree, the junctions per round grow as a polynomial whose degree is on
 less than the number of chains in one piece: two chains in one parity class give
 the census's typical two dimensions
 ([proof](../proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md)).
+And when a piece of the map finishes while another still grows
+(`RELAY-IDENT-20261119-001`, proof and census readout, referee pending)? Its
+finished top is not implied, so the floor gives it one fresh distinction, and
+from there it grows like a knot with one open distinction: one point carrying two
+endless chains. So a finished piece always counts as two chains, and a tree
+start's dimension is the largest number of chains in one piece. That is why two
+is typical: on the census's growing tree-shaped starts, 93% are two-dimensional,
+because a piece without chains relays and a one-dimensional start needs each
+piece to hold exactly one chain
+([decision note](../research/RELAY-IDENT-20261119-001/relay_ident.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

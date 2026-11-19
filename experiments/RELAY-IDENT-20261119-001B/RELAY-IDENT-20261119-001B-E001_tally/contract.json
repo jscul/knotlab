@@ -1,0 +1,29 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RELAY-IDENT-20261119-001B-E001",
+ "ticket": "RELAY-IDENT-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "descriptive",
+ "branch": "code_analysis",
+ "question": "Do the census's measured dimensions on tree-shaped arrangements equal Theorem 5's prediction, and which mechanisms (relay, two chains) give the census's typical dimension two?",
+ "public_inputs": {
+  "code": "tally.py (a946dd633748c0ef61909415a6e37b810096c0c24a221ee4bf3cc419b00379da) (sha256)",
+  "run": "python3 -B tally.py <out.json>",
+  "reused": "TOUCH-CENSUS-20261118-001's runs (runs/touch-census), JOIN-GROWTH joinlib"
+ },
+ "forbidden_inputs": [
+  "Changing the prediction or the kinds after reading the tally"
+ ],
+ "primary_observable": "T1: on simple trees that do not stall, Theorem 5's D equals the census's measured dimension; readouts as in tally.py",
+ "cheapest_meaningful_control": "tree-shaped arrangements with double touches, outside the proofs",
+ "predictions": {
+  "T1": "D equals the measured dimension on every simple tree in the class"
+ },
+ "decision_rules": {
+  "T1": "held iff no exception"
+ },
+ "stop_rule": "One run; readout.",
+ "runtime": "under a minute",
+ "disclosed_exploration": "the same computation was run once as a pilot before this contract, and showed T1 holding (307 of 307); the double-touch readout and the kinds were added after it",
+ "amendments": []
+}

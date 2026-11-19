@@ -680,6 +680,13 @@ not once in 1,746,752 cases on census stages of up to 14 junctions (the referee'
 but beyond the census the law's own round does it once, from a six-junction start
 (Codex, `GROWN-END-SWAP-20261119-001`)
 ([decision note](../research/HUNT-SHORTEN-20261119-001/hunt_shorten.md)).
+So do distances plus the growing end carry what grows (`PROVE-B-20261119-001`,
+proved in part, referee pending)? No: three constructions break it, one by the
+advisor and two grown by the law (Codex), one of them where junctions meet once.
+In each, an old junction's distinctions split across a tie, and the next join
+shortens a bond on one side only. Every one of those swaps also changes the
+three-way distances, so distance read three at a time, plus the growing end,
+is the form still open ([decision note](../research/PROVE-B-20261119-001/prove_b.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

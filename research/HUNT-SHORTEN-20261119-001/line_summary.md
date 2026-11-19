@@ -17,8 +17,9 @@ record it comes from. All nine are refereed.
   a loose distinction, how many, and which sets of them one junction meets. Distance plus the growing end carried everything one
   round further on the meet-once carried pairs (36,060) and the census self-symmetries (1,746,752), by the referees' full runs.
   But Codex built a reached stage, from a six-junction start whose junctions meet twice, where the law's own round breaks it
-  (GROWN-END-SWAP, refereed). So the clean premise fails where start junctions meet twice; whether it holds when they meet once
-  is open.
+  (GROWN-END-SWAP, refereed), and another from a seven-junction start that meets once (GROWN-END-MEET-ONCE, referee pending;
+  reproduced in PROVE-B). So the clean premise fails on what the law grows. Every failing swap changes three-way distances,
+  so pair plus three-way distances plus the growing end is the form still open.
 
 ## Proved (refereed)
 

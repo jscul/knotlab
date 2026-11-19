@@ -641,6 +641,16 @@ most ways of arranging many knots crowd each knot with shared distinctions; of
 those that grow, two dimensions takes over (98% at twenty knots), and rings stay
 rare (at most 0.1%) though the growing starts hold many cycles
 ([decision note](../research/SCALE-SHARE-20261119-001/scale_share.md)).
+And under another law (`NAE-GROWTH-20261119-001`, proof and frozen census,
+referee pending)? Read every junction as not-all-equal instead of parity and the
+loops branch exactly as before: the same counts at every round, so the same
+ratios, because the growth reads its law in one place only, whether a new
+junction's constraint already holds. Under parity that happens only at the
+closing top; under not-all-equal it never does, so where parity closes the top
+relays into two endless chains. Bond distance says who joins whom on 95% of small
+stages under not-all-equal and 40% under parity; where it fails, two
+presentations of the same allowed states join differently
+([decision note](../research/NAE-GROWTH-20261119-001/nae_growth.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

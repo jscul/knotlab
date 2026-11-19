@@ -5,7 +5,7 @@
  "proof": "CAP-CHAINS-20261119-001A-P001",
  "ticket": "CAP-CHAINS-20261119-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "Chains under a cap on places",
  "claim": "Theorem 1: in the proved class, with every knot live and at most five places, every piece of the relayed map carries at most two rays, a relay included (Lemma 1: no 3-, 4-, 6-cycles, groups are candidate pairs; Lemma 2: the non-leaves form one path or one cycle). Corollary 2: such tree starts close or grow in one or two dimensions; cycle cores carry no rays. Theorem 3: at six places with every knot live, and at five places with dead knots, there are tree starts in the class with any number of rays in one piece.",
  "standard_statement": "Caterpillars (Harary and Schwenk 1973); the identification line's theorems.",
@@ -19,7 +19,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "status": "written in full; statement checked by the advisor before the freeze; machine check C1-C8 passed; referee pending",
   "independence": "machine_check.py counts pieces and rays from the definitions on an exhaustive graph enumeration and reads realizable starts with DOUBLE-IDENT's code",
   "novelty": "extension of the identification line"
  },
@@ -56,9 +56,7 @@
   "physical_ontology": false
  },
  "source_contribution": 0,
- "remaining_obligations": [
-  "Run machine_check.py (C1-C8)"
- ],
+ "remaining_obligations": [],
  "paths": {
   "manifest": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/manifest.json",
   "identity": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/identity.json",
@@ -67,5 +65,5 @@
   "machine_check": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/machine_check.py",
   "machine_check_output": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/machine_check.json"
  },
- "attained_result": "Statement and proof written; machine check pending."
+ "attained_result": "Lemmas 1 and 2, Theorem 1, Corollary 2 and Theorem 3 proved; machine check C1-C8 passed (86 graphs to 12 knots, 200,597 assignments, 162,576 starts read, the census, six families and four rings)."
 }

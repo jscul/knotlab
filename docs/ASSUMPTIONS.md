@@ -3165,6 +3165,10 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Extend to six knots or to six places, weight by random pairing of places, or by a growth process that adds knots
   one at a time, and test whether two stays typical and three rare.
 - **History.**
+  - 2026-11-19 · `CAP-CHAINS-20261119-001` (proved; [decision note](../research/CAP-CHAINS-20261119-001/cap_chains.md)): the cap
+    at five places, not the weighting, is what bounds the chains of starts with no dead knot. In the proved class every piece then
+    carries at most two, so tree starts grow in at most two dimensions. Five is sharp: six places, or a dead knot at five, allow
+    any number. Status unchanged.
   - 2026-11-19 · Overturned as a reading of what the growth makes typical, by `WEIGHTINGS-20261119-001`
     ([decision note](../research/WEIGHTINGS-20261119-001/weightings.md)). That epic froze seven weightings before reading any and
     read them with the proved theorem.

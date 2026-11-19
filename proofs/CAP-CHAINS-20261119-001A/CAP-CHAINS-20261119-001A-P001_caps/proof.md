@@ -1,6 +1,6 @@
 # Chains under a cap on places
 
-Status: Partial
+Status: Proved
 
 Ticket `CAP-CHAINS-20261119-001A`, 19 November 2026, by Claude, on the coordinator's go-ahead for `WEIGHTINGS-20261119-001#2`.
 It builds on `DOUBLE-IDENT-20261119-001A-P001` (the identification and dimension theorems for knot multigraphs, with dead knots as
@@ -159,4 +159,18 @@ starts it bounds only the chains.
 
 ## Validation
 
-To be filled from `machine_check.json`.
+`machine_check.py` ran once after the freeze (output `machine_check.json`, summary `result.json`). All eight checks pass.
+
+| # | What ran | Result |
+| --- | --- | --- |
+| C1 | 86 graphs of 1 to 12 knots (no 3-, 4- or 6-cycle, deg_k + d_k ≤ 5), enumerated one knot at a time up to isomorphism | every core a path (58), a cycle (22) or a star or less (6) |
+| C2 | 200,597 open assignments on them, pieces and rays counted from the definitions | at most two pendant rays in any piece |
+| C3 | 162,576 simple starts of up to 9 knots read by DOUBLE-IDENT's classify and dims.predict | 150,355 stall; in the class, 1,864 one-dimensional, 9,259 two-dimensional, 1,098 exponential (cycle cores), none three or more |
+| C4 | 2,187 all-live starts of girth 5 with a 6-cycle, up to 7 knots | 1,377 out by (S3), 810 stall, none in the class |
+| C5 | the touch census's 12,473 arrangements in the class | 963 have no dead knot, and none has more than two rays in a piece; 11,510 have a dead knot |
+| C6 | S_3 to S_6 (7, 11, 15, 19 knots, largest 6 places) and T_1, T_2 (10 and 31 knots, largest 5 places, 1 and 4 dead hubs) | all in the class; rays in the main piece 3, 4, 5, 6 and 3, 6; read as that many dimensions; growth equals the relayed cover per round to round 8 |
+| C7 | the engine's per-round counts, 24 rounds for S_3–S_5 and T_1, 18 for S_6, 16 for T_2 | R-th differences zero over the last four rounds or more and (R−1)-th constant, so degree R − 1 in every case |
+| C8 | the ring of seven with one leaf (largest 5 places) | in the class, read exponential, equal to the cover to round 8; the engine's counts grow by about 9% a round to round 60 (8, 9, …, 1,096 at round 52, 2,086 at round 60) |
+
+The advisor's predicted degrees (2, 3, 5 for S_3, S_4, S_6; 2 and 5 for T_1, T_2) held. It counted S_6 as 17 knots, but it has 19:
+four branch knots, three connectors and twelve arm knots.

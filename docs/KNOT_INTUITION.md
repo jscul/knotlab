@@ -859,6 +859,17 @@ pairing of places and under growth by attachment. A tree of knots of at most fiv
 places is a caterpillar (the non-leaves form one line), so it carries at most two
 chains; a dead knot can still join three
 ([decision note](../research/WEIGHTINGS-20261119-001/weightings.md)).
+Is that a law of the knots, then (`CAP-CHAINS-20261119-001`, proof, referee
+pending)? Yes, once no knot is dead. A knot's places must cover its touches and
+the pairs it joins, so with five places no knot touches three knots that touch
+others. The knots then form one line or one ring, with single knots hung on it,
+and every piece of the map carries at most two chains. A tree-shaped start of
+such knots grows in at most two dimensions, and a ring carries no chain, though
+it can still grow exponentially. Five is the largest such cap: at six places a
+bare tree can carry any number of chains in one piece. A dead knot, whose places
+are all shared, joins its neighbours without costing them a place, so dead hubs
+give any number of chains even at five places
+([decision note](../research/CAP-CHAINS-20261119-001/cap_chains.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

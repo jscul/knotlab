@@ -5,7 +5,7 @@
  "proof": "PARENT-RULE-20261119-001A-P001",
  "ticket": "PARENT-RULE-20261119-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "Complete rounds keep backed pairs, and peel back exactly",
  "claim": "Theorem 1: every stage of round >= 1 under complete rounds from a connected start has its live junctions pairwise apart (P2) and backed pairs (P1+: any two junctions a live junction meets also meet a junction holding no loose distinction). Theorem 2: removing the live junctions of an open stage gives the previous stage exactly, so the peel depth of a round-r open stage is at least r. Theorem 3: on the previous stage distinctions, the next open stage never lengthens a bond distance.",
  "standard_statement": "Complete-round joining of even-parity constraints: constraints with a free variable are pairwise variable-disjoint, their neighbours pairwise share a further neighbour with no free variable; deleting them gives the previous stage; least cocircuits through old variables never grow.",
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proofs written before the census check; advisor (Fable 5.2) consulted before the freeze; referee pending",
+  "status": "proofs written before the census check; advisor (Fable 5.2) consulted before the freeze; ticket B's census check (264 of 265 shards, 70,228 stages) finds no violation of Theorems 1 to 3; referee pending",
   "independence": "census replays the statements; same task authorship",
   "novelty": "read off the predecessor rule; no literature search run"
  },
@@ -54,13 +54,14 @@
  },
  "source_contribution": 0,
  "remaining_obligations": [
-  "census check (ticket B part C)",
-  "referee"
+  "referee",
+  "census check's last shard (stress test pending)"
  ],
  "paths": {
   "manifest": "proofs/PARENT-RULE-20261119-001A/PARENT-RULE-20261119-001A-P001_backed/manifest.json",
   "identity": "proofs/PARENT-RULE-20261119-001A/PARENT-RULE-20261119-001A-P001_backed/identity.json",
-  "proof": "proofs/PARENT-RULE-20261119-001A/PARENT-RULE-20261119-001A-P001_backed/proof.md"
+  "proof": "proofs/PARENT-RULE-20261119-001A/PARENT-RULE-20261119-001A-P001_backed/proof.md",
+  "result": "proofs/PARENT-RULE-20261119-001A/PARENT-RULE-20261119-001A-P001_backed/result.json"
  },
- "attained_result": "Theorems 1 to 3 written with proofs; to be checked on the census."
+ "attained_result": "Theorems 1 to 3 proved; checked on 70,228 census stages (264 of 265 shards) with no violation."
 }

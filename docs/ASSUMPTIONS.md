@@ -164,6 +164,7 @@ evidence: results and their status come from the records each entry links.
 | [A107](#a107--small-joins-of-a-ring-and-a-two-fold-piece-are-weighted-uniformly-over-one-bare-census) | Small joins of a ring and a two-fold piece are weighted uniformly over one bare census | measure | Assumed |
 | [A108](#a108--the-cheapest-growth-reads-which-junction-holds-which-distinction-not-only-the-allowed-states) | The cheapest growth reads which junction holds which distinction, not only the allowed states | scope | Confirmed |
 | [A109](#a109--self-feeding-loops-are-few-in-kind-and-recur-as-shared-routines-the-owners-eddies) | Self-feeding loops are few in kind and recur as shared routines, the owner's eddies | working premise | Under challenge |
+| [A110](#a110--blow-up-is-expected-and-the-unlimited-structure-is-read-by-sampling-it) | Blow-up is expected, and the unlimited structure is read by sampling it | working premise | Assumed |
 
 ## Entries
 
@@ -3317,3 +3318,32 @@ evidence: results and their status come from the records each entry links.
     the root of W = 1 for a round-weight built from a few pieces, which multiply when parts are joined. Where the rule breaks, more
     self-feeding starts appear that nothing yet describes (part of the run still pending), so it stays under challenge.
   - 2026-11-19 · Recorded, in the owner's words, as his direction; under challenge by `LOOP-CATALOGUE-20261119-001`.
+
+### A110 · Blow-up is expected, and the unlimited structure is read by sampling it
+
+**Assumed** · 2026-11-19 · working premise
+
+- **Statement.** This is the owner's direction, not a result. The system is like a simulation whose simulator has no limits, so
+  growth that blows up is the expected case, not a defect to avoid. The way to understand it is to sample the underlying
+  structure, accepting that a sample will sometimes give outlier results. The program does not seek harmonies, or any other
+  restriction, in order to avoid explosive growth. A study of explosive growth asks:
+  - what a sample of this kind typically shows, under a stated weighting (A71);
+  - whether that kind has its own regularity, or is where finite description ends.
+- **Why.** John Cullen, 19 November 2026 (Pacific time), on the explosive-kind study: "When we talk about 'explosive', isn't that
+  kind of expected? Whenever I envision the intuition, it always blows up. Imagine it's a simulation, where the simulator has no
+  limits. That is the kind of system we're dealing with. My thought process was that we would need to do what amounts to
+  essentially a sampling somehow of the underlying structure. Of course, this would result in outlier results sometimes I think,
+  but it's the way I always envisioned it. I guess my question is, are we trying to get to harmonies to avoid explosive results?
+  Or what's the intuition behind what's going on here?" The coordinator answered him in the project chat: no; blow-up is expected,
+  and growth is sorted into stalls, fixed dimension, eddies and the not-yet-describable kind, so that a sample can be read against
+  what is typical under a weighting.
+- **Rests on it.** The framing of `EXPLOSIVE-20261119-001`: explosive growth is a kind to describe and sample, not an outcome to
+  exclude. No result rests on it.
+- **Challenge.** It could be challenged in two ways:
+  - **Atypical under natural weightings.** Under the crowded weightings measured so far, most starts stall, and the eddies within
+    five places are rare (`WEIGHTINGS-20261119-001`). A weighting under which explosive growth is the typical outcome, or one
+    under which it never is, would test "always blows up".
+  - **No stable sampled behaviour.** It would also be tested if the explosive kind admits no stable sampled behaviour at all:
+    shares that do not settle as samples grow, under every weighting tried. Then sampling would not read it.
+- **History.**
+  - 2026-11-19 · Recorded, in the owner's words, as his direction; it frames `EXPLOSIVE-20261119-001`.

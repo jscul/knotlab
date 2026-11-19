@@ -1,7 +1,8 @@
 # The floor's endless chains as pendant chains of the cover
 
 Epic `CHAIN-IDENT-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-IDENT-20261119-001#2`. Goal
-G17. **Referee pending.**
+G17. **Refereed:** report [R1](referee-R1/report.md), confirmed line by line, no Block; one correction to the validation count
+(not a block) and four wording points folded into the proof on 19 November (see Referee).
 
 **Record.**
 - **The proof:** [proof.md](../../proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md) (ticket A).
@@ -34,6 +35,19 @@ G17. **Referee pending.**
 - **What stays open.** Relays: a piece with no cycle and no chain finishes while others go on, and the floor then starts a chain
   from its top. That is the next direction, `RING-IDENT-20261119-001#1`. Why two is the census's typical dimension is a fact about
   which trees occur, not proved here.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread, read line by line, with its own
+growth and cluster enumeration. No study code was run.
+- **Confirmed.** Theorems 1 and 2 and Corollary 3. Its own check found 81 of 81 in the class to seven knots and 47 of 47 at eight, and
+  Theorem 2 held on all 66 trees in the class to round 20. The pair and the paths of three, four and five were regrown as stated.
+- **Folded in.**
+  - **The relay control, corrected (not a block).** 115 of 137 differ, not 137: the check counted a non-live knot twice. The 22
+    stars close by implication, exactly as their clusters do, so (S5⁺) can be weakened to "every live component is infinite, or
+    there is only one".
+  - **Wording points.** The path of three's leaves each carry a ray, so both classes have R = 2. Case 3's two loose distinctions are
+    named for open = 1, k = 1. The program's implied rule is cited. The check's (S6) is noted as not part of the proof.
 
 ## Known results, and what this adds
 

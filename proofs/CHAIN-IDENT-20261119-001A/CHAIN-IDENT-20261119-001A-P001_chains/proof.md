@@ -6,7 +6,9 @@ Ticket `CHAIN-IDENT-20261119-001A`, 19 November 2026, by Claude, on the coordina
 This extends `RING-IDENT-20261119-001A-P001` (refereed, confirmed) to starts that take distinctions from the floor of three places.
 The advisor checked the statement and the case table before the freeze, and its three amendments are folded in: the right condition
 on loose distinctions, the relay named in (S5⁺), and the corollary's factorial and hypothesis. `machine_check.py` is a separate
-algorithm in the same task. Referee pending.
+algorithm in the same task. **Refereed:** report R1 (`research/CHAIN-IDENT-20261119-001/referee-R1/report.md`), Theorems 1 and 2
+and Corollary 3 confirmed line by line, no Block; one correction to the validation count (not a block) and four wording points
+folded in on 19 November.
 
 ## Setting
 
@@ -36,7 +38,9 @@ read in X̃⁺.
 RING-IDENT's (S1), (S2) and (S5) are dropped: the floor is allowed, surplus may sit anywhere, and K may be a tree. What (S5⁺)
 excludes is the relay. A finite ray-free component finishes at its top cluster, with ∂ = ∅. That top is not implied while other
 live components remain, so the floor gives it one fresh distinction, which starts an offshoot that is no point of X⁺
-(`CLUSTER-ALL-20261119-001`'s relay; `RING-IDENT-20261119-001` Proposition 5).
+(`CLUSTER-ALL-20261119-001`'s relay; `RING-IDENT-20261119-001` Proposition 5). (S5⁺) can be weakened to "every live component
+is infinite, or there is only one": a single finite live component closes by implication, exactly as its clusters do (referee R1).
+`RELAY-IDENT-20261119-001` removes (S5⁺) altogether.
 
 ## Theorem 1 (the identification with chains)
 
@@ -63,7 +67,8 @@ So the growth's dimension, the exponent of its cumulative count, is the largest 
 For a bare tree (no surplus) with at least four knots, a ray comes from each leaf whose neighbour has degree 2, one ray each, and
 from nothing else. So R is the largest number of such leaves in one parity class of K. The two small trees:
 - K2: each knot has two pendant points, each with one ray.
-- The path of three knots: the middle knot has one pendant point with two rays.
+- The path of three knots: the middle knot has one pendant point with two rays, and each leaf has one pendant point with one ray.
+  Both classes have R = 2, so the leading coefficient is 2 (corrected wording, referee R1).
 
 ## Lemma 0 (the shape of X⁺)
 
@@ -148,7 +153,8 @@ By induction on t, carrying (a), (b) and "every junction of round t is live".
   and (a) holds.
 
 **Fresh distinctions, and (b), at every round t ≥ 1.** A new junction with φ_t = [C], p = |R*(C)| parents and demand d gets
-max(d, 3 − p, 1) distinctions, or exactly d if it is implied. By Lemma 5, (b) at t is the statement that this number is d + r.
+max(d, 3 − p, 1) distinctions, or exactly d if it is implied: the program's rule, `freelib.floored` of `FRESH-COUNT-20261118-001`,
+which applies no floor at an implied junction. By Lemma 5, (b) at t is the statement that this number is d + r.
 1. **|R*(C)| ≥ 2.** Here p ≥ 2, r = 0 and d = |∂C| ≥ 1 by Lemma 0.3, so it gets max(d, 1) = d, whether implied or not.
 2. **C = {w̃, o}.** Here p = 1, d = d_w + (s_w − 1) = open_w − 1, and r = R(open_w).
    - open_w ≥ 3: max(d, 2) = d and r = 0.
@@ -161,14 +167,15 @@ max(d, 3 − p, 1) distinctions, or exactly d if it is implied. By Lemma 5, (b) 
 
    With open_w = 2, d = d_w + s_w − 1 = 1. With open_w = 1, d = 0 + 1 = 1. So it gets max(1, 2) = 2 = d + r.
 4. **Implied junctions.** The implied rule gives d, which differs from the floor's value only in cases 2 and 3.
-   - **Case 3.** The parent P = C − a_k has |∂P| ≥ 2 loose distinctions, a group extension and a_k, and the new junction takes
-     only one of them. So it does not take every loose distinction and is not implied.
+   - **Case 3.** The parent P = C − a_k has |∂P| ≥ 2 loose distinctions (a group extension and a_k; for open_w = 1 and k = 1, the
+     first points of o's two rays), and the new junction takes only one of them. So it does not take every loose distinction and is not implied.
    - **Case 2.** The offshoot takes one of w's loose distinctions. It would be implied only if that were the start's only loose
      distinction. But a connected simple K with at least two knots holds at least two.
      - If some knot has a common K-neighbour with another, both are live, so each holds at least one.
      - Otherwise K has no path of two lines, so K = K2, and each of its knots holds two.
 
-     (This is the advisor's (S6′): every K-component with a live knot holds at least two loose distinctions. It is automatic here.)
+     (This is the advisor's (S6′): every K-component with a live knot holds at least two loose distinctions. It is automatic here.
+     `machine_check.py` also tests a condition (S6), at least two live knots, which is not part of the proof and never fires.)
 5. **Liveness.** In every case the junction holds d + r = |∂C| ≥ 1 loose distinctions (Lemma 0.3), so it is live.
 
 **Step t → t + 1, for t ≥ 1.**
@@ -248,7 +255,10 @@ at 4.
 at each knot in turn. For each, it classifies the start and compares, per round to t = 6, the multiset of (parents, fresh) from the
 growth with (|R*(C)|, |∂C|) over X⁺'s clusters.
 - In the class: 81 of 81 agree.
-- In the relay class, the control (S5⁺ failing): 137 of 137 differ.
+- In the relay class, the control (S5⁺ failing): 115 of 137 differ. The first version said 137 of 137 (corrected, not a block, referee
+  R1). The script counts a non-live knot twice: once as an isolated point of the cover, and once by hand at round 0. On the 22 stars
+  and their surplus variants, that double count is the only difference. Counted once, they agree, because their single finite live
+  component closes by implication. `RELAY-IDENT-20261119-001`'s check counts once and finds the same split.
 - Out of the class by (S3) or (S4): 7,557, not compared.
 
 **The advisor's predictions all hold.**

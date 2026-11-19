@@ -4,6 +4,16 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the identification proofs refereed
+
+- The identification of the growth with the clusters of the unrolled map (`RING-IDENT-20261119-001`,
+  [proof](proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md)) and its extension to the floor's
+  endless chains (`CHAIN-IDENT-20261119-001`,
+  [proof](proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md)) were refereed line by line and
+  confirmed.
+- **Corrected (not a block).** The chains proof's control count of relay starts is 115 of 137, not 137: its check counted a
+  non-live knot twice, and the 22 stars close exactly as their clusters do.
+
 ## 19 November 2026: the joined-rings rule proved, with its scope narrowed
 
 - The rule that two joined rings of knots grow by (`RING-PAIR-20261119-001`,

@@ -2,10 +2,10 @@
 
 Status: Proved
 
-Ticket `CHAIN-IDENT-20261119-001Z`, 2026-11-19. A ledger; no new claim. Proof `proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md`. Referee pending.
+Ticket `CHAIN-IDENT-20261119-001Z`, 2026-11-19. A ledger; no new claim. Proof `proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md`. Refereed (R1): confirmed; wording points and the relay-control count folded in.
 
 | # | Conclusion | Evidence |
 | --- | --- | --- |
-| 1 | With the floor allowed and the candidate complex extended by pendant points and rays, under (S3), (S4) and every live component infinite, round t's junctions are the deck orbits of clusters of t + 1 points; for K a tree the growth is eventually a polynomial of degree (the largest number of chains in one component) - 1. | Proof (A), with a machine check (81 of 81 in-class starts agree; 137 relay starts differ) |
+| 1 | With the floor allowed and the candidate complex extended by pendant points and rays, under (S3), (S4) and every live component infinite, round t's junctions are the deck orbits of clusters of t + 1 points; for K a tree the growth is eventually a polynomial of degree (the largest number of chains in one component) - 1. | Proof (A), with a machine check (81 of 81 in-class starts agree; 115 of 137 relay starts differ, the 22 single-piece stars closing as their clusters do) |
 
 **Recommendation:** Research directions; none selected yet (awaiting the coordinator).

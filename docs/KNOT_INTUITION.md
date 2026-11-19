@@ -782,7 +782,7 @@ a cluster at least four points larger. Without a cycle the map falls into finite
 pieces, and a piece that finishes early keeps growing through a relay
 ([proof](../proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md)).
 And when knots take distinctions from the floor (`CHAIN-IDENT-20261119-001`,
-proof, referee pending)? Then a knot's leftover open distinctions make points hung
+proof, refereed)? Then a knot's leftover open distinctions make points hung
 on the knot itself, and where the floor tops them up, endless chains hang from
 those points. With the chains in the map the same rule holds. When the knots'
 graph is a tree, the junctions per round grow as a polynomial whose degree is one

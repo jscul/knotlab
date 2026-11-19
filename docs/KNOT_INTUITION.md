@@ -665,6 +665,13 @@ distinction that is loose on one side and shared on the other. The law grows on
 loose distinctions, so the next round tells them apart; in the carried pairs some
 matching keeps every loose distinction in place, and they stay together
 ([decision note](../research/CREATED-PAIR-20261119-001/created_pair.md)).
+Do distances plus the growing end carry what grows (`EXTEND-ROUND-20261119-001`,
+proved in part, referee pending)? One round reads only which junctions hold a loose
+distinction, how many, and which sets of them one junction meets; that is proved.
+A matching of the distances that keeps this read extended to the next round in
+every one of 2,198 cases, but that is not yet proved: a new junction can shorten
+a bond in a way pair distances may not foresee
+([decision note](../research/EXTEND-ROUND-20261119-001/extend_round.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

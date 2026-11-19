@@ -3177,8 +3177,8 @@ evidence: results and their status come from the records each entry links.
     - Its third, more than five places, does not. Under uniform random trees, whose knots get the places their joins need, three
       or more dimensions is 12% of growers at twelve knots and 37% at twenty. Every one of those starts has a knot of six or more
       places.
-    - So "two typical, three and four rare" belongs to this weighting: crowded knots of at most five places. It is not a property
-      of the growth. A bare tree of such knots is a caterpillar with at most two chains (proved post hoc).
+    - So "two typical, three and four rare" belongs to this weighting's cap of five places, crowded or not (referee R1: 0 of
+      25,133 in-class growers within five places reach three). It is not a property of the growth. A bare tree of such knots is a caterpillar with at most two chains (proved post hoc).
     - The census's figures stand as figures under this weighting (A71). The published claims that read them as the growth's are
       narrowed (docs/CORRECTIONS.md, 2026-11-19).
     - Status Assumed → Under challenge → Overturned.

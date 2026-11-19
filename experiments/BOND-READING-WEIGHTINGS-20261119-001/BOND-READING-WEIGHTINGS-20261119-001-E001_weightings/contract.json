@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BOND-READING-WEIGHTINGS-20261119-001-E001",
+  "ticket": "BOND-READING-WEIGHTINGS-20261119-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "How is the least arity distributed under three declared weightings of connected homogeneous parity starts at positive reached ages?",
+  "public_inputs": "Pointwise marked growing end and all marked bond minima through a given order. We compare strict later stages of the complete cheapest-count law.",
+  "forbidden_inputs": [
+    "Do not pass physical junction rows to a reader except for the supplied growing end. They may certify which old permutations truly carry the span.",
+    "Do not discard a draw which stalls or exceeds a computation limit.",
+    "Do not pool weightings to estimate a single underlying probability."
+  ],
+  "weightings": [
+    "Uniform labelled tree from a uniform Prüfer word.",
+    "Independent uniform labelled tree, then ceil((m-1)/4) distinct extra links drawn uniformly without replacement from non-tree pairs, capped at the available number.",
+    "Recursive tree where each new junction chooses one earlier junction uniformly; then uniformly relabel the whole tree."
+  ],
+  "loose_counts": "max(0,3 minus ordinary degree) at every starting junction, one distinction for every ordinary link. Audit admissibility.",
+  "start_sizes": [
+    4,
+    6,
+    8,
+    12,
+    20,
+    32
+  ],
+  "draws_per_weight_size": 64,
+  "master_seed": 20261119071,
+  "positive_ages": [
+    1,
+    2,
+    3
+  ],
+  "expansion_caps": {
+    "junctions": 350,
+    "distinctions": 950
+  },
+  "primary_observable": "Least r with the pointwise end fixed, including r=0 and 1. An upper and lower certificate or an exact value per reached stage. Terminal stage has strict-future order zero. Report attrition by weighting, starting size and age; size frequencies by actual J and n.",
+  "cheapest_meaningful_control": "Five-junction eleven-distinction reached witness fails on pairs and succeeds at a higher order; small labelled finite domains independently counted.",
+  "first_executable_signal": "Check a reached sample against a lawful replay and a complete stabilizer or a sound structural containment proof.",
+  "resource_budget": "1,152 independent draws. Size caps on continued expansion preserve censored outcomes. Exhaust small sets, use certified bounds beyond exact tractability, run significant sweeps using the maintained batch runner.",
+  "decision_or_followup_rule": "Compare distribution, spread, rate of exceptions and attachment predictors within weighting; identify whether extrapolating beyond observed sizes is justified.",
+  "stop_rule": "Report all frozen samples and exact/genuine bounds, structural criterion and limits; no unrestricted asymptotic trend from finite samples."
+}

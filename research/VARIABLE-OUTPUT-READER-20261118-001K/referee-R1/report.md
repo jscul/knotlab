@@ -53,6 +53,10 @@ clipped through K = 6, and of the full table, keeps its junction supports.
   D = 5 move a junction or a triple.
 - **Width 28 is the first width where a full-table symmetry moves a junction**, as the study says. It happens only where the menu is
   empty.
+  - **Scope (added 2026-11-19, from the referee's 001L report).** This holds in the 001K family to width 30. It is not a general
+    rule. Under the full law, 001L's width-46 continuation of the width-28 pair keeps all 1,035 distances equal on the same names
+    and still hides the six-place junction, while eight triples are legal, with the same menu on both sides
+    ([001L-R1, Section 7](../../VARIABLE-OUTPUT-READER-20261118-001L/referee-R1/report.md)).
 - **The rival part of the claim was not tested exhaustively at these widths.** That part says a different arrangement cannot match
   the table either. The referee's all-rival census of every reachable type covers widths 12 to 22. There the family's only members
   are four width-22 types with empty menus: no rival matches them through K = 6, though K ≤ 5 already loses their junction
@@ -77,6 +81,9 @@ clipped through K = 6, and of the full table, keeps its junction supports.
 > last join preserves all 378 distances but moves the six-place junction's equation, so the table does not fix which named
 > distinctions carry that equation, nor the allowed states on named distinctions. The arrangement is the same up to renaming, and the
 > three-parent menu is still determined: here it is empty, and through distance five it is fixed whenever a triple can join.
+
+The last clause, and the identification of every junction whenever a triple can join, are statements about the 001K family. Under
+the full law a junction can stay hidden while triples are legal (001L's width-46 example; scope note added 2026-11-19).
 
 **Is it a first?**
 - **On the three-parent side and for the allowed states, yes.**

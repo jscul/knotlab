@@ -936,6 +936,21 @@ block, and the rebuilt start grows exactly like the original: all 26,441
 census arrangements, 998 random starts and 62 explosive stages agree round by
 round, and none differs. That makes both merge-and-burst readings proved
 ([decision note](../research/REDUCE-BLOCKS-20261119-001/reduce_blocks.md)).
+And past the wall, where two largest blocks share two knots (`WALL-READ-20261119-001`,
+proof and frozen run, referee pending)? There each round keeps the largest sets of
+knots that can all join one another and that no single knot meets: a clique
+operator, which drops the joins a block holds. One start can be read exactly there.
+Its knots come in partner pairs, each able to join every knot but its partner.
+Every round keeps that form, and the counts run 6, 8, 10, 24, 4,086, then
+2^2043 − 24, each about two to the power of half the one before (runaway growth).
+It never ends: the first explosive start shown to. It is Neumann-Lara's octahedra
+(1978), the first graphs whose iterated clique graphs grow without bound, under
+the growth's rule. No reading by clusters of the unrolled map can follow it, so
+the wall is a real limit of that kind of reading. Any part of a stage, read
+exactly, bounds the next round from below. But on the 14 unread starts, followed
+one or two rounds further (none merging), those bounds read weakly: the smallest
+reaches 28,065 junctions in round 8, and the bound on round 9 is only 16,019
+([decision note](../research/WALL-READ-20261119-001/wall_read.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

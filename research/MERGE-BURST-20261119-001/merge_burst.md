@@ -41,7 +41,8 @@ pending.**
   - **Proved (refereed):** the stage identity and the branch system.
   - **The study's hypothesis, shared by both readings:** a block equal to or inside another changes nothing. It is now proved by
     `REDUCE-BLOCKS-20261119-001` (referee pending), so both readings are proved.
-  - **Computed on that hypothesis:** start-04's reading.
+  - **Computed on that hypothesis:** start-04's reading. Its next round was later built by `WALL-READ-20261119-001`'s roster
+    engine: 304,590 junctions, every one a pair, C(781, 2) as read.
   - **Open:** the 14.
 
 ## Predictions and verdicts

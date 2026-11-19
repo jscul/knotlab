@@ -2833,8 +2833,22 @@ overlap one another, and the unrolled map no longer says what grows.
   its growth, the 9 junctions left join in every way once, and it ends
   ([EXPLOSIVE-20261119-001](research/EXPLOSIVE-20261119-001/explosive.md)). One
   more ends the same way, through a block of 781; the other 14 could not be
-  followed far enough (MERGE-BURST, referee pending). Whether the rest of the
+  followed far enough (MERGE-BURST, referee pending), and followed one or two
+  rounds further they are still unread (WALL-READ). Whether the rest of the
   kind has such a regularity, or is where finite description ends, is open.
+- **One kind that never ends (proved, referee pending).** Let the live knots
+  come in partner pairs, each able to join every knot but its partner, with the
+  open distinctions that needs. Every round keeps that form, and the count runs
+  6, 8, 10, 24, 4,086, then 2^2043 − 24: each about two to the power of half
+  the one before, which the guide calls **runaway growth**. It never stalls and
+  never ends. It is the growth's form of the literature's clique-divergent
+  octahedra (Neumann-Lara, 1978), since each round keeps the largest sets of
+  knots that can all join one another and that no single knot meets. A
+  reading by clusters of the unrolled map counts at most exponentially many
+  junctions, so none can follow it: past the edge of the class, the unrolled
+  map is not the reading. Its knots need eight places, one more than the
+  sample allowed
+  ([WALL-READ-20261119-001](research/WALL-READ-20261119-001/wall_read.md)).
 
 ### 8.3 Reading a blow-up by sampling
 
@@ -2886,7 +2900,12 @@ dimensions.
 **What is sampled, and what is not yet.** These studies sample starts: each
 sample is one small arrangement of first knots, grown by the law. The owner's
 sentence asks for more, a sampling of the underlying structure inside one
-unlimited growth, and no study does that yet (open). The register already
+unlimited growth. A first step reads part of one growth: any set of live knots,
+read exactly, bounds the next round from below, because each largest set of
+mutually joinable knots in the part extends to a join of the whole, less one
+per block (proved, WALL-READ). On the sampled explosive starts the bound is
+weak: the smallest unread one makes 28,065 junctions in round 8, and the bound
+on round 9 is 16,019. Reading such a growth by sampling is still open. The register already
 holds evidence that weighs on "it always blows up": under the crowded
 weightings most starts stall and eddies are rare. A110 would be challenged by
 a natural weighting under which blow-up never occurs, or by shares that never
@@ -2899,7 +2918,8 @@ which the owner has not confirmed, that repeat is what the owner's harmonies
 do here (lesson 7.3, assumption A70): they let a blow-up be read, and they are
 not a way to stop one. Whether the explosive kind has a repeat of its own is
 the open question of lesson 8.2: its smallest case ends after one join and one
-burst, and most of it is not yet read.
+burst, one member (the partnered start) repeats its form every round and runs
+away without end, and most of it is not yet read.
 
 ### 8.4 What distance carries of what grows
 
@@ -3490,6 +3510,12 @@ that earlier records used in two senses.
   defect. A growth **blows up** when its count grows faster than any
   polynomial, as eddies and explosive growth do, and blow-up is expected
   (assumption A110, lesson 8.3).
+- **Partnered; runaway growth.** A set of live knots is partnered when they
+  come in pairs of partners, each able to join every knot of the set but its
+  partner (the literature's cocktail-party graph; for three pairs, the
+  octahedron). Runaway growth: each round's count is about two to the power of
+  half the one before (the literature's iterated exponential), as in a start
+  whose live knots are partnered (lesson 8.2).
 - **Live roster.** What one round of the law reads: which junctions hold a
   loose distinction, how many, and which sets of them one junction meets
   (lesson 8.4). The growth records call it the growing end.
@@ -3597,6 +3623,7 @@ that earlier records used in two senses.
   | unfilled cycle | a cycle of co-knotted pairs that is the selvage of no patch | non-contractible cycle; the shortest one's length is the edge-width |
   | tour | in a graph with a cyclic order at each vertex, the closed walk that leaves each vertex by the edge after the one it came in on | face of a map |
   | Euler count | distinctions − co-knotted pairs + knots | Euler characteristic |
+  | partnered set | 2k knots in pairs, each able to join every knot of the set but its partner | octahedron (k = 3), cross-polytope; the cocktail-party graph |
   | orientable | each knot's distinctions ordered so that the two knots at every pair order it oppositely | orientable, two-sided |
   | cycle pairs | (2 − Euler count) / 2, in a connected orientable weave | genus, handles |
   | zero-pair weave | a connected orientable weave of Euler count 2 | sphere |

@@ -22,6 +22,7 @@ sys.path.insert(0, str(SL.ROOT / 'experiments/JOIN-GROWTH-20261118-001B/JOIN-GRO
 import reclib as RC  # noqa: E402
 
 LC = SL.ROOT / 'experiments/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue'
+CHILD_AS = 6 * 2 ** 30
 CHILD = r'''
 import json, sys
 sys.path.insert(0, sys.argv[1])
@@ -48,11 +49,11 @@ for _ in range(60):
 
 
 def grow(st):
-    lim = lambda: resource.setrlimit(resource.RLIMIT_AS, (6 * 2 ** 30, 6 * 2 ** 30))  # noqa: E731
+    lim = lambda: resource.setrlimit(resource.RLIMIT_AS, (CHILD_AS, CHILD_AS))  # noqa: E731
     for attempt in range(3):
         try:
             p = subprocess.run([sys.executable, '-B', '-c', CHILD, str(LC), json.dumps(st)], capture_output=True, text=True,
-                               timeout=1500, preexec_fn=lim)
+                               timeout=1500 if CHILD_AS <= 6 * 2 ** 30 else 3000, preexec_fn=lim)
             lines = p.stdout.strip().splitlines()
             if p.returncode < 0:
                 continue                                # a signal from outside: grow it again

@@ -12,13 +12,32 @@
   "run": "scripts/longrun.py launch job.py (3 workers) under .venv/bin/python; python3 -B merge.py <out dir> <results.json>",
   "reused": "LOOP-CATALOGUE-20261119-001B eddy.py; JOIN-GROWTH-20261118-001B reclib.py; CLUSTER-ALL-20261119-001B clusters.py"
  },
- "forbidden_inputs": ["Changing a start, the caps or a prediction after reading any growth of the frozen run"],
+ "forbidden_inputs": [
+  "Changing a start, the caps or a prediction after reading any growth of the frozen run"
+ ],
  "primary_observable": "B1-B8 of research/BREAK-EDDIES-20261119-001/preregistration.md",
  "cheapest_meaningful_control": "the rational starts against the explosive ones (B4); the stage readings (B8)",
- "predictions": {"B1": "recurrences persist", "B2": "W nonnegative integers, W(1) >= 2", "B3": "readout", "B4": "explosive starts' groups exceed rational ones'", "B5": "theta: no recurrence of order <= 8", "B6": "L <= 3 needs a first-round group of three", "B7": "more open places never lengthen the loop", "B8": "no stage in scope and break-free"},
- "decision_rules": {"each": "held iff no exception"},
+ "predictions": {
+  "B1": "recurrences persist",
+  "B2": "W nonnegative integers, W(1) >= 2",
+  "B3": "readout",
+  "B4": "explosive starts' groups exceed rational ones'",
+  "B5": "theta: no recurrence of order <= 8",
+  "B6": "L <= 3 needs a first-round group of three",
+  "B7": "more open places never lengthen the loop",
+  "B8": "no stage in scope and break-free"
+ },
+ "decision_rules": {
+  "each": "held iff no exception"
+ },
  "stop_rule": "One run; read-out; referee hand-off; report.",
  "runtime": "under two hours",
  "disclosed_exploration": "pilot/ (the 30 provisional starts grown to 40 rounds; stage readings; breaklib's unmerge; one smoke run), recorded in the pre-registration",
- "amendments": []
+ "amendments": [
+  {
+   "date": "2026-11-19T09:03Z",
+   "kind": "added cases (after the freeze, readout)",
+   "text": "The referee of LOOP-CATALOGUE-20261119-001 found three shapes no list grew (two triangles joined once, an eddy; two triangles joined twice and the three-regular six-knot graph, class unknown). They are grown by job_ref.py (population_ref.json, 9 starts) with a 10 GB child and 3,000 s, as readouts. job.py's child limit became a module constant (CHILD_AS, 6 GB as frozen) so that job_ref.py can raise it; the running B1 loaded job.py before this edit and is unaffected."
+  }
+ ]
 }

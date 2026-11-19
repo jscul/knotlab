@@ -17,6 +17,7 @@ Construct that configuration directly, and test Claim B where the hypothesis can
 - `EXTEND-ROUND-20261119-001`: Claim B and its 2,198 extensions (the direct predecessor).
 - `PARENT-RULE-20261119-001`: the 1,034 static pairs, and the census stages with table symmetries the states lack (181 of 1,099).
 - `CREATED-PAIR-20261119-001`: the growing end.
+- `RING-READ-20261118-001`: reading growth back from bond distances alone (a relative: what the distances fix of what grows).
 
 ## Method
 

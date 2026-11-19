@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CENSUS-READ-20261118-001A-E001",
+ "ticket": "CENSUS-READ-20261118-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Does RING-READ's incremental reader R3 read every stage of the 26,441 TOUCH-CENSUS arrangements and FRESH-COUNT's 247 mixed stages from their bond-distance tables alone, what do its failures share, and is its least horizon the largest junction less one?",
+ "definitions": {
+  "stages": "rounds 0-8 under the census's cheapest counts, at most 120 junctions; FRESH-COUNT reader_mixed replayed",
+  "table": "exact to largest + 2 over bonds with a side of at most min(junctions, 6) junctions (complete at 14 or fewer)",
+  "readers": "R1, R3 (reader3.r3, hash-checked), R3m (no two-shared filter), FRESH-COUNT bonds.read_stars on mixed stages",
+  "verdicts": "exact, outside_swap, same_states (same parity span), misread"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 bd1f515e7ac97deb28ceb5fcaf8f5a794320dd6e0e9c31d1bd2ce3a3ec0aad8e), gate.py (sha256 8a22bd0eb8663172dc6586567d4b3b2d53d910b05480126073bd26a4f5f1fdf2), readout.py (sha256 4f1f617ae5e5a5d6124b4a953d8d758eae49e4b91a0385dfb768d8bbc95a6477)",
+  "run": "scripts/longrun.py launch job.py --out runs/census-read (12 workers, 900 s, 1G per case, MemoryMax 14G); .venv/bin/python -B gate.py; .venv/bin/python -B readout.py runs/census-read",
+  "reused": "RING-READ-20261118-001B reader3.py and A ringread.py, TOUCH-CENSUS-20261118-001B arrlib.py, FRESH-COUNT-20261118-001B freelib.py and bonds.py (closed records)"
+ },
+ "forbidden_inputs": [
+  "Rounds, parents, history or names given to a reader",
+  "Changing C0-C6 after any case is read"
+ ],
+ "primary_observable": "C0-C6 of research/CENSUS-READ-20261118-001/preregistration.md",
+ "cheapest_meaningful_control": "the ring rounds 10 and 15 (RING-READ) and FRESH-COUNT's own reader on the mixed stages",
+ "predictions": {
+  "C0": "gate",
+  "C1": "rigid stages exact or outside swap",
+  "C1b": "no pair sharing two: same allowed states",
+  "C2": "R3m same allowed states everywhere; R3 misreads in most arrangements sharing two",
+  "C3": "no non-swap same-state output at 3-connected stages",
+  "C4": "rigid least horizon = largest - 1",
+  "C5": "mixed stages same allowed states",
+  "C6": "R1 misreads in >= 10% of arrangements past round 3"
+ },
+ "decision_rules": {
+  "each": "as stated; no tolerance"
+ },
+ "stop_rule": "One run, readout, classification of misreads; no new reader in this study.",
+ "runtime": "about 20 minutes on 12 workers",
+ "amendments": []
+}

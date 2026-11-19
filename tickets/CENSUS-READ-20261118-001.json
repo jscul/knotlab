@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "FRESH-COUNT-20261118-001",
+    "RING-READ-20261118-001",
+    "TOUCH-CENSUS-20261118-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "RING-READ-20261118-001#1"
+    ]
+  },
+  "id": "CENSUS-READ-20261118-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (18 November 2026) on RING-READ-20261118-001's direction 1. Run the incremental reader R3 (RING-READ-20261118-001B, frozen) on every stage, to a fixed cap, of all 26,441 TOUCH-CENSUS-20261118-001 arrangements under the cheapest counts, and on the 247 mixed-count stages of FRESH-COUNT-20261118-001 whose threshold reader misread 47. Ask what is typical: how many stages read exactly, what the misreads share, and whether the distance the reader needs is set by the largest junction (largest size less one) across the census, against VARIABLE-OUTPUT-READER-20261118-001H's fixed cutoff of five. Stop at the census read or a class of misreads explained. Serves G1, G17 and A97.",
+  "ownership": {
+    "root": true,
+    "scope_id": "CENSUS-READ-20261118-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "The census and the mixed stages read, misreads classified; referee hand-off; report.",
+  "title": "Does the new distance reader read every growing census arrangement?"
+}

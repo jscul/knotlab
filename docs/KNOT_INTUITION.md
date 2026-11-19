@@ -646,7 +646,7 @@ allowed states: 242 small arrangements, backed on both sides, share their
 distances with others that have other states
 ([decision note](../research/PARENT-RULE-20261119-001/parent_rule.md)).
 And does the law itself make such pairs from larger starts
-(`GROW-SMALL-20261119-001`, computed, referee pending)? Yes. Grown one and two
+(`GROW-SMALL-20261119-001`, computed, refereed)? Yes. Grown one and two
 rounds from every legal arrangement of up to 7 junctions that meets once, it
 builds 87 pairs that meet once, share every bond distance and have other allowed
 states. Almost all are carried: the two starts already collided, and the law grows

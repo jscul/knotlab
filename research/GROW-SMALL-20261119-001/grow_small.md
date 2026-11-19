@@ -1,7 +1,7 @@
 # Does the law, grown from every small arrangement, ever make a meet-once collision with other states?
 
 Epic `GROW-SMALL-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `PARENT-RULE-20261119-001#1`.
-Assumption A97; goal G1. **Referee pending.**
+Assumption A97; goal G1. **Refereed (R1): confirmed, no Block, no Narrowing (Referee R1 below).**
 
 **Record.**
 - **Pre-registration** ([preregistration.md](preregistration.md)): frozen before the runs (commit `39c8a96cf`). Amendment 1
@@ -116,7 +116,8 @@ What this adds:
   complete rounds only.
 - "Created" means the starts' full tables differ. It does not say whether some third start, isomorphic to neither, reaches the same
   pair.
-- Persistence of the main finds past their round is checked on tables read to 8, not full tables.
+- Persistence of the main finds past their round was checked here on tables read to 8. The referee checked it on full tables:
+  one round further, all 86 carried pairs are still isometric with other states.
 - Equation spaces without signs.
 
 ## Advisor
@@ -150,6 +151,16 @@ Fable 5.2 before the freeze ([question](advisor/question_1.md), [answer](advisor
 **Corrections:** one, Narrowing. MEET-ONCE's "a property of what the law reaches" holds for the census's starts, not for the law.
 PARENT-RULE's inference that the protection lies in the law's exact joins and counts is narrowed the same way. **Goals:** G1
 checkpoint (obstruction learned). **Assumptions:** A97 gains this study, status unchanged.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own engine and exact full tables. **Confirmed, no Block, no Narrowing.** It rebuilt all 87
+pairs from scratch, including the 23 round-2 pairs that this note rested on the pipeline for. It also rebuilt the created pair
+(atlas 448 with loose counts 1, 1, 2, 1, 2, 1, 2; atlas 581 with 0, 2, 1, 2, 1, 2, 1): isometric at 12 junctions on all 378
+pairs, other states, and not isometric at 19 junctions one round on. New from the referee: one round further, on full tables,
+all 86 carried pairs are still isometric with other states (added to Limitations). Its remark: the 67 groups and 87 pairs rest on
+this pipeline's candidate grouping, which it did not rebuild. Amendment 1 is sound. The Narrowing of MEET-ONCE and PARENT-RULE
+stands.
 
 ## Final report as sent (2026-11-19 14:29 UTC)
 

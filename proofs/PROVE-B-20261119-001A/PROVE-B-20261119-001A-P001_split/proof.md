@@ -52,7 +52,9 @@ With T = ∅ this is PARENT-RULE's Theorem 3 (old bonds survive, T′ ≤ T on o
 **Lemma O.** Let n be an offshoot (k(n) = 1, parent u; under the fewest counts f(n) ≥ 2).
 1. Removing n from T in any feasible (S, T) with u ∈ S gives a feasible (S, T ∖ {n}). It is cheaper by f(n) − 1 ≥ 1, and its cut
    holds every old edge the first held, except possibly x_{n,u}.
-2. Hence no least bond through two old edges other than x_{n,u} uses n.
+2. Hence no least bond through two old edges other than x_{n,u} uses n. (The referee's edge case: an implied offshoot can have
+   f = d < 2; then removing n is cheaper by f − 1 ≥ 0, so item 2 weakens to "some least bond avoids n". Items 3 and 4 and
+   Corollary O are unchanged.)
 3. T′(fresh of n, y) = T′(x_{n,u}, y) + f(n) − 1, for every y outside n's own edges.
 4. If every new junction is an offshoot, T′ = T on old pairs, and the whole next table is a function of T and of the round's
    output (which taken edge each offshoot holds, and its f).

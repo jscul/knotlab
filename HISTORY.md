@@ -158,6 +158,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: the Claim B study refereed
+
+- The study of whether pair distances plus the growing end carry one round (`PROVE-B-20261119-001`,
+  [decision note](research/PROVE-B-20261119-001/prove_b.md)) was refereed and confirmed. The split formula and the offshoot lemma
+  are correct, Proposition X fails as stated, and both of Codex's grown counterexamples reproduce.
+- **Clarified (not a block).** The offshoot lemma covers implied offshoots in a weaker form, and 1,249,715 symmetries extended,
+  not 1,249,716.
+
 ## 19 November 2026: distance plus the growing end narrowed
 
 - **Narrowed.** Two studies read their results as "distance plus the growing end carries what grows one round further":

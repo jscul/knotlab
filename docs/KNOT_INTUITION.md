@@ -681,7 +681,7 @@ but beyond the census the law's own round does it once, from a six-junction star
 (Codex, `GROWN-END-SWAP-20261119-001`)
 ([decision note](../research/HUNT-SHORTEN-20261119-001/hunt_shorten.md)).
 So do distances plus the growing end carry what grows (`PROVE-B-20261119-001`,
-proved in part, referee pending)? No: three constructions break it, one by the
+proved in part, refereed)? No: three constructions break it, one by the
 advisor and two grown by the law (Codex), one of them where junctions meet once.
 In each, an old junction's distinctions split across a tie, and the next join
 shortens a bond on one side only. Every one of those swaps also changes the

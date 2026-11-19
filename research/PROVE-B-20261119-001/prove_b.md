@@ -1,7 +1,7 @@
 # Can the distances version of the one-round extension be proved?
 
 Epic `PROVE-B-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `HUNT-SHORTEN-20261119-001#1`.
-Assumptions A97, A108; goal G1. **Referee pending. Stress test pending:** part M's last 9 of 27 cases are still running
+Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; two points corrected (Referee R1 below). Stress test pending:** part M's last 9 of 27 cases are still running
 (`docs/LONG_RUNNING.md`, PROVE-B-M1).
 
 **Record.** Pre-registration, frozen before the hunt (commit `5042a81dc`), and Amendment 1 (commit `8fba03a6e`, after Codex's
@@ -36,7 +36,7 @@ counterexample and before part M): [preregistration.md](preregistration.md). Pro
   - Offshoots never change any old distance, and rounds of offshoots only carry every matching (Lemma O).
   - Matchings that keep the equations, not only the distances, carry every round (EXTEND-ROUND's Claim B\*).
 - **Where the clean premise may still live: three-way distances.** All three failing swaps break three-way readings: 48, 34 and
-  74 triples change. In a sample of 164,052 table symmetries that keep the round's reading but not the equations, from part B's
+  74 triples change, counting the triples some bond holds (the referee, counting every triple, finds 48, 68 and 76). In a sample of 164,052 table symmetries that keep the round's reading but not the equations, from part B's
   starts, **none keeps the three-way readings** (exploratory). So on everything seen, a matching that keeps pair distances,
   three-way distances and the growing end also keeps the equations, and then it carries every round (Claim B\*). That is the next
   question.
@@ -44,7 +44,7 @@ counterexample and before part M): [preregistration.md](preregistration.md). Pro
 | Test | Cases | Verdict |
 | --- | ---: | --- |
 | P0: Proposition X through the test | 32 symmetries | all fail (held) |
-| P1: starts of 3 or 4 knots sharing up to 4 (3) distinctions, up to three rounds | 35,735 starts; 42,771 open stages; 1,249,716 reading-keeping symmetries | **no failure** (held; 6 stages late, 38 capped) |
+| P1: starts of 3 or 4 knots sharing up to 4 (3) distinctions, up to three rounds | 35,735 starts; 42,771 open stages; 1,249,716 reading-keeping symmetries, 1,249,715 tested to the end | **no failure** (held; the last one was cut by a stage alarm; 6 stages late, 38 capped) |
 | P2, P3 (Amendment 1): meet-once starts of at most 6 junctions, the start and its round-1 stage | 44,426 starts so far (18 of 27 cases); 23,577 reading-keeping symmetries | no failure so far (**pending**) |
 | Codex's two reached counterexamples (meeting twice; meeting once) | 8 and 48 symmetries | all fail, reproduced |
 | Exploratory: reading-keeping, equation-breaking symmetries that keep three-way readings | 164,052 sampled | **0** |
@@ -110,6 +110,23 @@ Fable 5.2 ([question](advisor/question_1.md), [answer](advisor/answer_1_fable.md
 
 **Corrections:** none from this study. Codex's GROWN-END-SWAP Narrowings were folded (commit 032d8e54d). **Goals:** G1
 checkpoint (obstruction learned). **Assumptions:** A97 and A108 gain this study, status unchanged.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md). **Confirmed, no Block; two points corrected, logged in `docs/CORRECTIONS.md` (Not a block).**
+- **Proofs.** Lemma C is correct. Lemma O is correct, and HUNT-SHORTEN's H1 is thereby proved.
+- **The coset search.** `reached_job.py`'s search is sound.
+- **Reproduction.** Both of Codex's cases were reproduced independently, and Proposition X was rebuilt from the text: all 32
+  reading-keeping, equation-breaking symmetries fail.
+- **Its own three-way check.** On an independent population of 613 census stages, none of 56,756 reading-keeping,
+  equation-breaking symmetries keeps every three-way reading.
+- **Corrected.**
+  - An implied offshoot can have f = d < 2, which weakens Lemma O's item 2 to "some least bond avoids n"; the conclusions are
+    unchanged (proof amended).
+  - "1,249,716 symmetries extend" is 1,249,715; the last was cut by a stage alarm.
+- **Noted.** Codex's GROWN-END-READING-20261119-001 reports a reached stage of 239 junctions where a renaming keeps every pair and
+  three-way reading and the growing end but changes the equations. If it holds, it refutes three-way rigidity as stated in
+  direction 1 at that size. THREE-RIGID-20261119-001 rebuilt the construction's growth and equation change.
 
 ## Final report as sent (2026-11-19 18:50 UTC)
 

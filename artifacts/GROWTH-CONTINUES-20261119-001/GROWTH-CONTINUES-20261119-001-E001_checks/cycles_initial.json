@@ -1,0 +1,6077 @@
+{
+  "source_manifest": "artifacts/HUB-GUIDED-SAMPLE-20261119-001/HUB-GUIDED-SAMPLE-20261119-001-E001_sampler/stages.json",
+  "source_manifest_sha256": "a971803a027ddc62d2d6def86273f0da607817418a8c720276fb62badc9e500d",
+  "algorithm_sha256": "0d028faff6b727b1419aa4261f24363740eb93ae5e7d444b7a67903cf4ef30de",
+  "pair_budget_per_case": 20000000,
+  "controls": {
+    "named": {
+      "four_cycle": {
+        "live": 4,
+        "blocks": 4,
+        "incidence_signatures": 4,
+        "block_intersection_pairs": 4,
+        "components": 1,
+        "component_size_histogram": {
+          "4": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "block_forest_parents": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "lower_link_component_histogram": {
+          "0": 1,
+          "1": 2,
+          "2": 1
+        },
+        "selected_link_triples": 0,
+        "gauged_free_pairs": [
+          [
+            3,
+            2
+          ]
+        ],
+        "extra_triangle_pivots": [],
+        "tested_pairs": 4,
+        "h1_lower": 1,
+        "h1_upper": 1,
+        "exact": true,
+        "positive_certificates": [
+          {
+            "free_cochain_hex": "0x1",
+            "block_cocycle_rows_hex": [
+              "0x0",
+              "0x0",
+              "0x8",
+              "0x4"
+            ],
+            "block_cycle": [
+              3,
+              0,
+              1,
+              2
+            ],
+            "junction_walk": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "block_and_junction_pairing": 1
+          }
+        ],
+        "pi1": {
+          "trivial_in_every_component": false,
+          "forest_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              2,
+              3
+            ]
+          ],
+          "initial_relators": [],
+          "eliminations": [],
+          "remaining_generators": [
+            1
+          ],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 1
+          }
+        }
+      },
+      "four_cycle_filled_by_diagonal": {
+        "live": 4,
+        "blocks": 5,
+        "incidence_signatures": 4,
+        "block_intersection_pairs": 8,
+        "components": 1,
+        "component_size_histogram": {
+          "4": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          4,
+          0,
+          1,
+          2,
+          3
+        ],
+        "block_forest_parents": [
+          4,
+          0,
+          1,
+          0,
+          -1
+        ],
+        "lower_link_component_histogram": {
+          "0": 1,
+          "1": 4
+        },
+        "selected_link_triples": 4,
+        "gauged_free_pairs": [],
+        "extra_triangle_pivots": [],
+        "tested_pairs": 0,
+        "h1_lower": 0,
+        "h1_upper": 0,
+        "exact": true,
+        "positive_certificates": [],
+        "pi1": {
+          "trivial_in_every_component": true,
+          "forest_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "initial_relators": [
+            [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                2
+              ]
+            ]
+          ],
+          "eliminations": [
+            {
+              "triple": [
+                0,
+                1,
+                2
+              ],
+              "generator": 1,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                3
+              ],
+              "generator": 2,
+              "replacement": []
+            }
+          ],
+          "remaining_generators": [],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 0
+          }
+        }
+      },
+      "triple_with_no_common_block": {
+        "live": 3,
+        "blocks": 3,
+        "incidence_signatures": 3,
+        "block_intersection_pairs": 3,
+        "components": 1,
+        "component_size_histogram": {
+          "3": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          0,
+          1,
+          2
+        ],
+        "block_forest_parents": [
+          -1,
+          0,
+          0
+        ],
+        "lower_link_component_histogram": {
+          "0": 1,
+          "1": 2
+        },
+        "selected_link_triples": 1,
+        "gauged_free_pairs": [],
+        "extra_triangle_pivots": [],
+        "tested_pairs": 0,
+        "h1_lower": 0,
+        "h1_upper": 0,
+        "exact": true,
+        "positive_certificates": [],
+        "pi1": {
+          "trivial_in_every_component": true,
+          "forest_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              1,
+              2
+            ]
+          ],
+          "initial_relators": [
+            [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          ],
+          "eliminations": [
+            {
+              "triple": [
+                0,
+                1,
+                2
+              ],
+              "generator": 1,
+              "replacement": []
+            }
+          ],
+          "remaining_generators": [],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 0
+          }
+        }
+      },
+      "single_block": {
+        "live": 7,
+        "blocks": 1,
+        "incidence_signatures": 1,
+        "block_intersection_pairs": 0,
+        "components": 1,
+        "component_size_histogram": {
+          "7": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          0
+        ],
+        "block_forest_parents": [
+          -1
+        ],
+        "lower_link_component_histogram": {
+          "0": 1
+        },
+        "selected_link_triples": 0,
+        "gauged_free_pairs": [],
+        "extra_triangle_pivots": [],
+        "tested_pairs": 0,
+        "h1_lower": 0,
+        "h1_upper": 0,
+        "exact": true,
+        "positive_certificates": [],
+        "pi1": {
+          "trivial_in_every_component": true,
+          "forest_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "initial_relators": [
+            [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                3
+              ],
+              [
+                2
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                4
+              ],
+              [
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                5
+              ],
+              [
+                4
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                6
+              ],
+              [
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                3
+              ],
+              [
+                6
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                4
+              ],
+              [
+                7
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                5
+              ],
+              [
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                6
+              ],
+              [
+                9
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                10
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                5
+              ],
+              [
+                11
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                6
+              ],
+              [
+                12
+              ]
+            ],
+            [
+              [
+                0,
+                4,
+                5
+              ],
+              [
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                4,
+                6
+              ],
+              [
+                14
+              ]
+            ],
+            [
+              [
+                0,
+                5,
+                6
+              ],
+              [
+                15
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                1,
+                6,
+                -2
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                4
+              ],
+              [
+                1,
+                7,
+                -3
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                5
+              ],
+              [
+                1,
+                8,
+                -4
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                9,
+                -5
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                4
+              ],
+              [
+                2,
+                10,
+                -3
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                2,
+                11,
+                -4
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                6
+              ],
+              [
+                2,
+                12,
+                -5
+              ]
+            ],
+            [
+              [
+                1,
+                4,
+                5
+              ],
+              [
+                3,
+                13,
+                -4
+              ]
+            ],
+            [
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                3,
+                14,
+                -5
+              ]
+            ],
+            [
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                4,
+                15,
+                -5
+              ]
+            ],
+            [
+              [
+                2,
+                3,
+                4
+              ],
+              [
+                6,
+                10,
+                -7
+              ]
+            ],
+            [
+              [
+                2,
+                3,
+                5
+              ],
+              [
+                6,
+                11,
+                -8
+              ]
+            ],
+            [
+              [
+                2,
+                3,
+                6
+              ],
+              [
+                6,
+                12,
+                -9
+              ]
+            ],
+            [
+              [
+                2,
+                4,
+                5
+              ],
+              [
+                7,
+                13,
+                -8
+              ]
+            ],
+            [
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                7,
+                14,
+                -9
+              ]
+            ],
+            [
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                8,
+                15,
+                -9
+              ]
+            ],
+            [
+              [
+                3,
+                4,
+                5
+              ],
+              [
+                10,
+                13,
+                -11
+              ]
+            ],
+            [
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                10,
+                14,
+                -12
+              ]
+            ],
+            [
+              [
+                3,
+                5,
+                6
+              ],
+              [
+                11,
+                15,
+                -12
+              ]
+            ],
+            [
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                13,
+                15,
+                -14
+              ]
+            ]
+          ],
+          "eliminations": [
+            {
+              "triple": [
+                0,
+                1,
+                2
+              ],
+              "generator": 1,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                1,
+                3
+              ],
+              "generator": 2,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                1,
+                4
+              ],
+              "generator": 3,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                1,
+                5
+              ],
+              "generator": 4,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                1,
+                6
+              ],
+              "generator": 5,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                3
+              ],
+              "generator": 6,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                4
+              ],
+              "generator": 7,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                5
+              ],
+              "generator": 8,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                6
+              ],
+              "generator": 9,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                4
+              ],
+              "generator": 10,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                5
+              ],
+              "generator": 11,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                6
+              ],
+              "generator": 12,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                4,
+                5
+              ],
+              "generator": 13,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                4,
+                6
+              ],
+              "generator": 14,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                5,
+                6
+              ],
+              "generator": 15,
+              "replacement": []
+            }
+          ],
+          "remaining_generators": [],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 0
+          }
+        }
+      },
+      "two_four_cycles_and_an_isolate": {
+        "live": 9,
+        "blocks": 8,
+        "incidence_signatures": 9,
+        "block_intersection_pairs": 8,
+        "components": 3,
+        "component_size_histogram": {
+          "4": 2,
+          "1": 1
+        },
+        "isolated_junctions": 1,
+        "block_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "block_forest_parents": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          4,
+          5,
+          4
+        ],
+        "lower_link_component_histogram": {
+          "0": 2,
+          "1": 4,
+          "2": 2
+        },
+        "selected_link_triples": 0,
+        "gauged_free_pairs": [
+          [
+            3,
+            2
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "extra_triangle_pivots": [],
+        "tested_pairs": 16,
+        "h1_lower": 2,
+        "h1_upper": 2,
+        "exact": true,
+        "positive_certificates": [
+          {
+            "free_cochain_hex": "0x1",
+            "block_cocycle_rows_hex": [
+              "0x0",
+              "0x0",
+              "0x8",
+              "0x4",
+              "0x0",
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "block_cycle": [
+              3,
+              0,
+              1,
+              2
+            ],
+            "junction_walk": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "block_and_junction_pairing": 1
+          },
+          {
+            "free_cochain_hex": "0x2",
+            "block_cocycle_rows_hex": [
+              "0x0",
+              "0x0",
+              "0x0",
+              "0x0",
+              "0x0",
+              "0x0",
+              "0x80",
+              "0x40"
+            ],
+            "block_cycle": [
+              7,
+              4,
+              5,
+              6
+            ],
+            "junction_walk": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "block_and_junction_pairing": 1
+          }
+        ],
+        "pi1": {
+          "trivial_in_every_component": false,
+          "forest_pairs": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              2,
+              3
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "initial_relators": [],
+          "eliminations": [],
+          "remaining_generators": [
+            1,
+            2
+          ],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 1,
+            "4": 1,
+            "8": 0
+          }
+        }
+      },
+      "partnered_2": {
+        "live": 4,
+        "blocks": 4,
+        "incidence_signatures": 4,
+        "block_intersection_pairs": 4,
+        "components": 1,
+        "component_size_histogram": {
+          "4": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "block_forest_parents": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "lower_link_component_histogram": {
+          "0": 1,
+          "1": 2,
+          "2": 1
+        },
+        "selected_link_triples": 0,
+        "gauged_free_pairs": [
+          [
+            3,
+            2
+          ]
+        ],
+        "extra_triangle_pivots": [],
+        "tested_pairs": 4,
+        "h1_lower": 1,
+        "h1_upper": 1,
+        "exact": true,
+        "positive_certificates": [
+          {
+            "free_cochain_hex": "0x1",
+            "block_cocycle_rows_hex": [
+              "0x0",
+              "0x0",
+              "0x8",
+              "0x4"
+            ],
+            "block_cycle": [
+              3,
+              1,
+              0,
+              2
+            ],
+            "junction_walk": [
+              3,
+              0,
+              2,
+              1
+            ],
+            "block_and_junction_pairing": 1
+          }
+        ],
+        "pi1": {
+          "trivial_in_every_component": false,
+          "forest_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              1,
+              3
+            ]
+          ],
+          "initial_relators": [],
+          "eliminations": [],
+          "remaining_generators": [
+            1
+          ],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 1
+          }
+        }
+      },
+      "partnered_3": {
+        "live": 6,
+        "blocks": 12,
+        "incidence_signatures": 6,
+        "block_intersection_pairs": 36,
+        "components": 1,
+        "component_size_histogram": {
+          "6": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          4,
+          6,
+          7,
+          5,
+          10,
+          11
+        ],
+        "block_forest_parents": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        "lower_link_component_histogram": {
+          "0": 1,
+          "1": 10,
+          "2": 1
+        },
+        "selected_link_triples": 24,
+        "gauged_free_pairs": [
+          [
+            5,
+            4
+          ]
+        ],
+        "extra_triangle_pivots": [
+          {
+            "blocks": [
+              2,
+              6,
+              10
+            ],
+            "free_row_hex": "0x1"
+          }
+        ],
+        "tested_pairs": 13,
+        "h1_lower": 0,
+        "h1_upper": 0,
+        "exact": true,
+        "positive_certificates": [],
+        "pi1": {
+          "trivial_in_every_component": true,
+          "forest_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "initial_relators": [
+            [
+              [
+                0,
+                2,
+                4
+              ],
+              [
+                4
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                5
+              ],
+              [
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                6
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                5
+              ],
+              [
+                7
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                4
+              ],
+              [
+                4,
+                -2
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                5
+              ],
+              [
+                5,
+                -3
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                4
+              ],
+              [
+                1,
+                6,
+                -2
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                1,
+                7,
+                -3
+              ]
+            ]
+          ],
+          "eliminations": [
+            {
+              "triple": [
+                0,
+                2,
+                4
+              ],
+              "generator": 4,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                5
+              ],
+              "generator": 5,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                4
+              ],
+              "generator": 6,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                5
+              ],
+              "generator": 7,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                2,
+                4
+              ],
+              "generator": 2,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                2,
+                5
+              ],
+              "generator": 3,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                3,
+                4
+              ],
+              "generator": 1,
+              "replacement": []
+            }
+          ],
+          "remaining_generators": [],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 0
+          }
+        }
+      },
+      "partnered_4": {
+        "live": 8,
+        "blocks": 24,
+        "incidence_signatures": 8,
+        "block_intersection_pairs": 120,
+        "components": 1,
+        "component_size_histogram": {
+          "8": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          12,
+          13,
+          14,
+          15,
+          6,
+          20,
+          21,
+          8,
+          16,
+          10,
+          11,
+          7,
+          9,
+          18,
+          19,
+          17,
+          22,
+          23
+        ],
+        "block_forest_parents": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "lower_link_component_histogram": {
+          "0": 1,
+          "1": 23
+        },
+        "selected_link_triples": 97,
+        "gauged_free_pairs": [],
+        "extra_triangle_pivots": [],
+        "tested_pairs": 0,
+        "h1_lower": 0,
+        "h1_upper": 0,
+        "exact": true,
+        "positive_certificates": [],
+        "pi1": {
+          "trivial_in_every_component": true,
+          "forest_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "generator_pairs_in_order": [
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "initial_relators": [
+            [
+              [
+                0,
+                2,
+                4
+              ],
+              [
+                6
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                5
+              ],
+              [
+                7
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                6
+              ],
+              [
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                2,
+                7
+              ],
+              [
+                9
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                10
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                5
+              ],
+              [
+                11
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                6
+              ],
+              [
+                12
+              ]
+            ],
+            [
+              [
+                0,
+                3,
+                7
+              ],
+              [
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                4,
+                6
+              ],
+              [
+                14
+              ]
+            ],
+            [
+              [
+                0,
+                4,
+                7
+              ],
+              [
+                15
+              ]
+            ],
+            [
+              [
+                0,
+                5,
+                6
+              ],
+              [
+                16
+              ]
+            ],
+            [
+              [
+                0,
+                5,
+                7
+              ],
+              [
+                17
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                4
+              ],
+              [
+                6,
+                -2
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                5
+              ],
+              [
+                7,
+                -3
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                8,
+                -4
+              ]
+            ],
+            [
+              [
+                1,
+                2,
+                7
+              ],
+              [
+                9,
+                -5
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                4
+              ],
+              [
+                1,
+                10,
+                -2
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                5
+              ],
+              [
+                1,
+                11,
+                -3
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                6
+              ],
+              [
+                1,
+                12,
+                -4
+              ]
+            ],
+            [
+              [
+                1,
+                3,
+                7
+              ],
+              [
+                1,
+                13,
+                -5
+              ]
+            ],
+            [
+              [
+                1,
+                4,
+                6
+              ],
+              [
+                2,
+                14,
+                -4
+              ]
+            ],
+            [
+              [
+                1,
+                4,
+                7
+              ],
+              [
+                2,
+                15,
+                -5
+              ]
+            ],
+            [
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                3,
+                16,
+                -4
+              ]
+            ],
+            [
+              [
+                1,
+                5,
+                7
+              ],
+              [
+                3,
+                17,
+                -5
+              ]
+            ],
+            [
+              [
+                2,
+                4,
+                6
+              ],
+              [
+                6,
+                14,
+                -8
+              ]
+            ],
+            [
+              [
+                2,
+                4,
+                7
+              ],
+              [
+                6,
+                15,
+                -9
+              ]
+            ],
+            [
+              [
+                2,
+                5,
+                6
+              ],
+              [
+                7,
+                16,
+                -8
+              ]
+            ],
+            [
+              [
+                2,
+                5,
+                7
+              ],
+              [
+                7,
+                17,
+                -9
+              ]
+            ],
+            [
+              [
+                3,
+                4,
+                6
+              ],
+              [
+                10,
+                14,
+                -12
+              ]
+            ],
+            [
+              [
+                3,
+                4,
+                7
+              ],
+              [
+                10,
+                15,
+                -13
+              ]
+            ],
+            [
+              [
+                3,
+                5,
+                6
+              ],
+              [
+                11,
+                16,
+                -12
+              ]
+            ],
+            [
+              [
+                3,
+                5,
+                7
+              ],
+              [
+                11,
+                17,
+                -13
+              ]
+            ]
+          ],
+          "eliminations": [
+            {
+              "triple": [
+                0,
+                2,
+                4
+              ],
+              "generator": 6,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                5
+              ],
+              "generator": 7,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                6
+              ],
+              "generator": 8,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                2,
+                7
+              ],
+              "generator": 9,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                4
+              ],
+              "generator": 10,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                5
+              ],
+              "generator": 11,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                6
+              ],
+              "generator": 12,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                3,
+                7
+              ],
+              "generator": 13,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                4,
+                6
+              ],
+              "generator": 14,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                4,
+                7
+              ],
+              "generator": 15,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                5,
+                6
+              ],
+              "generator": 16,
+              "replacement": []
+            },
+            {
+              "triple": [
+                0,
+                5,
+                7
+              ],
+              "generator": 17,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                2,
+                4
+              ],
+              "generator": 2,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                2,
+                5
+              ],
+              "generator": 3,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                2,
+                6
+              ],
+              "generator": 4,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                2,
+                7
+              ],
+              "generator": 5,
+              "replacement": []
+            },
+            {
+              "triple": [
+                1,
+                3,
+                4
+              ],
+              "generator": 1,
+              "replacement": []
+            }
+          ],
+          "remaining_generators": [],
+          "remaining_relators": [],
+          "free_ranks_by_component_forest_root": {
+            "0": 0
+          }
+        }
+      },
+      "late_triple_pivot": {
+        "live": 52,
+        "blocks": 13,
+        "incidence_signatures": 52,
+        "block_intersection_pairs": 52,
+        "components": 1,
+        "component_size_histogram": {
+          "52": 1
+        },
+        "isolated_junctions": 0,
+        "block_order": [
+          0,
+          3,
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "block_forest_parents": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "lower_link_component_histogram": {
+          "0": 1,
+          "1": 11,
+          "2": 1
+        },
+        "selected_link_triples": 39,
+        "gauged_free_pairs": [
+          [
+            9,
+            6
+          ]
+        ],
+        "extra_triangle_pivots": [
+          {
+            "blocks": [
+              3,
+              6,
+              12
+            ],
+            "free_row_hex": "0x1"
+          }
+        ],
+        "tested_pairs": 25,
+        "h1_lower": 0,
+        "h1_upper": 0,
+        "exact": true,
+        "positive_certificates": []
+      }
+    },
+    "literal_labelled_graph_count": 1099,
+    "literal_hypergraph_samples": 480,
+    "largest_residual_rank_on_small_panels": 0,
+    "late_pivot_zero_budget_range": [
+      0,
+      1
+    ]
+  },
+  "stages": [
+    {
+      "live": 6,
+      "blocks": 6,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 10,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 5
+      },
+      "selected_link_triples": 5,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-00",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loose_counts": [
+        3,
+        4,
+        3,
+        2,
+        3,
+        1
+      ],
+      "archived_control_relabeling": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              5
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              5,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              -4
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              4
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              1,
+              5
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              4
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              4
+            ],
+            "generator": 3,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "live": 6,
+      "blocks": 6,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 10,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        3,
+        4,
+        5,
+        0,
+        1,
+        2
+      ],
+      "block_forest_parents": [
+        3,
+        0,
+        3,
+        -1,
+        3,
+        3
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 5
+      },
+      "selected_link_triples": 5,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-01",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "blocks_literal": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loose_counts": [
+        1,
+        2,
+        3,
+        3,
+        5,
+        4
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              3,
+              5
+            ],
+            [
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              -2
+            ]
+          ],
+          [
+            [
+              2,
+              4,
+              5
+            ],
+            [
+              3,
+              5,
+              -4
+            ]
+          ],
+          [
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              5
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              3,
+              5
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              4
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              3,
+              4,
+              5
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              4,
+              5
+            ],
+            "generator": 4,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "3": 0
+        }
+      }
+    },
+    {
+      "live": 5,
+      "blocks": 4,
+      "incidence_signatures": 5,
+      "block_intersection_pairs": 5,
+      "components": 1,
+      "component_size_histogram": {
+        "5": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 3
+      },
+      "selected_link_triples": 2,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-02",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loose_counts": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              4,
+              -2
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              3
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              1,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              3
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "1": 0
+        }
+      }
+    },
+    {
+      "live": 6,
+      "blocks": 6,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 10,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 5
+      },
+      "selected_link_triples": 5,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-03",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "loose_counts": [
+        3,
+        3,
+        4,
+        3,
+        2,
+        3
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              -1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              5
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              5
+            ],
+            [
+              5,
+              -2
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              2
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              1,
+              5
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              3
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              5
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "1": 0
+        }
+      }
+    },
+    {
+      "live": 5,
+      "blocks": 4,
+      "incidence_signatures": 5,
+      "block_intersection_pairs": 5,
+      "components": 1,
+      "component_size_histogram": {
+        "5": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 3
+      },
+      "selected_link_triples": 2,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-04",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "blocks_literal": [
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "loose_counts": [
+        3,
+        3,
+        2,
+        4,
+        4
+      ],
+      "archived_control_relabeling": [
+        2,
+        1,
+        0,
+        3,
+        4
+      ],
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              3,
+              -2
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              1,
+              4,
+              -2
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              2,
+              4
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              3,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              4
+            ],
+            "generator": 1,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "4": 0
+        }
+      }
+    },
+    {
+      "live": 5,
+      "blocks": 4,
+      "incidence_signatures": 5,
+      "block_intersection_pairs": 5,
+      "components": 1,
+      "component_size_histogram": {
+        "5": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 3
+      },
+      "selected_link_triples": 2,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-05",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "loose_counts": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              2,
+              4,
+              -3
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              4
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              4
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "4": 0
+        }
+      }
+    },
+    {
+      "live": 6,
+      "blocks": 6,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 10,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        4
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 5
+      },
+      "selected_link_triples": 5,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-06",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loose_counts": [
+        5,
+        3,
+        3,
+        4,
+        3,
+        1
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              2
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              1,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              3
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              3,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              4,
+              5
+            ],
+            "generator": 5,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "live": 6,
+      "blocks": 6,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 10,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        1,
+        4,
+        2,
+        5,
+        3
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 5
+      },
+      "selected_link_triples": 5,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-07",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "blocks_literal": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loose_counts": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        1
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              4,
+              5
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              4,
+              -2
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              2,
+              3
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              3,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              4,
+              5
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              3
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "live": 5,
+      "blocks": 4,
+      "incidence_signatures": 5,
+      "block_intersection_pairs": 5,
+      "components": 1,
+      "component_size_histogram": {
+        "5": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 3
+      },
+      "selected_link_triples": 2,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-08",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        2,
+        4,
+        5,
+        6
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loose_counts": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              4,
+              -2
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              2
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              1,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              3
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "1": 0
+        }
+      }
+    },
+    {
+      "live": 6,
+      "blocks": 5,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 8,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        2,
+        0,
+        1,
+        3,
+        4
+      ],
+      "block_forest_parents": [
+        2,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 4
+      },
+      "selected_link_triples": 4,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-09",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "loose_counts": [
+        2,
+        4,
+        4,
+        4,
+        3,
+        5
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              -1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              -2
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              5
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              5
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              4,
+              5
+            ],
+            [
+              6,
+              -3
+            ]
+          ],
+          [
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              4,
+              6,
+              -5
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              2
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              1,
+              3
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              5
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              3,
+              5
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              4,
+              5
+            ],
+            "generator": 6,
+            "replacement": []
+          },
+          {
+            "triple": [
+              3,
+              4,
+              5
+            ],
+            "generator": 4,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "1": 0
+        }
+      }
+    },
+    {
+      "live": 6,
+      "blocks": 4,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 5,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 3
+      },
+      "selected_link_triples": 2,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-10",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "loose_counts": [
+        4,
+        4,
+        3,
+        4,
+        5,
+        2
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              -1
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              -2
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              1,
+              5,
+              -2
+            ]
+          ],
+          [
+            [
+              1,
+              3,
+              4
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              5,
+              -3
+            ]
+          ],
+          [
+            [
+              2,
+              4,
+              5
+            ],
+            [
+              3,
+              6,
+              -4
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              3
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              1,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              3,
+              4
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              4,
+              5
+            ],
+            "generator": 6,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              4
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              4,
+              5
+            ],
+            "generator": 4,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "4": 0
+        }
+      }
+    },
+    {
+      "live": 6,
+      "blocks": 4,
+      "incidence_signatures": 6,
+      "block_intersection_pairs": 5,
+      "components": 1,
+      "component_size_histogram": {
+        "6": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 3
+      },
+      "selected_link_triples": 2,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-11",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "blocks_literal": [
+        [
+          0,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "loose_counts": [
+        5,
+        3,
+        3,
+        4,
+        5,
+        2
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              4,
+              5
+            ],
+            [
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              4,
+              5
+            ],
+            [
+              1,
+              6,
+              -2
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              3,
+              5,
+              -4
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              2,
+              3
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              3,
+              4
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              4,
+              5
+            ],
+            "generator": 6,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              4
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              4,
+              5
+            ],
+            "generator": 2,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "4": 0
+        }
+      }
+    },
+    {
+      "live": 7,
+      "blocks": 6,
+      "incidence_signatures": 7,
+      "block_intersection_pairs": 10,
+      "components": 1,
+      "component_size_histogram": {
+        "7": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "block_forest_parents": [
+        1,
+        -1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 5
+      },
+      "selected_link_triples": 5,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-12",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loose_counts": [
+        4,
+        2,
+        4,
+        4,
+        4,
+        3,
+        4
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              6
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              6
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              4
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              6
+            ],
+            [
+              5,
+              -3
+            ]
+          ],
+          [
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              4,
+              6
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              6
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              6
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              4
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              6
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              3,
+              4,
+              5
+            ],
+            "generator": 6,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "live": 7,
+      "blocks": 6,
+      "incidence_signatures": 7,
+      "block_intersection_pairs": 10,
+      "components": 1,
+      "component_size_histogram": {
+        "7": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        1,
+        2,
+        4,
+        3,
+        5,
+        0
+      ],
+      "block_forest_parents": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 5
+      },
+      "selected_link_triples": 5,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-13",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "loose_counts": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3,
+        4
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              2,
+              -3
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              6
+            ],
+            [
+              4
+            ]
+          ],
+          [
+            [
+              3,
+              4,
+              6
+            ],
+            [
+              5,
+              -4
+            ]
+          ],
+          [
+            [
+              4,
+              5,
+              6
+            ],
+            [
+              6,
+              -5
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              2
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              3
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              6
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              6
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              3,
+              4,
+              6
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              4,
+              5,
+              6
+            ],
+            "generator": 6,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "6": 0
+        }
+      }
+    },
+    {
+      "live": 7,
+      "blocks": 7,
+      "incidence_signatures": 7,
+      "block_intersection_pairs": 12,
+      "components": 1,
+      "component_size_histogram": {
+        "7": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        0,
+        3,
+        6,
+        2,
+        4,
+        5,
+        1
+      ],
+      "block_forest_parents": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 6
+      },
+      "selected_link_triples": 6,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-14",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "blocks_literal": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5,
+          6
+        ]
+      ],
+      "loose_counts": [
+        4,
+        4,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              1,
+              6
+            ],
+            [
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              5,
+              6
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              4
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              5,
+              6
+            ],
+            [
+              3,
+              5,
+              -4
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              0,
+              1,
+              6
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              5,
+              6
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              4
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              6
+            ],
+            "generator": 4,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              5,
+              6
+            ],
+            "generator": 3,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "0": 0
+        }
+      }
+    },
+    {
+      "live": 7,
+      "blocks": 5,
+      "incidence_signatures": 7,
+      "block_intersection_pairs": 8,
+      "components": 1,
+      "component_size_histogram": {
+        "7": 1
+      },
+      "isolated_junctions": 0,
+      "block_order": [
+        1,
+        0,
+        3,
+        2,
+        4
+      ],
+      "block_forest_parents": [
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "lower_link_component_histogram": {
+        "0": 1,
+        "1": 4
+      },
+      "selected_link_triples": 4,
+      "gauged_free_pairs": [],
+      "extra_triangle_pivots": [],
+      "tested_pairs": 0,
+      "h1_lower": 0,
+      "h1_upper": 0,
+      "exact": true,
+      "positive_certificates": [],
+      "case": "start-15",
+      "age": 0,
+      "literal_live_junctions": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "blocks_literal": [
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          5
+        ]
+      ],
+      "loose_counts": [
+        2,
+        4,
+        4,
+        3,
+        2,
+        3,
+        4
+      ],
+      "archived_control_relabeling": null,
+      "pi1": {
+        "trivial_in_every_component": true,
+        "forest_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "generator_pairs_in_order": [
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "initial_relators": [
+          [
+            [
+              0,
+              2,
+              6
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              4,
+              6
+            ],
+            [
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              5
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ],
+        "eliminations": [
+          {
+            "triple": [
+              1,
+              2,
+              3
+            ],
+            "generator": 2,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              2,
+              6
+            ],
+            "generator": 3,
+            "replacement": []
+          },
+          {
+            "triple": [
+              0,
+              2,
+              6
+            ],
+            "generator": 1,
+            "replacement": []
+          },
+          {
+            "triple": [
+              1,
+              4,
+              6
+            ],
+            "generator": 5,
+            "replacement": []
+          },
+          {
+            "triple": [
+              2,
+              3,
+              5
+            ],
+            "generator": 4,
+            "replacement": []
+          }
+        ],
+        "remaining_generators": [],
+        "remaining_relators": [],
+        "free_ranks_by_component_forest_root": {
+          "2": 0
+        }
+      }
+    }
+  ]
+}

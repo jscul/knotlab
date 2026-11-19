@@ -1,0 +1,6289 @@
+{
+  "archive_ages_including_initial": 156,
+  "canonical_sources": 14,
+  "classifications": {
+    "closing": 2,
+    "continuing": 2,
+    "unresolved": 12
+  },
+  "controls": {
+    "complete_held_vs_unheld_closes_after_two_vs_one_rounds": true,
+    "exact_partnered_order3": {
+      "held_transversals": 0,
+      "held_words": [],
+      "next_order": 4,
+      "order": 3,
+      "pairing": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "status": "partnered",
+      "supply": 4,
+      "supply_from": "literal"
+    },
+    "held_blocks_required_for_exact_repeat": true,
+    "lone_implied_child_is_excluded": true,
+    "order2_exact_repeat_map": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "short_funding_rejected": true,
+    "two_isolated_offshoots_propagate": true,
+    "unpaired_held_word_rejected": true
+  },
+  "limits": {
+    "inputs": "archived complete ages only. Later birth counts without parent rosters are separate.",
+    "pairing_order": 256,
+    "repeat_incidence": 4096
+  },
+  "original_resource_limits": {
+    "EXPLOSIVE": {
+      "address_space_bytes": 2500000000,
+      "junction_threshold": 6000,
+      "rounds": 20,
+      "seconds": 30
+    },
+    "MERGE-BURST": {
+      "address_space_bytes": 6000000000,
+      "rounds": 60,
+      "seconds": 900
+    },
+    "WALL-READ": {
+      "address_space_bytes": 7516192768,
+      "rounds": 40,
+      "seconds": 1200
+    }
+  },
+  "sources": {
+    "artifacts/HUB-GUIDED-SAMPLE-20261119-001/HUB-GUIDED-SAMPLE-20261119-001-E001_sampler/applications.json": "0f8fb25b1cfd1f97b8f001101438043d3f3618346f2ed3b2f4a5aab47af35813",
+    "artifacts/HUB-GUIDED-SAMPLE-20261119-001/HUB-GUIDED-SAMPLE-20261119-001-E001_sampler/stages.json": "a971803a027ddc62d2d6def86273f0da607817418a8c720276fb62badc9e500d",
+    "artifacts/HUB-GUIDED-SAMPLE-20261119-001/HUB-GUIDED-SAMPLE-20261119-001-E001_sampler/structure_bound.json": "0d139ebabd75af27bbef89e985ba1aac469c045876e1732689b32132a506504f",
+    "artifacts/MERGE-BURST-20261119-001B/MERGE-BURST-20261119-001B-E001_stages/results.json": "f704557b194ee987f123699c6def2f85be3453649b92d2d90b55574943911187",
+    "artifacts/PARTNER-SEVEN-20261119-001/PARTNER-SEVEN-20261119-001-E001_seek/archive_screen.json": "4d4557aaa9dfa20cf79b60c3a166584a971bfba5269c94e9ce8858656f899993",
+    "artifacts/WALL-READ-20261119-001B/WALL-READ-20261119-001B-E001_past/results.json": "25f3e6d63e49f80503c19e69b53949de9bdc1c455363ec460a56b8779ce8ba3d"
+  },
+  "starts": [
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "alive",
+        "MERGE-BURST": "read",
+        "WALL-READ": "done"
+      },
+      "canonical_source": true,
+      "case": "start-00",
+      "classification": "closing",
+      "first_closure": [
+        14,
+        {
+          "each_open": 8,
+          "exact_next_births": 36,
+          "first_zero_birth_age": 23,
+          "live": 9,
+          "terminal_birth_age": 22,
+          "type": "single_full_block"
+        }
+      ],
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 22,
+      "later_birth_data_without_roster": null,
+      "no_future_offshoot_at_last_open_archive": false,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 10,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 91,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "source_sizes": [
+        6,
+        7,
+        5,
+        4,
+        5,
+        3
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 10,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 23,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 6,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 2,
+          "open_sum": 16,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 8,
+          "candidate_pairs": 15,
+          "components": [
+            8
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 49,
+          "junctions_to_date": 14,
+          "largest_block": 4,
+          "live": 8,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 6,
+          "minimum_candidate_degree": 2,
+          "open_sum": 26,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "1fab907e300f59e08730f603b6e2ad6df355613e90c09294f01086137aa121e2",
+            "degrees": "467bb1cb18d710b65a7d61fb8c92994bf69c679c15ed6e762d83718d73922581",
+            "opens": "65df701f02763bf4ed4b06f48644a7f6ae3917b75c3ac07b350c078fbd12708d"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 2,
+          "births": 12,
+          "candidate_pairs": 32,
+          "components": [
+            12
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 87,
+          "junctions_to_date": 26,
+          "largest_block": 5,
+          "live": 12,
+          "maximal_blocks": 8,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 3,
+          "open_sum": 38,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "f1e1092f12f813c2435f225854a9579087cb7f35773b15482dbc67b66c319c1a",
+            "degrees": "1fb7c728a9016779309d458c9b51861080013402c7394475c3c49e47c499fc4b",
+            "opens": "3ccc84ff47bcabbf769245a54622f0dfb02dd4e7282e9754f12bc0e534351fd3"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 3,
+          "births": 15,
+          "candidate_pairs": 45,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 131,
+          "junctions_to_date": 41,
+          "largest_block": 4,
+          "live": 15,
+          "maximal_blocks": 12,
+          "maximum_candidate_degree": 9,
+          "minimum_candidate_degree": 3,
+          "open_sum": 44,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "d17811e595637f77d83067e3f987fa8cc668343dcea660198094695f13e799f3",
+            "degrees": "c26da91666b42b779a67653089617dfa66a766a61577a3b2c8292da920b89607",
+            "opens": "85b39535d91690797386fb4d1bc3e3c93d468c613c01c83861eb82164dc97281"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 4,
+          "births": 15,
+          "candidate_pairs": 47,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 179,
+          "junctions_to_date": 56,
+          "largest_block": 5,
+          "live": 15,
+          "maximal_blocks": 14,
+          "maximum_candidate_degree": 9,
+          "minimum_candidate_degree": 4,
+          "open_sum": 48,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "644bbc0da7ad6c50ce6df8d618df1d8d1d1415b239593d7a677e0789440c9324",
+            "degrees": "ba975d0e62e6064a15168f40e68325087c4370436fbc25817225792dd0a29604",
+            "opens": "8a077f3e99e0239ea5270c716fc7f2a393939cebd179678a918bf7e153d28419"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 5,
+          "births": 14,
+          "candidate_pairs": 49,
+          "components": [
+            14
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 234,
+          "junctions_to_date": 70,
+          "largest_block": 5,
+          "live": 14,
+          "maximal_blocks": 14,
+          "maximum_candidate_degree": 10,
+          "minimum_candidate_degree": 3,
+          "open_sum": 55,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "1584aa47e688d453f405bb78c2bc49744b1525301bb1ee8b91a23175b3a6dc5a",
+            "degrees": "285526cecd0c1b6c2721dd9d3928f4d73a9b821a4bf7fbd674283d0318f90f55",
+            "opens": "671d2791266ec94ff29267306215f10745029313cda3c079d62d27aaf70dda10"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 6,
+          "births": 14,
+          "candidate_pairs": 61,
+          "components": [
+            14
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 301,
+          "junctions_to_date": 84,
+          "largest_block": 7,
+          "live": 14,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 11,
+          "minimum_candidate_degree": 5,
+          "open_sum": 67,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "ce6bfe2635216a3fb315992403166356d3fe710140466563ab74fdf2ed12063a",
+            "degrees": "2291aa5d4b6f7d2b1477e10afa943505e7d90ecde29d091920a4891733248cf1",
+            "opens": "95f6de757bee8148fd4865c6cdd43ab4a1896ea48beeb8e0c51d50024a3dc76b"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 7,
+          "births": 15,
+          "candidate_pairs": 73,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 349,
+          "junctions_to_date": 99,
+          "largest_block": 8,
+          "live": 15,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 5,
+          "open_sum": 48,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "e17877bb570bd303a78b3ee5b396ec2fc6434eebec9f21cb7ca532d9367d4c05",
+            "degrees": "ed39e44bff57b591edf226515d3823a2e7e0bec4c6538deb5b529d3a38da6a89",
+            "opens": "ad57f972bf00dfac9cb496751c11935b59f8a690c20362a1a7195ae5f3f229b3"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 8,
+          "births": 9,
+          "candidate_pairs": 28,
+          "components": [
+            9
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 393,
+          "junctions_to_date": 108,
+          "largest_block": 7,
+          "live": 9,
+          "maximal_blocks": 4,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 4,
+          "open_sum": 44,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "0f822849dcb2ee1000314f52b5154903aa7c589bdb7202cadd5afb7bcf45d81d",
+            "degrees": "10a115098934b328c14fd3e29425ecac6edfaf88334e5f47068a6f8303a3d1f2",
+            "opens": "ffb44ee89d24e9a51f64844a24fce4cafc0bd7d88aa584a59237b875cabf2ef7"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 9,
+          "births": 19,
+          "candidate_pairs": 92,
+          "components": [
+            19
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 483,
+          "junctions_to_date": 127,
+          "largest_block": 6,
+          "live": 19,
+          "maximal_blocks": 7,
+          "maximum_candidate_degree": 12,
+          "minimum_candidate_degree": 8,
+          "open_sum": 90,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "7c3c388e156c545fd85756746d4f1eaae32f0b6f19b11797a6c82ac0bea684fe",
+            "degrees": "5255dce9aad4aba7a1b73c5ade28d7d39a1d6e7dcecb3da4d914d52b0c4ec0e3",
+            "opens": "849656e597a806435e6b64befb714e37041fe2d8b36e539372e810c89ac378a7"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 10,
+          "births": 26,
+          "candidate_pairs": 153,
+          "components": [
+            26
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 643,
+          "junctions_to_date": 153,
+          "largest_block": 7,
+          "live": 26,
+          "maximal_blocks": 18,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 9,
+          "open_sum": 160,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "1dd82e37aa486971ba67f7d84ce3910ad3f8ada1f3624277ccfd00659807d9cf",
+            "degrees": "993fa2c97d59a7b53168cefb0655766d16b27dc0d7ffc014608d7bb1f207e23e",
+            "opens": "996964a1f2cdc073f40d9023ef613b703ae75119524736dac1c1ae3b5e0eb6ee"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 11,
+          "births": 31,
+          "candidate_pairs": 285,
+          "components": [
+            31
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1251,
+          "junctions_to_date": 184,
+          "largest_block": 11,
+          "live": 31,
+          "maximal_blocks": 26,
+          "maximum_candidate_degree": 22,
+          "minimum_candidate_degree": 8,
+          "open_sum": 608,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "c27dae8ebb12cb93e939d2bba74c3e9eca2c70d14e8ce4df0bd34afde7d906f0",
+            "degrees": "20c0a19f1aac89a80efe5a97d1e9e4f8467b08c975841420047784da42a11c81",
+            "opens": "03e29d7facc59c56f68a60e58fc42edd8ddfe396fffb24e1b904256f52d72ce4"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 12,
+          "births": 67,
+          "candidate_pairs": 1980,
+          "components": [
+            67
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 10453,
+          "junctions_to_date": 251,
+          "largest_block": 31,
+          "live": 67,
+          "maximal_blocks": 27,
+          "maximum_candidate_degree": 63,
+          "minimum_candidate_degree": 5,
+          "open_sum": 9202,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "6dab44da554fd77731a565de09e2776b000b733d2e080afd2786c3bbffc4b46a",
+            "degrees": "445c5edb922fd408c79c2c5efe9a03550f254954d14603a482fa8ea14a05cc64",
+            "opens": "f7e8f258d93cdf780439edd2a54d4cd2466e6db11b289929f8c76b1657cce772"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 13,
+          "births": 322,
+          "candidate_pairs": 51399,
+          "components": [
+            322
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 13065,
+          "junctions_to_date": 573,
+          "largest_block": 220,
+          "live": 322,
+          "maximal_blocks": 22,
+          "maximum_candidate_degree": 321,
+          "minimum_candidate_degree": 225,
+          "open_sum": 2612,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "56e1f8dfbec14f0ebe71c6e76518b846786d654e9390910ae5c4d2de1edc3d98",
+            "degrees": "1cebf563010e6a3866c8f6ce154d7b2c0923de7727c5e3973e23a1670c2fa479",
+            "opens": "4851e944e5662ce6feae649f2102f917fdcc6bf34b7828e79e9a974e5e96e054"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 14,
+          "births": 9,
+          "candidate_pairs": 36,
+          "components": [
+            9
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 13137,
+          "junctions_to_date": 582,
+          "largest_block": 9,
+          "live": 9,
+          "maximal_blocks": 1,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 8,
+          "open_sum": 72,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "1c4a4ed767f58177fe7583a293dce3495c4f9ff9470c7a12e69cc8c7bfd27662",
+            "degrees": "a11bfffda93503ecaba8c03cfb130a7361932a31bbc90b8e549247574aba09b2",
+            "opens": "a11bfffda93503ecaba8c03cfb130a7361932a31bbc90b8e549247574aba09b2"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 15,
+          "births": 36,
+          "candidate_pairs": 252,
+          "components": [
+            36
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 13389,
+          "junctions_to_date": 618,
+          "largest_block": 8,
+          "live": 36,
+          "maximal_blocks": 9,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 14,
+          "open_sum": 252,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "f9de2ad5c2af8fde23940f39e20a33c5adfd45e20f54c23d64190ff0721020c7",
+            "degrees": "fb6baada3b1a7ec7aac55c4e7098501acdb571d9582513a4e927176d7a706702",
+            "opens": "f7ed65b18fbc5d6536e9f58de7fcaf765c32ed03ec66b38d0d4dfbbc38340d54",
+            "parents": "de90cb8234a4235b941b14458e9b087639c1afc23524cff4d70fa962768f57bb"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 16,
+          "births": 84,
+          "candidate_pairs": 756,
+          "components": [
+            84
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 13893,
+          "junctions_to_date": 702,
+          "largest_block": 7,
+          "live": 84,
+          "maximal_blocks": 36,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 18,
+          "open_sum": 504,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "33026e9b76fe9703d462ab96718953b191550786822f90202c561485727203f1",
+            "degrees": "d8e3b705ae0c41bb3564050706daa21ef289ee2e6b656179f1d0c9675bdff664",
+            "opens": "d57174cdfd66cc2e5894e5c920b6efa8c1b9251cdcf709c4a611782224c9258e",
+            "parents": "5dc3042bcf4a0d663f0aa89e4b3c05966d119b39169122141c3513b3b6192e32"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 17,
+          "births": 126,
+          "candidate_pairs": 1260,
+          "components": [
+            126
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 14523,
+          "junctions_to_date": 828,
+          "largest_block": 6,
+          "live": 126,
+          "maximal_blocks": 84,
+          "maximum_candidate_degree": 20,
+          "minimum_candidate_degree": 20,
+          "open_sum": 630,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "e70e76992635edc080a1a626096a48da05fafaec4934362cf5d684e3022e0213",
+            "degrees": "072c184894cfeaed5833e61d5892f23b5bb84662bde515ad9077378214853cf0",
+            "opens": "5a8b8faf2bc16333439d6df6a582200883b6a012640cf8eef62bdec17e09c831",
+            "parents": "5a6125feec63a9d24245b32003ffdc2489e8738a754753d8364df94b78128557"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 18,
+          "births": 126,
+          "candidate_pairs": 1260,
+          "components": [
+            126
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 15027,
+          "junctions_to_date": 954,
+          "largest_block": 5,
+          "live": 126,
+          "maximal_blocks": 126,
+          "maximum_candidate_degree": 20,
+          "minimum_candidate_degree": 20,
+          "open_sum": 504,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "584663732702e18b3c52d0f6f2021e8867225a06c694abb26e1ecab035ae308f",
+            "degrees": "072c184894cfeaed5833e61d5892f23b5bb84662bde515ad9077378214853cf0",
+            "opens": "60b9bbf26e73291a16180fc2bfe0b82957acaff17606b9e76267db163ad8ec2d",
+            "parents": "ad8a09e0a0cec181187b11c9d21ff2740d3e743516d429a671a6a2b24d007821"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 19,
+          "births": 84,
+          "candidate_pairs": 756,
+          "components": [
+            84
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 15279,
+          "junctions_to_date": 1038,
+          "largest_block": 4,
+          "live": 84,
+          "maximal_blocks": 126,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 18,
+          "open_sum": 252,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "8760341ec4761aad0c3414f17e35c025fbe264e516a64072e218d34bd6159cc8",
+            "degrees": "d8e3b705ae0c41bb3564050706daa21ef289ee2e6b656179f1d0c9675bdff664",
+            "opens": "3d785bb8675746c802d163514b05334d86e8ae27cc8473e1383eafdc11448ebe",
+            "parents": "351d77ceddfa2d8d6d3d087418b61f4fc20099b1afa396111e8c57800498abf7"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 20,
+          "births": 36,
+          "candidate_pairs": 252,
+          "components": [
+            36
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 15351,
+          "junctions_to_date": 1074,
+          "largest_block": 3,
+          "live": 36,
+          "maximal_blocks": 84,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 14,
+          "open_sum": 72,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "e6a66445737dc24176248eb0e32c3cc43b50437493592a99f1ad2e78f529c9fb",
+            "degrees": "fb6baada3b1a7ec7aac55c4e7098501acdb571d9582513a4e927176d7a706702",
+            "opens": "f0ba0905e968f5caf70abff97af5bc793e2904ca1cf381036f5126a5d144de4e",
+            "parents": "193952ac5e347de153f08413337d0fdccaa9c17368e2277c6df0d337bc53d279"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 21,
+          "births": 9,
+          "candidate_pairs": 36,
+          "components": [
+            9
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 15360,
+          "junctions_to_date": 1083,
+          "largest_block": 2,
+          "live": 9,
+          "maximal_blocks": 36,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 8,
+          "open_sum": 9,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "d6fd01c8ecd5a992afbb19d5115b271a156b9bc0d04db96c3848be7b86c9cc7e",
+            "degrees": "a11bfffda93503ecaba8c03cfb130a7361932a31bbc90b8e549247574aba09b2",
+            "opens": "725a522b7538fab743ad4f2ae8d81bc209977451b63e738fbcf8d3502058ffd4",
+            "parents": "e0af4c6121b1591238ba8254fdc3bd2ff72fb04a62d41dfb6b2e1bc181cc21ea"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 22,
+          "births": 1,
+          "candidate_pairs": 0,
+          "components": [],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 15360,
+          "junctions_to_date": 1084,
+          "largest_block": 0,
+          "live": 0,
+          "maximal_blocks": 0,
+          "maximum_candidate_degree": 0,
+          "minimum_candidate_degree": 0,
+          "open_sum": 0,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "0ccdb5a77ba5bf7687f2565a8ed97dfb9c1af45503c496fb646312239fab5101",
+            "degrees": "f67aa9d5e2a670e85a8c43c0c88b1e202fb5368e19c6a6c7f4524217648a1e52",
+            "parents": "f993f07cc2d3978336025be0e59e3fa9644c249a7b518c2dc1372359da0c3623"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "time",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-01",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 10,
+      "later_birth_data_without_roster": {
+        "age": 11,
+        "births": 249882,
+        "kind": "exact births only"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 157,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "source_sizes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        7
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 10,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 25,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 6,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 2,
+          "open_sum": 18,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 10,
+          "candidate_pairs": 22,
+          "components": [
+            10
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 65,
+          "junctions_to_date": 16,
+          "largest_block": 5,
+          "live": 10,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 2,
+          "open_sum": 40,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 19,
+          "candidate_pairs": 70,
+          "components": [
+            19
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 146,
+          "junctions_to_date": 35,
+          "largest_block": 7,
+          "live": 19,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 13,
+          "minimum_candidate_degree": 4,
+          "open_sum": 81,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 31,
+          "candidate_pairs": 142,
+          "components": [
+            31
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 284,
+          "junctions_to_date": 66,
+          "largest_block": 6,
+          "live": 31,
+          "maximal_blocks": 19,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 4,
+          "open_sum": 138,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 40,
+          "candidate_pairs": 245,
+          "components": [
+            40
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 626,
+          "junctions_to_date": 106,
+          "largest_block": 8,
+          "live": 40,
+          "maximal_blocks": 31,
+          "maximum_candidate_degree": 20,
+          "minimum_candidate_degree": 4,
+          "open_sum": 342,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 68,
+          "candidate_pairs": 1185,
+          "components": [
+            68
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 2257,
+          "junctions_to_date": 174,
+          "largest_block": 33,
+          "live": 68,
+          "maximal_blocks": 40,
+          "maximum_candidate_degree": 51,
+          "minimum_candidate_degree": 3,
+          "open_sum": 1631,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 147,
+          "candidate_pairs": 7286,
+          "components": [
+            147
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 25237,
+          "junctions_to_date": 321,
+          "largest_block": 71,
+          "live": 147,
+          "maximal_blocks": 55,
+          "maximum_candidate_degree": 131,
+          "minimum_candidate_degree": 5,
+          "open_sum": 22980,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 623,
+          "candidate_pairs": 159329,
+          "components": [
+            623
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 141329,
+          "junctions_to_date": 944,
+          "largest_block": 425,
+          "live": 623,
+          "maximal_blocks": 94,
+          "maximum_candidate_degree": 614,
+          "minimum_candidate_degree": 70,
+          "open_sum": 116092,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 8,
+          "births": 1198,
+          "candidate_pairs": 245933,
+          "components": [
+            1198
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 278236,
+          "junctions_to_date": 2142,
+          "largest_block": 406,
+          "live": 1198,
+          "maximal_blocks": 253,
+          "maximum_candidate_degree": 1195,
+          "minimum_candidate_degree": 45,
+          "open_sum": 136907,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "bea4ded9d7d600a88467051b056a74396046b61a85dd628629b07d4bcd6bd820",
+            "degrees": "c44785e2a73d9511433182fccd17106b731aca0bbc28157c5b810e0a828ea3fc",
+            "opens": "9b132459dbfbb72a660c90efc304ee50d83eee67e080262737458671b174a81b",
+            "parents": "493d3ceada1614b52c2c84e2fe94e95ed14fc75862fdcef50319900751fc63cd"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 9,
+          "births": 1522,
+          "candidate_pairs": 1047921,
+          "components": [
+            1522
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1036305,
+          "junctions_to_date": 3664,
+          "largest_block": 1400,
+          "live": 1522,
+          "maximal_blocks": 173,
+          "maximum_candidate_degree": 1520,
+          "minimum_candidate_degree": 40,
+          "open_sum": 758069,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "c6cecd1cedc6e2c885ace2c738f7806d376262cf407ec6f315db1e4c5c6c8e6b",
+            "degrees": "74c9cf67874a5f3327d8bd8789e725420a3578c220cc9da3d34eecc479f9e932",
+            "opens": "8c862d995d3cd6d3e1a01557988e1775951fb179d7f378f31f0d218a6aa54bd2",
+            "parents": "5f43bc6b91c3d92ab9b5ed702490a4d2bfe45f20933a1ea86c23bf2f4ab809f8"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 10,
+          "births": 21516,
+          "candidate_pairs": 26347648,
+          "components": [
+            21516
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 1057821,
+          "junctions_to_date": 25180,
+          "largest_block": 3148,
+          "live": 21516,
+          "maximal_blocks": 1401,
+          "maximum_candidate_degree": 21294,
+          "minimum_candidate_degree": 118,
+          "open_sum": 21516,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "native exact parent groups",
+          "sha256": {
+            "blocks": "f40bf3589f6c6d01b05f439c454fecae3d2d42dd3808c0899fb7e3b184852362",
+            "degrees": "194d52a41b9a34937af271dc4724693d3e31964b90ed042952a96648435e4adf",
+            "parents": "3d55fd55674211827f8d307aaa236b8e92f7e38c964b31a914bc1f0952e5a6b4"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-02",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 9,
+      "later_birth_data_without_roster": {
+        "age": 10,
+        "births": 1061953,
+        "kind": "exact births only"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 74,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "source_sizes": [
+        5,
+        5,
+        3,
+        6,
+        7,
+        6
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 8,
+          "components": [
+            5
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 24,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 5,
+          "maximal_blocks": 4,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 3,
+          "open_sum": 16,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 10,
+          "candidate_pairs": 18,
+          "components": [
+            10
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 56,
+          "junctions_to_date": 16,
+          "largest_block": 4,
+          "live": 10,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 7,
+          "minimum_candidate_degree": 2,
+          "open_sum": 32,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 15,
+          "candidate_pairs": 43,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 113,
+          "junctions_to_date": 31,
+          "largest_block": 6,
+          "live": 15,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 11,
+          "minimum_candidate_degree": 3,
+          "open_sum": 57,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 24,
+          "candidate_pairs": 93,
+          "components": [
+            24
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 203,
+          "junctions_to_date": 55,
+          "largest_block": 6,
+          "live": 24,
+          "maximal_blocks": 15,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 2,
+          "open_sum": 90,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 31,
+          "candidate_pairs": 145,
+          "components": [
+            31
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 326,
+          "junctions_to_date": 86,
+          "largest_block": 5,
+          "live": 31,
+          "maximal_blocks": 23,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 3,
+          "open_sum": 123,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 37,
+          "candidate_pairs": 207,
+          "components": [
+            37
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 489,
+          "junctions_to_date": 123,
+          "largest_block": 7,
+          "live": 37,
+          "maximal_blocks": 29,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 5,
+          "open_sum": 163,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 38,
+          "candidate_pairs": 285,
+          "components": [
+            38
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 799,
+          "junctions_to_date": 161,
+          "largest_block": 9,
+          "live": 38,
+          "maximal_blocks": 36,
+          "maximum_candidate_degree": 22,
+          "minimum_candidate_degree": 8,
+          "open_sum": 310,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 52,
+          "candidate_pairs": 800,
+          "components": [
+            52
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 2422,
+          "junctions_to_date": 213,
+          "largest_block": 15,
+          "live": 52,
+          "maximal_blocks": 38,
+          "maximum_candidate_degree": 39,
+          "minimum_candidate_degree": 5,
+          "open_sum": 1623,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 8,
+          "births": 158,
+          "candidate_pairs": 9278,
+          "components": [
+            158
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 4153160,
+          "junctions_to_date": 371,
+          "largest_block": 54,
+          "live": 158,
+          "maximal_blocks": 50,
+          "maximum_candidate_degree": 151,
+          "minimum_candidate_degree": 40,
+          "open_sum": 4150738,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "fd46872be112dedc33c80ecd4561e3293121e23fd41b80e398674c623ad2ee77",
+            "degrees": "b750ad9333e9540b8c7d758c93f8399f96fcaab5c1e3203c43bf8665f3f68b45",
+            "opens": "db2ac32b45ce6c8ba8f84088714e46a356fe1142e9d5e1ccd9d896c9fb176234",
+            "parents": "6b53dc28db91e54672d2bf8c3f1a2e6cf18e78fb5c18d2c06542e4a41afeeea5"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 9,
+          "births": 102871,
+          "candidate_pairs": 5289572571,
+          "components": [
+            102871
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 4256031,
+          "junctions_to_date": 103242,
+          "largest_block": 102475,
+          "live": 102871,
+          "maximal_blocks": 99,
+          "maximum_candidate_degree": 102870,
+          "minimum_candidate_degree": 78097,
+          "open_sum": 102871,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "78923ea476c67b7ec77b98f06b093b08f79151d4baa1589b6123aad0e0646b49",
+            "degrees": "d78b1ad002b845c8135c36c5699c79747a0ebadd46898c19ce2ed246a34c0e31",
+            "parents": "48bb84600d36055832e675400ca427dbb23b79d9992f843227fb36f7b9d707b8"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-03",
+      "classification": "continuing",
+      "first_closure": null,
+      "initial_two_open_offshoots": [
+        {
+          "all_multi_parent_groups": [
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "demand": 1,
+          "junction": 4,
+          "neighbors": [
+            2,
+            3
+          ],
+          "offshoots": 1,
+          "open": 2,
+          "physical_start_groups": [
+            [
+              2,
+              3,
+              4
+            ]
+          ],
+          "physical_start_junction": 4
+        }
+      ],
+      "last_archived_age": 8,
+      "later_birth_data_without_roster": {
+        "age": 9,
+        "births": 2174695764693287,
+        "kind": "deterministic lower bound"
+      },
+      "no_future_offshoot_at_last_open_archive": false,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 163,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "source_sizes": [
+        5,
+        5,
+        7,
+        6,
+        4,
+        5
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 10,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 25,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 6,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 2,
+          "open_sum": 18,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 10,
+          "candidate_pairs": 18,
+          "components": [
+            10
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 58,
+          "junctions_to_date": 16,
+          "largest_block": 4,
+          "live": 10,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 6,
+          "minimum_candidate_degree": 1,
+          "open_sum": 33,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 8,
+              "neighbors": [
+                {
+                  "junction": 2,
+                  "parents": [
+                    2,
+                    3,
+                    4
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 4
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 16,
+          "candidate_pairs": 45,
+          "components": [
+            16
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 120,
+          "junctions_to_date": 32,
+          "largest_block": 5,
+          "live": 16,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 10,
+          "minimum_candidate_degree": 1,
+          "open_sum": 62,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 15,
+              "neighbors": [
+                {
+                  "junction": 11,
+                  "parents": [
+                    2,
+                    8
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 8
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 27,
+          "candidate_pairs": 98,
+          "components": [
+            27
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 227,
+          "junctions_to_date": 59,
+          "largest_block": 5,
+          "live": 27,
+          "maximal_blocks": 16,
+          "maximum_candidate_degree": 12,
+          "minimum_candidate_degree": 1,
+          "open_sum": 107,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 26,
+              "neighbors": [
+                {
+                  "junction": 24,
+                  "parents": [
+                    11,
+                    15
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 15
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 40,
+          "candidate_pairs": 177,
+          "components": [
+            40
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 411,
+          "junctions_to_date": 99,
+          "largest_block": 7,
+          "live": 40,
+          "maximal_blocks": 27,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 1,
+          "open_sum": 184,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 39,
+              "neighbors": [
+                {
+                  "junction": 38,
+                  "parents": [
+                    24,
+                    26
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 26
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 61,
+          "candidate_pairs": 364,
+          "components": [
+            61
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 838,
+          "junctions_to_date": 160,
+          "largest_block": 9,
+          "live": 61,
+          "maximal_blocks": 39,
+          "maximum_candidate_degree": 23,
+          "minimum_candidate_degree": 1,
+          "open_sum": 427,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 60,
+              "neighbors": [
+                {
+                  "junction": 59,
+                  "parents": [
+                    38,
+                    39
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 39
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 110,
+          "candidate_pairs": 1409,
+          "components": [
+            110
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 3735,
+          "junctions_to_date": 270,
+          "largest_block": 26,
+          "live": 110,
+          "maximal_blocks": 61,
+          "maximum_candidate_degree": 57,
+          "minimum_candidate_degree": 1,
+          "open_sum": 2897,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 109,
+              "neighbors": [
+                {
+                  "junction": 108,
+                  "parents": [
+                    59,
+                    60
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 60
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 386,
+          "candidate_pairs": 27027,
+          "components": [
+            386
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 996899,
+          "junctions_to_date": 656,
+          "largest_block": 121,
+          "live": 386,
+          "maximal_blocks": 105,
+          "maximum_candidate_degree": 268,
+          "minimum_candidate_degree": 1,
+          "open_sum": 993164,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 385,
+              "neighbors": [
+                {
+                  "junction": 384,
+                  "parents": [
+                    108,
+                    109
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 109
+            }
+          ],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "0052375a600906e7f104d3f35ce4128939264e1019f81a5049b752b056105f92",
+            "degrees": "2c8e02a45f64002e4838c6f01911aabb03e8ceff16f249269fab2990ec0c9ceb",
+            "opens": "9305e83f4996eb80e3f692b96c6b6b4f0c41f536e3c091102476d5941bb2a975",
+            "parents": "5678181506c301403260322e97f3f84fadbc6cd867a84f7bd3b5d52ac81df34c"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 8,
+          "births": 28065,
+          "candidate_pairs": 334867154,
+          "components": [
+            28065
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 1024965,
+          "junctions_to_date": 28721,
+          "largest_block": 17207,
+          "live": 28065,
+          "maximal_blocks": 365,
+          "maximum_candidate_degree": 27635,
+          "minimum_candidate_degree": 1,
+          "open_sum": 28066,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 28064,
+              "neighbors": [
+                {
+                  "junction": 28063,
+                  "parents": [
+                    384,
+                    385
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 385
+            }
+          ],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "049ad2aa85d55619a9e9c97dfd7ed33f6bb0d929d665af56f071b13f8fbd1102",
+            "degrees": "80c7f50e7b9e7134d49e2112b83bef9866a34dff017b48b0b78adf1b5222b0f5",
+            "parents": "d5b7e087b146a228b59b4fb352d40bf8ed5e8d21c9a98562f92ca49c0f461df7"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-04",
+      "classification": "closing",
+      "first_closure": [
+        8,
+        {
+          "each_open": 780,
+          "exact_next_births": 304590,
+          "first_zero_birth_age": 789,
+          "live": 781,
+          "terminal_birth_age": 788,
+          "type": "single_full_block"
+        }
+      ],
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 9,
+      "later_birth_data_without_roster": null,
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 110,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "source_sizes": [
+        6,
+        6,
+        4,
+        7,
+        6,
+        3
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 8,
+          "components": [
+            5
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 24,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 5,
+          "maximal_blocks": 4,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 3,
+          "open_sum": 16,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 10,
+          "candidate_pairs": 19,
+          "components": [
+            10
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 58,
+          "junctions_to_date": 16,
+          "largest_block": 4,
+          "live": 10,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 2,
+          "open_sum": 34,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "9ecdf09759abfd368170565a89b52cc9e2430e4b4733465ea24c1604e711d518",
+            "degrees": "0305d1ac35e550730dc13da7d025f8d0cb09e9033468dc3c845fee2881916559",
+            "opens": "51201ee5869e816095cccfb08d4400e42b1ee5dcb42ccd59788b91ad28b3559a"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 2,
+          "births": 16,
+          "candidate_pairs": 51,
+          "components": [
+            16
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 122,
+          "junctions_to_date": 32,
+          "largest_block": 7,
+          "live": 16,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 12,
+          "minimum_candidate_degree": 2,
+          "open_sum": 64,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "7460a9991226fc0e9db176b7df8518eeb7f7b60461f5acc5ddef7a123f38b1fa",
+            "degrees": "e88cc082a82a04a7000d236e007a1844575ae048684acf39cf27eb46e27875d0",
+            "opens": "eb14303e8016eacafec3fd7234d528a4fa3688c5afb5fe689f9703dc418b1713"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 3,
+          "births": 26,
+          "candidate_pairs": 117,
+          "components": [
+            26
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 243,
+          "junctions_to_date": 58,
+          "largest_block": 6,
+          "live": 26,
+          "maximal_blocks": 15,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 4,
+          "open_sum": 121,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "577643776e50ed14157961cc3fcd5a4ebde3e2d4410bd4f67b6fb25b53943b44",
+            "degrees": "44a97ed9164fb1cb81211f0ac9f09a0336e3322e3c852265a02fd53db7a5a594",
+            "opens": "4671594d42c0e6054c59789ecf61dd9a19eff166c3996299971b5e4cfa4fc8a4"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 4,
+          "births": 37,
+          "candidate_pairs": 240,
+          "components": [
+            37
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 556,
+          "junctions_to_date": 95,
+          "largest_block": 9,
+          "live": 37,
+          "maximal_blocks": 26,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 3,
+          "open_sum": 313,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "b9059fb30e029fd139c53a23e86338353e142a31649f9bdab68b5cf4ea6e4b5c",
+            "degrees": "ba966096424ce768d90b08756a1b45f0a6c9f3241f6b8900f0a23f31e44171d2",
+            "opens": "12d2622c892280eca8b832cab0252166d201cceac983e4e824488b8b1a3bdb48"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 5,
+          "births": 63,
+          "candidate_pairs": 1054,
+          "components": [
+            63
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1982,
+          "junctions_to_date": 158,
+          "largest_block": 28,
+          "live": 63,
+          "maximal_blocks": 35,
+          "maximum_candidate_degree": 47,
+          "minimum_candidate_degree": 8,
+          "open_sum": 1426,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "507588bb692b0ea968ee2566423062bd7746cb7d2079329ace5b048092e94ae6",
+            "degrees": "0c2e1df0225691310936ea0a37c4d9cde90475ee14fdfacd3779c74a001b7728",
+            "opens": "79e3a8df8470a21b54e2a999862e245c0f1c2df196905e4a16a34b7618a1f4db"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 6,
+          "births": 127,
+          "candidate_pairs": 6728,
+          "components": [
+            127
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 50747,
+          "junctions_to_date": 285,
+          "largest_block": 54,
+          "live": 127,
+          "maximal_blocks": 55,
+          "maximum_candidate_degree": 121,
+          "minimum_candidate_degree": 5,
+          "open_sum": 48765,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "efe03353cc9736477b3017f43e43e8c608b4f69c2ecdbbe0a819c8c7964e1705",
+            "degrees": "8a0f69fa512c7145416b3014a3a296ac957694c7895052987db4f276c3389d10",
+            "opens": "30478b232e94f6ae56b38de853d3643c2391ccffea76f68b4d310640df9d9d92"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 7,
+          "births": 1015,
+          "candidate_pairs": 510719,
+          "components": [
+            1015
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 595510,
+          "junctions_to_date": 1300,
+          "largest_block": 886,
+          "live": 1015,
+          "maximal_blocks": 43,
+          "maximum_candidate_degree": 1014,
+          "minimum_candidate_degree": 544,
+          "open_sum": 544763,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "7de0d8f40b5810913d18cb238955342f63169484152757d4624ca0b34f33dd67",
+            "degrees": "b881ef0cf8e60c13665036168337100cda661889114cdbcd0369745c2c13f3f2",
+            "opens": "0b5e7fcb0e321f6e22e4beb21bfb8a89efd17350a97bb5f14000108a1adc35f6"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 8,
+          "births": 781,
+          "candidate_pairs": 304590,
+          "components": [
+            781
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1204690,
+          "junctions_to_date": 2081,
+          "largest_block": 781,
+          "live": 781,
+          "maximal_blocks": 1,
+          "maximum_candidate_degree": 780,
+          "minimum_candidate_degree": 780,
+          "open_sum": 609180,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "independent control replay",
+          "sha256": {
+            "blocks": "60e146088577c40c496e02188ba37493ac245f554cf8dace9848e5bf50327396",
+            "degrees": "54ad4363b2d2c7224a77b9d2db1dc8b5f252aff63fbf981d67613dea4449b583",
+            "opens": "54ad4363b2d2c7224a77b9d2db1dc8b5f252aff63fbf981d67613dea4449b583"
+          },
+          "thin_junction_check": "excluded by finite closing certificate"
+        },
+        {
+          "age": 9,
+          "births": 304590,
+          "candidate_pairs": 237275610,
+          "components": [
+            304590
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 238480300,
+          "junctions_to_date": 306671,
+          "largest_block": 780,
+          "live": 304590,
+          "maximal_blocks": 781,
+          "maximum_candidate_degree": 1558,
+          "minimum_candidate_degree": 1558,
+          "open_sum": 237275610,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "literal pair-family through the certified single block",
+          "thin_junction_check": "explicit pair-family with two parents per child"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-05",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 9,
+      "later_birth_data_without_roster": {
+        "age": 10,
+        "births": 1061953,
+        "kind": "exact births only"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 63,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "source_sizes": [
+        6,
+        7,
+        6,
+        5,
+        5,
+        3
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 8,
+          "components": [
+            5
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 24,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 5,
+          "maximal_blocks": 4,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 3,
+          "open_sum": 16,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 10,
+          "candidate_pairs": 18,
+          "components": [
+            10
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 56,
+          "junctions_to_date": 16,
+          "largest_block": 4,
+          "live": 10,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 7,
+          "minimum_candidate_degree": 2,
+          "open_sum": 32,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 15,
+          "candidate_pairs": 43,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 113,
+          "junctions_to_date": 31,
+          "largest_block": 6,
+          "live": 15,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 11,
+          "minimum_candidate_degree": 3,
+          "open_sum": 57,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 24,
+          "candidate_pairs": 93,
+          "components": [
+            24
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 203,
+          "junctions_to_date": 55,
+          "largest_block": 6,
+          "live": 24,
+          "maximal_blocks": 15,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 2,
+          "open_sum": 90,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 31,
+          "candidate_pairs": 145,
+          "components": [
+            31
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 326,
+          "junctions_to_date": 86,
+          "largest_block": 5,
+          "live": 31,
+          "maximal_blocks": 23,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 3,
+          "open_sum": 123,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 37,
+          "candidate_pairs": 207,
+          "components": [
+            37
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 489,
+          "junctions_to_date": 123,
+          "largest_block": 7,
+          "live": 37,
+          "maximal_blocks": 29,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 5,
+          "open_sum": 163,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 38,
+          "candidate_pairs": 285,
+          "components": [
+            38
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 799,
+          "junctions_to_date": 161,
+          "largest_block": 9,
+          "live": 38,
+          "maximal_blocks": 36,
+          "maximum_candidate_degree": 22,
+          "minimum_candidate_degree": 8,
+          "open_sum": 310,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 52,
+          "candidate_pairs": 800,
+          "components": [
+            52
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 2422,
+          "junctions_to_date": 213,
+          "largest_block": 15,
+          "live": 52,
+          "maximal_blocks": 38,
+          "maximum_candidate_degree": 39,
+          "minimum_candidate_degree": 5,
+          "open_sum": 1623,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 8,
+          "births": 158,
+          "candidate_pairs": 9278,
+          "components": [
+            158
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 4153160,
+          "junctions_to_date": 371,
+          "largest_block": 54,
+          "live": 158,
+          "maximal_blocks": 50,
+          "maximum_candidate_degree": 151,
+          "minimum_candidate_degree": 40,
+          "open_sum": 4150738,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "0e89b38504107e03134b8f5d3ebd3428f552ec1c6c3a3bcdf7d483f6046aedf7",
+            "degrees": "7021d3234647964987cea8f9f12c3e5def7fc20d75d1c1444df2bd390e307ce1",
+            "opens": "939f6c84a2972cc5dde3849233293c0728b8acebfd6048f03c98de52c2280085",
+            "parents": "b9e97cd38838935af306ae088c9f78928a032db0fd4893137f913f3829a5c299"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 9,
+          "births": 102871,
+          "candidate_pairs": 5289572571,
+          "components": [
+            102871
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 4256031,
+          "junctions_to_date": 103242,
+          "largest_block": 102475,
+          "live": 102871,
+          "maximal_blocks": 99,
+          "maximum_candidate_degree": 102870,
+          "minimum_candidate_degree": 78097,
+          "open_sum": 102871,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "b3981906baeb07cc51814a568e6cf9893bee563a5b80bff656ed808509095269",
+            "degrees": "1662e951a0059b0553788b03788be88cc3e5807c1d0fa1330b1dfb1872de9a77",
+            "parents": "833642edcd92f904d912474480634700608a53337aa7b4384ba6522dac874387"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-06",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 7,
+      "later_birth_data_without_roster": {
+        "age": 8,
+        "births": 7899,
+        "kind": "deterministic lower bound"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 150,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "source_sizes": [
+        7,
+        6,
+        5,
+        6,
+        6,
+        3
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 10,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 26,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 6,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 2,
+          "open_sum": 19,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 11,
+          "candidate_pairs": 24,
+          "components": [
+            11
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 70,
+          "junctions_to_date": 17,
+          "largest_block": 5,
+          "live": 11,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 9,
+          "minimum_candidate_degree": 2,
+          "open_sum": 44,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 21,
+          "candidate_pairs": 79,
+          "components": [
+            21
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 166,
+          "junctions_to_date": 38,
+          "largest_block": 8,
+          "live": 21,
+          "maximal_blocks": 11,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 3,
+          "open_sum": 96,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 38,
+          "candidate_pairs": 201,
+          "components": [
+            38
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 366,
+          "junctions_to_date": 76,
+          "largest_block": 7,
+          "live": 38,
+          "maximal_blocks": 21,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 3,
+          "open_sum": 200,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 60,
+          "candidate_pairs": 451,
+          "components": [
+            60
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 962,
+          "junctions_to_date": 136,
+          "largest_block": 10,
+          "live": 60,
+          "maximal_blocks": 38,
+          "maximum_candidate_degree": 25,
+          "minimum_candidate_degree": 4,
+          "open_sum": 596,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 121,
+          "candidate_pairs": 2806,
+          "components": [
+            121
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 5303,
+          "junctions_to_date": 257,
+          "largest_block": 48,
+          "live": 121,
+          "maximal_blocks": 60,
+          "maximum_candidate_degree": 75,
+          "minimum_candidate_degree": 4,
+          "open_sum": 4341,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 371,
+          "candidate_pairs": 34453,
+          "components": [
+            371
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 659003,
+          "junctions_to_date": 628,
+          "largest_block": 94,
+          "live": 371,
+          "maximal_blocks": 120,
+          "maximum_candidate_degree": 320,
+          "minimum_candidate_degree": 3,
+          "open_sum": 653700,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "2dd03eedf4e8128f4479d8ac16e85fd2c562f7cb86828f938e6437276b571b62",
+            "degrees": "e756382c70c41cdef77e0cc7208d04392137e1a5dea6c8670da31efde847333f",
+            "opens": "94b8dd3fabb0307f43c0caac8faefffa8f7fa806a87a116af122133a37347461",
+            "parents": "3be3e32a0c017cf963c3e1d372333af693081117f6191e32aa75c494a5ef5468"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 12004,
+          "candidate_pairs": 63414256,
+          "components": [
+            12004
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 671007,
+          "junctions_to_date": 12632,
+          "largest_block": 8028,
+          "live": 12004,
+          "maximal_blocks": 293,
+          "maximum_candidate_degree": 11912,
+          "minimum_candidate_degree": 6,
+          "open_sum": 12004,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "f866841cddd2a8a869244971e9a0b577ca32504762812f9f6329a577df148bbe",
+            "degrees": "a6b3c3c97561647bd4c1e1b59b95908c1f6cb748ae10dcd9d54a2d3c062cca03",
+            "parents": "dcb534ac5368d0367592992323f82d958c328a8953cd15254545af9c95b08840"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-07",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 7,
+      "later_birth_data_without_roster": null,
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 37,
+        "stratum": "cap-7-06"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "source_sizes": [
+        7,
+        5,
+        6,
+        6,
+        7,
+        3
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 10,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 27,
+          "junctions_to_date": 6,
+          "largest_block": 3,
+          "live": 6,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 2,
+          "open_sum": 20,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 12,
+          "candidate_pairs": 26,
+          "components": [
+            12
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 75,
+          "junctions_to_date": 18,
+          "largest_block": 4,
+          "live": 12,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 2,
+          "open_sum": 48,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 23,
+          "candidate_pairs": 86,
+          "components": [
+            23
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 188,
+          "junctions_to_date": 41,
+          "largest_block": 7,
+          "live": 23,
+          "maximal_blocks": 12,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 4,
+          "open_sum": 113,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 47,
+          "candidate_pairs": 248,
+          "components": [
+            47
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 456,
+          "junctions_to_date": 88,
+          "largest_block": 8,
+          "live": 47,
+          "maximal_blocks": 23,
+          "maximum_candidate_degree": 21,
+          "minimum_candidate_degree": 4,
+          "open_sum": 268,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 88,
+          "candidate_pairs": 721,
+          "components": [
+            88
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1410,
+          "junctions_to_date": 176,
+          "largest_block": 13,
+          "live": 88,
+          "maximal_blocks": 47,
+          "maximum_candidate_degree": 31,
+          "minimum_candidate_degree": 6,
+          "open_sum": 954,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 211,
+          "candidate_pairs": 5432,
+          "components": [
+            211
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 8451,
+          "junctions_to_date": 387,
+          "largest_block": 40,
+          "live": 211,
+          "maximal_blocks": 88,
+          "maximum_candidate_degree": 117,
+          "minimum_candidate_degree": 6,
+          "open_sum": 7041,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 634,
+          "candidate_pairs": 60264,
+          "components": [
+            634
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1948241,
+          "junctions_to_date": 1021,
+          "largest_block": 119,
+          "live": 634,
+          "maximal_blocks": 211,
+          "maximum_candidate_degree": 425,
+          "minimum_candidate_degree": 5,
+          "open_sum": 1939790,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "ada111f0f7521d3034387bad503cb9a136e57f638085a0e8eb2c8e87b9154660",
+            "degrees": "653ed04fe4ebff041ad5839c004622b3390fc4b014b9afd20f36db34eebe6951",
+            "opens": "f6c6b410849f2a8a9b9b7e1658e22886b3a04aa47d21bfbbd0bf39a932e6e8ae",
+            "parents": "854df79b2ca02176eea63cca7d2099165b2b9563b5087e07fa01135fb90ccf9b"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 31735,
+          "candidate_pairs": 374583084,
+          "components": [
+            31735
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 1979976,
+          "junctions_to_date": 32756,
+          "largest_block": 22693,
+          "live": 31735,
+          "maximal_blocks": 587,
+          "maximum_candidate_degree": 29081,
+          "minimum_candidate_degree": 8,
+          "open_sum": 31735,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "7f4c04308eb13a4cd07be05d2f3f4df45ef1489923ef5bde83b57670472f04ef",
+            "degrees": "755266cac0b87881dfd75985c50924d59ba69557404da435c4837023701ba1bf",
+            "parents": "eb1024e842f5880dcee6f08b0aebd9385cbb94c55a6e8ce5b0e7f4858070d27f"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": false,
+      "case": "start-08",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 9,
+      "later_birth_data_without_roster": {
+        "age": 10,
+        "births": 1061953,
+        "kind": "exact births only"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 107,
+        "stratum": "cap-7-07"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "source_sizes": [
+        5,
+        3,
+        5,
+        5,
+        6,
+        7,
+        5
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 8,
+          "components": [
+            5
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 26,
+          "junctions_to_date": 7,
+          "largest_block": 3,
+          "live": 5,
+          "maximal_blocks": 4,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 3,
+          "open_sum": 16,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 10,
+          "candidate_pairs": 18,
+          "components": [
+            10
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 58,
+          "junctions_to_date": 17,
+          "largest_block": 4,
+          "live": 10,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 7,
+          "minimum_candidate_degree": 2,
+          "open_sum": 32,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 15,
+          "candidate_pairs": 43,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 115,
+          "junctions_to_date": 32,
+          "largest_block": 6,
+          "live": 15,
+          "maximal_blocks": 10,
+          "maximum_candidate_degree": 11,
+          "minimum_candidate_degree": 3,
+          "open_sum": 57,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 24,
+          "candidate_pairs": 93,
+          "components": [
+            24
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 205,
+          "junctions_to_date": 56,
+          "largest_block": 6,
+          "live": 24,
+          "maximal_blocks": 15,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 2,
+          "open_sum": 90,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 31,
+          "candidate_pairs": 145,
+          "components": [
+            31
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 328,
+          "junctions_to_date": 87,
+          "largest_block": 5,
+          "live": 31,
+          "maximal_blocks": 23,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 3,
+          "open_sum": 123,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 37,
+          "candidate_pairs": 207,
+          "components": [
+            37
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 491,
+          "junctions_to_date": 124,
+          "largest_block": 7,
+          "live": 37,
+          "maximal_blocks": 29,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 5,
+          "open_sum": 163,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 38,
+          "candidate_pairs": 285,
+          "components": [
+            38
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 801,
+          "junctions_to_date": 162,
+          "largest_block": 9,
+          "live": 38,
+          "maximal_blocks": 36,
+          "maximum_candidate_degree": 22,
+          "minimum_candidate_degree": 8,
+          "open_sum": 310,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 52,
+          "candidate_pairs": 800,
+          "components": [
+            52
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 2424,
+          "junctions_to_date": 214,
+          "largest_block": 15,
+          "live": 52,
+          "maximal_blocks": 38,
+          "maximum_candidate_degree": 39,
+          "minimum_candidate_degree": 5,
+          "open_sum": 1623,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 8,
+          "births": 158,
+          "candidate_pairs": 9278,
+          "components": [
+            158
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 4153162,
+          "junctions_to_date": 372,
+          "largest_block": 54,
+          "live": 158,
+          "maximal_blocks": 50,
+          "maximum_candidate_degree": 151,
+          "minimum_candidate_degree": 40,
+          "open_sum": 4150738,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "4a0826316ff7d860c31dc64e67dbcd0a1394ca6958480d9eb9c37ff48c55d7b1",
+            "degrees": "d7da2b759de5fa7ca990fca92dbd8d8009f6e638531e6672c4be9492e9c2df54",
+            "opens": "2eba32a87ae4ec12dafc4f2baadb2fcd8e1d8815e7d4b054803fed7cbfaf3fa2",
+            "parents": "b53b20dc1e08a0e3ec0ca97dcf94f66c8a5b3b785d96b31dec25be84ff9202ef"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 9,
+          "births": 102871,
+          "candidate_pairs": 5289572571,
+          "components": [
+            102871
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 4256033,
+          "junctions_to_date": 103243,
+          "largest_block": 102475,
+          "live": 102871,
+          "maximal_blocks": 99,
+          "maximum_candidate_degree": 102870,
+          "minimum_candidate_degree": 78097,
+          "open_sum": 102871,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "9e57c765623316d0f63ad7ed5295a7877c90ae7908e9bf933fb093e84e55f7d0",
+            "degrees": "4cafda41923a9e860b057877c660016c9e4ecfa2c5c844a5a4c44ce3cb604ca4",
+            "parents": "07689c8713fa4ea0df859daed4a9a57c60dade594cfc80858447c71de90daa49"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "time",
+        "WALL-READ": "time"
+      },
+      "canonical_source": true,
+      "case": "start-09",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 6,
+      "later_birth_data_without_roster": {
+        "age": 7,
+        "births": 6210264,
+        "kind": "exact births only"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 25,
+        "stratum": "cap-7-07"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "source_sizes": [
+        4,
+        6,
+        7,
+        3,
+        7,
+        6,
+        7
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 11,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 31,
+          "junctions_to_date": 7,
+          "largest_block": 3,
+          "live": 6,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 3,
+          "open_sum": 22,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 14,
+          "candidate_pairs": 32,
+          "components": [
+            14
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 90,
+          "junctions_to_date": 21,
+          "largest_block": 5,
+          "live": 14,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 10,
+          "minimum_candidate_degree": 2,
+          "open_sum": 59,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 28,
+          "candidate_pairs": 120,
+          "components": [
+            28
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 242,
+          "junctions_to_date": 49,
+          "largest_block": 9,
+          "live": 28,
+          "maximal_blocks": 14,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 4,
+          "open_sum": 152,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 62,
+          "candidate_pairs": 407,
+          "components": [
+            62
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 689,
+          "junctions_to_date": 111,
+          "largest_block": 10,
+          "live": 62,
+          "maximal_blocks": 28,
+          "maximum_candidate_degree": 26,
+          "minimum_candidate_degree": 4,
+          "open_sum": 447,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 136,
+          "candidate_pairs": 1660,
+          "components": [
+            136
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 3886,
+          "junctions_to_date": 247,
+          "largest_block": 19,
+          "live": 136,
+          "maximal_blocks": 62,
+          "maximum_candidate_degree": 55,
+          "minimum_candidate_degree": 3,
+          "open_sum": 3197,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 485,
+          "candidate_pairs": 41395,
+          "components": [
+            485
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 189505,
+          "junctions_to_date": 732,
+          "largest_block": 165,
+          "live": 485,
+          "maximal_blocks": 135,
+          "maximum_candidate_degree": 327,
+          "minimum_candidate_degree": 4,
+          "open_sum": 185619,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "b42e19b652c4c8156b5ba2b4f05cee5e980d1a115d606632f1d30bfcc184ca6a",
+            "degrees": "4570b2243c706c00167e0abdac470824275b00395c5883185bb487a2521b6dfd",
+            "opens": "f3d81b64d452549098391d38b06fc61070654898a67a890c0b009b9339227d8b",
+            "parents": "59a2ceb22b3a601ca05b184a3a6261d3d2229a92471da360bbe40f943e90672e"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 4652,
+          "candidate_pairs": 6575463,
+          "components": [
+            4652
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 194157,
+          "junctions_to_date": 5384,
+          "largest_block": 2420,
+          "live": 4652,
+          "maximal_blocks": 478,
+          "maximum_candidate_degree": 4243,
+          "minimum_candidate_degree": 10,
+          "open_sum": 4652,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "96982b871a44c3b96b18b5732053ebd97a9e0f5f3a633d9524ceba4279044bfa",
+            "degrees": "d9dbe862b4326520728d0bd00ab7f11b4de07a348ab28a5ea7774313e937ca75",
+            "parents": "eb3568ed2f019f9f5275ba8409bad9dfa2c31b01fd2bc0ff6a62d4a2ac5ec01f"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "time",
+        "WALL-READ": "time"
+      },
+      "canonical_source": true,
+      "case": "start-10",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 7,
+      "later_birth_data_without_roster": {
+        "age": 8,
+        "births": 761879,
+        "kind": "exact births only"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 170,
+        "stratum": "cap-7-07"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "source_sizes": [
+        5,
+        7,
+        7,
+        3,
+        7,
+        7,
+        4
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 11,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 31,
+          "junctions_to_date": 7,
+          "largest_block": 4,
+          "live": 6,
+          "maximal_blocks": 4,
+          "maximum_candidate_degree": 5,
+          "minimum_candidate_degree": 3,
+          "open_sum": 22,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 13,
+          "candidate_pairs": 32,
+          "components": [
+            13
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 82,
+          "junctions_to_date": 20,
+          "largest_block": 5,
+          "live": 13,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 9,
+          "minimum_candidate_degree": 2,
+          "open_sum": 51,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 23,
+          "candidate_pairs": 86,
+          "components": [
+            23
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 181,
+          "junctions_to_date": 43,
+          "largest_block": 7,
+          "live": 23,
+          "maximal_blocks": 13,
+          "maximum_candidate_degree": 13,
+          "minimum_candidate_degree": 2,
+          "open_sum": 99,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 37,
+          "candidate_pairs": 184,
+          "components": [
+            37
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 365,
+          "junctions_to_date": 80,
+          "largest_block": 7,
+          "live": 37,
+          "maximal_blocks": 22,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 4,
+          "open_sum": 184,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 53,
+          "candidate_pairs": 384,
+          "components": [
+            53
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 884,
+          "junctions_to_date": 133,
+          "largest_block": 12,
+          "live": 53,
+          "maximal_blocks": 37,
+          "maximum_candidate_degree": 25,
+          "minimum_candidate_degree": 5,
+          "open_sum": 519,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 97,
+          "candidate_pairs": 2068,
+          "components": [
+            97
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 6268,
+          "junctions_to_date": 230,
+          "largest_block": 38,
+          "live": 97,
+          "maximal_blocks": 53,
+          "maximum_candidate_degree": 66,
+          "minimum_candidate_degree": 3,
+          "open_sum": 5384,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 345,
+          "candidate_pairs": 45468,
+          "components": [
+            345
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 503233,
+          "junctions_to_date": 575,
+          "largest_block": 184,
+          "live": 345,
+          "maximal_blocks": 92,
+          "maximum_candidate_degree": 325,
+          "minimum_candidate_degree": 4,
+          "open_sum": 496965,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "de7457cd3c99ea0bec927bdde212ee0c6267e17d9561c04877b78b6eddd67b6d",
+            "degrees": "2fb9c6a684ea6c912bb9b05c6e7db3b195b948d3f48151524c88a3f010f8b9f0",
+            "opens": "1d9075f018fde08f2403f1d1a087911d99924879d76b056fdabd00bf262af399",
+            "parents": "ee1a67509a8cebbf2d2df1609b5ccd8ee70ec2d3f330f8fec3d3b32af767701f"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 4157,
+          "candidate_pairs": 8172799,
+          "components": [
+            4157
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 507390,
+          "junctions_to_date": 4732,
+          "largest_block": 3637,
+          "live": 4157,
+          "maximal_blocks": 146,
+          "maximum_candidate_degree": 4145,
+          "minimum_candidate_degree": 5,
+          "open_sum": 4157,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "11a61c058ba8cc7bb10542fb7d818b02c98d572744c0b7396db34c1d1ee8553e",
+            "degrees": "3599416192f89ea58a89197631e55efccdfc0dc76649d17e696c8315e053fcb0",
+            "parents": "6d9dd2d60381cb94dde1ccdec6ebd4ad407586b2b51bac06cdcaca743cb6f05c"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "time",
+        "WALL-READ": "time"
+      },
+      "canonical_source": true,
+      "case": "start-11",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 7,
+      "later_birth_data_without_roster": {
+        "age": 8,
+        "births": 58894,
+        "kind": "exact births only"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 74,
+        "stratum": "cap-7-07"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "source_sizes": [
+        7,
+        7,
+        6,
+        3,
+        5,
+        7,
+        5
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 11,
+          "components": [
+            6
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 31,
+          "junctions_to_date": 7,
+          "largest_block": 4,
+          "live": 6,
+          "maximal_blocks": 4,
+          "maximum_candidate_degree": 5,
+          "minimum_candidate_degree": 3,
+          "open_sum": 22,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 13,
+          "candidate_pairs": 33,
+          "components": [
+            13
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 84,
+          "junctions_to_date": 20,
+          "largest_block": 5,
+          "live": 13,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 9,
+          "minimum_candidate_degree": 2,
+          "open_sum": 53,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 24,
+          "candidate_pairs": 93,
+          "components": [
+            24
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 188,
+          "junctions_to_date": 44,
+          "largest_block": 7,
+          "live": 24,
+          "maximal_blocks": 13,
+          "maximum_candidate_degree": 14,
+          "minimum_candidate_degree": 2,
+          "open_sum": 104,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 38,
+          "candidate_pairs": 194,
+          "components": [
+            38
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 377,
+          "junctions_to_date": 82,
+          "largest_block": 7,
+          "live": 38,
+          "maximal_blocks": 23,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 6,
+          "open_sum": 189,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 54,
+          "candidate_pairs": 392,
+          "components": [
+            54
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 906,
+          "junctions_to_date": 136,
+          "largest_block": 12,
+          "live": 54,
+          "maximal_blocks": 38,
+          "maximum_candidate_degree": 25,
+          "minimum_candidate_degree": 6,
+          "open_sum": 529,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 98,
+          "candidate_pairs": 2144,
+          "components": [
+            98
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 6914,
+          "junctions_to_date": 234,
+          "largest_block": 36,
+          "live": 98,
+          "maximal_blocks": 54,
+          "maximum_candidate_degree": 67,
+          "minimum_candidate_degree": 4,
+          "open_sum": 6008,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 355,
+          "candidate_pairs": 47088,
+          "components": [
+            355
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 452669,
+          "junctions_to_date": 589,
+          "largest_block": 205,
+          "live": 355,
+          "maximal_blocks": 93,
+          "maximum_candidate_degree": 334,
+          "minimum_candidate_degree": 4,
+          "open_sum": 445755,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "30209f31e3f75c7b3420daa2c8f874d40dd37f96f4fc9c3d52a3187b534bd8e7",
+            "degrees": "78e47eedcaafe7b14d5acd3a377e51ad239ea6131a758a0baea1e94070a980b6",
+            "opens": "1c0302b6c3be85a26f4db7b5a100271f55962e020e42c2817e535adae4f7fe5f",
+            "parents": "4d711c2d82a7ab69390071a4fb99e34fe4d811e37714083b566fe5e87652d817"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 3493,
+          "candidate_pairs": 5767588,
+          "components": [
+            3493
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 456162,
+          "junctions_to_date": 4082,
+          "largest_block": 3067,
+          "live": 3493,
+          "maximal_blocks": 130,
+          "maximum_candidate_degree": 3483,
+          "minimum_candidate_degree": 5,
+          "open_sum": 3493,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "3d0a057b786a2ed6d0ca8088165894e07319a304a6759c097639d7d889845381",
+            "degrees": "c1826765f2c61ff8487de7057c2e652f7cafbfde50a92276f791149df9049eab",
+            "parents": "5f5e5a2f1b0f678b56aa62b72e582da6bdc70a043fb63bedc604d1999576959e"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-12",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 7,
+      "later_birth_data_without_roster": null,
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 159,
+        "stratum": "cap-7-07"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "source_sizes": [
+        6,
+        3,
+        6,
+        7,
+        7,
+        6,
+        6
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 12,
+          "components": [
+            7
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 33,
+          "junctions_to_date": 7,
+          "largest_block": 3,
+          "live": 7,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 2,
+          "open_sum": 25,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 15,
+          "candidate_pairs": 33,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 92,
+          "junctions_to_date": 22,
+          "largest_block": 4,
+          "live": 15,
+          "maximal_blocks": 7,
+          "maximum_candidate_degree": 9,
+          "minimum_candidate_degree": 2,
+          "open_sum": 59,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 28,
+          "candidate_pairs": 108,
+          "components": [
+            28
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 237,
+          "junctions_to_date": 50,
+          "largest_block": 7,
+          "live": 28,
+          "maximal_blocks": 15,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 2,
+          "open_sum": 145,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 61,
+          "candidate_pairs": 353,
+          "components": [
+            61
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 620,
+          "junctions_to_date": 111,
+          "largest_block": 8,
+          "live": 61,
+          "maximal_blocks": 27,
+          "maximum_candidate_degree": 21,
+          "minimum_candidate_degree": 6,
+          "open_sum": 383,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 130,
+          "candidate_pairs": 1133,
+          "components": [
+            130
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1938,
+          "junctions_to_date": 241,
+          "largest_block": 13,
+          "live": 130,
+          "maximal_blocks": 61,
+          "maximum_candidate_degree": 35,
+          "minimum_candidate_degree": 6,
+          "open_sum": 1318,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 317,
+          "candidate_pairs": 7044,
+          "components": [
+            317
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 10719,
+          "junctions_to_date": 558,
+          "largest_block": 42,
+          "live": 317,
+          "maximal_blocks": 130,
+          "maximum_candidate_degree": 123,
+          "minimum_candidate_degree": 8,
+          "open_sum": 8781,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 955,
+          "candidate_pairs": 82907,
+          "components": [
+            955
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 2101275,
+          "junctions_to_date": 1513,
+          "largest_block": 131,
+          "live": 955,
+          "maximal_blocks": 317,
+          "maximum_candidate_degree": 538,
+          "minimum_candidate_degree": 5,
+          "open_sum": 2090556,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "bae3db2773edfaed372f44b4c77740b3202040b32e602af4e5dc34ec3c813a9d",
+            "degrees": "d3a6e24d091e81a96ca7072eeae2b8660dc46238ba64379200af9fa537cd7463",
+            "opens": "1a77465a6e876920615202f6dd07f679a3cf0b4b7cc594ce55174a4a5f2e3e82",
+            "parents": "70330ba6f7e4e497accfd1d47cb74710a17bd41a18a042a78e8154e713cdd0be"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 36394,
+          "candidate_pairs": 434962115,
+          "components": [
+            36394
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 2137669,
+          "junctions_to_date": 37907,
+          "largest_block": 23396,
+          "live": 36394,
+          "maximal_blocks": 920,
+          "maximum_candidate_degree": 31098,
+          "minimum_candidate_degree": 15,
+          "open_sum": 36394,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "d8aedcfab31e7dfbafc38606debe1dbf5181e26cf840790181863c336d4c07df",
+            "degrees": "54e3d48892b7d88294009c3224596f9bf0a12ea434e2250ba8255685bec7d883",
+            "parents": "419cfe412ec745f863a5eef4f842b4c3afaebeae263746e49e22ca602076de92"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-13",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 7,
+      "later_birth_data_without_roster": null,
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 55,
+        "stratum": "cap-7-07"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "source_sizes": [
+        6,
+        6,
+        6,
+        7,
+        5,
+        4,
+        7
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 12,
+          "components": [
+            7
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 33,
+          "junctions_to_date": 7,
+          "largest_block": 3,
+          "live": 7,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 5,
+          "minimum_candidate_degree": 2,
+          "open_sum": 25,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 15,
+          "candidate_pairs": 32,
+          "components": [
+            15
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 90,
+          "junctions_to_date": 22,
+          "largest_block": 4,
+          "live": 15,
+          "maximal_blocks": 7,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 2,
+          "open_sum": 57,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 27,
+          "candidate_pairs": 99,
+          "components": [
+            27
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 223,
+          "junctions_to_date": 49,
+          "largest_block": 7,
+          "live": 27,
+          "maximal_blocks": 15,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 3,
+          "open_sum": 133,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 56,
+          "candidate_pairs": 303,
+          "components": [
+            56
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 559,
+          "junctions_to_date": 105,
+          "largest_block": 8,
+          "live": 56,
+          "maximal_blocks": 27,
+          "maximum_candidate_degree": 21,
+          "minimum_candidate_degree": 2,
+          "open_sum": 336,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 115,
+          "candidate_pairs": 949,
+          "components": [
+            115
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1735,
+          "junctions_to_date": 220,
+          "largest_block": 13,
+          "live": 115,
+          "maximal_blocks": 55,
+          "maximum_candidate_degree": 33,
+          "minimum_candidate_degree": 6,
+          "open_sum": 1176,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 280,
+          "candidate_pairs": 6431,
+          "components": [
+            280
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 10014,
+          "junctions_to_date": 500,
+          "largest_block": 41,
+          "live": 280,
+          "maximal_blocks": 115,
+          "maximum_candidate_degree": 121,
+          "minimum_candidate_degree": 6,
+          "open_sum": 8279,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 868,
+          "candidate_pairs": 76511,
+          "components": [
+            868
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 2087258,
+          "junctions_to_date": 1368,
+          "largest_block": 128,
+          "live": 868,
+          "maximal_blocks": 280,
+          "maximum_candidate_degree": 490,
+          "minimum_candidate_degree": 5,
+          "open_sum": 2077244,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "aff840f2853f35d1d2ac58a5ec570ede1a43cdbcac33846779aaa7dc1fdee369",
+            "degrees": "547227f61e267bf5ce771e1872d71ced5ecfd3c034129e70b0105608c9ed1270",
+            "opens": "c31c929d9982698fcd87d941fd782c22836ff823942dd8d2bbd098cccb0200b7",
+            "parents": "ccc9f84abdf7ee2705268153b3f8247dc0b2e927740bff75390d78830f361f96"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 35408,
+          "candidate_pairs": 428900965,
+          "components": [
+            35408
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 2122666,
+          "junctions_to_date": 36776,
+          "largest_block": 23541,
+          "live": 35408,
+          "maximal_blocks": 842,
+          "maximum_candidate_degree": 30873,
+          "minimum_candidate_degree": 8,
+          "open_sum": 35408,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "block_too_large"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "8ddc579b4e3e8103985cc2170282ddc664b7e59b2c390cfadde01a35614f87c5",
+            "degrees": "391da1f35a3f690af8d2f3616b32705fc656d04ffeefea4ee2e0017a659c7e34",
+            "parents": "145cc9cb1f78859163ad7f7c3ea86c61b0615b375f2ad3c7588aaa1679cf7872"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": true,
+      "case": "start-14",
+      "classification": "continuing",
+      "first_closure": null,
+      "initial_two_open_offshoots": [
+        {
+          "all_multi_parent_groups": [
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "demand": 1,
+          "junction": 4,
+          "neighbors": [
+            1,
+            2
+          ],
+          "offshoots": 1,
+          "open": 2,
+          "physical_start_groups": [
+            [
+              2,
+              3,
+              5
+            ]
+          ],
+          "physical_start_junction": 5
+        }
+      ],
+      "last_archived_age": 8,
+      "later_birth_data_without_roster": null,
+      "no_future_offshoot_at_last_open_archive": false,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 194,
+        "stratum": "cap-7-08"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "source_sizes": [
+        7,
+        3,
+        7,
+        6,
+        3,
+        4,
+        5,
+        5
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 11,
+          "components": [
+            7
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 30,
+          "junctions_to_date": 8,
+          "largest_block": 3,
+          "live": 7,
+          "maximal_blocks": 7,
+          "maximum_candidate_degree": 4,
+          "minimum_candidate_degree": 1,
+          "open_sum": 20,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 11,
+          "candidate_pairs": 21,
+          "components": [
+            11
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 69,
+          "junctions_to_date": 19,
+          "largest_block": 4,
+          "live": 11,
+          "maximal_blocks": 6,
+          "maximum_candidate_degree": 7,
+          "minimum_candidate_degree": 1,
+          "open_sum": 39,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 8,
+              "neighbors": [
+                {
+                  "junction": 1,
+                  "parents": [
+                    1,
+                    2,
+                    4
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 4
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 19,
+          "candidate_pairs": 59,
+          "components": [
+            19
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 150,
+          "junctions_to_date": 38,
+          "largest_block": 6,
+          "live": 19,
+          "maximal_blocks": 11,
+          "maximum_candidate_degree": 12,
+          "minimum_candidate_degree": 1,
+          "open_sum": 81,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 18,
+              "neighbors": [
+                {
+                  "junction": 10,
+                  "parents": [
+                    1,
+                    8
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 8
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 35,
+          "candidate_pairs": 147,
+          "components": [
+            35
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 306,
+          "junctions_to_date": 73,
+          "largest_block": 6,
+          "live": 35,
+          "maximal_blocks": 19,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 1,
+          "open_sum": 156,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 34,
+              "neighbors": [
+                {
+                  "junction": 30,
+                  "parents": [
+                    10,
+                    18
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 18
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 57,
+          "candidate_pairs": 296,
+          "components": [
+            57
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 592,
+          "junctions_to_date": 130,
+          "largest_block": 8,
+          "live": 57,
+          "maximal_blocks": 35,
+          "maximum_candidate_degree": 18,
+          "minimum_candidate_degree": 1,
+          "open_sum": 286,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 56,
+              "neighbors": [
+                {
+                  "junction": 55,
+                  "parents": [
+                    30,
+                    34
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 34
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 93,
+          "candidate_pairs": 653,
+          "components": [
+            93
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1296,
+          "junctions_to_date": 223,
+          "largest_block": 11,
+          "live": 93,
+          "maximal_blocks": 57,
+          "maximum_candidate_degree": 30,
+          "minimum_candidate_degree": 1,
+          "open_sum": 704,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 92,
+              "neighbors": [
+                {
+                  "junction": 91,
+                  "parents": [
+                    55,
+                    56
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 56
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 183,
+          "candidate_pairs": 2870,
+          "components": [
+            183
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 7274,
+          "junctions_to_date": 406,
+          "largest_block": 36,
+          "live": 183,
+          "maximal_blocks": 92,
+          "maximum_candidate_degree": 80,
+          "minimum_candidate_degree": 1,
+          "open_sum": 5978,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 182,
+              "neighbors": [
+                {
+                  "junction": 181,
+                  "parents": [
+                    91,
+                    92
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 92
+            }
+          ],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 823,
+          "candidate_pairs": 87228,
+          "components": [
+            823
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 6521071,
+          "junctions_to_date": 1229,
+          "largest_block": 179,
+          "live": 823,
+          "maximal_blocks": 181,
+          "maximum_candidate_degree": 504,
+          "minimum_candidate_degree": 1,
+          "open_sum": 6513797,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 822,
+              "neighbors": [
+                {
+                  "junction": 821,
+                  "parents": [
+                    181,
+                    182
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 182
+            }
+          ],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "63c428003fb1eb847e89c54812d980b4a924f38f2dc2ff626d4a00584773bc13",
+            "degrees": "6a7dcb4b0a6d272d4104feca22132930fef60beff2e4bb4375297b15472c9546",
+            "opens": "c9cbde357e4fa47d3c5a59e3f4b42cc92346d753f30b3eaafade1fcf95b84d1b",
+            "parents": "45ea4ccf0059094366a48f12fa6eb35eaa50493eabc7209c397a94e321d44da7"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 8,
+          "births": 162336,
+          "candidate_pairs": 10049025081,
+          "components": [
+            162336
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 6683408,
+          "junctions_to_date": 163565,
+          "largest_block": 70421,
+          "live": 162336,
+          "maximal_blocks": 812,
+          "maximum_candidate_degree": 157392,
+          "minimum_candidate_degree": 1,
+          "open_sum": 162337,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 1,
+          "positive_age_thin_junctions": [
+            {
+              "demand": 1,
+              "junction": 162335,
+              "neighbors": [
+                {
+                  "junction": 162334,
+                  "parents": [
+                    821,
+                    822
+                  ]
+                }
+              ],
+              "offshoots": 1,
+              "open": 2,
+              "parent": 822
+            }
+          ],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "caff32a465a1cc845a13c11dfba349916e1ce9a32444b69a3be30b009e92a335",
+            "degrees": "2d78c69c3fb1ddf7c929a31365606865355e16a9c0b08c81ca321370fc9d5b1e",
+            "parents": "829073fb121c5431536b8bcff881d77f871e621ee3f63bc5fa459ad98c0c82c3"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "archive_stop": {
+        "EXPLOSIVE": "resource",
+        "MERGE-BURST": "memory",
+        "WALL-READ": "memory"
+      },
+      "canonical_source": false,
+      "case": "start-15",
+      "classification": "unresolved",
+      "first_closure": null,
+      "initial_two_open_offshoots": [],
+      "last_archived_age": 8,
+      "later_birth_data_without_roster": {
+        "age": 9,
+        "births": 2201,
+        "kind": "deterministic lower bound"
+      },
+      "no_future_offshoot_at_last_open_archive": true,
+      "partnered_ages": [],
+      "repetition": {
+        "matches": [],
+        "pairs_at_same_live_size": 0,
+        "pairs_surviving_structural_filter": 0,
+        "unavailable": []
+      },
+      "source_draw": {
+        "index": 111,
+        "stratum": "cap-7-09"
+      },
+      "source_funded": true,
+      "source_meetings": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "source_sizes": [
+        3,
+        7,
+        7,
+        5,
+        6,
+        3,
+        6,
+        3,
+        6
+      ],
+      "stages": [
+        {
+          "age": 0,
+          "births": null,
+          "candidate_pairs": 11,
+          "components": [
+            7
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 34,
+          "junctions_to_date": 9,
+          "largest_block": 3,
+          "live": 7,
+          "maximal_blocks": 5,
+          "maximum_candidate_degree": 5,
+          "minimum_candidate_degree": 2,
+          "open_sum": 22,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": null,
+          "positive_age_thin_junctions": [],
+          "representation": "literal start",
+          "sha256": {},
+          "thin_junction_check": "initial exact group plan"
+        },
+        {
+          "age": 1,
+          "births": 12,
+          "candidate_pairs": 25,
+          "components": [
+            12
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 75,
+          "junctions_to_date": 21,
+          "largest_block": 4,
+          "live": 12,
+          "maximal_blocks": 7,
+          "maximum_candidate_degree": 8,
+          "minimum_candidate_degree": 2,
+          "open_sum": 41,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 2,
+          "births": 19,
+          "candidate_pairs": 59,
+          "components": [
+            19
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 151,
+          "junctions_to_date": 40,
+          "largest_block": 6,
+          "live": 19,
+          "maximal_blocks": 12,
+          "maximum_candidate_degree": 10,
+          "minimum_candidate_degree": 3,
+          "open_sum": 76,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 3,
+          "births": 31,
+          "candidate_pairs": 137,
+          "components": [
+            31
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 292,
+          "junctions_to_date": 71,
+          "largest_block": 6,
+          "live": 31,
+          "maximal_blocks": 19,
+          "maximum_candidate_degree": 15,
+          "minimum_candidate_degree": 2,
+          "open_sum": 141,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 4,
+          "births": 48,
+          "candidate_pairs": 280,
+          "components": [
+            48
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 534,
+          "junctions_to_date": 119,
+          "largest_block": 8,
+          "live": 48,
+          "maximal_blocks": 29,
+          "maximum_candidate_degree": 21,
+          "minimum_candidate_degree": 8,
+          "open_sum": 242,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 5,
+          "births": 65,
+          "candidate_pairs": 507,
+          "components": [
+            65
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 990,
+          "junctions_to_date": 184,
+          "largest_block": 9,
+          "live": 65,
+          "maximal_blocks": 48,
+          "maximum_candidate_degree": 25,
+          "minimum_candidate_degree": 8,
+          "open_sum": 456,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 6,
+          "births": 90,
+          "candidate_pairs": 1249,
+          "components": [
+            90
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 3648,
+          "junctions_to_date": 274,
+          "largest_block": 17,
+          "live": 90,
+          "maximal_blocks": 65,
+          "maximum_candidate_degree": 48,
+          "minimum_candidate_degree": 8,
+          "open_sum": 2658,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "replay from literal start",
+          "sha256": {},
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 7,
+          "births": 324,
+          "candidate_pairs": 24054,
+          "components": [
+            324
+          ],
+          "distinction_count_kind": "exact",
+          "distinctions_to_date": 1448013,
+          "junctions_to_date": 598,
+          "largest_block": 93,
+          "live": 324,
+          "maximal_blocks": 90,
+          "maximum_candidate_degree": 228,
+          "minimum_candidate_degree": 5,
+          "open_sum": 1444365,
+          "open_sum_kind": "exact",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_candidate_degree"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "fe23d716d9824873570d1a37210d8a7d89bd8804cc333eddfb42cd6add55a330",
+            "degrees": "30560d3a5753dc93e15dbe36db19e305c72b0e29405d5ff05eeabfcac3efa255",
+            "opens": "bfdd5e0902cdf6fe5474a7d78f7c5b9498fc5820f810297a842cb30fda20c7d3",
+            "parents": "59cf7e9710f298284ca692d6638816e453a979349062bfd67cc47ec6c2cd8442"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        },
+        {
+          "age": 8,
+          "births": 38001,
+          "candidate_pairs": 584530241,
+          "components": [
+            38001
+          ],
+          "distinction_count_kind": "lower bound",
+          "distinctions_to_date": 1486014,
+          "junctions_to_date": 38599,
+          "largest_block": 20264,
+          "live": 38001,
+          "maximal_blocks": 314,
+          "maximum_candidate_degree": 37246,
+          "minimum_candidate_degree": 150,
+          "open_sum": 38001,
+          "open_sum_kind": "lower bound",
+          "partnered_component_checks": [
+            {
+              "status": "wrong_size"
+            }
+          ],
+          "positive_age_offshoots": 0,
+          "positive_age_thin_junctions": [],
+          "representation": "archive roster",
+          "sha256": {
+            "blocks": "b48b9d07bc9ca334739793a8718a5d32a444e91e05b80b0086b768fb0ad2a946",
+            "degrees": "de242cf02b7dfc303b965de74bb826f61605427ad6ebbd0be6b1d800e9820520",
+            "parents": "6f4bd16ca2696ccecfbf93fef3b787a3a8f05c6daf2bdba41e5d880687dab3b2"
+          },
+          "thin_junction_check": "literal incoming arities and current candidates"
+        }
+      ],
+      "thin_observed_ages": []
+    }
+  ]
+}

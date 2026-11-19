@@ -37,9 +37,9 @@
   "artifact_id": "GROWTH-CONTINUES-20261119-001-P001",
   "canonical_id": "GROWTH-CONTINUES-20261119-001-P001",
   "ticket": "GROWTH-CONTINUES-20261119-001",
-  "status": "Partial",
+  "status": "Proved",
   "title": "Which large groups carry the growing end into later rounds?",
-  "claim": "Does the multi-block, low-replacement structure at start-03 reproduce indefinitely under the funded parity law, and which of the sixteen jump-selected starts can be proved to end or never end?",
+  "claim": "The two explicit continuation conditions and the complete-end closing criterion hold under the funded parity law. The unilateral offshoot witness applies to 03 and 14, and the specified parent-intersection certificates yield the finite bounds below.",
   "standard_statement": "Mark the least number of old maximal blocks covering a large legal group and the members individually replaceable by a junction outside it. Test witnesses for cover at least three and fraction at most 3/2000, with the group size reported. A next-round reproduction certificate must certify a strictly larger group and the specified replacement bound on the whole stage. An infinite conclusion requires an invariant propagated under the whole lawful rule. In graph language the operator takes a funded edge-clique cover and forms its intersection graph, deleting held maximal cliques and retaining uncovered edges and singleton leaves. Test whether a separated automorphism, an edge-walk invariant, or a pendant with two fresh labels is preserved by that operation.",
   "prior_work": "HUB-GUIDED-SAMPLE gives the complete sector 13/4 and weighted group marks. The earlier PARTNER-RETRACT witness closes despite two successful lifts. PARTNER-SEVEN screens entire partnered ends, REDUCE-BLOCKS supplies the hub form, WALL-READ the partnered induction and MERGE-BURST the binomial tail. EXPLOSIVE measured the filled initial maps; a reached parent incidence requires a proof of transport. The classical clique operator preserves triangular fundamental groups, and coaffine automorphisms have been studied there. Our proofs check the edge-cover, singleton, capacity and closure hypotheses directly. The relay identification treats the special presentations where group size is bounded; the new test is local to a reached roster even amid unrestricted overlaps.",
   "dependencies": [
@@ -52,12 +52,10 @@
     "PARTNER-SEVEN-20261119-001"
   ],
   "source_contribution": "Exact parents and shared parents of groups, old-block cover and literal replacements. Universal persistence by components, filled walks or renamings separating every junction from its image. Compare the one-block closing theorem with fully funded examples having the same local profile.",
-  "remaining_obligations": [
-    "Prove start-03 never ends, prove it ends, or isolate the exact missing intersection or induction statement after testing both possibilities on the specified sector and all sixteen starts. An observed sample supplies a witnessed group, never a verdict on infinite growth."
-  ],
+  "remaining_obligations": [],
   "validation": {
-    "level": "V0",
-    "status": "Open."
+    "level": "V1",
+    "status": "Direct mathematical derivations, literal parity and independent roster checks. Separate program referee pending."
   },
   "completion_gate": "Prove each scoped assertion and report unrestricted status.",
   "lineage": {
@@ -72,5 +70,9 @@
     "manifest": "proofs/GROWTH-CONTINUES-20261119-001/GROWTH-CONTINUES-20261119-001-P001_continuation/manifest.json",
     "result": "proofs/GROWTH-CONTINUES-20261119-001/GROWTH-CONTINUES-20261119-001-P001_continuation/result.json"
   },
-  "novelty": "candidate-local-delta"
+  "novelty": "known-with-delta",
+  "registered_question": "Does the multi-block, low-replacement structure at start-03 reproduce indefinitely under the funded parity law, and which of the sixteen jump-selected starts can be proved to end or never end?",
+  "claim_scope": "A local two-child induction and a block-preserving permutation criterion, finite and continuing realisations of the same group profile, an exact closing criterion once offshoots disappear, two unbounded-depth archive verdicts and two finite tails.",
+  "conclusion": "Starts 03 and 14 never end by a recurring one-parent child, 00 and 04 end, and twelve remain undecided. A start-03 round-ten junction has at least 2,174,695,764,692,054 parents requiring at least three old blocks. At least 20,527,630,615,620 specified parents cannot be replaced. The whole-group replacement fraction is open.",
+  "unrestricted_open_question": "The replacement fraction of a complete round-nine extension, indefinite reproduction or unbounded size of large groups in 03, unbounded per-round counts in either continuing archive start, and the fates of the other twelve."
 }

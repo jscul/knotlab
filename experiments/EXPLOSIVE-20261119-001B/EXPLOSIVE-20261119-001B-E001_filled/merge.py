@@ -41,7 +41,7 @@ def main():
             'b1_positive_measured': dict(Counter(x['measured'] for x in cyc)),
             'measured': dict(Counter(x['measured'] for x in v)),
             'explosive': len(expl),
-            'explosive_features': dict(Counter((max(x['b1']) > 0, max(x['b2']) > 0, x['overlap_point'], x['overlap_block']) for x in expl)),
+            'explosive_features': {f'kept cycle {k[0]}, void {k[1]}, share a point {k[2]}, share a block {k[3]}': v for k, v in Counter((max(x['b1']) > 0, max(x['b2']) > 0, x['overlap_point'], x['overlap_block']) for x in expl).items()},
             'largest_group_max': max((max(x['groups']) for x in v), default=None),
             'largest_group_b1_zero_max': max((max(x['groups']) for x in filled0), default=None)}
     expl_all = sorted([x for k, v in pop.items() if k != 'ref' for x in v if x['measured'] == 'explosive'], key=lambda x: (x['n'], sum(x['sizes'])))

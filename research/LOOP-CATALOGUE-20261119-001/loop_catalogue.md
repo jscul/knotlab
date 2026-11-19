@@ -203,3 +203,39 @@ not proved in a proof record, and they hold where the rule does. The run checks 
 | 1 | The eddies in the break shapes: what the growth does where groups of three meet or overlap, and their round-weights | 3/3 — the catalogue's missing part, and the cluster rule's two open breaks at once | 2/3 — part U's 122 exponential starts and the theta to start from | grow the theta and the 30 provisional minimal entries 40 rounds, read their recurrences, and test the advisor's open-distinction mechanism → stop at a round-weight for them, or a shape whose count no finite model fits | Selected · awaiting go-ahead |
 | 2 | A growth that reads only the allowed states (`NAE-GROWTH-20261119-001#1`, A108) | 3/3 | 2/3 | as there | Alternative · deferred |
 | 3 | The catalogue under larger knots (sizes past bare, three or more spares) and multigraph shares | 2/3 — whether new families appear beyond the Selmer one in the rule's domain | 3/3 — the same search | widen the search → stop at a second family, or none to eight knots | Alternative · deferred |
+
+## Final report as sent (2026-11-19 07:03 UTC)
+
+**Outcome:** A loop of knots feeds itself when it runs through open knots and offers at least two ways round. With one way round it only circulates, as the bare ring of five does at 5 junctions a round forever. Set down before growing, this rule picked 49 self-feeding starts among 864,000 fresh arrangements. All 49 grow exponentially, exactly as predicted round by round, and none of the 1,433 others grown does. Up to eight knots, wherever the rule holds, the self-feeding loops form one small family with exact "interfaces". Where the rule breaks, more of them hide. 8 of 14 frozen predictions held as scored, and 3 more hold once scorer slips are fixed. Closed, referee pending; one part is still running.
+
+- **Why large starts' many cycles don't feed.** A loop has to join through knots that still have an open place. In large starts only 14 to 27% of knots do, so of their 4 to 30 cycles each, only 0.015 to 0.43% are fully open. About one grower in 3,800 to 9,000 has a loop at all.
+- **The rate comes from one number per loop.** Going once round multiplies the count by the loop's round-weight W, so the rate solves W = 1.
+- **The catalogue, eddies up to eight knots.** All are rings with one extra choice (a spare place, or a hung knot): the rings of five, seven and eight. Each grows at the root of x^(L+1) = x + 1: 1.1347, 1.0970 and 1.1673. Each is identical under not-all-equal. Rings to thirteen continue the family.
+- **Interfaces: joined parts multiply W.** A spare or a lone knot multiplies it by 1 + y, a knot with a spare by 1 + y + y², and a hanging path of two by (1 + y)/(1 − y). A second loop turns the count algebraic, at 2.3 to 2.8. On an even ring the two halves are separate loops and don't help each other.
+- **Finite?** Unbounded in number (one per loop length, with rates falling towards 1), but few in kind. Every one is built from the same handful of pieces. That is your "core-libs" made exact, though only where the rule holds.
+- **Where the rule breaks** (groups of three that meet or overlap), 122 of the 440 starts grown so far feed themselves, including a six-knot theta. Nothing here describes them yet. The rest of that part is still running in the background (marked pending).
+- **Real failures:** a part joined to one half of an even ring doesn't raise the rate; groups of three meeting at a knot can feed after all; and a descriptive threshold didn't carry to the other sampler.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: which loops feed themselves, and their catalogue | **Status:** Partially successful (8 of 14 held as scored; 3 more post hoc) | The rule held on 864,000 fresh starts with no miss; one family with exact interfaces where the rule holds; break shapes hide more |
+| Local direction: the cluster rule as the catalogue's instrument | Continue | Exact where it holds; its two break shapes are where the uncatalogued eddies are |
+| Broader exploration: what the cheapest growth builds | Known alternatives | The self-feeding part is loops with choices, rated by a round-weight |
+| Long-term goal: G17 | Capability gained | The rare explained: two ways round through open knots, rare because large starts' knots are full |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The eddies in the break shapes: what the growth does where groups of three meet or overlap, and their round-weights | 3/3 — the catalogue's missing part and the cluster rule's two open breaks at once | 2/3 — 122 exponential starts and the theta to start from | grow the theta and the 30 provisional minimal ones 40 rounds and read their recurrences → stop at a round-weight for them, or a shape no finite model fits | Selected · awaiting go-ahead |
+| 2 | A growth that reads only the allowed states (A108) | 3/3 | 2/3 | as in NAE-GROWTH | Alternative · deferred |
+| 3 | The catalogue with larger knots and doubled shares | 2/3 — whether a second family appears where the rule holds | 3/3 | widen the search → stop at a second family, or none | Alternative · deferred |
+
+**Corrections:** none for this study. Separately, I folded in the referees' corrections to CLUSTER-ALL (a second break; false rings possible, Narrowing), NAE-GROWTH (99 → 100, Not a block), SCALE-SHARE (the seven-knot ring was false, Narrowing; χ² 4.3) and JOIN-GROWTH (26 tests, not 27, Narrowing). All are logged in docs/CORRECTIONS.md. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A109 added, under challenge (your eddies / core-libs idea in your words, as your direction), with a first history line; also a THEORY.md reading. **Basket:** `SCALE-SHARE-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze. It gave the round-weight form, W(1) = 2, no two-loop entry to eight knots and the even-ring placements (all held), and corrected my theta equation. Its hanging-path factor was wrong.
+
+**Referee hand-off.** The decision note is `research/LOOP-CATALOGUE-20261119-001/loop_catalogue.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- the transfer argument for one loop (rate = root of W = 1);
+- `loopweight.py`'s W against the rule's series;
+- the three post hoc rescorings (C2, I2, R1);
+- the minimal-eddy search's reductions;
+- part U's 33 exponential starts with meeting groups of three.

@@ -3099,6 +3099,9 @@ evidence: results and their status come from the records each entry links.
   rule avoid trees without the complete round, and what does it build? The cheapest discriminator is the serial rule with a
   distance-only preference (join before extending) from one knot, compared with the complete round on the same seeds.
 - **History.**
+  - 2026-11-19 · The law does not matter by `NAE-GROWTH-20261119-001`: under not-all-equal the same policy gives the same counts at
+    every round, except that parity's closing tops relay (proved; the whole census checked). The rule's results are not parity's
+    alone.
   - 2026-11-19 · Under challenge by `ROUND-FREE-20261119-001`: serial laws that read only the present presentation build
     order-dependent, thinner structures and can decide whether a growth lives; the round does one job, telling each new junction
     how many partners it will have, and in the cluster rule's scope the cluster map does that job without a tick (round = size − 1).

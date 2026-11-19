@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWN-END-READING-20261119-001-E001",
+  "ticket": "GROWN-END-READING-20261119-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Which of the pair flip bit, minimum common bond cardinality of each unordered triple, and both, together with every old pair bond distance and the pointwise fixed growing end, suffice for extension of a specified reached-stage self-renaming?",
+  "public_inputs": "Current pair bond distance is minimum size minus one. The extra triple reading is minimum size including a separate undefined value. Binary parity states give a true flip bit exactly when the vector supported on those two distinctions is a permitted state difference. Every distinction at every live junction is fixed individually. Marked extension must preserve the old permutation on all distinctions and allows arbitrary fresh names.",
+  "forbidden_inputs": [
+    "Assume equality of marginal values gives simultaneous minimizers.",
+    "Treat the subset of old generators that survives an extra reading as a generating set of the restricted group.",
+    "Treat the existence of some independent successor isometry as the extension of the specified renaming.",
+    "Iterate one-round pair preservation without checking the next hypotheses."
+  ],
+  "primary_observable": "For each of the three refinements, test every surviving renaming for an extension to the next full pair table. Distinguish preservation of the entire equation span, which implies transport through all later rounds.",
+  "cheapest_meaningful_control": "Use construct_6 (both controls are known to exclude its bad marking) and the three inequivalent 12-junction/23-distinction arrangements. Test a failed marking, identity, and full stabilizers including products.",
+  "first_executable_signal": "Recover every stabilizer and every extender on the four named stages. For the starting census inherit positive stages solely by proved subgroup inclusion and compute complete refined groups on every old negative.",
+  "resource_budget": "Exact CPU enumeration on all 33,430 admissible starts of at most 15 distinctions and all 30,189 open positive-age stages through 16 current junctions. Stronger equation matrix and constructive families are secondary and reported at their actual bounds.",
+  "decision_or_followup_rule": "For failing refinements certify an exact marked permutation and incompatible successor entries or all possible extensions. For surviving ones distinguish a universal theorem, a bounded result, sufficient conditions, and the open case. Seek a least reached counterexample if all fail.",
+  "stop_rule": "All required census cases and controls decided, and a serious structural proof or falsification attempt documented, with exact residual scope if open.",
+  "dependency_records_sha256": {
+    "research/GROWN-END-MEET-ONCE-20261119-001/decision.md": "335a68692048cf26d80622f53ae6c034afee7984b41443b606b2ea774642d1c9",
+    "research/GROWN-END-SWAP-20261119-001/decision.md": "c7fc2f5424590778a4ad23c6ba79147d3afbb3ef3b033114380aa881f3729def",
+    "research/EXTEND-ROUND-20261119-001/extend_round.md": "36a51d5c9aee53a4fb26bf07ff28da42331e4215152b16e07c279d9fc8776521",
+    "research/PARENT-RULE-20261119-001/parent_rule.md": "295d275459119123db43f0a6f3da9052c300cc70f6f221abc276270cc4f1a991",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/reach_bound_threshold.json": "3604f5944db59e7105b34791e8c27b1e0a41cb0fd94f1298a56c025566c6ed4f",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/census_results.json": "553ad28987ffc6177cd9d8ba40eeb23e498532558ebe0c0e3dc51eb476ef60d8",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/census_controls.json": "ce09f8427ec4d2fe1135f34290d752d1a25593536bf89a754ccce1eaf60dbd8f",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/readings.json": "9052c75047d6d7fcdeacc73f5ac0e7c45eba210879117227aca1d10992218612"
+  }
+}

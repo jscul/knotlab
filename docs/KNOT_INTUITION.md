@@ -607,6 +607,15 @@ cannot say, because exchanging two distinctions keeps every distance and moves a
 junction (1,480 stages, none read). Wherever it does read, it needs distances
 exactly as far as the largest junction less one
 ([decision note](../research/CENSUS-READ-20261118-001/census_read.md)).
+And do the distances carry everything but their own symmetries
+(`UNIQUE-TABLE-20261119-001`, computed, referee pending)? No. On 6 of 527 census
+stages whose table has no symmetry moving a junction, a second legal
+arrangement has the same distance between every two distinctions but other
+allowed states; the growth tells them apart at once (in five the second cannot
+grow at all), and so does a reading of three distinctions at a time. On 72 more,
+another arrangement has the same allowed states, which no distance can decide.
+The other 428 are fixed by their distances
+([decision note](../research/UNIQUE-TABLE-20261119-001/unique_table.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

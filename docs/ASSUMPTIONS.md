@@ -163,6 +163,7 @@ evidence: results and their status come from the records each entry links.
 | [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Assumed |
 | [A107](#a107--small-joins-of-a-ring-and-a-two-fold-piece-are-weighted-uniformly-over-one-bare-census) | Small joins of a ring and a two-fold piece are weighted uniformly over one bare census | measure | Assumed |
 | [A108](#a108--the-cheapest-growth-reads-which-junction-holds-which-distinction-not-only-the-allowed-states) | The cheapest growth reads which junction holds which distinction, not only the allowed states | scope | Assumed |
+| [A109](#a109--self-feeding-loops-are-few-in-kind-and-recur-as-shared-routines-the-owners-eddies) | Self-feeding loops are few in kind and recur as shared routines, the owner's eddies | working premise | Under challenge |
 
 ## Entries
 
@@ -3196,3 +3197,26 @@ evidence: results and their status come from the records each entry links.
     that join differently make 2,802 colliding pairs under parity, where adding junctions together keeps the states. Under
     not-all-equal they make 115, almost all through a redundant junction. Known before in single cases: `FIRST-KNOT-20261118-001`
     and `MIXED-NEXT-JOIN-20261117-001`.
+
+### A109 · Self-feeding loops are few in kind and recur as shared routines, the owner's eddies
+
+**Under challenge** · 2026-11-19 · working premise
+
+- **Statement.** The owner's direction, not a result. The loops of knots that feed their own growth (eddies) come in a small
+  number of kinds. Each kind acts the same way wherever it occurs, like a shared library routine, so a short catalogue of them,
+  with what each does to whatever joins it, describes the self-feeding part of every growth. Testable form: in the cheapest growth
+  (A104, A108), the distinct self-feeding loops up to a stated size fall into a few families, and a small generating set composes
+  their ratios.
+- **Why.** John Cullen, 18 November 2026 (Pacific time): "It's an interesting idea, loops of logic, then like eddies in a river
+  that are shared across the universe essentially there are 'core-libs' kind of processing." Supporting facts so far:
+  - a ring's ratio depends only on its knots and spares;
+  - a ring keeps exactly its own growth inside a join;
+  - working rings are about one grower in a thousand, though growers are full of cycles;
+  - the same loops do the same thing under parity and under not-all-equal.
+- **Rests on it.** The framing of `LOOP-CATALOGUE-20261119-001`. No result rests on it.
+- **Challenge.** `LOOP-CATALOGUE-20261119-001` builds the catalogue. It is overturned if the distinct self-feeding loops up to the
+  stated size need ever more independent kinds, or if no small generating set composes their ratios. It is confirmed, reopenable,
+  if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
+  catalogue can settle it.
+- **History.**
+  - 2026-11-19 · Recorded, in the owner's words, as his direction; under challenge by `LOOP-CATALOGUE-20261119-001`.

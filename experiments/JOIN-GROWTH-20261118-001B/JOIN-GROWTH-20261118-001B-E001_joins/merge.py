@@ -1,4 +1,4 @@
-"""Score JOIN-GROWTH-20261118-001B-E001.  .venv/bin/python -B merge.py <runner out dir> <results.json> (numpy for roots)
+"""Score JOIN-GROWTH-20261118-001B-E001.  .venv/bin/python -B merge.py <runner out dir> <results.json> [<rerun out dir>] (numpy for roots)
 
 Reads the runner's latest record per case and scores P1-P10 of research/JOIN-GROWTH-20261118-001/preregistration.md."""
 import json
@@ -75,6 +75,10 @@ def dimension(m, c):
 def main():
     out_dir, dest = sys.argv[1], sys.argv[2]
     recs = load_results(out_dir)
+    for extra in sys.argv[3:]:          # the memory rerun (amendment of 23:56 UTC): its ok record replaces a main record not ok
+        for cid, rec in load_results(extra).items():
+            if rec.get('status') == 'ok' and (recs.get(cid) or {}).get('status') != 'ok':
+                recs[cid] = rec
     cs = dict(job.cases())
     rows, per = {}, defaultdict(list)
     for cid, pay in cs.items():

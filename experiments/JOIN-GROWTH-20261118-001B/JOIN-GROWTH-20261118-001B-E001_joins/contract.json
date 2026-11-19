@@ -39,5 +39,18 @@
  "stop_rule": "One run; read-out; referee hand-off; report.",
  "runtime": "1 to 2 hours",
  "disclosed_exploration": "pilot/ (about 40 starts, fitting); 14 starts of family D repeat pilot starts (merge.py SEEN)",
- "amendments": []
+ "amendments": [
+  {
+   "date": "2026-11-18 23:56 UTC",
+   "change": "Cases that exceeded the 2 GB per case limit (B-chord-02 three times; C-7-7-D and C-5-5-D-spare at once, and the other two-ring cases expected to) are rerun by job_mem.py (sha256 e56a815da895ed187007a27b19297429aef9135558bd98a01e610472530a7727), which yields the same cases from job.py with the same code and caps, under 6 GB per case and 2 workers (runs/join-growth-mem). No case, cap, prediction or decision rule changed; merge.py reads the rerun's record for a case whose main record is not ok."
+  },
+  {
+   "date": "2026-11-19 00:03 UTC",
+   "change": "merge.py takes the memory rerun's out dir as an optional third argument and uses its ok record for a case whose main record is not ok, as the 23:56 amendment states (sha256 now fcf8a330a9d22b3d1569533a92720087d1c36e0d8bf66f330d6b6a4eb64af8d9). Before any census read-out beyond the progress views; no decision rule changed."
+  },
+  {
+   "date": "2026-11-19 00:47 UTC",
+   "change": "Three more cases exceeded 2 GB in the main run (D-D-at-r-a2-b2, D-D-at-r1-a2-b2, D-P1-at-r2-a1-b2); rerun by the same job_mem.py under 6 GB per case (runs/join-growth-mem2), as the 23:56 amendment provides; merge.py is given both rerun directories. B-chord-02 exceeded 6 GB too and is reported unread."
+  }
+ ]
 }

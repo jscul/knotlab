@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MEET-ONCE-20261119-001A-E001",
+ "ticket": "MEET-ONCE-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Among grown census stages of 15 to 40 junctions where junctions meet at most once, are there non-isomorphic pairs with isomorphic full bond-distance tables and other states?",
+ "definitions": {
+  "key": "table pooled above 8, WL hash",
+  "states": "some full-table isomorphism carries the equation space (cap 5,000)"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 9042f810581057db0dc7d92b43c8d78a778a383d1ce4e5401c04676fa7f377bf), pairs_meet.py (sha256 75546252ad5dca848318caac20082fb74370136f371be260a645a79ff50953b9)",
+  "run": "scripts/longrun.py launch job.py --out runs/meet-once (8 workers, 16G cap); .venv/bin/python -B pairs_meet.py runs/meet-once",
+  "reused": "CENSUS-READ-20261118-001A job.py and exact_table_v2.py"
+ },
+ "forbidden_inputs": [
+  "Changing M1-M2 after the run"
+ ],
+ "primary_observable": "M1, M2",
+ "cheapest_meaningful_control": "GROWN-PAIR's 80 meet-once groups up to 14 junctions",
+ "predictions": {
+  "M1": "no other-states collision",
+  "M2": "a same-states collision exists"
+ },
+ "decision_rules": {
+  "each": "as stated; undecided reported"
+ },
+ "stop_rule": "One run.",
+ "runtime": "minutes to an hour",
+ "amendments": []
+}

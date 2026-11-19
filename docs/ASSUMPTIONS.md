@@ -3373,6 +3373,13 @@ evidence: results and their status come from the records each entry links.
   - **No stable sampled behaviour.** It would also be tested if the explosive kind admits no stable sampled behaviour at all:
     shares that do not settle as samples grow, under every weighting tried. Then sampling would not read it.
 - **History.**
+  - 2026-11-19 · The owner accepted a reading of what the rounds are. Asked "The structure changes over time? Like it adds
+    more logic to itself?", the owner was answered that, as computed, each round adds knots, but where a knot's round is its cluster's
+    size less one (`ROUND-FREE-20261119-001`, inside the cluster theorem's class) nothing has to change over time: the rounds
+    read one fixed structure outward from its smallest pieces, a layer at a time, the start being the piece read from, a
+    blow-up the structure getting far richer further on, and "does it end" asking whether the whole is finite. The owner replied:
+    "This makes sense, yes." Recorded as the owner's reading of this premise, open for the explosive starts outside that class
+    (Intuitions lesson 8.1, "One structure, read outward"). Status unchanged.
   - 2026-11-19 · `WALL-READ-20261119-001` ([decision note](../research/WALL-READ-20261119-001/wall_read.md)): a blow-up that
     provably never ends exists and is read exactly, the partnered start: each round about two to the power of half the one before.
     A part of one growth, read exactly, bounds its next round from below, a first sampling inside one growth. On the 14 sampled

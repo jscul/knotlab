@@ -670,6 +670,18 @@ relays into two endless chains. Bond distance says who joins whom on 95% of smal
 stages under not-all-equal and 40% under parity; where it fails, two
 presentations of the same allowed states join differently
 ([decision note](../research/NAE-GROWTH-20261119-001/nae_growth.md)).
+Which loops feed themselves (`LOOP-CATALOGUE-20261119-001`, frozen run, referee
+pending, one part still running)? A loop of open knots with at least two ways
+round: one way round only circulates, as the bare ring of five does, five
+junctions a round forever. Large starts hold many cycles but almost no loops,
+because almost all their knots are full. Going once round multiplies the count by
+the loop's round-weight W, so the rate solves W = 1, and whatever is joined to the
+loop multiplies W by its own factor. Up to eight knots, wherever the cluster rule
+holds, every minimal self-feeding loop is a ring with one extra choice, growing at
+the root of x^(L+1) = x + 1, and each behaves the same under not-all-equal. Where
+the rule breaks, more of them hide. The owner's picture of eddies shared like
+library routines is recorded as his direction
+([decision note](../research/LOOP-CATALOGUE-20261119-001/loop_catalogue.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "A single explicit old renaming preserving every exact D and R, such that no bijection of fresh distinctions extends it at the next round. Separately test whether any old loose-name re-pairing within corresponding holders could repair it, as allowed in EXTEND-ROUND. An unequal successor entry on two previously shared old names is conclusive for both.",
+  "completion_gate": "A positive-age obstruction checked against full old tables, R and the exact next round, or completion of the announced bounded comparisons and explicit omissions. No assertion of global minimality.",
+  "dependencies": [
+    "EXTEND-ROUND-20261119-001",
+    "GROW-SMALL-20261119-001",
+    "GROWN-PAIR-20261119-001",
+    "HUNT-SHORTEN-20261119-001",
+    "PARENT-RULE-20261119-001"
+  ],
+  "dependency_text": "Use the accepted complete-round law, growing-end test, referee bounds and reached-pair roster. The static proposed failure serves only as a validation control.",
+  "fields": {
+    "experiment_contract": "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/contract.json",
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "research_note": "research/GROWN-END-SWAP-20261119-001/decision.md"
+  },
+  "id": "GROWN-END-SWAP-20261119-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Find a connected start grown through at least one complete cheapest-count round with an exact table and growing-end matching that fails at the following complete round, or give a reproducible, explicitly bounded search beyond the existing controls.",
+  "ownership": {
+    "root": true,
+    "scope_id": "TWO-PROBE-ALIGNMENT-20261118-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Testing exact old isometries and growing-end data on complete rounds beyond the earlier census.",
+  "status_class": "active",
+  "stop_rule": "A positive-age obstruction checked against full old tables, R and the exact next round, or completion of the announced bounded comparisons and explicit omissions. No assertion of global minimality.",
+  "title": "Can a growing-end-preserving bond-distance renaming fail at a reachable stage?"
+}

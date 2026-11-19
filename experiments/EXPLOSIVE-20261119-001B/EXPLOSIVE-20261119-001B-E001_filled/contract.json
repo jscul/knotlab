@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "EXPLOSIVE-20261119-001B-E001",
+ "ticket": "EXPLOSIVE-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Outside the proved class, where a cycle of three blocks makes a round-1 group of three: does filling each such cycle (the filled map) predict the growth class, does a kept cycle make the growth exponential or explosive, and does the explosive kind occur within five places? What does a sample of each kind typically show (A110)?",
+ "public_inputs": {
+  "code": "filllib.py (95897f5350875fb2ba4f4fda820e1df11a828098749a7c043f775b5776e5cfe9), job.py (59282018b74342bd558888f8dd383506f964a2ece4f63416f08b7afc04919a8d), merge.py (612b670c63454a624d71ba4600984eac6ce2ffee8acef58c3ffb4335adbea53c) (sha256)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>",
+  "reused": "DOUBLE-IDENT machine_check (data, classify), joinlib engine; BREAK-EDDIES population_ref.json; the touch census"
+ },
+ "forbidden_inputs": [
+  "Changing a population, the class rule, a prediction or the filled reading after reading the frozen run"
+ ],
+ "primary_observable": "X1, X1b, X2, X3 of research/EXPLOSIVE-20261119-001/preregistration.md, with the readouts",
+ "cheapest_meaningful_control": "the census's 471 starts (explored), and the reference shapes (calibrated)",
+ "predictions": {
+  "X1": "filled b1 = 0 and decided: the filled reading equals the measured class",
+  "X1b": "filled b1 >= 1 and decided: neither polynomial nor closing",
+  "X2": "within five places (cap5, cycle5): no explosive start",
+  "X3": "within seven places (cap7, fresh): at least one explosive start"
+ },
+ "decision_rules": {
+  "each": "held iff no exception",
+  "classes": "exclusive, in the pre-registration's order"
+ },
+ "stop_rule": "One run; stop at the table, or at a size where the kind changes.",
+ "runtime": "about half an hour on 16 workers",
+ "disclosed_exploration": "the touch census's single- and multi-cycle starts (389 and 82, read before the freeze); smoke runs with seeds marked smoke; the calibration on the reference shapes (pilot/calibration.json)",
+ "amendments": []
+}

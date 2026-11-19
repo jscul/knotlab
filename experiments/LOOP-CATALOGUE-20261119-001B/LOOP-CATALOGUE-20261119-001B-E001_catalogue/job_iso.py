@@ -72,16 +72,24 @@ def classify(c, out):
 def grow_isolated(st):
     def limit():
         resource.setrlimit(resource.RLIMIT_AS, (3 * 2 ** 30, 3 * 2 ** 30))
-    try:
-        p = subprocess.run([sys.executable, '-B', '-c', CHILD, str(HERE), json.dumps(st)], capture_output=True, text=True,
-                           timeout=90, preexec_fn=limit)
-        lines, killed = p.stdout.strip().splitlines(), p.returncode != 0
-    except subprocess.TimeoutExpired as ex:
-        lines, killed = (ex.stdout or b'').decode().strip().splitlines() if isinstance(ex.stdout, bytes) else (ex.stdout or '').strip().splitlines(), True
-    last = json.loads(lines[-1]) if lines else {'counts': [len(st['sizes'])], 'outcome': 'alive'}
-    if killed:
-        return 'over limit', last['counts']
-    return classify(last['counts'], last['outcome']), last['counts']
+    for attempt in range(3):
+        try:
+            p = subprocess.run([sys.executable, '-B', '-c', CHILD, str(HERE), json.dumps(st)], capture_output=True, text=True,
+                               timeout=90, preexec_fn=limit)
+            lines = p.stdout.strip().splitlines()
+            # its own limit: a MemoryError (exit status 1); a signal from outside (negative status, e.g. the system's OOM killer)
+            # is not the start's doing, so the child is grown again
+            if p.returncode < 0:
+                continue
+            killed = p.returncode != 0
+        except subprocess.TimeoutExpired as ex:
+            out = ex.stdout.decode() if isinstance(ex.stdout, bytes) else (ex.stdout or '')
+            lines, killed = out.strip().splitlines(), True
+        last = json.loads(lines[-1]) if lines else {'counts': [len(st['sizes'])], 'outcome': 'alive'}
+        if killed:
+            return 'over limit', last['counts']
+        return classify(last['counts'], last['outcome']), last['counts']
+    return 'killed from outside', [len(st['sizes'])]
 
 
 def run(case_id, payload):

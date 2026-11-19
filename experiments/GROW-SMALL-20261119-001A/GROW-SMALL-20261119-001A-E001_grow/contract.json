@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "GROW-SMALL-20261119-001A-E001",
+ "ticket": "GROW-SMALL-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Among the stages of rounds 1 and 2 grown by the census's law from every legal meet-once arrangement of at most 7 junctions, are there non-isomorphic pairs with isomorphic full bond-distance tables and other allowed states?",
+ "definitions": {
+  "key": "table read to 8, pooled beyond, WL hash",
+  "states": "MEET-ONCE amended pairing",
+  "depth": "self-grown depth (peel, regrow one round, compare), at most 4"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 f7d84769c2fc7d5ec795bccb6dc4586edbdd53d208d4137e5c263259f8f07d89), pairs_grow.py (sha256 48f04b68a050642b54006ec41bbf27a5d269dfe57bc8e9be9967b3be9a29289f), targeted.py (sha256 776c0bd2b3bb6892edf5debc8bb863690129831958e9bf5d25a554d8e87d6abb)",
+  "run": "scripts/longrun.py launch job.py --out runs/grow-small (8 workers, 16G cap); .venv/bin/python -B pairs_grow.py runs/grow-small; .venv/bin/python -B targeted.py",
+  "reused": "PARENT-RULE-20261119-001B plib.py, census_job.py, static_job.py, static_pairs.json; MEET-ONCE-20261119-001A pairs_meet2.py"
+ },
+ "forbidden_inputs": [
+  "Changing G1, G2, C0, K after the runs"
+ ],
+ "primary_observable": "G1, G2, C0, K",
+ "cheapest_meaningful_control": "C0: the 472 static other-states groups recovered by the same pairing",
+ "predictions": {
+  "G1": "no other-states collision, none undecided",
+  "G2": ">= 100 same-states collision groups",
+  "C0": "472 of 472 recovered",
+  "K": "meet once, depth >= round, relabelled copies isomorphic"
+ },
+ "decision_rules": {
+  "each": "as stated; undecided reported"
+ },
+ "stop_rule": "One run each.",
+ "runtime": "about 15 minutes for the run",
+ "amendments": []
+}

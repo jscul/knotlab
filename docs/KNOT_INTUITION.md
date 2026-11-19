@@ -720,6 +720,15 @@ counts a new one each time. The map gets the next round right and the one after
 wrong, wherever that overlap stands, and is exact wherever it does not. The short
 loops need a different object, a transfer between kinds of junction
 ([decision note](../research/JUNCTION-MAP-20261119-001/junction_map.md)).
+And does the growth need more than the allowed states (`STATES-GROWTH-20261119-001`,
+frozen run, referee pending)? Under not-all-equal, rarely: on 93% of small stages
+without a redundant knot the minimal constraints the states satisfy are exactly the
+knots, and a growth reading only the states agrees with the cheapest growth round
+by round. It parts only at a redundant knot, which the states cannot see, and where
+a triangle of knots or a double touch lets two presentations share the same states.
+Under parity which distinctions are loose is never visible in the states: it is a
+choice of which junction to drop, as Whitney's theorem says
+([decision note](../research/STATES-GROWTH-20261119-001/states_growth.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

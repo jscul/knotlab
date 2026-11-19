@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "ROUND-FREE-20261119-001B-E001",
+ "ticket": "ROUND-FREE-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Without rounds: do naive serial laws build order-dependent structures that miss the rounds, can the order decide survival, and how are clusters shared between parts of a join by size?",
+ "definitions": {
+  "naive laws": "serial.py (uniform and joins-first)",
+  "closure law": "preregistration, Part B (argued, not run)"
+ },
+ "public_inputs": {
+  "code": "serial.py (sha256 cc5f9c2d1d1ed66b42f9f3804f7deccf627cb3fa10cf7cbb6b6e9bdf56c30d73), job.py (sha256 c1b599d7986d7c08e186570f032eb4e048155caa4d0f4e9edc543617d98c4239), merge.py (sha256 3f9b9bcb9d8685b63be0524e617906f20c973f34795fb0518e97f5737a771e5d), parts.py (sha256 acec907972535e3526f0684978d8cd18dca392d642dbf5817fd0971d0c9154e4)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>; parts.py for Part C",
+  "reused": "JOIN-GROWTH-20261118-001B joinlib/fastlib; RING-PAIR-20261119-001B covermodel and pilot animals.py; CLUSTER-ALL clusters.py"
+ },
+ "forbidden_inputs": [
+  "Changing a law, a start or a prediction after reading any 20-order result"
+ ],
+ "primary_observable": "P1-P4 of research/ROUND-FREE-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the rounds' growth of each start; the lone four-place knot",
+ "predictions": {
+  "P1": "order-dependent",
+  "P2": "no order matches ranks 0-3",
+  "P3": "pair33 closes in one order and passes 400 in another",
+  "P4": "on 5-7 by a distinction, 5-5 through a path of one, ring 44445 with a hanging pair (2, 1): part-alone counts per size not exponential; share spanning two or more parts > 0.9 from size 10"
+ },
+ "decision_rules": {
+  "each": "as merge.py and the Part C script score"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "minutes",
+ "disclosed_exploration": "pilot: 3 orders per start for six starts (seeds 0-2, which are among the 20), and Part C's two joins to size 11-12 (computed before the freeze)",
+ "amendments": []
+}

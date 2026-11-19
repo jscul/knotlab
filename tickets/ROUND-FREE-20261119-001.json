@@ -1,0 +1,34 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "CLUSTER-ALL-20261119-001",
+    "FRESH-COUNT-20261118-001",
+    "JOIN-GROWTH-20261118-001",
+    "RING-PAIR-20261119-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "FRESH-COUNT-20261118-001#1"
+    ]
+  },
+  "id": "ROUND-FREE-20261119-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (19 November 2026), the round-free test promised to the owner ('Time doesn't have ticks'); basket FRESH-COUNT-20261118-001#1 (serial growth testing A104). Grow starts one join at a time in random orders: (1) does the order change what is built; (2) do the ratios survive in a form that never mentions rounds (the cluster model counts by size); (3) do parts of one start grow at different speeds, stated as how much each part has grown. Rings, a ring-plus-piece join, a two-ring join, two-dimensional census starts. No inside clock. Serves G17 and tests A104.",
+  "ownership": {
+    "root": true,
+    "scope_id": "ROUND-FREE-20261119-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "One pilot (fitting), one frozen test, read-out, referee hand-off, report.",
+  "title": "What does the growth build when joins come one at a time, without rounds?"
+}

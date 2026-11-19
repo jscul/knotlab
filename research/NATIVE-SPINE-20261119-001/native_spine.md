@@ -105,7 +105,7 @@ bounded to three rules. Goal G17. **Referee pending.**
 | 2 | The explosive kind (`BREAK-EDDIES-20261119-001#2`), with part U's 624 still-rising starts | 2/3 | 2/3 | as there | Alternative · deferred |
 | 3 | The y⁴(1 + y)² starts' spine (`JUNCTION-KINDS-20261119-001#2`), now with the shuffle null first | 1/3 — the null makes a pairing weak evidence | 3/3 | as there, null first | Alternative · deferred |
 
-## Final report as sent (2026-11-19 13:30 UTC)
+## Final report as sent (2026-11-19 13:24 UTC)
 
 **Outcome:** The growth doesn't pick its own spine. None of the three rules gives the one-to-one pairing of each round with the two rounds its recurrence names: the newest ancestor, the one with the most parent chains, or the one with the fewest. Nothing in the ancestry forces any pair either. 5 of 5 frozen predictions held, on 204 rounds of the ten plastic-number eddies. Closed, referee pending.
 

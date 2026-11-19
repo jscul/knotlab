@@ -77,3 +77,14 @@ claude-fable-5-2). Taken: deterministic hashing with fixed iterations; VF2 seede
 never carries two tables; deduplication with provenance; starts reported apart and only grown–grown counted as the answer; results
 by size; "states agree" stated existentially over all table isomorphisms and decided by one combined isomorphism test; renaming
 only, no value flips. Its guesses are in the table.
+
+## Amendment 1 (2026-11-19, after pairs.py ran out of time, before any pair was read)
+
+`pairs.py` was stopped by its 50-minute limit while comparing classes pairwise. Before replacing it I looked only at bucket sizes:
+52,163 stages, at least 49,487 non-isomorphic arrangements, at least 29,250 non-isomorphic tables, and 9,474 table-hash buckets
+holding two or more arrangement classes (largest 57). That is not yet a pair (equal hashes need an exact test), but it suggests P1
+holds; it is disclosed. `pairs2.py` keeps every definition and reports groups instead of pairs: classes are grouped by exact table
+isomorphism against one representative per group (nodes coloured by Weisfeiler–Leman subgraph hashes, an invariant), and grown
+classes within a table group by states (table with circuits). It also follows the UNIQUE-TABLE referee's lesson on growth: the next
+stage of a grown class is the census's own continuation (round + 1 from the same start), compared by table hash; the new-start step
+is not used. Predictions unchanged; P4 is scored on the census continuation.

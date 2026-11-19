@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "JUNCTION-SIZE-FOLLOW-20261119-001-E001",
+  "ticket": "JUNCTION-SIZE-FOLLOW-20261119-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Does one finite start keep the size of every exhausted junction bounded at every complete round?",
+  "public_inputs": "Full touch census, three named larger-start weightings, complete cheapest-count parity rounds. Count the entire literal junction support at birth.",
+  "forbidden_inputs": [
+    "Do not substitute round population or number of parents for full size.",
+    "Do not infer unboundedness from a finite jump or failure to finish an enumeration."
+  ],
+  "primary_observable": "Maximum junction arity p+fresh of current and exhausted junctions, against age, with explicit counts/stops.",
+  "cheapest_meaningful_control": "Partnered order three, ring of four, and archived single-block growth in MERGE-BURST.",
+  "first_executable_signal": "Compare numeric birth supports to parent-plus-fresh for a known lawful history.",
+  "resource_budget": "Every one of 26,441 census starts through round 10 if feasible, extending to rounds 16–24 with proved fixed shapes or explicit bounded-resource truncations. Independent larger starts at 6,8,12,20,32 junctions, 64 replicates per size under each of three weightings, master seed 20261119091, same depth target. State the last common complete depth and all partial depths. Do not materialize an iterated exponential.",
+  "decision_or_followup_rule": "A proof of a size bound for a named class or an explicit finite start with unbounded junction sizes, then distinguish the WALL-READ partnered start and MERGE-BURST cases.",
+  "stop_rule": "A proof of a size bound for a named class or an explicit finite start with unbounded junction sizes, then distinguish the WALL-READ partnered start and MERGE-BURST cases."
+}

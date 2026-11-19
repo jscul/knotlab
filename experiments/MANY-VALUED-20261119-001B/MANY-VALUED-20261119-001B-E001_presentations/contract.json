@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MANY-VALUED-20261119-001B-E001",
+ "ticket": "MANY-VALUED-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "At the states-only growth's undefined points, how many admissible irredundant presentations do the allowed states have (up to renaming), do their growths agree, and is the refined rule (the unique presentation from M(S)) defined and equal to the cheapest growth along census trajectories?",
+ "public_inputs": {"code": "manylib.py (e37ea2745f1c2f6d0b23e923c91386ad165b1571582cdc550951a2da8a936596), job.py (769f3d2fca2d7d9a1748acae47aef8f20bc4014a44bfac2fc2c6ee6caa44b886), merge.py (1e60d3d87cf000179d1787ebf782d630127f1f34ffd4a48b8563f74d3eabcc1c) (sha256)", "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>", "reused": "STATES-GROWTH-20261119-001B statelib.py, job.py and its runs; NAE-GROWTH naelib.py, bondlib.py"},
+ "forbidden_inputs": ["Changing a pool, a case or a prediction after reading any frozen comparison"],
+ "primary_observable": "M1, M3 and the readouts of research/MANY-VALUED-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the K4 example (two presentations exchanged by a renaming) and the advisor's pair",
+ "predictions": {"M1": "unique presentation on >= 95% of the 106 unread points", "M3": "refined rule defined and equal on every trajectory without a redundant knot"},
+ "decision_rules": {"each": "held iff no exception"},
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "minutes",
+ "disclosed_exploration": "pilot/ (the first 40 points in both pools; the advisor's pair as a smoke run)",
+ "amendments": []
+}

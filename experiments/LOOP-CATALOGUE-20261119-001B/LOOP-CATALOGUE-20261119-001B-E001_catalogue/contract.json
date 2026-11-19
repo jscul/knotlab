@@ -49,6 +49,16 @@
    "date": "2026-11-19T06:55Z",
    "kind": "memory rerun",
    "text": "27 part-U shards (U-001 to U-037, listed in the run) exceeded 1,500 MB per case (peak 1,972 MB at failure). They are rerun by job_mem.py (same cases, code and caps; --param only=...) with 5 GB per case on 2 workers (LOOP-CATALOGUE-B2, runs/loop-catalogue-mem). No other case changed; no comparison was read before this amendment."
+  },
+  {
+   "date": "2026-11-19T06:58Z",
+   "kind": "scoring code, serialization only",
+   "text": "merge.py: the verdicts are cast to bool before printing (a numpy bool from R2's comparison could not be serialized). No rule, threshold or case changed; the merge had produced no output before this fix."
+  },
+  {
+   "date": "2026-11-19T07:02Z",
+   "kind": "isolated rerun",
+   "text": "The memory rerun (B2) also exceeded 5 GB on its first shards and was stopped. The 27 part-U shards are rerun by job_iso.py: each start grown in its own child process limited to 3 GB of address space and 90 s, printing its counts after every round; a child stopped by the limit is recorded as 'over limit' with the counts it finished. Same starts, rounds and junction cap; the class rule is growth_class's, applied to the counts (B3, runs/loop-catalogue-iso)."
   }
  ]
 }

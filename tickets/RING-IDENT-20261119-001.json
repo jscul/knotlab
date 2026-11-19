@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "RING-PAIR-20261119-001",
+    "CLUSTER-ALL-20261119-001",
+    "FRESH-COUNT-20261118-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "RING-PAIR-20261119-001#2"
+    ]
+  },
+  "id": "RING-IDENT-20261119-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (19 November 2026) on RING-PAIR-20261119-001#2: prove the identification computed by RING-PAIR and CLUSTER-ALL, that in scope the junctions born in round t of the cheapest parity growth are the deck orbits of clusters of t + 1 points of the universal cover of the candidate map, with parents as the removable points. Consult the advisor before freezing the statement. Stop at a proof, or at the first step that needs a hypothesis the in-scope class does not give. Serves G17.",
+  "ownership": {
+    "root": true,
+    "scope_id": "RING-IDENT-20261119-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Complete 2026-11-19 (Successful; referee pending): proved that under RING-PAIR's scope plus a cycle in the knot graph the cheapest parity growth's round-t junctions are the deck orbits of clusters of t + 1 points of the unrolled candidate map, with parents the removable points and open distinctions the boundary points; the cycle condition is necessary (two stars joined at their centres, a Narrowing of RING-PAIR); the wider class's failing steps named.",
+  "status_class": "complete",
+  "stop_rule": "Stop at a proof, or at the first step needing a hypothesis the class does not give.",
+  "title": "Prove that a round's junctions are the clusters of the unrolled candidate map"
+}

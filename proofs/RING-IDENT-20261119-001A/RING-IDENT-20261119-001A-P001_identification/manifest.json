@@ -1,0 +1,70 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RING-IDENT-20261119-001A-P001",
+ "canonical_id": "RING-IDENT-20261119-001A-P001",
+ "proof": "RING-IDENT-20261119-001A-P001",
+ "ticket": "RING-IDENT-20261119-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "The identification: a round's junctions are the clusters of the unrolled candidate map",
+ "claim": "Under RING-PAIR's scope (S1)-(S4) and (S5) the knot graph has a cycle: for every t >= 0 the junctions born in round t of the cheapest parity growth are in bijection with the deck orbits of clusters of t + 1 points of the universal cover of the candidate complex that contain a knot; parents are the removable points (pairwise distinct) and loose distinctions the boundary points (Theorem). Lemma 1: the incidence girth is at least 8; Lemma 2: a cluster and a nontrivial translate fit only in a cluster at least 4 points larger; Lemma 4: the groups are exactly the removable-point sets of the next clusters. Proposition 5: (S5) cannot be dropped (two stars joined at their centres, in RING-PAIR's scope, grows 6, 6, 2, 2, 4, 6, ... against the model's 6, 6, 2, 0).",
+ "standard_statement": "Site animals on tree-like covers (Bethe lattices, Husimi trees: Fisher-Essam 1961; Harary-Uhlenbeck 1953); hyperbolic tree automorphisms (Serre 1980); block graphs (Harary 1963); reverse search over connected induced subgraphs (Avis-Fukuda 1996); halved graphs.",
+ "prior_work": "RING-PAIR-20261119-001 (the model H, computed), CLUSTER-ALL-20261119-001 (the wider rule with chains and relays), FRESH-COUNT-20261118-001 (the policy).",
+ "dependencies": [
+  "RING-PAIR-20261119-001",
+  "CLUSTER-ALL-20261119-001",
+  "FRESH-COUNT-20261118-001"
+ ],
+ "completion_gate": "The machine check (girth on 88 in-scope starts; invariants on 45 with a cycle); the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "written in full; statement and steps checked by the advisor before the freeze (it proposed S5); referee pending",
+  "independence": "machine_check.py enumerates clusters in the cover independently of covermodel.py and compares per-round (parents, fresh) multisets with the growth",
+  "novelty": "ingredients classical; the exact identification of the growth with cover clusters for every round not known to the advisor (no literature search run)"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "weave_height_criterion_and_lower_bound_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/manifest.json",
+  "identity": "proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/identity.json",
+  "proof": "proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md",
+  "result": "proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/result.json",
+  "machine_check": "proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/machine_check.py",
+  "machine_check_output": "proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/machine_check.json"
+ },
+ "attained_result": "Lemmas 0-4, the Theorem and Proposition 5 proved; the wider class located (relays, the floor, round-1 groups of three)."
+}

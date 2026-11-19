@@ -771,6 +771,16 @@ run, refereed)? Not by the newest ancestor, the one with the most parent
 chains or the one with the fewest, and nothing in the ancestry forces any pair:
 every junction could swap its partner within another pairing
 ([decision note](../research/NATIVE-SPINE-20261119-001/native_spine.md)).
+And is the rule two joined rings grow by a theorem (`RING-IDENT-20261119-001`,
+proof, referee pending)? Yes, with one condition it had left out: the knots'
+graph must contain a cycle. Then every round's junctions are exactly the
+clusters of the unrolled map of joins, each junction's parents are the points
+its cluster can lose and still hang together, and its open distinctions are the
+points just outside. It rests on one fact: no loop of the map of joins passes
+through fewer than four knots, so a cluster and a shifted copy of it fit only in
+a cluster at least four points larger. Without a cycle the map falls into finite
+pieces, and a piece that finishes early keeps growing through a relay
+([proof](../proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

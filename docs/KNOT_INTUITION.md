@@ -729,6 +729,13 @@ a triangle of knots or a double touch lets two presentations share the same stat
 Under parity which distinctions are loose is never visible in the states: it is a
 choice of which junction to drop, as Whitney's theorem says
 ([decision note](../research/STATES-GROWTH-20261119-001/states_growth.md)).
+And where it seemed undefined (`MANY-VALUED-20261119-001`, frozen run, referee
+pending), there was nothing to choose: at every one of the 146 points the allowed
+states have exactly one set of knots presenting them, up to renaming. With that
+rule, a growth reading only the states equals the cheapest growth on 1,805 of 1,806
+trajectories without a redundant knot. The one exception is a knot whose places are
+more than its constraint needs, which the states cannot see
+([decision note](../research/MANY-VALUED-20261119-001/many_valued.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

@@ -1,7 +1,7 @@
 # How does the law create a meet-once collision with other states?
 
 Epic `CREATED-PAIR-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `GROW-SMALL-20261119-001#2`.
-Assumptions A97, A108; goal G1. **Referee pending.**
+Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; one wording point corrected (Referee R1 below).**
 
 **Record.** Pre-registration, frozen before the run (commit `2f1b5c396`): [preregistration.md](preregistration.md). Code:
 [isos.py](../../experiments/CREATED-PAIR-20261119-001A/CREATED-PAIR-20261119-001A-E001_isos/isos.py). Result:
@@ -23,7 +23,8 @@ Assumptions A97, A108; goal G1. **Referee pending.**
 - **Why the pair parts at once.** The law grows on loose distinctions. No matching renaming carries A's loose distinctions onto B's
   (0 of 96), so the next round grows the two from different places and their tables part.
 - **How carried pairs differ.** In all 63 small carried pairs, some matching renaming keeps the loose distinctions; in fact 23,436
-  of their 23,496 renamings do. Their difference sits inside, two junctions away from the growing ends, so the law grows both alike.
+  of their 23,496 renamings do. Their unmatched junctions never carry a loose distinction across, so the law grows both alike;
+  how far those junctions sit from the growing ends varies (Referee R1 below).
   That is why all of them stay together a round further, and on full tables, by GROW-SMALL's referee.
 - **The created pair's difference is one move.** It is the move of UNIQUE-TABLE's static rivals: a junction trades one distinction
   for another and keeps every bond size. The move made here falls on the growing end, and that is why it does not last.
@@ -71,7 +72,8 @@ distinctions under some isometry, and the created one does not.
 - The sufficient direction (an isometry keeping the growing end extends a round) is the advisor's lemma under the hypothesis that
   the next table depends only on the table and the marked growing end. It is not proved here. The 6 carried pairs that fail E3b
   still persist, so keeping the loose distinctions, not the whole growing end, is what the data follow.
-- 23 of GROW-SMALL's pairs (round 2, larger than 15 vertices) were not analysed.
+- 23 of GROW-SMALL's pairs (round 2, larger than 15 vertices) were not analysed here. The referee analysed them: all 21,504 of
+  their isometries keep the loose distinctions, and every pair keeps the growing end, so E3 holds on all 86 carried pairs.
 
 ## Advisor
 
@@ -100,6 +102,18 @@ created pair shows that growth can bring together two stages with no isometry be
 
 **Corrections:** none. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A97 and A108 gain this study, status
 unchanged.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own backtracker. **Confirmed, no Block; one wording point corrected, logged in
+`docs/CORRECTIONS.md` (Not a block).**
+- **Confirmed.** All 64 rows reproduce: 23,496 and 96 isometries; 23,436 and 0 keeping the loose distinctions; the growing end kept
+  in 57 of 63 and in 0. The junction maps regrow exactly. The weight counts differ (122 against 125 words of weight 9).
+- **New from the referee.** On the 23 larger carried pairs skipped here (15 and 17 junctions), all 21,504 isometries keep the loose
+  distinctions and every pair keeps the growing end. So E3 holds on all 86 carried pairs.
+- **Corrected.** "Their difference sits inside, two junctions away from the growing ends" holds only for some pairs. The unmatched
+  junctions are at distance 2 from a live junction in 14 of the 63 small pairs and in all 23 larger ones. In the other 49 small
+  pairs at least one is adjacent to a live junction, and in the six 9-junction pairs one is live.
 
 ## Final report as sent (2026-11-19 14:44 UTC)
 

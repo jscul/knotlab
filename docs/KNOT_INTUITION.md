@@ -736,6 +736,12 @@ rule, a growth reading only the states equals the cheapest growth on 1,805 of 1,
 trajectories without a redundant knot. The one exception is a knot whose places are
 more than its constraint needs, which the states cannot see
 ([decision note](../research/MANY-VALUED-20261119-001/many_valued.md)).
+And under parity (`DROPPED-JUNCTION-20261119-001`, frozen run, referee pending)?
+There the allowed states never say which junction is the implied one, and the
+eddies depend on it: on all 23 tested, only the presentation the growth started
+from feeds itself, while the same states with another junction counted as implied
+only circulate, stall or close
+([decision note](../research/DROPPED-JUNCTION-20261119-001/dropped_junction.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

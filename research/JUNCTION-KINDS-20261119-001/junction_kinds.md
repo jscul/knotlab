@@ -123,3 +123,46 @@ round, both hold (post hoc).
 | 1 | A native spine: a rule read from the growth that picks each junction's partner two or three rounds back, or a proof that no rule of bounded radius can (two junctions alike to radius r that must be paired differently) | 3/3 — the self-feeding loop as a substitution the growth itself carries | 2/3 — the matchings exist and the ten starts are grown | try the rules "newest ancestor by birth order", "most chains" and "fewest chains" on the ten → stop at a rule that is a perfect matching on every round, or at an indistinguishable pair | Selected · awaiting go-ahead |
 | 2 | The y⁴(1 + y)² starts' spine: is c(t) = c(t − 4) + 2c(t − 5) + c(t − 6) carried by ancestry with two partners at lag 5, the (1 + y)² read as two ancestors? | 2/3 — whether W's factors are visible in the ancestry | 3/3 — the same code with multiplicities | Hall with multiplicity on the 15 → stop at the matchings, or a round where none exists | Alternative · proposed |
 | 3 | The explosive kind (`BREAK-EDDIES-20261119-001#2`), with part U's 624 starts still rising at the memory limit | 2/3 | 2/3 | as there | Alternative · deferred |
+
+## Final report as sent (2026-11-19 13:10 UTC)
+
+**Correction first (Block, now folded in):** STATES-GROWTH's "the allowed states fix the knots on 93% of small not-all-equal stages" was wrong. Counting the states' minimal constraints of every size, the figure is 79.8%. My search had stopped one place above the largest knot, a bound read from the knots themselves, so it wasn't a states-only reading. The simplest counterexample, which I rechecked by brute force, is one knot after one round. It already holds a constraint that is not a knot. The parity half (Whitney's theorem) was confirmed, and MANY-VALUED's refined rule is the states-only growth that survives. Details are under Corrections below.
+
+**Outcome of the transfer study:** No finite set of junction kinds can carry the count, but the growth's own ancestry can. 3 of 5 frozen predictions held as scored. The two misses are start rounds I fixed from one pilot start, and both hold read from each start's own first recurrent round. Closed, referee pending.
+
+- **Kinds never settle.** Each junction passes a share of each child back to it. The total it receives, its out-share, takes more values every round: from 2–8 distinct values early to 19–185 late, in all 30 starts. In an exact transfer every junction of one kind has the same out-share, so no finite set of kinds works. The catalogue's eddies behave the same way, even though there the cover gives an exact finite transfer. A junction is a growing cluster.
+- **Ancestry carries the count.** In the ten plastic-number eddies, c(t) = c(t − 2) + c(t − 3). At every round where that holds, each junction can be paired one to one with an ancestor two or three rounds back (10 of 10, 21 to 23 rounds each). So every junction gets one partner two rounds on and one three rounds on. That is the substitution a → b, b → c, c → ab, built from real parent chains.
+- **No local rule found picks those pairs.** No set of up to three common chain shapes picks the partners consistently in any of the ten. Whether some native rule does is the next question.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a transfer between kinds of junction | **Status:** Partially successful (3 of 5 held as scored; the 2 misses are start rounds; the stop rule's second case) | Out-shares and the coarsest exact transfer grow in all 30 starts; ancestry carries the recurrence as a perfect matching; no local chain type picks it |
+| Local direction: a finite object behind the break-shape eddies | Narrowed | Not a kind of junction; a substitution in the ancestry, with no native rule found |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Steady eddies are substitutions carried by parent chains; explosive starts remain unread |
+| Long-term goal: G17 | Obstruction learned | Local kinds can't carry the eddies' counts; their ancestry can |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A native spine: a rule read from the growth that picks each junction's partner, or a proof that no bounded-radius rule can | 3/3 | 2/3 | try "newest ancestor", "most chains", "fewest chains" on the ten → stop at a rule that matches every round, or two look-alike junctions that must be paired differently | Selected · awaiting go-ahead |
+| 2 | The y⁴(1 + y)² starts' spine: is the (1 + y)² two ancestors at lag 5? | 2/3 | 3/3 | Hall's test with multiplicity on the 15 → stop at the matchings or a round with none | Alternative |
+| 3 | The explosive kind, with part U's 624 still-rising starts | 2/3 | 2/3 | as in BREAK-EDDIES | Alternative · deferred |
+
+**Corrections** (from referee verdicts folded since my last report; all logged in docs/CORRECTIONS.md and knotlab's HISTORY.md, commit 05a0fffef):
+- **STATES-GROWTH, Block:** the 93% reading, as above. **Not blocks:**
+  - "Saturated stages never collide" is now "no two saturated stages collide".
+  - C1 is true by construction.
+  - A108's reach line now reads 79.8%.
+- **MANY-VALUED, not a block:** confirmed, and stronger than stated: uniqueness holds at all 1,031 points tested and 1,805 of 1,806 trajectories, counting constraints of every size. "Exactly one presentation" now carries its pool.
+- **DROPPED-JUNCTION, Narrowing:** the sample figures were grown with a shortcut implied-parity test. It differs from the cheapest growth on 19 of the 360 re-chosen presentations the referee checked, none of them original or on an eddy. **Not blocks:** the 70 choices that leave a junction under three places are now named, and "growing" starts is reworded.
+- **JUNCTION-MAP:** confirmed with nothing to fold, and marked refereed.
+
+This study made no new corrections.
+
+**Goals:** G17 checkpoint (obstruction learned). **Assumptions:** A108 history line (reach corrected; status Confirmed). **Basket:** `JUNCTION-MAP-20261119-001#1` taken, with its three duplicates. The basket's top open item is `ROUND-FREE-20261119-001#1` (3/3, 3/3). **Advisor:** Fable 5.2, before the freeze, staying within its text. It corrected my first reading, that unbounded degree alone rules out a transfer, and gave the out-share argument, the Hall test and the typed-spine test, all of which I adopted. It doubted the ancestry would carry the recurrence, and the matching shows it does.
+
+**Referee hand-off.** The decision note is `research/JUNCTION-KINDS-20261119-001/junction_kinds.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- `spinelib.out_shares` and `sum_kinds`;
+- one round's perfect matching with an independent matcher;
+- the biregular search behind J4.

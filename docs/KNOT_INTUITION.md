@@ -899,6 +899,17 @@ pairwise, 11 knots in all, growing at 2.3830 a round, past the golden ratio of
 the rings of live knots. A first-round group of three is exactly a cycle of
 three blocks, and that is where the class ends
 ([decision note](../research/DEAD-CAP-20261119-001/dead_cap.md)).
+And past that edge, where groups of three exist (`EXPLOSIVE-20261119-001`,
+frozen run, referee pending)? Blow-up is expected there (the owner's direction,
+A110), so the question is what a sample shows. A group of three acts like a
+filled cell: the map read with each such cycle filled predicts the growth,
+wherever groups of three don't overlap. The explosive kind needs overlapping
+groups and knots of more than five places: none of 2,191 starts within five
+places explodes, while 16 of 1,000 within seven do. The smallest explosive start
+has six knots. One group of 309 parents swallows its growth, and the 9 junctions
+left then join in every way exactly once, 36, 84, 126, 126, 84, 36, 9 and 1 of
+them, before it ends. So it does not grow without bound
+([decision note](../research/EXPLOSIVE-20261119-001/explosive.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

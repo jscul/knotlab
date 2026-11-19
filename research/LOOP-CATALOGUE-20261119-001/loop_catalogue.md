@@ -1,7 +1,8 @@
 # Which loops of knots feed themselves? A catalogue
 
 Epic `LOOP-CATALOGUE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking
-`SCALE-SHARE-20261119-001#1`). Goal G17. **Referee pending. Part U is pending (stress test running, see Record).**
+`SCALE-SHARE-20261119-001#1`). Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed with one Narrowing, no Block,
+folded in on 19 November (see Referee). **Part U is pending (stress test running, see Record).**
 
 The owner's idea behind it, in his words: "loops of logic, then like eddies in a river that are shared across the universe
 essentially there are 'core-libs' kind of processing" (18 November, Pacific time). It is recorded as his direction, not a result,
@@ -90,6 +91,12 @@ in THEORY.md and as A109.
     until all of part U is read.
   - So "few in kind" holds where the rule holds. The break shapes add self-feeding loops that nothing here describes yet, and they
     are where the next work is.
+  - **Part U is not every start the rule cannot decide** (referee R1). The search counted a start outside the rule's scope with no
+    loop through distinct blocks as no eddy, without growing it. The referee's exhaustive search to six knots (3,693 starts) found
+    one such start that is a minimal eddy: two triangles of knots joined by one shared distinction, with one spare. It grows 6, 7,
+    9, 10, 12, 13, 16, 19, 22, 25, 29, 35, 41, 47, … and reaches 1,646 at round 36 (ratio about 1.16). It is in neither the
+    catalogue nor part U. Two more such shapes exceed 3 GB in their first rounds, class unknown: two triangles joined by two shared
+    distinctions, and the three-regular six-knot graph, both with spares.
   - In random starts of 3 to 5 places the second break shape never fed (42 of 42). Among the catalogue's larger knots, 33 of the
     349 with that shape did.
 - **The same under not-all-equal.** Every catalogue entry grows identically under both laws for 12 rounds, as
@@ -109,7 +116,7 @@ in THEORY.md and as A109.
 | C3 | minimal one-loop eddies have W(1) = 2 | **held** | 4 of 4 (the ring of eight, with two loops, is read by R2) |
 | C4 | no two-loop catalogue entry to eight knots | **held** | all five rational |
 | I1 | interface starts equal their rule series | **held** | 105 of 105 |
-| I2 | the interface factors at a loop knot | failed as scored | 42 of 64; the scorer kept the advisor's (1 + y)^2 for the path where the pre-registration says (1 + y)/(1 − y), and counted hung side knots as loop knots. Re-scored to the pre-registration's wording, 56 of 56 agree (post hoc) |
+| I2 | the interface factors at a loop knot | failed as scored | 42 of 64; the scorer kept the advisor's (1 + y)^2 for the path where the pre-registration says (1 + y)/(1 − y), and its on_loop flag also marked 8 hung side knots (knots in a loop block but off the cycle) as loop knots; those 8 carry the nested factors the product law gives. Re-scored at the true loop knots, 56 of 56 agree (post hoc) |
 | I3 | every interface raises the rate; ring joins algebraic | failed | 100 of 105 raised; the 5 others sit on the other loop of the ring of eight and leave its rate; all 21 ring joins algebraic |
 | R1 | rings with one spare follow W; bare rings constant | failed as scored | 9 of 12; for the even rings W was not computed (two loops), and their rates equal the predicted roots (post hoc) |
 | R2 | the ring of eight's placements | **held** | 1.1673 and 1.3247 (the plastic number), as the advisor predicted |
@@ -174,9 +181,32 @@ not proved in a proof record, and they hold where the rule does. The run checks 
   known. Classes come from at most 30 rounds or 5,000 junctions, and "exp?" means not quasi-polynomial at any lag up to 12 and
   still rising.
 - **Scope of the search:** simple knot graphs (each pair of knots shares at most one distinction), bare sizes plus at most two
-  spares, up to eight knots.
+  spares, up to eight knots. Starts outside the rule's scope with no loop through distinct blocks were counted as no eddy without
+  growing them. At six knots that misses one minimal eddy (referee R1).
+- **"Every minimal eddy that the rule can read is a ring with one extra choice"** stays true as worded. But the catalogue together
+  with part U is not every minimal eddy to eight knots.
 - **One policy (A104)** and the bare-size convention (A107). E4's thresholds were set from the pilot, and they hold only on its
   sampler's measure.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread: confirmed with one Narrowing,
+no Block.
+- **Confirmed.**
+  - The transfer argument, P + Q/(1 − W).
+  - W against growth on all 122 starts: all 74 with a recorded W annihilate exactly, 18 of them needing the endless chain's tail
+    c·y^m/(1 − y).
+  - The post hoc rescorings: C2; I2, 56 of 56 at true loop knots; R1.
+  - The rates are all roots of x^(L+1) = x + 1 and depend on the loop length L, not the number of knots. The ring of eight acts as
+    two loops of four, and the rings of ten and twelve give L = 5 and 6. Rings of four and six feed nothing.
+  - Minimality: all 37 one-step reductions are quasi-polynomial.
+  - E1 and E2: all 49 regrown and exponential, none of 184 sampled non-eddies.
+  - Part U: 32 of 34 regrown in full, and the theta and one eight-knot start equal to rounds 18 and 7. The 1,080 pending were not
+    checked.
+- **Folded in the same day**, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`: **Narrowing (completeness).** Part U is
+  not every start the rule cannot decide. A minimal eddy outside both lists exists at six knots, two triangles joined by one shared
+  distinction with one spare, and two more shapes are unknown (The answer, Limitations). The on_loop wording is fixed (the I2 row).
+  The three shapes go to `BREAK-EDDIES-20261119-001`.
 
 ## Advisor
 

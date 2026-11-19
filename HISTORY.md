@@ -4,6 +4,15 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the loop catalogue refereed
+
+- The loop catalogue (`LOOP-CATALOGUE-20261119-001`, [decision note](research/LOOP-CATALOGUE-20261119-001/loop_catalogue.md))
+  was refereed and confirmed: the transfer argument, the round-weights against growth on all 122 starts, the rescorings, and the
+  family of rates, the roots of x^(L+1) = x + 1 by loop length.
+- **Narrowed.** Its list of starts the rule could not decide left out the starts outside the rule's scope that showed no loop in
+  the rule's blocks. One of them is a minimal eddy at six knots: two triangles of knots joined once, with a spare. Two more such
+  shapes are unknown.
+
 ## 19 November 2026: the cluster rule's second break
 
 - **Narrowed.** The referee of `CLUSTER-ALL-20261119-001` ([decision note](research/CLUSTER-ALL-20261119-001/cluster_all.md))

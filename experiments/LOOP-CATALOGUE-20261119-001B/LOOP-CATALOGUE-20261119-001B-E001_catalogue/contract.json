@@ -22,10 +22,33 @@
  ],
  "primary_observable": "E1-E4, C1-C4, I1-I3, R1-R2, U1 of research/LOOP-CATALOGUE-20261119-001/preregistration.md",
  "cheapest_meaningful_control": "growth classes of non-eddies (controls one in 400 / 100), gates G1-G6 (checks_output.json)",
- "predictions": {"E1": "rule-eddies exponential, exact ones equal the rule", "E2": "rule non-eddies not exponential", "E3": "meeting hyperedges never exponential", "E4": "descriptive thresholds", "C1": "catalogue entries exponential, equal, NAE equal", "C2": "W root = rule rate", "C3": "W(1) = 2", "C4": "no algebraic entry to eight knots", "I1": "interfaces equal the rule", "I2": "interface factors", "I3": "interfaces raise the rate; ring joins algebraic", "R1": "rings with a spare", "R2": "ring of eight placements", "U1": "undecided: meeting hyperedges not exponential"},
- "decision_rules": {"each": "held iff no exception"},
+ "predictions": {
+  "E1": "rule-eddies exponential, exact ones equal the rule",
+  "E2": "rule non-eddies not exponential",
+  "E3": "meeting hyperedges never exponential",
+  "E4": "descriptive thresholds",
+  "C1": "catalogue entries exponential, equal, NAE equal",
+  "C2": "W root = rule rate",
+  "C3": "W(1) = 2",
+  "C4": "no algebraic entry to eight knots",
+  "I1": "interfaces equal the rule",
+  "I2": "interface factors",
+  "I3": "interfaces raise the rate; ring joins algebraic",
+  "R1": "rings with a spare",
+  "R2": "ring of eight placements",
+  "U1": "undecided: meeting hyperedges not exponential"
+ },
+ "decision_rules": {
+  "each": "held iff no exception"
+ },
  "stop_rule": "One run; read-out; referee hand-off; report.",
  "runtime": "about an hour",
  "disclosed_exploration": "pilot/ (census check, ~1M random starts at 6-12 knots, catalogue searches, smoke run), recorded in the pre-registration",
- "amendments": []
+ "amendments": [
+  {
+   "date": "2026-11-19T06:55Z",
+   "kind": "memory rerun",
+   "text": "27 part-U shards (U-001 to U-037, listed in the run) exceeded 1,500 MB per case (peak 1,972 MB at failure). They are rerun by job_mem.py (same cases, code and caps; --param only=...) with 5 GB per case on 2 workers (LOOP-CATALOGUE-B2, runs/loop-catalogue-mem). No other case changed; no comparison was read before this amendment."
+  }
+ ]
 }

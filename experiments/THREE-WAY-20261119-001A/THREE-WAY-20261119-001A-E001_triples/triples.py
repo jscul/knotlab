@@ -28,10 +28,18 @@ GP = ROOT / 'experiments/GROWN-PAIR-20261119-001A/GROWN-PAIR-20261119-001A-E001_
 sys.path.insert(0, str(UNIQ))
 import uniq as U  # noqa: E402
 import importlib.util  # noqa: E402
+# pairs2.py does `import job`, meaning GROWN-PAIR's job.py; uniq.py already holds the census's job.py under that name
+_census_job = sys.modules['job']
+_j = importlib.util.spec_from_file_location('gp_job', GP / 'job.py')
+_gp_job = importlib.util.module_from_spec(_j)
+sys.modules['gp_job'] = _gp_job
+_j.loader.exec_module(_gp_job)
+sys.modules['job'] = _gp_job
 _s = importlib.util.spec_from_file_location('gp_pairs2', GP / 'pairs2.py')
 P2 = importlib.util.module_from_spec(_s)
 sys.modules[_s.name] = P2
 _s.loader.exec_module(P2)
+sys.modules['job'] = _census_job
 A_UNIQ = ROOT / 'artifacts/UNIQUE-TABLE-20261119-001A/UNIQUE-TABLE-20261119-001A-E001_unique'
 A_GP = ROOT / 'artifacts/GROWN-PAIR-20261119-001A/GROWN-PAIR-20261119-001A-E001_pairs'
 

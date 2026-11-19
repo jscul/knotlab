@@ -3231,6 +3231,10 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `BREAK-EDDIES-20261119-001`: the self-feeding starts where the cluster rule breaks are the same kinds. 118 of 122
+    grow at rates of the catalogue's family, built from the same pieces, with loops of two and three steps made by first-round groups
+    of three. A separate explosive kind, whose groups keep growing, is not yet described. So few in kind holds for the steady eddies;
+    the explosive kind keeps it under challenge.
   - 2026-11-19 · First test by `LOOP-CATALOGUE-20261119-001`, which supports it where the cluster rule holds. Up to eight knots, every
     minimal self-feeding loop there is a ring with one extra choice (rates the roots of x^(L+1) = x + 1). Every one-loop rate is
     the root of W = 1 for a round-weight built from a few pieces, which multiply when parts are joined. Where the rule breaks, more

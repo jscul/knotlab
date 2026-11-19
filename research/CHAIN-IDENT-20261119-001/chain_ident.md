@@ -59,3 +59,38 @@ G17. **Referee pending.**
 | 1 | Relays (`RING-IDENT-20261119-001#1`): a finished piece's top gets a chain; prove the count with that chain added at the top | 3/3 — with it, every tree start of the census is a theorem | 3/3 — the mechanism and examples are known | state the relay's chain as a ray hung at the top cluster, check on the path of five and the spider → stop at a proof, or the first relay that is not one ray | Alternative · next in the basket |
 | 2 | Which trees give which dimension: count bare trees by their largest number of degree-2-hung leaves in one parity class, against CLUSTER-ALL's census shares | 2/3 — explains why two is typical | 3/3 — the census exists | tally the census's trees by R → stop at the share of two, compared with the measured share | Alternative · proposed |
 | 3 | First-round groups of three (`RING-IDENT-20261119-001#3`) | 2/3 | 1/3 | as there | Alternative · deferred |
+
+## Final report as sent (2026-11-19 14:04 UTC)
+
+**Outcome:** The theorem extends to starts that take distinctions from the floor, and the growth's dimension becomes a theorem for tree-shaped starts. The step the advisor feared would not be invariant turns out to be invariant: the floor's endless chains hang from points attached to the knots themselves, so they are part of the map of joins. Closed, referee pending.
+
+- **The chains in the map.** A knot's leftover open distinctions make points hung on that knot.
+  - With three or more open distinctions, the point is a dead end.
+  - With two, one endless chain hangs from it.
+  - With one, two chains hang from it.
+- **The theorem with chains.** With the chains added, round t's junctions are again exactly the clusters of t + 1 points. The one-parent junctions are the clusters that run out along a chain, and the floor's extra distinction is always the chain's next point. Every case of the count checks, and the advisor confirmed the table.
+- **The dimension.** Take a start whose knot graph is a tree, and in which no piece of the map finishes early (no relay). Then the number of junctions per round is eventually a polynomial of degree R − 1, where R is the largest number of chains in one piece. In a bare tree, each leaf hanging from a knot of degree 2 gives one chain. So dimension two means two such leaves at even distance, or one of the two smallest trees. The path of four knots, whose two such leaves are at odd distance, stays constant at 4.
+- **The check.** All 81 starts of up to seven knots in the class agree, round by round. All 137 starts with a relay differ, as they should. The advisor's predicted counts all hold: the path of three gives 2t + 2, a single pair of knots gives 2(t + 1), and the path of four gives a constant 4.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the floor's chains in the cover | **Status:** Successful (proved) | The chains hang from the knots' own offshoot points; every case checks; 81 of 81 starts agree |
+| Local direction: an exact model of the cheapest parity growth | Continue | Proved with the floor; relays and first-round groups of three remain |
+| Broader exploration: what the cheapest growth builds | Known alternatives | On trees, polynomial of degree chains − 1; with cycles, rational or algebraic |
+| Long-term goal: G17 | Capability gained | The census's dimensions follow from the map for trees without relays |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Relays: add a chain at a finished piece's top and prove the count | 3/3 — every tree start of the census becomes a theorem | 3/3 | the path of five and the spider first → stop at a proof, or a relay that is not one chain | Alternative · next in the basket |
+| 2 | Which trees give which dimension, against CLUSTER-ALL's census shares | 2/3 — why two is typical | 3/3 | tally the census's trees by R → stop at the share of two | Alternative · proposed |
+| 3 | First-round groups of three | 2/3 | 1/3 | as in RING-IDENT | Alternative · deferred |
+
+**Corrections:** none new. **Goals:** G17 checkpoint (capability gained). **Assumptions:** none changed. **Basket:** `RING-IDENT-20261119-001#2` taken, and #1 (relays) stays next. **Advisor:** Fable 5.2, before the freeze, staying within its text. It confirmed the case table and the description of the one-parent clusters. It replaced my "at least two live knots" condition with the right one (at least two loose distinctions per piece, which holds automatically here), named the relay as what the class excludes, and fixed the corollary's coefficient and hypothesis. Its four predictions all held.
+
+**Referee hand-off.** The proof is `proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md`, and the decision note is `research/CHAIN-IDENT-20261119-001/chain_ident.md`. Please check:
+- the fresh table and the implied cases;
+- Lemma 0.5 (one-parent clusters);
+- Theorem 2's count;
+- `machine_check.py`'s extended complex.

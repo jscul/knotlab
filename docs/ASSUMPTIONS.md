@@ -3366,6 +3366,10 @@ evidence: results and their status come from the records each entry links.
   - **No stable sampled behaviour.** It would also be tested if the explosive kind admits no stable sampled behaviour at all:
     shares that do not settle as samples grow, under every weighting tried. Then sampling would not read it.
 - **History.**
+  - 2026-11-19 · `WALL-READ-20261119-001` ([decision note](../research/WALL-READ-20261119-001/wall_read.md)): a blow-up that
+    provably never ends exists and is read exactly, the partnered start: each round about two to the power of half the one before.
+    A part of one growth, read exactly, bounds its next round from below, a first sampling inside one growth. On the 14 sampled
+    explosive starts those bounds read weakly. Status unchanged.
   - 2026-11-19 · `MERGE-BURST-20261119-001` ([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)): of 16
     explosive starts, 2 are read, and both end after one merge and the binomial burst of one block (9 and 781 junctions). 14 are
     unread within 6 GB and 15 minutes. None is shown to keep growing. Status unchanged.

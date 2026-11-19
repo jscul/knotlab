@@ -1,0 +1,84 @@
+{
+ "cases": 31,
+ "not_ok": [],
+ "M1": {
+  "points": 106,
+  "unique_and_the_stage": 106,
+  "share": 1.0,
+  "by_start": {
+   "starts": 106,
+   "all_unique": 106
+  },
+  "M_pool": {
+   "1": 146
+  },
+  "stage_pool": {
+   "1": 146
+  },
+  "pass_": true
+ },
+ "M2": {
+  "same_states": true,
+  "grow_A": [
+   0
+  ],
+  "grow_B": [
+   1,
+   2,
+   3
+  ],
+  "pass_": true
+ },
+ "M2_readout": {
+  "points_with_several_classes_M_pool": 0,
+  "agree": 0
+ },
+ "M3": {
+  "trajectories": 1939,
+  "without_redundant_knot": 1806,
+  "undefined_or_disagree": 1,
+  "examples": [
+   {
+    "key": [
+     [
+      3,
+      3,
+      3,
+      5
+     ],
+     [
+      0,
+      1,
+      2,
+      1,
+      2,
+      1
+     ]
+    ],
+    "verdicts": [
+     "unique"
+    ],
+    "agree": [
+     false
+    ],
+    "redundant": false
+   }
+  ],
+  "pass_": false
+ },
+ "T_readout": {
+  "final": {
+   "saturated": 1663,
+   "unique": 240,
+   "none": 36
+  },
+  "ever_unique": 244,
+  "ended_several": 0,
+  "ended_none": 36
+ },
+ "verdicts": {
+  "M1": true,
+  "M2": true,
+  "M3": false
+ }
+}

@@ -158,6 +158,13 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: three-way rigidity, bounded
+
+- **Blocked at size.** The conjecture that pair and three-way bond distances force the allowed states of every grown stage
+  (`THREE-RIGID-20261119-001`, [decision note](research/THREE-RIGID-20261119-001/three_rigid.md)) holds on all 211,643 grown stages
+  of up to 14 junctions tested. It fails at 239 junctions (Codex's `GROWN-END-READING-20261119-001`, refereed). What does suffice
+  is proved: bond distances over sets as large as the largest knot.
+
 ## 19 November 2026: meeting once is no repair
 
 - **Narrowed.** After the meet-twice counterexample, the reading "distance plus the growing end carries one round" was left open

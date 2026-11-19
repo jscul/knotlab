@@ -20,6 +20,10 @@ record it comes from. All nine are refereed.
   (GROWN-END-SWAP, refereed), and another from a seven-junction start that meets once (GROWN-END-MEET-ONCE, refereed;
   reproduced in PROVE-B). So the clean premise fails on what the law grows, and meeting once is no repair. Every failing swap changes three-way distances,
   so pair plus three-way distances plus the growing end is the form still open.
+- **Later (pointer only; the summary was not rewritten).** Pair plus three-way distances hold on 211,643 grown stages of up to 14
+  junctions but fail at 239 junctions (THREE-RIGID, Block to R3 at all sizes); readings over sets as large as the largest knot
+  always suffice (THREE-RIGID's Theorem M). Codex's LATER-BOND-READING and BOND-READING-SCALE, both **referee pending**, show
+  that no fixed number of distinctions suffices and that the worst case grows linearly in junctions.
 
 ## Proved (refereed)
 

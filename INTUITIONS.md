@@ -2946,7 +2946,14 @@ tomorrow. All the studies below are refereed
   that holds all three. With it added, every such pair found comes apart
   ([THREE-WAY-20261119-001](research/THREE-WAY-20261119-001/three_way.md),
   [TRIPLE-GROWN-20261119-001](research/TRIPLE-GROWN-20261119-001/triple_grown.md)).
-  Whether pair and three-way distances together always suffice is open.
+  Pair and three-way distances suffice on all 211,643 grown stages of up to 14
+  junctions tested, but not at every size: Codex built a 239-junction stage
+  they do not settle. Reading over sets as large as the largest knot always
+  suffices ([THREE-RIGID-20261119-001](research/THREE-RIGID-20261119-001/three_rigid.md),
+  Theorem M). Codex's later studies, that no fixed number suffices and how the
+  number needed grows, are referee pending
+  ([LATER-BOND-READING-20261119-001](research/LATER-BOND-READING-20261119-001/decision.md),
+  [BOND-READING-SCALE-20261119-001](research/BOND-READING-SCALE-20261119-001/decision.md)).
 - **A round reads only the live roster (proved).** One round of the law reads
   only the **live roster**: which junctions hold a loose distinction, how many,
   and which sets of them one junction meets. And a renaming that keeps every

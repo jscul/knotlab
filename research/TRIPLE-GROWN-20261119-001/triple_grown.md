@@ -1,7 +1,7 @@
 # Do three-way readings separate the reached and static meet-once collisions?
 
 Epic `TRIPLE-GROWN-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `GROW-SMALL-20261119-001#1`.
-Assumption A97; goal G1. **Referee pending.**
+Assumption A97; goal G1. **Refereed (R1): confirmed, no Block; two statistics corrected (Referee R1 below).**
 
 **Record.** Pre-registration, frozen before the run (commit `03c06ceb9`): [preregistration.md](preregistration.md). Code:
 [triples.py](../../experiments/TRIPLE-GROWN-20261119-001A/TRIPLE-GROWN-20261119-001A-E001_triples/triples.py). Result:
@@ -17,15 +17,15 @@ Assumption A97; goal G1. **Referee pending.**
   So the picture of THREE-WAY holds on the new collisions: pair distances miss some allowed states, pair plus three-way readings
   miss none found, and the states themselves miss which junction holds what.
 - **Not automatic.** If the junctions were all three-place, the three-way readings would find them directly. Here they are not:
-  the three-distinction bonds never span the equations (ranks 2 to 6 against 6 to 9). So the separation is a finding, not a
+  the three-distinction bonds never span the equations (ranks 0 to 6 against 6 to 7 on the static pairs, 2 to 11 against 9 to 17 on the reached ones). So the separation is a finding, not a
   restatement.
-- **Mostly by counting.** In 1,000 of the 1,034 static pairs and 73 of the 87 reached ones, simply counting how many triples have
-  each reading already tells the two apart. The rest need the full matching.
+- **By counting alone.** In every pair, all 1,034 static and all 87 reached, simply counting how many triples have each reading
+  already tells the two apart (corrected after the referee; the first count compared the tallies one way only).
 
 | Pairs with one table and other states | Pairs | Separated by three-way readings | … by counts of readings alone | Exact readings |
 | --- | ---: | ---: | ---: | ---: |
-| Static (PARENT-RULE, 6 and 7 junctions) | 1,034 | **1,034** | 1,000 | 1,034 |
-| Reached (GROW-SMALL, 9 to 17 junctions) | 87 | **87** (the created pair included) | 73 | 64 (23 read to 8; separation there is exact) |
+| Static (PARENT-RULE, 6 and 7 junctions) | 1,034 | **1,034** | 1,034 | 1,034 |
+| Reached (GROW-SMALL, 9 to 17 junctions) | 87 | **87** (the created pair included) | 87 | 64 (23 read to 8; separation there is exact) |
 
 | # | Prediction | Verdict |
 | --- | --- | --- |
@@ -82,6 +82,18 @@ held.
 | 4 | B203, B204 | 2/3 | 3/3, 2/3 | as recorded | Alternative · deferred |
 
 **Corrections:** none. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A97 gains this study, status unchanged.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), exact readings and its own code. **Confirmed, no Block; two statistics corrected, logged in
+`docs/CORRECTIONS.md` (Not a block).** In all 1,121 pairs a renaming keeps the pair table and none keeps pair and three-way readings
+together. The created pair is separated (its three-distinction bonds have rank 5 against equation rank 12). The three-distinction
+bonds span the equations in none of the 2,242 arrangements.
+- **Counts of readings.** "1,000 and 73" became all 1,034 and all 87. `triples.py` compared the tallies of triples per reading one
+  way only, with a one-sided difference of counters, so it missed pairs where one side has more read triples at some reading but
+  none fewer. The script now compares them both ways, and the rerun gives all 1,034 and all 87. T1 and T2 are unchanged.
+- **Ranks.** "Ranks 2 to 6 against 6 to 9" matched neither population. The ranks are 0 to 6 against 6 to 7 (static) and 2 to 11
+  against 9 to 17 (reached). "Never span" stands.
 
 ## Final report as sent (2026-11-19 14:35 UTC)
 

@@ -149,7 +149,8 @@ def test_pair(item):
         verdict = 'undecided (readings read to 8 agree)'
     return {'kind': kind, 'meta': meta, 'exact': exact, 'distinctions': len(la), 'junctions': [len(a), len(b)],
             'pair_tables_isomorphic': pair_iso, 'verdict': verdict,
-            'triples_differing_on_counts': sum((Counter(map(str, ta.values())) - Counter(map(str, tb.values()))).values()),
+            # both ways (the referee's correction: a one-way difference of Counters misses pairs where one side only has more)
+            'triples_differing_on_counts': int(Counter(map(str, ta.values())) != Counter(map(str, tb.values()))),
             'rank_of_three_bonds': [ra[0], rb[0]], 'rank_of_states': [ra[1], rb[1]]}
 
 

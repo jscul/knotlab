@@ -93,6 +93,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: three-way readings on the new collisions refereed
+
+- The study of three-way readings on meet-once collisions (`TRIPLE-GROWN-20261119-001`,
+  [decision note](research/TRIPLE-GROWN-20261119-001/triple_grown.md)) was refereed and confirmed: pair plus three-way readings
+  separate all 1,034 static and 87 reached pairs.
+- **Corrected (not a block).** Counting how many triples have each reading already separates every pair, not 1,000 and 73; and
+  the quoted ranks of the three-distinction bonds were wrong (they never span the equations, as stated).
+
 ## 19 November 2026: what the law reaches, from larger starts
 
 - **Narrowed.** Two studies said that where junctions meet once, the stages the law reaches keep their allowed states in their

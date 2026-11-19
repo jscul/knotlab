@@ -655,7 +655,7 @@ showed this because its starts, of at most five knots, are too small to collide,
 and creation is rare. So distances alone do not carry the allowed states of what
 the law builds ([decision note](../research/GROW-SMALL-20261119-001/grow_small.md)).
 Do three-way readings catch these too (`TRIPLE-GROWN-20261119-001`, computed,
-referee pending)? Yes: with the smallest bond holding three distinctions added,
+refereed)? Yes: with the smallest bond holding three distinctions added,
 all 1,034 static and all 87 reached pairs come apart, and not because the readings
 simply find the knots ([decision note](../research/TRIPLE-GROWN-20261119-001/triple_grown.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen

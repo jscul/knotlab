@@ -158,7 +158,7 @@ evidence: results and their status come from the records each entry links.
 | [A101](#a101--the-number-of-orders-a-growth-rule-keeps-is-given-two) | The number of orders a growth rule keeps is given: two | scope | Under challenge |
 | [A102](#a102--an-endless-bases-counts-are-read-in-its-maximal-entropy-weighting) | An endless base's counts are read in its maximal-entropy weighting | reading | Assumed |
 | [A103](#a103--a-bases-values-are-data-which-value-is-called-1-is-part-of-the-base) | A base's values are data: which value is called 1 is part of the base | reading | Assumed |
-| [A104](#a104--parity-growth-is-judged-under-the-complete-round-joining-rule) | Parity growth is judged under the complete-round joining rule | scope | Assumed |
+| [A104](#a104--parity-growth-is-judged-under-the-complete-round-joining-rule) | Parity growth is judged under the complete-round joining rule | scope | Under challenge |
 | [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
 | [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Assumed |
 | [A107](#a107--small-joins-of-a-ring-and-a-two-fold-piece-are-weighted-uniformly-over-one-bare-census) | Small joins of a ring and a two-fold piece are weighted uniformly over one bare census | measure | Assumed |
@@ -3077,7 +3077,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A104 · Parity growth is judged under the complete-round joining rule
 
-**Assumed** · 2026-11-18 · scope
+**Under challenge** · 2026-11-19 · scope
 
 - **Statement.** Growth of parity bases from one knot is studied under the joining rule of `CUBIC-FROM-A-KNOT-20261117-001`
   applied in complete rounds: every set of current junctions that pairwise share a parent and share none all together is joined
@@ -3094,6 +3094,9 @@ evidence: results and their status come from the records each entry links.
   rule avoid trees without the complete round, and what does it build? The cheapest discriminator is the serial rule with a
   distance-only preference (join before extending) from one knot, compared with the complete round on the same seeds.
 - **History.**
+  - 2026-11-19 · Under challenge by `ROUND-FREE-20261119-001`: serial laws that read only the present presentation build
+    order-dependent, thinner structures and can decide whether a growth lives; the round does one job, telling each new junction
+    how many partners it will have, and in the cluster rule's scope the cluster map does that job without a tick (round = size − 1).
   - 2026-11-18 · Adopted by `FRESH-COUNT-20261118-001`.
 
 ### A105 · A growth starts from the smallest knot

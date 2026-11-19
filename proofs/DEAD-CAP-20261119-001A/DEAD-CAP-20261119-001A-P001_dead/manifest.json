@@ -1,0 +1,72 @@
+{
+ "schema_version": 3,
+ "artifact_id": "DEAD-CAP-20261119-001A-P001",
+ "canonical_id": "DEAD-CAP-20261119-001A-P001",
+ "proof": "DEAD-CAP-20261119-001A-P001",
+ "ticket": "DEAD-CAP-20261119-001A",
+ "kind": "proof",
+ "status": "Partial",
+ "title": "The map within five places, dead knots included",
+ "claim": "In the proved class within five places, dead knots allowed: Lemma 1, blocks have 2 to 5 points, meet in at most one, and each live knot's blocks have sizes summing to at most five (profiles none, {2}, {3}, {4}, {5}, {2,2}, {2,3}); Lemma 2, a piece is a skeleton of 3-blocks of degree at most 3 joined through 2-blocks, the class boundary is no cycle of two or three blocks (a cycle of three blocks is a group of three), and rays start only at lone points and ends of 2-blocks; Theorem 3, every piece's count is given exactly by a branch system with pointing; Theorem 4, the growth class is the piece's rank: trees polynomial (dimension = rays), one cycle constant when bare else exponential at the root of W(1/x) = 1, two or more cycles exponential at an algebraic rate 1/rho (Drmota-Lalley-Woods); the theta of two dead hubs grows at 2.3830.",
+ "standard_statement": "Drmota-Lalley-Woods theorem for positive polynomial systems; animals on tree-like covers.",
+ "prior_work": "CAP-CHAINS-20261119-001, RING-CORES-20261119-001, DOUBLE-IDENT-20261119-001, RING-IDENT-20261119-001, RELAY-IDENT-20261119-001; Harary and Uhlenbeck (Husimi trees).",
+ "dependencies": [
+  "RING-CORES-20261119-001",
+  "CAP-CHAINS-20261119-001",
+  "DOUBLE-IDENT-20261119-001",
+  "RELAY-IDENT-20261119-001"
+ ],
+ "completion_gate": "The machine check (job.py through scripts/longrun.py, merged): D1-D6 of proof.md; the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "independence": "deadlib.py builds the map and the branch system from the definitions; the engine grows each realized start; DOUBLE-IDENT's code classifies and reads it",
+  "novelty": "extension of the identification line to dead knots"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "Run the machine check (D1-D6)"
+ ],
+ "paths": {
+  "manifest": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/manifest.json",
+  "identity": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/identity.json",
+  "proof": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/proof.md",
+  "result": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/result.json",
+  "machine_check": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/job.py",
+  "machine_check_output": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/machine_check.json"
+ },
+ "attained_result": "Statement and proof written; machine check pending."
+}

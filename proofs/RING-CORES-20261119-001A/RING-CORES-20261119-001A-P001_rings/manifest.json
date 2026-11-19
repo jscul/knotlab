@@ -1,0 +1,72 @@
+{
+ "schema_version": 3,
+ "artifact_id": "RING-CORES-20261119-001A-P001",
+ "canonical_id": "RING-CORES-20261119-001A-P001",
+ "proof": "RING-CORES-20261119-001A-P001",
+ "ticket": "RING-CORES-20261119-001A",
+ "kind": "proof",
+ "status": "Partial",
+ "title": "Rings within five places: the eddies and their rates",
+ "claim": "In the proved class with every knot live and at most five places: Lemma 1, a ring-core start is a ring of L = 5 or L >= 7 knots with hung knots at least three apart and forced open counts except spares (plain core knots 0 or 1, hung knots 0 to 2); Lemma 2, its map is one ring of blocks (L odd) or two (L even); Theorem 3, the per-round count of a piece is [z^(t+1)] of sum_i lambda_(i-1) sum_m prod v_k / (1 - W) + sum over leaves z(1+z)^b, W = z^n (1+z)^A prod (1 + z(1+z)^b); Theorem 4, a bare piece makes n junctions every round, any other grows at the root x > 1 of W(1/x) = 1; Corollary 5, within the cap the in-class eddies are exactly the rings with a hung knot or a spare.",
+ "standard_statement": "Transfer of a periodic line's connected sets (lattice animals on a decorated line); Pringsheim's theorem for the dominant root.",
+ "prior_work": "CAP-CHAINS-20261119-001 (the core shapes), DOUBLE-IDENT-20261119-001 and RING-IDENT-20261119-001 (the identification), LOOP-CATALOGUE-20261119-001 (the ring family and interfaces, computed), BREAK-EDDIES-20261119-001.",
+ "dependencies": [
+  "CAP-CHAINS-20261119-001",
+  "DOUBLE-IDENT-20261119-001",
+  "RING-IDENT-20261119-001",
+  "LOOP-CATALOGUE-20261119-001"
+ ],
+ "completion_gate": "The machine check (job.py through scripts/longrun.py, merged): K1-K4 and K6 of proof.md; the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "independence": "ringlib.py computes the count from the decoration word alone; the engine grows the realized start; DOUBLE-IDENT's code classifies and reads it",
+  "novelty": "extension of the identification line to the eddy catalogue"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "Run the machine check (K1-K6)"
+ ],
+ "paths": {
+  "manifest": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/manifest.json",
+  "identity": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/identity.json",
+  "proof": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/proof.md",
+  "result": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/result.json",
+  "machine_check": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/job.py",
+  "machine_check_output": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/machine_check.json"
+ },
+ "attained_result": "Statement and proof written; machine check pending."
+}

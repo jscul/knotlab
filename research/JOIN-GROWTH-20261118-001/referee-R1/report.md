@@ -16,7 +16,7 @@
     reading". That was the same pre-asymptotic local exponent.
 - **The memory amendments are clean.**
 - **The post hoc section is labelled and scored correctly.** Its eight chain, tree and fork starts regrow exactly, and their stated
-  relations hold. The one-round-past run of the three law-2 "unsettled" cases is still pending (Section 5).
+  relations hold. One of the three law-2 "unsettled" cases, grown one round past, now holds (Section 5).
 
 ## 1. The exact-annihilator scoring in merge.py (the owner's first point)
 
@@ -133,10 +133,12 @@ Only the reading changes.
     junctions, to round 26 of the study's 29.
   - **Every stated annihilator holds under the frozen rule:** from t₀ = 1 on the chains, and t₀ = 2 on the trees and the fork,
     with 14 to 25 rounds tested.
-- **The three law-2 "unsettled" cases were not settled.** D-P1-at-r-a2-b2, grown one round past the study (round 20, about
-  465,000 junctions, about 14 GB), was deferred while other sessions held most of the memory, then started under a 24 GB cap. Its
-  result is not in this report; if it finishes, it will be added as an addendum. Until then those three stay "unsettled" (two
-  rounds tested), as the study scores them.
+- **The three law-2 "unsettled" cases: one grown one round past** (addendum, 2026-11-19, `referee_join_posthoc_dp1.jsonl`).
+  D-P1-at-r-a2-b2 was grown to round 20 under a 24 GB cap, after a wait for memory.
+  - **Every count equals the study's on its 19 rounds.**
+  - **The stated law-2 relation now scores "holds" under the frozen rule:** from t₀ = 4, with 3 rounds tested.
+  - **The other two, D-P1-at-r1-a2-b2 and D-P1-at-r2-a2-b2,** are the study's symmetric variants of the same start. They were not
+    grown and stay "unsettled".
 
 ## 6. Other claims
 

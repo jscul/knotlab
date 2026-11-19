@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "CENSUS-READ-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "CENSUS-READ-20261118-001Z",
+ "proof": "CENSUS-READ-20261118-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing CENSUS-READ-20261118-001: ticket A (pass 5 on exact tables; C0-C7 and N1-N5 scored). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/contract.json": "Frozen",
+   "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/summary_pass5.json": "run output",
+   "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/checks5.json": "run output",
+   "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/gate.json": "run output",
+   "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/hidden28.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

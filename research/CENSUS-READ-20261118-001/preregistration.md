@@ -173,7 +173,7 @@ verdict at each horizon from largest + 1 down to the first failure at or below l
 C7 becomes: the number of stages whose R3 verdict differs between the side-limited pass 1 and the exact pass 3, reported, not
 predicted.
 
-## Amendment 4, a pass that finishes (2026-11-19 03:15 UTC, before the readout)
+## Amendment 4, a pass that finishes (2026-11-19 03:08 UTC, before the readout)
 
 Pass 3 ran at about 400 seconds a shard (median 235, longest 2,764; the exact tables of grown stages are dense, and R3m is the
 slowest reader), nine hours in all, so it was stopped after 77 of its 1,118 shards (1,925 arrangements, every stage, kept). No
@@ -182,7 +182,7 @@ except: stages of 41 to 120 junctions are read only for every 4th arrangement in
 without R1 and R3m. Every arrangement keeps every stage of at most 40 junctions. The predictions are scored on passes 3 and 4
 together; C2's R3m part and C6 cover stages of at most 40 junctions outside the 1,925, and the readout says so.
 
-## Amendment 5, after the preliminary readout (2026-11-19 03:40 UTC)
+## Amendment 5, after the preliminary readout (2026-11-19 03:21 UTC)
 
 Written after reading pass 3's first 1,925 arrangements (committed as the preliminary section of `census_read.md`), so what follows
 is not prospective; the predictions C1–C6 and N3–N5 are unchanged, and their scoring on the corrected instruments is reported as

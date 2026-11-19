@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "CENSUS-READ-20261118-001Z-P001",
+ "canonical_id": "CENSUS-READ-20261118-001Z-P001",
+ "kind": "proof",
+ "ticket": "CENSUS-READ-20261118-001Z",
+ "proof": "CENSUS-READ-20261118-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: the census reading study",
+ "status": "Proved",
+ "claim": "Ledger closing CENSUS-READ-20261118-001: ticket A (pass 5 on exact tables; C0-C7 and N1-N5 scored). Referee pending. No new claim.",
+ "dependencies": [
+  "CENSUS-READ-20261118-001A"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "CENSUS-READ-20261118-001",
+  "epic_path": [
+   "CENSUS-READ-20261118-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/contract.json": "e152918df662a6caecacd4aa7ed4053a0a01923e1974ac567e81c802c8cd2284",
+  "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/summary_pass5.json": "a1b28b0f6037f6992d607896d404008b3cc05541a0bc99d127735ff6c7166d16",
+  "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/checks5.json": "38c0b4f91393e88c8684e723dcc0850bc7482d8c3e01bb61e4d9c7c3b2e6783e",
+  "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/gate.json": "0e274d3b483a75ee06e663fee540b46caf3d5424634c233b04aa8dd1992e4d23",
+  "artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/hidden28.json": "68756e78bb244f637eb244a42edaa4c4c2c245662da794e80b6fc13424eb3f3e"
+ },
+ "paths": {
+  "manifest": "proofs/CENSUS-READ-20261118-001Z/CENSUS-READ-20261118-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/CENSUS-READ-20261118-001Z/CENSUS-READ-20261118-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/CENSUS-READ-20261118-001Z/CENSUS-READ-20261118-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/CENSUS-READ-20261118-001Z/CENSUS-READ-20261118-001Z-P001_epic_closure/result.json",
+  "check": "proofs/CENSUS-READ-20261118-001Z/CENSUS-READ-20261118-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/CENSUS-READ-20261118-001Z/CENSUS-READ-20261118-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

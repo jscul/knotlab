@@ -1,0 +1,843 @@
+{
+ "case_status": {
+  "ok": 2705
+ },
+ "arrangements": 26441,
+ "arrangements_sampled_beyond_40": 2645,
+ "mixed_seeds": 60,
+ "stages": 100024,
+ "stages_by_band": {
+  "at_most_14": 52163,
+  "15_to_40": 44758,
+  "41_to_120": 3103
+ },
+ "outcomes": {
+  "closed": 3599,
+  "not_sampled_beyond_40": 9503,
+  "alive": 2294,
+  "stall": 11010,
+  "cap": 35
+ },
+ "arrangements_whose_start_shares_two": 24385,
+ "connectivity_of_stages": {
+  "small": 25,
+  "two": 74719,
+  "three": 4386,
+  "zero": 3598,
+  "one": 17296
+ },
+ "stages_sharing_two": 93808,
+ "rigid_stages": 1050,
+ "symmetry_of_stages": {
+  "fixes": 11941,
+  "moves": 63898,
+  "not_checked": 23911,
+  "unknown": 274
+ },
+ "r3_verdicts": {
+  "exact": 2008,
+  "same_states": 8399,
+  "misread": 89510,
+  "outside_swap": 107
+ },
+ "r3_verdicts_no_pair_sharing_two": {
+  "exact": 2005,
+  "same_states": 260,
+  "misread": 3914,
+  "outside_swap": 37
+ },
+ "r3_verdicts_rigid": {
+  "exact": 342,
+  "misread": 667,
+  "outside_swap": 36,
+  "same_states": 5
+ },
+ "r3_by_connectivity_no_sharing_two": {
+  "one": {
+   "misread": 89
+  },
+  "small": {
+   "exact": 9
+  },
+  "three": {
+   "exact": 342,
+   "misread": 667,
+   "outside_swap": 36,
+   "same_states": 5
+  },
+  "two": {
+   "exact": 1654,
+   "misread": 2994,
+   "same_states": 219,
+   "outside_swap": 1
+  },
+  "zero": {
+   "same_states": 36,
+   "misread": 164
+  }
+ },
+ "r3_by_symmetry_no_sharing_two": {
+  "fixes": {
+   "exact": 1114,
+   "same_states": 36,
+   "misread": 783,
+   "outside_swap": 11
+  },
+  "moves": {
+   "exact": 7,
+   "misread": 1428,
+   "same_states": 36,
+   "outside_swap": 9
+  },
+  "not_checked": {
+   "exact": 828,
+   "misread": 1695,
+   "outside_swap": 17,
+   "same_states": 188
+  },
+  "unknown": {
+   "misread": 8,
+   "exact": 56
+  }
+ },
+ "r3_by_band_no_sharing_two": {
+  "15_to_40": {
+   "exact": 506,
+   "misread": 2024,
+   "same_states": 155,
+   "outside_swap": 13
+  },
+  "41_to_120": {
+   "misread": 198,
+   "exact": 28,
+   "same_states": 26,
+   "outside_swap": 2
+  },
+  "at_most_14": {
+   "exact": 1471,
+   "same_states": 79,
+   "misread": 1692,
+   "outside_swap": 22
+  }
+ },
+ "r3_by_round_no_sharing_two": {
+  "0": {
+   "exact": 1102,
+   "misread": 909,
+   "same_states": 30,
+   "outside_swap": 15
+  },
+  "1": {
+   "exact": 450,
+   "misread": 439,
+   "same_states": 22,
+   "outside_swap": 5
+  },
+  "2": {
+   "exact": 270,
+   "same_states": 34,
+   "misread": 572,
+   "outside_swap": 2
+  },
+  "3": {
+   "same_states": 62,
+   "exact": 123,
+   "misread": 565,
+   "outside_swap": 6
+  },
+  "4": {
+   "exact": 33,
+   "misread": 478,
+   "same_states": 47,
+   "outside_swap": 6
+  },
+  "5": {
+   "misread": 382,
+   "exact": 14,
+   "same_states": 34,
+   "outside_swap": 2
+  },
+  "6": {
+   "exact": 7,
+   "misread": 284,
+   "same_states": 15
+  },
+  "7": {
+   "misread": 177,
+   "exact": 4,
+   "same_states": 9,
+   "outside_swap": 1
+  },
+  "8": {
+   "exact": 2,
+   "misread": 108,
+   "same_states": 7
+  }
+ },
+ "r3n_verdicts": {
+  "exact": 2353,
+  "same_states": 8959,
+  "misread": 88570,
+  "outside_swap": 142
+ },
+ "r3n_verdicts_no_pair_sharing_two": {
+  "exact": 2350,
+  "same_states": 488,
+  "misread": 3338,
+  "outside_swap": 40
+ },
+ "r3n_verdicts_rigid": {
+  "same_states": 103,
+  "misread": 461,
+  "exact": 447,
+  "outside_swap": 39
+ },
+ "r3n_by_connectivity_no_sharing_two": {
+  "one": {
+   "misread": 89
+  },
+  "small": {
+   "exact": 9
+  },
+  "three": {
+   "same_states": 103,
+   "misread": 461,
+   "exact": 447,
+   "outside_swap": 39
+  },
+  "two": {
+   "exact": 1850,
+   "misread": 2669,
+   "same_states": 348,
+   "outside_swap": 1
+  },
+  "zero": {
+   "exact": 44,
+   "misread": 119,
+   "same_states": 37
+  }
+ },
+ "r3n_by_symmetry_no_sharing_two": {
+  "fixes": {
+   "exact": 1330,
+   "same_states": 79,
+   "misread": 522,
+   "outside_swap": 13
+  },
+  "moves": {
+   "same_states": 30,
+   "misread": 1442,
+   "outside_swap": 8
+  },
+  "not_checked": {
+   "exact": 961,
+   "misread": 1369,
+   "same_states": 379,
+   "outside_swap": 19
+  },
+  "unknown": {
+   "misread": 5,
+   "exact": 59
+  }
+ },
+ "r3n_by_band_no_sharing_two": {
+  "15_to_40": {
+   "exact": 599,
+   "misread": 1785,
+   "same_states": 305,
+   "outside_swap": 9
+  },
+  "41_to_120": {
+   "misread": 181,
+   "exact": 45,
+   "same_states": 27,
+   "outside_swap": 1
+  },
+  "at_most_14": {
+   "exact": 1706,
+   "same_states": 156,
+   "misread": 1372,
+   "outside_swap": 30
+  }
+ },
+ "r3n_by_round_no_sharing_two": {
+  "0": {
+   "exact": 1298,
+   "misread": 685,
+   "same_states": 54,
+   "outside_swap": 19
+  },
+  "1": {
+   "exact": 479,
+   "misread": 377,
+   "same_states": 58,
+   "outside_swap": 2
+  },
+  "2": {
+   "same_states": 70,
+   "exact": 296,
+   "misread": 503,
+   "outside_swap": 9
+  },
+  "3": {
+   "exact": 161,
+   "misread": 465,
+   "same_states": 129,
+   "outside_swap": 1
+  },
+  "4": {
+   "exact": 59,
+   "misread": 420,
+   "same_states": 80,
+   "outside_swap": 5
+  },
+  "5": {
+   "exact": 27,
+   "misread": 351,
+   "same_states": 51,
+   "outside_swap": 3
+  },
+  "6": {
+   "exact": 15,
+   "misread": 263,
+   "same_states": 28
+  },
+  "7": {
+   "exact": 8,
+   "misread": 170,
+   "same_states": 12,
+   "outside_swap": 1
+  },
+  "8": {
+   "exact": 7,
+   "misread": 104,
+   "same_states": 6
+  }
+ },
+ "r3n_no_sharing_two_symmetry_fixes_rigid": {
+  "exact": 324,
+  "same_states": 10,
+  "misread": 176,
+  "outside_swap": 12
+ },
+ "r3n_no_sharing_two_symmetry_fixes_any": {
+  "one": {
+   "misread": 1
+  },
+  "small": {
+   "exact": 9
+  },
+  "three": {
+   "exact": 324,
+   "same_states": 10,
+   "misread": 176,
+   "outside_swap": 12
+  },
+  "two": {
+   "exact": 981,
+   "same_states": 62,
+   "misread": 330,
+   "outside_swap": 1
+  },
+  "zero": {
+   "exact": 16,
+   "same_states": 7,
+   "misread": 15
+  }
+ },
+ "C1_r3_rigid_not_exact_or_swap": 672,
+ "C1b_r3_misreads_no_pair_sharing_two": 3914,
+ "C2_arrangements_sharing_two": 24385,
+ "C2_of_those_with_an_r3_misread": 22644,
+ "C3_r3_same_states_at_three_connected": 61,
+ "C3_r3n_same_states_at_three_connected": 175,
+ "C4_r3_rigid_least_minus_largest_less_one": {
+  "0": 342
+ },
+ "N3_r3n_stages_changed_by_renaming": 51,
+ "N4_r3n_rigid_not_exact_or_swap": 564,
+ "N4_r3n_rigid_least_minus_largest_less_one": {
+  "0": 447
+ },
+ "N5_r3_stages_changed_by_renaming": 1033,
+ "N5_fraction": 0.01033,
+ "r3n_flags_total": {
+  "dependent_kept": 7242,
+  "conflict_stages": 40153,
+  "tie": 29569,
+  "large_conflict": 3444
+ },
+ "r3_all_least_minus_largest_less_one": {
+  "0": 2008
+ },
+ "r3_least_horizon_by_largest": {
+  "3": {
+   "2": 20
+  },
+  "4": {
+   "3": 242
+  },
+  "5": {
+   "4": 1256
+  },
+  "6": {
+   "5": 314
+  },
+  "7": {
+   "6": 136
+  },
+  "8": {
+   "7": 35
+  },
+  "9": {
+   "8": 5
+  }
+ },
+ "r3n_all_least_minus_largest_less_one": {
+  "0": 2353
+ },
+ "r3n_least_horizon_by_largest": {
+  "3": {
+   "2": 23
+  },
+  "4": {
+   "3": 286
+  },
+  "5": {
+   "4": 1471
+  },
+  "6": {
+   "5": 348
+  },
+  "7": {
+   "6": 180
+  },
+  "8": {
+   "7": 40
+  },
+  "9": {
+   "8": 5
+  }
+ },
+ "r3_misreads": {
+  "stages": 89510,
+  "sharing_two": 85596,
+  "no_sharing_two_by_connectivity": {
+   "three": 667,
+   "zero": 164,
+   "two": 2994,
+   "one": 89
+  },
+  "no_sharing_two_by_symmetry": {
+   "moves": 1428,
+   "not_checked": 1695,
+   "fixes": 783,
+   "unknown": 8
+  },
+  "min_distance": {
+   "1": 45602,
+   "2": 38858,
+   "3": 4795,
+   "4": 255
+  },
+  "missed_extra_no_sharing_two": {
+   "1/1": 480,
+   "3/1": 261,
+   "1/0": 209,
+   "2/2": 161,
+   "4/2": 153,
+   "2/1": 116,
+   "3/2": 106,
+   "4/3": 103,
+   "4/0": 101,
+   "2/0": 100
+  },
+  "examples_rigid_symmetry_fixes": [
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      4
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      4
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      4
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      5
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      5
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      5
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+     ]
+    ],
+    0
+   ]
+  ]
+ },
+ "r3n_misreads": {
+  "stages": 88570,
+  "sharing_two": 85232,
+  "no_sharing_two_by_connectivity": {
+   "three": 461,
+   "zero": 119,
+   "two": 2669,
+   "one": 89
+  },
+  "no_sharing_two_by_symmetry": {
+   "moves": 1442,
+   "not_checked": 1369,
+   "fixes": 522,
+   "unknown": 5
+  },
+  "min_distance": {
+   "1": 45602,
+   "2": 38034,
+   "3": 4693,
+   "4": 241
+  },
+  "missed_extra_no_sharing_two": {
+   "1/0": 720,
+   "2/0": 277,
+   "3/0": 197,
+   "2/1": 194,
+   "1/1": 191,
+   "4/0": 172,
+   "4/1": 125,
+   "6/0": 118,
+   "3/1": 112,
+   "5/0": 79
+  },
+  "examples_rigid_symmetry_fixes": [
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      4
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      4
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      4
+     ],
+     [
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      5
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      5
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+     ]
+    ],
+    0
+   ],
+   [
+    [
+     [
+      3,
+      3,
+      3,
+      4,
+      5
+     ],
+     [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+     ]
+    ],
+    0
+   ]
+  ]
+ },
+ "mixed_stages": 247,
+ "C0a_fresh_reader_verdicts": {
+  "exact": 183,
+  "exact_plus_all_loose": 17,
+  "misread": 47
+ },
+ "C5_r3_mixed": {
+  "exact": 196,
+  "same_states": 19,
+  "outside_swap": 4,
+  "misread": 28
+ },
+ "C5_r3_on_fresh_misreads": {
+  "outside_swap": 1,
+  "misread": 28,
+  "exact": 15,
+  "same_states": 3
+ },
+ "C5_r3n_mixed": {
+  "exact": 194,
+  "same_states": 18,
+  "outside_swap": 1,
+  "misread": 34
+ },
+ "C5_r3n_on_fresh_misreads": {
+  "outside_swap": 1,
+  "misread": 33,
+  "exact": 11,
+  "same_states": 2
+ },
+ "C5_mixed_connectivity": {
+  "small": 60,
+  "two": 138,
+  "three": 33,
+  "zero": 16
+ },
+ "C5_mixed_symmetry": {
+  "fixes": 128,
+  "unknown": 25,
+  "not_checked": 62,
+  "moves": 32
+ },
+ "C5_r3n_mixed_by_symmetry": {
+  "fixes": {
+   "exact": 127,
+   "same_states": 1
+  },
+  "moves": {
+   "misread": 22,
+   "same_states": 10
+  },
+  "not_checked": {
+   "exact": 42,
+   "same_states": 7,
+   "outside_swap": 1,
+   "misread": 12
+  },
+  "unknown": {
+   "exact": 25
+  }
+ }
+}

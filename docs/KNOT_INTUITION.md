@@ -598,6 +598,16 @@ The reader proved for junctions of at most six distinctions breaks from round
 no two junctions (counting one extra end for the loose distinctions) cut the
 rest apart at any round, so by Whitney's theorem the allowed states fix them
 ([decision note](../research/RING-READ-20261118-001/ring_read.md)).
+Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
+census of 137 starts, referee pending)? Not as separate parts: the ring takes
+over. Joining any tree of knots to a ring knot makes the ring grow faster, even
+a ring that alone adds five junctions a round, and each joined knot enters one
+equation for the rate as its own small menu: skip the knot, or take it and then
+any of its own surplus distinctions, 1 + y(1 + y)^s. The menus multiply, and
+along a chain each menu sits inside the one two knots before it. Two joined
+rings lock into a growth of a new kind, about 2.5 times a round for two rings of
+five with a t^(-3/2) correction, the mark of a menu that contains itself
+([decision note](../research/JOIN-GROWTH-20261118-001/join_growth.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

@@ -116,7 +116,9 @@ in THEORY.md and as A109.
 | U1 | meeting hyperedges in the undecided starts are not exponential | failed (preliminary) | 33 of 349 are exponential (part U partial) |
 
 8 of 14 held as scored. Of the six failures, three are the instrument's: W's truncation, the scorer's factor table and its
-loop-knot test, and W left uncomputed for two loops. Each holds once corrected post hoc. Three are real: E4's thresholds do not
+loop-knot test, and W left uncomputed for two loops. Each holds once corrected post hoc: the fixed scorer is `merge_fixed.py`
+(a logged amendment of 07:10 UTC), and its output, beside the frozen verdicts, is
+[results_fixed.json](../../artifacts/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/results_fixed.json). Three are real: E4's thresholds do not
 carry to SCALE-SHARE's measure; a part joined to one loop of an even ring does not raise the start's rate; and meeting hyperedges
 can feed.
 

@@ -2947,8 +2947,13 @@ tomorrow. All the studies below are refereed
   every live junction's distinctions. After the next round, 0 and 1 are at bond
   distance 2, while their image under the exchange, 2 and 1, stays at 3. So the
   table of bond distances loses which old pair becomes nearer one round ahead.
-  A three-way distance already tells the two apart before the round. Where
-  junctions share at most one distinction, the question is open.
+  A three-way distance already tells the two apart before the round. Codex
+  also built one where every two junctions share at most one distinction
+  ([GROWN-END-MEET-ONCE-20261119-001](research/GROWN-END-MEET-ONCE-20261119-001/decision.md)).
+  From seven junctions the law grows twelve, where exchanging 0 and 1 keeps
+  all 253 bond distances and the live roster. One round later 0 and 2 are at
+  bond distance 2, while 1 and 2 stay at 3. So sharing at most one
+  distinction does not repair it.
 - **What grows depends on more than the allowed states (computed; A108
   confirmed).** Under parity the allowed states do not say which junction is
   the one implied by the others, and the eddies depend on it: the same states,
@@ -2969,8 +2974,8 @@ which starts, that three-way distances resolve every one found, and the exact
 reading of a round.
 
 **Reading.** On the premise, the clean statement would be that distance and
-the live roster carry what grows. That fails where the first junctions share
-two distinctions, and is open where they share at most one. So the premise
+the live roster carry what grows. That fails whether the first junctions
+share two distinctions or at most one. So the premise
 turns on a choice that is the owner's to make. If only pair distances count as
 distance, it fails on computed cases. If three-way distances count too, it
 survives everything found so far. What no distance can show is which junction

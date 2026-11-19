@@ -144,8 +144,10 @@ corrected, logged in `docs/CORRECTIONS.md` (Not a block).**
 
 ## Correction (2026-11-19, from `GROWN-END-SWAP-20261119-001`; Narrowing)
 
-"No counterexample within the stated bounds" stands: the census stages come from starts of at most five knots. "Whatever protects
-lies in the full reading" does not hold beyond the census.
+"No counterexample within the stated bounds" stands: the census stages come from starts of at most five knots, and the referee's
+census agrees to 11 junctions. "Whatever protects lies in the full reading" does not hold beyond the census, whether start
+junctions meet twice (below) or once: Codex's [GROWN-END-MEET-ONCE-20261119-001](../GROWN-END-MEET-ONCE-20261119-001/decision.md) (refereed) fails at 12 junctions and 23 distinctions from a seven-junction
+meet-once start.
 - **Codex's construction.** Codex built a reached stage from a six-junction start whose junctions meet twice ([decision note](../GROWN-END-SWAP-20261119-001/decision.md), [referee report](../GROWN-END-SWAP-20261119-001/referee-R1/report.md), refereed).
   A reading-keeping, holder-breaking table symmetry there fails to extend one round.
 - **Why the census missed it.** None of the census's 2,994 ten-junction stages is isomorphic to it.

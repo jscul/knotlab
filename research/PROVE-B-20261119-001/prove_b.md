@@ -64,7 +64,8 @@ Known:
 - EXTEND-ROUND's Lemma A and Claim B\*;
 - HUNT-SHORTEN's hand-made joins and self-pairs;
 - Codex's two reached counterexamples, which Codex found and the referee confirmed for the meet-twice one;
-- Codex's census: no meet-once failure at 11 or fewer current junctions, or 22 or fewer distinctions, and a safe single start;
+- Codex's census: no meet-once failure at 11 or fewer current junctions (checked within starting widths 3 to 14, its referee
+  notes), or 22 or fewer distinctions, and a safe single start;
 - Whitney's theorems.
 
 What this adds:

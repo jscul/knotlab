@@ -158,6 +158,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: meeting once is no repair
+
+- **Narrowed.** After the meet-twice counterexample, the reading "distance plus the growing end carries one round" was left open
+  where every two junctions share at most one distinction
+  ([EXTEND-ROUND-20261119-001](research/EXTEND-ROUND-20261119-001/extend_round.md),
+  [HUNT-SHORTEN-20261119-001](research/HUNT-SHORTEN-20261119-001/hunt_shorten.md), lesson 8.4). Codex built a stage there too
+  (`GROWN-END-MEET-ONCE-20261119-001`, [decision note](research/GROWN-END-MEET-ONCE-20261119-001/decision.md), refereed): from
+  seven junctions the law grows twelve, and a renaming keeping all 253 bond distances and the growing end fails one round later.
+
 ## 19 November 2026: the Claim B study refereed
 
 - The study of whether pair distances plus the growing end carry one round (`PROVE-B-20261119-001`,

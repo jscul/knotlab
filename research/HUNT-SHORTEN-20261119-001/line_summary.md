@@ -17,8 +17,8 @@ record it comes from. All nine are refereed.
   a loose distinction, how many, and which sets of them one junction meets. Distance plus the growing end carried everything one
   round further on the meet-once carried pairs (36,060) and the census self-symmetries (1,746,752), by the referees' full runs.
   But Codex built a reached stage, from a six-junction start whose junctions meet twice, where the law's own round breaks it
-  (GROWN-END-SWAP, refereed), and another from a seven-junction start that meets once (GROWN-END-MEET-ONCE, referee pending;
-  reproduced in PROVE-B). So the clean premise fails on what the law grows. Every failing swap changes three-way distances,
+  (GROWN-END-SWAP, refereed), and another from a seven-junction start that meets once (GROWN-END-MEET-ONCE, refereed;
+  reproduced in PROVE-B). So the clean premise fails on what the law grows, and meeting once is no repair. Every failing swap changes three-way distances,
   so pair plus three-way distances plus the growing end is the form still open.
 
 ## Proved (refereed)
@@ -70,6 +70,7 @@ What this line adds:
 | EXTEND-ROUND | The stall test counts groups; Claim B\* is about the span of the equations | Not a block |
 | HUNT-SHORTEN | Its bound now names what was tested (33,918 of 108,289; 34 cut, 6 late) | Not a block |
 | EXTEND-ROUND, HUNT-SHORTEN | "Distance plus the growing end carries one round" and "the full reading protects" hold for meet-once pairs and census starts only (Codex's GROWN-END-SWAP) | **Narrowing** |
+| EXTEND-ROUND, HUNT-SHORTEN | Meeting once is no repair: the pair table fails at 12 junctions and 23 distinctions from a seven-junction meet-once start (Codex's GROWN-END-MEET-ONCE) | **Narrowing** |
 
 ## Open questions, graded
 

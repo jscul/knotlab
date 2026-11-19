@@ -149,7 +149,10 @@ Codex built a reached stage of this law where Claim B fails ([decision note](../
   extension fails.
 
 So "distance plus the growing end carries what grows one round further" holds on what this note and its referee tested: the
-meet-once carried pairs, and census stages from at most five knots. It does not hold for reached stages in general. Lemma A,
+meet-once carried pairs, and census stages from at most five knots. It does not hold for reached stages in general, and meeting
+once is no repair: Codex's [GROWN-END-MEET-ONCE-20261119-001](../GROWN-END-MEET-ONCE-20261119-001/decision.md) (refereed) breaks it where every two junctions meet once. A seven-junction start grows to 12
+junctions and 23 distinctions, and swapping 0 and 1 keeps all 253 distances and the growing end, yet fails one round later. So
+any rule that extends a matching from the pair table alone holds only below that size, or needs a further reading. Lemma A,
 Claim B\* and every count above stand. It is the configuration PROVE-B's Proposition X names, on a reached stage. Logged in
 `docs/CORRECTIONS.md`.
 

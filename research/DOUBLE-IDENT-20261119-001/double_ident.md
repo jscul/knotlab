@@ -69,3 +69,37 @@ G17. **Referee pending.**
 | --- | --- | --- | --- | --- | --- |
 | 1 | Round-1 groups of three and double common neighbours (`RING-IDENT-20261119-001#3`): the last 15% of two-dimensional growths and both of CLUSTER-ALL's breaks | 3/3 | 1/3 — the tree-of-blocks cover is the wrong object | find a complex whose clusters give CLUSTER-ALL's counts on the in-scope hyperedge starts → stop at one, or a start where none exists | Alternative · deferred |
 | 2 | A write-up: one note on the identification line (RING-IDENT through DOUBLE-IDENT) for the owner and knotlab | 2/3 — the line's results in one place | 3/3 | draft from the four proofs → stop at a referee-ready note | Alternative · proposed |
+
+## Final report as sent (2026-11-19 14:30 UTC)
+
+**Outcome:** Knots touching twice change nothing but the open counts, so the theorem now covers most of the census. From round 1 on, the growth reads a start only through which live knots neighbour which and how many open distinctions each live knot has. A second or third shared distinction only lowers open counts. So the clusters of the unrolled map, the chains, the relays and the dimension all hold for every multiplicity. Closed, referee pending.
+
+- **The census, round by round.** All 11,512 arrangements in the class agree with the theorem in every round to round 6, in each junction's parents and fresh count. 11,075 of them have knots touching twice. The class is 81% of the census starts that don't stall at once.
+- **One edge case.** A start with a single loose distinction closes at round 1, because its only offshoot is already implied. All 727 such census starts do, and so do all 32 exceptions from the relay tally.
+- **Why two is typical, now on 85% of the census's two-dimensional growths.** The growth class read off the map matches the measured one on 12,473 of 12,473 arrangements in the class: closes, one, two, or exponential. Of the census's 9,564 two-dimensional growths, 8,108 are in the class:
+  - two chains in one piece: 3,525;
+  - a finished piece's relay: 1,801;
+  - both: 2,782.
+- **Three shared distinctions** only make knots dead or freeze a distinction, per the advisor's analysis. A dead knot just acts as a block and lowers its neighbours' open counts.
+- **What's left.** 1,456 two-dimensional growths (15%) have a first-round group of three, or two live knots with two common neighbours. That's the cycles direction.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: knots touching twice | **Status:** Successful (proved; D1 held, 12,473 of 12,473) | Multiplicity enters only through open counts; the census agrees round by round in the class |
+| Local direction: an exact model of the cheapest parity growth | Continue | Proved on 81% of the census's growing starts; first-round triples and double common neighbours remain |
+| Broader exploration: what the cheapest growth builds | Known alternatives | The census's classes follow from the map: chains, relays, bare cycles, eddies |
+| Long-term goal: G17 | Capability gained | Typical two dimensions explained on 85% of the census's two-dimensional growths |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | First-round groups of three and double common neighbours: the last 15%, and both of CLUSTER-ALL's breaks | 3/3 | 1/3 — the tree-of-blocks cover is the wrong object | find a complex whose clusters give CLUSTER-ALL's counts on the in-scope hyperedge starts → stop at one, or a start where none exists | Alternative · deferred |
+| 2 | One write-up of the identification line (RING-IDENT through DOUBLE-IDENT) for you and knotlab | 2/3 | 3/3 | draft from the four proofs → stop at a referee-ready note | Alternative · proposed |
+
+**Corrections:** one, Not a block. My relay report said the census's non-tree two-dimensional growths "have a cycle of three or four knots, where the proofs' conditions fail". Most of them were outside the proofs only because their knots touch twice. Now 8,108 of 9,564 are in the proved class, and only 1,456 fail the first-round conditions. It's logged in docs/CORRECTIONS.md and HISTORY.md (7b17d1c28). **Goals:** G17 checkpoint (capability gained). **Assumptions:** none changed. **Basket:** `RELAY-IDENT-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze, staying within its text. It confirmed Lemma M and the GF(2) argument, asked for the hypothesis that each distinction lies in at most two knots, and flagged that round-0 absolute counts read multiplicity. It also asked me to read the conditions with dead knots as common neighbours, and gave the analysis of three shared distinctions. It named three places a mismatch might appear; none did.
+
+**Referee hand-off.** The proof is `proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md`, the readout `experiments/DOUBLE-IDENT-20261119-001B/DOUBLE-IDENT-20261119-001B-E001_dims/dims.py`, and the decision note `research/DOUBLE-IDENT-20261119-001/double_ident.md`. Please check:
+- Lemma M's round-1 and implied steps;
+- that the classification in `machine_check.py` reads (S3) and (S4) with dead knots as common neighbours;
+- `dims.py`'s rule for bare cycles.

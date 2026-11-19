@@ -53,7 +53,8 @@ Stress test one size past (after the frozen runs, not pre-registered; `check.py 
 | 25 | 1,024 | 4,110 | 10 | exact | equal | 9 |
 
 The round-25 table at sides of up to six against seven junctions (`stress_tables_25.json`, registered as `RING-READ-S25`):
-all 8,443,995 entries agree.
+all 8,443,995 entries agree. **Corrected after the referee (Narrowing):** both enumerations miss the same six entries at D = 10,
+so this agreement does not establish completeness (see "Referee R1" below).
 
 
 ## Predictions and verdicts
@@ -88,9 +89,12 @@ Ticket B (Amendment 1, frozen at `5d29c1931` after ticket A was read):
 
 - **The table.** Distinctions are the edges of the junction graph, with one outside end for the loose ones. The parity consequences
   of the junctions are this graph's cuts, the minimal ones are its bonds, and the bond distance of two distinctions is the size of
-  the smallest bond holding both, minus one. The table is computed exactly over every bond with a side of at most six junctions;
-  sides of seven and eight change no entry, and the shapes that could hide a smaller bond with two large sides (a chain of
-  one-parent junctions, a cut between early and late rounds) are absent or too large (F1, F3). This is checked, not proved.
+  the smallest bond holding both, minus one. The table is computed over every bond with a side of at most six junctions.
+  **Corrected after the referee (Narrowing):** bonds of ten and eleven distinctions whose two sides both hold seven to twelve
+  junctions exist at every round from 10: cuts that wrap the ring near its start (four or five of its first knots with a few
+  round-1 to round-3 junctions), which F3's cuts between early and late rounds never see. Inside the reader's horizon (distances
+  up to the largest junction less one) they change no entry at rounds 10 to 25; at round 25 they make six entries at D = 10 wrong,
+  one past the horizon; at round 30 they enter it, and the reader is still exact (the referee's exact table).
 - **The new reader** reads stage by stage, s = 3, 4, …: a pair closer than s is set aside when some sum of junctions already read
   (connected, up to s of them, grown while the running sum stays within two of s, with at most s distinctions left) contains both, unless one read junction holds both; the new
   junctions are the cliques of what remains that are not sums of read ones and meet each read one in at most one distinction. The
@@ -135,8 +139,9 @@ distances exactly up to the largest junction less one; the junction graph is 3-c
 
 ## Limitations
 
-- Computed at seven rounds and two more in the stress test, not proved for every round. The table's completeness for bonds with two sides of
-  more than six junctions is checked by agreement to eight (to seven at round 25), not proved.
+- Computed at seven rounds and two more in the stress test, not proved for every round. The side-limited table is exact inside the
+  reader's horizon at rounds 10 to 25 by the referee's search over all sides, not by this study's agreement check, which could not
+  see cuts that wrap the ring (corrected after the referee).
 - Uniqueness is the reader's: the repair step had nothing to repair, so this does not show that no other legal incidence has the
   same table. With 3-connectivity, a second incidence would need different allowed states with the same table, the kind found at
   width 32 under the other law (`VARIABLE-OUTPUT-READER-20261118-001E`). Not searched.
@@ -177,6 +182,22 @@ the graph is 3-connected). Before the second freeze it said sums of three were t
 study, status unchanged; none new. **Basket:** B196, B202, `BOND-BALLS-20261111-001#2` in the line; B203 and B204 (the scouting's
 ideas 3 and 4, recorded this session) are #4 and #5 here.
 
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), fresh code, one labelled cross-check of the study's reader. **Confirmed, with one Narrowing; no
+Block.**
+- **Narrowing (folded in above, logged in `docs/CORRECTIONS.md`).** The table's completeness: bonds of ten and eleven
+  distinctions with two large sides (cuts wrapping the ring near its start) exist from round 10; they change no entry inside the
+  reader's horizon at rounds 10 to 25, make six entries at D = 10 wrong at round 25 (one past the horizon) and 28 at round 30
+  (6 at D = 10, inside the horizon, and 22 at D = 11). The study's agreement check between sides of six and seven could not see them.
+- **The headline holds one size past.** At round 30 (1,960 junctions, largest 11) the reader returns every junction from both the
+  side-limited table and the referee's exact one, at full horizon and pooled above D = 10; pooled above D = 9 it misses one. So the
+  needed distance is again the largest junction less one.
+- **Confirmed.** 3-connected at all nine rounds; the round regrown from the junctions alone equals the true next round at all nine;
+  the old reader's breaking shapes (round 10: three paths through the three-distinction junction; round 15: paths of three
+  junctions and five cycles of four four-place junctions, 001H's shape one size up). Not checked: the counts of invented junctions,
+  uniqueness.
 
 ## Final report as sent (2026-11-18 23:50 UTC)
 

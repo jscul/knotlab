@@ -3,6 +3,16 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 19 November 2026: the ring read back from its distances, refereed
+
+- The study of reading the cheapest-count ring back from its bond distances alone (`RING-READ-20261118-001`,
+  [decision note](research/RING-READ-20261118-001/ring_read.md)) was refereed with fresh code and confirmed, no Block. One size past
+  the study, at round 30 (1,960 junctions), the reader again returns every junction and needs distances exactly to the largest
+  junction less one.
+- **Narrowed.** The table's completeness argument: cuts that wrap the ring near its start give bonds of ten and eleven distinctions
+  with two large sides from round 10, which the side-limited table and its check both miss. They change no entry inside the
+  reader's horizon to round 25 and do not change the reader's output at round 30.
+
 ## 18 November 2026: the ring formula refereed; the ring growth proved
 
 - The studies of why rings of knots grow faster than any power (`RING-GROWTH-20261118-001`,

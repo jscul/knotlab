@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "TRIPLE-GROWN-20261119-001A-E001",
+ "ticket": "TRIPLE-GROWN-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Do pair plus three-way readings separate PARENT-RULE's 1,034 static and GROW-SMALL's 87 reached meet-once pairs with one table and other states?",
+ "definitions": {
+  "three-way reading": "smallest bond containing three distinctions, less one, or none",
+  "test": "isomorphism of the pair table with triples attached"
+ },
+ "public_inputs": {
+  "code": "triples.py (sha256 9d38872a10438d9ddf804a3974495d7a99a212d3a8972efa9dd068fe081ed546)",
+  "run": ".venv/bin/python -B triples.py",
+  "reused": "PARENT-RULE-20261119-001B plib.py and static_pairs.json; GROW-SMALL-20261119-001A grow_pairs.json; CENSUS-READ exact_table_v2.py"
+ },
+ "forbidden_inputs": [
+  "Changing T1, T2 after the run"
+ ],
+ "primary_observable": "T1, T2",
+ "cheapest_meaningful_control": "pair tables isomorphic on every pair (by construction)",
+ "predictions": {
+  "T1": "all 1,034 static pairs separated",
+  "T2": "all 87 reached separated, none undecided"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run.",
+ "runtime": "minutes",
+ "amendments": []
+}

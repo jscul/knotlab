@@ -3203,6 +3203,10 @@ evidence: results and their status come from the records each entry links.
   irredundant one under not-all-equal. Ask whether it is well defined on the stages where same-state presentations join
   differently (`NAE-GROWTH-20261119-001#1`).
 - **History.**
+  - 2026-11-19 · Narrowed by `MANY-VALUED-20261119-001`: at all 146 points where the minimal constraints were not a presentation,
+    the allowed states still have exactly one presentation up to renaming. With that rule the states-only growth equals the cheapest
+    growth on 1,805 of 1,806 census trajectories without a redundant knot. The exception is a knot with a non-minimal support.
+    So under not-all-equal the dependence comes only from redundant knots and non-minimal supports.
   - 2026-11-19 · Confirmed, with its reach measured, by `STATES-GROWTH-20261119-001`. Under not-all-equal a growth that reads only
     the allowed states (the cheapest growth on the minimal constraints) exists, and equals the cheapest growth wherever the states
     fix the presentation: 93% of small irredundant stages, with no disagreement in 1,939 trajectories while saturated. They part

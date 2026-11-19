@@ -25,13 +25,15 @@ G1 and G17; assumption A97. **Referee pending.**
   93,808 stages it almost always fails (3 exact; 8,471 another arrangement with the same allowed states; 85,232 misread). Often the
   table there holds a distance of 1: two three-place knots that share two distinctions force their other two distinctions equal.
 - **Where junctions meet once, it reads a little over a third.** On the 6,216 stages where no two junctions share two distinctions:
-  2,350 exact (38%), 40 with only the outside junction swapped and 488 as another arrangement with the same allowed states (both are
-  choices the table cannot make; 8% together), and 3,338 misread (54%).
+  2,350 exact (38%); 40 with only the outside junction swapped (0.6%), 154 with the outside junction left undecided (the truth with
+  the loose set added as one more junction, 2.5%) and 334 as another arrangement with the same allowed states (5.4%), all choices
+  the table cannot make; and 3,338 misread (54%). (Split corrected after the referee.)
 - **Sometimes the table itself cannot say.** On 1,480 of those stages some exchange of distinctions keeps every distance and moves a
   junction: the junction hides, as in Codex's width-28 example. The reader is exact on none of them; no reader that uses only the
-  table and not the names could be. Where no such exchange exists (1,944 stages of at most ten junctions, all exchanges checked), it
-  reads 1,330 exactly (68%) and 92 more as another arrangement with the same states; the other 522 (27%) are failures of this
-  reader, not of the table.
+  table and not the names could be. Where no such exchange exists (2,008 stages of at most ten junctions: 1,944 with every exchange
+  enumerated, and 64 where the enumeration stopped at its limit without finding one, which the referee showed have none), it reads
+  1,389 exactly (69%) and 92 more as another arrangement with the same states; the other 527 (26%) are failures of this reader, not
+  of the table, if the table fixes them (the next study's question). (Count corrected after the referee.)
 - **How far it must look is set by how big the knots are.** On every one of the 2,353 stages it reads exactly, it needs the
   distances up to the largest junction less one, never less and never more. The largest junctions there hold 3 to 9 distinctions,
   so it looks 2 to 8 far. Codex's readers under the other law look a fixed distance (four or five) on families with bounded
@@ -45,7 +47,7 @@ G1 and G17; assumption A97. **Referee pending.**
 | Two knots share two or more distinctions | 93,808 | 3 | 102 | 8,471 | 85,232 |
 | Junctions meet at most once | 6,216 | 2,350 | 40 | 488 | 3,338 |
 | … of these, an exchange keeps the table and moves a junction | 1,480 | 0 | 8 | 30 | 1,442 |
-| … of these, no exchange moves a junction (all checked, at most ten junctions) | 1,944 | 1,330 | 13 | 79 | 522 |
+| … of these, no exchange moves a junction (at most ten junctions; 64 settled by the referee) | 2,008 | 1,389 | 13 | 79 | 527 |
 | … of these, rigid (3-connected) | 1,050 | 447 | 39 | 103 | 461 |
 | Mixed-count stages (FRESH-COUNT) | 247 | 194 | 1 | 18 | 34 |
 
@@ -155,6 +157,22 @@ faults (closed stages; R3n dropping every dependent candidate) are fixed in pass
 and fixed inside this study before its result was reported. **Goals:** G1 checkpoint (obstruction learned), G17 checkpoint; no goal
 changed. **Assumptions:** A97 gains this study, status unchanged (under challenge); none new. **Basket:** B196, B202,
 `BOND-BALLS-20261111-001#2` in the line; B203 and B204 are #4 and #5.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), fresh code. **Confirmed, no Block; two wording points, both corrected above and logged in
+`docs/CORRECTIONS.md` (Not a block).** The referee regrew every arrangement with its own engine; every stage matches pass 5;
+`exact_table_v2` equals its own closed-aware table on all 56,036 stages of up to 16 junctions and on 942 sampled larger stages (the
+other stages of 17 to 40 junctions, about 43,000, and those over 40 were not checked); the closed-stage fault was real; the symmetry
+test is sound and its exact test agrees wherever this study decided (moves 549 of 549, fixes 1,944 of 1,944 at up to ten
+junctions); Amendment 5's fixes are honest; the headline numbers reproduce.
+- **The "same states" split.** Of the 488 same-state outputs at stages where junctions meet once, 334 are other arrangements and 154
+  are the truth with the loose set added (the outside junction left undecided, because R3n version 2 keeps jointly dependent
+  candidates); the 40 outside swaps are separate.
+- **The 64 "unknown" stages** (enumeration stopped at 20,000 exchanges) have no junction-moving symmetry, so the symmetry-free class
+  at up to ten junctions is 2,008, with R3n exact on 1,389 (69%) and misreading 527.
+- **One size past (the referee):** at 11 to 14 junctions, 187 stages have a junction-moving symmetry and 520 have none; R3n is exact
+  on 317 of the 520.
 
 ## Final report as sent (2026-11-19 03:57 UTC)
 

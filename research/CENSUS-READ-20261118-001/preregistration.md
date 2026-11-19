@@ -181,3 +181,23 @@ verdict of it has been read. `job_exact2.py` reads the remaining 24,516 arrangem
 except: stages of 41 to 120 junctions are read only for every 4th arrangement in sorted order (index divisible by 4), and there
 without R1 and R3m. Every arrangement keeps every stage of at most 40 junctions. The predictions are scored on passes 3 and 4
 together; C2's R3m part and C6 cover stages of at most 40 junctions outside the 1,925, and the readout says so.
+
+## Amendment 5, after the preliminary readout (2026-11-19 03:40 UTC)
+
+Written after reading pass 3's first 1,925 arrangements (committed as the preliminary section of `census_read.md`), so what follows
+is not prospective; the predictions C1–C6 and N3–N5 are unchanged, and their scoring on the corrected instruments is reported as
+post-hoc. The preliminary readout exposed two faults in my instruments:
+- **Closed stages.** When nothing is loose, the outside vertex is isolated, and `exact_table.py` (like `ringread.bond_table`)
+  required it in the complement's connectivity test, so every bond of a closed stage was missed. `exact_table_v2.py` leaves it out.
+  The ring never closes, so `RING-READ-20261118-001` is unaffected.
+- **Dependent candidates.** R3n version 1 dropped every accepted clique lying in the span of the others; when the loose set is as
+  small as a junction, all n + 1 stars are jointly dependent and all were dropped. `reader3n_v2.py` keeps them (flagged): the table
+  cannot choose which is the outside, and the verdict is then "same states".
+- **New: table symmetries** (the coordinator's uniqueness question). Per stage: twins (two distinctions in different junctions with
+  the same distance to every other distinction, whose exchange is a table symmetry moving a junction), and at stages of at most 10
+  junctions a search of the table's symmetries for one that moves the junction set.
+
+**Pass 5** (`job_exact3.py`, shards of 10, 10 workers): the whole census again on these instruments; every arrangement at every
+stage of at most 40 junctions, and stages of 41 to 120 junctions for every 10th arrangement; R3 and R3n with one seeded renaming
+each and their horizons where exact; R1 and R3m are not rerun (pass 3 scored them on 1,925 arrangements). Pass 4 was stopped after
+23 cases and is not used.

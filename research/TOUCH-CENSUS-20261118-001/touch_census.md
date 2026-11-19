@@ -2,8 +2,10 @@
 
 Epic `TOUCH-CENSUS-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead for `FIRST-KNOT-20261118-001`'s
 direction 3. Goals G17, G2 and G1. **Refereed:** report [R1](referee-R1/report.md), confirmed with fixes, no Block, folded in on 18 November
-(see Referee). The study's run read 26,341 of the 26,441 arrangements (one shard of 100 timed out and is retrying); the referee grew
-the last 100, so the tables below are the **complete census**, the study's 26,241 at the close given in the Referee section.
+(see Referee). The referee grew the 100 arrangements the run had not read, and the run's last shard then finished (23:55 UTC, after two
+timeouts): its own merge of all 26,441 ([results_complete.json](../../artifacts/TOUCH-CENSUS-20261118-001B/TOUCH-CENSUS-20261118-001B-E001_arrangements/results_complete.json))
+equals the referee's complete census in every row. The tables below are the **complete census**; the study's 26,241 at the close
+are given in the Referee section.
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `86694ace0` at 20:36 UTC; the census ran from 20:37
@@ -39,22 +41,22 @@ the last 100, so the tables below are the **complete census**, the study's 26,24
 
 | Outcome | Distinct arrangements | Share | By labelled count |
 | --- | --- | --- | --- |
-| cannot start (round-1 stall) | 11,010 | 41.6% | 43.6% (at the close) |
-| closes | 3,726 | 14.1% | 12.5% |
+| cannot start (round-1 stall) | 11,010 | 41.6% | 43.7% |
+| closes | 3,726 | 14.1% | 12.4% |
 | one-dimensional | 2,081 | 7.9% | 8.1% |
-| two-dimensional | 9,564 | 36.2% | 35.8% |
-| three-dimensional | 40 | 0.15% | 0.08% |
-| four-dimensional | 7 | 0.03% | 0.01% |
-| faster than any power (rings of five) | 13 | 0.05% | 0.02% |
+| two-dimensional | 9,564 | 36.2% | 35.7% |
+| three-dimensional | 40 | 0.15% | 0.09% |
+| four-dimensional | 7 | 0.03% | 0.005% |
+| faster than any power (rings of five) | 13 | 0.05% | 0.03% |
 
-Complete census (the referee's table; the labelled column is the study's at the close). Two-dimensional among growing arrangements:
+Complete census (the referee's table, and the run's own once its last shard finished; labelled total 2,626,697). Two-dimensional among growing arrangements:
 81.7% by distinct count, 81.4% by labelled count; at six knots (the referee's sample of 1,200, one size past) 85.1% and 84.5%. A
 reading of 5 or 6 by the frozen reader is not a dimension: it means "not polynomial" (two equal fifth differences in a seven-round
 window), and it fired only on exponential rings.
 
-By number of knots (distinct, the 26,241 read at the close): two knots, 17 of 22 grow, all two-dimensionally; three, 71 of 154 two-dimensional, 28 one-dimensional,
-2 three-dimensional; four, 852 of 1,760 two-dimensional, 192 one-, 5 three-, 2 four-dimensional, 315 stalls; five (24,302 read),
-8,572 two-dimensional, 1,848 one-, 29 three-, 5 four-dimensional, 7 faster, 10,591 stalls.
+By number of knots (distinct, complete): two knots, 17 of 22 grow, all two-dimensionally; three, 71 of 154 two-dimensional, 28
+one-dimensional, 2 three-dimensional; four, 852 of 1,760 two-dimensional, 192 one-, 5 three-, 2 four-dimensional, 315 stalls; five
+(24,502), 8,624 two-dimensional, 1,861 one-, 33 three-, 5 four-dimensional, 13 faster, 10,695 stalls.
 
 ## Predictions and verdicts
 
@@ -67,7 +69,7 @@ By number of knots (distinct, the 26,241 read at the close): two knots, 17 of 22
 | P3 | nothing above four, nothing unsettled after the rerun, exactly one arrangement of dimension 4 | **failed** | 7 arrangements of dimension 4, each growing exactly as four mutually touching five-place knots; the faster-than-power rings were read as "6" (meaning not polynomial) or left unsettled |
 | P4 | every stall in round 1 | held | 10,906 of 10,906 |
 | P5 | stall share rising with knots to over 40% at five; two-dimensional share rising, one-dimensional falling | **failed** | stall shares 0, 0, 18%, 44% (no rise from two to three knots); two-dimensional share 100%, 70%, 81%, 82% |
-| P6 | no distinction with one value in every state | **failed as stated** | 1,746 of the 26,241 arrangements (1,749 of 26,341) already force a distinction in their start (a part of the arrangement whose cut is one distinction); the growth never adds one (number corrected after the referee) |
+| P6 | no distinction with one value in every state | **failed as stated** | 1,746 of the 26,241 arrangements (1,749 of 26,341, and of all 26,441) already force a distinction in their start (a part of the arrangement whose cut is one distinction); the growth never adds one (number corrected after the referee) |
 
 Three of eight held (G, P2, P4). The failures are on the record; two of them (P1b's "plus one" and the faster growths) are the study's
 most informative findings.
@@ -93,7 +95,7 @@ rare, and a mechanism (chains born together) that predicts nearly every case.
 - The census stops at five knots of three to five places, and weights arrangements uniformly or by labelled count (A106).
 - "Dimension" counts junctions by round; bond balls are not measured.
 - The frozen dimension reader looked at the last seven rounds only; it read three exponential-looking rings as "6".
-- Two shards (200 arrangements) are pending.
+- None pending: the run's last shard finished on 18 November at 23:55 UTC and agrees with the referee's complete census.
 - One joining rule (A104).
 
 ## Advisor

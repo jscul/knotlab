@@ -2,8 +2,8 @@
 
 Line summary, 18 November 2026, by Claude, for the owner. It covers the six studies `FRESH-COUNT-20261118-001`,
 `FIRST-KNOT-20261118-001`, `TOUCH-CENSUS-20261118-001`, `RING-GROWTH-20261118-001`, `PLUS-ONE-20261118-001` and
-`RING-FORMULA-20261118-001`. Each study's decision note holds the evidence; this page adds no new result. Referee verdicts: five
-in (all confirmed, no Block; three with fixes), and `PLUS-ONE-20261118-001`'s pending. "Dimension" here always counts junctions by round: the junctions up to round t
+`RING-FORMULA-20261118-001`. Each study's decision note holds the evidence; this page adds no new result. Referee verdicts: all six
+in (all confirmed, no Block; four with fixes). "Dimension" here always counts junctions by round: the junctions up to round t
 grow like t^d. Bond balls, the program's own measure, are proved only for the d-fold counting pattern.
 
 ## Why the line exists
@@ -42,8 +42,8 @@ three is not the law's own number: it is the foundation's first knot under one c
    four-place knots and one five-place knot makes c(t) = c(t − 5) + c(t − 6) junctions in round t. This is the folded, overlapping
    structure in the owner's words, literally; a "logic based fractal" only loosely (no likeness at every scale).
 5. **When do chains born apart combine?** (`PLUS-ONE`.) When the junctions they are each asked to join share a neighbour; then
-   their dimensions add. Right in 11,649 of 11,658 census arrangements and 148 of 149 six-knot ones, never too high; ten combine
-   through a second link not yet found.
+   their dimensions add. Right in 11,649 of 11,658 census arrangements and 148 of 149 six-knot ones, never too high (the referee's
+   count, and the census's last shard: 31 more, all right); ten combine through a second link not yet found, of at least two shapes.
 6. **One formula for every ring?** (`RING-FORMULA`.) Yes for odd rings of five or more: n knots with j spares grow at the root of
    x^(n+j) = (1 + x)^j; a spare at every knot gives n times the Fibonacci numbers in every round. Rings of three, four and six
    join their knots in groups instead of round the ring and grow polynomially.
@@ -84,11 +84,11 @@ three is not the law's own number: it is the foundation's first knot under one c
 | TOUCH-CENSUS | Confirmed with fixes, no Block: three Narrowings | the 200 arrangements unread at the close held the rare growth (40 three-dimensional, not 36; 13 fast rings, not 7); the fast rings' rates 1.13 to 1.62; 1,746 starts force a distinction, not 1,713 |
 | RING-GROWTH | Confirmed, no Block: one Narrowing, one Not a block | the formula is for odd rings; the ring of eight follows it at half its length (rate 1.1673), not at n = 8; the group step's "product" was not a product, and the referee's exact argument replaces it, so the growth is the model is proved |
 | RING-FORMULA | Confirmed, no Block: two Not a block | the transient is exactly n + j, not "about 3n + j", with two slips in its proof fixed; the proof's pointer to its check corrected |
-| PLUS-ONE | pending | — |
+| PLUS-ONE | Confirmed, no Block: one Narrowing | the ten misses' "one shape" holds for the nine census misses only; the six-knot miss has its births three steps apart with crossing partners, so the second link is wider than stated |
 
 Each is in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`. The lessons: state a "cannot" for the rules actually proved; name the
 measure behind "dimension" every time; never treat the tail of a sorted run as a sample; state a formula's range next to every
-case it is checked on.
+case it is checked on; check a shape stated for a set of cases on each case, the test's first.
 
 ## Known mathematics, and what the line adds
 
@@ -127,7 +127,7 @@ typical; the link rule for chains born apart; and the exact exponential rate of 
 | 2 | A dimension that belongs to the relation, not its presentation (B202) | 3/3 | 1/3 | one canonical presentation, tested on the four-place relation's three → one that grows alike, or a proof none can |
 | 3 | Bond balls on descent orders with tied chains (`FRESH-COUNT-20261118-001#3`) | 1/3 | 3/3 | "exponent = chains eventually untied" → a proof or a refutation |
 | 4 | Bond balls on the rings' winding (`RING-GROWTH-20261118-001#3`) | 1/3 | 2/3 | bond distances on the first rounds → a rate or an obstruction |
-| 5 | The second link of the chain rule (`PLUS-ONE-20261118-001#1`) | 1/3 | 3/3 | the ten misses against the 889 overshoots of the naive repair → a separating link, or a proof none local exists |
+| 5 | The second link of the chain rule (`PLUS-ONE-20261118-001#1`): ten misses of two shapes, nine with the births' parents sharing a distinction, one with them three steps apart and the partners crossing | 1/3 | 3/3 | the ten misses against the 889 overshoots of the naive repair, which does not reach the second shape → a separating link, or a proof none local exists |
 | 6 | Even rings: prove the split into two windings (`RING-FORMULA-20261118-001#2`) | 1/3 | 3/3 | the model for even n ≥ 8 → a proof or a ring that breaks it |
 | 7 | A short note: the parity growth law is Birkhoff's construction (`FRESH-COUNT-20261118-001#4`) | 1/3 | 3/3 | the two theorems written self-contained → checked |
 

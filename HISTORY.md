@@ -13,6 +13,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   with two large sides from round 10, which the side-limited table and its check both miss. They change no entry inside the
   reader's horizon to round 25 and do not change the reader's output at round 30.
 
+## 19 November 2026: the chain rule's misses have two shapes
+
+- The study of when separately born chains combine (`PLUS-ONE-20261118-001`,
+  [decision note](research/PLUS-ONE-20261118-001/plus_one.md)) was refereed with fresh code and confirmed with one Narrowing, no
+  Block. The rule's hit counts reproduce, and the 31 arrangements of the census's last shard all match.
+- **Narrowed.** "All ten misses have one shape" (two round-1 births from start knots sharing a distinction) holds for the nine
+  census misses only; the six-knot miss has its births three steps apart, with crossing partners.
+
 ## 18 November 2026: the ring formula refereed; the ring growth proved
 
 - The studies of why rings of knots grow faster than any power (`RING-GROWTH-20261118-001`,

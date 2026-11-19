@@ -1,7 +1,7 @@
 # When do separately born chains combine?
 
 Epic `PLUS-ONE-20261118-001`, 18 November 2026, by Claude, on the coordinator's go-ahead for `TOUCH-CENSUS-20261118-001#2`. Goal
-G17. **Referee pending.**
+G17. **Refereed:** report [R1](referee-R1/report.md), confirmed with one Narrowing, no Block, folded in on 19 November (see Referee).
 
 **Record.** Pre-registration [preregistration.md](preregistration.md) (frozen in commit `7497a7e52`); code
 [linked.py, job.py, merge.py](../../experiments/PLUS-ONE-20261118-001B/PLUS-ONE-20261118-001B-E001_linked/); results
@@ -15,9 +15,11 @@ G17. **Referee pending.**
   their dimensions, when the junctions they are each asked to join with share a neighbour. With that one link the rule predicts the
   dimension (junctions by round) in 11,649 of the 11,658 census arrangements that grow with a birth, never overshooting.
 - **It is not the whole rule.** Ten arrangements (9 in the census, 1 of the 149 six-knot samples that grow with a birth) combine two
-  chains whose partners do not share a neighbour. All ten have the same shape: two births in round 1 from two start knots that
-  share a distinction. The obvious repair, linking births whose parents are neighbours, is wrong: it overshoots in 889 census
-  arrangements (checked after the read-out). So the frozen test P1 failed, by one arrangement, and the right second link is open.
+  chains whose partners do not share a neighbour. Each has exactly two births, both in round 1. In the nine census misses the two
+  births come from start knots that share a distinction. The six-knot miss is another shape: its births come from start knots three
+  steps apart, and their partners cross over, each on a start knot next to the other birth's parent (narrowed after the referee).
+  The obvious repair, linking births whose parents are neighbours, is wrong: it overshoots in 889 census arrangements (checked after
+  the read-out), and it would not reach the six-knot miss. So the frozen test P1 failed, by one arrangement, and the right second link is open.
 - **No larger shapes occurred.** Every linked component was two classes (1 + 1, or 1 + 2), always pairwise linked; no 2 + 2, no
   three classes, no path. The advisor's sharper predictions could not be tested.
 
@@ -40,15 +42,30 @@ that grow).
 ## Limitations
 
 - "Dimension" counts junctions by round. The six-knot sample is 400 random arrangements, not uniform over distinct ones.
-- The second kind of link is not found.
+- The second kind of link is not found, and the misses show at least two shapes of it.
 
 ## Advisor
 
 `claude -p --model claude-fable-5-2 --tools ""` ([question](advisor/question_1.md), [answer](advisor/answer_1_fable.md);
 `modelUsage` names claude-fable-5-2), before the freeze. It found three forms fitting the pilot, favoured the sum with a reading
 (class and link one relation on births), asked that the census be labelled fitting, warned that links across what the test sees
-would undercount (they did, in a different way: the ten misses link through the births' parents, not across rounds), and proposed
+would undercount (they did, in a different way: the nine census misses link through the births' parents, not across rounds; the six-knot miss
+through neither), and proposed
 P1 and P2.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread with fresh code: confirmed
+with one Narrowing, no Block. Its own growth, births, classes, links and dimension reader reproduce the hit counts: 11,649 of
+11,658 census matches, 9 misses (all unlinked, dimension the largest class plus one), no overshoot; the 31 arrangements with a
+birth in the census's last shard, which finished after the close, all match (11,680 of 11,689); the six-knot sample gives 148 of
+149, no overshoot. Linked components: 222 of sizes 1 + 1 and 4 of 1 + 2, all cliques. Folded in, logged in `docs/CORRECTIONS.md`
+and knotlab's `HISTORY.md`:
+1. **Narrowing.** "All ten have the same shape: two births in round 1 from two start knots that share a distinction" holds for the
+   nine census misses only. The six-knot miss (seed 50025, knots of 5, 3, 5, 3, 4 and 4 places) has its two round-1 births at start
+   knots 1 and 5, which share no distinction and are three steps apart (1, 0, 4, 5); each birth's partner sits on a start knot next
+   to the other birth's parent, and the two partners share no neighbour. The naive repair would not link it, so direction #1's
+   target is wider than stated. The hit counts and P1's failure are unaffected.
 
 ## Position
 
@@ -63,7 +80,7 @@ P1 and P2.
 
 | # | Direction | Payoff | Concreteness | First step → stop when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | The second link: the ten arrangements where two round-1 births from start knots sharing a distinction combine | 1/3 — closes the rule | 3/3 — ten cases, one shape | compare their partners' descendants with the 889 overshoots of the naive repair → stop at a link that separates them, or a proof none local does | Selected · awaiting go-ahead |
+| 1 | The second link: the ten arrangements whose two round-1 births combine unlinked (nine with parents sharing a distinction; one with parents three steps apart and crossing partners) | 1/3 — closes the rule | 3/3 — ten cases, two shapes | compare their partners' descendants with the 889 overshoots of the naive repair, which misses the six-knot shape → stop at a link that separates them, or a proof none local does | Selected · awaiting go-ahead |
 | 2 | Serial growth read from distances (`FRESH-COUNT-20261118-001#1`) | 2/3 — tests A104 | 2/3 | as before | Alternative · deferred |
 | 3 | The general ring formula (`RING-GROWTH-20261118-001#2`) | 2/3 | 2/3 | as before | Alternative · deferred |
 
@@ -96,3 +113,5 @@ P1 and P2.
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained). **Assumptions:** none new. **Basket:** B196, `FRESH-COUNT-20261118-001#1`, `RING-GROWTH-20261118-001#2`, B202; none taken. **Advisor:** Fable 5.2, before the freeze. It shaped the rule and the predictions.
 
 Referee hand-off: the decision note is `research/PLUS-ONE-20261118-001/plus_one.md`.
+
+*Narrowed after the referee (see Referee): the one shape of the ten misses holds for the nine census misses only.*

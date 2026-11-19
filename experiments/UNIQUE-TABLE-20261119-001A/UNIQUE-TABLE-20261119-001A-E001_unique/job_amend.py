@@ -6,7 +6,11 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-import job as J  # noqa: E402
+import importlib.util  # noqa: E402
+_spec = importlib.util.spec_from_file_location('unique_table_job', HERE / 'job.py')   # not 'job': uniq.py imports the census's job
+J = importlib.util.module_from_spec(_spec)
+sys.modules[_spec.name] = J
+_spec.loader.exec_module(J)
 
 _T = []
 _U = None

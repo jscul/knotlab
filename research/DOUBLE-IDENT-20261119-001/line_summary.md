@@ -2,17 +2,20 @@
 
 19 November 2026, by Claude, at the coordinator's request. This is one page for the owner. It adds no evidence: every figure comes
 from the linked records.
-- **Refereed and confirmed:** the four identification proofs and the reading past the census (SCALE-THEOREM).
-- **Referee pending:** the weightings test (WEIGHTINGS) and the cap on places (CAP-CHAINS).
+- **Refereed and confirmed:** the four identification proofs, the reading past the census (SCALE-THEOREM) and the weightings test
+  (WEIGHTINGS).
+- **Referee pending:** the cap on places (CAP-CHAINS).
 
 ## First: two dimensions are typical of how starts are drawn, not of the growth
 
 The census found that most growing starts are two-dimensional, and the proofs below explain how. That "two is typical" is a fact
 about the starts sampled, not a law of the growth (a Narrowing, logged in docs/CORRECTIONS.md).
-- **Crowded starts keep two.** The census, SCALE-SHARE's samples, random pairing of places and growth by attaching knots one at a
-  time all have knots of three to five places with few open places left. Under the last three, two dimensions are 80% to 100% of
-  the growing starts in the proved class, and none of those has three. On the census, 82% of all growing starts are
-  two-dimensional.
+- **Knots of at most five places keep two.** The census, SCALE-SHARE's samples, random pairing of places and growth by attaching
+  knots one at a time all keep knots at three to five places. Under the last three, two dimensions are 80% to 100% of the growing
+  starts in the proved class, and none of those has three. On the census, 82% of all growing starts are two-dimensional.
+- **The cause is the cap, not crowding** (WEIGHTINGS' referee). In all seven weightings, uncrowded trees included, none of the
+  25,133 growing starts in the class whose knots all have at most five places reaches three. Within five places, growth can
+  still be exponential (127 of them).
 - **Uniform random trees do not.** Here every knot gets the places its joins need. Read by the same proved theorem, three or more
   dimensions is 12% of growing starts at twelve knots and 37% at twenty, up to six.
 - **Random extra lines make exponential growth common:** 11% at six knots, and 41% at twenty.
@@ -64,7 +67,7 @@ from twelve knots (WEIGHTINGS). That is the Narrowing above.
 | [RELAY-IDENT](../RELAY-IDENT-20261119-001/relay_ident.md) | A finished piece's top is not implied while another piece grows, so it carries a relay: k junctions in the k-th round after the top. A lone finished piece closes | Drops the infinite-piece condition | Confirmed line by line (the tally's reach stated: its 93% counts double-touch trees, which rest on DOUBLE-IDENT; simple trees 91%) |
 | [DOUBLE-IDENT](double_ident.md) | Knots touching twice or more change nothing but the open counts, so all of the above holds for every multiplicity. A start with a single loose distinction closes at round 1 | Drops simplicity. The two block conditions are read on live knots; no stall and at least two loose distinctions are needed | Confirmed (its classification of all 26,441 reproduced exactly) |
 | [SCALE-THEOREM](../SCALE-THEOREM-20261119-001/scale_theorem.md) (frozen run) | Read by the theorem, SCALE-SHARE's samples of 5 to 20 knots are 73–83% in the class; in it two dimensions rise from 85% to 98% of growers, and three never occurs | Nothing new; it measures the class's reach under one weighting | Confirmed (every figure reproduced; two wording points folded in) |
-| [WEIGHTINGS](../WEIGHTINGS-20261119-001/weightings.md) (frozen run) | Under seven weightings frozen before reading, two stays typical only where knots are crowded and have three to five places. Under uniform random trees three or more is 12% at twelve knots and 37% at twenty; extra lines make exponential growth common. All 1,226 regrown samples agree with the theorem, 622 of them three- to six-dimensional or exponential | Nothing new; it narrows "two is typical" and overturns A106 as a reading of the growth | Pending |
+| [WEIGHTINGS](../WEIGHTINGS-20261119-001/weightings.md) (frozen run) | Under seven weightings frozen before reading, two stays typical only where knots have at most five places, crowded or not. Under uniform random trees three or more is 12% at twelve knots and 37% at twenty; extra lines make exponential growth common. All 1,226 regrown samples agree with the theorem, 622 of them three- to six-dimensional or exponential | Nothing new; it narrows "two is typical" and overturns A106 as a reading of the growth | Confirmed (the samplers checked against their exact laws; every one of 6,271 hard in-class starts regrows as read; the cause credited to the cap, not crowding) |
 | [CAP-CHAINS](../CAP-CHAINS-20261119-001/cap_chains.md) (proof) | With no dead knot and at most five places, the knots form one line or one ring with single knots hung on it, so a piece carries at most two chains, and a tree start grows in at most two dimensions. Six places, or dead knots at five, allow any number | Adds a cap on places and no dead knot | Pending |
 
 ## On what share of the census

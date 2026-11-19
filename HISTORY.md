@@ -4,6 +4,15 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the weightings test refereed
+
+- The weightings test (`WEIGHTINGS-20261119-001`, [decision note](research/WEIGHTINGS-20261119-001/weightings.md)) was refereed
+  and confirmed. Its samplers match their exact laws. Every one of 6,271 three- to six-dimensional or exponential starts in the class
+  regrows as the theorem reads it.
+- **Clarified (not a block).** The entry below credited two dimensions to knots that are "crowded and have three to five places". The
+  cause is the cap. In every weighting, uncrowded trees included, no growing start in the class whose knots all have at most five
+  places reaches three dimensions (0 of 25,133). Within five places growth can still be exponential.
+
 ## 19 November 2026: two dimensions are typical of the weighting
 
 - **Narrowed.** "Two is typical, three and four only among mutually touching knots" holds where knots are crowded and have three

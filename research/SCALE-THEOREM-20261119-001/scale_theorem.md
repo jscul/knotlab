@@ -65,7 +65,7 @@ Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's backgr
 "Three or more lives only among mutually touching knots" (position table) and "the rare dimensions live only there" (directions)
 hold under SCALE-SHARE's weighting only. Under uniform random trees, every start is in the proved class, and three or more
 dimensions is 12% of growers at twelve knots and 37% at twenty. Those starts all have a knot of six or more places. So the out-of-class
-quarter is where the rare dimensions sit for crowded knots of three to five places, not where they must sit
+quarter is where the rare dimensions sit for knots of at most five places, not where they must sit
 ([WEIGHTINGS decision note](../WEIGHTINGS-20261119-001/weightings.md); logged in docs/CORRECTIONS.md).
 
 ## Predictions and verdicts

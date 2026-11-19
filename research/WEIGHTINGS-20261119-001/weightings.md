@@ -1,7 +1,8 @@
 # Two dimensions: typical of the weighting, not of the growth
 
 Epic `WEIGHTINGS-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead to challenge `A106` (and `A107`).
-Goal G17. **Referee pending.**
+Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block; the Narrowing stands; one wording
+point folded in on 19 November (see Referee).
 
 **Record.**
 - **Pre-registration:** [preregistration.md](preregistration.md), frozen in commit `61b0ec72a` at 15:07 UTC, before any sample
@@ -24,16 +25,20 @@ Goal G17. **Referee pending.**
     and 37% at twenty. Up to six dimensions occur.
   - **Adding random extra lines** (Poisson, mean one) makes exponential growth common in the class: 11% of its growers at six
     knots, rising to 41% at twenty. Three or more dimensions reaches 23%.
-  - **The crowded weightings keep two.** These are the configuration model, which joins places at random, and growth by
-    attaching knots one at a time.
+  - **The weightings that keep knots at three to five places keep two.** These are the configuration model, which joins places at
+    random, and growth by attaching knots one at a time.
     - Most of their starts stall: 50% to 88% under the configuration model, and 64% to 99.7% under attachment.
     - Among their in-class growers, two dimensions are 80% to 100%.
     - Three never occurs, and exponential growth appears in 8 samples in all.
 
     The configuration model follows SCALE-SHARE's pattern: two rises from 80% to 100% of in-class growers, against 85% to 98%. So
     that weighting's result is not an artefact of counting each description once.
-- **So what I'm about to tell John needs narrowing.** "Two is typical" holds for starts whose knots are crowded and have three to
-  five places: the census, SCALE-SHARE, random pairing of places, and growth by attachment. It is not a law of the growth. By the
+- **So what I'm about to tell John needs narrowing.** "Two is typical" holds for starts whose knots have at most five places: the
+  census, SCALE-SHARE, random pairing of places, and growth by attachment. It is not a law of the growth.
+  - **The cause is the cap, not crowding** (referee R1). Across all seven weightings, uncrowded trees included, none of the 25,133
+    in-class growers whose knots all have at most five places is three or more dimensional.
+  - **Crowding explains the stalls, not the two.**
+  - **Within five places growth can still be exponential:** 127 such growers, 119 of them under tree+. By the
   stated threshold (10% of in-class growers, with at least 20 of them), three or more is common:
   - under random trees from twelve knots;
   - with surplus at 25% or 50% from sixteen knots.
@@ -45,7 +50,9 @@ Goal G17. **Referee pending.**
   - A uniform random tree has (n−1)(1−2/n)^(n−3) such leaves on average, about n/e² for large n (W2 held within 1.6% at every
     size). They split
     between the tree's two parity classes, so the dimension grows with the number of knots.
-  - Crowded weightings leave almost no knot with open places, so chains are scarce and pieces finish, which relays them to two.
+  - With at most five places a knot cannot feed three chains into one piece (the lemma below, proved in general by
+    `CAP-CHAINS-20261119-001` for starts with no dead knot). So the weightings that keep knots at five places keep two, and the
+    ones that let knots take more places do not.
 - **The five-place cap is what keeps trees at two. Proved here, post hoc.**
   - **The lemma.** A bare tree whose knots all have at most five places grows in at most two dimensions.
   - **Why.** Each knot's places count its touches plus the pairs it joins. With at most five places, no knot touches three
@@ -157,6 +164,24 @@ The full figures, by fine class, with mechanisms, the five-place restriction and
 
 10 of 11 held.
 
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread. No study reader or growth code
+was run.
+- **Confirmed.**
+  - The configuration sampler follows its exact law, weighted by matching counts as stated: 200,000 draws at three and four knots
+    against full enumeration.
+  - The tree sampler is uniform, and the bare sizes match on 80,000 of 80,000.
+  - The caterpillar lemma holds, checked on all 205,002 trees of 3 to 18 knots: all 368 five-place trees are caterpillars with
+    dimension at most 2.
+  - The dead-hub start is exactly quadratic, with minimal recurrence (x − 1)³: dimension 3.
+  - The referee's own reading of all 112,000 samples matches class, growth class and largest knot on every one.
+  - Its regrowth of every hard in-class start (6,271: 3,926 at dimension 3, 512 at 4, 56 at 5, 3 at 6, 1,774 exponential) and 4,318
+    others agrees to round 6, all 10,589.
+- **Folded in (wording, not a block).** "Two holds for crowded knots of three to five places" now credits the cap. None of the 25,133
+  in-class growers with knots of at most five places reaches three, crowded or not. Exponential growth still occurs within five
+  places (127). Logged in docs/CORRECTIONS.md.
+
 ## Assumptions
 
 - **A106** (arrangements weighted uniformly up to five knots of three to five places): **Overturned** as a reading of what the
@@ -165,7 +190,7 @@ The full figures, by fine class, with mechanisms, the five-place restriction and
     absent.
   - It also named more than five places. Under random trees, where knots take the places their joins need, three or more is common
     from twelve knots.
-  - So "two typical, three and four rare" is a fact about crowded knots of at most five places, not about the growth. The census's
+  - So "two typical, three and four rare" is a fact about knots of at most five places, not about the growth. The census's
     figures stand as figures under its weighting (A71); the claims that read them as the growth's are narrowed (Corrections).
 - **A107** (ring joins weighted over one bare census): history line. Under random trees with one random extra line, every in-class
   start whose one cycle has knots attached grows exponentially (94 of 94 at six knots, 391 of 391 at twenty). Only a cycle through
@@ -182,7 +207,7 @@ The full figures, by fine class, with mechanisms, the five-place restriction and
 - **What this adds.** The cheapest growth's dimension under each weighting, read from proved statements, with a mechanism:
   - typical dimension grows with size under random trees;
   - cycles make it exponential;
-  - crowded weightings and the five-place cap keep it at two.
+  - the five-place cap keeps it at two.
 
 ## Limitations
 

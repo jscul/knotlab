@@ -761,12 +761,16 @@ matrix (`JUNCTION-KINDS-20261119-001`, frozen run, referee pending)? No. Each
 junction passes a share of each child back to it, and those shares take more
 values every round, in the catalogue's eddies as much as in the break shapes, so
 no finite set of kinds can pass them on exactly. A junction is a cluster that
-keeps growing. But the count c(t) = c(t − 2) + c(t − 3) of the plastic-number
-eddies is carried by their own ancestry: each round's junctions pair off one to
-one with ancestors two and three rounds back, so every junction has one partner
-two rounds on and one three rounds on, the substitution a → b, b → c, c → ab made
-of real parent chains. No local type of chain found picks those partners
+keeps growing. The count c(t) = c(t − 2) + c(t − 3) of the plastic-number
+eddies fits their ancestry: each round's junctions can be paired one to one with
+ancestors two and three rounds back. But a shuffled relation with the same
+numbers of candidates pairs off as well, so this says little
 ([decision note](../research/JUNCTION-KINDS-20261119-001/junction_kinds.md)).
+Can the growth pick such a pairing itself (`NATIVE-SPINE-20261119-001`, frozen
+run, referee pending)? Not by the newest ancestor, the one with the most parent
+chains or the one with the fewest, and nothing in the ancestry forces any pair:
+every junction could swap its partner within another pairing
+([decision note](../research/NATIVE-SPINE-20261119-001/native_spine.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

@@ -4,6 +4,14 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the eddies' pairing narrowed
+
+- **Narrowed.** The study of kinds of junction (`JUNCTION-KINDS-20261119-001`,
+  [decision note](research/JUNCTION-KINDS-20261119-001/junction_kinds.md)) read the one-to-one pairing of each round with the two
+  rounds its recurrence names as a substitution built from parent chains. A shuffled relation with the same numbers of candidates
+  pairs off too, and no pair is forced (`NATIVE-SPINE-20261119-001`,
+  [decision note](research/NATIVE-SPINE-20261119-001/native_spine.md)), so the pairing shows only that the counts fit the ancestry.
+
 ## 19 November 2026: the states-only growth, its presentations and the dropped junction refereed
 
 - **A growth that reads only the allowed states** (`STATES-GROWTH-20261119-001`,

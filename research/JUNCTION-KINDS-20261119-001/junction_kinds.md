@@ -1,7 +1,8 @@
 # A transfer between kinds of junction
 
 Epic `JUNCTION-KINDS-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead after `BREAK-EDDIES-20261119-001`'s
-referee verdict (taking `JUNCTION-MAP-20261119-001#1`). Goal G17. **Referee pending.**
+referee verdict (taking `JUNCTION-MAP-20261119-001#1`). Goal G17. **Referee pending.** Its reading of the matching was narrowed
+the same day by `NATIVE-SPINE-20261119-001` (see Corrections).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `aceb33e8c` at 12:54 UTC after a pilot (disclosed).
@@ -31,20 +32,23 @@ referee verdict (taking `JUNCTION-MAP-20261119-001#1`). Goal G17. **Referee pend
   - **The catalogue too.** This holds in the catalogue's eddies as well, where the cluster rule's cover gives an exact finite
     transfer. So the finite object behind a rational count is not a kind of junction. A junction is a growing cluster, and its
     parents count the points it can lose, which grow with it.
-- **But ancestry can carry the count.** In the ten starts c(t) = c(t − 2) + c(t − 3) from round 4, 5 or 6 on.
+- **Ancestry is compatible with the count, no more (corrected the same day, a Narrowing).** In the ten starts c(t) = c(t − 2) +
+  c(t − 3) from round 4, 5 or 6 on. The first version said "ancestry can carry the count", reading the matching below as the
+  substitution's structure. But a degree-preserving shuffle of the relation has a perfect matching too (30 of 30,
+  `NATIVE-SPINE-20261119-001`), and no pair is forced. So the matching shows only that the counts fit the ancestry's density.
   - **The matching.** At every round where it holds, each junction can be paired with a different ancestor two or three rounds
     back, using every junction of those two rounds exactly once: a perfect matching, 10 of 10, 21 to 23 rounds each.
   - **The tree it makes.** Every junction then has one partner two rounds later and one three rounds later, and every junction
-    has one partner before it. This is the substitution a → b, b → c, c → ab, which counts c(t) = c(t − 2) + c(t − 3), made out of
-    real parent chains.
+    has one partner before it, as in the substitution a → b, b → c, c → ab, which counts c(t) = c(t − 2) + c(t − 3). Since a
+    shuffled relation pairs off as well, this tree is one of very many and says little about the growth.
   - **The catalogue's eddies,** whose counts carry a constant part, match their own lags in the same way, saturating the smaller
     side at every round (5 of 5).
 - **No local rule found picks that tree.** No set of up to three of the ten most frequent interval types makes the relation
   biregular, in any of the ten, even on the first half of the rounds (J4). An interval type is the shape of the parent chains
   between a junction and its ancestor.
   - The ancestors reached by one chain alone fall short too, matching 92 to 97% of a round in the last round.
-- **What it means for the eddies.** A self-feeding loop of the break shapes is a substitution realised in the growth's own
-  ancestry, not a finite set of junction kinds. Whether a native rule chooses its tree is open.
+- **What it means for the eddies.** A self-feeding loop of the break shapes is not a finite set of junction kinds. Its count
+  fits its ancestry, but no rule tried picks a spine there, and none is forced (`NATIVE-SPINE-20261119-001`).
 
 ## Predictions and verdicts
 
@@ -70,7 +74,7 @@ round, both hold (post hoc).
   their removable points and of their extensions grow, and so does the set of share sums. This is argued, not proved.
 - **A finite transfer on average still exists.** Class totals can follow a fixed matrix without every junction doing so. The
   substitution a → b, b → c, c → ab has characteristic polynomial x³ − x − 1 and counts c(t) = c(t − 2) + c(t − 3). A perfect
-  matching per round realises it inside the ancestry: the junctions of round t pair off with those of rounds t − 2 and t − 3. A
+  matching per round fits it into the ancestry, though a degree-preserving shuffle pairs off as well (corrected). A
   label like "rounds since the last whole turn" is not local, so a local partition cannot carry it, as the advisor said.
 
 ## Known results, and what this adds
@@ -80,8 +84,8 @@ round, both hold (post hoc).
 - **What this adds.**
   - For the cheapest growth, a junction's kind, however refined, cannot carry an exact finite transfer, in the break-shape eddies
     and in the catalogue's alike.
-  - The count of a break-shape eddy is nonetheless carried by its own ancestry, as a perfect matching of each round with the two
-    rounds its recurrence names.
+  - The count of a break-shape eddy is compatible with its own ancestry: each round has a perfect matching with the two rounds
+    its recurrence names. A degree-preserving shuffle has one too, so this is weak evidence (corrected).
   - No local interval type up to the size searched chooses that matching.
 
 ## Limitations
@@ -93,6 +97,12 @@ round, both hold (post hoc).
 - The share 1/p is one convention. Any convention that splits a child's count among its parents gives an exact-transfer argument of
   the same form, but its out-shares were not measured.
 - The y⁴(1 + y)² starts were used only as a count control; their own spine, at lags 4, 5 (twice) and 6, was not tested.
+
+## Corrections
+
+- **2026-11-19, Narrowing (overreading), found by `NATIVE-SPINE-20261119-001`.** "Ancestry carries the count … the substitution made
+  of real parent chains" read the existence of a perfect matching as structure. A degree-preserving shuffle of the relation has one
+  too (30 of 30), and no pair is forced. Logged in `docs/CORRECTIONS.md`. J3's verdict and every count stand.
 
 ## Advisor
 
@@ -112,9 +122,9 @@ round, both hold (post hoc).
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: a transfer between kinds of junction | **Status:** Partially successful (3 of 5 held as scored; the 2 misses are start rounds and hold post hoc; the stop rule's second case) | Out-shares and the coarsest exact transfer grow without settling in all 30 starts, the catalogue's included; ancestry carries c(t) = c(t − 2) + c(t − 3) as a perfect matching at every recurrent round; no local interval type picks it |
-| Local direction: a finite object behind the break-shape eddies | Narrowed | Not a kind of junction; a substitution in the ancestry, without a native rule found |
+| Local direction: a finite object behind the break-shape eddies | Narrowed | Not a kind of junction; the ancestry is compatible with the count, but no spine is found or forced (corrected) |
 | Broader exploration: what the cheapest growth builds | Known alternatives | Steady eddies are substitutions realised by parent chains; explosive starts remain unread |
-| Long-term goal: G17 | Obstruction learned | Local kinds cannot carry the rare eddies' counts; their ancestry can |
+| Long-term goal: G17 | Obstruction learned | Local kinds cannot carry the rare eddies' counts; their ancestry is only compatible with them (corrected) |
 
 **Next step:** Research directions — selected: #1
 

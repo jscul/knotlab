@@ -121,6 +121,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: the hunt refereed
+
+- The hunt for a counterexample to the distances version of the one-round extension (`HUNT-SHORTEN-20261119-001`,
+  [decision note](research/HUNT-SHORTEN-20261119-001/hunt_shorten.md)) was refereed and confirmed. With the referee's full search,
+  all 1,746,752 table symmetries on census stages of up to 14 junctions that keep the round's reading but not the equations
+  extend one round, holder-breaking ones included.
+- **Clarified (not a block).** The study's own bound now names what it tested: 33,918 of 108,289, with 34 stages cut and 6 late.
+
 ## 19 November 2026: what one round reads, refereed
 
 - The study of what one round reads (`EXTEND-ROUND-20261119-001`,

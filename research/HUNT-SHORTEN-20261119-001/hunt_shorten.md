@@ -1,7 +1,7 @@
 # Can a new junction shorten a bond in a way the distances do not foresee?
 
 Epic `HUNT-SHORTEN-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `EXTEND-ROUND-20261119-001#1`.
-Assumptions A97, A108; goal G1. **Referee pending.**
+Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; one wording point corrected; the referee's full run extends the bound (Referee R1 below).**
 
 **Record.** Pre-registration, frozen before the runs (commit `c4c75d76a`; prior-work line completed in `c849a1b50` before any
 result): [preregistration.md](preregistration.md). Code:
@@ -49,9 +49,13 @@ result): [preregistration.md](preregistration.md). Code:
 - **Exhaustive within its classes.** None of the following has a Claim B counterexample:
   - every static meet-once collision of at most 7 junctions (loose counts at most 3, at most 2 at 7), vacuously;
   - each of those with one junction attached, again vacuously;
-  - every open census stage of round 1 or later with at most 14 junctions, under every table symmetry taken on holder classes
-    that keeps the reading (at most 20 tested per stage).
-- **Not covered.** All arrangements of 8 to 14 junctions; symmetries that break holder classes; more than one round.
+  - the open census stages of round 1 or later with at most 14 junctions, under the table symmetries taken on holder classes
+    that keep the reading, as far as this study tested them. It tested 33,918 of the 108,289 found, at most 20 per stage. 34
+    stages had their symmetries cut at 2,000, and 6 stages timed out.
+- **The referee's run covers this bound as stated, and more.** On all 23,003 stages it took one symmetry per coset of holder-class
+  permutations, with no cap, including symmetries that break holder classes. 1,746,752 keep the reading without carrying the
+  equations, and all 1,746,752 extend (Referee R1 below).
+- **Not covered.** All arrangements of 8 to 14 junctions outside the census; more than one round.
 
 ## How it was done
 
@@ -117,6 +121,25 @@ Fable 5.2 before the freeze ([question](advisor/question_1.md), [answer](advisor
 
 **Corrections:** none from this study. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A97 and A108 gain this
 study, status unchanged.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own engine and a new search. **Confirmed, no Claim B counterexample, no Block; one wording point
+corrected, logged in `docs/CORRECTIONS.md` (Not a block).**
+- **The full run.** On all 23,003 open stages (rounds 1 to 7, at most 14 junctions), it took one isometry per coset of holder-class
+  permutations, with no cap of 20 or 2,000, and included isometries that break holder classes:
+  - 3,155,442 isometries in all;
+  - 526,507 carrying the equations;
+  - 1,746,752 keeping the reading without carrying them, of which 1,630,590 break holder classes.
+  All 1,746,752 extend to an isometry of the next table, entry by entry; the study tested 33,918, about 2%.
+- **The counts reproduce.** 23,003 stages (21,899 with two junctions sharing two, 1,104 meeting once); 3,816 stages with a
+  holder-preserving such symmetry, the study's 3,810 plus its 6 late; 116,162 such symmetries against the study's 108,289, its 34
+  stages being cut at 2,000. One stage was finished separately with no cap: start [[4,4,4,4,4],[0,0,1,2,2,0,2,2,0,0]], round 2,
+  11 junctions, with 362,496 reading-keeping symmetries, all breaking holder classes, and all extend. Part 1 was read, not rerun.
+- **Corrected.** "The bound, as asked" said every holder-class symmetry of every stage; the study tested 33,918 of 108,289, with
+  6 stages late and 34 cut. The section now says so, and the referee's run covers the bound as first stated.
+- **For the next step.** Holder-breaking symmetries extend too, so the right hypothesis for a proof may be keeping the reading
+  alone, without preserving holder classes.
 
 ## Final report as sent (2026-11-19 15:23 UTC)
 

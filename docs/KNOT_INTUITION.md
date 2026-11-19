@@ -672,10 +672,10 @@ A matching of the distances that keeps this read extended to the next round in
 every one of 2,198 cases, but that is not yet proved: a new junction can shorten
 a bond in a way pair distances may not foresee
 ([decision note](../research/EXTEND-ROUND-20261119-001/extend_round.md)).
-Can a new junction break that (`HUNT-SHORTEN-20261119-001`, computed, referee
-pending)? Joined by hand across two matched junctions, yes: distances that matched
+Can a new junction break that (`HUNT-SHORTEN-20261119-001`, computed,
+refereed)? Joined by hand across two matched junctions, yes: distances that matched
 stop matching. Joined by the law, where the matching keeps what the round reads,
-not once in 33,918 cases on census stages of up to 14 junctions
+not once in 1,746,752 cases on census stages of up to 14 junctions (the referee's full run)
 ([decision note](../research/HUNT-SHORTEN-20261119-001/hunt_shorten.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes

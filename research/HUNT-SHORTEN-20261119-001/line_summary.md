@@ -1,7 +1,7 @@
 # What distances carry of what the law builds: the line from GROWN-PAIR to HUNT-SHORTEN
 
 19 November 2026, by Claude, at the coordinator's request. A summary of nine epics; it adds no evidence. Each claim links to the
-record it comes from. HUNT-SHORTEN is **referee pending**; the other eight are refereed.
+record it comes from. All nine are refereed.
 
 ## In plain words
 
@@ -15,7 +15,8 @@ record it comes from. HUNT-SHORTEN is **referee pending**; the other eight are r
   junction holds what, which no reading of the allowed states can show.
 - **What the law reads, and the clean form of your premise.** One round of the law reads only the growing end: which junctions hold
   a loose distinction, how many, and which sets of them one junction meets. Distance plus the growing end carried everything one
-  round further in every case where the hypothesis applies, 69,978 of them, but that is not proved. A junction joined by hand
+  round further in every case where the hypothesis applies: 36,060 on the carried pairs and 1,746,752 census self-symmetries
+  by the referees' full runs. That is not proved. A junction joined by hand
   across two matched junctions does break it; the law's own joins, so far, never do.
 
 ## Proved (refereed)
@@ -36,7 +37,7 @@ record it comes from. HUNT-SHORTEN is **referee pending**; the other eight are r
 | From those 503,039 starts the law makes 87 meet-once pairs with one table and other states: 86 carried from colliding starts (persisting), 1 created (parting next round) | 1 and 2 rounds | GROW-SMALL |
 | Pair plus three-way readings separate every collision found: 11 + 152 + 22 + 1,034 + 87 pairs | the collisions found | THREE-WAY, TRIPLE-GROWN |
 | The created pair: matching the tables swaps a start knot with a new junction and moves one join distinction across the growing end; no matching keeps its loose distinctions, while some does in every carried pair | 1 created, 86 carried | CREATED-PAIR |
-| Distance plus the growing end extends one round: 36,060 of 36,060 (carried pairs) and 33,918 of 33,918 (census self-pairs); joins made by hand break it 14,792 times in 41,268, offshoots never | ≤ 14 junctions, one round | EXTEND-ROUND, HUNT-SHORTEN |
+| Distance plus the growing end extends one round: 36,060 of 36,060 (carried pairs) and 1,746,752 of 1,746,752 (census self-symmetries, holder-breaking ones included; the referee's full run; the study tested 33,918); joins made by hand break it 14,792 times in 41,268, offshoots never | ≤ 14 junctions, one round | EXTEND-ROUND, HUNT-SHORTEN |
 
 ## Known mathematics, and what our reading adds
 
@@ -64,6 +65,7 @@ What this line adds:
 | TRIPLE-GROWN | Counts of readings separate every pair, not 1,000 and 73; ranks quoted wrongly | Not a block |
 | CREATED-PAIR | Carried pairs' differences are not always two junctions from the growing end | Not a block |
 | EXTEND-ROUND | The stall test counts groups; Claim B\* is about the span of the equations | Not a block |
+| HUNT-SHORTEN | Its bound now names what was tested (33,918 of 108,289; 34 cut, 6 late) | Not a block |
 
 ## Open questions, graded
 

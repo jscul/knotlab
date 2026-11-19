@@ -1,0 +1,24 @@
+{
+ "schema_version": 1,
+ "experiment_id": "BREAK-EDDIES-20261119-001B-E001",
+ "ticket": "BREAK-EDDIES-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the self-feeding starts in the cluster rule's break shapes grow by a finite model (a round-weight), with which loops, and does the rule restarted at a later stage cover them?",
+ "public_inputs": {
+  "code": "job.py (e6729a746c1b2e4c77aa7eb92b1d0bf179498194bff4c02e3c4a81694f851bb4), merge.py (959502b8b61011a9adff94bb596f6bb48159c4f966698208d2966b45e0c3456f), stagelib.py (9b76df044e7beb014547a0c1d806b2439b05fc1c891aa8cdfe894f1aa926c9c8), breaklib.py (c03e2fcffcea3ee9bdb95d03c5c2742c05a30f37127d72b85b31a62a9651f896) (sha256)",
+  "data": "population.json (a91d6327d4ff7d85a0b28fc154229026c2f06381ff4d54a01bd982da771c0033): LOOP-CATALOGUE part U's 122 exponential starts (main run)",
+  "run": "scripts/longrun.py launch job.py (3 workers) under .venv/bin/python; python3 -B merge.py <out dir> <results.json>",
+  "reused": "LOOP-CATALOGUE-20261119-001B eddy.py; JOIN-GROWTH-20261118-001B reclib.py; CLUSTER-ALL-20261119-001B clusters.py"
+ },
+ "forbidden_inputs": ["Changing a start, the caps or a prediction after reading any growth of the frozen run"],
+ "primary_observable": "B1-B8 of research/BREAK-EDDIES-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the rational starts against the explosive ones (B4); the stage readings (B8)",
+ "predictions": {"B1": "recurrences persist", "B2": "W nonnegative integers, W(1) >= 2", "B3": "readout", "B4": "explosive starts' groups exceed rational ones'", "B5": "theta: no recurrence of order <= 8", "B6": "L <= 3 needs a first-round group of three", "B7": "more open places never lengthen the loop", "B8": "no stage in scope and break-free"},
+ "decision_rules": {"each": "held iff no exception"},
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under two hours",
+ "disclosed_exploration": "pilot/ (the 30 provisional starts grown to 40 rounds; stage readings; breaklib's unmerge; one smoke run), recorded in the pre-registration",
+ "amendments": []
+}

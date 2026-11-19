@@ -3227,4 +3227,8 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · First test by `LOOP-CATALOGUE-20261119-001`, which supports it where the cluster rule holds. Up to eight knots, every
+    minimal self-feeding loop there is a ring with one extra choice (rates the roots of x^(L+1) = x + 1). Every one-loop rate is
+    the root of W = 1 for a round-weight built from a few pieces, which multiply when parts are joined. Where the rule breaks, more
+    self-feeding starts appear that nothing yet describes (part of the run still pending), so it stays under challenge.
   - 2026-11-19 · Recorded, in the owner's words, as his direction; under challenge by `LOOP-CATALOGUE-20261119-001`.

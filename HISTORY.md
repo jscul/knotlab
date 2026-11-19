@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 19 November 2026: two joined rings, the exponent corrected
+
+- The study of joins to rings of knots (`JOIN-GROWTH-20261118-001`,
+  [decision note](research/JOIN-GROWTH-20261118-001/join_growth.md)) said two joined rings' counts fit λ^t · t^(−3/2), with rates 2.14
+  to 2.79.
+- **Narrowed.** An exact model found by `RING-PAIR-20261119-001` (the junctions are the clusters of the unrolled candidate map)
+  reproduces every grown round and gives c(t) ≈ C λ^t t^(−5/2), with rates 2.19 to 2.87 (2.6075 for two rings of five). Non-rational
+  growth and the order of the rates stand.
+
 ## 19 November 2026: the ring read back from its distances, refereed
 
 - The study of reading the cheapest-count ring back from its bond distances alone (`RING-READ-20261118-001`,

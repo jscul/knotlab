@@ -605,8 +605,9 @@ a ring that alone adds five junctions a round, and each joined knot enters one
 equation for the rate as its own small menu: skip the knot, or take it and then
 any of its own surplus distinctions, 1 + y(1 + y)^s. The menus multiply, and
 along a chain each menu sits inside the one two knots before it. Two joined
-rings lock into a growth of a new kind, about 2.5 times a round for two rings of
-five with a t^(-3/2) correction, the mark of a menu that contains itself
+rings lock into a growth of a new kind, approaching 2.61 times a round for two
+rings of five with a t^(-5/2) correction (corrected 19 November from t^(-3/2)
+and about 2.5), the mark of counting clusters in a branching map
 ([decision note](../research/JOIN-GROWTH-20261118-001/join_growth.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and

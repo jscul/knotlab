@@ -53,13 +53,14 @@ measured. Words new to the record, chosen with the advisor:
 - **The coordinator's guess, that a join acts as added spare distinctions,** is exact only for a lone knot with nothing of its own:
   F = 1 + y, one surplus distinction one round early. A knot with surplus distinctions of its own counts for less than that many
   spare distinctions would (1 + y + y² against (1 + y)²).
-- **Two joined rings neither add nor multiply their rates. They lock into one growth of a new kind.**
+- **Two joined rings neither add nor multiply their rates. They lock into one growth of a new kind** (corrected 19 November; see
+  Correction).
   - Two rings of five four-place knots each grow by five junctions a round alone. Joined by one shared distinction, they grow about
-    2.53 times a round.
-  - The counts satisfy no short linear recurrence. They fit λ^t · t^(−3/2) closely, the mark of a menu that contains itself: each
-    ring's menu holds the other ring.
-  - Longer rings lock lower: 2.53 for five and five, 2.32 for five and seven, 2.19 for five and nine, 2.14 for seven and seven.
-    Joining through a shared knot locks higher (2.79), and joining through a path of one knot lower (2.36).
+    2.3 times a round over the rounds grown, approaching 2.61 a round.
+  - The counts satisfy no short linear recurrence. Their series is algebraic (`RING-PAIR-20261119-001`): c(t) ≈ C λ^t t^(−5/2),
+    the mark of counting tree-like clusters. Each ring's menu holds the other ring.
+  - Longer rings lock lower: 2.61 for five and five, 2.38 for five and seven, 2.24 for five and nine, 2.19 for seven and seven.
+    Joining through a shared knot locks higher (2.87), and joining through a path of one knot lower (2.43).
   - With the exponent fixed at −3/2, the advisor forecast round 16 of two joins from their first 15 rounds: 303,800 and 319,300.
     The counts grown afterwards are 303,791 and 319,488. It also placed the seven-and-seven join between 2.10 and 2.16 without seeing
     it; it grows at 2.14.
@@ -79,7 +80,7 @@ measured. Words new to the record, chosen with the advisor:
 | + several lone knots and surplus distinctions, anywhere | product of their factors | e.g. 1.4065 (three knots on a ring of seven) | frozen, P2, P3 |
 | + two touching knots hanging from a ring knot | F_(s_A) F_(s_B); 1/(1 − y) for a far knot with only the floor's distinction | 1.4196 bare; the golden ratio with (2, 2) and a ring surplus distinction | frozen, P4–P7 |
 | + a chain or fork of joined knots | nested: candidate children inside each knot's menu | 1.42 to 1.66 | post hoc |
-| two rings joined | not rational: c ≈ C λ^t t^(−3/2) | 2.14 to 2.79 | frozen, P9 (qualitative) |
+| two rings joined | algebraic, not rational: c ≈ C λ^t t^(−5/2) (corrected) | 2.19 to 2.87 | frozen, P9 (qualitative); `RING-PAIR-20261119-001` |
 | two two-fold pieces joined, no ring | none needed: one- or two-dimensional | 1 | frozen, P10 |
 
 ## Predictions and verdicts
@@ -158,7 +159,8 @@ survive; and two joined rings leave this rational family.
   identification step of `RING-GROWTH-20261118-001`'s Proposition 2 for decorated rings.
 - **The nested law for chains is post hoc** (found on the census and on chains grown after the freeze), not frozen.
 - **Two rings: no model.** The rates are fitted to 13 to 17 rounds; "no recurrence" means none of order at most seven with twice its
-  order to spare, which a recurrence of high order could still hide; α near −3/2 is a fit, not a reading of the series.
+  order to spare, which a recurrence of high order could still hide; α near −3/2 is a fit, not a reading of the series (and it is
+  a transient: the series' exponent is −5/2, see Correction).
 - **One growth policy and one size convention** (A104; every knot given the fewest places that let round 1 start, A107). The law is
   stated in surplus counts, so another convention changes the counts it reads, not the law; this is checked only on the pilot's two
   other conventions.
@@ -182,6 +184,23 @@ survive; and two joined rings leave this rational family.
   - it proposed a quadratic template A = 1 + y^a P₁ A B, B = 1 + y^b P₂ A B, and a closing rule (three pairwise candidates with no
     common neighbour);
   - it expected the fork to break the nested law, which it did not.
+
+## Correction (19 November 2026)
+
+**Narrowing (number and exponent).** The answer said two joined rings' counts "fit λ^t · t^(−3/2) closely", with rates 2.53 (five
+and five), 2.32 (five and seven), 2.19 (five and nine), 2.14 (seven and seven), 2.79 (a shared knot) and 2.36 (a path of one knot),
+and P9's reading gave fitted λ 2.10 to 2.77 and α −1.08 to −1.46. `RING-PAIR-20261119-001` (in progress) found an exact model of
+these growths: the junctions of round t are the deck orbits of connected sets of t + 1 knots in the unrolled map of which knots can
+join which. It reproduces every grown round of all seven two-ring joins, and its algebraic system gives the series to any round.
+- **The exponent is −5/2, not −3/2.** With α = −5/2, λ_t = (c(t)/c(t − 1)) · (t/(t − 1))^(5/2) settles at the system's radius by
+  round 200; with α = −3/2 it keeps rising (2.533 at round 17, 2.566 at 50, 2.584 at 100 and 2.595 at 200 for five and five).
+- **The rates are larger:** 2.6075 (five and five), 2.3816 (five and seven), 2.2412 (five and nine), 2.1855 (seven and seven),
+  2.8683 (a shared knot), 2.4271 (a path of one knot), 2.6881 (five and five with a surplus distinction); the order of the joins is
+  unchanged.
+- **Why it was missed.** Thirteen to seventeen rounds were grown; over them a −3/2 fit with a smaller λ is as flat as −5/2 with the
+  true λ. The advisor's two round-16 forecasts held because they reach one round past the data.
+- **Stands.** Non-rational growth (now exact), the rates' order, P9 as frozen (it scored the fit, and the fit is as reported), and
+  everything about single rings. **Not a block.**
 
 ## Position
 

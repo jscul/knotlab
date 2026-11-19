@@ -4,6 +4,10 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026 · Which large groups admit partner replacements
+
+The wording of the small-part search in `WALL-READ-20261119-001` has been narrowed. On start-03, 27,588 of the 28,008 large groups that made round eight admit a literal partner replacement, while none with eight or more parents can independently replace three quarters of them. The earlier bound and the partnered-growth theorem stand. [Measured groups](research/HUB-GUIDED-SAMPLE-20261119-001/shapes.md)
+
 ## 19 November 2026: the explosive-kind study refereed
 
 - `EXPLOSIVE-20261119-001` ([decision note](research/EXPLOSIVE-20261119-001/explosive.md)) was refereed: its findings stand.

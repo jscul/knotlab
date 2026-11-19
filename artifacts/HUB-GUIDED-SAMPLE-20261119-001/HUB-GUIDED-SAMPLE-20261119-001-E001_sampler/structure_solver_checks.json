@@ -1,0 +1,82 @@
+{
+  "stage_sha256": "049ad2aa85d55619a9e9c97dfd7ed33f6bb0d929d665af56f071b13f8fbd1102",
+  "tools": {
+    "ganak": {
+      "source": "https://github.com/meelgroup/ganak/releases/tag/release%2Fv2.9.0",
+      "release": "v2.9.0",
+      "release_archive_sha256": "a303febfa889d887771d9c97680ca83475987d39166c524f50e8d9d344655183",
+      "executable_sha256": "e7a3c6a66377db349939ceb01c78783767fbca5a3ef3dad66cbc6cf11f2daf58",
+      "arguments": [
+        "--prob",
+        "0",
+        "--mode",
+        "0",
+        "--verb",
+        "0",
+        "input.cnf"
+      ]
+    },
+    "d4": {
+      "source": "https://github.com/practical-kc/d4v2/releases/tag/2.3.2",
+      "release": "2.3.2",
+      "release_archive_sha256": "a70fddf2bd369bbee169851912f44469e64072223b64c5f7c1a65ed4679f4df2",
+      "executable_sha256": "60b3d69cd0a3f0b3bc610e9bf7dbd48d4f10058a2341c9a299f2726d794f93b1",
+      "arguments": [
+        "-i",
+        "input.cnf",
+        "-m",
+        "counting"
+      ]
+    }
+  },
+  "cases": {
+    "structure_full35_0": {
+      "rank_table_count": 1988324131679583,
+      "physical_rank_replays": 14,
+      "solvers": [
+        {
+          "solver": "ganak",
+          "count": 1988324131679583,
+          "variables": 310,
+          "clauses": 2849,
+          "input_sha256": "e0e2c2e12a3227f170eaf58c885392a5a626458d5d97ea1c16c33e4c28e53c8d",
+          "result_line": "1988324131679583",
+          "log_sha256": "93e0ea1f9b7a8b1f65bf685985801f6e34880b6e1f8fdba637fab73544ca9488"
+        }
+      ]
+    },
+    "structure_sector13_4": {
+      "rank_table_count": 183833974142788,
+      "physical_rank_replays": 16,
+      "solvers": [
+        {
+          "solver": "ganak",
+          "count": 183833974142788,
+          "variables": 507,
+          "clauses": 2129,
+          "input_sha256": "da7b78f4bbaa04692c01f092b7d9b2e899aec48dc2717e9eb530c3a116d37d58",
+          "result_line": "183833974142788",
+          "log_sha256": "391796c1ec2d1e5d61e0d4560117cb0d50dd4c73345865543c3d8e3a4c13bffb"
+        },
+        {
+          "solver": "d4",
+          "count": 183833974142788,
+          "variables": 507,
+          "clauses": 2129,
+          "input_sha256": "da7b78f4bbaa04692c01f092b7d9b2e899aec48dc2717e9eb530c3a116d37d58",
+          "result_line": "183833974142788",
+          "log_sha256": "7f743de895041ea7c74002172915dd84375f966636c44cd2c6f14b85cdf6213e"
+        },
+        {
+          "solver": "ganak",
+          "count": 183833974142788,
+          "variables": 507,
+          "clauses": 11178,
+          "input_sha256": "5ffe327f24ccd540d35d60e8c8b959c1e5a26c148a79f3d02d1283ae3103aa03",
+          "result_line": "183833974142788",
+          "log_sha256": "baf17b1ce7901aa2720675522dee1a54856741d5551fe898b9bc5e6f02c19a19"
+        }
+      ]
+    }
+  }
+}

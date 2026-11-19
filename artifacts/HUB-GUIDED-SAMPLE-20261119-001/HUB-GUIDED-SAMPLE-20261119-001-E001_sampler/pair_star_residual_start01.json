@@ -1,0 +1,73 @@
+{
+  "junctions": 21516,
+  "blocks": 1401,
+  "larger_affiliations": 3137,
+  "two_block_affiliations": 18379,
+  "larger_affiliations_clique_verified": true,
+  "larger_affiliations_common_blocks": 0,
+  "candidate_pairs": 26347648,
+  "covered_candidate_pairs": 26347648,
+  "residual_pairs": 0,
+  "types": {
+    "high_high": {
+      "candidate_pairs": 4918816,
+      "residual_pairs": 0
+    },
+    "low_low": {
+      "candidate_pairs": 12781717,
+      "residual_pairs": 0
+    },
+    "mixed_single": {
+      "candidate_pairs": 8647115,
+      "residual_pairs": 0
+    },
+    "mixed_double": {
+      "candidate_pairs": 0,
+      "residual_pairs": 0
+    }
+  },
+  "low_low_residual_by_block": {},
+  "low_affiliations_with_mixed_residual": 0,
+  "input": "start-01-age10.txt",
+  "input_sha256": "f40bf3589f6c6d01b05f439c454fecae3d2d42dd3808c0899fb7e3b184852362",
+  "stage_wall_seconds": 2.929777257999376,
+  "controls": {
+    "exhaustive_fixed_high_cases": 1024,
+    "randomized_cases": 192,
+    "compatible_existing_rosters": [
+      {
+        "file": "partner-2-age00.txt",
+        "candidate_pairs": 4,
+        "residual_pairs": 4
+      },
+      {
+        "file": "partner-2-age01.txt",
+        "candidate_pairs": 4,
+        "residual_pairs": 4
+      },
+      {
+        "file": "start-04-age00.txt",
+        "candidate_pairs": 8,
+        "residual_pairs": 2
+      }
+    ],
+    "pair_outcomes_cross_checked": {
+      "high_high": {
+        "covered": 5319,
+        "residual": 0
+      },
+      "low_low": {
+        "covered": 15394,
+        "residual": 3570
+      },
+      "mixed_single": {
+        "covered": 15138,
+        "residual": 1057
+      },
+      "mixed_double": {
+        "covered": 5770,
+        "residual": 533
+      }
+    }
+  }
+}

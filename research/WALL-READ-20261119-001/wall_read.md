@@ -59,6 +59,8 @@ G17. Framed by A110: these are samples of an unlimited structure, read where pos
   their stages hold few such groups, and their partnered parts are small, so the bounds read them weakly: the structure that makes
   tens of thousands of large groups is neither random-like nor partnered. Whether they end, repeat or run away is still unread.
 
+  **Later qualification, 19 November.** The small-part search established what the selected parts revealed. In the full count for start-03, 27,588 of 28,008 large groups forming round eight admit a partner replacement. None of the 27,913 groups with at least eight parents can replace three quarters of them independently. No reference weighting for “random-like” was tested. The earlier counts, lower bounds and partnered-growth theorem stand. [Direct count of partner replacements](../HUB-GUIDED-SAMPLE-20261119-001/shapes.md)
+
 ## Predictions and verdicts
 
 **The proof (ticket A).** 4 of 4 machine checks held ([machine_check.json](../../proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/machine_check.json)).

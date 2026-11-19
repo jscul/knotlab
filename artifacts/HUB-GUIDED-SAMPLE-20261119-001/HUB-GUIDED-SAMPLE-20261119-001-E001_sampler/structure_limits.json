@@ -1,0 +1,103 @@
+{
+  "solver_runs": [
+    {
+      "blocks": [
+        4,
+        362
+      ],
+      "coordinates": "all",
+      "solver": "d4",
+      "virtual_memory_limit_KiB": 3500000,
+      "outcome": "std::bad_alloc; exit 134; no total",
+      "input_sha256": "b67d9abf6c209468db300a10345d65b7546f1d858ff761baf932e0226259bfee",
+      "log_sha256": "ee6f71e212154d7e59ab829c35d31f11089c23ebc9e9dda593207fea5b64f76f"
+    },
+    {
+      "blocks": [
+        13,
+        31
+      ],
+      "coordinates": "all",
+      "solver": "d4",
+      "virtual_memory_limit_KiB": 3500000,
+      "outcome": "std::bad_alloc; exit 134; no total",
+      "input_sha256": "df5d02edc08c45faa1e69989d3d6954d7cebec6739bffef6e259fb1c148e55ad",
+      "log_sha256": "c810fbed6cf9daafceceef16eaad1c22663d698d029fbeddfbd5a21241676184"
+    },
+    {
+      "blocks": [
+        3,
+        31
+      ],
+      "coordinates": "all",
+      "solver": "d4",
+      "virtual_memory_limit_KiB": 3500000,
+      "outcome": "std::bad_alloc; exit 134; no total",
+      "input_sha256": "0a8545a61833ba36a43c9a4ef8ade86e37654ae34511939a6dbfe0fb6bd80db6",
+      "log_sha256": "9c960b7bd466a13743e71b320d5a66b392670bf2c2402e518b96efd4f3fd4e0d"
+    },
+    {
+      "blocks": [
+        3,
+        31
+      ],
+      "coordinates": 250,
+      "solver": "d4",
+      "virtual_memory_limit_KiB": 3000000,
+      "outcome": "std::bad_alloc; exit 134; no total",
+      "input_sha256": "c3e710fb8a57c418264849257973979114c86f0affcba51c696a75f3ca67b385",
+      "log_sha256": "b67723aa5d27d806616782f7f72939f3fe3c2cf83ba924044714577153f39918"
+    },
+    {
+      "blocks": [
+        3,
+        31
+      ],
+      "coordinates": "all",
+      "solver": "ganak",
+      "virtual_memory_limit_KiB": 3500000,
+      "outcome": "Stopped at first observed log checkpoint past announced work ceiling; no total",
+      "cache_lookup_ceiling_announced_after_84_million": 100000000,
+      "last_logged_cache_lookups": 104000000,
+      "input_sha256": "0a8545a61833ba36a43c9a4ef8ade86e37654ae34511939a6dbfe0fb6bd80db6"
+    }
+  ],
+  "limited_internal_compiler_trials": [
+    {
+      "trial": "structure_wide_13_31_130.json",
+      "result": [
+        {
+          "requested": 130,
+          "coordinates": 130,
+          "decision_cap": 160000,
+          "capped": true,
+          "seconds": 10.694067280997842
+        }
+      ]
+    },
+    {
+      "trial": "structure_wide_13_4_155.json",
+      "result": [
+        {
+          "requested": 155,
+          "coordinates": 155,
+          "decision_cap": 160000,
+          "capped": true,
+          "seconds": 21.42350124099903
+        }
+      ]
+    },
+    {
+      "trial": "structure_wide_4_362_160.json",
+      "result": [
+        {
+          "requested": 160,
+          "coordinates": 160,
+          "decision_cap": 160000,
+          "capped": true,
+          "seconds": 19.723278314002528
+        }
+      ]
+    }
+  ]
+}

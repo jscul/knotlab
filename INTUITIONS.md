@@ -17,7 +17,7 @@ interpretation, not a result, and it is under test. Lesson 2.4 states it in
 the guide's words, once the knot it speaks of has been defined, and shows how
 the later lessons on distance and dimension hang from it.
 
-The page is written as a textbook, to be read in order. Its seven chapters are
+The page is written as a textbook, to be read in order. Its eight chapters are
 divided into lessons, and each lesson builds on the ones before it. Chapter 1
 sets up bits, rules and the notation, including how to read A, B → c, before
 anything is built from them.
@@ -98,6 +98,11 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [7.1 What is classical and what is ours](#71-what-is-classical-and-what-is-ours)
   - [7.2 Open questions](#72-open-questions)
   - [7.3 Every meeting pattern, none chosen](#73-every-meeting-pattern-none-chosen)
+- [Chapter 8. How a law grows](#chapter-8-how-a-law-grows)
+  - [8.1 Growing in rounds](#81-growing-in-rounds)
+  - [8.2 Four kinds of growth](#82-four-kinds-of-growth)
+  - [8.3 Reading a blow-up by sampling](#83-reading-a-blow-up-by-sampling)
+  - [8.4 What distance carries of what grows](#84-what-distance-carries-of-what-grows)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -2598,6 +2603,370 @@ is present it repeats with period four
 readings of it. It claims nothing about physics, matter or minds, and none of
 its readings is a theorem.
 
+## Chapter 8. How a law grows
+
+This chapter states in plain words the picture that the growth studies of 17
+to 19 November 2026 support. A law is applied to a few knots that share
+distinctions and left to build. The chapter asks what kinds of growth come
+out, how a growth that blows up is to be read, and how much of what grows its
+distances carry. It builds on lessons 2.4 (distance), 4.6 (dimension, read
+from how fast balls grow) and 7.3 (samples and weightings). Each claim says
+whether it is proved, computed or open, and a result is given as settled only
+once its referee has confirmed it.
+
+### 8.1 Growing in rounds
+
+**The picture so far.** Everything is built from distinctions, this versus
+that (lesson 1.1). A knot binds open distinctions so that the whole is
+constrained while no part is (lesson 2.1). Knots meet only by sharing
+distinctions, any knot with any number of others, and which knots share which
+distinctions is the meeting pattern. On the owner's founding premise,
+"Distance is the only form of information" (lesson 2.4, assumption A97), what
+a base holds is how its distinctions stand from one another. And nothing
+chooses a meeting pattern: "It's just random" (lesson 7.3). So a pattern the
+record writes down is one sample, and every random process that produces
+patterns has a weighting, the chances it gives them. A claim that something
+is typical has to name its weighting.
+
+**The growth law.** Start from a few parity knots that share distinctions:
+the first junctions. A distinction of a junction is **loose** while no other
+junction holds it, so it is open. A junction is **live** while it holds a
+loose distinction. In each round the law makes new junctions, all at once
+(assumption A104):
+
+- **Joins.** Live junctions that can be joined in pairs, each pair meeting a
+  common junction, and that have no junction common to all of them, are
+  joined by one new junction, which takes one loose distinction from each.
+  A join that takes three junctions is a **group of three**.
+- **Offshoots.** A loose distinction that no join wants gets a junction of
+  its own.
+- **Fresh distinctions.** Each new junction adds as few fresh distinctions as
+  it can: enough for the joins that will take from it in the next round, and
+  enough to make it a knot of at least three places. This is the **cheapest
+  growth** ([FRESH-COUNT-20261118-001](research/FRESH-COUNT-20261118-001/fresh_count.md)).
+
+A growth **stalls** when a round cannot be made, because some junction has too
+few loose distinctions, and it **closes** when no loose distinction is left.
+
+**The map of joins.** Beside the growth, keep a second record, the **map of
+joins**: who can join whom, written down before any round. It has one member
+for each live knot. The live knots that share a distinction with one knot can
+join through it, so they are grouped together. Each **leftover distinction**,
+an open distinction that a knot keeps beyond what its joins use, is one more
+member, attached to its knot alone. Following the groups from member to member
+can lead back to where it started: a cycle. The **unrolled map** is the same
+record with no way back: wherever a cycle would return, a fresh copy is used,
+so it goes on without end (the literature's universal cover).
+
+**What a round makes (proved, refereed).** Every junction the law makes is one
+connected **cluster** of members of the unrolled map holding at least one knot,
+and every such cluster is one junction. The first knots are the clusters of one member, round 1 makes the
+clusters of two, and round t the clusters of t + 1, each counted once. Take
+away one member so that the rest stays connected, and what is left is one of
+the junction's parents. The map also holds the endless chains and relays of
+lesson 8.2 ([RING-IDENT-20261119-001](research/RING-IDENT-20261119-001/ring_ident.md),
+[CHAIN-IDENT-20261119-001](research/CHAIN-IDENT-20261119-001/chain_ident.md),
+[RELAY-IDENT-20261119-001](research/RELAY-IDENT-20261119-001/relay_ident.md)
+and [DOUBLE-IDENT-20261119-001](research/DOUBLE-IDENT-20261119-001/double_ident.md),
+each confirmed by its referee).
+
+- **How far it reaches.** The theorem holds in a stated class: no stall, at
+  least two loose distinctions, no group of three in the first round, and no
+  two live knots with two common neighbours. The touch census, every
+  arrangement of up to five knots of three to five places, has 15,431 that do
+  not stall at once, and the theorem follows 12,473 of them (81%) round by
+  round. The other 2,958 lie outside its class, and that is where the fourth
+  kind of growth of lesson 8.2 is found.
+- **Known, and what is ours.** Counting connected clusters on such a map is
+  classical: the literature's lattice animals on tree-like covers (Fisher and
+  Essam 1961; Harary and Uhlenbeck 1953). What is ours is that the cheapest
+  growth is exactly this count on its own map, junction by junction.
+
+**Rounds are not a clock.** The owner put it as "Time doesn't have ticks". The
+rounds turn out to count size: wherever the theorem holds, a junction's round
+is its cluster's size less one (proved, refereed,
+[ROUND-FREE-20261119-001](research/ROUND-FREE-20261119-001/round_free.md)). So
+a round is bookkeeping, not a tick, and a growth's rate is the ratio between
+the numbers of junctions of size k + 1 and of size k, with no round needed.
+Taking the rounds away shows what they were doing (computed, refereed):
+
+- **One join at a time.** Laws that make one join at a time, reading only
+  what is already built, built different things in different orders in 12 of
+  14 cases, and never what the rounds build (0 of 280 orders). The order can
+  even decide whether a growth goes on: two three-place knots sharing a
+  distinction grow forever in rounds and stopped in 4 of 20 random orders,
+  while a lone four-place knot, which closes in rounds, kept growing in 19 of
+  20.
+- **Why the rounds were needed.** The cheapest count has to know, when a
+  junction is made, how many joins will later take from it, and its partners
+  may not exist yet. The rounds supply that by making every partner at once.
+- **A law with no tick.** Make a junction for a cluster as soon as all its
+  parents exist. Every order then reaches the same completed structure, and
+  the only before and after left is that a junction comes after its parents.
+  But this law reads the whole map of joins in advance, and the map says which
+  junctions will join which. It trades the tick for knowledge of the map, and
+  it equals the rounds only inside the theorem's class. A law that reads only
+  what is built and needs no tick is not yet known.
+- **The growth lives where parts are joined.** Counted by size, each part of a
+  joined start keeps exactly the growth it has alone, and 97% to 99.9% of the
+  junctions of size 10 or more span the join.
+
+### 8.2 Four kinds of growth
+
+**Sorting what grows.** Count the junctions each round makes. The record sorts
+every growth it has read into four kinds, and inside the theorem's class the
+first three are now described exactly:
+
+1. Stalls and closings: nothing new forms.
+2. A fixed dimension: the count grows like a polynomial.
+3. Eddies: steady exponential growth, a cycle of knots feeding itself at a
+   fixed rate.
+4. Explosive growth: cycles that overlap one another, so that no single rate
+   or finite description fits yet.
+
+Outside the class the record has found steady eddies of the same kinds as well
+as the explosive kind, and many starts there are not yet read (the last part
+of this lesson).
+
+**Nothing new forms.** A growth stalls when a round cannot be made, and it
+closes when no loose distinction is left. A start with a single loose
+distinction closes at round 1 (proved, refereed, DOUBLE-IDENT). Where a
+weighting crowds knots with shared distinctions, most starts stall: 50% to 88%
+of them when places are paired at random, and 64% to 99.7% when knots are
+attached one at a time (computed, refereed,
+[WEIGHTINGS-20261119-001](research/WEIGHTINGS-20261119-001/weightings.md)).
+
+**A fixed dimension.** Here the junctions made up to round t number about
+t^D for a whole number D, the growth's dimension, as balls grow like r^D in
+lesson 4.6. Two things give it:
+
+- **Endless chains.** Every junction must have at least three places. Where a
+  knot keeps a leftover distinction and the law has to top a junction up to
+  three places there, each round adds one more junction, without end: an
+  **endless chain**. One endless chain makes the same number of
+  junctions each round, which is dimension one. Two in one connected part of
+  the map make a number that rises steadily, which is dimension two.
+- **Relays.** A part of the map with no endless chain would finish. If another
+  part is still growing, it does not: it goes on as a **relay**, making k
+  junctions in the k-th round after it would have finished, which counts as
+  two endless chains.
+
+When the map has no cycle, the dimension is the largest number of endless
+chains in one connected part, a relay counting two (proved, refereed,
+CHAIN-IDENT and RELAY-IDENT). A bare ring of knots, whose map is one cycle
+carrying nothing, makes the same number of junctions every round: dimension
+one.
+
+- **At most two when knots are small (proved, refereed).** A knot is **dead**
+  when it is not live: every one of its places is shared. If every knot has at
+  most five places and none is dead, the knots that share distinctions with
+  more than one other form a single chain or a single ring, with single knots
+  hanging from it. Then no part of the map carries more than two endless
+  chains, and a start whose map has no cycle grows in at most two dimensions,
+  at every size
+  ([CAP-CHAINS-20261119-001](research/CAP-CHAINS-20261119-001/cap_chains.md)).
+- **Five is the threshold.** At six places any number of endless chains fits
+  in one part, and a dead knot lifts the bound even at five, since it joins its
+  neighbours without costing them a place.
+
+**Eddies.** The word is the owner's, from 18 November 2026: "It's an
+interesting idea, loops of logic, then like eddies in a river that are shared
+across the universe essentially there are 'core-libs' kind of processing"
+(assumption A109). An **eddy** is a cycle of knots that feeds its own growth,
+so that each round multiplies the count by about the same rate. Going once
+around the cycle multiplies the count by its **lap weight** W, which lists the
+ways each lap offers to extend, and the rate is the number x at which that
+list balances, W(1/x) = 1.
+
+- **Within five places, with every knot live (proved, refereed).** The eddies
+  are exactly the rings of knots that carry something extra: a **hung knot**,
+  a single knot that shares distinctions with one ring knot, or a leftover
+  distinction. W is a product of three kinds of factor, one for each knot on
+  the walk around the ring, one for each leftover distinction and one for each
+  hung knot, so the rate depends only on how many of each the ring carries, not
+  on where they sit. For a ring of seven with one hung knot the balance is
+  x^8 = x + 1, which gives 1.0970: about 10% more junctions each round. No
+  such ring grows faster than the golden ratio, 1.618, which a ring whose every
+  knot carries a leftover distinction reaches at any length
+  ([RING-CORES-20261119-001](research/RING-CORES-20261119-001/ring_cores.md)).
+- **With dead knots, still within five places (proved, refereed).** The kind
+  of growth of each connected part of the map is set by its number of
+  independent cycles. None gives a closing or a fixed dimension. One gives a
+  constant count or an eddy, with a count that a short recurrence produces
+  exactly. Two or more give exponential growth at a rate that a small system of
+  equations fixes, computable but given by no formula. The fastest found is an
+  eleven-knot start built around two dead knots, at 2.3830 a round; that
+  nothing in the class within five places grows faster is a conjecture
+  ([DEAD-CAP-20261119-001](research/DEAD-CAP-20261119-001/dead_cap.md)).
+- **What this says of the owner's picture.** On one ring, each thing the ring
+  carries brings its own factor, wherever it sits, and the factors multiply:
+  eddies there are few in kind and act the same wherever they occur. Two rings
+  joined together grow at a rate of a new kind (about 2.61 for two rings of
+  five), not at a product. A109 stays under challenge because of what lies
+  outside: groups of three, two live knots with two common neighbours, and
+  knots of six places or more. "Shared across the universe" stays the owner's
+  interpretation, which no catalogue can settle.
+
+**Explosive growth.** The theorem's class ends at two kinds of overlap (proved,
+refereed, DEAD-CAP): two live knots with two common neighbours, and a first
+group of three, which is exactly three knots joined in pairs through three
+different knots, with no knot common to all three. There the cycles of the map
+overlap one another, and the unrolled map no longer says what grows.
+
+- **What was found there (computed, refereed).** Of the starts read beyond the
+  class, 118 of 122 are steady eddies at rates of the same family. A different
+  kind also exists, in which the counts leap, running 80, 32, 31, 465, 4,495,
+  31,465 in one start, and the largest join jumps or falls back in the last
+  rounds reached. No fixed rate has been found to fit it, and whether one does
+  is open ([BREAK-EDDIES-20261119-001](research/BREAK-EDDIES-20261119-001/break_eddies.md)).
+  A further 626 starts there were still rising fast when the computation ran
+  out of memory, so how many of them are steady eddies is open too.
+- **The label.** "Explosive" is only the record's name for the kind it cannot
+  yet describe, not a fault in the growth. That groups of three are where it
+  enters is the program's reading. Whether the kind has a regularity of its
+  own, or is where finite description ends, is the question of
+  `EXPLOSIVE-20261119-001`, which is running (open).
+
+### 8.3 Reading a blow-up by sampling
+
+**Blow-up is expected.** A growth **blows up** when its count grows faster than
+any polynomial: the eddies and the explosive kind. The owner, on 19 November
+2026, of the explosive kind: "When we talk about 'explosive', isn't that kind
+of expected? Whenever I envision the intuition, it always blows up. Imagine
+it's a simulation, where the simulator has no limits. That is the kind of
+system we're dealing with. My thought process was that we would need to do
+what amounts to essentially a sampling somehow of the underlying structure. Of
+course, this would result in outlier results sometimes I think, but it's the
+way I always envisioned it." The register holds this as the owner's direction,
+assumption A110: growth that blows up is the expected case, and the unlimited
+structure is read by sampling it. The program does not look for harmonies, or
+for any other restriction, to keep growth from blowing up.
+
+**Typical depends on the weighting.** To know what an outlier is, a reader
+must know what is typical, and typical always names a weighting (lesson 7.3).
+The growth studies give a sharp case. On the touch census, 82% of the starts
+that grow do so in two dimensions, and that looked like a law of the growth.
+It was not: it belonged to how the starts were sampled (computed, refereed,
+WEIGHTINGS; narrowed in [HISTORY.md](HISTORY.md), and assumption A106
+overturned). With the same proved theorem doing the reading, only the
+weighting was changed:
+
+- **Places paired at random, or knots attached one at a time.** Both keep
+  knots at three to five places. Most starts stall, and of those that grow
+  inside the class, 80% to 100% grow in two dimensions. None grows in three or
+  more.
+- **Uniform random trees of knots.** The knots' sharing has no cycle, and
+  every knot gets the places its joins need, so nothing stalls. Three or more
+  dimensions becomes common as starts get larger: 5% of the starts that grow at
+  seven knots, 12% at twelve, 24% at sixteen and 37% at twenty, up to six
+  dimensions.
+- **Trees with random extra shared distinctions.** The extra sharing makes
+  cycles, and eddies become common: 11% of the starts that grow inside the
+  class at six knots, and 41% at twenty. About half the samples (41% to 62%)
+  fall outside the class altogether, mostly at a first group of three, where
+  the explosive kind enters.
+
+So lifting the five-place cap raises the dimension, and adding cycles brings
+exponential growth. Across all seven weightings tried, none of the 25,133
+growing starts in the class whose knots all have at most five places grows in
+three dimensions or more (the referee's reading), though 127 of them grow
+exponentially. The cap is not a law of growth, though: a start of ten knots of
+at most five places, built by hand around a dead knot, grows in three
+dimensions.
+
+**What is sampled, and what is not yet.** These studies sample starts: each
+sample is one small arrangement of first knots, grown by the law. The owner's
+sentence asks for more, a sampling of the underlying structure inside one
+unlimited growth, and no study does that yet (open). The register already
+holds evidence that weighs on "it always blows up": under the crowded
+weightings most starts stall and eddies are rare. A110 would be challenged by
+a natural weighting under which blow-up never occurs, or by shares that never
+settle as the samples grow, under every weighting tried.
+
+**What lets a blow-up be read (reading).** An eddy can be read exactly because
+it repeats: each lap around its cycle multiplies the count by the same lap
+weight, so one list says everything about its rate. On the program's reading,
+which the owner has not confirmed, that repeat is what the owner's harmonies
+do here (lesson 7.3, assumption A70): they let a blow-up be read, and they are
+not a way to stop one. Whether the explosive kind has a repeat of its own is
+the open question of lesson 8.2.
+
+### 8.4 What distance carries of what grows
+
+**The question.** On the premise that distance is the only form of
+information (lesson 2.4), the distances between distinctions should carry what
+the law builds. The growth studies test that with bond distance, the size of
+the smallest bond that holds two distinctions (lesson 4.6). In short: two
+arrangements can look identical by every pair distance today and differ
+tomorrow. All the studies below are refereed
+([line summary](research/HUNT-SHORTEN-20261119-001/line_summary.md)).
+
+- **Pair distances alone lose information (computed).** The law builds pairs
+  of arrangements with the same bond distance between every two distinctions
+  and different allowed states. It does so from starts whose knots share two
+  distinctions
+  ([GROWN-PAIR-20261119-001](research/GROWN-PAIR-20261119-001/grown_pair.md)).
+  Grown from all 503,039 arrangements of up to seven junctions in which any two
+  junctions share at most one distinction, it gave 87 such pairs: 86 carried
+  from starts that already had the same distances, and one created by the law,
+  which comes apart the next round
+  ([GROW-SMALL-20261119-001](research/GROW-SMALL-20261119-001/grow_small.md)).
+- **Three-way distances recover it on everything found (computed).** The
+  **three-way distance** of three distinctions is the size of the smallest bond
+  that holds all three. With it added, every such pair found comes apart
+  ([THREE-WAY-20261119-001](research/THREE-WAY-20261119-001/three_way.md),
+  [TRIPLE-GROWN-20261119-001](research/TRIPLE-GROWN-20261119-001/triple_grown.md)).
+  Whether pair and three-way distances together always suffice is open.
+- **A round reads only the live roster (proved).** One round of the law reads
+  only the **live roster**: which junctions hold a loose distinction, how many,
+  and which sets of them one junction meets. And a renaming that keeps every
+  parity equation the states satisfy, together with the live roster, carries
+  every later round
+  ([EXTEND-ROUND-20261119-001](research/EXTEND-ROUND-20261119-001/extend_round.md),
+  Lemma A and Claim B\*).
+- **Distances and the live roster carry the next round on everything tested,
+  but not always (computed; the exception proved).** A renaming of the
+  distinctions that keeps every bond distance and the live roster carried the
+  next round correctly in all 36,060 such renamings of the carried pairs and
+  all 1,746,752 of census stages of up to 14 junctions
+  ([HUNT-SHORTEN-20261119-001](research/HUNT-SHORTEN-20261119-001/hunt_shorten.md)).
+  But Codex built a stage the law reaches where it fails
+  ([GROWN-END-SWAP-20261119-001](research/GROWN-END-SWAP-20261119-001/decision.md)).
+  From six junctions, some pairs of which share two distinctions, the law grows
+  ten. There, exchanging distinctions 0 and 2 keeps all 210 bond distances and
+  every live junction's distinctions. After the next round, 0 and 1 are at bond
+  distance 2, while their image under the exchange, 2 and 1, stays at 3. So the
+  table of bond distances loses which old pair becomes nearer one round ahead.
+  A three-way distance already tells the two apart before the round. Where
+  junctions share at most one distinction, the question is open.
+- **What grows depends on more than the allowed states (computed; A108
+  confirmed).** Under parity the allowed states do not say which junction is
+  the one implied by the others, and the eddies depend on it: the same states,
+  read with another junction counted as implied, make the same number each
+  round, stall or close instead
+  ([DROPPED-JUNCTION-20261119-001](research/DROPPED-JUNCTION-20261119-001/dropped_junction.md)).
+  Under not-all-equal a growth that reads only the states exists, and it
+  differs from the cheapest growth only at redundant knots and at knots with
+  more places than their constraint needs
+  ([MANY-VALUED-20261119-001](research/MANY-VALUED-20261119-001/many_valued.md)).
+
+**Known mathematics, and what this adds.** The allowed states of a parity
+growth are the literature's cut space of its junction graph, and a bond is a
+cocircuit. Two arrangements have the same states exactly when their graphs'
+cycle matroids agree (Whitney's 2-isomorphism theorem). What the growth
+studies add is which of these ambiguities the law actually produces and from
+which starts, that three-way distances resolve every one found, and the exact
+reading of a round.
+
+**Reading.** On the premise, the clean statement would be that distance and
+the live roster carry what grows. That fails where the first junctions share
+two distinctions, and is open where they share at most one. So the premise
+turns on a choice that is the owner's to make. If only pair distances count as
+distance, it fails on computed cases. If three-way distances count too, it
+survives everything found so far. What no distance can show is which junction
+holds which distinction, and no reading of the allowed states can show that
+either. A97 stays under challenge.
+
 ## Glossary
 
 Each word below has the one meaning given here, and the guide uses no other
@@ -2958,7 +3327,8 @@ that earlier records used in two senses.
 - **Round.** One step of propagation in an atom pattern whose held distinctions the outside sets to 1: every atom
   whose two demanders are forced forces the distinction it demands (the literature's synchronous unit propagation).
   The count of rounds is the height of the shallowest derivation (lesson 5.3), as `SEQUENTIAL-WALL-20261116-001`
-  found on 16 November 2026.
+  found on 16 November 2026. In growth (lesson 8.1), a round is one application of the joining rule to every live
+  junction at once; inside the theorem's class a junction's round is its cluster's size less one.
 - **Phase.** One stage of the forcing law (lesson 5.3): every atom with a forced demander is read as the two-place rule
   from its other demander to what it demands, and everything reachable along those rules is forced at once. A distinction's
   phase is the first that forces it, and it equals the least Strahler number of its derivation trees (the
@@ -3051,6 +3421,65 @@ that earlier records used in two senses.
   width). The pattern the joining rule grows is the down-closed sets of this
   order (the literature's distributive lattice of ideals). Breadth is not the
   dimension: balls can grow more slowly than the breadth allows.
+- **Loose; live; dead knot.** In growth by the joining rule (lesson 8.1), a
+  distinction of a junction is loose while no other junction holds it, so it
+  is open. A junction or knot is live while it holds a loose distinction, and
+  a **dead knot** is one that is not live: every one of its places is shared
+  (lesson 8.2).
+- **Cheapest growth.** Growth by the joining rule in complete rounds, in which
+  each new junction adds as few fresh distinctions as it can: enough for the
+  joins that will take from it in the next round, and enough to make it a knot
+  of at least three places (lesson 8.1; `FRESH-COUNT-20261118-001`,
+  assumptions A104 and A108). It was studied under parity; under not-all-equal
+  the same rule gives the same counts (`NAE-GROWTH-20261119-001`).
+- **Group of three.** A join of the cheapest growth that takes one loose
+  distinction from each of three junctions (lesson 8.1). A first group of
+  three is three knots joined in pairs through three different knots, with no
+  knot common to all three, and it is where the theorem's class ends (lesson
+  8.2).
+- **Stall; close.** A growth stalls when a round cannot be made, because some
+  junction has too few loose distinctions, and it closes when no loose
+  distinction is left (lesson 8.1). The intuition: the first of the four kinds
+  of growth of lesson 8.2, in which nothing new forms.
+- **Map of joins; unrolled map; cluster.** The map of joins of a growth has
+  one member for each live knot, with the live knots that share a distinction
+  with one knot grouped together, as the ones that can join through it, and one
+  member attached to a knot for each of its leftover distinctions. The
+  unrolled map is the same record with no way back: wherever a cycle would
+  return, a fresh copy is used (the literature's universal cover). A cluster
+  is a connected set of its members. Inside the theorem's class the junctions
+  made in round t are exactly the clusters of t + 1 members that hold a knot
+  (lesson 8.1). The intuition: the map says in advance who can join whom, so
+  the growth is a count on it.
+- **Endless chain; relay.** An endless chain is a chain of junctions, one more
+  each round without end, where a knot keeps a leftover distinction and the
+  law tops a junction up to three places. A relay is how a part of the map of
+  joins that would finish goes on while another part grows: k junctions in the
+  k-th round after, counted as two endless chains (lesson 8.2).
+- **Ring; hung knot; leftover distinction.** A ring of knots is a cycle of
+  knots, each sharing a distinction with the next and the last with the first
+  (lessons 4.4 and 8.2). A hung knot shares distinctions with a single knot of
+  a ring. A leftover distinction is an open distinction that a knot keeps
+  beyond what its joins use (lesson 8.1); the growth records call it a spare,
+  a word the guide keeps for distinction substitution.
+- **Eddy.** The owner's word (18 November 2026, assumption A109): a cycle of
+  knots that feeds its own growth, so that the count is multiplied by about
+  the same rate each round. Going once around the cycle multiplies the count
+  by its **lap weight** W, and the rate x solves W(1/x) = 1 (lesson 8.2). The
+  intuition, in the owner's words: "eddies in a river", shared like library
+  routines. The owner's "loops of logic" are read as these cycles; they are
+  not the guide's loops (lesson 1.4).
+- **Explosive growth.** The record's label for the kind of growth it cannot
+  yet describe: where cycles of the map of joins overlap, the counts leap and
+  no fixed rate has been found to fit (lesson 8.2). It is a label, not a
+  defect. A growth **blows up** when its count grows faster than any
+  polynomial, as eddies and explosive growth do, and blow-up is expected
+  (assumption A110, lesson 8.3).
+- **Live roster.** What one round of the law reads: which junctions hold a
+  loose distinction, how many, and which sets of them one junction meets
+  (lesson 8.4). The growth records call it the growing end.
+- **Three-way distance.** For three distinctions, the size of the smallest
+  bond that holds all three (lesson 8.4).
 - **Newest-w growth.** Growth in which every new knot holds only distinctions
   among the w that arrived last (lesson 7.3). The process supplies the order
   of arrival.
@@ -3189,7 +3618,7 @@ that earlier records used in two senses.
   | base | a knot pattern that allows a state (lesson 2.1) | the foundation's general notion: admissible base, written in full; knot patterns that allow the same states: one relation, never one base |
   | world | an allowed state, read with 1 as "exists" (lesson 4.2) | a pattern of knots ("flat world", "disc world", "knot world"): base, weave, patch or drawn knot pattern; the foundation's world branch, written in full |
   | shape | (the owner's word, in his own words only: any structure that rules make, lesson 1.7) | for the program's own objects: meeting pattern; the sets a system leaves free: free complex; the five kinds of three-place knot: classes |
-  | loop | a logical structure that leaves a distinction open (lesson 1.4) | a cycle of a weave that no patch closes off: unfilled cycle; loop pairs: cycle pairs |
+  | loop | a logical structure that leaves a distinction open (lesson 1.4) | a cycle of a weave that no patch closes off: unfilled cycle; loop pairs: cycle pairs; a cycle of knots that feeds its own growth (the growth records' self-feeding loop): eddy |
   | contact | the variable through which a knot binds loops (lesson 1.4) | a distinction several knots share: shared distinction |
   | open | of a distinction, free on its own (lesson 1.4) | the unjoined end of a chain or string: loose end; an open chain: chain |
   | atom | the knot ¬A ∨ ¬B ∨ c (lesson 1.5) | an end piece of a three-regular contradiction: Fano piece; a closed knot space less a point, grown in place of a line (the learning line's torus or Fano atom): piece |
@@ -3213,6 +3642,9 @@ that earlier records used in two senses.
   | fold | (the owner's folded, compressed structure, in his words) | the direction the law does not lengthen: unlengthened shift |
   | ladder | (the literature's only, such as the n × 2 ladder graph) | three consecutive distinctions and every second one after them (ACROSS-FOLD-20261112-001's pre-registration): heddle; its rungs: the heddle's members after the three |
   | row, column | (a row: a sequence, as in steps apart and chain) | the indices of base 16's drawn frame: across-count, along-count |
+  | spare | of a distinction of a block, in distinction substitution (lesson 7.3) | an open distinction a knot keeps beyond what its joins use (the growth records' spare): leftover distinction |
+  | round | one step of forcing (lesson 5.3) or of growth (lesson 8.1), everything at once | going once around a cycle (the growth records' round-weight): lap weight |
+  | growing end | (not used in the guide) | what one round of the growth law reads (the growth records' word): live roster |
 - **Older records.** Records written before 11 November 2026 use the older
   words, and a record whose checksum another record pins (a manifest, a result
   or a discovery) is never edited, so it keeps them. Read such a record with the

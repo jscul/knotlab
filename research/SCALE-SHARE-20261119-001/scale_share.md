@@ -113,3 +113,38 @@ for a counting reason; two dimensions takes over among growers; rings stay rare;
 
 **Corrections:** none. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A106 history line (the uniform labelled
 measure, extended to twenty knots, makes stalls typical for a counting reason). **Basket:** `CLUSTER-ALL-20261119-001#1` taken.
+
+## Final report as sent (2026-11-19 02:53 UTC)
+
+**Outcome:** As starts of touching knots get larger, almost all of them cannot start, and of those that grow, two dimensions takes over. By the cluster rule, over 8,000 sampled arrangements at each size, the share that stalls at once rises from 45% (five knots) to 93% (twenty). Among growers, two-dimensional rises from 82% to 98%. Rings (exponential) stay at most 0.1% of growers. 7 of 10 frozen predictions held. Closed, referee pending.
+
+- **Why stalls take over: counting, not the rule.** Most ways of arranging many knots crowd each knot with shared distinctions. Open places per knot fall like √(5/n), as the advisor predicted, from 1.2 to 0.6, so some knot is asked for more joins than it has.
+- **What fades.** One-dimensional growth (17% to 2% of growers) and closing (22% to 1.5% of non-stalled). Three dimensions stays near 0.3% of growers, and four occurred once in 8,000.
+- **Rings stay rare though cycles abound.** The growing starts hold 4 to 22 independent cycles of knots on average, yet almost none grows exponentially.
+- **The rule's scope holds to twenty knots.** At most 0.4% of starts are out of scope. The six-knot break shape appeared once in 8,000 at six knots and never otherwise. Grown and compared with the rule, 998 of 998 non-stalled starts in scope at six to twelve knots matched every round.
+- **Failed predictions:**
+  - P3: the per-knot stall rate falls slowly instead of rising, so the decay is near geometric.
+  - P5: the two-to-one-dimension ratio passes 6 from seven knots, and one four-dimensional start appeared.
+  - P7: out of scope peaks at five knots, not seven to ten.
+- **Sampler check.** The five-knot sample is near the exact census's shares (χ² ≈ 10 on 4 classes, with autocorrelated samples).
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: typical growth at scale | **Status:** Successful (7 of 10 held) | Shares by knot count to twenty, both weightings: stalls take over, two dimensions takes over among growers, rings stay rare; the scope holds |
+| Local direction: the cluster rule as a classifier | Continue | Verified by growth on 998 spot checks beyond the census; milliseconds per start |
+| Broader exploration: what the cheapest growth builds | Known alternatives | At scale: mostly nothing (stall), otherwise two-dimensional growth |
+| Long-term goal: G17 | Capability gained | The typical and the rare by knot count, beyond five knots for the first time |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Why cycles do not make rings: which cycles of knots give exponential growth, and why the growers' many cycles do not | 2/3 — explains why the exponential stays rare | 3/3 — rule and samples exist | classify the growers' cycles by length and surplus → stop at a rule for which cycles give rings, or a counterexample | Selected · awaiting go-ahead |
+| 2 | Typical growth under a measure where stalls don't dominate (sampling conditioned on no over-demand, or knots added one at a time) | 2/3 — tests A106 at scale | 3/3 — swap the sampler | sample → stop at the shares | Alternative · deferred |
+| 3 | Junctions as valid sets (`CLUSTER-ALL-20261119-001#2`) | 2/3 | 3/3 | as there | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A106 history line (extended to twenty knots, the labelled measure makes stalls typical for a counting reason); no new entry. **Basket:** `CLUSTER-ALL-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze. Its counting explanation of the stall trend held (P1, P2). It asked for dispersed chains, spot checks at ten and twelve knots, and effective sample sizes, all done. Three of its eight predictions failed (P3, P5, P7).
+
+**Referee hand-off.** The decision note is `research/SCALE-SHARE-20261119-001/scale_share.md`, and the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- the sampler's uniformity (irreducibility under the moves);
+- the scorer's stepwise reading of P3, which I report as failed overall.

@@ -1768,6 +1768,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Which growth is typical as starts of touching knots get larger? (`SCALE-SHARE-20261119-001`) | [closure](proofs/SCALE-SHARE-20261119-001Z/SCALE-SHARE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/SCALE-SHARE-20261119-001/) |
 | 2026-11-19 | A growth that reads only the allowed states (`STATES-GROWTH-20261119-001`) | [closure](proofs/STATES-GROWTH-20261119-001Z/STATES-GROWTH-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/STATES-GROWTH-20261119-001/) |
 | 2026-11-19 | Do three-way readings complete the bond-distance table? (`THREE-WAY-20261119-001`) | [closure](proofs/THREE-WAY-20261119-001Z/THREE-WAY-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/THREE-WAY-20261119-001/) |
-| 2026-11-19 | Do three-way readings separate the reached and static meet-once collisions? (`TRIPLE-GROWN-20261119-001`) | — | [folder](research/TRIPLE-GROWN-20261119-001/) |
+| 2026-11-19 | Do three-way readings separate the reached and static meet-once collisions? (`TRIPLE-GROWN-20261119-001`) | [closure](proofs/TRIPLE-GROWN-20261119-001Z/TRIPLE-GROWN-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/TRIPLE-GROWN-20261119-001/) |
 | 2026-11-19 | Does the bond-distance table fix every census arrangement it has no symmetry for? (`UNIQUE-TABLE-20261119-001`) | [closure](proofs/UNIQUE-TABLE-20261119-001Z/UNIQUE-TABLE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/UNIQUE-TABLE-20261119-001/) |
 

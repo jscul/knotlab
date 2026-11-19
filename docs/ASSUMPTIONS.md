@@ -3204,6 +3204,12 @@ evidence: results and their status come from the records each entry links.
   irredundant one under not-all-equal. Ask whether it is well defined on the stages where same-state presentations join
   differently (`NAE-GROWTH-20261119-001#1`).
 - **History.**
+  - 2026-11-19 · Reach line corrected after the referees of `STATES-GROWTH-20261119-001`, `MANY-VALUED-20261119-001` and
+    `DROPPED-JUNCTION-20261119-001` (R1). With every minimal constraint, not only those up to one place above the largest knot, the
+    knots are the states' minimal constraints on 79.8% of small irredundant stages, not 93%, and undefined points also come from a
+    single knot. What survives is MANY-VALUED's form: drawn from M(S), the presentation is unique up to renaming at every point
+    tested (1,031 with every constraint), and the dependence comes from redundant knots and non-minimal supports. Under parity the
+    eddies' dependence on the dropped junction is confirmed. Status unchanged: the statement is existential and holds.
   - 2026-11-19 · Under parity, by `DROPPED-JUNCTION-20261119-001`: the eddies depend on the dropped junction. On all 23 eddies only
     the original choice feeds itself, and the fewest-places rule departs from the cheapest growth. The parity side of the
     dependence is total.

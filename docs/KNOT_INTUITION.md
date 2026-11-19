@@ -733,22 +733,24 @@ wrong, wherever that overlap stands, and is exact wherever it does not. Those
 loops need a different object, a transfer between kinds of junction
 ([decision note](../research/JUNCTION-MAP-20261119-001/junction_map.md)).
 And does the growth need more than the allowed states (`STATES-GROWTH-20261119-001`,
-frozen run, referee pending)? Under not-all-equal, rarely: on 93% of small stages
-without a redundant knot the minimal constraints the states satisfy are exactly the
-knots, and a growth reading only the states agrees with the cheapest growth round
-by round. It parts only at a redundant knot, which the states cannot see, and where
-a triangle of knots or a double touch lets two presentations share the same states.
-Under parity which distinctions are loose is never visible in the states: it is a
-choice of which junction to drop, as Whitney's theorem says
+frozen run, refereed)? Under not-all-equal, on four small stages in five
+without a redundant knot the minimal constraints the states satisfy are exactly
+the knots (79.8%, counting constraints of every size; a first reading that
+stopped one place above the largest knot said 93%), and there a growth reading
+only the states is the cheapest growth. Elsewhere a redundant knot, a constraint
+that is no knot, or a second presentation can make them part. Under parity which
+distinctions are loose is not visible in the states: it is a choice of which
+junction to drop, as Whitney's theorem says
 ([decision note](../research/STATES-GROWTH-20261119-001/states_growth.md)).
-And where it seemed undefined (`MANY-VALUED-20261119-001`, frozen run, referee
-pending), there was nothing to choose: at every one of the 146 points the allowed
-states have exactly one set of knots presenting them, up to renaming. With that
+And where it seemed undefined (`MANY-VALUED-20261119-001`, frozen run, refereed),
+there was nothing to choose: at every point tested the allowed states have exactly
+one set of knots drawn from their minimal constraints presenting them, up to
+renaming (146 points at the first cut, 1,031 with every constraint). With that
 rule, a growth reading only the states equals the cheapest growth on 1,805 of 1,806
 trajectories without a redundant knot. The one exception is a knot whose places are
 more than its constraint needs, which the states cannot see
 ([decision note](../research/MANY-VALUED-20261119-001/many_valued.md)).
-And under parity (`DROPPED-JUNCTION-20261119-001`, frozen run, referee pending)?
+And under parity (`DROPPED-JUNCTION-20261119-001`, frozen run, refereed)?
 There the allowed states never say which junction is the implied one, and the
 eddies depend on it: on all 23 tested, only the presentation the growth started
 from feeds itself, while the same states with another junction counted as implied

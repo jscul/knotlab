@@ -4,6 +4,23 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the states-only growth, its presentations and the dropped junction refereed
+
+- **A growth that reads only the allowed states** (`STATES-GROWTH-20261119-001`,
+  [decision note](research/STATES-GROWTH-20261119-001/states_growth.md)). **Withdrawn (a block on that reading):** "the states fix
+  the knots on 93% of small stages". The search for the states' minimal constraints stopped one place above the largest knot, a
+  bound read from the knots themselves. Counting constraints of every size, the share is 79.8%, and a single knot after one round
+  already holds a constraint that is no knot. The parity part, Whitney's theorem on every three-connected pair, was confirmed.
+- **The presentations of the same states** (`MANY-VALUED-20261119-001`,
+  [decision note](research/MANY-VALUED-20261119-001/many_valued.md)) were confirmed, more strongly than stated: with every
+  constraint the presentation drawn from the states' minimal constraints is unique up to renaming at all 1,031 points tested, and
+  the states-only growth built on it equals the cheapest growth on 1,805 of 1,806 trajectories. **Clarified:** the uniqueness is
+  within that pool.
+- **Parity's eddies over the dropped junction** (`DROPPED-JUNCTION-20261119-001`,
+  [decision note](research/DROPPED-JUNCTION-20261119-001/dropped_junction.md)): only the original choice feeds itself on all 23
+  eddies, confirmed. **Narrowed:** the sample figures were grown with a shortcut test for implied parity, which differs from the
+  cheapest growth on 19 of 360 re-chosen presentations checked.
+
 ## 19 November 2026: the eddies in the break shapes refereed
 
 - The study of the eddies where the cluster rule breaks (`BREAK-EDDIES-20261119-001`,
@@ -27,6 +44,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   [decision note](research/BREAK-EDDIES-20261119-001/break_eddies.md)) found the catalogue's family in 118 of its 122 starts. Those
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
+
+## 19 November 2026: backed pairs refereed
+
+- The study of why the law never builds the static rivals (`PARENT-RULE-20261119-001`,
+  [decision note](research/PARENT-RULE-20261119-001/parent_rule.md)) was refereed and confirmed: complete rounds from a connected
+  start keep backed pairs at every size, so the law never builds UNIQUE-TABLE's rivals, but backed pairs alone do not keep the
+  allowed states (242 static pairs).
+- **Corrected (not a block).** Reached tables with a symmetry the states lack number 181 of 1,099, not 178: the first count looked
+  only at symmetries that keep the distinctions held by the same junctions together.
 
 ## 19 November 2026: meet-once collisions refereed
 

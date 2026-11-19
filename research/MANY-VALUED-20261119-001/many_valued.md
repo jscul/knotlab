@@ -1,7 +1,8 @@
 # What a states-only growth gives up where the states allow several presentations
 
 Epic `MANY-VALUED-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking `STATES-GROWTH-20261119-001#2`).
-Goals G1 and G17. **Referee pending.**
+Goals G1 and G17. **Refereed:** report [R1](referee-R1/report.md), confirmed and stronger than stated, no Block, two wording
+points folded in on 19 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `0a6f2350e` at 11:35 UTC after a pilot (disclosed).
@@ -21,14 +22,17 @@ The **refined rule** grows the presentation drawn from M(S) when it is unique up
 
 **In the owner's terms.**
 - **The stop rule's answer: there was nothing to choose between.** At every one of the 146 points where the states-only growth had
-  been undefined, the allowed states have exactly one presentation up to renaming, and it is the stage itself.
+  been undefined, the allowed states have exactly one presentation up to renaming among those drawn from M(S) and the stage's own
+  knots, and it is the stage itself. (A knot with a non-minimal support, outside that pool, gives a second one: the exception
+  below.) With every minimal constraint, which STATES-GROWTH's referee computed, the same holds at all 1,031 unsaturated points
+  that have such a presentation.
   - The rule had failed only because it used all the minimal constraints as the presentation, and some of them are consequences,
     not knots.
   - The one place with two presentations, four three-place knots pairwise touching (the K4 example), has two that are exchanged by a
     renaming, so they grow alike.
 - **So the states fix the presentation almost everywhere small.** With the refined rule, a growth reading only the allowed states
   equals the cheapest growth at every round on 1,805 of the 1,806 census trajectories without a redundant knot, from starts of up to
-  four knots.
+  four knots. The referee's own engine, with every minimal constraint, gives the same 1,805 of 1,806.
 - **The one exception is the real limit.** The start has knots (0, 1, 2), (3, 4, 5), (0, 3, 6) and (1, 2, 4, 5, 6), and the
   five-place knot's support is not minimal: NAE(1, 2, 4, 5) already holds.
   - The states cannot tell this knot from its four-place core.
@@ -66,6 +70,17 @@ The **refined rule** grows the presentation drawn from M(S) when it is unique up
 - Presentations are searched among M(S), and among M(S) with the stage's knots. The full pool of all implied constraints (the
   advisor's) was not enumerated.
 - 36 trajectories with redundant knots ended where pool M had no admissible presentation. They are outside M3 and reported only.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread, sharing its code with
+STATES-GROWTH's: its own minimal constraints over every size, its own presentation search and its own growth. No study code was run.
+- **Confirmed, stronger than stated.** 1,805 of 1,806 with every minimal constraint, the same exception. Uniqueness up to renaming at
+  all 1,031 unsaturated points with a presentation from M(S); the K4 case has two in one class; 36 points with redundant knots have
+  none. `manylib.presentations` right in both pools; the exceptional start checked by hand (52 states; A and B not isomorphic).
+- **Folded in the same day (not blocks)**, logged in `docs/CORRECTIONS.md`. "Exactly one presentation up to renaming" now carries
+  its pool, M(S) and the stage's own knots, since a non-minimal support outside it gives a second. The 146 points were counted at
+  STATES-GROWTH's cut, and the note now gives the 1,031 found with every constraint.
 
 ## Advisor
 

@@ -1,7 +1,8 @@
 # Parity's eddies over the dropped junction
 
 Epic `DROPPED-JUNCTION-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking
-`STATES-GROWTH-20261119-001#3`). Goals G1 and G17. **Referee pending.**
+`STATES-GROWTH-20261119-001#3`). Goals G1 and G17. **Refereed:** report [R1](referee-R1/report.md), D1 and the headline confirmed,
+one Narrowing on the sample readouts and two corrections that are not blocks, folded in on 19 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `9dac43633` at 11:45 UTC after a pilot (disclosed).
@@ -27,9 +28,14 @@ any point of G* can be the **dropped** one, the junction whose lines are the loo
 - **No states-only rule recovers it in general.** The natural one is to drop the point of largest degree, which is the same as
   taking the presentation with the fewest places.
   - On the eddies it is the original choice, but on rings that is forced by counting.
-  - On 300 random growing five-knot census starts, the original is the unique largest point in only 129.
+  - On 300 random five-knot census starts that do not stall at once (67 of them close under the original choice), the original is
+    the unique largest point in only 129.
   - Where it is not, the rule's pick grows differently in 14 starts.
   - Any other choice changes the growth class in 221 of the 300.
+  - These sample figures were grown with the structural implied-parity test, not GF(2) elimination (Narrowing, referee R1). A
+    re-choice can hold two junctions differing by one distinction, which forces it constant, and then the cheapest growth gives the
+    next junction on it no fresh distinction where the structural test gives it some. 19 of the 360 sample choices the referee
+    checked grow differently. No original choice and no eddy choice is affected.
 - **So the parity side of A108 is total.** Under not-all-equal the states fix the knots almost everywhere small (STATES-GROWTH,
   MANY-VALUED). Under parity even the eddies depend on which junction counts as the implied one, a choice the states do not record.
 
@@ -39,7 +45,7 @@ any point of G* can be the **dropped** one, the junction whose lines are the loo
 | --- | --- | --- | --- |
 | D1 | on every eddy only the original choice is exponential | **held** | 23 of 23 |
 | D2 | on every eddy the original is the unique largest point (forced on rings; a check) | **held** | 23 of 23 |
-| D3 | (risky) where the original is not the unique largest point, the largest-point rule changes the class somewhere | **held** | 14 of 171 |
+| D3 | (risky) where the original is not the unique largest point, the largest-point rule changes the class somewhere | **held**, with the structural implied-parity test | 14 of 171; some sample choices are not the cheapest growth under GF(2) elimination (19 of 360 checked differ; referee R1) |
 
 3 of 3 held. Readouts on the 300:
 - under the original choice: two-dimensional 193, closed 67, one-dimensional 40;
@@ -58,6 +64,22 @@ any point of G* can be the **dropped** one, the junction whose lines are the loo
 - Only the dropped-junction choices were tried, not the twists at two-point cuts, which give further presentations of the same
   states.
 - 30 rounds or 60,000 junctions; classes by LOOP-CATALOGUE's rule. The samples are five-knot census starts.
+- Growth used the structural implied-parity test (`P.linalg = False`), which re-choices can break; see the sample bullets.
+- 70 of the 537 choices the referee rebuilt leave a junction of fewer than three places (a dropped neighbour can leave out, or a
+  knot, with one or two lines). They are not presentations in the program's sense, yet "every choice" counted them.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread, sharing its code with
+STATES-GROWTH's: its own completed systems, re-choices and growth (complete rounds, fewest counts, GF(2) implication).
+- **Confirmed.** `droplib.rechoice` on all 537 choices rebuilt (177 on the eddies, 360 on every fifth sample start): the junction
+  equations span the original's space. D1, 23 of 23: the counts equal the study's on every eddy choice; none of the 154 other
+  choices is exponential. A ring by hand (the ring of five with a spare, dropping knot 1): 5, 2, 2, 2, …, a chain.
+- **Folded in the same day**, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`.
+  - **Narrowing.** The sample readouts and D3 rest partly on choices the structural test does not grow as the cheapest growth
+    (19 of 360 checked). Reworded; a rerun with GF(2) elimination is left as a direction.
+  - **Not blocks.** Choices leaving a junction of fewer than three places (70 of 537) are named; "growing" starts are "starts that
+    do not stall at once", 67 of which close under the original choice.
 
 ## Advisor
 
@@ -83,6 +105,7 @@ any point of G* can be the **dropped** one, the junction whose lines are the loo
 | 1 | The transfer between kinds of junction (`JUNCTION-MAP-20261119-001#1`), once BREAK-EDDIES' verdict is in | 3/3 | 2/3 | as there | Selected · awaiting the verdict |
 | 2 | The advisor's local reading: the class after a drop depends only on the dropped knot's lines (test with six-place ring knots and knots with no loose line) | 2/3 | 3/3 | grow the dropped choices on rings with one six-place knot → stop at a rule from the dropped star alone | Alternative · deferred |
 | 3 | How often non-minimal supports occur at scale (`MANY-VALUED-20261119-001#3`) | 2/3 | 3/3 | as there | Alternative · deferred |
+| 4 | The sample regrown with GF(2) elimination (referee R1): D3 and the readouts as readings of the cheapest growth | 1/3 | 3/3 | rerun job.py's sample part with the implied flag from elimination → stop at the corrected 14 of 171 and 221 of 300 | Alternative · added after the referee |
 
 ## Final report as sent (2026-11-19 11:50 UTC)
 

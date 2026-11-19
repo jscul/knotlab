@@ -1,0 +1,35 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "MERGE-BURST-20261119-001",
+    "REDUCE-BLOCKS-20261119-001",
+    "DOUBLE-IDENT-20261119-001",
+    "DEAD-CAP-20261119-001",
+    "EXPLOSIVE-20261119-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "MERGE-BURST-20261119-001#1"
+    ]
+  },
+  "id": "WALL-READ-20261119-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (19 November 2026) for MERGE-BURST-20261119-001#1, now that REDUCE-BLOCKS landed: a reading past the wall, where maximal blocks share two knots (the case DOUBLE-IDENT excludes), on the smallest unread explosive start (start-03, six knots, stopped at round 7). Stop at a structure that predicts its next round, or a proof that none can. Framed by A110: these are samples of an unlimited structure, read where possible. Advisor before the freeze. Serves G17.",
+  "ownership": {
+    "root": true,
+    "scope_id": "WALL-READ-20261119-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "Stop at a structure that predicts the next round of a start past the wall, or a proof that none of the cluster kind can.",
+  "title": "A reading past the wall"
+}

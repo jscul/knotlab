@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WALL-READ-20261119-001B-E001",
+ "ticket": "WALL-READ-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Past the wall (two maximal blocks sharing two points): does the roster engine equal the program's engine, and what do the partnered and sub-count bounds of Lemma 2 read of the next round of MERGE-BURST's 14 unread explosive starts?",
+ "public_inputs": {
+  "code": "job.py (a6bf91ed2110264a8c8303333b1b0d5058f7f7b2e2249e94978bca2f293e145b); rosterlib.py (61c419e6f76c910983ec8a73491f5418b094a5eb6456177ecc2e45358db48021) and A's job.py (51d39e7c824af6efbc6b07b2eab7c7dc5ddc296307217b43a49443a105ec2c80) (sha256)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>",
+  "reused": "runs/merge-burst (the 16 starts); runs/touch-census; REDUCE-BLOCKS hublib and sampler; joinlib engine; fastlib"
+ },
+ "forbidden_inputs": [
+  "Changing a bound, the search, the sub-count procedure, a prediction or a threshold after reading the frozen run"
+ ],
+ "primary_observable": "B1-B6 of research/WALL-READ-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "start-00, the closed explosive start (followed to its close; its merge stage has one block)",
+ "predictions": {
+  "B1": "roster engine equals program engine wherever both finish",
+  "B2": "start-03 double count; fastlib lists 28,064 round-8 groups, largest 109",
+  "B3": "Lemma 2 bounds at most the listed groups at every stage",
+  "B4": "(risky) start-03 stage 8 sub-count bound >= 10^6",
+  "B5": ">= 10 of 13 other unread starts: better bound at the last built stage exceeds its count",
+  "B6": "no unread start reaches a one-block stage"
+ },
+ "decision_rules": {
+  "each": "held iff its condition in the pre-registration holds"
+ },
+ "stop_rule": "One run; stop at the result.",
+ "runtime": "about two to three hours on 2 workers (20 minutes per followed start at most)",
+ "disclosed_exploration": "start-03 to round 8 with the compact engine; partnered sets on start-03's stages (4 restarts); the partnered start of order 3; smoke runs of A's machine check and of B's follow on start-00",
+ "amendments": []
+}

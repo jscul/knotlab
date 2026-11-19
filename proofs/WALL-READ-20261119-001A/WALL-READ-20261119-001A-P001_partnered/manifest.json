@@ -1,0 +1,77 @@
+{
+ "schema_version": 3,
+ "artifact_id": "WALL-READ-20261119-001A-P001",
+ "canonical_id": "WALL-READ-20261119-001A-P001",
+ "proof": "WALL-READ-20261119-001A-P001",
+ "ticket": "WALL-READ-20261119-001A",
+ "kind": "proof",
+ "status": "Partial",
+ "title": "Partnered starts grow without end, faster than any cluster reading",
+ "claim": "Theorem 1: the partnered start of order n >= 3 (2n live points in partner pairs, blocks the non-partner pairs, open counts 2^(n-1)) keeps the partnered form at every stage, with N_0 = 2n, N_1 = 2^n, N_(t+1) = 2^(N_t/2) - N_(t-1); no offshoot, stall or close; runaway growth. Lemma 2: the next round has at least mc(G[W]) - |blocks| - lone groups for any set W of live points; a partnered set of order k >= 2 gives 2^k - |blocks|. Lemma 3: a partnered set of order k >= 2 with no outside common candidate gives a partnered set of order 2^(k-1) - |blocks| at the next stage. Corollary 4: no cluster reading with clusters of polynomially many members follows a partnered start.",
+ "standard_statement": "Neumann-Lara's K(O_n) = O_(2^(n-1)) for the clique-graph operator, with the cliques held by blocks removed; injection of an induced subgraph's maximal cliques.",
+ "prior_work": "Neumann-Lara 1978 (clique-divergent octahedra); Cedillo and Pizana 2021 (clique-convergence undecidable for automatic graphs); REDUCE-BLOCKS-20261119-001 (Lemma R); DOUBLE-IDENT-20261119-001 (cluster reading).",
+ "dependencies": [
+  "REDUCE-BLOCKS-20261119-001",
+  "DOUBLE-IDENT-20261119-001",
+  "MERGE-BURST-20261119-001",
+  "EXPLOSIVE-20261119-001"
+ ],
+ "completion_gate": "The machine check (job.py through scripts/longrun.py, merged): M1-M4 of proof.md; the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "Partial: sketch checked by the advisor before the freeze (four gaps closed); smoke test found the lone-point term (fixed before the freeze); machine check frozen, not yet run",
+  "independence": "rosterlib.py is a separate engine on the live roster (networkx clique listing); job.py grows the program's engine on hub realizations alongside",
+  "novelty": "adaptation of Neumann-Lara's octahedra to the cheapest growth; cluster-reading obstruction; witness bounds"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "run the frozen machine check M1-M4",
+  "referee review"
+ ],
+ "paths": {
+  "manifest": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/manifest.json",
+  "identity": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/identity.json",
+  "proof": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/proof.md",
+  "result": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/result.json",
+  "machine_check": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/job.py",
+  "machine_check_output": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/machine_check.json"
+ },
+ "attained_result": "",
+ "code_sha256": {
+  "rosterlib.py": "61c419e6f76c910983ec8a73491f5418b094a5eb6456177ecc2e45358db48021",
+  "job.py": "51d39e7c824af6efbc6b07b2eab7c7dc5ddc296307217b43a49443a105ec2c80"
+ }
+}

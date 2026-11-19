@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 545 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 546 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 545 epics with their closures
+- [Epics](#epics): all 546 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1764,6 +1764,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Which current bond readings carry the growing end through a complete round? (`GROWN-END-READING-20261119-001`) | — | [folder](research/GROWN-END-READING-20261119-001/) |
 | 2026-11-19 | Can a growing-end-preserving bond-distance renaming fail at a reachable stage? (`GROWN-END-SWAP-20261119-001`) | — | [folder](research/GROWN-END-SWAP-20261119-001/) |
 | 2026-11-19 | Do two arrangements the cheapest growth reaches share a bond-distance table with different states? (`GROWN-PAIR-20261119-001`) | [closure](proofs/GROWN-PAIR-20261119-001Z/GROWN-PAIR-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/GROWN-PAIR-20261119-001/) |
+| 2026-11-19 | Reading one growing end with a structure-guided probability sample (`HUB-GUIDED-SAMPLE-20261119-001`) | — | [folder](research/HUB-GUIDED-SAMPLE-20261119-001/) |
 | 2026-11-19 | Can a new junction shorten a bond in a way the distances do not foresee? (`HUNT-SHORTEN-20261119-001`) | [closure](proofs/HUNT-SHORTEN-20261119-001Z/HUNT-SHORTEN-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/HUNT-SHORTEN-20261119-001/) |
 | 2026-11-19 | A transfer between kinds of junction (`JUNCTION-KINDS-20261119-001`) | [closure](proofs/JUNCTION-KINDS-20261119-001Z/JUNCTION-KINDS-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/JUNCTION-KINDS-20261119-001/) |
 | 2026-11-19 | A map that sees loops through first-round junctions (`JUNCTION-MAP-20261119-001`) | [closure](proofs/JUNCTION-MAP-20261119-001Z/JUNCTION-MAP-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/JUNCTION-MAP-20261119-001/) |

@@ -1,7 +1,8 @@
 # Which rings of knots feed themselves within five places
 
 Epic `RING-CORES-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead, which joins the identification line to
-the eddy line. Goal G17. **Referee pending.**
+the eddy line. Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block; one Narrowing of wording and one
+note on independence, folded in on 19 November (see Referee).
 
 **Record.**
 - **The proof** (ticket A):
@@ -41,8 +42,11 @@ the eddy line. Goal G17. **Referee pending.**
     knot grows at 1.0970;
   - **two spares on the ring of five:** 1.2628;
   - **three hung knots on the ring of nine:** x^4 = x + 1, so 1.2207.
-- **Nothing within five places grows faster than the golden ratio.** A ring whose every knot carries a spare grows at
-  1.6180, whatever its length. This is proved after the run: no hung knot can beat two spares.
+- **No ring of live knots within five places grows faster than the golden ratio.** A ring whose every knot carries a spare grows
+  at 1.6180, whatever its length. This is proved after the run: no hung knot can beat two spares.
+  - The bound is for the class with every knot live (Proposition 6).
+  - The wider sentence first written here, "nothing within five places", is false. With dead knots the 11-knot theta of
+    `DEAD-CAP-20261119-001` grows at about 2.383 (a Narrowing, referee R1).
 - **It matches the program's own growth exactly.** All 23,098 decorated rings of 5 to 14 knots were grown. Their counts equal the
   formula on every round, from round 10 to round 40. Of 162,576 small starts of up to nine knots, every exponential one in the class
   is such a ring.
@@ -63,10 +67,30 @@ the eddy line. Goal G17. **Referee pending.**
 | Lemma 2: one ring of blocks for odd L, two for even; a hung knot feeds the opposite walk, a spare its own | proved | K3 (the even-L assignment checked on every even word) |
 | Theorem 3: the per-round count is [z^(t+1)] of a rational function with denominator 1 − W | proved | K3: engine equal to the formula on every round of all 23,098; K4: closed form equal to the direct sum |
 | Theorem 4: bare means n per round; otherwise exponential at the root of W(1/x) = 1 | proved | K2: dims.predict agrees on every word; K5: the advisor's four predicted rates |
-| Corollary 5: within the cap, in the class, the eddies are exactly the decorated rings | proved | K6: 162,576 small starts, 1,098 exponential ones, all decorated rings |
+| Corollary 5: within the cap, in the class, the eddies are exactly the decorated rings | proved | K6: 162,576 small starts, 1,098 exponential ones, all decorated rings. K6 reads dims.predict, so it is not independent of the proof. The referee regrew all 162,576 with its own engine, with no exception |
 | Proposition 6 (post hoc): no ring within the cap beats the golden ratio | proved | the run's fastest at every L is 1.6180 |
 
 All six checks passed.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread.
+- **Confirmed, each not a block:**
+  - **Theorem 3's clusters and orbit count.** A brute force on the unrolled cover equals the formula on all 454 words of 5 to 9
+    knots, to round 7.
+  - **The even-ring piece rule,** read off the referee's own map on all 23,098 words.
+  - **Theorem 4's dominant root.** The growth equals the formula on every round of 3,132 words, 44,532 rounds.
+  - **Proposition 6 as stated.** It was checked exactly in Q(√5) on all 39,155 pieces, with equality on exactly the 208 it names.
+  - **"Exactly" in both directions.** The shape list is complete under the cap: 42,911 assignments on the 36 cycle-core graphs to
+    14 knots.
+  - **The referee's own regrowth of all 162,576 small starts:** 150,355 stall; 11,119 path or star cores polynomial; 4 bare rings
+    constant; 1,098 decorated rings exponential and equal to the formula on every round.
+- **Folded in.**
+  - **The ceiling's scope (a Narrowing).** "Nothing within five places grows faster than the golden ratio" was wider than
+    Proposition 6, which covers ring starts in the class with every knot live. The wide claim is false: dead knots reach about 2.383
+    (the theta, `DEAD-CAP-20261119-001`). Logged in docs/CORRECTIONS.md.
+  - **K6's independence.** K6 reads the program's own predictor, so it is not independent of the proof. The referee's regrowth is
+    the independent check.
 
 ## Assumptions
 

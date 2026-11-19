@@ -4,6 +4,14 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: rings within five places refereed
+
+- The classification of the eddies within five places with every knot live (`RING-CORES-20261119-001`,
+  [decision note](research/RING-CORES-20261119-001/ring_cores.md)) was refereed and confirmed, with a brute-force count on the
+  unrolled cover and the referee's own regrowth of every small start.
+- **Narrowed.** "Nothing within five places grows faster than the golden ratio" holds for rings of live knots (Proposition 6). With
+  dead knots it is false: an 11-knot start with two dead hubs grows at about 2.383 (`DEAD-CAP-20261119-001`).
+
 ## 19 November 2026: the cap on places refereed
 
 - The proof that five places with no dead knot allow at most two chains in a piece (`CAP-CHAINS-20261119-001`,

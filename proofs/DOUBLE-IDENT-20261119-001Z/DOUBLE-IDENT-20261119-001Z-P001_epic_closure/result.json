@@ -1,0 +1,32 @@
+{
+ "schema_version": 3,
+ "artifact_id": "DOUBLE-IDENT-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "DOUBLE-IDENT-20261119-001Z",
+ "proof": "DOUBLE-IDENT-20261119-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing DOUBLE-IDENT-20261119-001: ticket A (proof) and ticket B (census readout, D1 held). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/manifest.json": "Proved",
+   "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/result.json": "passed",
+   "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/machine_check.json": null,
+   "experiments/DOUBLE-IDENT-20261119-001B/DOUBLE-IDENT-20261119-001B-E001_dims/contract.json": "Frozen",
+   "artifacts/DOUBLE-IDENT-20261119-001B/DOUBLE-IDENT-20261119-001B-E001_dims/dims.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

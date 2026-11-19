@@ -32,8 +32,10 @@ the census tally as its short follow-up. Goal G17. **Referee pending.**
   - The rule matches the census's measured dimension on all 307 simple trees. On tree-shaped starts with knots touching twice it
     matches 3,980 of 4,012, outside the proof; the 32 others have two knots sharing three or four distinctions.
 - **What it leaves open.** These tree-shaped starts are 39% of the census's two-dimensional growths (3,753 of 9,564). The other 61%
-  have a cycle of three or four knots, where the proofs' conditions fail. CLUSTER-ALL's computed rule (groups of three as their
-  own blocks) gives their chains too, but that part is not proved.
+  have a cycle in their underlying graph. The first version said "a cycle of three or four knots, where the proofs' conditions
+  fail". That is corrected (not a block) by `DOUBLE-IDENT-20261119-001`: what kept most of them out was that knots touch twice, not
+  the cycles. With (S3) and (S4) read on live knots, 8,108 of the 9,564 are in the proved class, and only 1,456 have a round-1
+  group of three or two live knots with two common neighbours.
 
 ## Predictions and verdicts
 

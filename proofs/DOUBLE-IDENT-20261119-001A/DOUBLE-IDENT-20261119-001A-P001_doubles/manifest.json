@@ -1,0 +1,70 @@
+{
+ "schema_version": 3,
+ "artifact_id": "DOUBLE-IDENT-20261119-001A-P001",
+ "canonical_id": "DOUBLE-IDENT-20261119-001A-P001",
+ "proof": "DOUBLE-IDENT-20261119-001A-P001",
+ "ticket": "DOUBLE-IDENT-20261119-001A",
+ "kind": "proof",
+ "status": "Proved",
+ "title": "Knots touching twice: the identification on most of the census",
+ "claim": "Lemma M: from round 1 the cheapest parity growth reads a start only through each knot's set of live neighbours and each live knot's open count (multiplicities enter only through open counts). Theorem 6: hence RING-IDENT's, CHAIN-IDENT's and RELAY-IDENT's identification and dimension theorems hold for knot multigraphs, under (S3) and (S4) read on live knots (dead knots as common neighbours and blocks) and (S6') at least two loose distinctions; a one-loose start closes at round 1. Corollary 7: on the touch census the growth class read off the relayed extended complex equals the measured class on all 12,473 arrangements in the class.",
+ "standard_statement": "As RING-IDENT's; linear algebra over GF(2) for the implied test.",
+ "prior_work": "RING-IDENT-20261119-001, CHAIN-IDENT-20261119-001, RELAY-IDENT-20261119-001 (simple knot graphs); CLUSTER-ALL-20261119-001 (the rule on the census, computed).",
+ "dependencies": [
+  "RELAY-IDENT-20261119-001",
+  "CHAIN-IDENT-20261119-001",
+  "RING-IDENT-20261119-001"
+ ],
+ "completion_gate": "The machine check on the whole touch census (11,512 of 11,512 in the class agree per round; 727 one-loose starts close); ticket B (D1, 12,473 of 12,473); the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "written in full; statement checked by the advisor before the freeze; referee pending",
+  "independence": "machine_check.py classifies every census arrangement on Lemma M data and compares per-round (parents, fresh) multisets with the relayed cover",
+  "novelty": "extension of the identification line"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false,
+  "weave_height_criterion_and_lower_bound_proved": true
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [],
+ "paths": {
+  "manifest": "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/manifest.json",
+  "identity": "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/identity.json",
+  "proof": "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md",
+  "result": "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/result.json",
+  "machine_check": "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/machine_check.py",
+  "machine_check_output": "proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/machine_check.json"
+ },
+ "attained_result": "Lemma M, Theorem 6 and the one-loose closure proved; Corollary 7 computed in ticket B."
+}

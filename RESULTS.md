@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 518 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 519 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 518 epics with their closures
+- [Epics](#epics): all 519 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1749,6 +1749,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | The eddies in the cluster rule's break shapes (`BREAK-EDDIES-20261119-001`) | [closure](proofs/BREAK-EDDIES-20261119-001Z/BREAK-EDDIES-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/BREAK-EDDIES-20261119-001/) |
 | 2026-11-19 | The floor's endless chains as pendant chains of the cover (`CHAIN-IDENT-20261119-001`) | [closure](proofs/CHAIN-IDENT-20261119-001Z/CHAIN-IDENT-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/CHAIN-IDENT-20261119-001/) |
 | 2026-11-19 | Does one cluster rule predict every growth of touching knots? (`CLUSTER-ALL-20261119-001`) | [closure](proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/CLUSTER-ALL-20261119-001/) |
+| 2026-11-19 | Knots touching twice: the identification on most of the census (`DOUBLE-IDENT-20261119-001`) | [closure](proofs/DOUBLE-IDENT-20261119-001Z/DOUBLE-IDENT-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/DOUBLE-IDENT-20261119-001/) |
 | 2026-11-19 | Parity's eddies over the dropped junction (`DROPPED-JUNCTION-20261119-001`) | [closure](proofs/DROPPED-JUNCTION-20261119-001Z/DROPPED-JUNCTION-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/DROPPED-JUNCTION-20261119-001/) |
 | 2026-11-19 | Does the law, grown from every small arrangement, ever make a meet-once collision with other states? (`GROW-SMALL-20261119-001`) | [closure](proofs/GROW-SMALL-20261119-001Z/GROW-SMALL-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-SMALL-20261119-001/) |
 | 2026-11-19 | Do two arrangements the cheapest growth reaches share a bond-distance table with different states? (`GROWN-PAIR-20261119-001`) | [closure](proofs/GROWN-PAIR-20261119-001Z/GROWN-PAIR-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/GROWN-PAIR-20261119-001/) |

@@ -1,0 +1,29 @@
+{
+ "schema_version": 1,
+ "experiment_id": "DOUBLE-IDENT-20261119-001B-E001",
+ "ticket": "DOUBLE-IDENT-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "descriptive",
+ "branch": "code_analysis",
+ "question": "On the touch census's arrangements in the class, does the growth class read off the relayed extended complex equal the measured class, and by which mechanisms are the census's growths two-dimensional?",
+ "public_inputs": {
+  "code": "dims.py (15755a12c1c39d56efd0794090e32cd4ef243cc19922a56f928057395e9cd01e) (sha256)",
+  "run": "python3 -B dims.py <out.json>",
+  "reused": "DOUBLE-IDENT machine_check.py (classification), TOUCH-CENSUS-20261118-001 runs"
+ },
+ "forbidden_inputs": [
+  "Changing the class rule or the prediction after reading the tally"
+ ],
+ "primary_observable": "D1 of dims.py",
+ "cheapest_meaningful_control": "the out-of-class arrangements' two-dimensional count",
+ "predictions": {
+  "D1": "predicted class equals measured class on every arrangement in the class"
+ },
+ "decision_rules": {
+  "D1": "held iff no exception"
+ },
+ "stop_rule": "One run; readout.",
+ "runtime": "minutes",
+ "disclosed_exploration": "the same computation ran once as a pilot before this contract and showed D1 holding (12,473 of 12,473)",
+ "amendments": []
+}

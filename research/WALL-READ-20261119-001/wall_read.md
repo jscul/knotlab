@@ -165,3 +165,43 @@ freeze.
 | 3 | What the sampled jumps are made of: which structure makes start-03's 28,008 large groups | 2/3 — a reading of the natural kind | 1/3 — the bounds missed it; no candidate yet | list round 8's groups by the blocks they cross → stop at a structure that bounds round 9 above 28,065, or a reason none can | Alternative · proposed |
 | 4 | A sampling estimate of the next round (random descent through the clique search, A110's sampling) | 2/3 | 2/3 | estimate start-03's round 9 with spread → stop at an estimate whose spread is under a factor of 10, or a reason the spread cannot shrink | Alternative · proposed |
 | 5 | Prove the 2.3830 ceiling within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+## Final report as sent (2026-11-19 21:08 UTC)
+
+**Outcome:** Past the wall there is now one start read exactly, and it never ends. Its knots come in partner pairs, each able to join every knot but its partner. Every round keeps that form, and the counts run 6, 8, 10, 24, 4,086, then 2^2043 − 24, each about two to the power of half the one before. I'm calling that runaway growth. It's proved, and the machine check passed 4 of 4. It's also the proof that the wall is real: no reading by clusters of the unrolled map can keep up with it. On the smallest unread start itself the new reading is weak. That start, and the other 13, are still unread. Closed, referee pending.
+
+- **What the growth is, past the wall.** Each round keeps the largest sets of knots that can all join one another and that no single knot meets. That makes it a clique operator, and the partnered start is the literature's octahedron case (Neumann-Lara, 1978), adapted to our rule. Our rule drops the joins a block holds, which is why each count subtracts the one from two rounds back.
+- **Why no cluster reading can follow it.** Clusters of an unrolled map number at most exponentially many in their size. Runaway growth outruns any exponential, so the clusters would have to be as large as the previous round's whole count.
+- **A part bounds the next round (proved).** Read any set of live knots exactly, and you get a lower bound on the next round. That's a first sampling inside one growth, as A110 asks. It never failed, on 6,033 stages in the proof check and 140 in the run.
+- **But it reads the real starts weakly.** Two predictions failed.
+  - **Start-03.** A compact engine took it one round further, to 28,065 junctions in round 8. The best bound on round 9 is 16,019; I'd predicted a million.
+  - **The other 13 unread starts.** Each went one or two rounds further, jumping ×10 to ×650, up to 162,336 junctions. None merged, and the bound passed the last count built for 0 of them.
+  - **What that shows.** Their jumps are made of large groups, but those groups aren't partnered or random-like. The structure making them is still unnamed.
+- **Also checked.** Start-04's round 9 is 304,590 junctions, all pairs, as its block of 781 predicted. The compact engine matched the program's engine everywhere: 26,441 census starts, 995 random starts and both read starts.
+- **One caveat.** The partnered start needs knots of eight places, one more than the explosive sample allowed.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a reading past the wall | **Status:** Partially successful (proof 4 of 4; run 4 of 6, B4 and B5 failed) | Partnered starts are read exactly past the wall and run away without end, and no cluster reading can follow them; on the 14 sampled starts the new bounds read weakly |
+| Local direction: the explosive kind (A109) | Research directions | One member is read completely (runaway); the sampled ones jump through large groups that neither bound captures |
+| Broader exploration: what the cheapest growth builds | Capability gained | The growth is a clique operator; whether it ends links to clique-divergence, which is open in general |
+| Long-term goal: G17 | Capability gained | A blow-up that never ends, read exactly, and a way to bound one growth's next round from a part of it |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A retraction lemma: a stage whose blocks map onto a partnered stage runs away at least as fast | 3/3 | 2/3 | prove it for maps that send blocks into blocks → stop at a proof, or a start where it fails | Alternative · proposed |
+| 2 | Does any start within seven places reach a partnered stage, or one that retracts onto it? | 3/3 | 2/3 | search the census and the explosive sample for partnered stages of order ≥ 3 with no outside common candidate → stop at one, or a sampled bound | Alternative · proposed |
+| 3 | What makes start-03's 28,008 large groups | 2/3 | 1/3 | list round 8's groups by the blocks they cross → stop at a structure that bounds round 9 above 28,065, or a reason none can | Alternative · proposed |
+| 4 | A sampling estimate of the next round (A110's sampling) | 2/3 | 2/3 | estimate start-03's round 9 with spread → stop at a spread under a factor of 10, or a reason it can't shrink | Alternative · proposed |
+| 5 | Prove the 2.3830 ceiling within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+**Corrections:** none. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A110 and A109 get history lines, both status unchanged; no new entry. **Basket:** `MERGE-BURST-20261119-001#1` taken and marked done; directions 1–4 added; the 2.3830 ceiling stays in the basket. **Advisor:** Fable 5.2, before the freeze, staying within its text. It confirmed the partnered proof and named four gaps, all closed. It narrowed the cluster obstruction to regular covers. It proposed the partnered bound and the words "partnered" and "runaway growth", and it tightened the predictions. One point of its came from my own misstatement of a density. Separately, the smoke test before the freeze caught a gap in the bound lemma (a knot that can join nothing), fixed before freezing. **Disclosed:** the objects-index search ran at close, not before the freeze; it found no earlier study of partnered starts or of part-of-a-stage bounds.
+
+**Referee hand-off.** The decision note is `research/WALL-READ-20261119-001/wall_read.md`, the proof is `proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/proof.md`, and the run is `experiments/WALL-READ-20261119-001B/WALL-READ-20261119-001B-E001_past/`. The prior-work searches, run at close, are in the note's "Prior work in the program" section. Please check:
+- Theorem 1's induction, the (F4) monotonicity and the round-1 base, and the eight-place minimum;
+- Corollary 4's counting (regular covers, at most (eΔ)^(k−1) connected k-sets through a member);
+- Lemma 2's lone-point term, and Lemma 3's disjointness of complementary groups;
+- that `rosterlib` is the program's rule, including the implied clause;
+- B2's post hoc double count, and the start-04 round-9 check.

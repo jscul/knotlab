@@ -4,6 +4,7 @@
 from the linked records.
 - **All refereed and confirmed:** the four identification proofs, the reading past the census (SCALE-THEOREM), the weightings test
   (WEIGHTINGS) and the cap on places (CAP-CHAINS).
+- **Referee pending:** the rings within five places (RING-CORES), which joins this line to the eddy catalogue.
 
 ## First: two dimensions are typical of how starts are drawn, not of the growth
 
@@ -68,6 +69,7 @@ from twelve knots (WEIGHTINGS). That is the Narrowing above.
 | [SCALE-THEOREM](../SCALE-THEOREM-20261119-001/scale_theorem.md) (frozen run) | Read by the theorem, SCALE-SHARE's samples of 5 to 20 knots are 73–83% in the class; in it two dimensions rise from 85% to 98% of growers, and three never occurs | Nothing new; it measures the class's reach under one weighting | Confirmed (every figure reproduced; two wording points folded in) |
 | [WEIGHTINGS](../WEIGHTINGS-20261119-001/weightings.md) (frozen run) | Under seven weightings frozen before reading, two stays typical only where knots have at most five places, crowded or not. Under uniform random trees three or more is 12% at twelve knots and 37% at twenty; extra lines make exponential growth common. All 1,226 regrown samples agree with the theorem, 622 of them three- to six-dimensional or exponential | Nothing new; it narrows "two is typical" and overturns A106 as a reading of the growth | Confirmed (the samplers checked against their exact laws; every one of 6,271 hard in-class starts regrows as read; the cause credited to the cap, not crowding) |
 | [CAP-CHAINS](../CAP-CHAINS-20261119-001/cap_chains.md) (proof) | With no dead knot and at most five places, the knots form one line or one ring with single knots hung on it, so a piece carries at most two chains, and a tree start grows in at most two dimensions. Six places, or dead knots at five, allow any number | Adds a cap on places and no dead knot | Confirmed line by line (rechecked to 13 knots; the ring with a leaf grows at the root of x⁸ = x + 1, about 10% a round) |
+| [RING-CORES](../RING-CORES-20261119-001/ring_cores.md) (proof) | Within five places, with no dead knot, the eddies are exactly the rings carrying a hung knot or a spare. The count is rational with denominator 1 − W, where W is a product of three kinds of factor, and the rate is the root of W(1/x) = 1, at most the golden ratio. 23,098 rings grow exactly as the formula says | Adds nothing; it reads the cap's ring cores | Pending |
 
 ## On what share of the census
 

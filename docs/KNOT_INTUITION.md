@@ -870,6 +870,18 @@ bare tree can carry any number of chains in one piece. A dead knot, whose places
 are all shared, joins its neighbours without costing them a place, so dead hubs
 give any number of chains even at five places
 ([decision note](../research/CAP-CHAINS-20261119-001/cap_chains.md)).
+And which starts within five places feed themselves (`RING-CORES-20261119-001`,
+proof, referee pending)? Exactly the rings of knots that carry something extra:
+a hung knot, or a spare place where the cap allows one. A bare ring makes the
+same number of junctions every round, and lines and stars never grow
+exponentially. Going once round the ring multiplies the count by a product of
+three kinds of factor: one per knot on the walk round it (the walk goes two
+knots at a time), one per spare place, and one per hung knot. The rate solves
+W(1/x) = 1 and does not depend on where the extras sit. The ring of seven with a
+hung knot grows at 1.0970, and nothing within five places beats the golden
+ratio, which a ring of knots that all carry a spare reaches at any length. So
+in this class the catalogue's eddies are all there is
+([decision note](../research/RING-CORES-20261119-001/ring_cores.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

@@ -1,0 +1,49 @@
+# The fixed-terminal matching persists while four-name readings differ
+
+The archived matching between the 239-junction, 643-distinction stage and itself carries the pair and triple bond readings at every later complete round. The same conclusion holds for the other fixed-link choices replayed here and for a two-parallel replacement at the original terminals. In this family the equation span already differs in the first marked round. Three is the greatest arity through which every minimum common bond reading is preserved. Four names witness the first possible arity of disagreement.
+
+## An all-age argument for the fixed terminals
+
+The dense core splits its hub into two ordinary junctions. At least 105 distinction-disjoint routes connect the two hubs. With the hubs identified, every set of up to three marked distinctions has a bond of size at most 80. Identifying or separating the two hubs preserves the bonds of size below 105. Thus the index exchange `2 ↔ 3` preserves all minima through at most three names in the split core. The four removed-name choices below are fixed individually by that exchange. [Dense-core bound](../../proofs/GROWN-END-READING-20261119-001A/GROWN-END-READING-20261119-001A-P001_transport/proof.md#a-reached-self-renaming-that-changes-the-equations)
+
+For the parallel variant first double the one distinguished shared distinction in the core. Every bond contains both parallel names or neither. Any query of at most three names can coalesce the duplicate with its original and then use the bound of 80 in the unsplit core. Lifting adds at most one, so 81 is still below the split threshold of 105. The unsplit exchange fixes both copies and remains an automorphism. All these minima therefore agree on the doubled core as well.
+
+More generally, this comparison applies to any connected two-terminal exterior whose separating cost `λ` is between 1 and 25, even when `λ` changes between rounds. At a particular age, introduce `λ` parallel copies of the distinguished name in the auxiliary core. The upper bound on any one-, two-, or three-name minimum in the unsplit version is then `80 + λ − 1 ≤ 104`. The 105 disjoint hub routes still exist in the matching split core. The same symmetry therefore preserves the short readings at each such cost. A mixed query uses `L_H(X)`, which is the original single-copy core's minimum through `X` and `e`, less one, regardless of the exterior cost.
+
+Remove the one or two copies and attach a new ordinary junction to each old terminal by the same number of fixed links. Give each attachment junction two loose distinctions. The two branches have disjoint live parents and no shared ordinary witness for a candidate pair. Both continue to receive fresh distinctions. Every new junction takes a proper subset of the whole stage's loose distinctions because the other branch also has loose distinctions. Thus the implied closing exception never applies. The fresh counts cover lookahead demand, so the next round is available.
+
+In the first round each attachment produces two offshoots, each holding two fresh distinctions. At any later round the tip of either offshoot continuation has a single parent that gave exactly two distinctions in the previous round. The tip and its one sibling are therefore its only possible joining pair. It gives one distinction to that pair and the other to its own offshoot, which again has two fresh distinctions. The two continuations remain independent along these one-parent links. At every age they give two distinction-disjoint routes from the attachment junction to the outside holder. The two branches together give as many distinction-disjoint terminal routes as there are fixed links per terminal, one or two. The cut at an old terminal attains that cost in the exterior piece.
+
+Let `r` be that exterior terminal cost, let `H` be the ordinary core after deleting the distinguished copies, and let `Q` be the exterior piece. In a mixed bond the terminals are on opposite shores and the restrictions to `H` and `Q` are both connected cuts. The minimum for marks `X` in `H` and `Y` in `Q` is `L_H(X) + L_Q(Y)`, where `L` restricts to separating cuts. The cost `L_H(X)` is the core minimum through `X` and one distinguished copy, less `r`. A bond crossing that copy crosses all the parallel copies. For mixed readings of arity at most three, this invokes at most three core marks. Pure interior minima agree with the core because the two terminal costs match. The exterior names are fixed individually. This proves pair and triple preservation at every age, using the whole reading of the core and the unchanged exterior terminal cost. [Substitution proof and closed-piece control](../../experiments/GROWN-END-READING-20261119-001/GROWN-END-READING-20261119-001-E001_readings/graft_check.md)
+
+## Four names separate the readings
+
+Use the common index `8` and the two middle junctions `M(2,8)` and `M(0,8)`, both attached to the light hub. Mark the light-hub spoke and the index-`8` distinction at `M(2,8)`, and mark both index distinctions at `M(0,8)`. Any cut crossing all four places the two middle junctions together, opposite indices `0,8` and the light hub. This isolates `M(0,8)` on that shore. Since `M(2,8)` is on its shore, the cut cannot be a bond. None of the grafts attaches at `M(0,8)`, so this obstruction persists.
+
+After the exchange, `M(2,8)` is replaced by `M(3,8)`, which attaches to the dark hub. The shore consisting of the light hub, `M(3,8)`, `M(0,8)`, index `3`, and `M(3,13)` is connected. Its complement is connected through the dark hub and the remaining index junctions. It crosses all four image marks. In the literal labels the query `{21,22,133,134}` has no common bond and its image `{21,22,184,185}` has a witnessed bond of size 126 throughout the replay. Place any graft junctions on the side of the second terminal to lift this cut. The image minimum is at least 105, since `M(0,8)` must reach the light hub on its own shore while the marked spoke puts the dark hub on the opposite shore. Any original hub route using the removed distinction can take a terminal route through `Q`, preserving the disjoint-route bound.
+
+The difference in allowed states has a separate certificate. The support `{22,23,133,134}` meets every literal junction evenly and meets the image of the dark hub's equation only in `134`. Also, the 105-name dark-hub support is a bond, while its 105-name image cannot itself be a bond because it fails on that allowed difference. Its image has minimum at least 106, or has no common bond.
+
+## Exact replay to round 12
+
+The production law and independent literal validator agree on 60 rounds across the five fixed-cost histories. For each age the result records disjoint routes certifying the exterior cost, checks the whole pointwise-live and pair-flip relation, and verifies both the allowed difference and the four-mark cut. The inherited dense-core bound and the substitution proof give the full pair and triple results at these sizes.
+
+| Removed name `(indices, holder)` | Fixed links at each terminal | Start size | First marked size | Round 12 size |
+| --- | ---: | --- | --- | --- |
+| `(0,1,0)` | 1 | `(235,635)` | `(239,643)` | `(415,995)` |
+| `(0,1,1)` | 1 | `(235,635)` | `(239,643)` | `(415,995)` |
+| `(4,5,4)` | 1 | `(235,635)` | `(239,643)` | `(415,995)` |
+| `(8,9,9)` | 1 | `(235,635)` | `(239,643)` | `(415,995)` |
+| `(0,1,0)`, doubled first | 2 | `(235,637)` | `(239,645)` | `(415,997)` |
+
+Here size gives ordinary junctions and distinctions. All five histories use one pair of fixed terminals. If grafts touch several different core terminals and share the outside holder, the combined exterior is a multi-terminal piece. To turn a four-name obstruction into a later triple, one would need an exterior mark that tests the combined constraints at several terminals. The two-terminal replacement reads only one extra core name per mixed query, leaving this mechanism outside the present proof.
+
+Replacing either of the fixed names `21,22` also leaves the particular remaining three-name query unchanged at every positive terminal cost. Write `e` for the replaced name. At the source, the three marks together with `e` have no common bond, so the separating term is unavailable. For the image, every containing bond through the three marks and `e` separates the split hubs and costs at least 105 in the original core. The original three-name minima already agree at a value at most 80. They must both be attained with the terminals together, and the separating term remains above that value at every cost of at least one. Thus varying a single terminal cost cannot make this four-name witness appear in the three-name query.
+
+A sixth history checks changing cost. One exterior branch initially has two old routes to its terminal. The first round creates two pair junctions on that branch with one fresh distinction each. In the next round they consume both loose distinctions as a pair and receive just one fresh distinction. That creates a one-distinction cut, which persists as the branch grows. The other branch has two fixed links at its terminal and two disjoint continuations. Exact terminal flow confirms costs `2,2,1` at ages 0, 1 and 2, then one through age 12. This history runs from `(239,644)` to `(243,650)`, `(247,657)`, and `(387,937)` at age 12. All marked checks reproduce. [Two-parent branch and its round calculation](../../experiments/GROWN-END-READING-20261119-001/GROWN-END-READING-20261119-001-E001_readings/obstruction.md#several-complete-round-branches-attached-to-a-simple-core)
+
+```bash
+.venv/bin/python -B experiments/LATER-BOND-READING-20261119-001/LATER-BOND-READING-20261119-001-E001_future/replay_lifetime.py
+```
+
+[All literal histories and certificates](../../artifacts/LATER-BOND-READING-20261119-001/LATER-BOND-READING-20261119-001-E001_future/replay_lifetime.json)

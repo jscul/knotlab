@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "MERGE-BURST-20261119-001",
+    "DOUBLE-IDENT-20261119-001",
+    "DEAD-CAP-20261119-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "MERGE-BURST-20261119-001#2"
+    ]
+  },
+  "id": "REDUCE-BLOCKS-20261119-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (19 November 2026) for MERGE-BURST-20261119-001#2: prove that blocks equal to or contained in another block change nothing in the cheapest growth, the hypothesis both merge-and-burst readings (including the 2^781 one) rest on. Stop at a proof, or at a start where a contained block matters. Then MERGE-BURST-20261119-001#1 if this lands. Framed by A110. Advisor before the freeze. Serves G17.",
+  "ownership": {
+    "root": true,
+    "scope_id": "REDUCE-BLOCKS-20261119-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "Stop at a proof, or a start where a contained block matters.",
+  "title": "Blocks inside other blocks change nothing"
+}

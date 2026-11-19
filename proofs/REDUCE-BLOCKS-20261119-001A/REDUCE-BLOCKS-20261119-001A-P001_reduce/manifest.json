@@ -1,0 +1,71 @@
+{
+ "schema_version": 3,
+ "artifact_id": "REDUCE-BLOCKS-20261119-001A-P001",
+ "canonical_id": "REDUCE-BLOCKS-20261119-001A-P001",
+ "proof": "REDUCE-BLOCKS-20261119-001A-P001",
+ "ticket": "REDUCE-BLOCKS-20261119-001A",
+ "kind": "proof",
+ "status": "Partial",
+ "title": "The growth reads only the down-closure of the live-neighbour sets",
+ "claim": "Lemma R: from round 1 on, the cheapest growth reads a connected start only through its live knots, their open counts and the down-closure of its live-neighbour sets (shortage is a stall; loose distinctions interchangeable; later rounds read only parents). Corollary 1: a start and the hub realization of its maximal blocks grow identically from round 1. Corollary 2: a stage whose maximal blocks satisfy the class has its future read exactly by the identification and the branch system; MERGE-BURST's two readings are proved.",
+ "standard_statement": "Down-closure (abstract simplicial complex) of a set family.",
+ "prior_work": "DOUBLE-IDENT-20261119-001 (Lemma M), DEAD-CAP-20261119-001 (branch system), MERGE-BURST-20261119-001 (the hypothesis), BREAK-EDDIES-20261119-001 (stage identity).",
+ "dependencies": [
+  "MERGE-BURST-20261119-001",
+  "DOUBLE-IDENT-20261119-001",
+  "DEAD-CAP-20261119-001"
+ ],
+ "completion_gate": "The machine check (job.py through scripts/longrun.py, merged): H1-H3 of proof.md; the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "independence": "hublib.py builds the hub realization and the engine grows both presentations",
+  "novelty": "strengthening of Lemma M"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "Run the machine check (H1-H3)"
+ ],
+ "paths": {
+  "manifest": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/manifest.json",
+  "identity": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/identity.json",
+  "proof": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/proof.md",
+  "result": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/result.json",
+  "machine_check": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/job.py",
+  "machine_check_output": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/machine_check.json"
+ },
+ "attained_result": "Statement and proof written; machine check pending."
+}

@@ -83,3 +83,32 @@ any point of G* can be the **dropped** one, the junction whose lines are the loo
 | 1 | The transfer between kinds of junction (`JUNCTION-MAP-20261119-001#1`), once BREAK-EDDIES' verdict is in | 3/3 | 2/3 | as there | Selected · awaiting the verdict |
 | 2 | The advisor's local reading: the class after a drop depends only on the dropped knot's lines (test with six-place ring knots and knots with no loose line) | 2/3 | 3/3 | grow the dropped choices on rings with one six-place knot → stop at a rule from the dropped star alone | Alternative · deferred |
 | 3 | How often non-minimal supports occur at scale (`MANY-VALUED-20261119-001#3`) | 2/3 | 3/3 | as there | Alternative · deferred |
+
+## Final report as sent (2026-11-19 11:50 UTC)
+
+**Outcome:** Under parity, a loop's self-feeding is not in the allowed states. On all 23 eddies tested, only the original presentation feeds itself. These are the catalogue's five, the census's 13 rings, and the rings of 9 to 13 with a spare. The same states, read with a different junction counted as the implied one, only circulate, stall or close. 3 of 3 frozen predictions held. Closed, referee pending.
+
+- **Why.** Count a ring knot as the implied junction instead, and its few lines become the only loose ones. They sit on its two ring neighbours and on the old implied junction, which now holds everything else. Two loose lines there give 2 junctions a round; three close the growth.
+- **No states-only rule recovers it.** The natural rule is "drop the largest junction", the same as "fewest places". It picks the original on the rings, but that is forced by counting. On 300 random growing five-knot starts, the original is the largest in only 129. Where it isn't, the rule grows differently in 14. Any other choice changes the growth class in 221 of the 300.
+- **The two laws side by side.** Under not-all-equal the states fix the knots almost everywhere small, so distance carries the growth (the last two studies). Under parity even the eddies need a choice the states don't record.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: parity's eddies over the dropped junction | **Status:** Successful (3 of 3 held) | Only the original choice feeds itself on all 23 eddies; the fewest-places rule departs from the cheapest growth |
+| Local direction: A108 under parity | Confirmed | The growth's class depends on the dropped junction, invisible in the states |
+| Broader exploration: the growth and the canonical reading | Known alternatives | Not-all-equal: the states fix the knots almost everywhere; parity: never |
+| Long-term goal: G1 | Obstruction learned | Under parity, distance (the states) can't carry the growth's eddies |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The transfer between kinds of junction, once BREAK-EDDIES' verdict is in | 3/3 | 2/3 | as in JUNCTION-MAP | Selected · awaiting the verdict |
+| 2 | The advisor's local reading: the class after a drop depends only on the dropped knot's lines | 2/3 | 3/3 | rings with a six-place knot → stop at a rule from the dropped star alone | Alternative · deferred |
+| 3 | How often non-minimal supports occur at scale | 2/3 | 3/3 | as in MANY-VALUED | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G1 and G17 checkpoint (obstruction learned). **Assumptions:** A108 history line (the parity side is total). **Basket:** `STATES-GROWTH-20261119-001#3` taken. **Advisor:** Fable 5.2, before the freeze; its answer stayed within its text. It restated the rule as fewest places, flagged that D2 is forced on rings, and said the real test needs starts where a knot ties with or beats the implied junction (D3, held).
+
+**Referee hand-off.** The decision note is `research/DROPPED-JUNCTION-20261119-001/dropped_junction.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check `droplib.rechoice` (the completed system and each dropped choice) and one non-original choice on a ring by hand.
+
+The BREAK-EDDIES verdict hasn't arrived, so I'm holding the transfer study until it does.

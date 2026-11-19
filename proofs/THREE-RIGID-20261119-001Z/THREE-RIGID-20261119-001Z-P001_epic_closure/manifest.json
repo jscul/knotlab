@@ -1,0 +1,95 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "THREE-RIGID-20261119-001Z-P001",
+ "canonical_id": "THREE-RIGID-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "THREE-RIGID-20261119-001Z",
+ "proof": "THREE-RIGID-20261119-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: the three-way rigidity study",
+ "status": "Proved",
+ "claim": "Ledger closing THREE-RIGID-20261119-001: ticket A (Q0-Q2 held), ticket B (Theorem M proved); R3 at all sizes refuted by Codex (recorded). Referee pending. No new claim.",
+ "dependencies": [
+  "THREE-RIGID-20261119-001A",
+  "THREE-RIGID-20261119-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "THREE-RIGID-20261119-001",
+  "epic_path": [
+   "THREE-RIGID-20261119-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/THREE-RIGID-20261119-001A/THREE-RIGID-20261119-001A-E001_rigid/contract.json": "d5cecf8f2b32221308cdd032e0d781c84b21ea3a096df1b3a8d7b65c42480f00",
+  "artifacts/THREE-RIGID-20261119-001A/THREE-RIGID-20261119-001A-E001_rigid/rigid.json": "0e46dcd7ae1f93a1febafe9c1034976be0df999d8b3cc5f0988e7d513223796c",
+  "artifacts/THREE-RIGID-20261119-001A/THREE-RIGID-20261119-001A-E001_rigid/control.json": "bb432bf375559a91c4c2a938c4ef14077006fc59360ea23535b4ed8c3cab96af",
+  "proofs/THREE-RIGID-20261119-001B/THREE-RIGID-20261119-001B-P001_largest_knot/manifest.json": "898f6e93304ff3c91e6cc2bd7e38c4d727884aa7b5ec9cea547396d9fdd03946",
+  "proofs/THREE-RIGID-20261119-001B/THREE-RIGID-20261119-001B-P001_largest_knot/result.json": "d7e01dcb19b67c026f7845943b80f97723255c0fdea49388287cdd2683b8f776"
+ },
+ "paths": {
+  "manifest": "proofs/THREE-RIGID-20261119-001Z/THREE-RIGID-20261119-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/THREE-RIGID-20261119-001Z/THREE-RIGID-20261119-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/THREE-RIGID-20261119-001Z/THREE-RIGID-20261119-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/THREE-RIGID-20261119-001Z/THREE-RIGID-20261119-001Z-P001_epic_closure/result.json",
+  "check": "proofs/THREE-RIGID-20261119-001Z/THREE-RIGID-20261119-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/THREE-RIGID-20261119-001Z/THREE-RIGID-20261119-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": 3,
+ "artifact_id": "THREE-RIGID-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "THREE-RIGID-20261119-001Z",
+ "proof": "THREE-RIGID-20261119-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing THREE-RIGID-20261119-001: ticket A (Q0-Q2 held), ticket B (Theorem M proved); R3 at all sizes refuted by Codex (recorded). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "experiments/THREE-RIGID-20261119-001A/THREE-RIGID-20261119-001A-E001_rigid/contract.json": "Frozen",
+   "artifacts/THREE-RIGID-20261119-001A/THREE-RIGID-20261119-001A-E001_rigid/rigid.json": {
+    "ok": 663
+   },
+   "artifacts/THREE-RIGID-20261119-001A/THREE-RIGID-20261119-001A-E001_rigid/control.json": "run output",
+   "proofs/THREE-RIGID-20261119-001B/THREE-RIGID-20261119-001B-P001_largest_knot/manifest.json": "Proved",
+   "proofs/THREE-RIGID-20261119-001B/THREE-RIGID-20261119-001B-P001_largest_knot/result.json": "passed"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "supported",
+   "B": "proved"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

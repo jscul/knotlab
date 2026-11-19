@@ -712,6 +712,14 @@ through first-round junctions, not through the knots alone. A different, explosi
 kind also exists, in which the groups themselves keep growing and no fixed rate
 fits
 ([decision note](../research/BREAK-EDDIES-20261119-001/break_eddies.md)).
+Can the rule be extended to see them (`JUNCTION-MAP-20261119-001`, frozen run,
+referee pending)? Not by restarting it later with first-round junctions as points:
+a group of three that shares two knots with another block is not a short loop,
+because going round it again reaches the same junction, where the unrolled map
+counts a new one each time. The map gets the next round right and the one after
+wrong, wherever that overlap stands, and is exact wherever it does not. The short
+loops need a different object, a transfer between kinds of junction
+([decision note](../research/JUNCTION-MAP-20261119-001/junction_map.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

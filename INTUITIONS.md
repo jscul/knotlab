@@ -2628,10 +2628,53 @@ record writes down is one sample, and every random process that produces
 patterns has a weighting, the chances it gives them. A claim that something
 is typical has to name its weighting.
 
-**The growth law.** Start from a few parity knots that share distinctions:
-the first junctions. A distinction of a junction is **loose** while no other
-junction holds it, so it is open. A junction is **live** while it holds a
-loose distinction. In each round the law makes new junctions, all at once
+**A start.** Growth begins from a **start**: a few knots, some of which share
+distinctions with one another, and nothing else. Five knots, each sharing
+one distinction with the next and the fifth with the first (a ring), are a
+start. A study grows many
+starts, some produced at random and some built by hand, and may number them
+in the order it found them; such a number says nothing about the start itself.
+
+**Open distinctions.** A distinction that only one knot holds, shared with no
+other knot, is open: nothing outside that knot ties it down.
+
+**How a knot is added.** One fixed rule, the same everywhere, adds knots. Take
+a set of knots, each holding an open distinction, such that every two of them
+share distinctions with some common knot, but no single knot shares with all
+of them. The rule makes one new knot for that set. The new knot takes one open
+distinction from each knot of the set, so those are no longer open, and it
+brings as few fresh open distinctions as it can: enough for the next round's
+joins, and enough to make it a knot of at least three places. An open distinction that no
+such set wants gets a new knot of its own. The growth studies call every knot
+of the growing structure a **junction**, the first knots included: a junction
+is simply a knot.
+
+**Rounds.** The rule is applied everywhere at once, and then again. Each pass
+is a **round**. The numbers the growth studies report are counts: how many new
+knots each round adds.
+
+**Nobody places the knots.** No one decides where a new knot goes. Which knots
+share distinctions alone decides: a new knot appears exactly for knots that
+already share with a common knot. Three
+things are ours and could be otherwise: the rule itself (assumption A104,
+under challenge), applying it everywhere at once in rounds, and the start,
+which is one sample.
+
+**When it stops.** Growth closes when no open distinction is left. It stalls
+when a round would ask some knot for more open distinctions than it has.
+Otherwise it goes on without end.
+
+**Why the counts can explode.** When every two knots of a large group share
+with some common knot, the group offers far more sets to join than it has
+knots, and every such set gets its own new knot.
+Nothing rations the joins: in the owner's words, "a simulation, where the
+simulator has no limits" (lesson 8.3). So the count of new knots can outgrow
+every fixed power of the round number, which lesson 8.3 calls a blow-up. Lesson 8.2 says which
+starts do this.
+
+**In the records' words.** A distinction of a junction is **loose** while no
+other junction holds it, so it is open. A junction is **live** while it holds
+a loose distinction. In each round the law makes new junctions, all at once
 (assumption A104):
 
 - **Joins.** Live junctions that can be joined in pairs, each pair meeting a
@@ -2710,6 +2753,20 @@ Taking the rounds away shows what they were doing (computed, refereed):
 - **The growth lives where parts are joined.** Counted by size, each part of a
   joined start keeps exactly the growth it has alone, and 97% to 99.9% of the
   junctions of size 10 or more span the join.
+
+**One structure, read outward (reading).** Does the structure change over
+time, adding logic to itself? As computed, yes: each round adds knots. But
+where the theorem above holds, each knot is a cluster of one fixed unrolled
+map, and its round is the size of its cluster less one, so nothing has to
+change over time. The rounds are then us reading one fixed structure, perhaps
+unlimited, outward from its smallest pieces, a layer at a time. The start is
+the piece we stand on, and a round is how far we have read. On this reading a
+blow-up is the structure getting far richer a little further on, and asking
+whether a growth ends asks whether the whole structure is finite.
+The owner asked, on 19 November 2026, "The structure changes over time? Like
+it adds more logic to itself?", and accepted this reading: "This makes sense,
+yes" (assumption A110). It rests on the theorem's class; for the explosive
+starts of lesson 8.2 it is open.
 
 ### 8.2 Four kinds of growth
 
@@ -3463,6 +3520,10 @@ that earlier records used in two senses.
   width). The pattern the joining rule grows is the down-closed sets of this
   order (the literature's distributive lattice of ideals). Breadth is not the
   dimension: balls can grow more slowly than the breadth allows.
+- **Start.** The few knots a growth begins from, some of which share
+  distinctions, and nothing else (lesson 8.1). A study's number for a start
+  gives only the order in which it was found. The intuition: the piece of one
+  structure that the rounds read outward from.
 - **Loose; live; dead knot.** In growth by the joining rule (lesson 8.1), a
   distinction of a junction is loose while no other junction holds it, so it
   is open. A junction or knot is live while it holds a loose distinction, and

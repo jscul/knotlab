@@ -94,6 +94,25 @@ advisor's construction, checked by computation in ticket B's control (`control.j
   which no reached stage of round ≥ 1 allows (PARENT-RULE Lemma 1: a new junction meets each parent once). So it does not decide
   Claim B for reached stages.
 
+## 3a. The same mechanism on a reached stage (Codex)
+
+Codex's `GROWN-END-SWAP-20261119-001` (refereed) gives a reached stage with the same mechanism.
+- **The stage.** It is round 1 from a six-junction start in which three pairs of junctions meet twice.
+- **The dead junction.** A = {0, 1, 2, 3} holds no loose distinction and splits evenly: {0, 1} are shared with one holder and
+  {2, 3} with another.
+- **The swap.** Swapping 0 and 2 keeps every distance and the round's reading.
+- **The failure.** After the next round, a join with one fresh distinction lies on the first holder's side, and its two parents
+  are held by a bond {0, 1, …} of size 4 that ties with A's own distinctions. In Lemma C's terms the bond's discount makes
+  T′(0, 1) = 2. Every bond holding 2 and 1 must hold all of A's distinctions and holds no parent set, so T′(2, 1) stays 3.
+- **Reproduction.** Ticket B reproduces it exactly in this program's engine.
+
+So Claim B is false on reached stages whose start junctions meet twice. What the counterexample uses:
+- three distinctions already shared at the start (0, 1, 2), so the swap is free;
+- a dead holder A, whose distinctions bound a bond holding no live junction;
+- a join's discount on one side of the tie.
+
+The table records the tie but not which live junctions each tied bond holds.
+
 ## 4. Where the proof stalls for reached stages
 
 The next table reads, for each bond, which live junctions it holds (Lemma C), and the table records only the least bond through
@@ -101,7 +120,8 @@ each pair. Claim B for reached stages would follow from a tie lemma. Suppose a b
 bond holding more than (k + f)/2 of some parent set. Then no isometry keeping the reading trades a pair read by both for a pair
 read only by one. That lemma is not proved here.
 
-Proposition X's mechanism names the smallest configuration to hunt in reached stages:
+Proposition X's mechanism names the configuration to hunt in reached stages (ticket B found none from starts of 3 or 4 knots;
+Codex's reached cases need six or seven):
 - a junction with no loose distinction whose distinctions split evenly between two holders, giving a class-breaking swap that is
   a table symmetry;
 - a tie between its star and a bond holding a full parent set with k > f.

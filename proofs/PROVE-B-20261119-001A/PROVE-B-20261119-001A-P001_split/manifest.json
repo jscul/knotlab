@@ -5,7 +5,7 @@
  "proof": "PROVE-B-20261119-001A-P001",
  "ticket": "PROVE-B-20261119-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "The split formula, offshoots, and a counterexample to Claim B for arrangements in general",
  "claim": "Lemma C: bonds of the next junction graph are families of disjoint non-adjacent old bonds glued by new junctions, with the cost |delta(S)| + sum over inside new junctions of f + |P\\S| - |P cap S|. Lemma O: offshoots never change least bonds through old pairs; offshoot-only rounds extend any isometry keeping loose per live junction. Proposition X: a 7-junction connected arrangement whose table symmetry keeps the round reading but does not extend (Claim B false for arrangements in general; not a reached stage).",
  "standard_statement": "Splitting a vertex of a graph: cocircuits of the split graph from families of cocircuits of the original plus new vertices, with a discount formula; pendant new vertices preserve least cocircuits; cocircuit-distance isometries preserving the attachment need not extend.",
@@ -15,7 +15,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "proofs written before the hunt; Proposition X found by the advisor and checked by computation; referee pending",
+  "status": "Lemmas C and O proved; Proposition X found by the advisor and checked by computation (ticket B's control, 32 of 32 symmetries fail); Codex's reached instances reproduced (codex_reproduce.json); referee pending",
   "independence": "computation checks Proposition X; same task authorship",
   "novelty": "read off the round; no literature search run"
  },
@@ -54,13 +54,13 @@
  },
  "source_contribution": 0,
  "remaining_obligations": [
-  "control check (ticket B)",
   "referee"
  ],
  "paths": {
   "manifest": "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/manifest.json",
   "identity": "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/identity.json",
-  "proof": "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/proof.md"
+  "proof": "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/proof.md",
+  "result": "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/result.json"
  },
- "attained_result": "Lemma C and Lemma O proved; Proposition X stated with its verification pending in ticket B."
+ "attained_result": "Lemma C and Lemma O proved; Proposition X verified; Codex reached counterexamples recorded and reproduced."
 }

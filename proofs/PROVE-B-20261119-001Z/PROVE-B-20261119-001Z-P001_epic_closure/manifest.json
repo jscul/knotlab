@@ -1,0 +1,96 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "PROVE-B-20261119-001Z-P001",
+ "canonical_id": "PROVE-B-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "PROVE-B-20261119-001Z",
+ "proof": "PROVE-B-20261119-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: the Claim B study",
+ "status": "Proved",
+ "claim": "Ledger closing PROVE-B-20261119-001: ticket A (Lemmas C, O, Proposition X), ticket B (P0, P1 held; part M pending). Referee pending. No new claim.",
+ "dependencies": [
+  "PROVE-B-20261119-001A",
+  "PROVE-B-20261119-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "PROVE-B-20261119-001",
+  "epic_path": [
+   "PROVE-B-20261119-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/manifest.json": "80e5262c7bb8fe128d12635d07fbbcf645c6338c25c798de31990df1e8c9f928",
+  "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/result.json": "b0670a3f0bf670ce95b2376d2c269666d1f6f380c75db52fe9b368311eaa681c",
+  "experiments/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/contract.json": "9d55dffa9098f1ef0610cd004c19af947ef8a9e98b4a23f621671988bd7de3d9",
+  "artifacts/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/reached.json": "663d2a1a4401636d566bdbd3881b92859cdd82eafde9c3da2542ed8e87295cc8",
+  "artifacts/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/control.json": "caf9cc6816a3051f9b8cc2a7761d34282977102dccb05723274fb04b0b1c6757",
+  "artifacts/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/codex_reproduce.json": "02fb3b69de6b583d89d6045f200ee974f76e102c6255afa86c83ba469c6990a7"
+ },
+ "paths": {
+  "manifest": "proofs/PROVE-B-20261119-001Z/PROVE-B-20261119-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/PROVE-B-20261119-001Z/PROVE-B-20261119-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/PROVE-B-20261119-001Z/PROVE-B-20261119-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/PROVE-B-20261119-001Z/PROVE-B-20261119-001Z-P001_epic_closure/result.json",
+  "check": "proofs/PROVE-B-20261119-001Z/PROVE-B-20261119-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/PROVE-B-20261119-001Z/PROVE-B-20261119-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

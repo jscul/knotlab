@@ -1,0 +1,33 @@
+{
+ "schema_version": 3,
+ "artifact_id": "PROVE-B-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "PROVE-B-20261119-001Z",
+ "proof": "PROVE-B-20261119-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing PROVE-B-20261119-001: ticket A (Lemmas C, O, Proposition X), ticket B (P0, P1 held; part M pending). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/manifest.json": "Proved",
+   "proofs/PROVE-B-20261119-001A/PROVE-B-20261119-001A-P001_split/result.json": "passed",
+   "experiments/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/contract.json": "Frozen",
+   "artifacts/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/reached.json": "run output",
+   "artifacts/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/control.json": "run output",
+   "artifacts/PROVE-B-20261119-001B/PROVE-B-20261119-001B-E001_hunt/codex_reproduce.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

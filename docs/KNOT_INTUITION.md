@@ -624,6 +624,12 @@ renaming) and other allowed states, and they keep one table for at least two
 more rounds. Where junctions meet at most once, every reached pair with one
 table also has the same allowed states
 ([decision note](../research/GROWN-PAIR-20261119-001/grown_pair.md)).
+What reading does catch them (`THREE-WAY-20261119-001`, computed, referee
+pending)? The smallest consequence holding three distinctions at once: with it
+added, every pair with the same distances and other allowed states found so far
+comes apart, static or grown. What it cannot add is which junction holds what
+when the allowed states agree; only the growth reads that
+([decision note](../research/THREE-WAY-20261119-001/three_way.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

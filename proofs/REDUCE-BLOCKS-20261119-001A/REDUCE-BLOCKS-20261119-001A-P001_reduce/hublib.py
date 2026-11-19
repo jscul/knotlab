@@ -42,6 +42,8 @@ def live_and_blocks(sizes, edges):
 
 def hub_realization(sizes, edges):
     live, opn, maximal = live_and_blocks(sizes, edges)
+    if not live:
+        return [], []
     idx = {k: i for i, k in enumerate(live)}
     e = []
     nxt = len(live)
@@ -105,6 +107,11 @@ def hub_realization(sizes, edges):
 
 
 def grow_keys(sizes, edges, T, maxj=200000):
+    if not edges:
+        # amendment (after the census cases errored): a start with no shared distinction. When it has no live knot, H(X) is
+        # empty and makes nothing; the engine cannot build an empty presentation.
+        if not sizes:
+            return ['closed']
     P = J.S.from_junctions(J.stars_from(sizes, edges))
     P.linalg = False
     out = []

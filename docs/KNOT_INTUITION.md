@@ -927,6 +927,15 @@ other 14 could not be followed far enough within 6 GB and 15 minutes. Their
 overlapping groups keep two large blocks sharing two knots, which no current
 reading covers. None was shown to keep growing
 ([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)).
+Why can a stage be read through its largest blocks alone
+(`REDUCE-BLOCKS-20261119-001`, proof, referee pending)? Because the growth reads a
+start only through which sets of live knots share some common neighbour, and
+the live knots' open counts. A block that equals another, or lies inside one,
+adds no such set. So every start can be rebuilt with one dead hub per largest
+block, and the rebuilt start grows exactly like the original: all 26,441
+census arrangements, 998 random starts and 62 explosive stages agree round by
+round, and none differs. That makes both merge-and-burst readings proved
+([decision note](../research/REDUCE-BLOCKS-20261119-001/reduce_blocks.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

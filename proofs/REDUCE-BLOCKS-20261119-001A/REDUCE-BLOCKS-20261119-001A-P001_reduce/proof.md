@@ -1,6 +1,6 @@
 # The growth reads only the down-closure of the live-neighbour sets
 
-Status: Partial
+Status: Proved
 
 Ticket `REDUCE-BLOCKS-20261119-001A`, 19 November 2026, by Claude, on the coordinator's go-ahead for `MERGE-BURST-20261119-001#2`.
 - **What it builds on.** `DOUBLE-IDENT-20261119-001A-P001`: Lemma M, the identification for multigraphs, and the structural implied
@@ -98,4 +98,18 @@ So MERGE-BURST's readings are proved:
 
 ## Validation
 
-To be filled from the run.
+The machine check ran after the freeze through the shared runner: `REDUCE-BLOCKS-A1`, `runs/reduce-blocks`. Each comparison ran in a
+child limited to 3 GB and 120 s.
+
+**One amendment, logged.** The census cases errored on arrangements with no live knot, whose hub realization is empty and which
+the engine cannot build. `hublib` now returns "makes nothing" for an empty H(X); no comparison changed. The census cases were rerun
+with `job_census.py` (`runs/reduce-blocks-census`), and `merge.py` takes both directories.
+
+| # | What ran | Result |
+| --- | --- | --- |
+| H1 | every touch-census arrangement, 26,441, stalls included, rounds 1–6 | **26,441 of 26,441 equal** |
+| H2 | 1,000 random starts of 6–13 knots within seven places, no class filter, rounds 1–6 | **998 equal**, 2 stopped by the child's limits, none differ |
+| H3 | stages 1–6 of EXPLOSIVE's 16 explosive starts, against their H, 3 rounds each | **62 equal**, 34 stopped by the limits (12 time, 22 memory), none differ |
+
+No comparison differs. Corollary 2 makes MERGE-BURST's two readings proved: the closed case's block of 9, and start-04's block of
+781.

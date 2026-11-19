@@ -5,7 +5,7 @@
  "proof": "REDUCE-BLOCKS-20261119-001A-P001",
  "ticket": "REDUCE-BLOCKS-20261119-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "The growth reads only the down-closure of the live-neighbour sets",
  "claim": "Lemma R: from round 1 on, the cheapest growth reads a connected start only through its live knots, their open counts and the down-closure of its live-neighbour sets (shortage is a stall; loose distinctions interchangeable; later rounds read only parents). Corollary 1: a start and the hub realization of its maximal blocks grow identically from round 1. Corollary 2: a stage whose maximal blocks satisfy the class has its future read exactly by the identification and the branch system; MERGE-BURST's two readings are proved.",
  "standard_statement": "Down-closure (abstract simplicial complex) of a set family.",
@@ -19,7 +19,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "status": "written in full; statement checked by the advisor before the freeze; machine check H1-H3 passed (one logged amendment for empty hub realizations); referee pending",
   "independence": "hublib.py builds the hub realization and the engine grows both presentations",
   "novelty": "strengthening of Lemma M"
  },
@@ -56,9 +56,7 @@
   "physical_ontology": false
  },
  "source_contribution": 0,
- "remaining_obligations": [
-  "Run the machine check (H1-H3)"
- ],
+ "remaining_obligations": [],
  "paths": {
   "manifest": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/manifest.json",
   "identity": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/identity.json",
@@ -67,5 +65,5 @@
   "machine_check": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/job.py",
   "machine_check_output": "proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/machine_check.json"
  },
- "attained_result": "Statement and proof written; machine check pending."
+ "attained_result": "Lemma R and Corollaries 1 and 2 proved; machine check H1-H3 passed (26,441 census, 998 random, 62 explosive stages equal; none differ)."
 }

@@ -1,4 +1,5 @@
-"""Merge REDUCE-BLOCKS-20261119-001A-P001's machine check.  python3 -B merge.py <runner out dir> <machine_check.json> <result.json>"""
+"""Merge REDUCE-BLOCKS-20261119-001A-P001's machine check.  python3 -B merge.py <out dir>[,<out dir>...] <machine_check.json> <result.json>
+(a later directory's ok case replaces an earlier error: the census amendment run)"""
 import json
 import sys
 from collections import Counter
@@ -10,7 +11,11 @@ from longrun import load_results  # noqa: E402
 
 
 def main():
-    R = load_results(sys.argv[1])
+    R = {}
+    for d in sys.argv[1].split(','):
+        for cid, r in load_results(d).items():
+            if cid not in R or R[cid].get('status') != 'ok':
+                R[cid] = r
     not_ok = [c for c, r in R.items() if r.get('status') != 'ok']
     T = {'census': Counter(), 'rand': Counter(), 'stage': Counter()}
     bad = {'census': [], 'rand': [], 'stage': []}

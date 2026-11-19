@@ -39,8 +39,8 @@ pending.**
   - The sample is EXPLOSIVE's, under its weighting. Nothing here generalises to the kind.
 - **What is proved, what is computed, what is open.**
   - **Proved (refereed):** the stage identity and the branch system.
-  - **The study's hypothesis, shared by both readings:** a block equal to or inside another changes nothing. The control's
-    growth supports it; there is no proof yet.
+  - **The study's hypothesis, shared by both readings:** a block equal to or inside another changes nothing. It is now proved by
+    `REDUCE-BLOCKS-20261119-001` (referee pending), so both readings are proved.
   - **Computed on that hypothesis:** start-04's reading.
   - **Open:** the 14.
 

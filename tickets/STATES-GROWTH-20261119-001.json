@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "DISTANCE-ORDER-20261117-001",
+    "FRESH-COUNT-20261118-001",
+    "NAE-GROWTH-20261119-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "NAE-GROWTH-20261119-001#1"
+    ]
+  },
+  "id": "STATES-GROWTH-20261119-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (19 November 2026) on NAE-GROWTH-20261119-001#1, challenging A108 (the cheapest growth reads which junction holds which distinction, not only the allowed states): define a growth that reads only the allowed states (for instance on a presentation fixed by them), check that it is well defined (same allowed states give the same growth up to renaming), compare it with the cheapest growth where the states fix the presentation, and see what it does on the same-state pairs that split the cheapest growth. Stop at a states-only law that is well defined on all the test stages, or at a pair of same-state stages no states-only rule can grow alike. Bears on the owner's premise that distance is the only form of information. Serves G17 and G1.",
+  "ownership": {
+    "root": true,
+    "scope_id": "STATES-GROWTH-20261119-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "Stop at a well-defined states-only law, or at a same-state pair no states-only rule can grow alike.",
+  "title": "A growth that reads only the allowed states"
+}

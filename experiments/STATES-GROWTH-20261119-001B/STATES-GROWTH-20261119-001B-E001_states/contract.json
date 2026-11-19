@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "STATES-GROWTH-20261119-001B-E001",
+ "ticket": "STATES-GROWTH-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Is there a growth that reads only the allowed states (the cheapest growth on the minimal not-all-equal constraints), where is it defined, how does it compare with the cheapest growth, and is parity's looseness a choice of dropped junction (Whitney)?",
+ "public_inputs": {"code": "statelib.py (ba866c84cefbb42da93e0d6f4f786027a411ef12f9cc18887ab6c30b5f961931), job.py (53e1baa46a9158fa83624b61e2c6587128e19717028270c8e02c98ff88b0d234), merge.py (55a8b3c44e83b8f014eeb1341170eaaea091e058550a5379488a9c780ffc89f1) (sha256)", "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>", "reused": "NAE-GROWTH-20261119-001B naelib.py, bondlib.py, merge.py and its runs; TOUCH-CENSUS arrlib"},
+ "forbidden_inputs": ["Changing a definition, a case or a prediction after reading any frozen comparison"],
+ "primary_observable": "A1, B1, C1-C3, D1, D2 of research/STATES-GROWTH-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the K4 replay and the duplicate pair (A1); the saturated trajectories (C1)",
+ "predictions": {"A1": "K4 replay", "B1": "saturated share 0.85-0.92", "C1": "agree while saturated", "C2": "disagreements follow unsaturated stages", "C3": "undefined only from triangles or double touches", "D1": "Whitney", "D2": "at least half iso"},
+ "decision_rules": {"each": "held iff no exception"},
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under an hour",
+ "disclosed_exploration": "pilot/ (core against junctions on 1,594 stages, the forcing test, a few trajectories, the K4 replay)",
+ "amendments": []
+}

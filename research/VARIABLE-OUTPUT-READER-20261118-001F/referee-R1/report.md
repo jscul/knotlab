@@ -57,10 +57,10 @@ The bond table was checked against the referee's GF(2) table from 001D-R1 on 30 
 | 22 | 112,335 | 11,445 | 46,004 | 0 | 0 |
 | 23 | 273,842 | 30,541 | 121,697 | 0 | 0 |
 | 24 | 672,424 | 81,484 | 323,484 | 0 | 0 |
-| 25 | 1,661,752 | *pending* | *pending* | *pending* | *pending* |
+| 25 | 1,661,752 | 216,788 | 856,726 | 0 | 0 |
 
 - **Every count equals the study's,** including by junction number at width 20.
-- **Width 25 is pending.** Its type count matches; the table checks are still running. This is a stress test pending, and it will be folded in when it finishes.
+- **Width 25 is now folded in** (it was pending at first publication). Its 1,661,752 types match, with 0 isometric pairs and 0 symmetries moving a legal triple.
 - **The tables are distinct.** At every width the referee's refinement invariant already gives every type a different value. An
   isometry preserves the invariant, so no two types have isometric full tables.
 - **No symmetry search was capped.**
@@ -321,7 +321,7 @@ Run from each folder.
 | Folder | Command | Wall time |
 | --- | --- | --- |
 | 001F | `referee_f.py census 23 20` | 3 min |
-| 001F | `referee_f.py census 25 24` | over 30 min, memory-capped; still running |
+| 001F | `referee_f.py census 25 24` | 40 min, memory-capped (MemoryMax 36G) |
 | 001F | `referee_f.py hard` | 1 s |
 | 001F | `referee_f.py w18` | 1 s |
 | 001G | `referee_g.py witnesses` | 1 s |

@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PARENT-RULE-20261119-001B-E001",
+ "ticket": "PARENT-RULE-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Do backed pairs (P1, P1+) and live junctions never meeting (P2) hold at every reached census stage, are reached open meet-once tables rigid, and does any other-states collision among legal meet-once arrangements of at most 7 junctions have both sides backed or peeling to depth 1 or 2?",
+ "definitions": {
+  "P1": "every two junctions a live junction meets also meet a junction other than it",
+  "P1+": "that junction holds no loose distinction",
+  "P2": "live junctions never meet",
+  "depth": "successive peels (remove live junctions) at which P1+ and P2 hold",
+  "strata": "closed / pendant-only / backed",
+  "Q": "P1 required of closed junctions instead"
+ },
+ "public_inputs": {
+  "code": "plib.py (sha256 f89a64c34437564088509510150b35b0b444d47a7b811ad33322709b39d9ca6b), census_job.py (sha256 6a8fcf7855ed106d70994ccb7840e861657d297b469c8fb339a5a35f1423f6a8), static_job.py (sha256 584e8ac6bcb58ffbc99d2713c86a67d457553094baf8c85a627aede80ef147a7), static_pairs.py (sha256 a40b2c47e54c07cc8faffee7218a473a5e5b6331c459f2bb867906bc20ba71c9)",
+  "run": "scripts/longrun.py launch census_job.py --out runs/parent-census; scripts/longrun.py launch static_job.py --out runs/parent-static (8 workers, 16G cap each); .venv/bin/python -B static_pairs.py runs/parent-static",
+  "reused": "CENSUS-READ-20261118-001A job.py and exact_table_v2.py; networkx graph atlas"
+ },
+ "forbidden_inputs": [
+  "Changing C1, C2, R1, S0, S1a-S1c after the runs"
+ ],
+ "primary_observable": "C1, C2, R1, S0, S1a-S1c",
+ "cheapest_meaningful_control": "S0: the known pop-0308 pair found as other states; Q as a matched control property",
+ "predictions": {
+  "C1": "no violation",
+  "C2": "no pair farther",
+  "R1": "open meet-once stages <= 14 junctions rigid",
+  "S0": "other-states collisions exist, pop-0308 among them",
+  "S1a": "no other-states pair both backed (P1) in the backed stratum",
+  "S1b": "none with both depth >= 1",
+  "S1c": "none with both depth >= 2"
+ },
+ "decision_rules": {
+  "each": "as stated; undecided reported"
+ },
+ "stop_rule": "One run each.",
+ "runtime": "about an hour (census), minutes (static)",
+ "amendments": []
+}

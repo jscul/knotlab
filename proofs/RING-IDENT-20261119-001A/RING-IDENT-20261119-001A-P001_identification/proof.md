@@ -23,8 +23,8 @@ by the thread.
   the distinctions it was given; its parents are the group's members.
 - **Fresh distinctions.** A new junction with p parents and demand d gets max(d, 3 − p, 1) fresh distinctions. If it takes every
   loose distinction of the presentation (it is *implied*), the floor does not apply and it gets exactly d, which is 0 only when d = 0
-  (`freelib.floored` of `FRESH-COUNT-20261118-001`). Under (S5) every new junction has d ≥ 1, and p ≥ 2 or d ≥ 2, so both readings
-  give d (referee R1, point a). Its demand is the number of next-round groups containing it, computed after the round with every new
+  (`freelib.floored` of `FRESH-COUNT-20261118-001`). Under (S5) every new junction has d ≥ 1, and p ≥ 2 or d ≥ 2, so the floor
+  and the implied rule both give d. (Referee R1's point (a) suggested another reading of the rule; its referee later withdrew it.) Its demand is the number of next-round groups containing it, computed after the round with every new
   junction counted live.
 
 **The start.**

@@ -799,12 +799,12 @@ less than the number of chains in one piece: two chains in one parity class give
 the census's typical two dimensions
 ([proof](../proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md)).
 And when a piece of the map finishes while another still grows
-(`RELAY-IDENT-20261119-001`, proof and census readout, referee pending)? Its
+(`RELAY-IDENT-20261119-001`, proof and census readout, refereed)? Its
 finished top is not implied, so the floor gives it one fresh distinction, and
 from there it grows like a knot with one open distinction: one point carrying two
 endless chains. So a finished piece always counts as two chains, and a tree
 start's dimension is the largest number of chains in one piece. That is why two
-is typical: on the census's growing tree-shaped starts, 93% are two-dimensional,
+is typical: on the census's growing simple trees, 91% are two-dimensional,
 because a piece without chains relays and a one-dimensional start needs each
 piece to hold exactly one chain
 ([decision note](../research/RELAY-IDENT-20261119-001/relay_ident.md)).

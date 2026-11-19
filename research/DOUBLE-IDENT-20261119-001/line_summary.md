@@ -34,12 +34,14 @@ its two pieces holds exactly one chain.
 | --- | --- | --- | --- |
 | [RING-IDENT](../RING-IDENT-20261119-001/ring_ident.md) | Junctions are the clusters of the unrolled map, every round, with parents and open distinctions. It rests on one inequality: a cluster and a shifted copy fit only in a cluster at least four points larger, because no loop passes through fewer than four knots | RING-PAIR's four conditions, plus a loop in the knot graph. Without the loop the rule fails inside RING-PAIR's stated scope (two stars joined at their centres): a Narrowing of RING-PAIR | Confirmed line by line |
 | [CHAIN-IDENT](../CHAIN-IDENT-20261119-001/chain_ident.md) | The floor's endless chains hang from the knots' own leftover points, so they belong to the map. For tree-shaped starts the count per round is eventually a polynomial whose degree is one less than the most chains in a piece | Drops the no-floor conditions; needs every live piece to be infinite | Confirmed line by line (its control count corrected, not a block) |
-| [RELAY-IDENT](../RELAY-IDENT-20261119-001/relay_ident.md) | A finished piece's top is not implied while another piece grows, so it carries a relay: k junctions in the k-th round after the top. A lone finished piece closes | Drops the infinite-piece condition | **Referee pending** |
+| [RELAY-IDENT](../RELAY-IDENT-20261119-001/relay_ident.md) | A finished piece's top is not implied while another piece grows, so it carries a relay: k junctions in the k-th round after the top. A lone finished piece closes | Drops the infinite-piece condition | Confirmed line by line (the tally's reach stated: its 93% counts double-touch trees, which rest on DOUBLE-IDENT; simple trees 91%) |
 | [DOUBLE-IDENT](double_ident.md) | Knots touching twice or more change nothing but the open counts, so all of the above holds for every multiplicity. A start with a single loose distinction closes at round 1 | Drops simplicity. The two block conditions are read on live knots, and at least two loose distinctions are needed | **Referee pending** |
 
 ## On what share of the census
 
-The touch census has 26,441 arrangements of up to five knots. 15,431 do not stall at once.
+The touch census has 26,441 arrangements of up to five knots. 15,431 do not stall at once. The figures below rest on DOUBLE-IDENT,
+whose referee is pending, since most census arrangements have knots touching twice. On simple knot graphs alone (RING-IDENT to
+RELAY-IDENT, all confirmed), the growing trees are two-dimensional in 266 of 292.
 - **The class** (no first-round group of three, no two live knots with two common neighbours, at least two loose distinctions)
   holds 11,512 arrangements. All of them agree with the theorem round by round, in each junction's parents and fresh count.
 - **Two more groups behave exactly as stated:** 727 with one loose distinction close at round 1, and 234 have none. With them, 12,473

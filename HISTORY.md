@@ -4,6 +4,14 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: relays refereed
+
+- The relay proof (`RELAY-IDENT-20261119-001`, [decision note](research/RELAY-IDENT-20261119-001/relay_ident.md)) was refereed line
+  by line and confirmed: a finished piece's top carries one point with two endless chains while another piece grows, and a tree
+  start's dimension is the largest number of chains in one piece, a finished piece counting two.
+- **Clarified (not a block).** "93% of growing tree-shaped starts are two-dimensional" counts trees whose knots touch twice, which
+  rest on the double-touch extension. Among the simple trees this proof covers, it is 91% (266 of 292).
+
 ## 19 November 2026: the identification extended to knots touching twice
 
 - The growth reads a start only through which live knots neighbour which, and how many open distinctions each live knot has. So

@@ -6,7 +6,8 @@ Ticket `RELAY-IDENT-20261119-001A`, 19 November 2026, by Claude, on the coordina
 completes `CHAIN-IDENT-20261119-001A-P001` by dropping its (S5⁺). The advisor checked the statement before the freeze. Its fixes
 are folded in: step 3's invariant over all pieces, the relay as the pendant rule applied to the top, and the small cases written
 out.
-`machine_check.py` is a separate algorithm in the same task. Referee pending.
+`machine_check.py` is a separate algorithm in the same task. **Refereed:** report R1, confirmed line by line, no Block; its
+wording point on the tally folded in.
 
 ## Setting
 
@@ -135,8 +136,10 @@ Two is typical for small trees because a class without such leaves always relays
 has dimension at least two, and more than two needs three such leaves in one class, which takes at least seven knots.
 - **The census tally** (ticket B, `experiments/RELAY-IDENT-20261119-001B/`). On the touch census's simple trees that do not stall,
   this dimension equals the measured one in 307 of 307.
-- **Tree-shaped growths.** Every growing tree-shaped arrangement of up to five knots has dimension 1 or 2, and 3,753 of 4,055 have
-  two. A relay is part of the reason in 2,678 of them.
+- **Tree-shaped growths.** Every growing tree-shaped arrangement of up to five knots has dimension 1 or 2.
+  - Among the simple ones, which this proof covers with d_k counted among live knots, 266 of 292 have two, and a relay is part of
+    the reason in 244.
+  - Counting double touches it is 3,753 of 4,055 (a relay in 2,678). That figure rests on `DOUBLE-IDENT-20261119-001`.
 
 ## Validation
 

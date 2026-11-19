@@ -1,7 +1,8 @@
 # Relays: the count when a finished piece goes on, and why two is typical
 
 Epic `RELAY-IDENT-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-IDENT-20261119-001#1`, with
-the census tally as its short follow-up. Goal G17. **Referee pending.**
+the census tally as its short follow-up. Goal G17. **Refereed:** report [R1](referee-R1/report.md), Theorems 4 and 5 and Corollary 6 confirmed line by line, no Block; one
+wording point on the tally's reach folded in on 19 November (see Referee).
 
 **Record.**
 - **The proof** (ticket A): [proof.md](../../proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/proof.md), with
@@ -25,11 +26,15 @@ the census tally as its short follow-up. Goal G17. **Referee pending.**
     with four legs, whose counts are C(t + 3, 3) + t + 1.
 - **So a tree start's dimension is simple.** It is the largest number of chains in one piece, and a finished piece counts as two.
 - **Why two is typical.** This is the sentence for the census.
-  - Every growing tree-shaped start of up to five knots is one- or two-dimensional, and 93% are two-dimensional (3,753 of 4,055).
+  - Every growing tree-shaped start of up to five knots is one- or two-dimensional. Among the simple growing trees, which this
+    proof covers, 91% are two-dimensional (266 of 292). Counting the trees whose knots touch twice it is 93% (3,753 of 4,055), but
+    that figure rests on `DOUBLE-IDENT-20261119-001`'s extension (corrected wording, referee R1).
   - A start can only be one-dimensional if each of its two pieces has exactly one chain. If either piece has none, it relays and
     feeds two. More than two needs three chains in one piece, which takes at least seven knots.
-  - So two is what small trees almost always give, and in 71% of them a relay is part of the reason (2,678 of 3,753).
-  - The rule matches the census's measured dimension on all 307 simple trees. On tree-shaped starts with knots touching twice it
+  - So two is what small trees almost always give. A relay is part of the reason in 244 of the 266 simple ones, and in 2,678 of the
+    3,753 when double touches are counted; 2,434 of those are double-touch trees, outside this proof.
+  - The rule matches the census's measured dimension on all 307 simple trees. 36 of them are not bare plus surplus: a dead knot has
+    a live candidate there. They agree too, with d_k counted among the live knots, which is how the tally reads it. On tree-shaped starts with knots touching twice it
     matches 3,980 of 4,012, outside the proof; the 32 others have two knots sharing three or four distinctions.
 - **What it leaves open.** These tree-shaped starts are 39% of the census's two-dimensional growths (3,753 of 9,564). The other 61%
   have a cycle in their underlying graph. The first version said "a cycle of three or four knots, where the proofs' conditions
@@ -42,6 +47,21 @@ the census tally as its short follow-up. Goal G17. **Referee pending.**
 | # | Prediction | Verdict | Reading |
 | --- | --- | --- | --- |
 | T1 | on simple census trees that do not stall, Theorem 5's dimension equals the measured one | **held** | 307 of 307 (disclosed pilot of the same computation) |
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread, read line by line, with its own
+model to round 9. No study code was run.
+- **Confirmed.** Theorems 4 and 5 and Corollary 6. Its own model agrees on 218 of 218. Theorem 5 holds on all 94 trees of 2 to 9
+  knots. The path of seven and the four-legged spider regrow as stated. Its tally recount gives 307 agree, 119 stall, 0 differ, and
+  3,753 of 4,055.
+- **Folded in (wording, not a block).** The tally reaches beyond the proofs' Setting.
+  - 36 of the 307 simple trees are not bare plus surplus. "The proofs use only open_k and d_k" now says "with d_k counted among live
+    knots".
+  - The 93% and the 2,678 include trees with double touches, so they rest on `DOUBLE-IDENT-20261119-001`. Among the simple growing
+    trees the share is 266 of 292 (91%).
+- **Its own correction.** Its earlier points on the fresh rule in RING-IDENT and CHAIN-IDENT were mistaken: `freelib.floored` gives
+  exactly d at an implied junction, as the proofs said. Logged in `docs/CORRECTIONS.md`.
 
 ## Known results, and what this adds
 

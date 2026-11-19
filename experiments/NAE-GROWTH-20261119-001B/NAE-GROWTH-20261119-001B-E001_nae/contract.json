@@ -1,0 +1,44 @@
+{
+ "schema_version": 1,
+ "experiment_id": "NAE-GROWTH-20261119-001B-E001",
+ "ticket": "NAE-GROWTH-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under the not-all-equal law, does the cheapest growth equal parity's except at parity's closures (which relay into two-chain tails), and do bond tables determine who joins whom?",
+ "definitions": {
+  "growth": "FRESH-COUNT's policy and fewest counts (joinlib/fastlib), implied by SAT under not-all-equal (naelib) and structurally under parity",
+  "bond distance": "least non-free set of distinctions holding both, minus one (bondlib, exact on stages of at most 15 distinctions)"
+ },
+ "public_inputs": {
+  "code": "naelib.py (sha256 082bfcbcfd4ee648b338482d50777b1ba805a642297bb02aa9d051809b04cb52), bondlib.py (sha256 cdfdb85591af451641efd600d00748f8ce665cac74effc73bc481011f1faffbb), job.py (sha256 d2070f8d5f1980b29e6247e49ddc1256e89a95314c28361792ccfcfbe9056758), merge.py (sha256 4da31e2dd3005e8da018f1486dee83430be153090292068ce32487adbd1ebc4c), checks.py (sha256 0a9bc152f570dc6ca0846131f8b2a91329eec02e8595e847f20b57d189ae54b9)",
+  "run": "scripts/longrun.py launch job.py (6 workers) under .venv/bin/python (pysat); python3 -B merge.py <out dir> <results.json>",
+  "reused": "TOUCH-CENSUS-20261118-001B arrlib.py (enumeration); JOIN-GROWTH-20261118-001B joinlib.py, fastlib.py; FRESH-COUNT freelib (policy); BOND-NEXT-JOIN-20261117-001 check_rearrangements.py (reader control)"
+ },
+ "forbidden_inputs": [
+  "Changing the law, the policy, a case or a prediction after reading any comparison; any difference is a failure, not a new exclusion"
+ ],
+ "primary_observable": "P1-P5 and B1-B5c of research/NAE-GROWTH-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "parity on the same starts by the same code; gates G1-G6 (checks.py, checks_output.json)",
+ "predictions": {
+  "P1": "no parity-implied junction: identical",
+  "P2": "parity closures relay: k (or k + 1) at T + k",
+  "P3": "no not-all-equal junction implied; the lemma's hypotheses hold",
+  "P4": "parity implies only the closing top",
+  "P5": "pilot starts identical, lone knots by P2",
+  "B1": "tree stages: equal tables",
+  "B2": "some cycle stage differs",
+  "B3": "NAE collisions are state collisions",
+  "B3c": "parity collisions are state collisions",
+  "B4": "NAE collisions have a redundant junction",
+  "B5": "NAE: no redundancy, same next joins",
+  "B5c": "parity: some pair without redundancy joins differently"
+ },
+ "decision_rules": {
+  "each": "held iff no exception; B5c held iff such a pair exists"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "a few minutes",
+ "disclosed_exploration": "pilot (rings, chains, pairs, two-ring join, lone knots; three census shards; the first 30 part-B arrangements), recorded in the pre-registration",
+ "amendments": []
+}

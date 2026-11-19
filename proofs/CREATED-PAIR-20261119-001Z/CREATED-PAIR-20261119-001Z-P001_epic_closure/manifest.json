@@ -1,0 +1,91 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "CREATED-PAIR-20261119-001Z-P001",
+ "canonical_id": "CREATED-PAIR-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "CREATED-PAIR-20261119-001Z",
+ "proof": "CREATED-PAIR-20261119-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: the created-pair study",
+ "status": "Proved",
+ "claim": "Ledger closing CREATED-PAIR-20261119-001: ticket A (E0, E3 held; E3b failed). Referee pending. No new claim.",
+ "dependencies": [
+  "CREATED-PAIR-20261119-001A"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "CREATED-PAIR-20261119-001",
+  "epic_path": [
+   "CREATED-PAIR-20261119-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/CREATED-PAIR-20261119-001A/CREATED-PAIR-20261119-001A-E001_isos/contract.json": "4eff66370c19da581de0931318957978f1d82bbfc4b8cffd8c395901e4ee894a",
+  "artifacts/CREATED-PAIR-20261119-001A/CREATED-PAIR-20261119-001A-E001_isos/isos.json": "2158868bbbeb11afa1e12e65d4145850aedadbc200ed720c1472c3418c06e685"
+ },
+ "paths": {
+  "manifest": "proofs/CREATED-PAIR-20261119-001Z/CREATED-PAIR-20261119-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/CREATED-PAIR-20261119-001Z/CREATED-PAIR-20261119-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/CREATED-PAIR-20261119-001Z/CREATED-PAIR-20261119-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/CREATED-PAIR-20261119-001Z/CREATED-PAIR-20261119-001Z-P001_epic_closure/result.json",
+  "check": "proofs/CREATED-PAIR-20261119-001Z/CREATED-PAIR-20261119-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/CREATED-PAIR-20261119-001Z/CREATED-PAIR-20261119-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

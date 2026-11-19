@@ -883,6 +883,19 @@ the golden ratio, which a ring of knots that all carry a spare reaches at any
 length (dead knots go faster: next entry). So
 in this class the catalogue's eddies are all there is
 ([decision note](../research/RING-CORES-20261119-001/ring_cores.md)).
+And with dead knots allowed, still within five places (`DEAD-CAP-20261119-001`,
+proof, referee pending)? A live knot's places cover the blocks it sits in, so it
+sits in at most two, and blocks of three are the only branch points. Count the
+independent cycles of the map of joins. With none, the growth is polynomial,
+one dimension per endless chain. With one, it is constant if bare and otherwise
+exponential, with a rational count. With two or more, it is exponential at an
+algebraic rate. A few equations, one per point and block, give every count
+exactly, and they match the program's growth on all 13,307 starts tried. The
+fastest found is the theta: two dead three-place hubs whose knots are joined
+pairwise, 11 knots in all, growing at 2.3830 a round, past the golden ratio of
+the rings of live knots. A first-round group of three is exactly a cycle of
+three blocks, and that is where the class ends
+([decision note](../research/DEAD-CAP-20261119-001/dead_cap.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

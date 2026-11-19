@@ -1,0 +1,3317 @@
+{
+  "adaptations": [
+    "Following the single 64-particle probes, the replicated panels used ascending degree, more particles, and resampling only above four times the target mass.",
+    "The final synthetic controls added a direct test of closed-neighborhood folding under a random order.",
+    "The optional random and descending-degree sensitivities and a speed check for the literal order were interrupted after the precision gate closed. No outputs from them enter the summaries."
+  ],
+  "build": "c++ -std=c++20 -O3 -march=native -Wall -Wextra sequential.cpp -o sequential",
+  "exact_synthetic_controls": {
+    "finite_resampling_expectation": true,
+    "nontrivially_folded_graphs": 473,
+    "prefixes": 5405,
+    "small_graphs": 1099
+  },
+  "freeze": "7a1b4cc94",
+  "initial_pilots": [
+    {
+      "age": 8,
+      "elapsed_seconds": 132.119,
+      "engine": {
+        "blocks": 365,
+        "classes": 25654,
+        "folded": true,
+        "order": "given",
+        "order_seed": 0,
+        "original_names": 28065,
+        "particles": 64,
+        "prefix": 25654,
+        "resample_mass_multiple": 1
+      },
+      "replicate": {
+        "cached_rejections": 648831,
+        "checkpoint_prefix_unique_ancestors_maxfamily": [
+          [
+            6413,
+            1,
+            1,
+            1
+          ],
+          [
+            12827,
+            64,
+            2,
+            55
+          ],
+          [
+            19240,
+            64,
+            1,
+            64
+          ],
+          [
+            25654,
+            64,
+            1,
+            64
+          ]
+        ],
+        "estimate": "7.64821634638256089e+22",
+        "exact": false,
+        "exact_count_at_prefix": 61,
+        "exact_prefix": 6468,
+        "largest_particle_weight": 1,
+        "largest_sampled_set": 11280,
+        "log10_estimate": 22.883560164402876,
+        "replicate": 0,
+        "resamples": 229,
+        "seed": 20261119094,
+        "uncached_branch_tests": 69805
+      }
+    },
+    {
+      "age": 8,
+      "elapsed_seconds": 1.469,
+      "engine": {
+        "blocks": 365,
+        "classes": 25654,
+        "folded": true,
+        "order": "degree-up",
+        "order_seed": 20261119095,
+        "original_names": 28065,
+        "particles": 64,
+        "prefix": 25654,
+        "resample_mass_multiple": 1
+      },
+      "replicate": {
+        "cached_rejections": 1442845,
+        "checkpoint_prefix_unique_ancestors_maxfamily": [
+          [
+            6413,
+            64,
+            1,
+            64
+          ],
+          [
+            12827,
+            64,
+            1,
+            64
+          ],
+          [
+            19240,
+            64,
+            1,
+            64
+          ],
+          [
+            25654,
+            64,
+            1,
+            64
+          ]
+        ],
+        "estimate": "163116837.769991707",
+        "exact": false,
+        "exact_count_at_prefix": 63,
+        "exact_prefix": 41,
+        "largest_particle_weight": 1,
+        "largest_sampled_set": 912,
+        "log10_estimate": 8.212498793493753,
+        "replicate": 0,
+        "resamples": 231,
+        "seed": 20261119096,
+        "uncached_branch_tests": 147244
+      }
+    }
+  ],
+  "master_seed": 20261119094,
+  "observable": "all maximal candidate sets, including held maximal sets and small sets",
+  "panels": [
+    {
+      "age": 6,
+      "ancestry": null,
+      "dispersion": {
+        "empirical_central_95_percent": [
+          "401.000",
+          "401.000"
+        ],
+        "empirical_central_ratio": 1.0,
+        "final_distinct_ancestor_range": [
+          401,
+          401
+        ],
+        "final_largest_ancestor_mass_fraction_range": [
+          0.0024937655860349127,
+          0.0024937655860349127
+        ],
+        "largest_replicate_share_of_sum": 1.0,
+        "maximum": "401",
+        "mean": "401",
+        "median": "401.0",
+        "minimum": "401",
+        "relative_standard_error_of_mean": null
+      },
+      "elapsed_seconds": 0.003,
+      "engine": {
+        "blocks": 61,
+        "classes": 110,
+        "folded": true,
+        "order": "given",
+        "order_seed": 6552311879523126788,
+        "original_names": 110,
+        "particles": 0,
+        "prefix": 110,
+        "resample_mass_multiple": 1
+      },
+      "exact_calibration": 401,
+      "input_sha256": "5ec0d51b4cbdba78de58860724f0b773d249a9ea573194563f4dd90c44732803",
+      "label": "exact6",
+      "mean_over_exact": 1.0,
+      "replicates": [
+        {
+          "cached_rejections": 8360,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              27,
+              24,
+              24,
+              1,
+              24
+            ],
+            [
+              55,
+              81,
+              81,
+              1,
+              81
+            ],
+            [
+              82,
+              204,
+              204,
+              1,
+              204
+            ],
+            [
+              110,
+              401,
+              401,
+              1,
+              401
+            ]
+          ],
+          "estimate": "401",
+          "exact": true,
+          "exact_count_at_prefix": 401,
+          "exact_prefix": 110,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 26,
+          "log10_estimate": 2.603144372620182,
+          "replicate": 0,
+          "resamples": 0,
+          "seed": 281208472631809888,
+          "uncached_branch_tests": 5680
+        }
+      ]
+    },
+    {
+      "age": 7,
+      "ancestry": null,
+      "dispersion": {
+        "empirical_central_95_percent": [
+          "28099.000",
+          "28099.000"
+        ],
+        "empirical_central_ratio": 1.0,
+        "final_distinct_ancestor_range": [
+          28099,
+          28099
+        ],
+        "final_largest_ancestor_mass_fraction_range": [
+          3.558845510516389e-05,
+          3.558845510516389e-05
+        ],
+        "largest_replicate_share_of_sum": 1.0,
+        "maximum": "28099",
+        "mean": "28099",
+        "median": "28099.0",
+        "minimum": "28099",
+        "relative_standard_error_of_mean": null
+      },
+      "elapsed_seconds": 0.42,
+      "engine": {
+        "blocks": 105,
+        "classes": 386,
+        "folded": true,
+        "order": "given",
+        "order_seed": 4423634687446916325,
+        "original_names": 386,
+        "particles": 0,
+        "prefix": 386,
+        "resample_mass_multiple": 1
+      },
+      "exact_calibration": 28099,
+      "input_sha256": "0052375a600906e7f104d3f35ce4128939264e1019f81a5049b752b056105f92",
+      "label": "exact7",
+      "mean_over_exact": 1.0,
+      "replicates": [
+        {
+          "cached_rejections": 1548545,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              154,
+              154,
+              1,
+              154
+            ],
+            [
+              193,
+              689,
+              689,
+              1,
+              689
+            ],
+            [
+              289,
+              3037,
+              3037,
+              1,
+              3037
+            ],
+            [
+              386,
+              28099,
+              28099,
+              1,
+              28099
+            ]
+          ],
+          "estimate": "28099",
+          "exact": true,
+          "exact_count_at_prefix": 28099,
+          "exact_prefix": 386,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 121,
+          "log10_estimate": 4.448690864310427,
+          "replicate": 0,
+          "resamples": 0,
+          "seed": 8707868399164071164,
+          "uncached_branch_tests": 401945
+        }
+      ]
+    },
+    {
+      "age": 7,
+      "ancestry": {
+        "final_ancestors_across_replicates_sum": 98,
+        "initial_ancestor_count_lower_bound": 65,
+        "last_exact_prefix": 45,
+        "maximal_sets_at_last_exact_prefix": 64,
+        "upper_bound_on_fraction_of_initial_ancestors_with_any_final_representation": 1
+      },
+      "dispersion": {
+        "empirical_central_95_percent": [
+          "5728.10478343520770600",
+          "530670.363719651204550"
+        ],
+        "empirical_central_ratio": 92.6432709915272,
+        "final_distinct_ancestor_range": [
+          1,
+          8
+        ],
+        "final_largest_ancestor_mass_fraction_range": [
+          0.296875,
+          1.0
+        ],
+        "largest_replicate_share_of_sum": 0.6394273500985835,
+        "maximum": "981055.273124528895",
+        "mean": "63927.9865657187210341666666667",
+        "median": "14265.01082406468295",
+        "minimum": "3411.73348968621144",
+        "relative_standard_error_of_mean": 0.6354305154744194
+      },
+      "elapsed_seconds": 0.039,
+      "engine": {
+        "blocks": 105,
+        "classes": 386,
+        "folded": true,
+        "order": "degree-up",
+        "order_seed": 5665965822429886693,
+        "original_names": 386,
+        "particles": 64,
+        "prefix": 386,
+        "resample_mass_multiple": 1
+      },
+      "exact_calibration": 28099,
+      "input_sha256": "0052375a600906e7f104d3f35ce4128939264e1019f81a5049b752b056105f92",
+      "label": "calibration-low",
+      "mean_over_exact": 2.2750982798576005,
+      "replicates": [
+        {
+          "cached_rejections": 14572,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              29,
+              11,
+              64
+            ],
+            [
+              193,
+              64,
+              11,
+              19,
+              64
+            ],
+            [
+              289,
+              64,
+              4,
+              39,
+              64
+            ],
+            [
+              386,
+              64,
+              4,
+              42,
+              64
+            ]
+          ],
+          "estimate": "27225.7808868987138",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 79,
+          "log10_estimate": 4.434980344993746,
+          "replicate": 0,
+          "resamples": 173,
+          "seed": 6882813759704813444,
+          "uncached_branch_tests": 6631
+        },
+        {
+          "cached_rejections": 15586,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              41,
+              6,
+              64
+            ],
+            [
+              193,
+              64,
+              13,
+              41,
+              64
+            ],
+            [
+              289,
+              64,
+              5,
+              59,
+              64
+            ],
+            [
+              386,
+              64,
+              3,
+              62,
+              64
+            ]
+          ],
+          "estimate": "8176.82400902508671",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 50,
+          "log10_estimate": 3.9125846504692645,
+          "replicate": 1,
+          "resamples": 123,
+          "seed": 6882813759704813445,
+          "uncached_branch_tests": 5683
+        },
+        {
+          "cached_rejections": 14667,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              32,
+              11,
+              64
+            ],
+            [
+              193,
+              64,
+              18,
+              29,
+              64
+            ],
+            [
+              289,
+              64,
+              9,
+              26,
+              64
+            ],
+            [
+              386,
+              64,
+              3,
+              32,
+              64
+            ]
+          ],
+          "estimate": "9588.31661209720505",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 58,
+          "log10_estimate": 3.9817423662686333,
+          "replicate": 2,
+          "resamples": 142,
+          "seed": 6882813759704813446,
+          "uncached_branch_tests": 6380
+        },
+        {
+          "cached_rejections": 15500,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              34,
+              12,
+              64
+            ],
+            [
+              193,
+              64,
+              15,
+              35,
+              64
+            ],
+            [
+              289,
+              64,
+              7,
+              49,
+              64
+            ],
+            [
+              386,
+              64,
+              5,
+              52,
+              64
+            ]
+          ],
+          "estimate": "9714.13471144123506",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 50,
+          "log10_estimate": 3.987404121787822,
+          "replicate": 3,
+          "resamples": 161,
+          "seed": 6882813759704813447,
+          "uncached_branch_tests": 5888
+        },
+        {
+          "cached_rejections": 14092,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              33,
+              11,
+              64
+            ],
+            [
+              193,
+              64,
+              14,
+              18,
+              64
+            ],
+            [
+              289,
+              64,
+              6,
+              28,
+              64
+            ],
+            [
+              386,
+              64,
+              5,
+              32,
+              64
+            ]
+          ],
+          "estimate": "25080.0999745751322",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 62,
+          "log10_estimate": 4.399329263351652,
+          "replicate": 4,
+          "resamples": 165,
+          "seed": 6882813759704813448,
+          "uncached_branch_tests": 6378
+        },
+        {
+          "cached_rejections": 14981,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              36,
+              10,
+              64
+            ],
+            [
+              193,
+              64,
+              15,
+              31,
+              64
+            ],
+            [
+              289,
+              64,
+              7,
+              36,
+              64
+            ],
+            [
+              386,
+              64,
+              5,
+              38,
+              64
+            ]
+          ],
+          "estimate": "9323.51375642063998",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 62,
+          "log10_estimate": 3.969579615941432,
+          "replicate": 5,
+          "resamples": 147,
+          "seed": 6882813759704813449,
+          "uncached_branch_tests": 6079
+        },
+        {
+          "cached_rejections": 14197,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              35,
+              9,
+              64
+            ],
+            [
+              193,
+              64,
+              11,
+              27,
+              64
+            ],
+            [
+              289,
+              64,
+              3,
+              42,
+              64
+            ],
+            [
+              386,
+              64,
+              3,
+              33,
+              64
+            ]
+          ],
+          "estimate": "21670.0396480610772",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 48,
+          "log10_estimate": 4.335859705916882,
+          "replicate": 6,
+          "resamples": 160,
+          "seed": 6882813759704813450,
+          "uncached_branch_tests": 6958
+        },
+        {
+          "cached_rejections": 15279,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              32,
+              6,
+              64
+            ],
+            [
+              193,
+              64,
+              9,
+              26,
+              64
+            ],
+            [
+              289,
+              64,
+              6,
+              35,
+              64
+            ],
+            [
+              386,
+              64,
+              4,
+              44,
+              64
+            ]
+          ],
+          "estimate": "12577.6914248431465",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 51,
+          "log10_estimate": 4.0996009357469765,
+          "replicate": 7,
+          "resamples": 130,
+          "seed": 6882813759704813451,
+          "uncached_branch_tests": 6067
+        },
+        {
+          "cached_rejections": 14155,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              32,
+              11,
+              64
+            ],
+            [
+              193,
+              64,
+              14,
+              17,
+              64
+            ],
+            [
+              289,
+              64,
+              5,
+              44,
+              64
+            ],
+            [
+              386,
+              64,
+              3,
+              51,
+              64
+            ]
+          ],
+          "estimate": "22905.8302274083743",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 54,
+          "log10_estimate": 4.359946037506896,
+          "replicate": 8,
+          "resamples": 151,
+          "seed": 6882813759704813452,
+          "uncached_branch_tests": 6862
+        },
+        {
+          "cached_rejections": 14238,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              30,
+              12,
+              64
+            ],
+            [
+              193,
+              64,
+              14,
+              33,
+              64
+            ],
+            [
+              289,
+              64,
+              5,
+              27,
+              64
+            ],
+            [
+              386,
+              64,
+              3,
+              50,
+              64
+            ]
+          ],
+          "estimate": "14618.1690826016351",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 57,
+          "log10_estimate": 4.164892980890149,
+          "replicate": 9,
+          "resamples": 174,
+          "seed": 6882813759704813453,
+          "uncached_branch_tests": 6838
+        },
+        {
+          "cached_rejections": 13552,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              39,
+              7,
+              64
+            ],
+            [
+              193,
+              64,
+              19,
+              20,
+              64
+            ],
+            [
+              289,
+              64,
+              3,
+              58,
+              64
+            ],
+            [
+              386,
+              64,
+              1,
+              64,
+              64
+            ]
+          ],
+          "estimate": "197777.169811698129",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 45,
+          "log10_estimate": 5.296176157852448,
+          "replicate": 10,
+          "resamples": 141,
+          "seed": 6882813759704813454,
+          "uncached_branch_tests": 7287
+        },
+        {
+          "cached_rejections": 14423,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              35,
+              13,
+              64
+            ],
+            [
+              193,
+              64,
+              11,
+              34,
+              64
+            ],
+            [
+              289,
+              64,
+              6,
+              31,
+              64
+            ],
+            [
+              386,
+              64,
+              4,
+              46,
+              64
+            ]
+          ],
+          "estimate": "13911.8525655277308",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 77,
+          "log10_estimate": 4.14338496647043,
+          "replicate": 11,
+          "resamples": 171,
+          "seed": 6882813759704813455,
+          "uncached_branch_tests": 6144
+        },
+        {
+          "cached_rejections": 14147,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              34,
+              8,
+              64
+            ],
+            [
+              193,
+              64,
+              14,
+              21,
+              64
+            ],
+            [
+              289,
+              64,
+              6,
+              35,
+              64
+            ],
+            [
+              386,
+              64,
+              4,
+              44,
+              64
+            ]
+          ],
+          "estimate": "21420.1406897587935",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 52,
+          "log10_estimate": 4.330822318997482,
+          "replicate": 12,
+          "resamples": 151,
+          "seed": 6882813759704813456,
+          "uncached_branch_tests": 6748
+        },
+        {
+          "cached_rejections": 14250,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              32,
+              8,
+              64
+            ],
+            [
+              193,
+              64,
+              13,
+              13,
+              64
+            ],
+            [
+              289,
+              64,
+              5,
+              23,
+              64
+            ],
+            [
+              386,
+              64,
+              5,
+              30,
+              64
+            ]
+          ],
+          "estimate": "21715.1267732040532",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 50,
+          "log10_estimate": 4.336762369122713,
+          "replicate": 13,
+          "resamples": 163,
+          "seed": 6882813759704813457,
+          "uncached_branch_tests": 6551
+        },
+        {
+          "cached_rejections": 14477,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              34,
+              9,
+              64
+            ],
+            [
+              193,
+              64,
+              14,
+              16,
+              64
+            ],
+            [
+              289,
+              64,
+              10,
+              17,
+              64
+            ],
+            [
+              386,
+              64,
+              8,
+              22,
+              64
+            ]
+          ],
+          "estimate": "11530.3325787999848",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 53,
+          "log10_estimate": 4.061841834185814,
+          "replicate": 14,
+          "resamples": 157,
+          "seed": 6882813759704813458,
+          "uncached_branch_tests": 6362
+        },
+        {
+          "cached_rejections": 12941,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              31,
+              8,
+              64
+            ],
+            [
+              193,
+              64,
+              11,
+              30,
+              64
+            ],
+            [
+              289,
+              64,
+              4,
+              57,
+              64
+            ],
+            [
+              386,
+              64,
+              1,
+              64,
+              64
+            ]
+          ],
+          "estimate": "981055.273124528895",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 62,
+          "log10_estimate": 5.99169347642862,
+          "replicate": 15,
+          "resamples": 157,
+          "seed": 6882813759704813459,
+          "uncached_branch_tests": 7791
+        },
+        {
+          "cached_rejections": 16148,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              30,
+              8,
+              64
+            ],
+            [
+              193,
+              64,
+              20,
+              35,
+              64
+            ],
+            [
+              289,
+              64,
+              9,
+              47,
+              64
+            ],
+            [
+              386,
+              64,
+              6,
+              53,
+              64
+            ]
+          ],
+          "estimate": "3411.73348968621144",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 45,
+          "log10_estimate": 3.5329750985566672,
+          "replicate": 16,
+          "resamples": 104,
+          "seed": 6882813759704813460,
+          "uncached_branch_tests": 5376
+        },
+        {
+          "cached_rejections": 14263,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              37,
+              6,
+              64
+            ],
+            [
+              193,
+              64,
+              12,
+              25,
+              64
+            ],
+            [
+              289,
+              64,
+              6,
+              21,
+              64
+            ],
+            [
+              386,
+              64,
+              5,
+              22,
+              64
+            ]
+          ],
+          "estimate": "9218.03627386227565",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 61,
+          "log10_estimate": 3.9646384127825596,
+          "replicate": 17,
+          "resamples": 158,
+          "seed": 6882813759704813461,
+          "uncached_branch_tests": 6525
+        },
+        {
+          "cached_rejections": 14221,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              38,
+              5,
+              64
+            ],
+            [
+              193,
+              64,
+              11,
+              26,
+              64
+            ],
+            [
+              289,
+              64,
+              5,
+              38,
+              64
+            ],
+            [
+              386,
+              64,
+              3,
+              39,
+              64
+            ]
+          ],
+          "estimate": "19569.5859725760725",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 47,
+          "log10_estimate": 4.291581637526798,
+          "replicate": 18,
+          "resamples": 146,
+          "seed": 6882813759704813462,
+          "uncached_branch_tests": 6852
+        },
+        {
+          "cached_rejections": 13648,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              38,
+              5,
+              64
+            ],
+            [
+              193,
+              64,
+              12,
+              15,
+              64
+            ],
+            [
+              289,
+              64,
+              6,
+              31,
+              64
+            ],
+            [
+              386,
+              64,
+              6,
+              28,
+              64
+            ]
+          ],
+          "estimate": "42474.7919247010807",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 77,
+          "log10_estimate": 4.6281312600266515,
+          "replicate": 19,
+          "resamples": 183,
+          "seed": 6882813759704813463,
+          "uncached_branch_tests": 7082
+        },
+        {
+          "cached_rejections": 14959,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              40,
+              7,
+              64
+            ],
+            [
+              193,
+              64,
+              13,
+              25,
+              64
+            ],
+            [
+              289,
+              64,
+              7,
+              27,
+              64
+            ],
+            [
+              386,
+              64,
+              5,
+              19,
+              64
+            ]
+          ],
+          "estimate": "7440.20530490185712",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 48,
+          "log10_estimate": 3.871584919625959,
+          "replicate": 20,
+          "resamples": 134,
+          "seed": 6882813759704813464,
+          "uncached_branch_tests": 6103
+        },
+        {
+          "cached_rejections": 15189,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              32,
+              9,
+              64
+            ],
+            [
+              193,
+              64,
+              12,
+              37,
+              64
+            ],
+            [
+              289,
+              64,
+              5,
+              33,
+              64
+            ],
+            [
+              386,
+              64,
+              5,
+              41,
+              64
+            ]
+          ],
+          "estimate": "9959.59663353427161",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 61,
+          "log10_estimate": 3.9982417497311666,
+          "replicate": 21,
+          "resamples": 141,
+          "seed": 6882813759704813465,
+          "uncached_branch_tests": 6144
+        },
+        {
+          "cached_rejections": 14196,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              35,
+              8,
+              64
+            ],
+            [
+              193,
+              64,
+              15,
+              43,
+              64
+            ],
+            [
+              289,
+              64,
+              4,
+              53,
+              64
+            ],
+            [
+              386,
+              64,
+              3,
+              62,
+              64
+            ]
+          ],
+          "estimate": "20345.2669959631973",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 76,
+          "log10_estimate": 4.30846339358044,
+          "replicate": 22,
+          "resamples": 166,
+          "seed": 6882813759704813466,
+          "uncached_branch_tests": 6248
+        },
+        {
+          "cached_rejections": 13840,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              64,
+              30,
+              14,
+              64
+            ],
+            [
+              193,
+              64,
+              17,
+              19,
+              64
+            ],
+            [
+              289,
+              64,
+              7,
+              27,
+              64
+            ],
+            [
+              386,
+              64,
+              4,
+              26,
+              64
+            ]
+          ],
+          "estimate": "13562.1651051345063",
+          "exact": false,
+          "exact_count_at_prefix": 64,
+          "exact_prefix": 45,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 57,
+          "log10_estimate": 4.13232902715295,
+          "replicate": 23,
+          "resamples": 162,
+          "seed": 6882813759704813467,
+          "uncached_branch_tests": 6973
+        }
+      ]
+    },
+    {
+      "age": 7,
+      "ancestry": {
+        "final_ancestors_across_replicates_sum": 1435,
+        "initial_ancestor_count_lower_bound": 1025,
+        "last_exact_prefix": 207,
+        "maximal_sets_at_last_exact_prefix": 994,
+        "upper_bound_on_fraction_of_initial_ancestors_with_any_final_representation": 1
+      },
+      "dispersion": {
+        "empirical_central_95_percent": [
+          "14127.1043357849121250",
+          "77278.6947687466163250"
+        ],
+        "empirical_central_ratio": 5.470243082511569,
+        "final_distinct_ancestor_range": [
+          26,
+          133
+        ],
+        "final_largest_ancestor_mass_fraction_range": [
+          0.0713436385255648,
+          0.760593220338983
+        ],
+        "largest_replicate_share_of_sum": 0.18467624163557034,
+        "maximum": "83876.2750401813537",
+        "mean": "28386.25663801480550625",
+        "median": "17290.64827251434325",
+        "minimum": "13759.5433044433594",
+        "relative_standard_error_of_mean": 0.1921533781753799
+      },
+      "elapsed_seconds": 0.194,
+      "engine": {
+        "blocks": 105,
+        "classes": 386,
+        "folded": true,
+        "order": "degree-up",
+        "order_seed": 8063356803711434256,
+        "original_names": 386,
+        "particles": 256,
+        "prefix": 386,
+        "resample_mass_multiple": 4
+      },
+      "exact_calibration": 28099,
+      "input_sha256": "0052375a600906e7f104d3f35ce4128939264e1019f81a5049b752b056105f92",
+      "label": "calibration-high",
+      "mean_over_exact": 1.0102230199656501,
+      "replicates": [
+        {
+          "cached_rejections": 86358,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              906,
+              256,
+              47,
+              906
+            ],
+            [
+              386,
+              305,
+              78,
+              40,
+              305
+            ]
+          ],
+          "estimate": "20368.2408553361893",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 92,
+          "log10_estimate": 4.308953521891128,
+          "replicate": 0,
+          "resamples": 3,
+          "seed": 7884623824594215852,
+          "uncached_branch_tests": 45706
+        },
+        {
+          "cached_rejections": 85692,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              272,
+              125,
+              61,
+              272
+            ],
+            [
+              386,
+              944,
+              68,
+              718,
+              944
+            ]
+          ],
+          "estimate": "66282.7276496887207",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 85,
+          "log10_estimate": 4.82140037208939,
+          "replicate": 1,
+          "resamples": 3,
+          "seed": 7884623824594215853,
+          "uncached_branch_tests": 45806
+        },
+        {
+          "cached_rejections": 87745,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              873,
+              256,
+              47,
+              873
+            ],
+            [
+              386,
+              266,
+              69,
+              27,
+              266
+            ]
+          ],
+          "estimate": "17697.196569442749",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 89,
+          "log10_estimate": 4.247904474788351,
+          "replicate": 2,
+          "resamples": 3,
+          "seed": 7884623824594215854,
+          "uncached_branch_tests": 46339
+        },
+        {
+          "cached_rejections": 83335,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              268,
+              111,
+              71,
+              268
+            ],
+            [
+              386,
+              317,
+              26,
+              229,
+              317
+            ]
+          ],
+          "estimate": "83876.2750401813537",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 61,
+          "log10_estimate": 4.923639135128835,
+          "replicate": 3,
+          "resamples": 4,
+          "seed": 7884623824594215855,
+          "uncached_branch_tests": 46338
+        },
+        {
+          "cached_rejections": 90029,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              907,
+              256,
+              42,
+              907
+            ],
+            [
+              386,
+              991,
+              130,
+              116,
+              991
+            ]
+          ],
+          "estimate": "16371.097412109375",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 79,
+          "log10_estimate": 4.214077792670893,
+          "replicate": 4,
+          "resamples": 2,
+          "seed": 7884623824594215856,
+          "uncached_branch_tests": 44719
+        },
+        {
+          "cached_rejections": 87715,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              951,
+              256,
+              47,
+              951
+            ],
+            [
+              386,
+              308,
+              75,
+              60,
+              308
+            ]
+          ],
+          "estimate": "20688.1421113014221",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 76,
+          "log10_estimate": 4.315721490808846,
+          "replicate": 5,
+          "resamples": 3,
+          "seed": 7884623824594215857,
+          "uncached_branch_tests": 45433
+        },
+        {
+          "cached_rejections": 89515,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              931,
+              256,
+              47,
+              931
+            ],
+            [
+              386,
+              256,
+              85,
+              20,
+              256
+            ]
+          ],
+          "estimate": "16884.0999755859375",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 90,
+          "log10_estimate": 4.227477915071849,
+          "replicate": 6,
+          "resamples": 3,
+          "seed": 7884623824594215858,
+          "uncached_branch_tests": 47126
+        },
+        {
+          "cached_rejections": 87736,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              790,
+              256,
+              24,
+              790
+            ],
+            [
+              386,
+              841,
+              131,
+              60,
+              841
+            ]
+          ],
+          "estimate": "13759.5433044433594",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 69,
+          "log10_estimate": 4.138604019389922,
+          "replicate": 7,
+          "resamples": 2,
+          "seed": 7884623824594215859,
+          "uncached_branch_tests": 42564
+        },
+        {
+          "cached_rejections": 89170,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              832,
+              256,
+              25,
+              832
+            ],
+            [
+              386,
+              956,
+              133,
+              132,
+              956
+            ]
+          ],
+          "estimate": "15747.3488159179688",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 77,
+          "log10_estimate": 4.197207447551978,
+          "replicate": 8,
+          "resamples": 2,
+          "seed": 7884623824594215860,
+          "uncached_branch_tests": 44118
+        },
+        {
+          "cached_rejections": 88307,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              835,
+              256,
+              47,
+              835
+            ],
+            [
+              386,
+              864,
+              121,
+              119,
+              864
+            ]
+          ],
+          "estimate": "14739.7060546875",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 61,
+          "log10_estimate": 4.168488822729267,
+          "replicate": 9,
+          "resamples": 2,
+          "seed": 7884623824594215861,
+          "uncached_branch_tests": 43063
+        },
+        {
+          "cached_rejections": 84814,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              272,
+              120,
+              58,
+              272
+            ],
+            [
+              386,
+              794,
+              66,
+              541,
+              794
+            ]
+          ],
+          "estimate": "55276.3741822242737",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 81,
+          "log10_estimate": 4.742539548036619,
+          "replicate": 10,
+          "resamples": 3,
+          "seed": 7884623824594215862,
+          "uncached_branch_tests": 46352
+        },
+        {
+          "cached_rejections": 85137,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              270,
+              127,
+              54,
+              270
+            ],
+            [
+              386,
+              690,
+              71,
+              417,
+              690
+            ]
+          ],
+          "estimate": "45112.5865924358368",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 97,
+          "log10_estimate": 4.654297728685319,
+          "replicate": 11,
+          "resamples": 3,
+          "seed": 7884623824594215863,
+          "uncached_branch_tests": 45205
+        },
+        {
+          "cached_rejections": 89385,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              893,
+              256,
+              47,
+              893
+            ],
+            [
+              386,
+              936,
+              123,
+              80,
+              936
+            ]
+          ],
+          "estimate": "15551.716552734375",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 89,
+          "log10_estimate": 4.191778332156198,
+          "replicate": 12,
+          "resamples": 2,
+          "seed": 7884623824594215864,
+          "uncached_branch_tests": 45508
+        },
+        {
+          "cached_rejections": 86820,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              887,
+              256,
+              32,
+              887
+            ],
+            [
+              386,
+              256,
+              75,
+              29,
+              256
+            ]
+          ],
+          "estimate": "16835.2077941894531",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 91,
+          "log10_estimate": 4.226218481182255,
+          "replicate": 13,
+          "resamples": 3,
+          "seed": 7884623824594215865,
+          "uncached_branch_tests": 45659
+        },
+        {
+          "cached_rejections": 86908,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              954,
+              256,
+              42,
+              954
+            ],
+            [
+              386,
+              302,
+              67,
+              33,
+              302
+            ]
+          ],
+          "estimate": "19995.7644710540771",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 95,
+          "log10_estimate": 4.300938012581255,
+          "replicate": 14,
+          "resamples": 3,
+          "seed": 7884623824594215866,
+          "uncached_branch_tests": 44378
+        },
+        {
+          "cached_rejections": 87350,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              96,
+              157,
+              157,
+              1,
+              157
+            ],
+            [
+              193,
+              722,
+              722,
+              1,
+              722
+            ],
+            [
+              289,
+              886,
+              256,
+              47,
+              886
+            ],
+            [
+              386,
+              899,
+              117,
+              68,
+              899
+            ]
+          ],
+          "estimate": "14994.0788269042969",
+          "exact": false,
+          "exact_count_at_prefix": 994,
+          "exact_prefix": 207,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 95,
+          "log10_estimate": 4.1759197896900035,
+          "replicate": 15,
+          "resamples": 2,
+          "seed": 7884623824594215867,
+          "uncached_branch_tests": 43966
+        }
+      ]
+    },
+    {
+      "age": 8,
+      "ancestry": {
+        "final_ancestors_across_replicates_sum": 18,
+        "initial_ancestor_count_lower_bound": 513,
+        "last_exact_prefix": 205,
+        "maximal_sets_at_last_exact_prefix": 499,
+        "upper_bound_on_fraction_of_initial_ancestors_with_any_final_representation": 0.03508771929824561
+      },
+      "dispersion": {
+        "empirical_central_95_percent": [
+          "908740398.829554148600",
+          "17417427417930499.0887275"
+        ],
+        "empirical_central_ratio": 19166560.043290604,
+        "final_distinct_ancestor_range": [
+          1,
+          3
+        ],
+        "final_largest_ancestor_mass_fraction_range": [
+          0.4945054945054945,
+          1.0
+        ],
+        "largest_replicate_share_of_sum": 0.9985640267730306,
+        "maximum": "24012368147687367.9",
+        "mean": "2003908237552376.09444557216667",
+        "median": "396676915547.7847160",
+        "minimum": "632160086.620412916",
+        "relative_standard_error_of_mean": 0.998434278693907
+      },
+      "elapsed_seconds": 89.359,
+      "engine": {
+        "blocks": 365,
+        "classes": 25654,
+        "folded": true,
+        "order": "degree-up",
+        "order_seed": 1544689625071923461,
+        "original_names": 28065,
+        "particles": 128,
+        "prefix": 25654,
+        "resample_mass_multiple": 4
+      },
+      "input_sha256": "049ad2aa85d55619a9e9c97dfd7ed33f6bb0d929d665af56f071b13f8fbd1102",
+      "label": "probe-degup",
+      "replicates": [
+        {
+          "cached_rejections": 5519281,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              450,
+              1,
+              450,
+              450
+            ],
+            [
+              12827,
+              231,
+              1,
+              231,
+              231
+            ],
+            [
+              19240,
+              128,
+              1,
+              128,
+              128
+            ],
+            [
+              25654,
+              325,
+              1,
+              325,
+              325
+            ]
+          ],
+          "estimate": "3702539555.82482319",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 750,
+          "log10_estimate": 9.56849970697304,
+          "replicate": 0,
+          "resamples": 11,
+          "seed": 5045078351750417741,
+          "uncached_branch_tests": 501474
+        },
+        {
+          "cached_rejections": 4554486,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              160,
+              3,
+              103,
+              160
+            ],
+            [
+              12827,
+              137,
+              3,
+              96,
+              137
+            ],
+            [
+              19240,
+              128,
+              2,
+              110,
+              128
+            ],
+            [
+              25654,
+              259,
+              2,
+              221,
+              259
+            ]
+          ],
+          "estimate": "7745131007.08932451",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 3547,
+          "log10_estimate": 9.88902876814749,
+          "replicate": 1,
+          "resamples": 12,
+          "seed": 5045078351750417742,
+          "uncached_branch_tests": 570217
+        },
+        {
+          "cached_rejections": 4752114,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              476,
+              1,
+              476,
+              476
+            ],
+            [
+              12827,
+              212,
+              1,
+              212,
+              212
+            ],
+            [
+              19240,
+              184,
+              1,
+              184,
+              184
+            ],
+            [
+              25654,
+              395,
+              1,
+              395,
+              395
+            ]
+          ],
+          "estimate": "994034038922.902223",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1620,
+          "log10_estimate": 11.997401256291957,
+          "replicate": 2,
+          "resamples": 15,
+          "seed": 5045078351750417743,
+          "uncached_branch_tests": 785352
+        },
+        {
+          "cached_rejections": 4643349,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              260,
+              3,
+              248,
+              260
+            ],
+            [
+              12827,
+              322,
+              1,
+              322,
+              322
+            ],
+            [
+              19240,
+              439,
+              1,
+              439,
+              439
+            ],
+            [
+              25654,
+              482,
+              1,
+              482,
+              482
+            ]
+          ],
+          "estimate": "1125985872808.92379",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 3105,
+          "log10_estimate": 12.051532941670196,
+          "replicate": 3,
+          "resamples": 15,
+          "seed": 5045078351750417744,
+          "uncached_branch_tests": 1378513
+        },
+        {
+          "cached_rejections": 4116618,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              251,
+              1,
+              251,
+              251
+            ],
+            [
+              12827,
+              177,
+              1,
+              177,
+              177
+            ],
+            [
+              19240,
+              132,
+              1,
+              132,
+              132
+            ],
+            [
+              25654,
+              176,
+              1,
+              176,
+              176
+            ]
+          ],
+          "estimate": "24012368147687367.9",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 3904,
+          "log10_estimate": 16.38043499315808,
+          "replicate": 4,
+          "resamples": 22,
+          "seed": 5045078351750417745,
+          "uncached_branch_tests": 1263493
+        },
+        {
+          "cached_rejections": 4176081,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              160,
+              3,
+              81,
+              160
+            ],
+            [
+              12827,
+              142,
+              1,
+              142,
+              142
+            ],
+            [
+              19240,
+              214,
+              1,
+              214,
+              214
+            ],
+            [
+              25654,
+              135,
+              1,
+              135,
+              135
+            ]
+          ],
+          "estimate": "30765494026026.7681",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 3383,
+          "log10_estimate": 13.488063893292232,
+          "replicate": 5,
+          "resamples": 18,
+          "seed": 5045078351750417746,
+          "uncached_branch_tests": 1233974
+        },
+        {
+          "cached_rejections": 5733783,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              497,
+              2,
+              395,
+              497
+            ],
+            [
+              12827,
+              195,
+              2,
+              101,
+              195
+            ],
+            [
+              19240,
+              206,
+              2,
+              131,
+              206
+            ],
+            [
+              25654,
+              333,
+              2,
+              239,
+              333
+            ]
+          ],
+          "estimate": "2037340775.17594667",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1736,
+          "log10_estimate": 9.309063677208547,
+          "replicate": 6,
+          "resamples": 11,
+          "seed": 5045078351750417747,
+          "uncached_branch_tests": 652004
+        },
+        {
+          "cached_rejections": 7775343,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              365,
+              2,
+              326,
+              365
+            ],
+            [
+              12827,
+              407,
+              2,
+              361,
+              407
+            ],
+            [
+              19240,
+              277,
+              2,
+              230,
+              277
+            ],
+            [
+              25654,
+              359,
+              2,
+              302,
+              359
+            ]
+          ],
+          "estimate": "632160086.620412916",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1762,
+          "log10_estimate": 8.800827071845667,
+          "replicate": 7,
+          "resamples": 10,
+          "seed": 5045078351750417748,
+          "uncached_branch_tests": 698307
+        },
+        {
+          "cached_rejections": 5523329,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              129,
+              2,
+              126,
+              129
+            ],
+            [
+              12827,
+              161,
+              2,
+              153,
+              161
+            ],
+            [
+              19240,
+              501,
+              2,
+              488,
+              501
+            ],
+            [
+              25654,
+              379,
+              2,
+              378,
+              379
+            ]
+          ],
+          "estimate": "836080094189.887459",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1665,
+          "log10_estimate": 11.92224788365734,
+          "replicate": 8,
+          "resamples": 15,
+          "seed": 5045078351750417749,
+          "uncached_branch_tests": 854050
+        },
+        {
+          "cached_rejections": 5214495,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              133,
+              4,
+              61,
+              133
+            ],
+            [
+              12827,
+              145,
+              3,
+              111,
+              145
+            ],
+            [
+              19240,
+              149,
+              3,
+              85,
+              149
+            ],
+            [
+              25654,
+              273,
+              3,
+              135,
+              273
+            ]
+          ],
+          "estimate": "1637906676.47183558",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 2422,
+          "log10_estimate": 9.214289153194892,
+          "replicate": 9,
+          "resamples": 11,
+          "seed": 5045078351750417750,
+          "uncached_branch_tests": 947489
+        },
+        {
+          "cached_rejections": 4783785,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              330,
+              1,
+              330,
+              330
+            ],
+            [
+              12827,
+              136,
+              1,
+              136,
+              136
+            ],
+            [
+              19240,
+              496,
+              1,
+              496,
+              496
+            ],
+            [
+              25654,
+              446,
+              1,
+              446,
+              446
+            ]
+          ],
+          "estimate": "265826528656.214445",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1231,
+          "log10_estimate": 11.424598320000598,
+          "replicate": 10,
+          "resamples": 14,
+          "seed": 5045078351750417751,
+          "uncached_branch_tests": 704049
+        },
+        {
+          "cached_rejections": 7634249,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              263,
+              1,
+              263,
+              263
+            ],
+            [
+              12827,
+              495,
+              1,
+              495,
+              495
+            ],
+            [
+              19240,
+              394,
+              1,
+              394,
+              394
+            ],
+            [
+              25654,
+              240,
+              1,
+              240,
+              240
+            ]
+          ],
+          "estimate": "527527302439.354987",
+          "exact": false,
+          "exact_count_at_prefix": 499,
+          "exact_prefix": 205,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 2704,
+          "log10_estimate": 11.72224494167951,
+          "replicate": 11,
+          "resamples": 15,
+          "seed": 5045078351750417752,
+          "uncached_branch_tests": 1075065
+        }
+      ]
+    },
+    {
+      "age": 8,
+      "ancestry": {
+        "final_ancestors_across_replicates_sum": 33,
+        "initial_ancestor_count_lower_bound": 1025,
+        "last_exact_prefix": 292,
+        "maximal_sets_at_last_exact_prefix": 989,
+        "upper_bound_on_fraction_of_initial_ancestors_with_any_final_representation": 0.03219512195121951
+      },
+      "dispersion": {
+        "empirical_central_95_percent": [
+          "10013258290.74991988325",
+          "4322123849152.70177350"
+        ],
+        "empirical_central_ratio": 431.6401039155663,
+        "final_distinct_ancestor_range": [
+          2,
+          4
+        ],
+        "final_largest_ancestor_mass_fraction_range": [
+          0.592964824120603,
+          0.9913366336633663
+        ],
+        "largest_replicate_share_of_sum": 0.5462840698635507,
+        "maximum": "5043933101512.20897",
+        "mean": "769430744272.552238455833333333",
+        "median": "191136640600.1728850",
+        "minimum": "6645626370.34159007",
+        "relative_standard_error_of_mean": 0.5626895752196158
+      },
+      "elapsed_seconds": 106.067,
+      "engine": {
+        "blocks": 365,
+        "classes": 25654,
+        "folded": true,
+        "order": "degree-up",
+        "order_seed": 3209318023999412915,
+        "original_names": 28065,
+        "particles": 256,
+        "prefix": 25654,
+        "resample_mass_multiple": 4
+      },
+      "input_sha256": "049ad2aa85d55619a9e9c97dfd7ed33f6bb0d929d665af56f071b13f8fbd1102",
+      "label": "heldout-degup",
+      "replicates": [
+        {
+          "cached_rejections": 11627670,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              291,
+              4,
+              246,
+              291
+            ],
+            [
+              12827,
+              556,
+              4,
+              407,
+              556
+            ],
+            [
+              19240,
+              583,
+              3,
+              431,
+              583
+            ],
+            [
+              25654,
+              304,
+              3,
+              227,
+              304
+            ]
+          ],
+          "estimate": "467313291894.417749",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1726,
+          "log10_estimate": 11.669608133933158,
+          "replicate": 0,
+          "resamples": 15,
+          "seed": 5153588885934613089,
+          "uncached_branch_tests": 1417912
+        },
+        {
+          "cached_rejections": 10835819,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              371,
+              2,
+              368,
+              371
+            ],
+            [
+              12827,
+              424,
+              2,
+              420,
+              424
+            ],
+            [
+              19240,
+              743,
+              2,
+              736,
+              743
+            ],
+            [
+              25654,
+              315,
+              2,
+              312,
+              315
+            ]
+          ],
+          "estimate": "36946285180.3848955",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 2315,
+          "log10_estimate": 10.567570778136405,
+          "replicate": 1,
+          "resamples": 13,
+          "seed": 5153588885934613090,
+          "uncached_branch_tests": 1501654
+        },
+        {
+          "cached_rejections": 8398574,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              469,
+              2,
+              281,
+              469
+            ],
+            [
+              12827,
+              272,
+              2,
+              163,
+              272
+            ],
+            [
+              19240,
+              307,
+              2,
+              226,
+              307
+            ],
+            [
+              25654,
+              834,
+              2,
+              602,
+              834
+            ]
+          ],
+          "estimate": "127373734951.152709",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1900,
+          "log10_estimate": 11.105079883715469,
+          "replicate": 2,
+          "resamples": 13,
+          "seed": 5153588885934613091,
+          "uncached_branch_tests": 1350435
+        },
+        {
+          "cached_rejections": 9227477,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              710,
+              4,
+              508,
+              710
+            ],
+            [
+              12827,
+              371,
+              4,
+              323,
+              371
+            ],
+            [
+              19240,
+              270,
+              3,
+              256,
+              270
+            ],
+            [
+              25654,
+              535,
+              3,
+              488,
+              535
+            ]
+          ],
+          "estimate": "71185953316.8553346",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1549,
+          "log10_estimate": 10.85239430545124,
+          "replicate": 3,
+          "resamples": 13,
+          "seed": 5153588885934613092,
+          "uncached_branch_tests": 1269515
+        },
+        {
+          "cached_rejections": 9787213,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              308,
+              4,
+              239,
+              308
+            ],
+            [
+              12827,
+              505,
+              4,
+              366,
+              505
+            ],
+            [
+              19240,
+              325,
+              4,
+              266,
+              325
+            ],
+            [
+              25654,
+              666,
+              4,
+              567,
+              666
+            ]
+          ],
+          "estimate": "6645626370.34159007",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 2909,
+          "log10_estimate": 9.822535920773527,
+          "replicate": 4,
+          "resamples": 11,
+          "seed": 5153588885934613093,
+          "uncached_branch_tests": 1710226
+        },
+        {
+          "cached_rejections": 13718532,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              256,
+              3,
+              208,
+              256
+            ],
+            [
+              12827,
+              702,
+              3,
+              599,
+              702
+            ],
+            [
+              19240,
+              959,
+              2,
+              809,
+              959
+            ],
+            [
+              25654,
+              577,
+              2,
+              460,
+              577
+            ]
+          ],
+          "estimate": "287159961645.410582",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1710,
+          "log10_estimate": 11.45812388665442,
+          "replicate": 5,
+          "resamples": 14,
+          "seed": 5153588885934613094,
+          "uncached_branch_tests": 1596441
+        },
+        {
+          "cached_rejections": 12335908,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              453,
+              3,
+              231,
+              453
+            ],
+            [
+              12827,
+              847,
+              3,
+              761,
+              847
+            ],
+            [
+              19240,
+              978,
+              3,
+              764,
+              978
+            ],
+            [
+              25654,
+              440,
+              3,
+              388,
+              440
+            ]
+          ],
+          "estimate": "108687318256.669464",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 2640,
+          "log10_estimate": 11.03617887313456,
+          "replicate": 6,
+          "resamples": 13,
+          "seed": 5153588885934613095,
+          "uncached_branch_tests": 2446828
+        },
+        {
+          "cached_rejections": 11491755,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              931,
+              4,
+              624,
+              931
+            ],
+            [
+              12827,
+              606,
+              4,
+              383,
+              606
+            ],
+            [
+              19240,
+              321,
+              4,
+              215,
+              321
+            ],
+            [
+              25654,
+              726,
+              4,
+              503,
+              726
+            ]
+          ],
+          "estimate": "18891560626.3718803",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 2793,
+          "log10_estimate": 10.276267836345635,
+          "replicate": 7,
+          "resamples": 12,
+          "seed": 5153588885934613096,
+          "uncached_branch_tests": 1793335
+        },
+        {
+          "cached_rejections": 10681325,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              260,
+              2,
+              190,
+              260
+            ],
+            [
+              12827,
+              410,
+              2,
+              382,
+              410
+            ],
+            [
+              19240,
+              345,
+              2,
+              320,
+              345
+            ],
+            [
+              25654,
+              587,
+              2,
+              381,
+              587
+            ]
+          ],
+          "estimate": "5043933101512.20897",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 2400,
+          "log10_estimate": 12.702769317822383,
+          "replicate": 8,
+          "resamples": 16,
+          "seed": 5153588885934613097,
+          "uncached_branch_tests": 2244026
+        },
+        {
+          "cached_rejections": 10485628,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              412,
+              3,
+              280,
+              412
+            ],
+            [
+              12827,
+              314,
+              3,
+              199,
+              314
+            ],
+            [
+              19240,
+              949,
+              3,
+              475,
+              949
+            ],
+            [
+              25654,
+              398,
+              3,
+              236,
+              398
+            ]
+          ],
+          "estimate": "254899546249.193061",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1606,
+          "log10_estimate": 11.40636906237532,
+          "replicate": 9,
+          "resamples": 14,
+          "seed": 5153588885934613098,
+          "uncached_branch_tests": 1394314
+        },
+        {
+          "cached_rejections": 11398204,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              650,
+              2,
+              560,
+              650
+            ],
+            [
+              12827,
+              537,
+              2,
+              515,
+              537
+            ],
+            [
+              19240,
+              354,
+              2,
+              327,
+              354
+            ],
+            [
+              25654,
+              762,
+              2,
+              609,
+              762
+            ]
+          ],
+          "estimate": "390960367426.346916",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1976,
+          "log10_estimate": 11.592132734172253,
+          "replicate": 10,
+          "resamples": 14,
+          "seed": 5153588885934613099,
+          "uncached_branch_tests": 1368822
+        },
+        {
+          "cached_rejections": 12480008,
+          "checkpoint_prefix_unique_ancestors_maxfamily_mass": [
+            [
+              6413,
+              918,
+              5,
+              847,
+              918
+            ],
+            [
+              12827,
+              547,
+              5,
+              490,
+              547
+            ],
+            [
+              19240,
+              687,
+              5,
+              658,
+              687
+            ],
+            [
+              25654,
+              808,
+              3,
+              801,
+              808
+            ]
+          ],
+          "estimate": "2419172183841.27371",
+          "exact": false,
+          "exact_count_at_prefix": 989,
+          "exact_prefix": 292,
+          "largest_particle_weight": 1,
+          "largest_sampled_set": 1568,
+          "log10_estimate": 12.383666780239063,
+          "replicate": 11,
+          "resamples": 15,
+          "seed": 5153588885934613100,
+          "uncached_branch_tests": 1771453
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "sequential.cpp": "30f581f072de63b36e106312de329dace5ae416a96418b87f21feb9370964882",
+    "sequential.py": "2d4546db4acfc22a5a46e80e05d862430a8912439d37861e2bfdfc80ed900b5d"
+  }
+}

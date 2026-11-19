@@ -91,7 +91,9 @@ together. The created pair is separated (its three-distinction bonds have rank 5
 bonds span the equations in none of the 2,242 arrangements.
 - **Counts of readings.** "1,000 and 73" became all 1,034 and all 87. `triples.py` compared the tallies of triples per reading one
   way only, with a one-sided difference of counters, so it missed pairs where one side has more read triples at some reading but
-  none fewer. The script now compares them both ways, and the rerun gives all 1,034 and all 87. T1 and T2 are unchanged.
+  none fewer. The script now compares them both ways, and the rerun gives all 1,034 and all 87
+  ([triples_r1_counts.json](../../artifacts/TRIPLE-GROWN-20261119-001A/TRIPLE-GROWN-20261119-001A-E001_triples/triples_r1_counts.json);
+  the frozen run's `triples.json` is kept as it was). T1 and T2 are unchanged.
 - **Ranks.** "Ranks 2 to 6 against 6 to 9" matched neither population. The ranks are 0 to 6 against 6 to 7 (static) and 2 to 11
   against 9 to 17 (reached). "Never span" stands.
 

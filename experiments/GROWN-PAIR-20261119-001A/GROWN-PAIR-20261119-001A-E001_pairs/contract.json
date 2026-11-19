@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "experiment_id": "GROWN-PAIR-20261119-001A-E001",
+ "ticket": "GROWN-PAIR-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Do two census stages reached by the cheapest complete-round growth have isomorphic exact bond-distance tables while their arrangements are not isomorphic?",
+ "definitions": {
+  "reached": "a census stage of round 1 to 8 (round 0 = start, reported apart)",
+  "states_agree": "some table isomorphism carries one equation space onto the other"
+ },
+ "public_inputs": {
+  "code": "job.py (sha256 a97d7265a0b24769586c193c75e2188ecf53441e4ef1424ddde85f3987b12380), pairs.py (sha256 f074dcd45fb72fc2ac2b3bc61790e06bcf820baa1a8c7774775ea53a3df680e5)",
+  "run": "scripts/longrun.py launch job.py --out runs/grown-pair (10 workers); .venv/bin/python -B pairs.py runs/grown-pair",
+  "reused": "CENSUS-READ-20261118-001A job.py and exact_table_v2.py; UNIQUE-TABLE-20261119-001A pairs.py (growth comparison)"
+ },
+ "forbidden_inputs": [
+  "Changing G, P1-P5 after the run is read"
+ ],
+ "primary_observable": "G, P1-P5",
+ "cheapest_meaningful_control": "the sanity check G (one table per arrangement)",
+ "predictions": {
+  "G": "no class with two tables",
+  "P1": ">= 1 pair",
+  "P2": ">= 1 grown-grown pair",
+  "P3": "none with junctions meeting once on both sides",
+  "P4": "every grown-grown pair grows differently",
+  "P5": ">= 1 grown-grown pair with other states"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run; one declared widening to 20 junctions if P2 fails.",
+ "runtime": "minutes",
+ "amendments": []
+}

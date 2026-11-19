@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "DROPPED-JUNCTION-20261119-001B-E001",
+ "ticket": "DROPPED-JUNCTION-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under parity, over every dropped-junction choice of the completed system, which choices grow the eddies, and does the largest-point (fewest places) rule reproduce the cheapest growth?",
+ "public_inputs": {"code": "droplib.py (c3ed1a00420700da54cb7d9b270e424752ec64e2807d1be5e85aab5823ff86ca), job.py (61135564a4315469f4d8aaefa0ab144ef362d445185c5e9475a32d95ae4269d8), merge.py (3026e1942af199c3e8ceb20986e12682de3e791d1fbd84b34b893501f32a34a1) (sha256)", "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>", "reused": "JOIN-GROWTH joinlib; LOOP-CATALOGUE job_iso.classify, eddy.py, catalogue.json; CLUSTER-ALL posthoc_dimension.json; TOUCH-CENSUS arrlib"},
+ "forbidden_inputs": ["Changing a start, the class rule or a prediction after reading any frozen growth"],
+ "primary_observable": "D1-D3 of research/DROPPED-JUNCTION-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the original choice on every start",
+ "predictions": {"D1": "only the original choice grows the eddies", "D2": "original is the unique largest point on the eddies (forced; a check)", "D3": "the largest-point rule changes the class somewhere among the samples where it is not the original"},
+ "decision_rules": {"each": "held iff no exception (D3: iff at least one)"},
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under an hour",
+ "disclosed_exploration": "pilot (three rings of five, every choice)",
+ "amendments": []
+}

@@ -112,3 +112,39 @@ challenging A108. Goals G17 and G1. **Referee pending.**
 | 1 | A transfer between kinds of junction for the break shapes (`JUNCTION-MAP-20261119-001#1`), after BREAK-EDDIES' referee verdict | 3/3 | 2/3 | as there | Selected · awaiting go-ahead and the verdict |
 | 2 | The many-valued states-only growth where it is undefined: all outcomes over all presentations of the same states | 2/3 — what a states-only growth must give up | 3/3 — the presentations are enumerable on small stages | enumerate the presentations at the 146 undefined points → stop at whether their outcomes agree in count | Alternative · deferred |
 | 3 | Parity's states-only growth over the dropped junction: does any dropped-junction choice reproduce the catalogue's eddies? | 2/3 | 2/3 | on the rings, try every dropped junction → stop at the set of rates | Alternative · deferred |
+
+## Final report as sent (2026-11-19 11:30 UTC)
+
+**Outcome:** Under not-all-equal, a growth that reads only the allowed states exists almost everywhere small, and wherever it exists it is the cheapest growth. On 93% of small stages without a redundant knot, the minimal constraints the states satisfy are exactly the knots. Along every trajectory from every arrangement of up to four knots (1,939), the two growths agree at every round while that holds. Under parity, which distinctions are "loose" is never visible in the states: it is a choice of which junction to drop, as Whitney's theorem says. A108 is confirmed, with its reach measured. 4 of 7 frozen predictions held. Closed, referee pending.
+
+- **Where the two growths part, exactly two things the states can't see:**
+  - **a redundant knot,** one already implied by the others (all 218 such stages). Two knots on the same three distinctions have the states of one knot, so the cheapest growth closes them and the states-only growth grows them;
+  - **several presentations for the same states.** The advisor's example (four "stars" and four "triangles" of the literature's K4) has 18 states and two presentations. There a states-only growth would have to choose. All 146 trajectories that hit this started from a triangle of knots or a double touch.
+- **For your distance premise.** Distances are read from the states. So on 93% of small not-all-equal stages the growth reads nothing distance can't carry. Under parity it always reads a choice beyond them.
+- **Parity in numbers.** Whitney holds on all 145 three-connected same-state pairs (same completed system, a different junction dropped). Overall only 42% of the 2,802 pairs are that simple; the rest also differ by twists at two-point cuts.
+- **Failures:**
+  - the saturated share was 0.93 against a predicted ceiling of 0.92;
+  - my "every disagreement follows an unsaturated stage" was worded too broadly. The first one always does, and 17 later ones come after the paths had already parted;
+  - pure re-choices are 42%, not a majority.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: a growth that reads only the allowed states | **Status:** Partially successful (4 of 7 held) | Exists and agrees wherever the states fix the presentation (93%); parts exactly at redundant knots and at triangles or double touches; parity's looseness is beyond the states |
+| Local direction: A108 | Confirmed, reach measured | The growth reads the presentation; under not-all-equal that matters at two named configurations, under parity everywhere |
+| Broader exploration: the growth and the canonical reading | Known alternatives | States-only where the presentation is fixed; a choice, or a many-valued growth, elsewhere |
+| Long-term goal: G1 | Capability gained | Where distance (read from the states) is enough for the growth, measured |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A transfer between kinds of junction for the break shapes, after BREAK-EDDIES' referee verdict | 3/3 | 2/3 | as in JUNCTION-MAP | Selected · awaiting go-ahead and the verdict |
+| 2 | The many-valued states-only growth where it is undefined (all presentations' outcomes) | 2/3 — what a states-only growth must give up | 3/3 | enumerate the presentations at the 146 undefined points → stop at whether their counts agree | Alternative · deferred |
+| 3 | Parity over the dropped junction: does any choice reproduce the catalogue's eddies? | 2/3 | 2/3 | on the rings, try every dropped junction → stop at the set of rates | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G1 and G17 checkpoint (capability gained). **Assumptions:** A108 moved to Confirmed (reopenable), with a history line on its measured reach. **Basket:** `NAE-GROWTH-20261119-001#1` taken. **Advisor:** Fable 5.2, at the design stage. This time its answer stayed within its text. It gave the states-only rule, the K4 example (replayed exactly) and the parity reading through Whitney (held on all 145), and guessed the saturated share at 85–95% (it was 93%). Its local "forcing" test didn't predict saturation.
+
+**Referee hand-off.** The decision note is `research/STATES-GROWTH-20261119-001/states_growth.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- `statelib.nae_core` (the search cap is one place above the largest knot);
+- that saturated stages can't collide;
+- the completed-system graphs and the three-connectivity test behind D1.

@@ -1,0 +1,71 @@
+{
+ "schema_version": 3,
+ "artifact_id": "CAP-CHAINS-20261119-001A-P001",
+ "canonical_id": "CAP-CHAINS-20261119-001A-P001",
+ "proof": "CAP-CHAINS-20261119-001A-P001",
+ "ticket": "CAP-CHAINS-20261119-001A",
+ "kind": "proof",
+ "status": "Partial",
+ "title": "Chains under a cap on places",
+ "claim": "Theorem 1: in the proved class, with every knot live and at most five places, every piece of the relayed map carries at most two rays, a relay included (Lemma 1: no 3-, 4-, 6-cycles, groups are candidate pairs; Lemma 2: the non-leaves form one path or one cycle). Corollary 2: such tree starts close or grow in one or two dimensions; cycle cores carry no rays. Theorem 3: at six places with every knot live, and at five places with dead knots, there are tree starts in the class with any number of rays in one piece.",
+ "standard_statement": "Caterpillars (Harary and Schwenk 1973); the identification line's theorems.",
+ "prior_work": "DOUBLE-IDENT-20261119-001 (multigraphs, dead knots as blocks), RELAY-IDENT-20261119-001 (relays, tree dimension), WEIGHTINGS-20261119-001 (the bare-tree caterpillar lemma, post hoc).",
+ "dependencies": [
+  "DOUBLE-IDENT-20261119-001",
+  "RELAY-IDENT-20261119-001",
+  "WEIGHTINGS-20261119-001"
+ ],
+ "completion_gate": "machine_check.py: C1-C8 of proof.md; the referee reviews the proof.",
+ "validation": {
+  "level": "V1",
+  "classification": "V1-separate-algorithm-same-task",
+  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "independence": "machine_check.py counts pieces and rays from the definitions on an exhaustive graph enumeration and reads realizable starts with DOUBLE-IDENT's code",
+  "novelty": "extension of the identification line"
+ },
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "safe_to_conclude": {
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "source_contribution": 0,
+ "remaining_obligations": [
+  "Run machine_check.py (C1-C8)"
+ ],
+ "paths": {
+  "manifest": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/manifest.json",
+  "identity": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/identity.json",
+  "proof": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/proof.md",
+  "result": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/result.json",
+  "machine_check": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/machine_check.py",
+  "machine_check_output": "proofs/CAP-CHAINS-20261119-001A/CAP-CHAINS-20261119-001A-P001_caps/machine_check.json"
+ },
+ "attained_result": "Statement and proof written; machine check pending."
+}

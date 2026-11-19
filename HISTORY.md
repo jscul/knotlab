@@ -4,6 +4,16 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the cluster rule refereed
+
+- The study of one cluster rule for every start (`CLUSTER-ALL-20261119-001`,
+  [decision note](research/CLUSTER-ALL-20261119-001/cluster_all.md)) was refereed against the referee's own growth engine and
+  confirmed, no Block. The rule held on 599 of 600 five-knot and 297 of 300 six-knot arrangements in scope, and one size past on
+  2,985 of 2,986 seven-knot ones; the one miss has the study's mechanism.
+- **Clarified (not a block).** The scope's last cut was drawn after the 38 pilot arrangements it excludes had missed, which the
+  record now says. The chain-count reading matches 15,024 of the 15,261 dimensions as coded, and all of them with two named
+  conventions (closing with no live knot; a bare ring as one chain).
+
 ## 19 November 2026: a referee's sentence on hidden junctions scoped
 
 - The referee's report on `VARIABLE-OUTPUT-READER-20261118-001K` said that a full-table symmetry moves a junction only where the

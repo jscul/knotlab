@@ -1,11 +1,14 @@
 # Does one cluster rule predict every growth of touching knots?
 
 Epic `CLUSTER-ALL-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-PAIR-20261119-001#1`. Goals
-G17 and G2. **Referee pending.**
+G17 and G2. **Refereed:** report [R1](referee-R1/report.md), confirmed with two wording points, no Block, folded in on 19
+November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `31617b54c` at 02:21 UTC after a pilot on every
-  census arrangement of up to four knots (disclosed).
+  census arrangement of up to four knots (disclosed). The scope's last cut (a first-round group of three sharing two knots with
+  another block) was drawn after the 38 pilot arrangements it excludes had missed; the pre-registration reports them as out of
+  scope without saying so (referee R1).
 - The test ran from 02:22 UTC through the shared runner (`CLUSTER-ALL-B1`, `runs/cluster-all`, 557 cases on 6 workers, all ok by
   02:25 UTC).
 - Code: [clusters.py, job.py, merge.py, checks.py](../../experiments/CLUSTER-ALL-20261119-001B/CLUSTER-ALL-20261119-001B-E001_census/),
@@ -43,7 +46,9 @@ words:
     finished piece that must go on because the rest of the start still holds loose distinctions feeds two through its relay. A bare
     ring is itself one chain once unrolled.
   - This reproduces the census's measured dimension in all 15,261 polynomial growths in scope, from 0 to 4 (3,623 close, 2,032
-    one-dimensional, 9,559 two, 40 three, 7 four), and its 13 fast rings as exponential.
+    one-dimensional, 9,559 two, 40 three, 7 four), and its 13 fast rings as exponential. That needs two conventions which
+    `dimension.py` leaves unset: the 234 that close with no live knot count as closing, and the 3 bare rings count as one chain.
+    As coded, the chain count matches 15,024 (referee R1).
   - So two is typical because a relay, or two knots with one chain each, is the commonest way for a piece to keep growing. Three
     and four need three or four chains on one piece: `FIRST-KNOT-20261118-001`'s mutually touching knots.
 - **Rules within rules.** Each piece's count is the same recursion as for two rings: a knot, then for each further block "skip it
@@ -62,7 +67,7 @@ words:
 
 | # | Prediction | Verdict | Reading |
 | --- | --- | --- | --- |
-| G | gate checks | held | the pilot replays (1,901 equal, 38 out of scope); hand cases; both mutants differ; RING-PAIR's 17 fresh starts agree |
+| G | gate checks | held | the pilot replays (1,901 equal; 38 out of scope, by a cut drawn after they missed); hand cases; both mutants differ; RING-PAIR's 17 fresh starts agree |
 | P1 | every in-scope five-knot census arrangement equals the rule | **held** | 24,383 of 24,383: 10,695 stall, 3,194 close, 10,494 grow (2 to the junction cap); 119 out of scope |
 | P2 | every in-scope six-knot sample equals the rule | **failed** | 1,989 of 1,991; the two misses differ from round 3, both with two sunflowers sharing two knots |
 | P3 | every in-scope falsifier equals the rule | **failed** | 9 of 11: two triangles sharing one or two knots, a ring of six, the unequal ring of five, two relays, the triangles, the ring of seven and three touching five-place knots all hold; the overlapping sunflowers miss |
@@ -110,6 +115,22 @@ What this adds:
   sample reported by class and a horizon check. All are done.
 - It gave the relay's hyperedge correction.
 - It proposed the falsifiers. Its "partly overlapping simplices; the pair bc arises twice" found the break.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread against its own growth engine
+(FIRST-KNOT-R1's, with an exact GF(2) implied-parity test): confirmed, no Block.
+- **Reproduced.** 599 of 600 random five-knot arrangements equal the rule (1 out of scope). Six knots: 297 of 300 equal, 2 out of
+  scope, and 1 miss, the study's own seed 71946; both recorded six-knot misses differ from round 3. Of the falsifiers, 9 are
+  equal, 2 miss (both overlapping sunflowers, with two round-3 junctions on the same four knots) and 1 is out of scope.
+- **One size past.** 2,985 of the 2,986 in-scope seven-knot arrangements are equal, with the scope at 99.5%. The one miss (seed
+  91758) is the study's mechanism: block {2, 4, 5, 6} with the pair 4–5 unlinked, 12 junctions against 11 at round 3.
+- **The clauses** agree with A104's fewest rule. The hyperedge clause is lightly sampled on the referee's side; T1 covers its 748
+  five-knot starts. The referee's own measured dimension equals the chain count on 300 of 300 growing arrangements.
+- **Folded in the same day**, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md` (both Not a block):
+  1. **Disclosure.** The scope's last cut was drawn after the 38 pilot arrangements it excludes had missed (Record). The frozen
+     tests are unaffected: the predicate was fixed by hash before T1.
+  2. **Wording.** "All 15,261" needs two named conventions; as coded the chain count matches 15,024 (The answer).
 
 ## Position
 

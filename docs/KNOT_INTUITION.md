@@ -619,7 +619,7 @@ polynomial, with two rings it branches and the counts follow C λ^t t^(-5/2),
 the law of clusters on a branching map
 ([decision note](../research/RING-PAIR-20261119-001/ring_pair.md)).
 Does that rule cover every start (`CLUSTER-ALL-20261119-001`, frozen test,
-referee pending)? Nearly: with the floor's endless chains and the relay of a
+refereed)? Nearly: with the floor's endless chains and the relay of a
 finished piece added, it gives every round of all 24,383 five-knot census
 arrangements in its scope and 1,989 of 1,991 six-knot ones; it breaks where two
 sunflowers share two knots and one cluster carries two junctions. Read on the

@@ -176,10 +176,10 @@ def main():
                  'out_of_scope_exponential': sum(is_exp(x['growth']) for x in U if not x['scope'] and not x['meet'] and not x['broken'])}
     out['U1']['pass'] = out['U1']['meet_exponential'] == 0
     out['U2'] = {'minimal_by_growth': minimal_by_growth(U)}
-    out['verdicts'] = {k: out[k]['pass'] for k in ('E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'I1', 'I2', 'I3', 'R1', 'R2', 'U1')}
+    out['verdicts'] = {k: bool(out[k]['pass']) for k in ('E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'I1', 'I2', 'I3', 'R1', 'R2', 'U1')}
     Path(sys.argv[2]).parent.mkdir(parents=True, exist_ok=True)
     Path(sys.argv[2]).write_text(json.dumps(out, indent=1, default=str))
-    print(json.dumps(out['verdicts']))
+    print(json.dumps(out['verdicts'], default=bool))
 
 
 if __name__ == '__main__':

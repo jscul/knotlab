@@ -1,0 +1,763 @@
+{
+  "eight_site_edge_control": {
+    "labeled_4_by_4_graphs_with_13_edges": 560,
+    "K33_free": 96,
+    "admissible_last_sites": 0
+  },
+  "nine_site_shape_coverage": {
+    "labeled_4_by_5_graphs_with_15_edges": 15504,
+    "K33_free": 3480,
+    "latest_on_four_site_side": 240,
+    "latest_on_five_site_side": 720
+  },
+  "saturated_order_counts": {
+    "latest_on_four_site_side": {
+      "orders_by_seed": {
+        "p": 16,
+        "q": 16,
+        "r": 16,
+        "u": 120,
+        "v": 120
+      },
+      "possible_orders_and_input_receiver_sets_by_incoming_count": {
+        "0": 288,
+        "1": 0,
+        "2": 0
+      }
+    },
+    "latest_on_five_site_side": {
+      "orders_by_seed": {
+        "p": 8,
+        "q": 8,
+        "r": 40,
+        "s": 40
+      },
+      "possible_orders_and_input_receiver_sets_by_incoming_count": {
+        "0": 96,
+        "1": 0,
+        "2": 0
+      }
+    }
+  },
+  "minimum_shore_sites": 9,
+  "minimum_source_width": 21,
+  "minimum_proper_source_width": 23,
+  "pair_encoding": "hexadecimal K in lexicographic upper-triangle order, ff for infinity",
+  "replayed_minimum_sources": {
+    "latest_on_four_site_side": {
+      "history": [
+        {
+          "site": "u",
+          "parents": [],
+          "inputs": [],
+          "fresh": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "site": "a",
+          "parents": [
+            "u"
+          ],
+          "inputs": [
+            0
+          ],
+          "fresh": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "site": "b",
+          "parents": [
+            "u"
+          ],
+          "inputs": [
+            1
+          ],
+          "fresh": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "site": "v",
+          "parents": [
+            "a",
+            "b"
+          ],
+          "inputs": [
+            5,
+            8
+          ],
+          "fresh": [
+            9,
+            10
+          ]
+        },
+        {
+          "site": "c",
+          "parents": [
+            "u",
+            "v"
+          ],
+          "inputs": [
+            2,
+            9
+          ],
+          "fresh": [
+            11,
+            12
+          ]
+        },
+        {
+          "site": "p",
+          "parents": [
+            "a",
+            "b"
+          ],
+          "inputs": [
+            3,
+            6
+          ],
+          "fresh": [
+            13,
+            14
+          ]
+        },
+        {
+          "site": "q",
+          "parents": [
+            "a",
+            "c"
+          ],
+          "inputs": [
+            4,
+            11
+          ],
+          "fresh": [
+            15,
+            16
+          ]
+        },
+        {
+          "site": "r",
+          "parents": [
+            "b",
+            "c"
+          ],
+          "inputs": [
+            7,
+            12
+          ],
+          "fresh": [
+            17,
+            18
+          ]
+        },
+        {
+          "site": "x",
+          "parents": [
+            "p",
+            "q",
+            "r"
+          ],
+          "inputs": [
+            13,
+            15,
+            17
+          ],
+          "fresh": [
+            19,
+            20
+          ]
+        }
+      ],
+      "junction_supports": {
+        "u": [
+          0,
+          1,
+          2
+        ],
+        "a": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "b": [
+          1,
+          6,
+          7,
+          8
+        ],
+        "v": [
+          5,
+          8,
+          9,
+          10
+        ],
+        "c": [
+          2,
+          9,
+          11,
+          12
+        ],
+        "p": [
+          3,
+          6,
+          13,
+          14
+        ],
+        "q": [
+          4,
+          11,
+          15,
+          16
+        ],
+        "r": [
+          7,
+          12,
+          17,
+          18
+        ],
+        "x": [
+          13,
+          15,
+          17,
+          19,
+          20
+        ]
+      },
+      "initial_triple_join": [
+        13,
+        15,
+        17
+      ],
+      "legal_triples_before": [
+        [
+          13,
+          15,
+          17
+        ],
+        [
+          13,
+          15,
+          18
+        ],
+        [
+          13,
+          16,
+          17
+        ],
+        [
+          13,
+          16,
+          18
+        ],
+        [
+          14,
+          15,
+          17
+        ],
+        [
+          14,
+          15,
+          18
+        ],
+        [
+          14,
+          16,
+          17
+        ],
+        [
+          14,
+          16,
+          18
+        ]
+      ],
+      "legal_triples_after": [],
+      "before": {
+        "width": 19,
+        "total_cuts": 255,
+        "minimal_supports": 141,
+        "large_short_cuts": [],
+        "number_of_large_short_cuts_by_shore_size": {}
+      },
+      "after": {
+        "width": 21,
+        "total_cuts": 511,
+        "minimal_supports": 289,
+        "large_short_cuts": [
+          {
+            "shore": [
+              "u",
+              "a",
+              "b",
+              "v",
+              "c",
+              "p",
+              "q",
+              "r",
+              "x"
+            ],
+            "boundary": [
+              10,
+              14,
+              16,
+              18,
+              19,
+              20
+            ],
+            "is_bond": true
+          }
+        ],
+        "number_of_large_short_cuts_by_shore_size": {
+          "9": 1
+        }
+      },
+      "proper_shore_control": {
+        "outside_binary_support": [
+          10,
+          14,
+          21,
+          22
+        ],
+        "width": 23,
+        "total_cuts": 1023,
+        "minimal_supports": 463,
+        "large_short_cuts": [
+          {
+            "shore": [
+              "u",
+              "a",
+              "b",
+              "v",
+              "c",
+              "p",
+              "q",
+              "r",
+              "x"
+            ],
+            "boundary": [
+              10,
+              14,
+              16,
+              18,
+              19,
+              20
+            ],
+            "is_bond": true
+          },
+          {
+            "shore": [
+              "u",
+              "a",
+              "b",
+              "v",
+              "c",
+              "p",
+              "q",
+              "r",
+              "x",
+              "outside_binary"
+            ],
+            "boundary": [
+              16,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "is_bond": true
+          }
+        ],
+        "number_of_large_short_cuts_by_shore_size": {
+          "9": 1,
+          "10": 1
+        }
+      },
+      "full_K_upper_triangle_hex": "030304040405050505060505060606060707090903050505040404050605050606070706060909050505050505040604040707060606060909040404060606060607040406060707070704060706060604060606040407070707060604040406060606060607070808040406060706040407070606070704060606040606070704040707040406060606070706060808040404070706060606080806060706070607060606040707040406060707070706060404070704050705070505070607060606040507050507060606040505060605",
+      "verified_relabeling": [
+        14,
+        16,
+        17,
+        18,
+        10,
+        0,
+        4,
+        6,
+        7,
+        15,
+        3,
+        8,
+        1,
+        12,
+        11,
+        20,
+        13,
+        5,
+        2,
+        19,
+        9
+      ]
+    },
+    "latest_on_five_site_side": {
+      "history": [
+        {
+          "site": "p",
+          "parents": [],
+          "inputs": [],
+          "fresh": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "site": "b",
+          "parents": [
+            "p"
+          ],
+          "inputs": [
+            0
+          ],
+          "fresh": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "site": "r",
+          "parents": [
+            "b"
+          ],
+          "inputs": [
+            3
+          ],
+          "fresh": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "site": "z",
+          "parents": [
+            "p",
+            "r"
+          ],
+          "inputs": [
+            2,
+            7
+          ],
+          "fresh": [
+            9,
+            10
+          ]
+        },
+        {
+          "site": "s",
+          "parents": [
+            "b",
+            "z"
+          ],
+          "inputs": [
+            4,
+            10
+          ],
+          "fresh": [
+            11,
+            12
+          ]
+        },
+        {
+          "site": "a",
+          "parents": [
+            "r",
+            "s"
+          ],
+          "inputs": [
+            6,
+            11
+          ],
+          "fresh": [
+            13,
+            14
+          ]
+        },
+        {
+          "site": "q",
+          "parents": [
+            "a",
+            "z"
+          ],
+          "inputs": [
+            13,
+            9
+          ],
+          "fresh": [
+            15,
+            16
+          ]
+        },
+        {
+          "site": "c",
+          "parents": [
+            "p",
+            "q"
+          ],
+          "inputs": [
+            1,
+            15
+          ],
+          "fresh": [
+            17,
+            18
+          ]
+        },
+        {
+          "site": "x",
+          "parents": [
+            "a",
+            "b",
+            "c"
+          ],
+          "inputs": [
+            14,
+            5,
+            17
+          ],
+          "fresh": [
+            19,
+            20
+          ]
+        }
+      ],
+      "junction_supports": {
+        "p": [
+          0,
+          1,
+          2
+        ],
+        "b": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "r": [
+          3,
+          6,
+          7,
+          8
+        ],
+        "z": [
+          2,
+          7,
+          9,
+          10
+        ],
+        "s": [
+          4,
+          10,
+          11,
+          12
+        ],
+        "a": [
+          6,
+          11,
+          13,
+          14
+        ],
+        "q": [
+          13,
+          9,
+          15,
+          16
+        ],
+        "c": [
+          1,
+          15,
+          17,
+          18
+        ],
+        "x": [
+          14,
+          5,
+          17,
+          19,
+          20
+        ]
+      },
+      "initial_triple_join": [
+        5,
+        14,
+        17
+      ],
+      "legal_triples_before": [
+        [
+          5,
+          14,
+          17
+        ],
+        [
+          5,
+          14,
+          18
+        ]
+      ],
+      "legal_triples_after": [],
+      "before": {
+        "width": 19,
+        "total_cuts": 255,
+        "minimal_supports": 152,
+        "large_short_cuts": [],
+        "number_of_large_short_cuts_by_shore_size": {}
+      },
+      "after": {
+        "width": 21,
+        "total_cuts": 511,
+        "minimal_supports": 303,
+        "large_short_cuts": [
+          {
+            "shore": [
+              "p",
+              "b",
+              "r",
+              "z",
+              "s",
+              "a",
+              "q",
+              "c",
+              "x"
+            ],
+            "boundary": [
+              8,
+              12,
+              16,
+              18,
+              19,
+              20
+            ],
+            "is_bond": true
+          }
+        ],
+        "number_of_large_short_cuts_by_shore_size": {
+          "9": 1
+        }
+      },
+      "proper_shore_control": {
+        "outside_binary_support": [
+          8,
+          12,
+          21,
+          22
+        ],
+        "width": 23,
+        "total_cuts": 1023,
+        "minimal_supports": 468,
+        "large_short_cuts": [
+          {
+            "shore": [
+              "p",
+              "b",
+              "r",
+              "z",
+              "s",
+              "a",
+              "q",
+              "c",
+              "x"
+            ],
+            "boundary": [
+              8,
+              12,
+              16,
+              18,
+              19,
+              20
+            ],
+            "is_bond": true
+          },
+          {
+            "shore": [
+              "p",
+              "b",
+              "r",
+              "z",
+              "s",
+              "a",
+              "q",
+              "c",
+              "x",
+              "outside_binary"
+            ],
+            "boundary": [
+              16,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "is_bond": true
+          }
+        ],
+        "number_of_large_short_cuts_by_shore_size": {
+          "9": 1,
+          "10": 1
+        }
+      },
+      "full_K_upper_triangle_hex": "030304040406050605050606070705070505070703050505070507050507070607040604040707050505060406040406060608050605050808040404040406060606060607080707070704060606060404040606070807070707060606070606060705070705070505040406060406040406060708070704040406060606060607070808060606060606070607060606040606040604040606080804040606060607070808040404060607080707060607060706060604040406060707060605070505040404070706060606040505060605",
+      "verified_relabeling": [
+        14,
+        16,
+        17,
+        18,
+        10,
+        0,
+        4,
+        6,
+        7,
+        15,
+        3,
+        8,
+        1,
+        12,
+        11,
+        20,
+        13,
+        5,
+        2,
+        19,
+        9
+      ]
+    }
+  },
+  "full_scalar_comparison_of_minimum_sources": {
+    "self": {
+      "latest_on_four_site_side": {
+        "automorphisms": 12,
+        "quotient_automorphisms": 6,
+        "permutes_triple_menu": true,
+        "first_adverse_permutation": null
+      },
+      "latest_on_five_site_side": {
+        "automorphisms": 4,
+        "quotient_automorphisms": 2,
+        "permutes_triple_menu": true,
+        "first_adverse_permutation": null
+      }
+    },
+    "cross": {
+      "full_table_isometry_exists": false
+    }
+  }
+}

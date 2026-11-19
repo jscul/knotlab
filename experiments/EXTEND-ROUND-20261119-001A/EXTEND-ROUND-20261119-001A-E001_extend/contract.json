@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "EXTEND-ROUND-20261119-001A-E001",
+ "ticket": "EXTEND-ROUND-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Does a bond-distance table isometry that keeps what the round reads (live junctions, loose counts, the family of live sets met by one junction) extend to an isometry of the next round's tables?",
+ "definitions": {
+  "R": "live junctions with loose counts, and the family of live sets met by one junction",
+  "keeps": "loose onto loose, live stars onto live stars, F onto F",
+  "extension": "new junctions by parent sets, taken and fresh matched, twins re-paired"
+ },
+ "public_inputs": {
+  "code": "extend.py (sha256 ae94174489b410873f31c18c4230795c1de25f1b5e318e4dab9eef742fbb7084)",
+  "run": ".venv/bin/python -B extend.py",
+  "reused": "PARENT-RULE-20261119-001B plib.py, census_job.py, static_pairs.json; GROW-SMALL-20261119-001A grow_pairs.json, origin.json; CENSUS-READ exact_table_v2.py"
+ },
+ "forbidden_inputs": [
+  "Changing X1, X1', X2 after the run"
+ ],
+ "primary_observable": "X1, X1', X2",
+ "cheapest_meaningful_control": "the extension is checked entry by entry; next-table isometry existence recorded separately",
+ "predictions": {
+  "X1": "every tested extension is an isometry",
+  "X1'": "every R-keeping pair has an extending one",
+  "X2": "rounds correspond under every R-keeping isometry"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run.",
+ "runtime": "minutes",
+ "amendments": []
+}

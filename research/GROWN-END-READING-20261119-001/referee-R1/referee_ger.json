@@ -1,0 +1,1611 @@
+{
+ "NAMED": {
+  "minimum meet-once arrangement 1": {
+   "starting junctions": 7,
+   "size": {
+    "junctions": 12,
+    "distinctions": 23
+   },
+   "counts": {
+    "pair-table maps": 8,
+    "extend": 4,
+    "carry the equations": 4,
+    "keep flip": 8,
+    "keep flip: extend": 4,
+    "keep flip: carry the equations": 4,
+    "keep triples": 4,
+    "keep triples: extend": 4,
+    "keep triples: carry the equations": 4,
+    "keep triple existence": 4,
+    "keep triple existence: extend": 4,
+    "keep triple existence: carry the equations": 4,
+    "keep triples and flip": 4,
+    "keep triples and flip: extend": 4,
+    "keep triples and flip: carry the equations": 4
+   },
+   "triple-keeping maps that fail": []
+  },
+  "minimum meet-once arrangement 2": {
+   "starting junctions": 8,
+   "size": {
+    "junctions": 12,
+    "distinctions": 23
+   },
+   "counts": {
+    "pair-table maps": 8,
+    "extend": 4,
+    "carry the equations": 4,
+    "keep flip": 8,
+    "keep flip: extend": 4,
+    "keep flip: carry the equations": 4,
+    "keep triples": 4,
+    "keep triples: extend": 4,
+    "keep triples: carry the equations": 4,
+    "keep triple existence": 4,
+    "keep triple existence: extend": 4,
+    "keep triple existence: carry the equations": 4,
+    "keep triples and flip": 4,
+    "keep triples and flip: extend": 4,
+    "keep triples and flip: carry the equations": 4
+   },
+   "triple-keeping maps that fail": []
+  },
+  "minimum meet-once arrangement 3": {
+   "starting junctions": 8,
+   "size": {
+    "junctions": 12,
+    "distinctions": 23
+   },
+   "counts": {
+    "pair-table maps": 8,
+    "extend": 4,
+    "carry the equations": 4,
+    "keep flip": 8,
+    "keep flip: extend": 4,
+    "keep flip: carry the equations": 4,
+    "keep triples": 4,
+    "keep triples: extend": 4,
+    "keep triples: carry the equations": 4,
+    "keep triple existence": 4,
+    "keep triple existence: extend": 4,
+    "keep triple existence: carry the equations": 4,
+    "keep triples and flip": 4,
+    "keep triples and flip: extend": 4,
+    "keep triples and flip: carry the equations": 4
+   },
+   "triple-keeping maps that fail": []
+  },
+  "repeated-meeting six-junction start": {
+   "starting junctions": 6,
+   "size": {
+    "junctions": 10,
+    "distinctions": 21
+   },
+   "counts": {
+    "pair-table maps": 48,
+    "extend": 16,
+    "carry the equations": 16,
+    "keep flip": 16,
+    "keep flip: extend": 16,
+    "keep flip: carry the equations": 16,
+    "keep triples": 16,
+    "keep triples: extend": 16,
+    "keep triples: carry the equations": 16,
+    "keep triple existence": 16,
+    "keep triple existence: extend": 16,
+    "keep triple existence: carry the equations": 16,
+    "keep triples and flip": 16,
+    "keep triples and flip: extend": 16,
+    "keep triples and flip: carry the equations": 16
+   },
+   "triple-keeping maps that fail": []
+  }
+ },
+ "FORM": {
+  "formulas": {
+   "counts": {
+    "graphs": 400,
+    "H marks checked": 10718,
+    "H marks: K = min(B_H, L_H + lambda)": 10718,
+    "mixed checked": 86242,
+    "mixed: K = L_H + L_Q": 86242
+   },
+   "disagreements": []
+  },
+  "lambda under growth": {
+   "growths": 34,
+   "lambda never rises": 34,
+   "lambda stays 1": 34
+  }
+ },
+ "BIG": {
+  "start junctions, distinctions": [
+   235,
+   635
+  ],
+  "start admissible": {
+   "connected": true,
+   "meets once": true,
+   "places >= 3": true,
+   "every support a bond": true
+  },
+  "stages (junctions, distinctions)": [
+   [
+    235,
+    635
+   ],
+   [
+    239,
+    643
+   ],
+   [
+    245,
+    655
+   ],
+   [
+    253,
+    671
+   ]
+  ],
+  "round 1: new junctions (parents, fresh)": [
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "stage 1": {
+   "fixes every distinction of every live junction": true,
+   "keeps the flip relation (pairs with the same holders)": true,
+   "image of h0's equation outside the span": true,
+   "junction equations whose image is outside the span": 2,
+   "holder sets held by two or more distinctions (all one live junction's loose twins?)": [
+    4,
+    true
+   ],
+   "certificate found (size)": 4,
+   "certificate: every star even, image odd": true,
+   "the referee's structural certificate": {
+    "four-distinction routes meeting the image oddly (every star even)": 72,
+    "one": [
+     "('uw', 2, (0, 2))",
+     "('uw', 2, (2, 18))",
+     "('y', (0, 2))",
+     "('y', (2, 18))"
+    ]
+   }
+  },
+  "stage 2": {
+   "fixes every distinction of every live junction": true,
+   "keeps the flip relation (pairs with the same holders)": true,
+   "image of h0's equation outside the span": true,
+   "junction equations whose image is outside the span": 2,
+   "holder sets held by two or more distinctions (all one live junction's loose twins?)": [
+    6,
+    true
+   ]
+  },
+  "stage 3": {
+   "fixes every distinction of every live junction": true,
+   "keeps the flip relation (pairs with the same holders)": true,
+   "image of h0's equation outside the span": true,
+   "junction equations whose image is outside the span": 2,
+   "holder sets held by two or more distinctions (all one live junction's loose twins?)": [
+    8,
+    true
+   ]
+  },
+  "h0-h1 distinction-disjoint routes in the stage (max flow)": 105,
+  "h0-h1 routes in the bare split core": 105,
+  "sigma an automorphism of the identified core": true,
+  "sigma an automorphism of the split core": false,
+  "sigma fixes e": true,
+  "small bonds": {
+   "mark sets with a bond below 105 (by number of marks)": {
+    "1": 45,
+    "2": 990,
+    "3": 14190
+   },
+   "largest exhibited bond (by number of marks)": {
+    "1": 3,
+    "2": 41,
+    "3": 61
+   },
+   "mark sets without one found": 0,
+   "examples without one": []
+  },
+  "the study's literal start": {
+   "their start junctions, distinctions": [
+    235,
+    635
+   ],
+   "their start admissible": {
+    "connected": true,
+    "meets once": true,
+    "places >= 3": true,
+    "every support a bond": true
+   },
+   "degree and loose multisets agree": true,
+   "WL hashes agree": true,
+   "isomorphic as junction graphs with places and loose counts": true,
+   "their certificate meets every start support evenly": true,
+   "their certificate meets their image equation oddly": true,
+   "their image equation has h0's size": true
+  }
+ },
+ "CEN-15": {
+  "counts": {
+   "admissible starts": 23685,
+   "open stages": 9340,
+   "pair-table maps": 51835,
+   "extend": 51835,
+   "carry the equations": 23418,
+   "keep flip": 51835,
+   "keep flip: extend": 51835,
+   "keep flip: carry the equations": 23418,
+   "keep triples": 23418,
+   "keep triples: extend": 23418,
+   "keep triples: carry the equations": 23418,
+   "keep triple existence": 24233,
+   "keep triple existence: extend": 24233,
+   "keep triple existence: carry the equations": 23418,
+   "keep triples and flip": 23418,
+   "keep triples and flip: extend": 23418,
+   "keep triples and flip: carry the equations": 23418,
+   "stages where every pair-table map extends": 9340,
+   "stages where every triple-keeping map extends": 9340,
+   "stages where triple existence keeps an equation-changing map": 52
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": [
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      11
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      7
+     ],
+     [
+      2,
+      8,
+      12
+     ],
+     [
+      3,
+      9,
+      13
+     ],
+     [
+      4,
+      6,
+      10
+     ],
+     [
+      5,
+      7,
+      8,
+      9,
+      10,
+      14
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 17
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      11
+     ],
+     [
+      0,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      12
+     ],
+     [
+      2,
+      8,
+      13
+     ],
+     [
+      4,
+      9,
+      10
+     ],
+     [
+      3,
+      5,
+      9
+     ],
+     [
+      6,
+      7,
+      8,
+      10,
+      14
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 17
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      12,
+      13
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ],
+     [
+      3,
+      11,
+      14
+     ],
+     [
+      5,
+      7,
+      9
+     ],
+     [
+      4,
+      6,
+      8,
+      10,
+      11
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 18
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      12
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ],
+     [
+      3,
+      11,
+      13,
+      14
+     ],
+     [
+      5,
+      7,
+      9
+     ],
+     [
+      4,
+      6,
+      8,
+      10,
+      11
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 18
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      12,
+      13
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      7
+     ],
+     [
+      2,
+      8,
+      9
+     ],
+     [
+      4,
+      10,
+      11
+     ],
+     [
+      3,
+      6,
+      8,
+      10,
+      14
+     ],
+     [
+      5,
+      7,
+      9,
+      11
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 18
+    }
+   }
+  ]
+ },
+ "CEN-14": {
+  "counts": {
+   "admissible starts": 6720,
+   "open stages": 3095,
+   "pair-table maps": 18715,
+   "extend": 18715,
+   "carry the equations": 8566,
+   "keep flip": 18715,
+   "keep flip: extend": 18715,
+   "keep flip: carry the equations": 8566,
+   "keep triples": 8566,
+   "keep triples: extend": 8566,
+   "keep triples: carry the equations": 8566,
+   "keep triple existence": 8854,
+   "keep triple existence: extend": 8854,
+   "keep triple existence: carry the equations": 8566,
+   "keep triples and flip": 8566,
+   "keep triples and flip: extend": 8566,
+   "keep triples and flip: carry the equations": 8566,
+   "stages where every pair-table map extends": 3095,
+   "stages where every triple-keeping map extends": 3095,
+   "stages where triple existence keeps an equation-changing map": 15
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": [
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      7,
+      10
+     ],
+     [
+      2,
+      8,
+      11
+     ],
+     [
+      3,
+      4,
+      9
+     ],
+     [
+      6,
+      8,
+      12
+     ],
+     [
+      5,
+      7,
+      9,
+      13
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 16
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ],
+     [
+      3,
+      11,
+      12
+     ],
+     [
+      5,
+      7,
+      9
+     ],
+     [
+      4,
+      6,
+      8,
+      10,
+      13
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 17
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      11
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      7
+     ],
+     [
+      2,
+      8,
+      9
+     ],
+     [
+      3,
+      10,
+      12
+     ],
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      5,
+      7,
+      9,
+      10,
+      13
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 17
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      0,
+      3,
+      4,
+      11,
+      12
+     ],
+     [
+      1,
+      5,
+      6
+     ],
+     [
+      2,
+      7,
+      8
+     ],
+     [
+      3,
+      9,
+      10,
+      13
+     ],
+     [
+      5,
+      7,
+      9
+     ],
+     [
+      4,
+      6,
+      8,
+      10
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 17
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      9
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      10,
+      11
+     ],
+     [
+      2,
+      7,
+      12
+     ],
+     [
+      3,
+      4,
+      8
+     ],
+     [
+      5,
+      6,
+      7,
+      8,
+      13
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 18
+    }
+   }
+  ]
+ },
+ "CEN-13": {
+  "counts": {
+   "admissible starts": 2019,
+   "open stages": 1025,
+   "pair-table maps": 6574,
+   "extend": 6574,
+   "carry the equations": 3090,
+   "keep flip": 6574,
+   "keep flip: extend": 6574,
+   "keep flip: carry the equations": 3090,
+   "keep triples": 3090,
+   "keep triples: extend": 3090,
+   "keep triples: carry the equations": 3090,
+   "keep triple existence": 3258,
+   "keep triple existence: extend": 3258,
+   "keep triple existence: carry the equations": 3090,
+   "keep triples and flip": 3090,
+   "keep triples and flip: extend": 3090,
+   "keep triples and flip: carry the equations": 3090,
+   "stages where every pair-table map extends": 1025,
+   "stages where every triple-keeping map extends": 1025,
+   "stages where triple existence keeps an equation-changing map": 5
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": [
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      9
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      10
+     ],
+     [
+      2,
+      7,
+      11
+     ],
+     [
+      3,
+      4,
+      8
+     ],
+     [
+      5,
+      6,
+      7,
+      8,
+      12
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 8,
+     "distinctions": 15
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      10,
+      11
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      7
+     ],
+     [
+      2,
+      8,
+      9
+     ],
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      3,
+      5,
+      7,
+      9,
+      12
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 8,
+     "distinctions": 16
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      9,
+      10
+     ],
+     [
+      0,
+      3,
+      4
+     ],
+     [
+      1,
+      5,
+      6
+     ],
+     [
+      2,
+      7,
+      8
+     ],
+     [
+      3,
+      5,
+      7,
+      11,
+      12
+     ],
+     [
+      4,
+      6,
+      8
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 19
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      9
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      10
+     ],
+     [
+      2,
+      7,
+      11
+     ],
+     [
+      3,
+      4,
+      8
+     ],
+     [
+      5,
+      6,
+      7,
+      8,
+      12
+     ]
+    ],
+    "age": 2,
+    "size": {
+     "junctions": 10,
+     "distinctions": 19
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      10,
+      11
+     ],
+     [
+      0,
+      4,
+      5
+     ],
+     [
+      1,
+      6,
+      7
+     ],
+     [
+      2,
+      8,
+      9
+     ],
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      3,
+      5,
+      7,
+      9,
+      12
+     ]
+    ],
+    "age": 2,
+    "size": {
+     "junctions": 10,
+     "distinctions": 19
+    }
+   }
+  ]
+ },
+ "CEN-12": {
+  "counts": {
+   "admissible starts": 647,
+   "open stages": 373,
+   "pair-table maps": 2899,
+   "extend": 2899,
+   "carry the equations": 1242,
+   "keep flip": 2899,
+   "keep flip: extend": 2899,
+   "keep flip: carry the equations": 1242,
+   "keep triples": 1242,
+   "keep triples: extend": 1242,
+   "keep triples: carry the equations": 1242,
+   "keep triple existence": 1242,
+   "keep triple existence: extend": 1242,
+   "keep triple existence: carry the equations": 1242,
+   "keep triples and flip": 1242,
+   "keep triples and flip: extend": 1242,
+   "keep triples and flip: carry the equations": 1242,
+   "stages where every pair-table map extends": 373,
+   "stages where every triple-keeping map extends": 373
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-11": {
+  "counts": {
+   "admissible starts": 218,
+   "open stages": 152,
+   "pair-table maps": 951,
+   "extend": 951,
+   "carry the equations": 503,
+   "keep flip": 951,
+   "keep flip: extend": 951,
+   "keep flip: carry the equations": 503,
+   "keep triples": 503,
+   "keep triples: extend": 503,
+   "keep triples: carry the equations": 503,
+   "keep triple existence": 503,
+   "keep triple existence: extend": 503,
+   "keep triple existence: carry the equations": 503,
+   "keep triples and flip": 503,
+   "keep triples and flip: extend": 503,
+   "keep triples and flip: carry the equations": 503,
+   "stages where every pair-table map extends": 152,
+   "stages where every triple-keeping map extends": 152
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-10": {
+  "counts": {
+   "admissible starts": 81,
+   "open stages": 59,
+   "pair-table maps": 341,
+   "extend": 341,
+   "carry the equations": 181,
+   "keep flip": 341,
+   "keep flip: extend": 341,
+   "keep flip: carry the equations": 181,
+   "keep triples": 181,
+   "keep triples: extend": 181,
+   "keep triples: carry the equations": 181,
+   "keep triple existence": 181,
+   "keep triple existence: extend": 181,
+   "keep triple existence: carry the equations": 181,
+   "keep triples and flip": 181,
+   "keep triples and flip: extend": 181,
+   "keep triples and flip: carry the equations": 181,
+   "stages where every pair-table map extends": 59,
+   "stages where every triple-keeping map extends": 59
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-09": {
+  "counts": {
+   "admissible starts": 33,
+   "open stages": 25,
+   "pair-table maps": 120,
+   "extend": 120,
+   "carry the equations": 64,
+   "keep flip": 120,
+   "keep flip: extend": 120,
+   "keep flip: carry the equations": 64,
+   "keep triples": 64,
+   "keep triples: extend": 64,
+   "keep triples: carry the equations": 64,
+   "keep triple existence": 64,
+   "keep triple existence: extend": 64,
+   "keep triple existence: carry the equations": 64,
+   "keep triples and flip": 64,
+   "keep triples and flip: extend": 64,
+   "keep triples and flip: carry the equations": 64,
+   "stages where every pair-table map extends": 25,
+   "stages where every triple-keeping map extends": 25
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-08": {
+  "counts": {
+   "admissible starts": 13,
+   "open stages": 14,
+   "pair-table maps": 57,
+   "extend": 57,
+   "carry the equations": 37,
+   "keep flip": 57,
+   "keep flip: extend": 57,
+   "keep flip: carry the equations": 37,
+   "keep triples": 37,
+   "keep triples: extend": 37,
+   "keep triples: carry the equations": 37,
+   "keep triple existence": 37,
+   "keep triple existence: extend": 37,
+   "keep triple existence: carry the equations": 37,
+   "keep triples and flip": 37,
+   "keep triples and flip: extend": 37,
+   "keep triples and flip: carry the equations": 37,
+   "stages where every pair-table map extends": 14,
+   "stages where every triple-keeping map extends": 14
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-07": {
+  "counts": {
+   "admissible starts": 6,
+   "open stages": 8,
+   "pair-table maps": 61,
+   "extend": 61,
+   "carry the equations": 33,
+   "keep flip": 61,
+   "keep flip: extend": 61,
+   "keep flip: carry the equations": 33,
+   "keep triples": 33,
+   "keep triples: extend": 33,
+   "keep triples: carry the equations": 33,
+   "keep triple existence": 33,
+   "keep triple existence: extend": 33,
+   "keep triple existence: carry the equations": 33,
+   "keep triples and flip": 33,
+   "keep triples and flip: extend": 33,
+   "keep triples and flip: carry the equations": 33,
+   "stages where every pair-table map extends": 8,
+   "stages where every triple-keeping map extends": 8
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-06": {
+  "counts": {
+   "admissible starts": 4,
+   "open stages": 2,
+   "pair-table maps": 2,
+   "extend": 2,
+   "carry the equations": 2,
+   "keep flip": 2,
+   "keep flip: extend": 2,
+   "keep flip: carry the equations": 2,
+   "keep triples": 2,
+   "keep triples: extend": 2,
+   "keep triples: carry the equations": 2,
+   "keep triple existence": 2,
+   "keep triple existence: extend": 2,
+   "keep triple existence: carry the equations": 2,
+   "keep triples and flip": 2,
+   "keep triples and flip: extend": 2,
+   "keep triples and flip: carry the equations": 2,
+   "stages where every pair-table map extends": 2,
+   "stages where every triple-keeping map extends": 2
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-05": {
+  "counts": {
+   "admissible starts": 2,
+   "open stages": 2,
+   "pair-table maps": 2,
+   "extend": 2,
+   "carry the equations": 2,
+   "keep flip": 2,
+   "keep flip: extend": 2,
+   "keep flip: carry the equations": 2,
+   "keep triples": 2,
+   "keep triples: extend": 2,
+   "keep triples: carry the equations": 2,
+   "keep triple existence": 2,
+   "keep triple existence: extend": 2,
+   "keep triple existence: carry the equations": 2,
+   "keep triples and flip": 2,
+   "keep triples and flip: extend": 2,
+   "keep triples and flip: carry the equations": 2,
+   "stages where every pair-table map extends": 2,
+   "stages where every triple-keeping map extends": 2
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-04": {
+  "counts": {
+   "admissible starts": 1,
+   "open stages": 2,
+   "pair-table maps": 2,
+   "extend": 2,
+   "carry the equations": 2,
+   "keep flip": 2,
+   "keep flip: extend": 2,
+   "keep flip: carry the equations": 2,
+   "keep triples": 2,
+   "keep triples: extend": 2,
+   "keep triples: carry the equations": 2,
+   "keep triple existence": 2,
+   "keep triple existence: extend": 2,
+   "keep triple existence: carry the equations": 2,
+   "keep triples and flip": 2,
+   "keep triples and flip: extend": 2,
+   "keep triples and flip: carry the equations": 2,
+   "stages where every pair-table map extends": 2,
+   "stages where every triple-keeping map extends": 2
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-03": {
+  "counts": {
+   "admissible starts": 1,
+   "open stages": 2,
+   "pair-table maps": 2,
+   "extend": 2,
+   "carry the equations": 2,
+   "keep flip": 2,
+   "keep flip: extend": 2,
+   "keep flip: carry the equations": 2,
+   "keep triples": 2,
+   "keep triples: extend": 2,
+   "keep triples: carry the equations": 2,
+   "keep triple existence": 2,
+   "keep triple existence: extend": 2,
+   "keep triple existence: carry the equations": 2,
+   "keep triples and flip": 2,
+   "keep triples and flip: extend": 2,
+   "keep triples and flip: carry the equations": 2,
+   "stages where every pair-table map extends": 2,
+   "stages where every triple-keeping map extends": 2
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": []
+ },
+ "CEN-16": {
+  "counts": {
+   "admissible starts": 87648,
+   "open stages": 27763,
+   "pair-table maps": 142037,
+   "extend": 142037,
+   "carry the equations": 63091,
+   "keep flip": 142037,
+   "keep flip: extend": 142037,
+   "keep flip: carry the equations": 63091,
+   "keep triples": 63091,
+   "keep triples: extend": 63091,
+   "keep triples: carry the equations": 63091,
+   "keep triple existence": 66253,
+   "keep triple existence: extend": 66253,
+   "keep triple existence: carry the equations": 63091,
+   "keep triples and flip": 63091,
+   "keep triples and flip: extend": 63091,
+   "keep triples and flip: carry the equations": 63091,
+   "stages where every pair-table map extends": 27763,
+   "stages where every triple-keeping map extends": 27763,
+   "stages where triple existence keeps an equation-changing map": 142
+  },
+  "triple-keeping maps that fail to carry or extend": [],
+  "smallest stages where existence keeps an equation-changing map": [
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      12
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      13
+     ],
+     [
+      3,
+      10,
+      14
+     ],
+     [
+      4,
+      5,
+      7,
+      11
+     ],
+     [
+      6,
+      8,
+      9,
+      10,
+      11,
+      15
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 18
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      12
+     ],
+     [
+      0,
+      4,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      13
+     ],
+     [
+      2,
+      8,
+      14
+     ],
+     [
+      4,
+      9,
+      10
+     ],
+     [
+      3,
+      5,
+      9,
+      11
+     ],
+     [
+      6,
+      7,
+      8,
+      10,
+      11,
+      15
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 18
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      12,
+      13
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ],
+     [
+      3,
+      11,
+      14
+     ],
+     [
+      5,
+      7,
+      9
+     ],
+     [
+      4,
+      6,
+      8,
+      10,
+      11,
+      15
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 19
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      12
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ],
+     [
+      3,
+      11,
+      13,
+      14
+     ],
+     [
+      5,
+      7,
+      9
+     ],
+     [
+      4,
+      6,
+      8,
+      10,
+      11,
+      15
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 19
+    }
+   },
+   {
+    "start": [
+     [
+      0,
+      1,
+      2,
+      3,
+      4,
+      13,
+      14
+     ],
+     [
+      0,
+      5,
+      6
+     ],
+     [
+      1,
+      7,
+      8
+     ],
+     [
+      2,
+      9,
+      10
+     ],
+     [
+      3,
+      11,
+      12
+     ],
+     [
+      5,
+      7,
+      9,
+      11
+     ],
+     [
+      4,
+      6,
+      8,
+      10,
+      12,
+      15
+     ]
+    ],
+    "age": 1,
+    "size": {
+     "junctions": 9,
+     "distinctions": 19
+    }
+   }
+  ]
+ },
+ "EXW": {
+  "round 1 equals the literal stage": true,
+  "five tests at the stage": {
+   "size": {
+    "junctions": 8,
+    "distinctions": 15
+   },
+   "counts": {
+    "pair-table maps": 32,
+    "extend": 32,
+    "carry the equations": 4,
+    "keep flip": 32,
+    "keep flip: extend": 32,
+    "keep flip: carry the equations": 4,
+    "keep triples": 4,
+    "keep triples: extend": 4,
+    "keep triples: carry the equations": 4,
+    "keep triple existence": 16,
+    "keep triple existence: extend": 16,
+    "keep triple existence: carry the equations": 4,
+    "keep triples and flip": 4,
+    "keep triples and flip: extend": 4,
+    "keep triples and flip: carry the equations": 4
+   }
+  },
+  "swap 5 6: keeps the 105 pair readings": true,
+  "swap 5 6: keeps existence on the 455 triples": true,
+  "sizes T(0,5,7), T(0,6,7)": [
+   6,
+   7
+  ],
+  "swap 5 6 carries the equations": false,
+  "later stages (junctions, distinctions, pair table kept with fresh names fixed)": [
+   [
+    10,
+    19,
+    true
+   ],
+   [
+    14,
+    27,
+    true
+   ],
+   [
+    20,
+    39,
+    true
+   ]
+  ]
+ }
+}

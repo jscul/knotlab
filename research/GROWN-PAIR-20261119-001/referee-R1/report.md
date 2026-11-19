@@ -128,6 +128,16 @@ The sharper test that UNIQUE-TABLE's referee set is answered for complete rounds
    therefore covers those two, and the third is found only by rebuilding the membership (Section 2). "152 groups" is right; "151
    with two state groups and one with three" would be exact. **Not a block.**
 
+## Addendum: one size past for the other-states collisions too (from the THREE-WAY-001 referee check)
+
+For THREE-WAY-001-R1, the referee rebuilt every grown stage of 15 and 16 junctions, not only the meet-once ones. It ran
+`job_meetonce.py --param all=1` and `job_meetonce_groups.py` into `runs/referee-three-way-past*`:
+- **The stages:** 3,873.
+- **The groups:** 564 table groups of two or more arrangements. 542 keep the same states and **22 have other states**.
+- **Meeting once:** none of the 22 has an arrangement in which junctions meet once.
+So both of the note's patterns recur one size past: reached collisions with other states, and none where junctions meet once. See
+`research/THREE-WAY-20261119-001/referee-R1/report.md`, Section 6.
+
 ## How the work was split
 
 - **The referee:**

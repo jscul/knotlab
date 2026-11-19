@@ -82,6 +82,7 @@ def run(case_id, payload):
                 sgroups.append([i])
         out.append({"arrangements": len(grp), "distinctions": classes[grp[0]][1],
                     "junctions": [len(classes[i][0]) for i in grp], "state groups": len(sgroups),
+                    "state group members": [[grp.index(i) for i in sg] for sg in sgroups],
                     "undecided searches": undecided, "provenance": [classes[i][3][:3] for i in grp],
                     "stars": [classes[i][0] for i in grp]})
     return {"classes": len(classes), "table groups": out}

@@ -18,7 +18,8 @@ for p in ("research/VARIABLE-OUTPUT-READER-20261118-001F/referee-R1", "research/
     sys.path.insert(0, str(ROOT / p))
 KEYS = {}
 SHARD = 500
-BOUNDS = {"lo": 1, "hi": 14}                           # junctions per stage kept; --param lo=15 --param hi=16 for one size past
+BOUNDS = {"lo": 1, "hi": 14, "all": 0}                 # junctions per stage kept (--param lo=15 --param hi=16 for one size
+                                                      # past); --param all=1 keeps every stage, not only meet-once ones
 
 
 def setup(params):
@@ -57,10 +58,10 @@ def run(case_id, payload):
             if G.step(RFK.fewest, None, None) != "ok" or len(G.bits) > hi:
                 break
             stars = [sorted(s) for s in G.bits]
-            if len(stars) < lo or not meet_once(stars):
+            if len(stars) < lo or not (payload.get("all") or meet_once(stars)):
                 continue
             K, labels = RC.shore_table(stars)
             idx = {b: i for i, b in enumerate(labels)}
             out.append({"index": ix, "round": rnd, "stars": [[idx[b] for b in s] for s in stars], "inv": F.invariant(K),
-                        "distinctions": len(labels)})
+                        "distinctions": len(labels), "meet_once": meet_once(stars)})
     return {"stages": out}

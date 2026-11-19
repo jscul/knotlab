@@ -3,7 +3,7 @@
 Epic `BREAK-EDDIES-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking
 `LOOP-CATALOGUE-20261119-001#1`). Goal G17. **Refereed:** report [R1](referee-R1/report.md), the family claim confirmed with a
 **Block** on one reading (the short loops), one Narrowing (the explosive kind) and three corrections that are not blocks, folded in
-on 19 November (see Referee). One over-cap start's regrowth is still running (see Record). The headline was also narrowed after the
+on 19 November (see Referee). The over-cap start G-009's regrowth finished and is folded in (see Record). The headline was also narrowed after the
 run, when LOOP-CATALOGUE's part U was read in full (see Part U in full).
 
 **Record.**
@@ -14,8 +14,11 @@ run, when LOOP-CATALOGUE's part U was read in full (see Part U in full).
   (`BREAK-EDDIES-B2`, `runs/break-eddies-ref`, 9 starts with a 10 GB child; amendment of 08:51 UTC).
 - The theta and the other over-cap start were regrown with a 10 GB child (`pilot/theta_groups.py`, post hoc). The theta again went
   over at round 18 (2,258 junctions), with its largest group rising 5, 5, 5, 5, 8, 12 over the last rounds. The other start, G-009,
-  is still running (`BREAK-EDDIES-B3`). The referee's readout of it reaches round 23 (8, 10, 12, 15, 19, 23, 28, 35, 44, 57, 75, …,
-  2,726), with its largest group rising to 8, and finds no recurrence.
+  was regrown with an 11 GB case (`BREAK-EDDIES-B3`, finished at 12:01 UTC, stopped by its time limit). It reached round 24 (8, 10,
+  12, 15, 19, 23, 28, 35, 44, 57, 75, …, 2,726, 3,944), equal to the referee's readout through round 23, with no recurrence. In its
+  last rounds the largest group rose 5, 8, 12 and one junction's fresh count leapt 8, 17, 128, 5,036: the explosive kind's sign,
+  read, as the Narrowing says, in the last rounds only
+  ([g009_regrowth.json](../../artifacts/BREAK-EDDIES-20261119-001B/BREAK-EDDIES-20261119-001B-E001_breaks/g009_regrowth.json)).
 - Code: [job.py, job_ref.py, merge.py, posthoc.py, stagelib.py, breaklib.py](../../experiments/BREAK-EDDIES-20261119-001B/BREAK-EDDIES-20261119-001B-E001_breaks/),
   with the pilot in `pilot/`.
 - Results: [results.json](../../artifacts/BREAK-EDDIES-20261119-001B/BREAK-EDDIES-20261119-001B-E001_breaks/results.json),
@@ -123,7 +126,7 @@ B5 could not be decided within memory.
   the referee (`posthoc_full.py`, which reproduces the referee's table). For 12 starts that member is not the only one consistent
   with the counts.
 - **The explosive class** is read on 7 starts of the referee's shapes, each stopped by memory after 9 to 14 rounds, on G-121, and on
-  the theta to 18 rounds. G-009 is still running.
+  the theta to 18 rounds, and on G-009 to 24 rounds.
 - **The population** is LOOP-CATALOGUE's part U main run (122 exponential starts), not the 1,080 read afterwards, and the
   referee's 9.
 

@@ -2,7 +2,7 @@
 
 Status: Proved
 
-Ticket `BREAK-EDDIES-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/BREAK-EDDIES-20261119-001/break_eddies.md`. Refereed (R1): the family claim confirmed, a Block on the short-loop reading and a Narrowing on the explosive kind, folded in; narrowed by LOOP-CATALOGUE's part U in full; one over-cap start's regrowth still running.
+Ticket `BREAK-EDDIES-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/BREAK-EDDIES-20261119-001/break_eddies.md`. Refereed (R1): the family claim confirmed, a Block on the short-loop reading and a Narrowing on the explosive kind, folded in; narrowed by LOOP-CATALOGUE's part U in full; G-009's regrowth folded in (round 24, explosive in its last rounds).
 
 | # | Conclusion | Evidence |
 | --- | --- | --- |

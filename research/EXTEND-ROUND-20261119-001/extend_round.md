@@ -16,7 +16,9 @@ Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; two wordin
   the arrangement enters. **This is proved (Lemma A).**
 - **Distance plus that reading: computed for one round, not proved.** Take any of the 57 reached carried pairs that have a table
   renaming keeping this reading. Every such renaming tried, 2,198 in all, extends to a renaming that matches the next round's
-  tables. None failed. So on everything tested, distance plus the growing end carries what grows one round further.
+  tables. None failed. So on everything tested here, distance plus the growing end carries what grows one round further.
+  (Narrowed by `GROWN-END-SWAP-20261119-001`, Codex's construction: this fails on a reached stage whose start junctions meet
+  twice; see the correction below.)
 - **Why it is not a theorem yet.** The advisor's argument: after a round, a new junction with one fresh distinction can sit inside
   a bond and make it shorter. Which bonds shorten depends on more than the pair distances, on three-way readings among other
   things. So nothing forces the next table from the old table and the reading, and it could fail elsewhere. The version that is
@@ -108,7 +110,7 @@ Fable 5.2 before the freeze ([question](advisor/question_1.md), [answer](advisor
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: does a reading-keeping isometry extend one round | **Status:** Partial | Lemma A and the equations version proved; the table version held on all 2,198 extensions, but is not proved |
-| Local direction: what reading of a base is complete | Continue | Distance plus the growing end carries one round on every tested case; a proof or the advisor's counterexample is the next step |
+| Local direction: what reading of a base is complete | Continue | Distance plus the growing end carries one round on the meet-once carried pairs and census stages tested; it fails where start junctions meet twice (Codex, below) |
 | Broader exploration: what distances carry (A97, A108) | Known alternatives | The equations version is the routine one; the table version is the owner's premise in its clean form |
 | Long-term goal: G1 with A97 | Capability gained | The round's exact reading, and a computed extension rule for distance plus the growing end |
 
@@ -136,6 +138,20 @@ study, status unchanged.
   occurred.
 - **Wording.** The stall test counts groups (sets and pairs), not sets. Claim B\* is about the span of the equations, and tables
   follow from the span.
+
+## Correction (2026-11-19, from `GROWN-END-SWAP-20261119-001`; Narrowing)
+
+Codex built a reached stage of this law where Claim B fails ([decision note](../GROWN-END-SWAP-20261119-001/decision.md), [referee report](../GROWN-END-SWAP-20261119-001/referee-R1/report.md), refereed).
+- **The stage.** A start of six junctions, three pairs of which meet twice, two of them dead, grows in one round to ten junctions.
+- **The renaming.** Swapping distinctions 0 and 2 keeps all 210 pair distances and the round's reading exactly: loose onto loose,
+  live junctions onto themselves, the family onto itself. It does not carry the equations.
+- **The failure.** After the next round the distance between 0 and 1 drops to 2 while that between 2 and 1 stays 3, so the
+  extension fails.
+
+So "distance plus the growing end carries what grows one round further" holds on what this note and its referee tested: the
+meet-once carried pairs, and census stages from at most five knots. It does not hold for reached stages in general. Lemma A,
+Claim B\* and every count above stand. It is the configuration PROVE-B's Proposition X names, on a reached stage. Logged in
+`docs/CORRECTIONS.md`.
 
 ## Final report as sent (2026-11-19 14:55 UTC)
 

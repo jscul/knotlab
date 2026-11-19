@@ -137,6 +137,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: distance plus the growing end narrowed
+
+- **Narrowed.** Two studies read their results as "distance plus the growing end carries what grows one round further":
+  `EXTEND-ROUND-20261119-001` ([decision note](research/EXTEND-ROUND-20261119-001/extend_round.md)) and
+  `HUNT-SHORTEN-20261119-001` ([decision note](research/HUNT-SHORTEN-20261119-001/hunt_shorten.md)). That holds on what they
+  tested, meet-once pairs and census stages from at most five knots. Codex built a grown stage, from six junctions some of which
+  meet twice, where it fails (`GROWN-END-SWAP-20261119-001`,
+  [decision note](research/GROWN-END-SWAP-20261119-001/decision.md)). Every count of both studies stands.
+
 ## 19 November 2026: the hunt refereed
 
 - The hunt for a counterexample to the distances version of the one-round extension (`HUNT-SHORTEN-20261119-001`,

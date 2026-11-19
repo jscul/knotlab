@@ -670,12 +670,15 @@ proved in part, refereed)? One round reads only which junctions hold a loose
 distinction, how many, and which sets of them one junction meets; that is proved.
 A matching of the distances that keeps this read extended to the next round in
 every one of 2,198 cases, but that is not yet proved: a new junction can shorten
-a bond in a way pair distances may not foresee
-([decision note](../research/EXTEND-ROUND-20261119-001/extend_round.md)).
+a bond in a way pair distances may not foresee. Codex later built a grown stage,
+from six junctions that meet twice, where it does fail; where junctions meet once
+it is open ([decision note](../research/EXTEND-ROUND-20261119-001/extend_round.md)).
 Can a new junction break that (`HUNT-SHORTEN-20261119-001`, computed,
 refereed)? Joined by hand across two matched junctions, yes: distances that matched
 stop matching. Joined by the law, where the matching keeps what the round reads,
-not once in 1,746,752 cases on census stages of up to 14 junctions (the referee's full run)
+not once in 1,746,752 cases on census stages of up to 14 junctions (the referee's full run);
+but beyond the census the law's own round does it once, from a six-junction start
+(Codex, `GROWN-END-SWAP-20261119-001`)
 ([decision note](../research/HUNT-SHORTEN-20261119-001/hunt_shorten.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes

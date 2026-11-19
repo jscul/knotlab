@@ -15,9 +15,10 @@ record it comes from. All nine are refereed.
   junction holds what, which no reading of the allowed states can show.
 - **What the law reads, and the clean form of your premise.** One round of the law reads only the growing end: which junctions hold
   a loose distinction, how many, and which sets of them one junction meets. Distance plus the growing end carried everything one
-  round further in every case where the hypothesis applies: 36,060 on the carried pairs and 1,746,752 census self-symmetries
-  by the referees' full runs. That is not proved. A junction joined by hand
-  across two matched junctions does break it; the law's own joins, so far, never do.
+  round further on the meet-once carried pairs (36,060) and the census self-symmetries (1,746,752), by the referees' full runs.
+  But Codex built a reached stage, from a six-junction start whose junctions meet twice, where the law's own round breaks it
+  (GROWN-END-SWAP, refereed). So the clean premise fails where start junctions meet twice; whether it holds when they meet once
+  is open.
 
 ## Proved (refereed)
 
@@ -37,7 +38,8 @@ record it comes from. All nine are refereed.
 | From those 503,039 starts the law makes 87 meet-once pairs with one table and other states: 86 carried from colliding starts (persisting), 1 created (parting next round) | 1 and 2 rounds | GROW-SMALL |
 | Pair plus three-way readings separate every collision found: 11 + 152 + 22 + 1,034 + 87 pairs | the collisions found | THREE-WAY, TRIPLE-GROWN |
 | The created pair: matching the tables swaps a start knot with a new junction and moves one join distinction across the growing end; no matching keeps its loose distinctions, while some does in every carried pair | 1 created, 86 carried | CREATED-PAIR |
-| Distance plus the growing end extends one round: 36,060 of 36,060 (carried pairs) and 1,746,752 of 1,746,752 (census self-symmetries, holder-breaking ones included; the referee's full run; the study tested 33,918); joins made by hand break it 14,792 times in 41,268, offshoots never | ≤ 14 junctions, one round | EXTEND-ROUND, HUNT-SHORTEN |
+| Distance plus the growing end extends one round: 36,060 of 36,060 (carried pairs) and 1,746,752 of 1,746,752 (census self-symmetries, holder-breaking ones included; the referee's full run; the study tested 33,918); joins made by hand break it 14,792 times in 41,268, offshoots never | ≤ 14 junctions, one round, census starts and meet-once pairs | EXTEND-ROUND, HUNT-SHORTEN |
+| It fails on a reached stage: a six-junction start whose junctions meet twice, a reading-keeping table symmetry that does not extend (Codex's construction) | one stage, one round | GROWN-END-SWAP |
 
 ## Known mathematics, and what our reading adds
 
@@ -66,12 +68,13 @@ What this line adds:
 | CREATED-PAIR | Carried pairs' differences are not always two junctions from the growing end | Not a block |
 | EXTEND-ROUND | The stall test counts groups; Claim B\* is about the span of the equations | Not a block |
 | HUNT-SHORTEN | Its bound now names what was tested (33,918 of 108,289; 34 cut, 6 late) | Not a block |
+| EXTEND-ROUND, HUNT-SHORTEN | "Distance plus the growing end carries one round" and "the full reading protects" hold for meet-once pairs and census starts only (Codex's GROWN-END-SWAP) | **Narrowing** |
 
 ## Open questions, graded
 
 | # | Question | Payoff | Concreteness |
 | --- | --- | --- | --- |
-| 1 | Prove Claim B: why does keeping the growing end stop a bridging join from breaking the distances? | 3/3 | 2/3 |
+| 1 | Prove Claim B where start junctions meet once (it fails where they meet twice) | 3/3 | 2/3 |
 | 2 | Are pair plus three-way readings complete beyond the collisions found (a pair agreeing on both, with other states)? | 2/3 | 2/3 |
 | 3 | How often does the law create such a pair from larger starts and over more rounds? | 2/3 | 2/3 |
 | 4 | Does the extension keep holding over rounds 2 to 4? | 2/3 | 2/3 |

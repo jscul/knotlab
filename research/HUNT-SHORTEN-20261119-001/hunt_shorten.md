@@ -28,7 +28,8 @@ result): [preregistration.md](preregistration.md). Code:
   - **The 86 carried pairs.** All 36,060 reading-keeping matchings extend (EXTEND-ROUND's referee).
 - **What that says.** The danger is real for joins made anywhere. When the matching keeps the growing end that the law reads, it
   has not appeared. Being backed alone does not explain this: joins between backed junctions also break the matching
-  (exploratory, after the read-out). So whatever protects lies in the full reading. It stays a computed statement, not a theorem.
+  (exploratory, after the read-out). So, within the census, whatever protects lies in the full reading. It stays a computed
+  statement, not a theorem, and beyond the census it fails: Codex's six-junction start breaks it (correction below).
 
 | Test | Cases | Verdict |
 | --- | ---: | --- |
@@ -106,8 +107,8 @@ Fable 5.2 before the freeze ([question](advisor/question_1.md), [answer](advisor
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: a counterexample to the table version, a proof, or none within a stated bound | **Status:** Partial | The mechanism exists for joins made by hand; no counterexample to Claim B within the stated bounds (33,918 + 36,060 extensions); not proved |
-| Local direction: what reading of a base is complete | Continue | Distance plus the growing end carries one round on every case the hypothesis covers; the protection is the full reading, not backing |
-| Broader exploration: what distances carry (A97, A108) | Known alternatives | Pair distances break under a bridging join; the law's reading avoids it so far |
+| Local direction: what reading of a base is complete | Continue | Distance plus the growing end carries one round on every census case the hypothesis covers; beyond the census it fails (Codex, below) |
+| Broader exploration: what distances carry (A97, A108) | Known alternatives | Pair distances break under a bridging join; the law's reading avoids it in the census, not beyond |
 | Long-term goal: G1 with A97 | Capability gained | A bounded computed form of the premise, and the mechanism that would break it |
 
 **Next step:** Continue — selected: #1
@@ -140,6 +141,18 @@ corrected, logged in `docs/CORRECTIONS.md` (Not a block).**
   6 stages late and 34 cut. The section now says so, and the referee's run covers the bound as first stated.
 - **For the next step.** Holder-breaking symmetries extend too, so the right hypothesis for a proof may be keeping the reading
   alone, without preserving holder classes.
+
+## Correction (2026-11-19, from `GROWN-END-SWAP-20261119-001`; Narrowing)
+
+"No counterexample within the stated bounds" stands: the census stages come from starts of at most five knots. "Whatever protects
+lies in the full reading" does not hold beyond the census.
+- **Codex's construction.** Codex built a reached stage from a six-junction start whose junctions meet twice ([decision note](../GROWN-END-SWAP-20261119-001/decision.md), [referee report](../GROWN-END-SWAP-20261119-001/referee-R1/report.md), refereed).
+  A reading-keeping, holder-breaking table symmetry there fails to extend one round.
+- **Why the census missed it.** None of the census's 2,994 ten-junction stages is isomorphic to it.
+- **What it uses.** It is exactly the bridging join this note built by hand: a dead junction whose distinctions split evenly
+  between two holders, and a tie broken by a join's discount. Here the law makes the join itself.
+
+Logged in `docs/CORRECTIONS.md`.
 
 ## Final report as sent (2026-11-19 15:23 UTC)
 

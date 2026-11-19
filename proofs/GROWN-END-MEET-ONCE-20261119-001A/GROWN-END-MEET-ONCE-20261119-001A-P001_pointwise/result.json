@@ -1,0 +1,88 @@
+{
+  "proof_id": "GROWN-END-MEET-ONCE-20261119-001A-P001",
+  "status": "Proved",
+  "explicit_countermodel": "The permutation exchanging AC and BC fixes every current pair distance and the growing end pointwise and changes an old successor entry from two to three in the specified meet-once histories.",
+  "all_size_lemmas": [
+    "A stage with at most two newborn live sites always extends for pointwise-live permutations.",
+    "One starting junction at arbitrary arity always preserves the equation span at each open stage.",
+    "Six starting junctions are necessary and sufficient for the isolated five-distinction mechanism, with any number of prior rounds.",
+    "For every starting count of nine or more there is a meeting-once failure using only three- and four-place starting junctions."
+  ],
+  "minimum_current": {
+    "junctions": 12,
+    "distinctions": 23,
+    "basis": "Exhaustive finite comparison over all positive ages with generation and small-live reductions proved."
+  },
+  "complete_bounds": {
+    "reach_bound_c11.json": {
+      "current_junction_cap": 11,
+      "current_width_cap": null,
+      "allocations": 5566765,
+      "failed": 0,
+      "undecided": 0
+    },
+    "reach_bound_w22.json": {
+      "current_junction_cap": 13,
+      "current_width_cap": 22,
+      "allocations": 76259,
+      "failed": 0,
+      "undecided": 0
+    },
+    "reach_bound_threshold.json": {
+      "current_junction_cap": 12,
+      "current_width_cap": 23,
+      "allocations": 249219,
+      "failed": 3,
+      "undecided": 0
+    }
+  },
+  "old_meet_twice": {
+    "current_matchings": 48,
+    "extend": 16,
+    "pair_question": "A simultaneous change of the marked pair holding every other distinction fixed is possible for 0,1 and impossible for 2,1.",
+    "triple_question": "Smallest current bond through 0,1,15 has size four; no bond through 2,1,15."
+  },
+  "arity_checks": {
+    "3": {
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "binding": true,
+      "coexistence": true
+    },
+    "4": {
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "binding": true,
+      "coexistence": true
+    },
+    "5": {
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "binding": true,
+      "coexistence": true
+    }
+  },
+  "source_files": {
+    "proofs/GROWN-END-MEET-ONCE-20261119-001A/GROWN-END-MEET-ONCE-20261119-001A-P001_pointwise/proof.md": "83bf066af5068e20f34257c93ed68423e46b6f2551e59b850c51dc6a3f406c7d",
+    "proofs/GROWN-END-MEET-ONCE-20261119-001A/GROWN-END-MEET-ONCE-20261119-001A-P001_pointwise/check.py": "d50bfa5d9139be56fdfc31307cc628fda7d605035a8ec259ce61bdef44a46323",
+    "proofs/GROWN-END-MEET-ONCE-20261119-001A/GROWN-END-MEET-ONCE-20261119-001A-P001_pointwise/cut_tables.cpp": "074145400389d33fd108cc697d9c3724ff01f2da6cfabfe2591dc670724c4021",
+    "proofs/GROWN-END-MEET-ONCE-20261119-001A/GROWN-END-MEET-ONCE-20261119-001A-P001_pointwise/single_start.py": "dbed1a23ac886b3ecd9f144d20e1f534c84be031bce7794a44d16dbab4fb630f",
+    "experiments/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/reach_bound.cpp": "db0eca3b7aa30e537723ec0225377a49bf62ec61293e17a9ace986c1e54a61ff",
+    "experiments/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/reach_bound.py": "432cba7a801143411146778ac9609f39155f0d9401484aaae5d55b40162f7970",
+    "experiments/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/readings.py": "04e1a6895a775c41ee3412acd059a82d616ef5f7e6f0f8f0dcc80d591e191212",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/two_histories.json": "d6a33637667adeccfa2b26f681770252db1b45c172a75695a04501beb8eaebe4",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/reach_bound_c11.json": "02d9ded5d4677e35fb5efe89662e468ec36c95d9061e29dd2fa4bc2713cdc915",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/reach_bound_w22.json": "2c7ee557dc40c935af06622cab4704f4a3f80ac80d49ba184a011925922cad0e",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/reach_bound_threshold.json": "3604f5944db59e7105b34791e8c27b1e0a41cb0fd94f1298a56c025566c6ed4f",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/readings.json": "9052c75047d6d7fcdeacc73f5ac0e7c45eba210879117227aca1d10992218612",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/verify_once.json": "f2dd2b9abc975c3c8e35796048fd30d9491023655bc669f7509b323a15cf9879",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/single_starts.json": "41cf2de52525a68e3e6274f4a2e2730c323695014db82efd6c4be1c8ef9c5b5b",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/prefix_audit.json": "74312df238e21a7fccf6f772c9c0a62cd62c944edc6ad02f35cb8acc3967a73c",
+    "experiments/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/structure.md": "486d62606b5c99251b154c14952d43cdace86e9bb7ba6799c4c4292f41a66c4e",
+    "experiments/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/structure.py": "1e83e8f334ae5c6f673da87cf1bf2a259b7d3cd5d599df17a00fea9b8a809849",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/structure.json": "f4287847ee07e41aaee31440662673a12d2634d74f76641ab163b740753de441",
+    "experiments/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/construction.md": "1da1e53b697ed1c0af3dae101c4a921ed12679a92ffc154ff52dfe37479fe479",
+    "artifacts/GROWN-END-MEET-ONCE-20261119-001/GROWN-END-MEET-ONCE-20261119-001-E001_rounds/construct_results.json": "14d13b9be5ed5ec7a8d3360a514541eeefd4b79ef3de74ad2cd2503bdbbd11f5"
+  },
+  "independence": "V1 internal. Distinct complete-round engines, exact connected-shore and XOR checks on the seven-start, independent literal lower-tier enumeration. Separate referee review pending."
+}

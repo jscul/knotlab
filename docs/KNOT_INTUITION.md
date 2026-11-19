@@ -617,16 +617,15 @@ another arrangement has the same allowed states, which no distance can decide.
 The other 428 are fixed by their distances
 ([decision note](../research/UNIQUE-TABLE-20261119-001/unique_table.md)).
 And does the growth itself make such pairs (`GROWN-PAIR-20261119-001`, computed,
-referee pending)? Yes, once knots share two distinctions. Among census stages of
+refereed)? Yes, once knots share two distinctions. Among census stages of
 up to 14 junctions the cheapest growth reaches 152 groups of different
 arrangements with the same distance between every two distinctions (up to
 renaming) and other allowed states, and they keep one table for at least two
 more rounds. Where junctions meet at most once, every reached pair with one
 table also has the same allowed states
 ([decision note](../research/GROWN-PAIR-20261119-001/grown_pair.md)).
-What reading does catch them (`THREE-WAY-20261119-001`, computed, referee
-pending)? The smallest consequence holding three distinctions at once: with it
-added, every pair with the same distances and other allowed states found so far
+What reading does catch them (`THREE-WAY-20261119-001`, computed, refereed)?
+The smallest bond holding three distinctions at once: with it added, every pair with the same distances and other allowed states found so far
 comes apart, static or grown. What it cannot add is which junction holds what
 when the allowed states agree; only the growth reads that
 ([decision note](../research/THREE-WAY-20261119-001/three_way.md)).

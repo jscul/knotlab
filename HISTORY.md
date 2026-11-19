@@ -4,6 +4,15 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: three-way readings refereed
+
+- The study of three-way readings (`THREE-WAY-20261119-001`, [decision note](research/THREE-WAY-20261119-001/three_way.md)) was
+  refereed with the referee's own readings and searches and confirmed: adding the smallest bond holding three distinctions to the
+  pair distances separates every known collision with other allowed states, 11 static and 152 reached, and 22 more the referee
+  found at 15 and 16 junctions.
+- **Corrected (not a block).** The stages that no reading of the states can settle are 77 of 527, not 74: the count had two
+  stages twice and left out five with both kinds of rival. The reading is now worded as a bond, as the glossary has it.
+
 ## 19 November 2026: reached collisions refereed
 
 - The study of reached collisions (`GROWN-PAIR-20261119-001`, [decision note](research/GROWN-PAIR-20261119-001/grown_pair.md))

@@ -1,7 +1,8 @@
 # Do three-way readings complete the bond-distance table?
 
 Epic `THREE-WAY-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `UNIQUE-TABLE-20261119-001#2` and
-`GROWN-PAIR-20261119-001#1`. Assumption A97; goal G1. **Referee pending.**
+`GROWN-PAIR-20261119-001#1`. Assumption A97; goal G1. **Refereed (R1): confirmed, no Block; one count corrected (74 to 77) and three wording points, folded in
+(Referee R1 below).**
 
 **Record.** Pre-registration, frozen before the run: [preregistration.md](preregistration.md). Code and result:
 [triples.py](../../experiments/THREE-WAY-20261119-001A/THREE-WAY-20261119-001A-E001_triples/triples.py),
@@ -11,27 +12,30 @@ on a module-name collision before computing anything; the fix is committed separ
 ## The answer
 
 **In the owner's terms.**
-- **Yes, up to the allowed states.** Add, for every three distinctions, the size of the smallest consequence that holds all three
-  (less one) to the pair distances, and every collision with different allowed states found so far comes apart.
+- **Yes, up to the allowed states.** Add, for every three distinctions, the size of the smallest bond containing all three, less
+  one (or none, when no bond holds all three), to the pair distances, and every collision with different allowed states found so far comes apart.
   - The 11 static rivals of `UNIQUE-TABLE-20261119-001` each differ from the truth in 116 to 208 of their triples.
   - The 152 reached groups of `GROWN-PAIR-20261119-001` each come apart: no renaming that matches their pair tables also matches
     their three-way readings. The advisor had bet against this.
-  - The 23 stages the pair table left undecided are all decided with triples: forcing reaches the true equations on every one. Of
-    those, 21 are unique and 2 have a rival with the same states.
+  - The 23 stages whose equations the pair table left open (UNIQUE-TABLE's 21 of undecided class, and pop-0192 and pop-0212,
+    which it classed same-states because a same-states rival had been found) are all decided with triples: forcing reaches the
+    true equations on every one. Of those, 21 are unique within UNIQUE-TABLE's bound (at most as many junctions) and 2 have a
+    rival with the same states.
 - **What three-way readings cannot add.** Arrangements with the same allowed states and other junctions remain alike, because every
-  reading of the allowed states treats them alike. That leaves 74 of the 527 (72 + 2); only the growth law, which reads the
+  reading of the allowed states treats them alike. That leaves 77 of the 527 (UNIQUE-TABLE's 72, which already include pop-0192
+  and pop-0212, and 5 of its 6 other-states stages, which also have a same-states rival within the bound); only the growth law, which reads the
   junctions, can tell them apart.
 - **So the three things, again.** On these stages:
   - pair distances miss some allowed states (the 6 static and 152 reached collisions);
   - pair plus three-way readings miss none found;
-  - the allowed states themselves miss which junction holds what (74 stages, and 4,474 reached groups).
+  - the allowed states themselves miss which junction holds what (77 stages, and 4,474 reached groups).
 
 | Test | Count | Separated by three-way readings |
 | --- | ---: | ---: |
 | Static rivals with the same pair table and other states (UNIQUE-TABLE) | 11 | 11 |
 | Reached groups with one pair table and other states (GROWN-PAIR) | 152 | 152 |
-| Undecided stages, now decided by forcing with triples | 23 | 23 (21 unique, 2 same-states rival) |
-| Same-states rivals (any reading of the states) | 74 | 0, by construction |
+| Stages with open equations (UNIQUE-TABLE's 21 undecided, and 2 of its same-states), now decided by forcing with triples | 23 | 23 (21 unique within the bound, 2 same-states rival) |
+| Stages with a same-states rival (any reading of the states) | 77 | 0, by construction |
 
 ## Predictions and verdicts
 
@@ -87,6 +91,25 @@ readings see only supports and that differences may first show at four. That bet
 
 **Corrections:** none. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A97 gains this study, status unchanged.
 **Basket:** B205 taken next; B203, B204 remain.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own readings from bonds, forcing and exact renaming search; no study code run. **Confirmed, no
+Block; one count corrected and three wording points, folded in above and logged in `docs/CORRECTIONS.md` (Not a block).**
+- **Confirmed.** The 11 static rivals agree on pairs and differ on triples in exactly the study's counts (116 to 208), and no
+  renaming keeps both readings. For all 154 state-group pairs of the 152 groups (151 with two state groups, one with three) a
+  renaming keeps the pair table and none keeps pairs and triples together. On the 23, forcing with pairs alone leaves the equations
+  open and with triples reaches them; every forced word is a bond of the truth.
+- **Corrected: 74 to 77.** The 74 counted pop-0192 and pop-0212 twice (they are among UNIQUE-TABLE's 72) and left out five of its
+  six other-states stages (pop-0236, -0308, -0338, -0442, -0501), each of which also has a same-states rival within the bound. The
+  stages left alike with triples are 72 + 5 = 77.
+- **Wording.** The reading is the smallest bond containing all three, less one, or none (a smallest consequence holding three need
+  not be a bond; 86 to 257 of each truth's triples lie in no bond); 21 and 23 count different things (named above); "21 unique" is
+  within UNIQUE-TABLE's bound.
+- **One size past.** Every grown stage of 15 and 16 junctions (3,873) rebuilt: 564 table groups, 542 same states, 22 other states;
+  none of the 22 meets once, and three-way readings separate all 22.
+- **Extra.** The referee's forcing with triples, on 475 of the 527 stages, spans the equations on 473; pop-0009 and pop-0010 are a
+  limit of forcing (UNIQUE-TABLE's one-missing search decided them), not rivals.
 
 ## Final report as sent (2026-11-19 08:38 UTC)
 

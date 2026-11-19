@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CREATED-PAIR-20261119-001A-E001",
+ "ticket": "CREATED-PAIR-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Do the table isometries of GROW-SMALL's carried pairs keep the loose distinctions and the growing end, while the created pair's do not?",
+ "definitions": {
+  "keeps loose": "carries the loose distinctions onto the loose distinctions",
+  "growing end": "keeps loose, and every junction holding a loose distinction onto a junction"
+ },
+ "public_inputs": {
+  "code": "isos.py (sha256 e252028d10288ff7b3658cd997b3f37604fa97c61fcf3b1a0a3b486323c4f401)",
+  "run": ".venv/bin/python -B isos.py",
+  "reused": "PARENT-RULE-20261119-001B plib.py; GROW-SMALL-20261119-001A grow_pairs.json and origin.json"
+ },
+ "forbidden_inputs": [
+  "Changing E0, E3, E3b after the run"
+ ],
+ "primary_observable": "E0, E3, E3b",
+ "cheapest_meaningful_control": "no isometry carries the states (other states by construction)",
+ "predictions": {
+  "E0": "loose counts and twin classes agree in every pair",
+  "E3": "every carried pair has a loose-keeping isometry",
+  "E3b": "every carried pair has a growing-end-keeping isometry"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run.",
+ "runtime": "seconds",
+ "amendments": []
+}

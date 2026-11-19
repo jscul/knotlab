@@ -99,3 +99,43 @@ freeze.
 | 1 | A reading past the wall: the cover where maximal blocks share two knots (the case DOUBLE-IDENT excludes) | 3/3 — it would read the 14 | 1/3 — the tree-of-blocks cover is the wrong object there | find the right complex on the smallest unread start (start-03, six knots, round 7) → stop at one that predicts its next round, or a proof that none can | Alternative · proposed |
 | 2 | Prove the reduction: blocks equal to or inside another change nothing | 2/3 — it makes the two readings proved | 3/3 — the advisor's sketch, with relays the one gap | write the round-1 and induction steps → stop at a proof, or a start where a contained block matters | Alternative · proposed |
 | 3 | Prove the 2.3830 ceiling within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+## Final report as sent (2026-11-19 19:07 UTC)
+
+**Outcome:** Of the 15 stopped explosive starts, one more ends after a single merge and a burst. The other 14 couldn't be followed far enough, and none was shown to keep growing. In sampling terms: of the 16 explosive starts, the 2 that could be read both end the same way, one merge then the burst of one block, and 14 are unread. That's a sample under EXPLOSIVE's weighting; I'm not generalising from it. 4 of 5 frozen predictions held. Closed, referee pending.
+
+- **How I read them.** I followed each start round by round in its own 6 GB, 15-minute process. After each round I reduced the stage's map to its largest blocks; blocks equal to or inside another add nothing. Once that reduced stage sat back in the proved class, the branch system counts the rest exactly, without building it.
+- **The one that ends.** Six knots of 6, 6, 4, 7, 6 and 3 places.
+  - In round 8 a group of 974 parents merges it into one block of 781 junctions.
+  - From there every subset of the 781 joins once: 304,590 junctions next round, then 79 million, and so on.
+  - It closes after 780 more rounds, about 2⁷⁸¹ junctions in all. That's finite, but only in the strict sense. The engine couldn't build even the next round, so this reading is computed, not checked by growth.
+- **The control**, the case already closed, reads and checks exactly: a block of 9, then the burst 36, 84, 126, 126, 84, 36, 9, 1.
+- **The 14 that couldn't be read** all stopped by round 5 to 8, 10 by memory and 4 by time, with groups of 12 to 446 parents. At every stage, two of their largest blocks still share two knots, which no current reading covers. None had a giant merge yet.
+- **What's proved, computed, open.**
+  - Proved and refereed: the stage identity and the branch system.
+  - The study's hypothesis, which both readings rest on: equal or contained blocks change nothing. It's sketched by the advisor and supported by the control's growth, but not yet proved.
+  - Computed on it: the 781-block reading.
+  - Open: the 14.
+- **The miss (R3).** I predicted at least 5 of 15 would become readable; only 1 did. That is the finding: the explosive kind mostly stays past the wall within these limits.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: merge and burst | **Status:** Partially successful (4 of 5 held; R3 failed) | One more start ends after a 974-parent merge and the burst of a 781-point block; 14 unread within the limits; none shown to keep growing |
+| Local direction: the explosive kind (A109) | Research directions | Reading from a reduced stage works once groups have merged; most starts don't get there within reach |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Within five places, classified; past it, merge then burst where read, and a wall where maximal blocks share two knots |
+| Long-term goal: G17 | Capability gained | What a sample of the explosive kind does, read where possible, with the wall located |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A reading past the wall, where maximal blocks share two knots (the case DOUBLE-IDENT excludes) | 3/3 | 1/3 | find the right complex on the smallest unread start (six knots, round 7) → stop at one that predicts its next round, or a proof none can | Alternative · proposed |
+| 2 | Prove the reduction: equal or contained blocks change nothing | 2/3 | 3/3 | write the round-1 and induction steps, with relays the one gap → stop at a proof, or a start where a contained block matters | Alternative · proposed |
+| 3 | Prove the 2.3830 ceiling within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+**Corrections:** none. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A110 and A109 get history lines, both status unchanged. The reduction is recorded as this study's hypothesis in the pre-registration, not as a register entry, since direction 2 would prove it. **Basket:** `EXPLOSIVE-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze, staying within its text. It sketched the reduction's proof, naming relays as the gap. It tightened R1–R4 (minimum checked rounds, split R2, a floor on merge events, a stability read). Its guess of about 6 readable of 15 was too high; 1 was. I didn't adopt its engine-against-engine check, because a reduced map isn't a presentation.
+
+**Referee hand-off.** The decision note is `research/MERGE-BURST-20261119-001/merge_burst.md` and the code is `experiments/MERGE-BURST-20261119-001B/MERGE-BURST-20261119-001B-E001_stages/`. Please check:
+- the reduction (`mblib.reduced`): equal and contained blocks dropped, and the class read on the maximal blocks;
+- start-04's reading, a single 781-point block at round 8;
+- that the 14 unread really fail on two maximal blocks sharing two knots, not on a reading slip.

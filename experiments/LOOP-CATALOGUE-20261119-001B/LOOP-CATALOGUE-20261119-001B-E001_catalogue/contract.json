@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "experiment_id": "LOOP-CATALOGUE-20261119-001B-E001",
+ "ticket": "LOOP-CATALOGUE-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Which cycles of knots feed themselves (the eddy rule against growth), and what are the minimal self-feeding loops to eight knots, their round-weights, ratios, behaviour under not-all-equal and interfaces?",
+ "definitions": {
+  "eddy rule": "eddy.py (a piece of the block graph with a loop, not bare, holding no known break of the cluster rule)",
+  "round-weight": "loopweight.py",
+  "growth": "fewest counts, joinlib.grow; class by eddy.growth_class"
+ },
+ "public_inputs": {
+  "code": "eddy.py (c14d6ef28e39ecd86a3f13af4bde875b1e4667b89208b3c0a7503296147d7cf2), sampler.py (db789f2936d7745c76adeea157faa300f917d89bd025f99592f05fa66792556f), catalogue.py (65a251111b7afcfa16e5505beb890b908824c04e00826083afb09c53704d2047), equation.py (3beb63c412876afcf82b799b1612ffdb473cde96b0f4bc4755f9f955a5924027), loopweight.py (8e130d7aa72f67e21701e7ad09514939a0b6afd8f30d5475a3eddb0b788aa547), job.py (cd3fae10dbf89e66e0cd522c556efea6c8dfd79308911fb9cdfa6c81cd0e6d3f), merge.py (a27bbba20dd7d6cf389381df5e2fccb06e5fc880b1dab90134e62d502bf8c853), checks.py (217bf4ccf60e854cc2cf68c33be48693e7b6fe6951521d643472fdc6fda84dc2) (sha256)",
+  "data": "catalogue.json (a08282f6c28f0eb696bd851a5401e9e9b81525f21e848f5f9b11069e46f5a729), undecided.json (9d7124e6f3cc3d578edf95b6644f73ba7053c313d6c09f100f381c44ef3d8789) (sha256), from pilot/cat_rule7.py and pilot/cat_rule8.py",
+  "run": "scripts/longrun.py launch job.py (6 workers) under .venv/bin/python; python3 -B merge.py <out dir> <results.json>",
+  "reused": "CLUSTER-ALL-20261119-001B clusters.py; JOIN-GROWTH-20261118-001B joinlib/fastlib/reclib; TOUCH-CENSUS-20261118-001B arrlib; SCALE-SHARE-20261119-001B scale.py (chains); NAE-GROWTH-20261119-001B naelib.py"
+ },
+ "forbidden_inputs": [
+  "Changing the rule, a case, the catalogue or a prediction after reading any comparison; any miss is a failure, not a new exclusion"
+ ],
+ "primary_observable": "E1-E4, C1-C4, I1-I3, R1-R2, U1 of research/LOOP-CATALOGUE-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "growth classes of non-eddies (controls one in 400 / 100), gates G1-G6 (checks_output.json)",
+ "predictions": {"E1": "rule-eddies exponential, exact ones equal the rule", "E2": "rule non-eddies not exponential", "E3": "meeting hyperedges never exponential", "E4": "descriptive thresholds", "C1": "catalogue entries exponential, equal, NAE equal", "C2": "W root = rule rate", "C3": "W(1) = 2", "C4": "no algebraic entry to eight knots", "I1": "interfaces equal the rule", "I2": "interface factors", "I3": "interfaces raise the rate; ring joins algebraic", "R1": "rings with a spare", "R2": "ring of eight placements", "U1": "undecided: meeting hyperedges not exponential"},
+ "decision_rules": {"each": "held iff no exception"},
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "about an hour",
+ "disclosed_exploration": "pilot/ (census check, ~1M random starts at 6-12 knots, catalogue searches, smoke run), recorded in the pre-registration",
+ "amendments": []
+}

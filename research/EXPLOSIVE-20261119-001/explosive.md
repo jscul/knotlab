@@ -108,3 +108,52 @@ Framed by A110, the owner's direction: blow-up is expected, and the unlimited st
 | 1 | Merge and burst: do the other explosive starts also end after one giant group and a Boolean-lattice burst? Count the burst instead of building it | 3/3 — it decides "grows without bound" for the kind | 2/3 — the smallest case's pattern suggests counting the subsets of the survivors instead of enumerating groups | grow the 15 stopped starts with the merge read as an event and the burst counted → stop when each ends, or one keeps growing past its burst | Alternative · proposed |
 | 2 | Prove the filled reading for groups of three that do not overlap | 2/3 — it carries the identification line outside the class | 2/3 — the round-1 cone argument is in hand | extend the cover argument to a complex with filled cells → stop at a proof, or a non-overlapping start it misses | Alternative · proposed |
 | 3 | Prove the ceiling of 2.3830 within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+## Final report as sent (2026-11-19 18:13 UTC)
+
+**Outcome:** The explosive kind has its own regularity, and its smallest case ends. Following John's direction (A110: blow-up is expected, so read it by sampling), I asked what a sample of it shows. Groups of three act like filled cells wherever they don't overlap. The explosive kind needs overlapping groups of three and knots of more than five places. The smallest explosive start closes after one giant merge and an exact binomial burst, so "grows without bound" is refuted for it. 2 of 4 frozen predictions held. Closed, referee pending.
+
+- **The object that replaces the unrolled map.** A group of three joins three knots in one junction instead of three pairs. Glue a cell on each cycle of three blocks and read the map as before: this filled map predicts the growth class on all 1,705 starts within five places, all 474 census starts, and 775 of 776 non-overlapping starts within seven places. For round 1 there's a short argument (a junction cones its parents). Beyond that it's measured.
+- **Where explosion lives.**
+  - None of 2,191 starts within five places is explosive, and the largest group anywhere is 9.
+  - Within seven places, 16 of 1,000 are. Every one has groups of three that share a knot and a block, and a knot of seven places.
+  - Their filled maps keep no cycle, so the advisor's guess (a surviving cycle drives it) was wrong. Overlap drives it.
+- **The smallest explosive start.** It has six knots of 6, 7, 5, 4, 5 and 3 places.
+  - It grows modestly for eleven rounds, then leaps to 67 and 322 in rounds 12 and 13.
+  - In round 14 a single group of 309 parents swallows nearly everything, leaving 9 junctions.
+  - Those 9 join in every way exactly once: 36, 84, 126, 126, 84, 36, 9 and 1 junctions with 2 to 9 parents, the binomial coefficients of 9.
+  - It closes at round 23. So the explosion is one merge plus a finite burst, which is finitely describable.
+- **What's open.** The other 15 explosive starts were stopped by the per-start limits (groups of 22 to 974). Whether they also end after a burst isn't known yet.
+- **The two misses.**
+  - X1 failed only where groups overlap: 28 of its 29 failures, all with a seven-place knot.
+  - X1b failed because a kept cycle that is bare stays polynomial (2 of 12), as the rank rule says. My prediction forgot bare cycles.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the explosive kind | **Status:** Partially successful (2 of 4 held; X1 and X1b failed, causes located) | Filled cells where groups don't overlap; explosion needs overlap and more than five places; the smallest case closes |
+| Local direction: what the cheapest growth builds | Research directions | Within five places the picture is complete: proved in the class, filled cells outside it; explosion lies beyond the cap |
+| Broader exploration: the eddy catalogue (A109) | Research directions | The explosive kind's smallest case has a regularity; larger cases are unread within the limits |
+| Long-term goal: G17 | Capability gained | The rare explosive kind located and sampled, with one case followed to its end |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Merge and burst: do the other explosive starts also end after one giant group and a Boolean-lattice burst? Count the burst instead of building it | 3/3 | 2/3 | grow the 15 stopped starts with the merge read as an event and the burst counted → stop when each ends, or one keeps growing past its burst | Alternative · proposed |
+| 2 | Prove the filled reading for groups of three that don't overlap | 2/3 | 2/3 | extend the cover argument to a complex with filled cells → stop at a proof, or a non-overlapping start it misses | Alternative · proposed |
+| 3 | Prove the 2.3830 ceiling within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+**Corrections:** none new. The dead-knot study's referee fold (a5c78f703) is reported above. **Goals:** G17 checkpoint (capability gained). **Assumptions:**
+- A110 added, in John's words: blow-up is expected, and the unlimited structure is read by sampling it. Status Assumed; it frames this study.
+- A110 and A109 each get a history line. A109 stays Under challenge.
+
+**Basket:** `DEAD-CAP-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze, staying within its text.
+- It gave the round-1 cone argument.
+- It made my class rule honest: D + 3 counts per degree, exclusive classes, explosion judged on counts.
+- It asked for the kept-cycle stratum and the calibration on the reference shapes.
+- Its prediction that a surviving cycle drives explosion was wrong.
+
+**Referee hand-off.** The decision note is `research/EXPLOSIVE-20261119-001/explosive.md`, the code is `experiments/EXPLOSIVE-20261119-001B/EXPLOSIVE-20261119-001B-E001_filled/`, and the post-hoc growth is `posthoc_smallest.py` there. Please check:
+- the filled reading's rays from true round-1 demand;
+- the class rule's exclusivity and the child-process limits;
+- that the smallest explosive start really closes at round 23.

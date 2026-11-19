@@ -1,0 +1,605 @@
+[
+  {
+    "block": "K2,3",
+    "internal_meetings": [
+      [
+        "a",
+        "x"
+      ],
+      [
+        "a",
+        "y"
+      ],
+      [
+        "a",
+        "z"
+      ],
+      [
+        "b",
+        "x"
+      ],
+      [
+        "b",
+        "y"
+      ],
+      [
+        "b",
+        "z"
+      ]
+    ],
+    "slot_order": [
+      "ax",
+      "ay",
+      "az",
+      "bx",
+      "by",
+      "bz",
+      "a:0",
+      "b:0",
+      "x:0",
+      "x:1",
+      "y:0",
+      "y:1",
+      "z:0",
+      "z:1",
+      "outside_seed"
+    ],
+    "four_place_stars": {
+      "a": [
+        "ax",
+        "ay",
+        "az",
+        "a:0"
+      ],
+      "b": [
+        "bx",
+        "by",
+        "bz",
+        "b:0"
+      ],
+      "x": [
+        "ax",
+        "bx",
+        "x:0",
+        "x:1"
+      ],
+      "y": [
+        "ay",
+        "by",
+        "y:0",
+        "y:1"
+      ],
+      "z": [
+        "az",
+        "bz",
+        "z:0",
+        "z:1"
+      ]
+    },
+    "local_translations": 32,
+    "minimum_weight_distribution": {
+      "without_seed_proxy": {
+        "0": 6,
+        "2": 827,
+        "4": 2170
+      },
+      "with_seed_proxy": {
+        "2": 86,
+        "4": 1484,
+        "6": 432
+      }
+    },
+    "locally_minimal_cosets": 48,
+    "locally_minimal_words": 432,
+    "by_seed_ports": {
+      "0": {
+        "seed_placements": 1,
+        "outside_models": 174,
+        "minimal_model_word_pairs": 75168,
+        "initially_compatible": 6720,
+        "surviving_words": 0
+      },
+      "1": {
+        "seed_placements": 8,
+        "outside_models": 498,
+        "minimal_model_word_pairs": 215136,
+        "initially_compatible": 13248,
+        "surviving_words": 0
+      },
+      "2": {
+        "seed_placements": 13,
+        "outside_models": 327,
+        "minimal_model_word_pairs": 141264,
+        "initially_compatible": 6000,
+        "surviving_words": 0
+      },
+      "3": {
+        "seed_placements": 8,
+        "outside_models": 80,
+        "minimal_model_word_pairs": 0,
+        "surviving_words": 0,
+        "initially_compatible": 0
+      }
+    },
+    "totals": {
+      "seed_placements": 30,
+      "outside_models": 1079,
+      "minimal_model_word_pairs": 431568,
+      "initially_compatible": 25968,
+      "surviving_words": 0
+    },
+    "examples": {
+      "initial_pass_lost_by_translation": {
+        "word": [
+          "ax",
+          "bx",
+          "by",
+          "y:1",
+          "z:0",
+          "outside_seed"
+        ],
+        "seed_ports": [],
+        "outside_holder_groups": [
+          [
+            "y:1",
+            "z:0"
+          ]
+        ],
+        "translated_word": [
+          "ax",
+          "ay",
+          "bx",
+          "y:0",
+          "z:0",
+          "outside_seed"
+        ],
+        "obstruction": "pair_exceeds_six",
+        "obstructing_pair": [
+          "y:0",
+          "z:0"
+        ],
+        "sites_added": [
+          "y"
+        ]
+      }
+    },
+    "every_partition_count_cross_checked_by_inclusion_exclusion": true,
+    "independent_set_pair_control": {
+      "initial_passes": 36,
+      "final_survivors": 0,
+      "word_admitted_after_dropping_pair_test": {
+        "word": [
+          "bx",
+          "bz",
+          "a:0",
+          "y:0",
+          "z:0",
+          "outside_seed"
+        ],
+        "seed_ports": [],
+        "outside_holder_groups": [
+          [
+            "x:1",
+            "y:0",
+            "z:0"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "block": "K2,4",
+    "internal_meetings": [
+      [
+        "a",
+        "w"
+      ],
+      [
+        "a",
+        "x"
+      ],
+      [
+        "a",
+        "y"
+      ],
+      [
+        "a",
+        "z"
+      ],
+      [
+        "b",
+        "w"
+      ],
+      [
+        "b",
+        "x"
+      ],
+      [
+        "b",
+        "y"
+      ],
+      [
+        "b",
+        "z"
+      ]
+    ],
+    "slot_order": [
+      "aw",
+      "ax",
+      "ay",
+      "az",
+      "bw",
+      "bx",
+      "by",
+      "bz",
+      "w:0",
+      "w:1",
+      "x:0",
+      "x:1",
+      "y:0",
+      "y:1",
+      "z:0",
+      "z:1",
+      "outside_seed"
+    ],
+    "four_place_stars": {
+      "a": [
+        "aw",
+        "ax",
+        "ay",
+        "az"
+      ],
+      "b": [
+        "bw",
+        "bx",
+        "by",
+        "bz"
+      ],
+      "w": [
+        "aw",
+        "bw",
+        "w:0",
+        "w:1"
+      ],
+      "x": [
+        "ax",
+        "bx",
+        "x:0",
+        "x:1"
+      ],
+      "y": [
+        "ay",
+        "by",
+        "y:0",
+        "y:1"
+      ],
+      "z": [
+        "az",
+        "bz",
+        "z:0",
+        "z:1"
+      ]
+    },
+    "local_translations": 64,
+    "minimum_weight_distribution": {
+      "without_seed_proxy": {
+        "0": 8,
+        "2": 1544,
+        "4": 6072,
+        "6": 384
+      },
+      "with_seed_proxy": {
+        "2": 120,
+        "4": 2776,
+        "6": 1472
+      }
+    },
+    "locally_minimal_cosets": 200,
+    "locally_minimal_words": 1856,
+    "by_seed_ports": {
+      "0": {
+        "seed_placements": 1,
+        "outside_models": 1657,
+        "minimal_model_word_pairs": 3075392,
+        "initially_compatible": 123648,
+        "surviving_words": 0
+      },
+      "1": {
+        "seed_placements": 8,
+        "outside_models": 3272,
+        "minimal_model_word_pairs": 6072832,
+        "initially_compatible": 200448,
+        "surviving_words": 0
+      },
+      "2": {
+        "seed_placements": 24,
+        "outside_models": 2736,
+        "minimal_model_word_pairs": 5078016,
+        "initially_compatible": 134784,
+        "surviving_words": 0
+      },
+      "3": {
+        "seed_placements": 32,
+        "outside_models": 1184,
+        "minimal_model_word_pairs": 454656,
+        "surviving_words": 0,
+        "initially_compatible": 0
+      }
+    },
+    "totals": {
+      "seed_placements": 65,
+      "outside_models": 8849,
+      "minimal_model_word_pairs": 14680896,
+      "initially_compatible": 458880,
+      "surviving_words": 0
+    },
+    "examples": {
+      "initial_pass_lost_by_translation": {
+        "word": [
+          "aw",
+          "bw",
+          "by",
+          "y:1",
+          "z:0",
+          "outside_seed"
+        ],
+        "seed_ports": [],
+        "outside_holder_groups": [
+          [
+            "y:1",
+            "z:0"
+          ]
+        ],
+        "translated_word": [
+          "aw",
+          "ay",
+          "bw",
+          "y:0",
+          "z:0",
+          "outside_seed"
+        ],
+        "obstruction": "pair_exceeds_six",
+        "obstructing_pair": [
+          "y:0",
+          "z:0"
+        ],
+        "sites_added": [
+          "y"
+        ]
+      }
+    },
+    "every_partition_count_cross_checked_by_inclusion_exclusion": true,
+    "independent_set_pair_control": {
+      "initial_passes": 96,
+      "final_survivors": 0,
+      "word_admitted_after_dropping_pair_test": {
+        "word": [
+          "az",
+          "by",
+          "w:0",
+          "x:0",
+          "y:0",
+          "outside_seed"
+        ],
+        "seed_ports": [],
+        "outside_holder_groups": [
+          [
+            "w:1",
+            "x:0",
+            "y:0",
+            "z:0"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "block": "K3,3 minus two nonincident meetings",
+    "internal_meetings": [
+      [
+        "a",
+        "y"
+      ],
+      [
+        "a",
+        "z"
+      ],
+      [
+        "b",
+        "x"
+      ],
+      [
+        "b",
+        "z"
+      ],
+      [
+        "c",
+        "x"
+      ],
+      [
+        "c",
+        "y"
+      ],
+      [
+        "c",
+        "z"
+      ]
+    ],
+    "slot_order": [
+      "ay",
+      "az",
+      "bx",
+      "bz",
+      "cx",
+      "cy",
+      "cz",
+      "a:0",
+      "a:1",
+      "b:0",
+      "b:1",
+      "c:0",
+      "x:0",
+      "x:1",
+      "y:0",
+      "y:1",
+      "z:0",
+      "outside_seed"
+    ],
+    "four_place_stars": {
+      "a": [
+        "ay",
+        "az",
+        "a:0",
+        "a:1"
+      ],
+      "b": [
+        "bx",
+        "bz",
+        "b:0",
+        "b:1"
+      ],
+      "c": [
+        "cx",
+        "cy",
+        "cz",
+        "c:0"
+      ],
+      "x": [
+        "bx",
+        "cx",
+        "x:0",
+        "x:1"
+      ],
+      "y": [
+        "ay",
+        "cy",
+        "y:0",
+        "y:1"
+      ],
+      "z": [
+        "az",
+        "bz",
+        "cz",
+        "z:0"
+      ]
+    },
+    "local_translations": 64,
+    "minimum_weight_distribution": {
+      "without_seed_proxy": {
+        "0": 7,
+        "2": 1274,
+        "4": 9479,
+        "6": 1616
+      },
+      "with_seed_proxy": {
+        "2": 120,
+        "4": 2641,
+        "6": 3427
+      }
+    },
+    "locally_minimal_cosets": 713,
+    "locally_minimal_words": 5043,
+    "by_seed_ports": {
+      "0": {
+        "seed_placements": 1,
+        "outside_models": 729,
+        "minimal_model_word_pairs": 3676347,
+        "initially_compatible": 1568,
+        "surviving_words": 0
+      },
+      "1": {
+        "seed_placements": 10,
+        "outside_models": 2538,
+        "minimal_model_word_pairs": 12799134,
+        "initially_compatible": 6720,
+        "surviving_words": 0
+      },
+      "2": {
+        "seed_placements": 16,
+        "outside_models": 1728,
+        "minimal_model_word_pairs": 8714304,
+        "initially_compatible": 3584,
+        "surviving_words": 0
+      },
+      "3": {
+        "seed_placements": 8,
+        "outside_models": 432,
+        "minimal_model_word_pairs": 698112,
+        "surviving_words": 0,
+        "initially_compatible": 0
+      }
+    },
+    "totals": {
+      "seed_placements": 35,
+      "outside_models": 5427,
+      "minimal_model_word_pairs": 25887897,
+      "initially_compatible": 11872,
+      "surviving_words": 0
+    },
+    "examples": {
+      "initial_pass_lost_by_translation": {
+        "word": [
+          "bx",
+          "b:1",
+          "c:0",
+          "x:1",
+          "z:0",
+          "outside_seed"
+        ],
+        "seed_ports": [],
+        "outside_holder_groups": [
+          [
+            "b:1",
+            "c:0"
+          ],
+          [
+            "x:1",
+            "z:0"
+          ]
+        ],
+        "translated_word": [
+          "az",
+          "bx",
+          "cy",
+          "b:0",
+          "x:0",
+          "outside_seed"
+        ],
+        "obstruction": "pair_exceeds_six",
+        "obstructing_pair": [
+          "az",
+          "x:0"
+        ],
+        "sites_added": [
+          "b",
+          "c",
+          "x",
+          "z"
+        ]
+      }
+    },
+    "every_partition_count_cross_checked_by_inclusion_exclusion": true,
+    "independent_set_pair_control": {
+      "initial_passes": 0,
+      "final_survivors": 0,
+      "word_admitted_after_dropping_pair_test": {
+        "word": [
+          "ay",
+          "az",
+          "bx",
+          "bz",
+          "cx",
+          "outside_seed"
+        ],
+        "seed_ports": [],
+        "outside_holder_groups": [
+          [
+            "x:1",
+            "y:0",
+            "z:0"
+          ]
+        ]
+      }
+    }
+  }
+]

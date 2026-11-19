@@ -1,0 +1,332 @@
+{
+  "local_names": [
+    "01",
+    "12",
+    "23",
+    "30",
+    "0a",
+    "0b",
+    "1a",
+    "1b",
+    "2a",
+    "2b",
+    "3a",
+    "3b",
+    "outside_seed"
+  ],
+  "four_stars": [
+    [
+      "01",
+      "30",
+      "0a",
+      "0b"
+    ],
+    [
+      "01",
+      "12",
+      "1a",
+      "1b"
+    ],
+    [
+      "12",
+      "23",
+      "2a",
+      "2b"
+    ],
+    [
+      "23",
+      "30",
+      "3a",
+      "3b"
+    ]
+  ],
+  "translated_by_site_subsets": [
+    [],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ]
+  ],
+  "six_subsets_by_number_of_cycle_supported_bits": {
+    "5": 792,
+    "6": 924
+  },
+  "minimum_four_star_coset_weights_by_number_of_cycle_supported_bits": {
+    "5": {
+      "2": 56,
+      "4": 672,
+      "6": 64
+    },
+    "6": {
+      "0": 4,
+      "2": 372,
+      "4": 548
+    }
+  },
+  "locally_minimal_words": 64,
+  "counts_by_number_of_cycle_to_seed_ports": {
+    "0": {
+      "outside_models": 49,
+      "six_subsets": 84084,
+      "four_star_minimal_tests": 3136,
+      "initial_seed_failure": 0,
+      "initial_pair_failure": 2880,
+      "initial_tests_passed": 256,
+      "failure_in_tied_seed_test": 0,
+      "failure_in_tied_pair_test": 256,
+      "final_survivors": 0
+    },
+    "1": {
+      "outside_models": 168,
+      "six_subsets": 288288,
+      "four_star_minimal_tests": 10752,
+      "initial_seed_failure": 5376,
+      "initial_pair_failure": 4864,
+      "initial_tests_passed": 512,
+      "failure_in_tied_seed_test": 512,
+      "failure_in_tied_pair_test": 512,
+      "final_survivors": 0
+    },
+    "2": {
+      "outside_models": 112,
+      "six_subsets": 192192,
+      "four_star_minimal_tests": 7168,
+      "initial_seed_failure": 5376,
+      "initial_pair_failure": 1536,
+      "initial_tests_passed": 256,
+      "failure_in_tied_seed_test": 256,
+      "failure_in_tied_pair_test": 256,
+      "final_survivors": 0
+    }
+  },
+  "totals": {
+    "outside_models": 329,
+    "six_subsets": 564564,
+    "four_star_minimal_tests": 21056,
+    "initial_seed_failure": 10752,
+    "initial_pair_failure": 9280,
+    "initial_tests_passed": 1024,
+    "failure_in_tied_seed_test": 768,
+    "failure_in_tied_pair_test": 1024,
+    "final_survivors": 0
+  },
+  "seed_and_pair_failure_counts_can_overlap": true,
+  "model_scope": "All opposite-slot partial matchings and all bipartitely possible seed-to-cycle slots. Every seed-involving pair is allowed. Additional constraints from a lawful exterior history and from distances above six are omitted.",
+  "controls": {
+    "predecessor_H_six_bit_clique": {
+      "outside": {
+        "cycle_to_seed_slots": [
+          "0b"
+        ],
+        "pairs_with_same_nonfour_holder": [
+          [
+            "0a",
+            "2a"
+          ],
+          [
+            "1a",
+            "3a"
+          ]
+        ]
+      },
+      "word": [
+        "01",
+        "23",
+        "0a",
+        "1a",
+        "2a",
+        "3a"
+      ],
+      "initial_pair_test": true,
+      "shortening_xor_sites": [
+        1,
+        2
+      ],
+      "shortened_word": [
+        "0a",
+        "1b",
+        "2b",
+        "3a"
+      ]
+    },
+    "actual_adjacent_star_sum": {
+      "word": [
+        "01",
+        "23",
+        "1a",
+        "1b",
+        "2a",
+        "2b"
+      ],
+      "initial_pair_test": true,
+      "actual_source_equation": true,
+      "minimum_coset_weight_under_local_stars": 0
+    },
+    "locally_minimal_six_bit_test": {
+      "outside": {
+        "cycle_to_seed_slots": [],
+        "pairs_with_same_nonfour_holder": [
+          [
+            "0a",
+            "2a"
+          ],
+          [
+            "1a",
+            "3a"
+          ]
+        ]
+      },
+      "word": [
+        "01",
+        "0a",
+        "1a",
+        "2a",
+        "3a",
+        "outside_seed"
+      ],
+      "initial_pair_test": true,
+      "all_four_star_translations_have_6_or_more_bits": true,
+      "exclusion_via_opposite_slots": {
+        "xor_sites": [
+          0
+        ],
+        "word": [
+          "30",
+          "0b",
+          "1a",
+          "2a",
+          "3a",
+          "outside_seed"
+        ],
+        "kind": "pair_exceeds_six",
+        "bits": [
+          "0b",
+          "2a"
+        ]
+      },
+      "exclusion_with_cycle_seed_slot_0b": {
+        "xor_sites": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "word": [
+          "01",
+          "0b",
+          "1b",
+          "2b",
+          "3b",
+          "outside_seed"
+        ],
+        "kind": "shorten_by_seed"
+      }
+    },
+    "deliberately_non_simple_outside_relation": {
+      "outside": {
+        "cycle_to_seed_slots": [],
+        "pairs_with_same_nonfour_holder": [
+          [
+            "0a",
+            "2a"
+          ],
+          [
+            "0a",
+            "2b"
+          ],
+          [
+            "0b",
+            "2a"
+          ],
+          [
+            "0b",
+            "2b"
+          ],
+          [
+            "1a",
+            "3a"
+          ],
+          [
+            "1a",
+            "3b"
+          ],
+          [
+            "1b",
+            "3a"
+          ],
+          [
+            "1b",
+            "3b"
+          ]
+        ]
+      },
+      "word": [
+        "01",
+        "0a",
+        "1a",
+        "2a",
+        "3a",
+        "outside_seed"
+      ],
+      "passes_even_after_tied_translations": true
+    }
+  }
+}

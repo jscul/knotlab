@@ -1,0 +1,321 @@
+{
+  "names": [
+    "tp",
+    "tq",
+    "tc",
+    "wp",
+    "wq",
+    "wc",
+    "bp",
+    "bq",
+    "t.in",
+    "w.free",
+    "b.y",
+    "b.free",
+    "p.free",
+    "q.r",
+    "c.r",
+    "c.free",
+    "outside_seed"
+  ],
+  "four_place_stars": {
+    "t": [
+      "tp",
+      "tq",
+      "tc",
+      "t.in"
+    ],
+    "w": [
+      "wp",
+      "wq",
+      "wc",
+      "w.free"
+    ],
+    "b": [
+      "bp",
+      "bq",
+      "b.y",
+      "b.free"
+    ],
+    "p": [
+      "tp",
+      "wp",
+      "bp",
+      "p.free"
+    ],
+    "q": [
+      "tq",
+      "wq",
+      "bq",
+      "q.r"
+    ],
+    "c": [
+      "tc",
+      "wc",
+      "c.r",
+      "c.free"
+    ]
+  },
+  "six_subsets": 12376,
+  "local_translations": 64,
+  "subsets_times_translations": 792064,
+  "minimum_local_coset_weight_by_number_of_component_bits": {
+    "5": {
+      "2": 120,
+      "4": 2644,
+      "6": 1604
+    },
+    "6": {
+      "0": 8,
+      "2": 1430,
+      "4": 6490,
+      "6": 80
+    }
+  },
+  "words_with_local_minimum_six": 1684,
+  "literal_source_projection_checks": {
+    "archived_histories": 3,
+    "components_projected": 7,
+    "named_first_and_later_examples": [
+      {
+        "tp": 3,
+        "tq": 4,
+        "tc": 5,
+        "wp": 6,
+        "wq": 9,
+        "wc": 12,
+        "bp": 7,
+        "bq": 10,
+        "t.in": 0,
+        "w.free": 13,
+        "b.y": 14,
+        "b.free": 15,
+        "p.free": 8,
+        "q.r": 11,
+        "c.r": 16,
+        "c.free": 17
+      },
+      {
+        "tp": 24,
+        "tq": 25,
+        "tc": 26,
+        "wp": 27,
+        "wq": 30,
+        "wc": 33,
+        "bp": 28,
+        "bq": 31,
+        "t.in": 22,
+        "w.free": 34,
+        "b.y": 35,
+        "b.free": 36,
+        "p.free": 29,
+        "q.r": 32,
+        "c.r": 37,
+        "c.free": 38
+      }
+    ]
+  },
+  "literal_projection_counts": {
+    "first": {
+      "outside": {
+        "seed_ports_in_component": [
+          "t.in"
+        ],
+        "outside_holder_groups": [
+          [
+            "q.r",
+            "c.r"
+          ]
+        ]
+      },
+      "initial_seed_overlap": 504,
+      "initial_outside_holder_overlap": 0,
+      "initial_pair_exceeds_six": 1148,
+      "initial_pass": 32,
+      "tied_seed_overlap": 32,
+      "tied_outside_holder_overlap": 0,
+      "tied_pair_exceeds_six": 32,
+      "final_survivors": 0,
+      "example_failing_at_tie": {
+        "word": [
+          "tp",
+          "tq",
+          "wp",
+          "q.r",
+          "c.r",
+          "outside_seed"
+        ],
+        "first_failure_by_kind": {
+          "seed_overlap": {
+            "xor_sites": [
+              "t"
+            ],
+            "translated_word": [
+              "tc",
+              "wp",
+              "t.in",
+              "q.r",
+              "c.r",
+              "outside_seed"
+            ],
+            "pair_if_any": null
+          },
+          "pair_exceeds_six": {
+            "xor_sites": [
+              "p"
+            ],
+            "translated_word": [
+              "tq",
+              "bp",
+              "p.free",
+              "q.r",
+              "c.r",
+              "outside_seed"
+            ],
+            "pair_if_any": [
+              "bp",
+              "c.r"
+            ]
+          }
+        }
+      }
+    },
+    "later": {
+      "outside": {
+        "seed_ports_in_component": [],
+        "outside_holder_groups": [
+          [
+            "q.r",
+            "c.r"
+          ]
+        ]
+      },
+      "initial_seed_overlap": 0,
+      "initial_outside_holder_overlap": 0,
+      "initial_pair_exceeds_six": 1636,
+      "initial_pass": 48,
+      "tied_seed_overlap": 0,
+      "tied_outside_holder_overlap": 0,
+      "tied_pair_exceeds_six": 48,
+      "final_survivors": 0,
+      "example_failing_at_tie": {
+        "word": [
+          "tp",
+          "tq",
+          "wp",
+          "q.r",
+          "c.r",
+          "outside_seed"
+        ],
+        "first_failure_by_kind": {
+          "pair_exceeds_six": {
+            "xor_sites": [
+              "p"
+            ],
+            "translated_word": [
+              "tq",
+              "bp",
+              "p.free",
+              "q.r",
+              "c.r",
+              "outside_seed"
+            ],
+            "pair_if_any": [
+              "bp",
+              "c.r"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "all_simple_bipartite_outside_partitions": {
+    "first": {
+      "outside_models": 30,
+      "locally_minimal_model_word_pairs": 50520,
+      "initial_seed_overlap": 15120,
+      "initial_outside_holder_overlap": 324,
+      "initial_pair_exceeds_six": 33732,
+      "initial_pass": 1344,
+      "tied_seed_overlap": 1344,
+      "tied_outside_holder_overlap": 168,
+      "tied_pair_exceeds_six": 1344,
+      "final_survivors": 0
+    },
+    "later": {
+      "outside_models": 100,
+      "locally_minimal_model_word_pairs": 168400,
+      "initial_seed_overlap": 0,
+      "initial_outside_holder_overlap": 2400,
+      "initial_pair_exceeds_six": 158476,
+      "initial_pass": 7524,
+      "tied_seed_overlap": 0,
+      "tied_outside_holder_overlap": 1568,
+      "tied_pair_exceeds_six": 7524,
+      "final_survivors": 0
+    }
+  },
+  "all_simple_bipartite_partitions_at_every_seed_placement": {
+    "0": {
+      "seed_placements": 1,
+      "outside_models": 100,
+      "locally_minimal_model_word_pairs": 168400,
+      "initial_seed_overlap": 0,
+      "initial_outside_holder_overlap": 2400,
+      "initial_pair_exceeds_six": 158476,
+      "initial_pass": 7524,
+      "tied_seed_overlap": 0,
+      "tied_outside_holder_overlap": 1568,
+      "tied_pair_exceeds_six": 7524,
+      "final_survivors": 0
+    },
+    "1": {
+      "seed_placements": 8,
+      "outside_models": 320,
+      "locally_minimal_model_word_pairs": 538880,
+      "initial_seed_overlap": 186080,
+      "initial_outside_holder_overlap": 5616,
+      "initial_pair_exceeds_six": 326496,
+      "initial_pass": 20688,
+      "tied_seed_overlap": 18768,
+      "tied_outside_holder_overlap": 3488,
+      "tied_pair_exceeds_six": 20688,
+      "final_survivors": 0
+    },
+    "2": {
+      "seed_placements": 10,
+      "outside_models": 180,
+      "locally_minimal_model_word_pairs": 303120,
+      "initial_seed_overlap": 170800,
+      "initial_outside_holder_overlap": 1664,
+      "initial_pair_exceeds_six": 122904,
+      "initial_pass": 7752,
+      "tied_seed_overlap": 7752,
+      "tied_outside_holder_overlap": 1152,
+      "tied_pair_exceeds_six": 7752,
+      "final_survivors": 0
+    },
+    "3": {
+      "seed_placements": 4,
+      "outside_models": 40,
+      "locally_minimal_model_word_pairs": 3200,
+      "initial_seed_overlap": 1280,
+      "initial_outside_holder_overlap": 64,
+      "initial_pair_exceeds_six": 1760,
+      "initial_pass": 96,
+      "tied_seed_overlap": 96,
+      "tied_outside_holder_overlap": 32,
+      "tied_pair_exceeds_six": 96,
+      "final_survivors": 0
+    }
+  },
+  "positive_control_when_seed_free_pair_test_is_removed": [
+    "tp",
+    "tq",
+    "wp",
+    "q.r",
+    "c.r",
+    "outside_seed"
+  ],
+  "counts_note": "Tied rejection counts can overlap across different translations of the same word."
+}

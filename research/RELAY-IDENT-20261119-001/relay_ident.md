@@ -64,3 +64,39 @@ the census tally as its short follow-up. Goal G17. **Referee pending.**
 | --- | --- | --- | --- | --- | --- |
 | 1 | Knots touching twice: extend the proofs to multiplicity two (3,980 of 4,012 already agree), and find what three shared distinctions do | 2/3 — the census's tree-shaped starts are mostly of this kind | 3/3 — the disagreements are named | check whether a double touch changes the map of joins or only open distinctions → stop at a proof, or the first double touch that changes the count | Alternative · proposed |
 | 2 | Cycles of three and four knots (`RING-IDENT-20261119-001#3`): the other 61% of two-dimensional growths | 3/3 — the rest of "why two" | 1/3 — the tree-of-blocks cover is the wrong object | find the complex whose clusters give CLUSTER-ALL's chain count there → stop at one, or at a start where none exists | Alternative · deferred |
+
+## Final report as sent (2026-11-19 14:20 UTC)
+
+**Outcome:** Relays are now proved, and they explain why two is the census's typical dimension on tree-shaped starts. A piece of the map of joins with no cycle and no chain eventually finishes. If another piece is still growing, the finished top gets one fresh distinction from the floor. From there it grows like a knot with one open distinction: one point carrying two endless chains, making k junctions in the k-th round after the top. If it's the only piece, it closes. All 218 small starts agree round by round, and the census tally's one check held (307 of 307). Closed, referee pending.
+
+- **The dimension of a tree start** is the largest number of chains in one piece, and a finished piece counts as two.
+- **Why two is typical.** Every growing tree-shaped start of up to five knots is one- or two-dimensional, and 93% are two-dimensional (3,753 of 4,055).
+  - A one-dimensional start needs each of its two pieces to hold exactly one chain.
+  - A piece with no chain relays and feeds two.
+  - Three chains in one piece takes at least seven knots.
+
+  So small trees almost always give two, and a relay is part of the reason in 71% of them.
+- **Checks.** The advisor's predictions, made before I grew the larger cases, held exactly. The path of seven grows 7, 7, 7, 8, 10, 12, …, and the nine-knot spider with four legs grows C(t + 3, 3) + t + 1. On the census, the rule matches the measured dimension on all 307 simple trees. It also matches 3,980 of 4,012 tree-shaped starts whose knots touch twice, which is outside the proof; the 32 exceptions all have two knots sharing three or four distinctions.
+- **What stays open.** Tree-shaped starts are 39% of the census's two-dimensional growths (3,753 of 9,564). The other 61% have a cycle of three or four knots, where the proofs' conditions fail. CLUSTER-ALL's computed rule covers those, but it isn't proved.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: relays and the census tally | **Status:** Successful (proved; T1 held, 307 of 307) | A relay is one point with two chains on the finished top; 218 of 218 agree; 93% of growing tree-shaped census starts are two-dimensional |
+| Local direction: an exact model of the cheapest parity growth | Continue | Proved for every start without cycles of two or three blocks; cycles of three or four knots remain |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Trees: dimension = chains per piece, a finished piece counting two; cycles: rational or algebraic |
+| Long-term goal: G17 | Capability gained | The census's typical two dimensions explained on tree-shaped starts; the rest located |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Knots touching twice: extend the proofs to multiplicity two (3,980 of 4,012 already agree) and find what three shared distinctions do | 2/3 | 3/3 | check whether a double touch changes the map or only open distinctions → stop at a proof, or the first double touch that changes the count | Alternative · proposed |
+| 2 | Cycles of three and four knots: the other 61% of two-dimensional growths | 3/3 — the rest of "why two" | 1/3 — the tree-of-blocks cover is the wrong object | find a complex whose clusters give CLUSTER-ALL's chain count there → stop at one, or a start where none exists | Alternative · deferred |
+
+**Corrections:** one, Not a block, from CHAIN-IDENT's referee (both proofs confirmed line by line). The chains proof's control count of relay starts is 115 of 137, not 137, because its check counted a non-live knot twice; the 22 stars close exactly as their clusters do. It's logged in docs/CORRECTIONS.md and HISTORY.md (581a639a2), along with four wording points. RING-IDENT's referee points are also folded in (94e027daf). **Goals:** G17 checkpoint (capability gained). **Assumptions:** none changed. **Basket:** `RING-IDENT-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze, staying within its text. It found a hole in my implied-test case list and fixed it with one invariant over all pieces. It suggested stating the relay as the pendant rule applied to the top, and named the small cases. Its two predictions held exactly.
+
+**Referee hand-off.** The proof is `proofs/RELAY-IDENT-20261119-001A/RELAY-IDENT-20261119-001A-P001_relays/proof.md`, the tally `experiments/RELAY-IDENT-20261119-001B/RELAY-IDENT-20261119-001B-E001_tally/tally.py`, and the decision note `research/RELAY-IDENT-20261119-001/relay_ident.md`. Please check:
+- step 3's invariant;
+- step 4's induction on the J(i, l);
+- Theorem 5's assembly;
+- that the tally reads the census's sizes (not bare) correctly.

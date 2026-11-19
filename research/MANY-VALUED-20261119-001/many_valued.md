@@ -92,3 +92,32 @@ The **refined rule** grows the presentation drawn from M(S) when it is unique up
 | 1 | Parity over the dropped junction on the rings (`STATES-GROWTH-20261119-001#3`), as the coordinator set if BREAK-EDDIES' verdict is still out | 2/3 | 2/3 | as there | Selected · started |
 | 2 | A transfer between kinds of junction (`JUNCTION-MAP-20261119-001#1`), after the BREAK-EDDIES verdict | 3/3 | 2/3 | as there | Alternative · deferred |
 | 3 | How often non-minimal supports occur at scale, and what the states-only growth does after them | 2/3 | 3/3 | sample five- to eight-knot starts → stop at the rate and the growth classes | Alternative · deferred |
+
+## Final report as sent (2026-11-19 11:41 UTC)
+
+**Outcome:** At the 146 points where the states-only growth seemed stuck, there was nothing to choose. At every one, the allowed states have exactly one set of knots presenting them, up to renaming: the stage itself. With that refined rule, a growth reading only the states equals the cheapest growth at every round on 1,805 of 1,806 trajectories without a redundant knot. The one exception is the mechanism the advisor predicted, found once in the census. 1 of 2 frozen predictions held. Closed, referee pending.
+
+- **Why it had looked stuck.** The first rule used every minimal constraint the states satisfy as its knots, and some of those are consequences, not knots. Asking instead for the knots that present the states gives a unique answer everywhere tested. That includes the K4 example, whose two presentations are a renaming of each other.
+- **The exception.** The start has knots (0, 1, 2), (3, 4, 5), (0, 3, 6) and (1, 2, 4, 5, 6). The five-place knot is bigger than its constraint: NAE(1, 2, 4, 5) already holds. Read as given, everything is held twice and the growth closes at once. Read from the states, distinction 6 is open and the growth goes 1, 2, 3.
+- **So what a states-only growth gives up.** Exactly two things the states can't see: a redundant knot, and a knot with more places than its constraint needs. Everywhere else in this range, distance (read from the states) carries all the growth uses.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: presentations of the same states | **Status:** Partially successful (1 of 2 held; the failure is the predicted mechanism) | Unique up to renaming at all 146 points; the states-only growth matches on 1,805 of 1,806 clean trajectories |
+| Local direction: A108 | Confirmed, narrowed | The dependence comes from redundant knots and non-minimal supports only |
+| Broader exploration: the growth and the canonical reading | Known alternatives | A states-only growth exists wherever neither occurs |
+| Long-term goal: G1 | Capability gained | Distance carries the growth except at those two |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Parity over the dropped junction on the rings (as you set, since BREAK-EDDIES' verdict isn't in) | 2/3 | 2/3 | on the catalogue's rings, grow every dropped-junction choice → stop at the set of rates | Selected · started |
+| 2 | The transfer between kinds of junction, after the BREAK-EDDIES verdict | 3/3 | 2/3 | as in JUNCTION-MAP | Alternative · deferred |
+| 3 | How often non-minimal supports occur at scale | 2/3 | 3/3 | sample five- to eight-knot starts → stop at the rate | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G1 and G17 checkpoint (capability gained). **Assumptions:** A108 history line (narrowed: only redundant knots and non-minimal supports). **Basket:** `STATES-GROWTH-20261119-001#2` taken. **Advisor:** Fable 5.2, before the freeze. Its answer stayed within its text. It gave the non-minimal-support mechanism with an example pair, which replays and is the census's one exception. It also asked for uniqueness up to renaming, and for M1 to be scored on the unread points.
+
+**Referee hand-off.** The decision note is `research/MANY-VALUED-20261119-001/many_valued.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- `manylib.presentations` (both pools; the admissibility and irredundancy tests);
+- the exceptional start by hand.

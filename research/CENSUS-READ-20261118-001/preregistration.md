@@ -134,3 +134,25 @@ cuts that wrap a ring (`RING-READ-20261118-001/referee-R1/report.md`). Two addit
   fewer junctions already have complete tables.
 - **Timeouts.** A shard that times out three times (900 seconds each) is rerun one arrangement per case with a 3,600-second limit
   (`job_single.py`, same functions), so the census stays complete.
+
+## Amendment 2, names (2026-11-19, before the readout)
+
+Written while the first pass was running and before any of its cases was read, after Codex's `VARIABLE-OUTPUT-READER-20261118-001J`
+reported that R3 breaks ties by names. Already run and disclosed (`names.py`, `names.json`): on Codex's 27-distinction example
+(our own exact table) R3 is exact under the identity, misreads under the transposition 0 ↔ 24, and misreads under 2 of 20 random
+renamings (it accepts the five loose distinctions and then refuses two true junctions that meet them twice); on the ring it is exact
+under 11 namings at rounds 10, 15 and 20. So R3 depends on names in general, and its first-pass census verdicts are those of the
+census's own naming. Additions, no earlier prediction changed:
+- **R3n** (`reader3n.py`): R3 with a tie rule that uses no names: the stage's eligible cliques are taken together, two conflict when
+  they share two or more distinctions, and in each connected part of the conflict graph the cliques in every maximum set of
+  non-conflicting ones are accepted; a jointly dependent accepted clique is dropped.
+- **A second census pass** (`job_names.py`, same stages and tables): R3n at the full table, pooled above largest − 1 and largest − 2,
+  and both R3 and R3n under three seeded renamings per stage.
+
+| # | Prediction | Fails when |
+| --- | --- | --- |
+| N1 | R3n is exact on Codex's 27-distinction example under the identity, the transposition and all 20 random renamings, at horizons 4, largest − 1 and largest + 3 | any naming or horizon not exact |
+| N2 | R3n is exact on the ring at rounds 10, 15, 20 and 25 under 11 namings each | any |
+| N3 | R3n's verdict is the same under the census's naming and the three renamings at every stage | a stage where they differ |
+| N4 | At every rigid census stage R3n is exact or an outside swap, and where it is exact it is exact pooled above largest − 1 and not above largest − 2 | a rigid stage otherwise |
+| N5 | R3's verdict changes under renaming at fewer than 1% of census stages | 1% or more |

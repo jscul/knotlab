@@ -1,5 +1,6 @@
 """CENSUS-READ-20261118-001A readout of pass 3 (exact tables): C0(a), C1-C6, N3-N5, and C7 against pass 1.
-Run: .venv/bin/python -B readout3.py runs/census-exact runs/census-read  -> summary_exact.json beside the artifacts."""
+Run: .venv/bin/python -B readout3.py runs/census-exact,runs/census-exact2b runs/census-read [name]  -> summary_exact.json
+beside the artifacts (several exact passes joined by commas; an arrangement read twice counts once)."""
 import json
 import sys
 from collections import Counter, defaultdict
@@ -43,8 +44,18 @@ def least_rel(stages, rd, pick):
     return {str(k): v for k, v in sorted(rel.items(), key=lambda kv: str(kv[0]))}
 
 
-def main(exact_dir, side_dir):
-    recs, arrs, mixed = collect(exact_dir)
+def main(exact_dirs, side_dir, name='summary_exact.json'):
+    recs, arrs, mixed = {}, [], []
+    seen = set()
+    for d in exact_dirs.split(','):
+        r_, a_, m_ = collect(d)
+        recs.update({d + '/' + k: v for k, v in r_.items()})
+        for a in a_:
+            k = json.dumps(a['key'])
+            if k not in seen:
+                seen.add(k)
+                arrs.append(a)
+        mixed.extend(m_)
     s = {'case_status': dict(Counter(r['status'] for r in recs.values())), 'arrangements': len(arrs),
          'mixed_seeds': len(mixed)}
     stages = [(a, st) for a in arrs for st in a['stages']]
@@ -98,7 +109,7 @@ def main(exact_dir, side_dir):
             'round': dict(Counter(st['round'] for a, st in mis)),
             'largest': dict(Counter(st['largest'] for a, st in mis)),
             'junctions_over_14': sum(1 for a, st in mis if st['junctions'] > 14),
-            'missed_extra': dict(Counter((st.get(rd + '_missed'), st.get(rd + '_extra')) for a, st in mis).most_common(8)),
+            'missed_extra': {f'{m}/{e}': c for (m, e), c in Counter((st.get(rd + '_missed'), st.get(rd + '_extra')) for a, st in mis).most_common(8)},
             'examples': [[a['key'], st['round']] for a, st in mis[:6]]}
     nonmis = [(a, st) for a, st in stages if st['r3n'] == 'same_states']
     s['r3n_same_states_connectivity'] = dict(Counter(st['connectivity'] for a, st in nonmis))
@@ -123,9 +134,9 @@ def main(exact_dir, side_dir):
         cmp[f'{big}_{"same" if o["r3"] == st["r3"] else "changed"}'] += 1
     s['C7_r3_pass1_vs_exact'] = dict(cmp)
     dest = ROOT / 'artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census'
-    (dest / 'summary_exact.json').write_text(json.dumps(s, indent=1))
+    (dest / name).write_text(json.dumps(s, indent=1))
     print(json.dumps(s, indent=1))
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2])
+    main(*sys.argv[1:])

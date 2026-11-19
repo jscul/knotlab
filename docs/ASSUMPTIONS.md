@@ -3294,6 +3294,9 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `WALL-READ-20261119-001` ([decision note](../research/WALL-READ-20261119-001/wall_read.md)): the explosive kind
+    holds one member read completely, partnered runaway growth, which never ends; it needs knots of eight places. The 14 sampled
+    explosive starts were followed one or two rounds further and stay unread. Status unchanged.
   - 2026-11-19 · `MERGE-BURST-20261119-001` ([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)): of 16
     explosive starts, 2 are read, and both end after one merge and the binomial burst of one block (9 and 781 junctions). 14 are
     unread within 6 GB and 15 minutes. None is shown to keep growing. Status unchanged.

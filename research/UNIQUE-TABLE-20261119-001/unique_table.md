@@ -21,8 +21,10 @@ Assumption A97; goal G1. **Referee pending.**
   has exactly the same table of bond distances, every one of 120 to 210 pairs, and different allowed states. No exchange of
   distinctions turns one into the other: the table has no symmetry to blame. Both are legal as arrangements: the same number of
   junctions, each of at least three distinctions, no two sharing two, none at a cut vertex.
-- **The table misses something the growth needs at once.** In 5 of the 6 the rival cannot take a single step under the cheapest
-  counts (it stalls), while the true arrangement grows; in the sixth both grow, by different joins. So two arrangements with one
+- **The table misses something the growth needs at once.** Grown as a new start (every junction with a loose distinction live), in
+  5 of the 6 the rival cannot take a single step under the cheapest counts (it stalls) while the true arrangement grows 3; under the
+  census's own continuation (only the round-1 junctions live, as the truths actually grow) those five rivals grow 4 against 3 (the
+  referee's reading, corrected here). In the sixth both grow, by different joins. Either way the law separates them at its next step. So two arrangements with one
   table differ in what can form next. A three-way reading (the least consequence holding three distinctions) tells them apart
   (116 to 208 triples differ); the count of allowed states in which two distinctions disagree does not (for parity it is the same
   for every pair).
@@ -49,7 +51,7 @@ Assumption A97; goal G1. **Referee pending.**
 
 The six pairs (arrangements on the same named distinctions; the junctions that differ):
 
-| Stage | Start, round | True junctions that differ | Rival's | Next round, cheapest counts |
+| Stage | Start, round | True junctions that differ | Rival's | Next round, cheapest counts (grown as a new start) |
 | --- | --- | --- | --- | --- |
 | pop-0007 | knots of 3,3,3,3,5, round 1 | [6,9,11,12] | [6,11,12,13] | both grow 3, different joins |
 | pop-0236 | 3,3,5,5,5, round 1 | [4,5,9,10,11], [7,8,9,12,13,14,15] | [4,5,9,10,14], [7,8,9,11,12,13,15] | truth grows 3; rival stalls |
@@ -147,6 +149,24 @@ different-states rival at 3-connected stages: right (all six have a 2-separation
 **Corrections:** none of a published claim (U2 to U5 were predictions and failed as recorded). **Goals:** G1 checkpoint (obstruction
 learned); no goal changed. **Assumptions:** A97 gains this study (against its strong reading), status unchanged; A108 gains it
 (72 same-states rivals the table cannot decide). **Basket:** B196, B202, `BOND-BALLS-20261111-001#2`; B203, B204.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own code. **Confirmed, no Block; two wording points, corrected and logged in
+`docs/CORRECTIONS.md` (Not a block).** All six pairs (11 rivals) check: legal as static arrangements, tables equal entry by entry by
+two of its methods, equation spaces differ, not isomorphic, every symmetry of the truth's table keeps its junctions. Forcing with
+elimination is sound; the Whitney enumeration with per-block outside choice is complete for the bound; its own exhaustive search
+agrees on all 1,867 stages both decided.
+- **Which reading "the rival stalls" uses** (corrected above): as a new start the five rivals stall; under the census's continuation
+  they grow 4 against the truth's 3.
+- **Same-equation rival counts** (summary.json, the 166 stages of G) include on 51 stages the truth plus the loose set as one more
+  junction, one over the frozen bound (at most n junctions); `final.json`'s classes apply the bound, and no verdict depends on it.
+- **Reachability (the referee's test).** Taking every connected subset of a target's junctions as a start and growing one or more
+  complete rounds, every truth is reached and none of the 11 rivals is, from any start after any number of rounds; under Codex's
+  serial mixed law (its full-law census, widths 16 to 21) neither the rivals nor the truths are reachable. So the six are
+  collisions of static arrangements that the law does not make; they bound Codex's line rather than contradict it: so far reachable
+  collisions are related by a table symmetry, and collisions without one are unreachable. `GROWN-PAIR-20261119-001` tests whether the
+  two can meet.
 
 ## Final report as sent (2026-11-19 05:57 UTC)
 

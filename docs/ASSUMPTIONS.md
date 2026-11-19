@@ -162,6 +162,7 @@ evidence: results and their status come from the records each entry links.
 | [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
 | [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Assumed |
 | [A107](#a107--small-joins-of-a-ring-and-a-two-fold-piece-are-weighted-uniformly-over-one-bare-census) | Small joins of a ring and a two-fold piece are weighted uniformly over one bare census | measure | Assumed |
+| [A108](#a108--the-cheapest-growth-reads-which-junction-holds-which-distinction-not-only-the-allowed-states) | The cheapest growth reads which junction holds which distinction, not only the allowed states | scope | Assumed |
 
 ## Entries
 
@@ -3169,3 +3170,25 @@ evidence: results and their status come from the records each entry links.
   labelled descriptions; the law is stated in surplus counts, so a different convention changes the counts, not the law.
 - **History.**
   - 2026-11-18 · Adopted by `JOIN-GROWTH-20261118-001`.
+
+### A108 · The cheapest growth reads which junction holds which distinction, not only the allowed states
+
+**Assumed** · 2026-11-19 · scope
+
+- **Statement.** The cheapest growth (`FRESH-COUNT-20261118-001`'s policy and fewest counts, A104) is applied to a presentation:
+  a list of junctions and the distinctions each holds. Which distinctions are loose, which junctions are candidates, and how many
+  fresh distinctions each new junction takes are read from that list. Two presentations with the same allowed states can therefore
+  grow differently.
+- **Why.** Taken by default from the cubic study and kept by every growth epic since. The policy is stated on junctions, and no
+  study has defined it on a set of allowed states.
+- **Rests on it.** Every result of the growth line: `FRESH-COUNT-20261118-001`, `TOUCH-CENSUS-20261118-001`,
+  `JOIN-GROWTH-20261118-001`, `RING-PAIR-20261119-001`, `CLUSTER-ALL-20261119-001`, `ROUND-FREE-20261119-001`,
+  `SCALE-SHARE-20261119-001` and `NAE-GROWTH-20261119-001`.
+- **Challenge.** Define a growth that reads only the allowed states, for instance on a presentation fixed by them, such as the
+  irredundant one under not-all-equal. Ask whether it is well defined on the stages where same-state presentations join
+  differently (`NAE-GROWTH-20261119-001#1`).
+- **History.**
+  - 2026-11-19 · Recorded by `NAE-GROWTH-20261119-001`. Among 2,644 small stages of the census growths, same-state presentations
+    that join differently make 2,802 colliding pairs under parity, where adding junctions together keeps the states. Under
+    not-all-equal they make 115, almost all through a redundant junction. Known before in single cases: `FIRST-KNOT-20261118-001`
+    and `MIXED-NEXT-JOIN-20261117-001`.

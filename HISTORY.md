@@ -102,6 +102,14 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: what one round reads, refereed
+
+- The study of what one round reads (`EXTEND-ROUND-20261119-001`,
+  [decision note](research/EXTEND-ROUND-20261119-001/extend_round.md)) was refereed and confirmed: the lemma on what the round
+  reads and the equations version are correct; with distances, all 36,060 reading-keeping matchings on the 86 carried pairs extend
+  one round (the referee's full rerun). The distances version remains unproved.
+- **Clarified (not a block).** The stall test counts every group; the equations version is about their span.
+
 ## 19 November 2026: the created pair refereed
 
 - The study of how the law creates a meet-once collision (`CREATED-PAIR-20261119-001`,

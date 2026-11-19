@@ -666,7 +666,7 @@ loose distinctions, so the next round tells them apart; in the carried pairs som
 matching keeps every loose distinction in place, and they stay together
 ([decision note](../research/CREATED-PAIR-20261119-001/created_pair.md)).
 Do distances plus the growing end carry what grows (`EXTEND-ROUND-20261119-001`,
-proved in part, referee pending)? One round reads only which junctions hold a loose
+proved in part, refereed)? One round reads only which junctions hold a loose
 distinction, how many, and which sets of them one junction meets; that is proved.
 A matching of the distances that keeps this read extended to the next round in
 every one of 2,198 cases, but that is not yet proved: a new junction can shorten

@@ -1,7 +1,7 @@
 # Does a table isometry that keeps what the round reads extend one round?
 
 Epic `EXTEND-ROUND-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `CREATED-PAIR-20261119-001#1`.
-Assumptions A97, A108; goal G1. **Referee pending.**
+Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; two wording points corrected (Referee R1 below).**
 
 **Record.** Pre-registration, frozen before the run (commit `eb910b08e`), with the statement of what the round reads:
 [preregistration.md](preregistration.md). Code:
@@ -49,12 +49,14 @@ their loose counts, and the family F of sets of live junctions met by one juncti
 - Two live junctions are candidates exactly when they lie in a common member of F.
 - The sets are the maximal cliques of candidates, of three or more, contained in no member of F. The pairs are the candidate
   pairs in no set.
-- The leftovers become offshoots. The stall test compares each junction's number of sets with its loose count.
+- The leftovers become offshoots. The stall test compares the number of groups (sets and pairs) each junction lies in with its
+  loose count.
 - After the round, the live junctions are the new ones, and each new junction meets only its parents (PARENT-RULE Lemma 1).
   So the next round's candidates and sets among them, and hence the demands and the fresh counts, read only the parent sets.
 - The implied test reads only whether a junction takes every loose distinction, since a is connected (PARENT-RULE Lemma 2). ∎
 
-**Claim B\*** (the advisor's). Suppose a renaming φ carries a's equations onto b's and keeps R. Then its extension carries the next
+**Claim B\*** (the advisor's). Suppose a renaming φ carries the span of a's equations onto the span of b's and keeps R. (Tables
+follow from the span: bonds are the minimal nonzero words of the cut space.) Then its extension carries the next
 equations, and so the next tables.
 
 *Proof.* Old junctions keep their distinction sets, so the next equations are the old ones plus the new junctions'. φ carries the
@@ -121,6 +123,19 @@ Fable 5.2 before the freeze ([question](advisor/question_1.md), [answer](advisor
 
 **Corrections:** none from this study. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A97 and A108 gain this
 study, status unchanged.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own code. **Confirmed, no Block; two wording points corrected, logged in `docs/CORRECTIONS.md`
+(Not a block).**
+- **Proofs.** Lemma A is correct line by line, in a stronger form: every step reads only the maximal members of F. Claim B\* is
+  correct.
+- **Claim B, rerun in full.** All 14,556 reading-keeping isometries of the 63 small carried pairs extend entry by entry; this note
+  tested 2,198 of them. On the 23 larger carried pairs, all 21,504 isometries keep the reading and all extend. That makes 36,060 of
+  36,060 across all 86 carried pairs. The control is refused in all 80 pairs where it applies. The advisor's configuration never
+  occurred.
+- **Wording.** The stall test counts groups (sets and pairs), not sets. Claim B\* is about the span of the equations, and tables
+  follow from the span.
 
 ## Final report as sent (2026-11-19 14:55 UTC)
 

@@ -1041,6 +1041,28 @@ pre-registered.
 
 Evidence: [Intuitions, lesson 7.3](INTUITIONS.md#73-every-meeting-pattern-none-chosen), [the census's pre-registration](research/RANDOM-FATES-20261112-001/preregistration.md)
 
+### Self-feeding loops as shared routines
+
+**Reading** · 2026-11-19
+
+John Cullen, on 18 November 2026 (Pacific time): "It's an interesting idea,
+loops of logic, then like eddies in a river that are shared across the
+universe essentially there are 'core-libs' kind of processing." This is his
+direction, not a result. Read in the program's terms, the loops of knots that
+feed their own growth would come in a few kinds, each acting the same way
+wherever it occurs, like a shared library routine. A short catalogue of them,
+with what each does to whatever joins it, would then describe the
+self-feeding part of every growth. What is known so far fits it:
+- a ring's ratio depends only on its knots and spares;
+- a ring keeps its own growth inside a join;
+- rings that feed themselves are rare among growths full of cycles;
+- they behave the same under parity and under not-all-equal.
+
+Whether the kinds are few is being tested. "Shared across the universe" stays
+an interpretation.
+
+Evidence: [the register, A109](docs/ASSUMPTIONS.md), [the joined rings' rule](research/RING-PAIR-20261119-001/ring_pair.md), [growth under not-all-equal](research/NAE-GROWTH-20261119-001/nae_growth.md)
+
 ### Bases within bases
 
 **Open** · 2026-11-12

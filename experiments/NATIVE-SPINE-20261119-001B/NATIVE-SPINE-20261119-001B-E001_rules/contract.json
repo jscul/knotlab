@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "NATIVE-SPINE-20261119-001B-E001",
+ "ticket": "NATIVE-SPINE-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does the newest-ancestor, most-chains or fewest-chains rule pick the spine matching of the ten plastic-number eddies, and is the matching forced (unique)?",
+ "public_inputs": {
+  "code": "rulelib.py (308193e65c64d2ad1f57dd6cc39a87a2fb92f0ac9dcbf690b515be2212f2738b), job.py (7d4ca3a310d24f6acba35286514df5accb55e168f8b42c9b93d21548a23a74aa), merge.py (9cd2317369add5051df8c5cb6daa857efd49c8365e99f61515d0ddceda96eae0) (sha256)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>",
+  "reused": "JUNCTION-KINDS spinelib.py and kindlib.py (growth, ancestors, matching); BREAK-EDDIES population.json"
+ },
+ "forbidden_inputs": [
+  "Changing a rule, a start, the window or a prediction after reading any frozen growth"
+ ],
+ "primary_observable": "S1-S5 of research/NATIVE-SPINE-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the degree-preserving shuffle null at rounds 10, 15 and 20",
+ "predictions": {
+  "S1": "N never picks the spine (by count)",
+  "S2": "M never picks the spine",
+  "S3": "F never picks the spine",
+  "S4": "forced share below 1 at every recurrent round from 6",
+  "S5": "M's single picks collide by round 13 in at least 8 of 10"
+ },
+ "decision_rules": {
+  "each": "held iff no exception (S5: iff at least 8)"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under ten minutes",
+ "disclosed_exploration": "pilot on population indices 28 and 44",
+ "amendments": []
+}

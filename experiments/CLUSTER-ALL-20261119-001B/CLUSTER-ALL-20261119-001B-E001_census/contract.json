@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "experiment_id": "CLUSTER-ALL-20261119-001B-E001",
+ "ticket": "CLUSTER-ALL-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does the extended cluster rule (clusters.py) predict, round by round, every in-scope five-knot census arrangement, six-knot sample, advisor falsifier and long-horizon check?",
+ "definitions": {
+  "rule and scope": "clusters.py (scope predicate clusters.analyse, fixed by this hash)",
+  "growth": "fewest counts, joinlib.grow"
+ },
+ "public_inputs": {
+  "code": "clusters.py (sha256 cc2eca0db3c506f901dbbd16fad2679188194872434d95f1688284f8b908bfcc), job.py (sha256 b6cdf3baea17f5514cc42d867ccac750bf951c1ffd23d149d9349c91915f872c), merge.py (sha256 45125b99db1d06148cc1faee2cadca74f0e4bc6938c135e67cd377a08debb3f8), checks.py (sha256 433ddf010df016cc6c259c0da944194d434be51bfab004965439bfcf64262a13)",
+  "run": "scripts/longrun.py launch job.py (6 workers, 3G per case, 1500 s per case); python3 -B merge.py <out dir> <results.json>",
+  "reused": "TOUCH-CENSUS-20261118-001B arrlib.py (enumeration); JOIN-GROWTH-20261118-001B joinlib.py, fastlib.py and recorded runs (T2)"
+ },
+ "forbidden_inputs": [
+  "Changing the rule, the scope predicate or a case after reading any test comparison; any in-scope mismatch is a failure, not a new exclusion"
+ ],
+ "primary_observable": "P1-P4 of research/CLUSTER-ALL-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "gate mutants (no relay; chains as leaves) and the out-of-scope starts",
+ "predictions": {
+  "P1": "T1 five-knot census, every in-scope arrangement equal",
+  "P2": "T3 six-knot sample",
+  "P3": "T4 falsifiers",
+  "P4": "T5 45 rounds"
+ },
+ "decision_rules": {
+  "each": "held iff no in-scope miss"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under an hour",
+ "disclosed_exploration": "pilot/ (every census arrangement of up to four knots; four revisions recorded in pilot/history.json)",
+ "amendments": []
+}

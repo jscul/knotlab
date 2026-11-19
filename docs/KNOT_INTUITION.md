@@ -627,6 +627,14 @@ census, a growth's dimension is the number of endless chains feeding one piece o
 the map, and a ring makes it exponential; two is typical because a relay or two
 one-chain knots is the commonest way to keep growing
 ([decision note](../research/CLUSTER-ALL-20261119-001/cluster_all.md)).
+And without rounds (`ROUND-FREE-20261119-001`, frozen runs, referee pending)?
+Making one join at a time from what is already built, the order changes what is
+built, and can even decide whether a growth lives, because the cheapest count
+needs to know a new junction's partners before they exist. The rounds supply that
+by making all partners at once; the cluster map supplies it with no tick at all,
+and then the order no longer matters. The ratios survive read by size, and each
+part of a join keeps exactly its own growth while the rest lives in the joint
+([decision note](../research/ROUND-FREE-20261119-001/round_free.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

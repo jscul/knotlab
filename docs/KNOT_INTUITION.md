@@ -703,6 +703,15 @@ the rule breaks, more of them hide, at least one of them outside every list
 checked (two triangles of knots joined once, with a spare). The owner's picture of eddies shared like
 library routines is recorded as his direction
 ([decision note](../research/LOOP-CATALOGUE-20261119-001/loop_catalogue.md)).
+And the loops hidden where that rule breaks (`BREAK-EDDIES-20261119-001`,
+frozen run, referee pending)? They are the same eddies: 118 of the 122 grow at a
+rate that is a member of the catalogue's family, built from the same pieces. What
+is new is loops of two and three steps, which no ring of knots makes: each one
+needs a group of three knots joined at once in the first round, so the loop runs
+through first-round junctions, not through the knots alone. A different, explosive
+kind also exists, in which the groups themselves keep growing and no fixed rate
+fits
+([decision note](../research/BREAK-EDDIES-20261119-001/break_eddies.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

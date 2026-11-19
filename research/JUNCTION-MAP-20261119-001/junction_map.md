@@ -99,3 +99,33 @@ Goal G17. **Referee pending.**
 | 1 | A transfer between kinds of junction: classify the junctions of a W = y²(1 + y) start by their local pattern (parents, fresh count, demand, and their parents' kinds) and look for a finite set of kinds whose counts follow a fixed matrix | 3/3 — the finite object the break shapes need, read from the growth | 2/3 — the counts and the growth are at hand | refine the kinds on the 36 starts → stop at a finite matrix whose root is the plastic number on all 36, or at kinds that never settle | Selected · awaiting go-ahead |
 | 2 | A growth that reads only the allowed states (A108) | 3/3 | 2/3 | as in NAE-GROWTH | Alternative · deferred |
 | 3 | The explosive kind (BREAK-EDDIES #2) | 2/3 | 2/3 | as there | Alternative · deferred |
+
+## Final report as sent (2026-11-19 11:16 UTC)
+
+**Outcome:** The stop rule's second case. A map with first-round junctions as points cannot predict the short loops in the break shapes, and it fails for a reason the frozen test pins down exactly. It reads the rule's excluded overlap (a group of three sharing two knots with another block) as a loop of length two, but that isn't a loop: going round it a second time reaches the same junction, where the map counts a new one on every lap. So the map gets the next round right and the one after wrong at every stage holding the overlap (261 of 261), and is exact at every stage free of it (14 of 14). 4 of 4 frozen predictions held. Closed, referee pending.
+
+- **The overlap is everywhere, not only in break shapes.** It appears two rounds into the catalogue's ordinary rings too, where the rule read from the original knots stays exact. So a later stage isn't a valid start for the rule.
+- **The other readings fail too.** Admitting the overlap at the knot level fails by round 2 on all 82 rational break-shape starts. Merging it into an ordinary block fails at round 1.
+- **What's needed instead.** The break-shape counts are rational with the catalogue's round-weights (last study), so a finite description exists. It should be a transfer between kinds of junction, not a count of clusters on a candidate map.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the junction map | **Status:** Successful (4 of 4 held; the stop rule's second case) | It cannot predict the short loops, and it fails exactly where the overlap stands, with the mechanism named |
+| Local direction: extending the cluster rule to the break shapes | Practically exhausted | Excluding, unrolling and merging the overlap all fail, at the stage level and the knot level |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Rational counts, so a transfer between kinds of junction should describe them |
+| Long-term goal: G17 | Obstruction learned | Clusters on a candidate map cannot carry these loops |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A transfer between kinds of junction, read from the growth on the 36 starts with W = y²(1 + y) | 3/3 — the finite object the break shapes need | 2/3 — counts and growth at hand | refine junction kinds (parents, fresh count, demand, parents' kinds) → stop at a finite matrix with root the plastic number on all 36, or kinds that never settle | Selected · awaiting go-ahead |
+| 2 | A growth that reads only the allowed states (A108) | 3/3 | 2/3 | as in NAE-GROWTH | Alternative · deferred |
+| 3 | The explosive kind | 2/3 | 2/3 | as in BREAK-EDDIES | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G17 checkpoint (obstruction learned). **Assumptions:** none new. **Basket:** `BREAK-EDDIES-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze. Its answer was unreliable: with no tools, it described files and runs that don't exist, and its two checkable claims were false (I checked both). Its one usable point was to gate the stage presentation first, and gate G does that: 282 of 282.
+
+**Referee hand-off.** The decision note is `research/JUNCTION-MAP-20261119-001/junction_map.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- the stage gate's argument (growth from a stage equals growth of that stage taken as a start);
+- that maplib's lifted cut is the reading the go-ahead meant;
+- the one-round-right, next-round-wrong mechanism on one small start by hand.

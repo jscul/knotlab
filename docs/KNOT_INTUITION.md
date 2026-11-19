@@ -645,7 +645,7 @@ by making all partners at once; the cluster map supplies it with no tick at all,
 and then the order no longer matters. The ratios survive read by size, and each
 part of a join keeps exactly its own growth while the rest lives in the joint
 ([decision note](../research/ROUND-FREE-20261119-001/round_free.md)).
-And at scale (`SCALE-SHARE-20261119-001`, frozen samples, referee pending)? As
+And at scale (`SCALE-SHARE-20261119-001`, frozen samples, refereed)? As
 starts of touching knots get larger, almost all of them cannot start, because
 most ways of arranging many knots crowd each knot with shared distinctions; of
 those that grow, two dimensions takes over (98% at twenty knots), and rings stay

@@ -1,7 +1,8 @@
 # Which growth is typical as starts of touching knots get larger?
 
 Epic `SCALE-SHARE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `CLUSTER-ALL-20261119-001#1`. Goal
-G17. **Referee pending.**
+G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block, with one Narrowing and one improved check, folded in
+on 19 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `b5a3277d6` after a pilot and the advisor.
@@ -29,10 +30,15 @@ descriptions (knots of three to five places, any multiplicities, connected), wit
   - Closing fades: 22% of non-stalled starts at five knots, 1.5% at twenty.
   - Three dimensions stays at about 0.3% of growers, and four occurred once in 8,000 at seven knots.
 - **Rings stay rare, though cycles abound.** Exponential growth, a ring in the map, is at most 0.1% of growers at every size.
-  This holds although the growing starts hold more and more cycles of knots: on average 3.8 at five knots and 22 at twenty.
+  This holds although the growing starts hold more and more cycles of knots: on average 3.8 at five knots and 22 at twenty. The
+  referee regrew every ring the rule found. The seven-knot one is false (CLUSTER-ALL's second break): it grows 7, 8, 9, 10, 11,
+  13, 15, …, not 7, 8, 13, 25, 54, …. So the seven-knot ring share is 0, not 0.01%. The other four (two at five knots, one each at
+  six and twelve) are real, and "rings stay rare" holds more strongly.
 - **The rule's scope holds.**
   - Out of scope (a first-round group of three overlapping another block in two knots): at most 0.4% of starts.
-  - The six-knot break shape: one sample in 8,000 at six knots, none at any other size.
+  - The six-knot break shape (overlapping sunflowers): one sample in 8,000 at six knots, and none at the other sizes in these
+    samples. The referee's one-size-past spot checks found it at 12 knots. CLUSTER-ALL's second break shape (hyperedges forming a
+    cycle of blocks) occurs once in the 64,000 samples, at seven knots, and at 16 knots in the spot checks.
   - Grown and compared with the rule: 998 of 998 non-stalled starts in scope at six, seven, eight, ten and twelve knots, plus 2
     out of scope.
 - **So at scale the typical growing start is two-dimensional,** and the typical start of all is one that never begins. A
@@ -42,7 +48,7 @@ descriptions (knots of three to five places, any multiplicities, connected), wit
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 5 | 44.8% | 11.9% | 7.4% | 35.3% | 0.10% | 0.03% | 82% |
 | 6 | 53.5% | 8.7% | 5.5% | 32.1% | 0.10% | 0.01% | 85% |
-| 7 | 62.1% | 5.5% | 4.1% | 28.0% | 0.10% | 0.01% | 87% |
+| 7 | 62.1% | 5.5% | 4.1% | 28.0% | 0.10% | 0.01% (false: 0) | 87% |
 | 8 | 67.1% | 4.3% | 3.1% | 25.2% | 0.10% | 0 | 89% |
 | 10 | 78.0% | 1.9% | 1.4% | 18.6% | 0.08% | 0 | 93% |
 | 12 | 82.4% | 1.0% | 1.0% | 15.4% | 0.03% | 0.01% | 94% |
@@ -69,9 +75,10 @@ The table gives labelled shares. Distinct shares agree within 0.6 points, and th
 
 Seven of ten held.
 
-**The sampler's check.** At five knots the sample's labelled shares against the exact census give χ² = 10.3 on four classes
-(p ≈ 0.02). The census's labelled shares were taken at its close with 200 large arrangements unread, and the samples are
-autocorrelated, so this is near agreement, not exact.
+**The sampler's check.** At five knots the sample's labelled shares against the exact census give χ² = 4.3 on four classes. The
+run's merge used stale reference shares (taken at the census's close with 200 large arrangements unread) and gave 10.3. The exact
+labelled shares are stall 0.4402, closes 0.1212, dimension 1 0.0792 and dimension 2 0.3551 (referee R1). The samples are
+autocorrelated, so this is agreement within sampling error.
 
 ## Known results, and what this adds
 
@@ -83,8 +90,25 @@ for a counting reason; two dimensions takes over among growers; rings stay rare;
 
 - **Sampled, not enumerated.** Shares near 10⁻⁴ are not resolved: at twenty knots 8,000 samples hold about 540 non-stalled.
 - **The rule is verified by growth** only through five knots exhaustively, and here on 998 spot checks at six to twelve. At 16
-  and 20 knots the classes rest on the rule.
+  and 20 knots the classes rest on the rule. The rule can report a false ring (CLUSTER-ALL's second break): the referee's regrowth
+  of every ring and of all 43 samples of dimension 3 or more confirms all but the one at seven knots.
 - **The measure is uniform over labelled descriptions** (A106 extended). The stall trend is mostly the measure's.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread: confirmed, no Block.
+- **The sampler is uniform and irreducible.** This is argued for every n and checked exhaustively at 3, 4 and 5 knots. The
+  referee's own fresh sampler gives non-stall shares 0.5591, 0.2306 and 0.0665 at 5, 10 and 20 knots, against 0.5516, 0.2205 and
+  0.0680 here.
+- **P3** is read as failed, with the scorer's pass disclosed, as reported.
+- **Regenerated.** All 64 chains were regenerated, and their classes equal the record.
+- **Folded in the same day**, logged in `docs/CORRECTIONS.md`:
+  1. **Narrowing.** The seven-knot ring is false: it is CLUSTER-ALL's second break shape, and it grows two-dimensionally. The
+     seven-knot ring share is 0. The scope sentence now names the second shape, and the six-knot shape found at 12 knots in the
+     spot checks. The other four rings, and all 43 samples of dimension 3 or more, equal the referee's growth. No share moves
+     beyond sampling error.
+  2. **Not a block (an improved check).** `merge.py`'s five-knot reference shares were stale. With the exact labelled shares,
+     χ² = 4.3, not 10.3.
 
 ## Advisor
 

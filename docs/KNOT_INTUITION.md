@@ -636,6 +636,15 @@ arrangements with the same distances, already read to 8, have the same allowed
 states, and differ only in which junction holds what. Arrangements the law never
 builds can still meet once and differ, so, as far as computed, this is a
 property of what the law reaches ([decision note](../research/MEET-ONCE-20261119-001/meet_once.md)).
+Why does the law never build the static rivals (`PARENT-RULE-20261119-001`,
+proved, referee pending)? Because it joins two junctions only when a third
+already meets both: in everything it builds, any two junctions met by a junction
+with a loose distinction also meet an older one (backed pairs), and every rival
+lacks this. That holds at every size. But backed pairs alone do not keep the
+allowed states: 242 small arrangements, backed on both sides, share their
+distances with others that have other states. So what keeps the states of what
+the law builds is its exact choice of joins and counts, and that is known only
+as far as computed ([decision note](../research/PARENT-RULE-20261119-001/parent_rule.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

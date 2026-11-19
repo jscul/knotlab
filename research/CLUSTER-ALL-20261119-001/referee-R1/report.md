@@ -105,6 +105,30 @@ Among the six-knot ones, 4 have a hyperedge. **The hyperedge clause is therefore
   chain count in **300 of 300**.
 - **Grade.** The reading holds as a post hoc description of the census. It was not a frozen prediction, as the note says.
 
+## Addendum (2026-11-19, found while refereeing SCALE-SHARE-20261119-001): a second break, from six knots
+
+**A second shape on which the rule fails inside its scope.** A block of two knots and two first-round groups of three
+(hyperedges) form a cycle of blocks, each pair of blocks sharing one knot.
+- **Where it occurs.** The rule declares these in scope; its scope excludes only a hyperedge sharing two or more knots with
+  another block.
+- **The rule fails from round 2,** and its growth class can be wrong. Both outcomes below are confirmed by the referee's engine and
+  by the study's own grower (joinlib's `grow`, run read-only as a cross-check):
+  - **Six knots, seed 6028024** (sizes 5, 3, 5, 5, 5, 5; blocks {0, 3}, {0, 2, 4}, {3, 4, 5}). The growth is 6, 5, 5, 6, 7, 8, …,
+    two-dimensional. The rule gives 6, 5, 7, 11, 18, 30, … and classifies it **a ring (exponential)**.
+  - **Six knots, seed 6029462** (blocks {2, 5}, {1, 2, 4}, {3, 4, 5}). The growth closes: 6, 3, 1. The rule gives 6, 3, 3, 3, …,
+    **dimension 1**.
+  - **The same two outcomes at 16 and 12 knots** on the referee's SCALE-SHARE chains (a false ring at 16, a closing start read as
+    dimension 1 at 12).
+- **How often.** In random arrangements with the referee's sampler (40,000 per knot count, `hyper_cycle_search.py`), the shape was
+  found in scope 2, 10, 7, 5 and 1 times at 6, 7, 8, 9 and 10 knots. The rule missed 23 of the 25.
+  - It never occurs in the five-knot census (0 of 24,502), so T1 stands.
+  - The study's 2,000 six-knot samples would hold about 0.1 such starts, which is why T3 did not meet it.
+- **What it changes.** The note's "where it breaks" (the overlapping sunflowers, a block with a missing pair) is not the only
+  break. Its reading that "the break is understood" is narrowed, and the second mechanism is not yet explained.
+- **Files:** `research/SCALE-SHARE-20261119-001/referee-R1/` (`scan_cycles.py`, `hyper_cycle_search.py`, `hyper_cycle_small.py`,
+  `new_shape.py` and their JSON files).
+- **Correction 3 for the owner:** **Narrowing; not a block.** The rule is computed, not proved, and every five-knot result stands.
+
 ## Corrections for the owner (listed, not folded in)
 
 1. **The pilot's scope.** Say that the scope exclusion (hyperedges sharing two knots with another block) was drawn after the 38

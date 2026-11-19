@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "THREE-WAY-20261119-001A-E001",
+ "ticket": "THREE-WAY-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Do three-way readings separate the different-states rivals and reached groups that share a pair table, and decide the undecided stages?",
+ "definitions": {
+  "three_way": "smallest circuit holding three distinctions, less one, or none"
+ },
+ "public_inputs": {
+  "code": "triples.py (sha256 eb2d6268dcb705985dd0def94ce07c38e3eaa478022e087eb5dc5312ae0e4b46)",
+  "run": ".venv/bin/python -B triples.py",
+  "reused": "UNIQUE-TABLE-20261119-001A uniq.py and runs; GROWN-PAIR-20261119-001A pairs2.py and other_states.json"
+ },
+ "forbidden_inputs": [
+  "Changing T1-T3 after the run"
+ ],
+ "primary_observable": "T1-T3",
+ "cheapest_meaningful_control": "the truth against itself (no triple differs)",
+ "predictions": {
+  "T1": "all 11 separated",
+  "T2": ">= half of 21 forced, no other code",
+  "T3": "all 152 separated"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run.",
+ "runtime": "minutes",
+ "amendments": []
+}

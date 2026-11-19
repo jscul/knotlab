@@ -1,7 +1,9 @@
 # A map that sees loops through first-round junctions
 
 Epic `JUNCTION-MAP-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking `BREAK-EDDIES-20261119-001#1`).
-Goal G17. **Referee pending.** Its wording about short loops was corrected on 19 November, when `BREAK-EDDIES-20261119-001`'s
+Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed with no Block and no Narrowing (19 November): the stage
+gate, the lifted cut as a fair reading, J1 and J2 on 282 of 282 stages, and the mechanism by hand on C-0 at stage 2; J3 was not
+rerun. Its wording about short loops was corrected on 19 November, when `BREAK-EDDIES-20261119-001`'s
 referee withdrew them (see the note there); the predictions and verdicts are unchanged.
 
 **Record.**

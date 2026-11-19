@@ -2,7 +2,7 @@
 
 Status: Proved
 
-Ticket `JUNCTION-MAP-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/JUNCTION-MAP-20261119-001/junction_map.md`. Referee pending.
+Ticket `JUNCTION-MAP-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/JUNCTION-MAP-20261119-001/junction_map.md`. Refereed (R1): confirmed, no Block, no Narrowing.
 
 | # | Conclusion | Evidence |
 | --- | --- | --- |

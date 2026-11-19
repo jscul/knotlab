@@ -1,7 +1,8 @@
 # A map that sees loops through first-round junctions
 
 Epic `JUNCTION-MAP-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking `BREAK-EDDIES-20261119-001#1`).
-Goal G17. **Referee pending.**
+Goal G17. **Referee pending.** Its wording about short loops was corrected on 19 November, when `BREAK-EDDIES-20261119-001`'s
+referee withdrew them (see the note there); the predictions and verdicts are unchanged.
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `552910bd8` at 11:13 UTC after a pilot (disclosed).
@@ -21,7 +22,8 @@ Goal G17. **Referee pending.**
 
 **In the owner's terms.**
 - **The stop rule's second case: the map cannot.** Read with first-round junctions as points, and the excluded overlap as a loop of
-  length two, the map gets the next round right and the one after wrong. That held on all 36 starts with W = y²(1 + y) in the pilot.
+  length two, the map gets the next round right and the one after wrong. That held on all 36 starts then read as W = y²(1 + y) in
+  the pilot (10 of them are, by `BREAK-EDDIES-20261119-001`'s corrected reading).
   Frozen on 94 fresh starts, it held in every one of 261 stages with the overlap, and in none was it wrong earlier or later.
 - **Why it fails.** A group of three that shares two knots with a block is not a loop of length two. When the growth goes round it
   a second time it reaches the same junction again, where the unrolled map counts a new one on every lap. This is the same mistake
@@ -30,7 +32,7 @@ Goal G17. **Referee pending.**
   equals the growth for all 8 rounds compared. The controls were two touching knots, a chain of three, and the rings' first stage.
 - **The overlap is not peculiar to the break shapes.** It appears two rounds into the ordinary rings of the catalogue, where the
   rule read from the original knots stays exact. So a later stage is not a valid start for the rule. The knot-level map already
-  accounts for these overlaps, and the break-shape eddies' short loops must be found there.
+  accounts for these overlaps, and the break-shape eddies' loops must be found there.
 - **The same overlap read at the knot level also fails.** With the cut lifted on the original start, the map differs from the
   growth by round 2 on all 82 rational break-shape starts tested. Read as an ordinary merged block instead, it differs at round 1.
 - **So a different object is needed.** The counts are rational, with the catalogue's round-weights (`BREAK-EDDIES-20261119-001`),
@@ -87,7 +89,7 @@ Goal G17. **Referee pending.**
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
-| This attempt: the junction map | **Status:** Successful (4 of 4 held; the stop rule's second case) | The map cannot predict the short loops, and it fails exactly where the overlap stands, with the mechanism named |
+| This attempt: the junction map | **Status:** Successful (4 of 4 held; the stop rule's second case) | The map cannot predict the break-shape eddies' loops, and it fails exactly where the overlap stands, with the mechanism named |
 | Local direction: extending the cluster rule to the break shapes | Practically exhausted | Excluding, unrolling and merging the overlap all fail, at the stage level and at the knot level |
 | Broader exploration: what the cheapest growth builds | Known alternatives | The steady eddies' counts are rational, so a transfer between kinds of junction should describe them |
 | Long-term goal: G17 | Obstruction learned | Clusters on a candidate map cannot carry the break shapes' loops |

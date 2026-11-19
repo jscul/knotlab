@@ -4,6 +4,20 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the eddies in the break shapes refereed
+
+- The study of the eddies where the cluster rule breaks (`BREAK-EDDIES-20261119-001`,
+  [decision note](research/BREAK-EDDIES-20261119-001/break_eddies.md)) was refereed with the referee's own growth and recurrences
+  and confirmed: every round's counts and groups agree on the 129 starts both reached, 118 starts are rational, and every rate is a
+  rate of the catalogue's family. Growth from a stage equals growth of that stage taken as a start, on 369 of 369 tests.
+- **Withdrawn (a block on that reading).** "Loops of two and three steps are the commonest" read each round-weight from the rate,
+  which several members share. Read from every factor of the counts' recurrence, the round-weights are still the family's, but only
+  12 starts are consistent with a loop that short, and none shows one.
+- **Narrowed.** The explosive starts' largest groups jump in the last rounds before memory runs out; in two of them they fall back
+  to 2 to 5 while the counts leap. "Grow without bound" was not shown.
+- **Corrected (not a block).** "Open places never lengthen the loop" holds on all 86 pairs, and 118 of 122 is 116 of 122 plus 2 of
+  the referee's 9.
+
 ## 19 November 2026: the loop catalogue's undecided starts read in full
 
 - The loop catalogue's part U, the 1,520 starts the cluster rule cannot read (`LOOP-CATALOGUE-20261119-001`,

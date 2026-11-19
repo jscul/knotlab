@@ -708,19 +708,19 @@ frozen run, referee pending)? The ones read are the same eddies: 118 of the 122
 that fitted in memory grow at a rate that is a member of the catalogue's family,
 built from the same pieces. The rest of those starts, read later, hold 170 more
 and 626 still rising fast when they ran out of memory, mostly where groups of
-three overlap, so whether most of them are the catalogue's kinds is open. What
-is new is loops of two and three steps, which no ring of knots makes: each one
-needs a group of three knots joined at once in the first round, so the loop runs
-through first-round junctions, not through the knots alone. A different, explosive
-kind also exists, in which the groups themselves keep growing and no fixed rate
-fits
+three overlap, so whether most of them are the catalogue's kinds is open. Their
+round-weights are read from the counts' whole recurrence, since the rate alone
+does not fix W: loops shorter than a ring's are consistent with 12 of the starts
+and shown for none, and each of those 12 holds a group of three knots joined in
+the first round. A different, explosive kind also exists, whose counts leap and
+whose groups jump in the last rounds reached, and no fixed rate fits
 ([decision note](../research/BREAK-EDDIES-20261119-001/break_eddies.md)).
 Can the rule be extended to see them (`JUNCTION-MAP-20261119-001`, frozen run,
 referee pending)? Not by restarting it later with first-round junctions as points:
 a group of three that shares two knots with another block is not a short loop,
 because going round it again reaches the same junction, where the unrolled map
 counts a new one each time. The map gets the next round right and the one after
-wrong, wherever that overlap stands, and is exact wherever it does not. The short
+wrong, wherever that overlap stands, and is exact wherever it does not. Those
 loops need a different object, a transfer between kinds of junction
 ([decision note](../research/JUNCTION-MAP-20261119-001/junction_map.md)).
 And does the growth need more than the allowed states (`STATES-GROWTH-20261119-001`,

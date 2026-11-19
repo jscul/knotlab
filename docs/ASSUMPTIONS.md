@@ -3243,6 +3243,11 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `BREAK-EDDIES-20261119-001`'s referee (R1): the steady break-shape eddies are the family's, with every W read from
+    the counts' whole recurrence a member built from the catalogue's pieces (three members new to the table). The short loops
+    through groups of three, read from the rate, are withdrawn (a Block on that reading): consistent with 12 starts, shown for
+    none. The explosive kind's groups jump at the end rather than grow without bound as far as seen. Few in kind still holds for
+    the steady eddies; the explosive kind and part U's 626 over the limit keep it under challenge.
   - 2026-11-19 · `LOOP-CATALOGUE-20261119-001`, part U read in full: the 122 break-shape eddies above were the cheap ones, from the
     shards that fitted in memory. Of all 1,520 starts the rule cannot read, 292 feed and 626 more went over the memory or time
     limit still rising fast, 574 of them where groups of three overlap. Whether most break-shape eddies are the catalogue's kinds or

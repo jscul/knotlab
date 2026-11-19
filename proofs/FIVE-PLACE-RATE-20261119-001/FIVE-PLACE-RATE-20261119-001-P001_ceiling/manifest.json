@@ -37,7 +37,7 @@
   "artifact_id": "FIVE-PLACE-RATE-20261119-001-P001",
   "canonical_id": "FIVE-PLACE-RATE-20261119-001-P001",
   "ticket": "FIVE-PLACE-RATE-20261119-001",
-  "status": "Partial",
+  "status": "Proved",
   "title": "Sharp steady growth rate of the five-place branch systems",
   "claim": "Does every branch system in DEAD-CAP's within-five class have steady growth at most the eleven-junction theta rate?",
   "standard_statement": "Dominate the nonnegative branch series of each admissible finite initial piece within five places, including spare pendant points and rays. Prove a sharp bound on the exponential coefficient rate (limsup, hence also steady rates), using the named source's class boundary.",
@@ -48,12 +48,10 @@
     "WALL-READ-20261119-001"
   ],
   "source_contribution": "All original three-place and two-place block branch equations bounded at the positive theta singularity; handle ends and isolated 4/5-blocks, exact attainment, scopes.",
-  "remaining_obligations": [
-    "Proof bounding every within-five branch system by 2.382975... or an explicit faster start."
-  ],
+  "remaining_obligations": [],
   "validation": {
-    "level": "V0",
-    "status": "Open."
+    "level": "V1",
+    "status": "Proof with reproducible fixture or independent in-task check. Separate program referee pending."
   },
   "completion_gate": "Prove each scoped assertion and report unrestricted status.",
   "lineage": {
@@ -68,5 +66,6 @@
     "manifest": "proofs/FIVE-PLACE-RATE-20261119-001/FIVE-PLACE-RATE-20261119-001-P001_ceiling/manifest.json",
     "result": "proofs/FIVE-PLACE-RATE-20261119-001/FIVE-PLACE-RATE-20261119-001-P001_ceiling/result.json"
   },
-  "novelty": "candidate-local-delta"
+  "novelty": "candidate-local-delta",
+  "conclusion": "For every within-five branch system admitted by DEAD-CAP the upper exponential rate is at most 2.382975767906237494..., attained by the eleven-junction theta. The comparison is at the critical argument; starts outside this class remain open."
 }

@@ -1,7 +1,8 @@
 # The eddies in the cluster rule's break shapes
 
 Epic `BREAK-EDDIES-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking
-`LOOP-CATALOGUE-20261119-001#1`). Goal G17. **Referee pending. One over-cap start's regrowth is pending (see Record).**
+`LOOP-CATALOGUE-20261119-001#1`). Goal G17. **Referee pending. One over-cap start's regrowth is pending (see Record).** The headline
+was narrowed after the run, when LOOP-CATALOGUE's part U was read in full (see Part U in full).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `243a0fd17` at 08:16 UTC after a pilot (disclosed).
@@ -23,8 +24,8 @@ candidates with no common neighbour, joined by one junction in round 1. The rule
 ## The answer
 
 **In the owner's terms.**
-- **The eddies hiding in the break shapes are the same eddies.** Of the 122 self-feeding starts the cluster rule could not read,
-  plus the referee's shapes, 118 grow at a rate that is exactly a member of the catalogue's family. That is, the rate solves
+- **The break-shape eddies read here are the same eddies.** Of the 122 self-feeding starts the cluster rule could not read in
+  part U's first 440 starts (the cheap ones; see Part U in full), plus the referee's shapes, 118 grow at a rate that is exactly a member of the catalogue's family. That is, the rate solves
   W = 1 for a round-weight W built from the same pieces:
   - y per knot of the loop;
   - (1 + y) per spare or lone hung knot;
@@ -95,7 +96,18 @@ candidates with no common neighbour, joined by one junction in round 1. The rule
   or 300,000 junctions). The family match is to 10^(−6) in the rate, and it was done after the read-out.
 - **The explosive class** is read on 7 starts of the referee's shapes, each stopped by memory after 9 to 14 rounds, and on the theta
   to 18 rounds. One eight-knot start is pending.
-- **The population** is LOOP-CATALOGUE's part U main run (122 exponential starts), not its pending 1,080, and the referee's 9.
+- **The population** is LOOP-CATALOGUE's part U main run (122 exponential starts), not the 1,080 read afterwards, and the
+  referee's 9.
+
+## Part U in full
+
+Added on 19 November, after `LOOP-CATALOGUE-B4` read the rest of part U. Logged as a **Narrowing** (completeness) in
+`docs/CORRECTIONS.md`.
+- **This population was the cheap part.** The 122 came from the 11 shards of part U that fitted the runner's memory. The other
+  1,080 starts hold 170 more exponential starts, not grown here, and 626 that went over their child's 3 GB or 90 s. 624 of those
+  were still rising, by a median factor of 2.6 in their last round, and 574 have overlapping groups of three.
+- **So the headline holds on this population only.** Whether most eddies in the break shapes are the catalogue's, or the explosive
+  kind, is open. Direction #2 (the explosive kind) now has 624 starts to begin from.
 
 ## Advisor
 

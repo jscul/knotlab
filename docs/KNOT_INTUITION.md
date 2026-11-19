@@ -704,8 +704,11 @@ checked (two triangles of knots joined once, with a spare). The owner's picture 
 library routines is recorded as his direction
 ([decision note](../research/LOOP-CATALOGUE-20261119-001/loop_catalogue.md)).
 And the loops hidden where that rule breaks (`BREAK-EDDIES-20261119-001`,
-frozen run, referee pending)? They are the same eddies: 118 of the 122 grow at a
-rate that is a member of the catalogue's family, built from the same pieces. What
+frozen run, referee pending)? The ones read are the same eddies: 118 of the 122
+that fitted in memory grow at a rate that is a member of the catalogue's family,
+built from the same pieces. The rest of those starts, read later, hold 170 more
+and 626 still rising fast when they ran out of memory, mostly where groups of
+three overlap, so whether most of them are the catalogue's kinds is open. What
 is new is loops of two and three steps, which no ring of knots makes: each one
 needs a group of three knots joined at once in the first round, so the loop runs
 through first-round junctions, not through the knots alone. A different, explosive

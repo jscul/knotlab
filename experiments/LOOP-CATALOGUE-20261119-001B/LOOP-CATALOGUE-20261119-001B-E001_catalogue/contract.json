@@ -67,7 +67,7 @@
    "text": "merge_fixed.py adds, beside the frozen verdicts, the verdicts of merge.py with its three slips fixed: C2's 30-term W recomputed to 120 terms where it disagreed; I2's loop knots taken as the cycle's knots and the path of two's factor as the pre-registration's (1 + y)/(1 - y); R1's even rings compared by rate where W was left uncomputed. The frozen verdicts remain the record (8 of 14); the fixed ones are reported as post hoc."
   },
   {
-   "date": "2026-11-19T07:50Z",
+   "date": "2026-11-19T07:48Z",
    "kind": "rerun after a machine-wide memory exhaustion",
    "text": "Between 07:19 and 07:45 UTC an unrelated job exhausted the machine's memory, and the OOM killer stopped children of B3; B3 recorded such kills as 'over limit'. B3 is stopped and superseded by B4 (runs/loop-catalogue-iso2): job_iso.py now tells its own limit (exit status 1, or the 90 s timeout) from a signal from outside (negative status), regrowing the child up to three times in the latter case. Same starts, rounds, caps and class rule."
   }

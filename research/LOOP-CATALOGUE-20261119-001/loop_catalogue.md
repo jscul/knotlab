@@ -2,7 +2,8 @@
 
 Epic `LOOP-CATALOGUE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead (taking
 `SCALE-SHARE-20261119-001#1`). Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed with one Narrowing, no Block,
-folded in on 19 November (see Referee). **Part U is pending (stress test running, see Record).**
+folded in on 19 November (see Referee). **Part U was read in full later that day** (`LOOP-CATALOGUE-B4`, folded in; see Record),
+with one more Narrowing (see Part U in full).
 
 The owner's idea behind it, in his words: "loops of logic, then like eddies in a river that are shared across the universe
 essentially there are 'core-libs' kind of processing" (18 November, Pacific time). It is recorded as his direction, not a result,
@@ -13,14 +14,17 @@ in THEORY.md and as A109.
   (disclosed).
 - The run went from 05:18 to 06:52 UTC through the shared runner (`LOOP-CATALOGUE-B1`, `runs/loop-catalogue`, 206 cases on 6
   workers). 179 finished; 27 shards of part U went over the memory cap.
-- Those 27 are being rerun with every start isolated in a 3 GB, 90 s child process (`LOOP-CATALOGUE-B3`,
-  `runs/loop-catalogue-iso`, contract amendments of 06:53 and 06:57 UTC). Part U below reads 440 of its 1,520 starts. **Stress
-  test pending** for the rest. The first memory rerun (B2, 5 GB per case) also went over and was stopped.
+- Those 27 were rerun with every start isolated in a 3 GB, 90 s child process (contract amendments of 06:53, 06:57 and 07:48
+  UTC). The first memory rerun (B2, 5 GB per case) went over and was stopped. The second (B3) lost children to a machine-wide
+  memory exhaustion between 07:19 and 07:45 UTC and was superseded by `LOOP-CATALOGUE-B4` (`runs/loop-catalogue-iso2`), which
+  tells its own limit from a kill from outside and regrows the latter. B4 finished at 11:40 UTC, 27 of 27 ok.
+- Part U below reads all 1,520 starts, folded in by `fold_u.py`. The partial reading of 440 is kept in `results_prelim.json`.
 - Gates: G1–G6 pass ([checks_output.json](../../experiments/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/checks_output.json)).
-- Code: [eddy.py, loopweight.py, catalogue.py, equation.py, sampler.py, job.py, merge.py, posthoc.py](../../experiments/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/),
+- Code: [eddy.py, loopweight.py, catalogue.py, equation.py, sampler.py, job.py, job_iso.py, merge.py, posthoc.py, fold_u.py](../../experiments/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/),
   with the pilot in `pilot/`.
 - Results: [results_prelim.json](../../artifacts/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/results_prelim.json)
-  (part U partial) and [posthoc.json](../../artifacts/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/posthoc.json).
+  (part U partial), [results_partU.json](../../artifacts/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/results_partU.json)
+  (part U in full) and [posthoc.json](../../artifacts/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/posthoc.json).
 
 **Words.** As in `CLUSTER-ALL-20261119-001`: the candidate map, its blocks, the unrolled map, a cluster. Further words:
 - a **loop** is a cycle of the block graph, whose points are knots and blocks;
@@ -85,10 +89,16 @@ in THEORY.md and as A109.
   - That is the owner's "core-libs" made exact: a handful of pieces, each acting the same way wherever it sits.
 - **Where the rule breaks, more eddies hide.** The cluster rule has two known breaks: overlapping groups of three, and groups of
   three meeting at a knot.
-  - On the 440 such starts grown so far (part U, the rest pending), 122 grow exponentially. Among them is the six-knot theta (the
-    literature's name for a cycle with a second path across it: the ring of five plus a knot touching two of its knots), growing past 2,000 junctions a round by round 18.
-  - 30 of the 122 look minimal, at six to eight knots, with ratios from about 1.13 to explosive. Their minimality is provisional
-    until all of part U is read.
+  - All 1,520 such starts are grown (part U), and 292 grow exponentially. Among them is the six-knot theta (the literature's name
+    for a cycle with a second path across it: the ring of five plus a knot touching two of its knots), growing past 2,000
+    junctions a round by round 18.
+  - 626 more went over the child's 3 GB or 90 s after 6 to 17 rounds, 624 of them still rising, by a median factor of 2.6 in
+    their last round. Their class is unknown. They look like the explosive kind of `BREAK-EDDIES-20261119-001`.
+  - The two break shapes differ. Where groups of three overlap, 816 of 821 starts feed or are still rising at the limit (242
+    exponential, 574 over it). Where they meet at a knot, 597 of 699 close or settle, 50 are exponential and 52 go over.
+  - 19 of the 292 are minimal on every reduction decided: the theta at six knots, three at seven and fifteen at eight, with
+    last-round factors from 1.12 to 13.7. 15 more are provisional: a reduction went over the limit or was never grown. Of the 30
+    that looked minimal in the partial reading, 18 are not, because a reduction grown later feeds (Part U in full).
   - So "few in kind" holds where the rule holds. The break shapes add self-feeding loops that nothing here describes yet, and they
     are where the next work is.
   - **Part U is not every start the rule cannot decide** (referee R1). The search counted a start outside the rule's scope with no
@@ -120,7 +130,7 @@ in THEORY.md and as A109.
 | I3 | every interface raises the rate; ring joins algebraic | failed | 100 of 105 raised; the 5 others sit on the other loop of the ring of eight and leave its rate; all 21 ring joins algebraic |
 | R1 | rings with one spare follow W; bare rings constant | failed as scored | 9 of 12; for the even rings W was not computed (two loops), and their rates equal the predicted roots (post hoc) |
 | R2 | the ring of eight's placements | **held** | 1.1673 and 1.3247 (the plastic number), as the advisor predicted |
-| U1 | meeting hyperedges in the undecided starts are not exponential | failed (preliminary) | 33 of 349 are exponential (part U partial) |
+| U1 | meeting hyperedges in the undecided starts are not exponential | failed | 50 of 699 are exponential and 52 over the limit (part U in full; 33 of 349 in the partial reading) |
 
 8 of 14 held as scored. Of the six failures, three are the instrument's: W's truncation, the scorer's factor table and its
 loop-knot test, and W left uncomputed for two loops. Each holds once corrected post hoc: the fixed scorer is `merge_fixed.py`
@@ -177,8 +187,9 @@ not proved in a proof record, and they hold where the rule does. The run checks 
 
 - **The theory is argued, not proved,** and it holds where the cluster rule does. The rule itself is computed, with two known
   breaks.
-- **Part U is partial:** 440 of 1,520 starts. The 30 growth-minimal entries rely on reductions, 93 of whose statuses are not yet
-  known. Classes come from at most 30 rounds or 5,000 junctions, and "exp?" means not quasi-polynomial at any lag up to 12 and
+- **Part U's limit:** 626 of its 1,520 starts went over the child's 3 GB or 90 s, class unknown. 15 of the 34 growth-minimal
+  entries rest on a reduction over the limit (8) or never grown (172 reductions outside part U, the referee's shape among them).
+  Classes come from at most 30 rounds or 5,000 junctions, and "exp?" means not quasi-polynomial at any lag up to 12 and
   still rising.
 - **Scope of the search:** simple knot graphs (each pair of knots shares at most one distinction), bare sizes plus at most two
   spares, up to eight knots. Starts outside the rule's scope with no loop through distinct blocks were counted as no eddy without
@@ -201,12 +212,28 @@ no Block.
     two loops of four, and the rings of ten and twelve give L = 5 and 6. Rings of four and six feed nothing.
   - Minimality: all 37 one-step reductions are quasi-polynomial.
   - E1 and E2: all 49 regrown and exponential, none of 184 sampled non-eddies.
-  - Part U: 32 of 34 regrown in full, and the theta and one eight-knot start equal to rounds 18 and 7. The 1,080 pending were not
-    checked.
+  - Part U: 32 of 34 regrown in full, and the theta and one eight-knot start equal to rounds 18 and 7. The 1,080 then pending were
+    not checked; they were read afterwards (Part U in full).
 - **Folded in the same day**, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`: **Narrowing (completeness).** Part U is
   not every start the rule cannot decide. A minimal eddy outside both lists exists at six knots, two triangles joined by one shared
   distinction with one spare, and two more shapes are unknown (The answer, Limitations). The on_loop wording is fixed (the I2 row).
   The three shapes go to `BREAK-EDDIES-20261119-001`.
+
+## Part U in full
+
+Folded in on 19 November after `LOOP-CATALOGUE-B4`. Logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`: **Narrowing
+(completeness).**
+- **The partial reading was not a sample.** The 440 starts read first were the 11 shards that fitted the runner's memory, so they
+  were the cheap ones, and none of them reached a limit. The other 1,080 hold 170 more exponential starts and all 626 that went
+  over the limit, almost all still rising fast.
+- **What changes.**
+  - The minimal entries: 19 firm and 15 provisional, against 30 provisional before. 18 of those 30 have a reduction, grown in B4,
+    that feeds.
+  - `BREAK-EDDIES-20261119-001`'s headline, that the eddies hiding in the break shapes are the catalogue's, was read on the 122. It
+    holds there. In full, 574 of the 821 starts where groups of three overlap went over the limit, class unknown, so whether most
+    break-shape eddies are the catalogue's or the explosive kind is open.
+- **What stands.** Every frozen verdict (U1 failed either way), the catalogue and its family, and BREAK-EDDIES' 118 of 122 on its
+  population.
 
 ## Advisor
 
@@ -216,8 +243,8 @@ no Block.
   the even ring's placement check (R2, exact). It also corrected my theta equation.
 - **What failed.** Its finite-path factor (1 + y)^2: under bare sizes the far knot carries an endless chain, (1 + y)/(1 − y). This
   was caught in the smoke run and frozen correctly, but the scorer kept the advisor's form.
-- **Not tested.** Its mechanism for meeting hyperedges, that a loop knot needs an open distinction left after round 1. Part U's 33
-  exponential cases are where to test it.
+- **Not tested.** Its mechanism for meeting hyperedges, that a loop knot needs an open distinction left after round 1. Part U's 50
+  exponential starts with meeting groups (33 in the partial reading) are where to test it.
 
 ## Position
 

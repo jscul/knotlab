@@ -4,6 +4,16 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the loop catalogue's undecided starts read in full
+
+- The loop catalogue's part U, the 1,520 starts the cluster rule cannot read (`LOOP-CATALOGUE-20261119-001`,
+  [decision note](research/LOOP-CATALOGUE-20261119-001/loop_catalogue.md)), was read in full: 292 grow exponentially, and 626 more
+  ran out of memory or time while still rising fast, 574 of them where groups of three overlap.
+- **Narrowed.** The study of the eddies in the break shapes (`BREAK-EDDIES-20261119-001`,
+  [decision note](research/BREAK-EDDIES-20261119-001/break_eddies.md)) found the catalogue's family in 118 of its 122 starts. Those
+  were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
+  kinds is open. 18 of the 30 entries that looked minimal are not.
+
 ## 19 November 2026: meet-once collisions refereed
 
 - The study of reached collisions where junctions meet once (`MEET-ONCE-20261119-001`,

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWN-END-MEET-ONCE-20261119-001-E001",
+  "ticket": "GROWN-END-MEET-ONCE-20261119-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "With at most one shared distinction per pair of junctions and all distinctions in live junctions fixed pointwise, can a full pair-table symmetry on a reached stage fail to extend one complete cheapest-count parity round?",
+  "public_inputs": "Ordinary simple connected meeting graph, loose counts of any size consistent with a given finite bound, each support an open full parity junction. One may choose any connected start. Record start and positive-age stage and exact next round. All old names from every living support are fixed. Exact distance is least bond size minus one, with a separate reading for no bond.",
+  "forbidden_inputs": [
+    "Presuppose that each junction has three or at most five distinctions.",
+    "Treat a terminal or static control as a reached failure, or a failed single fresh naming as impossibility.",
+    "Treat an incomplete size tier, age or symmetry enumeration as exhaustive."
+  ],
+  "primary_observable": "A specified permutation preserving every exact current pair reading and all live supports pointwise but with no permutation of the new distinctions extending it on the full successor table. Give the smallest certified example and exact limits on minimality in both start and reached sizes.",
+  "cheapest_meaningful_control": "Recover the old six-start meet-twice positive, identity, a failed input symmetry and a new candidate by independently replaying two rounds and exact bond computations. Check that meet-once holds at all stages.",
+  "first_executable_signal": "Use a simple four-junction part with five shared distinctions, explicit seven-, eight- and nine-junction hypotheses in the preregistration; compare against a full start-width diagonal and an independent reached-size enumeration.",
+  "resource_budget": "CPU. Start with full width <=14 and extend completed diagonals as feasible, counts at positive ages one and two with explicit current/successor budgets. Independently sweep by total reached junction count without a per-junction loose cap, and push past the first negative sizes. Keep computations to small exact local outputs. Larger partial cases and targeted families are separately reported.",
+  "decision_or_followup_rule": "A positive needs an exact literal history, scope, permutation, and certificate of nonextension under all fresh namings. Continue below the first hit to sharpen smallest size and state any remaining gaps. A negative must state exhaustive limits and the surviving theoretical mechanism.",
+  "stop_rule": "An exact countermodel or structural theorem, with complete finite tiers independently cross-checked, or a bounded exact result and an explicit unresolved step.",
+  "additional_reading": "For the previous meet-twice example audit all pointwise-live table symmetries and their extensions, triple sizes, binary existence and the least number of individual queries under declared conventions.",
+  "dependency_records_sha256": {
+    "research/GROWN-END-SWAP-20261119-001/decision.md": "c7fc2f5424590778a4ad23c6ba79147d3afbb3ef3b033114380aa881f3729def",
+    "research/GROWN-END-SWAP-20261119-001/referee-R1/report.md": "395f80670a94c4be159c48a8d469004d41f39dfbacd58181204df5d5f61dab5f",
+    "research/MEET-ONCE-20261119-001/meet_once.md": "7268b6408ba74ec6327beaab2c8c3c7dcac488469c850c0a9b705df2ae4b586d",
+    "research/PARENT-RULE-20261119-001/parent_rule.md": "295d275459119123db43f0a6f3da9052c300cc70f6f221abc276270cc4f1a991",
+    "research/HUNT-SHORTEN-20261119-001/hunt_shorten.md": "0a14bf735c09eb79e10b0e8997ae187ff489ad84000b68226e6f6151bb518f43",
+    "research/EXTEND-ROUND-20261119-001/extend_round.md": "2e871b87217b8406e2f4ba7c3d4a05236ea1165d5013f5fbebc222eb861dd75a"
+  }
+}

@@ -1,7 +1,8 @@
 # Knots touching twice: the identification on most of the census
 
 Epic `DOUBLE-IDENT-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RELAY-IDENT-20261119-001#1`. Goal
-G17. **Referee pending.**
+G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block; two points folded into the proof on 19 November (see
+Referee).
 
 **Record.**
 - **The proof** (ticket A): [proof.md](../../proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md), with
@@ -47,6 +48,17 @@ G17. **Referee pending.**
 | # | Prediction | Verdict | Reading |
 | --- | --- | --- | --- |
 | D1 | on every census arrangement in the class, the growth class read off the relayed map equals the measured class | **held** | 12,473 of 12,473 (disclosed pilot of the same computation) |
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread. No study code was run.
+- **Confirmed.** Lemma M is correct.
+  - Its own classification of all 26,441 census arrangements gives the same numbers: 11,512 in the class, 727 with one loose
+    distinction, 234 with none, 905 out by (S3), 2,053 out by (S4), and 11,010 stalls.
+  - The identification agrees on all 437 simple and on 1,415 sampled double-touch arrangements to round 6.
+  - The class prediction equals the measured class on all 12,473.
+- **Folded in (not blocks).** The class now names "no stall". The machine check's structural implied test is justified by Lemma
+  M(4). The two-holder hypothesis is stated as the program's convention.
 
 ## Known results, and what this adds
 

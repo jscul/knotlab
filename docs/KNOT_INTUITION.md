@@ -813,7 +813,7 @@ because a piece without chains relays and a one-dimensional start needs each
 piece to hold exactly one chain
 ([decision note](../research/RELAY-IDENT-20261119-001/relay_ident.md)).
 And when two knots share two or more distinctions, as in most of the census
-(`DOUBLE-IDENT-20261119-001`, proof and census readout, referee pending)? Nothing
+(`DOUBLE-IDENT-20261119-001`, proof and census readout, refereed)? Nothing
 changes but how many open distinctions each knot has: from round 1 on the growth
 reads only which live knots neighbour which and those counts. So the same rule
 holds, and on the touch census it matches every arrangement in its class round by

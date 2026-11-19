@@ -2,7 +2,7 @@
 
 Status: Proved
 
-Ticket `DOUBLE-IDENT-20261119-001Z`, 2026-11-19. A ledger; no new claim. Proof `proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md`; census readout `experiments/DOUBLE-IDENT-20261119-001B/DOUBLE-IDENT-20261119-001B-E001_dims/`. Referee pending.
+Ticket `DOUBLE-IDENT-20261119-001Z`, 2026-11-19. A ledger; no new claim. Proof `proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md`; census readout `experiments/DOUBLE-IDENT-20261119-001B/DOUBLE-IDENT-20261119-001B-E001_dims/`. Refereed (R1): confirmed; two points folded in.
 
 | # | Conclusion | Evidence |
 | --- | --- | --- |

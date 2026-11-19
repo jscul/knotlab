@@ -6,7 +6,8 @@ Ticket `DOUBLE-IDENT-20261119-001A`, 19 November 2026, by Claude, on the coordin
 This extends `RING-IDENT-20261119-001A-P001`, `CHAIN-IDENT-20261119-001A-P001` and `RELAY-IDENT-20261119-001A-P001` from simple knot
 graphs to knot graphs in which two knots may share several distinctions. The advisor checked the statement before the freeze, and
 its points are folded in: the hypothesis on distinctions, the implied wording, the round-0 caveat, and reading the conditions with dead
-knots. `machine_check.py` is a separate algorithm in the same task. Referee pending.
+knots. `machine_check.py` is a separate algorithm in the same task. **Refereed:** report R1, confirmed, no Block; its two points folded in
+(the no-stall condition named, and the check's structural implied test justified by Lemma M(4)).
 
 ## Setting
 
@@ -28,6 +29,8 @@ A dead knot is never a point, but its block stays.
   common neighbour.
 - (S4) No two live knots have two common neighbours in K̄, live or not.
 - (S6′) The start holds at least two loose distinctions.
+- (S0) No stall: open_k ≥ d_k for every live knot. A start that stalls cannot make round 1; the census's 11,010 stalls are of this kind
+  (named after referee R1).
 
 K is connected; it need not be simple.
 
@@ -113,7 +116,9 @@ class (12,473 of 12,473).
 
 ## Validation
 
-**`machine_check.py`.** Every one of the touch census's 26,441 arrangements is classified on the data Lemma M names.
+**`machine_check.py`.** Every one of the touch census's 26,441 arrangements is classified on the data Lemma M names. It grows with
+GF(2) elimination off, using the structural implied test, which Lemma M(4) shows equals GF(2) implication here: every distinction
+lies in at most two junctions, and the presentation is connected.
 
 | Class | Arrangements | Result |
 | --- | --- | --- |

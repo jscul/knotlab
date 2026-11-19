@@ -3292,6 +3292,8 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-19 · `MERGE-BURST-20261119-001` ([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)): of 16
     explosive starts, 2 are read, and both end after one merge and the binomial burst of one block (9 and 781 junctions). 14 are
     unread within 6 GB and 15 minutes. None is shown to keep growing. Status unchanged.
+  - 2026-11-19 · `EXPLOSIVE-20261119-001` refereed (R1). Narrowed: overlapping groups were present in every jump but are not shown
+    to drive them (16 of 117 overlapping seven-place starts jumped), and growth without bound is unread. Status unchanged.
   - 2026-11-19 · `EXPLOSIVE-20261119-001` ([decision note](../research/EXPLOSIVE-20261119-001/explosive.md)): outside the class,
     groups of three act as filled cells where they do not overlap. The explosive kind needs overlapping groups of three and more
     than five places. Its smallest case closes after one group of 309 parents and a binomial burst. The other explosive starts
@@ -3362,6 +3364,9 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-19 · `MERGE-BURST-20261119-001` ([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)): of 16
     explosive starts, 2 are read, and both end after one merge and the binomial burst of one block (9 and 781 junctions). 14 are
     unread within 6 GB and 15 minutes. None is shown to keep growing. Status unchanged.
+  - 2026-11-19 · `EXPLOSIVE-20261119-001` refereed (R1, findings stand). Narrowed: "explosive" is a jump in the counts seen
+    before a stop, and none jumped among 2,191 sampled starts within five places within 20 rounds (95% bound about 0.14%), not
+    "absent". The regularity is the smallest case's. Status unchanged.
   - 2026-11-19 · `EXPLOSIVE-20261119-001` ([decision note](../research/EXPLOSIVE-20261119-001/explosive.md)): the first sampled
     reading of the explosive kind. Under these weightings it is rare: absent within five places (0 of 2,191), 1.6% within seven.
     It needs overlapping groups of three. Its smallest case is finitely describable: one merge, a binomial burst, then closing.

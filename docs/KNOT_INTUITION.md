@@ -635,6 +635,12 @@ by making all partners at once; the cluster map supplies it with no tick at all,
 and then the order no longer matters. The ratios survive read by size, and each
 part of a join keeps exactly its own growth while the rest lives in the joint
 ([decision note](../research/ROUND-FREE-20261119-001/round_free.md)).
+And at scale (`SCALE-SHARE-20261119-001`, frozen samples, referee pending)? As
+starts of touching knots get larger, almost all of them cannot start, because
+most ways of arranging many knots crowd each knot with shared distinctions; of
+those that grow, two dimensions takes over (98% at twenty knots), and rings stay
+rare (at most 0.1%) though the growing starts hold many cycles
+([decision note](../research/SCALE-SHARE-20261119-001/scale_share.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

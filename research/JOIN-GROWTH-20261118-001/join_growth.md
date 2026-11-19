@@ -218,3 +218,44 @@ measure); a history line on A106 (a join at a ring knot needs a knot of five or 
 no joined ring).
 
 **Basket:** B196, `FRESH-COUNT-20261118-001#1`, B202, `PLUS-ONE-20261118-001#1`; none taken.
+
+## Final report as sent (2026-11-19 00:59 UTC)
+
+**Outcome:** The parts compose, but they do not keep their own growth: the ring takes over. Each knot joined to a ring brings a small menu, and the menus multiply into one equation for the ring's rate. The law predicted the exact recurrence of the junction counts, not just the rate, in all 27 frozen single-ring tests and in all 48 census joins by a shared distinction or knot (35 of them unseen). In all, 9 of 10 frozen predictions held over 137 starts. Closed, referee pending.
+
+- **The law, "rules within rules."** A joined knot with s surplus distinctions of its own has the menu F_s = 1 + y(1 + y)^s. The growth either skips the knot, or takes it and then any of its own surplus distinctions: a menu inside a menu. The rate solves y^n (1 + y)^j Π F = 1. Where the knot sits on the ring does not matter.
+- **Takeover.** Every tree of knots joined to a ring speeds it up. This holds even for a ring that alone adds only five junctions a round, and even when the part would close on its own. All 93 small joins of a ring of five and a two-fold piece grow faster than the ring alone, at 1.13 to 1.69 a round. The piece's own two-dimensional growth disappears into a finite menu.
+- **The coordinator's guess** (a join acts as added spare distinctions) is exact only for a lone knot with nothing of its own. A knot with surplus distinctions of its own counts for less than that many spares.
+- **Two rings lock into a new kind of growth.** Two rings of five, each linear alone, grow about 2.5× a round when joined, and the counts satisfy no short recurrence.
+  - The counts fit λ^t · t^(−3/2): a menu that contains itself, the nearest thing here to a "logic based fractal" (computed, with no model yet).
+  - Longer rings lock lower (2.53, 2.32, 2.19, 2.14).
+  - The advisor's blind forecasts held: two round-16 counts to within 0.06%, and the 7–7 rate.
+- **One failure.** A knot touching two neighbouring ring knots closes the whole start in five rounds (P8: 123 of the 124 joins read are faster).
+- **Post hoc.** Along a chain of joined knots, each knot's menu nests inside the menu of the knot two before it. Four checks written down before their runs held. One refinement was found on the census and is labelled.
+
+"Growth" here counts junctions by round; bond balls were not measured.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: do growth behaviours compose when parts are joined to a ring? | **Status:** Successful (9 of 10 held) | Joined trees of knots are independent factors of one return equation, exact on every single-ring start; the ring takes over; two rings lock into non-rational growth |
+| Local direction: joins under the cheapest parity growth | Continue | The single-ring law is exact where tested; two rings and closing joins are open, with sharp tests ready |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Trees of knots grow polynomially; one ring grows at a rate that every joined tree raises; two rings grow algebraically; a ring of three inside a ring can close everything |
+| Long-term goal: G17 Typical and rare meeting patterns | Capability gained | Over every small join of a ring and a two-fold piece, the outcome follows from the parts' surplus counts; the typical outcome is takeover by the ring |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Two joined rings: find the menu that contains itself (an algebraic return equation) | 3/3 — the first growth whose rule refers to itself, the "logic based fractal" made exact | 2/3 — counts to 13–17 rounds, two forecasts held, the advisor's quadratic template | fit Q₂F² + Q₁F + Q₀ = 0 on per-junction series at the joint, five terms held back → stop at an equation that predicts unseen rounds and joins exactly, or a proof none of low degree does | Selected · awaiting go-ahead |
+| 2 | The nested law for every tree joined to a ring, frozen | 2/3 — makes the law general | 3/3 — law, refinement and code exist | freeze it on every tree of up to four knots at one or two ring knots, including chains at neighbouring knots → stop at all holding, or the first tree that breaks it | Alternative · deferred |
+| 3 | When does a join stop the growth? | 2/3 — the only slowing seen | 3/3 — the advisor's closing rule and its test | freeze "closes exactly when three pairwise candidates share no neighbour" on chords and double joins → stop at the rule holding or a counterexample | Alternative · deferred |
+| 4 | Prove the product law | 2/3 — turns the census into a theorem | 2/3 — the ring proof's four steps, with menus | write the identification step for menus → stop at a proof or a start where model and growth part | Alternative · deferred |
+
+**Corrections:** none to published claims. My provisional read said two rings grew "2.2 to 2.4× and still rising". The rise is the t^(−3/2) factor, and the rate is about 2.5 (not a published claim). **Goals:** G17 checkpoint (capability gained); no goal changed. **Assumptions:** new A107 (the 93 small joins weighted uniformly, a measure); a history line on A106 (its five-place cutoff leaves out every joined ring). **Basket:** B196, `FRESH-COUNT-20261118-001#1`, B202, `PLUS-ONE-20261118-001#1`; none taken. #2 and #3 are independent and tied, so they could run in parallel. **Advisor:** Fable 5.2, twice.
+- Before the freeze, it derived the equation from the ring model, corrected my nested reading of the two-fold piece, and proposed the predictions and the words "adjunct", "delay series" and "return equation".
+- After the read-out, it showed the two-ring exponent is −3/2 and made the forecasts that held. It expected a fork to break the nested law, which it did not.
+
+**Referee hand-off.** The decision note is `research/JOIN-GROWTH-20261118-001/join_growth.md`. The prior-work line is in the pre-registration (objects-gate passes). Please check:
+- the exact-annihilator scoring in `merge.py`;
+- the two logged memory amendments (reruns with the same code and caps);
+- the post hoc section, which is labelled and was not frozen.

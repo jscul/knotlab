@@ -4,6 +4,14 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the cap on places refereed
+
+- The proof that five places with no dead knot allow at most two chains in a piece (`CAP-CHAINS-20261119-001`,
+  [decision note](research/CAP-CHAINS-20261119-001/cap_chains.md)) was refereed line by line and confirmed, with its checks
+  rerun to 13 knots.
+- **Clarified (not a block).** The ring of seven with a leaf grows at the root of x⁸ = x + 1, 1.0970: about 10% a round, not 9%. One
+  check's count was taken after a harmless filter (2,187 starts; 3,159 without it, none in the class either way).
+
 ## 19 November 2026: the weightings test refereed
 
 - The weightings test (`WEIGHTINGS-20261119-001`, [decision note](research/WEIGHTINGS-20261119-001/weightings.md)) was refereed

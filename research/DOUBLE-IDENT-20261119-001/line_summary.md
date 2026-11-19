@@ -2,9 +2,8 @@
 
 19 November 2026, by Claude, at the coordinator's request. This is one page for the owner. It adds no evidence: every figure comes
 from the linked records.
-- **Refereed and confirmed:** the four identification proofs, the reading past the census (SCALE-THEOREM) and the weightings test
-  (WEIGHTINGS).
-- **Referee pending:** the cap on places (CAP-CHAINS).
+- **All refereed and confirmed:** the four identification proofs, the reading past the census (SCALE-THEOREM), the weightings test
+  (WEIGHTINGS) and the cap on places (CAP-CHAINS).
 
 ## First: two dimensions are typical of how starts are drawn, not of the growth
 
@@ -68,7 +67,7 @@ from twelve knots (WEIGHTINGS). That is the Narrowing above.
 | [DOUBLE-IDENT](double_ident.md) | Knots touching twice or more change nothing but the open counts, so all of the above holds for every multiplicity. A start with a single loose distinction closes at round 1 | Drops simplicity. The two block conditions are read on live knots; no stall and at least two loose distinctions are needed | Confirmed (its classification of all 26,441 reproduced exactly) |
 | [SCALE-THEOREM](../SCALE-THEOREM-20261119-001/scale_theorem.md) (frozen run) | Read by the theorem, SCALE-SHARE's samples of 5 to 20 knots are 73–83% in the class; in it two dimensions rise from 85% to 98% of growers, and three never occurs | Nothing new; it measures the class's reach under one weighting | Confirmed (every figure reproduced; two wording points folded in) |
 | [WEIGHTINGS](../WEIGHTINGS-20261119-001/weightings.md) (frozen run) | Under seven weightings frozen before reading, two stays typical only where knots have at most five places, crowded or not. Under uniform random trees three or more is 12% at twelve knots and 37% at twenty; extra lines make exponential growth common. All 1,226 regrown samples agree with the theorem, 622 of them three- to six-dimensional or exponential | Nothing new; it narrows "two is typical" and overturns A106 as a reading of the growth | Confirmed (the samplers checked against their exact laws; every one of 6,271 hard in-class starts regrows as read; the cause credited to the cap, not crowding) |
-| [CAP-CHAINS](../CAP-CHAINS-20261119-001/cap_chains.md) (proof) | With no dead knot and at most five places, the knots form one line or one ring with single knots hung on it, so a piece carries at most two chains, and a tree start grows in at most two dimensions. Six places, or dead knots at five, allow any number | Adds a cap on places and no dead knot | Pending |
+| [CAP-CHAINS](../CAP-CHAINS-20261119-001/cap_chains.md) (proof) | With no dead knot and at most five places, the knots form one line or one ring with single knots hung on it, so a piece carries at most two chains, and a tree start grows in at most two dimensions. Six places, or dead knots at five, allow any number | Adds a cap on places and no dead knot | Confirmed line by line (rechecked to 13 knots; the ring with a leaf grows at the root of x⁸ = x + 1, about 10% a round) |
 
 ## On what share of the census
 

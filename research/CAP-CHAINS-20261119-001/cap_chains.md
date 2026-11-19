@@ -1,7 +1,8 @@
 # Chains under a cap on places: five bounds them at two, six bounds nothing
 
 Epic `CAP-CHAINS-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `WEIGHTINGS-20261119-001#2`. Goal
-G17. **Referee pending.**
+G17. **Refereed:** report [R1](referee-R1/report.md), confirmed line by line, no Block; two wording points folded in on 19
+November (see Referee).
 
 **Record.**
 - **The proof** (ticket A):
@@ -25,7 +26,7 @@ G17. **Referee pending.**
 - **So a tree-shaped start of such knots closes, or grows in one or two dimensions.** This is now proved for every size, not only
   sampled.
   - A ring of knots carries no chains, but it can still grow exponentially. The ring of seven with one knot hung on it does, at about
-    9% a round.
+    10% a round: its counts obey a_t = a_(t−7) + a_(t−8), so the rate is the root of x⁸ = x + 1, 1.0970 (referee R1).
   - So five places bound the dimension of tree starts, and bound only the chains of the others.
 - **Five is the largest cap that does this.** At six places, with every knot live, bare trees in the class carry any number of
   chains in one piece.
@@ -50,14 +51,36 @@ G17. **Referee pending.**
 
 | Statement | Status | Evidence |
 | --- | --- | --- |
-| Lemma 1: in the class with every knot live, no cycle of 3, 4 or 6 knots; groups are candidate pairs; d_k = Σ (deg_w − 1) | proved | C4: 2,187 all-live 6-cycle starts all out of the class or stalling |
+| Lemma 1: in the class with every knot live, no cycle of 3, 4 or 6 knots; groups are candidate pairs; d_k = Σ (deg_w − 1) | proved | C4: 2,187 all-live 6-cycle starts within the cap (3,159 without the cap filter, referee R1), all out of the class or stalling |
 | Lemma 2: with cap 5 too, the non-leaves form one path or one cycle | proved | C1: 86 graphs to 12 knots, cores 58 paths, 22 cycles, 6 stars or less |
 | Theorem 1: at most two rays in a piece, relay included | proved | C2: 200,597 open assignments; C5: the census's 963 all-live in-class arrangements |
 | Corollary 2: tree starts close or grow in one or two dimensions; cycle cores carry no rays | proved (the cycle cores' growth class is the computed rule) | C3: 162,576 simple starts read by the program's code, none in the class three or more |
 | Theorem 3: at cap 6 all live, and at cap 5 with dead knots, any number of rays in one piece | proved | C6, C7: S_3–S_6 and T_1, T_2 in the class, read and grown as R dimensions |
-| The ring of seven with one leaf is exponential at cap 5 (the advisor's risky case) | computed | C8: in the class, read exponential, cover equal to round 8, engine ratio about 1.09 a round to round 60 |
+| The ring of seven with one leaf is exponential at cap 5 (the advisor's risky case) | computed | C8: in the class, read exponential, cover equal to round 8; counts obey a_t = a_(t−7) + a_(t−8) to round 60, rate the root of x⁸ = x + 1, 1.0970 (referee R1) |
 
 8 of 8 checks passed.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread. No study code was run.
+- **Confirmed line by line:**
+  - Lemma 1, including the six-cycle step;
+  - Lemma 2;
+  - Theorem 1, including step 5;
+  - Theorem 3, with S_R and T_h rebuilt from the text and every value recomputed.
+- **C1 is complete.** The referee's own enumeration gives 86 graphs to 12 knots and 149 to 14, every core a path, a cycle or a
+  star.
+- **The checks, re-run with the referee's own reader.**
+  - Theorem 1 holds on 200,597 assignments to 12 knots and on 433,939 to 13.
+  - C3 reproduces exactly, and it extends to 472,392 starts at 10 knots with none three or more.
+  - C4 finds no start in the class without the cap filter either.
+  - C5 holds with dead knots too: no in-class census start carries three chains.
+- **Regrown.** S_3 to S_5, T_1 and T_2 follow exactly (x − 1)^R. S_6 has degree 5 by differences. The bare rings of 5, 7 and 8
+  are constant.
+- **Folded in (wording, not blocks).**
+  - The ring of seven with a leaf grows at the root of x⁸ = x + 1, 1.0970, so about 10% a round, not "about 9%". Its 1,096 is
+    at round 53.
+  - C4's 2,187 is after a harmless cap filter; there are 3,159 without it. Logged in docs/CORRECTIONS.md.
 
 ## Assumptions
 

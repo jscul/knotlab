@@ -859,8 +859,8 @@ pairing of places and under growth by attachment. A tree of knots of at most fiv
 places is a caterpillar (the non-leaves form one line), so it carries at most two
 chains; a dead knot can still join three
 ([decision note](../research/WEIGHTINGS-20261119-001/weightings.md)).
-Is that a law of the knots, then (`CAP-CHAINS-20261119-001`, proof, referee
-pending)? Yes, once no knot is dead. A knot's places must cover its touches and
+Is that a law of the knots, then (`CAP-CHAINS-20261119-001`, proof,
+refereed)? Yes, once no knot is dead. A knot's places must cover its touches and
 the pairs it joins, so with five places no knot touches three knots that touch
 others. The knots then form one line or one ring, with single knots hung on it,
 and every piece of the map carries at most two chains. A tree-shaped start of

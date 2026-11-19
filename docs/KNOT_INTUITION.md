@@ -917,6 +917,15 @@ has six knots. One group of 309 parents swallows its growth, and the 9 junctions
 left then join in every way exactly once, 36, 84, 126, 126, 84, 36, 9 and 1 of
 them, before it ends. So it does not grow without bound
 ([decision note](../research/EXPLOSIVE-20261119-001/explosive.md)).
+And the other explosive starts (`MERGE-BURST-20261119-001`, frozen run, referee
+pending)? Read from the first stage whose map, reduced to its largest blocks,
+lies back in the proved class, one more ends the same way. A group of 974
+parents merges it into one block of 781 junctions, and every subset of those
+then joins once before the growth closes, about 2⁷⁸¹ junctions in all. The
+other 14 could not be followed far enough within 6 GB and 15 minutes. Their
+overlapping groups keep two large blocks sharing two knots, which no current
+reading covers. None was shown to keep growing
+([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

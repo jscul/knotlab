@@ -3289,6 +3289,9 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `MERGE-BURST-20261119-001` ([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)): of 16
+    explosive starts, 2 are read, and both end after one merge and the binomial burst of one block (9 and 781 junctions). 14 are
+    unread within 6 GB and 15 minutes. None is shown to keep growing. Status unchanged.
   - 2026-11-19 · `EXPLOSIVE-20261119-001` ([decision note](../research/EXPLOSIVE-20261119-001/explosive.md)): outside the class,
     groups of three act as filled cells where they do not overlap. The explosive kind needs overlapping groups of three and more
     than five places. Its smallest case closes after one group of 309 parents and a binomial burst. The other explosive starts

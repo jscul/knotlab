@@ -13,7 +13,7 @@ in THEORY.md and as A109.
 - The run went from 05:18 to 06:52 UTC through the shared runner (`LOOP-CATALOGUE-B1`, `runs/loop-catalogue`, 206 cases on 6
   workers). 179 finished; 27 shards of part U went over the memory cap.
 - Those 27 are being rerun with every start isolated in a 3 GB, 90 s child process (`LOOP-CATALOGUE-B3`,
-  `runs/loop-catalogue-iso`, contract amendments of 06:55 and 07:02 UTC). Part U below reads 440 of its 1,520 starts. **Stress
+  `runs/loop-catalogue-iso`, contract amendments of 06:53 and 06:57 UTC). Part U below reads 440 of its 1,520 starts. **Stress
   test pending** for the rest. The first memory rerun (B2, 5 GB per case) also went over and was stopped.
 - Gates: G1–G6 pass ([checks_output.json](../../experiments/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/checks_output.json)).
 - Code: [eddy.py, loopweight.py, catalogue.py, equation.py, sampler.py, job.py, merge.py, posthoc.py](../../experiments/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/),
@@ -117,7 +117,7 @@ in THEORY.md and as A109.
 
 8 of 14 held as scored. Of the six failures, three are the instrument's: W's truncation, the scorer's factor table and its
 loop-knot test, and W left uncomputed for two loops. Each holds once corrected post hoc: the fixed scorer is `merge_fixed.py`
-(a logged amendment of 07:10 UTC), and its output, beside the frozen verdicts, is
+(a logged amendment of 07:04 UTC), and its output, beside the frozen verdicts, is
 [results_fixed.json](../../artifacts/LOOP-CATALOGUE-20261119-001B/LOOP-CATALOGUE-20261119-001B-E001_catalogue/results_fixed.json). Three are real: E4's thresholds do not
 carry to SCALE-SHARE's measure; a part joined to one loop of an even ring does not raise the start's rate; and meeting hyperedges
 can feed.

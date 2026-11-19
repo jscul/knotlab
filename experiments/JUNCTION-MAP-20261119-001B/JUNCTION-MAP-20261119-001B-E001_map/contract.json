@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "JUNCTION-MAP-20261119-001B-E001",
+ "ticket": "JUNCTION-MAP-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Does the junction map (a later stage read by the cluster rule with its overlap cut lifted) predict the break-shape eddies' growth, and does it fail exactly where the stage holds the overlap?",
+ "public_inputs": {"code": "maplib.py (11258c8de2fb355c07d9f9c7dfc60638074bb482f5bdfaacc3057e977e58bc4c), mergelib.py (1861a34cc814eb3a9decdff6670da449bd7a0b9cc1628a5af76511d2f54cfa0a), job.py (cc6eac29728eef2fe00ec52e196ad18f3825c02e547a7a95a0433a06dfc99d08), merge.py (7acbfa9a5e68f293fc64d29c938cd1a7db679f656eb194924fc90f227f4a2208) (sha256)", "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>", "reused": "BREAK-EDDIES-20261119-001B stagelib.py and its runs; CLUSTER-ALL clusters.py; LOOP-CATALOGUE eddy.py and catalogue.json"},
+ "forbidden_inputs": ["Changing a start or a prediction after reading any comparison of the frozen run"],
+ "primary_observable": "G, J1-J3 of research/JUNCTION-MAP-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "two touching knots, a chain of three, the catalogue's rings (J2)",
+ "predictions": {"G": "stage presentation = continued growth", "J1": "overlap: equal at s+1, differs at s+2", "J2": "clean: equal", "J3": "knot-level lifted map differs by round 2"},
+ "decision_rules": {"each": "held iff no exception"},
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under an hour",
+ "disclosed_exploration": "pilot/ (the 36 W = y^2(1 + y) starts, the merged reading, the controls, the 39-check gate)",
+ "amendments": []
+}

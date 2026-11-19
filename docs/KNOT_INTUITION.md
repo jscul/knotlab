@@ -608,7 +608,7 @@ junction (1,480 stages, none read). Wherever it does read, it needs distances
 exactly as far as the largest junction less one
 ([decision note](../research/CENSUS-READ-20261118-001/census_read.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
-census of 137 starts, referee pending)? Not as separate parts: the ring takes
+census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even
 a ring that alone adds five junctions a round, and each joined knot enters one
 equation for the rate as its own small menu: skip the knot, or take it and then

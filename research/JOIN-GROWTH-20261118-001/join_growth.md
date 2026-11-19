@@ -1,7 +1,8 @@
 # Do growth behaviours compose when growing parts are joined?
 
 Epic `JOIN-GROWTH-20261118-001`, 18–19 November 2026, by Claude, on the coordinator's go-ahead (idea 1 of its reply to the owner's
-"What do you think we could build out of something like this?"). Goal G17. **Referee pending.**
+"What do you think we could build out of something like this?"). Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block, with two
+Narrowings and one Not a block point, folded in on 19 November (see Referee; one deferred run on its side).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `ca358844a` at 23:45 UTC after a disclosed pilot. The
@@ -48,7 +49,8 @@ measured. Words new to the record, chosen with the advisor:
   - Where the knot is joined on the ring does not matter.
   - Along a chain of joined knots, each knot's menu sits inside the menu of the knot two before it (found after the read-out, below).
 - **The frozen tests.**
-  - The law predicted the exact recurrence of the junction counts, not just the rate, in all 27 sharp, medium and risky tests.
+  - The law predicted the exact recurrence of the junction counts, not just the rate, in all 26 sharp, medium and risky tests run
+    (corrected from 27; P1's seventh listed start was not run, and the referee's growth of it holds, see Referee).
   - It did so in every one of the 48 joins by a shared distinction or a shared knot of the census (35 of them not seen before).
 - **The coordinator's guess, that a join acts as added spare distinctions,** is exact only for a lone knot with nothing of its own:
   F = 1 + y, one surplus distinction one round early. A knot with surplus distinctions of its own counts for less than that many
@@ -61,7 +63,8 @@ measured. Words new to the record, chosen with the advisor:
     the mark of counting tree-like clusters. Each ring's menu holds the other ring.
   - Longer rings lock lower: 2.61 for five and five, 2.38 for five and seven, 2.24 for five and nine, 2.19 for seven and seven.
     Joining through a shared knot locks higher (2.87), and joining through a path of one knot lower (2.43).
-  - With the exponent fixed at −3/2, the advisor forecast round 16 of two joins from their first 15 rounds: 303,800 and 319,300.
+  - With the exponent fixed at −3/2, a pre-asymptotic fit (the exponent is −5/2, see Correction), the advisor forecast round 16 of
+    two joins from their first 15 rounds: 303,800 and 319,300.
     The counts grown afterwards are 303,791 and 319,488. It also placed the seven-and-seven join between 2.10 and 2.16 without seeing
     it; it grows at 2.14.
   - This is the nearest thing here to the owner's "logic based fractal": growth whose rule refers to itself. It is computed to 13
@@ -146,7 +149,7 @@ Nine of ten held. P8 failed on one exploratory start, and its failure is the stu
 ## Known results, and what this adds
 
 Known, cited once: renewal equations and transfer matrices; rational and algebraic generating functions, and the t^(−3/2) law at a
-square-root singularity (Flajolet and Sedgewick, *Analytic Combinatorics*, 2009, ch. VII); growth series of free products of groups
+square-root singularity (the two-ring series has instead the t^(−5/2) of tree-like animals, see Correction) (Flajolet and Sedgewick, *Analytic Combinatorics*, 2009, ch. VII); growth series of free products of groups
 (1/f = 1/f₁ + 1/f₂ − 1); the ring formula (`RING-FORMULA-20261118-001`) and the (v, S) model (`RING-GROWTH-20261118-001`). What this
 adds: under the cheapest parity growth, parts joined to a ring compose as independent factors of one return equation, each knot's
 factor read from its own surplus distinctions (F_s = 1 + y(1 + y)^s, or a renewing chain); the joined part's own growth does not
@@ -166,6 +169,9 @@ survive; and two joined rings leave this rational family.
   other conventions.
 - **"Growth" counts junctions by round.** Bond balls are not measured on any joined start.
 - **Typical** is over one population of 93 small joins (A107).
+- **`merge.py`'s short-horizon branch inverts the frozen rule** (referee R1): a late violation is scored "unsettled", and an early
+  hold with fewer than three rounds "fails". The branch was never reached, and all 74 annihilators hold under the frozen rule.
+  Fix it before reuse.
 
 ## Advisor
 
@@ -178,7 +184,7 @@ survive; and two joined rings leave this rational family.
   - it proposed the sharp, medium and risky predictions, and the words "adjunct", "delay series" and "return equation".
 - **After the read of the single rings, on two rings** ([question 2](advisor/question_2.md), [answer 2](advisor/answer_2_fable.md)):
   - it had no exact model;
-  - it showed that the exponent is −3/2 in every join once the transient is allowed for;
+  - it read the exponent as −3/2 in every join once the transient is allowed for (wrong: the exponent is −5/2, see Correction);
   - it argued that this rules out every finite linear model, a product of positions included;
   - it forecast two next counts (both held, to 0.003% and 0.06%) and the seven-and-seven rate (held);
   - it proposed a quadratic template A = 1 + y^a P₁ A B, B = 1 + y^b P₂ A B, and a closing rule (three pairwise candidates with no
@@ -201,6 +207,22 @@ join which. It reproduces every grown round of all seven two-ring joins, and its
   true λ. The advisor's two round-16 forecasts held because they reach one round past the data.
 - **Stands.** Non-rational growth (now exact), the rates' order, P9 as frozen (it scored the fit, and the fit is as reported), and
   everything about single rings. **Not a block.**
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread: confirmed, no Block.
+- **Regrowth reproduces.** The referee's own regrowth of all 85 starts equals these counts on every common round. The memory
+  amendments are clean. The post hoc readings are labelled and scored correctly, and the eight chain, tree and fork starts regrow
+  exactly.
+- **P1's missing start.** The never-run P1 start (a ring of nine with s = 3), grown by the referee to round 41, obeys
+  x^13 − x^4 − (1 + x)^3 from t₀ = 0, as the law predicts.
+- **Folded in the same day**, logged in `docs/CORRECTIONS.md`:
+  1. **Narrowing (exponent).** t^(−3/2) was pre-asymptotic: the exponent is −5/2, with rates 2.868, 2.427, 2.382, 2.241 and 2.186.
+     This was already folded through `RING-PAIR-20261119-001` (Correction, above). This note now says so wherever −3/2 appears.
+  2. **Not a block.** `merge.py`'s short-horizon branch inverts the frozen rule. It was never reached (Limitations).
+  3. **Narrowing (a count).** "All 27 single-ring tests" is 26: P1 omitted a listed start, which the referee has now run.
+- **Deferred on the referee's side:** one round past for D-P1-at-r-a2-b2, running under a memory cap. The three law-2 cases stay
+  "unsettled" until then.
 
 ## Position
 

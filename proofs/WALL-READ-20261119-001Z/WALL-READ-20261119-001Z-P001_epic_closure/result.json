@@ -1,0 +1,31 @@
+{
+ "schema_version": 3,
+ "artifact_id": "WALL-READ-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "WALL-READ-20261119-001Z",
+ "proof": "WALL-READ-20261119-001Z-P001",
+ "status": "Proved",
+ "claim": "Ledger closing WALL-READ-20261119-001: ticket A (proved; machine check M1-M4 passed) and ticket B (frozen run; 4 of 6 held, B4 and B5 failed). Referee pending. No new claim.",
+ "checks": {
+  "parents_bound": true,
+  "parent_statuses": {
+   "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/manifest.json": "Proved",
+   "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/result.json": "passed",
+   "experiments/WALL-READ-20261119-001B/WALL-READ-20261119-001B-E001_past/contract.json": "Frozen",
+   "artifacts/WALL-READ-20261119-001B/WALL-READ-20261119-001B-E001_past/results.json": "run output"
+  },
+  "proofs_proved": true,
+  "results_passed": true,
+  "notes_present": true,
+  "ticket_classes": {
+   "A": "proved",
+   "B": "supported"
+  },
+  "tickets_terminal": true
+ },
+ "controls": {
+  "wrong_digest_rejected": true,
+  "missing_note_rejected": true
+ },
+ "failures": []
+}

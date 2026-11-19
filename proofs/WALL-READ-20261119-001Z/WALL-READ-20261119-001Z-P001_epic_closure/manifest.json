@@ -1,0 +1,94 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "WALL-READ-20261119-001Z-P001",
+ "canonical_id": "WALL-READ-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "WALL-READ-20261119-001Z",
+ "proof": "WALL-READ-20261119-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: a reading past the wall",
+ "status": "Proved",
+ "claim": "Ledger closing WALL-READ-20261119-001: ticket A (proved; machine check M1-M4 passed) and ticket B (frozen run; 4 of 6 held, B4 and B5 failed). Referee pending. No new claim.",
+ "dependencies": [
+  "WALL-READ-20261119-001A",
+  "WALL-READ-20261119-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "WALL-READ-20261119-001",
+  "epic_path": [
+   "WALL-READ-20261119-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/manifest.json": "47844437dd4fb26b07e8bc5f203e73de95cb5afedd9effe4b066304168fe0aa5",
+  "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/result.json": "5468cc2ef319492210a32e146ae074b2d8dbfce5a8dd88f2e2d9e3e8afe96b14",
+  "experiments/WALL-READ-20261119-001B/WALL-READ-20261119-001B-E001_past/contract.json": "85bcd5371d833f5a98996b1487bad7cab210033aa96f997300de054f68138747",
+  "artifacts/WALL-READ-20261119-001B/WALL-READ-20261119-001B-E001_past/results.json": "25f3e6d63e49f80503c19e69b53949de9bdc1c455363ec460a56b8779ce8ba3d"
+ },
+ "paths": {
+  "manifest": "proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/result.json",
+  "check": "proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

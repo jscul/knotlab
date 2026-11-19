@@ -5,7 +5,7 @@
  "proof": "WALL-READ-20261119-001A-P001",
  "ticket": "WALL-READ-20261119-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "Partnered starts grow without end, faster than any cluster reading",
  "claim": "Theorem 1: the partnered start of order n >= 3 (2n live points in partner pairs, blocks the non-partner pairs, open counts 2^(n-1)) keeps the partnered form at every stage, with N_0 = 2n, N_1 = 2^n, N_(t+1) = 2^(N_t/2) - N_(t-1); no offshoot, stall or close; runaway growth. Lemma 2: the next round has at least mc(G[W]) - |blocks| - lone groups for any set W of live points; a partnered set of order k >= 2 gives 2^k - |blocks|. Lemma 3: a partnered set of order k >= 2 with no outside common candidate gives a partnered set of order 2^(k-1) - |blocks| at the next stage. Corollary 4: no cluster reading with clusters of polynomially many members follows a partnered start.",
  "standard_statement": "Neumann-Lara's K(O_n) = O_(2^(n-1)) for the clique-graph operator, with the cliques held by blocks removed; injection of an induced subgraph's maximal cliques.",
@@ -20,7 +20,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "Partial: sketch checked by the advisor before the freeze (four gaps closed); smoke test found the lone-point term (fixed before the freeze); machine check frozen, not yet run",
+  "status": "written in full; sketch checked by the advisor before the freeze (four gaps closed); smoke test found the lone-point term before the freeze; machine check M1-M4 passed; referee pending",
   "independence": "rosterlib.py is a separate engine on the live roster (networkx clique listing); job.py grows the program's engine on hub realizations alongside",
   "novelty": "adaptation of Neumann-Lara's octahedra to the cheapest growth; cluster-reading obstruction; witness bounds"
  },
@@ -58,7 +58,6 @@
  },
  "source_contribution": 0,
  "remaining_obligations": [
-  "run the frozen machine check M1-M4",
   "referee review"
  ],
  "paths": {
@@ -69,9 +68,10 @@
   "machine_check": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/job.py",
   "machine_check_output": "proofs/WALL-READ-20261119-001A/WALL-READ-20261119-001A-P001_partnered/machine_check.json"
  },
- "attained_result": "",
+ "attained_result": "Theorem 1, Lemmas 2 and 3 and Corollary 4 proved; machine check M1-M4 held (n = 3, 4, 5 by both engines; controls; 6,033 stages for Lemma 2, 1,963 for Lemma 3, no exception).",
  "code_sha256": {
   "rosterlib.py": "61c419e6f76c910983ec8a73491f5418b094a5eb6456177ecc2e45358db48021",
-  "job.py": "51d39e7c824af6efbc6b07b2eab7c7dc5ddc296307217b43a49443a105ec2c80"
+  "job.py": "51d39e7c824af6efbc6b07b2eab7c7dc5ddc296307217b43a49443a105ec2c80",
+  "merge.py": "4ee50cf70374ef8411af315a5cea6d4a2d599473270c4537c31b2897ca985723"
  }
 }

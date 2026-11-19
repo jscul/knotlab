@@ -1787,6 +1787,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Do three-way readings complete the bond-distance table? (`THREE-WAY-20261119-001`) | [closure](proofs/THREE-WAY-20261119-001Z/THREE-WAY-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/THREE-WAY-20261119-001/) |
 | 2026-11-19 | Do three-way readings separate the reached and static meet-once collisions? (`TRIPLE-GROWN-20261119-001`) | [closure](proofs/TRIPLE-GROWN-20261119-001Z/TRIPLE-GROWN-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/TRIPLE-GROWN-20261119-001/) |
 | 2026-11-19 | Does the bond-distance table fix every census arrangement it has no symmetry for? (`UNIQUE-TABLE-20261119-001`) | [closure](proofs/UNIQUE-TABLE-20261119-001Z/UNIQUE-TABLE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/UNIQUE-TABLE-20261119-001/) |
-| 2026-11-19 | A reading past the wall (`WALL-READ-20261119-001`) | — | [folder](research/WALL-READ-20261119-001/) |
+| 2026-11-19 | A reading past the wall (`WALL-READ-20261119-001`) | [closure](proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/WALL-READ-20261119-001/) |
 | 2026-11-19 | Is two dimensions typical of the growth or of the weighting? (`WEIGHTINGS-20261119-001`) | [closure](proofs/WEIGHTINGS-20261119-001Z/WEIGHTINGS-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/WEIGHTINGS-20261119-001/) |
 

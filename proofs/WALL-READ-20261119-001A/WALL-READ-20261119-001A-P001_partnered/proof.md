@@ -1,6 +1,6 @@
 # Partnered starts grow without end, faster than any cluster reading
 
-Status: Partial
+Status: Proved
 
 Ticket `WALL-READ-20261119-001A`, 19 November 2026, by Claude, on the coordinator's go-ahead for `MERGE-BURST-20261119-001#1`.
 - **What it builds on.** `REDUCE-BLOCKS-20261119-001A-P001` (Lemma R: the growth reads only the live roster, refereed in part) and
@@ -29,7 +29,8 @@ are its maximal cliques, and two transversals share a point unless they are comp
 The **partnered start of order n** (n ≥ 2) has 2n live points in n partner pairs, one block for each non-partner pair, and open
 count 2^(n−1) at every point. Its hub realization (REDUCE-BLOCKS, Corollary 1) is a start of the program: live knots of
 2(n − 1) + 2^(n−1) places, one dead hub for each non-partner pair, and dead connectors. For n = 3 that is 30 knots, the largest of
-8 places.
+8 places. No realization does with fewer places: a live knot lies in 2(n − 1) maximal blocks, each the live neighbours of a different knot
+it touches, so it shares at least 2(n − 1) distinctions besides its 2^(n−1) open ones.
 
 ## Theorem 1 (partnered starts)
 
@@ -144,4 +145,14 @@ nine knots and the first explosive start; with the ℓ fix all passed.
 
 ## Validation
 
-To be filled from the run.
+The machine check ran after the freeze through the shared runner (`WALL-READ-A1`, `runs/wall-read-a`, 32 cases, all ok), each
+comparison in a limited child. Merged by `merge.py` into [machine_check.json](machine_check.json).
+
+| # | What ran | Result |
+| --- | --- | --- |
+| M1 | partnered starts n = 3, 4, 5 by both engines | **held**: (3, 5) × 8, (4, 12) × 10, (5, 2043) × 24 for n = 3; (4, 124) × 16 for n = 4; (5, 32,763) × 32 for n = 5; open counts give the next rounds 4,086, 248 and 65,526 exactly. The hub realizations have 30, 56 and 90 knots, the largest of 8, 14 and 24 places |
+| M2 | controls | **held**: open 2^(n−1) − 1 stalls in round 1 and 2^(n−1) + 1 makes exactly 2n offshoots (n = 3, 4); the ring of four makes 4 junctions in each of 10 rounds |
+| M3 | Lemma 2 on 6,033 stages of 1,000 random and 16 explosive starts | **held**: no bound exceeds the groups listed (3 starts cut by the 120 s limit) |
+| M4 | Lemma 3 on the 1,963 of those stages with a partnered set of order 2 to 10 and no outside common candidate | **held**: every construction checks; 61 give a non-empty partnered set at the next stage |
+
+The partnered sets the greedy search found on those stages were small: order 1 on 3,901 stages, 3 on 1,958, and 6 at most.

@@ -90,3 +90,42 @@ freeze.
 | --- | --- | --- | --- | --- | --- |
 | 1 | A reading past the wall, where maximal blocks share two knots, on the smallest unread start | 3/3 | 2/3 — the hub form now gives the smallest presentation to study | take the hub form of the smallest unread start at its last stage and find a complex whose clusters give its next round → stop at one, or a proof that none can | Selected (coordinator) |
 | 2 | Prove the 2.3830 ceiling within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+## Final report as sent (2026-11-19 19:27 UTC)
+
+**Outcome:** I proved that blocks equal to or inside another block change nothing, so both merge-and-burst readings are now proofs rather than hypotheses: the block of 9 and the block of 781. The growth reads its start only through which sets of live knots share some common neighbour, plus their open counts. So any start can be rebuilt with one dead hub per largest block and grows identically from round 1. All 3 frozen checks passed and none of 27,501 comparisons differs. Closed, referee pending.
+
+- **The proof, in four steps.**
+  1. Round 1's joins and groups only ask which sets have a common neighbour.
+  2. No knot of the start stays live after round 1.
+  3. From then on, new junctions only see their parents.
+  4. A knot that would have to give more than it has is a stall, so there's no tie-break.
+- **The check: original and rebuilt start, grown side by side.**
+  - All 26,441 census arrangements agree round by round, stalls included.
+  - Of 1,000 random starts within seven places, 998 agree and 2 hit the limits.
+  - Of the explosive starts' stages, 62 agree and 34 hit the limits.
+- **One logged amendment.** The census batches first crashed on starts with no live knot, whose rebuilt version is empty. I fixed it to "makes nothing" and reran; no comparison changed.
+- **What it strengthens.** DOUBLE-IDENT's Lemma M: the growth's whole dependence on its start is a down-closed family of sets plus counts. The rebuilt "hub form" is a canonical shape for any start or stage.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the reduction | **Status:** Successful (proved; 3 of 3 checks) | The growth reads only the down-closure; 27,501 comparisons agree, none differ |
+| Local direction: the explosive kind (A109) | Research directions | Both merge-and-burst readings proved; the wall stays where largest blocks share two knots |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Any start can be rebuilt with one dead hub per largest block |
+| Long-term goal: G17 | Capability gained | A canonical form for every start, and the explosive readings made proofs |
+
+**Next step:** Continue — a reading past the wall on the smallest unread start (your go-ahead, now that this has landed).
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A reading past the wall, where largest blocks share two knots, on the smallest unread start | 3/3 | 2/3 — the hub form now gives its smallest presentation | take the hub form of the smallest unread start at its last stage and find a complex whose clusters give its next round → stop at one, or a proof none can | Selected (coordinator) |
+| 2 | Prove the 2.3830 ceiling within five places | 2/3 | 2/3 | bound every branch system by the theta's → stop at a proof, or a start that beats it | Alternative · in the basket |
+
+**Corrections:** one, from the EXPLOSIVE referee fold (bd7357fe8), reported earlier: a Narrowing. "Explosive" means a jump seen before a stop, "none within five places" means none among 2,191 sampled, and the regularity is the smallest case's. **Goals:** G17 checkpoint (capability gained). **Assumptions:** none changed. **Basket:** `MERGE-BURST-20261119-001#2` taken. **Advisor:** Fable 5.2, before the freeze, staying within its text.
+- It flagged shortage tie-breaking as a possible gap. In the engine, shortage is a stall, so there is none.
+- It asked for the induction's full invariant, the hub form's three constraints, connectedness as a hypothesis, and class membership as a per-stage premise. All are folded in.
+
+**Referee hand-off.** The proof is `proofs/REDUCE-BLOCKS-20261119-001A/REDUCE-BLOCKS-20261119-001A-P001_reduce/proof.md` with `hublib.py`, `job.py`, `job_census.py` and `merge.py`, and the decision note is `research/REDUCE-BLOCKS-20261119-001/reduce_blocks.md`. Please check:
+- Lemma R's step 3, that later rounds read only parents;
+- that the hub realization's blocks are exactly the maximal blocks;
+- the amendment for empty hub realizations.

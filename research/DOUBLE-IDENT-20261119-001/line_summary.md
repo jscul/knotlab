@@ -10,8 +10,9 @@ from the linked records.
 The census found that most growing starts are two-dimensional, and the proofs below explain how. That "two is typical" is a fact
 about the starts sampled, not a law of the growth (a Narrowing, logged in docs/CORRECTIONS.md).
 - **Crowded starts keep two.** The census, SCALE-SHARE's samples, random pairing of places and growth by attaching knots one at a
-  time all have knots of three to five places with few open places left. Under all of them, two dimensions are 80% to 100% of
-  the growing starts the theorem covers, and three never occurs.
+  time all have knots of three to five places with few open places left. Under the last three, two dimensions are 80% to 100% of
+  the growing starts in the proved class, and none of those has three. On the census, 82% of all growing starts are
+  two-dimensional.
 - **Uniform random trees do not.** Here every knot gets the places its joins need. Read by the same proved theorem, three or more
   dimensions is 12% of growing starts at twelve knots and 37% at twenty, up to six.
 - **Random extra lines make exponential growth common:** 11% at six knots, and 41% at twenty.

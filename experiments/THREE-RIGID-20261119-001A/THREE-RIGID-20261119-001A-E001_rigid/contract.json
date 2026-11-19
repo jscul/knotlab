@@ -1,0 +1,34 @@
+{
+ "schema_version": 1,
+ "experiment_id": "THREE-RIGID-20261119-001A-E001",
+ "ticket": "THREE-RIGID-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "On reached stages of at most 14 junctions (census starts, 3-4 knot starts, meet-once 7-junction starts), does every table symmetry keeping every three-way reading carry the equation space?",
+ "definitions": {
+  "R3": "three-way-keeping table symmetries carry the equations",
+  "Claim B3": "pair plus three-way plus the round's reading extends one round"
+ },
+ "public_inputs": {
+  "code": "rigid_job.py (sha256 46737a58fc9d9bf58ae0b6e6a6bf862654f9a9411f86b5be28c60526ca3f6452), control.py (sha256 d9064fea3d063b25424faca82d5676d0f23d35ec226afab2afadc9933eb1d588)",
+  "run": "scripts/longrun.py launch rigid_job.py --out runs/three-rigid (8 workers, 16G cap); .venv/bin/python -B control.py",
+  "reused": "PROVE-B-20261119-001B reached_job.py (CosetMatcher, starts); EXTEND-ROUND extend.py; PARENT-RULE plib.py, static_job.py"
+ },
+ "forbidden_inputs": [
+  "Changing Q0-Q2 after the run"
+ ],
+ "primary_observable": "Q0-Q2",
+ "cheapest_meaningful_control": "Q0: the three known failures break three-way readings",
+ "predictions": {
+  "Q0": "known failing swaps break three-way readings",
+  "Q1": "no R3 counterexample",
+  "Q2": "no Claim B3 failure"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run each.",
+ "runtime": "about an hour",
+ "amendments": []
+}

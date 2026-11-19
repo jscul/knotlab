@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 534 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 535 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 534 epics with their closures
+- [Epics](#epics): all 535 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1780,6 +1780,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Which growth is typical as starts of touching knots get larger? (`SCALE-SHARE-20261119-001`) | [closure](proofs/SCALE-SHARE-20261119-001Z/SCALE-SHARE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/SCALE-SHARE-20261119-001/) |
 | 2026-11-19 | The proved theorem past the census: shares by size (`SCALE-THEOREM-20261119-001`) | [closure](proofs/SCALE-THEOREM-20261119-001Z/SCALE-THEOREM-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/SCALE-THEOREM-20261119-001/) |
 | 2026-11-19 | A growth that reads only the allowed states (`STATES-GROWTH-20261119-001`) | [closure](proofs/STATES-GROWTH-20261119-001Z/STATES-GROWTH-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/STATES-GROWTH-20261119-001/) |
+| 2026-11-19 | Do pair and three-way distances force the allowed states of what the law grows? (`THREE-RIGID-20261119-001`) | — | [folder](research/THREE-RIGID-20261119-001/) |
 | 2026-11-19 | Do three-way readings complete the bond-distance table? (`THREE-WAY-20261119-001`) | [closure](proofs/THREE-WAY-20261119-001Z/THREE-WAY-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/THREE-WAY-20261119-001/) |
 | 2026-11-19 | Do three-way readings separate the reached and static meet-once collisions? (`TRIPLE-GROWN-20261119-001`) | [closure](proofs/TRIPLE-GROWN-20261119-001Z/TRIPLE-GROWN-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/TRIPLE-GROWN-20261119-001/) |
 | 2026-11-19 | Does the bond-distance table fix every census arrangement it has no symmetry for? (`UNIQUE-TABLE-20261119-001`) | [closure](proofs/UNIQUE-TABLE-20261119-001Z/UNIQUE-TABLE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/UNIQUE-TABLE-20261119-001/) |

@@ -827,6 +827,13 @@ holds, and on the touch census it matches every arrangement in its class round b
 round. The census's typical two dimensions are then explained on 85% of its
 two-dimensional growths: two chains in one piece, a relay, or both
 ([decision note](../research/DOUBLE-IDENT-20261119-001/double_ident.md)).
+And past the census, in starts of up to twenty knots
+(`SCALE-THEOREM-20261119-001`, frozen run, referee pending)? About three
+non-stalling starts in four fall in the proved class at every size. Within it
+two dimensions take over, from 85% of growers at five knots to 98% at twenty, and
+three dimensions never occur: every start that grows in three or four dimensions
+has knots that touch each other all round, which is the part not yet proved
+([decision note](../research/SCALE-THEOREM-20261119-001/scale_theorem.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

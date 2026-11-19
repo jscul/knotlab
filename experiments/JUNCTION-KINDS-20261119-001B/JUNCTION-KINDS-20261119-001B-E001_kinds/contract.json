@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "JUNCTION-KINDS-20261119-001B-E001",
+ "ticket": "JUNCTION-KINDS-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the junctions of the break-shape eddies with W = y^2(1 + y) fall into finitely many kinds with a fixed transfer matrix (each junction shared 1/p among its parents), and if not, can ancestry carry c(t) = c(t - 2) + c(t - 3) as a matching or as a native spine of interval types?",
+ "public_inputs": {
+  "code": "kindlib.py (16832e4596cfc9e5796d0cc54d2a194d4406e52b5d12266b22d1836f227c4657), spinelib.py (15ef10b007de9915df326cdba18479eb903869f85cb4b149c11e95a4da3ce81b), job.py (34125547d901a703c4962e25a055c2d13be05c4fa2061004c02e97230c900a63), merge.py (a976d21f26d7dd8988cf7a9f1c984b81a4e911f5b33d9c4b02b63d8ff4ad8d21) (sha256)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>",
+  "reused": "LOOP-CATALOGUE eddy.py (growth), catalogue.json; BREAK-EDDIES population.json and posthoc_full.json (the corrected W table)"
+ },
+ "forbidden_inputs": [
+  "Changing a start, a window, a type list or a prediction after reading any frozen growth"
+ ],
+ "primary_observable": "J1-J5 of research/JUNCTION-KINDS-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the Q starts (same rate, another W) and the catalogue's five eddies (the cover's exact transfer)",
+ "predictions": {
+  "J1": "distinct out-shares per round rise across the window's thirds in all 30",
+  "J2": "sum-equitable kinds per round rise across the thirds in all 30",
+  "J3": "T: perfect spine matching at lags (2, 3) at every round from 4 with the recurrence holding; C: a matching saturating the smaller side at every round past the lags",
+  "J4": "no set of up to 3 of the 10 most frequent interval types is biregular on both halves in any T start",
+  "J5": "T: d = 0 from round 4; Q: d not identically 0 and d(t) = -d(t-2) - d(t-3) from round 9"
+ },
+ "decision_rules": {
+  "each": "held iff no exception, scored by merge.py"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under an hour",
+ "disclosed_exploration": "pilot on population index 28 and the catalogue's five (pilot/)",
+ "amendments": []
+}

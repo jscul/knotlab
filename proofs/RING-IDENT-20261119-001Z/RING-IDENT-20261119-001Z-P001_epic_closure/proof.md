@@ -2,7 +2,7 @@
 
 Status: Proved
 
-Ticket `RING-IDENT-20261119-001Z`, 2026-11-19. A ledger; no new claim. Proof `proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md`. Referee pending.
+Ticket `RING-IDENT-20261119-001Z`, 2026-11-19. A ledger; no new claim. Proof `proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md`. Refereed (R1): confirmed; presentation points folded in.
 
 | # | Conclusion | Evidence |
 | --- | --- | --- |

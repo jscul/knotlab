@@ -3,9 +3,11 @@
 Status: Proved
 
 Ticket `RING-IDENT-20261119-001A`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-PAIR-20261119-001#2`.
+**Refereed:** report R1 (`research/RING-IDENT-20261119-001/referee-R1/report.md`), the theorem confirmed line by line, no Block;
+its three presentation points folded in on 19 November.
 The statement was checked by the advisor before it was frozen. The advisor and the machine check (`machine_check.py`) independently
 found that RING-PAIR's four scope conditions are not enough, and the fifth condition (S5) below is the fix. The proof is written out
-by the thread. Referee pending.
+by the thread.
 
 ## Setting
 
@@ -20,8 +22,10 @@ by the thread. Referee pending.
   Each loose distinction left over becomes a junction of its own, an offshoot with one parent. Each group becomes a new junction, on
   the distinctions it was given; its parents are the group's members.
 - **Fresh distinctions.** A new junction with p parents and demand d gets max(d, 3 − p, 1) fresh distinctions. If it takes every
-  loose distinction of the presentation (it is *implied*), it gets d instead. Its demand is the number of next-round groups containing
-  it, computed after the round with every new junction counted live.
+  loose distinction of the presentation (it is *implied*), the floor does not apply and it gets exactly d, which is 0 only when d = 0
+  (`freelib.floored` of `FRESH-COUNT-20261118-001`). Under (S5) every new junction has d ≥ 1, and p ≥ 2 or d ≥ 2, so both readings
+  give d (referee R1, point a). Its demand is the number of next-round groups containing it, computed after the round with every new
+  junction counted live.
 
 **The start.**
 - A connected simple graph K on the knots: each line of K is one distinction shared by its two knots.
@@ -183,8 +187,9 @@ in gB).
 **(iii) Every valid set S lies in one G(C′) with |R*(C′)| ≥ 3.**
 1. **Lifts.** Fix u_1 ∈ S with a lift A_1. By (F2) and (L2), each other member u_j has a unique lift A_j with |A_1 ∩ A_j| = t; write
    A_j = (A_1 − b_j) ∪ {c_j}.
-2. **Not every b_j is the same.** If all b_j equal one b, then A_1 − b = A_1 ∩ A_j is a cluster holding a knot (Lemma 0.5). Its
-   junction is then a parent of u_1 and of every u_j, by (a), so S is not valid.
+2. **Not every b_j is the same.** If all b_j equal one b, then A_1 − b = A_1 ∩ A_j is a cluster (Lemma 0.5). It holds a knot: for
+   t = 1 it is one point, and if that point were a surplus point, A_1 and A_j would both be it with its knot, so A_j = A_1, as in
+   (F2). Its junction is then a parent of u_1 and of every u_j, by (a), so S is not valid.
 3. **Different b's force equal c's.** Take b_i ≠ b_j and suppose c_i ≠ c_j.
    - Then A_i ∩ A_j = A_1 − {b_i, b_j} has t − 1 points.
    - Since u_i and u_j are candidates, (F2) gives g ≠ 1 with |A_i ∩ gA_j| = t.
@@ -221,6 +226,12 @@ By induction on t, carrying (a), (b) and "every junction of round t is live".
   (S4). φ_1 sends the offshoot of a surplus distinction of k to [{k̃, z̃}].
 - These are all the clusters of two points (Lemma 0.1), so φ_1 is a bijection onto O_2.
 - (a) holds: R*({ũ, ṽ}) = {ũ, ṽ}, and R*({k̃, z̃}) = {z̃}, whose removal leaves the parent k.
+- **(b) and liveness at round 1** (written out after referee R1, point b). The demand of a round-1 junction is the number of round-2
+  groups containing it, counted with every round-1 junction live. Lemma 4 at t = 1 needs only (a) through round 1, and step 3 below
+  then gives that demand as |∂C|.
+  - A pair has p = 2 and d = |∂C| ≥ 1 (Lemma 0.2), so it gets max(d, 1, 1) = d.
+  - An offshoot {k̃, z̃} has p = 1 and d = d_k + s_k − 1 ≥ 2 by (S2), so it gets max(d, 2, 1) = d.
+  - Neither is implied, or both readings give d anyway. So every round-1 junction holds |∂C| ≥ 1 loose distinctions and is live.
 
 **Step t → t + 1, for t ≥ 1.**
 1. **The groups.** By Lemma 4, the groups formed from round t are the G(C′), one for each [C′] ∈ O_{t+2}. Put

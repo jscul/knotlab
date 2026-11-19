@@ -772,7 +772,7 @@ chains or the one with the fewest, and nothing in the ancestry forces any pair:
 every junction could swap its partner within another pairing
 ([decision note](../research/NATIVE-SPINE-20261119-001/native_spine.md)).
 And is the rule two joined rings grow by a theorem (`RING-IDENT-20261119-001`,
-proof, referee pending)? Yes, with one condition it had left out: the knots'
+proof, refereed)? Yes, with one condition it had left out: the knots'
 graph must contain a cycle. Then every round's junctions are exactly the
 clusters of the unrolled map of joins, each junction's parents are the points
 its cluster can lose and still hang together, and its open distinctions are the

@@ -1,7 +1,8 @@
 # Prove that a round's junctions are the clusters of the unrolled candidate map
 
 Epic `RING-IDENT-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-PAIR-20261119-001#2`. Goal
-G17. **Referee pending.**
+G17. **Refereed:** report [R1](referee-R1/report.md), the theorem confirmed line by line, no Block; three presentation points
+folded into the proof on 19 November (see Referee).
 
 **Record.**
 - **The proof:** [proof.md](../../proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md), ticket A.
@@ -41,6 +42,16 @@ G17. **Referee pending.**
   - the floor's endless chains break the same step;
   - first-round groups of three break the girth step: a loop of three blocks gives only three new points. Both of CLUSTER-ALL's known
     breaks sit there.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread, read line by line, with its own
+growth, lazy cover and cluster enumeration. No study code was run.
+- **Confirmed.** The theorem, its lemmas and the induction. Its own check: all 45 in-scope starts with a cycle at 3 to 7 knots agree,
+  81 of 81 sampled at eight knots, girth at least 8 on all 332 starts with (S3) and (S4). Two stars joined at their centres regrown
+  (6, 6, 2, 2, 4, 6, 8, 10, …), so (S5) is needed and RING-PAIR's Narrowing is confirmed.
+- **Folded in (presentation, not gaps).** The implied rule stated as the code has it (exactly d, no floor), with both readings equal
+  under (S5); round 1's fresh counts and liveness written out in the base; the t = 1 surplus case in Lemma 4(iii) step 2 spelled out.
 
 ## Known results, and what this adds
 

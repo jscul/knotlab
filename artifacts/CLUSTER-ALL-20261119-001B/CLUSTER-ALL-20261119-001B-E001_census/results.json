@@ -1,0 +1,1148 @@
+{
+ "T1": {
+  "arrangements": 24502,
+  "shards_not_ok": [],
+  "verdicts": {
+   "match": 24383,
+   "out of scope": 119
+  },
+  "by_outcome": {
+   "match/stall": 10695,
+   "match/alive": 10492,
+   "match/closed": 3194,
+   "out of scope/closed": 77,
+   "out of scope/alive": 42,
+   "match/cap": 2
+  },
+  "out_of_scope_why": {
+   "a round-1 group of three sharing two knots with another block": 119
+  },
+  "misses": []
+ },
+ "T3": {
+  "arrangements": 2000,
+  "shards_not_ok": [],
+  "verdicts": {
+   "match": 1989,
+   "out of scope": 9,
+   "miss": 2
+  },
+  "by_outcome": {
+   "match/closed": 74,
+   "match/alive": 760,
+   "match/stall": 1154,
+   "out of scope/closed": 3,
+   "out of scope/alive": 6,
+   "miss/closed": 1,
+   "match/cap": 1,
+   "miss/alive": 1
+  },
+  "out_of_scope_why": {
+   "a round-1 group of three sharing two knots with another block": 9
+  },
+  "misses": [
+   {
+    "verdict": "miss",
+    "outcome": "closed",
+    "rounds": 5,
+    "counts": [
+     6,
+     6,
+     6,
+     5,
+     3,
+     1
+    ],
+    "first_difference": 3,
+    "why": null,
+    "key": [
+     [
+      4,
+      4,
+      4,
+      5,
+      5,
+      5
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "seed": 71513
+   },
+   {
+    "verdict": "miss",
+    "outcome": "alive",
+    "rounds": 20,
+    "counts": [
+     6,
+     9,
+     12,
+     14,
+     13,
+     10,
+     8,
+     9,
+     11,
+     13,
+     15,
+     17,
+     19,
+     21,
+     23,
+     25,
+     27,
+     29,
+     31,
+     33,
+     35
+    ],
+    "first_difference": 3,
+    "why": null,
+    "key": [
+     [
+      3,
+      3,
+      5,
+      5,
+      5,
+      5
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+     ]
+    ],
+    "seed": 71946
+   }
+  ]
+ },
+ "T4": {
+  "arrangements": 12,
+  "shards_not_ok": [],
+  "verdicts": {
+   "miss": 2,
+   "match": 9,
+   "out of scope": 1
+  },
+  "by_outcome": {
+   "miss/alive": 2,
+   "match/cap": 2,
+   "match/alive": 6,
+   "match/closed": 1,
+   "out of scope/alive": 1
+  },
+  "out_of_scope_why": {
+   "a round-1 group of three sharing two knots with another block": 1
+  },
+  "misses": [
+   {
+    "verdict": "miss",
+    "outcome": "alive",
+    "rounds": 20,
+    "counts": [
+     6,
+     6,
+     5,
+     4,
+     4,
+     5,
+     7,
+     9,
+     11,
+     13,
+     15,
+     17,
+     19,
+     21,
+     23,
+     25,
+     27,
+     29,
+     31,
+     33,
+     35
+    ],
+    "first_difference": 3,
+    "why": null,
+    "key": "T4-overlap-simplices-b0"
+   },
+   {
+    "verdict": "miss",
+    "outcome": "alive",
+    "rounds": 20,
+    "counts": [
+     6,
+     7,
+     8,
+     7,
+     5,
+     5,
+     6,
+     8,
+     10,
+     12,
+     14,
+     16,
+     18,
+     20,
+     22,
+     24,
+     26,
+     28,
+     30,
+     32,
+     34
+    ],
+    "first_difference": 3,
+    "why": null,
+    "key": "T4-overlap-simplices-b1"
+   }
+  ],
+  "each": {
+   "T4-overlap-simplices-b0": [
+    "miss",
+    "alive",
+    [
+     6,
+     6,
+     5,
+     4,
+     4,
+     5,
+     7,
+     9,
+     11,
+     13
+    ],
+    null
+   ],
+   "T4-overlap-simplices-b1": [
+    "miss",
+    "alive",
+    [
+     6,
+     7,
+     8,
+     7,
+     5,
+     5,
+     6,
+     8,
+     10,
+     12
+    ],
+    null
+   ],
+   "T4-ring5-unequal-pendant": [
+    "match",
+    "cap",
+    [
+     6,
+     11,
+     18,
+     26,
+     40,
+     65,
+     100,
+     153,
+     240,
+     376
+    ],
+    null
+   ],
+   "T4-ring6": [
+    "match",
+    "alive",
+    [
+     6,
+     8,
+     12,
+     18,
+     26,
+     36,
+     48,
+     62,
+     78,
+     96
+    ],
+    null
+   ],
+   "T4-ring7-two-lone": [
+    "match",
+    "alive",
+    [
+     9,
+     11,
+     13,
+     16,
+     19,
+     22,
+     26,
+     30,
+     36,
+     44
+    ],
+    null
+   ],
+   "T4-three-touching-five": [
+    "match",
+    "closed",
+    [
+     3,
+     7,
+     9,
+     15,
+     20,
+     15,
+     6,
+     1
+    ],
+    null
+   ],
+   "T4-triangle-double": [
+    "match",
+    "alive",
+    [
+     3,
+     4,
+     6,
+     9,
+     13,
+     18,
+     24,
+     31,
+     39,
+     48
+    ],
+    null
+   ],
+   "T4-triangle-pendant-knot": [
+    "out of scope",
+    "alive",
+    [
+     4,
+     5,
+     5,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "a round-1 group of three sharing two knots with another block"
+   ],
+   "T4-triangle-single": [
+    "match",
+    "alive",
+    [
+     3,
+     4,
+     6,
+     9,
+     13,
+     18,
+     24,
+     31,
+     39,
+     48
+    ],
+    null
+   ],
+   "T4-two-pieces-relays": [
+    "match",
+    "alive",
+    [
+     2,
+     8,
+     13,
+     11,
+     6,
+     3,
+     4,
+     6,
+     8,
+     10
+    ],
+    null
+   ],
+   "T4-two-triangles-one-knot": [
+    "match",
+    "cap",
+    [
+     5,
+     6,
+     10,
+     20,
+     40,
+     75,
+     131,
+     215,
+     335,
+     500
+    ],
+    null
+   ],
+   "T4-two-triangles-two-knots": [
+    "match",
+    "alive",
+    [
+     4,
+     5,
+     8,
+     14,
+     24,
+     39,
+     60,
+     88,
+     124,
+     169
+    ],
+    null
+   ]
+  }
+ },
+ "T5": {
+  "arrangements": 137,
+  "shards_not_ok": [],
+  "verdicts": {
+   "match": 137
+  },
+  "by_outcome": {
+   "match/alive": 107,
+   "match/closed": 30
+  },
+  "out_of_scope_why": {},
+  "misses": []
+ },
+ "T2": {
+  "starts": 137,
+  "verdicts": {
+   "match": 134,
+   "not grown": 1,
+   "out of scope": 2
+  },
+  "misses": [],
+  "cases": {
+   "A1-n7-s1": {
+    "verdict": "match",
+    "rounds": 60,
+    "why": null
+   },
+   "A1-n7-s2": {
+    "verdict": "match",
+    "rounds": 45,
+    "why": null
+   },
+   "A1-n7-s3": {
+    "verdict": "match",
+    "rounds": 35,
+    "why": null
+   },
+   "A1-n9-s1": {
+    "verdict": "match",
+    "rounds": 71,
+    "why": null
+   },
+   "A1-n9-s2": {
+    "verdict": "match",
+    "rounds": 53,
+    "why": null
+   },
+   "A1-n5-s4": {
+    "verdict": "match",
+    "rounds": 24,
+    "why": null
+   },
+   "A2-n5-s11-at01": {
+    "verdict": "match",
+    "rounds": 29,
+    "why": null
+   },
+   "A2-n5-s11-at02": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "A2-n7-s12-at03": {
+    "verdict": "match",
+    "rounds": 30,
+    "why": null
+   },
+   "A2-n7-s12-at01": {
+    "verdict": "match",
+    "rounds": 31,
+    "why": null
+   },
+   "A2-n5-s2-spare3": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "A2-n7-s111-at024": {
+    "verdict": "match",
+    "rounds": 26,
+    "why": null
+   },
+   "A2-n5-s02-at02-spare4": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "A2-n9-s3-spare4": {
+    "verdict": "match",
+    "rounds": 34,
+    "why": null
+   },
+   "A3-n5-s00": {
+    "verdict": "match",
+    "rounds": 38,
+    "why": null
+   },
+   "A3-n5-s01": {
+    "verdict": "match",
+    "rounds": 32,
+    "why": null
+   },
+   "A3-n7-s00": {
+    "verdict": "match",
+    "rounds": 48,
+    "why": null
+   },
+   "A4-n7": {
+    "verdict": "match",
+    "rounds": 33,
+    "why": null
+   },
+   "A4-n9": {
+    "verdict": "match",
+    "rounds": 37,
+    "why": null
+   },
+   "A5-n5-a1-b2": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "A5-n5-a2-b2": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "A5-n5-a3-b1": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "A5-n7-a1-b1": {
+    "verdict": "match",
+    "rounds": 31,
+    "why": null
+   },
+   "A5-n7-a2-b1": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "A6-n5-a1-b1-spare0": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "A6-n5-a1-b1-spare2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "B-chain3-bare": {
+    "verdict": "match",
+    "rounds": 27,
+    "why": null
+   },
+   "B-chain3-s111": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "B-double-share": {
+    "verdict": "match",
+    "rounds": 68,
+    "why": null
+   },
+   "B-chord-02": {
+    "verdict": "not grown"
+   },
+   "B-chord-01": {
+    "verdict": "out of scope",
+    "rounds": 5,
+    "why": "a round-1 group of three sharing two knots with another block"
+   },
+   "B-chord-n7-03": {
+    "verdict": "out of scope",
+    "rounds": 67,
+    "why": "a round-1 group of three sharing two knots with another block"
+   },
+   "C-5-5-K": {
+    "verdict": "match",
+    "rounds": 13,
+    "why": null
+   },
+   "C-5-5-P1": {
+    "verdict": "match",
+    "rounds": 15,
+    "why": null
+   },
+   "C-5-7-D": {
+    "verdict": "match",
+    "rounds": 15,
+    "why": null
+   },
+   "C-7-7-D": {
+    "verdict": "match",
+    "rounds": 17,
+    "why": null
+   },
+   "C-5-5-D-spare": {
+    "verdict": "match",
+    "rounds": 14,
+    "why": null
+   },
+   "C-5-9-D": {
+    "verdict": "match",
+    "rounds": 16,
+    "why": null
+   },
+   "D-D-none-a0-b0": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "D-D-none-a0-b1": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "D-D-none-a0-b2": {
+    "verdict": "match",
+    "rounds": 25,
+    "why": null
+   },
+   "D-D-none-a1-b0": {
+    "verdict": "match",
+    "rounds": 25,
+    "why": null
+   },
+   "D-D-none-a1-b1": {
+    "verdict": "match",
+    "rounds": 26,
+    "why": null
+   },
+   "D-D-none-a1-b2": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-D-none-a2-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-D-none-a2-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-D-none-a2-b2": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "D-K-none-b0": {
+    "verdict": "match",
+    "rounds": 68,
+    "why": null
+   },
+   "D-K-none-b1": {
+    "verdict": "match",
+    "rounds": 48,
+    "why": null
+   },
+   "D-K-none-b2": {
+    "verdict": "match",
+    "rounds": 36,
+    "why": null
+   },
+   "D-P1-none-a0-b0": {
+    "verdict": "match",
+    "rounds": 27,
+    "why": null
+   },
+   "D-P1-none-a0-b1": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "D-P1-none-a0-b2": {
+    "verdict": "match",
+    "rounds": 25,
+    "why": null
+   },
+   "D-P1-none-a1-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-none-a1-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-none-a1-b2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-P1-none-a2-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-none-a2-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-none-a2-b2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-D-at-r-a0-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-D-at-r-a0-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-D-at-r-a0-b2": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "D-D-at-r-a1-b0": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-D-at-r-a1-b1": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-D-at-r-a1-b2": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r-a2-b0": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r-a2-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r-a2-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-K-at-r-b0": {
+    "verdict": "match",
+    "rounds": 39,
+    "why": null
+   },
+   "D-K-at-r-b1": {
+    "verdict": "match",
+    "rounds": 33,
+    "why": null
+   },
+   "D-K-at-r-b2": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "D-P1-at-r-a0-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-at-r-a0-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-at-r-a0-b2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-P1-at-r-a1-b0": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r-a1-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r-a1-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-P1-at-r-a2-b0": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r-a2-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r-a2-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-D-at-r1-a0-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-D-at-r1-a0-b1": {
+    "verdict": "match",
+    "rounds": 24,
+    "why": null
+   },
+   "D-D-at-r1-a0-b2": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "D-D-at-r1-a1-b0": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-D-at-r1-a1-b1": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-D-at-r1-a1-b2": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r1-a2-b0": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r1-a2-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r1-a2-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-K-at-r1-b0": {
+    "verdict": "match",
+    "rounds": 39,
+    "why": null
+   },
+   "D-K-at-r1-b1": {
+    "verdict": "match",
+    "rounds": 33,
+    "why": null
+   },
+   "D-K-at-r1-b2": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "D-P1-at-r1-a0-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-at-r1-a0-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-at-r1-a0-b2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-P1-at-r1-a1-b0": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "D-P1-at-r1-a1-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r1-a1-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-P1-at-r1-a2-b0": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r1-a2-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r1-a2-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-D-at-r2-a0-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-D-at-r2-a0-b1": {
+    "verdict": "match",
+    "rounds": 24,
+    "why": null
+   },
+   "D-D-at-r2-a0-b2": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "D-D-at-r2-a1-b0": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-D-at-r2-a1-b1": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-D-at-r2-a1-b2": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r2-a2-b0": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r2-a2-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-D-at-r2-a2-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-K-at-r2-b0": {
+    "verdict": "match",
+    "rounds": 39,
+    "why": null
+   },
+   "D-K-at-r2-b1": {
+    "verdict": "match",
+    "rounds": 33,
+    "why": null
+   },
+   "D-K-at-r2-b2": {
+    "verdict": "match",
+    "rounds": 28,
+    "why": null
+   },
+   "D-P1-at-r2-a0-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-at-r2-a0-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P1-at-r2-a0-b2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-P1-at-r2-a1-b0": {
+    "verdict": "match",
+    "rounds": 21,
+    "why": null
+   },
+   "D-P1-at-r2-a1-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r2-a1-b2": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r2-a2-b0": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r2-a2-b1": {
+    "verdict": "match",
+    "rounds": 20,
+    "why": null
+   },
+   "D-P1-at-r2-a2-b2": {
+    "verdict": "match",
+    "rounds": 19,
+    "why": null
+   },
+   "D-P2-none-a0-b0": {
+    "verdict": "match",
+    "rounds": 25,
+    "why": null
+   },
+   "D-P2-none-a0-b1": {
+    "verdict": "match",
+    "rounds": 26,
+    "why": null
+   },
+   "D-P2-none-a0-b2": {
+    "verdict": "match",
+    "rounds": 24,
+    "why": null
+   },
+   "D-P2-none-a1-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P2-none-a1-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P2-none-a1-b2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "D-P2-none-a2-b0": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P2-none-a2-b1": {
+    "verdict": "match",
+    "rounds": 23,
+    "why": null
+   },
+   "D-P2-none-a2-b2": {
+    "verdict": "match",
+    "rounds": 22,
+    "why": null
+   },
+   "E-D-b": {
+    "verdict": "match",
+    "rounds": 80,
+    "why": null
+   },
+   "E-D-s2": {
+    "verdict": "match",
+    "rounds": 80,
+    "why": null
+   },
+   "E-D-ends": {
+    "verdict": "match",
+    "rounds": 80,
+    "why": null
+   },
+   "E-K-b": {
+    "verdict": "match",
+    "rounds": 80,
+    "why": null
+   },
+   "E-P1-b": {
+    "verdict": "match",
+    "rounds": 80,
+    "why": null
+   },
+   "E-D-s1": {
+    "verdict": "match",
+    "rounds": 80,
+    "why": null
+   }
+  }
+ },
+ "verdict": {
+  "T1": true,
+  "T3": false,
+  "T4": false,
+  "T5": true,
+  "T2_consistency": true
+ }
+}

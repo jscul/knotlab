@@ -1,0 +1,92 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "CLUSTER-ALL-20261119-001Z-P001",
+ "canonical_id": "CLUSTER-ALL-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "CLUSTER-ALL-20261119-001Z",
+ "proof": "CLUSTER-ALL-20261119-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: one cluster rule for every growth of touching knots",
+ "status": "Proved",
+ "claim": "Ledger closing CLUSTER-ALL-20261119-001: ticket B (frozen test; P1 and P4 held, P2 and P3 failed at six knots). Referee pending. No new claim.",
+ "dependencies": [
+  "CLUSTER-ALL-20261119-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "CLUSTER-ALL-20261119-001",
+  "epic_path": [
+   "CLUSTER-ALL-20261119-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/CLUSTER-ALL-20261119-001B/CLUSTER-ALL-20261119-001B-E001_census/contract.json": "dfee691f0f159a56855ea4d318b64ec447dc97b6ba3563e6dd44cc995d3336d8",
+  "artifacts/CLUSTER-ALL-20261119-001B/CLUSTER-ALL-20261119-001B-E001_census/results.json": "d336f775d2f6b4b7e4d0b6b2d05faaa4bc7031d3a2557d9a58c917f988c5ce1e",
+  "artifacts/CLUSTER-ALL-20261119-001B/CLUSTER-ALL-20261119-001B-E001_census/posthoc_dimension.json": "adb2fa38d32031c8eb22a0ffa2d09d5184be1d92f170c7574e0198149f9c11c1"
+ },
+ "paths": {
+  "manifest": "proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/result.json",
+  "check": "proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18/19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

@@ -1746,6 +1746,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-18 | Can bond distances identify the joins when either two or three fresh distinctions are allowed? (`VARIABLE-OUTPUT-READER-20261118-001`) | — | [folder](research/VARIABLE-OUTPUT-READER-20261118-001/) |
 | 2026-11-18 | Heights on weave patches: the criterion and the lower bound (`WEAVE-HEIGHTS-20261118-001`) | [closure](proofs/WEAVE-HEIGHTS-20261118-001Z/WEAVE-HEIGHTS-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-HEIGHTS-20261118-001/) |
 | 2026-11-18 | The surviving weave pair, with the twist fixed (`WEAVE-PAIR-20261118-001`) | [closure](proofs/WEAVE-PAIR-20261118-001Z/WEAVE-PAIR-20261118-001Z-P001_epic_closure/proof.md) | [folder](research/WEAVE-PAIR-20261118-001/) |
-| 2026-11-19 | Does one cluster rule predict every growth of touching knots? (`CLUSTER-ALL-20261119-001`) | — | [folder](research/CLUSTER-ALL-20261119-001/) |
+| 2026-11-19 | Does one cluster rule predict every growth of touching knots? (`CLUSTER-ALL-20261119-001`) | [closure](proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/CLUSTER-ALL-20261119-001/) |
 | 2026-11-19 | What rule do two joined rings of knots grow by? (`RING-PAIR-20261119-001`) | [closure](proofs/RING-PAIR-20261119-001Z/RING-PAIR-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/RING-PAIR-20261119-001/) |
 

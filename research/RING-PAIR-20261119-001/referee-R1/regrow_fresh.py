@@ -36,7 +36,7 @@ def one(name):
         M[a][b] += 1
         M[b][a] += 1
     G = L.Lean(RT.stars(sizes, M))
-    cap = int(os.environ.get("MAXJ", "150000"))
+    cap = min(int(os.environ.get("MAXJ", "150000")), int(os.environ.get("MAXJ_CAP", "80000")))   # memory: about 30 KB a junction
     for _ in range(80):
         if G.step() != "ok" or len(G.bits) > cap:
             break
@@ -47,5 +47,5 @@ def one(name):
 
 
 if __name__ == "__main__":
-    with Pool(len(PICK)) as pool:
+    with Pool(int(os.environ.get("WORKERS", "2"))) as pool:
         print(json.dumps(pool.map(one, PICK), indent=1))

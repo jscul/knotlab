@@ -8,8 +8,8 @@
 - **The model equals the growth.** It reproduces every recorded round of all 17 fresh starts and of the five two-ring joins of
   JOIN-GROWTH.
 - **It also equals the referee's own growth of the 5–9 join, one round past every recorded horizon** (round 17).
-  The referee's own growth of four fresh starts (F01, F10, F14, F16) is queued behind the JOIN-GROWTH runs. It is marked pending
-  and will be folded in.
+  **It also equals the referee's own growth of four fresh starts** (F01, F10, F14, F16; added 2026-11-19), on every round grown:
+  13 to 21 rounds, up to 177,363 junctions, at a cap of 80,000 set for memory.
 - **The scope conditions,** recomputed by the referee, classify all 20 starts as the study does.
 - **The exponent is settled: −5/2.**
   - In the exact count the local exponent is −1.42 at round 16, where the growth ends.
@@ -43,7 +43,7 @@ So `covermodel.py`'s count, which is the dissymmetry formula with surplus-only s
 | 17 fresh starts (F01 to F17) | the study's recorded counts, 11 to 26 rounds each (main run and memory rerun) | **17 of 17** |
 | Five two-ring joins of JOIN-GROWTH (5–5–K, 5–5–P1, 5–7–D, 7–7–D, 5–9–D) | JOIN-GROWTH's recorded counts | **5 of 5** |
 | 5–9–D, one round past every recorded horizon | **the referee's own growth**, rounds 0 to 17 (692,761 junctions; JOIN-GROWTH-R1's lean engine) | **yes, including round 17 (344,740)** |
-| four fresh starts (F01, F10, F14, F16), the referee's own growth | *pending* | *pending* |
+| four fresh starts (F01, F10, F14, F16) | **the referee's own growth** (`regrow_fresh.py`, `referee_pair_regrow.json`): F14 to round 21 (88,919 junctions), F16 to 18 (114,692), F01 to 15 (155,392), F10 to 13 (177,363) | **4 of 4, every round** |
 
 ## 3. The scope conditions (the owner's second point)
 

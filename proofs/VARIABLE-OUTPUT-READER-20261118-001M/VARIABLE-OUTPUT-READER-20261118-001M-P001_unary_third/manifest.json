@@ -38,9 +38,9 @@
   "proof": "VARIABLE-OUTPUT-READER-20261118-001M-P001",
   "ticket": "VARIABLE-OUTPUT-READER-20261118-001M",
   "title": "Do pair distances decide all three-parent choices when the third three-output addition has one parent?",
-  "status": "Partial",
+  "status": "Proved",
   "claim": "Settle three-parent permission for the last one-parent three-output branch under every renaming at every finite size, or provide an exact reachable counterexample or the precise residual obstruction. Score an explicit cutoff prediction and distinguish junction ambiguity from changed permission.",
-  "standard_statement": "For a bipartite graph constructed by the prescribed parity extensions with one degree-three root and three one-parent births of outdegree three, does the marked pairwise minimum bond-size matrix determine every permitted three-element attachment? Compare to any reachable graph under a bijection of its coordinates, allowing truncation through size five.",
+  "standard_statement": "Under the prescribed parity extensions, with exactly three one-parent, three-output births and no other unary births, a pairwise minimum-bond-size isometry through five preserves the whole code and all feasible unordered three-coordinate extensions in comparison with any reachable mixed rival. The distance cutoff four is necessary.",
   "prior_work": "K and L settle the two other arities for the third outdegree-three birth. Classical cut-space recognition from all binary equations does not identify which information survives taking pair minima. The unary case has three additional loose births and permits intervening binary or shrinking additions.",
   "dependencies": [
     "VARIABLE-OUTPUT-READER-20261118-001D",
@@ -70,12 +70,12 @@
   "completion_gate": "A size-independent table invariant for marked triples, an explicit opposing exact-table comparison, or an exact residual lemma after proved and bounded outcomes are stated separately.",
   "source_contribution": "Histories certify reachability and grade supports and permissions. The reader sees no history.",
   "validation": {
-    "level": "V0",
-    "status": "Partial"
+    "level": "V1",
+    "status": "V1, independent same-task proof and measurement checks. Exact finite holder quotient, chronological reconstruction, wired graph and direct parity-span measurements. Separate referee review pending.",
+    "novelty": "candidate-local-delta",
+    "result_sha256": "be42d44518b43c119f6bf57c26d184cd8eeec90c65641dca2a4910ac312c37a5"
   },
-  "remaining_obligations": [
-    "Score the sharp cutoff and loose frontier bound, check marked versus physical ambiguities, and state the resulting ladder and its limits."
-  ],
+  "remaining_obligations": [],
   "paths": {
     "directory": "proofs/VARIABLE-OUTPUT-READER-20261118-001M/VARIABLE-OUTPUT-READER-20261118-001M-P001_unary_third",
     "manifest": "proofs/VARIABLE-OUTPUT-READER-20261118-001M/VARIABLE-OUTPUT-READER-20261118-001M-P001_unary_third/manifest.json",
@@ -84,5 +84,16 @@
     "identity": "proofs/VARIABLE-OUTPUT-READER-20261118-001M/VARIABLE-OUTPUT-READER-20261118-001M-P001_unary_third/identity.json",
     "preregistration": "research/VARIABLE-OUTPUT-READER-20261118-001M/preregistration.md",
     "decision_note": "research/VARIABLE-OUTPUT-READER-20261118-001M/decision.md"
-  }
+  },
+  "conclusion": "Four is the sharp all-size bond-distance cutoff for three-parent permission in the unary-third family. The clipped table forces the entire allowed-state relation against every reachable rival. It fixes the physical supports except for complementary final triples on a six-loose prefix, which give an empty menu. The sharp cutoff over all three choices for the third three-output addition is five.",
+  "evidence_class": "All-size structural theorem using an exhaustive finite frontier with explicit sharp and negative controls.",
+  "target_disposition": "Both frozen predictions proved. The three-parent permission ladder at three three-output births with a unique ternary site is complete.",
+  "unrestricted_inverse_status": "Open",
+  "unrestricted_obligation": "Unrestricted three-parent invariance under the mixed parity law remains open. Among sources whose only three-place site is the seed, a counterexample now requires at least four three-output additions. Allowing further three-place sites is outside the complete three-branch theorem.",
+  "failure_conditions": [
+    "A matching clipped table through D=4 at a reachable unary-third source with a different parity space, marked triple verdict, or unclassified moved junction.",
+    "A legal frontier omitted from the exhaustive fixed point, a fifth shrink or a four-shrink route with the unary third after an earlier shrink.",
+    "A large five-bit shore admitting an excluded incoming bit, or a shrinking site for which no protected input exists.",
+    "A failure of the marked width-22 swap or the complementary width-32 example under literal replay."
+  ]
 }

@@ -1,0 +1,92 @@
+{
+ "schema_version": 3,
+ "foundation_contract": "contact-first-atomic-topology-v3",
+ "semantic_domains": [
+  "contact-foundations",
+  "logical-topology"
+ ],
+ "thesis_alignment": null,
+ "artifact_id": "ROUND-FREE-20261119-001Z-P001",
+ "canonical_id": "ROUND-FREE-20261119-001Z-P001",
+ "kind": "proof",
+ "ticket": "ROUND-FREE-20261119-001Z",
+ "proof": "ROUND-FREE-20261119-001Z-P001",
+ "authoritative_metadata": "manifest.json",
+ "title": "Closure: what the growth builds without rounds",
+ "status": "Proved",
+ "claim": "Ledger closing ROUND-FREE-20261119-001: ticket B (frozen; P2, P3 held, P1, P4 failed). Referee pending. No new claim.",
+ "dependencies": [
+  "ROUND-FREE-20261119-001B"
+ ],
+ "evidence_modes": [
+  "ledger"
+ ],
+ "source_contribution": 0,
+ "epistemic_class": {
+  "primary": "closure-ledger",
+  "secondary": []
+ },
+ "failure_conditions": [
+  "A bound manifest, result, contract or census changes, or a proof is not Proved.",
+  "The decision note or the pre-registration is missing.",
+  "A ticket lacks its terminal status class."
+ ],
+ "lineage": {
+  "home_scope": "ROUND-FREE-20261119-001",
+  "epic_path": [
+   "ROUND-FREE-20261119-001"
+  ],
+  "parents": []
+ },
+ "parent_bindings": {
+  "experiments/ROUND-FREE-20261119-001B/ROUND-FREE-20261119-001B-E001_serial/contract.json": "eaac6e5930d937802ef5525d2b67347ca8039c6178f980e7ad6e8c69a70aca22",
+  "artifacts/ROUND-FREE-20261119-001B/ROUND-FREE-20261119-001B-E001_serial/results.json": "48691f058948303f3f2b10d6a0cac130404ffa436bc2f312c8b9d9fe446c4d1e",
+  "artifacts/ROUND-FREE-20261119-001B/ROUND-FREE-20261119-001B-E001_serial/partc.json": "6f2d28488c79e713b7a6a793397053b93a4b3e7fd3707b8c25a26a7569ef3bb4"
+ },
+ "paths": {
+  "manifest": "proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure/manifest.json",
+  "identity": "proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure/identity.json",
+  "proof": "proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure/proof.md",
+  "result": "proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure/result.json",
+  "check": "proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure/check.py",
+  "directory": "proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure"
+ },
+ "remaining_obligations": [],
+ "safe_to_conclude": {
+  "contract_frozen": false,
+  "native_recurrence_defined": false,
+  "one_native_recurrence_formed": false,
+  "two_loops_formed": false,
+  "shared_identity_witnessed": false,
+  "two_sided_essential_candidate": false,
+  "candidate_package_persistence_proved": false,
+  "irreducible_joint_contact_formed": false,
+  "loop_erasure_contact_loss_formed": false,
+  "persistent_genuine_contact_formed": false,
+  "logical_knot_formed": false,
+  "atomic_logical_topology_formed": false,
+  "minimal_contact_distance_formed": false,
+  "intrinsic_adjacency_formed": false,
+  "composed_logical_topology_formed": false,
+  "native_paths_formed": false,
+  "connectivity_formed": false,
+  "separation_formed": false,
+  "extended_path_metric_distance_formed": false,
+  "two_cnf_boundary_proved": false,
+  "three_cnf_boundary_proved": false,
+  "affine_xor_boundary_proved": false,
+  "transition_system_boundary_proved": false,
+  "two_cnf_three_cnf_knot_boundary_proved": false,
+  "p_ne_np": false,
+  "physical_ontology": false
+ },
+ "foundation_claim_scope": "A ledger of the epic's tickets; it adds no claim.",
+ "validation": {
+  "level": "V1",
+  "external_review": false,
+  "trusted_kernel": false,
+  "independence": "Written by Claude in one session on 2026-11-18/19; referee pending.",
+  "status": "ledger checked by check.py",
+  "novelty": "not applicable: a closure ledger"
+ }
+}

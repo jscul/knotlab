@@ -5,7 +5,7 @@
  "proof": "DEAD-CAP-20261119-001A-P001",
  "ticket": "DEAD-CAP-20261119-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "The map within five places, dead knots included",
  "claim": "In the proved class within five places, dead knots allowed: Lemma 1, blocks have 2 to 5 points, meet in at most one, and each live knot's blocks have sizes summing to at most five (profiles none, {2}, {3}, {4}, {5}, {2,2}, {2,3}); Lemma 2, a piece is a skeleton of 3-blocks of degree at most 3 joined through 2-blocks, the class boundary is no cycle of two or three blocks (a cycle of three blocks is a group of three), and rays start only at lone points and ends of 2-blocks; Theorem 3, every piece's count is given exactly by a branch system with pointing; Theorem 4, the growth class is the piece's rank: trees polynomial (dimension = rays), one cycle constant when bare else exponential at the root of W(1/x) = 1, two or more cycles exponential at an algebraic rate 1/rho (Drmota-Lalley-Woods); the theta of two dead hubs grows at 2.3830.",
  "standard_statement": "Drmota-Lalley-Woods theorem for positive polynomial systems; animals on tree-like covers.",
@@ -20,7 +20,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "status": "written in full; statement checked by the advisor before the freeze; machine check D1-D6 (D4 failed as scored, estimator); referee pending",
   "independence": "deadlib.py builds the map and the branch system from the definitions; the engine grows each realized start; DOUBLE-IDENT's code classifies and reads it",
   "novelty": "extension of the identification line to dead knots"
  },
@@ -57,9 +57,7 @@
   "physical_ontology": false
  },
  "source_contribution": 0,
- "remaining_obligations": [
-  "Run the machine check (D1-D6)"
- ],
+ "remaining_obligations": [],
  "paths": {
   "manifest": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/manifest.json",
   "identity": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/identity.json",
@@ -68,5 +66,5 @@
   "machine_check": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/job.py",
   "machine_check_output": "proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/machine_check.json"
  },
- "attained_result": "Statement and proof written; machine check pending."
+ "attained_result": "Lemmas 1 and 2, Theorems 3 and 4 and Corollary 5 proved; machine check D1-D6: 5 of 6 held as scored, D4 failed as scored through its numeric radius estimator (post hoc), D2 exact on 13,307 starts."
 }

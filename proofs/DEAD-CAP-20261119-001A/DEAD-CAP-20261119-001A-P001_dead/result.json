@@ -1,0 +1,110 @@
+{
+ "schema_version": 3,
+ "artifact_id": "DEAD-CAP-20261119-001A-P001",
+ "kind": "proof",
+ "ticket": "DEAD-CAP-20261119-001A",
+ "proof": "DEAD-CAP-20261119-001A-P001",
+ "status": "failed",
+ "checks": {
+  "D1": {
+   "S6": 757,
+   "in": 43702,
+   "S3": 15470,
+   "S0": 39184,
+   "S4": 68236
+  },
+  "D2_D4": {
+   "census": {
+    "starts": 10549,
+    "counts_equal": 10549,
+    "reading_agree": 10549,
+    "by_top_rank": {
+     "0": 10549
+    },
+    "readings": {
+     "dimension 2": 7300,
+     "dimension 1": 1331,
+     "closes": 1918
+    },
+    "rounds_min": 1,
+    "d4": [
+     0,
+     0
+    ],
+    "max_rate": 1.0,
+    "max_dead": 4
+   },
+   "fam": {
+    "starts": 4,
+    "counts_equal": 4,
+    "reading_agree": 4,
+    "by_top_rank": {
+     "0": 3,
+     "2": 1
+    },
+    "readings": {
+     "exponential": 1,
+     "dimension 3": 1,
+     "dimension 6": 1,
+     "dimension 12": 1
+    },
+    "rounds_min": 8,
+    "d4": [
+     0,
+     0
+    ],
+    "max_rate": 2.382965510589661,
+    "max_dead": 10
+   },
+   "rand": {
+    "starts": 1254,
+    "counts_equal": 1254,
+    "reading_agree": 1254,
+    "by_top_rank": {
+     "0": 1248,
+     "1": 6
+    },
+    "readings": {
+     "dimension 1": 82,
+     "closes": 51,
+     "dimension 2": 1118,
+     "exponential": 3
+    },
+    "rounds_min": 1,
+    "d4": [
+     0,
+     3
+    ],
+    "max_rate": 1.324717957244746,
+    "max_dead": 13
+   },
+   "skel": {
+    "starts": 1500,
+    "counts_equal": 1500,
+    "reading_agree": 1500,
+    "by_top_rank": {
+     "1": 27,
+     "2": 1027,
+     "3": 446
+    },
+    "readings": {
+     "exponential": 1500
+    },
+    "rounds_min": 9,
+    "d4": [
+     0,
+     27
+    ],
+    "max_rate": 2.382965510589661,
+    "max_dead": 4
+   }
+  },
+  "D5": true,
+  "D6_holds": true
+ },
+ "failures": [
+  "D4 rand",
+  "D4 skel"
+ ],
+ "note": "D4 failed as scored: the numeric radius estimator stops early on linear systems (post hoc, see proof.md Validation); the theorem rests on D2, exact on 13,307 starts. D1-D3, D5, D6 held."
+}

@@ -3280,6 +3280,12 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `DEAD-CAP-20261119-001` (proved; [decision note](../research/DEAD-CAP-20261119-001/dead_cap.md)): within five
+    places the whole proved class is classified, dead knots included. The growth class is the rank of the map's pieces: one cycle
+    gives a rational count series, two or more an algebraic one. A branch system of a few equations gives every eddy's count
+    exactly. So few in kind holds in the class within the cap, with the catalogue's factors and, for two or more cycles, the
+    system's branches. The fastest found is the theta's 2.3830. A first-round group of three is exactly a cycle of three blocks,
+    the entry point of the explosive kind outside the class, which keeps A109 under challenge.
   - 2026-11-19 · `RING-CORES-20261119-001` refereed (R1, confirmed). Narrowed: the golden-ratio ceiling is for rings of live
     knots. With dead knots, an 11-knot start with two dead hubs grows at about 2.383 (`DEAD-CAP-20261119-001`, referee pending),
     so the in-class catalogue within five places is completed by that study, not by the rings alone. Status unchanged.

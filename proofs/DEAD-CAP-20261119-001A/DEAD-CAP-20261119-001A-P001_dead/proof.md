@@ -1,6 +1,6 @@
 # The map within five places, dead knots included
 
-Status: Partial
+Status: Proved
 
 Ticket `DEAD-CAP-20261119-001A`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-CORES-20261119-001#2`.
 
@@ -190,4 +190,22 @@ text.
 
 ## Validation
 
-To be filled from the run.
+The machine check ran once after the freeze through the shared runner (`DEAD-CAP-A1`, `runs/dead-cap`, 51 cases, all ok).
+`merge.py` was written before the run was read. Output: `machine_check.json`, summary `result.json`. Five of six checks held as
+scored.
+
+| # | What ran | Result |
+| --- | --- | --- |
+| D1 | 167,349 data on every connected graph of 1 to 6 knots, every dead set and open assignment: 43,702 in the class, 68,236 out by (S4), 15,470 by (S3), 39,184 by (S0), 757 by (S6′) | no exception to Lemma 1, Lemma 2's skeleton and ray kinds, or the boundary: every datum failing (S3) under (S4) has a cycle of three blocks, and no other does |
+| D2 | 13,307 starts with a dead knot: the census's 10,549, 1,254 random starts of 6 to 16 knots, 1,500 skeleton starts of two to four dead hubs, and the theta with T_1–T_3 | the branch system's counts equal the engine's on every round reached of every start |
+| D3 | dims.predict on the same | agrees with Theorem 4's reading on all 13,307 |
+| D4 | the rank-1 root of W(1/x) = 1 against the system's radius, read numerically, on the 30 exponential rank-1 pieces | **failed as scored**: 0 of 30 within 10⁻⁶. The radius estimate (`branch_rate`, 4,000 iterations) stops too early on a linear system, whose iteration slows to a crawl near its pole: it reads 1.3187 where the root is 1.3247. With 200,000 iterations it reads 1.32462. D2's exact counts carry the denominator 1 − W, so the theorem stands; the estimator was at fault (post hoc) |
+| D5 | the theta, T_1, T_2, T_3 | all in the class; the theta of rank 2 follows the system to round 13 and its radius gives 2.3830; T_1–T_3 have dimensions 3, 6 and 12 |
+| D6 | the fastest sampled rate against the theta's | held: the run's fastest is the theta's 2.38297, reached by 133 starts. A post-hoc refinement (`posthoc_rates.py`, Newton with a spectral-radius test) of the 284 pieces above 2.25 gives at most 2.3829757679, the exact theta value 1/z for 4z³ + 4z² = 1. The run's estimates were low by at most 1.1 × 10⁻⁵ |
+
+**Ranks met.**
+- The census holds only trees: its starts have at most five knots.
+- The random sampler gave 1,248 trees and 6 single cycles.
+- The skeleton sampler gave 27 single cycles, 1,027 of rank 2 and 446 of rank 3.
+- The smallest rank-2 start met has 11 knots, as the advisor's count says.
+- 135 distinct rank-2 rates were met, from 1.832 up to the theta's 2.3830.

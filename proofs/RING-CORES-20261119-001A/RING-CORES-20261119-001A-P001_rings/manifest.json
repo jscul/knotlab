@@ -5,7 +5,7 @@
  "proof": "RING-CORES-20261119-001A-P001",
  "ticket": "RING-CORES-20261119-001A",
  "kind": "proof",
- "status": "Partial",
+ "status": "Proved",
  "title": "Rings within five places: the eddies and their rates",
  "claim": "In the proved class with every knot live and at most five places: Lemma 1, a ring-core start is a ring of L = 5 or L >= 7 knots with hung knots at least three apart and forced open counts except spares (plain core knots 0 or 1, hung knots 0 to 2); Lemma 2, its map is one ring of blocks (L odd) or two (L even); Theorem 3, the per-round count of a piece is [z^(t+1)] of sum_i lambda_(i-1) sum_m prod v_k / (1 - W) + sum over leaves z(1+z)^b, W = z^n (1+z)^A prod (1 + z(1+z)^b); Theorem 4, a bare piece makes n junctions every round, any other grows at the root x > 1 of W(1/x) = 1; Corollary 5, within the cap the in-class eddies are exactly the rings with a hung knot or a spare.",
  "standard_statement": "Transfer of a periodic line's connected sets (lattice animals on a decorated line); Pringsheim's theorem for the dominant root.",
@@ -20,7 +20,7 @@
  "validation": {
   "level": "V1",
   "classification": "V1-separate-algorithm-same-task",
-  "status": "statement checked by the advisor before the freeze; machine check pending",
+  "status": "written in full; statement checked by the advisor before the freeze; machine check K1-K6 passed; referee pending",
   "independence": "ringlib.py computes the count from the decoration word alone; the engine grows the realized start; DOUBLE-IDENT's code classifies and reads it",
   "novelty": "extension of the identification line to the eddy catalogue"
  },
@@ -57,9 +57,7 @@
   "physical_ontology": false
  },
  "source_contribution": 0,
- "remaining_obligations": [
-  "Run the machine check (K1-K6)"
- ],
+ "remaining_obligations": [],
  "paths": {
   "manifest": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/manifest.json",
   "identity": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/identity.json",
@@ -68,5 +66,5 @@
   "machine_check": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/job.py",
   "machine_check_output": "proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/machine_check.json"
  },
- "attained_result": "Statement and proof written; machine check pending."
+ "attained_result": "Lemmas 1 and 2, Theorems 3 and 4 and Corollary 5 proved; machine check K1-K6 passed (23,098 decorated rings of 5 to 14 knots, engine counts equal to the formula on every round; 162,576 small starts classified)."
 }

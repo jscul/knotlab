@@ -1,6 +1,6 @@
 # Rings within five places: the eddies and their rates
 
-Status: Partial
+Status: Proved
 
 Ticket `RING-CORES-20261119-001A`, 19 November 2026, by Claude, on the coordinator's go-ahead, which joins the identification line
 to the eddy line. It builds on:
@@ -160,4 +160,38 @@ interfaces (`LOOP-CATALOGUE-20261119-001`), now proved complete within the cap.
 
 ## Validation
 
-To be filled from the run.
+The machine check ran once after the freeze, through the shared runner (`RING-CORES-A1`, `runs/ring-cores`, 52 cases, all ok,
+16:18 to 16:28 UTC). `merge.py` was written while it ran and before its output was read. Output: `machine_check.json`, summary
+`result.json`. Every check passed.
+
+| # | What ran | Result |
+| --- | --- | --- |
+| K1 | 23,098 decorated ring words of L = 5, 7, …, 14 knots (17, 60, 129, 248, 543, 1,128, 2,551, 5,588, 12,834), each realized as a simple start | every one in the class, every knot live, largest knot 5, open counts and demands as Lemma 1 forces |
+| K2 | DOUBLE-IDENT's dims.predict on each | the bare ring one-dimensional and every other word exponential, at every L |
+| K3 | the program's engine on each, to round 40 or 4,000 junctions (10 to 40 rounds, median 14) | per-round counts equal Theorem 3's coefficients on every round of every word |
+| K4 | the closed form against the direct sum over intervals, to round 40 | equal for every word |
+| K5 | the advisor's four predicted rates | all four as predicted: 1.2628, 1.2377, 1.2207, 1.0970 |
+| K6 | 162,576 simple starts of 2 to 9 knots on the cap study's graphs | 150,355 stall; in the class, 1,098 exponential starts, every one a ring with a hung knot or a spare; 4 bare rings one-dimensional; path and star cores 1,860 one-dimensional and 9,259 two-dimensional; no exception |
+
+**The rates found.**
+- **Slowest.** A single spare on the largest piece is the slowest grower: x^(n+1) = x + 1. That gives 1.0527 for the ring of 13,
+  the catalogue's ring family.
+- **Fastest.** A piece whose every line point carries a spare is the fastest: W = (z(1 + z))^n, so x = 1 + 1/x. That is the golden
+  ratio 1.6180, at every length.
+- **The golden ratio is the most** (Proposition 6 below, added after the run). It is the run's maximum at every L from 5 to 14.
+
+## Proposition 6 (post hoc: no ring within five places beats the golden ratio)
+
+Every ring start within the cap grows at a rate of at most φ = 1.6180. A piece reaches φ exactly when each of its line points
+carries a spare or flanks a hung knot with two spares. The second option exists only for even L.
+
+*Proof.* Let z_0 = 1/φ, so z_0(1 + z_0) = 1. W(z_0) is a product of factors, each at most 1:
+- **Line points.** A line point with a spare gives z_0(1 + z_0) = 1. One without gives z_0 < 1.
+- **Hung knots.** A hung knot on the edge (x_k, x_{k+1}) has two flanking line points, which are its core knot's neighbours and
+  carry no spare. Together they give z_0²(1 + z_0(1 + z_0)^b) ≤ z_0²(2 + z_0) = 1, with equality only for b = 2.
+- **The flanking pairs are disjoint,** since hung knots lie at least three apart.
+
+So W(z_0) ≤ 1, which gives ρ ≥ z_0 and x ≤ φ.
+- **Equality** needs every factor equal to 1: every line point spared, or flanking a hung knot with b = 2.
+- **For L odd** the hung knot's own core knot is a line point of the same piece without a spare, so equality fails whenever there
+  is a hung knot. ∎

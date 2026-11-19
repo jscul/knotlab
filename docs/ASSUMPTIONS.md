@@ -3280,6 +3280,12 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `RING-CORES-20261119-001` (proved; [decision note](../research/RING-CORES-20261119-001/ring_cores.md)): within five
+    places, in the proved class with every knot live, the eddies are exactly the rings carrying a hung knot or a spare. Each
+    piece's round-weight is a product of three kinds of factor: y per walk knot, 1 + y per spare, 1 + y(1 + y)^b per hung knot with
+    b spares. The rate is the root of W(1/x) = 1, at most the golden ratio. So few in kind is proved there, with a three-factor
+    generating set: the catalogue's ring family, complete in that class. Outside it (six places or more, dead knots, groups of
+    three, two common neighbours), the explosive kind keeps it under challenge.
   - 2026-11-19 · `BREAK-EDDIES-20261119-001`'s referee (R1): the steady break-shape eddies are the family's, with every W read from
     the counts' whole recurrence a member built from the catalogue's pieces (three members new to the table). The short loops
     through groups of three, read from the rate, are withdrawn (a Block on that reading): consistent with 12 starts, shown for

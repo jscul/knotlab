@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "UNIQUE-TABLE-20261119-001A-E001",
+ "ticket": "UNIQUE-TABLE-20261119-001A",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "On 522 symmetry-free census stages the name-free reader misread, is the arrangement the only legal one (bound B1-B4) with its exact bond-distance table?",
+ "definitions": {
+  "bound": "B1-B4 of research/UNIQUE-TABLE-20261119-001/preregistration.md",
+  "forcing": "uniq.forcing",
+  "same_code": "uniq.same_code_rivals",
+  "one_missing": "uniq.one_missing"
+ },
+ "public_inputs": {
+  "code": "uniq.py (sha256 b20a89a6109d0d093e6300aec0bfd2059856216bf259623a4fadcdd94c655ff3), job.py (sha256 af75b832a9e3549609001babeeb74fa6e438bd368164445b28fd8798ed208d22), population.json (sha256 1bb8b607ec0ccaf0c5711553789a5e55672b7660da6922f01e069ea4fae0a1b0)",
+  "run": "scripts/longrun.py launch job.py --out runs/unique-table (10 workers, 600 s per case); .venv/bin/python -B readout.py runs/unique-table",
+  "reused": "CENSUS-READ-20261118-001A job.py and exact_table_v2.py; RING-READ ringread.py; TOUCH-CENSUS arrlib.py; FRESH-COUNT freelib.py (records)"
+ },
+ "forbidden_inputs": [
+  "Changing U1-U6 after any population case is read"
+ ],
+ "primary_observable": "G, U1-U6 of the pre-registration",
+ "cheapest_meaningful_control": "the 1,330 stages the reader read exactly",
+ "predictions": {
+  "U1": "forcing spans C on >= half",
+  "U2": "no different-equation rival",
+  "U3": "closed stages have same-state rivals",
+  "U4": "3-connected criterion",
+  "U5": ">= half decided have same-state rivals",
+  "U6": "<= 10% of controls"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run, readout.",
+ "runtime": "minutes",
+ "amendments": []
+}

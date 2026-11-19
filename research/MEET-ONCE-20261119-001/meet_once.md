@@ -1,7 +1,8 @@
 # Do reached arrangements whose junctions meet once ever share a table with other states?
 
 Epic `MEET-ONCE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for sub-goal B205
-(`GROWN-PAIR-20261119-001#2`, `THREE-WAY-20261119-001#1`). Assumptions A97, A108; goal G1. **Referee pending.**
+(`GROWN-PAIR-20261119-001#2`, `THREE-WAY-20261119-001#1`). Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; one count corrected (19 to 20) and wording, folded in
+(Referee R1 below).**
 
 **Record.** Pre-registration, frozen before the run (commit `3d91d3eab`), and Amendment 1 (commit `50d7cc494`, after the frozen
 pairing ran an hour without output, before any pair was read): [preregistration.md](preregistration.md). Code:
@@ -16,7 +17,8 @@ stage records (`results_meet-once.jsonl.gz`).
 **In the owner's terms.**
 - **No, not up to 40 junctions.** Among the census stages of 15 to 40 junctions that the cheapest growth reaches in complete
   rounds and in which no two junctions share two distinctions (2,698 stages), no two different arrangements have the same
-  bond-distance table and other allowed states. GROWN-PAIR's finding at up to 14 junctions is not a size effect.
+  bond-distance table and other allowed states. GROWN-PAIR's finding at up to 14 junctions is not a size effect, as far as computed:
+  to 40 junctions here, and to 50 by the referee's check.
 - **Distances up to 8 already settle it here.** 102 groups of different arrangements agree on their tables read up to distance 8,
   and in every one of them the allowed states are the same up to renaming. So among these stages the short distances alone fix
   the allowed states, and the full tables of the 102 groups agree as well.
@@ -26,10 +28,11 @@ stage records (`results_meet-once.jsonl.gz`).
     outside's part.
   - 5 have the same junction graph, with the outside and a junction exchanged.
   - 15 have different junction graphs with the same equations (a Whitney-type rearrangement).
-- **What this says with the earlier studies.** Reached collisions with other states need knots that share two distinctions:
-  152 groups at up to 14 junctions (GROWN-PAIR), and 22 more at 15 and 16 found by THREE-WAY's referee. Where junctions meet once,
-  none appears among reached stages to 40 junctions. This holds for what the law reaches, not for every arrangement. All six of
-  UNIQUE-TABLE's static pairs meet once and have other states, and none of them is reachable.
+- **What this says with the earlier studies.** Every reached collision with other states computed so far has knots that share
+  two distinctions: 152 groups at up to 14 junctions (GROWN-PAIR), and 22 more at 15 and 16 found by THREE-WAY's referee. Where junctions meet once,
+  none appears among reached stages to 40 junctions (50 by the referee's check). Computed to these sizes, this holds for what the
+  law reaches, not for every arrangement. All six of UNIQUE-TABLE's static pairs meet once and have other states, and the law
+  never builds their rivals (each truth is a round-1 census stage).
 
 | Meet-once grown stages, 15 to 40 junctions | Count |
 | --- | ---: |
@@ -95,10 +98,10 @@ the allowed states, and the only ambiguity left is which junction holds what.
 
 - The census starts, complete rounds, the cheapest counts, and 15 to 40 junctions; Codex's serial mixed law was not run.
 - "States" are equation spaces (no signs), as in the predecessors.
-- This is a property of what the law reaches. Statically it fails at 7 and 8 junctions (UNIQUE-TABLE's six). Why the law avoids
+- Computed to 40 junctions, this is a property of what the law reaches. Statically it fails at 7 and 8 junctions (UNIQUE-TABLE's six). Why the law avoids
   such pairs is not explained here.
-- The 83 closed and open pairs depend on counting a closed stage as its own arrangement. Without them, 19 groups remain, and M2
-  still holds.
+- The 83 closed and open pairs depend on counting a closed stage as its own arrangement. Without them, 20 groups remain (82 groups
+  are a closed stage and an open one; the group of three keeps two open arrangements), and M2 still holds.
 
 ## Advisor
 
@@ -113,7 +116,7 @@ does that job: every test was decided by a junction-graph isomorphism or by the 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: reached meet-once collisions with other states, 15 to 40 junctions | **Status:** Successful | None among 2,698 stages; all 102 collision groups keep the states, already at distance 8 |
-| Local direction: what reading of a base is complete | Continue | Where junctions meet once, reached stages lose nothing of the states to their distances; statically they do |
+| Local direction: what reading of a base is complete | Continue | Computed to 40 junctions: where junctions meet once, reached stages lose nothing of the states to their distances; statically they do |
 | Broader exploration: what distances carry (A97) | Known alternatives | Whitney's theorem names the same-states kinds; the reached and static difference is not known |
 | Long-term goal: G1 with A97 | Capability gained | A scope, meeting once and reached, in which pair distances carry the allowed states, to 40 junctions |
 
@@ -129,6 +132,21 @@ does that job: every test was decided by a junction-graph isomorphism or by the 
 **Corrections:** none from this study. **Goals:** G1 checkpoint (capability gained). **Assumptions:** A97 gains this study (status
 unchanged; a scope in which pair distances carry the states of reached stages); A108 gains it (102 groups with the same states and
 other junctions). **Basket:** B205 done; B203, B204 remain.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own growth, tables read to distance 8 and states test. **Confirmed, no Block; one count
+corrected and wording, folded in above and logged in `docs/CORRECTIONS.md` (Not a block).**
+- **Confirmed.** All 26,441 starts regrown: the same 2,698 stages and 2,692 arrangements; the same 102 groups (101 of two, 1 of
+  three) from its own tables; all 103 tests same states by explicit carriers (88 junction-graph isomorphisms, 15 by its exact
+  renaming search), none undecided. The states-first argument and "no full table needed" are sound.
+- **One size past.** Every meet-once grown stage of 14 to 50 junctions (3,503): 113 groups (the 102, 9 at 41 to 50 junctions, 2
+  straddling 14 and 15), all same states.
+- **Corrected: 19 to 20.** Removing the closed stages removes 82 groups; the group of three (20, 21 and 20 junctions) keeps its two
+  open arrangements.
+- **Wording.** "Need knots that share two", "not a size effect" and "a property of what the law reaches" now say computed to 40
+  junctions (50 by the referee); "none of them is reachable" now says the law never builds the rivals, since each truth is a
+  round-1 census stage.
 
 ## Final report as sent (2026-11-19 10:07 UTC)
 

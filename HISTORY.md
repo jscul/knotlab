@@ -4,6 +4,15 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: meet-once collisions refereed
+
+- The study of reached collisions where junctions meet once (`MEET-ONCE-20261119-001`,
+  [decision note](research/MEET-ONCE-20261119-001/meet_once.md)) was refereed with the referee's own growth, tables and states test
+  and confirmed: none of the 2,698 reached stages of 15 to 40 junctions shares a bond-distance table with other allowed states, and
+  one size past, to 50 junctions, the same holds for 113 groups.
+- **Corrected (not a block).** Without the closed stages 20 groups remain, not 19. The sentences that read as laws now say computed
+  to 40 junctions, and the six static pairs are named as rivals the law never builds.
+
 ## 19 November 2026: three-way readings refereed
 
 - The study of three-way readings (`THREE-WAY-20261119-001`, [decision note](research/THREE-WAY-20261119-001/three_way.md)) was

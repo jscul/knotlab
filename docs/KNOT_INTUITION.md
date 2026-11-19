@@ -630,12 +630,12 @@ comes apart, static or grown. What it cannot add is which junction holds what
 when the allowed states agree; only the growth reads that
 ([decision note](../research/THREE-WAY-20261119-001/three_way.md)).
 And where junctions meet at most once, does the growth ever make such a pair
-at larger sizes (`MEET-ONCE-20261119-001`, computed, referee pending)? Not up to
-40 junctions: among 2,698 reached stages of 15 to 40 junctions, every two
+at larger sizes (`MEET-ONCE-20261119-001`, computed, refereed)? Not up to
+40 junctions (50 by the referee's check): among 2,698 reached stages of 15 to 40 junctions, every two
 arrangements with the same distances, already read to 8, have the same allowed
 states, and differ only in which junction holds what. Arrangements the law never
-builds can still meet once and differ, so this is a property of what the law
-reaches ([decision note](../research/MEET-ONCE-20261119-001/meet_once.md)).
+builds can still meet once and differ, so, as far as computed, this is a
+property of what the law reaches ([decision note](../research/MEET-ONCE-20261119-001/meet_once.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

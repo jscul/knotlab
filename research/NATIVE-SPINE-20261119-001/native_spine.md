@@ -104,3 +104,34 @@ bounded to three rules. Goal G17. **Referee pending.**
 | 1 | The automorphism test: symmetries of the ten starts, and whether any perfect pairing is invariant under them | 2/3 — the only route found to prove that no native spine exists | 2/3 — the starts are small; symmetries of their growth need care | compute the starts' automorphisms → stop at an invariant pairing, or a junction fixed by a symmetry with no fixed candidate | Alternative · proposed |
 | 2 | The explosive kind (`BREAK-EDDIES-20261119-001#2`), with part U's 624 still-rising starts | 2/3 | 2/3 | as there | Alternative · deferred |
 | 3 | The y⁴(1 + y)² starts' spine (`JUNCTION-KINDS-20261119-001#2`), now with the shuffle null first | 1/3 — the null makes a pairing weak evidence | 3/3 | as there, null first | Alternative · deferred |
+
+## Final report as sent (2026-11-19 13:30 UTC)
+
+**Outcome:** The growth doesn't pick its own spine. None of the three rules gives the one-to-one pairing of each round with the two rounds its recurrence names: the newest ancestor, the one with the most parent chains, or the one with the fewest. Nothing in the ancestry forces any pair either. 5 of 5 frozen predictions held, on 204 rounds of the ten plastic-number eddies. Closed, referee pending.
+
+- **Why the rules fail.** "Newest" can only reach two rounds back, so it fails by count. "Most chains" always lands three rounds back (100% of its picks), so it fails the same way, with collisions. "Fewest chains" leaves 91–96% of junctions tied by the end.
+- **Nothing is forced.** In every pairing, every junction could swap its partner within another pairing. The forced share is 0 at all 204 rounds.
+- **The null settles it.** A shuffled relation, keeping how many candidates each junction has and how many junctions each ancestor serves, still pairs off perfectly (30 of 30). So the pairing JUNCTION-KINDS reported only shows that the counts fit how dense the ancestry is. I corrected that reading (Narrowing, below).
+- **Where the line stands.** This is the fourth finite object tried for the break-shape eddies: the cluster map, the junction map, kinds of junction, and now a native spine. None carries their count. Their rates are the catalogue's family, but how the growth produces them in these shapes is unexplained.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: three spine rules | **Status:** Successful (5 of 5 held) | No rule picks the spine, nothing is forced, and the pairing exists in a shuffled null |
+| Local direction: a finite object behind the break-shape eddies | Practically exhausted | Four objects tried; none carries the count |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Steady eddies have family rates; the mechanism in the break shapes is unexplained |
+| Long-term goal: G17 | Obstruction learned | The rare eddies' recurrence isn't a local or ancestral structure we can find |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The automorphism test: does a symmetry of the starts move every perfect pairing? That would prove no native spine exists | 2/3 | 2/3 | compute the ten starts' symmetries → stop at an invariant pairing, or a fixed junction with no fixed partner | Alternative |
+| 2 | The explosive kind, with part U's 624 still-rising starts | 2/3 | 2/3 | as in BREAK-EDDIES | Alternative · deferred |
+| 3 | The y⁴(1 + y)² spine, null first | 1/3 | 3/3 | as in JUNCTION-KINDS | Alternative · deferred |
+
+**Corrections:** one, a **Narrowing** of JUNCTION-KINDS (just published). "Ancestry carries the count … the substitution made of real parent chains" read a perfect pairing's existence as structure. A shuffled relation has one too. The counts and verdicts stand. It's logged in docs/CORRECTIONS.md and knotlab's HISTORY.md (323c2ccdf). **Goals:** G17 checkpoint (obstruction learned). **Assumptions:** none changed. **Basket:** `JUNCTION-KINDS-20261119-001#1` taken. The basket's next open items are `B196` (a decision procedure for bounded reach on small orbits, 3/3, 2/3) and `RING-PAIR-20261119-001#2` (prove the identification, 3/3, 2/3). **Advisor:** Fable 5.2, before the freeze, staying within its text. It said "newest" fails by count, proposed the forced reading, predicted the depth bias (it was total) and the risky collisions (10 of 10), and suggested the null, which turned out to be decisive.
+
+**Referee hand-off.** The decision note is `research/NATIVE-SPINE-20261119-001/native_spine.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- `rulelib.forced_fraction` (the alternating digraph and its components);
+- `shuffled_has_perfect`;
+- the most-chains depth split on one round by hand.

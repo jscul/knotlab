@@ -172,3 +172,12 @@ round-25 entries), with R1, R3, R3m and R3n, both R3 and R3n under three seeded 
 verdict at each horizon from largest + 1 down to the first failure at or below largest − 2. C1–C6 and N3–N5 are scored on pass 3.
 C7 becomes: the number of stages whose R3 verdict differs between the side-limited pass 1 and the exact pass 3, reported, not
 predicted.
+
+## Amendment 4, a pass that finishes (2026-11-19 03:15 UTC, before the readout)
+
+Pass 3 ran at about 400 seconds a shard (median 235, longest 2,764; the exact tables of grown stages are dense, and R3m is the
+slowest reader), nine hours in all, so it was stopped after 77 of its 1,118 shards (1,925 arrangements, every stage, kept). No
+verdict of it has been read. `job_exact2.py` reads the remaining 24,516 arrangements with the same exact tables, stages and readers,
+except: stages of 41 to 120 junctions are read only for every 4th arrangement in sorted order (index divisible by 4), and there
+without R1 and R3m. Every arrangement keeps every stage of at most 40 junctions. The predictions are scored on passes 3 and 4
+together; C2's R3m part and C6 cover stages of at most 40 junctions outside the 1,925, and the readout says so.

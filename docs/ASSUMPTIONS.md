@@ -3285,6 +3285,8 @@ evidence: results and their status come from the records each entry links.
   if a few families and a short generating set cover them. "Shared across the universe" is an interpretation and stays one: no
   catalogue can settle it.
 - **History.**
+  - 2026-11-19 · `DEAD-CAP-20261119-001` refereed (R1, confirmed line by line). The in-class catalogue within five places is
+    complete. Rates for two or more cycles are system singularities, computable but not closed forms. Status unchanged.
   - 2026-11-19 · `DEAD-CAP-20261119-001` (proved; [decision note](../research/DEAD-CAP-20261119-001/dead_cap.md)): within five
     places the whole proved class is classified, dead knots included. The growth class is the rank of the map's pieces: one cycle
     gives a rational count series, two or more an algebraic one. A branch system of a few equations gives every eddy's count

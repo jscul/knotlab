@@ -120,3 +120,17 @@ predicted. It bet against C1 (as first written), C4 and C3.
 `artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/summary.json`. The gate C0(b) is run by `gate.py`.
 The study stops after one run and the readout; misreads are classified (what they share) and reported, not chased with a new reader
 in this study. Advisor before the freeze: below.
+
+## Amendment 1, before the readout (2026-11-19)
+
+Written while the run was under way and before any case was read, after the RING-READ referee found that side-limited tables miss
+cuts that wrap a ring (`RING-READ-20261118-001/referee-R1/report.md`). Two additions, no prediction changed:
+- **Exact-table sensitivity (C7).** `exact_table.py` builds the table with no limit on either side's size (the referee's method,
+  include/exclude growth of connected sides with a max-flow cut, written afresh), validated by `validate_exact.py` against the
+  referee's six wrong entries at ring round 25. It is run on (a) every census stage of more than 14 junctions where R3 or R3m is not
+  exact, and (b) every 50th census stage of more than 14 junctions where both are exact (in arrangement order), and R3 and R3m are
+  rerun on it. **C7: on every such stage the exact table equals the side-limited one at every distance up to the largest junction
+  less one, and no verdict of R3 or R3m changes.** Fails when an entry differs inside that range or a verdict changes. Stages of 14 or
+  fewer junctions already have complete tables.
+- **Timeouts.** A shard that times out three times (900 seconds each) is rerun one arrangement per case with a 3,600-second limit
+  (`job_single.py`, same functions), so the census stays complete.

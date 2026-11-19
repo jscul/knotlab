@@ -1,7 +1,7 @@
 # Do two arrangements the cheapest growth reaches share a bond-distance table with different states?
 
 Epic `GROWN-PAIR-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `UNIQUE-TABLE-20261119-001#1`.
-Assumption A97; goal G1. **Referee pending.**
+Assumption A97; goal G1. **Refereed (R1): confirmed, no Block, no Narrowing; three record points folded in (Referee R1 below).**
 
 **Record.** Pre-registration (frozen, commit `6d8f1cdca`) and Amendment 1 (`6d894fd0d`, after the first pairing script ran out of
 time, before any pair was read): [preregistration.md](preregistration.md). Code:
@@ -10,6 +10,8 @@ after the run `other_states.py`, `two_rounds.py`). Results:
 [pairs2.json](../../artifacts/GROWN-PAIR-20261119-001A/GROWN-PAIR-20261119-001A-E001_pairs/pairs2.json),
 [other_states.json](../../artifacts/GROWN-PAIR-20261119-001A/GROWN-PAIR-20261119-001A-E001_pairs/other_states.json),
 [two_rounds.json](../../artifacts/GROWN-PAIR-20261119-001A/GROWN-PAIR-20261119-001A-E001_pairs/two_rounds.json).
+`pairs2.json`'s next-stage tally (`other_state_grown_groups_next_stage`: 79, 3, 70) is an earlier pass by hash with one provenance
+per arrangement, superseded by `other_states.json`'s exact 85 / 3 / 64, which the note uses and the referee reproduces.
 
 ## The answer
 
@@ -21,10 +23,12 @@ after the run `other_states.py`, `two_rounds.py`). Results:
 - **They stay together.** Of the 88 such groups whose next stage is in range, 85 again have one table and still different states one
   round later, and all 54 checked two rounds later as well. So within two rounds the growth does not separate them at the level of
   distances, unlike the six static rivals of `UNIQUE-TABLE-20261119-001`, which the law never makes and which differ at once.
-- **Where junctions meet at most once, no such pair appears.** 80 groups of grown arrangements of that kind share a table, and in
+- **Where junctions meet at most once, no such pair appears at up to 14 junctions** (and, by the referee's check, at 15 and 16).
+  80 groups of grown arrangements of that kind share a table, and in
   every one of them the allowed states are the same up to renaming: the arrangements differ only in which junction holds what. So
   at these sizes the knots that share two distinctions are what lets distances lose the states.
-- **Sharing a table is common; sharing it with other states is rare.** 32,207 of 51,959 non-isomorphic stage arrangements share
+- **Sharing a table is common; sharing it with other states is rare.** The 52,163 stages are 51,959 non-isomorphic arrangements;
+  32,207 of them share
   their table with another (9,498 groups); 4,626 groups contain two or more grown arrangements; 4,474 of those agree in their states
   up to renaming, and 152 do not.
 
@@ -33,10 +37,10 @@ after the run `other_states.py`, `two_rounds.py`). Results:
 | All (any provenance) | 9,498 |
 | With two or more grown arrangements | 4,626 |
 | … of these, states agree up to renaming (same states, other junctions) | 4,474 |
-| … of these, other states | 152 |
+| … of these, other states | 152 (151 with two state groups, one with three) |
 | … … next stage in range: one table again, states still differ / tables differ | 85 / 3 |
 | … … two rounds on, in range: one table, states differ | 54 of 54 |
-| Grown groups where junctions meet at most once: states agree / differ | 80 / 0 |
+| Grown groups where junctions meet at most once: states agree / differ | 80 / 0 (the referee's 81 adds one group that also holds a stage where two junctions share two; same states) |
 
 ## The two notions, and what is counted
 
@@ -113,6 +117,22 @@ a symmetry about 30% (held), among meet-once stages about 35% (a same-states pai
 **Corrections:** none. **Goals:** G1 checkpoint (obstruction learned). **Assumptions:** A97 gains this study (status unchanged; its
 sharper test now answered for complete rounds, with knots sharing two). **Basket:** #2 is 3/3 and untaken, so it is recorded as a
 sub-goal (B205); B203, B204 remain.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), its own growth engine, tables and searches. **Confirmed, no Block, no Narrowing; three record points,
+folded in above and logged in `docs/CORRECTIONS.md` (Not a block).**
+- **The 152.** Every listed pair regrown from its start: not isomorphic, exact tables isometric, states different by an exact search
+  over every table isometry; every start has two knots sharing two distinctions. Full membership rebuilt (460 grown stages): 151
+  groups have two state groups and one has three; no start reaches two state groups of one group.
+- **Next stages.** 85 / 3 / 64 one round on and 54 of 54 two rounds on, exactly.
+- **Meet once.** The whole population rebuilt (1,208 stages, equal round by round); 81 table groups, all same states (the study's 80
+  counts groups whose grown arrangements all meet once). One size past, at 15 and 16 junctions (254 stages), 8 groups, all same
+  states; `MEET-ONCE-20261119-001` continues to 40.
+- **Read, not rebuilt.** The population counts (52,163 stages; 9,498, 4,626, 4,474 groups), so the referee confirms that the 152
+  exist and are what the note says, not that they are all of them.
+- **Record points.** (1) the headline qualifier "at up to 14 junctions"; (2) which file's next-stage tally is superseded; (3) one
+  group has three state groups, of which `other_states.json` lists two, so its next-stage check covers those two.
 
 ## Final report as sent (2026-11-19 08:28 UTC)
 

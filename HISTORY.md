@@ -4,6 +4,15 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: reached collisions refereed
+
+- The study of reached collisions (`GROWN-PAIR-20261119-001`, [decision note](research/GROWN-PAIR-20261119-001/grown_pair.md))
+  was refereed with the referee's own engine and confirmed: 152 groups of grown arrangements share a bond-distance table but not
+  their allowed states, all from starts whose knots share two distinctions, and they persist two rounds.
+- **Clarified (not a block).** The headline that no such pair appears where junctions meet at most once now carries its size, up
+  to 14 junctions (the referee adds 15 and 16); the record says which next-stage tally is superseded and that one group has three
+  state groups.
+
 ## 19 November 2026: the loop catalogue refereed
 
 - The loop catalogue (`LOOP-CATALOGUE-20261119-001`, [decision note](research/LOOP-CATALOGUE-20261119-001/loop_catalogue.md))

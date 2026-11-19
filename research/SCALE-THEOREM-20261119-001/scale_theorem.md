@@ -100,3 +100,37 @@ all (n = 5, 6, 12).
 | --- | --- | --- | --- | --- | --- |
 | 1 | Mutually touching knots (first-round groups of three, two common neighbours): the out-of-class quarter, which holds every three- and four-dimensional sample | 3/3 — the rare dimensions live only there | 1/3 — a different complex is needed | find the complex on the census's 2,958 out-of-class starts → stop at one, or a start where none exists | Alternative · in the basket |
 | 2 | Three dimensions on purpose: build in-class starts with three chains in one piece (spiders) at 7 to 20 knots, and measure how rare they are under SCALE-SHARE's measure | 2/3 | 3/3 | enumerate in-class trees with three chains by size → stop at their measure | Alternative · proposed |
+
+## Final report as sent (2026-11-19 14:50 UTC)
+
+**Outcome:** Past the census, the proved theorem covers about three non-stalling starts in four at every size from 5 to 20 knots. Inside that class, two dimensions take over and three never occurs. I read SCALE-SHARE's own 64,000 samples, regenerated exactly, with the theorem instead of growing them. 6 of 7 frozen predictions held as scored; the seventh "failure" was a label slip in my scorer. Closed, referee pending.
+
+- **Coverage.** The proved class holds 83% of non-stalling starts at five knots and 73% to 77% from ten knots on. The rest have a first-round group of three (5–11%) or two live knots with two common neighbours (12–17%).
+- **Dimensions in the class.** Two dimensions rise from 85% of growers at five knots to 98% at twenty. One dimension falls from 12% to 2% of the class, and closing from 22% to 2%. Not one of the 12,270 growers in the class is three-dimensional. All 43 three- and four-dimensional samples sit outside the class, among knots that all touch each other.
+- **Why.** Three dimensions need a tree-like piece fed by three chains, and each chain needs a knot with open places left over. Open places per knot fall like √(5/n), so such pieces almost never appear; the advisor gave this argument before the run. Two dimensions come more and more from a relay and two chains together, which rises from 35% to 58% of the class's two-dimensional growers.
+- **Checks.** The class's two-dimensional share matches SCALE-SHARE's share of all growers within three points at every size. All 477 growing samples I regrew in the class (60 per size) agree with the theorem round by round to round 6, so the rule never parted from real growth.
+
+| Knots | In the class (of non-stalling) | Two dimensions among the class's growers | SCALE-SHARE, all growers |
+| --- | ---: | ---: | ---: |
+| 5 | 82.9% | 85.1% | 82.4% |
+| 8 | 76.5% | 91.2% | 88.7% |
+| 12 | 74.6% | 95.0% | 93.6% |
+| 20 | 73.3% | 97.7% | 98.1% |
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the theorem past the census | **Status:** Successful (6 of 7 held as scored; P2 a label slip) | The class holds 73–83% of non-stalling starts at every size; two dimensions rise to 98% in it and three never occurs; 477 of 477 regrown agree |
+| Local direction: an exact model of the cheapest parity growth | Continue | Proved on about three starts in four at every size; the rest is mutually touching knots |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Typical growth is two-dimensional, from chains and relays; three or more appears only among mutually touching knots |
+| Long-term goal: G17 | Capability gained | Typical and rare growth explained from proved statements at every size sampled |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Mutually touching knots (first-round groups of three, two common neighbours): the out-of-class quarter, home of every three- and four-dimensional sample | 3/3 | 1/3 | find a complex on the census's 2,958 out-of-class starts → stop at one, or a start where none exists | Alternative · in the basket |
+| 2 | Three dimensions on purpose: in-class starts with three chains in one piece, and their measure | 2/3 | 3/3 | enumerate in-class trees with three chains by size → stop at their measure | Alternative · proposed |
+
+**Corrections:** none. All four identification proofs are now refereed and confirmed, with their folds committed (7555411f3). The line summary is `research/DOUBLE-IDENT-20261119-001/line_summary.md`. **Goals:** G17 checkpoint (capability gained). **Assumptions:** none changed. **Basket:** a new direction from you, nothing taken from the basket. **Advisor:** Fable 5.2, before the freeze, staying within its text. Its mechanism for three staying rare held. It also asked me to rename the predictions, lower P4's floor, treat P7 as a test of selection with the in/out mix reported, and give counts and the shared code; all adopted.
+
+**Referee hand-off.** The decision note is `research/SCALE-THEOREM-20261119-001/scale_theorem.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check that `scalelib.theorem_class` uses DOUBLE-IDENT's class and rule unchanged, the integrity check against SCALE-SHARE's recorded classes, and P2's label mapping.

@@ -37,7 +37,7 @@
   "artifact_id": "BOND-READING-SCALE-20261119-001A-P001",
   "canonical_id": "BOND-READING-SCALE-20261119-001A-P001",
   "ticket": "BOND-READING-SCALE-20261119-001A",
-  "status": "Partial",
+  "status": "Proved",
   "title": "Bounds for marked bond readings under parity growth",
   "claim": "Give upper and lower bounds on the arity required for future readings and test three attachment junctions.",
   "standard_statement": "For a reachable graphic cut code and a coordinate permutation fixing its live marks, bound the arity of minimum positive cocircuit queries needed for dynamic extension.",
@@ -50,15 +50,12 @@
     "EXTEND-ROUND-20261119-001",
     "PARENT-RULE-20261119-001"
   ],
-  "source_contribution": "Investigate sharp size and interface bounds.",
-  "remaining_obligations": [
-    "Reachability and radius of witness families",
-    "Three attachment junctions and fixed-target distinctions",
-    "Recovering the equation space from a proper subfamily"
-  ],
+  "source_contribution": "A sharp scaling law in ordinary junctions, explicit distinction upper bounds and future-pair lower bounds, a sharp two-junction margin and true three-junction obstruction, and recovery of the equation space from a proper family of shared-distinction readings.",
+  "remaining_obligations": [],
   "validation": {
-    "level": "V0",
-    "status": "Open."
+    "level": "V1",
+    "status": "In-task independent proof audit, two implementations of lawful growth and direct bond checks on selected stages. Separate program referee pending.",
+    "result_sha256": "7cf0755362b82b589dd8b47ef003d7a700af600398b71eff0f9df4c017bfb482"
   },
   "completion_gate": "Prove each scoped assertion and report unrestricted status.",
   "lineage": {
@@ -75,5 +72,8 @@
     "identity": "proofs/BOND-READING-SCALE-20261119-001A/BOND-READING-SCALE-20261119-001A-P001_size/identity.json",
     "result": "proofs/BOND-READING-SCALE-20261119-001A/BOND-READING-SCALE-20261119-001A-P001_size/result.json"
   },
-  "novelty": "candidate-local-delta"
+  "novelty": "candidate-local-delta",
+  "conclusion": "For carrying every later bond reading under a renaming fixing the growing end, the worst-case present order is linear in ordinary junctions. In literal distinctions it is at least square-root and at most linear. Two shared attachment junctions give a sharp one-mark margin for a fixed future order. Three or more permit a next pair to expose an ambiguity of arbitrarily high present order.",
+  "claim_scope": "Positive-age stages of the finite complete cheapest-count homogeneous parity growth law. One specified renaming fixes every live distinction pointwise. Unrestricted means arbitrary ordinary meeting multiplicities in this law.",
+  "unrestricted_open_question": "The unrestricted sharp distinction exponent, the sharp junction exponent for next pairs alone, and the absolute minimum marked sizes from present order three onward."
 }

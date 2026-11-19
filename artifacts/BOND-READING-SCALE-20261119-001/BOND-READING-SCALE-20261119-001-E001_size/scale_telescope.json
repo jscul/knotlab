@@ -1,0 +1,355 @@
+{
+  "method": "Enumerate all outer signs and marked-middle representatives. Unmarked same-price shields permute freely. A dynamic minimum over their counts tests connectedness of both shores before scoring. Every moved query contains a or c, so at most r-1 shield sites of any color/price are needed explicitly.",
+  "cases": [
+    {
+      "arity": 2,
+      "anchors": 1,
+      "shields_per_hub": [
+        3,
+        3
+      ],
+      "test_to_hub": 4,
+      "test_to_special_anchor": 4,
+      "shield_to_hub": 14,
+      "initial_exterior_price": 14,
+      "stages": [
+        {
+          "red_links_at_one": 0,
+          "rows": [
+            {
+              "order": 1,
+              "moved_representative_queries": 4,
+              "failures": 0
+            },
+            {
+              "order": 2,
+              "moved_representative_queries": 44,
+              "failures": 0
+            }
+          ],
+          "first_failure": null
+        },
+        {
+          "red_links_at_one": 1,
+          "rows": [
+            {
+              "order": 1,
+              "moved_representative_queries": 4,
+              "failures": 0
+            },
+            {
+              "order": 2,
+              "moved_representative_queries": 56,
+              "failures": 8
+            }
+          ],
+          "first_failure": {
+            "query": [
+              [
+                "a",
+                "hub"
+              ],
+              [
+                "R1",
+                "hub"
+              ]
+            ],
+            "image": [
+              [
+                "c",
+                "hub"
+              ],
+              [
+                "R1",
+                "hub"
+              ]
+            ],
+            "values": [
+              38,
+              41
+            ],
+            "order": 2
+          }
+        }
+      ],
+      "changing_link": [
+        "R0",
+        "outside"
+      ],
+      "decisive_query": {
+        "query": [
+          [
+            "a",
+            "hub"
+          ],
+          [
+            "R1",
+            "hub"
+          ]
+        ],
+        "image": [
+          [
+            "c",
+            "hub"
+          ],
+          [
+            "R1",
+            "hub"
+          ]
+        ],
+        "values": [
+          38,
+          41
+        ],
+        "order": 2
+      },
+      "previous_values": [
+        49,
+        49
+      ],
+      "literal": {
+        "ordinary_sites": [
+          44,
+          72,
+          74
+        ],
+        "distinctions": [
+          350,
+          378,
+          380
+        ],
+        "two_pole_price": [
+          14,
+          1
+        ],
+        "swapped_name_pairs": [
+          [
+            0,
+            16
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            3,
+            19
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            5,
+            21
+          ],
+          [
+            6,
+            22
+          ],
+          [
+            7,
+            23
+          ]
+        ],
+        "decisive_old_names": [
+          0,
+          47
+        ],
+        "images": [
+          16,
+          47
+        ]
+      }
+    },
+    {
+      "arity": 3,
+      "anchors": 2,
+      "shields_per_hub": [
+        6,
+        6
+      ],
+      "test_to_hub": 2,
+      "test_to_special_anchor": 3,
+      "shield_to_hub": 6,
+      "initial_exterior_price": 4,
+      "stages": [
+        {
+          "red_links_at_one": 0,
+          "rows": [
+            {
+              "order": 1,
+              "moved_representative_queries": 6,
+              "failures": 0
+            },
+            {
+              "order": 2,
+              "moved_representative_queries": 144,
+              "failures": 0
+            },
+            {
+              "order": 3,
+              "moved_representative_queries": 1670,
+              "failures": 0
+            }
+          ],
+          "first_failure": null
+        },
+        {
+          "red_links_at_one": 1,
+          "rows": [
+            {
+              "order": 1,
+              "moved_representative_queries": 6,
+              "failures": 0
+            },
+            {
+              "order": 2,
+              "moved_representative_queries": 168,
+              "failures": 0
+            },
+            {
+              "order": 3,
+              "moved_representative_queries": 2282,
+              "failures": 16
+            }
+          ],
+          "first_failure": {
+            "query": [
+              [
+                "a",
+                "hub"
+              ],
+              [
+                "R1",
+                "hub"
+              ],
+              [
+                "R2",
+                "hub"
+              ]
+            ],
+            "image": [
+              [
+                "c",
+                "hub"
+              ],
+              [
+                "R1",
+                "hub"
+              ],
+              [
+                "R2",
+                "hub"
+              ]
+            ],
+            "values": [
+              37,
+              40
+            ],
+            "order": 3
+          }
+        }
+      ],
+      "changing_link": [
+        "R0",
+        "outside"
+      ],
+      "decisive_query": {
+        "query": [
+          [
+            "a",
+            "hub"
+          ],
+          [
+            "R1",
+            "hub"
+          ],
+          [
+            "R2",
+            "hub"
+          ]
+        ],
+        "image": [
+          [
+            "c",
+            "hub"
+          ],
+          [
+            "R1",
+            "hub"
+          ],
+          [
+            "R2",
+            "hub"
+          ]
+        ],
+        "values": [
+          37,
+          40
+        ],
+        "order": 3
+      },
+      "previous_values": [
+        40,
+        40
+      ],
+      "literal": {
+        "ordinary_sites": [
+          31,
+          39,
+          41
+        ],
+        "distinctions": [
+          202,
+          210,
+          212
+        ],
+        "two_pole_price": [
+          4,
+          1
+        ],
+        "swapped_name_pairs": [
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            4,
+            16
+          ],
+          [
+            5,
+            17
+          ]
+        ],
+        "decisive_old_names": [
+          0,
+          32,
+          44
+        ],
+        "images": [
+          12,
+          32,
+          44
+        ]
+      }
+    }
+  ]
+}

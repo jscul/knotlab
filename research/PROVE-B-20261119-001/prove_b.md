@@ -1,8 +1,8 @@
 # Can the distances version of the one-round extension be proved?
 
 Epic `PROVE-B-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `HUNT-SHORTEN-20261119-001#1`.
-Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; two points corrected (Referee R1 below). Stress test pending:** part M's last 9 of 27 cases are still running
-(`docs/LONG_RUNNING.md`, PROVE-B-M1).
+Assumptions A97, A108; goal G1. **Refereed (R1): confirmed, no Block; two points corrected (Referee R1 below).** Part M has finished, and its result is folded in below (it was the stress test
+pending at the close).
 
 **Record.** Pre-registration, frozen before the hunt (commit `5042a81dc`), and Amendment 1 (commit `8fba03a6e`, after Codex's
 counterexample and before part M): [preregistration.md](preregistration.md). Proof:
@@ -45,7 +45,7 @@ counterexample and before part M): [preregistration.md](preregistration.md). Pro
 | --- | ---: | --- |
 | P0: Proposition X through the test | 32 symmetries | all fail (held) |
 | P1: starts of 3 or 4 knots sharing up to 4 (3) distinctions, up to three rounds | 35,735 starts; 42,771 open stages; 1,249,716 reading-keeping symmetries, 1,249,715 tested to the end | **no failure** (held; the last one was cut by a stage alarm; 6 stages late, 38 capped) |
-| P2, P3 (Amendment 1): meet-once starts of at most 6 junctions, the start and its round-1 stage | 44,426 starts so far (18 of 27 cases); 23,577 reading-keeping symmetries | no failure so far (**pending**) |
+| P2, P3 (Amendment 1): meet-once starts of at most 6 junctions, the start and its round-1 stage | 85,742 starts; 33,245 starts and 28,833 round-1 stages with a next round; 1,096 and 105,968 reading-keeping symmetries | **no failure** (held; 29 cut by stage alarms, 31 stages late) |
 | Codex's two reached counterexamples (meeting twice; meeting once) | 8 and 48 symmetries | all fail, reproduced |
 | Exploratory: reading-keeping, equation-breaking symmetries that keep three-way readings | 164,052 sampled | **0** |
 
@@ -77,8 +77,8 @@ What this adds:
 
 ## Limitations
 
-- The meet-once hunt is part-finished. Its stages are rounds 0 and 1 from starts of at most 6 junctions, and Codex's six-junction
-  failures appear only at round 2.
+- The meet-once hunt covers rounds 0 and 1 from starts of at most 6 junctions. Codex's six-junction failures appear only at round
+  2, and its seven-junction one at round 1, both outside it; it agrees with Codex's census.
 - The three-way observation is a sample after the read-out: every 25th start of part B. It is a lead, not a result.
 - Claim B with three-way readings added is not proved.
 

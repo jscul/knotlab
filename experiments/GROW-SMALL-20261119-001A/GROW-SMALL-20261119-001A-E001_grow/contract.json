@@ -13,7 +13,7 @@
  },
  "public_inputs": {
   "code": "job.py (sha256 f7d84769c2fc7d5ec795bccb6dc4586edbdd53d208d4137e5c263259f8f07d89), pairs_grow.py (sha256 48f04b68a050642b54006ec41bbf27a5d269dfe57bc8e9be9967b3be9a29289f), targeted.py (sha256 776c0bd2b3bb6892edf5debc8bb863690129831958e9bf5d25a554d8e87d6abb)",
-  "run": "scripts/longrun.py launch job.py --out runs/grow-small (8 workers, 16G cap); .venv/bin/python -B pairs_grow.py runs/grow-small; .venv/bin/python -B targeted.py",
+  "run": "scripts/longrun.py launch job.py --out runs/grow-small2 (8 workers, 16G cap); .venv/bin/python -B pairs_grow.py runs/grow-small2; .venv/bin/python -B targeted.py",
   "reused": "PARENT-RULE-20261119-001B plib.py, census_job.py, static_job.py, static_pairs.json; MEET-ONCE-20261119-001A pairs_meet2.py"
  },
  "forbidden_inputs": [
@@ -25,12 +25,20 @@
   "G1": "no other-states collision, none undecided",
   "G2": ">= 100 same-states collision groups",
   "C0": "472 of 472 recovered",
-  "K": "meet once, depth >= round, relabelled copies isomorphic"
+  "K": "meet once; every open stage of round r has depth >= r; relabelled copies isomorphic"
  },
  "decision_rules": {
   "each": "as stated; undecided reported"
  },
  "stop_rule": "One run each.",
  "runtime": "about 15 minutes for the run",
- "amendments": []
+ "amendments": [
+  {
+   "id": 1,
+   "date": "2026-11-19",
+   "when": "after the first launch stalled (28 minutes, one case), before any stage of the run was read; targeted.py had already run and been read",
+   "change": "arrangement isomorphism and hash on the junction graph with loose and shared counts (job.py sha256 99e6a5b1688d5c0d245fef76e38286849ab060cfcc857bec9caa472137ce6768, pairs_grow.py sha256 4b240252e2531866338de06ff23ddbdca03a53df30c2dc3ace10980ef9a6c047); K's depth clause restricted to open stages",
+   "unchanged": "G1, G2, C0, the population, the pairing, targeted.py"
+  }
+ ]
 }

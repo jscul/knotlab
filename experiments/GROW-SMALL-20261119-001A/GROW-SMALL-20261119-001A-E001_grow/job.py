@@ -45,14 +45,37 @@ def grow(stars, rounds=ROUNDS):
     return out
 
 
+def jgraph(stars):
+    """The junction graph with each junction labelled by its loose count and each edge by its shared count: two arrangements are
+    isomorphic exactly when these are (the loose distinctions of one junction are interchangeable), and the graph has no twin
+    leaves for VF2 to permute."""
+    own = L.owners(stars)
+    g = nx.Graph()
+    loose = Counter(js[0] for js in own.values() if len(js) == 1)
+    for j in range(len(stars)):
+        g.add_node(j, k=str(loose[j]))
+    for js in own.values():
+        if len(js) == 2:
+            u, v = js
+            if g.has_edge(u, v):
+                g[u][v]['m'] += 1
+            else:
+                g.add_edge(u, v, m=1)
+    return g
+
+
 def same_arrangement(a, b):
-    """Isomorphism of arrangements, with cheap invariants first (VF2 alone can be slow on near-misses)."""
+    """Isomorphism of arrangements on their junction graphs, with cheap invariants first."""
     if len(a) != len(b) or sorted(map(len, a)) != sorted(map(len, b)):
         return False
-    ga, gb = L.incidence(a), L.incidence(b)
-    if nx.weisfeiler_lehman_graph_hash(ga, node_attr='k', iterations=4) != nx.weisfeiler_lehman_graph_hash(gb, node_attr='k', iterations=4):
+    ga, gb = jgraph(a), jgraph(b)
+    if ga.number_of_edges() != gb.number_of_edges():
         return False
-    return L.arrangement_iso(a, b)
+    if nx.weisfeiler_lehman_graph_hash(ga, node_attr='k', edge_attr='m', iterations=4) != \
+            nx.weisfeiler_lehman_graph_hash(gb, node_attr='k', edge_attr='m', iterations=4):
+        return False
+    return nx.algorithms.isomorphism.GraphMatcher(ga, gb, node_match=lambda x, y: x['k'] == y['k'],
+                                                  edge_match=lambda x, y: x['m'] == y['m']).is_isomorphic()
 
 
 def self_grown_depth(stars, cap=4):
@@ -89,7 +112,7 @@ def hashes(stars, table):
     for (a, b), d in table.items():
         g.add_edge(a, b, d=str(d))
     th = nx.weisfeiler_lehman_graph_hash(g, edge_attr='d', iterations=4)
-    ah = nx.weisfeiler_lehman_graph_hash(L.incidence(stars), node_attr='k', iterations=4)
+    ah = nx.weisfeiler_lehman_graph_hash(jgraph(stars), node_attr='k', edge_attr='m', iterations=4)
     return th, ah
 
 

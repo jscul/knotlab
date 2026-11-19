@@ -93,3 +93,20 @@ round-1 stages of 10 to 14 junctions whose starts are themselves such a pair.
 ## Runs and stop rule
 
 `job.py` (113 cases, 8 workers, 16G cap), then `pairs_grow.py` and `targeted.py`. One run each; then stop.
+
+## Amendment 1 (2026-11-19, after the first launch stalled, before any stage of the run was read)
+
+- **Why.** The first launch of `job.py` stalled: after 28 minutes only the 2-junction case had finished. A traceback showed VF2
+  permuting the twin leaves of arrangement incidence graphs inside the self-grown test. The run was stopped and its output
+  discarded.
+- **What changes.**
+  - Arrangements are now compared on their junction graphs, each junction labelled by its loose count and each edge by its shared
+    count. Two arrangements are isomorphic exactly when these graphs are, since the loose distinctions of one junction are
+    interchangeable. Cheap invariants are checked first. The arrangement hash and `pairs_grow.py`'s classes use the same graph.
+    The verdicts do not change, only the speed (5-junction starts: 35 s per case).
+  - **K's depth clause is for open stages.** A closed stage has no live junction, so its depth is 0 by definition, as in
+    PARENT-RULE's Theorem 2. A smoke test on the 5-junction starts showed this: all 47 stages there with depth below their round
+    are closed. The clause now reads "every open stage of round r has self-grown depth ≥ r".
+- **Already seen.** `targeted.py` (C0 and T) ran under the frozen design before this amendment, and its result was read: C0
+  recovered 472 of 472 groups, and T found other-states collisions among grown pairs. `verify_t.py` then checked T's collisions
+  outside the pipeline, as the frozen protocol asks. The amendment touches neither script, and does not change G1, G2 or C0.

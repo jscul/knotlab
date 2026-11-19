@@ -42,7 +42,7 @@ def classes_of(rows):
     cls = []
     for r, st in items:
         for c in cls:
-            if L.arrangement_iso(c['stars_fs'], st):
+            if GJ.same_arrangement(c['stars_fs'], st):
                 c['prov'].append((r['n'], r['atlas'], r['loose'], r['round']))
                 break
         else:

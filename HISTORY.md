@@ -4,6 +4,14 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: a referee's sentence on hidden junctions scoped
+
+- The referee's report on `VARIABLE-OUTPUT-READER-20261118-001K` said that a full-table symmetry moves a junction only where the
+  three-parent menu is empty.
+- **Narrowed.** That holds in the families checked: 001K's to width 30, and the binary-third family of
+  `VARIABLE-OUTPUT-READER-20261118-001L` to width 32. Under the full law it fails. A width-46 continuation keeps all 1,035
+  distances equal and hides a junction while eight triples are legal, with the same menu on both sides. Not a block.
+
 ## 19 November 2026: growth without rounds, refereed
 
 - The study of growth without rounds (`ROUND-FREE-20261119-001`,

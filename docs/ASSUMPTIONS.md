@@ -162,7 +162,7 @@ evidence: results and their status come from the records each entry links.
 | [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
 | [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Assumed |
 | [A107](#a107--small-joins-of-a-ring-and-a-two-fold-piece-are-weighted-uniformly-over-one-bare-census) | Small joins of a ring and a two-fold piece are weighted uniformly over one bare census | measure | Assumed |
-| [A108](#a108--the-cheapest-growth-reads-which-junction-holds-which-distinction-not-only-the-allowed-states) | The cheapest growth reads which junction holds which distinction, not only the allowed states | scope | Assumed |
+| [A108](#a108--the-cheapest-growth-reads-which-junction-holds-which-distinction-not-only-the-allowed-states) | The cheapest growth reads which junction holds which distinction, not only the allowed states | scope | Confirmed |
 | [A109](#a109--self-feeding-loops-are-few-in-kind-and-recur-as-shared-routines-the-owners-eddies) | Self-feeding loops are few in kind and recur as shared routines, the owner's eddies | working premise | Under challenge |
 
 ## Entries
@@ -3188,7 +3188,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A108 · The cheapest growth reads which junction holds which distinction, not only the allowed states
 
-**Assumed** · 2026-11-19 · scope
+**Confirmed** · 2026-11-19 · scope
 
 - **Statement.** The cheapest growth (`FRESH-COUNT-20261118-001`'s policy and fewest counts, A104) is applied to a presentation:
   a list of junctions and the distinctions each holds. Which distinctions are loose, which junctions are candidates, and how many
@@ -3203,6 +3203,11 @@ evidence: results and their status come from the records each entry links.
   irredundant one under not-all-equal. Ask whether it is well defined on the stages where same-state presentations join
   differently (`NAE-GROWTH-20261119-001#1`).
 - **History.**
+  - 2026-11-19 · Confirmed, with its reach measured, by `STATES-GROWTH-20261119-001`. Under not-all-equal a growth that reads only
+    the allowed states (the cheapest growth on the minimal constraints) exists, and equals the cheapest growth wherever the states
+    fix the presentation: 93% of small irredundant stages, with no disagreement in 1,939 trajectories while saturated. They part
+    only at redundant knots and where a triangle of knots or a double touch admits two presentations. Under parity looseness is
+    a choice the states cannot see (Whitney's theorem, 145 of 145 three-connected pairs). Reopenable.
   - 2026-11-19 · `MEET-ONCE-20261119-001` ([decision note](../research/MEET-ONCE-20261119-001/meet_once.md); refereed R1, no Block): 102 groups of reached meet-once stages of 15 to 40 junctions share their allowed states with other junctions (83 a closed stage and an open one of one junction fewer, 5 with the outside exchanged, 15 with another junction graph); only a reading of the junctions can tell them apart. Status unchanged.
   - 2026-11-19 · `UNIQUE-TABLE-20261119-001` ([decision note](../research/UNIQUE-TABLE-20261119-001/unique_table.md); referee pending): 72 of 527 symmetry-free census stages (and 61 of 1,389 controls) have another legal arrangement with the same allowed states and other junctions, which no table can decide. Status unchanged.
   - 2026-11-19 · Recorded by `NAE-GROWTH-20261119-001`. Among 2,644 small stages of the census growths, same-state presentations

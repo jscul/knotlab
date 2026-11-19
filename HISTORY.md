@@ -4,6 +4,14 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the cluster rule's second break
+
+- **Narrowed.** The referee of `CLUSTER-ALL-20261119-001` ([decision note](research/CLUSTER-ALL-20261119-001/cluster_all.md))
+  found a second shape on which the cluster rule fails inside its scope, from six knots. In it, a two-knot block and two
+  first-round groups of three form a cycle of blocks. There the rule can call a two-dimensional growth a ring, or a closing start
+  one-dimensional. It is in scope 25 times in 200,000 random arrangements of 6 to 10 knots, and the rule misses 23 of those. Every
+  five-knot result stands. Its mechanism is not yet explained.
+
 ## 19 November 2026: the cluster rule refereed
 
 - The study of one cluster rule for every start (`CLUSTER-ALL-20261119-001`,

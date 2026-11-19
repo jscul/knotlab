@@ -622,7 +622,8 @@ Does that rule cover every start (`CLUSTER-ALL-20261119-001`, frozen test,
 refereed)? Nearly: with the floor's endless chains and the relay of a
 finished piece added, it gives every round of all 24,383 five-knot census
 arrangements in its scope and 1,989 of 1,991 six-knot ones; it breaks where two
-sunflowers share two knots and one cluster carries two junctions. Read on the
+sunflowers share two knots and one cluster carries two junctions, and, as the
+referee found, where first-round groups of three form a cycle of blocks. Read on the
 census, a growth's dimension is the number of endless chains feeding one piece of
 the map, and a ring makes it exponential; two is typical because a relay or two
 one-chain knots is the commonest way to keep growing

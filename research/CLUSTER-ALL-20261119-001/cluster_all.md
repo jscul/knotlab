@@ -2,7 +2,7 @@
 
 Epic `CLUSTER-ALL-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-PAIR-20261119-001#1`. Goals
 G17 and G2. **Refereed:** report [R1](referee-R1/report.md), confirmed with two wording points, no Block, folded in on 19
-November (see Referee).
+November; its addendum found a second break inside the scope (a Narrowing, folded in the same day; see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `31617b54c` at 02:21 UTC after a pilot on every
@@ -36,6 +36,9 @@ words:
   each made from a different set of three earlier junctions, and the rule counts one. This needs six knots, which is why the
   five-knot census never met it. Two six-knot samples and both of the advisor's overlapping-sunflower falsifiers hit it (P2 and P3
   failed).
+- **A second break, also from six knots (found by the referee).** A two-knot block and two first-round groups of three that form
+  a cycle of blocks, each pair sharing one knot. There the rule can call a two-dimensional growth a ring, or a closing start
+  one-dimensional. Its mechanism is not yet explained. It never occurs in the five-knot census.
 - **What the rule says about the census's dimensions** (read after the test, on the whole census).
   - Every growth that does not stall is one of these:
     - it closes;
@@ -87,6 +90,19 @@ In the overlapping-sunflower falsifier, knot w1 touches a, b, c and knot w2 touc
 The advisor's argument for "one junction per cluster" needs every same-size subset of a block present. A block with a missing pair
 breaks that. Blocks that are full simplices, or merged simplices whose clusters are all present, keep it.
 
+**A second break (referee R1, addendum).** A block of two knots and two first-round groups of three (hyperedges) form a cycle of
+blocks, each pair sharing one knot. The scope excludes only a hyperedge sharing two or more knots with another block, so these
+are in scope, and the rule fails from round 2:
+- **Seed 6028024** (sizes 5, 3, 5, 5, 5, 5; blocks {0, 3}, {0, 2, 4}, {3, 4, 5}) grows 6, 5, 5, 6, 7, 8, …, two-dimensionally. The
+  rule gives 6, 5, 7, 11, 18, 30, … and calls it a ring.
+- **Seed 6029462** (blocks {2, 5}, {1, 2, 4}, {3, 4, 5}) closes, 6, 3, 1. The rule gives 6, 3, 3, 3, …, dimension 1.
+- **Both** are confirmed by the referee's engine and by this study's grower. The same two outcomes appear at 16 and 12 knots.
+- **How often.** In 200,000 random arrangements of 6 to 10 knots the shape occurs in scope 25 times, and the rule misses 23. It
+  never occurs in the five-knot census, so T1 stands.
+
+Why the rule fails there is not explained. A cycle through hyperedges is not one the growth unrolls, so a cycle of blocks is not by
+itself a ring.
+
 ## Known results, and what this adds
 
 As `RING-PAIR-20261119-001`, cited once there.
@@ -95,15 +111,16 @@ What this adds:
 - the rule covers the floor's chains, relays, merged sunflowers and first-round groups of three;
 - it predicts every round of the whole five-knot census and 99.9% one size past;
 - it explains the census's dimensions as chain counts;
-- the first counterexample, with its mechanism.
+- the first counterexample, with its mechanism. A second, found by the referee, is not yet explained.
 
 ## Limitations
 
 - Computed, not proved.
 - The chain-count reading of the dimension is post hoc: it was read on the census after the test. The rule's own long-horizon class
   (to round 160) is what was compared with the census's measured dimension.
-- Out of scope: a first-round group of three sharing two knots with another block (119 of the five-knot census). Wrong outside its
-  scope: blocks with a missing pair (from six knots).
+- Out of scope: a first-round group of three sharing two knots with another block (119 of the five-knot census). Wrong inside its
+  scope, from six knots: blocks with a missing pair, and cycles of blocks through first-round groups of three (referee addendum).
+  The rule can report a false ring there, so a ring found by the rule alone needs a growth to confirm it.
 - One policy (A104); sizes as the census gives them (A106) or bare (A107).
 
 ## Advisor
@@ -131,13 +148,17 @@ Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's backgr
   1. **Disclosure.** The scope's last cut was drawn after the 38 pilot arrangements it excludes had missed (Record). The frozen
      tests are unaffected: the predicate was fixed by hash before T1.
   2. **Wording.** "All 15,261" needs two named conventions; as coded the chain count matches 15,024 (The answer).
+- **Addendum, folded in the same day** (commit `fd3d07eac`; logged as above):
+  3. **Narrowing.** A second break inside the scope, from six knots: a two-knot block and two first-round groups of three forming
+     a cycle of blocks (Why it breaks there). "The break is understood" is narrowed: this second mechanism is unexplained. Every
+     five-knot result stands.
 
 ## Position
 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: one cluster rule for every growth of touching knots | **Status:** Partially successful | Exact on every in-scope arrangement through five knots (26,284 with the pilot) and 99.9% at six; first break found, with its mechanism (a cluster carrying two junctions) |
-| Local direction: an exact model of the cheapest parity growth | Continue | The break is understood: junctions are valid sets, which equal clusters only when a block's same-size sets are all present |
+| Local direction: an exact model of the cheapest parity growth | Continue | The first break is understood: junctions are valid sets, which equal clusters only when a block's same-size sets are all present; a second, cycles of blocks through first-round groups of three, is not (referee addendum) |
 | Broader exploration: what the cheapest growth builds | Known alternatives | Close; polynomial, of dimension equal to the number of endless chains feeding one piece; or exponential, through a ring |
 | Long-term goal: G17 Typical and rare meeting patterns (with G2) | Capability gained | The census's typical two and rare three and four are explained as chain counts, and the growth class is read from the map without growing |
 

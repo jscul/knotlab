@@ -1749,5 +1749,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Does one cluster rule predict every growth of touching knots? (`CLUSTER-ALL-20261119-001`) | [closure](proofs/CLUSTER-ALL-20261119-001Z/CLUSTER-ALL-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/CLUSTER-ALL-20261119-001/) |
 | 2026-11-19 | What rule do two joined rings of knots grow by? (`RING-PAIR-20261119-001`) | [closure](proofs/RING-PAIR-20261119-001Z/RING-PAIR-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/RING-PAIR-20261119-001/) |
 | 2026-11-19 | What does the growth build when joins come one at a time, without rounds? (`ROUND-FREE-20261119-001`) | [closure](proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/ROUND-FREE-20261119-001/) |
-| 2026-11-19 | Which growth is typical as starts of touching knots get larger? (`SCALE-SHARE-20261119-001`) | — | [folder](research/SCALE-SHARE-20261119-001/) |
+| 2026-11-19 | Which growth is typical as starts of touching knots get larger? (`SCALE-SHARE-20261119-001`) | [closure](proofs/SCALE-SHARE-20261119-001Z/SCALE-SHARE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/SCALE-SHARE-20261119-001/) |
 

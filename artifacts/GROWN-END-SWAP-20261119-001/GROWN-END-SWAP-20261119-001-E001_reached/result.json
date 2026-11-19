@@ -1,0 +1,88 @@
+{
+  "experiment_id": "GROWN-END-SWAP-20261119-001-E001",
+  "evidence_stage": "exploratory",
+  "status": "completed",
+  "freeze": "a254c8c5713f7b98f490a6eca2b757eab0383f26",
+  "contract_sha256": "0a61da3248aae1febd59ee26d03060b152dd31030fa273f1c0b5890f0c68c03a",
+  "primary_observable": "Positive. A reachable specified isometry fails on an old pair after the next lawful complete round; fresh permutations and old loose re-pairing cannot change the recorded discrepancy.",
+  "decision": "Stopped expansion at the independently certified old-pair witness.",
+  "proof": "proofs/GROWN-END-SWAP-20261119-001A/GROWN-END-SWAP-20261119-001A-P001_shared_distinctions/proof.md",
+  "proof_result_sha256": "30e217282fb5b842e166f13980d580866125dc061c84c0087cf008e965fba719",
+  "independent_review": "Internal proof and replay checks complete. Separate referee pending.",
+  "reached_sizes": [
+    [
+      6,
+      15
+    ],
+    [
+      10,
+      21
+    ],
+    [
+      14,
+      28
+    ]
+  ],
+  "all_current_names_count": 21,
+  "all_current_pair_entries_checked": 210,
+  "pairs_and_image": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "current": [
+    3,
+    3
+  ],
+  "next": [
+    2,
+    3
+  ],
+  "current_vs_extending_local_permutations": [
+    24,
+    8
+  ],
+  "cross_group_checks": {
+    "groups": [
+      "g000",
+      "g034",
+      "g074"
+    ],
+    "current_table_maps": 1024,
+    "carry_live_supports": 512,
+    "carry_full_growing_end": 0,
+    "remaining_149": "Not run after the positive stopping condition."
+  },
+  "controls": [
+    "Named reachable examples from six, two different seven-junction starts, and eleven junctions.",
+    "Unreachable static control, reachable identity, implied closure and wrong input permutation."
+  ],
+  "global_minimality": "untested",
+  "goal": "G1, obstruction to universal marked extension. A97 remains under challenge.",
+  "note_sha256": "c7fc2f5424590778a4ad23c6ba79147d3afbb3ef3b033114380aa881f3729def",
+  "source_files": {
+    "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/carried.json": "cbaac60b4c04e18e674204cdb3f7f4f78c080b6402f850d9aeeabe8b258fb1de",
+    "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construct_11.json": "0185ae8985e47321caa8a777b13d0120bd7b6905c35b92d5c479af268eb1b902",
+    "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construct_6.json": "aec60cabf99b32a70d2f94c00f39208de21d6df0cfd2b4187743226a590e2899",
+    "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construct_7.json": "21741d5de94fb4dbde8e12cae11db8a654f08e1d2d46452ea0ed3158efde8f2c",
+    "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construct_results.json": "64cfdcf3aaf05937a004b7346cc35391bfb3862e4dae07f25c3aec5dfebb4c92",
+    "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/core_results.json": "3cc89ea51dadef7af6462dd4a98b0fdd6e292fdd95c72342e496c24968a41ab1",
+    "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/verify_controls.json": "008399ef73ab784e60f56a8e4b6de8584fcc1ea00c97aaba3f7707e2655882e9",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/carried.md": "f446e2755d487b15c97894f790e784c7845ad671c171dacaa67a77c4ba88473c",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/carried.py": "943c3fd4454296e6d90b3c2969a8417555d5b8082a8e901e36589a1e18c91d9d",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construct.py": "2fda75b41cee638f1102412045c17e85874889197d2758e85f45fc231679dd5d",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construction.md": "a3935feb20a2399555854356c52331ab750078236971146621a47bd29036564f",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/contract.json": "0a61da3248aae1febd59ee26d03060b152dd31030fa273f1c0b5890f0c68c03a",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/core_search.md": "d75ff828381891cba449e81c0f8ce58cba064eac3341e0865e952d7c20d7e6b9",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/core_search.py": "ad14ada2150f5b0a7333ece8bb0d0927a932e7165e015a8a1d3620f00e5c93eb",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/identity.json": "bbd894da503751ce7ba7034345315893f9b379a509c023b7e67bdd3a34e15501",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/verify.md": "ec129c00f13fd92e20233df797dace8113fec5ad7f78e7ee9a59a6855ae27038",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/verify.py": "ae990a00539d7a2e336afdf8c3628b1ac47370860306c51a581adbe3fa49c718",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/verify_controls.py": "d6bd505512a2fe790f309a8712a228bf34b83729153ec5d9416b0ddd0850a054"
+  }
+}

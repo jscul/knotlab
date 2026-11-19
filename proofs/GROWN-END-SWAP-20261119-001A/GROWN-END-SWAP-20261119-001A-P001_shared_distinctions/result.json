@@ -1,0 +1,152 @@
+{
+  "proof_id": "GROWN-END-SWAP-20261119-001A-P001",
+  "status": "Proved",
+  "quantifier": "There exists a positive-age stage and a specified isometry preserving the whole growing end with no isometry of the next table that extends it. The same fixed-old obstruction holds under allowed within-holder repairs.",
+  "witness": "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construct_6.json",
+  "witness_sha256": "aec60cabf99b32a70d2f94c00f39208de21d6df0cfd2b4187743226a590e2899",
+  "law_and_table_replay": {
+    "sizes_in_junctions_and_distinctions": [
+      [
+        6,
+        15
+      ],
+      [
+        10,
+        21
+      ],
+      [
+        14,
+        28
+      ]
+    ],
+    "new_supports_by_round": [
+      [
+        [
+          9,
+          11,
+          15
+        ],
+        [
+          10,
+          12,
+          16
+        ],
+        [
+          13,
+          17,
+          18
+        ],
+        [
+          14,
+          19,
+          20
+        ]
+      ],
+      [
+        [
+          15,
+          16,
+          21
+        ],
+        [
+          17,
+          19,
+          22,
+          23
+        ],
+        [
+          18,
+          24,
+          25
+        ],
+        [
+          20,
+          26,
+          27
+        ]
+      ]
+    ],
+    "current_pairs_verified": 210,
+    "current_live_sites_fixed_pointwise": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "successor_pairs_verified": 378,
+    "old_pair_and_its_image": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "current_distances": [
+      3,
+      3
+    ],
+    "successor_distances": [
+      2,
+      3
+    ],
+    "mismatches_under_the_same_swap_with_all_fresh_fixed": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "current_permutations_of_four_interior_names": 24,
+    "extending_permutations_of_four_interior_names": 8,
+    "current_least_bond_sizes_for_0_1_15_and_2_1_15": [
+      4,
+      null
+    ],
+    "permutation_preserves_equations": false
+  },
+  "independent_check": "artifacts/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/verify_controls.json",
+  "independent_check_sha256": "008399ef73ab784e60f56a8e4b6de8584fcc1ea00c97aaba3f7707e2655882e9",
+  "local_relation_K1_K2_K3": {
+    "3": {
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "binding": true,
+      "coexistence": true
+    },
+    "4": {
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "binding": true,
+      "coexistence": true
+    },
+    "5": {
+      "is_knot": true,
+      "loss_on_erasure": true,
+      "binding": true,
+      "coexistence": true
+    }
+  },
+  "mathematical_scope": "Connected parity starts can have repeated meetings. Some old basis states change under the chosen permutation. Unmarked existence between two distinct reached arrangements and the meet-once restricted population are not settled here. Smallest size not claimed.",
+  "bound_files": {
+    "proofs/GROWN-END-SWAP-20261119-001A/GROWN-END-SWAP-20261119-001A-P001_shared_distinctions/proof.md": "999ceb56919ad3469a76e6f2ac1c6340b7424f4f9b02fff17e51e873bd2bcb35",
+    "proofs/GROWN-END-SWAP-20261119-001A/GROWN-END-SWAP-20261119-001A-P001_shared_distinctions/check.py": "0bb8a35066afa5a9af982aa81b885b8af96faa89a7a45336baa28b31884ccd7b",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/verify.py": "ae990a00539d7a2e336afdf8c3628b1ac47370860306c51a581adbe3fa49c718",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/verify_controls.py": "d6bd505512a2fe790f309a8712a228bf34b83729153ec5d9416b0ddd0850a054",
+    "experiments/GROWN-END-SWAP-20261119-001/GROWN-END-SWAP-20261119-001-E001_reached/construct.py": "2fda75b41cee638f1102412045c17e85874889197d2758e85f45fc231679dd5d"
+  },
+  "independence": "V1. Standard stateful full-round engine, a separately authored exact round replay, verification by connected shores and minimal XOR supports, and an internal adversarial proof review. An external or separate program-level referee has not been counted."
+}

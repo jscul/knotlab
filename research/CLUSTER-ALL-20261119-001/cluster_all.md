@@ -137,3 +137,38 @@ What this adds:
 and four dimensions explained as three or four chains on one piece; not forced). **Assumptions:** none new. **Basket:** B196,
 `FRESH-COUNT-20261118-001#1`, B202, `PLUS-ONE-20261118-001#1`, `JOIN-GROWTH-20261118-001#2` and `#3`, `RING-PAIR-20261119-001#2`
 and `#3`; none taken.
+
+## Final report as sent (2026-11-19 02:29 UTC)
+
+**Outcome:** The cluster rule nearly covers every start. It now includes the floor's endless chains, the relay of a finished piece, merged sunflowers and first-round groups of three. Set down before growing, it gave every round of all 24,383 five-knot census arrangements in its scope (99.5% of them: every stall, close and growth). It held on all 137 of those regrown to 45 rounds, and on 1,989 of the 1,991 six-knot samples in its scope. It breaks one size past, exactly where the advisor's falsifier aimed. Closed, partially successful, referee pending.
+
+- **The break.** Two first-round sunflowers that share two knots make a piece of the map with one pair missing. There, one cluster of four knots carries two junctions at once, and the rule counts one. This needs six knots, so the five-knot census never met it (P2 and P3 failed, by 2 cases each).
+- **What it explains (read after the test, on the whole census).** Every growth that does not stall is one of these:
+  - it closes;
+  - it has a dimension equal to the number of endless chains feeding one piece of the map;
+  - it holds a ring and grows exponentially.
+- **Where the chains come from.** A knot with two open distinctions left after its first-round joins feeds one chain, a knot with one left feeds two, and a finished piece that must go on feeds two through its relay.
+- **The census's dimensions.** This reproduces every one of the census's measured dimensions (15,261 polynomial growths, 0 to 4) and its 13 fast rings. Two is typical because a relay, or two one-chain knots, is the commonest way to keep growing. Three and four need three or four chains on one piece.
+- **Rules within rules.** Each piece is counted by the same self-referring recursion as two rings. The growth class is read off the map without growing anything.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: one cluster rule for every growth of touching knots | **Status:** Partially successful | Exact on every in-scope arrangement through five knots and 99.9% at six; the first break found, with its mechanism |
+| Local direction: an exact model of the cheapest parity growth | Continue | The break is understood: junctions are valid sets, which equal clusters only when a block's same-size sets are all present |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Close; polynomial, with dimension = endless chains feeding one piece; or exponential, through a ring |
+| Long-term goal: G17 (with G2) | Capability gained | The census's typical two and rare three and four are explained as chain counts; the class is read from the map alone |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Typical growth at scale: classify every six- and seven-knot arrangement, and large random ones, by the rule alone | 3/3 — does a ring (exponential) become typical as starts grow, and which dimension is typical: G17 at sizes growth can't reach | 3/3 — milliseconds per arrangement, 99.5% scope | census six and seven knots by the rule, sample larger, spot-check with growth → stop at the shares by knot count, or where the scope collapses | Selected · awaiting go-ahead |
+| 2 | Junctions as valid sets inside blocks with a missing pair (the advisor's set-level rule) | 2/3 — closes the break | 3/3 — mechanism and four failing starts | freeze it, test on the misses and a fresh six-knot sample → stop at all equal or the next break | Alternative · deferred |
+| 3 | Prove the identification (`RING-PAIR-20261119-001#2`) | 3/3 | 2/3 | as there | Alternative · deferred |
+
+**Corrections:** none. **Goals:** G17 checkpoint (capability gained); G2 checkpoint (obstruction learned: three and four dimensions are three or four chains on one piece, and nothing in the rule singles out three). **Assumptions:** none new. **Basket:** B196, `FRESH-COUNT-20261118-001#1`, B202, `PLUS-ONE-20261118-001#1`, `JOIN-GROWTH-20261118-001#2` and `#3`, `RING-PAIR-20261119-001#2` and `#3`; none taken. #1 and #2 are independent and could run in parallel. **Advisor:** Fable 5.2, before the freeze. It asked for the scope fraction, the scope fixed by hash, a horizon check, and T2 marked as a consistency check. It gave the hyperedge correction to the relay, and proposed the falsifiers; one of them found the break.
+
+**Referee hand-off.** The decision note is `research/CLUSTER-ALL-20261119-001/cluster_all.md`, and the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- `clusters.py`'s pendant, relay and hyperedge clauses against the policy;
+- the pilot history (four revisions, all disclosed);
+- the post hoc dimension reading, which was not frozen.

@@ -114,3 +114,40 @@ freeze, staying within its text.
 | 1 | The explosive kind (`BREAK-EDDIES-20261119-001`): the first starts past the class, a cycle of three blocks, where groups of three overlap | 3/3 — it decides A109 | 2/3 — the entry point is now exact: one cycle of three blocks | grow the smallest starts holding one cycle of three blocks and read what their groups of three do round by round → stop at a description, or a size where it changes kind | Alternative · proposed |
 | 2 | Prove the ceiling: no start in the class within five places grows faster than 2.3830 | 2/3 — a sharp bound on growth from knot size | 2/3 — compare every branch system with the theta's, which is the most branched the cap allows | bound each b_{p,B} by the theta's solution at the same z → stop at a proof, or a start that beats it | Alternative · proposed |
 | 3 | Dimension grows linearly under random trees (`WEIGHTINGS-20261119-001#1`) | 2/3 | 3/3 | prove each parity class's chain-carrying leaves concentrate → stop at a proof, or a size where the measured dimension departs | Alternative · in the basket |
+
+## Final report as sent (2026-11-19 17:13 UTC)
+
+**Outcome:** Within five places, the whole proved class is now classified, dead knots included. The growth class is read off how many independent cycles the map of joins has, and a short system of equations gives every count exactly. It matches the program's growth on all 13,307 starts I tried, every round. The fastest growth found is 2.3830, from an 11-knot start with two dead hubs. Closed, referee pending.
+
+- **The shape.** A live knot's places must cover the blocks it sits in, so their sizes sum to at most five. A knot therefore sits in at most two blocks, or in a single block of up to five, and blocks of three are the only branch points. A dead knot spends no place on demand, which is what lets branches start.
+- **The rule.**
+  - **No cycle:** the growth closes, or is polynomial with one dimension per endless chain, and any dimension occurs.
+  - **One cycle:** constant if bare; otherwise exponential, with a rational count series and rate the root of W(1/x) = 1.
+  - **Two or more cycles:** exponential at an algebraic rate. This needs a dead knot and at least 11 knots.
+- **Every count is exact.** Each piece has one equation per point and block it sits in, and they give the junctions round by round. They match the engine on all 10,549 census starts with a dead knot, 1,254 random starts, 1,500 starts built round dead hubs, and the families, every round.
+- **The fastest.** Rings of live knots top out at the golden ratio. With dead knots, the theta does better: two dead three-place hubs whose knots are joined pairwise. It grows at 2.3830, the root of 4z³ + 4z² = 1 read as 1/z. No sampled start beat it, and 133 tied it. I conjecture it's the ceiling for the class within five places.
+- **Where groups of three begin.** A first-round group of three is exactly a cycle of three blocks: three knots pairwise joined through three different knots, none common to all. I checked this on every small datum (15,470 that fail S3). It's the exact entry point for the explosive kind.
+- **One check failed as scored (D4).** I compared the one-cycle root with a numeric radius estimate. The estimator stops too early on linear systems: it reads 1.3187 where the true root is 1.3247, and agrees to 10⁻⁴ with 50 times the iterations. The exact counts carry the 1 − W denominator, so the theorem stands. The fault is the estimator's, and I've said so as post hoc.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: dead knots within five places | **Status:** Successful (proved; 5 of 6 checks as scored, D4 an estimator failure) | Shape theorem with a rank rule; every count exact on 13,307 starts |
+| Local direction: what the cheapest growth builds within five places | Research directions | The proved class within five places is classified; the ceiling is conjectured at the theta's 2.3830 |
+| Broader exploration: the eddy catalogue (A109) | Research directions | Complete inside the class; the explosive kind starts exactly at a cycle of three blocks |
+| Long-term goal: G17 | Capability gained | Growth within five places classified on the whole proved class, with exact counts |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The explosive kind: the first starts past the class, holding one cycle of three blocks | 3/3 | 2/3 — the entry point is now exact | grow the smallest starts with one cycle of three blocks and read what their groups of three do round by round → stop at a description, or a size where it changes kind | Alternative · proposed |
+| 2 | Prove the ceiling: nothing in the class within five places beats 2.3830 | 2/3 | 2/3 | bound every branch system by the theta's, the most branched the cap allows → stop at a proof, or a start that beats it | Alternative · proposed |
+| 3 | Dimension grows linearly under random trees | 2/3 | 3/3 | prove each parity class's chain-carrying leaves concentrate → stop at a proof, or a size where the measured dimension departs | Alternative · in the basket |
+
+**Corrections:** one, from the ring study's referee fold (e652e6d5c), reported earlier: a Narrowing. The golden-ratio ceiling is for rings of live knots, and "nothing within five places" was false. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A109 gets a history line: few in kind holds in the class within the cap, with exact counts. It stays Under challenge because of the explosive kind. **Basket:** `RING-CORES-20261119-001#2` taken. **Advisor:** Fable 5.2, before the freeze, staying within its text. It confirmed the profile bound, the class boundary and the pointing, adding that the deck group must be torsion-free. It derived the theta's rounds 12 and 13 by hand (8,910 and 18,375), and the system matches. It argued that two cycles need 11 knots, which the run's smallest confirms, and corrected "rational rate" to "rational series, algebraic rate".
+
+**Referee hand-off.** The proof is `proofs/DEAD-CAP-20261119-001A/DEAD-CAP-20261119-001A-P001_dead/proof.md` with `deadlib.py`, `job.py`, `merge.py` and `posthoc_rates.py`, and the decision note is `research/DEAD-CAP-20261119-001/dead_cap.md`. Please check:
+- Lemma 1's profile bound with dead knots;
+- Theorem 3's pointing with pendant points marked;
+- Theorem 4's rank-2 argument (strong connectivity on the 2-core);
+- the D4 failure's diagnosis.

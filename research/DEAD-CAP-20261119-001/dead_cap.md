@@ -1,7 +1,8 @@
 # Dead knots within five places: the growth class is the rank of the map
 
 Epic `DEAD-CAP-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `RING-CORES-20261119-001#2`. Goal G17.
-**Referee pending.**
+**Refereed:** report [R1](referee-R1/report.md), confirmed line by line, no Block; its points folded in on 19 November (see
+Referee).
 
 **Record.**
 - **The proof** (ticket A):
@@ -24,8 +25,9 @@ Epic `DEAD-CAP-20261119-001`, 19 November 2026, by Claude, on the coordinator's 
     finished piece counts two. Any dimension occurs; three or more need a dead knot.
   - **One cycle:** constant if the cycle is bare. Otherwise it is exponential at the root of W(1/x) = 1, where W is a product round
     the cycle that includes the trees hung off it. Its count series is rational.
-  - **Two or more cycles:** exponential at an algebraic rate, the singularity of a small system of equations. This needs a dead knot
-    and at least 11 knots.
+  - **Two or more cycles:** exponential at an algebraic rate, the singularity of a small system of equations. It is computable,
+    but not given in closed form. This needs a dead knot and at least 11 knots, both proved (the second by referee R1's general
+    step).
 - **Every count is exact.** A short system of equations, one per point and block it sits in, gives each piece's junctions round
   by round. It equals the program's own growth on all 13,307 starts tried, every round:
   - the 10,549 census starts with a dead knot;
@@ -54,12 +56,33 @@ Epic `DEAD-CAP-20261119-001`, 19 November 2026, by Claude, on the coordinator's 
 | Lemma 1: blocks of 2 to 5 points meeting in at most one; groups are candidate pairs; each knot's blocks sum to at most five | proved | D1: 167,349 data on every graph to 6 knots (43,702 in the class), no exception |
 | Lemma 2: the skeleton (3-blocks branch, at most 3 ways); the class boundary (no cycle of two or three blocks); rays only at lone points and 2-block ends | proved | D1, including all 15,470 data failing (S3): each has a cycle of three blocks |
 | Theorem 3: every piece's count from the branch system with pointing | proved | D2: 13,307 starts, counts equal to the engine on every round reached |
-| Theorem 4: the growth class is the rank | proved | D3: dims.predict agrees on all 13,307 |
-| Rank-1 rates as the root of W(1/x) = 1, compared numerically with the system's radius | failed as scored (numerics) | D4: 0 of 30 within 10⁻⁶; the radius estimate stops early on a linear system (1.3187 for 1.3247). With 50 times the iterations it agrees to 10⁻⁴, and D2's exact counts carry the denominator 1 − W |
+| Theorem 4: the growth class is the rank | proved | D3: dims.predict agrees on all 13,307 (not independent: the same structural reading) |
+| Rank-1 rates as the root of W(1/x) = 1, compared numerically with the system's radius | failed as scored (the estimator) | D4: 0 of 30 within 10⁻⁶. The estimator stops early on a linear system (1.3187 for 1.3247). Referee R1 demonstrated it: its own radius equals the root on 30 of 30, and the exact recurrences give the root on 16 of 16 |
 | The theta and T_1–T_3 | proved, computed | D5: in the class; the theta's counts follow the system, and it grows at 2.3830; T_1–T_3 have dimensions 3, 6, 12 |
 | No sampled start grows faster than the theta | held (conjecture) | D6: the run's fastest is 2.3830, reached by 133 starts. A post-hoc refinement of the 284 pieces above 2.25 gives at most 2.3829757679, the theta's exact rate |
 
-5 of 6 checks held as scored. D4's failure is in the radius estimator, not the theorem (post hoc).
+5 of 6 checks held as scored. D4's failure is in the radius estimator, not the theorem. The study's diagnosis was post hoc, and
+referee R1 demonstrated it.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread.
+- **Confirmed, line by line.**
+  - **Lemma 1's profile bound with dead knots.** The referee's own blocks on 61,694 live knots put every profile within the bound.
+  - **Theorem 3's pointing.** Its engine equals the exact counts on every round for 60 rank-2 and rank-3 starts, and the theta
+    follows to 18,375 at round 13.
+  - **Theorem 4's rank-2 argument.** Its own radius gives the theta 2.38297576779, against the exact 2.38297576791.
+- **"Classified" is earned for the whole class.** The rank ≥ 2 rates are system singularities, not closed forms. The ceiling stays a
+  conjecture.
+- **Folded in, each not a block.**
+  - **D4's diagnosis**, now demonstrated by the referee on all 30 pieces.
+  - **"D2 carries 1 − W"** was the theorem's statement, not a measurement.
+  - **The dead-knot step for rank ≥ 2**: all-live starts within the cap have rank at most 1.
+  - **The referee's general step for 11 knots.**
+  - **D3's independence**: it is not independent.
+- **The referee's own correction (logged in docs/CORRECTIONS.md).** Its RING-CORES-R1 remark that the wider golden-ratio claim was
+  "not contradicted where tested" was uninformative beyond five knots. Its 1.2288 came from out-of-class census starts, while
+  rank-1 dead-knot pieces already reach 1.711. The RING-CORES Narrowing stands.
 
 ## Assumptions
 

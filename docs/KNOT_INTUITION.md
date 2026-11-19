@@ -887,7 +887,7 @@ length (dead knots go faster: next entry). So
 in this class the catalogue's eddies are all there is
 ([decision note](../research/RING-CORES-20261119-001/ring_cores.md)).
 And with dead knots allowed, still within five places (`DEAD-CAP-20261119-001`,
-proof, referee pending)? A live knot's places cover the blocks it sits in, so it
+proof, refereed)? A live knot's places cover the blocks it sits in, so it
 sits in at most two, and blocks of three are the only branch points. Count the
 independent cycles of the map of joins. With none, the growth is polynomial,
 one dimension per endless chain. With one, it is constant if bare and otherwise

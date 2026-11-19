@@ -4,6 +4,16 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: dead knots within five places refereed
+
+- The classification of growth within five places on the whole proved class, dead knots included (`DEAD-CAP-20261119-001`,
+  [decision note](research/DEAD-CAP-20261119-001/dead_cap.md)), was refereed line by line and confirmed.
+- **Clarified (not a block).**
+  - One frozen check's failure was demonstrated to be its numeric estimator's.
+  - The steps showing that two or more cycles need a dead knot and at least 11 knots were written in.
+  - The rates of two or more cycles are the singularities of small systems, not closed forms.
+  - The referee withdrew its earlier remark on the golden-ratio ceiling as uninformative.
+
 ## 19 November 2026: rings within five places refereed
 
 - The classification of the eddies within five places with every knot live (`RING-CORES-20261119-001`,

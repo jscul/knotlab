@@ -5,7 +5,7 @@ from the linked records.
 - **All refereed and confirmed:** the four identification proofs, the reading past the census (SCALE-THEOREM), the weightings test
   (WEIGHTINGS) and the cap on places (CAP-CHAINS).
 - **Also refereed and confirmed:** the rings within five places (RING-CORES), which joins this line to the eddy catalogue.
-- **Referee pending:** dead knots within five places (DEAD-CAP), which classifies the whole proved class within the cap.
+- **Also refereed and confirmed:** dead knots within five places (DEAD-CAP), which classifies the whole proved class within the cap.
 
 ## First: two dimensions are typical of how starts are drawn, not of the growth
 
@@ -71,7 +71,7 @@ from twelve knots (WEIGHTINGS). That is the Narrowing above.
 | [WEIGHTINGS](../WEIGHTINGS-20261119-001/weightings.md) (frozen run) | Under seven weightings frozen before reading, two stays typical only where knots have at most five places, crowded or not. Under uniform random trees three or more is 12% at twelve knots and 37% at twenty; extra lines make exponential growth common. All 1,226 regrown samples agree with the theorem, 622 of them three- to six-dimensional or exponential | Nothing new; it narrows "two is typical" and overturns A106 as a reading of the growth | Confirmed (the samplers checked against their exact laws; every one of 6,271 hard in-class starts regrows as read; the cause credited to the cap, not crowding) |
 | [CAP-CHAINS](../CAP-CHAINS-20261119-001/cap_chains.md) (proof) | With no dead knot and at most five places, the knots form one line or one ring with single knots hung on it, so a piece carries at most two chains, and a tree start grows in at most two dimensions. Six places, or dead knots at five, allow any number | Adds a cap on places and no dead knot | Confirmed line by line (rechecked to 13 knots; the ring with a leaf grows at the root of x⁸ = x + 1, about 10% a round) |
 | [RING-CORES](../RING-CORES-20261119-001/ring_cores.md) (proof) | Within five places, with no dead knot, the eddies are exactly the rings carrying a hung knot or a spare. The count is rational with denominator 1 − W, where W is a product of three kinds of factor, and the rate is the root of W(1/x) = 1, at most the golden ratio for rings of live knots. 23,098 rings grow exactly as the formula says | Adds nothing; it reads the cap's ring cores | Confirmed (the golden-ratio ceiling is for rings of live knots: dead knots go faster, a Narrowing) |
-| [DEAD-CAP](../DEAD-CAP-20261119-001/dead_cap.md) (proof) | Within five places, dead knots included, the growth class is the rank of the map's pieces: trees polynomial with dimension equal to their chain ends, one cycle constant or exponential with a rational count series, two or more cycles exponential at an algebraic rate. A branch system gives every count exactly (13,307 starts). The 11-knot theta of two dead hubs grows at 2.3830, the fastest found | Adds dead knots | Pending |
+| [DEAD-CAP](../DEAD-CAP-20261119-001/dead_cap.md) (proof) | Within five places, dead knots included, the growth class is the rank of the map's pieces: trees polynomial with dimension equal to their chain ends, one cycle constant or exponential with a rational count series, two or more cycles exponential at an algebraic rate. A branch system gives every count exactly (13,307 starts). The 11-knot theta of two dead hubs grows at 2.3830, the fastest found | Adds dead knots | Confirmed line by line (rank ≥ 2 rates are system singularities, not closed forms; the ceiling stays a conjecture) |
 
 ## On what share of the census
 

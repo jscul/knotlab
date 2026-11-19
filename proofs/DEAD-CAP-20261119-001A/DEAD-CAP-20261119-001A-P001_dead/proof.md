@@ -12,6 +12,9 @@ Ticket `DEAD-CAP-20261119-001A`, 19 November 2026, by Claude, on the coordinator
   freeze caught that the spares count; disclosed).
 - `RELAY-IDENT-20261119-001A-P001`.
 
+**Refereed:** report R1 (`research/DEAD-CAP-20261119-001/referee-R1/report.md`), confirmed line by line, no Block. Its points
+are folded in below: D4's diagnosis demonstrated, the dead-knot step and the 11-knot step written in, and D3's independence.
+
 **How it was checked.**
 - The advisor checked the statements before the freeze, and independently predicted the theta's counts at rounds 12 and 13 (8,910
   and 18,375), which the system gives. Its points are folded in:
@@ -148,11 +151,20 @@ In the proved class within five places:
 - **Trees** of the map grow in any number of dimensions. Three or more need a dead knot (CAP-CHAINS).
 - **One-cycle pieces** have rational count series. Their rates are algebraic numbers, the roots of W(1/x) = 1. With every knot live they are the decorated rings, and the rate is at most the golden
   ratio (RING-CORES).
-- **Pieces of rank two or more** need a 3-block of Γ-degree 3 on their 2-core, and so a dead knot. They grow at algebraic rates.
+- **Pieces of rank two or more** need a dead knot. With every knot live, CAP-CHAINS and RING-CORES leave only paths, stars and
+  rings, so every piece has rank at most 1 (the step written in after referee R1). Such pieces grow at algebraic rates: each is the
+  singularity of its branch system, computable but not given in closed form.
   - The theta of two dead hubs, each with three five-place members joined pairwise through three connectors, has 11 knots and rank 2.
-  - **Nothing of rank 2 is smaller** (the advisor's count). A branch of Γ is a 3-block of degree 3 and no Γ-edge joins two of them,
-    so the smallest rank-2 skeleton is this theta: 5 blocks and 6 points. Each point has profile {2, 3}, so it touches exactly two
-    knots and cannot itself be a block's knot. So the 5 blocks' knots are not among the 6 points.
+  - **Nothing of rank 2 is smaller.** The advisor's count covers the smallest skeleton, the theta of 5 blocks and 6 points. Each
+    point has profile {2, 3}, touches exactly two knots, and so cannot itself be a block's knot.
+  - **The general step is referee R1's.** Any piece of rank ≥ 2 has two 3-blocks A = N(w_A) and B = N(w_B) of Γ-degree 3.
+    - Their six points are distinct, of degree 2, and none is w_A or w_B.
+    - Each point's 2-block knot u has exactly two live neighbours, so it is not w_A or w_B.
+    - u is one of the six points only as a mutual pair across A and B. Two mutual pairs make a cycle of three blocks, which is out of
+      the class. One leaves a dead two-place knot, which needs another dead knot.
+    - Every other u serves at most two of the six points.
+
+    So there are at least 6 + 2 + 3 = 11 knots.
   - Its system is a = (1 + zb)², b = 1 + za. Its singularity solves 4z³ + 4z² = 1, giving the rate 2.3830, above every all-live ring.
 
 **Outside the class** the theorem says nothing:
@@ -198,8 +210,8 @@ scored.
 | --- | --- | --- |
 | D1 | 167,349 data on every connected graph of 1 to 6 knots, every dead set and open assignment: 43,702 in the class, 68,236 out by (S4), 15,470 by (S3), 39,184 by (S0), 757 by (S6′) | no exception to Lemma 1, Lemma 2's skeleton and ray kinds, or the boundary: every datum failing (S3) under (S4) has a cycle of three blocks, and no other does |
 | D2 | 13,307 starts with a dead knot: the census's 10,549, 1,254 random starts of 6 to 16 knots, 1,500 skeleton starts of two to four dead hubs, and the theta with T_1–T_3 | the branch system's counts equal the engine's on every round reached of every start |
-| D3 | dims.predict on the same | agrees with Theorem 4's reading on all 13,307 |
-| D4 | the rank-1 root of W(1/x) = 1 against the system's radius, read numerically, on the 30 exponential rank-1 pieces | **failed as scored**: 0 of 30 within 10⁻⁶. The radius estimate (`branch_rate`, 4,000 iterations) stops too early on a linear system, whose iteration slows to a crawl near its pole: it reads 1.3187 where the root is 1.3247. With 200,000 iterations it reads 1.32462. D2's exact counts carry the denominator 1 − W, so the theorem stands; the estimator was at fault (post hoc) |
+| D3 | dims.predict on the same | agrees with Theorem 4's reading on all 13,307. This is not independent: dims.predict makes the same structural reading (referee R1) |
+| D4 | the rank-1 root of W(1/x) = 1 against the system's radius, read numerically, on the 30 exponential rank-1 pieces | **failed as scored**: 0 of 30 within 10⁻⁶. The estimator (`branch_rate`, 4,000 iterations) stops early on a linear system: past its pole the iteration diverges so slowly that it reads as finite. It reads 1.3187 where the root is 1.3247. Referee R1 demonstrated this on all 30 (`referee_dead.json`). Its own radius equals the root on 30 of 30. The estimator reads low on 30 of 30 at 4,000 iterations and moves up toward the root at 40,000. The growth's exact recurrence has the root as its rate on 16 of 16 where the rounds sufficed. (The study's own 200,000-iteration figure, 1.32462, had no artifact. That the counts carry the denominator 1 − W is the theorem's statement; D2, at 20 rounds, did not measure it.) |
 | D5 | the theta, T_1, T_2, T_3 | all in the class; the theta of rank 2 follows the system to round 13 and its radius gives 2.3830; T_1–T_3 have dimensions 3, 6 and 12 |
 | D6 | the fastest sampled rate against the theta's | held: the run's fastest is the theta's 2.38297, reached by 133 starts. A post-hoc refinement (`posthoc_rates.py`, Newton with a spectral-radius test) of the 284 pieces above 2.25 gives at most 2.3829757679, the exact theta value 1/z for 4z³ + 4z² = 1. The run's estimates were low by at most 1.1 × 10⁻⁵ |
 

@@ -781,6 +781,14 @@ through fewer than four knots, so a cluster and a shifted copy of it fit only in
 a cluster at least four points larger. Without a cycle the map falls into finite
 pieces, and a piece that finishes early keeps growing through a relay
 ([proof](../proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md)).
+And when knots take distinctions from the floor (`CHAIN-IDENT-20261119-001`,
+proof, referee pending)? Then a knot's leftover open distinctions make points hung
+on the knot itself, and where the floor tops them up, endless chains hang from
+those points. With the chains in the map the same rule holds. When the knots'
+graph is a tree, the junctions per round grow as a polynomial whose degree is one
+less than the number of chains in one piece: two chains in one parity class give
+the census's typical two dimensions
+([proof](../proofs/CHAIN-IDENT-20261119-001A/CHAIN-IDENT-20261119-001A-P001_chains/proof.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

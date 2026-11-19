@@ -1,6 +1,7 @@
 # Do loops keep branching under not-all-equal?
 
-Epic `NAE-GROWTH-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead. Goals G17 and G1. **Referee pending.**
+Epic `NAE-GROWTH-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead. Goals G17 and G1. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block, with one number corrected, folded in on
+19 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `db07fd8f5` at 03:33 UTC after a pilot (disclosed).
@@ -57,7 +58,8 @@ Epic `NAE-GROWTH-20261119-001`, 19 November 2026, by Claude, on the coordinator'
     - Under not-all-equal, 115 of its 128 collisions are the same states, almost all through a redundant junction, one whose
       constraint is already implied by the others.
   - **The rest are the table's.** Bond distance misses some many-place not-all-equal junctions, which hide little (13
-    collisions, such as two touching knots with or without a four-place junction across them). Under parity it misses 99.
+    collisions, such as two touching knots with or without a four-place junction across them). Under parity it misses 100
+    (corrected from 99 after the referee decided the one undecided pair).
 - **Where a law has no cheapest growth.** For one-in-three and majority, no junction is a knot (the canonical checker), so the
   cheapest growth, which makes knots, has nothing to make. Under one-in-three, no fresh count even keeps the old states.
 
@@ -74,7 +76,7 @@ Epic `NAE-GROWTH-20261119-001`, 19 November 2026, by Claude, on the coordinator'
 | B1 | tree stages: equal tables | **held** | 97 of 97 |
 | B2 | some stage with a cycle differs | **held** | 2,491 of 2,547 differ; NAE larger on 46,883 pairs, smaller on 12,304 |
 | B3 | NAE collisions are state collisions | failed | 115 of 128 (13 with different states) |
-| B3c | parity collisions are state collisions | failed | 2,802 of 2,902 (99 with different states, 1 undecided) |
+| B3c | parity collisions are state collisions | failed | 2,802 of 2,902 (100 with different states; the run left 1 undecided, which the referee's exact search decides as different) |
 | B4 | every NAE collision has a redundant junction | failed | 118 of 128 |
 | B5 | NAE collisions without one join alike | failed | 0 of 10 join alike |
 | B5c | some parity collision without one joins differently | **held** | 2,796 such pairs |
@@ -135,11 +137,25 @@ Epic `NAE-GROWTH-20261119-001`, 19 November 2026, by Claude, on the coordinator'
 - One policy (A104), the census's sizes and weighting (A106), and horizons of 14 rounds or 3,000 junctions. The tails are proved,
   and seen for at least three rounds.
 - Part B covers stages of up to 15 distinctions from starts of up to four knots. "No other stage shares the table" is relative to
-  that population; a larger one can only add collisions. The same-states test searches the tables' isomorphisms, with one parity
-  pair undecided.
+  that population; a larger one can only add collisions. The same-states test searches the tables' isomorphisms. The referee found
+  that search complete, and decided its one undecided parity pair as different states.
 - Not-all-equal on many places hides little (log2(2^k / (2^k − 2)) bits at k places), so "every junction is a knot" holds, while
   the large junctions are knots that hide almost nothing (the advisor's point).
 - BOND-NEXT-JOIN's reader was run only as a control outside its family. It is exact on 93 parity and 993 NAE stages of 2,644.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread with its own engine and
+Glucose 4: confirmed, no Block.
+- **T2 holds**, including the use of Bondy and Murty's Lemma 6.1.1 on loopless multigraphs (parallel lines from knots sharing two
+  distinctions are allowed). Brute force on 11,916 multigraphs and 26,868 random sets agrees.
+- **Growth reproduces.** Of 3,000 census starts, 2,608 are identical and 392 relay as predicted. One size past, of 1,000 six-knot
+  starts, 954 are identical and 46 relay.
+- **Part B reproduces exactly** (not-all-equal: 128 collisions, 94.7% unique; parity: 2,902, 40.1%), and the isomorphism-only
+  search is complete. Both scoring notes are confirmed: B5c is inverted in `merge.py`, so 8 of 12 is right, and P-ring5-spare1 is
+  the bare ring.
+- **Folded in the same day**, logged in `docs/CORRECTIONS.md`: **Not a block (a number).** The run's one undecided parity pair
+  has different states, so B3c reads 2,802 same-state and 100 different, and "under parity it misses 99" reads 100.
 
 ## Advisor
 

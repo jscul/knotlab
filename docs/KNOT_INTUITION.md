@@ -652,7 +652,7 @@ those that grow, two dimensions takes over (98% at twenty knots), and rings stay
 rare (at most 0.1%) though the growing starts hold many cycles
 ([decision note](../research/SCALE-SHARE-20261119-001/scale_share.md)).
 And under another law (`NAE-GROWTH-20261119-001`, proof and frozen census,
-referee pending)? Read every junction as not-all-equal instead of parity and the
+refereed)? Read every junction as not-all-equal instead of parity and the
 loops branch exactly as before: the same counts at every round, so the same
 ratios, because the growth reads its law in one place only, whether a new
 junction's constraint already holds. Under parity that happens only at the

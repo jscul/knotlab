@@ -3132,6 +3132,9 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Extend to six knots or to six places, weight by random pairing of places, or by a growth process that adds knots
   one at a time, and test whether two stays typical and three rare.
 - **History.**
+  - 2026-11-19 · `JOIN-GROWTH-20261118-001`: a part joined to a ring knot needs a knot of five or six places at the joint (with
+    fewer, round 1 stalls), so the cutoff at five places leaves out every ring with a part joined to it, the starts where every
+    joined part speeds the ring; status unchanged.
   - 2026-11-18 · Adopted by `TOUCH-CENSUS-20261118-001`.
 
 ### A107 · Small joins of a ring and a two-fold piece are weighted uniformly over one bare census

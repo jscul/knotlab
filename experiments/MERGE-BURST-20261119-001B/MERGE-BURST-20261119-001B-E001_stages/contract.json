@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "MERGE-BURST-20261119-001B-E001",
+ "ticket": "MERGE-BURST-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "For each of EXPLOSIVE's 15 stopped explosive starts: does it end after one merge and a finite burst, repeat, or keep growing past its burst, read from the first stage whose reduced map lies in the proved class?",
+ "public_inputs": {
+  "code": "mblib.py (6a1d9878ed706b4be90f819de72cb817b0f99a75912329fff3f24f6b9c51c139), job.py (c02e2ed2d9849a1cc00a345e6d8e44eb6c746a707867ff41766a8794c4f0b4a0), merge.py (5c88fbb904cd74820731f4e769a2cd51de7e0e98fc30dfbf9a6ef393aa7150ac) (sha256)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>",
+  "reused": "runs/explosive (the starts); DEAD-CAP deadlib (branch system); DOUBLE-IDENT machine_check (classify); joinlib engine"
+ },
+ "forbidden_inputs": [
+  "Changing the reduction, the reading, a prediction or the merge threshold after reading the frozen run"
+ ],
+ "primary_observable": "R1-R4 of research/MERGE-BURST-20261119-001/preregistration.md and each start's verdict",
+ "cheapest_meaningful_control": "the closed explosive start (pilot, disclosed)",
+ "predictions": {
+  "R1": "branch-system count equals every grown check round",
+  "R2a": "every first reading is one maximal block",
+  "R2b": "every start that reaches a reading closes",
+  "R3": "at least 5 of 15 reach a reading",
+  "R4": "where the next stage is in the reduced class, its reading agrees"
+ },
+ "decision_rules": {
+  "each": "held iff no exception"
+ },
+ "stop_rule": "One run; stop when each of the 15 is classified or one is shown to keep growing.",
+ "runtime": "under two hours on 2 workers (15 minutes per start at most)",
+ "disclosed_exploration": "the pilot on the closed start",
+ "amendments": []
+}

@@ -1,0 +1,33 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "EXPLOSIVE-20261119-001",
+    "DEAD-CAP-20261119-001",
+    "BREAK-EDDIES-20261119-001"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "groups": [
+      "spacing"
+    ],
+    "program": "topology",
+    "takes": [
+      "EXPLOSIVE-20261119-001#1"
+    ]
+  },
+  "id": "MERGE-BURST-20261119-001",
+  "kind": "epic",
+  "legacy": {},
+  "objective": "Coordinator's go-ahead (19 November 2026) for EXPLOSIVE-20261119-001#1: take the 15 explosive starts EXPLOSIVE stopped at its per-start limits, read the giant merge as an event and count the burst instead of building it, and find for each whether it ends after one merge and a finite burst, repeats (merge, burst, merge again), or keeps growing past its burst: what a sample of the explosive kind typically does (A110). Say what is proved, what is exhausted and what is only sampled, and do not generalise from the one closed case. Stop when each of the 15 is classified or one is shown to keep growing. Every start in its own memory- and time-limited process under scripts/longrun.py. Advisor before the freeze. Serves G17.",
+  "ownership": {
+    "root": true,
+    "scope_id": "MERGE-BURST-20261119-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Planned",
+  "status_class": "planned",
+  "stop_rule": "Stop when each of the 15 is classified or one is shown to keep growing.",
+  "title": "What explosive starts do after their merge"
+}

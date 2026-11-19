@@ -4,6 +4,15 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the theorem past the census refereed
+
+- The proved theorem's reading of SCALE-SHARE's samples of 5 to 20 knots (`SCALE-THEOREM-20261119-001`,
+  [decision note](research/SCALE-THEOREM-20261119-001/scale_theorem.md)) was refereed and confirmed: every figure reproduces, and
+  an independent regrowth of 1,518 in-class growers agrees to round 6.
+- **Clarified (not a block).** Open places per knot were quoted as falling like √(5/n), the advisor's estimate. Measured, they are
+  about 1.23·√(5/n) over all samples and fall faster over the class (roughly n^−0.74), so the reason three dimensions stay rare holds
+  more strongly. The class is now stated with its "no stall" condition.
+
 ## 19 November 2026: relays refereed
 
 - The relay proof (`RELAY-IDENT-20261119-001`, [decision note](research/RELAY-IDENT-20261119-001/relay_ident.md)) was refereed line

@@ -1,6 +1,7 @@
 # The proved theorem past the census: shares by size
 
-Epic `SCALE-THEOREM-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead. Goal G17. **Referee pending.**
+Epic `SCALE-THEOREM-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead. Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block; two wording points
+folded in on 19 November (see Referee).
 
 **Record.**
 - **Pre-registration:** [preregistration.md](preregistration.md), frozen in commit `540551a62` at 14:44 UTC after a pilot (disclosed).
@@ -14,8 +15,9 @@ Epic `SCALE-THEOREM-20261119-001`, 19 November 2026, by Claude, on the coordinat
 **In the owner's terms.**
 - **The proved theorem covers about three non-stalling starts in four, at every size from 5 to 20 knots.** SCALE-SHARE's own 64,000
   samples, regenerated exactly, were read by the theorem instead of grown.
-  - The class (no first-round group of three, no two live knots with two common neighbours) holds 83% of the non-stalling starts at
-    five knots, and 73% to 77% from ten knots on.
+  - The class (no stall, no first-round group of three, no two live knots with two common neighbours) holds 83% of the non-stalling
+    starts at five knots, and 73% to 77% from ten knots on. 685 of its 14,478 starts hold at most one loose distinction; they are
+    DOUBLE-IDENT's proved edge case and close at round 1 (wording from referee R1).
   - The rest fail it in roughly equal parts: a group of three (5–11%) or two common neighbours (12–17%).
 - **In the class, two dimensions take over, and three never occurs.**
   - Dimension 2 is 85% of the class's growers at five knots, rising to 98% at twenty.
@@ -23,8 +25,9 @@ Epic `SCALE-THEOREM-20261119-001`, 19 November 2026, by Claude, on the coordinat
   - Not one of the 12,270 growers in the class has dimension three or more. All 43 three- and four-dimensional samples are outside
     the class: they have mutually touching knots, a group of three or two common neighbours.
 - **Why, in the theorem's terms.** Three dimensions need a tree-like piece carrying three chains, and each chain needs a knot with
-  open places left after its joins. Under this sampling, open places per knot fall like √(5/n), so tree-like pieces with three
-  separately fed chains are vanishingly rare. A finished piece always counts two. The advisor gave this argument; the run confirms
+  open places left after its joins. Under this sampling open places per knot fall with size: about 1.23·√(5/n) over all
+  samples (1.22 at five knots, 0.61 at twenty), and faster over the class (1.07 at five, 0.38 at twenty, roughly n^−0.74; referee
+  R1's measurement, replacing the advisor's √(5/n)). So tree-like pieces with three separately fed chains are vanishingly rare. A finished piece always counts two. The advisor gave this argument; the run confirms
   its outcome.
 - **The relay's share grows.** Among the class's two-dimensional growers, "relay and two chains" rises from 35% to 58%, and a relay
   alone falls from 21% to 9%. In large starts two dimensions come mostly from both mechanisms at once.
@@ -46,6 +49,16 @@ Epic `SCALE-THEOREM-20261119-001`, 19 November 2026, by Claude, on the coordinat
 
 Labelled shares, as SCALE-SHARE gives them; counts are of samples (8,000 per size). Exponential growth in the class: 4 samples in
 all (n = 5, 6, 12).
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread. No study reader was run.
+- **Confirmed.** Its own classification matches on 64,000 of 64,000, and the growth class and mechanism on 14,478 of 14,478 in the
+  class. Every table figure reproduces. Its own regrowth of 1,518 in-class growers (one in eight by hash, plus every exponential
+  one) agrees to round 6. P2 is the scorer's label slip, handled correctly. Weighting to distinct arrangements changes nothing.
+- **Folded in (wording, not blocks).** The class names "no stall", and the 685 starts with at most one loose distinction are
+  named as DOUBLE-IDENT's edge case. The open places per knot are quoted as measured (about 1.23·√(5/n) over all samples, about
+  n^−0.74 over the class) instead of the advisor's √(5/n).
 
 ## Predictions and verdicts
 
@@ -81,7 +94,8 @@ all (n = 5, 6, 12).
 `claude -p --model claude-fable-5-2 --tools ""` ([question](advisor/question_1.md), [answer](advisor/answer_1_fable.md);
 `modelUsage` names claude-fable-5-2), before the freeze. Its answer stayed within its text.
 - **Its mechanism for three staying rare held.** Tree-like pieces with three separately fed chains need open places per knot near
-  one, and the sampler gives √(5/n).
+  one. It gave √(5/n) for the sampler; referee R1 measured about 1.23·√(5/n) over all samples and n^−0.74 over the class, so the
+  argument holds more strongly.
 - **Its warnings were adopted:** renaming, P4's floor, P7 as a test of selection, counts, and the shared code. It expected the class
   to inflate dimension two; it does, by 1 to 3 points.
 

@@ -835,7 +835,7 @@ round. The census's typical two dimensions are then explained on 85% of its
 two-dimensional growths: two chains in one piece, a relay, or both
 ([decision note](../research/DOUBLE-IDENT-20261119-001/double_ident.md)).
 And past the census, in starts of up to twenty knots
-(`SCALE-THEOREM-20261119-001`, frozen run, referee pending)? About three
+(`SCALE-THEOREM-20261119-001`, frozen run, refereed)? About three
 non-stalling starts in four fall in the proved class at every size. Within it
 two dimensions take over, from 85% of growers at five knots to 98% at twenty, and
 three dimensions never occur: every start that grows in three or four dimensions

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 544 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 545 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 544 epics with their closures
+- [Epics](#epics): all 545 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1758,6 +1758,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Parity's eddies over the dropped junction (`DROPPED-JUNCTION-20261119-001`) | [closure](proofs/DROPPED-JUNCTION-20261119-001Z/DROPPED-JUNCTION-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/DROPPED-JUNCTION-20261119-001/) |
 | 2026-11-19 | Where groups of three take over (`EXPLOSIVE-20261119-001`) | [closure](proofs/EXPLOSIVE-20261119-001Z/EXPLOSIVE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/EXPLOSIVE-20261119-001/) |
 | 2026-11-19 | Does a table isometry that keeps what the round reads extend one round? (`EXTEND-ROUND-20261119-001`) | [closure](proofs/EXTEND-ROUND-20261119-001Z/EXTEND-ROUND-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/EXTEND-ROUND-20261119-001/) |
+| 2026-11-19 | Sharp steady growth rate of the five-place branch systems (`FIVE-PLACE-RATE-20261119-001`) | — | [folder](research/FIVE-PLACE-RATE-20261119-001/) |
 | 2026-11-19 | Does the law, grown from every small arrangement, ever make a meet-once collision with other states? (`GROW-SMALL-20261119-001`) | [closure](proofs/GROW-SMALL-20261119-001Z/GROW-SMALL-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/GROW-SMALL-20261119-001/) |
 | 2026-11-19 | Can a growing-end matching fail when junctions meet only once? (`GROWN-END-MEET-ONCE-20261119-001`) | — | [folder](research/GROWN-END-MEET-ONCE-20261119-001/) |
 | 2026-11-19 | Which current bond readings carry the growing end through a complete round? (`GROWN-END-READING-20261119-001`) | — | [folder](research/GROWN-END-READING-20261119-001/) |

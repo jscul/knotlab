@@ -114,3 +114,12 @@ Population: the 522 stages. Controls: the 1,330 symmetry-free stages without sha
 
 `job.py` for the shared runner, one stage per case (522 + 1,330), 10 workers, 600 seconds per case; expected minutes. Readout by
 `readout.py`. One run; the study stops at the readout.
+
+## Amendment 1 (2026-11-19, while the main run was under way, before any of its results was read)
+
+- **Population.** CENSUS-READ's referee showed that the 64 stages whose symmetry enumeration stopped at its limit have no
+  junction-moving symmetry. The 5 of them R3n misread join the population (527) and the 59 it read join the controls (1,389)
+  (`population_unknown.json`).
+- **Time.** Cases at ten junctions with hundreds of thousands of candidate circuits time out at 600 seconds in the forcing step
+  (one replayed: 560 seconds). The main run's timed-out cases are rerun with a 3,600-second limit (`job_amend.py`, same functions).
+- The predictions U1–U6 are unchanged and are scored on the 527 and 1,389.

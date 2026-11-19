@@ -1,8 +1,9 @@
 # Why does the growth never reach the static pairs?
 
 Epic `PARENT-RULE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `MEET-ONCE-20261119-001#1`.
-Assumption A97; goal G1. **Referee pending. Stress test pending:** the census check's last shard (starts 26,100 to 26,199) is
-still running (`docs/LONG_RUNNING.md`, PARENT-RULE-C1); the numbers below are from the other 264 shards (26,341 starts).
+Assumption A97; goal G1. **Refereed (R1): confirmed, no Block; one count corrected (178 to 181) and wording, folded in (Referee
+R1 below).** The census check's last shard (starts 26,100 to 26,199) was covered by the referee's own run (252 stages, 0
+violations) and closed on that evidence; the census numbers below are from the other 264 shards (26,341 starts).
 
 **Record.** Pre-registration, frozen before the runs (commit `88303496e`): [preregistration.md](preregistration.md). Proof:
 [proof.md](../../proofs/PARENT-RULE-20261119-001A/PARENT-RULE-20261119-001A-P001_backed/proof.md). Code:
@@ -19,7 +20,7 @@ still running (`docs/LONG_RUNNING.md`, PARENT-RULE-C1); the numbers below are fr
   already meet a third junction, since the rule joins only junctions with a common neighbour. So in every stage the law reaches,
   any two junctions met by a junction with a loose distinction also meet a third one. The third one holds no loose distinction.
   Call these **backed pairs**. Every one of UNIQUE-TABLE's 11 rivals has a junction with a loose distinction whose partners have
-  no third junction in common, so the law can never build them, at any size. The same proof shows three more things:
+  no third junction in common, so the law can never build them in any round from a connected start, at any size. The same proof shows three more things:
   - junctions with a loose distinction never meet each other;
   - removing them gives back the previous stage exactly;
   - no distance between older distinctions ever grows from one stage to the next.
@@ -31,7 +32,7 @@ still running (`docs/LONG_RUNNING.md`, PARENT-RULE-C1); the numbers below are fr
   77 and 85 of the 503,039 arrangements qualify. So the protection comes from the rule's exact choice of joins and counts, not
   from backed pairs alone, and at these sizes that has hardly any room to show.
 - **The table's own symmetries.** A reached table can be symmetric in a way the allowed states are not. About one in six of the open
-  meet-once reached stages of up to 14 junctions have such a symmetry (178 of 1,099). The renamed copy has the same table and other
+  meet-once reached stages of up to 14 junctions have such a symmetry (181 of 1,099). The renamed copy has the same table and other
   states but is the same arrangement, so it is not a collision. The advisor's suggested cleaner theorem, that every table symmetry
   keeps the states, is false.
 
@@ -39,7 +40,7 @@ still running (`docs/LONG_RUNNING.md`, PARENT-RULE-C1); the numbers below are fr
 | --- | --- | --- |
 | C1 | Census stages of round ≥ 1 to 40 junctions: backed by a closed junction, live junctions apart, peel gives the previous stage, depth ≥ round | **held** (0 violations in 70,228 stages; 264 of 265 shards, the last pending) |
 | C2 | No previous-stage pair farther in the next open stage (Theorem 3), on open stages ≤ 14 junctions | **held** (22,921 stages: 2,503,142 pairs equal, 162,940 shorter, 0 farther) |
-| R1 | Open meet-once reached stages ≤ 14 junctions rigid | **failed** (178 of 1,099 have a table symmetry that does not keep the states) |
+| R1 | Open meet-once reached stages ≤ 14 junctions rigid | **failed** (181 of 1,099 have a table symmetry that does not keep the states) |
 | S0 | Other-states collisions among the 503,039, pop-0308's pair among them | **held** (472 groups, 1,034 pairs; the pair found, truth and rival in different state groups) |
 | S1a | No other-states pair with both sides backed, in the backed stratum | **failed** (242 pairs; the smallest at 6 junctions) |
 | S1b | No other-states pair with both sides of peel depth ≥ 1 | **failed** (38 pairs, all at 7 junctions) |
@@ -63,7 +64,7 @@ still running (`docs/LONG_RUNNING.md`, PARENT-RULE-C1); the numbers below are fr
 | Stages of round ≥ 1 (meet once) | 70,228 (3,889) |
 | … violations: backed by a closed junction / live apart / peel gives the previous stage / depth ≥ round | 0 / 0 / 0 / 0 |
 | Open stages ≤ 14 junctions: previous-stage pairs equal / shorter / farther | 2,503,142 / 162,940 / 0 |
-| Full tables ≤ 14 junctions with a symmetry the states lack: open meet-once / open with two shared / closed | 178 of 1,099 / 4,476 of 21,822 (11 capped) / 615 of 2,714 |
+| Full tables ≤ 14 junctions with a symmetry the states lack: open meet-once / open with two shared / closed | 181 of 1,099 (178 found by symmetries that keep the holder classes) / 4,476 of 21,822 (11 capped; holder classes only) / 615 of 2,714 |
 | Tables read to 8, open meet-once stages of 15 to 40: a symmetry not keeping the states (not decisive) | 313 of 2,600 (31 capped) |
 | Starts with backed pairs / with backing by a closed junction and live apart | 6,309 / 3,404 of 26,341 |
 
@@ -150,6 +151,26 @@ Fable 5.2 before the freeze ([question](advisor/question_1.md), [answer](advisor
 
 **Corrections:** none. **Goals:** G1 checkpoint (obstruction learned). **Assumptions:** A97 gains this study, status unchanged.
 **Basket:** #1 taken next if the coordinator agrees; #2 and #3 recorded.
+
+## Referee R1 (2026-11-19)
+
+[Report](referee-R1/report.md), the proofs read; its own growth, enumeration, tables and states. **Confirmed, no Block; one count
+corrected and wording, folded in above and logged in `docs/CORRECTIONS.md` (Not a block).**
+- **Confirmed.**
+  - Theorems 1 to 3 are correct as proved. Lemma 2 needs the start connected, and all 26,441 census starts are.
+  - On every census start, the pending shard included: 70,480 stages, 0 violations. On 17,934 open stages of at most 12 junctions,
+    Theorem 3 holds with none farther.
+  - The static count 503,039 (by Burnside's lemma) and every collision figure reproduce: 472 groups, 1,034 pairs, 242 both backed,
+    38 both of depth ≥ 1, 0 both of depth ≥ 2.
+  - `plib.states` is sound.
+- **Corrected: 178 to 181.** The rigidity test enumerated only table symmetries that map distinctions with the same holders onto
+  each other. Those are the only ones that can keep the states, so the test is exact for "keeps". But a symmetry that breaks such
+  a class also counts as one the states lack, and 3 more stages have only those. Over every table symmetry, 181 of 1,099 open
+  meet-once reached stages have one the states lack.
+- **Wording.** "The law can never build them, at any size" now says "in any round from a connected start": Theorem 1 covers
+  rounds 1 and later, not the start itself.
+- **The pending shard.** It was folded in on the referee's evidence (252 stages, 17 meet once, no violation). The coordinator
+  signed off the LONG_RUNNING row. My own run of that shard was stopped.
 
 ## Final report as sent (2026-11-19 12:38 UTC)
 

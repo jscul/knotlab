@@ -637,7 +637,7 @@ states, and differ only in which junction holds what. Arrangements the law never
 builds can still meet once and differ, so, as far as computed, this is a
 property of what the law reaches ([decision note](../research/MEET-ONCE-20261119-001/meet_once.md)).
 Why does the law never build the static rivals (`PARENT-RULE-20261119-001`,
-proved, referee pending)? Because it joins two junctions only when a third
+proved, refereed)? Because it joins two junctions only when a third
 already meets both: in everything it builds, any two junctions met by a junction
 with a loose distinction also meet an older one (backed pairs), and every rival
 lacks this. That holds at every size. But backed pairs alone do not keep the

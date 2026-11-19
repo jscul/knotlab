@@ -118,3 +118,49 @@ freeze, staying within its text.
 | 1 | The explosive kind (`BREAK-EDDIES-20261119-001`): the eddies outside the class, whose groups of three overlap, the last part of A109's challenge | 3/3 — it decides A109 | 1/3 — the cover of blocks is the wrong object there | take the smallest explosive start and find what its groups of three do round by round → stop at a description, or a size where it changes kind | Alternative · proposed |
 | 2 | Dead knots within the cap: classify the in-class starts with dead knots (dead hubs lift the chain bound) | 2/3 — completes the cap's classification | 2/3 — dead knots act as blocks only | extend Lemma 2 of the cap study with dead knots as blocks → stop at a shape theorem, or a start it misses | Alternative · proposed |
 | 3 | Dimension grows linearly under random trees (`WEIGHTINGS-20261119-001#1`) | 2/3 | 3/3 | prove each parity class's chain-carrying leaves concentrate → stop at a proof, or a size where the measured dimension departs | Alternative · in the basket |
+
+## Final report as sent (2026-11-19 16:32 UTC)
+
+**Outcome:** I proved that within five places, an eddy is a ring of knots carrying something extra, and nothing else is. The setting is the proved class with no dead knots. The rate formula is proved too, and every one of 23,098 rings of 5 to 14 knots grows exactly as it says, round by round. This gives A109 its first complete catalogue, inside this class. Closed, referee pending.
+
+- **Which starts feed themselves.** Exactly the rings that carry a hung knot (one knot touching a ring knot) or a spare place. A bare ring makes the same number of junctions every round forever. Lines and stars never grow exponentially.
+- **The cap forces the shapes.** A ring has 5 knots, or 7 or more. A ring knot carries at most one hung knot, and hung knots sit at least three apart. A spare can go only on a ring knot with no hung knot beside it, and a hung knot can carry up to two spares of its own.
+- **The rate.** Going once round the ring multiplies the count by W(y), and the rate x solves W(1/x) = 1. W is a product of three kinds of factor:
+  - y for each knot on the walk round the ring;
+  - 1 + y for each spare;
+  - 1 + y(1 + y)^b for each hung knot with b spares.
+
+  The walk takes two knots at a time, so an even ring is two walks of half its length. The rate doesn't depend on where the extras sit. The ring of seven with a hung knot is x⁸ = x + 1 = 1.0970, and three hung knots on the ring of nine give x⁴ = x + 1 = 1.2207.
+- **The ceiling.** Nothing within five places grows faster than the golden ratio, 1.618. A ring whose every knot carries a spare reaches it at any length. I proved this after the run: a hung knot never beats two spares.
+- **Checks.**
+  - All 23,098 decorated rings match the formula on every round reached, 10 to 40 rounds each.
+  - The advisor's four predicted rates came out as predicted.
+  - Of 162,576 small starts up to nine knots, every exponential one in the class is such a ring.
+- **What stays outside, plainly:**
+  - knots of six or more places (the catalogue's hanging path needs one);
+  - dead knots;
+  - first-round groups of three, or two live knots with two common neighbours, where the break-shape and explosive eddies live;
+  - stalls.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: rings within five places | **Status:** Successful (proved; 6 of 6 checks) | The in-class eddies within the cap are exactly the decorated rings, with a proved rate formula; 23,098 rings grow exactly as the formula says |
+| Local direction: the eddy catalogue (A109) | Research directions | Complete in the class within the cap; outside it, the break-shape and explosive eddies remain |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Within five places with no dead knot: lines and stars give at most two dimensions, rings give one or exponential, nothing else |
+| Long-term goal: G17 | Capability gained | Growth within five places classified completely in the class, with rates |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The explosive kind: the eddies outside the class, whose groups of three overlap, the last part of A109's challenge | 3/3 | 1/3 | take the smallest explosive start and follow what its groups of three do round by round → stop at a description, or a size where it changes kind | Alternative · proposed |
+| 2 | Dead knots within the cap: classify the in-class starts with dead knots | 2/3 | 2/3 | extend the cap study's shape lemma with dead knots as blocks → stop at a shape theorem, or a start it misses | Alternative · proposed |
+| 3 | Dimension grows linearly under random trees | 2/3 | 3/3 | prove each parity class's chain-carrying leaves concentrate → stop at a proof, or a size where the measured dimension departs | Alternative · in the basket |
+
+**Corrections:** none new. The cap study's referee fold (12b867c35) is reported above. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A109 gets a history line: few in kind is proved inside the class within the cap, with a three-factor generating set. It stays Under challenge because of the explosive kind outside. **Basket:** a new direction from you; nothing taken. **Advisor:** Fable 5.2, before the freeze, staying within its text. It confirmed the cluster structure, the orbit count and the dominant root, and computed the four rates the run confirmed. It asked for the even-ring rule to be stated outright. It raised an S3 gap at a hung knot's ring knot that isn't one: those three share a common neighbour, so they give three pairs, and the proof now says so.
+
+**Referee hand-off.** The proof is `proofs/RING-CORES-20261119-001A/RING-CORES-20261119-001A-P001_rings/proof.md` with `ringlib.py`, `job.py` and `merge.py`, and the decision note is `research/RING-CORES-20261119-001/ring_cores.md`. Please check:
+- Theorem 3's cluster description and orbit count;
+- the even-ring piece rule (a hung knot feeds the opposite walk);
+- Theorem 4's dominant root;
+- Proposition 6, the golden-ratio ceiling, which was added after the run.

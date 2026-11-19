@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SCALE-SHARE-20261119-001B-E001",
+ "ticket": "SCALE-SHARE-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "By the cluster rule alone, which growth class is typical among arrangements of n = 5 to 20 touching knots, under both weightings, and does the scope survive?",
+ "definitions": {
+  "classes": "scale.classify",
+  "sampler": "scale.chain"
+ },
+ "public_inputs": {
+  "code": "scale.py (sha256 8d340208d9bde93822fdeb990d800d4b309fee34d324acf6a7daa917e3c8b132), job.py (sha256 e0fe192544d9d0cb0cf108b551852d2f79cab94867ef80978aa30e6c96ed45d6), merge.py (sha256 d862d6157c9bbe3a3e4a6a3ab7b16f5e2100e284d303975160bb8d2b8eb527bb)",
+  "run": "scripts/longrun.py launch job.py (6 workers); python3 -B merge.py <out dir> <results.json>",
+  "reused": "CLUSTER-ALL-20261119-001B clusters.py and dimension.py; JOIN-GROWTH joinlib (spot checks)"
+ },
+ "forbidden_inputs": [
+  "Changing the sampler, classes or predictions after reading frozen samples"
+ ],
+ "primary_observable": "P1-P10 of research/SCALE-SHARE-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the five-knot sample against the exact census",
+ "predictions": {
+  "P1": "see preregistration",
+  "P2": "see preregistration",
+  "P3": "see preregistration",
+  "P4": "see preregistration",
+  "P5": "see preregistration",
+  "P6": "see preregistration",
+  "P7": "see preregistration",
+  "P8": "see preregistration",
+  "P9": "see preregistration",
+  "P10": "see preregistration"
+ },
+ "decision_rules": {
+  "each": "as merge.py scores"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under an hour",
+ "disclosed_exploration": "pilot: 200 samples at n = 5, 6 and 60 at n = 8, 10, 12, 16 (seeds 0-3 and 0; the frozen chains reuse seeds 0-3 at n = 5, 6 with path starts)",
+ "amendments": []
+}

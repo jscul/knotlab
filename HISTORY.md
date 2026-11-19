@@ -3,6 +3,14 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 19 November 2026: the ring reader's tie rule no longer uses names
+
+- **Clarified (not a block).** The incremental reader of `RING-READ-20261118-001` ([decision note](research/RING-READ-20261118-001/ring_read.md))
+  broke ties between candidates of one stage by the names of their distinctions, so outside the ring its output could depend on
+  names (Codex's 27-distinction example, `VARIABLE-OUTPUT-READER-20261118-001J`). On the ring there is no such tie and every result
+  stands. A reader with a name-free tie rule (R3n, referee pending) reads Codex's example under every naming tried and the ring to round
+  25.
+
 ## 19 November 2026: two joined rings, the exponent corrected
 
 - The study of joins to rings of knots (`JOIN-GROWTH-20261118-001`,

@@ -199,6 +199,23 @@ Block.**
   junctions and five cycles of four four-place junctions, 001H's shape one size up). Not checked: the counts of invented junctions,
   uniqueness.
 
+## Names (2026-11-19, after VARIABLE-OUTPUT-READER-20261118-001J)
+
+Codex's `VARIABLE-OUTPUT-READER-20261118-001J` found that R3 breaks ties by names. **Confirmed, here and by 001J's referee (Not a
+block, logged in `docs/CORRECTIONS.md`).** The reader breaks ties between equal candidates by distinction name; it is checked
+naming-independent on the ring only (here 11 namings at three rounds; the referee 56 runs at seven); 001J gives a serial-law table
+where a renaming changes its output. R3 adds a stage's cliques one at a time in the order of their sorted distinction names, refusing one that
+meets an accepted junction twice. On Codex's 27-distinction example (twelve junctions, two of five places), with this study's own
+exact table: exact under the identity, and under the transposition 0 ↔ 24 it accepts the five loose distinctions as a junction and
+refuses the two true five-place junctions that meet them twice; under 20 random renamings it misreads twice
+([names.json](../../artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/names.json)). On this ring no such
+tie arises: R3 is exact under 11 namings at rounds 10, 15 and 20, so the ring's results stand as stated. The fix is R3n (referee pending)
+([reader3n.py](../../experiments/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/reader3n.py), frozen in
+`CENSUS-READ-20261118-001`'s Amendment 2 before it ran): a stage's candidates are taken together, and where two share two
+distinctions, the cliques in every largest set of non-conflicting ones are kept. R3n is exact on Codex's example under the
+identity, the transposition and all 20 random renamings, at distances 4 and 8, and on the ring at rounds 10, 15, 20 and 25 under 11
+namings each ([names_n.json](../../artifacts/CENSUS-READ-20261118-001A/CENSUS-READ-20261118-001A-E001_census/names_n.json)).
+
 ## Final report as sent (2026-11-18 23:50 UTC)
 
 **Outcome:** yes, through round 25. The bond-distance table alone gives back the ring of four four-place knots and one five-place knot, with no names, rounds or parents, and one round grown from it is the true next round. Closed, referee pending.

@@ -609,6 +609,15 @@ rings lock into a growth of a new kind, approaching 2.61 times a round for two
 rings of five with a t^(-5/2) correction (corrected 19 November from t^(-3/2)
 and about 2.5), the mark of counting clusters in a branching map
 ([decision note](../research/JOIN-GROWTH-20261118-001/join_growth.md)).
+And what rule do two joined rings grow by (`RING-PAIR-20261119-001`, frozen test
+of 17 fresh starts, referee pending)? An exact one: draw which knots can join
+which, open every cycle of that map out into an endless branching map, and the
+junctions made in round t are exactly its clusters of t + 1 points. Counting
+them, each entry into a branch is the same count again, so the rule refers to
+itself; with one ring the map is a chain and the rate is a root of a
+polynomial, with two rings it branches and the counts follow C λ^t t^(-5/2),
+the law of clusters on a branching map
+([decision note](../research/RING-PAIR-20261119-001/ring_pair.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

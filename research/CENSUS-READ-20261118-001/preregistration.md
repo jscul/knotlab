@@ -156,3 +156,19 @@ census's own naming. Additions, no earlier prediction changed:
 | N3 | R3n's verdict is the same under the census's naming and the three renamings at every stage | a stage where they differ |
 | N4 | At every rigid census stage R3n is exact or an outside swap, and where it is exact it is exact pooled above largest − 1 and not above largest − 2 | a rigid stage otherwise |
 | N5 | R3's verdict changes under renaming at fewer than 1% of census stages | 1% or more |
+
+## Amendment 3, exact tables everywhere (2026-11-19, before the readout)
+
+The gate failed at C0(b′): on 199 of the 200 sampled census stages of 30 to 120 junctions the tables at sides of six and eight
+junctions differ (`gate.json`; C0(a) not yet scored, (b) and (c) passed). A diagnostic on eight such stages (timing and table
+differences only, no reader verdict looked at) found the side-6 table wrong inside the reader's horizon as well: the census's
+grown stages have many short bonds whose two sides both hold more than six junctions. So passes 1 and 2 read the stages of more
+than 14 junctions on wrong tables, and their verdicts there are not evidence for C1–C6 or N3–N5; they are kept as the record of the
+side-limited reader and compared with the exact pass (C7, now on every stage instead of a sample). No reader verdict of pass 1 or 2
+has been read.
+
+**Pass 3** (`job_exact.py`, shards of 25): every stage again, on the exact table (`exact_table.py`, validated on the referee's
+round-25 entries), with R1, R3, R3m and R3n, both R3 and R3n under three seeded renamings, and for R3 and R3n where exact the
+verdict at each horizon from largest + 1 down to the first failure at or below largest − 2. C1–C6 and N3–N5 are scored on pass 3.
+C7 becomes: the number of stages whose R3 verdict differs between the side-limited pass 1 and the exact pass 3, reported, not
+predicted.

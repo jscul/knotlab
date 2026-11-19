@@ -71,8 +71,10 @@ def _mul(a, b, N):
     return out
 
 
-def series(nv, blocks, N, knots):
-    """c(0..N-1) of H; `knots` is the number of knot vertices (the rest are surplus vertices, whose singletons are not junctions)."""
+def series(nv, blocks, N, knots, rooted=False):
+    """c(0..N-1) of H; `knots` is the number of knot vertices (the rest are surplus vertices, whose singletons are not junctions).
+    With rooted=True, also the rooted series sum_x y prod Phi(B, x) (coefficients from y^0), which equals y C'(y) (the advisor's
+    identity: an orbit of sets of size s is met s times by rooted sets)."""
     one = [1] + [0] * N
     at = defaultdict(list)
     for i, B in enumerate(blocks):
@@ -103,6 +105,7 @@ def series(nv, blocks, N, knots):
         for i in at[x]:
             r = _mul(r, phi(i, x), N)
         C = [a + b for a, b in zip(C, [0] + r[:N])]
+    rooted_series = list(C)
     for i, B in enumerate(blocks):
         for m in range(2, len(B) + 1):
             for S in itertools.combinations(B, m):
@@ -111,6 +114,8 @@ def series(nv, blocks, N, knots):
                     pr = _mul(pr, U[(i, v)], N)
                 C = [a - (m - 1) * b for a, b in zip(C, pr)]
     c = C[1:]
+    if rooted:
+        return c, rooted_series
     c[0] -= nv - knots
     return c
 

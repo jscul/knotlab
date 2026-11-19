@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "experiment_id": "RING-PAIR-20261119-001B-E001",
+ "ticket": "RING-PAIR-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Do the grown counts of fresh in-scope starts (joined rings and rings with a second cycle) equal the cover model's (deck orbits of connected sets of size t + 1 in the universal cover of the candidate complex) at every round grown?",
+ "definitions": {
+  "model H": "covermodel.py docstring",
+  "scope": "covermodel.in_scope",
+  "growth": "junctions by round, fewest counts, bare starts"
+ },
+ "public_inputs": {
+  "code": "covermodel.py (sha256 90f62a8c5a0d56017706e3ee550738bcd8b3ea6952413f61b8d775b7b0900d20), fresh.py (sha256 55f6dc242d3f4961b19a56c1a76d27ce1dc9159cab98b206f921da421ad36437), job.py (sha256 a194719c7de9acfd392152a3e7ef18f2318761390cfe983eba1d9feb742992e9), merge.py (sha256 93f3006c72a8c0f940a768d6563c5ede9d3d56c161f45c00bd3ec326e38025ef), checks.py (sha256 921cf5b8d53105ce4a73424f40631ac46b7c69e8f2189d7a30e3393dcc5aa014)",
+  "run": "scripts/longrun.py launch job.py (3 workers, 4G per case, 900 s per case); .venv/bin/python -B merge.py <out dir> <results.json>",
+  "reused": "JOIN-GROWTH-20261118-001B joinlib.py and fastlib.py (growth); its census runs (gate G1)"
+ },
+ "forbidden_inputs": [
+  "Changing the model, a start or the scope after reading any test start"
+ ],
+ "primary_observable": "P1 of research/RING-PAIR-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "gate G1 (out-of-scope census starts differ), G3 (a mutant model differs), F14 (one-cycle control)",
+ "predictions": {
+  "P1": "every fresh in-scope start F01-F17: grown counts = model counts at every round"
+ },
+ "decision_rules": {
+  "P1": "held iff all 17 equal at every round grown"
+ },
+ "stop_rule": "One run; read-out; referee hand-off; report.",
+ "runtime": "under an hour",
+ "disclosed_exploration": "pilot/ (the model found and checked on JOIN-GROWTH's recorded growths: 7 two-ring joins, 36 in-scope census starts)",
+ "amendments": [
+  {
+   "date": "2026-11-19 01:47 UTC",
+   "change": "merge.py imported JOIN-GROWTH's job.py (same module name, earlier on the path through covermodel) and scored nothing; it now loads this family's job.py by path (sha256 now de03692ec14f9de6b4b856350d4b0aba4e4dfe6a157b004ca94b4675f55b604a). No case, prediction or decision rule changed; the run's records were not read before the fix."
+  },
+  {
+   "date": "2026-11-19 01:48 UTC",
+   "change": "F06, F07 and F17 exceeded the 4 GB per case limit; rerun by job_mem.py (sha256 2c24c1c5a079b4047ec263a0b6389d8cfff639c06cea300793e81f4e033d8c60), the same cases, code and caps, under 7 GB per case and 2 workers (runs/ring-pair-mem); merge.py is given that directory too. No case, cap, prediction or rule changed."
+  }
+ ]
+}

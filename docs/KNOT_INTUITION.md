@@ -616,6 +616,14 @@ grow at all), and so does a reading of three distinctions at a time. On 72 more,
 another arrangement has the same allowed states, which no distance can decide.
 The other 428 are fixed by their distances
 ([decision note](../research/UNIQUE-TABLE-20261119-001/unique_table.md)).
+And does the growth itself make such pairs (`GROWN-PAIR-20261119-001`, computed,
+referee pending)? Yes, once knots share two distinctions. Among census stages of
+up to 14 junctions the cheapest growth reaches 152 groups of different
+arrangements with the same distance between every two distinctions (up to
+renaming) and other allowed states, and they keep one table for at least two
+more rounds. Where junctions meet at most once, every reached pair with one
+table also has the same allowed states
+([decision note](../research/GROWN-PAIR-20261119-001/grown_pair.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

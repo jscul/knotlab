@@ -14,12 +14,12 @@ None carries their count.
 | --- | --- | --- |
 | [BREAK-EDDIES](../BREAK-EDDIES-20261119-001/break_eddies.md) | The 122 break-shape eddies that fitted in memory grow at rates of the catalogue's family (118 rational). Their round-weights, read from every factor of the counts' recurrence, are members built from the catalogue's pieces. An explosive kind exists whose counts leap in its last rounds. | **Block** on "short loops through groups of three": W had been read from the rate alone; such loops are consistent with 12 starts and shown for none. **Narrowing:** the explosive groups jump at the end, not "without bound". Narrowed again by part U in full: the 122 were the cheap starts, and 626 more still rise past the memory limit. |
 | [JUNCTION-MAP](../JUNCTION-MAP-20261119-001/junction_map.md) | A later stage read by the rule, with the excluded overlap kept as a loop of length two, is right one round and wrong the next, wherever the overlap stands (261 of 261). | Confirmed, nothing to fold. |
-| [JUNCTION-KINDS](../JUNCTION-KINDS-20261119-001/junction_kinds.md) | No finite set of kinds of junction carries an exact transfer. The shares a junction passes back take ever more values, in the catalogue's eddies too, because a junction is a growing cluster. | Pending. **Narrowed the same day** by NATIVE-SPINE: the pairing of each round with the two rounds its recurrence names is weak evidence, since a shuffled relation pairs off too. |
-| [NATIVE-SPINE](native_spine.md) | No rule tried (newest ancestor, most chains, fewest chains) picks that pairing, and no pair is forced. | Pending. |
+| [JUNCTION-KINDS](../JUNCTION-KINDS-20261119-001/junction_kinds.md) | No finite set of kinds of junction carries an exact transfer. The shares a junction passes back take ever more values, in the catalogue's eddies too, because a junction is a growing cluster. | Confirmed, with its headline qualified (an exact transfer along parents with 1/p shares). **Narrowed the same day** by NATIVE-SPINE: the pairing of each round with the two rounds its recurrence names is weak evidence, since a shuffled relation pairs off too. |
+| [NATIVE-SPINE](native_spine.md) | No rule tried (newest ancestor, most chains, fewest chains) picks that pairing, and no pair is forced. | Confirmed (90 of 90 shuffles pair off). Reworded: "the spine is not in the growth" went beyond the three rules, since a rule of bounded radius is not excluded. |
 
 **Where it stands.** The steady eddies of the break shapes have the catalogue's rates and round-weights. How the growth produces
 them there is unexplained by the cluster map, the junction map, junction kinds or the ancestry. The line is closed as practically
-exhausted. The one remaining test that could prove more is the automorphism test (NATIVE-SPINE #1); the explosive kind is a
+exhausted for the objects tried; a rule of bounded radius for the spine is not excluded. The one remaining test that could prove more is the automorphism test (NATIVE-SPINE #1); the explosive kind is a
 separate open question.
 
 ## Line 2: does the growth need more than the allowed states?

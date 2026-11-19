@@ -2,7 +2,7 @@
 
 Status: Proved
 
-Ticket `NATIVE-SPINE-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/NATIVE-SPINE-20261119-001/native_spine.md`. Referee pending.
+Ticket `NATIVE-SPINE-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/NATIVE-SPINE-20261119-001/native_spine.md`. Refereed (R1): confirmed, wording points folded in.
 
 | # | Conclusion | Evidence |
 | --- | --- | --- |

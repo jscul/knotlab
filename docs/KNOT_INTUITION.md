@@ -757,7 +757,7 @@ from feeds itself, while the same states with another junction counted as implie
 only circulate, stall or close
 ([decision note](../research/DROPPED-JUNCTION-20261119-001/dropped_junction.md)).
 Is there then a finite set of kinds of junction whose counts follow a fixed
-matrix (`JUNCTION-KINDS-20261119-001`, frozen run, referee pending)? No. Each
+matrix (`JUNCTION-KINDS-20261119-001`, frozen run, refereed)? No. Each
 junction passes a share of each child back to it, and those shares take more
 values every round, in the catalogue's eddies as much as in the break shapes, so
 no finite set of kinds can pass them on exactly. A junction is a cluster that
@@ -767,7 +767,7 @@ ancestors two and three rounds back. But a shuffled relation with the same
 numbers of candidates pairs off as well, so this says little
 ([decision note](../research/JUNCTION-KINDS-20261119-001/junction_kinds.md)).
 Can the growth pick such a pairing itself (`NATIVE-SPINE-20261119-001`, frozen
-run, referee pending)? Not by the newest ancestor, the one with the most parent
+run, refereed)? Not by the newest ancestor, the one with the most parent
 chains or the one with the fewest, and nothing in the ancestry forces any pair:
 every junction could swap its partner within another pairing
 ([decision note](../research/NATIVE-SPINE-20261119-001/native_spine.md)).

@@ -1,7 +1,8 @@
 # A transfer between kinds of junction
 
 Epic `JUNCTION-KINDS-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead after `BREAK-EDDIES-20261119-001`'s
-referee verdict (taking `JUNCTION-MAP-20261119-001#1`). Goal G17. **Referee pending.** Its reading of the matching was narrowed
+referee verdict (taking `JUNCTION-MAP-20261119-001#1`). Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block, one wording point folded in on 19 November (see
+Referee). Its reading of the matching was narrowed
 the same day by `NATIVE-SPINE-20261119-001` (see Corrections).
 
 **Record.**
@@ -22,7 +23,8 @@ the same day by `NATIVE-SPINE-20261119-001` (see Corrections).
 ## The answer
 
 **In the owner's terms.**
-- **There is no transfer between kinds of junction.** The direction's second stop case holds: the kinds never settle.
+- **There is no exact transfer between kinds of junction** (along parents, each junction shared 1/p among its p parents; the
+  qualifier added after referee R1). The direction's second stop case holds: the kinds never settle.
   - **Out-shares.** A junction's out-share takes more and more values as the growth goes on. In the last rounds, one round's
     junctions hold 26 to 185 distinct out-shares in the ten starts and 19 to 28 in the catalogue's eddies. In the first rounds they
     held 2 to 8 (J1, all 30 starts).
@@ -103,6 +105,16 @@ round, both hold (post hoc).
 - **2026-11-19, Narrowing (overreading), found by `NATIVE-SPINE-20261119-001`.** "Ancestry carries the count … the substitution made
   of real parent chains" read the existence of a perfect matching as structure. A degree-preserving shuffle of the relation has one
   too (30 of 30), and no pair is forced. Logged in `docs/CORRECTIONS.md`. J3's verdict and every count stand.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread, with its own growth and an
+independent matcher. No study code was run.
+- **Confirmed.** All 30 starts reproduce; every recurrent round of the ten has a perfect matching by an independent matcher; J4 holds
+  over every subset of interval types, not only up to three of the ten most frequent. The narrowing by `NATIVE-SPINE-20261119-001`
+  is supported.
+- **Folded in the same day (not a block)**, logged in `docs/CORRECTIONS.md`: the headline now carries its qualifier, an exact
+  transfer along parents with 1/p shares, which the Limitations already stated.
 
 ## Advisor
 

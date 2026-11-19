@@ -4,6 +4,18 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the joined-rings rule proved, with its scope narrowed
+
+- The rule that two joined rings of knots grow by (`RING-PAIR-20261119-001`,
+  [decision note](research/RING-PAIR-20261119-001/ring_pair.md)), that a round's junctions are the clusters of the unrolled
+  candidate map, is now proved for every round (`RING-IDENT-20261119-001`,
+  [proof](proofs/RING-IDENT-20261119-001A/RING-IDENT-20261119-001A-P001_identification/proof.md)).
+- **Narrowed.** The proof needs the knot graph to contain a cycle. Without one the rule can fail inside the stated scope: two stars
+  joined at their centres grows 6, 6, 2, 2, 4, 6, 8, …, not 6, 6, 2, 0. Every start the study grew has a cycle.
+- **Clarified (not a block).** The studies of junction kinds and of a native spine (`JUNCTION-KINDS-20261119-001`,
+  `NATIVE-SPINE-20261119-001`) were refereed and confirmed; their headlines now say "an exact transfer along parents" and "no rule
+  tried picks the spine".
+
 ## 19 November 2026: the eddies' pairing narrowed
 
 - **Narrowed.** The study of kinds of junction (`JUNCTION-KINDS-20261119-001`,

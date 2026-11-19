@@ -1,7 +1,8 @@
 # What rule do two joined rings of knots grow by?
 
 Epic `RING-PAIR-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `JOIN-GROWTH-20261118-001#1`. Goal
-G17. **Referee pending.**
+G17. **Referee pending.** Its scope was narrowed on 19 November by `RING-IDENT-20261119-001`, which proved the rule with one added
+condition: the knot graph must contain a cycle (see Correction).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `3b2acc84f` at 01:26 UTC, after the model was found
@@ -41,7 +42,8 @@ a finite set of its points that hangs together. "Fractal" stays in the owner's q
   (Fisher and Essam, 1961), counted by positive algebraic systems (Drmota, Lalley, Woods). What this adds is that the cheapest
   parity growth's rounds are exactly these clusters.
 - **The scope.** The rule is claimed where every knot gets its places from its shares and its first-round joins, without the floor
-  of three; where surplus distinctions sit on knots asked for two or more joins; and where the first round has only pairs. Outside
+  of three; where surplus distinctions sit on knots asked for two or more joins; where the first round has only pairs; and, added
+  after the run, where the knot graph contains a cycle (corrected: see Correction). Outside
   it, the floor's distinctions renew and nest, as `JOIN-GROWTH-20261118-001` found, and three out-of-scope starts grown here behave
   differently: two grow by a fixed amount a round, one exponentially.
 
@@ -112,12 +114,24 @@ That one rule covers, in one picture:
 
 ## Limitations
 
-- **Computed, not proved.** The identification of the growth with the clusters is checked on every grown round of 17 fresh starts,
-  36 recorded census starts and 7 recorded two-ring joins (`JOIN-GROWTH-20261118-001`). The proof route above is an outline.
+- **Computed here, proved since.** The identification of the growth with the clusters is checked on every grown round of 17 fresh
+  starts, 36 recorded census starts and 7 recorded two-ring joins (`JOIN-GROWTH-20261118-001`). `RING-IDENT-20261119-001` proved it
+  for every round, with the scope's added condition that the knot graph has a cycle.
 - **Scope.** Starts with a distinction from the floor, surplus at a knot of demand 1, a group of three in round 1, or two knots
   with two common neighbours are outside the scope. All 100 out-of-scope census starts differ from the rule from round 1.
 - **The horizon** is 11 to 26 rounds per start. The rates and the exponent come from the rule's equations, not from the growth.
 - **One policy** (A104) and the bare convention (A107). "Growth" counts junctions by round; bond balls are not measured.
+
+## Correction (19 November 2026, a Narrowing)
+
+The scope as first stated is too wide. When the knot graph is a tree, the candidate complex's components are finite. A component's
+whole cluster then has nothing left to join while other loose distinctions remain elsewhere, so it is not implied, and the floor gives
+it one fresh distinction: a relay, as `CLUSTER-ALL-20261119-001` names it.
+- **The example.** Two stars joined at their centres (knot 0 joined to 1, 2 and 3; knot 3 joined to 4 and 5) meets every condition
+  above, and `covermodel.in_scope` accepts it. It grows 6, 6, 2, 2, 4, 6, 8, …, against the rule's 6, 6, 2, 0.
+- **How often.** Among RING-PAIR-scope starts on 3 to 7 knots, 21 of the 43 trees differ, and all 45 with a cycle agree.
+- **What stands.** Every result above concerns starts with a cycle, and `RING-IDENT-20261119-001` proves the rule for all of them,
+  every round (its Proposition 5 is this example). Logged in `docs/CORRECTIONS.md`.
 
 ## Advisor
 

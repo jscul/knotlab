@@ -1,7 +1,8 @@
 # Can the growth pick its own spine?
 
 Epic `NATIVE-SPINE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `JUNCTION-KINDS-20261119-001#1`,
-bounded to three rules. Goal G17. **Referee pending.**
+bounded to three rules. Goal G17. **Refereed:** report [R1](referee-R1/report.md), confirmed, no Block, two wording points folded
+in on 19 November (see Referee).
 
 **Record.**
 - Pre-registration: [preregistration.md](preregistration.md), frozen in commit `79f09ca40` at 13:18 UTC after a pilot (disclosed).
@@ -32,8 +33,9 @@ bounded to three rules. Goal G17. **Referee pending.**
   junction has and how many junctions each ancestor serves, still has a perfect pairing at rounds 10, 15 and 20 in all ten (30 of
   30). So the pairing that `JUNCTION-KINDS-20261119-001` read as "ancestry carries the count" follows from the counts and the
   density of ancestry. That reading is corrected (a Narrowing; see Corrections).
-- **So the spine is not in the growth.** The counts obey c(t) = c(t − 2) + c(t − 3), but no rule tried, and no forced structure,
-  turns that into one partner per junction. Combined with JUNCTION-KINDS and JUNCTION-MAP, this is the fourth finite object that the
+- **No rule tried picks the spine, and nothing forces it** (reworded after referee R1: the first version said "the spine is not in
+  the growth", which goes beyond three rules and the forced reading; a rule of bounded radius is not excluded). The counts obey
+  c(t) = c(t − 2) + c(t − 3), but no rule tried, and no forced structure, turns that into one partner per junction. Combined with JUNCTION-KINDS and JUNCTION-MAP, this is the fourth finite object that the
   break-shape eddies do not carry: clusters on the candidate map, the junction map, kinds of junction, and now a native spine.
 
 ## Predictions and verdicts
@@ -50,8 +52,9 @@ bounded to three rules. Goal G17. **Referee pending.**
 
 ## Why it holds
 
-- **"Most chains" sees only depth 3.** Going three steps up multiplies the chains, so a depth-3 ancestor almost always has more
-  chains than any depth-2 one. The advisor predicted this depth bias.
+- **"Most chains" never prefers depth 2 (proved, the referee's argument).** Every parent chain from j to a depth-2 ancestor a
+  continues to each of a's parents, so m(b, j) ≥ m(a, j) for every parent b of a. The largest chain count at depth 3 is therefore
+  never below the largest at depth 2, and in all 204 rounds it was above. The advisor predicted this depth bias.
 - **Nothing is forced.** A pair lies in every perfect pairing exactly when it is on no alternating cycle. The relation is dense
   (each junction has many ancestors at each depth), so every pair lies on one.
 - **The null.** Hall's condition depends only on how candidates are shared. A relation this dense with these degrees meets it at
@@ -78,6 +81,15 @@ bounded to three rules. Goal G17. **Referee pending.**
   made of real parent chains" read the existence of a perfect pairing as structure. A degree-preserving shuffle has one too (30 of
   30 here), so it shows only that the counts are compatible with the ancestry. Logged in `docs/CORRECTIONS.md`, and corrected in
   that note, the working doc, its object row and its goals row.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, by the coordinator's background referee thread, with its own growth and
+relation, networkx's matcher and components, and its own shuffles. No study code was run.
+- **Confirmed.** All 204 rounds reproduce: N, M and F never keep a perfect matching, with the study's tie counts; M keeps no depth-2
+  ancestor; the forced share is 0; 90 of 90 shuffles keep a perfect matching.
+- **Folded in the same day (not blocks)**, logged in `docs/CORRECTIONS.md`: "the spine is not in the growth" is now "no rule tried
+  picks it, and nothing forces it"; M's depth bias is stated as proved.
 
 ## Advisor
 

@@ -2,7 +2,7 @@
 
 Status: Proved
 
-Ticket `JUNCTION-KINDS-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/JUNCTION-KINDS-20261119-001/junction_kinds.md`. Referee pending.
+Ticket `JUNCTION-KINDS-20261119-001Z`, 2026-11-19. A ledger; no new claim. Decision note `research/JUNCTION-KINDS-20261119-001/junction_kinds.md`. Refereed (R1): confirmed, wording points folded in.
 
 | # | Conclusion | Evidence |
 | --- | --- | --- |

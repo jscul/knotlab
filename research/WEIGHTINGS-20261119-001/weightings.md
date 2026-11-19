@@ -218,3 +218,50 @@ freeze, staying within its text.
 | 1 | Dimension grows linearly under random trees: prove that the typical dimension is about n/(2e²) for large n | 2/3 — what is typical, proved at every size under one weighting | 3/3 — the ray-leaf mean is exact; it needs concentration and the split between the two parity classes | prove concentration of each parity class's ray-leaves → stop at a proof, or at a size where the measured dimension departs from it | Alternative · proposed |
 | 2 | What the five-place cap forbids beyond trees: without dead knots, can knots of at most five places grow in three dimensions in the class? | 2/3 — it says whether the census's two comes from the cap itself | 2/3 — the caterpillar argument and the dead-hub start bound it | extend the caterpillar argument to the relayed map with multiplicities → stop at a proof, or a start without dead knots that has three chains | Alternative · proposed |
 | 3 | Mutually touching knots (`SCALE-THEOREM-20261119-001#1`): the unproved part, now also 41–62% of the random trees with extra lines | 2/3 — re-rated from 3/3: the rare dimensions no longer live only there | 1/3 — a different complex is needed | find the complex on the census's 2,958 out-of-class starts → stop at one, or a start where none exists | Alternative · in the basket |
+
+## Final report as sent (2026-11-19 15:22 UTC)
+
+**Outcome:** Two dimensions are typical because of the weighting, not because of the growth, so "two is typical" needs narrowing before it goes to John. I kept the proved theorem as the reader and changed only how starts are drawn: seven weightings, frozen before I looked, 2,000 samples per size from 5 to 20 knots. Three or more dimensions does become common in the class, and so does exponential growth. 10 of 11 predictions held. Closed, referee pending.
+
+- **Uniform random trees.** Nothing stalls and every start is in the proved class. Three or more dimensions is 5% of growers at seven knots, 12% at twelve, 24% at sixteen and 37% at twenty, with up to six dimensions.
+- **Random extra lines** (Poisson, mean one) make exponential growth common in the class: 11% of growers at six knots and 41% at twenty.
+- **The crowded weightings keep two.** These are random pairing of places (a configuration model) and growth that attaches knots one at a time. Their in-class growers are 80% to 100% two-dimensional, and three never occurs. Most of their starts stall.
+- **Why, in the theorem's terms.** Dimension is the most chains in one piece of the map, and a chain needs a knot with open places left after its joins. A random tree has about n/e² leaves beside a knot of two touches, and each carries a chain. Crowded weightings leave almost none.
+- **The five-place cap is what keeps trees at two.** I proved this after the run. A bare tree whose knots all have at most five places is a caterpillar: its non-leaves form one line, so it carries at most two chains. Every three-dimensional tree in the run has a knot of six or more places, and no in-class start in all 112,000 with knots of at most five places reached three. The cap isn't a law, though: a hand-built ten-knot start with a dead hub grows three-dimensionally within five places.
+- **The theorem held on new ground.** All 1,226 regrown samples agree round by round to round 6. 622 of them are three- to six-dimensional or exponential, which the census never reached.
+- **The miss.** The advisor expected cycles to make attachment growth exponential (W7). Instead its cycles stall or leave the class.
+
+| Weighting | Knots | In the class | Dim 2 of in-class growers | Dim 3+ | Exponential |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| random tree | 8 | 100% | 73% | 2.9% | 0 |
+| random tree | 20 | 100% | 52% | 37% | 0 |
+| tree + extra lines | 8 | 47% | 58% | 1.9% | 19% |
+| tree + extra lines | 20 | 59% | 31% | 23% | 41% |
+| configuration model | 20 | 10% | 100% | 0 | 0 |
+| growth by attachment | 8 | 4% | 92% | 0 | 0 |
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: two dimensions under other weightings | **Status:** Successful (10 of 11 held; W7 failed) | Three or more is common under random trees from twelve knots, and exponential with extra lines from six; crowded weightings keep two; 1,226 of 1,226 regrown agree |
+| Local direction: what the cheapest growth makes typical | Research directions | The typical dimension follows the open places a weighting leaves, by the theorem's own mechanism |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Dimension is chains per piece; any number of chains occurs in the proved class; cycles make it exponential |
+| Long-term goal: G17 | Capability gained | Typical and rare growth read per weighting from proved statements, with the five-place cap named as what keeps trees at two |
+
+**Next step:** Research directions — none selected yet (awaiting the coordinator)
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Prove the dimension grows linearly under random trees, about n/(2e²) | 2/3 | 3/3 | prove each parity class's chain-carrying leaves concentrate → stop at a proof, or a size where the measured dimension departs | Alternative · proposed |
+| 2 | What the five-place cap forbids beyond trees: without dead knots, can knots of at most five places reach three dimensions in the class? | 2/3 | 2/3 | extend the caterpillar argument to the relayed map with multiplicities → stop at a proof, or a start without dead knots that has three chains | Alternative · proposed |
+| 3 | Mutually touching knots: the unproved part, now also 41–62% of trees with extra lines | 2/3 (re-rated from 3/3: the rare dimensions no longer live only there) | 1/3 | find the complex on the census's out-of-class starts → stop at one, or a start where none exists | Alternative · in the basket |
+
+**Corrections:** two.
+- **Narrowing.** "Three or more lives only among mutually touching knots" (SCALE-THEOREM) and "every start that grows in three or four dimensions has knots that touch each other all round" (the working doc) hold only under crowded weightings of knots with three to five places, and so does the line summary's "that is why two is typical". Logged and published (bafaa96ff).
+- **Not a block.** SCALE-THEOREM's referee wording points: the class now names "no stall", and open places per knot are quoted as measured (9dbf5d048).
+
+**Goals:** G17 checkpoint (capability gained). **Assumptions:** A106 overturned as a reading of what the growth makes typical (Assumed → Under challenge → Overturned). Its named alternatives, random pairing and attachment, keep two, but more than five places doesn't; the census's figures stand as figures under its weighting. A107 gets a history line: every in-class ring with knots attached grows exponentially under random extra lines too. **Basket:** a new direction from you; nothing taken. **Advisor:** Fable 5.2, before the freeze, staying within its text. It judged none of my first three weightings clean, so I added the surplus knob and the configuration model. Its exact tree counts (840/16,807 at seven knots) and leaf mean held, and its prediction for attachment growth failed.
+
+**Referee hand-off.** The decision note is `research/WEIGHTINGS-20261119-001/weightings.md`, the code is `experiments/WEIGHTINGS-20261119-001B/WEIGHTINGS-20261119-001B-E001_weights/`, and the post-hoc checks are `research/WEIGHTINGS-20261119-001/posthoc/posthoc.py`. Please check:
+- that the weightings sample what the pre-registration says, especially the configuration model's weighting by matching counts;
+- the caterpillar lemma's step that no knot touches three non-leaves;
+- the dead-hub start.

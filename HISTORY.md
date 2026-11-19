@@ -93,6 +93,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
 
+## 19 November 2026: the created pair refereed
+
+- The study of how the law creates a meet-once collision (`CREATED-PAIR-20261119-001`,
+  [decision note](research/CREATED-PAIR-20261119-001/created_pair.md)) was refereed and confirmed: matching the two tables swaps a
+  start knot with a new junction and moves one distinction of the join across the growing end, and no matching keeps the loose
+  distinctions, while some matching does in every one of the 86 carried pairs (the referee's check of the 23 larger ones).
+- **Clarified (not a block).** The carried pairs' differences are not always two junctions from the growing end; in most small
+  pairs a differing junction touches a live one.
+
 ## 19 November 2026: three-way readings on the new collisions refereed
 
 - The study of three-way readings on meet-once collisions (`TRIPLE-GROWN-20261119-001`,

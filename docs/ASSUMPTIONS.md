@@ -3139,6 +3139,9 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Extend to six knots or to six places, weight by random pairing of places, or by a growth process that adds knots
   one at a time, and test whether two stays typical and three rare.
 - **History.**
+  - 2026-11-19 · `SCALE-SHARE-20261119-001`: extended to 20 knots by Metropolis sampling, the labelled measure makes stalls
+    typical for a counting reason (open places per knot fall like √(5/n)); among growers two dimensions takes over (98% at 20
+    knots); distinct and labelled shares converge. Status unchanged.
   - 2026-11-19 · `JOIN-GROWTH-20261118-001`: a part joined to a ring knot needs a knot of five or six places at the joint (with
     fewer, round 1 stalls), so the cutoff at five places leaves out every ring with a part joined to it, the starts where every
     joined part speeds the ring; status unchanged.

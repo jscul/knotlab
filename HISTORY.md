@@ -4,6 +4,16 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the identification extended to knots touching twice
+
+- The growth reads a start only through which live knots neighbour which, and how many open distinctions each live knot has. So
+  the identification of the growth with the clusters of the unrolled map holds when knots touch twice or more
+  (`DOUBLE-IDENT-20261119-001`, [proof](proofs/DOUBLE-IDENT-20261119-001A/DOUBLE-IDENT-20261119-001A-P001_doubles/proof.md)).
+  On the touch census, it matches every one of the 11,512 arrangements in its class round by round.
+- **Clarified (not a block).** The relay study (`RELAY-IDENT-20261119-001`) said most of the census's two-dimensional growths had
+  cycles where the proofs fail. Most of them were in fact outside only because their knots touch twice; 85% of them are now in the
+  proved class.
+
 ## 19 November 2026: the identification proofs refereed
 
 - The identification of the growth with the clusters of the unrolled map (`RING-IDENT-20261119-001`,
@@ -74,6 +84,15 @@ history. A withdrawn result keeps its files, with a notice explaining the gap.
   [decision note](research/BREAK-EDDIES-20261119-001/break_eddies.md)) found the catalogue's family in 118 of its 122 starts. Those
   were the starts that fitted in memory, so the finding holds for them, and whether most break-shape eddies are the catalogue's
   kinds is open. 18 of the 30 entries that looked minimal are not.
+
+## 19 November 2026: what the law reaches, from larger starts
+
+- **Narrowed.** Two studies said that where junctions meet once, the stages the law reaches keep their allowed states in their
+  bond distances: `MEET-ONCE-20261119-001` ([decision note](research/MEET-ONCE-20261119-001/meet_once.md)) and
+  `PARENT-RULE-20261119-001` ([decision note](research/PARENT-RULE-20261119-001/parent_rule.md)). That holds for the census's
+  starts, of at most five knots. Grown from every legal arrangement of up to 7 junctions, the same law makes 87 pairs with one
+  table and other allowed states (`GROW-SMALL-20261119-001`,
+  [decision note](research/GROW-SMALL-20261119-001/grow_small.md)). Every count of the two studies stands.
 
 ## 19 November 2026: backed pairs refereed
 

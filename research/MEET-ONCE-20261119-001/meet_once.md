@@ -98,7 +98,8 @@ the allowed states, and the only ambiguity left is which junction holds what.
 
 - The census starts, complete rounds, the cheapest counts, and 15 to 40 junctions; Codex's serial mixed law was not run.
 - "States" are equation spaces (no signs), as in the predecessors.
-- Computed to 40 junctions, this is a property of what the law reaches. Statically it fails at 7 and 8 junctions (UNIQUE-TABLE's six). Why the law avoids
+- Computed to 40 junctions, this is a property of what the law reaches from the census's starts (at most five knots); from larger
+  starts the law does build such pairs (`GROW-SMALL-20261119-001`: 87 pairs, corrected below). Statically it fails at 7 and 8 junctions (UNIQUE-TABLE's six). Why the law avoids
   such pairs is not explained here.
 - The 83 closed and open pairs depend on counting a closed stage as its own arrangement. Without them, 20 groups remain (82 groups
   are a closed stage and an open one; the group of three keeps two open arrangements), and M2 still holds.
@@ -116,7 +117,7 @@ does that job: every test was decided by a junction-graph isomorphism or by the 
 | Scope | Verdict | Why |
 | --- | --- | --- |
 | This attempt: reached meet-once collisions with other states, 15 to 40 junctions | **Status:** Successful | None among 2,698 stages; all 102 collision groups keep the states, already at distance 8 |
-| Local direction: what reading of a base is complete | Continue | Computed to 40 junctions: where junctions meet once, reached stages lose nothing of the states to their distances; statically they do |
+| Local direction: what reading of a base is complete | Continue | Computed to 40 junctions, from the census's starts: where junctions meet once, reached stages lose nothing of the states to their distances; statically they do |
 | Broader exploration: what distances carry (A97) | Known alternatives | Whitney's theorem names the same-states kinds; the reached and static difference is not known |
 | Long-term goal: G1 with A97 | Capability gained | A scope, meeting once and reached, in which pair distances carry the allowed states, to 40 junctions |
 
@@ -147,6 +148,15 @@ corrected and wording, folded in above and logged in `docs/CORRECTIONS.md` (Not 
 - **Wording.** "Need knots that share two", "not a size effect" and "a property of what the law reaches" now say computed to 40
   junctions (50 by the referee); "none of them is reachable" now says the law never builds the rivals, since each truth is a
   round-1 census stage.
+
+## Correction (2026-11-19, from `GROW-SMALL-20261119-001`; Narrowing)
+
+The sentences above that make this "a property of what the law reaches" hold for the census's starts, of at most five knots,
+and not for the law. Grown one and two rounds from every legal meet-once arrangement of at most 7 junctions, the law makes 67
+groups (87 pairs) of meet-once stages with one full table and other states. 86 of those pairs are carried from starts that already
+collide, and 1 is created from starts that do not ([decision note](../GROW-SMALL-20261119-001/grow_small.md)). The census's
+starts are too small to collide (the smallest static collision with other states has 6 junctions), and creation is rare, one pair
+in 336,933 stages. M1, M2 and every count above stand. Logged in `docs/CORRECTIONS.md`.
 
 ## Final report as sent (2026-11-19 10:07 UTC)
 

@@ -30,7 +30,8 @@ violations) and closed on that evidence; the census numbers below are from the o
 - **What does separate them, so far.** No pair with other states has both sides surviving two removals. No pair has both sides
   that one round of the law rebuilds from their own previous stage, a test made after the frozen ones failed. These are thin: only
   77 and 85 of the 503,039 arrangements qualify. So the protection comes from the rule's exact choice of joins and counts, not
-  from backed pairs alone, and at these sizes that has hardly any room to show.
+  from backed pairs alone, and at these sizes that has hardly any room to show. (Narrowed by `GROW-SMALL-20261119-001`: grown
+  from these arrangements, the law itself makes 87 pairs, so it protects only from small starts; see the correction below.)
 - **The table's own symmetries.** A reached table can be symmetric in a way the allowed states are not. About one in six of the open
   meet-once reached stages of up to 14 junctions have such a symmetry (181 of 1,099). The renamed copy has the same table and other
   states but is the same arrangement, so it is not a collision. The advisor's suggested cleaner theorem, that every table symmetry
@@ -171,6 +172,15 @@ corrected and wording, folded in above and logged in `docs/CORRECTIONS.md` (Not 
   rounds 1 and later, not the start itself.
 - **The pending shard.** It was folded in on the referee's evidence (252 stages, 17 meet once, no violation). The coordinator
   signed off the LONG_RUNNING row. My own run of that shard was stopped.
+
+## Correction (2026-11-19, from `GROW-SMALL-20261119-001`; Narrowing)
+
+"The protection comes from the rule's exact choice of joins and counts" (the answer, and the working-doc sentence "what keeps the
+states of what the law builds is its exact choice of joins and counts") was read as protection by the law in general. It is
+not. Grown one and two rounds from the 503,039 arrangements of this study, the law makes 67 groups (87 pairs) of meet-once stages
+with one full table and other states: 86 pairs carried from static collisions, 1 created ([decision
+note](../GROW-SMALL-20261119-001/grow_small.md)). What protected the census's stages is that its starts, of at most five knots, are
+too small to collide, and that creation is rare. Theorems 1 to 3 and every count above stand. Logged in `docs/CORRECTIONS.md`.
 
 ## Final report as sent (2026-11-19 12:38 UTC)
 

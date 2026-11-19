@@ -635,16 +635,25 @@ at larger sizes (`MEET-ONCE-20261119-001`, computed, refereed)? Not up to
 arrangements with the same distances, already read to 8, have the same allowed
 states, and differ only in which junction holds what. Arrangements the law never
 builds can still meet once and differ, so, as far as computed, this is a
-property of what the law reaches ([decision note](../research/MEET-ONCE-20261119-001/meet_once.md)).
+property of what the law reaches from the census's small starts, not of the law
+(see the next two questions) ([decision note](../research/MEET-ONCE-20261119-001/meet_once.md)).
 Why does the law never build the static rivals (`PARENT-RULE-20261119-001`,
 proved, refereed)? Because it joins two junctions only when a third
 already meets both: in everything it builds, any two junctions met by a junction
 with a loose distinction also meet an older one (backed pairs), and every rival
 lacks this. That holds at every size. But backed pairs alone do not keep the
 allowed states: 242 small arrangements, backed on both sides, share their
-distances with others that have other states. So what keeps the states of what
-the law builds is its exact choice of joins and counts, and that is known only
-as far as computed ([decision note](../research/PARENT-RULE-20261119-001/parent_rule.md)).
+distances with others that have other states
+([decision note](../research/PARENT-RULE-20261119-001/parent_rule.md)).
+And does the law itself make such pairs from larger starts
+(`GROW-SMALL-20261119-001`, computed, referee pending)? Yes. Grown one and two
+rounds from every legal arrangement of up to 7 junctions that meets once, it
+builds 87 pairs that meet once, share every bond distance and have other allowed
+states. Almost all are carried: the two starts already collided, and the law grows
+both in step. One is created from two starts that do not collide. The census never
+showed this because its starts, of at most five knots, are too small to collide,
+and creation is rare. So distances alone do not carry the allowed states of what
+the law builds ([decision note](../research/GROW-SMALL-20261119-001/grow_small.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even
@@ -799,6 +808,14 @@ is typical: on the census's growing tree-shaped starts, 93% are two-dimensional,
 because a piece without chains relays and a one-dimensional start needs each
 piece to hold exactly one chain
 ([decision note](../research/RELAY-IDENT-20261119-001/relay_ident.md)).
+And when two knots share two or more distinctions, as in most of the census
+(`DOUBLE-IDENT-20261119-001`, proof and census readout, referee pending)? Nothing
+changes but how many open distinctions each knot has: from round 1 on the growth
+reads only which live knots neighbour which and those counts. So the same rule
+holds, and on the touch census it matches every arrangement in its class round by
+round. The census's typical two dimensions are then explained on 85% of its
+two-dimensional growths: two chains in one piece, a relay, or both
+([decision note](../research/DOUBLE-IDENT-20261119-001/double_ident.md)).
 How do knots build an order, then (`KNOT-ORDER-20261117-001`, proof and frozen
 computation, referee pending)? One knot at a time, with "b lies between a and
 c" as the knot. Each knot passes the knot test, yet the last three alone let the

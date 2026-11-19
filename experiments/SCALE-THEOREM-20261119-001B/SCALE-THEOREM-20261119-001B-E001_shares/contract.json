@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "experiment_id": "SCALE-THEOREM-20261119-001B-E001",
+ "ticket": "SCALE-THEOREM-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "What share of SCALE-SHARE's sampled starts of 5 to 20 knots lies in the proved class, what growth classes does the theorem predict there, and do they match SCALE-SHARE's refereed shares and real growth?",
+ "public_inputs": {
+  "code": "scalelib.py (148aa2e08a7536b701aeb4a98143c9075ef489aa507927fd132aeebb6967ff03), job.py (b5ab96b5307de2e5e0cab7b2bd3c03d5810f962950383aca4e9b5872a1fe0377), merge.py (5d8ec7e14e85ba1c738ca2e1302524a49237499b85da66a7fc5c58cfa593a53b) (sha256)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>",
+  "reused": "SCALE-SHARE scale.py (samples, weights, cluster rule) and runs/scale-share (recorded classes); DOUBLE-IDENT machine_check.py and dims.py (class, theorem rule, model)"
+ },
+ "forbidden_inputs": [
+  "Changing a prediction, the class or the rule after reading the frozen run"
+ ],
+ "primary_observable": "P1-P7 of research/SCALE-THEOREM-20261119-001/preregistration.md",
+ "cheapest_meaningful_control": "the cluster rule's classes on the same samples (P1, P2)",
+ "predictions": {
+  "P1": "regenerated cluster-rule classes equal SCALE-SHARE's recorded ones",
+  "P2": "theorem's class = cluster rule's in the class",
+  "P3": "in-class share of non-stalling in [0.55, 0.90] at every size",
+  "P4": "in-class dimension 2 >= 75% of growers at every size and higher at 20 than at 5",
+  "P5": "dimension >= 3 at most 1% of in-class growers",
+  "P6": "60 regrown in-class samples per size agree round by round to round 6",
+  "P7": "in-class dimension-2 share of growers within 5 points of SCALE-SHARE's all-grower share at every size"
+ },
+ "decision_rules": {
+  "each": "held iff no exception"
+ },
+ "stop_rule": "One run; stop at the table, or the first size where P6 fails.",
+ "runtime": "under thirty minutes",
+ "disclosed_exploration": "pilot on seed 99 (200-400 samples at five sizes) and the integrity check on chain 0 at n = 5",
+ "amendments": []
+}

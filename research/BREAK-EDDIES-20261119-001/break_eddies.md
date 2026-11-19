@@ -123,3 +123,38 @@ candidates with no common neighbour, joined by one junction in round 1. The rule
 | 1 | The map with first-round junctions as points: find the loop and its entries in the stage-1 structure, admitting a group of three that shares two knots with a block as a loop of length two | 3/3 — closes the cluster rule's out-of-scope class and its second break | 2/3 — 118 starts with known W to test against | build it on the 36 starts with W = y^2 (1 + y) → stop when it predicts their W, or at a start where it cannot | Selected · awaiting go-ahead |
 | 2 | The explosive kind: group sizes over rounds, and whether the count has any fixed rate | 2/3 — a different object, possibly faster than any exponential | 2/3 — memory is the limit | follow the largest group with exhausted junctions kept as counters (the advisor's suggestion) → stop at a growth law for the group sizes | Alternative · deferred |
 | 3 | A growth that reads only the allowed states (A108) | 3/3 | 2/3 | as in NAE-GROWTH | Alternative · deferred |
+
+## Final report as sent (2026-11-19 10:54 UTC)
+
+**Outcome:** The self-feeding loops hidden where the cluster rule breaks are the same eddies as the catalogue's. Of 122 such starts, 118 grow at a rate that is exactly a member of the catalogue's family, built from the same pieces. That includes the referee's six-knot eddy (W = y⁴(1 + y)). What's new is loops of two and three steps, which no ring makes; every one of them (70 of 70) needs a group of three knots joined at once in the first round. Separately, an explosive kind exists in which the groups keep growing and no fixed rate fits. 3 of 7 frozen predictions held as scored, and 1 more once read correctly. Closed, referee pending.
+
+- **The family, where the rule breaks.**
+  - y²(1 + y) is the commonest (36 starts), at the plastic number 1.3247. Then y³(1 + y), y⁴(1 + y), y⁵(1 + y)^k for k = 1 to 3, and three with hung knots or a chain.
+  - All 118 rates match a member of the family to 10⁻⁶.
+- **Why the rule can't see them.** The loop runs through first-round junctions, not through the knots alone. Restarting the rule at any later stage doesn't help either: 0 of 120 stages fall inside its scope, because the groups of three reproduce every round.
+- **So, one extended rule or a new object?** In what they do, one rule covers them: the same round-weights. To find them, the rule's map has to include first-round junctions as points. It also has to admit the case it now excludes, a group of three sharing two knots with another block, which is a loop of length two. "Junctions as valid sets" is the picture for building that map; I haven't built it yet.
+- **The explosive kind needs a different object.** Two triangles joined twice and the three-regular six-knot graph grow in leaps (e.g. 465, 4,495, 31,465), and their largest group climbs from 13 to 60 and from 33 to 178. The theta starts the same way by round 18 (groups 5 → 12). It is not a loop with a rate.
+- **Undecided:** three eight-knot starts double every round with groups near 8 to 10. No recurrence fits within reach, so they may be two-loop eddies.
+- **Real failures:** one more open place can lengthen the loop (15 of 89 pairs). The explosive test reached only 2 of 4 starts within memory, and one of the two failed it.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the eddies in the break shapes | **Status:** Partially successful (3 of 7 held as scored; 1 more post hoc) | 118 rational, all in the catalogue's family, with loops of two and three steps made by groups of three; an explosive kind; three undecided |
+| Local direction: extending the cluster rule | Continue | What they do is the catalogue's; the rule's map must take in first-round junctions and its excluded overlap |
+| Broader exploration: what the cheapest growth builds | Known alternatives | Steady eddies (round-weights) and explosive starts (growing groups) |
+| Long-term goal: G17 | Capability gained | The rare kinds named and measured |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | The map with first-round junctions as points, admitting the excluded overlap as a loop of length two | 3/3 — closes the rule's out-of-scope class and its second break | 2/3 — 118 starts with known W to test against | build it on the 36 starts with W = y²(1 + y) → stop when it predicts their W, or at a start where it can't | Selected · awaiting go-ahead |
+| 2 | The explosive kind: group sizes over rounds, and whether the count has any fixed rate | 2/3 | 2/3 — memory is the limit | follow the largest group with exhausted junctions as counters → stop at a law for the group sizes | Alternative · deferred |
+| 3 | A growth that reads only the allowed states (A108) | 3/3 | 2/3 | as in NAE-GROWTH | Alternative · deferred |
+
+**Corrections:** none for this study. Separately, I folded in the LOOP-CATALOGUE referee's Narrowing: part U wasn't every start the rule can't decide, and a six-knot eddy sat outside both lists. It's logged in docs/CORRECTIONS.md (c3c6829de), and that eddy is now measured here. The catalogue's scorer slips were fixed in a logged amendment, beside the frozen verdicts. **Goals:** G17 checkpoint (capability gained). **Assumptions:** A109 history line: few in kind holds for the steady eddies, while the explosive kind keeps it under challenge. **Basket:** `LOOP-CATALOGUE-20261119-001#1` taken. **Advisor:** Fable 5.2, before the freeze. It reported its own session as unreliable and gave no rule. It was right that the loop runs through first-round junctions and that explosive starts have merging groups. It was wrong that groups stay bounded, and that more open places never lengthen the loop.
+
+**Referee hand-off.** The decision note is `research/BREAK-EDDIES-20261119-001/break_eddies.md`; the prior-work line is in the pre-registration (objects-gate passes). Please check:
+- the Berlekamp–Massey reading and the post hoc family match (posthoc.py), especially the cancelled factor in the 23 starts with W = y⁵(1 + y)²;
+- stagelib's claim that growth from a stage equals growth of that stage taken as a start;
+- the explosive readouts (memory-limited).

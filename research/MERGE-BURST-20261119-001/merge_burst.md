@@ -31,6 +31,7 @@ pending.**
   - The growth keeps building overlapping groups faster than they merge.
   - None of them had a merge event yet.
 - **The control**, the closed case, reads and checks exactly: one block of 9, then 36, 84, 126, 126, 84, 36, 9 and 1 junctions.
+- **"Explosive" means a ×3 jump in the counts seen before a stop** (EXPLOSIVE's referee R1), not growth without bound.
 - **What a sample of the kind does, so far.**
   - Of 16 explosive starts, 2 are read, and both end after one merge and a binomial burst of one block, one of 9 junctions and one
     of 781.

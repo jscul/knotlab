@@ -4,6 +4,17 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026: the explosive-kind study refereed
+
+- `EXPLOSIVE-20261119-001` ([decision note](research/EXPLOSIVE-20261119-001/explosive.md)) was refereed: its findings stand.
+  - The filled reading is correct on all 3,200 starts.
+  - The smallest explosive start closes at round 23.
+- **Narrowed.**
+  - "Explosive" is a jump in the counts seen before a stop, not growth without bound.
+  - "None within five places" means none among 2,191 sampled starts within 20 rounds.
+  - The regularity of one merge and one burst is shown for the smallest case only.
+- **Strengthened.** Non-overlapping starts agree with the filled reading 776 of 776.
+
 ## 19 November 2026: dead knots within five places refereed
 
 - The classification of growth within five places on the whole proved class, dead knots included (`DEAD-CAP-20261119-001`,

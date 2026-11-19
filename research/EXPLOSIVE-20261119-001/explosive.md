@@ -1,7 +1,9 @@
 # Where groups of three take over
 
 Epic `EXPLOSIVE-20261119-001`, 19 November 2026, by Claude, on the coordinator's go-ahead for `DEAD-CAP-20261119-001#1`. Goal G17.
-Framed by A110, the owner's direction: blow-up is expected, and the unlimited structure is read by sampling it. **Referee pending.**
+Framed by A110, the owner's direction: blow-up is expected, and the unlimited structure is read by sampling it. **Refereed:**
+report [R1](referee-R1/report.md), findings stand, no Block; three Narrowings of wording and one strengthening, folded in on 19
+November (see Referee).
 
 **Record.**
 - **Pre-registration:** [preregistration.md](preregistration.md), frozen in commit `bdd3e1228`, after the census exploration and a
@@ -23,15 +25,21 @@ Framed by A110, the owner's direction: blow-up is expected, and the unlimited st
   predicts the growth's class.
   - It holds on all 1,705 such starts within five places.
   - It holds on all 474 census starts.
-  - Within seven places it holds on 775 of the 776 starts whose groups of three don't overlap.
+  - Within seven places it holds on all 776 starts whose groups of three don't overlap. The one first scored a miss grows as three
+    dimensions to round 31, as the reading says (referee R1).
+  - At least 3 of X1's 29 failures are artefacts of the 20-round horizon (referee R1).
   - For round 1 this is a short argument: a junction is a cone over its parents, so one junction of three fills the cycle that
     three pair junctions leave open. Beyond round 1 it is measured, not proved.
-- **The explosive kind needs overlapping groups of three and bigger knots.**
-  - **Within five places it never occurs:** 0 of 2,191 starts, and the largest group anywhere is 9.
-  - **Within seven places it does:** 16 of 1,000.
-  - Every one of the 16 has groups of three that share a knot and a block, and a knot of seven places.
-  - Their filled maps keep no cycle. So the advisor's guess, that explosion comes from a cycle surviving the filling, does not
-    hold. The overlap is what does it.
+- **"Explosive" here means a jump in the counts seen before a stop:** a round-over-round ratio of at least 3 from round 4 on. It
+  does not mean growth without bound, which is unread for every jumping start but the smallest (referee R1).
+  - **Within five places none jumped:** 0 of 2,191 sampled starts within 20 rounds or 6,000 junctions, under these two weightings.
+    The largest group anywhere is 9. With none found, the 95% upper bound is about 0.14% of such starts.
+  - **Within seven places 16 of 1,000 jumped.** Every one has groups of three that share a knot and a block, and a knot of seven
+    places.
+  - **Their filled maps keep no cycle.** So the advisor's guess, that explosion comes from a cycle surviving the filling, does not
+    hold.
+  - **Overlap was present in every jump, but it is not shown to drive them.** Of the 117 overlapping seven-place starts, 16 jumped
+    and 35 are undecided (referee R1).
 - **The smallest explosive start ends, so "grows without bound" is refuted there.** It has six knots of 6, 7, 5, 4, 5 and 3 places.
   1. It grows modestly for eleven rounds (8 to 31 junctions a round).
   2. Its count then leaps to 67 and 322 in rounds 12 and 13.
@@ -40,8 +48,8 @@ Framed by A110, the owner's direction: blow-up is expected, and the unlimited st
      2 to 9 parents, the binomial coefficients of 9.
   5. The growth closes at round 23.
 
-  So the explosive kind here is one merging event followed by a finite burst. It has its own regularity, and finite description
-  does not end there.
+  So the smallest case is one merging event followed by a finite burst. It has its own regularity, and finite description does not
+  end there. This is earned for that one case, read post hoc, not for the kind (referee R1).
 - **The other explosive starts could not be followed as far.** Their groups reach 22 to 974 before the child's limits stop them, so
   whether they also end after a burst is open.
 - **What a sample shows (A110).** Explosive growth is rare under these weightings: none within five places, and 1.6% within seven.
@@ -54,7 +62,7 @@ Framed by A110, the owner's direction: blow-up is expected, and the unlimited st
 | X1 | filled b1 = 0 and decided: the filled reading equals the measured class | **failed** | within five places 1,705 of 1,705 and the census 474 of 474; within seven places 835 of 864. Of the 29 failures, 28 have overlapping groups of three and all have a knot of seven places |
 | X1b | (risky) filled b1 ≥ 1 and decided: neither polynomial nor closing | **failed** | 2 of 12 within five places are polynomial: a kept cycle that is bare stays constant or polynomial, as the rank rule says (the prediction forgot bare cycles). Within seven places 99 of 99 are exponential-like |
 | X2 | (risky) within five places, no explosive start | **held** | 0 of 1,717 fresh starts, and 0 of 474 in the census |
-| X3 | within seven places, at least one explosive start | **held** | 16 of 1,000 |
+| X3 | within seven places, at least one explosive start | **held** | 16 of 1,000 jumped (a ×3 jump before a stop; growth without bound unread) |
 
 2 of 4 held.
 
@@ -66,6 +74,23 @@ Framed by A110, the owner's direction: blow-up is expected, and the unlimited st
   - Two triangles joined once: exponential-like.
   - The three-regular six-knot graph: one explosive with a kept cycle and no overlap; two undecided.
 - **The kept-cycle stratum** within five places is rare. The sampler found 5 in 2.1 million tries.
+
+## Referee
+
+Report [R1](referee-R1/report.md), 19 November 2026, read under A110.
+- **Confirmed.**
+  - The filled reading is correct on all 3,200 starts; the referee's own groups, cells and GF(2) rank agree.
+  - The smallest explosive start closes at round 23, exactly.
+  - 346 decided starts regrown to round 40 change no class.
+- **Narrowings (wording), folded in:**
+  - "Explosive" is a jump seen before a stop. All 21 jumping starts regrown to round 40 or 150,000 junctions stop again at rounds
+    5 to 12, apart from the smallest.
+  - "None within five places" is 0 of 2,191 within the horizon, with a 95% upper bound of about 0.14%.
+  - "Its own regularity" is the smallest case's, and "overlap drives it" is only "present in every jump".
+- **Strengthening.** The non-overlapping miss and at least two overlapping X1 failures are horizon artefacts. Non-overlapping starts
+  agree 776 of 776.
+- **The class rule's order** lets "explosive" take a start that closes after the horizon. Noted; no class changes in the referee's
+  regrowth.
 
 ## Assumptions
 

@@ -2822,10 +2822,19 @@ overlap one another, and the unrolled map no longer says what grows.
   A further 626 starts there were still rising fast when the computation ran
   out of memory, so how many of them are steady eddies is open too.
 - **The label.** "Explosive" is only the record's name for the kind it cannot
-  yet describe, not a fault in the growth. That groups of three are where it
-  enters is the program's reading. Whether the kind has a regularity of its
-  own, or is where finite description ends, is the question of
-  `EXPLOSIVE-20261119-001`, which is running (open).
+  yet describe, not a fault in the growth. In the record it means a jump in the
+  counts seen before a computation stops, not growth without bound.
+- **What a sample shows (computed, refereed, EXPLOSIVE).** A first group of three
+  acts like a filled cell. Read with each such cycle filled, the map predicts the
+  growth wherever groups of three do not overlap. None of 2,191 sampled starts
+  within five places jumped within 20 rounds; 16 of 1,000 within seven did,
+  every one with overlapping groups of three. Only the smallest was followed to
+  its end, and it has a regularity of its own: one join of 309 parents swallows
+  its growth, the 9 junctions left join in every way once, and it ends
+  ([EXPLOSIVE-20261119-001](research/EXPLOSIVE-20261119-001/explosive.md)). One
+  more ends the same way, through a block of 781; the other 14 could not be
+  followed far enough (MERGE-BURST, referee pending). Whether the rest of the
+  kind has such a regularity, or is where finite description ends, is open.
 
 ### 8.3 Reading a blow-up by sampling
 
@@ -2889,7 +2898,8 @@ weight, so one list says everything about its rate. On the program's reading,
 which the owner has not confirmed, that repeat is what the owner's harmonies
 do here (lesson 7.3, assumption A70): they let a blow-up be read, and they are
 not a way to stop one. Whether the explosive kind has a repeat of its own is
-the open question of lesson 8.2.
+the open question of lesson 8.2: its smallest case ends after one join and one
+burst, and most of it is not yet read.
 
 ### 8.4 What distance carries of what grows
 

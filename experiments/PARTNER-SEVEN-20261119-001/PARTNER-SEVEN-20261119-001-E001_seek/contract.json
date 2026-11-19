@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PARTNER-SEVEN-20261119-001-E001",
+  "ticket": "PARTNER-SEVEN-20261119-001",
+  "status": "Frozen",
+  "evidence_stage": "exploratory",
+  "branch": "code_analysis",
+  "question": "Can a connected parity start with every junction of size at most seven reach a complete partnered stage of order at least three without outside common candidates?",
+  "public_inputs": "Full touch census, the sixteen archived explosive starts, and fresh constructions with all initial junctions of size at most seven.",
+  "forbidden_inputs": [
+    "A candidate graph alone cannot certify partnered dynamics. Verify the held blocks and open counts.",
+    "A subset can have outside candidates. Check the entire growing end."
+  ],
+  "primary_observable": "First reached stage whose projected law has paired noncandidates, all transversals free, no outside common candidates and correct open counts, or an explicit checked retraction.",
+  "cheapest_meaningful_control": "The canonical partnered order-three start and a six-point finite binomial stage with some held transversals.",
+  "first_executable_signal": "Check the literal new six-point stage and its complete next round.",
+  "resource_budget": "Screen complete first reaches in the touch census and all stored explosive prefixes where full blocks are available; include fresh sampled starts. Stop at a verified history and report bounded screens separately.",
+  "decision_or_followup_rule": "One lawful reached stage with history, or a sampled bound named by weighting.",
+  "stop_rule": "One lawful reached stage with history, or a sampled bound named by weighting."
+}

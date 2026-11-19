@@ -171,3 +171,37 @@ Epic `NAE-GROWTH-20261119-001`, 19 November 2026, by Claude, on the coordinator'
 | 2 | Disagreement counts instead of bond distance (`DISTANCE-ORDER-20261117-001`: they fix every NAE relation from four distinctions) | 2/3 — isolates the table's own loss from the presentation's | 3/3 — rerun part B's tables | swap the table → stop at the collision count | Alternative · deferred |
 | 3 | Majority's growth with its own keep clause (f > p fresh distinctions) | 2/3 — the one law found here that changes the branching, outside knots | 3/3 | grow the census under majority with f = p + 1 → stop at whether it branches | Alternative · deferred |
 | 4 | A second knot law ("ones not divisible by three") | 1/3 — confirms T1 | 3/3 | as part C | Alternative · deferred |
+
+## Final report as sent (2026-11-19 03:51 UTC)
+
+**Outcome:** Yes. Under not-all-equal, loops branch exactly as under parity, with the same counts at every round and therefore the same ratios: the golden ratio for the ring of five with one spare per knot, 5 a round for the spare-less ring, and 2.6075 for two joined rings. The one difference is that not-all-equal never closes. Where parity closes, the top junction relays into two endless chains. This is proved and was checked on the whole census. 8 of 12 frozen predictions held, and all five growth ones did. Closed, referee pending.
+
+- **Why the law barely matters.** The cheapest growth reads its law in one place: whether a new junction's constraint already holds. Under parity that happens only at the closing top. Under not-all-equal it never happens, because every parent keeps two places of its own. The proof is a two-colouring argument from the advisor.
+- **The census.** 22,949 of 26,441 starts grow identically. The other 3,492, which parity closes, relay with 1, 2, 3, … junctions a round (2, 3, 4, … when the top held one distinction).
+- **The cluster picture survives.** A finished piece now always relays, even when it is the last one.
+- **Bond distance, who joins whom.** It is mostly enough under not-all-equal and much less under parity. On 2,644 small stages, 95% have a table no other stage shares under not-all-equal; under parity, 40%. Where two stages share a table they always join differently.
+  - The main cause is the growth, not the distance. The growth reads which junction holds which distinction, and the same allowed states can come from different presentations: 2,802 of parity's 2,902 colliding pairs, and 115 of not-all-equal's 128.
+  - That is why four part-B predictions failed (B3, B3c, B4, B5). I've recorded the cause as assumption A108.
+- **Where there is no cheapest growth.** Under one-in-three or majority, no junction is a knot.
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt: the cheapest growth under not-all-equal | **Status:** Successful (8 of 12 held) | Identical to parity except at closures, which relay (proved, census-checked); bond distance shows who joins whom on 95% of small stages |
+| Local direction: growth under other laws | Practically exhausted | A knot law enters only through implication; not-all-equal never implies; laws without knots have no cheapest growth |
+| Broader exploration: what the cheapest growth builds | Known alternatives | The same structures under both laws; the presentation, not the law, is what the growth reads |
+| Long-term goal: G17 | Capability gained | Growth results now hold for both knot laws, with the one place they differ |
+
+**Next step:** Research directions — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A growth that reads only the allowed states (challenges A108) | 3/3 — the canonical reading takes a system as its allowed states; the growth should too | 2/3 — the 115 same-state collisions show where to look | define it on the part-B stages → stop at a law well defined on all of them, or a same-state pair no state-read rule can grow alike | Selected · awaiting go-ahead |
+| 2 | Disagreement counts instead of bond distance (they fix every not-all-equal relation from four distinctions) | 2/3 — separates the table's own loss from the presentation's | 3/3 — rerun part B | swap the table → stop at the collision count | Alternative · deferred |
+| 3 | Majority's growth with its own keep clause (more fresh than old distinctions) | 2/3 — the one law found that changes the branching, outside knots | 3/3 | grow the census → stop at whether it branches | Alternative · deferred |
+
+**Corrections:** none for this study. Separately, I folded in the CLUSTER-ALL referee's two Not a block points (a scope cut drawn after the pilot's misses, now disclosed; "all 15,261" now names its two conventions), logged in docs/CORRECTIONS.md (8d06fa352). **Goals:** G17 and G1 checkpoint (capability gained). **Assumptions:** A108 added (the growth reads which junction holds which distinction, not only the allowed states); A104 history line (its results are not parity's alone). **Basket:** none taken; the earlier lines' items stay open. **Advisor:** Fable 5.2, before the freeze. It gave the no-implication lemma with its proof, the keep clause as K2, the tail form and the warning about non-knot laws. It wrongly called "who joins whom" identical by construction: the joins are, but whether distances reveal them differs by law.
+
+**Referee hand-off.** The decision note is `research/NAE-GROWTH-20261119-001/nae_growth.md`, and the prior-work line is in the pre-registration (objects-gate passes, after `DISTANCE-ORDER-20261117-001` was added at the close and marked so). Please check:
+- the two-colouring proof (T2) and its use of Bondy and Murty's lemma;
+- the same-states test in part B, which searches only the tables' isomorphisms (one parity pair undecided);
+- the two scoring notes: B5c is inverted in merge.py, and one pilot start repeats the bare ring.

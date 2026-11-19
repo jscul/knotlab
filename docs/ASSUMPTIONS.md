@@ -3203,6 +3203,9 @@ evidence: results and their status come from the records each entry links.
   irredundant one under not-all-equal. Ask whether it is well defined on the stages where same-state presentations join
   differently (`NAE-GROWTH-20261119-001#1`).
 - **History.**
+  - 2026-11-19 · Under parity, by `DROPPED-JUNCTION-20261119-001`: the eddies depend on the dropped junction. On all 23 eddies only
+    the original choice feeds itself, and the fewest-places rule departs from the cheapest growth. The parity side of the
+    dependence is total.
   - 2026-11-19 · Narrowed by `MANY-VALUED-20261119-001`: at all 146 points where the minimal constraints were not a presentation,
     the allowed states still have exactly one presentation up to renaming. With that rule the states-only growth equals the cheapest
     growth on 1,805 of 1,806 census trajectories without a redundant knot. The exception is a knot with a non-minimal support.

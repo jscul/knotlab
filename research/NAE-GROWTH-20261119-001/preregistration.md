@@ -87,6 +87,9 @@ Under both laws, to 14 rounds or 3,000 junctions:
   junctions and the next joins. Part B asks the same question under NAE for the fewest-count family.
 - `NAE-METRIC-20261118-001` (bonds at a joint, rings b = steps + 1), `DISTANCE-INFO-20261117-001` (NAE bond tables do not
   determine general NAE relations from four distinctions), `CUMULANT-DIST-20261118-001`: related objects, the same words.
+- `DISTANCE-ORDER-20261117-001`: related object (pair disagreement counts determine every NAE base from four distinctions; on
+  knot trees steps apart). *Added after the run, at the close, when `track.py objects-gate` named it; it bears on part B as an
+  alternative to bond distance (direction #2), and no design choice depended on it.*
 
 ## Predictions (frozen)
 

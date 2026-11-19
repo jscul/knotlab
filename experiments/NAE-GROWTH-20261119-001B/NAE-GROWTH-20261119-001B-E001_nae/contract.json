@@ -40,5 +40,24 @@
  "stop_rule": "One run; read-out; referee hand-off; report.",
  "runtime": "a few minutes",
  "disclosed_exploration": "pilot (rings, chains, pairs, two-ring join, lone knots; three census shards; the first 30 part-B arrangements), recorded in the pre-registration",
- "amendments": []
+ "amendments": [
+  {
+   "date": "2026-11-19T03:45Z",
+   "after_run": true,
+   "kind": "scoring note",
+   "text": "merge.py's B5c field reports 'every collision without a redundant junction joins alike' (false); the frozen decision rule says B5c holds iff such a pair joins differently, so B5c held (2,796 pairs). No code or data changed."
+  },
+  {
+   "date": "2026-11-19T03:45Z",
+   "after_run": true,
+   "kind": "labelling slip",
+   "text": "P-ring5-spare1 repeats the bare ring (bare_sizes gives four-place knots); the go-ahead's ring with one spare per knot is P-ring5-five-place. No case changed."
+  },
+  {
+   "date": "2026-11-19T03:50Z",
+   "after_run": true,
+   "kind": "post hoc reading",
+   "text": "posthoc_b.py (added after the read-out) counts the presentations taking part in a collision and classifies each collision by states, redundancy and next joins; output artifacts/.../posthoc_b.json."
+  }
+ ]
 }

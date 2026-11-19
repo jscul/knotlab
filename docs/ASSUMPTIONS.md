@@ -161,6 +161,7 @@ evidence: results and their status come from the records each entry links.
 | [A104](#a104--parity-growth-is-judged-under-the-complete-round-joining-rule) | Parity growth is judged under the complete-round joining rule | scope | Assumed |
 | [A105](#a105--a-growth-starts-from-the-smallest-knot) | A growth starts from the smallest knot | working premise | Assumed |
 | [A106](#a106--arrangements-of-first-knots-are-weighted-uniformly-up-to-five-knots-of-three-to-five-places) | Arrangements of first knots are weighted uniformly up to five knots of three to five places | measure | Assumed |
+| [A107](#a107--small-joins-of-a-ring-and-a-two-fold-piece-are-weighted-uniformly-over-one-bare-census) | Small joins of a ring and a two-fold piece are weighted uniformly over one bare census | measure | Assumed |
 
 ## Entries
 
@@ -3132,3 +3133,22 @@ evidence: results and their status come from the records each entry links.
   one at a time, and test whether two stays typical and three rare.
 - **History.**
   - 2026-11-18 · Adopted by `TOUCH-CENSUS-20261118-001`.
+
+### A107 · Small joins of a ring and a two-fold piece are weighted uniformly over one bare census
+
+**Assumed** · 2026-11-18 · measure
+
+- **Statement.** "Typical" among joins of a ring of knots and a two-fold piece (two touching knots) means frequent among the 93
+  bare starts of `JOIN-GROWTH-20261118-001`'s census D, counted once each: a ring of five four-place knots, bare or with one surplus
+  distinction at the joined knot, one away or two away; the piece joined by one shared distinction, through a shared knot, or along
+  a path of one or two knots; 0 to 2 listed surplus distinctions on each of the piece's knots (the path of two only with a bare
+  ring); every knot given the fewest places that let round 1 start (shared distinctions plus round-1 demand, at least three).
+- **Why.** Taken by default by `JOIN-GROWTH-20261118-001` to read the coordinator's "what is typical across the small ways of
+  joining them, not one hand-picked join". The fewest places are forced: with fewer, round 1 stalls, so a join at a ring knot needs a
+  knot of five or six places there, outside `A106`'s sizes.
+- **Rests on it.** "Every small join of a ring and a two-fold piece makes the ring grow faster, by the product law"
+  (`JOIN-GROWTH-20261118-001`, [decision note](../research/JOIN-GROWTH-20261118-001/join_growth.md)).
+- **Challenge.** Rings of seven and nine, pieces of three or more knots, surplus distinctions placed at random, or a weighting by
+  labelled descriptions; the law is stated in surplus counts, so a different convention changes the counts, not the law.
+- **History.**
+  - 2026-11-18 · Adopted by `JOIN-GROWTH-20261118-001`.

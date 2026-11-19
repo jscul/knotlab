@@ -598,6 +598,15 @@ The reader proved for junctions of at most six distinctions breaks from round
 no two junctions (counting one extra end for the loose distinctions) cut the
 rest apart at any round, so by Whitney's theorem the allowed states fix them
 ([decision note](../research/RING-READ-20261118-001/ring_read.md)).
+Does that reader read the whole census back (`CENSUS-READ-20261118-001`, frozen
+computation with post-hoc fixes, referee pending)? Mostly not: the ring was the
+easy case. Of 100,024 stages of the 26,441 small arrangements it reads 2,353
+exactly. Most starts have two knots sharing two distinctions, which it cannot
+read; where junctions meet once it reads 38%; and sometimes the table itself
+cannot say, because exchanging two distinctions keeps every distance and moves a
+junction (1,480 stages, none read). Wherever it does read, it needs distances
+exactly as far as the largest junction less one
+([decision note](../research/CENSUS-READ-20261118-001/census_read.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, referee pending)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

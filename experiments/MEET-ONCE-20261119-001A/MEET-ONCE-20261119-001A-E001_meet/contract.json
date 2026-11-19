@@ -12,7 +12,7 @@
  },
  "public_inputs": {
   "code": "job.py (sha256 9042f810581057db0dc7d92b43c8d78a778a383d1ce4e5401c04676fa7f377bf), pairs_meet.py (sha256 75546252ad5dca848318caac20082fb74370136f371be260a645a79ff50953b9)",
-  "run": "scripts/longrun.py launch job.py --out runs/meet-once (8 workers, 16G cap); .venv/bin/python -B pairs_meet.py runs/meet-once",
+  "run": "scripts/longrun.py launch job.py --out runs/meet-once (8 workers, 16G cap); .venv/bin/python -B pairs_meet.py runs/meet-once; Amendment 1: .venv/bin/python -B pairs_meet2.py runs/meet-once",
   "reused": "CENSUS-READ-20261118-001A job.py and exact_table_v2.py"
  },
  "forbidden_inputs": [
@@ -29,5 +29,13 @@
  },
  "stop_rule": "One run.",
  "runtime": "minutes to an hour",
- "amendments": []
+ "amendments": [
+  {
+   "id": 1,
+   "date": "2026-11-19",
+   "when": "after the frozen pairing ran an hour without output, before any pair was read",
+   "change": "pairs_meet2.py (sha256 4b4b0f5a6ce9f906c7296d36a1ec3ce289e6382d71c37399fbd9d4d4a61889e4): states decided first on tables pooled at 8 (junction-graph isomorphism, then twin-class enumeration by rank); only other-states classes escalated, under a hard alarm limit; the frozen matcher's edge-label read fixed",
+   "unchanged": "M1, M2, population, candidate groups, undecided reading"
+  }
+ ]
 }

@@ -49,7 +49,7 @@ def coloured(table, labels):
 
 
 def matcher(g1, g2):
-    return isomorphism.GraphMatcher(g1, g2, node_match=lambda a, b: a['k'] == b['k'], edge_match=lambda a, b: a['d'] == b['d'])
+    return isomorphism.GraphMatcher(g1, g2, node_match=lambda a, b: a['k'] == b['k'], edge_match=lambda a, b: a.get('d') == b.get('d'))
 
 
 def iso(g1, g2):

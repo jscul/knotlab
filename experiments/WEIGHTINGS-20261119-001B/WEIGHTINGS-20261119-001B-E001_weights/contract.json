@@ -1,0 +1,40 @@
+{
+ "schema_version": 1,
+ "experiment_id": "WEIGHTINGS-20261119-001B-E001",
+ "ticket": "WEIGHTINGS-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "confirmatory",
+ "branch": "code_analysis",
+ "question": "Under seven weightings of starts other than SCALE-SHARE's (bare random trees, with surplus at 25/50/100%, with Poisson(1) extra lines, knots added one at a time, a configuration model), frozen before any sample was classified, what share of starts of 5 to 20 knots lies in the proved class, what growth classes does the theorem predict there, and does three dimensions or exponential growth become common in the class?",
+ "public_inputs": {
+  "code": "weightlib.py (820777b122459ff3823151f04347e26a1b190c79f01c2519fff0679e29615bbb), job.py (925bcbc07db0b484c9d822c94788dcd5209a129c34dc4e4f7167a84a1bcb02ad), merge.py (03d5292f9eb6416c25d729148eb138af349e42adaf60fe62c2e8bd5f4aafa886) (sha256)",
+  "run": "scripts/longrun.py launch job.py; python3 -B merge.py <out dir> <results.json>",
+  "reused": "SCALE-THEOREM scalelib.py (reader); DOUBLE-IDENT machine_check.py (class, growth, relayed model) and dims.py (growth class); joinlib bare_sizes"
+ },
+ "forbidden_inputs": [
+  "Changing a weighting, a prediction, the class, the rule or the threshold for 'common' after reading the frozen run"
+ ],
+ "primary_observable": "W1-W11 of research/WEIGHTINGS-20261119-001/preregistration.md, and the per-weighting, per-size table",
+ "cheapest_meaningful_control": "the bare tree's exact three-plus probabilities at n = 7 and 8 (W1) and its ray-leaf mean (W2); the stratified regrowth (W10)",
+ "predictions": {
+  "W1": "tree three-plus count of 2,000: 0 at n = 5, 6; 70-130 at 7; 31-73 at 8; more at 7 than 8",
+  "W2": "tree mean ray-leaf count within 5% of (n-1)(1-2/n)^(n-3)",
+  "W3": "tree and tree-sP: every sample in the class",
+  "W4": "tree and tree-sP: no exponential sample",
+  "W5": "tree three-plus > 10% of all at n = 16 and > 20% at n = 20",
+  "W6": "tree+ exponential >= 10% of in-class growers at n >= 8; zero-extra stratum all in class, no exponential",
+  "W7": "grow exponential > 50% of in-class growers at n >= 10 (>= 20 growers); three-plus < 2% everywhere",
+  "W8": "n = 20 three-plus share of all: tree >= s25 >= s50 >= s100",
+  "W9": "config: stall > 40% at every size; dim 2 >= 70% and three-plus < 2% of in-class growers where >= 20",
+  "W10": "every regrown sample agrees round by round to round 6",
+  "W11": "grow cycle-free share >= (2/3)^(n-1) - 3 se"
+ },
+ "decision_rules": {
+  "each": "held iff no exception",
+  "common": "three-plus or exponential >= 10% of in-class growers with >= 20 in-class growers at that weighting and size"
+ },
+ "stop_rule": "One run; stop at the table, or at the first weighting and size where W10 fails.",
+ "runtime": "about ten minutes on eight workers",
+ "disclosed_exploration": "smoke tests with seeds marked -smoke (3 samples per weighting at n = 5, 20; 15 samples per case; four cases of 60), output read only for errors and timings",
+ "amendments": []
+}

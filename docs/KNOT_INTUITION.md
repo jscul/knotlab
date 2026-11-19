@@ -658,6 +658,13 @@ Do three-way readings catch these too (`TRIPLE-GROWN-20261119-001`, computed,
 refereed)? Yes: with the smallest bond holding three distinctions added,
 all 1,034 static and all 87 reached pairs come apart, and not because the readings
 simply find the knots ([decision note](../research/TRIPLE-GROWN-20261119-001/triple_grown.md)).
+And how does the law create one (`CREATED-PAIR-20261119-001`, computed, referee
+pending)? In the one case found, matching the two tables swaps the roles of a
+starting knot and a junction the round adds, and the round's join differs by one
+distinction that is loose on one side and shared on the other. The law grows on
+loose distinctions, so the next round tells them apart; the carried pairs differ
+away from where the law grows, and stay together
+([decision note](../research/CREATED-PAIR-20261119-001/created_pair.md)).
 Do growths compose when parts are joined (`JOIN-GROWTH-20261118-001`, frozen
 census of 137 starts, refereed)? Not as separate parts: the ring takes
 over. Joining any tree of knots to a ring knot makes the ring grow faster, even

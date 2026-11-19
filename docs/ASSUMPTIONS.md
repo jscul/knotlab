@@ -3356,6 +3356,9 @@ evidence: results and their status come from the records each entry links.
   - **No stable sampled behaviour.** It would also be tested if the explosive kind admits no stable sampled behaviour at all:
     shares that do not settle as samples grow, under every weighting tried. Then sampling would not read it.
 - **History.**
+  - 2026-11-19 · `MERGE-BURST-20261119-001` ([decision note](../research/MERGE-BURST-20261119-001/merge_burst.md)): of 16
+    explosive starts, 2 are read, and both end after one merge and the binomial burst of one block (9 and 781 junctions). 14 are
+    unread within 6 GB and 15 minutes. None is shown to keep growing. Status unchanged.
   - 2026-11-19 · `EXPLOSIVE-20261119-001` ([decision note](../research/EXPLOSIVE-20261119-001/explosive.md)): the first sampled
     reading of the explosive kind. Under these weightings it is rare: absent within five places (0 of 2,191), 1.6% within seven.
     It needs overlapping groups of three. Its smallest case is finitely describable: one merge, a binomial burst, then closing.

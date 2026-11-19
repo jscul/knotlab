@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "PROVE-B-20261119-001B-E001",
+ "ticket": "PROVE-B-20261119-001B",
+ "status": "Frozen",
+ "evidence_stage": "exploratory",
+ "branch": "code_analysis",
+ "question": "Is there a counterexample to Claim B in a reached stage grown from a start of 3 or 4 knots sharing up to four (3 knots) or three (4 knots) distinctions?",
+ "definitions": {
+  "coset representatives": "images of each holder class increasing, enforced in VF2",
+  "Claim B": "a table isometry keeping the round's reading extends to the next tables"
+ },
+ "public_inputs": {
+  "code": "reached_job.py (sha256 615e6fffe3337d5146d28e97bb09427be0446ea977610fedbe3e70ca7e1b30bb), control.py (sha256 f2e2596151b2ab057ef6ff47d9269ba9a5999e03bbb25069fef844e469e487e3)",
+  "run": "scripts/longrun.py launch reached_job.py --out runs/prove-b-hunt (8 workers, 16G cap); .venv/bin/python -B control.py",
+  "reused": "EXTEND-ROUND-20261119-001A extend.py (reading, extension, grow1, full_table); PARENT-RULE plib.py"
+ },
+ "forbidden_inputs": [
+  "Changing P0, P1 after the run"
+ ],
+ "primary_observable": "P0, P1",
+ "cheapest_meaningful_control": "P0: Proposition X fails through the same test",
+ "predictions": {
+  "P0": "all reading-keeping equation-breaking symmetries of Proposition X fail",
+  "P1": "no Claim B counterexample in the hunt's reached stages"
+ },
+ "decision_rules": {
+  "each": "as stated"
+ },
+ "stop_rule": "One run each.",
+ "runtime": "about an hour",
+ "amendments": []
+}

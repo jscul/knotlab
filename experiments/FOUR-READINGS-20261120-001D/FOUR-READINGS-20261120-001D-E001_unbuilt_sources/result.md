@@ -1,0 +1,3 @@
+# Lasting families in fresh draws
+
+The two independently weighted 256-start arms include positive one-time releases, direct meetings and later physically matched collateral meetings under both laws. The 512 sampled starts have no unbounded emitter. A partnered runaway forbids any distinct lasting product by exact two-step ancestry. A separate jump-selected comparison displays parity closure versus two lasting endpoint families under not-all-equal. Complete evidence includes fresh draws, canonical projections, two physical comparisons, the full interval table and the exact deep sampling maps. Independent referee pending. [Results](../../../research/FOUR-READINGS-20261120-001D/results.md) · [Rates](../../../research/FOUR-READINGS-20261120-001D/rates.md)

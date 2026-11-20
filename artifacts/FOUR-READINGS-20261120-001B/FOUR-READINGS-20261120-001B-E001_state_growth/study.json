@@ -1,0 +1,5705 @@
+{
+  "canonical_gate": [
+    {
+      "width": 3,
+      "law": "parity",
+      "allowed": 4,
+      "K1": true,
+      "K2": true,
+      "K3": true
+    },
+    {
+      "width": 3,
+      "law": "nae",
+      "allowed": 6,
+      "K1": true,
+      "K2": true,
+      "K3": true
+    },
+    {
+      "width": 6,
+      "law": "parity",
+      "allowed": 32,
+      "K1": true,
+      "K2": true,
+      "K3": true
+    },
+    {
+      "width": 6,
+      "law": "nae",
+      "allowed": 62,
+      "K1": true,
+      "K2": true,
+      "K3": true
+    }
+  ],
+  "duplicate_and_distinct_controls": {
+    "three": {
+      "parity": {
+        "solutions": 4,
+        "arms": [
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "projections": [
+              4
+            ],
+            "terminal": "births",
+            "births": [
+              [
+                [
+                  0
+                ],
+                2
+              ],
+              [
+                [
+                  0
+                ],
+                2
+              ],
+              [
+                [
+                  0
+                ],
+                2
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "projections": [
+              4,
+              4
+            ],
+            "terminal": "closed",
+            "births": []
+          }
+        ],
+        "disagreements": [
+          2,
+          2,
+          2
+        ]
+      },
+      "nae": {
+        "solutions": 6,
+        "arms": [
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "projections": [
+              6
+            ],
+            "terminal": "births",
+            "births": [
+              [
+                [
+                  0
+                ],
+                2
+              ],
+              [
+                [
+                  0
+                ],
+                2
+              ],
+              [
+                [
+                  0
+                ],
+                2
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "projections": [
+              6,
+              6
+            ],
+            "terminal": "closed",
+            "births": []
+          }
+        ],
+        "disagreements": [
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    "extra_six": {
+      "parity": {
+        "solutions": 32,
+        "arms": [
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                2,
+                7,
+                8
+              ]
+            ],
+            "projections": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "terminal": "births",
+            "births": [
+              [
+                [
+                  1,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  3
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  3
+                ],
+                1
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                2,
+                7,
+                8
+              ],
+              [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            ],
+            "projections": [
+              4,
+              4,
+              4,
+              4,
+              32
+            ],
+            "terminal": "closed",
+            "births": []
+          }
+        ],
+        "disagreements": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ]
+      },
+      "nae": {
+        "solutions": 162,
+        "arms": [
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                2,
+                7,
+                8
+              ]
+            ],
+            "projections": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "terminal": "births",
+            "births": [
+              [
+                [
+                  1,
+                  2
+                ],
+                1
+              ],
+              [
+                [
+                  1,
+                  3
+                ],
+                1
+              ],
+              [
+                [
+                  2,
+                  3
+                ],
+                1
+              ]
+            ]
+          },
+          {
+            "rows": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                1,
+                5,
+                6
+              ],
+              [
+                2,
+                7,
+                8
+              ],
+              [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            ],
+            "projections": [
+              6,
+              6,
+              6,
+              6,
+              62
+            ],
+            "terminal": "closed",
+            "births": []
+          }
+        ],
+        "disagreements": [
+          108,
+          108,
+          108,
+          108,
+          72,
+          72,
+          72,
+          72,
+          108,
+          72,
+          72,
+          108,
+          108,
+          72,
+          72,
+          72,
+          72,
+          72,
+          72,
+          108,
+          108,
+          108,
+          84,
+          84,
+          84,
+          84,
+          84,
+          84,
+          84,
+          84,
+          108,
+          84,
+          84,
+          84,
+          84,
+          108
+        ]
+      }
+    }
+  },
+  "census": {
+    "3": {
+      "named_connected_syntactic": 2,
+      "counts": {
+        "nae_all_named": {
+          "presentations": 2,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "nae_all_renamed": {
+          "presentations": 2,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "nae_distinct_support_named": {
+          "presentations": 1,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "nae_distinct_support_renamed": {
+          "presentations": 1,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "parity_all_named": {
+          "presentations": 2,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "parity_all_renamed": {
+          "presentations": 2,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "parity_distinct_support_named": {
+          "presentations": 1,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "parity_distinct_support_renamed": {
+          "presentations": 1,
+          "state_classes": 1,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        }
+      }
+    },
+    "4": {
+      "named_connected_syntactic": 12,
+      "counts": {
+        "nae_all_named": {
+          "presentations": 8,
+          "state_classes": 7,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "nae_all_renamed": {
+          "presentations": 3,
+          "state_classes": 2,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "nae_distinct_support_named": {
+          "presentations": 7,
+          "state_classes": 7,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "nae_distinct_support_renamed": {
+          "presentations": 2,
+          "state_classes": 2,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "parity_all_named": {
+          "presentations": 8,
+          "state_classes": 7,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "parity_all_renamed": {
+          "presentations": 3,
+          "state_classes": 2,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "parity_distinct_support_named": {
+          "presentations": 7,
+          "state_classes": 7,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "parity_distinct_support_renamed": {
+          "presentations": 2,
+          "state_classes": 2,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        }
+      }
+    },
+    "5": {
+      "named_connected_syntactic": 117,
+      "counts": {
+        "nae_all_named": {
+          "presentations": 87,
+          "state_classes": 86,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "nae_all_renamed": {
+          "presentations": 6,
+          "state_classes": 5,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 2,
+          "max_growths_per_class": 2
+        },
+        "nae_distinct_support_named": {
+          "presentations": 86,
+          "state_classes": 86,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "nae_distinct_support_renamed": {
+          "presentations": 5,
+          "state_classes": 5,
+          "state_classes_with_different_holdings": 0,
+          "state_classes_with_different_first_growth": 0,
+          "max_holdings_per_class": 1,
+          "max_growths_per_class": 1
+        },
+        "parity_all_named": {
+          "presentations": 72,
+          "state_classes": 26,
+          "state_classes_with_different_holdings": 16,
+          "state_classes_with_different_first_growth": 16,
+          "max_holdings_per_class": 4,
+          "max_growths_per_class": 4
+        },
+        "parity_all_renamed": {
+          "presentations": 6,
+          "state_classes": 3,
+          "state_classes_with_different_holdings": 2,
+          "state_classes_with_different_first_growth": 2,
+          "max_holdings_per_class": 3,
+          "max_growths_per_class": 3
+        },
+        "parity_distinct_support_named": {
+          "presentations": 71,
+          "state_classes": 26,
+          "state_classes_with_different_holdings": 15,
+          "state_classes_with_different_first_growth": 15,
+          "max_holdings_per_class": 4,
+          "max_growths_per_class": 4
+        },
+        "parity_distinct_support_renamed": {
+          "presentations": 5,
+          "state_classes": 3,
+          "state_classes_with_different_holdings": 1,
+          "state_classes_with_different_first_growth": 1,
+          "max_holdings_per_class": 3,
+          "max_growths_per_class": 3
+        }
+      }
+    }
+  },
+  "unbounded_family": [
+    {
+      "leaves": 3,
+      "distinctions": 33,
+      "presentations": 8,
+      "distinct_name_free_first_growth_histories": 8,
+      "common_relation_rank": 4,
+      "bits_lower_bound": 3
+    },
+    {
+      "leaves": 4,
+      "distinctions": 60,
+      "presentations": 16,
+      "distinct_name_free_first_growth_histories": 16,
+      "common_relation_rank": 5,
+      "bits_lower_bound": 4
+    },
+    {
+      "leaves": 5,
+      "distinctions": 95,
+      "presentations": 32,
+      "distinct_name_free_first_growth_histories": 32,
+      "common_relation_rank": 6,
+      "bits_lower_bound": 5
+    },
+    {
+      "leaves": 6,
+      "distinctions": 138,
+      "presentations": 64,
+      "distinct_name_free_first_growth_histories": 64,
+      "common_relation_rank": 7,
+      "bits_lower_bound": 6
+    }
+  ],
+  "samples": {
+    "summary": {
+      "uniform_trees_parity": {
+        "draws": 96,
+        "lawful": 96,
+        "marked": 96,
+        "original_funded": 42,
+        "edited_funded": 47,
+        "receiver_rates_changed_starts": 0,
+        "receiver_pair_denominator": 363,
+        "receiver_rates_changed_pairs": 0,
+        "receiver_raw_changed_pairs": 363
+      },
+      "uniform_trees_nae": {
+        "draws": 96,
+        "lawful": 96,
+        "marked": 96,
+        "original_funded": 42,
+        "edited_funded": 47,
+        "receiver_rates_changed_starts": 0,
+        "receiver_pair_denominator": 363,
+        "receiver_rates_changed_pairs": 0,
+        "receiver_raw_changed_pairs": 363
+      },
+      "explosive_archive_parity": {
+        "draws": 16,
+        "lawful": 14,
+        "marked": 14,
+        "original_funded": 14,
+        "edited_funded": 14,
+        "receiver_rates_changed_starts": 0,
+        "receiver_pair_denominator": 152,
+        "receiver_rates_changed_pairs": 0,
+        "receiver_raw_changed_pairs": 152
+      },
+      "explosive_archive_nae": {
+        "draws": 16,
+        "lawful": 14,
+        "marked": 14,
+        "original_funded": 14,
+        "edited_funded": 14,
+        "receiver_rates_changed_starts": 10,
+        "receiver_pair_denominator": 152,
+        "receiver_rates_changed_pairs": 130,
+        "receiver_raw_changed_pairs": 152
+      }
+    },
+    "records": {
+      "uniform_trees": {
+        "4-0": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                2058
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-1": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-2": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                32,
+                64
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                3,
+                4
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                162,
+                378
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                3,
+                4
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-3": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                810
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-4": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                1890
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-5": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                810
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-6": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                2058,
+                4410
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-7": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                32,
+                64
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                162,
+                378
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-8": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-9": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-10": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-11": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                1890
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-12": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                32,
+                64
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                162,
+                378
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-13": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-14": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                810
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-15": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                810
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-16": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-17": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                1890
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-18": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                2058
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-19": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-20": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-21": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                32,
+                64
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                162,
+                378
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-22": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                32,
+                64
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                162,
+                378
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-23": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                1890
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-24": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-25": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                32,
+                64
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                3,
+                4
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                162,
+                378
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                3,
+                4
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-26": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                1890
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-27": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                882,
+                1890
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-28": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-29": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-30": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                32,
+                64
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                162,
+                378
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                4,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "4-31": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                378,
+                882
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-0": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-1": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                2048,
+                4096
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                33614,
+                72030
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-2": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-3": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                5
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                5
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-4": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                7,
+                8
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                6174,
+                14406
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                7,
+                8
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-5": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-6": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-7": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-8": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-9": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-10": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                6174,
+                13230
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-11": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-12": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2430
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-13": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                2646,
+                5670
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-14": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                5
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-15": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-16": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-17": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                2646,
+                5670
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-18": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-19": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                2646,
+                6174
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-20": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-21": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                2646,
+                6174
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                6,
+                7
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-22": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-23": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-24": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-25": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                5670,
+                12150
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-26": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                2646,
+                6174
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                7
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-27": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                64,
+                128
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                486,
+                1134
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-28": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                2646,
+                5670
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-29": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                5,
+                6
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-30": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1134,
+                2646
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "5-31": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1024,
+                2048
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                8,
+                9
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                14406,
+                30870
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                8,
+                9
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-0": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-1": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                18522
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-2": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-3": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1024,
+                2048
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                18522,
+                43218
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-4": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1458,
+                3402
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-5": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-6": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 5,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1024,
+                2048
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                18522,
+                43218
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-7": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                17010
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-8": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 5,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1024,
+                2048
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                18522,
+                43218
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-9": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1024,
+                2048
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                7,
+                8
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                18522,
+                39690
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                7,
+                8
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-10": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                18522
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-11": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                17010
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-12": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                7,
+                8
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                18522
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                7,
+                8
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-13": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1458,
+                3402
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-14": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 5,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-15": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                17010
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-16": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-17": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                18522
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-18": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                18522
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-19": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 5,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-20": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 5,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                17010
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-21": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 5,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-22": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 5,
+          "tests": {
+            "parity": {
+              "solutions": [
+                4096,
+                8192
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                92610,
+                191394
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-23": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1458,
+                3402
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-24": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 5,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                8
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                18522
+              ],
+              "status": [
+                "stall",
+                "births"
+              ],
+              "births": [
+                0,
+                8
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-25": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1458,
+                3402
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-26": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                17010
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-27": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1024,
+                2048
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                18522,
+                39690
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-28": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                512,
+                1024
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                7938,
+                17010
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-29": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1024,
+                2048
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                18522,
+                39690
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-30": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 5,
+          "tests": {
+            "parity": {
+              "solutions": [
+                128,
+                256
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1458,
+                3402
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "6-31": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                256,
+                512
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                3402,
+                7938
+              ],
+              "status": [
+                "stall",
+                "stall"
+              ],
+              "births": [
+                0,
+                0
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        }
+      },
+      "explosive_archive": {
+        "start-00": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                131072,
+                262144
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                8,
+                9
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                4613798,
+                9300998
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                8,
+                9
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 10
+            }
+          }
+        },
+        "start-01": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                524288,
+                1048576
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                19378454,
+                39064662
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 10
+            }
+          }
+        },
+        "start-02": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                262144,
+                524288
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 15,
+              "raw_changed": 15,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                10326128,
+                21341040
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 15,
+              "raw_changed": 15,
+              "rate_changed": 15
+            }
+          }
+        },
+        "start-03": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                524288,
+                1048576
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 15,
+              "raw_changed": 15,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                23069018,
+                47676810
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 15,
+              "raw_changed": 15,
+              "rate_changed": 15
+            }
+          }
+        },
+        "start-04": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 4,
+          "receiver": 0,
+          "tests": {
+            "parity": {
+              "solutions": [
+                262144,
+                524288
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 15,
+              "raw_changed": 15,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                9959144,
+                20239720
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 15,
+              "raw_changed": 15,
+              "rate_changed": 15
+            }
+          }
+        },
+        "start-05": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 1,
+          "receiver": 3,
+          "tests": {
+            "parity": {
+              "solutions": [
+                262144,
+                524288
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                10269968,
+                20648048
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                10,
+                11
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 10
+            }
+          }
+        },
+        "start-06": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 5,
+          "receiver": 2,
+          "tests": {
+            "parity": {
+              "solutions": [
+                1048576,
+                2097152
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                11,
+                12
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                42228014,
+                98532074
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                11,
+                12
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 10
+            }
+          }
+        },
+        "start-07": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 2,
+          "receiver": 5,
+          "tests": {
+            "parity": {
+              "solutions": [
+                2097152,
+                4194304
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                12,
+                13
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                85818990,
+                174406350
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                12,
+                13
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 3
+            }
+          }
+        },
+        "start-08": {
+          "lawful": {
+            "parity": false,
+            "nae": false
+          },
+          "marked": false
+        },
+        "start-09": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                16777216,
+                33554432
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                14,
+                15
+              ],
+              "receiver_pairs": 21,
+              "raw_changed": 21,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1260585736,
+                2702344896
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                14,
+                15
+              ],
+              "receiver_pairs": 21,
+              "raw_changed": 21,
+              "rate_changed": 21
+            }
+          }
+        },
+        "start-10": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 5,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                16777216,
+                33554432
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                13,
+                14
+              ],
+              "receiver_pairs": 21,
+              "raw_changed": 21,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1247103960,
+                2514008280
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                13,
+                14
+              ],
+              "receiver_pairs": 21,
+              "raw_changed": 21,
+              "rate_changed": 21
+            }
+          }
+        },
+        "start-11": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 0,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                16777216,
+                33554432
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                13,
+                14
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                1337115000,
+                2695454520
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                13,
+                14
+              ],
+              "receiver_pairs": 10,
+              "raw_changed": 10,
+              "rate_changed": 0
+            }
+          }
+        },
+        "start-12": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 5,
+          "receiver": 1,
+          "tests": {
+            "parity": {
+              "solutions": [
+                67108864,
+                134217728
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                15,
+                16
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                5498137542,
+                11173634406
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                15,
+                16
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "start-13": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 3,
+          "receiver": 5,
+          "tests": {
+            "parity": {
+              "solutions": [
+                67108864,
+                134217728
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                15,
+                16
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                6207574590,
+                12513733470
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                15,
+                16
+              ],
+              "receiver_pairs": 6,
+              "raw_changed": 6,
+              "rate_changed": 0
+            }
+          }
+        },
+        "start-14": {
+          "lawful": {
+            "parity": true,
+            "nae": true
+          },
+          "marked": true,
+          "sender": 6,
+          "receiver": 4,
+          "tests": {
+            "parity": {
+              "solutions": [
+                4194304,
+                8388608
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                11,
+                12
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            },
+            "nae": {
+              "solutions": [
+                484449490,
+                1001195650
+              ],
+              "status": [
+                "births",
+                "births"
+              ],
+              "births": [
+                11,
+                12
+              ],
+              "receiver_pairs": 3,
+              "raw_changed": 3,
+              "rate_changed": 0
+            }
+          }
+        },
+        "start-15": {
+          "lawful": {
+            "parity": false,
+            "nae": false
+          },
+          "marked": false
+        }
+      }
+    }
+  }
+}

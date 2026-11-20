@@ -1,0 +1,5 @@
+# Exact states and parent histories
+
+The smallest equal-state separation occurs on three distinctions under either law. Census endpoints are widths three through five, 96 independent labelled trees and all 16 descriptions from the archive selected for explosive growth, with 14 passing the lawfulness checks. Exact counts on both preparations of thirteen paired comparisons were reproduced by a separate positive-integer physical assignment count for all 19,130 pair entries. Independent program review is pending. [Results](../../../research/FOUR-READINGS-20261120-001B/results.md) · [Detailed tables and counting methods](../../../research/FOUR-READINGS-20261120-001B/pair_tables.md) · [Referee handoff](../../../research/FOUR-READINGS-20261120-001B/referee_handoff.md)
+
+Run from this directory with the repository's virtual environment. Run `pair_tables.py` and `study.py` in either order, then `verify.py`. Each writes to the corresponding family beneath `artifacts`. The exploratory envelope and initial study design are bound by SHA-256 in the ticket.

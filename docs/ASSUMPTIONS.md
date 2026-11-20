@@ -182,6 +182,7 @@ evidence: results and their status come from the records each entry links.
 | [A124](#a124--one-context-can-be-given-a-changed-outcome-rule) | One context can be given a changed outcome rule | scaffold | Assumed |
 | [A125](#a125--independent-products-can-be-read-by-their-parents) | Independent products can be read by their parents | scaffold | Assumed |
 | [A126](#a126--growth-never-forbids-what-the-old-knots-allowed) | Growth never forbids what the old knots allowed | scaffold | Assumed |
+| [A127](#a127--a-change-in-later-output-can-be-read-through-a-common-descendant) | A change in later output can be read through a common descendant | scaffold | Assumed |
 
 ## Entries
 
@@ -3661,3 +3662,14 @@ evidence: results and their status come from the records each entry links.
   settle which law it uses, or to show which results hold under every reasonable law (G18).
 - **History.**
   - 2026-11-20 · Recorded at the owner's request with goal G18, naming "joining can forbid" as its rival.
+
+### A127 · A change in later output can be read through a common descendant
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** To count an indirect effect of one continuing product on the output of another, require actual parental paths from both to a shared later birth, and a matched physical start in which the shared output disappears or its number of fresh distinctions changes. Separately score an immediate child of a current product member, a shared descendant farther along, and changes to the product’s own continuing members.
+- **Why.** A common past can give two marked parties similar futures without any later birth requiring them both. Distinguishing which output changes makes a test of the owner’s question possible.
+- **Rests on it.** Calling the witnessed delayed births an interaction between products. The existence of the births, their true parents, their counts and which complete preparations support them follow from ordinary growth.
+- **Challenge.** Require both parties to survive in both preparations with the same receiver at launch, require the number of its immediate children to change, or require its own pure production to change. Compare the complete present reading with the growing end alone.
+- **History.**
+  - 2026-11-20 · Registered in the [physical comparison of released products](../research/COPIES-AND-MEETINGS-20261120-001/preregistration.md) and its [later-meeting check](../research/COPIES-AND-MEETINGS-20261120-001/late_test.md). Both knot laws are tested.

@@ -61,7 +61,7 @@ The exact two-sided 95% binomial interval for 128/128 is 97.16%–100% under eac
 | 1 | Test whether irredundant not-all-equal ambiguity can change a birth at larger width | 3/3 | 3/3 | Search for a live state class that the mandatory-support test leaves undecided → find different growth or prove all such classes closed | Selected · awaiting independent review |
 | 2 | Characterize all state symmetries that lose named pair information | 2/3 | 3/3 | Extend the eight-name four-place comparison → give a family or a sharp bound | Alternative · deferred |
 
-**Corrections:** None to an earlier theorem. The six-name named ambiguity was already on record; both alternatives are closed. The older seven-name result used a different local projection gate. 
+**Corrections:** None to an earlier theorem. The six-name named ambiguity was already on record; both alternatives are closed. The older seven-name result used a different local projection gate.
 
 **Goals:** G5 gains an all-size, growth-preserved recovery theorem and exhaustive comparison through nine. G18 gains a lawful all-four-place example where pair counts and rates miss named words.
 

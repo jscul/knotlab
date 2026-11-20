@@ -1,0 +1,50 @@
+# Four tables survive all allocations up to renaming
+
+Every serialization of a funded plan agrees once its old distinctions and minimum fresh values have been assigned. Allowing the bindings to vary leaves four tables with one coloured outcome whenever a round completes, up to renaming of the original coloured stage. All four veto a hot multi-parent birth. Requiring every old distinction to stay individually fixed leaves only V/V. All twelve off-diagonal tables fail the further test that an independently allowed old change commute with growth. [Frozen design](definitions.md) · [Order and parity receipt](../../artifacts/STATE-FEEDS-GROWTH-20261119-001/STATE-FEEDS-GROWTH-20261119-001-E001_feedback/independent.json)
+
+| What may change | What counts as agreement | Result |
+|---|---|---|
+| The order of the births of one fixed plan and binding | Same old identities and same fresh values under the corresponding fresh renaming | All sixteen tables |
+| The binding and minimum parity lift at any allowed old state | Coloured incidence under a renaming preserving the original coloured stage | P/V, V/V, +/V, −/V |
+| The binding and minimum parity lift at any allowed old state | Every old distinction fixed individually | V/V |
+| When an independently allowed value change occurs relative to growth | Same completed physical incidence | A shape change along that value change prevents commutation |
+
+## Exhaustive three-knot control
+
+The old supports are \(\{0,2,3\}\), \(\{0,1,6\}\), and \(\{1,4,5\}\). They give a three-knot path with two loose distinctions at each end and one in the middle. The end knots have one ordinary proposed joint child. Its supply and all remaining unary births are determined after the veto decision. All 16 allowed old assignments were enumerated as literal parity rows, independently of the linear projection checker.
+
+The receipt includes 256 table-and-state inputs, with four labelled allocations in each. Depending on veto, the batch has four or five births. It exhausts 49,152 labelled birth orders. Counting every minimum fresh lift as well gives 388,992 realizations. The fresh factors are exact products over children with separate new names. Among minimum lifts at one binding and order, all fresh choices are related by permuting the fresh distinctions at their own child. The production replay checks every birth order with one choice at each such child and all 8,464 binding-and-lift choices at one order. Thus the product leaves no unchecked outcome under either specified renaming. The separate incidence-isomorphism check uses both knot and distinction identities as sorts, current values as colours, and the old stage setwise where required. The old-fixed comparison matches each child's old input set and fresh count and colour. [Independent reference and production comparison](../../experiments/STATE-FEEDS-GROWTH-20261119-001/STATE-FEEDS-GROWTH-20261119-001-E001_feedback/independent.py)
+
+For a concrete failure, put ones at old distinctions 0, 1, 2 and 4. Both shared distinctions are active. The two ends each supply a zero and a one. With any hot action other than veto, using 2 and 4 in the joint child gives zero new ones, and using 3 and 5 in that child gives two. Both batches have the same uncoloured incidence up to renaming, but their different active counts prevent a coloured isomorphism. The reader decides to keep the group by the whole present support, before choosing either binding.
+
+For a hot veto, any parent with an active distinction supplies only unary children. Every accepted joint child therefore takes zero inputs. Tied bindings at active parents exchange identical unary roles and tied bindings at cold parents exchange equal-colour old distinctions. The resulting maps preserve the original coloured stage and every used child's minimum fresh weight. This argument gives sufficiency beyond the small path. If all loose values start zero, the same explanation works for every table and zero fresh values are forced by the minimum lift, so this sector is preserved at every completed size.
+
+At the stronger reading, start from the all-zero state. A nonveto cold entry permits the joint child to take either of the two old loose distinctions at an end. Fixing both old names obstructs that correspondence because the joint child also has the other endpoint as parent. Together with the hot counterexample this leaves only V/V. In V/V every old loose distinction has its own unary child, and the number and colour of its fresh distinctions agree up to a new-name permutation.
+
+## An old identity or a fresh identity can matter
+
+Even the inherited complete structural law admits a choice of which old loose distinction supplies a particular child. On the named path, the optional convention “give each end's sole occupied loose distinction to the joint child” is well-defined on the displayed mixed frame. Switching the two values among the loose distinctions of the first end makes it hand over the other physical identity. This preserves the old parity at that end. There is an exact coloured isomorphism after exchanging those two names. There is a different meeting when those names are fixed individually. This is an extra rule for choosing a binding within ordinary growth.
+
+A separate odd-input control gives one old input and a child with two fresh places. The parity holds when exactly one fresh distinction is active. Swapping the two fresh identities fixes the old coloured stage and interchanges the two minimum lifts. Hence the equivariant outcome up to fresh renaming is unique although no literal fresh choice is fixed by the swap.
+
+Every old allowed assignment extends to a fixed scored successor. The verifier compares the whole old projection using an independently computed binary kernel and checks the new supports by K1–K3. The three-knot ring with one loose distinction per knot has an implied closing parity on the three loose distinctions. Of its 128 table-and-state inputs, 96 keep that sole birth at zero fresh places. Appending one fresh place anyway preserves the old marginal and pins the new place to zero. The supposed four-place knot fails K2. The veto inputs are ordinary unary completions and use their separate positive fresh counts.
+
+## Reordering growth with an old value change
+
+Take the bare five-knot ring with two loose distinctions at each old knot. Turning on all five original meetings preserves even parity at every old knot and changes no loose value. Under P/+ the same flip is still allowed after the quiet first growth. Flipping first gives 30 total distinctions and flipping afterwards gives 25. Both results have ten knots, the same occupied old distinctions and all fresh values zero. Hence even uncoloured outcomes differ. Reading spent loose values or the parity of each parent would give no contrast.
+
+The common ordinary first stage gives a second test. The original ring mark is then held only by exhausted knots, so its late insertion leaves the next plan identical under all sixteen tables. A permitted four-response on this same stage instead activates one live knot, with every loose value still zero. Comparing the quiet and active input changes the next knot count or distinction count for each of the twelve off-diagonal tables. It changes neither for the four constant tables. That old response is still legal after the quiet growth, because every changed distinction was already shared. The geometry of the two event orders therefore differs exactly in those twelve tests.
+
+A minus count on the hot source leaves each of the five new knots one distinction short of its next demand. P/− stalls there. V/− reaches the identical first stage and then vetoes all five cold proposals before checking funding, making five unary knots. This verifies that the veto can repair a shortage at the next decision.
+
+The general obstruction uses only these types of operations. A legal value change that lifts after growth leaves the set of physical distinctions and knot supports fixed. If doing it before growth changes the resulting incidence, the opposite order cannot recover agreement by such a lift. Full conservation of old assignments guarantees some lift to the fixed successor. In these controls the flip already lifts with all fresh values fixed. Taking the two events as a simultaneous batch would require its own decision rule.
+
+## Present input and verification
+
+The executable relabels every old distinction and changes the order of the old knots. It transports all 256 frames, their minimum-lift outcomes and their old-fixed equivalence classes. It checks the corresponding production plans. Giving the same live four-response input reported ages 0 and 17 also gives identical physical production output. The distinction between an exhausted ring and a live pulse comes from their present holders. Their names and the application counts are evaluator data.
+
+Relative values use the allowed reference supplied by A111. Adding the same allowed difference to the state and its reference leaves these values and the plan equal. If the reference is removed and every allowed value translation is required as a symmetry, those translations act transitively on the allowed states at fixed incidence. A structural output invariant under them must then be constant across states. This comparison uses value translations and differs from the tested relabelings of physical names.
+
+The V2 reference derives complete groups from maximal candidate cliques and reads the next demand from the actual post-veto roster. The independent parity basis verifies the old marginals, with the direct truth table as a small control. Its code uses no production function for those deductions. A separate comparison calls the production planner and serializer after the independent results are available. This scope concerns one completed batch, with frozen input values. It makes no claim of order independence for a rule that recomputes its proposal set on incomplete stages.
+
+    .venv/bin/python -B experiments/STATE-FEEDS-GROWTH-20261119-001/STATE-FEEDS-GROWTH-20261119-001-E001_feedback/independent.py

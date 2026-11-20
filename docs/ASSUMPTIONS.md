@@ -50,6 +50,7 @@ evidence: results and their status come from the records each entry links.
 | **measure** | How the program measures a quantity it reports. |
 | **working premise** | A claim that a line of work built on before it was proved. |
 | **interpretation** | A philosophical reading that no proof or experiment can settle. |
+| **scaffold** | A reading, weighting, start or rule supplied by a study. Compare an alternative before attributing a result to the model. |
 
 ## Summary
 
@@ -173,6 +174,12 @@ evidence: results and their status come from the records each entry links.
 | [A116](#a116--a-midpoint-reading-counts-knots-near-every-middle-of-a-shortest-route) | A midpoint reading counts knots near every middle of a shortest route | reading | Assumed |
 | [A117](#a117--a-same-side-reading-can-be-tested-by-its-present-reach-or-by-the-origins-of-every-counted-knot) | A same-side reading can be tested by its present reach or by the origins of every counted knot | reading | Assumed |
 | [A118](#a118--a-distant-reader-can-be-given-only-the-connected-part-holding-its-old-mark) | A distant reader can be given only the connected part holding its old mark | reading | Assumed |
+| [A119](#a119--a-setting-can-name-which-of-two-marked-distinctions-to-read) | A setting can name which of two marked distinctions to read | scaffold | Assumed |
+| [A120](#a120--a-setting-can-name-a-two-bit-pattern-to-test) | A setting can name a two-bit pattern to test | scaffold | Assumed |
+| [A121](#a121--separation-for-a-reading-counts-steps-between-all-its-marked-distinctions) | Separation for a reading counts steps between all its marked distinctions | scaffold | Assumed |
+| [A122](#a122--a-bell-reading-uses-a-declared-weighting-of-the-states) | A Bell reading uses a declared weighting of the states | scaffold | Assumed |
+| [A123](#a123--built-and-labelled-sampled-starts-supply-a-bell-comparison) | Built and labelled sampled starts supply a Bell comparison | scaffold | Assumed |
+| [A124](#a124--one-context-can-be-given-a-changed-outcome-rule) | One context can be given a changed outcome rule | scaffold | Assumed |
 
 ## Entries
 
@@ -3542,3 +3549,69 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-19 · The supplied cutoff, old mark and induced boundary are measurement scaffolds. Swapping the connected part for every retained part changes the path onset by one layer for d at least three. An intrinsic observer would need to identify its location and supported region within the stage.
   - 2026-11-19 · `DETECTION-PACE-20261119-001` · The path calculation distinguishes the connected part at max(1,d−1), the full exterior at max(1,d−2), and the arbitrary-radius rooted ball at one. A future intrinsic construction would have to identify the attachment and boundary from the stage.
   - 2026-11-19 · Registered the present-separation observers and their comparison with old ancestry. [Detection study](https://github.com/jscul/knotlab/blob/main/research/DETECTION-PACE-20261119-001/definitions.md)
+
+### A119 · A setting can name which of two marked distinctions to read
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Select the first or second marked distinction and report its value. The external protocol uses the same distribution of source states for each selection. The embodied alternative reads a third mark as the setting.
+- **Why.** To compare a setting varied independently with a setting already recorded in an allowed state.
+- **Rests on it.** This is one observer protocol in the Bell study. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
+- **Challenge.** Compare the pair-pattern reading and actual selector conditioning with independent re-reading on the same states. Ordinary growth presently supplies neither a choice of observable nor a measurement operation.
+- **History.**
+  - 2026-11-20 · Recorded for the comparison of separated readings.
+
+### A120 · A setting can name a two-bit pattern to test
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Use the setting to name 00 or 11, and report whether the two local distinctions have that pattern. This requires both values.
+- **Why.** To test a different two-valued reading with the same native distinctions.
+- **Rests on it.** The pair-pattern correlations depend on this choice of question. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
+- **Challenge.** Compare with reading one distinction. A future native reading operation could specify its own test; neither question follows from ordinary growth.
+- **History.**
+  - 2026-11-20 · Recorded for the comparison of separated readings.
+
+### A121 · Separation for a reading counts steps between all its marked distinctions
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Each local group of marks lies in an actual bond. Compare a minimum of two co-knotted steps between the two groups with three and with having no chain. Include both selectors when they supply the indices. Compare a selected-bit marginal with the entire marked pair.
+- **Why.** To say in intrinsic terms what the two observers can read.
+- **Rests on it.** The separation and the operational interpretation of the reported marginal tests. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
+- **Challenge.** Vary the step threshold and visible register; markings and a stable ordering for allocating and naming indistinguishable places are scaffolds. Growth supplies the meeting pattern but has no designated observers or marking rule.
+- **History.**
+  - 2026-11-20 · Recorded for the comparison of separated readings.
+
+### A122 · A Bell reading uses a declared weighting of the states
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Compare equal weight for each current state, equal weight for each initial state divided over extensions, and double current weight when one marked distinction is one. Each external setting uses the same weighting.
+- **Why.** Support preservation does not prescribe how much an extension counts.
+- **Rests on it.** The numerical four-context tables and whether conditional marginals hide a setting. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
+- **Challenge.** Repeat with all three weightings. A future native rule would have to derive weights and their behavior under extension, as well as how settings are supplied.
+- **History.**
+  - 2026-11-20 · Recorded for the comparison of separated readings.
+
+### A123 · Built and labelled sampled starts supply a Bell comparison
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Compare smallest built starts, a built connected control with two relays, labelled sampled trees in fixed size strata with matched extra loose distinctions, and three literal starts selected from the archived explosive panel. The selected markings are fixed without reading outcomes.
+- **Why.** To distinguish a construction that can happen from its frequency under a named weighting.
+- **Rests on it.** Only the bounded samples and measured maxima use these source, marking and label choices. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
+- **Challenge.** Swap the built and sampled families, the two knot laws, old and newborn readings and the separation bands. A sampling convention stays with the observer until a weighting is supplied by the model.
+- **History.**
+  - 2026-11-20 · Recorded for the comparison of separated readings.
+
+### A124 · One context can be given a changed outcome rule
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** For a fair shared bit, switch the second outcome only when both setting labels are one. Also test a biased bit, no switch and a partial switch. Count the number of altered contexts relative to four identical rules.
+- **Why.** This gives a sharp comparison for the precise addition sufficient to exceed the classical bound.
+- **Rests on it.** Only the explicit added-rule control and its one-context minimality use this scaffold. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
+- **Challenge.** Remove the switch, vary the mask and check both marginals. A future model would need to derive the dependence and preserve marginals itself; the ordinary join law has no such pair-of-settings input.
+- **History.**
+  - 2026-11-20 · Recorded for the comparison of separated readings.

@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REGISTER = ROOT / "docs" / "ASSUMPTIONS.md"
 
 STATUSES = ("Assumed", "Under challenge", "Confirmed", "Overturned")
-KINDS = ("premise", "reading", "scope", "measure", "working premise", "interpretation")
+KINDS = ("premise", "reading", "scope", "measure", "working premise", "interpretation", "scaffold")
 FIELDS = ("Statement", "Why", "Rests on it", "Challenge", "History")
 HEADING = re.compile(r"^### (A(\d+)) · (.+)$")
 STATUS = re.compile(r"^\*\*(?P<status>[^*]+)\*\* · (?P<date>\d{4}-\d{2}-\d{2}) · (?P<kind>[a-z ]+)$")

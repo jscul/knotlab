@@ -1,0 +1,170 @@
+{
+  "experiment_id": "SAME-SIDE-READING-20261119-001-E001",
+  "status": "Complete",
+  "evidence_stage": "exploratory",
+  "decision": "Original marks on one side detect a once-loaded ring before reaching an original ring knot. An ordinary count loses exactly two at arbitrarily large offsets with growing radius. Both fixed ordinary and fixed bond radii have all-age protection on the singly attached paths. The old far pair stays at bond distance nine and counts 45/46 knots at bond radius seven.",
+  "decision_note": "research/SAME-SIDE-READING-20261119-001/decision.md",
+  "frozen_design_commits": [
+    "95d4acce2c77db5f574cae7621b21a6e5705a64c",
+    "58d3b9870c1106d7b28e95da7fada84874d18abe",
+    "20034a3293dfdf9b5ab892d4896b2372d367080a",
+    "1a31d8e8a651317aa2e53828546278a9874d244f"
+  ],
+  "review": "In-task independent proof and computational checks complete. Program referee pending.",
+  "sample": "Designed physical sources, one per allowed physical loading and unordered mark set, one per actual knot and per oriented shortest path for the named pair. No weighting over all starts.",
+  "comparisons": {
+    "original_single_same_side_sets": {
+      "pairs": 72,
+      "triples": 224,
+      "quadruples": 496
+    },
+    "full_common_minima_matched_ages": [
+      0,
+      1,
+      2
+    ],
+    "full_bond_radius_5_matched_ages": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ordinary_physical_readings": 89170,
+    "ordinary_physical_preparations": 153,
+    "padded_fixed_radius_cells": 720,
+    "quiet_ancestry_bounds_checked": 11391,
+    "primary_offset_cases_checked": 57,
+    "secondary_large_offset_padded_path": {
+      "marks": 128,
+      "paired_k": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "two_donor_packet_cells": 61,
+    "doubled_source_allowed_words": 64,
+    "remote_bond_checks": {
+      "far_pair_age3_radius7": [
+        45,
+        46
+      ],
+      "new_age4_offset6_radius9": [
+        52,
+        53
+      ]
+    }
+  },
+  "measured_objects": [
+    {
+      "object": "Ordinary same-side steps and shortest routes",
+      "population": "Every completed layer of the funded one-ring path, doubled meetings and two-ring preparations with marks on one side of each donor",
+      "outcome": "Every ordinary separation and shortest-route multiplicity agrees across loads.",
+      "status": "proved"
+    },
+    {
+      "object": "Ordinary count before any original ring knot",
+      "population": "Consecutive sets of two to four marks at offset 2k on sufficiently padded single-ring paths, k at least two",
+      "outcome": "Quiet minus loaded equals two from age k+1 at radius 2k+3. All smaller radii agree.",
+      "status": "proved"
+    },
+    {
+      "object": "Protection of fixed-radius same-side readings",
+      "population": "Outer path of one once-loaded ring with the four end spares and the registered feedback law",
+      "outcome": "Ordinary radius r has all-age protection past twice floor((r-1)/2). Bond radius r has all-age protection from offset 2r+9 and stabilizes by age r+1.",
+      "status": "proved"
+    },
+    {
+      "object": "Minimum common bond on old path marks",
+      "population": "Exterior old marks with up to four distinctions, offset at least four from the outermost donor; single-ring first-layer readings of every same-side arity",
+      "outcome": "Every covered minimum agrees across loads. The far old pair has distance nine permanently. A between-attachment triple has first-layer common-bond sizes 14 or 16 at unchanged pair readings 5,7,3.",
+      "status": "proved"
+    },
+    {
+      "object": "Knot count in the bond union about e8,e12",
+      "population": "The original 17-knot background with one-spare five-ring, completed age three and bond radius seven",
+      "outcome": "45 quiet, 46 loaded. Neither ball contains an original ring knot. An independent anchored enumeration confirmed both.",
+      "status": "computed"
+    },
+    {
+      "object": "Offset-six least detecting bond radius for one fixed close pair",
+      "population": "The 32-mark background with seam b12, e18/e19 at layer four",
+      "outcome": "All smaller radii agree and radius nine gives 52/53. The predicted first radius eleven missed.",
+      "status": "computed"
+    },
+    {
+      "object": "Dependence on physical initial load and a second attachment",
+      "population": "All 64 shared-only physical loadings of a doubled five-ring and full four-arm contrasts on two registered double spacings",
+      "outcome": "Attachment activity determines the moving decrease; four-step double can give a bond-ball interaction of minus one.",
+      "status": "proved and computed"
+    }
+  ],
+  "artifacts": {
+    "common_bonds_contrasts.json": "8808c7006cc37a72f8d4ab0f4ab0337fd272b3a9c7d750bb375627578ac9baf8",
+    "common_bonds_core.json": "2a3c433e060ca3c0709dba7df967042973b43282bb20756da8c01c85f2086675",
+    "common_bonds_doubles_later.json": "c7dd705e51c14b6acb2ef421e62b37063c4eed1bcbd705d050b513fcedaff589",
+    "common_bonds_doubles_later_2.json": "121c968fc4fc0be7644482ff0b2504e91a3196c67eeff6b007546bd7a5292e43",
+    "common_bonds_later.json": "3fde15c2467e062c4dcff1e59f8796384998dc586b94991a91ef71dd83adc29c",
+    "common_bonds_pads_later.json": "503c860da153a3cd24257d9e6aa5a199128be6bd25b58013c98d7bed24cfff6c",
+    "common_bonds_translated.json": "1cd10724e24392c189705b2cfb6fa4d46acfee034e3bcb99531e26e41d9a4dfd",
+    "common_bonds_translated_age_two.json": "95974ba2a366333df115763d0d34d5c510cfd2a523f82047cad1468e1e33aac4",
+    "common_bonds_witnesses.json": "112c6546e05484e28b30bf4743757c90fccfe71e39981bc7501f3ef4f1f23291",
+    "far_bond_ball.json": "fc79a4e7b36e2743c6d61f04894120146a461d065e085b61b1733af237e86b75",
+    "fixed_bound_check.json": "eb71c064edd0ea0306646154b1aebd6758e61467018e99e6e7d1ec7a203ac296",
+    "moving_count.json": "da344b334f759c2a3289d06ac9ba32803518102d154425a01c30e4928b942cc5",
+    "moving_loads.json": "6bfcea6b7c30c6aad9b14c0b51314e37e28440e94c35706c58936d177e418000",
+    "proof_padding.json": "469957f9bc7b10fea8c93c35eeb3a3472d592a5e6f1d3e3975908b70ce17d1ec",
+    "radius_at_six.json": "af1bb132bfc66703ff75a2ce3e36cc2c68ee457d27ac3ad748ee3d01bd91c974",
+    "side_balls.json": "acb23db8581012340f89c5272c128dcf290db66d83dab250f1fa0d28541564de",
+    "side_balls_offsets.json": "c708dcc7a3dc1e4644f57ed4298777e07f4e400bc748700abdc6c4e94507ac42",
+    "side_cert_between.json": "35888641072cccaeae69c40d808e3e653b184d73e5b4bd567609c40f81eccda7",
+    "side_cert_between_deeper.json": "54ee47a922e7b5be06752859c21e8cffdb639bbd0ee3277acbff42138b9017b4",
+    "side_cert_first.json": "01e1e51aee3a504b24e804ec239ee7654e8274e7b2f07a6d92476623c71772cd",
+    "side_cert_near.json": "3882dd6551d726c556aa123e645a43dc4fa331007c4abfb7faef6a93035b5068",
+    "side_cert_remote.json": "04ba96cf3808e5b3fe8f167a3cea5a38723d16a39c6b7b5ba4a9c749849372e8",
+    "side_cert_translated.json": "2c01daa5f427991a160c0082e09c3148ffc937413bdcba86267193345fb4e952",
+    "side_routes.json.gz": "b75763e6714d5e095c8fd9173f16d66b72833cc7f5d345e2a1609c56bdc05f16"
+  },
+  "scientific_notes": {
+    "common_bonds.md": "303deb7b5ac0d37c063702f92bde8bf409a75474f17413fce61888ca157ef25a",
+    "decision.md": "8e1457ae112d955570594c008a0ab107ac0658886c7cf3e5ac001ba45105518d",
+    "definitions.md": "401ed535f3c1834c0a71b88a213b1b3b7de2f3a7f676f80c08632dc0c50d37b1",
+    "fixed_bond_range.md": "c2023de7db89c685b08690f62712211f1a4926873ef8a3867a284ed87c62cba6",
+    "local_proof.md": "9c13a0f91cdcf444582cdde1d7fd75f4a0290b91573df52394d433f123e39949",
+    "moving_count_design.md": "37321e9064711273e17a88864124a33195fe3b43268c4e6ee5b80e15c26c9d4a",
+    "preregistration.md": "b60f40a9ea38d57f367be40a882cc4ba7eb815f6dbfe6fbd93e544623614f1fd",
+    "radius_at_six_design.md": "0da38505e1e27d2ff0117af85f65d360297421559fb48193f4eb3f42e8170186",
+    "range_and_load.md": "6804c92bd9629bad09e3539f58a059261ccf12922196468a465570749a2684eb",
+    "side_balls.md": "7945b62d14bc17882d5392373604aeb68caf4ab2b8636d7bac8ab2da2c995b90",
+    "side_bonds_proof.md": "a317484f273dff9659ebfec9409e12fba28456c75326eed0bf17cb3ec9c3bc62",
+    "side_certificates.md": "ea1bbf2012e4cac11221deeebaa5b6b9cb2123923b715e2c08a8deb4d0bac562",
+    "side_routes.md": "e5cb799ba49511319040bdf88fb2c773e1e869fc9ad98a290558067b8f4ecbf4"
+  },
+  "reproduction": {
+    "common_bonds.py": "543fa5f24eb8e6ea2fdb94b9f31d5ee2f2ae481d2559fc75dd162490d668511f",
+    "common_bonds_contrasts.py": "48aab1e50f6a4c6576ed7c5e2c3b9a5038ef891b542baa4ce7d193b2bb1bba1d",
+    "common_bonds_witnesses.py": "d405676bb686fcb58af8afd0ad980a224191dbbd124fbbfdbba57b83611b193a",
+    "contract.json": "a72ea44e6e0d3fa4cd18e4c9e4c12bf9147597e7ec5b60679d58b764a2714284",
+    "far_bond_ball.py": "8660b83a74e9c234295c830351840c7aeec430b10b05a4637c48eca7ec9b0f97",
+    "fixed_bound_check.py": "a25a57e2a9af50c0029320af7a7425ff9fd7fcd6c6da8fefc186641fd0785a05",
+    "identity.json": "9f1bd084c2c008da0c78506f98a0f9a932749a08ab575b74b8f7cf2eb520e112",
+    "inputs.json": "91efe225d1f7de7800f4e22a65628e8a29b334489b745de9fdf5824749d06bee",
+    "moving_count.py": "d8f427de2cd5a41df9a934687a41f223c42c6e945e82b6df9225dd01effc604b",
+    "moving_loads.py": "56d64d1e6324a21affdbaf5a007173756d26bfd79852a485b71dba75d4e3468c",
+    "proof_padding.py": "86f8574291e53635ddf08c6204e30ac78a4d605d67cc4787d9c496344637583b",
+    "radius_at_six.py": "d093ca0e37de0d5b8add21902a7fd914d8a7c6e69722a6e86064c4afa2620656",
+    "side_balls.py": "7db8d9bf6608aef3387951863d8150897b1a50c9bc8d98915751ae85a95e6611",
+    "side_cert.cpp": "5046bc597c76b50bc394e3cbe90f67b220f008544f8a7dde90208407be660902",
+    "side_cert.py": "b5486ce5f10fcf41830733daee3c6b3cea1bb181c051924a6c041c3f657bcb9d",
+    "side_cert_first.py": "2cbc860fa7e17a404c3d0f2b4caa8cf606bf4b099e083eaa601f5fa82d5f5a1e",
+    "side_routes.py": "44bf232d3d993d7e9f0602cd44fb637cebe23c395e8093152a135d6cd00b8381",
+    "side_sources.py": "148daf5ad2ea4da46df0ef2c3f76b74c7f35eea2cfa0a9023dcecccd5579b0ef",
+    "verify_examples.py": "5583801974fcc4b52285428ce526b36fa995ddf33ece1f91f56ab866ec611fc4"
+  }
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**379 current results** and 5 superseded ones, from 561 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**383 current results** and 5 superseded ones, from 561 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 94 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 98 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
@@ -876,6 +876,18 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-20 · A local parity birth can depend on another growing part** (`ORDINARY-DYNAMICS-20261120-001-D001`).
   A new knot with three parents can require zero or one fresh distinction on two preparations whose entire growing parts around those parents agree. Thus no finite radius in shared-parent steps determines the full next birth, even on funded rounds inside the identified class.
   [proof P001](proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/proof.md), [epic closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Recognizing the original start can fail at two single-meeting knots** (`READ-ORIGIN-20261120-001-D001`).
+  Identical holdings at two knots and five distinctions require different continuations. Two four-place knots sharing one distinction give different immutable counts on the same pending unary.
+  [proof P001](proofs/READ-ORIGIN-20261120-001B/READ-ORIGIN-20261120-001B-P001_origin/proof.md), [epic closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Source information can be linear in the size of an unfinished present** (`READ-ORIGIN-20261120-001-D002`).
+  A family with four m knots and nine m distinctions hides m independent choices in the ready two-parent counts. Source membership flags give a linear upper bound.
+  [proof P001](proofs/READ-ORIGIN-20261120-001B/READ-ORIGIN-20261120-001B-P001_origin/proof.md), [epic closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Whole boundaries carry all later growth while retaining logarithmic historical ambiguity** (`READ-ORIGIN-20261120-001-D003`).
+  Whole holdings determine all future complete layers, and removing the last cohort gives an inverse at open stages. A closing parity knot allows at most quadratically many candidate origins, and a lawful ring gives a logarithmic information lower bound.
+  [proof P001](proofs/READ-ORIGIN-20261120-001B/READ-ORIGIN-20261120-001B-P001_origin/proof.md), [epic closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Arity can mark the original source through unlimited growth** (`READ-ORIGIN-20261120-001-D004`).
+  Every subsequent knot always has four places. The source supplies the five-place condition, and ordinary births produce the separating four-place signature.
+  [proof P001](proofs/READ-ORIGIN-20261120-001B/READ-ORIGIN-20261120-001B-P001_origin/proof.md), [epic closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md)
 - **2026-11-20 · All fixed-map-ready births on two seven-knot starts have a bounded present reading** (`SERIAL-REPAIRS-20261120-001-D001`).
   Finite current incidence recognizes every ready parent set and its immutable fresh count. The regular two-direction pieces use a spent common holder and the absence of a second shared neighbor.
   [proof P001](proofs/SERIAL-REPAIRS-20261120-001B/SERIAL-REPAIRS-20261120-001B-P001_present/proof.md), [epic closure](proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/proof.md)
@@ -1839,6 +1851,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can a join read closure from its own distinctions? (`BOND-CLOSURE-20261120-001`) | [closure](proofs/BOND-CLOSURE-20261120-001Z/BOND-CLOSURE-20261120-001Z-P001_synthesis/proof.md) | [folder](research/BOND-CLOSURE-20261120-001/) |
 | 2026-11-20 | What outside the parents fixes a birth’s fresh distinctions? (`FRESH-DEMAND-20261120-001`) | [closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FRESH-DEMAND-20261120-001/) |
 | 2026-11-20 | Can ordinary growth carry a change through its own growing end? (`ORDINARY-DYNAMICS-20261120-001`) | [closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ORDINARY-DYNAMICS-20261120-001/) |
-| 2026-11-20 | Can the original start be recognized with single meetings? (`READ-ORIGIN-20261120-001`) | — | [folder](research/READ-ORIGIN-20261120-001/) |
+| 2026-11-20 | Can the original start be recognized with single meetings? (`READ-ORIGIN-20261120-001`) | [closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md) | [folder](research/READ-ORIGIN-20261120-001/) |
 | 2026-11-20 | Can current holdings give every birth its correct count in every fair order? (`SERIAL-REPAIRS-20261120-001`) | [closure](proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/SERIAL-REPAIRS-20261120-001/) |
 

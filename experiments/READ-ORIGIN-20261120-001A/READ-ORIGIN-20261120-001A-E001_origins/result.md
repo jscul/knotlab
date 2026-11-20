@@ -1,0 +1,5 @@
+# Source recognition under the two knot laws
+
+Exhaustive minima up to four current knots and nine distinctions, literal projections under both laws, all 2,044 source interpretations on the independent-choice family through ten sites, physical arity and pointer controls, a complete-boundary inverse and 640 weighted lawful sources. All five receipts reproduced byte for byte. Of 106 funded tree starts and 58 funded augmented-tree starts, every sampled middle changed roster at restart, and every genuine completion agreed with restart on the next layer. Independent program referee pending.
+
+[minimum](../../../research/READ-ORIGIN-20261120-001/minimum.md) · [information](../../../research/READ-ORIGIN-20261120-001/information.md) · [marks](../../../research/READ-ORIGIN-20261120-001/marks.md) · [enumeration](../../../research/READ-ORIGIN-20261120-001/enumeration.md) · [family checks](../../../research/READ-ORIGIN-20261120-001/family_checks.md) · [samples](../../../research/READ-ORIGIN-20261120-001/samples.md) · [boundaries](../../../research/READ-ORIGIN-20261120-001/boundaries.md)

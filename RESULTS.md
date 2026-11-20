@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 554 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 555 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 554 epics with their closures
+- [Epics](#epics): all 555 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1794,6 +1794,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | What rule do two joined rings of knots grow by? (`RING-PAIR-20261119-001`) | [closure](proofs/RING-PAIR-20261119-001Z/RING-PAIR-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/RING-PAIR-20261119-001/) |
 | 2026-11-19 | Can a once-loaded ring carry its state into a second growth layer? (`RING-TO-END-20261119-001`) | — | [folder](research/RING-TO-END-20261119-001/) |
 | 2026-11-19 | What does the growth build when joins come one at a time, without rounds? (`ROUND-FREE-20261119-001`) | [closure](proofs/ROUND-FREE-20261119-001Z/ROUND-FREE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/ROUND-FREE-20261119-001/) |
+| 2026-11-19 | Can old marks wholly on one side read a distant loaded ring? (`SAME-SIDE-READING-20261119-001`) | — | [folder](research/SAME-SIDE-READING-20261119-001/) |
 | 2026-11-19 | Which growth is typical as starts of touching knots get larger? (`SCALE-SHARE-20261119-001`) | [closure](proofs/SCALE-SHARE-20261119-001Z/SCALE-SHARE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/SCALE-SHARE-20261119-001/) |
 | 2026-11-19 | The proved theorem past the census: shares by size (`SCALE-THEOREM-20261119-001`) | [closure](proofs/SCALE-THEOREM-20261119-001Z/SCALE-THEOREM-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/SCALE-THEOREM-20261119-001/) |
 | 2026-11-19 | Can one bit read at joining knots change growth around a stored loop? (`STATE-FEEDS-GROWTH-20261119-001`) | — | [folder](research/STATE-FEEDS-GROWTH-20261119-001/) |

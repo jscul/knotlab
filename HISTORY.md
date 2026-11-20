@@ -4,6 +4,10 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026 · Which starts admit the shortest transfer between five-rings
+
+**Narrowing.** The shortest transfer calculation uses one two-parent child per two-meeting path. A six-knot cycle can make three-parent groups even when all shorter exclusions pass. All 16 motion starts satisfy the corrected condition in their actual first layer. The costs of 18, 26 and 50 local changes survive. [Proof and six-knot comparison](research/MOTION-AT-EDDY-20261119-001/ring_state.md#source-condition-for-the-transfer-count)
+
 ## 19 November 2026 · Which sampled starts met the parity test
 
 **Narrowing.** Rechecking the original sampling frames gives 14 measured jumps among 690 qualifying seven-place draws. The original tally was 16 among 1,000 funded descriptions. The presentations of 08 and 15 have an extra equation on part of one starting junction. Among qualifying starts, MERGE-BURST covered 101 positive rounds and WALL-READ covered 123. The independent controls retain their stated weightings. [Canonical source counts](research/HEAVY-GROWTH-20261119-001/sources.md)

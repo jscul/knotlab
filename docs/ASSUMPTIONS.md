@@ -167,6 +167,7 @@ evidence: results and their status come from the records each entry links.
 | [A110](#a110--blow-up-is-expected-and-the-unlimited-structure-is-read-by-sampling-it) | Blow-up is expected, and the unlimited structure is read by sampling it | working premise | Assumed |
 | [A111](#a111--a-moving-pattern-is-measured-against-one-allowed-state) | A moving pattern is measured against one allowed state | reading | Confirmed |
 | [A112](#a112--the-logic-comes-before-space-and-would-sit-beneath-locality) | The logic comes before space and would sit beneath locality | interpretation | Assumed |
+| [A113](#a113--fresh-distinctions-inherit-the-fewest-state-changes-allowed-by-each-new-parity-knot) | Fresh distinctions inherit the fewest state changes allowed by each new parity knot | reading | Assumed |
 
 ## Entries
 
@@ -3437,3 +3438,14 @@ evidence: results and their status come from the records each entry links.
   stay attached, and travelling state patterns that the growth rule never chooses.
 - **History.**
   - 2026-11-19 · Recorded, in the owner's words, as the owner's interpretation; framed by Intuitions lesson 8.5.
+
+### A113 · Fresh distinctions inherit the fewest state changes allowed by each new parity knot
+
+**Assumed** · 2026-11-19 · reading
+
+- **Statement.** In the state-feedback comparison, every old distinction retains its value on growth. Compared with the transported reference A111, a new knot with an even input gets no occupied fresh distinction. An odd input gets one, with each tied choice admitted. A sole implied closure has no fresh distinction.
+- **Why.** The parity relation specifies the allowed assignments. The comparison needs a choice for how a current assignment extends to a new knot. The fewest new changes supplies a reproducible, renaming-invariant family of lifts.
+- **Rests on it.** The one-layer sensing of a state held only on old shared distinctions and the conservation of occupied loose distinctions under hot-join veto use this extension. Counts at the first birth roster depend only on the current state and action table.
+- **Challenge.** Admit a fresh pair of changes on an even input, or a local event that transfers stored changes to the growing end. Test whether old-state information can reach a second layer while preserving parity and giving the same structural outcome for every event order specified by the law.
+- **History.**
+  - 2026-11-19 · Adopted and challenged for the closed sixteen-table feedback comparison in `STATE-FEEDS-GROWTH-20261119-001`. A matched control distinguishes an exhausted ring from a state with ten occupied loose distinctions.

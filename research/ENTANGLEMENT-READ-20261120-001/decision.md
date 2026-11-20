@@ -67,16 +67,16 @@ One can even match a quantum-realizable four-context table by supplying *only a 
 | Scope | Verdict | What the study established |
 |---|---|---|
 | This attempt | **Status: Successful.** | Across 33 other starts, both knot laws and 694 marked placements, none exceeded 2. The panel included 12 labelled draws with matched variants, three archived explosive starts and 256 placements reading a newborn distinction. |
-| Local direction — independent settings | **Obstruction proved.** | At every finite grown stage, both reading definitions obey CHSH ≤ 2 under any one common weighting. The largest external score in the 33-start panel was 4/9 for reading one distinction and 1106/855 for testing a pair pattern. |
-| Broader exploration — contextuality | **The missing condition is identified.** | Every old state extends. The four GHZ requirements and six Mermin–Peres requirements have zero common assignments, so neither can arise as exact projections of one nonempty ordinary state set. A join can depend on a disconnected part of the growing end, but this supplies no response to a freely varied remote setting. |
+| Local direction — independent settings | **Retire this route to a violation.** | At every finite stage, one common weighting gives CHSH ≤ 2. On the smallest separated structure, the single-bit and pair-pattern maxima under equal weights were 0 and 1 for parity, 2/9 and 10/9 for not-all-equal. Across the ordinary grown panel and all three weightings, the two maxima were 4/9 and 1106/855. |
+| Broader exploration — contextuality | **Known alternatives.** | Every old state extends. The four GHZ requirements and six Mermin–Peres requirements have zero common assignments, so neither can arise as exact projections of one nonempty ordinary state set. A join can depend on a disconnected part of the growing end, but this supplies no response to a freely varied remote setting. |
 | G17 meeting patterns and G5 dynamics | **Obstruction learned.** | With uniform parity states, if both *complete local pairs* hide the other setting, all four tables admit a common local explanation. The corresponding embodied-settings question for not-all-equal remains open. |
 
 **Next step:** Continue with independent referee replay of the ten-knot witness and the full-pair theorem. The requested scientific stop has been reached.
 
-| Direction | Payoff | Concreteness | First step → stop when | Status |
-|---|---|---|---|---|
-| 1. Replay conditioning versus independent settings | 2/3 — Substantial | 3/3 — Ready | Reconstruct the four tables and the common explanation → confirm or identify a failing case | Selected · referee pending |
-| 2. Test uniform not-all-equal with both complete pairs hidden | 3/3 — Barrier | 2/3 — Testable | Require equal full-pair marginals before scoring → find an excess or prove a bound for a named class | Deferred · B223 |
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Replay conditioning versus independent settings | 2/3 — Substantial | 3/3 — Ready | Reconstruct the four tables and the common explanation → confirm or identify a failing case | Selected · referee pending |
+| 2 | Test uniform not-all-equal with both complete pairs hidden | 3/3 — Barrier | 2/3 — Testable | Require equal full-pair marginals before scoring → find an excess or prove a bound for a named class | Deferred · B223 |
 
 **Corrections:** None to earlier research claims.  
 **Goals:** B222 records the owner’s lead under G17 and G5, rated 3/3 for payoff and 3/3 for concreteness.  
@@ -86,27 +86,27 @@ One can even match a quantum-realizable four-context table by supplying *only a 
 
 ## Final report as sent
 
-2026-11-20 20:45 UTC
+2026-11-20 20:47 UTC
 
-**The structure can produce a CHSH score of 4 with two fair reported bits when the settings are themselves part of the state. Independently varying the settings on those same states gives 2.** Results are referee pending. [Full study](https://github.com/jscul/knotlab/blob/main/research/ENTANGLEMENT-READ-20261120-001/decision.md)
+**The structure can produce a CHSH score of 4 with two fair reported bits when the settings are themselves part of the state. Independently varying the settings on those same states gives 2.** Independent referee review is pending. [Full study](https://github.com/jscul/knotlab/blob/main/research/ENTANGLEMENT-READ-20261120-001/decision.md)
 
-The example has ten parity knots and 128 allowed states, with 32 states for each setting pair. The nearest marked distinctions of the two observers are three steps apart. Reading the bit indexed by each observer’s own setting gives correlations **(1, 1, 1, −1)**. Each reported bit stays exactly 50/50. Yet Alice can recover Bob’s setting by comparing her two available bits. This is mechanism **(a)**. The settings are fair and independent of each other, but sorting by them changes which underlying states are counted. The score of 4 also exceeds the quantum maximum of (2\sqrt2). [Exact counts](https://github.com/jscul/knotlab/blob/main/research/ENTANGLEMENT-READ-20261120-001/embodied_control.md) · [Quantum bound](https://doi.org/10.1007/BF00417500)
+The example has ten parity knots and 128 allowed states, with 32 states for each setting pair. The nearest marked distinctions of the two observers are three steps apart. Reading the bit indexed by each observer’s own setting gives correlations **(1, 1, 1, −1)**. Each reported bit stays exactly 50/50. Yet Alice can recover Bob’s setting by comparing her two available bits. This is mechanism **(a)**. The settings are fair and independent of each other, but sorting by them changes which underlying states are counted. One ordinary growth step increased the state count to 1,024 and preserved the result. The score of 4 exceeds the quantum maximum of 2√2. [Exact counts](https://github.com/jscul/knotlab/blob/main/research/ENTANGLEMENT-READ-20261120-001/embodied_control.md) · [Quantum bound](https://doi.org/10.1007/BF00417500)
 
 | Scope | Verdict | What the study established |
 |---|---|---|
 | This attempt | **Status: Successful.** | Across 33 other starts, both knot laws and 694 marked placements, none exceeded 2. The panel included 12 labelled draws with matched variants, three archived explosive starts and 256 placements reading a newborn distinction. |
-| Local direction — independent settings | **Obstruction proved.** | At every finite grown stage, both reading definitions obey CHSH ≤ 2 under any one common weighting. The largest external score in the 33-start panel was 4/9 for reading one distinction and 1106/855 for testing a pair pattern. |
-| Broader exploration — contextuality | **The missing condition is identified.** | Every old state extends. The four GHZ requirements and six Mermin–Peres requirements have zero common assignments, so neither can arise as exact projections of one nonempty ordinary state set. A join can depend on a disconnected part of the growing end, but this supplies no response to a freely varied remote setting. |
+| Local direction — independent settings | **Retire this route to a violation.** | At every finite stage, one common weighting gives CHSH ≤ 2. On the smallest separated structure, the single-bit and pair-pattern maxima under equal weights were 0 and 1 for parity, 2/9 and 10/9 for not-all-equal. Across the ordinary grown panel and all three weightings, the two maxima were 4/9 and 1106/855. |
+| Broader exploration — contextuality | **Known alternatives.** | Every old state extends. The four GHZ requirements and six Mermin–Peres requirements have zero common assignments, so neither can arise as exact projections of one nonempty ordinary state set. A join can depend on a disconnected part of the growing end, but this supplies no response to a freely varied remote setting. |
 | G17 meeting patterns and G5 dynamics | **Obstruction learned.** | With uniform parity states, if both *complete local pairs* hide the other setting, all four tables admit a common local explanation. The corresponding embodied-settings question for not-all-equal remains open. |
 
-Changing **one of four context rules** suffices to exceed 2. Bob flips an otherwise shared, fair bit only at setting pair 11. Biasing that bit makes Bob’s marginal change with Alice’s setting. A second scaffold answers John’s “could” at the level of a quantum table. On two unlinked parity knots, giving five times the weight to states with the desired joint parity reproduces an **entire quantum-compatible table at CHSH (8/3)**. Even the complete local pairs then hide the other setting. The weighting supplies that result through **(a) and (d)**. Ordinary growth has yet to derive it. [Proof and construction](https://github.com/jscul/knotlab/blob/main/proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md)
+Changing **one of four context rules** suffices to exceed 2. Bob flips an otherwise shared, fair bit only at setting pair 11. Biasing that bit makes Bob’s marginal change with Alice’s setting. On two unlinked parity knots, giving five times the weight to states with the desired joint parity reproduces an **entire quantum-compatible table at CHSH 8/3**, with correlations (2/3, 2/3, 2/3, −2/3). Even the complete local pairs then hide the other setting. The weighting supplies that result through **(a) and (d)**. Ordinary growth has yet to derive it. [Proof and construction](https://github.com/jscul/knotlab/blob/main/proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md)
 
 **Next step:** Continue with independent referee replay of the ten-knot witness and the full-pair theorem. The requested scientific stop has been reached.
 
-| Direction | Payoff | Concreteness | First step → stop when | Status |
-|---|---|---|---|---|
-| 1. Replay conditioning versus independent settings | 2/3 — Substantial | 3/3 — Ready | Reconstruct the four tables and the common explanation → confirm or identify a failing case | Selected · referee pending |
-| 2. Test uniform not-all-equal with both complete pairs hidden | 3/3 — Barrier | 2/3 — Testable | Require equal full-pair marginals before scoring → find an excess or prove a bound for a named class | Deferred · B223 |
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Replay conditioning versus independent settings | 2/3 — Substantial | 3/3 — Ready | Reconstruct the four tables and the common explanation → confirm or identify a failing case | Selected · referee pending |
+| 2 | Test uniform not-all-equal with both complete pairs hidden | 3/3 — Barrier | 2/3 — Testable | Require equal full-pair marginals before scoring → find an excess or prove a bound for a named class | Deferred · B223 |
 
 **Corrections:** None to earlier research claims.  
 **Goals:** B222 records the owner’s lead under G17 and G5, rated 3/3 for payoff and 3/3 for concreteness.  

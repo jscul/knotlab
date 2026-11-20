@@ -28,16 +28,16 @@ The [discovery disposition](discovery_disposition.json) binds the source-zero sy
 | Scope | Verdict | What the study established |
 |---|---|---|
 | This attempt | **Status: Successful.** | Across 33 other starts, both knot laws and 694 marked placements, none exceeded 2. The panel included 12 labelled draws with matched variants, three archived explosive starts and 256 placements reading a newborn distinction. |
-| Local direction — independent settings | **Obstruction proved.** | At every finite grown stage, both reading definitions obey CHSH ≤ 2 under any one common weighting. The largest external score in the 33-start panel was 4/9 for reading one distinction and 1106/855 for testing a pair pattern. |
-| Broader exploration — contextuality | **The missing condition is identified.** | Every old state extends. The four GHZ requirements and six Mermin–Peres requirements have zero common assignments, so neither can arise as exact projections of one nonempty ordinary state set. A join can depend on a disconnected part of the growing end, but this supplies no response to a freely varied remote setting. |
+| Local direction — independent settings | **Retire this route to a violation.** | At every finite stage, one common weighting gives CHSH ≤ 2. On the smallest separated structure, the single-bit and pair-pattern maxima under equal weights were 0 and 1 for parity, 2/9 and 10/9 for not-all-equal. Across the ordinary grown panel and all three weightings, the two maxima were 4/9 and 1106/855. |
+| Broader exploration — contextuality | **Known alternatives.** | Every old state extends. The four GHZ requirements and six Mermin–Peres requirements have zero common assignments, so neither can arise as exact projections of one nonempty ordinary state set. A join can depend on a disconnected part of the growing end, but this supplies no response to a freely varied remote setting. |
 | G17 meeting patterns and G5 dynamics | **Obstruction learned.** | With uniform parity states, if both *complete local pairs* hide the other setting, all four tables admit a common local explanation. The corresponding embodied-settings question for not-all-equal remains open. |
 
 **Next step:** Continue with independent referee replay of the ten-knot witness and the full-pair theorem. The requested scientific stop has been reached.
 
-| Direction | Payoff | Concreteness | First step → stop when | Status |
-|---|---|---|---|---|
-| 1. Replay conditioning versus independent settings | 2/3 — Substantial | 3/3 — Ready | Reconstruct the four tables and the common explanation → confirm or identify a failing case | Selected · referee pending |
-| 2. Test uniform not-all-equal with both complete pairs hidden | 3/3 — Barrier | 2/3 — Testable | Require equal full-pair marginals before scoring → find an excess or prove a bound for a named class | Deferred · B223 |
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+|---|---|---|---|---|---|
+| 1 | Replay conditioning versus independent settings | 2/3 — Substantial | 3/3 — Ready | Reconstruct the four tables and the common explanation → confirm or identify a failing case | Selected · referee pending |
+| 2 | Test uniform not-all-equal with both complete pairs hidden | 3/3 — Barrier | 2/3 — Testable | Require equal full-pair marginals before scoring → find an excess or prove a bound for a named class | Deferred · B223 |
 
 **Corrections:** None to earlier research claims.  
 **Goals:** B222 records the owner’s lead under G17 and G5, rated 3/3 for payoff and 3/3 for concreteness.  

@@ -133,9 +133,12 @@ of truth for this repository and the research records on
   run before every push. If a later result supersedes or qualifies a record
   that a THEORY.md claim cites, `tests/test_curation.py` fails until the claim
   says so.
-- **The site follows.** A GitHub Actions workflow in the site's repository
-  copies what prespatial.org shows from here, checks and builds it, and pushes. It
-  starts after each publication, and also runs every six hours.
+- **The site follows independently.** prespatial.org releases the public records
+  once daily at 07:00 America/Los_Angeles, or on demand. The site's release
+  operator checks the selected public inputs, builds and verifies the release;
+  unchanged inputs skip preparation and publication. Frequent proof publication
+  here continues independently. Guide, theory and assumptions updates are
+  admitted separately after their site integration checks pass.
 - **Corrections.** A pending qualification is entered once, in
   [data/qualifications.json](data/qualifications.json). It then appears in
   RESULTS.md, on prespatial.org and in the checks of THEORY.md. Corrections are

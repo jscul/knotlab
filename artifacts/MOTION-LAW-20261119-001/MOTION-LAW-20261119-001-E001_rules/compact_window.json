@@ -1,0 +1,136 @@
+{
+  "source_sha256": "e70e246134979a37b2841cd8fb4920cb5f38691fad1e9313275e387b1dd97266",
+  "comparison_window_new": {
+    "radius": 4,
+    "initial_span_cap": 8,
+    "event_cap": 8,
+    "candidate_starts": 128,
+    "globally_max_expanded_labels": 2000000,
+    "max_cumulative_labels_per_seed": 100000,
+    "cache_size_bound": 262144,
+    "verdict": "completed",
+    "last_representative": {
+      "seed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "complete"
+    },
+    "directly_tested_reflection_representatives_by_span": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 3,
+      "5": 6,
+      "6": 10,
+      "7": 20,
+      "8": 36
+    },
+    "completed_negative_starts_including_reflections_by_span": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 4,
+      "5": 8,
+      "6": 16,
+      "7": 32,
+      "8": 64
+    },
+    "completed_negative_starts_including_reflections": 128,
+    "totals": {
+      "labels_accepted": 990,
+      "expanded": 986,
+      "different_absolute_supports": 867,
+      "subsumed_extensions": 725,
+      "inconsistent_extensions": 2279,
+      "older_supersets_dominated": 4,
+      "queued_dominated_labels_skipped": 4
+    },
+    "witness": null
+  },
+  "comparison_window_previous": {
+    "radius": 4,
+    "initial_span_cap": 8,
+    "event_cap": 8,
+    "visit_cap": 250000,
+    "visits": 4468,
+    "starts_entered": 128,
+    "starts_exhausted_without_a_translation": 128,
+    "entire_window_completed": true,
+    "translated_repeatable_witness": null
+  },
+  "expanded_window": {
+    "radius": 4,
+    "initial_span_cap": 12,
+    "event_cap": 16,
+    "candidate_starts": 2048,
+    "globally_max_expanded_labels": 2000000,
+    "max_cumulative_labels_per_seed": 100000,
+    "cache_size_bound": 262144,
+    "verdict": "completed",
+    "last_representative": {
+      "seed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "status": "complete"
+    },
+    "directly_tested_reflection_representatives_by_span": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 3,
+      "5": 6,
+      "6": 10,
+      "7": 20,
+      "8": 36,
+      "9": 72,
+      "10": 136,
+      "11": 272,
+      "12": 528
+    },
+    "completed_negative_starts_including_reflections_by_span": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 4,
+      "5": 8,
+      "6": 16,
+      "7": 32,
+      "8": 64,
+      "9": 128,
+      "10": 256,
+      "11": 512,
+      "12": 1024
+    },
+    "completed_negative_starts_including_reflections": 2048,
+    "totals": {
+      "labels_accepted": 29362,
+      "expanded": 28941,
+      "different_absolute_supports": 25479,
+      "subsumed_extensions": 29815,
+      "inconsistent_extensions": 91175,
+      "older_supersets_dominated": 421,
+      "queued_dominated_labels_skipped": 421
+    },
+    "witness": null
+  },
+  "coverage_note": "Reflected initial supports and displacements are transported; absolute support is retained within each search.",
+  "subsumption_note": "An earlier or equally short route with a subset of forced firing words can undergo every legal continuation of a more constrained route at the same support."
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 549 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 550 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 549 epics with their closures
+- [Epics](#epics): all 550 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1777,6 +1777,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | What a states-only growth gives up where the states allow several presentations (`MANY-VALUED-20261119-001`) | [closure](proofs/MANY-VALUED-20261119-001Z/MANY-VALUED-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/MANY-VALUED-20261119-001/) |
 | 2026-11-19 | Do reached arrangements whose junctions meet once ever share a table with other states? (`MEET-ONCE-20261119-001`) | [closure](proofs/MEET-ONCE-20261119-001Z/MEET-ONCE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/MEET-ONCE-20261119-001/) |
 | 2026-11-19 | What explosive starts do after their merge (`MERGE-BURST-20261119-001`) | [closure](proofs/MERGE-BURST-20261119-001Z/MERGE-BURST-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/MERGE-BURST-20261119-001/) |
+| 2026-11-19 | Which local changes carry a pattern past a stationary ring? (`MOTION-AT-EDDY-20261119-001`) | — | [folder](research/MOTION-AT-EDDY-20261119-001/) |
 | 2026-11-19 | Do loops keep branching under the not-all-equal law? (`NAE-GROWTH-20261119-001`) | [closure](proofs/NAE-GROWTH-20261119-001Z/NAE-GROWTH-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/NAE-GROWTH-20261119-001/) |
 | 2026-11-19 | Can the growth pick its own spine? (`NATIVE-SPINE-20261119-001`) | [closure](proofs/NATIVE-SPINE-20261119-001Z/NATIVE-SPINE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-SPINE-20261119-001/) |
 | 2026-11-19 | Round nine of the start with 28,065 growing junctions (`NINTH-ROUND-SAMPLE-20261119-001`) | — | [folder](research/NINTH-ROUND-SAMPLE-20261119-001/) |

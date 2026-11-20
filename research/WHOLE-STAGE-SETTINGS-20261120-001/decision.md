@@ -52,11 +52,11 @@ The CHSH expression and its joint-distribution characterization are classical re
 
 2026-11-20 13:54 PST
 
-**Yes, for four fixed free settings.** Each observer chooses which of two local holders receives one extra loose distinction. Ordinary stalling then gives **CHSH 9/4** on four equally weighted parity starts prepared before either choice. Every stalled trial counts, and changing the far address leaves each observer’s complete declared record unchanged. The joint response comes from ordinary growth. The starting arrangements, their weighting and the local reading were supplied. **Independent referee pending.** [Study and proof](https://github.com/jscul/knotlab/blob/main/research/WHOLE-STAGE-SETTINGS-20261120-001/decision.md)
+**Yes, for four fixed free settings.** Each observer chooses which of two local holders receives one extra loose distinction. Ordinary stalling then gives **CHSH 9/4** on four equally weighted parity starts prepared before either choice. Every stalled trial counts, and changing the far address leaves the distribution of each observer’s complete declared record unchanged. The joint response comes from ordinary growth. The starting arrangements, their weighting and the local reading were supplied. **Independent referee pending.** [Study and proof](https://github.com/jscul/knotlab/blob/main/research/WHOLE-STAGE-SETTINGS-20261120-001/decision.md)
 
 | Scope | Verdict | Finding |
 |---|---|---|
-| Four fixed addresses | **Status: Successful** | Parity 9/4. Not-all-equal 1.500001965. Both have zero marginal change. |
+| Four fixed addresses | **Status: Successful** | Parity 9/4. Not-all-equal ≈ 1.500001965. Both have zero marginal change. |
 | Smallest two-sided stall | Signals under both laws | Five knots, 13 distinctions. Either observer can read the far setting when locally ready. |
 | Smallest parity closing | Signals from Bob to Alice | Three knots, six distinctions. Requiring three parents raises the minimum to six knots, 11 distinctions. |
 | G18 · Comparing growth laws | **Capability gained** | Ordinary funding can produce a Bell excess. This apparatus can also transmit a message. |
@@ -65,7 +65,7 @@ In setting order **00, 01, 10, 11**, the smallest stall gives outcome pairs **00
 
 **What makes 9/4 possible?** Each party reads an old marked bit if its holder gains a child, and zero otherwise. Both edits repair their shortages on one quarter of trials. When funded, the parity knots tie the two marked values at three setting pairs. At 11 the marks read independent old bits. In outcome order **(00,01,10,11)**, settings 00, 01 and 10 each give **(7/8,0,0,1/8)**. Setting 11 gives **(13/16,1/16,1/16,1/16)**. Each party reads one with probability **1/8** at every setting. The correlations are **(1,1,1,3/4)**. In quantum mechanics the first three perfect correlations force the fourth to be perfect too. These tables therefore rule out a quantum-entanglement interpretation. [Exact counts under both knot laws](https://github.com/jscul/knotlab/blob/main/experiments/WHOLE-STAGE-SETTINGS-20261120-001C/WHOLE-STAGE-SETTINGS-20261120-001C-E001_masking/result.md)
 
-**The same apparatus can send one bit.** Bob can use a free message to repair his visible shortage or leave it short. At a fixed Alice address, her probability of a birth changes from **0 to 1/2**, and the probability that she reports one changes from **0 to 1/4**. If Alice repairs her own shortage, her birth flag reads Bob’s message perfectly. This supplemental test leaves the original four tables intact. [Signalling proof](https://github.com/jscul/knotlab/blob/main/research/WHOLE-STAGE-SETTINGS-20261120-001/endpoint_check.md)
+**The same apparatus can send one bit.** Bob can use a free message to repair his visible shortage or leave it short. At a fixed Alice address, her probability of a birth changes from **0 to 1/2**, and the probability that she reports one changes from **0 to 1/4**. If Alice repairs her own shortage, her birth flag reads Bob’s message perfectly. This was a separate test after the definitions were frozen. More generally, if both observers know their local readiness and can read the common funding decision, ruling out every such signal forces funding to be independent of both settings. If subsequent readings are locally generated, CHSH is then at most 2. [Signalling proof](https://github.com/jscul/knotlab/blob/main/research/WHOLE-STAGE-SETTINGS-20261120-001/endpoint_check.md)
 
 **Next step:** Continue — selected #1.
 

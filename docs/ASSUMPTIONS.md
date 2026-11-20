@@ -171,6 +171,7 @@ evidence: results and their status come from the records each entry links.
 | [A114](#a114--growth-can-read-whether-any-distinction-on-a-joining-knot-departs-from-the-reference) | Growth can read whether any distinction on a joining knot departs from the reference | reading | Assumed |
 | [A115](#a115--a-pair-of-fresh-changes-may-be-part-of-a-knots-birth) | A pair of fresh changes may be part of a knot's birth | reading | Assumed |
 | [A116](#a116--a-midpoint-reading-counts-knots-near-every-middle-of-a-shortest-route) | A midpoint reading counts knots near every middle of a shortest route | reading | Assumed |
+| [A117](#a117--a-same-side-reading-can-be-tested-by-its-present-reach-or-by-the-origins-of-every-counted-knot) | A same-side reading can be tested by its present reach or by the origins of every counted knot | reading | Assumed |
 
 ## Entries
 
@@ -3491,3 +3492,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Compare each midpoint separately, weight midpoints by the number of shortest routes crossing them, or hold the original midpoint fixed. Equality of ordinary shortest lengths can coexist with different counts under these readings.
 - **History.**
   - 2026-11-19 · Adopted and compared with the fixed source midpoint in `OLD-MARK-GEOMETRY-20261119-001`. No weighting over all starts or law asserting that one midpoint is physically preferred was introduced.
+
+### A117 · A same-side reading can be tested by its present reach or by the origins of every counted knot
+
+**Assumed** · 2026-11-19 · reading
+
+- **Statement.** On a path with an attached ring, record the source positions of the marked distinctions, whether the current ball reaches an original ring knot, and whether every counted holder has all its original ancestors in the same source component as the marks after deleting that attachment. These are distinct tests. A law making a knot reads its ordinary parent information and the transported state. It does not see these ancestry scores.
+- **Why.** A mark-centred reading can encounter a descendant of the ring through a new knot before it reaches any original ring holder. The owner asked whether a distant reading is possible and how confined it is.
+- **Rests on it.** The remote seven-hop and bond-radius-seven witnesses in `SAME-SIDE-READING-20261119-001` are observations before the original ring is reached. The ordinary all-age null for balls whose entire ancestry is confined uses the stronger test in both arms. A116 records an earlier, distinct midpoint convention.
+- **Challenge.** Ask for a test of confinement from the current unlabelled stage alone, or vary the supported ancestry relation while retaining identical mark positions and present readings. An ancestral certificate used by the investigator need not be available to the observer.
+- **History.**
+  - 2026-11-19 · Registered with the original-mark, padded-background and two-donor comparisons in `SAME-SIDE-READING-20261119-001`. No weighting over possible starts is assumed.

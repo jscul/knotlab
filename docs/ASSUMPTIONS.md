@@ -3136,6 +3136,7 @@ evidence: results and their status come from the records each entry links.
   rule avoid trees without the complete round, and what does it build? The cheapest discriminator is the serial rule with a
   distance-only preference (join before extending) from one knot, compared with the complete round on the same seeds.
 - **History.**
+  - 2026-11-19 · `STATE-FEEDS-GROWTH-20261119-001` · With proposals read on the old stage, a hot-parent veto and ordinary cold growth give one coloured result up to renaming. Interleaving an independent value change and irreversible births gives different physical structures. These statements require their respective event conventions.
   - 2026-11-19 · The law does not matter by `NAE-GROWTH-20261119-001`: under not-all-equal the same policy gives the same counts at
     every round, except that parity's closing tops relay (proved; the whole census checked). The rule's results are not parity's
     alone.
@@ -3414,6 +3415,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The minimal ten-distinction moving pattern in `MOTION-AT-EDDY-20261119-001` uses this reading. The parity growth law itself does not require a preferred assignment.
 - **Challenge.** Under all allowed value translations, a deterministic update of one state must add a fixed allowed difference. Iterating it returns after two applications. A marked arrival or differences between multiple states give other readings to test.
 - **History.**
+  - 2026-11-19 · `STATE-FEEDS-GROWTH-20261119-001` · The occupied-parent bit uses this transported reference. Jointly changing the allowed assignment and reference preserves growth. Keeping the reference fixed while changing a stored ring can alter the next structure.
   - 2026-11-19 · `MOTION-LAW-20261119-001` uses this reference for both the ring switch and compact motion. Quietness together with covariance under every allowed value shift again selects the identity. No stage-wide reference is inferred from growth.
   - 2026-11-19 · The current-state reading and its alternative were tested in `MOTION-AT-EDDY-20261119-001`. The fixed reference is retained for this class of moving patterns. The translation argument gives its exact scope.
 

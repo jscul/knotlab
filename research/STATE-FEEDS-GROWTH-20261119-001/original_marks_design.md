@@ -1,0 +1,7 @@
+# Longer bond distances among the original marks
+
+This secondary question was fixed after the radius-five measurements at size two. The primary comparisons and their interpretation stand separately. The nearby balls acquired knots, while the counts restricted to original background marks agreed through that cutoff. Can two distinctions that existed before the growth now have a different bond distance?
+
+Use the one-spare ring attached to the 17-knot path. Compare its quiet and loaded preparations at the first completed layer of cold pass, hot veto. Keep the full 120 unordered pairs among the 16 original path marks, all 80 pairs between a path mark and a ring mark and all 10 pairs within the ring. Each physical pair has weight one in its stated category. Names identify corresponding old marks for scoring only. Test the ordinary pass/pass law on both assignments on the same source as a null. Choose no pairs after inspection.
+
+I expect some longer old-mark distances to differ. Either direction and zero are admissible. Try the predecessor’s exact whole-table reader under its existing 128-vertex and 60-second per-block limits. If it cannot finish, certify rooted cut minima through cost ten under the primary per-query limit of 120,000 search states. Larger unresolved minima give lower bounds and are never counted as agreements. Stop at the first-layer comparison. This is an exploratory test of distances of fixed old distinctions.

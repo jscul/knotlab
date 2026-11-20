@@ -199,6 +199,9 @@ evidence: results and their status come from the records each entry links.
 | [A141](#a141--growth-can-be-compared-with-named-holdings-or-after-renaming-them) | Growth can be compared with named holdings or after renaming them | scaffold | Assumed |
 | [A142](#a142--six-named-distinctions-can-serve-as-a-test-of-settings-inside-a-state) | Six named distinctions can serve as a test of settings inside a state | scaffold | Assumed |
 | [A143](#a143--release-rates-are-counted-over-a-declared-number-of-parent-steps) | Release rates are counted over a declared number of parent steps | scaffold | Assumed |
+| [A144](#a144--a-reader-can-measure-a-change-with-chances-given-by-squared-weights) | A reader can measure a change, with chances given by squared weights | scaffold | Assumed |
+| [A145](#a145--read-allowed-states-using-only-presentations-in-which-every-rule-is-necessary) | Read allowed states using only presentations in which every rule is necessary | scaffold | Assumed |
+| [A146](#a146--count-repeating-releases-with-a-chosen-reader-start-supply-and-distribution-of-edits) | Count repeating releases with a chosen reader, start supply and distribution of edits | scaffold | Assumed |
 
 ## Entries
 
@@ -2803,6 +2806,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-20 · Under the uniform disagreement reading, every one of 18,750,714 named lawful irredundant not-all-equal state sets through nine distinctions fixes all subsequent births. In this census the pair counts and rates suffice for growth too. The full relation reconstructs the holders at every step of an all-size class. Four-place rules on eight names can nevertheless share all 28 pair readings and disagree on 16 allowed words in each direction. For parity, eight identical complete allowed words already yield four or three births on five names, and the additional information for growth is unbounded. The unrestricted premise stays under challenge. [Study](../research/READS-HOLDERS-SOURCES-20261120-001B/results.md).
   - 2026-11-20 · Under both ordinary knot laws, the same full states and disagreement counts on three named distinctions give three births or none. Nine named distinctions suffice with distinct physical supports. Parity can require unbounded further information about parent holdings, even after renaming. On the prepared sender edit the receiver's three local disagreement rates stay fixed while all nine rates to the sender change. The states of three-place not-all-equal bases are still recoverable from their disagreement counts at width four and above. A distance supplying the holders remains open. Independent referee pending. [States and holdings](../research/FOUR-READINGS-20261120-001B/results.md).
   - 2026-11-20 · FRESH-DEMAND-20261120-001 · On equal marked parent holdings all bond readings can agree while arbitrarily many fresh counts are possible. Under both laws a witnessed shared-parent step reads the common live block size in the identified class. A fixed bit budget and a bounded numerical bond radius are distinct demands. The logarithmic and linear information bounds fix the parent display for each set of comparisons.
   - 2026-11-20 · BOND-CLOSURE-20261120-001 · On connected lawful parity stages any input pair decides ternary closure at any size. With eight parents all 276 pair distances among the full parent holdings can agree at opposite closing verdicts. One bonded reading on p−1 prescribed loose inputs decides any arity p≥3. A bound on numerical radius alone misses fresh demand. These are tests of a specified physical reading and observer.
@@ -3846,6 +3850,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The ordinary law supplies the reached unsigned holdings. The odd signing, operator values, quantum preparation, question pairs and probabilities enter through this reading. The small built starts, leaf family and the labelled and jump-selected controls are listed in the frozen design.
 - **Challenge.** Compare ordinary scalar values, move or remove the odd sign, exchange the question convention, change answer weights, and compare the two knot laws. An intrinsic assignment of operators and a law for their probabilities remain open.
 - **History.**
+  - 2026-11-20 · With the positive real weighting of ordinary allowed words and the supplied measurement of changes by squared weights, two split parity knots reproduce all 576 probabilities of the earlier game. Holding the ordinary distribution fixed and losing coherence drops its success to 2/3. Opposite relative signs cannot be distinguished by the tested ordinary motion or plain reads. [Study](../research/READS-HOLDERS-SOURCES-20261120-001A/results.md).
   - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001A/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001A/results.md).
 
 ### A141 · Growth can be compared with named holdings or after renaming them
@@ -3857,6 +3862,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The three-distinction and nine-distinction built starts, two named earlier pairs, switches of several holders, matched sender edits and sampled controls each have an explicit comparison in the study. The counts on random starts use the declared labelled-tree and jump-selected weightings.
 - **Challenge.** Forget the labels, forbid duplicate supports, or compare raw disagreement counts with the corresponding rates. A law for reconstructing holders would have to supply the distinctions between these cases.
 - **History.**
+  - 2026-11-20 · Requiring every physical rule to have an erasure witness leaves 15 named six-distinction examples with two irredundant not-all-equal presentations, all renamings of a single pair and all closed. For every one of the 18,750,714 state sets through nine names, every subsequent birth is determined. Under parity, the same restriction leaves the unbounded information cost for growth. [Study](../research/READS-HOLDERS-SOURCES-20261120-001B/results.md).
   - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001B/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001B/results.md).
 
 ### A142 · Six named distinctions can serve as a test of settings inside a state
@@ -3879,4 +3885,38 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The full-holdings and growing-end readers, directed parent test, donor comparison and changed donor control, sample sizes, chosen late hosts, ranks, built positive examples and finite horizon determine the frequencies. A125 and A127 specify the previous family and meeting readings.
 - **Challenge.** Vary the reader, late host, and legal donor comparison and compare both laws. An intrinsic weighting on starts and on late knots would have to supply its own sampling choices.
 - **History.**
+  - 2026-11-20 · With the inherited one-in-four spare and two or three uniform extra meetings, every primary draw had a proof excluding indefinite release, with 512 draws per arm at four to eight knots and 256 per arm at nine to twelve. Pre-funding all initial joins in a separate freeze comparison admitted recurrent sources in 4/96 larger two-meeting and 1/96 larger three-meeting draws under both laws. The full-holdings reader certifies the continuing family and the end-only reader still needs a proof of recovering its mark. [Study](../research/READS-HOLDERS-SOURCES-20261120-001C/results.md).
   - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001D/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001D/results.md).
+
+### A144 · A reader can measure a change, with chances given by squared weights
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Lift the full allowed set to a positive real weighting on assignments. Read a distinction by its parity sign and change it by toggling its value. A reader may ask for the sign of a change or of a signed product of reads and changes. For commuting questions, give the complete answer its share of squared weight in the corresponding joint eigenspace.
+- **Why.** The ordinary probability of a plain read is then the uniform fraction of allowed assignments giving that answer. A second rule is needed to interpret a change as an answer. The study tests how much the allowed states and their ordinary symmetries already fix.
+- **Rests on it.** The fixed questions, choice of signs and transpose, external free settings, local reader placements including both readers in one holding, split knots, unread distinctions, mediator reports, and sampled and explosive starts are listed in the design. The ordinary laws determine the allowed assignments and parent holdings.
+- **Challenge.** Compare the incoherent uniform mixture, exchange fixed and conditioned settings, suppress either mediator report, lift a reversible motion event, and compare signed counts and a different one-question probability rule. Test both knot laws and both overlapping and separate holdings.
+- **History.**
+  - 2026-11-20 · Recorded for the independently frozen study. [Design](../research/READS-HOLDERS-SOURCES-20261120-001A/preregistration.md). [Results](../research/READS-HOLDERS-SOURCES-20261120-001A/results.md).
+
+### A145 · Read allowed states using only presentations in which every rule is necessary
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Remove one rule while keeping every original named distinction, including newly unheld ones. Compare the complete allowed sets and the projections on the removed support. Only keep physical presentations that realize the full local knot law at every holder. Count named and rename-equivalent alternatives separately.
+- **Why.** A redundant physical holder can change growth. Requiring a private erasure witness tests whether state-derived information can recover holders or their births when that source of ambiguity is excluded.
+- **Rests on it.** The complete census uses up to nine names, connected physical starts of arity at least three and at most two holdings of a distinction. The study specifies an independent uniform weighting on complete allowed words for pair rates, the random-start and exponential-growth weightings, the chosen erasure, parent identity and naming conventions.
+- **Challenge.** Compare each whole-state erasure with erasure on the removed holding alone, relax the irredundance condition, compare named with renaming-invariant histories, vary arity, and assess the effect of growth on both irredundance and holder recovery.
+- **History.**
+  - 2026-11-20 · Recorded for the independently frozen study. [Design](../research/READS-HOLDERS-SOURCES-20261120-001B/preregistration.md). [Results](../research/READS-HOLDERS-SOURCES-20261120-001B/results.md).
+
+### A146 · Count repeating releases with a chosen reader, start supply and distribution of edits
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Keep the registered family and return-word tests, grade the two physical readers up to 32 parent steps, and require a proof that a detected release repeats indefinitely. Draw labelled trees with two or three distinct extra meetings. Retain the inherited loose supply and compare a separately frozen supply based on first-step demand.
+- **Why.** The initial meetings, the supply that funds births and the reader that recognizes an enduring family can change which unbuilt starts count. A null detection rate and an impossibility for all starts have different meanings.
+- **Rests on it.** Two size bands, the paired tree and meeting samples, the known seven-knot start, its uniformly weighted physical one-edit alternatives, a secondary lawful-edit denominator, the chosen size cuts, and the named explosive controls and continuation certificate define the reported rates.
+- **Challenge.** Keep funding failures and unresolved candidates, compare both knot laws and both readers, separate physical shared distinctions from distinct pairs, test a source without doubled meetings, and compare the demand-based supply under the same topologies.
+- **History.**
+  - 2026-11-20 · Recorded for the independently frozen study. [Design](../research/READS-HOLDERS-SOURCES-20261120-001C/preregistration.md). [Results](../research/READS-HOLDERS-SOURCES-20261120-001C/results.md).

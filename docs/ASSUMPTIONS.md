@@ -183,6 +183,7 @@ evidence: results and their status come from the records each entry links.
 | [A125](#a125--independent-products-can-be-read-by-their-parents) | Independent products can be read by their parents | scaffold | Assumed |
 | [A126](#a126--growth-never-forbids-what-the-old-knots-allowed) | Growth never forbids what the old knots allowed | scaffold | Assumed |
 | [A127](#a127--a-change-in-later-output-can-be-read-through-a-common-descendant) | A change in later output can be read through a common descendant | scaffold | Assumed |
+| [A128](#a128--the-growth-law-comes-before-the-logic-of-the-knots) | The growth law comes before the logic of the knots | interpretation | Assumed |
 
 ## Entries
 
@@ -3676,3 +3677,20 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-20 · COPIES-AND-MEETINGS-20261120-001 · The matched single-holding intervention changes a pure parent’s actual child price by one. A connected split-return preparation retains both releases and removes the mixed child. A one-shared-distinction comparison also preserves both releases and changes later joint output. [Matched comparisons](../research/COPIES-AND-MEETINGS-20261120-001/indirect.md).
   - 2026-11-20 · Registered in the [physical comparison of released products](../research/COPIES-AND-MEETINGS-20261120-001/preregistration.md) and its [later-meeting check](../research/COPIES-AND-MEETINGS-20261120-001/late_test.md). Both knot laws are tested.
+
+### A128 · The growth law comes before the logic of the knots
+
+**Assumed** · 2026-11-20 · interpretation
+
+- **Statement.** The owner's interpretation, in the owner's words (2026-11-20), of the law that grows knot patterns: it "can be
+  thought of as 'the thing that comes before logic'. Unless the law itself can be derived through logic somehow (which seems like
+  it'd be difficult to test)." Read in the program's terms, two branches: the growth law is prior to the logic of the knots,
+  given before any knot's rule acts; or it follows from that logic, so that how a knot joins is decided by what it is made of and
+  there is no separate law. The second branch is the third strength of the several-laws lead (backlog B232).
+- **Why.** Recorded at the owner's request with goal G18 (comparing growth laws) and lead B232.
+- **Rests on it.** No result. It frames G18 and B232.
+- **Challenge.** The second branch would be shown by a growth law derived from the knots' own rules, with every rival law
+  collapsing into it or turning out to be the same law in disguise (G18); the first branch is supported, not proved, if rival
+  laws stay distinct on the same knots. As the owner notes, a derivation may be hard to test.
+- **History.**
+  - 2026-11-20 · Recorded, in the owner's words, as the owner's interpretation; framed by G18 and B232.

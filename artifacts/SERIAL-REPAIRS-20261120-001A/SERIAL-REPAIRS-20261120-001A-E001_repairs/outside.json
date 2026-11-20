@@ -1,0 +1,945 @@
+{
+  "reader": "current physical supports only; global source recovery and shallowest open depth",
+  "order_scope": "all subsets within each measured complete roster on a canonical slot allocation; a full layer boundary can be counted again as the next layer's empty subset",
+  "checks": "independent physical reconstruction plus adjacent cohort.current_decision and cohort.prioritize on renamed input supports; all use the archived End/step arithmetic",
+  "primary_gate": {
+    "quiet": {
+      "parity": {
+        "common_UV_fresh": 2,
+        "layer_births": [
+          7,
+          10,
+          9
+        ],
+        "partial_snapshots_checked": [
+          {
+            "unrestricted": 128,
+            "joins_first": 65
+          },
+          {
+            "unrestricted": 1024,
+            "joins_first": 259
+          },
+          {
+            "unrestricted": 511,
+            "joins_first": 130
+          }
+        ]
+      },
+      "nae": {
+        "common_UV_fresh": 2,
+        "layer_births": [
+          7,
+          10,
+          9
+        ],
+        "partial_snapshots_checked": [
+          {
+            "unrestricted": 128,
+            "joins_first": 65
+          },
+          {
+            "unrestricted": 1024,
+            "joins_first": 259
+          },
+          {
+            "unrestricted": 511,
+            "joins_first": 130
+          }
+        ]
+      }
+    },
+    "shifted": {
+      "parity": {
+        "common_UV_fresh": 1,
+        "layer_births": [
+          5,
+          4,
+          5
+        ],
+        "partial_snapshots_checked": [
+          {
+            "unrestricted": 32,
+            "joins_first": 11
+          },
+          {
+            "unrestricted": 16,
+            "joins_first": 7
+          },
+          {
+            "unrestricted": 31,
+            "joins_first": 10
+          }
+        ]
+      },
+      "nae": {
+        "common_UV_fresh": 1,
+        "layer_births": [
+          5,
+          4,
+          5
+        ],
+        "partial_snapshots_checked": [
+          {
+            "unrestricted": 32,
+            "joins_first": 11
+          },
+          {
+            "unrestricted": 16,
+            "joins_first": 7
+          },
+          {
+            "unrestricted": 31,
+            "joins_first": 10
+          }
+        ]
+      }
+    }
+  },
+  "outside_identified_class": {
+    "1": {
+      "literal_source": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          8,
+          9,
+          10
+        ],
+        [
+          2,
+          4,
+          11,
+          12,
+          13
+        ],
+        [
+          5,
+          14,
+          15
+        ]
+      ],
+      "source_names_evaluator_only": [
+        "S",
+        "T",
+        "a",
+        "b",
+        "c",
+        "e"
+      ],
+      "lawfulness": {
+        "source_knots": 6,
+        "distinctions": 16,
+        "parity_star_projections": 6,
+        "legal_nae_star_rows_extended": 84,
+        "source_pair_multiplicities": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "laws": {
+        "parity": {
+          "age_rosters": [
+            {
+              "age": 1,
+              "births": [
+                {
+                  "ancestors": "ab",
+                  "parent_ancestors": [
+                    "a",
+                    "b"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ac",
+                  "parent_ancestors": [
+                    "a",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "bc",
+                  "parent_ancestors": [
+                    "b",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "be",
+                  "parent_ancestors": [
+                    "b",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ce",
+                  "parent_ancestors": [
+                    "c",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 2,
+              "births": [
+                {
+                  "ancestors": "abc",
+                  "parent_ancestors": [
+                    "ab",
+                    "ac",
+                    "bc"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "abe",
+                  "parent_ancestors": [
+                    "ab",
+                    "be"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "ace",
+                  "parent_ancestors": [
+                    "ac",
+                    "ce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "bce",
+                  "parent_ancestors": [
+                    "bc",
+                    "be",
+                    "ce"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 3,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "abe",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "ace",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                }
+              ]
+            },
+            {
+              "age": 4,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abce",
+                    "abce"
+                  ],
+                  "demand": 0,
+                  "fresh": 0
+                }
+              ]
+            }
+          ],
+          "partial_snapshots_checked": null,
+          "bounded_source_pair_formula_control": {
+            "pair": [
+              "b",
+              "c"
+            ],
+            "original_open_counts": [
+              3,
+              3
+            ],
+            "witness_blocks": {
+              "S": "abc",
+              "T": "bce"
+            },
+            "identified_formula_domain": "rejected: two witness knots",
+            "unguarded_fresh_prediction_using_either_witness": {
+              "S": 3,
+              "T": 3
+            },
+            "ordinary_fresh": 2
+          },
+          "reader_status_at_source": "undecodable",
+          "reader_status_at_final_benchmark": "undecodable",
+          "main_reader_status_at_source": "source unrecognized",
+          "main_reader_status_at_final_benchmark": "source unrecognized"
+        },
+        "nae": {
+          "age_rosters": [
+            {
+              "age": 1,
+              "births": [
+                {
+                  "ancestors": "ab",
+                  "parent_ancestors": [
+                    "a",
+                    "b"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ac",
+                  "parent_ancestors": [
+                    "a",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "bc",
+                  "parent_ancestors": [
+                    "b",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "be",
+                  "parent_ancestors": [
+                    "b",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ce",
+                  "parent_ancestors": [
+                    "c",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 2,
+              "births": [
+                {
+                  "ancestors": "abc",
+                  "parent_ancestors": [
+                    "ab",
+                    "ac",
+                    "bc"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "abe",
+                  "parent_ancestors": [
+                    "ab",
+                    "be"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "ace",
+                  "parent_ancestors": [
+                    "ac",
+                    "ce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "bce",
+                  "parent_ancestors": [
+                    "bc",
+                    "be",
+                    "ce"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 3,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "abe",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "ace",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                }
+              ]
+            },
+            {
+              "age": 4,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abce",
+                    "abce"
+                  ],
+                  "demand": 0,
+                  "fresh": 1
+                }
+              ]
+            },
+            {
+              "age": 5,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abce"
+                  ],
+                  "demand": 0,
+                  "fresh": 2
+                }
+              ]
+            }
+          ],
+          "partial_snapshots_checked": null,
+          "bounded_source_pair_formula_control": {
+            "pair": [
+              "b",
+              "c"
+            ],
+            "original_open_counts": [
+              3,
+              3
+            ],
+            "witness_blocks": {
+              "S": "abc",
+              "T": "bce"
+            },
+            "identified_formula_domain": "rejected: two witness knots",
+            "unguarded_fresh_prediction_using_either_witness": {
+              "S": 3,
+              "T": 3
+            },
+            "ordinary_fresh": 2
+          },
+          "reader_status_at_source": "undecodable",
+          "reader_status_at_final_benchmark": "undecodable",
+          "main_reader_status_at_source": "source unrecognized",
+          "main_reader_status_at_final_benchmark": "source unrecognized"
+        }
+      }
+    },
+    "2": {
+      "literal_source": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        [
+          0,
+          1,
+          12,
+          13
+        ],
+        [
+          2,
+          3,
+          6,
+          7,
+          14,
+          15,
+          16
+        ],
+        [
+          4,
+          5,
+          8,
+          9,
+          17,
+          18,
+          19
+        ],
+        [
+          10,
+          11,
+          20,
+          21
+        ]
+      ],
+      "source_names_evaluator_only": [
+        "S",
+        "T",
+        "a",
+        "b",
+        "c",
+        "e"
+      ],
+      "lawfulness": {
+        "source_knots": 6,
+        "distinctions": 22,
+        "parity_star_projections": 6,
+        "legal_nae_star_rows_extended": 404,
+        "source_pair_multiplicities": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "laws": {
+        "parity": {
+          "age_rosters": [
+            {
+              "age": 1,
+              "births": [
+                {
+                  "ancestors": "ab",
+                  "parent_ancestors": [
+                    "a",
+                    "b"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ac",
+                  "parent_ancestors": [
+                    "a",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "bc",
+                  "parent_ancestors": [
+                    "b",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "be",
+                  "parent_ancestors": [
+                    "b",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ce",
+                  "parent_ancestors": [
+                    "c",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 2,
+              "births": [
+                {
+                  "ancestors": "abc",
+                  "parent_ancestors": [
+                    "ab",
+                    "ac",
+                    "bc"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "abe",
+                  "parent_ancestors": [
+                    "ab",
+                    "be"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "ace",
+                  "parent_ancestors": [
+                    "ac",
+                    "ce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "bce",
+                  "parent_ancestors": [
+                    "bc",
+                    "be",
+                    "ce"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 3,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "abe",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "ace",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                }
+              ]
+            },
+            {
+              "age": 4,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abce",
+                    "abce"
+                  ],
+                  "demand": 0,
+                  "fresh": 0
+                }
+              ]
+            }
+          ],
+          "partial_snapshots_checked": [
+            {
+              "unrestricted": 32,
+              "joins_first": 32
+            },
+            {
+              "unrestricted": 16,
+              "joins_first": 16
+            },
+            {
+              "unrestricted": 4,
+              "joins_first": 4
+            },
+            {
+              "unrestricted": 2,
+              "joins_first": 2
+            }
+          ],
+          "bounded_source_pair_formula_control": {
+            "pair": [
+              "b",
+              "c"
+            ],
+            "original_open_counts": [
+              3,
+              3
+            ],
+            "witness_blocks": {
+              "S": "abc",
+              "T": "bce"
+            },
+            "identified_formula_domain": "rejected: two witness knots",
+            "unguarded_fresh_prediction_using_either_witness": {
+              "S": 3,
+              "T": 3
+            },
+            "ordinary_fresh": 2
+          },
+          "reader_status_at_source": "extend",
+          "reader_status_at_final_benchmark": "closed",
+          "main_reader_status_at_source": "ready",
+          "main_reader_status_at_final_benchmark": "closed"
+        },
+        "nae": {
+          "age_rosters": [
+            {
+              "age": 1,
+              "births": [
+                {
+                  "ancestors": "ab",
+                  "parent_ancestors": [
+                    "a",
+                    "b"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ac",
+                  "parent_ancestors": [
+                    "a",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "bc",
+                  "parent_ancestors": [
+                    "b",
+                    "c"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "be",
+                  "parent_ancestors": [
+                    "b",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "ce",
+                  "parent_ancestors": [
+                    "c",
+                    "e"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 2,
+              "births": [
+                {
+                  "ancestors": "abc",
+                  "parent_ancestors": [
+                    "ab",
+                    "ac",
+                    "bc"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                },
+                {
+                  "ancestors": "abe",
+                  "parent_ancestors": [
+                    "ab",
+                    "be"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "ace",
+                  "parent_ancestors": [
+                    "ac",
+                    "ce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "bce",
+                  "parent_ancestors": [
+                    "bc",
+                    "be",
+                    "ce"
+                  ],
+                  "demand": 2,
+                  "fresh": 2
+                }
+              ]
+            },
+            {
+              "age": 3,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "abe",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                },
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abc",
+                    "ace",
+                    "bce"
+                  ],
+                  "demand": 1,
+                  "fresh": 1
+                }
+              ]
+            },
+            {
+              "age": 4,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abce",
+                    "abce"
+                  ],
+                  "demand": 0,
+                  "fresh": 1
+                }
+              ]
+            },
+            {
+              "age": 5,
+              "births": [
+                {
+                  "ancestors": "abce",
+                  "parent_ancestors": [
+                    "abce"
+                  ],
+                  "demand": 0,
+                  "fresh": 2
+                }
+              ]
+            }
+          ],
+          "partial_snapshots_checked": [
+            {
+              "unrestricted": 32,
+              "joins_first": 32
+            },
+            {
+              "unrestricted": 16,
+              "joins_first": 16
+            },
+            {
+              "unrestricted": 4,
+              "joins_first": 4
+            },
+            {
+              "unrestricted": 2,
+              "joins_first": 2
+            },
+            {
+              "unrestricted": 1,
+              "joins_first": 1
+            }
+          ],
+          "bounded_source_pair_formula_control": {
+            "pair": [
+              "b",
+              "c"
+            ],
+            "original_open_counts": [
+              3,
+              3
+            ],
+            "witness_blocks": {
+              "S": "abc",
+              "T": "bce"
+            },
+            "identified_formula_domain": "rejected: two witness knots",
+            "unguarded_fresh_prediction_using_either_witness": {
+              "S": 3,
+              "T": 3
+            },
+            "ordinary_fresh": 2
+          },
+          "reader_status_at_source": "extend",
+          "reader_status_at_final_benchmark": "extend",
+          "main_reader_status_at_source": "ready",
+          "main_reader_status_at_final_benchmark": "ready"
+        }
+      }
+    }
+  }
+}

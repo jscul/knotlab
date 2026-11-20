@@ -1,0 +1,5 @@
+# Serial births from present holdings
+
+All seven serial repair subsets fail on the common first decision. Both laws, both priorities, both seven-knot sources, two seeded source weightings and the six-knot overlapping common-holder example were tested. All-size results use the proofs. The same whole-stage implementation passed the doubled six-knot case through the two distinct three-parent births and their following pair. On each named source weighting the retained draws, stalls, decisions and prefix censoring are recorded separately. Independent program referee pending.
+
+[archived repairs](../../../research/SERIAL-REPAIRS-20261120-001/archived_repairs.md) · [local rule](../../../research/SERIAL-REPAIRS-20261120-001/local_rule.md) · [present proof](../../../research/SERIAL-REPAIRS-20261120-001/present_proof.md) · [whole present](../../../research/SERIAL-REPAIRS-20261120-001/whole_present.md) · [outside class](../../../research/SERIAL-REPAIRS-20261120-001/outside_class.md) · [samples](../../../research/SERIAL-REPAIRS-20261120-001/samples.md) · [scaffolds](../../../research/SERIAL-REPAIRS-20261120-001/scaffolds.md)

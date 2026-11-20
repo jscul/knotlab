@@ -1,0 +1,34 @@
+{
+  "schema_version": 3,
+  "id": "SERIAL-REPAIRS-20261120-001-D002",
+  "scope_id": "SERIAL-REPAIRS-20261120-001",
+  "title": "Weak fairness after strict global joins-first defeats every bounded physical reader",
+  "subject": "One local birth at a time with immutable supports, no auxiliary actions, and either of the two sources with two unending pieces.",
+  "conclusion": "Beyond any fixed physical radius, one piece can freeze while the other keeps making multi-parent births that mask every waiting one-parent move. The resulting order is weakly fair on the prioritized list.",
+  "authority_class": "proof",
+  "significance": [
+    "exact_obstruction"
+  ],
+  "status": "active",
+  "superseded_by": null,
+  "curated_at": "2026-11-20",
+  "epic_closure": {
+    "ticket_id": "SERIAL-REPAIRS-20261120-001Z",
+    "artifact_id": "SERIAL-REPAIRS-20261120-001Z-P001",
+    "manifest_path": "proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/manifest.json",
+    "manifest_sha256": "06e6e7fd39466f7c243d4d24f7096a91c533d71093ac8b7cad8043de82f75438",
+    "report_path": "proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/proof.md",
+    "dependency_graph_sha256": "d8fb11abdeb38fb28444827eb8dd9d79cd062d9afa7065c07181f20045d930b5"
+  },
+  "evidence": [
+    {
+      "artifact_id": "SERIAL-REPAIRS-20261120-001B-P001",
+      "kind": "proof",
+      "ticket_id": "SERIAL-REPAIRS-20261120-001B",
+      "authority_path": "proofs/SERIAL-REPAIRS-20261120-001B/SERIAL-REPAIRS-20261120-001B-P001_present/manifest.json",
+      "authority_sha256": "db7a503b4b9583bf0a42cb3e09d7139e78ac90a7cf44aa9b3f722e7f36e31f64",
+      "explanation_path": "proofs/SERIAL-REPAIRS-20261120-001B/SERIAL-REPAIRS-20261120-001B-P001_present/proof.md",
+      "explanation_sha256": "6668f2029b1ae4394611fbb8b57fd75b93ca91e7acae0f9fb7952b64a0a4e129"
+    }
+  ]
+}

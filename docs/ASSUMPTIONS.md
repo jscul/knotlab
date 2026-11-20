@@ -3471,6 +3471,7 @@ evidence: results and their status come from the records each entry links.
   ([decision note](../research/EDDY-WORLD-20261119-001/decision.md), referee pending) found patterns that keep their identity and
   stay attached, and travelling state patterns that the growth rule never chooses.
 - **History.**
+  - 2026-11-20 · The owner’s possibility question was tested on ordinary growth. Independently set common-weight readings obey CHSH ≤ 2; a built parity start gives a conditional score of 4 with fair outcomes and a perfectly readable other setting in a complete local pair. The interpretation remains Assumed. [Study](../research/ENTANGLEMENT-READ-20261120-001/decision.md).
   - 2026-11-19 · Recorded, in the owner's words, as the owner's interpretation; framed by Intuitions lesson 8.5.
 
 ### A113 · Fresh distinctions inherit the fewest state changes allowed by each new parity knot
@@ -3563,6 +3564,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** This is one observer protocol in the Bell study. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
 - **Challenge.** Compare the pair-pattern reading and actual selector conditioning with independent re-reading on the same states. Ordinary growth presently supplies neither a choice of observable nor a measurement operation.
 - **History.**
+  - 2026-11-20 · On the built parity start, varying the indices gives CHSH 2; sorting by the observed settings gives 4 with each selected bit fair. The full Alice pair identifies the other selector.
   - 2026-11-20 · Recorded for the comparison of separated readings.
 
 ### A120 · A setting can name a two-bit pattern to test
@@ -3574,6 +3576,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The pair-pattern correlations depend on this choice of question. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
 - **Challenge.** Compare with reading one distinction. A future native reading operation could specify its own test; neither question follows from ordinary growth.
 - **History.**
+  - 2026-11-20 · The two-mark pattern can exhibit correlations hidden from each single-mark reading. In the built parity example the relabelled embodied score is 4, with a 1/2 change in Alice’s reported marginal under uniform weights.
   - 2026-11-20 · Recorded for the comparison of separated readings.
 
 ### A121 · Separation for a reading counts steps between all its marked distinctions
@@ -3585,6 +3588,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The separation and the operational interpretation of the reported marginal tests. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
 - **Challenge.** Vary the step threshold and visible register; markings and a stable ordering for allocating and naming indistinguishable places are scaffolds. Growth supplies the meeting pattern but has no designated observers or marking rule.
 - **History.**
+  - 2026-11-20 · The cohort includes 366 placements two steps apart, 316 at least three finite steps apart, and 12 without a chain. In the built parity case the closest marks are three steps apart, yet the whole Alice pair reveals the other selector.
   - 2026-11-20 · Recorded for the comparison of separated readings.
 
 ### A122 · A Bell reading uses a declared weighting of the states
@@ -3596,6 +3600,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The numerical four-context tables and whether conditional marginals hide a setting. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
 - **Challenge.** Repeat with all three weightings. A future native rule would have to derive weights and their behavior under extension, as well as how settings are supplied.
 - **History.**
+  - 2026-11-20 · Under not-all-equal the uniform grown weighting changes the distribution on retained old marks in 221 of 233 grown placements. The equally lifted weighting preserves it in all 233. All common weights obey the external-settings bound.
   - 2026-11-20 · Recorded for the comparison of separated readings.
 
 ### A123 · Built and labelled sampled starts supply a Bell comparison
@@ -3607,6 +3612,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Only the bounded samples and measured maxima use these source, marking and label choices. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
 - **Challenge.** Swap the built and sampled families, the two knot laws, old and newborn readings and the separation bands. A sampling convention stays with the observer until a weighting is supplied by the model.
 - **History.**
+  - 2026-11-20 · No ordinary placement exceeded 2 on the 33-source panel, including the three archived jumping starts. A separate deliberately built ten-knot start produced a conditional parity excess. These have different source denominators.
   - 2026-11-20 · Recorded for the comparison of separated readings.
 
 ### A124 · One context can be given a changed outcome rule
@@ -3618,6 +3624,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Only the explicit added-rule control and its one-context minimality use this scaffold. [Study definitions](../research/ENTANGLEMENT-READ-20261120-001/preregistration.md).
 - **Challenge.** Remove the switch, vary the mask and check both marginals. A future model would need to derive the dependence and preserve marginals itself; the ordinary join law has no such pair-of-settings input.
 - **History.**
+  - 2026-11-20 · The partial switch yields CHSH 2+2t under a fair shared bit; bias can expose the dependence in one observer’s reported outcome. A different demonstrator weights the actual settings and their joint outcome five to one on two unlinked parity knots. It reproduces a quantum-compatible table at 8/3; uniform weighting there gives zero. Both context-sensitive changes are supplied. [Study](../research/ENTANGLEMENT-READ-20261120-001/decision.md).
   - 2026-11-20 · Recorded for the comparison of separated readings.
 
 ### A125 · Independent products can be read by their parents

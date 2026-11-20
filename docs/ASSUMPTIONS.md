@@ -181,9 +181,13 @@ evidence: results and their status come from the records each entry links.
 | [A123](#a123--built-and-labelled-sampled-starts-supply-a-bell-comparison) | Built and labelled sampled starts supply a Bell comparison | scaffold | Assumed |
 | [A124](#a124--one-context-can-be-given-a-changed-outcome-rule) | One context can be given a changed outcome rule | scaffold | Assumed |
 | [A125](#a125--independent-products-can-be-read-by-their-parents) | Independent products can be read by their parents | scaffold | Assumed |
-| [A126](#a126--growth-never-forbids-what-the-old-knots-allowed) | Growth never forbids what the old knots allowed | scaffold | Assumed |
+| [A126](#a126--growth-never-forbids-what-the-old-knots-allowed) | Growth never forbids what the old knots allowed | scaffold | Under challenge |
 | [A127](#a127--a-change-in-later-output-can-be-read-through-a-common-descendant) | A change in later output can be read through a common descendant | scaffold | Assumed |
 | [A128](#a128--the-growth-law-comes-before-the-logic-of-the-knots) | The growth law comes before the logic of the knots | interpretation | Assumed |
+| [A129](#a129--a-join-may-receive-one-fewer-fresh-distinction) | A join may receive one fewer fresh distinction | scaffold | Assumed |
+| [A130](#a130--a-join-may-receive-only-the-fresh-distinctions-required-by-its-arity) | A join may receive only the fresh distinctions required by its arity | scaffold | Assumed |
+| [A131](#a131--starting-weights-can-be-restricted-once-to-states-that-still-have-extensions) | Starting weights can be restricted once to states that still have extensions | scaffold | Assumed |
+| [A132](#a132--one-freely-supplied-setting-pair-can-change-how-an-output-pair-is-formed) | One freely supplied setting pair can change how an output pair is formed | scaffold | Assumed |
 
 ## Entries
 
@@ -3645,7 +3649,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A126 · Growth never forbids what the old knots allowed
 
-**Assumed** · 2026-11-20 · scaffold
+**Under challenge** · 2026-11-20 · scaffold
 
 - **Statement.** The cheapest growth (A104, `FRESH-COUNT-20261118-001`) is written so that every state the old knots allow can
   still be completed into an allowed state after a round: each new knot either brings fresh distinctions that can satisfy it or is
@@ -3653,17 +3657,14 @@ evidence: results and their status come from the records each entry links.
   found. Its named rival is **joining can forbid**: a law under which joining knots may rule out some old combinations.
 - **Why.** Taken by default with the joining rule of the cubic study and the cheapest counts; it keeps every round an extension of
   the base, never a rewrite of it.
-- **Rests on it.** Every result on the cheapest growth. In particular `ENTANGLEMENT-READ-20261120-001`
-  ([decision note](../research/ENTANGLEMENT-READ-20261120-001/decision.md); refereed): because every old state extends across an
-  ordinary birth, readings on one stage admit a common assignment, CHSH stays at most 2 for any one common weighting, and the
-  only excess found came from settings that are part of the state, not from anything like entanglement. Consequence, read by the
-  coordinator: under this law the logic inside the knots hardly steers growth; which knots share distinctions does.
+- **Rests on it.** The ordinary proof that every starting assignment has a continuation, the ordinary funding counts and the identified births use this postulate. For the free-setting Bell bound, the [refereed reading proof](../proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md) needs only a common distribution on the four prospective answers. A setting-blind join may delete old states while preserving that common explanation.
 - **Challenge.** Goal G18 sets rival laws against this one on the same questions. The first test (backlog B229): the simplest law
   under which joining can forbid, asked whether its structures survive or end with nothing allowed, then the entanglement test on
   what survives. The other rivals: merging what the allowed states prove tied, state feeding growth (B210), and a different knot
   rule under the same growth (parity against not-all-equal). As a scaffold of the current studies, the model is expected to
   settle which law it uses, or to show which results hold under every reasonable law (G18).
 - **History.**
+  - 2026-11-20 · Under challenge as a choice of growth law. Two explicit rivals delete old states while retaining a common explanation for all free readings. Ordinary extension remains proved within the ordinary law. [Competing postulates](../research/FORBIDDING-JOIN-20261120-001/preregistration.md).
   - 2026-11-20 · Recorded at the owner's request with goal G18, naming "joining can forbid" as its rival.
 
 ### A127 · A change in later output can be read through a common descendant
@@ -3694,3 +3695,47 @@ evidence: results and their status come from the records each entry links.
   laws stay distinct on the same knots. As the owner notes, a derivation may be hard to test.
 - **History.**
   - 2026-11-20 · Recorded, in the owner's words, as the owner's interpretation; framed by G18 and B232.
+
+### A129 · A join may receive one fewer fresh distinction
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** At every funded birth, remove one from the ordinary fresh count when doing so respects its three-place floor. Preserve an ordinary implied zero. Impose the actual relation even when an old state loses its last extension.
+- **Why.** A one-unit shortage is the first uniform change of the fresh allowance with the ordinary proposal group, input map and law at each birth.
+- **Rests on it.** The supply, stalls, products and retained states measured under this rival law. [Study definition](../research/FORBIDDING-JOIN-20261120-001/preregistration.md).
+- **Challenge.** Compare the arity-floor and ordinary laws on the identical starting structures. A future law would need to explain the allowance in its own terms.
+- **History.**
+  - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.
+
+### A130 · A join may receive only the fresh distinctions required by its arity
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** At every funded birth supply only enough fresh distinctions to reach three places, capped by the ordinary count. Preserve the ordinary implied zero. Impose the full relation on the actual inputs.
+- **Why.** This is the other end of the same finite choice at each birth. It can impose the relation directly on three or more old distinctions.
+- **Rests on it.** The supply, stalls, products and retained states measured under the arity-floor law. [Study definition](../research/FORBIDDING-JOIN-20261120-001/preregistration.md).
+- **Challenge.** Compare the one-fewer and ordinary grants on the same starts, including births where the three grants differ. The ordinary future birth map needs to be tested again.
+- **History.**
+  - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.
+
+### A131 · Starting weights can be restricted once to states that still have extensions
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** If some starting assignment has no extension, report the inherited equal-start/equal-extension weighting as undefined. In a separate comparison give equal weight to the starting states with an extension and split each of their weights equally over its completions, using the identical set for all free settings.
+- **Why.** This makes the loss of starting mass visible while permitting a second defined reading of the surviving relation.
+- **Rests on it.** Only the separately named conditional-weight comparisons. The common-state Bell bound holds for every defined common nonnegative weighting. [Study definition](../research/FORBIDDING-JOIN-20261120-001/preregistration.md).
+- **Challenge.** Compare complete-state weights, the one-sided tilt, and the literal inherited rule. Report the original denominator. A filtering rule that reads the settings is a different experiment.
+- **History.**
+  - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.
+
+### A132 · One freely supplied setting pair can change how an output pair is formed
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** As a control, vary both settings independently of three fair preparation bits. Supply a different output rule only at 00. An alternative retains half the preparations at 00 and reports its retention fraction.
+- **Why.** Counting changed contexts makes the least additional resource test precise and separates a total response from discarding trials.
+- **Rests on it.** The added 5/2 table and its equal full-pair marginals. The earlier A124 supplies another one-context comparison. [Study definition](../research/FORBIDDING-JOIN-20261120-001/setting_dependent_control.md).
+- **Challenge.** Suppress the change, try the pair-pattern reading, or bias the shared bit. A native explanation would have to produce the dependence on both settings as well as the stated weighting.
+- **History.**
+  - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.

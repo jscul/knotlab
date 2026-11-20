@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**389 current results** and 5 superseded ones, from 565 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**394 current results** and 5 superseded ones, from 565 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 104 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 109 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
@@ -864,6 +864,21 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-20 · Bounded numerical bond radius cannot decide the fresh count** (`BOND-CLOSURE-20261120-001-D003`).
   For each fixed radius two seven-knot starts have identical bounded neighborhoods and agree on every subset reading of the complete holdings of the proposed parents. The same birth receives two or one fresh distinctions and both histories continue.
   [proof P001](proofs/BOND-CLOSURE-20261120-001B/BOND-CLOSURE-20261120-001B-P001_closure/proof.md), [epic closure](proofs/BOND-CLOSURE-20261120-001Z/BOND-CLOSURE-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · A finite identified start can emit only finitely many bounded-width launches** (`COPIES-AND-MEETINGS-20261120-001-D001`).
+  Even when products widen afterwards, a late bounded launch forces one of a finite number of physical periodic phase families or anchored chains. Finite early cuts account for all exceptions.
+  [proof P001](proofs/COPIES-AND-MEETINGS-20261120-001B/COPIES-AND-MEETINGS-20261120-001B-P001_copies/proof.md), [epic closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · All ordinary singleton launches and uniformly small packets have a finite packing bound** (`COPIES-AND-MEETINGS-20261120-001-D002`).
+  One-member launches and packets of width at most three throughout consume one of finitely many continuing one-parent lines, allowing for a component that first reaches a singleton.
+  [proof P001](proofs/COPIES-AND-MEETINGS-20261120-001B/COPIES-AND-MEETINGS-20261120-001B-P001_copies/proof.md), [epic closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Witnessed separation counts the steps to a common descendant** (`COPIES-AND-MEETINGS-20261120-001-D003`).
+  Inclusive distance drops by exactly one until overlap. The distance from a pure family to an inclusive one can never fall.
+  [proof P001](proofs/COPIES-AND-MEETINGS-20261120-001B/COPIES-AND-MEETINGS-20261120-001B-P001_copies/proof.md), [epic closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · A recurring source can emit two products whose first common child is arbitrarily delayed** (`COPIES-AND-MEETINGS-20261120-001-D004`).
+  With equal release size K the first mixed output is at size 2K minus ten. The first pair releases at 159 and meets only in its descendants at 308.
+  [proof P001](proofs/COPIES-AND-MEETINGS-20261120-001B/COPIES-AND-MEETINGS-20261120-001B-P001_copies/proof.md), [epic closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · A separated donor can change a direct child of a lasting product** (`COPIES-AND-MEETINGS-20261120-001-D005`).
+  An older donor can supply a later child of the pure younger receiver through an intermediary although the two pure packets never meet. One holding changes its price by one while preserving child count and pure parentage.
+  [proof P001](proofs/COPIES-AND-MEETINGS-20261120-001B/COPIES-AND-MEETINGS-20261120-001B-P001_copies/proof.md), [epic closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md)
 - **2026-11-20 · When parity registers hide the other setting, they admit a local explanation** (`ENTANGLEMENT-READ-20261120-001-D001`).
   If each entire local register has the same conditional distribution at both values of the other setting, one shared uniform variable and one local response per observer reproduce all four joint laws. The explanation covers arbitrary local readings, although hiding the setting from a selected bit alone permits CHSH 4 on a lawful parity start (independent referee pending).
   [proof P001](proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md), [epic closure](proofs/ENTANGLEMENT-READ-20261120-001Z/ENTANGLEMENT-READ-20261120-001Z-P001_synthesis/proof.md)
@@ -1867,7 +1882,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | A reading past the wall (`WALL-READ-20261119-001`) | [closure](proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/WALL-READ-20261119-001/) |
 | 2026-11-19 | Is two dimensions typical of the growth or of the weighting? (`WEIGHTINGS-20261119-001`) | [closure](proofs/WEIGHTINGS-20261119-001Z/WEIGHTINGS-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/WEIGHTINGS-20261119-001/) |
 | 2026-11-20 | Can a join read closure from its own distinctions? (`BOND-CLOSURE-20261120-001`) | [closure](proofs/BOND-CLOSURE-20261120-001Z/BOND-CLOSURE-20261120-001Z-P001_synthesis/proof.md) | [folder](research/BOND-CLOSURE-20261120-001/) |
-| 2026-11-20 | Repeated finite products and later indirect meetings (`COPIES-AND-MEETINGS-20261120-001`) | — | [folder](research/COPIES-AND-MEETINGS-20261120-001/) |
+| 2026-11-20 | Repeated finite products and later indirect meetings (`COPIES-AND-MEETINGS-20261120-001`) | [closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/COPIES-AND-MEETINGS-20261120-001/) |
 | 2026-11-20 | Can separated readings of growing knots give the signature of entanglement? (`ENTANGLEMENT-READ-20261120-001`) | [closure](proofs/ENTANGLEMENT-READ-20261120-001Z/ENTANGLEMENT-READ-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ENTANGLEMENT-READ-20261120-001/) |
 | 2026-11-20 | Can a join that forbids old combinations give a Bell violation with free settings? (`FORBIDDING-JOIN-20261120-001`) | — | [folder](research/FORBIDDING-JOIN-20261120-001/) |
 | 2026-11-20 | What outside the parents fixes a birth’s fresh distinctions? (`FRESH-DEMAND-20261120-001`) | [closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FRESH-DEMAND-20261120-001/) |

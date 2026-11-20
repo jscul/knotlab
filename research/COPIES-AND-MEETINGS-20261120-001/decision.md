@@ -1,0 +1,40 @@
+# Repeated copies of one finite product and later indirect meetings
+
+**Decision.** Both primary questions reached the owner's stated stop. Independent referee pending. B224 asks whether an ordinary recurring source can keep emitting the same finite product. B228 asks whether separated products can affect future outputs through descendants. The answers below distinguish a product's pure members, their immediate children and the inclusive descendants of its release. Counts are by size and actual parental steps. No update clock is supplied.
+
+The bounded-copy obstruction is independent of the chosen recognition rule, even if the observer knows the history. It is stronger than a bound on simultaneous copies of one fixed physical shape. Budgeting only the launch width still gives a finite number on every finite identified start. The exact capacity of the seven-knot source, for width four throughout, is two independent continuing parent diagrams. This does not assert that one source releases both with the same physical holdings. The finite enumeration contains a target needing six members at launch but fourteen in the middle. [Bound and unrestricted small widths](bounded.md) · [Finite enumeration](bounded_check.md)
+
+The positive encounter uses actual inputs. At equal release sizes, lifted parent paths from collateral descendants of both reach a shared child after the initial witnessed distance, which can be arbitrarily large. At different release sizes, an older product can already have an adjacent descendant when the younger one appears, enabling later outputs that take a distinction directly from a younger member. A single changed holding changes the supply at the donor precursor before release. The existence of that earlier difference is part of the causal comparison. The alternative split-return preparation retains *both* parties and excludes such a child. A one-distinction comparison of two witnessed paths also retains both and changes partner-specific output while preserving each inclusive count. [Meetings from equal releases](generator_delay.md) · [Staggered releases](indirect.md) · [Physical edits](start_edits.md)
+
+**Evidence.** The design was frozen in two stages, covering [the main definitions](preregistration.md) and [the additional frozen test](late_test.md). Five checkers reproduce their complete receipts. Built physical starts, two predeclared labelled-start weightings and one jump-selected archive are separate evidence. All common-descendant observations at the larger seven-knot sizes use the proved map. The effect applies under both laws and every parent-respecting delivery of these fixed structures. Finite samples outside the identified class use complete funded cuts. [Physical path controls](mediator.md) · [Proof](../../proofs/COPIES-AND-MEETINGS-20261120-001B/COPIES-AND-MEETINGS-20261120-001B-P001_copies/proof.md) · [Registered physical outputs](../../experiments/COPIES-AND-MEETINGS-20261120-001A/COPIES-AND-MEETINGS-20261120-001A-E001_copies/result.md)
+
+## Final report as sent
+
+20 November 2026, 01:14 PM PST.
+
+**Repeated copies.** A finite start cannot keep releasing independent copies of one fixed finite product in the class where every birth can be reconstructed from the start. This holds even if each copy can grow arbitrarily large after release. The reason is that each lasting copy must keep its own repeating sequence of parents or its own continuing chain. A finite start has only finitely many of either kind available at a fixed launch width. Beyond this class, the proof covers every one-knot release and every product that stays at three knots or fewer. The general case is open. [Proof of the bound](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/bounded.md)
+
+**Later meetings.** Yes. In the seven-knot source, two products released at cluster size 159 never meet directly. Both persist, and their first common descendant appears at size 308, **149 parent steps later**. On any growing end that continues to fund its births, two families first share a descendant after exactly as many parent steps as there were witnessed steps between them at release. Products in separate witnessed parts stay independent by parentage forever. [Seven-knot example](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/generator_delay.md) · [Timing proof](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/propagation.md)
+
+**One product can change what the other makes.** In a start with 21 knots and 60 distinctions, a descendant of the older product supplies an actual input to a child of the younger one. The two products never meet directly. Changing one holding at the start prevents the older product’s release. The same younger knot still makes 34 children, but the corresponding child receives **33 fresh distinctions instead of 34**, and the total across those children falls from 1,174 to 1,170. When both products must remain present in both starts, adding **one shared distinction** suffices to give their descendants a later meeting. One is the least positive edit under that count. [Matched receiving knot](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/indirect.md) · [Both-products comparison](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/start_edits.md)
+
+**Checks.** Both parity and not-all-equal gave these results. The seven-knot start was exhausted through eight parent steps, reaching 765 knots and 4,212 distinctions. The size-308 result is proved from the parent map. Among initially separated pairs followed for at least two steps, a common descendant was observed in **140/1,634** pair observations under uniform labelled trees and **95/970** under fresh such trees with one uniform extra meeting, with 240 starts per weighting. The separate jump-selected archive contributed 14 lawful starts out of 16. A reader restricted to the growing end gets the meeting delay for marked parties, but an exact swap can hide which earlier product it sees. [Complete cuts](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/bounded_check.md) · [Weighted samples](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/samples.md) · [Growing-end swap](https://github.com/jscul/knotlab/blob/main/research/COPIES-AND-MEETINGS-20261120-001/archive.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt | **Status:** Successful, referee pending | A bound on repeated copies and a lasting indirect interaction under both laws. |
+| Local direction · finite products | Continue | Four knots is the first open width for a product kept small throughout. |
+| Broader exploration · later meetings | Known alternatives | A child’s fresh count and the number of children are separately testable. |
+| G17 · Meeting patterns and G5 · Dynamics | Capability gained | Two lasting things can affect later production while staying separate. |
+
+**Next step:** Continue — selected: #1.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Four-knot products outside the proved class | 3/3 | 3/3 | Enumerate their possible parent groups → a finite bound or a lasting example without a continuing one-parent line | Selected · in basket |
+| 2 | Change how many children the receiver makes while keeping both products | 3/3 | 2/3 | Match the receiver at release → a changed child count or a proof of equality in the matched class | Alternative · in basket |
+
+**Corrections:** None to the earlier direct-meeting result.  
+**Goals:** G17 and G5 checkpointed. Both next directions are in the SQLite basket, B230 and B231.  
+**Assumptions:** A125 defines independence by all parents. A127 records the matched test for indirect influence.  
+**Scaffolds:** We chose the starts, recognition readings and comparison edits. Every birth and fresh count follows from ordinary growth.

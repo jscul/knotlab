@@ -1097,7 +1097,7 @@ evidence: results and their status come from the records each entry links.
     weaves, trees and parity bases, where it is a metric. Status unchanged.
   - 2026-11-18 · `COUNT-BALLS-20261118-001` ([decision note](../research/COUNT-BALLS-20261118-001/count_balls.md); referee
     pending): the outline depends on which reading spaces the law. On the six-regular weave under not-all-equal, bond distance
-    gives the hexagon of steps apart (rational π), while the disagreement count, which carries every not-all-equal base, gives the
+    gives the hexagon of steps apart (rational π), while the disagreement count, which recovers states for three-place not-all-equal rules on four or more distinctions, gives the
     start's class a round outline (the amplitude the same along every repeat to 1e-4; computed exactly, classical in substance);
     chain grids give smooth outlines just off round. So the circles of periodic laws and dimension read from ball growth, which
     rest here, are statements about bond distance. Status Assumed → Under challenge.
@@ -2615,7 +2615,7 @@ evidence: results and their status come from the records each entry links.
   sampled one at seven (its referee `DISTANCE-INFO-R1`, recomputed by the study; computed, not proved). The test covers bases of up
   to seven distinctions, not the smallest emergent unit. Followed by `DISTANCE-ORDER-20261117-001`
   ([decision note](../research/DISTANCE-ORDER-20261117-001/distance_order.md)), after the owner's answer, with the reading of "no
-  skipping" in A98. Proved: the disagreement count determines every not-all-equal base from four distinctions, and fails at three
+  skipping" in A98. Proved: the disagreement count determines the states of every base defined by three-place not-all-equal rules on four or more distinctions, and fails at three
   (one knot against none, told apart only by the rates); in it, "c lies between a and b" is exactly a three-place constraint (a
   knot where its pairs are free), and a chain of m distinctions allows at most 2m joint values. On bases whose knots form no cycle,
   −log₃ |1 − 2d/N| equals steps apart, so one distance read from the states is built from unit steps and carries the base.

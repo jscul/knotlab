@@ -144,9 +144,12 @@ shows that which notion of distance is meant decides the answer. Read as bond
 distance between pairs, it fails from four distinctions up: bases with the
 same pairwise bond distances allow different states. Read as how often two
 distinctions differ, the number of allowed states in which they take
-different values, that table determines every not-all-equal base from four
-distinctions on (proved; on three distinctions one knot and no knot share it),
-a count across the allowed states, not an extended or metric distance. His
+different values, that table determines the allowed states of any base
+defined by three-place not-all-equal rules on four or more distinctions.
+On four distinctions a four-place rule and the unconstrained base both give
+eight disagreements per pair, although they allow 14 and 16 states respectively.
+This count ranges across the allowed states. An interpretation as extended
+distance would also require native paths and separation. His
 answer rules out direction and asks for an order in which nothing is skipped.
 In that count, c lies between a and b exactly when no allowed state has
 a = b ≠ c. Where the pairs of the three are all free, that constraint is a

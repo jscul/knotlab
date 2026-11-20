@@ -909,16 +909,21 @@ computed, and refereed with a Block on its first reading,
   bond distance 2. The same distances, different states: read as the guide's
   bond distance, distance is not the only form of information, and that
   reading fails at the smallest size where it could.
-- **How often two distinctions differ determines the base (proved).** Count,
+- **How often two distinctions differ recovers three-place not-all-equal states (proved).** Count,
   for each pair, the allowed states in which the two take different values:
   the disagreement count. That table, read from the allowed states alone,
-  determines every not-all-equal base from four distinctions on. On three
+  determines the allowed states from four distinctions on when every rule
+  imposes not-all-equal on three distinctions. Wider rules change the answer.
+  On four distinctions a single four-place rule allows 14 states and the
+  unconstrained base allows 16. Each pair differs in eight states in both
+  bases because the two constant states contribute zero disagreements. On three
   distinctions it does not: one knot and no knot both give every pair 4, and
   only the rates, 4 of 6 against 4 of 8, tell them apart. It is a count across
   the allowed states, not an extended or metric distance in the program's
   sense, which the foundation allows only after paths and separation are built.
 
-So one candidate fails and one carries everything. The owner's answer above
+The disagreement counts therefore recover which states a three-place
+not-all-equal base allows. The owner's answer above
 rules out direction and asks for an order in which nothing is skipped. The
 next test found where that order lives
 ([DISTANCE-ORDER-20261117-001](research/DISTANCE-ORDER-20261117-001/distance_order.md);
@@ -3447,8 +3452,8 @@ that earlier records used in two senses.
   in which they take different values; as a share of the allowed states it is
   the **disagreement rate**. It is a count across the allowed states, not an
   extended or metric distance. Not-all-equal on three distinctions is a sum of
-  their disagreements, so the table of disagreement counts determines every
-  not-all-equal base from four distinctions on, and in it three distinctions
+  their disagreements, so from four distinctions on the table determines the
+  allowed states of every base defined by three-place not-all-equal rules. Three distinctions
   are in order exactly when a three-place constraint holds on them (lesson 2.4).
 - **Steps apart.** Two distinctions are d steps apart when the shortest row of
   co-knotted pairs leading from one to the other, each pair sharing a

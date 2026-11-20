@@ -3,6 +3,15 @@
 Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
+## 20 November 2026 · Which states the disagreement counts recover
+
+**Narrowing of the public summary.** With four or more distinctions, the pair
+counts recover the allowed states when each rule imposes not-all-equal on three
+distinctions. On four distinctions a single four-place rule and the unconstrained
+base agree on all six counts while allowing 14 and 16 states. Theory section 1
+and Intuitions lesson 2.4 now give the rule width alongside the system size.
+The original proof specifies both. [Statement and definition](proofs/DISTANCE-ORDER-20261117-001A/DISTANCE-ORDER-20261117-001A-P001_betweenness/proof.md)
+
 
 ## 19 November 2026 · Which starts admit the shortest transfer between five-rings
 

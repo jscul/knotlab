@@ -188,6 +188,7 @@ evidence: results and their status come from the records each entry links.
 | [A130](#a130--a-join-may-receive-only-the-fresh-distinctions-required-by-its-arity) | A join may receive only the fresh distinctions required by its arity | scaffold | Assumed |
 | [A131](#a131--starting-weights-can-be-restricted-once-to-states-that-still-have-extensions) | Starting weights can be restricted once to states that still have extensions | scaffold | Assumed |
 | [A132](#a132--one-freely-supplied-setting-pair-can-change-how-an-output-pair-is-formed) | One freely supplied setting pair can change how an output pair is formed | scaffold | Assumed |
+| [A133](#a133--signalling-can-be-tested-by-two-distinguishable-local-births) | Signalling can be tested by two distinguishable local births | scaffold | Assumed |
 
 ## Entries
 
@@ -3739,3 +3740,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Suppress the change, try the pair-pattern reading, or bias the shared bit. A native explanation would have to produce the dependence on both settings as well as the stated weighting.
 - **History.**
   - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.
+
+### A133 · Signalling can be tested by two distinguishable local births
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Compare two matched lawful starts that differ in a declared sender preparation. A passive receiver can read one binary choice when a formed local knot in each arm gives a distinguishable observation. Report separately whether a reader is instead handed a completed stop, a global projection, a mark identifying the receiver, or a schedule. Charge a physical edit both to its written holder and to its changed loose or witnessed data.
+- **Why.** Detecting the sender setting in the receiver's holdings is a different question from whether a descendant receives actual inputs from both families. A lack of births can also be ambiguous for a receiver with no completion signal.
+- **Rests on it.** The operational interpretation of the matched three- versus four-place receiver knot as a one-bit signal. Its true parents, number of holdings, closure, and conditional local bounds follow from the ordinary law independently of the interpretation.
+- **Challenge.** Hide all original marks and spent holders, demand a receiver that continues to read after either symbol, or require a sender able to change the setting inside one unaltered growth. Repeat under the other knot law and with steps restricted to exact two-parent groups.
+- **History.**
+  - 2026-11-20 · The [influence study](../research/INFLUENCE-CONE-20261120-001/preregistration.md) compares these readings and separates shared descent from a counterfactual edit to initial holdings.

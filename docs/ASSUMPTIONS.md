@@ -165,6 +165,7 @@ evidence: results and their status come from the records each entry links.
 | [A108](#a108--the-cheapest-growth-reads-which-junction-holds-which-distinction-not-only-the-allowed-states) | The cheapest growth reads which junction holds which distinction, not only the allowed states | scope | Confirmed |
 | [A109](#a109--self-feeding-loops-are-few-in-kind-and-recur-as-shared-routines-the-owners-eddies) | Self-feeding loops are few in kind and recur as shared routines, the owner's eddies | working premise | Under challenge |
 | [A110](#a110--blow-up-is-expected-and-the-unlimited-structure-is-read-by-sampling-it) | Blow-up is expected, and the unlimited structure is read by sampling it | working premise | Assumed |
+| [A111](#a111--a-moving-pattern-is-measured-against-one-allowed-state) | A moving pattern is measured against one allowed state | reading | Confirmed |
 
 ## Entries
 
@@ -3400,3 +3401,14 @@ evidence: results and their status come from the records each entry links.
     It needs overlapping groups of three. Its smallest case is finitely describable: one merge, a binomial burst, then closing.
     That is a regularity, not where description ends. Status unchanged.
   - 2026-11-19 · Recorded, in the owner's words, as his direction; it frames `EXPLOSIVE-20261119-001`.
+
+### A111 · A moving pattern is measured against one allowed state
+
+**Confirmed** · 2026-11-19 · reading
+
+- **Statement.** In the single-state motion test, occupied distinctions are differences from a fixed allowed assignment. Renaming distinctions transports this reference with the state.
+- **Why.** The motion study compared keeping the reference with allowing every translation of the allowed binary states while forgetting it. Keeping it lets the current shape distinguish its own direction.
+- **Rests on it.** The minimal ten-distinction moving pattern in `MOTION-AT-EDDY-20261119-001` uses this reading. The parity growth law itself does not require a preferred assignment.
+- **Challenge.** Under all allowed value translations, a deterministic update of one state must add a fixed allowed difference. Iterating it returns after two applications. A marked arrival or differences between multiple states give other readings to test.
+- **History.**
+  - 2026-11-19 · The current-state reading and its alternative were tested in `MOTION-AT-EDDY-20261119-001`. The fixed reference is retained for this class of moving patterns. The translation argument gives its exact scope.

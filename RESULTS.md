@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 548 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 549 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 548 epics with their closures
+- [Epics](#epics): all 549 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1756,6 +1756,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Dead knots within five places (`DEAD-CAP-20261119-001`) | [closure](proofs/DEAD-CAP-20261119-001Z/DEAD-CAP-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/DEAD-CAP-20261119-001/) |
 | 2026-11-19 | Knots touching twice: the identification on most of the census (`DOUBLE-IDENT-20261119-001`) | [closure](proofs/DOUBLE-IDENT-20261119-001Z/DOUBLE-IDENT-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/DOUBLE-IDENT-20261119-001/) |
 | 2026-11-19 | Parity's eddies over the dropped junction (`DROPPED-JUNCTION-20261119-001`) | [closure](proofs/DROPPED-JUNCTION-20261119-001Z/DROPPED-JUNCTION-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/DROPPED-JUNCTION-20261119-001/) |
+| 2026-11-19 | A self-feeding ring in a background of dimension two (`EDDY-WORLD-20261119-001`) | — | [folder](research/EDDY-WORLD-20261119-001/) |
 | 2026-11-19 | Where groups of three take over (`EXPLOSIVE-20261119-001`) | [closure](proofs/EXPLOSIVE-20261119-001Z/EXPLOSIVE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/EXPLOSIVE-20261119-001/) |
 | 2026-11-19 | Does a table isometry that keeps what the round reads extend one round? (`EXTEND-ROUND-20261119-001`) | [closure](proofs/EXTEND-ROUND-20261119-001Z/EXTEND-ROUND-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/EXTEND-ROUND-20261119-001/) |
 | 2026-11-19 | Sharp steady growth rate of the five-place branch systems (`FIVE-PLACE-RATE-20261119-001`) | — | [folder](research/FIVE-PLACE-RATE-20261119-001/) |

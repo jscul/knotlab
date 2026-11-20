@@ -195,6 +195,10 @@ evidence: results and their status come from the records each entry links.
 | [A137](#a137--independent-preparation-choices-may-set-the-ordinary-connections-between-detector-marks) | Independent preparation choices may set the ordinary connections between detector marks | scaffold | Assumed |
 | [A138](#a138--a-local-detector-sees-both-edit-sites-and-a-fixed-range-of-connections) | A local detector sees both edit sites and a fixed range of connections | scaffold | Assumed |
 | [A139](#a139--an-added-loose-distinction-can-carry-the-pre-settings-state-through-a-local-edit) | An added loose distinction can carry the pre-settings state through a local edit | scaffold | Assumed |
+| [A140](#a140--a-shared-distinction-can-be-given-one-operator-in-each-rule-that-holds-it) | A shared distinction can be given one operator in each rule that holds it | scaffold | Assumed |
+| [A141](#a141--growth-can-be-compared-with-named-holdings-or-after-renaming-them) | Growth can be compared with named holdings or after renaming them | scaffold | Assumed |
+| [A142](#a142--six-named-distinctions-can-serve-as-a-test-of-settings-inside-a-state) | Six named distinctions can serve as a test of settings inside a state | scaffold | Assumed |
+| [A143](#a143--release-rates-are-counted-over-a-declared-number-of-parent-steps) | Release rates are counted over a declared number of parent steps | scaffold | Assumed |
 
 ## Entries
 
@@ -2799,6 +2803,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-20 · Under both ordinary knot laws, the same full states and disagreement counts on three named distinctions give three births or none. Nine named distinctions suffice with distinct physical supports. Parity can require unbounded further information about parent holdings, even after renaming. On the prepared sender edit the receiver's three local disagreement rates stay fixed while all nine rates to the sender change. The states of three-place not-all-equal bases are still recoverable from their disagreement counts at width four and above. A distance supplying the holders remains open. Independent referee pending. [States and holdings](../research/FOUR-READINGS-20261120-001B/results.md).
   - 2026-11-20 · FRESH-DEMAND-20261120-001 · On equal marked parent holdings all bond readings can agree while arbitrarily many fresh counts are possible. Under both laws a witnessed shared-parent step reads the common live block size in the identified class. A fixed bit budget and a bounded numerical bond radius are distinct demands. The logarithmic and linear information bounds fix the parent display for each set of comparisons.
   - 2026-11-20 · BOND-CLOSURE-20261120-001 · On connected lawful parity stages any input pair decides ternary closure at any size. With eight parents all 276 pair distances among the full parent holdings can agree at opposite closing verdicts. One bonded reading on p−1 prescribed loose inputs decides any arity p≥3. A bound on numerical radius alone misses fresh demand. These are tests of a specified physical reading and observer.
   - 2026-11-20 · ORDINARY-DYNAMICS-20261120-001 · Across six paired preparations the common growing part agrees in every shared-parent step, while an existing pair of its own loose distinctions has bond distance two versus three. Under parity the next ternary width differs. This tests one choice of distance; a general bond test for exhaustion is open.
@@ -3290,6 +3295,7 @@ evidence: results and their status come from the records each entry links.
   irredundant one under not-all-equal. Ask whether it is well defined on the stages where same-state presentations join
   differently (`NAE-GROWTH-20261119-001#1`).
 - **History.**
+  - 2026-11-20 · Both ordinary laws give different growth from identical states on three named distinctions and on distinct physical supports with nine names. The parity family requires unbounded parent information even under renaming. [Named and renamed comparisons](../research/FOUR-READINGS-20261120-001B/results.md).
   - 2026-11-19 · `THREE-RIGID-20261119-001` ([decision note](../research/THREE-RIGID-20261119-001/three_rigid.md); referee pending): with bond readings over sets as large as the largest knot (which force the states) and the growing end, the growth's later rounds are carried (Theorem M with Claim B*). Status unchanged.
   - 2026-11-19 · `PROVE-B-20261119-001` ([decision note](../research/PROVE-B-20261119-001/prove_b.md); refereed R1, no Block): the next table reads, for each bond, which growing junctions it holds (the split formula); the pair table records only least bond sizes, so it misses this where a tie is broken by a join's discount. Status unchanged.
   - 2026-11-19 · `GROWN-END-SWAP-20261119-001` (Codex's construction; [decision note](../research/GROWN-END-SWAP-20261119-001/decision.md); refereed R1): the growth reads the same joins on both sides of a reading-keeping table symmetry, yet the next table differs: what it reads beyond the table is which old pair a join brings closer. Status unchanged.
@@ -3417,6 +3423,7 @@ evidence: results and their status come from the records each entry links.
   - **No stable sampled behaviour.** It would also be tested if the explosive kind admits no stable sampled behaviour at all:
     shares that do not settle as samples grow, under every weighting tried. Then sampling would not read it.
 - **History.**
+  - 2026-11-20 · Uniform draws of actual knots within a partnered runaway and a jump-selected start have different release outcomes. In the partnered case every birth inherits the entire cohort two parent steps earlier. These are conditional conclusions for the chosen hosts. [Late sampling](../research/FOUR-READINGS-20261120-001D/deep_explosive.md).
   - 2026-11-20 · GENERATORS-20261120-001 · The 480 labelled draws measure funding and complete growth among small starts, and the 16 archived descriptions are jump-selected. Those measurements supply no frequency of unending emission. Unbounded release sizes are consistent with the sampling premise.
   - 2026-11-20 · READ-ORIGIN-20261120-001 · The registered 640 lawful draws use equal counts of 64 per size from four to eight in a uniform labelled-tree weighting and in a tree-plus-one-uniform-missing-meeting weighting. Each holder has its minimum loose counts with an independent one-in-four spare. A uniformly permuted funded first layer and uniform proper prefix length yield one middle per funded start. Larger-size frequency and inverse computational cost remain open.
   - 2026-11-20 · SERIAL-REPAIRS-20261120-001 · The 640-source sample weights 64 independently drawn labels at each of five sizes, under a uniform labelled tree or a tree plus one uniform missing meeting, with a Bernoulli spare of probability one quarter per knot. Counts of whole funded births, distinct first actions and randomly chosen finite prefixes have different denominators. No weighting on infinite fair orders is assumed.
@@ -3653,6 +3660,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Interpreting the proved periodic and nested families as things produced by the source. The physical births, their inputs and the matched fresh counts follow from the ordinary law independently of that interpretation.
 - **Challenge.** Require independent replay of all outgoing births and loose counts, a fixed packet shape, or a reader restricted to the growing end. A product that passes one of these stronger tests could replace the corresponding present scaffold. The current periodic examples change in isolated replay and the symmetric end misses the designated pair.
 - **History.**
+  - 2026-11-20 · At 16 parent steps the full and growing-end readings agree on anonymously counted releases and direct meetings under both labelled-start weightings. Donor admissibility can still require the earlier physical holdings. [Rates and interventions](../research/FOUR-READINGS-20261120-001D/results.md).
   - 2026-11-20 · COPIES-AND-MEETINGS-20261120-001 · The all-parent reading gives a finite bound on identified products at any fixed launch width. An inclusive-only singleton can instead be selected without end and requires an outside parent. [Physical and alternative readings](../research/COPIES-AND-MEETINGS-20261120-001/bounded.md).
   - 2026-11-20 · Registered for the [ordinary generator study](../research/GENERATORS-20261120-001/preregistration.md). Tested both knot laws, full and growing-end readings, any-parent and all-parent ancestry, and the [matched physical preparations](../research/GENERATORS-20261120-001/meeting.md). The stronger isolation requirement and recognition of fixed copies stay open.
 
@@ -3828,3 +3836,47 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Compare the ordinary complete-state weighting after the edit or growth and record any change of preparation or probability.
 - **History.**
   - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
+
+### A140 · A shared distinction can be given one operator in each rule that holds it
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Take a closed sharing pattern, change one parity sign and give each distinction a two-valued operator shared by identity in both rules. Operators in one rule commute and multiply to its sign. The six-rule experiment adds a shared entangled preparation, fixed reader roles, free input choices and equal weights. The agreement-only comparison weights the compatible local answers uniformly. The census gives each connected simple sharing pattern through seven holders one vote, and also records labelled multiplicities.
+- **Why.** This separates a contradiction in definite states from consistency of complete local readings, and can test whether the readings have any operator realization.
+- **Rests on it.** The ordinary law supplies the reached unsigned holdings. The odd signing, operator values, quantum preparation, question pairs and probabilities enter through this reading. The small built starts, leaf family and the labelled and jump-selected controls are listed in the frozen design.
+- **Challenge.** Compare ordinary scalar values, move or remove the odd sign, exchange the question convention, change answer weights, and compare the two knot laws. An intrinsic assignment of operators and a law for their probabilities remain open.
+- **History.**
+  - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001A/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001A/results.md).
+
+### A141 · Growth can be compared with named holdings or after renaming them
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Compare equal full sets of allowed states on fixed distinction names, then up to arbitrary renaming. Compare births by parent identity and by fresh count. Include possible repeated supports as well as a distinct-support control. Charge side information in binary digits. For pre-growth rates give each complete allowed state equal weight.
+- **Why.** The bookkeeping exterior, marked preparations and uniform-state comparison test exactly what a state-derived reading can recover.
+- **Rests on it.** The three-distinction and nine-distinction built starts, two named earlier pairs, switches of several holders, matched sender edits and sampled controls each have an explicit comparison in the study. The counts on random starts use the declared labelled-tree and jump-selected weightings.
+- **Challenge.** Forget the labels, forbid duplicate supports, or compare raw disagreement counts with the corresponding rates. A law for reconstructing holders would have to supply the distinctions between these cases.
+- **History.**
+  - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001B/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001B/results.md).
+
+### A142 · Six named distinctions can serve as a test of settings inside a state
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Keep the two previously chosen reader supports, two answer marks and one selector on each side. Count whole-state completions and compare both complete marked registers in every cell. Include the supplied sixteen-word relation, the two-terminal constructions, all eligible placements in a bounded census, and the original deterministic placement rule for sampled starts.
+- **Why.** A reported bit can hide information visible in the other mark. This reading tests whether conditioning can conceal the other selector even when both marks remain visible.
+- **Rests on it.** The scores and census use A119–A123 as specified in the design. The added abstract relation, comparison pieces, label order and supplementary archived growth are test inputs. Each admits a separate accounting of support and weight.
+- **Challenge.** Compare an external setting, a pair-pattern answer, a tilt on a single mark, and an alternative lawful construction. A native reading operation and a weighting derived from the growth remain open.
+- **History.**
+  - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001C/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001C/results.md).
+
+### A143 · Release rates are counted over a declared number of parent steps
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Count a complete funded first step and recognizable releases and meetings through 16 parent steps. Give labelled trees the registered one-in-four extra loose distinction, add one uniform missing meeting for the paired alternative, and sample actual knots uniformly within a named late stage. Mark a release as lasting only with a continuation argument. Retain unresolved existence as a separate rate interval.
+- **Why.** Unending production, a one-time release with a lasting family, and the probability of detecting either are different questions.
+- **Rests on it.** The full-holdings and growing-end readers, directed parent test, donor comparison and changed donor control, sample sizes, chosen late hosts, ranks, built positive examples and finite horizon determine the frequencies. A125 and A127 specify the previous family and meeting readings.
+- **Challenge.** Vary the reader, late host, and legal donor comparison and compare both laws. An intrinsic weighting on starts and on late knots would have to supply its own sampling choices.
+- **History.**
+  - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001D/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001D/results.md).

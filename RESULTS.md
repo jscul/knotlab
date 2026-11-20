@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**395 current results** and 5 superseded ones, from 567 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**400 current results** and 5 superseded ones, from 567 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 110 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 115 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
@@ -909,6 +909,21 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-20 · Smallest identified recurring source with a partner-specific encounter** (`GENERATORS-20261120-001-D005`).
   The periods agree to exactly 52(n+1)+2 current points, yielding genuine mixed children one step after release. Exchanging the minority arm of one packet leaves both individually equivalent and removes that partner-specific output.
   [proof P001](proofs/GENERATORS-20261120-001B/GENERATORS-20261120-001B-P001_generators/proof.md), [epic closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · The exact forward and backward ancestry cone** (`INFLUENCE-CONE-20261120-001-D001`).
+  The collected ancestors of all n-step descendants of a marked release are exactly its original closed radius-n neighborhood. Dually, all descendants of a later knot’s n-step ancestors fill the later radius-n ball.
+  [proof P001](proofs/INFLUENCE-CONE-20261120-001B/INFLUENCE-CONE-20261120-001B-P001_influence/proof.md), [epic closure](proofs/INFLUENCE-CONE-20261120-001Z/INFLUENCE-CONE-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · The initial radius needed for a roster and a fresh count** (`INFLUENCE-CONE-20261120-001-D002`).
+  Radius n determines the depth-n roster, and radius n+1 determines its fresh counts, both sharp. The identified class needs only n for costs; the all-parent receiver’s own continuing holdings require only its first neighborhood under the stated matching.
+  [proof P001](proofs/INFLUENCE-CONE-20261120-001B/INFLUENCE-CONE-20261120-001B-P001_influence/proof.md), [epic closure](proofs/INFLUENCE-CONE-20261120-001Z/INFLUENCE-CONE-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Sharp influence of changing positive loose counts versus a witnessed group** (`INFLUENCE-CONE-20261120-001-D003`).
+  At witnessed separation d the earliest possible matched fresh and unmatched birth effects are d and d+1 for a positive supply edit. For witness data matched after erasing the charged set at d≥2, the bounds become d−1 and d, attained by one physical holding.
+  [proof P001](proofs/INFLUENCE-CONE-20261120-001B/INFLUENCE-CONE-20261120-001B-P001_influence/proof.md), [epic closure](proofs/INFLUENCE-CONE-20261120-001Z/INFLUENCE-CONE-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · A changed holding can alter production across an infinite named-holder separation** (`INFLUENCE-CONE-20261120-001-D004`).
+  The named holder’s family never meets that of its neighbor in the witnessed end. Changing the local witness cancels a receiver ternary and supplies a binary in the first step while its own support and three-child total agree.
+  [proof P001](proofs/INFLUENCE-CONE-20261120-001B/INFLUENCE-CONE-20261120-001B-P001_influence/proof.md), [epic closure](proofs/INFLUENCE-CONE-20261120-001Z/INFLUENCE-CONE-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · A positive local child can read the disconnected parity closure flag** (`INFLUENCE-CONE-20261120-001-D005`).
+  The same three parents form a three- or four-place child under parity at depth one, revealing the binary presence of another live part. Both not-all-equal children have four places; funding cancellation instead supplies no event to receive.
+  [proof P001](proofs/INFLUENCE-CONE-20261120-001B/INFLUENCE-CONE-20261120-001B-P001_influence/proof.md), [epic closure](proofs/INFLUENCE-CONE-20261120-001Z/INFLUENCE-CONE-20261120-001Z-P001_synthesis/proof.md)
 - **2026-11-20 · A local parity birth can depend on another growing part** (`ORDINARY-DYNAMICS-20261120-001-D001`).
   A new knot with three parents can require zero or one fresh distinction on two preparations whose entire growing parts around those parents agree. Thus no finite radius in shared-parent steps determines the full next birth, even on funded rounds inside the identified class.
   [proof P001](proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/proof.md), [epic closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md)
@@ -1890,7 +1905,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can a join that forbids old combinations give a Bell violation with free settings? (`FORBIDDING-JOIN-20261120-001`) | [closure](proofs/FORBIDDING-JOIN-20261120-001Z/FORBIDDING-JOIN-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FORBIDDING-JOIN-20261120-001/) |
 | 2026-11-20 | What outside the parents fixes a birth’s fresh distinctions? (`FRESH-DEMAND-20261120-001`) | [closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FRESH-DEMAND-20261120-001/) |
 | 2026-11-20 | Can ordinary growth generate separate lasting things that meet and persist? (`GENERATORS-20261120-001`) | [closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/GENERATORS-20261120-001/) |
-| 2026-11-20 | When an edit can affect another family in ordinary growth (`INFLUENCE-CONE-20261120-001`) | — | [folder](research/INFLUENCE-CONE-20261120-001/) |
+| 2026-11-20 | When an edit can affect another family in ordinary growth (`INFLUENCE-CONE-20261120-001`) | [closure](proofs/INFLUENCE-CONE-20261120-001Z/INFLUENCE-CONE-20261120-001Z-P001_synthesis/proof.md) | [folder](research/INFLUENCE-CONE-20261120-001/) |
 | 2026-11-20 | Can ordinary growth carry a change through its own growing end? (`ORDINARY-DYNAMICS-20261120-001`) | [closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ORDINARY-DYNAMICS-20261120-001/) |
 | 2026-11-20 | Can the original start be recognized with single meetings? (`READ-ORIGIN-20261120-001`) | [closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md) | [folder](research/READ-ORIGIN-20261120-001/) |
 | 2026-11-20 | Can current holdings give every birth its correct count in every fair order? (`SERIAL-REPAIRS-20261120-001`) | [closure](proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/SERIAL-REPAIRS-20261120-001/) |

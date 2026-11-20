@@ -3210,6 +3210,37 @@ both referee pending):
   cut. So the shrinking comes from the attachment, not from the ring's
   activity.
 
+**How strong "no ticks" is (proved and computed, referee pending).**
+Codex's motion-law study
+([MOTION-LAW-20261119-001](research/MOTION-LAW-20261119-001/what_is_forced.md),
+referee pending) asked what the owner's "Time doesn't have ticks" can mean for
+a rule of motion. With no clock, it says that the order of local changes
+should not matter, and that can be meant at three strengths.
+
+- **Full strength: every two local changes can happen in either order.** Then
+  nothing moves. A compact change on a quiet background stays where it began,
+  so the largest speed it can keep up is exactly zero, though it can still
+  oscillate in place.
+- **Middle strength: two changes that are both ready can happen in either
+  order, with the same result.** This lets things move. In one small, fully
+  classified family, a chain of knots read one step out with a rule that keeps
+  the number of neighbouring disagreements, exactly seven rules survive, and a
+  lone disagreement moves at most one knot per change. But once rules may read
+  farther, on suitably built rings a compact pattern moves any chosen number of
+  knots per two changes, so there is no largest speed across rules (lesson
+  8.5).
+- **Weakest: every fair order of changes reaches the same end.** On the
+  program's reading this is the strength that fits, and a switch shows it. A
+  pattern arriving at two self-feeding five-knot rings at least four knots
+  apart exchanges which ring holds a stored state, and every permitted order of
+  changes ends in the same place, clears every temporary change and takes
+  exactly 2d + 10 changes for rings d knots apart
+  ([decision note](research/MOTION-LAW-20261119-001/decision.md)).
+- **Not forced by the growth.** The growth law and renaming alone leave
+  infinitely many rules of motion, even among quiet, reversible rules whose
+  changes commute. So no rule of motion, and no largest speed like the speed of
+  light, comes out of the growth yet.
+
 **The open gap (reading).** The layers talk one way only. The state lives on
 the structure, but the growth law never reads the state, and no change of
 state changes the growth rates or which knots exist. On the

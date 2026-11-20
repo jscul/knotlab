@@ -189,6 +189,12 @@ evidence: results and their status come from the records each entry links.
 | [A131](#a131--starting-weights-can-be-restricted-once-to-states-that-still-have-extensions) | Starting weights can be restricted once to states that still have extensions | scaffold | Assumed |
 | [A132](#a132--one-freely-supplied-setting-pair-can-change-how-an-output-pair-is-formed) | One freely supplied setting pair can change how an output pair is formed | scaffold | Assumed |
 | [A133](#a133--signalling-can-be-tested-by-two-distinguishable-local-births) | Signalling can be tested by two distinguishable local births | scaffold | Assumed |
+| [A134](#a134--a-free-local-edit-may-supply-one-extra-loose-distinction) | A free local edit may supply one extra loose distinction | scaffold | Assumed |
+| [A135](#a135--closing-can-be-read-at-the-holder-of-a-persistent-input) | Closing can be read at the holder of a persistent input | scaffold | Assumed |
+| [A136](#a136--a-free-setting-may-name-which-of-two-local-holders-receives-a-spare) | A free setting may name which of two local holders receives a spare | scaffold | Assumed |
+| [A137](#a137--independent-preparation-choices-may-set-the-ordinary-connections-between-detector-marks) | Independent preparation choices may set the ordinary connections between detector marks | scaffold | Assumed |
+| [A138](#a138--a-local-detector-sees-both-edit-sites-and-a-fixed-range-of-connections) | A local detector sees both edit sites and a fixed range of connections | scaffold | Assumed |
+| [A139](#a139--an-added-loose-distinction-can-carry-the-pre-settings-state-through-a-local-edit) | An added loose distinction can carry the pre-settings state through a local edit | scaffold | Assumed |
 
 ## Entries
 
@@ -3743,6 +3749,7 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Suppress the change, try the pair-pattern reading, or bias the shared bit. A native explanation would have to produce the dependence on both settings as well as the stated weighting.
 - **History.**
   - 2026-11-20 · Added in the first G18 comparison of laws under which joining can forbid. Results are referee pending.
+  - 2026-11-20 · Tested in G18 B233. Ordinary all-or-none funding supplies a dependence on two actual edits on a prepared source. Four fixed addresses can hide the signal, while using the visible local shortage to select an address transmits a message. The earlier 5/2 calibration remains a supplied response. [Frozen design](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
 
 ### A133 · Signalling can be tested by two distinguishable local births
 
@@ -3755,3 +3762,69 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-20 · INFLUENCE-CONE-20261120-001 · Source-level one-incidence, fixed positive input, projected-state and silent-stall readings are separately tested. Only positive events at the receiver give the demonstrated clock-free two-symbol readout in both arms. [Guards and signalling](../research/INFLUENCE-CONE-20261120-001/signalling.md).
   - 2026-11-20 · The [influence study](../research/INFLUENCE-CONE-20261120-001/preregistration.md) compares these readings and separates shared descent from a counterfactual edit to initial holdings.
+
+### A134 · A free local edit may supply one extra loose distinction
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Keep a marked holder live and append zero or one loose distinction. Read whether a persistent private distinction gains a second holder in the funded round. Both parties' edit sites remain separate.
+- **Why.** A native funding failure has an ordinary local consequence even when the two parties have no common child.
+- **Rests on it.** The smallest two-sided funding test and its deterministic four tables. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
+- **Challenge.** Use the addressed edit, transport the names of the offered distinctions, and separate the growing ends further.
+- **History.**
+  - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
+
+### A135 · Closing can be read at the holder of a persistent input
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Append zero or one spare at a persistent parent, and zero or one at a separate spent holder. Read whether the fixed input's child has zero fresh distinctions and whether the other holder's optional mark gained a holder.
+- **Why.** This reads the native closing exception on all trials, including an absent birth.
+- **Rests on it.** The minimum two-parent and three-parent closing witnesses. The two-place ordinary exception is reported separately. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
+- **Challenge.** Use not-all-equal on exactly the same preparations and require stronger separation.
+- **History.**
+  - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
+
+### A136 · A free setting may name which of two local holders receives a spare
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Supply one loose distinction to the holder named by the address. The binary result is one precisely when a designated old distinction is one and the detector's persistent loose distinction gained a holder. A stall gives zero.
+- **Why.** The same local predicate can be used on all four settings and every trial has a result.
+- **Rests on it.** The addressed whole-stage funding comparison. The observer supplies the setting and the reading. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
+- **Challenge.** Compare fixed addresses with the ordinary local instruction to supply the visibly deficient holder. The signalling capacities of these two input interfaces can differ.
+- **History.**
+  - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
+
+### A137 · Independent preparation choices may set the ordinary connections between detector marks
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Draw two independent fair readiness labels before either free setting. Each label marks its own local funding deficit and controls two predeclared interchanges of three ordinary connections. Use uniform allowed states within each preparation.
+- **Why.** A repeated pair of independent interchanges generates different mark correlations without a rule that reads the two actual settings.
+- **Rests on it.** The all-trial Bell excess in the concealed, balanced mixture. Ordinary growth neither selects these starting presentations nor assigns their weights. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
+- **Challenge.** Use one known start, bias a readiness label, use commuting interchanges, or force separate funding. Seek a distribution generated by an ordinary source.
+- **History.**
+  - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
+
+### A138 · A local detector sees both edit sites and a fixed range of connections
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Include all accessible local values and incidences before and after the free edit, both address holders, the complete three terminal bits, the structural birth flag and the specified fixed connections. Do not give the detector the hidden source choice for the other party.
+- **Why.** Equality of a selected bit's marginal alone can miss a locally readable signal.
+- **Rests on it.** The zero total variation verdict on the declared endpoint data. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
+- **Challenge.** Reveal the preparation, enlarge the observation to include an internal interchange, or allow the holder choices to depend on known local readiness. Any fixed finite observation range may be tested with longer unchanged connections.
+- **History.**
+  - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.
+
+### A139 · An added loose distinction can carry the pre-settings state through a local edit
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Sample a complete state before the two settings. For parity an appended place can be zero in every trial, or a local fair split can change a private old bit and the new bit together. Under not-all-equal the old state already satisfies its holder and can be extended locally. Split each old state's mass across its growth extensions.
+- **Why.** This keeps the source independent of both settings while defining values after edits to old holders.
+- **Rests on it.** The primary intervention tables and the distinction from independently sampling each edited or grown system uniformly. [Frozen definitions](../research/WHOLE-STAGE-SETTINGS-20261120-001/preregistration.md).
+- **Challenge.** Compare the ordinary complete-state weighting after the edit or growth and record any change of preparation or probability.
+- **History.**
+  - 2026-11-20 · Recorded for the ordinary two-setting study, G18. Independent referee pending.

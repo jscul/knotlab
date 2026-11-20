@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**400 current results** and 5 superseded ones, from 567 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**401 current results** and 5 superseded ones, from 567 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 115 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 116 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
@@ -948,6 +948,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-20 · The complete current supports can enforce progress without a supplied future map** (`SERIAL-REPAIRS-20261120-001-D003`).
   Recover the least unfinished formation depth and its original supply from present incidences, then subtract children already there. Every maximal admissible order builds exactly the complete ordinary result with its immutable at-birth counts.
   [proof P001](proofs/SERIAL-REPAIRS-20261120-001B/SERIAL-REPAIRS-20261120-001B-P001_present/proof.md), [epic closure](proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Visible readiness separates equal fixed-address marginals from non-signalling under all local edits** (`WHOLE-STAGE-SETTINGS-20261120-001-D001`).
+  For a visible ordinary funding decision requiring both local repairs, a sender who knows its own readiness can signal whenever changing its edit affects funding on positive probability at a fixed receiver setting. If neither party can signal under any local edit policy, funding is independent of the settings almost surely and conditionally local readings obey the Bell bound.
+  [proof P001](proofs/WHOLE-STAGE-SETTINGS-20261120-001A/WHOLE-STAGE-SETTINGS-20261120-001A-P001_local_records/proof.md), [epic closure](proofs/WHOLE-STAGE-SETTINGS-20261120-001Z/WHOLE-STAGE-SETTINGS-20261120-001Z-P001_synthesis/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -1909,5 +1912,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can ordinary growth carry a change through its own growing end? (`ORDINARY-DYNAMICS-20261120-001`) | [closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ORDINARY-DYNAMICS-20261120-001/) |
 | 2026-11-20 | Can the original start be recognized with single meetings? (`READ-ORIGIN-20261120-001`) | [closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md) | [folder](research/READ-ORIGIN-20261120-001/) |
 | 2026-11-20 | Can current holdings give every birth its correct count in every fair order? (`SERIAL-REPAIRS-20261120-001`) | [closure](proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/SERIAL-REPAIRS-20261120-001/) |
-| 2026-11-20 | Can ordinary whole-stage funding or closing respond to two free local edits without signalling? (`WHOLE-STAGE-SETTINGS-20261120-001`) | — | [folder](research/WHOLE-STAGE-SETTINGS-20261120-001/) |
+| 2026-11-20 | Can ordinary whole-stage funding or closing respond to two free local edits without signalling? (`WHOLE-STAGE-SETTINGS-20261120-001`) | [closure](proofs/WHOLE-STAGE-SETTINGS-20261120-001Z/WHOLE-STAGE-SETTINGS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/WHOLE-STAGE-SETTINGS-20261120-001/) |
 

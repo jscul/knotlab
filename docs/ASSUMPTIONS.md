@@ -3412,6 +3412,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The minimal ten-distinction moving pattern in `MOTION-AT-EDDY-20261119-001` uses this reading. The parity growth law itself does not require a preferred assignment.
 - **Challenge.** Under all allowed value translations, a deterministic update of one state must add a fixed allowed difference. Iterating it returns after two applications. A marked arrival or differences between multiple states give other readings to test.
 - **History.**
+  - 2026-11-19 · `MOTION-LAW-20261119-001` uses this reference for both the ring switch and compact motion. Quietness together with covariance under every allowed value shift again selects the identity. No stage-wide reference is inferred from growth.
   - 2026-11-19 · The current-state reading and its alternative were tested in `MOTION-AT-EDDY-20261119-001`. The fixed reference is retained for this class of moving patterns. The translation argument gives its exact scope.
 
 ### A112 · The logic comes before space and would sit beneath locality

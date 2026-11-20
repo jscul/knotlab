@@ -1,0 +1,51 @@
+{
+  "source": "experiments/EDDY-WORLD-20261119-001/EDDY-WORLD-20261119-001-E001_world/inputs.json",
+  "sha256": "f792bc47a6872edc0c7b8844e97bc77ff0b5593cb0fe7f9d73878d965bb2be93",
+  "source_cases": [
+    "B",
+    "R0",
+    "R1",
+    "R2",
+    "J0",
+    "J1",
+    "J2",
+    "C1",
+    "T4",
+    "T8"
+  ],
+  "age_limit": 6,
+  "geometry_priority_ages": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cap_knots": 6000,
+  "cap_distinctions": 32000,
+  "anchors": "all original marked path and ring shared distinctions; all original path and ring holders for step profiles",
+  "bond_radii": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "age_zero_loads": "empty; entire original ring for single, four independent ring masks for doubles; quiet only on path and cut",
+  "late_controls": "newly toggle only old original ring on the standard positive-age-one and on each quiet matched branch at that boundary; shared four-response c1--seam--c4 and its first child on size-two J1/C1 compared against the same untouched stage; alternative equal-holder-mask control",
+  "tables": {
+    "cold": [
+      "P",
+      "V",
+      "+",
+      "-"
+    ],
+    "hot": [
+      "P",
+      "V",
+      "+",
+      "-"
+    ]
+  },
+  "reference": "A111 all-zero relative state; in the transported frame track differences only",
+  "weighting": "one row per named preparation, geometry and rule (no extrapolation); one per original anchor in a distance-offset mean, one per knot in each ball; use all named inputs separately"
+}

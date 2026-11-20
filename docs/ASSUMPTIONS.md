@@ -3373,6 +3373,11 @@ evidence: results and their status come from the records each entry links.
   - **No stable sampled behaviour.** It would also be tested if the explosive kind admits no stable sampled behaviour at all:
     shares that do not settle as samples grow, under every weighting tried. Then sampling would not read it.
 - **History.**
+  - 2026-11-20 · The owner's picture, recorded with the layer reading. On the layer reading, the rounds read one fixed unlimited
+    structure outward, layer by layer; nothing is chosen, and each round is the next layer of the same structure. The owner's own
+    picture, in his words: "I imagine it to be something like fractals, except the branches of the fractals are able to join with
+    each other and are not separated so much by space." Both are interpretations, not results. They frame the world line (B207), the
+    fate lead (B206) and sampling (B209). Status unchanged.
   - 2026-11-19 · The owner accepted a reading of what the rounds are. Asked "The structure changes over time? Like it adds
     more logic to itself?", the owner was answered that, as computed, each round adds knots, but where a knot's round is its cluster's
     size less one (`ROUND-FREE-20261119-001`, inside the cluster theorem's class) nothing has to change over time: the rounds

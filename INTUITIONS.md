@@ -2891,8 +2891,14 @@ overlap one another, and the unrolled map no longer says what grows.
   ([EXPLOSIVE-20261119-001](research/EXPLOSIVE-20261119-001/explosive.md)). One
   more ends the same way, through a block of 781; the other 14 could not be
   followed far enough (MERGE-BURST, referee pending), and followed one or two
-  rounds further they are still unread (WALL-READ). Whether the rest of the
-  kind has such a regularity, or is where finite description ends, is open.
+  rounds further they were still unread at the WALL-READ stopping point.
+  The original sampling rule included two jumping descriptions with an extra
+  constraint inside a starting junction. Checking every original draw gives
+  14 jumps among 690 qualifying seven-place starts and zero among 1,661
+  qualifying within-five draws and census entries at the original stopping
+  points. The retained starts include an example with exponentially growing
+  births and others that end after a finite burst.
+  [Source counts and growth proofs](research/HEAVY-GROWTH-20261119-001/decision.md)
 - **One kind that never ends (proved, referee pending).** Let the live knots
   come in partner pairs, each able to join every knot but its partner, with the
   open distinctions that needs. Every round keeps that form, and the count runs

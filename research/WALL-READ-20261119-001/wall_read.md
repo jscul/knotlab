@@ -207,3 +207,7 @@ freeze.
 - Lemma 2's lone-point term, and Lemma 3's disjointness of complementary groups;
 - that `rosterlib` is the program's rule, including the implied clause;
 - B2's post hoc double count, and the start-04 round-9 check.
+
+## Later source qualification
+
+The original jump-selected archive contains two presentations, 08 and 15, that fail the canonical starting-parity check. The remaining fourteen account for 123 positive birth ages and 137 stages including age zero. The archive-only comparison B3 holds at all 123 ages. B5 gives 0 of 11 and B6 gives 0 of 12 at their original horizons. The partnered theorem uses its independent constructed starts. [Sampling frames and readout tables](../HEAVY-GROWTH-20261119-001/sources.md)

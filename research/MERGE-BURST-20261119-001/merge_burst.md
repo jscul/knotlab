@@ -141,3 +141,7 @@ freeze.
 - the reduction (`mblib.reduced`): equal and contained blocks dropped, and the class read on the maximal blocks;
 - start-04's reading, a single 781-point block at round 8;
 - that the 14 unread really fail on two maximal blocks sharing two knots, not on a reading slip.
+
+## Later source qualification
+
+Setting aside the starting presentations of 08 and 15 leaves fourteen of the sixteen jump-selected histories. At the original MERGE-BURST horizon this gives 101 positive rounds, two finite readings, eight memory stops and four time stops. The exact closing controls 00 and 04 both qualify. [Sampling frames and readout tables](../HEAVY-GROWTH-20261119-001/sources.md)

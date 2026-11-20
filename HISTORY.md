@@ -4,6 +4,10 @@ Corrections are added here as new entries. Earlier versions stay in the git
 history. A withdrawn result keeps its files, with a notice explaining the gap.
 
 
+## 19 November 2026 · Which sampled starts met the parity test
+
+**Narrowing.** Rechecking the original sampling frames gives 14 measured jumps among 690 qualifying seven-place draws. The original tally was 16 among 1,000 funded descriptions. The presentations of 08 and 15 have an extra equation on part of one starting junction. Among qualifying starts, MERGE-BURST covered 101 positive rounds and WALL-READ covered 123. The independent controls retain their stated weightings. [Canonical source counts](research/HEAVY-GROWTH-20261119-001/sources.md)
+
 ## 19 November 2026 · Source qualification on two sampled growing ends
 
 **Narrowing.** The sampler's round counts and weights apply to the specified growing ends. In the original presentations for starts 08 and 15, one junction in each has extra constraints on its allowed states. Start-08's roster also occurs from the admissible starts 02 and 05. The two nonending starts, 03 and 14, pass the original support check. [Qualified sampler report](research/HUB-GUIDED-SAMPLE-20261119-001/applications.md#source-qualification) · [Continuation study](research/GROWTH-CONTINUES-20261119-001/decision.md)

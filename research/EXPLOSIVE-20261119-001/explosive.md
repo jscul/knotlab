@@ -182,3 +182,7 @@ Report [R1](referee-R1/report.md), 19 November 2026, read under A110.
 - the filled reading's rays from true round-1 demand;
 - the class rule's exclusivity and the child-process limits;
 - that the smallest explosive start really closes at round 23.
+
+## Later source qualification
+
+The original seven-place weighting gives 16 recorded jumps in 1,000 accepted labelled descriptions. Checking each original junction on its allowed states gives 14 recorded jumps among 690 qualifying draws. Within five places the corresponding result is zero among 1,661 qualifying draws and census entries at the original horizons. Starts 08 and 15 failed the parity support check. [Sampling frames and readout tables](../HEAVY-GROWTH-20261119-001/sources.md)

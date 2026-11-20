@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**394 current results** and 5 superseded ones, from 565 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**395 current results** and 5 superseded ones, from 565 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 109 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 110 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
@@ -882,6 +882,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-20 · When parity registers hide the other setting, they admit a local explanation** (`ENTANGLEMENT-READ-20261120-001-D001`).
   If each entire local register has the same conditional distribution at both values of the other setting, one shared uniform variable and one local response per observer reproduce all four joint laws. The explanation covers arbitrary local readings, although hiding the setting from a selected bit alone permits CHSH 4 on a lawful parity start (independent referee pending).
   [proof P001](proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md), [epic closure](proofs/ENTANGLEMENT-READ-20261120-001Z/ENTANGLEMENT-READ-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Joins can forbid old states while preserving a common explanation for free readings** (`FORBIDDING-JOIN-20261120-001-D001`).
+  Both shortages can delete old assignments while preserving at least one complete assignment at every stage under either knot law, even along an infinite history. Every supported local event extends to a global answer on the surviving relation, and fixed free readings obey all eight Bell bounds under any common weighting.
+  [proof P001](proofs/FORBIDDING-JOIN-20261120-001A/FORBIDDING-JOIN-20261120-001A-P001_surviving_states/proof.md), [epic closure](proofs/FORBIDDING-JOIN-20261120-001Z/FORBIDDING-JOIN-20261120-001Z-P001_synthesis/proof.md)
 - **2026-11-20 · The least external information that determines a new knot’s fresh count** (`FRESH-DEMAND-20261120-001-D001`).
   Count maximal unheld groups formed with siblings and the neighboring siblings left to form pairs, then apply the arity floor and the sole parity-birth exception. At fixed parent holdings this yields the exact partition of completions a sufficient summary must distinguish.
   [proof P001](proofs/FRESH-DEMAND-20261120-001B/FRESH-DEMAND-20261120-001B-P001_demand/proof.md), [epic closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md)
@@ -1884,7 +1887,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can a join read closure from its own distinctions? (`BOND-CLOSURE-20261120-001`) | [closure](proofs/BOND-CLOSURE-20261120-001Z/BOND-CLOSURE-20261120-001Z-P001_synthesis/proof.md) | [folder](research/BOND-CLOSURE-20261120-001/) |
 | 2026-11-20 | Repeated finite products and later indirect meetings (`COPIES-AND-MEETINGS-20261120-001`) | [closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/COPIES-AND-MEETINGS-20261120-001/) |
 | 2026-11-20 | Can separated readings of growing knots give the signature of entanglement? (`ENTANGLEMENT-READ-20261120-001`) | [closure](proofs/ENTANGLEMENT-READ-20261120-001Z/ENTANGLEMENT-READ-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ENTANGLEMENT-READ-20261120-001/) |
-| 2026-11-20 | Can a join that forbids old combinations give a Bell violation with free settings? (`FORBIDDING-JOIN-20261120-001`) | — | [folder](research/FORBIDDING-JOIN-20261120-001/) |
+| 2026-11-20 | Can a join that forbids old combinations give a Bell violation with free settings? (`FORBIDDING-JOIN-20261120-001`) | [closure](proofs/FORBIDDING-JOIN-20261120-001Z/FORBIDDING-JOIN-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FORBIDDING-JOIN-20261120-001/) |
 | 2026-11-20 | What outside the parents fixes a birth’s fresh distinctions? (`FRESH-DEMAND-20261120-001`) | [closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FRESH-DEMAND-20261120-001/) |
 | 2026-11-20 | Can ordinary growth generate separate lasting things that meet and persist? (`GENERATORS-20261120-001`) | [closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/GENERATORS-20261120-001/) |
 | 2026-11-20 | Can ordinary growth carry a change through its own growing end? (`ORDINARY-DYNAMICS-20261120-001`) | [closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ORDINARY-DYNAMICS-20261120-001/) |

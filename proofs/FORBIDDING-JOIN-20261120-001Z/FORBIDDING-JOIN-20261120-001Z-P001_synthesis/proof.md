@@ -1,0 +1,10 @@
+# What the sources establish
+
+This synthesis introduces no additional scientific claim. All new results remain referee pending.
+
+- **Survival and observable support, proved.** Both changes to the fresh count keep a complete state at every finite stage and along infinite histories of either homogeneous law. An old state can lose its last extension and a displayed support can lose its full law. The projection lemma, sharp first-round witnesses and common-weighting obstruction have separate logical hypotheses. [Proof A](../../FORBIDDING-JOIN-20261120-001A/FORBIDDING-JOIN-20261120-001A-P001_surviving_states/proof.md)
+- **Free separated readings, exact finite computation.** The frozen comparison includes 36 starts, both readings, the exact original weightings where defined, and two genuine second-transition controls. In each rival the grown parity maxima are 2 under both readings; not-all-equal gives 4/9 and 178/135. Both single-reader marginal changes are zero. [Experiment B](../../../experiments/FORBIDDING-JOIN-20261120-001B/FORBIDDING-JOIN-20261120-001B-E001_free_readings/result.md)
+- **Three checks of ordinary growth, proofs and finite replays.** The earlier parity bond still detects an implication, sibling demand can exceed the grant, and the seven-knot source stalls before its ordinary first release. A separate constructed six-knot start can keep producing lawful knots indefinitely after permanent loss of old states. [Experiment C](../../../experiments/FORBIDDING-JOIN-20261120-001C/FORBIDDING-JOIN-20261120-001C-E001_growth_checks/result.md)
+- **Additional setting dependence, exact mathematical comparison.** One supplied operation involving both settings gives 5/2 with all trials retained and uniform complete local pairs. Its tables have a quantum realization. It is an added mechanism. [Control](../../../research/FORBIDDING-JOIN-20261120-001/setting_dependent_control.md)
+
+The requested scientific stop is the proved obstruction for these rivals and the nearest positive comparison in number of changed setting contexts. [Frozen protocol](../../../research/FORBIDDING-JOIN-20261120-001/preregistration.md)

@@ -33,7 +33,7 @@ The rule uses the activity of the parent, its number of loose distinctions, the 
 
 Leaving all old values fixed while conserving the total immediately forces every fresh value to zero. At fixed incidence two consecutive occupied ring meetings can be cleared while occupying one previously loose distinction at each of the two outside holders. The middle holder loses two, each outside holder trades one for one, and both parity and total occupancy are preserved. How to couple such exchanges to a birth without choosing a destination or a schedule is open. The alternative already has a one-layer observational equivalence on these rings, but asks a weaker question about what the growing end must carry.
 
-**Corrections:** Not a block. A design supplement called a three-place newborn four-place. Its one spent and two fresh distinctions give three, and the calculation uses that arity. [Correction register](../../docs/CORRECTIONS.md)  
+**Corrections:** Not a block. A design supplement called a three-place newborn four-place. Its one spent and two fresh distinctions give three, and the calculation uses that arity. The entry is in the workspace's corrections register. [Corrected design](total_transfer_design.md)  
 **Goals:** G5 Dynamics and G17's lead B210 gained a direct same-incidence second-layer witness.  
 **Assumptions:** A111 supplies the reference, A113 the minimum-lift control, A114 the parent activity reading and A115 the optional atomic fresh-pair transfer.  
 **Basket:** The transfer selected by the state-feedback study was taken. B67 is the reversible-growth alternative, and B55 addresses balance in other growth laws.

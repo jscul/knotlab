@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**383 current results** and 5 superseded ones, from 563 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**388 current results** and 5 superseded ones, from 563 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,7 +24,7 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 98 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 103 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
@@ -873,6 +873,21 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-20 · The seven-knot fresh-count difference under all admissible one-at-a-time orders** (`FRESH-DEMAND-20261120-001-D003`).
   Two versus one holds on every fair completion of the fixed map, in some fair unrestricted present-state comparisons and in no joins-first comparison with both exact births present. The fixed structure has two immediate extensions of the marked knot in one source and one in the other.
   [proof P001](proofs/FRESH-DEMAND-20261120-001B/FRESH-DEMAND-20261120-001B-P001_demand/proof.md), [epic closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Ordinary finite sources can emit independent products without end** (`GENERATORS-20261120-001-D001`).
+  Seven knots and 25 distinctions are lexicographically minimal within the identified class. No single cycle piece can keep releasing unboundedly many distinct all-parent products.
+  [proof P001](proofs/GENERATORS-20261120-001B/GENERATORS-20261120-001B-P001_generators/proof.md), [epic closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Two released products can produce a lasting mixed lineage** (`GENERATORS-20261120-001-D002`).
+  At 21 knots and 60 distinctions two independent parties mix after one parent step, and both pure diagrams and a mixed lineage persist. Keeping both parties apart changes 18 fresh distinctions to 15 at launch.
+  [proof P001](proofs/GENERATORS-20261120-001B/GENERATORS-20261120-001B-P001_generators/proof.md), [epic closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · One parent step is the sharp window for a first direct meeting** (`GENERATORS-20261120-001-D003`).
+  Parents of every joint birth must have a common previous parent, which is impossible after an intervening generation whose inputs all stay within the disjoint pure packets.
+  [proof P001](proofs/GENERATORS-20261120-001B/GENERATORS-20261120-001B-P001_generators/proof.md), [epic closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · An independently released product can itself be a generator** (`GENERATORS-20261120-001-D004`).
+  A released family remains all-parent autonomous and indefinitely active while repeatedly emitting its own pairwise disjoint all-parent products.
+  [proof P001](proofs/GENERATORS-20261120-001B/GENERATORS-20261120-001B-P001_generators/proof.md), [epic closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-20 · Smallest identified recurring source with a partner-specific encounter** (`GENERATORS-20261120-001-D005`).
+  The periods agree to exactly 52(n+1)+2 current points, yielding genuine mixed children one step after release. Exchanging the minority arm of one packet leaves both individually equivalent and removes that partner-specific output.
+  [proof P001](proofs/GENERATORS-20261120-001B/GENERATORS-20261120-001B-P001_generators/proof.md), [epic closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md)
 - **2026-11-20 · A local parity birth can depend on another growing part** (`ORDINARY-DYNAMICS-20261120-001-D001`).
   A new knot with three parents can require zero or one fresh distinction on two preparations whose entire growing parts around those parents agree. Thus no finite radius in shared-parent steps determines the full next birth, even on funded rounds inside the identified class.
   [proof P001](proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/proof.md), [epic closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md)
@@ -1851,7 +1866,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can a join read closure from its own distinctions? (`BOND-CLOSURE-20261120-001`) | [closure](proofs/BOND-CLOSURE-20261120-001Z/BOND-CLOSURE-20261120-001Z-P001_synthesis/proof.md) | [folder](research/BOND-CLOSURE-20261120-001/) |
 | 2026-11-20 | Can separated readings of growing knots give the signature of entanglement? (`ENTANGLEMENT-READ-20261120-001`) | — | [folder](research/ENTANGLEMENT-READ-20261120-001/) |
 | 2026-11-20 | What outside the parents fixes a birth’s fresh distinctions? (`FRESH-DEMAND-20261120-001`) | [closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FRESH-DEMAND-20261120-001/) |
-| 2026-11-20 | Can ordinary growth generate separate lasting things that meet and persist? (`GENERATORS-20261120-001`) | — | [folder](research/GENERATORS-20261120-001/) |
+| 2026-11-20 | Can ordinary growth generate separate lasting things that meet and persist? (`GENERATORS-20261120-001`) | [closure](proofs/GENERATORS-20261120-001Z/GENERATORS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/GENERATORS-20261120-001/) |
 | 2026-11-20 | Can ordinary growth carry a change through its own growing end? (`ORDINARY-DYNAMICS-20261120-001`) | [closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ORDINARY-DYNAMICS-20261120-001/) |
 | 2026-11-20 | Can the original start be recognized with single meetings? (`READ-ORIGIN-20261120-001`) | [closure](proofs/READ-ORIGIN-20261120-001Z/READ-ORIGIN-20261120-001Z-P001_synthesis/proof.md) | [folder](research/READ-ORIGIN-20261120-001/) |
 | 2026-11-20 | Can current holdings give every birth its correct count in every fair order? (`SERIAL-REPAIRS-20261120-001`) | [closure](proofs/SERIAL-REPAIRS-20261120-001Z/SERIAL-REPAIRS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/SERIAL-REPAIRS-20261120-001/) |

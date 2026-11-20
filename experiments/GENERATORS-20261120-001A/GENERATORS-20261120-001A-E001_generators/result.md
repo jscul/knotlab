@@ -1,0 +1,3 @@
+# Physical tests of generators and continuing encounters
+
+Seven reproducible receipts: exact ordinary growth and true knot-law checks on physical, serial and periodic controls, 996 connected ordinary graphs and 117142 live masks through seven knots, 480 weighted labelled starts and 16 archive entries with separate law screens. Separate independent review pending. The small end panels measure funding and witnessed components. No frequency of unboundedly emitting starts was measured. [Physical and word checks](../../../research/GENERATORS-20261120-001/periodic.md) · [Sample](../../../research/GENERATORS-20261120-001/samples.md) · [Archive](../../../research/GENERATORS-20261120-001/explosive.md) · [Size census](../../../research/GENERATORS-20261120-001/minima.md)

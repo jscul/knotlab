@@ -1,0 +1,2703 @@
+{
+  "bare_sources": {
+    "5": {
+      "knots": 5,
+      "distinctions": 15,
+      "supports": [
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          2,
+          9,
+          10
+        ],
+        [
+          2,
+          3,
+          11,
+          12
+        ],
+        [
+          3,
+          4,
+          13,
+          14
+        ]
+      ],
+      "parity_full_star_projections": 5,
+      "nae_local_rows_extended": 70
+    },
+    "7": {
+      "knots": 7,
+      "distinctions": 21,
+      "supports": [
+        [
+          0,
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          1,
+          9,
+          10
+        ],
+        [
+          1,
+          2,
+          11,
+          12
+        ],
+        [
+          2,
+          3,
+          13,
+          14
+        ],
+        [
+          3,
+          4,
+          15,
+          16
+        ],
+        [
+          4,
+          5,
+          17,
+          18
+        ],
+        [
+          5,
+          6,
+          19,
+          20
+        ]
+      ],
+      "parity_full_star_projections": 7,
+      "nae_local_rows_extended": 98
+    }
+  },
+  "one_spare_source": {
+    "knots": 5,
+    "distinctions": 16,
+    "supports": [
+      [
+        0,
+        4,
+        5,
+        6,
+        15
+      ],
+      [
+        0,
+        1,
+        7,
+        8
+      ],
+      [
+        1,
+        2,
+        9,
+        10
+      ],
+      [
+        2,
+        3,
+        11,
+        12
+      ],
+      [
+        3,
+        4,
+        13,
+        14
+      ]
+    ],
+    "parity_full_star_projections": 5,
+    "nae_local_rows_extended": 86
+  },
+  "relay_sources": {
+    "center_with_one_loose": {
+      "knots": 4,
+      "distinctions": 10,
+      "supports": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          2,
+          8,
+          9
+        ]
+      ],
+      "parity_full_star_projections": 4,
+      "nae_local_rows_extended": 32
+    },
+    "center_spent": {
+      "knots": 4,
+      "distinctions": 9,
+      "supports": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          7,
+          8
+        ]
+      ],
+      "parity_full_star_projections": 4,
+      "nae_local_rows_extended": 24
+    }
+  },
+  "laws": {
+    "parity": {
+      "bare": {
+        "5": {
+          "literal_layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 5,
+              "accumulated_knots": 5,
+              "distinct_positions": 15,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 10,
+              "distinct_positions": 25,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 15,
+              "distinct_positions": 35,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 20,
+              "distinct_positions": 45,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 25,
+              "distinct_positions": 55,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 30,
+              "distinct_positions": 65,
+              "component_widths": [
+                5
+              ]
+            }
+          ],
+          "prefix_masks_checked": 32,
+          "mask_layer_comparisons": 192,
+          "joint_relabeling_at_age_two_agrees": true,
+          "interval_size_histories": {
+            "0": {
+              "all_parents": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "1": {
+              "all_parents": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                5
+              ]
+            },
+            "2": {
+              "all_parents": [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                2,
+                3,
+                4,
+                5,
+                5,
+                5
+              ]
+            },
+            "3": {
+              "all_parents": [
+                3,
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                3,
+                4,
+                5,
+                5,
+                5,
+                5
+              ]
+            },
+            "4": {
+              "all_parents": [
+                4,
+                3,
+                2,
+                1,
+                0,
+                0
+              ],
+              "some_parent": [
+                4,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            },
+            "5": {
+              "all_parents": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "some_parent": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            }
+          },
+          "least_width_for_unending_all_parent_line": 5,
+          "largest_proper_extinction_depth": 4
+        },
+        "7": {
+          "literal_layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 7,
+              "accumulated_knots": 7,
+              "distinct_positions": 21,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 14,
+              "distinct_positions": 35,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 21,
+              "distinct_positions": 49,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 28,
+              "distinct_positions": 63,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 35,
+              "distinct_positions": 77,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 42,
+              "distinct_positions": 91,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 49,
+              "distinct_positions": 105,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 56,
+              "distinct_positions": 119,
+              "component_widths": [
+                7
+              ]
+            }
+          ],
+          "prefix_masks_checked": 128,
+          "mask_layer_comparisons": 1024,
+          "joint_relabeling_at_age_two_agrees": true,
+          "interval_size_histories": {
+            "0": {
+              "all_parents": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "1": {
+              "all_parents": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                7
+              ]
+            },
+            "2": {
+              "all_parents": [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                7,
+                7
+              ]
+            },
+            "3": {
+              "all_parents": [
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "4": {
+              "all_parents": [
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                4,
+                5,
+                6,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "5": {
+              "all_parents": [
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                5,
+                6,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "6": {
+              "all_parents": [
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0
+              ],
+              "some_parent": [
+                6,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "7": {
+              "all_parents": [
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ],
+              "some_parent": [
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            }
+          },
+          "least_width_for_unending_all_parent_line": 7,
+          "largest_proper_extinction_depth": 6
+        }
+      },
+      "one_spare_five": {
+        "literal_layers": [
+          {
+            "new_knots": 0,
+            "live_knots": 5,
+            "accumulated_knots": 5,
+            "distinct_positions": 16,
+            "component_widths": [
+              5
+            ]
+          },
+          {
+            "new_knots": 6,
+            "live_knots": 6,
+            "accumulated_knots": 11,
+            "distinct_positions": 30,
+            "component_widths": [
+              6
+            ]
+          },
+          {
+            "new_knots": 7,
+            "live_knots": 7,
+            "accumulated_knots": 18,
+            "distinct_positions": 47,
+            "component_widths": [
+              7
+            ]
+          },
+          {
+            "new_knots": 8,
+            "live_knots": 8,
+            "accumulated_knots": 26,
+            "distinct_positions": 67,
+            "component_widths": [
+              8
+            ]
+          },
+          {
+            "new_knots": 9,
+            "live_knots": 9,
+            "accumulated_knots": 35,
+            "distinct_positions": 90,
+            "component_widths": [
+              9
+            ]
+          },
+          {
+            "new_knots": 10,
+            "live_knots": 10,
+            "accumulated_knots": 45,
+            "distinct_positions": 116,
+            "component_widths": [
+              10
+            ]
+          },
+          {
+            "new_knots": 11,
+            "live_knots": 11,
+            "accumulated_knots": 56,
+            "distinct_positions": 147,
+            "component_widths": [
+              11
+            ]
+          }
+        ],
+        "first_spare_child_all_parent_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_spare_child_any_parent_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "relay": {
+        "active": [
+          {
+            "new_knots": 0,
+            "live_knots": 4,
+            "accumulated_knots": 4,
+            "distinct_positions": 10,
+            "component_widths": [
+              1,
+              3
+            ]
+          },
+          {
+            "new_knots": 4,
+            "live_knots": 4,
+            "accumulated_knots": 8,
+            "distinct_positions": 15,
+            "component_widths": [
+              1,
+              3
+            ]
+          },
+          {
+            "new_knots": 3,
+            "live_knots": 3,
+            "accumulated_knots": 11,
+            "distinct_positions": 20,
+            "component_widths": [
+              1,
+              2
+            ]
+          },
+          {
+            "new_knots": 4,
+            "live_knots": 4,
+            "accumulated_knots": 15,
+            "distinct_positions": 28,
+            "component_widths": [
+              1,
+              3
+            ]
+          },
+          {
+            "new_knots": 6,
+            "live_knots": 6,
+            "accumulated_knots": 21,
+            "distinct_positions": 40,
+            "component_widths": [
+              2,
+              4
+            ]
+          },
+          {
+            "new_knots": 8,
+            "live_knots": 8,
+            "accumulated_knots": 29,
+            "distinct_positions": 56,
+            "component_widths": [
+              3,
+              5
+            ]
+          },
+          {
+            "new_knots": 10,
+            "live_knots": 10,
+            "accumulated_knots": 39,
+            "distinct_positions": 76,
+            "component_widths": [
+              4,
+              6
+            ]
+          },
+          {
+            "new_knots": 12,
+            "live_knots": 12,
+            "accumulated_knots": 51,
+            "distinct_positions": 100,
+            "component_widths": [
+              5,
+              7
+            ]
+          },
+          {
+            "new_knots": 14,
+            "live_knots": 14,
+            "accumulated_knots": 65,
+            "distinct_positions": 128,
+            "component_widths": [
+              6,
+              8
+            ]
+          },
+          {
+            "new_knots": 16,
+            "live_knots": 16,
+            "accumulated_knots": 81,
+            "distinct_positions": 160,
+            "component_widths": [
+              7,
+              9
+            ]
+          },
+          {
+            "new_knots": 18,
+            "live_knots": 18,
+            "accumulated_knots": 99,
+            "distinct_positions": 196,
+            "component_widths": [
+              8,
+              10
+            ]
+          }
+        ],
+        "quiet": [
+          {
+            "new_knots": 0,
+            "live_knots": 3,
+            "accumulated_knots": 4,
+            "distinct_positions": 9,
+            "component_widths": [
+              3
+            ]
+          },
+          {
+            "new_knots": 3,
+            "live_knots": 3,
+            "accumulated_knots": 7,
+            "distinct_positions": 12,
+            "component_widths": [
+              3
+            ]
+          },
+          {
+            "new_knots": 1,
+            "live_knots": 0,
+            "accumulated_knots": 8,
+            "distinct_positions": 12,
+            "component_widths": []
+          }
+        ],
+        "relay_age": 3,
+        "axial_launch_age": 4,
+        "release_component_knots": 2,
+        "relay_top_fresh_if_only_live": [
+          0
+        ],
+        "joint_relabeling_at_release_agrees": true,
+        "reduced_whole_part_literal_costs": [
+          {
+            "age": 3,
+            "own_births": 1,
+            "same_fresh_and_roster_after_end_restriction": false,
+            "own_number_of_unaries": 1
+          },
+          {
+            "age": 4,
+            "own_births": 2,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 5,
+            "own_births": 3,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 6,
+            "own_births": 4,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 7,
+            "own_births": 5,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 8,
+            "own_births": 6,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 9,
+            "own_births": 7,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 10,
+            "own_births": 8,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          }
+        ],
+        "following_axial_and_mixed_births": [
+          {
+            "age": 5,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 1,
+            "mixed_fresh_histogram": {
+              "2": 1
+            }
+          },
+          {
+            "age": 6,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 2,
+            "mixed_fresh_histogram": {
+              "2": 2
+            }
+          },
+          {
+            "age": 7,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 3,
+            "mixed_fresh_histogram": {
+              "2": 3
+            }
+          },
+          {
+            "age": 8,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 4,
+            "mixed_fresh_histogram": {
+              "2": 4
+            }
+          },
+          {
+            "age": 9,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 5,
+            "mixed_fresh_histogram": {
+              "2": 5
+            }
+          },
+          {
+            "age": 10,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 6,
+            "mixed_fresh_histogram": {
+              "2": 6
+            }
+          }
+        ]
+      },
+      "spent_witness": {
+        "joined": {
+          "source": {
+            "knots": 6,
+            "distinctions": 14,
+            "supports": [
+              [
+                0,
+                1,
+                10,
+                11
+              ],
+              [
+                2,
+                3,
+                12,
+                13
+              ],
+              [
+                0,
+                2,
+                4,
+                5,
+                6
+              ],
+              [
+                1,
+                4,
+                7,
+                8
+              ],
+              [
+                3,
+                5,
+                7,
+                9
+              ],
+              [
+                6,
+                8,
+                9
+              ]
+            ],
+            "parity_full_star_projections": 6,
+            "nae_local_rows_extended": 92
+          },
+          "live_stars": [
+            [
+              0,
+              1,
+              10,
+              11
+            ],
+            [
+              2,
+              3,
+              12,
+              13
+            ]
+          ],
+          "joint_relabeling_of_source_agrees": true,
+          "layer1_parents": [
+            [
+              0,
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "layer1_fresh": [
+            2,
+            2,
+            2
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 2,
+              "accumulated_knots": 6,
+              "distinct_positions": 14,
+              "component_widths": [
+                2
+              ]
+            },
+            {
+              "new_knots": 3,
+              "live_knots": 3,
+              "accumulated_knots": 9,
+              "distinct_positions": 20,
+              "component_widths": [
+                3
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 13,
+              "distinct_positions": 28,
+              "component_widths": [
+                4
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 18,
+              "distinct_positions": 38,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 24,
+              "distinct_positions": 50,
+              "component_widths": [
+                6
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 31,
+              "distinct_positions": 64,
+              "component_widths": [
+                7
+              ]
+            }
+          ]
+        },
+        "separate": {
+          "source": {
+            "knots": 6,
+            "distinctions": 14,
+            "supports": [
+              [
+                0,
+                1,
+                10,
+                11
+              ],
+              [
+                2,
+                3,
+                12,
+                13
+              ],
+              [
+                0,
+                4,
+                5,
+                6
+              ],
+              [
+                1,
+                4,
+                7,
+                8
+              ],
+              [
+                3,
+                5,
+                7,
+                9
+              ],
+              [
+                2,
+                6,
+                8,
+                9
+              ]
+            ],
+            "parity_full_star_projections": 6,
+            "nae_local_rows_extended": 84
+          },
+          "live_stars": [
+            [
+              0,
+              1,
+              10,
+              11
+            ],
+            [
+              2,
+              3,
+              12,
+              13
+            ]
+          ],
+          "joint_relabeling_of_source_agrees": true,
+          "layer1_parents": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "layer1_fresh": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 2,
+              "accumulated_knots": 6,
+              "distinct_positions": 14,
+              "component_widths": [
+                1,
+                1
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 10,
+              "distinct_positions": 22,
+              "component_widths": [
+                2,
+                2
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 16,
+              "distinct_positions": 34,
+              "component_widths": [
+                3,
+                3
+              ]
+            },
+            {
+              "new_knots": 8,
+              "live_knots": 8,
+              "accumulated_knots": 24,
+              "distinct_positions": 50,
+              "component_widths": [
+                4,
+                4
+              ]
+            },
+            {
+              "new_knots": 10,
+              "live_knots": 10,
+              "accumulated_knots": 34,
+              "distinct_positions": 70,
+              "component_widths": [
+                5,
+                5
+              ]
+            },
+            {
+              "new_knots": 12,
+              "live_knots": 12,
+              "accumulated_knots": 46,
+              "distinct_positions": 94,
+              "component_widths": [
+                6,
+                6
+              ]
+            }
+          ]
+        }
+      },
+      "minimal_competition": [
+        {
+          "source": {
+            "knots": 2,
+            "distinctions": 5,
+            "supports": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            "parity_full_star_projections": 2,
+            "nae_local_rows_extended": 12
+          },
+          "first_pure_unaries": 2,
+          "A_pure_widths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 2,
+              "accumulated_knots": 2,
+              "distinct_positions": 5,
+              "component_widths": [
+                1,
+                1
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 6,
+              "distinct_positions": 13,
+              "component_widths": [
+                2,
+                2
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 12,
+              "distinct_positions": 25,
+              "component_widths": [
+                3,
+                3
+              ]
+            },
+            {
+              "new_knots": 8,
+              "live_knots": 8,
+              "accumulated_knots": 20,
+              "distinct_positions": 41,
+              "component_widths": [
+                4,
+                4
+              ]
+            },
+            {
+              "new_knots": 10,
+              "live_knots": 10,
+              "accumulated_knots": 30,
+              "distinct_positions": 61,
+              "component_widths": [
+                5,
+                5
+              ]
+            },
+            {
+              "new_knots": 12,
+              "live_knots": 12,
+              "accumulated_knots": 42,
+              "distinct_positions": 85,
+              "component_widths": [
+                6,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "knots": 3,
+            "distinctions": 7,
+            "supports": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                3,
+                5,
+                6
+              ]
+            ],
+            "parity_full_star_projections": 3,
+            "nae_local_rows_extended": 18
+          },
+          "first_pure_unaries": 1,
+          "A_pure_widths": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 3,
+              "accumulated_knots": 3,
+              "distinct_positions": 7,
+              "component_widths": [
+                1,
+                2
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 7,
+              "distinct_positions": 15,
+              "component_widths": [
+                1,
+                3
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 13,
+              "distinct_positions": 27,
+              "component_widths": [
+                2,
+                4
+              ]
+            },
+            {
+              "new_knots": 8,
+              "live_knots": 8,
+              "accumulated_knots": 21,
+              "distinct_positions": 43,
+              "component_widths": [
+                3,
+                5
+              ]
+            },
+            {
+              "new_knots": 10,
+              "live_knots": 10,
+              "accumulated_knots": 31,
+              "distinct_positions": 63,
+              "component_widths": [
+                4,
+                6
+              ]
+            },
+            {
+              "new_knots": 12,
+              "live_knots": 12,
+              "accumulated_knots": 43,
+              "distinct_positions": 87,
+              "component_widths": [
+                5,
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "nae": {
+      "bare": {
+        "5": {
+          "literal_layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 5,
+              "accumulated_knots": 5,
+              "distinct_positions": 15,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 10,
+              "distinct_positions": 25,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 15,
+              "distinct_positions": 35,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 20,
+              "distinct_positions": 45,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 25,
+              "distinct_positions": 55,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 30,
+              "distinct_positions": 65,
+              "component_widths": [
+                5
+              ]
+            }
+          ],
+          "prefix_masks_checked": 32,
+          "mask_layer_comparisons": 192,
+          "joint_relabeling_at_age_two_agrees": true,
+          "interval_size_histories": {
+            "0": {
+              "all_parents": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "1": {
+              "all_parents": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                5
+              ]
+            },
+            "2": {
+              "all_parents": [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                2,
+                3,
+                4,
+                5,
+                5,
+                5
+              ]
+            },
+            "3": {
+              "all_parents": [
+                3,
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                3,
+                4,
+                5,
+                5,
+                5,
+                5
+              ]
+            },
+            "4": {
+              "all_parents": [
+                4,
+                3,
+                2,
+                1,
+                0,
+                0
+              ],
+              "some_parent": [
+                4,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            },
+            "5": {
+              "all_parents": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "some_parent": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            }
+          },
+          "least_width_for_unending_all_parent_line": 5,
+          "largest_proper_extinction_depth": 4
+        },
+        "7": {
+          "literal_layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 7,
+              "accumulated_knots": 7,
+              "distinct_positions": 21,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 14,
+              "distinct_positions": 35,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 21,
+              "distinct_positions": 49,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 28,
+              "distinct_positions": 63,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 35,
+              "distinct_positions": 77,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 42,
+              "distinct_positions": 91,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 49,
+              "distinct_positions": 105,
+              "component_widths": [
+                7
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 56,
+              "distinct_positions": 119,
+              "component_widths": [
+                7
+              ]
+            }
+          ],
+          "prefix_masks_checked": 128,
+          "mask_layer_comparisons": 1024,
+          "joint_relabeling_at_age_two_agrees": true,
+          "interval_size_histories": {
+            "0": {
+              "all_parents": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "1": {
+              "all_parents": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                7
+              ]
+            },
+            "2": {
+              "all_parents": [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                7,
+                7
+              ]
+            },
+            "3": {
+              "all_parents": [
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "4": {
+              "all_parents": [
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                4,
+                5,
+                6,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "5": {
+              "all_parents": [
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              "some_parent": [
+                5,
+                6,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "6": {
+              "all_parents": [
+                6,
+                5,
+                4,
+                3,
+                2,
+                1,
+                0,
+                0
+              ],
+              "some_parent": [
+                6,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            },
+            "7": {
+              "all_parents": [
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ],
+              "some_parent": [
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7
+              ]
+            }
+          },
+          "least_width_for_unending_all_parent_line": 7,
+          "largest_proper_extinction_depth": 6
+        }
+      },
+      "one_spare_five": {
+        "literal_layers": [
+          {
+            "new_knots": 0,
+            "live_knots": 5,
+            "accumulated_knots": 5,
+            "distinct_positions": 16,
+            "component_widths": [
+              5
+            ]
+          },
+          {
+            "new_knots": 6,
+            "live_knots": 6,
+            "accumulated_knots": 11,
+            "distinct_positions": 30,
+            "component_widths": [
+              6
+            ]
+          },
+          {
+            "new_knots": 7,
+            "live_knots": 7,
+            "accumulated_knots": 18,
+            "distinct_positions": 47,
+            "component_widths": [
+              7
+            ]
+          },
+          {
+            "new_knots": 8,
+            "live_knots": 8,
+            "accumulated_knots": 26,
+            "distinct_positions": 67,
+            "component_widths": [
+              8
+            ]
+          },
+          {
+            "new_knots": 9,
+            "live_knots": 9,
+            "accumulated_knots": 35,
+            "distinct_positions": 90,
+            "component_widths": [
+              9
+            ]
+          },
+          {
+            "new_knots": 10,
+            "live_knots": 10,
+            "accumulated_knots": 45,
+            "distinct_positions": 116,
+            "component_widths": [
+              10
+            ]
+          },
+          {
+            "new_knots": 11,
+            "live_knots": 11,
+            "accumulated_knots": 56,
+            "distinct_positions": 147,
+            "component_widths": [
+              11
+            ]
+          }
+        ],
+        "first_spare_child_all_parent_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_spare_child_any_parent_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "relay": {
+        "active": [
+          {
+            "new_knots": 0,
+            "live_knots": 4,
+            "accumulated_knots": 4,
+            "distinct_positions": 10,
+            "component_widths": [
+              1,
+              3
+            ]
+          },
+          {
+            "new_knots": 4,
+            "live_knots": 4,
+            "accumulated_knots": 8,
+            "distinct_positions": 15,
+            "component_widths": [
+              1,
+              3
+            ]
+          },
+          {
+            "new_knots": 3,
+            "live_knots": 3,
+            "accumulated_knots": 11,
+            "distinct_positions": 20,
+            "component_widths": [
+              1,
+              2
+            ]
+          },
+          {
+            "new_knots": 4,
+            "live_knots": 4,
+            "accumulated_knots": 15,
+            "distinct_positions": 28,
+            "component_widths": [
+              1,
+              3
+            ]
+          },
+          {
+            "new_knots": 6,
+            "live_knots": 6,
+            "accumulated_knots": 21,
+            "distinct_positions": 40,
+            "component_widths": [
+              2,
+              4
+            ]
+          },
+          {
+            "new_knots": 8,
+            "live_knots": 8,
+            "accumulated_knots": 29,
+            "distinct_positions": 56,
+            "component_widths": [
+              3,
+              5
+            ]
+          },
+          {
+            "new_knots": 10,
+            "live_knots": 10,
+            "accumulated_knots": 39,
+            "distinct_positions": 76,
+            "component_widths": [
+              4,
+              6
+            ]
+          },
+          {
+            "new_knots": 12,
+            "live_knots": 12,
+            "accumulated_knots": 51,
+            "distinct_positions": 100,
+            "component_widths": [
+              5,
+              7
+            ]
+          },
+          {
+            "new_knots": 14,
+            "live_knots": 14,
+            "accumulated_knots": 65,
+            "distinct_positions": 128,
+            "component_widths": [
+              6,
+              8
+            ]
+          },
+          {
+            "new_knots": 16,
+            "live_knots": 16,
+            "accumulated_knots": 81,
+            "distinct_positions": 160,
+            "component_widths": [
+              7,
+              9
+            ]
+          },
+          {
+            "new_knots": 18,
+            "live_knots": 18,
+            "accumulated_knots": 99,
+            "distinct_positions": 196,
+            "component_widths": [
+              8,
+              10
+            ]
+          }
+        ],
+        "quiet": [
+          {
+            "new_knots": 0,
+            "live_knots": 3,
+            "accumulated_knots": 4,
+            "distinct_positions": 9,
+            "component_widths": [
+              3
+            ]
+          },
+          {
+            "new_knots": 3,
+            "live_knots": 3,
+            "accumulated_knots": 7,
+            "distinct_positions": 12,
+            "component_widths": [
+              3
+            ]
+          },
+          {
+            "new_knots": 1,
+            "live_knots": 1,
+            "accumulated_knots": 8,
+            "distinct_positions": 13,
+            "component_widths": [
+              1
+            ]
+          },
+          {
+            "new_knots": 1,
+            "live_knots": 1,
+            "accumulated_knots": 9,
+            "distinct_positions": 15,
+            "component_widths": [
+              1
+            ]
+          },
+          {
+            "new_knots": 2,
+            "live_knots": 2,
+            "accumulated_knots": 11,
+            "distinct_positions": 19,
+            "component_widths": [
+              2
+            ]
+          },
+          {
+            "new_knots": 3,
+            "live_knots": 3,
+            "accumulated_knots": 14,
+            "distinct_positions": 25,
+            "component_widths": [
+              3
+            ]
+          }
+        ],
+        "relay_age": 3,
+        "axial_launch_age": 4,
+        "release_component_knots": 2,
+        "relay_top_fresh_if_only_live": [
+          2
+        ],
+        "joint_relabeling_at_release_agrees": true,
+        "reduced_whole_part_literal_costs": [
+          {
+            "age": 3,
+            "own_births": 1,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 1
+          },
+          {
+            "age": 4,
+            "own_births": 2,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 5,
+            "own_births": 3,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 6,
+            "own_births": 4,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 7,
+            "own_births": 5,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 8,
+            "own_births": 6,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 9,
+            "own_births": 7,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          },
+          {
+            "age": 10,
+            "own_births": 8,
+            "same_fresh_and_roster_after_end_restriction": true,
+            "own_number_of_unaries": 2
+          }
+        ],
+        "following_axial_and_mixed_births": [
+          {
+            "age": 5,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 1,
+            "mixed_fresh_histogram": {
+              "2": 1
+            }
+          },
+          {
+            "age": 6,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 2,
+            "mixed_fresh_histogram": {
+              "2": 2
+            }
+          },
+          {
+            "age": 7,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 3,
+            "mixed_fresh_histogram": {
+              "2": 3
+            }
+          },
+          {
+            "age": 8,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 4,
+            "mixed_fresh_histogram": {
+              "2": 4
+            }
+          },
+          {
+            "age": 9,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 5,
+            "mixed_fresh_histogram": {
+              "2": 5
+            }
+          },
+          {
+            "age": 10,
+            "each_pure": 1,
+            "pure_fresh": 2,
+            "mixed": 6,
+            "mixed_fresh_histogram": {
+              "2": 6
+            }
+          }
+        ]
+      },
+      "spent_witness": {
+        "joined": {
+          "source": {
+            "knots": 6,
+            "distinctions": 14,
+            "supports": [
+              [
+                0,
+                1,
+                10,
+                11
+              ],
+              [
+                2,
+                3,
+                12,
+                13
+              ],
+              [
+                0,
+                2,
+                4,
+                5,
+                6
+              ],
+              [
+                1,
+                4,
+                7,
+                8
+              ],
+              [
+                3,
+                5,
+                7,
+                9
+              ],
+              [
+                6,
+                8,
+                9
+              ]
+            ],
+            "parity_full_star_projections": 6,
+            "nae_local_rows_extended": 92
+          },
+          "live_stars": [
+            [
+              0,
+              1,
+              10,
+              11
+            ],
+            [
+              2,
+              3,
+              12,
+              13
+            ]
+          ],
+          "joint_relabeling_of_source_agrees": true,
+          "layer1_parents": [
+            [
+              0,
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "layer1_fresh": [
+            2,
+            2,
+            2
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 2,
+              "accumulated_knots": 6,
+              "distinct_positions": 14,
+              "component_widths": [
+                2
+              ]
+            },
+            {
+              "new_knots": 3,
+              "live_knots": 3,
+              "accumulated_knots": 9,
+              "distinct_positions": 20,
+              "component_widths": [
+                3
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 13,
+              "distinct_positions": 28,
+              "component_widths": [
+                4
+              ]
+            },
+            {
+              "new_knots": 5,
+              "live_knots": 5,
+              "accumulated_knots": 18,
+              "distinct_positions": 38,
+              "component_widths": [
+                5
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 24,
+              "distinct_positions": 50,
+              "component_widths": [
+                6
+              ]
+            },
+            {
+              "new_knots": 7,
+              "live_knots": 7,
+              "accumulated_knots": 31,
+              "distinct_positions": 64,
+              "component_widths": [
+                7
+              ]
+            }
+          ]
+        },
+        "separate": {
+          "source": {
+            "knots": 6,
+            "distinctions": 14,
+            "supports": [
+              [
+                0,
+                1,
+                10,
+                11
+              ],
+              [
+                2,
+                3,
+                12,
+                13
+              ],
+              [
+                0,
+                4,
+                5,
+                6
+              ],
+              [
+                1,
+                4,
+                7,
+                8
+              ],
+              [
+                3,
+                5,
+                7,
+                9
+              ],
+              [
+                2,
+                6,
+                8,
+                9
+              ]
+            ],
+            "parity_full_star_projections": 6,
+            "nae_local_rows_extended": 84
+          },
+          "live_stars": [
+            [
+              0,
+              1,
+              10,
+              11
+            ],
+            [
+              2,
+              3,
+              12,
+              13
+            ]
+          ],
+          "joint_relabeling_of_source_agrees": true,
+          "layer1_parents": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "layer1_fresh": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 2,
+              "accumulated_knots": 6,
+              "distinct_positions": 14,
+              "component_widths": [
+                1,
+                1
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 10,
+              "distinct_positions": 22,
+              "component_widths": [
+                2,
+                2
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 16,
+              "distinct_positions": 34,
+              "component_widths": [
+                3,
+                3
+              ]
+            },
+            {
+              "new_knots": 8,
+              "live_knots": 8,
+              "accumulated_knots": 24,
+              "distinct_positions": 50,
+              "component_widths": [
+                4,
+                4
+              ]
+            },
+            {
+              "new_knots": 10,
+              "live_knots": 10,
+              "accumulated_knots": 34,
+              "distinct_positions": 70,
+              "component_widths": [
+                5,
+                5
+              ]
+            },
+            {
+              "new_knots": 12,
+              "live_knots": 12,
+              "accumulated_knots": 46,
+              "distinct_positions": 94,
+              "component_widths": [
+                6,
+                6
+              ]
+            }
+          ]
+        }
+      },
+      "minimal_competition": [
+        {
+          "source": {
+            "knots": 2,
+            "distinctions": 5,
+            "supports": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ]
+            ],
+            "parity_full_star_projections": 2,
+            "nae_local_rows_extended": 12
+          },
+          "first_pure_unaries": 2,
+          "A_pure_widths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 2,
+              "accumulated_knots": 2,
+              "distinct_positions": 5,
+              "component_widths": [
+                1,
+                1
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 6,
+              "distinct_positions": 13,
+              "component_widths": [
+                2,
+                2
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 12,
+              "distinct_positions": 25,
+              "component_widths": [
+                3,
+                3
+              ]
+            },
+            {
+              "new_knots": 8,
+              "live_knots": 8,
+              "accumulated_knots": 20,
+              "distinct_positions": 41,
+              "component_widths": [
+                4,
+                4
+              ]
+            },
+            {
+              "new_knots": 10,
+              "live_knots": 10,
+              "accumulated_knots": 30,
+              "distinct_positions": 61,
+              "component_widths": [
+                5,
+                5
+              ]
+            },
+            {
+              "new_knots": 12,
+              "live_knots": 12,
+              "accumulated_knots": 42,
+              "distinct_positions": 85,
+              "component_widths": [
+                6,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "knots": 3,
+            "distinctions": 7,
+            "supports": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                3,
+                4
+              ],
+              [
+                3,
+                5,
+                6
+              ]
+            ],
+            "parity_full_star_projections": 3,
+            "nae_local_rows_extended": 18
+          },
+          "first_pure_unaries": 1,
+          "A_pure_widths": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "layers": [
+            {
+              "new_knots": 0,
+              "live_knots": 3,
+              "accumulated_knots": 3,
+              "distinct_positions": 7,
+              "component_widths": [
+                1,
+                2
+              ]
+            },
+            {
+              "new_knots": 4,
+              "live_knots": 4,
+              "accumulated_knots": 7,
+              "distinct_positions": 15,
+              "component_widths": [
+                1,
+                3
+              ]
+            },
+            {
+              "new_knots": 6,
+              "live_knots": 6,
+              "accumulated_knots": 13,
+              "distinct_positions": 27,
+              "component_widths": [
+                2,
+                4
+              ]
+            },
+            {
+              "new_knots": 8,
+              "live_knots": 8,
+              "accumulated_knots": 21,
+              "distinct_positions": 43,
+              "component_widths": [
+                3,
+                5
+              ]
+            },
+            {
+              "new_knots": 10,
+              "live_knots": 10,
+              "accumulated_knots": 31,
+              "distinct_positions": 63,
+              "component_widths": [
+                4,
+                6
+              ]
+            },
+            {
+              "new_knots": 12,
+              "live_knots": 12,
+              "accumulated_knots": 43,
+              "distinct_positions": 87,
+              "component_widths": [
+                5,
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

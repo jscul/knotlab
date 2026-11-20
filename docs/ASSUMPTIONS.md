@@ -180,6 +180,7 @@ evidence: results and their status come from the records each entry links.
 | [A122](#a122--a-bell-reading-uses-a-declared-weighting-of-the-states) | A Bell reading uses a declared weighting of the states | scaffold | Assumed |
 | [A123](#a123--built-and-labelled-sampled-starts-supply-a-bell-comparison) | Built and labelled sampled starts supply a Bell comparison | scaffold | Assumed |
 | [A124](#a124--one-context-can-be-given-a-changed-outcome-rule) | One context can be given a changed outcome rule | scaffold | Assumed |
+| [A125](#a125--independent-products-can-be-read-by-their-parents) | Independent products can be read by their parents | scaffold | Assumed |
 
 ## Entries
 
@@ -3615,3 +3616,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Remove the switch, vary the mask and check both marginals. A future model would need to derive the dependence and preserve marginals itself; the ordinary join law has no such pair-of-settings input.
 - **History.**
   - 2026-11-20 · Recorded for the comparison of separated readings.
+
+### A125 · Independent products can be read by their parents
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Recognize a product as a finite set of newly born knots whose later members take every parent from the preceding members of that same product. Require infinitely many disjoint living releases for a generator. Permit extra mixed births outside each product. Read from complete present holdings with no names or growth log. The chosen source, product language and release sizes may be unbounded in the reading.
+- **Why.** The generator study used this test to make the owner's question about separate lasting things falsifiable. The requirement that every parent stays inside excludes a descendant that needs its source at each step.
+- **Rests on it.** Interpreting the proved periodic and nested families as things produced by the source. The physical births, their inputs and the matched fresh counts follow from the ordinary law independently of that interpretation.
+- **Challenge.** Require independent replay of all outgoing births and loose counts, a fixed packet shape, or a reader restricted to the growing end. A product that passes one of these stronger tests could replace the corresponding present scaffold. The current periodic examples change in isolated replay and the symmetric end misses the designated pair.
+- **History.**
+  - 2026-11-20 · Registered for the [ordinary generator study](../research/GENERATORS-20261120-001/preregistration.md). Tested both knot laws, full and growing-end readings, any-parent and all-parent ancestry, and the [matched physical preparations](../research/GENERATORS-20261120-001/meeting.md). The stronger isolation requirement and recognition of fixed copies stay open.

@@ -717,14 +717,7 @@ census, a growth's dimension is the number of endless chains feeding one piece o
 the map, and a ring makes it exponential; two is typical because a relay or two
 one-chain knots is the commonest way to keep growing
 ([decision note](../research/CLUSTER-ALL-20261119-001/cluster_all.md)).
-And without rounds (`ROUND-FREE-20261119-001`, frozen runs, referee pending)?
-Making one join at a time from what is already built, the order changes what is
-built, and can even decide whether a growth lives, because the cheapest count
-needs to know a new junction's partners before they exist. The rounds supply that
-by making all partners at once; the cluster map supplies it with no tick at all,
-and then the order no longer matters. The ratios survive read by size, and each
-part of a join keeps exactly its own growth while the rest lives in the joint
-([decision note](../research/ROUND-FREE-20261119-001/round_free.md)).
+When births are made one at a time, recomputing each fresh count from the knots then live can change which births occur. In the identified class the supplied map gives the same completed growth to every order that eventually serves each persistently ready birth. On two seven-knot starts, the current holdings also suffice to recognize the exact ready births. Under strict global joins-first, weak fairness applied only to the prioritized list can leave a persistently possible one-parent birth unbuilt forever. The ratios in the original map study concern completed growth by size. [Original round-free study](../research/ROUND-FREE-20261119-001/round_free.md) · [Present holdings and scheduling](../research/SERIAL-REPAIRS-20261120-001/present_proof.md)
 And at scale (`SCALE-SHARE-20261119-001`, frozen samples, refereed)? As
 starts of touching knots get larger, almost all of them cannot start, because
 most ways of arranging many knots crowd each knot with shared distinctions; of

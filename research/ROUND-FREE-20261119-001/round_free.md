@@ -28,7 +28,7 @@ junction spans (`RING-PAIR-20261119-001`).
   partners may not exist yet. The rounds supply that by making all partners at once. That is the work the outside tick was doing.
 - **The law that needs no rounds.** Make a junction for a cluster of the map as soon as all its parent junctions exist; nothing
   else is a move.
-  - It is order-free in its completed structure: every order reaches the same structure in the end. Making one junction never
+  - Every order that eventually serves each persistently ready birth reaches the same completed structure. Making one knot never
     blocks another (a monotone closure, the advisor's argument, confirmed by the referee). What exists after a fixed number of
     moves still differs between orders.
   - It needs no clock. The only before-and-after is that a junction comes after its parents. Junctions of different sizes are
@@ -75,6 +75,10 @@ What this adds:
 - the round shown to be the cluster's size less one;
 - part shares by size, with each part keeping its stand-alone growth.
 
+### Fairness qualification, 20 November 2026
+
+The original trials used two schedules of one current-state rule. On two later seven-knot examples a different rule can read the current physical holdings and recognize all ready births without a supplied map. With strict global joins-first and weak fairness applied only to its filtered list, even the exact map can leave a unary birth unbuilt forever. A unary may return to the list infinitely often without ever remaining on it continuously. All finite maximal orders of a finite target still finish. The owner report reproduced below records the wording originally sent. [Fairness proof](../SERIAL-REPAIRS-20261120-001/present_proof.md)
+
 ## Limitations
 
 - The naive laws are two schedules of one present-state law. The advisor's three-cause repair test was not run (direction #2).
@@ -99,8 +103,7 @@ two Narrowings, no Block.
 - **Confirmed.** `serial.py`'s present-state law is a fair serial reading of the policy. The referee's own implementation
   reproduces the order effect: two touching three-place knots close in 12 of 40 orders, and a lone four-place knot keeps growing in
   38 of 40. Part C's shares match its own brute force at sizes 1 to 13 for the 5–7 join and the 5–5 join through a path; the
-  ring-with-a-hanging-pair join was not checked. The closure law is a monotone closure, so every order reaches the same completed
-  structure in general.
+  ring-with-a-hanging-pair join was not checked. The fixed-map closure reaches the full structure on every finite maximal order and every infinite order fair to its underlying ready births.
 - **Folded in the same day**, logged in `docs/CORRECTIONS.md` and knotlab's `HISTORY.md`:
   1. **Narrowing (scope of the claim).** The closure law reads the whole unrolled map in advance, which encodes every future join.
      It trades the tick for knowledge of the map. It does not show that a law reading only what is built can do without ticks.

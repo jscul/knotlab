@@ -1,0 +1,327 @@
+{
+  "method": "direct cluster enumeration; exact ideal DP with independent-component interleaving",
+  "counting": "structural events with fixed slot allocation; source knots already present",
+  "lookahead_size": 5,
+  "checked_size": 4,
+  "parallel_multiplicity": 9,
+  "quiet": {
+    "source_knots": 7,
+    "source_distinctions": 71,
+    "common_used_source_ports": [
+      63,
+      65
+    ],
+    "same_compare_parents": "U,V",
+    "common_fresh": 2,
+    "successor_inventory": [
+      {
+        "cluster": "U,V,a1",
+        "parents": [
+          "U,V",
+          "U,a1"
+        ]
+      },
+      {
+        "cluster": "U,V,b1",
+        "parents": [
+          "U,V",
+          "V,b1"
+        ]
+      }
+    ],
+    "near_source_opens": [
+      [
+        "U",
+        2
+      ],
+      [
+        "V",
+        2
+      ]
+    ],
+    "far_source_opens": 4,
+    "common_first_present_snapshot": {
+      "demand": 0,
+      "fresh": 1
+    },
+    "ordinary_both_laws_by_layer": [
+      {
+        "new_cluster_size": 2,
+        "births": 7,
+        "by_parent_count_and_fresh": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "new_cluster_size": 3,
+        "births": 10,
+        "by_parent_count_and_fresh": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            8
+          ]
+        ]
+      },
+      {
+        "new_cluster_size": 4,
+        "births": 9,
+        "by_parent_count_and_fresh": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3
+          ],
+          [
+            3,
+            1,
+            4
+          ]
+        ]
+      }
+    ],
+    "finite_linear_extension_counts": [
+      {
+        "max_cluster_size": 2,
+        "near": {
+          "events": 3,
+          "linear_extensions": 6,
+          "reachable_ideals": 8,
+          "enabled_ideal_transitions": 12
+        },
+        "far": {
+          "events": 4,
+          "linear_extensions": 24,
+          "reachable_ideals": 16,
+          "enabled_ideal_transitions": 32
+        },
+        "joint_events": 7,
+        "joint_linear_extensions": 5040,
+        "joint_reachable_ideals": 128
+      },
+      {
+        "max_cluster_size": 3,
+        "near": {
+          "events": 7,
+          "linear_extensions": 272,
+          "reachable_ideals": 34,
+          "enabled_ideal_transitions": 71
+        },
+        "far": {
+          "events": 10,
+          "linear_extensions": 34560,
+          "reachable_ideals": 113,
+          "enabled_ideal_transitions": 318
+        },
+        "joint_events": 17,
+        "joint_linear_extensions": 182817423360,
+        "joint_reachable_ideals": 3842
+      },
+      {
+        "max_cluster_size": 4,
+        "near": {
+          "events": 12,
+          "linear_extensions": 101376,
+          "reachable_ideals": 122,
+          "enabled_ideal_transitions": 313
+        },
+        "far": {
+          "events": 14,
+          "linear_extensions": 1680384,
+          "reachable_ideals": 166,
+          "enabled_ideal_transitions": 452
+        },
+        "joint_events": 26,
+        "joint_linear_extensions": 1645195070590156800,
+        "joint_reachable_ideals": 20252
+      }
+    ],
+    "mixed_size_prefix": [
+      "U,a1",
+      "U,V",
+      "U,V,a1"
+    ],
+    "inverted_mixed_prefix_refused": true
+  },
+  "shifted": {
+    "source_knots": 7,
+    "source_distinctions": 71,
+    "common_used_source_ports": [
+      63,
+      65
+    ],
+    "same_compare_parents": "U,V",
+    "common_fresh": 1,
+    "successor_inventory": [
+      {
+        "cluster": "U,V,W",
+        "parents": [
+          "U,V",
+          "U,W",
+          "V,W"
+        ]
+      }
+    ],
+    "near_source_opens": [
+      [
+        "U",
+        2
+      ],
+      [
+        "V",
+        2
+      ],
+      [
+        "W",
+        2
+      ]
+    ],
+    "far_source_opens": 2,
+    "common_first_present_snapshot": {
+      "demand": 0,
+      "fresh": 1
+    },
+    "ordinary_both_laws_by_layer": [
+      {
+        "new_cluster_size": 2,
+        "births": 5,
+        "by_parent_count_and_fresh": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "new_cluster_size": 3,
+        "births": 4,
+        "by_parent_count_and_fresh": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "new_cluster_size": 4,
+        "births": 5,
+        "by_parent_count_and_fresh": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      }
+    ],
+    "finite_linear_extension_counts": [
+      {
+        "max_cluster_size": 2,
+        "near": {
+          "events": 3,
+          "linear_extensions": 6,
+          "reachable_ideals": 8,
+          "enabled_ideal_transitions": 12
+        },
+        "far": {
+          "events": 2,
+          "linear_extensions": 2,
+          "reachable_ideals": 4,
+          "enabled_ideal_transitions": 4
+        },
+        "joint_events": 5,
+        "joint_linear_extensions": 120,
+        "joint_reachable_ideals": 32
+      },
+      {
+        "max_cluster_size": 3,
+        "near": {
+          "events": 4,
+          "linear_extensions": 6,
+          "reachable_ideals": 9,
+          "enabled_ideal_transitions": 13
+        },
+        "far": {
+          "events": 5,
+          "linear_extensions": 16,
+          "reachable_ideals": 13,
+          "enabled_ideal_transitions": 20
+        },
+        "joint_events": 9,
+        "joint_linear_extensions": 12096,
+        "joint_reachable_ideals": 117
+      },
+      {
+        "max_cluster_size": 4,
+        "near": {
+          "events": 5,
+          "linear_extensions": 6,
+          "reachable_ideals": 10,
+          "enabled_ideal_transitions": 14
+        },
+        "far": {
+          "events": 9,
+          "linear_extensions": 768,
+          "reachable_ideals": 41,
+          "enabled_ideal_transitions": 83
+        },
+        "joint_events": 14,
+        "joint_linear_extensions": 9225216,
+        "joint_reachable_ideals": 410
+      }
+    ],
+    "mixed_size_prefix": [
+      "U,V",
+      "U,W",
+      "V,W",
+      "U,V,W"
+    ],
+    "inverted_mixed_prefix_refused": true
+  }
+}

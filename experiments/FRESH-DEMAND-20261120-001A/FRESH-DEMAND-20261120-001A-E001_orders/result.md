@@ -1,0 +1,5 @@
+# Fresh counts and actual one-at-a-time births
+
+Both actual laws and both rulers checked on the matched sources. Exact prefixes through four events, fixed-map orders through size four, and 320 uniform labelled tree starts in five size strata, including stalled starts and serial censoring. Among 220 two-parent births per law, 107 had a complete parent pair-bond reading observed with different fresh counts. Of 91 marked source pairs, both sampled schedules formed 47, with 20 different fresh counts. One intermediate ternary on a joins-first trace closed under parity and continued under not-all-equal after permanently displacing the marked pair in both. The complete numerical receipts have all been replayed byte for byte. Independent program referee pending.
+
+[Sample](../../../research/FRESH-DEMAND-20261120-001/sampling.md) · [Present-state orders](../../../research/FRESH-DEMAND-20261120-001/serial_orders.md) · [Fixed-map orders](../../../research/FRESH-DEMAND-20261120-001/fixed_map.md) · [Knot laws and rulers](../../../research/FRESH-DEMAND-20261120-001/scaffolds.md) · [Information bound checks](../../../research/FRESH-DEMAND-20261120-001/conditional_checks.md)

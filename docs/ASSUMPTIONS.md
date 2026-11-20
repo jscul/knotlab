@@ -166,6 +166,7 @@ evidence: results and their status come from the records each entry links.
 | [A109](#a109--self-feeding-loops-are-few-in-kind-and-recur-as-shared-routines-the-owners-eddies) | Self-feeding loops are few in kind and recur as shared routines, the owner's eddies | working premise | Under challenge |
 | [A110](#a110--blow-up-is-expected-and-the-unlimited-structure-is-read-by-sampling-it) | Blow-up is expected, and the unlimited structure is read by sampling it | working premise | Assumed |
 | [A111](#a111--a-moving-pattern-is-measured-against-one-allowed-state) | A moving pattern is measured against one allowed state | reading | Confirmed |
+| [A112](#a112--the-logic-comes-before-space-and-would-sit-beneath-locality) | The logic comes before space and would sit beneath locality | interpretation | Assumed |
 
 ## Entries
 
@@ -3412,3 +3413,26 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Under all allowed value translations, a deterministic update of one state must add a fixed allowed difference. Iterating it returns after two applications. A marked arrival or differences between multiple states give other readings to test.
 - **History.**
   - 2026-11-19 · The current-state reading and its alternative were tested in `MOTION-AT-EDDY-20261119-001`. The fixed reference is retained for this class of moving patterns. The translation argument gives its exact scope.
+
+### A112 · The logic comes before space and would sit beneath locality
+
+**Assumed** · 2026-11-19 · interpretation
+
+- **Statement.** The owner's interpretation, in the owner's words (19 November 2026, Pacific time): "This kind of contradicts
+  Einstein's theory of locality/space if true, right? Similar to quantum mechanics, the logic is not spatial yet." Read in the
+  program's terms: space is not given, nearness is read from the allowed states alone, and the whole can hold relations that no
+  pair of distinctions shows, as entangled states do. That does not contradict Einstein's locality, which governs space once
+  there is one, provided ordinary locality comes out at large scales; on this reading the logic would sit beneath locality, not
+  against it. The likeness to quantum mechanics is one of structure (the literature's GHZ state in Mermin's form is built from
+  parity rules), not of physics: the program's knots have definite states, with no probabilities or amplitudes. Stated in the
+  Intuitions guide, lesson 8.5 ([lesson](../INTUITIONS.md#85-locality-before-space)).
+- **Why.** Recorded at the owner's request, after the project discussion of what pair distances miss (lesson 8.4).
+- **Rests on it.** No result. It frames lesson 8.5.
+- **Challenge.** It would be challenged if the structure the whole holds beyond pairs were shown to reduce to pair distances
+  (the likeness to entanglement would then go), or if no law of this kind can give a largest speed at which a change spreads at
+  large scales, so that ordinary locality cannot come out. The cheapest first test is a law that moves a pattern by reading only
+  what it shares distinctions with, then asks whether its reach per round is bounded; `EDDY-WORLD-20261119-001`
+  ([decision note](../research/EDDY-WORLD-20261119-001/decision.md), referee pending) found patterns that keep their identity and
+  stay attached, and travelling state patterns that the growth rule never chooses.
+- **History.**
+  - 2026-11-19 · Recorded, in the owner's words, as the owner's interpretation; framed by Intuitions lesson 8.5.

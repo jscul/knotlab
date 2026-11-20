@@ -103,6 +103,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [8.2 Four kinds of growth](#82-four-kinds-of-growth)
   - [8.3 Reading a blow-up by sampling](#83-reading-a-blow-up-by-sampling)
   - [8.4 What distance carries of what grows](#84-what-distance-carries-of-what-grows)
+  - [8.5 Locality before space](#85-locality-before-space)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -3071,6 +3072,77 @@ distance, it fails on computed cases. If three-way distances count too, it
 survives everything found so far. What no distance can show is which junction
 holds which distinction, and no reading of the allowed states can show that
 either. A97 stays under challenge.
+
+### 8.5 Locality before space
+
+**The owner's question.** On 19 November 2026 (Pacific time) the owner asked:
+"This kind of contradicts Einstein's theory of locality/space if true, right?
+Similar to quantum mechanics, the logic is not spatial yet." This lesson gives
+the program's answer. It is an interpretation, recorded as assumption A112,
+not a result.
+
+**Where the remark is right.**
+
+- **Space is not given.** Nothing in the program starts from a space. Which
+  knots share distinctions is the only nearness there is to begin with, and
+  bond distance is read from the allowed states (lessons 2.4 and 4.6). What is
+  near is produced by the logic, not put in.
+- **The whole holds what no pair holds.** One parity knot hides a full bit
+  from every pair of its distinctions (lesson 2.3). In grown structures, pairs
+  of arrangements exist with equal pair bond distances but different allowed
+  states, and three-way distances separate every such case found (lesson 8.4,
+  refereed). Codex's studies reporting that no fixed number of distinctions
+  read together suffices at every size are referee pending.
+- **The likeness to quantum mechanics.** Entangled states have this shape
+  too: the whole holds facts that no part, and in some cases no pair of parts,
+  holds. The literature's GHZ state (Greenberger, Horne and Zeilinger 1989), in
+  Mermin's three-particle form (Mermin 1990), is built from parity rules: for
+  each of four choices of measurement the product of three outcomes is fixed,
+  while every pair of outcomes looks free. What rules out every local
+  explanation is that no single definite assignment satisfies all four rules.
+  A parity knot is one such rule, with definite states, so it shares the
+  hiding and not the impossibility. The likeness is one of structure, not of
+  physics.
+
+**Why it is not a contradiction.** Einstein's locality is a rule about space
+once there is one: no signal or cause travels faster than light. A theory in
+which space is built from something deeper does not break that rule, provided
+ordinary locality comes out of it at large scales. So the program need not be
+against Einstein's locality; it would sit underneath it, if ordinary locality
+comes out. Quantum mechanics already has correlations that ignore distance and
+still send no signal faster than light (the literature's no-signalling
+theorem). Einstein's stronger demand, that things far apart have separate
+definite states (Einstein, Podolsky and Rosen 1935), is the one quantum
+mechanics does break (Bell 1964); the program makes no claim about it. Other
+programmes also start from relations that are not spatial and let spacetime
+come out of them: the literature's causal sets (Bombelli, Lee, Meyer and
+Sorkin 1987), which start from a causal order, and spacetime from
+entanglement (Van Raamsdonk 2010), argued within the literature's gauge and
+gravity duality. What the program does is read nearness from the allowed
+states of a definite logic and nothing else.
+
+**What has not been earned.**
+
+- **This is not quantum mechanics.** A state of the program's knots is allowed
+  or not, with no probabilities and no amplitudes.
+- **Ordinary locality has not come out.** Nothing yet shows that, at large
+  scales, the logic gives the locality Einstein's theory needs.
+- **The first world experiment found lasting things, but no signal.** Codex attached
+  five-knot self-feeding rings to a background growing in dimension two
+  ([EDDY-WORLD-20261119-001](research/EDDY-WORLD-20261119-001/decision.md),
+  referee pending). The rings kept their identity and stayed attached to the
+  same knots. But the growth rule moved nothing in this
+  study: travelling state patterns exist among the allowed states, and the
+  rule never chooses them. With no signal there is no speed yet, and no largest
+  speed.
+- **The first real test is open.** If the rules themselves gave a largest
+  speed at which a change can spread, that would be the first test of this
+  logic against Einstein's locality. Whether they do is open.
+
+**Reading.** On the program's reading the owner's remark is right about the
+order of things: here logic comes before space, as some physics programmes put
+entanglement or causal order before spacetime. Whether Einstein's locality
+comes out at large scales is an open question, not a contradiction.
 
 ## Glossary
 

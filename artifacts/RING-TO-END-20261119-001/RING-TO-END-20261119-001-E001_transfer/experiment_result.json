@@ -1,0 +1,76 @@
+{
+  "experiment_id": "RING-TO-END-20261119-001-E001",
+  "status": "Complete",
+  "evidence_stage": "exploratory",
+  "decision": "Two fresh occupied distinctions written together at a hot unary birth can carry a ring's state into the next growth layer. The one-spare attachment has a deterministic four-write minimum and 57 versus 56 births at fixed first incidence. The bare ring needs twenty writes and gives 20 versus 15. Independent delayed writes can lose the destination.",
+  "decision_note": "research/RING-TO-END-20261119-001/decision.md",
+  "frozen_design_commits": [
+    "5507df437320121b0171692e4ff8adce103ceece",
+    "ff1516a4acb8eac2f3e51c56260a79705ca6df37",
+    "357aca197f66d7978cda1ad9b0743027cb8dc3c0"
+  ],
+  "evidence": "Exact computation and proofs within the documented law, preparations, and event conventions",
+  "review": "Independent program referee pending",
+  "comparisons": {
+    "named_sources": 5,
+    "total_write_lower_bounds": {
+      "attached_one_spare": 4,
+      "bare": 20
+    },
+    "second_births_on_held_incidence": {
+      "attached_one_spare": [
+        56,
+        57
+      ],
+      "bare": [
+        15,
+        20
+      ]
+    },
+    "two_depth_ideals_bare": 9765625,
+    "bare_delayed_first_write_subsets": 1024,
+    "tiny_allocations_and_serializations": 1836,
+    "tiny_named_lifts": 111
+  },
+  "sample": "One per named source, allowed physical fresh choice or explicitly enumerated schedule subset in its stated control. The 60 recodings are a deterministic seeded checking sample.",
+  "measured_objects": [
+    {
+      "object": "least local fresh write that carries ring activity to the growing end",
+      "standard": "fixed first incidence with deposited pairs erased",
+      "population": "fresh-only coupled hot unary births on five named ring preparations",
+      "definition": "least positive number of fresh occupied distinctions on a child with quiet spent input",
+      "outcome": "two per signaling child; attached deterministic whole-source minimum four writes with 56 versus 57 second births; bare minimum twenty",
+      "status": "proved"
+    },
+    {
+      "object": "order-independent transfer from a loaded bare five-ring",
+      "standard": "one loose-port event with a new parity pair at birth",
+      "population": "all finite causal orders on the all-active bare sector and all two-depth ideals",
+      "definition": "preserve old values and quotient equal fresh-name choices at odd inputs",
+      "outcome": "all orders agree at every completed finite depth; separate delayed deposits give 15 through 20 second births",
+      "status": "proved"
+    }
+  ],
+  "validation": "Independent algorithms or mathematical lower and upper controls, literal replay, scoped validation, frozen-input checks.",
+  "artifacts": {
+    "sharp_cost.json": "646235431b628a471d9590d2a426b52fd02ee0bed3441273ee72eaf240a86cd6",
+    "transfer.json": "fd7808f066b87d47021563d143b57c8d2ac19ca4740e03341ea03cac6d4be96b"
+  },
+  "scientific_notes": {
+    "decision.md": "11d5aa0fa8ce7d3f9f9db9e6090f370773e0024c6bb205669e3b6d9af8867e81",
+    "definitions.md": "1b91086d66ea2999f06858fe5d00cea2e8678c2c7df5b0155e2dcb1106adae85",
+    "preregistration.md": "896ee51e5bfabfd276859d3b228a9b2a59a3e8a9fa218351ce003f39fef449f1",
+    "sharp_cost.md": "b0266985d2ac388f07f182ae2483cd8cbd25b6c6932f4c3e3e82e87913cfba1c",
+    "total_transfer_design.md": "ce05684e88f9086bd653c59f6b0560de8ffc05d8c5c60537c8b40067c82aebfb",
+    "transfer_checks.md": "e952368549d3d424151ba6761eee86e0ff54a173df8d2dce80f24e387160d895",
+    "transfer_proof.md": "888a4e2cd1a7e9be2b622901990b78c259c888c9d4a528d6f736627a4c0aba08"
+  },
+  "reproduction": {
+    "contract.json": "d4ef14ee076bbd34020a47797473e234cb2074ecde248051fc290242b6fb80e6",
+    "identity.json": "ff57c47d709def26d144cd37c0a61c8da0031f047f71d679d6e3e8201ea32279",
+    "inputs.json": "80293096788be582304c8b86a901e6427adffc2b14d5232c0db67cc5cd164053",
+    "sharp_cost.py": "7cc462fc76456903d708789e75b08f92c63f96412def40e23ff27063144fe3b1",
+    "transfer.py": "54df76af42c410090da8f66b76e00a7056f7b222f04a98ba97ef952f6c994ccb",
+    "verify.py": "63bd90077cebed2c57a59d9fe387cd0a0a7aceff2360e42bddbae34bf1cfbcb7"
+  }
+}

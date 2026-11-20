@@ -8,6 +8,8 @@ The [design](preregistration.md) was frozen at commit fd556bf96a, SHA-256 a059fc
 
 **With free settings, neither forbidding law exceeds CHSH 2.** Under parity and not-all-equal, each rival retains at least one complete state at every stage and along every infinite history. Each survivor gives an answer to all four possible readings, even after a join permanently eliminates other states. That rules out a GHZ or Mermin–Peres contradiction on the exact surviving readings. Both observers’ marginals stayed fixed when the other setting changed. **Independent referee pending.** [Study and proof](https://github.com/jscul/knotlab/blob/main/research/FORBIDDING-JOIN-20261120-001/decision.md)
 
+One rival grants one fewer fresh distinction when the join can still have three places. The other grants only what that floor requires. Both retain the current input map and give the same result in any order within a funded round.
+
 | Scope | Verdict | Result |
 |---|---|---|
 | Free-setting test | **Status: Successful** | On grown structures, both rivals reached **2** for each parity reading. The not-all-equal maxima were **4/9** for choosing a bit and **178/135** for testing a pair pattern. |

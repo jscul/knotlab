@@ -181,6 +181,7 @@ evidence: results and their status come from the records each entry links.
 | [A123](#a123--built-and-labelled-sampled-starts-supply-a-bell-comparison) | Built and labelled sampled starts supply a Bell comparison | scaffold | Assumed |
 | [A124](#a124--one-context-can-be-given-a-changed-outcome-rule) | One context can be given a changed outcome rule | scaffold | Assumed |
 | [A125](#a125--independent-products-can-be-read-by-their-parents) | Independent products can be read by their parents | scaffold | Assumed |
+| [A126](#a126--growth-never-forbids-what-the-old-knots-allowed) | Growth never forbids what the old knots allowed | scaffold | Assumed |
 
 ## Entries
 
@@ -3637,3 +3638,26 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Require independent replay of all outgoing births and loose counts, a fixed packet shape, or a reader restricted to the growing end. A product that passes one of these stronger tests could replace the corresponding present scaffold. The current periodic examples change in isolated replay and the symmetric end misses the designated pair.
 - **History.**
   - 2026-11-20 · Registered for the [ordinary generator study](../research/GENERATORS-20261120-001/preregistration.md). Tested both knot laws, full and growing-end readings, any-parent and all-parent ancestry, and the [matched physical preparations](../research/GENERATORS-20261120-001/meeting.md). The stronger isolation requirement and recognition of fixed copies stay open.
+
+### A126 · Growth never forbids what the old knots allowed
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** The cheapest growth (A104, `FRESH-COUNT-20261118-001`) is written so that every state the old knots allow can
+  still be completed into an allowed state after a round: each new knot either brings fresh distinctions that can satisfy it or is
+  implied by the old knots, so a new knot never forbids a combination the old knots permitted. This was built into the law, not
+  found. Its named rival is **joining can forbid**: a law under which joining knots may rule out some old combinations.
+- **Why.** Taken by default with the joining rule of the cubic study and the cheapest counts; it keeps every round an extension of
+  the base, never a rewrite of it.
+- **Rests on it.** Every result on the cheapest growth. In particular `ENTANGLEMENT-READ-20261120-001`
+  ([decision note](../research/ENTANGLEMENT-READ-20261120-001/decision.md); refereed): because every old state extends across an
+  ordinary birth, readings on one stage admit a common assignment, CHSH stays at most 2 for any one common weighting, and the
+  only excess found came from settings that are part of the state, not from anything like entanglement. Consequence, read by the
+  coordinator: under this law the logic inside the knots hardly steers growth; which knots share distinctions does.
+- **Challenge.** Goal G18 sets rival laws against this one on the same questions. The first test (backlog B229): the simplest law
+  under which joining can forbid, asked whether its structures survive or end with nothing allowed, then the entanglement test on
+  what survives. The other rivals: merging what the allowed states prove tied, state feeding growth (B210), and a different knot
+  rule under the same growth (parity against not-all-equal). As a scaffold of the current studies, the model is expected to
+  settle which law it uses, or to show which results hold under every reasonable law (G18).
+- **History.**
+  - 2026-11-20 · Recorded at the owner's request with goal G18, naming "joining can forbid" as its rival.

@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "artifact_id": "ENTANGLEMENT-READ-20261120-001A-P001",
+  "canonical_id": "ENTANGLEMENT-READ-20261120-001A-P001",
+  "proof": "ENTANGLEMENT-READ-20261120-001A-P001",
+  "ticket": "ENTANGLEMENT-READ-20261120-001A",
+  "kind": "proof",
+  "status": "Proved",
+  "title": "When ordinary growth admits a common explanation for separated readings",
+  "claim": "Finite ordinary parity and not-all-equal growth preserve old allowed states by projection. Every fixed weighting and setting-independent pair of external reads admits a common explanation, giving all eight CHSH bounds and both no-signalling equalities. For uniform affine states with affine embodied selectors, hiding the other selector in each full affine register is equivalent to a common local-source representation of all full-register tables, including nonlinear local postprocessing.",
+  "standard_statement": "Conservative extensions of satisfiable Boolean constraints carry global sections. Analyze the ordinary growth rule and classify the readouts of finite affine systems with embedded selectors when both responding registers must hide the other setting.",
+  "prior_work": "Known-with-delta. Bell and the sheaf criterion are known; mapping the two ordinary growth rules and the embodied affine whole-register obstruction are the local questions.",
+  "novelty": "candidate-local-delta",
+  "dependencies": [
+    "FRESH-COUNT-20261118-001",
+    "JOIN-GROWTH-20261118-001",
+    "NAE-GROWTH-20261119-001",
+    "HEAVY-GROWTH-20261119-001",
+    "ORDINARY-DYNAMICS-20261120-001Z",
+    "BOND-CLOSURE-20261120-001Z",
+    "FRESH-DEMAND-20261120-001Z",
+    "SERIAL-REPAIRS-20261120-001Z"
+  ],
+  "remaining_obligations": [],
+  "validation": {
+    "level": "V1",
+    "status": "Symbolic proof with reproducible exact checks. Separately authored V2 enumeration for 65,536 parameterizations with one residual bit. Independent referee pending.",
+    "external_review": false,
+    "trusted_kernel": false,
+    "novelty": "candidate-local-delta"
+  },
+  "paths": {
+    "manifest": "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/manifest.json",
+    "proof": "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md",
+    "result": "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/result.json",
+    "identity": "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/identity.json",
+    "check": "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/check.py"
+  },
+  "design_sha256": "6f8fbb8236844e834f5a05ed3fb3f25a5e4f1ded79e4c3fe05e08b7b8e019411",
+  "foundation_contract": "contact-first-atomic-topology-v3",
+  "semantic_domains": [
+    "contact-foundations",
+    "logical-topology"
+  ],
+  "safe_to_conclude": {
+    "contract_frozen": false,
+    "native_recurrence_defined": false,
+    "one_native_recurrence_formed": false,
+    "two_loops_formed": false,
+    "shared_identity_witnessed": false,
+    "two_sided_essential_candidate": false,
+    "candidate_package_persistence_proved": false,
+    "irreducible_joint_contact_formed": false,
+    "loop_erasure_contact_loss_formed": false,
+    "persistent_genuine_contact_formed": false,
+    "logical_knot_formed": false,
+    "atomic_logical_topology_formed": false,
+    "minimal_contact_distance_formed": false,
+    "intrinsic_adjacency_formed": false,
+    "composed_logical_topology_formed": false,
+    "native_paths_formed": false,
+    "connectivity_formed": false,
+    "separation_formed": false,
+    "extended_path_metric_distance_formed": false,
+    "two_cnf_boundary_proved": false,
+    "three_cnf_boundary_proved": false,
+    "affine_xor_boundary_proved": false,
+    "transition_system_boundary_proved": false,
+    "two_cnf_three_cnf_knot_boundary_proved": false,
+    "p_ne_np": false,
+    "physical_ontology": false
+  },
+  "thesis_alignment": null,
+  "evidence_modes": [
+    "obstruction",
+    "proxy-control",
+    "external-presentation"
+  ],
+  "epistemic_class": {
+    "primary": "uniform-family-theorem",
+    "secondary": [
+      "inherited-consequence",
+      "exact-obstruction-or-countermodel",
+      "finite-instance-classification",
+      "external-calibration-or-interpretation"
+    ]
+  },
+  "source_contribution": "The affine-register coupling and projection argument use the stated finite models. The weights that realize the quantum comparison and the joint-context flip are additional operations.",
+  "failure_conditions": [
+    "An allowed old state without an extension under a performed ordinary parity or not-all-equal round.",
+    "A fixed common-state histogram and four remote-index-independent prospective answers exceeding a CHSH bound.",
+    "A uniform affine conditional law whose whole-register marginals hide the remote selector and cannot be represented by the local common-source construction."
+  ],
+  "bindings": {
+    "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md": "861598978ca9bb3a0c321b628d4c4cde47b71b2259b178b01e13f13ee7fa9c17",
+    "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/check.py": "5bbf6d5fb3792b66f335b31938ca1578e0d3172552b7b1043146d6d7f11cd647",
+    "research/ENTANGLEMENT-READ-20261120-001/preregistration.md": "6f8fbb8236844e834f5a05ed3fb3f25a5e4f1ded79e4c3fe05e08b7b8e019411",
+    "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/result.json": "383c12327b60ee4a5f622e334a95895d9b53acfe923f9514c0e5cfe29c6999e6"
+  },
+  "authority_limits": "No native measuring apparatus, outcome weighting, quantum state, quantum dynamics or causal signalling conclusion is inferred."
+}

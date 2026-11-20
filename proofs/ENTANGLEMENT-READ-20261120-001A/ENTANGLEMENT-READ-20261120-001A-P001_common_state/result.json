@@ -1,0 +1,471 @@
+{
+  "proof": "ENTANGLEMENT-READ-20261120-001A-P001",
+  "ticket": "ENTANGLEMENT-READ-20261120-001A",
+  "status": "Proved",
+  "referee": "pending",
+  "scope": "Finite ordinary existential growth in a fixed presentation, a nonempty allowed set, and freely chosen, total local readings on one common nonnegative weighting. The embodied-register theorem requires a uniform finite affine source, affine selectors with all four cells present, and affine marked registers.",
+  "claim": "Finite ordinary parity and not-all-equal growth preserve old allowed states by projection. Every fixed weighting and setting-independent pair of external reads admits a common explanation, giving all eight CHSH bounds and both no-signalling equalities. For uniform affine states with affine embodied selectors, hiding the other selector in each full affine register is equivalent to a common local-source representation of all full-register tables, including nonlinear local postprocessing.",
+  "argued_in_prose": [
+    "Surjectivity of restriction through all finite funded rounds, and exact extension multiplicities.",
+    "Common weighted pushforward on every prospective answer, exact CHSH and no-signalling for arbitrary local read functions, and individual-event extension for exact supports.",
+    "Equivalence of full-register remote-selector invariance and existence of a common local model for uniform affine registers, plus the singleton-pattern answer-only corollary.",
+    "One changed context attains the sharp score change 2t on altered mass t. Three perfect correlators preclude a quantum realization of this family whenever t is positive.",
+    "A separate joint weighting of two disjoint parity knots matches an explicit quantum table at w=5:1. Above the quantum correlator ceiling it gives superquantum tables. These weightings are supplied."
+  ],
+  "source_files": {
+    "proof": "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/proof.md",
+    "checker": "proofs/ENTANGLEMENT-READ-20261120-001A/ENTANGLEMENT-READ-20261120-001A-P001_common_state/check.py",
+    "design": "research/ENTANGLEMENT-READ-20261120-001/preregistration.md"
+  },
+  "sha256": {
+    "proof": "861598978ca9bb3a0c321b628d4c4cde47b71b2259b178b01e13f13ee7fa9c17",
+    "checker": "5bbf6d5fb3792b66f335b31938ca1578e0d3172552b7b1043146d6d7f11cd647",
+    "design": "6f8fbb8236844e834f5a05ed3fb3f25a5e4f1ded79e4c3fe05e08b7b8e019411"
+  },
+  "checks": {
+    "growth_and_knot_controls": {
+      "parity_3": {
+        "allowed": 4,
+        "is_knot": true,
+        "pinned_control_is_knot": false
+      },
+      "not_all_equal_3": {
+        "allowed": 6,
+        "is_knot": true,
+        "pinned_control_is_knot": false
+      },
+      "parity_4": {
+        "allowed": 8,
+        "is_knot": true,
+        "pinned_control_is_knot": false
+      },
+      "old_value_cases_checked": 84
+    },
+    "selected_outer_knot_events": {
+      "parity": {
+        "states_extending_any_fixed_k_events_for_k_0_to_3": [
+          32,
+          8,
+          2,
+          0
+        ]
+      },
+      "not_all_equal": {
+        "states_extending_any_fixed_k_events_for_k_0_to_3": [
+          162,
+          27,
+          3,
+          0
+        ]
+      }
+    },
+    "GHZ": {
+      "common_assignments": 0,
+      "local_events_per_context": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "agree_on_overlaps": true,
+      "after_each_omission": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "after_each_one_sign_repair": [
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "Mermin_Peres_square": {
+      "common_assignments": 0,
+      "local_events_per_context": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "agree_on_overlaps": true,
+      "after_each_omission": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "after_each_one_sign_repair": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    "bell_controls": {
+      "signed_scores_on_16_assignments": {
+        "-2": 8,
+        "2": 8
+      },
+      "one_context_change": [
+        {
+          "mask_one": "1/2",
+          "flip_probability": "0",
+          "E": [
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "signed_S": "2",
+          "maximum_CHSH": "2",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "mask_one": "1/2",
+          "flip_probability": "1/4",
+          "E": [
+            "1",
+            "1",
+            "1",
+            "1/2"
+          ],
+          "signed_S": "5/2",
+          "maximum_CHSH": "5/2",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "mask_one": "1/2",
+          "flip_probability": "1",
+          "E": [
+            "1",
+            "1",
+            "1",
+            "-1"
+          ],
+          "signed_S": "4",
+          "maximum_CHSH": "4",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        {
+          "mask_one": "1/4",
+          "flip_probability": "1/2",
+          "E": [
+            "1",
+            "1",
+            "1",
+            "0"
+          ],
+          "signed_S": "3",
+          "maximum_CHSH": "3",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "1/4"
+          ]
+        },
+        {
+          "mask_one": "0",
+          "flip_probability": "1",
+          "E": [
+            "1",
+            "1",
+            "1",
+            "-1"
+          ],
+          "signed_S": "4",
+          "maximum_CHSH": "4",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "1"
+          ]
+        }
+      ],
+      "full_support_noise": {
+        "E": [
+          "3/4",
+          "3/4",
+          "3/4",
+          "-3/4"
+        ],
+        "signed_S": "3",
+        "maximum_CHSH": "3",
+        "selected_marginal_TV_A_B": [
+          "0",
+          "0"
+        ],
+        "compatible_support_assignments": 16
+      }
+    },
+    "added_conditional_state_weight": [
+      {
+        "weights_preferred_other": [
+          1,
+          1
+        ],
+        "conditional": {
+          "E": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "signed_S": "0",
+          "maximum_CHSH": "0",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "external": {
+          "E": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "signed_S": "0",
+          "maximum_CHSH": "0",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "full_pair_marginal_TV_A_B": [
+          0,
+          0
+        ]
+      },
+      {
+        "weights_preferred_other": [
+          3,
+          1
+        ],
+        "conditional": {
+          "E": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "-1/2"
+          ],
+          "signed_S": "2",
+          "maximum_CHSH": "2",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "external": {
+          "E": [
+            "1/8",
+            "1/8",
+            "1/8",
+            "-1/8"
+          ],
+          "signed_S": "1/2",
+          "maximum_CHSH": "1/2",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "full_pair_marginal_TV_A_B": [
+          0,
+          0
+        ]
+      },
+      {
+        "weights_preferred_other": [
+          4,
+          1
+        ],
+        "conditional": {
+          "E": [
+            "3/5",
+            "3/5",
+            "3/5",
+            "-3/5"
+          ],
+          "signed_S": "12/5",
+          "maximum_CHSH": "12/5",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "external": {
+          "E": [
+            "3/20",
+            "3/20",
+            "3/20",
+            "-3/20"
+          ],
+          "signed_S": "3/5",
+          "maximum_CHSH": "3/5",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "full_pair_marginal_TV_A_B": [
+          0,
+          0
+        ]
+      },
+      {
+        "weights_preferred_other": [
+          5,
+          1
+        ],
+        "conditional": {
+          "E": [
+            "2/3",
+            "2/3",
+            "2/3",
+            "-2/3"
+          ],
+          "signed_S": "8/3",
+          "maximum_CHSH": "8/3",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "external": {
+          "E": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "-1/6"
+          ],
+          "signed_S": "2/3",
+          "maximum_CHSH": "2/3",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "full_pair_marginal_TV_A_B": [
+          0,
+          0
+        ]
+      },
+      {
+        "weights_preferred_other": [
+          1,
+          0
+        ],
+        "conditional": {
+          "E": [
+            "1",
+            "1",
+            "1",
+            "-1"
+          ],
+          "signed_S": "4",
+          "maximum_CHSH": "4",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "external": {
+          "E": [
+            "1/4",
+            "1/4",
+            "1/4",
+            "-1/4"
+          ],
+          "signed_S": "1",
+          "maximum_CHSH": "1",
+          "selected_marginal_TV_A_B": [
+            "0",
+            "0"
+          ]
+        },
+        "full_pair_marginal_TV_A_B": [
+          0,
+          0
+        ]
+      }
+    ],
+    "quantum_realization_added_weight": {
+      "preferred_to_other_weight": "5:1",
+      "visibility": "2 sqrt(2)/3",
+      "preferred_pair_probability": "5/12",
+      "other_pair_probability": "1/12",
+      "E": [
+        "2/3",
+        "2/3",
+        "2/3",
+        "-2/3"
+      ],
+      "signed_S": "8/3",
+      "maximum_CHSH": "8/3",
+      "selected_marginal_TV_A_B": [
+        "0",
+        "0"
+      ]
+    },
+    "affine_register_laws": {
+      "laws_by_residual_image_size": {
+        "1": 4096,
+        "2": 7680,
+        "4": 2240,
+        "8": 120,
+        "16": 1
+      },
+      "total_distinct_marked_conditional_laws": 14137,
+      "whole_register_invariant": 3025,
+      "explicit_full_register_couplings": 3025,
+      "protocols": {
+        "I": {
+          "excess": 2304,
+          "excess_hiding_full_registers": 0,
+          "excess_hiding_answers": 256
+        },
+        "II": {
+          "excess": 2280,
+          "excess_hiding_full_registers": 0,
+          "excess_hiding_answers": 0
+        }
+      },
+      "one_residual_bit_parameterizations": {
+        "I": {
+          "maximum_2": 53248,
+          "excess_hiding_answers": 2048,
+          "excess_hiding_full_registers": 0,
+          "maximum_4": 4096,
+          "maximum_0": 8192
+        },
+        "II": {
+          "maximum_2": 53056,
+          "excess_hiding_answers": 0,
+          "excess_hiding_full_registers": 0,
+          "maximum_4": 4800,
+          "maximum_0": 7680
+        }
+      }
+    }
+  },
+  "validation": {
+    "whole_proof": "Symbolic argument with V1 supporting finite reconstruction by this task.",
+    "bounded_independent_check": "V2 for the one-residual-bit enumeration only. A separate AI agent, reading no producer functions or checker, evaluated the eight (x,y,t) states for all 65,536 affine readout quadruples. Its result matches the checker totals obtained by weighting the distinct conditional laws. This is within-task corroboration, not external review.",
+    "empirical_results": "Frozen ordinary and embodied measurement results belong to the separate experiment leaf."
+  }
+}

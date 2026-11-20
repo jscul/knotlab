@@ -5,7 +5,7 @@
   "proof": "ORDINARY-DYNAMICS-20261120-001B-P001",
   "ticket": "ORDINARY-DYNAMICS-20261120-001B",
   "kind": "proof",
-  "status": "Partial",
+  "status": "Proved",
   "title": "Locality, ancestry and the closing exception on the ordinary growing end",
   "claim": "Does a fixed growing-end radius determine the next funded ordinary update, including its fresh counts and parity closure?",
   "standard_statement": "For complete updates of finite incidence structures, ask whether a bounded neighborhood in the witness-intersection graph determines a child star including its degree, and bound the distances between descendants under the intersection operator.",
@@ -21,8 +21,8 @@
   ],
   "completion_gate": "If the all-reading obstruction is verified inside the proved class, stop the epic in Stage 1 and report. All later stages are gated.",
   "validation": {
-    "level": "V0",
-    "status": "Open before the independent computation."
+    "level": "V1",
+    "status": "Fresh independent operator cross-check and literal state enumeration conducted in the same task. Independent program referee pending."
   },
   "foundation_contract": "contact-first-atomic-topology-v3",
   "semantic_domains": [
@@ -58,14 +58,18 @@
     "two_first_knots_need_equal_open_distinctions_under_one_count_proved": false
   },
   "source_contribution": "Proposed separation of complete-roster determinism from local determinism; conditional distance comparison and explicit test of raw-source inclusion.",
-  "remaining_obligations": [
-    "Prove the locality statement or a lawful counterexample and prove its class.",
-    "Separate stall, implication, two rulers and pure vs inclusive ancestry."
-  ],
+  "remaining_obligations": [],
   "paths": {
     "manifest": "proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/manifest.json",
     "identity": "proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/identity.json",
     "proof": "proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/proof.md",
     "result": "proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/result.json"
+  },
+  "attained_result": "No finite shared-parent radius determines the next funded parity birth in the identified class; small local demand bounds and exact inclusive descendant distances survive.",
+  "evidence_bindings": {
+    "proofs/ORDINARY-DYNAMICS-20261120-001B/ORDINARY-DYNAMICS-20261120-001B-P001_locality/proof.md": "ecee282f503450e78ba0bff6abeebd060c2ac052413176bd9c5857a500be9b8b",
+    "research/ORDINARY-DYNAMICS-20261120-001/end_operator.md": "db517ed53b1d77325446b5a812e37d95a0e819a619bc323a9e7a60fa84911a63",
+    "research/ORDINARY-DYNAMICS-20261120-001/lineage_proofs.md": "05ebfe1f963e722fc209b36cd953e206a1b39d13981481f900754057988eacc7",
+    "research/ORDINARY-DYNAMICS-20261120-001/lawfulness.md": "bfce98f1a7bf269f78e673e4cf95b58ae1a4e28c458e6be789ea239de44af220"
   }
 }

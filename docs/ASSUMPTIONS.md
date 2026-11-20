@@ -2777,6 +2777,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-20 · ORDINARY-DYNAMICS-20261120-001 · Across six paired preparations the common growing part agrees in every shared-parent step, while an existing pair of its own loose distinctions has bond distance two versus three. Under parity the next ternary width differs. This tests one choice of distance; a general bond test for exhaustion is open.
   - 2026-11-19 · `DETECTION-PACE-20261119-001` · The first wholly distant incidence difference on the one-spare path has a different threshold from the least radius of a whole-stage bond reading. That bond optimum remains open.
   - 2026-11-19 · `SAME-SIDE-READING-20261119-001` · The far original pair keeps bond distance nine at all finite sizes. Its bond-radius-seven knot count can differ. A same-side ordinary reading of growing radius detects an exact loss of two arbitrarily far away on a padded path.
   - 2026-11-19 · `OLD-MARK-GEOMETRY-20261119-001` · Across two histories of the same marked path, the local feedback changes a bond distance in both directions while all ordinary step lengths on initially shared marks stay fixed. Across layer one the absolute change can stay two for widely separated straddling marks. Bond distance and the ordinary route length are different readings.
@@ -3143,6 +3144,7 @@ evidence: results and their status come from the records each entry links.
   rule avoid trees without the complete round, and what does it build? The cheapest discriminator is the serial rule with a
   distance-only preference (join before extending) from one knot, compared with the complete round on the same seeds.
 - **History.**
+  - 2026-11-20 · ORDINARY-DYNAMICS-20261120-001 · The complete funded parity update on a connected physical start can require the fact that a birth consumes every loose distinction, even inside the identified class. The same four-knot sources under not-all-equal lose the closing difference. If continuing is promised, one shared-parent observation step suffices in the identified class and two in general.
   - 2026-11-19 · `STATE-FEEDS-GROWTH-20261119-001` · With proposals read on the old stage, a hot-parent veto and ordinary cold growth give one coloured result up to renaming. Interleaving an independent value change and irreversible births gives different physical structures. These statements require their respective event conventions.
   - 2026-11-19 · The law does not matter by `NAE-GROWTH-20261119-001`: under not-all-equal the same policy gives the same counts at
     every round, except that parity's closing tops relay (proved; the whole census checked). The rule's results are not parity's
@@ -3385,6 +3387,7 @@ evidence: results and their status come from the records each entry links.
   - **No stable sampled behaviour.** It would also be tested if the explosive kind admits no stable sampled behaviour at all:
     shares that do not settle as samples grow, under every weighting tried. Then sampling would not read it.
 - **History.**
+  - 2026-11-20 · ORDINARY-DYNAMICS-20261120-001 · The locality obstruction is proved by two finite sources and a stretching argument. One preparation closes, another has unending dimension-two formation counts. No random samples of unlimited growth were needed or drawn; the later source panels stopped at the registered gate.
   - 2026-11-20 · The owner's picture, recorded with the layer reading. On the layer reading, the rounds read one fixed unlimited
     structure outward, layer by layer; nothing is chosen, and each round is the next layer of the same structure. The owner's own
     picture, in his words: "I imagine it to be something like fractals, except the branches of the fractals are able to join with
@@ -3521,6 +3524,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The connected and all-parts first detection layers in the 2026-11-19 remote detection study. The start, the shared-only loading, the transported reference and the complete feedback law are separate choices.
 - **Challenge.** Let the system identify the remote region without an investigator supplying its boundary. Or give the observer the true degree of each boundary knot and compare first detection layers on the same sources.
 - **History.**
+  - 2026-11-20 · ORDINARY-DYNAMICS-20261120-001 · Observing the whole connected growing part can miss a fresh-count decision. Providing all live parts, or providing the exhaustion bit with a sufficiently large local ball, restores it. The new observer uses anonymous shared-parent steps, named rooted patterns, a physical source pairing and no old mark.
   - 2026-11-19 · The supplied cutoff, old mark and induced boundary are measurement scaffolds. Swapping the connected part for every retained part changes the path onset by one layer for d at least three. An intrinsic observer would need to identify its location and supported region within the stage.
   - 2026-11-19 · `DETECTION-PACE-20261119-001` · The path calculation distinguishes the connected part at max(1,d−1), the full exterior at max(1,d−2), and the arbitrary-radius rooted ball at one. A future intrinsic construction would have to identify the attachment and boundary from the stage.
   - 2026-11-19 · Registered the present-separation observers and their comparison with old ancestry. [Detection study](https://github.com/jscul/knotlab/blob/main/research/DETECTION-PACE-20261119-001/definitions.md)

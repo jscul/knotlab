@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**376 current results** and 5 superseded ones, from 559 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**376 current results** and 5 superseded ones, from 560 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 559 epics with their closures
+- [Epics](#epics): all 560 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1830,4 +1830,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can a join read closure from its own distinctions? (`BOND-CLOSURE-20261120-001`) | [closure](proofs/BOND-CLOSURE-20261120-001Z/BOND-CLOSURE-20261120-001Z-P001_synthesis/proof.md) | [folder](research/BOND-CLOSURE-20261120-001/) |
 | 2026-11-20 | What outside the parents fixes a birth’s fresh distinctions? (`FRESH-DEMAND-20261120-001`) | [closure](proofs/FRESH-DEMAND-20261120-001Z/FRESH-DEMAND-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FRESH-DEMAND-20261120-001/) |
 | 2026-11-20 | Can ordinary growth carry a change through its own growing end? (`ORDINARY-DYNAMICS-20261120-001`) | [closure](proofs/ORDINARY-DYNAMICS-20261120-001Z/ORDINARY-DYNAMICS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ORDINARY-DYNAMICS-20261120-001/) |
+| 2026-11-20 | Can current holdings give every birth its correct count in every fair order? (`SERIAL-REPAIRS-20261120-001`) | — | [folder](research/SERIAL-REPAIRS-20261120-001/) |
 

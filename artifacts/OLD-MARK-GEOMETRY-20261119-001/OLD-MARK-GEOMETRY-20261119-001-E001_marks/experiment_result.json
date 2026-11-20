@@ -1,0 +1,111 @@
+{
+  "experiment_id": "OLD-MARK-GEOMETRY-20261119-001-E001",
+  "status": "Complete",
+  "evidence_stage": "exploratory",
+  "decision": "A once-loaded ring changes the bond distance between the same two old shared marks. A three-step pair reads 13/15 quiet/loaded at layers one through three and 13/12 at layer four. The adjacent marks stay 7/4 from layer four. Ordinary step lengths stay fixed. First-layer straddling changes stay two on arbitrarily long paths.",
+  "decision_note": "research/OLD-MARK-GEOMETRY-20261119-001/decision.md",
+  "frozen_design_commits": [
+    "b18e7794f5e053ecf3b70c27ee925701caa1be48",
+    "fa7bea2a3208daaa655cf133748b1169e3209102"
+  ],
+  "evidence": "Exact computation and proofs within the documented law, preparations, and event conventions",
+  "review": "Independent program referee pending",
+  "comparisons": {
+    "original_path_pairs": 120,
+    "original_pairs_both_layers_single_ring": 210,
+    "two_ring_original_pairs_each_spacing_age_one": 325,
+    "dose_assignments": 64,
+    "assignment_pair_first_layer_formula": 9600,
+    "physical_route_profiles": 20880,
+    "distinct_reached_route_stages": 174,
+    "explicit_route_check_pair_cases": 600,
+    "local_seam_checks_through_layer_six": 126,
+    "later_two_load_interaction_exact_zeros": 14,
+    "later_two_load_interaction_open_intervals": 10
+  },
+  "sample": "One per original physical pair, one per physical shortest route for that pair, one per distinct knot in a ball and one per allowed assignment on the fixed dose comparison.",
+  "measured_objects": [
+    {
+      "object": "bond distance between fixed original distinctions after one ring load",
+      "standard": "literal minimal nonfree support size minus one",
+      "population": "210 original pairs in both one-spare arms at ages one and two, plus both rings at two spacings and named later pairs",
+      "definition": "minimum connected-shore cost for the two marked shared distinctions less one",
+      "outcome": "75 larger and 135 equal through two layers, then an opposite sign on the same pair at layer four",
+      "status": "computed"
+    },
+    {
+      "object": "persistent bond distance for the two background marks meeting the ring",
+      "standard": "exact upper and lower bond witnesses",
+      "population": "either ring on the single and two-ring controls in every finite layer",
+      "definition": "two marked shared distinctions on the attachment's two original path neighbors",
+      "outcome": "7 quiet at every size, 7 loaded through age three and 4 at every later size",
+      "status": "proved"
+    },
+    {
+      "object": "length and multiplicity of shortest routes between old shared marks under feedback",
+      "standard": "actual knot–distinction incidence",
+      "population": "120 fixed pairs in 174 reached physical stages plus the last quiet-double route from the funded roster",
+      "definition": "two incidence hops per mark step; count every shortest forward physical route",
+      "outcome": "all lengths fixed at every size; 44 crossing pairs lose routes under one-ring loading; outermost stable counts 3432 and 2220",
+      "status": "proved"
+    },
+    {
+      "object": "knot counts around all midpoints of old-pair shortest routes",
+      "standard": "each knot counts once through its first saturation radius",
+      "population": "all 20,880 physical pair-stage profiles and fixed-source midpoint controls",
+      "definition": "distance in incidence hops from the nearest shortest-route midpoint",
+      "outcome": "three-step pair at age two gives 14/16 within two hops, fixed original midpoint 9/9; both give 58/71 within six",
+      "status": "computed"
+    }
+  ],
+  "validation": "Independent algorithms or mathematical lower and upper controls, literal replay, scoped validation, frozen-input checks.",
+  "artifacts": {
+    "bond_age_two_flow.json": "a893b2b5d889214c6da13fe7e256d11fab38f6d470f80c6a3645ec33129b851e",
+    "bond_age_two_partitions.json": "85b4b609c9387c325dc07d9e1348f401ee24a7c88120022f3388823089e2521e",
+    "bond_first.json": "13e0da8560fd703e16466d8ffd91547c96c3a7e775771364bde039d88f9e2dad",
+    "bond_interaction.json": "c5ea8a69c98efb5ce42c7401cec5d0cc0c1455ec10855619b0ae37b074c045f2",
+    "bond_later.json": "1776b0eac4e68a3e1315fe9c5159cda6e509b3dbc1e24dcc55f071c36d32e1d1",
+    "bond_later_endpoints.json": "908d6c72120b1ab7e40220127e2f18e09d7e7b2e155db47ea3e55b69f19882ff",
+    "certify.json": "8c0d2869ed8295ae950f29f23f780c0984a46c669dd183000160c47417675b93",
+    "certify_age_three.json": "41cbd2cdf2126dd41e4e9a0063f4505a8631e0974cbc9d9b958bd1069f0bec17",
+    "certify_flow.json": "28707db1326d67fc3a711c59be0e90bab7c0691ab94e7d3aa1587aca3d54bdb2",
+    "last_routes.json": "1018022791a005b2155ebe33e646c64015b35a00d29963b1f4bd68e4ea6db39f",
+    "ordinary_formula.json": "a5a29ce614c1f1cb234364df8f1d061fd0f4051479539cd58e6abbfdc744391a",
+    "routes.json.gz": "cd31bfa8868763975d6fa50147ad9c4e6c924377febd5a54dac78d1eaf1e2f2b",
+    "seam_cuts.json": "db0e5578139b138f6c14efb5b82b30edb305b08d2a89455c624d6c9137a1324e"
+  },
+  "scientific_notes": {
+    "bond_distances.md": "950b0e057734ebabbcfa849edffc1fef662b83be7d73760c507e22521f5866fb",
+    "certificates.md": "e2b5acd521cb12b3c6203e131053d88f6124ad36444a45769070c4d85d7bb33c",
+    "decision.md": "42ee7ec7f1a08bd910f1ec1ad505d9dbd50be8004097fd288ecdcb5562498290",
+    "definitions.md": "d8e26260b6696b3cb364e575f0515f8215c5fad98207adb7b7b05849de6b632c",
+    "distances_proof.md": "0a2871f15975f1c39110e6c24c3f2f329bac814484f28c669ad26b6ce28be651",
+    "last_route_design.md": "c494ea3245005aa8e0a785c237c2340070a6d2b19706ec4d8ff5a7d8dee769a7",
+    "last_routes.md": "9ffc01011fd583a84c3f75d9b44795c8df571d342ee181d91630a2df6c42d446",
+    "ordinary_formula.md": "72ebc6dc3d0718d5cbc486162839639f29376d6342f4281773184f0809bd0921",
+    "padded_path.md": "b2bd235bb3a797dc1fb90a542a1d5e3f314bf2f32e97499e1c95d4a32b15926f",
+    "preregistration.md": "1b80420efcf2dbe89daa2f9611a1445e852ec1c7c0bee985f624193945b69c98",
+    "routes.md": "0e2aef978c7250fe7e3c392ab2ea00520afa914eabef0116f8e39dce6b34826d"
+  },
+  "reproduction": {
+    "bond_age_two.py": "9ae756b8b17f98820010434ff3e7aa83233f2d45d1a8da5e2e3e05e94a7934c7",
+    "bond_distances.py": "f6fa3fa83a95000caab6ff5663ffa8c9e4b09dbc62e5a183f5a9084b4d110025",
+    "bond_first.cpp": "fc53f7c7ba66d082a008607c2e078befb1345a9e41c0b433d572da7d12a9f5a2",
+    "bond_interaction.py": "2b43d65eec1148ec1dcef00596b853a82a0038b97ee93b337391ceaac376106f",
+    "bond_later.py": "4e37deab94011a0d6e509d96a23144f8c7e82426d3bd44bee854fd12e24ac3c8",
+    "certify.py": "e341552257af5515db9fa2704feecb85d659b8bddd495d14d5fb4916792a9402",
+    "certify_age_three.py": "607e11552ce8f90130eedf853ee98f6fe9abab31f7487fe1efec5c4019b1fb11",
+    "certify_flow.py": "aecb069f00f2ce79ec0c3b0aa69f86122b0b658ef517e27a2b6eb86b57e5511b",
+    "certify_native.cpp": "f0de5c98cb07e27f249170f589ee8cc1079c061b8ae944a261b385ab85743ae5",
+    "contract.json": "e9b631f218a0ca47f6f7bad9884744c2b02b7b1a905662001d21e8b32ad3ee63",
+    "identity.json": "60c01c70c33669dae5084f670ca98e2297cbd83544d8ce55e914a4869f15ee9d",
+    "inputs.json": "0ebbd58a0c1d7e7111fa3d9fabeb913a4c4cc4a5e853d440e55bea50746dbb80",
+    "last_routes.py": "7ef01cf38063368b53365fd0aece36f8953f294bfcad37a93890ae183ef28d77",
+    "ordinary_formula.py": "be65b7b47936a99983bac3e9033b1d1d01ad0eedeb19481e880f67e3b74391fc",
+    "read_pair.py": "b5c65627370d634ea5b6a0e310fe2906213a9f5b11047b6fa1a21706f316b877",
+    "routes.py": "7e38ea6120b9de32c25c6db5b4f964798943cef6d6f0b40bb7856dfb7307d87a",
+    "seam_cuts.py": "3c22b620a1fb91d0accf56fc98821a908ab5f0e3dcfa226f1c6b797050fdb52e",
+    "sources.py": "0156b0165e945ad4068482b0290a88e16962199a27eb99b5f0a14d4c0d1548c9",
+    "verify.py": "e6643d5eefd24fb8f2993806cb3768a3dcff29d0d5bed217dfa9137f73cb5988"
+  }
+}

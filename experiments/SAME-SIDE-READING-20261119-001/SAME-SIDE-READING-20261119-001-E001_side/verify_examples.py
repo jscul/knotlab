@@ -81,4 +81,3 @@ if __name__=="__main__":
     result=ordinary()
     anchored()
     print(json.dumps(result))
-

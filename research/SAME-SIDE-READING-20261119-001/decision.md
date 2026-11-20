@@ -79,6 +79,8 @@ The primary design is commit `95d4acce2`. The exact moving-count prediction was 
 
 The offset-six result gives the first direction a direct test. For the second, the known positive triple uses two loops.
 
-**Corrections:** Not a block. The previous report marked this direction as started. Its far pair was a control. The dedicated test began with this study’s freeze. [Status correction](https://github.com/jscul/knotlab/blob/main/research/SAME-SIDE-READING-20261119-001/decision.md#research-status-correction)  
-**Goals:** G1 and G17’s state-feedback lead gained an all-size range test.  
+**Corrections:** Not a block. The previous report marked this direction as started. Its far pair was a control. The dedicated test began with this study’s freeze. [Status correction](https://github.com/jscul/knotlab/blob/main/research/SAME-SIDE-READING-20261119-001/decision.md#research-status-correction)
+
+**Goals:** G1 and G17’s state-feedback lead gained an all-size range test.
+
 **Assumptions:** A117 distinguishes reaching an original loop knot from counting a knot descended from it. The results use the once-loaded ring and the feedback law of A113–A114.

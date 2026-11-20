@@ -2347,6 +2347,8 @@ So holes come in two kinds:
 4. **Dynamics.** Are loops better modeled as processes whose outputs over time
    are the data, and does the static definition survive that change?
 
+   **Separated readings of growing knots, 20 November 2026.** Under parity or not-all-equal, every allowed state survives ordinary growth by extension. Any two local questions per observer, asked independently on one common weighting, therefore obey CHSH ≤ 2. A built ten-knot parity start gives the four correlations (1,1,1,−1) when two of its own distinctions supply the settings. Each selected bit stays fair, while the two values available to one observer determine the other's setting. Forcing the four settings on those same 128 states gives CHSH 2. Under uniform parity states, if both complete local registers hide the other setting, their four tables have a common local explanation. A joint weighting added to two unlinked parity knots can match a quantum table at 8/3. Whether the growth law can supply such a weighting is open. Proved and computed, independent referee pending. [Study](../research/ENTANGLEMENT-READ-20261120-001/decision.md)
+
    **Words in the learning entries.** The learning entries below work on drawn knot patterns (glossary of the Intuitions guide): every
    knot holds three distinctions and every distinction lies in three knots, drawn as a two-coloured triangulation whose triangles of
    one colour are the knots and of the other the distinctions, each distinction in the three knots across its sides; the record's

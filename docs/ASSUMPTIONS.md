@@ -168,6 +168,7 @@ evidence: results and their status come from the records each entry links.
 | [A111](#a111--a-moving-pattern-is-measured-against-one-allowed-state) | A moving pattern is measured against one allowed state | reading | Confirmed |
 | [A112](#a112--the-logic-comes-before-space-and-would-sit-beneath-locality) | The logic comes before space and would sit beneath locality | interpretation | Assumed |
 | [A113](#a113--fresh-distinctions-inherit-the-fewest-state-changes-allowed-by-each-new-parity-knot) | Fresh distinctions inherit the fewest state changes allowed by each new parity knot | reading | Assumed |
+| [A114](#a114--growth-can-read-whether-any-distinction-on-a-joining-knot-departs-from-the-reference) | Growth can read whether any distinction on a joining knot departs from the reference | reading | Assumed |
 
 ## Entries
 
@@ -3449,3 +3450,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Admit a fresh pair of changes on an even input, or a local event that transfers stored changes to the growing end. Test whether old-state information can reach a second layer while preserving parity and giving the same structural outcome for every event order specified by the law.
 - **History.**
   - 2026-11-19 · Adopted and challenged for the closed sixteen-table feedback comparison in `STATE-FEEDS-GROWTH-20261119-001`. A matched control distinguishes an exhausted ring from a state with ten occupied loose distinctions.
+
+### A114 · Growth can read whether any distinction on a joining knot departs from the reference
+
+**Assumed** · 2026-11-19 · reading
+
+- **Statement.** The sixteen-table feedback study gives a proposed group one bit. It is active if any distinction in any parent differs from the transported allowed reference. The bit is read before allocating loose distinctions, for the entire proposed group. Either bit value can select ordinary growth, a veto or one extra or fewer fresh distinctions.
+- **Why.** One variable binary reading is enough to distinguish two state preparations. The predicate, the choices it controls and its use of all the parent distinctions are supplied law choices. A111 supplies the reference.
+- **Rests on it.** The selection of hot veto among the sixteen tables, matched-holder equivalence and one-layer source effect use this reading. Each structural alternative retains its own evidence class.
+- **Challenge.** Compare a count of deviations, a reading sensitive to their arrangement and a reading restricted to the spent inputs on the same prototypes. Two preparations giving identical five active holders and different loose values supply a controlled discriminator. The full local parity sum is already constant.
+- **History.**
+  - 2026-11-19 · Adopted in `STATE-FEEDS-GROWTH-20261119-001`. The old ring and a cut with the same four-distinction pulse give the same first extra births. Old loose values held at zero make a spent-input-only reader insensitive to the source ring.

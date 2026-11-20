@@ -172,6 +172,7 @@ evidence: results and their status come from the records each entry links.
 | [A115](#a115--a-pair-of-fresh-changes-may-be-part-of-a-knots-birth) | A pair of fresh changes may be part of a knot's birth | reading | Assumed |
 | [A116](#a116--a-midpoint-reading-counts-knots-near-every-middle-of-a-shortest-route) | A midpoint reading counts knots near every middle of a shortest route | reading | Assumed |
 | [A117](#a117--a-same-side-reading-can-be-tested-by-its-present-reach-or-by-the-origins-of-every-counted-knot) | A same-side reading can be tested by its present reach or by the origins of every counted knot | reading | Assumed |
+| [A118](#a118--a-distant-reader-can-be-given-only-the-connected-part-holding-its-old-mark) | A distant reader can be given only the connected part holding its old mark | reading | Assumed |
 
 ## Entries
 
@@ -3506,3 +3507,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Ask for a test of confinement from the current unlabelled stage alone, or vary the supported ancestry relation while retaining identical mark positions and present readings. An ancestral certificate used by the investigator need not be available to the observer.
 - **History.**
   - 2026-11-19 · Registered with the original-mark, padded-background and two-donor comparisons in `SAME-SIDE-READING-20261119-001`. No weighting over possible starts is assumed.
+
+### A118 · A distant reader can be given only the connected part holding its old mark
+
+**Assumed** · 2026-11-19 · reading
+
+- **Statement.** To test what a distant observer can detect without looking back toward an attachment, one experiment keeps every physical distinction and knot at a specified current separation, shows only the incidences between retained items, and supplies one old mark. An observer may receive its connected part or every retained part. Both choices can be compared to a ball around the mark, or to a region traced from its old holders under A117. A boundary supplies only what is shown.
+- **Why.** The answer changes when the observer can count pieces disconnected from the mark, when it is told the missing degree of a boundary knot, or when it can enlarge a ball until it includes descendants near the attachment. Defining the observer specifies which information must actually get far from the load.
+- **Rests on it.** The connected and all-parts first detection layers in the 2026-11-19 remote detection study. The start, the shared-only loading, the transported reference and the complete feedback law are separate choices.
+- **Challenge.** Let the system identify the remote region without an investigator supplying its boundary. Or give the observer the true degree of each boundary knot and compare first detection layers on the same sources.
+- **History.**
+  - 2026-11-19 · Registered the present-separation observers and their comparison with old ancestry. [Detection study](https://github.com/jscul/knotlab/blob/main/research/DETECTION-PACE-20261119-001/definitions.md)

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**369 current results** and 5 superseded ones, from 552 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**369 current results** and 5 superseded ones, from 553 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 552 epics with their closures
+- [Epics](#epics): all 553 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1782,6 +1782,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | Do loops keep branching under the not-all-equal law? (`NAE-GROWTH-20261119-001`) | [closure](proofs/NAE-GROWTH-20261119-001Z/NAE-GROWTH-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/NAE-GROWTH-20261119-001/) |
 | 2026-11-19 | Can the growth pick its own spine? (`NATIVE-SPINE-20261119-001`) | [closure](proofs/NATIVE-SPINE-20261119-001Z/NATIVE-SPINE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/NATIVE-SPINE-20261119-001/) |
 | 2026-11-19 | Round nine of the start with 28,065 growing junctions (`NINTH-ROUND-SAMPLE-20261119-001`) | — | [folder](research/NINTH-ROUND-SAMPLE-20261119-001/) |
+| 2026-11-19 | Can loading a loop change distances between existing marks? (`OLD-MARK-GEOMETRY-20261119-001`) | — | [folder](research/OLD-MARK-GEOMETRY-20261119-001/) |
 | 2026-11-19 | Why does the growth never reach the static pairs? (`PARENT-RULE-20261119-001`) | [closure](proofs/PARENT-RULE-20261119-001Z/PARENT-RULE-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/PARENT-RULE-20261119-001/) |
 | 2026-11-19 | Does a block retraction carry partnered growth? (`PARTNER-RETRACT-20261119-001`) | — | [folder](research/PARTNER-RETRACT-20261119-001/) |
 | 2026-11-19 | Reaching partnered growth from seven places or fewer (`PARTNER-SEVEN-20261119-001`) | — | [folder](research/PARTNER-SEVEN-20261119-001/) |

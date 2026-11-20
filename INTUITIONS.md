@@ -104,6 +104,7 @@ PYTHONPATH=tools python3 -m knotlab demo
   - [8.3 Reading a blow-up by sampling](#83-reading-a-blow-up-by-sampling)
   - [8.4 What distance carries of what grows](#84-what-distance-carries-of-what-grows)
   - [8.5 Locality before space](#85-locality-before-space)
+  - [8.6 Structure and state](#86-structure-and-state)
 - [Glossary](#glossary)
 
 ## Chapter 1. Bits and rules
@@ -3143,6 +3144,80 @@ states of a definite logic and nothing else.
 order of things: here logic comes before space, as some physics programmes put
 entanglement or causal order before spacetime. Whether Einstein's locality
 comes out at large scales is an open question, not a contradiction.
+
+### 8.6 Structure and state
+
+**Two layers.** Everything the growth studies build has two layers.
+
+- **The structure.** Which knots exist and which distinctions they share.
+  This is what grows round by round (lesson 8.1), and it is what has a
+  dimension and the cycles that feed eddies (lesson 8.2).
+- **The state.** Every distinction sits one way or the other. Each knot is a
+  rule on its distinctions, so only some combinations are allowed, and a state
+  is one allowed combination of all the distinctions at once (lesson 1.1).
+
+**The owner's question.** On 19 November 2026 (Pacific time) the owner asked:
+"So am I understanding correctly? That I was originally under the assumption
+that there was some 'state' to the world, but in actuality, what we've found in
+practice is that these 'junctions' or developing structure over time works
+more effectively." The program's answer: there is a state, as the owner first
+assumed. What changed is that the stage is not a given backdrop. The structure
+the state lives on is built by the logic too.
+
+**What the state can do (proved and computed, referee pending).** Codex
+studied states on grown structures
+([MOTION-AT-EDDY-20261119-001](research/MOTION-AT-EDDY-20261119-001/decision.md)
+and [EDDY-WORLD-20261119-001](research/EDDY-WORLD-20261119-001/decision.md),
+both referee pending):
+
+- **A loop keeps itself.** A self-feeding ring of knots attached to a
+  background can be recognised again, stays attached to the same knots and
+  keeps its own rate.
+- **A pattern can travel.** A pattern of ten distinctions that differ from a
+  resting state shifts one knot for every four changes, each the smallest
+  change the rules allow, and keeps its shape.
+  On a ring of 31 knots it passes all 31 and returns to exactly the same state
+  after 124 changes, and so on forever. No clock runs for the whole: each
+  change is decided where the pattern is.
+- **It passes loops and can stop at cuts.** It passes intact five-knot rings
+  at the same pace, and the rings keep their rate. A ring whose cycle has been
+  cut can halt it.
+- **A loop can store a state, and two loops can hand it over.** In a proved
+  class of starts, the state held on one five-knot ring moves to a second
+  five-knot ring d steps away in exactly 2d + 10 changes, each the smallest
+  possible and each flipping four distinctions. Loose distinctions change
+  for a while on the way.
+- **Signals and memory.** Patterns that travel and loops that store are the
+  two of the ingredients of computing (reading).
+
+**What is ours, and not earned.**
+
+- **The rule that picks the next change was added by hand.** The growth law
+  moves nothing. The motion comes from a local update rule and a fixed resting
+  state that the study supplied.
+- **No largest speed comes out across rules.** For a rule that treats both
+  directions alike and reads s knots out, the average shift is at most
+  (s − 1)/2 knots per change. So the speed depends on the rule, and nothing yet
+  fixes one speed for every rule (lesson 8.5).
+- **Order comes back where patterns meet.** Two patterns moving toward each
+  other can end differently under different orders of change, even when every
+  knot gets its fair turn. With no ticks (the owner's "Time doesn't have
+  ticks", lesson 8.1), nothing fixes that order.
+- **Steering reads more than distance.** To pass a ring, the rule reads which
+  distinctions meet at a knot, which bond distance alone can hide (lesson 8.4).
+- **The shrinking belongs to the attachment.** Bond balls near an attached
+  ring shrink, and they shrink the same way for a control ring whose cycle is
+  cut. So the shrinking comes from the attachment, not from the ring's
+  activity.
+
+**The open gap (reading).** The layers talk one way only. The state lives on
+the structure, but the growth law never reads the state, and no change of
+state changes the growth rates or which knots exist. On the
+program's reading, state feeding back into growth is where behaviour like
+gravity would have to come from: structure that changes where there is
+activity.
+Nobody has built that, and it is the first of the leads recorded with this
+lesson (backlog B210 to B213, under goal G17).
 
 ## Glossary
 

@@ -1,0 +1,113 @@
+{
+  "experiment_id": "DETECTION-PACE-20261119-001-E001",
+  "status": "Complete",
+  "evidence_stage": "exploratory",
+  "decision": "The sharp first wholly remote structural difference on the one-spare padded path is at max(1,d−1) for the part of the current stage connected to an old mark, and max(1,d−2) for all retained parts. A wide rooted reading first distinguishes at one and joint outward ancestry at ceil(d/2) for d positive. Feedback, placement and the chosen reading affect local arrival.",
+  "decision_note": "research/DETECTION-PACE-20261119-001/decision.md",
+  "frozen_design_commits": [
+    "656980983b966bc84b7cb4cf8d86c6abe7e9f2e3",
+    "59cf1a09779d545f3c7d74c667d6aec6600995f9",
+    "9d060a05bb08c0ecabd5362bac22ec30f520988b"
+  ],
+  "review": "In-task proof and computational checks complete. Independent program referee pending.",
+  "sample": "One per named physical start, allowed physical load, old location and domain, formation layer and stated reading. The 64 doubled-ring words are equally weighted. No sampling measure over all starts.",
+  "comparisons": {
+    "plain_root_layer_pairs": 2088,
+    "checked_plain_bijections": 22721,
+    "branched_root_layer_pairs": 2088,
+    "branched_sources": 12,
+    "law_preparation_pairs": 1056,
+    "law_exterior_comparisons": 1984,
+    "placement_words": 64,
+    "remote_growing_end_probes": 2016,
+    "ported_tail_observations": 480,
+    "physical_exterior_observations": 768,
+    "independent_long_exterior_observations": 108,
+    "independently_checked_long_predictions": 92,
+    "projected_parity_readings": 204,
+    "two_ring_four_arm_cells": 3490,
+    "two_ring_cells_strictly_before_both_original_rings": 1185
+  },
+  "measured_objects": [
+    {
+      "object": "First full incidence radius and first knot-count radius",
+      "population": "Single marks and outward consecutive packets on the funded one-spare path, d≥2, n≥1",
+      "outcome": "With k=floor(d/2), the radii are 2d+2−2min(n,k) and 2d+3−2min(n−1,k). Strict donor-excluding structural first layer is one; its knot-count first is three for d≥4.",
+      "status": "proved"
+    },
+    {
+      "object": "First reading with all current probes at separation d",
+      "population": "One-spare straight path with sufficient finite padding, all completed layers, P/V and full ring preparation",
+      "outcome": "Rooted connected first is max(1,d−1), whole union max(1,d−2). Every earlier observation is isomorphic, including its projected allowed assignments. Current-stage peeling preserves later detectability.",
+      "status": "proved"
+    },
+    {
+      "object": "Reading the outward holders and their current growing descendants",
+      "population": "Padded single-ring path, outward tail beginning at offset d, all finite sizes",
+      "outcome": "Some outward ancestor first distinguishes at max(1,ceil(d/2)); the first affected nearest live knots hold exactly two fewer loose distinctions for d≥1. Requiring all ancestors in the tail gives no structural difference at d≥3.",
+      "status": "proved"
+    },
+    {
+      "object": "Dependence of the decision on the local actions and load",
+      "population": "All 16 tables, original full/quiet and all 64 doubled-ring physical words; bounded clipped and end readings",
+      "outcome": "Twelve tables structurally respond at first growth to every nonzero registered load. Four are blind. Placement or feedback law can change the earliest local layer. All sixteen conflate on the closed sector and four on general allowed old-colored inputs up to renaming.",
+      "status": "proved and computed"
+    },
+    {
+      "object": "Directional and surplus dependence",
+      "population": "Four leftover settings on each of three bare 4,5,7-arm sources of formation dimensions one, two and three",
+      "outcome": "Wide-ball first growth detection in all twelve, with unequal clipped responses in two arms compared at the same radius and offset. Bare-source dimension alone cannot be assigned responsibility for these differences.",
+      "status": "computed"
+    },
+    {
+      "object": "Meet and passage of two structural changes",
+      "population": "Two evenly separated loaded single-ring attachments on the straight path as specified, literal gaps 4,8,12",
+      "outcome": "A common inward-unary descendant first appears at half the separation. Loading the opposing ring prevents these descendants from sharing ancestry with the specified old holder beyond it at every later complete layer.",
+      "status": "proved and computed"
+    }
+  ],
+  "artifacts": {
+    "backgrounds.json": "4ffb72154e095490e697845903c04710489078ccebc9ac25d728cbd870beda38",
+    "current_exterior.json": "b7d4a806e35e4183d0af25601b38616e23da90e985459a33b1a98960b3fdeeb3",
+    "dose_onset.json": "3991854a7ea57a3a5b5323ed75e6e2793264e111b24403de81390941b03968ce",
+    "exterior_check.json": "f499b123706713d7a1b62919eb2caf6042fbb2e57b9ea738467ac8978e45b2c8",
+    "front_local.json": "548b7af41ecbbb339cecbf88e2983529e5261d21d24f3d97f34af6fb81813d6a",
+    "law_exterior.json": "ea3fdf9c3697598b7108163761b5f4ad136deeac42c99d9fc9376fe76fd543e4",
+    "law_panel.json": "b815bc7416e549526c26d02cca9583c36193390daf86df45d655794d02a92765",
+    "projection_check.json": "8c8c412a38a96cf5efdcfd5f896cb43f303db5b7512f369b8685a668bfa55cca",
+    "remote_check.json": "f75787d4b01fb05a43f3bd457de53c2ad856f2cddbee525b6d4b50f10420b855",
+    "two_loops.json": "82da42906cca82a10817cd596f98ecf9d2975d6726f52373e2594f4e2cdc0683"
+  },
+  "scientific_notes": {
+    "backgrounds.md": "e889b6af924d5193eaefaef7637338dc74f4451fb0e60f4abbd72f6a64b9c256",
+    "current_separation.md": "76b3e27ea489d601cbfe31f19433c51f51367edb1582ae326a88d557f8b17242",
+    "decision.md": "8a989fd0a0013d177798c482b54c6b6a6aac0b7d713294c29b1082954be32682",
+    "definitions.md": "de075854aea4e37b1952d7f02ae3ff9df343f0ff3d65c61b369095e5e372f9fc",
+    "exterior_validation.md": "245e470ed6a9845ad111968d83b5b1b3f98e04e0b2108e9f0673d8938e4f0cd0",
+    "exterior_validation_design.md": "6a221d1db1c3fd8bb4befd9b4b91ccb9637c2dd0f84cf836b62880c4a768f2b0",
+    "front_checks.md": "a6ee76d890293d62ed1c7256f49be1cb6684fe1cd746674ebe6b38dc77d37a98",
+    "law_exterior.md": "3992917077cb87ecdf4c1da938d2c4a140ccd181b34bfd9ed936c5a90744c31b",
+    "law_exterior_design.md": "6f6adddc0e1bb80a0160d6664d2dfb1a5d619a45d4d68baedbf39e3b667eedca",
+    "law_panel.md": "b667ad28488b41717c25ada42969a5e20b05eb16979803ec1d73182cfc73cc35",
+    "local_front.md": "04a29719df3060fae71a51e786d5128f320efd99857a64d399132946ec618684",
+    "preregistration.md": "ace36cad08ee327079d67763a64f5300dccf9b3a8dea34a8f44cd9f260143915",
+    "remote_reading.md": "cd9a9647612a87c871bed044f978b4d0f67a6e21e735b1c629ba5919af66171d",
+    "two_loops.md": "423eb1088c16ab73d1a38a6ab3e34d0301c39a9229a9b2f69b4910ffbffc58c9"
+  },
+  "reproduction": {
+    "backgrounds.py": "ac2dbaa43d8b34136d70a3a5cb8d7ff2db3faeea348ca2c89b2f6b6f2a542c81",
+    "check_projection.py": "26ba3ef4f316e0dd1a25a4e142807ed04c10fcef5a6c1a4e45e97e8f8cf4ab11",
+    "contract.json": "900be447c32d87dfeaaa2c1ece4940eebf785492aa8b032fd93ce39e264a83d3",
+    "current.py": "5fcae3e36871b57cb2bb841b10b4c0f3a6a6cd049ab2bb4d206f41325199c9ac",
+    "current_exterior.py": "bc54194fb671fc806080f41132ee1b9d12aef9cf5dbc0ec04f124b9753a9e811",
+    "dose_onset.py": "cc92f8f2dc0c0237d62234dc8579583f18a8d8111db5b4a5a3dde83cc54ddfcc",
+    "exterior_check.py": "89ae68eb71a01c832be63813db39a449dd44e1091246342306a42d91f97e6cb8",
+    "front_local.py": "e8a7cc7b9b3f2e8e0b2437013599fef894ad23a338f838915116d2e659322f8f",
+    "identity.json": "f18d77f15e581ad04ad98a6934ed41ca1f379f09c2e4006b5c3ec87b3bded451",
+    "inputs.json": "79e60bede5b5c3ea9acdde0f275ecc0c17c21f3e236d450bd80d127320a4bbf7",
+    "law_exterior.py": "94dddd1dd4797573bb2ea6575d90fc06b89bf7742528654e9a71be9b44433607",
+    "law_panel.py": "66d1be3743e52519e08574ad599e50cb72e36a2116649f3fff2b5920b1680400",
+    "remote_check.py": "2a3980ab1676ebb0cf60a308324320d22150122448b4e7016258acf5b63b0be0",
+    "two_loops.py": "ebe5087ed2adaf52fcef9f2ec79bfef3cf24eff17a68a679ae24dc042f6774cf"
+  }
+}

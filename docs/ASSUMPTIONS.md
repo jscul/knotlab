@@ -169,6 +169,8 @@ evidence: results and their status come from the records each entry links.
 | [A112](#a112--the-logic-comes-before-space-and-would-sit-beneath-locality) | The logic comes before space and would sit beneath locality | interpretation | Assumed |
 | [A113](#a113--fresh-distinctions-inherit-the-fewest-state-changes-allowed-by-each-new-parity-knot) | Fresh distinctions inherit the fewest state changes allowed by each new parity knot | reading | Assumed |
 | [A114](#a114--growth-can-read-whether-any-distinction-on-a-joining-knot-departs-from-the-reference) | Growth can read whether any distinction on a joining knot departs from the reference | reading | Assumed |
+| [A115](#a115--a-pair-of-fresh-changes-may-be-part-of-a-knots-birth) | A pair of fresh changes may be part of a knot's birth | reading | Assumed |
+| [A116](#a116--a-midpoint-reading-counts-knots-near-every-middle-of-a-shortest-route) | A midpoint reading counts knots near every middle of a shortest route | reading | Assumed |
 
 ## Entries
 
@@ -2773,6 +2775,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-19 · `OLD-MARK-GEOMETRY-20261119-001` · Across two histories of the same marked path, the local feedback changes a bond distance in both directions while all ordinary step lengths on initially shared marks stay fixed. Across layer one the absolute change can stay two for widely separated straddling marks. Bond distance and the ordinary route length are different readings.
   - 2026-11-19 · `THREE-RIGID-20261119-001` ([decision note](../research/THREE-RIGID-20261119-001/three_rigid.md); referee pending): pair and three-way distances force the allowed states on all 211,643 reached stages of at most 14 junctions tested, but not at size (Codex's refereed 239-junction stage; Codex's 104-junction failure of the extension, pending referee). Proved (Theorem M): bond distance read over sets as large as the largest knot forces the states and, with the growing end, carries every round. So the premise holds as 'distance over sets as large as the largest knot', not over pairs or triples. Status unchanged.
   - 2026-11-19 · Two shared attachment junctions require at most one extra distinction for a fixed future reading order, sharply. Three shared attachment junctions can conceal a change in the next bond distance on an old pair from every fixed current reading order. [How many distinctions must be read together?](../research/BOND-READING-SCALE-20261119-001/decision.md)
   - 2026-11-19 · A hidden equation can change a bond distance between old distinctions in the next complete round. No fixed number of jointly read distinctions suffices in the worst case under this parity growth law. [Later bond distances](../research/LATER-BOND-READING-20261119-001/decision.md)
@@ -3415,6 +3418,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The minimal ten-distinction moving pattern in `MOTION-AT-EDDY-20261119-001` uses this reading. The parity growth law itself does not require a preferred assignment.
 - **Challenge.** Under all allowed value translations, a deterministic update of one state must add a fixed allowed difference. Iterating it returns after two applications. A marked arrival or differences between multiple states give other readings to test.
 - **History.**
+  - 2026-11-19 · `RING-TO-END-20261119-001` · The once-loaded ring and all the subsequent active-parent checks are measured against the same transported reference. Erasing only fresh pairs at identical incidence can change second-layer births.
   - 2026-11-19 · `STATE-FEEDS-GROWTH-20261119-001` · The occupied-parent bit uses this transported reference. Jointly changing the allowed assignment and reference preserves growth. Keeping the reference fixed while changing a stored ring can alter the next structure.
   - 2026-11-19 · `MOTION-LAW-20261119-001` uses this reference for both the ring switch and compact motion. Quietness together with covariance under every allowed value shift again selects the identity. No stage-wide reference is inferred from growth.
   - 2026-11-19 · The current-state reading and its alternative were tested in `MOTION-AT-EDDY-20261119-001`. The fixed reference is retained for this class of moving patterns. The translation argument gives its exact scope.
@@ -3451,6 +3455,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The one-layer sensing of a state held only on old shared distinctions and the conservation of occupied loose distinctions under hot-join veto use this extension. Counts at the first birth roster depend only on the current state and action table.
 - **Challenge.** Admit a fresh pair of changes on an even input, or a local event that transfers stored changes to the growing end. Test whether old-state information can reach a second layer while preserving parity and giving the same structural outcome for every event order specified by the law.
 - **History.**
+  - 2026-11-19 · `RING-TO-END-20261119-001` · When all loose distinctions start quiet, the minimum fresh assignment stays quiet on every later growing end. The separate A115 lift at birth transfers the signal. The original allowed-state projections in each realized structure survive either lift.
   - 2026-11-19 · Adopted and challenged for the closed sixteen-table feedback comparison in `STATE-FEEDS-GROWTH-20261119-001`. A matched control distinguishes an exhausted ring from a state with ten occupied loose distinctions.
 
 ### A114 · Growth can read whether any distinction on a joining knot departs from the reference
@@ -3462,4 +3467,27 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The selection of hot veto among the sixteen tables, matched-holder equivalence and one-layer source effect use this reading. Each structural alternative retains its own evidence class.
 - **Challenge.** Compare a count of deviations, a reading sensitive to their arrangement and a reading restricted to the spent inputs on the same prototypes. Two preparations giving identical five active holders and different loose values supply a controlled discriminator. The full local parity sum is already constant.
 - **History.**
+  - 2026-11-19 · `OLD-MARK-GEOMETRY-20261119-001` · For a fully loaded ring the five active holders alone change the subsequent bond distance of the same two old marks. With doubled meetings, the first crossing response counts which two immediate ring neighbors are active. A short same-side pair can still give an equal reading.
   - 2026-11-19 · Adopted in `STATE-FEEDS-GROWTH-20261119-001`. The old ring and a cut with the same four-distinction pulse give the same first extra births. Old loose values held at zero make a spent-input-only reader insensitive to the source ring.
+
+### A115 · A pair of fresh changes may be part of a knot's birth
+
+**Assumed** · 2026-11-19 · reading
+
+- **Statement.** On a hot unary with quiet spent input, a declared feedback law may make two fresh distinctions occupied together when the knot forms. The old values persist. Quiet and odd children keep the minimum extension. The stated guards can restrict the new even pair to a two-place fresh set, or to the children of a parent with two loose distinctions.
+- **Why.** An atomic pair is the smallest nonzero even signal at an individual newborn. The program supplied its coupling to the birth, its guard and its comparison up to fresh-name renaming.
+- **Rests on it.** With the original five ring distinctions retained, the second layer, at fixed first incidence, can sense the state on its own growing end. The bare hot sector can implement this as independent single-port births. Arbitrary interleaving with an independently optional later deposit has different outcomes.
+- **Challenge.** Find a rule preserving the number of occupied distinctions that transfers the original ring's state without continuing to copy it, or prove that the requested symmetry or event freedom forbids it. Requiring unchanged old values and exactly the A113 minimum prevents fresh activity from an even, quiet input.
+- **History.**
+  - 2026-11-19 · Tested in `RING-TO-END-20261119-001` against a delayed deposit, a fixed-incidence erasure and a reader reaching one older holder. The deterministic total-write minimum depends on the symmetries of the start.
+
+### A116 · A midpoint reading counts knots near every middle of a shortest route
+
+**Assumed** · 2026-11-19 · reading
+
+- **Statement.** For two original shared distinctions, give each ordinary holder incidence one hop, include all central nodes of shortest routes, and count a knot once within a chosen radius of this set. The earlier source midpoint supplies a second comparison. Literal bond distance remains the least size of a containing bond minus one.
+- **Why.** Several routes can tie in the formed stage. Using all possible midpoints removes dependence on an arbitrary route or on a mark's name.
+- **Rests on it.** For one background pair three ordinary mark steps apart, the two-hop neighborhood of all midpoints changes from 14 to 16 knots under loading at the second layer. The same two-hop neighborhood of its original midpoint has nine knots in both arms.
+- **Challenge.** Compare each midpoint separately, weight midpoints by the number of shortest routes crossing them, or hold the original midpoint fixed. Equality of ordinary shortest lengths can coexist with different counts under these readings.
+- **History.**
+  - 2026-11-19 · Adopted and compared with the fixed source midpoint in `OLD-MARK-GEOMETRY-20261119-001`. No weighting over all starts or law asserting that one midpoint is physically preferred was introduced.

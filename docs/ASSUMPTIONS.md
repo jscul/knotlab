@@ -234,6 +234,8 @@ evidence: results and their status come from the records each entry links.
 | [A176](#a176--exact-weighting-of-decorated-starting-trees) | Exact weighting of decorated starting trees | scaffold | Assumed |
 | [A177](#a177--reading-products-of-two-counts-as-amplitudes) | Reading products of two counts as amplitudes | scaffold | Assumed |
 | [A178](#a178--adding-one-meeting-under-the-original-supply-of-loose-distinctions) | Adding one meeting under the original supply of loose distinctions | scaffold | Assumed |
+| [A179](#a179--paying-for-two-new-simple-meetings-at-the-original-opening-cap) | Paying for two new simple meetings at the original opening cap | scaffold | Assumed |
+| [A180](#a180--two-separate-real-pointers-after-one-common-preparation) | Two separate real pointers after one common preparation | scaffold | Assumed |
 
 ## Entries
 
@@ -4377,6 +4379,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The phase comparison and any nonuniform probabilities on wider knots depend on the factors, the preparation and how the reader was calibrated.
 - **Challenge.** Compare the positive and conjugated factors, held and recalibrated readers, overlapping holdings, both ordinary laws and alternative extensions to wider knots.
 - **History.**
+  - 2026-11-21 · Tested on two real three-word pointers. Hiding the source orientation removes single-pair contrasts for matched real effects. The known-reference control reveals a relation while the individual pointer orientation stays unresolved. [Two added meetings and two separate readers](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)
   - 2026-11-21 · Tested the positive, first-root, conjugate and other primitive-root factors, fixed and transported readers, growth and freedom weights, signed contractions, coherent flag and keeper writes, conditional selection, and fresh versus reused pointers. The proposed principal phase can always be moved to separate local turns relative to its own magnitudes. The two pinned copies at the other fifth root give a comparison invariant under common calibration, conditional on the modified factor, independent preparations and supplied coherent exchange reading. The checked ordinary rules specify no orientation. [Phase and keeper study](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001A/results.md) · [Two-copy comparison and score replay](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md)
   - 2026-11-21 · Opened before the prospective study freeze. [Joint study](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/decision.md)
 
@@ -4389,5 +4392,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The set of physical starts, a weighted fraction of them and the signed admission test are separate specifications. One final set of meetings can arise from several labelled trees.
 - **Challenge.** Compare counting distinct starts with counting the ways to add a meeting. Retain all stalls, check both ordinary laws and delete the added meeting as a matched control.
 - **History.**
+  - 2026-11-21 · Under the same cap under which one added simple meeting cannot close six or more founding knots, a second added meeting gives a six-knot parity witness. No zero- or one-meeting exclusion changes. [Two added meetings and two separate readers](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)
   - 2026-11-21 · Tested every decorated founder through size eight, both laws, both exact weightings and the legal matched deletions. The proof covers every finite age and starting size of six or more for a simple extra meeting, degree-based cap and whole-step payment. A five-knot parity closure at step six tests the boundary. [One additional meeting](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001B/results.md) · [Sharp size threshold](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/boundary_checks.md)
   - 2026-11-21 · Opened before the prospective study freeze. [Joint study](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/decision.md)
+
+### A179 · Paying for two new simple meetings at the original opening cap
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Treat the six labelled founding knots with exactly seven distinct simple pair meetings, the three-place minimum plus at most one extra opening per knot, and whole-stage funding as the source. Count four ordinary steps under each law.
+- **Why.** Trees and one added meeting at that cap already have an obstruction for all six-or-larger starts.
+- **Rests on it.** Exact funding and closure probabilities need an explicit source weighting, initial legality and complete coverage. An externally reversed last parity sign is an additional reading of a particular closing birth.
+- **Challenge.** Compare uniform distinct holdings with a uniform labelled tree followed by two edits. Replay both ordinary laws and the eligible predecessor deletions, including identical private supply where permitted. Keep any later observed closure separate from the first-four-step rate.
+- **History.**
+  - 2026-11-21 · Found one parity whole closing by four among 751 decorated types and none under not-all-equal. The probability changes from 243/97,280 to 11/4,096 with the founder weighting. Giving the final knot the opposite sign is a supplied reading. On the measured closure every ordinary word is lost under reversal, while signed operator products can realize it. [Two added meetings and two separate readers](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)
+  - 2026-11-21 · Entered before the freeze. [Joint study](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)
+
+### A180 · Two separate real pointers after one common preparation
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Supply a real coherent preparation on lawful three-word pointers from a common ready word. After the final common operation each reader has a distinct pointer, its own local real instrument and characterizable ancillary words. Compare orientation mixtures at identical ordinary data.
+- **Why.** One reused pointer at two knots can carry a common orientation. Two separated local reads face a different question about where any reference is held.
+- **Rests on it.** Detecting a difference in a joint table requires the specified real preparation, allowed local operations, fixed records and an explicit rule for conditioning on successful flags.
+- **Challenge.** Compare coherently prepared alternatives, shared and independent orientation mixtures, recorded and disconnected preparations and both laws. Distinguish one copy per launch from a further shared reference or multiple copies.
+- **History.**
+  - 2026-11-21 · Matched single-pair cycle mixtures have identical separate real transcripts. With a known second relation the conditional keeper agreement is 1, 0 or 1/2. Reference reorientation, independent copies and recorded or inaccessible source labels test exactly what resource drives each result. Both laws support the underlying three-word registers. [Two added meetings and two separate readers](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)
+  - 2026-11-21 · Entered before the freeze. [Joint study](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)

@@ -202,6 +202,8 @@ evidence: results and their status come from the records each entry links.
 | [A144](#a144--a-reader-can-measure-a-change-with-chances-given-by-squared-weights) | A reader can measure a change, with chances given by squared weights | scaffold | Assumed |
 | [A145](#a145--read-allowed-states-using-only-presentations-in-which-every-rule-is-necessary) | Read allowed states using only presentations in which every rule is necessary | scaffold | Assumed |
 | [A146](#a146--count-repeating-releases-with-a-chosen-reader-start-supply-and-distribution-of-edits) | Count repeating releases with a chosen reader, start supply and distribution of edits | scaffold | Assumed |
+| [A147](#a147--three-readers-each-ask-for-a-read-or-a-change-of-one-distinction) | Three readers each ask for a read or a change of one distinction | scaffold | Assumed |
+| [A148](#a148--recover-necessary-holders-from-full-states-and-compare-several-orders-of-joint-reading) | Recover necessary holders from full states and compare several orders of joint reading | scaffold | Assumed |
 
 ## Entries
 
@@ -2806,6 +2808,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-20 · Under finite connected locally full not-all-equal rules with one or two holders per name and no implied rule, the full named states determine every later birth under the ordinary law. Uniform pair disagreement rates determine those states for a ternary presentation. With arity bounded by four or five, complete probabilities through order four are necessary and sufficient for the states, while support alone needs four or five respectively. The eight-name lower bound compares two closed starts. It leaves open whether pair rates alone can lose the next birth on a reached stage. Under parity the entire named states can give three or four births on five names. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/results.md).
   - 2026-11-20 · Under the uniform disagreement reading, every one of 18,750,714 named lawful irredundant not-all-equal state sets through nine distinctions fixes all subsequent births. In this census the pair counts and rates suffice for growth too. The full relation reconstructs the holders at every step of an all-size class. Four-place rules on eight names can nevertheless share all 28 pair readings and disagree on 16 allowed words in each direction. For parity, eight identical complete allowed words already yield four or three births on five names, and the additional information for growth is unbounded. The unrestricted premise stays under challenge. [Study](../research/READS-HOLDERS-SOURCES-20261120-001B/results.md).
   - 2026-11-20 · Under both ordinary knot laws, the same full states and disagreement counts on three named distinctions give three births or none. Nine named distinctions suffice with distinct physical supports. Parity can require unbounded further information about parent holdings, even after renaming. On the prepared sender edit the receiver's three local disagreement rates stay fixed while all nine rates to the sender change. The states of three-place not-all-equal bases are still recoverable from their disagreement counts at width four and above. A distance supplying the holders remains open. Independent referee pending. [States and holdings](../research/FOUR-READINGS-20261120-001B/results.md).
   - 2026-11-20 · FRESH-DEMAND-20261120-001 · On equal marked parent holdings all bond readings can agree while arbitrarily many fresh counts are possible. Under both laws a witnessed shared-parent step reads the common live block size in the identified class. A fixed bit budget and a bounded numerical bond radius are distinct demands. The logarithmic and linear information bounds fix the parent display for each set of comparisons.
@@ -3716,6 +3719,8 @@ evidence: results and their status come from the records each entry links.
   collapsing into it or turning out to be the same law in disguise (G18); the first branch is supported, not proved, if rival
   laws stay distinct on the same knots. As the owner notes, a derivation may be hard to test.
 - **History.**
+  - 2026-11-20 · The finite state-only proof recovers the arguments of the ordinary not-all-equal growth law, including across repeated meetings. The ordinary extension and its cost are still supplied. It remains open whether logic alone requires this extension. Under parity full states can leave the arguments of even this specified law ambiguous. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/results.md).
+  - 2026-11-20 · A dedicated comparison tests whether full states determine the holders and therefore the input to the ordinary growth rule. A derivation of the rule from the states would require ruling out alternative laws as well. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/preregistration.md).
   - 2026-11-20 · Recorded, in the owner's words, as the owner's interpretation; framed by G18 and B232.
 
 ### A129 · A join may receive one fewer fresh distinction
@@ -3897,6 +3902,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The fixed questions, choice of signs and transpose, external free settings, local reader placements including both readers in one holding, split knots, unread distinctions, mediator reports, and sampled and explosive starts are listed in the design. The ordinary laws determine the allowed assignments and parent holdings.
 - **Challenge.** Compare the incoherent uniform mixture, exchange fixed and conditioned settings, suppress either mediator report, lift a reversible motion event, and compare signed counts and a different one-question probability rule. Test both knot laws and both overlapping and separate holdings.
 - **History.**
+  - 2026-11-20 · With the same squared-weight rule and the positive uniform preparation, all eight settings on one three-place not-all-equal knot admit no common list for three separate readers. The score is 3 against 2 and all one-reader chances are independent of the other choices. All finite parity structures admit a common list for individual read-or-change questions. Loss of relative signs removes the violation. The ordinary law has yet to supply a sign-sensitive measurement. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001A/results.md).
   - 2026-11-20 · Recorded for the independently frozen study. [Design](../research/READS-HOLDERS-SOURCES-20261120-001A/preregistration.md). [Results](../research/READS-HOLDERS-SOURCES-20261120-001A/results.md).
 
 ### A145 · Read allowed states using only presentations in which every rule is necessary
@@ -3908,6 +3914,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The complete census uses up to nine names, connected physical starts of arity at least three and at most two holdings of a distinction. The study specifies an independent uniform weighting on complete allowed words for pair rates, the random-start and exponential-growth weightings, the chosen erasure, parent identity and naming conventions.
 - **Challenge.** Compare each whole-state erasure with erasure on the removed holding alone, relax the irredundance condition, compare named with renaming-invariant histories, vary arity, and assess the effect of growth on both irredundance and holder recovery.
 - **History.**
+  - 2026-11-20 · At every finite size the full named states of a connected not-all-equal presentation under these restrictions identify its holders, with exactly one closed six-name exception. At ten names all 588,843,271 named not-all-equal state sets identify their holders. Parity still permits different births with all rules necessary. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/results.md).
   - 2026-11-20 · Recorded for the independently frozen study. [Design](../research/READS-HOLDERS-SOURCES-20261120-001B/preregistration.md). [Results](../research/READS-HOLDERS-SOURCES-20261120-001B/results.md).
 
 ### A146 · Count repeating releases with a chosen reader, start supply and distribution of edits
@@ -3920,3 +3927,25 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Keep funding failures and unresolved candidates, compare both knot laws and both readers, separate physical shared distinctions from distinct pairs, test a source without doubled meetings, and compare the demand-based supply under the same topologies.
 - **History.**
   - 2026-11-20 · Recorded for the independently frozen study. [Design](../research/READS-HOLDERS-SOURCES-20261120-001C/preregistration.md). [Results](../research/READS-HOLDERS-SOURCES-20261120-001C/results.md).
+
+### A147 · Three readers each ask for a read or a change of one distinction
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Place one reader on each of the three named places of a ternary knot. Use the earlier positive coherent representative of the uniform allowed states and the supplied squared-weight change measurement. Each reader chooses independently between an ordinary read and a change read. A common explanation assigns answers to both choices at every reader.
+- **Why.** The earlier split experiment grouped the same physical marks into two reader roles. Three independent roles can give a different common-explanation test on the same elementary relation.
+- **Rests on it.** The equal setting weights, real positive representative, complete three-reader tables, signed correlation score and its higher-order conventions, uniform reader placements, fixed explosive hosts and added branches are specified in the freeze.
+- **Challenge.** Compare both laws, group two marks under one reader, lose coherence, attach holders of different arities, let the readers hold the whole added branch, and compare conditional and unconditional intermediate messages.
+- **History.**
+  - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/THREE-READERS-AND-GROWTH-20261120-001A/preregistration.md). [Study](../research/THREE-READERS-AND-GROWTH-20261120-001A/results.md).
+
+### A148 · Recover necessary holders from full states and compare several orders of joint reading
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Start with every named allowed word of a finite connected lawfully projected presentation in which each distinction has one or two holders and each physical rule is essential. Use wrong single-bit extensions, pair alternatives with fixed exterior, and erasure with the carrier held fixed. For joint readings distinguish a full probability marginal under uniform weighting from the support alone.
+- **Why.** Under the preceding comparison the names and states settled growth through nine distinctions. Unrestricted reconstruction and the cost of a partial reading require defining which facts the reader is given.
+- **Rests on it.** Full local projection at each holder, the ordinary complete-step law, the starting census, parent matching, and the three fresh source weightings are specified in the separate freeze. The growth law is supplied even when its future follows from the states.
+- **Challenge.** Check both laws, allow arbitrary repeated meetings, fix or erase marks in the proofs, compare joint counts with occupied patterns, and compare tree, extra-meeting and exponential-growth sources.
+- **History.**
+  - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/THREE-READERS-AND-GROWTH-20261120-001B/preregistration.md). [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/results.md).

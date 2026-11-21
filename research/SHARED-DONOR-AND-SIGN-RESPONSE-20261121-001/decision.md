@@ -24,7 +24,7 @@ The freezes, criticism and evidence for each result are bound in the [clock hand
 
 ## Final report as sent
 
-2026-11-21 03:17 PST
+2026-11-21 03:21 PST
 
 **Receiver ticks (B278).** Making two births draw from the same knot left the receiver’s count unchanged under both knot laws, even though both births contributed to the signal it received.
 
@@ -33,9 +33,9 @@ The freezes, criticism and evidence for each result are bound in the [clock hand
 | Position | Status | Result |
 |---|---|---|
 | B278 · Delay at matched payments | **Equality proved for this clock family** | The four sends took **4, 5, 6 and 6 receiver ticks**. All six placements matched the seven grants at send, launch and receipt. The donor spent two distinct names, and the two births’ common child appeared in the receiving history. [Clock study](https://github.com/jscul/knotlab/blob/main/research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/results.md) |
-| B279 · Sign at the later switch | **Zero contrast proved for the tested interaction** | In both parity loadings, the chosen output had probability **1/8** and its complement **7/8** for either sign. Exchanging the four possible shared outputs preserves the preparation. Any normalized response with that same symmetry also gives zero contrast. [Switch study](https://github.com/jscul/knotlab/blob/main/research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md) |
-| G1 and G5 · Internally measured delay | Sustained activity remains untested as a separate cause | The receiver admitting three-parent births registered **136/136** named sends per law. Requiring two parents gave **76/136**. At the first send, both matched histories contained two current ancestors from the third structure. At every later marked send, both contained zero. [Ancestry proof](https://github.com/jscul/knotlab/blob/main/proofs/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A-P001_shared_donor/proof.md#the-opportunity-for-a-claim-about-sustaining-activity) |
-| G18 · What a signed reading supplies | The one-quarter allowance is attainable with a supplied rule | Distinguishing one output in the signed measurement gave **1/4 for plus and 0 for minus**, while preserving all 16 single-input menus. The archived switch violates not-all-equal. A separate lawful two-knot swap gave zero contrast under both laws. [Measurement and controls](https://github.com/jscul/knotlab/blob/main/research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/observations.md) |
+| B279 · Sign at the later switch | **Zero contrast proved for the tested interaction** | In both parity loadings, the chosen output had probability **1/8** and its complement **7/8** for either sign. Four interchangeable outputs are reachable from either input. Preserving that symmetry and the measured single-input probabilities forces zero contrast. [Switch study](https://github.com/jscul/knotlab/blob/main/research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md) |
+| G1 and G5 · Internally measured delay | Sustained activity remains untested as a separate cause | Across 34 built starts and four sends, the receiver admitting three-parent births registered **136/136** per law. Requiring two parents gave **76/136**. At the first send, both matched histories contained two current ancestors from the third structure. At every later marked send, both contained zero. [Ancestry proof](https://github.com/jscul/knotlab/blob/main/proofs/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A-P001_shared_donor/proof.md#the-opportunity-for-a-claim-about-sustaining-activity) |
+| G18 · What a signed reading supplies | The one-quarter allowance is attainable with a supplied rule | Marking one output in the signed rule gave **1/4 for plus and 0 for minus**. This partial sign detection preserved all 16 single-input menus, including **1/8** on either input alone. The archived switch violates not-all-equal. A separate lawful two-knot swap gave zero contrast under both laws. [Measurement and controls](https://github.com/jscul/knotlab/blob/main/research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/observations.md) |
 
 **Next step:** Research directions — selected: #1.
 

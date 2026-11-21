@@ -26,11 +26,13 @@ The census at six through eight includes every distinct outcome and every tree-a
 
 The design advisors reviewed the freezes. Each scientific referee has a separate handoff with the exact reproduction commands, the reading that can change the claim, and the retained negative controls. [B258 handoff](../KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001A/referee_handoff.md) · [B289 handoff](../KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001B/referee_handoff.md)
 
-## Research position
+## Final report as sent
 
-**B258.** The proposed phase can be moved into how each distinction is read, and none of the ordinary rules tested requires that phase.
+2026-11-21 13:55 PST
 
-**B289.** With six or more starting knots and the original cap on loose distinctions, adding one simple meeting to a tree can never close the growing whole under either law.
+**B258.** The proposed phase from counting ones can be moved into how each distinction is read, and none of the ordinary rules tested requires it.
+
+**B289.** With six or more starting knots and at most one extra loose distinction per knot above its three-place minimum, adding one simple meeting to a tree can never close the growing whole under either law.
 
 | Study or goal | Status | What the result establishes |
 | --- | --- | --- |
@@ -39,7 +41,7 @@ The design advisors reviewed the freezes. Each scientific referee has a separate
 | G18 · Comparing laws, and G3 · Three-place rules | A choice of weighting becomes observable | At four places the proposed weighting gives each allowed word with one, two or three ones probability 1/20, 1/10 or 1/20 respectively. Uniform weighting gives 1/14. A different fifth root also produces a phase that survives a common recalibration in a supplied two-copy test. [Wider-knot comparison](https://github.com/jscul/knotlab/blob/main/research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md) |
 | G5 · Dynamics, and G17 · Meeting patterns | The size threshold is sharp | With the same cap, five starting knots can close on their sixth parity step. The corresponding not-all-equal birth adds one fresh distinction. [Five-knot witness](https://github.com/jscul/knotlab/blob/main/research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/boundary_checks.md) |
 
-With sizes six through eight equally weighted and a one-quarter chance of an extra opening per knot, four-step funding was **13.0990%** for uniform tree then edit and **13.3930%** for uniform distinct labelled holdings. Both are exact census probabilities rounded here. Each study had its own investigator, independently reviewed freeze and scientific referee handoff. Both scientific verdicts are pending. The scientific replays passed. A separate repository check still flags an existing wording change in a research skill. [Exact denominators](https://github.com/jscul/knotlab/blob/main/research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001B/results.md#exact-probabilities-by-founder-weighting) · [Referee handoffs](https://github.com/jscul/knotlab/blob/main/research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/referee_handoff.md)
+With sizes six through eight equally weighted and a one-quarter chance of an extra opening per knot, four-step funding was **13.0990%** for uniform tree then edit and **13.3930%** for uniform distinct labelled holdings. Both are exact census probabilities rounded here. Each study had its own investigator and written freeze, reviewed beforehand by a separate GPT-6.2 Astra at max reasoning. Both scientific verdicts are pending. The scientific replays passed. A separate repository check still flags an existing wording change in a research skill. [Exact denominators](https://github.com/jscul/knotlab/blob/main/research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001B/results.md#exact-probabilities-by-founder-weighting) · [Referee handoffs](https://github.com/jscul/knotlab/blob/main/research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/referee_handoff.md)
 
 **Next step:** Research directions — selected: #1
 
@@ -49,7 +51,7 @@ With sizes six through eight equally weighted and a one-quarter chance of an ext
 | 2 | B291 · Give two readers a common phase reference | 3/3 | 2/3 | Prepare two separate pointers from one real source → a joint record or a proof that the admitted readings agree | Alternative · deferred |
 | 3 | B253 · Determine when ordinary weightings agree | 3/3 | 3/3 | Extend the finite reveal-order check → an all-size criterion or a counterexample | Alternative · deferred |
 
-Two meetings is the first count still eligible for closure. Six knots give a finite first test. The phase study already supplies a reader for the second direction. Its missing piece is the common preparation. B253 has exact small cases and an all-size question.
+Two added meetings are the first case still eligible for closure. Six knots give a finite first test. The phase study already supplies a reader for the second direction. Its missing piece is the common preparation. B253 has exact small cases and an all-size question.
 
 **Corrections:** Narrowing. Both preparations reach **3** on the seven-question test with local bound **2**. Both reach **7/2** on a different test with local bound **4**. The earlier claimed increase disappears. [Score replay](https://github.com/jscul/knotlab/blob/main/research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md#the-seven-questions)
 

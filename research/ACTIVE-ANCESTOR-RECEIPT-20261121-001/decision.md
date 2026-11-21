@@ -16,17 +16,19 @@ The binary construction also gives a source for every permitted send of size `m 
 
 The independent finite search stores the last paid step, evidence of the current family, and a matching prefix of the complete signal in either orientation. It stops that history at its first complete signal, including when the added condition fails. Matching several words with a finite-state reader is a known algorithmic idea. Here it is applied to paid, nonretracing receiving histories and used to certify the existence or absence of a qualifying receipt for every enrolled launch. [Aho and Corasick, 1975](https://doi.org/10.1145/360825.360855) · [Coordinator checks and referee questions](referee_handoff.md)
 
-## Research position
+## Final report as sent
 
-**The lasting third structure contributed to the received signal, and both receivers counted four ticks.** This held under both parity and not-all-equal. The finite third family ended at size 17. At the size-32 send, the first receiving input had two current ancestors from that family in the lasting preparation. In the finite preparation, two ancestors built from both donor kinds carried that part of the signal. [B280 study](https://github.com/jscul/knotlab/blob/main/research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md)
+2026-11-21 07:59 PST
+
+**With the prepared clocks, the lasting third structure helped deliver the signal, and both receivers counted four ticks.** This held under parity and not-all-equal. The finite third family ended at size 17. At the size-32 send, two members of the lasting family became ancestors of the first receiving knot. In the finite preparation, two knots with ancestors of both donor kinds carried that part of the signal. [B280 study](https://github.com/jscul/knotlab/blob/main/research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md)
 
 | Position | Status | Result |
 |---|---|---|
 | B280 · Matched first receipt | **Proved** | Both receivers registered the same send at size 141, after 109 parent steps. The seven matched grants were 34 at send, 32 at each sending parent, 23 at launch, 111 at each receiving parent and 113 at receipt. [Physical payments](https://github.com/jscul/knotlab/blob/main/research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/physical_checks.md) |
-| G5 · What the receiver can read | **Depends on the receipt rule** | The ordinary receiver registered **48/48** named sends per law. Requiring its incoming history to contain a current member of the third family gave **25/48**. The other 23 had no qualifying receipt to time. [Receipt comparisons](https://github.com/jscul/knotlab/blob/main/research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md) |
-| G1 and G5 · Internally measured delay | **Extends to every permitted send size** | In the larger pair, the lasting third supplied 18 current ancestors at send size 48 and two at size 64. Its finite mate supplied zero. The paired counts were **seven and nine ticks**, respectively. The proof constructs a separately scaled pair for each permitted release size. [Proof](https://github.com/jscul/knotlab/blob/main/proofs/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/ACTIVE-ANCESTOR-RECEIPT-20261121-001A-P001_active_ancestor/proof.md) |
+| G5 · What the receiver can read | **Depends on the receipt rule** | Across twelve prepared starts and four sends each, the ordinary receiver registered **48/48** per law. Requiring a third-family member current at send in the incoming history gave **25/48**. The other 23 had no qualifying receipt to time. [Receipt comparisons](https://github.com/jscul/knotlab/blob/main/research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md) |
+| G1 and G5 · Internally measured delay | **Extends to every permitted send size** | In the larger pair, the lasting third supplied 18 current ancestors at send size 48 and two at size 64. Its finite mate supplied zero. The paired counts were **seven and nine ticks**, respectively. The proof constructs a separate pair for every send size divisible by 16 from 32 onward. [Proof](https://github.com/jscul/knotlab/blob/main/proofs/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/ACTIVE-ANCESTOR-RECEIPT-20261121-001A-P001_active_ancestor/proof.md) |
 
-The earlier clock theorem already fixed the elapsed count once the phase and paid passage length matched. B280 establishes that these quantities can stay fixed while the actual ancestry of the received signal changes. [Earlier timing theorem](https://github.com/jscul/knotlab/blob/main/proofs/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B-P001_receiver_ticks/proof.md)
+The earlier clock theorem already fixed the elapsed count once the phase and paid passage length matched. B280 shows that the signal can acquire different ancestors while both quantities stay fixed. In one larger pair, before the finite family ended, both ordinary receivers counted seven ticks. Requiring the family evidence delayed one registration to thirteen ticks. The clock still ticked once every 24 parent steps. [Earlier timing theorem](https://github.com/jscul/knotlab/blob/main/proofs/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B-P001_receiver_ticks/proof.md) · [History-qualified receipts](https://github.com/jscul/knotlab/blob/main/research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md#controls-that-change-what-counts-as-a-receipt)
 
 **Next step:** Research directions — selected: #1.
 
@@ -37,7 +39,7 @@ The earlier clock theorem already fixed the elapsed count once the phase and pai
 
 **Corrections:** No released claim required correction.  
 **Goals:** B280 reached its stopping condition. An independent Astra Max reviewed the design and its revision before freezing. Scientific refereeing is pending. [Referee handoff](https://github.com/jscul/knotlab/blob/main/research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/referee_handoff.md)  
-**Assumptions:** A167 records how the reader recognizes the same third family in both preparations.  
+**Assumptions:** The advisor asked whether renaming alone could create the apparent difference. A167 identifies the third family by shared distinctions, and that test survived renaming. Dropping the distinction between the two donor kinds admitted current ancestors in both preparations.  
 **Scaffolds:** The starts, family marks, clock roles and receipt rules were supplied. Ordinary growth determined which knots paid for the births and which became ancestors.  
 **Validation:** The replay covered 6,222 births per law. A separate check matched all 131 earliest histories and 917 grants. The repository-wide policy check still flags an unrelated skill edit.  
-**Basket:** B281 is selected. Whether sustained activity can change a continuing clock’s own rate remains open.
+**Basket:** B281 is selected. Whether sustained activity can change a continuing clock’s own rate, or give a law of gravity, remains open.

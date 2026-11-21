@@ -14,9 +14,9 @@ Run these commands from the repository root. Each emits its exact stored single 
 .venv/bin/python -B research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001/check_explosive_profiles.py
 ```
 
-Two directly sharing knots can have state distance one and grow forever without a common descendant.
+Two directly sharing not-all-equal knots can have state distance one and grow forever without a common descendant.
 
-On the 28-name not-all-equal stage, the pair rates force all four next births, including their parents and fresh counts. Whether they do so on every reached stage remains open.
+On the 28-name not-all-equal stage, the pair rates force all four next births, including their parents and fresh counts, but the answer for every reached stage remains open.
 
 | Position | Status | Finding |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ On the 28-name not-all-equal stage, the pair rates force all four next births, i
 
 On 64 fresh labelled trees with three to five knots, **33/46 funded pairs** never met. Adding one uniform extra meeting gave **5/33**. The respective 95% intervals are 56.5–84.0% and 5.1–31.9%. In 64 fresh orientations of the explosive start, every query was far under both state readings, yet **44/64** pairs met on the next parent step at the start and **64/64** did so at the fourth grown stage. At that last stage the exact state distances are bounded and the far classification is proved. [Weightings and denominators](https://github.com/jscul/knotlab/blob/main/research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001A/samples.md)
 
-The second study exhausted **150 not-all-equal stages** from its explosive sources and companions, through **122 reached names**. Every table gave a unique named birth roster within that population under both word weightings. The fresh panels gave the same verdict at each of the two ages for 63/63 funded small starts and 64/64 explosive starts in their respective comparisons. At arbitrary size, a known loose name reveals its holder. A spent name can pass the available test for being loose. [Explosive census](https://github.com/jscul/knotlab/blob/main/research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001B/explosive.md) · [All-size proof and limits](https://github.com/jscul/knotlab/blob/main/research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001B/reading.md)
+The second study exhausted **150 not-all-equal stages** from its explosive sources and companions, through **122 reached names**. Every table gave a unique named birth roster within that population under both word weightings. The fresh panels gave the same verdict at each of the two ages for 63/63 funded small starts and 64/64 explosive starts in their respective comparisons. At any size a loose name reveals its holder. From two funded steps onward, identifying the loose names suffices to recover every next parent and fresh count. A spent name can pass the available test for being loose. [Explosive census](https://github.com/jscul/knotlab/blob/main/research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001B/explosive.md) · [All-size proof and limits](https://github.com/jscul/knotlab/blob/main/research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001B/reading.md)
 
 **Next step:** Research directions — selected: #1.
 

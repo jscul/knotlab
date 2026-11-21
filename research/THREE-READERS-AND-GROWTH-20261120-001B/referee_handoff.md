@@ -1,0 +1,31 @@
+# Referee handoff for recovering not-all-equal growth
+
+Independent program referee pending. The state-only reader classifies every finite connected lawful irredundant not-all-equal presentation with at most two holders per distinction. The unique ambiguity up to renaming is closed. At width ten all 588,843,271 named allowed sets give unique holdings. Fourth-order probabilities recover all words with at most five-place holders. [Results](results.md) · [Main proof](classification.md) · [Independent derivation](recovery_argument.md)
+
+1. Reconstruct ten-name physical representatives independently of their candidate supports. Check exact projection at every holder and fixed-carrier deletion. Confirm there are 1,659 NAE state classes and no unresolved mandatory deletion. Verify all 15 named six-name exceptions through ten and compare the function recording actual births with the function recording named supports. Check parity and retain the difference between a funding stall and closure. [Frozen design](preregistration.md) · [Census and separate replay](census.md)
+2. For the three-word lemma, test the assumption every prescribed pattern on x,y extends after the row H is removed and its other names are pinned zero. The 00 case uses essentiality. For two different neighbouring holders, check that each unit-firing row can be used only once, so restoring an omitted bit can enable that whole contradiction trace. Attempt an odd degree-two residual after propagation: an untouched, still two-sided, two-place row must be one of at most two shortened rows. Check the case x and y have both holders in common separately. The 14- and 15-name controls have two failed whole-holder repairs in the same live preparation, the latter with one repeated meeting. [Linked controls](../../artifacts/THREE-READERS-AND-GROWTH-20261120-001B/THREE-READERS-AND-GROWTH-20261120-001B-E001_state_recovery/linked_failures.json)
+3. Verify that replacing two bits in every word by either opposite pair identifies exactly equal holder incidences. Starting from one loose name, test the formula for inferring its neighbour even if the holders meet more than once. For a closed repeated meeting, set a parallel pair to opposite bits. Check local lawfulness, strict irredundance, identification of newly free names and existence of a surviving loose name. For a closed simple presentation with no common holder, check that every rival triple uses three different mutually meeting holder pairs. Test whether the two mutual neighbours of one meeting force just four mutually meeting ternary holders. Double one meeting or change another to three, check the unequal states. [State-only decoder](../../experiments/THREE-READERS-AND-GROWTH-20261120-001B/THREE-READERS-AND-GROWTH-20261120-001B-E001_state_recovery/reconstruct.py) · [Independent counts and controls](../../artifacts/THREE-READERS-AND-GROWTH-20261120-001B/THREE-READERS-AND-GROWTH-20261120-001B-E001_state_recovery/alternative_argument.json)
+4. Recompute the disagreement at order four on the eight-name four-place witness and verify equality of all 56 complete triple distributions. Check that the all-equal indicator has only even signed products and that a positive weighting makes zero probability equivalent to forbidden support. In the two p-place examples, every smaller support is full under both laws, but NAE smaller probability tables can differ. Under parity they are uniform. The lower bounds are for arbitrary supplied connected lawful starts, and the arity-five maximum includes four-place rules. [Order proofs](marginals.md) · [Exact tables](../../artifacts/THREE-READERS-AND-GROWTH-20261120-001B/THREE-READERS-AND-GROWTH-20261120-001B-E001_state_recovery/marginal_orders.json)
+5. Replay the random stream, counting repeated explosive draws at their stated weight. Check all 128 sources per weighting and the separate funded denominators 41, 25 and 128. For parity verify that summing the old independent rules gives a lawful new row when there are three or more loose names. Independently recover the two legal covers for the three two-loose reached stages. For NAE check that original words and full newborn mixed words extend and that strict essentiality survives. Reconstructing data for an already specified law and deriving the law itself are different claims. [Panel records](../../artifacts/THREE-READERS-AND-GROWTH-20261120-001B/THREE-READERS-AND-GROWTH-20261120-001B-E001_state_recovery/sample_recovery.json)
+
+| Scope | Position | Basis |
+| --- | --- | --- |
+| This attempt | **Status: Complete, referee pending** | Every lawful finite connected not-all-equal start satisfying the frozen restrictions has growth determined by its states |
+| Local direction | A single ambiguity in named holdings | Exactly the closed six-name relation and its two presentations |
+| Broader exploration | Minimum order on reached stages stays open | For general maximum four or five, uniform joint order four is necessary and sufficient |
+| G5, A97 and A128 | Growth is determined conditional on the ordinary law | Pair rates need not recover wider named words. Parity states do not decide growth |
+
+**Next step:** Continue — selected: #1
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Determine the pair-rate limit on actual reached stages | 3/3 | 2/3 | Test physical four-place and larger stages → a pair with identical readings but different words, or a proof on a named reached class | Selected · independent review pending |
+| 2 | Extend the sharp full-marginal bound to six places | 2/3 | 2/3 | Seek two lawful state sets with matching order-four tables → a witness or stronger upper bound | Alternative · deferred |
+
+**Corrections:** None. The earlier theorem was sufficient in a smaller class, and the new result completes it under the same local and erasure gates.
+
+**Goals:** G5 gains the all-size NAE classification, with parity retained as a negative control.
+
+**Assumptions:** A97 is supported for full state recovery at the proved orders. A128 remains open because the ordinary extension law was supplied.
+
+**Scaffolds:** State-only holder tests, marginal order, uniform allowed weighting, the ordinary complete step, named comparisons, the two-part live controls and three source weightings.

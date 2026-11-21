@@ -1,0 +1,32 @@
+# How many distinctions must be read together?
+
+Assume the complete family of indexed readings is supplied on a fixed carrier. A full marginal gives all local word probabilities under the uniform weighting on allowed states. A support reading gives only which local words appear. Recovery means determining the **entire named set of allowed words** among all connected lawful irredundant presentations with maximum arity at most p. It does not require being told the actual supports. In the table each entry is the least sufficient order. A reading of order r includes all smaller ones.
+
+| Supplied law and reading | At most four places per holder | At most five places per holder |
+| --- | ---: | ---: |
+| Not-all-equal, uniform full marginals | **4** | **4** |
+| Not-all-equal, support only | **4** | **5** |
+| Even parity, uniform full marginals | **4** | **5** |
+| Even parity, support only | **4** | **5** |
+
+At any arity bound p, full support projections through order p suffice for either law. Keep a global word exactly when its local words occur on all p-or-smaller sets. Every allowed word passes. Every forbidden word fails a defining constraint on at most p names, hence fails the corresponding projection. This upper bound requires a supplied arity promise and uses no prior knowledge of the physical holder identities.
+
+## Full not-all-equal probabilities
+
+Encode each of q binary values by a sign. The indicator that all q values are equal is
+
+$$
+2^{1-q}\sum_{\substack{I\subseteq [q]\\ |I|\ {\rm even}}}\ \prod_{i\in I}s_i.
+$$
+
+The empty product is 1. Expand the sum of the all-plus and all-minus indicators to get the formula, with every odd product cancelling. Thus complete reading through the largest even order at most p suffices to compute the probability that any set of at most p names is all equal. Keep the not-all-equal rule on each set of zero monochromatic probability. All true defining rules occur in this list and every listed rule holds throughout the allowed states, so their conjunction recovers exactly the original states. Positivity on every allowed word suffices for this zero test. Under the supplied uniform weighting the full relation is also invariant under simultaneous complement, so every odd signed moment vanishes. In particular, all three-variable probabilities follow from pair probabilities, and all five-variable probabilities follow from four-variable ones.
+
+For a strict lower bound use the earlier two lawful four-place presentations on eight names. One has supports 0123, 0456, 1457 and 2367. The other exchanges names 1 and 6 throughout. They have the same 154-word count and all pair disagreement rates agree. The complement of each word occurs with the same weight, so the individual value frequencies are all one half and every odd signed moment vanishes. Their full tables agree on all 28 pairs and all 56 triples, while their allowed words differ. Exactly eight of the 70 full four-name tables differ. On 0123, for example, 0000 and 1111 have zero probability in the first and probability 2/154 apiece in the second. The first preparation contains the word with ones at 0, 1 and 2, and the second does not. The maximum-five class includes this four-place pair. [Full tables and first difference](../../artifacts/THREE-READERS-AND-GROWTH-20261120-001B/THREE-READERS-AND-GROWTH-20261120-001B-E001_state_recovery/marginal_orders.json)
+
+## Support-only readings, and parity
+
+Take two p-place holders sharing exactly one distinction and give each p−1 private ones. Exchange one private distinction from each holder between them. Both preparations are connected and have full local projection: after a chosen local assignment, a private place of the other holder can satisfy it. Erasing either rule also permits a word violating just it. On at most p−1 pinned places every binary pattern extends under either law. If each holder has an unpinned private place, use it independently. If all p−1 private places of one holder were pinned, choose the shared value to satisfy that holder, and use a private place to satisfy the other. These two different full state sets therefore have identical support readings through p−1. To see they differ, pin all places of an original holder to zero, including the common distinction. Each swapped holder then has at least one unpinned private name. Under not-all-equal, set one in each swapped holder to one. Under parity, pin instead a single original place to one and its other places to zero, then set each swapped holder’s unpinned private name to give even parity. Both constructions satisfy the swapped rules and violate the original one. Direct enumeration gives 98 words per not-all-equal arm on seven names and 450 on nine. All four families of supports first differ at order p. [Literal witnesses and tables](../../artifacts/THREE-READERS-AND-GROWTH-20261120-001B/THREE-READERS-AND-GROWTH-20261120-001B-E001_state_recovery/marginal_orders.json)
+
+Under even parity these projected marginals are also exactly uniform on every set of fewer than p positions. Each possible local word has the same number of completions because the allowed words are the solutions of homogeneous binary linear equations, and translation by any one completion bijects the possible completions with the solutions vanishing at those positions. Each parity arm has 32 words on seven names and 128 on nine. Its changed set of supports changes the p-name probability table. Higher-order parity readings can recover the allowed states without determining growth: even when the **entire** state set is supplied, three and four births both occur at the same five-name relation. [Parity preparations](../READS-HOLDERS-SOURCES-20261120-001B/census.md)
+
+For an ordinary grown stage known to have no holder larger than five places, all four-name probabilities suffice for every allowed word, then the not-all-equal classification gives its future growth. For a general finite stage with known maximum p the even-order upper bound continues to apply. Pair disagreement rates already suffice on all-ternary not-all-equal stages. The eight-name counterexample is a lawful supplied pair of closed starts. Additional structural evidence would be needed to show two *positive-age* stages from specified seeds actually attain that marginal lower bound, or that a fixed reading order works in every unbounded-arity history. The three-word test for physical co-holding uses the same **entire exterior word** on its trials, information which pair disagreement frequencies discard.

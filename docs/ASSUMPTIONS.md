@@ -230,6 +230,8 @@ evidence: results and their status come from the records each entry links.
 | [A172](#a172--one-shared-decision-with-a-record-at-each-reader) | One shared decision with a record at each reader | scaffold | Assumed |
 | [A173](#a173--which-records-survive-a-physical-return-of-a-permitted-change) | Which records survive a physical return of a permitted change | scaffold | Assumed |
 | [A174](#a174--counting-ordinary-closing-births-and-reading-a-changed-sign) | Counting ordinary closing births and reading a changed sign | scaffold | Assumed |
+| [A175](#a175--extending-ordinary-composition-to-a-balanced-exchange) | Extending ordinary composition to a balanced exchange | scaffold | Assumed |
+| [A176](#a176--exact-weighting-of-decorated-starting-trees) | Exact weighting of decorated starting trees | scaffold | Assumed |
 
 ## Entries
 
@@ -4321,6 +4323,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The physical tests distinguish a change label left in a keeper, a reversible return to its starting word, and the later answer write. A signed input, coherent erasure or coupling introduced for comparison is an additional operation.
 - **Challenge.** Test the two sign preparations at identical ordinary probabilities, include every failed or missing write, and vary the retained information. [Previous measurement](../research/TWO-KNOTS-ONE-DECISION-20261121-001/mechanism.md).
 - **History.**
+  - 2026-11-21 · A consistent full return can itself change the phase being read. The physical compensated experiment and a direct recombination with no full undo have separate calibrations. [Idle phase study](../research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001A/results.md)
   - 2026-11-21 · The first co-held design failed the projected knot test and was retained. The corrected controller has a full local rule at every holder. Explicit extra pulses, a phase reference, guarded offers and a coordinated two-holder write give a sign-sensitive answer under both laws. Keeping vs physically returning an additional route mark tests the difference. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
   - 2026-11-21 · Opened with the independent erasure study before its design freeze.
 
@@ -4333,5 +4336,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Each denominator depends on how the start is drawn, which steps are observed and whether a closing birth was reached. Reversing the closing rule and supplying a reader for a signed preparation are extra choices.
 - **Challenge.** Compare fresh ordinary and explosive weightings, literal draws and supported examples. At the same candidate birth check legal local records and complete global coexistence under each sign. [Earlier closed-type census](../research/FOUR-READINGS-20261120-001A/results.md).
 - **History.**
+  - 2026-11-21 · The registered tree population is now exhausted. An analytic reduction to a spent common knot with three or four leaves reproduces the exact closure and operator-admission masses. [Tree derivation](../research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/tree_proof.md)
   - 2026-11-21 · Four-step T/E/M/S designs use fresh independently drawn founders. The rates now distinguish a newly closed piece from an entirely closed source and an observed zero from an undefined conditional fraction. Reversing only the actual terminal sign leaves no ordinary full word. A supplied operator apparatus can give a conditional internal read. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
   - 2026-11-21 · Opened with the sampled closure study before its design freeze.
+
+### A175 · Extending ordinary composition to a balanced exchange
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Use one active pair and an idle word on the same lawful support. Keep the calibrated moving-pair action fixed. Test which relative phases at the idle word satisfy a separately specified composition requirement.
+- **Why.** Two implementations had identical single-word probabilities in the preceding test. A coherent prep, recombination and ordinary answer event are needed to distinguish their actions on the complete support.
+- **Rests on it.** Any uniqueness or obstruction must say whether the composition requirement is native on ordinary words, extended to amplitudes, or an added postulate. A phase common to all alternatives cannot be observed.
+- **Challenge.** Compare an ordinary inverse with coherent identity, and vary the physically retained record and the reference used at recombination. [Last physical erasure study](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001A/results.md).
+- **History.**
+  - 2026-11-21 · Complete ordinary equalities hold for incompatible coherent lifts. Direct versus indirect coherent implementation in one common frame fixes the square of the single-pulse idle amplitude. Independent coherent references leave a product of phases around the complete comparison. [Idle phase study](../research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001A/results.md)
+  - 2026-11-21 · Opened before the B287 design freeze.
+
+### A176 · Exact weighting of decorated starting trees
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Keep the preceding tree source. Weight starting size uniformly from four to eight, weight labelled trees equally at fixed size, and give each knot one extra loose distinction independently with probability one quarter. Use four ordinary growth steps.
+- **Why.** Weighting unlabelled structures or treating a stalled start as absent would change the underlying population. Admission of a reversed parity sign uses an additional mathematical reading.
+- **Rests on it.** An exact finite population answer depends on preserving label multiplicities, loose-distinction probabilities, whole-step funding and the denominator for each conditional event.
+- **Challenge.** Reconstruct the labelled masses independently, compare each represented trajectory with ordinary growth under the two laws and compare conditional with unconditional results. [Earlier sampled closure study](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001B/populations.md).
+- **History.**
+  - 2026-11-21 · Checks by size, number of additional openings and founder symmetry preserve the labelled source weighting. Varying the probability of a loose distinction changes the answer. Not-all-equal has no closing cohort in this population. [Independent calculation](../research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/tree_check.py)
+  - 2026-11-21 · Opened before the B288 design freeze.

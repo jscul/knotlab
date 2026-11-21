@@ -228,6 +228,8 @@ evidence: results and their status come from the records each entry links.
 | [A170](#a170--fork-an-identical-paid-clock-history-at-one-loose-distinction) | Fork an identical paid clock history at one loose distinction | scaffold | Assumed |
 | [A171](#a171--read-a-private-sender-return-on-one-continuing-receiver) | Read a private sender return on one continuing receiver | scaffold | Assumed |
 | [A172](#a172--one-shared-decision-with-a-record-at-each-reader) | One shared decision with a record at each reader | scaffold | Assumed |
+| [A173](#a173--which-records-survive-a-physical-return-of-a-permitted-change) | Which records survive a physical return of a permitted change | scaffold | Assumed |
+| [A174](#a174--counting-ordinary-closing-births-and-reading-a-changed-sign) | Counting ordinary closing births and reading a changed sign | scaffold | Assumed |
 
 ## Entries
 
@@ -3890,6 +3892,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The ordinary law supplies the reached unsigned holdings. The odd signing, operator values, quantum preparation, question pairs and probabilities enter through this reading. The small built starts, leaf family and the labelled and jump-selected controls are listed in the frozen design.
 - **Challenge.** Compare ordinary scalar values, move or remove the odd sign, exchange the question convention, change answer weights, and compare the two knot laws. An intrinsic assignment of operators and a law for their probabilities remain open.
 - **History.**
+  - 2026-11-21 · Fresh physical closing components admit or exclude this extra reading. The least reached positive whole has five holders, ten distinctions, 64 even scalar words and zero after reversing just the closing sign. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
   - 2026-11-21 · Using the same compiled operation for both occurrences of each mark distinguishes the six- and eight-holder parity patterns. Relaxing identity at one display makes an imperfect eight-holder table attainable on a uniform ordinary source. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
   - 2026-11-20 · With the positive real weighting of ordinary allowed words and the supplied measurement of changes by squared weights, two split parity knots reproduce all 576 probabilities of the earlier game. Holding the ordinary distribution fixed and losing coherence drops its success to 2/3. Opposite relative signs cannot be distinguished by the tested ordinary motion or plain reads. [Study](../research/READS-HOLDERS-SOURCES-20261120-001A/results.md).
   - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001A/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001A/results.md).
@@ -4044,6 +4047,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The full-pair and singleton calibrations, six-rule and three-reader tables, before-and-after states, the chosen sign order, supplied readers, preparations and fresh comparison weightings.
 - **Challenge.** Compare fresh conditioning to a retained preparation label, algebraic order to recorded chronology, a fair sign attached to a refused change, and alternative states after the same answer. Check both laws and ordinary motion, births and the forbidding join.
 - **History.**
+  - 2026-11-21 · Two coherent pulse rules have identical ordinary singleton frequencies but different end-to-end physical sign records. The chosen phase on an idle alternative is consequential. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
   - 2026-11-21 · The new shared instrument separates source admission, signed changes, conditional data state, local raw and calibrated word, and a physically distinct recorded answer. The all-even and not-all-equal controls keep pre-setting herald failures as well as accepted histories. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
   - 2026-11-20 · Reading every erased mark and pooling by the product has the same conditional exterior state as the binary joint flip once all the erased marks are discarded. Additional retained marks can distinguish the two supplied instruments. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
   - 2026-11-20 · A complete normalized instrument made only of nonnegative transfer amplitudes cannot turn a relative sign into different ordinary pointer probabilities. A preloaded signed memory can transfer its sign if coherent transport is supplied. Ordinary register occupation remains insensitive. [Sign study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/results.md).
@@ -4304,5 +4308,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The two supplied sign patterns and independent choices of setting, which knot receives which question, the state of the reader, the meaning of its outcome and failure, the preparation and weighting, and what persists across consecutive questions. [Earlier tables](../research/FOUR-READINGS-20261120-001A/results.md) · [Ordinary switch](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md).
 - **Challenge.** Use the same rule on both exact benchmarks and lawful parity and not-all-equal preparations. Inspect the entire local record, including when the other setting changes, and repeat and overlap questions. Compare what ordinary knot growth can supply with every additional operation in the [shared design](../research/TWO-KNOTS-ONE-DECISION-20261121-001/preregistration.md).
 - **History.**
+  - 2026-11-21 · The local keeper can perform both answer writes in an assembled lawful controller when one slack distinction is allowed to change. Ordinary value-controlled gates alone cannot convert relative sign into a population. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
   - 2026-11-21 · The freeze fixes the ordered source and tie choices, strict and endpoint-calibrated preparations, uniform coherent carrier, local interference, squared-weight projection and post-read latch. Tags, erasure, ordinary mixtures, independent halves, reversal of names, literal overlap memory, failures and sequential reads test distinct choices. The two answer codewords and the separate ready state are lawful. A pre-recombination tag at one reader halves six-rule success, while the literal reader's complete sweep distinguishes remote settings at total variation 1/2. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
   - 2026-11-21 · Registered while the common design was being prepared, before either target replay.
+
+### A173 · Which records survive a physical return of a permitted change
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Address a named nonzero change of the homogeneous six-constraint preparation and supply one ternary answer keeper. Specify the complete initial ordinary words and preparation histories, the records of each alternative that can persist, and the local event that writes the answer.
+- **Why.** A prior coherent instrument gave different answers for different relative signs after erasing a record. The ordinary switch returned equal answer probabilities. The words used by the answer keeper are lawful in both knot laws.
+- **Rests on it.** The physical tests distinguish a change label left in a keeper, a reversible return to its starting word, and the later answer write. A signed input, coherent erasure or coupling introduced for comparison is an additional operation.
+- **Challenge.** Test the two sign preparations at identical ordinary probabilities, include every failed or missing write, and vary the retained information. [Previous measurement](../research/TWO-KNOTS-ONE-DECISION-20261121-001/mechanism.md).
+- **History.**
+  - 2026-11-21 · The first co-held design failed the projected knot test and was retained. The corrected controller has a full local rule at every holder. Explicit extra pulses, a phase reference, guarded offers and a coordinated two-holder write give a sign-sensitive answer under both laws. Keeping vs physically returning an additional route mark tests the difference. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
+  - 2026-11-21 · Opened with the independent erasure study before its design freeze.
+
+### A174 · Counting ordinary closing births and reading a changed sign
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Use stated weightings on ordinary lawful starts and an explicit observation limit to measure closing births. Count separately the closed holdings that would admit a supplied operator reading if the closing parity sign were reversed.
+- **Why.** The 79 of 121 earlier figure weights reachable closed types. It gives neither the share of fresh starts that reach such a type nor a local event that records an odd sign.
+- **Rests on it.** Each denominator depends on how the start is drawn, which steps are observed and whether a closing birth was reached. Reversing the closing rule and supplying a reader for a signed preparation are extra choices.
+- **Challenge.** Compare fresh ordinary and explosive weightings, literal draws and supported examples. At the same candidate birth check legal local records and complete global coexistence under each sign. [Earlier closed-type census](../research/FOUR-READINGS-20261120-001A/results.md).
+- **History.**
+  - 2026-11-21 · Four-step T/E/M/S designs use fresh independently drawn founders. The rates now distinguish a newly closed piece from an entirely closed source and an observed zero from an undefined conditional fraction. Reversing only the actual terminal sign leaves no ordinary full word. A supplied operator apparatus can give a conditional internal read. [Erasure and closing signs](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001/decision.md)
+  - 2026-11-21 · Opened with the sampled closure study before its design freeze.

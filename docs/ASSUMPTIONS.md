@@ -220,6 +220,8 @@ evidence: results and their status come from the records each entry links.
 | [A162](#a162--count-a-marked-receivers-turns-at-an-actual-intake) | Count a marked receiver's turns at an actual intake | scaffold | Assumed |
 | [A163](#a163--compare-complete-erasure-records-with-a-supplied-signed-measurement) | Compare complete erasure records with a supplied signed measurement | scaffold | Assumed |
 | [A164](#a164--change-joint-parents-on-the-receivers-paid-passage) | Change joint parents on the receiver’s paid passage | scaffold | Assumed |
+| [A165](#a165--identify-a-clock-receipt-through-two-births-paid-by-one-donor) | Identify a clock receipt through two births paid by one donor | scaffold | Assumed |
+| [A166](#a166--test-relative-sign-on-the-complete-record-of-a-later-firing) | Test relative sign on the complete record of a later firing | scaffold | Assumed |
 
 ## Entries
 
@@ -4150,6 +4152,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The two-word encoding, connected four-knot control, gate addresses and schedules, initial memory and witness values, membership of the archived controls, per-event readings and positive signed controls in [the design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/preregistration.md).
 - **Challenge.** Change which memories are accessible and reverse the names of their two values. Cross the preparation schedule with the independently supplied sign. Compare individual singletons and their possible apparatus preparations with the response to the pair. Check both knot laws on the connected device.
 - **History.**
+  - 2026-11-21 · With the same distribution of retained histories, the later ordinary switch and its firing keeper give 1/8 for the nominated word under either diagnostic sign. The fork is reached with certainty and the two-word selection has probability 1/8. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md)
   - 2026-11-20 · The paid-spending, closed and rejoining controls preserve all ordinary sign-blind predictions for their admitted readings. The registered parity rejoin permits zero sign contrast even if one varies the complete measurement subject to its observed singleton records. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
   - 2026-11-20 · The four-knot pointer records the parity of actual memory swaps or, after an earlier copy, a two-time correlation. Reversing the independently supplied sign on the same full word pair leaves every tested ordinary pointer response fixed. [Sign study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/results.md).
   - 2026-11-20 · Registered for the two-word test before collecting evidence. [Study design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/preregistration.md).
@@ -4176,6 +4179,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The selected growth, closing and motion preparations, their history controls and schedulers, the supplied squared-weight instrument, and its conditional state after each outcome in [the erasure design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/preregistration.md).
 - **Challenge.** Keep an old which-word record, omit it, supply a complementary read of it, and interchange the outcome names. Compare the observed probabilities for the two singletons and the equal pair at each sign. A subsequent ordinary event that exploits their relative sign on the same preparation would change the physical conclusion.
 - **History.**
+  - 2026-11-21 · Conditioning on the actual firing or on the classical controller's setting forces zero contrast. Forgetting such a record later keeps that zero. A distinguished output in a supplied signed measurement instead permits the whole-word contrast 1/4. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md)
   - 2026-11-20 · A supplied marked erasure on the positive not-all-equal ternary leaves a relative minus with probability 1/6. All 1,115 elementary outcomes of the 138 physical readings agreed between independently crossed signs. K2 alone states which positive completions exist. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
   - 2026-11-20 · Recorded after prospective review and before collecting evidence on the frozen candidates. [Reviewed design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/review_candidate_v2.md).
 
@@ -4188,5 +4192,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The original clock frames and ports, the active and finite third families, the locations and multiplicities of the changed witnesses, the fixed grants to be matched, the prepared sends and the recognition rules in [the joint-parent design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/preregistration.md).
 - **Challenge.** Exchange the locations of common and separate witnesses, cross each change with continued or ended third activity, and compare the older reader that requires two parents at every original meeting. Count failed or ambiguous recognition as well as receipt and check the grants of its actual parents.
 - **History.**
+  - 2026-11-21 · Two simultaneous three-parent groups can spend different names of one donor and both reach the earliest receiving member through their actual common child. At fixed 34-meeting passage and the seven matched grants, the receiver's turns agree across all six placements, for both laws. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/results.md)
   - 2026-11-20 · The disjoint witness exchange preserves every original live holding and matches the grants at send, launch and first receipt while changing which donor contributes. Neither the 34-meeting timing nor the four counts changes when the designated third family becomes finite. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/results.md)
   - 2026-11-20 · Registered after review of the revised controls and before collecting evidence. [Binding revision](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/design_v2.md).
+
+### A165 · Identify a clock receipt through two births paid by one donor
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Supply a marked passage on which two three-parent births share one donor, two compensating witness changes, the paired lasting and finite middle preparations, and the same anchored sender and receiver. A receipt must agree across all physical readings of its member. Attribute an effect to continued middle activity only when the continuing arm has the required current ancestor at that send and the matched finite arm lacks it.
+- **Why.** Joint payments may change ordinary demand even with the same available distinctions. Different arrival orders may still have the same count on a fixed receiving clock. A test of sustained activity needs a causal opportunity as well as an active preparation.
+- **Rests on it.** The shared and disjoint comparison sites, supply controls, matched grant list, marked clock phases, specified launches, current-ancestry test, and two receiving rules in [the study design](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/preregistration.md).
+- **Challenge.** Compare all common and separate witness choices at the shared and compensating sites, change the central supply on the isolated control, and compare the live and finite third with and without a reader able to accept a three-parent input. Account separately for every actual payment, raw arrival order and counted tick.
+- **History.**
+  - 2026-11-21 · All 136 appointed sends register with the reader accepting a third parent, and 76 do with the binary-only reader per law. At the first launch both matched histories contain two current middle ancestors. All later marked launches have none in either. This family cannot isolate sustained activity. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/results.md)
+  - 2026-11-21 · Registered after independent review of the original and revised designs and before the replay. [Binding revision](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/design_v2.md).
+
+### A166 · Test relative sign on the complete record of a later firing
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Compare two equally weighted complete words from the same ordinary switch fork, an externally prepared relative sign, and the actual word produced by each allowed next firing. Declare which changes of names preserve the prepared history and apparatus, which output the apparatus can mark, and when a choice of firing or a previous mark is physically retained.
+- **Why.** The same singleton probabilities can fit an ordinary mixture and a signed measurement. A symmetry of the prepared apparatus can forbid a response still allowed by those probabilities alone.
+- **Rests on it.** The recorded parity switch, selected full-word pair and nominated output, matched histories, ordinary and signed controls, specified conditional offers, added keeper and marked versus unmarked sibling distinctions in [the prospective design](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/preregistration.md).
+- **Challenge.** Test the actual controller conditional on its shift and chosen holder before pooling. Keep the firing name, erase access to it, distinguish an outgoing mark, or let a relabeling also act on a supplied sign. Compare all physical word probabilities and both answers against an explicitly normalized signed completion.
+- **History.**
+  - 2026-11-21 · The four shared complete outputs are interchangeable under all 24 permutations preserving the input histories. A normalized response preserving the same apparatus has zero interference at each. One supplied marked measurement fits all 16 singleton menus and gives 1/4 versus 0. Actually preoccupying two new marks removes the target. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md)
+  - 2026-11-21 · Registered on the exact revised design before measuring the proposed interaction. [Prospective review candidate](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/review_candidate_v2.md).

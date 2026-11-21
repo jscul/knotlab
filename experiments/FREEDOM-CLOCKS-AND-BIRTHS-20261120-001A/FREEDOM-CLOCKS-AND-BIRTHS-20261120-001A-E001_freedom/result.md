@@ -1,0 +1,3 @@
+# Freedom counted on ordinary words
+
+With the second question supplied, its free fraction is the mean answer sign. The plus chance is half of one plus that fraction. The resulting probabilities agree with the previous six-rule and three-reader experiments. The four proposed plain conditions permit a different unsigned rule. All six frozen steps were completed. Independent referee pending. [Results](../../../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/results.md) · [Scientific handoff](../../../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/referee_handoff.md) · [Execution receipt](../../../artifacts/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A-E001_freedom/receipt.json)

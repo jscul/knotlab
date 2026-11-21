@@ -1,0 +1,26 @@
+{
+  "model": "claude-fable-5-2",
+  "provider_record": {
+    "claude-fable-5-2": {
+      "inputTokens": 2,
+      "outputTokens": 5958,
+      "cacheReadInputTokens": 2431,
+      "cacheCreationInputTokens": 26550,
+      "webSearchRequests": 0,
+      "costUSD": 0.6636221999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 4575,
+      "canonicalModel": "claude-fable-5-2",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "session_id": "35082104-77f7-40ce-b927-d2312928d1e1",
+  "tools": [],
+  "prompt_sha256": "98c4e890ecac7ff505f09f771f0cd281a6500195fdf0222fdfe60ee98110b7f0",
+  "response_text_sha256": "d6288b7ebc48651e7da919b1e002720d32696a25540468f83027036e8fb987b4",
+  "response": "**Verdict:** the protocol is sound in outline, and your partition list is right (3+3, 3+4, 3+5, 4+4; three parts would need width 9). I have not seen the selection or funding rule text, so the points below are conditional on how those rules are written. Five things need fixing before you freeze it.\n\n## Flaws to fix\n\n1. **The pair table is blind under parity.** Every pair in an even-parity relation on three or more positions is uniform, and cross-source pairs are uniform by independence. The whole table is flat, its stabilizer is the full symmetric group, and it will \"collide\" with every connected comparator of equal width. Make the pair table a screen only, and define a collision as equality of the full relation (the row-space support family) under a common permutation.\n\n2. **Cross-source rates carry no new information.** Under the uniform weighting on allowed words the union's word set is a product, so each cross entry is the product of two marginals. Keep them, since names are undecorated, but assert the product identity as a code check, not a result. Compare rates in lowest terms.\n\n3. **The null for the count comparison is unspecified.** If selection acts on one selected set at a time, first stages of the union are (stage of A, B untouched) plus (A untouched, stage of B), so counts add. If it acts on all at once, they multiply. Write down which identity is expected, corrected for the swap of equal sources, before running.\n\n4. **Essentiality cannot be tested on the union as a whole.** Forgetting a variable of A leaves B constrained, so the union fails K2 by construction. State that essentiality and exact local projection are judged per source, and that the union is not claimed to be a knot.\n\n5. **Factor by the state set, not the holder graph.** A connected source whose allowed states factor as a product is exactly where a real collision would be, and the holder graph would hide it. For unsigned NAE, the number of independent global complement flips (two for a union, one for a connected source that does not factor) is a cheap discriminator.\n\n## Edge cases in closure and funding\n\n- **Selected sets spanning both sources.** If selection uses rates or undecorated names, a set can span A and B and its birth joins them. Do not forbid this by hand; record it as an outcome. Under parity such a set's equation is a sum of two implied equations, so decide now whether it counts as one birth or two.\n- **Pooled funding.** If the funding pool is global, the union may fund what neither source funds alone, or one source may exhaust it. All-or-none must say \"of which pool\".\n- **Tie-breaking on identical sources.** Any tie broken by name is a scaffold. Enumerate both choices and quotient by the swap.\n- **Empty state sets.** Even parity always allows the zero word. For NAE, say what happens if one source allows no word, since the union is then empty.\n- **Mixed labels.** Fix the rule for a union of an open and an exceptional source, for example \"exceptional if any factor is\".\n- **Comparator range.** Births push the union's first stages past width 8. \"No collision\" holds only up to the widths the frozen comparator covers; say so.\n\n## Adjustments\n\n- **Multiplicity:** check the binomial count against n!/|Aut|. Aut is the product of the two automorphism groups for non-isomorphic sources, and that product extended by the swap for isomorphic ones. Divide by 2 only for isomorphic sources, not merely equal widths. Include same-source-twice pairs.\n- **Weighting:** uniform over named unions and the product of the two sources' weights differ by the binomial factor. Pick one and name it.\n- **Scaffolds to register:** the width cap of 8, same law on both sources, exclusion of positions held by no holder, and the disjoint start itself.\n- **Standing:** freeze the protocol text before running, with no extension rule that depends on results.\n\n## Vocabulary\n\n- \"Group\" has two meanings here. Use \"selected set\" for the selection and reserve \"group\" for the stabilizer.\n- Say \"two sources sharing no distinction\" once, then \"union\". Reserve \"component\" for factors of the state set.\n- Every rate names its weighting; no \"typical\" or \"rare\" for collisions.\n- Define \"physical stage\", \"birth\" and \"old width\" once at first use.",
+  "stage": "Specific supplemental pre-execution review after the untested union proposal and before any disconnected outcome",
+  "confirmation_utc": "2026-11-21T01:26:59.179683+00:00"
+}

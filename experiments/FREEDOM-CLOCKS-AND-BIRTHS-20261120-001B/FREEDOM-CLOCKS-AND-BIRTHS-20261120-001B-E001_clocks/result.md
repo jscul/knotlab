@@ -1,0 +1,3 @@
+# Two clocks in one connected source
+
+With full holdings and the chosen first-release test, the 21-knot preparation gives periods 16 and 24. Its earliest inclusive joint birth is at 2a−12 for a send at age a from the 16-step clock. Indexing the first mixed descendant records three arrivals for every four subsequent receiver ticks over 96 parent steps. No released member enters the pure receiver. The compact physical replays, 640 sampled arm starts, additional spacings, ring clocks, conditional rates and reader limits are in the study record. Independent referee pending. [Results](../../../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/results.md) · [Referee handoff](../../../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/referee_handoff.md)

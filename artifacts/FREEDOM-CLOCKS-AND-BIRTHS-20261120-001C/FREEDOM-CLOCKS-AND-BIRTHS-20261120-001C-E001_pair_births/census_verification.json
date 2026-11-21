@@ -1,0 +1,463 @@
+{
+  "nae": {
+    "checks": {
+      "births": 183,
+      "full_word_replays": 123,
+      "independent_count_replays": 183,
+      "closed": 26,
+      "stall": 3
+    },
+    "rate_table_types": 183,
+    "state_types": 183
+  },
+  "parity": {
+    "checks": {
+      "births": 122,
+      "full_word_replays": 68,
+      "independent_count_replays": 122,
+      "stall": 3
+    },
+    "rate_table_types": 43,
+    "state_types": 108
+  },
+  "ordinary_parity_controls": {
+    "different_named_states": {
+      "same_full_named_states": false,
+      "least_separating_full_marginal_order": 3,
+      "least_separating_support_marginal_order": 3,
+      "separating_check": [
+        0,
+        3,
+        4
+      ],
+      "check_holds_in_left": true,
+      "literal_local_word_counts": [
+        {
+          "0": 8,
+          "9": 8,
+          "17": 8,
+          "24": 8
+        },
+        {
+          "0": 4,
+          "1": 4,
+          "8": 4,
+          "9": 4,
+          "16": 4,
+          "17": 4,
+          "24": 4,
+          "25": 4
+        }
+      ]
+    },
+    "different_named_holdings": {
+      "same_full_named_states": false,
+      "least_separating_full_marginal_order": 3,
+      "least_separating_support_marginal_order": 3,
+      "separating_check": [
+        0,
+        3,
+        4
+      ],
+      "check_holds_in_left": true,
+      "literal_local_word_counts": [
+        {
+          "0": 8,
+          "9": 8,
+          "17": 8,
+          "24": 8
+        },
+        {
+          "0": 4,
+          "1": 4,
+          "8": 4,
+          "9": 4,
+          "16": 4,
+          "17": 4,
+          "24": 4,
+          "25": 4
+        }
+      ]
+    },
+    "different_state_types": {
+      "same_full_named_states": false,
+      "least_separating_full_marginal_order": 3,
+      "least_separating_support_marginal_order": 3,
+      "separating_check": [
+        0,
+        2,
+        3
+      ],
+      "check_holds_in_left": true,
+      "literal_local_word_counts": [
+        {
+          "0": 2,
+          "5": 2,
+          "9": 2,
+          "12": 2
+        },
+        {
+          "0": 1,
+          "1": 1,
+          "4": 1,
+          "5": 1,
+          "8": 1,
+          "9": 1,
+          "12": 1,
+          "13": 1
+        }
+      ]
+    },
+    "different_physical_types": {
+      "same_full_named_states": false,
+      "least_separating_full_marginal_order": 3,
+      "least_separating_support_marginal_order": 3,
+      "separating_check": [
+        0,
+        2,
+        3
+      ],
+      "check_holds_in_left": true,
+      "literal_local_word_counts": [
+        {
+          "0": 2,
+          "5": 2,
+          "9": 2,
+          "12": 2
+        },
+        {
+          "0": 1,
+          "1": 1,
+          "4": 1,
+          "5": 1,
+          "8": 1,
+          "9": 1,
+          "12": 1,
+          "13": 1
+        }
+      ]
+    },
+    "different_next_birth_counts": {
+      "same_full_named_states": false,
+      "least_separating_full_marginal_order": 3,
+      "least_separating_support_marginal_order": 3,
+      "separating_check": [
+        0,
+        1,
+        5
+      ],
+      "check_holds_in_left": true,
+      "literal_local_word_counts": [
+        {
+          "0": 64,
+          "3": 64,
+          "33": 64,
+          "34": 64
+        },
+        {
+          "0": 32,
+          "1": 32,
+          "2": 32,
+          "3": 32,
+          "32": 32,
+          "33": 32,
+          "34": 32,
+          "35": 32
+        }
+      ],
+      "trace": [
+        {
+          "cut": 2,
+          "arms": [
+            {
+              "status": "births",
+              "births": 5,
+              "next_width": 21
+            },
+            {
+              "status": "births",
+              "births": 6,
+              "next_width": 26
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 3,
+          "arms": [
+            {
+              "status": "births",
+              "births": 4,
+              "next_width": 28
+            },
+            {
+              "status": "births",
+              "births": 8,
+              "next_width": 42
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 4,
+          "arms": [
+            {
+              "status": "births",
+              "births": 5,
+              "next_width": 38
+            },
+            {
+              "status": "births",
+              "births": 10,
+              "next_width": 62
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 5,
+          "arms": [
+            {
+              "status": "births",
+              "births": 7,
+              "next_width": 52
+            },
+            {
+              "status": "births",
+              "births": 12,
+              "next_width": 86
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        }
+      ]
+    },
+    "different_next_status": {
+      "same_full_named_states": false,
+      "least_separating_full_marginal_order": 3,
+      "least_separating_support_marginal_order": 3,
+      "separating_check": [
+        0,
+        2,
+        3
+      ],
+      "check_holds_in_left": true,
+      "literal_local_word_counts": [
+        {
+          "0": 4,
+          "5": 4,
+          "9": 4,
+          "12": 4
+        },
+        {
+          "0": 4,
+          "1": 4,
+          "4": 4,
+          "5": 4,
+          "8": 4,
+          "9": 4,
+          "12": 4,
+          "13": 4
+        }
+      ],
+      "trace": [
+        {
+          "cut": 2,
+          "arms": [
+            {
+              "status": "births",
+              "births": 4,
+              "next_width": 16
+            },
+            {
+              "status": "closed",
+              "births": 0,
+              "next_width": 8
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 3,
+          "arms": [
+            {
+              "status": "births",
+              "births": 6,
+              "next_width": 28
+            },
+            {
+              "status": "closed",
+              "births": 0,
+              "next_width": 8
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 4,
+          "arms": [
+            {
+              "status": "births",
+              "births": 8,
+              "next_width": 44
+            },
+            {
+              "status": "closed",
+              "births": 0,
+              "next_width": 8
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 5,
+          "arms": [
+            {
+              "status": "births",
+              "births": 10,
+              "next_width": 64
+            },
+            {
+              "status": "closed",
+              "births": 0,
+              "next_width": 8
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        }
+      ]
+    },
+    "same_states_different_next_birth_counts": {
+      "same_full_named_states": true,
+      "least_separating_full_marginal_order": null,
+      "least_separating_support_marginal_order": null,
+      "separating_check": [],
+      "check_holds_in_left": null,
+      "trace": [
+        {
+          "cut": 2,
+          "arms": [
+            {
+              "status": "births",
+              "births": 4,
+              "next_width": 19
+            },
+            {
+              "status": "births",
+              "births": 3,
+              "next_width": 17
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 3,
+          "arms": [
+            {
+              "status": "births",
+              "births": 6,
+              "next_width": 31
+            },
+            {
+              "status": "births",
+              "births": 5,
+              "next_width": 27
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 4,
+          "arms": [
+            {
+              "status": "births",
+              "births": 8,
+              "next_width": 47
+            },
+            {
+              "status": "births",
+              "births": 7,
+              "next_width": 41
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        },
+        {
+          "cut": 5,
+          "arms": [
+            {
+              "status": "births",
+              "births": 10,
+              "next_width": 67
+            },
+            {
+              "status": "births",
+              "births": 9,
+              "next_width": 59
+            }
+          ],
+          "later_tables_equal_up_to_renaming": false
+        }
+      ]
+    }
+  },
+  "closed_nae_control": {
+    "rows": [
+      [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          5,
+          7
+        ],
+        [
+          2,
+          3,
+          6,
+          7
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          2,
+          3,
+          7
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ]
+    ],
+    "word_only_in_left": 7,
+    "state_count_each": 154,
+    "first_status_each": "closed"
+  }
+}

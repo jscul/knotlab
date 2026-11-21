@@ -10,7 +10,9 @@ On an 18-knot holding reached by four ordinary parity growth steps, an explicit 
 
 The distinction between entanglement over real and complex numbers is established mathematics. Shared entangled meters for measurements of products of two quantum observables are also known. This study asks what the specific source, operations and ordinary keepers of the previous knot studies can implement, including the complete output left for a later reading. [Caves, Fuchs and Rungta](https://arxiv.org/abs/quant-ph/0009063) · [Edamatsu](https://arxiv.org/abs/1612.08578)
 
-## Decision and research position
+## Final report as sent
+
+2026-11-21 15:02 PST
 
 **The original mixed reference gives the right sign and loses information within that answer. A coherent pair lets the same two readers record the sign and preserve every coherent combination within that answer.** The earlier source can supply that pair if its ordinary record of a random turn is kept and used.
 

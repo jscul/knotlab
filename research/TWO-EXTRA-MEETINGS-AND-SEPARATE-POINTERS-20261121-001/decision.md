@@ -10,7 +10,9 @@ With one added meeting a six-or-larger founder under the cap cannot close at any
 
 One real pointer reused at two knots gives different conditional records from two separately reset real pointers. The preceding phase study also supplied a joint coherent exchange between copies. B291 asks what two separate sets of ordinary keeper words can register using local real operations after one common preparation. [Calibrated pointers](../KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001A/results.md) · [Two-copy exchange](../KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md)
 
-## Decision and research position
+## Final report as sent
+
+2026-11-21 14:26 PST
 
 **B290.** Two simple meetings beyond a tree are enough for six starting knots to close as a whole under ordinary parity growth, and no smaller number suffices at the same opening cap.
 

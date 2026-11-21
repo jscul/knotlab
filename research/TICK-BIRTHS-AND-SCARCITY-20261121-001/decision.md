@@ -18,7 +18,9 @@ Each written freeze and its revision received prospective review from a separate
 
 The serial freeze cited the earlier clock and serial rule in its scientific design. Its signed text omits the standard index-search section. The following cross-check is recorded at closure. `python3 -B scripts/track.py objects "serial clock" --until 2026-11-21 --exclude TICK-BIRTHS-AND-SCARCITY-20261121-001` returns `CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001` /3 on continuing recipients, `FREEDOM-CLOCKS-AND-BIRTHS-20261120-001` /2 on converting two clocks, and `SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001` /2 on ordinary intake with a lasting third. `python3 -B scripts/track.py objects "serial orders age pure moves original supply" --epic SERIAL-REPAIRS-20261120-001 --until 2026-11-21 --limit 3` returns `SERIAL-REPAIRS-20261120-001` /3, /1 and /2 on completing an original group, the partial current rule and fairness. The serial study adds the actual loose costs at the two identified tick parents and the effect of reusing or exhausting them. The ordinary study records its prospective searches in its [freeze](../TICK-BIRTHS-AND-SCARCITY-20261121-001A/preregistration.md).
 
-## Research position
+## Final report as sent
+
+2026-11-21 08:52 PST
 
 **Ordinary growth (B281).** The receiver counted **three ticks versus one** between the same two signal receipts. A lasting third family helped pay for all three ticks, but ending that family while keeping the same return opportunities still gave three.
 
@@ -44,9 +46,9 @@ In serial growth, completing the next four parent steps cost **81 births** for t
 
 B282 has two identified clock parents whose grants can be matched. B283 would isolate an effect on an independently signalled interval, but both private pulses still need to reach the receiver.
 
-**Corrections:** None. Both scientific referee handoffs are pending. [Ordinary handoff](https://github.com/jscul/knotlab/blob/main/research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/referee_handoff.md) · [Serial handoff](https://github.com/jscul/knotlab/blob/main/research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/referee_handoff.md)  
+**Corrections:** None. Separate Astra Max advisors reviewed both freezes. Both scientific referees’ verdicts are pending. [Ordinary handoff](https://github.com/jscul/knotlab/blob/main/research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/referee_handoff.md) · [Serial handoff](https://github.com/jscul/knotlab/blob/main/research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/referee_handoff.md)  
 **Goals:** B281 and B262 closed. B282 and B283 record the remaining causal tests for G5 and G1.  
 **Assumptions:** A168 and A169 record the serial and ordinary choices. The counts are exact for the named preparations and orders.  
 **Scaffolds:** We supplied the starts, clock marks and signal reading, the ordinary receiver’s choice of continuation, and the two serial rules. The paid births and parent order follow from the corresponding growth rule.  
 **Basket:** B281 and B262 were taken. B275 concerns recognizing births. B219 and B220 concern carrying a pattern or stored state.
-**Validation:** Both scoped replays passed. B262’s prior-work index note was recorded at closure. A separate repository check flagged pre-existing wording in a research skill.
+**Validation:** Both scoped replays passed. B262’s prior-work index note was recorded at closure. A separate repository check flagged a missing sentence about peer tasks in an already-edited research skill.

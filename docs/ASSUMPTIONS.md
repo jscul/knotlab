@@ -225,6 +225,8 @@ evidence: results and their status come from the records each entry links.
 | [A167](#a167--recognize-a-surviving-third-family-at-the-receivers-own-launch) | Recognize a surviving third family at the receiver’s own launch | scaffold | Assumed |
 | [A168](#a168--count-the-same-clock-turn-under-two-serial-birth-rules) | Count the same clock turn under two serial birth rules | scaffold | Assumed |
 | [A169](#a169--count-a-return-to-one-donor-between-two-signal-receipts) | Count a return to one donor between two signal receipts | scaffold | Assumed |
+| [A170](#a170--fork-an-identical-paid-clock-history-at-one-loose-distinction) | Fork an identical paid clock history at one loose distinction | scaffold | Assumed |
+| [A171](#a171--read-a-private-sender-return-on-one-continuing-receiver) | Read a private sender return on one continuing receiver | scaffold | Assumed |
 
 ## Entries
 
@@ -4248,6 +4250,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The marked spare, the prepared attachments and their loose supply, two priority rules, a restart from a reached ordinary cut and a separate run from the originals. [Recorded clock](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/rings.md) · [Serial rules](../research/SERIAL-REPAIRS-20261120-001/present_proof.md).
 - **Challenge.** Put the attachment on the other continuation, change the extra loose supply or exchange the order of two births that can spend the same named distinction. Compare the two event counts, and distinguish a permanently lost birth from a postponed one. A rule that recognizes the original clock and chooses the spending order from present holdings could reduce the supplied information.
 - **History.**
+  - 2026-11-21 · A full named history now gives a direct competition at an indispensable original with identical funding at the fork. An added earlier clock expense makes one slot critical. [Serial result](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A/results.md)
   - 2026-11-21 · Under both laws the bare clock has ticked at birth 70 and the two paid attachments have yet to tick. In the unrestricted run, granting more to two required ancestors preserves a turn. A four-parent birth can also exclude the required pair while each parent still holds two loose distinctions. [Serial clock](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/results.md).
   - 2026-11-21 · Registered before observing the new clock comparisons. [Written freeze](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/preregistration.md).
 
@@ -4260,6 +4263,31 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The prepared sender and receiver, two distinct nested signal births, the single returned-to donor, the six main holdings, two checks that break the sender return and a short-supply control, the family read from shared distinctions and the option to carry a mixed input from a separate signal. [Prospective design](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/design_draft.md).
 - **Challenge.** Reverse the port order or allow every paid continuation. Preserve visits while ending the registered third family, restore a lasting family while retaining the changed visits, and check equal emitted and received spacing. An intrinsic choice of continuation, or a common count for every continuation authorized by ordinary growth, could reduce this scaffold.
 - **History.**
+  - 2026-11-21 · The new receiver registers two pulses genuinely dependent on the private sender. Both disappear after the private break while its own marked returns continue. The count difference follows changed original witnesses. [Ordinary result](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/results.md)
   - 2026-11-21 · The resulting count is three versus one. Holding the course fixed and changing whether the third lasts preserves three on the fast course and one on the slow. With every ordinary choice and the stronger endpoint matching, all 48 fast histories count three and the 48 slow histories split equally between one and two. [Ordinary tick births](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/results.md).
   - 2026-11-21 · The prospective amendment adds all funded continuations before the port read, two breaks of the sender’s private return and a separate one-short start. [Binding amendment](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/design_v2.md).
   - 2026-11-21 · Registered while the design was under independent review and before the new receiver measurements. [Study freeze](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/preregistration.md).
+
+### A170 · Fork an identical paid clock history at one loose distinction
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Supply the marked eight-knot clock and an attached original. Take two copies of the same actual history from the original holdings under the serial rule that recalculates after each birth. At a donor with just one loose distinction, let the unchanged clock use it in one copy and an outside birth use it in the other.
+- **Why.** The earlier clock could lose a turn after different initial grants or when an earlier child had already used both tick parents. A common prefix with identical names, grants and earlier children allows a test of what spending the last distinction does.
+- **Rests on it.** The mark read from its original and full paid parent history, the attachment, the supplied order of births, access to successive writes, and the identification of an outside input by actual descent from the attached original. [Earlier serial clock](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/results.md).
+- **Challenge.** Try both permitted orders, an equally costly outside action at another donor, different loose-name choices and the earlier larger child with distinctions left. Test whether one source, priority or clock reading is necessary. The [written freeze](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A/preregistration.md) records the full class and its stop.
+- **History.**
+  - 2026-11-21 · Both naming choices and both laws give the same fork. After a shared nine-birth history, the last outside expense permanently excludes a needed child. Omitting only its previous extra expense allows both the same payment and the turn. The exhibited histories use raw permission with a fair continuation. [Serial result](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A/results.md)
+  - 2026-11-21 · Added during prospective review before the new histories were run.
+
+### A171 · Read a private sender return on one continuing receiver
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Give the sender and receiver separate origins and return marks. At the receiver retain its original, follow one continuation that acquires the sender’s growing private return, and carry a second continuation that can visit the receiver’s own mark. Compare a third family with its own marked returns and an actual paid input to the receiving birth.
+- **Why.** Earlier nested signals survived a break of the sender’s private return. Carrying the sender’s full return can distinguish its two successive pulses. A receiving birth with more than two parents may inherit the pulse from another parent that also retains the receiver’s origin.
+- **Rests on it.** The built origins, the allocation of advances between the two continuations, the physical port types for the sender, the receiver’s mark p and the third family’s independent mark q. A receipt on the chosen parent and a receipt new to every parent retaining the receiver’s origin are separate tests. [Earlier signal comparison](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/results.md).
+- **Challenge.** Break the private return, reverse the allocation at ties, allow every balanced allocation, and test the stricter receipt. Match the original witnesses incident to the old receiver and its open supply before asking whether the funded next option changes. [Study freeze](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/preregistration.md).
+- **History.**
+  - 2026-11-21 · Changing the balanced choice of which arm advances preserves each preparation's count across all 32,768 enrolled histories. Requiring a signal to be new to every origin-retaining parent changes the result to two receipts with zero off-sender ticks in between. An exact primitive match fixes the paid option in this funded pair-only class. [Ordinary result](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/results.md)
+  - 2026-11-21 · Registered during prospective review, before the new pulse observations.

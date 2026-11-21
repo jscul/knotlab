@@ -223,6 +223,8 @@ evidence: results and their status come from the records each entry links.
 | [A165](#a165--identify-a-clock-receipt-through-two-births-paid-by-one-donor) | Identify a clock receipt through two births paid by one donor | scaffold | Assumed |
 | [A166](#a166--test-relative-sign-on-the-complete-record-of-a-later-firing) | Test relative sign on the complete record of a later firing | scaffold | Assumed |
 | [A167](#a167--recognize-a-surviving-third-family-at-the-receivers-own-launch) | Recognize a surviving third family at the receiver’s own launch | scaffold | Assumed |
+| [A168](#a168--count-the-same-clock-turn-under-two-serial-birth-rules) | Count the same clock turn under two serial birth rules | scaffold | Assumed |
+| [A169](#a169--count-a-return-to-one-donor-between-two-signal-receipts) | Count a return to one donor between two signal receipts | scaffold | Assumed |
 
 ## Entries
 
@@ -4009,6 +4011,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Both laws, the full present holding reader, the end-only and rooted alternatives, alternative release marks, ring records, edited clocks, constructed nested sources and the registered random and explosive preparations.
 - **Challenge.** Change the recurring event, hide spent holdings, vary return lengths and supplied fresh budget, and compare strict reception, first shared descendants and readouts of matched edits.
 - **History.**
+  - 2026-11-21 · A recurring return to one identifiable original gives unequal visits between two common receipts. The serial reference returns every four parent steps on all funded starts but costs different numbers of actual births. [Ordinary tick births](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/results.md) · [Serial clock](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/results.md).
   - 2026-11-20 · The measured delay is four or five of the receiving member's own turns on the first matched send. All prepared arms retain one receiver turn per 24 parent steps and successive registered sends are 32 parent steps apart. [Receiver study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/results.md).
   - 2026-11-20 · With identifiable return words, complete parent lists and the release event supplied, identical clocks count alike at equal age. In one connected preparation an actual anchor shift of one makes simultaneous count differences alternate between zero and one. In the matched receiver its own turns stay aligned while its observed output parentage can differ. [Clock and arrival laws](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001B/counts_and_arrivals.md).
   - 2026-11-20 · Under either law, the present-holdings reader counts periods 16 and 24 on one source. Replacing recurring releases by marked ring turns or successive parent records changes the counts. Counting first common descent gives arrivals. An intact receiving family never incorporates those sends. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/results.md).
@@ -4167,6 +4170,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The built, marked clock frames and their phases, the chosen sender phase, the receiving family's permitted inputs, the return defining a tick, the event used as the origin, and the matched middle preparations in [the study design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/preregistration.md).
 - **Challenge.** Compare a lasting third, an absent third, a finite passage and a lasting third with only one usable connection. Keep track of the shortest permitted passage, individual loose supplies, true sending and receiving ancestors, and which information a receiver at intake actually holds. Compare the observed event with the first inclusive common descendant, keeping stalls and missing receipts visible.
 - **History.**
+  - 2026-11-21 · Two distinct paid outside births delimit three versus one genuine returns. Both still register when the sender's private recurring portion is broken. Equal one-step spacings on two later signals give zero intervening turns in both. [Ordinary tick births](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/results.md).
   - 2026-11-21 · The receiver can recover the same marked launch and genuine input under a four-site switch. Its 24-step return gives four turns through a 34-meeting passage at send size 32 whether the old marked family persists or has ended. [Matched receipt](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md)
   - 2026-11-20 · Holding the sender, receiver, usable passage and endpoint grants fixed permits a change of actual parentage with identical internally counted delay. Requiring two original parents everywhere can close the passage to the same receiver. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/results.md)
   - 2026-11-20 · Opening the shorter passage advances the primary registration by one internally counted tick. The finite passage and a matched rewiring retain the same counts after the finite designated family ends. The phase, turn spacing and full initial live supplies of the matched rewiring are fixed. [Receiver study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/results.md).
@@ -4234,3 +4238,28 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-21 · The three-of-seven donor predicate survives full relabeling under both laws. At the primary send the finite arm supplies two mixed ancestors in place of the two current marked ones. The sources with the extra four-knot return differ even after dropping the marks, while the reduced symmetric controls transport exactly. Ordinary and history-qualified registrations are separately recorded. [Source controls and readings](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md)
   - 2026-11-21 · Registered for the independent prospective design before the first target calculation. [Study freeze](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/preregistration.md).
+
+### A168 · Count the same clock turn under two serial birth rules
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Identify a tick from its two actual parents on the marked eight-knot start. Count it against both completed parent steps and individual births. For one serial rule supply the original cohort and finish the oldest funded set of births. For the other rule recompute the available births from the current holdings after each expenditure.
+- **Why.** The same clock can compete for a loose distinction at one of its parents or simply wait while unrelated births occur. An order of births is supplied in each serial comparison.
+- **Rests on it.** The marked spare, the prepared attachments and their loose supply, two priority rules, a restart from a reached ordinary cut and a separate run from the originals. [Recorded clock](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/rings.md) · [Serial rules](../research/SERIAL-REPAIRS-20261120-001/present_proof.md).
+- **Challenge.** Put the attachment on the other continuation, change the extra loose supply or exchange the order of two births that can spend the same named distinction. Compare the two event counts, and distinguish a permanently lost birth from a postponed one. A rule that recognizes the original clock and chooses the spending order from present holdings could reduce the supplied information.
+- **History.**
+  - 2026-11-21 · Under both laws the bare clock has ticked at birth 70 and the two paid attachments have yet to tick. In the unrestricted run, granting more to two required ancestors preserves a turn. A four-parent birth can also exclude the required pair while each parent still holds two loose distinctions. [Serial clock](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/results.md).
+  - 2026-11-21 · Registered before observing the new clock comparisons. [Written freeze](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001B/preregistration.md).
+
+### A169 · Count a return to one donor between two signal receipts
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Give the receiver one persistent origin and count a tick when its newly added occurrence is the same original donor it met on its first approach. At a donor with several possible continuations, follow the next one in the cyclic order of the actual shared-distinction counts. This read leaves the number of births until the next return free.
+- **Why.** The earlier receiver read fixed the whole word between turns. The new read asks whether a current member of a third family can pay for a return of the clock itself between two signals that the receiver actually registers.
+- **Rests on it.** The prepared sender and receiver, two distinct nested signal births, the single returned-to donor, the six main holdings, two checks that break the sender return and a short-supply control, the family read from shared distinctions and the option to carry a mixed input from a separate signal. [Prospective design](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/design_draft.md).
+- **Challenge.** Reverse the port order or allow every paid continuation. Preserve visits while ending the registered third family, restore a lasting family while retaining the changed visits, and check equal emitted and received spacing. An intrinsic choice of continuation, or a common count for every continuation authorized by ordinary growth, could reduce this scaffold.
+- **History.**
+  - 2026-11-21 · The resulting count is three versus one. Holding the course fixed and changing whether the third lasts preserves three on the fast course and one on the slow. With every ordinary choice and the stronger endpoint matching, all 48 fast histories count three and the 48 slow histories split equally between one and two. [Ordinary tick births](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/results.md).
+  - 2026-11-21 · The prospective amendment adds all funded continuations before the port read, two breaks of the sender’s private return and a separate one-short start. [Binding amendment](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/design_v2.md).
+  - 2026-11-21 · Registered while the design was under independent review and before the new receiver measurements. [Study freeze](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/preregistration.md).

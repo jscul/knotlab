@@ -237,6 +237,8 @@ evidence: results and their status come from the records each entry links.
 | [A179](#a179--paying-for-two-new-simple-meetings-at-the-original-opening-cap) | Paying for two new simple meetings at the original opening cap | scaffold | Assumed |
 | [A180](#a180--two-separate-real-pointers-after-one-common-preparation) | Two separate real pointers after one common preparation | scaffold | Assumed |
 | [A181](#a181--a-joint-sign-measurement-must-preserve-everything-its-answer-leaves-open) | A joint sign measurement must preserve everything its answer leaves open | scaffold | Assumed |
+| [A182](#a182--lawful-individual-access-to-a-supplied-split-knot-weighting) | Lawful individual access to a supplied split-knot weighting | scaffold | Assumed |
+| [A183](#a183--a-complete-three-sign-reading-at-two-retained-keeper-banks) | A complete three-sign reading at two retained keeper banks | scaffold | Assumed |
 
 ## Entries
 
@@ -4431,5 +4433,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The capability of an inherited mixed reference depends on which share of the source information is delivered and on the operations admitted after separation. The coherent two-path preparation, reference calibration, keeper coupling and squared-amplitude observation are choices.
 - **Challenge.** Compare the hidden orientation pair with a coherent real pair prepared by the existing apparatus. Test resolved and coherent preparations, local records and all survivor states, both laws on ordinary word motions, and a changed reading that requires only the correct answer frequencies.
 - **History.**
+  - 2026-11-21 · The distinction between a correct label and the projected state persists for the three jointly readable closing distinctions. Exact labels with a single shared binary pair leave separable data. Two coherent pairs return the correct states, including their correlations with untouched spectators. [The split-knot meter and the three closing signs](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
   - 2026-11-21 · Varied the state-return requirement, the source coherence, disclosed and undisclosed ternary turn information, reader calibration, local record access and keeper offers. For correct frequencies alone the mixed reference suffices. Full surviving-state projection requires a stronger supplied resource in the frozen class. Replaying both ordinary laws confirms the controller capability. [Two readers and one surviving sign](../research/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001/decision.md)
   - 2026-11-21 · Entered before the written freeze. [Joint sign study](../research/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001/decision.md)
+
+### A182 · Lawful individual access to a supplied split-knot weighting
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Each reader may act on its own distinctions and private registers. Every reached ordinary word after an individual offer must satisfy the original three-place knot. An explicitly synchronized offer is a separately costed comparison.
+- **Why.** A reversible relabeling can conceal an unlawful intermediate word.
+- **Rests on it.** The operational reading of positive and dephased weights on a split lawful knot.
+- **Challenge.** Compare separate offers with a synchronized offer, coherent with dephased preparations, and parity with not-all-equal.
+- **History.**
+  - 2026-11-21 · Varied the original law, full and partial dephasing, safety on actually reached words versus on arbitrary ancillary inputs, measurement versus a guessed label and a synchronized joint offer. The separate parity optimum is zero, the separate not-all-equal optimum is 1/3 and the synchronized parity construction succeeds with certainty. This concerns the supplied coherent preparations and operational access. [The split-knot meter and the three closing signs](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
+  - 2026-11-21 · Registered prospectively for the two studies. [Design and decision](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
+
+### A183 · A complete three-sign reading at two retained keeper banks
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Each sign is to be delivered to both original readers and both data registers returned with their entire projected state, including correlations with untouched spectators. Charge for every shared coherent pair, message, source port and writable keeper slot.
+- **Why.** A joint sign becomes an ordinary report only when its words and their validity can be recovered. Merely computing the three effects does not determine the returned state.
+- **Rests on it.** The minimum coherent resources for the complete closing-knot reading.
+- **Challenge.** Compare one, two and three fresh pairs and distinguish inferring a sign, measuring it again, and rereading its saved report.
+- **History.**
+  - 2026-11-21 · Varied the number of shared coherent pairs, source and meter records, the presence and direction of messages, the order of local offers, and which parts of a damaged keeper a reader can access. The complete closing reading costs two pairs. A third pair verifies the already determined third sign. Each bank needs the other reader's two messages for a local complete record. [The split-knot meter and the three closing signs](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)
+  - 2026-11-21 · Registered prospectively for the two studies. [Design and decision](../research/SPLIT-KNOT-METER-AND-CLOSING-TRIPLE-20261121-001/decision.md)

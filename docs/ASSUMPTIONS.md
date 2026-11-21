@@ -222,6 +222,7 @@ evidence: results and their status come from the records each entry links.
 | [A164](#a164--change-joint-parents-on-the-receivers-paid-passage) | Change joint parents on the receiver’s paid passage | scaffold | Assumed |
 | [A165](#a165--identify-a-clock-receipt-through-two-births-paid-by-one-donor) | Identify a clock receipt through two births paid by one donor | scaffold | Assumed |
 | [A166](#a166--test-relative-sign-on-the-complete-record-of-a-later-firing) | Test relative sign on the complete record of a later firing | scaffold | Assumed |
+| [A167](#a167--recognize-a-surviving-third-family-at-the-receivers-own-launch) | Recognize a surviving third family at the receiver’s own launch | scaffold | Assumed |
 
 ## Entries
 
@@ -4166,6 +4167,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The built, marked clock frames and their phases, the chosen sender phase, the receiving family's permitted inputs, the return defining a tick, the event used as the origin, and the matched middle preparations in [the study design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/preregistration.md).
 - **Challenge.** Compare a lasting third, an absent third, a finite passage and a lasting third with only one usable connection. Keep track of the shortest permitted passage, individual loose supplies, true sending and receiving ancestors, and which information a receiver at intake actually holds. Compare the observed event with the first inclusive common descendant, keeping stalls and missing receipts visible.
 - **History.**
+  - 2026-11-21 · The receiver can recover the same marked launch and genuine input under a four-site switch. Its 24-step return gives four turns through a 34-meeting passage at send size 32 whether the old marked family persists or has ended. [Matched receipt](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md)
   - 2026-11-20 · Holding the sender, receiver, usable passage and endpoint grants fixed permits a change of actual parentage with identical internally counted delay. Requiring two original parents everywhere can close the passage to the same receiver. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/results.md)
   - 2026-11-20 · Opening the shorter passage advances the primary registration by one internally counted tick. The finite passage and a matched rewiring retain the same counts after the finite designated family ends. The phase, turn spacing and full initial live supplies of the matched rewiring are fixed. [Receiver study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/results.md).
   - 2026-11-20 · Registered for the independent receiver-clock comparison before collecting evidence. [Study design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/preregistration.md).
@@ -4205,6 +4207,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The shared and disjoint comparison sites, supply controls, matched grant list, marked clock phases, specified launches, current-ancestry test, and two receiving rules in [the study design](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/preregistration.md).
 - **Challenge.** Compare all common and separate witness choices at the shared and compensating sites, change the central supply on the isolated control, and compare the live and finite third with and without a reader able to accept a three-parent input. Account separately for every actual payment, raw arrival order and counted tick.
 - **History.**
+  - 2026-11-21 · A positive ancestry opportunity is now realized. In the two-ternary preparation one donor pays two trios contributing their actual joint child to the incoming history, while matching all seven grants under the lifetime edit. At send size 32 the first receipt has two contemporary marked ancestors in the lasting arm and none after the finite family's extinction. [Paid shared-payer instance](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md)
   - 2026-11-21 · All 136 appointed sends register with the reader accepting a third parent, and 76 do with the binary-only reader per law. At the first launch both matched histories contain two current middle ancestors. All later marked launches have none in either. This family cannot isolate sustained activity. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/results.md)
   - 2026-11-21 · Registered after independent review of the original and revised designs and before the replay. [Binding revision](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001A/design_v2.md).
 
@@ -4219,3 +4222,15 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-21 · The four shared complete outputs are interchangeable under all 24 permutations preserving the input histories. A normalized response preserving the same apparatus has zero interference at each. One supplied marked measurement fits all 16 singleton menus and gives 1/4 versus 0. Actually preoccupying two new marks removes the target. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md)
   - 2026-11-21 · Registered on the exact revised design before measuring the proposed interaction. [Prospective review candidate](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/review_candidate_v2.md).
+
+### A167 · Recognize a surviving third family at the receiver’s own launch
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Identify a middle family by the multiplicity of actual shared distinctions at its original donors. Keep that same reading when the paid witnesses are exchanged. At the same marked send, ask separately what the receiver's ordinary tick register reports and whether its full incoming history contains a current member of that family.
+- **Why.** A family may continue elsewhere while contributing nothing at the send, and a lasting family containing both kinds of donor may carry a signal after the specified finite family has ended.
+- **Rests on it.** The two physically distinct donor families, the exchanged spent-witness holdings, the marked sender and receiving turn, the finite and lasting starts, the same-send ancestry requirement and the seven grant fields in the [prospective design](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/design_draft.md).
+- **Challenge.** Rename all holders and distinctions, forget the distinguishing witness multiplicities as a separate control, change which places are exchanged, close a port, retain a common payer in two births and look for mixed-family ancestors. Require two ordinary receipts, every earliest member, and evidence that the finite third once existed and has ended throughout its start.
+- **History.**
+  - 2026-11-21 · The three-of-seven donor predicate survives full relabeling under both laws. At the primary send the finite arm supplies two mixed ancestors in place of the two current marked ones. The sources with the extra four-knot return differ even after dropping the marks, while the reduced symmetric controls transport exactly. Ordinary and history-qualified registrations are separately recorded. [Source controls and readings](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/results.md)
+  - 2026-11-21 · Registered for the independent prospective design before the first target calculation. [Study freeze](../research/ACTIVE-ANCESTOR-RECEIPT-20261121-001A/preregistration.md).

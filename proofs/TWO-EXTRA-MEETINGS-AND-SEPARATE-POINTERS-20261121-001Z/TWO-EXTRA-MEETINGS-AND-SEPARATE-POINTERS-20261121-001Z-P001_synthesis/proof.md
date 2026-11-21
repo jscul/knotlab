@@ -1,0 +1,8 @@
+# What the two completed studies establish
+
+- **Exact finite census and class proof.** Two extra simple meetings are the first surplus at which a six-knot whole can close at the frozen cap. One decorated type closes by the fourth parity step. The matching not-all-equal birth continues with a fresh distinction. [Two-meeting census](../../../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001A/results.md)
+- **Constructive signed comparison.** The actual 18-knot closure remains even. A supplied reversal of its last sign eliminates all 16,384 ordinary words and admits a real operator assignment on its named distinctions. [Independent signed certificate](../../../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/independent_checks.md)
+- **Constructive real pointer comparison.** Local keeper words perfectly distinguish two real relative signs on the declared input branches after a common coherent preparation. [Separate real readers](../../../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001B/results.md)
+- **Scoped theorem and constructive reference.** With a single pointer per reader all separate real transcripts agree for the three matched hidden-orientation relations. An additional distributed pair of known relation makes the relative comparison observable at both keepers. [Proof and controls](../../../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001B/results.md)
+
+Ordinary formation, weighted source frequencies, and supplied coherent operations have distinct evidence in these records. Both independent scientific referees are pending.

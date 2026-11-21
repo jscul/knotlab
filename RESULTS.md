@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**401 current results** and 5 superseded ones, from 585 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**401 current results** and 5 superseded ones, from 586 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 585 epics with their closures
+- [Epics](#epics): all 586 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1930,5 +1930,6 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-21 | A clock’s last distinction and two private sender returns (`LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001`) | [closure](proofs/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001Z/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001Z-P001_synthesis/proof.md) | [folder](research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001/) |
 | 2026-11-21 | Shared donors and the sign response of a later rejoining (`SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001`) | [closure](proofs/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001Z/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001Z-P001_synthesis/proof.md) | [folder](research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001/) |
 | 2026-11-21 | Receiver tick births and scarcity of loose distinctions (`TICK-BIRTHS-AND-SCARCITY-20261121-001`) | [closure](proofs/TICK-BIRTHS-AND-SCARCITY-20261121-001Z/TICK-BIRTHS-AND-SCARCITY-20261121-001Z-P001_synthesis/proof.md) | [folder](research/TICK-BIRTHS-AND-SCARCITY-20261121-001/) |
+| 2026-11-21 | Two extra meetings and two separate pointers (`TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001`) | [closure](proofs/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001Z/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001Z-P001_synthesis/proof.md) | [folder](research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/) |
 | 2026-11-21 | Two knots, one decision (`TWO-KNOTS-ONE-DECISION-20261121-001`) | [closure](proofs/TWO-KNOTS-ONE-DECISION-20261121-001Z/TWO-KNOTS-ONE-DECISION-20261121-001Z-P001_synthesis/proof.md) | [folder](research/TWO-KNOTS-ONE-DECISION-20261121-001/) |
 

@@ -232,6 +232,8 @@ evidence: results and their status come from the records each entry links.
 | [A174](#a174--counting-ordinary-closing-births-and-reading-a-changed-sign) | Counting ordinary closing births and reading a changed sign | scaffold | Assumed |
 | [A175](#a175--extending-ordinary-composition-to-a-balanced-exchange) | Extending ordinary composition to a balanced exchange | scaffold | Assumed |
 | [A176](#a176--exact-weighting-of-decorated-starting-trees) | Exact weighting of decorated starting trees | scaffold | Assumed |
+| [A177](#a177--reading-products-of-two-counts-as-amplitudes) | Reading products of two counts as amplitudes | scaffold | Assumed |
+| [A178](#a178--adding-one-meeting-under-the-original-supply-of-loose-distinctions) | Adding one meeting under the original supply of loose distinctions | scaffold | Assumed |
 
 ## Entries
 
@@ -4349,6 +4351,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Any uniqueness or obstruction must say whether the composition requirement is native on ordinary words, extended to amplitudes, or an added postulate. A phase common to all alternatives cannot be observed.
 - **Challenge.** Compare an ordinary inverse with coherent identity, and vary the physically retained record and the reference used at recombination. [Last physical erasure study](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001A/results.md).
 - **History.**
+  - 2026-11-21 · A word-dependent rephasing cancels on a returned sequence of ordinary words and is the identity on every idle step. It supplies no value for the idle-pulse phase. [Two-copy comparison and score replay](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md)
   - 2026-11-21 · Complete ordinary equalities hold for incompatible coherent lifts. Direct versus indirect coherent implementation in one common frame fixes the square of the single-pulse idle amplitude. Independent coherent references leave a product of phases around the complete comparison. [Idle phase study](../research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001A/results.md)
   - 2026-11-21 · Opened before the B287 design freeze.
 
@@ -4361,5 +4364,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** An exact finite population answer depends on preserving label multiplicities, loose-distinction probabilities, whole-step funding and the denominator for each conditional event.
 - **Challenge.** Reconstruct the labelled masses independently, compare each represented trajectory with ordinary growth under the two laws and compare conditional with unconditional results. [Earlier sampled closure study](../research/ERASURE-AND-CLOSING-SIGNS-20261121-001B/populations.md).
 - **History.**
+  - 2026-11-21 · Adding one simple meeting changes the founder weighting by its number of tree predecessors. Funding at equal sizes six through eight changes with that choice. The closure obstruction survives both weightings. [One additional meeting](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001B/results.md)
   - 2026-11-21 · Checks by size, number of additional openings and founder symmetry preserve the labelled source weighting. Varying the probability of a loose distinction changes the answer. Not-all-equal has no closing cohort in this population. [Independent calculation](../research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/tree_check.py)
   - 2026-11-21 · Opened before the B288 design freeze.
+
+### A177 · Reading products of two counts as amplitudes
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Attach a complex factor to each local knot word, multiply the factors and normalize before applying the chosen reader. Treat a calibration on each held distinction and a fixed external phase reference as different readings.
+- **Why.** A three-place not-all-equal knot has an exact two-count expression and six equally sized allowed amplitudes.
+- **Rests on it.** The phase comparison and any nonuniform probabilities on wider knots depend on the factors, the preparation and how the reader was calibrated.
+- **Challenge.** Compare the positive and conjugated factors, held and recalibrated readers, overlapping holdings, both ordinary laws and alternative extensions to wider knots.
+- **History.**
+  - 2026-11-21 · Tested the positive, first-root, conjugate and other primitive-root factors, fixed and transported readers, growth and freedom weights, signed contractions, coherent flag and keeper writes, conditional selection, and fresh versus reused pointers. The proposed principal phase can always be moved to separate local turns relative to its own magnitudes. The two pinned copies at the other fifth root give a comparison invariant under common calibration, conditional on the modified factor, independent preparations and supplied coherent exchange reading. The checked ordinary rules specify no orientation. [Phase and keeper study](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001A/results.md) · [Two-copy comparison and score replay](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/phase_comparison.md)
+  - 2026-11-21 · Opened before the prospective study freeze. [Joint study](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/decision.md)
+
+### A178 · Adding one meeting under the original supply of loose distinctions
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Begin with six through eight knots held as a labelled tree, add a single previously absent simple meeting, and recompute each knot's original minimum plus at most one extra loose distinction. Count whole closure through four ordinary steps and test one reversed sign only on parity closures.
+- **Why.** The earlier all-size exclusion for trees uses the fact that two knots have at most one common witness.
+- **Rests on it.** The set of physical starts, a weighted fraction of them and the signed admission test are separate specifications. One final set of meetings can arise from several labelled trees.
+- **Challenge.** Compare counting distinct starts with counting the ways to add a meeting. Retain all stalls, check both ordinary laws and delete the added meeting as a matched control.
+- **History.**
+  - 2026-11-21 · Tested every decorated founder through size eight, both laws, both exact weightings and the legal matched deletions. The proof covers every finite age and starting size of six or more for a simple extra meeting, degree-based cap and whole-step payment. A five-knot parity closure at step six tests the boundary. [One additional meeting](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001B/results.md) · [Sharp size threshold](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/boundary_checks.md)
+  - 2026-11-21 · Opened before the prospective study freeze. [Joint study](../research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/decision.md)

@@ -1,0 +1,86 @@
+{
+  "experiment": "IDLE-PHASE-AND-TREE-CLOSURE-20261121-001B-E001_trees",
+  "design_sha256": "47d2b7a70d50406e510cee6a3e60f508e4ad7b10e6ef291ed0959e07eabd1aaf",
+  "contract_sha256": "267f51c4fb2d26109a65a3789416355aabe3207acd954e5ff59a1612221e9b84",
+  "byte_identical_scientific_outputs_on_replay": true,
+  "outputs_sha256": {
+    "archived_tree_replay.json.gz": "3ce51bd71ab456f643de250e95e04cc5ae3eb4a38de229a8b71f2306b3f73e58",
+    "census_audit.json": "b680f37cd0a86e145aa374b0fffbb49c57af1ac659b77c11a827c30846f8b138",
+    "census_audit_4.json": "3647be24dd82dd311508763ac74826529c040d34783e84bef5a8a859c6d0a2de",
+    "literal_inputs_4.json.gz": "8a0b70352a6ff2b1419ed3c6eb80e9d45942ec6c2d8ebd75376c9dcd8198291b",
+    "literal_inputs_5.json.gz": "5e9d4221187c59431f1eb4bf62802ac39c622d2a25e755b869ad665eb22a8530",
+    "multiplicities_4.json.gz": "5e5750ea3ae6c587fe6319f29746dcf007131cccb23f9aa0c852440fcf1f9c2c",
+    "multiplicities_5.json.gz": "89fd2fff87fbcf3b5c3accccb9e10a4c507a77c3840951ddfaadd3990c395dbc",
+    "multiplicities_6.json.gz": "c035e237f51eabca59afbcc82a3cbeb34711328ad1a8841d133b0dbb65e59325",
+    "multiplicities_7.json.gz": "d2260587004f9a25878748a944a36b644eca3e34800e34550b0751ef9202c79c",
+    "multiplicities_8.json.gz": "327d6bcaa4294c69b78f0c80ccc9c69ef67330b7c254eb46b0f0ecd9cd2c3d1b",
+    "representatives.json.gz": "8fc27e7ad06c488f9d43e2c171918d2574e591053d7fcd591c23bc8040a4b74b",
+    "representatives_audit.json": "ff676b32a1258729c7f355bfd52359616f06af1e583c71293c540a6d3789fd59",
+    "representatives_n4.json.gz": "6a80dc27506ff61164efff8c7e4f652b1122ea2e4ebec06a68857753afd76797"
+  },
+  "single_thread": true,
+  "address_space_limit_GiB": 6,
+  "runs": [
+    {
+      "script": "job.py",
+      "args": [
+        "--n",
+        "4"
+      ],
+      "seconds": 0.618,
+      "peak_resident_KiB": 113188,
+      "exit": 0
+    },
+    {
+      "script": "job.py",
+      "args": [],
+      "seconds": 3.906,
+      "peak_resident_KiB": 181488,
+      "exit": 0
+    },
+    {
+      "script": "representatives_audit.py",
+      "args": [],
+      "seconds": 0.847,
+      "peak_resident_KiB": 177760,
+      "exit": 0
+    },
+    {
+      "script": "multiplicities.py",
+      "args": [],
+      "seconds": 1.588,
+      "peak_resident_KiB": 57456,
+      "exit": 0
+    },
+    {
+      "script": "literal_inputs.py",
+      "args": [
+        "--sizes",
+        "4",
+        "5",
+        "--sample"
+      ],
+      "seconds": 2.97,
+      "peak_resident_KiB": 165500,
+      "exit": 0
+    },
+    {
+      "script": "census_audit.py",
+      "args": [
+        "--small-size",
+        "4"
+      ],
+      "seconds": 0.525,
+      "peak_resident_KiB": 114148,
+      "exit": 0
+    },
+    {
+      "script": "census_audit.py",
+      "args": [],
+      "seconds": 2.454,
+      "peak_resident_KiB": 177316,
+      "exit": 0
+    }
+  ],
+  "independent_scientific_referee": "pending"
+}

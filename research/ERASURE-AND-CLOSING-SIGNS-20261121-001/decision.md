@@ -38,20 +38,24 @@ For the closure study the independent advisor required an entire start to be ran
 
 The frozen tree weighting gave six closed wholes in 256 draws (two-sided 95% interval 0.86–5.03%). One admitted the odd measurement (one of 256 draws, interval 0.01–2.16%). Its four successive cohorts of 5, 5, 3 and 1 births reached 18 knots on 33 names. The connected explosive panel gave zero closures in 128 draws (0–2.84%). The mixed panel gave 97/128 with at least one admitting component (67.42–82.91%) and 129/256 positive closing pieces (32.38–68.40% with independent wholes as sampling units). The deliberately positive source gave 32/32 whole closures (89.11–100%). All 544 histories were retained and replayed under both laws. Below, the denominators refer to fresh starts unless a row specifies closures or components. [Four source weightings and intervals](../ERASURE-AND-CLOSING-SIGNS-20261121-001B/populations.md)
 
-## Research position
+## Final report as sent
+
+2026-11-21 11:43 PST
 
 **B286.** With a supplied law for how a permitted exchange carries phase, a lawful knot recorded `101` for relative plus and `011` for relative minus after every record of which change occurred was erased. Ordinary growth on the same apparatus stalled under both knot laws. [Erasure study](https://github.com/jscul/knotlab/blob/main/research/ERASURE-AND-CLOSING-SIGNS-20261121-001A/results.md)
 
-**B251.** Ordinary growth produced a closing knot whose rules admit a quantum measurement with one odd sign. Growth itself forced the closing sign to be even. Reversing it left no ordinary state in which a reader could record an answer. [Closing-knot study](https://github.com/jscul/knotlab/blob/main/research/ERASURE-AND-CLOSING-SIGNS-20261121-001B/results.md)
+**B251.** Ordinary growth produced an arrangement of knots that admits a quantum measurement with one odd closing sign. Growth itself forced the closing sign to be even. Reversing it left no ordinary state in which a reader could record an answer. [Closing-knot study](https://github.com/jscul/knotlab/blob/main/research/ERASURE-AND-CLOSING-SIGNS-20261121-001B/results.md)
 
 | Scope | Status | What the test established |
 | --- | --- | --- |
-| B286 · Reading a relative sign | Conditional construction and proof of an ordinary limit | On the named two-state preparation the answers were certain. Starting from either state alone gave each answer with probability ½. Leaving even one physical copy of which change occurred also made both signs give ½. |
+| B286 · Reading a relative sign | Conditional construction and proof of an ordinary limit | The same two ordinary words gave opposite certain answers when prepared with opposite signs. Starting from either state alone gave each answer with probability ½. Leaving even one physical copy of which change occurred also made both signs give ½. |
 | B251 · Drawn trees | Reached an admitting closure | Through four growth steps, 6/256 fresh labelled trees closed. One of the six admitted the odd measurement. That tree grew from 4 knots on 11 distinctions to 18 knots on 33. The 95% interval for the admitting share among closures is 0.42–64.12%. |
 | G17 · Meeting patterns | The source weighting matters | In 128 connected explosive draws, 0 closed. In 128 explosive draws with two added knots, all wholes stayed open, yet 97/128 had an admitting component. Of 256 closing components, 129 admitted the measurement. |
 | G5 · Dynamics and G18 · Comparing growth laws | Ordinary and supplied operations distinguished | All 32 deliberately closure-positive parity draws closed. The smallest had 5 knots on 10 distinctions, with 64 ordinary states before and after even closure and zero after reversal. Not-all-equal gave zero closures on the same 544 starts. |
 
-The strongest control changed only the phase assigned when an exchange did nothing. Every singleton calibration stayed the same, yet the two preparation settings now produced the same state and both keeper answers were fair. The successful construction therefore depends on that phase choice. It also requires an encoded apparatus. Requiring the original six holdings to remain lawful at every elementary change excluded the complete procedure under both laws.
+At the five-knot closure, the four answer bits together distinguished even from odd with certainty under the supplied measurement. Every proper subset had identical probabilities under the two signs.
+
+For the keeper, changing only the phase of an idle exchange preserved every singleton calibration, yet the two preparation settings now produced the same state and both keeper answers were fair. The sign record depends on that phase choice and on the encoded apparatus. Requiring the original six holdings to remain lawful at every elementary change excluded the complete procedure under both laws.
 
 **Next step:** Research directions — selected: #1.
 

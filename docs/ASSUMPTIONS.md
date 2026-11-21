@@ -218,6 +218,8 @@ evidence: results and their status come from the records each entry links.
 | [A160](#a160--limit-what-a-spent-pair-may-read-when-authorizing-a-paid-birth) | Limit what a spent pair may read when authorizing a paid birth | scaffold | Assumed |
 | [A161](#a161--test-a-relative-sign-against-a-retained-ordinary-history) | Test a relative sign against a retained ordinary history | scaffold | Assumed |
 | [A162](#a162--count-a-marked-receivers-turns-at-an-actual-intake) | Count a marked receiver's turns at an actual intake | scaffold | Assumed |
+| [A163](#a163--compare-complete-erasure-records-with-a-supplied-signed-measurement) | Compare complete erasure records with a supplied signed measurement | scaffold | Assumed |
+| [A164](#a164--change-joint-parents-on-the-receivers-paid-passage) | Change joint parents on the receiver’s paid passage | scaffold | Assumed |
 
 ## Entries
 
@@ -4032,6 +4034,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The full-pair and singleton calibrations, six-rule and three-reader tables, before-and-after states, the chosen sign order, supplied readers, preparations and fresh comparison weightings.
 - **Challenge.** Compare fresh conditioning to a retained preparation label, algebraic order to recorded chronology, a fair sign attached to a refused change, and alternative states after the same answer. Check both laws and ordinary motion, births and the forbidding join.
 - **History.**
+  - 2026-11-20 · Reading every erased mark and pooling by the product has the same conditional exterior state as the binary joint flip once all the erased marks are discarded. Additional retained marks can distinguish the two supplied instruments. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
   - 2026-11-20 · A complete normalized instrument made only of nonnegative transfer amplitudes cannot turn a relative sign into different ordinary pointer probabilities. A preloaded signed memory can transfer its sign if coherent transport is supplied. Ordinary register occupation remains insensitive. [Sign study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/results.md).
   - 2026-11-20 · Both branches remain open. A permitted reversal alone can always say yes. A purely allowed-output report can be fair on a stationary singleton. With the supplied full selective measurement, a not-all-equal single-mark flip places conditional mass 1/10 outside after plus and 1/2 outside after minus. Collective effects reproduce all earlier chances within the allowed words, while independent local instruments that preserve every allowed input face the recorded obstruction. [Both branches and access conditions](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/fork.md).
   - 2026-11-20 · Both alternatives will be compared under the separate, advised design. [Frozen design](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/preregistration.md).
@@ -4147,6 +4150,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The two-word encoding, connected four-knot control, gate addresses and schedules, initial memory and witness values, membership of the archived controls, per-event readings and positive signed controls in [the design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/preregistration.md).
 - **Challenge.** Change which memories are accessible and reverse the names of their two values. Cross the preparation schedule with the independently supplied sign. Compare individual singletons and their possible apparatus preparations with the response to the pair. Check both knot laws on the connected device.
 - **History.**
+  - 2026-11-20 · The paid-spending, closed and rejoining controls preserve all ordinary sign-blind predictions for their admitted readings. The registered parity rejoin permits zero sign contrast even if one varies the complete measurement subject to its observed singleton records. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
   - 2026-11-20 · The four-knot pointer records the parity of actual memory swaps or, after an earlier copy, a two-time correlation. Reversing the independently supplied sign on the same full word pair leaves every tested ordinary pointer response fixed. [Sign study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/results.md).
   - 2026-11-20 · Registered for the two-word test before collecting evidence. [Study design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/preregistration.md).
 
@@ -4159,5 +4163,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The built, marked clock frames and their phases, the chosen sender phase, the receiving family's permitted inputs, the return defining a tick, the event used as the origin, and the matched middle preparations in [the study design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/preregistration.md).
 - **Challenge.** Compare a lasting third, an absent third, a finite passage and a lasting third with only one usable connection. Keep track of the shortest permitted passage, individual loose supplies, true sending and receiving ancestors, and which information a receiver at intake actually holds. Compare the observed event with the first inclusive common descendant, keeping stalls and missing receipts visible.
 - **History.**
+  - 2026-11-20 · Holding the sender, receiver, usable passage and endpoint grants fixed permits a change of actual parentage with identical internally counted delay. Requiring two original parents everywhere can close the passage to the same receiver. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/results.md)
   - 2026-11-20 · Opening the shorter passage advances the primary registration by one internally counted tick. The finite passage and a matched rewiring retain the same counts after the finite designated family ends. The phase, turn spacing and full initial live supplies of the matched rewiring are fixed. [Receiver study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/results.md).
   - 2026-11-20 · Registered for the independent receiver-clock comparison before collecting evidence. [Study design](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001B/preregistration.md).
+
+### A163 · Compare complete erasure records with a supplied signed measurement
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Supply which distinctions are erased, two equally weighted old words, their relative sign for comparison, the initial reader and the ordinary event it can distinguish. Compare a read of one simultaneous flip to reading every erased distinction as a change. Record every outcome, which ordinary marks survive, and whether a physical device stores the outcome.
+- **Why.** The same erased distinctions permit several questions. Ordinary forgetting, disregarding a record, keeping an event flag, and adding amplitudes before a read can have different observational consequences.
+- **Rests on it.** The selected growth, closing and motion preparations, their history controls and schedulers, the supplied squared-weight instrument, and its conditional state after each outcome in [the erasure design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/preregistration.md).
+- **Challenge.** Keep an old which-word record, omit it, supply a complementary read of it, and interchange the outcome names. Compare the observed probabilities for the two singletons and the equal pair at each sign. A subsequent ordinary event that exploits their relative sign on the same preparation would change the physical conclusion.
+- **History.**
+  - 2026-11-20 · A supplied marked erasure on the positive not-all-equal ternary leaves a relative minus with probability 1/6. All 1,115 elementary outcomes of the 138 physical readings agreed between independently crossed signs. K2 alone states which positive completions exist. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
+  - 2026-11-20 · Recorded after prospective review and before collecting evidence on the frozen candidates. [Reviewed design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/review_candidate_v2.md).
+
+### A164 · Change joint parents on the receiver’s paid passage
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Supply the marked sender and receiver, the same emission phase and the return that counts as a tick. Choose where three donors have a common witness or separate pair witnesses. Count intake only when every admitted reading of the receiving member gives the same actual sending and receiving ancestors and count.
+- **Why.** The same pairwise meetings can give different joint parents. A test that attributes delay to the continuing third structure needs an actual receipt on the occupied passage, with an inactive comparison and an explicit accounting of what each donor pays.
+- **Rests on it.** The original clock frames and ports, the active and finite third families, the locations and multiplicities of the changed witnesses, the fixed grants to be matched, the prepared sends and the recognition rules in [the joint-parent design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/preregistration.md).
+- **Challenge.** Exchange the locations of common and separate witnesses, cross each change with continued or ended third activity, and compare the older reader that requires two parents at every original meeting. Count failed or ambiguous recognition as well as receipt and check the grants of its actual parents.
+- **History.**
+  - 2026-11-20 · The disjoint witness exchange preserves every original live holding and matches the grants at send, launch and first receipt while changing which donor contributes. Neither the 34-meeting timing nor the four counts changes when the designated third family becomes finite. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/results.md)
+  - 2026-11-20 · Registered after review of the revised controls and before collecting evidence. [Binding revision](../research/JOINT-PARENTS-AND-ERASURE-20261120-001A/design_v2.md).

@@ -1,0 +1,312 @@
+{
+  "canonical_22_mark_keeper_fibers": {
+    "other_nae_all_one": {
+      "canonical": {
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "c",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "a",
+          "b"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "cnf": "-a -b -c",
+      "rest_assignments": 1
+    },
+    "other_nae_all_zero": {
+      "canonical": {
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "c",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "a",
+          "b"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "cnf": "a b c",
+      "rest_assignments": 1
+    },
+    "other_nae_mixed": {
+      "canonical": {
+        "allowed": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "binding": false,
+        "coexistence": true,
+        "contact": "c",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": false,
+        "loops": [
+          "a",
+          "b"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 0,
+        "notes": [
+          "the relation allows every joint state, so nothing binds"
+        ],
+        "pairwise_definable": true,
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "cnf": "a -a",
+      "rest_assignments": 524286
+    },
+    "other_parity_even": {
+      "canonical": {
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "c",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "a",
+          "b"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "cnf": "a b -c; a -b c; -a b c; -a -b -c",
+      "rest_assignments": 262144
+    },
+    "other_parity_odd": {
+      "canonical": {
+        "allowed": [
+          "001",
+          "010",
+          "100",
+          "111"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "c",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "a",
+          "b"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "cnf": "a b c; a -b -c; -a b -c; -a -b c",
+      "rest_assignments": 262144
+    }
+  },
+  "census": {
+    "all_stencils": 65536,
+    "normalized_stencils": 768,
+    "rank_one_word_effects_invariant_to_all_independent_output_relabelings": 0,
+    "sign_encoding": "bit 4*y+i is one for a negative (y,i) entry",
+    "target_contrast_at_ranks_0_0_and_1": {
+      "+1/4": 384,
+      "-1/4": 384
+    }
+  },
+  "checks": [
+    {
+      "complete_words": 32,
+      "old_words": 16,
+      "past_fixed_transpositions": 6,
+      "singleton_offers": 128,
+      "target_plus_minus": {
+        "label_ordered": [
+          "1/4",
+          "0"
+        ],
+        "matched": [
+          "0",
+          "1/4"
+        ],
+        "one_active_outgoing_mark": [
+          "1/4",
+          "0"
+        ],
+        "ordinary": [
+          "1/8",
+          "1/8"
+        ]
+      }
+    },
+    {
+      "complete_words": 32,
+      "old_words": 16,
+      "past_fixed_transpositions": 6,
+      "singleton_offers": 128,
+      "target_plus_minus": {
+        "label_ordered": [
+          "1/4",
+          "0"
+        ],
+        "matched": [
+          "0",
+          "1/4"
+        ],
+        "one_active_outgoing_mark": [
+          "1/4",
+          "0"
+        ],
+        "ordinary": [
+          "1/8",
+          "1/8"
+        ]
+      }
+    }
+  ],
+  "evidence_stage": "exploratory",
+  "experiment": "SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B-E001_later_rejoin",
+  "full_archive": {
+    "normalized_fine_entries_outside_cohorts": 4508,
+    "other_diagonal_columns": 698,
+    "overlap_of_load_domains": 0,
+    "total_distinct_physical_inputs": 730,
+    "two_cohorts": [
+      16,
+      16
+    ]
+  },
+  "independently_reconstructed_records": {
+    "dual_law_control_readings": 32,
+    "ordinary_kernel_checks": 3960,
+    "standalone_keeper_knot_updates_under_both_laws": 96,
+    "verified_ordinary_offers_per_loading": 128
+  },
+  "inputs": {
+    "artifacts/JOINT-PARENTS-AND-ERASURE-20261120-001B/JOINT-PARENTS-AND-ERASURE-20261120-001B-E001_erasure/physical.json.gz": "f82d6a6ab1ab1751d9c5c71de6b567c982701a8c89ae46678f3a3ef9851ef1f3",
+    "artifacts/MOTION-LAW-20261119-001/MOTION-LAW-20261119-001-E001_rules/permutation_controls.json": "61070f41627ac2576092f98f47e069ce844d6eb95bf5afa93165b24dbd6d146c",
+    "artifacts/MOTION-LAW-20261119-001/MOTION-LAW-20261119-001-E001_rules/uniform_exchange.json": "6ee388e26883816645a2220673373ab85bf1a81adc0bee5829de44e283b3ead9",
+    "artifacts/READS-HOLDERS-SOURCES-20261120-001A/READS-HOLDERS-SOURCES-20261120-001A-E001_reads_changes/motion.json": "d1ca167b1c9aff6dad8326502ce62b1e14ec86be7ca2170a8932c8a0bfc7246f",
+    "artifacts/READS-HOLDERS-SOURCES-20261120-001A/READS-HOLDERS-SOURCES-20261120-001A-E001_reads_changes/signed_counts.json": "ca81c82cb357e733cb2ef974e890c8361a5691acd7893490c614a91c52feb2f8",
+    "artifacts/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A-E001_sign_records/archived_events.json.gz": "ddafecd462cc432dc6a53ae186ae335b0ee816c05611d300e746938d0e54ae2f",
+    "experiments/EDDY-WORLD-20261119-001/EDDY-WORLD-20261119-001-E001_world/world_growth.py": "b1addc75e81def8d85ced7b6d0c042d85da06c3eba7bf78e5334110ae673468a",
+    "experiments/FRESH-COUNT-20261118-001B/FRESH-COUNT-20261118-001B-E001_free_count/freelib.py": "7f9ef5f67852b35fdd816e4a04f7fe3df2998d611e792ed9e0a44cba8f46e7a5",
+    "experiments/MOTION-AT-EDDY-20261119-001/MOTION-AT-EDDY-20261119-001-E001_motion/holdout.json": "20da57a762af254eb47d9e35056ddb743c097c0fd05a2614f5586dd3b5f7c714",
+    "experiments/MOTION-AT-EDDY-20261119-001/MOTION-AT-EDDY-20261119-001-E001_motion/inputs.json": "e17f01fef8037c39c551cedf9277409bb2dd96af91a74382bdf3655168c12422",
+    "experiments/MOTION-AT-EDDY-20261119-001/MOTION-AT-EDDY-20261119-001-E001_motion/motion_stage.py": "6d11e701486579f1084fbde021a27f74214f61abe299d1dae912d4cde4427dc6",
+    "experiments/MOTION-AT-EDDY-20261119-001/MOTION-AT-EDDY-20261119-001-E001_motion/nearness.py": "f60c8d90ccf89a67884bcf29edb0c3c2be912ba381953539d1b131e575d45583",
+    "experiments/MOTION-LAW-20261119-001/MOTION-LAW-20261119-001-E001_rules/exchange.py": "747a7ff0c0b9cd3ef1d7c1bbe2416e2e3fa376f01c9451adc08573cbfc49f0e3",
+    "experiments/MOTION-LAW-20261119-001/MOTION-LAW-20261119-001-E001_rules/permutation_controls.py": "ebde76a8b97d7fb32cfe4383d74effc8fd2b1b09b9a29e9a6a7fae1b38bb7ea3",
+    "experiments/MOTION-LAW-20261119-001/MOTION-LAW-20261119-001-E001_rules/sources.py": "da177b511f4d149e5f9c914b91e00e234c4055db7126712ad7f0ceaa52936c82",
+    "experiments/MOTION-LAW-20261119-001/MOTION-LAW-20261119-001-E001_rules/uniform_exchange.py": "ca227395ceac301bad626f69e58712aff8265a5c6887cbef7cffa96ec9a48a9b",
+    "experiments/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B-E001_later_rejoin/completed_menu.py": "7a97ec00a5a20f3f6742c01cbd784b5df486c521b9f7f6d611ae3f4c53ec4044",
+    "experiments/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B-E001_later_rejoin/contract.json": "0ac04cae588db8f77d20b05a8b0366f7a9b17b02c5bfc856a65913f26c7bc3ef",
+    "experiments/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B-E001_later_rejoin/identity.json": "2a029bfcd78f183e8e43607178ac9e3afe714ba9ddf1f56d60e399c59769ed0b",
+    "experiments/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B-E001_later_rejoin/physical.py": "f744a9268a7bc03b10ca13766a51133d3ac0c5d7ad1aa6229bb9b5de63651fc1",
+    "experiments/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B-E001_later_rejoin/run.py": "936f0612ae4d2dc8be05ae14b0bd623bb1f357b725bf81968f34678cdedd90c6",
+    "experiments/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B-E001_later_rejoin/symmetry.py": "29827c7eca300ddc592989512f5ea522f5b3b80688db35dbea5249e6f1bb968a",
+    "experiments/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A-E001_sign_records/archived_events.py": "e8868d16d867ab7fda202b9067a4c786ea58ab7538a0fc1c736fbd9adc347e2e",
+    "experiments/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A-E001_sign_records/contract.json": "836597ed2a4fd39a5811596de9b95000abdab16ac1c9b508fd89d5a22312bf5a",
+    "proofs/INTERFERENCE-20261029-001A/INTERFERENCE-20261029-001A-P001_one_cancelling_witness_per_knot/proof.md": "e7ccf5718272b77131f98aabd1920442926df6d096777c0d6c44b6bdadf392d9",
+    "research/JOINT-PARENTS-AND-ERASURE-20261120-001/merger_audit.json": "3027ca674ceeb7762d0341587361122036bc8afb37f3a351fae32bdd015f2b38",
+    "research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/design_for_review.md": "7add09a6c0c825a10600e9436dd5d2665f7dab14f994602660eecbe9c20ec5fc",
+    "research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/design_reviews.md": "1ecc0763ffe93c0b74ef84a9af3dcc6e0cc4cb21daa73aa522332cf0c1c5410d",
+    "research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/partial_manifest_at_activation.json": "e679e391a1e4722dcc1c206abdeb2474a04c2de4235f02b610227bae8912541d",
+    "research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/preregistration.md": "66c35c762dcafc4a8994a8fd91fffcb33fdfa4db4f9daa357c52800d5c08f7fd",
+    "research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/review_candidate_v2.md": "66c35c762dcafc4a8994a8fd91fffcb33fdfa4db4f9daa357c52800d5c08f7fd",
+    "research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/preregistration.md": "bd56b49d68d4e0d4958c2e507fa253125a0b1e632a46850349609a9ddb8da771",
+    "tools/knotlab/__init__.py": "88f295c30844e6b5e3da53afe78f0a7f4a4cdb5308c384279f1bf7428247249d",
+    "tools/knotlab/__main__.py": "c8a9d98b4dba941783360150b96b4be3004afaec6f602d2368bedc87b75ef7a4",
+    "tools/knotlab/cli.py": "c2ec94f3b8059049def1ef6c8c17e0e3a5d09d7c2d1d55234348a1189ea1d7bc",
+    "tools/knotlab/competition.py": "f6440a417c6296a49e819675aab8a6b414bd1afe5c890613df2212927d1d7b3a",
+    "tools/knotlab/depth.py": "82ecfb8a36e0c4e2e40298bfb8c036d29b6dd8c76db48e16f065db4974a4bd12",
+    "tools/knotlab/executor.py": "336bd1d48ee775a879dd37e9ade4268ff795bb5d21afc3de0fd9862d4fcb5eef",
+    "tools/knotlab/holonomy.py": "6060e6cb08e250c1f21943bad8a940e266f8a53831b62bfb8a823b45088cfdec",
+    "tools/knotlab/knots.py": "b8da4710711b60cef4e76c743f042cf576ea60c96e640e355021c777be8e7c38",
+    "tools/knotlab/loops.py": "de7bf7b3b12c7e48b87ae84c52e0788e7bceba1c4bfd30221ef6620e87476342",
+    "tools/knotlab/patterns.py": "c16224da6e8e4215de72c2d985981d1e4218e5a76c51dee1799f27661fb33395",
+    "tools/knotlab/presence.py": "2d830254eae00d19520584aae58c9b5eede4f4406039dad8e20474f17b6c9434",
+    "tools/knotlab/relations.py": "557e89cf21414b38365336c8257cbf52dcdd2b81cd5d543363b7ec52b12d2730",
+    "tools/knotlab/rings.py": "0f59e1dae3161cf8e740f9933a02d634a6aa1457052f529e445e8370b016d554",
+    "tools/knotlab/space.py": "28d59172d751a9be22dc57fa8bfcc53dc42981b2651e00171c42d2d09a166ba7",
+    "tools/knotlab/worlds.py": "77e07a5ae1cbd5db312f81b38b98a9a161442666e46e8eee706838c38f11d261"
+  },
+  "outputs": {
+    "completions.json.gz": "efb523192f2ddaf75a6dd3bd281853db33b26fe17c962f7d8458154980845a49",
+    "physical.json.gz": "f9e647e608daa64e3cc05075aa16af63498bd53dfdc8e94bc810e19dfd22d25d"
+  },
+  "public_source_variants": {
+    "tools/knotlab/__init__.py": "d569505fb5b4ae1e71eae74767fda5db30f559c80b57e8e4c7622b59812da983",
+    "tools/knotlab/cli.py": "23d2cd2cf37a55367b8588c8b4ea9c3296bdc071a101c93eeb479f35439e8e1c",
+    "tools/knotlab/competition.py": "81459795b3dc6296413b37a5fe7807ebb1fabc1835fee31905cafd8df90715b9",
+    "tools/knotlab/knots.py": "dc9a92e8bbf9b6a6a8b48dfa2708ee6d7e43313baadc9abce5d92b08dfe919ac"
+  },
+  "scientific_referee": "pending",
+  "source_contribution": 0,
+  "status": "complete",
+  "ticket": "SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B"
+}

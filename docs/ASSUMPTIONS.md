@@ -236,6 +236,7 @@ evidence: results and their status come from the records each entry links.
 | [A178](#a178--adding-one-meeting-under-the-original-supply-of-loose-distinctions) | Adding one meeting under the original supply of loose distinctions | scaffold | Assumed |
 | [A179](#a179--paying-for-two-new-simple-meetings-at-the-original-opening-cap) | Paying for two new simple meetings at the original opening cap | scaffold | Assumed |
 | [A180](#a180--two-separate-real-pointers-after-one-common-preparation) | Two separate real pointers after one common preparation | scaffold | Assumed |
+| [A181](#a181--a-joint-sign-measurement-must-preserve-everything-its-answer-leaves-open) | A joint sign measurement must preserve everything its answer leaves open | scaffold | Assumed |
 
 ## Entries
 
@@ -4417,5 +4418,18 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Detecting a difference in a joint table requires the specified real preparation, allowed local operations, fixed records and an explicit rule for conditioning on successful flags.
 - **Challenge.** Compare coherently prepared alternatives, shared and independent orientation mixtures, recorded and disconnected preparations and both laws. Distinguish one copy per launch from a further shared reference or multiple copies.
 - **History.**
+  - 2026-11-21 · A calibrated hidden known-relation pair can give correct signs and a repeat while erasing which coherent target state survived. Sending two appropriate shares of its turn label changes the delivered resource even when neither reader individually learns the label. A separately prepared coherent binary pair realizes the complete sign projection. [Two readers and one surviving sign](../research/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001/decision.md)
   - 2026-11-21 · Matched single-pair cycle mixtures have identical separate real transcripts. With a known second relation the conditional keeper agreement is 1, 0 or 1/2. Reference reorientation, independent copies and recorded or inaccessible source labels test exactly what resource drives each result. Both laws support the underlying three-word registers. [Two added meetings and two separate readers](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)
   - 2026-11-21 · Entered before the freeze. [Joint study](../research/TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/decision.md)
+
+### A181 · A joint sign measurement must preserve everything its answer leaves open
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Take the two-level real joint operator on the reached 18-knot signed assignment as the target. Require its two projections on the complete state, including coherence within an answer. The two readers hold separate targets and resources made at a common bench before the target is measured. An ordinary keeper at each reader records an answer share for comparison.
+- **Why.** The known orientation pair gives a recorded joint comparison on diagonal mixtures. Equal output probabilities and a repeat of the same sign do not establish which within-answer preparations survive.
+- **Rests on it.** The capability of an inherited mixed reference depends on which share of the source information is delivered and on the operations admitted after separation. The coherent two-path preparation, reference calibration, keeper coupling and squared-amplitude observation are choices.
+- **Challenge.** Compare the hidden orientation pair with a coherent real pair prepared by the existing apparatus. Test resolved and coherent preparations, local records and all survivor states, both laws on ordinary word motions, and a changed reading that requires only the correct answer frequencies.
+- **History.**
+  - 2026-11-21 · Varied the state-return requirement, the source coherence, disclosed and undisclosed ternary turn information, reader calibration, local record access and keeper offers. For correct frequencies alone the mixed reference suffices. Full surviving-state projection requires a stronger supplied resource in the frozen class. Replaying both ordinary laws confirms the controller capability. [Two readers and one surviving sign](../research/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001/decision.md)
+  - 2026-11-21 · Entered before the written freeze. [Joint sign study](../research/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001/decision.md)

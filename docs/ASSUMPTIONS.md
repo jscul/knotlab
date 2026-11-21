@@ -207,6 +207,9 @@ evidence: results and their status come from the records each entry links.
 | [A149](#a149--read-the-freedom-of-a-proposed-joint-change-from-counts-of-allowed-words) | Read the freedom of a proposed joint change from counts of allowed words | scaffold | Assumed |
 | [A150](#a150--read-a-clock-by-the-recurring-releases-or-turns-it-can-identify) | Read a clock by the recurring releases or turns it can identify | scaffold | Assumed |
 | [A151](#a151--compare-next-birth-counts-using-only-uniform-pair-disagreement-rates-on-a-reached-stage) | Compare next birth counts using only uniform pair disagreement rates on a reached stage | scaffold | Assumed |
+| [A152](#a152--do-knots-constrain-the-possible-states-of-a-preparation-or-also-the-acts-used-as-questions) | Do knots constrain the possible states of a preparation, or also the acts used as questions? | scaffold | Under challenge |
+| [A153](#a153--read-clock-agreement-and-an-outside-parent-in-a-continuing-family) | Read clock agreement and an outside parent in a continuing family | scaffold | Assumed |
+| [A154](#a154--read-a-repeated-meeting-of-wider-knots-from-its-uniform-pair-disagreements) | Read a repeated meeting of wider knots from its uniform pair disagreements | scaffold | Assumed |
 
 ## Entries
 
@@ -2580,7 +2583,7 @@ evidence: results and their status come from the records each entry links.
 
 ### A97 · Distance is the only form of information
 
-**Under challenge** · 2026-11-17 · interpretation
+**Under challenge** · 2026-11-20 · interpretation
 
 - **Statement.** The owner's reading, in his words (17 November 2026): "Distance is the only form of information. That's the
   entire basis of the 'this versus that' distinction in the smallest emergent unit." Read in the program's terms: what a base
@@ -2811,6 +2814,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-20 · Under uniform not-all-equal word weights, exact pair disagreements identify the four requested bare wider meetings against arbitrary lawful rivals. For any size they determine full words and all later birth counts within the enlarged structural class, including trees of wider holders sharing multiple names. In a complete census, all 2,245 first cuts through ten source names or second cuts through eight decided their named words and next count. Three tables permit different holdings in a spent component. Under parity identical pair rates give 10 versus 8 births when age is hidden, and the same 256 named words can give six versus five. Arbitrary larger not-all-equal stages remain open. [Theorem, census and scopes](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001C/results.md).
   - 2026-11-20 · With uniform full-word weights and ordinary growth, all 194 first reached not-all-equal types through eight source names (183 connected, 11 disconnected) have different pair tables. The table identifies the full named states as well as the next birth count. At all sizes this holds within the class in which cycles and repeated meetings are confined to three-place knots, with single-name joins to the wider knots. Parity gives five versus six births at 91 equal pair rates from six source names, and four versus three births at equal full states from eight. Larger reached not-all-equal stages outside the proved class remain open. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md).
   - 2026-11-20 · Under finite connected locally full not-all-equal rules with one or two holders per name and no implied rule, the full named states determine every later birth under the ordinary law. Uniform pair disagreement rates determine those states for a ternary presentation. With arity bounded by four or five, complete probabilities through order four are necessary and sufficient for the states, while support alone needs four or five respectively. The eight-name lower bound compares two closed starts. It leaves open whether pair rates alone can lose the next birth on a reached stage. Under parity the entire named states can give three or four births on five names. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/results.md).
   - 2026-11-20 · Under the uniform disagreement reading, every one of 18,750,714 named lawful irredundant not-all-equal state sets through nine distinctions fixes all subsequent births. In this census the pair counts and rates suffice for growth too. The full relation reconstructs the holders at every step of an all-size class. Four-place rules on eight names can nevertheless share all 28 pair readings and disagree on 16 allowed words in each direction. For parity, eight identical complete allowed words already yield four or three births on five names, and the additional information for growth is unbounded. The unrestricted premise stays under challenge. [Study](../research/READS-HOLDERS-SOURCES-20261120-001B/results.md).
@@ -3967,6 +3971,8 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The full joint tables, exposed two-word comparisons, rule for incompatible ordering, global-orbit rival, unchanged original distinction across growth, declared sample weightings and built explosive controls use these choices.
 - **Challenge.** Compare the literal probability interpretation, ordinary counting, the orbit mixture and nonuniform or signed preparations. Compare actual flips with projection in closure and motion, and count all trials after conditioning.
 - **History.**
+  - 2026-11-20 · With a binary sign supplied, fresh conditional sets and invariance force certainty on a complete pair. A forced ordinary reversal and factorization of an initially certain sign even in the later signed product give a fair singleton. Averaging the exposed pairs also requires undisturbed compatible conditioning and a compatible product convention. The proposed equivalence with leaving the allowed words fails in both directions. [Proofs and omitted premises](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/principles.md).
+  - 2026-11-20 · The two-calibration study tests whether the four proposed principles specify conditional full-pair certainty and singleton fairness, and whether ordinary questions must preserve the original allowed states. [Design](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/preregistration.md).
   - 2026-11-20 · Supported as a conditional calculation. The freedom fraction is the mean sign. The yes chance is half of one plus that mean. A full pair giving plus, a fair singleton and ordinary conditioning are sufficient. Erasing relations between distinct translation classes changes the isolated score from 3 to 1 while preserving ordinary reads. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/counting.md).
   - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/preregistration.md). [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/results.md).
 
@@ -3979,6 +3985,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Both laws, the full present holding reader, the end-only and rooted alternatives, alternative release marks, ring records, edited clocks, constructed nested sources and the registered random and explosive preparations.
 - **Challenge.** Change the recurring event, hide spent holdings, vary return lengths and supplied fresh budget, and compare strict reception, first shared descendants and readouts of matched edits.
 - **History.**
+  - 2026-11-20 · With identifiable return words, complete parent lists and the release event supplied, identical clocks count alike at equal age. In one connected preparation an actual anchor shift of one makes simultaneous count differences alternate between zero and one. In the matched receiver its own turns stay aligned while its observed output parentage can differ. [Clock and arrival laws](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001B/counts_and_arrivals.md).
   - 2026-11-20 · Under either law, the present-holdings reader counts periods 16 and 24 on one source. Replacing recurring releases by marked ring turns or successive parent records changes the counts. Counting first common descent gives arrivals. An intact receiving family never incorporates those sends. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/results.md).
   - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/preregistration.md). [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/results.md).
 
@@ -3991,5 +3998,42 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The width bound, full local projection, fresh names and parent matching, target count, reading-order controls, single-meeting tree promise, separately named source and fixed explosive mixtures delimit the results.
 - **Challenge.** Apply both laws, allow internal naming symmetries, compare words and births separately, and compare the exact finite pool with the unbounded proved class.
 - **History.**
+  - 2026-11-20 · With age and starting holdings hidden, the complete pair table determined the named words and next birth count for every not-all-equal observation in this larger census. Even the unordered list of pair rates distinguished the different birth counts there. Under parity, 67 of 114 table types had different next counts. [Age-pooled census](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001C/census.md).
   - 2026-11-20 · Named and rename-equivalent uniform pair tables agreed on every not-all-equal first reached case through the source bound. A separately advised freeze after the connected census added all disconnected unions, prior to their outcomes. The fresh-sample comparison retained its original finite pool. Width alone decided every explosive sample within that pool. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md).
   - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/preregistration.md). [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md).
+
+### A152 · Do knots constrain the possible states of a preparation, or also the acts used as questions?
+
+**Under challenge** · 2026-11-20 · scaffold
+
+- **Statement.** Keep both branches open. In one, an attempted toggle is carried out on every binary word, including an endpoint forbidden by the original preparation. In the other, it swaps an allowed pair and fixes an isolated endpoint. Separately specify which sign is returned, what remains after an answer and which questions can be asked together.
+- **Why.** An act on a word, the sign of a question about that act and a later ordinary read are distinct observations. The four proposed principles may restrict different parts of this description.
+- **Rests on it.** The full-pair and singleton calibrations, six-rule and three-reader tables, before-and-after states, the chosen sign order, supplied readers, preparations and fresh comparison weightings.
+- **Challenge.** Compare fresh conditioning to a retained preparation label, algebraic order to recorded chronology, a fair sign attached to a refused change, and alternative states after the same answer. Check both laws and ordinary motion, births and the forbidding join.
+- **History.**
+  - 2026-11-20 · Both branches remain open. A permitted reversal alone can always say yes. A purely allowed-output report can be fair on a stationary singleton. With the supplied full selective measurement, a not-all-equal single-mark flip places conditional mass 1/10 outside after plus and 1/2 outside after minus. Collective effects reproduce all earlier chances within the allowed words, while independent local instruments that preserve every allowed input face the recorded obstruction. [Both branches and access conditions](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/fork.md).
+  - 2026-11-20 · Both alternatives will be compared under the separate, advised design. [Frozen design](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/preregistration.md).
+
+### A153 · Read clock agreement and an outside parent in a continuing family
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Use the previous clock, tick and first-common-descendant readings. Compare identical return words with different neighbors and choices of count origin, and require an operational criterion for an enduring receiver to register a send.
+- **Why.** A different child of an enduring family and a changed event in the family are distinguishable in ordinary growth.
+- **Rests on it.** The recognized return words, full or restricted present reader, definition and minimum of an enduring receiver, mark, output, matched attachments, starts, sampling and explosive controls.
+- **Challenge.** Change the event and reader, withhold the old mark, compare the declared forms of arrival and include identical clocks with different count origins.
+- **History.**
+  - 2026-11-20 · Both laws admit an open family with one current knot and an internal and an external true parent. Three original knots are necessary and sufficient for this open receiver under anonymous full-holdings recognition. On a 21-knot host the particular 16- and 24-step sends have a one-member receiver with two identifiable children per release. Matched receivers with equal outside degrees have the same entire child-price histories despite the different parents. A changed degree affects prices before the first send. At different sends, inclusive arrival spacing equals send spacing plus the change of launch separation. [Receivers and controls](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001B/receiver_proof.md).
+  - 2026-11-20 · Both alternatives will be compared under the separate, advised design. [Frozen design](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001B/preregistration.md).
+
+### A154 · Read a repeated meeting of wider knots from its uniform pair disagreements
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Use the complete uniform named pair table and its common relabellings. Compare repeated wider holdings and first and second reached stages under explicit source, class and computational bounds.
+- **Why.** Single-name separation worked at every size for the preceding structural promise. A repeated wider meeting tests that promise and its alternatives.
+- **Rests on it.** The named or renamed observation, closure and funding outcomes, enumerated connected and disconnected starts, supplied class of alternatives, physical examples, fresh source weightings and explosive comparisons.
+- **Challenge.** Change the number of shared or private distinctions, admit branches and other competing sources, compare both laws and distinguish provable class membership from a finite unique table.
+- **History.**
+  - 2026-11-20 · The structural proof covers 190 of 194 first and 101 of 194 second not-all-equal stages from initial widths through eight. A separately advised extension after the original results admitted arbitrarily many wider holders on repeated meetings. A built 51-name source reaches 53 and then 57 names inside that extension. The initial classifications were retained. On separately frozen new not-all-equal draws, class membership at the two ages was 119/128 and 44/128 on trees, 125/126 and 55/126 with one extra meeting, and 0/128 at both ages on the explosive mixture. This measures the reach of the proof. [Two panels and limits](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001C/results.md).
+  - 2026-11-20 · Both alternatives will be compared under the separate, advised design. [Frozen design](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001C/preregistration.md).

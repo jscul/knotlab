@@ -38,7 +38,9 @@ All-even parity admits 16/16 and 32/32 homogeneous source words in the respectiv
 
 The independent eight-knot calculation gives a contradictory sum of 52 equations. The common compiler gives a second sum of 56. Both account for every original source of each equation. A duplicate-equation control exercised that part of the implementation. The two scientific writers reproduced their evidence in fresh directories, and an independent set of integer measurement matrices reproduced both principal tables. The scoped validator accepted all 50 scientific files. The workspace checkpoint flags a pre-existing wording change in the research-directions skill under its separate policy test. Scientific referee pending. [Referee handoff](referee_handoff.md)
 
-## Research position
+## Final report as sent
+
+2026-11-21 10:20 PST
 
 How the knots share distinctions determines which signed changes are consistent. With a supplied rule that lets a change carry a sign, the six-rule experiment works because reversing the order of two questions at different knots reverses a sign, while the questions at any one knot can be read in either order. On eight knots, the same four changes would have to give both signs. **The ordinary knot laws permit the changes and the keeper words. The experimenter still supplies the coherent preparation, the probability rule and the trigger that writes the answer.** [Measurement proof](https://github.com/jscul/knotlab/blob/main/research/TWO-KNOTS-ONE-DECISION-20261121-001/mechanism.md)
 

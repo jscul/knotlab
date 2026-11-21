@@ -1,0 +1,9 @@
+# A last outside expense and two private sender returns
+
+This synthesis contributes no new scientific result. Both underlying studies used parity and not-all-equal, froze separate designs with independent prospective review, and left separate scientific referee handoffs.
+
+With the marked serial clock and attached knot supplied, birth 10 can consume the same last distinction needed by every future realization of the marked turn. The matched clock returns at birth 21. Removing just the earlier preparatory expenditure restores the turn after the same outside payment. [Proof](../../LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A-P001_outside_spend/proof.md)
+
+With the private sender, continuing receiver and marked third supplied, ordinary growth produces two successive private pulses. The selected receiver counts two ticks or one between their receipts. The next permitted donor differs in the original holdings. In the globally funded pair-only class, matching the full original witness incidences at occupied donors fixes the paid return option. Requiring each nested pulse to be new to all parents retaining the receiver leaves zero intervening ticks at a disjoint mark. [Proof](../../LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B-P001_private_pulses/proof.md)
+
+The serial loss follows from the remaining loose distinctions and the ancestry of the marked turn under the chosen serial rule. The ordinary births follow from the ordinary law. The preparations and admissions of a clock turn or receipt are supplied choices. The two different counts leave open a change caused by sustained third-family activity alone in a wider class. Parent steps express order, and a gravitational interpretation remains open.

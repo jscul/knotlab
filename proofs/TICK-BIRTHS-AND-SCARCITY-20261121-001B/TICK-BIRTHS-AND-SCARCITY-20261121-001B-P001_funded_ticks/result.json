@@ -1,0 +1,140 @@
+{
+  "schema_version": 3,
+  "artifact_id": "TICK-BIRTHS-AND-SCARCITY-20261121-001B-P001",
+  "ticket": "TICK-BIRTHS-AND-SCARCITY-20261121-001B",
+  "kind": "proof",
+  "status": "passed",
+  "authoritative_status": "Proved",
+  "claims": {
+    "guarded": {
+      "j": "positive tick index",
+      "tick_depth": "4j+2",
+      "tick_parents": 2,
+      "initial_loose_per_donor": {
+        "bare": "j+2",
+        "attachment_3": "2j+2",
+        "attachment_2": "j+2"
+      },
+      "consumer_children_per_donor": {
+        "bare": 0,
+        "attachment_3": "j",
+        "attachment_2": 0
+      },
+      "event_70_turns": {
+        "bare": 1,
+        "attachment_3": 0,
+        "attachment_2": 0
+      },
+      "first_complete_cost": [
+        70,
+        117,
+        100
+      ],
+      "next_complete_turn_cost": [
+        81,
+        253,
+        141
+      ]
+    },
+    "raw_from_original_per_law": {
+      "unique_first_turn_in_20": 1,
+      "permanent_loss_within_14": 2,
+      "unresolved": 9,
+      "all_14_writes_match_by_parentage_in_ascending_unrestricted_comparison": true,
+      "asc_positive_has_no_consumer_ancestor": true
+    },
+    "raw_restarted": {
+      "immediate_marked_fresh": 1,
+      "larger_prior_common_child_after_four": true,
+      "first_same_continuation_loss_remaining_per_donor": 2,
+      "second_same_continuation_loss_remaining_per_donor": 4
+    }
+  },
+  "independent_artifact_checks": {
+    "independent_checked_raw_writes": 396,
+    "warm_immediate_turns": 24,
+    "certificates_confirmed": 24,
+    "cold_terminal_readings": 24,
+    "from_original_permanent_certificates": {
+      "nae/alone/unrestricted/ascending": {
+        "required_ordinary_role": 33,
+        "unique_actual_parents": [
+          17,
+          19
+        ],
+        "remaining_slots": [
+          0,
+          0
+        ]
+      },
+      "nae/other_continuation/unrestricted/ascending": {
+        "required_ordinary_role": 41,
+        "unique_actual_parents": [
+          18,
+          20
+        ],
+        "remaining_slots": [
+          0,
+          0
+        ]
+      },
+      "parity/alone/unrestricted/ascending": {
+        "required_ordinary_role": 33,
+        "unique_actual_parents": [
+          17,
+          19
+        ],
+        "remaining_slots": [
+          0,
+          0
+        ]
+      },
+      "parity/other_continuation/unrestricted/ascending": {
+        "required_ordinary_role": 41,
+        "unique_actual_parents": [
+          18,
+          20
+        ],
+        "remaining_slots": [
+          0,
+          0
+        ]
+      }
+    },
+    "physical_arities_in_retained_raw_traces": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "wrong_parent_control_rejected": true,
+    "independent_level_counts_per_law": 40,
+    "raw_sha256": "41c54d579097e83a29075f323d38bc9f1aa5134f728b83287854736254bf6c0e",
+    "guarded_sha256": "3846826dddbc7205afebc67d37d049c7da3bc705dc904a17a2771106f3ae5a3a"
+  },
+  "knotlab_checked_local_laws": {
+    "laws": [
+      "parity",
+      "not-all-equal"
+    ],
+    "all_arities": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "validation_independence": "V1, in-task separate physical parser, binomial formula and source-to-source identity check; program referee pending.",
+  "referee_status": "pending",
+  "scope": "Marked eight-knot clock with the registered paid preparations, explicit guarded law, and exhibited unguarded histories.",
+  "nonclaims": [
+    "No frequency or universal unguarded schedule.",
+    "No raw snapshot-only clock decoder.",
+    "No consumer-specific cold causal effect at equal starting supply.",
+    "No general physical-time or complexity result."
+  ]
+}

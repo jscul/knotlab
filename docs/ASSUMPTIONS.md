@@ -227,6 +227,7 @@ evidence: results and their status come from the records each entry links.
 | [A169](#a169--count-a-return-to-one-donor-between-two-signal-receipts) | Count a return to one donor between two signal receipts | scaffold | Assumed |
 | [A170](#a170--fork-an-identical-paid-clock-history-at-one-loose-distinction) | Fork an identical paid clock history at one loose distinction | scaffold | Assumed |
 | [A171](#a171--read-a-private-sender-return-on-one-continuing-receiver) | Read a private sender return on one continuing receiver | scaffold | Assumed |
+| [A172](#a172--one-shared-decision-with-a-record-at-each-reader) | One shared decision with a record at each reader | scaffold | Assumed |
 
 ## Entries
 
@@ -3889,6 +3890,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The ordinary law supplies the reached unsigned holdings. The odd signing, operator values, quantum preparation, question pairs and probabilities enter through this reading. The small built starts, leaf family and the labelled and jump-selected controls are listed in the frozen design.
 - **Challenge.** Compare ordinary scalar values, move or remove the odd sign, exchange the question convention, change answer weights, and compare the two knot laws. An intrinsic assignment of operators and a law for their probabilities remain open.
 - **History.**
+  - 2026-11-21 · Using the same compiled operation for both occurrences of each mark distinguishes the six- and eight-holder parity patterns. Relaxing identity at one display makes an imperfect eight-holder table attainable on a uniform ordinary source. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
   - 2026-11-20 · With the positive real weighting of ordinary allowed words and the supplied measurement of changes by squared weights, two split parity knots reproduce all 576 probabilities of the earlier game. Holding the ordinary distribution fixed and losing coherence drops its success to 2/3. Opposite relative signs cannot be distinguished by the tested ordinary motion or plain reads. [Study](../research/READS-HOLDERS-SOURCES-20261120-001A/results.md).
   - 2026-11-20 · Chosen before measurement, with the scope and the compared alternatives in the study. [Study design](../research/FOUR-READINGS-20261120-001A/preregistration.md). [Results](../research/FOUR-READINGS-20261120-001A/results.md).
 
@@ -4042,6 +4044,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The full-pair and singleton calibrations, six-rule and three-reader tables, before-and-after states, the chosen sign order, supplied readers, preparations and fresh comparison weightings.
 - **Challenge.** Compare fresh conditioning to a retained preparation label, algebraic order to recorded chronology, a fair sign attached to a refused change, and alternative states after the same answer. Check both laws and ordinary motion, births and the forbidding join.
 - **History.**
+  - 2026-11-21 · The new shared instrument separates source admission, signed changes, conditional data state, local raw and calibrated word, and a physically distinct recorded answer. The all-even and not-all-equal controls keep pre-setting herald failures as well as accepted histories. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
   - 2026-11-20 · Reading every erased mark and pooling by the product has the same conditional exterior state as the binary joint flip once all the erased marks are discarded. Additional retained marks can distinguish the two supplied instruments. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
   - 2026-11-20 · A complete normalized instrument made only of nonnegative transfer amplitudes cannot turn a relative sign into different ordinary pointer probabilities. A preloaded signed memory can transfer its sign if coherent transport is supplied. Ordinary register occupation remains insensitive. [Sign study](../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/results.md).
   - 2026-11-20 · Both branches remain open. A permitted reversal alone can always say yes. A purely allowed-output report can be fair on a stationary singleton. With the supplied full selective measurement, a not-all-equal single-mark flip places conditional mass 1/10 outside after plus and 1/2 outside after minus. Collective effects reproduce all earlier chances within the allowed words, while independent local instruments that preserve every allowed input face the recorded obstruction. [Both branches and access conditions](../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/fork.md).
@@ -4291,3 +4294,15 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-21 · Changing the balanced choice of which arm advances preserves each preparation's count across all 32,768 enrolled histories. Requiring a signal to be new to every origin-retaining parent changes the result to two receipts with zero off-sender ticks in between. An exact primitive match fixes the paid option in this funded pair-only class. [Ordinary result](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/results.md)
   - 2026-11-21 · Registered during prospective review, before the new pulse observations.
+
+### A172 · One shared decision with a record at each reader
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Supply the questions at the two readers and a repeatable rule for resolving a shared distinction. Treat the local setting, the physical writing of an answer, and the information that can be retained for the next question separately. Test the proposal that only the current read knots need values against a common measurement law that must also prescribe which preparations are possible.
+- **Why.** The two signed experiments have no global ordinary word and both admit uniform compatible local answers on a first reading. Only one of the two perfect tables is quantum-permitted. Registering an event through a knot requires a way to affect an accessible holding, as in the earlier physical switch and clock tests.
+- **Rests on it.** The two supplied sign patterns and independent choices of setting, which knot receives which question, the state of the reader, the meaning of its outcome and failure, the preparation and weighting, and what persists across consecutive questions. [Earlier tables](../research/FOUR-READINGS-20261120-001A/results.md) · [Ordinary switch](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md).
+- **Challenge.** Use the same rule on both exact benchmarks and lawful parity and not-all-equal preparations. Inspect the entire local record, including when the other setting changes, and repeat and overlap questions. Compare what ordinary knot growth can supply with every additional operation in the [shared design](../research/TWO-KNOTS-ONE-DECISION-20261121-001/preregistration.md).
+- **History.**
+  - 2026-11-21 · The freeze fixes the ordered source and tie choices, strict and endpoint-calibrated preparations, uniform coherent carrier, local interference, squared-weight projection and post-read latch. Tags, erasure, ordinary mixtures, independent halves, reversal of names, literal overlap memory, failures and sequential reads test distinct choices. The two answer codewords and the separate ready state are lawful. A pre-recombination tag at one reader halves six-rule success, while the literal reader's complete sweep distinguishes remote settings at total variation 1/2. [Measurement study](../research/TWO-KNOTS-ONE-DECISION-20261121-001/decision.md)
+  - 2026-11-21 · Registered while the common design was being prepared, before either target replay.

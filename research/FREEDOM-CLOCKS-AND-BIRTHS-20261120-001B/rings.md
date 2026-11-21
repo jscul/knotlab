@@ -203,7 +203,7 @@ minus loose count. On the marked five-knot ring a one-end birth at
 age five and the two-end birth at age seven both have arity four
 and two loose distinctions. Their separate single-holder views are
 isomorphic. Those fields alone leave the marked turn unresolved.
-[B203 scouting record](../../docs/RESEARCH_GOALS.md#b203--a-clock-inside-the-growing-ring-g5)
+[Original ring-clock question](../RING-READ-20261118-001/ring_read.md)
 
 With a known one-leftover period, the same fields give a bounded
 age estimate. For immutable arity $a$, parent count $p$ and number

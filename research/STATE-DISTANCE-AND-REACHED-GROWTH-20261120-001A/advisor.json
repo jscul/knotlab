@@ -1,0 +1,113 @@
+{
+  "question": "Independent prospective design review for Prespatial Labs, before any new sample or outcome, as Claude Fable 5.2. Our finite system has physical holders, each with at least three bit distinctions, incident in at most two holders. NAE forbids constant tuples, parity even. A loose distinction is held once, a live holder has one. At growth each proposed group of live parents consumes one actual loose per parent; leftovers generate one-parent births. A child receives fresh distinctions for new demands (floor at least one unless a sole already implied parity closing); globally insufficient budgets stall the entire stage. Ordinary groups use a shared older witness holding with all two inputs; unheld pairwise witnessed triples can form three-parent groups; otherwise uncovered pairs form births. Two additional frozen rules: D keeps ordinary groups and adds uncovered direct pairs of live holders sharing a distinction; W includes each presently live physical common witness in the ordinary group it witnesses, retains original if none, deduplicates. After first cut coeval new children have disjoint fresh names and only spent older witnesses. Compare (i) NAE disagreement ruler -log base3 abs(1-2r) between private marked bits of two live knots, minus one when calibrated on cycle-free ternary holders; (ii) raw disagreement probability r whenever states exist, and parity bond distance smallest minimal cut supporting both physical private bits minus one (exterior wired). Compare three delays: earliest common true descendant, earliest changed fresh count, earliest birth with changed true parents under a matched +1 private at a live site or matched witness edit. Distinguish funded stage, early global stop, parity close, invisible edit. For cycle-free physical trees, raw correlation along path is product of -1/(2^(q-1)-1); witnessed distance half even physical length if every required alternating interior is live, else infinity. On a fixed funded tree, hypothesize +1 private arrives at exact witnessed distance (changed fresh) and one later (changed birth) on a shortest original path, via one extra unary extension and all-parent cluster dynamics: challenge this, including energy surplus/unaries, stored ID matching, terminal cases. Compare saturated ternary trees and even paths with varying arity; candidate pair of all-live arity-six 5-holder path and same path with three now-spent interiors each attaching four pendant six-place holders. Frozen outputs also to compare seven-knot generator, positive 21-source, old-state extension for D/W, NAE reconstruction and old matched controls. Prospective 64 Pruefer iid 3..5 tree starts, matched one extra meeting, plus 64 orientation-random runs of explosive partnered process, 1 private pair per draw, 3 cuts; fresh broad vs conditional probabilities, by-rate strata, explicit censoring. Please critically examine ambiguity in rivals, covered groups, three delays, state distance, edge cases, exactness of proposed proof and which counterexample defeats all state distances; give specific controls and strongest wrong inference to preclude. Recommend precise existing words, no new coined terms. Reply compactly around 500 words. You have no repository tools, so identify assumptions from this description.",
+  "invocation": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-fable-5-2",
+    "--tools",
+    "",
+    "--output-format",
+    "json"
+  ],
+  "return_code": 0,
+  "receipt": {
+    "duration_api_ms": 96045,
+    "stop_reason": "end_turn",
+    "session_id": "46f0e882-6faf-4054-9c74-b9668548bb8b",
+    "total_cost_usd": 0.6516942,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 21417,
+      "cache_read_input_tokens": 2431,
+      "output_tokens": 7713,
+      "output_tokens_details": {
+        "thinking_tokens": 6306
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 21417,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7713,
+          "cache_read_input_tokens": 2431,
+          "cache_creation_input_tokens": 21417,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 21417
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-fable-5-2": {
+        "inputTokens": 2,
+        "outputTokens": 7713,
+        "cacheReadInputTokens": 2431,
+        "cacheCreationInputTokens": 21417,
+        "webSearchRequests": 0,
+        "costUSD": 0.6516942,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 6306,
+        "canonicalModel": "claude-fable-5-2",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "**Review as Claude Fable 5.2, from your description alone (nothing run, no repository read).**\n\n**Ambiguities to freeze first**\n- **Ordinary group:** is it each pair under a witness, or the witness's whole live neighbourhood? A six-place witness makes these differ in loose spent per parent.\n- **D:** \"uncovered\" must name the group set it is judged against (base, with or without triples). On an all-live chain, D adds every adjacent pair, so delay follows physical length (odd allowed), not half of it.\n- **W:** state whether two witnesses of the same parents give one group or two after deduplication, and that the included witness spends a loose.\n- **Witnessed distance:** it is therefore rule-indexed. Define it per rule (base, D, W), and say whether liveness is read at the start or at each stage.\n\n**The proof hypothesis: exactness fails in five places**\n1. **Original holders die.** A ternary interior has one loose and an arity-six interior in two groups lasts two stages. The signal travels on children (the shared parent becomes their witness), so restate it over the grown system and prove the relay by induction.\n2. **Energy.** A relay child in two groups needs two fresh distinctions, and the floor gives one. One short relay stalls the whole stage, so \"funded\" must hold at every stage in both arms.\n3. **Surplus.** If the +1 private is not needed it becomes a one-parent birth at delay 0, in the opposite alternation class. If it is needed it can flip a global stall and change everything at once.\n4. **Masking.** Where the floor or a parity close fixes the fresh count, the edit is invisible. Only the lower bound (no change before the witnessed distance) is provable from locality; attainment needs a stated no-masking condition.\n5. **Stored IDs.** A +1 shifts later names, which looks like change everywhere. Name by (stage, parent set, index) and define \"changed birth\" under an inductive matching.\n\nTerminal cases to state: same holder, a target with no later group (censored, not \"one later\"), and a target spent before arrival.\n\n**Counterexample**\nYour candidate pair is the right one, but its scope is narrower than \"all state distances\". Pendant holders on a cycle-free system leave the law of the chain's bits unchanged, so it defeats every distance that is a function of that law. Liveness is not in that law.\n\n- **Infinity needs an invariant:** prove that no group ever spans a link between two spent holders. Otherwise pendants and children may give a finite later delay.\n- **Wired exterior:** check the cut count is equal in both members. One has 4 wired loose per interior and the other 20, so equality is not automatic.\n- **Scaffold:** the hand-built ages are a scaffold; record it and vary it.\n\n**Controls**\n- Compute r exactly on cycle-free starts, and declare a noise floor where it is sampled. Near r = 1/2 the ruler is censored, not large.\n- With varying arity the ruler adds log\u2083(2^(q\u22121)\u22121) per holder (about 3.13 at arity six). Compare it against that sum, not a holder count.\n- Name the weighting. The literature's Pr\u00fcfer draw fixes degrees, so iid arity 3..5 needs rejection (arity > degree for liveness); the weighting is the conditioned one.\n- Key random draws by stored ID so the edit cannot shift them.\n- With three cuts, delays beyond three are right-censored. Report survival fractions per stratum and pre-declare strata and minimum cell sizes, since 64 runs is thin.\n- Keep the \"one extra meeting\" arm as a placebo against the +1 private arm.\n\n**Strongest wrong inference to preclude**\nAgreement of the ruler with delay on saturated ternary cycle-free starts is not evidence that state governs growth. There the ruler minus one is the holder count by calibration. The converse is also wrong: the pair shows the two-bit law misses liveness, not that state carries no counted length.\n\n**Words**\n- Use \"disagreement ruler\", \"disagreement probability\" and \"cut count\".\n- Use \"delay to common descendant\", \"delay to changed fresh count\" and \"delay to changed birth\".\n- Use \"counted length along witnesses\" for witnessed distance, and never \"distance\" unqualified.",
+    "ttft_ms": 80673,
+    "type": "result",
+    "duration_ms": 96096,
+    "uuid": "4186d55a-3aac-4a21-a8a7-6e3bec1cdd65",
+    "ttft_stream_ms": 2913,
+    "time_to_request_ms": 48,
+    "first_content_frame_ms": 2913,
+    "queued_turn_count": 0,
+    "result_index": 0
+  }
+}

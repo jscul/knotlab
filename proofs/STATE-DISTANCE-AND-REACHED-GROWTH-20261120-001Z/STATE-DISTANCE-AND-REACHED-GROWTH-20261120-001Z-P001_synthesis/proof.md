@@ -1,0 +1,11 @@
+# The two research records at their registered stops
+
+Each scientific referee is pending. The binding supplies no additional research finding.
+
+## Does near in the states mean soon in growth?
+
+For funded continuing ordinary tree growth, marked state disagreement is an arity product while common descent is at half the holder separation exactly for an even route with every alternating holder live. The matched +1 has the two stated fresh-count cases and first changes a receiver birth one step after a finite meeting. Neither supplied rival gives a fixed function of the marked readings on all funded trees under either law. The exact matched-price theorem uses tree holdings, a loose addition to an already live sender and a continuing not-all-equal run. The larger-source samples use named source and query weightings. Refereeing remains independent and pending. [Report](../../../research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001A/results.md) · [Referee handoff](../../../research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001A/referee_handoff.md).
+
+## Do all the marked pair rates decide the next not-all-equal births?
+
+At the 28-name table the full named not-all-equal holdings and the next four births, each with three named parents and one fresh distinction, are forced among all positive-age funded rivals under either weighting. At all sizes an identified loose mark reveals its current support. With the loose roles supplied the pair table recovers the next holdings of parents and fresh counts after two funded cuts, or after one with the single-meeting promise on relevant source holders. Additional component and finite explosive classes are described in the report. Identifying loose marks on arbitrary unmarked reached cuts is open. All 150 not-all-equal stages in the registered explosive comparison have unique named next rosters within that population. The wider conclusion for the 28-name table against arbitrary unevolved starts assumes physical symmetry and uniform word weights. Independent scientific referee pending. [Report](../../../research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001B/results.md) · [Referee handoff](../../../research/STATE-DISTANCE-AND-REACHED-GROWTH-20261120-001B/referee_handoff.md).

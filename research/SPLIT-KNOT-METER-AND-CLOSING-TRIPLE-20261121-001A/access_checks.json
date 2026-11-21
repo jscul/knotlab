@@ -1,0 +1,850 @@
+{
+  "not_all_equal": {
+    "actual_state_only": {
+      "fixed_positive_source": true,
+      "forbidden_named_outputs_for_basis_inputs": {
+        "001": [
+          "111"
+        ],
+        "010": [
+          "000"
+        ],
+        "011": [
+          "111"
+        ],
+        "100": [],
+        "101": [],
+        "110": [
+          "000"
+        ]
+      },
+      "reflection_normal": [
+        1,
+        -1,
+        0,
+        1
+      ]
+    },
+    "canonical": {
+      "clauses": [
+        "a c b",
+        "~a ~c ~b"
+      ],
+      "result": {
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "b",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "a",
+          "c"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "a",
+          "c",
+          "b"
+        ]
+      }
+    },
+    "coherence_read": {
+      "change": {
+        "001": "001",
+        "010": "100",
+        "011": "101",
+        "100": "010",
+        "101": "011",
+        "110": "110"
+      },
+      "plus_after_B_dephasing": "1",
+      "plus_after_full_dephasing": "2/3",
+      "plus_on_positive": "1"
+    },
+    "compatibility": {
+      "A_directed_pairs_including_identity": [
+        [
+          "00",
+          "00"
+        ],
+        [
+          "00",
+          "01"
+        ],
+        [
+          "00",
+          "10"
+        ],
+        [
+          "01",
+          "01"
+        ],
+        [
+          "01",
+          "10"
+        ],
+        [
+          "10",
+          "01"
+        ],
+        [
+          "10",
+          "10"
+        ],
+        [
+          "11",
+          "01"
+        ],
+        [
+          "11",
+          "10"
+        ],
+        [
+          "11",
+          "11"
+        ]
+      ],
+      "B_directed_pairs_including_identity": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "all_static_synchronized_product_permutations": [
+        [
+          [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "00",
+            "10",
+            "01",
+            "11"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "11",
+            "01",
+            "10",
+            "00"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "11",
+            "10",
+            "01",
+            "00"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "counts_A_alone_B_alone_synchronized": [
+        2,
+        1,
+        4
+      ],
+      "remote_words_for_A": {
+        "00": [
+          "1"
+        ],
+        "01": [
+          "0",
+          "1"
+        ],
+        "10": [
+          "0",
+          "1"
+        ],
+        "11": [
+          "0"
+        ]
+      },
+      "remote_words_for_B": {
+        "0": [
+          "01",
+          "10",
+          "11"
+        ],
+        "1": [
+          "00",
+          "01",
+          "10"
+        ]
+      }
+    },
+    "equal_herald_single_bit_paths": {
+      "001": {
+        "herald": "equal",
+        "physical_source_history": [
+          "001",
+          "001",
+          "011",
+          "011",
+          "011",
+          "010"
+        ],
+        "private_meter_after_B_complement": "00"
+      },
+      "010": {
+        "herald": "unequal",
+        "issued_data_ports": [],
+        "target_coupled": false,
+        "word_after_refusal": "010"
+      },
+      "011": {
+        "herald": "unequal",
+        "issued_data_ports": [],
+        "target_coupled": false,
+        "word_after_refusal": "011"
+      },
+      "100": {
+        "herald": "unequal",
+        "issued_data_ports": [],
+        "target_coupled": false,
+        "word_after_refusal": "100"
+      },
+      "101": {
+        "herald": "unequal",
+        "issued_data_ports": [],
+        "target_coupled": false,
+        "word_after_refusal": "101"
+      },
+      "110": {
+        "herald": "equal",
+        "physical_source_history": [
+          "110",
+          "110",
+          "110",
+          "010",
+          "010",
+          "010"
+        ],
+        "private_meter_after_B_complement": "11"
+      }
+    },
+    "guess_every_launch": {
+      "absolute_eigenvalues_of_difference_in_coefficient_units": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cross_minus_partial_transpose": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "guessed_sign": "minus product of reader outcomes",
+      "local_measured_observable": "J_source tensor J_data",
+      "optimal_equal_prior_correct_probability": "1/2+sqrt(5)/6",
+      "source_cross_coefficient": "sqrt(5)/6",
+      "target_difference_trace_norm": 2
+    },
+    "source_reduced_B": [
+      [
+        "1/2",
+        "1/3"
+      ],
+      [
+        "1/3",
+        "1/2"
+      ]
+    ],
+    "synchronous_offer": {
+      "001": {
+        "A_first_lawful": true,
+        "B_first_lawful": false,
+        "after_A_first": "001",
+        "after_B_first": "000",
+        "joined": "000",
+        "joined_lawful": false,
+        "private_after_copies": "01"
+      },
+      "010": {
+        "A_first_lawful": true,
+        "B_first_lawful": true,
+        "after_A_first": "110",
+        "after_B_first": "010",
+        "joined": "110",
+        "joined_lawful": true,
+        "private_after_copies": "10"
+      },
+      "011": {
+        "A_first_lawful": false,
+        "B_first_lawful": true,
+        "after_A_first": "111",
+        "after_B_first": "010",
+        "joined": "110",
+        "joined_lawful": true,
+        "private_after_copies": "11"
+      },
+      "100": {
+        "A_first_lawful": false,
+        "B_first_lawful": true,
+        "after_A_first": "000",
+        "after_B_first": "100",
+        "joined": "000",
+        "joined_lawful": false,
+        "private_after_copies": "10"
+      },
+      "101": {
+        "A_first_lawful": true,
+        "B_first_lawful": true,
+        "after_A_first": "001",
+        "after_B_first": "100",
+        "joined": "000",
+        "joined_lawful": false,
+        "private_after_copies": "11"
+      },
+      "110": {
+        "A_first_lawful": true,
+        "B_first_lawful": true,
+        "after_A_first": "110",
+        "after_B_first": "110",
+        "joined": "110",
+        "joined_lawful": true,
+        "private_after_copies": "00"
+      }
+    },
+    "whole_source_one_bit_transfer": {
+      "001": {
+        "physical_words": [
+          "001",
+          "011",
+          "011",
+          "010",
+          "010",
+          "010"
+        ],
+        "private_source": "001"
+      },
+      "010": {
+        "physical_words": [
+          "010",
+          "010",
+          "010",
+          "010",
+          "010",
+          "010"
+        ],
+        "private_source": "010"
+      },
+      "011": {
+        "physical_words": [
+          "011",
+          "011",
+          "011",
+          "010",
+          "010",
+          "010"
+        ],
+        "private_source": "011"
+      },
+      "100": {
+        "physical_words": [
+          "100",
+          "100",
+          "100",
+          "100",
+          "110",
+          "010"
+        ],
+        "private_source": "100"
+      },
+      "101": {
+        "physical_words": [
+          "101",
+          "101",
+          "101",
+          "100",
+          "110",
+          "010"
+        ],
+        "private_source": "101"
+      },
+      "110": {
+        "physical_words": [
+          "110",
+          "110",
+          "010",
+          "010",
+          "010",
+          "010"
+        ],
+        "private_source": "110"
+      }
+    }
+  },
+  "parity": {
+    "actual_state_only": {
+      "fixed_positive_source": true,
+      "forbidden_named_outputs_for_basis_inputs": {
+        "000": [
+          "010",
+          "100"
+        ],
+        "011": [
+          "001",
+          "111"
+        ],
+        "101": [
+          "001",
+          "111"
+        ],
+        "110": [
+          "010",
+          "100"
+        ]
+      },
+      "reflection_normal": [
+        1,
+        1,
+        -1,
+        -1
+      ]
+    },
+    "atomic_clear_with_independently_set_private_controls": {
+      "00": {
+        "000": {
+          "after": "000",
+          "still_even": true
+        },
+        "011": {
+          "after": "011",
+          "still_even": true
+        },
+        "101": {
+          "after": "101",
+          "still_even": true
+        },
+        "110": {
+          "after": "110",
+          "still_even": true
+        }
+      },
+      "01": {
+        "000": {
+          "after": "001",
+          "still_even": false
+        },
+        "011": {
+          "after": "010",
+          "still_even": false
+        },
+        "101": {
+          "after": "100",
+          "still_even": false
+        },
+        "110": {
+          "after": "111",
+          "still_even": false
+        }
+      },
+      "10": {
+        "000": {
+          "after": "100",
+          "still_even": false
+        },
+        "011": {
+          "after": "111",
+          "still_even": false
+        },
+        "101": {
+          "after": "001",
+          "still_even": false
+        },
+        "110": {
+          "after": "010",
+          "still_even": false
+        }
+      },
+      "11": {
+        "000": {
+          "after": "101",
+          "still_even": true
+        },
+        "011": {
+          "after": "110",
+          "still_even": true
+        },
+        "101": {
+          "after": "000",
+          "still_even": true
+        },
+        "110": {
+          "after": "011",
+          "still_even": true
+        }
+      }
+    },
+    "canonical": {
+      "clauses": [
+        "a c ~b",
+        "a ~c b",
+        "~a c b",
+        "~a ~c ~b"
+      ],
+      "result": {
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "b",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "a",
+          "c"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "a",
+          "c",
+          "b"
+        ]
+      }
+    },
+    "coherence_read": {
+      "change": {
+        "000": "110",
+        "011": "101",
+        "101": "011",
+        "110": "000"
+      },
+      "plus_after_B_dephasing": "1",
+      "plus_after_full_dephasing": "1/2",
+      "plus_on_positive": "1"
+    },
+    "compatibility": {
+      "A_directed_pairs_including_identity": [
+        [
+          "00",
+          "00"
+        ],
+        [
+          "00",
+          "11"
+        ],
+        [
+          "01",
+          "01"
+        ],
+        [
+          "01",
+          "10"
+        ],
+        [
+          "10",
+          "01"
+        ],
+        [
+          "10",
+          "10"
+        ],
+        [
+          "11",
+          "00"
+        ],
+        [
+          "11",
+          "11"
+        ]
+      ],
+      "B_directed_pairs_including_identity": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "all_static_synchronized_product_permutations": [
+        [
+          [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "00",
+            "10",
+            "01",
+            "11"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "01",
+            "00",
+            "11",
+            "10"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "01",
+            "11",
+            "00",
+            "10"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "10",
+            "00",
+            "11",
+            "01"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "10",
+            "11",
+            "00",
+            "01"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "11",
+            "01",
+            "10",
+            "00"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "11",
+            "10",
+            "01",
+            "00"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "counts_A_alone_B_alone_synchronized": [
+        4,
+        1,
+        8
+      ],
+      "remote_words_for_A": {
+        "00": [
+          "0"
+        ],
+        "01": [
+          "1"
+        ],
+        "10": [
+          "1"
+        ],
+        "11": [
+          "0"
+        ]
+      },
+      "remote_words_for_B": {
+        "0": [
+          "00",
+          "11"
+        ],
+        "1": [
+          "01",
+          "10"
+        ]
+      }
+    },
+    "synchronous_offer": {
+      "000": {
+        "A_first_lawful": true,
+        "B_first_lawful": true,
+        "after_A_first": "000",
+        "after_B_first": "000",
+        "joined": "000",
+        "joined_lawful": true,
+        "private_after_copies": "00"
+      },
+      "011": {
+        "A_first_lawful": false,
+        "B_first_lawful": false,
+        "after_A_first": "111",
+        "after_B_first": "010",
+        "joined": "110",
+        "joined_lawful": true,
+        "private_after_copies": "11"
+      },
+      "101": {
+        "A_first_lawful": false,
+        "B_first_lawful": false,
+        "after_A_first": "001",
+        "after_B_first": "100",
+        "joined": "000",
+        "joined_lawful": true,
+        "private_after_copies": "11"
+      },
+      "110": {
+        "A_first_lawful": true,
+        "B_first_lawful": true,
+        "after_A_first": "110",
+        "after_B_first": "110",
+        "joined": "110",
+        "joined_lawful": true,
+        "private_after_copies": "00"
+      }
+    }
+  },
+  "sign_probes": {
+    "M": [
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "P_t_on_input_ket_00": {
+      "-1": [
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ],
+      "1": [
+        "1/2",
+        "0",
+        "0",
+        "-1/2"
+      ]
+    },
+    "nine_separating_real_product_probes_on_either_Pt_over_two": {
+      "(0, 1)|(0, 1)": "1/4",
+      "(0, 1)|(1, 0)": "1/4",
+      "(0, 1)|(1, 1)": "1/4",
+      "(1, 0)|(0, 1)": "1/4",
+      "(1, 0)|(1, 0)": "1/4",
+      "(1, 0)|(1, 1)": "1/4",
+      "(1, 1)|(0, 1)": "1/4",
+      "(1, 1)|(1, 0)": "1/4",
+      "(1, 1)|(1, 1)": "1/4"
+    }
+  }
+}

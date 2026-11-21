@@ -24,11 +24,13 @@ Distinguishing consumable inputs by their causal history is familiar from the li
 
 Both investigators froze their own design and binding revision after separate independent Astra Max reviews. The referee handoffs give the objections, checks and outstanding scope. [Serial handoff](../LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A/referee_handoff.md) · [Ordinary handoff](../LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/referee_handoff.md)
 
-## Research position
+## Final report as sent
+
+2026-11-21 09:33 PST
 
 **B282.** Yes. A birth paid by the attached knot can spend the clock’s last required distinction and permanently erase a tick.
 
-**B283.** The receiver counted **two ticks versus one** between two genuine returns of its sender, but the difference came from a changed original donor. When each original group has two donors and every group is funded, matching the receiver’s original witnesses and loose supply preserves that tick opportunity.
+**B283.** The receiver counted **two ticks versus one** between two genuine sender returns because an exchange changed which original donor could pay for a tick. When each original group has two donors and every group is funded, matching the receiver’s original witnesses and loose supply preserves that tick opportunity.
 
 | Scope | Status | What follows |
 | --- | --- | --- |
@@ -37,7 +39,7 @@ Both investigators froze their own design and binding revision after separate in
 | G5 · Dynamics | Capability gained | The actual payer and the loose distinction it spends explain why a marked return remains possible or becomes impossible. |
 | G1 · Space from a law | Operational interval gained | A receiver can count its own returns between private signals. A gravitational interpretation remains open. |
 
-Both results hold under **parity and not-all-equal**. In B282, leaving one spare distinction restored the tick even after the outside birth made exactly the same payment. In B283, breaking the sender’s private return removed both pulses while the receiver kept ticking. The lasting third helped pay for the tick at 22. Both preparations offered 23 paid continuations at the preceding birth, but only the intact one offered a return to the marked donor. Restoring the third’s lasting activity after the donor exchange still gave one tick. All 32,768 balanced orders in each compared preparation preserved its count. [Serial study](https://github.com/jscul/knotlab/blob/main/research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A/results.md) · [Ordinary study](https://github.com/jscul/knotlab/blob/main/research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/results.md)
+Both results hold under **parity and not-all-equal**. In B282, leaving one spare distinction restored the tick even after the outside birth made exactly the same payment. In B283, breaking the sender’s private return removed both pulses while the receiver kept ticking. The lasting third helped pay for the tick at 22. The two preparations each offered 23 paid continuations at the preceding birth. Only the intact one offered a return to the marked donor. Restoring the third’s lasting activity after the donor exchange still gave one tick. All 32,768 balanced orders in each compared preparation preserved its count. [Serial study](https://github.com/jscul/knotlab/blob/main/research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001A/results.md) · [Ordinary study](https://github.com/jscul/knotlab/blob/main/research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/results.md)
 
 The choice of receipt matters. If a pulse must be new to **every** parent that retains the receiver’s origin, a previously ticking receiver registers the two pulses at sizes 32 and 39 and counts **zero** between them. Every addition in that interval belongs to the later pulse under the proved nesting condition. [Receipt proof](https://github.com/jscul/knotlab/blob/main/proofs/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B-P001_private_pulses/proof.md)
 
@@ -54,5 +56,5 @@ B284 would move the expense from an earlier ancestor to the tick itself, whose t
 **Goals:** B282 and B283 closed at their stated stops.  
 **Assumptions:** A170 and A171 record the serial order and receiver readings. The counts are exact for the named preparations.  
 **Scaffolds:** We supplied the starts, clock marks, serial spending order and ordinary receipt rule. The paid births and their ancestry follow from the corresponding growth rules.  
-**Basket:** B275 remains the separate question of recovering births from their allowed states.  
+**Basket:** B275 separately asks whether a table of pairwise disagreements can distinguish seven births from two.  
 **Validation:** All 42 scoped scientific files passed validation and both studies replayed. A separate policy check still flags a missing sentence about peer tasks in the research-directions skill.

@@ -204,6 +204,9 @@ evidence: results and their status come from the records each entry links.
 | [A146](#a146--count-repeating-releases-with-a-chosen-reader-start-supply-and-distribution-of-edits) | Count repeating releases with a chosen reader, start supply and distribution of edits | scaffold | Assumed |
 | [A147](#a147--three-readers-each-ask-for-a-read-or-a-change-of-one-distinction) | Three readers each ask for a read or a change of one distinction | scaffold | Assumed |
 | [A148](#a148--recover-necessary-holders-from-full-states-and-compare-several-orders-of-joint-reading) | Recover necessary holders from full states and compare several orders of joint reading | scaffold | Assumed |
+| [A149](#a149--read-the-freedom-of-a-proposed-joint-change-from-counts-of-allowed-words) | Read the freedom of a proposed joint change from counts of allowed words | scaffold | Assumed |
+| [A150](#a150--read-a-clock-by-the-recurring-releases-or-turns-it-can-identify) | Read a clock by the recurring releases or turns it can identify | scaffold | Assumed |
+| [A151](#a151--compare-next-birth-counts-using-only-uniform-pair-disagreement-rates-on-a-reached-stage) | Compare next birth counts using only uniform pair disagreement rates on a reached stage | scaffold | Assumed |
 
 ## Entries
 
@@ -2808,6 +2811,7 @@ evidence: results and their status come from the records each entry links.
   A single temporary test pair can certify a true neighbor on a favorable reading. Under the connected growth rule the present bond distances cannot guarantee the first neighbor: even direct replacement admits continued ambiguity. [Proof and checks](../research/ONE-PROBE-ALIGNMENT-20261118-001/one_pair.md)
   A rule with 75 patterns compiled for the 35-junction target and its join order reads the current bond-distance table. Its instrument can replace both tests together. The construction is computed, with a symmetry argument for the last 27 joins. Individually moving one table-identified pair at a time can be blocked before the second join, even with perfect recall in the referee’s finite game. [Two live tests and referee](../research/TWO-PROBE-ALIGNMENT-20261118-001/two_pairs.md)
 - **History.**
+  - 2026-11-20 · With uniform full-word weights and ordinary growth, all 194 first reached not-all-equal types through eight source names (183 connected, 11 disconnected) have different pair tables. The table identifies the full named states as well as the next birth count. At all sizes this holds within the class in which cycles and repeated meetings are confined to three-place knots, with single-name joins to the wider knots. Parity gives five versus six births at 91 equal pair rates from six source names, and four versus three births at equal full states from eight. Larger reached not-all-equal stages outside the proved class remain open. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md).
   - 2026-11-20 · Under finite connected locally full not-all-equal rules with one or two holders per name and no implied rule, the full named states determine every later birth under the ordinary law. Uniform pair disagreement rates determine those states for a ternary presentation. With arity bounded by four or five, complete probabilities through order four are necessary and sufficient for the states, while support alone needs four or five respectively. The eight-name lower bound compares two closed starts. It leaves open whether pair rates alone can lose the next birth on a reached stage. Under parity the entire named states can give three or four births on five names. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/results.md).
   - 2026-11-20 · Under the uniform disagreement reading, every one of 18,750,714 named lawful irredundant not-all-equal state sets through nine distinctions fixes all subsequent births. In this census the pair counts and rates suffice for growth too. The full relation reconstructs the holders at every step of an all-size class. Four-place rules on eight names can nevertheless share all 28 pair readings and disagree on 16 allowed words in each direction. For parity, eight identical complete allowed words already yield four or three births on five names, and the additional information for growth is unbounded. The unrestricted premise stays under challenge. [Study](../research/READS-HOLDERS-SOURCES-20261120-001B/results.md).
   - 2026-11-20 · Under both ordinary knot laws, the same full states and disagreement counts on three named distinctions give three births or none. Nine named distinctions suffice with distinct physical supports. Parity can require unbounded further information about parent holdings, even after renaming. On the prepared sender edit the receiver's three local disagreement rates stay fixed while all nine rates to the sender change. The states of three-place not-all-equal bases are still recoverable from their disagreement counts at width four and above. A distance supplying the holders remains open. Independent referee pending. [States and holdings](../research/FOUR-READINGS-20261120-001B/results.md).
@@ -3902,6 +3906,8 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The fixed questions, choice of signs and transpose, external free settings, local reader placements including both readers in one holding, split knots, unread distinctions, mediator reports, and sampled and explosive starts are listed in the design. The ordinary laws determine the allowed assignments and parent holdings.
 - **Challenge.** Compare the incoherent uniform mixture, exchange fixed and conditioned settings, suppress either mediator report, lift a reversible motion event, and compare signed counts and a different one-question probability rule. Test both knot laws and both overlapping and separate holdings.
 - **History.**
+  - 2026-11-20 · For finite unsigned, uniform allowed words, matched word pairs give exactly the previous squared-weight chances once the second question and its pair calibration are supplied. A different unsigned rule meets the weaker requirements. No ordinary motion or birth tested gives the calibrated answer. The measurement remains a scaffold. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/results.md).
+  - 2026-11-20 · The freedom study tests if a count of allowed changes is sufficient to reproduce the measured chances, and whether ordinary questions, composition, independent margins and certainty identify it. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/preregistration.md).
   - 2026-11-20 · With the same squared-weight rule and the positive uniform preparation, all eight settings on one three-place not-all-equal knot admit no common list for three separate readers. The score is 3 against 2 and all one-reader chances are independent of the other choices. All finite parity structures admit a common list for individual read-or-change questions. Loss of relative signs removes the violation. The ordinary law has yet to supply a sign-sensitive measurement. [Study](../research/THREE-READERS-AND-GROWTH-20261120-001A/results.md).
   - 2026-11-20 · Recorded for the independently frozen study. [Design](../research/READS-HOLDERS-SOURCES-20261120-001A/preregistration.md). [Results](../research/READS-HOLDERS-SOURCES-20261120-001A/results.md).
 
@@ -3937,6 +3943,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The equal setting weights, real positive representative, complete three-reader tables, signed correlation score and its higher-order conventions, uniform reader placements, fixed explosive hosts and added branches are specified in the freeze.
 - **Challenge.** Compare both laws, group two marks under one reader, lose coherence, attach holders of different arities, let the readers hold the whole added branch, and compare conditional and unconditional intermediate messages.
 - **History.**
+  - 2026-11-20 · All 371 previous three-reader tables were recovered from ordinary pairs once the second question and its calibration were supplied. Another rule with the same ordinary margins gives the isolated score 1 in place of 3. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/results.md).
   - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/THREE-READERS-AND-GROWTH-20261120-001A/preregistration.md). [Study](../research/THREE-READERS-AND-GROWTH-20261120-001A/results.md).
 
 ### A148 · Recover necessary holders from full states and compare several orders of joint reading
@@ -3948,4 +3955,41 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Full local projection at each holder, the ordinary complete-step law, the starting census, parent matching, and the three fresh source weightings are specified in the separate freeze. The growth law is supplied even when its future follows from the states.
 - **Challenge.** Check both laws, allow arbitrary repeated meetings, fix or erase marks in the proofs, compare joint counts with occupied patterns, and compare tree, extra-meeting and exponential-growth sources.
 - **History.**
+  - 2026-11-20 · Reading pair disagreement rates gives the complete reached states throughout the registered not-all-equal census, including the separately frozen disconnected extension, and under the named all-size structural promise. Parity reached states themselves can still conceal the next physical birth count. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md).
   - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/THREE-READERS-AND-GROWTH-20261120-001B/preregistration.md). [Study](../research/THREE-READERS-AND-GROWTH-20261120-001B/results.md).
+
+### A149 · Read the freedom of a proposed joint change from counts of allowed words
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Permit a reader to ask whether a named change is free. For each flip and compatible ordinary read take its signed answer average from the allowed words whose changed word is also allowed. Use the ordinary uniform counting measure and the stated order of combined questions.
+- **Why.** The supplied squared-weight measurement previously gave the tables. A direct count tests how much of that prescription can be replaced and which answer calibration is left to the reader.
+- **Rests on it.** The full joint tables, exposed two-word comparisons, rule for incompatible ordering, global-orbit rival, unchanged original distinction across growth, declared sample weightings and built explosive controls use these choices.
+- **Challenge.** Compare the literal probability interpretation, ordinary counting, the orbit mixture and nonuniform or signed preparations. Compare actual flips with projection in closure and motion, and count all trials after conditioning.
+- **History.**
+  - 2026-11-20 · Supported as a conditional calculation. The freedom fraction is the mean sign. The yes chance is half of one plus that mean. A full pair giving plus, a fair singleton and ordinary conditioning are sufficient. Erasing relations between distinct translation classes changes the isolated score from 3 to 1 while preserving ordinary reads. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/counting.md).
+  - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/preregistration.md). [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001A/results.md).
+
+### A150 · Read a clock by the recurring releases or turns it can identify
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Count one first release of the specified all-phase return per batch on present physical holdings, or one specified ring event. A reader measures its own count. Fix two source readings on the same connected preparation and separately test strict receiver membership and joint descendants.
+- **Why.** Two named sources already recur in the same ordinary growth. The event, who reads it and what constitutes reception determine whether a conversion or propagation claim can be made.
+- **Rests on it.** Both laws, the full present holding reader, the end-only and rooted alternatives, alternative release marks, ring records, edited clocks, constructed nested sources and the registered random and explosive preparations.
+- **Challenge.** Change the recurring event, hide spent holdings, vary return lengths and supplied fresh budget, and compare strict reception, first shared descendants and readouts of matched edits.
+- **History.**
+  - 2026-11-20 · Under either law, the present-holdings reader counts periods 16 and 24 on one source. Replacing recurring releases by marked ring turns or successive parent records changes the counts. Counting first common descent gives arrivals. An intact receiving family never incorporates those sends. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/results.md).
+  - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/preregistration.md). [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001B/results.md).
+
+### A151 · Compare next birth counts using only uniform pair disagreement rates on a reached stage
+
+**Assumed** · 2026-11-20 · scaffold
+
+- **Statement.** Compare exact uniform pair disagreement probabilities on the full named carrier and up to one common renaming. Count all children in the next ordinary complete step. Keep every funded first stage of a lawful connected source with necessary rules through eight old distinctions.
+- **Why.** A prior equality of pair readings caused no birth at either of its two closed preparations. The first reached stage tests whether a lost piece of information changes an actual birth.
+- **Rests on it.** The width bound, full local projection, fresh names and parent matching, target count, reading-order controls, single-meeting tree promise, separately named source and fixed explosive mixtures delimit the results.
+- **Challenge.** Apply both laws, allow internal naming symmetries, compare words and births separately, and compare the exact finite pool with the unbounded proved class.
+- **History.**
+  - 2026-11-20 · Named and rename-equivalent uniform pair tables agreed on every not-all-equal first reached case through the source bound. A separately advised freeze after the connected census added all disconnected unions, prior to their outcomes. The fresh-sample comparison retained its original finite pool. Width alone decided every explosive sample within that pool. [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md).
+  - 2026-11-20 · Registered before the comparisons. [Frozen choices](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/preregistration.md). [Study](../research/FREEDOM-CLOCKS-AND-BIRTHS-20261120-001C/results.md).

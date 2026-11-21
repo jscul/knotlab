@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**401 current results** and 5 superseded ones, from 571 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**401 current results** and 5 superseded ones, from 572 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 571 epics with their closures
+- [Epics](#epics): all 572 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1903,6 +1903,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-19 | A reading past the wall (`WALL-READ-20261119-001`) | [closure](proofs/WALL-READ-20261119-001Z/WALL-READ-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/WALL-READ-20261119-001/) |
 | 2026-11-19 | Is two dimensions typical of the growth or of the weighting? (`WEIGHTINGS-20261119-001`) | [closure](proofs/WEIGHTINGS-20261119-001Z/WEIGHTINGS-20261119-001Z-P001_epic_closure/proof.md) | [folder](research/WEIGHTINGS-20261119-001/) |
 | 2026-11-20 | Can a join read closure from its own distinctions? (`BOND-CLOSURE-20261120-001`) | [closure](proofs/BOND-CLOSURE-20261120-001Z/BOND-CLOSURE-20261120-001Z-P001_synthesis/proof.md) | [folder](research/BOND-CLOSURE-20261120-001/) |
+| 2026-11-20 | Where change calibration, clock registration and wider pair readings come from (`CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001`) | [closure](proofs/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001Z/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001/) |
 | 2026-11-20 | Repeated finite products and later indirect meetings (`COPIES-AND-MEETINGS-20261120-001`) | [closure](proofs/COPIES-AND-MEETINGS-20261120-001Z/COPIES-AND-MEETINGS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/COPIES-AND-MEETINGS-20261120-001/) |
 | 2026-11-20 | Can separated readings of growing knots give the signature of entanglement? (`ENTANGLEMENT-READ-20261120-001`) | [closure](proofs/ENTANGLEMENT-READ-20261120-001Z/ENTANGLEMENT-READ-20261120-001Z-P001_synthesis/proof.md) | [folder](research/ENTANGLEMENT-READ-20261120-001/) |
 | 2026-11-20 | Can a join that forbids old combinations give a Bell violation with free settings? (`FORBIDDING-JOIN-20261120-001`) | [closure](proofs/FORBIDDING-JOIN-20261120-001Z/FORBIDDING-JOIN-20261120-001Z-P001_synthesis/proof.md) | [folder](research/FORBIDDING-JOIN-20261120-001/) |

@@ -1,0 +1,15 @@
+# The three research records at their registered stops
+
+Each scientific referee is pending. The binding supplies no additional research finding.
+
+## Two change calibrations and what a refused change records
+
+With a binary report supplied, conditional restart and invariance give yes on a full pair. An actual reversal and factorization of an initially certain ordinary answer in the later signed product force a fair singleton. Fairness can also be realized while retaining an allowed word, and reversal alone can always report yes. Reproducing the earlier one-stage tables also uses ordinary pair weights, undisturbed compatible conditioning and the signed product rule. A collective operation and independent local instruments have different capabilities. The physical branch and post-answer instrument remain open. [Report](../../../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/results.md) · [Referee handoff](../../../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001A/referee_handoff.md).
+
+## Agreement of identical clocks and registration by a lasting receiver
+
+With the recurring event and actual anchors specified, equal return clocks agree at equal age in the proved class. The spacing of inclusive arrivals equals send spacing plus the change of witnessed separation at launch. A continuing one-member receiver can register every send in two of its actual children while preserving the two source periods. The one-member receiver's turn count remains aligned with its matched unaddressed copy. Matched child-price histories can agree despite different parentage. Three originals suffice for an open receiver on its own. The 21-knot host for the specific senders is a sufficient example. No result identifies an absolute physical duration or a price change attributable to an isolated postlaunch switch. [Report](../../../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001B/results.md) · [Referee handoff](../../../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001B/referee_handoff.md).
+
+## Pair readings where wider knots meet more than once
+
+With uniform complete-word weighting supplied, exact pair disagreements identify both not-all-equal holders against arbitrary lawful rivals in all four bare preparations. At every size they recover named words and hence later growth in the proved class, including repeated meetings in a tree of wider holders with two private names per holder and two shared per meeting. All 2,245 reached not-all-equal observations in the census determined their named words and next count. The first-stage census exhausts starts through ten names and the second-stage census exhausts starts through eight, with age hidden in the comparison. Unrestricted larger stages remain open. Class membership alone, including zero on the explosive draws, does not decide whether a particular pair table is sufficient. Parity can give different births even at equal full states. [Report](../../../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001C/results.md) · [Referee handoff](../../../research/CALIBRATIONS-CLOCKS-AND-WIDER-KNOTS-20261120-001C/referee_handoff.md).

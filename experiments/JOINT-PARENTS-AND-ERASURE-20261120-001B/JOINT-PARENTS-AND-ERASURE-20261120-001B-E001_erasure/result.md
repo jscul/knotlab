@@ -1,0 +1,3 @@
+# Exact erasure check
+
+On the frozen cuts and mergers, every ordinary output gave identical chances on the crossed signs. A separately supplied complete erasure gave the individual and binary sign probabilities and the conditional states in the proof. The scientific receipt binds the code and four output files. Independent scientific referee pending. [Numerical results and limits](../../../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md) · [Referee instructions](../../../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/referee_handoff.md) · [Exact receipt](../../../artifacts/JOINT-PARENTS-AND-ERASURE-20261120-001B/JOINT-PARENTS-AND-ERASURE-20261120-001B-E001_erasure/receipt.json)

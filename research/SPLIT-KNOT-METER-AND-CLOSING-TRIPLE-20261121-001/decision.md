@@ -6,7 +6,9 @@ The searches used `track.py objects 'split parity knot local lawful change sourc
 
 The signed assignment and its actual 18-knot holding come from `TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001`. The reversible keeper writes come from `ERASURE-AND-CLOSING-SIGNS-20261121-001`. The two present studies have separate written freezes and use these prior results independently. [Grown parity holding](../TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001A/results.md) · [Separate readers](../TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001B/results.md) · [Keeper writes](../ERASURE-AND-CLOSING-SIGNS-20261121-001A/results.md)
 
-## Decision and research position
+## Final report as sent
+
+2026-11-21 15:42 PST
 
 **B294.** With a supplied coherent preparation and one reader acting at a time, a split parity knot cannot supply a usable meter, while a split not-all-equal knot can on exactly **one third of launches**.
 

@@ -1,0 +1,7 @@
+# The record and the state after reading it
+
+- **Scoped obstruction and exact optimum.** The hidden mixed reference gives the correct sign effects, and the sign repeats. The optimal worst conditional squared overlap with the required pure output is 1/2 for this resource and class of readers, including untouched spectators. [Instrument proof](../../TWO-READERS-ONE-SURVIVING-SIGN-20261121-001A/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001A-P001_instrument/proof.md)
+- **Conditional construction.** On the coherent two-path pair, each fine pair of ordinary keeper records gives the corresponding complete projection, preserving within-sign alternatives. A new pair supports another read. [Scientific report](../../../research/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001A/results.md)
+- **Resource boundary.** The older three-word source also supplies the coherent meter when its random turn can be physically undone. Correctly correlated ordinary shares suffice, with no message between the readers during the data measurement. The source passes on 1/8 of launches. [Independent physical-word calculation](../../../research/TWO-READERS-ONE-SURVIVING-SIGN-20261121-001/independent_checks.md)
+
+The earned capability is conditional on the supplied coherent preparation, word-gate calibration and probability rule. The ordinary apparatus is lawful at either knot law. The independent scientific referee is pending.

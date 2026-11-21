@@ -1,0 +1,28 @@
+# What a second ordinary reading distinguishes
+
+The third signed observable at the last parity knot is \(M=-J\otimes J\), where \(J|0\rangle=|1\rangle\) and \(J|1\rangle=-|0\rangle\). This is the supplied interpretation of distinction 30, shared by knots 16 and 17 in the recorded growth sequence. The witnessed ending has three shared distinctions, numbered 28, 29 and 30. It has no fresh distinction at parity and one fresh distinction under not-all-equal. The word hardware used as readers obeys either law. [Actual holdings](../TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001A/six_knots.md) · [Named operator assignment](../TWO-EXTRA-MEETINGS-AND-SEPARATE-POINTERS-20261121-001/founders.py)
+
+## Independent calculation on the three physical words
+
+Let \(C\) be the three-word cyclic exchange, \(D=C-C^T\), \(Q=3I-\mathbf1\mathbf1^T\), and \(G=C\otimes C\). The active real binary data are encoded by the two normalized words proportional to \(r=(1,-1,0)\) and \(s=(1,1,-2)\). On this subspace, \(D/\sqrt3\) is \(J\) up to the fixed common orientation. The script works with the three physical words at each reader and contracts every output of the old three-port comparison against the corresponding source. Its integer numerators are \(I+G+G^2,\ I-G,\ I+G-2G^2\) and their squared denominators are 9, 6 and 18. The comparison keeps the data and sums the possible returned states of the reference. Its complete linear operation is checked on each of the nine local outcome pairs. [Direct integer replay](instrument_check.py)
+
+For an accepted known-equal reference, use the two eigenvalues \(u,v=\pm1\) of the formal complex observable \(Y=iJ\) to express the calculation. These labels give a mathematical decomposition of the real operator. Write \(\Pi_{uv}\) for the product of its two one-reader projectors. The conditional data map for recorded sign \(t\), before normalization, is
+\[
+ \mathcal D_t(\rho)=\sum_{uv=t}\Pi_{uv}\rho\Pi_{uv}.
+\]
+The desired map is \(P_t\rho P_t\), where \(P_t=\sum_{uv=t}\Pi_{uv}\). Both have identical probabilities on every input. Both repeat the sign with certainty with fresh admitted meters. The terms connecting the two possibilities within one sign survive only in the desired operation. With real data and no additional registers the mixed-reference output conditional on any positive-probability sign is \(P_t/2\).
+
+For input \(00\), either sign has probability \(1/2\). The desired conditional word is \((00-t\,11)/\sqrt2\). The two ordinary data readings therefore agree with certainty. After the mixed-reference instrument they agree with probability \(1/2\), and the overlap with the desired pure state is \(1/2\). For any product vectors across the readers the squared overlap with that desired state is at most \(1/2\), by the Cauchy–Schwarz inequality. The same bound holds for their mixtures. On a product target, a complete separable resource and separate instruments with only classical communication leave every accumulated conditional output separable even if a herald or classical repair is used. This yields the upper bound for every reader in the stated class. For the actual comparator, resolving two orthogonal components of any normalized ideal output gives overlap \(w^2+(1-w)^2\ge1/2\). Applying the same projections tensored with the identity on untouched spectators gives the same guarantee. Thus the worst-case squared overlap is exactly \(1/2\) for this optimization.
+
+## Keeping or recovering the shared coherence
+
+Before the physical source applies its random turn, its zero-port reference is proportional to \((I+G+G^2)(r\otimes r)=(3r\otimes r+s\otimes s)/2\). In the normalized encoding this is the coherent plus pair. The two upstream selections and the zero port give probability \(1/8\) per original launch. The known-equal preparation also makes a fixed transposition at the second reader. If the turn \(j\) is split into ordinary shares \(u,v\) with \(u+v=j\bmod3\), each alone uniform, one reader can apply \(C^{-u}\) and the other \(C^v\) after undoing the fixed transposition. The remaining common motion is \(C^v\otimes C^v\), which leaves the pre-turn source fixed. Each of the nine share pairs therefore recovers the coherent reference without either reader receiving the full label or a message at the later reading. This changed delivery supplies information missing from the hidden reference.
+
+A different preparation already available in the preceding study yields \((00+\eta\,11)/\sqrt2\), with \(\eta\in\{+1,-1\}\) known from the source port. Correct the minus port by the local sign operation. On the corrected pair the two meter-controlled binary operations are \(J\) at A and \(-J\) at B. Read both meters in the real sum/difference basis, getting bits \(a,b\). Direct multiplication gives
+\[
+  K_{ab}=\frac{I+(-1)^{a+b}M}{2\sqrt2}
+        =\frac{P_{(-1)^{a+b}}}{\sqrt2}.
+\]
+The within-sign information remains in the data even given both recorded bits. The positive construction accepts both corrected source ports and consumes one coherent pair per read. A fresh pair gives the repeat. Reading or permanently copying the meter's ordinary arm before recombination removes its off-diagonal terms. The ordinary keeper writes are verified separately in the study. [Investigator’s instrument and word checks](../TWO-READERS-ONE-SURVIVING-SIGN-20261121-001A/results.md)
+
+The all-input test uses only the full linear map and a product of two within-reader target–spectator pairs. The surviving entanglement of the ideal target after a product input has a different status than a coherent pair deliberately supplied at launch.

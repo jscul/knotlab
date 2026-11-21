@@ -1,0 +1,3 @@
+# Ordinary preparation histories on two exchanged words
+
+With six supplied local swap operations, the four-knot device carries order through an actual memory to a ready reader, under either ordinary knot law. At fixed physical history changing the mathematical relative sign leaves the event probability unchanged. All frozen cases are complete, and independent scientific review is pending. [Study results](../../../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/results.md) · [Referee handoff](../../../research/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/referee_handoff.md) · [Exact receipt](../../../artifacts/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A/SIGN-RECORDS-AND-RECEIVER-TICKS-20261120-001A-E001_sign_records/receipt.json)

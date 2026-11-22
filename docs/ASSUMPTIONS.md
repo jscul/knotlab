@@ -4742,6 +4742,7 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-22 · Opened for the [hidden sender mark study](../research/HIDDEN-SENDER-MARKS-20261122-001A/preregistration.md).
   - 2026-11-22 · After its one positive funding event the fixed receiver retains the same complete reading on every further ordinary cut. A second source request cannot create a second local receipt. [Repeated sends to the same receiver](../research/REPEATED-SENDS-20261122-001/decision.md)
+  - 2026-11-22 · Read each of the three paid children separately at its own funding event. Its two incoming distinctions can be followed, with the parent roles anonymous. Equal incoming values certify one slot of the original receipt. Mixed values permit every original word. A separately supplied parent role always identifies one slot. [Successor receipts](../research/SUCCESSOR-RECEIPT-20261122-001/decision.md)
 
 ### A205 · Learn letter frequencies with shared local pixel wiring
 
@@ -4764,3 +4765,5 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Change only the placement of the second request or divert its first contact. A different receiver could preserve one observation in a later knot before accepting another. That would require a specified way to transfer the record.
 - **History.**
   - 2026-11-22 · Opened for the [repeated-sends study](../research/REPEATED-SENDS-20261122-001/decision.md).
+  - 2026-11-22 · After the first receiver finishes, the original paid pair cannot carry a further ordinary send. A separate live sender, selected by the frozen payment order, can act on an oriented still-private 01 pair. A known zero background at the recipient of the old bit lets a later anonymous reading sometimes certify both the old bit and the new action. Each preparation is priced in the original uniform lawful completion weighting, with the second action chosen at equal odds. An unprepared pair has exchangeable orientations. [Exact joint tables](../research/SUCCESSOR-RECEIPT-20261122-001/later_source_joint.json)
+

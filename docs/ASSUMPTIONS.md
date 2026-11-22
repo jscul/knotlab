@@ -255,6 +255,7 @@ evidence: results and their status come from the records each entry links.
 | [A197](#a197--count-newly-reproduced-later-behaviors-under-a-charged-search) | Count newly reproduced later behaviors under a charged search | scaffold | Assumed |
 | [A198](#a198--give-a-moving-reader-rations-energy-and-a-local-food-bit) | Give a moving reader rations, energy and a local food bit | scaffold | Assumed |
 | [A199](#a199--remember-a-consumed-ration-by-the-feeders-public-menu) | Remember a consumed ration by the feeder's public menu | scaffold | Assumed |
+| [A200](#a200--train-a-second-local-cue-from-public-feeder-receipts) | Train a second local cue from public feeder receipts | scaffold | Assumed |
 
 ## Entries
 
@@ -4676,3 +4677,16 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Compare immediate and complete public records including equal complete histories with opposite stock. Retain repeated menu types, failed eats, refusals, order variations and growth stalls. Sham, equal-memory, disconnected writer and disconnected readout controls compare the same prepared game. Ordinary growth does not by itself install the keeper or its coupling.
 - **History.**
   - 2026-11-21 · Opened for [the feeder memory test](../research/FEEDER-MEMORY-20261121-001/preregistration.md) as a change to A198's supplied sensor.
+
+### A200 · Train a second local cue from public feeder receipts
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** In the resettable ration game, retain the old paid-feeder menu memory and supply a separate physical register for a return or arrival cue. Supply four candidate predicates, local input encodings, guarded register moves, ready tokens, the action readout, and the credit given to observable paying and empty attempts. Experience can change the marked cue selector. Calibrate with the current-only script and clear episodic records between games. Select the separate training, matched-history and held-out samples by canonical founder structure and rename their distinctions. [Second local feeder cue](../research/SECOND-FEEDER-CUE-20261121-001/decision.md)
+- **Why.** Two distinct feeders can offer the same number of exits. Reciprocally exchanging the new memory before the action tests its contribution with the old memory fixed.
+- **Rests on it.** The size and direction of a training effect, the stock classification and survival apply to this cue set, update, controller, action budget, game and start weighting.
+- **Challenge.** Examine actual identical full transcripts, force a known fixed cue, disable credit, scramble public feedback, exchange only the second memory, and erase it. A different set of cues or earlier observations could separate other histories.
+  Deriving the candidate predicates, apparatus, exploration and credit from ordinary growth remains open.
+- **History.**
+  - 2026-11-21 · A second bounded comparison. The prior-menu agreement guard prevented a certified empty return from voting on any original current-only training game. Preserve the first comparison. Remove that single guard only on the certified return. Keep the old physical memory, earlier predicates, credit and readout, add controls that count opportunities without feedback and draw new disjoint structural folds. [Separate prospective comparison](../research/SECOND-FEEDER-CUE-20261121-001/return_cue/preregistration.md)
+  - 2026-11-21 · Opened for the [first four-cue fit](../research/SECOND-FEEDER-CUE-20261121-001/preregistration.md).

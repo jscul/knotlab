@@ -251,6 +251,8 @@ evidence: results and their status come from the records each entry links.
 | [A193](#a193--give-the-announcement-writer-the-four-recorded-erasure-signs) | Give the announcement writer the four recorded erasure signs | scaffold | Assumed |
 | [A194](#a194--send-the-erasure-message-before-the-sibling-record-is-known) | Send the erasure message before the sibling record is known | scaffold | Assumed |
 | [A195](#a195--give-the-three-nonfocal-siblings-a-writable-keeper-before-reader-settings) | Give the three nonfocal siblings a writable keeper before reader settings | scaffold | Assumed |
+| [A196](#a196--finite-intrinsic-readings-for-recognizing-four-recorded-constructions) | Finite intrinsic readings for recognizing four recorded constructions | scaffold | Assumed |
+| [A197](#a197--count-newly-reproduced-later-behaviors-under-a-charged-search) | Count newly reproduced later behaviors under a charged search | scaffold | Assumed |
 
 ## Entries
 
@@ -4629,3 +4631,24 @@ evidence: results and their status come from the records each entry links.
   - 2026-11-21 · Opposite guarded permutations at the three nonfocal children convey their own paid values through actual changes on mixed triples. The supplied receiver is capable of the sharp nonfocal 1/7 not-all-equal rate on prepared launches. With its schedule still live but all sibling motions unplugged, only 14 of the 4802 successful source words still write. The separate raw fair and lawful-joined readiness costs are part of this scaffold. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
   - 2026-11-21 · Opened for the [guarded paid-value keeper](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001D/preregistration.md) after [independent prospective review](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/advisor_reviews.json).
 
+### A196 · Finite intrinsic readings for recognizing four recorded constructions
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Give each recorded construction and each selected root equal weight. Estimate dimension using the number of distinctions within a given number of meeting steps. Read a local three-order pattern from how neighboring knots meet, and test the two candidate limiting shapes using four-point comparisons and the error of a two-dimensional distance fit over finite samples. Record a bounded bond only on a pair with a sound witness.
+- **Why.** Each reading has an intrinsic input, a tested reference and an explicit condition for an inconclusive answer. The choice of roots, scales, admissible comparisons and numerical cutoffs is supplied for the blind experiment.
+- **Rests on it.** The finite blind calls and their coverage on the four recorded constructions. See the [pre-registration](../research/GROWTH-STATISTICS-20261121-001/preregistration.md).
+- **Challenge.** Swap bond distance for meeting steps on the same samples, apply both to explicit reference distances, and test new roots or a midpoint reading. Only a new observation or proof can establish agreement beyond the sampled scales. The model supplies the relations and the meetings. A recognizer continues to supply its reading.
+- **History.**
+  - 2026-11-21 · Opened before unblinding the finite test.
+
+### A197 · Count newly reproduced later behaviors under a charged search
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Compare independent lawful starts with a search that retains distinct early readings and edits its starts. Judge both by later changes in births and parent counts that were absent from an independent reference sample and recur on different starting holdings. Charge selection, unsuccessful trials and verification under a declared budget.
+- **Why.** This lets a combination be discovered without naming it in advance and gives both arms the same opportunity. Which distinctions an observer records, the reference sample, the founding weights and the work unit all affect measured yield.
+- **Rests on it.** The search comparison and the interpretation of its fresh-case feature test under the two ordinary laws. See the [pre-registration](../research/GROWTH-STATISTICS-20261121-001/preregistration.md).
+- **Challenge.** Compare independent and adaptive sampling, compare equal computation with a common number of completed attempts, and check a later prediction on withheld starts under declared weights. Alternative readings could discover behavior this one misses. Growth provides the births. The experiment supplies the discovery criterion.
+- **History.**
+  - 2026-11-21 · Opened during design, before the search sample was run.

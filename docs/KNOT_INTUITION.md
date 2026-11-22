@@ -7789,6 +7789,8 @@ So holes come in two kinds:
      it, a repetition of period four
      ([decision note](../research/RANDOM-FATES-20261112-001/random_fates.md)).
 
+   **2026-11-21. Recognizing shapes blind.** At three anonymous roots apiece, the same-dimension polygonal control and the source with a bounded bond across many meeting steps were recognized every time. The cubic and round-limit pinwheel roots all drew abstentions. The four-point bond readings separated the pinwheel and control at the largest observed scale even though the frozen rule could affirm only the polygonal shape. The dimension reading made a separate error on a cubic root. Under a declared weighting of four to six starting knots, independent draws reproduced more kinds of later behavior per run at equal cost than retaining distinct early behavior and editing its starts, under parity and under not-all-equal. Two four-knot starts with five births in each of the first two rounds gave three and four births in the third. [Blind recognition and matched search](../research/GROWTH-STATISTICS-20261121-001/decision.md)
+
 10. **Competition. Mapped on 2026-10-19, not decided.** Pairwise rules that
     must all hold never make a knot, but pairwise preferences that cannot all
     hold leave knots among their least-violation states ("Knots from

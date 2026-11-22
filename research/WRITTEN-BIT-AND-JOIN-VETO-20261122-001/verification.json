@@ -1,0 +1,933 @@
+{
+  "all_preguard_words_rosters_deviations_and_final_factors_match": true,
+  "canonical_projected_knot_relations": {
+    "nae-3": [
+      "001",
+      "010",
+      "011",
+      "100",
+      "101",
+      "110"
+    ],
+    "nae-4": [
+      "0001",
+      "0010",
+      "0011",
+      "0100",
+      "0101",
+      "0110",
+      "0111",
+      "1000",
+      "1001",
+      "1010",
+      "1011",
+      "1100",
+      "1101",
+      "1110"
+    ],
+    "parity-3": [
+      "000",
+      "011",
+      "101",
+      "110"
+    ],
+    "parity-4": [
+      "0000",
+      "0011",
+      "0101",
+      "0110",
+      "1001",
+      "1010",
+      "1100",
+      "1111"
+    ]
+  },
+  "compared_replay_sha256": "279d6e649aa66123bba3939c21459b4778c8b53ed237da5cf6c89b104846bd54",
+  "complete_star_projections": {
+    "nae": 131,
+    "parity": 91
+  },
+  "controls": {
+    "nae-lex-ordinary-diverted": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 2
+      },
+      "terminal": {
+        "absent": 2
+      }
+    },
+    "nae-lex-ordinary-quiet": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 1
+      },
+      "terminal": {
+        "absent": 1
+      }
+    },
+    "nae-lex-ordinary-signal": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 2
+      },
+      "terminal": {
+        "absent": 2
+      }
+    },
+    "nae-lex-veto-diverted": {
+      "actual_births": {
+        "('join', 3, 10)": 2
+      },
+      "example": {
+        "join": {
+          "actual": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "final_parents": [
+            [
+              4,
+              5
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ]
+          ],
+          "holdings": [
+            [
+              3,
+              9,
+              10
+            ],
+            [
+              4,
+              11,
+              12
+            ]
+          ],
+          "paid_at_decision": [
+            [
+              9,
+              11
+            ],
+            [
+              17,
+              19
+            ],
+            [
+              10
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              18
+            ],
+            [
+              20
+            ]
+          ],
+          "reference": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "target": [
+            4,
+            5
+          ],
+          "writer_bank": [
+            3,
+            4
+          ]
+        }
+      },
+      "guard_deviations": {
+        "0 carried, 0 companions": 2
+      },
+      "predecision": {
+        "join": 2
+      },
+      "terminal": {
+        "join": 2
+      }
+    },
+    "nae-lex-veto-quiet": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 1
+      },
+      "terminal": {
+        "absent": 1
+      }
+    },
+    "nae-lex-veto-signal": {
+      "actual_births": {
+        "('veto', 4, 10)": 2
+      },
+      "example": {
+        "veto": {
+          "actual": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "final_parents": [
+            [
+              6,
+              7
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ]
+          ],
+          "holdings": [
+            [
+              3,
+              9,
+              10
+            ],
+            [
+              4,
+              11,
+              12
+            ]
+          ],
+          "paid_at_decision": [
+            [
+              13,
+              15
+            ],
+            [
+              17,
+              19
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              14
+            ],
+            [
+              16
+            ],
+            [
+              18
+            ],
+            [
+              20
+            ]
+          ],
+          "reference": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "target": [
+            4,
+            5
+          ],
+          "writer_bank": [
+            3,
+            4
+          ]
+        }
+      },
+      "guard_deviations": {
+        "1 carried, 0 companions": 2
+      },
+      "predecision": {
+        "veto": 2
+      },
+      "terminal": {
+        "veto": 2
+      }
+    },
+    "nae-opposite-ordinary-diverted": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 4
+      },
+      "terminal": {
+        "absent": 4
+      }
+    },
+    "nae-opposite-ordinary-quiet": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 1
+      },
+      "terminal": {
+        "absent": 1
+      }
+    },
+    "nae-opposite-ordinary-signal": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 4
+      },
+      "terminal": {
+        "absent": 4
+      }
+    },
+    "nae-opposite-veto-diverted": {
+      "actual_births": {
+        "('join', 3, 11)": 16
+      },
+      "example": {
+        "join": {
+          "actual": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "final_parents": [
+            [
+              4,
+              5
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              9
+            ]
+          ],
+          "holdings": [
+            [
+              3,
+              9,
+              10
+            ],
+            [
+              4,
+              11,
+              12
+            ]
+          ],
+          "paid_at_decision": [
+            [
+              9,
+              11
+            ],
+            [
+              10
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ]
+          ],
+          "reference": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "target": [
+            4,
+            5
+          ],
+          "writer_bank": [
+            3,
+            4
+          ]
+        }
+      },
+      "guard_deviations": {
+        "0 carried, 0 companions": 16
+      },
+      "predecision": {
+        "join": 16
+      },
+      "terminal": {
+        "join": 64
+      }
+    },
+    "nae-opposite-veto-quiet": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 1
+      },
+      "terminal": {
+        "absent": 1
+      }
+    },
+    "nae-opposite-veto-signal": {
+      "actual_births": {
+        "('veto', 4, 11)": 16
+      },
+      "example": {
+        "veto": {
+          "actual": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "final_parents": [
+            [
+              6,
+              7
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              9
+            ]
+          ],
+          "holdings": [
+            [
+              3,
+              9,
+              10
+            ],
+            [
+              4,
+              11,
+              12
+            ]
+          ],
+          "paid_at_decision": [
+            [
+              13,
+              15
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              14
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ]
+          ],
+          "reference": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "target": [
+            4,
+            5
+          ],
+          "writer_bank": [
+            3,
+            4
+          ]
+        }
+      },
+      "guard_deviations": {
+        "1 carried, 1 companions": 16
+      },
+      "predecision": {
+        "veto": 16
+      },
+      "terminal": {
+        "veto": 64
+      }
+    },
+    "parity-zero-ordinary-diverted": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 4
+      },
+      "terminal": {
+        "absent": 4
+      }
+    },
+    "parity-zero-ordinary-quiet": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 1
+      },
+      "terminal": {
+        "absent": 1
+      }
+    },
+    "parity-zero-ordinary-signal": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 4
+      },
+      "terminal": {
+        "absent": 4
+      }
+    },
+    "parity-zero-veto-diverted": {
+      "actual_births": {
+        "('join', 3, 11)": 16
+      },
+      "example": {
+        "join": {
+          "actual": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "final_parents": [
+            [
+              4,
+              5
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              9
+            ]
+          ],
+          "holdings": [
+            [
+              3,
+              9,
+              10
+            ],
+            [
+              4,
+              11,
+              12
+            ]
+          ],
+          "paid_at_decision": [
+            [
+              9,
+              11
+            ],
+            [
+              10
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ]
+          ],
+          "reference": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target": [
+            4,
+            5
+          ],
+          "writer_bank": [
+            3,
+            4
+          ]
+        }
+      },
+      "guard_deviations": {
+        "0 carried, 0 companions": 16
+      },
+      "predecision": {
+        "join": 16
+      },
+      "terminal": {
+        "join": 64
+      }
+    },
+    "parity-zero-veto-quiet": {
+      "actual_births": {},
+      "example": {},
+      "guard_deviations": {},
+      "predecision": {
+        "absent": 1
+      },
+      "terminal": {
+        "absent": 1
+      }
+    },
+    "parity-zero-veto-signal": {
+      "actual_births": {
+        "('veto', 4, 11)": 16
+      },
+      "example": {
+        "veto": {
+          "actual": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "final_parents": [
+            [
+              6,
+              7
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              9
+            ]
+          ],
+          "holdings": [
+            [
+              3,
+              9,
+              10
+            ],
+            [
+              4,
+              11,
+              12
+            ]
+          ],
+          "paid_at_decision": [
+            [
+              13,
+              15
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              14
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ]
+          ],
+          "reference": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target": [
+            4,
+            5
+          ],
+          "writer_bank": [
+            3,
+            4
+          ]
+        }
+      },
+      "guard_deviations": {
+        "1 carried, 1 companions": 16
+      },
+      "predecision": {
+        "veto": 16
+      },
+      "terminal": {
+        "veto": 64
+      }
+    }
+  },
+  "distinct_static_boards": 18
+}

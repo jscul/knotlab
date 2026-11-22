@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**402 current results** and 5 superseded ones, from 610 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**402 current results** and 5 superseded ones, from 611 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 610 epics with their closures
+- [Epics](#epics): all 611 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1959,4 +1959,5 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-22 | Do three equal sibling payments initiate a separate record? (`THREE-SIBLING-PAID-EVENT-20261122-001`) | [closure](proofs/THREE-SIBLING-PAID-EVENT-20261122-001Z/THREE-SIBLING-PAID-EVENT-20261122-001Z-P001_synthesis/proof.md) | [folder](research/THREE-SIBLING-PAID-EVENT-20261122-001/) |
 | 2026-11-22 | Can a receiver distinguish two sends, and can growth supply a working keeper? (`TWO-SENDS-AND-GROWN-KEEPERS-20261122-001`) | [closure](proofs/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001Z/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001Z-P001_synthesis/proof.md) | [folder](research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001/) |
 | 2026-11-22 | Can varied drawings teach an unseen letter rotation? (`VARIED-LETTER-DRAWINGS-20261122-001`) | — | [folder](research/VARIED-LETTER-DRAWINGS-20261122-001/) |
+| 2026-11-22 | Can a freshly recorded bit block a later join? (`WRITTEN-BIT-AND-JOIN-VETO-20261122-001`) | [closure](proofs/WRITTEN-BIT-AND-JOIN-VETO-20261122-001Z/WRITTEN-BIT-AND-JOIN-VETO-20261122-001Z-P001_synthesis/proof.md) | [folder](research/WRITTEN-BIT-AND-JOIN-VETO-20261122-001/) |
 

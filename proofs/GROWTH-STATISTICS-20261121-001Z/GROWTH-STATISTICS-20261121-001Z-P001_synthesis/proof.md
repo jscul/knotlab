@@ -1,0 +1,7 @@
+# Ledger of two experiments on knot growth
+
+- **Finite recognition benchmark.** Six of twelve combined calls were correct. Six abstained, leaving the cubic and round-limit examples unidentified. The separate dimension reading made one error and abstained twice. [All calls against the key](../../../experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/result.md)
+- **Decision about search at fixed cost.** Independent sampling reproduced more distinct later behaviors per run under each law. Both policies eventually recovered the same types. The result is conditional on the founding weights, reading and budget. [Paired search comparison](../../../experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/result.md)
+- **Replayed example and held-back prediction.** Two four-knot starts with the same first two birth counts differed on their third. The loose-count predictor reversed this pair and agreed on all three fresh unequal pairs. The smallest type absent from the finite reference also recovers a known recurring pair. [Literal witnesses and fresh census](../../../experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/result.md)
+
+This ledger contributes zero scientific sources. Each experiment retains authority for its results. [Independent review](../../../research/GROWTH-STATISTICS-20261121-001/review.md)

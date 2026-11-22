@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-STATISTICS-20261121-001B-E001",
+  "gate": "run_authorization",
+  "tier": "R1",
+  "reviewer_independence": "separate_implementation_lane",
+  "attack_plan_frozen_before_results": true,
+  "reviewed_utc": "2026-11-22 04:30:45 UTC",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+      "sha256": "6dac6c6fa68d2ce8d35a72fdccc89d4803d68795c76cd42fe8230ad75ea3a210"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/R0/B/red_team_report.json",
+      "sha256": "af1e20b26fdee45b1a78e48eafdcd418e6198075a9cdf578e9d8a6f1368b1882"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json",
+      "sha256": "7ffe44cd2fa0d99edbf80d9086d65e7e14286b12bf5c0ea17b243354a0d3b714"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/development-16384/results.jsonl.gz",
+      "sha256": "462dd50dc05aa73d419a6ffe6236a3ede8f51de0c10ce3292c926da0909b4f60"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/development-16384-summary.json",
+      "sha256": "b7668dba540c105519d4b37d8494822e0dae5fbeb6baf9959fe5d26f385e218f"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "B-R1-1",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "The sealed run could execute a different law or unofficial comparison.",
+      "method": "Recomputed all 38 source hashes of frozen contract 6dac6c6fa68d2ce8d35a72fdccc89d4803d68795c76cd42fe8230ad75ea3a210. The shared runner verifies Python/package versions and the code/contract digest. Missing R1 was rejected on a direct no-execution trial.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/job.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-2",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Adaptive choices might use later growth, reference membership or reserved outcomes.",
+      "method": "Inspected proposal, archive and scorer interfaces. Mutating all observations after the second round and changing a terminal status after that cut left the early reading unchanged on the fixed positive fixture. Source calibration and late-read collection are unavailable to the proposal routine.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/growth.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-3",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Renamed or known public starts could contaminate the held-back population or serve as two witnesses.",
+      "method": "Checked canonical coloring/incidence encoding, exact rejection of three public reference codes, modulo-five partition and per-arm duplicate rejection. The additional feature is tested on residue four only after a completed search summary. The independent symmetry count gives 864 pre-split identities.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/source.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/validation.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/job.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-4",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Timing and reference privilege might favor either arm.",
+      "method": "Both arms pay for selection, proposed sources, exact dual-law eligibility, growth, later readings and separate verification. Independent sampling shares the first proposal and the same admission/caps; execution order is randomized. Secondary replay clips at the smaller completed proposal count and repeats verification.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/development-16384/results.jsonl.gz"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-5",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "The compressed logs might lose data, or literal replay might fail on serialized extra meetings.",
+      "method": "Independently decompressed the development ledger and compared all 21,748,154 bytes to its source. A fixed out-of-family extra-meeting founder survived JSON roundtrip through from_record and retained its canonical identity. Candidate verification rechecks literal holdings under renamed identities; raw attempts include eligibility and timing.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/development-16384/results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/development-16384-summary.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/growth.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/source.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-6",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A repeat of one representation or a random signature outside a small dictionary might be called a new regime.",
+      "method": "Distinct canonical founders within each run, still live through round five, with identical absent late signatures are required. Interpreted only relative to the frozen dictionary of 8 parity and 10 not-all-equal signatures from 128 admitted in 623 attempts plus public references.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001B/design.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-7",
+      "category": "resource_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A proposal count limit or uncharged archive bookkeeping could effectively give different CPU budgets.",
+      "method": "Independently reconciled all 40 final development arms: each had exactly 80,000,000 ns search/50,000,000 ns verification, reached the CPU boundary, and its eligible rows totaled its claimed completions. The rejected earlier 2,048 ceiling was raised symmetrically before freeze to 16,384; secondary verification is explicitly charged outside the primary allowance.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/development-16384/results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/development-16384-summary.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-8",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Hundreds of proposals or reused validation pairs could masquerade as independent replications.",
+      "method": "The primary unit is one paired run, 48 per law, with paired contrast and two-law multiplicity control. Finite reserve uses the product of founder masses within matched pairs and exact counting. Independently verified total base probability one and one sixth in each size/type stratum by symmetry counting.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001B/design.md",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/validation.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/summarize.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-9",
+      "category": "representation_robustness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Arbitrary labels or a different serialization might change discovery credit.",
+      "method": "Exact permutation-minimization defines founder identity, bounded edits are re-qualified, and independent literal replay rebuilds holder and distinction names. Checked a frozen extra-meeting fixture after JSON serialization. Different mothers producing the same unlabelled source never provide independent witnesses.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/source.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/growth.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R1-10",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "More cheap duplicate proposals, cap censoring, or known single-birth continuations might create apparent diversity gains.",
+      "method": "The design reports failures, repeated proposals, literal replay coverage, known closures, number of complete trajectories and a common-count sensitivity. The open-ended component is a finite fingerprint with a frozen reference; no new vocabulary selected after the run enters the score.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/summarize.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "R1 authorizes the exact bounded execution only after the coordinating task confirms the Stage A prerequisite and releases Stage B. The fresh validation requires a complete search summary.",
+    "Process CPU is held fixed; completed proposal counts can vary across machines and are reported. CPU-limited outcomes do not guarantee a method advantage on other budgets."
+  ]
+}

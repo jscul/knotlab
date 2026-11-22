@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-STATISTICS-20261121-001B-E001",
+  "gate": "contract_freeze",
+  "tier": "R0",
+  "reviewer_independence": "separate_implementation_lane",
+  "attack_plan_frozen_before_results": true,
+  "reviewed_utc": "2026-11-22 04:29:45 UTC",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+      "sha256": "6dac6c6fa68d2ce8d35a72fdccc89d4803d68795c76cd42fe8230ad75ea3a210"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001B/design.md",
+      "sha256": "05e243c14b02463bd2603d8c0a83c92df4ddd222a5aebbce126590c2f1845483"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json",
+      "sha256": "7ffe44cd2fa0d99edbf80d9086d65e7e14286b12bf5c0ea17b243354a0d3b714"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/preregistration.md",
+      "sha256": "a67c021ea99f03c824347a68cf1d8c646aa0f60ecce7272d5243097ed9fb2598"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "B-R0-1",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Reproducing an unlisted coarse signature could be mistaken for discovering a new mathematical regime.",
+      "method": "Bound five-round late signatures, accepted source family, separate laws and scored pair definition. The prior reference and larger parity census qualify every claim of discovery.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001B/design.md",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R0-2",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "The diversity selector could rely on future growth or the scoring dictionary.",
+      "method": "The archive's bin uses only the first two completed rounds. The scorer separately uses later rounds, novelty dictionary and independent physical replay. Neither state nor reserve results feed into another search.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/growth.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R0-3",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Different encodings of one founder could occur in development and validation or count twice.",
+      "method": "The physical founder encoding canonically quotients knot/bit names before modulo-five partition. The three public founders are excluded at admission, each run excludes duplicate founders, and a different reserved partition supplies the additional-feature test.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/source.py",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R0-4",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Adaptive selection could get free screenings, different lawful sources, a larger budget or an easier discovery criterion.",
+      "method": "The same admission, earlier observations, CPU/proposal/size ceilings, per-law reference and literal verification apply to both arms. Each pair shares the first proposal only. Refusals, duplicates, and boundary work consume time. The paired common-count sensitivity repeats verification under an additional equally sized budget.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001B/design.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R0-5",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A proxy oracle or post-hoc signature choice could supply the result.",
+      "method": "A five-round sign and arity signature admits every combination of fixed fields. Two distinct founders within each repeat must reproduce through literal holdings. The optional collision has an independent reserved-source count, covers abstentions and reversals, and its direction is frozen now.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001B/design.md",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/growth.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/validation.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "This is a finite discovery criterion relative to a reference of 128 lawful independent development draws plus fixed public controls. A qualifying signature is not a new law or an unprecedented object.",
+    "Passing R0 freezes the scientific comparison and leaves the sealed-run check to R1."
+  ]
+}

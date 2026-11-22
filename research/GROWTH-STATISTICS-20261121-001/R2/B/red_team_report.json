@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-STATISTICS-20261121-001B-E001",
+  "gate": "promotion",
+  "tier": "R2",
+  "reviewer_independence": "separate_implementation_lane",
+  "attack_plan_frozen_before_results": true,
+  "reviewed_utc": "2026-11-22 04:40:00 UTC",
+  "input_digests": [
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/R1/B/red_team_report.json",
+      "sha256": "22886390c30beea3c3026468d5612ab9519877c5d5db324315fab6978fe50854"
+    },
+    {
+      "path": "../../../../experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+      "sha256": "6dac6c6fa68d2ce8d35a72fdccc89d4803d68795c76cd42fe8230ad75ea3a210"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json",
+      "sha256": "7ffe44cd2fa0d99edbf80d9086d65e7e14286b12bf5c0ea17b243354a0d3b714"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+      "sha256": "60da279e77331f584b72d888c8636ce555ea16a51f82735d1bd091194a050224"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json",
+      "sha256": "af515fce634dcd79a0bded923b4e216af5f7c46fa6eef06df22635dbbd83ba40"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/sealed-validation/results.jsonl",
+      "sha256": "97faa41b7999d2855f8cde341004db43da839f90667619a185a05aabfb91d027"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/review.md",
+      "sha256": "19632cfdfebf0d32c535f01c08cea824057c93e891c1a797ad0c1786248aab85"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "B-R2-1",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A bounded reference omission could be labeled a new growth regime or an unrestricted search advantage.",
+      "method": "Checked the finite laws, five-round signature definition, 48 pairs per law, covered founder population, prior wider census, and reported physical witness. The constant four-birth type repeats the same reduced growth on two different physical founders; reference absence does not establish new mathematics.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "research/GROWTH-STATISTICS-20261121-001/review.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-2",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Calibration or reserved founders could influence a production score or proposed feature.",
+      "method": "Verified that every evaluated founder's physical code maps to search residues 1–3, no known public founder was scored, every validation founder maps to residue 4, and the actual compared late fields reproduce from raw growth. Different source, common reference and no feedback apply.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/sealed-validation/results.jsonl",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-3",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Repeated names, a reused founder or reused held-out pair could inflate evidence.",
+      "method": "Verified unique legal grown founders within every arm and 156 distinct held-out physical starts in each law. Every scored pair is two distinct founders; all three informative fresh pairs were the same across laws and used just five distinct founders.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/sealed-validation/results.jsonl"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-4",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Equal clock ceilings could conceal different kinds of attempts or permit uncharged curation.",
+      "method": "Reconstructed both frozen analyses. Adaptive W/T/L at fixed allowances were 8/13/27 parity and 6/12/30 not-all-equal. Matched completed raw attempts gave 2/5/41 and 2/9/37. Shared first proposals, the verification evidence and cutoffs separately matched the raw ledger.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-5",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Compression, postprocessing or unchecked scoring events could change the decisive outcomes.",
+      "method": "Independently streamed the public gzip raw records, checked decompressed SHA-256 against the frozen summary, all 96 case identities, exact witness/round equality, distinctness, prefix positions, event rank and later signatures regenerated from complete rounds.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/calibration.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-6",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A good third-count feature in a handful of comparable fresh cases might determine growth.",
+      "method": "Out of 156 founders per law, only 22 parity and 23 not-all-equal founders reached the third count. Five of 12,090 pairs matched the early reading per law; two had equal third counts and three supported the feature. Replayed the smallest search collision 5,5,3 versus 5,5,4, which reverses the proposed sign (8 versus 7 loose).",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/sealed-validation/results.jsonl",
+        "research/GROWTH-STATISTICS-20261121-001/review.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-7",
+      "category": "resource_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "The fixed-CPU advantage might simply persist per distinct growth evaluation.",
+      "method": "A post-hoc explanatory comparison matched distinct lawful starts actually grown (including stalls) within every pair and required two literal-replayed attempts inside each prefix. For all 192 arms, every repeated qualifying signature had such a pair. At 6,952 founders per arm summed over parity it gave adaptive 140 versus independent 131; at 6,866 under not-all-equal it gave 107 versus 113. Both primary verification allowances were available to each policy, though unused time differed.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "research/GROWTH-STATISTICS-20261121-001/review.md",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-8",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Repeat-level uncertainty, multiple laws or reused validation observations might be aggregated incorrectly.",
+      "method": "Recomputed exact sign-test tails, Holm multiplicity adjustment, exact 95% binomial intervals for any verified signature, and all four 10,000-bootstrap intervals over whole paired runs. Random-minus-adaptive means are 0.75 parity (interval 0.396–1.104) and 0.792 not-all-equal (0.458–1.125); Holm p=0.001878 and 0.000139. Recomputed the 312 colored-founder masses and exact fresh pair mass ratio 135179280/54638738321.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/sealed-validation/results.jsonl",
+        "research/GROWTH-STATISTICS-20261121-001/review.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-9",
+      "category": "representation_robustness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A presentation-specific founding code or replay order could generate the smallest counterexample.",
+      "method": "Reconstructed the minimal finite witness source holdings from decoded canonical incidence and loose counts, independently of the stored Prüfer token representation. Recovered their codes exactly and replayed the separately renamed literal holdings under both laws. The five-round constant counts and both third-birth differences matched.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/growth.py",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/source.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-10",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Apparent discovery per CPU could be mistaken for a benefit of the number of distinct evaluated founders, or for uniform evidence of mechanism.",
+      "method": "Adaptive duplicates reached 36,073 of 67,208 completed attempts under parity and 35,298 of 66,946 under not-all-equal. Independent duplicates were 12,975/36,549 and 12,897/35,999. After the post hoc equal-founder restriction the sign differed between laws. Treat this as a throughput explanation and keep the fixed-budget result primary.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "research/GROWTH-STATISTICS-20261121-001/review.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-11",
+      "category": "independent_replay",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "The results could be reproduced only by the authors' postprocessing.",
+      "method": "Used independent code for every primary score, its law-wise and matched-count contrast, raw minimal witness rank and fresh feature. Rebuilt the colored symmetry masses, applied all pairwise comparisons from raw founders, and verified input-to-third-birth accounting. Repeated the minimum witnesses with the public physical replay engine.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/sealed-validation/results.jsonl",
+        "research/GROWTH-STATISTICS-20261121-001/review.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-12",
+      "category": "adversarial_mutation",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A forged late signature or incorrect physical replay could silently earn discovery credit.",
+      "method": "Two separate in-memory mutations of an actual sealed-arm record changed a late signature and a literal replay's first birth count. The frozen scoring path rejected both with distinct mismatch errors. The R1 future-input mutation had also left the early selector invariant.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-results.jsonl.gz",
+        "experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/summarize.py",
+        "research/GROWTH-STATISTICS-20261121-001/R1/B/red_team_report.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "B-R2-13",
+      "category": "claim_scope",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "An earlier source population or an exploratory normalized comparison could be mistaken for a newly confirmed general result.",
+      "method": "The referee re-ran all preregistered object searches, the objects gate, and a differently worded search. Earlier one-extra-meeting and tree-closure records concern subsets of the founder population and a different outcome. The fixed-budget random-search win is reportable for these laws, weights and quotas, the equal-founder diagnostic remains post hoc, and the smallest signature repeats a known mechanism.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/preregistration.md",
+        "research/GROWTH-STATISTICS-20261121-001/review.md",
+        "artifacts/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/search-summary.json",
+        "research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001B/one_meeting.md",
+        "research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/tree_proof.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "Promotion applies to the frozen finite CPU/attempt comparisons and recorded small counterexample. No superiority on all search spaces, budgets or sampling weights follows.",
+    "The three informative fresh founder pairs repeat across the two laws and cannot support six independent successes. The extra loose count is not universally directional.",
+    "Equal-founder throughput matching was chosen after the results; it explains part of the observed cost difference and does not replace the primary endpoint."
+  ]
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**401 current results** and 5 superseded ones, from 593 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**402 current results** and 5 superseded ones, from 594 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -24,14 +24,14 @@ How to read an entry:
 - [Composing like cycles: the algebra of knots](#composing-like-cycles-the-algebra-of-knots): 14 results
 - [Native complexity: hubs, counting and approximation](#native-complexity-hubs-counting-and-approximation): 56 results
 - [Three-fold spaces and counting on them](#three-fold-spaces-and-counting-on-them): 32 results
-- [Native creation, genus and selection](#native-creation-genus-and-selection): 116 results
+- [Native creation, genus and selection](#native-creation-genus-and-selection): 117 results
 - [Space from a law: moves, signs, gaskets, rulers and circles](#space-from-a-law-moves-signs-gaskets-rulers-and-circles): 38 results
 - [Tori, twists and direction](#tori-twists-and-direction): 14 results
 - [Counting maps from three-manifold groups](#counting-maps-from-three-manifold-groups): 31 results
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 593 epics with their closures
+- [Epics](#epics): all 594 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -951,6 +951,9 @@ What a removal creates in the knot's spaces, how far it reaches, and how selecti
 - **2026-11-20 · Visible readiness separates equal fixed-address marginals from non-signalling under all local edits** (`WHOLE-STAGE-SETTINGS-20261120-001-D001`).
   For a visible ordinary funding decision requiring both local repairs, a sender who knows its own readiness can signal whenever changing its edit affects funding on positive probability at a fixed receiver setting. If neither party can signal under any local edit policy, funding is independent of the settings almost surely and conditionally local readings obey the Bell bound.
   [proof P001](proofs/WHOLE-STAGE-SETTINGS-20261120-001A/WHOLE-STAGE-SETTINGS-20261120-001A-P001_local_records/proof.md), [epic closure](proofs/WHOLE-STAGE-SETTINGS-20261120-001Z/WHOLE-STAGE-SETTINGS-20261120-001Z-P001_synthesis/proof.md)
+- **2026-11-21 · Independent starts reproduce more kinds of later growth at equal cost** (`GROWTH-STATISTICS-20261121-001-D001`).
+  On the tested weighting of four to six starting knots, independent draws reproduced more kinds of later behavior per run at the same CPU allowance than retaining distinct early readings and editing their starts. Under parity and not-all-equal, both searches eventually recovered the same set of kinds.
+  [experiment E001](experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/result.md), [epic closure](proofs/GROWTH-STATISTICS-20261121-001Z/GROWTH-STATISTICS-20261121-001Z-P001_synthesis/proof.md)
 
 ## Space from a law: moves, signs, gaskets, rulers and circles
 
@@ -1925,6 +1928,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can ordinary whole-stage funding or closing respond to two free local edits without signalling? (`WHOLE-STAGE-SETTINGS-20261120-001`) | [closure](proofs/WHOLE-STAGE-SETTINGS-20261120-001Z/WHOLE-STAGE-SETTINGS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/WHOLE-STAGE-SETTINGS-20261120-001/) |
 | 2026-11-21 | A current ancestor after the finite third ends (`ACTIVE-ANCESTOR-RECEIPT-20261121-001`) | [closure](proofs/ACTIVE-ANCESTOR-RECEIPT-20261121-001Z/ACTIVE-ANCESTOR-RECEIPT-20261121-001Z-P001_synthesis/proof.md) | [folder](research/ACTIVE-ANCESTOR-RECEIPT-20261121-001/) |
 | 2026-11-21 | Erasing the record of a change and signing a closing knot (`ERASURE-AND-CLOSING-SIGNS-20261121-001`) | [closure](proofs/ERASURE-AND-CLOSING-SIGNS-20261121-001Z/ERASURE-AND-CLOSING-SIGNS-20261121-001Z-P001_synthesis/proof.md) | [folder](research/ERASURE-AND-CLOSING-SIGNS-20261121-001/) |
+| 2026-11-21 | Recognizing and discovering patterns in knot growth (`GROWTH-STATISTICS-20261121-001`) | [closure](proofs/GROWTH-STATISTICS-20261121-001Z/GROWTH-STATISTICS-20261121-001Z-P001_synthesis/proof.md) | [folder](research/GROWTH-STATISTICS-20261121-001/) |
 | 2026-11-21 | An idle exchange and exact closure probabilities for trees (`IDLE-PHASE-AND-TREE-CLOSURE-20261121-001`) | [closure](proofs/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001Z/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001Z-P001_synthesis/proof.md) | [folder](research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/) |
 | 2026-11-21 | Knot counts and one extra meeting (`KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001`) | [closure](proofs/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001Z/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001Z-P001_synthesis/proof.md) | [folder](research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/) |
 | 2026-11-21 | A clock’s last distinction and two private sender returns (`LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001`) | [closure](proofs/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001Z/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001Z-P001_synthesis/proof.md) | [folder](research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001/) |

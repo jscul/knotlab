@@ -1,0 +1,369 @@
+{
+  "enumeration": {
+    "cpu_ns": 65982911,
+    "wall_ns": 65992539
+  },
+  "partition_masses": {
+    "development": [
+      10591,
+      51840
+    ],
+    "search": [
+      24337,
+      38400
+    ],
+    "validation": [
+      167881,
+      1036800
+    ]
+  },
+  "public_reference_exclusions": {
+    "[5,[2,2,2,2,2],220]": [
+      1,
+      2400
+    ]
+  },
+  "raw_bytes": 191654,
+  "raw_sha256": "97faa41b7999d2855f8cde341004db43da839f90667619a185a05aabfb91d027",
+  "reserve_count": 156,
+  "shared_runner": {
+    "attempt": 1,
+    "case": "validation",
+    "error": null,
+    "finished_at": "2026-11-22T04:32:11.178+00:00",
+    "job_sha": "853f252d05a2793c182afcabc0f006c64e25ed4e5e859f8f120145e54dc6101d",
+    "peak_rss_mb": 35.244140625,
+    "seconds": 0.13923170600901358,
+    "status": "ok",
+    "worker": 886236
+  },
+  "shared_setup_once": {
+    "authorization": {
+      "r1_sha256": "22886390c30beea3c3026468d5612ab9519877c5d5db324315fab6978fe50854",
+      "search_summary_sha256": "af515fce634dcd79a0bded923b4e216af5f7c46fa6eef06df22635dbbd83ba40"
+    },
+    "import_cpu_ns": 77504958,
+    "import_wall_ns": 77522308,
+    "laws": {
+      "nae/3": 6,
+      "nae/4": 14,
+      "nae/5": 30,
+      "nae/6": 62,
+      "parity/3": 4,
+      "parity/4": 8,
+      "parity/5": 16,
+      "parity/6": 32
+    },
+    "mode": "validation",
+    "warmup_cpu_ns": 95181627,
+    "warmup_wall_ns": 95194271
+  },
+  "summary": {
+    "nae": {
+      "accuracy_given_distinct_and_called": [
+        1,
+        1
+      ],
+      "accuracy_half_credit_abstentions": [
+        1,
+        1
+      ],
+      "completed_rounds_at_least": {
+        "1": 23,
+        "2": 23,
+        "3": 23
+      },
+      "count": {
+        "birth_tied": 2,
+        "both_tied": 0,
+        "concordant": 3,
+        "loose_tied": 0,
+        "reverse": 0
+      },
+      "coverage_given_distinct": [
+        1,
+        1
+      ],
+      "disjoint_hash_pair_counts": [
+        {
+          "birth_tied": 1,
+          "concordant": 2
+        },
+        {
+          "birth_tied": 2,
+          "concordant": 1
+        },
+        {
+          "birth_tied": 1,
+          "concordant": 2
+        },
+        {
+          "birth_tied": 2,
+          "concordant": 1
+        }
+      ],
+      "first_reversed_pair": null,
+      "lawful_sources": 156,
+      "matched_by_stratum": {
+        "4/3/1": {},
+        "4/4/3": {},
+        "4/6/6": {},
+        "4/6/8": {},
+        "4/7/9": {},
+        "5/5/4": {},
+        "5/6/4": {},
+        "5/6/6": {},
+        "5/7/7": {},
+        "5/7/8": {
+          "birth_tied": 1,
+          "concordant": 2
+        },
+        "6/4/4": {},
+        "6/4/5": {},
+        "6/5/6": {
+          "birth_tied": 1
+        },
+        "6/6/8": {
+          "concordant": 1
+        },
+        "6/7/8": {},
+        "6/8/10": {},
+        "6/8/12": {},
+        "6/8/7": {},
+        "6/9/11": {}
+      },
+      "matched_count": 5,
+      "matched_mass": [
+        20861,
+        663552000
+      ],
+      "matched_share": [
+        1,
+        2418
+      ],
+      "matched_weighted_share": [
+        135179280,
+        54638738321
+      ],
+      "opportunity_count": 12090,
+      "opportunity_mass": [
+        54638738321,
+        4299816960000
+      ],
+      "reference_accuracy_fair_ordering": [
+        1,
+        2
+      ],
+      "weight": {
+        "birth_tied": [
+          83569,
+          6635520000
+        ],
+        "both_tied": [
+          0,
+          1
+        ],
+        "concordant": [
+          125041,
+          6635520000
+        ],
+        "loose_tied": [
+          0,
+          1
+        ],
+        "reverse": [
+          0,
+          1
+        ]
+      },
+      "weighted_accuracy_given_distinct_and_called": [
+        1,
+        1
+      ],
+      "weighted_accuracy_half_credit_abstentions": [
+        1,
+        1
+      ],
+      "weighted_coverage_given_distinct": [
+        1,
+        1
+      ],
+      "weighted_fraction": {
+        "birth_tied": [
+          83569,
+          208610
+        ],
+        "both_tied": [
+          0,
+          1
+        ],
+        "concordant": [
+          125041,
+          208610
+        ],
+        "loose_tied": [
+          0,
+          1
+        ],
+        "reverse": [
+          0,
+          1
+        ]
+      }
+    },
+    "parity": {
+      "accuracy_given_distinct_and_called": [
+        1,
+        1
+      ],
+      "accuracy_half_credit_abstentions": [
+        1,
+        1
+      ],
+      "completed_rounds_at_least": {
+        "1": 23,
+        "2": 23,
+        "3": 22
+      },
+      "count": {
+        "birth_tied": 2,
+        "both_tied": 0,
+        "concordant": 3,
+        "loose_tied": 0,
+        "reverse": 0
+      },
+      "coverage_given_distinct": [
+        1,
+        1
+      ],
+      "disjoint_hash_pair_counts": [
+        {
+          "birth_tied": 1,
+          "concordant": 2
+        },
+        {
+          "birth_tied": 2,
+          "concordant": 1
+        },
+        {
+          "birth_tied": 1,
+          "concordant": 2
+        },
+        {
+          "birth_tied": 2,
+          "concordant": 1
+        }
+      ],
+      "first_reversed_pair": null,
+      "lawful_sources": 156,
+      "matched_by_stratum": {
+        "4/4/3": {},
+        "4/6/6": {},
+        "4/6/8": {},
+        "4/7/9": {},
+        "5/5/4": {},
+        "5/6/4": {},
+        "5/6/6": {},
+        "5/7/7": {},
+        "5/7/8": {
+          "birth_tied": 1,
+          "concordant": 2
+        },
+        "6/4/4": {},
+        "6/4/5": {},
+        "6/5/6": {
+          "birth_tied": 1
+        },
+        "6/6/8": {
+          "concordant": 1
+        },
+        "6/7/8": {},
+        "6/8/10": {},
+        "6/8/12": {},
+        "6/8/7": {},
+        "6/9/11": {}
+      },
+      "matched_count": 5,
+      "matched_mass": [
+        20861,
+        663552000
+      ],
+      "matched_share": [
+        1,
+        2418
+      ],
+      "matched_weighted_share": [
+        135179280,
+        54638738321
+      ],
+      "opportunity_count": 12090,
+      "opportunity_mass": [
+        54638738321,
+        4299816960000
+      ],
+      "reference_accuracy_fair_ordering": [
+        1,
+        2
+      ],
+      "weight": {
+        "birth_tied": [
+          83569,
+          6635520000
+        ],
+        "both_tied": [
+          0,
+          1
+        ],
+        "concordant": [
+          125041,
+          6635520000
+        ],
+        "loose_tied": [
+          0,
+          1
+        ],
+        "reverse": [
+          0,
+          1
+        ]
+      },
+      "weighted_accuracy_given_distinct_and_called": [
+        1,
+        1
+      ],
+      "weighted_accuracy_half_credit_abstentions": [
+        1,
+        1
+      ],
+      "weighted_coverage_given_distinct": [
+        1,
+        1
+      ],
+      "weighted_fraction": {
+        "birth_tied": [
+          83569,
+          208610
+        ],
+        "both_tied": [
+          0,
+          1
+        ],
+        "concordant": [
+          125041,
+          208610
+        ],
+        "loose_tied": [
+          0,
+          1
+        ],
+        "reverse": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "total_cpu_ns": 137139404,
+  "total_wall_ns": 137186147,
+  "universe_count": 864
+}

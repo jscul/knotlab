@@ -1,0 +1,223 @@
+{
+  "bindings": {
+    "contract": {
+      "path": "../../../experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/contract.json",
+      "sha256": "6dac6c6fa68d2ce8d35a72fdccc89d4803d68795c76cd42fe8230ad75ea3a210"
+    },
+    "fresh_raw": {
+      "path": "validation-results.jsonl",
+      "sha256": "97faa41b7999d2855f8cde341004db43da839f90667619a185a05aabfb91d027"
+    },
+    "human_result": {
+      "path": "../../../experiments/GROWTH-STATISTICS-20261121-001B/GROWTH-STATISTICS-20261121-001B-E001_search/result.md",
+      "sha256": "47d88bb713ba44d560dcd67eecae1dd7afbf41161e1412ab1536c5b7f4aeb0a8"
+    },
+    "r2": {
+      "path": "../../../research/GROWTH-STATISTICS-20261121-001/R2/B/red_team_report.json",
+      "sha256": "ab133a66e59dff2446a54c6e9d6d6c522bf43e2c20c6f6085f4f7198611d315e"
+    },
+    "search_gzip": {
+      "path": "search-results.jsonl.gz",
+      "sha256": "60da279e77331f584b72d888c8636ce555ea16a51f82735d1bd091194a050224"
+    },
+    "search_summary": {
+      "path": "search-summary.json",
+      "sha256": "af515fce634dcd79a0bded923b4e216af5f7c46fa6eef06df22635dbbd83ba40"
+    },
+    "validation_summary": {
+      "path": "validation-summary.json",
+      "sha256": "79f88f97581a8092a61c44cb28908d28f9b6292897eda230b65998eb86452193"
+    }
+  },
+  "claim": "Under the frozen four-to-six-founder weighting, independent starts reproduced more reference-absent five-round signatures than the specified diversity archive at the matched CPU allowances under each tested law.",
+  "equal_distinct_qualifying_growths_posthoc": {
+    "nae": {
+      "diversity_W_T_L": [
+        12,
+        19,
+        17
+      ],
+      "per_arm_total_evaluated": 6866,
+      "summed_scores": {
+        "diversity": 107,
+        "independent": 113
+      }
+    },
+    "parity": {
+      "diversity_W_T_L": [
+        18,
+        19,
+        11
+      ],
+      "per_arm_total_evaluated": 6952,
+      "summed_scores": {
+        "diversity": 140,
+        "independent": 131
+      }
+    },
+    "rule": "Clip each arm to the lesser distinct lawful growth count of its pair, including stalls. Count original independent witness pairs with both sources inside the matching prefix.",
+    "scope": "Explanatory, retrospective comparison with unequal proposal and CPU expenditure inside the prefixes."
+  },
+  "experiment_id": "GROWTH-STATISTICS-20261121-001B-E001",
+  "fresh_feature": {
+    "both_tied": 0,
+    "concordant": 3,
+    "eligible_founders": 156,
+    "fully_observed_third": {
+      "nae": 23,
+      "parity": 22
+    },
+    "matched_per_law": 5,
+    "opportunity_pairs": 12090,
+    "qualification": "Distinct reserved source pairs with equal founder count and first two birth counts and both third counts observed. The small exact reserve supplies descriptive evidence at this conditioning.",
+    "reverse": 0,
+    "same_pairs_both_laws": true,
+    "tied_birth_count_only": 2,
+    "tied_loose_count_only": 0,
+    "weighted_matched_share": [
+      135179280,
+      54638738321
+    ]
+  },
+  "outcomes": {
+    "cpu": {
+      "nae": {
+        "W_T_L": [
+          6,
+          12,
+          30
+        ],
+        "bootstrap_mean_difference_ci95_descriptive": [
+          -1.125,
+          -0.4583333333333333
+        ],
+        "holm_p": 0.00013920338824391365,
+        "mean_counts": {
+          "diversity": 2.2291666666666665,
+          "independent": 3.0208333333333335
+        },
+        "mean_difference": -0.7916666666666666,
+        "two_sided_conditional_sign_p": 6.960169412195683e-05
+      },
+      "parity": {
+        "W_T_L": [
+          8,
+          13,
+          27
+        ],
+        "bootstrap_mean_difference_ci95_descriptive": [
+          -1.1041666666666667,
+          -0.3958333333333333
+        ],
+        "holm_p": 0.0018782254774123432,
+        "mean_counts": {
+          "diversity": 2.9166666666666665,
+          "independent": 3.6666666666666665
+        },
+        "mean_difference": -0.75,
+        "two_sided_conditional_sign_p": 0.0018782254774123432
+      }
+    },
+    "equal_count": {
+      "nae": {
+        "W_T_L": [
+          2,
+          9,
+          37
+        ],
+        "bootstrap_mean_difference_ci95_descriptive": [
+          -1.5833333333333333,
+          -0.9375
+        ],
+        "mean_counts": {
+          "diversity": 1.75,
+          "independent": 3.0208333333333335
+        },
+        "mean_difference": -1.2708333333333333,
+        "two_sided_conditional_sign_p": 2.841261448338628e-09
+      },
+      "parity": {
+        "W_T_L": [
+          2,
+          5,
+          41
+        ],
+        "bootstrap_mean_difference_ci95_descriptive": [
+          -1.9791666666666667,
+          -1.3333333333333333
+        ],
+        "mean_counts": {
+          "diversity": 2,
+          "independent": 3.6666666666666665
+        },
+        "mean_difference": -1.6666666666666667,
+        "two_sided_conditional_sign_p": 2.1532287064474076e-10
+      }
+    }
+  },
+  "resource": {
+    "actual_equal_count_verification_cpu_ns": 1200450285,
+    "actual_primary_verification_cpu_ns": 1348769143,
+    "actual_search_cpu_ns": 15480986331,
+    "paired_repeats_per_law": 48,
+    "per_arm_search_cpu_ns": 80000000,
+    "per_arm_verification_cpu_ns": 50000000
+  },
+  "schema_version": 1,
+  "scientific_pass": true,
+  "scope": "Two specified policies, even parity and unsigned not-all-equal ordinary growth, frozen source and dictionary, 48 independent paired repeats per law, and fixed finite horizons and costs.",
+  "smallest_verified_count_collision": {
+    "distinctions_per_source": 11,
+    "first_two_birth_counts": [
+      5,
+      5
+    ],
+    "founders": 4,
+    "laws": [
+      "parity",
+      "nae"
+    ],
+    "loose_after_round_two": [
+      8,
+      7
+    ],
+    "meetings": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "source_loose": [
+      [
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        3
+      ]
+    ],
+    "third_round_births": [
+      3,
+      4
+    ],
+    "third_round_join_savings": [
+      5,
+      3
+    ]
+  },
+  "status": "Complete",
+  "ticket": "GROWTH-STATISTICS-20261121-001B"
+}

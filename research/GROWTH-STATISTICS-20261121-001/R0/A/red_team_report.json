@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-STATISTICS-20261121-001A-E001",
+  "gate": "contract_freeze",
+  "tier": "R0",
+  "reviewer_independence": "separate_implementation_lane",
+  "attack_plan_frozen_before_results": true,
+  "reviewed_utc": "2026-11-22 04:20:56 UTC",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+      "sha256": "06a12bc6fba6e2a5b40f06e0f2f1dcc3b020e3975247135de0f211a9d55d63fd"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/preregistration.md",
+      "sha256": "a67c021ea99f03c824347a68cf1d8c646aa0f60ecce7272d5243097ed9fb2598"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/blind_scoring.md",
+      "sha256": "7adb5976ab28d98ff91ad7d2d7e36655e798e607839b96c63ffe88207450d6c5"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/blind_reader.py",
+      "sha256": "da3278bf445c23389dabdabd92ffdf6efaba22a25acdf4c7e1b7943abed01118"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/score_blind.py",
+      "sha256": "435538c662a41359e1da33bb29afb8200da23baf5d158f04b0cfb56bedbab5fc"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "A-R0-1",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Finite readings might be reported as a proof of a limit or as measurements of the wrong volume.",
+      "method": "Compared the four declared sources and two metrics with the owner's request. Meeting-volume, restricted positive bond witnesses, and conditional finite shape evidence have separate reference truths and nonclaims.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R0-2",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Names, coordinate data, rendering, history, source size, panel correspondence, or per-family missingness could convey a source label.",
+      "method": "Only common count, neighborhood and positive-certificate columns go to the main reader. The shape reader gets numeric matrices, independent identifiers and a common censor mask. The source key and root routing belong to custody. Source eligibility of the shape panel is disclosed.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md",
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R0-3",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Calibration on test scales or treating three roots as independent constructions could inflate generality.",
+      "method": "Disjoint development depths/radii are stated. A fresh secret supplies sampling and independent row ordering. The per-family denominator is three correlated roots and no confidence interval is attached to four appointed families. Audit the actual write-once commitment before use.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001/preregistration.md",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R0-4",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A cubic exponent, sample size, or invalid bond entry could substitute for the dimension-two shape comparison.",
+      "method": "Both shape families use the same three radii, landmark rule, 66 bond pairs, common channel mask and frozen thresholds. Companion meeting distances and the dimension-only control have separate scores. The cube needs local support as well as its exponent.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md",
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R0-5",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Custodian or analyst could repair a call or change how its truth is counted after unblinding.",
+      "method": "Bound the executable reader and post-release scorer, including the four-family routing and abstention threshold, before release. Numerical fixtures for two metrics, permutation and missing data are documented in review.md. The key must stay inaccessible until the call lock exists.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md",
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py",
+        "research/GROWTH-STATISTICS-20261121-001/score_blind.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "R0 authorizes contract freeze. R1 must independently verify the producing path and its freeze before the write-once run.",
+    "This is a fixed known-source benchmark. Its two-choice shape panel does not give an unrestricted four-way shape task."
+  ]
+}

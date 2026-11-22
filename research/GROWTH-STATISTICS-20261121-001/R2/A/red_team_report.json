@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-STATISTICS-20261121-001A-E001",
+  "gate": "promotion",
+  "tier": "R2",
+  "reviewer_independence": "separate_implementation_lane",
+  "attack_plan_frozen_before_results": true,
+  "reviewed_utc": "2026-11-22 04:38:16 UTC",
+  "input_digests": [
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/R1/A/red_team_report.json",
+      "sha256": "73dcde8bcffb8d7cf951c1e6669ec13620d8067e9d9a67ba43f4aedf1eba5ad8"
+    },
+    {
+      "path": "../../../../experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+      "sha256": "06a12bc6fba6e2a5b40f06e0f2f1dcc3b020e3975247135de0f211a9d55d63fd"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+      "sha256": "149a39cb3a4f34bf6c827b6572cc4888cce1cbd5a7158f4285b6460b8927dbde"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/custody/measurements.json",
+      "sha256": "7570f7b58461c3e31440d434822de87192fd752acec18a2e450715ea4fe6c45f"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/blind_calls.json",
+      "sha256": "5a1e7ae14e1e4780478b8fb37273dabc1b2a43c88e4a521821615a16f9cfc0b9"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/blind_calls.sha256",
+      "sha256": "c1163254094df64fc101d7b38ef37fe3614fffa4a8762d19eab7915ccf77f6b3"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/blind_score.json",
+      "sha256": "db4d71d706b8d8da4e5e5db8c55b8a792d4c5b8d69ffb0681153c1777ee1bf0d"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/sealed.time",
+      "sha256": "77e5d1902f1cecc9f94a5de68eeeb1aa7b304e2b1e505b85ce1a3204148adf02"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/replay_receipt.json",
+      "sha256": "48ee474bb64094938c229ad713086e89d5b4c54bd2a5be836d5565afdc89b5a9"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/summary.json",
+      "sha256": "cc91d0548bbb522d3bcdd939e93c4be4f1c4434f973fc1cd8cdc066ba1019a36"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "A-R2-1",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "The result might assert discovery of a general procedure, an asymptotic law or roundness itself.",
+      "method": "Applied the frozen rule that two of three roots in each of the four held-back families must be right. Only two families passed. The independent result is six correct family calls, six abstentions, zero wrong family calls out of twelve. Shape, meeting dimension and certificates retain distinct interpretations.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-2",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Custody information or a post-release root mapping might have produced an apparent blind call.",
+      "method": "Confirmed locked call SHA-256 5a1e7ae14e1e4780478b8fb37273dabc1b2a43c88e4a521821615a16f9cfc0b9; independently parsed anonymous observations before joining IDs to the released key. The six conditional shape IDs are disclosed separately; the overall join received credit only for positive computed evidence.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/custody/measurements.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_calls.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_calls.sha256",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-3",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Held-back data could have been redrawn or the sealed packet changed after calls.",
+      "method": "Validated exact frozen draw and R1 hashes and verified custody's same-seed raw packet and summary reproduce byte-for-byte. Twelve completed checkpoints belong to the committed draw.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/R1/A/red_team_report.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/replay_receipt.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-4",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Different sizes, missing matrices or switching to the companion distance could drive the reported shape contrast.",
+      "method": "Reconstructed 36/36 supplied matrices and all 220 triangle inequalities in each. All six shape roots had both channels at every scale. Bond data gave 3/6 correct and 3 abstentions. The independently scored meeting channel gave 2/6 correct and 4 abstentions. Raw dimension-two calls were shared by every root in the two panels.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/custody/measurements.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-5",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "An incorrect bond witness or an external label could invalidate a numerical observation.",
+      "method": "Recomputed all 120 separately logged positive endpoint certificates on the bounded source: separate finite CADICAL SAT check for the forbidden row, independent recurrent-state graph for every claimed globally realizable row, and exhaustive variable-forgetting. All passed over 36 distinct normalized supports. Full shell counts reconciled with negative and unresolved counts.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/custody/measurements.json",
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/bonds.py",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/summary.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-6",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A finite difference between known sources might be reported as recognition of both limiting shapes.",
+      "method": "At radius 37, maximum normalized four-point violations span 0–0.046 for the pinwheel and 0.328–0.369 for the control. Pinwheel fit errors 0.063–0.076 all exceed 0.055. Thus finite evidence distinguishes these observations; no affirmative pinwheel calls passed. Cubic meeting exponents 2.237, 2.349, 2.574 gave one wrong dimension and two abstentions.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-7",
+      "category": "resource_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Source-dependent censoring from the capped run might have removed difficult roots.",
+      "method": "All 12 roots and six conditional shape records were retained. The sealed wrapper completed at about 275.8 CPU seconds and 827,164 KiB peak within its limits. The independent reader's calls and checks did not alter the tested budget. In the bounded source 480 of 2,664 shell endpoints remained unresolved.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/sealed.time",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/custody/measurements.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/replay_receipt.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-8",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Forty-eight or hundreds of correlated measurements could inflate evidence on the four named constructions.",
+      "method": "Recomputed twelve dimension outcomes: nine correct, one wrong, two abstentions. No binomial sampling interval was attributed to four selected constructions or their three dependent roots. Three repeated translations of a support are not three distinct certificates about a source.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/custody/measurements.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-9",
+      "category": "representation_robustness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Reordering distinct points, radii or names might change a classification.",
+      "method": "Permuted all points on all six actual shape rows, replaced IDs, reversed scale order, and verified identical primary calls in every case. Reversed counts, certificates and local-order records on all twelve main rows without changing any scientific output.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-10",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A companion metric, the radius-size exponent or absence of a violation could substitute for shape evidence.",
+      "method": "Applied the frozen tests on both bond and meeting matrices. One cubic root passed its two local checks but was misread as dimension two; dimension alone did not justify a family label. Removing all bond matrices left all six shape rows inconclusive independently of their meeting measurements.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-11",
+      "category": "independent_replay",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Using only the producing summary could conceal incorrect decisive statistics.",
+      "method": "Reimplemented log-exponents, local predicates, opposite-pair products, centering and eigenvalue fit, plus joined classifications, without importing the reporting code. All primary results agreed. Also compared independently computed SHA-256 on the custodian replay packet and summary against the original; both were identical.",
+      "evidence_paths": [
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/replay_receipt.json",
+        "research/GROWTH-STATISTICS-20261121-001/blind_calls.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-12",
+      "category": "adversarial_mutation",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "An extra or missing row could silently improve performance.",
+      "method": "Added a duplicate actual ID separately to each panel in memory. Both scoring operations rejected the malformed call collection. The source-name replacement, raw matrix relabelling, and complete removal of the primary shape channel gave the expected results.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/score_blind.py",
+        "research/GROWTH-STATISTICS-20261121-001/blind_calls.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/packet.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R2-13",
+      "category": "claim_scope",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Positive family calls could be extrapolated to untested sources or reported as a successful full benchmark.",
+      "method": "Promote the complete finite results, including the failed four-family gate, the wrong cubic dimension and partial same-dimension shape evidence. Re-ran all six pre-registration searches, objects-gate, and an independently worded metric query. The additional parity triangle-inequality record concerns a related, broader property.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/preregistration.md",
+        "research/GROWTH-STATISTICS-20261121-001/blind_score.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/run/custody/measurements.json",
+        "research/BOND-METRIC-20261118-001/bond_metric.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "Promotion is for the complete bounded result, including failure of the overall recognition criterion. It does not establish that the pinwheel is recognizably round on this panel, a universal recognizer, or an asymptotic theorem.",
+    "The twelve case roots and six conditional shape calls do not give eighteen independent family classifications."
+  ]
+}

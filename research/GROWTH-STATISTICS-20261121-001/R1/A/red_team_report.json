@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-STATISTICS-20261121-001A-E001",
+  "gate": "run_authorization",
+  "tier": "R1",
+  "reviewer_independence": "separate_implementation_lane",
+  "attack_plan_frozen_before_results": true,
+  "reviewed_utc": "2026-11-22 04:23:50 UTC",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/freeze.json",
+      "sha256": "2d3002132ac6a859db59316e36b83b195f5a29ca0c2078c4ff6486a81eaa1f96"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/draw/commitment.json",
+      "sha256": "0251f9ec360e643c68c5882318ad960f5cfa86e511c16cc84ed6fec4b4a7eeca"
+    },
+    {
+      "path": "../../../../research/GROWTH-STATISTICS-20261121-001/R0/A/red_team_report.json",
+      "sha256": "45d6f33e3c77705565ec41f067b763849fed5556a4000f034df66b6c321f1389"
+    },
+    {
+      "path": "../../../../artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/rehearsal_final.json",
+      "sha256": "e6cbf5f3ea4f06afc924a92e36d1365c1b33114a7113e296daac51c4c28bb58f"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "A-R1-1",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A different operator, source or scorer could be run under this gate.",
+      "method": "Independently recomputed all 32 SHA-256 entries in the frozen roster, confirmed the R0 report still validates, and matched the public commitment to the exact freeze.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/freeze.json",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/draw/commitment.json",
+        "research/GROWTH-STATISTICS-20261121-001/R0/A/red_team_report.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-2",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "An ID, a missing scale or a root-to-source lookup could reach the blind reader.",
+      "method": "Checked domain-separated HMACs, separate panel order and identifiers, explicit main/shape field assembly, and global per-scale per-channel masking. Source proofs, witness paths, timings, chosen roots and correspondences are written under private custody.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/prepare.py",
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-3",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A seed or root could be replaced after seeing a score, or a failed run could discard completed roots.",
+      "method": "Verified the exclusive new-draw and output creation, immutable seed commitment and matching R1 hash checks before collect. The producer now checkpoints each completed root privately before proceeding. Only the public commitment was read. The single execution stays tied to the declared draw.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/prepare.py",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/draw/commitment.json",
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/CUSTODY.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-4",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Using different tracers or censored distances for the two planar sources could account for a contrast.",
+      "method": "Both planar controls share choose_shape, exact cycle calculation, meeting calculation, matched eligibility, and the same 66 comparisons per eligible scale. Missing distances stay null and cannot produce a positive call. Development retained actual incomplete scales.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/prepare.py",
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/bonds.py",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/rehearsal_final.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-5",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "An incorrectly merged distance or a disappearing call could affect the result.",
+      "method": "Reran exhaustive fixed seven-distinction fixture with six cycles and all 21 endpoint pairs. Inspected independent symbolic-versus-geometric development checks, projection certificates and the scorer's explicit packet/call/key identity and cardinality checks.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/rehearse.py",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/rehearsal_final.json",
+        "research/GROWTH-STATISTICS-20261121-001/score_blind.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-6",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A dimension estimate alone or meeting-based fallback could masquerade as shape evidence.",
+      "method": "Confirmed reader separates the exponent and local cubic arrangement, and that missing bond matrices abstain even with a positive meeting companion. Positive finite Ptolemy and fit evidence targets only the selected sources at the tested scales.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-7",
+      "category": "resource_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Unbounded time or an unrecorded incomplete run could create selective survival.",
+      "method": "Checked hard CPU/address-space/thread guard, external wall/exit wrapper, exact environment checks, per-root checkpoints and frozen maximum roster. Development ended with 97,508 KiB peak; larger materialization can still fail and remains an allowed recorded outcome.",
+      "evidence_paths": [
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/prepare.py",
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/CUSTODY.md",
+        "artifacts/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/rehearsal_final.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-8",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Repeated roots, matrix entries or four-subsets could inflate the nominal sample.",
+      "method": "Three roots nested in each of four selected constructions are reported as finite panel counts. The six conditional shape cases have equal denominators. There is no independence assumption for the 495 candidate quadruples per case.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md",
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py",
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-9",
+      "category": "representation_robustness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A particular point order or companion metric could generate the primary result.",
+      "method": "Independently permuted both axes of the Euclidean-circle and L1-square deterministic fixtures. Round and polygonal calls persisted. Interchanging their companion matrices did not change the primary calls; a missing primary channel abstained.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "A-R1-10",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Local resemblance can hide a different limiting source, or a lack of a violation can be overread.",
+      "method": "The primary rule combines four-point violations, their support and a global distance fit. Fixed source labels and proxies are separate from the finite observations. A local-only or dimension-only read receives no round/polygonal credit.",
+      "evidence_paths": [
+        "research/GROWTH-STATISTICS-20261121-001/blind_reader.py",
+        "research/GROWTH-STATISTICS-20261121-001/blind_scoring.md",
+        "experiments/GROWTH-STATISTICS-20261121-001A/GROWTH-STATISTICS-20261121-001A-E001_blind/contract.json"
+      ],
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "Authorization applies only to this committed draw, frozen files, single-thread resource limits and pre-registered scoring.",
+    "No withheld source identity, test observation, call, or outcome has been inspected. Passing R1 cannot predict coverage or recognition."
+  ]
+}

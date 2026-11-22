@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "experiment_id": "GROWTH-STATISTICS-20261121-001A-E001",
+  "ticket": "GROWTH-STATISTICS-20261121-001A",
+  "status": "Frozen",
+  "evidence_stage": "confirmatory",
+  "branch": "code_analysis",
+  "question": "Can a fixed, title-free reader recover finite evidence of three-order growth, distinguish a round-limit source from a polygonal source of the same dimension, and detect witnesses at fixed bond distance over increasing steps apart?",
+  "dependencies": [
+    "CUBIC-FROM-A-KNOT-20261117-001",
+    "PINWHEEL-NATIVE-20261107-001A",
+    "PINWHEEL-ROUND-20261107-001A",
+    "PINWHEEL-ROUND-20261107-001B",
+    "FOLD-20261112-001A"
+  ],
+  "public_inputs": {
+    "experiment": "The custodian reconstructs only the listed terminal laws. The prior exploratory result supplies the motivation and the control. freeze.json binds authoritative files and implementations by SHA-256.",
+    "reader": "One anonymous JSON object with main and shape lists. The scorer receives either the raw matrix packet or fixed rubric observables without labels. No source-specific file, identifier, program or acceptance record is part of this input."
+  },
+  "forbidden_inputs": [
+    "Source labels or paths, root coordinates, substitution labels, actual assembly depth, raw distinction identifiers, value assignments, generation order, root correspondence between panels, source cardinalities, runtime, missingness patterns by construction, the draw secret and any key.",
+    "Selecting seeds, roots, exclusions, shape thresholds or a test panel using its decisive results."
+  ],
+  "sources": {
+    "cubic": "Complete-round single parity-knot construction, to round 50. The implementation indexes the same recorded local parent-group criteria. Every distinction retains its source identity through each round.",
+    "pinwheel": "The finite symbolic tile-law substitution to level 8, with distinctions shared by the designated parity knots. The accepted symbolic endpoint identifications supply the cycle readout. Subdivision labels are construction data only.",
+    "periodic": "The accepted level-16 isosceles control substitution under the same tile parity law and cycle readout. Both planar constructions have growth dimension two. The literature calls the limiting control triangulation the tetrakis triangulation.",
+    "bounded": "Both translated not-all-equal knot kinds of base 16 in the proof's sheared presentation. The meeting observation window has whole-number limits 36 and 70. Temporary allowed-state queries use the equivalent normalized window with limits 30 and 60."
+  },
+  "partitions": {
+    "development": "Only fixed disjoint fixtures. Small parity cycles, cubic rounds 5 and 9, symbolic/reference comparison at level 3, symbolic levels 5 and 6 and periodic level 12 with distinct shape radii 6,9,11, and fold meeting radii 3,5,7. Existing cited evidence predates this study and used ambient radial directions for shape.",
+    "held_back": "Fresh rooted observations from the four listed source laws, three roots per law. The sources and their restrictions are related to the prior evidence and to one another within each law. This is held-back measurement on known sources, with no claim of independent families or independent roots.",
+    "draw": "A fresh 256-bit secret is committed by SHA-256 against the frozen file set before test materialization. Branch-separated HMAC derives root draws, ties, periodic witness paths, panel identifiers, and row permutations. A public test packet uses separate shuffled main and shape identifiers.",
+    "roots": "Uniform random ordered candidates subject to more than the largest panel radius plus two steps from the supplied patch's unfinished boundary. Planar candidates additionally keep the upper-depth core, at least 80 percent of the maximum of the joint incidence and cycle boundary depth. Three distinct roots are accepted greedily with more than seven steps between each, using no data from the decisive reading. The main and shape panels use the same three roots of each of the two planar laws. A failure to supply three roots stops packet delivery for both panels and leaves the failure in custody."
+  },
+  "primary_observable": {
+    "counts": "For every root at 8,12,18,26 steps, exactly count all distinctions within those meeting steps, including the root. Meeting steps are the shortest count of consecutive co-knotted pairs, using designated knots and distinction identity.",
+    "witnesses": "Query the full exact meeting shell at each listed radius. An endpoint pair qualifies when a bond of size three or four contains it and the remaining one or two distinctions are among the pair's combined one-step meeting neighbors. Report [steps,query count,certified count]. For base 16, a finite rejection checks K1 and global periodic realizations check K2 and K3. The source square-connectivity bound and exact cycles decide the parity candidate searches. An unresolved query or a negative in this candidate family never contributes to the certified count. Keep them separately in custody.",
+    "local": "For each designated knot containing a root, report its number of distinct one-step knot neighbors, how many unordered neighbor pairs themselves meet, a histogram of the number of other knots meeting both members of each pair, and the sorted degrees of each neighbor in pairs with zero such other knots. Knots meet when they hold at least one shared distinction. Multiple shared distinctions count once.",
+    "shape": "For each of 14,23,37 meeting steps, select four successive farthest-spread distinctions with random ties, then eight uniformly drawn remaining distinctions without replacement from the same annulus. Eligible distinctions have meeting distance at least two-thirds of the radius and at most the radius. Record 66 exact unordered pair entries for meeting steps and bond distance independently, as 12-by-12 symmetric matrices. A bond distance is the source parity law's least cycle length through both distinctions minus one. An exact value requires an inner cycle and a lower bound on any shorter cycle leaving the finite observation. Retry uncertified local calculations in the full patch. No surrogate is supplied if the whole patch still leaves a pair unresolved.",
+    "missing": "Withhold a same-scale channel in every shape row if any corresponding pair is uncertified or an annulus contains too few distinctions. Such a channel is null. Custody preserves all attempted pairs, annulus sizes, timings and certifiability. The bounded-bond channel publishes existence certificates, not numerical minima or absences. The cubic meeting-volume readings do not measure its bond-ball volume."
+  },
+  "cheapest_meaningful_control": "Run identical radius, population, selection and exact bond algorithms on the recorded same-dimension periodic polygonal-limit law. Compare its finite four-point evidence and two-dimensional distance fit against the pinwheel. As independent channels, compare shape statistics on the corresponding meeting data and compare the fixed-bond witness query on all four sources.",
+  "decision_rules": "The scorer in research/GROWTH-STATISTICS-20261121-001/blind_reader.py is frozen before the held-back draw. Per-root calls and abstentions are committed before opening the key. Report both axes distinctly and every call. Determine coverage and agreement at the root and family levels, with the 495 four-subsets treated as correlated within a root. A Ptolemy violation uses all three opposite-pair products with the largest minus the sum of the other two, scaled by the largest. A lack of finite violations alone gives no limit claim.",
+  "resource_ceiling": {
+    "cpu": "One worker and one numerical library thread, maximum 475 CPU seconds.",
+    "memory": "Address space capped at 2000000 KiB.",
+    "wall": "525 seconds from launch, preserving a failed run's logs and any completed private ledger.",
+    "coverage": "12 main roots by four radii and six shape roots by three radii, with 66 attempted entries on each of two channels per eligible shape scale. No results-dependent extension.",
+    "runtime": "Python 3.13.3 in .venv with NumPy 2.3.2, SciPy 1.18.1 and python-sat 1.9.dev15. Capture observed wall time, process CPU, peak RSS, and exit status."
+  },
+  "first_executable_signal": "The complete anonymous packet and custodian attempt ledger after the bound R1 review and write-once preparation. A missing shape scale is a result recorded symmetrically, with no fallback to a different scientific endpoint.",
+  "stop_rule": "Commit the secret draw once. After R1 approval run the frozen packet producer and stop after the declared budget or roster. Preserve incomplete evidence. Deliver only the neutral packet. Open truth only after a fixed reader's calls are bound. No replacement roots or radii are allowed after seeing a decisive result.",
+  "nonclaims": [
+    "Finite observations and Ptolemy residuals establish no limiting shape, dimension theorem or general recognition capability.",
+    "Witnesses over finite shells do not prove arbitrarily long separation. Its authority is the archived theorem specific to that source.",
+    "The small-support search provides no absence theorem for unrestricted bond distances. Repeated roots and four-subsets are correlated."
+  ]
+}

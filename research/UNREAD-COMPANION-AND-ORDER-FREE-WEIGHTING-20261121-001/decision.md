@@ -6,7 +6,9 @@ The searches used `track.py objects 'split knot unread companion coherent meter 
 
 The earlier ordinary weighting comparison in `ENTANGLEMENT-READ-20261120-001` concerns measured old observables on 233 placements under each law. The coordinator's small finite check in `POSTULATE-LEADS-20261120-001` motivates an all-size theorem. The search also returned `STATE-RULES-20261117-001` on state-based growth, `THREE-READERS-AND-GROWTH-20261120-001` on reconstructing states from partial readings, and `TWO-PRODUCT-SKETCHES-20261115-001` on a different use of affine relations. Those three indexed objects do not establish the weighting characterization. [Ordinary comparison](../ENTANGLEMENT-READ-20261120-001/decision.md) · [State-based growth](../STATE-RULES-20261117-001/state_rules.md) · [Partial readings](../THREE-READERS-AND-GROWTH-20261120-001B/results.md)
 
-## Decision and research position
+## Final report as sent
+
+2026-11-21 16:17 PST
 
 **B296.** A coherent not-all-equal knot with an unread companion supplies an exact sign meter on **25.46%** of preparations when the two-place reader holds the shared distinction, and on **zero** when the one-place reader holds it.
 

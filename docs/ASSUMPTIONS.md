@@ -260,6 +260,8 @@ evidence: results and their status come from the records each entry links.
 | [A202](#a202--end-a-two-message-read-on-the-receivers-own-changed-mark) | End a two-message read on the receiver’s own changed mark | scaffold | Assumed |
 | [A203](#a203--test-a-growth-made-keeper-while-all-three-focal-distinctions-remain-loose) | Test a growth-made keeper while all three focal distinctions remain loose | scaffold | Assumed |
 | [A204](#a204--read-only-the-later-receivers-new-marks-until-they-are-shared) | Read only the later receiver’s new marks until they are shared | scaffold | Assumed |
+| [A205](#a205--learn-letter-frequencies-with-shared-local-pixel-wiring) | Learn letter frequencies with shared local pixel wiring | scaffold | Assumed |
+| [A206](#a206--repeat-an-exchange-on-the-same-two-paid-distinctions) | Repeat an exchange on the same two paid distinctions | scaffold | Assumed |
 
 ## Entries
 
@@ -4739,3 +4741,26 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Compare intact and interrupted carriers against the sham, the immediate receivers and a child of both affected parents. Vary whether a partner’s paid value is fixed and known, fixed but hidden, or varied between prescribed preparations. Compare complete possible records, their individual marks, and weighted probabilities separately.
 - **History.**
   - 2026-11-22 · Opened for the [hidden sender mark study](../research/HIDDEN-SENDER-MARKS-20261122-001A/preregistration.md).
+  - 2026-11-22 · After its one positive funding event the fixed receiver retains the same complete reading on every further ordinary cut. A second source request cannot create a second local receipt. [Repeated sends to the same receiver](../research/REPEATED-SENDS-20261122-001/decision.md)
+
+### A205 · Learn letter frequencies with shared local pixel wiring
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** The image experiment supplies two five-pixel drawing styles per letter, a finite equal-per-bitmap weighting over chosen placements and turns, and a row-major 64-bit sensor. It groups every ordered two-by-two patch with black padding and shares one of 16 addresses across placements. It supplies a separate bank per action, binary mark preparations in parity or not-all-equal knots, a correct-or-incorrect training receipt, one count update per patch and a nearest-mean readout with a fixed tie action.
+- **Why.** These choices give both letters the same ink budget and let experience determine local pattern frequencies and their association with an action. Sharing addresses gives the apparatus translation invariance in advance. The two label conventions and both holding laws can be exercised on identical images.
+- **Rests on it.** PIXEL-LETTERS-20261122-001 measures acquisition, memory exchange and pose transfer only for this sensor, rule and finite drawing family. The sensor, address layout, writer and readout are chosen parts of the apparatus.
+- **Challenge.** Exchange and clear the physical marks, compare two knot laws and an integer implementation, and distinguish a new bitmap with known patch counts from an unseen histogram. A separate test could challenge the supplied choice of what to observe by learning which pixel groups to read. Removing the grouping, changing the fonts or changing the readout would require fresh evidence.
+- **History.**
+  - 2026-11-22 · Recorded before fitting the first raw-pixel L and T comparison in G15. The investigation ends with the frozen test.
+
+### A206 · Repeat an exchange on the same two paid distinctions
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** An exchange acts on the present values of the two original sender distinctions. A repeat uses the same two distinctions in one uninterrupted preparation. The fixed receiver keeps A204's three new distinctions and its local reading. We compare requests on either side of the actual payments and, separately, offer an exchange whenever the complete value assignment would remain lawful. Its admission or refusal is hidden from the receiver.
+- **Why.** Holding the sender and receiver fixed lets a second positive event be distinguished from two observations of one physical word. The extra offer tests how much the original sender's action rule matters.
+- **Rests on it.** The exact request and admission probabilities depend on the chosen ordering, old word, allocation of payments, equal sender odds and conditional weighting of fresh words. The source-local apparatus and the extra word-level guard differ in what they can check.
+- **Challenge.** Change only the placement of the second request or divert its first contact. A different receiver could preserve one observation in a later knot before accepting another. That would require a specified way to transfer the record.
+- **History.**
+  - 2026-11-22 · Opened for the [repeated-sends study](../research/REPEATED-SENDS-20261122-001/decision.md).

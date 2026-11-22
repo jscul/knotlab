@@ -253,6 +253,7 @@ evidence: results and their status come from the records each entry links.
 | [A195](#a195--give-the-three-nonfocal-siblings-a-writable-keeper-before-reader-settings) | Give the three nonfocal siblings a writable keeper before reader settings | scaffold | Assumed |
 | [A196](#a196--finite-intrinsic-readings-for-recognizing-four-recorded-constructions) | Finite intrinsic readings for recognizing four recorded constructions | scaffold | Assumed |
 | [A197](#a197--count-newly-reproduced-later-behaviors-under-a-charged-search) | Count newly reproduced later behaviors under a charged search | scaffold | Assumed |
+| [A198](#a198--give-a-moving-reader-rations-energy-and-a-local-food-bit) | Give a moving reader rations, energy and a local food bit | scaffold | Assumed |
 
 ## Entries
 
@@ -4652,3 +4653,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Compare independent and adaptive sampling, compare equal computation with a common number of completed attempts, and check a later prediction on withheld starts under declared weights. Alternative readings could discover behavior this one misses. Growth provides the births. The experiment supplies the discovery criterion.
 - **History.**
   - 2026-11-21 · Opened during design, before the search sample was run.
+
+### A198 · Give a moving reader rations, energy and a local food bit
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** The game draws labelled founder trees of three through seven holders, with the private supply and structural separation specified in its design. It attaches a supplied cursor to a founder with six units of energy. Each genuinely funded newborn receives one consumable ration. Before turns one and five the world offers ordinary growth. A turn costs one unit, a meal pays four up to capacity ten, and zero energy ends the game. A supplied sensor reports one bit at the current holder, and a supplied control follows a chosen shared distinction or eats. The policies, reward, any memory and the spectator's layout are supplied too.
+- **Why.** One permanently consumable ration gives movement a concrete consequence that a one-bit observation might help an autonomous bot manage.
+- **Rests on it.** Game lifetimes, the price of a failed eat and the comparison between the fixed Q learner and named scripted controls. The existence of the physical holdings and births follows from the separate ordinary growth law.
+- **Challenge.** Blind the sensor, compare a blind bot that moves first then tries one meal per arrival, compare the sensing script and learned policy on exactly matched starts, and recode the names. Other energy prices, ration placement and growth schedules would define different games.
+- **History.**
+  - 2026-11-21 · Opened for the [seeded survival game](../research/KNOT-RATION-GAME-20261121-001/preregistration.md).

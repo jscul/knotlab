@@ -2387,6 +2387,8 @@ So holes come in two kinds:
 
    **Newest knots and paid joins (20 November 2026).** On a 31-name stage of explosive not-all-equal growth the inherited pair readings recover fourteen loose distinctions and all seven next births. Once a latest family is proposed, old pairs reveal which inputs had the same former parent. A separate two-meeting rule preserves whole tree histories and both repeating sources. On a funded preparation it gives a child with eighteen fresh distinctions where the earlier rule keeps the same marked families separate forever. [Two-study record](../research/NEWEST-KNOTS-AND-LOCAL-JOINS-20261120-001/decision.md).
 
+   **A moving reader with a food bit, 21 November 2026 (G15).** Give every ordinary newborn a consumable ration and let a supplied reader follow an actual shared distinction. The simple rule “eat if there is food, otherwise move” lived 17.87 turns on average across 64 held-out founder structures, against 13.05 for a blind move-then-eat reader and 12.84 for a reinforcement learner. The two laws produced the same play on these starts. Hunger, food and the reader belong to the game. [Seeded survival and replay](../research/KNOT-RATION-GAME-20261121-001/decision.md)
+
    **Words in the learning entries.** The learning entries below work on drawn knot patterns (glossary of the Intuitions guide): every
    knot holds three distinctions and every distinction lies in three knots, drawn as a two-coloured triangulation whose triangles of
    one colour are the knots and of the other the distinctions, each distinction in the three knots across its sides; the record's

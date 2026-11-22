@@ -20,7 +20,7 @@ The first checkpoint authorized training. The second closes the bounded comparis
 
 ## Final report as sent
 
-2026-11-21, 22:03 PST
+2026-11-21, 22:06 PST
 
 The food-sensing bot lived longest. On fresh held-out starts it averaged **17.87 turns**, compared with **13.05** for the blind move-then-eat bot and **12.84** for the reinforcement learner. Every bot played unattended until its energy reached zero.
 
@@ -54,8 +54,8 @@ The learner trained for 3,072 games on 128 founder structures. Testing used 64 d
 
 **STOP on this comparison.** Replaying all 26,650 held-out turns and retraining from scratch reproduced the game records and model. A memory experiment would need a task where a previous visit changes which move pays. [Verification](/home/jscul/p-vs-np-contact-first/research/KNOT-RATION-GAME-20261121-001/validation.json) · [Scientific referee handoff](/home/jscul/p-vs-np-contact-first/research/KNOT-RATION-GAME-20261121-001/referee_handoff.md)
 
-**Corrections:** None. Scientific referee pending.  
+**Corrections:** None. Scientific referee pending. A repository check still flags an unrelated wording change in the research-directions instructions.  
 **Goals:** G15 gained a working moving reader. Learning a hidden knot law from one bit remains open.  
-**Assumptions:** A198 fixes the start weighting, two growth opportunities, 6 starting energy, capacity 10, cost 1 per turn and gain 4 per meal.  
+**Assumptions:** A198 fixes the start weighting and growth opportunities before turns 1 and 5. Founders start empty. Energy starts at 6, caps at 10, falls by 1 per turn and gains 4 per meal. All bots choose uniformly among available moves when they move.  
 **Scaffolds:** Food, hunger, the sensor, the cursor, its controls, reward and policies are supplied game rules. Ordinary growth supplies the new knots and the shared distinctions the bots actually follow.  
 **Basket:** B208 movement and B304 one-bit sensing were used here. B155 and B154 remain open.

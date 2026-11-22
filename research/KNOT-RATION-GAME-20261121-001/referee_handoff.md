@@ -25,3 +25,5 @@ Check the source split by recomputing exact decorated founder keys for train, te
 **Assumptions:** A198 fixes the source weighting, two growth opportunities and energy economy.  
 **Scaffolds:** Food, hunger, its local sensor, cursor, controls, policies, reward, display and seeded tie breaks are supplied.  
 **Basket:** B208 and B304 were taken for the game. B155 and B154 remain open.
+
+**Workspace check.** Game, leaf, scope and closure checks passed. The broader checkpoint flags the pre-existing change to a required sentence in the research-directions skill. The unchanged game and learned replay were also verified from the published checkout. No generated-view change to the discoveries index.

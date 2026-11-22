@@ -1,0 +1,17 @@
+# Prespecified return-cue repair
+
+The original training-only exposure diagnostic found 13 charged ON decisions with a physical return mark per law. All 13 visits were empty, across seven founder structures. Each was filtered by the stored one-control menu and current multiple-control menu. This repair admits the witnessed return whenever current-only would choose ON and `x_here=1`. The three approach candidates still require the stored menu match. The original menu memory, receipt inputs, four-candidate priority, score updates and physical action readout follow the original design.
+
+Use the original deterministic source recipe with seed scope `SECOND-FEEDER-CUE-20261121-001B`. Exclude the 359 previous reserved structures and all 128 train, mechanism and survival structures from the original study. Keep the first 32, 32 and 64 distinct admissible keys in the three disjoint folds. Use eight paired train and survival tapes per founder under each law. Training uses the sampled names. Mechanism and survival use independent per-founder full distinction renaming and the ordinary ranking on the renamed names. Retain stalls, refusals and the last turn at death.
+
+Use the hash-pinned original bank, training and survival programs through isolated imports with this study's bank and device. Reuse the charged current-only probes, +1/−4 public energy credit, signed clipping at seven, fixed ties, eight packet checks, within-packet feedback permutation and final-checkpoint rule. Lock this device's SHA before training and save final physical weights with their own SHA before opening either fresh evaluation fold. The same named physical controls and whole-founder intervals apply.
+
+## Outcome-free exposure controls
+
+In each law's ordered training ledger, collect `[source_seed, movement_tape, turn]` for each charged ON whose pre-action physical strict-return veto was set. Count and hash those positions without reading paid or unpaid labels. Record cumulative count, capped count and independently earned strict score at each packet checkpoint. Compare three prespecified controls:
+
+1. Replace genuine strict credit with the capped count `min(7,n)` at each packet. Retain the other three genuine scores and reconstruct the selected mark by the original tie rule. Report every credit or selector discrepancy.
+2. Set the other three scores to neutral. The first counted opportunity then selects strict. Zero opportunities select the neutral arm.
+3. Select strict when the count reaches seven. A capped strict score of seven wins the original tie priority regardless of the other scores. A smaller count selects the neutral arm in this control.
+
+For the last two controls, use the already evaluated fixed strict or zero-credit output on every matched survival tape and every shared public observation. Compare those controls to the learned output using complete public-history hashes, lifetime differences and common-path decision bits. The packet reconstruction uses the trained readout trace when the reconstructed and trained selectors agree. Retain any discrepancy, and use an existing arm if its exact fixed readout is available. This analytic comparison adds no games. Agreement limits the claim about how the feedback credit selects the deployed rule. It leaves the observed changes to physical credit words and to the two differently paired training ledgers available for separate analysis.

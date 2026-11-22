@@ -1,0 +1,173 @@
+{
+  "bank_sha256": "777e6f04863a7d7e1a20b638714db875cf9da141e61bc029df55e6e9c3ed2a9a",
+  "detector_order": [
+    "strict_return",
+    "approach_feeder",
+    "approach_menu",
+    "approach_slot"
+  ],
+  "device_sha256": "6c65130f278deab87acd2a7365880367beb4008b2884a66b13a4ec1197f735bf",
+  "games_per_law": 256,
+  "packets": 8,
+  "policies": {
+    "nae": {
+      "feedback_permuted": {
+        "schema": "second-cue-frozen-v1",
+        "score_words": [
+          "000000010000000",
+          "100000000000000",
+          "100000000000000",
+          "001000000000000"
+        ],
+        "scores": [
+          0,
+          -7,
+          -7,
+          -5
+        ],
+        "selector": 0,
+        "selector_word": "10000"
+      },
+      "trained": {
+        "schema": "second-cue-frozen-v1",
+        "score_words": [
+          "000000010000000",
+          "000010000000000",
+          "000010000000000",
+          "001000000000000"
+        ],
+        "scores": [
+          0,
+          -3,
+          -3,
+          -5
+        ],
+        "selector": 0,
+        "selector_word": "10000"
+      },
+      "zero": {
+        "schema": "second-cue-frozen-v1",
+        "score_words": [
+          "000000010000000",
+          "000000010000000",
+          "000000010000000",
+          "000000010000000"
+        ],
+        "scores": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "selector": 0,
+        "selector_word": "10000"
+      }
+    },
+    "parity": {
+      "feedback_permuted": {
+        "schema": "second-cue-frozen-v1",
+        "score_words": [
+          "000000010000000",
+          "001000000000000",
+          "001000000000000",
+          "010000000000000"
+        ],
+        "scores": [
+          0,
+          -5,
+          -5,
+          -6
+        ],
+        "selector": 0,
+        "selector_word": "10000"
+      },
+      "trained": {
+        "schema": "second-cue-frozen-v1",
+        "score_words": [
+          "000000010000000",
+          "000010000000000",
+          "000010000000000",
+          "001000000000000"
+        ],
+        "scores": [
+          0,
+          -3,
+          -3,
+          -5
+        ],
+        "selector": 0,
+        "selector_word": "10000"
+      },
+      "zero": {
+        "schema": "second-cue-frozen-v1",
+        "score_words": [
+          "000000010000000",
+          "000000010000000",
+          "000000010000000",
+          "000000010000000"
+        ],
+        "scores": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "selector": 0,
+        "selector_word": "10000"
+      }
+    }
+  },
+  "schema": "second-feeder-cue-weights-v1",
+  "score_rule": {
+    "abstention_or_unprobed": 0,
+    "clamp": [
+      -7,
+      7
+    ],
+    "eligibility": "actual current-only ON with at least one pre-action physical EMPTY vote",
+    "initial_scores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "initial_selector": 0,
+    "selector": "highest strictly positive score in fixed detector order, else none",
+    "voted_empty_charged_paid": -4,
+    "voted_empty_charged_unpaid": 1
+  },
+  "train_founders": [
+    "0(2()2()2(1(2()3())))",
+    "2(2()3(2(2())2(2())))",
+    "1(2()2()3(2(3())))",
+    "1(2()3()3(2(1(3()))))",
+    "0(1(2())1(2()3())3())",
+    "0(3()3()4(1(2()3())))",
+    "2(3()3()3(3())3(3()))",
+    "0(1(2()2())2()2())",
+    "1(2(2(2()))2(3()))",
+    "0(1(3()3())2()2()2())",
+    "0(2()2()3(2(1(2()))))",
+    "1(2()2()2())",
+    "0(2()2()3(1(2(3()))))",
+    "2(2()3(2(3()3())3()))",
+    "1(1(2())2(1(3())))",
+    "0(3()3()3(1(1(3()))))",
+    "1(1(1(2()))3()3())",
+    "0(1(2(2())3())2()2())",
+    "0(2()2()2()3())",
+    "0(1(2()2())2()3())",
+    "1(1(2(2(1(3()))))3())",
+    "1(1(2()2()3()3())3())",
+    "1(2()2(2(2()))3())",
+    "0(0(2()3())3()3())",
+    "1(1(2())2()2(1(3())))",
+    "0(2(3())3()3(1(3())))",
+    "1(2(2(3()))2(3())3())",
+    "1(2()2()2(1(3())))",
+    "1(2()2(1(2(2())))3())",
+    "0(2()2(2(1(3())))3())",
+    "1(2(2())2(2())3())",
+    "0(1(2()3())2(3())3())"
+  ]
+}

@@ -1,0 +1,5 @@
+# Learning a second feeder cue
+
+A locally written record of a paid return let a bot act differently at two feeders with the same persistent signal and the same number of exits. On a fresh bank it gained 70 turns across 512 whole games under each law compared with the stronger current-only bot. A supplied count of opportunities to use the certified return predicted the entire deployed behavior without reading the meal outcomes.
+
+The [original comparison](../../../artifacts/SECOND-FEEDER-CUE-20261121-001A/SECOND-FEEDER-CUE-20261121-001A-E001_experience/result.json) and the [new independent comparison](../../../artifacts/SECOND-FEEDER-CUE-20261121-001B/SECOND-FEEDER-CUE-20261121-001B-E001_return/result.json) bind the three questions, qualified by the supplied game and founder weighting. Observability, physical credit assignment and reciprocal memory exchange have different controls from survival. The [decision](../../../research/SECOND-FEEDER-CUE-20261121-001/decision.md) and [referee handoff](../../../research/SECOND-FEEDER-CUE-20261121-001/referee_handoff.md) record the frozen bases for those claims. This synthesis adds zero independent source facts.

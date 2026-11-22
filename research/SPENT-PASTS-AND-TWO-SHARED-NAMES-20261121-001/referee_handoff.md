@@ -35,7 +35,7 @@ Two calculations agreed on **4,352 probabilities across 42 built stages and law 
 
 **GO on B298.** A score below two leaves open whether one distribution of predetermined answers explains all eight settings. The recorded tables make that a direct test.
 
-**Corrections:** **Not a block.** An earlier check printed a bound of two for two sign choices. The signed expression has bound two and the all-plus expression has bound four. Both earlier numerical scores and their common explanations stand. [Correction](https://github.com/jscul/knotlab/blob/main/docs/CORRECTIONS.md#2026-11-21--the-three-child-score-keeps-its-value-under-the-signed-bound)
+**Corrections:** **Not a block.** An earlier check printed a bound of two for two sign choices. The signed expression has bound two and the all-plus expression has bound four. Both earlier numerical scores and their common explanations stand. [Correction](https://github.com/jscul/knotlab/blob/main/research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/results.md#L33)
 
 **Goals:** B252 and B297 closed under G5 and G18.
 

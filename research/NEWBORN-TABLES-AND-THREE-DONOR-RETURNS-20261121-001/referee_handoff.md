@@ -16,7 +16,7 @@ The two independent scientific referees have the exact frozen designs, calculati
 
 ## Replay
 
-Run in a checkout with NumPy, SciPy, SymPy, python-sat and the tracked knot checker. For the clock, the two commands writing the compressed archives deterministically regenerate them. The investigator instructions include the full input bindings, recodings and canonical checks. A changed digest calls for comparing the inputs before interpreting any new result.
+Run in a checkout with NetworkX, NumPy, SciPy, SymPy, python-sat and the tracked knot checker. For the clock, the two commands writing the compressed archives deterministically regenerate them. The investigator instructions include the full input bindings, recodings and canonical checks. A changed digest calls for comparing the inputs before interpreting any new result.
 
 ~~~sh
 .venv/bin/python -B research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001A/replay.py --check
@@ -26,6 +26,8 @@ Run in a checkout with NumPy, SciPy, SymPy, python-sat and the tracked knot chec
 .venv/bin/python -B research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/receiver.py
 .venv/bin/python -B research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/receipt_check.py
 ~~~
+
+The public checkout reproduced all three compressed scientific archives byte for byte. The 98,466-byte newborn archive has SHA-256 `9a9062e7370a4334455d88af4273dba57be12eb8eda1ec867a70387ce7d6f31a`. The literal clock source and the 304,295-byte receiver archive have SHA-256 `63d982e52e8d06a39fe6df21ac0a8a5a56d97059590c36a75cfed992f7d00e25` and `7efcebffabbc90a73f6c96f2a98ea63e81dce8aeef9238216d1a3b9ebf9db2bf` respectively. All 37 scientific and design inputs bound into the closing proof matched their digests in the public checkout.
 
 ## Report for the owner
 

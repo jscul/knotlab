@@ -1,0 +1,431 @@
+{
+  "audit_class": "V1 independently authored same-task replay",
+  "legal_moves_checked": "Exact equality of every reached state's complete enabled successors.",
+  "passed": true,
+  "per_law": {
+    "nae": {
+      "cells": 36,
+      "conditions": [
+        {
+          "complete_orders": 6,
+          "condition": "intact",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 1,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        },
+        {
+          "complete_orders": 15,
+          "condition": "intact",
+          "incoming_changes": [
+            2,
+            1
+          ],
+          "memory_decoded": [
+            2,
+            1
+          ],
+          "offer": 2,
+          "own_acknowledgments": [
+            1,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "01010",
+              "10001",
+              "00101"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 15
+        },
+        {
+          "complete_orders": 6,
+          "condition": "interrupted",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 1,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        },
+        {
+          "complete_orders": 15,
+          "condition": "interrupted",
+          "incoming_changes": [
+            1,
+            2
+          ],
+          "memory_decoded": [
+            1,
+            2
+          ],
+          "offer": 2,
+          "own_acknowledgments": [
+            0,
+            1
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "01010",
+              "10001",
+              "00101"
+            ]
+          ],
+          "states": 15
+        },
+        {
+          "complete_orders": 6,
+          "condition": "read_disabled",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 1,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        },
+        {
+          "complete_orders": 6,
+          "condition": "read_disabled",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 2,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        }
+      ],
+      "edges": 552,
+      "full_captures": {
+        "0": [
+          {
+            "allowed": 4094,
+            "arity": 12,
+            "possible": 4096
+          },
+          {
+            "allowed": 16382,
+            "arity": 14,
+            "possible": 16384
+          }
+        ],
+        "1": [
+          {
+            "allowed": 4094,
+            "arity": 12,
+            "possible": 4096
+          },
+          {
+            "allowed": 16382,
+            "arity": 14,
+            "possible": 16384
+          }
+        ]
+      },
+      "maximal_orders": {
+        "intact": 126,
+        "interrupted": 126,
+        "read_disabled": 72
+      }
+    },
+    "parity": {
+      "cells": 36,
+      "conditions": [
+        {
+          "complete_orders": 6,
+          "condition": "intact",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 1,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        },
+        {
+          "complete_orders": 15,
+          "condition": "intact",
+          "incoming_changes": [
+            2,
+            1
+          ],
+          "memory_decoded": [
+            2,
+            1
+          ],
+          "offer": 2,
+          "own_acknowledgments": [
+            1,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "01010",
+              "10001",
+              "00101"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 15
+        },
+        {
+          "complete_orders": 6,
+          "condition": "interrupted",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 1,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        },
+        {
+          "complete_orders": 15,
+          "condition": "interrupted",
+          "incoming_changes": [
+            1,
+            2
+          ],
+          "memory_decoded": [
+            1,
+            2
+          ],
+          "offer": 2,
+          "own_acknowledgments": [
+            0,
+            1
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "01010",
+              "10001",
+              "00101"
+            ]
+          ],
+          "states": 15
+        },
+        {
+          "complete_orders": 6,
+          "condition": "read_disabled",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 1,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        },
+        {
+          "complete_orders": 6,
+          "condition": "read_disabled",
+          "incoming_changes": [
+            1,
+            1
+          ],
+          "memory_decoded": [
+            1,
+            1
+          ],
+          "offer": 2,
+          "own_acknowledgments": [
+            0,
+            0
+          ],
+          "receiver_transcripts": [
+            [
+              "10010",
+              "00110"
+            ],
+            [
+              "10010",
+              "00110"
+            ]
+          ],
+          "states": 9
+        }
+      ],
+      "edges": 552,
+      "full_captures": {
+        "0": [
+          {
+            "allowed": 2048,
+            "arity": 12,
+            "possible": 4096
+          },
+          {
+            "allowed": 8192,
+            "arity": 14,
+            "possible": 16384
+          }
+        ],
+        "1": [
+          {
+            "allowed": 2048,
+            "arity": 12,
+            "possible": 4096
+          },
+          {
+            "allowed": 8192,
+            "arity": 14,
+            "possible": 16384
+          }
+        ]
+      },
+      "maximal_orders": {
+        "intact": 126,
+        "interrupted": 126,
+        "read_disabled": 72
+      }
+    }
+  },
+  "rejection_controls": [
+    "Missing enabled move",
+    "Fabricated enabled move"
+  ],
+  "submitted_data_sha256": "cce06163980a9661d97f30847614398e6acdd26eb22b358f686eebc0e63f59df",
+  "summary_sha256": "77287faf74417caf22ba9971f51050e50e571aa2b878177c3d7fba48491557da"
+}

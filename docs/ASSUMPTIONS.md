@@ -245,6 +245,8 @@ evidence: results and their status come from the records each entry links.
 | [A187](#a187--require-each-readers-offer-to-preserve-both-physical-knots-on-every-reached-word) | Require each reader's offer to preserve both physical knots on every reached word | scaffold | Assumed |
 | [A188](#a188--keep-the-other-newborn-records-unread-when-testing-three-readers) | Keep the other newborn records unread when testing three readers | scaffold | Assumed |
 | [A189](#a189--compare-a-current-third-at-a-return-with-a-three-donor-founding-group) | Compare a current third at a return with a three-donor founding group | scaffold | Assumed |
+| [A190](#a190--announce-a-fixed-newborn-inequality-through-measured-sibling-words) | Announce a fixed newborn inequality through measured sibling words | scaffold | Assumed |
+| [A191](#a191--require-a-keepers-answer-while-both-focal-questions-are-still-available) | Require a keeper’s answer while both focal questions are still available | scaffold | Assumed |
 
 ## Entries
 
@@ -4506,6 +4508,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Probabilities and three-reader scores depend on which names, marks, messages, records and phases are retained. Comparisons between newborns use supplied addresses, starts and matched grants.
 - **Challenge.** Compare an unread retained record, the selectively erased record with all other outcomes retained, a diagonal mixture, and a fully tagged unconditional growth operation. Rebuild the marked probabilities under both knot laws.
 - **History.**
+  - 2026-11-21 · On one fixed receiver, clean heralding and the conditional weight of accepted sibling records must both be paid. The optimum randomized diagonal herald among clean outcomes weighs 45/775279. Its actual chance per original launch is 45/1190896. A supplied change question on one sibling can beat this. All erasure ports are retained. [Sibling announcements and receiver births](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/decision.md)
   - 2026-11-21 · The same unannounced newborn table admits a common explanation with the past retained and after coherent erasure. On the four-place source the clean port weighs 25009/38416 of launches. The retained and clean tables differ even though each has its own common model. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
   - 2026-11-21 · All old loose names are paid in a funded round. On the first three fresh child readers, counting versus coherently adding the past gives signed scores 10/27 and 54/95. In a neutral-cap comparison the ordinary old local matrix matches across sources. The squared-count old local matrix already differs. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
   - 2026-11-21 · Opened during prospective review for the spent-past comparison. [Study](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/results.md)
@@ -4531,6 +4534,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The class of physically measured tables, their complement symmetry in not-all-equal, the meaning of a common explanation and the interpretation of a clean herald.
 - **Challenge.** Report an accessible exterior record before the settings, retain its launch denominator and test its complete table. Compare an unchanged ordinary diagonal, an original isolated knot and a placement on separate children.
 - **History.**
+  - 2026-11-21 · Keeping or revealing a named portion of the exterior has a sharp consequence. With one fixed ordinary sibling name unavailable, no announcement reaches 1/28 on the recorded orientation inequality. All nine loose names suffice. Once the next cut spends those names, a later structural or new-value read has different access. [Sibling announcements and receiver births](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/decision.md)
   - 2026-11-21 · Every eligible same-holder newborn has a common explanation on all eight settings. The first not-all-equal child instead violates a probability bound by 1/14 conditional on either named paid value (each occurs on half the launches). Announcing one uniform nine-bit sibling word at fixed orientation also gives this violation. Pooling opposite orientations restores the common explanation. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
   - 2026-11-21 · Opened during prospective design for the whole newborn table. [Study design](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001A/preregistration.md)
 
@@ -4545,3 +4549,27 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-21 · Fourteen named starts per law, including a refused cut and broken senders, distinguish a matched earlier receiver from a globally identical start. The full donor/parent/grant record and joint states on the earlier 262 names match. The hidden spent support exchanges a marked payment with an unmarked one. Crossing third eligibility at fixed contacts leaves the counts unchanged, and the single-addition mark counts one in every full comparison. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
   - 2026-11-21 · Opened in prospective design. [Three-donor design](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/preregistration.md)
+
+### A190 · Announce a fixed newborn inequality through measured sibling words
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Use one actual first child of the homogeneous four-place source, one orientation and the ordinary-or-change inequality on its three loose names. Set the excess threshold at 1/28. Before any setting use a diagonal announcement on the nine other loose names. Price deterministic predicates separately from flags supplied with independent randomness. Include the whole clean instrument's launch cost.
+- **Why.** The historical all-zero sibling word identifies an orientation at excess 1/14. A pooled flag can meet a weaker threshold even when it admits a second paid orientation. A private random seed is an additional resource.
+- **Rests on it.** The operational interpretation of a successful branch, the permitted optimal rules, their denominators and the distinction between records inferred externally and writes made by ordinary growth.
+- **Challenge.** Reverse the orientation, retain or coherently erase the past, hide one of the nine names, change the excess to 1/14 and let a single independent fair bit assist. Test parity, keep declines and price any public writer explicitly. A future ordinary receiver would need to supply the decision and its delivery.
+- **History.**
+  - 2026-11-21 · The all-zero word alone is the optimal deterministic flag at fixed orientation under both preparations. A single fair extra bit is insufficient. A general independent coin can include part of a boundary word. Deterministic flags retain 1/14 excess, while the best randomized flags give 1/28. One supplied sibling change read reaches excess 2/53 on 53/537824 full launches. [Sibling announcements and receiver births](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/decision.md)
+  - 2026-11-21 · Opened with the prospective [sibling announcement design](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001A/preregistration.md).
+
+### A191 · Require a keeper’s answer while both focal questions are still available
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** A living receiver records its actual paid births, parents, fresh distinctions and funding failures. Test a fuller reader with ordinary access to named new values and particular paid inputs. For a reusable orientation-only write, require a real recorded outcome before the setting choice, an intact seven-word preparation, and the two focal questions still accessible on that same reached cut or transported by a demonstrated lawful operation.
+- **Why.** Conditioning an old word, seeing a late value with a statistical bias, and writing an orientation at a still-accessible source have different effects on subsequent questions.
+- **Rests on it.** The original clock and its lasting branches, the three-place parity and four-place not-all-equal controls, word and birth readers, chosen subsets of paid records, prospective parity and not-all-equal joins, and the meaning of a successful record.
+- **Challenge.** Read one or two pair births and all later new names, supply a third pair, retain or erase which-word tags, and compare ordinary grants with both smaller registered grants. Give an ideal writer the old value or all nine sibling marks as controls. Ask whether a different native interaction can retain the value while the original questions remain available.
+- **History.**
+  - 2026-11-21 · At the first cut the focal paid value and three loose target names coexist. On the cut paying the pairs, the old targets become twice-held. The common-stage requirement therefore distinguishes immediate paid-name access and later statistical inference from an independently written flag. Full future new values with up to two prior payment pairs never certify the orientation in the frozen class. [Sibling announcements and receiver births](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/decision.md)
+  - 2026-11-21 · Opened with the revised [receiver design](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001B/preregistration.md).

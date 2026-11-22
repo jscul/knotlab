@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**402 current results** and 5 superseded ones, from 594 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**402 current results** and 5 superseded ones, from 595 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 594 epics with their closures
+- [Epics](#epics): all 595 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1931,6 +1931,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-21 | Recognizing and discovering patterns in knot growth (`GROWTH-STATISTICS-20261121-001`) | [closure](proofs/GROWTH-STATISTICS-20261121-001Z/GROWTH-STATISTICS-20261121-001Z-P001_synthesis/proof.md) | [folder](research/GROWTH-STATISTICS-20261121-001/) |
 | 2026-11-21 | An idle exchange and exact closure probabilities for trees (`IDLE-PHASE-AND-TREE-CLOSURE-20261121-001`) | [closure](proofs/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001Z/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001Z-P001_synthesis/proof.md) | [folder](research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/) |
 | 2026-11-21 | Knot counts and one extra meeting (`KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001`) | [closure](proofs/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001Z/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001Z-P001_synthesis/proof.md) | [folder](research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/) |
+| 2026-11-21 | A ration game on fresh knot-grown starts (`KNOT-RATION-GAME-20261121-001`) | [closure](proofs/KNOT-RATION-GAME-20261121-001Z/KNOT-RATION-GAME-20261121-001Z-P001_synthesis/proof.md) | [folder](research/KNOT-RATION-GAME-20261121-001/) |
 | 2026-11-21 | A clock’s last distinction and two private sender returns (`LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001`) | [closure](proofs/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001Z/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001Z-P001_synthesis/proof.md) | [folder](research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001/) |
 | 2026-11-21 | Eight newborn settings and a return paid by three original donors (`NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001`) | [closure](proofs/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001Z/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001Z-P001_synthesis/proof.md) | [folder](research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/) |
 | 2026-11-21 | Shared donors and the sign response of a later rejoining (`SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001`) | [closure](proofs/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001Z/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001Z-P001_synthesis/proof.md) | [folder](research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001/) |

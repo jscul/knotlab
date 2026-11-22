@@ -1,0 +1,851 @@
+{
+  "schema_version": 1,
+  "law": "nae",
+  "seed": 208304,
+  "tape": 0,
+  "source_key": "1(2()2(2())3())",
+  "start_holder": 2,
+  "policy": "sensing",
+  "sensor_enabled": true,
+  "initial_energy": 6,
+  "max_energy": 10,
+  "ration_gain": 4,
+  "growth_turns": [
+    1,
+    5
+  ],
+  "initial_holdings": [
+    [
+      12,
+      1,
+      10,
+      5
+    ],
+    [
+      12,
+      13,
+      4,
+      7
+    ],
+    [
+      1,
+      9,
+      2
+    ],
+    [
+      13,
+      11,
+      8,
+      3
+    ],
+    [
+      4,
+      0,
+      6
+    ]
+  ],
+  "turns": 28,
+  "meals": 6,
+  "energy": 0,
+  "wasted": 2,
+  "reason": "death",
+  "events": [
+    {
+      "turn": 1,
+      "energy_after": 5,
+      "terminal": false,
+      "growth": {
+        "status": "born",
+        "formation": 1,
+        "shortages": [],
+        "births": [
+          {
+            "holder": 5,
+            "formation": 1,
+            "payments": [
+              [
+                0,
+                10
+              ],
+              [
+                3,
+                11
+              ]
+            ],
+            "grants": [
+              14,
+              15
+            ],
+            "demand": 2,
+            "holdings": [
+              10,
+              11,
+              14,
+              15
+            ]
+          },
+          {
+            "holder": 6,
+            "formation": 1,
+            "payments": [
+              [
+                0,
+                5
+              ],
+              [
+                4,
+                0
+              ]
+            ],
+            "grants": [
+              16
+            ],
+            "demand": 1,
+            "holdings": [
+              5,
+              0,
+              16
+            ]
+          },
+          {
+            "holder": 7,
+            "formation": 1,
+            "payments": [
+              [
+                1,
+                7
+              ],
+              [
+                2,
+                9
+              ]
+            ],
+            "grants": [
+              17
+            ],
+            "demand": 1,
+            "holdings": [
+              7,
+              9,
+              17
+            ]
+          },
+          {
+            "holder": 8,
+            "formation": 1,
+            "payments": [
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                6
+              ]
+            ],
+            "grants": [
+              18,
+              19
+            ],
+            "demand": 2,
+            "holdings": [
+              8,
+              6,
+              18,
+              19
+            ]
+          },
+          {
+            "holder": 9,
+            "formation": 1,
+            "payments": [
+              [
+                2,
+                2
+              ]
+            ],
+            "grants": [
+              20,
+              21
+            ],
+            "demand": 1,
+            "holdings": [
+              2,
+              20,
+              21
+            ]
+          },
+          {
+            "holder": 10,
+            "formation": 1,
+            "payments": [
+              [
+                3,
+                3
+              ]
+            ],
+            "grants": [
+              22,
+              23
+            ],
+            "demand": 2,
+            "holdings": [
+              3,
+              22,
+              23
+            ]
+          }
+        ]
+      },
+      "holder_before": 2,
+      "holder_after": 0,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "start",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 0,
+      "distinction": 1,
+      "consumed": false,
+      "energy_before": 6,
+      "wasted": 0,
+      "rations_remaining": 6
+    },
+    {
+      "turn": 2,
+      "energy_after": 4,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 0,
+      "holder_after": 6,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 4,
+      "action": "move",
+      "slot": 3,
+      "distinction": 5,
+      "consumed": false,
+      "energy_before": 5,
+      "wasted": 0,
+      "rations_remaining": 6
+    },
+    {
+      "turn": 3,
+      "energy_after": 7,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 6,
+      "holder_after": 6,
+      "food_sensor": true,
+      "food_before": true,
+      "previous": "move",
+      "available_slots": 2,
+      "action": "eat",
+      "slot": null,
+      "distinction": null,
+      "consumed": true,
+      "energy_before": 4,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 4,
+      "energy_after": 6,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 6,
+      "holder_after": 4,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "eat",
+      "available_slots": 2,
+      "action": "move",
+      "slot": 0,
+      "distinction": 0,
+      "consumed": false,
+      "energy_before": 7,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 5,
+      "energy_after": 5,
+      "terminal": false,
+      "growth": {
+        "status": "born",
+        "formation": 2,
+        "shortages": [],
+        "births": [
+          {
+            "holder": 11,
+            "formation": 2,
+            "payments": [
+              [
+                5,
+                14
+              ],
+              [
+                6,
+                16
+              ],
+              [
+                8,
+                18
+              ]
+            ],
+            "grants": [
+              24
+            ],
+            "demand": 1,
+            "holdings": [
+              14,
+              16,
+              18,
+              24
+            ]
+          },
+          {
+            "holder": 12,
+            "formation": 2,
+            "payments": [
+              [
+                5,
+                15
+              ],
+              [
+                10,
+                22
+              ]
+            ],
+            "grants": [
+              25
+            ],
+            "demand": 1,
+            "holdings": [
+              15,
+              22,
+              25
+            ]
+          },
+          {
+            "holder": 13,
+            "formation": 2,
+            "payments": [
+              [
+                7,
+                17
+              ],
+              [
+                9,
+                20
+              ]
+            ],
+            "grants": [
+              26
+            ],
+            "demand": 1,
+            "holdings": [
+              17,
+              20,
+              26
+            ]
+          },
+          {
+            "holder": 14,
+            "formation": 2,
+            "payments": [
+              [
+                8,
+                19
+              ],
+              [
+                10,
+                23
+              ]
+            ],
+            "grants": [
+              27
+            ],
+            "demand": 1,
+            "holdings": [
+              19,
+              23,
+              27
+            ]
+          },
+          {
+            "holder": 15,
+            "formation": 2,
+            "payments": [
+              [
+                9,
+                21
+              ]
+            ],
+            "grants": [
+              28,
+              29
+            ],
+            "demand": 1,
+            "holdings": [
+              21,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      "holder_before": 4,
+      "holder_after": 8,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 0,
+      "distinction": 6,
+      "consumed": false,
+      "energy_before": 6,
+      "wasted": 0,
+      "rations_remaining": 10
+    },
+    {
+      "turn": 6,
+      "energy_after": 8,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 8,
+      "holder_after": 8,
+      "food_sensor": true,
+      "food_before": true,
+      "previous": "move",
+      "available_slots": 4,
+      "action": "eat",
+      "slot": null,
+      "distinction": null,
+      "consumed": true,
+      "energy_before": 5,
+      "wasted": 0,
+      "rations_remaining": 9
+    },
+    {
+      "turn": 7,
+      "energy_after": 7,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 8,
+      "holder_after": 3,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "eat",
+      "available_slots": 4,
+      "action": "move",
+      "slot": 3,
+      "distinction": 8,
+      "consumed": false,
+      "energy_before": 8,
+      "wasted": 0,
+      "rations_remaining": 9
+    },
+    {
+      "turn": 8,
+      "energy_after": 6,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 3,
+      "holder_after": 1,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 4,
+      "action": "move",
+      "slot": 1,
+      "distinction": 13,
+      "consumed": false,
+      "energy_before": 7,
+      "wasted": 0,
+      "rations_remaining": 9
+    },
+    {
+      "turn": 9,
+      "energy_after": 5,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 1,
+      "holder_after": 7,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 4,
+      "action": "move",
+      "slot": 3,
+      "distinction": 7,
+      "consumed": false,
+      "energy_before": 6,
+      "wasted": 0,
+      "rations_remaining": 9
+    },
+    {
+      "turn": 10,
+      "energy_after": 8,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 7,
+      "holder_after": 7,
+      "food_sensor": true,
+      "food_before": true,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "eat",
+      "slot": null,
+      "distinction": null,
+      "consumed": true,
+      "energy_before": 5,
+      "wasted": 0,
+      "rations_remaining": 8
+    },
+    {
+      "turn": 11,
+      "energy_after": 7,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 7,
+      "holder_after": 2,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "eat",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 0,
+      "distinction": 9,
+      "consumed": false,
+      "energy_before": 8,
+      "wasted": 0,
+      "rations_remaining": 8
+    },
+    {
+      "turn": 12,
+      "energy_after": 6,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 2,
+      "holder_after": 9,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 2,
+      "distinction": 2,
+      "consumed": false,
+      "energy_before": 7,
+      "wasted": 0,
+      "rations_remaining": 8
+    },
+    {
+      "turn": 13,
+      "energy_after": 9,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 9,
+      "food_sensor": true,
+      "food_before": true,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "eat",
+      "slot": null,
+      "distinction": null,
+      "consumed": true,
+      "energy_before": 6,
+      "wasted": 0,
+      "rations_remaining": 7
+    },
+    {
+      "turn": 14,
+      "energy_after": 8,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 13,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "eat",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 9,
+      "wasted": 0,
+      "rations_remaining": 7
+    },
+    {
+      "turn": 15,
+      "energy_after": 10,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 13,
+      "holder_after": 13,
+      "food_sensor": true,
+      "food_before": true,
+      "previous": "move",
+      "available_slots": 2,
+      "action": "eat",
+      "slot": null,
+      "distinction": null,
+      "consumed": true,
+      "energy_before": 8,
+      "wasted": 1,
+      "rations_remaining": 6
+    },
+    {
+      "turn": 16,
+      "energy_after": 9,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 13,
+      "holder_after": 9,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "eat",
+      "available_slots": 2,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 10,
+      "wasted": 0,
+      "rations_remaining": 6
+    },
+    {
+      "turn": 17,
+      "energy_after": 8,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 15,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 0,
+      "distinction": 21,
+      "consumed": false,
+      "energy_before": 9,
+      "wasted": 0,
+      "rations_remaining": 6
+    },
+    {
+      "turn": 18,
+      "energy_after": 10,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 15,
+      "holder_after": 15,
+      "food_sensor": true,
+      "food_before": true,
+      "previous": "move",
+      "available_slots": 1,
+      "action": "eat",
+      "slot": null,
+      "distinction": null,
+      "consumed": true,
+      "energy_before": 8,
+      "wasted": 1,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 19,
+      "energy_after": 9,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 15,
+      "holder_after": 9,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "eat",
+      "available_slots": 1,
+      "action": "move",
+      "slot": 0,
+      "distinction": 21,
+      "consumed": false,
+      "energy_before": 10,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 20,
+      "energy_after": 8,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 13,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 9,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 21,
+      "energy_after": 7,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 13,
+      "holder_after": 9,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 2,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 8,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 22,
+      "energy_after": 6,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 13,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 7,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 23,
+      "energy_after": 5,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 13,
+      "holder_after": 9,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 2,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 6,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 24,
+      "energy_after": 4,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 13,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 5,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 25,
+      "energy_after": 3,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 13,
+      "holder_after": 9,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 2,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 4,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 26,
+      "energy_after": 2,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 15,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 0,
+      "distinction": 21,
+      "consumed": false,
+      "energy_before": 3,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 27,
+      "energy_after": 1,
+      "terminal": false,
+      "growth": null,
+      "holder_before": 15,
+      "holder_after": 9,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 1,
+      "action": "move",
+      "slot": 0,
+      "distinction": 21,
+      "consumed": false,
+      "energy_before": 2,
+      "wasted": 0,
+      "rations_remaining": 5
+    },
+    {
+      "turn": 28,
+      "energy_after": 0,
+      "terminal": true,
+      "growth": null,
+      "holder_before": 9,
+      "holder_after": 13,
+      "food_sensor": false,
+      "food_before": false,
+      "previous": "move",
+      "available_slots": 3,
+      "action": "move",
+      "slot": 1,
+      "distinction": 20,
+      "consumed": false,
+      "energy_before": 1,
+      "wasted": 0,
+      "rations_remaining": 5
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Bind the game and its reference comparison
+
+Source contribution is zero. The [game experiment](../../../research/KNOT-RATION-GAME-20261121-001/decision.md) supplies every empirical claim. It ran 3,072 training games and 2,048 evaluation games under the two laws. The records bind the actual growth, policies, energy ledgers and event hashes. In the supplied game the local sensing script lived longest on the 64 held-out founder structures. The study leaves the wider learning and native memory goals open. See the [scientific referee handoff](../../../research/KNOT-RATION-GAME-20261121-001/referee_handoff.md).

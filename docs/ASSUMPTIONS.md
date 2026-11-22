@@ -241,6 +241,8 @@ evidence: results and their status come from the records each entry links.
 | [A183](#a183--a-complete-three-sign-reading-at-two-retained-keeper-banks) | A complete three-sign reading at two retained keeper banks | scaffold | Assumed |
 | [A184](#a184--an-unread-companion-stays-in-the-holding-throughout-a-split-knot-read) | An unread companion stays in the holding throughout a split-knot read | scaffold | Assumed |
 | [A185](#a185--compare-three-ordinary-weightings-on-the-same-lawful-support-and-growth-history) | Compare three ordinary weightings on the same lawful support and growth history | scaffold | Assumed |
+| [A186](#a186--add-the-pasts-of-a-loose-word-before-assigning-its-chance) | Add the pasts of a loose word before assigning its chance | scaffold | Assumed |
+| [A187](#a187--require-each-readers-offer-to-preserve-both-physical-knots-on-every-reached-word) | Require each reader's offer to preserve both physical knots on every reached word | scaffold | Assumed |
 
 ## Entries
 
@@ -4206,6 +4208,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The selected growth, closing and motion preparations, their history controls and schedulers, the supplied squared-weight instrument, and its conditional state after each outcome in [the erasure design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/preregistration.md).
 - **Challenge.** Keep an old which-word record, omit it, supply a complementary read of it, and interchange the outcome names. Compare the observed probabilities for the two singletons and the equal pair at each sign. A subsequent ordinary event that exploits their relative sign on the same preparation would change the physical conclusion.
 - **History.**
+  - 2026-11-21 · The previously known three-child clean score 54/95 requires the successful erasure port. Two separately drawn matching ends reproduce its ordinary frequencies with probability 95/4374, whereas the coherent port occurs with probability 95/216. Counting all coherent outcomes recovers the retained state. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
   - 2026-11-21 · Conditioning on the actual firing or on the classical controller's setting forces zero contrast. Forgetting such a record later keeps that zero. A distinguished output in a supplied signed measurement instead permits the whole-word contrast 1/4. [Study](../research/SHARED-DONOR-AND-SIGN-RESPONSE-20261121-001B/results.md)
   - 2026-11-20 · A supplied marked erasure on the positive not-all-equal ternary leaves a relative minus with probability 1/6. All 1,115 elementary outcomes of the 138 physical readings agreed between independently crossed signs. K2 alone states which positive completions exist. [Study](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/results.md)
   - 2026-11-20 · Recorded after prospective review and before collecting evidence on the frozen candidates. [Reviewed design](../research/JOINT-PARENTS-AND-ERASURE-20261120-001B/review_candidate_v2.md).
@@ -4474,6 +4477,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The per-launch capacity to supply both exact sign projections from this joined holding.
 - **Challenge.** Vary the placement, both knot laws, coherent and diagonal sources, and state what resolving an unread word adds.
 - **History.**
+  - 2026-11-21 · With two names shared instead of one, preserving both physical projections on every reached word gives zero exact single-copy success in either placement. For split not-all-equal names, permission to rely on coherent cancellation gives an explicit complete return at (7−√13)/90 per launch. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
   - 2026-11-21 · Compared both placements of the shared name, all four pairings of the ordinary laws, positive and fully dephased preparations, and the effect of giving the readers an additional observation on the companion. With the companion inaccessible the coherent not-all-equal optimum changes from zero to 1−√5/3 depending on placement. A fully projecting unread holding attached through that one name gives the same bound when each value has an exclusive unread completion. [The unread companion and three ordinary weightings](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
   - 2026-11-21 · Declared before the two studies ran. [Design and decision](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
 
@@ -4486,5 +4490,30 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Any claim that a binary law forces agreement of the three weighting procedures.
 - **Challenge.** Test every reveal order, nonuniform starting weights, nonconstant extension counts, the canonical knot test, and both ordinary knot laws.
 - **History.**
+  - 2026-11-21 · Equal old extension counts control full ordinary reweighting. When histories are added as coherent alternatives, distinct old rows reaching the same new word can also change a retained spectator’s weight. The unary not-all-equal example has three extensions of either input and two shared outputs. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
   - 2026-11-21 · Established the all-size, every-order affine classification with the uniform initial prior and the separate condition at each onto growth event. A fixed order, randomized order, nonuniform prior, attributed histories or unsupported old word can have a different verdict. The not-all-equal family changes the old pair under present-uniform weights while transport preserves it. Feasibility queries and count-biased coins require different information. [The unread companion and three ordinary weightings](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
   - 2026-11-21 · Declared before the two studies ran. [Design and decision](../research/UNREAD-COMPANION-AND-ORDER-FREE-WEIGHTING-20261121-001/decision.md)
+
+### A186 · Add the pasts of a loose word before assigning its chance
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** At each paid ordinary stage take the once-held names as the present. Count lawful completions by the twice-held names. One reading keeps a record of each completion. Another assigns each completion the same positive amplitude, removes that record and squares their sum. A supplied three-reader measurement may ask for a value or a change.
+- **Why.** A count of completions defines possible readings of the written holding. What an ordinary reader can still access as the end grows is a separate question.
+- **Rests on it.** Probabilities and three-reader scores depend on which names, marks, messages, records and phases are retained. Comparisons between newborns use supplied addresses, starts and matched grants.
+- **Challenge.** Compare an unread retained record, the selectively erased record with all other outcomes retained, a diagonal mixture, and a fully tagged unconditional growth operation. Rebuild the marked probabilities under both knot laws.
+- **History.**
+  - 2026-11-21 · All old loose names are paid in a funded round. On the first three fresh child readers, counting versus coherently adding the past gives signed scores 10/27 and 54/95. In a neutral-cap comparison the ordinary old local matrix matches across sources. The squared-count old local matrix already differs. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
+  - 2026-11-21 · Opened during prospective review for the spent-past comparison. [Study](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/results.md)
+
+### A187 · Require each reader's offer to preserve both physical knots on every reached word
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Supply a four-name starting holding of two ternaries with two readable names shared by identity. The companion-only name stays unread. The readers may make serial local offers with private work, measured outcomes and classical messages. Every offered transformation must obey both knots on each reached physical word. Compare this with requiring lawfulness on the prepared coherent state on each branch.
+- **Why.** An offer can send different allowed words toward the same forbidden word. Under a coherent reading their contributions may cancel. Whether that offer is permitted is a choice about measurement.
+- **Rests on it.** An exact meter requires both signs, their complete surviving data including private spectators, and an accessible physical record. The whole preparation and all refusals count.
+- **Challenge.** Split the shared names between the readers or place them together. Compare both laws in each holder, dephasing or tagging the preparation, readable heralds, and the two lawfulness tests.
+- **History.**
+  - 2026-11-21 · The sharp wordwise optimum is zero for all eight law-pair and placement holdings and both preparations. In the fully coherent divided not-all-equal holding, two otherwise forbidden paths cancel on the prepared state. The explicit changed-rule return weighs 1/45 under the first calibration and (7−√13)/90 after rescaling the same filter. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
+  - 2026-11-21 · Entered for the prospective comparison of two shared names. [Study](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001B/results.md)

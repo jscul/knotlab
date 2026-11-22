@@ -1,0 +1,46 @@
+# Referee handoff for the three-original return
+
+**Scientific status.** The submitted proof establishes the higher-original construction, its occupied-state comparison, and a zero activity-specific timing effect for the crossed fixed-gate class. Independent scientific referee pending. The prospective advisor cleared the design before observations. The native checks and the coordinator's independent reconstruction are validation within this research round. [Proof](../../proofs/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B-P001_three_donor_returns/proof.md) · [Results](results.md)
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| This attempt — a true original triple on the disputed return | **Status: Successful** | Both private signals arrive in the two-versus-one comparison |
+| Local direction — activity-specific effect on the fixed gate | Retire | Lifetimes reverse under two physical width changes and counts persist |
+| Broader exploration — hidden ordinary contact | Known alternatives | The 262-name projection can hide a change recovered on the full source |
+| Long-term goal — G5 Dynamics, with G1 Space from a law | Capability gained | Prebirth history and original joint state can miss a real clock option |
+
+**Primary reproduction.** Work from the repository root. The first command independently builds the fourteen starts, both laws, their physical cuts and four small calibrations. The second reads those literal holdings and reconstructs the receivers. Its complete small-support lists are compared with every direct parent and grant through rank five. It also calls the canonical knot checker on the actual three-name spent holder 116 and matches the projected factors to the complete real original ancestry of each enrolled primary comparison.
+
+```sh
+.venv/bin/python -B research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/native.py
+python3 -B research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/receiver.py
+```
+
+For one funded case, append `--case intact` to the second command. Each of the fourteen rows has its own original incidence. On every positive receiver, `S_first.critical.all_options` and `R_first.critical.all_options` store the candidate child additions, every true parent and every actual charged name at the disputed advancement. A loose name above the literal cuts is identified by its holder and the unique child it can fund in the identified genealogy. The O-free payer's entire prior inventory is archived. The exact sorted ancestry tables are stored once per distinct table and compared as complete records before their digests are written. A rooted deletion and the listed preceding support recover the actual input, and each receipt records the first two native levels in both laws. The `whole_state_on_actual_originals` section binds every selected S-first projected-state calculation to the earlier donor IDs reached by exhaustive actual parent descent. The independent native receipt supplies the factors, inclusion witnesses, complete rows and actual first-cut integer name bills. [Receiver code](receiver.py) · [Receiver archive](receipts.json.gz) · [Native code](native.py) · [Native archive](native.json.gz) · [Physical check summary](native_checks.md)
+
+**Core challenges for scientific review.** First verify the full local shapes G=abw, az, bz and abwz, especially the w surplus unary. In the small full gate, child 38 retains all four real originals just as its predecessor does. It is distinguished by the true unary descent. Check the disjoint-block cover, the local restriction on the missing wz pair, the four-rank separation of translates, the complete positive-age predecessor lists and the floor of two on the unary branch. All 156 small births per law through rank five match the predicted full histories and grants. The actual source's first p-side G is holder 122, paid by original names 7,91,732. The active receiver's rank-22 ancestry contains that very founding group. The switched c₈ continuation contains holder 123, funded by 91,239,746.
+
+Next recover M from the complete rank-21 parent history. It has 321 rooted subhistories, 16 distinct original donors and 262 names. The original holdings, used contacts and whole projected factors agree on identical original names. At the two literal native ranks even the earlier paid and fresh names agree in the main matched pair. From rank 6 there was already a different *unused* alternative in the past. At the common rank-21 state four of its 26 future additions replace physical participants. Inspect all 26 for p regardless of where it might be added. Exactly one intact child and no switched child includes p. The selected child has grant 33 from three true parents with 26,32,33 in both. Supply both exterior donor readings as challenges. The old thirteen-name witness expands from 4,096 to 8,192 parity words and from 8,190 to 8,192 not-all-equal words on the fixed physical names. The retained twelve allow all 4,096 even in the intact source. Differing full-source states eliminate any claim of globally identical preparations.
+
+Finally test the registered third before the selected child. In S-first order the H-rooted family had a genuine q return at 17. Exactly one intact candidate is paid by a qualifying current member. The near family reaches rank 20 and is extinct at rank 21. With R first it can still pay the alternate child at the sender arm but neither adds p nor pays for the h-bearing tick candidate under the qualifying read. The untyped ordinary incoming member pays in both arms. Restoring indefinite activity on the switched contact leaves its count at one. Ending the third at the same intact contact leaves two. Its lifetime and its real present payment therefore separate from control of the tick. The sender's successive private turns, the selected receiver's first admissions, the stronger all-origin admissions and a physical source stall have separate verdicts.
+
+**Denominators and losses.** Fourteen named starts per law, with thirteen funded and eleven admitting both genuine private sender pulses. Two original sender breaks remove those specific signals. The one-short source removes one of p's nine due distinctions and yields no child. All 32,768 balanced chains of each admitting start agree on its inclusive tick count, with 8,192 for each of four paired receiver ranks. Open-chain multiplicity does not give a population weighting. The small paid tests are additional theorem checks and the unneeded duplicate-donor fallback has zero enrollments. The two independent raw reconstructions do not establish external scientific refereeing or novelty.
+
+**Authority.** The original candidate required revision. Its strongest objection concerned accidental erasure of a physically retained name. The approved second candidate requires exact old-name retention and independent checking of all potential payers, including the ordinary substitute. The second review also challenged attribution to the third when a different parent could still pay. The preflight file preserves the Partial manifest at activation. The final manifest binds the research record. [First candidate](design_candidate_1.md) · [Approved second candidate](design_candidate_2.md) · [Independent prospective reviews](advisor_receipt.json) · [Byte-identical written freeze](preregistration.md) · [Partial authority](../../proofs/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B-P001_three_donor_returns/preflight_manifest.json) · [Terminal manifest](../../proofs/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B-P001_three_donor_returns/manifest.json)
+
+**Next step:** Full pivot — No next action selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Repeat a qualifying-width change on the same gate | 0/3 — None | 3/3 — Ready | Apply the proved roster invariance → identical clock opportunities | Alternative · deferred |
+| 2 | Seek a different ordinary mechanism for current third payment | 2/3 — Substantial | 1/3 — Stated | Identify a changed native payment at matched founding opportunities → reassess | Alternative · deferred |
+
+**STOP** this study. The paid controls settle what the marked width can accomplish at this gate. New evidence of an activity-dependent payment at the same original opportunities would reopen the broader question. No further round has been started.
+
+**Corrections:** None. B283's two-donor occupied-state theorem keeps its original assumptions.
+
+**Goals:** B285 under G5 Dynamics, with G1. The higher-original occupied-state counterexample is attained. Attribution to sustained activity outside the registered class stays open.
+
+**Assumptions:** A171 retained. A189 tested with both laws, both alternative tie choices, all balanced chains and the whole-state challenge.
+
+**Scaffolds:** Private source returns and their actual receiving lineage, external original donors w and z, decision at the pre-existing p mark, physical q family, the w-width qualification and selected or all-origin admissions. The fixed fourteen-start sample is exhaustive only for these preparations.

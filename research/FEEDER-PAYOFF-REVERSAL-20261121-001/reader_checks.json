@@ -1,0 +1,497 @@
+{
+  "actions": {
+    "forced_rows": 3456,
+    "full_offer_and_indexed_word_equality_rows": 1728,
+    "natural_bites": 636,
+    "natural_rows": 1728,
+    "rows_sha256": "91f113cb2ff5f09e2b3a54fc9906d1812db38d1e2b48877b4dc1b854f373a663"
+  },
+  "arithmetic": {
+    "all_carry_and_borrow_lengths_up_to": 32,
+    "exact_signed_training_limit": 2147483647,
+    "operational_fit_maximum_eligible_bites": 128,
+    "rows": 132,
+    "rows_sha256": "ea784d320175836fe448c98fb093043dd34cb2988e9e6e6a9780dcf9a49b9c05"
+  },
+  "bound_sources": {
+    "inherited_keeper.py": "ceeb3a6114868724e804d1f3f6ce8cd40fa9e13880b7c3250b43f13cf185c32c",
+    "reader.py": "da076d54e50278caaa9e6c6110454e34ebc2613679f4b734024535ae724915c3",
+    "reader_check.py": "fd7b75c222a80fb83fac375e597b088bc035cf09f44ab1a66275a74851ffc966",
+    "reader_design.md": "9f64853a2dd950e11867cf158edb4e4c1f25e234c2e9cfa157cb5a48984691ba"
+  },
+  "evidence": "synthetic structural and public-transition calibrations; no held-out games sampled",
+  "explicit_refusals": {
+    "damaged_donor_word": "Signed audit value disagrees with transported physical word",
+    "deployed_counterfactual_receipt": "A replacement comparison receipt requires training and a public bit",
+    "different_starting_observation": "Missing issued decision for this public observation",
+    "interference_outside_checkpoint": "Prepare the recipient before a causal intervention",
+    "missing_checkpoint": "A physical action requires a prepared observation",
+    "missing_real_move": "The public ordinary move must supply its actual outward slot",
+    "nonbit_prefix": "A declared probe must be a bit",
+    "occupied_preparation": "Complete or reset the preceding decision before preparing another",
+    "undisplayed_control": "Outward receipt does not name an actually available move",
+    "unpaid_move_made_energy": "Observed energy contradicts the public ration cost or receipt",
+    "wrong_physical_action": "Reported bit disagrees with the issued physical action"
+  },
+  "independently_audited_detailed_events": {
+    "changed": 4924,
+    "equal operands": 1092,
+    "external token replacement": 402,
+    "guard refused": 66336
+  },
+  "prepared_interventions": [
+    {
+      "erased_bit": 1,
+      "law": "nae",
+      "observed_first_memory": "101",
+      "original_bits": [
+        1,
+        0
+      ],
+      "ready": "100",
+      "reciprocal_changed_pairs": 30,
+      "restored_entire_word": true,
+      "route": "A",
+      "transferred_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "erased_bit": 1,
+      "law": "nae",
+      "observed_first_memory": "101",
+      "original_bits": [
+        0,
+        1
+      ],
+      "ready": "100",
+      "reciprocal_changed_pairs": 30,
+      "restored_entire_word": true,
+      "route": "B",
+      "transferred_bits": [
+        1,
+        0
+      ]
+    },
+    {
+      "erased_bit": 1,
+      "law": "parity",
+      "observed_first_memory": "101",
+      "original_bits": [
+        1,
+        0
+      ],
+      "ready": "100",
+      "reciprocal_changed_pairs": 30,
+      "restored_entire_word": true,
+      "route": "A",
+      "transferred_bits": [
+        0,
+        1
+      ]
+    },
+    {
+      "erased_bit": 1,
+      "law": "parity",
+      "observed_first_memory": "101",
+      "original_bits": [
+        0,
+        1
+      ],
+      "ready": "100",
+      "reciprocal_changed_pairs": 30,
+      "restored_entire_word": true,
+      "route": "B",
+      "transferred_bits": [
+        1,
+        0
+      ]
+    }
+  ],
+  "receipt_control_matrix": {
+    "public_before_energies": [
+      1,
+      7,
+      10
+    ],
+    "rows": 108,
+    "rows_sha256": "09e18dc26c074e46852dfd72f6b88adb00fe21db826fce4d37594b7add3b2f20"
+  },
+  "route": {
+    "actual_move_or_refusal_rows": 96,
+    "bite_stays_checked": 96,
+    "rows_sha256": "16cc5ed8af9f26351737482381360d12d80c6dd64c10ca4c17ff46fe616918d8"
+  },
+  "structure": {
+    "actual_holder_widths": {
+      "C": 65,
+      "H": 152,
+      "K": 4,
+      "M": 4,
+      "R": 4
+    },
+    "canonical_representative_four_place_checker": {
+      "nae": {
+        "allowed": 14,
+        "canonical": true,
+        "width": 4
+      },
+      "parity": {
+        "allowed": 8,
+        "canonical": true,
+        "width": 4
+      }
+    },
+    "full_projection_argument": [
+      "Every leaf has one private slack and shares its other names only with H. Any allowed H word extends separately to each leaf. At parity its private slack fixes parity. At NAE choose a slack opposite any already assigned mark.",
+      "Any allowed leaf word extends to H using the private H slack, and to the other leaves using their respective private slacks. Thus every displayed full relation is the local projection of the actual joint system.",
+      "At all five actual widths both full relations have a forbidden word, a permitted word, and every complete assignment after forgetting any mark has a completion. The finite check on four marks represents M, K and R exactly; the construction proves the large widths without materializing their truth tables."
+    ],
+    "maximum_holders_per_name": 2,
+    "names": 156
+  },
+  "study": "FEEDER-PAYOFF-REVERSAL-20261121-001",
+  "synthetic_balanced_exposure": {
+    "eight_bites_per_fixture": true,
+    "purpose": "Synthetic wiring calibration; independent primary training uses actual paid game bites.",
+    "trained": {
+      "nae/0/0/count": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "5ea8fb43cbccc41cf72ddbf86b76c794d3ea370b356713fa7a735bb672c1d518"
+      },
+      "nae/0/0/outcome": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 2,
+        "score_trail_sha256": "9a5513c7bb59c22a68231f1803b17195f6e92b3a3835b2249711bc69583c07e7"
+      },
+      "nae/0/0/shuffled": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "f24fe1fe8fdbf219ea275b3168c57531ce7d06f570357470f283fd1e39b7ea36"
+      },
+      "nae/0/1/count": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "0be60c13d2acccee9e1c42816d28609a30f7b77c2f259c79269280f9fa2a0cab"
+      },
+      "nae/0/1/outcome": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 2,
+        "score_trail_sha256": "6c6ef9ab1b88e91100fe3962c2a46af220fdc2d76f906a023c2342c7b74b467c"
+      },
+      "nae/0/1/shuffled": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "f656cc93517c4ce521fdfbbc77de5f3d24dd86dab565ffd50ed829076d9eec8c"
+      },
+      "nae/1/0/count": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "effdf2ccd1f2bc426e8ce2791b60f3bbc996d4557da0d1f127fc16db63a9ece9"
+      },
+      "nae/1/0/outcome": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": -2,
+        "score_trail_sha256": "12122a684b1bfc3c12ef03a494343dde700160507cc9011f091f72f084b045f9"
+      },
+      "nae/1/0/shuffled": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "ec5f2614df24516f9401eb0eb58c2f655704788b66519d7b06fda3bf11cd0e91"
+      },
+      "nae/1/1/count": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "92e7abef099fbc271725616f856fd4ec7a408af677406c4f5147faf130faef09"
+      },
+      "nae/1/1/outcome": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": -2,
+        "score_trail_sha256": "ff920ae0e62fc20aafccdc57f488c4daa6ae4b0adba77c7d0852e6fe7556f431"
+      },
+      "nae/1/1/shuffled": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "e84a92054b2da89fed9a706efc82011a792c046a67c32f94c0170320d0f74a1b"
+      },
+      "parity/0/0/count": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "5ea8fb43cbccc41cf72ddbf86b76c794d3ea370b356713fa7a735bb672c1d518"
+      },
+      "parity/0/0/outcome": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 2,
+        "score_trail_sha256": "9a5513c7bb59c22a68231f1803b17195f6e92b3a3835b2249711bc69583c07e7"
+      },
+      "parity/0/0/shuffled": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "f24fe1fe8fdbf219ea275b3168c57531ce7d06f570357470f283fd1e39b7ea36"
+      },
+      "parity/0/1/count": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "0be60c13d2acccee9e1c42816d28609a30f7b77c2f259c79269280f9fa2a0cab"
+      },
+      "parity/0/1/outcome": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 2,
+        "score_trail_sha256": "6c6ef9ab1b88e91100fe3962c2a46af220fdc2d76f906a023c2342c7b74b467c"
+      },
+      "parity/0/1/shuffled": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "f656cc93517c4ce521fdfbbc77de5f3d24dd86dab565ffd50ed829076d9eec8c"
+      },
+      "parity/1/0/count": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "effdf2ccd1f2bc426e8ce2791b60f3bbc996d4557da0d1f127fc16db63a9ece9"
+      },
+      "parity/1/0/outcome": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": -2,
+        "score_trail_sha256": "12122a684b1bfc3c12ef03a494343dde700160507cc9011f091f72f084b045f9"
+      },
+      "parity/1/0/shuffled": {
+        "public_payment_sequence": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "score": 0,
+        "score_trail_sha256": "ec5f2614df24516f9401eb0eb58c2f655704788b66519d7b06fda3bf11cd0e91"
+      },
+      "parity/1/1/count": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "92e7abef099fbc271725616f856fd4ec7a408af677406c4f5147faf130faef09"
+      },
+      "parity/1/1/outcome": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": -2,
+        "score_trail_sha256": "ff920ae0e62fc20aafccdc57f488c4daa6ae4b0adba77c7d0852e6fe7556f431"
+      },
+      "parity/1/1/shuffled": {
+        "public_payment_sequence": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "score": 0,
+        "score_trail_sha256": "e84a92054b2da89fed9a706efc82011a792c046a67c32f94c0170320d0f74a1b"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Reading the three separate results
+
+Under either knot law 456/456 matched memory exchanges reversed both choices. Over 4,096 fresh paired lifetimes per law the outcome learner averaged 9.130 turns and the count/current-only reader 9.168. The equal-version difference −0.0376 had a whole-founder 95% interval spanning zero under both laws. The forecast was learned; longer survival over counting was unresolved.
+
+The [training and exposure receipt](../../../artifacts/FEEDER-PAYOFF-REVERSAL-20261121-001A/FEEDER-PAYOFF-REVERSAL-20261121-001A-E001_credit/result.json) records what the bot actually experienced. The [intervention and survival receipt](../../../artifacts/FEEDER-PAYOFF-REVERSAL-20261121-001B/FEEDER-PAYOFF-REVERSAL-20261121-001B-E001_deployment/result.json) binds the fixed-state comparison and complete games. The [decision](../../../research/FEEDER-PAYOFF-REVERSAL-20261121-001/decision.md) distinguishes those evidence classes. The synthesis contributes zero new source facts. Independent scientific referee pending.

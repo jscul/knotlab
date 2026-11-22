@@ -4730,6 +4730,7 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Change the multiplicities and number of original holders, compare old and new records and both transition weightings, retain false terminal answers without a ready herald, and contrast the unaided source with a scheduled writer, one missing offer, inverse, disconnection and transported marks. A larger source with a native call would extend the tested class.
 - **History.**
   - 2026-11-22 · Opened for the [bounded search for an early keeper](../research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001B/preregistration.md).
+  - 2026-11-22 · The one-candidate B308 test enrolls the isolated four-place payer, the three equal nonfocal payments in its first funding, and one newborn sibling as recorder. Its supplied local read reports the common value of its own fresh triple or stays silent. Complementing the other two paid bits gives a lawful interruption of agreement with the same ordinary funding. Four or seven possible fresh words at each paid value retain their full support. Full local words, false indications, both paid values and a matched check of the unselected launch weighting are kept separately. [Three equal sibling payments](../research/THREE-SIBLING-PAID-EVENT-20261122-001/decision.md)
 
 ### A204 · Read only the later receiver’s new marks until they are shared
 

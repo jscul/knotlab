@@ -1,0 +1,9 @@
+# What the earlier records cover
+
+## Prior work in the program
+
+`python3 -B scripts/track.py objects 'later fresh receiver own three hidden marks actual sender choice' --until 2026-11-22 --exclude REPEATED-SENDS-20261122-001 --limit 3` returned HIDDEN-SENDER-MARKS-20261122-001, JOINT-PARENTS-AND-ERASURE-20261120-001 and NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001. The [single-receipt study](../HIDDEN-SENDER-MARKS-20261122-001/decision.md) already counted all eight complete local words and specified the actual finishing event. The [successive private pulses](../LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/preregistration.md) used a continuing family of successive births with a supplied choice of member. The [prepared relay](../TWO-SENDS-AND-GROWN-KEEPERS-20261122-001A/results.md) used local motions to acknowledge and store its intermediate receipt. Neither gives the fixed holder another ordinary payment.
+
+**Standard statement.** In a growing family of finite sets, an update takes each available singly occurring element once, appends new sets containing the selected elements, and introduces fresh elements only into those sets. Values previously assigned extend consistently. Determine the entire observation sequence at a fixed set that sees its own designated elements, their values and which other sets also contain them. Compare two repeated transpositions on the original coordinates and distinguish statewise permission from preservation of the entire allowed set.
+
+**What this adds.** The original records ended at the first completed payment. The repeated-sends study tests whether either source action can be applied again on the same marks in one run, follows the original recipient beyond its finish and determines the dependence of all later reads on the same physical word.

@@ -1,0 +1,51 @@
+# Scientific referee handoff · repeated requests at the fixed ordinary receiver
+
+| Scope | Verdict | Why |
+| --- | --- | --- |
+| Distinct second receipt | **Unavailable** | R's three old fresh marks are permanently shared at the first positive finish. |
+| Two actual sender exchanges | Earned or unavailable by case | Before payment both are lawful; afterward structural and pointwise admission differ. |
+| Finished observable histories | Ambiguous | The same eight records retain both repeated intents and every otherwise attainable status. |
+| G15 and G5 | Obstruction learned | Two valuations of a single enduring bank cannot supply repeat observations with independent noise. |
+
+**Next step:** Research directions — No next action selected.
+
+| # | Direction | Payoff | Concreteness | First step → stop when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | A continuing receiver with genuinely new observable marks | 3/3 · a new chance to receive | 1/3 · accession absent on old fixed holders | Specify a legal continuing identity and new paying bank → a new positive event or its obstruction | Alternative · deferred |
+| 2 | Another cut at R's same exhausted bank | 1/3 · covered by persistence | 3/3 · simple criterion | Check whether a two-holder mark is loose → no | Alternative · deferred |
+
+**STOP** for these two addresses, one continuing R and the frozen growth/read rules. The complete word comparison is finite; the already-shared-mark obstruction needs no last global generation.
+
+**Corrections:** None to a released claim.
+
+**Goals:** B307's ordinary receipt now has an exact repeated-trial boundary and an honest source-occurrence comparison under G15 and G5.
+
+**Assumptions:** Each pair uses the same complete old word. The ordinary operation preserves older holdings and values and pays only private names. Idle and a refused request are experimentally distinct and produce no receiver announcement.
+
+**Scaffolds:** Named marks, local read and finish, ordering of the two requests relative to actual payments, diversion, pointwise acceptance and the conditional uniform choice of each legal fresh word.
+
+## Scientific checks
+
+1. Verify the [frozen candidate](design_candidate.md) SHA-256 `682345a6bff35b996d7e3449a693750669c9f7ae3df3d79b8c58fd624a546bc1` with the [contract](../../experiments/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/contract.json) and [prospective review](advisor_receipt.json). Begin with the previous [actual physical growth](../../artifacts/HIDDEN-SENDER-MARKS-20261122-001A/HIDDEN-SENDER-MARKS-20261122-001A-E001_hidden_sends/growth.json.gz) and [whole starting words](../../artifacts/HIDDEN-SENDER-MARKS-20261122-001A/HIDDEN-SENDER-MARKS-20261122-001A-E001_hidden_sends/whole_words.json.gz). R is the existing child of C and P, enrolled through P's payment 957. Re-reading the five physical held names confirms that neither addressed source mark occurs there.
+2. At R's birth its readable three-name bank has no external coholders. After the next actual pay event the three have distinct coholders 631, 633 and 634. The detector receives only anonymous equalities of these partners, never their numbers, clock rank or source times. Ordinary steps add new holders and fresh names at those new holders. A mark can enter a new holding only when it has exactly one original owner and is spent on that birth. Its two owners then persist. Apply this directly to all three R marks after its positive event. At every later ordinary cut there is no newly payable R mark to distinguish. A pointwise source action holds every nontarget value fixed and its two addresses are absent at R. Thus the same terminal local record persists even after an admitted late exchange. [Reached physical gate](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/receiver_gate.json)
+3. Before payment a and b are both private to S₀. Two consecutive admitted T operations send 01 → 10 → 01. After payment their sets of holders are different, and every future birth excludes both names. The source row itself remains lawful on interchange. In parity each affected child's row changes at exactly one bit and violates even parity. For not-all-equal a late transposition is lawful on a fixed word exactly when flipping the one touched bit at each of the two affected children leaves both local laws satisfied. At a currently lawful word, this is equivalent to both values already occurring among the *other* entries of each of those rows. The inverse of a successful flip restores both rows; two late attempts are perfectly linked. In the interrupted arm, a funds F instead of C, while b continues to fund D. F's own other paid value must be used when checking its legality. [Source examples and allocation counts](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/source.json.gz)
+4. Recreate the four temporal bands E, P, B and F from the four positive relative phases before original payment, after payment before R's birth, after R's birth before its finish, and after its finish. The scorer's schedule maps to the observed local trace only via actual physical events. For a fixed schedule and request pair, the parity of the number of early T operations sets the original bits at the first cut. Enumerate the complete fresh words of R's real parents and the two actual source-mark recipients, taking shared parents only once. Draw each parent uniformly given its own paid values. For each joint parent completion, determine pointwise eligibility without resampling, and generate each allowed R fresh word given its two actual inherited values. Sum probabilities over all participating parent words and all unannounced statuses. The data is organized as one factor per law, route, side stratum and net early swap. Each of the 1,920 launch receipts references its factor, applicable status and nonempty laws. A witness reference contains a complete physical word before any late check, its candidate flip with every other value unchanged, eligibility, and the actual R value word. An earlier-stage endpoint is the restriction to that actual stage's holdings. Every allowed late flip preserves the entire R word, including its two hidden inputs. [Full joint law](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/joint.json.gz) · [Full physical examples](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/witnesses.json.gz)
+5. For a concrete record with different late admission outcomes, select `nae-intact-00-1`, visible R word 111. A refused example has first child C's fresh 000; a lawful example has C's 001. The other affected child D can have 001 in both. The same fixed original prestate was first transposed to 10 and the complete S₀ read preceding its second request agrees. The receiver has 111 through its same positive finish in both worlds. On the lawful example one can also compare skip versus late swap on the **very same** pre-offer whole assignment. R keeps 111 and all five of its physical holdings agree. Legal later completions can be transported pointwise because no future newborn can take a or b. [Witnesses](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/witnesses.json.gz)
+6. To check guessing, first marginalize the true-source statuses over II/TT at equal *intent* odds; never condition twice-requested launches on two successes. The true joint is concentrated on `(z,z)` for the two R samples. An offline decoder with the complete local history gains no information over one word. The optimum intent accuracy is 1/2 or 789/1568, as in the table. For the mixed comparison conditional on the first action, a second instruction in E can change the later *one* record by undoing the first. A second instruction after the source payment leaves that record's law unchanged. Within TT the best two-actual-versus-fewer decision never improves over that event's original odds across all 480 cells. In six equal-intent mixtures with reference 10, early then late, intact or sham not-all-equal, every pointwise late T after an early T is lawful; actual two then coincides with repeated intent. The one earlier record can supply its prior gain of 5/1568 even there. In every case the additional finish sample changes the odds by zero. The full status record is scorer-only; R is never told its sender's admissions. [Readout and joint-event audit](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/joint.json.gz)
+
+## Replay
+
+```sh
+leaf=REPEATED-SENDS-20261122-001A
+experiment=experiments/$leaf/${leaf}-E001_repeated_sends
+.venv/bin/python -B "$experiment/gate.py"
+.venv/bin/python -B "$experiment/source.py"
+.venv/bin/python -B "$experiment/joint.py"
+.venv/bin/python -B "$experiment/transport.py"
+.venv/bin/python -B "$experiment/verify.py"
+python3 -B scripts/track.py objects-gate "research/$leaf/preregistration.md"
+```
+
+The receiver gate SHA-256 is `960e81857207fee1f06bd75df98a907bbdd95b849527fc3beb1ed0387dc61a05`. The independent physical source census is `441598562ae392169f3ee51f9faf0857d0e9314da186ca849b8ec37cc20c4041`. The complete joint is `dff18fbd9135729003b0a026da41cc44f337d355c9de1a5d3c0552b8ceb98135` and its whole-word witnesses are `446aa2aada51b7160e42e613758258fb5a7cfecddca4ca69248816dff3cfdc58`. Alternate Python hash seeds reproduced the files. [Coherent physical recoding](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/transport.json)
+
+The independent in-study verifier reconstructed the 48 weighted source factors from physical admissibility, checked every one of the 1,920 attempted protocols and 480 intent pairs, and validated 528 complete factor witnesses. It rejected an invented second independent sample on all 56 off-diagonal pairs of three-bit words and a fabricated source label. The [V1 record](../../artifacts/REPEATED-SENDS-20261122-001A/REPEATED-SENDS-20261122-001A-E001_repeated_sends/verification.json) has SHA-256 `aac6073f316b4eed3a99419f821e79842e912ba311ccc4a40f1fc0d7eb4a07a7`.

@@ -1,0 +1,3483 @@
+{
+  "both_two_place_reader_locations_agree_after_named_exchange": true,
+  "cases": {
+    "a/even/even": {
+      "archived_equal_row_route": {
+        "00000": {
+          "candidate_named_words": [
+            "00000",
+            "01000",
+            "01000",
+            "01000"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "00011": {
+          "candidate_named_words": [
+            "00011",
+            "01011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "01100": {
+          "readable_row_herald": "unequal"
+        },
+        "01111": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11001": {
+          "candidate_named_words": [
+            "11001",
+            "11001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11010": {
+          "candidate_named_words": [
+            "11010",
+            "11010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": null,
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "c",
+          "b"
+        ],
+        "order": "dea"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 8,
+        "diagonal_reduced_numerator": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "1/2",
+          "1/2"
+        ],
+        "normalized_unread_overlap": "0",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 4,
+            "exclusive_unread_words": [
+              "00",
+              "11"
+            ],
+            "first_words": [
+              "000",
+              "011"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 4,
+            "exclusive_unread_words": [
+              "01",
+              "10"
+            ],
+            "first_words": [
+              "101",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "000",
+              "011"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "01": {
+            "accessible_word_support": [
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "10": {
+            "accessible_word_support": [
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "11": {
+            "accessible_word_support": [
+              "000",
+              "011"
+            ],
+            "mathematical_weight": "1/4"
+          }
+        }
+      },
+      "whole_words": [
+        "00000",
+        "00011",
+        "01100",
+        "01111",
+        "10101",
+        "10110",
+        "11001",
+        "11010"
+      ]
+    },
+    "a/even/not_all_equal": {
+      "archived_equal_row_route": {
+        "00001": {
+          "candidate_named_words": [
+            "00001",
+            "01001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "00010": {
+          "candidate_named_words": [
+            "00010",
+            "01010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "00011": {
+          "candidate_named_words": [
+            "00011",
+            "01011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "01101": {
+          "readable_row_herald": "unequal"
+        },
+        "01110": {
+          "readable_row_herald": "unequal"
+        },
+        "01111": {
+          "readable_row_herald": "unequal"
+        },
+        "10100": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11000": {
+          "candidate_named_words": [
+            "11000",
+            "11000",
+            "01000",
+            "01000"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11001": {
+          "candidate_named_words": [
+            "11001",
+            "11001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11010": {
+          "candidate_named_words": [
+            "11010",
+            "11010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": null,
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "c",
+          "b"
+        ],
+        "order": "dea"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            3,
+            0,
+            0,
+            3,
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            3,
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2,
+            0,
+            3,
+            3,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            2,
+            0,
+            3,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 12,
+        "diagonal_reduced_numerator": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "5/6",
+          "1/6"
+        ],
+        "normalized_unread_overlap": "2/3",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "11"
+            ],
+            "first_words": [
+              "000",
+              "011"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "00"
+            ],
+            "first_words": [
+              "101",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/6"
+          },
+          "01": {
+            "accessible_word_support": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "10": {
+            "accessible_word_support": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "11": {
+            "accessible_word_support": [
+              "000",
+              "011"
+            ],
+            "mathematical_weight": "1/6"
+          }
+        }
+      },
+      "whole_words": [
+        "00001",
+        "00010",
+        "00011",
+        "01101",
+        "01110",
+        "01111",
+        "10100",
+        "10101",
+        "10110",
+        "11000",
+        "11001",
+        "11010"
+      ]
+    },
+    "a/not_all_equal/even": {
+      "archived_equal_row_route": {
+        "00100": {
+          "candidate_named_words": [
+            "00100",
+            "01100",
+            "01100",
+            "01000"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "00111": {
+          "candidate_named_words": [
+            "00111",
+            "01111",
+            "01111",
+            "01011"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "01000": {
+          "readable_row_herald": "unequal"
+        },
+        "01011": {
+          "readable_row_herald": "unequal"
+        },
+        "01100": {
+          "readable_row_herald": "unequal"
+        },
+        "01111": {
+          "readable_row_herald": "unequal"
+        },
+        "10001": {
+          "readable_row_herald": "unequal"
+        },
+        "10010": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11001": {
+          "candidate_named_words": [
+            "11001",
+            "11001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11010": {
+          "candidate_named_words": [
+            "11010",
+            "11010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": {
+        "complete_named_inputs": {
+          "00100": {
+            "physical_named_words": [
+              "00100",
+              "01100",
+              "01000"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "0"
+          },
+          "00111": {
+            "physical_named_words": [
+              "00111",
+              "01111",
+              "01011"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "0"
+          },
+          "01000": {
+            "physical_named_words": [
+              "01000",
+              "01000",
+              "01000"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "0"
+          },
+          "01011": {
+            "physical_named_words": [
+              "01011",
+              "01011",
+              "01011"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "0"
+          },
+          "01100": {
+            "physical_named_words": [
+              "01100",
+              "01100",
+              "01000"
+            ],
+            "private_pair_before_filter": "11",
+            "public_s": "0"
+          },
+          "01111": {
+            "physical_named_words": [
+              "01111",
+              "01111",
+              "01011"
+            ],
+            "private_pair_before_filter": "11",
+            "public_s": "0"
+          },
+          "10001": {
+            "physical_named_words": [
+              "10001",
+              "10001",
+              "10001"
+            ],
+            "private_pair_before_filter": "00",
+            "public_s": "1"
+          },
+          "10010": {
+            "physical_named_words": [
+              "10010",
+              "10010",
+              "10010"
+            ],
+            "private_pair_before_filter": "00",
+            "public_s": "1"
+          },
+          "10101": {
+            "physical_named_words": [
+              "10101",
+              "10101",
+              "10001"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "1"
+          },
+          "10110": {
+            "physical_named_words": [
+              "10110",
+              "10110",
+              "10010"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "1"
+          },
+          "11001": {
+            "physical_named_words": [
+              "11001",
+              "10001",
+              "10001"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "1"
+          },
+          "11010": {
+            "physical_named_words": [
+              "11010",
+              "10010",
+              "10010"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "1"
+          }
+        },
+        "diagonal_admission_for_same_filter": "2*(3-sqrt(5))/3",
+        "positive_admission": "(3-sqrt(5))/3",
+        "sector_filter": {
+          "0": {
+            "B_gram_numerator": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "diagonal_admission_coefficient_before_scale_squared": "4/3",
+            "failure_rank": 1,
+            "filter_numerator": [
+              [
+                -1,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "filter_scale_squared": "(3-sqrt(5))/2",
+            "filter_times_input_numerators": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "gram_characteristic_coefficients": [
+              1,
+              -3,
+              1
+            ],
+            "normalization_squared": 3,
+            "positive_conditional_amplitude_numerator": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          "1": {
+            "B_gram_numerator": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "diagonal_admission_coefficient_before_scale_squared": "4/3",
+            "failure_rank": 1,
+            "filter_numerator": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                -1
+              ]
+            ],
+            "filter_scale_squared": "(3-sqrt(5))/2",
+            "filter_times_input_numerators": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "gram_characteristic_coefficients": [
+              1,
+              -3,
+              1
+            ],
+            "normalization_squared": 3,
+            "positive_conditional_amplitude_numerator": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "c",
+          "b"
+        ],
+        "order": "dea"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 12,
+        "diagonal_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "1/2",
+          "1/2"
+        ],
+        "normalized_unread_overlap": "0",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "00",
+              "11"
+            ],
+            "first_words": [
+              "001",
+              "010",
+              "011"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "01",
+              "10"
+            ],
+            "first_words": [
+              "100",
+              "101",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "001",
+              "010",
+              "011"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "01": {
+            "accessible_word_support": [
+              "100",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "10": {
+            "accessible_word_support": [
+              "100",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "11": {
+            "accessible_word_support": [
+              "001",
+              "010",
+              "011"
+            ],
+            "mathematical_weight": "1/4"
+          }
+        }
+      },
+      "whole_words": [
+        "00100",
+        "00111",
+        "01000",
+        "01011",
+        "01100",
+        "01111",
+        "10001",
+        "10010",
+        "10101",
+        "10110",
+        "11001",
+        "11010"
+      ]
+    },
+    "a/not_all_equal/not_all_equal": {
+      "archived_equal_row_route": {
+        "00101": {
+          "candidate_named_words": [
+            "00101",
+            "01101",
+            "01101",
+            "01001"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "00110": {
+          "candidate_named_words": [
+            "00110",
+            "01110",
+            "01110",
+            "01010"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "00111": {
+          "candidate_named_words": [
+            "00111",
+            "01111",
+            "01111",
+            "01011"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "01001": {
+          "readable_row_herald": "unequal"
+        },
+        "01010": {
+          "readable_row_herald": "unequal"
+        },
+        "01011": {
+          "readable_row_herald": "unequal"
+        },
+        "01101": {
+          "readable_row_herald": "unequal"
+        },
+        "01110": {
+          "readable_row_herald": "unequal"
+        },
+        "01111": {
+          "readable_row_herald": "unequal"
+        },
+        "10000": {
+          "readable_row_herald": "unequal"
+        },
+        "10001": {
+          "readable_row_herald": "unequal"
+        },
+        "10010": {
+          "readable_row_herald": "unequal"
+        },
+        "10100": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11000": {
+          "candidate_named_words": [
+            "11000",
+            "11000",
+            "01000",
+            "01000"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11001": {
+          "candidate_named_words": [
+            "11001",
+            "11001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "11010": {
+          "candidate_named_words": [
+            "11010",
+            "11010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": {
+        "complete_named_inputs": {
+          "00101": {
+            "physical_named_words": [
+              "00101",
+              "01101",
+              "01001"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "0"
+          },
+          "00110": {
+            "physical_named_words": [
+              "00110",
+              "01110",
+              "01010"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "0"
+          },
+          "00111": {
+            "physical_named_words": [
+              "00111",
+              "01111",
+              "01011"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "0"
+          },
+          "01001": {
+            "physical_named_words": [
+              "01001",
+              "01001",
+              "01001"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "0"
+          },
+          "01010": {
+            "physical_named_words": [
+              "01010",
+              "01010",
+              "01010"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "0"
+          },
+          "01011": {
+            "physical_named_words": [
+              "01011",
+              "01011",
+              "01011"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "0"
+          },
+          "01101": {
+            "physical_named_words": [
+              "01101",
+              "01101",
+              "01001"
+            ],
+            "private_pair_before_filter": "11",
+            "public_s": "0"
+          },
+          "01110": {
+            "physical_named_words": [
+              "01110",
+              "01110",
+              "01010"
+            ],
+            "private_pair_before_filter": "11",
+            "public_s": "0"
+          },
+          "01111": {
+            "physical_named_words": [
+              "01111",
+              "01111",
+              "01011"
+            ],
+            "private_pair_before_filter": "11",
+            "public_s": "0"
+          },
+          "10000": {
+            "physical_named_words": [
+              "10000",
+              "10000",
+              "10000"
+            ],
+            "private_pair_before_filter": "00",
+            "public_s": "1"
+          },
+          "10001": {
+            "physical_named_words": [
+              "10001",
+              "10001",
+              "10001"
+            ],
+            "private_pair_before_filter": "00",
+            "public_s": "1"
+          },
+          "10010": {
+            "physical_named_words": [
+              "10010",
+              "10010",
+              "10010"
+            ],
+            "private_pair_before_filter": "00",
+            "public_s": "1"
+          },
+          "10100": {
+            "physical_named_words": [
+              "10100",
+              "10100",
+              "10000"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "1"
+          },
+          "10101": {
+            "physical_named_words": [
+              "10101",
+              "10101",
+              "10001"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "1"
+          },
+          "10110": {
+            "physical_named_words": [
+              "10110",
+              "10110",
+              "10010"
+            ],
+            "private_pair_before_filter": "01",
+            "public_s": "1"
+          },
+          "11000": {
+            "physical_named_words": [
+              "11000",
+              "10000",
+              "10000"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "1"
+          },
+          "11001": {
+            "physical_named_words": [
+              "11001",
+              "10001",
+              "10001"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "1"
+          },
+          "11010": {
+            "physical_named_words": [
+              "11010",
+              "10010",
+              "10010"
+            ],
+            "private_pair_before_filter": "10",
+            "public_s": "1"
+          }
+        },
+        "diagonal_admission_for_same_filter": "2*(3-sqrt(5))/3",
+        "positive_admission": "(3-sqrt(5))/3",
+        "sector_filter": {
+          "0": {
+            "B_gram_numerator": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "diagonal_admission_coefficient_before_scale_squared": "4/3",
+            "failure_rank": 1,
+            "filter_numerator": [
+              [
+                -1,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "filter_scale_squared": "(3-sqrt(5))/2",
+            "filter_times_input_numerators": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "gram_characteristic_coefficients": [
+              1,
+              -3,
+              1
+            ],
+            "normalization_squared": 3,
+            "positive_conditional_amplitude_numerator": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          "1": {
+            "B_gram_numerator": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "diagonal_admission_coefficient_before_scale_squared": "4/3",
+            "failure_rank": 1,
+            "filter_numerator": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                -1
+              ]
+            ],
+            "filter_scale_squared": "(3-sqrt(5))/2",
+            "filter_times_input_numerators": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "gram_characteristic_coefficients": [
+              1,
+              -3,
+              1
+            ],
+            "normalization_squared": 3,
+            "positive_conditional_amplitude_numerator": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "c",
+          "b"
+        ],
+        "order": "dea"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 18,
+        "diagonal_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "5/6",
+          "1/6"
+        ],
+        "normalized_unread_overlap": "2/3",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 9,
+            "exclusive_unread_words": [
+              "11"
+            ],
+            "first_words": [
+              "001",
+              "010",
+              "011"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 9,
+            "exclusive_unread_words": [
+              "00"
+            ],
+            "first_words": [
+              "100",
+              "101",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "100",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/6"
+          },
+          "01": {
+            "accessible_word_support": [
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "10": {
+            "accessible_word_support": [
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "11": {
+            "accessible_word_support": [
+              "001",
+              "010",
+              "011"
+            ],
+            "mathematical_weight": "1/6"
+          }
+        }
+      },
+      "whole_words": [
+        "00101",
+        "00110",
+        "00111",
+        "01001",
+        "01010",
+        "01011",
+        "01101",
+        "01110",
+        "01111",
+        "10000",
+        "10001",
+        "10010",
+        "10100",
+        "10101",
+        "10110",
+        "11000",
+        "11001",
+        "11010"
+      ]
+    },
+    "b/even/even": {
+      "archived_equal_row_route": {
+        "00000": {
+          "candidate_named_words": [
+            "00000",
+            "01000",
+            "01000",
+            "01000"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "00011": {
+          "candidate_named_words": [
+            "00011",
+            "01011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "01101": {
+          "readable_row_herald": "unequal"
+        },
+        "01110": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11000": {
+          "candidate_named_words": [
+            "11000",
+            "11000",
+            "01000",
+            "01000"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11011": {
+          "candidate_named_words": [
+            "11011",
+            "11011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": null,
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "a",
+          "c"
+        ],
+        "order": "deb"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 8,
+        "diagonal_reduced_numerator": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "1/2",
+          "1/2"
+        ],
+        "normalized_unread_overlap": "0",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 4,
+            "exclusive_unread_words": [
+              "00",
+              "11"
+            ],
+            "first_words": [
+              "000",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 4,
+            "exclusive_unread_words": [
+              "01",
+              "10"
+            ],
+            "first_words": [
+              "011",
+              "101"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "000",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "01": {
+            "accessible_word_support": [
+              "011",
+              "101"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "10": {
+            "accessible_word_support": [
+              "011",
+              "101"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "11": {
+            "accessible_word_support": [
+              "000",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          }
+        }
+      },
+      "whole_words": [
+        "00000",
+        "00011",
+        "01101",
+        "01110",
+        "10101",
+        "10110",
+        "11000",
+        "11011"
+      ]
+    },
+    "b/even/not_all_equal": {
+      "archived_equal_row_route": {
+        "00001": {
+          "candidate_named_words": [
+            "00001",
+            "01001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "00010": {
+          "candidate_named_words": [
+            "00010",
+            "01010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "00011": {
+          "candidate_named_words": [
+            "00011",
+            "01011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": 1,
+          "readable_row_herald": "equal"
+        },
+        "01100": {
+          "readable_row_herald": "unequal"
+        },
+        "01101": {
+          "readable_row_herald": "unequal"
+        },
+        "01110": {
+          "readable_row_herald": "unequal"
+        },
+        "10100": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11001": {
+          "candidate_named_words": [
+            "11001",
+            "11001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11010": {
+          "candidate_named_words": [
+            "11010",
+            "11010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        },
+        "11011": {
+          "candidate_named_words": [
+            "11011",
+            "11011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": 2,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": null,
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "a",
+          "c"
+        ],
+        "order": "deb"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            3,
+            0,
+            0,
+            2,
+            0,
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            3,
+            0,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            3,
+            0,
+            3,
+            2,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            2,
+            0,
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 12,
+        "diagonal_reduced_numerator": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "5/6",
+          "1/6"
+        ],
+        "normalized_unread_overlap": "2/3",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "11"
+            ],
+            "first_words": [
+              "000",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "00"
+            ],
+            "first_words": [
+              "011",
+              "101"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "011",
+              "101"
+            ],
+            "mathematical_weight": "1/6"
+          },
+          "01": {
+            "accessible_word_support": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "10": {
+            "accessible_word_support": [
+              "000",
+              "011",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "11": {
+            "accessible_word_support": [
+              "000",
+              "110"
+            ],
+            "mathematical_weight": "1/6"
+          }
+        }
+      },
+      "whole_words": [
+        "00001",
+        "00010",
+        "00011",
+        "01100",
+        "01101",
+        "01110",
+        "10100",
+        "10101",
+        "10110",
+        "11001",
+        "11010",
+        "11011"
+      ]
+    },
+    "b/not_all_equal/even": {
+      "archived_equal_row_route": {
+        "00101": {
+          "candidate_named_words": [
+            "00101",
+            "01101",
+            "01101",
+            "01001"
+          ],
+          "first_illegal_step": 3,
+          "readable_row_herald": "equal"
+        },
+        "00110": {
+          "candidate_named_words": [
+            "00110",
+            "01110",
+            "01110",
+            "01010"
+          ],
+          "first_illegal_step": 3,
+          "readable_row_herald": "equal"
+        },
+        "01000": {
+          "readable_row_herald": "unequal"
+        },
+        "01011": {
+          "readable_row_herald": "unequal"
+        },
+        "01101": {
+          "readable_row_herald": "unequal"
+        },
+        "01110": {
+          "readable_row_herald": "unequal"
+        },
+        "10000": {
+          "readable_row_herald": "unequal"
+        },
+        "10011": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11000": {
+          "candidate_named_words": [
+            "11000",
+            "11000",
+            "01000",
+            "01000"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "11011": {
+          "candidate_named_words": [
+            "11011",
+            "11011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": null,
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "a",
+          "c"
+        ],
+        "order": "deb"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 12,
+        "diagonal_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "1/2",
+          "1/2"
+        ],
+        "normalized_unread_overlap": "0",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "00",
+              "11"
+            ],
+            "first_words": [
+              "010",
+              "100",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 6,
+            "exclusive_unread_words": [
+              "01",
+              "10"
+            ],
+            "first_words": [
+              "001",
+              "011",
+              "101"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "010",
+              "100",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "01": {
+            "accessible_word_support": [
+              "001",
+              "011",
+              "101"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "10": {
+            "accessible_word_support": [
+              "001",
+              "011",
+              "101"
+            ],
+            "mathematical_weight": "1/4"
+          },
+          "11": {
+            "accessible_word_support": [
+              "010",
+              "100",
+              "110"
+            ],
+            "mathematical_weight": "1/4"
+          }
+        }
+      },
+      "whole_words": [
+        "00101",
+        "00110",
+        "01000",
+        "01011",
+        "01101",
+        "01110",
+        "10000",
+        "10011",
+        "10101",
+        "10110",
+        "11000",
+        "11011"
+      ]
+    },
+    "b/not_all_equal/not_all_equal": {
+      "archived_equal_row_route": {
+        "00100": {
+          "candidate_named_words": [
+            "00100",
+            "01100",
+            "01100",
+            "01000"
+          ],
+          "first_illegal_step": 3,
+          "readable_row_herald": "equal"
+        },
+        "00101": {
+          "candidate_named_words": [
+            "00101",
+            "01101",
+            "01101",
+            "01001"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "00110": {
+          "candidate_named_words": [
+            "00110",
+            "01110",
+            "01110",
+            "01010"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "01001": {
+          "readable_row_herald": "unequal"
+        },
+        "01010": {
+          "readable_row_herald": "unequal"
+        },
+        "01011": {
+          "readable_row_herald": "unequal"
+        },
+        "01100": {
+          "readable_row_herald": "unequal"
+        },
+        "01101": {
+          "readable_row_herald": "unequal"
+        },
+        "01110": {
+          "readable_row_herald": "unequal"
+        },
+        "10001": {
+          "readable_row_herald": "unequal"
+        },
+        "10010": {
+          "readable_row_herald": "unequal"
+        },
+        "10011": {
+          "readable_row_herald": "unequal"
+        },
+        "10100": {
+          "readable_row_herald": "unequal"
+        },
+        "10101": {
+          "readable_row_herald": "unequal"
+        },
+        "10110": {
+          "readable_row_herald": "unequal"
+        },
+        "11001": {
+          "candidate_named_words": [
+            "11001",
+            "11001",
+            "01001",
+            "01001"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "11010": {
+          "candidate_named_words": [
+            "11010",
+            "11010",
+            "01010",
+            "01010"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        },
+        "11011": {
+          "candidate_named_words": [
+            "11011",
+            "11011",
+            "01011",
+            "01011"
+          ],
+          "first_illegal_step": null,
+          "readable_row_herald": "equal"
+        }
+      },
+      "fixed_shared_reader_protocol": null,
+      "projection_companion": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "a",
+          "c"
+        ],
+        "order": "deb"
+      },
+      "projection_first": {
+        "K1_K2_K3": true,
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "forgotten": [
+          "d",
+          "e"
+        ],
+        "order": "acb"
+      },
+      "trace_unread": {
+        "coherent_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            2,
+            3,
+            2,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            3,
+            2,
+            3,
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            2,
+            3,
+            2,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            3,
+            2,
+            3,
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            2,
+            3,
+            2,
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            3,
+            2,
+            3,
+            2,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_denominator": 18,
+        "diagonal_reduced_numerator": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "nonzero_reduced_eigenvalues_on_accessible_names": [
+          "5/6",
+          "1/6"
+        ],
+        "normalized_unread_overlap": "2/3",
+        "order": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ],
+        "shared_value_conditions": {
+          "0": {
+            "basis_term_count": 9,
+            "exclusive_unread_words": [
+              "11"
+            ],
+            "first_words": [
+              "010",
+              "100",
+              "110"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "01",
+              "10",
+              "11"
+            ]
+          },
+          "1": {
+            "basis_term_count": 9,
+            "exclusive_unread_words": [
+              "00"
+            ],
+            "first_words": [
+              "001",
+              "011",
+              "101"
+            ],
+            "per_launch_sector_weight": "1/2",
+            "unread_words": [
+              "00",
+              "01",
+              "10"
+            ]
+          }
+        },
+        "unread_word_table_not_reported": {
+          "00": {
+            "accessible_word_support": [
+              "001",
+              "011",
+              "101"
+            ],
+            "mathematical_weight": "1/6"
+          },
+          "01": {
+            "accessible_word_support": [
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "10": {
+            "accessible_word_support": [
+              "001",
+              "010",
+              "011",
+              "100",
+              "101",
+              "110"
+            ],
+            "mathematical_weight": "1/3"
+          },
+          "11": {
+            "accessible_word_support": [
+              "010",
+              "100",
+              "110"
+            ],
+            "mathematical_weight": "1/6"
+          }
+        }
+      },
+      "whole_words": [
+        "00100",
+        "00101",
+        "00110",
+        "01001",
+        "01010",
+        "01011",
+        "01100",
+        "01101",
+        "01110",
+        "10001",
+        "10010",
+        "10011",
+        "10100",
+        "10101",
+        "10110",
+        "11001",
+        "11010",
+        "11011"
+      ]
+    }
+  },
+  "operator_on_unread_names": "identity",
+  "source_word_order": "acbde"
+}

@@ -256,6 +256,7 @@ evidence: results and their status come from the records each entry links.
 | [A198](#a198--give-a-moving-reader-rations-energy-and-a-local-food-bit) | Give a moving reader rations, energy and a local food bit | scaffold | Assumed |
 | [A199](#a199--remember-a-consumed-ration-by-the-feeders-public-menu) | Remember a consumed ration by the feeder's public menu | scaffold | Assumed |
 | [A200](#a200--train-a-second-local-cue-from-public-feeder-receipts) | Train a second local cue from public feeder receipts | scaffold | Assumed |
+| [A201](#a201--reverse-which-feeder-approach-opens-a-ration) | Reverse which feeder approach opens a ration | scaffold | Assumed |
 
 ## Entries
 
@@ -4690,3 +4691,14 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-21 · A second bounded comparison. The prior-menu agreement guard prevented a certified empty return from voting on any original current-only training game. Preserve the first comparison. Remove that single guard only on the certified return. Keep the old physical memory, earlier predicates, credit and readout, add controls that count opportunities without feedback and draw new disjoint structural folds. [Separate prospective comparison](../research/SECOND-FEEDER-CUE-20261121-001/return_cue/preregistration.md)
   - 2026-11-21 · Opened for the [first four-cue fit](../research/SECOND-FEEDER-CUE-20261121-001/preregistration.md).
+
+### A201 · Reverse which feeder approach opens a ration
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** An actually used anonymous outward control with a partner encodes an even or odd approach. At a marked feeder with three controls and a known approach, only the privately accepted approach lets a bite collect the one ration. A declined bite leaves the ration there. Two paired game versions exchange which approach opens it. The experiment supplies the pairing of controls, the opening in each version, the share of exceptions, the scoring rule in a prepared knot memory, and its fixed action readout. [Feeder payoff comparison](../research/FEEDER-PAYOFF-REVERSAL-20261121-001/decision.md)
+- **Why.** Counting certain returns predicted the earlier trained choices. Equal encounters and equal meal opportunity across reversed associations make the contribution of experienced bite outcomes separately testable.
+- **Rests on it.** Preference, memory exchange and survival are separate finite results on the supplied apparatus and game. Fresh founders, paired anonymous control names, a persistent payoff regime and reset probes define the sample. Ordinary growth supplies the reached feeder holdings.
+- **Challenge.** Match training visits to the same apparent feeder and actual holder, reverse presentation order, shuffle only credit, count encounters without reference to pay, exchange or clear the learned marking, and deploy each fixed learned word under both payoff versions. Score common eligible opportunities and all autonomous lives independently. A naturally occurring cue-payoff association is a further question.
+- **History.**
+  - 2026-11-21 · Opened for the [paired fitted-reader study](../research/FEEDER-PAYOFF-REVERSAL-20261121-001/design_candidate_2.md) as a change to the food rule of A198 and the cue training of A200.

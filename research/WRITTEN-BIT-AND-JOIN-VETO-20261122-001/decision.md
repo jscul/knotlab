@@ -31,6 +31,6 @@ The physical replay and independent reconstruction agree. The study and its clos
 
 **Corrections:** None.  
 **Goals:** G5 Dynamics and G18 Comparing growth laws gained a continuous example of a recorded value feeding back into growth.  
-**Assumptions:** A111 supplies the reference, A113 the parity fill, A114 the veto reading and A210 the two not-all-equal extensions.  
+**Assumptions:** A111 supplies the reference, A113 the parity fill, A114 the veto reading and A141 records the two supplied not-all-equal extensions.  
 **Scaffolds:** The prepared source signal and its diversion, the designated recipient pair, the transported reference and slot order, minimum filling, matched payment allocation and the all-parent veto. Ordinary growth supplies the funded proposals and real payments.
 

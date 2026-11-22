@@ -31,6 +31,6 @@ The two reproducible computations, the leaf validations, the scope and the durab
 
 **Corrections:** None.  
 **Goals:** G5 Dynamics and G18 Comparing growth laws.  
-**Assumptions:** A111, A113, A114 and A210.  
+**Assumptions:** A111, A113, A114 and A141.  
 **Scaffolds:** The prepared founder and designated role, upstream diversion, physical payment order for the replay, the reference transports, minimum fills and all-parent veto.
 

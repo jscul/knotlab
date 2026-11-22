@@ -34,7 +34,7 @@ The referee can directly challenge the nonfocal bound, raw readiness, the mixed-
 **STOP on both fixed-source objectives.** The optimized announcement and message bounds meet their constructions. The keeper is faithful throughout the maximum support available to its nonfocal inputs, and the original source's actual growth spends the focal names before a separate receiver forms. A different source or an endogenous value-dependent offer would reopen the native keeper question.
 
 **Corrections:** None. The asymmetric schedule is a preserved control in the new study.  
-**Goals:** G18 Comparing growth laws and G5 Dynamics gained a sharp announcement bound and a two-orientation physical keeper witness. Independent scientific adjudication remains pending.  
+**Goals:** G18 Comparing growth laws and G5 Dynamics gained a sharp announcement bound and a two-orientation physical keeper witness. B303 records the unstarted question of a source that grows its own keeper. Independent scientific adjudication remains pending.  
 **Assumptions:** A192–A194 specify the fixed change reading, erasure access and communication order. A195 specifies the added ready keeper, offered motions and coherent reading.  
 **Basket:** B301 and B302 reached their stops.  
 **Scaffolds:** Positive preparation, calibrated value/change and erasure readings, erasure delivery, public writer and coins in the named locations for B301. For B302 the added three holders, 27 auxiliary values, readiness weighting, ordered guarded offers, keeper marking and coherent extension are supplied.
@@ -69,10 +69,10 @@ The physical cause is visible on two launches with identical loose values. Each 
 
 **STOP on both fixed-source objectives.** The constructions attain their upper bounds. Whether ordinary growth can form and operate a ready keeper on another source remains open. [Decision and checkpoints](https://github.com/jscul/knotlab/blob/main/research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md) · [Scientific referee handoffs](https://github.com/jscul/knotlab/blob/main/research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/referee_handoff.md)
 
-The scoped proofs and replays passed. A separate repository policy check still expects an older sentence in the direction-selection skill.
+The public replays matched. I corrected a register commit that included two unrelated drafts and preserved them in the shared workspace. A separate repository policy check still expects an older sentence in the direction-selection skill.
 
 **Corrections:** None.  
-**Goals:** G18 Comparing growth laws and G5 Dynamics gained a sharp announcement rate and a physical paid-value write. Independent scientific referees are pending.  
+**Goals:** G18 Comparing growth laws and G5 Dynamics gained a sharp announcement rate and a physical paid-value write. B303 records the unstarted question of a source that grows its own keeper. Independent scientific referees are pending.  
 **Assumptions:** A192–A195 record the fixed change question, access to erasure outcomes, message order and keeper preparation.  
 **Basket:** B301 and B302 closed.  
 **Scaffolds:** Ordinary growth supplies the holdings. The measurement instruments, announcement channel, ready keeper, ordered offers and coherent reading are supplied.

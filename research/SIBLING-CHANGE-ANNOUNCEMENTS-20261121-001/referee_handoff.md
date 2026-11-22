@@ -36,7 +36,7 @@ The four named families give a referee finite replays and explicit claimed bound
 **STOP.** The fixed-source launch rates and message minima are certified. The ready nonfocal keeper reaches both true orientations on the full unambiguous support. The original source's ordinary receiver forms after the focal choices are spent.
 
 **Corrections:** None.  
-**Goals:** G18 Comparing growth laws and G5 Dynamics.  
+**Goals:** G18 Comparing growth laws and G5 Dynamics. B303 records the unstarted native keeper question.  
 **Assumptions:** A192–A195, with the retained and erased source choices separately priced.  
 **Basket:** B301 and B302 closed on their stated objectives.  
 **Scaffolds:** The coherent preparation, instruments, communication and coin are declared for the announcement. The physical writer adds the ready holdings, schedule, output marking and coherent interpretation.

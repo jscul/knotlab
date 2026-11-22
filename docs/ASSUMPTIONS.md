@@ -247,6 +247,10 @@ evidence: results and their status come from the records each entry links.
 | [A189](#a189--compare-a-current-third-at-a-return-with-a-three-donor-founding-group) | Compare a current third at a return with a three-donor founding group | scaffold | Assumed |
 | [A190](#a190--announce-a-fixed-newborn-inequality-through-measured-sibling-words) | Announce a fixed newborn inequality through measured sibling words | scaffold | Assumed |
 | [A191](#a191--require-a-keepers-answer-while-both-focal-questions-are-still-available) | Require a keeper’s answer while both focal questions are still available | scaffold | Assumed |
+| [A192](#a192--fix-one-sibling-change-before-the-newborn-readers-choose) | Fix one sibling change before the newborn readers choose | scaffold | Assumed |
+| [A193](#a193--give-the-announcement-writer-the-four-recorded-erasure-signs) | Give the announcement writer the four recorded erasure signs | scaffold | Assumed |
+| [A194](#a194--send-the-erasure-message-before-the-sibling-record-is-known) | Send the erasure message before the sibling record is known | scaffold | Assumed |
+| [A195](#a195--give-the-three-nonfocal-siblings-a-writable-keeper-before-reader-settings) | Give the three nonfocal siblings a writable keeper before reader settings | scaffold | Assumed |
 
 ## Entries
 
@@ -4508,6 +4512,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Probabilities and three-reader scores depend on which names, marks, messages, records and phases are retained. Comparisons between newborns use supplied addresses, starts and matched grants.
 - **Challenge.** Compare an unread retained record, the selectively erased record with all other outcomes retained, a diagonal mixture, and a fully tagged unconditional growth operation. Rebuild the marked probabilities under both knot laws.
 - **History.**
+  - 2026-11-21 · The individual all-plus port and the pooled erasure record have different operational prices. All 16 underlying ports remain charged. With all four signs read, a retained which-past copy makes the signs fair bits, with maximum 5/19208 in either flag class. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
   - 2026-11-21 · On one fixed receiver, clean heralding and the conditional weight of accepted sibling records must both be paid. The optimum randomized diagonal herald among clean outcomes weighs 45/775279. Its actual chance per original launch is 45/1190896. A supplied change question on one sibling can beat this. All erasure ports are retained. [Sibling announcements and receiver births](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/decision.md)
   - 2026-11-21 · The same unannounced newborn table admits a common explanation with the past retained and after coherent erasure. On the four-place source the clean port weighs 25009/38416 of launches. The retained and clean tables differ even though each has its own common model. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
   - 2026-11-21 · All old loose names are paid in a funded round. On the first three fresh child readers, counting versus coherently adding the past gives signed scores 10/27 and 54/95. In a neutral-cap comparison the ordinary old local matrix matches across sources. The squared-count old local matrix already differs. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
@@ -4559,6 +4564,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The operational interpretation of a successful branch, the permitted optimal rules, their denominators and the distinction between records inferred externally and writes made by ordinary growth.
 - **Challenge.** Reverse the orientation, retain or coherently erase the past, hide one of the nine names, change the excess to 1/14 and let a single independent fair bit assist. Test parity, keep declines and price any public writer explicitly. A future ordinary receiver would need to supply the decision and its delivery.
 - **History.**
+  - 2026-11-21 · A compulsory change among nine sibling questions is a different instrument. It halves the retained deterministic rate and scales its randomized rate by 7/8. Under all-plus clean erasure it raises them by factors 113/14 and 61/18. Under full access to all erasure signs the nine-ordinary comparator gives 20271/537824 and 39120/1034831. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
   - 2026-11-21 · The all-zero word alone is the optimal deterministic flag at fixed orientation under both preparations. A single fair extra bit is insufficient. A general independent coin can include part of a boundary word. Deterministic flags retain 1/14 excess, while the best randomized flags give 1/28. One supplied sibling change read reaches excess 2/53 on 53/537824 full launches. [Sibling announcements and receiver births](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/decision.md)
   - 2026-11-21 · Opened with the prospective [sibling announcement design](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001A/preregistration.md).
 
@@ -4571,5 +4577,55 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The original clock and its lasting branches, the three-place parity and four-place not-all-equal controls, word and birth readers, chosen subsets of paid records, prospective parity and not-all-equal joins, and the meaning of a successful record.
 - **Challenge.** Read one or two pair births and all later new names, supply a third pair, retain or erase which-word tags, and compare ordinary grants with both smaller registered grants. Give an ideal writer the old value or all nine sibling marks as controls. Ask whether a different native interaction can retain the value while the original questions remain available.
 - **History.**
+  - 2026-11-21 · A reusable receiver word can be written at the same reached cut under supplied guarded motions with an added ready apparatus, while every focal distinction stays loose. The fixed original ordinary births do not provide that apparatus. Tests retain both true values and all 14 allowed focal cases. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
   - 2026-11-21 · At the first cut the focal paid value and three loose target names coexist. On the cut paying the pairs, the old targets become twice-held. The common-stage requirement therefore distinguishes immediate paid-name access and later statistical inference from an independently written flag. Full future new values with up to two prior payment pairs never certify the orientation in the frozen class. [Sibling announcements and receiver births](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001/decision.md)
   - 2026-11-21 · Opened with the revised [receiver design](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001B/preregistration.md).
+
+### A192 · Fix one sibling change before the newborn readers choose
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** At the first funded cut of the isolated four-place source, choose one child and one orientation before launch. Of the other nine loose names ask eight their ordinary value and one its calibrated change sign. Supply the same positive weighting and focal value-or-change questions as in the newborn study. Use one public go or decline announcement before the independent focal settings. Charge every launch, including source refusal. Keep a literal predicate and a general privately randomized predicate separate.
+- **Why.** B301 asks whether exactly one supplied change reading improves the attainable chance of a fixed excess of 1/28. An earlier approved reading of nine ordinary names has sharp prices, and a single known change outcome already exceeds its clean ordinary price. The fixed physical assignment of questions makes its resource cost testable.
+- **Rests on it.** The announcement rate at a fixed orientation, which erasure or sibling outcomes the writer can consult, what information the focal readers receive, and what may be claimed of ordinary growth.
+- **Challenge.** Compare both fixed orientations, laws and source preparations, both change outcomes, transported choices of the physical name and full ordinary-basis dephasing. Compare every erasure record at the same flag. Distinguish a paid native write from a supplied coupling that copies a decision to a ready lawful keeper.
+- **History.**
+  - 2026-11-21 · On the supplied fixed change read, closed all 512 sibling records and both preparations. The optimal clean deterministic rule needs two different sign records and gives excess 9/226. The general private coin reaches precisely 1/28. Both law and orientation controls are closed. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
+  - 2026-11-21 · Opened for the [one-change announcement](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001A/preregistration.md) after the [all-ordinary prices](../research/SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001A/results.md).
+
+### A193 · Give the announcement writer the four recorded erasure signs
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Use the same reached child, fixed orientation, eight ordinary sibling questions and one calibrated sibling change question as A192. Give the writer the four actual results of the spent-value eraser before the three focal settings. The writer may use the complete joint classical record to send one public go or decline. Every initial launch is charged. The physical transcript includes all measured records. The resulting focal inequality is evaluated on the pooled go flag.
+- **Why.** Under the very same deterministic mask as the first study, eight different erasure records already meet the fixed bound. Whether knowledge of four actual signs can change the best per-launch rate is a separate test of what the reading supplies.
+- **Rests on it.** Any extra rate above the retained or originally all-plus protocols requires the specified access and delivery to be made available. A formal outcome assignment does not provide a physical writer.
+- **Challenge.** Hide or reveal each subset of the four signs, retain an independent copy of the spent word, compare to an ordinary sibling observer with identical erasure access, and require the excess separately on each disclosed erasure record. Keep both signs, both laws and each cost.
+- **History.**
+  - 2026-11-21 · The full erasure record gives 1629/33614 and 164785/3399816 per original not-all-equal launch. Even the best of the proper subsets of named signs gives only 195/4802. A synthetic label matching every joint record frequency cannot match the focal excess on any full-rate flag. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
+  - 2026-11-21 · Opened after the [first one-change checkpoint](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/checkpoint_1.md), for the [all-records observer](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001B/preregistration.md).
+
+### A194 · Send the erasure message before the sibling record is known
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** In one independently launched copy, an eraser sees only its four genuine signs and issues one message chosen by a rule fixed before the launch. The writer gets this message and the sibling answers, then sends one binary announcement before the three focal settings. Charge the largest number of distinguishable eraser messages, including any silence or refusal a receiver can distinguish, and report its fixed-length binary size. Keep a fixed deterministic encoder, a seedless writer, private coins and shared coins distinct.
+- **Why.** All four literal signs improved the best rate, but a shorter encoded message can in principle depend on all four. How much information about the erasure outcomes must reach the writer to keep its proved 4.85% rate is a separate question from which named signs can be dropped.
+- **Rests on it.** The minimum single-launch message supporting the best fixed eight-value, one-change announcement, with the same initial-launch denominator and with all eligible outcome-dependent rules tested.
+- **Challenge.** Compare all pairs of true sign records that an encoder might merge, multiple optimal flags, noisy encoders or shared independent random choices, and a diagnostic with feedback. Count every launch. The original argument must specify whether it applies to a fixed deterministic encoding, an encoder with private noise, or a protocol with shared randomness.
+- **History.**
+  - 2026-11-21 · Among all encoders on the 16 actual erasure signs and all decoders with the side record, a best 15-symbol encoding gives 51935/1075648 for a seedless writer and 657035/13599264 with a writer coin or shared lottery. Both full rates require all 16 symbols. If only the eraser has private noise, the full randomized rate requires exactly 17. These are fixed-length, one-launch message costs, including distinguishable refusals. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
+  - 2026-11-21 · Opened for the [shortest erasure message](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/preregistration.md) after the [complete-record checkpoint](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/checkpoint_2.md).
+
+### A195 · Give the three nonfocal siblings a writable keeper before reader settings
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** At the reached four-place cut, add a holder of the nine loose nonfocal sibling names, physical scratch pairs and two holders for the keeper and its receipt. Prepare the 27 added names as specified. Offer word-independent lists of the admitted co-held guarded exchanges, with the original sibling guarding on its own paid value. For the full focal measurement table use the supplied positive preparation and a coherent action confined to nonfocal names.
+- **Why.** The original sibling-only receiver forms after the focal choices are spent. A connected ready keeper gives those same reached siblings a place to write while the three original focal names are still loose.
+- **Rests on it.** A separately written, repeatable ordinary record of either paid orientation, conditioned on a pre-settings response, and the price per original launch of that response.
+- **Challenge.** Remove the graft or disconnect just the three sibling offers while all writer offers remain live. Compare opposite cycles, a single swap, passive value reads and the original next birth. Compare an externally prepared ready state with fair raw auxiliary names and uniform lawful joined words. Inspect the entire focal table and keep refusals.
+- **History.**
+  - 2026-11-21 · Opposite guarded permutations at the three nonfocal children convey their own paid values through actual changes on mixed triples. The supplied receiver is capable of the sharp nonfocal 1/7 not-all-equal rate on prepared launches. With its schedule still live but all sibling motions unplugged, only 14 of the 4802 successful source words still write. The separate raw fair and lawful-joined readiness costs are part of this scaffold. [Sibling announcements and paid-value keepers](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/decision.md)
+  - 2026-11-21 · Opened for the [guarded paid-value keeper](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001D/preregistration.md) after [independent prospective review](../research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/advisor_reviews.json).
+

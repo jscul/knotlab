@@ -1,0 +1,9 @@
+# Work already completed on the sender
+
+## Prior work in the program
+
+`python3 -B scripts/track.py objects 'sender private mark payment role reference before growth exchange equivariant' --until 2026-11-22 --exclude NEW-SENDER-REFERENCE-20261122-001 --limit 5` returned `TICK-BIRTHS-AND-SCARCITY-20261121-001`, `SUCCESSOR-RECEIPT-20261122-001`, `NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001`, `LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001` and `MEET-TWIST-20261118-001`. The [successor proof](../../proofs/SUCCESSOR-RECEIPT-20261122-001B/SUCCESSOR-RECEIPT-20261122-001B-P001_future_payments/proof.md) settles blind exchange on a fixed unprepared pair. It prices a prepared sender whose oriented pair the experimenter supplies. The [clock interaction](../TICK-BIRTHS-AND-SCARCITY-20261121-001/decision.md) and [private pulse](../LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001/decision.md) already exhibit actual payments. The [prepared returns](../NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md) hold a donor fixed by enrollment. Those procedures do not give this new sender an indication of which private value a fixed child will receive.
+
+**Standard question.** Consider a finite family of sets carrying a binary assignment. Each new set receives previously singly held elements and new elements. Determine which permutation-respecting decisions a newly born holder can take on its private elements using the values, coholders and the history of these fields, before they become shared. Ask which decisions can alter the distribution of an observation at a fixed later holder.
+
+**Contribution sought.** Allow internal value comparison, full local histories and value-dependent actions. Compare a three-mark sender, a two-mark sender, a marked unordered subset and an addressed payment, with an explicit receiver that cannot see any sender mark. Each gives a different test of having a reference.

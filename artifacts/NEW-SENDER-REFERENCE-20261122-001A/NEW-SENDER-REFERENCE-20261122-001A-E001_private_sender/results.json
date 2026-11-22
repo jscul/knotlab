@@ -1,0 +1,5001 @@
+{
+  "input_sha256": {
+    "artifacts/HIDDEN-SENDER-MARKS-20261122-001A/HIDDEN-SENDER-MARKS-20261122-001A-E001_hidden_sends/growth.json.gz": "f89de84f884b323e40f81a59dc7afa0e734bf4dc974e26eb5c7be9c5f775ce9a",
+    "artifacts/HIDDEN-SENDER-MARKS-20261122-001A/HIDDEN-SENDER-MARKS-20261122-001A-E001_hidden_sends/whole_words.json.gz": "d652b46212ed4fdd3ad344596ce9a6c1b2cc2be3327cb8fbac6a765226c2f290",
+    "artifacts/SUCCESSOR-RECEIPT-20261122-001A/SUCCESSOR-RECEIPT-20261122-001A-E001_successor_receipts/alternate.json.gz": "e9fc4765288886313d46c596ee208e62d6f483d8ffdba842ec3833c3c5e9e0c2",
+    "research/NEW-SENDER-REFERENCE-20261122-001/design_candidate.md": "dc0956dc1526a102daa09e49f7f9d7a53bf1412dae70a1d3d0e75b000046c19e",
+    "research/SUCCESSOR-RECEIPT-20261122-001B/independent/check.py": "830aac44fa2b4d07bb1c9566b3eb4b2a1e39a9cd7de3cb636fcddfbbaea2bbd3",
+    "research/SUCCESSOR-RECEIPT-20261122-001B/independent/verification.json": "ee79ad4055ac1bc1519d800d7adb2f6122c8f83f78bc01ff35aaab5f8bfba0dd"
+  },
+  "laws": {
+    "nae": {
+      "allocation_controls": {
+        "actual_payment_order": [
+          4383,
+          4384,
+          4385
+        ],
+        "all_routes_same_groups": [
+          [
+            4383,
+            4384,
+            4385
+          ],
+          [
+            4383,
+            4385,
+            4384
+          ],
+          [
+            4384,
+            4383,
+            4385
+          ],
+          [
+            4384,
+            4385,
+            4383
+          ],
+          [
+            4385,
+            4383,
+            4384
+          ],
+          [
+            4385,
+            4384,
+            4383
+          ]
+        ],
+        "coherently_relabelled_payment_order": [
+          104384,
+          104383,
+          104385
+        ],
+        "fixed_receivers": [
+          1211,
+          1595,
+          1597
+        ],
+        "new_allocation_if_relabelled_ids_are_resorted": [
+          104383,
+          104384,
+          104385
+        ],
+        "routes_with_designated_pair_at_G": [
+          [
+            4383,
+            4384,
+            4385
+          ],
+          [
+            4384,
+            4383,
+            4385
+          ],
+          [
+            4385,
+            4383,
+            4384
+          ],
+          [
+            4385,
+            4384,
+            4383
+          ]
+        ]
+      },
+      "conditional_controls": {
+        "addressed_on_mixed_full_bank": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "1",
+                "actual_value_transposition": "1/2",
+                "certified_desired_payment": "1",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "1/2",
+                "hold": "1/2",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "1/2",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "61741/76832",
+                "actual_value_transposition": "61741/153664",
+                "certified_desired_payment": "61741/76832",
+                "certified_target_reversal": "61741/153664",
+                "changed_g_payment": "61741/153664",
+                "exchange_unlike": "61741/153664",
+                "hold": "61741/153664",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "61741/153664",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "1",
+                "actual_value_transposition": "1/2",
+                "certified_desired_payment": "1",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "1/2",
+                "hold": "1/2",
+                "locally_refused": "0",
+                "paid_one": "1",
+                "prepaid_one": "1/2",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "61741/76832",
+                "actual_value_transposition": "61741/153664",
+                "certified_desired_payment": "61741/76832",
+                "certified_target_reversal": "61741/153664",
+                "changed_g_payment": "61741/153664",
+                "exchange_unlike": "61741/153664",
+                "hold": "61741/153664",
+                "locally_refused": "0",
+                "paid_one": "61741/76832",
+                "prepaid_one": "61741/153664",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "4523668/9075927",
+              "10": "4552259/9075927"
+            },
+            "1": {
+              "01": "4523668/9075927",
+              "11": "4552259/9075927"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "0",
+              "01": "0",
+              "10": "0",
+              "11": "0"
+            },
+            "1": {
+              "00": "1",
+              "01": "1",
+              "10": "1",
+              "11": "1"
+            }
+          },
+          "bank_prior": {
+            "001": "1/6",
+            "010": "1/6",
+            "011": "1/6",
+            "100": "1/6",
+            "101": "1/6",
+            "110": "1/6"
+          },
+          "both_desires_certified_on_same_prestate": "1",
+          "both_desires_certified_on_same_prestate_per_launch": "61741/76832",
+          "launch_mass": "61741/76832",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "4552259/72607416",
+                  "001": "68055157/508251912",
+                  "010": "68055157/508251912",
+                  "011": "68055157/508251912",
+                  "100": "68055157/508251912",
+                  "101": "68055157/508251912",
+                  "110": "68055157/508251912",
+                  "111": "68055157/508251912"
+                },
+                "1": {
+                  "000": "17020937/127062978",
+                  "001": "17020937/127062978",
+                  "010": "17020937/127062978",
+                  "011": "17020937/127062978",
+                  "100": "17020937/127062978",
+                  "101": "17020937/127062978",
+                  "110": "17020937/127062978",
+                  "111": "1130917/18151854"
+                }
+              },
+              "best_guess": "181547131/338834608",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "12129827/169417304"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|1": "4552259/72607416",
+                  "001|0": "4523668/63531489",
+                  "001|1": "4552259/72607416",
+                  "010|0": "4523668/63531489",
+                  "010|1": "4552259/72607416",
+                  "011|0": "4523668/63531489",
+                  "011|1": "4552259/72607416",
+                  "100|0": "4523668/63531489",
+                  "100|1": "4552259/72607416",
+                  "101|0": "4523668/63531489",
+                  "101|1": "4552259/72607416",
+                  "110|0": "4523668/63531489",
+                  "110|1": "4552259/72607416",
+                  "111|0": "4523668/63531489",
+                  "111|1": "4552259/72607416"
+                },
+                "1": {
+                  "000|0": "1130917/18151854",
+                  "000|1": "4552259/63531489",
+                  "001|0": "1130917/18151854",
+                  "001|1": "4552259/63531489",
+                  "010|0": "1130917/18151854",
+                  "010|1": "4552259/63531489",
+                  "011|0": "1130917/18151854",
+                  "011|1": "4552259/63531489",
+                  "100|0": "1130917/18151854",
+                  "100|1": "4552259/63531489",
+                  "101|0": "1130917/18151854",
+                  "101|1": "4552259/63531489",
+                  "110|0": "1130917/18151854",
+                  "110|1": "4552259/63531489",
+                  "111|0": "1130917/18151854"
+                }
+              },
+              "best_guess": "9/16",
+              "certainty_mass": "1/16",
+              "certifying_mass_per_launch_at_equal_odds": "61741/1229312",
+              "certifying_records": {
+                "000|0": 1,
+                "111|1": 0
+              },
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "1/8"
+            }
+          },
+          "request_interpretation": "desired payment value"
+        },
+        "previous_ready_01": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "61741/230496",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "1",
+                "certified_target_reversal": "1",
+                "changed_g_payment": "1",
+                "exchange_unlike": "1",
+                "locally_refused": "0",
+                "paid_one": "1",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "61741/230496",
+                "certified_target_reversal": "61741/230496",
+                "changed_g_payment": "61741/230496",
+                "exchange_unlike": "61741/230496",
+                "locally_refused": "0",
+                "paid_one": "61741/230496",
+                "prepaid_one": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "4523668/9075927",
+              "10": "4552259/9075927"
+            },
+            "1": {
+              "01": "4523668/9075927",
+              "11": "4552259/9075927"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "0",
+              "01": "0",
+              "10": "0",
+              "11": "0"
+            },
+            "1": {
+              "00": "1",
+              "01": "1",
+              "10": "1",
+              "11": "1"
+            }
+          },
+          "bank_prior": {
+            "100": "1/2",
+            "101": "1/2"
+          },
+          "launch_mass": "61741/230496",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "4552259/72607416",
+                  "001": "68055157/508251912",
+                  "010": "68055157/508251912",
+                  "011": "68055157/508251912",
+                  "100": "68055157/508251912",
+                  "101": "68055157/508251912",
+                  "110": "68055157/508251912",
+                  "111": "68055157/508251912"
+                },
+                "1": {
+                  "000": "17020937/127062978",
+                  "001": "17020937/127062978",
+                  "010": "17020937/127062978",
+                  "011": "17020937/127062978",
+                  "100": "17020937/127062978",
+                  "101": "17020937/127062978",
+                  "110": "17020937/127062978",
+                  "111": "1130917/18151854"
+                }
+              },
+              "best_guess": "181547131/338834608",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "12129827/169417304"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|1": "4552259/72607416",
+                  "001|0": "4523668/63531489",
+                  "001|1": "4552259/72607416",
+                  "010|0": "4523668/63531489",
+                  "010|1": "4552259/72607416",
+                  "011|0": "4523668/63531489",
+                  "011|1": "4552259/72607416",
+                  "100|0": "4523668/63531489",
+                  "100|1": "4552259/72607416",
+                  "101|0": "4523668/63531489",
+                  "101|1": "4552259/72607416",
+                  "110|0": "4523668/63531489",
+                  "110|1": "4552259/72607416",
+                  "111|0": "4523668/63531489",
+                  "111|1": "4552259/72607416"
+                },
+                "1": {
+                  "000|0": "1130917/18151854",
+                  "000|1": "4552259/63531489",
+                  "001|0": "1130917/18151854",
+                  "001|1": "4552259/63531489",
+                  "010|0": "1130917/18151854",
+                  "010|1": "4552259/63531489",
+                  "011|0": "1130917/18151854",
+                  "011|1": "4552259/63531489",
+                  "100|0": "1130917/18151854",
+                  "100|1": "4552259/63531489",
+                  "101|0": "1130917/18151854",
+                  "101|1": "4552259/63531489",
+                  "110|0": "1130917/18151854",
+                  "110|1": "4552259/63531489",
+                  "111|0": "1130917/18151854"
+                }
+              },
+              "best_guess": "9/16",
+              "certainty_mass": "1/16",
+              "certifying_mass_per_launch_at_equal_odds": "61741/3687936",
+              "certifying_records": {
+                "000|0": 1,
+                "111|1": 0
+              },
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "1/8"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "previous_ready_01_and_H_zero_background": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "396547/15059072",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "1",
+                "certified_target_reversal": "1",
+                "changed_g_payment": "1",
+                "exchange_unlike": "1",
+                "locally_refused": "0",
+                "paid_one": "1",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "396547/15059072",
+                "certified_target_reversal": "396547/15059072",
+                "changed_g_payment": "396547/15059072",
+                "exchange_unlike": "396547/15059072",
+                "locally_refused": "0",
+                "paid_one": "396547/15059072",
+                "prepaid_one": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "738605/2379282",
+              "10": "1640677/2379282"
+            },
+            "1": {
+              "01": "738605/2379282",
+              "11": "1640677/2379282"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "0",
+              "01": "0",
+              "10": "0",
+              "11": "0"
+            },
+            "1": {
+              "00": "1",
+              "01": "1",
+              "10": "1",
+              "11": "1"
+            }
+          },
+          "bank_prior": {
+            "100": "1/2",
+            "101": "1/2"
+          },
+          "launch_mass": "396547/15059072",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1640677/19034256",
+                  "001": "2484797/19034256",
+                  "010": "2484797/19034256",
+                  "011": "2484797/19034256",
+                  "100": "2484797/19034256",
+                  "101": "2484797/19034256",
+                  "110": "2484797/19034256",
+                  "111": "2484797/19034256"
+                },
+                "1": {
+                  "000": "18295651/133239792",
+                  "001": "18295651/133239792",
+                  "010": "18295651/133239792",
+                  "011": "18295651/133239792",
+                  "100": "18295651/133239792",
+                  "101": "18295651/133239792",
+                  "110": "18295651/133239792",
+                  "111": "738605/19034256"
+                }
+              },
+              "best_guess": "216463/396547",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "36379/396547"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|1": "1640677/19034256",
+                  "001|0": "105515/2379282",
+                  "001|1": "1640677/19034256",
+                  "010|0": "105515/2379282",
+                  "010|1": "1640677/19034256",
+                  "011|0": "105515/2379282",
+                  "011|1": "1640677/19034256",
+                  "100|0": "105515/2379282",
+                  "100|1": "1640677/19034256",
+                  "101|0": "105515/2379282",
+                  "101|1": "1640677/19034256",
+                  "110|0": "105515/2379282",
+                  "110|1": "1640677/19034256",
+                  "111|0": "105515/2379282",
+                  "111|1": "1640677/19034256"
+                },
+                "1": {
+                  "000|0": "738605/19034256",
+                  "000|1": "1640677/16654974",
+                  "001|0": "738605/19034256",
+                  "001|1": "1640677/16654974",
+                  "010|0": "738605/19034256",
+                  "010|1": "1640677/16654974",
+                  "011|0": "738605/19034256",
+                  "011|1": "1640677/16654974",
+                  "100|0": "738605/19034256",
+                  "100|1": "1640677/16654974",
+                  "101|0": "738605/19034256",
+                  "101|1": "1640677/16654974",
+                  "110|0": "738605/19034256",
+                  "110|1": "1640677/16654974",
+                  "111|0": "738605/19034256"
+                }
+              },
+              "best_guess": "9/16",
+              "certainty_mass": "1/16",
+              "certifying_mass_per_launch_at_equal_odds": "396547/240945152",
+              "certifying_records": {
+                "000|0": 1,
+                "111|1": 0
+              },
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "1/8"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        }
+      },
+      "full_bank_mixed_launch_mass": "61741/76832",
+      "launch_W_prior": {
+        "000": "67/588",
+        "001": "79/588",
+        "010": "79/588",
+        "011": "79/588",
+        "100": "79/588",
+        "101": "79/588",
+        "110": "79/588",
+        "111": "47/588"
+      },
+      "launch_joint_K_inherited_and_bank": {
+        "00|001": "1419/38416",
+        "00|010": "1419/38416",
+        "00|011": "1419/38416",
+        "00|100": "1419/38416",
+        "00|101": "1419/38416",
+        "00|110": "1419/38416",
+        "00|111": "1419/38416",
+        "01|000": "1353/43904",
+        "01|001": "1353/43904",
+        "01|010": "1353/43904",
+        "01|011": "1353/43904",
+        "01|100": "1353/43904",
+        "01|101": "1353/43904",
+        "01|110": "1353/43904",
+        "01|111": "1353/43904",
+        "10|000": "4171/131712",
+        "10|001": "4171/131712",
+        "10|010": "4171/131712",
+        "10|011": "4171/131712",
+        "10|100": "4171/131712",
+        "10|101": "4171/131712",
+        "10|110": "4171/131712",
+        "10|111": "4171/131712",
+        "11|000": "3977/115248",
+        "11|001": "3977/115248",
+        "11|010": "3977/115248",
+        "11|011": "3977/115248",
+        "11|100": "3977/115248",
+        "11|101": "3977/115248",
+        "11|110": "3977/115248"
+      },
+      "orbit_records_by_complete_private_word": {
+        "000": {
+          "deterministic_pairs": [],
+          "observable_track_orbits": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 6,
+          "target_values_across_subset_allocations": [
+            0
+          ],
+          "target_values_across_unmarked_allocations": [
+            0
+          ]
+        },
+        "001": {
+          "deterministic_pairs": [
+            [
+              0,
+              1
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "010": {
+          "deterministic_pairs": [
+            [
+              0,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "011": {
+          "deterministic_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "100": {
+          "deterministic_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "101": {
+          "deterministic_pairs": [
+            [
+              0,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "110": {
+          "deterministic_pairs": [
+            [
+              0,
+              1
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "111": {
+          "deterministic_pairs": [],
+          "observable_track_orbits": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 6,
+          "target_values_across_subset_allocations": [
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            1
+          ]
+        }
+      },
+      "orientation_given_mixed_pair": {
+        "target_one": "1/2",
+        "target_zero": "1/2"
+      },
+      "pair_mixed_launch_mass": "61741/115248",
+      "pair_prior_in_target_then_companion_order_for_audit": {
+        "00": "53227/230496",
+        "01": "61741/230496",
+        "10": "61741/230496",
+        "11": "17929/76832"
+      },
+      "physical": {
+        "G_coholder_pattern": [
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "G_fresh": [
+          12953,
+          12954,
+          12955
+        ],
+        "G_payments": {
+          "12953": 3765,
+          "12954": 4377,
+          "12955": 4378
+        },
+        "H_companion_payment": 4381,
+        "K_bank": [
+          4383,
+          4384,
+          4385
+        ],
+        "K_inherited": [
+          1749,
+          1761
+        ],
+        "K_payments": {
+          "4383": 1211,
+          "4384": 1595,
+          "4385": 1597
+        },
+        "after_cut_four_K_private_marks": [],
+        "cut_sizes": [
+          964,
+          2782
+        ]
+      },
+      "policy_scores": {
+        "addressed_desire": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "415159/460992",
+                "actual_value_transposition": "61741/153664",
+                "certified_desired_payment": "415159/460992",
+                "certified_target_reversal": "61741/153664",
+                "changed_g_payment": "61741/153664",
+                "exchange_unlike": "61741/153664",
+                "hold": "2053/4116",
+                "locally_refused": "45833/460992",
+                "paid_one": "45833/460992",
+                "prepaid_one": "2063/4116",
+                "refuse_no_opposite_value": "45833/460992",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "415159/460992",
+                "actual_value_transposition": "61741/153664",
+                "certified_desired_payment": "415159/460992",
+                "certified_target_reversal": "61741/153664",
+                "changed_g_payment": "61741/153664",
+                "exchange_unlike": "61741/153664",
+                "hold": "2053/4116",
+                "locally_refused": "45833/460992",
+                "paid_one": "45833/460992",
+                "prepaid_one": "2063/4116",
+                "refuse_no_opposite_value": "45833/460992",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "416279/460992",
+                "actual_value_transposition": "61741/153664",
+                "certified_desired_payment": "416279/460992",
+                "certified_target_reversal": "61741/153664",
+                "changed_g_payment": "61741/153664",
+                "exchange_unlike": "61741/153664",
+                "hold": "2063/4116",
+                "locally_refused": "44713/460992",
+                "paid_one": "416279/460992",
+                "prepaid_one": "2063/4116",
+                "refuse_no_opposite_value": "44713/460992",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "416279/460992",
+                "actual_value_transposition": "61741/153664",
+                "certified_desired_payment": "416279/460992",
+                "certified_target_reversal": "61741/153664",
+                "changed_g_payment": "61741/153664",
+                "exchange_unlike": "61741/153664",
+                "hold": "2063/4116",
+                "locally_refused": "44713/460992",
+                "paid_one": "416279/460992",
+                "prepaid_one": "2063/4116",
+                "refuse_no_opposite_value": "44713/460992",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "30411667/67765824",
+              "01": "3364229/67765824",
+              "10": "15308353/33882912",
+              "11": "1686611/33882912"
+            },
+            "1": {
+              "00": "3269659/67765824",
+              "01": "30506237/67765824",
+              "10": "206447/4235364",
+              "11": "3835847/8470728"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/7",
+              "01": "1/8",
+              "10": "1/8",
+              "11": "0"
+            },
+            "1": {
+              "00": "1",
+              "01": "7/8",
+              "10": "7/8",
+              "11": "6/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "both_desires_certified_on_same_prestate": "61741/76832",
+          "both_desires_certified_on_same_prestate_per_launch": "61741/76832",
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "88284107/1264962048",
+                  "001": "508145657/3794886144",
+                  "010": "508145657/3794886144",
+                  "011": "508145657/3794886144",
+                  "100": "508145657/3794886144",
+                  "101": "508145657/3794886144",
+                  "110": "508145657/3794886144",
+                  "111": "53462209/421654016"
+                },
+                "1": {
+                  "000": "160719977/1264962048",
+                  "001": "508317203/3794886144",
+                  "010": "508317203/3794886144",
+                  "011": "508317203/3794886144",
+                  "100": "508317203/3794886144",
+                  "101": "508317203/3794886144",
+                  "110": "508317203/3794886144",
+                  "111": "29202555/421654016"
+                }
+              },
+              "best_guess": "222956835/421654016",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "12129827/210827008"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "3364229/542126592",
+                  "000|1": "120651359/1897443072",
+                  "001|0": "266842939/3794886144",
+                  "001|1": "120651359/1897443072",
+                  "010|0": "266842939/3794886144",
+                  "010|1": "120651359/1897443072",
+                  "011|0": "266842939/3794886144",
+                  "011|1": "120651359/1897443072",
+                  "100|0": "266842939/3794886144",
+                  "100|1": "120651359/1897443072",
+                  "101|0": "266842939/3794886144",
+                  "101|1": "120651359/1897443072",
+                  "110|0": "266842939/3794886144",
+                  "110|1": "120651359/1897443072",
+                  "111|0": "266842939/3794886144",
+                  "111|1": "15308353/271063296"
+                },
+                "1": {
+                  "000|0": "30506237/542126592",
+                  "000|1": "16788517/237180384",
+                  "001|0": "239700931/3794886144",
+                  "001|1": "16788517/237180384",
+                  "010|0": "239700931/3794886144",
+                  "010|1": "16788517/237180384",
+                  "011|0": "239700931/3794886144",
+                  "011|1": "16788517/237180384",
+                  "100|0": "239700931/3794886144",
+                  "100|1": "16788517/237180384",
+                  "101|0": "239700931/3794886144",
+                  "101|1": "16788517/237180384",
+                  "110|0": "239700931/3794886144",
+                  "110|1": "16788517/237180384",
+                  "111|0": "239700931/3794886144",
+                  "111|1": "206447/33882912"
+                }
+              },
+              "best_guess": "676397/1229312",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "61741/614656"
+            }
+          },
+          "request_interpretation": "desired payment value"
+        },
+        "deterministic_equal_if_unique": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "exchange_equal": "61741/76832",
+                "locally_refused": "15091/76832",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_no_unique_pair": "15091/76832"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "exchange_equal": "61741/76832",
+                "locally_refused": "15091/76832",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_no_unique_pair": "15091/76832"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            },
+            "1": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            },
+            "1": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                },
+                "1": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                },
+                "1": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "deterministic_refusal": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "locally_refused": "1",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_no_unique_unlike_pair": "1"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "locally_refused": "1",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_no_unique_unlike_pair": "1"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            },
+            "1": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            },
+            "1": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                },
+                "1": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                },
+                "1": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "fixed_pair_refuse_equal": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "61741/115248",
+                "certified_target_reversal": "61741/115248",
+                "changed_g_payment": "61741/115248",
+                "exchange_unlike": "61741/115248",
+                "locally_refused": "53507/115248",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_equal_pair": "53507/115248"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "61741/115248",
+                "certified_target_reversal": "61741/115248",
+                "changed_g_payment": "61741/115248",
+                "exchange_unlike": "61741/115248",
+                "locally_refused": "53507/115248",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_equal_pair": "53507/115248"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            },
+            "1": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            },
+            "1": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                },
+                "1": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                },
+                "1": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "fixed_pair_swap": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "61741/115248",
+                "certified_target_reversal": "61741/115248",
+                "changed_g_payment": "61741/115248",
+                "exchange_equal": "53507/115248",
+                "exchange_unlike": "61741/115248",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "61741/115248",
+                "certified_target_reversal": "61741/115248",
+                "changed_g_payment": "61741/115248",
+                "exchange_equal": "53507/115248",
+                "exchange_unlike": "61741/115248",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            },
+            "1": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            },
+            "1": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                },
+                "1": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                },
+                "1": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "outsider_desire": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "291677/460992",
+                "actual_value_transposition": "61741/230496",
+                "certified_desired_payment": "2053/4116",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/460992",
+                "exchange_unlike": "61741/230496",
+                "hold": "53227/230496",
+                "locally_refused": "2063/4116",
+                "paid_one": "169315/460992",
+                "prepaid_one": "2063/4116",
+                "refuse_pair_cannot_be_set_to_desire": "2063/4116",
+                "refused_but_actual_payment_equals_desire": "61741/460992"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "291677/460992",
+                "actual_value_transposition": "61741/230496",
+                "certified_desired_payment": "2053/4116",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/460992",
+                "exchange_unlike": "61741/230496",
+                "hold": "53227/230496",
+                "locally_refused": "2063/4116",
+                "paid_one": "169315/460992",
+                "prepaid_one": "2063/4116",
+                "refuse_pair_cannot_be_set_to_desire": "2063/4116",
+                "refused_but_actual_payment_equals_desire": "61741/460992"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "97599/153664",
+                "actual_value_transposition": "61741/230496",
+                "certified_desired_payment": "2063/4116",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/460992",
+                "exchange_unlike": "61741/230496",
+                "hold": "17929/76832",
+                "locally_refused": "2053/4116",
+                "paid_one": "97599/153664",
+                "prepaid_one": "2063/4116",
+                "refuse_pair_cannot_be_set_to_desire": "2053/4116",
+                "refused_but_actual_payment_equals_desire": "61741/460992"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "97599/153664",
+                "actual_value_transposition": "61741/230496",
+                "certified_desired_payment": "2063/4116",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/460992",
+                "exchange_unlike": "61741/230496",
+                "hold": "17929/76832",
+                "locally_refused": "2053/4116",
+                "paid_one": "97599/153664",
+                "prepaid_one": "2063/4116",
+                "refuse_pair_cannot_be_set_to_desire": "2053/4116",
+                "refused_but_actual_payment_equals_desire": "61741/460992"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "21364331/67765824",
+              "01": "12411565/67765824",
+              "10": "5378047/16941456",
+              "11": "3119435/16941456"
+            },
+            "1": {
+              "00": "1368555/7529536",
+              "01": "7152967/22588608",
+              "10": "689315/3764768",
+              "11": "3597043/11294304"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "3/7",
+              "01": "3/8",
+              "10": "3/8",
+              "11": "2/7"
+            },
+            "1": {
+              "00": "5/7",
+              "01": "5/8",
+              "10": "5/8",
+              "11": "4/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "both_desires_certified_on_same_prestate": "0",
+          "both_desires_certified_on_same_prestate_per_launch": "0",
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "112429397/1264962048",
+                  "001": "508202839/3794886144",
+                  "010": "508202839/3794886144",
+                  "011": "508202839/3794886144",
+                  "100": "508202839/3794886144",
+                  "101": "508202839/3794886144",
+                  "110": "508202839/3794886144",
+                  "111": "136126973/1264962048"
+                },
+                "1": {
+                  "000": "136574687/1264962048",
+                  "001": "169420007/1264962048",
+                  "010": "169420007/1264962048",
+                  "011": "169420007/1264962048",
+                  "100": "169420007/1264962048",
+                  "101": "169420007/1264962048",
+                  "110": "169420007/1264962048",
+                  "111": "111867319/1264962048"
+                }
+              },
+              "best_guess": "644610851/1264962048",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "12129827/632481024"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "12411565/542126592",
+                  "000|1": "62601809/948721536",
+                  "001|0": "257795603/3794886144",
+                  "001|1": "62601809/948721536",
+                  "010|0": "257795603/3794886144",
+                  "010|1": "62601809/948721536",
+                  "011|0": "257795603/3794886144",
+                  "011|1": "62601809/948721536",
+                  "100|0": "257795603/3794886144",
+                  "100|1": "62601809/948721536",
+                  "101|0": "257795603/3794886144",
+                  "101|1": "62601809/948721536",
+                  "110|0": "257795603/3794886144",
+                  "110|1": "62601809/948721536",
+                  "111|0": "257795603/3794886144",
+                  "111|1": "5378047/135531648"
+                },
+                "1": {
+                  "000|0": "7152967/180708864",
+                  "000|1": "43251959/632481024",
+                  "001|0": "82916089/1264962048",
+                  "001|1": "43251959/632481024",
+                  "010|0": "82916089/1264962048",
+                  "010|1": "43251959/632481024",
+                  "011|0": "82916089/1264962048",
+                  "011|1": "43251959/632481024",
+                  "100|0": "82916089/1264962048",
+                  "100|1": "43251959/632481024",
+                  "101|0": "82916089/1264962048",
+                  "101|1": "43251959/632481024",
+                  "110|0": "82916089/1264962048",
+                  "110|1": "43251959/632481024",
+                  "111|0": "82916089/1264962048",
+                  "111|1": "689315/30118144"
+                }
+              },
+              "best_guess": "1905709/3687936",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "61741/1843968"
+            }
+          },
+          "request_interpretation": "desired payment value"
+        },
+        "outsider_equalize": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "61741/115248",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/230496",
+                "exchange_unlike": "61741/115248",
+                "locally_refused": "53507/115248",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_equal_pair": "53507/115248"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "61741/115248",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/230496",
+                "exchange_unlike": "61741/115248",
+                "locally_refused": "53507/115248",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_equal_pair": "53507/115248"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            },
+            "1": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            },
+            "1": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                },
+                "1": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                },
+                "1": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "random_unlike": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "61741/76832",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/115248",
+                "exchange_unlike": "61741/76832",
+                "locally_refused": "15091/76832",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_no_unlike_pair": "15091/76832"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "61741/76832",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "61741/115248",
+                "exchange_unlike": "61741/76832",
+                "locally_refused": "15091/76832",
+                "paid_one": "2063/4116",
+                "prepaid_one": "2063/4116",
+                "refuse_no_unlike_pair": "15091/76832"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            },
+            "1": {
+              "00": "343687/1382976",
+              "01": "345617/1382976",
+              "10": "346121/1382976",
+              "11": "347551/1382976"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            },
+            "1": {
+              "00": "4/7",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/7"
+            }
+          },
+          "bank_prior": {
+            "000": "44713/460992",
+            "001": "61741/460992",
+            "010": "61741/460992",
+            "011": "61741/460992",
+            "100": "61741/460992",
+            "101": "61741/460992",
+            "110": "61741/460992",
+            "111": "45833/460992"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                },
+                "1": {
+                  "000": "1270429/12907776",
+                  "001": "5186035/38723328",
+                  "010": "5186035/38723328",
+                  "011": "5186035/38723328",
+                  "100": "5186035/38723328",
+                  "101": "5186035/38723328",
+                  "110": "5186035/38723328",
+                  "111": "421759/4302592"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                },
+                "1": {
+                  "000|0": "345617/11063808",
+                  "000|1": "5203255/77446656",
+                  "001|0": "5168815/77446656",
+                  "001|1": "5203255/77446656",
+                  "010|0": "5168815/77446656",
+                  "010|1": "5203255/77446656",
+                  "011|0": "5168815/77446656",
+                  "011|1": "5203255/77446656",
+                  "100|0": "5168815/77446656",
+                  "100|1": "5203255/77446656",
+                  "101|0": "5168815/77446656",
+                  "101|1": "5203255/77446656",
+                  "110|0": "5168815/77446656",
+                  "110|1": "5203255/77446656",
+                  "111|0": "5168815/77446656",
+                  "111|1": "346121/11063808"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        }
+      },
+      "resources": {
+        "births": [
+          162,
+          163,
+          165,
+          169,
+          292,
+          294,
+          296,
+          631,
+          632
+        ],
+        "peak_states": 3600
+      }
+    },
+    "parity": {
+      "allocation_controls": {
+        "actual_payment_order": [
+          4383,
+          4384,
+          4385
+        ],
+        "all_routes_same_groups": [
+          [
+            4383,
+            4384,
+            4385
+          ],
+          [
+            4383,
+            4385,
+            4384
+          ],
+          [
+            4384,
+            4383,
+            4385
+          ],
+          [
+            4384,
+            4385,
+            4383
+          ],
+          [
+            4385,
+            4383,
+            4384
+          ],
+          [
+            4385,
+            4384,
+            4383
+          ]
+        ],
+        "coherently_relabelled_payment_order": [
+          104384,
+          104383,
+          104385
+        ],
+        "fixed_receivers": [
+          1211,
+          1595,
+          1597
+        ],
+        "new_allocation_if_relabelled_ids_are_resorted": [
+          104383,
+          104384,
+          104385
+        ],
+        "routes_with_designated_pair_at_G": [
+          [
+            4383,
+            4384,
+            4385
+          ],
+          [
+            4384,
+            4383,
+            4385
+          ],
+          [
+            4385,
+            4383,
+            4384
+          ],
+          [
+            4385,
+            4384,
+            4383
+          ]
+        ]
+      },
+      "conditional_controls": {
+        "addressed_on_mixed_full_bank": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "1",
+                "actual_value_transposition": "1/2",
+                "certified_desired_payment": "1",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "1/2",
+                "hold": "1/2",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "1/2",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "3/4",
+                "actual_value_transposition": "3/8",
+                "certified_desired_payment": "3/4",
+                "certified_target_reversal": "3/8",
+                "changed_g_payment": "3/8",
+                "exchange_unlike": "3/8",
+                "hold": "3/8",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "3/8",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "1",
+                "actual_value_transposition": "1/2",
+                "certified_desired_payment": "1",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "1/2",
+                "hold": "1/2",
+                "locally_refused": "0",
+                "paid_one": "1",
+                "prepaid_one": "1/2",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "3/4",
+                "actual_value_transposition": "3/8",
+                "certified_desired_payment": "3/4",
+                "certified_target_reversal": "3/8",
+                "changed_g_payment": "3/8",
+                "exchange_unlike": "3/8",
+                "hold": "3/8",
+                "locally_refused": "0",
+                "paid_one": "3/4",
+                "prepaid_one": "3/8",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/2",
+              "10": "1/2"
+            },
+            "1": {
+              "01": "1/2",
+              "11": "1/2"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "0",
+              "01": "0",
+              "10": "0",
+              "11": "0"
+            },
+            "1": {
+              "00": "1",
+              "01": "1",
+              "10": "1",
+              "11": "1"
+            }
+          },
+          "bank_prior": {
+            "001": "1/6",
+            "010": "1/6",
+            "011": "1/6",
+            "100": "1/6",
+            "101": "1/6",
+            "110": "1/6"
+          },
+          "both_desires_certified_on_same_prestate": "1",
+          "both_desires_certified_on_same_prestate_per_launch": "3/4",
+          "launch_mass": "3/4",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/8",
+                  "001|1": "1/8",
+                  "010|1": "1/8",
+                  "011|0": "1/8",
+                  "100|1": "1/8",
+                  "101|0": "1/8",
+                  "110|0": "1/8",
+                  "111|1": "1/8"
+                },
+                "1": {
+                  "000|1": "1/8",
+                  "001|0": "1/8",
+                  "010|0": "1/8",
+                  "011|1": "1/8",
+                  "100|0": "1/8",
+                  "101|1": "1/8",
+                  "110|1": "1/8",
+                  "111|0": "1/8"
+                }
+              },
+              "best_guess": "1",
+              "certainty_mass": "1",
+              "certifying_mass_per_launch_at_equal_odds": "3/4",
+              "certifying_records": {
+                "000|0": 0,
+                "000|1": 1,
+                "001|0": 1,
+                "001|1": 0,
+                "010|0": 1,
+                "010|1": 0,
+                "011|0": 0,
+                "011|1": 1,
+                "100|0": 1,
+                "100|1": 0,
+                "101|0": 0,
+                "101|1": 1,
+                "110|0": 0,
+                "110|1": 1,
+                "111|0": 1,
+                "111|1": 0
+              },
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "1"
+            }
+          },
+          "request_interpretation": "desired payment value"
+        },
+        "previous_ready_01": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1/4",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "1",
+                "certified_target_reversal": "1",
+                "changed_g_payment": "1",
+                "exchange_unlike": "1",
+                "locally_refused": "0",
+                "paid_one": "1",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "1/4",
+                "certified_target_reversal": "1/4",
+                "changed_g_payment": "1/4",
+                "exchange_unlike": "1/4",
+                "locally_refused": "0",
+                "paid_one": "1/4",
+                "prepaid_one": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/2",
+              "10": "1/2"
+            },
+            "1": {
+              "01": "1/2",
+              "11": "1/2"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "0",
+              "01": "0",
+              "10": "0",
+              "11": "0"
+            },
+            "1": {
+              "00": "1",
+              "01": "1",
+              "10": "1",
+              "11": "1"
+            }
+          },
+          "bank_prior": {
+            "100": "1/2",
+            "101": "1/2"
+          },
+          "launch_mass": "1/4",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/8",
+                  "001|1": "1/8",
+                  "010|1": "1/8",
+                  "011|0": "1/8",
+                  "100|1": "1/8",
+                  "101|0": "1/8",
+                  "110|0": "1/8",
+                  "111|1": "1/8"
+                },
+                "1": {
+                  "000|1": "1/8",
+                  "001|0": "1/8",
+                  "010|0": "1/8",
+                  "011|1": "1/8",
+                  "100|0": "1/8",
+                  "101|1": "1/8",
+                  "110|1": "1/8",
+                  "111|0": "1/8"
+                }
+              },
+              "best_guess": "1",
+              "certainty_mass": "1",
+              "certifying_mass_per_launch_at_equal_odds": "1/4",
+              "certifying_records": {
+                "000|0": 0,
+                "000|1": 1,
+                "001|0": 1,
+                "001|1": 0,
+                "010|0": 1,
+                "010|1": 0,
+                "011|0": 0,
+                "011|1": 1,
+                "100|0": 1,
+                "100|1": 0,
+                "101|0": 0,
+                "101|1": 1,
+                "110|0": 0,
+                "110|1": 1,
+                "111|0": 1,
+                "111|1": 0
+              },
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "1"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "previous_ready_01_and_H_zero_background": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1/32",
+                "locally_refused": "0",
+                "paid_one": "0",
+                "prepaid_one": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "1",
+                "certified_target_reversal": "1",
+                "changed_g_payment": "1",
+                "exchange_unlike": "1",
+                "locally_refused": "0",
+                "paid_one": "1",
+                "prepaid_one": "0"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "1/32",
+                "certified_target_reversal": "1/32",
+                "changed_g_payment": "1/32",
+                "exchange_unlike": "1/32",
+                "locally_refused": "0",
+                "paid_one": "1/32",
+                "prepaid_one": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/2",
+              "10": "1/2"
+            },
+            "1": {
+              "01": "1/2",
+              "11": "1/2"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "0",
+              "01": "0",
+              "10": "0",
+              "11": "0"
+            },
+            "1": {
+              "00": "1",
+              "01": "1",
+              "10": "1",
+              "11": "1"
+            }
+          },
+          "bank_prior": {
+            "100": "1/2",
+            "101": "1/2"
+          },
+          "launch_mass": "1/32",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/8",
+                  "001|1": "1/8",
+                  "010|1": "1/8",
+                  "011|0": "1/8",
+                  "100|1": "1/8",
+                  "101|0": "1/8",
+                  "110|0": "1/8",
+                  "111|1": "1/8"
+                },
+                "1": {
+                  "000|1": "1/8",
+                  "001|0": "1/8",
+                  "010|0": "1/8",
+                  "011|1": "1/8",
+                  "100|0": "1/8",
+                  "101|1": "1/8",
+                  "110|1": "1/8",
+                  "111|0": "1/8"
+                }
+              },
+              "best_guess": "1",
+              "certainty_mass": "1",
+              "certifying_mass_per_launch_at_equal_odds": "1/32",
+              "certifying_records": {
+                "000|0": 0,
+                "000|1": 1,
+                "001|0": 1,
+                "001|1": 0,
+                "010|0": 1,
+                "010|1": 0,
+                "011|0": 0,
+                "011|1": 1,
+                "100|0": 1,
+                "100|1": 0,
+                "101|0": 0,
+                "101|1": 1,
+                "110|0": 0,
+                "110|1": 1,
+                "111|0": 1,
+                "111|1": 0
+              },
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "1"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        }
+      },
+      "full_bank_mixed_launch_mass": "3/4",
+      "launch_W_prior": {
+        "000": "1/8",
+        "001": "1/8",
+        "010": "1/8",
+        "011": "1/8",
+        "100": "1/8",
+        "101": "1/8",
+        "110": "1/8",
+        "111": "1/8"
+      },
+      "launch_joint_K_inherited_and_bank": {
+        "00|000": "1/16",
+        "00|011": "1/16",
+        "00|101": "1/16",
+        "00|110": "1/16",
+        "01|001": "1/16",
+        "01|010": "1/16",
+        "01|100": "1/16",
+        "01|111": "1/16",
+        "10|001": "1/16",
+        "10|010": "1/16",
+        "10|100": "1/16",
+        "10|111": "1/16",
+        "11|000": "1/16",
+        "11|011": "1/16",
+        "11|101": "1/16",
+        "11|110": "1/16"
+      },
+      "orbit_records_by_complete_private_word": {
+        "000": {
+          "deterministic_pairs": [],
+          "observable_track_orbits": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 6,
+          "target_values_across_subset_allocations": [
+            0
+          ],
+          "target_values_across_unmarked_allocations": [
+            0
+          ]
+        },
+        "001": {
+          "deterministic_pairs": [
+            [
+              0,
+              1
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "010": {
+          "deterministic_pairs": [
+            [
+              0,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "011": {
+          "deterministic_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "100": {
+          "deterministic_pairs": [
+            [
+              1,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "101": {
+          "deterministic_pairs": [
+            [
+              0,
+              2
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            0,
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "110": {
+          "deterministic_pairs": [
+            [
+              0,
+              1
+            ]
+          ],
+          "observable_track_orbits": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "stabilizer_size": 2,
+          "target_values_across_subset_allocations": [
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            0,
+            1
+          ]
+        },
+        "111": {
+          "deterministic_pairs": [],
+          "observable_track_orbits": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "stabilizer_size": 6,
+          "target_values_across_subset_allocations": [
+            1
+          ],
+          "target_values_across_unmarked_allocations": [
+            1
+          ]
+        }
+      },
+      "orientation_given_mixed_pair": {
+        "target_one": "1/2",
+        "target_zero": "1/2"
+      },
+      "pair_mixed_launch_mass": "1/2",
+      "pair_prior_in_target_then_companion_order_for_audit": {
+        "00": "1/4",
+        "01": "1/4",
+        "10": "1/4",
+        "11": "1/4"
+      },
+      "physical": {
+        "G_coholder_pattern": [
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "G_fresh": [
+          12953,
+          12954,
+          12955
+        ],
+        "G_payments": {
+          "12953": 3765,
+          "12954": 4377,
+          "12955": 4378
+        },
+        "H_companion_payment": 4381,
+        "K_bank": [
+          4383,
+          4384,
+          4385
+        ],
+        "K_inherited": [
+          1749,
+          1761
+        ],
+        "K_payments": {
+          "4383": 1211,
+          "4384": 1595,
+          "4385": 1597
+        },
+        "after_cut_four_K_private_marks": [],
+        "cut_sizes": [
+          964,
+          2782
+        ]
+      },
+      "policy_scores": {
+        "addressed_desire": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "7/8",
+                "actual_value_transposition": "3/8",
+                "certified_desired_payment": "7/8",
+                "certified_target_reversal": "3/8",
+                "changed_g_payment": "3/8",
+                "exchange_unlike": "3/8",
+                "hold": "1/2",
+                "locally_refused": "1/8",
+                "paid_one": "1/8",
+                "prepaid_one": "1/2",
+                "refuse_no_opposite_value": "1/8",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "7/8",
+                "actual_value_transposition": "3/8",
+                "certified_desired_payment": "7/8",
+                "certified_target_reversal": "3/8",
+                "changed_g_payment": "3/8",
+                "exchange_unlike": "3/8",
+                "hold": "1/2",
+                "locally_refused": "1/8",
+                "paid_one": "1/8",
+                "prepaid_one": "1/2",
+                "refuse_no_opposite_value": "1/8",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "7/8",
+                "actual_value_transposition": "3/8",
+                "certified_desired_payment": "7/8",
+                "certified_target_reversal": "3/8",
+                "changed_g_payment": "3/8",
+                "exchange_unlike": "3/8",
+                "hold": "1/2",
+                "locally_refused": "1/8",
+                "paid_one": "7/8",
+                "prepaid_one": "1/2",
+                "refuse_no_opposite_value": "1/8",
+                "refused_but_actual_payment_equals_desire": "0"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "7/8",
+                "actual_value_transposition": "3/8",
+                "certified_desired_payment": "7/8",
+                "certified_target_reversal": "3/8",
+                "changed_g_payment": "3/8",
+                "exchange_unlike": "3/8",
+                "hold": "1/2",
+                "locally_refused": "1/8",
+                "paid_one": "7/8",
+                "prepaid_one": "1/2",
+                "refuse_no_opposite_value": "1/8",
+                "refused_but_actual_payment_equals_desire": "0"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "7/16",
+              "01": "1/16",
+              "10": "7/16",
+              "11": "1/16"
+            },
+            "1": {
+              "00": "1/16",
+              "01": "7/16",
+              "10": "1/16",
+              "11": "7/16"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "0",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "0"
+            },
+            "1": {
+              "00": "3/4",
+              "01": "1",
+              "10": "1",
+              "11": "3/4"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "both_desires_certified_on_same_prestate": "3/4",
+          "both_desires_certified_on_same_prestate_per_launch": "3/4",
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "7/64",
+                  "000|1": "1/64",
+                  "001|0": "1/64",
+                  "001|1": "7/64",
+                  "010|0": "1/64",
+                  "010|1": "7/64",
+                  "011|0": "7/64",
+                  "011|1": "1/64",
+                  "100|0": "1/64",
+                  "100|1": "7/64",
+                  "101|0": "7/64",
+                  "101|1": "1/64",
+                  "110|0": "7/64",
+                  "110|1": "1/64",
+                  "111|0": "1/64",
+                  "111|1": "7/64"
+                },
+                "1": {
+                  "000|0": "1/64",
+                  "000|1": "7/64",
+                  "001|0": "7/64",
+                  "001|1": "1/64",
+                  "010|0": "7/64",
+                  "010|1": "1/64",
+                  "011|0": "1/64",
+                  "011|1": "7/64",
+                  "100|0": "7/64",
+                  "100|1": "1/64",
+                  "101|0": "1/64",
+                  "101|1": "7/64",
+                  "110|0": "1/64",
+                  "110|1": "7/64",
+                  "111|0": "7/64",
+                  "111|1": "1/64"
+                }
+              },
+              "best_guess": "7/8",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "3/4"
+            }
+          },
+          "request_interpretation": "desired payment value"
+        },
+        "deterministic_equal_if_unique": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "exchange_equal": "3/4",
+                "locally_refused": "1/4",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_no_unique_pair": "1/4"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "exchange_equal": "3/4",
+                "locally_refused": "1/4",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_no_unique_pair": "1/4"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            },
+            "1": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            },
+            "1": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                },
+                "1": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "deterministic_refusal": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "locally_refused": "1",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_no_unique_unlike_pair": "1"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "locally_refused": "1",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_no_unique_unlike_pair": "1"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            },
+            "1": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            },
+            "1": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                },
+                "1": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "fixed_pair_refuse_equal": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "1/2",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "1/2",
+                "locally_refused": "1/2",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_equal_pair": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "1/2",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "1/2",
+                "locally_refused": "1/2",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_equal_pair": "1/2"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            },
+            "1": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            },
+            "1": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                },
+                "1": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "fixed_pair_swap": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "1/2",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_equal": "1/2",
+                "exchange_unlike": "1/2",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "1/2",
+                "certified_target_reversal": "1/2",
+                "changed_g_payment": "1/2",
+                "exchange_equal": "1/2",
+                "exchange_unlike": "1/2",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            },
+            "1": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            },
+            "1": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                },
+                "1": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "outsider_desire": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "5/8",
+                "actual_value_transposition": "1/4",
+                "certified_desired_payment": "1/2",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/8",
+                "exchange_unlike": "1/4",
+                "hold": "1/4",
+                "locally_refused": "1/2",
+                "paid_one": "3/8",
+                "prepaid_one": "1/2",
+                "refuse_pair_cannot_be_set_to_desire": "1/2",
+                "refused_but_actual_payment_equals_desire": "1/8"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "5/8",
+                "actual_value_transposition": "1/4",
+                "certified_desired_payment": "1/2",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/8",
+                "exchange_unlike": "1/4",
+                "hold": "1/4",
+                "locally_refused": "1/2",
+                "paid_one": "3/8",
+                "prepaid_one": "1/2",
+                "refuse_pair_cannot_be_set_to_desire": "1/2",
+                "refused_but_actual_payment_equals_desire": "1/8"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_desired_payment": "5/8",
+                "actual_value_transposition": "1/4",
+                "certified_desired_payment": "1/2",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/8",
+                "exchange_unlike": "1/4",
+                "hold": "1/4",
+                "locally_refused": "1/2",
+                "paid_one": "5/8",
+                "prepaid_one": "1/2",
+                "refuse_pair_cannot_be_set_to_desire": "1/2",
+                "refused_but_actual_payment_equals_desire": "1/8"
+              },
+              "per_launch_given_request": {
+                "actual_desired_payment": "5/8",
+                "actual_value_transposition": "1/4",
+                "certified_desired_payment": "1/2",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/8",
+                "exchange_unlike": "1/4",
+                "hold": "1/4",
+                "locally_refused": "1/2",
+                "paid_one": "5/8",
+                "prepaid_one": "1/2",
+                "refuse_pair_cannot_be_set_to_desire": "1/2",
+                "refused_but_actual_payment_equals_desire": "1/8"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "5/16",
+              "01": "3/16",
+              "10": "5/16",
+              "11": "3/16"
+            },
+            "1": {
+              "00": "3/16",
+              "01": "5/16",
+              "10": "3/16",
+              "11": "5/16"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/2",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/2"
+            },
+            "1": {
+              "00": "3/4",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "3/4"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "both_desires_certified_on_same_prestate": "0",
+          "both_desires_certified_on_same_prestate_per_launch": "0",
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "5/64",
+                  "000|1": "3/64",
+                  "001|0": "3/64",
+                  "001|1": "5/64",
+                  "010|0": "3/64",
+                  "010|1": "5/64",
+                  "011|0": "5/64",
+                  "011|1": "3/64",
+                  "100|0": "3/64",
+                  "100|1": "5/64",
+                  "101|0": "5/64",
+                  "101|1": "3/64",
+                  "110|0": "5/64",
+                  "110|1": "3/64",
+                  "111|0": "3/64",
+                  "111|1": "5/64"
+                },
+                "1": {
+                  "000|0": "3/64",
+                  "000|1": "5/64",
+                  "001|0": "5/64",
+                  "001|1": "3/64",
+                  "010|0": "5/64",
+                  "010|1": "3/64",
+                  "011|0": "3/64",
+                  "011|1": "5/64",
+                  "100|0": "5/64",
+                  "100|1": "3/64",
+                  "101|0": "3/64",
+                  "101|1": "5/64",
+                  "110|0": "3/64",
+                  "110|1": "5/64",
+                  "111|0": "5/64",
+                  "111|1": "3/64"
+                }
+              },
+              "best_guess": "5/8",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "1/4"
+            }
+          },
+          "request_interpretation": "desired payment value"
+        },
+        "outsider_equalize": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "1/2",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/4",
+                "exchange_unlike": "1/2",
+                "locally_refused": "1/2",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_equal_pair": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "1/2",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/4",
+                "exchange_unlike": "1/2",
+                "locally_refused": "1/2",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_equal_pair": "1/2"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            },
+            "1": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            },
+            "1": {
+              "00": "3/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "3/4"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                },
+                "1": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        },
+        "random_unlike": {
+          "arm_events": {
+            "0": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "0",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "0",
+                "hold": "1",
+                "locally_refused": "0",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2"
+              }
+            },
+            "1": {
+              "conditional_on_cohort": {
+                "actual_value_transposition": "3/4",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "3/4",
+                "locally_refused": "1/4",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_no_unlike_pair": "1/4"
+              },
+              "per_launch_given_request": {
+                "actual_value_transposition": "3/4",
+                "certified_target_reversal": "0",
+                "changed_g_payment": "1/2",
+                "exchange_unlike": "3/4",
+                "locally_refused": "1/4",
+                "paid_one": "1/2",
+                "prepaid_one": "1/2",
+                "refuse_no_unlike_pair": "1/4"
+              }
+            }
+          },
+          "audit_only_h_then_K_paid_bit": {
+            "0": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            },
+            "1": {
+              "00": "1/4",
+              "01": "1/4",
+              "10": "1/4",
+              "11": "1/4"
+            }
+          },
+          "audit_only_paid_one_given_K_inherited": {
+            "0": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            },
+            "1": {
+              "00": "1/2",
+              "01": "1/2",
+              "10": "1/2",
+              "11": "1/2"
+            }
+          },
+          "bank_prior": {
+            "000": "1/8",
+            "001": "1/8",
+            "010": "1/8",
+            "011": "1/8",
+            "100": "1/8",
+            "101": "1/8",
+            "110": "1/8",
+            "111": "1/8"
+          },
+          "launch_mass": "1",
+          "masked_decoding": {
+            "fresh_only": {
+              "arm_laws": {
+                "0": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                },
+                "1": {
+                  "000": "1/8",
+                  "001": "1/8",
+                  "010": "1/8",
+                  "011": "1/8",
+                  "100": "1/8",
+                  "101": "1/8",
+                  "110": "1/8",
+                  "111": "1/8"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000",
+                "001",
+                "010",
+                "011",
+                "100",
+                "101",
+                "110",
+                "111"
+              ],
+              "total_variation": "0"
+            },
+            "fresh_plus_h": {
+              "arm_laws": {
+                "0": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                },
+                "1": {
+                  "000|0": "1/16",
+                  "000|1": "1/16",
+                  "001|0": "1/16",
+                  "001|1": "1/16",
+                  "010|0": "1/16",
+                  "010|1": "1/16",
+                  "011|0": "1/16",
+                  "011|1": "1/16",
+                  "100|0": "1/16",
+                  "100|1": "1/16",
+                  "101|0": "1/16",
+                  "101|1": "1/16",
+                  "110|0": "1/16",
+                  "110|1": "1/16",
+                  "111|0": "1/16",
+                  "111|1": "1/16"
+                }
+              },
+              "best_guess": "1/2",
+              "certainty_mass": "0",
+              "certifying_mass_per_launch_at_equal_odds": "0",
+              "certifying_records": {},
+              "support": [
+                "000|0",
+                "000|1",
+                "001|0",
+                "001|1",
+                "010|0",
+                "010|1",
+                "011|0",
+                "011|1",
+                "100|0",
+                "100|1",
+                "101|0",
+                "101|1",
+                "110|0",
+                "110|1",
+                "111|0",
+                "111|1"
+              ],
+              "total_variation": "0"
+            }
+          },
+          "request_interpretation": "0 holds; 1 requests exchange"
+        }
+      },
+      "resources": {
+        "births": [
+          162,
+          163,
+          165,
+          169,
+          292,
+          294,
+          296,
+          631,
+          632
+        ],
+        "peak_states": 1024
+      }
+    }
+  },
+  "schema": "private-sender-fixed-b307-20261122-v1"
+}

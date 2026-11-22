@@ -259,6 +259,7 @@ evidence: results and their status come from the records each entry links.
 | [A201](#a201--reverse-which-feeder-approach-opens-a-ration) | Reverse which feeder approach opens a ration | scaffold | Assumed |
 | [A202](#a202--end-a-two-message-read-on-the-receivers-own-changed-mark) | End a two-message read on the receiver’s own changed mark | scaffold | Assumed |
 | [A203](#a203--test-a-growth-made-keeper-while-all-three-focal-distinctions-remain-loose) | Test a growth-made keeper while all three focal distinctions remain loose | scaffold | Assumed |
+| [A204](#a204--read-only-the-later-receivers-new-marks-until-they-are-shared) | Read only the later receiver’s new marks until they are shared | scaffold | Assumed |
 
 ## Entries
 
@@ -4714,6 +4715,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The continuing holder, its orientation and readout, ready values, allowed offer class, conditional local relay, one-off launches, maximal enabled orders, the reserve, the contact intervention and the ordinary comparison with a fixed value completion or transported weighting.
 - **Challenge.** Interrupt only the donor contact, disable the conditional relay, retain just the last incoming word, change the local marking and coherent naming, and compare the earlier continuing clock and its full ordinary histories. A wholly growth-triggered receiver would challenge the supplied operation.
 - **History.**
+  - 2026-11-22 · An ordinary later receiver can finish on its own fresh marks acquiring other holders. Both sender choices still admit every one of its eight completed local words. The earlier extra local relay continues to supply the zero-error control. [The later receiver with hidden sender marks](../research/HIDDEN-SENDER-MARKS-20261122-001/decision.md)
   - 2026-11-22 · Opened for the [two-message receiver](../research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001A/preregistration.md).
 
 ### A203 · Test a growth-made keeper while all three focal distinctions remain loose
@@ -4726,3 +4728,14 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Change the multiplicities and number of original holders, compare old and new records and both transition weightings, retain false terminal answers without a ready herald, and contrast the unaided source with a scheduled writer, one missing offer, inverse, disconnection and transported marks. A larger source with a native call would extend the tested class.
 - **History.**
   - 2026-11-22 · Opened for the [bounded search for an early keeper](../research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001B/preregistration.md).
+
+### A204 · Read only the later receiver’s new marks until they are shared
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** Compare leaving the earlier sender’s two loose marks at 01 with exchanging their values on the same complete original word. Enroll a later two-parent receiver by a fixed payment from an unaffected parent. Read only the ordered local slots for its own fresh marks and changes to their anonymous holder pattern. Finish at the first actual payment of the entire initially loose bank. Compare an interrupted allocation that diverts one original mark and a coherent renaming that preserves its payment.
+- **Why.** A local finishing event and a shared completed record let one test certain decoding without access to old values, the sender’s choice, global names or counts supplied by a spectator.
+- **Rests on it.** The named start, two source actions, complete original state and alternative reference preparations, identified physical receiver and comparisons, orientation of local slots, one received batch, and the specified interruption. For secondary guessing odds give the sends equal weight and choose uniformly among each funded child’s allowed fresh words conditional on its actual inputs.
+- **Challenge.** Compare intact and interrupted carriers against the sham, the immediate receivers and a child of both affected parents. Vary whether a partner’s paid value is fixed and known, fixed but hidden, or varied between prescribed preparations. Compare complete possible records, their individual marks, and weighted probabilities separately.
+- **History.**
+  - 2026-11-22 · Opened for the [hidden sender mark study](../research/HIDDEN-SENDER-MARKS-20261122-001A/preregistration.md).

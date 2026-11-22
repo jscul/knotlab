@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PIXEL-LETTERS-20261122-001-E001",
+  "tier": "R0",
+  "gate": "contract_freeze",
+  "reviewer_independence": "same_task",
+  "review_basis": "Fresh-context design reviewer within the same task, separate from the producer, execution auditor and subsequent scientific referee. I inspected the protocol, source and panel specification. This review used no fit, held prediction, scored outcome or data-dependent choice.",
+  "attack_plan_frozen_before_results": true,
+  "input_digests": [
+    {
+      "path": "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+      "sha256": "d9964ade58bab96f5c14ee126a9075446479d63e485fb5478f9bfcf75c0d660e"
+    },
+    {
+      "path": "../preregistration.md",
+      "sha256": "15562c1d0e68cbc77d6d71745069efbc092a36315a201d5951a7710e1bf62eed"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "bounded-question",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A result on these images could be taken as acquisition of the pixel vocabulary, rotation invariance, or a special advantage of knot laws.",
+      "method": "Compare the G15 question and ticket stop to the fixed sensor, two learned class means, fixed decision, blank controls, and conventional twin.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/conventional.py"
+      ],
+      "finding": "The learner can acquire the association of two actions with mean counts of supplied four-pixel patterns. Position sharing, ordered patches, black padding, the two labels, distance-to-mean scoring, preparation, and step schedule are supplied. Both parity and not-all-equal store the same two count banks. All claims terminate at one census.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "training-and-key-custody",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "critical",
+      "claim_at_risk": "A label, pose, style, row identifier, train-test key, or scored outcome might guide the learner before it commits its guess.",
+      "method": "Trace the public row, keyed correctness oracle, state export, and separate train, blind and scoring processes in source, without invoking them.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/conventional.py"
+      ],
+      "finding": "The learner receives 64 ordered bits before prediction, then its own guess and one correctness bit during training. That pair reconstructs a binary target exactly. The driver handles identifiers and keys. The blind predictor uses locked fit and query inputs. Its release is anchored before the scoring join. The keys exist in the common workspace. The boundary is the program interface and phase order.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "pose-and-observation-novelty",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A duplicate bitmap or an identical histogram could be mistaken for learning a new shape.",
+      "method": "Compare the cross of poses, styles and classes to the unique bitmap checks, the available training combinations, and the post-seal histogram-overlap diagnostic.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/manifest.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py"
+      ],
+      "finding": "The generator declares 64 training images, 32 per class. The familiar, held-position, held-orientation and both-held panels have 64, 72, 128 and 72 images, respectively. Each is balanced and each image has five lit pixels. Familiar queries use the other globally seen style at a seen pose. The generator rejects duplicate bitmaps. A within-frame translation maps every padded window containing ink to a corresponding occurrence. The fixed count of 81 windows also fixes the blank count. The scorer records each panel's distinct and training-seen histograms and ties.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "ordinary-controls",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Apparent performance due to supplied pixel grouping could be attributed to the representation of memory in knots.",
+      "method": "Inspect the conventional integer prototype code, raw-Hamming control, blank default and opposite-convention donor against the candidate's inputs, update count, empty-state rule and scoring.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/conventional.py"
+      ],
+      "finding": "Each trained arm receives the same 64 images and reconstructs each target from its own emitted action and correctness. The integer twin independently computes the same two class means, tie priority and decision. The raw Hamming control stores full labeled exemplars, with a different memory and feature representation. Clearing restores action zero, which gives exactly one half in each balanced cell. Opposite-convention donors, shams and restorations use matched recipients. Original donor–recipient disagreements supply the denominator for meaningful reversals.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "binding-and-scoring",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A matching serialization, isolated truth table, or training receipt could be mistaken for causal use of the retained learning state.",
+      "method": "Inspect the relation and preparation checks, serialized fields, physical read path, donor and restore operations, and separate prediction and scoring releases.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/check_knots.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py"
+      ],
+      "finding": "Each of 416 distinct addresses in a learner holds a ternary word. The protocol checks the full parity or not-all-equal relation projected at an address and separately checks the two restricted preparation words. The read validates the marks and their unique completion, reconstructs each count and discards temporary arithmetic. A fresh recipient receives the same-law donor's words. The blind predictor takes physical memory and pixels, records actions, and releases its ledger before scoring. The next gate checks these paths in execution.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "finite-catalogue",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "medium",
+      "claim_at_risk": "Replicated placements or interchangeable encodings might inflate the apparent evidence for rotation transfer.",
+      "method": "Inspect the weighting, fixed four reports, class counts, reporting rule and relationship between the two laws and paired controls.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/manifest.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py"
+      ],
+      "finding": "One distinct bitmap has one vote within its declared finite cell. The rows are translated realizations of two supplied styles, and both memory laws implement the same calculation. Per-class and per-style/turn counts expose subgroup failure. Strictly above one half is a descriptive success threshold conditional on the specified intervention checks. Generalization to a population of fonts would require a sampling design for fonts.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "nearest-mean-attribution",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "medium",
+      "claim_at_risk": "A familiar score or an individual pattern explanation might be taken as a learned orientation rule or as a uniquely identified shape feature.",
+      "method": "Expand the two squared distances and separate identity of histogram observations, fitted contributions on a given query, and transfer at held orientations.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py"
+      ],
+      "finding": "A rotation permutes the 16 indexed bins. For populated banks, the margin favoring action one is the sum across bins p of (mean1[p] - mean0[p]) times (2h[p] - mean1[p] - mean0[p]). Action one requires a positive margin. This gives the contribution of each supplied pattern to an issued choice. Fixed total counts, equal pixel mass and overlapping windows constrain bins jointly, limiting causal interpretation of individual contributions.",
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "The gate accepts one finite, prospective comparison. Evidence of accuracy and causal control requires its authorized execution and replay.",
+    "Equal input histograms already guarantee equal decisions under every fitted state. Orientation tests concern the two prescribed held turns and these two styles.",
+    "The retained means are acquired. The pixel grouping, fixed register addresses, two-word codes, arithmetic reader and update rule are supplied. Clearing or exchanging the complete bank tests control by that bank.",
+    "Comparison with the arithmetic twin addresses whether knot-specific computation contributes any predictive advantage within the supplied apparatus. The raw Hamming contrast also changes the sensory representation."
+  ]
+}

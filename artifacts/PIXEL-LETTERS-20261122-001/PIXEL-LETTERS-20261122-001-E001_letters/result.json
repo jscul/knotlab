@@ -1,0 +1,179 @@
+{
+  "artifact_id": "PIXEL-LETTERS-20261122-001-E001",
+  "assumptions": [
+    "A205"
+  ],
+  "canonical_id": "PIXEL-LETTERS-20261122-001-E001",
+  "decision": "STOP after the single frozen comparison",
+  "evidence_class": "Computed, prospectively frozen finite census; independent numerical replay passed",
+  "fitted_ties": 0,
+  "histogram_overlap": {
+    "combined": {
+      "distinct": 8,
+      "new": 72,
+      "ties": 0
+    },
+    "familiar": {
+      "distinct": 8,
+      "same": 64,
+      "ties": 0
+    },
+    "orientation": {
+      "distinct": 8,
+      "new": 128,
+      "ties": 0
+    },
+    "position": {
+      "distinct": 8,
+      "same": 72,
+      "ties": 0
+    }
+  },
+  "interventions": {
+    "nae": {
+      "both_clear_to_zero": 336,
+      "both_donor_reads_match": 336,
+      "both_match_conventional_twin": 336,
+      "both_restored": 336,
+      "both_reversed": 336,
+      "both_shams_unchanged": 336,
+      "images": 336,
+      "ordinary_opposite_disagreements": 336
+    },
+    "parity": {
+      "both_clear_to_zero": 336,
+      "both_donor_reads_match": 336,
+      "both_match_conventional_twin": 336,
+      "both_restored": 336,
+      "both_reversed": 336,
+      "both_shams_unchanged": 336,
+      "images": 336,
+      "ordinary_opposite_disagreements": 336
+    }
+  },
+  "outcome": "Both knot laws learned class-dependent patch counts. Each scored 136/136 on familiar orientations and 50/200 on held orientations, including zero of 100 held-turn Ts. Opposite fitted words reversed 336/336 guesses in both directions.",
+  "per_condition": {
+    "combined": {
+      "cleared": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "fair_coin_expected_correct": 36,
+      "raw_nearest_neighbor": {
+        "L_correct": 13,
+        "L_total": 36,
+        "T_correct": 13,
+        "T_total": 36
+      },
+      "trained_each_law": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      }
+    },
+    "familiar": {
+      "cleared": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 0,
+        "T_total": 32
+      },
+      "fair_coin_expected_correct": 32,
+      "raw_nearest_neighbor": {
+        "L_correct": 20,
+        "L_total": 32,
+        "T_correct": 20,
+        "T_total": 32
+      },
+      "trained_each_law": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      }
+    },
+    "orientation": {
+      "cleared": {
+        "L_correct": 64,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "fair_coin_expected_correct": 64,
+      "raw_nearest_neighbor": {
+        "L_correct": 20,
+        "L_total": 64,
+        "T_correct": 15,
+        "T_total": 64
+      },
+      "trained_each_law": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      }
+    },
+    "position": {
+      "cleared": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "fair_coin_expected_correct": 36,
+      "raw_nearest_neighbor": {
+        "L_correct": 13,
+        "L_total": 36,
+        "T_correct": 14,
+        "T_total": 36
+      },
+      "trained_each_law": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      }
+    }
+  },
+  "retained_state": "Two actions x 16 raw patterns x 13 binary places. Each place is a lawful ternary holding. All experience-dependent state is in these 416 holdings per physical reader.",
+  "review_status": {
+    "design": "R0 PASS; independent Astra substituted for rate-limited Fable before the fit",
+    "formal_scientific_referee": "handoff ready",
+    "replay": "R2 PASS",
+    "run": "R1 PASS"
+  },
+  "schema_version": 1,
+  "scientific_referee": "pending",
+  "sources": {
+    "artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/release.json": "6120eef599ad6811310448becda96c3abfdc30ab333fe4c3fa4d852a27d55fc4",
+    "artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/release.json": "1fba63dd4c28923c7e57a0176b7b003f7380e6d9ff667fa5aa45e4c52dfc8416",
+    "artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/knot_checks.json": "c8a5026d1af3980ec805a02b7d34be71c401f746e2460695916a53d98bb3b3f6",
+    "artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/release.json": "72e42551c8caac5b2ee73c061ea3c0b994f69cb1a404db085fc515449f4591c8",
+    "artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/scores.json": "74515928409631c51011f4664391cf9fc35de3cd8c1cf658f4e4373c2b74a584",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json": "d9964ade58bab96f5c14ee126a9075446479d63e485fb5478f9bfcf75c0d660e",
+    "experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/identity.json": "4098d8cf68516f323176657164919c8d808c94db86da7e260adecd523e6c272c",
+    "research/PIXEL-LETTERS-20261122-001/advisor.json": "b8f7a23565c9ba7f043e2bbadce6fc4ab1102ec1f7981457cb296e2715d3a969",
+    "research/PIXEL-LETTERS-20261122-001/audit/R1/red_team_report.json": "c5faa2fd3c637f7775608d707f5ab4810cefc56b1e7f3c6712becd46755e7211",
+    "research/PIXEL-LETTERS-20261122-001/audit/R2/red_team_report.json": "0109e76f7b4e32a32c220dacfbf3aa5b9ca933c54689e6516d22233c04920311",
+    "research/PIXEL-LETTERS-20261122-001/audit/attack_plan.md": "2883054ad1648d9aefdd0d76b9d2ac42ad035269f5e91ed6a2f32ccdd3078ab7",
+    "research/PIXEL-LETTERS-20261122-001/audit/census_and_preparations.json": "b6992b01320d786928033ca021acf4167a96bad77c0e39171770324723b9ba77",
+    "research/PIXEL-LETTERS-20261122-001/audit/phase_anchor_mutations.json": "d3595c84258521a438610942da4deb93c1820fea18ce498a270b19582d3627fb",
+    "research/PIXEL-LETTERS-20261122-001/audit/phase_anchors.json": "2e65b33322756d192d0b17fe2f44b75604d25222e11b0f4469b45cf2fb867cf8",
+    "research/PIXEL-LETTERS-20261122-001/audit/postscore_pooled_counts.json": "9a06e7963b9d6be76955ad01a65309ab287c957124418c0a263d6d44c48457ef",
+    "research/PIXEL-LETTERS-20261122-001/audit/replay.py": "ba15b1c6c10ab7dff9a0b0ecd0a64b1c801752e05685bd155d096d8015d60244",
+    "research/PIXEL-LETTERS-20261122-001/audit/replay_result.json": "9919ad87bedb73c00d88d6b57c2c7b5f214d67f2e643e4b0ba4e951d6d5b561d",
+    "research/PIXEL-LETTERS-20261122-001/audit/verify.py": "09a6f7a997ae8eba2731ae62914b4cc698a61d708f0c4685e14d2a574dc57051",
+    "research/PIXEL-LETTERS-20261122-001/decision.md": "86ee7ef96802be2918c48ba17bd95c65b220e5aeb0986e4849fcc45a4e32e0b8",
+    "research/PIXEL-LETTERS-20261122-001/design_review/red_team_report.json": "2ab8c540184dd38805ff8724745201d50b4a24afe26533b245d4498ec0601c60",
+    "research/PIXEL-LETTERS-20261122-001/examples.png": "9ee838049c7384e4209f52666e5e495acc585e2430bbe2d4e9404f12ae73183b",
+    "research/PIXEL-LETTERS-20261122-001/phase_anchors.jsonl": "3d25f5a9fc876bcb9f99b44b214d3d454411bdd57efdbda692fdee4b2fac81e0",
+    "research/PIXEL-LETTERS-20261122-001/preregistration.md": "15562c1d0e68cbc77d6d71745069efbc092a36315a201d5951a7710e1bf62eed",
+    "research/PIXEL-LETTERS-20261122-001/referee_handoff.md": "1684d8a7347ba091e18e1a247d0355200b8f65f4bbf4844dc7c87b8217d96385",
+    "research/PIXEL-LETTERS-20261122-001/replay_guess.py": "d442a0068b5c5e81bc45264613a432b78a262dbe38c15338b98d1de70cb77303"
+  },
+  "status": "Completed",
+  "ticket": "PIXEL-LETTERS-20261122-001"
+}

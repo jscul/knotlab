@@ -1,0 +1,335 @@
+{
+  "attack_plan_frozen_before_results": true,
+  "attacks": [
+    {
+      "category": "scope_and_authority",
+      "claim_at_risk": "Bounded finite computational evidence for the preregistered comparison",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../preregistration.md",
+        "../../design_review/red_team_report.json",
+        "../R1/red_team_report.json",
+        "../replay_result.json"
+      ],
+      "id": "R2-scope_and_authority",
+      "method": "Revalidated R1 and frozen hashes, then checked its report timestamp precedes the first release. The only adjudicated claim is performance and causal state dependence of the supplied apparatus on the registered census. R2 allows the positive/negative mixed result to be reported as computed, with scientific referee pending.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "information_leakage",
+      "claim_at_risk": "The binary reward and raw pixels are the learning path",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../R1/red_team_report.json",
+        "../replay_result.json",
+        "../../phase_anchors.jsonl",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/release.json"
+      ],
+      "id": "R2-information_leakage",
+      "method": "Reconstructed every prefix action, reward and checkpoint hash for all seven arms from each ordered pixel input and environment target. Independently checked the fit and blind release digests against the coordinator's pre-transition records. Both precede the next stage. The scorer key joins after blind actions, and no held-out metadata or learner-facing labels were used in the producing path.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "split_integrity",
+      "claim_at_risk": "Correct, exhaustive and disjoint fit and query rosters",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../census_and_preparations.json",
+        "../replay_result.json"
+      ],
+      "id": "R2-split_integrity",
+      "method": "Independently generated 400 unique five-pixel bitmaps and all orderings. Replayed 64 training rows and 336 query rows without gaps, additions or overlaps. Every cell contains equal numbers of L and T, including every style and rotation represented in that cell.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "comparator_fairness",
+      "claim_at_risk": "Fair comparison to matched numerical state and raw Hamming",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay_result.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/release.json"
+      ],
+      "id": "R2-comparator_fairness",
+      "method": "Across both conventions, both physical laws matched the independent counting-and-distance comparator on every held-out bitmap. The 1-nearest-neighbor comparator was independently rebuilt using character-by-character mismatches and majority of all closest votes. It scored 40/64, 27/72, 35/128 and 26/72 in familiar, position, orientation and combined cells. It used the same fit budget and a different amount of retained state.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "artifact_and_checker",
+      "claim_at_risk": "Exactness and integrity of the raw evidence",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../phase_anchors.json",
+        "../../phase_anchors.jsonl",
+        "../replay.py",
+        "../replay_result.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/integer-opposite.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/integer-ordinary.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/nae-opposite.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/nae-ordinary.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/nearest-ordinary.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/parity-opposite.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/parity-ordinary.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/receipts.jsonl",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/predictions.jsonl",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/scores.json"
+      ],
+      "id": "R2-artifact_and_checker",
+      "method": "An independently implemented checker verified all phase parent and child digests, sealed rosters and external commitments. It reproduced each feedback receipt, each blind per-action response and exact original distances, the final key join, the first model errors and nearest-neighbor errors. Verifier imports no producer on this replay path.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "identifiability",
+      "claim_at_risk": "Distinct letter meanings and causal state can be reconstructed",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay_result.json"
+      ],
+      "id": "R2-identifiability",
+      "method": "A true/false correctness bit identifies the rewarded binary action conditional on a guess. Independent sequential replay recovered final physical words in both laws and every stored count. Action-swapped reward runs recovered the same banks in reverse order. No class collision exists among all 16 tested local count signatures.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "resource_fairness",
+      "claim_at_risk": "Budget and retained-state accounting match the declared comparison",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay_result.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/release.json"
+      ],
+      "id": "R2-resource_fairness",
+      "method": "Checked one epoch of 64 updates per arm, six means-based fits and one Hamming fit, followed by 336 queries at 23 action arms with no rewards. A physical fit has 416 prepared holdings. Recorded state file sizes were 1692 or 1695 bytes for physical arms, 270 for each numeric twin and 5571 for 1-nearest neighbor. Fit/blind/score release records retain elapsed seconds and RSS; these measurements establish no speed ranking.",
+      "required_action": "",
+      "severity": "medium",
+      "status": "pass"
+    },
+    {
+      "category": "statistical_validity",
+      "claim_at_risk": "The finite-panel weighting and decision threshold govern interpretation",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../replay_result.json"
+      ],
+      "id": "R2-statistical_validity",
+      "method": "The frozen ordinary physical reader scored 64/64 familiar and 72/72 position-only, above the exact balanced one-half expectation in both. It scored 32/128 orientation-only and 18/72 combined, with zero correctly classified T in either. Every class count, style/turn stratum, tie count and causal observation is independently verified. No sampling uncertainty or inference about fonts is claimed.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "representation_robustness",
+      "claim_at_risk": "The representation explains position behavior and permits a precise rotation failure",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay_result.json",
+        "../postscore_pooled_counts.json"
+      ],
+      "id": "R2-representation_robustness",
+      "method": "For all 16 label/style/turn combinations, the count signature is identical across all 25 anchors. Familiar and position panels contain only same-label signatures seen during training. Every held-turn query has a signature absent from training. Every T fails for 180- and 270-degree turns; every L fails at 180 and succeeds at 270. Exact squared discrepancies reproduce all four held-turn outcomes in both styles. The separately labeled post-score pooled-count observation confirms that a class distinction survives in the supplied counts, with no new model evaluated.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "causal_alternatives",
+      "claim_at_risk": "State substitution determines the device response while numerical arithmetic suffices",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay_result.json",
+        "../census_and_preparations.json"
+      ],
+      "id": "R2-causal_alternatives",
+      "method": "For each law, 336/336 reciprocal substitutions matched the other fitted state and reversed both guesses, every sham and restoration preserved its guess, and both cleared arms returned zero. The two opaque physical encodings decode to the same classical counts; the independent numeric comparator reproduces every action in both label conventions. This supports dependence on the stored state of this implementation without a law-specific computation advantage.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "independent_replay",
+      "claim_at_risk": "Reproduction uses code separate from the producer",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay.py",
+        "../replay_result.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/release.json",
+        "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/release.json"
+      ],
+      "id": "R2-independent_replay",
+      "method": "A separate in-task implementation reconstructed all 448 per-arm updates and intermediate digests and all 7728 blind arm decisions, including final numerical readouts. It independently decoded the checkpoint words and rebuilt the scorer result from regenerated fixtures, then compared to sealed evidence byte identities and structured scores.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "adversarial_mutation",
+      "claim_at_risk": "Corruption of inputs and commitments is detected",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../phase_anchor_mutations.json",
+        "../census_and_preparations.json",
+        "../R1/red_team_report.json"
+      ],
+      "id": "R2-adversarial_mutation",
+      "method": "Revalidated R1's malformed-row, resource, open-law, checkpoint and overwriting attacks. Substituting a wrong external fit digest or a wrong blind digest failed the replay before consuming scored results. The official artifacts did not change.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "claim_scope",
+      "claim_at_risk": "The exact study result does not overstate the learned capability",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../replay_result.json",
+        "../postscore_pooled_counts.json"
+      ],
+      "id": "R2-claim_scope",
+      "method": "The supported conclusion is classification of fresh bitmaps sharing trained histogram signatures and causal state dependence in a supplied discrete memory and readout. The frozen readout fails on novel quarter-turn signatures. Both physical laws yield the same predictions as the numerical twin. General handwriting performance, learned sensing and readout, and native formation remain outside the claim.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    }
+  ],
+  "audit_utc": "2026-11-22T09:28:46.882654+00:00",
+  "experiment_id": "PIXEL-LETTERS-20261122-001-E001",
+  "gate": "promotion",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+      "sha256": "d9964ade58bab96f5c14ee126a9075446479d63e485fb5478f9bfcf75c0d660e"
+    },
+    {
+      "path": "../../preregistration.md",
+      "sha256": "15562c1d0e68cbc77d6d71745069efbc092a36315a201d5951a7710e1bf62eed"
+    },
+    {
+      "path": "../../design_review/red_team_report.json",
+      "sha256": "2ab8c540184dd38805ff8724745201d50b4a24afe26533b245d4498ec0601c60"
+    },
+    {
+      "path": "../R1/red_team_report.json",
+      "sha256": "c5faa2fd3c637f7775608d707f5ab4810cefc56b1e7f3c6712becd46755e7211"
+    },
+    {
+      "path": "../phase_anchors.json",
+      "sha256": "2e65b33322756d192d0b17fe2f44b75604d25222e11b0f4469b45cf2fb867cf8"
+    },
+    {
+      "path": "../../phase_anchors.jsonl",
+      "sha256": "3d25f5a9fc876bcb9f99b44b214d3d454411bdd57efdbda692fdee4b2fac81e0"
+    },
+    {
+      "path": "../census_and_preparations.json",
+      "sha256": "b6992b01320d786928033ca021acf4167a96bad77c0e39171770324723b9ba77"
+    },
+    {
+      "path": "../phase_anchor_mutations.json",
+      "sha256": "d3595c84258521a438610942da4deb93c1820fea18ce498a270b19582d3627fb"
+    },
+    {
+      "path": "../attack_plan.md",
+      "sha256": "2883054ad1648d9aefdd0d76b9d2ac42ad035269f5e91ed6a2f32ccdd3078ab7"
+    },
+    {
+      "path": "../verify.py",
+      "sha256": "09a6f7a997ae8eba2731ae62914b4cc698a61d708f0c4685e14d2a574dc57051"
+    },
+    {
+      "path": "../replay.py",
+      "sha256": "ba15b1c6c10ab7dff9a0b0ecd0a64b1c801752e05685bd155d096d8015d60244"
+    },
+    {
+      "path": "../replay_result.json",
+      "sha256": "9919ad87bedb73c00d88d6b57c2c7b5f214d67f2e643e4b0ba4e951d6d5b561d"
+    },
+    {
+      "path": "../postscore_pooled_counts.json",
+      "sha256": "9a06e7963b9d6be76955ad01a65309ab287c957124418c0a263d6d44c48457ef"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/release.json",
+      "sha256": "1fba63dd4c28923c7e57a0176b7b003f7380e6d9ff667fa5aa45e4c52dfc8416"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/release.json",
+      "sha256": "6120eef599ad6811310448becda96c3abfdc30ab333fe4c3fa4d852a27d55fc4"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/release.json",
+      "sha256": "72e42551c8caac5b2ee73c061ea3c0b994f69cb1a404db085fc515449f4591c8"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/integer-opposite.json",
+      "sha256": "c5fc549c2fae9d0afdaa404bb81c34574dbbef71040589d066b3ba199d882990"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/integer-ordinary.json",
+      "sha256": "178a64480f870397dd0cb41a5228b4b00bac76c743b5ea9b9d87226e42788aea"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/nae-opposite.json",
+      "sha256": "98fb6b7f258acfa7e19f1f2b8aa660487db7a1e64c9761a7161340ae5d73d407"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/nae-ordinary.json",
+      "sha256": "cbfa58158b76ed33a42717523738f8854cd9d8df388f4d920c71b8939697b239"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/nearest-ordinary.json",
+      "sha256": "8b091e97c77508fc6d1ee515b84c05f3b15bd91bee9a2cd4da5cdd5c98b56cbc"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/parity-opposite.json",
+      "sha256": "510a3b4016bdf05df9a6c7370004273ac9c4a8b18f2b82e9418eb703b9344d2c"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/parity-ordinary.json",
+      "sha256": "9d8876c12a8de2270eea990f13acc470089d67837505e3bf716ff0a90f820eef"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/fit/receipts.jsonl",
+      "sha256": "53279c4e2a500f786bab3cdab7a96567d78a8c3c20a508ba67347e1b4287dff9"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/blind/predictions.jsonl",
+      "sha256": "da7b05f317aafecec474d6f3d977cd2b4284693d54f61dec639cdaa61c84a11b"
+    },
+    {
+      "path": "../../../../artifacts/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/scored/scores.json",
+      "sha256": "74515928409631c51011f4664391cf9fc35de3cd8c1cf658f4e4373c2b74a584"
+    }
+  ],
+  "nonclaims": [
+    "The finite image census and the two supplied styles do not establish population generalization.",
+    "Translation behavior is supplied by padding and shared local wiring; all correct familiar and position-test signatures occur in training.",
+    "The descriptive pooled four-bin regularity was found after scores and contributes no preregistered efficacy evidence.",
+    "The open ternary laws and prepared registers do not demonstrate native contact formation or a performance advantage over the exact numerical twin.",
+    "This exact in-task replay does not replace a separate scientific referee."
+  ],
+  "required_actions": [],
+  "reviewer_independence": "separate_implementation_lane",
+  "schema_version": 1,
+  "tier": "R2",
+  "verdict": "PASS"
+}

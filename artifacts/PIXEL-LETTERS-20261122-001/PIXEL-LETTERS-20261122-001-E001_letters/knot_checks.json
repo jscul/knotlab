@@ -1,0 +1,165 @@
+{
+  "relations": {
+    "nae": {
+      "checked_holding_address": [
+        1,
+        9,
+        12
+      ],
+      "open": {
+        "allowed": [
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "other_holdings_fixed": true,
+      "prepared_only_loss_on_erasure": false,
+      "prepared_transitions_checked": 4,
+      "prepared_words": [
+        "001",
+        "110"
+      ]
+    },
+    "parity": {
+      "checked_holding_address": [
+        1,
+        9,
+        12
+      ],
+      "open": {
+        "allowed": [
+          "000",
+          "011",
+          "101",
+          "110"
+        ],
+        "binding": true,
+        "coexistence": true,
+        "contact": "read",
+        "erasure": "forgetting",
+        "invisible_in_parts": true,
+        "is_knot": true,
+        "loops": [
+          "mark",
+          "dock"
+        ],
+        "loss_on_erasure": true,
+        "minimum_width": 3,
+        "notes": [],
+        "pairwise_definable": false,
+        "variables": [
+          "mark",
+          "dock",
+          "read"
+        ]
+      },
+      "other_holdings_fixed": true,
+      "prepared_only_loss_on_erasure": false,
+      "prepared_transitions_checked": 4,
+      "prepared_words": [
+        "011",
+        "110"
+      ]
+    },
+    "unconstrained_negative": {
+      "allowed": [
+        "000",
+        "001",
+        "010",
+        "011",
+        "100",
+        "101",
+        "110",
+        "111"
+      ],
+      "binding": false,
+      "coexistence": true,
+      "contact": "read",
+      "erasure": "forgetting",
+      "invisible_in_parts": true,
+      "is_knot": false,
+      "loops": [
+        "mark",
+        "dock"
+      ],
+      "loss_on_erasure": true,
+      "minimum_width": 0,
+      "notes": [
+        "the relation allows every joint state, so nothing binds"
+      ],
+      "pairwise_definable": true,
+      "variables": [
+        "mark",
+        "dock",
+        "read"
+      ]
+    }
+  },
+  "synthetic_learner": {
+    "nae": {
+      "all_expected_rejections": true,
+      "cleared_guess": [
+        0,
+        0
+      ],
+      "exact_rational_cases": 3,
+      "exchanged_guess": [
+        1,
+        0
+      ],
+      "restored_guess": [
+        0,
+        1
+      ],
+      "reversed_order_same_words": true,
+      "trained_guess": [
+        0,
+        1
+      ]
+    },
+    "parity": {
+      "all_expected_rejections": true,
+      "cleared_guess": [
+        0,
+        0
+      ],
+      "exact_rational_cases": 3,
+      "exchanged_guess": [
+        1,
+        0
+      ],
+      "restored_guess": [
+        0,
+        1
+      ],
+      "reversed_order_same_words": true,
+      "trained_guess": [
+        0,
+        1
+      ]
+    }
+  }
+}

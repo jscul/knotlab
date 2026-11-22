@@ -1,0 +1,1961 @@
+{
+  "balanced_chance": {
+    "combined": {
+      "L": {
+        "expected_correct": 18,
+        "total": 36
+      },
+      "T": {
+        "expected_correct": 18,
+        "total": 36
+      }
+    },
+    "familiar": {
+      "L": {
+        "expected_correct": 16,
+        "total": 32
+      },
+      "T": {
+        "expected_correct": 16,
+        "total": 32
+      }
+    },
+    "orientation": {
+      "L": {
+        "expected_correct": 32,
+        "total": 64
+      },
+      "T": {
+        "expected_correct": 32,
+        "total": 64
+      }
+    },
+    "position": {
+      "L": {
+        "expected_correct": 18,
+        "total": 36
+      },
+      "T": {
+        "expected_correct": 18,
+        "total": 36
+      }
+    }
+  },
+  "distinct_training_histograms": 8,
+  "exact_replay": {
+    "anchor_invariant_signatures": 16,
+    "blind_arms": 23,
+    "blind_rows": 336,
+    "training_arms": 7,
+    "training_rows": 64
+  },
+  "histogram_overlap": {
+    "combined": {
+      "distinct": 8,
+      "new": 72,
+      "ties": 0
+    },
+    "familiar": {
+      "distinct": 8,
+      "same": 64,
+      "ties": 0
+    },
+    "orientation": {
+      "distinct": 8,
+      "new": 128,
+      "ties": 0
+    },
+    "position": {
+      "distinct": 8,
+      "same": 72,
+      "ties": 0
+    }
+  },
+  "interventions": {
+    "nae": {
+      "both_clear_to_zero": 336,
+      "both_donor_reads_match": 336,
+      "both_match_conventional_twin": 336,
+      "both_restored": 336,
+      "both_reversed": 336,
+      "both_shams_unchanged": 336,
+      "images": 336,
+      "ordinary_opposite_disagreements": 336
+    },
+    "parity": {
+      "both_clear_to_zero": 336,
+      "both_donor_reads_match": 336,
+      "both_match_conventional_twin": 336,
+      "both_restored": 336,
+      "both_reversed": 336,
+      "both_shams_unchanged": 336,
+      "images": 336,
+      "ordinary_opposite_disagreements": 336
+    }
+  },
+  "nearest_errors": {
+    "combined": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00010000",
+        "00010000",
+        "01110000",
+        "00000000"
+      ],
+      "col": 1,
+      "condition": "combined",
+      "guess": "L",
+      "id": "00c0216cf42a0064cf99c6a518a5336944fb8ddb8d4797ff2ba9ec63fa08fe65",
+      "label": "L",
+      "nearest_guess": "T",
+      "q": 3,
+      "row": 4,
+      "style": "S"
+    },
+    "familiar": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "01111000",
+        "00100000",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 1,
+      "condition": "familiar",
+      "guess": "T",
+      "id": "08ec39c593ec0a4af01952a2beccc74ccf9a815150033b9d1062b5b4a94e428e",
+      "label": "T",
+      "nearest_guess": "L",
+      "q": 0,
+      "row": 3,
+      "style": "W"
+    },
+    "orientation": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000010",
+        "00001111",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 4,
+      "condition": "orientation",
+      "guess": "L",
+      "id": "015f76ccc857ae3c288550fb6071bd47872dc4cb61cf6f8227a22c3dfd159300",
+      "label": "T",
+      "nearest_guess": "L",
+      "q": 2,
+      "row": 3,
+      "style": "W"
+    },
+    "position": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00111000",
+        "00010000",
+        "00010000",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 2,
+      "condition": "position",
+      "guess": "T",
+      "id": "038bf625c38fe4047ab256899da4254a17880e8051db70778f260a21166cb03c",
+      "label": "T",
+      "nearest_guess": "L",
+      "q": 0,
+      "row": 2,
+      "style": "S"
+    }
+  },
+  "representatives": {
+    "combined/L/correct": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00010000",
+        "00010000",
+        "01110000",
+        "00000000"
+      ],
+      "col": 1,
+      "condition": "combined",
+      "guess": "L",
+      "histogram_overlap": "new",
+      "id": "00c0216cf42a0064cf99c6a518a5336944fb8ddb8d4797ff2ba9ec63fa08fe65",
+      "label": "L",
+      "nearest_guess": "T",
+      "q": 3,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 5632,
+            "per_word_differences": [
+              0,
+              32,
+              -16,
+              -16,
+              0,
+              -32,
+              0,
+              32,
+              -16,
+              0,
+              32,
+              -16,
+              16,
+              0,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 6144,
+            "per_word_differences": [
+              0,
+              16,
+              0,
+              -16,
+              -32,
+              16,
+              0,
+              16,
+              -16,
+              0,
+              16,
+              0,
+              48,
+              -32,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "guess": 0
+      },
+      "row": 4,
+      "style": "S"
+    },
+    "combined/L/error": {
+      "bitmap_rows": [
+        "11100000",
+        "00100000",
+        "00100000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 0,
+      "condition": "combined",
+      "guess": "T",
+      "histogram_overlap": "new",
+      "id": "0c86fad22a807e72dd436bb40f46d18815a2ef020e07871b83cf156c6e7d1ea5",
+      "label": "L",
+      "nearest_guess": "L",
+      "q": 2,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 5632,
+            "per_word_differences": [
+              0,
+              0,
+              -16,
+              16,
+              32,
+              -32,
+              0,
+              0,
+              -16,
+              0,
+              32,
+              -16,
+              -16,
+              32,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 2048,
+            "per_word_differences": [
+              0,
+              -16,
+              0,
+              16,
+              0,
+              16,
+              0,
+              -16,
+              -16,
+              0,
+              16,
+              0,
+              16,
+              0,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "guess": 1
+      },
+      "row": 0,
+      "style": "S"
+    },
+    "combined/T/error": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000",
+        "01000000",
+        "01000000",
+        "01100000",
+        "01000000"
+      ],
+      "col": 1,
+      "condition": "combined",
+      "guess": "L",
+      "histogram_overlap": "new",
+      "id": "0ca956d3680a49b3040f131911a57dc0279af94e808b605a69a4b3350cf52e0f",
+      "label": "T",
+      "nearest_guess": "T",
+      "q": 3,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 6656,
+            "per_word_differences": [
+              0,
+              0,
+              16,
+              -48,
+              0,
+              32,
+              0,
+              0,
+              16,
+              0,
+              0,
+              16,
+              -48,
+              0,
+              16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 14336,
+            "per_word_differences": [
+              0,
+              -16,
+              32,
+              -48,
+              -32,
+              80,
+              0,
+              -16,
+              16,
+              0,
+              -16,
+              32,
+              -16,
+              -32,
+              16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          1,
+          2,
+          0,
+          1,
+          3,
+          0,
+          0,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "guess": 0
+      },
+      "row": 4,
+      "style": "W"
+    },
+    "familiar/L/correct": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "00001100",
+        "00001000",
+        "00001000",
+        "00001000",
+        "00000000"
+      ],
+      "col": 4,
+      "condition": "familiar",
+      "guess": "L",
+      "histogram_overlap": "same",
+      "id": "0433c440479d6deeda44d29bef43f914b051c7d0b95839a7f90a19446775db7e",
+      "label": "L",
+      "nearest_guess": "L",
+      "q": 1,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 5632,
+            "per_word_differences": [
+              0,
+              0,
+              -16,
+              -16,
+              0,
+              32,
+              0,
+              0,
+              16,
+              0,
+              32,
+              -16,
+              -48,
+              0,
+              16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 10240,
+            "per_word_differences": [
+              0,
+              -16,
+              0,
+              -16,
+              -32,
+              80,
+              0,
+              -16,
+              16,
+              0,
+              16,
+              0,
+              -16,
+              -32,
+              16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          1,
+          1,
+          1,
+          1,
+          3,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "guess": 0
+      },
+      "row": 3,
+      "style": "W"
+    },
+    "familiar/T/correct": {
+      "bitmap_rows": [
+        "00000000",
+        "00000100",
+        "00011100",
+        "00000100",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 3,
+      "condition": "familiar",
+      "guess": "T",
+      "histogram_overlap": "same",
+      "id": "03a3ab8a6be5ba5736748e0805006990e2f78d9341ad7acde2d50da4a64b83df",
+      "label": "T",
+      "nearest_guess": "T",
+      "q": 1,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 10752,
+            "per_word_differences": [
+              0,
+              32,
+              -16,
+              -16,
+              32,
+              -64,
+              0,
+              32,
+              -16,
+              0,
+              32,
+              -16,
+              -16,
+              32,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 2048,
+            "per_word_differences": [
+              0,
+              16,
+              0,
+              -16,
+              0,
+              -16,
+              0,
+              16,
+              -16,
+              0,
+              16,
+              0,
+              16,
+              0,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          2,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "guess": 1
+      },
+      "row": 1,
+      "style": "S"
+    },
+    "orientation/L/correct": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "01000000",
+        "01000000",
+        "01000000",
+        "11000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 0,
+      "condition": "orientation",
+      "guess": "L",
+      "histogram_overlap": "new",
+      "id": "0bf0e3ef38796da5e50df9b18333f6aa2f928fc33600aa6a7b6cb5fec5392a9c",
+      "label": "L",
+      "nearest_guess": "T",
+      "q": 3,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 9728,
+            "per_word_differences": [
+              0,
+              32,
+              -16,
+              -48,
+              0,
+              0,
+              0,
+              32,
+              -16,
+              0,
+              64,
+              -16,
+              -16,
+              0,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 10240,
+            "per_word_differences": [
+              0,
+              16,
+              0,
+              -48,
+              -32,
+              48,
+              0,
+              16,
+              -16,
+              0,
+              48,
+              0,
+              16,
+              -32,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          2,
+          1,
+          0,
+          1,
+          2,
+          0,
+          1,
+          1,
+          0,
+          3,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "guess": 0
+      },
+      "row": 2,
+      "style": "W"
+    },
+    "orientation/L/error": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00011110",
+        "00000010",
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 3,
+      "condition": "orientation",
+      "guess": "T",
+      "histogram_overlap": "new",
+      "id": "028448a7b9b01b8036d9746f052e5a91cdc9ebcfb84a62ecdd1130f794b86e25",
+      "label": "L",
+      "nearest_guess": "T",
+      "q": 2,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 9728,
+            "per_word_differences": [
+              0,
+              0,
+              -16,
+              48,
+              32,
+              -64,
+              0,
+              0,
+              -16,
+              0,
+              0,
+              -16,
+              16,
+              32,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 6144,
+            "per_word_differences": [
+              0,
+              -16,
+              0,
+              48,
+              0,
+              -16,
+              0,
+              -16,
+              -16,
+              0,
+              -16,
+              0,
+              48,
+              0,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          1,
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        "guess": 1
+      },
+      "row": 2,
+      "style": "W"
+    },
+    "orientation/T/error": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "00000010",
+        "00001111",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 4,
+      "condition": "orientation",
+      "guess": "L",
+      "histogram_overlap": "new",
+      "id": "015f76ccc857ae3c288550fb6071bd47872dc4cb61cf6f8227a22c3dfd159300",
+      "label": "T",
+      "nearest_guess": "L",
+      "q": 2,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 10752,
+            "per_word_differences": [
+              0,
+              32,
+              16,
+              -16,
+              0,
+              -64,
+              0,
+              32,
+              -16,
+              0,
+              -32,
+              16,
+              48,
+              0,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 14336,
+            "per_word_differences": [
+              0,
+              16,
+              32,
+              -16,
+              -32,
+              -16,
+              0,
+              16,
+              -16,
+              0,
+              -48,
+              32,
+              80,
+              -32,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          2,
+          2,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0
+        ],
+        "guess": 0
+      },
+      "row": 3,
+      "style": "W"
+    },
+    "position/L/correct": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00000000",
+        "00010000",
+        "00010000",
+        "00011100",
+        "00000000",
+        "00000000"
+      ],
+      "col": 3,
+      "condition": "position",
+      "guess": "L",
+      "histogram_overlap": "same",
+      "id": "02b94c8f292910b8284592347374191c121baf74510f8d91ffc42024022d2ccd",
+      "label": "L",
+      "nearest_guess": "L",
+      "q": 0,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 1536,
+            "per_word_differences": [
+              0,
+              0,
+              16,
+              -16,
+              0,
+              0,
+              0,
+              0,
+              -16,
+              0,
+              0,
+              16,
+              16,
+              0,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 10240,
+            "per_word_differences": [
+              0,
+              -16,
+              32,
+              -16,
+              -32,
+              48,
+              0,
+              -16,
+              -16,
+              0,
+              -16,
+              32,
+              48,
+              -32,
+              -16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          1,
+          2,
+          1,
+          1,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0
+        ],
+        "guess": 0
+      },
+      "row": 3,
+      "style": "S"
+    },
+    "position/T/correct": {
+      "bitmap_rows": [
+        "00000000",
+        "00000000",
+        "00111000",
+        "00010000",
+        "00010000",
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "col": 2,
+      "condition": "position",
+      "guess": "T",
+      "histogram_overlap": "same",
+      "id": "038bf625c38fe4047ab256899da4254a17880e8051db70778f260a21166cb03c",
+      "label": "T",
+      "nearest_guess": "L",
+      "q": 0,
+      "reading": {
+        "actions": [
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 6656,
+            "per_word_differences": [
+              0,
+              0,
+              -16,
+              16,
+              32,
+              -32,
+              0,
+              0,
+              16,
+              0,
+              0,
+              -16,
+              -48,
+              32,
+              16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          },
+          {
+            "distance_denominator": 1024,
+            "distance_numerator": 2048,
+            "per_word_differences": [
+              0,
+              -16,
+              0,
+              16,
+              0,
+              16,
+              0,
+              -16,
+              16,
+              0,
+              -16,
+              0,
+              -16,
+              0,
+              16,
+              0
+            ],
+            "row_count": 32,
+            "total": 2592
+          }
+        ],
+        "counts": [
+          69,
+          1,
+          1,
+          2,
+          2,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "guess": 1
+      },
+      "row": 2,
+      "style": "S"
+    }
+  },
+  "resources": {
+    "blind": {
+      "max_rss_kib": 21172,
+      "observations": {
+        "images": 336,
+        "issued_arms_per_image": 23,
+        "rewards": 0
+      },
+      "seconds": 0.763984
+    },
+    "fit": {
+      "max_rss_kib": 20024,
+      "observations": {
+        "arms": 7,
+        "epochs": 1,
+        "presentations_per_arm": 64
+      },
+      "seconds": 0.08781
+    },
+    "scored": {
+      "max_rss_kib": 21384,
+      "observations": {
+        "images_joined": 336,
+        "weighting": "one per distinct bitmap per cell"
+      },
+      "seconds": 0.009364
+    },
+    "state_bytes": {
+      "integer-opposite": 270,
+      "integer-ordinary": 270,
+      "nae-opposite": 1692,
+      "nae-ordinary": 1692,
+      "nearest-ordinary": 5571,
+      "parity-opposite": 1695,
+      "parity-ordinary": 1695
+    }
+  },
+  "scores": {
+    "combined": {
+      "integer-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "integer-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-clear-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-donor-into-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-donor-into-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-restore-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-restore-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-sham-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-sham-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nearest-ordinary": {
+        "L_correct": 13,
+        "L_total": 36,
+        "T_correct": 13,
+        "T_total": 36
+      },
+      "parity-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-clear-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-donor-into-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-donor-into-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-restore-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-restore-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-sham-opposite": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-sham-ordinary": {
+        "L_correct": 18,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      }
+    },
+    "familiar": {
+      "integer-opposite": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "integer-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nae-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nae-clear-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 0,
+        "T_total": 32
+      },
+      "nae-donor-into-opposite": {
+        "L_correct": 0,
+        "L_total": 32,
+        "T_correct": 0,
+        "T_total": 32
+      },
+      "nae-donor-into-ordinary": {
+        "L_correct": 0,
+        "L_total": 32,
+        "T_correct": 0,
+        "T_total": 32
+      },
+      "nae-opposite": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nae-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nae-restore-opposite": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nae-restore-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nae-sham-opposite": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nae-sham-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "nearest-ordinary": {
+        "L_correct": 20,
+        "L_total": 32,
+        "T_correct": 20,
+        "T_total": 32
+      },
+      "parity-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "parity-clear-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 0,
+        "T_total": 32
+      },
+      "parity-donor-into-opposite": {
+        "L_correct": 0,
+        "L_total": 32,
+        "T_correct": 0,
+        "T_total": 32
+      },
+      "parity-donor-into-ordinary": {
+        "L_correct": 0,
+        "L_total": 32,
+        "T_correct": 0,
+        "T_total": 32
+      },
+      "parity-opposite": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "parity-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "parity-restore-opposite": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "parity-restore-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "parity-sham-opposite": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      },
+      "parity-sham-ordinary": {
+        "L_correct": 32,
+        "L_total": 32,
+        "T_correct": 32,
+        "T_total": 32
+      }
+    },
+    "orientation": {
+      "integer-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "integer-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nae-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 64,
+        "T_correct": 64,
+        "T_total": 64
+      },
+      "nae-clear-ordinary": {
+        "L_correct": 64,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nae-donor-into-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 64,
+        "T_total": 64
+      },
+      "nae-donor-into-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 64,
+        "T_total": 64
+      },
+      "nae-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nae-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nae-restore-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nae-restore-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nae-sham-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nae-sham-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "nearest-ordinary": {
+        "L_correct": 20,
+        "L_total": 64,
+        "T_correct": 15,
+        "T_total": 64
+      },
+      "parity-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 64,
+        "T_correct": 64,
+        "T_total": 64
+      },
+      "parity-clear-ordinary": {
+        "L_correct": 64,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "parity-donor-into-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 64,
+        "T_total": 64
+      },
+      "parity-donor-into-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 64,
+        "T_total": 64
+      },
+      "parity-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "parity-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "parity-restore-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "parity-restore-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "parity-sham-opposite": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      },
+      "parity-sham-ordinary": {
+        "L_correct": 32,
+        "L_total": 64,
+        "T_correct": 0,
+        "T_total": 64
+      }
+    },
+    "position": {
+      "integer-opposite": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "integer-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-clear-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-donor-into-opposite": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-donor-into-ordinary": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "nae-opposite": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-restore-opposite": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-restore-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-sham-opposite": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nae-sham-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "nearest-ordinary": {
+        "L_correct": 13,
+        "L_total": 36,
+        "T_correct": 14,
+        "T_total": 36
+      },
+      "parity-clear-opposite": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-clear-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-donor-into-opposite": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-donor-into-ordinary": {
+        "L_correct": 0,
+        "L_total": 36,
+        "T_correct": 0,
+        "T_total": 36
+      },
+      "parity-opposite": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-restore-opposite": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-restore-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-sham-opposite": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      },
+      "parity-sham-ordinary": {
+        "L_correct": 36,
+        "L_total": 36,
+        "T_correct": 36,
+        "T_total": 36
+      }
+    }
+  },
+  "scores_by_style_q_class": {
+    "combined/S/q2/L": {
+      "correct": 0,
+      "total": 9
+    },
+    "combined/S/q2/T": {
+      "correct": 0,
+      "total": 9
+    },
+    "combined/S/q3/L": {
+      "correct": 9,
+      "total": 9
+    },
+    "combined/S/q3/T": {
+      "correct": 0,
+      "total": 9
+    },
+    "combined/W/q2/L": {
+      "correct": 0,
+      "total": 9
+    },
+    "combined/W/q2/T": {
+      "correct": 0,
+      "total": 9
+    },
+    "combined/W/q3/L": {
+      "correct": 9,
+      "total": 9
+    },
+    "combined/W/q3/T": {
+      "correct": 0,
+      "total": 9
+    },
+    "familiar/S/q0/L": {
+      "correct": 8,
+      "total": 8
+    },
+    "familiar/S/q0/T": {
+      "correct": 8,
+      "total": 8
+    },
+    "familiar/S/q1/L": {
+      "correct": 8,
+      "total": 8
+    },
+    "familiar/S/q1/T": {
+      "correct": 8,
+      "total": 8
+    },
+    "familiar/W/q0/L": {
+      "correct": 8,
+      "total": 8
+    },
+    "familiar/W/q0/T": {
+      "correct": 8,
+      "total": 8
+    },
+    "familiar/W/q1/L": {
+      "correct": 8,
+      "total": 8
+    },
+    "familiar/W/q1/T": {
+      "correct": 8,
+      "total": 8
+    },
+    "orientation/S/q2/L": {
+      "correct": 0,
+      "total": 16
+    },
+    "orientation/S/q2/T": {
+      "correct": 0,
+      "total": 16
+    },
+    "orientation/S/q3/L": {
+      "correct": 16,
+      "total": 16
+    },
+    "orientation/S/q3/T": {
+      "correct": 0,
+      "total": 16
+    },
+    "orientation/W/q2/L": {
+      "correct": 0,
+      "total": 16
+    },
+    "orientation/W/q2/T": {
+      "correct": 0,
+      "total": 16
+    },
+    "orientation/W/q3/L": {
+      "correct": 16,
+      "total": 16
+    },
+    "orientation/W/q3/T": {
+      "correct": 0,
+      "total": 16
+    },
+    "position/S/q0/L": {
+      "correct": 9,
+      "total": 9
+    },
+    "position/S/q0/T": {
+      "correct": 9,
+      "total": 9
+    },
+    "position/S/q1/L": {
+      "correct": 9,
+      "total": 9
+    },
+    "position/S/q1/T": {
+      "correct": 9,
+      "total": 9
+    },
+    "position/W/q0/L": {
+      "correct": 9,
+      "total": 9
+    },
+    "position/W/q0/T": {
+      "correct": 9,
+      "total": 9
+    },
+    "position/W/q1/L": {
+      "correct": 9,
+      "total": 9
+    },
+    "position/W/q1/T": {
+      "correct": 9,
+      "total": 9
+    }
+  },
+  "signatures": {
+    "decisions_by_signature": {
+      "S/q0/L": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "3/2",
+          "10"
+        ]
+      },
+      "S/q0/T": {
+        "guess": "T",
+        "squared_discrepancies": [
+          "13/2",
+          "2"
+        ]
+      },
+      "S/q1/L": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "3/2",
+          "6"
+        ]
+      },
+      "S/q1/T": {
+        "guess": "T",
+        "squared_discrepancies": [
+          "21/2",
+          "2"
+        ]
+      },
+      "S/q2/L": {
+        "guess": "T",
+        "squared_discrepancies": [
+          "11/2",
+          "2"
+        ]
+      },
+      "S/q2/T": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "13/2",
+          "10"
+        ]
+      },
+      "S/q3/L": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "11/2",
+          "6"
+        ]
+      },
+      "S/q3/T": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "5/2",
+          "10"
+        ]
+      },
+      "W/q0/L": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "11/2",
+          "14"
+        ]
+      },
+      "W/q0/T": {
+        "guess": "T",
+        "squared_discrepancies": [
+          "21/2",
+          "6"
+        ]
+      },
+      "W/q1/L": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "11/2",
+          "10"
+        ]
+      },
+      "W/q1/T": {
+        "guess": "T",
+        "squared_discrepancies": [
+          "29/2",
+          "6"
+        ]
+      },
+      "W/q2/L": {
+        "guess": "T",
+        "squared_discrepancies": [
+          "19/2",
+          "6"
+        ]
+      },
+      "W/q2/T": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "21/2",
+          "14"
+        ]
+      },
+      "W/q3/L": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "19/2",
+          "10"
+        ]
+      },
+      "W/q3/T": {
+        "guess": "L",
+        "squared_discrepancies": [
+          "13/2",
+          "14"
+        ]
+      }
+    },
+    "shared_signatures": []
+  },
+  "training_histograms_cross_label": 0
+}

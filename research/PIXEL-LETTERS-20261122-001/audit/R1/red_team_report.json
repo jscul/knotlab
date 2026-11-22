@@ -1,0 +1,239 @@
+{
+  "attack_plan_frozen_before_results": true,
+  "attacks": [
+    {
+      "category": "scope_and_authority",
+      "claim_at_risk": "Exact prospective class census under a fixed decision rule",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../preregistration.md"
+      ],
+      "id": "R1-scope_and_authority",
+      "method": "Verified the frozen contract, proposal, and all 11 locked source/data hashes. No fit, blind, or scored output existed at signing. The earlier feeder result motivates the study and supplies no image learner evidence.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "information_leakage",
+      "claim_at_risk": "Learner receives only pixels and binary correctness",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../census_and_preparations.json"
+      ],
+      "id": "R1-information_leakage",
+      "method": "Traced the training call from parsed row to tuple of 64 bits, then action and environment correctness. Row key, scheduler counters and letter meanings occur outside the device calls. Blind inference sends only bitmap tuples and loads knot checkpoints only from same-law physical exports. It neither opens nor verifies the scorer key. The scorer only runs after a blind receipt.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "split_integrity",
+      "claim_at_risk": "Disjoint, balanced partitions with exact input census",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../census_and_preparations.json",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/manifest.json"
+      ],
+      "id": "R1-split_integrity",
+      "method": "An independent string-transpose renderer and split test reproduced all four ordered streams, every ID and key, the class and style/turn counts, all 400 five-pixel unique bitmaps and 200 matched class pairs. Manifest and contract digest claims match bytes.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "comparator_fairness",
+      "claim_at_risk": "Comparable information and explicit alternative explanations",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/conventional.py"
+      ],
+      "id": "R1-comparator_fairness",
+      "method": "All seven fits receive the same images and one guess/reward exchange apiece. The independent numeric control counts the same 16 words and compares exact squared discrepancies. Raw Hamming uses majority across all tied nearest exemplars and action 0 on a vote tie. It retains exemplars and therefore tests another representation, with no equal-memory advantage claim.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "artifact_and_checker",
+      "claim_at_risk": "Write-once execution and separation of blind decisions from key join",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../census_and_preparations.json",
+        "../attack_plan.md"
+      ],
+      "id": "R1-artifact_and_checker",
+      "method": "The three phases use exclusive output directories and exclusive file creation. Changed checkpoint and contract bytes, missing parent release, duplicate image, additional provenance and overwrites were rejected by producer I/O tests; seven corruptions failed the independent census. Contract and artifact key hashes are bound. The coordinator will externally record each fit and blind receipt digest before the next phase, since an internal manifest alone would not authenticate a replaced manifest.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "identifiability",
+      "claim_at_risk": "Action identity comes from a disclosed two-action feedback rule",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../preregistration.md",
+        "../census_and_preparations.json"
+      ],
+      "id": "R1-identifiability",
+      "method": "For guess g and correctness c, rewarded action is g when c is true and the other action otherwise. Composed Python counting reconstructs exact mean histograms and treats missing banks and ties prospectively. Each glyph label is fixed by the generator and no full bitmap is duplicated. This supports the declared finite supervised-equivalent interpretation.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "resource_fairness",
+      "claim_at_risk": "Same exposure and no search or checkpoint selection",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py"
+      ],
+      "id": "R1-resource_fairness",
+      "method": "One ordered pass supplies 64 examples per arm. A physical checkpoint stores two banks of 16 registers of 13 ternary words, plus fixed law and budget metadata. Blind evaluation does not update. The prescribed phase receipts measure CPU-process elapsed time and high-water memory; R2 will verify completed counts and file sizes.",
+      "required_action": "",
+      "severity": "medium",
+      "status": "pass"
+    },
+    {
+      "category": "statistical_validity",
+      "claim_at_risk": "Balanced finite census with a fixed per-panel threshold",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../census_and_preparations.json"
+      ],
+      "id": "R1-statistical_validity",
+      "method": "The exact count weighting is one per unique bitmap within each cell. An above-half panel effect requires the causal controls; zero errors are necessary for complete success. The analysis retains per-class and style/turn counts. Correlated translations of two supplied styles do not supply independent font-population draws.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "representation_robustness",
+      "claim_at_risk": "Translate and rotate have distinct interpretations",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/conventional.py",
+        "../census_and_preparations.json"
+      ],
+      "id": "R1-representation_robustness",
+      "method": "The candidate and twin count all 16 ordered two-by-two patterns on 81 zero-padded windows. Independent blank, corner, interior and mixed stencils reproduce their counters. No rotation pooling is applied. Histogram overlap with training is a predeclared observable, so repeated descriptor inputs cannot support an unqualified transfer claim.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "causal_alternatives",
+      "claim_at_risk": "Learned marks are the effective changed state in the physical implementation",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+        "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+        "../census_and_preparations.json"
+      ],
+      "id": "R1-causal_alternatives",
+      "method": "Independently enumerated both open relations, executable admission for every full triple and pair, all two-distinction projections and uniquely completed preparations. Trace confirms fixed recipient law and readout during a sham, donor substitution, clear and restore in both label conventions. The comparison to a mathematically matched numeric twin rules out treating physical-state dependence as a distinctive computation.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    }
+  ],
+  "audit_utc": "2026-11-22T09:25:31.939724+00:00",
+  "experiment_id": "PIXEL-LETTERS-20261122-001-E001",
+  "fit_preceded_by_audit": true,
+  "gate": "run_authorization",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/contract.json",
+      "sha256": "d9964ade58bab96f5c14ee126a9075446479d63e485fb5478f9bfcf75c0d660e"
+    },
+    {
+      "path": "../../preregistration.md",
+      "sha256": "15562c1d0e68cbc77d6d71745069efbc092a36315a201d5951a7710e1bf62eed"
+    },
+    {
+      "path": "../../advisor.json",
+      "sha256": "b8f7a23565c9ba7f043e2bbadce6fc4ab1102ec1f7981457cb296e2715d3a969"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/check_knots.py",
+      "sha256": "a060588927dcce7274ea901cf79f813f123a788904beed46787fc35797b3da47"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/conventional.py",
+      "sha256": "4c140b3b431da470e5f0ff51e84739937e45f401c575c4502d9f0dfcbfba2c2b"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/identity.json",
+      "sha256": "4098d8cf68516f323176657164919c8d808c94db86da7e260adecd523e6c272c"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/learner.py",
+      "sha256": "d6ba981be69486f6c1fca16e1d55c520478f2eba438228746364cc0c3a364145"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel.py",
+      "sha256": "cbe71eaae30b9f69bf54353f64cc236c6ef13bf7cb752d4605ad1ca4516c411b"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/manifest.json",
+      "sha256": "3d2822c74a10b7df55683aaf82ef5013b789a351e38b9eeda49f68f88a10254a"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/queries.jsonl",
+      "sha256": "52594f1b1ffcbbb94c13c605a46988689d320e2a777ef73a54b1626933f6bcd9"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/scorer_key.jsonl",
+      "sha256": "b0ae7b2b5f061bfcd62436f83b6d3ac35b61f34a3dd67030d4d3295d9e0fef7a"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/train.jsonl",
+      "sha256": "68ee66a52191de03bcdf4782c3d99a77aa8094417b1c69a4abc5cd6b123ffe65"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/panel/training_key.jsonl",
+      "sha256": "8f399f55fff6222d7db830cde759ebebdbe3f42d9a6ac15471ddac7981c86739"
+    },
+    {
+      "path": "../../../../experiments/PIXEL-LETTERS-20261122-001/PIXEL-LETTERS-20261122-001-E001_letters/study.py",
+      "sha256": "82d2ba97c3d272e194a2421a28bde5663b184a2748d44203a345b9fb2839f10a"
+    },
+    {
+      "path": "../attack_plan.md",
+      "sha256": "2883054ad1648d9aefdd0d76b9d2ac42ad035269f5e91ed6a2f32ccdd3078ab7"
+    },
+    {
+      "path": "../verify.py",
+      "sha256": "09a6f7a997ae8eba2731ae62914b4cc698a61d708f0c4685e14d2a574dc57051"
+    },
+    {
+      "path": "../census_and_preparations.json",
+      "sha256": "b6992b01320d786928033ca021acf4167a96bad77c0e39171770324723b9ba77"
+    }
+  ],
+  "nonclaims": [
+    "This gate authorizes the single frozen execution and confers no result.",
+    "Same-task independent implementation audit does not replace external scientific refereeing.",
+    "The sensor, prepared write choices and arithmetic are supplied. The tested open ternary relations do not establish native formation or generalization beyond the stated census."
+  ],
+  "required_actions": [],
+  "reviewer_independence": "separate_implementation_lane",
+  "schema_version": 1,
+  "tier": "R1",
+  "verdict": "PASS"
+}

@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**402 current results** and 5 superseded ones, from 613 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**402 current results** and 5 superseded ones, from 614 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 613 epics with their closures
+- [Epics](#epics): all 614 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1950,6 +1950,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-22 | Can the later receiver distinguish the send with both inherited sender marks hidden? (`HIDDEN-SENDER-MARKS-20261122-001`) | [closure](proofs/HIDDEN-SENDER-MARKS-20261122-001Z/HIDDEN-SENDER-MARKS-20261122-001Z-P001_synthesis/proof.md) | [folder](research/HIDDEN-SENDER-MARKS-20261122-001/) |
 | 2026-11-22 | Learn which local pixel patterns to count together (`LEARNED-PATCH-GROUPS-20261122-001`) | — | [folder](research/LEARNED-PATCH-GROUPS-20261122-001/) |
 | 2026-11-22 | Can a new sender recognize its own payment role before it sends? (`NEW-SENDER-REFERENCE-20261122-001`) | [closure](proofs/NEW-SENDER-REFERENCE-20261122-001Z/NEW-SENDER-REFERENCE-20261122-001Z-P001_synthesis/proof.md) | [folder](research/NEW-SENDER-REFERENCE-20261122-001/) |
+| 2026-11-22 | Can pair readings hide two births, and can seven founders close? (`PAIR-READINGS-AND-SEVEN-FOUNDERS-20261122-001`) | [closure](proofs/PAIR-READINGS-AND-SEVEN-FOUNDERS-20261122-001Z/PAIR-READINGS-AND-SEVEN-FOUNDERS-20261122-001Z-P001_synthesis/proof.md) | [folder](research/PAIR-READINGS-AND-SEVEN-FOUNDERS-20261122-001/) |
 | 2026-11-22 | Can an actual payment history require the first write? (`PAYMENT-HISTORY-AND-FIRST-WRITE-20261122-001`) | [closure](proofs/PAYMENT-HISTORY-AND-FIRST-WRITE-20261122-001Z/PAYMENT-HISTORY-AND-FIRST-WRITE-20261122-001Z-P001_synthesis/proof.md) | [folder](research/PAYMENT-HISTORY-AND-FIRST-WRITE-20261122-001/) |
 | 2026-11-22 | Learning L and T from 8 by 8 pixel images (`PIXEL-LETTERS-20261122-001`) | — | [folder](research/PIXEL-LETTERS-20261122-001/) |
 | 2026-11-22 | Can the first deviation arise in a quiet start? (`QUIET-START-AND-FIRST-WRITE-20261122-001`) | [closure](proofs/QUIET-START-AND-FIRST-WRITE-20261122-001Z/QUIET-START-AND-FIRST-WRITE-20261122-001Z-P001_synthesis/proof.md) | [folder](research/QUIET-START-AND-FIRST-WRITE-20261122-001/) |

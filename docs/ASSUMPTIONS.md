@@ -243,6 +243,8 @@ evidence: results and their status come from the records each entry links.
 | [A185](#a185--compare-three-ordinary-weightings-on-the-same-lawful-support-and-growth-history) | Compare three ordinary weightings on the same lawful support and growth history | scaffold | Assumed |
 | [A186](#a186--add-the-pasts-of-a-loose-word-before-assigning-its-chance) | Add the pasts of a loose word before assigning its chance | scaffold | Assumed |
 | [A187](#a187--require-each-readers-offer-to-preserve-both-physical-knots-on-every-reached-word) | Require each reader's offer to preserve both physical knots on every reached word | scaffold | Assumed |
+| [A188](#a188--keep-the-other-newborn-records-unread-when-testing-three-readers) | Keep the other newborn records unread when testing three readers | scaffold | Assumed |
+| [A189](#a189--compare-a-current-third-at-a-return-with-a-three-donor-founding-group) | Compare a current third at a return with a three-donor founding group | scaffold | Assumed |
 
 ## Entries
 
@@ -4311,6 +4313,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** The built origins, the allocation of advances between the two continuations, the physical port types for the sender, the receiver’s mark p and the third family’s independent mark q. A receipt on the chosen parent and a receipt new to every parent retaining the receiver’s origin are separate tests. [Earlier signal comparison](../research/TICK-BIRTHS-AND-SCARCITY-20261121-001A/results.md).
 - **Challenge.** Break the private return, reverse the allocation at ties, allow every balanced allocation, and test the stricter receipt. Match the original witnesses incident to the old receiver and its open supply before asking whether the funded next option changes. [Study freeze](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/preregistration.md).
 - **History.**
+  - 2026-11-21 · The clock now receives two private pulses in a source with a true group of three original donors. With the past matched on its occupied names it counts two marked returns versus one after a founding-contact exchange, both laws. Dropping simultaneous additions of the mark and another donor gives one in either preparation. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
   - 2026-11-21 · Changing the balanced choice of which arm advances preserves each preparation's count across all 32,768 enrolled histories. Requiring a signal to be new to every origin-retaining parent changes the result to two receipts with zero off-sender ticks in between. An exact primitive match fixes the paid option in this funded pair-only class. [Ordinary result](../research/LAST-DISTINCTION-AND-PRIVATE-PULSES-20261121-001B/results.md)
   - 2026-11-21 · Registered during prospective review, before the new pulse observations.
 
@@ -4503,6 +4506,7 @@ evidence: results and their status come from the records each entry links.
 - **Rests on it.** Probabilities and three-reader scores depend on which names, marks, messages, records and phases are retained. Comparisons between newborns use supplied addresses, starts and matched grants.
 - **Challenge.** Compare an unread retained record, the selectively erased record with all other outcomes retained, a diagonal mixture, and a fully tagged unconditional growth operation. Rebuild the marked probabilities under both knot laws.
 - **History.**
+  - 2026-11-21 · The same unannounced newborn table admits a common explanation with the past retained and after coherent erasure. On the four-place source the clean port weighs 25009/38416 of launches. The retained and clean tables differ even though each has its own common model. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
   - 2026-11-21 · All old loose names are paid in a funded round. On the first three fresh child readers, counting versus coherently adding the past gives signed scores 10/27 and 54/95. In a neutral-cap comparison the ordinary old local matrix matches across sources. The squared-count old local matrix already differs. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
   - 2026-11-21 · Opened during prospective review for the spent-past comparison. [Study](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001A/results.md)
 
@@ -4517,3 +4521,27 @@ evidence: results and their status come from the records each entry links.
 - **History.**
   - 2026-11-21 · The sharp wordwise optimum is zero for all eight law-pair and placement holdings and both preparations. In the fully coherent divided not-all-equal holding, two otherwise forbidden paths cancel on the prepared state. The explicit changed-rule return weighs 1/45 under the first calibration and (7−√13)/90 after rescaling the same filter. [Spent pasts and two shared names](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001/decision.md)
   - 2026-11-21 · Entered for the prospective comparison of two shared names. [Study](../research/SPENT-PASTS-AND-TWO-SHARED-NAMES-20261121-001B/results.md)
+
+### A188 · Keep the other newborn records unread when testing three readers
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** On a positive-age knot with at least three loose distinctions, give one to each reader. Leave every other loose value unread. Each reader independently chooses the ordinary value or its calibrated change. With the retained or clean preparation fixed before those choices, test all eight settings against one distribution of six predetermined answers.
+- **Why.** Not knowing which exterior word occurred and selecting a specified exterior word give different conditional tables. A186 fixes how the spent records are handled. This entry fixes which other records may enter the three-reader comparison.
+- **Rests on it.** The class of physically measured tables, their complement symmetry in not-all-equal, the meaning of a common explanation and the interpretation of a clean herald.
+- **Challenge.** Report an accessible exterior record before the settings, retain its launch denominator and test its complete table. Compare an unchanged ordinary diagonal, an original isolated knot and a placement on separate children.
+- **History.**
+  - 2026-11-21 · Every eligible same-holder newborn has a common explanation on all eight settings. The first not-all-equal child instead violates a probability bound by 1/14 conditional on either named paid value (each occurs on half the launches). Announcing one uniform nine-bit sibling word at fixed orientation also gives this violation. Pooling opposite orientations restores the common explanation. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
+  - 2026-11-21 · Opened during prospective design for the whole newborn table. [Study design](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001A/preregistration.md)
+
+### A189 · Compare a current third at a return with a three-donor founding group
+
+**Assumed** · 2026-11-21 · scaffold
+
+- **Statement.** Supply a founder who can pay with two other donors at the marked receiver return, its two private sender pulses, the receiver's own earlier mark and a third family address declared independently of that return. To test the earlier physical match, retain all names on all occupied original donors, including those shared with another holder. Forget precisely the remaining names.
+- **Why.** A later many-parent birth can arise entirely from pair-only original groups. A partial read of an original contact can also hide an earlier material change. These cases have different implications for receiver ticks.
+- **Rests on it.** The chosen founding holdings, funded return, third recurrence, ordered allocation between sender and receiver arms, the marked tick and the grade of match claimed for each comparison.
+- **Challenge.** Keep the native funding rule fixed, reverse the balanced order, vary the third's eligibility at the same physical opportunity, compare the hidden and the exposed exterior and erase the private sender. Check a return accepting an extra original donor against a reader requiring the old mark alone.
+- **History.**
+  - 2026-11-21 · Fourteen named starts per law, including a refused cut and broken senders, distinguish a matched earlier receiver from a globally identical start. The full donor/parent/grant record and joint states on the earlier 262 names match. The hidden spent support exchanges a marked payment with an unmarked one. Crossing third eligibility at fixed contacts leaves the counts unchanged, and the single-addition mark counts one in every full comparison. [Newborn tables and three-donor returns](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001/decision.md)
+  - 2026-11-21 · Opened in prospective design. [Three-donor design](../research/NEWBORN-TABLES-AND-THREE-DONOR-RETURNS-20261121-001B/preregistration.md)

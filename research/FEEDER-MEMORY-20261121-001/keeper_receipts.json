@@ -1,0 +1,2887 @@
+{
+  "laws": {
+    "nae": {
+      "complete_interface": {
+        "public_transition_cases_including_no_receipt_unaddressed_overwrite_and_cap": 600,
+        "query_outputs_from_one_fixed_action_name": {
+          "011/0/0": [
+            0,
+            "010"
+          ],
+          "011/0/1": [
+            0,
+            "010"
+          ],
+          "011/0/2": [
+            0,
+            "010"
+          ],
+          "011/0/5": [
+            0,
+            "010"
+          ],
+          "011/1/0": [
+            1,
+            "001"
+          ],
+          "011/1/1": [
+            1,
+            "001"
+          ],
+          "011/1/2": [
+            0,
+            "010"
+          ],
+          "011/1/5": [
+            0,
+            "010"
+          ],
+          "101/0/0": [
+            0,
+            "010"
+          ],
+          "101/0/1": [
+            0,
+            "010"
+          ],
+          "101/0/2": [
+            0,
+            "010"
+          ],
+          "101/0/5": [
+            0,
+            "010"
+          ],
+          "101/1/0": [
+            1,
+            "001"
+          ],
+          "101/1/1": [
+            0,
+            "010"
+          ],
+          "101/1/2": [
+            1,
+            "001"
+          ],
+          "101/1/5": [
+            1,
+            "001"
+          ],
+          "110/0/0": [
+            0,
+            "010"
+          ],
+          "110/0/1": [
+            0,
+            "010"
+          ],
+          "110/0/2": [
+            0,
+            "010"
+          ],
+          "110/0/5": [
+            0,
+            "010"
+          ],
+          "110/1/0": [
+            1,
+            "001"
+          ],
+          "110/1/1": [
+            1,
+            "001"
+          ],
+          "110/1/2": [
+            1,
+            "001"
+          ],
+          "110/1/5": [
+            1,
+            "001"
+          ]
+        }
+      },
+      "matched_calibration": {
+        "cross_offers": [
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512406,
+                "before": 5629774568512405,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "matched physical intervention on M",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 2,
+            "offers_by_disposition": {
+              "changed": 1
+            }
+          },
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512405,
+                "before": 5629774568512406,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "matched physical intervention on M",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 2,
+            "offers_by_disposition": {
+              "changed": 1
+            }
+          }
+        ],
+        "crossed_states": [
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "nae",
+            "m": "011",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          },
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "nae",
+            "m": "101",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          }
+        ],
+        "disabled_arms": [
+          {
+            "action_bits": [
+              1,
+              1
+            ],
+            "action_words": [
+              "001",
+              "001"
+            ],
+            "reader": true,
+            "writer": false
+          },
+          {
+            "action_bits": [
+              0,
+              0
+            ],
+            "action_words": [
+              "100",
+              "100"
+            ],
+            "reader": false,
+            "writer": true
+          },
+          {
+            "action_bits": [
+              0,
+              0
+            ],
+            "action_words": [
+              "100",
+              "100"
+            ],
+            "reader": false,
+            "writer": false
+          }
+        ],
+        "equal_mark_controls": [
+          {
+            "common_bit": 1,
+            "retained_memory": "110"
+          },
+          {
+            "common_bit": 0,
+            "retained_memory": "101"
+          },
+          {
+            "common_bit": 1,
+            "retained_memory": "011"
+          }
+        ],
+        "many_type_history": {
+          "actual_write": {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 2815024805600147,
+                "before": 2815024801405843,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  22,
+                  23
+                ],
+                "status": "changed",
+                "toggled": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "after": 2815024855931795,
+                "before": 2815024805600147,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  24,
+                  26
+                ],
+                "status": "changed",
+                "toggled": [
+                  24,
+                  26
+                ]
+              },
+              {
+                "after": 2815033311648659,
+                "before": 2815024855931795,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  27,
+                  33
+                ],
+                "status": "changed",
+                "toggled": [
+                  27,
+                  33
+                ]
+              },
+              {
+                "after": 2955495922097043,
+                "before": 2815033311648659,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  38,
+                  47
+                ],
+                "status": "changed",
+                "toggled": [
+                  38,
+                  47
+                ]
+              },
+              {
+                "after": 2955495923145619,
+                "before": 2955495922097043,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495923146387,
+                "before": 2955495923145619,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    26,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "write observed menu to receipt register",
+                "operands": [
+                  8,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  8,
+                  10
+                ]
+              },
+              {
+                "after": 2955495923146390,
+                "before": 2955495923146387,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    26,
+                    1
+                  ],
+                  [
+                    8,
+                    0
+                  ],
+                  [
+                    9,
+                    1
+                  ],
+                  [
+                    10,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: left",
+                "operands": [
+                  0,
+                  2
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "after": 2955495923145622,
+                "before": 2955495923146390,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    26,
+                    1
+                  ],
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: right",
+                "operands": [
+                  8,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  8,
+                  10
+                ]
+              },
+              {
+                "after": 2955495922097046,
+                "before": 2955495923145622,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495917902742,
+                "before": 2955495922097046,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  23,
+                  22
+                ],
+                "status": "changed",
+                "toggled": [
+                  23,
+                  22
+                ]
+              },
+              {
+                "after": 2955495867571094,
+                "before": 2955495917902742,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  26,
+                  24
+                ],
+                "status": "changed",
+                "toggled": [
+                  26,
+                  24
+                ]
+              },
+              {
+                "after": 2955487411854230,
+                "before": 2955495867571094,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  33,
+                  27
+                ],
+                "status": "changed",
+                "toggled": [
+                  33,
+                  27
+                ]
+              },
+              {
+                "after": 2815024801405846,
+                "before": 2955487411854230,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  47,
+                  38
+                ],
+                "status": "changed",
+                "toggled": [
+                  47,
+                  38
+                ]
+              }
+            ],
+            "checked_complete_words": 284,
+            "offers_by_disposition": {
+              "changed": 13,
+              "equal operands": 4,
+              "guard refused": 124,
+              "supplied ready token": 1
+            }
+          },
+          "later_retention_turns": [
+            {
+              "checked_complete_words": 280,
+              "offers_by_disposition": {
+                "changed": 6,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            },
+            {
+              "checked_complete_words": 284,
+              "offers_by_disposition": {
+                "changed": 8,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            }
+          ],
+          "prepared": {
+            "checked_complete_words": 30,
+            "offers_by_disposition": {
+              "changed": 2,
+              "equal operands": 3,
+              "guard refused": 9,
+              "supplied ready token": 1
+            }
+          },
+          "write": {
+            "addressed_receipt_word": "011",
+            "detected": true,
+            "exported_previous_memory": "110",
+            "memory_after": "011",
+            "memory_before": "110"
+          }
+        },
+        "one_type_history": {
+          "actual_write": {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 2815024805600147,
+                "before": 2815024801405843,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  22,
+                  23
+                ],
+                "status": "changed",
+                "toggled": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "after": 2815024822377363,
+                "before": 2815024805600147,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  24,
+                  25
+                ],
+                "status": "changed",
+                "toggled": [
+                  24,
+                  25
+                ]
+              },
+              {
+                "after": 2815033278094227,
+                "before": 2815024822377363,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  27,
+                  33
+                ],
+                "status": "changed",
+                "toggled": [
+                  27,
+                  33
+                ]
+              },
+              {
+                "after": 2955495888542611,
+                "before": 2815033278094227,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  38,
+                  47
+                ],
+                "status": "changed",
+                "toggled": [
+                  38,
+                  47
+                ]
+              },
+              {
+                "after": 2955495889591187,
+                "before": 2955495888542611,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495889591699,
+                "before": 2955495889591187,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    25,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "write observed menu to receipt register",
+                "operands": [
+                  9,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  9,
+                  10
+                ]
+              },
+              {
+                "after": 2955495889591701,
+                "before": 2955495889591699,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    25,
+                    1
+                  ],
+                  [
+                    8,
+                    1
+                  ],
+                  [
+                    9,
+                    0
+                  ],
+                  [
+                    10,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: left",
+                "operands": [
+                  1,
+                  2
+                ],
+                "status": "changed",
+                "toggled": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "after": 2955495889591189,
+                "before": 2955495889591701,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    25,
+                    1
+                  ],
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: right",
+                "operands": [
+                  9,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  9,
+                  10
+                ]
+              },
+              {
+                "after": 2955495888542613,
+                "before": 2955495889591189,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495884348309,
+                "before": 2955495888542613,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  23,
+                  22
+                ],
+                "status": "changed",
+                "toggled": [
+                  23,
+                  22
+                ]
+              },
+              {
+                "after": 2955495867571093,
+                "before": 2955495884348309,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  25,
+                  24
+                ],
+                "status": "changed",
+                "toggled": [
+                  25,
+                  24
+                ]
+              },
+              {
+                "after": 2955487411854229,
+                "before": 2955495867571093,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  33,
+                  27
+                ],
+                "status": "changed",
+                "toggled": [
+                  33,
+                  27
+                ]
+              },
+              {
+                "after": 2815024801405845,
+                "before": 2955487411854229,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  47,
+                  38
+                ],
+                "status": "changed",
+                "toggled": [
+                  47,
+                  38
+                ]
+              }
+            ],
+            "checked_complete_words": 284,
+            "offers_by_disposition": {
+              "changed": 13,
+              "equal operands": 3,
+              "guard refused": 125,
+              "supplied ready token": 1
+            }
+          },
+          "later_retention_turns": [
+            {
+              "checked_complete_words": 280,
+              "offers_by_disposition": {
+                "changed": 6,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            },
+            {
+              "checked_complete_words": 284,
+              "offers_by_disposition": {
+                "changed": 8,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            }
+          ],
+          "prepared": {
+            "checked_complete_words": 30,
+            "offers_by_disposition": {
+              "changed": 2,
+              "equal operands": 3,
+              "guard refused": 9,
+              "supplied ready token": 1
+            }
+          },
+          "write": {
+            "addressed_receipt_word": "101",
+            "detected": true,
+            "exported_previous_memory": "110",
+            "memory_after": "101",
+            "memory_before": "110"
+          }
+        },
+        "original_reads": [
+          {
+            "action_bit": 0,
+            "actual_word": "010",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512421,
+                  "before": 5629774568512405,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    5
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    5
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          },
+          {
+            "action_bit": 1,
+            "actual_word": "001",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512454,
+                  "before": 5629774568512406,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    6
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    6
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          }
+        ],
+        "ready_states": [
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "nae",
+            "m": "101",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          },
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "nae",
+            "m": "011",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          }
+        ],
+        "reciprocal_reads": [
+          {
+            "action_bit": 1,
+            "actual_word": "001",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512454,
+                  "before": 5629774568512406,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    6
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    6
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          },
+          {
+            "action_bit": 0,
+            "actual_word": "010",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512421,
+                  "before": 5629774568512405,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    5
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    5
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          }
+        ],
+        "sham_double_transpositions": [
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512406,
+                "before": 5629774568512405,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "after": 5629774568512405,
+                "before": 5629774568512406,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 4,
+            "offers_by_disposition": {
+              "changed": 2
+            }
+          },
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512405,
+                "before": 5629774568512406,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "after": 5629774568512406,
+                "before": 5629774568512405,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 4,
+            "offers_by_disposition": {
+              "changed": 2
+            }
+          }
+        ]
+      }
+    },
+    "parity": {
+      "complete_interface": {
+        "public_transition_cases_including_no_receipt_unaddressed_overwrite_and_cap": 600,
+        "query_outputs_from_one_fixed_action_name": {
+          "011/0/0": [
+            0,
+            "010"
+          ],
+          "011/0/1": [
+            0,
+            "010"
+          ],
+          "011/0/2": [
+            0,
+            "010"
+          ],
+          "011/0/5": [
+            0,
+            "010"
+          ],
+          "011/1/0": [
+            1,
+            "001"
+          ],
+          "011/1/1": [
+            1,
+            "001"
+          ],
+          "011/1/2": [
+            0,
+            "010"
+          ],
+          "011/1/5": [
+            0,
+            "010"
+          ],
+          "101/0/0": [
+            0,
+            "010"
+          ],
+          "101/0/1": [
+            0,
+            "010"
+          ],
+          "101/0/2": [
+            0,
+            "010"
+          ],
+          "101/0/5": [
+            0,
+            "010"
+          ],
+          "101/1/0": [
+            1,
+            "001"
+          ],
+          "101/1/1": [
+            0,
+            "010"
+          ],
+          "101/1/2": [
+            1,
+            "001"
+          ],
+          "101/1/5": [
+            1,
+            "001"
+          ],
+          "110/0/0": [
+            0,
+            "010"
+          ],
+          "110/0/1": [
+            0,
+            "010"
+          ],
+          "110/0/2": [
+            0,
+            "010"
+          ],
+          "110/0/5": [
+            0,
+            "010"
+          ],
+          "110/1/0": [
+            1,
+            "001"
+          ],
+          "110/1/1": [
+            1,
+            "001"
+          ],
+          "110/1/2": [
+            1,
+            "001"
+          ],
+          "110/1/5": [
+            1,
+            "001"
+          ]
+        }
+      },
+      "matched_calibration": {
+        "cross_offers": [
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512406,
+                "before": 5629774568512405,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "matched physical intervention on M",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 2,
+            "offers_by_disposition": {
+              "changed": 1
+            }
+          },
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512405,
+                "before": 5629774568512406,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "matched physical intervention on M",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 2,
+            "offers_by_disposition": {
+              "changed": 1
+            }
+          }
+        ],
+        "crossed_states": [
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "parity",
+            "m": "011",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          },
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "parity",
+            "m": "101",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          }
+        ],
+        "disabled_arms": [
+          {
+            "action_bits": [
+              1,
+              1
+            ],
+            "action_words": [
+              "001",
+              "001"
+            ],
+            "reader": true,
+            "writer": false
+          },
+          {
+            "action_bits": [
+              0,
+              0
+            ],
+            "action_words": [
+              "100",
+              "100"
+            ],
+            "reader": false,
+            "writer": true
+          },
+          {
+            "action_bits": [
+              0,
+              0
+            ],
+            "action_words": [
+              "100",
+              "100"
+            ],
+            "reader": false,
+            "writer": false
+          }
+        ],
+        "equal_mark_controls": [
+          {
+            "common_bit": 1,
+            "retained_memory": "110"
+          },
+          {
+            "common_bit": 0,
+            "retained_memory": "101"
+          },
+          {
+            "common_bit": 1,
+            "retained_memory": "011"
+          }
+        ],
+        "many_type_history": {
+          "actual_write": {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 2815024805600147,
+                "before": 2815024801405843,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  22,
+                  23
+                ],
+                "status": "changed",
+                "toggled": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "after": 2815024855931795,
+                "before": 2815024805600147,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  24,
+                  26
+                ],
+                "status": "changed",
+                "toggled": [
+                  24,
+                  26
+                ]
+              },
+              {
+                "after": 2815033311648659,
+                "before": 2815024855931795,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  27,
+                  33
+                ],
+                "status": "changed",
+                "toggled": [
+                  27,
+                  33
+                ]
+              },
+              {
+                "after": 2955495922097043,
+                "before": 2815033311648659,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  38,
+                  47
+                ],
+                "status": "changed",
+                "toggled": [
+                  38,
+                  47
+                ]
+              },
+              {
+                "after": 2955495923145619,
+                "before": 2955495922097043,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495923146387,
+                "before": 2955495923145619,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    26,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "write observed menu to receipt register",
+                "operands": [
+                  8,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  8,
+                  10
+                ]
+              },
+              {
+                "after": 2955495923146390,
+                "before": 2955495923146387,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    26,
+                    1
+                  ],
+                  [
+                    8,
+                    0
+                  ],
+                  [
+                    9,
+                    1
+                  ],
+                  [
+                    10,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: left",
+                "operands": [
+                  0,
+                  2
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "after": 2955495923145622,
+                "before": 2955495923146390,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    26,
+                    1
+                  ],
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    1
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: right",
+                "operands": [
+                  8,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  8,
+                  10
+                ]
+              },
+              {
+                "after": 2955495922097046,
+                "before": 2955495923145622,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495917902742,
+                "before": 2955495922097046,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  23,
+                  22
+                ],
+                "status": "changed",
+                "toggled": [
+                  23,
+                  22
+                ]
+              },
+              {
+                "after": 2955495867571094,
+                "before": 2955495917902742,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  26,
+                  24
+                ],
+                "status": "changed",
+                "toggled": [
+                  26,
+                  24
+                ]
+              },
+              {
+                "after": 2955487411854230,
+                "before": 2955495867571094,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  33,
+                  27
+                ],
+                "status": "changed",
+                "toggled": [
+                  33,
+                  27
+                ]
+              },
+              {
+                "after": 2815024801405846,
+                "before": 2955487411854230,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  47,
+                  38
+                ],
+                "status": "changed",
+                "toggled": [
+                  47,
+                  38
+                ]
+              }
+            ],
+            "checked_complete_words": 284,
+            "offers_by_disposition": {
+              "changed": 13,
+              "equal operands": 4,
+              "guard refused": 124,
+              "supplied ready token": 1
+            }
+          },
+          "later_retention_turns": [
+            {
+              "checked_complete_words": 280,
+              "offers_by_disposition": {
+                "changed": 6,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            },
+            {
+              "checked_complete_words": 284,
+              "offers_by_disposition": {
+                "changed": 8,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            }
+          ],
+          "prepared": {
+            "checked_complete_words": 30,
+            "offers_by_disposition": {
+              "changed": 2,
+              "equal operands": 3,
+              "guard refused": 9,
+              "supplied ready token": 1
+            }
+          },
+          "write": {
+            "addressed_receipt_word": "011",
+            "detected": true,
+            "exported_previous_memory": "110",
+            "memory_after": "011",
+            "memory_before": "110"
+          }
+        },
+        "one_type_history": {
+          "actual_write": {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 2815024805600147,
+                "before": 2815024801405843,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  22,
+                  23
+                ],
+                "status": "changed",
+                "toggled": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "after": 2815024822377363,
+                "before": 2815024805600147,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  24,
+                  25
+                ],
+                "status": "changed",
+                "toggled": [
+                  24,
+                  25
+                ]
+              },
+              {
+                "after": 2815033278094227,
+                "before": 2815024822377363,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  27,
+                  33
+                ],
+                "status": "changed",
+                "toggled": [
+                  27,
+                  33
+                ]
+              },
+              {
+                "after": 2955495888542611,
+                "before": 2815033278094227,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  38,
+                  47
+                ],
+                "status": "changed",
+                "toggled": [
+                  38,
+                  47
+                ]
+              },
+              {
+                "after": 2955495889591187,
+                "before": 2955495888542611,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495889591699,
+                "before": 2955495889591187,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    25,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "write observed menu to receipt register",
+                "operands": [
+                  9,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  9,
+                  10
+                ]
+              },
+              {
+                "after": 2955495889591701,
+                "before": 2955495889591699,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    25,
+                    1
+                  ],
+                  [
+                    8,
+                    1
+                  ],
+                  [
+                    9,
+                    0
+                  ],
+                  [
+                    10,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: left",
+                "operands": [
+                  1,
+                  2
+                ],
+                "status": "changed",
+                "toggled": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "after": 2955495889591189,
+                "before": 2955495889591701,
+                "guard": [
+                  [
+                    21,
+                    1
+                  ],
+                  [
+                    25,
+                    1
+                  ],
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    2,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1
+                ],
+                "holder": "H",
+                "offer": "exchange physical memory and receipt: right",
+                "operands": [
+                  9,
+                  10
+                ],
+                "status": "changed",
+                "toggled": [
+                  9,
+                  10
+                ]
+              },
+              {
+                "after": 2955495888542613,
+                "before": 2955495889591189,
+                "guard": [
+                  [
+                    23,
+                    1
+                  ],
+                  [
+                    33,
+                    1
+                  ],
+                  [
+                    47,
+                    1
+                  ]
+                ],
+                "guard_actual": [
+                  1,
+                  1,
+                  1
+                ],
+                "holder": "H",
+                "offer": "issued ON; nondecreasing public energy",
+                "operands": [
+                  20,
+                  21
+                ],
+                "status": "changed",
+                "toggled": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "after": 2955495884348309,
+                "before": 2955495888542613,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_on",
+                "operands": [
+                  23,
+                  22
+                ],
+                "status": "changed",
+                "toggled": [
+                  23,
+                  22
+                ]
+              },
+              {
+                "after": 2955495867571093,
+                "before": 2955495884348309,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: previous_menu",
+                "operands": [
+                  25,
+                  24
+                ],
+                "status": "changed",
+                "toggled": [
+                  25,
+                  24
+                ]
+              },
+              {
+                "after": 2955487411854229,
+                "before": 2955495867571093,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_before",
+                "operands": [
+                  33,
+                  27
+                ],
+                "status": "changed",
+                "toggled": [
+                  33,
+                  27
+                ]
+              },
+              {
+                "after": 2815024801405845,
+                "before": 2955487411854229,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "H",
+                "offer": "supplied raw public input: energy_after",
+                "operands": [
+                  47,
+                  38
+                ],
+                "status": "changed",
+                "toggled": [
+                  47,
+                  38
+                ]
+              }
+            ],
+            "checked_complete_words": 284,
+            "offers_by_disposition": {
+              "changed": 13,
+              "equal operands": 3,
+              "guard refused": 125,
+              "supplied ready token": 1
+            }
+          },
+          "later_retention_turns": [
+            {
+              "checked_complete_words": 280,
+              "offers_by_disposition": {
+                "changed": 6,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            },
+            {
+              "checked_complete_words": 284,
+              "offers_by_disposition": {
+                "changed": 8,
+                "equal operands": 3,
+                "guard refused": 130,
+                "supplied ready token": 1
+              }
+            }
+          ],
+          "prepared": {
+            "checked_complete_words": 30,
+            "offers_by_disposition": {
+              "changed": 2,
+              "equal operands": 3,
+              "guard refused": 9,
+              "supplied ready token": 1
+            }
+          },
+          "write": {
+            "addressed_receipt_word": "101",
+            "detected": true,
+            "exported_previous_memory": "110",
+            "memory_after": "101",
+            "memory_before": "110"
+          }
+        },
+        "original_reads": [
+          {
+            "action_bit": 0,
+            "actual_word": "010",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512421,
+                  "before": 5629774568512405,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    5
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    5
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          },
+          {
+            "action_bit": 1,
+            "actual_word": "001",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512454,
+                  "before": 5629774568512406,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    6
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    6
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          }
+        ],
+        "ready_states": [
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "parity",
+            "m": "101",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          },
+          {
+            "a": "100",
+            "a_out": "100",
+            "a_scratch": "100",
+            "action_slack": "1",
+            "coupler_slack": "0",
+            "cue": "01",
+            "energy_after": "10000000000",
+            "energy_before": "10000000000",
+            "law": "parity",
+            "m": "011",
+            "m_out": "110",
+            "memory_slack": "0",
+            "menu": "010",
+            "paid": "10",
+            "previous_menu": "100",
+            "previous_on": "10",
+            "reader": true,
+            "stage": "ready to read",
+            "t": "110",
+            "writer": true
+          }
+        ],
+        "reciprocal_reads": [
+          {
+            "action_bit": 1,
+            "actual_word": "001",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512454,
+                  "before": 5629774568512406,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    6
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    6
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          },
+          {
+            "action_bit": 0,
+            "actual_word": "010",
+            "physical_read": {
+              "changed_offers_and_nonready_exports": [
+                {
+                  "after": 5629774568512421,
+                  "before": 5629774568512405,
+                  "guard": [
+                    [
+                      50,
+                      1
+                    ],
+                    [
+                      52,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      2,
+                      1
+                    ]
+                  ],
+                  "guard_actual": [
+                    1,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "holder": "H",
+                  "offer": "couple current cue, menu and stored word to action",
+                  "operands": [
+                    4,
+                    5
+                  ],
+                  "status": "changed",
+                  "toggled": [
+                    4,
+                    5
+                  ]
+                }
+              ],
+              "checked_complete_words": 36,
+              "offers_by_disposition": {
+                "changed": 1,
+                "guard refused": 17
+              }
+            }
+          }
+        ],
+        "sham_double_transpositions": [
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512406,
+                "before": 5629774568512405,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "after": 5629774568512405,
+                "before": 5629774568512406,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 4,
+            "offers_by_disposition": {
+              "changed": 2
+            }
+          },
+          {
+            "changed_offers_and_nonready_exports": [
+              {
+                "after": 5629774568512405,
+                "before": 5629774568512406,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "after": 5629774568512406,
+                "before": 5629774568512405,
+                "guard": [],
+                "guard_actual": [],
+                "holder": "M",
+                "offer": "physical comparison on memory positions 0 and 1",
+                "operands": [
+                  0,
+                  1
+                ],
+                "status": "changed",
+                "toggled": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "checked_complete_words": 4,
+            "offers_by_disposition": {
+              "changed": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+  "one_actuator_mark": 6,
+  "one_many_intervention_sole_marks": [
+    0,
+    1
+  ],
+  "physical_holdings": {
+    "H": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "K": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "M": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "physical_named_banks": {
+    "a": [
+      4,
+      5,
+      6
+    ],
+    "a_out": [
+      17,
+      18,
+      19
+    ],
+    "a_scratch": [
+      14,
+      15,
+      16
+    ],
+    "action_slack": [
+      7
+    ],
+    "coupler_slack": [
+      54
+    ],
+    "cue": [
+      49,
+      50
+    ],
+    "energy_after": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "energy_before": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "m": [
+      0,
+      1,
+      2
+    ],
+    "m_out": [
+      11,
+      12,
+      13
+    ],
+    "memory_slack": [
+      3
+    ],
+    "menu": [
+      51,
+      52,
+      53
+    ],
+    "paid": [
+      20,
+      21
+    ],
+    "previous_menu": [
+      24,
+      25,
+      26
+    ],
+    "previous_on": [
+      22,
+      23
+    ],
+    "t": [
+      8,
+      9,
+      10
+    ]
+  },
+  "schema": "B306-keeper-1",
+  "scope": "Lawful device calibrations. Actual matched ration-game paths are counted separately."
+}

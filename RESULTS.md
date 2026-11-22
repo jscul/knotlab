@@ -5,7 +5,7 @@ own language. Each entry gives the date it was recorded, its statement, and link
 support it. The documents that define the working perspective are in [docs/](docs/), starting with
 [docs/KNOT_INTUITION.md](docs/KNOT_INTUITION.md); [INTUITIONS.md](INTUITIONS.md) is a shorter introduction.
 
-**402 current results** and 5 superseded ones, from 595 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
+**402 current results** and 5 superseded ones, from 596 research epics, plus 6 notes. The records are published exactly as they stand in our research workspace, so the hashes in their
 manifests still verify. None has been reviewed by a human expert; AI agents produced most of this work under the
 direction of the repository owner. Where a statement awaits a qualification, the entry says so. New epics appear here
 automatically when they close.
@@ -31,7 +31,7 @@ How to read an entry:
 - [Res(⊕) follow-ups](#res-follow-ups): 2 results
 - [Other results](#other-results): 26 results
 - [Notes](#notes): 6 self-contained notes
-- [Epics](#epics): all 595 epics with their closures
+- [Epics](#epics): all 596 epics with their closures
 
 ## Foundations: the knot and its readings
 
@@ -1928,6 +1928,7 @@ Each epic's closure proof lists its tickets, their outcomes and its recommendati
 | 2026-11-20 | Can ordinary whole-stage funding or closing respond to two free local edits without signalling? (`WHOLE-STAGE-SETTINGS-20261120-001`) | [closure](proofs/WHOLE-STAGE-SETTINGS-20261120-001Z/WHOLE-STAGE-SETTINGS-20261120-001Z-P001_synthesis/proof.md) | [folder](research/WHOLE-STAGE-SETTINGS-20261120-001/) |
 | 2026-11-21 | A current ancestor after the finite third ends (`ACTIVE-ANCESTOR-RECEIPT-20261121-001`) | [closure](proofs/ACTIVE-ANCESTOR-RECEIPT-20261121-001Z/ACTIVE-ANCESTOR-RECEIPT-20261121-001Z-P001_synthesis/proof.md) | [folder](research/ACTIVE-ANCESTOR-RECEIPT-20261121-001/) |
 | 2026-11-21 | Erasing the record of a change and signing a closing knot (`ERASURE-AND-CLOSING-SIGNS-20261121-001`) | [closure](proofs/ERASURE-AND-CLOSING-SIGNS-20261121-001Z/ERASURE-AND-CLOSING-SIGNS-20261121-001Z-P001_synthesis/proof.md) | [folder](research/ERASURE-AND-CLOSING-SIGNS-20261121-001/) |
+| 2026-11-21 | Can the feeder reader remember where it ate? (`FEEDER-MEMORY-20261121-001`) | [closure](proofs/FEEDER-MEMORY-20261121-001Z/FEEDER-MEMORY-20261121-001Z-P001_synthesis/proof.md) | [folder](research/FEEDER-MEMORY-20261121-001/) |
 | 2026-11-21 | Recognizing and discovering patterns in knot growth (`GROWTH-STATISTICS-20261121-001`) | [closure](proofs/GROWTH-STATISTICS-20261121-001Z/GROWTH-STATISTICS-20261121-001Z-P001_synthesis/proof.md) | [folder](research/GROWTH-STATISTICS-20261121-001/) |
 | 2026-11-21 | An idle exchange and exact closure probabilities for trees (`IDLE-PHASE-AND-TREE-CLOSURE-20261121-001`) | [closure](proofs/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001Z/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001Z-P001_synthesis/proof.md) | [folder](research/IDLE-PHASE-AND-TREE-CLOSURE-20261121-001/) |
 | 2026-11-21 | Knot counts and one extra meeting (`KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001`) | [closure](proofs/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001Z/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001Z-P001_synthesis/proof.md) | [folder](research/KNOT-COUNTS-AND-ONE-EXTRA-MEETING-20261121-001/) |

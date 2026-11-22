@@ -1,0 +1,517 @@
+{
+  "between_laws": {
+    "current": {
+      "losses": 0,
+      "mean_nae_minus_parity_turns": 0.0,
+      "same_public_histories": 192,
+      "ties": 192,
+      "wins": 0
+    },
+    "history": {
+      "losses": 0,
+      "mean_nae_minus_parity_turns": 0.0,
+      "same_public_histories": 192,
+      "ties": 192,
+      "wins": 0
+    },
+    "keeper": {
+      "losses": 0,
+      "mean_nae_minus_parity_turns": 0.0,
+      "same_public_histories": 192,
+      "ties": 192,
+      "wins": 0
+    },
+    "naive": {
+      "losses": 0,
+      "mean_nae_minus_parity_turns": 0.0,
+      "same_public_histories": 192,
+      "ties": 192,
+      "wins": 0
+    }
+  },
+  "bootstrap_samples_per_contrast": 2000,
+  "by_law": {
+    "nae": {
+      "contrasts": {
+        "history_minus_current": {
+          "bootstrap_seed": 17866687872553716996,
+          "losses": 3,
+          "mean_turn_difference": 0.2864583333333333,
+          "paired_episodes": 192,
+          "paired_starts": 48,
+          "start_bootstrap_95_percent_interval": [
+            -0.010416666666666668,
+            0.671875
+          ],
+          "sum_turn_difference": 55,
+          "ties": 183,
+          "wins": 6
+        },
+        "keeper_minus_current": {
+          "bootstrap_seed": 5009188650938374754,
+          "losses": 63,
+          "mean_turn_difference": -4.770833333333333,
+          "paired_episodes": 192,
+          "paired_starts": 48,
+          "start_bootstrap_95_percent_interval": [
+            -6.619791666666667,
+            -3.0361979166666666
+          ],
+          "sum_turn_difference": -916,
+          "ties": 128,
+          "wins": 1
+        },
+        "keeper_minus_history": {
+          "bootstrap_seed": 11318944698008921268,
+          "losses": 64,
+          "mean_turn_difference": -5.057291666666667,
+          "paired_episodes": 192,
+          "paired_starts": 48,
+          "start_bootstrap_95_percent_interval": [
+            -6.927213541666667,
+            -3.2341145833333336
+          ],
+          "sum_turn_difference": -971,
+          "ties": 127,
+          "wins": 1
+        }
+      },
+      "readers": {
+        "current": {
+          "episodes": 192,
+          "max_turns": 51,
+          "mean_meals": 1.7916666666666667,
+          "mean_turns": 12.791666666666666,
+          "mean_unsuccessful_eats": 1.609375,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 0,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 309
+        },
+        "history": {
+          "episodes": 192,
+          "max_turns": 51,
+          "mean_meals": 1.875,
+          "mean_turns": 13.078125,
+          "mean_unsuccessful_eats": 1.59375,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 0,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 306
+        },
+        "keeper": {
+          "episodes": 192,
+          "max_turns": 18,
+          "mean_meals": 0.5052083333333334,
+          "mean_turns": 8.020833333333334,
+          "mean_unsuccessful_eats": 0.328125,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 201,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 63
+        },
+        "naive": {
+          "episodes": 192,
+          "max_turns": 10,
+          "mean_meals": 0.3802083333333333,
+          "mean_turns": 7.520833333333333,
+          "mean_unsuccessful_eats": 2.75,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 0,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 528
+        }
+      }
+    },
+    "parity": {
+      "contrasts": {
+        "history_minus_current": {
+          "bootstrap_seed": 734271961273925196,
+          "losses": 3,
+          "mean_turn_difference": 0.2864583333333333,
+          "paired_episodes": 192,
+          "paired_starts": 48,
+          "start_bootstrap_95_percent_interval": [
+            -0.010677083333333334,
+            0.671875
+          ],
+          "sum_turn_difference": 55,
+          "ties": 183,
+          "wins": 6
+        },
+        "keeper_minus_current": {
+          "bootstrap_seed": 15716183478629929044,
+          "losses": 63,
+          "mean_turn_difference": -4.770833333333333,
+          "paired_episodes": 192,
+          "paired_starts": 48,
+          "start_bootstrap_95_percent_interval": [
+            -6.5889322916666675,
+            -2.952994791666667
+          ],
+          "sum_turn_difference": -916,
+          "ties": 128,
+          "wins": 1
+        },
+        "keeper_minus_history": {
+          "bootstrap_seed": 17842868767828835695,
+          "losses": 64,
+          "mean_turn_difference": -5.057291666666667,
+          "paired_episodes": 192,
+          "paired_starts": 48,
+          "start_bootstrap_95_percent_interval": [
+            -6.973958333333333,
+            -3.2291666666666665
+          ],
+          "sum_turn_difference": -971,
+          "ties": 127,
+          "wins": 1
+        }
+      },
+      "readers": {
+        "current": {
+          "episodes": 192,
+          "max_turns": 51,
+          "mean_meals": 1.7916666666666667,
+          "mean_turns": 12.791666666666666,
+          "mean_unsuccessful_eats": 1.609375,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 0,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 309
+        },
+        "history": {
+          "episodes": 192,
+          "max_turns": 51,
+          "mean_meals": 1.875,
+          "mean_turns": 13.078125,
+          "mean_unsuccessful_eats": 1.59375,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 0,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 306
+        },
+        "keeper": {
+          "episodes": 192,
+          "max_turns": 18,
+          "mean_meals": 0.5052083333333334,
+          "mean_turns": 8.020833333333334,
+          "mean_unsuccessful_eats": 0.328125,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 201,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 63
+        },
+        "naive": {
+          "episodes": 192,
+          "max_turns": 10,
+          "mean_meals": 0.3802083333333333,
+          "mean_turns": 7.520833333333333,
+          "mean_unsuccessful_eats": 2.75,
+          "median_turns": 6.0,
+          "min_turns": 6,
+          "passes_on_fresh_feeder": 0,
+          "refusals": 0,
+          "terminal_reasons": {
+            "death": 192
+          },
+          "total_unsuccessful_eats": 528
+        }
+      }
+    }
+  },
+  "censored_episodes": 0,
+  "elapsed_seconds": 0.6164039369905367,
+  "episodes": 1536,
+  "excluded_archived_keys": 263,
+  "growth_by_law": {
+    "nae": {
+      "closures": 0,
+      "first_funded": 19,
+      "rations": 371,
+      "stalls": 29
+    },
+    "parity": {
+      "closures": 0,
+      "first_funded": 19,
+      "rations": 371,
+      "stalls": 29
+    }
+  },
+  "identical_growth_by_start_pair": 48,
+  "schema_version": 1,
+  "selected_start_count": 48,
+  "split": "survival",
+  "starts": [
+    {
+      "candidate_index": 15,
+      "seed": 15077927745076756935,
+      "source_key": "1(3()3()3(1(3())))"
+    },
+    {
+      "candidate_index": 49,
+      "seed": 8729082013330497032,
+      "source_key": "0(1(2())1(2())2())"
+    },
+    {
+      "candidate_index": 50,
+      "seed": 16598361879789451091,
+      "source_key": "1(1(2()2(3()))2()3())"
+    },
+    {
+      "candidate_index": 51,
+      "seed": 18279096689424125868,
+      "source_key": "0(1(1(2()))2()2()3())"
+    },
+    {
+      "candidate_index": 56,
+      "seed": 7694432894299092257,
+      "source_key": "0(2()2()3(2(2(3()))))"
+    },
+    {
+      "candidate_index": 69,
+      "seed": 16288318552719967617,
+      "source_key": "2(2()2(2(2(2(2())))))"
+    },
+    {
+      "candidate_index": 70,
+      "seed": 5985127964402223268,
+      "source_key": "0(3()3()3(2(3())))"
+    },
+    {
+      "candidate_index": 82,
+      "seed": 11556204068906935463,
+      "source_key": "0(2(2())2(3())2(3()))"
+    },
+    {
+      "candidate_index": 114,
+      "seed": 3836147681129444874,
+      "source_key": "1(1(2())3()3()3())"
+    },
+    {
+      "candidate_index": 115,
+      "seed": 16200882502385997420,
+      "source_key": "0(2(2(3()))2(3())3())"
+    },
+    {
+      "candidate_index": 125,
+      "seed": 9832473940384026729,
+      "source_key": "1(2()2(2())2(3()))"
+    },
+    {
+      "candidate_index": 137,
+      "seed": 16354021717177304174,
+      "source_key": "1(1(1(2()2()))3())"
+    },
+    {
+      "candidate_index": 140,
+      "seed": 4808800617069864389,
+      "source_key": "1(3()3()3(2(2())))"
+    },
+    {
+      "candidate_index": 147,
+      "seed": 9652162306169806470,
+      "source_key": "1(2()3(2(2()2(3()))))"
+    },
+    {
+      "candidate_index": 151,
+      "seed": 2230724860533547650,
+      "source_key": "0(2(3())3()3())"
+    },
+    {
+      "candidate_index": 159,
+      "seed": 3035193797195067568,
+      "source_key": "0(1(3()3())2()3())"
+    },
+    {
+      "candidate_index": 162,
+      "seed": 7377396263903931972,
+      "source_key": "0(1(3())2()2(3()))"
+    },
+    {
+      "candidate_index": 166,
+      "seed": 6751065746585732169,
+      "source_key": "1(1(2()3())2(2()))"
+    },
+    {
+      "candidate_index": 181,
+      "seed": 12242295474175601660,
+      "source_key": "2(3()3()3(2()2(3())))"
+    },
+    {
+      "candidate_index": 190,
+      "seed": 13659247132239671196,
+      "source_key": "0(2()2(2())3(1(3())))"
+    },
+    {
+      "candidate_index": 194,
+      "seed": 14424367275006985142,
+      "source_key": "1(1(1(2()))3())"
+    },
+    {
+      "candidate_index": 199,
+      "seed": 5569951431827158042,
+      "source_key": "0(2()2()2()2(2(3())))"
+    },
+    {
+      "candidate_index": 201,
+      "seed": 6450071311205240008,
+      "source_key": "1(1(2(1(2()3())))3())"
+    },
+    {
+      "candidate_index": 209,
+      "seed": 16297615683318999700,
+      "source_key": "0(2()2()2(3())3())"
+    },
+    {
+      "candidate_index": 212,
+      "seed": 123012322769513116,
+      "source_key": "0(0(3()3())3()3())"
+    },
+    {
+      "candidate_index": 216,
+      "seed": 7180002258197902957,
+      "source_key": "1(1(1(1(2()))2())2())"
+    },
+    {
+      "candidate_index": 231,
+      "seed": 18084756974660298938,
+      "source_key": "1(3()3(2(2()2(3()))))"
+    },
+    {
+      "candidate_index": 235,
+      "seed": 5283468437055086614,
+      "source_key": "1(2()3(1(3()3())))"
+    },
+    {
+      "candidate_index": 238,
+      "seed": 16719230671717634408,
+      "source_key": "0(2()2(2())3()3()3())"
+    },
+    {
+      "candidate_index": 241,
+      "seed": 4776640126282424188,
+      "source_key": "0(1(2())2(3())3())"
+    },
+    {
+      "candidate_index": 247,
+      "seed": 10663460231519435885,
+      "source_key": "1(3()3()3(2(2(2()))))"
+    },
+    {
+      "candidate_index": 255,
+      "seed": 13346717915339533087,
+      "source_key": "1(2()3()4(1(2()3())))"
+    },
+    {
+      "candidate_index": 257,
+      "seed": 4189154300235149426,
+      "source_key": "1(1(2())2(2())3()3())"
+    },
+    {
+      "candidate_index": 264,
+      "seed": 5588117372877113639,
+      "source_key": "1(1(2()2())2()2()3())"
+    },
+    {
+      "candidate_index": 270,
+      "seed": 3473699658400654320,
+      "source_key": "0(1(3())2()3())"
+    },
+    {
+      "candidate_index": 271,
+      "seed": 8019204190137771665,
+      "source_key": "0(3()3()3(1(2())))"
+    },
+    {
+      "candidate_index": 273,
+      "seed": 8814784586186874476,
+      "source_key": "0(2()2(2())3(2(2())))"
+    },
+    {
+      "candidate_index": 280,
+      "seed": 15431550641161090195,
+      "source_key": "0(1(2(3()))2(2())3())"
+    },
+    {
+      "candidate_index": 286,
+      "seed": 2676929564048765996,
+      "source_key": "0(1(2())1(2()3())2())"
+    },
+    {
+      "candidate_index": 287,
+      "seed": 12873042313628135966,
+      "source_key": "0(2(2(3()))3()3())"
+    },
+    {
+      "candidate_index": 301,
+      "seed": 7521796581100509943,
+      "source_key": "0(2()2()2(2()))"
+    },
+    {
+      "candidate_index": 306,
+      "seed": 9219074630672727562,
+      "source_key": "1(1(2(3()))3()3())"
+    },
+    {
+      "candidate_index": 307,
+      "seed": 771213776548299855,
+      "source_key": "1(2()2(1(2(3()))))"
+    },
+    {
+      "candidate_index": 312,
+      "seed": 5509076557203022381,
+      "source_key": "1(3()3()3(2(3())))"
+    },
+    {
+      "candidate_index": 315,
+      "seed": 4808808986315984581,
+      "source_key": "1(1(1(2())2())3())"
+    },
+    {
+      "candidate_index": 319,
+      "seed": 1634655598229113614,
+      "source_key": "0(2()2()2(2())3())"
+    },
+    {
+      "candidate_index": 320,
+      "seed": 16073756418267322169,
+      "source_key": "1(1(1(1(3())))3())"
+    },
+    {
+      "candidate_index": 339,
+      "seed": 4195073185398602841,
+      "source_key": "1(1(2())2()2(3()))"
+    }
+  ],
+  "tapes_per_start": 4,
+  "target_start_count": 48
+}

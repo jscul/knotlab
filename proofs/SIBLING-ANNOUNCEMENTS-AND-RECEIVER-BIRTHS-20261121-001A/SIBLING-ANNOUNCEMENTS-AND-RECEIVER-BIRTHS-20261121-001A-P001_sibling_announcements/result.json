@@ -1,0 +1,277 @@
+{
+  "assumptions": [
+    "A186",
+    "A188",
+    "A190"
+  ],
+  "complete_control_check": {
+    "all_spent_ports_per_word": 16,
+    "allowed_deterministic_six_sign_lists": 64,
+    "crossed_controls": [
+      "full/fine-logged vs coarse-flag joint state",
+      "clean eraser vs retained tag, coherently returned tag and diagonal source",
+      "visible vs hidden opposite orientation",
+      "stronger paid input vs independent private seed",
+      "same singleton chances, different sibling change operation",
+      "disconnected/busy public registers"
+    ],
+    "exact_zeros_retained": true,
+    "lawful_sibling_words_per_law": 512,
+    "matched_physical_writes": true,
+    "matched_previous_local_tables": true,
+    "unconditional_normalization_with_refusals": true
+  },
+  "evidence_sha256": "05c2bb4378ba97b3935332584f64c3e5e2e60b46a723c1d9466b5307138c41b4",
+  "known_prior": "The all-zero NAE singleton excess 1/14, its three prices, unconditioned common table, and the four-paid-character outcomes were prior results.",
+  "laws": {
+    "nae": {
+      "clean_chance_per_launch": "25009/38416",
+      "clean_numerator": 350126,
+      "complete_words": 33614,
+      "modes": {
+        "clean": {
+          "best_I_if_one_fixed_ordinary_bit_missing": "1/44",
+          "coherent_sibling_read_beyond_observer": {
+            "coherent_full_complement": {
+              "conditional_I": "-27181/700146",
+              "launch_mass": "350073/537824",
+              "raw_trace": "350073"
+            },
+            "coherent_minus": {
+              "conditional_I": "-1/26",
+              "launch_mass": "13/537824",
+              "raw_trace": "13"
+            },
+            "coherent_plus": {
+              "conditional_I": "2/53",
+              "launch_mass": "53/537824",
+              "raw_trace": "53"
+            },
+            "complementary_tuples_outside_pair": {
+              "conditional_I": "-1359/35006",
+              "launch_mass": "87515/134456",
+              "raw_trace": "350060"
+            },
+            "diagonal_fair_accept": {
+              "conditional_I": "1/44",
+              "launch_mass": "33/537824",
+              "raw_trace": "33"
+            }
+          },
+          "deterministic": {
+            "attained_weight": "7",
+            "conditional_I": "1/14",
+            "eligible_decline": "50017/76832",
+            "per_initial_launch_rate": "1/76832",
+            "positive_observation_acceptance": {
+              "000000000": "1"
+            },
+            "source_refusal": "13407/38416",
+            "surplus_multiplier": null,
+            "target": "1/28",
+            "upper_bound": "7",
+            "within_source_rate": "1/50018"
+          },
+          "randomized": {
+            "attained_weight": "630/31",
+            "conditional_I": "1/28",
+            "eligible_decline": "387617/595448",
+            "per_initial_launch_rate": "45/1190896",
+            "positive_observation_acceptance": {
+              "000000000": "1",
+              "000000001": "7/31"
+            },
+            "source_refusal": "13407/38416",
+            "surplus_multiplier": "1652/31",
+            "target": "1/28",
+            "upper_bound": "630/31",
+            "within_source_rate": "45/775279"
+          }
+        },
+        "retained": {
+          "best_I_if_one_fixed_ordinary_bit_missing": "-1/56",
+          "coherent_sibling_read_beyond_observer": {
+            "coherent_full_complement": {
+              "conditional_I": "-14407/134372",
+              "launch_mass": "4799/4802",
+              "raw_trace": "33593"
+            },
+            "coherent_minus": {
+              "conditional_I": "-3/28",
+              "launch_mass": "1/4802",
+              "raw_trace": "7"
+            },
+            "coherent_plus": {
+              "conditional_I": "1/84",
+              "launch_mass": "3/4802",
+              "raw_trace": "21"
+            },
+            "complementary_tuples_outside_pair": {
+              "conditional_I": "-3601/33586",
+              "launch_mass": "2399/2401",
+              "raw_trace": "33586"
+            },
+            "diagonal_fair_accept": {
+              "conditional_I": "-1/56",
+              "launch_mass": "1/2401",
+              "raw_trace": "14"
+            }
+          },
+          "deterministic": {
+            "attained_weight": "7",
+            "conditional_I": "1/14",
+            "eligible_decline": "4801/4802",
+            "per_initial_launch_rate": "1/4802",
+            "positive_observation_acceptance": {
+              "000000000": "1"
+            },
+            "source_refusal": "0",
+            "surplus_multiplier": null,
+            "target": "1/28",
+            "upper_bound": "7",
+            "within_source_rate": "1/4802"
+          },
+          "randomized": {
+            "attained_weight": "10",
+            "conditional_I": "1/28",
+            "eligible_decline": "16802/16807",
+            "per_initial_launch_rate": "5/16807",
+            "positive_observation_acceptance": {
+              "000000000": "1",
+              "000000001": "1/7"
+            },
+            "source_refusal": "0",
+            "surplus_multiplier": "12",
+            "target": "1/28",
+            "upper_bound": "10",
+            "within_source_rate": "5/16807"
+          }
+        }
+      }
+    },
+    "parity": {
+      "clean_chance_per_launch": "1/16",
+      "clean_numerator": 2048,
+      "complete_words": 2048,
+      "modes": {
+        "clean": {
+          "best_I_if_one_fixed_ordinary_bit_missing": "-3/4",
+          "coherent_sibling_read_beyond_observer": {
+            "coherent_full_complement": {
+              "conditional_I": "-3071/4088",
+              "launch_mass": "511/8192",
+              "raw_trace": "2044"
+            },
+            "coherent_minus": {
+              "conditional_I": "-11/8",
+              "launch_mass": "1/8192",
+              "raw_trace": "4"
+            },
+            "coherent_plus": {
+              "conditional_I": "-1/8",
+              "launch_mass": "1/8192",
+              "raw_trace": "4"
+            },
+            "complementary_tuples_outside_pair": {
+              "conditional_I": "-3/4",
+              "launch_mass": "255/4096",
+              "raw_trace": "2040"
+            },
+            "diagonal_fair_accept": {
+              "conditional_I": "-3/4",
+              "launch_mass": "1/8192",
+              "raw_trace": "4"
+            }
+          },
+          "deterministic": {
+            "attained_weight": "0",
+            "conditional_I": null,
+            "eligible_decline": "1/16",
+            "per_initial_launch_rate": "0",
+            "positive_observation_acceptance": {},
+            "source_refusal": "15/16",
+            "surplus_multiplier": null,
+            "target": "1/28",
+            "upper_bound": "0",
+            "within_source_rate": "0"
+          },
+          "randomized": {
+            "attained_weight": "0",
+            "conditional_I": null,
+            "eligible_decline": "1/16",
+            "per_initial_launch_rate": "0",
+            "positive_observation_acceptance": {},
+            "source_refusal": "15/16",
+            "surplus_multiplier": "56/37",
+            "target": "1/28",
+            "upper_bound": "0",
+            "within_source_rate": "0"
+          }
+        },
+        "retained": {
+          "best_I_if_one_fixed_ordinary_bit_missing": "-3/4",
+          "coherent_sibling_read_beyond_observer": {
+            "coherent_full_complement": {
+              "conditional_I": "-3/4",
+              "launch_mass": "511/512",
+              "raw_trace": "2044"
+            },
+            "coherent_minus": {
+              "conditional_I": "-3/4",
+              "launch_mass": "1/512",
+              "raw_trace": "4"
+            },
+            "coherent_plus": {
+              "conditional_I": "-3/4",
+              "launch_mass": "1/512",
+              "raw_trace": "4"
+            },
+            "complementary_tuples_outside_pair": {
+              "conditional_I": "-3/4",
+              "launch_mass": "255/256",
+              "raw_trace": "2040"
+            },
+            "diagonal_fair_accept": {
+              "conditional_I": "-3/4",
+              "launch_mass": "1/512",
+              "raw_trace": "4"
+            }
+          },
+          "deterministic": {
+            "attained_weight": "0",
+            "conditional_I": null,
+            "eligible_decline": "1",
+            "per_initial_launch_rate": "0",
+            "positive_observation_acceptance": {},
+            "source_refusal": "0",
+            "surplus_multiplier": null,
+            "target": "1/28",
+            "upper_bound": "0",
+            "within_source_rate": "0"
+          },
+          "randomized": {
+            "attained_weight": "0",
+            "conditional_I": null,
+            "eligible_decline": "1",
+            "per_initial_launch_rate": "0",
+            "positive_observation_acceptance": {},
+            "source_refusal": "0",
+            "surplus_multiplier": "56/37",
+            "target": "1/28",
+            "upper_bound": "0",
+            "within_source_rate": "0"
+          }
+        }
+      }
+    }
+  },
+  "new_direction_started": false,
+  "ordinary_growth_delivers_this_flag": false,
+  "physical_scope": "One four-place root and the full set of its four paid children. Fixed focal child and orientation, all rotations of the choice verified.",
+  "positive_source_postulates": "Uniform positive full-word preparation, change questions, clean spent filter where requested, public pre-settings flag with supplied ready-bank writer and delivery. Randomized rules require independent randomness.",
+  "proof_stop": "Matching attaining protocols and exact upper bounds under both laws and both source preparations.",
+  "schema_version": 1,
+  "scientific_referee": "pending",
+  "theorem": "Sharp optima for the fixed I0>=1/28 under pre-settings ordinary sibling effects on a funded first four-place child. The zero parity rate has no positive-mass conditional table.",
+  "ticket": "SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001A"
+}

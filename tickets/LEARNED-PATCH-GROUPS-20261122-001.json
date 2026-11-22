@@ -1,0 +1,39 @@
+{
+  "acceptance_gate": "Prospective Astra Max design review, disjoint blind variants and held turns, same-budget comparison and physical learned-group controls.",
+  "completion_gate": "Count every held-out rotation and class under both laws, identify support and causal use of learned membership, and release the science referee handoff.",
+  "dependencies": [
+    "PIXEL-LETTERS-20261122-001"
+  ],
+  "dependency_text": "Accepted finite precursor and frozen orientation-specific reader on 8 by 8 letters; earlier 400 excluded.",
+  "fields": {
+    "accepted_artifact_id": "LEARNED-PATCH-GROUPS-20261122-001-E001",
+    "assumptions": [
+      "A207"
+    ],
+    "goal": "G15",
+    "program": "learning",
+    "referee_handoff": "research/LEARNED-PATCH-GROUPS-20261122-001/referee_handoff.md",
+    "result_path": "artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/result.json",
+    "result_sha256": "9e13d52a66431189ed8db6e3fef4e25f50d1fd2e05f12e43d0b878558df91982",
+    "scientific_referee": "pending",
+    "scientific_report": "research/LEARNED-PATCH-GROUPS-20261122-001/decision.md",
+    "takes": [
+      "PIXEL-LETTERS-20261122-001#1"
+    ],
+    "terminal_artifact": "experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/contract.json"
+  },
+  "id": "LEARNED-PATCH-GROUPS-20261122-001",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "On genuinely new 8 by 8 L/T strokes, measure whether reward selects a grouping of anonymous observed pixel patterns that transfers to completely withheld quarter-turns. Run and score both parity and not-all-equal; close at the frozen result.",
+  "ownership": {
+    "root": true,
+    "scope_id": "LEARNED-PATCH-GROUPS-20261122-001"
+  },
+  "parent": null,
+  "schema_version": 1,
+  "status": "Closed. The frozen reward-selected group reader failed held-turn recognition under parity and not-all-equal. Each scored 128/128 at familiar turns and 32/128 at held turns on the two new designs. The previous reader got 16/128 at the held turns. Independent replay passed. Scientific referee pending.",
+  "status_class": "refuted",
+  "stop_rule": "One frozen fit and one blind evaluation per specified arm. Stop at the result, including a failure.",
+  "title": "Learn which local pixel patterns to count together"
+}

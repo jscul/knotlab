@@ -1,0 +1,369 @@
+{
+  "attack_plan_frozen_before_results": true,
+  "attacks": [
+    {
+      "category": "scope_and_authority",
+      "claim_at_risk": "Accurately scoped mixed result with primary failure",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/contract.json",
+        "../../design_review/red_team_report.json",
+        "../R1/red_team_report.json",
+        "../replay_result.json"
+      ],
+      "id": "R2-scope_and_authority",
+      "method": "Revalidated R1, R0, all source commitments and the exact contract hash. Confirmed the one locked fit and comparison. Both holding laws support the same class and intervention measurements, and both fail the strict primary gate. R2 accepts evidence for this computed outcome. Scientific referee remains separate.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "information_leakage",
+      "claim_at_risk": "Only raw observations and the issued-action correctness bit influence learning",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../R1/red_team_report.json",
+        "../phase_io.json",
+        "../../phase_anchors.jsonl",
+        "../phase_anchor_checks.json",
+        "../replay_result.json"
+      ],
+      "id": "R2-information_leakage",
+      "method": "Independently reconstructed all eleven sequences of guesses and feedback, including the fixed ordinary, opposite and cyclic-shift schedules. Reproduced 512 physical checkpoint prefix hashes and the held final state. Verified external pre-transition digests and the score guard's refusal to open a test key on an early attempt. No test update appears in the 704-image blind census.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "split_integrity",
+      "claim_at_risk": "Complete finite bitmap census and primary shape and turn holdouts",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../panel_census.json",
+        "../replay_result.json"
+      ],
+      "id": "R2-split_integrity",
+      "method": "Independently generated all 768 images and exact stream/key order, with zero predecessor bitmap, normalized-shape or rotation-orbit overlap. The four class-specific primary style orbits are disjoint from fitting, even with reflection allowed. At each tested position regime the two primary styles contribute eight bitmaps per class and turn. All fitting turns are q0 or q1.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "comparator_fairness",
+      "claim_at_risk": "Exact matched inputs and informative alternative controls",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../replay_result.json"
+      ],
+      "id": "R2-comparator_fairness",
+      "method": "Independently fitted exact subset moments for all three schedules and retrained the previous centroid on the same 64 bitmaps and ordinary rewards. Both laws match the arithmetic twin on all 704 queries for each schedule. In the 128 primary held-turn images, the selected rule scored 32, the previous centroid 16, all groups at size one scored 0, cleared and erased scored 64, and the shifted schedule scored 64. These controls preserve the ordinary scorer's conventions.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "artifact_and_checker",
+      "claim_at_risk": "Verifiable ordered execution, raw-output rosters and untouched evidence",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../phase_anchor_checks.json",
+        "../phase_io.json",
+        "../replay.py",
+        "../replay_result.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/release.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/blind/release.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scored/release.json"
+      ],
+      "id": "R2-artifact_and_checker",
+      "method": "Verified exact content digests for all official outputs, parent bindings, checkpoint contents and outside-runner fit and blind anchors between recorded phase finishes. The sealed scorer joined the label key only after blind release. Synthetic malformed records, corrupt checkpoints and overwrite attempts were rejected before fit. Independent scorer matched all output cells and representative failures.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "identifiability",
+      "claim_at_risk": "The data support a selected tied family, with limits on uniqueness",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay_result.json",
+        "../postscore_rank_support.json"
+      ],
+      "id": "R2-identifiability",
+      "method": "The exact primary fit chose singleton bins 4 and 13 at tied infinite rank. Action-map reversal exchanged the fitted class means. A post-score descriptive check found 240 maximizers before the size preference, including twelve quarter-turn-closed partitions. The earlier four-bin clue is among the unselected maxima, with means 1 and 2. No held predictions were made for discarded partitions. The size tie break determines which of the equally ranked fits remains.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "resource_fairness",
+      "claim_at_risk": "Matched number of training receipts and transparent representation cost",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/contract.json",
+        "../replay_result.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/release.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/blind/release.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scored/release.json"
+      ],
+      "id": "R2-resource_fairness",
+      "method": "Fit accounts for 64 acquisitions in each of eleven arms. Spread ranking examines 32767 eligible partitions per newly grouped fit, and the matched prior has its previously frozen smaller readout. Group state reserves 40494 ternary holdings, with 81086 or 81089 checkpoint bytes, against 502 or 516 bytes for ordinary arithmetic. Raw resource records give elapsed time and high-water memory per phase, with no speed or efficiency ranking asserted.",
+      "required_action": "",
+      "severity": "medium",
+      "status": "pass"
+    },
+    {
+      "category": "statistical_validity",
+      "claim_at_risk": "Primary decision enforced in each fixed letter, turn, shape and position subgroup",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../preregistration.md",
+        "../panel_census.json",
+        "../replay_result.json"
+      ],
+      "id": "R2-statistical_validity",
+      "method": "Rebuilt all class-stratified counts. Of sixteen primary eight-bitmap cells, both laws pass exactly four. Every T at both held turns fails. q2 L fails, q3 L succeeds in both styles and both position regimes. The selected rule scores 16/64 in each primary held-turn panel. The 128 E/F familiar-turn images are all correct. Translations present repeated histograms and offer no independent font samples.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "representation_robustness",
+      "claim_at_risk": "Anonymous bin identities preserve the fitted rule, while new turns defeat it",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay_result.json",
+        "../synthetic.json"
+      ],
+      "id": "R2-representation_robustness",
+      "method": "Permuted the sixteen bin IDs by a fixed prospective affine map. Both action conventions and the shifted control transport selected partitions, calibrations and all group votes on the 48 query signatures, including changes to the represented side. Each selected ordinary singleton changes under a quarter-turn, and the whole selected family changes too. Every E/F query has a signature absent from training, including the successful familiar-turn primary cells.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "causal_alternatives",
+      "claim_at_risk": "Changing learned marks changes decisions without changing learner inputs",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../synthetic.json",
+        "../../preregistration.md",
+        "../replay_result.json"
+      ],
+      "id": "R2-causal_alternatives",
+      "method": "Both laws and all 704 bitmaps track the other fitted donor and reverse the original choice in both directions, with all shams/restorations preserving choice and clears issuing zero. Membership-only erasure holds calibration fixed and changes 256 actions per law. Fitted selection and all-size disagree on 96 images, supporting a predictive difference relative to that specific control, while neither passes the primary gate. Shifting 30 assigned rewards changes both classes' signature multisets and replaces all selected masks. Numeric agreement isolates the effect to the learned rule expressed in either storage implementation.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "independent_replay",
+      "claim_at_risk": "Exact in-task result reconstruction does not reuse the producer algorithms",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../replay.py",
+        "../group_oracle.py",
+        "../replay_result.json"
+      ],
+      "id": "R2-independent_replay",
+      "method": "Used direct coordinate rendering, independent padded indexing, meet-in-the-middle subset sums, rational class means, bytewise holding reconstruction and a separate scorer. Matched all 704 arm receipts, 512 prefix digests, eleven endpoint checkpoints, 21824 blind actions, individual votes for all 48 distinct query signatures, the full class and pose score tables, controls and representative cases.",
+      "required_action": "",
+      "severity": "critical",
+      "status": "pass"
+    },
+    {
+      "category": "adversarial_mutation",
+      "claim_at_risk": "Invalid states, duplicate/forbidden input and diverging seals reject",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../synthetic.json",
+        "../phase_io.json",
+        "../phase_anchor_checks.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/release.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/blind/release.json",
+        "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scored/release.json"
+      ],
+      "id": "R2-adversarial_mutation",
+      "method": "Revalidated ten synthetic checkpoint corruptions and eleven parser/phase failures. Mutating each expected fit, blind and scored release digest independently caused failure before opening outcome rows. All official output hashes and external anchors matched afterward.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    },
+    {
+      "category": "claim_scope",
+      "claim_at_risk": "Negative held-turn capability and positive state dependence stay distinct",
+      "contract_change_required": false,
+      "evidence_paths": [
+        "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/contract.json",
+        "../replay_result.json",
+        "../postscore_rank_support.json"
+      ],
+      "id": "R2-claim_scope",
+      "method": "Reward and exact ranking acquired class-dependent group membership, and the same supplied decision rule generalized to novel E/F styles at trained turns. The fixed selection failed held turns under the declared criterion despite some gain over its predecessor. All retained results are specific to supplied padding, bin counts, exhaustive search, size preference, scoring and finite styles. Evidence does not distinguish knot storage from the matched numeric computation.",
+      "required_action": "",
+      "severity": "high",
+      "status": "pass"
+    }
+  ],
+  "audit_utc": "2026-11-22T10:04:35.328165+00:00",
+  "experiment_id": "LEARNED-PATCH-GROUPS-20261122-001-E001",
+  "gate": "promotion",
+  "input_digests": [
+    {
+      "path": "../../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/contract.json",
+      "sha256": "fb105cc7d5a938237460c580e4caf993a25a2c02a650b48c57782811616f3957"
+    },
+    {
+      "path": "../../preregistration.md",
+      "sha256": "7fa48c1d4ec518ea14d18e9d02bd4a3befd4a8505385ff4e1c44559722c6cf0c"
+    },
+    {
+      "path": "../../design_review/red_team_report.json",
+      "sha256": "1085b751fa0917b15985622aa0026d05d6b45392abb47c275a92996b4a04abba"
+    },
+    {
+      "path": "../R1/red_team_report.json",
+      "sha256": "eedbe7013192cd452e0293859293e682d97554d648f8773cf12875f6c37d7b2d"
+    },
+    {
+      "path": "../../phase_anchors.jsonl",
+      "sha256": "f3ee24555008b6cf6e517d8a2ee88ddf29ec18ba9a2882b4c706b85006e5cad3"
+    },
+    {
+      "path": "../phase_anchor_checks.json",
+      "sha256": "f3bc80bc5b5d0cfeac1422abfe441e7db8acdb431c75f57897e6466c632aeb08"
+    },
+    {
+      "path": "../replay_result.json",
+      "sha256": "09bec250bbd3468911ed7c83a8fac889b2e725a316a81a0768a17849026edf7d"
+    },
+    {
+      "path": "../panel_census.json",
+      "sha256": "d05d748cd3b89a903e482c62b2931c07c9319f5212989e398526f8a05fbff00d"
+    },
+    {
+      "path": "../synthetic.json",
+      "sha256": "9a27cbb68bcb4b59a15470cfb4f47f0d9d4aac4f33f6029d5b63deeaf3ff956f"
+    },
+    {
+      "path": "../phase_io.json",
+      "sha256": "7868d5106f03f895acb086efb3018d64971935036388d35c926b8122194031b7"
+    },
+    {
+      "path": "../postscore_rank_support.json",
+      "sha256": "930d11c11920213b26ccdb00236446743945a3b68cf986e4aab21f9b50621f91"
+    },
+    {
+      "path": "../attack_plan.md",
+      "sha256": "ff0b95d6554dbbb73574262ef10490815d896bd1b5b2a9315e4d58a2aad2bb7b"
+    },
+    {
+      "path": "../replay.py",
+      "sha256": "325ee31692c7fdcb183cc0b41421f8b73fef159b1a1f59d4f9bf4e606babf32c"
+    },
+    {
+      "path": "../panel_census.py",
+      "sha256": "7639c2bea1b90504163672c676e3221799de0007251e0e92e58cda82d2edf1cf"
+    },
+    {
+      "path": "../pixel_counts.py",
+      "sha256": "03197115b37c1463bc38a45fd85887a3999b024b974faed6782dc604c0915d46"
+    },
+    {
+      "path": "../group_oracle.py",
+      "sha256": "5c416ed80d40f52004097fdf0b4d34d6937150c298b94589e2e87f7dc69f0d9c"
+    },
+    {
+      "path": "../subsets.py",
+      "sha256": "8c1cd4b153660982c9176747ede980afddd837f8cedc1ba51861dae39eb7f266"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/release.json",
+      "sha256": "af13bf46249bb96f45b564e01f7417317ca93c16fa5b335fe7ebf7e6b93b8df8"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/blind/release.json",
+      "sha256": "b6cebe7c5b60440e1ae86d42159156e1c34b32c38a6e2c4046fdd67383484f02"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scored/release.json",
+      "sha256": "1622bb1debf728900a3a13154c35b650c9beaf4420393d5561090e7d56493375"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/diagnostics.json",
+      "sha256": "6bb29a2dab8d7263b7315fa48eea31dcbd3d2e41911b139de8fb61003a371289"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/integer-opposite.json",
+      "sha256": "73d43e48243d4a0483c02c3d1be8dfe4fe6ef54e467f67ec8e1f8b3fa4f2ff97"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/integer-ordinary.json",
+      "sha256": "b7d6fc0026b937b5ae73e114ebb885fb85438dfbc4920be6d7e41ab9a959dd0e"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/integer-shifted.json",
+      "sha256": "32955984953f48ca0f53e9f42b69b60295712ff1da880d13b6bf876da623d173"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/nae-opposite.json",
+      "sha256": "f6d02d7afec3615ed4be584ce06b04fc159099e04db484bf5ea737b6c7f6b117"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/nae-ordinary.json",
+      "sha256": "cecb4b0ff24274ba70752b4482cf27f410a56cb0ffedee271f5dc8cd7f6a92c4"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/nae-shifted.json",
+      "sha256": "672f437e82aa49634131e18265ab3f78771b6ea3688497489fe8cb454b85b4a7"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/parity-opposite.json",
+      "sha256": "090ea94e36b86ca5e976b75a11cc911d658ccf0fbca7fea5cde216bed6495891"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/parity-ordinary.json",
+      "sha256": "0c636f47e37bf5301b860c4a9189b671736cefa56ebd4ab82c5d45493ed8e944"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/parity-shifted.json",
+      "sha256": "c0ba246fb8d26c9156240583c803cb5110a1dcf4acbc995f5b67320a613baa3e"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/previous-nae.json",
+      "sha256": "4dcf2e8868337c2f22ed849853530eccf6b62270965c99f96502074e313d4618"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/previous-parity.json",
+      "sha256": "04616e64564b6054d02f7fdec62cbd1ef400bfe2ba8c1c0a3192aee4afc09c88"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/fit/receipts.jsonl",
+      "sha256": "ea754f188026677391e8a57d107db5ef78329805b446e0e73f9ada7d976ce392"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/blind/predictions.jsonl",
+      "sha256": "58538bc2553a8cd7d38aafdd7a58011ff2363047752eb3c17ec33735a5f44c57"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/blind/rule_votes.json",
+      "sha256": "29618b7676cb557f39619291f8e55d19c3d06908f5ff6ffce185020f4bc392f4"
+    },
+    {
+      "path": "../../../../artifacts/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scored/scores.json",
+      "sha256": "45a0c0ff1d63e72c0e0d5d96a85ba8c8633e6c092ae344bcccddc3d32ee72434"
+    }
+  ],
+  "nonclaims": [
+    "Primary held-turn transfer did not pass under either law.",
+    "The learnable input consists of supplied categorical counts. Rotation laws, arbitrary-font performance and native knot formation remain outside this result.",
+    "The post-score comparison of discarded ranks did not add a fitted rule or a held score.",
+    "The exact numerical twin matches both laws on every registered schedule. A separate scientific referee reviews the result independently."
+  ],
+  "prespecified_scientific_result": "Both laws failed the primary held-turn gate, with 12 of 16 cells failing per law. Evidence passed R2 for reporting this bounded outcome.",
+  "required_actions": [],
+  "reviewer_independence": "separate_implementation_lane",
+  "schema_version": 1,
+  "tier": "R2",
+  "verdict": "PASS"
+}

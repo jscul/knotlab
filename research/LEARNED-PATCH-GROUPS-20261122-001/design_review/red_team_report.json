@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LEARNED-PATCH-GROUPS-20261122-001-E001",
+  "tier": "R0",
+  "gate": "contract_freeze",
+  "reviewer_independence": "same_task",
+  "reviewer_model": "gpt-6.2-astra",
+  "reviewer_reasoning_effort": "max",
+  "review_basis": "Prospective Astra Max design review within this task, separate from implementation, execution audit and the external scientific referee. I reviewed the proposed specification, frozen source text and prior result. No fresh fit, held bitmap, label correlation, learned membership, prediction or score was inspected.",
+  "attack_plan_frozen_before_results": true,
+  "input_digests": [
+    {
+      "path": "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+      "sha256": "76036092a05e5192fc99dd683351da452595ffd7496d9a6f0f512ff35d3302ad"
+    },
+    {
+      "path": "../preregistration.md",
+      "sha256": "7fa48c1d4ec518ea14d18e9d02bd4a3befd4a8505385ff4e1c44559722c6cf0c"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "one-question",
+      "category": "scope_and_authority",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "The known post-score finding on the predecessor could be mistaken for a new discovery or built into a candidate chosen after observing new results.",
+      "method": "Inspect the declared source of the hypothesis, allowed candidate set, frozen rank, scope of the two-law claims and stop.",
+      "evidence_paths": [
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+        "../preregistration.md",
+        "pre_freeze_advice.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py"
+      ],
+      "finding": "The old clue is disclosed. Candidate generation covers all 32,767 unordered nontrivial partitions of all 16 bin names. The selector receives no pattern semantics, turn table or examples from a held design. Both laws must run once to the same test for any outcome. A selected partition can be compared with the earlier clue only after release.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "keys-and-feedback",
+      "category": "information_leakage",
+      "status": "pass",
+      "severity": "critical",
+      "claim_at_risk": "Class names, image identifiers, future teacher bits, orientation or held labels could reach selection or inference.",
+      "method": "Trace environment inputs and the three teaching schedules through bound code. Check allowed exported fields and phase key custody without opening a held image, teaching sequence or result.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/study.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py"
+      ],
+      "finding": "The acquisition model receives raw pixels, issues its past-majority guess, then receives its own action and correctness. These reconstruct one target in a binary task. The ordinary, inverted and cyclically re-paired schedules use distinct fits on the same ordered 64 images. IDs and target schedules stay in the driver. Deployment reads fitted marks and query pixels. The answer key opens for evaluation after the blind release has been anchored. This is program-level custody within a shared workspace.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "new-shapes-and-turns",
+      "category": "split_integrity",
+      "status": "pass",
+      "severity": "critical",
+      "claim_at_risk": "A named held style could be a moved or turned training shape, or the rotated poses could enter fitting or selection.",
+      "method": "Compare the explicit design table and split to the generator's image, normalized-support and rotational-identity checks. Check the declared per-cell balance and post-release overlap accounting.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/panel/manifest.json",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scoring.py"
+      ],
+      "finding": "Training has four styles, 64 images and 32 examples per class, and uses only 0° and 90°. The two reserved styles, the five-by-two and four-by-four designs, have the same respective ink counts as training. The generator requires disjoint rotational identities, 768 unique new bitmaps and zero overlap with the 400 predecessor images. The primary panels use only the reserved styles. The preregistration also retains secondary results on the four fit-visible designs, per-class cell counts and observed histogram overlaps.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "same-exposures",
+      "category": "comparator_fairness",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Better transfer might reflect additional labels or tuning, or a discrepancy between the physical and arithmetic calculations.",
+      "method": "Compare costs, inputs, fit schedules, label conventions, prediction rules and comparator roles in the protocol and bound programs.",
+      "evidence_paths": [
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+        "../preregistration.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/study.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py"
+      ],
+      "finding": "The eleven fits comprise six group learners under the two laws, three ordinary integer twins and two previous-method readers. Each gets exactly one correctness bit on each of the same 64 training images. The previous reader makes online predictions, while the grouped reader fits its committee after all receipts. In a binary task the two feedback interfaces reveal the same targets. The previous reader tests the full method change. The integer twin matches the grouped search and the all-same-size committee keeps the learned-size and calibration conditions. The search, state size and running costs can differ across methods.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "artifact-and-phase-bindings",
+      "category": "artifact_and_checker",
+      "status": "pass",
+      "severity": "critical",
+      "claim_at_risk": "A post-hoc edit or external fitted list could supply the decision attributed to physical membership flags.",
+      "method": "Review the two-stage contract lock, separate phases and digests, the law checks, and the deployment path from frozen physical state to vote.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/study.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/check_knots.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scoring.py"
+      ],
+      "finding": "The source proposal is still marked Proposed. The runner compares the later contract back to the bound proposal, allowing status, approved-candidate digest, R0 digest and timestamp to be its only changes. R1 separately authorizes fitting. The three-place holdings store receipts during acquisition and membership flags, class sizes and bin totals in deployment. Finalization clears the receipt region. Deployment reconstructs committees and means from physical marks, with no independent persistent numeric classifier. Full-law and two-codeword preparations have separately declared checks. Fit and prediction releases precede the scoring join.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "ties-and-renaming",
+      "category": "identifiability",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Selecting the first mask in numeric order could silently choose a geometry-dependent answer among equally good fits.",
+      "method": "Derive the complement invariance and compare the coefficient-free ranking and vote rules to enumeration in both implementations.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "pre_freeze_advice.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/ordinary.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/check_knots.py"
+      ],
+      "finding": "Each candidate and its complement have sums z and 81−z, and their class means transform the same way. Every rank and nearest-mean vote is preserved. Omission of bin 15 selects a storage representative only. Exact cross-products rank nonzero mean differences, including zero-variance infinite ranks, smaller-side cardinality breaks a rank tie, and every remaining winner votes. Midpoints abstain and equal vote totals issue action zero. Equal training columns or equal sums can leave genuine rival groups indistinguishable. The held vote ledger distinguishes agreement from unanimity, and the protocol calls for transport under renamed bin IDs.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "membership-versus-polarity",
+      "category": "causal_alternatives",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "Exchanging opposite-convention donors could change actions solely by reversing class calibration while leaving the chosen group unaffected.",
+      "method": "Compare the causal contrasts from full-word swap, membership-only erasure, calibrated all-size committee and the independent +17 target re-pairing.",
+      "evidence_paths": [
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+        "../preregistration.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/study.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/learner.py",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scoring.py"
+      ],
+      "finding": "Label inversion preserves a symmetric selector's group family while exchanging class means. The two transplant directions, shams, clear and restore address whole-word control. Erasing only flags tests use of stored membership with counts fixed. Including all equally sized groups tests the discriminatory benefit of supervised selection against a nonempty calibrated committee. The +17 schedule preserves target balance and uses actual guess/correctness updates. Its diagnostic records changed bits and whether each class's histogram multiset changed. The three fitted families and vote ledgers allow an assessment of whether this specific reassignment altered the choice. A single shift gives a descriptive control, not a randomization distribution.",
+      "required_action": "",
+      "contract_change_required": false
+    },
+    {
+      "id": "finite-primary-gate",
+      "category": "statistical_validity",
+      "status": "pass",
+      "severity": "high",
+      "claim_at_risk": "A strong aggregate or repeated translations could conceal failure of one class, held turn or reserved shape.",
+      "method": "Compare the prespecified success criterion to the explicitly constructed 16 primary cells and separate baseline/control counts.",
+      "evidence_paths": [
+        "../preregistration.md",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/proposed_contract.json",
+        "../../../experiments/LEARNED-PATCH-GROUPS-20261122-001/LEARNED-PATCH-GROUPS-20261122-001-E001_groups/scoring.py"
+      ],
+      "finding": "The decision is strictly above one half in every true class × held turn × position regime × reserved shape cell, separately under both laws. The code requires eight images per cell. Translation sharing fixes each prediction across placements for a given shape, class and turn, so this amounts to correct decisions on all eight underlying combinations per law before possible signature coincidences. Both 180° and 270°, both letters, and both reserved designs are indispensable. The 704 test decisions per arm describe this census. The two laws, repeated translations and tied models do not provide independent samples of fonts.",
+      "required_action": "",
+      "contract_change_required": false
+    }
+  ],
+  "verdict": "PASS",
+  "required_actions": [],
+  "nonclaims": [
+    "This gate accepts the exact proposed scientific content before its detached freeze. Empirical claims require the later execution gate and replay.",
+    "The design tests which anonymous bins this supplied search selects and whether the fitted reader transfers on the two reserved designs. Its sensor, search family, objective, sparsity preference, storage layout and voting rule are supplied.",
+    "Held success alone gives finite predictive transfer. A claim that training selected membership depends also on the recorded families and acquisition and membership controls. Unique structural identification or exact turn invariance requires evidence beyond correct labels.",
+    "The grouped architecture has a matched ordinary implementation. Neither accuracy nor use of physical memory alone establishes an exclusive computational advantage from the holding laws."
+  ]
+}

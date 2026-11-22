@@ -1,0 +1,32 @@
+{
+  "authority_file_at_admission": "research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001/advisor_reviews.json",
+  "disposition": "V1 preserved. V2 includes a frequency-matched conditional label, its actual and dummy focal tables and the proof obligation for private randomness. No scientific outcomes before prospective approval.",
+  "rounds": [
+    {
+      "advisor_model": "gpt-6.2-astra",
+      "candidate": 1,
+      "design_path": "research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001B/design_candidate_1.md",
+      "handling": "Require an independently generated label conditional on each sibling record k with the same observed chance w(h,k)/w(k). This preserves all seen record frequencies and every fixed flag's launch rate. Compare go/decline tables and threshold for the same masks, and prove that with independent randomization its optimum is exactly the hidden-h optimum.",
+      "leaf": "B",
+      "outcome_data_consulted": false,
+      "reasoning_effort": "max",
+      "sha256": "a5ec43e4bca201d223456295c36211695de13354951b285a40478fc31557ba7b",
+      "strongest_objection": "The four measured signs can supply information about the focal state and also act as extra random bits. Making them uniform with a retained copy changes their observed joint frequencies as well.",
+      "verdict": "revise",
+      "verdict_at_utc": "2026-11-22T03:25:23Z"
+    },
+    {
+      "advisor_model": "gpt-6.2-astra",
+      "candidate": 2,
+      "design_path": "research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001B/design_candidate_2.md",
+      "handling": "The new calibrated dummy reproduces the h frequency conditional on each sibling record and is independent of the focal state there. A fixed flag has identical go and decline probabilities. Compare all focal tables and excess. A dummy with an independent seed reduces exactly to a sibling-only randomized flag. Charge this supplied seed separately from the genuine sign record and the uniform four bits in the orthogonally tagged control.",
+      "leaf": "B",
+      "outcome_data_consulted": false,
+      "reasoning_effort": "max",
+      "sha256": "d44b2b25d8d85d89bc074289763f49f2ad7a6927394d332deb91947e5e1c937e",
+      "strongest_objection": "Distinguish information about the prepared focal state from randomization available at fixed sibling record.",
+      "verdict": "approved",
+      "verdict_at_utc": "2026-11-22T03:26:36Z"
+    }
+  ]
+}

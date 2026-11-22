@@ -1,0 +1,881 @@
+{
+  "assumptions": [
+    "A186",
+    "A188",
+    "A190",
+    "A192"
+  ],
+  "evidence_sha256": "27cf842033f67e1ad560c694ff6e641797232639960b7f1c9373f61238cc147d",
+  "laws": {
+    "nae": {
+      "clean_W": 350126,
+      "complete_lawful_words": 33614,
+      "modes": {
+        "clean": {
+          "0": {
+            "deterministic": {
+              "assigned_table_index": 223,
+              "attained_weight": "113",
+              "conditional_I": "9/226",
+              "dual_multiplier": null,
+              "eligible_decline": "700139/1075648",
+              "fresh_coins_for_canonical_mask": {},
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-7204/67179",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "1371/21952",
+                  "raw_weight": "67179",
+                  "raw_witness": "-7204",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 231
+                },
+                "go": {
+                  "I": "1/49",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "1/21952",
+                  "raw_weight": "49",
+                  "raw_witness": "1",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 230
+                },
+                "go_given_source_eligible": "1/1372",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/28",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "15/16",
+                  "raw_weight": "1008420",
+                  "raw_witness": "-108045",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 258
+                }
+              },
+              "per_launch_rate": "113/1075648",
+              "per_prepared_rate": "113/700252",
+              "positive_label_index_and_mask": {
+                "00000000/+": "1",
+                "00000011/-": "1"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-1/126",
+                "launch_denominator": 1075648,
+                "launch_mass": "27/153664",
+                "raw_weight": "189",
+                "raw_witness": "-3/2",
+                "setting_and_answer_denominator": 8605184,
+                "table": 228
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "3/302",
+                "launch_denominator": 1075648,
+                "launch_mass": "151/1075648",
+                "raw_weight": "151",
+                "raw_witness": "3/2",
+                "setting_and_answer_denominator": 8605184,
+                "table": 226
+              },
+              "source_refusal": "13407/38416",
+              "upper_bound": "113"
+            },
+            "randomized": {
+              "assigned_table_index": 260,
+              "attained_weight": "4270/31",
+              "conditional_I": "1/28",
+              "dual_multiplier": "1652/31",
+              "eligible_decline": "1550253/2381792",
+              "fresh_coins_for_canonical_mask": {
+                "00000001/+": {
+                  "bits_in_one_block": 7,
+                  "eventual_decision_chance": 1,
+                  "expected_bits_on_observation": "224/31",
+                  "expected_bits_per_initial_launch": "118/74431",
+                  "integer_from_zero_to": 123,
+                  "original_chance_of_that_observation": "59/268912",
+                  "pass_if_uniform_integer_below": 13,
+                  "reject_and_redraw_if_at_least": 124
+                }
+              },
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-74437/694092",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "74367/1190896",
+                  "raw_weight": "2082276/31",
+                  "raw_witness": "-223311/31",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 265
+                },
+                "go": {
+                  "I": "9/896",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "4/74431",
+                  "raw_weight": "1792/31",
+                  "raw_witness": "18/31",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 264
+                },
+                "go_given_source_eligible": "64/74431",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/28",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "15/16",
+                  "raw_weight": "1008420",
+                  "raw_witness": "-108045",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 258
+                }
+              },
+              "per_launch_rate": "305/2381792",
+              "per_prepared_rate": "305/1550558",
+              "positive_label_index_and_mask": {
+                "00000000/+": "1",
+                "00000001/+": "13/124",
+                "00000011/-": "1"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-1/126",
+                "launch_denominator": 1075648,
+                "launch_mass": "27/153664",
+                "raw_weight": "189",
+                "raw_witness": "-3/2",
+                "setting_and_answer_denominator": 8605184,
+                "table": 228
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "106/10129",
+                "launch_denominator": 1075648,
+                "launch_mass": "1447/9527168",
+                "raw_weight": "10129/62",
+                "raw_witness": "53/31",
+                "setting_and_answer_denominator": 8605184,
+                "table": 262
+              },
+              "source_refusal": "13407/38416",
+              "upper_bound": "4270/31"
+            }
+          },
+          "1": {
+            "deterministic": {
+              "assigned_table_index": 294,
+              "attained_weight": "113",
+              "conditional_I": "9/226",
+              "dual_multiplier": null,
+              "eligible_decline": "700139/1075648",
+              "fresh_coins_for_canonical_mask": {},
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-7204/67179",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "1371/21952",
+                  "raw_weight": "67179",
+                  "raw_witness": "-7204",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 301
+                },
+                "go": {
+                  "I": "1/49",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "1/21952",
+                  "raw_weight": "49",
+                  "raw_witness": "1",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 300
+                },
+                "go_given_source_eligible": "1/1372",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/28",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "15/16",
+                  "raw_weight": "1008420",
+                  "raw_witness": "-108045",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 258
+                }
+              },
+              "per_launch_rate": "113/1075648",
+              "per_prepared_rate": "113/700252",
+              "positive_label_index_and_mask": {
+                "11111100/-": "1",
+                "11111111/+": "1"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-1/126",
+                "launch_denominator": 1075648,
+                "launch_mass": "27/153664",
+                "raw_weight": "189",
+                "raw_witness": "-3/2",
+                "setting_and_answer_denominator": 8605184,
+                "table": 298
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "3/302",
+                "launch_denominator": 1075648,
+                "launch_mass": "151/1075648",
+                "raw_weight": "151",
+                "raw_witness": "3/2",
+                "setting_and_answer_denominator": 8605184,
+                "table": 296
+              },
+              "source_refusal": "13407/38416",
+              "upper_bound": "113"
+            },
+            "randomized": {
+              "assigned_table_index": 329,
+              "attained_weight": "4270/31",
+              "conditional_I": "1/28",
+              "dual_multiplier": "1652/31",
+              "eligible_decline": "1550253/2381792",
+              "fresh_coins_for_canonical_mask": {
+                "00111100/-": {
+                  "bits_in_one_block": 5,
+                  "eventual_decision_chance": 1,
+                  "expected_bits_on_observation": "160/31",
+                  "expected_bits_per_initial_launch": "295/1042034",
+                  "integer_from_zero_to": 30,
+                  "original_chance_of_that_observation": "59/1075648",
+                  "pass_if_uniform_integer_below": 13,
+                  "reject_and_redraw_if_at_least": 31
+                }
+              },
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-74437/694092",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "74367/1190896",
+                  "raw_weight": "2082276/31",
+                  "raw_witness": "-223311/31",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 336
+                },
+                "go": {
+                  "I": "9/896",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "4/74431",
+                  "raw_weight": "1792/31",
+                  "raw_witness": "18/31",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 335
+                },
+                "go_given_source_eligible": "64/74431",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/28",
+                  "launch_denominator": 1075648,
+                  "launch_mass": "15/16",
+                  "raw_weight": "1008420",
+                  "raw_witness": "-108045",
+                  "setting_and_answer_denominator": 8605184,
+                  "table": 258
+                }
+              },
+              "per_launch_rate": "305/2381792",
+              "per_prepared_rate": "305/1550558",
+              "positive_label_index_and_mask": {
+                "00111100/-": "13/31",
+                "11111100/-": "1",
+                "11111111/+": "1"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-107/6436",
+                "launch_denominator": 1075648,
+                "launch_mass": "8045/16672544",
+                "raw_weight": "16090/31",
+                "raw_witness": "-535/62",
+                "setting_and_answer_denominator": 8605184,
+                "table": 333
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "-23/4072",
+                "launch_denominator": 1075648,
+                "launch_mass": "2545/8336272",
+                "raw_weight": "10180/31",
+                "raw_witness": "-115/62",
+                "setting_and_answer_denominator": 8605184,
+                "table": 331
+              },
+              "source_refusal": "13407/38416",
+              "upper_bound": "4270/31"
+            }
+          }
+        },
+        "retained": {
+          "0": {
+            "deterministic": {
+              "assigned_table_index": 16,
+              "attained_weight": "7",
+              "conditional_I": "1/14",
+              "dual_multiplier": null,
+              "eligible_decline": "9603/9604",
+              "fresh_coins_for_canonical_mask": {},
+              "per_launch_rate": "1/9604",
+              "per_prepared_rate": "1/9604",
+              "positive_label_index_and_mask": {
+                "00000011/-": "1"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-11/126",
+                "launch_denominator": 67228,
+                "launch_mass": "9/9604",
+                "raw_weight": "63",
+                "raw_witness": "-11/2",
+                "setting_and_answer_denominator": 537824,
+                "table": 11
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "-1/14",
+                "launch_denominator": 67228,
+                "launch_mass": "5/9604",
+                "raw_weight": "35",
+                "raw_witness": "-5/2",
+                "setting_and_answer_denominator": 537824,
+                "table": 81
+              },
+              "source_refusal": "0",
+              "upper_bound": "7"
+            },
+            "randomized": {
+              "assigned_table_index": 117,
+              "attained_weight": "35/2",
+              "conditional_I": "1/28",
+              "dual_multiplier": "42",
+              "eligible_decline": "19203/19208",
+              "fresh_coins_for_canonical_mask": {
+                "00000000/+": {
+                  "bits_in_one_block": 2,
+                  "eventual_decision_chance": 1,
+                  "expected_bits_on_observation": "2",
+                  "expected_bits_per_initial_launch": "3/2401",
+                  "integer_from_zero_to": 3,
+                  "original_chance_of_that_observation": "3/4802",
+                  "pass_if_uniform_integer_below": 1,
+                  "reject_and_redraw_if_at_least": 4
+                }
+              },
+              "per_launch_rate": "5/19208",
+              "per_prepared_rate": "5/19208",
+              "positive_label_index_and_mask": {
+                "00000000/+": "1/4",
+                "00000011/-": "1"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-47/532",
+                "launch_denominator": 67228,
+                "launch_mass": "19/19208",
+                "raw_weight": "133/2",
+                "raw_witness": "-47/8",
+                "setting_and_answer_denominator": 537824,
+                "table": 121
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "-1/16",
+                "launch_denominator": 67228,
+                "launch_mass": "3/4802",
+                "raw_weight": "42",
+                "raw_witness": "-21/8",
+                "setting_and_answer_denominator": 537824,
+                "table": 119
+              },
+              "source_refusal": "0",
+              "upper_bound": "35/2"
+            }
+          },
+          "1": {
+            "deterministic": {
+              "assigned_table_index": 30,
+              "attained_weight": "7",
+              "conditional_I": "1/14",
+              "dual_multiplier": null,
+              "eligible_decline": "9603/9604",
+              "fresh_coins_for_canonical_mask": {},
+              "per_launch_rate": "1/9604",
+              "per_prepared_rate": "1/9604",
+              "positive_label_index_and_mask": {
+                "11111100/-": "1"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-11/126",
+                "launch_denominator": 67228,
+                "launch_mass": "9/9604",
+                "raw_weight": "63",
+                "raw_witness": "-11/2",
+                "setting_and_answer_denominator": 537824,
+                "table": 71
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "-1/14",
+                "launch_denominator": 67228,
+                "launch_mass": "5/9604",
+                "raw_weight": "35",
+                "raw_witness": "-5/2",
+                "setting_and_answer_denominator": 537824,
+                "table": 157
+              },
+              "source_refusal": "0",
+              "upper_bound": "7"
+            },
+            "randomized": {
+              "assigned_table_index": 185,
+              "attained_weight": "35/2",
+              "conditional_I": "1/28",
+              "dual_multiplier": "42",
+              "eligible_decline": "19203/19208",
+              "fresh_coins_for_canonical_mask": {
+                "11111111/+": {
+                  "bits_in_one_block": 2,
+                  "eventual_decision_chance": 1,
+                  "expected_bits_on_observation": "2",
+                  "expected_bits_per_initial_launch": "3/2401",
+                  "integer_from_zero_to": 3,
+                  "original_chance_of_that_observation": "3/4802",
+                  "pass_if_uniform_integer_below": 1,
+                  "reject_and_redraw_if_at_least": 4
+                }
+              },
+              "per_launch_rate": "5/19208",
+              "per_prepared_rate": "5/19208",
+              "positive_label_index_and_mask": {
+                "11111100/-": "1",
+                "11111111/+": "1/4"
+              },
+              "prior_phase_reversed_fixed_mask": {
+                "I": "-47/532",
+                "launch_denominator": 67228,
+                "launch_mass": "19/19208",
+                "raw_weight": "133/2",
+                "raw_witness": "-47/8",
+                "setting_and_answer_denominator": 537824,
+                "table": 189
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": "-1/16",
+                "launch_denominator": 67228,
+                "launch_mass": "3/4802",
+                "raw_weight": "42",
+                "raw_witness": "-21/8",
+                "setting_and_answer_denominator": 537824,
+                "table": 187
+              },
+              "source_refusal": "0",
+              "upper_bound": "35/2"
+            }
+          }
+        }
+      }
+    },
+    "parity": {
+      "clean_W": 2048,
+      "complete_lawful_words": 2048,
+      "modes": {
+        "clean": {
+          "0": {
+            "deterministic": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": null,
+              "eligible_decline": "1/16",
+              "fresh_coins_for_canonical_mask": {},
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "1/16",
+                  "raw_weight": "4096",
+                  "raw_witness": "-3072",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 385
+                },
+                "go": {
+                  "I": null,
+                  "launch_denominator": 65536,
+                  "launch_mass": "0",
+                  "raw_weight": "0",
+                  "raw_witness": "0",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 384
+                },
+                "go_given_source_eligible": "0",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "15/16",
+                  "raw_weight": "61440",
+                  "raw_witness": "-46080",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 387
+                }
+              },
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "source_refusal": "15/16",
+              "upper_bound": "0"
+            },
+            "randomized": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": "56/9",
+              "eligible_decline": "1/16",
+              "fresh_coins_for_canonical_mask": {},
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "1/16",
+                  "raw_weight": "4096",
+                  "raw_witness": "-3072",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 385
+                },
+                "go": {
+                  "I": null,
+                  "launch_denominator": 65536,
+                  "launch_mass": "0",
+                  "raw_weight": "0",
+                  "raw_witness": "0",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 384
+                },
+                "go_given_source_eligible": "0",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "15/16",
+                  "raw_weight": "61440",
+                  "raw_witness": "-46080",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 387
+                }
+              },
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "source_refusal": "15/16",
+              "upper_bound": "0"
+            }
+          },
+          "1": {
+            "deterministic": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": null,
+              "eligible_decline": "1/16",
+              "fresh_coins_for_canonical_mask": {},
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "1/16",
+                  "raw_weight": "4096",
+                  "raw_witness": "-3072",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 385
+                },
+                "go": {
+                  "I": null,
+                  "launch_denominator": 65536,
+                  "launch_mass": "0",
+                  "raw_weight": "0",
+                  "raw_witness": "0",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 384
+                },
+                "go_given_source_eligible": "0",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "15/16",
+                  "raw_weight": "61440",
+                  "raw_witness": "-46080",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 387
+                }
+              },
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "source_refusal": "15/16",
+              "upper_bound": "0"
+            },
+            "randomized": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": "56/9",
+              "eligible_decline": "1/16",
+              "fresh_coins_for_canonical_mask": {},
+              "on_the_held_spent_tag_all_plus_port": {
+                "eligible_decline": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "1/16",
+                  "raw_weight": "4096",
+                  "raw_witness": "-3072",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 385
+                },
+                "go": {
+                  "I": null,
+                  "launch_denominator": 65536,
+                  "launch_mass": "0",
+                  "raw_weight": "0",
+                  "raw_witness": "0",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 384
+                },
+                "go_given_source_eligible": "0",
+                "source_eligible": "1/16",
+                "source_refuses_before_announcement": {
+                  "I": "-3/4",
+                  "launch_denominator": 65536,
+                  "launch_mass": "15/16",
+                  "raw_weight": "61440",
+                  "raw_witness": "-46080",
+                  "setting_and_answer_denominator": 524288,
+                  "table": 387
+                }
+              },
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 65536,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 524288,
+                "table": 384
+              },
+              "source_refusal": "15/16",
+              "upper_bound": "0"
+            }
+          }
+        },
+        "retained": {
+          "0": {
+            "deterministic": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": null,
+              "eligible_decline": "1",
+              "fresh_coins_for_canonical_mask": {},
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "source_refusal": "0",
+              "upper_bound": "0"
+            },
+            "randomized": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": "14/11",
+              "eligible_decline": "1",
+              "fresh_coins_for_canonical_mask": {},
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "source_refusal": "0",
+              "upper_bound": "0"
+            }
+          },
+          "1": {
+            "deterministic": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": null,
+              "eligible_decline": "1",
+              "fresh_coins_for_canonical_mask": {},
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "source_refusal": "0",
+              "upper_bound": "0"
+            },
+            "randomized": {
+              "assigned_table_index": 384,
+              "attained_weight": "0",
+              "conditional_I": null,
+              "dual_multiplier": "14/11",
+              "eligible_decline": "1",
+              "fresh_coins_for_canonical_mask": {},
+              "per_launch_rate": "0",
+              "per_prepared_rate": "0",
+              "positive_label_index_and_mask": {},
+              "prior_phase_reversed_fixed_mask": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "same_singleton_diagonal_comparator": {
+                "I": null,
+                "launch_denominator": 4096,
+                "launch_mass": "0",
+                "raw_weight": "0",
+                "raw_witness": "0",
+                "setting_and_answer_denominator": 32768,
+                "table": 384
+              },
+              "source_refusal": "0",
+              "upper_bound": "0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "local_change_rule_and_flags_derive_from_growth": false,
+  "other_erasure_port_optimum": "Reserved; this record contains only all-port diagnostics at fixed primary masks.",
+  "previous_priced_change_probe": {
+    "clean_00000000/+": "2/53 witness at 53/537824 original launches",
+    "clean_00000000/-": "-1/26 witness at 13/537824 original launches"
+  },
+  "result": "Matching attained deterministic and randomized upper bounds. Parity has no positive-mass feasible flag. Scientific referee pending.",
+  "schema_version": 1,
+  "scope": "One fixed repeated source and preannounced single sibling X basis, eight specified Z values, fixed orientation, retained past or archived all-plus erasure among complete trials.",
+  "source_bindings": "research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001A/receipt.json",
+  "ticket": "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001A",
+  "validation": {
+    "canonical_placement_records_per_law": 512,
+    "fixed_orientations": 2,
+    "focal_potential_answer_lists": 64,
+    "law_count": 2,
+    "physical_X_placements": 9,
+    "realization": "Canonical reader and independent literal all-word calculation; transport under the nine addresses. Whole local probabilities and subnormalized failure branches retained.",
+    "scientific_referee": "pending",
+    "settings_and_answer_cells": 64,
+    "spent_character_ports": 16
+  }
+}

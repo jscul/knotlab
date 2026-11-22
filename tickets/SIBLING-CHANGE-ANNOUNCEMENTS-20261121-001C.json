@@ -1,0 +1,38 @@
+{
+  "acceptance_gate": "",
+  "completion_gate": "",
+  "dependencies": [
+    "SIBLING-ANNOUNCEMENTS-AND-RECEIVER-BIRTHS-20261121-001A",
+    "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001A",
+    "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001B"
+  ],
+  "dependency_text": "",
+  "fields": {
+    "accepted_artifact_id": "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C-P001",
+    "admission_sha256": "f13c10b1121ae101e8137ff7bf3857a20820d4194a1fbdf01492992857640447",
+    "artifact_path": "proofs/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C-P001_erasure_message",
+    "manifest_path": "proofs/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C-P001_erasure_message/manifest.json",
+    "preregistration": "research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/preregistration.md",
+    "referee_handoff": "research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/referee_handoff.md",
+    "result_path": "proofs/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C-P001_erasure_message/result.json",
+    "result_sha256": "e7490e568b59b0fca1a3ba71248e91e6a59b58afe9f50abcf6497decb46bc699",
+    "scientific_freeze_sha256": "0dfeb24dc28fbf14ec8a6bfcfaa42b04f00b3ae6170dad4c1644c175e3c80c09",
+    "scientific_referee": "pending",
+    "scientific_report": "research/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/results.md",
+    "terminal_artifact": "proofs/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C/SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C-P001_erasure_message/manifest.json"
+  },
+  "id": "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001C",
+  "kind": "ticket",
+  "legacy": {},
+  "objective": "Keep the same eight ordinary sibling reads, one change, and four spent sign measurements. Determine the least number of distinct single-launch messages from the eraser, before it sees the sibling result, that preserves each exact full-rate optimum. Test explicit encoders and certify necessity or an honest gap.",
+  "ownership": {
+    "root": false,
+    "scope_id": "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001"
+  },
+  "parent": "SIBLING-CHANGE-ANNOUNCEMENTS-20261121-001",
+  "schema_version": 1,
+  "status": "Closed. The two not-all-equal full rates require all 16 erasure messages; the randomized rate needs 17 if only the eraser has a private coin. Parity gives zero.",
+  "status_class": "proved",
+  "stop_rule": "",
+  "title": "The shortest erasure message preserving the best one-change announcement"
+}

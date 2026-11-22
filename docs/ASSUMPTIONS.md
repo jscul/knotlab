@@ -257,6 +257,8 @@ evidence: results and their status come from the records each entry links.
 | [A199](#a199--remember-a-consumed-ration-by-the-feeders-public-menu) | Remember a consumed ration by the feeder's public menu | scaffold | Assumed |
 | [A200](#a200--train-a-second-local-cue-from-public-feeder-receipts) | Train a second local cue from public feeder receipts | scaffold | Assumed |
 | [A201](#a201--reverse-which-feeder-approach-opens-a-ration) | Reverse which feeder approach opens a ration | scaffold | Assumed |
+| [A202](#a202--end-a-two-message-read-on-the-receivers-own-changed-mark) | End a two-message read on the receiver’s own changed mark | scaffold | Assumed |
+| [A203](#a203--test-a-growth-made-keeper-while-all-three-focal-distinctions-remain-loose) | Test a growth-made keeper while all three focal distinctions remain loose | scaffold | Assumed |
 
 ## Entries
 
@@ -4702,3 +4704,25 @@ evidence: results and their status come from the records each entry links.
 - **Challenge.** Match training visits to the same apparent feeder and actual holder, reverse presentation order, shuffle only credit, count encounters without reference to pay, exchange or clear the learned marking, and deploy each fixed learned word under both payoff versions. Score common eligible opportunities and all autonomous lives independently. A naturally occurring cue-payoff association is a further question.
 - **History.**
   - 2026-11-21 · Opened for the [paired fitted-reader study](../research/FEEDER-PAYOFF-REVERSAL-20261121-001/design_candidate_2.md) as a change to the food rule of A198 and the cue training of A200.
+
+### A202 · End a two-message read on the receiver’s own changed mark
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** Start from the grown private-pulse apparatus, prepare oriented shared marks at two senders, the two intervening knots and two receivers, and offer either of two actual transpositions at the primary sender. A supplied local rule transposes receipt, stage and acknowledgment marks when their same-holder guards hold. Read the fixed primary receiver’s retained word at the first rise of its specified ending mark. The reserve makes the same ending mark observable after the contributing contact is interrupted.
+- **Why.** A previously labelled arrival or a silence ended by a spectator cannot by itself identify a choice to the receiver. A positive local ending gives both choices the same opportunity to answer.
+- **Rests on it.** The continuing holder, its orientation and readout, ready values, allowed offer class, conditional local relay, one-off launches, maximal enabled orders, the reserve, the contact intervention and the ordinary comparison with a fixed value completion or transported weighting.
+- **Challenge.** Interrupt only the donor contact, disable the conditional relay, retain just the last incoming word, change the local marking and coherent naming, and compare the earlier continuing clock and its full ordinary histories. A wholly growth-triggered receiver would challenge the supplied operation.
+- **History.**
+  - 2026-11-22 · Opened for the [two-message receiver](../research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001A/preregistration.md).
+
+### A203 · Test a growth-made keeper while all three focal distinctions remain loose
+
+**Assumed** · 2026-11-22 · scaffold
+
+- **Statement.** Give 38 specified two- and three-original arrangements two complete ordinary attempts and three earlier control sources three attempts. Enroll every four-place one-parent newborn. Require a separate readable keeper and a physical event that starts its write while all three focal fresh names remain singly held. Test keepers born on the same cut, older holders and new values, as well as a payer’s other marks.
+- **Why.** A lawful optional move, an informative new value, and a ready keeper that changes on its own are different claims about how the bit is recorded.
+- **Rests on it.** The chosen founding holdings, naming and budget, access to separate fixed marks, the physical meanings of ready and the two answers, branch and whole-stage weightings, the supplied optional guarded transpositions, and the conditional measurement readings on a qualifying port.
+- **Challenge.** Change the multiplicities and number of original holders, compare old and new records and both transition weightings, retain false terminal answers without a ready herald, and contrast the unaided source with a scheduled writer, one missing offer, inverse, disconnection and transported marks. A larger source with a native call would extend the tested class.
+- **History.**
+  - 2026-11-22 · Opened for the [bounded search for an early keeper](../research/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001B/preregistration.md).

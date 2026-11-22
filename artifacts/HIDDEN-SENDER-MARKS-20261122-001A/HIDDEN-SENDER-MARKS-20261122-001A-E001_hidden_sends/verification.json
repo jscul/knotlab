@@ -1,0 +1,168 @@
+{
+  "audit_class": "V1 independently authored same-task replay",
+  "input_sha256": {
+    "artifacts/HIDDEN-SENDER-MARKS-20261122-001A/HIDDEN-SENDER-MARKS-20261122-001A-E001_hidden_sends/growth.json.gz": "f89de84f884b323e40f81a59dc7afa0e734bf4dc974e26eb5c7be9c5f775ce9a",
+    "artifacts/HIDDEN-SENDER-MARKS-20261122-001A/HIDDEN-SENDER-MARKS-20261122-001A-E001_hidden_sends/supports.json.gz": "35d55ff7594316542c0ee003ea4c0de1c82eda207c66b82a54961b1befccbf80",
+    "artifacts/HIDDEN-SENDER-MARKS-20261122-001A/HIDDEN-SENDER-MARKS-20261122-001A-E001_hidden_sends/whole_words.json.gz": "d652b46212ed4fdd3ad344596ce9a6c1b2cc2be3327cb8fbac6a765226c2f290",
+    "artifacts/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001A/TWO-SENDS-AND-GROWN-KEEPERS-20261122-001A-E001_two_sends/ordinary.json": "c58ffc91241edb3bc797dc0a7b63bcaaa7f23d88ec9fd352ac558dabc3678d0e",
+    "research/HIDDEN-SENDER-MARKS-20261122-001A/design_candidate.md": "400924e945474db498557639dfd2b0dcaf726e8dd85b32a077d240a64d741f14"
+  },
+  "paired_cells": 96,
+  "passed": true,
+  "primary_00_results_from_recomputed_kernel": {
+    "nae-intact": {
+      "C": {
+        "accuracy": "9/16",
+        "shared_words": 7,
+        "tv": "1/8"
+      },
+      "D": {
+        "accuracy": "9/16",
+        "shared_words": 7,
+        "tv": "1/8"
+      },
+      "J": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      },
+      "R": {
+        "accuracy": "789/1568",
+        "shared_words": 8,
+        "tv": "5/784"
+      }
+    },
+    "nae-interrupted": {
+      "C": {
+        "accuracy": "1/2",
+        "shared_words": 7,
+        "tv": "0"
+      },
+      "D": {
+        "accuracy": "9/16",
+        "shared_words": 7,
+        "tv": "1/8"
+      },
+      "J": {
+        "accuracy": "5519/10976",
+        "shared_words": 8,
+        "tv": "31/5488"
+      },
+      "R": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      }
+    },
+    "nae-sham": {
+      "C": {
+        "accuracy": "9/16",
+        "shared_words": 7,
+        "tv": "1/8"
+      },
+      "D": {
+        "accuracy": "9/16",
+        "shared_words": 7,
+        "tv": "1/8"
+      },
+      "J": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      },
+      "R": {
+        "accuracy": "789/1568",
+        "shared_words": 8,
+        "tv": "5/784"
+      }
+    },
+    "parity-intact": {
+      "C": {
+        "accuracy": "1",
+        "shared_words": 0,
+        "tv": "1"
+      },
+      "D": {
+        "accuracy": "1",
+        "shared_words": 0,
+        "tv": "1"
+      },
+      "J": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      },
+      "R": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      }
+    },
+    "parity-interrupted": {
+      "C": {
+        "accuracy": "1/2",
+        "shared_words": 4,
+        "tv": "0"
+      },
+      "D": {
+        "accuracy": "1",
+        "shared_words": 0,
+        "tv": "1"
+      },
+      "J": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      },
+      "R": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      }
+    },
+    "parity-sham": {
+      "C": {
+        "accuracy": "1",
+        "shared_words": 0,
+        "tv": "1"
+      },
+      "D": {
+        "accuracy": "1",
+        "shared_words": 0,
+        "tv": "1"
+      },
+      "J": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      },
+      "R": {
+        "accuracy": "1/2",
+        "shared_words": 8,
+        "tv": "0"
+      }
+    }
+  },
+  "shared_R_records_with_matched_whole_witnesses": {
+    "nae": 96,
+    "parity": 96
+  },
+  "unknown_reference_pools": 24,
+  "whole_assignments_checked": {
+    "nae": 744,
+    "parity": 576
+  },
+  "whole_holding_count": 647,
+  "whole_witness_rows": 750,
+  "witness_replay_checks": [
+    "Every reached holding and actual paid name, including triple payments",
+    "Same complete early word per paired action and only the enrolled old exchange",
+    "Own fresh positions and anonymous positive FINISH, with hidden inputs conserved",
+    "Common whole fresh assignment in not-all-equal and two actual hidden compensation marks in parity",
+    "One global recoding and local reversal for the saved representative in each law and route"
+  ],
+  "zero_error_cells_under_fixed_reference": {
+    "nae": 0,
+    "parity": 20
+  }
+}
